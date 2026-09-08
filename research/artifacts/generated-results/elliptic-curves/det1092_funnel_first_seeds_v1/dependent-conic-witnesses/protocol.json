@@ -1,0 +1,15 @@
+{
+  "denominator_bound": 1000000,
+  "inputs": {
+    "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/conic-points.json": "447071d0a99141ea2d3325f6f0690885fbac6ac3be223d63e93aeac6e73bb256",
+    "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/m17.json": "45c5f90d968785efbee7d6ce39277791d234af87bf3e5e53ea6b575f7d29bb62",
+    "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/result.json": "dfc3f39df0351a848d3f32a722267b17f0374e9d3e3a100a29ce347c347008dc",
+    "elliptic-curves/cas/audit_det1092_split_seed_relation.sage": "653861744b38afd32b87c3162c71bd55465b800ce6375cbe0b073fdc8ffbea0e"
+  },
+  "precision_bits": 384,
+  "proposal_tolerance": "2^-160",
+  "rss_bytes": 1073741824,
+  "schema": "det1092-split-seed-span-audit.v1",
+  "scope": "Two retained conic witnesses only. Exact multiple identities prove rational-span membership. Failed numerical proposals remain UNKNOWN; no whole-curve upper bound.",
+  "wall_seconds": 120
+}

@@ -1,0 +1,8 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "arm_id": "original",
+  "exit_code": -15,
+  "wall_seconds": 3926.2819333076477,
+  "terminal_file_exists": false,
+  "classification": "CENSORED_OR_FAILED"
+}

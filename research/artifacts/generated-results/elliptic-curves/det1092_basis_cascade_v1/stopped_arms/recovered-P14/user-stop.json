@@ -1,0 +1,149 @@
+{
+  "arm_id": "recovered-P14",
+  "completed_stages": [
+    {
+      "after": 18,
+      "audit": "mod2-016.json",
+      "audit_sha256": "7e213d656a07fdf84a520fe9dff9890df4e2451c1dc41d96f57900263e71735e",
+      "before": 17,
+      "charts": 17,
+      "epoch": 0,
+      "full_cosets_scored": 32,
+      "stale_charts_cancelled": 65
+    },
+    {
+      "after": 19,
+      "audit": "mod2-036.json",
+      "audit_sha256": "4c8edd50141ad3902e85f2d13dca8f7ea067d46e6f756b17a05de98f77db616c",
+      "before": 18,
+      "charts": 37,
+      "epoch": 1,
+      "full_cosets_scored": 64,
+      "stale_charts_cancelled": 77
+    },
+    {
+      "after": 20,
+      "audit": "mod2-000.json",
+      "audit_sha256": "e8166077bf93b534861e9a0606b310816cf30e1ea3b4ba03d09eabf289733bc0",
+      "before": 19,
+      "charts": 1,
+      "epoch": 2,
+      "full_cosets_scored": 128,
+      "stale_charts_cancelled": 177
+    },
+    {
+      "after": 21,
+      "audit": "mod2-021.json",
+      "audit_sha256": "e6ae017af2a72b1714a14180961c519da2797f34f12af4eb02592a50787c0f36",
+      "before": 20,
+      "charts": 22,
+      "epoch": 3,
+      "full_cosets_scored": 256,
+      "stale_charts_cancelled": 284
+    },
+    {
+      "after": 22,
+      "audit": "mod2-030.json",
+      "audit_sha256": "bdd73679b57fcd58e97d42604858b1d156a8409c42c1e209997b36e884570d68",
+      "before": 21,
+      "charts": 31,
+      "epoch": 4,
+      "full_cosets_scored": 512,
+      "stale_charts_cancelled": 529
+    },
+    {
+      "after": 23,
+      "audit": "mod2-096.json",
+      "audit_sha256": "f9bebb865326e1c84fc2820ee1faf61d3b72fb208089f586dbaa963c6b4885a9",
+      "before": 22,
+      "charts": 97,
+      "epoch": 5,
+      "full_cosets_scored": 1024,
+      "stale_charts_cancelled": 846
+    },
+    {
+      "after": 24,
+      "audit": "mod2-047.json",
+      "audit_sha256": "e61826898d7508e6ec3c7f717d89b82bd829e52d6f9b6df2f4cf809b6d559759",
+      "before": 23,
+      "charts": 48,
+      "epoch": 6,
+      "full_cosets_scored": 2048,
+      "stale_charts_cancelled": 1189
+    },
+    {
+      "after": 25,
+      "audit": "mod2-007.json",
+      "audit_sha256": "74a1fe9e24c3d110180a6b6ba6b36ca84440e48b386cbfbb7a7b62b5f447f6d1",
+      "before": 24,
+      "charts": 8,
+      "epoch": 7,
+      "full_cosets_scored": 4096,
+      "stale_charts_cancelled": 1352
+    },
+    {
+      "after": 26,
+      "audit": "mod2-026.json",
+      "audit_sha256": "4ec87cdbac667ab641bad5f8bc7ed6db5931de350e1f619a888d8c1c66169f40",
+      "before": 25,
+      "charts": 27,
+      "epoch": 8,
+      "full_cosets_scored": 8192,
+      "stale_charts_cancelled": 1389
+    },
+    {
+      "after": 27,
+      "audit": "mod2-035.json",
+      "audit_sha256": "bbbd3edd8b5883b53b010f770872cf6029120e9bb4f7e7dd6f30dd51354c58b3",
+      "before": 26,
+      "charts": 36,
+      "epoch": 9,
+      "full_cosets_scored": 16384,
+      "stale_charts_cancelled": 1432
+    },
+    {
+      "after": 28,
+      "audit": "mod2-050.json",
+      "audit_sha256": "8cad37151ec500aeafb332cd46356f42764210bd44e9074d39a65c1938eb8429",
+      "before": 27,
+      "charts": 51,
+      "epoch": 10,
+      "full_cosets_scored": 32768,
+      "stale_charts_cancelled": 1438
+    },
+    {
+      "after": 29,
+      "audit": "mod2-701.json",
+      "audit_sha256": "8075cc1ae9e4e83067e86c0c72ea7f2fce9c8534c27414b7ce0a5030f08047d0",
+      "before": 28,
+      "charts": 702,
+      "epoch": 11,
+      "full_cosets_scored": 65536,
+      "stale_charts_cancelled": 801
+    },
+    {
+      "after": 30,
+      "audit": "mod2-028.json",
+      "audit_sha256": "89a776aa93a9e6851e4d231369ccdf6fdaf3b1d591a05dab1178e5b349d63efc",
+      "before": 29,
+      "charts": 29,
+      "epoch": 12,
+      "full_cosets_scored": 131072,
+      "stale_charts_cancelled": 1390
+    }
+  ],
+  "executed_chart_records": 1106,
+  "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+  "last_completed_stage_rank_lower_bound": 30,
+  "last_log_line": "STAGE {'epoch': 12, 'before': 29, 'after': 30, 'charts': 29, 'stale_charts_cancelled': 1390, 'audit': 'mod2-028.json', 'audit_sha256': '89a776aa93a9e6851e4d231369ccdf6fdaf3b1d591a05dab1178e5b349d63efc', 'full_cosets_scored': 131072}",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "status": "USER_STOPPED_CENSORED",
+  "supervisor": {
+    "arm_id": "recovered-P14",
+    "classification": "CENSORED_OR_FAILED",
+    "exit_code": -15,
+    "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+    "terminal_file_exists": false,
+    "wall_seconds": 3926.2831757068634
+  }
+}

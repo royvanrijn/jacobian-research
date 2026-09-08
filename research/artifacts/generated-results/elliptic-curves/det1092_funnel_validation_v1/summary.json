@@ -1,0 +1,23 @@
+{
+  "constructive_control_in_population_yield": false,
+  "parameters": 256,
+  "production_amplification_tested": false,
+  "profile": "smoke",
+  "queues": {},
+  "seed_outcomes": {
+    "funnel-000000300": {
+      "charts": 1,
+      "parameter": "3923/2322",
+      "rank_lower_bound": 17,
+      "status": "BOUNDED_NO_CERTIFIED_SEED"
+    },
+    "funnel-000000486": {
+      "charts": 1,
+      "parameter": "319/3446",
+      "rank_lower_bound": 17,
+      "status": "BOUNDED_NO_CERTIFIED_SEED"
+    }
+  },
+  "status": "COMPLETE_FINITE_FUNNEL",
+  "unresolved_stages": []
+}

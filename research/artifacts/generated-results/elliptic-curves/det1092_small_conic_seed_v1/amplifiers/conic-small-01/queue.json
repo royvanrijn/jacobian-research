@@ -1,0 +1,7 @@
+{
+  "certified_rank_lower_bound": 18,
+  "extra_allocation_seconds": 0,
+  "queue": "RETAIN",
+  "scope": "Queue classification; no implicit extra run.",
+  "verified_sha256": "5fd89e33041d1b83e0786dfd84939e107f8288b8c18af193ecaed1b1931b978f"
+}

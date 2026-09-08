@@ -1,0 +1,112 @@
+{
+  "schema": "det1092-search-funnel-specification.v1",
+  "status": "PRODUCTION_RUNNING_FIRST_M18_AND_SPLIT_FOLLOWUP_RANK21_CERTIFIED",
+  "family": "determinant1092-reduced-parent",
+  "generic_rank": 17,
+  "target_rank_lower_bound": 32,
+  "canonical_specification": "elliptic-curves/notes/DET1092_SEARCH_FUNNEL_2026-09-08.md",
+  "budgets": {
+    "distinct_parameters_max": 10000000,
+    "arithmetic_candidates_max": 10000,
+    "seed_search_fibres_max": 100,
+    "seeded_fibres_desired_yield": 10,
+    "desired_yield_is_a_quota_or_prediction": false,
+    "automatic_population_refill": false
+  },
+  "intake": {
+    "equation_only": true,
+    "parameter_coordinate": "reduced s=a/b; retain exact original t transport",
+    "arithmetic_height": "max(abs(reduced_j_numerator).bit_length(), reduced_j_denominator.bit_length())",
+    "arithmetic_height_band_width_bits": 64,
+    "parameter_sampling": "deterministic stream across disjoint logarithmic parameter-height shells",
+    "equal_j_implies_rational_isomorphism": false,
+    "missing_fingerprint": "UNKNOWN",
+    "full_selmer_per_fibre": false,
+    "quartic_point_search": false,
+    "xi_characterization": "UNKNOWN"
+  },
+  "seed_gate": {
+    "required_certified_inherited_rank": 17,
+    "required_certified_combined_rank": 18,
+    "extra_points_in_export": 1,
+    "independent_replay_required": true,
+    "strict_local_membership_required": false,
+    "stop": "first replay-certified independent point; cancel remaining seed charts",
+    "failed_mod2_certificate_proves_dependence": false,
+    "constructive_conic_lane_counted_as_population_yield": false
+  },
+  "amplifier": {
+    "initial_rank": 18,
+    "numerical_policy": "unchanged frozen V3",
+    "seed": "exact ordered M17 plus first certified P18 only",
+    "queue_thresholds": [
+      {
+        "minimum_certified_rank": 32,
+        "queue": "TARGET_LOWER_BOUND"
+      },
+      {
+        "minimum_certified_rank": 30,
+        "queue": "AGGRESSIVE"
+      },
+      {
+        "minimum_certified_rank": 28,
+        "queue": "DEEP"
+      },
+      {
+        "minimum_certified_rank": 20,
+        "queue": "INTERESTING"
+      },
+      {
+        "minimum_certified_rank": 18,
+        "queue": "RETAIN"
+      }
+    ],
+    "queue_entry_authorizes_unlimited_work": false,
+    "exact_rank_claim": false
+  },
+  "required_before_launch": [],
+  "claim_boundary": "The ten-million-address intake and full replay are complete. The first original90 M18 and two separately selected conic M18 fibres have standalone proofs; one conic cascade has a verified21-point epoch. Live searches and terminal replays are distinct from these subgroup certificates. No exact rank, conductor improvement or rank32 result.",
+  "implementation": {
+    "controller": "elliptic-curves/cas/run_det1092_funnel.py",
+    "intake": "elliptic-curves/cas/det1092_funnel.py",
+    "seed_and_v3_worker": "elliptic-curves/cas/det1092_funnel_worker.py",
+    "independent_amplifier_replay": "elliptic-curves/cas/det1092_funnel_replay.py",
+    "validation": "artifacts/generated-results/elliptic-curves/det1092_funnel_validation_v1/manifest.json",
+    "production_protocol": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/protocol.json",
+    "live_status_authority": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/controller.json",
+    "initial_deep_or_aggressive_extra_allocation_seconds": 0
+  },
+  "completed_intake": {
+    "parameters": 10000000,
+    "arithmetic_candidates": 8999,
+    "seed_inputs": 90,
+    "intake_supervised_seconds": 751.9587338890415,
+    "replay_supervised_seconds": 789.9608101599151
+  },
+  "constructive_lane": {
+    "parameter": "5193/35630",
+    "certified_rank_lower_bound": 18,
+    "j_numerator_bits": 551,
+    "v3_charts": 114,
+    "v3_rank_gain": 0,
+    "authority": "EC-DET1092-SMALL-CONIC-SEED-20260908",
+    "counts_as_production_yield": false
+  },
+  "first_verified_results": {
+    "authority": "EC-DET1092-FUNNEL-FIRST-SEEDS-20260908",
+    "certificate_package": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/manifest.json",
+    "original90_first_seed": "1117/2193",
+    "original90_first_v3_lower_bound": 18,
+    "original90_first_v3_replayed": true,
+    "exact_split_followup_parameters": [
+      "-528/3635",
+      "1926/2699",
+      "2953/1671"
+    ],
+    "exact_split_followup_seed_count": 2,
+    "highest_standalone_verified_rank": 21,
+    "highest_rank_parameter": "1926/2699",
+    "highest_rank_full_policy_replayed": false,
+    "original_selection_changed": false
+  }
+}

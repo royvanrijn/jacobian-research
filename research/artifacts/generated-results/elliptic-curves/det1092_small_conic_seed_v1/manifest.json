@@ -1,0 +1,39 @@
+{
+  "boundary": "Smaller equation-derived conic seed, independently proved. V3 finite no-gain does not prove exact rank18. No new rank above18 or conductor result.",
+  "catalogue_comparison": {
+    "boundary": "Unmatched means only in these frozen snapshots; no literature-wide novelty or conductor claim.",
+    "comparison_snapshot_sha256": "f57eb13c34a06633d3f4717aaf977623f674613fc3b7470f1467c5d7928b078d",
+    "counts": {
+      "inventory": 201,
+      "public": 630
+    },
+    "matches": {
+      "inventory": [],
+      "public": []
+    },
+    "status": "EXACT_Q_ISOMORPHISM_COMPARISON"
+  },
+  "files": {
+    "amplifier-launch.json": "c0ef813ce8764701788e03c830e9ad2f8663fd8f5d386ac0b1c753b9d697ce8e",
+    "amplifier-status.json": "b9749b19703e4ebab22593bd41f45ed5f4ae9c90560c54e936aaa517885d04a1",
+    "amplifiers/conic-small-01/queue.json": "32e75e7ba3b5572d0178801189d2c5820f41485659120a1e68a3b5a0c604f7d7",
+    "amplifiers/conic-small-01/replay-M17/terminal.json": "0614d31efde6c3834f785d230365e534eda42c87ee0d9466ee769de71b28cd70",
+    "amplifiers/conic-small-01/trial-verified.json": "5fd89e33041d1b83e0786dfd84939e107f8288b8c18af193ecaed1b1931b978f",
+    "conic-solve.json": "0594964c56f8b0220fa9f7f2b7245c66e3fdeac047a3fc92c3b3996b4e218a4b",
+    "constructive-result.json": "165f74d852a48759afb70e0f3253a58d8d5ecb0d89a221685ee1dcf96c286a3f",
+    "protocol.json": "e3e604c694cc9b23cd21cdfa3e48277d8976f3d180c582ed187f511fc6f7472f",
+    "seeds/conic-small-01/conic-points.json": "8b1d728a13d31d71a40112e8c97efe59729f0dbe48207d4ccfa31d22687a3739",
+    "seeds/conic-small-01/intake.json": "643fc83b53e084dd5b4d59fd48410b315cfcdd68b85138e1f5452d8218ea4e15",
+    "seeds/conic-small-01/m17.json": "fb0070968a5c981195a84095e9bb9d94102441ecc2ea19f97d71172e86fc003f",
+    "seeds/conic-small-01/m18.json": "1ae5454dbede4ca3c8acb7922428a95645f1cc647ae03e20ce95780cae44448f",
+    "snapshot-comparison.json": "22bb7c6dfe4a3abd894b85f049ae9c2eb94a3d06e8540b0e588c4f09f8295809",
+    "standalone-replay.json": "509951a7757f5de3c45e4f7ffb2f426e465a7ecaa7a15113f2f1d1580f6f6c53"
+  },
+  "j_numerator_bits": 551,
+  "parameter": "5193/35630",
+  "seed_rank_lower_bound": 18,
+  "status": "PASS_SMALL_CONIC_M18_AND_FINITE_V3_REPLAY",
+  "v3_charts": 114,
+  "v3_final_rank_lower_bound": 18,
+  "v3_stop": "COMPLETE_FINITE_NO_GAIN"
+}

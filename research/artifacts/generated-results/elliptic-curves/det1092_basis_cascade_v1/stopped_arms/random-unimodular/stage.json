@@ -1,0 +1,10 @@
+{
+  "after": 29,
+  "audit": "mod2-112.json",
+  "audit_sha256": "251b72705d4d951371ade17a8f55029a62b24b4c1765e115b6b37e498a3721f5",
+  "before": 28,
+  "charts": 113,
+  "epoch": 11,
+  "full_cosets_scored": 65536,
+  "stale_charts_cancelled": 1375
+}

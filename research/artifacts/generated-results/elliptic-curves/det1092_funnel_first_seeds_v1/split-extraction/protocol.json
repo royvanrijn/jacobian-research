@@ -1,0 +1,13 @@
+{
+  "expected_split_fibres": 3,
+  "inputs": {
+    "artifacts/local/elliptic-curves/det1092-funnel-low-height-audit-v1/result.json": "8e958884ee4d6733834aba95f7acf8ba29ad5464a089dea11fafb2855647a6c5",
+    "artifacts/local/elliptic-curves/det1092-funnel-production-v1/intake-replay.json": "0de59e60284f03046e6871f2161bd51457dcd08683c7b755726a8eb7ab967d4b",
+    "artifacts/local/elliptic-curves/det1092-funnel-production-v1/protocol.json": "314811ffab242f7be62b8b37a31c62c453e7ea9b30143eec2a57d842c2a167f0",
+    "elliptic-curves/cas/extract_det1092_funnel_split_seeds.py": "dcda22b4ee22fd19263af9bff53795917014dc0292766621df808b4a753a9794"
+  },
+  "rss_bytes": 1073741824,
+  "schema": "det1092-exact-split-followup.v1",
+  "scope": "Exact conic splitting, already computed by the mass scan, prioritizes a separate seed follow-up. The original90 cases and trace-score statistics are unchanged.",
+  "wall_seconds": 90
+}

@@ -1,0 +1,139 @@
+{
+  "arm_id": "random-unimodular",
+  "completed_stages": [
+    {
+      "after": 18,
+      "audit": "mod2-016.json",
+      "audit_sha256": "b892eb4d7a45cea5800e7351e7189ef9ab5d015693c260661bb551ef3b0d91f1",
+      "before": 17,
+      "charts": 17,
+      "epoch": 0,
+      "full_cosets_scored": 32,
+      "stale_charts_cancelled": 65
+    },
+    {
+      "after": 19,
+      "audit": "mod2-036.json",
+      "audit_sha256": "e1c3d3f5046f201f5b93cefdde1378f29d487a42ae16d0cbcc924de96d79264e",
+      "before": 18,
+      "charts": 37,
+      "epoch": 1,
+      "full_cosets_scored": 64,
+      "stale_charts_cancelled": 77
+    },
+    {
+      "after": 20,
+      "audit": "mod2-000.json",
+      "audit_sha256": "3e00020f575ed3afe49edb3927f7d87032988068dc51e262352ee58d2b251c6c",
+      "before": 19,
+      "charts": 1,
+      "epoch": 2,
+      "full_cosets_scored": 128,
+      "stale_charts_cancelled": 177
+    },
+    {
+      "after": 21,
+      "audit": "mod2-021.json",
+      "audit_sha256": "c91ea2f9b97cf2fc4e7b038ba1b1cab99145a5e36b07fc60620ea1b558b23c61",
+      "before": 20,
+      "charts": 22,
+      "epoch": 3,
+      "full_cosets_scored": 256,
+      "stale_charts_cancelled": 284
+    },
+    {
+      "after": 22,
+      "audit": "mod2-030.json",
+      "audit_sha256": "a6f990b819e25664e5714d10db6150448e54cd8bad14d2c519d0f803d472361b",
+      "before": 21,
+      "charts": 31,
+      "epoch": 4,
+      "full_cosets_scored": 512,
+      "stale_charts_cancelled": 529
+    },
+    {
+      "after": 23,
+      "audit": "mod2-092.json",
+      "audit_sha256": "949f5146a43f2178225b0298889414940e88f3de222066dd243b97dac6ff5b53",
+      "before": 22,
+      "charts": 93,
+      "epoch": 5,
+      "full_cosets_scored": 1024,
+      "stale_charts_cancelled": 836
+    },
+    {
+      "after": 24,
+      "audit": "mod2-078.json",
+      "audit_sha256": "5fb5b6f324d1104294a7c690d4d52b3fdcc05de1cff9c79ddaee63050484f581",
+      "before": 23,
+      "charts": 79,
+      "epoch": 6,
+      "full_cosets_scored": 2048,
+      "stale_charts_cancelled": 1127
+    },
+    {
+      "after": 25,
+      "audit": "mod2-007.json",
+      "audit_sha256": "12f363b08877fad1d03961e2c4627f2806e1c3c0b1ba2de113c658cb6a4dd80a",
+      "before": 24,
+      "charts": 8,
+      "epoch": 7,
+      "full_cosets_scored": 4096,
+      "stale_charts_cancelled": 1303
+    },
+    {
+      "after": 26,
+      "audit": "mod2-085.json",
+      "audit_sha256": "d1eba672dfa205b44499fd09fcaa9539c9a86f1947ed0c111e9319b4ed78f9bd",
+      "before": 25,
+      "charts": 86,
+      "epoch": 8,
+      "full_cosets_scored": 8192,
+      "stale_charts_cancelled": 1361
+    },
+    {
+      "after": 27,
+      "audit": "mod2-042.json",
+      "audit_sha256": "62c11a5d550fd5a5301c281d9f40d60c904c7a7981fb9e4b9bf8a793b6dd8caa",
+      "before": 26,
+      "charts": 43,
+      "epoch": 9,
+      "full_cosets_scored": 16384,
+      "stale_charts_cancelled": 1416
+    },
+    {
+      "after": 28,
+      "audit": "mod2-107.json",
+      "audit_sha256": "ec17aef16fb24d43910b29b138391be7012ee7f7429a2c9b632c020096e6abb3",
+      "before": 27,
+      "charts": 108,
+      "epoch": 10,
+      "full_cosets_scored": 32768,
+      "stale_charts_cancelled": 1387
+    },
+    {
+      "after": 29,
+      "audit": "mod2-112.json",
+      "audit_sha256": "251b72705d4d951371ade17a8f55029a62b24b4c1765e115b6b37e498a3721f5",
+      "before": 28,
+      "charts": 113,
+      "epoch": 11,
+      "full_cosets_scored": 65536,
+      "stale_charts_cancelled": 1375
+    }
+  ],
+  "executed_chart_records": 1109,
+  "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+  "last_completed_stage_rank_lower_bound": 29,
+  "last_log_line": "CHART 12 470 / 1499 rank 29 status bounded_search_complete",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "status": "USER_STOPPED_CENSORED",
+  "supervisor": {
+    "arm_id": "random-unimodular",
+    "classification": "CENSORED_OR_FAILED",
+    "exit_code": -15,
+    "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+    "terminal_file_exists": false,
+    "wall_seconds": 3926.282731294632
+  }
+}

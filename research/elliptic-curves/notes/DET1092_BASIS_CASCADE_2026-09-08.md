@@ -1,6 +1,6 @@
 # Four MW17 bases through the curve302 adaptive cascade
 
-**Experiment in progress; no terminal conclusion yet.**
+**Stopped at the user’s request; all four arms are censored.**
 
 Starting commit: `5257d634a390b3ce6d65790d93a7817cfea74b3b`.
 The checked-out head subsequently changed through concurrent repository work;
@@ -88,3 +88,29 @@ compressed evidence without requiring the raw run directory and proves the
 universal inverse chord identities used to classify the quartic presentations.
 Neither replay reruns the finite point search or asserts exhaustive CVP
 coverage beyond the frozen worker's retained evidence.
+
+## User cancellation
+
+The user stopped this experiment in favor of a parallel experiment. All four
+worker process groups and the pending replay watcher were terminated. No
+independent post-run replay, final subgroup comparison, or historical novelty
+audit was launched. No mathematical-status entry is promoted from this run.
+
+| Arm | Last completed stage rank | Chart records at stop |
+|---|---:|---:|
+| original | ≥29 | 1092 |
+| recovered-P14 | ≥30 | 1106 |
+| recovered-P11 | ≥30 | 977 |
+| random-unimodular | ≥29 | 1109 |
+
+These are partial execution results, not completed full-chain outcomes or
+bounded no-gain conclusions. The original/P14 28→29 step took702 charts;
+P11 took138 and the random rebase113. P11 later needed444 charts for29→30.
+This illustrates why intermediate gains alone cannot identify the best full
+path. All inputs still describe the same curve302 and its163-digit conductor.
+
+The [stopped summary](../../artifacts/generated-results/elliptic-curves/det1092_basis_cascade_v1/stopped_summary.json)
+and raw inventory preserve the cancellation, resource snapshot, all checkpoints
+and the latest completed stage certificates. The completion/replay/report
+scripts were prepared but their terminal outputs do not exist. Restarting
+would require a separately declared continuation, preserving this censored run.

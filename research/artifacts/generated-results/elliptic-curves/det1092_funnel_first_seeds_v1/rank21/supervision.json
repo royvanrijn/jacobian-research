@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/verify_det1092_funnel_epoch.sage",
+    "--run",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1",
+    "--case",
+    "funnel-002537010",
+    "--stage",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-02/stage.json",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-split-results-v1/funnel-002537010/standalone-rank-21.json"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1073741824,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 120
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-split-results-v1/funnel-002537010/standalone-rank-21.log",
+  "log_sha256": "5e17f4fdb313d5fc3c74a79435f39e4dca482a7f749079498abce46f1f0f63f1",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 231555072,
+  "pid": 1265642,
+  "returncode": 0,
+  "rss_limit_bytes": 1073741824,
+  "start_token": "72454586",
+  "termination_signal": null,
+  "timeout_seconds": 120,
+  "wall_seconds": 0.7985885619418696,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

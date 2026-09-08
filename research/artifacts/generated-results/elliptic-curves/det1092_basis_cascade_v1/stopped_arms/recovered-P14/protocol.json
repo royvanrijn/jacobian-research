@@ -1,0 +1,67 @@
+{
+  "allowed": [
+    "own transformed generic basis and exact inverse/original generic reference",
+    "own transported generic orbit catalogue",
+    "own checkpoints and discoveries",
+    "pinned CAS algorithms and PARI binary"
+  ],
+  "anchors_per_shell": 16,
+  "arm_id": "recovered-P14",
+  "boundary": "Designer and V3 algorithm are retrospectively calibrated. Fresh execution has no exceptional points. This is specialized visibility of the same integral MW17 group, not generic rank raising or a new elliptic curve.",
+  "canonical_per_shell": 25,
+  "exact_cvp_node_limit": 2000000,
+  "failure_semantics": "Preserve all failures and timeouts. No silent reruns. Wall/CPU censoring does not imply no gain or nonexistence. No different parameters are selected in this experiment.",
+  "forbidden": [
+    "other arm outputs",
+    "historical exceptional points or saved successful cascade charts",
+    "public rank31 points and exceptional complements",
+    "network queries or outcome-fitted selectors"
+  ],
+  "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+  "height": 125000,
+  "inputs": {
+    "artifacts/local/elliptic-curves/det1092-basis-cascade-v1/recovered-P14/fixture.json": "a846c62d5afca32c2b9afe20267aacba39bcbc903f0ddcd764cab37cd07c439c",
+    "artifacts/local/elliptic-curves/det1092-basis-cascade-v1/recovered-P14/orbits.tsv": "29837e527bb96d6c869fda2a17e9d6020eea3b398df6aa6943144619af1a1a26"
+  },
+  "max_charts": 4096,
+  "max_epochs": 20,
+  "metric": "Round canonical heights at10^6 in original generic17 plus own discovered points, then transport exactly by blockdiag(U,I). Exact integer CVP; same underlying metric for equal point extensions.",
+  "prime_bound": 1000,
+  "resource_limits": {
+    "address_space_GiB": 12,
+    "concurrent_arms": 4,
+    "hard_CPU_seconds": 7210,
+    "own_CPU_seconds": 7200,
+    "wall_seconds": 14400
+  },
+  "schema": "det1092-basis-cascade.v1",
+  "seconds_per_chart": 10,
+  "selection": "Unchanged V3 cheap_shortlist and final_shortlist; full binary extension enumeration; actual-point dedup; stop first certified gain and rebuild; complete no-gain epoch terminates.",
+  "sources": {
+    "elliptic-curves/cas/adaptive_visibility_cascade.sage": "016f9e721f3ad35158cf281c7a1fe5b19fd7ea3acbc19661685e229a39b96e0d",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/det1092_basis_cascade_v1.sage": "d0faeff4f073ef06528f6fc97423ca216cdfec1e12d36a264ced2807c413e8ff",
+    "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+    "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+    "elliptic-curves/cas/visibility_selection_v3.py": "7a04867be884b72e628703f94b798f940c47b89aadd5acf7f09c237137fb744e"
+  },
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "target_rank": 31
+}

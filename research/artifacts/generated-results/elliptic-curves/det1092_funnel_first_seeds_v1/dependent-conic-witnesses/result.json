@@ -1,0 +1,64 @@
+{
+  "boundary": "Only the rational span of the17 retained generic points and these two conic witnesses. No rank upper bound on the elliptic curve.",
+  "points": [
+    {
+      "clearing_denominator": 1,
+      "index": 0,
+      "point": [
+        "471648238916348935005586227",
+        "1458051429653283293880842957300968854240"
+      ],
+      "status": "EXACT_RATIONAL_SPAN_MEMBERSHIP",
+      "word": [
+        "0",
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "clearing_denominator": 1,
+      "index": 1,
+      "point": [
+        "4717436451064270272266697494620947/638401",
+        "322402924804080207438980090603291229460229171442240/510082399"
+      ],
+      "status": "EXACT_RATIONAL_SPAN_MEMBERSHIP",
+      "word": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "-1",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "protocol_sha256": "859bf2e39ccdb77f20576e7a7c1e88e7869ad489a520de7c5285123f5d11a5be",
+  "rank_gain_of_these_conic_points": 0,
+  "status": "COMPLETE_BOUNDED_SPAN_AUDIT"
+}

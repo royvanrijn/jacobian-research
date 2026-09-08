@@ -1,0 +1,8 @@
+{
+  "bounds": "N_divisor <= N <= N_upper; UNKNOWN remains UNKNOWN when residue persists",
+  "control_sha256": "d9a90653cbcb96faa287283ebdb2c52e4ae6f4a0c0a04265797c533b2fb2e5e7",
+  "focused_tests_passed": 3,
+  "new_conductor_result": false,
+  "source_sha256": "ca401300628c7e9603537ba5352199f7dfdb5b2307501ce749e908a776fcd5de",
+  "status": "PASS_LOCAL_CONDUCTOR_CONTROL_AND_COMPARISON_TESTS"
+}

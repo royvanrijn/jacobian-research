@@ -1,0 +1,6 @@
+{
+  "block_chain": "2bc8a7c0dce7b0abdd9ebc52c518a0ee1fe72529ce798c2bfd6d1f7fc6376d51",
+  "parameters": 256,
+  "protocol_digest": "67a2aaa50f87617f562c6fab7997ac96e0f5fc941f22e19c8d9cc13771c53abd",
+  "status": "PASS_FULL_INTAKE_REPLAY"
+}

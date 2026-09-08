@@ -1,0 +1,15 @@
+{
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "command": [
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=15",
+    "14400",
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_basis_cascade_v1.sage"
+  ],
+  "arm_id": "original",
+  "start_unix": 1788887439.9810905,
+  "supervisor_sha256": "2fefd8d964e80614250e7504763d86417afd82ca21584b4abfcf3ddc0c627e59"
+}

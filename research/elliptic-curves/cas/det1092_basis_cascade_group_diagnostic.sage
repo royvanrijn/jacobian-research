@@ -45,7 +45,8 @@ if unknown:
   denominator=ZZ(1)
   for x in w:denominator=denominator.lcm(x.denominator())
   check=sum((int(denominator*c)*p for c,p in zip(w,basepoints)),E(0))
-  if check!=int(denominator)*q:raise ArithmeticError('proposed height word failed exact group identity')
+  if check!=int(denominator)*q:
+   relations[key]={'status':'PROPOSED_WORD_REJECTED_BY_EXACT_GROUP_LAW','proposed_word':list(map(str,w)),'clearing_denominator':int(denominator)};continue
   relations[key]={'status':'EXACT_RATIONAL_GROUP_IDENTITY','word':list(map(str,w)),'clearing_denominator':int(denominator)}
 comparisons=[]
 for aid,b in d.items():
@@ -58,7 +59,7 @@ for aid,b in d.items():
   elif relations[str(q.xy())]['status']=='EXACT_RATIONAL_GROUP_IDENTITY':words.append(list(map(QQ,relations[str(q.xy())]['word'])))
   else:unknowns.append(raw)
  if unknowns:
-  comparisons.append({'arm_id':aid,'status':'UNRESOLVED_WORD_SEARCH_BOUND','unresolved_points':unknowns});continue
+  comparisons.append({'arm_id':aid,'status':'UNRESOLVED_EXACT_RELATION','unresolved_points':unknowns});continue
  T=matrix(QQ,words);det=T.det() if T.nrows()==n else None
  status='EXACT_INCLUSION_IN_ORIGINAL_FINAL_RATIONAL_SPAN';index=None
  if det is not None and det:

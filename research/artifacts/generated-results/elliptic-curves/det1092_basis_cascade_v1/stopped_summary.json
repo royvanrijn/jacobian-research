@@ -1,0 +1,592 @@
+{
+  "arms": [
+    {
+      "arm_id": "original",
+      "completed_stages": [
+        {
+          "after": 18,
+          "audit": "mod2-016.json",
+          "audit_sha256": "3ba57c19d5efffa0fb9d3353b84e8813a23c5b7217a08bfa0dc1e1594a605253",
+          "before": 17,
+          "charts": 17,
+          "epoch": 0,
+          "full_cosets_scored": 32,
+          "stale_charts_cancelled": 65
+        },
+        {
+          "after": 19,
+          "audit": "mod2-036.json",
+          "audit_sha256": "6d4e5f26c01d7b1334ac3030caccdd0085cb092bfad17d9e97dac63b3a40f2fa",
+          "before": 18,
+          "charts": 37,
+          "epoch": 1,
+          "full_cosets_scored": 64,
+          "stale_charts_cancelled": 77
+        },
+        {
+          "after": 20,
+          "audit": "mod2-000.json",
+          "audit_sha256": "7adb05c4c82cdaee96756537ab274988d9f35bef1158b9b394e160e37e81ad7b",
+          "before": 19,
+          "charts": 1,
+          "epoch": 2,
+          "full_cosets_scored": 128,
+          "stale_charts_cancelled": 177
+        },
+        {
+          "after": 21,
+          "audit": "mod2-021.json",
+          "audit_sha256": "2d662dc512954e55487cf29e54f605f282997b0ed9ab4808d9d3ffd1760058c1",
+          "before": 20,
+          "charts": 22,
+          "epoch": 3,
+          "full_cosets_scored": 256,
+          "stale_charts_cancelled": 284
+        },
+        {
+          "after": 22,
+          "audit": "mod2-030.json",
+          "audit_sha256": "d7e87db407e0493f98c355072e9c1c6e72b7f7b2db888d711d5e722821a22f0e",
+          "before": 21,
+          "charts": 31,
+          "epoch": 4,
+          "full_cosets_scored": 512,
+          "stale_charts_cancelled": 529
+        },
+        {
+          "after": 23,
+          "audit": "mod2-096.json",
+          "audit_sha256": "b4dd87ca8d457f16a835db98c41df9a53ecf7e96d5b32405816d48b3efe12064",
+          "before": 22,
+          "charts": 97,
+          "epoch": 5,
+          "full_cosets_scored": 1024,
+          "stale_charts_cancelled": 846
+        },
+        {
+          "after": 24,
+          "audit": "mod2-047.json",
+          "audit_sha256": "8713419e914472f04aae54c2a407dc6b07d65e7463c1eb9cd9de467f7d5b1ac7",
+          "before": 23,
+          "charts": 48,
+          "epoch": 6,
+          "full_cosets_scored": 2048,
+          "stale_charts_cancelled": 1189
+        },
+        {
+          "after": 25,
+          "audit": "mod2-007.json",
+          "audit_sha256": "1eba9a9772fcf07c33558cbe6d63989a2914b1c86c899c4485f219db45310013",
+          "before": 24,
+          "charts": 8,
+          "epoch": 7,
+          "full_cosets_scored": 4096,
+          "stale_charts_cancelled": 1352
+        },
+        {
+          "after": 26,
+          "audit": "mod2-026.json",
+          "audit_sha256": "cc1424f63646ad11554b390b2173b4ba1c2416659f5fcf3950508f61994b2608",
+          "before": 25,
+          "charts": 27,
+          "epoch": 8,
+          "full_cosets_scored": 8192,
+          "stale_charts_cancelled": 1389
+        },
+        {
+          "after": 27,
+          "audit": "mod2-035.json",
+          "audit_sha256": "22ea81d4c1a471a90964702029cd16df50edec87e00df9db9d7acb04ee3f223b",
+          "before": 26,
+          "charts": 36,
+          "epoch": 9,
+          "full_cosets_scored": 16384,
+          "stale_charts_cancelled": 1432
+        },
+        {
+          "after": 28,
+          "audit": "mod2-050.json",
+          "audit_sha256": "2725d5360ea4ed6ae16f0b8ccbe9371e3f1d86e5d0ca968b663e8488fe13e714",
+          "before": 27,
+          "charts": 51,
+          "epoch": 10,
+          "full_cosets_scored": 32768,
+          "stale_charts_cancelled": 1438
+        },
+        {
+          "after": 29,
+          "audit": "mod2-701.json",
+          "audit_sha256": "06952e4e1fe547b036a96662809d80f93838b69fcc0b2549b7adbace80ec4b8b",
+          "before": 28,
+          "charts": 702,
+          "epoch": 11,
+          "full_cosets_scored": 65536,
+          "stale_charts_cancelled": 801
+        }
+      ],
+      "executed_chart_records": 1092,
+      "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+      "last_completed_stage_rank_lower_bound": 29,
+      "last_log_line": "CHART 12 14 / 1419 rank 29 status bounded_search_complete",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "status": "USER_STOPPED_CENSORED",
+      "supervisor": {
+        "arm_id": "original",
+        "classification": "CENSORED_OR_FAILED",
+        "exit_code": -15,
+        "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+        "terminal_file_exists": false,
+        "wall_seconds": 3926.2819333076477
+      }
+    },
+    {
+      "arm_id": "recovered-P14",
+      "completed_stages": [
+        {
+          "after": 18,
+          "audit": "mod2-016.json",
+          "audit_sha256": "7e213d656a07fdf84a520fe9dff9890df4e2451c1dc41d96f57900263e71735e",
+          "before": 17,
+          "charts": 17,
+          "epoch": 0,
+          "full_cosets_scored": 32,
+          "stale_charts_cancelled": 65
+        },
+        {
+          "after": 19,
+          "audit": "mod2-036.json",
+          "audit_sha256": "4c8edd50141ad3902e85f2d13dca8f7ea067d46e6f756b17a05de98f77db616c",
+          "before": 18,
+          "charts": 37,
+          "epoch": 1,
+          "full_cosets_scored": 64,
+          "stale_charts_cancelled": 77
+        },
+        {
+          "after": 20,
+          "audit": "mod2-000.json",
+          "audit_sha256": "e8166077bf93b534861e9a0606b310816cf30e1ea3b4ba03d09eabf289733bc0",
+          "before": 19,
+          "charts": 1,
+          "epoch": 2,
+          "full_cosets_scored": 128,
+          "stale_charts_cancelled": 177
+        },
+        {
+          "after": 21,
+          "audit": "mod2-021.json",
+          "audit_sha256": "e6ae017af2a72b1714a14180961c519da2797f34f12af4eb02592a50787c0f36",
+          "before": 20,
+          "charts": 22,
+          "epoch": 3,
+          "full_cosets_scored": 256,
+          "stale_charts_cancelled": 284
+        },
+        {
+          "after": 22,
+          "audit": "mod2-030.json",
+          "audit_sha256": "bdd73679b57fcd58e97d42604858b1d156a8409c42c1e209997b36e884570d68",
+          "before": 21,
+          "charts": 31,
+          "epoch": 4,
+          "full_cosets_scored": 512,
+          "stale_charts_cancelled": 529
+        },
+        {
+          "after": 23,
+          "audit": "mod2-096.json",
+          "audit_sha256": "f9bebb865326e1c84fc2820ee1faf61d3b72fb208089f586dbaa963c6b4885a9",
+          "before": 22,
+          "charts": 97,
+          "epoch": 5,
+          "full_cosets_scored": 1024,
+          "stale_charts_cancelled": 846
+        },
+        {
+          "after": 24,
+          "audit": "mod2-047.json",
+          "audit_sha256": "e61826898d7508e6ec3c7f717d89b82bd829e52d6f9b6df2f4cf809b6d559759",
+          "before": 23,
+          "charts": 48,
+          "epoch": 6,
+          "full_cosets_scored": 2048,
+          "stale_charts_cancelled": 1189
+        },
+        {
+          "after": 25,
+          "audit": "mod2-007.json",
+          "audit_sha256": "74a1fe9e24c3d110180a6b6ba6b36ca84440e48b386cbfbb7a7b62b5f447f6d1",
+          "before": 24,
+          "charts": 8,
+          "epoch": 7,
+          "full_cosets_scored": 4096,
+          "stale_charts_cancelled": 1352
+        },
+        {
+          "after": 26,
+          "audit": "mod2-026.json",
+          "audit_sha256": "4ec87cdbac667ab641bad5f8bc7ed6db5931de350e1f619a888d8c1c66169f40",
+          "before": 25,
+          "charts": 27,
+          "epoch": 8,
+          "full_cosets_scored": 8192,
+          "stale_charts_cancelled": 1389
+        },
+        {
+          "after": 27,
+          "audit": "mod2-035.json",
+          "audit_sha256": "bbbd3edd8b5883b53b010f770872cf6029120e9bb4f7e7dd6f30dd51354c58b3",
+          "before": 26,
+          "charts": 36,
+          "epoch": 9,
+          "full_cosets_scored": 16384,
+          "stale_charts_cancelled": 1432
+        },
+        {
+          "after": 28,
+          "audit": "mod2-050.json",
+          "audit_sha256": "8cad37151ec500aeafb332cd46356f42764210bd44e9074d39a65c1938eb8429",
+          "before": 27,
+          "charts": 51,
+          "epoch": 10,
+          "full_cosets_scored": 32768,
+          "stale_charts_cancelled": 1438
+        },
+        {
+          "after": 29,
+          "audit": "mod2-701.json",
+          "audit_sha256": "8075cc1ae9e4e83067e86c0c72ea7f2fce9c8534c27414b7ce0a5030f08047d0",
+          "before": 28,
+          "charts": 702,
+          "epoch": 11,
+          "full_cosets_scored": 65536,
+          "stale_charts_cancelled": 801
+        },
+        {
+          "after": 30,
+          "audit": "mod2-028.json",
+          "audit_sha256": "89a776aa93a9e6851e4d231369ccdf6fdaf3b1d591a05dab1178e5b349d63efc",
+          "before": 29,
+          "charts": 29,
+          "epoch": 12,
+          "full_cosets_scored": 131072,
+          "stale_charts_cancelled": 1390
+        }
+      ],
+      "executed_chart_records": 1106,
+      "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+      "last_completed_stage_rank_lower_bound": 30,
+      "last_log_line": "STAGE {'epoch': 12, 'before': 29, 'after': 30, 'charts': 29, 'stale_charts_cancelled': 1390, 'audit': 'mod2-028.json', 'audit_sha256': '89a776aa93a9e6851e4d231369ccdf6fdaf3b1d591a05dab1178e5b349d63efc', 'full_cosets_scored': 131072}",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "status": "USER_STOPPED_CENSORED",
+      "supervisor": {
+        "arm_id": "recovered-P14",
+        "classification": "CENSORED_OR_FAILED",
+        "exit_code": -15,
+        "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+        "terminal_file_exists": false,
+        "wall_seconds": 3926.2831757068634
+      }
+    },
+    {
+      "arm_id": "recovered-P11",
+      "completed_stages": [
+        {
+          "after": 18,
+          "audit": "mod2-016.json",
+          "audit_sha256": "31ab408784e82a1dbcb3be7ab207d87e61dd1f37e68777a59c1cfa14df7f2ebd",
+          "before": 17,
+          "charts": 17,
+          "epoch": 0,
+          "full_cosets_scored": 32,
+          "stale_charts_cancelled": 65
+        },
+        {
+          "after": 19,
+          "audit": "mod2-036.json",
+          "audit_sha256": "424288a46b8bc1d24d390483269613a56278debac50c77f2cbc0243e740921f1",
+          "before": 18,
+          "charts": 37,
+          "epoch": 1,
+          "full_cosets_scored": 64,
+          "stale_charts_cancelled": 77
+        },
+        {
+          "after": 20,
+          "audit": "mod2-000.json",
+          "audit_sha256": "bb3815be1fe572040dcb87432cd230e7df3c027695b30c0963de8ffd3967331d",
+          "before": 19,
+          "charts": 1,
+          "epoch": 2,
+          "full_cosets_scored": 128,
+          "stale_charts_cancelled": 177
+        },
+        {
+          "after": 21,
+          "audit": "mod2-021.json",
+          "audit_sha256": "c134677ee8eff0c69c9b31a9b1a8e248a2910d48ab9778be7b7fd4d90fa6c84b",
+          "before": 20,
+          "charts": 22,
+          "epoch": 3,
+          "full_cosets_scored": 256,
+          "stale_charts_cancelled": 284
+        },
+        {
+          "after": 22,
+          "audit": "mod2-030.json",
+          "audit_sha256": "2823dcbd06aa0d82770cc5dfbf8a204c8fa72fee7ce1f1d62eaf3983ffc50827",
+          "before": 21,
+          "charts": 31,
+          "epoch": 4,
+          "full_cosets_scored": 512,
+          "stale_charts_cancelled": 529
+        },
+        {
+          "after": 23,
+          "audit": "mod2-093.json",
+          "audit_sha256": "9eab3f31bb72e60a80d3ffb082c4df93d5b6e3227ac5d0e50c9a42f4ff748db9",
+          "before": 22,
+          "charts": 94,
+          "epoch": 5,
+          "full_cosets_scored": 1024,
+          "stale_charts_cancelled": 851
+        },
+        {
+          "after": 24,
+          "audit": "mod2-030.json",
+          "audit_sha256": "0d3b73823df76fe2f8ccd1eff5ad4486dc3abe41f8bd9d206a511a234695d0d6",
+          "before": 23,
+          "charts": 31,
+          "epoch": 6,
+          "full_cosets_scored": 2048,
+          "stale_charts_cancelled": 1162
+        },
+        {
+          "after": 25,
+          "audit": "mod2-007.json",
+          "audit_sha256": "ff51ad75ddff232710771c7c8d4ce4e47ece38071e6fd2fd60bb8664b5760b9f",
+          "before": 24,
+          "charts": 8,
+          "epoch": 7,
+          "full_cosets_scored": 4096,
+          "stale_charts_cancelled": 1340
+        },
+        {
+          "after": 26,
+          "audit": "mod2-026.json",
+          "audit_sha256": "e61fc691bbf1be9d75c86a42edae2039ca7b68eedfb7ba8a80a06d932b3a5c84",
+          "before": 25,
+          "charts": 27,
+          "epoch": 8,
+          "full_cosets_scored": 8192,
+          "stale_charts_cancelled": 1429
+        },
+        {
+          "after": 27,
+          "audit": "mod2-076.json",
+          "audit_sha256": "b8216102fe46fc56018764d85779859d49ceb595d6c4b00ca100d9e0fd4c39c7",
+          "before": 26,
+          "charts": 77,
+          "epoch": 9,
+          "full_cosets_scored": 16384,
+          "stale_charts_cancelled": 1394
+        },
+        {
+          "after": 28,
+          "audit": "mod2-049.json",
+          "audit_sha256": "6f6d5af09bd68005f1ad2549065203f9917c05359f190afbfbfa3246e0a52952",
+          "before": 27,
+          "charts": 50,
+          "epoch": 10,
+          "full_cosets_scored": 32768,
+          "stale_charts_cancelled": 1426
+        },
+        {
+          "after": 29,
+          "audit": "mod2-137.json",
+          "audit_sha256": "6ac497a195108b5bc94aa372d6b6d3ff00e21c985e379288d4d7a4d7eb678332",
+          "before": 28,
+          "charts": 138,
+          "epoch": 11,
+          "full_cosets_scored": 65536,
+          "stale_charts_cancelled": 1375
+        },
+        {
+          "after": 30,
+          "audit": "mod2-443.json",
+          "audit_sha256": "9348a9838059c00fc37e84ec50eea11cf163d83685a7784922f88893cc0b09ac",
+          "before": 29,
+          "charts": 444,
+          "epoch": 12,
+          "full_cosets_scored": 131072,
+          "stale_charts_cancelled": 1017
+        }
+      ],
+      "executed_chart_records": 977,
+      "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+      "last_completed_stage_rank_lower_bound": 30,
+      "last_log_line": "LANDSCAPE 30 8 /32 masks 8192 exact nodes 719528",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "status": "USER_STOPPED_CENSORED",
+      "supervisor": {
+        "arm_id": "recovered-P11",
+        "classification": "CENSORED_OR_FAILED",
+        "exit_code": -15,
+        "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+        "terminal_file_exists": false,
+        "wall_seconds": 3926.282695055008
+      }
+    },
+    {
+      "arm_id": "random-unimodular",
+      "completed_stages": [
+        {
+          "after": 18,
+          "audit": "mod2-016.json",
+          "audit_sha256": "b892eb4d7a45cea5800e7351e7189ef9ab5d015693c260661bb551ef3b0d91f1",
+          "before": 17,
+          "charts": 17,
+          "epoch": 0,
+          "full_cosets_scored": 32,
+          "stale_charts_cancelled": 65
+        },
+        {
+          "after": 19,
+          "audit": "mod2-036.json",
+          "audit_sha256": "e1c3d3f5046f201f5b93cefdde1378f29d487a42ae16d0cbcc924de96d79264e",
+          "before": 18,
+          "charts": 37,
+          "epoch": 1,
+          "full_cosets_scored": 64,
+          "stale_charts_cancelled": 77
+        },
+        {
+          "after": 20,
+          "audit": "mod2-000.json",
+          "audit_sha256": "3e00020f575ed3afe49edb3927f7d87032988068dc51e262352ee58d2b251c6c",
+          "before": 19,
+          "charts": 1,
+          "epoch": 2,
+          "full_cosets_scored": 128,
+          "stale_charts_cancelled": 177
+        },
+        {
+          "after": 21,
+          "audit": "mod2-021.json",
+          "audit_sha256": "c91ea2f9b97cf2fc4e7b038ba1b1cab99145a5e36b07fc60620ea1b558b23c61",
+          "before": 20,
+          "charts": 22,
+          "epoch": 3,
+          "full_cosets_scored": 256,
+          "stale_charts_cancelled": 284
+        },
+        {
+          "after": 22,
+          "audit": "mod2-030.json",
+          "audit_sha256": "a6f990b819e25664e5714d10db6150448e54cd8bad14d2c519d0f803d472361b",
+          "before": 21,
+          "charts": 31,
+          "epoch": 4,
+          "full_cosets_scored": 512,
+          "stale_charts_cancelled": 529
+        },
+        {
+          "after": 23,
+          "audit": "mod2-092.json",
+          "audit_sha256": "949f5146a43f2178225b0298889414940e88f3de222066dd243b97dac6ff5b53",
+          "before": 22,
+          "charts": 93,
+          "epoch": 5,
+          "full_cosets_scored": 1024,
+          "stale_charts_cancelled": 836
+        },
+        {
+          "after": 24,
+          "audit": "mod2-078.json",
+          "audit_sha256": "5fb5b6f324d1104294a7c690d4d52b3fdcc05de1cff9c79ddaee63050484f581",
+          "before": 23,
+          "charts": 79,
+          "epoch": 6,
+          "full_cosets_scored": 2048,
+          "stale_charts_cancelled": 1127
+        },
+        {
+          "after": 25,
+          "audit": "mod2-007.json",
+          "audit_sha256": "12f363b08877fad1d03961e2c4627f2806e1c3c0b1ba2de113c658cb6a4dd80a",
+          "before": 24,
+          "charts": 8,
+          "epoch": 7,
+          "full_cosets_scored": 4096,
+          "stale_charts_cancelled": 1303
+        },
+        {
+          "after": 26,
+          "audit": "mod2-085.json",
+          "audit_sha256": "d1eba672dfa205b44499fd09fcaa9539c9a86f1947ed0c111e9319b4ed78f9bd",
+          "before": 25,
+          "charts": 86,
+          "epoch": 8,
+          "full_cosets_scored": 8192,
+          "stale_charts_cancelled": 1361
+        },
+        {
+          "after": 27,
+          "audit": "mod2-042.json",
+          "audit_sha256": "62c11a5d550fd5a5301c281d9f40d60c904c7a7981fb9e4b9bf8a793b6dd8caa",
+          "before": 26,
+          "charts": 43,
+          "epoch": 9,
+          "full_cosets_scored": 16384,
+          "stale_charts_cancelled": 1416
+        },
+        {
+          "after": 28,
+          "audit": "mod2-107.json",
+          "audit_sha256": "ec17aef16fb24d43910b29b138391be7012ee7f7429a2c9b632c020096e6abb3",
+          "before": 27,
+          "charts": 108,
+          "epoch": 10,
+          "full_cosets_scored": 32768,
+          "stale_charts_cancelled": 1387
+        },
+        {
+          "after": 29,
+          "audit": "mod2-112.json",
+          "audit_sha256": "251b72705d4d951371ade17a8f55029a62b24b4c1765e115b6b37e498a3721f5",
+          "before": 28,
+          "charts": 113,
+          "epoch": 11,
+          "full_cosets_scored": 65536,
+          "stale_charts_cancelled": 1375
+        }
+      ],
+      "executed_chart_records": 1109,
+      "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+      "last_completed_stage_rank_lower_bound": 29,
+      "last_log_line": "CHART 12 470 / 1499 rank 29 status bounded_search_complete",
+      "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+      "status": "USER_STOPPED_CENSORED",
+      "supervisor": {
+        "arm_id": "random-unimodular",
+        "classification": "CENSORED_OR_FAILED",
+        "exit_code": -15,
+        "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+        "terminal_file_exists": false,
+        "wall_seconds": 3926.282731294632
+      }
+    }
+  ],
+  "claim_boundary": "Partial fixed-curve302 comparison. Stage ranks were checked during execution; independent post-run replay and final subgroup/novelty evaluation were not run. No completed 17-to31 comparison, bounded no-gain conclusion, new curve or new rank claim. All four bases concern the same curve and conductor.",
+  "in_flight_censoring": "An interrupted chart or landscape may have no completed output checkpoint. Its missing output is unknown, not a failed search or negative result; the frozen selection and all existing checkpoints are preserved.",
+  "protocol_sha256": "88031e8d6a9c90a8c8dfc7faf14d0b49d585910bf108eac307df58cf17993aa1",
+  "raw_archive_bytes": 17166353612,
+  "raw_archive_files": 20724,
+  "reason": "User chose to stop in favor of a parallel experiment.",
+  "replay_watcher_stopped": true,
+  "roster_sha256": "9f17e1af286e2ffd761ba3080bcecd715b5af2e0edffd1d6cd528ce84119e3e3",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "status": "USER_STOPPED_CENSORED",
+  "user_stop_sha256": "b4d94bf17444e2e87a575d6a7e5857311d0f8bba8c2da6815d3312b321d6f7eb",
+  "worker_processes_stopped": true
+}

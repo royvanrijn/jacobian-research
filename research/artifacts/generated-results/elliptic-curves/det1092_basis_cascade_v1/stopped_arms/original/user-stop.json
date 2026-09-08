@@ -1,0 +1,139 @@
+{
+  "arm_id": "original",
+  "completed_stages": [
+    {
+      "after": 18,
+      "audit": "mod2-016.json",
+      "audit_sha256": "3ba57c19d5efffa0fb9d3353b84e8813a23c5b7217a08bfa0dc1e1594a605253",
+      "before": 17,
+      "charts": 17,
+      "epoch": 0,
+      "full_cosets_scored": 32,
+      "stale_charts_cancelled": 65
+    },
+    {
+      "after": 19,
+      "audit": "mod2-036.json",
+      "audit_sha256": "6d4e5f26c01d7b1334ac3030caccdd0085cb092bfad17d9e97dac63b3a40f2fa",
+      "before": 18,
+      "charts": 37,
+      "epoch": 1,
+      "full_cosets_scored": 64,
+      "stale_charts_cancelled": 77
+    },
+    {
+      "after": 20,
+      "audit": "mod2-000.json",
+      "audit_sha256": "7adb05c4c82cdaee96756537ab274988d9f35bef1158b9b394e160e37e81ad7b",
+      "before": 19,
+      "charts": 1,
+      "epoch": 2,
+      "full_cosets_scored": 128,
+      "stale_charts_cancelled": 177
+    },
+    {
+      "after": 21,
+      "audit": "mod2-021.json",
+      "audit_sha256": "2d662dc512954e55487cf29e54f605f282997b0ed9ab4808d9d3ffd1760058c1",
+      "before": 20,
+      "charts": 22,
+      "epoch": 3,
+      "full_cosets_scored": 256,
+      "stale_charts_cancelled": 284
+    },
+    {
+      "after": 22,
+      "audit": "mod2-030.json",
+      "audit_sha256": "d7e87db407e0493f98c355072e9c1c6e72b7f7b2db888d711d5e722821a22f0e",
+      "before": 21,
+      "charts": 31,
+      "epoch": 4,
+      "full_cosets_scored": 512,
+      "stale_charts_cancelled": 529
+    },
+    {
+      "after": 23,
+      "audit": "mod2-096.json",
+      "audit_sha256": "b4dd87ca8d457f16a835db98c41df9a53ecf7e96d5b32405816d48b3efe12064",
+      "before": 22,
+      "charts": 97,
+      "epoch": 5,
+      "full_cosets_scored": 1024,
+      "stale_charts_cancelled": 846
+    },
+    {
+      "after": 24,
+      "audit": "mod2-047.json",
+      "audit_sha256": "8713419e914472f04aae54c2a407dc6b07d65e7463c1eb9cd9de467f7d5b1ac7",
+      "before": 23,
+      "charts": 48,
+      "epoch": 6,
+      "full_cosets_scored": 2048,
+      "stale_charts_cancelled": 1189
+    },
+    {
+      "after": 25,
+      "audit": "mod2-007.json",
+      "audit_sha256": "1eba9a9772fcf07c33558cbe6d63989a2914b1c86c899c4485f219db45310013",
+      "before": 24,
+      "charts": 8,
+      "epoch": 7,
+      "full_cosets_scored": 4096,
+      "stale_charts_cancelled": 1352
+    },
+    {
+      "after": 26,
+      "audit": "mod2-026.json",
+      "audit_sha256": "cc1424f63646ad11554b390b2173b4ba1c2416659f5fcf3950508f61994b2608",
+      "before": 25,
+      "charts": 27,
+      "epoch": 8,
+      "full_cosets_scored": 8192,
+      "stale_charts_cancelled": 1389
+    },
+    {
+      "after": 27,
+      "audit": "mod2-035.json",
+      "audit_sha256": "22ea81d4c1a471a90964702029cd16df50edec87e00df9db9d7acb04ee3f223b",
+      "before": 26,
+      "charts": 36,
+      "epoch": 9,
+      "full_cosets_scored": 16384,
+      "stale_charts_cancelled": 1432
+    },
+    {
+      "after": 28,
+      "audit": "mod2-050.json",
+      "audit_sha256": "2725d5360ea4ed6ae16f0b8ccbe9371e3f1d86e5d0ca968b663e8488fe13e714",
+      "before": 27,
+      "charts": 51,
+      "epoch": 10,
+      "full_cosets_scored": 32768,
+      "stale_charts_cancelled": 1438
+    },
+    {
+      "after": 29,
+      "audit": "mod2-701.json",
+      "audit_sha256": "06952e4e1fe547b036a96662809d80f93838b69fcc0b2549b7adbace80ec4b8b",
+      "before": 28,
+      "charts": 702,
+      "epoch": 11,
+      "full_cosets_scored": 65536,
+      "stale_charts_cancelled": 801
+    }
+  ],
+  "executed_chart_records": 1092,
+  "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+  "last_completed_stage_rank_lower_bound": 29,
+  "last_log_line": "CHART 12 14 / 1419 rank 29 status bounded_search_complete",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "status": "USER_STOPPED_CENSORED",
+  "supervisor": {
+    "arm_id": "original",
+    "classification": "CENSORED_OR_FAILED",
+    "exit_code": -15,
+    "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+    "terminal_file_exists": false,
+    "wall_seconds": 3926.2819333076477
+  }
+}

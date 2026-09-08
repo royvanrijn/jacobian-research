@@ -1,0 +1,13 @@
+{
+  "boundary": "Unmatched means only in these frozen snapshots; no literature-wide novelty or conductor claim.",
+  "comparison_snapshot_sha256": "f57eb13c34a06633d3f4717aaf977623f674613fc3b7470f1467c5d7928b078d",
+  "counts": {
+    "inventory": 201,
+    "public": 630
+  },
+  "matches": {
+    "inventory": [],
+    "public": []
+  },
+  "status": "EXACT_Q_ISOMORPHISM_COMPARISON"
+}

@@ -1,0 +1,13 @@
+{
+  "checker_sha256": "fe60710791a4f0629cb70caa3b37b1cd7378ee77d07a08d122a79eced7570d80",
+  "kernel_sha256": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741",
+  "positive_parameters": [
+    "1117/2193",
+    "5193/35630"
+  ],
+  "rejected": [
+    "off_curve",
+    "dependent_point"
+  ],
+  "status": "PASS_STANDALONE_SEED_VERIFIER_CONTROLS"
+}

@@ -1,0 +1,13 @@
+{
+  "after": 21,
+  "audit": "mod2-002.json",
+  "audit_sha256": "6f4134ba01575a022a07bd7a3868dc5a2a9c048b90eb92f821ec4e207588e6af",
+  "before": 20,
+  "censored_charts": 0,
+  "charts": 3,
+  "epoch": 2,
+  "full_cosets_scored": 256,
+  "stale_charts_cancelled": 303,
+  "stop_reason": "REBUILD_AFTER_CERTIFIED_GAIN",
+  "wall_seconds": 18.373202458955348
+}

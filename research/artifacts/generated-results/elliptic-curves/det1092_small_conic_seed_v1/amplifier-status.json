@@ -1,0 +1,45 @@
+{
+  "queue": {
+    "certified_rank_lower_bound": 18,
+    "extra_allocation_seconds": 0,
+    "queue": "RETAIN",
+    "scope": "Queue classification; no implicit extra run.",
+    "verified_sha256": "5fd89e33041d1b83e0786dfd84939e107f8288b8c18af193ecaed1b1931b978f"
+  },
+  "status": "COMPLETE_REPLAYED",
+  "supervision": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+      "amplify",
+      "--directory",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1",
+      "--case",
+      "conic-small-01"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 256000000,
+      "poll_seconds": 0.05,
+      "rss_bytes": 3221225472,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 14400
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/amplifier.log",
+    "log_sha256": "310436de825a1d1cd4266f98f6227f8653a856f8f93848557faf0921ad4a2644",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 340877312,
+    "pid": 683689,
+    "returncode": 0,
+    "rss_limit_bytes": 3221225472,
+    "start_token": "72294463",
+    "termination_signal": null,
+    "timeout_seconds": 14400,
+    "wall_seconds": 215.43820848490577,
+    "worker_result": null,
+    "worker_result_sha256": null
+  }
+}

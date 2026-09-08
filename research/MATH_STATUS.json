@@ -52264,6 +52264,80 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-DET1092-SMALL-CONIC-SEED-20260908",
+      "kind": "example",
+      "state": "proved",
+      "title": "A smaller determinant1092 conic specialization has certified rank at least18; its finite V3 run has no further gain",
+      "scope": "One equation-only PARI ternary quadratic solve on the primitive orbit8044 conic gives reduced parameter s=5193/35630, original t=-1663732982925420458917240939000/41904862529800516500295571942909. The reduced j numerator/denominator have551/534 bits, versus6176 numerator bits for the earlier u=0 progression control. Exact evaluation of the inherited17 sections and a frozen conic branch supplies18 rational points. A standalone checker imports neither constructor nor repository rank/Kummer backend: it verifies the generic specialization, exact parameter/model transport and residual-conic/line incidence, enumerates complete good finite groups and doubled subgroups, and obtains matrix ranks17 and18. Good reduction at41 has odd order53, excluding rational2-torsion, so infinite descent proves rational independence. The fibre is unmatched under exact Q-isomorphism in pinned630 public and201 local equations; no literature-wide novelty is asserted. Construction, repeated preparation and independent proof take8.67,1.52,0.75 supervised seconds. A separate unchanged V3 run completes114 charts with independent landscape/map/cloud/mod2/3/5 replay and no further certified gain. This is a bounded no-gain outcome, not rank exactly18. The constructive fibre is outside the broad-population yield accounting. No rank above18, conductor result, solved xi selector, generic-rank increase on the fixed K3, or universal amplification claim follows.",
+      "canonical_source": "elliptic-curves/notes/DET1092_SMALL_CONIC_SEED_2026-09-08.md",
+      "dependencies": [
+        "EC-DET1092-ORBIT8044-Q-RATIONAL-RANK18-20260908",
+        "EC-DET1092-REDUCED-PARAMETER-CHART-20260907"
+      ],
+      "checker": "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741",
+      "software_lock": [
+        "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage",
+        "elliptic-curves/cas/construct_det1092_funnel_small_conic_seed.sage",
+        "elliptic-curves/cas/det1092_funnel_worker.py",
+        "elliptic-curves/cas/det1092_funnel_replay.py",
+        "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/manifest.json",
+        "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/standalone-replay.json",
+        "artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/seeds/conic-small-01/m18.json",
+        "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/reduced-parent.json",
+        "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-DET1092-FUNNEL-FIRST-SEEDS-20260908",
+      "kind": "example",
+      "state": "proved",
+      "title": "The determinant1092 funnel supplies three certified M18 fibres and a conic-seeded rank21 subgroup",
+      "scope": "Exact generic17-plus-one certificates prove rank at least18 at reduced parameters s=1117/2193,1926/2699,2953/1671, with j numerator/denominator bits486/469,460/449,509/492. The first comes from the original90 bounded seed cohort; the other two from a separately frozen exhaustive three-fibre conic-splitting follow-up to the fully replayed ten-million-address scan. Their seed construction uses zero quartic search charts. On the remaining split fibre s=-528/3635, both conic points equal inherited words -M2+M15 and M10-M14-M15 and add no rank to M17. Unchanged V3 from s=1926/2699 reaches a completed21-point epoch. Standalone exact specialization, generic17/seed18 prefix checks, rational point identities, complete finite group quotients by doubling,21 independent columns and odd-order good reduction prove rank at least21 by infinite descent. Its cascade is active; full search-policy replay is not claimed. The s=1117/2193 cascade completes114 charts and full independent replay with lower bound18 and no further gain. All three equations are unmatched under Q-isomorphism in pinned630 public and201 local equations. No exact rank, whole-curve exclusion, literature-wide novelty, conductor improvement, rank32 result, selector-sensitivity theorem or generic-rank increase follows. Original selection and separate follow-up yield remain distinct.",
+      "canonical_source": "elliptic-curves/notes/DET1092_FUNNEL_FIRST_SEEDS_2026-09-08.md",
+      "dependencies": [
+        "EC-DET1092-ORBIT8044-Q-RATIONAL-RANK18-20260908",
+        "EC-DET1092-REDUCED-PARAMETER-CHART-20260907"
+      ],
+      "checker": "elliptic-curves/cas/verify_det1092_funnel_epoch.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6f162b1906db0f3b11b8bee6d7b86f991f9b01733ca76fdc7963092c6a2dba84",
+      "software_lock": [
+        "elliptic-curves/cas/verify_det1092_funnel_epoch.sage",
+        "elliptic-curves/cas/verify_det1092_funnel_seed.sage",
+        "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage",
+        "elliptic-curves/cas/run_det1092_split_followup.py",
+        "elliptic-curves/cas/audit_det1092_split_seed_relation.sage",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/manifest.json",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/rank21/standalone-proof.json",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/dependent-conic-witnesses/result.json",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-019791672/standalone-replay.json",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-002537010/standalone-replay.json",
+        "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-020887854/standalone-replay.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

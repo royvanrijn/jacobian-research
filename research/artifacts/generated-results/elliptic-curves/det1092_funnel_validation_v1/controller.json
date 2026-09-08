@@ -1,0 +1,356 @@
+{
+  "active_stage": null,
+  "interrupted_reservations": [],
+  "pid": 149660,
+  "stages": [
+    {
+      "name": "tables",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "tables",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/tables-00.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 232878080,
+        "pid": 149685,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72155606",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7456531639909372,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "e650731568867acd3be06035cccf9c99716670adf968d9817d0de7416ba42cfd"
+    },
+    {
+      "name": "intake",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel.py",
+          "scan",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/intake-00.log",
+        "log_sha256": "a5e742dad9e53de444c5f31bba096b0b03e6eaf52d0f36871d7978c56143d489",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 24039424,
+        "pid": 149732,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72155684",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.3324042829917744,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "0ee1d04df7ced607fe779311d7ee2b721447f220dda660e3c972247b9899542a"
+    },
+    {
+      "name": "audit",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/usr/bin/python3",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel.py",
+          "audit",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/audit-00.log",
+        "log_sha256": "a5e742dad9e53de444c5f31bba096b0b03e6eaf52d0f36871d7978c56143d489",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 24674304,
+        "pid": 149774,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72155720",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.33132779598236084,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "4d7b0c9011238b1794d132ea5f5f030dde5ae363581091c201a641d49d60e77b"
+    },
+    {
+      "name": "conic-control",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "conic-control",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/conic-control-00.log",
+        "log_sha256": "328e358bb10ecc4bfec6df8bab33dabf0e0e128271d687380b9315e2d8e26289",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 247169024,
+        "pid": 149850,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72155756",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 2.027502210927196,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "8725fe48c52d9b29e624d7a2f0d4a2b9ad0c8197de0ae6c52bc26a2fc002d991"
+    },
+    {
+      "name": "replay-conic-control",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "conic-control",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/replay-conic-control-00.log",
+        "log_sha256": "328e358bb10ecc4bfec6df8bab33dabf0e0e128271d687380b9315e2d8e26289",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 246996992,
+        "pid": 149955,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72155962",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.9750402020290494,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "8725fe48c52d9b29e624d7a2f0d4a2b9ad0c8197de0ae6c52bc26a2fc002d991"
+    },
+    {
+      "name": "seed-funnel-000000486",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "seed",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4",
+          "--case",
+          "funnel-000000486"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/seed-funnel-000000486-00.log",
+        "log_sha256": "d86b2acd546bfb5667aca7dd3945ba94d40c5a42f7f4f07883280804f72ec97b",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 253886464,
+        "pid": 150070,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72156162",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.155600746977143,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "45b929a9c55d06dc9387c11dfe419f301e0733df471a4ca00a49c3ece3e1c94b"
+    },
+    {
+      "name": "replay-seed-funnel-000000486",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "replay-seed",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4",
+          "--case",
+          "funnel-000000486"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/replay-seed-funnel-000000486-00.log",
+        "log_sha256": "d86b2acd546bfb5667aca7dd3945ba94d40c5a42f7f4f07883280804f72ec97b",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 254357504,
+        "pid": 150134,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72156281",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.1033782280283049,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "45b929a9c55d06dc9387c11dfe419f301e0733df471a4ca00a49c3ece3e1c94b"
+    },
+    {
+      "name": "seed-funnel-000000300",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "seed",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4",
+          "--case",
+          "funnel-000000300"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/seed-funnel-000000300-00.log",
+        "log_sha256": "f21e750d72b2b06b39c83555c539425c2a3b29b6dbcd9656a162c28337252d69",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 254459904,
+        "pid": 150275,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72156394",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.157227506977506,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "705443110beb8d52abad1e6d4f1241a68e9c1a14d3a92d8c1052f95e6dbef69d"
+    },
+    {
+      "name": "replay-seed-funnel-000000300",
+      "passed": true,
+      "supervision": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/det1092_funnel_worker.py",
+          "replay-seed",
+          "--directory",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4",
+          "--case",
+          "funnel-000000300"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-smoke-v4/logs/replay-seed-funnel-000000300-00.log",
+        "log_sha256": "f21e750d72b2b06b39c83555c539425c2a3b29b6dbcd9656a162c28337252d69",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 255205376,
+        "pid": 150339,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "72156513",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.0525688849156722,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "terminal_sha256": "705443110beb8d52abad1e6d4f1241a68e9c1a14d3a92d8c1052f95e6dbef69d"
+    }
+  ],
+  "status": "COMPLETE_FINITE_FUNNEL"
+}

@@ -1,0 +1,230 @@
+{
+  "boundary": "Exact rational subgroup lower bounds. Snapshot-relative Q-isomorphism nonmatches only. The rank21 cascade and original90 selection continue; this immutable package certifies a completed epoch, not terminal search outcomes. No exact rank, conductor improvement, universal novelty or rank32 claim.",
+  "checker_sources": {
+    "elliptic-curves/cas/audit_det1092_split_seed_relation.sage": "653861744b38afd32b87c3162c71bd55465b800ce6375cbe0b073fdc8ffbea0e",
+    "elliptic-curves/cas/verify_det1092_funnel_epoch.sage": "6f162b1906db0f3b11b8bee6d7b86f991f9b01733ca76fdc7963092c6a2dba84",
+    "elliptic-curves/cas/verify_det1092_funnel_seed.sage": "fe60710791a4f0629cb70caa3b37b1cd7378ee77d07a08d122a79eced7570d80",
+    "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741"
+  },
+  "files": {
+    "comparison-snapshot.json": {
+      "sha256": "f57eb13c34a06633d3f4717aaf977623f674613fc3b7470f1467c5d7928b078d",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-results-v1/comparison-snapshot.json"
+    },
+    "dependent-conic-witnesses/conic-points.json": {
+      "sha256": "447071d0a99141ea2d3325f6f0690885fbac6ac3be223d63e93aeac6e73bb256",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/conic-points.json"
+    },
+    "dependent-conic-witnesses/intake.json": {
+      "sha256": "802c1778cda09b539cc812657148767c59a9da728f9fc92bf6b546121a33c8e2",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/intake.json"
+    },
+    "dependent-conic-witnesses/m17.json": {
+      "sha256": "45c5f90d968785efbee7d6ce39277791d234af87bf3e5e53ea6b575f7d29bb62",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/m17.json"
+    },
+    "dependent-conic-witnesses/protocol.json": {
+      "sha256": "859bf2e39ccdb77f20576e7a7c1e88e7869ad489a520de7c5285123f5d11a5be",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-span-audit-v2/protocol.json"
+    },
+    "dependent-conic-witnesses/result.json": {
+      "sha256": "911338d323bce6bd6386765600fc2003f4f4d350fae44cfa76f892110216f715",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-span-audit-v2/result.json"
+    },
+    "dependent-conic-witnesses/seed-result.json": {
+      "sha256": "dfc3f39df0351a848d3f32a722267b17f0374e9d3e3a100a29ce347c347008dc",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164/result.json"
+    },
+    "dependent-conic-witnesses/supervision.json": {
+      "sha256": "a9a556a222705765986859772ab5b2674e2bbc39fab9e4498696dc6f9017c170",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-span-audit-v2/supervision.json"
+    },
+    "main-seed-v3/queue.json": {
+      "sha256": "1ccac58185fc85c3239b70369f3de46a91a95dc1cb1f884fa10eb80913c97f99",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/queue.json"
+    },
+    "main-seed-v3/trial-verified.json": {
+      "sha256": "abdddeb1c169f89c8468b70badc7c819d04bb06fc0a96cc426c13708cc5b721a",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/amplifiers/funnel-019791672/trial-verified.json"
+    },
+    "rank21/epoch-evidence/cloud-002.json": {
+      "sha256": "4fb551527f154e6e718ac1bde2b228a6fa3a8061800873962cc75f1a6c6764da",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-02/cloud-002.json"
+    },
+    "rank21/epoch-evidence/mod2-002.json": {
+      "sha256": "6f4134ba01575a022a07bd7a3868dc5a2a9c048b90eb92f821ec4e207588e6af",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-02/mod2-002.json"
+    },
+    "rank21/epoch-evidence/stage.json": {
+      "sha256": "edfa920bc495022d7c23c90d25384bb5fb0f12f064039ad2f94676f827e4d4f9",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/amplifiers/funnel-002537010/replay-M17/epoch-02/stage.json"
+    },
+    "rank21/standalone-proof.json": {
+      "sha256": "bce89af4fc0e575ad3215c358f79048584a80845858b3223ecae98230a3ebd47",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-split-results-v1/funnel-002537010/standalone-rank-21.json"
+    },
+    "rank21/supervision.json": {
+      "sha256": "0e564ffca81368385b34a51b38b66f36cfa26f0841da83d9ef28c202547b21c3",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-split-results-v1/funnel-002537010/standalone-rank-21.supervisor.json"
+    },
+    "seed-verifier-validation.json": {
+      "sha256": "e8096a156979b2d8d9f96f25232a6a4ea58aeefb96a2714053410fb2153eb830",
+      "source": "artifacts/generated-results/elliptic-curves/det1092_funnel_seed_verifier_validation_v1.json"
+    },
+    "seeds/funnel-002537010/conic-points.json": {
+      "sha256": "63a9bcc3e53684c891bf73be90a1a99d519e283588c08cc0d30c133604f7038d",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/conic-points.json"
+    },
+    "seeds/funnel-002537010/intake.json": {
+      "sha256": "57002445fa3721d95aa950c31422f4a32dbb89d973e8235046a0731b4513faff",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/intake.json"
+    },
+    "seeds/funnel-002537010/m17.json": {
+      "sha256": "4b1ab2b6645022c118b8fe7841e02dde3694c3d69f2998d104836711a4c3802a",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/m17.json"
+    },
+    "seeds/funnel-002537010/m18.json": {
+      "sha256": "a02a40e0291f5ca0db9c392f3570a28d927f44fa99de53aaad5931f39c9e9cf2",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/m18.json"
+    },
+    "seeds/funnel-002537010/result.json": {
+      "sha256": "879c2c07485865fd5a32b790f283fbf76e787f289e1a3e23e8327b7f3345d7f2",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/result.json"
+    },
+    "seeds/funnel-002537010/standalone-replay.json": {
+      "sha256": "0c9813ff0546dada9b00e13a9a6029d5e46b5c8a5094fe9a70691959afc9edf3",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/standalone-replay.json"
+    },
+    "seeds/funnel-019791672/conic-points.json": {
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/conic-points.json"
+    },
+    "seeds/funnel-019791672/first-witness-chart.json": {
+      "sha256": "4135474317c653edbada051730cc397c6cb3636d03c0348edf9296f6839b9897",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/chart-007.json"
+    },
+    "seeds/funnel-019791672/intake.json": {
+      "sha256": "bd8f4d1ab22f7f23abb3356bc48938bb96393ea7bd931fc0da76ce807c74c6d2",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/intake.json"
+    },
+    "seeds/funnel-019791672/m17.json": {
+      "sha256": "4933105d55768bd8c9a167c65d235ee19b755812330ba2323375aee386b1385d",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/m17.json"
+    },
+    "seeds/funnel-019791672/m18.json": {
+      "sha256": "f339887a56ec1c9dd8c25d4992f3e22b1d585ba75dd8aa179104ea30cea9e4df",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/m18.json"
+    },
+    "seeds/funnel-019791672/result.json": {
+      "sha256": "e0425d34cb8e76f1d55c285226c8c50b0bf5edd62a8ec9d911658563254ac460",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/result.json"
+    },
+    "seeds/funnel-019791672/standalone-replay.json": {
+      "sha256": "f7577b3aa3128a2210754d0710a8b0e143e043e7bb8f518046c3f74377be9bc3",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-production-v1/seeds/funnel-019791672/standalone-replay.json"
+    },
+    "seeds/funnel-020887854/conic-points.json": {
+      "sha256": "42afae1be11d25be0c75afa97f94369a2e3152166284c687c13cd90211be5835",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/conic-points.json"
+    },
+    "seeds/funnel-020887854/intake.json": {
+      "sha256": "503971c1bbba7f9c78733bfd8c90d2352ba9f4c54f00d2040c2328d59a85ff5e",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/intake.json"
+    },
+    "seeds/funnel-020887854/m17.json": {
+      "sha256": "94f6d6a41eb8d10fda014941101d20914014796fe503682dae118f6c8af4fb2d",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/m17.json"
+    },
+    "seeds/funnel-020887854/m18.json": {
+      "sha256": "48c5846ebb89be46a61ecdac37b708e087c1d6a7e96c721e4df9742d839efd6e",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/m18.json"
+    },
+    "seeds/funnel-020887854/result.json": {
+      "sha256": "53fd96e58a93a25d2b20b9e84ed846f7cfbc40764d5ceccf256f6e1fcf347040",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/result.json"
+    },
+    "seeds/funnel-020887854/standalone-replay.json": {
+      "sha256": "d6da2d38b6e6f9de62dc10fa778110277d8e7281d69c90d3a1266069ced919d1",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-020887854/standalone-replay.json"
+    },
+    "split-extraction/protocol.json": {
+      "sha256": "059e07384d27e7293b75ce394d065ff3d0b0fe6adf29e015391a9b08c9c78cc4",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-split-followup-v1/protocol.json"
+    },
+    "split-extraction/split-candidates.json": {
+      "sha256": "1db7969a000a65f957a547c46d0f765ede8cf77bb0b8cfbea5ce09a41654d4bb",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-split-followup-v1/split-candidates.json"
+    },
+    "split-followup/protocol.json": {
+      "sha256": "49bd228497adbf2030a9497e05d4dc331289b13d812855dfd9b1968edb9421c2",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/protocol.json"
+    },
+    "split-followup/selection.json": {
+      "sha256": "442ce6b53d5e4b11972ac4340acd96a42ec9d2b1ec684ecb0cd99a233c39bd90",
+      "source": "artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/selection.json"
+    }
+  },
+  "main_seed_terminal_v3": {
+    "case": "funnel-019791672",
+    "charts": 114,
+    "rank_lower_bound": 18,
+    "replayed": true
+  },
+  "schema": "det1092-funnel-first-seeds.v1",
+  "seeds": [
+    {
+      "case": "funnel-019791672",
+      "certified_seed_rank": 18,
+      "j_denominator_bits": 469,
+      "j_numerator_bits": 486,
+      "original_parameter": "-65633945904668217932895038500/884360922492384082997311955223",
+      "parameter": "1117/2193",
+      "selection_lane": "original90",
+      "snapshot_matches": {
+        "inventory": [],
+        "public": []
+      }
+    },
+    {
+      "case": "funnel-002537010",
+      "certified_seed_rank": 18,
+      "j_denominator_bits": 449,
+      "j_numerator_bits": 460,
+      "original_parameter": "-181512817550982977254619296000/1616488215803732492074877492063",
+      "parameter": "1926/2699",
+      "selection_lane": "exact_split_followup",
+      "snapshot_matches": {
+        "inventory": [],
+        "public": []
+      }
+    },
+    {
+      "case": "funnel-020887854",
+      "certified_seed_rank": 18,
+      "j_denominator_bits": 492,
+      "j_numerator_bits": 509,
+      "original_parameter": "44028478564602392126012695250/197185515981834036746527715109",
+      "parameter": "2953/1671",
+      "selection_lane": "exact_split_followup",
+      "snapshot_matches": {
+        "inventory": [],
+        "public": []
+      }
+    }
+  ],
+  "split_population": {
+    "audited_parameters": 10000000,
+    "certified_extra_directions": 2,
+    "exact_split_fibres": 3,
+    "other_conic_points_have_exact_inherited_words": true,
+    "other_fibre": "-528/3635"
+  },
+  "status": "PASS_THREE_M18_SEEDS_AND_ONE_RANK21_SUBGROUP",
+  "strongest_completed_epoch": {
+    "case": "funnel-002537010",
+    "epoch": 2,
+    "full_search_policy_replayed": false,
+    "parameter": "1926/2699",
+    "rank_lower_bound": 21
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "boundary": "Explicit rank18 subgroup on a smaller constructive fibre. No higher rank, conductor, novelty or amplification outcome claimed.",
+  "counted_as_broad_population_yield": false,
+  "j_denominator_bits": 534,
+  "j_numerator_bits": 551,
+  "original_parameter": "-1663732982925420458917240939000/41904862529800516500295571942909",
+  "parameter": "5193/35630",
+  "rank_lower_bound": 18,
+  "seed_sha256": "1ae5454dbede4ca3c8acb7922428a95645f1cc647ae03e20ce95780cae44448f",
+  "status": "CERTIFIED_SMALL_CONIC_M18"
+}

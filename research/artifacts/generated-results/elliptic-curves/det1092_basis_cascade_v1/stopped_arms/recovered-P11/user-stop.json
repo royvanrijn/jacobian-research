@@ -1,0 +1,149 @@
+{
+  "arm_id": "recovered-P11",
+  "completed_stages": [
+    {
+      "after": 18,
+      "audit": "mod2-016.json",
+      "audit_sha256": "31ab408784e82a1dbcb3be7ab207d87e61dd1f37e68777a59c1cfa14df7f2ebd",
+      "before": 17,
+      "charts": 17,
+      "epoch": 0,
+      "full_cosets_scored": 32,
+      "stale_charts_cancelled": 65
+    },
+    {
+      "after": 19,
+      "audit": "mod2-036.json",
+      "audit_sha256": "424288a46b8bc1d24d390483269613a56278debac50c77f2cbc0243e740921f1",
+      "before": 18,
+      "charts": 37,
+      "epoch": 1,
+      "full_cosets_scored": 64,
+      "stale_charts_cancelled": 77
+    },
+    {
+      "after": 20,
+      "audit": "mod2-000.json",
+      "audit_sha256": "bb3815be1fe572040dcb87432cd230e7df3c027695b30c0963de8ffd3967331d",
+      "before": 19,
+      "charts": 1,
+      "epoch": 2,
+      "full_cosets_scored": 128,
+      "stale_charts_cancelled": 177
+    },
+    {
+      "after": 21,
+      "audit": "mod2-021.json",
+      "audit_sha256": "c134677ee8eff0c69c9b31a9b1a8e248a2910d48ab9778be7b7fd4d90fa6c84b",
+      "before": 20,
+      "charts": 22,
+      "epoch": 3,
+      "full_cosets_scored": 256,
+      "stale_charts_cancelled": 284
+    },
+    {
+      "after": 22,
+      "audit": "mod2-030.json",
+      "audit_sha256": "2823dcbd06aa0d82770cc5dfbf8a204c8fa72fee7ce1f1d62eaf3983ffc50827",
+      "before": 21,
+      "charts": 31,
+      "epoch": 4,
+      "full_cosets_scored": 512,
+      "stale_charts_cancelled": 529
+    },
+    {
+      "after": 23,
+      "audit": "mod2-093.json",
+      "audit_sha256": "9eab3f31bb72e60a80d3ffb082c4df93d5b6e3227ac5d0e50c9a42f4ff748db9",
+      "before": 22,
+      "charts": 94,
+      "epoch": 5,
+      "full_cosets_scored": 1024,
+      "stale_charts_cancelled": 851
+    },
+    {
+      "after": 24,
+      "audit": "mod2-030.json",
+      "audit_sha256": "0d3b73823df76fe2f8ccd1eff5ad4486dc3abe41f8bd9d206a511a234695d0d6",
+      "before": 23,
+      "charts": 31,
+      "epoch": 6,
+      "full_cosets_scored": 2048,
+      "stale_charts_cancelled": 1162
+    },
+    {
+      "after": 25,
+      "audit": "mod2-007.json",
+      "audit_sha256": "ff51ad75ddff232710771c7c8d4ce4e47ece38071e6fd2fd60bb8664b5760b9f",
+      "before": 24,
+      "charts": 8,
+      "epoch": 7,
+      "full_cosets_scored": 4096,
+      "stale_charts_cancelled": 1340
+    },
+    {
+      "after": 26,
+      "audit": "mod2-026.json",
+      "audit_sha256": "e61fc691bbf1be9d75c86a42edae2039ca7b68eedfb7ba8a80a06d932b3a5c84",
+      "before": 25,
+      "charts": 27,
+      "epoch": 8,
+      "full_cosets_scored": 8192,
+      "stale_charts_cancelled": 1429
+    },
+    {
+      "after": 27,
+      "audit": "mod2-076.json",
+      "audit_sha256": "b8216102fe46fc56018764d85779859d49ceb595d6c4b00ca100d9e0fd4c39c7",
+      "before": 26,
+      "charts": 77,
+      "epoch": 9,
+      "full_cosets_scored": 16384,
+      "stale_charts_cancelled": 1394
+    },
+    {
+      "after": 28,
+      "audit": "mod2-049.json",
+      "audit_sha256": "6f6d5af09bd68005f1ad2549065203f9917c05359f190afbfbfa3246e0a52952",
+      "before": 27,
+      "charts": 50,
+      "epoch": 10,
+      "full_cosets_scored": 32768,
+      "stale_charts_cancelled": 1426
+    },
+    {
+      "after": 29,
+      "audit": "mod2-137.json",
+      "audit_sha256": "6ac497a195108b5bc94aa372d6b6d3ff00e21c985e379288d4d7a4d7eb678332",
+      "before": 28,
+      "charts": 138,
+      "epoch": 11,
+      "full_cosets_scored": 65536,
+      "stale_charts_cancelled": 1375
+    },
+    {
+      "after": 30,
+      "audit": "mod2-443.json",
+      "audit_sha256": "9348a9838059c00fc37e84ec50eea11cf163d83685a7784922f88893cc0b09ac",
+      "before": 29,
+      "charts": 444,
+      "epoch": 12,
+      "full_cosets_scored": 131072,
+      "stale_charts_cancelled": 1017
+    }
+  ],
+  "executed_chart_records": 977,
+  "independent_post_run_replay": "NOT_RUN_USER_STOPPED",
+  "last_completed_stage_rank_lower_bound": 30,
+  "last_log_line": "LANDSCAPE 30 8 /32 masks 8192 exact nodes 719528",
+  "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+  "status": "USER_STOPPED_CENSORED",
+  "supervisor": {
+    "arm_id": "recovered-P11",
+    "classification": "CENSORED_OR_FAILED",
+    "exit_code": -15,
+    "starting_commit": "5257d634a390b3ce6d65790d93a7817cfea74b3b",
+    "terminal_file_exists": false,
+    "wall_seconds": 3926.282695055008
+  }
+}

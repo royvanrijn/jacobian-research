@@ -1,0 +1,34 @@
+{
+  "constructive_control_certified_rank": 18,
+  "files": {
+    "amplifiers/conic-control/preflight.json": "8725fe48c52d9b29e624d7a2f0d4a2b9ad0c8197de0ae6c52bc26a2fc002d991",
+    "controller.json": "08047d09caf67ac459ed3eae5de8d6b5cb120066e025fecfa7e4d35d0a38127d",
+    "intake-replay.json": "4d7b0c9011238b1794d132ea5f5f030dde5ae363581091c201a641d49d60e77b",
+    "protocol.json": "090d40a805cf52516afc5de700206f735a26e734c2cc921583823362b18e4ff4",
+    "seeds/conic-control/conic-points.json": "9136ecbbe92500b5c7206b81d57d5907f07622fd5defd5ac33396f9356f66d4a",
+    "seeds/conic-control/intake.json": "ff7d5d3fd19db571a446c4e19af61986e59355862476cf18781877ef83470b91",
+    "seeds/conic-control/m17.json": "3c672a70c9fddb1b29a2e06ef6227ff6cffb48f5170d155afb6a9f978a021d71",
+    "seeds/conic-control/m18.json": "1d14e31844d96bd51a41bc5be45d86d9fb3315f3b8d9c3fbadd60c12ce51d6b4",
+    "sources/det1092_funnel.py": "2fea111f94514b914e9aded326c6a1ab97c7db952cf07ea73d0bd56b64a799ae",
+    "sources/det1092_funnel_replay.py": "129cb8dd36847ba7ec050b623ff1d30855f6c946ee9bc676a43435177b3f7254",
+    "sources/det1092_funnel_worker.py": "12fee92d959a1493e6992c5e28c03bb1ae8b3c38cbbfbc8e510e6bf414608f80",
+    "sources/run_det1092_funnel.py": "a1487d57fe6376b119f45606933b85bce7168cc17c77066fdf0174975c18328f",
+    "summary.json": "87c7524d59fd7ebb78d800c00ede91364268e4e2c1624ab57698af6d350989c6",
+    "tables-replay.json": "e650731568867acd3be06035cccf9c99716670adf968d9817d0de7416ba42cfd",
+    "tests/test_det1092_funnel.py": "850bc3b868c54fbc6f21c6a148ba8898ebf7a44c1ab0478d0dbbc9faa9f62f38"
+  },
+  "full_v3_cascade_executed_in_smoke": false,
+  "independent_table_entries": 1078,
+  "new_rank_claim": false,
+  "schema": "det1092-funnel-validation.v1",
+  "scope": "Implementation validation. Positive control reconstructs an already proved conic seed; exact V3 map only. Production numerical V3 remains unchanged; no new fibre rank or prediction of production yield.",
+  "smoke_bounded_no_certified_seed": 2,
+  "smoke_parameters": 256,
+  "smoke_seed_attempts": 2,
+  "status": "PASS_IMPLEMENTATION_SMOKE_AND_REPLAY",
+  "tests": {
+    "command": "python3 -m pytest -q research/elliptic-curves/tests/test_det1092_funnel.py",
+    "first_seed_cancellation_and_off_curve_rejection": "PASS on exact conic-control M17/M18 packet",
+    "focused_pytest_passed": 21
+  }
+}

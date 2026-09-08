@@ -1,0 +1,13 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/constructive-result.json": "165f74d852a48759afb70e0f3253a58d8d5ecb0d89a221685ee1dcf96c286a3f",
+    "artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/protocol.json": "e3e604c694cc9b23cd21cdfa3e48277d8976f3d180c582ed187f511fc6f7472f",
+    "artifacts/local/elliptic-curves/det1092-small-conic-seed-v1/seeds/conic-small-01/m18.json": "1ae5454dbede4ca3c8acb7922428a95645f1cc647ae03e20ce95780cae44448f",
+    "elliptic-curves/cas/det1092_funnel_worker.py": "12fee92d959a1493e6992c5e28c03bb1ae8b3c38cbbfbc8e510e6bf414608f80",
+    "elliptic-curves/cas/run_det1092_constructive_amplifier.py": "a411abe8227888d9f71ed4bfa84fa6feda573fee46f5d264302c37e5056bb9c1"
+  },
+  "case": "conic-small-01",
+  "rss_bytes": 3221225472,
+  "scope": "One unchanged V3 cascade and independent replay from the smaller formula-derived M18. Separate constructive lane; no population refill.",
+  "wall_seconds": 14400
+}

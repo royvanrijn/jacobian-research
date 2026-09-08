@@ -1,5 +1,15 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [three-stage search funnel](notes/DET1092_SEARCH_FUNNEL_2026-09-08.md)
+now has a resumable equation-only intake, first-seed controller and unchanged
+V3 handoff from M18. All ten million equations and their replay are complete;
+90 frozen seed attempts are running. The
+[first seed results](notes/DET1092_FUNNEL_FIRST_SEEDS_2026-09-08.md) certify
+three M18 fibres, including two from a separate exact conic-splitting follow-up;
+one follow-up cascade has an independently verified rank21 subgroup. A separate
+[small conic seed](notes/DET1092_SMALL_CONIC_SEED_2026-09-08.md) certifies M18 at
+`s=5193/35630`; its114-chart V3 run replays with no further gain.
+
 The [surface Brauer gate](notes/DET1092_BRAUER_SECTION_AND_LOCAL_GATE_2026-09-08.md)
 connects all generic sections to `O` through17 explicit rational intersections.
 Every normalized2-primary surface Brauer class is consequently zero on the
@@ -13,6 +23,10 @@ Fresh core-only RR systems produce alternative representatives over `Q(t)`;
 all claims replay independently. Eight bounded misses are retained.
 This is a reconstruction result, with no new generic or curve302 rank claim.
 <!-- status-consumer: EC-DET1092-BLIND-MW16-RECONSTRUCTION-20260908 e799c490f343785a -->
+
+The [four-basis cascade comparison](notes/DET1092_BASIS_CASCADE_2026-09-08.md)
+was stopped at the user’s request; partial checkpoints are preserved, with no
+completed-chain claim.
 
 The [genus-one first-seed carrier](notes/DET1092_GENUS_ONE_FIRST_SEED_COVER_2026-09-08.md)
 now lowers the known302 witness's carrier genus from two to one using a

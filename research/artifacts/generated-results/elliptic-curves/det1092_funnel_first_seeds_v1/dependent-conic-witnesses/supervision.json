@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "-c",
+    "from sage.all import pari; pari.default('realprecision',120); import runpy,sys; sys.path.insert(0,sys.argv.pop(1)); runpy.run_path(sys.argv.pop(1),run_name='__main__')",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_det1092_split_seed_relation.sage",
+    "--seed",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-001900164",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-span-audit-v2"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1073741824,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 120
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-span-audit-v2/audit.log",
+  "log_sha256": "6be44f2d5fe83d06f906fbc68555004d6c903d3475f7b59c45272e78a75b6b85",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 240439296,
+  "pid": 1269050,
+  "returncode": 0,
+  "rss_limit_bytes": 1073741824,
+  "start_token": "72471905",
+  "termination_signal": null,
+  "timeout_seconds": 120,
+  "wall_seconds": 0.7473408549558371,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

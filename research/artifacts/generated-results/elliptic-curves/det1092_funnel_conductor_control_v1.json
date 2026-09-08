@@ -1,0 +1,69 @@
+{
+  "exact": {
+    "argument": "The verified local product divides N. The remaining cofactor is prime to2,3 and bounds remaining conductor exponents by the integral discriminant. No squarefreeness or primality assumption is made.",
+    "conductor_divisor": "37",
+    "conductor_upper_bound": "37",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-16",
+      "16"
+    ],
+    "discriminant": "151552",
+    "exact_conductor": "37",
+    "local_data": [
+      {
+        "conductor_exponent": 0,
+        "input_discriminant_exponent": 12,
+        "minimal_discriminant_exponent": 0,
+        "prime": 2
+      },
+      {
+        "conductor_exponent": 0,
+        "input_discriminant_exponent": 0,
+        "minimal_discriminant_exponent": 0,
+        "prime": 3
+      },
+      {
+        "conductor_exponent": 1,
+        "input_discriminant_exponent": 1,
+        "minimal_discriminant_exponent": 1,
+        "prime": 37
+      }
+    ],
+    "status": "EXACT",
+    "unresolved_cofactor": "1"
+  },
+  "partial": {
+    "argument": "The verified local product divides N. The remaining cofactor is prime to2,3 and bounds remaining conductor exponents by the integral discriminant. No squarefreeness or primality assumption is made.",
+    "conductor_divisor": "1",
+    "conductor_upper_bound": "37",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-16",
+      "16"
+    ],
+    "discriminant": "151552",
+    "exact_conductor": null,
+    "local_data": [
+      {
+        "conductor_exponent": 0,
+        "input_discriminant_exponent": 12,
+        "minimal_discriminant_exponent": 0,
+        "prime": 2
+      },
+      {
+        "conductor_exponent": 0,
+        "input_discriminant_exponent": 0,
+        "minimal_discriminant_exponent": 0,
+        "prime": 3
+      }
+    ],
+    "status": "UNKNOWN",
+    "unresolved_cofactor": "37"
+  },
+  "status": "PASS_NONMINIMAL_LOCAL_CONDUCTOR_CONTROL"
+}
