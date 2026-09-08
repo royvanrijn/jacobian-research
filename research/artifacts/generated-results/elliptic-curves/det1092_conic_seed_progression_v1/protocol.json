@@ -1,0 +1,25 @@
+{
+  "classification": "equation-only single-seed construction and specialization proof",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_conic_seed_progression.sage": "81335c2409a52f5db6ee0260155e75db35f9ceea69121a5292617865796b2770"
+  },
+  "limits": {
+    "Selmer_dimensions": 0,
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "conic_parameter": 0,
+    "conics": 1,
+    "exceptional_points": 0,
+    "finite_prime_bound": 1009,
+    "new_specialization_addresses": 1,
+    "old_control_addresses": 9,
+    "parameter_sweeps": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "rule": "Reuse exactly the already constructed rational conic8044, evaluate its fixed parametrization at u=0, and retain all finite proof exposures at odd primes<=1009. Do not change u or the bound if proof fails. If rank18 is certified, extract independent proof rows and a congruence modulus preserving those reductions."
+}

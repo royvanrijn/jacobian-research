@@ -1,0 +1,17 @@
+{
+  "case_index": 8,
+  "classification": "exact real-place descent; independent replay required",
+  "limits": {
+    "cases": 10,
+    "class_groups": 0,
+    "generic_divisors_per_case": 17,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "seconds_per_case": 25
+  },
+  "real_Kummer_dimension": 0,
+  "real_branch_points": 2,
+  "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-08.json",
+  "source_sha256": "ea2dca576323580598e77162d5412c13072012244ee1a0f7e4cf9cd0ad47a949"
+}

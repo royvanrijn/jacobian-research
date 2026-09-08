@@ -1,0 +1,7 @@
+{
+  "status": "TWO_CONTROL_CONSTRUCTORS_REACHED_FIXED_25_SECOND_CAP",
+  "classification": "bounded computational failures, not arithmetic obstructions",
+  "case_indices": [3, 6],
+  "stage": "generic local Kummer signatures; common rational scaling produced unnecessarily large uniformizer powers",
+  "preservation": "All inputs and completed place checkpoints are retained. Version5 starts with the parameter denominator, then clears only remaining cubic coefficient denominators. It changes only a rational Weierstrass scaling, not cases, places, code rule or time limits. This is one bounded representation-only retry; an unfinished case remains UNKNOWN."
+}

@@ -1,0 +1,176 @@
+{
+  "basis_indices": [
+    1
+  ],
+  "basis_nonsquare_tests": [
+    {
+      "expected_square": false,
+      "mask": 1,
+      "scale": [
+        "1"
+      ]
+    }
+  ],
+  "full_local_point_dimension": 1,
+  "generic_coordinates": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "generic_rank": 1,
+  "place": 11,
+  "prime_count": 2,
+  "relation_square_tests": [
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "8590144681995522971670107995185216278292284553635020158438941842528681794980253053287647113988073725158939876491143407124375569/27",
+        "1/11483908569"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    }
+  ]
+}

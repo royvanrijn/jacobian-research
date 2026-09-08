@@ -1,0 +1,1287 @@
+{
+  "direction_ids": [
+    "recovered-local-01",
+    "recovered-local-02",
+    "recovered-local-03",
+    "recovered-local-04",
+    "recovered-strict-01",
+    "recovered-strict-02",
+    "recovered-strict-03",
+    "residual-strict-01",
+    "residual-strict-02",
+    "residual-strict-03",
+    "residual-strict-04",
+    "residual-strict-05",
+    "residual-strict-06",
+    "residual-strict-07"
+  ],
+  "input": {
+    "artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.json": "1f6f67d6575bb67842f93c8de2b3d7e14671704ad1118cbc67431cbcf861f38b"
+  },
+  "interpretation_boundary": "Exact dynamic programming on the already-published retained finite-atlas costs only. A low bottleneck says that a known seed makes the displayed half-lattice diagnostic favourable; it does not prove frozen V3 would find the next point, does not establish a point-search runtime bound, and uses the known M31 complement retrospectively.",
+  "reproducing_command": "python3 elliptic-curves/cas/analyze_curve302_unlock_seed_closure.py --check",
+  "schema": "elliptic-curves.curve302-unlock-seed-closure.v1",
+  "single_seed_ranking": [
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04",
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-03"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-03",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04",
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-03",
+              "residual-strict-02"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-06",
+              "residual-strict-07"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 102542623,
+      "minimax_bottleneck_scaled_height": 25.63565575,
+      "optimal_followup_order": [
+        "recovered-local-02",
+        "recovered-strict-01",
+        "recovered-local-04",
+        "recovered-local-03",
+        "recovered-local-01",
+        "recovered-strict-03",
+        "residual-strict-04",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-strict-02",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04",
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-01",
+              "recovered-strict-02"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-02",
+              "residual-strict-03",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-06",
+              "residual-strict-07"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 102542623,
+      "minimax_bottleneck_scaled_height": 25.63565575,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-strict-01",
+        "recovered-local-04",
+        "recovered-local-03",
+        "recovered-strict-02",
+        "residual-strict-04",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-strict-03",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04",
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-02",
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-01",
+              "recovered-strict-02"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-04",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 111392338,
+      "minimax_bottleneck_scaled_height": 27.8480845,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-strict-01",
+        "recovered-local-04",
+        "recovered-local-03",
+        "recovered-strict-02",
+        "recovered-strict-03",
+        "residual-strict-02",
+        "residual-strict-01",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-03",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 113771623,
+      "minimax_bottleneck_scaled_height": 28.44290575,
+      "optimal_followup_order": [
+        "recovered-local-02",
+        "recovered-local-04",
+        "recovered-local-03",
+        "recovered-local-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-02",
+        "residual-strict-01",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-strict-01",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 121034893,
+      "minimax_bottleneck_scaled_height": 30.25872325,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-local-04",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-01",
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-06",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 121034893,
+      "minimax_bottleneck_scaled_height": 30.25872325,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-strict-01",
+        "recovered-local-04",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-05",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-06"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-02",
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-04",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 121034893,
+      "minimax_bottleneck_scaled_height": 30.25872325,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06"
+      ],
+      "seed_direction": "residual-strict-07",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-local-01",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-local-02",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05",
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-02",
+        "recovered-local-01",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "recovered-local-03",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-02",
+              "recovered-strict-03"
+            ],
+            [
+              "residual-strict-02",
+              "residual-strict-03",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-06"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-02",
+              "recovered-strict-03",
+              "residual-strict-02",
+              "residual-strict-06"
+            ],
+            [
+              "residual-strict-03",
+              "residual-strict-04",
+              "residual-strict-05",
+              "residual-strict-07"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-02",
+        "recovered-strict-03",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-01",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-03"
+            ],
+            [
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-07"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-06"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-06",
+              "residual-strict-07"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-02",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-06",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-strict-01",
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-06",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-05",
+        "residual-strict-06",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-04",
+      "start_rank": 18
+    },
+    {
+      "calibrated_closures": {
+        "global_minimax": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 123778523,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02"
+            ],
+            [
+              "recovered-local-03",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        },
+        "historical_tail_bottleneck": {
+          "final_rank": 31,
+          "full_M31_closure": true,
+          "threshold_numerator": 135591028,
+          "waves": [
+            [
+              "recovered-local-01",
+              "recovered-local-02",
+              "recovered-local-04"
+            ],
+            [
+              "recovered-local-03"
+            ],
+            [
+              "recovered-strict-01"
+            ],
+            [
+              "recovered-strict-03",
+              "residual-strict-02"
+            ],
+            [
+              "recovered-strict-02",
+              "residual-strict-04",
+              "residual-strict-07"
+            ],
+            [
+              "residual-strict-01",
+              "residual-strict-03",
+              "residual-strict-05"
+            ]
+          ]
+        }
+      },
+      "minimax_bottleneck_numerator": 123778523,
+      "minimax_bottleneck_scaled_height": 30.94463075,
+      "optimal_followup_order": [
+        "recovered-local-01",
+        "recovered-local-02",
+        "recovered-local-03",
+        "recovered-local-04",
+        "recovered-strict-01",
+        "recovered-strict-03",
+        "recovered-strict-02",
+        "residual-strict-01",
+        "residual-strict-02",
+        "residual-strict-03",
+        "residual-strict-04",
+        "residual-strict-05",
+        "residual-strict-07"
+      ],
+      "seed_direction": "residual-strict-06",
+      "start_rank": 18
+    }
+  ],
+  "status": "PASS_RETROSPECTIVE_SINGLE_SEED_CLOSURE_CENSUS",
+  "thresholds": {
+    "global_minimax": 123778523,
+    "historical_tail_bottleneck": 135591028
+  },
+  "unseeded": {
+    "calibrated_closures": {
+      "global_minimax": {
+        "final_rank": 31,
+        "full_M31_closure": true,
+        "threshold_numerator": 123778523,
+        "waves": [
+          [
+            "recovered-local-01",
+            "recovered-local-02"
+          ],
+          [
+            "recovered-local-03",
+            "recovered-local-04"
+          ],
+          [
+            "recovered-strict-01"
+          ],
+          [
+            "recovered-strict-03"
+          ],
+          [
+            "recovered-strict-02",
+            "residual-strict-02",
+            "residual-strict-04",
+            "residual-strict-07"
+          ],
+          [
+            "residual-strict-01",
+            "residual-strict-03",
+            "residual-strict-05",
+            "residual-strict-06"
+          ]
+        ]
+      },
+      "historical_tail_bottleneck": {
+        "final_rank": 31,
+        "full_M31_closure": true,
+        "threshold_numerator": 135591028,
+        "waves": [
+          [
+            "recovered-local-01",
+            "recovered-local-02",
+            "recovered-local-04"
+          ],
+          [
+            "recovered-local-03"
+          ],
+          [
+            "recovered-strict-01"
+          ],
+          [
+            "recovered-strict-03",
+            "residual-strict-02",
+            "residual-strict-06"
+          ],
+          [
+            "recovered-strict-02",
+            "residual-strict-04",
+            "residual-strict-07"
+          ],
+          [
+            "residual-strict-01",
+            "residual-strict-03",
+            "residual-strict-05"
+          ]
+        ]
+      }
+    },
+    "minimax_bottleneck_numerator": 123778523,
+    "minimax_bottleneck_scaled_height": 30.94463075,
+    "optimal_followup_order": [
+      "recovered-local-01",
+      "recovered-local-02",
+      "recovered-local-03",
+      "recovered-local-04",
+      "recovered-strict-01",
+      "recovered-strict-03",
+      "recovered-strict-02",
+      "residual-strict-01",
+      "residual-strict-02",
+      "residual-strict-03",
+      "residual-strict-04",
+      "residual-strict-05",
+      "residual-strict-06",
+      "residual-strict-07"
+    ],
+    "seed_direction": null,
+    "start_rank": 17
+  },
+  "xi_direction": null,
+  "xi_result": null
+}

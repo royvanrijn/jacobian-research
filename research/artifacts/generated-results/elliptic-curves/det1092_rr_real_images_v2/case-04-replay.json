@@ -1,0 +1,10 @@
+{
+  "case_index": 4,
+  "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+  "classification": "verified application and independent replay",
+  "complete_real_Kummer_dimension": 0,
+  "divisor_tests": [],
+  "generic_image_rank": 0,
+  "real_branch_points": 2,
+  "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+}

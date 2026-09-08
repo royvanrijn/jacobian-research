@@ -1,0 +1,10 @@
+{
+  "classification": "verified application",
+  "status": "REJECTED_EXCLUSION_SET_CERTIFICATE",
+  "rejected_artifact": "det1092_orbit8044_rank18_base_change_v1.json",
+  "rejected_sha256": "74aba12a53ab948eb69229f67850729ddd4f6973bcb53827da00a06ceec1c87a",
+  "reason": "Independent divisibility replay found that squarefree_part removed even-multiplicity exclusion factors. The affine excluded set was incomplete.",
+  "replacement": "det1092_orbit8044_rank18_base_change_v2.json",
+  "replacement_sha256": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+  "correction": "Use f/gcd(f,f') to retain every distinct exceptional factor. Cover, section and height identities are unchanged. Only v2 and its independent replay support the theorem."
+}

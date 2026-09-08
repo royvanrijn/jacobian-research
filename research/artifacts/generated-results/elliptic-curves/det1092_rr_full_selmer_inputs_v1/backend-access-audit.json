@@ -1,0 +1,23 @@
+{
+  "classification": "verified environment snapshot, not a mathematical obstruction",
+  "status": "NO_ACCESSIBLE_GENERAL_GENUS_TWO_SELMER_BACKEND_CONFIRMED",
+  "sage_version": "10.9",
+  "pari_version": "2.17.3",
+  "sage_probe": "dir(HyperellipticCurve(x^6+x+1).jacobian()) contains no method whose name includes selmer",
+  "magma_on_PATH": null,
+  "public_calculator": {
+    "url": "https://magma.maths.usyd.edu.au/calc/",
+    "documented_limit_seconds": 60,
+    "documented_input_limit_bytes": 50000,
+    "direct_read_command": "curl --max-time 10 --silent --show-error --location --include https://magma.maths.usyd.edu.au/calc/",
+    "response_status": "HTTP/1.1 401 Unauthorized",
+    "response_date": "Tue, 08 Sep 2026 11:29:03 GMT",
+    "authentication_header": "Basic realm=\"Magma Download\"",
+    "research_equations_submitted": false,
+    "calculation_submitted": false
+  },
+  "next_execution_gate": "An accessible general genus-two descent backend and an explicitly agreed class/unit arithmetic budget. Existing exact preparation is not permission for a broad class-group campaign.",
+  "user_input_requested": "Whether a licensed Magma executable or server is available",
+  "running_jobs": [],
+  "mathematical_boundary": "This snapshot does not prove that a new Sage implementation is impossible or that every alternative algorithm is infeasible. Full Selmer groups remain NOT_COMPUTED."
+}

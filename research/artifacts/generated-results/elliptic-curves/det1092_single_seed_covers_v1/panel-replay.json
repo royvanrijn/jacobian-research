@@ -1,0 +1,247 @@
+{
+  "both_anti_invariant_heights": [
+    20,
+    20
+  ],
+  "both_function_field_rank_lower_bounds": [
+    18,
+    18
+  ],
+  "checker_sha256": "105bfba7d0188d73062dc5f3e2a8c68d7300c0c62207382b62dab7bf97dd3860",
+  "classification": "verified application and new deduction",
+  "existing_covers": 2,
+  "fixed_parameters": 9,
+  "held_out_302_discovery": false,
+  "input_boundary_verified": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_replay_v1.json": "376adbadfedeb0bc6d95363cbfdc4fa795fdfc6ed7f0ce68d91650312100cf6e",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_first_witness_pencil_genus_gate_v1.json": "cf0ac84570749405993c983d100c34f7c9a024d3b444b4538790bb61fb6fded3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_residual_jacobian_class_v1.json": "27c37a9c2c93c47878fcae064957696d6717cc7363494ed16142b1f4dcd6ef02",
+    "artifacts/generated-results/elliptic-curves/det1092_single_seed_covers_v1/cover-00-replay.json": "b6921dd8b0085afad4c72a71e138afc76d2daac76cc51e9498355a7181997713",
+    "artifacts/generated-results/elliptic-curves/det1092_single_seed_covers_v1/cover-01-replay.json": "794bcf8ac696f189afecc108470b10356ef386014d9b0a33ef6c3c6b131a079a",
+    "artifacts/generated-results/elliptic-curves/det1092_single_seed_covers_v1/protocol.json": "393064a9ca0a123a52efbca7f055088aef67da257e450c83aedfaa857bf80ac5",
+    "elliptic-curves/cas/verify_det1092_single_seed_covers.sage": "3920ed4161cda5853ece97c3a7b9441defe98951678f0037bbfbaa65032ddde0"
+  },
+  "limits": {
+    "V3_artifacts_read": 0,
+    "class_groups": 0,
+    "new_parameters": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "new_independent_control_seeds": 0,
+  "next_obstruction": "The calibrated member is an explicit partial seed certifier, not a learned oracle-free member selector or a source of additional rational cover points. Every rational member of its fixed witness pencil has genus2 by the prior exact gate. No smaller-genus cover through this witness in another system is classified.",
+  "reconstructed_historical_branch_index": 0,
+  "relative_Jacobian_branch_rule": "xi(P)+xi(sigma(P))=[K_C-2P0] lies in inherited H; the two branches differ only by sign modulo H.",
+  "relative_elliptic_branch_rule": "P+sigma(P)=Z in MW17; either branch is independent if the other is.",
+  "same_curve_as_certified_first_Jacobian_class": true,
+  "status": "PASS_SINGLE_SEED_COVERS_AND_EXACT_CONTROL_OBSTRUCTIONS",
+  "table": [
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 11
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 11
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 0,
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 17,
+          "unit_residue": 7,
+          "valuation": -6
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 17,
+          "unit_residue": 7,
+          "valuation": -6
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 1,
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 13
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 13
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 2,
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": 8
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": 8
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 3,
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 37,
+          "unit_residue": 24,
+          "valuation": 0
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 29,
+          "unit_residue": 8,
+          "valuation": 22
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 4,
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": -3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": -3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 5,
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": -3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 2,
+          "valuation": -3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 6,
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 3,
+          "unit_residue": 1,
+          "valuation": 3
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "index": 7,
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "cover_00": {
+        "local_obstruction": {
+          "local_nonsquare": true,
+          "p": 5,
+          "unit_residue": 3,
+          "valuation": 64
+        },
+        "status": "EXACT_NONSPLIT_FIBRE"
+      },
+      "cover_01": {
+        "local_obstruction": null,
+        "status": "CERTIFIED_INDEPENDENT_SEED"
+      },
+      "index": 8,
+      "label": "302-generic-section-control",
+      "parameter": "0"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "basis_indices": [
+    0
+  ],
+  "basis_nonsquare_tests": [
+    {
+      "expected_square": false,
+      "mask": 1,
+      "scale": [
+        "1"
+      ]
+    }
+  ],
+  "full_local_point_dimension": 1,
+  "generic_coordinates": [
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      1
+    ]
+  ],
+  "generic_rank": 1,
+  "place": 41,
+  "prime_count": 2,
+  "relation_square_tests": [
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "-4099701091322970984684336278250416992637705075782501546751739131357941216911834302017466332242536076100107618475729900716249628",
+        "-2/1750329"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    }
+  ]
+}

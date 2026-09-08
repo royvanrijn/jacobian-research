@@ -1,0 +1,34 @@
+{
+  "classification": "frozen local arithmetic construction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-00.json": "613d17b68a348be8d13eed5ad70d675fe579fbcb9ae436bde65611f9ef3af85e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json": "0d7b6dd0304683e10d87e08b0a6e0de8652c06781db856150cfc8b1063160d07",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-02.json": "adc88ed65459686d77ce5f1bd64dc6146c9ed2364d21ab8d34139da4d77fa9c6",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-03.json": "8a743766cc19bf64e30f8aeb20fb183974ab1d7d78e54ef9af07432b963abc31",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-04.json": "cdfd7658f8daf6c80265462eb42e379b1eea8ca1bff2af5ca634a16601051606",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-05.json": "28f318aa7fd9680563ae0f5186c7725880ead8e657d6748f763b95ac7e80c30b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-06.json": "3e39e85beeb623b8bb480b8bfa9234b3941433ee5e0e3a15a44a499008aeadef",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-07.json": "9463851c3265abbe38d6a8d69ede78f998c37c2646ddd5f6831dcdb6a72e9686",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-08.json": "ea2dca576323580598e77162d5412c13072012244ee1a0f7e4cf9cd0ad47a949",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-09.json": "97f50413b497581fc18bdc7d5c6947181413149458e0b981aee73bb271690485"
+  },
+  "limits": {
+    "cases": 10,
+    "class_groups": 0,
+    "maximum_proxy_precision": 512,
+    "parameter_searches": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "resolvent_degrees": [
+      6,
+      15,
+      10
+    ],
+    "root_tree_depth": 64,
+    "root_tree_nodes_per_polynomial": 4096,
+    "seconds_per_case": 25
+  },
+  "proxy_rule": "Largest integral monic homothety; coefficientwise least residues modulo2^N with N=max(64,2*v2(disc)+16).",
+  "script_sha256": "6210452ce5cfeb41e6be82ce73c8f2c90c7c5a719940065b8d7a12e5888e4a9a"
+}

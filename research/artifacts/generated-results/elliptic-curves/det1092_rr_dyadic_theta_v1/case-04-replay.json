@@ -1,0 +1,16 @@
+{
+  "D0_locally_divisible_by_two": false,
+  "case_index": 4,
+  "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+  "local_fake_Kummer_dimension": 2,
+  "local_true_Kummer_dimension": 3,
+  "real_Kummer_dimension": 0,
+  "real_branch_points": 2,
+  "root_counts": {
+    "branch": 0,
+    "pair": 1,
+    "theta": 0
+  },
+  "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-04.json",
+  "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+}

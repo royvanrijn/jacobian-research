@@ -1,0 +1,240 @@
+{
+  "cases": [
+    {
+      "D0_locally_divisible_by_two": true,
+      "case_index": 0,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 3,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 1,
+      "real_branch_points": 4,
+      "root_counts": {
+        "branch": 1,
+        "pair": 1,
+        "theta": 1
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-00.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": false,
+      "case_index": 1,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 2,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 1,
+        "theta": 0
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": true,
+      "case_index": 2,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 3,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 1,
+      "real_branch_points": 4,
+      "root_counts": {
+        "branch": 1,
+        "pair": 1,
+        "theta": 1
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-02.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": false,
+      "case_index": 3,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 3,
+      "local_true_Kummer_dimension": 4,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 3,
+        "theta": 0
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-03.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": false,
+      "case_index": 4,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 2,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 1,
+        "theta": 0
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-04.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": false,
+      "case_index": 5,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 2,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 1,
+        "theta": 0
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-05.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": true,
+      "case_index": 6,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 3,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 0,
+      "root_counts": {
+        "branch": 1,
+        "pair": 1,
+        "theta": 1
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-06.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": false,
+      "case_index": 7,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 2,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 1,
+        "theta": 0
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-07.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": true,
+      "case_index": 8,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 5,
+      "local_true_Kummer_dimension": 5,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 4,
+        "pair": 7,
+        "theta": 4
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-08.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    },
+    {
+      "D0_locally_divisible_by_two": true,
+      "case_index": 9,
+      "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+      "local_fake_Kummer_dimension": 3,
+      "local_true_Kummer_dimension": 3,
+      "real_Kummer_dimension": 0,
+      "real_branch_points": 2,
+      "root_counts": {
+        "branch": 0,
+        "pair": 1,
+        "theta": 2
+      },
+      "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-09.json",
+      "status": "PASS_INDEPENDENT_DYADIC_THETA_AND_TORSION"
+    }
+  ],
+  "checker_sha256": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-00.json": "00ceb83d1cd60296dd7432e4fcb29fda79c4edc84b51451a5bc3c27691ff32ca",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-01.json": "85c8388e84b28cd7eae1a007cb041686ddfd73f11acf2c497f20338b74ce0ed7",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-02.json": "edbe2a721f71727157ade5442babc8140abd52aa1bd0bcd9491c88430282a39c",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-03.json": "bdd0f7a0ad216a02f895f5c84ba4a553677fdf398707882dafaf8f5a12682aff",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-04.json": "30c2921e5e5dc5ba08cd44cfcae206de779a54667f13cad3d65bb872880c06fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-05.json": "733d11b96bbd863b3828b24f70573ef866598664832c6249be03830aad03ebef",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-06.json": "ccb9cb9f402ee2c848723efe50764a4271ca3775885290c4bf8baca792d9f79e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-07.json": "99939554b42719d53e3ff73d135c4d904b8deefda8d02d0c609fff71d59388e0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-08.json": "0f5b18e0c07a3bbc44b971940438a48290e28862b471de2c043e0474cec88183",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_preflight_v1/case-09.json": "a7b2154b23718411b8ae4184e5283b0a0af0f5e4c472f5ad7c8efdbec353ecf8",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-00-branch-tree.json": "4aae6b6f5970564aeca4d37d40d15660deefae386cbce268712d4f2d7bce32bc",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-00-pair-tree.json": "9a3ff45c43d2e2f029a7b51c26fa70a040cb9d66ca4dcf02ee149a0f54cfdcd0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-00-theta-tree.json": "ecab0b77953e4c052a4481ca976dee078330ccb3e30c5e18138590aebe09abc3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-00.json": "3b6da7818393f8132595959645e0f28c00ff802eab3e64fb926d13658e64d88d",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-01-branch-tree.json": "1709faddf8d467bf4dd1ce9446345c848b5a977b79985273904c5b6ae3a3833f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-01-pair-tree.json": "41a7378e0cec731d73af5d6bb25bd698ddd41193c79531a85387b74777c3d5a7",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-01-theta-tree.json": "7dbd2f16288cdb34c0f1d5ce936748e3f66ba43409f05cf3d16a28bfd71f1a4b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-01.json": "c0d2bd14b273f1b9c33515411e2b9b6faad80c53b3e022e6b9a24e5deab2d781",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-02-branch-tree.json": "2a1e0baa53471bd91ed92e4d87753645a2bd2486013cf0eae4d54411d1322d7b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-02-pair-tree.json": "374c3748df15c0480dfbaa0bb87a9db93fa2f5686df5dbf691dbf399df9181de",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-02-theta-tree.json": "caaec1dfb05871b94a7007ff5a4d0d536c4addb1bc3e0478278ad66f311021ff",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-02.json": "8e443b92854c839e9594ddfa3cbae0019d884474b021c815aeddfdc3113c7f1a",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-03-branch-tree.json": "c9d586f036e58d42f4ea6901c52e2d1b8e170b9c743ea8ccf9a6cd52306c3de9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-03-pair-tree.json": "d8a13cae1986bf331eeeddb4b54a539efa5da6c76709c8a735e4dd20e16acd2a",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-03-theta-tree.json": "d7ae34dd58e95a8f716b35752f01fbe07b9befa647fd9db58b9a2b0c7ff288df",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-03.json": "d435cad9c7512fbc64eddf909c6cb9c55fe4549b1592f6f4e80c4da2f2f2c72d",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-04-branch-tree.json": "88a24f25292f884cb512142776b460d22adb473524be03376641b7e94cbd8ad9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-04-pair-tree.json": "0fc8ab825a251e7555a874124b7259430012c9e4945bdd4e4ece21d6b2d03fc0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-04-theta-tree.json": "15363ad550cf42087c7cd28d6f1b67972a2f75e9584b9028ae9bb993518deaa2",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-04.json": "285853ba92dc3c6da093b68bc16e2dbf21c4c1b4d4bc0024a3b39df2e45771a9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-05-branch-tree.json": "fd6380cc709223be05fb013351353366d5adafca531878ecf5e3414147b916aa",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-05-pair-tree.json": "672e75658534e40ce9cec23621169028fa66bb1ef53a716ba65cfc7d454dcae7",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-05-theta-tree.json": "aa7d1caa8ee6910a4e4b1c781af1570f902ba8254061e98e57ccede22268a19f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-05.json": "99e608193577a8aa0035d1d16ecbdee3007cd67a94596819dffbb8dbf528ca68",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-06-branch-tree.json": "c67a18edb5f813527313dd2aeb19146c4cd595220b8a000135c780d00d6c0e67",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-06-pair-tree.json": "f6a4bfccf69b6a7063d3ebfe4f8c7b0cea88eeb580a6d4553d12a7a3ba2db463",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-06-theta-tree.json": "7fe67c9eb5c5cdb26467279665a534c62464359f19b25a3a3095cc7e1baae6fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-06.json": "a3fc24acc15aa657e132dea4d3f72a7a1e0dd6f616593e0289a1984d06f688fe",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-07-branch-tree.json": "7ea7e64d7ed977f8493a0b0d6a7acda8292c7cae0762e82c0caa485ed7e0f7cc",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-07-pair-tree.json": "2463fd8e1bea327a46b3814a14f1d68d4080e4f9d46f0ed9ad79863447a8715b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-07-theta-tree.json": "abc987dd7dffc1bec9e8e56ecd7a292334c0a7d3386906b1a7fe264603df6b36",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-07.json": "295984e44ed3bf7355c992d40ffb414c1fb58ba5766ecc9e5634f42da9b9a062",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-08-branch-tree.json": "0967885943e47a8ce7bfa58a9b3eae0d351a0a3ffaa5b246beb30b57f76ce53b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-08-pair-tree.json": "ee7a32bc1f78c32dcb2c55a7c6234097661261ed8236e511ceb56b423f7fbc94",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-08-theta-tree.json": "e50393feb1ccce89cf0998fe463bd6cd2edb987faccc9a8c69d39a21870a970c",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-08.json": "77d69d210b684a6acbdd207fe84c11a437f5d4f7400ef98380629f2bfbb7e627",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-09-branch-tree.json": "1aa6bcd7efa6bba12a357eff8b6203059550d88faafe58dac70694f5e73e413f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-09-pair-tree.json": "a2bf3d5c520fc132d95da23c35ee1e094b1ba968bbabf07aceec27eb6d7198ca",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-09-theta-tree.json": "b247de00dd6553aeac19b70a65f0aa6cdfbe7aed67db793fd973a9dcbeab923f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/case-09.json": "42e76bb1936f14fe2131478d184b24caeaf61661812694dfdfc8d27d403c184c",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/protocol.json": "639040cd4d598078c439033d3de86b31a458ca051cfaf5134d4606d3a714d5f3"
+  },
+  "limits": {
+    "cases": 10,
+    "class_groups": 0,
+    "independent_panel_wall_seconds": 25,
+    "maximum_proxy_precision": 512,
+    "parameter_searches": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "resolvent_degrees": [
+      6,
+      15,
+      10
+    ],
+    "root_tree_depth": 64,
+    "root_tree_nodes_per_polynomial": 4096,
+    "seconds_per_case": 25
+  },
+  "proxy_equivalence_proof": "For each integral root alpha of f, v(fprime(alpha))<=D=v(disc(f)). Coefficient closeness N>2D gives a unique root of g within valuation>N-D>D of alpha by strong Hensel. Distinct f roots cannot have this distance, giving a Galois-equivariant bijection of the six branch sets.",
+  "scope": "Exact Q2 torsion and local Kummer dimensions, and localization of the inherited rational D0 class. No full local image generators, global Selmer group or other Sha class is computed. At R only the dimension is certified here.",
+  "status": "PASS_INDEPENDENT_TEN_DYADIC_THETA_AND_TORSION_CERTIFICATES"
+}

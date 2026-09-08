@@ -1,0 +1,254 @@
+{
+  "cases": [
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "302-first-unlock",
+      "no_elliptic_factor_over_Q": true,
+      "p": 179
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0131232",
+      "no_elliptic_factor_over_Q": true,
+      "p": 109
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0257585",
+      "no_elliptic_factor_over_Q": true,
+      "p": 43
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0487239",
+      "no_elliptic_factor_over_Q": true,
+      "p": 23
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0177036",
+      "no_elliptic_factor_over_Q": true,
+      "p": 131
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0043332",
+      "no_elliptic_factor_over_Q": true,
+      "p": 53
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0590501",
+      "no_elliptic_factor_over_Q": true,
+      "p": 113
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0290097",
+      "no_elliptic_factor_over_Q": true,
+      "p": 107
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "scale-0748009",
+      "no_elliptic_factor_over_Q": true,
+      "p": 23
+    },
+    {
+      "J2_irreducible": true,
+      "degree_pattern": [
+        1,
+        5
+      ],
+      "label": "302-generic-section-control",
+      "no_elliptic_factor_over_Q": true,
+      "p": 109
+    }
+  ],
+  "checker_sha256": "1466df4550b6bf9c25ff5400438eab0e217fc1b2a5e74e93a510b290c69785fa",
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_marked_kummer_transport_v1.json": "833dc5c5e7acd65f8d85a3c5d55b8f2848f034a75f04cf000414e2d9254dfcc1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_torsion_transport_gate_v1.json": "0095ff86b6666ecb3c7c726b964570aa793cb80fc921b5b74fd7a472478b2257"
+  },
+  "intertwining_tests": [
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    },
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    },
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    },
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    },
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    },
+    {
+      "backward_maps": 1,
+      "elliptic_action": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "forward_maps": 1,
+      "maps_tested_per_direction": 256,
+      "only_zero_maps": true
+    }
+  ],
+  "limits": {
+    "GL2_F2_actions": 6,
+    "Selmer_runs": 0,
+    "class_group_runs": 0,
+    "finite_linear_maps_tested": 3072,
+    "new_prime_searches": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "retained_prime_witnesses": 10,
+    "sextics": 10,
+    "wall_seconds": 25
+  },
+  "new_degree_extension_deduction": {
+    "necessary_degree_for_an_elliptic_factor": "A multiple of5, not a sufficient condition.",
+    "proof": "The image of G_L in the finite J[2] Galois image has index dividing [L:Q]. If5 does not divide that degree, its order is still divisible by5. Cauchy gives an element of order5. In dimension4 over F2 any such element has irreducible minimal polynomial Phi5, so J[2] remains irreducible.",
+    "statement": "Irreducibility and the no-elliptic-factor obstruction persist over every number field L whose degree over Q is not divisible by5."
+  },
+  "sage_version": "10.9",
+  "scope": "No nonzero coefficient-induced H1/Selmer transport to elliptic2-torsion, and no elliptic quotient over Q or the stated extensions. This does not compute Selmer groups, prove absolute simplicity, or rule out nonlinear incidence predicates or other correspondences.",
+  "status": "PASS_INDEPENDENT_TEN_RR_TORSION_TRANSPORT_OBSTRUCTIONS",
+  "subset_orbits": [
+    [
+      0
+    ],
+    [
+      3,
+      6,
+      12,
+      24,
+      17
+    ],
+    [
+      5,
+      10,
+      20,
+      9,
+      18
+    ],
+    [
+      15,
+      30,
+      29,
+      27,
+      23
+    ]
+  ]
+}

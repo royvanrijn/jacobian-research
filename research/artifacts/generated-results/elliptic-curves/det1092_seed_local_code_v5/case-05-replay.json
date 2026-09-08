@@ -1,0 +1,210 @@
+{
+  "all_generic_local_images_full": true,
+  "case": {
+    "index": 5,
+    "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+  },
+  "classification": "verified application",
+  "compatibility_check_dimension": 3,
+  "generic_joint_rank": 17,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-generic.json": "3f843b57361836916e0c1bd54d82319288e3c75219499b9c82ddc49cc712d6af",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-input.json": "17839f00729597ed434f9f97673267d989cbd5e74cafa3c0f135392911f30c58",
+    "elliptic-curves/cas/verify_det1092_seed_local_code_v2.sage": "5ecf27ceb5b666adab51955322bda3591d31dfe7b89857cd55830857607c87d9"
+  },
+  "limitations": "Finite-place compatibility only; neither a Selmer dimension nor rational solubility of complementary classes.",
+  "local": [
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 2,
+      "prime_count": 2,
+      "radical_dimension": 1
+    },
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 3,
+      "prime_count": 3,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 5,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 7,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 11,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 13,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 19,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 23,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 29,
+      "prime_count": 3,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 37,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 41,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 73,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 131,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 167,
+      "prime_count": 2,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 7547,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 632881,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 966509,
+      "prime_count": 3,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 18145679437533309132469,
+      "prime_count": 3,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 0,
+      "generic_rank": 0,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 767028866604834801397681553,
+      "prime_count": 1,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 2,
+      "generic_rank": 2,
+      "multiplier_constraint_rank": 3,
+      "p_maximal_certified": true,
+      "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297,
+      "prime_count": 3,
+      "radical_dimension": 0
+    },
+    {
+      "full_local_point_dimension": 1,
+      "generic_rank": 1,
+      "place": "infinity"
+    }
+  ],
+  "product_dimension": 20,
+  "square_test_counts": {
+    "all_64_roots_mod4_squared_mod8": 20,
+    "frobenius_fixed_space_of_quadratic_unit_algebra": 341,
+    "nontrivial_radical_principal_ideal": 4
+  },
+  "status": "PASS_INDEPENDENT_GENERIC_LOCAL_CODE"
+}

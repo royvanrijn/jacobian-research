@@ -1,0 +1,156 @@
+{
+  "cases": [
+    {
+      "case_index": 0,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 1,
+      "divisor_tests": [
+        {
+          "generic_divisor_index": 0,
+          "mixed_signs": false,
+          "signature": 4
+        },
+        {
+          "generic_divisor_index": 1,
+          "mixed_signs": false,
+          "signature": 4
+        },
+        {
+          "generic_divisor_index": 2,
+          "mixed_signs": true,
+          "signature": 0
+        }
+      ],
+      "generic_image_rank": 1,
+      "real_branch_points": 4,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 1,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 2,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 1,
+      "divisor_tests": [
+        {
+          "generic_divisor_index": 0,
+          "mixed_signs": true,
+          "signature": 0
+        }
+      ],
+      "generic_image_rank": 1,
+      "real_branch_points": 4,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 3,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 4,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 5,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 6,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 0,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 7,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 8,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    },
+    {
+      "case_index": 9,
+      "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+      "classification": "verified application and independent replay",
+      "complete_real_Kummer_dimension": 0,
+      "divisor_tests": [],
+      "generic_image_rank": 0,
+      "real_branch_points": 2,
+      "status": "PASS_INDEPENDENT_COMPLETE_REAL_IMAGE"
+    }
+  ],
+  "checker_sha256": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd",
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/replay.json": "d2b1e290bac127953786beac7c1577efc82e595661f5910924c1909ef2165a01",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v1/failure.json": "b73e6974ffde424db2bab32c142a865cfd88844f5ec3590c78489beca1d7bdc3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-00.json": "3c8a5fb1d83a34de7c6df5dda9d28f0b607c5922de924d78b74c5edcffafc117",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-01.json": "317b390b458ace142a9868ddb395e314efb30075992cea88f11f80f67f7f0702",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-02.json": "2f20fd9aadac264bee8288e619dedb893a2dc2524a9fb9ea1d1d9366a52e1355",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-03.json": "ed2bf295364ea51ae72723b37c64276ba36b31ae68d1a314b18822700d7e3021",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-04.json": "fb0df978d2d7370b4835d0da3846e75317185b3e289fbea36d04d289ed89958f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-05.json": "dee479344fc3fd7b3c4babe6f34c5443c08aab9095a027bec63f210b5a102e18",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-06.json": "c08e2d9a20a73fdc33cb232752c6f483193b4919b6c1cf732a291bc8c5974fd9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-07.json": "9af16fcdae1c01dad81e5dad36ac7536a570f8e1a134c8226c42c3e43d96b0a1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-08.json": "392694657bc50c84badf717d7a1d6488f7a0522275887040800109316d46fbf8",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/case-09.json": "2cfde14eba706cf948a5983372f449f8f78e6d9eea2be59a15de2c41d381d547",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/protocol.json": "e60c0d8067fe5787d939831983136346422df610426fe4bf733dd96c5e20e792",
+    "elliptic-curves/cas/construct_det1092_rr_real_images.sage": "baa3181528e6f37908ced21e02fbb581d58e2702782222936c947ba73668aeca"
+  },
+  "limits": {
+    "cases": 10,
+    "class_groups": 0,
+    "generic_divisors_per_case": 17,
+    "independent_panel_wall_seconds": 25,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "seconds_per_case": 25
+  },
+  "scope": "All ten real local images are spanned by inherited generic divisors. No global Selmer or point search.",
+  "status": "PASS_INDEPENDENT_TEN_COMPLETE_REAL_KUMMER_IMAGES"
+}

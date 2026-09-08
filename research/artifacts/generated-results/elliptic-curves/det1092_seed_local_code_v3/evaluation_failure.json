@@ -1,0 +1,6 @@
+{
+  "status": "GENERIC_CODE_FROZEN_THEN_INITIAL_SEED_EVALUATION_FAILED",
+  "classification": "implementation failure in evaluation only",
+  "error": "A one-column matrix slice was coerced to int instead of its entries.",
+  "preservation": "All generic checkpoints and source remain immutable. The separate evaluate_det1092_seed_local_code.sage script corrects the vector coercions and records its own provenance. No selection rule is changed."
+}

@@ -1,0 +1,297 @@
+{
+  "maximum_depth": 7,
+  "node_count": 18,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "329581e2feadfcfc3d9951d48516c5e3807214040202cd3391c4366af0c13623"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 1,
+      "normalized_polynomial_sha256": "ef9311a02aec52d92fbbd4193853baff292d586acbb966d2d35d2ebbf3ab111a"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 2,
+      "normalized_polynomial_sha256": "576f6fe86bd8f4f03d068899621a15efc58d07bd987d73bc5836971c7df876a0"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 3,
+      "normalized_polynomial_sha256": "07bfc2edbad2a9cc10667b3bb5de13af0f2634ae73a26c4c2d60a3de04664465"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 4,
+      "normalized_polynomial_sha256": "22225c49ccdf7903f01d337e925ceb071c02fce00285a60b6877e653813a4bbb"
+    },
+    {
+      "a": "21",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 5,
+      "normalized_polynomial_sha256": "017bf1619b97416d35ff62ecfb8155b27ab21a0b1805328a7aa27ee8e123840c"
+    },
+    {
+      "a": "53",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 6,
+      "normalized_polynomial_sha256": "67a83d8962dade8c320b1629721463771c3aee5aaf736740d059ff7da4e240b7"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 1,
+      "normalized_polynomial_sha256": "cd9c249581070319d3b7a13672ccddf53bc4d4506f102d9a2050071e66f72cf0"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 2,
+      "normalized_polynomial_sha256": "9c3f86b8b47586b1273d17fcf33601c83506705549a3d65e2d2f25001e660c3b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 3,
+      "normalized_polynomial_sha256": "41c1046e645fc3b7a9eb7277444af7129229ddf93a8d079b4cfa3c19099565da"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 4,
+      "normalized_polynomial_sha256": "89244515f371fdc78d91e1b0054b89f9283d36da7bda4d916b36d3d9ed769efd"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 5,
+      "normalized_polynomial_sha256": "65a39e725a6ed5cc68dca8829b50c09727ea01aeadfb8612c3b7123364e5d032"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 6,
+      "normalized_polynomial_sha256": "7e8285c0276bf46dbeb3734f6a470706854fc0d46dea031decaf67b3ea91d40c"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 1,
+      "depth": 7,
+      "normalized_polynomial_sha256": "1ed639b7876d1839698ec8caa5da645d666acb34e2c03e1a8942b2fbb9bddf6b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 4,
+      "normalized_polynomial_sha256": "1d58966334eec77c69f9ebfd3c90b68ac572ad5af3175600fd4882e8f4ee5297"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 5,
+      "normalized_polynomial_sha256": "f6f60497fee9d962b2ef90883471559d41e7b47f4c5716a722dee2134a4baec5"
+    },
+    {
+      "a": "32",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 6,
+      "normalized_polynomial_sha256": "231fe071efee64b17f8419572de14ac5b85bdeb4e4a537c2304ad86f91038178"
+    },
+    {
+      "a": "32",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "f9230b9c05f8284b0e94b13bf175cf4b953bab29f7f08ab5cfc2cf7a17fd1b85"
+    }
+  ],
+  "root_balls": [],
+  "root_count": 0,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

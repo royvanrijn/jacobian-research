@@ -1,0 +1,265 @@
+{
+  "maximum_depth": 10,
+  "node_count": 16,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "22fab8421bb54401d77c8d5d0e2677b8ca39a9d76f556437254a2317f781604d"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 10,
+      "depth": 1,
+      "normalized_polynomial_sha256": "855c4b6e847bc6ed265b92777b0c2bee61abe730eae0b3d92d5047bbda93c70b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 10,
+      "depth": 2,
+      "normalized_polynomial_sha256": "0c6bf4038b2ae9fc5ce31e44cb3ba5601bf04fbba1d1255ea4e6dcc7f76548c3"
+    },
+    {
+      "a": "4",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 3,
+      "normalized_polynomial_sha256": "4ef448fe4eeb41e93348fe79ed1a3ab64ae8db5ec70e53ba8266a38a124805ce"
+    },
+    {
+      "a": "4",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 4,
+      "normalized_polynomial_sha256": "85048e980389d02ee97f77ed0f6537e93b74ff4b4a09fcb67b6a182b31e1d3b0"
+    },
+    {
+      "a": "4",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 5,
+      "normalized_polynomial_sha256": "b3ce9589b2f239651683a649b154a4acce509ffe2c3442e59e422d2b12f8d0b3"
+    },
+    {
+      "a": "36",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 6,
+      "normalized_polynomial_sha256": "a4a023c8219b0892e274c3b610c9f1c92fb911bfcbf623daf9e032d00d4b2c5b"
+    },
+    {
+      "a": "100",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "fc19da098553078c05a2432c77a425cb9f8e168dbe329c21586cbc864bc58ff6"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 3,
+      "normalized_polynomial_sha256": "d3c3065c7eb30956cf3c0c4b3419b465e0b2ed82c776bf82ef25762c8f3f004b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 4,
+      "normalized_polynomial_sha256": "d7979d6cc94c16abd9c6919942ae4053e2ea8898c41f26da2550d26bf544432a"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 5,
+      "normalized_polynomial_sha256": "43eb7b8c27d75651889c27123946a3963c91c9bfa68309890912f2a72a21cee6"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 6,
+      "normalized_polynomial_sha256": "db19d9b91235dee8b2db2caa2ffa323b38e02aeac63f5bb5c03137ee1ac1502f"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 7,
+      "normalized_polynomial_sha256": "cc10f728d7e906a6e296f629d1f5ba4a9fae49e41764cf0865d705704f8d7b03"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 8,
+      "normalized_polynomial_sha256": "8e8693603fd10b803c4078959d01470a6c8078d50a2d8473150dd0bc654e64b0"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 9,
+      "normalized_polynomial_sha256": "12946742014cc788d91aeaa13d2fc4c56560731112289d5501d9f9d330a22974"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 10,
+      "normalized_polynomial_sha256": "9725c4fbd45fa12b01ca2aaefa14c7d7f912cc708f540ebffa0f61354d932a0c"
+    }
+  ],
+  "root_balls": [],
+  "root_count": 0,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

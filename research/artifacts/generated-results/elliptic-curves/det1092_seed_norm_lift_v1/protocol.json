@@ -1,0 +1,63 @@
+{
+  "Xstar": "3192654717569013009686535431767390554676/1234321",
+  "cases": [
+    {
+      "index": 0,
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "index": 1,
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "index": 2,
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "index": 3,
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "index": 4,
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "index": 5,
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "index": 6,
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "index": 7,
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "index": 8,
+      "parameter": "0"
+    }
+  ],
+  "classification": "calibrated specific-class diagnostic, not prospective discovery",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_replay_v1.json": "376adbadfedeb0bc6d95363cbfdc4fa795fdfc6ed7f0ce68d91650312100cf6e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_seed_norm_lift.sage": "37462070e48145f2f7f6a49358d19554249a286669dacfb57749fcd4a9360e81"
+  },
+  "limits": {
+    "V3_inputs": 0,
+    "class_groups": 0,
+    "class_lifts": 1,
+    "existing_addresses": 9,
+    "full_Selmer_runs": 0,
+    "gcd_stripping_steps_per_case": 64,
+    "integer_factorizations": 0,
+    "new_addresses": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "oracle_boundary": "Xstar is the known historical first seed abscissa in X=4x. It is not claimed removed. Only the continuation and control arithmetic are equation-only.",
+  "rule": "D(t)=f_t(Xstar); alpha_t=D(t)*(Xstar-theta_t), norm alpha=D^4."
+}

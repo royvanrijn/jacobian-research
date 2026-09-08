@@ -1,0 +1,559 @@
+{
+  "RR_rank": 20,
+  "boundary": "The whole chart is represented by a generic-input RR net. The successful coordinate is used only for retrospective verification. This does not predict square values, classify all covers, or explain why this fibre has a rank jump.",
+  "branch_coprime_parent_discriminant": true,
+  "chart_to_net_u": {
+    "denominator": [
+      "-1351/2",
+      "1"
+    ],
+    "numerator": [
+      "117930070648834774002560387753157451949608798073625784462192074860834433787836949926585044380055469681679874972178806065936771411863406831425909385328970793147957640320606134365146330170962737012802909109955810740287469330900",
+      "-3568933436347306605269140178875967112308387006209369871680174994783766552296264557498589993271983769108684369561045670364109552689012846865672228369301746045321947466426590333623205378405558273128695085024584587994484868400"
+    ]
+  },
+  "checker_sha256": "ebb6e0b68844092d7fa305c4550a1fd46243b4d7560d86d1a36b9481068a0087",
+  "classification": "verified application and new deduction",
+  "fibre_restriction_rank": 2,
+  "fixed_member_geometric_genus": 2,
+  "fixed_member_squarefree_degree": 6,
+  "independence": {
+    "argument": "A relation is divisible by 2 from the injective reduction code; no rational 2-torsion permits repeated division, hence no nonzero integral relation.",
+    "method": "independent exhaustive finite E(Fp)/2E(Fp) construction",
+    "no_rational_2_torsion_prime": 31,
+    "rank": 18,
+    "signatures": [
+      {
+        "double_order": 13,
+        "group_order": 26,
+        "prime": 17,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 28,
+        "group_order": 56,
+        "prime": 47,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 33,
+        "group_order": 66,
+        "prime": 53,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 36,
+        "group_order": 72,
+        "prime": 61,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 41,
+        "group_order": 82,
+        "prime": 67,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 43,
+        "group_order": 86,
+        "prime": 71,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 47,
+        "group_order": 94,
+        "prime": 79,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 49,
+        "group_order": 98,
+        "prime": 83,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 51,
+        "group_order": 102,
+        "prime": 89,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 60,
+        "group_order": 120,
+        "prime": 101,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 63,
+        "group_order": 126,
+        "prime": 107,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 30,
+        "group_order": 120,
+        "prime": 113,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 73,
+        "group_order": 146,
+        "prime": 127,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 75,
+        "group_order": 150,
+        "prime": 137,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 85,
+        "group_order": 170,
+        "prime": 149,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 102,
+        "group_order": 204,
+        "prime": 179,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "double_order": 106,
+        "group_order": 212,
+        "prime": 191,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "double_order": 110,
+        "group_order": 220,
+        "prime": 197,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_initial_unlock_construction_audit_v1.json": "de7c7db4515dcc24aa9fc8c430093fdc3771cf682a2c9c525ae51a80ebf0712a",
+    "elliptic-curves/cas/audit_det1092_initial_unlock.sage": "d8ea4742f0c5599e23ed6321f791eaf6e60cf5da90dfd4884b164aba34df515b"
+  },
+  "kernel_dimension": 3,
+  "point_searches": 0,
+  "reconstructed_point_literal302": [
+    "798163679392253252421633857941847638669/1234321",
+    "12206268712622474572553441199832751956118377297446593032/1371330631"
+  ],
+  "residual_discriminant_to_chart_square_scale": {
+    "denominator": [
+      "1825201/4",
+      "-1351",
+      "1"
+    ],
+    "numerator": [
+      "20796295342138375638303255479559265267546551485666229888153471445374178624532067586008772981863241500497734921061263249210211876620767866763890816596288989886793490913741991726473300826595997680462960711041180647024039877146951581114326366384161938490704373039338196851860644578946222755701072492725188756218911609436860245199807696086498111709521377766033075105557798858565289596419398792020720387520431408902526806685119484153536986874374004170488937523940395077687250952797211588891576721571002473249059503736704856006211847814397154540962811799630776941429152710696738033071462911518276845215140387984117312853891625138119290458439131750680201311789613603939742483103710568571681958755356645968890013711428698219953677749401817441457029551374866704522973730766635638998934904149336441007066291802236032336648161534469663972248720253440000000000000000000000000000000000000000000000000000"
+    ]
+  },
+  "status": "PASS_RR_NET_FULL_CHART_BRIDGE_AND_FIRST_GAIN",
+  "target_selected_net_members": 0,
+  "witness_coordinate": "-1714/2373"
+}

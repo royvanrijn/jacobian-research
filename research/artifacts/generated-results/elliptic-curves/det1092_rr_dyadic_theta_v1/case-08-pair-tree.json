@@ -1,0 +1,518 @@
+{
+  "maximum_depth": 9,
+  "node_count": 30,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "68d182ef2b8d47fb45eca7c04ff4f45ca52f116d2a8e33eac5e742889ed703e7"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 8,
+      "depth": 1,
+      "normalized_polynomial_sha256": "4d7960a2b40340232679181edd6a7932ed8adabb07180949bb7e0bf9bd43f064"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 8,
+      "depth": 2,
+      "normalized_polynomial_sha256": "e048d6be5472d770d04e2904b4685e6b67cebb76c47d3b256da095427e1d63a5"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 8,
+      "depth": 3,
+      "normalized_polynomial_sha256": "6fc51fe3ab743d5ad301d10af0adc9d6a01612059b4816bb10d0dd36620861d3"
+    },
+    {
+      "a": "13",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 4,
+      "normalized_polynomial_sha256": "6777e3a4b4f05af060a599fbd73248719953094d0f168f1dddde827315181b47"
+    },
+    {
+      "a": "29",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 5,
+      "normalized_polynomial_sha256": "2fff8229cf783d96cc2925e4e724c19f1a96d133ef5419df13e4462962b06d29"
+    },
+    {
+      "a": "29",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 6,
+      "normalized_polynomial_sha256": "caf017ab68719b6923aa70b19e71f790ca693f8b37be6ed0b901220b9f5453da"
+    },
+    {
+      "a": "93",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "b7aa669b62d929bc72f70eddc9816882541dfdd4e07d97bb7a924e46e791c062"
+    },
+    {
+      "a": "93",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 8,
+      "normalized_polynomial_sha256": "884bdc1cacca619d6f13dcc030b2d7ca8e7e7dbad1b8cdd8b18a8bf307d34d36"
+    },
+    {
+      "a": "349",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 1,
+      "depth": 9,
+      "normalized_polynomial_sha256": "eab483d634ff2d2d9bd172b6806f94409e154196367e79bf9cc7a592d7f043ae"
+    },
+    {
+      "a": "29",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "741e14416e96ae1babaf500365422a08f3a429f8d2a1feecb87144b1370b0de4"
+    },
+    {
+      "a": "157",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 8,
+      "normalized_polynomial_sha256": "c4b130aaffb0bbf52733cc11854e30e8c7c34a5e57941279d87047351d065025"
+    },
+    {
+      "a": "157",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 1,
+      "depth": 9,
+      "normalized_polynomial_sha256": "07fc0f1354872d812dac07ef38fde40b6569b04200674d00aad82de7c54c5b6e"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 4,
+      "normalized_polynomial_sha256": "25d9686ff9485d33b981e61726fd014d0b977f0add5e75e0f86a6ab74155558a"
+    },
+    {
+      "a": "21",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 5,
+      "normalized_polynomial_sha256": "483f4ac8fac2cd7df8f79abb09108c774f42735ac02ae770c3c64e6fada47f71"
+    },
+    {
+      "a": "53",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 6,
+      "normalized_polynomial_sha256": "310ef24386e52dca3297662e5c12fec5fefa29bfe3ede9b138bb65bd35a94393"
+    },
+    {
+      "a": "117",
+      "children": [
+        {
+          "residue": 0,
+          "status": "UNIQUE_HENSEL_ROOT"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "6a804f232d43eb5171e8c377d8a86743e7cc9f93da16c783644f28209d1c2a41"
+    },
+    {
+      "a": "53",
+      "children": [
+        {
+          "residue": 0,
+          "status": "UNIQUE_HENSEL_ROOT"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 7,
+      "normalized_polynomial_sha256": "69aabfff64f32d4865aee75246a73e5c87bbb26adf4edfe34bf234c468fa8bbe"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 7,
+      "depth": 1,
+      "normalized_polynomial_sha256": "a1630da6ba0183d4a125d45c7c9831b804c6ab0b60c2376078097113ec337e97"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 2,
+      "normalized_polynomial_sha256": "23922f859f54f7176027591a805ee1e75a2019aea2234f792de867efdc78730b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 6,
+      "depth": 3,
+      "normalized_polynomial_sha256": "fdb021dba762edd2026e3eb7654af13a98ead6b531b56515a954dfd042564a9a"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 4,
+      "normalized_polynomial_sha256": "d674adc7ed480910fd87e241e294c568eb9ef136571c24753a289f674923c204"
+    },
+    {
+      "a": "8",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 5,
+      "normalized_polynomial_sha256": "de9754bb15013f16c9f7e3777464f372cccf5673adc4d0e5ad46a7b7e39215cf"
+    },
+    {
+      "a": "40",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 6,
+      "normalized_polynomial_sha256": "d0028ed3e678f15ff2d9dd1942a2c42b9f6de270345145749b18b9a4402a430b"
+    },
+    {
+      "a": "40",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 7,
+      "normalized_polynomial_sha256": "e8f5ada6aaa18070fb3e56b2a9648487fc8c65525c360a49682a6a85993bf5e6"
+    },
+    {
+      "a": "168",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 8,
+      "normalized_polynomial_sha256": "57bd2f6080077f33fcd2c5a7706d4321e47ed00faa173127917b6f2ef2150f53"
+    },
+    {
+      "a": "168",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 1,
+      "depth": 9,
+      "normalized_polynomial_sha256": "0bbce500c990665c71d5275f8a806c5137c12a04b1028ea081c295d28d7ab714"
+    },
+    {
+      "a": "40",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 8,
+      "normalized_polynomial_sha256": "e74020503d4c8350eaaad52789a9690c35c395228cdb867dcb0b910711ee71bb"
+    },
+    {
+      "a": "40",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 1,
+      "depth": 9,
+      "normalized_polynomial_sha256": "b41288dcf0ffe8b5b45734565e1057a1023651bc031f5cad015ec45bee9dc657"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "UNIQUE_HENSEL_ROOT"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 4,
+      "normalized_polynomial_sha256": "b7a47c7f44a2940310fc162b7d4d3482987e7e8474594a64f97614c44834e7e5"
+    }
+  ],
+  "root_balls": [
+    {
+      "a": "117",
+      "depth": 8
+    },
+    {
+      "a": "245",
+      "depth": 8
+    },
+    {
+      "a": "53",
+      "depth": 8
+    },
+    {
+      "a": "181",
+      "depth": 8
+    },
+    {
+      "a": "2",
+      "depth": 2
+    },
+    {
+      "a": "0",
+      "depth": 5
+    },
+    {
+      "a": "16",
+      "depth": 5
+    }
+  ],
+  "root_count": 7,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

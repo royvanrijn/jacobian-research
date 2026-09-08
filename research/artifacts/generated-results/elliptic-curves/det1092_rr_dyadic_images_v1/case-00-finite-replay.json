@@ -1,0 +1,2131 @@
+{
+  "case_index": 0,
+  "checker_sha256": "ddba433fbdfc17c340024b8603e921768381121737ec0c0bc494ad2b71ced5d2",
+  "classification": "verified application and independent exact finite-ring replay",
+  "generic_fake_image_rank": 3,
+  "generic_true_image_rank_including_D0": 3,
+  "include_inherited_D0": false,
+  "independent_generic_divisor_indices": [
+    0,
+    1,
+    2
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-00.json": "c7d84efb3d8c047087373a1939c58a880f75900174b705230c74c96d8582aeb7",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/protocol.json": "498bd62a27e2a4fc76839c431ad47759098613e9a59058d36ef45bc3aab51743",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_dyadic_panel_replay_v1.json": "cb6fce237cc54dbc66cfa7226c6e79a419f290ca6fb0b7d26bd4b85c99f74de6"
+  },
+  "limits": {
+    "PARI_number_field_calls": 0,
+    "class_groups": 0,
+    "multiplier_candidates": 64,
+    "nonsquare_tests": 248,
+    "normalization_norm_v2_cap": 128,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "proxy_precision": 512,
+    "residues_mod4": 4096,
+    "wall_seconds": 25
+  },
+  "nonsquare_tests": [
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        4,
+        4,
+        3,
+        3,
+        1,
+        3
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        4,
+        4,
+        5,
+        5,
+        7,
+        5
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        2,
+        6,
+        3,
+        1,
+        5,
+        1
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        6,
+        2,
+        5,
+        7,
+        3,
+        7
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        4,
+        4,
+        7,
+        7,
+        5,
+        7
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        4,
+        4,
+        1,
+        1,
+        3,
+        1
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        2,
+        6,
+        7,
+        5,
+        1,
+        5
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 1,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        6,
+        2,
+        1,
+        3,
+        7,
+        3
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        1,
+        4,
+        4,
+        6,
+        2,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        7,
+        4,
+        4,
+        2,
+        6,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        7,
+        4,
+        6,
+        4,
+        6,
+        4
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        1,
+        4,
+        2,
+        4,
+        2,
+        4
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        5,
+        4,
+        4,
+        6,
+        2,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        3,
+        4,
+        4,
+        2,
+        6,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        3,
+        4,
+        6,
+        4,
+        6,
+        4
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 2,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        5,
+        4,
+        2,
+        4,
+        2,
+        4
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        2,
+        0,
+        1,
+        7,
+        1,
+        3
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        6,
+        0,
+        7,
+        1,
+        7,
+        5
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        0,
+        2,
+        1,
+        5,
+        1,
+        1
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        0,
+        6,
+        7,
+        3,
+        7,
+        7
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        2,
+        0,
+        5,
+        3,
+        5,
+        7
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        6,
+        0,
+        3,
+        5,
+        3,
+        1
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        0,
+        2,
+        5,
+        1,
+        5,
+        5
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 3,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        0,
+        6,
+        3,
+        7,
+        3,
+        3
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        5,
+        6,
+        6,
+        1,
+        5,
+        4
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        3,
+        2,
+        2,
+        7,
+        3,
+        4
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        7,
+        4,
+        6,
+        3,
+        5,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        1,
+        4,
+        2,
+        5,
+        3,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        1,
+        6,
+        6,
+        5,
+        1,
+        4
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        7,
+        2,
+        2,
+        3,
+        7,
+        4
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        3,
+        4,
+        6,
+        7,
+        1,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 4,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        5,
+        4,
+        2,
+        1,
+        7,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        1,
+        1,
+        1,
+        7,
+        5,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        7,
+        7,
+        7,
+        1,
+        3,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        5,
+        7,
+        7,
+        3,
+        7,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        3,
+        1,
+        1,
+        5,
+        1,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        5,
+        5,
+        5,
+        3,
+        1,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        3,
+        3,
+        3,
+        5,
+        7,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        1,
+        3,
+        3,
+        7,
+        3,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 5,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        7,
+        5,
+        5,
+        1,
+        5,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        7,
+        2,
+        4,
+        1,
+        1,
+        0
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        1,
+        6,
+        4,
+        7,
+        7,
+        0
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        1,
+        0,
+        4,
+        3,
+        5,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        7,
+        0,
+        4,
+        5,
+        3,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        3,
+        2,
+        4,
+        5,
+        5,
+        0
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        5,
+        6,
+        4,
+        3,
+        3,
+        0
+      ],
+      "valuation_parity": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        5,
+        0,
+        4,
+        7,
+        1,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 6,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        3,
+        0,
+        4,
+        1,
+        7,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 0,
+      "unit_mod8": [
+        7,
+        7,
+        1,
+        3,
+        5,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 1,
+      "unit_mod8": [
+        1,
+        1,
+        7,
+        5,
+        3,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 2,
+      "unit_mod8": [
+        7,
+        5,
+        3,
+        3,
+        7,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 3,
+      "unit_mod8": [
+        1,
+        3,
+        5,
+        5,
+        1,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 4,
+      "unit_mod8": [
+        3,
+        3,
+        5,
+        7,
+        1,
+        2
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "UNIT_NOT_A_SQUARE_MOD_EIGHT",
+      "rational_scalar_mask": 5,
+      "unit_mod8": [
+        5,
+        5,
+        3,
+        1,
+        7,
+        6
+      ],
+      "valuation_parity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 6,
+      "unit_mod8": [
+        3,
+        1,
+        7,
+        7,
+        3,
+        2
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "generic_mask": 7,
+      "nonsquare_reason": "ODD_LOCAL_VALUATION",
+      "rational_scalar_mask": 7,
+      "unit_mod8": [
+        5,
+        7,
+        1,
+        1,
+        5,
+        6
+      ],
+      "valuation_parity": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "normalizations": {
+    "anchor": {
+      "exact_normalization_congruence_verified": true,
+      "norm_v2": 2,
+      "unit_basis_residues": [
+        11,
+        15,
+        1,
+        0,
+        4,
+        2
+      ],
+      "unit_mod8": [
+        3,
+        7,
+        1,
+        0,
+        4,
+        2
+      ],
+      "valuations": [
+        0,
+        1,
+        0
+      ],
+      "verification_precision": 5
+    },
+    "generic": [
+      {
+        "exact_normalization_congruence_verified": true,
+        "index": 0,
+        "norm_v2": 14,
+        "unit_basis_residues": [
+          22270,
+          25551,
+          104594,
+          94729,
+          114053,
+          74471
+        ],
+        "unit_mod8": [
+          6,
+          7,
+          2,
+          1,
+          5,
+          7
+        ],
+        "valuations": [
+          2,
+          2,
+          8
+        ],
+        "verification_precision": 17
+      },
+      {
+        "exact_normalization_congruence_verified": true,
+        "index": 1,
+        "norm_v2": 24,
+        "unit_basis_residues": [
+          15952752,
+          35937042,
+          21051099,
+          878985,
+          22934455,
+          14619833
+        ],
+        "unit_mod8": [
+          0,
+          2,
+          3,
+          1,
+          7,
+          1
+        ],
+        "valuations": [
+          2,
+          6,
+          10
+        ],
+        "verification_precision": 27
+      },
+      {
+        "exact_normalization_congruence_verified": true,
+        "index": 2,
+        "norm_v2": 34,
+        "unit_basis_residues": [
+          20599803629,
+          107345644914,
+          113998261738,
+          131022131857,
+          123704277021,
+          42493375780
+        ],
+        "unit_mod8": [
+          5,
+          2,
+          2,
+          1,
+          5,
+          4
+        ],
+        "valuations": [
+          2,
+          12,
+          8
+        ],
+        "verification_precision": 37
+      }
+    ],
+    "scalars": [
+      {
+        "exact_normalization_congruence_verified": true,
+        "norm_v2": 0,
+        "unit_basis_residues": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit_mod8": [
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "valuations": [
+          0,
+          0,
+          0
+        ],
+        "verification_precision": 3
+      },
+      {
+        "exact_normalization_congruence_verified": true,
+        "norm_v2": 6,
+        "unit_basis_residues": [
+          247,
+          492,
+          158,
+          142,
+          416,
+          170
+        ],
+        "unit_mod8": [
+          7,
+          4,
+          6,
+          6,
+          0,
+          2
+        ],
+        "valuations": [
+          3,
+          1,
+          1
+        ],
+        "verification_precision": 9
+      },
+      {
+        "exact_normalization_congruence_verified": true,
+        "norm_v2": 0,
+        "unit_basis_residues": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "unit_mod8": [
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "valuations": [
+          0,
+          0,
+          0
+        ],
+        "verification_precision": 3
+      }
+    ]
+  },
+  "order_certificate": {
+    "multiplier_candidates_tested": 64,
+    "passing_multiplier_classes": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "primitive_idempotents": [
+      {
+        "idempotent_mod2": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "idempotent_mod256": [
+          178,
+          36,
+          78,
+          6,
+          145,
+          64
+        ],
+        "local_degree": 3,
+        "ramification_degree": 3,
+        "residue_degree": 1,
+        "uniformizer_basis_coordinates": [
+          48,
+          254,
+          19,
+          203,
+          32,
+          193
+        ],
+        "uniformizer_candidate_index": 1,
+        "uniformizer_norm_v2": 1
+      },
+      {
+        "idempotent_mod2": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "idempotent_mod256": [
+          18,
+          247,
+          234,
+          192,
+          148,
+          42
+        ],
+        "local_degree": 2,
+        "ramification_degree": 1,
+        "residue_degree": 2,
+        "uniformizer_basis_coordinates": [
+          19,
+          247,
+          234,
+          192,
+          148,
+          42
+        ],
+        "uniformizer_candidate_index": 0,
+        "uniformizer_norm_v2": 2
+      },
+      {
+        "idempotent_mod2": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "idempotent_mod256": [
+          61,
+          229,
+          200,
+          58,
+          219,
+          150
+        ],
+        "local_degree": 1,
+        "ramification_degree": 1,
+        "residue_degree": 1,
+        "uniformizer_basis_coordinates": [
+          62,
+          229,
+          200,
+          58,
+          219,
+          150
+        ],
+        "uniformizer_candidate_index": 0,
+        "uniformizer_norm_v2": 1
+      }
+    ],
+    "radical_basis_mod2": [
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "two_maximal_order_certified": true
+  },
+  "scope": "Complete true and fake2-adic images are generated by the inherited subgroup. Proxy squareclass transport is certified for these finitely many divisors. No global Selmer group is computed.",
+  "status": "PASS_INDEPENDENT_COMPLETE_DYADIC_KUMMER_IMAGE",
+  "unit_residues_mod4_tested": 768,
+  "unit_square_residues_mod8": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      2,
+      0,
+      0,
+      4
+    ],
+    [
+      1,
+      2,
+      6,
+      0,
+      0,
+      4
+    ],
+    [
+      1,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      4,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      6,
+      2,
+      0,
+      0,
+      4
+    ],
+    [
+      1,
+      6,
+      6,
+      0,
+      0,
+      4
+    ],
+    [
+      2,
+      0,
+      1,
+      4,
+      6,
+      5
+    ],
+    [
+      2,
+      0,
+      5,
+      0,
+      2,
+      5
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      5,
+      3
+    ],
+    [
+      2,
+      1,
+      3,
+      0,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      3,
+      4,
+      6,
+      1
+    ],
+    [
+      2,
+      1,
+      6,
+      1,
+      5,
+      3
+    ],
+    [
+      2,
+      2,
+      3,
+      0,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      7,
+      4,
+      6,
+      1
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      1,
+      7
+    ],
+    [
+      2,
+      3,
+      1,
+      0,
+      2,
+      5
+    ],
+    [
+      2,
+      3,
+      1,
+      4,
+      6,
+      5
+    ],
+    [
+      2,
+      3,
+      4,
+      1,
+      1,
+      7
+    ],
+    [
+      2,
+      4,
+      1,
+      0,
+      2,
+      5
+    ],
+    [
+      2,
+      4,
+      5,
+      4,
+      6,
+      5
+    ],
+    [
+      2,
+      5,
+      2,
+      1,
+      5,
+      3
+    ],
+    [
+      2,
+      5,
+      6,
+      1,
+      5,
+      3
+    ],
+    [
+      2,
+      5,
+      7,
+      0,
+      2,
+      1
+    ],
+    [
+      2,
+      5,
+      7,
+      4,
+      6,
+      1
+    ],
+    [
+      2,
+      6,
+      3,
+      4,
+      6,
+      1
+    ],
+    [
+      2,
+      6,
+      7,
+      0,
+      2,
+      1
+    ],
+    [
+      2,
+      7,
+      0,
+      1,
+      1,
+      7
+    ],
+    [
+      2,
+      7,
+      4,
+      1,
+      1,
+      7
+    ],
+    [
+      2,
+      7,
+      5,
+      0,
+      2,
+      5
+    ],
+    [
+      2,
+      7,
+      5,
+      4,
+      6,
+      5
+    ],
+    [
+      3,
+      0,
+      3,
+      1,
+      7,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      5,
+      3,
+      0
+    ],
+    [
+      3,
+      1,
+      3,
+      1,
+      7,
+      0
+    ],
+    [
+      3,
+      1,
+      7,
+      5,
+      3,
+      0
+    ],
+    [
+      3,
+      2,
+      1,
+      1,
+      3,
+      4
+    ],
+    [
+      3,
+      2,
+      1,
+      5,
+      7,
+      4
+    ],
+    [
+      3,
+      3,
+      1,
+      1,
+      3,
+      4
+    ],
+    [
+      3,
+      3,
+      5,
+      5,
+      7,
+      4
+    ],
+    [
+      3,
+      4,
+      7,
+      1,
+      7,
+      0
+    ],
+    [
+      3,
+      4,
+      7,
+      5,
+      3,
+      0
+    ],
+    [
+      3,
+      5,
+      3,
+      5,
+      3,
+      0
+    ],
+    [
+      3,
+      5,
+      7,
+      1,
+      7,
+      0
+    ],
+    [
+      3,
+      6,
+      5,
+      1,
+      3,
+      4
+    ],
+    [
+      3,
+      6,
+      5,
+      5,
+      7,
+      4
+    ],
+    [
+      3,
+      7,
+      1,
+      5,
+      7,
+      4
+    ],
+    [
+      3,
+      7,
+      5,
+      1,
+      3,
+      4
+    ],
+    [
+      5,
+      0,
+      0,
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      0,
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      2,
+      2,
+      4,
+      4,
+      0
+    ],
+    [
+      5,
+      2,
+      6,
+      4,
+      4,
+      0
+    ],
+    [
+      5,
+      4,
+      0,
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      6,
+      2,
+      4,
+      4,
+      0
+    ],
+    [
+      5,
+      6,
+      6,
+      4,
+      4,
+      0
+    ],
+    [
+      6,
+      0,
+      1,
+      4,
+      6,
+      1
+    ],
+    [
+      6,
+      0,
+      5,
+      0,
+      2,
+      1
+    ],
+    [
+      6,
+      1,
+      2,
+      5,
+      1,
+      7
+    ],
+    [
+      6,
+      1,
+      6,
+      5,
+      1,
+      7
+    ],
+    [
+      6,
+      1,
+      7,
+      0,
+      2,
+      5
+    ],
+    [
+      6,
+      1,
+      7,
+      4,
+      6,
+      5
+    ],
+    [
+      6,
+      2,
+      3,
+      0,
+      2,
+      5
+    ],
+    [
+      6,
+      2,
+      7,
+      4,
+      6,
+      5
+    ],
+    [
+      6,
+      3,
+      0,
+      5,
+      5,
+      3
+    ],
+    [
+      6,
+      3,
+      4,
+      5,
+      5,
+      3
+    ],
+    [
+      6,
+      3,
+      5,
+      0,
+      2,
+      1
+    ],
+    [
+      6,
+      3,
+      5,
+      4,
+      6,
+      1
+    ],
+    [
+      6,
+      4,
+      1,
+      0,
+      2,
+      1
+    ],
+    [
+      6,
+      4,
+      5,
+      4,
+      6,
+      1
+    ],
+    [
+      6,
+      5,
+      2,
+      5,
+      1,
+      7
+    ],
+    [
+      6,
+      5,
+      3,
+      0,
+      2,
+      5
+    ],
+    [
+      6,
+      5,
+      3,
+      4,
+      6,
+      5
+    ],
+    [
+      6,
+      5,
+      6,
+      5,
+      1,
+      7
+    ],
+    [
+      6,
+      6,
+      3,
+      4,
+      6,
+      5
+    ],
+    [
+      6,
+      6,
+      7,
+      0,
+      2,
+      5
+    ],
+    [
+      6,
+      7,
+      0,
+      5,
+      5,
+      3
+    ],
+    [
+      6,
+      7,
+      1,
+      0,
+      2,
+      1
+    ],
+    [
+      6,
+      7,
+      1,
+      4,
+      6,
+      1
+    ],
+    [
+      6,
+      7,
+      4,
+      5,
+      5,
+      3
+    ],
+    [
+      7,
+      0,
+      7,
+      1,
+      7,
+      4
+    ],
+    [
+      7,
+      0,
+      7,
+      5,
+      3,
+      4
+    ],
+    [
+      7,
+      1,
+      3,
+      1,
+      7,
+      4
+    ],
+    [
+      7,
+      1,
+      7,
+      5,
+      3,
+      4
+    ],
+    [
+      7,
+      2,
+      5,
+      1,
+      3,
+      0
+    ],
+    [
+      7,
+      2,
+      5,
+      5,
+      7,
+      0
+    ],
+    [
+      7,
+      3,
+      1,
+      1,
+      3,
+      0
+    ],
+    [
+      7,
+      3,
+      5,
+      5,
+      7,
+      0
+    ],
+    [
+      7,
+      4,
+      3,
+      1,
+      7,
+      4
+    ],
+    [
+      7,
+      4,
+      3,
+      5,
+      3,
+      4
+    ],
+    [
+      7,
+      5,
+      3,
+      5,
+      3,
+      4
+    ],
+    [
+      7,
+      5,
+      7,
+      1,
+      7,
+      4
+    ],
+    [
+      7,
+      6,
+      1,
+      1,
+      3,
+      0
+    ],
+    [
+      7,
+      6,
+      1,
+      5,
+      7,
+      0
+    ],
+    [
+      7,
+      7,
+      1,
+      5,
+      7,
+      0
+    ],
+    [
+      7,
+      7,
+      5,
+      1,
+      3,
+      0
+    ]
+  ]
+}

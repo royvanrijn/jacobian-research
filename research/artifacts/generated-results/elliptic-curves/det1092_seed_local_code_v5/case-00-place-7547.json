@@ -1,0 +1,131 @@
+{
+  "basis_indices": [],
+  "basis_nonsquare_tests": [],
+  "full_local_point_dimension": 0,
+  "generic_coordinates": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "generic_rank": 0,
+  "place": 7547,
+  "prime_count": 1,
+  "relation_square_tests": [
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    }
+  ]
+}

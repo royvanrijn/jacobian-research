@@ -1,0 +1,7 @@
+{
+  "status": "REJECTED_IMPLEMENTATION_BEFORE_REAL_PLACE",
+  "classification": "implementation failure; finite-place checkpoints retained but not independently verified",
+  "case_index": 8,
+  "error": "The Sage polynomial class has no sturm_sequence method.",
+  "preservation": "The v2 source and artifacts are retained. Version3 builds the Sturm chain explicitly and preserves the ambient dimension for empty local bases. Version3 here refers only to this local-code diagnostic, not the untouched search pilot."
+}

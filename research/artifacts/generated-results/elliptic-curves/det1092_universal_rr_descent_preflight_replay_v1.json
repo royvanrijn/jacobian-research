@@ -1,0 +1,28 @@
+{
+  "Selmer_runs": 0,
+  "boundary": "Universal family and arithmetic object distinction, not a blinded control-panel outcome or a genus2 Selmer-solubility theorem.",
+  "checker_sha256": "03abb0981442826204e60215436acce923a6002384c266e9c34f4b219545fa36",
+  "classification": "verified application and retrospective diagnostic",
+  "curve_variable": "T",
+  "exact_Kummer_norm_identity": true,
+  "fibrewise_Jacobian_is_E_t": true,
+  "fibrewise_quartic_genus": 1,
+  "first_gain_strict_modulo_M17": false,
+  "generic_genus2_parameters": [
+    "u",
+    "v"
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_public_span_v1/input.json": "7efa45e9ecbf56860f8ba4d3e6784fe07d26aea442fdc4fde60d5ba03fd6d8b1",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_quotient_local_filtration_v1.json": "001e12e65bd41bd8ecbfddce42953b41c7365060e6678ac0978a227bb9c1b715",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_initial_unlock_construction_audit_v1.json": "de7c7db4515dcc24aa9fc8c430093fdc3771cf682a2c9c525ae51a80ebf0712a",
+    "artifacts/generated-results/elliptic-curves/det1092_universal_rr_descent_preflight_v1.json": "4ce64c224017baa54a208f43e501df0c0c717e6cb0e64252fb007050bc0a7975"
+  },
+  "point_searches": 0,
+  "rational_points_at_infinity": true,
+  "separating_character_verified": true,
+  "status": "PASS_INDEPENDENT_UNIVERSAL_RR_DESCENT_PREFLIGHT",
+  "universal_sextic_identity": true
+}

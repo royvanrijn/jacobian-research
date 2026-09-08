@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "RR_rank": 19,
+      "case": "historical",
+      "equation_and_trace_removal_verified": true,
+      "geometric_genus": 0,
+      "no_rational_fibre_point_at_zero": true,
+      "prime": 23,
+      "q0_mod_prime": 17,
+      "zero_discriminant_nonsquare": true
+    },
+    {
+      "RR_rank": 19,
+      "case": "autonomous_V3",
+      "equation_and_trace_removal_verified": true,
+      "no_rational_fibre_point_at_zero": true,
+      "zero_discriminant_nonsquare": true
+    }
+  ],
+  "checker_sha256": "e2b39dabc383dffb386e36b9bb9930edea2b090e567be7790c4c3aa84cebf341",
+  "claim_boundary": "The two specified genus-zero RR bisections cannot supply rational302 points at t=0. The actual arithmetic source of the first exceptional point and other multisections remain unresolved.",
+  "classification": "verified application",
+  "exceptional_point_construction_inputs": false,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_historical_unlock_obstruction_v1.json": "32f531d12158e4d7c5833394790f21fda8a48d8483fe0d43571236ac9f5de86e",
+    "artifacts/generated-results/elliptic-curves/det1092_initial_unlock_bisection_obstruction_v1.json": "82d9750c2a289126ccecf71d440b4c4424e878d4cd2389bdc85715847c136da2",
+    "artifacts/generated-results/elliptic-curves/det1092_initial_unlock_construction_audit_v1.json": "de7c7db4515dcc24aa9fc8c430093fdc3771cf682a2c9c525ae51a80ebf0712a"
+  },
+  "point_searches_run": 0,
+  "status": "PASS_INDEPENDENT_BOTH_FIRST_CENTRE_OBSTRUCTIONS"
+}

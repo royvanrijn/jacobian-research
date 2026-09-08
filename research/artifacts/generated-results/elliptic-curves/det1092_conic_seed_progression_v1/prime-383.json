@@ -1,0 +1,12 @@
+{
+  "cubic": [
+    73,
+    376,
+    5,
+    1
+  ],
+  "p": 383,
+  "rational_roots": [],
+  "rows": [],
+  "status": "PASS_CUBIC_KUMMER_REDUCTION"
+}

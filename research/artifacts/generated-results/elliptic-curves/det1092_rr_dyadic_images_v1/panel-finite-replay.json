@@ -1,0 +1,163 @@
+{
+  "all_images_spanned_by_inherited_subgroups": true,
+  "cases": [
+    {
+      "case_index": 0,
+      "fake_image_rank": 3,
+      "generic_divisor_indices": [
+        0,
+        1,
+        2
+      ],
+      "include_D0": false,
+      "nonsquare_tests": 56,
+      "square_residue_count": 96,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 1,
+      "fake_image_rank": 2,
+      "generic_divisor_indices": [
+        0,
+        1
+      ],
+      "include_D0": true,
+      "nonsquare_tests": 24,
+      "square_residue_count": 256,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 2,
+      "fake_image_rank": 3,
+      "generic_divisor_indices": [
+        0,
+        1,
+        2
+      ],
+      "include_D0": false,
+      "nonsquare_tests": 56,
+      "square_residue_count": 96,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 3,
+      "fake_image_rank": 3,
+      "generic_divisor_indices": [
+        1,
+        2,
+        3
+      ],
+      "include_D0": true,
+      "nonsquare_tests": 56,
+      "square_residue_count": 144,
+      "true_image_rank": 4
+    },
+    {
+      "case_index": 4,
+      "fake_image_rank": 2,
+      "generic_divisor_indices": [
+        0,
+        3
+      ],
+      "include_D0": true,
+      "nonsquare_tests": 24,
+      "square_residue_count": 256,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 5,
+      "fake_image_rank": 2,
+      "generic_divisor_indices": [
+        0,
+        3
+      ],
+      "include_D0": true,
+      "nonsquare_tests": 24,
+      "square_residue_count": 256,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 6,
+      "fake_image_rank": 3,
+      "generic_divisor_indices": [
+        0,
+        1,
+        2
+      ],
+      "include_D0": false,
+      "nonsquare_tests": 56,
+      "square_residue_count": 96,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 7,
+      "fake_image_rank": 2,
+      "generic_divisor_indices": [
+        0,
+        1
+      ],
+      "include_D0": true,
+      "nonsquare_tests": 24,
+      "square_residue_count": 256,
+      "true_image_rank": 3
+    },
+    {
+      "case_index": 8,
+      "fake_image_rank": 5,
+      "generic_divisor_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "include_D0": false,
+      "nonsquare_tests": 248,
+      "square_residue_count": 4,
+      "true_image_rank": 5
+    },
+    {
+      "case_index": 9,
+      "fake_image_rank": 3,
+      "generic_divisor_indices": [
+        0,
+        1,
+        4
+      ],
+      "include_D0": false,
+      "nonsquare_tests": 56,
+      "square_residue_count": 576,
+      "true_image_rank": 3
+    }
+  ],
+  "checker_sha256": "db8216b5b76642418aff37dfae8d58f2fdc5fc6b2cafc1f50795c46fc1685247",
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-00-finite-replay.json": "969fc00f2ed46d13b6a42dce6d3db2a41371cc7b0f6de3d38e76383b5688d960",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-01-finite-replay.json": "83d4c49a33f2a8e66fb176043adb60df274a33fd3d4ab042858adcdb1e14b4a2",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-02-finite-replay.json": "98bf1a47091d560235c6f921bb5e97d25fb72153c46617bd5e571bd65fb5e7e0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-03-finite-replay.json": "57abaa76b136508375331d627e279e83919fa8e5ef289089d78a3a53416d7233",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-04-finite-replay.json": "07789a946b72c8244774177b48b1963fbfa08b779c898acd0a1c209d5e821cf2",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-05-finite-replay.json": "1c711e557aa87e4a68b696e5675079b47d3521d35a05b141c0bddda3b233c5f6",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-06-finite-replay.json": "1d7e38cd29ead9487d30675c0d66f1742573cab0aa33824f3b34ef3157d5df53",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-07-finite-replay.json": "8455dbb1811064bf49ab9aef507f98588ac0eebd28ca06f0230a26e4a2c934b9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-08-finite-replay.json": "440ea998f593cfa114ca265b65160a0ebbebb49ac9fefa4d207d34e87186b711",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/case-09-finite-replay.json": "e60e1fece37b7f4ce751d75f31eb4cf7865fa26b215bf1c4d98e05893a4fed77",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/protocol.json": "498bd62a27e2a4fc76839c431ad47759098613e9a59058d36ef45bc3aab51743",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_images_v1/replay-failure-01.json": "14a6fefafafd98d2fc6539708103741a988352e90087ba7eb8b5f9079aceee2c",
+    "elliptic-curves/cas/verify_det1092_rr_dyadic_images.sage": "ddba433fbdfc17c340024b8603e921768381121737ec0c0bc494ad2b71ced5d2"
+  },
+  "limits": {
+    "cases": 10,
+    "full_discriminant_factorizations": 0,
+    "global_class_groups": 0,
+    "mod4_residue_vectors_per_case": 4096,
+    "multiplier_candidates_per_case": 64,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "nonsquare_tests": 624,
+  "scope": "All true/fake2-adic images are complete. The proxy preserves these local squareclasses with proved error margins, not the global sextic field or global Selmer group. Full global descent remains uncomputed.",
+  "status": "PASS_INDEPENDENT_TEN_COMPLETE_DYADIC_KUMMER_IMAGES"
+}

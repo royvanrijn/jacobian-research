@@ -1,0 +1,94 @@
+{
+  "maximum_depth": 3,
+  "node_count": 5,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "5c5eab62237ae18c3931b0f3368734f61932e0bd70eaae9b56671beb797807c2"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 10,
+      "depth": 1,
+      "normalized_polynomial_sha256": "094c78754cd12b48d34b9c4e15be905e600e113ae9308ecab105aa96dc860b61"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 10,
+      "depth": 2,
+      "normalized_polynomial_sha256": "1e8f3e5cb085e6588fe15f6d8e01e1ded2dba3998ead8c5bceb461c52a3ef908"
+    },
+    {
+      "a": "4",
+      "children": [
+        {
+          "residue": 0,
+          "status": "UNIQUE_HENSEL_ROOT"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 3,
+      "depth": 3,
+      "normalized_polynomial_sha256": "8a13ed2d0deea43977edf45ba4d5d03402f1473d26792361e699017ab0a7dc3b"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 3,
+      "normalized_polynomial_sha256": "f396a9ce7b0844985a290adf02e8ffb64e8bdf4fe53bf3e5d39f017b0b093a54"
+    }
+  ],
+  "root_balls": [
+    {
+      "a": "4",
+      "depth": 4
+    }
+  ],
+  "root_count": 1,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

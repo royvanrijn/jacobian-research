@@ -1,0 +1,26 @@
+{
+  "case_index": 1,
+  "classification": "exact real-place descent; independent replay required",
+  "divisor_tests": [],
+  "generic_image_rank": 0,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json": "0d7b6dd0304683e10d87e08b0a6e0de8652c06781db856150cfc8b1063160d07",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/protocol.json": "e60c0d8067fe5787d939831983136346422df610426fe4bf733dd96c5e20e792",
+    "elliptic-curves/cas/construct_det1092_rr_real_images_v2.sage": "cbc97e44c3588b44a4f44328ce4bfa69b929e308eb07859eeb3e00849adc12fe"
+  },
+  "limits": {
+    "cases": 10,
+    "class_groups": 0,
+    "generic_divisors_per_case": 17,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "seconds_per_case": 25
+  },
+  "real_Kummer_dimension": 0,
+  "real_branch_points": 2,
+  "scope": "Complete real local image only. No new rational point or full global Selmer computation.",
+  "source": "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json",
+  "source_sha256": "0d7b6dd0304683e10d87e08b0a6e0de8652c06781db856150cfc8b1063160d07",
+  "status": "PASS_COMPLETE_REAL_KUMMER_IMAGE_SPANNED_BY_INHERITED_DIVISORS"
+}

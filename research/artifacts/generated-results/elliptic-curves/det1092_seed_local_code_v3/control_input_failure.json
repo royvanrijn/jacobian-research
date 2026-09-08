@@ -1,0 +1,6 @@
+{
+  "status": "CONTROL_00_REJECTED_BEFORE_ARITHMETIC_INPUT_CHECKPOINT",
+  "classification": "implementation failure; no control result",
+  "error": "The parameter denominator alone does not clear all specialized Weierstrass coefficient denominators.",
+  "preservation": "The v4 constructor additionally includes the a4 and a6 denominators in an integral scaling, with unchanged places, cases and compatibility rule. It separates generic construction from seed evaluation entirely. Prior sources and checkpoints are retained. This version number does not refer to the untouched search pilots."
+}

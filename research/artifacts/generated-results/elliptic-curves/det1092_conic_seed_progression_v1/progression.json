@@ -1,0 +1,728 @@
+{
+  "B": "6437157837635645727368063702636659",
+  "B_bits": 113,
+  "base_map_polynomial_pair": [
+    [
+      "-126016646417842547749657615870028830934405995638647019595441124409134947409713379301932942960092207000",
+      "-1134674312778402359610092791684141775389061492755116264954733200000",
+      "-2502544513254536830634997737000"
+    ],
+    [
+      "-469875247923303580902794992400825677846323177378557273468955314909626497793000723102859677120771373383",
+      "0",
+      "7142333315568558691744661205247"
+    ]
+  ],
+  "base_parameter_at_u_zero": "1636579823608344775969579426883491310836441501800610644096637979339414901424849081843284973507691000/6102275947055890661075259641569164647354846459461782772324094998826318153155853546790385417152874979",
+  "boundary": "This is one extra direction and an infinite rational rank>=18 specialization family from the already fixed conic. The conic misses302 and does not explain its first seed. No amplifier or point search is run.",
+  "classification": "new constructive deduction; independent replay required",
+  "controls": [
+    {
+      "denominator_floor_sqrt": "133086700916892407047527721975949",
+      "index": 0,
+      "label": "scale-0131232",
+      "numerator_floor_sqrt": "1303875898368659935356850003210034662216768060411408726204869845186",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "q_value": "1700092358346680012675979644710890478721694515485450691501943528602020203670364030422436322248495093580198710167670091468231876000000/17712069960942370258716101454002327362368233794709105516934450601",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "25550420891625653879340012990683",
+      "index": 1,
+      "label": "scale-0257585",
+      "numerator_floor_sqrt": "1237992902224305868019853462567904088318186278418090018000818680931",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "q_value": "1532626425957759749021367885906515829017984091308636496893304775048625610948728650452020820475491107335271050190770173051505161000000/652824007739220673779839965195449830651284028452547197844806489",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "36204088560501350011148901906683",
+      "index": 2,
+      "label": "scale-0487239",
+      "numerator_floor_sqrt": "617700226628777692550394648348820431108881168298888151377106150023",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "q_value": "381553569977243321979635967997512431917526768651930797631635769927961439086348698057180776764014989109352293839539114130652196000000/1310736028496624714006635015786287379759089057824839832840062489",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "19226832139594522909788534187583",
+      "index": 3,
+      "label": "scale-0177036",
+      "numerator_floor_sqrt": "242787072803319754191410962136422310562246932471209991542647570456",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "q_value": "58945562720404486645107417565758604743071539299276106672198317765959430191524534438519717930170396755271101806613111905243225000000/369671074124144899699941431113305583819791379842881181831381889",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "4903715319412840664761249772478",
+      "index": 4,
+      "label": "scale-0043332",
+      "numerator_floor_sqrt": "38624605224865334171734082552453326570429692828070740254101261286",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "q_value": "1491860128776694471716880719417442733612277838985479389390166185567029277179865956970490443752661997288481869051829371334341000000/24046423933844177945362205388253232337055294853431648758819229",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "70282539410022591297698300689359",
+      "index": 5,
+      "label": "scale-0590501",
+      "numerator_floor_sqrt": "2313389027613921080359397076634050078515032201917306288810013807377",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "q_value": "5351768793084483310871727919751828375411531737579457456047824647341139958545994204116112129730230596296208226333588913968986089000000/4939635345921378695641608231346539863522404851670005254615830881",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "22711840543390081133500501591233",
+      "index": 6,
+      "label": "scale-0290097",
+      "numerator_floor_sqrt": "1018865165837540596479212251238803625301009633344987506470316329360",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "q_value": "1038086226157159101753456269607644865445565744549759217544581377987576469754858178722227278781202437456953927481403595570838436000000/515827700868377455854944338391916361663841444856804765022460289",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "232791657218852242267938953520321",
+      "index": 7,
+      "label": "scale-0748009",
+      "numerator_floor_sqrt": "1714282503035530190382457204796411406320126634235304059730454517615",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "q_value": "2938764500213762576403072923086165156541277742297851845262530118499471984197866985115184200597979738934447124132746400139088601000000/54191955670699601279334197875387662989697369632928737198559943041",
+      "split": false
+    },
+    {
+      "denominator_floor_sqrt": "1",
+      "index": 8,
+      "label": "302-generic-section-control",
+      "numerator_floor_sqrt": "11295958596059722878148137768053313",
+      "parameter": "0",
+      "q_value": "127598680603895545533594201587042450373210388891137967376445049000000",
+      "split": false
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/finite-code.json": "991d3842639e9e011e151b099a7e4caf7149b0ddc4a48c8123c0a511d423e453",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/input.json": "61fb4700167866d9777f53967c9c12ad0032fe4c55e38580c35fa4b82ce8a0ac",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/protocol.json": "fbd37d37f5f1f95d7ceb2aaae2deb7160e77652fa6ea8e340d66d8ab37f563f3",
+    "elliptic-curves/cas/construct_det1092_conic_seed_progression.sage": "81335c2409a52f5db6ee0260155e75db35f9ceea69121a5292617865796b2770"
+  },
+  "pivot_row_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19
+  ],
+  "progression": "u=B*n, n any rational integer; t=t(u), Q=the fixed conic lift.",
+  "selected_proof_primes": [
+    19,
+    23,
+    43,
+    47,
+    53,
+    59,
+    67,
+    71,
+    79,
+    83,
+    101,
+    107,
+    109,
+    127,
+    131,
+    149,
+    157,
+    163
+  ],
+  "stability": [
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 19,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 23,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 43,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 47,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 53,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 59,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 67,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 71,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 79,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 83,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 101,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 107,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 109,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 127,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 131,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 149,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 157,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_map_denominator_order": 0,
+      "coefficient_denominator_orders": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": 1,
+      "p": 163,
+      "point_projective_common_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "status": "CANDIDATE_ORACLE_FREE_RANK18_ARITHMETIC_PROGRESSION"
+}

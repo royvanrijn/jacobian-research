@@ -1,0 +1,22 @@
+{
+  "both_section_and_trace_identities": true,
+  "both_single_cover_anti_invariant_heights": 12,
+  "checker_sha256": "f00fe3ad941dde4217ed92d14c3afb05694032ab023e4ef7ce96bcc5ed52d467",
+  "claim_boundary": "Function-field rank19 and obstruction to parametrizing simultaneous splitting by P1. No rational-point existence claim for the genus1 base.",
+  "classification": "verified application",
+  "common_cover_anti_invariant_heights": [
+    24,
+    24
+  ],
+  "common_cover_genus": 1,
+  "common_rational_point": "UNKNOWN",
+  "gram_determinant": "675375017361408",
+  "independent_deck_characters": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_two_cover_rank19_genus_gate_v1.json": "646f1d59d51372ffc8a2673f0f633f6fc63428299f48bb352d1e2a10239ca36d"
+  },
+  "point_searches_run": 0,
+  "rank_lower_bound_over_Q_common_cover": 19,
+  "rational_parametrization": "IMPOSSIBLE",
+  "status": "PASS_INDEPENDENT_TWO_SECTION_HEIGHT_AND_GENUS_REPLAY"
+}

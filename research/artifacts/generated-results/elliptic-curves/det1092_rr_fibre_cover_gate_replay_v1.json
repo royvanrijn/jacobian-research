@@ -1,0 +1,180 @@
+{
+  "Selmer_runs": 0,
+  "boundary": "Excludes only the one-RR-pair branch construction over Q; it is not a genus2 Selmer panel or a rank-incidence theorem.",
+  "checker_sha256": "e49e2c8fdd9d584a313acbd39086109398e258a7098ea09d11b2a410434747b6",
+  "class_group_runs": 0,
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_fibre_cover_gate_protocol_v1.json": "259a64b2a36c79cf6a570a92afb92072511bab23929d415e57e0c73a53fef9a4",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_fibre_cover_gate_v1.json": "ef6bc393f93d6a59506bbb4e91559f1a39b364c8b1a5e7a759939b2d25fa465e",
+    "artifacts/local/elliptic-curves/adaptive-visibility-cascade-v1/roster.json": "53717644925594431a4f6eb3547f4d6031f07cb9291416edc87806f1ced5d718"
+  },
+  "point_searches": 0,
+  "status": "PASS_INDEPENDENT_RR_FIBRE_COVER_GATE",
+  "summary_after_arithmetic": [
+    {
+      "case": "case-18d6ed597aa5",
+      "obstruction_primes": [
+        17,
+        47,
+        79,
+        101,
+        179,
+        191
+      ],
+      "roster_id": "scale-0327807",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-2e78e5b23a84",
+      "obstruction_primes": [
+        61,
+        79,
+        89,
+        107,
+        127,
+        179,
+        191
+      ],
+      "roster_id": "scale-0361865",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-357fe31220d3",
+      "obstruction_primes": [
+        47,
+        53,
+        101,
+        137,
+        149,
+        197
+      ],
+      "roster_id": "scale-0034486",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-3f77f1533f78",
+      "obstruction_primes": [
+        17,
+        67,
+        79,
+        83,
+        107,
+        137,
+        191,
+        197
+      ],
+      "roster_id": "scale-0133940",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-42c25669212b",
+      "obstruction_primes": [
+        67,
+        83,
+        89,
+        127,
+        149,
+        179,
+        197
+      ],
+      "roster_id": "scale-0213106",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-4fe75e558858",
+      "obstruction_primes": [
+        53,
+        107,
+        127,
+        137,
+        149
+      ],
+      "roster_id": "scale-0531213",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-565a699588cf",
+      "obstruction_primes": [
+        67,
+        79,
+        83,
+        101,
+        107,
+        113,
+        149,
+        191
+      ],
+      "roster_id": "scale-0177036",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-5feceb66ffc8",
+      "obstruction_primes": [
+        17,
+        47,
+        67,
+        83,
+        89,
+        107,
+        113,
+        179,
+        191,
+        197
+      ],
+      "roster_id": "calibration302",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-688966a64244",
+      "obstruction_primes": [
+        17,
+        67,
+        83,
+        137,
+        149,
+        197
+      ],
+      "roster_id": "scale-0043332",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-9ce5e951d509",
+      "obstruction_primes": [
+        47,
+        61,
+        89
+      ],
+      "roster_id": "scale-0217956",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    },
+    {
+      "case": "case-dee7f796fd7c",
+      "obstruction_primes": [
+        17,
+        53,
+        71,
+        149,
+        179,
+        197
+      ],
+      "roster_id": "scale-0131232",
+      "status": "Q_BRANCH_COVER_OBSTRUCTED"
+    }
+  ],
+  "verified_identities": [
+    "parent centre",
+    "roster parameter transports and fibre j",
+    "all modular root counts via Frobenius gcd",
+    "quartic irreducibility mod17",
+    "doubling modulo H",
+    "branch-value identity modulo H",
+    "sextic discriminant",
+    "two elliptic quotient maps",
+    "translated chord map"
+  ],
+  "zero_minimum_half_field_degree": 4
+}

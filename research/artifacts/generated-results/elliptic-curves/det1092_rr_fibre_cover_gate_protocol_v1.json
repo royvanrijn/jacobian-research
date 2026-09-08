@@ -1,0 +1,85 @@
+{
+  "boundary": "Not a genus2 Selmer panel. The branch-divisor construction must exist over Q before such descent is meaningful. No control rank or point-search result is an execution input.",
+  "cases": [
+    {
+      "case": "case-18d6ed597aa5",
+      "parameter": "16587514427039664458195624610500/487077305613285344658095392223499"
+    },
+    {
+      "case": "case-2e78e5b23a84",
+      "parameter": "-7466136169750168752242194117000/1874743728660426533287524652470601"
+    },
+    {
+      "case": "case-357fe31220d3",
+      "parameter": "51274060571393835017619369508000/183325194217200054637351857105731"
+    },
+    {
+      "case": "case-3f77f1533f78",
+      "parameter": "1680728530903332848662514919000/197117405655525935514911656504741"
+    },
+    {
+      "case": "case-42c25669212b",
+      "parameter": "-13155327008780400260152301337500/220590129675075985578539552951961"
+    },
+    {
+      "case": "case-4fe75e558858",
+      "parameter": "-5345871554726254489288802578000/2382039020551810690296710931023619"
+    },
+    {
+      "case": "case-565a699588cf",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "case": "case-5feceb66ffc8",
+      "parameter": "0"
+    },
+    {
+      "case": "case-688966a64244",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "case": "case-9ce5e951d509",
+      "parameter": "10840400182182082152140661113500/160781392697265196771183798936547"
+    },
+    {
+      "case": "case-dee7f796fd7c",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    }
+  ],
+  "classification": "calibration-informed design; outcome-blind arithmetic execution",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_v1.json": "750745e5c5fbea22a525fa3d5e50a10751aa6d5064988bbd458f5cd73d35abc4",
+    "artifacts/local/elliptic-curves/adaptive-visibility-cascade-v1/roster.json": "53717644925594431a4f6eb3547f4d6031f07cb9291416edc87806f1ced5d718",
+    "elliptic-curves/cas/construct_det1092_rr_fibre_cover_gate.sage": "f45947882a24e130fcd52cf744a90e5e8a305c0274acd2186c84dfebf5fc1caf"
+  },
+  "limits": {
+    "Selmer_runs": 0,
+    "cases": 11,
+    "class_group_runs": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "primes_per_case": 18
+  },
+  "primes": [
+    17,
+    47,
+    53,
+    61,
+    67,
+    71,
+    79,
+    83,
+    89,
+    101,
+    107,
+    113,
+    127,
+    137,
+    149,
+    179,
+    191,
+    197
+  ],
+  "rule": "One fixed historical generic RR centre. For each of the unchanged V1 roster fibres, test the monic half quartic at every frozen prime. Record denominator exclusions and all root counts. Any integral no-root reduction certifies no local half and hence no genus2 double cover branched on one RR pair over Q. Never replace a case or extend the prime list."
+}

@@ -1,0 +1,110 @@
+{
+  "maximum_depth": 4,
+  "node_count": 6,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "6f493ccc629f3fb472ff066cc27b3b3a30847046d086c9924f4a1a2bf0a60d24"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 4,
+      "depth": 1,
+      "normalized_polynomial_sha256": "f3f098f3e6ec95698609e5629a0acacaf46b7596ba39e377d4671785e028a27a"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 2,
+      "normalized_polynomial_sha256": "0a407822203f8054abd33f0aac314463ce33ad5c9979c464c62f8b44cc72779f"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 3,
+      "normalized_polynomial_sha256": "33a44d3f8f0054b439b71f96ba3b5753ea451deeada6f917b6341f84b5d7c09e"
+    },
+    {
+      "a": "5",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 4,
+      "normalized_polynomial_sha256": "ec77e97a1063f8a7997f914ba6310ce9a928cb639cd0e9437e514418d59d8573"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 3,
+      "depth": 1,
+      "normalized_polynomial_sha256": "18f8ffa5c042ac701393cd2de7205e1365c256edfe99a07def24467562d66308"
+    }
+  ],
+  "root_balls": [
+    {
+      "a": "2",
+      "depth": 2
+    }
+  ],
+  "root_count": 1,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

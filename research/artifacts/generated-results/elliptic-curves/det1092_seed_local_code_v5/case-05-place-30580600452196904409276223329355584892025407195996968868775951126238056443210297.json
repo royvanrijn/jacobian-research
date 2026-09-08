@@ -1,0 +1,207 @@
+{
+  "basis_indices": [
+    1,
+    3
+  ],
+  "basis_nonsquare_tests": [
+    {
+      "expected_square": false,
+      "mask": 1,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": false,
+      "mask": 2,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": false,
+      "mask": 3,
+      "scale": [
+        "1"
+      ]
+    }
+  ],
+  "full_local_point_dimension": 2,
+  "generic_coordinates": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "generic_rank": 2,
+  "place": 30580600452196904409276223329355584892025407195996968868775951126238056443210297,
+  "prime_count": 3,
+  "relation_square_tests": [
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    },
+    {
+      "expected_square": true,
+      "scale": [
+        "1"
+      ]
+    }
+  ]
+}

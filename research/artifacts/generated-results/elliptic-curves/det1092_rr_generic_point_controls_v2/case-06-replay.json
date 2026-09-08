@@ -1,0 +1,34 @@
+{
+  "Jacobian_class_is_rational": true,
+  "Jacobian_class_outside_generic_NS_rational_span": true,
+  "checker_sha256": "34096bda1f37c1dbab0af4aa641c6b72775e31c7ae7d4b3268683859e8b60ff4",
+  "classification": "verified application and new deduction; generic-input specificity control",
+  "elliptic_class_mod_MW17": "ZERO",
+  "elliptic_point_is_exactly_generic_basis_0": true,
+  "full_Selmer_group": "NOT_COMPUTED",
+  "generic_selector_degree": 7,
+  "global_family_corollary": "A passing specialization certifies rank at least18 over Q(t) for Jac(s^2=c*q(T;r0(t),0)); the original elliptic family has exact generic rank17.",
+  "image_in_Sha_2": "ZERO",
+  "inherited_NS_image_rank": 17,
+  "inherited_character_rank": 16,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-06.json": "83920ea6101858163f9d9934695400532cd1b3458d554b1e6b457d818471b383",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3"
+  },
+  "interpretation": "If separated, non-generic Jacobian class is insufficient to imply an extra elliptic direction: this exact marked point is generic.",
+  "label": "scale-0290097",
+  "other_Sha_classes": "NOT_COMPUTED",
+  "passing_prime_blocks": 41,
+  "status": "PASS_GENERIC_ELLIPTIC_POINT_GIVES_NON_GENERIC_RATIONAL_JACOBIAN_CLASS",
+  "strict_relative_elliptic_class": "ZERO modulo MW17; not a new strict exceptional direction",
+  "subgroup_with_marked_Jacobian_class_rank": 18,
+  "tau": "-34225538950593317139889263227000/158982883803730567934503511138631",
+  "theta_primes": {
+    "one_plus_five": 107,
+    "six_cycle": 17
+  },
+  "true_Kummer_class_in_Selmer": true,
+  "with_marked_character_rank": 17
+}

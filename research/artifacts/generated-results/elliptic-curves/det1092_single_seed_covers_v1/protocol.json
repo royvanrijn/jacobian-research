@@ -1,0 +1,113 @@
+{
+  "boundary": "The execution payloads contain equations and generic sections, not exceptional points or chart hits. Cover01 still encodes historical calibration; replay on302 is not a held-out discovery. Controls are not used to choose either cover.",
+  "cases": [
+    {
+      "index": 0,
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "reduced_parameter": "-341739/441188"
+    },
+    {
+      "index": 1,
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "reduced_parameter": "469338/225187"
+    },
+    {
+      "index": 2,
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "reduced_parameter": "-204213/34628"
+    },
+    {
+      "index": 3,
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "reduced_parameter": "-72838/45725"
+    },
+    {
+      "index": 4,
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "reduced_parameter": "-65032/152533"
+    },
+    {
+      "index": 5,
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "reduced_parameter": "850424/281241"
+    },
+    {
+      "index": 6,
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "reduced_parameter": "430237/450288"
+    },
+    {
+      "index": 7,
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "reduced_parameter": "-338656/970593"
+    },
+    {
+      "index": 8,
+      "label": "302-generic-section-control",
+      "parameter": "0",
+      "reduced_parameter": null
+    }
+  ],
+  "classification": "verified application / frozen calibrated replay protocol",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_first_witness_pencil_genus_gate_v1.json": "cf0ac84570749405993c983d100c34f7c9a024d3b444b4538790bb61fb6fded3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/prepare_det1092_single_seed_covers.sage": "07fd8b2eae88f1defc2cce37bf367370bd2eeb5c54d635f59113168f3b7f57c9"
+  },
+  "limits": {
+    "Selmer_runs": 0,
+    "V3_artifacts_read": 0,
+    "class_groups": 0,
+    "existing_members": 2,
+    "existing_parameters": 9,
+    "modular_obstruction_primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47
+    ],
+    "new_parameters": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds_per_command": 25
+  },
+  "members": [
+    {
+      "index": 0,
+      "selection": "existing generic-input member B",
+      "u": "0",
+      "v": "0"
+    },
+    {
+      "index": 1,
+      "selection": "existing historical first-unlock member; retrospectively calibrated",
+      "u": "-24866539961702974106913661426507481835384195926726682303377531616158216282536772141507729874986070411728576375513733832475829768144420211347951753983533120422763938994630741972201949175154930592306424929883241467002148851014200/139537",
+      "v": "0"
+    }
+  ],
+  "payload_sha256": {
+    "cover-00-input.json": "18cac35b923b06958531cee0a60814ec866c4394f8e11a65c65be0b6b0d505c8",
+    "cover-01-input.json": "fdb665712f82bacfd973124818515331fefb210e8fad7a9770685d40403bba8e"
+  },
+  "software": "SageMath version 10.9, Release Date: 2026-05-04"
+}

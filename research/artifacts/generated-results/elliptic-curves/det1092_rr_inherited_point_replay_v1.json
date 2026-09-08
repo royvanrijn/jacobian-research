@@ -1,0 +1,30 @@
+{
+  "Jacobian_2_Selmer_and_Cassels_Tate": "NOT_COMPUTED",
+  "checker_sha256": "9dc2300416322c67aaa4e00c7b75d092850455bb9ac4424772abaa2475abb3c0",
+  "classification": "verified application and new deduction",
+  "curve_fake_2_Selmer_set_nonempty": "PROVED by the inherited rational point, not a Selmer computation",
+  "distinctness_boundary": "44 distinct points generically; special intersections can coincide.",
+  "fixed_0_0_rational_point_verified": true,
+  "generic_sections_with_degree_one_intersection": 44,
+  "generic_source_sextic_identity": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_inherited_point_v1.json": "fa5321b1cc3b359ec4914437dbcb73bfddefe2ad5901e221e5a797f72a99fd83",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_reducible_locus_v2.json": "73e47336933dd57ed0d2884bf28cd7f67170f333be989a11f84e285f45276390",
+    "artifacts/generated-results/elliptic-curves/det1092_universal_rr_descent_preflight_v1.json": "4ce64c224017baa54a208f43e501df0c0c717e6cb0e64252fb007050bc0a7975"
+  },
+  "limits": {
+    "Selmer_runs": 0,
+    "class_group_runs": 0,
+    "control_sweeps": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds": 25
+  },
+  "new_MW_direction": "NOT_CLAIMED",
+  "rational_and_everywhere_local_solubility": "PROVED on every smooth integral rational RR member",
+  "status": "PASS_INDEPENDENT_UNIFORM_INHERITED_RR_POINT",
+  "uniform_homogeneous_point_identity": true,
+  "unique_formula_basepoint_is_old_reducible_member": true
+}

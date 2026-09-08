@@ -1,0 +1,277 @@
+{
+  "block_system_test": [
+    {
+      "block_size": 2,
+      "fixed_by_five_cycle": 0,
+      "systems_checked": 15
+    },
+    {
+      "block_size": 3,
+      "fixed_by_five_cycle": 0,
+      "systems_checked": 10
+    }
+  ],
+  "cases": [
+    {
+      "cubic_prime": 31,
+      "cubic_trials": 5,
+      "elliptic_relative_class": "NONZERO",
+      "label": "302-first-unlock",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 83
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 179
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 23,
+      "cubic_trials": 3,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0131232",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 17
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 109
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 23,
+      "cubic_trials": 3,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0257585",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 53
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 43
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 23,
+      "cubic_trials": 3,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0487239",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 71
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 23
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 23,
+      "cubic_trials": 3,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0177036",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 17
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 131
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 29,
+      "cubic_trials": 4,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0043332",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 17
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 53
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 17,
+      "cubic_trials": 1,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0590501",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 23
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 113
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 29,
+      "cubic_trials": 4,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0290097",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 17
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 107
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 67,
+      "cubic_trials": 13,
+      "elliptic_relative_class": "ZERO",
+      "label": "scale-0748009",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 67
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 23
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    },
+    {
+      "cubic_prime": 31,
+      "cubic_trials": 5,
+      "elliptic_relative_class": "ZERO",
+      "label": "302-generic-section-control",
+      "sextic_patterns": [
+        {
+          "factor_degrees": [
+            6
+          ],
+          "p": 79
+        },
+        {
+          "factor_degrees": [
+            1,
+            5
+          ],
+          "p": 109
+        }
+      ],
+      "symmetric_relative_class": "ZERO"
+    }
+  ],
+  "checker_sha256": "76dc5d8664ed645fa183718b2d76dc7f85c71ce0b6ac22353335bc1e22441ddd",
+  "classification": "verified application and new deduction",
+  "direct_norm_obstruction": "Every sextic field is primitive and every elliptic cubic is a field; no cubic subfield, hence no direct relative field norm.",
+  "first_relative_elliptic_class": "NONZERO; finite character separates it from MW17",
+  "first_strict_mod_generic": false,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_quotient_local_filtration_v1.json": "001e12e65bd41bd8ecbfddce42953b41c7365060e6678ac0978a227bb9c1b715",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_replay_v1.json": "376adbadfedeb0bc6d95363cbfdc4fa795fdfc6ed7f0ce68d91650312100cf6e",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_initial_unlock_construction_audit_v1.json": "de7c7db4515dcc24aa9fc8c430093fdc3771cf682a2c9c525ae51a80ebf0712a",
+    "artifacts/generated-results/elliptic-curves/det1092_marked_kummer_transport_v1.json": "833dc5c5e7acd65f8d85a3c5d55b8f2848f034a75f04cf000414e2d9254dfcc1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-00.json": "d5f8dc2a02dfc1456cc1f8c4036dc029177c34f17bfc04d6a9e7ce9f5f61c039",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-01.json": "e5ea080d11b46cf394a1890c60b835540ff8b724d9c2110619fb358b98a55c34",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-02.json": "9eb79d45f0c44fe507d93a01e35c1909da92f63fdcfa4d56d3670ac696a251d1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-03.json": "058e0aeaee370fc84789b659fd624182bfab1e62cf310a54efa72a820062f18f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-04.json": "fb6d5da1e317d837097b2432487df1a60f03ffc32989bd5c553de98146bda1b3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-05.json": "f5de88c0bc2ba4aa60e38f0daa8ed64d0ba5b11be529cb89861ff69f860f25a0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-06.json": "83920ea6101858163f9d9934695400532cd1b3458d554b1e6b457d818471b383",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-07.json": "dcb605aa33826ff2f05065abd76ddacb1be33daede6db08cb267b581de359c85",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-08.json": "e8ffa578da9472e3b967969f5deefe599cb5fee0170a20b92f104c08056bae0c",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_residual_jacobian_class_v1.json": "27c37a9c2c93c47878fcae064957696d6717cc7363494ed16142b1f4dcd6ef02",
+    "artifacts/generated-results/elliptic-curves/det1092_universal_rr_descent_preflight_replay_v1.json": "a52f318c3a9b04cf6bd4c5f10230d22b0153fb817540393ddba62bc98ae9cc97",
+    "artifacts/generated-results/elliptic-curves/det1092_universal_rr_descent_preflight_v1.json": "4ce64c224017baa54a208f43e501df0c0c717e6cb0e64252fb007050bc0a7975"
+  },
+  "limits": {
+    "class_group_runs": 0,
+    "cubic_prime_cap_per_case": 64,
+    "global_Selmer_runs": 0,
+    "marked_cases": 10,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "symbolic_identities": 1,
+    "wall_seconds": 25
+  },
+  "nine_control_relative_elliptic_classes": "ZERO: exactly generic section0",
+  "scope": "No Jacobian-to-fixed-elliptic-fibre homomorphism or unevaluated Selmer transport constructed. Other auxiliary algebras or correspondences are not excluded.",
+  "status": "PASS_INDEPENDENT_MARKED_KUMMER_TRANSPORT_AND_NORM_OBSTRUCTIONS",
+  "symbolic_pair_identity": true,
+  "tensor_norm_obstruction": "Base extension of the multiplication matrix leaves its rational determinant unchanged. Thus Norm_(A tensor K)/K(beta)=Norm_A/Q(beta); norm-square inputs give trivial cubic squareclasses."
+}

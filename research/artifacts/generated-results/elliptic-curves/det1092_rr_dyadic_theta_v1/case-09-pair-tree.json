@@ -1,0 +1,62 @@
+{
+  "maximum_depth": 1,
+  "node_count": 3,
+  "nodes": [
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "SUBDIVIDE"
+        },
+        {
+          "residue": 1,
+          "status": "SUBDIVIDE"
+        }
+      ],
+      "content_v2": 0,
+      "depth": 0,
+      "normalized_polynomial_sha256": "ba7c092f5db258e6649a94ff85004fd57a110931fef3c1afe79e296ad32eab3b"
+    },
+    {
+      "a": "1",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "NO_ROOT_MOD_TWO"
+        }
+      ],
+      "content_v2": 2,
+      "depth": 1,
+      "normalized_polynomial_sha256": "38fe4780b77eaf4631caffb58d2be9a4d651bdbb74da414e300a2841186f605d"
+    },
+    {
+      "a": "0",
+      "children": [
+        {
+          "residue": 0,
+          "status": "NO_ROOT_MOD_TWO"
+        },
+        {
+          "residue": 1,
+          "status": "UNIQUE_HENSEL_ROOT"
+        }
+      ],
+      "content_v2": 3,
+      "depth": 1,
+      "normalized_polynomial_sha256": "53f393e1f6277b1fed36d070d0afdf894bb9c5ee70e83d5588ed92c00cb708a2"
+    }
+  ],
+  "root_balls": [
+    {
+      "a": "2",
+      "depth": 2
+    }
+  ],
+  "root_count": 1,
+  "status": "COMPLETE_EXACT_Q2_ROOT_TREE"
+}

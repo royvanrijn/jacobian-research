@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 1,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 17,
+      "index": 0,
+      "label": "scale-0131232",
+      "local_product_dimension": 18,
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 4,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 17,
+      "index": 1,
+      "label": "scale-0257585",
+      "local_product_dimension": 21,
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 1,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 16,
+      "index": 2,
+      "label": "scale-0487239",
+      "local_product_dimension": 17,
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 1,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 16,
+      "index": 3,
+      "label": "scale-0177036",
+      "local_product_dimension": 17,
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 2,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 16,
+      "index": 4,
+      "label": "scale-0043332",
+      "local_product_dimension": 18,
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 3,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 17,
+      "index": 5,
+      "label": "scale-0590501",
+      "local_product_dimension": 20,
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 0,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 16,
+      "index": 6,
+      "label": "scale-0290097",
+      "local_product_dimension": 16,
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 6,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 17,
+      "index": 7,
+      "label": "scale-0748009",
+      "local_product_dimension": 23,
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "all_individual_local_images_filled_by_generic_sections": true,
+      "compatibility_check_dimension": 5,
+      "extra_point_existence": "NOT_TESTED_BY_THIS_GENERIC_ONLY_COMPUTATION",
+      "generic_joint_image_rank": 17,
+      "index": 8,
+      "label": "302-generic-section-control",
+      "local_product_dimension": 22,
+      "parameter": "0"
+    }
+  ],
+  "classification": "verified application and new diagnostic deduction",
+  "exact_obstructions": [
+    "Every individual local point image is already generic on all nine addresses.",
+    "Scale0290097 has zero joint compatibility quotient at the frozen places, so this footprint cannot detect any new point there.",
+    "Scale0748009 has six checks versus five on302; check counts are not a rank or rational-seed criterion.",
+    "Nonzero syndrome certifies a supplied rational point only after the generic saturation gate; it does not produce a rational point or establish a Selmer class."
+  ],
+  "failure_history": [
+    "v1 matrix coercion",
+    "v2 unavailable Sturm method",
+    "v3 seed-only matrix coercion and control denominator clearing",
+    "v4 case03 and06 time caps; v5 rational scaling-only retry"
+  ],
+  "first_seed": {
+    "generic_joint_rank": 17,
+    "local_seed_characters": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "minimum_separating_place_count_in_fixed_set": 5,
+    "separating_places": [
+      7,
+      19,
+      23,
+      29,
+      167
+    ],
+    "syndrome": [
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "with_seed_rank": 18
+  },
+  "input_boundary": "Generic equations and17 sections only for code construction. Exactly the historical first302 point enters evaluation; no later point or V3 artifact.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-00-replay.json": "9dce9c247eb0939c4ba7dec25e57e6dbfd191accf3d25bb4e94b7a457aa36fe1",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-01-replay.json": "5113525c0547821fb9fcd5c1814ff2f2ec782872f7d61e43c80242d3b1556918",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-02-replay.json": "7ec23a82b851386807de692ff643a606f51d2e353ce4aaa1434424b02b9454a8",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-03-replay.json": "c31cf1c2469acb6b09f157e289cfdd04522576b743ff14acc723b97178ac404c",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-04-replay.json": "1d97b641b6ba74bb409c96a62c8bc4c155bbef113a32e1ca843b1b07d54ea6c3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-05-replay.json": "a631173f7c1736f7f62d8cec4a1865b05497da54e7899b092009e929d4cc0b28",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-06-replay.json": "9f7d59cc5386e2dd24fe7d1c96716c2e8c3c398c3d1baf6bb568557750a94bef",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-07-replay.json": "3d7a6c96dc80e16ba0cf4ba9baa13a5237ffd901dae1d58edcc2587db605583f",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/case-08-replay.json": "b32ab622422f41aba67def4d164904aec59856e3c941f71c0bba15e0158efbc3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/first-seed-replay.json": "b7877ebfa96e1decdf8c3bbb32ede2846707de2a8389cbdfe68822f9cccdb606",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v5/protocol.json": "e94acefccffec1a9b52b6e8ed11fb2b56dd78922ca281a37af229a38d667bf00",
+    "elliptic-curves/cas/verify_det1092_seed_local_code_panel.sage": "c1bab1c8d94cb547bb794f854bbb741b5edafc9dacd490b17a5c7cbaa5eb99ae"
+  },
+  "scope_limits": {
+    "V3_inputs": 0,
+    "cases": 9,
+    "class_groups": 0,
+    "finite_places": 20,
+    "full_Selmer_runs": 0,
+    "global_unit_groups": 0,
+    "new_addresses": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds_per_case": 25
+  },
+  "status": "PASS_NINE_GENERIC_CODES_AND_HISTORICAL_FIRST_SEED"
+}

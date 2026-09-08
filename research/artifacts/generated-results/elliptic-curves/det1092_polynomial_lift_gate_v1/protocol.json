@@ -1,0 +1,31 @@
+{
+  "classification": "generic-only exact construction-family obstruction",
+  "geometry_dependency": "EC-CURVE302-PARENT-GEOMETRIC-PICARD19: displayed17 rational sections are the full torsion-free geometric MW basis. Not recomputed here.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/construct_det1092_polynomial_lift_gate.sage": "e5bf5159c3b767fa1ee5c6695d9f588257333d5c39d93a64f1d88f4a10fb3cdb"
+  },
+  "limits": {
+    "Selmer_dimension_runs": 0,
+    "V3_inputs": 0,
+    "boundary_templates": 2,
+    "class_groups": 0,
+    "exceptional_points": 0,
+    "existing_addresses": 9,
+    "new_addresses": 0,
+    "number_fields": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "polynomial_degree_bound": 24,
+    "reduction_primes": [
+      149,
+      151
+    ],
+    "sampled_coefficients": 0,
+    "sampled_parameters": 0,
+    "wall_seconds": 25
+  },
+  "rule": "For alpha=f_t(k(t))*(k(t)-theta), classify polynomial k over Q of degree<=24 with no ramification at finite good parameter fibres. Freeze only the existing primes149 and151 and the two discriminant-root remainder families."
+}

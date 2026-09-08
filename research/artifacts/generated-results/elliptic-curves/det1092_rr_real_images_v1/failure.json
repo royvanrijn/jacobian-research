@@ -1,0 +1,8 @@
+{
+  "case_index": 0,
+  "error": "AttributeError: Matrix_rational_dense has no attribute copy",
+  "mathematical_result": null,
+  "original_script_sha256": "baa3181528e6f37908ced21e02fbb581d58e2702782222936c947ba73668aeca",
+  "resolution": "Use standard-library copy(H); same equations, divisor order, limits and mathematics in v2.",
+  "status": "FAILED_BEFORE_FIRST_REAL_IMAGE_CERTIFICATE"
+}

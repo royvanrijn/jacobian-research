@@ -1,0 +1,154 @@
+{
+  "boundaries": "Fixed original parameter and cubic model; not an obstruction for arbitrary rational abscissas, higher degrees, genuinely quadratic cubic-algebra representatives, ramified class families, or nonconstant base changes. No fibre rank upper bound.",
+  "cases": [
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "theorem_applies_to_specialization": true
+    },
+    {
+      "fibre_seed_existence": "NOT_EXCLUDED",
+      "label": "302-generic-section-control",
+      "parameter": "0",
+      "theorem_applies_to_specialization": true
+    }
+  ],
+  "classification": "verified application and new deduction",
+  "discriminant_irreducible_over_Q": true,
+  "discriminant_root_remainder_degrees": [
+    23,
+    23
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_polynomial_lift_gate_v1/construction.json": "902c0b203cce7590a6927aa409e4b328db674a6eb5446ac93587d827d206b428",
+    "artifacts/generated-results/elliptic-curves/det1092_polynomial_lift_gate_v1/protocol.json": "70533cc358e5335e293b77f8d20064348d28560224d9a25a7edace4b502c0a81",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/verify_det1092_polynomial_lift_gate.sage": "ce67912b79dd4aba5321e4a1ce635d84450f2394aa84ac39029acd7b376a5aa0"
+  },
+  "limits": {
+    "Selmer_dimension_runs": 0,
+    "V3_inputs": 0,
+    "boundary_templates": 2,
+    "class_groups": 0,
+    "exceptional_points": 0,
+    "existing_addresses": 9,
+    "new_addresses": 0,
+    "number_fields": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "polynomial_degree_bound": 24,
+    "reduction_primes": [
+      149,
+      151
+    ],
+    "sampled_coefficients": 0,
+    "sampled_parameters": 0,
+    "wall_seconds": 25
+  },
+  "logical_reduction": [
+    "Good-fibre unramifiedness forces f(k)=constant*square or constant*Delta*square.",
+    "Discriminant irreducibility and the degree23 root remainders exclude the Delta case below degree23; odd degree excludes degree23.",
+    "Degree24 forces k=r+u*Delta or k=s+u*Delta with nonzero constant u. Four finite-field Bezout identities, with exact divisibility and degree preservation, exclude both templates over characteristic zero.",
+    "The remaining constant-square case defines a geometric section. All such sections are rational and in the displayed MW17, so the constant twist must be square."
+  ],
+  "polynomial_abscissa_degree_bound": 24,
+  "prime_replays": [
+    {
+      "factor_degrees": [
+        5,
+        7,
+        12
+      ],
+      "prime": 149,
+      "square_gates": [
+        {
+          "bezout_identity_verified": true,
+          "degree_preservation_bound_attained": 23,
+          "label": "double",
+          "nonzero_characteristic_zero_square_parameters": "NONE",
+          "residual_divisibility_order": 2
+        },
+        {
+          "bezout_identity_verified": true,
+          "degree_preservation_bound_attained": 22,
+          "label": "simple",
+          "nonzero_characteristic_zero_square_parameters": "NONE",
+          "residual_divisibility_order": 3
+        }
+      ]
+    },
+    {
+      "factor_degrees": [
+        2,
+        2,
+        6,
+        14
+      ],
+      "prime": 151,
+      "square_gates": [
+        {
+          "bezout_identity_verified": true,
+          "degree_preservation_bound_attained": 23,
+          "label": "double",
+          "nonzero_characteristic_zero_square_parameters": "NONE",
+          "residual_divisibility_order": 2
+        },
+        {
+          "bezout_identity_verified": true,
+          "degree_preservation_bound_attained": 22,
+          "label": "simple",
+          "nonzero_characteristic_zero_square_parameters": "NONE",
+          "residual_divisibility_order": 3
+        }
+      ]
+    }
+  ],
+  "proof_dependency": "The already proved full torsion-free geometric MW17 basis is rational; its proof is hash-pinned, not recomputed by this replay.",
+  "status": "PASS_INDEPENDENT_POLYNOMIAL_LIFT_OBSTRUCTION",
+  "theorem": "A polynomial k in Q[t] of degree<=24 with alpha=f(k)*(k-theta) unramified at every finite good parameter fibre has f(k) a square in Q[t] and alpha inherited from the full generic MW17 subgroup."
+}

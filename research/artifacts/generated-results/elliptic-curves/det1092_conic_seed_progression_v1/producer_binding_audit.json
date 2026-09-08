@@ -1,0 +1,7 @@
+{
+  "classification": "implementation provenance strengthening, not a changed mathematical result",
+  "initial_producer": "elliptic-curves/cas/det1092_conic_seed.sage",
+  "canonical_producer": "elliptic-curves/cas/det1092_conic_seed_v2.sage",
+  "change": "Explicitly check the frozen protocol input hashes, binding the current generic parent and conic maps transitively to the independently verified progression proof.",
+  "preservation": "The initial source and its correct n=0 and302 noncoverage outputs remain untouched. Version2 uses the same formulas, progression, proof and output claims, with the stronger input-binding check."
+}

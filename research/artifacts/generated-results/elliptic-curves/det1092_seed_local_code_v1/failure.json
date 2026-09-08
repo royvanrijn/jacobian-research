@@ -1,0 +1,7 @@
+{
+  "status": "REJECTED_IMPLEMENTATION_BEFORE_FIRST_PLACE_CHECKPOINT",
+  "classification": "implementation failure; no mathematical outcome",
+  "case_index": 8,
+  "error": "Matrix slice M[:,j] was passed to solve_right where a vector was required; int coercion failed.",
+  "preservation": "The v1 source, protocol and generic-only input are retained without alteration. The v2 constructor uses M.column(j) and a fresh output directory."
+}

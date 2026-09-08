@@ -1,0 +1,9 @@
+{
+  "classification": "retained implementation failure; no mathematical result",
+  "case_index": 0,
+  "status": "FAILED_BEFORE_LOCAL_ORDER_CHECK",
+  "checker_sha256_before_correction": "fe0d67c012210a7a5e8ac4be5550a58c1d01fe89c54a47fca2abbe06b06c389f",
+  "error": "TypeError: Polynomial_rational_flint has no len()",
+  "old_line": "    def coordinates(p):return list(p)+[QQ(0)]*(6-len(p))",
+  "correction": "Use len(p.list()) instead of len(p). No equation, bound or selection change."
+}

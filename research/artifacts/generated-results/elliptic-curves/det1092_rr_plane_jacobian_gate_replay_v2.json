@@ -1,0 +1,80 @@
+{
+  "Selmer_runs": 0,
+  "boundary": "No morphism to an elliptic curve from the fixed B member or geometric generic RR member, of any degree. Special RR subfamilies can still have split Jacobians and have not been classified. No genus2 Selmer panel is claimed.",
+  "checker_sha256": "039ae3016937a9bf807c86b6f9485c5b3a794788845048123a87fefcb2e42c20",
+  "class_group_runs": 0,
+  "classification": "verified application and new deduction",
+  "counts_F17_F289": [
+    30,
+    280
+  ],
+  "curve_mod17": [
+    6,
+    0,
+    6,
+    7,
+    1,
+    7,
+    3
+  ],
+  "extension_polynomials": [
+    {
+      "coefficients": [
+        "83521",
+        "-2890",
+        "171",
+        "-10",
+        "1"
+      ],
+      "extension_degree": 2
+    },
+    {
+      "coefficients": [
+        "24137569",
+        "-353736",
+        "322",
+        "-72",
+        "1"
+      ],
+      "extension_degree": 3
+    },
+    {
+      "coefficients": [
+        "6975757441",
+        "20212082",
+        "138483",
+        "242",
+        "1"
+      ],
+      "extension_degree": 4
+    },
+    {
+      "coefficients": [
+        "582622237229761",
+        "-109584563260",
+        "-2559162",
+        "-4540",
+        "1"
+      ],
+      "extension_degree": 6
+    }
+  ],
+  "fixed_Jacobian_absolutely_simple": true,
+  "frobenius_polynomial": "t^4 + 12*t^3 + 67*t^2 + 204*t + 289",
+  "geometric_generic_RR_Jacobian_absolutely_simple": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_historical_unlock_obstruction_v1.json": "32f531d12158e4d7c5833394790f21fda8a48d8483fe0d43571236ac9f5de86e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_v1.json": "750745e5c5fbea22a525fa3d5e50a10751aa6d5064988bbd458f5cd73d35abc4",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_plane_jacobian_gate_v2.json": "b8004927962a5fc2e432a48423406f9be5728eab7ed640809faa94b389b34ad6",
+    "artifacts/generated-results/elliptic-curves/det1092_universal_rr_descent_preflight_v1.json": "4ce64c224017baa54a208f43e501df0c0c717e6cb0e64252fb007050bc0a7975"
+  },
+  "minimal_bisection_tangent_square_ratio": "1",
+  "only_geometric_singularity": "one ordinary node [0:1:0]",
+  "ordinary": true,
+  "plane_degree": 6,
+  "plane_terms": 25,
+  "point_searches": 0,
+  "status": "PASS_INDEPENDENT_RR_PLANE_AND_ABSOLUTE_JACOBIAN_SIMPLICITY"
+}

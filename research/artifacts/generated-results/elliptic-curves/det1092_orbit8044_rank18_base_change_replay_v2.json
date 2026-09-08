@@ -1,0 +1,19 @@
+{
+  "Q_dot_O": 0,
+  "RR_elimination_and_trace_identity": true,
+  "all_17_inherited_section_identities": true,
+  "anti_invariant_height": 12,
+  "checker_sha256": "2f4b457510ae99fb058cfc672b33e49900e56606feb17bdef9ccb1bc10ec6204",
+  "classification": "verified application",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08"
+  },
+  "literature_dependency": "Shioda intersection height formula and degree scaling; parent rank17 certificate remains a dependency.",
+  "new_section_identity": true,
+  "point_searches_run": 0,
+  "positive_definite_gram_determinant": "429391872",
+  "rank_lower_bound_over_Q_u": 18,
+  "rational_parametrization_identity": true,
+  "semistable_fibres": 48,
+  "status": "PASS_INDEPENDENT_COEFFICIENT_AND_INTERSECTION_HEIGHT_REPLAY"
+}

@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "D0_in_2JQ2": true,
+      "Q2_fake_Kummer_dimension": 3,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 0,
+      "complete_real_Kummer_dimension": 1,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": false,
+      "Q2_fake_Kummer_dimension": 2,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 1,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": true,
+      "Q2_fake_Kummer_dimension": 3,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 2,
+      "complete_real_Kummer_dimension": 1,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": false,
+      "Q2_fake_Kummer_dimension": 3,
+      "Q2_true_Kummer_dimension": 4,
+      "case_index": 3,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": false,
+      "Q2_fake_Kummer_dimension": 2,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 4,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": false,
+      "Q2_fake_Kummer_dimension": 2,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 5,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": true,
+      "Q2_fake_Kummer_dimension": 3,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 6,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": false,
+      "Q2_fake_Kummer_dimension": 2,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 7,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": true,
+      "Q2_fake_Kummer_dimension": 5,
+      "Q2_true_Kummer_dimension": 5,
+      "case_index": 8,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    },
+    {
+      "D0_in_2JQ2": true,
+      "Q2_fake_Kummer_dimension": 3,
+      "Q2_true_Kummer_dimension": 3,
+      "case_index": 9,
+      "complete_real_Kummer_dimension": 0,
+      "real_image_spanned_by_generic_divisors": true
+    }
+  ],
+  "checker_sha256": "03d9d166af99e5a50d31821fe2b67be06fa2e088c68623f45ed11eaf7e00562e",
+  "classification": "verified application and new deduction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_dyadic_theta_v1/replay.json": "1f290f5854173cd42749e5ad2617b42f6b74984b0788f3b0e3cfd337a96b970b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_real_images_v2/replay.json": "29e4b110187e42e411872c76b4ac7160ae976b94c81f9a0bccd7a19b227b7ba9",
+    "elliptic-curves/cas/verify_det1092_rr_dyadic_theta.sage": "68011746f659f9c4f9c552503c6a73739fe84690749cc084be57ec5500616436",
+    "elliptic-curves/cas/verify_det1092_rr_real_images.sage": "b34a5827735c4d824b5199da327ab16ccbf4f20c063f1f41266de5c8ae5720bd"
+  },
+  "scope": "All real images complete. At2, exact dimensions and inherited D0 localization only, not full image generators. Full Selmer and other Sha classes remain uncomputed.",
+  "status": "PASS_INDEPENDENT_REAL_DYADIC_PANEL",
+  "wall_cap_seconds": 25
+}

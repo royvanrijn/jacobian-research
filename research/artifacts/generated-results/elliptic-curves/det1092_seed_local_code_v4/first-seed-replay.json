@@ -1,0 +1,56 @@
+{
+  "classification": "verified application and new diagnostic deduction",
+  "generic_joint_rank": 17,
+  "input_boundary": "All generic code inputs are equations and17 generic sections only. The historical first point is evaluation only; no later points or V3 inputs.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v3/first-seed-evaluation.json": "e003b7500f265cbc2011f8b3b0f76bffb4068db4425f2d59b94586f737872cd7",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_local_code_v4/case-08-replay.json": "2815e2e73accc3d1d3ccc014ac4ee677e1626f3c32e3e738cbd0a14fcb39c877",
+    "elliptic-curves/cas/verify_det1092_seed_local_code.sage": "7ece385200182c2628494113a9103f3b11b2dca97529d8c3200916c9289a0e26"
+  },
+  "nonzero_checks_tested": 31,
+  "smallest_separating_place_count_in_fixed_set": 5,
+  "smallest_separator": {
+    "mask": 8,
+    "place_count": 5,
+    "places": [
+      7,
+      19,
+      23,
+      29,
+      167
+    ],
+    "word": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "status": "PASS_INDEPENDENT_FIRST_SEED_LOCAL_COMPATIBILITY_DEFECT",
+  "syndrome": [
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "with_first_seed_rank": 18
+}

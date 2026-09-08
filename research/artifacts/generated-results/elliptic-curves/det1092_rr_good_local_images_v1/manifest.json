@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "case_index": 0,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 53,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 11
+      }
+    },
+    {
+      "case_index": 1,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 54,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 10
+      }
+    },
+    {
+      "case_index": 2,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 57,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      }
+    },
+    {
+      "case_index": 3,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 55,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      }
+    },
+    {
+      "case_index": 4,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 58,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      }
+    },
+    {
+      "case_index": 5,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 56,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      }
+    },
+    {
+      "case_index": 6,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 53,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 11
+      }
+    },
+    {
+      "case_index": 7,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 55,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      }
+    },
+    {
+      "case_index": 8,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 54,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 9
+      }
+    },
+    {
+      "case_index": 9,
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 58,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      }
+    }
+  ],
+  "classification": "verified application and new deduction; local conditions only",
+  "dimension_formula": "For k irreducible factors, dim J(Qp)/2J(Qp)=k-1 if all degrees are even, otherwise k-2, at the verified good odd primes.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/protocol.json": "97238fd374aebb836ada4c8996c873417871aab2fe907642588e9ad4046e87db",
+    "elliptic-curves/cas/construct_det1092_rr_good_local_images.sage": "bcdeae60da9653f244908f5d51890fef43461d2d9a0d6e7a0e4c002ac7030470"
+  },
+  "limits": {
+    "class_group_runs": 0,
+    "external_computations": 0,
+    "generic_divisors_per_case": 17,
+    "global_Selmer_runs": 0,
+    "new_prime_searches": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "prime_case_pairs": 640,
+    "wall_seconds": 25
+  },
+  "proof": "Good odd reduction identifies the local Kummer image with the unramified finite-field image. Its dimension is the Frobenius-fixed dimension of even branch subsets modulo complement. Unit squareclasses have even norm-character sum and are quotiented by scalar degree parity. The recorded generic classes attain that dimension in every row marked complete.",
+  "sage_version": "10.9",
+  "scope": "Only the declared64 odd primes. Dyadic, real, bad-place and untested-prime conditions, and the global unramified class group, are not computed. A complete local image is not a full global Selmer group.",
+  "status": "PASS_FROZEN_GOOD_PRIME_LOCAL_IMAGE_CONSTRUCTION",
+  "totals": {
+    "COMPLETE_LOCAL_KUMMER_IMAGE": 553,
+    "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 4,
+    "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 83
+  }
+}

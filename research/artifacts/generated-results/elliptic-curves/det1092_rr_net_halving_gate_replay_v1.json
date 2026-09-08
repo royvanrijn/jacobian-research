@@ -1,0 +1,22 @@
+{
+  "boundary": "Dense-open singular incidence. No classification of exceptional members, no rational points on the genus9 curve constructed, and no arithmetic explanation of the first independent302 point.",
+  "checker_sha256": "268889292c0520da7e1d07e2afbd1f3387594f099588406c69dbccea1cd86a8e",
+  "classification": "verified application and new deduction",
+  "connectedness_proof": "No degree1 component by height10/4<4; no degree2 component by absence of geometric rational2torsion.",
+  "degree": 4,
+  "exact_doubling_identity": true,
+  "genus": 9,
+  "geometrically_connected": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_first_centre_rr_net_v1.json": "6a6c214543670cb51bc13797ba73cb6eeb51461d1bf2e8d044166398d369cf2d",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_v1.json": "750745e5c5fbea22a525fa3d5e50a10751aa6d5064988bbd458f5cd73d35abc4"
+  },
+  "local_prime": 17,
+  "point_searches": 0,
+  "quartic_discriminant_identity": true,
+  "simple_ramification_contribution": 24,
+  "singular_incidence_map_verified": true,
+  "status": "PASS_INDEPENDENT_HALVING_GENUS9_AND_SINGULAR_INCIDENCE",
+  "zero_has_no_rational_half": true
+}

@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "index": 0,
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "index": 1,
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "index": 2,
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "index": 3,
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "index": 4,
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "index": 5,
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "index": 6,
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "index": 7,
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "index": 8,
+      "parameter": "0"
+    }
+  ],
+  "classification": "generic-only fixed-place compatibility diagnostic",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_inputs_v1.json": "c3b4125f6f14a944f97d405b3a2445ad61feca31b72c37bf9c0e04fd9093b607",
+    "elliptic-curves/cas/construct_det1092_seed_local_code.sage": "37d12adc34d0567a814cb65949423815a9c9a77d7004c8e697cc7038773f9d01",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e"
+  },
+  "limits": {
+    "V3_inputs": 0,
+    "cases": 9,
+    "class_groups": 0,
+    "finite_places": 20,
+    "full_Selmer_runs": 0,
+    "global_unit_groups": 0,
+    "new_addresses": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "wall_seconds_per_case": 25
+  },
+  "places": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    19,
+    23,
+    29,
+    37,
+    41,
+    73,
+    131,
+    167,
+    7547,
+    632881,
+    966509,
+    18145679437533309132469,
+    767028866604834801397681553,
+    30580600452196904409276223329355584892025407195996968868775951126238056443210297,
+    "infinity"
+  ],
+  "rule": "Compute each generic local image and its fixed character coordinates. Freeze the complete linear relation space on their direct product before reading the historical seed."
+}

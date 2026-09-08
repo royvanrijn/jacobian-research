@@ -1,0 +1,30 @@
+{
+  "classification": "frozen input preparation, not a completed Selmer experiment",
+  "cohort": "Nine source-only r0(t) family members; the historical first-unlock RR member is a separate retrospective calibration arm.",
+  "comparison_boundary": "Masking computation inputs does not make the historically chosen first-unlock RR member selection-blind.",
+  "execution_gate": "Do not run full descent until a suitable backend and explicit class-group/resource cap are available.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-00.json": "d5f8dc2a02dfc1456cc1f8c4036dc029177c34f17bfc04d6a9e7ce9f5f61c039",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-01.json": "e5ea080d11b46cf394a1890c60b835540ff8b724d9c2110619fb358b98a55c34",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-02.json": "9eb79d45f0c44fe507d93a01e35c1909da92f63fdcfa4d56d3670ac696a251d1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-03.json": "058e0aeaee370fc84789b659fd624182bfab1e62cf310a54efa72a820062f18f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-04.json": "fb6d5da1e317d837097b2432487df1a60f03ffc32989bd5c553de98146bda1b3",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-05.json": "f5de88c0bc2ba4aa60e38f0daa8ed64d0ba5b11be529cb89861ff69f860f25a0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-06.json": "83920ea6101858163f9d9934695400532cd1b3458d554b1e6b457d818471b383",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-07.json": "dcb605aa33826ff2f05065abd76ddacb1be33daede6db08cb267b581de359c85",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-08.json": "e8ffa578da9472e3b967969f5deefe599cb5fee0170a20b92f104c08056bae0c",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_residual_jacobian_class_v1.json": "27c37a9c2c93c47878fcae064957696d6717cc7363494ed16142b1f4dcd6ef02"
+  },
+  "limits": {
+    "Selmer_runs": 0,
+    "cases": 10,
+    "class_group_runs": 0,
+    "full_integer_factorizations": 0,
+    "model_reductions_per_case": 1,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "trial_primes_through": 97,
+    "wall_seconds_per_case": 25
+  },
+  "script_sha256": "967ceb1edc91a0b419d00001c9ffb43eeca2f2ea065b342fb2744ae2140df160"
+}

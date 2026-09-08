@@ -1,0 +1,13 @@
+{
+  "classification": "exact noncoverage of this construction; not a seed-nonexistence claim",
+  "condition": "Some rational root u of num(t(u))-t*den(t(u)) must have u/B an integer.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json": "9870e567914a041f466f833a1a66489225d0808ffd59458690ddf093b0a0cd64",
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "elliptic-curves/cas/det1092_conic_seed.sage": "c36d4a3f8a2fb3596b409834077f9c3a688a9453ac2297b017d0ea94d2504334"
+  },
+  "parameter": "0",
+  "rational_preimages": [],
+  "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+}

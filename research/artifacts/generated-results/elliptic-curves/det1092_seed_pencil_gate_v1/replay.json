@@ -1,0 +1,90 @@
+{
+  "Jacobian_short_coordinate_scale": "6*kappa*t",
+  "boundary": "Nonsplitting of the fixed v0 member cannot be upgraded to nonexistence of rational points on the whole pencil. The eight constructed witnesses are deliberately generic, not new seeds. The single-seed construction remains calibrated and its useful parameter selector/global arithmetic class remains unknown.",
+  "cases": [
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 0,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 1,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 2,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 3,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 4,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 5,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 6,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "Jacobian_Q_isomorphic_to_marked_E": true,
+      "elliptic_relative_class": "ZERO",
+      "index": 7,
+      "smooth_quartic_genus": 1,
+      "status": "PASS_GENERIC_RATIONAL_POINT_ON_WHOLE_PENCIL"
+    },
+    {
+      "index": 8,
+      "status": "PASS_CALIBRATION_CHART_COLLAPSE_NOT_BAD_ELLIPTIC_FIBRE"
+    }
+  ],
+  "checker_sha256": "dc9c590a5c692506600060bea0332cad9ba74733a2e14e83ffb077569c067e6c",
+  "classification": "verified application and new deduction",
+  "discriminant_formula": "disc_v(F)=256*kappa^12*t^12*Delta(E)",
+  "general_anchor_deduction": "For B+(u0+v*(t-tau0))*A the same determinant equals kappa*(t-tau0)*h^3; the factor(t-tau0)^12 is a pencil-chart effect, not an elliptic rank or Selmer discriminator.",
+  "generic_control_witness_degree": 7,
+  "generic_rule_simple_pole_at302": true,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_pencil_gate_v1/construction.json": "e8888c831cd12591dcbbd0547fe3cd5ba68770e65d52475a1d4b0574c9797cd3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_pencil_gate_v1/protocol.json": "ef657e0f7cf1ae3d371295935f1bbe4d224eaf798a47ff198300eaf1af0e19ab"
+  },
+  "limits": {
+    "Selmer_runs": 0,
+    "V3_inputs": 0,
+    "class_group_runs": 0,
+    "existing_addresses": 9,
+    "new_addresses": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "symbolic_pencils": 1,
+    "wall_seconds": 25
+  },
+  "literal_residual_elimination": true,
+  "status": "PASS_INDEPENDENT_SEED_PENCIL_CALIBRATION_GATE",
+  "universal_invariant_covariance": true
+}

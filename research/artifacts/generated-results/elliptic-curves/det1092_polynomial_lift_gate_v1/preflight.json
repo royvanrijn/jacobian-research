@@ -1,0 +1,24 @@
+{
+  "classification": "exploratory generic-equation-only preflight; retained before the frozen proof recipe",
+  "point_oracles": 0,
+  "first_prime_list": [31,37,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127],
+  "first_prime_list_outcome": "No reduction passed the preserved-leading-degree and squarefree tests in this raw model.",
+  "second_prime_factor_patterns": {
+    "149": [[5,1],[7,1],[12,1]],
+    "151": [[2,1],[2,1],[6,1],[14,1]],
+    "157": [[1,2],[1,2],[1,2],[18,1]],
+    "163": [[1,1],[1,1],[1,1],[21,1]],
+    "167": [[1,2],[1,2],[1,2],[1,2],[2,1],[14,1]],
+    "173": [[1,1],[2,1],[2,1],[3,1],[7,1],[9,1]],
+    "179": [[1,2],[1,2],[20,1]],
+    "181": [[2,1],[2,1],[20,1]],
+    "191": [[3,1],[9,1],[12,1]],
+    "193": [[1,2],[2,1],[3,1],[17,1]],
+    "197": [[1,1],[1,2],[1,2],[1,2],[1,2],[1,2],[1,2],[2,1],[9,1]],
+    "199": [[6,1],[18,1]]
+  },
+  "rational_polynomial_factorization_preflight": [[24,1]],
+  "proof_prime_choice": "The already-used parent geometry primes149 and151 alone have disjoint proper factor-degree subsets. The independent proof uses this fact, not the rational factorization.",
+  "boundary_preflight": "Both discriminant-root remainders have degree23. At149 and151, normalized residual gcds are1 for the double-root order2 template and the simple-root order3 template. The degree-preserving top residual bounds are23 and22 respectively.",
+  "limits": "Each exploratory Sage call had a25-second alarm and completed under one second. No coefficient or family-parameter sampling, point search, number field, class group, exceptional point input, or V3 artifact was used."
+}

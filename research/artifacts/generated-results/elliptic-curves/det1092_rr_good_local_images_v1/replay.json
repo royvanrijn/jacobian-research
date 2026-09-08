@@ -1,0 +1,539 @@
+{
+  "branch_subset_proofs": [
+    {
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "dimension": 3,
+      "fixed_even_theta_masks": [
+        7,
+        11,
+        13,
+        14
+      ],
+      "fixed_odd_theta_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fixed_torsion_masks": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        15
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4
+      ]
+    },
+    {
+      "degrees": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "dimension": 2,
+      "fixed_even_theta_masks": [
+        7
+      ],
+      "fixed_odd_theta_indices": [
+        0,
+        1,
+        2
+      ],
+      "fixed_torsion_masks": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "degrees": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "dimension": 2,
+      "fixed_even_theta_masks": [
+        13,
+        14
+      ],
+      "fixed_odd_theta_indices": [
+        0,
+        1
+      ],
+      "fixed_torsion_masks": [
+        0,
+        3,
+        12,
+        15
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    {
+      "degrees": [
+        1,
+        1,
+        4
+      ],
+      "dimension": 1,
+      "fixed_even_theta_masks": [],
+      "fixed_odd_theta_indices": [
+        0,
+        1
+      ],
+      "fixed_torsion_masks": [
+        0,
+        3
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        2
+      ]
+    },
+    {
+      "degrees": [
+        1,
+        2,
+        3
+      ],
+      "dimension": 1,
+      "fixed_even_theta_masks": [
+        7
+      ],
+      "fixed_odd_theta_indices": [
+        0
+      ],
+      "fixed_torsion_masks": [
+        0,
+        6
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        2,
+        1,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "degrees": [
+        1,
+        5
+      ],
+      "dimension": 0,
+      "fixed_even_theta_masks": [],
+      "fixed_odd_theta_indices": [
+        0
+      ],
+      "fixed_torsion_masks": [
+        0
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        1
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "dimension": 2,
+      "fixed_even_theta_masks": [
+        21,
+        22,
+        25,
+        26
+      ],
+      "fixed_odd_theta_indices": [],
+      "fixed_torsion_masks": [
+        0,
+        3,
+        12,
+        15
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        4
+      ],
+      "dimension": 1,
+      "fixed_even_theta_masks": [
+        21,
+        22
+      ],
+      "fixed_odd_theta_indices": [],
+      "fixed_torsion_masks": [
+        0,
+        3
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        1,
+        0,
+        3,
+        4,
+        5,
+        2
+      ]
+    },
+    {
+      "degrees": [
+        3,
+        3
+      ],
+      "dimension": 0,
+      "fixed_even_theta_masks": [
+        7
+      ],
+      "fixed_odd_theta_indices": [],
+      "fixed_torsion_masks": [
+        0
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        1,
+        2,
+        0,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "degrees": [
+        6
+      ],
+      "dimension": 0,
+      "fixed_even_theta_masks": [
+        21
+      ],
+      "fixed_odd_theta_indices": [],
+      "fixed_torsion_masks": [
+        0
+      ],
+      "local_fake_kernel_zero": true,
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_index": 0,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 21,
+        "1": 15,
+        "2": 15,
+        "3": 2
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 53,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 11
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-00.json": "613d17b68a348be8d13eed5ad70d675fe579fbcb9ae436bde65611f9ef3af85e"
+      },
+      "newly_usable_previously_skipped_pairs": 15,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 1,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 30,
+        "1": 16,
+        "2": 7,
+        "3": 1
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 54,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 10
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json": "0d7b6dd0304683e10d87e08b0a6e0de8652c06781db856150cfc8b1063160d07"
+      },
+      "newly_usable_previously_skipped_pairs": 15,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 2,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 24,
+        "1": 24,
+        "2": 9
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 57,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-02.json": "adc88ed65459686d77ce5f1bd64dc6146c9ed2364d21ab8d34139da4d77fa9c6"
+      },
+      "newly_usable_previously_skipped_pairs": 15,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 3,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 24,
+        "1": 25,
+        "2": 4,
+        "3": 2
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 55,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-03.json": "8a743766cc19bf64e30f8aeb20fb183974ab1d7d78e54ef9af07432b963abc31"
+      },
+      "newly_usable_previously_skipped_pairs": 16,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 4,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 27,
+        "1": 24,
+        "2": 5,
+        "3": 2
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 58,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-04.json": "cdfd7658f8daf6c80265462eb42e379b1eea8ca1bff2af5ca634a16601051606"
+      },
+      "newly_usable_previously_skipped_pairs": 16,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 5,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 22,
+        "1": 23,
+        "2": 9,
+        "3": 2
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 56,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-05.json": "28f318aa7fd9680563ae0f5186c7725880ead8e657d6748f763b95ac7e80c30b"
+      },
+      "newly_usable_previously_skipped_pairs": 15,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 6,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 20,
+        "1": 23,
+        "2": 8,
+        "3": 2
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 53,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 11
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-06.json": "3e39e85beeb623b8bb480b8bfa9234b3941433ee5e0e3a15a44a499008aeadef"
+      },
+      "newly_usable_previously_skipped_pairs": 12,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 7,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 21,
+        "1": 25,
+        "2": 8,
+        "3": 1
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 55,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-07.json": "9463851c3265abbe38d6a8d69ede78f998c37c2646ddd5f6831dcdb6a72e9686"
+      },
+      "newly_usable_previously_skipped_pairs": 14,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 8,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 28,
+        "1": 16,
+        "2": 9,
+        "3": 1
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 54,
+        "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 9
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-08.json": "ea2dca576323580598e77162d5412c13072012244ee1a0f7e4cf9cd0ad47a949"
+      },
+      "newly_usable_previously_skipped_pairs": 16,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    },
+    {
+      "case_index": 9,
+      "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+      "classification": "verified application; independent replay",
+      "complete_image_dimensions": {
+        "0": 21,
+        "1": 28,
+        "2": 9
+      },
+      "counts": {
+        "COMPLETE_LOCAL_KUMMER_IMAGE": 58,
+        "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 6
+      },
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-09.json": "97f50413b497581fc18bdc7d5c6947181413149458e0b981aee73bb271690485"
+      },
+      "newly_usable_previously_skipped_pairs": 18,
+      "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+    }
+  ],
+  "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+  "classification": "verified application and new deduction",
+  "conclusion": "At every complete pair, inherited generic section divisors span the entire true local2-Kummer image; no marked exceptional or generic point is needed.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_inherited_jacobian_replay_v1.json": "6f2f74b204995318c2164256bd9aa33ed7d3e6a01798bed176714b2adc275668",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_inherited_jacobian_v1.json": "4b6d735aa1cdfdf5e69601ad75aedc8554c70260c2ebfb186bed7adf8b2fcb18",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-00-replay.json": "63e2e24d8f34037db7a634670960be83ba3eaebc39546db745c696ac1ec4cc62",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-01-replay.json": "81d5f052afa471c08926b2f124155234bce6756df6b80d94d6cd8e140c10d3f6",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-02-replay.json": "26254d4b6293f01f3527f5362b50927f1c21b561003b35edc2a097dbb0192b7b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-03-replay.json": "102dcf331b2fc32271e93bbef82163a82ab69592710e2bac3493eb04bb987b25",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-04-replay.json": "28a47ac3e7762d41128147c1d789eb9ecc3e3482ebb6acd01353498cdff27466",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-05-replay.json": "a4308b88fdab48373a3d81f1f8884c5cd8aee2ed4e4f61cf41cf1ab023ef47ae",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-06-replay.json": "5437342ea7642d3c1d895db95c2f9ffb39980e8251a1c273b83d4ff9c9f437fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-07-replay.json": "7f2359f4bc2afbc5b2d362702584c25e893509ed29f5892d1eb53f3053080c74",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-08-replay.json": "e9fe6edec4f7ffc26d51c8702375ea424632dc4e915df58aacc0a487adae9230",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/panel-replay.json": "cef49eb333dbe242a49475997ae93c0e776c191d2ccea6873add567eedf47cdd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-00.json": "613d17b68a348be8d13eed5ad70d675fe579fbcb9ae436bde65611f9ef3af85e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-01.json": "0d7b6dd0304683e10d87e08b0a6e0de8652c06781db856150cfc8b1063160d07",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-02.json": "adc88ed65459686d77ce5f1bd64dc6146c9ed2364d21ab8d34139da4d77fa9c6",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-03.json": "8a743766cc19bf64e30f8aeb20fb183974ab1d7d78e54ef9af07432b963abc31",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-04.json": "cdfd7658f8daf6c80265462eb42e379b1eea8ca1bff2af5ca634a16601051606",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-05.json": "28f318aa7fd9680563ae0f5186c7725880ead8e657d6748f763b95ac7e80c30b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-06.json": "3e39e85beeb623b8bb480b8bfa9234b3941433ee5e0e3a15a44a499008aeadef",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-07.json": "9463851c3265abbe38d6a8d69ede78f998c37c2646ddd5f6831dcdb6a72e9686",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-08.json": "ea2dca576323580598e77162d5412c13072012244ee1a0f7e4cf9cd0ad47a949",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-09.json": "97f50413b497581fc18bdc7d5c6947181413149458e0b981aee73bb271690485",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/manifest.json": "ac9ab72e55b4d0d3c5222116be4a6fc9ed608b1e5d6ee9c98cdebed5d72e71c0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/protocol.json": "97238fd374aebb836ada4c8996c873417871aab2fe907642588e9ad4046e87db"
+  },
+  "limits": {
+    "class_group_runs": 0,
+    "external_computations": 0,
+    "generic_divisors_per_case": 17,
+    "global_Selmer_runs": 0,
+    "independent_replay_wall_seconds": 25,
+    "new_prime_searches": 0,
+    "pilot_changes": 0,
+    "point_searches": 0,
+    "prime_case_pairs": 640,
+    "wall_seconds": 25
+  },
+  "newly_usable_previously_skipped_pairs": 152,
+  "sage_version": "10.9",
+  "scope": "Only recorded good odd places. Full global Selmer, bad places,2,real place,and untested primes remain unresolved. Individual local spanning is not simultaneous global spanning.",
+  "status": "PASS_INDEPENDENT_FROZEN_GOOD_LOCAL_IMAGES",
+  "totals": {
+    "COMPLETE_LOCAL_KUMMER_IMAGE": 553,
+    "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 4,
+    "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 83
+  }
+}

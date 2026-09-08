@@ -1,0 +1,21 @@
+{
+  "case_index": 7,
+  "checker_sha256": "948effd52a5a8fc666ec8a29061460342bb7a9663c99a6a57732bad1f6047a7e",
+  "classification": "verified application; independent replay",
+  "complete_image_dimensions": {
+    "0": 21,
+    "1": 25,
+    "2": 8,
+    "3": 1
+  },
+  "counts": {
+    "COMPLETE_LOCAL_KUMMER_IMAGE": 55,
+    "UNRESOLVED_BASEPOINT_MEETS_BRANCH": 1,
+    "UNRESOLVED_NOT_SQUAREFREE_DEGREE_SIX_REDUCTION": 8
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_good_local_images_v1/case-07.json": "9463851c3265abbe38d6a8d69ede78f998c37c2646ddd5f6831dcdb6a72e9686"
+  },
+  "newly_usable_previously_skipped_pairs": 14,
+  "status": "PASS_INDEPENDENT_GOOD_LOCAL_IMAGE_CASE"
+}

@@ -1,0 +1,60 @@
+{
+  "classification": "verified interface application; mathematical proof is the independent progression replay",
+  "controls": [
+    {
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    },
+    {
+      "label": "302-generic-section-control",
+      "parameter": "0",
+      "status": "UNKNOWN_OUTSIDE_PROVED_PROGRESSION_IMAGE"
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json": "9870e567914a041f466f833a1a66489225d0808ffd59458690ddf093b0a0cd64",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/seed-at-n0-v2.json": "733f40ea484be628db623ed7e1f8f4ea284e16af5bab475377420ac99bccd0f4",
+    "elliptic-curves/cas/det1092_conic_seed_v2.sage": "90b99d5d8bf56ff15fc7ff6a9b7cdff07c12822731efcabc7d99032765c4ccaf",
+    "elliptic-curves/cas/verify_det1092_conic_seed_api.sage": "b2f63cce19e56695360fa6636a7324f0feeff62f6e0b80f316a67e970de50ff5"
+  },
+  "new_addresses": 1,
+  "new_parameter": "1636579823608344775969579426883491310836441501800610644096637979339414901424849081843284973507691000/6102275947055890661075259641569164647354846459461782772324094998826318153155853546790385417152874979",
+  "positive_roundtrip_passed": true,
+  "status": "PASS_PRODUCER_POSITIVE_ROUNDTRIP_AND_NINE_NONCOVERAGE_CASES"
+}
