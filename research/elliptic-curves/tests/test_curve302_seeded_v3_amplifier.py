@@ -1,4 +1,6 @@
+import ast
 import importlib.util
+import inspect
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -37,9 +39,23 @@ def test_oracle_inputs_are_explicit():
 
 
 def test_ordered_seed_state_uses_raw_state_not_compact_certificate():
-    import inspect
+    tree=ast.parse(inspect.getsource(m.ordered_seed_state))
+    calls=[]
+    for node in ast.walk(tree):
+        if not isinstance(node,ast.Call):
+            continue
+        if isinstance(node.func,ast.Name):
+            calls.append(node.func.id)
+        elif isinstance(node.func,ast.Attribute):
+            calls.append(node.func.attr)
+    assert 'raw_state' in calls
+    assert 'certified_state' not in calls
+
+    raw_call=next(node for node in ast.walk(tree)
+                  if isinstance(node,ast.Call) and isinstance(node.func,ast.Name) and node.func.id=='raw_state')
+    kwargs={kw.arg:kw.value for kw in raw_call.keywords}
+    assert isinstance(kwargs.get('prime_bound'),ast.Constant)
+    assert kwargs['prime_bound'].value==1000
+
     source=inspect.getsource(m.ordered_seed_state)
-    assert 'raw_state' in source
-    assert 'prime_bound=1000' in source
     assert 'tuple(state.basis)==tuple(points)' in source
-    assert 'certified_state' not in source
