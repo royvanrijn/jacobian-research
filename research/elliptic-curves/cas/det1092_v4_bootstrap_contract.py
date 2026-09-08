@@ -1,15 +1,14 @@
 """Contracts for the wide-atlas determinant-1092 V4 bootstrap experiment.
 
-V4 changes only the M17 bootstrap exposure.  It searches 512 fresh parity
+V4 changes only the M17 bootstrap exposure. It searches 512 fresh parity
 classes per fibre, excluding every M17 parity already searched by the completed
-V3 eight-fibre pilot.  If a certified gain occurs, execution immediately returns
-to the unchanged V3 landscape/cascade.  Null results are bounded visibility
-experiments, never saturation or rank upper bounds.
+V3 eight-fibre pilot. A certified gain is exported as a new independently
+verified seed for a later unchanged-V3 cascade; V4 itself stops there. Null
+results are bounded visibility experiments, never saturation or rank upper bounds.
 """
 from __future__ import annotations
 
 import hashlib
-from fractions import Fraction as F
 from pathlib import Path
 
 from v3_warm_support import bindings, read, require, sha
@@ -30,15 +29,15 @@ CLAIM = ('Wide M17 visibility follow-up on the same eight frozen determinant-109
          'Exactly 512 previously unsearched parity classes are selected per fibre from the '
          'complete nonzero degree-two quotient using equation/lattice metrics only. A finite '
          'no-gain result is not a rank upper bound, saturation proof, or proof that no jump exists. '
-         'After any certified gain the numerical policy reverts to unchanged V3.')
+         'Any certified gain is independently replayed and exported only as an eligible seed for '
+         'the already-frozen V3 cascade; V4 does not retune or execute that cascade.')
 
 
 def own_sources():
     names = ('det1092_v4_bootstrap_contract.py','det1092_v4_bootstrap_worker.py',
              'det1092_v4_bootstrap_replay.py','run_det1092_v4_bootstrap.py',
-             'v3_warm_support.py','v3_warm_engine.py','v3_warm_replay.py',
-             'det1092_v3_contract.py','visibility_selection_v3.py',
-             'research_runtime/supervisor.py')
+             'v3_warm_support.py','v3_warm_engine.py','det1092_v3_contract.py',
+             'visibility_selection_v3.py','research_runtime/supervisor.py')
     return {str((CAS/n).relative_to(ROOT)):sha(CAS/n) for n in names}
 
 
@@ -78,7 +77,7 @@ def validate_v3_panel():
     require(len(roster['pilot']) == 8, 'V3 pilot roster changed')
     rows = []
     for row in roster['pilot']:
-        verified, selection, masks = prior_case(row['id'])
+        _, _, masks = prior_case(row['id'])
         rows.append(dict(row, prior_verified_sha256=sha(V3/row['id']/'trial-verified.json'),
                          prior_terminal_sha256=sha(V3/row['id']/'replay-M17/terminal.json'),
                          prior_selection_sha256=sha(V3/row['id']/'replay-M17/epoch-00/selection.json'),
@@ -89,17 +88,15 @@ def validate_v3_panel():
 def policy_from_v3(case):
     p = dict(read(V3/case/'protocol.json'))
     require(p['initial_rank'] == 17 and p['target_rank'] == 32, 'V3 rank policy changed')
-    for key in ('height','seconds_per_chart','gp_sha256','max_epochs','max_charts',
-                'anchors_per_shell','canonical_per_shell','exact_cvp_node_limit'):
+    for key in ('height','seconds_per_chart','gp_sha256'):
         require(key in p, 'missing frozen V3 policy key '+key)
     return {
         'schema':'det1092-v4-wide-bootstrap-job.v1',
-        'initial_rank':17, 'generic_rank':17, 'target_rank':32,
+        'initial_rank':17, 'generic_rank':17, 'bootstrap_target_rank':18,
         'bootstrap_fresh_charts':FRESH_CHARTS, 'bootstrap_shells':list(SHELLS),
         'bootstrap_domain':DOMAIN,
         'height':p['height'], 'seconds_per_chart':p['seconds_per_chart'],
-        'gp_sha256':p['gp_sha256'],
-        'v3_policy':p,
+        'gp_sha256':p['gp_sha256'], 'frozen_v3_policy':p,
         'scope':CLAIM,
     }
 
@@ -126,6 +123,7 @@ def result_summary(results):
         'fibres_with_certified_gain':sum(r.get('gain',0)>0 for r in results),
         'maximum_rank_lower_bound':max([17]+[r.get('rank_lower_bound',17) for r in results]),
         'fresh_bootstrap_charts':sum(r.get('bootstrap_charts',0) for r in results),
+        'automatic_v3_cascade':False,
         'automatic_new_parameter_expansion':False,
         'claim_boundary':CLAIM,
     }
