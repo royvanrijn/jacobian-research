@@ -92,12 +92,16 @@ def closure_at(states, start_mask: int, threshold: int):
 def row_for_seed(states, names, seed_index: int | None, thresholds):
     start = 0 if seed_index is None else 1 << seed_index
     bottleneck, order = minimax_from(states, start)
+    named_order = [names[i] for i in order]
     result = {
         "seed_direction": None if seed_index is None else names[seed_index],
         "start_rank": GENERIC_RANK + (0 if seed_index is None else 1),
         "minimax_bottleneck_numerator": bottleneck,
         "minimax_bottleneck_scaled_height": bottleneck / 4_000_000.0,
-        "optimal_followup_order": [names[i] for i in order],
+        # Canonical field name plus a compatibility alias. Some handoff/report
+        # tooling used the older completion terminology; both must remain exact.
+        "optimal_followup_order": named_order,
+        "optimal_completion_order": named_order,
     }
     closures = {}
     for label, value in thresholds.items():
@@ -127,8 +131,6 @@ def build(xi_direction: str | None):
     # Two empirical diagnostic thresholds already present in the immutable
     # source: the root global minimax and the attested M24->M31 tail bottleneck.
     global_minimax = int(source["optimization"]["minimax"]["objective_numerator"])
-    tail_rows = source["historical_comparison"]["attested_M24_to_M31_order"]
-    # Recover actual tail rows from the report data stored in this source.
     actual = source["historical_comparison"].get("attested_tail_rows", [])
     if not actual:
         raise ArithmeticError("attested tail rows missing from landscape artifact")
@@ -184,6 +186,7 @@ def main():
     best = result["single_seed_ranking"][0]
     print("CURVE302_UNLOCK_CENSUS|best_seed={}|bottleneck={}|scaled={:.9f}|status=PASS".format(
         best["seed_direction"], best["minimax_bottleneck_numerator"], best["minimax_bottleneck_scaled_height"]), flush=True)
+    print("CURVE302_UNLOCK_ORDER|" + " -> ".join(best["optimal_followup_order"]), flush=True)
     if result["xi_result"]:
         row = result["xi_result"]
         print("CURVE302_XI_SEED|direction={}|bottleneck={}|scaled={:.9f}".format(
