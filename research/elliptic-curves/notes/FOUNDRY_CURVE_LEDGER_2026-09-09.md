@@ -20,8 +20,8 @@ retain their exact native equations, point lists and portable proofs. Their
 conductors and minimal-model height metrics remain `UNKNOWN`/uncomputed;
 no heuristic conductor screen is promoted to an exact value. The publication
 therefore contains195 exact conductors and126 unresolved, using the existing
-third conductor snapshot. The separate live factorization queue still covers
-its original roster, not these30 additions.
+third conductor snapshot. The running factorization pass keeps its original
+roster; these30 additions have a separate frozen successor queue.
 
 ## Evidence and selection
 
@@ -58,3 +58,24 @@ python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
 For the running experiment and its evolving discoveries, see the
 [foundry note](HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md). Automatic job exports do
 not rewrite this fixed publication snapshot or the mathematical-status register.
+
+## Queued conductor arithmetic
+
+The [successor queue](../cas/run_foundry_conductor_queue_v1.py) freezes these30
+new curves only, ordered by decreasing certified lower bound and then ID.
+Its foreground Sage model-transport preflight passes all30. A detached waiting
+controller starts them automatically only after the original99-case longer
+conductor pass reports completion, all99 endpoints are sealed, and its
+controller lock is released. It does not add concurrent conductor workers.
+
+The successor uses the same four workers,1,800-second build cap,120-second
+independent replay cap and2GiB per process. Original equations and all older
+proofs remain unchanged. Partial results stay `UNKNOWN`; engineering/replay
+failures require review. If the predecessor stops early, this queue waits
+rather than silently bypassing it. No OS boot service is installed; after a
+reboot, inspect status before relaunching. Publication remains a separate
+replayed snapshot/index/render step.
+
+```sh
+python3 research/elliptic-curves/cas/run_foundry_conductor_queue_v1.py status
+```
