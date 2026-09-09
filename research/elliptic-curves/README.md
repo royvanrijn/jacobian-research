@@ -6,6 +6,10 @@ and bounded conductor screening in a detached controller. Its note records
 commissioning and the production launch; machine certificates remain separate
 from the curated mathematical-status register.
 
+The [first curated foundry snapshot](notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md)
+adds30 verified curves at lower bounds22–26 and strengthens one existing
+curve23→25. The inventory now contains321 curves;274 meet the display rule.
+
 The [unattended norm12 campaign](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
 completed all four configured M27/M28 queues without rank gains. Its53 batches
 replayed; post-reboot integrity checks passed. This campaign is stopped,

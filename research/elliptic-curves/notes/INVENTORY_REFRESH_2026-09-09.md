@@ -1,9 +1,9 @@
 # Curve inventory refresh — September 9
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
-[expanded inventory](../INVENTORY.md) now index **291 distinct curves**,
-with **195 exact conductors** and **96 unresolved conductors** in the third
-replayed conductor snapshot. Rank entries
+[expanded inventory](../INVENTORY.md) now index **321 distinct curves**,
+with **195 exact conductors** and **126 unresolved conductors**, using the third
+replayed conductor snapshot plus the [foundry additions](FOUNDRY_CURVE_LEDGER_2026-09-09.md). Rank entries
 are certified lower bounds, not exact ranks.
 
 The selected updates are:
@@ -15,17 +15,18 @@ The selected updates are:
 | [Second fresh R17 cohort](SECOND_FRESH6_SEED_COHORT_2026-09-09.md) | Six curves with updated lower bounds 20, 20, 22, 17, 26, 22 in the same family order. |
 | [Lower-height cohort](LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md) | Six previously omitted certified curves, using their strongest retained subgroup packets. |
 | [Frozen sixty-fibre panel](R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md) | All60 independently replayed curves retained, including one lower bound27, three26 and four25. |
+| [First foundry ledger snapshot](FOUNDRY_CURVE_LEDGER_2026-09-09.md) | Thirty further distinct curves at lower bounds22–26; the existing08f72 fibre1245/2519 strengthens23→25. All31 selected packets replay. |
 | [Bifibration conic](DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md) | One exported determinant1092 specialization of orbit47755 at conic parameter u=0, with lower bound 18. |
 
 The [earlier supplement](INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) remains
-included. All 90 additions to the original 201-row inventory retain source
+included. All 120 additions to the original 201-row inventory retain source
 models and uncomputed minimal-model height/discriminant fields. An exact
 conductor does not supply those missing metrics. Bounded misses remain
 unresolved, and the inventory makes no current public novelty or record claim.
 
 ## Main README curation
 
-The main README highlights **244 of291 curves**: all240 with certified lower
+The main README highlights **274 of321 curves**: all270 with certified lower
 bound at least22, plus four structural examples below22. These are the
 orbit8044 seed factory's exported `000000` example, the uniform progression's
 `n0` example, the orbit47755 alternate-fibration seed, and the small
