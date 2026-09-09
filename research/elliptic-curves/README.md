@@ -1,8 +1,9 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [unattended norm12 controller](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
-now owns the four verified M27/M28 continuation queues. It runs search and
-replay without AI turns; use its checkpoint for live status.
+The [unattended norm12 campaign](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
+completed all four configured M27/M28 queues without rank gains. Its53 batches
+replayed; post-reboot integrity checks passed. This campaign is stopped,
+with no further search scheduled.
 
 The [two-sided conic minimum](notes/DET1092_TWO_SIDED_CONIC_MINIMUM_2026-09-09.md)
 proves that alternating generic translations cannot leave a two-curve pair

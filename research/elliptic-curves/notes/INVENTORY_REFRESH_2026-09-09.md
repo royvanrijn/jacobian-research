@@ -68,6 +68,39 @@ replayed without factor discovery. Minimal and nonminimal presentations of the
 conductor11 regression both pass. The live pass may advance beyond this immutable
 snapshot; later results require a new replayed snapshot before publication.
 
+### Preserved V1 stop and V2 continuation
+
+The post-reboot audit found **128 sealed results:54 exact and74 partial**.
+All frozen inputs and all retained result/binding hashes matched, including
+the duplicate generated copies. There were no unsealed conductor checkpoints.
+The125-case controller summary was stale. The actual stop was an engineering
+guard, `integral model required`, on `det1092-bifibration-47755-u0`, not evidence
+of lost arithmetic data. The other33 cases had no sealed result.
+
+The [versioned V2 continuation](../cas/run_inventory_conductor_resume_v2.py)
+preserves V1's sources, protocol, failed-case logs and128 sealed certificates.
+It freezes only those33 unfinished inputs, in their original order. For each
+rational equation, let `d` be the least common multiple of its coefficient
+denominators and replace `a_i` by `d^i*a_i`. The exact map
+`(x,y) -> (d^2*x,d^3*y)` gives an integral equation overQ with the same conductor;
+this is not a global minimal-model computation. Original equations and rank
+certificates in the ledger are not replaced.
+
+The [V2 wrapper](../cas/inventory_conductor_worker_v2.py) verifies coefficient
+identities, discriminant scaling by `d^12`, and rational isomorphism before
+both build and replay. It then delegates local arithmetic to the unchanged V1
+worker. Two rational presentations of the conductor11 regression build and
+independently replay exactly; corrupted transport metadata is rejected.
+The zero-search Sage preflight passed all33 actual continuation models before
+launch. Four detached workers retain the same90-second build,120-second replay
+and2GiB per-process caps. Completed V1 cases are not repeated. The published
+ledger still reflects only the first immutable snapshot until newer results
+are separately indexed.
+
+```sh
+python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
+```
+
 ## Reproduction
 
 The [refresh manifest](../data/research_curve_refresh.json) selects proved

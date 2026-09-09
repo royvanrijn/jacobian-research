@@ -1,5 +1,10 @@
 # Test parents outside the previously productive span
 
+The subsequent unattended campaign has completed all four configured banks
+without rank gains. Its post-reboot integrity check passed. See the
+[final campaign report](UNATTENDED_NORM12_SEARCH_2026-09-09.md). Work is stopped
+at the user’s request; the continuation suggestions below are historical.
+
 The [retained-label audit](../cas/audit_curve302_parent_novelty.py) checks two
 completed M18→M31 cascades on curve302. In `recovered-strict-02`, all13 winning
 generic masks are distinct and independent over F2. In `recovered-strict-03`,

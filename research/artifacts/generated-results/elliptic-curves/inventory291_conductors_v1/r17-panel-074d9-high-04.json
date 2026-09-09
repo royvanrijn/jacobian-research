@@ -1,0 +1,90 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-074d9-high-04/build.supervisor.json": "a0fab452b95ba5347510b269bb742f2cd0ead5bdb94df8b775afd50fb36ae5de",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-074d9-high-04/conductor.json": "afe8e4a47c56633fbd8574b9214b471b105ea17d33775c6935af4c0c576935c8",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-074d9-high-04/input.json": "1e5a1a448dac364b5ba718abac4f61995c2272c0b509c68fbc5b78395d086056",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-074d9-high-04/replay.supervisor.json": "014dd73fdb2133f3691953d43f03a38ac843b3fb6164ddb2f85d4d945d677fba"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "1317498",
+    "conductor_upper_bound": "195163538346539051209235018131624522775288173120900507777671332061759300065404039428265054255379920972700662131822144181237701964410504112335786",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-279820874935888454359909452802855554919304186477593688667",
+      "1696287641813732041118474710600748403272057301973117961845224352313086191715566457590"
+    ],
+    "discriminant_abs": "159200148850468288413228596367004257356447335050194519058232547243779219121221103874020698102616215945605135347443230790197232717390274854991369687194088078336183010066432",
+    "exact_conductor": null,
+    "id": "r17-panel-074d9-high-04",
+    "input_sha256": "1e5a1a448dac364b5ba718abac4f61995c2272c0b509c68fbc5b78395d086056",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 29,
+        "kodaira": "I17",
+        "minimal_discriminant_valuation": 17,
+        "pari_local_reduction": "[1, 21, [2, -1, 1, 4], 17]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 25,
+        "kodaira": "I13",
+        "minimal_discriminant_valuation": 13,
+        "pari_local_reduction": "[1, 17, [3, 3, 0, 0], 13]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 4,
+        "kodaira": "I4",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+        "prime": "7",
+        "prime_certificate": "7"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "19",
+        "prime_certificate": "19"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "127",
+        "prime_certificate": "127"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 19,
+    "remaining_cofactor": "148131942778310897784463443687675064990829718998359396202249515416159493270884691611118236426453718315094719029419508933780318425083380857",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "r17-panel-074d9-high-04",
+  "protocol_sha256": "d99cad7da9f4d12c9cd56c596dd9213f1d4cd9f14ef3fbe97f87b33cad50d742",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

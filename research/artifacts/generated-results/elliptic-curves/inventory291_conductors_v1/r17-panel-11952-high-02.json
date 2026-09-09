@@ -1,0 +1,99 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-11952-high-02/build.supervisor.json": "5474f46040f44e47eb443b754f92c38c8e7546cfd9295305991f298f36a8b29f",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-11952-high-02/conductor.json": "4b963e8117eb539d0848b03ecc4edf1365a004431d4bbdac9268528b39028903",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-11952-high-02/input.json": "2e4e449609655a02d1250ea7b2f7abeef50a40f8e9c2fb4d0bbcd143ec955f74",
+    "artifacts/local/elliptic-curves/inventory291-conductors-v1/cases/r17-panel-11952-high-02/replay.supervisor.json": "3aaeff30e604c22ce4bc02a040b6008f5277dbb3caa4f99a7d978f70382340e0"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "2336620",
+    "conductor_upper_bound": "474191411302021139322360823806774728405278022471748496940599007247351668685662925771652954437349088498067497916755068859213945422381005368260",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-57815027233078908263628217527392514714519837899935065552",
+      "169099301327104201698919207094174246228623769055183880687463008727707211740282653504"
+    ],
+    "discriminant_abs": "15221079449069742681545503229818618869476490595198219110218349947669895912153757370597032363625267228725261718630593199722477131924973822262210284609694216414208000000",
+    "exact_conductor": null,
+    "id": "r17-panel-11952-high-02",
+    "input_sha256": "2e4e449609655a02d1250ea7b2f7abeef50a40f8e9c2fb4d0bbcd143ec955f74",
+    "local_data": [
+      {
+        "conductor_exponent": 2,
+        "discriminant_valuation": 16,
+        "kodaira": "IV",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[2, 4, [2, 0, 0, 0], 3]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 0,
+        "discriminant_valuation": 24,
+        "kodaira": "I0",
+        "minimal_discriminant_valuation": 0,
+        "pari_local_reduction": "[0, 1, [9, 0, 0, 0], 1]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 6,
+        "kodaira": "I6",
+        "minimal_discriminant_valuation": 6,
+        "pari_local_reduction": "[1, 10, [1, 0, 0, 0], 6]",
+        "prime": "5",
+        "prime_certificate": "5"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "19",
+        "prime_certificate": "19"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "43",
+        "prime_certificate": "43"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 21,
+    "remaining_cofactor": "202939036429552575653020527003438611500919286179074259802877236027831512477708367544424405524796110834482071503605664960162091149772323",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "r17-panel-11952-high-02",
+  "protocol_sha256": "d99cad7da9f4d12c9cd56c596dd9213f1d4cd9f14ef3fbe97f87b33cad50d742",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

@@ -1,9 +1,35 @@
 # Unattended norm12 search
 
-The pure Python controller now owns the four existing norm12 branches.
-It makes no model/API calls and needs no AI turn between batches. It is a
-detached local process, not a Codex recurring automation. The machine must
-remain awake; it does not automatically restart after a reboot or interruption.
+The campaign completed normally and is stopped. All four configured parent
+banks exhausted their finite search coverage, with no rank gains. Work is
+paused at the user’s request; no restart or new campaign is scheduled.
+
+It finished at 09:28:09 UTC on 2026-09-09, before the current Linux boot
+at approximately 09:40:19 UTC. The controller is no longer running.
+
+| Curve | Final certified lower bound | Completed calls |
+| --- | ---: | ---: |
+| 188 / ICARM619 | 28 | 1,568 |
+| 48 | 27 | 1,558 |
+| 71 | 27 | 1,552 |
+| 40 | 27 | 1,518 |
+
+All 53 automatic batches completed and replayed in 101.3 minutes. Final
+cumulative coverage is 6,196 calls, including 5,096 added by the controller.
+The post-reboot integrity check verified all 53 exported-result hashes and
+424 bound-receipt hashes; all 6,196 expected final chart files are present.
+No loss was detected within these checks. This was a file-integrity check,
+not a fresh arithmetic replay or a repository-wide data-loss audit.
+
+[Completion and integrity receipt](../../artifacts/generated-results/elliptic-curves/unattended_norm12_v1/completion-and-integrity.json).
+Exhaustion applies only to these parent banks and finite bounds; it does
+not prove exact ranks or exclude unseen points.
+
+## Controller and retained starting inputs
+
+The pure Python controller made no model/API calls and required no AI turn
+between batches. It ran as a detached local process, not a recurring Codex
+automation, and does not automatically restart after a reboot.
 
 | Job | Curve | Starting certified subgroup | Initial completed calls |
 | --- | --- | ---: | ---: |
@@ -16,8 +42,8 @@ The controller rotates jobs sequentially, one bounded worker at a time.
 Each batch adds at most100 point calls, independently replays the result,
 exports sealed evidence, and advances only that job's verified parent.
 Previously completed coverage is inherited from exact bound receipts.
-The campaign checkpoint is the authoritative scheduling ledger while this
-controller owns these jobs. Do not independently launch the old suffixes.
+The retained checkpoint records the completed scheduling ledger. The old
+suffixes have been consumed; do not relaunch them.
 
 A new certified gain stops the campaign for mathematical review. If a
 complete-cloud audit requests reconciliation, the controller replays the
@@ -49,7 +75,7 @@ If the process dies unexpectedly, status reports interruption; partial
 outputs remain intact and are not automatically retried or overwritten.
 
 - [Controller](../cas/run_unattended_norm12.py).
-- [Live checkpoint](../../artifacts/local/elliptic-curves/unattended-norm12-v1/state.json).
+- [Final checkpoint](../../artifacts/local/elliptic-curves/unattended-norm12-v1/state.json).
 - [Frozen configuration](../../artifacts/local/elliptic-curves/unattended-norm12-v1/config.json).
 - [Controller log](../../artifacts/local/elliptic-curves/unattended-norm12-v1/controller.log).
 - [Parent evidence](PRODUCTIVE_PARENT_SPAN_REASSESSMENT_2026-09-09.md).

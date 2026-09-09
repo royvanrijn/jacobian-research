@@ -19,7 +19,7 @@ forwards its targets to that directory.
 <!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
 ## Elliptic curve inventory
 
-**291 research curves · 130 exact conductors · 161 unresolved**.
+**291 research curves · 137 exact conductors · 154 unresolved**.
 ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
@@ -28,8 +28,12 @@ The original 201 curves have certified minimal models. The 90 additional [certif
 
 [Download JSON](research/elliptic-curves/data/research_curves/database.json) · [Download CSV](research/elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](research/elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
+**Main-table selection: 244 of 291 curves.** Keep every certified lower bound ≥22, documented structural exceptions, and smaller-rank curves whose exact conductor meets or beats the rank-specific minimum in the [pinned ICARM snapshot](research/elliptic-curves/data/icarm_current.json). This is an editorial filter, not a live record claim. The [complete inventory](research/elliptic-curves/INVENTORY.md) retains every curve, point and certificate; 47 hidden curves still have unresolved conductors and are not classified as high-conductor.
+
+Below-22 structural examples retained: [det1092-orbit8044-000000](research/elliptic-curves/data/research_curves/det1092-orbit8044-000000.md) (parametrized seed factory); [det1092-progression-n0](research/elliptic-curves/data/research_curves/det1092-progression-n0.md) (uniform arithmetic seed progression); [det1092-bifibration-47755-u0](research/elliptic-curves/data/research_curves/det1092-bifibration-47755-u0.md) (alternate-fibration conic seed); [det1092-small-conic](research/elliptic-curves/data/research_curves/det1092-small-conic.md) (small equation-derived conic control).
+
 <details>
-<summary>Show all 291 curves</summary>
+<summary>Show 244 highlighted curves</summary>
 
 | Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |
 |---|---|---:|---:|---:|---:|---:|
@@ -39,35 +43,35 @@ The original 201 curves have certified minimal models. The 90 additional [certif
 | [ICARM #628](https://elliptic-rank.icarm.cloud/curve/628) ([Roy van Rijn](https://elliptic-rank.icarm.cloud/user/83)) | `[1, -1, 1, -1286302193798…, 17802205930101…]` | ≥ 27 | 282.75 | 350.85 | 27.05 | 338.12 |
 | [ICARM #629](https://elliptic-rank.icarm.cloud/curve/629) ([Roy van Rijn](https://elliptic-rank.icarm.cloud/user/83)) | `[1, 0, 0, -2061464727961…, 11053114193386…]` | ≥ 27 | 283.62 | 359.17 | 27.85 | 348.88 |
 | [new-20260906-72](research/elliptic-curves/data/research_curves/new-20260906-72.md) | `[1, 0, 0, -6373259334285…, 79686118348726…]` | ≥ 27 | 288.14 | 335.43 | 25.96 | 327.05 |
+| [r17-panel-103b2-low-02](research/elliptic-curves/data/research_curves/r17-panel-103b2-low-02.md) | `[0, 0, 0, -3763621946446…, 28695456342792…]` | ≥ 27 | 288.84 | — | — | — |
 | [new-20260906-48](research/elliptic-curves/data/research_curves/new-20260906-48.md) | `[1, 0, 0, -3285612539947…, 50166999670818…]` | ≥ 27 | 295.12 | 353.66 | 27.50 | 345.56 |
 | [ICARM #627](https://elliptic-rank.icarm.cloud/curve/627) ([Roy van Rijn](https://elliptic-rank.icarm.cloud/user/83)) | `[1, 0, 0, -8810888018746…, 31850830142264…]` | ≥ 27 | 295.67 | 356.62 | 27.47 | 342.37 |
-| [r17-panel-103b2-low-02](research/elliptic-curves/data/research_curves/r17-panel-103b2-low-02.md) | `[0, 0, 0, -3763621946446…, 28695456342792…]` | ≥ 27 | — | — | — | — |
 | [new-20260906-92](research/elliptic-curves/data/research_curves/new-20260906-92.md) | `[1, -1, 1, -9220735229473…, 10935366812635…]` | ≥ 26 | 240.05 | 336.06 | 25.89 | 325.06 |
 | [new-20260906-74](research/elliptic-curves/data/research_curves/new-20260906-74.md) | `[1, 0, 0, -7397203003011…, 23402190894252…]` | ≥ 26 | 249.51 | 328.47 | 25.31 | 318.57 |
 | [new-20260905-37](research/elliptic-curves/data/research_curves/new-20260905-37.md) | `[1, -1, 1, -2712997815437…, 18284322660546…]` | ≥ 26 | 255.18 | 332.49 | 25.65 | 322.87 |
 | [new-20260906-104](research/elliptic-curves/data/research_curves/new-20260906-104.md) | `[0, 1, 0, -3846365223002…, 92240176516892…]` | ≥ 26 | 255.34 | 326.51 | 25.04 | 314.36 |
 | [new-20260906-49](research/elliptic-curves/data/research_curves/new-20260906-49.md) | `[1, 0, 1, -1969463772621…, 33282711533330…]` | ≥ 26 | 255.51 | 324.50 | 24.91 | 313.19 |
+| [r17-panel-11952-low-04](research/elliptic-curves/data/research_curves/r17-panel-11952-low-04.md) | `[0, 0, 0, -1555161811005…, 73002132416654…]` | ≥ 26 | 259.82 | — | — | — |
 | [new-20260906-192](research/elliptic-curves/data/research_curves/new-20260906-192.md) | `[1, 0, 0, -2868763178245…, 18701058442112…]` | ≥ 26 | 274.78 | 346.35 | 26.54 | 329.78 |
 | [new-20260906-42](research/elliptic-curves/data/research_curves/new-20260906-42.md) | `[1, 0, 0, -3302148024364…, 71176199439053…]` | ≥ 26 | 276.89 | 353.68 | 27.38 | 343.23 |
 | [new-20260906-63](research/elliptic-curves/data/research_curves/new-20260906-63.md) | `[1, 0, 1, -2445843071846…, 14040344901689…]` | ≥ 26 | 277.01 | 332.05 | 25.61 | 322.20 |
+| [r17-panel-074d9-low-04](research/elliptic-curves/data/research_curves/r17-panel-074d9-low-04.md) | `[0, 0, 0, -2873810268926…, 59257418580282…]` | ≥ 26 | 277.75 | — | — | — |
 | [new-20260906-75](research/elliptic-curves/data/research_curves/new-20260906-75.md) | `[1, 0, 0, -5433430543708…, 15466891962023…]` | ≥ 26 | 278.76 | 341.36 | 26.27 | 328.89 |
 | [new-20260906-73](research/elliptic-curves/data/research_curves/new-20260906-73.md) | `[1, -1, 1, -1135454119938…, 14657867194438…]` | ≥ 26 | 279.02 | 350.47 | 27.04 | 338.34 |
+| [r17-panel-103b2-low-05](research/elliptic-curves/data/research_curves/r17-panel-103b2-low-05.md) | `[0, 0, 0, -1872770332184…, 29617266064942…]` | ≥ 26 | 280.60 | — | — | — |
 | [new-20260906-200](research/elliptic-curves/data/research_curves/new-20260906-200.md) | `[1, 0, 0, -1600850384897…, 77921536229961…]` | ≥ 26 | 281.00 | 386.04 | 29.92 | 371.68 |
 | [new-20260906-103](research/elliptic-curves/data/research_curves/new-20260906-103.md) | `[1, 0, 0, -4735718613418…, 12205008133792…]` | ≥ 26 | 281.16 | 354.76 | 27.47 | 344.37 |
 | [new-20260906-106](research/elliptic-curves/data/research_curves/new-20260906-106.md) | `[1, -1, 1, -2225634284449…, 70081981858019…]` | ≥ 26 | 282.76 | 353.59 | 27.51 | 345.74 |
+| [new-20260906-91](research/elliptic-curves/data/research_curves/new-20260906-91.md) | `[1, 0, 0, -5452412384522…, 50997797154510…]` | ≥ 26 | 290.03 | 375.98 | 29.26 | 365.96 |
 | [new-20260906-113](research/elliptic-curves/data/research_curves/new-20260906-113.md) | `[1, 0, 0, -1346744695971…, 19422896536707…]` | ≥ 26 | 293.96 | 378.66 | 29.45 | 368.00 |
 | [new-20260906-116](research/elliptic-curves/data/research_curves/new-20260906-116.md) | `[1, 1, 1, -1917418746764…, 10068368819109…]` | ≥ 26 | 295.69 | 358.95 | 27.80 | 347.97 |
 | [new-20260906-52](research/elliptic-curves/data/research_curves/new-20260906-52.md) | `[1, 0, 0, -2367619162358…, 47019730697497…]` | ≥ 26 | 305.99 | 380.43 | 29.65 | 370.77 |
+| [new-20260906-99](research/elliptic-curves/data/research_curves/new-20260906-99.md) | `[1, 0, 0, -6703231592513…, 21158562400025…]` | ≥ 26 | 311.38 | 397.25 | 30.90 | 384.07 |
 | [new-20260906-50](research/elliptic-curves/data/research_curves/new-20260906-50.md) | `[0, 1, 0, -2429928713309…, 14456788823722…]` | ≥ 26 | — | 332.03 | 25.53 | 320.49 |
 | [new-20260906-105](research/elliptic-curves/data/research_curves/new-20260906-105.md) | `[1, 0, 0, -4738382172613…, 11718902875043…]` | ≥ 26 | — | 327.13 | 25.21 | 317.62 |
 | [new-20260906-102](research/elliptic-curves/data/research_curves/new-20260906-102.md) | `[0, 1, 0, -2497472982592…, 11650272964469…]` | ≥ 26 | — | 359.75 | 28.00 | 351.41 |
-| [new-20260906-91](research/elliptic-curves/data/research_curves/new-20260906-91.md) | `[1, 0, 0, -5452412384522…, 50997797154510…]` | ≥ 26 | — | 375.98 | 29.26 | 365.96 |
-| [new-20260906-99](research/elliptic-curves/data/research_curves/new-20260906-99.md) | `[1, 0, 0, -6703231592513…, 21158562400025…]` | ≥ 26 | — | 397.25 | 30.90 | 384.07 |
-| [new-20260906-189](research/elliptic-curves/data/research_curves/new-20260906-189.md) | `[1, -1, 1, -1663545350154…, 25999962336300…]` | ≥ 26 | — | 393.07 | 30.59 | 380.88 |
 | [r17-103b2-fresh-002](research/elliptic-curves/data/research_curves/r17-103b2-fresh-002.md) | `[0, 0, 0, -1732071835709…, 87788776178863…]` | ≥ 26 | — | — | — | — |
-| [r17-panel-074d9-low-04](research/elliptic-curves/data/research_curves/r17-panel-074d9-low-04.md) | `[0, 0, 0, -2873810268926…, 59257418580282…]` | ≥ 26 | — | — | — | — |
-| [r17-panel-103b2-low-05](research/elliptic-curves/data/research_curves/r17-panel-103b2-low-05.md) | `[0, 0, 0, -1872770332184…, 29617266064942…]` | ≥ 26 | — | — | — | — |
-| [r17-panel-11952-low-04](research/elliptic-curves/data/research_curves/r17-panel-11952-low-04.md) | `[0, 0, 0, -1555161811005…, 73002132416654…]` | ≥ 26 | — | — | — | — |
+| [new-20260906-189](research/elliptic-curves/data/research_curves/new-20260906-189.md) | `[1, -1, 1, -1663545350154…, 25999962336300…]` | ≥ 26 | — | 393.07 | 30.59 | 380.88 |
 | [new-20260906-54](research/elliptic-curves/data/research_curves/new-20260906-54.md) | `[1, 0, 0, -2903206315434…, 18059949234337…]` | ≥ 25 | 228.23 | 318.75 | 24.50 | 309.00 |
 | [new-20260906-43](research/elliptic-curves/data/research_curves/new-20260906-43.md) | `[1, 0, 0, -2430269761279…, 14025401250208…]` | ≥ 25 | 228.74 | 290.59 | 22.14 | 280.54 |
 | [new-20260906-79](research/elliptic-curves/data/research_curves/new-20260906-79.md) | `[1, 0, 1, -6937735796735…, 77561917052089…]` | ≥ 25 | 230.23 | 307.75 | 23.61 | 298.56 |
@@ -79,6 +83,7 @@ The original 201 curves have certified minimal models. The 90 additional [certif
 | [new-20260906-107](research/elliptic-curves/data/research_curves/new-20260906-107.md) | `[1, 0, 0, -3015986594896…, 63902234024899…]` | ≥ 25 | 244.96 | 325.78 | 24.95 | 312.96 |
 | [new-20260906-121](research/elliptic-curves/data/research_curves/new-20260906-121.md) | `[1, 0, 0, -1873386508355…, 98832501227118…]` | ≥ 25 | 247.81 | 331.26 | 25.39 | 317.93 |
 | [new-20260905-01](research/elliptic-curves/data/research_curves/new-20260905-01.md) | `[1, -1, 1, -1059556401049…, 14325193788023…]` | ≥ 25 | 248.48 | 322.79 | 24.86 | 313.38 |
+| [new-20260906-101](research/elliptic-curves/data/research_curves/new-20260906-101.md) | `[1, 0, 0, -1786694850006…, 28897710108108…]` | ≥ 25 | 249.17 | 324.20 | 24.86 | 312.30 |
 | [new-20260906-81](research/elliptic-curves/data/research_curves/new-20260906-81.md) | `[0, 1, 0, -7231579511386…, 23288656695013…]` | ≥ 25 | 251.03 | 314.58 | 24.10 | 303.68 |
 | [new-20260906-114](research/elliptic-curves/data/research_curves/new-20260906-114.md) | `[1, 0, 1, -1973799652407…, 10332174018545…]` | ≥ 25 | 252.53 | 345.23 | 26.69 | 335.01 |
 | [new-20260905-03](research/elliptic-curves/data/research_curves/new-20260905-03.md) | `[0, 1, 0, -1785836566136…, 91071136753903…]` | ≥ 25 | 255.46 | 317.29 | 24.30 | 305.77 |
@@ -91,7 +96,6 @@ The original 201 curves have certified minimal models. The 90 additional [certif
 | [new-20260905-02](research/elliptic-curves/data/research_curves/new-20260905-02.md) | `[0, 1, 0, -2294922577037…, 43151908014471…]` | ≥ 25 | — | 297.36 | 22.67 | 286.65 |
 | [new-20260906-64](research/elliptic-curves/data/research_curves/new-20260906-64.md) | `[1, 0, 0, -2294485253390…, 13137493111195…]` | ≥ 25 | — | 318.05 | 24.40 | 307.26 |
 | [new-20260906-76](research/elliptic-curves/data/research_curves/new-20260906-76.md) | `[1, 0, 1, -1253339005394…, 57810766480572…]` | ≥ 25 | — | 316.37 | 24.32 | 306.85 |
-| [new-20260906-101](research/elliptic-curves/data/research_curves/new-20260906-101.md) | `[1, 0, 0, -1786694850006…, 28897710108108…]` | ≥ 25 | — | 324.20 | 24.86 | 312.30 |
 | [new-20260906-65](research/elliptic-curves/data/research_curves/new-20260906-65.md) | `[1, 0, 0, -3350508572775…, 77321628884879…]` | ≥ 25 | — | 326.16 | 25.10 | 316.02 |
 | [new-20260906-80](research/elliptic-curves/data/research_curves/new-20260906-80.md) | `[1, -1, 1, -5795582957697…, 53759930078101…]` | ≥ 25 | — | 334.64 | 25.66 | 321.04 |
 | [new-20260906-111](research/elliptic-curves/data/research_curves/new-20260906-111.md) | `[1, 0, 0, -1597682356873…, 24607383817479…]` | ≥ 25 | — | 337.69 | 25.92 | 324.12 |
@@ -273,57 +277,10 @@ The original 201 curves have certified minimal models. The 90 additional [certif
 | [r17-panel-07ca9-low-01](research/elliptic-curves/data/research_curves/r17-panel-07ca9-low-01.md) | `[0, 0, 0, -3158664514911…, 63419939465052…]` | ≥ 22 | — | — | — | — |
 | [r17-panel-08f72-low-03](research/elliptic-curves/data/research_curves/r17-panel-08f72-low-03.md) | `[0, 0, 0, -3605681714602…, 26609488249780…]` | ≥ 22 | — | — | — | — |
 | [r17-panel-11952-low-01](research/elliptic-curves/data/research_curves/r17-panel-11952-low-01.md) | `[0, 0, 0, -3111966769168…, 68073627072666…]` | ≥ 22 | — | — | — | — |
-| [det1092-funnel-002537010](research/elliptic-curves/data/research_curves/det1092-funnel-002537010.md) | `[0, 0, 0, -2530162402717…, 75057748791573…]` | ≥ 21 | — | — | — | — |
-| [r17-panel-074d9-high-03](research/elliptic-curves/data/research_curves/r17-panel-074d9-high-03.md) | `[0, 0, 0, -8168970000781…, 84616899603365…]` | ≥ 21 | — | — | — | — |
-| [r17-panel-074d9-low-02](research/elliptic-curves/data/research_curves/r17-panel-074d9-low-02.md) | `[0, 0, 0, -9679140321268…, 11145086362662…]` | ≥ 21 | — | — | — | — |
-| [r17-panel-07ca9-low-02](research/elliptic-curves/data/research_curves/r17-panel-07ca9-low-02.md) | `[0, 0, 0, -8217754558179…, 31305557550567…]` | ≥ 21 | — | — | — | — |
-| [r17-panel-08f72-low-01](research/elliptic-curves/data/research_curves/r17-panel-08f72-low-01.md) | `[0, 0, 0, -4857544067242…, 13779215950359…]` | ≥ 21 | — | — | — | — |
-| [r17-panel-11952-high-02](research/elliptic-curves/data/research_curves/r17-panel-11952-high-02.md) | `[0, 0, 0, -5781502723307…, 16909930132710…]` | ≥ 21 | — | — | — | — |
-| [r17-074d9-fresh-002](research/elliptic-curves/data/research_curves/r17-074d9-fresh-002.md) | `[0, 0, 0, -7481384468108…, 25009036551682…]` | ≥ 20 | — | — | — | — |
-| [r17-07ca9-fresh-002](research/elliptic-curves/data/research_curves/r17-07ca9-fresh-002.md) | `[0, 0, 0, -7430520563173…, 85650521910783…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-074d9-high-01](research/elliptic-curves/data/research_curves/r17-panel-074d9-high-01.md) | `[0, 0, 0, -8229332598646…, 28554683302647…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-074d9-low-01](research/elliptic-curves/data/research_curves/r17-panel-074d9-low-01.md) | `[0, 0, 0, -3747373510600…, 28698291267747…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-07ca9-high-01](research/elliptic-curves/data/research_curves/r17-panel-07ca9-high-01.md) | `[0, 0, 0, -2284644006610…, 41434275863224…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-07ca9-high-03](research/elliptic-curves/data/research_curves/r17-panel-07ca9-high-03.md) | `[0, 0, 0, -2892846713990…, 18832336844876…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-08f72-high-01](research/elliptic-curves/data/research_curves/r17-panel-08f72-high-01.md) | `[0, 0, 0, -1193175846130…, 16371282826282…]` | ≥ 20 | — | — | — | — |
-| [r17-panel-074d9-high-04](research/elliptic-curves/data/research_curves/r17-panel-074d9-high-04.md) | `[0, 0, 0, -2798208749358…, 16962876418137…]` | ≥ 19 | — | — | — | — |
-| [r17-panel-07ca9-low-05](research/elliptic-curves/data/research_curves/r17-panel-07ca9-low-05.md) | `[0, 0, 0, -1034461495735…, 12877952107438…]` | ≥ 19 | — | — | — | — |
-| [r17-panel-11952-high-01](research/elliptic-curves/data/research_curves/r17-panel-11952-high-01.md) | `[0, 0, 0, -3181480041965…, 68454155752649…]` | ≥ 19 | — | — | — | — |
-| [r17-panel-11952-high-05](research/elliptic-curves/data/research_curves/r17-panel-11952-high-05.md) | `[0, 0, 0, -4557566365260…, 36775949410404…]` | ≥ 19 | — | — | — | — |
 | [det1092-bifibration-47755-u0](research/elliptic-curves/data/research_curves/det1092-bifibration-47755-u0.md) | `[0, 0, 0, -1781159309922…, 30509288043744…]` | ≥ 18 | — | — | — | — |
-| [det1092-funnel-019791672](research/elliptic-curves/data/research_curves/det1092-funnel-019791672.md) | `[0, 0, 0, -1562006295423…, 23882918570986…]` | ≥ 18 | — | — | — | — |
-| [det1092-funnel-020887854](research/elliptic-curves/data/research_curves/det1092-funnel-020887854.md) | `[0, 0, 0, -1768776728185…, 28489418804243…]` | ≥ 18 | — | — | — | — |
 | [det1092-orbit8044-000000](research/elliptic-curves/data/research_curves/det1092-orbit8044-000000.md) | `[0, 0, 0, -2958030484963…, 19413105371931…]` | ≥ 18 | — | — | — | — |
-| [det1092-orbit8044-000002](research/elliptic-curves/data/research_curves/det1092-orbit8044-000002.md) | `[0, 0, 0, -1269103678052…, 54554277245951…]` | ≥ 18 | — | — | — | — |
-| [det1092-orbit8044-000003](research/elliptic-curves/data/research_curves/det1092-orbit8044-000003.md) | `[0, 0, 0, -5455142682320…, 15374402316820…]` | ≥ 18 | — | — | — | — |
-| [det1092-orbit8044-000004](research/elliptic-curves/data/research_curves/det1092-orbit8044-000004.md) | `[0, 0, 0, -5452220512209…, 15361910936206…]` | ≥ 18 | — | — | — | — |
-| [det1092-orbit8044-000005](research/elliptic-curves/data/research_curves/det1092-orbit8044-000005.md) | `[0, 0, 0, -9767450059134…, 11648413835336…]` | ≥ 18 | — | — | — | — |
-| [det1092-orbit8044-000006](research/elliptic-curves/data/research_curves/det1092-orbit8044-000006.md) | `[0, 0, 0, -1931096009893…, 32380608777629…]` | ≥ 18 | — | — | — | — |
 | [det1092-progression-n0](research/elliptic-curves/data/research_curves/det1092-progression-n0.md) | `[1, 1, 1, -6442057369785…, 32564309783061…]` | ≥ 18 | — | — | — | — |
 | [det1092-small-conic](research/elliptic-curves/data/research_curves/det1092-small-conic.md) | `[0, 0, 0, -1496259048064…, 69838808593497…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-074d9-high-05](research/elliptic-curves/data/research_curves/r17-panel-074d9-high-05.md) | `[0, 0, 0, -2856992530783…, 58168306847307…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-08234-high-01](research/elliptic-curves/data/research_curves/r17-panel-08234-high-01.md) | `[0, 0, 0, -9423729908640…, 35434799405881…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-08234-low-02](research/elliptic-curves/data/research_curves/r17-panel-08234-low-02.md) | `[0, 0, 0, -1102554821557…, 45015764895083…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-08f72-high-03](research/elliptic-curves/data/research_curves/r17-panel-08f72-high-03.md) | `[0, 0, 0, -7778165537033…, 87802342431448…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-08f72-low-05](research/elliptic-curves/data/research_curves/r17-panel-08f72-low-05.md) | `[0, 0, 0, -1730223670795…, 31006376614964…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-103b2-low-04](research/elliptic-curves/data/research_curves/r17-panel-103b2-low-04.md) | `[0, 0, 0, -4586543650614…, 32879189022794…]` | ≥ 18 | — | — | — | — |
-| [r17-panel-11952-high-03](research/elliptic-curves/data/research_curves/r17-panel-11952-high-03.md) | `[0, 0, 0, -1374810848403…, 15350450878484…]` | ≥ 18 | — | — | — | — |
-| [r17-08234-fresh-001](research/elliptic-curves/data/research_curves/r17-08234-fresh-001.md) | `[0, 0, 0, -1080260006052…, 13806747771782…]` | ≥ 17 | — | — | — | — |
-| [r17-08234-lowheight-001](research/elliptic-curves/data/research_curves/r17-08234-lowheight-001.md) | `[0, 0, 0, -7481471469337…, 79575742256724…]` | ≥ 17 | — | — | — | — |
-| [r17-08f72-fresh-002](research/elliptic-curves/data/research_curves/r17-08f72-fresh-002.md) | `[0, 0, 0, -7190238579132…, 22253615067619…]` | ≥ 17 | — | — | — | — |
-| [r17-11952-fresh-001](research/elliptic-curves/data/research_curves/r17-11952-fresh-001.md) | `[0, 0, 0, -3564009165657…, 25756772259707…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-074d9-high-02](research/elliptic-curves/data/research_curves/r17-panel-074d9-high-02.md) | `[0, 0, 0, -1127660926482…, 45830921288583…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08234-high-03](research/elliptic-curves/data/research_curves/r17-panel-08234-high-03.md) | `[0, 0, 0, -1540556603918…, 23512822079587…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08234-high-05](research/elliptic-curves/data/research_curves/r17-panel-08234-high-05.md) | `[0, 0, 0, -6278781594480…, 61133641993040…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08234-low-01](research/elliptic-curves/data/research_curves/r17-panel-08234-low-01.md) | `[0, 0, 0, -1911520716357…, 32482929838081…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08234-low-03](research/elliptic-curves/data/research_curves/r17-panel-08234-low-03.md) | `[0, 0, 0, -9398769296474…, 35389345216359…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08234-low-05](research/elliptic-curves/data/research_curves/r17-panel-08234-low-05.md) | `[0, 0, 0, -1469858400747…, 21914036476124…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-08f72-high-02](research/elliptic-curves/data/research_curves/r17-panel-08f72-high-02.md) | `[0, 0, 0, -1346067816594…, 18796374408005…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-103b2-high-01](research/elliptic-curves/data/research_curves/r17-panel-103b2-high-01.md) | `[0, 0, 0, -6962288585070…, 20931476251184…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-103b2-high-02](research/elliptic-curves/data/research_curves/r17-panel-103b2-high-02.md) | `[0, 0, 0, -5660751812220…, 49209825287055…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-103b2-high-03](research/elliptic-curves/data/research_curves/r17-panel-103b2-high-03.md) | `[0, 0, 0, -2749031408622…, 51631221513718…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-103b2-high-04](research/elliptic-curves/data/research_curves/r17-panel-103b2-high-04.md) | `[0, 0, 0, -4184070125430…, 96949799310066…]` | ≥ 17 | — | — | — | — |
-| [r17-panel-103b2-high-05](research/elliptic-curves/data/research_curves/r17-panel-103b2-high-05.md) | `[0, 0, 0, -4279479082778…, 32315574085522…]` | ≥ 17 | — | — | — | — |
 
 </details>
 
