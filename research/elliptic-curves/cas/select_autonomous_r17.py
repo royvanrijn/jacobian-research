@@ -79,9 +79,10 @@ def freeze_snapshot(folder):
     require(len(pool) == 6144, 'fixed retained pool count differs')
     require(len({(r['family'], str(F(r['parameter']))) for r in pool}) == len(pool), 'duplicate pool address')
 
+    # Generated result packets + rendered inventory are the known-curve universe.
+    # Do NOT scan retained candidate-pool result files here: that would classify the
+    # unsearched 6144-row population itself as already known.
     paths = set(ART.glob('*.json'))
-    paths.update(LOCAL.glob('*/result.json'))
-    paths.update(LOCAL.glob('*/protocol.json'))
     db = ROOT / 'elliptic-curves/data/research_curves/database.json'
     if db.exists():
         paths.add(db)
