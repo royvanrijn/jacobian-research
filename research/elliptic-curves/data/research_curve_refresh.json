@@ -1,14 +1,16 @@
 {
   "conductors": [
     {
-      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-074d9-fresh-001",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-07ca9-fresh-001",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
       "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
@@ -16,1815 +18,1138 @@
       "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
     },
     {
-      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-103b2-fresh-001",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-101",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-102",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-105",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-189",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-50",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-91",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-99",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-103b2-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-funnel-002537010",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-funnel-019791672",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-10",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-14",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-15",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-16",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-17",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-18",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-19",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-23",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-35",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260905-39",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-101",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-102",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-105",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-108",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-109",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-111",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-112",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-115",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-119",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-122",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-123",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-124",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-125",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-136",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-138",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-140",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-141",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-142",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-144",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-145",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-147",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-148",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-151",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-152",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-160",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-166",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-168",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-169",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-170",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-171",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-175",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-176",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-178",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-183",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-185",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-189",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-190",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-194",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-46",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-50",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-51",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-57",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-59",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-62",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-64",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-65",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-67",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-69",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-70",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-76",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-80",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-84",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-88",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-89",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-91",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-93",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260906-96",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "new-20260906-99",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "new-20260907-201",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-074d9-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-074d9-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-074d9-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-07ca9-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-07ca9-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-07ca9-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-08234-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-08f72-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-103b2-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-103b2-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-103b2-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-11952-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-11952-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-panel-074d9-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-07ca9-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-panel-103b2-low-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-panel-103b2-low-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
-      "id": "r17-panel-11952-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-bifibration-47755-u0",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "det1092-funnel-002537010",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "det1092-funnel-019791672",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-funnel-020887854",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000000",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000003",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000004",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000005",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-orbit8044-000006",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-progression-n0",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "det1092-small-conic",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-10",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-14",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-15",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-16",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-17",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-18",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-19",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-23",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-35",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260905-39",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-101",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-102",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-105",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-108",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-109",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-111",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-112",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-115",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-119",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-122",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-123",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-124",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-125",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-136",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-138",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-140",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-141",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-142",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-144",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-145",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-147",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-148",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-151",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-152",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-160",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-166",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-168",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-169",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-170",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-171",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-175",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-176",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-178",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-183",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-185",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-189",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-190",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-194",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-46",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-50",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-51",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-57",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-59",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-62",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-64",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-65",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-67",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-69",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-70",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-76",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-80",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-84",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-88",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-89",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-91",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-93",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-96",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260906-99",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "new-20260907-201",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-074d9-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-074d9-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-074d9-lowheight-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-07ca9-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-07ca9-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-07ca9-lowheight-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-08234-fresh-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-08234-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-08234-lowheight-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-08f72-fresh-002",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-08f72-lowheight-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-103b2-fresh-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-103b2-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-103b2-lowheight-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-11952-fresh-001",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-11952-fresh-002",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-11952-lowheight-001",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-high-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-high-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-high-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-074d9-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-low-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-low-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-low-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-074d9-low-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-high-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-high-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-high-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-high-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-high-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-low-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-low-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-low-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-07ca9-low-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08234-high-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08234-high-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-low-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-low-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-low-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08234-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08234-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-high-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-high-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-high-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-low-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-low-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-low-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-08f72-low-04",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-08f72-low-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-high-01",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-high-02",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-high-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-high-05",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-103b2-low-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-103b2-low-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-103b2-low-03",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-103b2-low-04",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-103b2-low-05",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-high-01",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-high-02",
-      "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
-    },
-    {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "id": "r17-panel-11952-high-03",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-high-04",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-156b9c9a0946",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-high-05",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-2149e9c7407b",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-low-01",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-62f0411b46b4",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-low-02",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-69609b2b1b80",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-low-03",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-bf1f4911a84f",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-low-04",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-074d9-dbcce1f15f8b",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
-      "id": "r17-panel-11952-low-05",
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-0a6622356965",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-1f2eddc6d781",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-3c8f8fa2f6f9",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-5d2a0e3497b2",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-5dda9b32f508",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-07ca9-c78fcfe9b6eb",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08234-06a6f3ddb210",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08234-e3f6e770e3b8",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-3bf3a74b3ae7",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-3e89d8d06a19",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-5a7c841bd0cd",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-69d055374ecf",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-7e31778a22e3",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-08f72-def9a674e629",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-103b2-482d6feeb4cb",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-103b2-68de3bc5e897",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-103b2-954eca52c40b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-0279c520944c",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-108b0de34fbc",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-17c9961e2734",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-1a490c266c68",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-3393b35c6b53",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-bc8f314574e2",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "id": "foundry-11952-beddd202ac6f",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     }
   ],
   "curves": [
@@ -2974,6 +2299,7 @@
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json": "7eddf86858dc59a8f676879e9863e1a556ebaac576e1838be7a812e92b2accac",
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json": "9621c25652553978de0332426d8ada196388d85a45b429a99afbc063987e4003",
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json": "2348fdb738c0a17dce0c76616df16e7ed789fcc45d3e03d4089c209b186510d9",
+    "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json": "e54ad618bdf65879dbd3e24971c287f57b9cfd910f234a9a931a756376ec618e",
     "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99"
   }
 }

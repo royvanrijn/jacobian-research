@@ -22,7 +22,7 @@
   ],
   "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md",
   "conductor": "2742069194458596799345884302075797623870005994708395758494099526513144236226179310020403475675064111434724597938417609049823867956840",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "2742069194458596799345884302075797623870005994708395758494099526513144236226179310020403475675064111434724597938417609049823867956840",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "2742069194458596799345884302075797623870005994708395758494099526513144236226179310020403475675064111434724597938417609049823867956840",
@@ -154,9 +154,6 @@
       "-4470264680213806249516331542839/784",
       "13797333206754961700718291793256585271609249915/21952"
     ]
-  ],
-  "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",

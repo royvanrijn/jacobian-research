@@ -6,12 +6,26 @@
     "-26980731709197945620138071348411879999191689756639554107",
     "59050784949742678020206400453950608563158769918311681332025100317700909596864038806"
   ],
-  "bad_primes": null,
+  "bad_primes": [
+    "2",
+    "5",
+    "7",
+    "13",
+    "31",
+    "37",
+    "79",
+    "83",
+    "5918948177",
+    "40979376775759",
+    "372164467533601",
+    "70634513009597815711907585535266333831",
+    "680336696248948441999807925419629728921940387503"
+  ],
   "canonical_source": "elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md",
-  "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
-  "conductor_divisor": "253227995930",
-  "conductor_status": "UNKNOWN",
+  "conductor": "1098493175549842836900888552490831107334980543352221196567534409229996978542673537162498470537294377632466739947206265363199233319274070",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
+  "conductor_divisor": "1098493175549842836900888552490831107334980543352221196567534409229996978542673537162498470537294377632466739947206265363199233319274070",
+  "conductor_status": "EXACT",
   "conductor_upper_bound": "1098493175549842836900888552490831107334980543352221196567534409229996978542673537162498470537294377632466739947206265363199233319274070",
   "discriminant": null,
   "faltings_height": null,
@@ -26,11 +40,16 @@
     "31",
     "37",
     "79",
-    "83"
+    "83",
+    "5918948177",
+    "40979376775759",
+    "372164467533601",
+    "70634513009597815711907585535266333831",
+    "680336696248948441999807925419629728921940387503"
   ],
   "local_search_rank_lower_bound": 24,
   "log_abs_discriminant": null,
-  "log_conductor": null,
+  "log_conductor": 310.9429269545022,
   "model_status": "SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED",
   "naive_height": null,
   "original_to_minimal_isomorphism": null,
@@ -133,10 +152,6 @@
       "-787572670481277794430202236164237682169293/240973122309481",
       "1253668371953907241500367979338816684974356632206062886570384840/3740700238304867192629"
     ]
-  ],
-  "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json",
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-exact-complement/result.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",

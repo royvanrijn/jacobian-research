@@ -9,7 +9,7 @@
   "bad_primes": null,
   "canonical_source": "elliptic-curves/notes/ORBIT8044_SEED_FACTORY_2026-09-08.md",
   "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "31394957417233410",
   "conductor_status": "UNKNOWN",
   "conductor_upper_bound": "4245064567303487841082429472072792481652948553444598463626233778365855643409165492274161776805489664632982004303817513123411571010757583479333107901535452470154051364815075367067818399834048270524032317526053861908753061840035027581366321205103399673036350070",

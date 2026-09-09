@@ -2,8 +2,8 @@
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
 [expanded inventory](../INVENTORY.md) now index **321 distinct curves**,
-with **195 exact conductors** and **126 unresolved conductors**, using the third
-replayed conductor snapshot plus the [foundry additions](FOUNDRY_CURVE_LEDGER_2026-09-09.md). Rank entries
+with **250 exact conductors** and **71 unresolved conductors**, using the
+merged conductor snapshot plus the [foundry additions](FOUNDRY_CURVE_LEDGER_2026-09-09.md). Rank entries
 are certified lower bounds, not exact ranks.
 
 The selected updates are:
@@ -98,6 +98,15 @@ This adds eleven exact conductors to the second snapshot's publication,
 bringing the ledger to195 exact and96 unresolved. It is a fixed cutoff;
 live checkpoints and later completions are not silently included.
 
+The [merged fourth snapshot](../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)
+combines all161 original-roster cases with the30-curve foundry successor
+queue. It contains191 sealed, independently replayed records:120 exact and71
+partial. Added to the130 conductors already exact before these passes, the
+321-curve inventory now has250 exact and71 unresolved. Its SHA-256 is recorded
+in the generated artifact manifest. The merge preserves the earlier snapshots,
+all original equations, and every queue certificate; it does not rerun point
+searches or silently include live checkpoints.
+
 ### Preserved V1 stop and V2 continuation
 
 The post-reboot audit found **128 sealed results:54 exact and74 partial**.
@@ -124,8 +133,8 @@ independently replay exactly; corrupted transport metadata is rejected.
 The zero-search Sage preflight passed all33 actual continuation models before
 launch. Four detached workers retain the same90-second build,120-second replay
 and2GiB per-process caps. Completed V1 cases are not repeated. The published
-ledger includes all128 retained V1 results and the completed33-case
-continuation through the third immutable snapshot.
+ledger includes all original V1/V2 results, the completed long continuation,
+and the30-curve foundry queue through the fourth immutable snapshot.
 
 ```sh
 python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
@@ -182,7 +191,7 @@ including matching independent replay evidence for exact results.
 ```sh
 python3 research/elliptic-curves/cas/render_main_readme_curves.py
 python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
-~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_merged.py check
+~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_final_v4.py check
 python3 research/elliptic-curves/cas/run_inventory_conductor_long_v3.py status
 ```
 

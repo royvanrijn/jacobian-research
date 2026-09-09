@@ -9,7 +9,7 @@
   "bad_primes": null,
   "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
   "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "32603142",
   "conductor_status": "UNKNOWN",
   "conductor_upper_bound": "1276718555553219348647902714348038009376330637776141367258870569137724032190426653273260870820404647708709745436541092118159706521038639466868669158197269738",

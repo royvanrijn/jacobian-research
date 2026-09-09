@@ -6,11 +6,23 @@
     "-337911522783246024257718299454485406718341280",
     "3415598941869565270427847058634448071005004987151035535937563493376"
   ],
-  "bad_primes": null,
-  "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
-  "conductor_divisor": "1328146470301384734",
-  "conductor_status": "UNKNOWN",
+  "bad_primes": [
+    "2",
+    "3",
+    "7",
+    "11",
+    "13",
+    "23",
+    "113",
+    "227989",
+    "373199",
+    "2162885879871485846093156105489",
+    "5912792381583214662717818488985117051897509557213202387865642649449033"
+  ],
+  "conductor": "16985260326869442240320013710029158637290552319664025387466309586569668006685967746992732929256698394902954211166536558",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
+  "conductor_divisor": "16985260326869442240320013710029158637290552319664025387466309586569668006685967746992732929256698394902954211166536558",
+  "conductor_status": "EXACT",
   "conductor_upper_bound": "16985260326869442240320013710029158637290552319664025387466309586569668006685967746992732929256698394902954211166536558",
   "discriminant": "-2570462587219874659836825636759103757954209255478772087610506075960375721436949263076523896166395333023576528316992755808476534550765568",
   "faltings_height": 24.684957520967636,
@@ -26,11 +38,13 @@
     "23",
     "113",
     "227989",
-    "373199"
+    "373199",
+    "2162885879871485846093156105489",
+    "5912792381583214662717818488985117051897509557213202387865642649449033"
   ],
   "local_search_rank_lower_bound": 23,
   "log_abs_discriminant": 311.79307343193335,
-  "log_conductor": null,
+  "log_conductor": 272.2348018086674,
   "naive_height": 319.9210835393378,
   "original_to_minimal_isomorphism": [
     "1",
@@ -134,8 +148,7 @@
     ]
   ],
   "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260905-14.json",
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+    "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260905-14.json"
   ],
   "rank_certificate": {
     "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",

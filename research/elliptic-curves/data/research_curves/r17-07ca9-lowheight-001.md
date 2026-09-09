@@ -10,7 +10,7 @@ Source a-invariants (global minimality has not been certified for this inventory
 0, 0, 0, -9211550332614992830236744360480424665515914796400, 10853943817273800323244226230914102363327378087643057973803227710413840000
 ```
 
-Conductor status: **UNKNOWN**. Minimal discriminant, naive height and Faltings height are uncomputed in this inventory.
+Conductor status: **EXACT**. Minimal discriminant, naive height and Faltings height are uncomputed in this inventory.
 
 Certified point count: 24. This is a rank lower bound; bounded no-gain searches do not prove exact rank.
 
@@ -18,22 +18,16 @@ Certified point count: 24. This is a rank lower bound; bounded no-gain searches 
 
 This finite seed supplement makes no literature-wide novelty or conductor-record claim.
 
-Certified conductor divisor:
-
-```text
-869611819276200
-```
-
-Certified conductor upper bound:
+Exact conductor:
 
 ```text
 14189781610604650455304436845458253091540405678594779795115864833072817854576821124631755490037180274691056200
 ```
 
-Proved bad primes (incomplete):
+Complete bad primes:
 
 ```text
-2, 3, 5, 7, 11, 13, 19, 29, 31, 37, 79
+2, 3, 5, 7, 11, 13, 19, 29, 31, 37, 79, 3359, 206016077, 5010148807878199728677526882303584663357, 4706396751865663528599571000240876529216851
 ```
 
-[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json)
+[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)

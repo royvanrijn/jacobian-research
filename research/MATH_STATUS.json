@@ -54181,6 +54181,34 @@
       "priority": "derived"
     },
     {
+      "id": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Merged 321-curve conductor snapshot certifies250 exact conductors and71 unresolved bounds",
+      "scope": "The immutable merge covers all191 curves whose conductors were missing from the original291-case conductor roster or added by the foundry ledger:161 original cases plus30 foundry additions. It selects only sealed independently replayed endpoints, with120 exact conductors and71 partial UNKNOWN bounds. Fresh portable replay checks every selected certificate, exact denominator-clearing Q-isomorphism for rational models, prime certificates, discriminant/conductor products, and Sage generic Tate/PARI elllocalred agreement. Adding the130 conductors already exact before these passes gives250 exact and71 unresolved across the321-curve inventory. No exact-rank, conductor-record, worldwide-novelty or new point-search claim is made.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md",
+      "dependencies": ["EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909"],
+      "checker": "elliptic-curves/cas/index_inventory_conductor_final_v4.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d1a7caefb82668b6d0f86c35ad80da6b59a331f15e75d7cd36065c19a94a8a8a",
+      "software_lock": [
+        "elliptic-curves/cas/index_inventory_conductor_final_v4.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/inventory_conductor_worker_v2.py",
+        "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909",
       "kind": "example",
       "state": "proved",

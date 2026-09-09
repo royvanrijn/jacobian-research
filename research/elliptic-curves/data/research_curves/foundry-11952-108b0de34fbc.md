@@ -17,3 +17,23 @@ Certified point count: 22. This is a rank lower bound; bounded no-gain searches 
 [Canonical proof note](../../../elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md) · [Equation and points](../../../artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json) · [Independent rank proof](../../../artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json)
 
 This finite seed supplement makes no literature-wide novelty or conductor-record claim.
+
+Certified conductor divisor:
+
+```text
+11340420
+```
+
+Certified conductor upper bound:
+
+```text
+375273426031479203939406143930124058483342572913319233286903601243681402506284143940758908957246490312390969326220
+```
+
+Proved bad primes (incomplete):
+
+```text
+2, 3, 5, 7, 13, 31, 67
+```
+
+[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)

@@ -26,7 +26,7 @@
     "134222888411383659385398542249780999909008559"
   ],
   "conductor": "905909464398059573888884453164021852595037255859750980584556797537971211177707616036183294197437862152485095201354227062297890",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "905909464398059573888884453164021852595037255859750980584556797537971211177707616036183294197437862152485095201354227062297890",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "905909464398059573888884453164021852595037255859750980584556797537971211177707616036183294197437862152485095201354227062297890",
@@ -172,9 +172,7 @@
     ]
   ],
   "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260906-91.json",
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json",
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+    "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260906-91.json"
   ],
   "rank_certificate": {
     "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",

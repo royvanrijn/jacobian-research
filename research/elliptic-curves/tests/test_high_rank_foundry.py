@@ -53,6 +53,15 @@ def test_breadth_is_reserved_by_expensive_time_not_current_rank():
     assert policy.choose_lane(100,0,policy.DEFAULTS,has_exploit=False)=='fresh'
 
 
+def test_batch_work_grows_in_steps_without_a_daily_ceiling():
+    config={**policy.DEFAULTS,'daily_point_calls':None,'daily_worker_seconds':None}
+    assert policy.effective_batch_calls(config,0)==100
+    assert policy.effective_batch_calls(config,99)==100
+    assert policy.effective_batch_calls(config,100)==125
+    assert policy.effective_batch_calls(config,308)==175
+    assert policy.effective_batch_calls(config,2000)==300
+
+
 def test_parent_refresh_escapes_maximum_span_and_traverses_disjoint_samples():
     maximum=list(range(1,44))
     blocks=[policy.parent_masks('103b2',maximum,i)[0] for i in range(3)]

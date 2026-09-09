@@ -19,7 +19,7 @@ import traceback
 import zipfile
 
 from v3_warm_support import read, sha, atomic as _atomic, same_process, process_info, require
-from high_rank_foundry_policy import DEFAULTS, FAMILIES, apply_result, choose_lane, utility, next_bank
+from high_rank_foundry_policy import DEFAULTS, FAMILIES, apply_result, choose_lane, utility, next_bank, effective_batch_calls
 from high_rank_foundry_intake import Intake, jkey, matches, supported
 
 CAS=Path(__file__).resolve().parent
@@ -119,6 +119,10 @@ def prepare(folder,args):
         require(args.catalogue is None,'inherited campaigns retain their pinned catalogue')
         from high_rank_foundry_migration import freeze
         inherited_config=freeze(args.inherit_state,frozen)
+        if args.unlimited_daily_budget:
+            inherited_config.update(daily_point_calls=None,daily_worker_seconds=None,
+                                    batch_growth_step=25,batch_growth_every=100,
+                                    max_batch_calls=300)
     else:
         projection=read(LOCAL/'r17-60-panel-v1/selection-input.json')
         public_meta=read(ROOT/'elliptic-curves/data/icarm_current.json')
@@ -404,15 +408,16 @@ def dispatch(folder,db,intake):
         kind='conductor';c=max(eligible,key=lambda c:(c['rank'],c['id']));c['conductor_attempted_rank']=c['rank']
     bank=c['bank_index'] if kind=='fresh' or revival else next_bank(c)
     use_cached=bool(kind=='exploit' and not revival and c.get('head') and bank==c['bank_index'])
+    allowance=0 if kind=='conductor' else effective_batch_calls(config,fresh_count)
     jid=(db.execute('SELECT max(id) FROM jobs').fetchone()[0] or 0)+1
     path=frozen/'foundry-jobs'/f'job-{jid:07d}'
     request={'schema':'foundry-job.v1','kind':kind,'candidate':c,'bank_index':bank,'use_cached':use_cached,
-             'revival':revival,'allowance':config['batch_calls'],'config':config,'catalogue':config['catalogue'],
+             'revival':revival,'allowance':allowance,'config':config,'catalogue':config['catalogue'],
              'conductor_gate':c.get('conductor_gate'),'decision':{'utility':utility(c),'worker_exposure_seconds':exposure,
              'fresh_share':config['fresh_share'],'rejected':rejected,'intake_cursor_after':intake.cursor}}
     j={'id':jid,'cid':c['id'],'state':'PENDING','kind':kind,'path':str(path.relative_to(frozen)),
        'created_at':time.time(),'day':int(time.time()//86400),'initial_rank':c['rank'],'retries':0,
-       'reserved_calls':(198+config['max_crash_retries']) if kind=='fresh' or (revival and c['rank']==17) else 0 if kind=='conductor' else config['batch_calls']+config['max_crash_retries'],
+       'reserved_calls':(allowance+98+config['max_crash_retries']) if kind=='fresh' or (revival and c['rank']==17) else 0 if kind=='conductor' else allowance+config['max_crash_retries'],
        'reserved_seconds':150 if kind=='conductor' else config['job_seconds'],'request':request}
     with db:
         putcurve(db,c);putjob(db,j);putmeta(db,'intake_cursor',intake.cursor)
@@ -463,7 +468,10 @@ def controller(folder,job_limit=None):
                 wall=sum(j.get('charged_seconds',j['reserved_seconds']) for j in today)
                 disk=shutil.disk_usage(folder).free;inodes=os.statvfs(folder).f_favail
                 wait_reason=None
-                if calls+198+config['max_crash_retries']>config['daily_point_calls'] or wall+config['job_seconds']>config['daily_worker_seconds']:
+                point_cap=config.get('daily_point_calls')
+                worker_cap=config.get('daily_worker_seconds')
+                if ((point_cap is not None and calls+198+config['max_crash_retries']>point_cap) or
+                    (worker_cap is not None and wall+config['job_seconds']>worker_cap)):
                     wait_reason='WAIT_DAILY_BUDGET'
                 elif disk<config['min_free_gib']*1024**3 or inodes<config['min_free_inodes']:
                     wait_reason='WAIT_DISK_RESERVE'
@@ -492,7 +500,14 @@ def guardian(folder,job_limit=None):
                  close_fds=True,env=runtime_env(config))
             started=time.monotonic();rc=proc.wait()
         if time.monotonic()-started>600: crashes=0
-        if rc==0: break
+        if rc==0:
+            db=connect(folder);state=meta(db,'status');db.close()
+            if (folder/'STOP').exists() or state in ('STOPPED','HALTED_REPEATED_FAILURE','HALTED_CONTROLLER_FAILURE'):
+                break
+            # A bounded controller run ending cleanly is an opportunity to
+            # continue the autonomous campaign, not a reason to leave it idle.
+            time.sleep(1)
+            continue
         crashes+=1
         save(folder/'guardian-error.json',{'controller_returncode':rc,'crashes':crashes,'at':time.time()})
         if crashes>config['max_crash_retries']:
@@ -542,6 +557,7 @@ def main():
     p.add_argument('mode',choices=('prepare','preflight','launch','resume','guardian','controller','status','stop','verify'))
     p.add_argument('--folder',type=Path,default=DEFAULT_FOLDER);p.add_argument('--workers',type=int,default=4)
     p.add_argument('--catalogue',type=Path);p.add_argument('--job-limit',type=int)
+    p.add_argument('--unlimited-daily-budget',action='store_true')
     p.add_argument('--inherit-state',type=Path,help='Preserve a stopped campaign ledger and intake in a new source snapshot')
     a=p.parse_args();folder=a.folder.resolve()
     if a.mode=='prepare':prepare(folder,a)

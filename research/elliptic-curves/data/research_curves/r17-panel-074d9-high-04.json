@@ -9,7 +9,7 @@
   "bad_primes": null,
   "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
   "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "1317498",
   "conductor_status": "UNKNOWN",
   "conductor_upper_bound": "195163538346539051209235018131624522775288173120900507777671332061759300065404039428265054255379920972700662131822144181237701964410504112335786",
@@ -111,9 +111,6 @@
       "-65004137918392815015892305386037/19321",
       "4330132304481971267808782186624727773265161116224/2685619"
     ]
-  ],
-  "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",

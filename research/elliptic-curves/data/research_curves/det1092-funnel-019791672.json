@@ -20,7 +20,7 @@
   ],
   "canonical_source": "elliptic-curves/notes/DET1092_FUNNEL_FIRST_SEEDS_2026-09-08.md",
   "conductor": "355891510515041607169244275371228661482898654401920101446756578688192941829564781700981278573689414449809248273568163983465166511654",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "355891510515041607169244275371228661482898654401920101446756578688192941829564781700981278573689414449809248273568163983465166511654",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "355891510515041607169244275371228661482898654401920101446756578688192941829564781700981278573689414449809248273568163983465166511654",
@@ -122,9 +122,6 @@
       "20530018427265592811758456856496586203/9470680037809",
       "13327365994284232952776754961123549610990395140162402304/29145515870315193623"
     ]
-  ],
-  "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/det1092_funnel_first_seeds_v1/seeds/funnel-019791672/standalone-replay.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",

@@ -1,0 +1,135 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/inventory291-conductors-long-v3/cases/r17-07ca9-fresh-002/build.supervisor.json": "e1691d5b01cc9d20869f2c73db419c52b785626c3c2ca6f980569cee31bbdfb8",
+    "artifacts/local/elliptic-curves/inventory291-conductors-long-v3/cases/r17-07ca9-fresh-002/conductor.json": "f8852090c675382ce8c8e32fa8fcd4e43817664c802501e2b762f8b431a9cae4",
+    "artifacts/local/elliptic-curves/inventory291-conductors-long-v3/cases/r17-07ca9-fresh-002/input.json": "a2e4b61cfa0bdd7d5ef92ceedce24f86588afc979eb3cca91b0f7a673108a0ae",
+    "artifacts/local/elliptic-curves/inventory291-conductors-long-v3/cases/r17-07ca9-fresh-002/replay.supervisor.json": "7a1489084ac4605e0668427c8cdbf8cbbe1dc27dba1881600bf33b72b0d51618"
+  },
+  "build_outcome": "completed",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "109609589984704295293459320172043576975143087877436734344774826451645894299635059365331679717479049106653041020947522152270624523262442",
+    "conductor_upper_bound": "109609589984704295293459320172043576975143087877436734344774826451645894299635059365331679717479049106653041020947522152270624523262442",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-7430520563173433743795041722286377455784564538401722032",
+      "8565052191078301637826295856722517162584285192233366608476675408429374521588791680"
+    ],
+    "discriminant_abs": "5435019362436738072971229003938778422994505625594879644002187991078716338215397011811021788467032229326156411510199903880341343413510774262083610915784613190223003648",
+    "exact_conductor": "109609589984704295293459320172043576975143087877436734344774826451645894299635059365331679717479049106653041020947522152270624523262442",
+    "id": "r17-07ca9-fresh-002",
+    "input_sha256": "a2e4b61cfa0bdd7d5ef92ceedce24f86588afc979eb3cca91b0f7a673108a0ae",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 40,
+        "kodaira": "I16",
+        "minimal_discriminant_valuation": 16,
+        "pari_local_reduction": "[1, 20, [4, -4, 2, 32], 16]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 20,
+        "kodaira": "I8",
+        "minimal_discriminant_valuation": 8,
+        "pari_local_reduction": "[1, 12, [3, 3, 0, 0], 8]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 2,
+        "discriminant_valuation": 4,
+        "kodaira": "IV",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[2, 4, [1, 0, 0, 0], 3]",
+        "prime": "7",
+        "prime_certificate": "7"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 5,
+        "kodaira": "I5",
+        "minimal_discriminant_valuation": 5,
+        "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "71",
+        "prime_certificate": "71"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 1,
+        "kodaira": "I1",
+        "minimal_discriminant_valuation": 1,
+        "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+        "prime": "488301211",
+        "prime_certificate": "488301211"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 1,
+        "kodaira": "I1",
+        "minimal_discriminant_valuation": 1,
+        "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+        "prime": "2895429592809251711",
+        "prime_certificate": "2895429592809251711"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 1,
+        "kodaira": "I1",
+        "minimal_discriminant_valuation": 1,
+        "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+        "prime": "46629864309841715100112595683",
+        "prime_certificate": "[[46629864309841715100112595683, 184605146206505, 35039848221, 0, [44424700650114313691284717053, 22426333056142979831433574259]]]"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 1,
+        "kodaira": "I1",
+        "minimal_discriminant_valuation": 1,
+        "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+        "prime": "492648259591195454132456024766389",
+        "prime_certificate": "[[492648259591195454132456024766389, 32473089242022034, 148, 1, [233312478172329293860164078108317, 98980262724192664931776777006337]], [3328704456697266362563289072597, -2223939618167438, 1401253268, 1, [1822753735722361515018457415325, 523806325268785072249440340644]], [2375519495806998243877, 83898174715, 2597587, 0, [1660783965526645617188, 459200165413067123445]]]"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 1,
+        "kodaira": "I1",
+        "minimal_discriminant_valuation": 1,
+        "pari_local_reduction": "[1, 5, [1, 0, 0, 0], 1]",
+        "prime": "1130589432633693798607328235540637894253",
+        "prime_certificate": "[[1130589432633693798607328235540637894253, 66893582600830862564, 76002361690, 257928579098499804293378819113462268316, [796811094930376230675667034508618402337, 254003549652131967348679919292655145115]], [14875714484309912482410843001, 243542309677969, 16028300149, 0, [10658447909366909252852385227, 3635431922227706210082657975]]]"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 20,
+    "remaining_cofactor": "1",
+    "sage_version": "10.9",
+    "status": "EXACT",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "r17-07ca9-fresh-002",
+  "protocol_sha256": "f853459d907ca25f7576a4f854dc303531ba4e4094aa161e909a6762ff3450ee",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

@@ -20,7 +20,7 @@
   ],
   "canonical_source": "elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md",
   "conductor": "3893229105546792088809030499615066439517843653040305737306232196011950228525958640345027113223112681206747409890",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json",
   "conductor_divisor": "3893229105546792088809030499615066439517843653040305737306232196011950228525958640345027113223112681206747409890",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "3893229105546792088809030499615066439517843653040305737306232196011950228525958640345027113223112681206747409890",
@@ -142,10 +142,6 @@
       "1227673747005665746290618589764673473416172/439637064888666241",
       "-92168994426300802436758262134108043249448609488645068116403200/291501940152089388132484289"
     ]
-  ],
-  "prior_conductor_certificates": [
-    "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json",
-    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",

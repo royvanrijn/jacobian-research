@@ -7,6 +7,7 @@ FAMILIES = ('074d9', '07ca9', '08234', '08f72', '103b2', '11952')
 DEFAULTS = {
     'workers': 4, 'batch_calls': 100, 'fresh_share': 0.60,
     'daily_point_calls': 60000, 'daily_worker_seconds': 172800,
+    'batch_growth_step': 25, 'batch_growth_every': 100, 'max_batch_calls': 300,
     'phase_seconds': 1800, 'job_seconds': 10800, 'rss_bytes': 3*1024**3,
     'min_free_gib': 20, 'min_free_inodes': 100000,
     'height': 125000, 'point_seconds': 10, 'map_seconds': 5,
@@ -14,6 +15,15 @@ DEFAULTS = {
     'conductor_seconds': 30, 'conductor_share': 0.02,
     'revival_every': 40, 'max_revivals': 2,
 }
+
+
+def effective_batch_calls(config, fresh_completed):
+    """Increase bounded per-job work in fixed steps as fresh fibres accumulate."""
+    base = int(config['batch_calls'])
+    step = int(config.get('batch_growth_step', 0))
+    every = max(1, int(config.get('batch_growth_every', 100)))
+    ceiling = int(config.get('max_batch_calls', base))
+    return min(ceiling, base + step * (int(fresh_completed) // every))
 
 
 def hashed(*parts):

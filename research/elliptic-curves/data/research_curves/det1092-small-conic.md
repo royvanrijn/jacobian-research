@@ -30,6 +30,6 @@ Complete bad primes:
 2, 3, 5, 7, 11, 13, 23, 29, 53, 71, 197, 373, 78803, 1016581, 6653996201, 322394619490937802650580653684368654991246035924824156630924900773887321121377731954893372018994383
 ```
 
-[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json)
+[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)
 
 Duplicate seed packets on this same rational-isomorphism class: `det1092-orbit8044-000001`.
