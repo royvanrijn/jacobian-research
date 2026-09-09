@@ -1,0 +1,63 @@
+{
+  "active_jobs": [
+    {
+      "cid": "f-695dcca2bcb6a33335f6",
+      "id": 74,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000074",
+      "pid": 1782747,
+      "token": "1476915"
+    },
+    {
+      "cid": "f-6552c5f811a9ebadf811",
+      "id": 75,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000075",
+      "pid": 1784666,
+      "token": "1477226"
+    },
+    {
+      "cid": "f-6b5ae31c63e3741631e0",
+      "id": 76,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000076",
+      "pid": 1790874,
+      "token": "1477537"
+    },
+    {
+      "cid": "f-48c580c8ef831e2ed57b",
+      "id": 77,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000077",
+      "pid": 1792693,
+      "token": "1477848"
+    }
+  ],
+  "at": 1788961668.224751,
+  "completed_point_returns": {
+    "74": 31,
+    "75": 61,
+    "76": 47,
+    "77": 72
+  },
+  "controller": {
+    "pid": 1778816,
+    "token": "1476249"
+  },
+  "failure_streak": 0,
+  "guardian": {
+    "pid": 1778704,
+    "token": "1476229"
+  },
+  "guardian_session_id": 1778704,
+  "inherited_failure_count": 4,
+  "intake_ordinal": 40,
+  "launch_receipt_sha256": "325b4b8032d3e8cbd70413c41401e2cec2d83d768325078961a368262aa63bfd",
+  "manifest_sha256": "40756d66a8fa6905607e93c5bfe3368d9b0db2115e8b414356cc883cca723f9c",
+  "new_seed_misses_skipped": [
+    72,
+    73
+  ],
+  "no_job_limit": true,
+  "status": "PASS_RESTART_ADVANCED_BEYOND_FAILED_RAW_INTAKE"
+}

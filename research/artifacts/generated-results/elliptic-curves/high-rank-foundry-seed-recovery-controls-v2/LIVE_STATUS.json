@@ -1,0 +1,59 @@
+{
+  "active_jobs": [],
+  "best": [],
+  "certified_rank_counts": {},
+  "charged_point_budget": 0,
+  "claim_boundary": "Adaptively selected, variably censored lower bounds. Group summaries do not establish a causal law, exact ranks, world novelty, or conductor records.",
+  "controller": {
+    "pid": 1663665,
+    "token": "1465661"
+  },
+  "groups": {
+    "074d9/raw": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    },
+    "07ca9/raw": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    },
+    "08234/raw": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    },
+    "08f72/raw": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    }
+  },
+  "guardian": null,
+  "inherited_from": null,
+  "jobs": {
+    "SKIPPED": 4
+  },
+  "new_curves": 0,
+  "point_calls": 0,
+  "queued_curves": {
+    "UNCERTIFIED_SEED": 4
+  },
+  "status": "STOPPED",
+  "updated_at": 1788961479.7880504,
+  "worker_seconds": 15.02350664138794,
+  "workers": 4
+}

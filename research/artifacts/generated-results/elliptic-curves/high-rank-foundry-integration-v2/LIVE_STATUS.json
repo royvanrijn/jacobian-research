@@ -1,0 +1,213 @@
+{
+  "active_jobs": [],
+  "best": [
+    {
+      "certificate": null,
+      "family": "103b2",
+      "historical_baseline": true,
+      "id": "warm-103b2-low-02",
+      "packet": "foundry-jobs/job-0000002/packet.json",
+      "parameter": "877/781",
+      "rank": 27,
+      "stale_calls": 133,
+      "state": "READY",
+      "total_calls": 201
+    },
+    {
+      "certificate": null,
+      "family": "103b2",
+      "historical_baseline": true,
+      "id": "warm-103b2-low-05",
+      "packet": "foundry-warm/103b2-low-05.json",
+      "parameter": "-621/281",
+      "rank": 26,
+      "stale_calls": 58,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "074d9",
+      "historical_baseline": true,
+      "id": "warm-074d9-low-04",
+      "packet": "foundry-warm/074d9-low-04.json",
+      "parameter": "-1013/476",
+      "rank": 26,
+      "stale_calls": 60,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "11952",
+      "historical_baseline": true,
+      "id": "warm-11952-low-04",
+      "packet": "foundry-warm/11952-low-04.json",
+      "parameter": "287/324",
+      "rank": 26,
+      "stale_calls": 93,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "07ca9",
+      "historical_baseline": true,
+      "id": "warm-07ca9-high-05",
+      "packet": "foundry-warm/07ca9-high-05.json",
+      "parameter": "-3267/2257",
+      "rank": 25,
+      "stale_calls": 38,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "103b2",
+      "historical_baseline": true,
+      "id": "warm-103b2-low-03",
+      "packet": "foundry-warm/103b2-low-03.json",
+      "parameter": "-550/521",
+      "rank": 25,
+      "stale_calls": 74,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "08f72",
+      "historical_baseline": true,
+      "id": "warm-08f72-high-04",
+      "packet": "foundry-warm/08f72-high-04.json",
+      "parameter": "-2318/403",
+      "rank": 25,
+      "stale_calls": 82,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "07ca9",
+      "historical_baseline": true,
+      "id": "warm-07ca9-low-04",
+      "packet": "foundry-warm/07ca9-low-04.json",
+      "parameter": "49/353",
+      "rank": 25,
+      "stale_calls": 89,
+      "state": "READY",
+      "total_calls": 101
+    },
+    {
+      "certificate": null,
+      "family": "08234",
+      "historical_baseline": true,
+      "id": "warm-08234-high-04",
+      "packet": "foundry-jobs/job-0000003/packet.json",
+      "parameter": "2695/232",
+      "rank": 24,
+      "stale_calls": 108,
+      "state": "READY",
+      "total_calls": 209
+    },
+    {
+      "certificate": null,
+      "family": "08f72",
+      "historical_baseline": true,
+      "id": "warm-08f72-high-05",
+      "packet": "foundry-warm/08f72-high-05.json",
+      "parameter": "1245/2519",
+      "rank": 23,
+      "stale_calls": 21,
+      "state": "READY",
+      "total_calls": 105
+    },
+    {
+      "certificate": null,
+      "family": "11952",
+      "historical_baseline": true,
+      "id": "warm-11952-high-02",
+      "packet": "foundry-warm/11952-high-02.json",
+      "parameter": "443/2529",
+      "rank": 21,
+      "stale_calls": 11,
+      "state": "READY",
+      "total_calls": 104
+    },
+    {
+      "certificate": null,
+      "family": "074d9",
+      "historical_baseline": true,
+      "id": "warm-074d9-low-01",
+      "packet": "foundry-warm/074d9-low-01.json",
+      "parameter": "569/530",
+      "rank": 20,
+      "stale_calls": 0,
+      "state": "READY",
+      "total_calls": 115
+    },
+    {
+      "certificate": null,
+      "family": "074d9",
+      "historical_baseline": true,
+      "id": "warm-074d9-high-01",
+      "packet": "foundry-warm/074d9-high-01.json",
+      "parameter": "-3921/797",
+      "rank": 20,
+      "stale_calls": 4,
+      "state": "READY",
+      "total_calls": 124
+    },
+    {
+      "certificate": null,
+      "family": "11952",
+      "historical_baseline": true,
+      "id": "warm-11952-high-01",
+      "packet": "foundry-warm/11952-high-01.json",
+      "parameter": "-137/2327",
+      "rank": 19,
+      "stale_calls": 19,
+      "state": "READY",
+      "total_calls": 162
+    }
+  ],
+  "certified_rank_counts": {},
+  "charged_point_budget": 596,
+  "claim_boundary": "Adaptively selected, variably censored lower bounds. Group summaries do not establish a causal law, exact ranks, world novelty, or conductor records.",
+  "controller": {
+    "pid": 1258440,
+    "token": "480226"
+  },
+  "groups": {
+    "074d9/all": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    },
+    "07ca9/all": {
+      "attempted": 1,
+      "calls": 0,
+      "certified": 0,
+      "rank_sum": 0,
+      "seeded": 0,
+      "unresolved": 1
+    }
+  },
+  "guardian": null,
+  "jobs": {
+    "DONE": 2,
+    "FAILED": 2
+  },
+  "new_curves": 0,
+  "point_calls": 200,
+  "queued_curves": {
+    "QUARANTINED": 2,
+    "READY": 14
+  },
+  "status": "STOPPED",
+  "updated_at": 1788953768.4612432,
+  "worker_seconds": 746.353821516037,
+  "workers": 2
+}

@@ -32,7 +32,19 @@ def apply_refresh(rows):
         claim = claim_for(entry)
         source = documents[entry['source']]
         family, parameter = entry['family'], entry['parameter']
-        if entry['kind'] == 'productive':
+        if entry['kind'] == 'foundry':
+            selected = source['records'][entry['record']]['result']
+            receipt = selected['certificate_replay']
+            packet = selected['packet']
+            digest = hashlib.sha256((json.dumps(packet,indent=2,sort_keys=True)+'\n').encode()).hexdigest()
+            if (selected['status'] != 'PASS_CERTIFIED_SEARCH'
+                    or receipt['status'] != 'PASS_TWO_FINITE_IMPLEMENTATIONS'
+                    or digest != selected['packet_sha256'] or digest != receipt['packet_sha256']
+                    or selected['family'] != family or selected['parameter'] != parameter
+                    or selected['rank_lower_bound'] != packet['rank_lower_bound']
+                    or receipt['rank_lower_bound'] != packet['rank_lower_bound']):
+                raise ArithmeticError('foundry packet identity/replay differs')
+        elif entry['kind'] == 'productive':
             if source['status'] != 'PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY':
                 raise ArithmeticError('productive replay did not pass')
             def record(name):
@@ -88,8 +100,13 @@ def apply_refresh(rows):
         if existing:
             if rank <= existing['rank_lower_bound'] or not cert.isomorphic(model, existing['ainvs']):
                 raise ArithmeticError('rank update does not strengthen the same curve')
-            u, r, s, t = map(F, existing['original_to_minimal_isomorphism'])
-            transported = [((x-r)/u**2, (y-s*(x-r)-t)/u**3) for x, y in points]
+            if model == tuple(map(F,existing['ainvs'])):
+                transported = points
+            else:
+                if not existing.get('original_to_minimal_isomorphism'):
+                    raise ArithmeticError('different source model needs an explicit transport')
+                u, r, s, t = map(F, existing['original_to_minimal_isomorphism'])
+                transported = [((x-r)/u**2, (y-s*(x-r)-t)/u**3) for x, y in points]
             if any(not cert.is_on_weierstrass_curve(existing['ainvs'], p) for p in transported):
                 raise ArithmeticError('updated point transport failed')
             row = existing
@@ -112,7 +129,7 @@ def apply_refresh(rows):
             rank_source_certificate=entry['source'], rank_certificate=entry['source'],
             canonical_source=claim['canonical_source'], status_claim=entry['claim'],
             source_sha256=manifest['sources'][entry['source']])
-        if existing:
+        if existing and existing.get('original_to_minimal_isomorphism'):
             row['rank_certificate_model'] = 'Selected source packet; points transported to the certified minimal model by the saved isomorphism.'
 
     for entry in manifest['conductors']:

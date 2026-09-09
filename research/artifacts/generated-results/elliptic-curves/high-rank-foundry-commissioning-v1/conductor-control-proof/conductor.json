@@ -1,0 +1,33 @@
+{
+  "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+  "conductor_divisor": "11",
+  "conductor_upper_bound": "11",
+  "curve": [
+    "0",
+    "-1",
+    "1",
+    "-10",
+    "-20"
+  ],
+  "discriminant_abs": "161051",
+  "exact_conductor": "11",
+  "id": "conductor11-fixture",
+  "input_sha256": "06a49cc1309fba79f077f68338bb8a6e59d601a0571cc3cffbd44b1a2aa0a8d9",
+  "local_data": [
+    {
+      "conductor_exponent": 1,
+      "discriminant_valuation": 5,
+      "kodaira": "I5",
+      "minimal_discriminant_valuation": 5,
+      "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+      "prime": "11",
+      "prime_certificate": "11"
+    }
+  ],
+  "pari_version": "(2, 17, 3)",
+  "rank_lower_bound": 0,
+  "remaining_cofactor": "1",
+  "sage_version": "10.9",
+  "status": "EXACT",
+  "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+}

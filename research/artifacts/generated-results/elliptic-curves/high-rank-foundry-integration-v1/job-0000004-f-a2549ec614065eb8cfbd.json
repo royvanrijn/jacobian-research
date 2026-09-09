@@ -1,0 +1,21 @@
+{
+  "calls": null,
+  "claim_boundary": "No rank upper bound or no-point conclusion. Raw checkpoints preserved.",
+  "error": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 184, in run\n    result=conductor_job(job,request) if request['kind']=='conductor' else search_job(job,request)\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 105, in search_job\n    step(job,phase)\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 59, in step\n    raise PhaseFailure(phase,record)\nPhaseFailure: seed-prepare: backend_failure\n",
+  "evidence": {
+    "generic/f-a2549ec614065eb8cfbd/seed-M17.json": "40e2c95e4a85e706155e02a5f1252d857cb312acd29f7445371382a3a8b9539d",
+    "generic/prepared.json": "3618be886cbdec5ef05f0c92c6ce570078bd6fda4aef491f35f036e7c55ca9aa",
+    "generic/protocol.json": "38a799c570fe9265085b2fe4703451b4fea5614ba4b93a53e89cba0eebb1dfec",
+    "generic/verified.json": "e95e7b4ccedc69584f4ce9da201d7bfefce85616b6f320b64c90dc3c115007c8",
+    "phases/generic-00-0/supervisor.json": "d4dd041ec2424fe6bbafbbd08e7ff7465155d0ebf518572718dd9a1980c5b0a1",
+    "phases/seed-prepare-00-0/supervisor.json": "5800886850479eec5bc0b1bec56d8c9f69b11f1b41f3f277a7d4b9286acd08ff",
+    "protocol.json": "07155ba9424cc57d20dab24a3e24be1367c462b187943481779163275a047b1a",
+    "request.json": "0f7e66dd07f6b58de61d17bfd9dcb8c3dab8160098bcf119872db50959f73159",
+    "roster.json": "6b8636488240d9058ef8f808289b3bdd668755822a6f0e74cc66cd0e01e96746"
+  },
+  "outcome": "backend_failure",
+  "phase": "seed-prepare",
+  "request_sha256": "0f7e66dd07f6b58de61d17bfd9dcb8c3dab8160098bcf119872db50959f73159",
+  "status": "UNRESOLVED_JOB_FAILURE",
+  "wall_seconds": 5.810013294219971
+}

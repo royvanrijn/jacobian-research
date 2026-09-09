@@ -1,5 +1,11 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [autonomous high-rank foundry](notes/HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md)
+combines fresh R17 intake, trajectory-based amplification, full-cloud replay
+and bounded conductor screening in a detached controller. Its note records
+commissioning and the production launch; machine certificates remain separate
+from the curated mathematical-status register.
+
 The [unattended norm12 campaign](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
 completed all four configured M27/M28 queues without rank gains. Its53 batches
 replayed; post-reboot integrity checks passed. This campaign is stopped,

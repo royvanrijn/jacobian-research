@@ -1,0 +1,475 @@
+{
+  "claim_boundary": "Commissioning endpoints are independently certified subgroup lower bounds. Six fresh curves are absent from frozen repository/public inputs. No rank-28+ discovery, exact-rank conclusion, worldwide novelty or conductor-record claim. Logical calls do not measure unreturned interrupted GP attempts.",
+  "completed_logical_point_calls": 1376,
+  "controls": {
+    "conductor-control": {
+      "sha256": "972ec95cb51b71f2b20547a7d441509fc4228be9be12cf9cf510004d2229f0d3",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/conductor-control.json"
+    },
+    "controller-interruption-before": {
+      "sha256": "4e182e8a4f184f2aaf7064ba966e63fd824b1e2bfe2ef937be10b019e1ecf80f",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/controller-fault-before.json"
+    },
+    "controller-interruption-recovery": {
+      "sha256": "cc87116826bd0231bf9031446b4131fc2349232d4cfa73a9b7a751ee5bf94123",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/controller-fault-recovery.json"
+    },
+    "guardian-launch": {
+      "sha256": "7fcef66a102633507f7ea573ef2769ec0cd3ab09e51f7d8be52f8ec954930222",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/guardian-control-launch.json"
+    },
+    "point-journal-control": {
+      "sha256": "55ad447d46889a511abdc0f264f5c4dee55c7507ed5fb0eb134bf8f7b61c1664",
+      "source": "artifacts/local/elliptic-curves/foundry-preflight-20260909/real-point-journal-control/check.json"
+    },
+    "worker-interruption-before": {
+      "sha256": "510092616fc141e4e62d144a86402e2c619588fe40b535c968711c99321cd02e",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v3/fault-injection-before.json"
+    },
+    "worker-interruption-replay": {
+      "sha256": "9b66a84f48ca015321d73e1e759adae8ee240e019f9582db6d18d1e9c9473c84",
+      "source": "artifacts/local/elliptic-curves/high-rank-foundry-integration-v3/fault-injection-replay.json"
+    }
+  },
+  "corrected_failures": [
+    "Frozen source copier originally omitted native .cpp dependency; transitive preflight added.",
+    "Fresh seed arithmetic needed a cases directory; now created before preparation.",
+    "Excluded candidates originally consumed family/height quotas; only accepted candidates advance the ordinal.",
+    "Final proof now compacts redundant prime blocks and replays both exact finite implementations.",
+    "A due revival remains schedulable even if no ordinary ready candidate exists."
+  ],
+  "failed_setup_jobs": 6,
+  "fresh_distinct_curves": [
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000001-f-39e319383e6670d2b735.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-7978426608383837096811310983195749251037047792203654192",
+        "8622263803176183500890896869061683305735306050299182238260333766485399147165233024"
+      ],
+      "family": "074d9",
+      "parameter": "-3300/59",
+      "rank_lower_bound": 17,
+      "trajectory": []
+    },
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000003-f-a2549ec614065eb8cfbd.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-638450416668007366988374213725882544199288609519450412",
+        "191380372176502546625414451418876252532981851670608343899837716635524010614032180"
+      ],
+      "family": "07ca9",
+      "parameter": "1765/1983",
+      "rank_lower_bound": 17,
+      "trajectory": []
+    },
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000004-f-69c2a3a3eb2f335be320.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-60974515948846876601603096701757582166196768707",
+        "5862616870801156429267969130778350983271501480529406701167997575218494"
+      ],
+      "family": "08234",
+      "parameter": "-2311/6",
+      "rank_lower_bound": 23,
+      "trajectory": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "amplify"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 6,
+          "phase": "amplify"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 6,
+          "phase": "cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 39,
+          "phase": "amplify"
+        }
+      ]
+    },
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000005-f-e140820adf080ea37d1f.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1344975993349762959456464251208772818100053267775143787",
+        "605345344366772540071159391750455014642718614022987384527019162961040826759001190"
+      ],
+      "family": "08f72",
+      "parameter": "-2726/913",
+      "rank_lower_bound": 22,
+      "trajectory": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 4,
+          "phase": "amplify"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 4,
+          "phase": "cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 25,
+          "phase": "amplify"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 54,
+          "phase": "amplify"
+        }
+      ]
+    },
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000001-f-93d0fda2ad54bd2b7ea4.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-219748787228649614896200872318155518736990796551227",
+        "1262605380914784520211420742403613298902113734788907697230532558430306493846"
+      ],
+      "family": "074d9",
+      "parameter": "999/82",
+      "rank_lower_bound": 23,
+      "trajectory": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 5,
+          "phase": "amplify"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 8,
+          "phase": "amplify"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 9,
+          "phase": "amplify"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 9,
+          "phase": "cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 50,
+          "phase": "amplify"
+        }
+      ]
+    },
+    {
+      "certificate": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000003-f-0c58f3edab4ef28a34de.json",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2628611410855660475280287147904376351351514011691952",
+        "52341104683035791151130291505148405110334338955650792274960074754526105912704"
+      ],
+      "family": "07ca9",
+      "parameter": "-943/412",
+      "rank_lower_bound": 25,
+      "trajectory": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 2,
+          "phase": "amplify"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 2,
+          "phase": "cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 5,
+          "phase": "amplify"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 5,
+          "phase": "cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 5,
+          "phase": "cloud"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 10,
+          "phase": "amplify"
+        }
+      ]
+    }
+  ],
+  "fresh_rank_counts": {
+    "17": 2,
+    "22": 1,
+    "23": 2,
+    "25": 1
+  },
+  "runs": [
+    {
+      "jobs": [
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v1/job-0000001-f-39e319383e6670d2b735.json",
+          "rank_lower_bound": null,
+          "sha256": "ef519cb3fdefb27d2a302abc8c597a143945b0898ee17ac010549e27bccfaebb",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        },
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v1/job-0000002-warm-103b2-low-02.json",
+          "rank_lower_bound": null,
+          "sha256": "00dff050838dfc1ecf4df1e1d148338ad3d181cec7e7f5f63443da878f4a3f10",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        },
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v1/job-0000003-warm-08234-high-04.json",
+          "rank_lower_bound": null,
+          "sha256": "bf65777676e2c95c2fdd0c83dbc98d3e846aa02b378365cd7942a6480302d2d7",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        },
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v1/job-0000004-f-a2549ec614065eb8cfbd.json",
+          "rank_lower_bound": null,
+          "sha256": "7bcf19b625d9f644391eb39758725dd3111ce98b2492b225bc78d5f6271850a6",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        }
+      ],
+      "manifest_sha256": "1303df79f2b48f92aa7bda5e85a3aa69021332fccb9194a7da6dcdc0632ab502",
+      "name": "high-rank-foundry-integration-v1",
+      "runtime_zip_sha256": "7faa59ec70be0c8d0d5b8eef03ded7872681ff448623e589ec0844a36172c28a",
+      "status": "HALTED_REPEATED_FAILURE"
+    },
+    {
+      "jobs": [
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v2/job-0000001-f-39e319383e6670d2b735.json",
+          "rank_lower_bound": null,
+          "sha256": "d5944b85df16da689bb4aa0017957164b4e3411e05b687b876980c65d5e469f4",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v2/job-0000002-warm-103b2-low-02.json",
+          "rank_lower_bound": 27,
+          "sha256": "5f84d0273b2f5b5312444f7326ad45d892a6540a6459ce9be9c1c65db2b5e12d",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v2/job-0000003-warm-08234-high-04.json",
+          "rank_lower_bound": 24,
+          "sha256": "7c99522faa73120e656c85461c101a25e46663b21ccd123f376b822453bf65ff",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": null,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v2/job-0000004-f-a2549ec614065eb8cfbd.json",
+          "rank_lower_bound": null,
+          "sha256": "2ec1fb5d917ce5145ce80de8f049762389d10331b6f1ad7403cce16cd95e083b",
+          "status": "UNRESOLVED_JOB_FAILURE"
+        }
+      ],
+      "manifest_sha256": "70f2fc37dda05db1d918c7307cbe3092a2ca7f3c39d1ab5aec9caeb078040f95",
+      "name": "high-rank-foundry-integration-v2",
+      "runtime_zip_sha256": "e007f1f50cb7fb6a4bf17a7d77b840662cdba1c3f34dda94adc5b995d325e4b5",
+      "status": "STOPPED"
+    },
+    {
+      "jobs": [
+        {
+          "calls": 86,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000001-f-39e319383e6670d2b735.json",
+          "rank_lower_bound": 17,
+          "sha256": "6b3450df595ed3d9242ada7d3dcb96525e77ce5f174594d7849bfc8a58a0b4ab",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000002-warm-103b2-low-02.json",
+          "rank_lower_bound": 27,
+          "sha256": "7d62ecc0a0d40db297abce92acc1e39a230037b8df3e3c39a8a503f309e8bf96",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 86,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000003-f-a2549ec614065eb8cfbd.json",
+          "rank_lower_bound": 17,
+          "sha256": "e841d3ef875dd256f2bbc44315a0b5076cc3ccb96cd42c176b1c0e2b6af9808e",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 101,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000004-f-69c2a3a3eb2f335be320.json",
+          "rank_lower_bound": 23,
+          "sha256": "88fd69ef29c36318006158a92ab0721e3bcbe24dd4c26249dbd111fb91db6e3c",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 101,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000005-f-e140820adf080ea37d1f.json",
+          "rank_lower_bound": 22,
+          "sha256": "1f9f11eacfaf31b689bc2c3379e623980b28ac385ad056b9162fe40375098b29",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v3/job-0000006-f-69c2a3a3eb2f335be320.json",
+          "rank_lower_bound": 23,
+          "sha256": "a3752e9d08fe983ff350f41d39aa4a0d868b289a356a45a3d661687afc0ecbc9",
+          "status": "PASS_CERTIFIED_SEARCH"
+        }
+      ],
+      "manifest_sha256": "a9e765bac5b3e0138567c1a1378dbcf0de8618239ab373fd6869cd827f60d3ea",
+      "name": "high-rank-foundry-integration-v3",
+      "runtime_zip_sha256": "9613b26ad6d4a8722a279e0e050c438ee4c663a1d5d824a9a48bbfa99be74844",
+      "status": "STOPPED"
+    },
+    {
+      "jobs": [
+        {
+          "calls": 101,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000001-f-93d0fda2ad54bd2b7ea4.json",
+          "rank_lower_bound": 23,
+          "sha256": "eb4c79c56bd4975a5e779cae6c4bf35f93dddb182c14a9a23c5cb6857496606e",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000002-warm-074d9-low-01.json",
+          "rank_lower_bound": 20,
+          "sha256": "0b21076b4d6917aa326dde7f1b41a78829a036c2c6262c1554ad5fb58c634b14",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 101,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000003-f-0c58f3edab4ef28a34de.json",
+          "rank_lower_bound": 25,
+          "sha256": "4d1ebd4f7e07a4eaaa9cf6b60e8c49dbe20d6a525e160a69a4db3949f12870f7",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000004-f-93d0fda2ad54bd2b7ea4.json",
+          "rank_lower_bound": 23,
+          "sha256": "ebe3b2ad8f33e70ee1599478df9a80039607b1925f47ce6c4834dd5fff3c18dd",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000005-f-0c58f3edab4ef28a34de.json",
+          "rank_lower_bound": 25,
+          "sha256": "17ac7c9d6142de57d0f9058ab7df0455fb1bbd2d19efb408387a6cfdcfa56785",
+          "status": "PASS_CERTIFIED_SEARCH"
+        },
+        {
+          "calls": 100,
+          "path": "artifacts/generated-results/elliptic-curves/high-rank-foundry-integration-v4/job-0000006-warm-11952-high-02.json",
+          "rank_lower_bound": 21,
+          "sha256": "0c6ea5219dc238a20a0ea637749b7b6b510e62fe437f69275ea18b5c2a7eb15c",
+          "status": "PASS_CERTIFIED_SEARCH"
+        }
+      ],
+      "manifest_sha256": "421dd341737283a1681fdd6afe4c10a5b725a892d65d887b21633cfe156ef9b0",
+      "name": "high-rank-foundry-integration-v4",
+      "runtime_zip_sha256": "d29312b682e78817db452ce5b242844ee38b42f13a1932a50cbf0acd366f7ada",
+      "status": "STOPPED"
+    }
+  ],
+  "schema": "foundry-commissioning.v1",
+  "sealed_at": 1788953768.5529516,
+  "status": "PASS_AFTER_PRESERVED_ENGINEERING_FAILURES",
+  "successful_jobs": 14,
+  "tests": {
+    "command": "python3 -m pytest -q research/elliptic-curves/tests/test_high_rank_foundry.py research/elliptic-curves/tests/test_r17_60_panel.py research/elliptic-curves/tests/test_unattended_norm12.py",
+    "passed": 33,
+    "source_hashes": {
+      "test_high_rank_foundry.py": "0b2b53f8f9ed7d9f28900d39ef7a2f54ae0a533de129586f86a18303cd79e60b",
+      "test_r17_60_panel.py": "403cf86e3179b60b74b48300dfbc594fc64aef149f926eb1681b9d1e65ef7c9d",
+      "test_unattended_norm12.py": "7234a1969c98361cd72eede83ddf384098c353561209495d9d6bea52d3644935"
+    }
+  }
+}

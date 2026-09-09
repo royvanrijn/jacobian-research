@@ -1,0 +1,21 @@
+{
+  "curve": [
+    "0",
+    "-1",
+    "1",
+    "-10",
+    "-20"
+  ],
+  "factor_hints": [],
+  "id": "conductor11-fixture",
+  "integral_model_scale": "1",
+  "known_primes": [],
+  "original_curve": [
+    "0",
+    "-1",
+    "1",
+    "-10",
+    "-20"
+  ],
+  "rank_lower_bound": 0
+}

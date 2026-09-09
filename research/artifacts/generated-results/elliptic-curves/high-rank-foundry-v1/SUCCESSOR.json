@@ -1,0 +1,7 @@
+{
+  "boundary": "Original source, ledger, certificates and failure evidence preserved.",
+  "launch_verification": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/launch-verified.json",
+  "sha256": "7759a0d8fe1fe5a39717f4c7e6550a9e0078632bfc6c5d6a0a19e41aebefcba5",
+  "status": "SUPERSEDED_BY_REPAIRED_RUNTIME",
+  "successor": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2"
+}

@@ -1,0 +1,58 @@
+{
+  "active_jobs": [
+    {
+      "cid": "f-3e4b0ad34f31734d7e58",
+      "id": 1,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000001",
+      "pid": 2520849,
+      "token": "701202"
+    },
+    {
+      "cid": "warm-08f72-high-05",
+      "id": 2,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000002",
+      "pid": 2523193,
+      "token": "701513"
+    },
+    {
+      "cid": "warm-074d9-high-01",
+      "id": 3,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000003",
+      "pid": 2524817,
+      "token": "701823"
+    },
+    {
+      "cid": "f-2719065702a1b5e45e44",
+      "id": 4,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000004",
+      "pid": 2526556,
+      "token": "702134"
+    }
+  ],
+  "at": 1788953894.573396,
+  "boundary": "Operational launch verification only. Rank claims require completed independent certificate replay.",
+  "completed_point_returns": {
+    "1": 25,
+    "2": 42,
+    "3": 51,
+    "4": 14
+  },
+  "controller": {
+    "pid": 2520586,
+    "token": "701171"
+  },
+  "guardian": {
+    "pid": 2520453,
+    "token": "701150"
+  },
+  "guardian_session_id": 2520453,
+  "launch_receipt_sha256": "75cc28fa1d9a2924376e9380e3c15c96c5eb9df69540dc25ab584df372885137",
+  "manifest_sha256": "e662c9a8be677835c2adef46a9eb308b7f1692514241824d6cc5df6cad76df39",
+  "no_job_limit": true,
+  "preflight_sha256": "ae0d6d5ec53b0b7942743ff025b82e1dbd5fa2062e376ace7fe81dd7eefd711f",
+  "status": "PASS_DETACHED_PRODUCTION_RUNNING"
+}

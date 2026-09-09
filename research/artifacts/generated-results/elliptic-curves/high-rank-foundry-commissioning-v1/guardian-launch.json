@@ -1,0 +1,7 @@
+{
+  "guardian_pid": 2348340,
+  "job_limit": 6,
+  "script": "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_high_rank_foundry.py",
+  "script_sha256": "26274a34c6686b446cb23d340a9661c20b47e22d1e5c7a201bde62f95223ad0d",
+  "started_at": 1788953530.7815711
+}

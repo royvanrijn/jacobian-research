@@ -1,0 +1,17 @@
+{
+  "calls": null,
+  "claim_boundary": "No rank upper bound or no-point conclusion. Raw checkpoints preserved.",
+  "error": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 189, in run\n    result=conductor_job(job,request) if request['kind']=='conductor' else search_job(job,request)\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 105, in search_job\n    step(job,phase)\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 59, in step\n    raise PhaseFailure(phase,record)\nPhaseFailure: generic: backend_failure\n",
+  "evidence": {
+    "generic/protocol.json": "49196b491faae9f5a1355928e7aa4adfe914af34c936a2ca1ea2bf4453de3865",
+    "phases/generic-00-0/supervisor.json": "509b5a6bf9980976e60bc64f2de7b6067589905d6a1b0e4abbba3ff682011e01",
+    "protocol.json": "b252699f2c3191c1e15b822459648112ec481e4821a365dde04fc7ab6aacfa50",
+    "request.json": "7a106d868e7989f415f185af64dba2e69ea7f23789dc688090c16f80aeddf7dd",
+    "roster.json": "197bed0e240ac6e7761009caf5f56392ad9603727b721e6572d0adcb5a90c33f"
+  },
+  "outcome": "backend_failure",
+  "phase": "generic",
+  "request_sha256": "7a106d868e7989f415f185af64dba2e69ea7f23789dc688090c16f80aeddf7dd",
+  "status": "UNRESOLVED_JOB_FAILURE",
+  "wall_seconds": 0.8823099136352539
+}

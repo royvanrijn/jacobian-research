@@ -1,0 +1,31 @@
+{
+  "after_controller": {
+    "pid": 2353051,
+    "token": "676292"
+  },
+  "at": 1788953601.0438812,
+  "before_sha256": "4e182e8a4f184f2aaf7064ba966e63fd824b1e2bfe2ef937be10b019e1ecf80f",
+  "guardian": {
+    "pid": 2348340,
+    "token": "671149"
+  },
+  "status": "PASS_DETACHED_GUARDIAN_RESTART_AND_LIVE_WORKER_ADOPTION",
+  "unchanged_workers": [
+    {
+      "cid": "f-0c58f3edab4ef28a34de",
+      "id": 5,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000005",
+      "pid": 2348411,
+      "token": "671195"
+    },
+    {
+      "cid": "warm-11952-high-02",
+      "id": 6,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000006",
+      "pid": 2349022,
+      "token": "671505"
+    }
+  ]
+}

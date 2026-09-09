@@ -14,6 +14,10 @@ def updated():
     result = copy.deepcopy(read(MANIFEST))
     entries = {r['id']: r for r in result['curves']}
     def add(identifier, family, parameter, rank, kind, source, claim, record=None):
+        # Later certified foundry continuations can strengthen these same
+        # curves. Replaying this older intake must never lower their bounds.
+        if identifier in entries and entries[identifier]['rank_lower_bound'] > rank:
+            return
         path = ART / source
         rel = str(path.relative_to(ROOT))
         entry = dict(id=identifier, family=family, parameter=parameter, rank_lower_bound=rank,

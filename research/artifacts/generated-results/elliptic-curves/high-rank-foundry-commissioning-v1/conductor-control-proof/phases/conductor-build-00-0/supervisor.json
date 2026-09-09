@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/runtime/research/elliptic-curves/cas/high_rank_foundry_arithmetic.py",
+    "conductor-build",
+    "--job",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/runtime/research/foundry-conductor-control-v2",
+    "--index",
+    "0"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 10
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v4/runtime/research/foundry-conductor-control-v2/phases/conductor-build-00-0/worker.log",
+  "log_sha256": "cfc8dac996148aead6a378a9c1ad242935e48b4898b4511e3c24d0ed32c969d7",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 244047872,
+  "pid": 1876556,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "609881",
+  "termination_signal": null,
+  "timeout_seconds": 10,
+  "wall_seconds": 0.7493161819993475,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

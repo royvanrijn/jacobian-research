@@ -1,0 +1,9 @@
+{
+  "actual_point_invocations": 1,
+  "calls_to_adapter": 2,
+  "result_sha256": "d2ec08408836fecd8b868243db881f77f3add8b3c90fe956effb43befb40189b",
+  "returned_points": 18,
+  "scope": "Retrospective engineering control on a retained chart; no fresh curve or rank claim.",
+  "source_chart_sha256": "0aee5bfe86092466b511922c80f9dac96519262298ffccccb92a84fd37f1f1c2",
+  "status": "PASS_REAL_POINT_JOURNAL_REUSE"
+}

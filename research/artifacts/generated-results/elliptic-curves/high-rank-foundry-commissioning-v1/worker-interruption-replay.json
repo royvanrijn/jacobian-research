@@ -1,0 +1,11 @@
+{
+  "status": "PASS_REAL_PROCESS_RECOVERY",
+  "original_pid": 1647783,
+  "resumed_pid": 1667254,
+  "retries": 1,
+  "preserved_chart_receipts": 59,
+  "rank_lower_bound": 23,
+  "calls": 101,
+  "result_sha256": "e9c0e028f0aafc095ab6edd3f335fccd03c090c330a5c89c84781cb29be36de2",
+  "before_sha256": "510092616fc141e4e62d144a86402e2c619588fe40b535c968711c99321cd02e"
+}

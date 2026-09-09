@@ -1,0 +1,22 @@
+{
+  "calls": null,
+  "claim_boundary": "No rank upper bound or no-point conclusion. Raw checkpoints preserved.",
+  "error": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 184, in run\n    result=conductor_job(job,request) if request['kind']=='conductor' else search_job(job,request)\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 131, in search_job\n    for phase in ('search','replay','cloud'): step(job,phase,index)\n                                              ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-integration-v1/runtime/research/elliptic-curves/cas/high_rank_foundry_job.py\", line 59, in step\n    raise PhaseFailure(phase,record)\nPhaseFailure: search: backend_failure\n",
+  "evidence": {
+    "phases/bank-00-0/supervisor.json": "2b825536c9129e0f8a348d3263fd9a0e15928d173382c89bc3513ca27b9170f8",
+    "preparation-00/anchor-bank.json": "fed308378a1980dce57d380da022ed0932d73d0597ee5a3a72b94ade5ec5dc49",
+    "preparation-00/derivation.json": "e9183be45cef10d10da2e115f4cbb743a6d7da3b7867b1376d380d891b57dbc1",
+    "preparation-00/generic-cvp-proofs.json": "d1e8b306fc63975e63e57e12df4cf9a2665dafdebd3e73bf0b8faa1b1702f976",
+    "preparation-00/prepared.json": "af0faafa29cbd675ae65545f0dcfb0d21b3fd3e4721e9c69bb5d5f7dfb4ee8fe",
+    "preparation-00/protocol.json": "5fea8a8482ba6fe66669f8257a011cf944343d366dd8230b580b06b1af1154e9",
+    "preparation-00/seed-M27.json": "1eb24f03211f7cd1f9a1ed3c9f9f7af73e5e2c12b17ad6e754450d66c7a60257",
+    "request.json": "4f82e6fe6eb3984df4e4737a88f191b94625322463f2f82907955140271230e2",
+    "search-00-supervision/supervisor.json": "f90f522a4d9acc04d8e2b9fd477919a5b2e1751364b7dd45c9825cd43da5ef26",
+    "segment-00.json": "804622d2a3b6317569e70a2d1caaf61ae51a2e5318e4b5915faad23e75edc1dc"
+  },
+  "outcome": "backend_failure",
+  "phase": "search",
+  "request_sha256": "4f82e6fe6eb3984df4e4737a88f191b94625322463f2f82907955140271230e2",
+  "status": "UNRESOLVED_JOB_FAILURE",
+  "wall_seconds": 4.282689571380615
+}

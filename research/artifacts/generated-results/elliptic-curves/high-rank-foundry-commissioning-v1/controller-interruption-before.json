@@ -1,0 +1,29 @@
+{
+  "at": 1788953580.1309378,
+  "controller": {
+    "pid": 2348359,
+    "token": "671167"
+  },
+  "guardian": {
+    "pid": 2348340,
+    "token": "671149"
+  },
+  "jobs": [
+    {
+      "cid": "f-0c58f3edab4ef28a34de",
+      "id": 5,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000005",
+      "pid": 2348411,
+      "token": "671195"
+    },
+    {
+      "cid": "warm-11952-high-02",
+      "id": 6,
+      "kind": "exploit",
+      "path": "foundry-jobs/job-0000006",
+      "pid": 2349022,
+      "token": "671505"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "at": 1788961581.4572306,
+  "claim_boundary": "Input witness misses remain UNKNOWN. Certificate integrity and backend errors still halt after the existing failure threshold. No old rank result or raw checkpoint was rewritten.",
+  "manifest_sha256": "40756d66a8fa6905607e93c5bfe3368d9b0db2115e8b414356cc883cca723f9c",
+  "migration": {
+    "certified_packets": 48,
+    "curves": 52,
+    "intake_cursor": {
+      "offsets": {
+        "074d9/all": 2,
+        "074d9/high": 41,
+        "074d9/low": 25,
+        "07ca9/all": 2,
+        "07ca9/high": 40,
+        "07ca9/low": 25,
+        "08234/all": 2,
+        "08234/high": 50,
+        "08234/low": 14,
+        "08f72/all": 2,
+        "08f72/high": 45,
+        "08f72/low": 18,
+        "103b2/all": 1,
+        "103b2/high": 43,
+        "103b2/low": 19,
+        "11952/all": 1,
+        "11952/high": 51,
+        "11952/low": 13
+      },
+      "ordinal": 34,
+      "shells": {
+        "074d9": [
+          1,
+          1
+        ],
+        "07ca9": [
+          1,
+          1
+        ],
+        "08234": [
+          1,
+          1
+        ],
+        "08f72": [
+          1,
+          1
+        ]
+      }
+    },
+    "retained_charged_point_budget": 7506,
+    "retained_jobs": 71,
+    "retained_point_calls": 6706,
+    "state_sha256": "f6812ac2f0f8d3b21d7ef2ac01d0803ad549df689e3ab3a1c1a19ea4fc827106"
+  },
+  "status": "PASS_SEED_GATE_REPAIR_AND_STATE_PRESERVATION",
+  "supervised_controls": {
+    "cases": 4,
+    "path": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-seed-recovery-controls-v2/verification.json",
+    "point_calls": 0,
+    "sha256": "20adbaddc267c457e49aeb8af9971f910b6849e1da66185095d962d024490e91"
+  },
+  "tests": {
+    "command": "python3 -m pytest -q research/elliptic-curves/tests/test_high_rank_foundry.py research/elliptic-curves/tests/test_high_rank_foundry_seed_recovery.py research/elliptic-curves/tests/test_r17_60_panel.py research/elliptic-curves/tests/test_unattended_norm12.py",
+    "passed": 44,
+    "source_hashes": {
+      "test_high_rank_foundry.py": "5c955c03858cdefdec2ec32c166ecd81bfd4aee472ef5b9f99f1286ffff9e602",
+      "test_high_rank_foundry_seed_recovery.py": "5498dbc4d9fccf533ddd4006cd80cc80e290086bce07a87641ec17353776936e",
+      "test_r17_60_panel.py": "403cf86e3179b60b74b48300dfbc594fc64aef149f926eb1681b9d1e65ef7c9d",
+      "test_unattended_norm12.py": "7234a1969c98361cd72eede83ddf384098c353561209495d9d6bea52d3644935"
+    }
+  }
+}
