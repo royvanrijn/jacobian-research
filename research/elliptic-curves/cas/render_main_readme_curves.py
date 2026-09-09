@@ -63,11 +63,23 @@ def select_section(section, rows, benchmarks):
     return '\n'.join(lines), kept
 
 
-def run(check=False):
+def short_introduction(database):
+    counts = database['conductor_status_counts']
+    return (BEGIN+'\n## Elliptic curve inventory\n\n'
+        f'**{database["count"]} research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**.\n\n'
+        '[Full inventory](INVENTORY.md) · [JSON](data/research_curves/database.json) · '
+        '[CSV](data/research_curves/database.csv) · '
+        '[Methods and selection](notes/INVENTORY_REFRESH_2026-09-09.md)\n\n'
+        'Ranks are certified lower bounds. Bold marks per-rank column minima among shown rows '
+        '(rounded ties included); — means unknown. Logs are natural.\n\n')
+
+
+def run(check=False, from_inventory=False):
     argv = [sys.executable,str(ROOT/'elliptic-curves/cas/render_inventory201_readme.py')]
     if check:
         argv.append('--check')
-    subprocess.run(argv,check=True)
+    if not from_inventory:
+        subprocess.run(argv,check=True)
     inventory = ROOT/'elliptic-curves/INVENTORY.md'
     source = inventory.read_text()
     section = source[source.index(BEGIN):source.index(END)+len(END)]
@@ -77,18 +89,7 @@ def run(check=False):
     # Recompute after curation: minima in the displayed subset can differ from
     # the complete inventory. The helper removes previous numeric bold first.
     section = highlight_rank_minima(section)
-    pending = sum(r['id'] not in kept and r['conductor_status'] != 'EXACT' for r in rows)
-    explanation = (f'**Main-table selection: {len(kept)} of {len(rows)} curves.** '
-        'Keep every certified lower bound ≥22, documented structural exceptions, '
-        'and smaller-rank curves whose exact conductor meets or beats the '
-        'rank-specific minimum in the [pinned ICARM snapshot](data/icarm_current.json). '
-        'This is an editorial filter, not a live record claim. '
-        f'The [complete inventory](INVENTORY.md) retains every curve, point and certificate; '
-        f'{pending} hidden curves still have unresolved conductors and are not classified as high-conductor.\n\n'
-        'Below-22 structural examples retained: '+ '; '.join(
-            f'[{identifier}](data/research_curves/{identifier}.md) ({reason})'
-            for identifier, reason in STRUCTURAL_EXCEPTIONS.items() if identifier in kept)+'.\n\n')
-    section = section.replace('| Curve |', explanation+'| Curve |', 1)
+    section = short_introduction(database)+section[section.index('| Curve |'):]
     def link(match):
         target = match.group(1)
         if '://' in target or target.startswith('#'):
@@ -118,4 +119,7 @@ def run(check=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--check',action='store_true')
-    run(parser.parse_args().check)
+    parser.add_argument('--from-inventory',action='store_true',
+                        help='Presentation-only render from the already generated inventory; do not rebuild arithmetic data.')
+    args=parser.parse_args()
+    run(args.check,args.from_inventory)

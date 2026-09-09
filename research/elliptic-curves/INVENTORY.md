@@ -5,12 +5,12 @@
 <!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
 ## Elliptic curve inventory
 
-**291 research curves · 195 exact conductors · 96 unresolved**.
+**321 research curves · 195 exact conductors · 126 unresolved**.
 ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
-The original 201 curves have certified minimal models. The 90 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
+The original 201 curves have certified minimal models. The 120 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](data/research_curves/database.json) · [Download CSV](data/research_curves/database.csv) · [Arithmetic and replay notes](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
@@ -53,6 +53,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-102](data/research_curves/new-20260906-102.md) | `[0, 1, 0, -2497472982592…, 11650272964469…]` | ≥ 26 | — | 359.75 | 28.00 | 351.41 |
 | [r17-103b2-fresh-002](data/research_curves/r17-103b2-fresh-002.md) | `[0, 0, 0, -1732071835709…, 87788776178863…]` | ≥ 26 | — | — | — | — |
 | [new-20260906-189](data/research_curves/new-20260906-189.md) | `[1, -1, 1, -1663545350154…, 25999962336300…]` | ≥ 26 | — | 393.07 | 30.59 | 380.88 |
+| [foundry-07ca9-0a6622356965](data/research_curves/foundry-07ca9-0a6622356965.md) | `[0, 0, 0, -1271525677502…, 17309723695834…]` | ≥ 26 | — | — | — | — |
 | [new-20260906-54](data/research_curves/new-20260906-54.md) | `[1, 0, 0, -2903206315434…, 18059949234337…]` | ≥ 25 | **228.23** | 318.75 | 24.50 | 309.00 |
 | [new-20260906-43](data/research_curves/new-20260906-43.md) | `[1, 0, 0, -2430269761279…, 14025401250208…]` | ≥ 25 | 228.74 | **290.59** | **22.14** | **280.54** |
 | [new-20260906-64](data/research_curves/new-20260906-64.md) | `[1, 0, 0, -2294485253390…, 13137493111195…]` | ≥ 25 | 230.02 | 318.05 | 24.40 | 307.26 |
@@ -80,6 +81,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-108](data/research_curves/new-20260906-108.md) | `[0, 1, 0, -7414389144151…, 24140726469159…]` | ≥ 25 | 292.17 | 356.10 | 27.57 | 345.29 |
 | [new-20260906-78](data/research_curves/new-20260906-78.md) | `[1, 0, 0, -1108875710517…, 13910170292293…]` | ≥ 25 | 292.47 | 364.22 | 28.25 | 353.60 |
 | [new-20260906-117](data/research_curves/new-20260906-117.md) | `[0, 1, 0, -2007390083834…, 10726523259192…]` | ≥ 25 | 299.12 | 359.09 | 27.82 | 348.42 |
+| [r17-panel-08f72-high-05](data/research_curves/r17-panel-08f72-high-05.md) | `[0, 0, 0, -6520423044651…, 20863017579502…]` | ≥ 25 | 304.95 | — | — | — |
 | [new-20260905-02](data/research_curves/new-20260905-02.md) | `[0, 1, 0, -2294922577037…, 43151908014471…]` | ≥ 25 | — | 297.36 | 22.67 | 286.65 |
 | [new-20260906-65](data/research_curves/new-20260906-65.md) | `[1, 0, 0, -3350508572775…, 77321628884879…]` | ≥ 25 | — | 326.16 | 25.10 | 316.02 |
 | [new-20260906-80](data/research_curves/new-20260906-80.md) | `[1, -1, 1, -5795582957697…, 53759930078101…]` | ≥ 25 | — | 334.64 | 25.66 | 321.04 |
@@ -93,6 +95,10 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-112](data/research_curves/new-20260906-112.md) | `[1, 0, 1, -9445216260008…, 36055694157722…]` | ≥ 25 | — | 329.24 | 25.33 | 318.56 |
 | [r17-panel-07ca9-high-05](data/research_curves/r17-panel-07ca9-high-05.md) | `[0, 0, 0, -5928111271818…, 17473350347049…]` | ≥ 25 | — | — | — | — |
 | [r17-103b2-fresh-001](data/research_curves/r17-103b2-fresh-001.md) | `[0, 0, 0, -5168834811904…, 14190568241678…]` | ≥ 25 | — | — | — | — |
+| [foundry-07ca9-5d2a0e3497b2](data/research_curves/foundry-07ca9-5d2a0e3497b2.md) | `[0, 0, 0, -2628611410855…, 52341104683035…]` | ≥ 25 | — | — | — | — |
+| [foundry-08234-06a6f3ddb210](data/research_curves/foundry-08234-06a6f3ddb210.md) | `[0, 0, 0, -8530389154355…, 30195276911022…]` | ≥ 25 | — | — | — | — |
+| [foundry-103b2-954eca52c40b](data/research_curves/foundry-103b2-954eca52c40b.md) | `[0, 0, 0, -1254388045365…, 16703444403223…]` | ≥ 25 | — | — | — | — |
+| [foundry-11952-3393b35c6b53](data/research_curves/foundry-11952-3393b35c6b53.md) | `[0, 0, 0, -5213883817956…, 45467991372693…]` | ≥ 25 | — | — | — | — |
 | [r17-panel-08234-high-02](data/research_curves/r17-panel-08234-high-02.md) | `[0, 0, 0, -1298869013726…, 16480804689062…]` | ≥ 24 | **213.24** | — | — | — |
 | [new-20260906-129](data/research_curves/new-20260906-129.md) | `[1, 0, 0, -1117426831395…, 43673028426873…]` | ≥ 24 | 218.32 | 288.26 | 21.95 | 278.24 |
 | [new-20260906-127](data/research_curves/new-20260906-127.md) | `[1, 0, 0, -3428548612984…, 36377001247496…]` | ≥ 24 | 218.91 | 292.42 | 22.40 | 284.36 |
@@ -155,6 +161,8 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-46](data/research_curves/new-20260906-46.md) | `[0, 1, 0, -2451091942964…, 14729131656777…]` | ≥ 24 | — | 345.88 | 26.64 | 333.23 |
 | [r17-074d9-fresh-001](data/research_curves/r17-074d9-fresh-001.md) | `[0, 0, 0, -2698073170919…, 59050784949742…]` | ≥ 24 | — | — | — | — |
 | [new-20260906-141](data/research_curves/new-20260906-141.md) | `[0, 1, 0, -2568174338905…, 15911676041496…]` | ≥ 24 | — | 359.84 | 27.82 | 347.66 |
+| [foundry-08f72-3bf3a74b3ae7](data/research_curves/foundry-08f72-3bf3a74b3ae7.md) | `[0, 0, 0, -1178204278979…, 15992421069866…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-68de3bc5e897](data/research_curves/foundry-103b2-68de3bc5e897.md) | `[0, 0, 0, -7919065670658…, 85406842067934…]` | ≥ 24 | — | — | — | — |
 | [new-20260906-162](data/research_curves/new-20260906-162.md) | `[1, 0, 0, -3230152894772…, 27145586613507…]` | ≥ 23 | **198.13** | **250.38** | **18.87** | 241.80 |
 | [r17-panel-08234-low-04](data/research_curves/r17-panel-08234-low-04.md) | `[0, 0, 0, -7861397369242…, 27080387789683…]` | ≥ 23 | 201.46 | — | — | — |
 | [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) ([Bhavik Mehta](https://elliptic-rank.icarm.cloud/user/64)) | `[1, 0, 0, -2673631332732…, 16765556663649…]` | ≥ 23 | 205.75 | 277.06 | 20.91 | 264.68 |
@@ -187,7 +195,6 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-190](data/research_curves/new-20260906-190.md) | `[1, 0, 0, -1510167912489…, 71494663866974…]` | ≥ 23 | 290.56 | 372.06 | 28.77 | 358.27 |
 | [new-20260906-164](data/research_curves/new-20260906-164.md) | `[1, 0, 0, -7221629950470…, 23572775966072…]` | ≥ 23 | 294.24 | 356.02 | 27.47 | 343.07 |
 | [new-20260906-60](data/research_curves/new-20260906-60.md) | `[0, 1, 0, -1719129188397…, 26744869524665…]` | ≥ 23 | 294.51 | 351.72 | 27.22 | 341.26 |
-| [r17-panel-08f72-high-05](data/research_curves/r17-panel-08f72-high-05.md) | `[0, 0, 0, -6520423044651…, 20863017579502…]` | ≥ 23 | 304.95 | — | — | — |
 | [new-20260906-199](data/research_curves/new-20260906-199.md) | `[0, -1, 0, -2914075924876…, 17035551226407…]` | ≥ 23 | 307.35 | 360.21 | 28.00 | 351.19 |
 | [new-20260906-69](data/research_curves/new-20260906-69.md) | `[0, 1, 0, -9270078556395…, 10822713038341…]` | ≥ 23 | 309.13 | 363.68 | 28.13 | 351.34 |
 | [new-20260906-187](data/research_curves/new-20260906-187.md) | `[0, 1, 0, -8385913570454…, 29012491279858…]` | ≥ 23 | 311.87 | 370.29 | 28.75 | 359.53 |
@@ -210,6 +217,20 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260905-17](data/research_curves/new-20260905-17.md) | `[0, 1, 0, -1542808627338…, 23479098197119…]` | ≥ 23 | — | 365.22 | 28.28 | 353.43 |
 | [new-20260905-16](data/research_curves/new-20260905-16.md) | `[1, -1, 1, -5693101643316…, 18063073394371…]` | ≥ 23 | — | 369.30 | 28.74 | 360.03 |
 | [new-20260906-148](data/research_curves/new-20260906-148.md) | `[0, 1, 0, -4002927137327…, 97079439842254…]` | ≥ 23 | — | 368.07 | 28.50 | 355.81 |
+| [foundry-074d9-156b9c9a0946](data/research_curves/foundry-074d9-156b9c9a0946.md) | `[0, 0, 0, -1767806564903…, 94692134617221…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-2149e9c7407b](data/research_curves/foundry-074d9-2149e9c7407b.md) | `[0, 0, 0, -2197487872286…, 12626053809147…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-62f0411b46b4](data/research_curves/foundry-074d9-62f0411b46b4.md) | `[0, 0, 0, -4668133163619…, 38754932062892…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-69609b2b1b80](data/research_curves/foundry-074d9-69609b2b1b80.md) | `[0, 0, 0, -1601307591962…, 77975355686509…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-dbcce1f15f8b](data/research_curves/foundry-074d9-dbcce1f15f8b.md) | `[0, 0, 0, -4254466593405…, 33890343755581…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-3c8f8fa2f6f9](data/research_curves/foundry-07ca9-3c8f8fa2f6f9.md) | `[0, 0, 0, -5320976878605…, 15200908021586…]` | ≥ 23 | — | — | — | — |
+| [foundry-08234-e3f6e770e3b8](data/research_curves/foundry-08234-e3f6e770e3b8.md) | `[0, 0, 0, -6097451594884…, 58626168708011…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-3e89d8d06a19](data/research_curves/foundry-08f72-3e89d8d06a19.md) | `[0, 0, 0, -1072770614511…, 41144432608827…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-5a7c841bd0cd](data/research_curves/foundry-08f72-5a7c841bd0cd.md) | `[0, 0, 0, -5951420266080…, 17158652484932…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-def9a674e629](data/research_curves/foundry-08f72-def9a674e629.md) | `[0, 0, 0, -8400995608785…, 10013887819474…]` | ≥ 23 | — | — | — | — |
+| [foundry-103b2-482d6feeb4cb](data/research_curves/foundry-103b2-482d6feeb4cb.md) | `[0, 0, 0, -2720592152483…, 54966087320315…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-0279c520944c](data/research_curves/foundry-11952-0279c520944c.md) | `[0, 0, 0, -2701652806199…, 17010815578638…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-1a490c266c68](data/research_curves/foundry-11952-1a490c266c68.md) | `[0, 0, 0, -7626166229797…, 26087602092379…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-beddd202ac6f](data/research_curves/foundry-11952-beddd202ac6f.md) | `[0, 0, 0, -3724450725662…, 27715373827388…]` | ≥ 23 | — | — | — | — |
 | [ICARM #626](https://elliptic-rank.icarm.cloud/curve/626) ([Roy van Rijn](https://elliptic-rank.icarm.cloud/user/83)) | `[1, 0, 0, -1824519766025…, 71000315025379…]` | ≥ 22 | **174.43** | **234.47** | **17.56** | **226.19** |
 | [new-20260906-181](data/research_curves/new-20260906-181.md) | `[1, -1, 1, -5860321714788…, 17761183148463…]` | ≥ 22 | 179.38 | 244.93 | 18.32 | 234.57 |
 | [r17-074d9-lowheight-001](data/research_curves/r17-074d9-lowheight-001.md) | `[0, 0, 0, -2170553516564…, 36567713338509…]` | ≥ 22 | 179.95 | — | — | — |
@@ -258,6 +279,15 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-175](data/research_curves/new-20260906-175.md) | `[1, -1, 1, -4178960739123…, 31658080454283…]` | ≥ 22 | — | 375.11 | 29.18 | 365.04 |
 | [r17-11952-fresh-002](data/research_curves/r17-11952-fresh-002.md) | `[0, 0, 0, -5012381313604…, 13682260990625…]` | ≥ 22 | — | — | — | — |
 | [new-20260906-176](data/research_curves/new-20260906-176.md) | `[1, 0, 1, -6924559956107…, 21911629220112…]` | ≥ 22 | — | 369.71 | 28.68 | 358.53 |
+| [foundry-074d9-bf1f4911a84f](data/research_curves/foundry-074d9-bf1f4911a84f.md) | `[0, 0, 0, -2229110566833…, 12698429201228…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-1f2eddc6d781](data/research_curves/foundry-07ca9-1f2eddc6d781.md) | `[0, 0, 0, -3269439952699…, 22510323100032…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-5dda9b32f508](data/research_curves/foundry-07ca9-5dda9b32f508.md) | `[0, 0, 0, -2139596896365…, 38044853092849…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-c78fcfe9b6eb](data/research_curves/foundry-07ca9-c78fcfe9b6eb.md) | `[0, 0, 0, -5828117225244…, 52740846225280…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-69d055374ecf](data/research_curves/foundry-08f72-69d055374ecf.md) | `[0, 0, 0, -9064298589904…, 34905162055383…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-7e31778a22e3](data/research_curves/foundry-08f72-7e31778a22e3.md) | `[0, 0, 0, -1344975993349…, 60534534436677…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-108b0de34fbc](data/research_curves/foundry-11952-108b0de34fbc.md) | `[0, 0, 0, -1258029691359…, 51022945496339…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-17c9961e2734](data/research_curves/foundry-11952-17c9961e2734.md) | `[0, 0, 0, -1289135947960…, 55942039522273…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-bc8f314574e2](data/research_curves/foundry-11952-bc8f314574e2.md) | `[0, 0, 0, -4540123778052…, 37024775738125…]` | ≥ 22 | — | — | — | — |
 | [r17-panel-07ca9-low-02](data/research_curves/r17-panel-07ca9-low-02.md) | `[0, 0, 0, -8217754558179…, 31305557550567…]` | ≥ 21 | **253.84** | — | — | — |
 | [det1092-funnel-002537010](data/research_curves/det1092-funnel-002537010.md) | `[0, 0, 0, -2530162402717…, 75057748791573…]` | ≥ 21 | 254.17 | — | — | — |
 | [r17-panel-074d9-high-03](data/research_curves/r17-panel-074d9-high-03.md) | `[0, 0, 0, -8168970000781…, 84616899603365…]` | ≥ 21 | 294.37 | — | — | — |

@@ -4,10 +4,18 @@ from pathlib import Path
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'cas'))
-from render_main_readme_curves import retention_reason, conductor_benchmarks, select_section
+from render_main_readme_curves import retention_reason, conductor_benchmarks, select_section, short_introduction
 
 
 class SelectionTests(unittest.TestCase):
+    def test_concise_introduction(self):
+        text=short_introduction(dict(count=321,conductor_status_counts=dict(EXACT=195,UNKNOWN=126)))
+        self.assertIn('195 exact conductors',text)
+        self.assertIn('certified lower bounds',text)
+        self.assertIn('Methods and selection',text)
+        self.assertNotIn('structural examples',text)
+        self.assertLess(len(text.split()),75)
+
     def row(self, rank=21, status='UNKNOWN', conductor=None, identifier='ordinary'):
         return dict(id=identifier, local_search_rank_lower_bound=rank,
                     conductor_status=status, conductor=conductor)

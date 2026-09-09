@@ -20,7 +20,7 @@
     "4508090580101324375611402969",
     "145458613323146348632656183499016947870607777022593074227373129892365534198661"
   ],
-  "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
+  "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md",
   "conductor": "2742069194458596799345884302075797623870005994708395758494099526513144236226179310020403475675064111434724597938417609049823867956840",
   "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
   "conductor_divisor": "2742069194458596799345884302075797623870005994708395758494099526513144236226179310020403475675064111434724597938417609049823867956840",
@@ -45,7 +45,7 @@
     "4508090580101324375611402969",
     "145458613323146348632656183499016947870607777022593074227373129892365534198661"
   ],
-  "local_search_rank_lower_bound": 23,
+  "local_search_rank_lower_bound": 25,
   "log_abs_discriminant": null,
   "log_conductor": 304.94994509106806,
   "model_status": "SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED",
@@ -145,16 +145,24 @@
     [
       "2943250176395395185941799381076159166532/756209377609",
       "77272686172701085913205751985640299322090477765870540092400/657601943396919227"
+    ],
+    [
+      "113409297705784565570883750765849564557748/14834429699401",
+      "22636367608571229141940504042090465575444976260367084701790800/57135532874298222149"
+    ],
+    [
+      "-4470264680213806249516331542839/784",
+      "13797333206754961700718291793256585271609249915/21952"
     ]
   ],
   "prior_conductor_certificates": [
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
-  "rank_certificate": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
+  "rank_certificate": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",
-  "rank_lower_bound": 23,
+  "rank_lower_bound": 25,
   "rank_provenance": "standalone_exact_finite_group_certificate",
-  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
-  "source_sha256": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99",
-  "status_claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909"
+  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json",
+  "source_sha256": "52be94faff04dd66cf19c6a2696414b0cb96cb0659e80520ccdbba5b85827628",
+  "status_claim": "EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909"
 }
