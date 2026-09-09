@@ -8,7 +8,7 @@
   ],
   "bad_primes": null,
   "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260906-151.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json",
   "conductor_divisor": "89779097352792008264009968785578946",
   "conductor_status": "UNKNOWN",
   "conductor_upper_bound": "606028324299263713735443776262223433088401029143002945102567225635448127712894303338546995729734525829117397425634",
@@ -132,6 +132,9 @@
       "-17260923285904397357793721387460/5905768801",
       "54294710275224147877103861120404265210942993689/453852426588049"
     ]
+  ],
+  "prior_conductor_certificates": [
+    "artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/new-20260906-151.json"
   ],
   "rank_certificate": {
     "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",

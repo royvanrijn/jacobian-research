@@ -2,7 +2,7 @@
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
 [expanded inventory](../INVENTORY.md) now index **291 distinct curves**,
-with **137 exact conductors** and **154 unresolved conductors** in the first
+with **184 exact conductors** and **107 unresolved conductors** in the second
 replayed conductor snapshot. Rank entries
 are certified lower bounds, not exact ranks.
 
@@ -36,9 +36,10 @@ The deterministic [display rule](../cas/render_main_readme_curves.py) also retai
 any below22 curve with an **exact** conductor at or below the smallest conductor
 reported at that rank or higher in the [pinned ICARM snapshot](../data/icarm_current.json).
 This is a conservative editorial benchmark, not a claim about current world records.
-No such additional exception is certified in this snapshot. All47 hidden curves
-currently have unresolved conductors; hiding them is **not** a high-conductor
-classification. They remain in the complete inventory, JSON/CSV and individual
+No such additional exception is certified in this snapshot. Of47 hidden curves,
+nine now have exact conductors above that benchmark and38 remain unresolved;
+hiding an unresolved curve is **not** a high-conductor classification.
+They remain in the complete inventory, JSON/CSV and individual
 pages, with points and certificates untouched. Future verified conductor updates
 can automatically bring qualifying curves back into the main table.
 
@@ -68,6 +69,15 @@ replayed without factor discovery. Minimal and nonminimal presentations of the
 conductor11 regression both pass. The live pass may advance beyond this immutable
 snapshot; later results require a new replayed snapshot before publication.
 
+The [second snapshot](../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json)
+publishes all128 sealed V1 results:54 exact conductors and74 certified partial
+bounds. Its SHA-256 is
+`9621c25652553978de0332426d8ada196388d85a45b429a99afbc063987e4003`.
+All128 certificates pass fresh portable Sage replay without factor discovery.
+This adds47 exact conductors beyond the seven in the first snapshot, bringing
+the full ledger to184 exact and107 unresolved. Snapshot version2 refers to
+this publication revision, not to results of the V2 continuation worker.
+
 ### Preserved V1 stop and V2 continuation
 
 The post-reboot audit found **128 sealed results:54 exact and74 partial**.
@@ -94,8 +104,8 @@ independently replay exactly; corrupted transport metadata is rejected.
 The zero-search Sage preflight passed all33 actual continuation models before
 launch. Four detached workers retain the same90-second build,120-second replay
 and2GiB per-process caps. Completed V1 cases are not repeated. The published
-ledger still reflects only the first immutable snapshot until newer results
-are separately indexed.
+ledger includes all128 retained V1 results through the second immutable
+snapshot. Results from the33-case continuation require a later snapshot.
 
 ```sh
 python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
@@ -114,10 +124,14 @@ including matching independent replay evidence for exact results.
 ```sh
 python3 research/elliptic-curves/cas/render_main_readme_curves.py
 python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
-~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_results.py check
-python3 research/elliptic-curves/cas/run_inventory_conductor_pass.py status
+~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_results.py check \
+  --snapshot research/artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json
+python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
 ```
 
 These commands synchronize the README, expanded inventory, JSON/CSV downloads,
 and individual curve pages. They perform no point searches, specialization
 sweeps, or conductor factorizations. Historical certificates remain preserved.
+Computation checkpoints are automatic; README publication is not. A new
+immutable snapshot must be replayed, registered in `MATH_STATUS.json`, indexed
+in the refresh manifest, and rendered before newly computed values appear.

@@ -54181,6 +54181,34 @@
       "priority": "derived"
     },
     {
+      "id": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Second 291-curve conductor snapshot certifies54 exact conductors and74 partial bounds",
+      "scope": "All128 sealed results of the original161-case bounded missing-conductor pass are preserved in an immutable portable snapshot and independently replayed. Fifty-four have complete certified discriminant factorizations and exact conductors;74 remain UNKNOWN with certified local conductor divisors and upper bounds. Sage generic Tate and PARI elllocalred agree at all retained primes; exact prime certificates and arithmetic products replay without factor discovery. Combined with130 pre-existing exact conductors, the inventory has184 exact and107 unresolved conductors. This snapshot does not include results from the33-case rational-model continuation, claim exact ranks, minimal-model height metrics, public novelty or conductor records.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md",
+      "dependencies": ["EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909"],
+      "checker": "elliptic-curves/cas/index_inventory_conductor_results.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e4b1f325122ccc52a836a0f2355fb053c6f9ca4023fe22a0b36f2647213ecfa6",
+      "software_lock": [
+        "elliptic-curves/cas/index_inventory_conductor_results.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/run_inventory_conductor_pass.py",
+        "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
       "kind": "example",
       "state": "proved",
