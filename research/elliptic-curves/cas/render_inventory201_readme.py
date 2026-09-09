@@ -11,6 +11,7 @@ from pathlib import Path
 import certify_compact_r17_candidates as cert
 from local_conductor_database import load_conductor_inventory
 from research_curve_supplement import MANIFEST, load_supplement, curve_page
+from research_curve_refresh import MANIFEST as REFRESH_MANIFEST, apply_refresh
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = next(p for p in ROOT.parents if (p/'.git').exists()) if not (ROOT/'.git').exists() else ROOT
@@ -94,6 +95,7 @@ def run(check=False):
         rows.append(row)
     supplement = load_supplement(rows)
     rows.extend(supplement)
+    apply_refresh(rows)
     rows.sort(key=lambda r:(-r['rank_lower_bound'],r['conductor'] is None,
                             int(r['conductor'] or r['conductor_upper_bound'] or 10**1000),r['id']))
     counts = Counter(r['conductor_status'] for r in rows)
@@ -105,7 +107,9 @@ def run(check=False):
             'conductor_manifest':'elliptic-curves/data/conductor_screen_current.json',
             'conductor_manifest_sha256':hashlib.sha256((ROOT/'elliptic-curves/data/conductor_screen_current.json').read_bytes()).hexdigest(),
             'supplement':str(MANIFEST.relative_to(ROOT)),
-            'supplement_sha256':hashlib.sha256(MANIFEST.read_bytes()).hexdigest()},
+            'supplement_sha256':hashlib.sha256(MANIFEST.read_bytes()).hexdigest(),
+            'refresh':str(REFRESH_MANIFEST.relative_to(ROOT)),
+            'refresh_sha256':hashlib.sha256(REFRESH_MANIFEST.read_bytes()).hexdigest()},
         'claim_boundary':'Rank lower bounds, not exact ranks. Logarithms/heights are rounded approximations. Exact conductor and complete bad_primes are null until certified; partial information is kept in separate fields. The original201 rows have certified minimal models; supplemental seed rows retain source models and null minimal-model metrics. Includes already-public matches and one public-point rank28 reproduction. Finite exported examples only; no literature-wide novelty claim.'}
     put(OUT/'database.json',encoded(data),check)
     buf = io.StringIO(newline='')
@@ -146,7 +150,7 @@ def run(check=False):
         f'**{len(rows)} research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**'+(f' · {counts["REPORTED"]} reported only' if counts['REPORTED'] else '')+'.',
         'ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.','',
         'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
-        '', f'The original 201 curves have certified minimal models. The {len(supplement)} additional [determinant1092 seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
+        '', f'The original 201 curves have certified minimal models. The {len(rows)-201} additional [certified seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
         '', '[Download JSON](elliptic-curves/data/research_curves/database.json) · [Download CSV](elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)',
         '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:

@@ -53881,6 +53881,66 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-SECOND-FRESH6-11952-M22-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complementary-parent V3 raises second fresh11952 fibre from M18 to M22",
+      "scope": "At R17 family11952 parameter327/1403, four exact rational point gains extend the native M18 basis to22 independent directions within100 calls with immediate rebuilding. Full independent rational-CVP, exact map/point, finite-independence, gain-provenance and complete-cloud replay pass. No point or map timeouts. No exact rank, upper bound, public novelty or record claim.",
+      "canonical_source": "elliptic-curves/notes/SECOND_FRESH6_SEED_COHORT_2026-09-09.md",
+      "dependencies": [
+        "EC-SECOND-FRESH6-FIRST-M18-20260909"
+      ],
+      "checker": "elliptic-curves/cas/run_complement_seed_v3.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0441925a041f72ee7130c3cad8327cdc99d15351113fe123b2327146f21c602e",
+      "software_lock": [
+        "elliptic-curves/cas/run_complement_seed_v3.py",
+        "elliptic-curves/cas/prepare_exact_maximum_complement_parents.py",
+        "elliptic-curves/cas/memory_rank_certificate.py",
+        "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-SECOND-FRESH6-08234-M22-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complementary-parent V3 raises second fresh08234 fibre from M18 to M22",
+      "scope": "At R17 family08234 parameter2570/2143, four exact rational point gains extend the native M18 basis to22 independent directions within100 calls with immediate rebuilding. Full independent rational-CVP, exact map/point, finite-independence, gain-provenance and complete-cloud replay pass. No point or map timeouts. No exact rank, upper bound, public novelty or record claim.",
+      "canonical_source": "elliptic-curves/notes/SECOND_FRESH6_SEED_COHORT_2026-09-09.md",
+      "dependencies": [
+        "EC-SECOND-FRESH6-FIRST-M18-20260909"
+      ],
+      "checker": "elliptic-curves/cas/run_complement_seed_v3.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0441925a041f72ee7130c3cad8327cdc99d15351113fe123b2327146f21c602e",
+      "software_lock": [
+        "elliptic-curves/cas/run_complement_seed_v3.py",
+        "elliptic-curves/cas/prepare_exact_maximum_complement_parents.py",
+        "elliptic-curves/cas/memory_rank_certificate.py",
+        "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

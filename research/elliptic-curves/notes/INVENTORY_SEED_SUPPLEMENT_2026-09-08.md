@@ -1,5 +1,8 @@
 # Explicit seed supplement to the curve inventory
 
+This September 8 supplement is retained alongside the
+[September 9 additions and rank updates](INVENTORY_REFRESH_2026-09-09.md).
+
 The [inventory](../INVENTORY.md) adds **11 distinct curves** to the original
 201-row discovery inventory. The supplement lists the exported determinant1092
 seed examples certified in the current mathematical-status ledger:

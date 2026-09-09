@@ -16,4 +16,4 @@ Certified point count: 18. This is a rank lower bound; bounded no-gain searches 
 
 [Canonical proof note](../../../elliptic-curves/notes/DET1092_CONIC_SEED_PROGRESSION_2026-09-08.md) · [Equation and points](../../../artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/seed-at-n0-v2.json) · [Independent rank proof](../../../artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json)
 
-This finite seed supplement makes no literature-wide novelty or conductor claim.
+This finite seed supplement makes no literature-wide novelty or conductor-record claim.

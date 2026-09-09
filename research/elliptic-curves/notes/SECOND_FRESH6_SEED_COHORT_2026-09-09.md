@@ -125,3 +125,33 @@ The prior queue points to this verified descendant. No rank upper bound follows.
 
 - [Cached M26 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v1/result.json).
 - [Current M26 cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v1/suffix-queue.json).
+
+## 11952 complementary-parent amplification: M18 to M22
+
+At11952 parameter327/1403, the first complementary-parent pass finds four
+certified directions, raising the native M18 basis to M22 within100 calls.
+Every gain triggers immediate rebuilding. No point or map timeouts occur.
+Search takes136.255seconds; full independent rational-CVP, exact map/point,
+gain-provenance and complete-cloud replay passes in65.971seconds.
+The terminal is `CHART_BUDGET_EXHAUSTED`; its exact suffix is queued.
+No exact rank, rank upper bound, public novelty or record is claimed.
+
+- [Replayed M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json).
+- [M22 continuation cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/suffix-queue.json).
+
+The second cohort currently has lower bounds18,18,18,17,26,22 in family
+order074d9,07ca9,08234,08f72,103b2,11952. The first three complementary
+branches are still prepared and unsearched.
+
+## 08234 complementary-parent amplification: M18 to M22
+
+At08234 parameter2570/2143, four exact rational point gains extend the
+native M18 basis to M22 within100 calls. Every gain triggers rebuilding.
+No point or map timeouts occur. Search takes133.421seconds; full independent
+rational-CVP, exact map/point, gain-provenance and complete-cloud replay
+passes in58.750seconds. The terminal is `CHART_BUDGET_EXHAUSTED`, with
+its exact suffix queued. No exact rank, upper bound, public novelty or record
+is claimed. The074d9 and07ca9 complementary branches remain unsearched.
+
+- [Replayed M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json).
+- [M22 continuation cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/suffix-queue.json).

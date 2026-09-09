@@ -1,0 +1,22 @@
+{
+  "classification": "generic-only global minimum in one fixed translation orbit",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/independent-replay.json": "d85c552ba0c59375cc8046d90fe4091a269e78434598d220aeb2c8d494e95f0d",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-47755.json": "b607956363f1fea130c6121a37e21943beb400161560437520eead25397110d4",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/independent-replay.json": "64fb867813d363f789ccf1c599d23c8ede49864eb7e7e84950daa302c6e6def6",
+    "elliptic-curves/cas/solve_det1092_conic_alternate_translation_coset.sage": "a55a2ab857cd716be12de5f9b5e1737aa1b8ff104c51292887996a20d1e12909",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1"
+  },
+  "limits": {
+    "node_cap": 100000,
+    "parameter_evaluations": 0,
+    "parity_cosets": 1,
+    "point_searches": 0,
+    "scaled_radius": 10,
+    "seconds_per_action": 25,
+    "target_inputs": 0
+  },
+  "rule": "Use the complete integral NS image in the alternate MW12 lattice and the single parity class L=phi(C47755-F). Solve that coset with the original L as feasible radius. No selection from its target incidence."
+}

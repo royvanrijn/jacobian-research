@@ -92,10 +92,19 @@ def curve_page(row):
         f'[Full data and certified points]({r["id"]}.json) · [Inventory](../../INVENTORY.md)', '',
         'Source a-invariants (global minimality has not been certified for this inventory):', '',
         '```text', ', '.join(r['ainvs']), '```', '',
-        'Conductor status: **UNKNOWN**. Minimal discriminant, naive height and Faltings height are uncomputed in this inventory.', '',
+        f'Conductor status: **{r["conductor_status"]}**. Minimal discriminant, naive height and Faltings height are uncomputed in this inventory.', '',
         f'Certified point count: {len(r["points"])}. This is a rank lower bound; bounded no-gain searches do not prove exact rank.', '',
         f'[Canonical proof note](../../../{r["canonical_source"]}) · [Equation and points](../../../{r["rank_source_certificate"]}) · [Independent rank proof](../../../{r["rank_certificate"]})', '',
-        'This finite seed supplement makes no literature-wide novelty or conductor claim.']
+        'This finite seed supplement makes no literature-wide novelty or conductor-record claim.']
+    if r['conductor']:
+        lines += ['', 'Exact conductor:', '', '```text', r['conductor'], '```', '',
+                  'Complete bad primes:', '', '```text', ', '.join(r['bad_primes']), '```']
+    elif r['conductor_divisor']:
+        lines += ['', 'Certified conductor divisor:', '', '```text', r['conductor_divisor'], '```', '',
+                  'Certified conductor upper bound:', '', '```text', r['conductor_upper_bound'], '```', '',
+                  'Proved bad primes (incomplete):', '', '```text', ', '.join(r['known_bad_primes']), '```']
+    if r['conductor_certificate']:
+        lines += ['', f'[Conductor certificate](../../../{r["conductor_certificate"]})']
     if r.get('aliases'):
         lines += ['', 'Duplicate seed packets on this same rational-isomorphism class: '+', '.join(f'`{a}`' for a in r['aliases'])+'.']
     return '\n'.join(lines)+'\n'

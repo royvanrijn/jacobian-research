@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery-replay-supervision/supervisor.json": "43d6710053b261248b323658aff623fe6df1d27233c217e5f58caa598f81ed96",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery-supervision/supervisor.json": "cd3e03fc43501f48fb46a2925e7b09db5526efb0b4d67e71f31c963d82b70995",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery/epoch-04/chart-0071.json": "ae08632ab304f627b50d19e3a3b0fcb960ca9151bf4c9d13d9847150bd3de22e",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery/epoch-04/landscape/selection.json": "bd1ab9551a41aba576d72f6319f664690f97bc24aeb5e24d44b5e97754183765",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery/protocol.json": "202b5f6fa9d8334d3c865cd7f67459b44c2e1ee289682fe7425313eaf0e3c2a0",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery/terminal.json": "0d800f8a9d92e75bd3ea4f4005f7fe95fac63e5535e4fe257e294c7f37db848c",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-discovery/verified.json": "e2fd9293a5f46b262c109a4fbd654cbb6c20e09c06d22a16695ade0ce12373cd"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 4,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 36,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 22,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

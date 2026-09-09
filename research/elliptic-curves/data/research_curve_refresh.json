@@ -1,0 +1,207 @@
+{
+  "conductors": [
+    {
+      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "id": "r17-074d9-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "id": "r17-07ca9-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "id": "r17-08f72-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
+      "id": "r17-103b2-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+    }
+  ],
+  "curves": [
+    {
+      "claim": "EC-CURVE52-SHORT-V3-M26-20260909",
+      "family": "08f72",
+      "id": "new-20260906-52",
+      "kind": "productive",
+      "parameter": "-164/2855",
+      "rank_lower_bound": 26,
+      "source": "artifacts/generated-results/elliptic-curves/curve52_short_v3_v1/result.json"
+    },
+    {
+      "claim": "EC-CURVE113-PRODUCTIVE-V3-M26-20260909",
+      "family": "08f72",
+      "id": "new-20260906-113",
+      "kind": "productive",
+      "parameter": "-3292/1853",
+      "rank_lower_bound": 26,
+      "source": "artifacts/generated-results/elliptic-curves/curve113_productive_v3_v1/result.json"
+    },
+    {
+      "claim": "EC-CURVE116-PRODUCTIVE-V3-M26-20260909",
+      "family": "103b2",
+      "id": "new-20260906-116",
+      "kind": "productive",
+      "parameter": "-1588/3431",
+      "rank_lower_bound": 26,
+      "source": "artifacts/generated-results/elliptic-curves/curve116_productive_v3_v1/result.json"
+    },
+    {
+      "claim": "EC-CURVE200-PRODUCTIVE-V3-M26-20260909",
+      "family": "a1-fibration-02",
+      "id": "new-20260906-200",
+      "kind": "productive",
+      "parameter": "-32999/14074",
+      "rank_lower_bound": 26,
+      "source": "artifacts/generated-results/elliptic-curves/curve200_productive_v3_v1/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-074D9-M24-20260909",
+      "family": "074d9",
+      "id": "r17-074d9-fresh-001",
+      "kind": "productive",
+      "parameter": "-2707/3437",
+      "rank_lower_bound": 24,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-exact-complement/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-COMPLEMENT-M23-20260909",
+      "family": "07ca9",
+      "id": "r17-07ca9-fresh-001",
+      "kind": "reconciled",
+      "parameter": "587/1074",
+      "rank_lower_bound": 23,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json"
+    },
+    {
+      "claim": "EC-FRESH6-FIRST-M18-20260909",
+      "family": "08234",
+      "id": "r17-08234-fresh-001",
+      "kind": "cohort",
+      "parameter": "2071/4060",
+      "rank_lower_bound": 17,
+      "record": "08234-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-08F72-M24-20260909",
+      "family": "08f72",
+      "id": "r17-08f72-fresh-001",
+      "kind": "productive",
+      "parameter": "4032/1663",
+      "rank_lower_bound": 24,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/08f72-exact-complement/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-103B2-M25-20260909",
+      "family": "103b2",
+      "id": "r17-103b2-fresh-001",
+      "kind": "productive",
+      "parameter": "3889/2172",
+      "rank_lower_bound": 25,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2-exact-complement/result.json"
+    },
+    {
+      "claim": "EC-FRESH6-FIRST-M18-20260909",
+      "family": "11952",
+      "id": "r17-11952-fresh-001",
+      "kind": "cohort",
+      "parameter": "-436/3149",
+      "rank_lower_bound": 17,
+      "record": "11952-fresh-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "family": "074d9",
+      "id": "r17-074d9-fresh-002",
+      "kind": "cohort",
+      "parameter": "88/2551",
+      "rank_lower_bound": 18,
+      "record": "074d9-fresh-002",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "family": "07ca9",
+      "id": "r17-07ca9-fresh-002",
+      "kind": "cohort",
+      "parameter": "-2475/2848",
+      "rank_lower_bound": 18,
+      "record": "07ca9-fresh-002",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "family": "08234",
+      "id": "r17-08234-fresh-002",
+      "kind": "cohort",
+      "parameter": "2570/2143",
+      "rank_lower_bound": 18,
+      "record": "08234-fresh-002",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "family": "08f72",
+      "id": "r17-08f72-fresh-002",
+      "kind": "cohort",
+      "parameter": "-2433/3479",
+      "rank_lower_bound": 17,
+      "record": "08f72-fresh-002",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-103B2-M26-20260909",
+      "family": "103b2",
+      "id": "r17-103b2-fresh-002",
+      "kind": "productive",
+      "parameter": "2815/1088",
+      "rank_lower_bound": 26,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/result.json"
+    },
+    {
+      "claim": "EC-SECOND-FRESH6-11952-M22-20260909",
+      "family": "11952",
+      "id": "r17-11952-fresh-002",
+      "kind": "productive",
+      "parameter": "327/1403",
+      "rank_lower_bound": 22,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json"
+    },
+    {
+      "claim": "EC-DET1092-BIFIBRATION-CONIC-SEEDS-20260909",
+      "family": "det1092",
+      "frame": "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-generic-frame.json",
+      "id": "det1092-bifibration-47755-u0",
+      "kind": "bifibration",
+      "parameter": "-794459991237661142209617508397391440884113108634171074066711018838945978224174452588881613221706265734197809555933012393733591703340128781049296741873890600/101152243121506013840142801432912819448788194901148571208554069335678583838683534671173935055963529387783391020656808709697708481177511551536549698509613977187",
+      "rank_lower_bound": 18,
+      "replay": "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/independent-replay.json",
+      "source": "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-result.json"
+    }
+  ],
+  "schema": "elliptic-curves.research-curve-refresh.v1",
+  "scope": "Selected certified updates through 2026-09-09. Saved finite reductions only; no point searches, exact-rank or novelty claims.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/curve113_productive_v3_v1/result.json": "d7f6dcc8c2b0cfbba2e657b7e33913e8bcd52fd9113187d4ae31ea9c4136c783",
+    "artifacts/generated-results/elliptic-curves/curve116_productive_v3_v1/result.json": "182d3947a08ced3fb50ee1ffe5cca517b78ea65368539b0113dd146d073bce2f",
+    "artifacts/generated-results/elliptic-curves/curve200_productive_v3_v1/result.json": "c57df2e19d414e871cc9135531c56db939245d0f2639312e6fcf2098921ad380",
+    "artifacts/generated-results/elliptic-curves/curve52_short_v3_v1/result.json": "569b3a81d6748951c49d9caab7ed42971acdc8db7519e8c1f0f94f4fff3f479f",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/independent-replay.json": "b9ae22fb729f47df14af69cc6623c9deb0df8b3a2e90d6e76dd53f2fcf391209",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-generic-frame.json": "965baf19132d76d8c73f64bdbb1c1e54bdea5da6c3b6421bbfbda53cb754c7f3",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-result.json": "e8c82f79a6fe2c8c8e053594178fe6ea96b01e9149a1c893b418e7b3bbbd7a83",
+    "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-exact-complement/result.json": "0cded3135708559328600cf2d6f6198a509b7175acb7d3a296f23152738850ef",
+    "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json": "895dae912ca8696f3e0f26a1b6acdafed21b5d6fd03c0a46b3fccc4e962f0484",
+    "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/08f72-exact-complement/result.json": "a80bf7548695cc506afa73f95f69154a07f5404d4ac7501282ca1a74280da647",
+    "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2-exact-complement/result.json": "d1d3d9e4a3be43936ddeed9498b79b0e279b23ddcb38d9279552159f91f8d73e",
+    "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json": "8451e99dc9cb2ab07f712bd400a1cea0638a334317050cbcf22b4ca8a2463298",
+    "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json": "946db9842740f63da8ffd7071424148b15e10a89f11cd5904935f29f4dbf20bf",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/result.json": "abe10959726b97ceb10183562b545af60ec31e24698f1a17471588baa972cd8b",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json": "294e504a31a35fd73d1f26a96aa60c92b6357b7488bcd55aed9afd813916b7ca",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e"
+  }
+}

@@ -1,0 +1,322 @@
+# A two-sided minimum for the rational conic, and explicit degree-six exits
+
+## Results
+
+**New deduction, independently checked.** Let `C` be the existing rational
+conic47755 on the determinant1092 K3, `F` the original elliptic fibre and
+`D` the fixed norm8 alternate fibre. Thus `(C.F,C.D)=(2,2)`.
+Let `M_alt` be the **full integral** generic alternate Mordell–Weil lattice,
+of rank12 and determinant273/8. Put
+
+\[
+ L=\phi_D(C-F)\in M_{\rm alt},\qquad \|L\|^2=5.
+\]
+
+For every generic alternate point `Q`, not just a chosen finite sample,
+
+\[
+\boxed{\deg(\pi_F|_{t_QC})
+ =2+2\|Q\|^2+2\langle L,Q\rangle
+ =\frac{\|2Q+L\|^2-1}{2}.}
+\tag{1}
+\]
+
+One exact parity-CVP calculation, independently replayed as an affine
+ellipsoid calculation, proves
+
+\[
+ \min_{Q\in M_{\rm alt}}\|2Q+L\|^2=5,
+ \qquad\{Q:\text{minimum}\}=\{0,-L\}.
+\tag{2}
+\]
+
+Therefore **no generic alternate translation of this conic is an original
+section**. The two minimum-degree curves are `C` and `C'`, where
+`C'=t_(w-a)C` in the original group, `a=e2+e12-e16`, `w=e15-e16`.
+They are exactly the two minimum curves previously found in the opposite
+translation problem. All indices here are one-based.
+
+**New two-sided consequence.** Starting at `C`, alternating either
+generic translation group, with inversions allowed, and requiring both
+projection degrees to remain at most2 can visit only `{C,C'}`.
+Every route to an original or alternate section must first leave this
+degree bound. This is a two-sided degree minimum, **not** an obstruction
+to arbitrary higher-degree alternating paths or to302 seeds.
+
+**Verified constructive application.** An equation-only choice of a
+shorter alternate translating section gives two explicit rational covers
+of original degree6, each with generic rank at least18 over Q(u).
+Both covers miss302 and all eight old null/control fibres exactly:
+18 rational-incidence exclusions, not bounded point-search misses.
+There is no new specialized rank claim.
+
+## 1. Audit and scope
+
+**Verified prior applications, reused.** The
+[bi-fibration conic theorem](DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md)
+already established this curve's two generic independence statements and
+the original-translation minimum. It also excluded its entire generic
+alternate-translation orbit from the **marked first carrier**. That last
+fact does not exclude meeting the original302 fibre at a different
+alternate parameter, so testing the two new covers on the original fibre
+is a distinct question.
+
+The [earlier degree barrier](DET1092_TWO_FIBRATION_DEGREE_GAP_2026-09-09.md)
+used the convenient pointed-quartic section `B`, of alternate height19/2,
+and a different starting curve. It did not optimize over all alternate
+translations. Here we distinguish a cheap explicit translating section
+from the subsequent **global**, single-coset minimum for this fixed conic.
+
+No additional original-section census or subgroup-state census was run.
+The short-section construction reuses the completed130 curves satisfying
+`S.F=S.D=1`. The full-MW calculation uses the existing19 integral Picard
+generators and **one** parity coset, with a100,000-node/25-second cap.
+It visits67 nodes. No exceptional point, carrier label, control parameter,
+catalogue rank or V3 artifact enters either geometric selection.
+
+## 2. Why translation height controls projection degree
+
+**Established literature.** Orthogonal projection to the Mordell–Weil
+space and the section-height formula are standard; see
+[Schuett–Shioda, *Elliptic Surfaces*, sections11.4–11.8](https://arxiv.org/pdf/0907.0298).
+
+**New application and proof of(1).** Write `O_D` for the alternate zero
+section and `R1,...,R5` for its five nonidentity `I2` components. The
+original fibre meets each component once, so
+
+\[
+ F=2O_D+5D-\frac12\sum_iR_i+\phi_D(F),
+ \qquad \|\phi_D(F)\|^2=19/2.
+\tag{3}
+\]
+
+Translation may swap the two components of an `I2` fibre, but it preserves
+these balanced intersection numbers. It also preserves `F^2=0` and
+`F.D=2`. Pulling back by translation by `Q` changes the normalized
+restriction class by `-2Q`; hence these constraints determine
+
+\[
+ t_Q^{-1}F=F+
+ \bigl(\|Q\|^2-\langle\phi_D(F),Q\rangle\bigr)D
+ -2\phi_D(Q).
+\tag{4}
+\]
+
+Pairing with `C`, using `C.F=C.D=2`, gives(1). The checker verifies(4)'s
+self-intersection, fibre/component intersections, and(1) symbolically in
+twelve independent variables. Thus(1) is not a polynomial fit to a few
+integer multiples. The absence of a periodic component term is explained
+by the balanced original fibre, not assumed for arbitrary divisor classes.
+
+In the saved component ordering, `C.R_i=(2,1,1,1,0)`, while every `F.R_i=1`.
+Projection gives `||phi_D(C)||^2=29/2` and `||phi_D(C-F)||^2=5`.
+All these are exact rational intersection calculations.
+
+## 3. The full integral lattice and the global minimum
+
+**Verified application.** The full geometric Picard group is integrally
+generated by the displayed19 classes, all defined over Q. Normalized
+restriction to the alternate generic elliptic fibre identifies the quotient
+by its trivial lattice with its Mordell–Weil group. The generic torsion
+is zero, as already proved from the positive height lower bound.
+
+Consequently the image of the19 generators under `phi_D` is the exact
+integral MW lattice—not an arbitrary rational saturation or a convenient
+rank12 sublattice. The producer clears denominator2 and supplies an integer
+Hermite transformation with determinant±1. Independent multiplication
+checks that transformation and the12 nonzero rows. The resulting Gram
+matrix has determinant273/8, and twice that Gram matrix is integral.
+
+[The exact frame](../../artifacts/generated-results/elliptic-curves/det1092_conic_alternate_translation_coset_v1/frame.json)
+contains this lattice basis in Picard coordinates, its Gram matrix, the
+Hermite witness, and the integral coordinates of `L`.
+
+**New exact computation.** In `2*Gram`, the feasible vector `L` has norm10.
+The producer searches the single parity class `L mod2M_alt` inside that
+closed ellipsoid. Independently, the checker enumerates integer `Q` in
+the affine ellipsoid centred at `-L/2` with squared radius5/2 in
+`2*Gram`. Every branch bound is rational, with integer square-root bounds;
+the saved unimodular reduction is used only for efficiency.
+
+The only vectors in the closed parity ellipsoid are `L` and `-L`.
+Both calculations visit67 nodes. This proves(2), including completeness
+and exclusion of any degree-zero or degree-one translate. The saved
+minimum curves agree with the two original-translation minima.
+
+### Why this is a two-sided obstruction
+
+**Verified prior result, recalled.** In the original rootless MW17 lattice,
+
+\[
+ D\mathbin{.}t_qC=\frac12\|2q+a-w\|^2-1.
+\]
+
+The norm6 parity class `a-w mod2M17` has only its opposite pair of
+minimum vectors. Hence its minimum is2, attained only at `q=0,w-a`.
+This is the original-translation proof in the preceding conic note;
+no second original-lattice enumeration was performed here.
+
+**New deduction.** The curve `C'` lies in both translation orbits of `C`.
+So from either curve, either translation group can remain within the
+degree-two bound only by returning to this pair. Inversion adds no curves
+within that bound: for any degree-two multisection, its generic fibre's
+two points have an inherited rational trace `T`, and the involution
+`P -> T-P` preserves the curve. Its image under inversion is therefore
+already a translate by `-T`.
+
+This proves the two-curve assertion for every finite alternating word
+whose intermediate curves all have bidegree at most(2,2). It does not
+exclude a word that temporarily raises a degree to3 or higher. Nor does
+it prove an automorphism-orbit classification of rational curves on the K3.
+
+## 4. An explicit smaller-degree exit
+
+**Verified generic-only selection.** Among the already completed130
+common sections, the unique smallest positive alternate height is2.
+The selected point is the original generic section with word
+
+\[
+ q_0=e_1-2e_3+e_5-e_6+e_7-e_8-e_9-e_{10}+2e_{11}+e_{15}.
+\tag{5}
+\]
+
+Its original height is4. It meets the alternate zero section with
+intersection zero and four nonidentity `I2` components, so its alternate
+height is `4-4/2=2`. The full height distribution on the130 common
+sections is independently checked. **This is not a claim that2 is the
+minimum of the whole alternate MW12 lattice.** In particular, the single
+coset calculation in section3 is not a shortest-vector enumeration of
+that full lattice.
+
+Let `Q0` denote this section as a point of the alternate elliptic curve.
+For the fixed source `C`, exact Picard identities prove, for every
+integer `n`,
+
+\[
+\boxed{\deg(\pi_F|_{t_{nQ_0}C})=2+4n^2,
+\qquad\deg(\pi_F|_{t_{nB}C})=2+19n^2.}
+\tag{6}
+\]
+
+The linear terms vanish because both translating classes are orthogonal
+to `L`. An independent matrix check proves
+`(A^-1-I)^3 F=0`, with first and second differences paired against `C`
+equal to `c,2c`, respectively (`c=4` or19). The binomial identity then
+proves(6) for negative as well as positive `n`.
+
+**Interpretation, new deduction.** The degree21 first move using `B`
+was not an unavoidable cost of leaving this conic: a generic height2
+translation gives degree6. This is an exact degree-growth mechanism,
+not an estimate of point-search runtime or a guarantee of rational incidence.
+
+### Explicit equations and maps
+
+The [short-section packet](../../artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/short-section.json)
+contains the exact generic point from(5), its Möbius map `z=z_Q(t)`, and
+the inverse alternate section `(t_Q(z),W_Q(z))` on `W^2=F_z(t)`.
+It is computed solely by the original generic group law. Independent
+manual reverse-order addition verifies it.
+
+Start with the old conic parametrization `u -> (t_C(u),W_C(u),Z(u))`
+on this quartic pencil. For each fixed sign `epsilon=±1`, convert both
+the conic point and `(t_Q(Z),W_Q(Z))` to the pointed Weierstrass model,
+add `epsilon*Q0`, and apply the inverse pointed-quartic map. The result is
+
+\[
+ t=T_\epsilon(u),\qquad W=W_\epsilon(u),\qquad z=Z(u),
+ \quad W_\epsilon(u)^2=F_{Z(u)}(T_\epsilon(u)).
+\tag{7}
+\]
+
+All rational coefficients are retained in
+[the minus map](../../artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-0.json)
+and [the plus map](../../artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-1.json).
+Lists are low-degree first, with explicit numerator and denominator.
+The maps have bidegree(6,2). The pointed-model formulas and map back to
+the original elliptic curve are given in the
+[preceding construction](DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md#3-explicit-maps-and-a-rational-source).
+The independent checker uses explicit chord identities in both directions,
+not the producer's elliptic point-addition call.
+
+Translation is an automorphism of the smooth elliptic K3. Thus each image
+is a genuine rational curve with normalization `P1_u`. The
+[all-prime theorem](DET1092_ALL_PRIME_DIVISION_AND_MULTISECTION_THEOREM_2026-09-09.md)
+proves an independent original pullback section and generic rank at
+least18 for each map. These are two separate constructions, not rank19
+on one family. A rational point source is explicit: `u in P1(Q)`.
+Affine denominator zeros and singular specialized fibres must be handled
+or excluded; generic independence is not a guarantee at every rational `u`.
+
+## 5. Exact302/control incidence
+
+**Verified retrospective evaluation, after the maps were frozen.** Write
+`T_epsilon=N_epsilon/D_epsilon` in lowest terms. A rational preimage of
+an original parameter `t` exists precisely when the homogeneous sextic
+`N_epsilon-t D_epsilon` has a projective rational zero. This is the exact
+splitting condition for these constructions, before independence admission.
+
+The two sextics have no rational zero at `t=0` (302), nor at any of the
+eight unchanged determinant1092 control parameters. All18 have full
+affine degree6, excluding a zero at infinity. Simple Hensel lifts and
+exact two-dimensional rational-root lattice certificates exclude all
+finite rational zeros; the independent verifier checks every supplied
+lift and lattice inequality without root search or factorization.
+
+The labels `302-generic-section-control` and the eight `scale-*` labels
+come from the old roster; only their original parameter addresses are
+used. This is not a new blinded302 experiment. No exceptional coordinates
+or rank labels are execution inputs, and no rule was changed after the
+incidence results were seen.
+
+**Boundary.** These are exact exclusions of these two maps. They do not
+exclude higher multiples `n`, other generic translating points, higher-degree
+alternating paths, other rational curves, or any rank jump on these fibres.
+Since neither construction hits302, they supply no positive/null discriminator.
+The earlier obstruction still excludes the entire alternate-translation
+orbit from the specifically marked first carrier, a different statement.
+
+## 6. Replay and retained failures
+
+**Verified execution.** No job exceeded its25-second cap. The two map
+constructions took12.923 and13.546 seconds internally; independent map
+checks took4.259 and5.903 seconds. All18 incidence checks replayed together
+in0.076 seconds. The single global parity computation visited67 nodes.
+No live process remains; production searches were untouched.
+
+```bash
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_short_alternate_translations.sage geometry
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_short_alternate_translations.sage map --index 0
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_short_alternate_translations.sage map --index 1
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_short_alternate_translations.sage incidence
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_short_alternate_translations.sage assemble
+/home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_conic_alternate_translation_coset.sage
+```
+
+Final independent certificates:
+
+- [Degree laws, two maps and panel](../../artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/independent-replay.json):
+  `PASS_SHORT_TRANSLATION_DEGREE_LAW_TWO_COVERS_AND_PANEL`.
+- [Full-lattice CVP and two-sided minimum](../../artifacts/generated-results/elliptic-curves/det1092_conic_alternate_translation_coset_v1/independent-replay.json):
+  `PASS_FULL_MW12_CVP_AND_TWO_SIDED_CONIC_MINIMUM`.
+
+The initial height3/2 selector found no member in the130 common sections;
+that premise failure and its immutable protocol are retained. A second
+generic-only protocol selected the least positive height actually present,
+before any target evaluation. An arithmetic-order implementation then
+mutated a Sage vector while scoring partial sums; its assertion failed
+before producing a section/map certificate. The corrected implementation
+copies the vector coefficients. Both versions and failure records remain.
+No successful certificate or mathematical input was overwritten.
+
+## What this explains, and what remains open
+
+**New deduction.** The obstruction is not merely sparse coordinate sampling:
+the full integral parity coset has a nonzero exact minimum preventing
+descent to a section. In the same example, translator height explains a
+large avoidable increase in cover degree. These are distinct geometric facts.
+
+**Open.** Neither fact selects a rational preimage on the original302
+fibre. The new small-degree exits remain nonsplit on302 and its controls.
+An equation-only construction that lands on302, or a different arithmetic
+condition distinguishing its first independent seed, is still required.
+No explanation of the later amplification directions is claimed here.

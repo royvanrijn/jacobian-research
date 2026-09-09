@@ -19,17 +19,17 @@ forwards its targets to that directory.
 <!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
 ## Elliptic curve inventory
 
-**212 research curves · 129 exact conductors · 83 unresolved**.
+**225 research curves · 130 exact conductors · 95 unresolved**.
 ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
-The original 201 curves have certified minimal models. The 11 additional [determinant1092 seed curves](research/elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
+The original 201 curves have certified minimal models. The 24 additional [certified seed curves](research/elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](research/elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](research/elliptic-curves/data/research_curves/database.json) · [Download CSV](research/elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](research/elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
 <details>
-<summary>Show all 212 curves</summary>
+<summary>Show all 225 curves</summary>
 
 | Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |
 |---|---|---:|---:|---:|---:|---:|
@@ -51,14 +51,19 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-63](research/elliptic-curves/data/research_curves/new-20260906-63.md) | `[1, 0, 1, -2445843071846…, 14040344901689…]` | ≥ 26 | 277.01 | 332.05 | 25.61 | 322.20 |
 | [new-20260906-75](research/elliptic-curves/data/research_curves/new-20260906-75.md) | `[1, 0, 0, -5433430543708…, 15466891962023…]` | ≥ 26 | 278.76 | 341.36 | 26.27 | 328.89 |
 | [new-20260906-73](research/elliptic-curves/data/research_curves/new-20260906-73.md) | `[1, -1, 1, -1135454119938…, 14657867194438…]` | ≥ 26 | 279.02 | 350.47 | 27.04 | 338.34 |
+| [new-20260906-200](research/elliptic-curves/data/research_curves/new-20260906-200.md) | `[1, 0, 0, -1600850384897…, 77921536229961…]` | ≥ 26 | 281.00 | 386.04 | 29.92 | 371.68 |
 | [new-20260906-103](research/elliptic-curves/data/research_curves/new-20260906-103.md) | `[1, 0, 0, -4735718613418…, 12205008133792…]` | ≥ 26 | 281.16 | 354.76 | 27.47 | 344.37 |
 | [new-20260906-106](research/elliptic-curves/data/research_curves/new-20260906-106.md) | `[1, -1, 1, -2225634284449…, 70081981858019…]` | ≥ 26 | 282.76 | 353.59 | 27.51 | 345.74 |
+| [new-20260906-113](research/elliptic-curves/data/research_curves/new-20260906-113.md) | `[1, 0, 0, -1346744695971…, 19422896536707…]` | ≥ 26 | 293.96 | 378.66 | 29.45 | 368.00 |
+| [new-20260906-116](research/elliptic-curves/data/research_curves/new-20260906-116.md) | `[1, 1, 1, -1917418746764…, 10068368819109…]` | ≥ 26 | 295.69 | 358.95 | 27.80 | 347.97 |
+| [new-20260906-52](research/elliptic-curves/data/research_curves/new-20260906-52.md) | `[1, 0, 0, -2367619162358…, 47019730697497…]` | ≥ 26 | 305.99 | 380.43 | 29.65 | 370.77 |
 | [new-20260906-50](research/elliptic-curves/data/research_curves/new-20260906-50.md) | `[0, 1, 0, -2429928713309…, 14456788823722…]` | ≥ 26 | — | 332.03 | 25.53 | 320.49 |
 | [new-20260906-105](research/elliptic-curves/data/research_curves/new-20260906-105.md) | `[1, 0, 0, -4738382172613…, 11718902875043…]` | ≥ 26 | — | 327.13 | 25.21 | 317.62 |
 | [new-20260906-102](research/elliptic-curves/data/research_curves/new-20260906-102.md) | `[0, 1, 0, -2497472982592…, 11650272964469…]` | ≥ 26 | — | 359.75 | 28.00 | 351.41 |
 | [new-20260906-91](research/elliptic-curves/data/research_curves/new-20260906-91.md) | `[1, 0, 0, -5452412384522…, 50997797154510…]` | ≥ 26 | — | 375.98 | 29.26 | 365.96 |
 | [new-20260906-99](research/elliptic-curves/data/research_curves/new-20260906-99.md) | `[1, 0, 0, -6703231592513…, 21158562400025…]` | ≥ 26 | — | 397.25 | 30.90 | 384.07 |
 | [new-20260906-189](research/elliptic-curves/data/research_curves/new-20260906-189.md) | `[1, -1, 1, -1663545350154…, 25999962336300…]` | ≥ 26 | — | 393.07 | 30.59 | 380.88 |
+| [r17-103b2-fresh-002](research/elliptic-curves/data/research_curves/r17-103b2-fresh-002.md) | `[0, 0, 0, -1732071835709…, 87788776178863…]` | ≥ 26 | — | — | — | — |
 | [new-20260906-54](research/elliptic-curves/data/research_curves/new-20260906-54.md) | `[1, 0, 0, -2903206315434…, 18059949234337…]` | ≥ 25 | 228.23 | 318.75 | 24.50 | 309.00 |
 | [new-20260906-43](research/elliptic-curves/data/research_curves/new-20260906-43.md) | `[1, 0, 0, -2430269761279…, 14025401250208…]` | ≥ 25 | 228.74 | 290.59 | 22.14 | 280.54 |
 | [new-20260906-79](research/elliptic-curves/data/research_curves/new-20260906-79.md) | `[1, 0, 1, -6937735796735…, 77561917052089…]` | ≥ 25 | 230.23 | 307.75 | 23.61 | 298.56 |
@@ -77,12 +82,8 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-120](research/elliptic-curves/data/research_curves/new-20260906-120.md) | `[1, 0, 0, -3499002624654…, 26167673898815…]` | ≥ 25 | 270.20 | 333.20 | 25.69 | 323.13 |
 | [new-20260906-118](research/elliptic-curves/data/research_curves/new-20260906-118.md) | `[1, 0, 0, -2757470848258…, 55282180676235…]` | ≥ 25 | 270.38 | 353.14 | 27.28 | 341.55 |
 | [new-20260906-44](research/elliptic-curves/data/research_curves/new-20260906-44.md) | `[1, 0, 0, -4261786634678…, 34777610170353…]` | ≥ 25 | 279.56 | 347.59 | 26.87 | 337.17 |
-| [new-20260906-200](research/elliptic-curves/data/research_curves/new-20260906-200.md) | `[1, 0, 0, -1600850384897…, 77921536229961…]` | ≥ 25 | 281.00 | 386.04 | 29.92 | 371.68 |
 | [new-20260906-78](research/elliptic-curves/data/research_curves/new-20260906-78.md) | `[1, 0, 0, -1108875710517…, 13910170292293…]` | ≥ 25 | 292.47 | 364.22 | 28.25 | 353.60 |
-| [new-20260906-113](research/elliptic-curves/data/research_curves/new-20260906-113.md) | `[1, 0, 0, -1346744695971…, 19422896536707…]` | ≥ 25 | 293.96 | 378.66 | 29.45 | 368.00 |
-| [new-20260906-116](research/elliptic-curves/data/research_curves/new-20260906-116.md) | `[1, 1, 1, -1917418746764…, 10068368819109…]` | ≥ 25 | 295.69 | 358.95 | 27.80 | 347.97 |
 | [new-20260906-117](research/elliptic-curves/data/research_curves/new-20260906-117.md) | `[0, 1, 0, -2007390083834…, 10726523259192…]` | ≥ 25 | 299.12 | 359.09 | 27.82 | 348.42 |
-| [new-20260906-52](research/elliptic-curves/data/research_curves/new-20260906-52.md) | `[1, 0, 0, -2367619162358…, 47019730697497…]` | ≥ 25 | 305.99 | 380.43 | 29.65 | 370.77 |
 | [new-20260905-02](research/elliptic-curves/data/research_curves/new-20260905-02.md) | `[0, 1, 0, -2294922577037…, 43151908014471…]` | ≥ 25 | — | 297.36 | 22.67 | 286.65 |
 | [new-20260906-64](research/elliptic-curves/data/research_curves/new-20260906-64.md) | `[1, 0, 0, -2294485253390…, 13137493111195…]` | ≥ 25 | — | 318.05 | 24.40 | 307.26 |
 | [new-20260906-76](research/elliptic-curves/data/research_curves/new-20260906-76.md) | `[1, 0, 1, -1253339005394…, 57810766480572…]` | ≥ 25 | — | 316.37 | 24.32 | 306.85 |
@@ -97,6 +98,7 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-109](research/elliptic-curves/data/research_curves/new-20260906-109.md) | `[1, 0, 0, -1413662557339…, 66332414636833…]` | ≥ 25 | — | 358.09 | 27.75 | 347.61 |
 | [new-20260906-112](research/elliptic-curves/data/research_curves/new-20260906-112.md) | `[1, 0, 1, -9445216260008…, 36055694157722…]` | ≥ 25 | — | 329.24 | 25.33 | 318.56 |
 | [new-20260906-108](research/elliptic-curves/data/research_curves/new-20260906-108.md) | `[0, 1, 0, -7414389144151…, 24140726469159…]` | ≥ 25 | — | 356.10 | 27.57 | 345.29 |
+| [r17-103b2-fresh-001](research/elliptic-curves/data/research_curves/r17-103b2-fresh-001.md) | `[0, 0, 0, -5168834811904…, 14190568241678…]` | ≥ 25 | — | — | — | — |
 | [new-20260906-129](research/elliptic-curves/data/research_curves/new-20260906-129.md) | `[1, 0, 0, -1117426831395…, 43673028426873…]` | ≥ 24 | 218.32 | 288.26 | 21.95 | 278.24 |
 | [new-20260906-127](research/elliptic-curves/data/research_curves/new-20260906-127.md) | `[1, 0, 0, -3428548612984…, 36377001247496…]` | ≥ 24 | 218.91 | 292.42 | 22.40 | 284.36 |
 | [new-20260906-56](research/elliptic-curves/data/research_curves/new-20260906-56.md) | `[1, 0, 0, -2574004602740…, 17125620800021…]` | ≥ 24 | 222.54 | 290.91 | 22.20 | 281.48 |
@@ -128,6 +130,7 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-97](research/elliptic-curves/data/research_curves/new-20260906-97.md) | `[1, 0, 0, -1313271189490…, 59892209008991…]` | ≥ 24 | 289.36 | 344.07 | 26.59 | 333.88 |
 | [new-20260906-196](research/elliptic-curves/data/research_curves/new-20260906-196.md) | `[1, 0, 0, -1240823078810…, 53158040941219…]` | ≥ 24 | 293.64 | 371.46 | 28.72 | 357.56 |
 | [new-20260906-131](research/elliptic-curves/data/research_curves/new-20260906-131.md) | `[1, -1, 1, -8630149593675…, 97860332866838…]` | ≥ 24 | 294.53 | 363.47 | 28.10 | 350.84 |
+| [r17-08f72-fresh-001](research/elliptic-curves/data/research_curves/r17-08f72-fresh-001.md) | `[0, 0, 0, -1377114562285…, 71112343921765…]` | ≥ 24 | 305.55 | — | — | — |
 | [new-20260905-10](research/elliptic-curves/data/research_curves/new-20260905-10.md) | `[1, 0, 0, -9941757705488…, 12011979816231…]` | ≥ 24 | — | 308.63 | 23.55 | 296.45 |
 | [new-20260906-123](research/elliptic-curves/data/research_curves/new-20260906-123.md) | `[1, 0, 0, -2198240392712…, 39077091419249…]` | ≥ 24 | — | 324.83 | 24.95 | 313.85 |
 | [new-20260906-140](research/elliptic-curves/data/research_curves/new-20260906-140.md) | `[1, 0, 0, -2619197841993…, 16231107460154…]` | ≥ 24 | — | 304.63 | 23.22 | 292.60 |
@@ -146,6 +149,7 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-142](research/elliptic-curves/data/research_curves/new-20260906-142.md) | `[1, 0, 0, -5649562455320…, 17061296868837…]` | ≥ 24 | — | 355.37 | 27.54 | 345.42 |
 | [new-20260906-138](research/elliptic-curves/data/research_curves/new-20260906-138.md) | `[0, 1, 0, -1140167018600…, 50664698433370…]` | ≥ 24 | — | 357.55 | 27.75 | 348.16 |
 | [new-20260906-46](research/elliptic-curves/data/research_curves/new-20260906-46.md) | `[0, 1, 0, -2451091942964…, 14729131656777…]` | ≥ 24 | — | 345.88 | 26.64 | 333.23 |
+| [r17-074d9-fresh-001](research/elliptic-curves/data/research_curves/r17-074d9-fresh-001.md) | `[0, 0, 0, -2698073170919…, 59050784949742…]` | ≥ 24 | — | — | — | — |
 | [new-20260906-141](research/elliptic-curves/data/research_curves/new-20260906-141.md) | `[0, 1, 0, -2568174338905…, 15911676041496…]` | ≥ 24 | — | 359.84 | 27.82 | 347.66 |
 | [new-20260906-162](research/elliptic-curves/data/research_curves/new-20260906-162.md) | `[1, 0, 0, -3230152894772…, 27145586613507…]` | ≥ 23 | 198.13 | 250.38 | 18.87 | 241.80 |
 | [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) ([Bhavik Mehta](https://elliptic-rank.icarm.cloud/user/64)) | `[1, 0, 0, -2673631332732…, 16765556663649…]` | ≥ 23 | 205.75 | 277.06 | 20.91 | 264.68 |
@@ -175,6 +179,7 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-199](research/elliptic-curves/data/research_curves/new-20260906-199.md) | `[0, -1, 0, -2914075924876…, 17035551226407…]` | ≥ 23 | 307.35 | 360.21 | 28.00 | 351.19 |
 | [new-20260906-187](research/elliptic-curves/data/research_curves/new-20260906-187.md) | `[0, 1, 0, -8385913570454…, 29012491279858…]` | ≥ 23 | 311.87 | 370.29 | 28.75 | 359.53 |
 | [new-20260906-89](research/elliptic-curves/data/research_curves/new-20260906-89.md) | `[1, 0, 0, -6267191125441…, 61123619929522…]` | ≥ 23 | — | 307.27 | 23.48 | 296.08 |
+| [r17-07ca9-fresh-001](research/elliptic-curves/data/research_curves/r17-07ca9-fresh-001.md) | `[0, 0, 0, -3825259449779…, 85143840849510…]` | ≥ 23 | — | — | — | — |
 | [new-20260905-18](research/elliptic-curves/data/research_curves/new-20260905-18.md) | `[0, 1, 0, -5076486514628…, 44423038931901…]` | ≥ 23 | — | 306.63 | 23.41 | 295.15 |
 | [new-20260906-151](research/elliptic-curves/data/research_curves/new-20260906-151.md) | `[1, 0, 0, -9667688991118…, 11022338501743…]` | ≥ 23 | — | 308.55 | 23.65 | 298.71 |
 | [new-20260906-59](research/elliptic-curves/data/research_curves/new-20260906-59.md) | `[1, 0, 0, -3162549426908…, 21169341254272…]` | ≥ 23 | — | 319.01 | 24.48 | 308.42 |
@@ -234,7 +239,9 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [new-20260906-183](research/elliptic-curves/data/research_curves/new-20260906-183.md) | `[1, 0, 0, -2410326942603…, 10732128134291…]` | ≥ 22 | — | 345.83 | 26.84 | 337.56 |
 | [new-20260906-175](research/elliptic-curves/data/research_curves/new-20260906-175.md) | `[1, -1, 1, -4178960739123…, 31658080454283…]` | ≥ 22 | — | 375.11 | 29.18 | 365.04 |
 | [new-20260906-176](research/elliptic-curves/data/research_curves/new-20260906-176.md) | `[1, 0, 1, -6924559956107…, 21911629220112…]` | ≥ 22 | — | 369.71 | 28.68 | 358.53 |
+| [r17-11952-fresh-002](research/elliptic-curves/data/research_curves/r17-11952-fresh-002.md) | `[0, 0, 0, -5012381313604…, 13682260990625…]` | ≥ 22 | — | — | — | — |
 | [det1092-funnel-002537010](research/elliptic-curves/data/research_curves/det1092-funnel-002537010.md) | `[0, 0, 0, -2530162402717…, 75057748791573…]` | ≥ 21 | — | — | — | — |
+| [det1092-bifibration-47755-u0](research/elliptic-curves/data/research_curves/det1092-bifibration-47755-u0.md) | `[0, 0, 0, -1781159309922…, 30509288043744…]` | ≥ 18 | — | — | — | — |
 | [det1092-funnel-019791672](research/elliptic-curves/data/research_curves/det1092-funnel-019791672.md) | `[0, 0, 0, -1562006295423…, 23882918570986…]` | ≥ 18 | — | — | — | — |
 | [det1092-funnel-020887854](research/elliptic-curves/data/research_curves/det1092-funnel-020887854.md) | `[0, 0, 0, -1768776728185…, 28489418804243…]` | ≥ 18 | — | — | — | — |
 | [det1092-orbit8044-000000](research/elliptic-curves/data/research_curves/det1092-orbit8044-000000.md) | `[0, 0, 0, -2958030484963…, 19413105371931…]` | ≥ 18 | — | — | — | — |
@@ -245,6 +252,12 @@ The original 201 curves have certified minimal models. The 11 additional [determ
 | [det1092-orbit8044-000006](research/elliptic-curves/data/research_curves/det1092-orbit8044-000006.md) | `[0, 0, 0, -1931096009893…, 32380608777629…]` | ≥ 18 | — | — | — | — |
 | [det1092-progression-n0](research/elliptic-curves/data/research_curves/det1092-progression-n0.md) | `[1, 1, 1, -6442057369785…, 32564309783061…]` | ≥ 18 | — | — | — | — |
 | [det1092-small-conic](research/elliptic-curves/data/research_curves/det1092-small-conic.md) | `[0, 0, 0, -1496259048064…, 69838808593497…]` | ≥ 18 | — | — | — | — |
+| [r17-074d9-fresh-002](research/elliptic-curves/data/research_curves/r17-074d9-fresh-002.md) | `[0, 0, 0, -7481384468108…, 25009036551682…]` | ≥ 18 | — | — | — | — |
+| [r17-07ca9-fresh-002](research/elliptic-curves/data/research_curves/r17-07ca9-fresh-002.md) | `[0, 0, 0, -7430520563173…, 85650521910783…]` | ≥ 18 | — | — | — | — |
+| [r17-08234-fresh-002](research/elliptic-curves/data/research_curves/r17-08234-fresh-002.md) | `[0, 0, 0, -6464666246333…, 63912968642412…]` | ≥ 18 | — | — | — | — |
+| [r17-08234-fresh-001](research/elliptic-curves/data/research_curves/r17-08234-fresh-001.md) | `[0, 0, 0, -1080260006052…, 13806747771782…]` | ≥ 17 | — | — | — | — |
+| [r17-08f72-fresh-002](research/elliptic-curves/data/research_curves/r17-08f72-fresh-002.md) | `[0, 0, 0, -7190238579132…, 22253615067619…]` | ≥ 17 | — | — | — | — |
+| [r17-11952-fresh-001](research/elliptic-curves/data/research_curves/r17-11952-fresh-001.md) | `[0, 0, 0, -3564009165657…, 25756772259707…]` | ≥ 17 | — | — | — | — |
 
 </details>
 

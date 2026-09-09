@@ -16,6 +16,6 @@ Certified point count: 18. This is a rank lower bound; bounded no-gain searches 
 
 [Canonical proof note](../../../elliptic-curves/notes/DET1092_SMALL_CONIC_SEED_2026-09-08.md) · [Equation and points](../../../artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/seeds/conic-small-01/m18.json) · [Independent rank proof](../../../artifacts/generated-results/elliptic-curves/det1092_small_conic_seed_v1/standalone-replay.json)
 
-This finite seed supplement makes no literature-wide novelty or conductor claim.
+This finite seed supplement makes no literature-wide novelty or conductor-record claim.
 
 Duplicate seed packets on this same rational-isomorphism class: `det1092-orbit8044-000001`.

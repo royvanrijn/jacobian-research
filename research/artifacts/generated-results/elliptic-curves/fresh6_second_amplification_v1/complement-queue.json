@@ -1,5 +1,5 @@
 {
-  "status": "ONE_CERTIFIED_M26_AND_FOUR_UNSEARCHED_COMPLEMENT_BRANCHES",
+  "status": "THREE_COMPLEMENT_BRANCHES_REPLAYED_TWO_UNSEARCHED",
   "records": [
     {
       "id": "074d9-fresh-002",
@@ -24,12 +24,14 @@
     {
       "id": "08234-fresh-002",
       "family": "08234",
-      "rank_lower_bound": 18,
+      "rank_lower_bound": 22,
       "charts": 6,
       "result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-fresh-002/result.json",
       "complement_preparation": "artifacts/local/elliptic-curves/fresh6-second-amplification-v1/08234-complement-preparation",
       "prepared_sha256": "1dfed1a5123973d30de5a6bd00349b59656946e0d2dcb0ab2a0fbc075ef80d98",
-      "status": "COMPLEMENT_PREPARED_NOT_SEARCHED"
+      "status": "M22_REPLAYED_SUFFIX_QUEUED",
+      "current_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/suffix-queue.json"
     },
     {
       "id": "103b2-fresh-002",
@@ -49,12 +51,14 @@
     {
       "id": "11952-fresh-002",
       "family": "11952",
-      "rank_lower_bound": 18,
+      "rank_lower_bound": 22,
       "charts": 6,
       "result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-fresh-002/result.json",
       "complement_preparation": "artifacts/local/elliptic-curves/fresh6-second-amplification-v1/11952-complement-preparation",
       "prepared_sha256": "3dd426b57e906f554021185eb71bcce435e9f7038354a6cd33eb80da13a9306f",
-      "status": "COMPLEMENT_PREPARED_NOT_SEARCHED"
+      "status": "M22_REPLAYED_SUFFIX_QUEUED",
+      "current_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/suffix-queue.json"
     }
   ]
 }

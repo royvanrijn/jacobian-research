@@ -1,0 +1,12 @@
+{
+  "checker_sha256": "b50f1c54dd075bcab979bc7f38a5809c744a97d3b34645094977d81a1600c019",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/independent-replay.json": "b9ae22fb729f47df14af69cc6623c9deb0df8b3a2e90d6e76dd53f2fcf391209",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_alternate_translation_coset_v1/frame.json": "d564cc00f5da7586f2ed9928a48db831a439ce980ae39da38efac34fac625f91",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_alternate_translation_coset_v1/minimum.json": "b86382f465b21184168c19155e4f41a861ff9735d3df99f859b4dd4389046979",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_alternate_translation_coset_v1/protocol.json": "d593ffd9e56b19531931d7e01c3ebc3719400f99a4c3ac19a9edaa62f1775441",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/independent-replay.json": "96b7fefccfd5f860265ce697dfacb45dcde01bfe135621d49dec95465327858d"
+  },
+  "node_cap": 100000,
+  "seconds": 25
+}
