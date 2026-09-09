@@ -11,11 +11,13 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 from fractions import Fraction as F
 import fcntl
+import hashlib
 import json
 import math
 import os
 from pathlib import Path
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -84,8 +86,12 @@ def guard():
 
 def initialize(workers, max_hours, max_cases, max_point_calls, min_free_gib):
     require(not D.exists(), 'campaign already exists; use status/resume')
-    D.mkdir(parents=True)
-    snapshot = selector.freeze_snapshot(D)
+    require(1 <= int(workers) <= 16 and 0 < float(max_hours) <= 720 and int(max_cases) > 0 and
+            int(max_point_calls) > 0 and int(min_free_gib) >= 1, 'invalid campaign bounds')
+    tmp = D.with_name(D.name + '.initializing')
+    require(not tmp.exists(), 'stale initialization directory requires review: ' + str(tmp))
+    tmp.mkdir(parents=True)
+    snapshot = selector.freeze_snapshot(tmp)
     config = {
         'schema': 'autonomous-r17-rank-hunter.v1', 'workers': int(workers),
         'max_hours': float(max_hours), 'max_cases': int(max_cases),
@@ -94,16 +100,17 @@ def initialize(workers, max_hours, max_cases, max_point_calls, min_free_gib):
         'policy': 'At least half of ordinary worker capacity explores fresh fibres. Exploitation is 100-call tranches selected by certified momentum/recency; stale fixed-bank work pivots representation or retires. Score/height/family are soft scheduling evidence, never rank exclusions.',
         'claim_boundary': 'Certified subgroup lower bounds only. Selection freshness is relative to the frozen repository/local snapshot. No exact-rank or live-world-record claim is made automatically.',
     }
-    save(D / 'config.json', config, immutable=True)
+    save(tmp / 'config.json', config, immutable=True)
     proto = {
-        **config, 'selection_snapshot_sha256': sha(D / 'selection-snapshot.json'),
+        **config, 'selection_snapshot_sha256': sha(tmp / 'selection-snapshot.json'),
         'selection_pool_count': len(snapshot['pool']),
         'sources': {str(p.relative_to(ROOT)): sha(p) for p in campaign_sources()},
         'sage_sha256': sha(SAGE.resolve()), 'gp_sha256': sha(Path('/usr/bin/gp')),
     }
-    save(D / 'protocol.json', proto, immutable=True)
-    save(D / 'state.json', {'status': 'CREATED', 'dispatch_index': 0, 'cases': [],
-                            'decisions': [], 'point_calls': 0})
+    save(tmp / 'protocol.json', proto, immutable=True)
+    save(tmp / 'state.json', {'status': 'CREATED', 'dispatch_index': 0, 'cases': [],
+                              'decisions': [], 'point_calls': 0})
+    tmp.replace(D)
 
 
 def phase(command, supervision, wall=1800, rss=3 * 1024**3):
@@ -161,6 +168,29 @@ def _packet_rank(path):
     return int(read(path)['rank_lower_bound'])
 
 
+def _gain_timeline(run, terminal, reconciliation, inherited, curve_offset):
+    """Exact new-call positions from sealed V3 stages plus reconciled saved clouds."""
+    offsets, subtotal, timeline = {}, 0, []
+    for stage in terminal['stages']:
+        offsets[int(stage['epoch'])] = subtotal
+        subtotal += int(stage['charts'])
+        if int(stage['after']) > int(stage['before']):
+            call = subtotal
+            if call > inherited:
+                timeline.append({'phase': 'complement', 'call': curve_offset + call - inherited,
+                                 'before': int(stage['before']), 'after': int(stage['after']),
+                                 'source': str((run / f"epoch-{stage['epoch']:02d}/stage.json").relative_to(ROOT))})
+    if reconciliation is not None:
+        for gain in reconciliation['gains']:
+            path = Path(gain['chart']); epoch = int(path.parts[0].split('-')[1])
+            number = int(path.stem.split('-')[1]); call = offsets[epoch] + number + 1
+            if call > inherited:
+                timeline.append({'phase': 'complement-cloud', 'call': curve_offset + call - inherited,
+                                 'before': int(gain['after']) - 1, 'after': int(gain['after']),
+                                 'source': str((run / path).relative_to(ROOT))})
+    return sorted(timeline, key=lambda x: (x['call'], x['after'], x['phase']))
+
+
 def _run_tranche(case, generation, preparation, tranche, parent_run=None):
     """Spend at most100 new point calls, reconciling complete clouds before continuing."""
     bank = case / 'banks' / f'bank-{generation:02d}'
@@ -172,28 +202,35 @@ def _run_tranche(case, generation, preparation, tranche, parent_run=None):
     latest_packet = parent_run / 'terminal.json' if parent_run else before_packet
     latest_run = parent_run
     cached_parent = parent_run
+    curve_offset = sum(int(e['new_calls']) for e in _case_events(case))
+    timeline = []
     while remaining > 0 and _packet_rank(latest_packet) < 32:
         run = runs / f'tranche-{tranche:04d}-segment-{segment:02d}'
         if cached_parent is not None and segment == 0:
             terminal, new_calls = _cached_segment(case, cached_parent, run)
+            inherited = int(read(run / 'protocol.json')['inherited_charts'])
         else:
             terminal, new_calls = _fresh_segment(case, current_prep, run, remaining)
+            inherited = 0
         require(0 <= new_calls <= remaining, 'tranche call accounting differs')
+        used_before = used
         used += new_calls; remaining -= new_calls; latest_run = run
-        latest_packet = run / 'terminal.json'
+        latest_packet = run / 'terminal.json'; reconciliation = None
         if terminal['stop_reason'] == 'ADDITIONAL_FINITE_RANK_REQUIRES_RECONCILIATION':
             reconciled = run / 'reconciled.json'; _reconcile_v3(run, reconciled)
-            latest_packet = reconciled
-            if remaining and _packet_rank(latest_packet) < 32:
-                rebuilt = bank / 'rebuilds' / f'tranche-{tranche:04d}-{segment:02d}'
-                _reseed(current_prep, reconciled, rebuilt)
-                current_prep = rebuilt; segment += 1; cached_parent = None; continue
+            reconciliation = read(reconciled); latest_packet = reconciled
+        timeline.extend(_gain_timeline(run, terminal, reconciliation, inherited, curve_offset + used_before))
+        if reconciliation is not None and remaining and _packet_rank(latest_packet) < 32:
+            rebuilt = bank / 'rebuilds' / f'tranche-{tranche:04d}-{segment:02d}'
+            _reseed(current_prep, reconciled, rebuilt)
+            current_prep = rebuilt; segment += 1; cached_parent = None; continue
         break
     after_rank = _packet_rank(latest_packet)
+    require(len(timeline) == after_rank - before_rank, 'gain timeline/rank delta differs')
     event = {
         'kind': 'complement-tranche', 'bank_generation': generation, 'tranche': tranche,
         'before_rank': before_rank, 'after_rank': after_rank, 'new_calls': used,
-        'directions': after_rank - before_rank,
+        'directions': after_rank - before_rank, 'gain_timeline': timeline,
         'latest_run': str(latest_run.relative_to(ROOT)),
         'latest_packet': str(latest_packet.relative_to(ROOT)),
         'preparation': str(current_prep.relative_to(ROOT)),
@@ -251,17 +288,13 @@ def build_summary(case):
     if events:
         rank = int(events[-1]['after_rank'])
     complement_calls = sum(int(e['new_calls']) for e in events)
-    gain_calls, cumulative = [], 0
-    for e in events:
-        cumulative += int(e['new_calls'])
-        gain_calls += [cumulative] * max(0, int(e['directions']))
+    gain_calls = [int(g['call']) for e in events for g in e.get('gain_timeline', [])]
     generation = _current_generation(case)
     bank_events = [e for e in events if int(e['bank_generation']) == generation]
-    bank_calls, bank_last = 0, None
-    for e in bank_events:
-        bank_calls += int(e['new_calls'])
-        if int(e['directions']) > 0:
-            bank_last = bank_calls
+    bank_calls = sum(int(e['new_calls']) for e in bank_events)
+    prior_calls = sum(int(e['new_calls']) for e in events if int(e['bank_generation']) < generation)
+    bank_gains = [int(g['call']) - prior_calls for e in bank_events for g in e.get('gain_timeline', [])]
+    bank_last = max(bank_gains, default=None)
     latest_run = ROOT / events[-1]['latest_run'] if events else None
     suffix = _queue_action(latest_run) if latest_run else 'NO_SUFFIX'
     seed_rank = int(cloud['rank_lower_bound']) if cloud else 17
@@ -407,12 +440,7 @@ def case_worker(case, action):
 
 
 def _dispatch(case, action):
-    log = case / f'worker-{int(time.time())}-{action}.log'
-    with log.open('ab', buffering=0) as stream:
-        p = subprocess.Popen([sys.executable, '-u', str(SELF), 'case-worker', '--case', str(case), '--task', action],
-                             cwd=ROOT, stdin=subprocess.DEVNULL, stdout=stream, stderr=subprocess.STDOUT)
-        code = p.wait()
-    require(code == 0, f'case worker failed: {case.name}; see {log}')
+    case_worker(case, action)
     return case.name, action
 
 
@@ -438,9 +466,9 @@ def _summaries(state):
 
 def controller(fd):
     cfg = read(D / 'config.json'); state = read(D / 'state.json')
-    require(state['status'] in ('CREATED', 'STOP_REQUESTED', 'STOP_TIME_LIMIT', 'STOP_POINT_LIMIT', 'STOP_CASE_LIMIT'),
-            'state not resumable: ' + state['status'])
-    started = state.get('started_unix', time.time())
+    resumable = ('CREATED', 'STOP_REQUESTED', 'STOP_TIME_LIMIT', 'STOP_DISK_RESERVE')
+    require(state['status'] in resumable, 'state not resumable: ' + state['status'])
+    started = state.get('started_unix', time.time()) if state['status'] == 'CREATED' else time.time()
     state.update(status='RUNNING', controller=process(os.getpid()), started_unix=started, active=[])
     save(D / 'state.json', state)
     try:
@@ -456,11 +484,11 @@ def controller(fd):
                 else: stop_reason = None
                 summaries = _summaries(state)
                 if any(int(s['rank_lower_bound']) >= 32 for s in summaries): stop_reason = 'STOP_TARGET32_FOUND'
-
                 state['point_calls'] = sum(int(s.get('seed_calls', 0)) + int(s.get('complement_calls', 0)) for s in summaries)
                 busy = {case.name for case, _ in active.values()}
                 exploit = [(s['decision']['priority'], s) for s in summaries
-                           if s['decision']['action'] in ('continue_bank', 'new_bank') and s['id'] not in busy]
+                           if s['decision']['action'] in ('continue_bank', 'new_bank') and s['id'] not in busy
+                           and not (D / 'cases' / s['id'] / 'QUARANTINED.json').exists()]
                 exploit.sort(key=lambda x: (-x[0], -int(x[1]['rank_lower_bound']), x[1]['id']))
                 explore_min = policy.exploration_slots(cfg['workers'], [s for _, s in exploit])
 
@@ -482,7 +510,16 @@ def controller(fd):
                     save(D / 'state.json', state); return
                 done, _ = wait(active, timeout=5, return_when=FIRST_COMPLETED)
                 for future in done:
-                    case, task = active.pop(future); future.result(); build_summary(case)
+                    case, task = active.pop(future)
+                    try:
+                        future.result(); build_summary(case)
+                    except BaseException as exc:
+                        failure = {'status': 'QUARANTINED_WORKER_FAILURE', 'case': case.name,
+                                   'task': task, 'unix': time.time(), 'error': repr(exc),
+                                   'claim_boundary': 'This case is removed from scheduling. No mathematical conclusion follows from the worker failure.'}
+                        save(case / 'QUARANTINED.json', failure)
+                        state['decisions'].append({'unix': time.time(), 'id': case.name,
+                                                   'action': 'quarantine', 'reason': repr(exc)})
                 save(D / 'state.json', {**state, 'active': [{'case': c.name, 'task': t} for c, t in active.values()]})
                 if stop_reason and active:
                     continue
@@ -496,7 +533,8 @@ def controller(fd):
 def launch(resume=False):
     guard(); state = read(D / 'state.json')
     if resume:
-        require(state['status'] != 'RUNNING', 'controller already marked running')
+        require(state['status'] in ('STOP_REQUESTED', 'STOP_TIME_LIMIT', 'STOP_DISK_RESERVE'),
+                'state is not safely resumable: ' + state['status'])
         (D / 'STOP').unlink(missing_ok=True)
     fd = lock(D / 'controller.lock')
     try:
