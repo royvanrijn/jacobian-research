@@ -1,0 +1,22 @@
+{
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "rank_lower_bound": 28,
+  "epoch": 0,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2/protocol.json": "5aa1c2ba399414989c529eb2ed8f0671420d2773d5e14b3407b463a3527f0d0a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2/terminal.json": "6dc89c9de0e20f6aa0f4ddd109055ab07044923974db2d04eb35825129ed5d26",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2/verified.json": "34e4cb91b1e1ee84c7976600d97faba3d9bef6432762f37466f5da60146e917e",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2-supervision/supervisor.json": "879446843e17566887563d973cc6b6585034a4d098f0f6dbb501a79109824ac5",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2-replay-supervision/supervisor.json": "dbd3e6593fd4c025f5404bc350a0931b71c261558e415bae3ee6ac0c7827cec9",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2/epoch-00/landscape/selection.json": "536126a1de96bcf4dd65e24e09c4a423a390caf921ef97b6edd633ae8fcb12d3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v2/epoch-00/chart-0299.json": "3fb6fe1926e82bf33fd452976a8a70b34bc44a13d3e3defd2608d7f57152a5c4"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 150,
+  "next_policy_to_consider": "preconditioned_full",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v3/result.json"
+}

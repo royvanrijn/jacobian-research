@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery-replay-supervision/supervisor.json": "00c80a8a522bd18fd744d1b9276e16e6d911cf66762cf0c38148df097bb67620",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery-supervision/supervisor.json": "56e325b735f73f9c572d56df43d7b57f82b026de48b55a75a9118a29b3e52b70",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery/epoch-00/chart-0099.json": "8d1c709ce6b2e4c86202a10433701a40d34697c5ec14e8305d1d6c5c9718c731",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery/epoch-00/landscape/selection.json": "6c07af42d9cb42662be762ea8245c6fd083a4c0c83619c462bca08a9a8726e1d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery/protocol.json": "0c5af34638e207ef169e42e1efea64a8caa0de69fda15bf818fa31fbceca9ff9",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery/terminal.json": "d3bf99c417a89259afc475c7007c6ba1823fc74f7fd205ed7e3cbdba2e847f95",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-M23-complement-discovery/verified.json": "d40d1af119b5e463872cec330f7f502531d12b32ae0f3c9dfaa89e8c0c37b9d9"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 50,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 23,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

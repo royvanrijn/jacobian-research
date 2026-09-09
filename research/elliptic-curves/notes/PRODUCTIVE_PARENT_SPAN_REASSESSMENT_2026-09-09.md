@@ -182,3 +182,213 @@ These bounded misses establish no rank upper bound or record.
 
 - [Current result](../../artifacts/generated-results/elliptic-curves/curve48_complement_cached_v3_v5/result.json).
 - [Current cursor](../../artifacts/generated-results/elliptic-curves/curve48_complement_cached_v3_v5/suffix-queue.json).
+
+## Exact maximum parents now prepared for curve48
+
+The complete R17 maximum-class catalogue now allows direct preparation of
+norm12 parents outside curve48's original eight-dimensional productive
+span. This avoids repeating the earlier capped enumeration. The new bank
+contains sixteen classes of doubled norm24; every generic CVP is checked
+with both integer and rational exact solvers. It starts from the independently
+replayed M27 terminal of `curve48-complement-cached-v3-discovery-v5`.
+
+Preparation completes in4.719 seconds under120 seconds/1GiB with zero point
+searches. Its [sealed preparation](../../artifacts/generated-results/elliptic-curves/curve48_exact_maximum_preparation_v1/result.json)
+has completed its first bounded100-call pass (below). These maximum classes are distinct
+from the previously sampled norm10 parents, but a larger generic minimum
+is not a guarantee of a new point. The old sampled-bank searches and their
+suffix receipts remain intact. No new rank is claimed by preparation.
+
+Curve71's corresponding exact maximum preparation also passes in4.278 seconds,
+with sixteen norm12 parents outside its original productive span and both
+exact CVP solvers agreeing. It uses the verified M27 terminal of
+`curve71-sampled-shell-cached-v1`. Its [sealed preparation](../../artifacts/generated-results/elliptic-curves/curve71_exact_maximum_preparation_v1/result.json)
+has completed its first bounded100-call pass after curve48. Preparation makes zero
+point searches and does not claim a new rank.
+
+## Curve48 exact maximum first pass
+
+The new norm12 bank completes100 point calls in155.549 seconds and full
+independent replay in227.707 seconds: M27 remains M27, with zero map or
+point timeouts. This is a bounded miss and supplies no rank upper bound.
+The final landscape has779 centres. The sealed suffix resumes at centre
+50, policy `preconditioned_full`, leaving729
+centres in this search order. Exact geometry, map receipts, rational points,
+standalone independence and complete-cloud audits all pass replay.
+
+- [Replayed result](../../artifacts/generated-results/elliptic-curves/curve48_exact_maximum_v1/result.json).
+- [Exact suffix cursor](../../artifacts/generated-results/elliptic-curves/curve48_exact_maximum_v1/suffix-queue.json).
+
+Curve71's prepared norm12 bank has now completed its first pass (below).
+Curve48's completed prefix and older sampled-bank evidence remain preserved
+for later continuation. No record is claimed.
+
+## Curve71 exact maximum first pass and overlap audit
+
+Curve71's norm12 bank completes100 point calls in150.451 seconds and full
+independent replay in215.165 seconds: M27 remains M27, with zero map or
+point timeouts. Its776-centre landscape resumes at centre50, policy
+`preconditioned_full`, leaving726 centres. This is a bounded miss, not a
+rank upper bound.
+
+- [Replayed result](../../artifacts/generated-results/elliptic-curves/curve71_exact_maximum_v1/result.json).
+- [Exact suffix cursor](../../artifacts/generated-results/elliptic-curves/curve71_exact_maximum_v1/suffix-queue.json).
+
+The new [selected-centre overlap checker](../cas/audit_verified_centre_overlap.py)
+requires sealed replayed terminals, their bound initial selections, identical
+curve models and initial bases, and verifies every selected centre on the
+curve. It compares exact rational points up to elliptic negation. Repeated
+runs reproduce both saved receipts; a self-comparison control returns all779
+curve48 centres as shared.
+
+| Curve | Prior sampled selection | New norm12 selection | Shared up to sign |
+| --- | ---: | ---: | ---: |
+| 48 | 779 | 779 | 0 |
+| 71 | 751 | 776 | 0 |
+
+The [curve48 overlap receipt](../../artifacts/generated-results/elliptic-curves/curve48_exact_maximum_v1/sampled-centre-overlap.json)
+and [curve71 overlap receipt](../../artifacts/generated-results/elliptic-curves/curve71_exact_maximum_v1/sampled-centre-overlap.json)
+compare only the two named selected sets per curve. They do not certify
+that every corresponding quartic box is inequivalent, compare all historical
+searches, or predict independent new point directions. Box deduplication
+remains a separate execution gate.
+
+Both first passes now have verified cursors. The next bounded continuation
+can reuse the prepared exact geometry and completed coverage, beginning with
+curve48's norm12 suffix at centre50, then curve71's. No new rank or conductor
+record has been obtained from these two passes.
+
+## Cached norm12 passes and a third M27 family
+
+Both norm12 branches complete100 further point calls, reaching200 cumulative
+calls each, with M27 unchanged and no map or point timeouts. Independent
+cached replay passes in both cases. Each new suffix starts at centre100,
+policy `preconditioned_full`:679 centres remain for curve48 and676 for curve71.
+The initial suffix records now point to their verified descendants.
+
+| Curve | Additional search seconds | Cached replay seconds | Cumulative calls |
+| --- | ---: | ---: | ---: |
+| 48 | 93.032 | 2.531 | 200 |
+| 71 | 85.169 | 2.361 | 200 |
+
+- [Curve48 cached result](../../artifacts/generated-results/elliptic-curves/curve48_exact_maximum_cached_v1/result.json).
+- [Curve71 cached result](../../artifacts/generated-results/elliptic-curves/curve71_exact_maximum_cached_v1/result.json).
+
+The cheap cached replay reuses sealed geometry from the initial full
+independent replay and checks the new receipts. These timings measure
+different replay scopes; they are not a claim that full geometry verification
+has become90 times faster. Both bounded misses leave rank upper bounds open.
+
+For broader M27 exposure, curve40 at family074d9 parameter2818/1535 now has
+sixteen exact norm12 parents outside its original productive span. Both exact
+CVP solvers agree. Preparation uses the verified M27 terminal from
+`curve40-preconditioned-censored-followup-v1`, completes in3.665 seconds and
+performs zero point searches. The [sealed preparation](../../artifacts/generated-results/elliptic-curves/curve40_exact_maximum_preparation_v1/result.json)
+has now completed its first bounded100-call pass. It does not repair or restart any old
+censored search and does not claim a new rank.
+
+## Exact maximum preparation on the known M28 curve188
+
+Curve188 / ICARM619 already has a certified M28 subgroup. Its historical
+productive bank has nine classes of doubled norms20/24, and its pairwise
+bank stays inside that original span. The complete maximum-class catalogue
+now supplies sixteen norm12 parents outside the original productive span.
+Both exact generic CVP solvers agree; preparation takes4.993 seconds under
+120 seconds/1GiB and performs no point searches.
+
+The [sealed preparation](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_preparation_v1/result.json)
+uses the verified M28 terminal of `curve188-pairwise-v3-discovery-v1`.
+This is the known M28 input, not a newly discovered rank28 curve. The first bounded100-call pass below tests whether parents outside the old
+span can provide an additional certified direction. Public higher-rank points or curve302
+winning labels are not imported into its parent selection.
+
+## Curve40 norm12 first pass completed
+
+Curve40 completes100 point calls in172.833 seconds and full independent
+replay in227.532 seconds: M27 remains M27, with zero map or point timeouts.
+The new landscape has759 centres. Its verified suffix resumes at centre50,
+policy `preconditioned_full`, leaving709 centres in this ordering.
+This is a bounded miss, not a rank upper bound.
+
+- [Replayed result](../../artifacts/generated-results/elliptic-curves/curve40_exact_maximum_v1/result.json).
+- [Exact suffix cursor](../../artifacts/generated-results/elliptic-curves/curve40_exact_maximum_v1/suffix-queue.json).
+
+The [exact centre-overlap audit](../../artifacts/generated-results/elliptic-curves/curve40_exact_maximum_v1/productive-centre-overlap.json)
+reproduces on a second run: none of the759 new selected centres occurs,
+even up to elliptic negation, among the424
+centres of `curve40-bounded-maps-v3-discovery-v1`. This compares the two
+named selections only, not all historical or equivalent quartic boxes.
+
+The next prioritized branch is the newly prepared norm12 bank on curve188's
+known M28 basis. Its objective is a certified29th direction; preparation
+alone does not establish one. All three M27 norm12 branches retain their
+verified continuation cursors.
+
+## Curve188 M28 exact maximum first pass
+
+The norm12 bank completes100 point calls in204.753 seconds. Full independent
+replay passes in334.225 seconds, including exact geometry, maps, rational
+points, standalone independence and full-cloud audits. M28 remains M28;
+there are zero map or point timeouts. No29th direction or rank upper bound
+is established.
+
+The784-centre landscape has a verified suffix starting at centre50,
+policy `preconditioned_full`, leaving734 centres in its ordering.
+
+- [Replayed result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_v1/result.json).
+- [Exact suffix cursor](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_v1/suffix-queue.json).
+
+The exact centre-overlap checker reproduces two audits. None of the784
+new centres coincides up to elliptic negation with either the earlier
+450 productive centres or1727 pairwise centres, on the
+same curve and initial basis. This verifies new selected-centre exposure;
+it does not compare all historical quartic boxes or predict a rank gain.
+
+- [Productive overlap receipt](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_v1/productive-centre-overlap.json).
+- [Pairwise overlap receipt](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_v1/pairwise-centre-overlap.json).
+
+This known M28 fibre remains the closest active norm12 branch to a certified
+29th direction. The next bounded pass resumes its verified suffix using
+cached exact geometry, with full saved-cloud reconciliation if required.
+
+## Curve188 cached norm12 continuation to400 calls
+
+Three further100-call passes complete and independently replay. Each
+retains M28, with zero map or point timeouts. The old cursors are marked
+consumed by their verified descendants, so the first400 calls are not
+rescheduled. The latest784-centre landscape resumes at centre200, policy
+`preconditioned_full`, leaving584 centres in this finite ordering.
+
+| Cached pass | Cumulative calls | Search seconds | Cached replay seconds |
+| --- | ---: | ---: | ---: |
+| 1 | 200 | 93.603 | 2.581 |
+| 2 | 300 | 89.666 | 3.468 |
+| 3 | 400 | 95.615 | 4.407 |
+
+- [200-call result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v1/result.json).
+- [300-call result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v2/result.json).
+- [400-call result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v3/result.json).
+- [Current suffix](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v3/suffix-queue.json).
+
+Cached replay reuses the sealed original exact geometry and verifies the
+new retained receipts. The finite-policy misses do not prove exact rank28
+or rule out29. Further exposure, if scheduled, starts from the last verified
+suffix; the goal of a new certified29th direction remains open.
+
+A fourth cached norm12 pass on curve188 completes100 additional calls in
+100.102 seconds and passes independent cached replay in5.191 seconds.
+M28 remains M28 after500 cumulative calls, with zero point or map timeouts.
+The [500-call result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v4/result.json)
+and [current suffix](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v4/suffix-queue.json)
+resume at centre250 of784, policy `preconditioned_full`, leaving534 centres.
+The old400-call cursor is marked consumed. No29th direction or rank upper
+bound is established by this bounded miss.
+
+The fifth cached norm12 pass on curve188 completes100 additional calls in
+96.595 seconds and passes independent cached replay in6.115 seconds.
+M28 remains M28 after600 cumulative calls, with zero point or map timeouts.
+The [600-call result](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v5/result.json)
+and [current suffix](../../artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v5/suffix-queue.json)
+resume at centre300 of784, policy `preconditioned_full`, leaving484 centres.
+The old500-call cursor is marked consumed. No29th direction or rank upper
+bound is established by this bounded miss.

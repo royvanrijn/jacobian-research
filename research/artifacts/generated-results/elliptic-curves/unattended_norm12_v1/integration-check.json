@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FIRST_AUTOMATIC_SEARCH_REPLAY_AND_HANDOFF",
+  "controller_pid_at_verification": 868373,
+  "first_job": "curve188",
+  "first_replayed_cumulative_calls": 700,
+  "rank_lower_bound": 28,
+  "bindings": {
+    "artifacts/local/elliptic-curves/unattended-norm12-v1/config.json": "ac18434c7443c380a824ce51386fb4b8be32c270c85d61efe5b4f676986422a3",
+    "artifacts/local/elliptic-curves/unattended-norm12-v1/batch-0001-job1/export.json": "72b96c6e6b6fab559e560bf73ca28db5c98a661ef12632dbfb4fb0f8cd8e5ef4",
+    "artifacts/local/elliptic-curves/unattended-norm12-v1/batch-0001-job1/verified.json": "39d3341d9991939b5a389016b8607794d35aeace8271764675501e8dcd21e6bd"
+  },
+  "live_state": "artifacts/local/elliptic-curves/unattended-norm12-v1/state.json",
+  "claim_boundary": "Controller integration verified; no new rank or completed research goal."
+}

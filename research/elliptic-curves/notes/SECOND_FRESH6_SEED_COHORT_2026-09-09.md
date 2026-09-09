@@ -196,3 +196,26 @@ These bounded misses imply no rank upper bound or record.
 
 - [Latest cached result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/result.json).
 - [Current M26 cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/suffix-queue.json).
+
+## Sampled lower-shell M26 pass
+
+A fixed128-parity sample outside the original productive span is evaluated
+with both exact CVP solvers. Sixteen norm10 parents are selected;13 lie outside
+the103b2 maximum-class span, as tested by its annihilator mask45903. Preparation
+takes4.071seconds without point search. This extends generic parity coverage;
+it is not a point-existence or rank prediction.
+
+The resulting M26 V3 pass completes100 calls without a gain or point/map timeout.
+Search takes132.014seconds; full independent replay passes in155.186seconds.
+The lower bound remains26 and the terminal is `CHART_BUDGET_EXHAUSTED`.
+The lower-shell suffix is kept separately from the maximum-class branch.
+No upper bound or record follows from the bounded miss.
+
+- [Lower-shell result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/result.json).
+- [Lower-shell cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/suffix-queue.json).
+
+A30-second/1GiB conductor audit of the second103b2 M26 fibre reached its wall
+cap with a123-digit residual cofactor. Exact conductor remains unknown; bounds
+and the timeout receipt are retained in `artifacts/local/elliptic-curves/second-fresh103b2-conductor-v1/`.
+The [lower-height cohort](LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md) supplies
+five additional certified M18 seeds for the next amplification comparison.

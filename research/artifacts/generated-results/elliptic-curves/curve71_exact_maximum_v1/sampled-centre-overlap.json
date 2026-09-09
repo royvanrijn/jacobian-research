@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_SELECTED_CENTRE_OVERLAP",
+  "old_selected_centres_up_to_sign": 751,
+  "new_selected_centres_up_to_sign": 776,
+  "overlap_up_to_sign": 0,
+  "new_centres_outside_old_selection": 776,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/terminal.json": "b3fda4d4960e9cfaaaca4ba2b11e8704ee6fa963f2d57835535930e352b15184",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/verified.json": "210f3dec605cf1283debe16b755e4289a35e14cbc564d2f18542fb530d11bfa2",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/epoch-00/landscape/selection.json": "402b425eb6352b6900366144162c81cd20490f1993881d72ae69a07b515c76ae",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-exact-maximum-discovery-v1/terminal.json": "92867f2bdedc1347b83afca0ffb3c0d3e9c141be01e1cb56fe0e8efccbfd3466",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-exact-maximum-discovery-v1/verified.json": "3b7ab529c90c1610930e2d691e5077bf21c994cd5683fa0a2994caa1f5615468",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-exact-maximum-discovery-v1/epoch-00/landscape/selection.json": "423d7a37bfb874cea668b063638ddf065422aab24946f2e713f6eb8b91202d2a"
+  },
+  "source_sha256": "2927f69763a4334d73e90f3aa66531b2149044ea310de965b16d496f1d190644",
+  "claim_boundary": "Exact comparison of two selected centre sets only. Not a comparison of every historical centre, completed quartic boxes, or returned point directions; no rank or absence claim."
+}

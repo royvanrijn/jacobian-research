@@ -1,0 +1,97 @@
+{
+  "status": "FIRST_SEED_CONFIRMATION_COMPLETE",
+  "packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_first_m18_v1/result.json",
+    "sha256": "a8f6c271f11c409ab9269407b673237959da2ba675b53913f3fab45dedbd15de"
+  },
+  "curves": [
+    {
+      "id": "074d9-lowheight-001",
+      "family": "074d9",
+      "parameter": "25/3",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-21705535165643207926185298020956165547",
+        "36567713338509490625410198978396633792401912708475039014"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "07ca9-lowheight-001",
+      "family": "07ca9",
+      "parameter": "142/561",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-9211550332614992830236744360480424665515914796400",
+        "10853943817273800323244226230914102363327378087643057973803227710413840000"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "08234-lowheight-001",
+      "family": "08234",
+      "parameter": "383/388",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-7481471469337844489467488503590935750773792840788248987",
+        "7957574225672416649294476034479350582455945363984763082886319894589136714793462966"
+      ],
+      "rank_lower_bound": 17,
+      "search_status": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN"
+    },
+    {
+      "id": "08f72-lowheight-001",
+      "family": "08f72",
+      "parameter": "254/17",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-2535966643638399389615369552189079010294827",
+        "1761179461779581182140414522548994259952078802386061726631163046"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "103b2-lowheight-001",
+      "family": "103b2",
+      "parameter": "-95/728",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1371229190246806678655541498552560843479616209263552",
+        "20545417363153997370708521274667548844216559812106820334711428253064172729600"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "11952-lowheight-001",
+      "family": "11952",
+      "parameter": "238/27",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-65528510949635122657155718461980304147963312",
+        "254946137042098623271908692916906746145883680576309551293890911616"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    }
+  ],
+  "generic_packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_generic17_v1/result.json",
+    "sha256": "d49049471b768fb9ee2e70feb7c7435f273bc8dfbc7a0d45a3dbc713a8a78c9b"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4-replay-supervision/supervisor.json": "a35b71fe400be2f995896ae560fdf40f585bf6e3e96b7c5268ce1b28b9c31d30",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4-supervision/supervisor.json": "396fcb62f3a85ec20254bdf1994a557e9a421b1ec47413928a1f04c99f35a031",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4/epoch-00/chart-0499.json": "ba434adccd4108147a3f8aa7e45ed98ad8fb52ab68ac9e6fda21e3a08ba9509d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4/epoch-00/landscape/selection.json": "536126a1de96bcf4dd65e24e09c4a423a390caf921ef97b6edd633ae8fcb12d3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4/protocol.json": "c1b34da03172d550df61dee69e5fde7d7b7f644a5f07743dd9e30dd99a0a321a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4/terminal.json": "595e38b85e1e9969bef5e083cb890a8470402f99b41ba50a6e5d914caa0608ad",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v4/verified.json": "f97a74c846adb4ea8cc2975c4d888bf08b253dc0796e5babff5679f402f48df1"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 250,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 28,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/curve188_exact_maximum_cached_v5/result.json"
+}

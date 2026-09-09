@@ -1,0 +1,52 @@
+{
+  "status": "FIVE_WINNING_PARENT_PASSES_REPLAYED_AND_RECONCILED",
+  "bundle_sha256": "a8f6c271f11c409ab9269407b673237959da2ba675b53913f3fab45dedbd15de",
+  "records": [
+    {
+      "id": "074d9-lowheight-001",
+      "status": "AMPLIFIED_REPLAYED_RECONCILED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/074d9-lowheight-001/seed-M18.json",
+      "seed_sha256": "f4b9d659a239cf58934a9f0e719accdb8eaf6fe3081abf76089a30c81cb9cd19",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/074d9-lowheight-001/chart-0000.json",
+      "rank_lower_bound": 22,
+      "reconciled_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-lowheight-001/reconciled.json"
+    },
+    {
+      "id": "07ca9-lowheight-001",
+      "status": "AMPLIFIED_REPLAYED_RECONCILED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/07ca9-lowheight-001/seed-M18.json",
+      "seed_sha256": "dc22b3fabcf1a11ffc0c9484126136d517839cd4e24ec99c754882fbf52893ee",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/07ca9-lowheight-001/chart-0000.json",
+      "rank_lower_bound": 20,
+      "reconciled_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-lowheight-001/reconciled.json"
+    },
+    {
+      "id": "08f72-lowheight-001",
+      "status": "AMPLIFIED_REPLAYED_RECONCILED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/08f72-lowheight-001/seed-M18.json",
+      "seed_sha256": "8520400a62257b193f9d47c6aac76bdf165d6bc6efaa2c6e5b8c58497d50e3fe",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/08f72-lowheight-001/chart-0000.json",
+      "rank_lower_bound": 22,
+      "reconciled_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-lowheight-001/reconciled.json"
+    },
+    {
+      "id": "103b2-lowheight-001",
+      "status": "AMPLIFIED_REPLAYED_RECONCILED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/103b2-lowheight-001/seed-M18.json",
+      "seed_sha256": "838d0e3ea32a92d0d22fedd9007e88dd50b083fe8609a7a655dde7d257372edb",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/103b2-lowheight-001/chart-0000.json",
+      "rank_lower_bound": 22,
+      "reconciled_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-lowheight-001/reconciled.json"
+    },
+    {
+      "id": "11952-lowheight-001",
+      "status": "AMPLIFIED_REPLAYED_RECONCILED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/11952-lowheight-001/seed-M18.json",
+      "seed_sha256": "c59650dc5efda12c0b91b22ef0addef9f7f8b9bca6d77f5d7287f7f3786ad38c",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-lowheight-seed-confirmation-v1/11952-lowheight-001/chart-0000.json",
+      "rank_lower_bound": 23,
+      "reconciled_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-lowheight-001/reconciled.json"
+    }
+  ],
+  "continuation_queue": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/continuation-queue.json"
+}

@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5-replay-supervision/supervisor.json": "710d6b21882649926c4646eab3431714f0f397b37fc10304212195b55bea7694",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5-supervision/supervisor.json": "8010dd69db24fe09e1529b5d7064d7e3687f424027ec36b9d76f37517deb9c44",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5/epoch-00/chart-0599.json": "99229d8e050f947dbf2a225316a1b9f49d2fbe09338ca481f647f5928f42625f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5/epoch-00/landscape/selection.json": "536126a1de96bcf4dd65e24e09c4a423a390caf921ef97b6edd633ae8fcb12d3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5/protocol.json": "688afb311637a02d55419f52697f0c3b9b6f9df106959bf2d6e66cc47638185d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5/terminal.json": "aa9f12219a7a175c698eaea784a205b9e07071a40a86fa54d4f06562269a6ee3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve188-exact-maximum-cached-v5/verified.json": "24d9d5d3d7464d1723aee7ba976e47e1dd7f0df291e41105ab120e9bb2ad4b65"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 300,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 28,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

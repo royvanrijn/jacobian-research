@@ -1,0 +1,105 @@
+{
+  "status": "ALL_FIVE_FIRST_COMPLEMENT_PASSES_REPLAYED",
+  "point_searches_during_preparation": 0,
+  "next_curve": null,
+  "policy": "Replay and reconcile complete saved clouds before another stage; reuse exact arithmetic and completed-box caches; independently replay each bounded pass.",
+  "records": [
+    {
+      "id": "11952-lowheight-001",
+      "status": "FIRST_COMPLEMENT_PASS_REPLAYED_NO_GAIN",
+      "rank_lower_bound": 23,
+      "packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-lowheight-001/reconciled.json",
+      "packet_sha256": "04aade733b9b1e2ed381d0bc57dad0cd5163264081c2c6e570ec6e4f2df9464d",
+      "preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-lowheight-001-M23-complement-preparation",
+      "prepared_sha256": "44f3c0bec1fdfd4c433d90a7370db3755411d9c26d0cddc151a854a2f561eae2",
+      "supervision": {
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-lowheight-001-reconcile-supervision/supervisor.json": "699e4520ef5c898393cd5f94e330dfd902d930a7541bf0b08db7f25ace47d279",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-lowheight-001-reconcile-replay-supervision/supervisor.json": "75840ac121d7f9578412972bc9dce85f271089cabfcb6e98cde298505b0ce81d",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-lowheight-001-complement-prepare-supervision/supervisor.json": "286a16bb60cfedb27a3245fbfc9a2a0afb8504b5948799c29354dd6c1689364c",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/11952-lowheight-001-reconciled-prepare-supervision/supervisor.json": "ddc4a4f9b0788be01bdc8f3e1223bf9fa7b2e4a179b56dd45100867822e8ce18"
+      },
+      "next_point_call_limit": 100,
+      "latest_result": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-M23-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-M23-complement/suffix-queue.json"
+    },
+    {
+      "id": "074d9-lowheight-001",
+      "status": "FIRST_COMPLEMENT_PASS_REPLAYED_NO_GAIN",
+      "rank_lower_bound": 22,
+      "packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-lowheight-001/reconciled.json",
+      "packet_sha256": "cc249d6a4fe384a1c55acabcc628df1ab8b00e56cac146713a9b58bc86ad97af",
+      "preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/074d9-lowheight-001-M22-complement-preparation",
+      "prepared_sha256": "2a0c9e48465c8a02fbb6e52c4a5328bdfcd502d702ec2f19607c51643c3abac1",
+      "supervision": {
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/074d9-lowheight-001-reconcile-supervision/supervisor.json": "6bfdf80035ddc7a5afa72e25dbaf3a1122ba4618882a41e08c2c7197b25177c2",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/074d9-lowheight-001-reconcile-replay-supervision/supervisor.json": "27fc151fb02232965610a092a2952f5a907c24393799a08e36b12e8ed57857f4",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/074d9-lowheight-001-complement-prepare-supervision/supervisor.json": "324871d334624ccb305a0c485cb182f072bf68adccb4f6cffa340f60292377df",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/074d9-lowheight-001-reconciled-prepare-supervision/supervisor.json": "a4b04f03d1c18e72d6d840f47c39f5d4291a40af63b840a7a08f668c9eb8be12"
+      },
+      "next_point_call_limit": 100,
+      "latest_result": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-M22-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-M22-complement/suffix-queue.json"
+    },
+    {
+      "id": "08f72-lowheight-001",
+      "status": "FIRST_COMPLEMENT_PASS_REPLAYED_NO_GAIN",
+      "rank_lower_bound": 22,
+      "packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-lowheight-001/reconciled.json",
+      "packet_sha256": "e46b6e8fa4809f5133f5162de36263b1ff579dab5f5ba86c376beafccb426444",
+      "preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/08f72-lowheight-001-M22-complement-preparation",
+      "prepared_sha256": "32e722ac6bace84f593d8904b56c1327a9212a542adeaf419966d72bf9e1e6ec",
+      "supervision": {
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/08f72-lowheight-001-reconcile-supervision/supervisor.json": "73f721a142c4bd4db2683e623c7f31597fd8004065f00abceec8aa8f01131f26",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/08f72-lowheight-001-reconcile-replay-supervision/supervisor.json": "13c984c98c6c41834237a159602df183d85c2beba3d97286f96602d4a763f647",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/08f72-lowheight-001-complement-prepare-supervision/supervisor.json": "9ac44eb78d01894d8145f95615ee5c776e72970a677fa3c343ae22cc01e05177",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/08f72-lowheight-001-reconciled-prepare-supervision/supervisor.json": "d2a459fa3b903b093691b448fa984c0ce6eb9cb8801a21ce0eedfda06a551fa2"
+      },
+      "next_point_call_limit": 100,
+      "latest_result": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-M22-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-M22-complement/suffix-queue.json"
+    },
+    {
+      "id": "103b2-lowheight-001",
+      "status": "FIRST_COMPLEMENT_PASS_REPLAYED_GAIN",
+      "rank_lower_bound": 25,
+      "packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-lowheight-001/reconciled.json",
+      "packet_sha256": "c832716fb0f5af6c9adbcad69d0fbe4ac45c87720a7656ecbf74beab64b699b7",
+      "preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/103b2-lowheight-001-M22-complement-preparation",
+      "prepared_sha256": "42f58fc22c9bceaa059d9280028b301949124683f234fdaec63e10cd6f88ed91",
+      "supervision": {
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/103b2-lowheight-001-reconcile-supervision/supervisor.json": "844fe16b540d8e7b723278e6b691d06a207150b8090ec2c6cc2ede3af8fc13e9",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/103b2-lowheight-001-reconcile-replay-supervision/supervisor.json": "8d63a6ab441a18a26ae80d9e133c92179dffcea1b1eabcc5c94b595eee880ee2",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/103b2-lowheight-001-complement-prepare-supervision/supervisor.json": "61413344a9b24bb9d337eb206fe4a34adcabc7f1c70527e9a79583e047631672",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/103b2-lowheight-001-reconciled-prepare-supervision/supervisor.json": "26509284b31ae9651fe6bd6919322b0ff377176ecbca5dd836f12b1a74f37a8d"
+      },
+      "next_point_call_limit": 100,
+      "latest_result": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-M22-complement/result.json",
+      "suffix_queue": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-M22-complement/suffix-queue.json",
+      "next_action": "RESUME_VERIFIED_SUFFIX_FROM_M25"
+    },
+    {
+      "id": "07ca9-lowheight-001",
+      "status": "FIRST_COMPLEMENT_PASS_REPLAYED_RECONCILED",
+      "rank_lower_bound": 24,
+      "packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-lowheight-001/reconciled.json",
+      "packet_sha256": "735baa664346a5b49259ec048f5c91b477dfaeff47a4ae18b6d04ce5f0582c83",
+      "preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-lowheight-001-M20-complement-preparation",
+      "prepared_sha256": "85da55690e0d78e8321cce372a076590d7f31fca9ebb9974ce5d17d9d28064c5",
+      "supervision": {
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-lowheight-001-reconcile-supervision/supervisor.json": "49fb107d9c617b42650804c1d559977c3dea891d5613e8e793a2fd8352776dc1",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-lowheight-001-reconcile-replay-supervision/supervisor.json": "d56841ae97dbb0f92f222a6a56e8f1b279a849ed37368c9a77678e4f7a2c2825",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-lowheight-001-complement-prepare-supervision/supervisor.json": "4517a8c56b551b2a0ec68571bd65b467c7bad72f6ee6531d413db006f875b924",
+        "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-lowheight-001-reconciled-prepare-supervision/supervisor.json": "97e2865a0d27b01d5c6444724f99609188fdd25a05c66bd6ee711052135969f8"
+      },
+      "next_point_call_limit": 100,
+      "latest_result": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-M20-complement/result.json",
+      "current_packet": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-M20-complement/reconciled.json",
+      "current_packet_sha256": "49ce6dc169a80fd9b45868b82a9e49e5cfb59f5deadc6412139e4ef3b77bc453",
+      "current_preparation": "artifacts/local/elliptic-curves/fresh6-lowheight-amplification-v1/07ca9-M24-complement-preparation",
+      "current_prepared_sha256": "9d6884d9440f01f9dd49a0d1f9ce292e3dbd3387bb714e3d043113c938b7e160",
+      "next_action": "REBUILD_FROM_RECONCILED_M24"
+    }
+  ],
+  "next_rule": "All five bounded first passes are terminal and replayed. Preserve their suffixes. Next global candidate is curve48 exact-maximum parents on M27.",
+  "next_global_preparation": "artifacts/generated-results/elliptic-curves/curve48_exact_maximum_preparation_v1/result.json"
+}

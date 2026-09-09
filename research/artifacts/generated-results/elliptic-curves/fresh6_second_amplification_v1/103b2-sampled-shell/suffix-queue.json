@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery-replay-supervision/supervisor.json": "ee664a9110d89985aa2bf87a430ffc360c1f491043b96e25c8dcb4e7d135ac4d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery-supervision/supervisor.json": "f67417383b96c8137abc978dbf575284531625871ed882d56335573cd90dc16b",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery/epoch-00/chart-0099.json": "67d554bf6836326ef6a56ed8f18850c730c4d845402de4cb30eb9156123efc50",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery/epoch-00/landscape/selection.json": "0ad025b0070cc4c597ae44fe3ee19bbd7db5d008f6bb247b1a36a20dd4f3aa26",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery/protocol.json": "16ac5c8015847d6df4915d97dc631a7c2a5e7019f0e6e46738d8611101bc325d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery/terminal.json": "813d370892d1f741bca19d9d5f9992259ed507d24ce8bae8f27e695026eae317",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-sampled-shell-discovery/verified.json": "a247f272c644fc4ab17e162de50a47e2824dc47056ef4096bed4156a08c0f891"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 50,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 26,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

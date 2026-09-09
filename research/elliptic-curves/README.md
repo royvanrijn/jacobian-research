@@ -1,5 +1,9 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [unattended norm12 controller](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
+now owns the four verified M27/M28 continuation queues. It runs search and
+replay without AI turns; use its checkpoint for live status.
+
 The [two-sided conic minimum](notes/DET1092_TWO_SIDED_CONIC_MINIMUM_2026-09-09.md)
 proves that alternating generic translations cannot leave a two-curve pair
 while both projection degrees stay at most2. One full-MW12 parity CVP closes
@@ -63,6 +67,17 @@ excludes the entire alternate-translation orbit of the34 signed displayed
 source curves from the first302 seed. Six new generic rank18 rational covers
 are certified but miss302; all old degree20/58 control incidences are now
 excluded exactly. This is an orbit obstruction, not a prospective seed.
+
+The [lower-height R17 cohort](notes/LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md)
+now has five replayed subgroup lower bounds 22, 24, 22, 25 and 23.
+Complementary-parent passes raise 103b2 to25 and 07ca9 to24, with complete
+saved-cloud reconciliation before continuation.
+
+The [frozen sixty-fibre R17 panel](notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md)
+has passed all sixty zero-chart generic M17 checks and is running detached.
+It compares five lower-height and five higher-height candidates per fibration,
+with bounded first-seed acquisition and at most100 complementary calls per
+seeded fibre; no deep suffixes are included. Search outcomes remain pending.
 
 The [optimized productive-anchor search](notes/CURVE200_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
 raises curve200 from certified25 to26. The next [R17 transfer on curve113](notes/CURVE113_PRODUCTIVE_V3_SEARCH_2026-09-09.md)

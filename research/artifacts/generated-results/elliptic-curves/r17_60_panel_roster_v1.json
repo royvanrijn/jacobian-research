@@ -1,0 +1,2774 @@
+{
+  "input_sha256": "5cb3fdd8af3d95efdf15f78eb42c410979278de51e2547a7789776cb1b7e2f70",
+  "point_searches": 0,
+  "rows": [
+    {
+      "combined_good": 3507,
+      "combined_selection_units": 137745200208923,
+      "denominator": 530,
+      "family": "074d9",
+      "id": "074d9-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-374737351060069133537343544611977588810728268160027",
+        "2869829126774779051786664270470551940513726493329036495407495464396109812790"
+      ],
+      "numerator": 569,
+      "parameter": "569/530",
+      "stratum": "low",
+      "stratum_score_position": 16
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 137943389739613,
+      "denominator": 172,
+      "family": "07ca9",
+      "id": "07ca9-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-315866451491181807084119134970651656309556022192",
+        "63419939465052214515329965618097741146539054049210809660640539587822976"
+      ],
+      "numerator": 521,
+      "parameter": "521/172",
+      "stratum": "low",
+      "stratum_score_position": 17
+    },
+    {
+      "combined_good": 3507,
+      "combined_selection_units": 136582496152437,
+      "denominator": 245,
+      "family": "08234",
+      "id": "08234-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-191152071635745637913814817873367631337765499822968752",
+        "32482929838081294150340012272340520674273480250696540357026826624927774574704000"
+      ],
+      "numerator": -68,
+      "parameter": "-68/245",
+      "stratum": "low",
+      "stratum_score_position": 7
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 137313252795243,
+      "denominator": 743,
+      "family": "08f72",
+      "id": "08f72-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-4857544067242564666119787269167027039895773825487147",
+        "137792159503599508884132725197899303279268040956450343710582589080592915659686"
+      ],
+      "numerator": 422,
+      "parameter": "422/743",
+      "stratum": "low",
+      "stratum_score_position": 11
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138744837461203,
+      "denominator": 689,
+      "family": "103b2",
+      "id": "103b2-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-837753319013040949837629702327693320783805612756912",
+        "9735816868676222667334849377814259779470058891619748796940362394040102221184"
+      ],
+      "numerator": -16,
+      "parameter": "-16/689",
+      "stratum": "low",
+      "stratum_score_position": 12
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138640988999248,
+      "denominator": 31,
+      "family": "11952",
+      "id": "11952-low-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3111966769168188363233600992654808164272",
+        "68073627072666152998625506227523185848728052359262676981120"
+      ],
+      "numerator": 38,
+      "parameter": "38/31",
+      "stratum": "low",
+      "stratum_score_position": 6
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138411003949443,
+      "denominator": 797,
+      "family": "074d9",
+      "id": "074d9-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-82293325986468040233201139672998977349036948252365275947",
+        "285546833026478311897822521700190905233175340656337441503135853532231663855983141286"
+      ],
+      "numerator": -3921,
+      "parameter": "-3921/797",
+      "stratum": "high",
+      "stratum_score_position": 36
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138801340604963,
+      "denominator": 3619,
+      "family": "07ca9",
+      "id": "07ca9-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-22846440066102779690894940538860943021355270342843522112",
+        "41434275863224406251389775396589252671189481737849604849701960746770378144608809216"
+      ],
+      "numerator": 1032,
+      "parameter": "1032/3619",
+      "stratum": "high",
+      "stratum_score_position": 35
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 137763517648951,
+      "denominator": 1680,
+      "family": "08234",
+      "id": "08234-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-942372990864078766727774635795232775397446206374594114218987",
+        "354347994058816605233555860269600420189676439482903641747731997276933313885240894340312550"
+      ],
+      "numerator": -3553,
+      "parameter": "-3553/1680",
+      "stratum": "high",
+      "stratum_score_position": 44
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138232976596335,
+      "denominator": 3683,
+      "family": "08f72",
+      "id": "08f72-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1193175846130056644414713014904225507924086667799376793227",
+        "16371282826282549815639174892659900364193425624562984723155761977663738599367833467846"
+      ],
+      "numerator": 546,
+      "parameter": "546/3683",
+      "stratum": "high",
+      "stratum_score_position": 40
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 139437274637490,
+      "denominator": 2999,
+      "family": "103b2",
+      "id": "103b2-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-69622885850706596028332648939679661395067678855959188400",
+        "209314762511841803255285341745238828580610504981566678155293278133668427313940080000"
+      ],
+      "numerator": -2352,
+      "parameter": "-2352/2999",
+      "stratum": "high",
+      "stratum_score_position": 38
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 139198528065458,
+      "denominator": 2327,
+      "family": "11952",
+      "id": "11952-high-01",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-31814800419659931501485844623715203794419991487269384512",
+        "68454155752649569920795629364478362589837848154801843648566647832416737744487894016"
+      ],
+      "numerator": -137,
+      "parameter": "-137/2327",
+      "stratum": "high",
+      "stratum_score_position": 45
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 136950047397914,
+      "denominator": 943,
+      "family": "074d9",
+      "id": "074d9-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-967914032126898414944800417490589178669470050122587",
+        "11145086362662316259488856198843827801028711834688298935375301976788376057334"
+      ],
+      "numerator": 383,
+      "parameter": "383/943",
+      "stratum": "low",
+      "stratum_score_position": 18
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 137270170262127,
+      "denominator": 570,
+      "family": "07ca9",
+      "id": "07ca9-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-821775455817948104637388670582581056110925692592",
+        "313055575505676048573790373556684805093781391871452316352740463496100224"
+      ],
+      "numerator": 347,
+      "parameter": "347/570",
+      "stratum": "low",
+      "stratum_score_position": 18
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 135919444674672,
+      "denominator": 965,
+      "family": "08234",
+      "id": "08234-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-11025548215571283395194901468555511699613306495269508197552",
+        "450157648950836105895859239880525145145322182841676611312090705628194109013304354185600"
+      ],
+      "numerator": 272,
+      "parameter": "272/965",
+      "stratum": "low",
+      "stratum_score_position": 8
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 137036503817458,
+      "denominator": 383,
+      "family": "08f72",
+      "id": "08f72-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-839229757503012387021106776355695730086044902571952",
+        "9633878827051719689256982920276277852917902025977271882853209405530644755840"
+      ],
+      "numerator": -861,
+      "parameter": "-861/383",
+      "stratum": "low",
+      "stratum_score_position": 12
+    },
+    {
+      "combined_good": 3502,
+      "combined_selection_units": 138406268505661,
+      "denominator": 781,
+      "family": "103b2",
+      "id": "103b2-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-376362194644662691475623742790757756308643465894500",
+        "2869545634279270196988462166559713701686964640487429237644966207395897680100"
+      ],
+      "numerator": 877,
+      "parameter": "877/781",
+      "stratum": "low",
+      "stratum_score_position": 13
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138451153821501,
+      "denominator": 163,
+      "family": "11952",
+      "id": "11952-low-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-34769917423647677335600209315886196768904538800",
+        "2474247817097084039100451872495005269097791375792606754375287874390400"
+      ],
+      "numerator": 338,
+      "parameter": "338/163",
+      "stratum": "low",
+      "stratum_score_position": 7
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138409957108627,
+      "denominator": 849,
+      "family": "074d9",
+      "id": "074d9-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-112766092648242152285745474486242737415402160267170451147",
+        "458309212885835935935295886844153378086214780519459700856369863985392452737451607686"
+      ],
+      "numerator": -4069,
+      "parameter": "-4069/849",
+      "stratum": "high",
+      "stratum_score_position": 37
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138795024672360,
+      "denominator": 3452,
+      "family": "07ca9",
+      "id": "07ca9-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3376697565308604040391396939275096216593207891567245232",
+        "2538364733692241251098914528599161834032144726848233990261602623921287482040898944"
+      ],
+      "numerator": 2227,
+      "parameter": "2227/3452",
+      "stratum": "high",
+      "stratum_score_position": 36
+    },
+    {
+      "combined_good": 3502,
+      "combined_selection_units": 137757946324775,
+      "denominator": 79,
+      "family": "08234",
+      "id": "08234-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-12988690137264083320493083420655251602789672342192",
+        "16480804689062425093764874937353678547426657856609276565494212395537262976"
+      ],
+      "numerator": -3248,
+      "parameter": "-3248/79",
+      "stratum": "high",
+      "stratum_score_position": 45
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 138222917727089,
+      "denominator": 3001,
+      "family": "08f72",
+      "id": "08f72-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1346067816594863923624580426167606062402406278847097287707",
+        "18796374408005887312893741077130074508754477385817732190762734035777586107487429565494"
+      ],
+      "numerator": 2960,
+      "parameter": "2960/3001",
+      "stratum": "high",
+      "stratum_score_position": 41
+    },
+    {
+      "combined_good": 3506,
+      "combined_selection_units": 139382891551875,
+      "denominator": 3959,
+      "family": "103b2",
+      "id": "103b2-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-566075181222093233423886821623282997144462587137415526832",
+        "4920982528705565979437712602706639599396791029505924997583412866676420146497257123200"
+      ],
+      "numerator": -3290,
+      "parameter": "-3290/3959",
+      "stratum": "high",
+      "stratum_score_position": 39
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 139081270406817,
+      "denominator": 2529,
+      "family": "11952",
+      "id": "11952-high-02",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-57815027233078908263628217527392514714519837899935065552",
+        "169099301327104201698919207094174246228623769055183880687463008727707211740282653504"
+      ],
+      "numerator": 443,
+      "parameter": "443/2529",
+      "stratum": "high",
+      "stratum_score_position": 47
+    },
+    {
+      "combined_good": 3500,
+      "combined_selection_units": 136817193105801,
+      "denominator": 320,
+      "family": "074d9",
+      "id": "074d9-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1626671978181779210845112575685488457526077815138827",
+        "25322891183865748057729217355676383884645201912120381549451701235704080478790"
+      ],
+      "numerator": -969,
+      "parameter": "-969/320",
+      "stratum": "low",
+      "stratum_score_position": 19
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 137105865503541,
+      "denominator": 327,
+      "family": "07ca9",
+      "id": "07ca9-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-222165005939081777580471791885168846223209623872",
+        "38605019384661980569724917736508978573530154079452224138814142791108864"
+      ],
+      "numerator": 272,
+      "parameter": "272/327",
+      "stratum": "low",
+      "stratum_score_position": 19
+    },
+    {
+      "combined_good": 3506,
+      "combined_selection_units": 135782539341980,
+      "denominator": 945,
+      "family": "08234",
+      "id": "08234-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-9398769296474220734891077565681636743592481717954088800432",
+        "353893452163599021430989078164861722645065441954124252128150085050293117749413718512000"
+      ],
+      "numerator": -808,
+      "parameter": "-808/945",
+      "stratum": "low",
+      "stratum_score_position": 9
+    },
+    {
+      "combined_good": 3501,
+      "combined_selection_units": 136931957713053,
+      "denominator": 397,
+      "family": "08f72",
+      "id": "08f72-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-360568171460285141326954660847894569043749424503227",
+        "2660948824978071655862670311708513777990730043486212256612189706520665349654"
+      ],
+      "numerator": 580,
+      "parameter": "580/397",
+      "stratum": "low",
+      "stratum_score_position": 13
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 137625583100092,
+      "denominator": 521,
+      "family": "103b2",
+      "id": "103b2-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-18259205788958728542936360363032399471998785485232",
+        "33753576262630830931985746141482558779873213028154141323560779649470934400"
+      ],
+      "numerator": -550,
+      "parameter": "-550/521",
+      "stratum": "low",
+      "stratum_score_position": 14
+    },
+    {
+      "combined_good": 3506,
+      "combined_selection_units": 138067895881565,
+      "denominator": 179,
+      "family": "11952",
+      "id": "11952-low-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-23426430834002769179905044343178161580887342512",
+        "1364432801359848395340786959855927993333713496350314265171630675910016"
+      ],
+      "numerator": 110,
+      "parameter": "110/179",
+      "stratum": "low",
+      "stratum_score_position": 8
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138256907082848,
+      "denominator": 713,
+      "family": "074d9",
+      "id": "074d9-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-81689700007815846023788244292501044271617009980783707",
+        "8461689960336507770559382813877579680691776461257519158240601186132978351413494"
+      ],
+      "numerator": 1565,
+      "parameter": "1565/713",
+      "stratum": "high",
+      "stratum_score_position": 38
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 138756658307130,
+      "denominator": 2226,
+      "family": "07ca9",
+      "id": "07ca9-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-289284671399001969160964547688219631638739874846718548912",
+        "1883233684487632465342003610087198318463609779922465490271729116048006113183759762816"
+      ],
+      "numerator": -3967,
+      "parameter": "-3967/2226",
+      "stratum": "high",
+      "stratum_score_position": 37
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 137648766642115,
+      "denominator": 1342,
+      "family": "08234",
+      "id": "08234-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-154055660391848101103081743627829032318906523632850496191667",
+        "23512822079587084636838111053882268359261129074969502746957298907390784434608389035350926"
+      ],
+      "numerator": 567,
+      "parameter": "567/1342",
+      "stratum": "high",
+      "stratum_score_position": 46
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 138178915926707,
+      "denominator": 3163,
+      "family": "08f72",
+      "id": "08f72-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-777816553703367123433447150147900286692560837906932254512",
+        "8780234243144846523099846573812222217219590032006302774374075718607884176622479111040"
+      ],
+      "numerator": 2139,
+      "parameter": "2139/3163",
+      "stratum": "high",
+      "stratum_score_position": 42
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 139282275190182,
+      "denominator": 2620,
+      "family": "103b2",
+      "id": "103b2-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-27490314086228299633379112996035805168991460027859820992",
+        "51631221513718591704244014083436137152003808580785410327435012398423764225250407424"
+      ],
+      "numerator": -1873,
+      "parameter": "-1873/2620",
+      "stratum": "high",
+      "stratum_score_position": 40
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 138822866731078,
+      "denominator": 2937,
+      "family": "11952",
+      "id": "11952-high-03",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-13748108484033355165215982685577827668778977051923324672",
+        "15350450878484071153824195514824967241211438529695210473343846958003338028558196736"
+      ],
+      "numerator": 3925,
+      "parameter": "3925/2937",
+      "stratum": "high",
+      "stratum_score_position": 48
+    },
+    {
+      "combined_good": 3501,
+      "combined_selection_units": 136649756946339,
+      "denominator": 476,
+      "family": "074d9",
+      "id": "074d9-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-2873810268926482406014033682485156045805323157551947",
+        "59257418580282919910734819701717769381802091448976109171393540210093525473286"
+      ],
+      "numerator": -1013,
+      "parameter": "-1013/476",
+      "stratum": "low",
+      "stratum_score_position": 20
+    },
+    {
+      "combined_good": 3501,
+      "combined_selection_units": 136841220240596,
+      "denominator": 353,
+      "family": "07ca9",
+      "id": "07ca9-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-384742727824791956784310670201279911406032318332",
+        "100230274770911991126596296369903846580850070107591663936115429715520756"
+      ],
+      "numerator": 49,
+      "parameter": "49/353",
+      "stratum": "low",
+      "stratum_score_position": 20
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 134920059560735,
+      "denominator": 1,
+      "family": "08234",
+      "id": "08234-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-786139736924299953790299367446781610177712",
+        "270803877896838460035026971179244114752459292681692308747059584"
+      ],
+      "numerator": -600,
+      "parameter": "-600",
+      "stratum": "low",
+      "stratum_score_position": 10
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 136244806110002,
+      "denominator": 653,
+      "family": "08f72",
+      "id": "08f72-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-5587578454387571584066300865207194293517991957479227",
+        "156074151795309922295414210694073684670843115917249527886948971599061390677654"
+      ],
+      "numerator": -240,
+      "parameter": "-240/653",
+      "stratum": "low",
+      "stratum_score_position": 14
+    },
+    {
+      "combined_good": 3507,
+      "combined_selection_units": 137560149599396,
+      "denominator": 779,
+      "family": "103b2",
+      "id": "103b2-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-458654365061411907589594273193462284615819311894372",
+        "3287918902279426454508864037609090610820606359842679546198860467687479859300"
+      ],
+      "numerator": 555,
+      "parameter": "555/779",
+      "stratum": "low",
+      "stratum_score_position": 15
+    },
+    {
+      "combined_good": 3501,
+      "combined_selection_units": 137386049521755,
+      "denominator": 324,
+      "family": "11952",
+      "id": "11952-low-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1555161811005064681726051881634458553626298956612",
+        "730021324166546064807722786153452262652500960939726766252331286249042820"
+      ],
+      "numerator": 287,
+      "parameter": "287/324",
+      "stratum": "low",
+      "stratum_score_position": 9
+    },
+    {
+      "combined_good": 3506,
+      "combined_selection_units": 138214175169594,
+      "denominator": 2225,
+      "family": "074d9",
+      "id": "074d9-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-279820874935888454359909452802855554919304186477593688667",
+        "1696287641813732041118474710600748403272057301973117961845224352313086191715566457590"
+      ],
+      "numerator": 3889,
+      "parameter": "3889/2225",
+      "stratum": "high",
+      "stratum_score_position": 39
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138732721299613,
+      "denominator": 3445,
+      "family": "07ca9",
+      "id": "07ca9-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-47028595584874327794815498204677253754162139519835126652",
+        "122974133413277619436938111911993411076795169457668431713094063987373880755886226804"
+      ],
+      "numerator": -2687,
+      "parameter": "-2687/3445",
+      "stratum": "high",
+      "stratum_score_position": 38
+    },
+    {
+      "combined_good": 3506,
+      "combined_selection_units": 137538122277448,
+      "denominator": 232,
+      "family": "08234",
+      "id": "08234-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-93840844065298343514809286456982609423052282178114507",
+        "10719555610034302794098887191092901725551445350314712549639998053678010001173894"
+      ],
+      "numerator": 2695,
+      "parameter": "2695/232",
+      "stratum": "high",
+      "stratum_score_position": 48
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 138142904728299,
+      "denominator": 403,
+      "family": "08f72",
+      "id": "08f72-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-3258688123017584159983138075015048133303884952083467",
+        "73338296396418207700811178223207821076397700135675883053235200064867814291526"
+      ],
+      "numerator": -2318,
+      "parameter": "-2318/403",
+      "stratum": "high",
+      "stratum_score_position": 43
+    },
+    {
+      "combined_good": 3508,
+      "combined_selection_units": 139185676208868,
+      "denominator": 2773,
+      "family": "103b2",
+      "id": "103b2-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-41840701254306877179146611650783186408055876717087403952",
+        "96949799310066962234078900488553098679532799506220426748698445979492743600155555200"
+      ],
+      "numerator": -2030,
+      "parameter": "-2030/2773",
+      "stratum": "high",
+      "stratum_score_position": 41
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138597063645233,
+      "denominator": 617,
+      "family": "11952",
+      "id": "11952-high-04",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-80791487553514518218419756313733906323170517003992752",
+        "8834573164643673527661046695107718550061836949449658862244040164668288009664896"
+      ],
+      "numerator": -1732,
+      "parameter": "-1732/617",
+      "stratum": "high",
+      "stratum_score_position": 49
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 136240194254178,
+      "denominator": 211,
+      "family": "074d9",
+      "id": "074d9-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-759039033589448913149011999384541919354710683947",
+        "254253810369086393010154218170412113954542802660735033878134711595490214"
+      ],
+      "numerator": -359,
+      "parameter": "-359/211",
+      "stratum": "low",
+      "stratum_score_position": 21
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 136626049899823,
+      "denominator": 643,
+      "family": "07ca9",
+      "id": "07ca9-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-1034461495735178200914235356523559240628840782778492",
+        "12877952107438762568606376786921358706170139144932436240528126975650978745076"
+      ],
+      "numerator": -841,
+      "parameter": "-841/643",
+      "stratum": "low",
+      "stratum_score_position": 21
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 134748047449823,
+      "denominator": 422,
+      "family": "08234",
+      "id": "08234-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-14698584007475259105914858881773175818657993272920044867",
+        "21914036476124617339637936105991696740518083529645632896512957786806410058079242174"
+      ],
+      "numerator": 273,
+      "parameter": "273/422",
+      "stratum": "low",
+      "stratum_score_position": 11
+    },
+    {
+      "combined_good": 3507,
+      "combined_selection_units": 135235914902445,
+      "denominator": 194,
+      "family": "08f72",
+      "id": "08f72-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-17302236707955247794918835866262495940489929868427",
+        "31006376614964668101760650689292989245368549051342287127061550664529243590"
+      ],
+      "numerator": 727,
+      "parameter": "727/194",
+      "stratum": "low",
+      "stratum_score_position": 15
+    },
+    {
+      "combined_good": 3504,
+      "combined_selection_units": 137284823008673,
+      "denominator": 281,
+      "family": "103b2",
+      "id": "103b2-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-18727703321847569517589689479935083884119942392852",
+        "29617266064942425418108579668609401949058951271889083828438634071517334596"
+      ],
+      "numerator": -621,
+      "parameter": "-621/281",
+      "stratum": "low",
+      "stratum_score_position": 16
+    },
+    {
+      "combined_good": 3501,
+      "combined_selection_units": 136786475370539,
+      "denominator": 434,
+      "family": "11952",
+      "id": "11952-low-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-36700462385370038731738221646188998926500558692532",
+        "85236306944737211474375706425640089576092648812011884417357894581294310020"
+      ],
+      "numerator": 807,
+      "parameter": "807/434",
+      "stratum": "low",
+      "stratum_score_position": 10
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138197976829807,
+      "denominator": 141,
+      "family": "074d9",
+      "id": "074d9-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-28569925307838070287531133871412340922343055076170688427",
+        "58168306847307898328112521965001358038489755291601103138557236799769998060466025254"
+      ],
+      "numerator": -3805,
+      "parameter": "-3805/141",
+      "stratum": "high",
+      "stratum_score_position": 40
+    },
+    {
+      "combined_good": 3500,
+      "combined_selection_units": 138703988942307,
+      "denominator": 2257,
+      "family": "07ca9",
+      "id": "07ca9-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-59281112718183842591259707019747270245757857397044509692",
+        "174733503470494881365023146680887110159660435732590597329365320580890157626005735476"
+      ],
+      "numerator": -3267,
+      "parameter": "-3267/2257",
+      "stratum": "high",
+      "stratum_score_position": 39
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 137532946705584,
+      "denominator": 3790,
+      "family": "08234",
+      "id": "08234-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-627878159448004749702286480368553716412727198379673449036559587",
+        "6113364199304007139944466792320764532094804652120619445841886069692794690722993677697355480350"
+      ],
+      "numerator": -1983,
+      "parameter": "-1983/3790",
+      "stratum": "high",
+      "stratum_score_position": 49
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 138112247046864,
+      "denominator": 2519,
+      "family": "08f72",
+      "id": "08f72-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-65204230446510213774691100896796623631561652537977129712",
+        "208630175795029581402475351179330715561671604190308993285694895080930146558311955584"
+      ],
+      "numerator": 1245,
+      "parameter": "1245/2519",
+      "stratum": "high",
+      "stratum_score_position": 44
+    },
+    {
+      "combined_good": 3503,
+      "combined_selection_units": 139125741687017,
+      "denominator": 1356,
+      "family": "103b2",
+      "id": "103b2-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-4279479082778432149728409392303476042182310050971548352",
+        "3231557408552231136189480544226791389849696389901575939146251335375276439073668096"
+      ],
+      "numerator": -2897,
+      "parameter": "-2897/1356",
+      "stratum": "high",
+      "stratum_score_position": 42
+    },
+    {
+      "combined_good": 3505,
+      "combined_selection_units": 138593864250503,
+      "denominator": 1289,
+      "family": "11952",
+      "id": "11952-high-05",
+      "model": [
+        "0",
+        "0",
+        "0",
+        "-45575663652600418781117562856261573201204057993816752",
+        "3677594941040477976950303302189275981980663729429743913458840485247382616607104"
+      ],
+      "numerator": 2028,
+      "parameter": "2028/1289",
+      "stratum": "high",
+      "stratum_score_position": 50
+    }
+  ],
+  "selector_sha256": "1a2da6e3139f41ac6b73d91ffc44ac3feedc57b857e09c46554f1f7f635df00f",
+  "skipped": [
+    {
+      "family": "074d9",
+      "parameter": "-289/572",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-174/71",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "17/55",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "492/169",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-807/115",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-297/335",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-649/921",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-661/900",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-661/194",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "26/57",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "173/429",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "121/695",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-676/921",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "38/353",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "25/3",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-839/505",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "148/225",
+      "stratum": "low"
+    },
+    {
+      "family": "074d9",
+      "parameter": "2818/1535",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "808/2259",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "759/2636",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1477/1933",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1175/1901",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1220/2339",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-670/1129",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2336/731",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "2588/1603",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2632/543",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1133/1165",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1525/1388",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "922/2063",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1773/136",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1224/931",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1019/3300",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-578/3795",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1811/3542",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2021/2823",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2789/1357",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "32/3951",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1173/3370",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1028/2399",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "905/3564",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "2824/885",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1223/3329",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2324/2523",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-3292/1837",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "4075/4018",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1381/558",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "3013/980",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-1449/1094",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-935/2279",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "-2707/3437",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "88/2551",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1649/2323",
+      "stratum": "high"
+    },
+    {
+      "family": "074d9",
+      "parameter": "1735/3326",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "613/828",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-489/40",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "760/211",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-428/491",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "93/152",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "505/794",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "561/26",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "408/797",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "422/879",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "117/238",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "267/1004",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "197/116",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3/377",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "167/887",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "79/964",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "142/561",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "795/433",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "755/721",
+      "stratum": "low"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "2059/3120",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "633/4064",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-2507/3068",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3221/1002",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3469/2070",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "21/1196",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1403/794",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "869/2730",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-575/1207",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3097/3327",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1193/99",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "965/1196",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-3693/1163",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3160/287",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3307/1128",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1620/3023",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "2393/1860",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3775/2497",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1742/4013",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3065/48",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3435/3841",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-2402/1309",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "1053/2968",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3076/2339",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "2935/1939",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "1443/986",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1982/1505",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-455/2801",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-1539/1700",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "956/2219",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "3172/245",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "1572/785",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "587/1074",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-2475/2848",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "-951/1696",
+      "stratum": "high"
+    },
+    {
+      "family": "07ca9",
+      "parameter": "2027/2347",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-239/4",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "-506/9",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "326/5",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "774/149",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "-11/235",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "383/388",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "-355/49",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "931/90",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "-483/374",
+      "stratum": "low"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1446/29",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "4051/121",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2980/811",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2741/118",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1383/595",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1807/60",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1909/53",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-20/2827",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "3305/3579",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-170/1647",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1007/2292",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "1504/3",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2641/3542",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2923/2870",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2387/360",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2243/880",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "509/3808",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-3673/2050",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "464/3753",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1247/4079",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1258/1679",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1569/1505",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "1807/245",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-3301/1950",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "2683/3919",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "937/2802",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-4068/1435",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1501/1623",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-208/1817",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2185/106",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-3815/1356",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-274/2833",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "3545/2676",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "541/3360",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "435/2477",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "2627/65",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "458/2195",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-3809/1589",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "3217/3864",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-833/3139",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-46/4089",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "2071/4060",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "2570/2143",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2957/3626",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-1834/451",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "1970/3979",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-2032/179",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "1931/3733",
+      "stratum": "high"
+    },
+    {
+      "family": "08234",
+      "parameter": "-3427/35",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "9/17",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "149/177",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-704/93",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "107/603",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-307/72",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "146/59",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-543/229",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-517/543",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "254/17",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-127/373",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "791/342",
+      "stratum": "low"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1103/375",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1361/72",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "2454/25",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "3431/70",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2175/2614",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-164/2855",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "2784/167",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-3292/1853",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "2007/112",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2751/886",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2129/1207",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2799/491",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "992/3991",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "3802/3713",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2335/1986",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1055/1833",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-1371/1358",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "4071/52",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-3791/529",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "2401/2866",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-1205/3663",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2884/621",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2449/1927",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-692/3645",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-3941/146",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2336/3251",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-1737/1790",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-1264/2397",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2939/3121",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1427/1684",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "3293/2326",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "2462/289",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1308/277",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2267/1326",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2434/3359",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "281/3078",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2198/1425",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "4032/1663",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-2433/3479",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "-4072/2691",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1895/1768",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "1433/3893",
+      "stratum": "high"
+    },
+    {
+      "family": "08f72",
+      "parameter": "4095/3356",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "60/31",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "503/138",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "791/627",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "522/329",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-538/249",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-481/278",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "41/38",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-778/259",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "48/7",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "726/761",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-95/728",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-305/317",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "150/481",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-304/997",
+      "stratum": "low"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3726/881",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2280/299",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1498/507",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-2445/83",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-2558/3185",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2773/962",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "934/1207",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1616/419",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3325/593",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-2254/1257",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-3939/2032",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1049/2296",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1502/931",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-4021/1422",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2566/3809",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "420/2119",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3466/307",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-3017/954",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1139/1293",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1588/3431",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2018/167",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1788/7",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3010/3753",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2124/2429",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1105/3308",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1413/448",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "513/2044",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1986/1147",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3371/300",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1130/789",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2390/1319",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1505/2721",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-2101/756",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-4047/3037",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "1055/1671",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "3889/2172",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2815/1088",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-2875/1133",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "-1946/3617",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "2275/293",
+      "stratum": "high"
+    },
+    {
+      "family": "103b2",
+      "parameter": "85/1261",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-695/311",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "402/517",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "775/803",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "-8/27",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "238/27",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "736/1003",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "-432/695",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "411/817",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "744/5",
+      "stratum": "low"
+    },
+    {
+      "family": "11952",
+      "parameter": "2012/211",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-2448/11",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-328/1123",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1173/127",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1451/86",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-94/1277",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1376/455",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3444/347",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2828/2015",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3811/2241",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-811/1609",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-3891/1396",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "4074/1333",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3148/2791",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2872/2073",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-3482/2395",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-3814/2675",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "914/2111",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3058/1387",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3950/4007",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1826/2583",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1972/1459",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3063/824",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2015/3019",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "420/2827",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "54/2153",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1046/2299",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2324/1991",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-4055/2356",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1490/943",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1055/1376",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1171/1683",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2741/2074",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1737/530",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "939/4016",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-815/1919",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1919/3168",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "3170/1609",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1551/1252",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1667/631",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1292/601",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-436/3149",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "102/1525",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "327/1403",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-3578/699",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "200/3623",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "2929/648",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-1027/591",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "-757/1276",
+      "stratum": "high"
+    },
+    {
+      "family": "11952",
+      "parameter": "1926/3347",
+      "stratum": "high"
+    }
+  ],
+  "status": "PASS_FROZEN_R17_60_SELECTION",
+  "stratum_pool_counts": {
+    "074d9/high": 953,
+    "074d9/low": 71,
+    "07ca9/high": 937,
+    "07ca9/low": 87,
+    "08234/high": 965,
+    "08234/low": 59,
+    "08f72/high": 947,
+    "08f72/low": 77,
+    "103b2/high": 953,
+    "103b2/low": 71,
+    "11952/high": 951,
+    "11952/low": 73
+  }
+}
