@@ -34,6 +34,13 @@ representatives of the302 residual direction remain outside this claim.
 
 The prospective positive302 seed problem remains open.
 
+**Subsequent new deduction.** The [two-sided minimum](DET1092_TWO_SIDED_CONIC_MINIMUM_2026-09-09.md)
+now proves the matching global minimum over the full alternate MW12 lattice:
+the two degree-minimizing curves are the same pair in both translation
+problems. It also constructs two degree6 exits and excludes their incidence
+on302 and the eight controls. This strengthens the orbit geometry, not the
+positive302 construction.
+
 ## 1. Audit and input separation
 
 **Verified prior applications, reused.** The

@@ -1,10 +1,11 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [bi-fibration conic theorem](notes/DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md)
-identifies an existing rational curve of degree2 in both fibrations,
-independent over both generic spans. A fixed equation-only specialization
-replays at rank at least18. All three tested source orbits still miss the
-marked first302 seed exactly; this does not solve prospective302 selection.
+The [two-sided conic minimum](notes/DET1092_TWO_SIDED_CONIC_MINIMUM_2026-09-09.md)
+proves that alternating generic translations cannot leave a two-curve pair
+while both projection degrees stay at most2. One full-MW12 parity CVP closes
+the global minimum. Two explicit degree6 exits miss302 and all eight controls.
+The [bi-fibration construction](notes/DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md)
+still supplies a certified rank18 specialization; prospective302 selection is open.
 
 The [intrinsic low-degree source obstruction](notes/DET1092_INTRINSIC_LOW_DEGREE_SOURCE_OBSTRUCTION_2026-09-09.md)
 excludes all1,308 original section curves of alternate degree at most2,
