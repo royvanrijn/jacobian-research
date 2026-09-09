@@ -188,7 +188,7 @@ def prepare_bank(case, packet_path, output, generation):
     family = next(x for x in read(CATALOGUE)['families'] if x['family'] == row['family'])
     maximum = sorted(int(x['mask']) for x in family['classes'])
     prior = []
-    for path in sorted((case / 'banks').glob('bank-*/anchor-bank.json')):
+    for path in sorted((case / 'banks').glob('bank-*/preparation/anchor-bank.json')):
         prior.extend(int(x['mask']) for x in read(path)['rows'])
     used = set(prior)
     winning = _mask_from_winning_seed(case)
@@ -263,6 +263,41 @@ def prepare_bank(case, packet_path, output, generation):
                                       'point_searches': 0, 'files': files}, immutable=True)
 
 
+def reseed(case, preparation, packet_path, output):
+    """Retain one exact parent bank but replace its certified subgroup seed."""
+    from memory_rank_certificate import checked_rank
+
+    sealed = read(preparation / 'prepared.json')
+    require(all(sha(preparation / name) == digest for name, digest in sealed['files'].items()),
+            'old preparation changed')
+    prior_path = next(preparation.glob('seed-M*.json')); prior = read(prior_path); packet = read(packet_path)
+    require(packet['curve'] == prior['curve'] and packet['points'][:len(prior['points'])] == prior['points'],
+            'reseed packet does not extend prepared subgroup')
+    points = tuple(tuple(map(F, p)) for p in packet['points']); proof = packet['proof']
+    fresh = checked_rank(tuple(map(F, packet['curve'])), points,
+                         [r['prime'] for r in proof['signatures']], proof['no_rational_2_torsion_prime'])
+    require(json.loads(json.dumps(fresh)) == proof and len(points) == packet['rank_lower_bound'],
+            'reseed certificate differs')
+    output.mkdir(parents=True, exist_ok=False)
+    for name in sealed['files']:
+        if name in ('protocol.json', 'anchor-bank.json') or name.startswith('seed-M'):
+            continue
+        (output / name).write_bytes((preparation / name).read_bytes())
+    protocol = read(preparation / 'protocol.json')
+    protocol['initial_rank'] = len(points)
+    protocol['reseed_inputs'] = {str(p.relative_to(ROOT)): sha(p) for p in
+                                 (packet_path, preparation / 'prepared.json', Path(__file__))}
+    protocol['reseed_rule'] = 'Exact certified subgroup extension; retain identical frozen generic parent bank.'
+    atomic(output / 'protocol.json', protocol, immutable=True)
+    bank = read(preparation / 'anchor-bank.json'); bank['protocol_sha256'] = sha(output / 'protocol.json')
+    atomic(output / 'anchor-bank.json', bank, immutable=True)
+    seed = {k: packet[k] for k in ('curve', 'points', 'proof', 'rank_lower_bound')}; seed['generic_rank'] = 17
+    atomic(output / f"seed-M{len(points)}.json", seed, immutable=True)
+    files = {p.name: sha(p) for p in sorted(output.glob('*.json'))}
+    atomic(output / 'prepared.json', {'status': 'PASS_AUTONOMOUS_RESEED_PREPARATION',
+                                      'point_searches': 0, 'files': files}, immutable=True)
+
+
 def v3(preparation, folder, max_calls, replay=False):
     import run_complement_seed_v3 as runner
     runner.PREP = runner.BANK = preparation
@@ -279,15 +314,16 @@ def v3(preparation, folder, max_calls, replay=False):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('phase', choices=('generic-prepare', 'generic-replay', 'seed-cloud', 'bank', 'v3-search', 'v3-replay'))
+    p.add_argument('phase', choices=('generic-prepare', 'generic-replay', 'seed-cloud', 'bank', 'reseed', 'v3-search', 'v3-replay'))
     p.add_argument('--case', type=Path, required=True)
-    p.add_argument('--packet', type=Path); p.add_argument('--output', type=Path)
+    p.add_argument('--packet', type=Path); p.add_argument('--output', type=Path); p.add_argument('--preparation', type=Path)
     p.add_argument('--generation', type=int, default=0); p.add_argument('--max-calls', type=int, default=100)
     a = p.parse_args(); case = a.case.resolve()
     if a.phase == 'generic-prepare': generic(case, False)
     elif a.phase == 'generic-replay': generic(case, True)
     elif a.phase == 'seed-cloud': reconcile_seed(case)
     elif a.phase == 'bank': prepare_bank(case, a.packet.resolve(), a.output.resolve(), a.generation)
+    elif a.phase == 'reseed': reseed(case, a.preparation.resolve(), a.packet.resolve(), a.output.resolve())
     elif a.phase == 'v3-search': v3(a.packet.resolve(), a.output.resolve(), a.max_calls, False)
     else: v3(a.packet.resolve(), a.output.resolve(), a.max_calls, True)
 
