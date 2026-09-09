@@ -1,0 +1,4308 @@
+{
+  "status": "PASS_INDEPENDENT_FIRST_SEED_REPLAY",
+  "rank_lower_bound": 17,
+  "charts": 32,
+  "bindings": {
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/protocol.json": "d8943b7b1de04459dfb112a733cbea60801a435fb9bea628a0ecf0af09374a34",
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/terminal.json": "237ebdab6c098ccb34b1824f7cd95a16bd993df75c2765bdd2e25fbb92c41f25",
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/verified.json": "a1e3d621e3e5bd8a0c465f4a3e2b0becbcb6b71f56425395e5eef206a5860a5d",
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-prepare-supervision/supervisor.json": "7605aba55968f44df4831b9c0d155b1ab6810f42fbb49213785086bd4af5beaf",
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-search-supervision/supervisor.json": "71169e3f4f03196c2a8574aeec24d894bd49a37c39d4328f0e52707152854697",
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-replay-supervision/supervisor.json": "9a7c974b473bf0228f89441a719e4b4ac69b0f3fff60cd65b5610f2f7aa7ec2e"
+  },
+  "records": {
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/protocol.json": {
+      "claim_boundary": "Prospective bounded seed confirmation, not an exact rank or record. CVP exactness concerns the recorded rounded height metric. Resource-limited maps and bounded misses remain unresolved.",
+      "family": "08234",
+      "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+      "height": 125000,
+      "initial_rank": 17,
+      "inputs": {
+        "artifacts/generated-results/elliptic-curves/fresh6_outside_maximum_seed_masks_v1.json": "7aef8c0afec25fc237730a7c30199040af6b51ba83e8141b60673464f52ab2af",
+        "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/geometry.json": "019fe5fb03e7bbb52142eedf01669fe51204a29b75e703e82639430b45131750",
+        "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/seed.json": "d14e4373865a85012f827bb420884742219207c6d04e4fdf379195da046e8284",
+        "artifacts/local/elliptic-curves/fresh6-generic-seeds-v1/08234-fresh-001/seed-M17.json": "d14e4373865a85012f827bb420884742219207c6d04e4fdf379195da046e8284",
+        "artifacts/local/elliptic-curves/fresh6-generic-seeds-v1/prepared.json": "ffe4e1724240e07e15a7edaa08f63c107ce3136597acd1f8ea209a71b6313a41",
+        "artifacts/local/elliptic-curves/fresh6-generic-seeds-v1/protocol.json": "e3de785d30fb0ad47a3c86ac87cab002cf35cb3e654bdfed51f947392178a621",
+        "artifacts/local/elliptic-curves/fresh6-generic-seeds-v1/verified.json": "bba0a20833f20339cfae34e66749ca879a6f8926711440a75ddd69e36ed93921"
+      },
+      "map_python": "/home/royvanrijn/.local/bin/sage",
+      "map_python_sha256": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+      "map_rss_bytes": 1073741824,
+      "mapping_order": [
+        "preconditioned_full",
+        "factor_free"
+      ],
+      "masks": [
+        5343,
+        11280,
+        19231,
+        21052,
+        23910,
+        29883,
+        30610,
+        32543,
+        34545,
+        35930,
+        38093,
+        43809,
+        46319,
+        48598,
+        49213,
+        49331
+      ],
+      "max_point_invocations": 32,
+      "parameter": "2071/4060",
+      "prime_bound": 1000,
+      "rule": "Frozen sampled generic classes outside the maximum-class span, with specialized exact CVP representatives ordered by descending rounded norm then mask. Bounded preconditioned and factor-free maps; exact signed-permutation box deduplication including infinity. Stop immediately after the first standalone certified additional direction. Preserve complete returned chart witnesses, including any points not processed after that first gain.",
+      "schema": "fresh6-outside-maximum-first-M18.v1",
+      "seconds_per_chart": 10,
+      "seconds_per_map": 5,
+      "sources": {
+        "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+        "elliptic-curves/cas/future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+        "elliptic-curves/cas/lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+        "elliptic-curves/cas/lean_preconditioned_full_pari_mapping.sage": "775e8ab274f46f8f8c72032f3a9bd41ff534e8109a4d5d9da7d6a58e27a6e3d3",
+        "elliptic-curves/cas/lean_preconditioned_map_receipts.py": "5ce29100b7a3f907a4d65c1591790d247d4afa63de79c4ec160a73d78c273d6b",
+        "elliptic-curves/cas/lean_preconditioned_map_worker.py": "4fbada85974941ffe4f52add44d2c9d2625fe3757cbcf5f9ebd51361d77fb7f5",
+        "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+        "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+        "elliptic-curves/cas/pointed_box_equivalence.py": "26c3f89b7a2e6adced75ac2c4959b8a0e0edf7ce9447fafb2bdaca00eb537e57",
+        "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+        "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+        "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+        "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+        "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+        "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+        "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+        "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+        "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+        "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+        "elliptic-curves/cas/run_complement_seed_v3.py": "0441925a041f72ee7130c3cad8327cdc99d15351113fe123b2327146f21c602e",
+        "elliptic-curves/cas/run_outside_maximum_seed_confirmation.py": "7ce534da3f79905541acb05e5658279e2b44e24460c44f7c49665f4c3b566ac8",
+        "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+        "elliptic-curves/cas/v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2",
+        "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+        "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1"
+      },
+      "target_rank": 18
+    },
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/terminal.json": {
+      "charts": 32,
+      "claim_boundary": "Prospective bounded seed confirmation, not an exact rank or record. CVP exactness concerns the recorded rounded height metric. Resource-limited maps and bounded misses remain unresolved.",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1080260006052450198923274771048395951865683534798903641479930747",
+        "13806747771782620126888629874369868645079529400821466728068247484068657582619141850253961169750"
+      ],
+      "last_chart_sha256": "af09968d0a9ad1b609d3655cd9a275663f7ae7e82e4093799e0a23d0c0e75c36",
+      "map_attempts": [
+        {
+          "centre_index": 0,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "aab16111eabc071e71362fbdce10a99804ce5a29e60c471adae543226db30490",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 0,
+          "policy": "factor_free",
+          "receipt_sha256": "649757fba314f24d616cea086626040464a7d3f9696305fcbcfdb8c8d01ec35c",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 1,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "b2611eb3fd58cb14ad74c45ea659b40b5542e42fa95f774b264693db12747acc",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 1,
+          "policy": "factor_free",
+          "receipt_sha256": "917c2b4cd7953fef86c035cbf62bb15b1ada001d8a5a4606d0e8c99c933cfd78",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 2,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "6c8612c3016ed8dc305a194f63f49462c8b59a5a48b6e2c8f814b06621499f68",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 2,
+          "policy": "factor_free",
+          "receipt_sha256": "726097f8a5cb2616fcfcb15dec88b8f065174bdaf9d5e65deca83b1fd94834ad",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 3,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "aa4faafd0270dbe4a2434ce9dc5f79602a49dce594789c07a33baafa17006d5a",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 3,
+          "policy": "factor_free",
+          "receipt_sha256": "4bb0be3e5e69f0458addb40c57f1d3737fc1fb631ed602dbd17609721639abe8",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 4,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "cb1305b1b85f9ce7873c0616b0dbddd9a440d51e2222d38ac438a287b3a7d703",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 4,
+          "policy": "factor_free",
+          "receipt_sha256": "1b5b9fbe3ae5e31d50251d9659b70d935adc174a025739cd05a6b1c6496126ea",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 5,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "eb0cc033ef0558868dc778b7b9c179ed439a8986eff8c7940a741ef190dca3a2",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 5,
+          "policy": "factor_free",
+          "receipt_sha256": "471cf5d80c1cc04bf7f7668334b9adc525cf150a1b59e1f2f8aaf60393053f8a",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 6,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "f0bb6338bff51c8a5c21eacb6bb925e7359b76456e4f1920d169c17ea7af12fe",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 6,
+          "policy": "factor_free",
+          "receipt_sha256": "19160156e6f008475f494deba97788115db0997ba6b40441714db326d2602a4a",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 7,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "f66088aed66e97c17b34ff7a95a964520a16bb6e71f1f496661085473fdbbb09",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 7,
+          "policy": "factor_free",
+          "receipt_sha256": "323791fa7bd4b63c428d085181e82931576a0341760711fff35add29f7b06b6b",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 8,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a5b621cb66b9189f8eadff74ff5580c9a0de9642efefbfcecd5fab3d26428ae2",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 8,
+          "policy": "factor_free",
+          "receipt_sha256": "edbf0e3359d4101f4e5ef7891d738312fe16be721d3f1f94cc32892099cbb1df",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 9,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "3b45ebb56191e4eb512438dd055789c2662e23bb015cd4a9bd1e234b34cec0d3",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 9,
+          "policy": "factor_free",
+          "receipt_sha256": "7d863d99f84a95881c8835aaf8aede4f38f57354b01c21860c9b9e2015ddb5ff",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 10,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "cf5beb8303d2d86646dca2457eda3169041ee2fa19d6cf0481b2a59dd7e7de92",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 10,
+          "policy": "factor_free",
+          "receipt_sha256": "0d05de5c81c6c20062784efe40298c19257877990a4014655eb574c3a9353f38",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 11,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "cbcc3c77a4146225bf4bb1d1c62151d480a104e5b4fa825f98f1973a0fb2c11d",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 11,
+          "policy": "factor_free",
+          "receipt_sha256": "9f073137a6d36474048e052d83a4ffb5125d005ff5e5ef451065af9154bc276a",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 12,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "aeeb2c897bd15cf2e572e54da85001e2eff19b9a0a5c92c8b6763be4f02472e7",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 12,
+          "policy": "factor_free",
+          "receipt_sha256": "5d1ef3e0aab54d8ad682236c5cc65449b8eb1e09228450241fe0aba49118d986",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 13,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "2edf31b8303fda20ba8d1a61063feb359861604d82140fb3f26a897e38464760",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 13,
+          "policy": "factor_free",
+          "receipt_sha256": "815ee2f0c14be5183666233070d859355fea72a50d5f7119b6280adde002ae84",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 14,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "f4a7e7ab1c5c4e2e7516c2c93746b66ccfe624a567ea036010c9403027a8803f",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 14,
+          "policy": "factor_free",
+          "receipt_sha256": "5fdf77ee16b01803415a7a65bd46421302bb5fd1971e5a6f1679dc14890a0549",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 15,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "2285605aad1e956753a4ab17426cfdc556ca782822b4fd3a1a5bc925df306271",
+          "skip_reason": null
+        },
+        {
+          "centre_index": 15,
+          "policy": "factor_free",
+          "receipt_sha256": "4f703ebada9c422231e41981cfa0698eba397c87ba05f11e4f5758e835075bbb",
+          "skip_reason": null
+        }
+      ],
+      "point_timeouts": 0,
+      "points": [
+        [
+          "37635817706953400736193533872163123/5041",
+          "-28085735365119769143704000225365959632758193865831216/357911"
+        ],
+        [
+          "2079726604255318397750773726985643/121",
+          "-23700706980279397889798142481778645411599672821264/1331"
+        ],
+        [
+          "214755314207301937271433578605258323/16129",
+          "-86512862021820744791413164566621055255896987449085664/2048383"
+        ],
+        [
+          "-378444056568927616664034593158457997/10201",
+          "-54746528245540112631049762719575774681784003986155944/1030301"
+        ],
+        [
+          "2519611171887103096047722914302075/121",
+          "-24590821921126828365758188218895250248028535848160/1331"
+        ],
+        [
+          "20569601892028329275322309053043",
+          "17011859451478286390864464525020550666901077056"
+        ],
+        [
+          "116019615920761873985860204388904891/5929",
+          "-5791813283469203256903767397223647075518324735845008/456533"
+        ],
+        [
+          "196612777534227817000831521775812279075/8532241",
+          "845149366084467723425735148842603408313735390943218356160/24922675961"
+        ],
+        [
+          "18537311244910840901478807894003",
+          "12314359503144126786641113957665611757748136256"
+        ],
+        [
+          "67819921950418123239868055375000163/3481",
+          "2561352694586611289623933465528520390857501750563576/205379"
+        ],
+        [
+          "16190486878531511798888516222403",
+          "23682374142118492250200362191858961529932002256"
+        ],
+        [
+          "-12748214825241399310405307868546",
+          "-159707022408470293648411251782810141680552643826"
+        ],
+        [
+          "809194179539084736346361524951050/49",
+          "7442858804341764589354289962481221908954715298220/343"
+        ],
+        [
+          "-487149234116660634601772528401520934/16129",
+          "-281468286603931686083745526858748032226616856870540392/2048383"
+        ],
+        [
+          "1365916822520939962155498875280447171/93025",
+          "945563000597180660533454908051166600142525031905832656/28372625"
+        ],
+        [
+          "-2708056870211774593652028138258621/529",
+          "1686025758915198979909844156899642735662966774218784/12167"
+        ],
+        [
+          "-4951864544970842427431734113912981/169",
+          "313048625571936204878485986116795913930943123630656/2197"
+        ]
+      ],
+      "proof": {
+        "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+        "no_rational_2_torsion_prime": 47,
+        "rank_lower_bound": 17,
+        "signatures": [
+          {
+            "doubled_subgroup_order": 5,
+            "group_order": 10,
+            "prime": 5,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 6,
+            "group_order": 12,
+            "prime": 7,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 9,
+            "group_order": 18,
+            "prime": 11,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 12,
+            "group_order": 24,
+            "prime": 17,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 14,
+            "group_order": 28,
+            "prime": 19,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 8,
+            "group_order": 32,
+            "prime": 23,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 19,
+            "group_order": 38,
+            "prime": 29,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 12,
+            "group_order": 48,
+            "prime": 37,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 61,
+            "group_order": 61,
+            "prime": 47,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 63,
+            "group_order": 63,
+            "prime": 53,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 75,
+            "group_order": 75,
+            "prime": 59,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 77,
+            "group_order": 77,
+            "prime": 61,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 83,
+            "group_order": 83,
+            "prime": 67,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 42,
+            "group_order": 84,
+            "prime": 71,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 44,
+            "group_order": 88,
+            "prime": 73,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 24,
+            "group_order": 96,
+            "prime": 79,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 101,
+            "group_order": 101,
+            "prime": 83,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 25,
+            "group_order": 100,
+            "prime": 89,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 28,
+            "group_order": 112,
+            "prime": 97,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 60,
+            "group_order": 120,
+            "prime": 101,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 60,
+            "group_order": 120,
+            "prime": 103,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 32,
+            "group_order": 128,
+            "prime": 107,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 53,
+            "group_order": 106,
+            "prime": 109,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 135,
+            "group_order": 135,
+            "prime": 113,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 143,
+            "group_order": 143,
+            "prime": 127,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 37,
+            "group_order": 148,
+            "prime": 131,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 143,
+            "group_order": 143,
+            "prime": 137,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 159,
+            "group_order": 159,
+            "prime": 139,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 165,
+            "group_order": 165,
+            "prime": 149,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 39,
+            "group_order": 156,
+            "prime": 151,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 179,
+            "group_order": 179,
+            "prime": 157,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 185,
+            "group_order": 185,
+            "prime": 163,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 96,
+            "group_order": 192,
+            "prime": 167,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 98,
+            "group_order": 196,
+            "prime": 173,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 49,
+            "group_order": 196,
+            "prime": 179,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 97,
+            "group_order": 194,
+            "prime": 181,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 109,
+            "group_order": 218,
+            "prime": 191,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 106,
+            "group_order": 212,
+            "prime": 193,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 197,
+            "group_order": 197,
+            "prime": 197,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 110,
+            "group_order": 220,
+            "prime": 199,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 119,
+            "group_order": 238,
+            "prime": 211,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 223,
+            "group_order": 223,
+            "prime": 223,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 64,
+            "group_order": 256,
+            "prime": 227,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 123,
+            "group_order": 246,
+            "prime": 229,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 261,
+            "group_order": 261,
+            "prime": 233,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 123,
+            "group_order": 246,
+            "prime": 239,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 127,
+            "group_order": 254,
+            "prime": 241,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 267,
+            "group_order": 267,
+            "prime": 251,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 137,
+            "group_order": 274,
+            "prime": 257,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 275,
+            "group_order": 275,
+            "prime": 263,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 147,
+            "group_order": 294,
+            "prime": 269,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 151,
+            "group_order": 302,
+            "prime": 271,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 143,
+            "group_order": 286,
+            "prime": 277,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 152,
+            "group_order": 304,
+            "prime": 281,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 75,
+            "group_order": 300,
+            "prime": 283,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 159,
+            "group_order": 318,
+            "prime": 293,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 165,
+            "group_order": 330,
+            "prime": 311,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 171,
+            "group_order": 342,
+            "prime": 313,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 168,
+            "group_order": 336,
+            "prime": 317,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 359,
+            "group_order": 359,
+            "prime": 331,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 361,
+            "group_order": 361,
+            "prime": 337,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 186,
+            "group_order": 372,
+            "prime": 347,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 85,
+            "group_order": 340,
+            "prime": 349,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 375,
+            "group_order": 375,
+            "prime": 353,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 192,
+            "group_order": 384,
+            "prime": 359,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 401,
+            "group_order": 401,
+            "prime": 367,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 405,
+            "group_order": 405,
+            "prime": 373,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 417,
+            "group_order": 417,
+            "prime": 379,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 194,
+            "group_order": 388,
+            "prime": 383,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 207,
+            "group_order": 414,
+            "prime": 389,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 423,
+            "group_order": 423,
+            "prime": 397,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 431,
+            "group_order": 431,
+            "prime": 401,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 105,
+            "group_order": 420,
+            "prime": 409,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 220,
+            "group_order": 440,
+            "prime": 419,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 225,
+            "group_order": 450,
+            "prime": 421,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 467,
+            "group_order": 467,
+            "prime": 431,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 237,
+            "group_order": 474,
+            "prime": 433,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 445,
+            "group_order": 445,
+            "prime": 439,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 413,
+            "group_order": 413,
+            "prime": 443,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 455,
+            "group_order": 455,
+            "prime": 449,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 248,
+            "group_order": 496,
+            "prime": 457,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 240,
+            "group_order": 480,
+            "prime": 461,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 250,
+            "group_order": 500,
+            "prime": 463,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 117,
+            "group_order": 468,
+            "prime": 467,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 485,
+            "group_order": 485,
+            "prime": 479,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 527,
+            "group_order": 527,
+            "prime": 487,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 265,
+            "group_order": 530,
+            "prime": 491,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 130,
+            "group_order": 520,
+            "prime": 499,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 271,
+            "group_order": 542,
+            "prime": 503,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 258,
+            "group_order": 516,
+            "prime": 509,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 551,
+            "group_order": 551,
+            "prime": 521,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 141,
+            "group_order": 564,
+            "prime": 523,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 292,
+            "group_order": 584,
+            "prime": 541,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 276,
+            "group_order": 552,
+            "prime": 547,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 141,
+            "group_order": 564,
+            "prime": 557,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 140,
+            "group_order": 560,
+            "prime": 563,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 280,
+            "group_order": 560,
+            "prime": 569,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 617,
+            "group_order": 617,
+            "prime": 571,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 305,
+            "group_order": 610,
+            "prime": 577,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 629,
+            "group_order": 629,
+            "prime": 587,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 315,
+            "group_order": 630,
+            "prime": 593,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 621,
+            "group_order": 621,
+            "prime": 599,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 306,
+            "group_order": 612,
+            "prime": 601,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 152,
+            "group_order": 608,
+            "prime": 607,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 310,
+            "group_order": 620,
+            "prime": 613,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 326,
+            "group_order": 652,
+            "prime": 617,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 329,
+            "group_order": 658,
+            "prime": 619,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 317,
+            "group_order": 634,
+            "prime": 631,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 687,
+            "group_order": 687,
+            "prime": 641,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 324,
+            "group_order": 648,
+            "prime": 643,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 343,
+            "group_order": 686,
+            "prime": 647,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 335,
+            "group_order": 670,
+            "prime": 653,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 351,
+            "group_order": 702,
+            "prime": 659,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 645,
+            "group_order": 645,
+            "prime": 661,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 325,
+            "group_order": 650,
+            "prime": 673,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 351,
+            "group_order": 702,
+            "prime": 677,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 685,
+            "group_order": 685,
+            "prime": 683,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 713,
+            "group_order": 713,
+            "prime": 691,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 363,
+            "group_order": 726,
+            "prime": 701,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 365,
+            "group_order": 730,
+            "prime": 709,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 747,
+            "group_order": 747,
+            "prime": 719,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 743,
+            "group_order": 743,
+            "prime": 727,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 370,
+            "group_order": 740,
+            "prime": 733,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 715,
+            "group_order": 715,
+            "prime": 739,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 350,
+            "group_order": 700,
+            "prime": 743,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 387,
+            "group_order": 774,
+            "prime": 751,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 395,
+            "group_order": 790,
+            "prime": 757,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 392,
+            "group_order": 784,
+            "prime": 761,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 196,
+            "group_order": 784,
+            "prime": 769,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 207,
+            "group_order": 828,
+            "prime": 773,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 202,
+            "group_order": 808,
+            "prime": 787,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 384,
+            "group_order": 768,
+            "prime": 797,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 204,
+            "group_order": 816,
+            "prime": 809,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 817,
+            "group_order": 817,
+            "prime": 811,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 437,
+            "group_order": 874,
+            "prime": 821,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 214,
+            "group_order": 856,
+            "prime": 823,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 393,
+            "group_order": 786,
+            "prime": 827,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 432,
+            "group_order": 864,
+            "prime": 829,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 887,
+            "group_order": 887,
+            "prime": 839,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 437,
+            "group_order": 874,
+            "prime": 853,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 434,
+            "group_order": 868,
+            "prime": 857,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 917,
+            "group_order": 917,
+            "prime": 859,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 909,
+            "group_order": 909,
+            "prime": 863,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 923,
+            "group_order": 923,
+            "prime": 877,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 903,
+            "group_order": 903,
+            "prime": 881,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 459,
+            "group_order": 918,
+            "prime": 883,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 925,
+            "group_order": 925,
+            "prime": 887,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 229,
+            "group_order": 916,
+            "prime": 907,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 915,
+            "group_order": 915,
+            "prime": 911,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 480,
+            "group_order": 960,
+            "prime": 919,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 241,
+            "group_order": 964,
+            "prime": 929,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 495,
+            "group_order": 990,
+            "prime": 937,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 448,
+            "group_order": 896,
+            "prime": 941,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 234,
+            "group_order": 936,
+            "prime": 947,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 498,
+            "group_order": 996,
+            "prime": 953,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 509,
+            "group_order": 1018,
+            "prime": 967,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 987,
+            "group_order": 987,
+            "prime": 971,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 469,
+            "group_order": 938,
+            "prime": 977,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 973,
+            "group_order": 973,
+            "prime": 983,
+            "quotient_dimension": 0,
+            "rows": []
+          },
+          {
+            "doubled_subgroup_order": 238,
+            "group_order": 952,
+            "prime": 991,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 505,
+            "group_order": 1010,
+            "prime": 997,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "protocol_sha256": "d8943b7b1de04459dfb112a733cbea60801a435fb9bea628a0ecf0af09374a34",
+      "rank_lower_bound": 17,
+      "status": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN"
+    },
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1/verified.json": {
+      "charts": 32,
+      "rank_lower_bound": 17,
+      "replay_source_sha256": "7ce534da3f79905541acb05e5658279e2b44e24460c44f7c49665f4c3b566ac8",
+      "status": "PASS_INDEPENDENT_FIRST_SEED_REPLAY",
+      "terminal_sha256": "237ebdab6c098ccb34b1824f7cd95a16bd993df75c2765bdd2e25fbb92c41f25"
+    },
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-prepare-supervision/supervisor.json": {
+      "command": [
+        "sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_outside_maximum_seed_confirmation.py",
+        "prepare",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1",
+        "--seed",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-generic-seeds-v1/08234-fresh-001/seed-M17.json"
+      ],
+      "limits": {
+        "wall_seconds": 120,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 2120528,
+      "start_token": "76013921",
+      "returncode": 0,
+      "wall_seconds": 1.8417088669957593,
+      "peak_observed_rss_bytes": 289333248,
+      "timeout_seconds": 120,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-prepare-supervision/worker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-search-supervision/supervisor.json": {
+      "command": [
+        "sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_outside_maximum_seed_confirmation.py",
+        "search",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1"
+      ],
+      "limits": {
+        "wall_seconds": 600,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 2120642,
+      "start_token": "76014106",
+      "returncode": 0,
+      "wall_seconds": 26.693921681959182,
+      "peak_observed_rss_bytes": 354062336,
+      "timeout_seconds": 600,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-search-supervision/worker.log",
+      "log_sha256": "0be607b46bd6cb8fd11717d3106e780797bcbbcd1922cdb335e9059e30485307",
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-replay-supervision/supervisor.json": {
+      "command": [
+        "sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_outside_maximum_seed_confirmation.py",
+        "replay",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1"
+      ],
+      "limits": {
+        "wall_seconds": 120,
+        "rss_bytes": 2147483648,
+        "address_space_bytes": null,
+        "pari_stack_bytes": 256000000,
+        "terminate_grace_seconds": 1.0,
+        "poll_seconds": 0.05,
+        "cgroup": null
+      },
+      "outcome": "completed",
+      "pid": 2159423,
+      "start_token": "76016775",
+      "returncode": 0,
+      "wall_seconds": 3.9844570049317554,
+      "peak_observed_rss_bytes": 310861824,
+      "timeout_seconds": 120,
+      "failure_reason": null,
+      "termination_signal": null,
+      "rss_limit_bytes": 2147483648,
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/08234-outside-maximum-seed-v1-replay-supervision/worker.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "worker_result": null,
+      "worker_result_sha256": null
+    }
+  },
+  "claim_boundary": "Bounded seed miss in sampled classes outside the maximum-class span; no point absence or rank upper bound."
+}

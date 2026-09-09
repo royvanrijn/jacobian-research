@@ -1,0 +1,49 @@
+{
+  "blind_arms": [
+    "arm-03",
+    "arm-04",
+    "arm-06",
+    "arm-07",
+    "arm-10",
+    "arm-11",
+    "arm-12",
+    "arm-14",
+    "arm-16"
+  ],
+  "boundary": "No new address, exceptional point coordinate input, later discovery, V3 landscape, rank catalogue, point search or production change. Carrier01 selection is retrospective and stays labelled. Generic-only proof footprint is frozen before candidate construction. Caps retain UNKNOWN.",
+  "candidate_rule": "Both roots and their anti-traces for each old conic; both roots and anti-traces of the previously calibrated genus-one302 carrier; first already verified generic recovery from each of nine old arms, tested over its M16 core and full M17.",
+  "classification": "bounded verified application of the halving-or-cycle theorem",
+  "curve302_parameter": "0",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-03/certificate.json": "5e3ffd1bc7878ef13666aeda7e2dbc8549edb3ab95a638a30c22e4a1f7826642",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-04/certificate.json": "649c3d276223fcd95b1b8faf64410110c958c93e9cc0960ddc7d29731c5f10a7",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-06/certificate.json": "d4ce9e84b51f2a4e8c7a1af2e15fe12390a59cbe7d2be790951d2d729ca815ed",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-07/certificate.json": "a9d2e493bc755b0dffb6b502a960b47c5f3113989037c045778dd8426d4b6e2e",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-10/certificate.json": "3667aa47cff3e6e01352e416efacbfd42db3b6617405cf7752f5ec34ba57815f",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-11/certificate.json": "4ef29d0ba7bd58b9905c42c704f2f864aa2ce1fc38221deae06d8a880b337ea8",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-12/certificate.json": "5f71b5ad0db5185878256f376755cfa3c93221dc8b449b8f8b9d9fcbfbb38bce",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-14/certificate.json": "b7359b6f5d335f7641906f038541d3e117caec8209094072631de6be1c9b3f6f",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/arms/arm-16/certificate.json": "5a36c2ac25faf3acde3ffb7549566c86a52049715a84daddcdd60dd4abdbbf36",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/evaluation.json": "ed4e7fe36c01108d1252c71c03741aeb16d7a60d9cc87d12c8807cb149dd4fd9",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/equation-only-cover-01.json": "9e12adfb507e0920dc421e5e10026919a8362a612700466e59aabd8c3a1bc89b",
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/reduced-parent.json": "3f9c9d3bed66a29327bdc2abfb7cf2ddae04068f74100924feeaed5527d1b023"
+  },
+  "maximum_halving_steps": 8,
+  "parameters": {
+    "dependent-conic": "-528/3635",
+    "other-conic": "2953/1671",
+    "rank21-seed": "1926/2699",
+    "small-conic": "5193/35630"
+  },
+  "per_invocation_wall_seconds": 25,
+  "prime_cap": 1009,
+  "schema": "det1092-halving-cycle-v1",
+  "sources": {
+    "elliptic-curves/cas/run_det1092_split_descent.sage": "9e028d988e12228e42b20393f15e15eb3a45b0245c93676c6f51c21c625d35c3",
+    "elliptic-curves/cas/split_seed_descent.py": "34aa9c36dd549369e6b076b0d736c67c7351c2be59e1196941ffc9c80fc84bd1",
+    "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "alternate_degree": 2,
+  "generic_original_rank_lower_bound": 18,
+  "index": 1,
+  "map_sha256": "6530dba1ed12f6501c4a9d640ca149f9429c63b440b23956012614c02dd88a15",
+  "original_degree": 6,
+  "proof": "Verified rational source and inverse elliptic translation give a genuine genus0 original multisection; the existing all-prime theorem proves independence.",
+  "replay_protocol_sha256": "a613bd2e78d360922f4a176849cc1dd779f0155467c7ae2c89ba80cf5e46ed89",
+  "sign": 1,
+  "status": "PASS_INDEPENDENT_DEGREE6_RATIONAL_TRANSLATION_MAP"
+}

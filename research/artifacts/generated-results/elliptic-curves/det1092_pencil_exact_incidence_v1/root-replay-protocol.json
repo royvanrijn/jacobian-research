@@ -1,0 +1,30 @@
+{
+  "classification": "independent elementary rational-root proof",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_exact_incidence_v1/protocol.json": "5efc0d1837e9628ea85ecd931a0a64fe3f87c82389975004384c8af46d661683",
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/protocol.json": "4d19c06ed957559d1285fdfc7c860a2d0193af2e0dd44b8ec8fcf074fe497c9e",
+    "elliptic-curves/cas/verify_det1092_pencil_rational_preimages.sage": "77b4350006ba40f429b2248c15f11fca60c72585c810765a7e2abb94bdaafe28"
+  },
+  "limits": {
+    "cases": 5,
+    "factorizations": 0,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "prime_pool": [
+      47,
+      53,
+      101,
+      107,
+      109,
+      127,
+      131,
+      137,
+      139,
+      149,
+      157,
+      163
+    ],
+    "seconds_per_case": 25
+  },
+  "method": "Rational-root theorem bounds; simple Hensel lifts; exact2D Gauss certificate at M>8H^2. First eligible prime from the old pool."
+}

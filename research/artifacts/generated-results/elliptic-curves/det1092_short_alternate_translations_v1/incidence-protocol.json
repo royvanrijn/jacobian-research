@@ -1,0 +1,63 @@
+{
+  "cases": [
+    {
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "label": "302-generic-section-control",
+      "parameter": "0"
+    }
+  ],
+  "classification": "old nine-address retrospective incidence, after generic maps",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/protocol.json": "4d19c06ed957559d1285fdfc7c860a2d0193af2e0dd44b8ec8fcf074fe497c9e",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/controls.json": "d04371085fbbc783ae0138156d172dccb6354fd91a67398b3f07f8174aa002fd",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-0.json": "bbdd5a1cf219ae21f7426274143c40ce16c5aa50d82da254230317b4586c9b3d",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-1.json": "6530dba1ed12f6501c4a9d640ca149f9429c63b440b23956012614c02dd88a15",
+    "elliptic-curves/cas/rational_root_lattice_certificate.py": "30869c86ed79a3fcadd3d73e1f37e176d16c7b6dac3dad539470b712c3d6801c"
+  },
+  "prime_pool": [
+    47,
+    53,
+    101,
+    107,
+    109,
+    127,
+    131,
+    137,
+    139,
+    149,
+    157,
+    163
+  ],
+  "seconds_per_case": 25
+}

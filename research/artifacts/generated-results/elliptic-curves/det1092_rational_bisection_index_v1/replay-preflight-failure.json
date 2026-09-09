@@ -1,0 +1,5 @@
+{
+  "classification": "report-construction name error after all mathematical assertions passed",
+  "failure": "Missing SELECT path constant in the final provenance record",
+  "correction": "Define the existing index-and-selection.json path. No mathematical computation or selection changed."
+}

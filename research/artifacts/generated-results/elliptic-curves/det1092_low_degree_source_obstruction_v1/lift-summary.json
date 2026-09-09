@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "EXACT_NO_RATIONAL_SOURCE_POINT": 2
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-1268.json": "ee2e3f81c787995da075e88c6506ce4dc045cb40e740c9a17abce25ca9d04a76",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-179.json": "56969ef3c818c278e4c40a4ea98b3de839e2faa3eefae08ad4b0f38e4b32d198",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-protocol.json": "78943b41e11773690448413d707e1ecc0a031e7baec5651ba0f56aa829c222a9"
+  },
+  "sources": [
+    179,
+    1268
+  ],
+  "status": "PASS_ALL_SURVIVORS_EXACTLY_DECIDED"
+}

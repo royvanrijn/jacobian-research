@@ -1,0 +1,8 @@
+{
+  "sage": "10.9",
+  "pari": "2.17.3",
+  "process_timeout_seconds": 25,
+  "all_completed_processes_under_one_second": true,
+  "detached_jobs": 0,
+  "production_changes": 0
+}

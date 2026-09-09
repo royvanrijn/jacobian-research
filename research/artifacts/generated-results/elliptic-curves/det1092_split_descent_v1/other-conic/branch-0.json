@@ -1,0 +1,59 @@
+{
+  "chain_word": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "family": "other-conic",
+  "frame_sha256": "da24adfd9738021dda7b24abd895c7062d96ad4103b8a04daf29d96667edbdb2",
+  "history": [],
+  "label": "branch-0",
+  "omitted_basis_index": null,
+  "origin": "Generic orbit8044 residual quadratic and line; no seed packet read",
+  "original": [
+    "7457088141978891720691702582227/2209",
+    "20212516134890392917704366501571735746183034000/103823"
+  ],
+  "protocol_sha256": "09c8d2b3100116ddefa40fee9657ca147aecff88e3aea73f887a089399f60a01",
+  "reason": "FINITE_FOOTPRINT_ESCAPE",
+  "status": "NEW_INDEPENDENT_DIRECTION",
+  "steps": 0,
+  "terminal": [
+    "7457088141978891720691702582227/2209",
+    "20212516134890392917704366501571735746183034000/103823"
+  ],
+  "terminal_code": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ]
+}

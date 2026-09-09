@@ -1,0 +1,18 @@
+{
+  "classification": "new deductions/applications of standard Kummer and semistable geometry; no general-identity novelty claim",
+  "limits": {"seconds":25,"new_parameters":0,"point_searches":0,"orbit_censuses":0,"class_group_calculations":0},
+  "scope": "Descent of the actual generic quadratic branch class, its trace-parity obstruction, and low-genus trace-halving obstruction. No candidate-member selection or seed reconstruction.",
+  "theorem_input_boundary": "Only generic parent equations, sections, lattice, old generic centres and their completed certificates. No first-seed coordinate, fitted carrier parameter or later V3 artifact.",
+  "diagnostic_input_boundary": "The split-descent replay is used only for its38 already verified classification and depth fields, not to construct a point or choose a member.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/construction.json": "ae40f90e2417f00b079d6727f64caae83d01985e086565a20e72b5cd7ad306f7",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/replay.json": "c0ee81fea1f008a3d0c9764f42b80c4569235ce1f5e4b847ca86b0d1bf2d6d58",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_v1.json": "750745e5c5fbea22a525fa3d5e50a10751aa6d5064988bbd458f5cd73d35abc4",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_replay_v1.json": "b077483b22a8236eac0c4f8ec780fac93a9a3aea521057ea981badd083452008",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/independent-replay.json": "17a9154a2b3e06573546100a08e5f9087e2e96882b2df9a0591e81b74764fb25"
+  }
+}

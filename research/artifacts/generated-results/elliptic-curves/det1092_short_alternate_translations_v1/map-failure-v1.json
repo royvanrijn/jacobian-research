@@ -1,0 +1,6 @@
+{
+  "status": "ARITHMETIC_WORD_CHECK_FAILED_NO_MAP_CERTIFICATE",
+  "stage": "generic translating section addition order",
+  "cause": "Sage vector(ZZ, existing_vector) aliases its input; the arithmetic ordering score mutated the partial-word ledger.",
+  "correction": "Explicitly copy the coefficient list before testing an arithmetic order. Preserve the first producer and protocol; map-protocol-v2.json pins the corrected implementation. The translating section, signs, source conic, and target-free geometric selection are unchanged."
+}

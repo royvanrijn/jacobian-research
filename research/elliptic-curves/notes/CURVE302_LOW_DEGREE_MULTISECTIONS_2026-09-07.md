@@ -1,5 +1,15 @@
 # Curve 302: canonical low-degree multisection quotient
 
+The subsequent [index-one theorem and constructions](DET1092_RATIONAL_BISECTION_INDEX_AND_ODD_DIVISOR_CONSTRUCTION_2026-09-09.md)
+prove that all40,917 geometrically rational bisection orbits below are
+parametrizable over `Q`. Three fixed examples now have exact maps and all
+miss302/eight controls; rationality is not rational splitting at a chosen fibre.
+Here rational classes have arithmetic genus zero and are smooth. Singular
+curves with rational normalization are outside this census; the subsequent
+[degeneration and atlas obstruction](DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md)
+checks that additional route in the fixed norm8 pencil and proves the smooth
+degree-two atlas cannot exhaust the parent's rank jumps.
+
 <!-- status-consumer: EC-CURVE302-PARENT-DEGREE2-MULTISECTION-QUOTIENT 2f3f052d8ad9cebe -->
 <!-- status-consumer: EC-CURVE302-PARENT-CHEAPEST-LATTICE-BISECTION 77f2987cfea994a1 -->
 

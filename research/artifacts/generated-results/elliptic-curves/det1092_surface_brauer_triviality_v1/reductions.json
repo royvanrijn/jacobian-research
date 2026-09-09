@@ -1,0 +1,45 @@
+{
+  "boundary": "Uses the completed Fp-squared counts, not new independent extension-field counts. Arithmetic NS has rank19; the larger geometric rank20 lattice is not substituted in the formula.",
+  "classification": "verified application of Tate and Artin--Tate for K3 surfaces",
+  "reductions": [
+    {
+      "Artin_Tate_denominator": "24243492",
+      "Artin_Tate_numerator": "24243492",
+      "Brauer_group_order": 1,
+      "arithmetic_NS_determinant": 1092,
+      "arithmetic_Picard_rank": 19,
+      "base_field_surface_count_independent": 24636,
+      "geometric_Picard_rank": 20,
+      "good_reduction_24I1": true,
+      "prime": 149,
+      "residual_cubic": [
+        "3307949",
+        "59153",
+        "397",
+        "1"
+      ],
+      "residual_pair_trace": -248,
+      "squared_field_count_reused": 493345524
+    },
+    {
+      "Artin_Tate_denominator": "24898692",
+      "Artin_Tate_numerator": "24898692",
+      "Brauer_group_order": 1,
+      "arithmetic_NS_determinant": 1092,
+      "arithmetic_Picard_rank": 19,
+      "base_field_surface_count_independent": 25276,
+      "geometric_Picard_rank": 20,
+      "good_reduction_24I1": true,
+      "prime": 151,
+      "residual_cubic": [
+        "3442951",
+        "59645",
+        "395",
+        "1"
+      ],
+      "residual_pair_trace": -244,
+      "squared_field_count_reused": 520355556
+    }
+  ],
+  "status": "TRIVIAL_BRAUER_GROUPS_AT_BOTH_FIXED_REDUCTIONS"
+}

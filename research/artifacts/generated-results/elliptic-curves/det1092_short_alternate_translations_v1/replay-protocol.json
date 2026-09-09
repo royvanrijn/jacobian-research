@@ -1,0 +1,17 @@
+{
+  "checker_sha256": "425ecd1884d5cd8871dd76c0b46ac580d3a6e42a9da30362b226198da7e5331d",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-47755.json": "fb676c3251da17a395b751d7bd503bcfd78a252b31603660988287a067c3c7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/geometry-v2.json": "fca4c7fbbc209f3f8d8b0d9b5ee583819bec179812d1aa9b3c4eb50431f5c06e",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/incidence-protocol.json": "255bbb151b29481dd7d8e14df0e9368251d69c960377a45ac589494ce8cc8497",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-0.json": "bbdd5a1cf219ae21f7426274143c40ce16c5aa50d82da254230317b4586c9b3d",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-1.json": "6530dba1ed12f6501c4a9d640ca149f9429c63b440b23956012614c02dd88a15",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/map-protocol-v2.json": "c21826ca0adab058363809986a05ae4ae4d9bb418d3e7d0315ad28027fc643c2",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/protocol-v2.json": "b1a610acc91c521fd26168f43de5559d2e415c84cd25d880906ed5d51a7d7b64",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/short-section.json": "5e2f7d3992ed243f3d0aaab34993e8a5f4c18cd2fe19a8a276cff3f92b976789",
+    "elliptic-curves/cas/verify_det1092_bifibration_conic_sources.sage": "66bac56be5770fd426b3474d316b821b4537489102c56952d745864fb42c31e5"
+  },
+  "seconds_per_action": 25
+}

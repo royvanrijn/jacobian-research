@@ -1,0 +1,68 @@
+{
+  "boundary": "No global minimum assertion for the full alternate MW12 lattice, and no new search policy.",
+  "common_sections": 130,
+  "component_bits": [
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "degree_laws": [
+    {
+      "all_integer_n": true,
+      "constant": 2,
+      "height": "2",
+      "linear": 0,
+      "quadratic": 4,
+      "translator": "short"
+    },
+    {
+      "all_integer_n": true,
+      "constant": 2,
+      "height": "19/2",
+      "linear": 0,
+      "quadratic": 19,
+      "translator": "old_B"
+    }
+  ],
+  "height_histogram": {
+    "0": 1,
+    "11/2": 9,
+    "13/2": 16,
+    "15/2": 1,
+    "19/2": 1,
+    "2": 1,
+    "3": 16,
+    "4": 9,
+    "5": 16,
+    "5/2": 7,
+    "6": 15,
+    "7": 7,
+    "7/2": 15,
+    "9/2": 16
+  },
+  "minimum_in_common_section_set": "2",
+  "no_height_three_halves_in_common_set": true,
+  "replay_protocol_sha256": "a613bd2e78d360922f4a176849cc1dd779f0155467c7ae2c89ba80cf5e46ed89",
+  "status": "PASS_SHORT_SECTION_ACTION_AND_ALL_INTEGER_DEGREE_LAW",
+  "unique_section_word": [
+    1,
+    0,
+    -2,
+    0,
+    1,
+    -1,
+    1,
+    -1,
+    -1,
+    -1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+  ]
+}

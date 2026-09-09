@@ -1,0 +1,56 @@
+{
+  "boundary": "Global over all original generic translations, for this single starting curve and final +/-B. No general automorphism-group exclusion, first-seed incidence, or new specialized rank claimed.",
+  "branches": [
+    {
+      "maximum_short_shell_pairing": 53,
+      "minimum_nonzero_translation_degree": 442,
+      "multiplicity": 4,
+      "norm_ge_six_exclusion_squared_margin": 82704,
+      "r_norm": 1216,
+      "sign": -1
+    },
+    {
+      "maximum_short_shell_pairing": 285,
+      "minimum_nonzero_translation_degree": 272,
+      "multiplicity": 1,
+      "norm_ge_six_exclusion_squared_margin": 91960,
+      "r_norm": 31844,
+      "sign": 1
+    }
+  ],
+  "classification": "new verified generic-only geometric obstruction",
+  "component_pairs": [
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "ellipsoid_radius_only_63_replay_unnecessary": true,
+  "independent_shell_nodes": 21876,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/action.json": "a9379bb4a92e7582a34f28ed735bd489fed20bfc5e8eef8ce1387161fa35dfa5",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/nontrivial-gap.json": "854bbfb8faf9737558e4143ef84876071d1522d31dfe58c2b118053232649c08",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/norm-four-shell.json": "ca96a80325ea27844ebc954f9ab6a3294a4853c74eb61aa90cdd137cc322d0c3",
+    "elliptic-curves/cas/verify_det1092_two_fibration_gap.sage": "803efedecc4fca8c8358dca23be5dc955ed05756e967e1f4d10981cc1b2de08d"
+  },
+  "short_vectors": 2436,
+  "status": "PASS_EXACT_GLOBAL_TWO_FIBRATION_DEGREE_GAP"
+}

@@ -1,0 +1,158 @@
+{
+  "status": "ALL_FOUR_FIRST_PRODUCTIVE_PASSES_REPLAYED",
+  "bundle_sha256": "946db9842740f63da8ffd7071424148b15e10a89f11cd5904935f29f4dbf20bf",
+  "records": [
+    {
+      "id": "074d9-fresh-001",
+      "status": "FIRST_PRODUCTIVE_PASS_COMPLETE",
+      "seed": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/seed-M18.json",
+      "seed_sha256": "3cd4991438078e2f79c9728355578b12c5a85239f89e027e221e31510d229546",
+      "evidence": {
+        "terminal.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/terminal.json",
+          "sha256": "fd8d4f1e2465a25deeb61b422af93575ee1ecf9f5431312a2d0b23c146c4efc8"
+        },
+        "verified.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/verified.json",
+          "sha256": "cea962969b41ead0e771e79e30a6a14a5daa342013c8276311c732147bcd9740"
+        },
+        "protocol.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/protocol.json",
+          "sha256": "7ce637e2f0e162c1ad4e0f59fd89001f46d5fe6c51547ff75d135da4e1bb496d"
+        },
+        "seed.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/seed.json",
+          "sha256": "a28085953e567896a14073a9cd01a4eb4d98997d52fae74cdfb4df200ffd2cea"
+        },
+        "frozen-sources.zip": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/frozen-sources.zip",
+          "sha256": "7f84e58f9358d5c52c9062e8e68a98a428958204f0a3ee959504b8622fc1b683"
+        }
+      },
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/074d9-fresh-001/chart-0046.json",
+      "amplification_result": {
+        "id": "074d9-fresh-001",
+        "rank_lower_bound": 18,
+        "charts": 6,
+        "search_seconds": 12.624362570000812,
+        "replay_seconds": 3.658473509014584,
+        "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+        "export": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-fresh-001/result.json"
+      }
+    },
+    {
+      "id": "07ca9-fresh-001",
+      "status": "FIRST_PRODUCTIVE_PASS_COMPLETE",
+      "seed": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/seed-M18.json",
+      "seed_sha256": "15ff706e1846b9fb4f7ac8cc32034edb1b545df065be129aa00624f42ea5c1ba",
+      "evidence": {
+        "terminal.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/terminal.json",
+          "sha256": "e9f5ea58ba09a0396e3792c82ba7eb437f43a235741bdfd6dbac5247ada581cd"
+        },
+        "verified.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/verified.json",
+          "sha256": "a5c79a0c8827ef108e9d8805e1580a0b0f8aa87a1e09eda2eeac46a8033f5983"
+        },
+        "protocol.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/protocol.json",
+          "sha256": "381817423ecbd2535bc4a1e6e8015d05fe2b18f52ceaef6fa687969a01418cf7"
+        },
+        "seed.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/seed.json",
+          "sha256": "535d4440ce17e0735e94e029ba0dfc8e8e931546cb64387b085b62fa9b3159ca"
+        },
+        "frozen-sources.zip": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/frozen-sources.zip",
+          "sha256": "7e296eeaf736cec6440c93df63e80b264b570a94e14992b59b1c4972e99465ba"
+        }
+      },
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/07ca9-fresh-001/chart-0000.json",
+      "amplification_result": {
+        "id": "07ca9-fresh-001",
+        "rank_lower_bound": 19,
+        "charts": 9,
+        "search_seconds": 23.622047715936787,
+        "replay_seconds": 6.786112876958214,
+        "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+        "export": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-fresh-001/result.json"
+      }
+    },
+    {
+      "id": "08f72-fresh-001",
+      "status": "FIRST_PRODUCTIVE_PASS_COMPLETE",
+      "seed": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/seed-M18.json",
+      "seed_sha256": "c936dbf5e32c524636ae9cd69cfc775a213b073c2d5453a2e5ce75e6c5f48013",
+      "evidence": {
+        "terminal.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/terminal.json",
+          "sha256": "7ef005f83e996d191c26cff14a92aa30b592a8bc2279fb07c86847a70bd4f5a7"
+        },
+        "verified.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/verified.json",
+          "sha256": "4de901386d88480861b006dbcd281f4845d65483c92b9a02a44ecfa3f5ccef38"
+        },
+        "protocol.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/protocol.json",
+          "sha256": "515d5ddfdf7895dabdb807e862da621a4ba62bf17a205ce2d6da01a6cf19b211"
+        },
+        "seed.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/seed.json",
+          "sha256": "2d9445a78d3885787005687b01367c4f319efbd86f7de7d79035083bb33cb74d"
+        },
+        "frozen-sources.zip": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/frozen-sources.zip",
+          "sha256": "df422921a11ecffff6f657d405214e1144d070312dd473dc79fd4a66218eead3"
+        }
+      },
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/08f72-fresh-001/chart-0034.json",
+      "amplification_result": {
+        "id": "08f72-fresh-001",
+        "rank_lower_bound": 18,
+        "charts": 6,
+        "search_seconds": 12.141528512933291,
+        "replay_seconds": 3.7181519859004766,
+        "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+        "export": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/08f72-fresh-001/result.json"
+      }
+    },
+    {
+      "id": "103b2-fresh-001",
+      "status": "FIRST_PRODUCTIVE_PASS_COMPLETE",
+      "seed": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/seed-M18.json",
+      "seed_sha256": "acf916a7e6940b37ee7b4b4bad06d15acee12a1b6d42629bd93d11790bda4317",
+      "evidence": {
+        "terminal.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/terminal.json",
+          "sha256": "e983f587bc266a76bee22f3b8d67aeccdc96ae58fa2697840c8579ea0bcd369b"
+        },
+        "verified.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/verified.json",
+          "sha256": "e068efbec5d6db44bf6524905d2532612bef9bae659a20eee1444c09adf26ac2"
+        },
+        "protocol.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/protocol.json",
+          "sha256": "37f10bc4786f63e419f4cb4e7970047bbcaca48601df636e957353f18d8cb5f7"
+        },
+        "seed.json": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/seed.json",
+          "sha256": "4083a7a30ba35f722738f8560421e6748f6aae0063ce51592f6535e8202ddf06"
+        },
+        "frozen-sources.zip": {
+          "path": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/frozen-sources.zip",
+          "sha256": "e591cd0c15f311a149bd88552b7c11931952d76f72072131c1e0bde93f204367"
+        }
+      },
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-seed-confirmation-v1/103b2-fresh-001/chart-0001.json",
+      "amplification_result": {
+        "id": "103b2-fresh-001",
+        "rank_lower_bound": 18,
+        "charts": 6,
+        "search_seconds": 12.042625184985809,
+        "replay_seconds": 3.7653886759653687,
+        "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+        "export": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2-fresh-001/result.json"
+      }
+    }
+  ]
+}

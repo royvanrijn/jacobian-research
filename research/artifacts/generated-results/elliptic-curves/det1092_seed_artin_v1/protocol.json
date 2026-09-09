@@ -1,0 +1,30 @@
+{
+  "classification": "retrospective class-image test; not prospective construction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-00.json": "554d9041642bfacf387ba93c69c6ee56cbdb4068a06a9ed5563c73d569fa2278",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-01.json": "4ecb1ce47b82c64021be9fc2bf1175e6c4c51cd8a1082315443bf2bee80324d1",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-02.json": "f69033f89a59740a5b1b99a5e311d3b0013ea98487b2921675a94c3674885f2d",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-03.json": "91a353b8948133be011f5a0341a6eb40de7a889e88da619a9466622f786716a1",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-04.json": "52f6056102b2f43f3137a50d928f094ff80caf7acf69bde9ad56fcd05b247ddd",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-05.json": "760386331df6def68e373a09c3708ae10d251ea1be61b84c7a04e5119e2b71ad",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-06.json": "1b04718da2298f3069123a767fad72ee8aa7201c3310b1494eca25b8160b8f04",
+    "artifacts/generated-results/elliptic-curves/det1092_generic_virtual_units_v1/basis-07.json": "eb41caaaa97a0ddfb863d110b115e33c2132ce20e104158c405a7d02b1cb0e2b",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/302-first-unlock.json": "5cf378ce9f72653c49c30590e75148a8355ecb41ea46b3244b8a6e11d4d2c796",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/virtual-unit.json": "9f4218fb941591b4935f13b74c4bf0331be519b7e58dba841797d7dc99709ed3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_v1.json": "db90a1d3e95599dbac001c51693fab379062e913b279db7a88cfacc6e630b096",
+    "elliptic-curves/cas/test_det1092_seed_artin.sage": "2f5a2742bbceeac64132fc89934480b648bf26985f8b2e490ac08775f365be2a"
+  },
+  "limits": {
+    "class_groups": 0,
+    "factorizations": 0,
+    "generic_characters": 6,
+    "ideal_columns": 9,
+    "ideal_retries": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "seed_derived_characters_max": 1,
+    "unit_groups": 0
+  },
+  "method": "Reuse six frozen generic unramified characters; append a canonical generic correction of the seed only if it is unramified. Use local Hilbert symbols at fixed bad primes and a factor-free Jacobi symbol on an odd cyclic good quotient. A failed quotient/unit gate stays UNKNOWN."
+}

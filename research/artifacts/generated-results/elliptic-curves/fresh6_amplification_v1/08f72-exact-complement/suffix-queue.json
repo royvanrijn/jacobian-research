@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery-replay-supervision/supervisor.json": "e84cdfbc4bd70c27128a80ccda8db9474a73a5f2ea04f28a55cfe13ded661ef0",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery-supervision/supervisor.json": "125d14de45874d4bb321ca97973c5f2922b9d4400b0024630ef8301abf6db301",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/epoch-06/chart-0045.json": "c108aa6c528a8d5511fe4d9adba60db73fd284aecf1357c2cad3e6c0222e677a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/epoch-06/landscape/selection.json": "075acc67f2733159b78a14fdee12074ea44e3a05e6482eeadb96d8afd9ca64ed",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/protocol.json": "da07cb12a0dda3d085d3962f311cd2df310fe1c0cf18a134f771641bccff3085",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/terminal.json": "c1762740252193ea6d3c13ee74c69ce6a32287fd2cd78e6c68629a00a6aa73cc",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/verified.json": "25e699620bd7204adf2bedce4cc37976579bf95cb48387d6e9d932be508422f7"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 6,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 23,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 24,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

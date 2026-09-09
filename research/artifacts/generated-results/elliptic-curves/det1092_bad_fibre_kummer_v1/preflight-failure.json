@@ -1,0 +1,9 @@
+{
+  "classification": "implementation preflight, not mathematical evidence",
+  "source_sha256": "4d4c7501013ef15d04a346d1bfe9b218a8b2c8c37036dabb07cf2dcf3806956a",
+  "completed_before_failure": "norm identity and finite/infinity polynomial ramification identities",
+  "failing_line": "chain=list(D.sturm_sequence())",
+  "error": "AttributeError: Polynomial_rational_flint has no attribute sturm_sequence",
+  "correction": "Use explicit negative-remainder Sturm recurrence, normalizing each polynomial by positive rational content. No parameter, class, or25-second bound changed.",
+  "claim": "No real-root conclusion was obtained in this preflight. The corrected run must supply it."
+}

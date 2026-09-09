@@ -1,0 +1,23 @@
+{
+  "classification": "generic-only Picard action and bounded word calculation",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-00.json": "ab06386d3f3f96fce402380b5a63f3333187204f25d3b994805765041144fc3f",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-01.json": "4c272f66f28f243eeb6f67f1402c11f47cf9e06179d5f366fcf7c17fa2ecfd28",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-02.json": "fb83d332878c034da10ecf04337e3b7133a8b5b1f45d91bdbdad4c518c811d45",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-03.json": "7699d5d0bad8f1e5ff69559fbc78f26c3af3033e64f517016c203afe19222ed3",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-04.json": "1a2c55dea18cf7a840856ab50ea14866ed5a656066e1e194779c1e3b4c140fbd",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-05.json": "6a8049f38b11f74ff695544e81819a6ac3847ee53b3ddf51886f125396d23693",
+    "elliptic-curves/cas/derive_det1092_two_fibration_action.sage": "548341e098a2f03401462ea33dccf050a3ac33074a7f3c16e103173ef4f7d6a2"
+  },
+  "limits": {
+    "exceptional_inputs": 0,
+    "lattice_words": 70,
+    "new_rational_maps": 0,
+    "parameter_evaluations": 0,
+    "point_searches": 0,
+    "seconds": 25
+  },
+  "rule": "Reconstruct alternate inversion from the five vertical component pairs. Verify all six previous maps. Select the unique smallest-degree previous map, then examine final translation by each sign of B after original translation by zero or either sign of a displayed generic basis section. No outcome-based refill."
+}

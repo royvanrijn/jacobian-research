@@ -1,0 +1,1235 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-replay-supervision/supervisor.json": "149020feee373618236b89613f3e999440ab7b4c0a60db1c0b95a85585f1aaf8",
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-supervision/supervisor.json": "87ddea7dc43ce6ccbfaaa6d94a477c766625c5217b02b15323acb007a731e169",
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/epoch-00/landscape/timings.json": "4e33b15bb00654c536439b30051ab8e7f0e814cfcd6e5e2bf098d6be9c8d289f",
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/protocol.json": "407ee6cb135aea3217606a5b5e03d0603a619ebf65bd7fb9b04800b2a10995d3",
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/terminal.json": "ad2173c793296d9f560fc400b7afd121b182a63c79b73dbd57c9c4afd25d2b6f",
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/verified.json": "8ecd83bc8b01fa6d0dbc107d23bf264c5a52d6246a08e2b55dc66ff9b5c17c7c"
+  },
+  "censored": 0,
+  "charts": 312,
+  "final_lower_bound": 26,
+  "initial_rank": 26,
+  "point_cloud_size": 1879,
+  "records": {
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-replay-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_curve92_productive_v3.py",
+        "replay",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 7200
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-replay-supervision/worker.log",
+      "log_sha256": "40c88e126d1874cc2837cbd5737732e26287468725b2fc609715b669d6a7aa19",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 302784512,
+      "pid": 286782,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "73610313",
+      "termination_signal": null,
+      "timeout_seconds": 7200,
+      "wall_seconds": 51.00214130897075,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_curve92_productive_v3.py",
+        "search",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 7200
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1-supervision/worker.log",
+      "log_sha256": "57346aa7f1105ed908e7e75f1b33030c47080189c52c26d47c67c5e138f83bd7",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 339496960,
+      "pid": 218566,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "73581682",
+      "termination_signal": null,
+      "timeout_seconds": 7200,
+      "wall_seconds": 247.42264257196803,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/epoch-00/landscape/timings.json": {
+      "landscape_wall_seconds": 15.541452781064436,
+      "preparation_seconds": 0.7386488260235637,
+      "reference_solver": false
+    },
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/protocol.json": {
+      "anchor_count": 3,
+      "anchors_per_shell": 16,
+      "canonical_per_shell": 25,
+      "exact_cvp_node_limit": 2000000,
+      "generic_rank": 16,
+      "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+      "height": 125000,
+      "initial_rank": 26,
+      "inputs": {
+        "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/bank.json": "dec9fd38caf0c58e495dbf270859159da2901795661f964034400398ece2c5cf",
+        "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/seed.json": "70807cb8565e20e4b64ee64a3863bbb1f30dd55b3a2084924ba53f3d2c55d792",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/anchor-bank.json": "dec9fd38caf0c58e495dbf270859159da2901795661f964034400398ece2c5cf",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/gains.json": "5e6316915c21d43ab92e3e9f5bb02702a5143f9149e1361f2da3e937c56dd528",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/generic-cvp-proofs.json": "fe571de287c8d4820ef6f11c4d332fcadbc765322ff16605f2c0ad5fefeec396",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/prepared.json": "63a4679b460b3a1ff21d5938c3cd72370ab9571a4970aa3c88eb5bf2fb2c8136",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/protocol.json": "f91f69cdf80962aa22d68be33354fcd13d2a463e8d87d0a2786f33573f484da6",
+        "artifacts/local/elliptic-curves/curve92-v3-preparation-v1/seed-M26.json": "70807cb8565e20e4b64ee64a3863bbb1f30dd55b3a2084924ba53f3d2c55d792"
+      },
+      "mapping_order": [
+        "quartic_minimized",
+        "factor_free"
+      ],
+      "max_charts": 4096,
+      "max_epochs": 7,
+      "maximum_workers": 1,
+      "prime_bound": 1000,
+      "replay_wall_limit_seconds": 7200,
+      "rss_limit_bytes": 3221225472,
+      "scaled_shells": [
+        20,
+        23
+      ],
+      "schema": "curve92-productive-adaptive.v1",
+      "scope": "New directions beyond the certified M26 on curve92. Historical productive anchor selection is retrospective; no withheld/higher-rank point or visibility labels enter execution. The curve90 masked pointwise nulls are not passed controls or rank upper bounds. This is a bounded discovery experiment, not a success prediction.",
+      "search_wall_limit_seconds": 7200,
+      "seconds_per_chart": 10,
+      "selection": "V3 diversified extension shortlist over every frozen historical productive generic anchors. Full extension scoring, exact CVP. Factor-free chart profiles determine centre order. For each centre try quartic-minimized then factor-free coordinates, skipping identical projective coordinates. Rebuild immediately after the first standalone certified gain.",
+      "software": {
+        "numpy": "2.5.2",
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "sources": {
+        "elliptic-curves/cas/adaptive_visibility_cascade.sage": "016f9e721f3ad35158cf281c7a1fe5b19fd7ea3acbc19661685e229a39b96e0d",
+        "elliptic-curves/cas/adaptive_visibility_cascade_v3.sage": "9d4687ab2771ddb236a46239c3961ceb399f6d0bbee12da9d5b03334dac0006e",
+        "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+        "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+        "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+        "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+        "elliptic-curves/cas/future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+        "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+        "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+        "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+        "elliptic-curves/cas/prepare_extended20_mw16_pari_batch.sage": "7b00823cfce7c2092960f0a9ef82dd16b7a9a05de0762c7feeb6d3601359fb77",
+        "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+        "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+        "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+        "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+        "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+        "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+        "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+        "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+        "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+        "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+        "elliptic-curves/cas/run_curve92_productive_v3.py": "d23ab5f16ab879cb0b4dba4820cd81289c1e426359cc6d42164fd4e2e7e39cb5",
+        "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+        "elliptic-curves/cas/v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2",
+        "elliptic-curves/cas/v3_warm_support.py": "b66f67b227fc79e8a688f350c6a1d2cd06eb050e2d9c7b8f03bf22a59ca62e71",
+        "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+        "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+        "elliptic-curves/cas/visibility_productive92.py": "27df8f732c718b62866a3d8e860e93156c6cbaf3d4884daf10e81321552c406a",
+        "elliptic-curves/cas/visibility_selection_v3.py": "7a04867be884b72e628703f94b798f940c47b89aadd5acf7f09c237137fb744e"
+      },
+      "target_rank": 32
+    },
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/terminal.json": {
+      "charts": 312,
+      "claim_boundary": "Subgroup lower bounds only. Unadmitted points and bounded misses remain UNKNOWN.",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1475317636715698792861211506086210959825282977227/16",
+        "349931738004320975783492208008692972531337504726039245946989571127657923/32"
+      ],
+      "points": [
+        [
+          "-72349415382662831872581893/324",
+          "-104098665565609591277193978593939189750/729"
+        ],
+        [
+          "1124554470959043689987810723/8836",
+          "-3687731589263507840359698179160916412325/103823"
+        ],
+        [
+          "6186527492610332594646825/64",
+          "-27692646733442181404500142282965671979/512"
+        ],
+        [
+          "11326724702795692208014785/64",
+          "6473575522270681788664570003903919839/512"
+        ],
+        [
+          "1101977154515014200816655083/11236",
+          "7927541444193611353567559759449631573465/148877"
+        ],
+        [
+          "1611031414170450193328817563/8836",
+          "1410577795098011457341785040583605607360/103823"
+        ],
+        [
+          "1599533544433302189965555/4",
+          "194954405443695419260164667915667643"
+        ],
+        [
+          "-49925964918285479253844882837/25745476",
+          "1721471766260911065411440587803200414699196480/16329068153"
+        ],
+        [
+          "854304617350534648854584039787/4251844",
+          "24993976671561518145390247697763996067762060/1095912791"
+        ],
+        [
+          "2820542811722427638317182683/8836",
+          "12296714374159655193946918335271819935960/103823"
+        ],
+        [
+          "-1164861034369392173893669/4",
+          "-114414414979732316781010839653710140"
+        ],
+        [
+          "25281659645184820197733722932425/103550976",
+          "57486741006114784576717820358635837267696486267/1053734731776"
+        ],
+        [
+          "148546877073215115228347/4",
+          "-86961513552905049413924177973000000"
+        ],
+        [
+          "69722895074017407952616023147/2566404",
+          "47242779427805728613160330272247308041183550/513922401"
+        ],
+        [
+          "3716787623031857330505979/36",
+          "-1354317435105327983491267611749016995/27"
+        ],
+        [
+          "3034232912475435234291739723/12996",
+          "8555168871327280794538020428473317845920/185193"
+        ],
+        [
+          "-50379108507504568257982020621/168100",
+          "929927460551640081565117902167006057530624/8615125"
+        ],
+        [
+          "-1181117905231091477836573/4",
+          "-111431131585243557289599615585465735"
+        ],
+        [
+          "229676720013003429480901/2",
+          "43138111196298979142177120996716890"
+        ],
+        [
+          "2732488121466717185295089884787/13118884",
+          "164385031876741610221055020745815866242719800/5939574731"
+        ],
+        [
+          "394998505229852412135142151146323/1005270436",
+          "749287810459536667251227414029961651603194146500/3984138055477"
+        ],
+        [
+          "2803207180822617399101212663698003/5850108196",
+          "15497422271746976793778447566759300085163868220000/55931421934907"
+        ],
+        [
+          "-1302599201214520920918853/4",
+          "-80176244885453405380848572330913600"
+        ],
+        [
+          "62452611108193212092832498072395523/3578127860836",
+          "81726861228627993338256153690902468474617946801761000/846045649098776573"
+        ],
+        [
+          "43527679144865297641997295347/996004",
+          "10387573120956201716386503621500018875398000/124251499"
+        ],
+        [
+          "2970584612277843490723739115936216923/18771197465476",
+          "177999717592155233452803450624602232193194650512621920/10165950260973401903"
+        ]
+      ],
+      "proof": {
+        "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+        "no_rational_2_torsion_prime": 37,
+        "rank_lower_bound": 26,
+        "signatures": [
+          {
+            "doubled_subgroup_order": 9,
+            "group_order": 18,
+            "prime": 11,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 13,
+            "group_order": 26,
+            "prime": 17,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 27,
+            "group_order": 54,
+            "prime": 43,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 33,
+            "group_order": 66,
+            "prime": 53,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 37,
+            "group_order": 74,
+            "prime": 61,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 42,
+            "group_order": 84,
+            "prime": 71,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 44,
+            "group_order": 88,
+            "prime": 73,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 50,
+            "group_order": 100,
+            "prime": 83,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 54,
+            "group_order": 108,
+            "prime": 89,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 58,
+            "group_order": 116,
+            "prime": 97,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 61,
+            "group_order": 122,
+            "prime": 103,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 63,
+            "group_order": 126,
+            "prime": 107,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 70,
+            "group_order": 140,
+            "prime": 127,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 77,
+            "group_order": 154,
+            "prime": 131,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 80,
+            "group_order": 160,
+            "prime": 139,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 84,
+            "group_order": 168,
+            "prime": 157,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 90,
+            "group_order": 180,
+            "prime": 163,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 45,
+            "group_order": 180,
+            "prime": 167,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 99,
+            "group_order": 198,
+            "prime": 173,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 100,
+            "group_order": 200,
+            "prime": 179,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 51,
+            "group_order": 204,
+            "prime": 181,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 108,
+            "group_order": 216,
+            "prime": 199,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 56,
+            "group_order": 224,
+            "prime": 211,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "protocol_sha256": "407ee6cb135aea3217606a5b5e03d0603a619ebf65bd7fb9b04800b2a10995d3",
+      "rank_lower_bound": 26,
+      "stages": [
+        {
+          "after": 26,
+          "before": 26,
+          "censored": 0,
+          "charts": 312,
+          "epoch": 0,
+          "last_chart_sha256": "fff5d52e5e94089da9f73c9fe0899a1acba7443615d61a2fb5f27a4bf87f5f84",
+          "mod2_sha256": "bc78fcbd6356bcc7ab7394f56386a9d85786b97a5c3140f4e4ae4803dfbfa918",
+          "modl_sha256": "26584bf0cda68770df8256cc6cc03a25bf1ee127dade454b67772cb7878595ed",
+          "odd_ranks": {
+            "3": 26,
+            "5": 26
+          },
+          "selection_sha256": "8c7ac83bd19dfcd3f663f4f089af20ef9b8270f8d8ce28fbf1813427b3912960",
+          "skipped": [],
+          "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN"
+        }
+      ],
+      "status": "SEARCH_FINISHED_PENDING_INDEPENDENT_REPLAY",
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN"
+    },
+    "artifacts/local/elliptic-curves/curve92-productive-v3-discovery-v1/verified.json": {
+      "charts": 312,
+      "claim_boundary": "Exact subgroup lower bound and declared finite-policy replay, not an exact rank.",
+      "rank_lower_bound": 26,
+      "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY",
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "terminal_sha256": "ad2173c793296d9f560fc400b7afd121b182a63c79b73dbd57c9c4afd25d2b6f"
+    }
+  },
+  "scope": "Completion-record export; no new replay, new rank, conductor record or rank upper bound. Full local receipts remain authoritative.",
+  "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "CHECKER_ASSERTION_FAILURE_NOT_A_CERTIFICATE",
+  "checkpoint": "replay-protocol.json",
+  "preserved_checker": "failed-checker-v1.sage",
+  "stage": "birationality via common fibre gcd",
+  "cause": "Sage coerced Q[u] polynomials into coefficient field Q(u) as constants in Q(u)[v]. Both intended fibre polynomials became zero.",
+  "correction": "Construct v-polynomials from explicit coefficient lists. Producer maps and selection remain unchanged; replay-protocol-v2.json pins the corrected checker."
+}

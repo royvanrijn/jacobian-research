@@ -1,0 +1,177 @@
+{
+  "exposures": [
+    {
+      "p": 181,
+      "rank": 0,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 191,
+      "rank": 0,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 193,
+      "rank": 1,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 197,
+      "rank": 1,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 199,
+      "rank": 2,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 211,
+      "rank": 2,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 223,
+      "rank": 3,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 227,
+      "rank": 4,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 229,
+      "rank": 5,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 233,
+      "rank": 5,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 239,
+      "rank": 6,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 241,
+      "rank": 7,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 251,
+      "rank": 8,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 257,
+      "rank": 9,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 263,
+      "rank": 9,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 269,
+      "rank": 10,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 271,
+      "rank": 11,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 277,
+      "rank": 12,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 281,
+      "rank": 13,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 283,
+      "rank": 14,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 293,
+      "rank": 14,
+      "selected": false,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 307,
+      "rank": 15,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 311,
+      "rank": 16,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 313,
+      "rank": 17,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    },
+    {
+      "p": 317,
+      "rank": 18,
+      "selected": true,
+      "status": "REUSED_SAVED_PROOF_ROWS"
+    }
+  ],
+  "no_two_torsion_prime": 181,
+  "rank": 18,
+  "selected": [
+    181,
+    193,
+    199,
+    223,
+    227,
+    229,
+    239,
+    241,
+    251,
+    257,
+    269,
+    271,
+    277,
+    281,
+    283,
+    307,
+    311,
+    313,
+    317
+  ]
+}

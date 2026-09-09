@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery-replay-supervision/supervisor.json": "4563aba385a9ef6e9ea289b4409392c30c058c4562e98a420527a5a47ffc3095",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery-supervision/supervisor.json": "df1251f6c4df4aeae6927b25883cfda3b004be9b0788296200d75d01ecbc0128",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery/epoch-03/chart-0002.json": "532aea6130deb943ea234b3bc7d0b051fa1bb93efb1cbced73deb553970c183c",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery/epoch-03/landscape/selection.json": "b163760d72f0ccc9d2d6d24bcd6583da2d1f3fc33671ded962657e23469e3a57",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery/protocol.json": "2cc0045dea3ce7ca915401906144ee9a7fcd148b69cb4d17082f46cead0d729a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery/terminal.json": "57dfad1d947d70ea0634b9cca965744492f12dbedbd76a0abd2740cee08515ad",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M23-discovery/verified.json": "252bde3a8d73ea8787b0cb6c1dfc454dd60ee263b2151cc5dd8ce7cf49e8124e"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 3,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 1,
+  "next_policy_to_consider": "factor_free",
+  "rank_lower_bound": 26,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v1/result.json"
+}

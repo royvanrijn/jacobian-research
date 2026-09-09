@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2-replay-supervision/supervisor.json": "aa91b9a5153d1388cb2aef3c763bbb034336078fc93e1bbda3b5dd37ac757bd6",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2-supervision/supervisor.json": "8983178affa18cf27daeb8b8eded36ef2d7478084236ad3646b01ff899486eb4",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2/epoch-00/chart-0299.json": "17cdf5e642e93ec53a60db71ee5f5f5776c9a98a0b5c3f5b8cd61bf26844b84d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2/epoch-00/landscape/selection.json": "7bae8dabed1afb0216b57746e97f7facb34db49d77358c6b30bc0fb85d9e3e7f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2/protocol.json": "3881e81c434d77ccf5de6e9a73c62831db8beadb4f984b79c90d5b5a9d437b3f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2/terminal.json": "c117f12772f9cfcf8e73b47b0e48e9b0c7e7eedd7ac06cc471e80e9e9fa5681f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v2/verified.json": "4acf58774d38b1fa8b05f51f122c87a5677760afe50b762ef825f201377638c4"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 150,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 27,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/curve48_complement_cached_v3_v3/result.json"
+}

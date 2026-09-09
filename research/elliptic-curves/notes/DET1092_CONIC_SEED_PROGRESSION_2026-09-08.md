@@ -1,5 +1,10 @@
 # An equation-only infinite family of certified determinant1092 seeds
 
+**Subsequent construction.** The [local separation theorem](DET1092_LOCAL_INCIDENCE_AND_DEPENDENCE_SEPARATION_2026-09-09.md)
+uses this packet to construct certified seeds agreeing with the dependent
+conic split at all25 frozen primes. It preserves the present progression
+and its noncoverage of302; it does not retune a running factory.
+
 ## Result and boundary
 
 **New constructive deduction, independently verified.** Let `t(u)` and

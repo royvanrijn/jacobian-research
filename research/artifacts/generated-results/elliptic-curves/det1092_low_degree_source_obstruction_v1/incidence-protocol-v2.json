@@ -1,0 +1,30 @@
+{
+  "carrier_label": "1018595891632634549154748055919128315329729591633806393135864425102630466026311226984286139170415482796192040753045215403074194221499999977424460241888261147/126812491621022165092163677308365336127830599682204216711429022109284058607666372800652948683672856076106132814795031434807177478522000000",
+  "classification": "retrospective exact source-incidence sieve, not a prospective seed selection",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/geometry-protocol.json": "b25b285fc1bb0db5183659105b35b22ee0b9bd1dba6cb9cbfd0526b15f3c3e51",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/sources.json": "2ba6e24c51500170f14f4e132ef5731bdd3532d0c501706e151def493ba783d0",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_signed_source_orbits_v1/protocol.json": "f368da604232c07ba9da66c6726e05ee48e9a4bb779b60cc5a65e19dd837f0c6",
+    "elliptic-curves/cas/screen_det1092_low_degree_sources_v2.sage": "949ddd88df468e3bbf346a867c65262f64ce6cd6fbe0cb2972676c5107602a28"
+  },
+  "primes": [
+    47,
+    53,
+    101,
+    107,
+    109,
+    127,
+    131,
+    137,
+    139,
+    149,
+    157,
+    163
+  ],
+  "rational_lift_cap": 12,
+  "rule": "Test every degree-two source not already excluded by an earlier prime. Use the complete source ellipsoid and the unchanged old prime order; retain all degree-drop/chart failures as UNKNOWN. No Q map reconstruction in this stage.",
+  "seconds_per_prime": 25,
+  "source_count": 1168
+}

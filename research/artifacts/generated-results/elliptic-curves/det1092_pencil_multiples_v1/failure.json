@@ -1,0 +1,12 @@
+{
+  "classification": "bounded implementation failure, not an arithmetic obstruction",
+  "multiple": 2,
+  "seconds_limit": 25,
+  "exit_code": 124,
+  "archived_source": "elliptic-curves/cas/construct_det1092_pencil_multiples_v1.sage",
+  "archived_source_sha256": "72c0663459c22b6fb6702e2ebce73b68eae2070273374e3235a415188732cb91",
+  "source_path_note": "The immutable protocol records the original source path. Its exact bytes are now retained at archived_source; the operational path contains version2.",
+  "completed_checks": ["generic group doubling", "quartic identity", "parameter map degree20"],
+  "unfinished_check": "expanded original elliptic coordinates",
+  "replacement": "Version2 retains the same n=2,3 selection and uses factored maps and modular ramification certificates."
+}

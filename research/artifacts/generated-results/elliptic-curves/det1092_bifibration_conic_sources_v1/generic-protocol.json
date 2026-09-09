@@ -1,0 +1,40 @@
+{
+  "classification": "generic conic maps and fixed one-address construction",
+  "halving_steps": 8,
+  "independent_nonhalving_proof_prime_cap": 257,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-103186.json": "534549a82697ffb92004a767acb32b7a97e3aa020c5faa37ac2fa71c4485e18e",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-47755.json": "b607956363f1fea130c6121a37e21943beb400161560437520eead25397110d4",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-8044.json": "ae1ea1a8b482f8c7e237b49efdfd3a09d2144c79092522f4c62715479654d5f7",
+    "elliptic-curves/cas/construct_det1092_bifibration_conic_sources.sage": "6015cf1eaf7b6f9af9ab0d4078b37070f492ae5ebae1bc5569eaee93a795883e",
+    "elliptic-curves/cas/rational_root_lattice_certificate.py": "30869c86ed79a3fcadd3d73e1f37e176d16c7b6dac3dad539470b712c3d6801c",
+    "elliptic-curves/cas/split_seed_descent.py": "34aa9c36dd549369e6b076b0d736c67c7351c2be59e1196941ffc9c80fc84bd1",
+    "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741"
+  },
+  "parameter": "0",
+  "parameter_replacements": 0,
+  "point_searches": 0,
+  "prime_cap": 1009,
+  "rule": "Use all three existing generic conics. For the one specialization choose the unique least alternate-degree source and its existing rational parameter u=0. No control or exceptional data in this choice.",
+  "seconds_per_action": 25,
+  "selected": {
+    "alternate_degree": 2,
+    "mask": 47755
+  },
+  "sources": [
+    {
+      "alternate_degree": 6,
+      "mask": 8044
+    },
+    {
+      "alternate_degree": 2,
+      "mask": 47755
+    },
+    {
+      "alternate_degree": 5,
+      "mask": 103186
+    }
+  ]
+}

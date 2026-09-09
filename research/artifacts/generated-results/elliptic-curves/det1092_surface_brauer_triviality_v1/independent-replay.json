@@ -1,0 +1,31 @@
+{
+  "boundary": "Not vanishing of the geometric Brauer group, Br(Xbar)^G, or any specialized elliptic Selmer/Sha group. No spectral-Jacobian torsion computation or seed construction.",
+  "classification": "new deduction from verified finite-field arithmetic and established cohomology",
+  "global_conclusion": "Br(X)=Br(Q), via the rational zero-section point",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/arithmetic-lattice.json": "8e3fd51c2a9dcf6e9061ad8cafc6e0a7b195481a0d871d76c1fce36b7b80c28d",
+    "artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/protocol.json": "ab72aea7d91716790e4dd1ee93f76bf8bc7ac2ef179c0eba6e9fd3dcffc108b6",
+    "artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/reductions.json": "45cb11d5280f3b471fb2086726b029037b93d5e175b33303d5842e59fcdbb4e3",
+    "elliptic-curves/cas/verify_det1092_surface_brauer_triviality.sage": "1aa4b3d4b391a26495d9771057e548a9ae7dcc9f5541bcbff0f31bd4587f8f8d"
+  },
+  "proof_gate": "For each torsion prime ell, use one of149,151 different from ell. Kummer plus finite-field Hochschild--Serre identifies Frobenius-fixed H2(mu_ell) with Pic(X_p)/ell because Br(X_p)=0. Smooth proper base change and Picard specialization identify it with global divisor classes. Any global Brauer ell-class is therefore algebraic, and trivial Galois action on the torsion-free Picard group makes it constant. Normalize at a rational point to pass from prime order to every torsion order.",
+  "reductions": [
+    {
+      "Brauer_order": 1,
+      "Picard_index": 1,
+      "Picard_rank_over_Fp": 19,
+      "p": 149,
+      "prime_to_p_Kummer_fixed_space": "exactly the specialized global Picard group modulo n, for every n coprime to p"
+    },
+    {
+      "Brauer_order": 1,
+      "Picard_index": 1,
+      "Picard_rank_over_Fp": 19,
+      "p": 151,
+      "prime_to_p_Kummer_fixed_space": "exactly the specialized global Picard group modulo n, for every n coprime to p"
+    }
+  ],
+  "status": "PASS_ARITHMETIC_INPUTS_FOR_GLOBAL_BRAUER_TRIVIALITY"
+}

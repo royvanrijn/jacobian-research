@@ -1,0 +1,8 @@
+{
+  "boundary": "No nonprincipal-ideal assertion follows from a nonunit reduced ideal; no256-class or class-group computation was attempted.",
+  "checker_sha256": "95fc1e69aaa8337a3c7b8a7440ca33206ad09822d2cf55aae0fdb2a6d4d5e994",
+  "classification": "verified application",
+  "equal_reduced_ideal_pairs": [],
+  "status": "PASS_EIGHT_FIXED_GENERIC_VIRTUAL_UNIT_REDUCTIONS",
+  "unit_indices": []
+}

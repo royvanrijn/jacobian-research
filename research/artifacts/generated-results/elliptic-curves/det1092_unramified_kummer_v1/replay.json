@@ -1,0 +1,79 @@
+{
+  "checker_sha256": "19cb783cd89d622ce037f8b6ae5830918bdbd5fdaaaff07db1b34d090465acd2",
+  "classification": "verified arithmetic application; written cohomological deduction",
+  "cohomology_formally_verified": false,
+  "control_decisions_reused": {
+    "dependent_conic": 4,
+    "generic_recoveries_over_M16": 9,
+    "generic_recoveries_over_M17": 9,
+    "primitive_productive_branches": 8,
+    "productive_antitraces_depth_one": 8
+  },
+  "generic_fibres": "24I1; smooth infinity",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_lift_v1/construction.json": "6bb612731f3e36c9ac7bfb0f4def3e2a6d54dd139f4d3b4ff39a6909cfd14eb9",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_lift_v1/replay.json": "c7b0706b243b917eb2d0a496cbb1358fa5c3f97b49b1db7006607063d545fba4",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/independent-replay.json": "17a9154a2b3e06573546100a08e5f9087e2e96882b2df9a0591e81b74764fb25",
+    "artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/independent-replay.json": "b9133b0189cddc952fd302ad6899d56685fd87e9c0ca3578e846565546dfb11a"
+  },
+  "new_points_computed": 0,
+  "norm_identity": "N(D*(k-theta))=D^4",
+  "old_norm_lift_controls": [
+    {
+      "index": 0,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 1,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 2,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 3,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 4,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 5,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 6,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 7,
+      "old_result": "not Selmer: good-prime odd valuation"
+    },
+    {
+      "index": 8,
+      "old_result": "rational primitive seed class"
+    }
+  ],
+  "proof_boundary": "The all-degree equality is proved in the canonical note using Kummer, the split cubic norm sheaf, Leray and the already proved Br(X)=Br(Q). This script checks inputs and local algebra, not those theorems.",
+  "protocol_sha256": "8c5070efb133234f51b88d47f86fd69ebfda8f096966dcf300682e29d8ed4f04",
+  "retrospective_residues": {
+    "geometric_ramification_points": 24,
+    "good_parameter_degree": 12,
+    "orders_above_each": [
+      2,
+      1,
+      1
+    ],
+    "orders_at_infinity": [
+      -16,
+      -16,
+      -16
+    ]
+  },
+  "spectral_genus_by_Riemann_Hurwitz": 10,
+  "status": "PASS_HYPOTHESES_AND_RESIDUE_REGRESSION"
+}

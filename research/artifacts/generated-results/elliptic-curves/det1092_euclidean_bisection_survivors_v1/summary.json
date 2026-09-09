@@ -1,0 +1,22 @@
+{
+  "boundary": "Only the three previously unresolved orbits, not a full atlas. A rational split is not automatically independent. No new prime or exceptional point input.",
+  "classification": "generic construction followed by retrospective control evaluation; independent replay required",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/incidence-107.json": "3725c72f0a3038a96445a53385e0a31f0acc26b0172a91630cb7775cfa69871a",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/incidence-111.json": "a4d58e4a5a24575f976cdb325dbe80729d8277edfd8ccfce3de4d936df0866fa",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/incidence-61.json": "454c79c57f8e397e3049615fb6ccecbf0fd0bf8505b850fef18f8ae5c3c9ab2f",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/orbit-107.json": "d1125296cda97f4837c64f1648529ae310c36c2c43e59042f79832863752e00c",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/orbit-111.json": "72a29584ca3112a5bcc27dbfead46bd71e3784cf4f960437ffdb8bd009a9cb73",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/orbit-61.json": "1f64c09b568ca8f8bfdeab874ea9a16c7abf50d6deb8f4b9108afb3bcbc92ed3",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/protocol.json": "40d2d329ddecf1d1c5b5c12a417287f322cbbe0664c97b25efd0a899e36524f6"
+  },
+  "masks": [
+    61,
+    107,
+    111
+  ],
+  "nonsplit_count": 27,
+  "splits": [],
+  "status": "PASS_THREE_EXACT_EUCLIDEAN_CONICS_AND_27_INCIDENCES",
+  "trials": 27
+}

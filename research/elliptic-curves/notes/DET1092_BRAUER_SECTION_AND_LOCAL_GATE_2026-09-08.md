@@ -1,5 +1,12 @@
 # Surface Brauer classes: a rational-section tree and a local blindness theorem
 
+**Subsequent new deduction.** The
+[global Brauer theorem](DET1092_SURFACE_BRAUER_TRIVIALITY_2026-09-09.md)
+now proves `Br(X)=Br(Q)` for this parent, at every torsion order. The local
+certificates below remain valid, but the previously open nonconstant
+transcendental surface-class route is closed. The historical proof and
+its finite-place scope are retained unchanged below.
+
 ## Exact conclusion
 
 **New verified deduction.** Let `X/Q` be the completed determinant1092 K3

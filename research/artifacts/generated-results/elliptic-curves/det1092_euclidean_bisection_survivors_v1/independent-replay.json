@@ -1,0 +1,118 @@
+{
+  "all27_real_soluble": true,
+  "boundary": "Three new exact conic equations, no rational target/control split or seed. Prior modular and old-regression proofs are explicit dependencies. No new rank, prime, rational parameter or later exceptional input.",
+  "cases": [
+    {
+      "exact_generic_trace_word": true,
+      "mask": 61,
+      "q_degree": 2,
+      "rationally_nonsplit_control_fibres": 9,
+      "real_soluble_control_fibres": 9,
+      "target302_value": "14825066443473997321600952790452712851236503139093692928602339727233529710794195038297396777443728265474504805504931857205979118671963845871422662139864890700598770284294636986689292850731705707576320921/2085578798798441858286639437111753249261449989010643335536345966639428603173496765527372579345171075157175563777990244140625000000"
+    },
+    {
+      "exact_generic_trace_word": true,
+      "mask": 107,
+      "q_degree": 2,
+      "rationally_nonsplit_control_fibres": 9,
+      "real_soluble_control_fibres": 9,
+      "target302_value": "2899653033829668392600220283185775717481224259343095548993626205266916930267251587538321988169388136967610897721337676284159274445003337171885718427682233027705733686973804551868583335832852501889/297477867734223440150951251070592689129026187180816153034314535217712927132402603021184139398179907476808022500000000000000"
+    },
+    {
+      "exact_generic_trace_word": true,
+      "mask": 111,
+      "q_degree": 2,
+      "rationally_nonsplit_control_fibres": 9,
+      "real_soluble_control_fibres": 9,
+      "target302_value": "30097479752787323576980002145176864862304180540847251526708232615108896246003975612466605616123806099129731667442084186293225028491135917797815230083179199177105200357732269377451719959518794906668231606121/124836697312349231882466655748510630229052769453218492736199265816997909584924085957046573610623279609989693789062500000000000000"
+    }
+  ],
+  "classification": "verified exact construction and exclusions; general sixth-order cancellation is proved in the note",
+  "closed_panel": [
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 61,
+      "source": "new exact rational nonsquare certificate"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 87,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 103,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 107,
+      "source": "new exact rational nonsquare certificate"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 109,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 110,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 111,
+      "source": "new exact rational nonsquare certificate"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 115,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 117,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 121,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 122,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 123,
+      "source": "previous independently replayed modular non-incidence"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 8044,
+      "source": "previous exact conic/control certificate"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 47755,
+      "source": "previous exact conic/control certificate"
+    },
+    {
+      "at302": "EXACT_NONSPLIT",
+      "mask": 103186,
+      "source": "previous exact conic/control certificate"
+    }
+  ],
+  "full_atlas_executed": false,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/protocol.json": "40d2d329ddecf1d1c5b5c12a417287f322cbbe0664c97b25efd0a899e36524f6",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/summary.json": "cc7d5e2d3c71f012bd65e5d8bee23ff39f4c5c1a3cd126991a35aa28ee2c1c69",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/independent-replay.json": "1c08e334d1766c49ab5456d0f307397efb7acdecdec325fbf53f4eff18c36946",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/controls.json": "d04371085fbbc783ae0138156d172dccb6354fd91a67398b3f07f8174aa002fd",
+    "elliptic-curves/cas/verify_det1092_euclidean_bisection_survivors.sage": "c1d0bd03fbe7c8cec6dbe71648cf60567c9e86943148f4d4cec5433236025231"
+  },
+  "new_incidence_decisions": 27,
+  "status": "PASS_INDEPENDENT_EUCLIDEAN_CONICS_AND_CLOSED_15_ORBIT_PANEL"
+}

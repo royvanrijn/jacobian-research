@@ -1,0 +1,16 @@
+{
+  "boundary": "The common rational quadric supplies no seed, unit, ideal relation or rank gain. Dropping the integral lattice makes every two-torsion ideal case rationally soluble.",
+  "classification": "exact reduction, neither principality question solved",
+  "exceptional_integral_solutions": [
+    false,
+    false
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/generic-quadric.json": "ba9543a6976d52b009e408a5ad4d001cb82136c5d590870997942a22caccee7c",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/integral-lattice-00.json": "b26cd0f4dd15a871ab9140cde7a6ed9db0ebc4016bee8c2271e339582b10da89",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/integral-lattice-01.json": "d29ef925137f4a3d2488df610442b44514c263c1cdd692f0205ffb286381f1c3"
+  },
+  "rational_model_depends_only_on_cubic": true,
+  "relative_ideal_information_retained_in_integrality_matrices": true,
+  "status": "PASS_COMMON_QUADRIC_TWO_DISTINCT_INTEGRAL_LATTICES"
+}

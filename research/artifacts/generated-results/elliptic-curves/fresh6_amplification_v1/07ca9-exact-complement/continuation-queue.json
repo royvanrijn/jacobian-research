@@ -1,0 +1,16 @@
+{
+  "status": "M23_REBUILD_PASS_REPLAYED",
+  "rank_lower_bound": 23,
+  "seed": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json",
+  "seed_sha256": "895dae912ca8696f3e0f26a1b6acdafed21b5d6fd03c0a46b3fccc4e962f0484",
+  "parent_preparation": "artifacts/local/elliptic-curves/fresh6-amplification-v1/07ca9-exact-complement-preparation",
+  "next_action": "Saved suffix may be continued with the cached runner; first broaden exposure to the other prepared fresh fibres.",
+  "other_prepared_fibres": [
+    "074d9",
+    "08f72",
+    "103b2"
+  ],
+  "claim_boundary": "100 point calls replayed, no new certified direction; remaining suffix unresolved.",
+  "continuation_folder": "artifacts/local/elliptic-curves/fresh6-amplification-v1/07ca9-M23-discovery",
+  "result": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-M23/result.json"
+}

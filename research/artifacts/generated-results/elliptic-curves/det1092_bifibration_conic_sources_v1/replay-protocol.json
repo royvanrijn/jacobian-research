@@ -1,0 +1,19 @@
+{
+  "checker_sha256": "5d5c222d5e5ec7ffa0790f4b2df399f82e829b7d36d6dfb323da9f1d2f512f18",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/generic-protocol.json": "c1a9d8baf0f8dc7dc38f32fa6a261641f1cf4719daa136609897af39d4410aa4",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/incidence-103186.json": "0ff2b3c3f5f10552d0bc0d34cc7fc9cb1fc04e03806ea859abe70db58347e411",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/incidence-47755.json": "57b3413120a0c1cc87721a451d913fde5c57a567416d17825ae43381a1257be4",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/incidence-8044.json": "9c41584ba4852c6eb2e512a928bffe93ecd18b31b5f87d61eff888f22f82cb6e",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/incidence-protocol.json": "f14307c85b55aa60555e64db683748a28b2b62af52737d7599c23636364fd65e",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-103186.json": "93a7e903f1abbc02235d89133005c13b3706227585ad4a48236732684c362733",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-47755.json": "fb676c3251da17a395b751d7bd503bcfd78a252b31603660988287a067c3c7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-8044.json": "dc886798f856685c61f6f75b470dadf051f15d9e82f20038c9b229f2a7d39714",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-generic-frame.json": "965baf19132d76d8c73f64bdbb1c1e54bdea5da6c3b6421bbfbda53cb754c7f3",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-result.json": "e8c82f79a6fe2c8c8e053594178fe6ea96b01e9149a1c893b418e7b3bbbd7a83",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/independent-replay.json": "d85c552ba0c59375cc8046d90fe4091a269e78434598d220aeb2c8d494e95f0d",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/independent-replay.json": "ae19703c03fe10d9888cc3d7055d28a78dd6de969fcf1d7bfaa299da2843751f"
+  },
+  "method": "Exact polynomial maps, supplied rational-root lattice proof checks, independent Sage finite quotients.",
+  "seconds": 25
+}

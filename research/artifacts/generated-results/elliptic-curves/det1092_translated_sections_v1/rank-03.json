@@ -1,0 +1,74 @@
+{
+  "attempts": [
+    {
+      "gate": "degree_drop",
+      "p": 47
+    },
+    {
+      "gate": "map_bad",
+      "p": 53
+    },
+    {
+      "gate": "degree_drop",
+      "p": 101
+    },
+    {
+      "gate": "map_bad",
+      "p": 107
+    },
+    {
+      "gate": "map_bad",
+      "p": 109
+    },
+    {
+      "gate": "checked",
+      "p": 127,
+      "smooth_ramification_lower_bound": 26
+    }
+  ],
+  "boundary": "No specialization or independence at a particular rational parameter has been tested.",
+  "case": {
+    "section": 7,
+    "translation": 1
+  },
+  "classification": "verified ramification application, pending independent replay",
+  "degree": 14,
+  "proof": "Translation by a generic section is an automorphism of the minimal elliptic K3, so the image curve is smooth rational. A multisection ramified above a smooth original fibre supplies an independent section after base change.",
+  "status": "GENERIC_RANK_AT_LEAST18",
+  "witness": {
+    "bad_gcd_mod_p": [
+      1
+    ],
+    "p": 127,
+    "radical_mod_p": [
+      37,
+      47,
+      119,
+      118,
+      35,
+      54,
+      89,
+      85,
+      114,
+      2,
+      111,
+      104,
+      99,
+      49,
+      67,
+      86,
+      22,
+      95,
+      85,
+      58,
+      21,
+      119,
+      48,
+      90,
+      126,
+      115,
+      1
+    ],
+    "smooth_ramification_lower_bound": 26
+  }
+}

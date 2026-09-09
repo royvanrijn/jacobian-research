@@ -1,0 +1,22 @@
+{
+  "boundary": "An exact finite subset of inherited split incidences, not all dependent specializations. Support is basis-dependent; the intersection criterion is intrinsic. Control comparison is a separate post-construction action.",
+  "classification": "generic construction of forced dependent splits; retrospective rule development",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "elliptic-curves/cas/construct_det1092_unit_intersection_obstructions.sage": "765d76ca6d76fcb62544bbe4d71ad402185de5a0bb7f9b34af51f80a27570ada"
+  },
+  "limits": {
+    "constructed_intersections_cap": 16,
+    "control_inputs": 0,
+    "full_atlas_runs": 0,
+    "lattice_words": 578,
+    "parameter_scans": 0,
+    "point_searches": 0,
+    "seconds_per_action": 25
+  },
+  "orbit": 8044,
+  "sage_version": "10.9",
+  "selector": "All signed words with support1 or2 and nonzero coefficients +/-1; retain exactly norm4 and pairing3 with w. No rational parameter in selection."
+}

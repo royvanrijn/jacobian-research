@@ -1,0 +1,242 @@
+{
+  "cache_size": 75,
+  "incoming": [
+    164,
+    179,
+    223,
+    294,
+    503,
+    944,
+    1153,
+    1224,
+    1268,
+    1283
+  ],
+  "prime": 149,
+  "protocol_sha256": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+  "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE",
+  "status_counts": {
+    "EXCLUDED_NO_PROJECTIVE_ROOT": 4,
+    "UNKNOWN_LOCAL_ROOT": 6
+  },
+  "survivors": [
+    164,
+    179,
+    223,
+    1224,
+    1268,
+    1283
+  ],
+  "trials": [
+    {
+      "degree": 2,
+      "discriminant": 112,
+      "incidence_coefficients": [
+        92,
+        7,
+        14
+      ],
+      "map_denominator": [
+        124,
+        38,
+        1
+      ],
+      "map_numerator": [
+        53,
+        108,
+        99
+      ],
+      "source_index": 164,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 120,
+      "incidence_coefficients": [
+        16,
+        138,
+        7
+      ],
+      "map_denominator": [
+        90,
+        86,
+        1
+      ],
+      "map_numerator": [
+        67,
+        147,
+        92
+      ],
+      "source_index": 179,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 110,
+      "incidence_coefficients": [
+        0,
+        109,
+        24
+      ],
+      "map_denominator": [
+        47,
+        117,
+        1
+      ],
+      "map_numerator": [
+        121,
+        71,
+        109
+      ],
+      "source_index": 223,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        114,
+        120,
+        53
+      ],
+      "map_denominator": [
+        118,
+        65,
+        1
+      ],
+      "map_numerator": [
+        12,
+        132,
+        138
+      ],
+      "source_index": 294,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 27,
+      "incidence_coefficients": [
+        97,
+        58,
+        148
+      ],
+      "map_denominator": [
+        140,
+        23,
+        1
+      ],
+      "map_numerator": [
+        77,
+        76,
+        84
+      ],
+      "source_index": 503,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 27,
+      "incidence_coefficients": [
+        97,
+        58,
+        148
+      ],
+      "map_denominator": [
+        140,
+        23,
+        1
+      ],
+      "map_numerator": [
+        77,
+        76,
+        84
+      ],
+      "source_index": 944,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        114,
+        120,
+        53
+      ],
+      "map_denominator": [
+        118,
+        65,
+        1
+      ],
+      "map_numerator": [
+        12,
+        132,
+        138
+      ],
+      "source_index": 1153,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 110,
+      "incidence_coefficients": [
+        0,
+        109,
+        24
+      ],
+      "map_denominator": [
+        47,
+        117,
+        1
+      ],
+      "map_numerator": [
+        121,
+        71,
+        109
+      ],
+      "source_index": 1224,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 120,
+      "incidence_coefficients": [
+        16,
+        138,
+        7
+      ],
+      "map_denominator": [
+        90,
+        86,
+        1
+      ],
+      "map_numerator": [
+        67,
+        147,
+        92
+      ],
+      "source_index": 1268,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 112,
+      "incidence_coefficients": [
+        92,
+        7,
+        14
+      ],
+      "map_denominator": [
+        124,
+        38,
+        1
+      ],
+      "map_numerator": [
+        53,
+        108,
+        99
+      ],
+      "source_index": 1283,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    }
+  ]
+}

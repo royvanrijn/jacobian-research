@@ -1,0 +1,37 @@
+{
+  "applications": [
+    {
+      "degree": 20,
+      "displayed_rank18_determinant": "571091189760000000000000000",
+      "genus": 0,
+      "n": 2,
+      "old_basis_min_diagonal_scaled": "80",
+      "replay_sha256": "0c6b895a8fc3e6d6137d145c79ddd6b95dd8e26cb10bd521411c6e4a32d593b3",
+      "schur": "399/10"
+    },
+    {
+      "degree": 58,
+      "displayed_rank18_determinant": "120455711812198450108549951693258752",
+      "genus": 0,
+      "n": 3,
+      "old_basis_min_diagonal_scaled": "232",
+      "replay_sha256": "2fc31286963a4638b1f2587a06e09a278240a7f5cca04c3abf6a5d65eba77d7c",
+      "schur": "3363/29"
+    }
+  ],
+  "boundary": "Generic heights in the pulled-back subgroup, not specialized height values or amplification predictions.",
+  "checker_sha256": "7e8be999d424dbb50bb1d58b6844f9682fc10ce49da18477b4896a0246dcc0d8",
+  "classification": "new deduction from established intersection-height theory",
+  "degree2_regressions": {
+    "genus0": "3",
+    "genus1": "4",
+    "genus2": "5"
+  },
+  "hypotheses": [
+    "rootless elliptic K3 with full NS=U+(-MW)",
+    "smooth multisection of degree d and genus g",
+    "cover unramified over every singular elliptic fibre"
+  ],
+  "identity": "Schur=2*d+(2*g-2)/d",
+  "status": "PASS_MULTISECTION_SCHUR_IDENTITY"
+}

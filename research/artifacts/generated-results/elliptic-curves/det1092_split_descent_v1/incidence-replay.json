@@ -1,0 +1,40 @@
+{
+  "boundary": "Exact incidence and specialization check only. Descent replay independently certifies rational-span decisions. Calibrated302 member selection is not made prospective.",
+  "checker_sha256": "913bbf37457ae95e1d80713c4588a7baad9a1b7fc5e8fa6126677dea0da3345b",
+  "decisions": 38,
+  "descent_replay_sha256": "17a9154a2b3e06573546100a08e5f9087e2e96882b2df9a0591e81b74764fb25",
+  "families": [
+    {
+      "anti_traces": 2,
+      "branch_points": 2,
+      "family": "302",
+      "generic_points": 17
+    },
+    {
+      "anti_traces": 2,
+      "branch_points": 2,
+      "family": "dependent-conic",
+      "generic_points": 17
+    },
+    {
+      "anti_traces": 2,
+      "branch_points": 2,
+      "family": "other-conic",
+      "generic_points": 17
+    },
+    {
+      "anti_traces": 2,
+      "branch_points": 2,
+      "family": "rank21-seed",
+      "generic_points": 17
+    },
+    {
+      "anti_traces": 2,
+      "branch_points": 2,
+      "family": "small-conic",
+      "generic_points": 17
+    }
+  ],
+  "protocol_sha256": "09c8d2b3100116ddefa40fee9657ca147aecff88e3aea73f887a089399f60a01",
+  "status": "PASS_INDEPENDENT_SPLIT_INCIDENCE_AND_GENERIC_PREFIXES"
+}

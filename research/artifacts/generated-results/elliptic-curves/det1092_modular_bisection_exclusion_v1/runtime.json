@@ -1,0 +1,8 @@
+{
+  "classification": "single small timing observation, not a full-run runtime guarantee",
+  "modular_RR_seconds": 0.09073196374811232,
+  "orbits": 15,
+  "total_seconds": 10.83346056099981,
+  "trace_and_matrix_seconds": 10.518918271642178,
+  "trials": 45
+}

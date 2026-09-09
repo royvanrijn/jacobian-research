@@ -1,0 +1,106 @@
+{
+  "cache_size": 29,
+  "incoming": [
+    164,
+    179,
+    1268,
+    1283
+  ],
+  "prime": 163,
+  "protocol_sha256": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+  "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE",
+  "status_counts": {
+    "EXCLUDED_NO_PROJECTIVE_ROOT": 2,
+    "UNKNOWN_LOCAL_ROOT": 2
+  },
+  "survivors": [
+    179,
+    1268
+  ],
+  "trials": [
+    {
+      "degree": 2,
+      "discriminant": 37,
+      "incidence_coefficients": [
+        106,
+        39,
+        85
+      ],
+      "map_denominator": [
+        34,
+        125,
+        1
+      ],
+      "map_numerator": [
+        40,
+        84,
+        131
+      ],
+      "source_index": 164,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 36,
+      "incidence_coefficients": [
+        149,
+        10,
+        92
+      ],
+      "map_denominator": [
+        112,
+        28,
+        1
+      ],
+      "map_numerator": [
+        85,
+        157,
+        138
+      ],
+      "source_index": 179,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 36,
+      "incidence_coefficients": [
+        149,
+        10,
+        92
+      ],
+      "map_denominator": [
+        112,
+        28,
+        1
+      ],
+      "map_numerator": [
+        85,
+        157,
+        138
+      ],
+      "source_index": 1268,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 37,
+      "incidence_coefficients": [
+        106,
+        39,
+        85
+      ],
+      "map_denominator": [
+        34,
+        125,
+        1
+      ],
+      "map_numerator": [
+        40,
+        84,
+        131
+      ],
+      "source_index": 1283,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    }
+  ]
+}

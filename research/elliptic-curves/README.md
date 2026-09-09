@@ -1,5 +1,113 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [bi-fibration conic theorem](notes/DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md)
+identifies an existing rational curve of degree2 in both fibrations,
+independent over both generic spans. A fixed equation-only specialization
+replays at rank at least18. All three tested source orbits still miss the
+marked first302 seed exactly; this does not solve prospective302 selection.
+
+The [intrinsic low-degree source obstruction](notes/DET1092_INTRINSIC_LOW_DEGREE_SOURCE_OBSTRUCTION_2026-09-09.md)
+excludes all1,308 original section curves of alternate degree at most2,
+and their generic alternate-translation orbits, from the first302 seed.
+It is a complete degree bound, not a basis sample; positive construction remains open.
+
+The [unit-intersection obstruction](notes/DET1092_UNIT_INTERSECTION_SPECIALIZATION_OBSTRUCTION_2026-09-09.md)
+predicts the dependent conic split at `s=-528/3635` and13 more inherited
+splits from generic sections alone. It explains forced seed failures;
+the prospective positive302 construction remains open.
+
+The [bisection index theorem](notes/DET1092_RATIONAL_BISECTION_INDEX_AND_ODD_DIVISOR_CONSTRUCTION_2026-09-09.md)
+proves all40,917 geometric rational-bisection orbits are parametrizable over Q.
+Polynomial odd-divisor descent constructs two more generic rank18 covers;
+the three fixed representatives all miss302 and eight controls exactly.
+The [degeneration and atlas obstruction](notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md)
+excludes every rational degeneration of the fixed norm8 pencil: all are
+inherited section pairs. Even the complete smooth bisection atlas misses
+a non-thin supply of rank jumps;302's position remains unknown.
+The [modular incidence gate](notes/DET1092_MODULAR_BISECTION_INCIDENCE_GATE_2026-09-09.md)
+excludes nine further bisection orbits at302 and on explicit residue
+neighbourhoods, without rational RR solves; the full atlas remains untested.
+The [uniform reduction theorem](notes/DET1092_UNIFORM_SMOOTH_BISECTION_REDUCTION_2026-09-09.md)
+proves all40,917 conics stay smooth at149/151 and four charts suffice for
+full-rank RR. Local splitting still does not certify a rational seed.
+The [Euclidean conic formula](notes/DET1092_EUCLIDEAN_BISECTION_FORMULA_2026-09-09.md)
+now removes matrix solves and factorization and closes all15 frozen orbits
+at302; the three former survivors also miss all eight controls exactly.
+A cold generic-word replay also separates a productive conic split from an
+inherited split by independent nonhalving/cycle certificates; no new rank.
+The [local separation theorem](notes/DET1092_LOCAL_INCIDENCE_AND_DEPENDENCE_SEPARATION_2026-09-09.md)
+separately constructs infinite M18 seeds matching a dependent split at25 primes.
+Cover rationality, parameter incidence and specialized independence differ.
+
+The [all-prime theorem](notes/DET1092_ALL_PRIME_DIVISION_AND_MULTISECTION_THEOREM_2026-09-09.md)
+makes genuine bisections generically independent and excludes inherited
+divisions on bases of genus below9. The [trace-parity theorem](notes/DET1092_TRACE_PARITY_DESCENT_2026-09-09.md)
+identifies parity labels as obstructions to descending a moving branch class.
+Prospective302 member selection remains the constructive task.
+
+The [singular-fibre-only gate](notes/DET1092_BAD_FIBRE_KUMMER_OBSTRUCTION_2026-09-09.md)
+separately excludes that class of generic lifts on302 and all eight controls.
+It builds on the [unramified theorem](notes/DET1092_UNRAMIFIED_KUMMER_OBSTRUCTION_2026-09-09.md)
+and [Br(X)=Br(Q)](notes/DET1092_SURFACE_BRAUER_TRIVIALITY_2026-09-09.md).
+Neither these gates nor odd trace excludes new split points. No search was run.
+
+The [two-fibration degree barrier](notes/DET1092_TWO_FIBRATION_DEGREE_GAP_2026-09-09.md)
+proves that, from the cheapest constructed degree13 curve, every nonzero
+original generic translation followed by the fixed alternate move has
+degree at least272 (forward) or442 (inverse). These are attained global
+minima, not sampled scores. This rules out that low-degree shortcut, not seeds.
+
+The [generic-translation gate](notes/DET1092_GENERIC_TRANSLATION_ORBIT_OBSTRUCTION_2026-09-09.md)
+excludes the entire alternate-translation orbit of the34 signed displayed
+source curves from the first302 seed. Six new generic rank18 rational covers
+are certified but miss302; all old degree20/58 control incidences are now
+excluded exactly. This is an orbit obstruction, not a prospective seed.
+
+The [optimized productive-anchor search](notes/CURVE200_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
+raises curve200 from certified25 to26. The next [R17 transfer on curve113](notes/CURVE113_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
+and [curve116](notes/CURVE116_PRODUCTIVE_V3_SEARCH_2026-09-09.md) also raise25 to26.
+All three runs replay independently, with815,762 and679 completed charts.
+The new [100-chart first pass on curve52](notes/CURVE52_SHORT_V3_SEARCH_2026-09-09.md)
+also certifies25→26 with independent replay. The reusable runners support
+MW16/R17 seeds; rank29–32 and conductor records remain open. The subsequent
+[M28 continuations on inventory188 / ICARM619](notes/CURVE188_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
+completed900 and3454 charts with independent replay and no gain.
+
+The [seed arithmetic audit](notes/DET1092_SEED_VIRTUAL_UNIT_AND_IDEAL_PARITY_2026-09-09.md)
+now separates new class characters from inherited ideal classes: seven
+split2-class factors are certified, but the seed's ideal-image rank does
+not rise. Its unit-versus-ideal-class ambiguity reduces to two explicit
+integral cubic norm equations, both locally soluble everywhere and still
+unresolved. Their [common rational quadric](notes/DET1092_SEED_NORM_QUADRIC_AND_INTEGRAL_GATE_2026-09-09.md)
+is now explicit; two exact integral lattices retain the principality question.
+The same norm-quadric formula is rational on all nine controls and cannot
+predict a seed. Prospective seed selection remains open.
+An [exact bank-only obstruction](notes/DET1092_SAVED_UNIT_RELATION_OBSTRUCTION_2026-09-09.md)
+now excludes nontrivial units from every multiplicative combination of the
+old567 reduction multipliers; the two norm equations remain open.
+
+The [reciprocal-quartic gate](notes/DET1092_RECIPROCAL_QUARTIC_AND_COVER_CLASS_2026-09-09.md)
+distinguishes three Jacobian/covering objects: fixing the original parameter
+recovers `E_t`, while the quartic's degree4 map is `Z-2P` and its covering
+class is always inherited. All32 old controls verify this, including new
+seeds. The marked point's class, not the covering label, carries the rank gain.
+
+The [two-fibration seed theorem](notes/DET1092_TWO_FIBRATION_SEED_CONSTRUCTION_2026-09-08.md)
+constructs generic rank18 rational covers of degrees20 and58 from `2B,3B`
+in the inherited norm-eight pencil. Exact ramification and height certificates
+prove independence; neither map lifts rationally through the old conic.
+The general perpendicular-height identity is `2d+(2g-2)/d`. An audited
+Pasten--Salgado application also proves non-thin rank18 incidence on this
+parent. These results do not predict302 or amplification.
+
+The [halving-or-cycle theorem](notes/DET1092_SPLIT_SEED_HALVING_DICHOTOMY_2026-09-08.md)
+now decides whether a constructed split point is outside a mod2-certified
+generic rational span, using exact quartic halving and cycle relations.
+All38 old-control decisions replay independently: productive branches escape,
+the dependent conic cycles, and all nine generic recoveries are new over M16
+but old over M17. This classifies specified splits; selecting the useful302
+cover from generic data remains open.
+
 The [seed-density and limiting-lattice proof](notes/DET1092_SEED_DENSITY_AND_LIMITING_LATTICE_2026-09-08.md)
 explains why conic seeds are rare in a parent-parameter scan but plentiful
 under parametrization, and why their normalized subgroup geometry converges
@@ -28,12 +136,9 @@ one follow-up cascade has an independently verified rank21 subgroup. A separate
 [small conic seed](notes/DET1092_SMALL_CONIC_SEED_2026-09-08.md) certifies M18 at
 `s=5193/35630`; its114-chart V3 run replays with no further gain.
 
-The [surface Brauer gate](notes/DET1092_BRAUER_SECTION_AND_LOCAL_GATE_2026-09-08.md)
-connects all generic sections to `O` through17 explicit rational intersections.
-Every normalized2-primary surface Brauer class is consequently zero on the
-whole local fibres at all189 checked pairs. On302 these include every bad
-prime and infinity; any nonzero Brauer detection needs at least two other,
-good primes. This does not compute the transcendental Brauer group.
+The historical [surface Brauer gate](notes/DET1092_BRAUER_SECTION_AND_LOCAL_GATE_2026-09-08.md)
+retains17 section intersections and189 local checks. Its open global-Brauer
+route is now closed by the all-order theorem linked above.
 
 The [blinded MW16 reconstruction](notes/DET1092_BLIND_MW16_RECONSTRUCTION_2026-09-08.md)
 recovers the full known generic MW17 quotient from **9 of 17** frozen cores.

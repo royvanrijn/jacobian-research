@@ -1,0 +1,7 @@
+{
+  "status": "NO_HEIGHT_THREE_HALVES_SOURCE_IN_THE_FROZEN_SET",
+  "classification": "failed selection premise, not a construction or incidence certificate",
+  "source_count": 130,
+  "height_histogram": {"0":1,"2":1,"5/2":7,"3":16,"7/2":15,"4":9,"9/2":16,"5":16,"11/2":9,"6":15,"13/2":16,"7":7,"15/2":1,"19/2":1},
+  "action": "Preserve v1 producer and protocol. Separately freeze v2 using the least positive height actually present, with both signs and the same8-map cap. No target incidence was evaluated."
+}

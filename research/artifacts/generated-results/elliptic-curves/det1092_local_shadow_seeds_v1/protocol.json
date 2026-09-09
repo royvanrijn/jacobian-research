@@ -1,0 +1,25 @@
+{
+  "boundary": "The conic and both anchors are old permitted evidence. This does not select a302 member or give a general rank predictor.",
+  "classification": "new constructive counterexample to sufficiency of one fixed local footprint",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/finite-code.json": "991d3842639e9e011e151b099a7e4caf7149b0ddc4a48c8123c0a511d423e453",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/input.json": "61fb4700167866d9777f53967c9c12ad0032fe4c55e38580c35fa4b82ce8a0ac",
+    "artifacts/generated-results/elliptic-curves/det1092_conic_seed_progression_v1/replay.json": "9870e567914a041f466f833a1a66489225d0808ffd59458690ddf093b0a0cd64",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/dependent-conic/branch-0.json": "63abdad3c485de9483c122aa8b5e76fabd4296fbd5511ebbc4c9b51d9cffb5a1",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/dependent-conic/branch-1.json": "5e9c29e128688ea6c41ab2e015f970a8bde4d378c34e1cbb8be32bfa02ddc67b",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/dependent-conic/generic-frame.json": "57fed9227ca53f465b54256de98030f5d55cc6f9b31b86d229501726214390ad"
+  },
+  "limits": {
+    "new_evaluated_rational_parameters": 0,
+    "new_prime_exposures": 0,
+    "old_proof_prime_range": [
+      181,
+      1009
+    ],
+    "point_searches": 0,
+    "seconds": 25
+  },
+  "rule": "Use all25 primes in the dependent-conic generic frame. Choose the smaller rational preimage in the old conic slope coordinate. Reuse cached positive-u0 rows above179, skipping only exact map/denominator nonunits; retain rank-increasing prime blocks and the first odd-order prime. If these do not prove18, stop unresolved. CRT gives an explicit infinite rational sequence converging in R to the dependent address, identical on the fixed local footprint, and rank18 at disjoint proof primes.",
+  "script_sha256": "835442c63c7a1bef185bcde7aac0a7c27a04b1bca59ab8383503d3bfbefcc7b2"
+}

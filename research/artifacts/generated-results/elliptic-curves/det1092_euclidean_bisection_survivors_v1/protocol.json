@@ -1,0 +1,71 @@
+{
+  "classification": "generic equations for three previously unresolved orbits; retrospective unchanged-control evaluation",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/summary.json": "a9991d6166e26e60644f6bf82ae56363f52328a3fccf17e61af68fe13420ed83",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/trace-107.json": "31aabd62a3ca37980c67fca5670684d06b30fa1f3f5146cae0c67b108043c87c",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/trace-111.json": "2bbbc762190eec665e25ecc478493081da751bb0672350ef9f43b3d3dc66b9eb",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/trace-61.json": "c16758c0e5df3d9eac52b9d91ea8f3ece055e3301d39db406eb6a55662d0b7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/controls.json": "d04371085fbbc783ae0138156d172dccb6354fd91a67398b3f07f8174aa002fd",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/summary.json": "b4354721c1ab357127483563e7baa749daf5decd77a9269ec5d0c3e12e6d2984",
+    "elliptic-curves/cas/construct_det1092_euclidean_bisection_survivors.sage": "0c36ed461d3424f7e11daafde3e7844ef2120e45d5226f9ef82ff2a04f330a3f"
+  },
+  "limits": {
+    "RR_matrix_solves": 0,
+    "full_atlas_runs": 0,
+    "incidence_tests": 27,
+    "integer_factorizations": 0,
+    "new_parameters": 0,
+    "new_primes": 0,
+    "old_addresses": 9,
+    "orbits": 3,
+    "point_additions": 0,
+    "point_searches": 0,
+    "polynomial_factorizations": 0,
+    "seconds": 25
+  },
+  "masks": [
+    61,
+    107,
+    111
+  ],
+  "roster": [
+    {
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643"
+    },
+    {
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081"
+    },
+    {
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631"
+    },
+    {
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247"
+    },
+    {
+      "label": "302-generic-section-control",
+      "parameter": "0"
+    }
+  ],
+  "rule": "Use exactly61,107,111, the remaining UNKNOWN masks of the fixed old panel. Construct each curve from its saved generic trace only. Then evaluate all nine unchanged addresses. No outcome-driven replacement."
+}

@@ -1,0 +1,13 @@
+{
+  "boundary": "Only the signed displayed source curves and the group preserving this alternate fibration are covered. Not all original MW sections, alternating fibration words, or all representatives of the same original residual direction are excluded.",
+  "checker_sha256": "87ebc428dd95139c19310961da6ea225d8f8f0c5fecec7cbccb204d0b7d5016d",
+  "classification": "retrospective theorem application, not a prospective source selector",
+  "counts": {
+    "INHERITED_ALTERNATE_SECTION": 2,
+    "NO_RATIONAL_SOURCE_POINT": 32
+  },
+  "first_seed_outside_full_picard_image_dependency": "det1092_genus1_picard_image_v1/replay.json",
+  "source_count": 34,
+  "status": "PASS_ENTIRE_FIXED_SOURCE_TRANSLATION_ORBITS_EXCLUDED",
+  "zero_section": "vertical and disjoint from the smooth seed carrier"
+}

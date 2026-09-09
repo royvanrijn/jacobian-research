@@ -1,0 +1,33 @@
+{
+  "boundary": "The common rational model forgets the ideal class unless the integral matrices are retained. Neither integral norm equation, unit-versus-ideal fork, prospective302 seed, or elliptic Selmer/Sha class is constructed.",
+  "cases": [
+    {
+      "identity_and_projection_exceptions_integral": false,
+      "index": 0,
+      "integral_transport_verified": true
+    },
+    {
+      "identity_and_projection_exceptions_integral": false,
+      "index": 1,
+      "integral_transport_verified": true
+    }
+  ],
+  "classification": "new explicit reduction and verified application, no principality solution",
+  "complete_norm_one_chart_with_explicit_exceptions": true,
+  "generic_quadric_rank": 4,
+  "generic_quadric_signature": [
+    2,
+    2
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/generic-quadric.json": "ba9543a6976d52b009e408a5ad4d001cb82136c5d590870997942a22caccee7c",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/integral-lattice-00.json": "b26cd0f4dd15a871ab9140cde7a6ed9db0ebc4016bee8c2271e339582b10da89",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/integral-lattice-01.json": "d29ef925137f4a3d2488df610442b44514c263c1cdd692f0205ffb286381f1c3",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/protocol.json": "913e273a486eda177c1e371e5b9f11f601db47a225112c83f6e61a16306f400f",
+    "elliptic-curves/cas/verify_det1092_seed_norm_quadric.sage": "3adcd06a62ae3bfefc6a3b445da64fa4b27d0a9aca5a75afc7e8752bdd289d3d"
+  },
+  "quadric_discriminant_ratio": "1/16",
+  "rational_quadric_point_from_cubic_only": true,
+  "status": "PASS_INDEPENDENT_COMMON_QUADRIC_AND_INTEGRAL_ADMISSIBILITY",
+  "written_scope": "Nonsquare discriminant excludes a second rational point in the tangent plane, so projection misses only its rational center. All other nonidentity norm-one elements have the explicit inverse. The two omitted norm-form points are verified nonintegral for each ideal."
+}

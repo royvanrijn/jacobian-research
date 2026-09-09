@@ -1,0 +1,22 @@
+{
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "rank_lower_bound": 27,
+  "epoch": 0,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3/protocol.json": "3a8a54ca077cab3b2f01d7e03fc2ec25f10905c0ac8b45e0121b34626c41a920",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3/terminal.json": "01fd4938c2da3c104861db9b03f771ff1a9d9c083f0bf4bae1af3e10d7bfb0df",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3/verified.json": "f647b855515ddce8145c38c9cc7a528a8719ade95dae1ffb80fdcf958d33f305",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3-supervision/supervisor.json": "0f642dd5ee8e6ddc04c3daa98b98ba464feb63f3f825b221d8b8de8e9406a49b",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3-replay-supervision/supervisor.json": "9e8d46afe7d2f6f711c880aeab00a0e924eb930e1d02392a19c28f7425c5e8f6",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3/epoch-00/landscape/selection.json": "7bae8dabed1afb0216b57746e97f7facb34db49d77358c6b30bc0fb85d9e3e7f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v3/epoch-00/chart-0399.json": "bc854af1017a3fcba7bbc758cb5d1e961b10ef8fb4f36e57b4a34142004e0fc4"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 200,
+  "next_policy_to_consider": "preconditioned_full",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/curve48_complement_cached_v3_v4/result.json"
+}

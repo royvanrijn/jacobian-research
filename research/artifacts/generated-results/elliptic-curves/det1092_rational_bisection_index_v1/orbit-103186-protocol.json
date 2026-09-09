@@ -1,0 +1,19 @@
+{
+  "classification": "generic-only bounded multisection construction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "elliptic-curves/cas/construct_curve302_parent_cheapest_lattice_bisection.sage": "db53698fbbcc179b7cc33d47243138ced3dfde0528199dcbaf7150fe52af945b",
+    "elliptic-curves/cas/construct_det1092_minimal_stored_bisections.sage": "b8386aa7a5d90d7066193d42b931c59d146a8c0e0d72aac00c708c652bf9d419",
+    "elliptic-curves/cas/load_curve302_recovered_parent.sage": "c4d57ab8ebeedfbc8b74c1838760dd4036d958985ed63ad2f52b2ce348d3173f"
+  },
+  "limits": {
+    "integer_factorizations": 0,
+    "new_RR_systems": 1,
+    "point_searches": 0,
+    "seconds": 25
+  },
+  "orbit": 103186,
+  "rational_point_rule": "First odd-intersection generic section; convert its odd divisor to a conic point by polynomial norm descent. No conic qfsolve or exceptional point.",
+  "selection_sha256": "882b7a71a03e0a1e881fa66cde5b150311bc408d17728d117d9f12b797e33d7f"
+}

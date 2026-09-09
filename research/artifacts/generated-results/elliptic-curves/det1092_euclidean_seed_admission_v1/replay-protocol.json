@@ -1,0 +1,16 @@
+{
+  "checker_sha256": "1a7b7404e327e9529e0136a2c3ff1261e336047a9228228565dabab0e537e827",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/302/generic-frame.json": "127f2fa4e76408f1b3949f1e9b5eba7045f8671fbf79f6f759f9ccfb91956bec",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/302/result.json": "1a65b32e2d0f572d098494235b474f4170d0681fdb25f62ceedb51a694e53d21",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/construction.json": "4c87e2431eff8c553e7593165ad8f1a00f2568363a3af6bb6071d7a0a673a50f",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/old-dependent/generic-frame.json": "0c1d2b12d0579f66880ac70d473f43ccda8f417397847b55e8932f8178c5417c",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/old-dependent/result.json": "06a50f576b0fd3e450d24e1447638040e7d67a8aa7f2189502c8777853a7906f",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/old-positive/generic-frame.json": "a02263bbc376ac8533f7a7568e18361d185b1128570a55f6d6a93187e54d8b4a",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/old-positive/result.json": "1f87e5b418a364592e0810615ecc899d6289dfa2cf098cf0a2ab8f3c0476d729",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/protocol.json": "30f7ca3bc26599e5c343ef4595f508160c15c124c3492b04f0452b52bc1d7b62"
+  },
+  "method": "Manual reversed Q(t) group law; independent Sage finite quotients; exact square bounds; exact cycle relation or root-free duplication quartic.",
+  "nonhalving_proof_prime_cap": 257,
+  "seconds": 25
+}

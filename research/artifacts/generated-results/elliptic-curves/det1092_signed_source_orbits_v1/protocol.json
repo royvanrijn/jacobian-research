@@ -1,0 +1,35 @@
+{
+  "carrier_label": "1018595891632634549154748055919128315329729591633806393135864425102630466026311226984286139170415482796192040753045215403074194221499999977424460241888261147/126812491621022165092163677308365336127830599682204216711429022109284058607666372800652948683672856076106132814795031434807177478522000000",
+  "classification": "retrospective source-curve incidence obstruction",
+  "implication": "A signed source curve with no rational point on this carrier cannot supply one after any rational fibrewise translation. Degree-one curves specialize inside the full Picard image.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/equation-only-cover-01.json": "9e12adfb507e0920dc421e5e10026919a8362a612700466e59aabd8c3a1bc89b",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/protocol.json": "4d19c06ed957559d1285fdfc7c860a2d0193af2e0dd44b8ec8fcf074fe497c9e",
+    "elliptic-curves/cas/audit_det1092_seed_signed_section_orbits.sage": "87ebc428dd95139c19310961da6ea225d8f8f0c5fecec7cbccb204d0b7d5016d",
+    "elliptic-curves/cas/rational_root_lattice_certificate.py": "30869c86ed79a3fcadd3d73e1f37e176d16c7b6dac3dad539470b712c3d6801c"
+  },
+  "limits": {
+    "later_points": 0,
+    "orbit_enumeration": 0,
+    "point_searches": 0,
+    "prime_pool": [
+      47,
+      53,
+      101,
+      107,
+      109,
+      127,
+      131,
+      137,
+      139,
+      149,
+      157,
+      163
+    ],
+    "seconds": 25,
+    "signed_curves": 34
+  },
+  "sources": "O and both signs of each of the17 displayed generic sections"
+}

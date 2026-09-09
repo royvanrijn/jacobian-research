@@ -1,0 +1,24 @@
+{
+  "classification": "new bounded relation audit of frozen generic-only inputs",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_arithmetic_unit_class_v1.json": "bac7de34e6ddd901a829c2228ad6c27135d39f4e0e00d118c6382b9c87473548",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_00.json": "fe4c5f1fff0126c0a729d31b8d091ba3437b9d2fd256f23d10417a0165362e16",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_01.json": "255351f2b43702bc24b59f3f87fe9a110d308d7c355325a7623901176ffdef34",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_02.json": "1677d1c1c1bd061c43d02a2855684e9cf24ae1ce638b6694339cb8d6d4e68f80",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_03.json": "011bf95a27a340ec76deb7c0055686e47273f7f7cc6876c24d3d43996d9eefdb",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_04.json": "16a4fa43b2d6ce3a3636dbd7ca44aaa5880a61d29a18a79d507b18568a1ed462",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_05.json": "6f2534f893e051cd32bf9b95d25876e9bb38be54bb96acec321fdae8f6eec1dd",
+    "artifacts/local/rank-jump-curve302-arithmetic-unit-class-v1/start_06.json": "20bb96563bacff0bfeb1be40094fd4027db74bf338d383ea3d9c5a46ccf531eb"
+  },
+  "limits": {
+    "class_groups": 0,
+    "factorizations": 0,
+    "new_reductions": 0,
+    "point_searches": 0,
+    "saved_trials": 567,
+    "seconds": 25
+  },
+  "script_sha256": "3bfa3be200327609602c200fb92346f60982f5fc7180b74909fd97f6751ab254",
+  "test": "Peel primitive reduced ideals having a private unramified rational prime. Duplicate ideals and residual starting-ideal relations are retained, not assumed trivial."
+}

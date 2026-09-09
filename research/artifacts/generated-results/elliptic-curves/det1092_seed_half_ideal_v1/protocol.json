@@ -1,0 +1,18 @@
+{
+  "boundary": "No global minimality, nonprincipality, or prospective source follows from reduction.",
+  "classification": "retrospective diagnostic, not prospective selection",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_marked_kummer_transport_v1.json": "833dc5c5e7acd65f8d85a3c5d55b8f2848f034a75f04cf000414e2d9254dfcc1",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/reduce_det1092_seed_half_ideal.sage": "db905a94ee57947725d3be38b9852d69b8517e9886dcd6eb34231808a3685741"
+  },
+  "limits": {
+    "LLL_vectors_per_class": 3,
+    "class_group_computations": 0,
+    "classes": 2,
+    "point_searches": 0,
+    "seconds": 25,
+    "unrestricted_factorizations": 0
+  },
+  "method": "I=(alpha,sqrt(N(alpha))); reduce I inverse using Tr(alpha*u*v) if positive definite, otherwise Tr(alpha^2*u*v); test only three reduced basis vectors."
+}

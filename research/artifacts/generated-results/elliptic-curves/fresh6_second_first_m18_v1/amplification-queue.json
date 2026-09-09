@@ -1,0 +1,52 @@
+{
+  "status": "ALL_FIVE_FIRST_PRODUCTIVE_PASSES_REPLAYED",
+  "bundle_sha256": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e",
+  "records": [
+    {
+      "id": "074d9-fresh-002",
+      "status": "FIRST_PRODUCTIVE_PASS_REPLAYED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/074d9-fresh-002/seed-M18.json",
+      "seed_sha256": "93b0a6bee71c969cdb63fbc31a2d4b64c2edd3cb48416033c297a776209c5930",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/074d9-fresh-002/chart-0008.json",
+      "amplification_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-fresh-002/result.json",
+      "current_rank_lower_bound": 18
+    },
+    {
+      "id": "07ca9-fresh-002",
+      "status": "FIRST_PRODUCTIVE_PASS_REPLAYED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/07ca9-fresh-002/seed-M18.json",
+      "seed_sha256": "f63fd8e76e5f37bdbef5f878c74d33dc47af747d668ce012b7939910aa22a59a",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/07ca9-fresh-002/chart-0002.json",
+      "amplification_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-fresh-002/result.json",
+      "current_rank_lower_bound": 18
+    },
+    {
+      "id": "08234-fresh-002",
+      "status": "FIRST_PRODUCTIVE_PASS_REPLAYED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/08234-fresh-002/seed-M18.json",
+      "seed_sha256": "070b2cb13c44f205cce06f834922fb446addfc408f5afc981ee59018369ba33f",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/08234-fresh-002/chart-0004.json",
+      "amplification_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-fresh-002/result.json",
+      "current_rank_lower_bound": 18
+    },
+    {
+      "id": "103b2-fresh-002",
+      "status": "FIRST_PRODUCTIVE_PASS_REPLAYED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/103b2-fresh-002/seed-M18.json",
+      "seed_sha256": "e1bafea278acdeb901f0f04aed61280a77485a25340dd6544dca5cddbdfbb066",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/103b2-fresh-002/chart-0006.json",
+      "amplification_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-fresh-002/result.json",
+      "current_rank_lower_bound": 20
+    },
+    {
+      "id": "11952-fresh-002",
+      "status": "FIRST_PRODUCTIVE_PASS_REPLAYED",
+      "seed": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/11952-fresh-002/seed-M18.json",
+      "seed_sha256": "a908045753e6ca121e8d0e84bfa1c06af5b4b875fe3a9ec9ad8ef9916112b0cd",
+      "complete_winning_witness": "artifacts/local/elliptic-curves/fresh6-second-seed-confirmation-v1/11952-fresh-002/chart-0010.json",
+      "amplification_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-fresh-002/result.json",
+      "current_rank_lower_bound": 18
+    }
+  ],
+  "complement_queue": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json"
+}

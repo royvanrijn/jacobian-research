@@ -1,0 +1,17 @@
+{
+  "classification": "generic-only conic-index deduction and bounded construction selection",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40"
+  },
+  "limits": {
+    "new_CVPs": 0,
+    "new_orbit_enumerations": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "selected_orbits_cap": 3
+  },
+  "script_sha256": "8a7b3f5d275415d88cce91ed26868824d3578e61dc96dd7cb193aa7c761dc023",
+  "selection": "All rational rows tied for the smallest l1 of their stored parent-basis representative; fail if there are more than3. This is coordinate-dependent and does not assert minimum l1 across all representatives in an orbit. No specialized point or parameter enters selection."
+}

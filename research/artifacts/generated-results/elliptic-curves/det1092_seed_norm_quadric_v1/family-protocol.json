@@ -1,0 +1,16 @@
+{
+  "classification": "universal equation identity and fixed equation-only control test",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/verify_det1092_norm_quadric_family.sage": "989af1c4d87d777605fb1ba1f585191d07064e046da095a9a7535b6810aeef48"
+  },
+  "limits": {
+    "factorizations": 0,
+    "fixed_parameters": 9,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "seconds": 25
+  },
+  "rule": "Use only the parent equation and the same nine original parameters. Check the explicit rational quadric point (0,-3,2A,-A) and quadratic projection for the depressed cubic at every address. This tests no exceptional point, ideal class, unit or Selmer condition."
+}

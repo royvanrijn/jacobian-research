@@ -1,0 +1,21 @@
+{
+  "classification": "generic rational quadric, then retrospective integral admissibility",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_artin_v2/relative-00.json": "df431ff50a84e1afd46ccd22e017c6fa181cda3a14cb9d9f458ecd808fe1beb7",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_artin_v2/relative-01.json": "ca22e3500b66a3078193d5e013035b794ad8e395432c2393017d32f2ad56fcf2",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/construct_det1092_seed_norm_quadric.sage": "8636fd0c7e484144e5968fd886077e0d6cdc6b68f7378d839ea81489422adcd0"
+  },
+  "limits": {
+    "class_groups": 0,
+    "factorizations": 0,
+    "later_cascade_inputs": 0,
+    "norm_searches": 0,
+    "point_searches": 0,
+    "quadrics": 1,
+    "relative_ideals": 2,
+    "seconds": 25,
+    "unit_groups": 0
+  },
+  "rule": "Build the trace-zero norm-one quadric from the cubic alone. Use u0=theta^3/Norm(theta) as the projection point source, never a missing point or unit search. Then transport only the two already frozen relative norm equations to that same quadric. Retain the unit and projection-point exceptions explicitly; do not replace a failed constructor."
+}

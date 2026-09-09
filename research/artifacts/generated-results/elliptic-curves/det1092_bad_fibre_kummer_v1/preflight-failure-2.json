@@ -1,0 +1,8 @@
+{
+  "classification": "implementation preflight, not mathematical evidence",
+  "source_sha256": "ceb7cfdffee657fee1d5cf5829ea960626cdb23fac022aab736ab826e7103cb5",
+  "failing_line": "def primitive(p):return p/abs(p.content())",
+  "error": "AttributeError: Polynomial_rational_flint has no attribute content",
+  "correction": "Compute positive rational content explicitly from the integer lcm of coefficient denominators and gcd of the resulting integer coefficients.",
+  "claim": "No Sturm or control conclusion was obtained in this preflight. The subsequent construction checkpoint contains the completed bounded run."
+}

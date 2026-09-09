@@ -1,0 +1,18 @@
+{
+  "classification": "retrospective evaluation using frozen generic classes and places",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/302-first-unlock.json": "5cf378ce9f72653c49c30590e75148a8355ecb41ea46b3244b8a6e11d4d2c796",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/ideal-parity.json": "21adc9274c79dd902c4cbc4088ba4f5e6fae2157e48833407d9278eab73101d3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/project_det1092_seed_ideal_parity.sage": "bf1fed037246fa4b1d0ca3beb1cde7bb44d438e030f2d9614151ada8454fd0de"
+  },
+  "limits": {
+    "class_groups": 0,
+    "exceptional_classes": 1,
+    "generic_classes": 17,
+    "point_searches": 0,
+    "rational_primes": 20,
+    "seconds": 25
+  },
+  "selection": "Existing generic17 order, fixed ascending bad primes, canonical F2 linear solve. No place tuning."
+}

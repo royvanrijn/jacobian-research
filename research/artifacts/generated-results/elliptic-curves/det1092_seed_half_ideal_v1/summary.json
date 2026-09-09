@@ -1,0 +1,10 @@
+{
+  "boundary": "Squareclass equivalence only. No class-group computation, no proof of shortest representative, and no prospective nongeneric class source.",
+  "cases": [
+    "302-first-unlock",
+    "generic-section-0"
+  ],
+  "checker_sha256": "db905a94ee57947725d3be38b9852d69b8517e9886dcd6eb34231808a3685741",
+  "classification": "verified application",
+  "status": "PASS_TWO_RETROSPECTIVE_HALF_IDEAL_REDUCTIONS"
+}

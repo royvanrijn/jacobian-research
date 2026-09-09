@@ -1,0 +1,8 @@
+{
+  "classification": "retained checker type-comparison failure before any reduction conclusion",
+  "failed_line": "assert ZZ(1092).factor()==[(ZZ(2),2),(ZZ(3),1),(ZZ(7),1),(ZZ(13),1)]",
+  "correction": "Convert the Factorization object to list before comparing. The factorization, primes, counts and all mathematical gates are unchanged.",
+  "original_checker_sha256": "701be06a1010ee6bc07dd521b356e60b7475eae3e6630b7968d4c51319b36915",
+  "source_reconstruction": "The original checker is the corrected checker with list(ZZ(1092).factor()) replaced by ZZ(1092).factor(). No other change was made.",
+  "outcome": "No certificate written by the failed run"
+}

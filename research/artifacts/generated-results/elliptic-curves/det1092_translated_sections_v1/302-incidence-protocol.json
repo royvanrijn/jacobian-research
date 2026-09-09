@@ -1,0 +1,30 @@
+{
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "classification": "retrospective positive-control evaluation, after generic maps freeze",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-00.json": "ab06386d3f3f96fce402380b5a63f3333187204f25d3b994805765041144fc3f",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-01.json": "4c272f66f28f243eeb6f67f1402c11f47cf9e06179d5f366fcf7c17fa2ecfd28",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-02.json": "fb83d332878c034da10ecf04337e3b7133a8b5b1f45d91bdbdad4c518c811d45",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-03.json": "7699d5d0bad8f1e5ff69559fbc78f26c3af3033e64f517016c203afe19222ed3",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-04.json": "1a2c55dea18cf7a840856ab50ea14866ed5a656066e1e194779c1e3b4c140fbd",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/map-05.json": "6a8049f38b11f74ff695544e81819a6ac3847ee53b3ddf51886f125396d23693",
+    "artifacts/generated-results/elliptic-curves/det1092_translated_sections_v1/protocol.json": "05b11911543ba29386bb9ce5ba28678070e3d39dff75c7840be71382b422973e",
+    "elliptic-curves/cas/check_det1092_translated_302.sage": "bc088ee4ff553d111392ef0e3912ff3d770cc4de441c39350c918c0f1427f75e"
+  },
+  "limits": {
+    "cases": 6,
+    "exceptional_point_inputs": 0,
+    "map_retuning": 0,
+    "point_searches": 0,
+    "rational_factorizations_per_case": 1,
+    "seconds_per_case": 25
+  },
+  "parameter": "0"
+}

@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "label": "scale-0487239",
+      "n": 2,
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781"
+    },
+    {
+      "label": "scale-0257585",
+      "n": 3,
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781"
+    },
+    {
+      "label": "scale-0043332",
+      "n": 3,
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059"
+    },
+    {
+      "label": "scale-0590501",
+      "n": 3,
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513"
+    },
+    {
+      "label": "302-generic-section-control",
+      "n": 3,
+      "parameter": "0"
+    }
+  ],
+  "classification": "exact follow-up to five frozen UNKNOWN cover-incidence cases",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/controls.json": "96488b5890587f93a667e895be6b2b36ac63955f886750df218d715500cada59",
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/multiple2.json": "3c84a9eb0bea03764fd39d55f4479b7b36f9f4a402de1a5b5473417e697f513e",
+    "artifacts/generated-results/elliptic-curves/det1092_pencil_multiples_v2/multiple3.json": "1fd517b7146ab320812e379433a4b7eac3e9ba881e421300c7c994450cf5a92b",
+    "elliptic-curves/cas/factor_det1092_pencil_control_fibres.sage": "6e23d037701d8350531c723b797456c0b0af7d8dae14605084d609f18121478f"
+  },
+  "limits": {
+    "cases": 5,
+    "factorizations_per_case": 1,
+    "new_covers": 0,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "seconds_per_case": 25
+  },
+  "selection": "All and only the five UNKNOWN entries in the old control certificate, in its saved order. No residual point input."
+}

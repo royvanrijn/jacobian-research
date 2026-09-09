@@ -1,0 +1,28 @@
+{
+  "classification": "bounded generic-selected modular bisection certificate prototype",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-103186.json": "534549a82697ffb92004a767acb32b7a97e3aa020c5faa37ac2fa71c4485e18e",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-47755.json": "b607956363f1fea130c6121a37e21943beb400161560437520eead25397110d4",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-8044.json": "ae1ea1a8b482f8c7e237b49efdfd3a09d2144c79092522f4c62715479654d5f7",
+    "elliptic-curves/cas/prototype_det1092_modular_bisection_exclusion.sage": "a7931bf468804e46e3e9682221d2def6c522ecb14a170ffd7380fab07be7c92c"
+  },
+  "limits": {
+    "complete_atlas_runs": 0,
+    "new_CVPs": 0,
+    "new_orbits": 12,
+    "new_point_searches": 0,
+    "prime_trials": 45,
+    "rational_RR_kernel_solves": 0,
+    "regression_orbits": 3,
+    "seconds": 25
+  },
+  "prime_pool": [
+    149,
+    151,
+    157
+  ],
+  "selection": "First12 saved rational masks numerically, without target data; add exactly three completed-map regressions8044,47755,103186. Original parameter0 is used only for target incidence."
+}

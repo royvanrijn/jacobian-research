@@ -1,0 +1,57 @@
+{
+  "chain_word": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "family": "302",
+  "frame_sha256": "127f2fa4e76408f1b3949f1e9b5eba7045f8671fbf79f6f759f9ccfb91956bec",
+  "history": [],
+  "label": "arm-03-core16",
+  "omitted_basis_index": 2,
+  "origin": "Old generic RR reconstruction; diagnostic over its retained core",
+  "original": [
+    "40090141658728185373096882985937522593/41772",
+    "2985965441373011683266061054016858925653479948350150512/205379"
+  ],
+  "protocol_sha256": "09c8d2b3100116ddefa40fee9657ca147aecff88e3aea73f887a089399f60a01",
+  "reason": "FINITE_FOOTPRINT_ESCAPE",
+  "status": "NEW_INDEPENDENT_DIRECTION",
+  "steps": 0,
+  "terminal": [
+    "40090141658728185373096882985937522593/41772",
+    "2985965441373011683266061054016858925653479948350150512/205379"
+  ],
+  "terminal_code": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ]
+}

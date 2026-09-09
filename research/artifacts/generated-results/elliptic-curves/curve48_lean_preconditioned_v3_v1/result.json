@@ -1,0 +1,2342 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-replay-supervision/supervisor.json": "7e164f601c028f0bc045bb5d924ce63298ba4e76880f72860d5a211a1d68f5a1",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-supervision/supervisor.json": "c0797662488d77e023918857c8c60d869ac439f8f771d1f67e92d0732afd16dc",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/landscape/timings.json": "0e723662a206fe6d218b7ad5c2db56ce5554543543544c5834d9d355aeafce8f",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/reference-verified.json": "76a2e1f7e1b0fc09d81be60c6d0cb3e71f7fcdba72e151b53ef78d8a3df7264e",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/stage.json": "2693e57e90d1214504f43418a28f2e62df376ee31bced19240e8fd23e1ba1044",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/protocol.json": "64d715a7d4cda79ce3d351694af727a4af951d99218b997e3fae99d961eca1f5",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/terminal.json": "d927d332f383c5cb5b103fe85a3990f4c01fbba96d0a45c2f73cb6637dec794f",
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/verified.json": "c7ea33d2fc0a50a1740aa6582d05e2dff83b0365f7481950d92ff7c924d8352e"
+  },
+  "charts": 100,
+  "final_lower_bound": 27,
+  "initial_rank": 27,
+  "records": {
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-replay-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_lean_preconditioned_seed_v3.py",
+        "replay",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 1800
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-replay-supervision/worker.log",
+      "log_sha256": "9e6a16cfd138b9a078a8fe72423274bc013d6a12d9e6a61f934e9b61f70d8a24",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 294400000,
+      "pid": 2181927,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "75013588",
+      "termination_signal": null,
+      "timeout_seconds": 1800,
+      "wall_seconds": 117.09898552391678,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_lean_preconditioned_seed_v3.py",
+        "search",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 1800
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1-supervision/worker.log",
+      "log_sha256": "b3059cea419e8f5b77503f3d7581345dcf157debc5120a7e926339ec74579570",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 159113216,
+      "pid": 2130838,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "75004553",
+      "termination_signal": null,
+      "timeout_seconds": 1800,
+      "wall_seconds": 90.34835176006891,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/landscape/timings.json": {
+      "landscape_wall_seconds": 37.03086291102227,
+      "preparation_seconds": 0.7550439490005374,
+      "reference_solver": false
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/reference-verified.json": {
+      "rank_lower_bound": 27,
+      "stage_sha256": "2693e57e90d1214504f43418a28f2e62df376ee31bced19240e8fd23e1ba1044",
+      "status": "PASS_FULL_PRODUCTIVE_EPOCH_REPLAY"
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/epoch-00/stage.json": {
+      "after": 27,
+      "before": 27,
+      "censored": 0,
+      "censored_maps": 0,
+      "charts": 100,
+      "epoch": 0,
+      "last_chart_sha256": "51b4cad38d0833614af4c2ad2ae6d89b1c4dce4a0d19836ac5a93ed31e160090",
+      "map_attempts": [
+        {
+          "centre_index": 0,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "1db4d9bbfda7333a030b781db79afbfe4aa33d5f47940814f925583978cf60ee"
+        },
+        {
+          "centre_index": 0,
+          "policy": "factor_free",
+          "receipt_sha256": "ba1ae71d5258e5d9d8ea02b7d12bea6a996691f3f8f1f9e4ef0229bb711d787e"
+        },
+        {
+          "centre_index": 1,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "2702a57de8be44b6e21484843c5984c6f34d9903d6a3fbe2e139de6f3ee37813"
+        },
+        {
+          "centre_index": 1,
+          "policy": "factor_free",
+          "receipt_sha256": "0c81a63ab9bf22147f35a094600d39f31e6211884cf1584bc27582a900189092"
+        },
+        {
+          "centre_index": 2,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "abe396b73233ad470ebcd499f5f0a3f009c01e0cf016209b68a6227a98f64e36"
+        },
+        {
+          "centre_index": 2,
+          "policy": "factor_free",
+          "receipt_sha256": "7cb04fed71c2dd39a3c30574548f602c7bbaa53a8984a0028726af68db36014a"
+        },
+        {
+          "centre_index": 3,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "02d2a491dacaf46d59632b9c96ee43120c05c81d6b48b1a9b60b007b7241b7f0"
+        },
+        {
+          "centre_index": 3,
+          "policy": "factor_free",
+          "receipt_sha256": "0c66aa46cf523cecabe8d8dd7cdfb3785e20bb90b5e880bc9bb1344368f82dc2"
+        },
+        {
+          "centre_index": 4,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "4b1c6cc35046be7eb3cc2cc291dd8638c3a28521337e30e0ce273ef5b11efb4d"
+        },
+        {
+          "centre_index": 4,
+          "policy": "factor_free",
+          "receipt_sha256": "dd86f12cb782f063a28ea886c32eb19e2443beabc8d3c48cb43843b7dd46224e"
+        },
+        {
+          "centre_index": 5,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "0f8c6edcf073fef2d312bc3b38f757b6f32c22b09ba00e016e584e8eac0de6ba"
+        },
+        {
+          "centre_index": 5,
+          "policy": "factor_free",
+          "receipt_sha256": "7699563b63ab3a7ef260c1cc59cb1d68fa002ffc67e53a541de41833b443d55b"
+        },
+        {
+          "centre_index": 6,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "8bb9bd0b21848fe820bce29403698a14a3481ccc8ef0ae87eb8a09e76b61f987"
+        },
+        {
+          "centre_index": 6,
+          "policy": "factor_free",
+          "receipt_sha256": "9dfd7a6c95bbaee6d4ec63322925555b72edaa887338e5db047b2b24e682c789"
+        },
+        {
+          "centre_index": 7,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "7ce39a1ec30e7e1241e4d8daee8adde10df2bcbee02f3ce929a8242ff5093415"
+        },
+        {
+          "centre_index": 7,
+          "policy": "factor_free",
+          "receipt_sha256": "24ccedae915d7246f2f98d7fe0224857be883d659ff5e8b626bbaf503c4827f0"
+        },
+        {
+          "centre_index": 8,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "323c95922d1cb29bfe50af2dec425451e20a437dbe5b6af00fb5edffac2107d7"
+        },
+        {
+          "centre_index": 8,
+          "policy": "factor_free",
+          "receipt_sha256": "5750213bd557fbcf518c0fbd6ab3e4757c7ae4a96301e44b0c22494a1b8a1dbd"
+        },
+        {
+          "centre_index": 9,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "b255ed73a7b4b5edf31ce9748173da1c31dded7dbfab4daffeedd3d981072c7c"
+        },
+        {
+          "centre_index": 9,
+          "policy": "factor_free",
+          "receipt_sha256": "d6ea81538e4423e5542c3d8362184c47b9909ce20fb38aba19c852cd4518ce5d"
+        },
+        {
+          "centre_index": 10,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "3cd9503facf67bfa02b9991b4950f2433024cf3692a53037a6aec909da2545e7"
+        },
+        {
+          "centre_index": 10,
+          "policy": "factor_free",
+          "receipt_sha256": "31430be5426d51cc60a4968edb826cc0a0a9b141f85f13bf023df7dc3943da77"
+        },
+        {
+          "centre_index": 11,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "6f693db6150ecdc8149df9efeb951457ecd95cc7815e48156c36e050bafab17d"
+        },
+        {
+          "centre_index": 11,
+          "policy": "factor_free",
+          "receipt_sha256": "1d578338f983155013d34f9d6710c6cafcdfa78677eda71c8ce7de6cc9400ba9"
+        },
+        {
+          "centre_index": 12,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "4eab4a8a71337c8d110d40f0b1ea95be8cbe330baf4d99f8bd09e3820b7288f1"
+        },
+        {
+          "centre_index": 12,
+          "policy": "factor_free",
+          "receipt_sha256": "360b625e25dfd2c110137a7f0ecf9e1434cdea5f26effe1185260caa1296a1e7"
+        },
+        {
+          "centre_index": 13,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "0252b7ba7252364a3d604f008a48ab47b8b37cd97951a154cef17a2efa5644d7"
+        },
+        {
+          "centre_index": 13,
+          "policy": "factor_free",
+          "receipt_sha256": "6b3e484ebe020272907fd2755d9ad801f82aab6fb2f347f3259a133f7b3403ad"
+        },
+        {
+          "centre_index": 14,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "d892e467016f3584de20e17a6ae2d76657ba37d36caab2f4b86a71a9aa07b3e7"
+        },
+        {
+          "centre_index": 14,
+          "policy": "factor_free",
+          "receipt_sha256": "56b3d968c3d90a450b9a384b982a166c51391388cfc5f6494994b8db387ffdf8"
+        },
+        {
+          "centre_index": 15,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "90b6bf43237b09a58c3ed129bf765668013c0749a3c3c817ac0255bdf9e05d0e"
+        },
+        {
+          "centre_index": 15,
+          "policy": "factor_free",
+          "receipt_sha256": "3ba5d287c2b10e0809315a7c9cf7349f28c704f36f7bb1a4b750b08735d4acd3"
+        },
+        {
+          "centre_index": 16,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "1c38e27109b36c9627643961efcbde6380494bdb0f02502f4579354b8eb8c0e9"
+        },
+        {
+          "centre_index": 16,
+          "policy": "factor_free",
+          "receipt_sha256": "79e6366b8f0e0d4b654d7f6d68ef7d2ed1b623981da7e3fb5056ed5bcc56484a"
+        },
+        {
+          "centre_index": 17,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "7e8388787c603848540227539243755b8323ce695c778b3f8bf123ce518d36b0"
+        },
+        {
+          "centre_index": 17,
+          "policy": "factor_free",
+          "receipt_sha256": "0ae0e6b9d3bd4c235dd4d003825fd76ca524428bd8a51a07ab8ba1756a6944ba"
+        },
+        {
+          "centre_index": 18,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a234c95f40c70281dee305fa4f095a31da9075bc653bdf411c512e3272027cbb"
+        },
+        {
+          "centre_index": 18,
+          "policy": "factor_free",
+          "receipt_sha256": "70bd6451d1e00ab8c4bc183f1d9877c27296a1d8e47f85cb9b5b13e90bcca9f6"
+        },
+        {
+          "centre_index": 19,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "0580dd85229c1b006eb396f673bb26056b4ee313e12f62efa411e25d1301bfe4"
+        },
+        {
+          "centre_index": 19,
+          "policy": "factor_free",
+          "receipt_sha256": "64e9316104b4d4e91f5c3fae2b3938c366aa61ecead636c60e0c3814e9086ccd"
+        },
+        {
+          "centre_index": 20,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a788d6e567a72bd1570b2853b908b8cf7709d43e1b45b631cc89061be7283832"
+        },
+        {
+          "centre_index": 20,
+          "policy": "factor_free",
+          "receipt_sha256": "f02b7ba8b84575d7ccb5d8bb24cbcfefded0a086d3259dd8d94d8664bef30ae8"
+        },
+        {
+          "centre_index": 21,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "0aa45a38e94d84265d0dadfa2adb6ccbd5ebfb07b755d41bbc72fcdee2973d5a"
+        },
+        {
+          "centre_index": 21,
+          "policy": "factor_free",
+          "receipt_sha256": "e48cc293333a5877b8642474e7b7bc80decdd7363e6d2001062989e89cbeb983"
+        },
+        {
+          "centre_index": 22,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "0596b32b67ffa813b9b4e01757956dff12c6bd339031a75dd77b308fe0b35674"
+        },
+        {
+          "centre_index": 22,
+          "policy": "factor_free",
+          "receipt_sha256": "a69010a75949121a5f79842ad494f6233676080cbcd9a1c0c7a4a07bc6d73c5e"
+        },
+        {
+          "centre_index": 23,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "dfb667abf59f8d6ea0f7fef49dcec35422fbfbaa96e9bd19fab2e81d4d03683d"
+        },
+        {
+          "centre_index": 23,
+          "policy": "factor_free",
+          "receipt_sha256": "57666c4d1462d67e36cf12fbe0e4d5dc077c7056169a4d2572f3b100d2a494d4"
+        },
+        {
+          "centre_index": 24,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a24391443a6d33368ad486aa0e4d579086bb71cc129fdbc9708c355dff3276d1"
+        },
+        {
+          "centre_index": 24,
+          "policy": "factor_free",
+          "receipt_sha256": "6156e1ef77217f40bb52074b13ff028625319a49fd230606fdf65ddd8ca90f36"
+        },
+        {
+          "centre_index": 25,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "33a8bb59742850e74d5df87d549d3059156656c3db7ef8f0d06dc259f9434db5"
+        },
+        {
+          "centre_index": 25,
+          "policy": "factor_free",
+          "receipt_sha256": "ee76024acd24cf05a6bcb81d1cc5814b3fd6c8aa94140991b7f126fc1086eae8"
+        },
+        {
+          "centre_index": 26,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "9e8ae6ef8396ee6bd23b145f41910c546a7f4950cdcfcffadb58f8ef289a83b0"
+        },
+        {
+          "centre_index": 26,
+          "policy": "factor_free",
+          "receipt_sha256": "2ca481a923d4df7007ab9dab554b67724a90f04591495d4bcdee8757c58251af"
+        },
+        {
+          "centre_index": 27,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "328b3d6335348d14a1513b015e493c6786aaf8dbd3e7e0adeb97009ceed5b87b"
+        },
+        {
+          "centre_index": 27,
+          "policy": "factor_free",
+          "receipt_sha256": "21c764693abc82571512c47dc61c5befafdbd4babcfcecfdf51ad968c2374a09"
+        },
+        {
+          "centre_index": 28,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "738940d1a0ec8fb1a63e062ba6c8fc587fcca466343b9e958fd958d8fcbb6b2b"
+        },
+        {
+          "centre_index": 28,
+          "policy": "factor_free",
+          "receipt_sha256": "cb7fbc535e3ad5a968f0c380f938c615c4862c4b8792063d00014e39cc0cd828"
+        },
+        {
+          "centre_index": 29,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "09d026895254948aa2fd931d1a9d23774f26397d716292ec88df9dac54d5b5b5"
+        },
+        {
+          "centre_index": 29,
+          "policy": "factor_free",
+          "receipt_sha256": "d722d62459d22ddb8ac27f3c3ce0953370426eb974689308915dcf3dd67d2507"
+        },
+        {
+          "centre_index": 30,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "546439698fb953507a442c4f7db64c0202c29340d6368bd92aa8ac493886b3ab"
+        },
+        {
+          "centre_index": 30,
+          "policy": "factor_free",
+          "receipt_sha256": "79a59536ea0f81eadedc10dbd7c69ebf4b4c96b357599aac54629c64f9bbca96"
+        },
+        {
+          "centre_index": 31,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "be3fedbaeda0dac1612769b7fd4e058bc2c5cd6a17a5e9039618332428416e55"
+        },
+        {
+          "centre_index": 31,
+          "policy": "factor_free",
+          "receipt_sha256": "e2f1749f8e66f63a7b2cfa9e9e5b585c4cdf3d28caa6ecb63c8c2fc56e5538c5"
+        },
+        {
+          "centre_index": 32,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "d91fe6aa4dc4666b302dcfeda083f4590b7e90e7a239f79a63129546783adcde"
+        },
+        {
+          "centre_index": 32,
+          "policy": "factor_free",
+          "receipt_sha256": "49bc2951c96686f24cc7e080f867d3884a1f13539e2ed2fcfe7a308a28a4e077"
+        },
+        {
+          "centre_index": 33,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "dbdec7beba464158f08b2ac644063ea6a7957f70dcaa41658f929dae5f1bef7d"
+        },
+        {
+          "centre_index": 33,
+          "policy": "factor_free",
+          "receipt_sha256": "22239943c36740fe20f4940d6e169712d27e33b514d4976218aa0363d2b903f4"
+        },
+        {
+          "centre_index": 34,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "7c6c672da6bfb141dca560a2ec11b396739dc01102468c80b343970fe07adf30"
+        },
+        {
+          "centre_index": 34,
+          "policy": "factor_free",
+          "receipt_sha256": "d8fb65a3bff44637a85cde237e8b4ea0a5cfc20ac5b0f30915e99afd98ac4d83"
+        },
+        {
+          "centre_index": 35,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "31a326bb2ff86c44c5f087476201311af882cb2cda31e6519c2c1b0d0129b460"
+        },
+        {
+          "centre_index": 35,
+          "policy": "factor_free",
+          "receipt_sha256": "aa7b7e2f3aaf560440aa7f7d759f765cfca7c2a654dac466174100c8cc8e232b"
+        },
+        {
+          "centre_index": 36,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "4bf50b4185edd3b47351880b33488c1121409de33123ad9df4c49156e8a38584"
+        },
+        {
+          "centre_index": 36,
+          "policy": "factor_free",
+          "receipt_sha256": "a9a9c31277558d710894d13178ebf7af310e6e74e3ce2f2608edc4e1d88a271d"
+        },
+        {
+          "centre_index": 37,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "b27f186a3bf90c6e7fa0d3ee1e7d5d58f4d6525455892781a3a6383380abfd00"
+        },
+        {
+          "centre_index": 37,
+          "policy": "factor_free",
+          "receipt_sha256": "13a1e9f71b72748aca426266f304f3de8095e336172e6c22468b44a782743a51"
+        },
+        {
+          "centre_index": 38,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "803e941c7ecd889f72ead26eb39dafcd889de9c87ee2ca58f9cc6247c284574f"
+        },
+        {
+          "centre_index": 38,
+          "policy": "factor_free",
+          "receipt_sha256": "7bffeed6e46ef5b7fa85272f085f37fd56ab61cb34d8a8cf4e95a00630047aff"
+        },
+        {
+          "centre_index": 39,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a115609e373640aea77e1f940f583a65682f3585a6e816871adde617480d60af"
+        },
+        {
+          "centre_index": 39,
+          "policy": "factor_free",
+          "receipt_sha256": "e7c024583caf38a4a24af61f6a802ff70e1578c3aad3cb6f50069ae27f634d38"
+        },
+        {
+          "centre_index": 40,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "eb0b049f9f50707436fe7458f817d491a61697f288376fd0687a1b3d0cb93198"
+        },
+        {
+          "centre_index": 40,
+          "policy": "factor_free",
+          "receipt_sha256": "f8651e1b1ca4ed63e1fe2d2ff31aaf7f6fbdbe4ad55626c01a26a4d4a9c22056"
+        },
+        {
+          "centre_index": 41,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "7914046a5fe1992712a6aecd24e22d6445fb3490049736a42cd913497db25709"
+        },
+        {
+          "centre_index": 41,
+          "policy": "factor_free",
+          "receipt_sha256": "96be1378422f4ef3d8d8e91f9374fc5d2ff54eb1e9f58762d41f085afd9d681c"
+        },
+        {
+          "centre_index": 42,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a7c2a930fe59b89eccbba32c9ae491564e357295fb83cf64e93123a6f2225b4e"
+        },
+        {
+          "centre_index": 42,
+          "policy": "factor_free",
+          "receipt_sha256": "5d4e02b1db77726c17c84414bf07b77284e314e54e7d7e2c6fabf408f72c4fd9"
+        },
+        {
+          "centre_index": 43,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "a44e1388111f4385f85665906b089e5dd1fa5104b7efa0cbb00b750b3f7b8fb3"
+        },
+        {
+          "centre_index": 43,
+          "policy": "factor_free",
+          "receipt_sha256": "efdc4f8b79b05fbf368c8f63bc70a3487fb99bfafab399bfa5f8f08a67f25601"
+        },
+        {
+          "centre_index": 44,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "697a323da1ad86998de7eaae8a7f4e9aa750b6776cc7729a3360ac9b5b398405"
+        },
+        {
+          "centre_index": 44,
+          "policy": "factor_free",
+          "receipt_sha256": "f68fbda218967e0750a64cb783bb8f4faf4ee3b8b4104556f6e2c0c330fcf197"
+        },
+        {
+          "centre_index": 45,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "f615051195f4a949b5016211c26c6f70c5a662a6702aa4674443665c98957499"
+        },
+        {
+          "centre_index": 45,
+          "policy": "factor_free",
+          "receipt_sha256": "6111a8d53a5a9a860835792e7e527c1a0cbe5c7cf7d64cfd1334d6f3f1996072"
+        },
+        {
+          "centre_index": 46,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "655b6480047ca89b43ea679cd821d0f1ab9f6f14150a89ebf62889eb03003d56"
+        },
+        {
+          "centre_index": 46,
+          "policy": "factor_free",
+          "receipt_sha256": "7bcba0abcb1ffe898069c2159394660fcbfbdf5b16edaafa3475b9224e0a3e94"
+        },
+        {
+          "centre_index": 47,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "cfae967e5a30b66ea41357c4b34df2bdcd866e8eb01862161fef1eb585454a02"
+        },
+        {
+          "centre_index": 47,
+          "policy": "factor_free",
+          "receipt_sha256": "65e3948f9f37ec26a562b33c2d147ae8ba832f10d8b5eada267ae4c3b8b26d02"
+        },
+        {
+          "centre_index": 48,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "6b2803f7c9f4c320883d73ba959c7ef97d588900ffc531f1c8f6de05f65513e3"
+        },
+        {
+          "centre_index": 48,
+          "policy": "factor_free",
+          "receipt_sha256": "98ad66fb61d5c68fff82abf1113fab3f6f6cd59288a253d7c138faccfbab92c6"
+        },
+        {
+          "centre_index": 49,
+          "policy": "preconditioned_full",
+          "receipt_sha256": "9b31f8c2220d944d450ee47fe75643bd5e5cb2e53563ce304f16cc838245b4a7"
+        },
+        {
+          "centre_index": 49,
+          "policy": "factor_free",
+          "receipt_sha256": "867fe503210387cd3d53a26061a9e7bf9946c59a608e077243109c153351e5b9"
+        }
+      ],
+      "mod2_sha256": "95d48da6c0dba371bc725935e4b0135b07407e261187670f981ed9d59714ff33",
+      "modl_sha256": "e22e9316e80c367270652269f9a5ddf0df8e67b8dc732c3071150e62b5d31f8e",
+      "odd_ranks": {
+        "3": 27,
+        "5": 27
+      },
+      "selection_sha256": "3c3bffddd72b2883ca90d77b7f3ab2843eb3b9082750c056ba6de73d015199a0",
+      "skipped": [],
+      "stop_reason": "CHART_BUDGET_EXHAUSTED"
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/protocol.json": {
+      "anchor_count": 8,
+      "anchors_per_shell": 16,
+      "canonical_per_shell": 25,
+      "exact_cvp_node_limit": 2000000,
+      "family": "11952",
+      "generic_rank": 17,
+      "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+      "height": 125000,
+      "initial_rank": 27,
+      "inputs": {
+        "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/bank.json": "3b68c072f11100d45bc6b30579dd0a7cbaa7611321d19c8ed8189cdeb9f7b249",
+        "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/seed.json": "d1170636c4cd344bbb5fc04bc8a9a2e8582867224e1624981c6bcb911f2cf3e0",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/anchor-bank.json": "3b68c072f11100d45bc6b30579dd0a7cbaa7611321d19c8ed8189cdeb9f7b249",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/gains.json": "0708e314d91ead61e3130ea3d3517617b563283660b03e9ba36aba482aad0b1e",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/generic-cvp-proofs.json": "01381dcf1e2539a207b7f248d0df5342681e159208f639aecf3fd670168755b0",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/prepared.json": "b127b36261d55bd5d8367a0dcbcbfdfba8c4d3f588ddbe695a0f6c88adfa3138",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/protocol.json": "a3f9f210d0dffe30cfa74bbb32abc4291ea884c6fc4657bf7bca2f703d4e8a87",
+        "artifacts/local/elliptic-curves/curve48-v3-preparation-v1/seed-M27.json": "d1170636c4cd344bbb5fc04bc8a9a2e8582867224e1624981c6bcb911f2cf3e0",
+        "artifacts/local/elliptic-curves/new27-specialized-parity-six-v1/new-20260906-48/result.json": "dc8ec8031c0256fbe550c1ef48a857f8e389f6af59b17f342a9e3cab9eb63d59",
+        "artifacts/local/elliptic-curves/next24-r17-extended-pari-v1/11952-041/result.json": "8423989f33d6d3f4e26a9d0fcbdb3c7d9a159e00b44365624c0a10adfc511db0"
+      },
+      "map_python": "/home/royvanrijn/.local/bin/sage",
+      "map_python_sha256": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+      "map_rss_bytes": 1073741824,
+      "mapping_order": [
+        "preconditioned_full",
+        "factor_free"
+      ],
+      "max_charts": 100,
+      "max_epochs": 6,
+      "maximum_workers": 1,
+      "parameter": "2828/2015",
+      "prime_bound": 1000,
+      "replay_wall_limit_seconds": 1800,
+      "rss_limit_bytes": 3221225472,
+      "scaled_shells": [
+        24
+      ],
+      "schema": "prepared-parent-lean-preconditioned-maps.v1",
+      "scope": "New directions beyond the supplied certified native MW16/R17 seed. Exact parent-class selection follows the bound preparation derivation; productivity is not assumed. No withheld/higher-rank point or visibility labels enter execution. The curve90 masked pointwise nulls are not passed controls or rank upper bounds. Map replay verifies exact rational identities without rerunning minimization; no canonical minimality claim. Resource limits imply no point absence. This is a bounded discovery experiment, not a success prediction.",
+      "search_wall_limit_seconds": 1800,
+      "seconds_per_chart": 10,
+      "seconds_per_map": 5,
+      "selection": "V3 diversified extension shortlist over every frozen exact parent class; no per-shell anchor truncation. Full extension scoring, exact CVP. Factor-free chart profiles determine centre order. For each centre try factor-free-preconditioned full PARI minimization, then factor-free coordinates, skipping identical projective coordinates. Each map has its own5-second and1-GiB worker bound; resource-limited maps have explicit incomplete receipts. Rebuild immediately after the first standalone certified gain.",
+      "software": {
+        "numpy": "2.5.2",
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "sources": {
+        "elliptic-curves/cas/adaptive_visibility_cascade.sage": "016f9e721f3ad35158cf281c7a1fe5b19fd7ea3acbc19661685e229a39b96e0d",
+        "elliptic-curves/cas/adaptive_visibility_cascade_v3.sage": "9d4687ab2771ddb236a46239c3961ceb399f6d0bbee12da9d5b03334dac0006e",
+        "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+        "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+        "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+        "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+        "elliptic-curves/cas/future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+        "elliptic-curves/cas/lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+        "elliptic-curves/cas/lean_preconditioned_full_pari_mapping.sage": "775e8ab274f46f8f8c72032f3a9bd41ff534e8109a4d5d9da7d6a58e27a6e3d3",
+        "elliptic-curves/cas/lean_preconditioned_map_receipts.py": "5ce29100b7a3f907a4d65c1591790d247d4afa63de79c4ec160a73d78c273d6b",
+        "elliptic-curves/cas/lean_preconditioned_map_worker.py": "4fbada85974941ffe4f52add44d2c9d2625fe3757cbcf5f9ebd51361d77fb7f5",
+        "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+        "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+        "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+        "elliptic-curves/cas/prepare_extended20_mw16_pari_batch.sage": "7b00823cfce7c2092960f0a9ef82dd16b7a9a05de0762c7feeb6d3601359fb77",
+        "elliptic-curves/cas/prepare_lean_preconditioned_exposure.py": "715d472973f62f18cd866c033419b5e504ea98aa34a01623b00f20b35bc7b7e2",
+        "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+        "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+        "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+        "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+        "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+        "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+        "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+        "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+        "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+        "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+        "elliptic-curves/cas/run_lean_preconditioned_seed_v3.py": "8b673b920bee88a35257a18ac94e464b5dc788b76bd01e30946d3a742cbbf410",
+        "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+        "elliptic-curves/cas/v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2",
+        "elliptic-curves/cas/v3_warm_support.py": "b66f67b227fc79e8a688f350c6a1d2cd06eb050e2d9c7b8f03bf22a59ca62e71",
+        "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+        "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+        "elliptic-curves/cas/visibility_parent_subset.py": "cdf47888cd1513c49a82f6aa74c24de93e70f8d50b8139ab7de2b7a872c8f8a1",
+        "elliptic-curves/cas/visibility_selection_v3.py": "7a04867be884b72e628703f94b798f940c47b89aadd5acf7f09c237137fb744e"
+      },
+      "target_rank": 32
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/terminal.json": {
+      "charts": 100,
+      "claim_boundary": "Subgroup lower bounds only. Unadmitted points and bounded misses remain UNKNOWN.",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1577094019174714168434636908186423111110160909791441/48",
+        "43344287715587092510783929657389234067655937171190151958331676963514285230489/864"
+      ],
+      "points": [
+        [
+          "1230480033583917619212625129/12",
+          "1036741556586007221528199360850540961300"
+        ],
+        [
+          "161999074576193728923690541053279472228662188564929/663670975721216661979212",
+          "49588149798454440026618717537295755501799861288724715099403772961415687525/13006407856887759158271056561207401"
+        ],
+        [
+          "-4339567670669285129167071451877172726675288576311/681415990350596218702092",
+          "14338642673825801170162858117144561317056479601468649342976531158502200/13531520876852931165997682162876639"
+        ],
+        [
+          "1157654284041281635992377398904557369/62694515532",
+          "-28608791096465737208745898948574595321500382727335600/377635189764041"
+        ],
+        [
+          "68764798719625562995011568190271065089/47360337403692",
+          "18425475980579693784625009490533980278821588997035391100/7840618311329936189"
+        ],
+        [
+          "151036881690220270762984547362431409/1100392161132",
+          "187636171800518495891373227406001436885554811338228980/27768304486819259"
+        ],
+        [
+          "21051191571511424899516027609/12",
+          "-73475210637509826203345469350814003067710"
+        ],
+        [
+          "1173580300725080242228334977095469260289/1296753065292",
+          "-967138453264806674737176915586769355022229778212664727275/35523361533364489"
+        ],
+        [
+          "124238457993046055685470673612825889/185244492",
+          "1053407445018140059485790708209424853226919105056375/60652134089"
+        ],
+        [
+          "-1060423725205478959428005589699504914351/264438443849772",
+          "1121032455014573638575842900506019448595853476147613595750/103446313909164945629"
+        ],
+        [
+          "5458082045326560711406148561438149024060201/68200863309837228",
+          "305979797688262050268984287327853882648373624145261356948994525/428462620009615867948147"
+        ],
+        [
+          "2089702666482452498720180925128375929/241623914412",
+          "-58058010717250706754632706626175374566507517679928575/2857182652595699"
+        ],
+        [
+          "3528040919387204546928317/6",
+          "22289254238365877603322400306985795835/4"
+        ],
+        [
+          "-101911452537248077678620736751/20172",
+          "643627711444476468602468211386681442701475/68921"
+        ],
+        [
+          "51553899489166069594581757435234201/10452206028",
+          "-73177429956100558861648913524021089386392443576000/25706329708697"
+        ],
+        [
+          "-803549090168515404587244831790327865591/126743682078732",
+          "65478041746743345975380445415254943308652448280041911080/34325558376469218559"
+        ],
+        [
+          "8996293475318299259568686209/1452",
+          "-12230763261507928461332228741354767128000/1331"
+        ],
+        [
+          "269100332471276506883287344911032545721/203272085304588",
+          "-209046545685499577675848466692769414555107033373121380250/69717971848980077407"
+        ],
+        [
+          "1186092170428974101047606820580951289/173148655692",
+          "-20981174486497958694231948348533652028554557083842000/1733232472531561"
+        ],
+        [
+          "42606156574661088234266840937804971355289/1822149072600492",
+          "-205533842984519805048166078701256405724865510990160535715075/1871130109975309775411"
+        ],
+        [
+          "15523708479449095105338219531475921/3152002188",
+          "11897477338701893373112194467441847509056601358375/4257041621743"
+        ],
+        [
+          "-30491269366602043093802219499554159/15334176108",
+          "473915381102743684727606592348903019953450799525080/45679232777723"
+        ],
+        [
+          "-412096756512289953647302831607015/102386892",
+          "-269818328548949884842200980240357941320051293656/24922675961"
+        ],
+        [
+          "254949914320018382849540874481/53868",
+          "247939948592597071648958426077855066483500/300763"
+        ],
+        [
+          "-48955080881776388335708117765219/7729350",
+          "11971825084801364697006931800847563692041234779/5848541500"
+        ],
+        [
+          "-12616421497622802799591991/12",
+          "-9140499794627250579701250217385531760"
+        ],
+        [
+          "7296647844981252391698342963987089617/10803818642412",
+          "-4543291540088574711288637847509986829135950649610525220/854267843555939051"
+        ]
+      ],
+      "proof": {
+        "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+        "no_rational_2_torsion_prime": 17,
+        "rank_lower_bound": 27,
+        "signatures": [
+          {
+            "doubled_subgroup_order": 19,
+            "group_order": 38,
+            "prime": 29,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 21,
+            "group_order": 42,
+            "prime": 31,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 27,
+            "group_order": 54,
+            "prime": 41,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 27,
+            "group_order": 54,
+            "prime": 43,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 33,
+            "group_order": 66,
+            "prime": 53,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 36,
+            "group_order": 72,
+            "prime": 59,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 38,
+            "group_order": 76,
+            "prime": 61,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 20,
+            "group_order": 80,
+            "prime": 67,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 47,
+            "group_order": 94,
+            "prime": 79,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 51,
+            "group_order": 102,
+            "prime": 83,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 52,
+            "group_order": 104,
+            "prime": 89,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 29,
+            "group_order": 116,
+            "prime": 97,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 56,
+            "group_order": 112,
+            "prime": 101,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 60,
+            "group_order": 120,
+            "prime": 103,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 63,
+            "group_order": 126,
+            "prime": 107,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 63,
+            "group_order": 126,
+            "prime": 109,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 67,
+            "group_order": 134,
+            "prime": 113,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 73,
+            "group_order": 146,
+            "prime": 127,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 76,
+            "group_order": 152,
+            "prime": 131,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 78,
+            "group_order": 156,
+            "prime": 137,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 74,
+            "group_order": 148,
+            "prime": 139,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 84,
+            "group_order": 168,
+            "prime": 149,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 90,
+            "group_order": 180,
+            "prime": 157,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 44,
+            "group_order": 176,
+            "prime": 167,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "protocol_sha256": "64d715a7d4cda79ce3d351694af727a4af951d99218b997e3fae99d961eca1f5",
+      "rank_lower_bound": 27,
+      "stages": [
+        {
+          "after": 27,
+          "before": 27,
+          "censored": 0,
+          "censored_maps": 0,
+          "charts": 100,
+          "epoch": 0,
+          "last_chart_sha256": "51b4cad38d0833614af4c2ad2ae6d89b1c4dce4a0d19836ac5a93ed31e160090",
+          "map_attempts": [
+            {
+              "centre_index": 0,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "1db4d9bbfda7333a030b781db79afbfe4aa33d5f47940814f925583978cf60ee"
+            },
+            {
+              "centre_index": 0,
+              "policy": "factor_free",
+              "receipt_sha256": "ba1ae71d5258e5d9d8ea02b7d12bea6a996691f3f8f1f9e4ef0229bb711d787e"
+            },
+            {
+              "centre_index": 1,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "2702a57de8be44b6e21484843c5984c6f34d9903d6a3fbe2e139de6f3ee37813"
+            },
+            {
+              "centre_index": 1,
+              "policy": "factor_free",
+              "receipt_sha256": "0c81a63ab9bf22147f35a094600d39f31e6211884cf1584bc27582a900189092"
+            },
+            {
+              "centre_index": 2,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "abe396b73233ad470ebcd499f5f0a3f009c01e0cf016209b68a6227a98f64e36"
+            },
+            {
+              "centre_index": 2,
+              "policy": "factor_free",
+              "receipt_sha256": "7cb04fed71c2dd39a3c30574548f602c7bbaa53a8984a0028726af68db36014a"
+            },
+            {
+              "centre_index": 3,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "02d2a491dacaf46d59632b9c96ee43120c05c81d6b48b1a9b60b007b7241b7f0"
+            },
+            {
+              "centre_index": 3,
+              "policy": "factor_free",
+              "receipt_sha256": "0c66aa46cf523cecabe8d8dd7cdfb3785e20bb90b5e880bc9bb1344368f82dc2"
+            },
+            {
+              "centre_index": 4,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "4b1c6cc35046be7eb3cc2cc291dd8638c3a28521337e30e0ce273ef5b11efb4d"
+            },
+            {
+              "centre_index": 4,
+              "policy": "factor_free",
+              "receipt_sha256": "dd86f12cb782f063a28ea886c32eb19e2443beabc8d3c48cb43843b7dd46224e"
+            },
+            {
+              "centre_index": 5,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "0f8c6edcf073fef2d312bc3b38f757b6f32c22b09ba00e016e584e8eac0de6ba"
+            },
+            {
+              "centre_index": 5,
+              "policy": "factor_free",
+              "receipt_sha256": "7699563b63ab3a7ef260c1cc59cb1d68fa002ffc67e53a541de41833b443d55b"
+            },
+            {
+              "centre_index": 6,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "8bb9bd0b21848fe820bce29403698a14a3481ccc8ef0ae87eb8a09e76b61f987"
+            },
+            {
+              "centre_index": 6,
+              "policy": "factor_free",
+              "receipt_sha256": "9dfd7a6c95bbaee6d4ec63322925555b72edaa887338e5db047b2b24e682c789"
+            },
+            {
+              "centre_index": 7,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "7ce39a1ec30e7e1241e4d8daee8adde10df2bcbee02f3ce929a8242ff5093415"
+            },
+            {
+              "centre_index": 7,
+              "policy": "factor_free",
+              "receipt_sha256": "24ccedae915d7246f2f98d7fe0224857be883d659ff5e8b626bbaf503c4827f0"
+            },
+            {
+              "centre_index": 8,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "323c95922d1cb29bfe50af2dec425451e20a437dbe5b6af00fb5edffac2107d7"
+            },
+            {
+              "centre_index": 8,
+              "policy": "factor_free",
+              "receipt_sha256": "5750213bd557fbcf518c0fbd6ab3e4757c7ae4a96301e44b0c22494a1b8a1dbd"
+            },
+            {
+              "centre_index": 9,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "b255ed73a7b4b5edf31ce9748173da1c31dded7dbfab4daffeedd3d981072c7c"
+            },
+            {
+              "centre_index": 9,
+              "policy": "factor_free",
+              "receipt_sha256": "d6ea81538e4423e5542c3d8362184c47b9909ce20fb38aba19c852cd4518ce5d"
+            },
+            {
+              "centre_index": 10,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "3cd9503facf67bfa02b9991b4950f2433024cf3692a53037a6aec909da2545e7"
+            },
+            {
+              "centre_index": 10,
+              "policy": "factor_free",
+              "receipt_sha256": "31430be5426d51cc60a4968edb826cc0a0a9b141f85f13bf023df7dc3943da77"
+            },
+            {
+              "centre_index": 11,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "6f693db6150ecdc8149df9efeb951457ecd95cc7815e48156c36e050bafab17d"
+            },
+            {
+              "centre_index": 11,
+              "policy": "factor_free",
+              "receipt_sha256": "1d578338f983155013d34f9d6710c6cafcdfa78677eda71c8ce7de6cc9400ba9"
+            },
+            {
+              "centre_index": 12,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "4eab4a8a71337c8d110d40f0b1ea95be8cbe330baf4d99f8bd09e3820b7288f1"
+            },
+            {
+              "centre_index": 12,
+              "policy": "factor_free",
+              "receipt_sha256": "360b625e25dfd2c110137a7f0ecf9e1434cdea5f26effe1185260caa1296a1e7"
+            },
+            {
+              "centre_index": 13,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "0252b7ba7252364a3d604f008a48ab47b8b37cd97951a154cef17a2efa5644d7"
+            },
+            {
+              "centre_index": 13,
+              "policy": "factor_free",
+              "receipt_sha256": "6b3e484ebe020272907fd2755d9ad801f82aab6fb2f347f3259a133f7b3403ad"
+            },
+            {
+              "centre_index": 14,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "d892e467016f3584de20e17a6ae2d76657ba37d36caab2f4b86a71a9aa07b3e7"
+            },
+            {
+              "centre_index": 14,
+              "policy": "factor_free",
+              "receipt_sha256": "56b3d968c3d90a450b9a384b982a166c51391388cfc5f6494994b8db387ffdf8"
+            },
+            {
+              "centre_index": 15,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "90b6bf43237b09a58c3ed129bf765668013c0749a3c3c817ac0255bdf9e05d0e"
+            },
+            {
+              "centre_index": 15,
+              "policy": "factor_free",
+              "receipt_sha256": "3ba5d287c2b10e0809315a7c9cf7349f28c704f36f7bb1a4b750b08735d4acd3"
+            },
+            {
+              "centre_index": 16,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "1c38e27109b36c9627643961efcbde6380494bdb0f02502f4579354b8eb8c0e9"
+            },
+            {
+              "centre_index": 16,
+              "policy": "factor_free",
+              "receipt_sha256": "79e6366b8f0e0d4b654d7f6d68ef7d2ed1b623981da7e3fb5056ed5bcc56484a"
+            },
+            {
+              "centre_index": 17,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "7e8388787c603848540227539243755b8323ce695c778b3f8bf123ce518d36b0"
+            },
+            {
+              "centre_index": 17,
+              "policy": "factor_free",
+              "receipt_sha256": "0ae0e6b9d3bd4c235dd4d003825fd76ca524428bd8a51a07ab8ba1756a6944ba"
+            },
+            {
+              "centre_index": 18,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a234c95f40c70281dee305fa4f095a31da9075bc653bdf411c512e3272027cbb"
+            },
+            {
+              "centre_index": 18,
+              "policy": "factor_free",
+              "receipt_sha256": "70bd6451d1e00ab8c4bc183f1d9877c27296a1d8e47f85cb9b5b13e90bcca9f6"
+            },
+            {
+              "centre_index": 19,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "0580dd85229c1b006eb396f673bb26056b4ee313e12f62efa411e25d1301bfe4"
+            },
+            {
+              "centre_index": 19,
+              "policy": "factor_free",
+              "receipt_sha256": "64e9316104b4d4e91f5c3fae2b3938c366aa61ecead636c60e0c3814e9086ccd"
+            },
+            {
+              "centre_index": 20,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a788d6e567a72bd1570b2853b908b8cf7709d43e1b45b631cc89061be7283832"
+            },
+            {
+              "centre_index": 20,
+              "policy": "factor_free",
+              "receipt_sha256": "f02b7ba8b84575d7ccb5d8bb24cbcfefded0a086d3259dd8d94d8664bef30ae8"
+            },
+            {
+              "centre_index": 21,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "0aa45a38e94d84265d0dadfa2adb6ccbd5ebfb07b755d41bbc72fcdee2973d5a"
+            },
+            {
+              "centre_index": 21,
+              "policy": "factor_free",
+              "receipt_sha256": "e48cc293333a5877b8642474e7b7bc80decdd7363e6d2001062989e89cbeb983"
+            },
+            {
+              "centre_index": 22,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "0596b32b67ffa813b9b4e01757956dff12c6bd339031a75dd77b308fe0b35674"
+            },
+            {
+              "centre_index": 22,
+              "policy": "factor_free",
+              "receipt_sha256": "a69010a75949121a5f79842ad494f6233676080cbcd9a1c0c7a4a07bc6d73c5e"
+            },
+            {
+              "centre_index": 23,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "dfb667abf59f8d6ea0f7fef49dcec35422fbfbaa96e9bd19fab2e81d4d03683d"
+            },
+            {
+              "centre_index": 23,
+              "policy": "factor_free",
+              "receipt_sha256": "57666c4d1462d67e36cf12fbe0e4d5dc077c7056169a4d2572f3b100d2a494d4"
+            },
+            {
+              "centre_index": 24,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a24391443a6d33368ad486aa0e4d579086bb71cc129fdbc9708c355dff3276d1"
+            },
+            {
+              "centre_index": 24,
+              "policy": "factor_free",
+              "receipt_sha256": "6156e1ef77217f40bb52074b13ff028625319a49fd230606fdf65ddd8ca90f36"
+            },
+            {
+              "centre_index": 25,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "33a8bb59742850e74d5df87d549d3059156656c3db7ef8f0d06dc259f9434db5"
+            },
+            {
+              "centre_index": 25,
+              "policy": "factor_free",
+              "receipt_sha256": "ee76024acd24cf05a6bcb81d1cc5814b3fd6c8aa94140991b7f126fc1086eae8"
+            },
+            {
+              "centre_index": 26,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "9e8ae6ef8396ee6bd23b145f41910c546a7f4950cdcfcffadb58f8ef289a83b0"
+            },
+            {
+              "centre_index": 26,
+              "policy": "factor_free",
+              "receipt_sha256": "2ca481a923d4df7007ab9dab554b67724a90f04591495d4bcdee8757c58251af"
+            },
+            {
+              "centre_index": 27,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "328b3d6335348d14a1513b015e493c6786aaf8dbd3e7e0adeb97009ceed5b87b"
+            },
+            {
+              "centre_index": 27,
+              "policy": "factor_free",
+              "receipt_sha256": "21c764693abc82571512c47dc61c5befafdbd4babcfcecfdf51ad968c2374a09"
+            },
+            {
+              "centre_index": 28,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "738940d1a0ec8fb1a63e062ba6c8fc587fcca466343b9e958fd958d8fcbb6b2b"
+            },
+            {
+              "centre_index": 28,
+              "policy": "factor_free",
+              "receipt_sha256": "cb7fbc535e3ad5a968f0c380f938c615c4862c4b8792063d00014e39cc0cd828"
+            },
+            {
+              "centre_index": 29,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "09d026895254948aa2fd931d1a9d23774f26397d716292ec88df9dac54d5b5b5"
+            },
+            {
+              "centre_index": 29,
+              "policy": "factor_free",
+              "receipt_sha256": "d722d62459d22ddb8ac27f3c3ce0953370426eb974689308915dcf3dd67d2507"
+            },
+            {
+              "centre_index": 30,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "546439698fb953507a442c4f7db64c0202c29340d6368bd92aa8ac493886b3ab"
+            },
+            {
+              "centre_index": 30,
+              "policy": "factor_free",
+              "receipt_sha256": "79a59536ea0f81eadedc10dbd7c69ebf4b4c96b357599aac54629c64f9bbca96"
+            },
+            {
+              "centre_index": 31,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "be3fedbaeda0dac1612769b7fd4e058bc2c5cd6a17a5e9039618332428416e55"
+            },
+            {
+              "centre_index": 31,
+              "policy": "factor_free",
+              "receipt_sha256": "e2f1749f8e66f63a7b2cfa9e9e5b585c4cdf3d28caa6ecb63c8c2fc56e5538c5"
+            },
+            {
+              "centre_index": 32,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "d91fe6aa4dc4666b302dcfeda083f4590b7e90e7a239f79a63129546783adcde"
+            },
+            {
+              "centre_index": 32,
+              "policy": "factor_free",
+              "receipt_sha256": "49bc2951c96686f24cc7e080f867d3884a1f13539e2ed2fcfe7a308a28a4e077"
+            },
+            {
+              "centre_index": 33,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "dbdec7beba464158f08b2ac644063ea6a7957f70dcaa41658f929dae5f1bef7d"
+            },
+            {
+              "centre_index": 33,
+              "policy": "factor_free",
+              "receipt_sha256": "22239943c36740fe20f4940d6e169712d27e33b514d4976218aa0363d2b903f4"
+            },
+            {
+              "centre_index": 34,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "7c6c672da6bfb141dca560a2ec11b396739dc01102468c80b343970fe07adf30"
+            },
+            {
+              "centre_index": 34,
+              "policy": "factor_free",
+              "receipt_sha256": "d8fb65a3bff44637a85cde237e8b4ea0a5cfc20ac5b0f30915e99afd98ac4d83"
+            },
+            {
+              "centre_index": 35,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "31a326bb2ff86c44c5f087476201311af882cb2cda31e6519c2c1b0d0129b460"
+            },
+            {
+              "centre_index": 35,
+              "policy": "factor_free",
+              "receipt_sha256": "aa7b7e2f3aaf560440aa7f7d759f765cfca7c2a654dac466174100c8cc8e232b"
+            },
+            {
+              "centre_index": 36,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "4bf50b4185edd3b47351880b33488c1121409de33123ad9df4c49156e8a38584"
+            },
+            {
+              "centre_index": 36,
+              "policy": "factor_free",
+              "receipt_sha256": "a9a9c31277558d710894d13178ebf7af310e6e74e3ce2f2608edc4e1d88a271d"
+            },
+            {
+              "centre_index": 37,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "b27f186a3bf90c6e7fa0d3ee1e7d5d58f4d6525455892781a3a6383380abfd00"
+            },
+            {
+              "centre_index": 37,
+              "policy": "factor_free",
+              "receipt_sha256": "13a1e9f71b72748aca426266f304f3de8095e336172e6c22468b44a782743a51"
+            },
+            {
+              "centre_index": 38,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "803e941c7ecd889f72ead26eb39dafcd889de9c87ee2ca58f9cc6247c284574f"
+            },
+            {
+              "centre_index": 38,
+              "policy": "factor_free",
+              "receipt_sha256": "7bffeed6e46ef5b7fa85272f085f37fd56ab61cb34d8a8cf4e95a00630047aff"
+            },
+            {
+              "centre_index": 39,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a115609e373640aea77e1f940f583a65682f3585a6e816871adde617480d60af"
+            },
+            {
+              "centre_index": 39,
+              "policy": "factor_free",
+              "receipt_sha256": "e7c024583caf38a4a24af61f6a802ff70e1578c3aad3cb6f50069ae27f634d38"
+            },
+            {
+              "centre_index": 40,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "eb0b049f9f50707436fe7458f817d491a61697f288376fd0687a1b3d0cb93198"
+            },
+            {
+              "centre_index": 40,
+              "policy": "factor_free",
+              "receipt_sha256": "f8651e1b1ca4ed63e1fe2d2ff31aaf7f6fbdbe4ad55626c01a26a4d4a9c22056"
+            },
+            {
+              "centre_index": 41,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "7914046a5fe1992712a6aecd24e22d6445fb3490049736a42cd913497db25709"
+            },
+            {
+              "centre_index": 41,
+              "policy": "factor_free",
+              "receipt_sha256": "96be1378422f4ef3d8d8e91f9374fc5d2ff54eb1e9f58762d41f085afd9d681c"
+            },
+            {
+              "centre_index": 42,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a7c2a930fe59b89eccbba32c9ae491564e357295fb83cf64e93123a6f2225b4e"
+            },
+            {
+              "centre_index": 42,
+              "policy": "factor_free",
+              "receipt_sha256": "5d4e02b1db77726c17c84414bf07b77284e314e54e7d7e2c6fabf408f72c4fd9"
+            },
+            {
+              "centre_index": 43,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "a44e1388111f4385f85665906b089e5dd1fa5104b7efa0cbb00b750b3f7b8fb3"
+            },
+            {
+              "centre_index": 43,
+              "policy": "factor_free",
+              "receipt_sha256": "efdc4f8b79b05fbf368c8f63bc70a3487fb99bfafab399bfa5f8f08a67f25601"
+            },
+            {
+              "centre_index": 44,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "697a323da1ad86998de7eaae8a7f4e9aa750b6776cc7729a3360ac9b5b398405"
+            },
+            {
+              "centre_index": 44,
+              "policy": "factor_free",
+              "receipt_sha256": "f68fbda218967e0750a64cb783bb8f4faf4ee3b8b4104556f6e2c0c330fcf197"
+            },
+            {
+              "centre_index": 45,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "f615051195f4a949b5016211c26c6f70c5a662a6702aa4674443665c98957499"
+            },
+            {
+              "centre_index": 45,
+              "policy": "factor_free",
+              "receipt_sha256": "6111a8d53a5a9a860835792e7e527c1a0cbe5c7cf7d64cfd1334d6f3f1996072"
+            },
+            {
+              "centre_index": 46,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "655b6480047ca89b43ea679cd821d0f1ab9f6f14150a89ebf62889eb03003d56"
+            },
+            {
+              "centre_index": 46,
+              "policy": "factor_free",
+              "receipt_sha256": "7bcba0abcb1ffe898069c2159394660fcbfbdf5b16edaafa3475b9224e0a3e94"
+            },
+            {
+              "centre_index": 47,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "cfae967e5a30b66ea41357c4b34df2bdcd866e8eb01862161fef1eb585454a02"
+            },
+            {
+              "centre_index": 47,
+              "policy": "factor_free",
+              "receipt_sha256": "65e3948f9f37ec26a562b33c2d147ae8ba832f10d8b5eada267ae4c3b8b26d02"
+            },
+            {
+              "centre_index": 48,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "6b2803f7c9f4c320883d73ba959c7ef97d588900ffc531f1c8f6de05f65513e3"
+            },
+            {
+              "centre_index": 48,
+              "policy": "factor_free",
+              "receipt_sha256": "98ad66fb61d5c68fff82abf1113fab3f6f6cd59288a253d7c138faccfbab92c6"
+            },
+            {
+              "centre_index": 49,
+              "policy": "preconditioned_full",
+              "receipt_sha256": "9b31f8c2220d944d450ee47fe75643bd5e5cb2e53563ce304f16cc838245b4a7"
+            },
+            {
+              "centre_index": 49,
+              "policy": "factor_free",
+              "receipt_sha256": "867fe503210387cd3d53a26061a9e7bf9946c59a608e077243109c153351e5b9"
+            }
+          ],
+          "mod2_sha256": "95d48da6c0dba371bc725935e4b0135b07407e261187670f981ed9d59714ff33",
+          "modl_sha256": "e22e9316e80c367270652269f9a5ddf0df8e67b8dc732c3071150e62b5d31f8e",
+          "odd_ranks": {
+            "3": 27,
+            "5": 27
+          },
+          "selection_sha256": "3c3bffddd72b2883ca90d77b7f3ab2843eb3b9082750c056ba6de73d015199a0",
+          "skipped": [],
+          "stop_reason": "CHART_BUDGET_EXHAUSTED"
+        }
+      ],
+      "status": "SEARCH_FINISHED_PENDING_INDEPENDENT_REPLAY",
+      "stop_reason": "CHART_BUDGET_EXHAUSTED"
+    },
+    "artifacts/local/elliptic-curves/curve48-lean-preconditioned-v3-discovery-v1/verified.json": {
+      "charts": 100,
+      "claim_boundary": "Exact subgroup lower bound and declared finite-policy replay, not an exact rank.",
+      "rank_lower_bound": 27,
+      "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY",
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "terminal_sha256": "d927d332f383c5cb5b103fe85a3990f4c01fbba96d0a45c2f73cb6637dec794f"
+    }
+  },
+  "scope": "Verbatim sealed evidence export, not an additional arithmetic replay. Certified subgroup lower bound; no exact rank or conductor record claim.",
+  "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY"
+}

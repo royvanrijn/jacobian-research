@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1-replay-supervision/supervisor.json": "491e6f4af97fe966f850b4ea0abcc8f53c2d2cc829df50e2f70e7c8aea329bda",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1-supervision/supervisor.json": "b592a8cfb815c8f70231aa287c8b5713adc9d028516d8265d55c0fcbd8dd7ef1",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/epoch-00/chart-0099.json": "33727a25fe223c2673152368fd63fd7d25156778afde11d70db7196c1e01610c",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/epoch-00/landscape/selection.json": "402b425eb6352b6900366144162c81cd20490f1993881d72ae69a07b515c76ae",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/protocol.json": "3d8f71a3265359e0dc15725e8ecbe208fb1f06ce7e338e75d631065b06ac3ad6",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/terminal.json": "b3fda4d4960e9cfaaaca4ba2b11e8704ee6fa963f2d57835535930e352b15184",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-discovery-v1/verified.json": "210f3dec605cf1283debe16b755e4289a35e14cbc564d2f18542fb530d11bfa2"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 50,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 27,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/curve71_sampled_shell_cached_v1/result.json"
+}

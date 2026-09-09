@@ -1,0 +1,9 @@
+{
+  "boundary": "UNKNOWN cases remain UNKNOWN; no additional primes or rational root searches.",
+  "checker_sha256": "1a7be7259fbf3fe8de45d91b3d883391c4660b2126291e27416aafdd6a556862",
+  "classification": "independent verified modular application",
+  "controls_sha256": "96488b5890587f93a667e895be6b2b36ac63955f886750df218d715500cada59",
+  "exclusions": 13,
+  "status": "PASS_CONTROL_ROOT_FREE_CERTIFICATES",
+  "unknown": 5
+}

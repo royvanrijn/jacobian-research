@@ -1,0 +1,25 @@
+{
+  "boundary": "Uses the certified original full generic MW17. Does not prove generic rank exactly18, a specialized rank, rank19 on a common cover, or any302 incidence.",
+  "certificate_prime": 127,
+  "checker_sha256": "9456a8336ef933c16f5d0c0f7e9122d72760efe28bc27599e99dd3c4277cb8b4",
+  "checks": [
+    "generic quartic identity",
+    "universal elliptic map identity",
+    "manual tangent/chord multiple",
+    "exact stored quartic point",
+    "original discriminant degree24 squarefree and j degree24",
+    "full-degree squarefree ramification",
+    "modular Bezout gcd1",
+    "nonexceptional image and birational parameter recovery"
+  ],
+  "classification": "independent verified application and new construction",
+  "construction_sha256": "3c84a9eb0bea03764fd39d55f4479b7b36f9f4a402de1a5b5473417e697f513e",
+  "degree": 20,
+  "generic_rank_lower_bound": 18,
+  "ground_field": "Q",
+  "n": 2,
+  "new_independent_directions": 1,
+  "seconds": 1.8734574459958822,
+  "smooth_ramification_points": 38,
+  "status": "PASS_INDEPENDENT_RANK18_RATIONAL_BASE_CHANGE"
+}

@@ -1,0 +1,29 @@
+{
+  "classification": "exact old-carrier incidence on all modular survivors",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/incidence-protocol-v2.json": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-101.json": "058ca953058d7d71ec375ca99049a1915e9f14058b0c73f43336b08933824a2f",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-107.json": "94ac7e0c94a0081ab7b1db8be7599df97ed7858f78007763873d681aeeea0fcd",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-109.json": "b78e1e0f23e7a9a85b55b55137b91e534a757b60cdcdefe49b1b3f9298a15421",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-127.json": "edc24d20d1bf5cd84aaf50d85cf63df5b7c68d1efef6bc35823d6a71b160c012",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-131.json": "990396ba54dec2758f282496eac36c0c8f5b3d8eb6b33f6654cfb31a3c991b72",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-137.json": "f82d3df27bcafaac1ee3647427db2cd452aa67370dc8cb6ad1688cf6c0ca3ec4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-139.json": "5fe16cf148546d07eeb91e1828adc09501b1d2f701d25ed53bb225eeea88a3bc",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-149.json": "3b1fde6c2353dace0f7a4d665a563d6825642e608920144e86ef124a194290f3",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-157.json": "aea202cd11bcd510455e20d4560937035116f23128f62c482200305135eb2872",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-163.json": "cff18620bacc9a76f2961e09414f40fd2a6b15a9de05376eae863f1f83b1c0ad",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-47.json": "bd2c578e78383335bc18cb1508825a5e718695b2c8870faa65ffebe79c69fe9d",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-53.json": "51ec789b71581da438e83a3b89c9ca56d886e200731e7137836a452597d3e4d4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/sources.json": "2ba6e24c51500170f14f4e132ef5731bdd3532d0c501706e151def493ba783d0",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "elliptic-curves/cas/lift_det1092_low_degree_source_survivors.sage": "847e0eeccb2c7ce1c43e03a0dbaefe449a977c109ad44fd6b4d2dcd3c3cb82c2"
+  },
+  "point_searches": 0,
+  "seconds": 25,
+  "source_cap": 12,
+  "sources": [
+    179,
+    1268
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "boundary": "Only first12 new masks and three old regressions tested. A split reduction is UNKNOWN over Q. No rational RR kernel, bisection equation, point search or complete40917-orbit run was computed.",
+  "classification": "exact modular non-incidence certificates, not a full-atlas claim",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-103.json": "7a5ae44c8cb524238d20400deacd563f9f1c9ce6d8cc39e9b26420199b6632fe",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-103186.json": "e70163e49c2531c01274160b797e32e5002d2d1cd2e48ff91b3551e7d62aa061",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-107.json": "b5b5a7dfcf0091cebadcd6e55f45e38ef3d56987625b8d15788321f676e37286",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-109.json": "545ff02b7d568eb0a69bf3e67ab5d51cb8f632f4f66514fb1e7bc3235947a8e6",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-110.json": "d6eb0e5219c15b438649408315d899fa361e5b1ab3896a86cc68bceef53644ec",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-111.json": "e184bc235729d335f8c07968e9ecc1f6410b0bc57aa2fe2d20272fe85df4dfd3",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-115.json": "1d84c3309a361e3ad84b91abadf19f7f501eacc5b405e5ef8db940bf8ebd1386",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-117.json": "e59d219c0209403366f4be4cdb9a8840ccf66cd712cd638a269c0f2d1eaf1d82",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-121.json": "ba22ccc9551161d0875d6bfeb1508a2299245efe430d1e9cd26db1d1d912785f",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-122.json": "887fd9cd46695b2cb999df29d3f4e9dc05a908a9edaaa5bfee835b600059a4ab",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-123.json": "d2632eb3308f0cc25dfa52542a8a3a1efef43644a00697b770a23a3fc39646a8",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-47755.json": "4de2c966574bf5c0f7ae0996b36d75a853abc625cadf7da04777f657985d9d54",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-61.json": "8c0f82a3808a0a0e3328bfccac8ccc62dddb41c7d71e0c1a8e942371e1acd170",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-8044.json": "0d284cd3f1036a028b62ceed6948e053a6ceea4a8d582cf702c0d7e5f1200a96",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/orbit-87.json": "894697b49d102274f57cbf89d779314eda6586a3c6a594a21d93008826446d16",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/selection.json": "d802e2c9d331fa01dbd3a98fcc94a9d3fe720a7d874c95f31868892e693ed7b8",
+    "elliptic-curves/cas/prototype_det1092_modular_bisection_exclusion.sage": "a7931bf468804e46e3e9682221d2def6c522ecb14a170ffd7380fab07be7c92c"
+  },
+  "new_excluded": [
+    87,
+    103,
+    109,
+    110,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_unknown": [
+    61,
+    107,
+    111
+  ],
+  "primes": [
+    149,
+    151,
+    157
+  ],
+  "regression_excluded": [
+    8044,
+    103186
+  ],
+  "regression_masks": [
+    8044,
+    47755,
+    103186
+  ],
+  "selected_new_masks": [
+    61,
+    87,
+    103,
+    107,
+    109,
+    110,
+    111,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "status": "PASS_BOUNDED_MODULAR_RR_PROTOTYPE",
+  "status_counts": {
+    "EXCLUDED_NONSQUARE": 20,
+    "UNKNOWN_BAD_TARGET_OR_TRACE": 1,
+    "UNKNOWN_COEFFICIENT_DENOMINATOR": 1,
+    "UNKNOWN_RR_RANK_DROP": 3,
+    "UNKNOWN_SPLIT_OR_REPEATED_REDUCTION": 20
+  },
+  "trial_count": 45
+}

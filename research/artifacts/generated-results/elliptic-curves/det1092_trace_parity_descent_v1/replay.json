@@ -1,0 +1,394 @@
+{
+  "boundary": "No ordinary descended generic class can restrict to the moving odd-trace branch. A separately fitted class may still specialize to a known branch at one parameter. Split-branch independence and member selection are separate.",
+  "checker_sha256": "55ca142572f80335333dd0ebfbf0c2e4aef941bd3bc0bfe1017fe705385f396d",
+  "classification": "new written deductions with symbolic checks and reused independent certificates",
+  "constructive_even_trace_direction": true,
+  "diagnostic_control_decisions_reused": [
+    {
+      "family": "302",
+      "label": "anti-trace-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "302",
+      "label": "anti-trace-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "302",
+      "label": "arm-03-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-03-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-04-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-04-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 3
+    },
+    {
+      "family": "302",
+      "label": "arm-06-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-06-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-07-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-07-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-10-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-10-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-11-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-11-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-12-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-12-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 3
+    },
+    {
+      "family": "302",
+      "label": "arm-14-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-14-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "302",
+      "label": "arm-16-core16",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "arm-16-full17",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 3
+    },
+    {
+      "family": "302",
+      "label": "branch-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "302",
+      "label": "branch-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "dependent-conic",
+      "label": "anti-trace-0",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "dependent-conic",
+      "label": "anti-trace-1",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 3
+    },
+    {
+      "family": "dependent-conic",
+      "label": "branch-0",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "dependent-conic",
+      "label": "branch-1",
+      "status": "INHERITED_RATIONAL_SPAN",
+      "steps": 2
+    },
+    {
+      "family": "other-conic",
+      "label": "anti-trace-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "other-conic",
+      "label": "anti-trace-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "other-conic",
+      "label": "branch-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "other-conic",
+      "label": "branch-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "rank21-seed",
+      "label": "anti-trace-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "rank21-seed",
+      "label": "anti-trace-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "rank21-seed",
+      "label": "branch-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "rank21-seed",
+      "label": "branch-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "small-conic",
+      "label": "anti-trace-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "small-conic",
+      "label": "anti-trace-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 1
+    },
+    {
+      "family": "small-conic",
+      "label": "branch-0",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    },
+    {
+      "family": "small-conic",
+      "label": "branch-1",
+      "status": "NEW_INDEPENDENT_DIRECTION",
+      "steps": 0
+    }
+  ],
+  "formal_verification": false,
+  "generic_centres": [
+    {
+      "generic_branch_class_descends": false,
+      "halving_cover_degree": 4,
+      "halving_cover_genus": 9,
+      "height": 10,
+      "label": "historical-first-centre",
+      "trace_parity": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trace_word": [
+        1,
+        -1,
+        -2,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "generic_branch_class_descends": false,
+      "halving_cover_degree": 4,
+      "halving_cover_genus": 9,
+      "height": 8,
+      "label": "norm8-orbit20124",
+      "trace_parity": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trace_word": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "generic_branch_class_descends": false,
+      "halving_cover_degree": 4,
+      "halving_cover_genus": 9,
+      "height": 10,
+      "label": "conic-orbit8044",
+      "trace_parity": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trace_word": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_replay_v1.json": "b077483b22a8236eac0c4f8ec780fac93a9a3aea521057ea981badd083452008",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_net_halving_gate_v1.json": "750745e5c5fbea22a525fa3d5e50a10751aa6d5064988bbd458f5cd73d35abc4",
+    "artifacts/generated-results/elliptic-curves/det1092_split_descent_v1/independent-replay.json": "17a9154a2b3e06573546100a08e5f9087e2e96882b2df9a0591e81b74764fb25",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/construction.json": "ae40f90e2417f00b079d6727f64caae83d01985e086565a20e72b5cd7ad306f7",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_twist_kummer_v1/replay.json": "c0ee81fea1f008a3d0c9764f42b80c4569235ce1f5e4b847ca86b0d1bf2d6d58"
+  },
+  "no_new_parameters": true,
+  "no_point_searches": true,
+  "nonzero_trace_parity_labels": 131071,
+  "protocol_sha256": "656e14aa411c4d5b5e15a1b6f09588e60f531b82c8f4764e50edc939dcc12f47",
+  "rational_bisection_orbits_with_obstruction": 40917,
+  "status": "PASS_TRACE_PARITY_DESCENT_IDENTITIES_AND_INPUTS",
+  "uniform_geometric_conclusion": "For every nonzero M17 parity, the connected halving cover has degree4 and genus9; inherited M17 remains2-saturated under any nonconstant base change of genus below9.",
+  "universal_halving_discriminant_identity": true,
+  "universal_norm_identity": true
+}

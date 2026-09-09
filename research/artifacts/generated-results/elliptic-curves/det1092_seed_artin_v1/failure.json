@@ -1,0 +1,6 @@
+{
+  "status": "CHECKER_TYPE_ERROR_BEFORE_ARTIN_EVALUATION",
+  "reason": "Sage column slicing produced a one-column matrix instead of a vector in the correction solve.",
+  "resolution": "Use A.column(17) in v2; no mathematical selection rule or limit changes.",
+  "successor": "../det1092_seed_artin_v2"
+}

@@ -1,0 +1,5 @@
+{
+  "classification": "implementation preflight failure; no rank or incidence conclusion",
+  "failure": "Compared three projective Sage coordinates to two affine coordinates in the old frame",
+  "correction": "Use P.xy() for both old-frame comparisons; v2 retains the same mathematical selection rule and inputs."
+}

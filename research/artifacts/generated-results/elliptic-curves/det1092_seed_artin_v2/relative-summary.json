@@ -1,0 +1,39 @@
+{
+  "checker_sha256": "7c537246eff8705633474c2e5a6e959712459e7bb17865e427929b226cdba24a",
+  "classification": "retrospective verified application",
+  "compatible_words": [
+    [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  ],
+  "criterion": "The seed ideal is in the inherited ideal-class image iff at least one of these two relative ideals is principal. Neither direction follows merely from its reduced norm.",
+  "generic_kernel": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "status": "PASS_TWO_ARTIN_COMPATIBLE_IDEAL_REDUCTIONS",
+  "unit_found": false
+}

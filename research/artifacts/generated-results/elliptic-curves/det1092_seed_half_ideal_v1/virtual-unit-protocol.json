@@ -1,0 +1,19 @@
+{
+  "classification": "retrospective construction using the fixed generic parity solution",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/302-first-unlock.json": "5cf378ce9f72653c49c30590e75148a8355ecb41ea46b3244b8a6e11d4d2c796",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/generic-projection.json": "1b9ca20e12b4b11442a51ef16f3347a0714f9d723968ff98ce9364a63beda51c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/construct_det1092_seed_virtual_unit.sage": "381a6a748335cc7647809dc4f6d9ef11769c029f7b5ff2d658d15de7557d5ab7"
+  },
+  "limits": {
+    "LLL_dimension": 3,
+    "LLL_vectors_tested": 1,
+    "class_groups": 0,
+    "normalized_classes": 1,
+    "point_searches": 0,
+    "seconds": 25,
+    "unit_groups": 0
+  },
+  "selection": "First vector of exact trace-LLL of the inverse of the certified square-root ideal. Not a shortest-vector assertion."
+}

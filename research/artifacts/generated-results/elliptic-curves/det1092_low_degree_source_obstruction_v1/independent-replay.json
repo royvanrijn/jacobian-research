@@ -1,0 +1,114 @@
+{
+  "boundary": "Not all original sections, alternating-fibration automorphisms, other302 seeds, or all representatives of this original quotient direction. No prospective positive302 seed.",
+  "checker_sha256": "98badfd2ff4ebdd69708ee5e4329ace7befff034f8d8e75626f8a6ab79818d95",
+  "classification": "new intrinsic-source obstruction, retrospectively evaluated on first302 carrier",
+  "conjugate_survivors": [
+    179,
+    1268
+  ],
+  "deduction": "Neither first seed nor carrier conjugate lies on the orbit, under arbitrary generic alternate translations and inversion, of any original section of alternate degree<=2.",
+  "degree_counts": {
+    "0": 10,
+    "1": 130,
+    "2": 1168
+  },
+  "exact_quadratic_exclusions": 2,
+  "independent_affine_nodes": 21035,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/replay.json": "3bd5f6bb512105b67cac27a6ecfb5cc4bddf256198733cc327256643903bddea",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/geometry-protocol.json": "b25b285fc1bb0db5183659105b35b22ee0b9bd1dba6cb9cbfd0526b15f3c3e51",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/incidence-protocol-v2.json": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-1268.json": "ee2e3f81c787995da075e88c6506ce4dc045cb40e740c9a17abce25ca9d04a76",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-179.json": "56969ef3c818c278e4c40a4ea98b3de839e2faa3eefae08ad4b0f38e4b32d198",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-protocol.json": "78943b41e11773690448413d707e1ecc0a031e7baec5651ba0f56aa829c222a9",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/lift-summary.json": "bf244b66023e53face64d3a72134860a2b1eec167d5b1c22f3ed40ad37038d52",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-101.json": "058ca953058d7d71ec375ca99049a1915e9f14058b0c73f43336b08933824a2f",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-107.json": "94ac7e0c94a0081ab7b1db8be7599df97ed7858f78007763873d681aeeea0fcd",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-109.json": "b78e1e0f23e7a9a85b55b55137b91e534a757b60cdcdefe49b1b3f9298a15421",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-127.json": "edc24d20d1bf5cd84aaf50d85cf63df5b7c68d1efef6bc35823d6a71b160c012",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-131.json": "990396ba54dec2758f282496eac36c0c8f5b3d8eb6b33f6654cfb31a3c991b72",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-137.json": "f82d3df27bcafaac1ee3647427db2cd452aa67370dc8cb6ad1688cf6c0ca3ec4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-139.json": "5fe16cf148546d07eeb91e1828adc09501b1d2f701d25ed53bb225eeea88a3bc",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-149.json": "3b1fde6c2353dace0f7a4d665a563d6825642e608920144e86ef124a194290f3",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-157.json": "aea202cd11bcd510455e20d4560937035116f23128f62c482200305135eb2872",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-163.json": "cff18620bacc9a76f2961e09414f40fd2a6b15a9de05376eae863f1f83b1c0ad",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-47.json": "bd2c578e78383335bc18cb1508825a5e718695b2c8870faa65ffebe79c69fe9d",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/prime-53.json": "51ec789b71581da438e83a3b89c9ca56d886e200731e7137836a452597d3e4d4",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/sources.json": "2ba6e24c51500170f14f4e132ef5731bdd3532d0c501706e151def493ba783d0"
+  },
+  "modular_exclusions": 1166,
+  "prime_records": [
+    {
+      "new_exclusions": 340,
+      "prime": 47,
+      "remaining": 828,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 332,
+      "prime": 53,
+      "remaining": 496,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "prime": 101,
+      "remaining": 496,
+      "status": "UNKNOWN_PENCIL_GAUSS_CHART"
+    },
+    {
+      "new_exclusions": 218,
+      "prime": 107,
+      "remaining": 278,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 136,
+      "prime": 109,
+      "remaining": 142,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 70,
+      "prime": 127,
+      "remaining": 72,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 34,
+      "prime": 131,
+      "remaining": 38,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 26,
+      "prime": 137,
+      "remaining": 12,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 2,
+      "prime": 139,
+      "remaining": 10,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 4,
+      "prime": 149,
+      "remaining": 6,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 2,
+      "prime": 157,
+      "remaining": 4,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    },
+    {
+      "new_exclusions": 2,
+      "prime": 163,
+      "remaining": 2,
+      "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE"
+    }
+  ],
+  "status": "PASS_INDEPENDENT_INTRINSIC_LOW_DEGREE_SOURCE_ORBIT_OBSTRUCTION"
+}

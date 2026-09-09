@@ -1,0 +1,490 @@
+{
+  "status": "BOUNDED_POST_DISCOVERY_CONDUCTOR_AUDIT",
+  "source_sha256": "547081164bc8beac9624b2750cbcec9772e2e55f5b240637399aee8d3c044287",
+  "database_sha256": "1ec915b1d108f906791f5361f8150d328ce96e5f41d95d9e78d9a354e175e53a",
+  "database": "artifacts/local/elliptic-curves/next12-current-catalogue-v1/database.json",
+  "rows": [
+    {
+      "family": "074d9",
+      "audit": {
+        "status": "CERTIFIED_LOCAL_BOUNDS_PENDING_FACTORIZATION",
+        "input": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/074d9-exact-complement-discovery/terminal.json",
+        "input_sha256": "3d81961ebc425978506326c081b300ef5a10072d9d8a662aa13014a9898bb5c4",
+        "source_sha256": "547081164bc8beac9624b2750cbcec9772e2e55f5b240637399aee8d3c044287",
+        "curve": [
+          "0",
+          "0",
+          "0",
+          "-26980731709197945620138071348411879999191689756639554107",
+          "59050784949742678020206400453950608563158769918311681332025100317700909596864038806"
+        ],
+        "rank_lower_bound": 24,
+        "discriminant": "249364947710618529086589976430893190326607194827996611994046937642999596000912745169460477496550250407979447815295653547541464372899176471407530383497847589411225600000",
+        "local_data": [
+          {
+            "prime": "2",
+            "raw_discriminant_valuation": 29,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "3",
+            "raw_discriminant_valuation": 24,
+            "conductor_valuation": 0
+          },
+          {
+            "prime": "5",
+            "raw_discriminant_valuation": 5,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "7",
+            "raw_discriminant_valuation": 3,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "13",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "31",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "37",
+            "raw_discriminant_valuation": 3,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "79",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "83",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          }
+        ],
+        "unprocessed_cofactor": "4337961020129465101915315515212240566796719360476996989704583052931152968757270602005267271781683596537187743273099264238999",
+        "conductor_lower_bound": "253227995930",
+        "conductor_upper_bound": "1098493175549842836900888552490831107334980543352221196567534409229996978542673537162498470537294377632466739947206265363199233319274070",
+        "claim_boundary": "Post-discovery conductor arithmetic only; no record or exact rank claim."
+      },
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_fresh6_conductors.sage",
+          "--packet",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/074d9-exact-complement-discovery/terminal.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/074d9.json"
+        ],
+        "limits": {
+          "wall_seconds": 30,
+          "rss_bytes": 1073741824,
+          "address_space_bytes": null,
+          "pari_stack_bytes": 256000000,
+          "terminate_grace_seconds": 1.0,
+          "poll_seconds": 0.05,
+          "cgroup": null
+        },
+        "outcome": "strict_wall_timeout",
+        "pid": 1126003,
+        "start_token": "75767796",
+        "returncode": -15,
+        "wall_seconds": 31.02046493208036,
+        "peak_observed_rss_bytes": 227950592,
+        "timeout_seconds": 30,
+        "failure_reason": "strict_wall_timeout",
+        "termination_signal": 15,
+        "rss_limit_bytes": 1073741824,
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/074d9-supervision/worker.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "audit_sha256": "3e9e25dcb08b1b5e76718fa2f39b5c52e763f4ce328162c2ebf922160dd50e76",
+      "pinned_benchmark": {
+        "conductor": "361660950250291954113011326751617907627414070443777168347285410734060239220929310535800",
+        "id": 548
+      },
+      "exact_conductor_beats_pinned_benchmark": null
+    },
+    {
+      "family": "07ca9",
+      "audit": {
+        "status": "CERTIFIED_LOCAL_BOUNDS_PENDING_FACTORIZATION",
+        "input": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json",
+        "input_sha256": "895dae912ca8696f3e0f26a1b6acdafed21b5d6fd03c0a46b3fccc4e962f0484",
+        "source_sha256": "547081164bc8beac9624b2750cbcec9772e2e55f5b240637399aee8d3c044287",
+        "curve": [
+          "0",
+          "0",
+          "0",
+          "-38252594497798650437978429510939012859416163951792",
+          "85143840849510667719557886190055400274350525924968812271422140078149026176"
+        ],
+        "rank_lower_bound": 23,
+        "discriminant": "450533254474142669922596266320420644684427280233488997860727217752305469819826779135846417169968825881032108443260596326100501649565598095507456000000",
+        "local_data": [
+          {
+            "prime": "2",
+            "raw_discriminant_valuation": 41,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "3",
+            "raw_discriminant_valuation": 20,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "5",
+            "raw_discriminant_valuation": 6,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "7",
+            "raw_discriminant_valuation": 6,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "13",
+            "raw_discriminant_valuation": 5,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "17",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "53",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "67",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          }
+        ],
+        "unprocessed_cofactor": "23623689225123617128035897761227806398104510154283440873386917639558608444076641104129358168379921574979",
+        "conductor_lower_bound": "164801910",
+        "conductor_upper_bound": "3893229105546792088809030499615066439517843653040305737306232196011950228525958640345027113223112681206747409890",
+        "claim_boundary": "Post-discovery conductor arithmetic only; no record or exact rank claim."
+      },
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_fresh6_conductors.sage",
+          "--packet",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/07ca9.json"
+        ],
+        "limits": {
+          "wall_seconds": 30,
+          "rss_bytes": 1073741824,
+          "address_space_bytes": null,
+          "pari_stack_bytes": 256000000,
+          "terminate_grace_seconds": 1.0,
+          "poll_seconds": 0.05,
+          "cgroup": null
+        },
+        "outcome": "strict_wall_timeout",
+        "pid": 1128551,
+        "start_token": "75771050",
+        "returncode": -15,
+        "wall_seconds": 31.026564748957753,
+        "peak_observed_rss_bytes": 228253696,
+        "timeout_seconds": 30,
+        "failure_reason": "strict_wall_timeout",
+        "termination_signal": 15,
+        "rss_limit_bytes": 1073741824,
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/07ca9-supervision/worker.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "audit_sha256": "ad8f827d56e3bcd85e102d6a4bcbdde14d13c0267be3d2426797c5a3770d88a1",
+      "pinned_benchmark": {
+        "conductor": "95221940916620808088830143485247567246687065418433849627482469977720285740879030062",
+        "id": 539
+      },
+      "exact_conductor_beats_pinned_benchmark": null
+    },
+    {
+      "family": "08f72",
+      "audit": {
+        "status": "EXACT_CONDUCTOR_CERTIFIED",
+        "input": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/terminal.json",
+        "input_sha256": "c1762740252193ea6d3c13ee74c69ce6a32287fd2cd78e6c68629a00a6aa73cc",
+        "source_sha256": "547081164bc8beac9624b2750cbcec9772e2e55f5b240637399aee8d3c044287",
+        "curve": [
+          "0",
+          "0",
+          "0",
+          "-137711456228576857589138410862937643610035536321896391387",
+          "711123439217653061637400863452601062871821018498735434637030634499804094420756507766"
+        ],
+        "rank_lower_bound": 24,
+        "discriminant": "51317140630148806665059265923281461716192346959386805183574019216775028420281892937954375566350271265736191969370386782271953881510472722923375275017622046512670310400000",
+        "local_data": [
+          {
+            "prime": "2",
+            "raw_discriminant_valuation": 36,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "3",
+            "raw_discriminant_valuation": 18,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "5",
+            "raw_discriminant_valuation": 5,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "13",
+            "raw_discriminant_valuation": 5,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "17",
+            "raw_discriminant_valuation": 4,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "19",
+            "raw_discriminant_valuation": 4,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "23",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "67",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "127",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "5009",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "14813",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "1301017",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "6862963",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "11108825584981",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "541444064706324620453070751712168912631179075005031980730574250671418219680414698352133",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          }
+        ],
+        "unprocessed_cofactor": "1",
+        "conductor_lower_bound": "5010188826156411226384182822992530591002057751473896628642100179406951935900788324249280619427023331755172627345571322858912720052190",
+        "conductor_upper_bound": "5010188826156411226384182822992530591002057751473896628642100179406951935900788324249280619427023331755172627345571322858912720052190",
+        "claim_boundary": "Post-discovery conductor arithmetic only; no record or exact rank claim.",
+        "exact_conductor": "5010188826156411226384182822992530591002057751473896628642100179406951935900788324249280619427023331755172627345571322858912720052190"
+      },
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_fresh6_conductors.sage",
+          "--packet",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/08f72-exact-complement-discovery/terminal.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/08f72.json"
+        ],
+        "limits": {
+          "wall_seconds": 30,
+          "rss_bytes": 1073741824,
+          "address_space_bytes": null,
+          "pari_stack_bytes": 256000000,
+          "terminate_grace_seconds": 1.0,
+          "poll_seconds": 0.05,
+          "cgroup": null
+        },
+        "outcome": "completed",
+        "pid": 1128411,
+        "start_token": "75770897",
+        "returncode": 0,
+        "wall_seconds": 1.524357344955206,
+        "peak_observed_rss_bytes": 231374848,
+        "timeout_seconds": 30,
+        "failure_reason": null,
+        "termination_signal": null,
+        "rss_limit_bytes": 1073741824,
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/08f72-supervision/worker.log",
+        "log_sha256": "8a69ffe21c1b486944ac3507dbd14142b08a02fdc492ee5aa73d54c68e961d0a",
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "audit_sha256": "1236a0b5ef317e4ee54db7d8204e5a9a8b285ec9947cfd9f8be984625cb842a4",
+      "pinned_benchmark": {
+        "conductor": "361660950250291954113011326751617907627414070443777168347285410734060239220929310535800",
+        "id": 548
+      },
+      "exact_conductor_beats_pinned_benchmark": false
+    },
+    {
+      "family": "103b2",
+      "audit": {
+        "status": "CERTIFIED_LOCAL_BOUNDS_PENDING_FACTORIZATION",
+        "input": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/terminal.json",
+        "input_sha256": "87eafb0bbdd7ca9119adc7cf929d7eda614f9755ff950cb391eb8c6bbe983fb3",
+        "source_sha256": "547081164bc8beac9624b2750cbcec9772e2e55f5b240637399aee8d3c044287",
+        "curve": [
+          "0",
+          "0",
+          "0",
+          "-51688348119047436741957485028182667824500734883982356800",
+          "141905682416785563291129152099829958338294100727995440046910821700084269051453209600"
+        ],
+        "rank_lower_bound": 25,
+        "discriminant": "138799886583430089573954307921782470415338428403279410975069478419159506187883089196260801135466824100426494761180168302897045074449586186781546045937620060869754880000",
+        "local_data": [
+          {
+            "prime": "2",
+            "raw_discriminant_valuation": 25,
+            "conductor_valuation": 7
+          },
+          {
+            "prime": "3",
+            "raw_discriminant_valuation": 20,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "5",
+            "raw_discriminant_valuation": 4,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "7",
+            "raw_discriminant_valuation": 4,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "13",
+            "raw_discriminant_valuation": 3,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "17",
+            "raw_discriminant_valuation": 4,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "19",
+            "raw_discriminant_valuation": 6,
+            "conductor_valuation": 2
+          },
+          {
+            "prime": "23",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "41",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "59",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "73",
+            "raw_discriminant_valuation": 2,
+            "conductor_valuation": 1
+          },
+          {
+            "prime": "251",
+            "raw_discriminant_valuation": 1,
+            "conductor_valuation": 1
+          }
+        ],
+        "unprocessed_cofactor": "22118096535148161402757879542706752292742778801543082623013254735456589178568889988776792735623804435379770379927",
+        "conductor_lower_bound": "650393206065267100800",
+        "conductor_upper_bound": "14385459717556088415808800310751326463632925944815517306816895696987227406229449391603687188361482376820335279907978135629549805641600",
+        "claim_boundary": "Post-discovery conductor arithmetic only; no record or exact rank claim."
+      },
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_fresh6_conductors.sage",
+          "--packet",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/terminal.json",
+          "--output",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/103b2.json"
+        ],
+        "limits": {
+          "wall_seconds": 30,
+          "rss_bytes": 1073741824,
+          "address_space_bytes": null,
+          "pari_stack_bytes": 256000000,
+          "terminate_grace_seconds": 1.0,
+          "poll_seconds": 0.05,
+          "cgroup": null
+        },
+        "outcome": "strict_wall_timeout",
+        "pid": 1123459,
+        "start_token": "75764692",
+        "returncode": -15,
+        "wall_seconds": 31.030683291028254,
+        "peak_observed_rss_bytes": 228007936,
+        "timeout_seconds": 30,
+        "failure_reason": "strict_wall_timeout",
+        "termination_signal": 15,
+        "rss_limit_bytes": 1073741824,
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/103b2-supervision/worker.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "audit_sha256": "622cb329704c77ebc30aa053c3eeb4888cc1814aaa3dc6bbc4f110105934917f",
+      "pinned_benchmark": {
+        "conductor": "13858119093380870911402836699917707730917559748643075892856552587147896304378790356681414169480",
+        "id": 542
+      },
+      "exact_conductor_beats_pinned_benchmark": null
+    }
+  ],
+  "exact_replay": {
+    "path": "artifacts/local/elliptic-curves/fresh6-conductor-audit-v1/08f72-replay.json",
+    "sha256": "1236a0b5ef317e4ee54db7d8204e5a9a8b285ec9947cfd9f8be984625cb842a4"
+  },
+  "claim_boundary": "Pinned benchmark comparison only. Unfactored conductors remain unknown; bounds that fail to beat a benchmark do not exclude a record."
+}

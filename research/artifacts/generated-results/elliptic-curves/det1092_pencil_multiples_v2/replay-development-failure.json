@@ -1,0 +1,7 @@
+{
+  "classification": "checker implementation error, not an arithmetic obstruction",
+  "multiple": 2,
+  "completed": "generic identities and manual tangent/chord replay",
+  "error": "Exact polynomial quotient used slash and was promoted to a fraction-field element before monic().",
+  "correction": "Use polynomial exact division //; no inputs, selection, or limits changed."
+}

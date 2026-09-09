@@ -1,0 +1,137 @@
+{
+  "cache_size": 47,
+  "incoming": [
+    164,
+    179,
+    223,
+    1224,
+    1268,
+    1283
+  ],
+  "prime": 157,
+  "protocol_sha256": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+  "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE",
+  "status_counts": {
+    "EXCLUDED_NO_PROJECTIVE_ROOT": 2,
+    "UNKNOWN_LOCAL_ROOT": 2,
+    "UNKNOWN_MAP_DEGREE_DROP": 2
+  },
+  "survivors": [
+    164,
+    179,
+    1268,
+    1283
+  ],
+  "trials": [
+    {
+      "degree": 1,
+      "map_denominator": [
+        82,
+        1
+      ],
+      "map_numerator": [
+        129,
+        14
+      ],
+      "source_index": 164,
+      "status": "UNKNOWN_MAP_DEGREE_DROP"
+    },
+    {
+      "degree": 2,
+      "discriminant": 100,
+      "incidence_coefficients": [
+        60,
+        38,
+        37
+      ],
+      "map_denominator": [
+        93,
+        59,
+        1
+      ],
+      "map_numerator": [
+        61,
+        15,
+        10
+      ],
+      "source_index": 179,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 55,
+      "incidence_coefficients": [
+        142,
+        99,
+        94
+      ],
+      "map_denominator": [
+        86,
+        36,
+        1
+      ],
+      "map_numerator": [
+        18,
+        69,
+        67
+      ],
+      "source_index": 223,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 55,
+      "incidence_coefficients": [
+        142,
+        99,
+        94
+      ],
+      "map_denominator": [
+        86,
+        36,
+        1
+      ],
+      "map_numerator": [
+        18,
+        69,
+        67
+      ],
+      "source_index": 1224,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 100,
+      "incidence_coefficients": [
+        60,
+        38,
+        37
+      ],
+      "map_denominator": [
+        93,
+        59,
+        1
+      ],
+      "map_numerator": [
+        61,
+        15,
+        10
+      ],
+      "source_index": 1268,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 1,
+      "map_denominator": [
+        82,
+        1
+      ],
+      "map_numerator": [
+        129,
+        14
+      ],
+      "source_index": 1283,
+      "status": "UNKNOWN_MAP_DEGREE_DROP"
+    }
+  ]
+}

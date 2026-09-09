@@ -1,0 +1,45 @@
+{
+  "all_40917_bisection_orbits_are_Q_rational": true,
+  "boundary": "Only three fixed stored-coordinate representatives were constructed; all27 old-control fibres are nonsplit. This is not an exclusion of the remaining40914 translation orbits, nor a302 seed selector.",
+  "classification": "new conic-index theorem and independently replayed generic constructions",
+  "constructions": [
+    {
+      "RR_rank_lower_bound_prime": 19,
+      "function_field_rank_lower_bound": 18,
+      "norm_descent_steps": 3,
+      "odd_divisor_degree": 7,
+      "old_control_splits": 0,
+      "orbit": 8044,
+      "rational_base_change_degree": 2
+    },
+    {
+      "RR_rank_lower_bound_prime": 13,
+      "function_field_rank_lower_bound": 18,
+      "norm_descent_steps": 1,
+      "odd_divisor_degree": 3,
+      "old_control_splits": 0,
+      "orbit": 47755,
+      "rational_base_change_degree": 2
+    },
+    {
+      "RR_rank_lower_bound_prime": 13,
+      "function_field_rank_lower_bound": 18,
+      "norm_descent_steps": 3,
+      "odd_divisor_degree": 7,
+      "old_control_splits": 0,
+      "orbit": 103186,
+      "rational_base_change_degree": 2
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_prime_division_barrier_v1/replay.json": "956dddecae476d68e6197ada2f4a1e155747477035539aa33293141d779b0146",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/controls.json": "d04371085fbbc783ae0138156d172dccb6354fd91a67398b3f07f8174aa002fd",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/index-and-selection.json": "882b7a71a03e0a1e881fa66cde5b150311bc408d17728d117d9f12b797e33d7f",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-103186.json": "534549a82697ffb92004a767acb32b7a97e3aa020c5faa37ac2fa71c4485e18e",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-47755.json": "b607956363f1fea130c6121a37e21943beb400161560437520eead25397110d4",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-8044.json": "ae1ea1a8b482f8c7e237b49efdfd3a09d2144c79092522f4c62715479654d5f7",
+    "elliptic-curves/cas/verify_det1092_rational_bisection_index.sage": "510034cecf7af66e269d21edacd2e6db488eabe61d0d9603e4b1bdebeda6a8bc"
+  },
+  "status": "PASS_INDEPENDENT_RATIONAL_BISECTION_INDEX_AND_THREE_MAPS",
+  "uniform_proof": "The mod2 radical has dimension1 and norm0 mod4; norm10 vectors cannot have even Gram column. An odd-degree rational section intersection and a degree2 fibre intersection give a degree1 rational divisor on each smooth genus0 bisection. Genus0 Riemann--Roch gives a rational point."
+}

@@ -1,0 +1,39 @@
+{
+  "boundary": "Both orbit and evaluation addresses are fixed historical regressions. The constructor/admission procedure is equation-only, but this roster does not demonstrate prospective parameter selection or a302 seed.",
+  "classification": "verified application preflight, not a new theorem or rank result",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/generic-proof.json": "166dded75c99aab73e30f3528d9e89a6dccf6984f92bf850c7f668afeae7a2fd",
+    "elliptic-curves/cas/preflight_det1092_euclidean_seed_admission.sage": "e9570e652edd3c20e834d77a4e63bbc6d49b002cd6c84a7bb5c67f5c91dd6a72",
+    "elliptic-curves/cas/split_seed_descent.py": "34aa9c36dd549369e6b076b0d736c67c7351c2be59e1196941ffc9c80fc84bd1",
+    "elliptic-curves/cas/verify_det1092_funnel_small_conic_seed.sage": "4c877ec321e428ddb96fd8b1e0ff368c5fd9c0706b0980ba662400ea0fea1741"
+  },
+  "limits": {
+    "full_atlas_runs": 0,
+    "halving_steps": 8,
+    "new_parameters": 0,
+    "old_addresses": 3,
+    "orbits": 1,
+    "point_searches": 0,
+    "prime_cap": 1009,
+    "seconds_per_action": 25
+  },
+  "mask": 8044,
+  "roster": [
+    {
+      "label": "302",
+      "original_parameter": "0"
+    },
+    {
+      "label": "old-positive",
+      "reduced_parameter": "1926/2699"
+    },
+    {
+      "label": "old-dependent",
+      "reduced_parameter": "-528/3635"
+    }
+  ],
+  "rule": "Rebuild the negative trace from generic sections and the one fixed table word. Construct its Euclidean conic without saved trace, conic or point inputs. At each old address, first seal a generic-only finite footprint; then test q. For a nonzero rational square use its nonnegative root and classify that branch. No substitution after a miss or a cap.",
+  "sage_version": "10.9"
+}

@@ -1,0 +1,8 @@
+{
+  "classification": "retained implementation failure before any enumeration",
+  "affected_signs": [-1, 1],
+  "error": "Python Fraction(Sage rational) retains method-valued denominator in this runtime; subtraction raises TypeError",
+  "original_script": "elliptic-curves/cas/minimize_det1092_switch_degree.sage",
+  "correction": "Version 2 constructs Fraction from explicit integer numerator and denominator. Geometry, degree ceiling, signs and node budget unchanged.",
+  "mathematical_outcome": "NONE"
+}

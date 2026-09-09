@@ -1,0 +1,18 @@
+{
+  "classification": "retrospective exact ideal-parity diagnostic",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/302-first-unlock.json": "5cf378ce9f72653c49c30590e75148a8355ecb41ea46b3244b8a6e11d4d2c796",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/generic-section-0.json": "2e4731741c02f29e95039a1a5ab8e423c6801caac5f4259e71be3ed0ddc4f2c3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/audit_det1092_seed_ideal_parity.sage": "0a8f0369260418b06b9e68efe997fc6980ba6bff4165ec9bc58dd85deccb5106"
+  },
+  "limits": {
+    "class_groups": 0,
+    "classes": 2,
+    "point_searches": 0,
+    "rational_primes": 20,
+    "seconds": 25,
+    "unrestricted_factorizations": 0
+  },
+  "method": "Factor only the already frozen bad rational primes. Correct the factor-free half-ideal there if and only if all valuations are even."
+}

@@ -1,0 +1,99 @@
+{
+  "status": "FIRST_SEED_CONFIRMATION_COMPLETE",
+  "point_searches": 269,
+  "packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json",
+    "sha256": "946db9842740f63da8ffd7071424148b15e10a89f11cd5904935f29f4dbf20bf"
+  },
+  "curves": [
+    {
+      "id": "074d9-fresh-001",
+      "family": "074d9",
+      "parameter": "-2707/3437",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-26980731709197945620138071348411879999191689756639554107",
+        "59050784949742678020206400453950608563158769918311681332025100317700909596864038806"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "07ca9-fresh-001",
+      "family": "07ca9",
+      "parameter": "587/1074",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-38252594497798650437978429510939012859416163951792",
+        "85143840849510667719557886190055400274350525924968812271422140078149026176"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "08234-fresh-001",
+      "family": "08234",
+      "parameter": "2071/4060",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1080260006052450198923274771048395951865683534798903641479930747",
+        "13806747771782620126888629874369868645079529400821466728068247484068657582619141850253961169750"
+      ],
+      "rank_lower_bound": 17,
+      "search_status": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN"
+    },
+    {
+      "id": "08f72-fresh-001",
+      "family": "08f72",
+      "parameter": "4032/1663",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-137711456228576857589138410862937643610035536321896391387",
+        "711123439217653061637400863452601062871821018498735434637030634499804094420756507766"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "103b2-fresh-001",
+      "family": "103b2",
+      "parameter": "3889/2172",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-51688348119047436741957485028182667824500734883982356800",
+        "141905682416785563291129152099829958338294100727995440046910821700084269051453209600"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "11952-fresh-001",
+      "family": "11952",
+      "parameter": "-436/3149",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-356400916565760690801785600906798800181553959599923687600",
+        "2575677225970735623395595246576111877005245650536585001078935918624035527125865353600"
+      ],
+      "rank_lower_bound": 17,
+      "search_status": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN"
+    }
+  ],
+  "claim_boundary": "Equation-only reservation ledger for future deduplication. Six certified generic17 packets, not extra-point search results or a public novelty claim.",
+  "generic_packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_generic17_packets_v1/result.json",
+    "sha256": "94e743ff7acd8aeb274837892667ae189cb963484e252cb399998b49ff1a448f"
+  }
+}

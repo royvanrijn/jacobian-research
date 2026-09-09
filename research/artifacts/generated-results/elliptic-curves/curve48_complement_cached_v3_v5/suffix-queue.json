@@ -1,0 +1,21 @@
+{
+  "status": "QUEUED_NOT_LAUNCHED",
+  "rank_lower_bound": 27,
+  "epoch": 0,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5/protocol.json": "af1e69a6b050dc4adcf2bc41637f398893f4f855a8e5e30e3e7a1ede90cf2533",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5/terminal.json": "fc470e63499577ab9e9a7a68745f5bafeab673bffa633b7e09316e77f72cc3f2",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5/verified.json": "a4711d321df92d5fc4ab698b115e12fb7defb803c5def9869f959e5001a9c385",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5-supervision/supervisor.json": "a4d919d29c90ed48856941e00a063cabc5998eb8963ca454f436a9ca1d0326ae",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5-replay-supervision/supervisor.json": "54599baf002e7cba1d62bd838cccc40750773263505cb1016c8e47f7210f884d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5/epoch-00/landscape/selection.json": "7bae8dabed1afb0216b57746e97f7facb34db49d77358c6b30bc0fb85d9e3e7f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve48-complement-cached-v3-discovery-v5/epoch-00/chart-0599.json": "af78c444bacbd2f8f18cb1dec54097b1e70a730a8185d0670169cb1951a4a274"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 300,
+  "next_policy_to_consider": "preconditioned_full"
+}

@@ -1,0 +1,25 @@
+{
+  "classification": "same-panel finite-field-only method with a degree-preserving lifting gate",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "elliptic-curves/cas/prototype_det1092_modular_bisection_direct.sage": "d2298244128dd003d785d49705dd21f74bcfe7a3a9b43fbac74288ee73727cf2"
+  },
+  "limits": {
+    "complete_atlas_runs": 0,
+    "new_orbits": 12,
+    "point_searches": 0,
+    "prime_trials": 45,
+    "rational_RR_solves": 0,
+    "rational_point_additions": 0,
+    "regression_orbits": 3,
+    "seconds": 25
+  },
+  "prime_pool": [
+    149,
+    151,
+    157
+  ],
+  "selection": "Unchanged first12 saved norm10 masks plus8044,47755,103186 regressions. No outcome-driven replacement. Target original parameter0 only."
+}

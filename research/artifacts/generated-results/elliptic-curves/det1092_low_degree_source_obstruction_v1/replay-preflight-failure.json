@@ -1,0 +1,6 @@
+{
+  "status": "CHECKER_STOPPED_BEFORE_CERTIFICATE",
+  "reason": "The saved Picard vector uses rational strings while the enumerated vector uses integers; the initial direct JSON-list equality needed explicit rational-vector coercion.",
+  "mathematical_inputs_changed": false,
+  "prior_success_certificate": false
+}

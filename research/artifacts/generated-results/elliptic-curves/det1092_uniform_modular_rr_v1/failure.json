@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_REPORT_SERIALIZATION",
+  "phase": "geometry.json after both Gram checks and all30 old-orbit trials",
+  "error": "Sage Integer in basis_heights is not JSON serializable",
+  "retained": "The original source, protocol, all30 orbit checkpoints and partial geometry.json are retained unchanged. No summary was produced.",
+  "recovery": "Version2 changes only integer serialization and pre-encodes JSON before exclusive creation. Primes, charts, orbits and targets are unchanged."
+}

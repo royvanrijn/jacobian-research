@@ -1,0 +1,36 @@
+{
+  "chart_order": [
+    "infinity",
+    1,
+    2,
+    3
+  ],
+  "classification": "generic full-frame geometry and uniform four-chart RR theorem, fixed-panel application",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/summary.json": "e8f576147818760cc6842a4b22ef9dc096a8d267ca97bd2820e4e61ad2912335",
+    "elliptic-curves/cas/audit_det1092_uniform_modular_rr_v2.sage": "8f8d567b52fd8f0952bfca79c73f1b5727d70ab22c47255b398348b53865562d"
+  },
+  "limits": {
+    "charts_per_trace_max": 4,
+    "class_or_unit_groups": 0,
+    "full_atlas_runs": 0,
+    "generic_Gram_checks": 2,
+    "geometry_only_regression_primes": [
+      157
+    ],
+    "good_primes": [
+      149,
+      151
+    ],
+    "new_orbits": 0,
+    "old_orbits": 15,
+    "old_target": 0,
+    "old_target_trials": 30,
+    "point_searches": 0,
+    "rational_RR_solves": 0,
+    "seconds": 25
+  },
+  "selection": "Use precisely the previous15 masks and first two old primes. No replacement or new target. Test the old157 only for the global24I1 hypothesis."
+}

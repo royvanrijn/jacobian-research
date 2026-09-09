@@ -1,0 +1,76 @@
+{
+  "boundary": "Same45 trial panel only. Split reductions and all failed lifting/chart gates are UNKNOWN. No rational trace addition, rational RR solve, point search or full atlas run.",
+  "classification": "exact modular exclusion method; independent replay and written lifting proof required",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json": "8f31f069755ff55fbdbded39170688ef491a470467aa3aee57b52368bc9bd260",
+    "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-103.json": "b241694cf58fffc18a540775459186231e70e2eb19d61fb07bc13fb7a934216f",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-103186.json": "ea434868b6e500fa4350d6bc57ef7344c36ae6a142a6d3fe02ccca3dc636fdaa",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-107.json": "98ed83b66024526d0905508ac6bcc3cf94525a51c862cadfd03a29da106c635c",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-109.json": "ea33142d6c4bb119f3276e9f84c10c64e4c4d4e1520700a4849ee662aa469ed5",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-110.json": "866e6d01ccdfe2f1c80054ad4f5be23a04f5e380a2c2353d09b2df4cbd7450c4",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-111.json": "e4d6bc271ce54fe7a446dc9a0db1d11e0a6c8dd7c83de308f8c99a55ceb32cad",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-115.json": "79ca18ef6bb348e145d333a0fc7fc6df95b067a7eb3d35adf1aed3da09876443",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-117.json": "ed79179f4cb78df4fcaa9415cd1645cd5bfcd815cac3d4cc2e396fd042f97d5c",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-121.json": "d075e7073996a2ffdb43e0476fe5a0175dcd70368decde1d4dec7556711bb60e",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-122.json": "3b8ab634a947eadca3eb3b77a0992901965831b5615d636b7dbc0a547f25b8d4",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-123.json": "7bab7993d634ac03884a2ed462dd720df5c0bb79331387cafa5d7ca53c7fce86",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-47755.json": "c0a622866c8a417283837ea956d5deb88fd6e0181dbf3dc4f12f4cba5502f5bc",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-61.json": "65cf58c8b0b04abd2ffe47db4293fca720fd195feb79ade1de7b81f993d30cc9",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-8044.json": "392df19ca3a41249a385cca4a2b35e2f0dc0b1ada198e50533cdca8e98bc9c00",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/orbit-87.json": "1b0861b351038846c747fc06c742f1884f91af8ceac2860b7d968846fe3c4a59",
+    "elliptic-curves/cas/prototype_det1092_modular_bisection_direct.sage": "d2298244128dd003d785d49705dd21f74bcfe7a3a9b43fbac74288ee73727cf2"
+  },
+  "new_excluded": [
+    87,
+    103,
+    109,
+    110,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_masks": [
+    61,
+    87,
+    103,
+    107,
+    109,
+    110,
+    111,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_unknown": [
+    61,
+    107,
+    111
+  ],
+  "primes": [
+    149,
+    151,
+    157
+  ],
+  "regression_excluded": [
+    8044,
+    103186
+  ],
+  "regression_masks": [
+    8044,
+    47755,
+    103186
+  ],
+  "status": "PASS_FINITE_FIELD_ONLY_BISECTION_PROTOTYPE",
+  "status_counts": {
+    "EXCLUDED_NONSQUARE": 20,
+    "UNKNOWN_BAD_TARGET_OR_TRACE": 1,
+    "UNKNOWN_MAXIMAL_POLE_GATE": 4,
+    "UNKNOWN_SPLIT_OR_REPEATED_REDUCTION": 20
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "alternate_degree_cap": 2,
+  "bound": 16,
+  "classification": "complete bounded generic low-degree source geometry",
+  "definition": "All v in M17 with degree D.S_v=v^tGv-w^tGv<=2; w is the fixed norm8 pencil word. Equivalently ||2v-w||^2<=16.",
+  "excluded_inputs": [
+    "first seed",
+    "carrier label",
+    "control address",
+    "catalogue rank",
+    "search output"
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/degree-minima-v2-plus.json": "d623e7b7e764e3108d9a9e7c980ea587089a9d4f4ac57a62b6694f8b8c413a45",
+    "elliptic-curves/cas/enumerate_det1092_low_degree_sources.sage": "03226b92de21e6b8bd6f7ed48218cd1b1acae59c0f4fc6ea5e7dffadc23fd63e"
+  },
+  "node_cap": 100000,
+  "seconds": 25,
+  "source_cap": 4096
+}

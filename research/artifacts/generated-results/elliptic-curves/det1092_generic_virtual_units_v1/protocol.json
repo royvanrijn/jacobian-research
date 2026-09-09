@@ -1,0 +1,19 @@
+{
+  "classification": "generic-only bounded reduction, not full principal-ideal testing",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_seed_half_ideal_v1/generic-projection.json": "1b9ca20e12b4b11442a51ef16f3347a0714f9d723968ff98ce9364a63beda51c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/reduce_det1092_generic_virtual_units.sage": "95fc1e69aaa8337a3c7b8a7440ca33206ad09822d2cf55aae0fdb2a6d4d5e994"
+  },
+  "limits": {
+    "LLL_dimension": 3,
+    "class_groups": 0,
+    "classes": 8,
+    "combination_enumeration": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "unit_groups": 0,
+    "vectors_per_class": 1
+  },
+  "selection": "Canonical F2 kernel basis from only the17 generic classes; one unweighted trace-LLL of each inverse square-root ideal."
+}

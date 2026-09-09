@@ -1,0 +1,96 @@
+{
+  "boundary": "No complete atlas execution or rational split/seed construction. Prime157 is not discarded from the old experiment; it fails this stronger global theorem hypothesis.",
+  "chart_counts": {
+    "1": 1,
+    "2": 0,
+    "3": 0,
+    "infinity": 29
+  },
+  "classification": "written uniform theorem plus fixed-panel verification",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/geometry.json": "5c6386a49fa572388b0dcc6d047e5418b29abf6d880de2f9c28534b1e4afefa6",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-103-p149.json": "a38327519fc30572c3d93a5de17914b22a9cbb6f998705f65873efca8d63e07a",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-103-p151.json": "6403447f4a5ed9be2a5502bc420d0daaedaf2560c4b7f452042046d710efe5e3",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-103186-p149.json": "34e3b25fdd41020616921f94cb30f0ea8b695c97c12682f1b3e6e401704a8bff",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-103186-p151.json": "9e5e3bd70de88fee569c7270dfe2b00dd1625a1901a213fad9426e958f5faf86",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-107-p149.json": "59d2c76d8174f6386f5b3383d218c8c5e36dcd1ed0e066a0b622b1eebc1182d8",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-107-p151.json": "1b7f7f74813cd29d1cd2b6f69b159a07a2459deffdb7d926b2bc669e96619e0b",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-109-p149.json": "f99bb82b3d08721d4db96c582b9d7435b83432d8a48c0567f8f458c56b162478",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-109-p151.json": "690ce51c0dff0097c71268cabf0180b8cd1b09e4f9a62504682b2e76c8953966",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-110-p149.json": "c931559a3b639ee241bb1d2e4cd8f42443f9272f9dc6c766b6b67e382b80f30d",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-110-p151.json": "0a3f10b8fb6b6c77d83305af0cf1ffd38935f6056659c3820ba3d1c506bb25af",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-111-p149.json": "ecf8c9f023ba3d233c78fea21787d063fff9d8d4d84197ffe482329f4f429400",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-111-p151.json": "841c620f5fa3c6d2994d5da4a3a89e5e246e20dead1dd41477bf295d875ab5d4",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-115-p149.json": "1a77d7dfe0bdbc29c0afe41ffd8c69cac81c7b375ea999560ceeeef10f37a2c4",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-115-p151.json": "0c89ee0095eaa5b0591cb9d6ee1ff6e53f58d0ef53643cf4f4d50276bbdd9168",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-117-p149.json": "9ae6782dce305c0eb43be0de07c219bb7e75e5e91c4fad369e4b0323884ea86d",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-117-p151.json": "1963bf3610dd48b64602cffc6ef3d5d72b208082b03ee9c099858b554a2f43a7",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-121-p149.json": "0483730786836cbcdc0dbe3045d805474a4fc9f41794ad258bb15ac116d0f195",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-121-p151.json": "fe67c3aa14e52ab999003835f6a3f5858c3e87c7d1fccc738cef858a2a492dcb",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-122-p149.json": "22a8110034c3af613bc68987737c6d5dbed9b0e71798b71f69819369bf8460d5",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-122-p151.json": "cf75cf95a24ee94a57ebc2a451a146e6c52c91a6787e027574d2e309ff02c941",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-123-p149.json": "a3b7f83cf629c9e72dea51024092e4168e9049e7162ea1f8a7f802a87ae6fd36",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-123-p151.json": "47a3460538a83c476d3d67d55570093358efcd6b2da3ece309a1928b8d8af0c8",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-47755-p149.json": "5af12c6ebddbed242ebe6c718a332e20f021759a8eef5c490ca0706eff557454",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-47755-p151.json": "afe8232d1b7d39152c3b69a28d1731f5238ea985075c2f8849d226ef3ae41a1d",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-61-p149.json": "657d3f57fdd096711c5b0841c0bd14291a3053f5d4f6cd23cf0b90195c0ba9e8",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-61-p151.json": "2bd488346835d9a3fa192c65761366df2141ec5b89900416865787935c8290c3",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-8044-p149.json": "1721f8e33946cdb5b3c5d31034f4b1af7186cf2255b5baf333bbdba489913e53",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-8044-p151.json": "5b8573fc41801f08463f7518eb8f4843cba427fc1d6cb636eb69a9b894ebfad7",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-87-p149.json": "3b5a4ad21dff56efeeecb0979f82c84c2ed7b7637683f8deec67441406a5bc93",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/orbit-87-p151.json": "f75f9e158a8cb15fc2080269be3efd26a8643a5ee532cec52681d115f2e0c009",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/protocol.json": "4e69957e7e602adb34293b02361cf8ea6da80b84576356b2d1dd05e7a7fe4e30"
+  },
+  "new_excluded": [
+    87,
+    103,
+    109,
+    110,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_masks": [
+    61,
+    87,
+    103,
+    107,
+    109,
+    110,
+    111,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_unresolved": [
+    61,
+    107,
+    111
+  ],
+  "pole_gate_recovered": [
+    {
+      "chart": 1,
+      "mask": 61,
+      "prime": 149,
+      "status": "LOCALLY_SPLIT_SIMPLE_UNKNOWN_OVER_Q"
+    }
+  ],
+  "primes": [
+    149,
+    151
+  ],
+  "regression_masks": [
+    8044,
+    47755,
+    103186
+  ],
+  "status": "PASS_UNIFORM_FOUR_CHART_RR_PROTOTYPE",
+  "status_counts": {
+    "EXCLUDED_NONSQUARE": 16,
+    "LOCALLY_SPLIT_SIMPLE_UNKNOWN_OVER_Q": 14
+  }
+}

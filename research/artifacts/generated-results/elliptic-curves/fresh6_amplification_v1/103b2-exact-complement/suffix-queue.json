@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery-replay-supervision/supervisor.json": "bffad1701e0d0eb41cadbfad299a1cd2a3a3a7c397c48e41ad3d7798095e8371",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery-supervision/supervisor.json": "cd0efac218f4f46dd544e567d8d1bbf35f9e20a9471224baf878ddd8aa6e5ca7",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/epoch-07/chart-0051.json": "8c41b48e8527f04c65f561517cdd14cbd3ccd38c9ec03dc64cba08b514293257",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/epoch-07/landscape/selection.json": "0a5304f5e3d1a2f0621d016f98953be4f04ad7cc6f1c3434535f531635ca9e2f",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/protocol.json": "8f2b8eafc0b1f9a11029eea7e309c0bace92d44b08eda3f0c761959e99c5699b",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/terminal.json": "87eafb0bbdd7ca9119adc7cf929d7eda614f9755ff950cb391eb8c6bbe983fb3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-exact-complement-discovery/verified.json": "30c2377578f7f9936254b567ce0826a2026f851ee124f69f113efee29edaf96a"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 7,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 26,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 25,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2-exact-complement-cached-v1/result.json"
+}

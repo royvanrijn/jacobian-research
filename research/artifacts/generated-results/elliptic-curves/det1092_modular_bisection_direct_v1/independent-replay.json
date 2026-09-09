@@ -1,0 +1,252 @@
+{
+  "boundary": "Twelve new orbits and three regressions only. No rational incidence or rank upper bound follows from survival. No full-atlas run, extra prime, exceptional point, or point search.",
+  "certificates": [
+    {
+      "discriminant": 135,
+      "mask": 87,
+      "prime": 151,
+      "residual_coefficients": [
+        81,
+        112,
+        63
+      ]
+    },
+    {
+      "discriminant": 137,
+      "mask": 103,
+      "prime": 149,
+      "residual_coefficients": [
+        97,
+        30,
+        30
+      ]
+    },
+    {
+      "discriminant": 135,
+      "mask": 103,
+      "prime": 151,
+      "residual_coefficients": [
+        149,
+        121,
+        112
+      ]
+    },
+    {
+      "discriminant": 41,
+      "mask": 109,
+      "prime": 149,
+      "residual_coefficients": [
+        72,
+        25,
+        31
+      ]
+    },
+    {
+      "discriminant": 45,
+      "mask": 109,
+      "prime": 157,
+      "residual_coefficients": [
+        101,
+        37,
+        81
+      ]
+    },
+    {
+      "discriminant": 56,
+      "mask": 110,
+      "prime": 149,
+      "residual_coefficients": [
+        50,
+        50,
+        45
+      ]
+    },
+    {
+      "discriminant": 43,
+      "mask": 115,
+      "prime": 149,
+      "residual_coefficients": [
+        6,
+        108,
+        31
+      ]
+    },
+    {
+      "discriminant": 131,
+      "mask": 115,
+      "prime": 151,
+      "residual_coefficients": [
+        52,
+        69,
+        15
+      ]
+    },
+    {
+      "discriminant": 63,
+      "mask": 117,
+      "prime": 151,
+      "residual_coefficients": [
+        40,
+        80,
+        33
+      ]
+    },
+    {
+      "discriminant": 18,
+      "mask": 117,
+      "prime": 157,
+      "residual_coefficients": [
+        23,
+        121,
+        147
+      ]
+    },
+    {
+      "discriminant": 12,
+      "mask": 121,
+      "prime": 149,
+      "residual_coefficients": [
+        91,
+        72,
+        119
+      ]
+    },
+    {
+      "discriminant": 143,
+      "mask": 121,
+      "prime": 151,
+      "residual_coefficients": [
+        22,
+        7,
+        71
+      ]
+    },
+    {
+      "discriminant": 151,
+      "mask": 121,
+      "prime": 157,
+      "residual_coefficients": [
+        98,
+        13,
+        121
+      ]
+    },
+    {
+      "discriminant": 71,
+      "mask": 122,
+      "prime": 151,
+      "residual_coefficients": [
+        123,
+        124,
+        13
+      ]
+    },
+    {
+      "discriminant": 93,
+      "mask": 123,
+      "prime": 149,
+      "residual_coefficients": [
+        127,
+        103,
+        104
+      ]
+    },
+    {
+      "discriminant": 28,
+      "mask": 123,
+      "prime": 151,
+      "residual_coefficients": [
+        141,
+        108,
+        147
+      ]
+    },
+    {
+      "discriminant": 85,
+      "mask": 123,
+      "prime": 157,
+      "residual_coefficients": [
+        137,
+        0,
+        109
+      ]
+    },
+    {
+      "discriminant": 21,
+      "mask": 8044,
+      "prime": 149,
+      "residual_coefficients": [
+        64,
+        104,
+        80
+      ]
+    },
+    {
+      "discriminant": 141,
+      "mask": 8044,
+      "prime": 151,
+      "residual_coefficients": [
+        11,
+        102,
+        120
+      ]
+    },
+    {
+      "discriminant": 75,
+      "mask": 103186,
+      "prime": 149,
+      "residual_coefficients": [
+        65,
+        120,
+        121
+      ]
+    }
+  ],
+  "classification": "verified application of the written maximal-pole lifting and unit-minor lemma",
+  "independent_methods": [
+    "manual reverse-order elliptic addition",
+    "saved nonzero minor and kernel validation",
+    "polynomial division",
+    "enumeration of every residue for residual root exclusion"
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/protocol.json": "41a78a4e8717b9fcd8127faa1060fbd7d223052e7a18bfe7e668f64070d07469",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/summary.json": "e8f576147818760cc6842a4b22ef9dc096a8d267ca97bd2820e4e61ad2912335",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/protocol.json": "e5c075ba8a1ebc42f7231d2160ebed9f2a3cda7fed074eb222f67b2ab0d2c9e9",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_exclusion_v1/summary.json": "a9991d6166e26e60644f6bf82ae56363f52328a3fccf17e61af68fe13420ed83",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-103186.json": "534549a82697ffb92004a767acb32b7a97e3aa020c5faa37ac2fa71c4485e18e",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-47755.json": "b607956363f1fea130c6121a37e21943beb400161560437520eead25397110d4",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/orbit-8044.json": "ae1ea1a8b482f8c7e237b49efdfd3a09d2144c79092522f4c62715479654d5f7",
+    "elliptic-curves/cas/verify_det1092_modular_bisection_direct.sage": "c13500b14be30eb60804e3ca49db49ba44d7a9d456854855e8fbd9c66f5289e7"
+  },
+  "new_excluded": [
+    87,
+    103,
+    109,
+    110,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_unknown": [
+    61,
+    107,
+    111
+  ],
+  "old_exact_cover_squareclass_checks": 8,
+  "prime_trials": 45,
+  "rational_trace_modular_RR_regressions": 40,
+  "regression_excluded": [
+    8044,
+    103186
+  ],
+  "status": "PASS_INDEPENDENT_FINITE_FIELD_BISECTION_EXCLUSIONS",
+  "status_counts": {
+    "EXCLUDED_NONSQUARE": 20,
+    "UNKNOWN_BAD_TARGET_OR_TRACE": 1,
+    "UNKNOWN_MAXIMAL_POLE_GATE": 4,
+    "UNKNOWN_SPLIT_OR_REPEATED_REDUCTION": 20
+  }
+}

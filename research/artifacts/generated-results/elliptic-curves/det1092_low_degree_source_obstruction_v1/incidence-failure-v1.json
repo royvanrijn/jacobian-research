@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_BEFORE_FIRST_PRIME_CERTIFICATE",
+  "prime": 47,
+  "reason": "A constant carrier label retained the rational-function field parent, so the incidence expression needed explicit polynomial coercion before coefficient indexing.",
+  "completed_prime_certificates": 0,
+  "remedy": "Version2 changes only explicit polynomial coercion and uses a new source-bound protocol. Geometry, carrier, source set, old prime order and limits are unchanged."
+}

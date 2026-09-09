@@ -1,0 +1,16 @@
+{
+  "classification": "universal polynomial verification and same three constructed conics",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_bisection_survivors_v1/summary.json": "cc7d5e2d3c71f012bd65e5d8bee23ff39f4c5c1a3cd126991a35aa28ee2c1c69",
+    "elliptic-curves/cas/verify_det1092_euclidean_bisection_identity.sage": "53991d10c65f5e2f6c36d9178c7b18fd0848c06d12dcb936eac8e16d6b2d70ae"
+  },
+  "limits": {
+    "factorizations": 0,
+    "new_orbits": 0,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "symbolic_identity_families": 1
+  }
+}

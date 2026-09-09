@@ -1,0 +1,25 @@
+{
+  "carrier_label": "1018595891632634549154748055919128315329729591633806393135864425102630466026311226984286139170415482796192040753045215403074194221499999977424460241888261147/126812491621022165092163677308365336127830599682204216711429022109284058607666372800652948683672856076106132814795031434807177478522000000",
+  "classification": "retrospective first-seed carrier incidence only",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-103186.json": "93a7e903f1abbc02235d89133005c13b3706227585ad4a48236732684c362733",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-47755.json": "fb676c3251da17a395b751d7bd503bcfd78a252b31603660988287a067c3c7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-8044.json": "dc886798f856685c61f6f75b470dadf051f15d9e82f20038c9b229f2a7d39714",
+    "artifacts/generated-results/elliptic-curves/det1092_signed_source_orbits_v1/protocol.json": "f368da604232c07ba9da66c6726e05ee48e9a4bb779b60cc5a65e19dd837f0c6"
+  },
+  "primes": [
+    47,
+    53,
+    101,
+    107,
+    109,
+    127,
+    131,
+    137,
+    139,
+    149,
+    157,
+    163
+  ],
+  "seconds": 25
+}

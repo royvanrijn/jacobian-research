@@ -1,0 +1,13 @@
+{
+  "classification": "theorem checkpoint after two sequential equation-only local tests; not a prefrozen joint incidence predictor",
+  "scope": "All norm-square classes unramified above every smooth parameter fibre, including infinity. Only the already frozen nine parameter values are evaluated.",
+  "class_rule": "beta=-disc(f)*f_prime(theta), constructed from the generic equation alone",
+  "history": "First prove its norm and singular-fibre residue pattern, then test real signs, then derive the odd-nodal-prime obstruction and test it uniformly on all nine. No search policy was modified.",
+  "limits": {"seconds_per_process":25,"point_searches":0,"new_parameters":0,"integer_factorizations":0,"class_group_calculations":0},
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_bad_fibre_kummer_v1/construction.json": "4adc83fe2150b7f876dcdfed49bbdd45026ad866015a918206b45a47e10b9b73",
+    "artifacts/generated-results/elliptic-curves/det1092_bad_fibre_kummer_v1/controls.json": "653af19e1b77a327de161fc4854dd5b1c9a27313c86531f9d300943f4b3480dd",
+    "artifacts/generated-results/elliptic-curves/det1092_unramified_kummer_v1/replay.json": "95d845f5091a08fefb404774ee80dff8e4154bf94c2d0eebffba34e61befba37",
+    "artifacts/generated-results/elliptic-curves/det1092_polynomial_lift_gate_v1/replay.json": "b9bbc5a5a8c6f05dad5a6d199f174477bc4208634757002f3c0e8b282792724a"
+  }
+}

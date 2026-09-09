@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1-replay-supervision/supervisor.json": "35b9614b6d66fc968fba5dc755b70e36abf6166c3d9ec0c3b33a448b9812cf49",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1-supervision/supervisor.json": "227637a5a98df76043f5b6f1f2a498b438e21b34902396cd5067ac385f74db1e",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1/epoch-00/chart-0199.json": "804e6143c6ba73e4e612237e7b7748f6099d86202feecb8a0e70c92be1789cfc",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1/epoch-00/landscape/selection.json": "402b425eb6352b6900366144162c81cd20490f1993881d72ae69a07b515c76ae",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1/protocol.json": "e13599dacbe942cb2164f697bf7c8f27af921842be9547af073f983e1ec6f3ef",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1/terminal.json": "78955074db97882a70e4a07b26fb501335ebdb0b7cf2d1d7f21989ce74e85b5b",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve71-sampled-shell-cached-v1/verified.json": "ec61105680ba3d58b4fee1ac1bd40bb9f490cd1ab43c12206226b914feb49751"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 100,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 27,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

@@ -1,0 +1,5 @@
+{
+  "classification": "checkpoint format mismatch after all arithmetic assertions passed",
+  "failure": "On repeat, decoded JSON arrays were compared with in-memory finite-point tuples",
+  "correction": "Normalize the report to JSON types before immutable comparison; retain the original report and write independent-replay-v2.json. No input, selection, equation, finite group or mathematical check changed."
+}

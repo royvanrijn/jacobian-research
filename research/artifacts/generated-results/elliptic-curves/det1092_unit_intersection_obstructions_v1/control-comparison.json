@@ -1,0 +1,77 @@
+{
+  "boundary": "Only addresses read after generic predictions were sealed. No comparison output changes the construction. Nonmatching controls are not certified independent.",
+  "cases": [
+    {
+      "label": "scale-0131232",
+      "original_parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0257585",
+      "original_parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0487239",
+      "original_parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0177036",
+      "original_parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0043332",
+      "original_parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0590501",
+      "original_parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0290097",
+      "original_parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "scale-0748009",
+      "original_parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "302-generic-section-control",
+      "original_parameter": "0",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "old-positive",
+      "original_parameter": "-181512817550982977254619296000/1616488215803732492074877492063",
+      "status": "OUTSIDE_THIS_OBSTRUCTION_NO_CONCLUSION",
+      "witness_index": null
+    },
+    {
+      "label": "old-dependent",
+      "original_parameter": "-131441324240654256238599286000/5350360532050212981878826383861",
+      "status": "CERTIFIED_INHERITED_COLLISION",
+      "witness_index": 7
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_euclidean_seed_admission_v1/protocol.json": "30f7ca3bc26599e5c343ef4595f508160c15c124c3492b04f0452b52bc1d7b62",
+    "artifacts/generated-results/elliptic-curves/det1092_rational_bisection_index_v1/controls.json": "d04371085fbbc783ae0138156d172dccb6354fd91a67398b3f07f8174aa002fd",
+    "artifacts/generated-results/elliptic-curves/det1092_unit_intersection_obstructions_v1/independent-replay.json": "cf52ff88d402488a4b9afa0f0365dfe3e8db7b6744f048ffffbf1427f8b916e7"
+  },
+  "status": "PASS_POST_SEAL_CONTROL_COMPARISON"
+}

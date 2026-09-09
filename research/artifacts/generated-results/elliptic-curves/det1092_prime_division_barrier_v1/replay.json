@@ -1,0 +1,134 @@
+{
+  "boundary": "These are function-field independence statements. They do not make every rational specialization productive, distinguish the fixed null fibres, or select a302 carrier member.",
+  "central_cocycle_fixed_point_identity": true,
+  "checker_sha256": "be6d5101fb7dd4bf38fe6c04bbcf8cfca2ec420de32c227083426dd2cbed8aa3",
+  "classification": "new written theorem with exact symbolic/input checks, not formal verification",
+  "cusp_width_matrix_identity": true,
+  "formal_verification": false,
+  "full_geometric_generic_basis_rank": 17,
+  "independent_replay": false,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_parity_descent_v1/replay.json": "cdfc4f1342eff3820cfb4ac4550dafbb4e635213bcd3117bcfd4980a9fc1c1fd"
+  },
+  "j_poles": {
+    "all_simple": true,
+    "infinity_is_not_a_pole": true,
+    "number": 24
+  },
+  "local_cycle_regressions": [
+    {
+      "division_degree": 4,
+      "division_genus": 9,
+      "local_division_cycle_lengths": [
+        1,
+        1,
+        2
+      ],
+      "local_ramification_contribution": 1,
+      "nonzero_torsion_degree": 3,
+      "nonzero_torsion_genus": 10,
+      "prime": 2
+    },
+    {
+      "division_degree": 9,
+      "division_genus": 40,
+      "local_division_cycle_lengths": [
+        1,
+        1,
+        1,
+        3,
+        3
+      ],
+      "local_ramification_contribution": 4,
+      "nonzero_torsion_degree": 8,
+      "nonzero_torsion_genus": 41,
+      "prime": 3
+    },
+    {
+      "division_degree": 25,
+      "division_genus": 168,
+      "local_division_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        5,
+        5,
+        5
+      ],
+      "local_ramification_contribution": 16,
+      "nonzero_torsion_degree": 24,
+      "nonzero_torsion_genus": 169,
+      "prime": 5
+    },
+    {
+      "division_degree": 49,
+      "division_genus": 384,
+      "local_division_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "local_ramification_contribution": 36,
+      "nonzero_torsion_degree": 48,
+      "nonzero_torsion_genus": 385,
+      "prime": 7
+    },
+    {
+      "division_degree": 121,
+      "division_genus": 1080,
+      "local_division_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "local_ramification_contribution": 100,
+      "nonzero_torsion_degree": 120,
+      "nonzero_torsion_genus": 1081,
+      "prime": 11
+    }
+  ],
+  "protocol_sha256": "1d91f9ec08db106bb62ee2a776303ab6b62e28941fd44ae714fb7bd1749d341a",
+  "status": "PASS_PRIME_DIVISION_BARRIER_INPUTS_AND_IDENTITIES",
+  "uniform_written_conclusions": [
+    "No prime-degree isogeny over Qbar(t); mod-ell geometric monodromy is SL2(F_ell) for every prime ell.",
+    "For Z not in ell*M17, the connected division cover has degree ell^2 and genus (ell-1)*(11*ell-13).",
+    "The connected nonzero ell-torsion curve has degree ell^2-1 and genus one larger.",
+    "Every base change of genus below9 has torsion-free MW group and fully saturated inherited M17.",
+    "Every quadratic base change has these same saturation/torsion conclusions, regardless of genus.",
+    "Every genuine geometrically irreducible multisection of genus below9, and every genuine bisection of any genus, gives a point outside the inherited rational span."
+  ],
+  "unipotent_generation_identities": true
+}

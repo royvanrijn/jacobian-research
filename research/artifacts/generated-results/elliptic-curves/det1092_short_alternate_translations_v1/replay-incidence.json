@@ -1,0 +1,205 @@
+{
+  "boundary": "These two fixed covers only. No exclusion of the fibres, other translates, or generic point existence.",
+  "cases": [
+    {
+      "certificate_sha256": "e5ff2c09218a048f5bb6e5679ba278d88936ba035b7ade2e1e55ba335ae006da",
+      "index": 0,
+      "label": "scale-0131232",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "2d4346c0109cd52b5edaa76649e8516d83513ebbb04b5b349bf694ba47217845",
+      "index": 0,
+      "label": "scale-0257585",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "36871edbff379106dada2886caebac86e64990ce2ea7d428025e3456506124cc",
+      "index": 0,
+      "label": "scale-0487239",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "776fd6ab627c58c490bd96743bb1efb5633adec2d48693f10e67d4e6bcaaa082",
+      "index": 0,
+      "label": "scale-0177036",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "e109ae9d7550cb0b42759b857bd6edf3e243c9e39df0966a2bc52ff51cbe46c0",
+      "index": 0,
+      "label": "scale-0043332",
+      "proof": {
+        "modular_roots": 1,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "b69b0c6c845d460ef1d2046ea8e5790ebc0f22662cd7a49e438155007b2bfc58",
+      "index": 0,
+      "label": "scale-0590501",
+      "proof": {
+        "modular_roots": 6,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "4e6fa4ffd4a53321208f46137d3dc9b0a94514e3b83efdaa215366a723563a68",
+      "index": 0,
+      "label": "scale-0290097",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "f7f3bff1fa788d8626aca146943bc7199bc4fd8856eb9171c62e939b9100ee0b",
+      "index": 0,
+      "label": "scale-0748009",
+      "proof": {
+        "modular_roots": 0,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "811fe9bece3f37dd935d3b080a3f603c5d1b271f23787315fb609c3436d2e037",
+      "index": 0,
+      "label": "302-generic-section-control",
+      "proof": {
+        "modular_roots": 2,
+        "prime": 53,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "a4700b822c62c1146839d2925a338b1a13790305845db2333aaab03bce1cbe2c",
+      "index": 1,
+      "label": "scale-0131232",
+      "proof": {
+        "modular_roots": 3,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "feb0a0188bf12a32221bd4b9b32044816376157957f06958b2ce813dc5e6c03c",
+      "index": 1,
+      "label": "scale-0257585",
+      "proof": {
+        "modular_roots": 4,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "91bbe7083602ff00f029800b801df1cb6f7f32dc9296bad616093c3759e615ea",
+      "index": 1,
+      "label": "scale-0487239",
+      "proof": {
+        "modular_roots": 4,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "7f69a27c675a1cf8f40999d119d63aa76981dd2595fa0a825aaf8ad2ba7100c7",
+      "index": 1,
+      "label": "scale-0177036",
+      "proof": {
+        "modular_roots": 4,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "2fde9c16fe4a7db450e27dac153c448439b84ae3d02913339acdb6de6844f969",
+      "index": 1,
+      "label": "scale-0043332",
+      "proof": {
+        "modular_roots": 3,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "ab2aa7cc19d181bf496c27be0cd04c6512b2ab4f2769ad26b9a3770f63dfef94",
+      "index": 1,
+      "label": "scale-0590501",
+      "proof": {
+        "modular_roots": 6,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "c5efc725ae34d658e21f4628f04cb7daf66537d1259b0d175c0b657f9406c4da",
+      "index": 1,
+      "label": "scale-0290097",
+      "proof": {
+        "modular_roots": 4,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "5c4bc7aed9d868bf0157aacf1feefa14ea6552f79b1c4aa7a921609a74ece1fc",
+      "index": 1,
+      "label": "scale-0748009",
+      "proof": {
+        "modular_roots": 3,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    },
+    {
+      "certificate_sha256": "6056bad9324c51a059eb1fc9d41a0d03096c93422c9366a771f594e7eb70c770",
+      "index": 1,
+      "label": "302-generic-section-control",
+      "proof": {
+        "modular_roots": 4,
+        "prime": 47,
+        "rational_roots": 0
+      },
+      "rational_preimages": 0
+    }
+  ],
+  "replay_protocol_sha256": "a613bd2e78d360922f4a176849cc1dd779f0155467c7ae2c89ba80cf5e46ed89",
+  "status": "PASS_INDEPENDENT_ALL18_EXACT_NONSPLITS"
+}

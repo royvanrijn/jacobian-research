@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery-replay-supervision/supervisor.json": "44df6e533bb4bb46b01f0fd2a2d836acdd3cbd4387ce3a1e9e00dd05735046fa",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery-supervision/supervisor.json": "8317b6caef5e4ca614b2892e99633b3454e8503b7c13e8e7626508383e9a7ab2",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery/epoch-00/chart-0099.json": "4a5fffa3ec1732ddd9364488469ccf0a881a7903269e91bd8e4765320da79ab7",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery/epoch-00/landscape/selection.json": "22affa49ec5f7f8b2155d7cc415d51a2abe3faa40dbec3c3775ae05a97817134",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery/protocol.json": "59efa95aee149099aeb8804b9ebeef38e84f3f8bf9274c472ec8699b16be4144",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery/terminal.json": "a4652e4285a54506f29bce8151697474e51783263bd0853a5f45373d53722b18",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-amplification-v1/103b2-disjoint-max-discovery/verified.json": "4536e90a049083c61f1b209849b5700e2cab5f60a257e91b33e4daa237d67a63"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 0,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 50,
+  "next_policy_to_consider": "preconditioned_full",
+  "rank_lower_bound": 25,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

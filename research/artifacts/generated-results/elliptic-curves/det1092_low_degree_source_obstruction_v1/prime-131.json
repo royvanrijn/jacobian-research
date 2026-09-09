@@ -1,0 +1,1636 @@
+{
+  "cache_size": 538,
+  "incoming": [
+    142,
+    164,
+    179,
+    187,
+    191,
+    201,
+    223,
+    225,
+    231,
+    270,
+    271,
+    294,
+    296,
+    317,
+    341,
+    362,
+    371,
+    398,
+    410,
+    419,
+    433,
+    440,
+    456,
+    468,
+    486,
+    503,
+    507,
+    530,
+    554,
+    559,
+    561,
+    568,
+    608,
+    652,
+    706,
+    716,
+    731,
+    741,
+    795,
+    839,
+    879,
+    886,
+    888,
+    893,
+    917,
+    940,
+    944,
+    961,
+    979,
+    991,
+    1007,
+    1014,
+    1028,
+    1037,
+    1049,
+    1076,
+    1085,
+    1106,
+    1130,
+    1151,
+    1153,
+    1176,
+    1177,
+    1216,
+    1222,
+    1224,
+    1246,
+    1256,
+    1260,
+    1268,
+    1283,
+    1305
+  ],
+  "prime": 131,
+  "protocol_sha256": "51e2f594f215c6960c56cd65d617a2fdc794650f55f33d93cb78c1949b33ded4",
+  "status": "PASS_BOUNDED_MODULAR_SOURCE_INCIDENCE",
+  "status_counts": {
+    "EXCLUDED_NO_PROJECTIVE_ROOT": 34,
+    "UNKNOWN_LOCAL_ROOT": 38
+  },
+  "survivors": [
+    142,
+    164,
+    179,
+    201,
+    223,
+    231,
+    271,
+    294,
+    296,
+    317,
+    419,
+    440,
+    503,
+    507,
+    530,
+    554,
+    559,
+    608,
+    652,
+    795,
+    839,
+    888,
+    893,
+    917,
+    940,
+    944,
+    1007,
+    1028,
+    1130,
+    1151,
+    1153,
+    1176,
+    1216,
+    1224,
+    1246,
+    1268,
+    1283,
+    1305
+  ],
+  "trials": [
+    {
+      "degree": 2,
+      "discriminant": 58,
+      "incidence_coefficients": [
+        15,
+        74,
+        51
+      ],
+      "map_denominator": [
+        129,
+        126,
+        1
+      ],
+      "map_numerator": [
+        60,
+        121,
+        94
+      ],
+      "source_index": 142,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 77,
+      "incidence_coefficients": [
+        64,
+        87,
+        105
+      ],
+      "map_denominator": [
+        20,
+        30,
+        1
+      ],
+      "map_numerator": [
+        7,
+        67,
+        17
+      ],
+      "source_index": 164,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 91,
+      "incidence_coefficients": [
+        28,
+        59,
+        56
+      ],
+      "map_denominator": [
+        71,
+        29,
+        1
+      ],
+      "map_numerator": [
+        68,
+        127,
+        99
+      ],
+      "source_index": 179,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 116,
+      "incidence_coefficients": [
+        30,
+        51,
+        48
+      ],
+      "map_denominator": [
+        100,
+        62,
+        1
+      ],
+      "map_numerator": [
+        7,
+        97,
+        91
+      ],
+      "source_index": 187,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 116,
+      "incidence_coefficients": [
+        110,
+        62,
+        18
+      ],
+      "map_denominator": [
+        73,
+        127,
+        1
+      ],
+      "map_numerator": [
+        105,
+        21,
+        61
+      ],
+      "source_index": 191,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 114,
+      "incidence_coefficients": [
+        119,
+        4,
+        73
+      ],
+      "map_denominator": [
+        21,
+        89,
+        1
+      ],
+      "map_numerator": [
+        105,
+        32,
+        116
+      ],
+      "source_index": 201,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 1,
+      "incidence_coefficients": [
+        40,
+        124,
+        92
+      ],
+      "map_denominator": [
+        13,
+        59,
+        1
+      ],
+      "map_numerator": [
+        75,
+        41,
+        4
+      ],
+      "source_index": 223,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 104,
+      "incidence_coefficients": [
+        78,
+        100,
+        25
+      ],
+      "map_denominator": [
+        114,
+        93,
+        1
+      ],
+      "map_numerator": [
+        2,
+        38,
+        68
+      ],
+      "source_index": 225,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 105,
+      "incidence_coefficients": [
+        85,
+        52,
+        35
+      ],
+      "map_denominator": [
+        76,
+        113,
+        1
+      ],
+      "map_numerator": [
+        78,
+        64,
+        78
+      ],
+      "source_index": 231,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 127,
+      "incidence_coefficients": [
+        67,
+        9,
+        36
+      ],
+      "map_denominator": [
+        66,
+        59,
+        1
+      ],
+      "map_numerator": [
+        23,
+        57,
+        79
+      ],
+      "source_index": 270,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 46,
+      "incidence_coefficients": [
+        71,
+        16,
+        81
+      ],
+      "map_denominator": [
+        123,
+        14,
+        1
+      ],
+      "map_numerator": [
+        120,
+        94,
+        124
+      ],
+      "source_index": 271,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 84,
+      "incidence_coefficients": [
+        4,
+        75,
+        27
+      ],
+      "map_denominator": [
+        115,
+        46,
+        1
+      ],
+      "map_numerator": [
+        102,
+        88,
+        70
+      ],
+      "source_index": 294,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 105,
+      "incidence_coefficients": [
+        25,
+        31,
+        40
+      ],
+      "map_denominator": [
+        81,
+        49,
+        1
+      ],
+      "map_numerator": [
+        102,
+        42,
+        83
+      ],
+      "source_index": 296,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 64,
+      "incidence_coefficients": [
+        54,
+        53,
+        40
+      ],
+      "map_denominator": [
+        127,
+        24,
+        1
+      ],
+      "map_numerator": [
+        13,
+        37,
+        83
+      ],
+      "source_index": 317,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 18,
+      "incidence_coefficients": [
+        86,
+        2,
+        19
+      ],
+      "map_denominator": [
+        125,
+        13,
+        1
+      ],
+      "map_numerator": [
+        90,
+        37,
+        62
+      ],
+      "source_index": 341,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 6,
+      "incidence_coefficients": [
+        38,
+        4,
+        119
+      ],
+      "map_denominator": [
+        3,
+        28,
+        1
+      ],
+      "map_numerator": [
+        36,
+        29,
+        31
+      ],
+      "source_index": 362,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 83,
+      "incidence_coefficients": [
+        104,
+        68,
+        112
+      ],
+      "map_denominator": [
+        11,
+        52,
+        1
+      ],
+      "map_numerator": [
+        53,
+        77,
+        24
+      ],
+      "source_index": 371,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 71,
+      "incidence_coefficients": [
+        119,
+        33,
+        17
+      ],
+      "map_denominator": [
+        12,
+        128,
+        1
+      ],
+      "map_numerator": [
+        111,
+        35,
+        60
+      ],
+      "source_index": 398,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 10,
+      "incidence_coefficients": [
+        34,
+        7,
+        34
+      ],
+      "map_denominator": [
+        30,
+        11,
+        1
+      ],
+      "map_numerator": [
+        14,
+        87,
+        77
+      ],
+      "source_index": 410,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 84,
+      "incidence_coefficients": [
+        15,
+        9,
+        72
+      ],
+      "map_denominator": [
+        122,
+        111,
+        1
+      ],
+      "map_numerator": [
+        21,
+        66,
+        115
+      ],
+      "source_index": 419,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 120,
+      "incidence_coefficients": [
+        67,
+        126,
+        6
+      ],
+      "map_denominator": [
+        45,
+        51,
+        1
+      ],
+      "map_numerator": [
+        37,
+        92,
+        49
+      ],
+      "source_index": 433,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 53,
+      "incidence_coefficients": [
+        94,
+        101,
+        112
+      ],
+      "map_denominator": [
+        35,
+        78,
+        1
+      ],
+      "map_numerator": [
+        27,
+        49,
+        24
+      ],
+      "source_index": 440,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 31,
+      "incidence_coefficients": [
+        101,
+        77,
+        36
+      ],
+      "map_denominator": [
+        9,
+        124,
+        1
+      ],
+      "map_numerator": [
+        95,
+        38,
+        79
+      ],
+      "source_index": 456,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        90,
+        92,
+        75
+      ],
+      "map_denominator": [
+        88,
+        36,
+        1
+      ],
+      "map_numerator": [
+        75,
+        68,
+        118
+      ],
+      "source_index": 468,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 73,
+      "incidence_coefficients": [
+        107,
+        113,
+        97
+      ],
+      "map_denominator": [
+        26,
+        87,
+        1
+      ],
+      "map_numerator": [
+        46,
+        55,
+        9
+      ],
+      "source_index": 486,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 25,
+      "incidence_coefficients": [
+        0,
+        126,
+        61
+      ],
+      "map_denominator": [
+        52,
+        3,
+        1
+      ],
+      "map_numerator": [
+        9,
+        124,
+        104
+      ],
+      "source_index": 503,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 99,
+      "incidence_coefficients": [
+        1,
+        60,
+        122
+      ],
+      "map_denominator": [
+        103,
+        12,
+        1
+      ],
+      "map_numerator": [
+        107,
+        52,
+        34
+      ],
+      "source_index": 507,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 61,
+      "incidence_coefficients": [
+        17,
+        6,
+        121
+      ],
+      "map_denominator": [
+        13,
+        1
+      ],
+      "map_numerator": [
+        52,
+        49,
+        121
+      ],
+      "source_index": 530,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 52,
+      "incidence_coefficients": [
+        54,
+        38,
+        21
+      ],
+      "map_denominator": [
+        78,
+        100,
+        1
+      ],
+      "map_numerator": [
+        2,
+        15,
+        64
+      ],
+      "source_index": 554,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 81,
+      "incidence_coefficients": [
+        64,
+        71,
+        3
+      ],
+      "map_denominator": [
+        104,
+        31,
+        1
+      ],
+      "map_numerator": [
+        82,
+        94,
+        46
+      ],
+      "source_index": 559,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 17,
+      "incidence_coefficients": [
+        56,
+        93,
+        90
+      ],
+      "map_denominator": [
+        66,
+        38,
+        1
+      ],
+      "map_numerator": [
+        12,
+        24,
+        2
+      ],
+      "source_index": 561,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 95,
+      "incidence_coefficients": [
+        17,
+        124,
+        34
+      ],
+      "map_denominator": [
+        35,
+        93,
+        1
+      ],
+      "map_numerator": [
+        81,
+        62,
+        77
+      ],
+      "source_index": 568,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 55,
+      "incidence_coefficients": [
+        33,
+        127,
+        92
+      ],
+      "map_denominator": [
+        42,
+        59,
+        1
+      ],
+      "map_numerator": [
+        5,
+        44,
+        4
+      ],
+      "source_index": 608,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 5,
+      "incidence_coefficients": [
+        107,
+        38,
+        101
+      ],
+      "map_denominator": [
+        26,
+        74,
+        1
+      ],
+      "map_numerator": [
+        46,
+        76,
+        13
+      ],
+      "source_index": 652,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        62,
+        99,
+        100
+      ],
+      "map_denominator": [
+        40,
+        7,
+        1
+      ],
+      "map_numerator": [
+        79,
+        7,
+        12
+      ],
+      "source_index": 706,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 90,
+      "incidence_coefficients": [
+        115,
+        97,
+        12
+      ],
+      "map_denominator": [
+        66,
+        64,
+        1
+      ],
+      "map_numerator": [
+        71,
+        98,
+        55
+      ],
+      "source_index": 716,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 90,
+      "incidence_coefficients": [
+        115,
+        97,
+        12
+      ],
+      "map_denominator": [
+        66,
+        64,
+        1
+      ],
+      "map_numerator": [
+        71,
+        98,
+        55
+      ],
+      "source_index": 731,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        62,
+        99,
+        100
+      ],
+      "map_denominator": [
+        40,
+        7,
+        1
+      ],
+      "map_numerator": [
+        79,
+        7,
+        12
+      ],
+      "source_index": 741,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 5,
+      "incidence_coefficients": [
+        107,
+        38,
+        101
+      ],
+      "map_denominator": [
+        26,
+        74,
+        1
+      ],
+      "map_numerator": [
+        46,
+        76,
+        13
+      ],
+      "source_index": 795,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 55,
+      "incidence_coefficients": [
+        33,
+        127,
+        92
+      ],
+      "map_denominator": [
+        42,
+        59,
+        1
+      ],
+      "map_numerator": [
+        5,
+        44,
+        4
+      ],
+      "source_index": 839,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 95,
+      "incidence_coefficients": [
+        17,
+        124,
+        34
+      ],
+      "map_denominator": [
+        35,
+        93,
+        1
+      ],
+      "map_numerator": [
+        81,
+        62,
+        77
+      ],
+      "source_index": 879,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 17,
+      "incidence_coefficients": [
+        56,
+        93,
+        90
+      ],
+      "map_denominator": [
+        66,
+        38,
+        1
+      ],
+      "map_numerator": [
+        12,
+        24,
+        2
+      ],
+      "source_index": 886,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 81,
+      "incidence_coefficients": [
+        64,
+        71,
+        3
+      ],
+      "map_denominator": [
+        104,
+        31,
+        1
+      ],
+      "map_numerator": [
+        82,
+        94,
+        46
+      ],
+      "source_index": 888,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 52,
+      "incidence_coefficients": [
+        54,
+        38,
+        21
+      ],
+      "map_denominator": [
+        78,
+        100,
+        1
+      ],
+      "map_numerator": [
+        2,
+        15,
+        64
+      ],
+      "source_index": 893,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 61,
+      "incidence_coefficients": [
+        17,
+        6,
+        121
+      ],
+      "map_denominator": [
+        13,
+        1
+      ],
+      "map_numerator": [
+        52,
+        49,
+        121
+      ],
+      "source_index": 917,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 99,
+      "incidence_coefficients": [
+        1,
+        60,
+        122
+      ],
+      "map_denominator": [
+        103,
+        12,
+        1
+      ],
+      "map_numerator": [
+        107,
+        52,
+        34
+      ],
+      "source_index": 940,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 25,
+      "incidence_coefficients": [
+        0,
+        126,
+        61
+      ],
+      "map_denominator": [
+        52,
+        3,
+        1
+      ],
+      "map_numerator": [
+        9,
+        124,
+        104
+      ],
+      "source_index": 944,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 73,
+      "incidence_coefficients": [
+        107,
+        113,
+        97
+      ],
+      "map_denominator": [
+        26,
+        87,
+        1
+      ],
+      "map_numerator": [
+        46,
+        55,
+        9
+      ],
+      "source_index": 961,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 66,
+      "incidence_coefficients": [
+        90,
+        92,
+        75
+      ],
+      "map_denominator": [
+        88,
+        36,
+        1
+      ],
+      "map_numerator": [
+        75,
+        68,
+        118
+      ],
+      "source_index": 979,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 31,
+      "incidence_coefficients": [
+        101,
+        77,
+        36
+      ],
+      "map_denominator": [
+        9,
+        124,
+        1
+      ],
+      "map_numerator": [
+        95,
+        38,
+        79
+      ],
+      "source_index": 991,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 53,
+      "incidence_coefficients": [
+        94,
+        101,
+        112
+      ],
+      "map_denominator": [
+        35,
+        78,
+        1
+      ],
+      "map_numerator": [
+        27,
+        49,
+        24
+      ],
+      "source_index": 1007,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 120,
+      "incidence_coefficients": [
+        67,
+        126,
+        6
+      ],
+      "map_denominator": [
+        45,
+        51,
+        1
+      ],
+      "map_numerator": [
+        37,
+        92,
+        49
+      ],
+      "source_index": 1014,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 84,
+      "incidence_coefficients": [
+        15,
+        9,
+        72
+      ],
+      "map_denominator": [
+        122,
+        111,
+        1
+      ],
+      "map_numerator": [
+        21,
+        66,
+        115
+      ],
+      "source_index": 1028,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 10,
+      "incidence_coefficients": [
+        34,
+        7,
+        34
+      ],
+      "map_denominator": [
+        30,
+        11,
+        1
+      ],
+      "map_numerator": [
+        14,
+        87,
+        77
+      ],
+      "source_index": 1037,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 71,
+      "incidence_coefficients": [
+        119,
+        33,
+        17
+      ],
+      "map_denominator": [
+        12,
+        128,
+        1
+      ],
+      "map_numerator": [
+        111,
+        35,
+        60
+      ],
+      "source_index": 1049,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 83,
+      "incidence_coefficients": [
+        104,
+        68,
+        112
+      ],
+      "map_denominator": [
+        11,
+        52,
+        1
+      ],
+      "map_numerator": [
+        53,
+        77,
+        24
+      ],
+      "source_index": 1076,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 6,
+      "incidence_coefficients": [
+        38,
+        4,
+        119
+      ],
+      "map_denominator": [
+        3,
+        28,
+        1
+      ],
+      "map_numerator": [
+        36,
+        29,
+        31
+      ],
+      "source_index": 1085,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 18,
+      "incidence_coefficients": [
+        86,
+        2,
+        19
+      ],
+      "map_denominator": [
+        125,
+        13,
+        1
+      ],
+      "map_numerator": [
+        90,
+        37,
+        62
+      ],
+      "source_index": 1106,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 64,
+      "incidence_coefficients": [
+        54,
+        53,
+        40
+      ],
+      "map_denominator": [
+        127,
+        24,
+        1
+      ],
+      "map_numerator": [
+        13,
+        37,
+        83
+      ],
+      "source_index": 1130,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 105,
+      "incidence_coefficients": [
+        25,
+        31,
+        40
+      ],
+      "map_denominator": [
+        81,
+        49,
+        1
+      ],
+      "map_numerator": [
+        102,
+        42,
+        83
+      ],
+      "source_index": 1151,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 84,
+      "incidence_coefficients": [
+        4,
+        75,
+        27
+      ],
+      "map_denominator": [
+        115,
+        46,
+        1
+      ],
+      "map_numerator": [
+        102,
+        88,
+        70
+      ],
+      "source_index": 1153,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 46,
+      "incidence_coefficients": [
+        71,
+        16,
+        81
+      ],
+      "map_denominator": [
+        123,
+        14,
+        1
+      ],
+      "map_numerator": [
+        120,
+        94,
+        124
+      ],
+      "source_index": 1176,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 127,
+      "incidence_coefficients": [
+        67,
+        9,
+        36
+      ],
+      "map_denominator": [
+        66,
+        59,
+        1
+      ],
+      "map_numerator": [
+        23,
+        57,
+        79
+      ],
+      "source_index": 1177,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 105,
+      "incidence_coefficients": [
+        85,
+        52,
+        35
+      ],
+      "map_denominator": [
+        76,
+        113,
+        1
+      ],
+      "map_numerator": [
+        78,
+        64,
+        78
+      ],
+      "source_index": 1216,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 104,
+      "incidence_coefficients": [
+        78,
+        100,
+        25
+      ],
+      "map_denominator": [
+        114,
+        93,
+        1
+      ],
+      "map_numerator": [
+        2,
+        38,
+        68
+      ],
+      "source_index": 1222,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 1,
+      "incidence_coefficients": [
+        40,
+        124,
+        92
+      ],
+      "map_denominator": [
+        13,
+        59,
+        1
+      ],
+      "map_numerator": [
+        75,
+        41,
+        4
+      ],
+      "source_index": 1224,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 114,
+      "incidence_coefficients": [
+        119,
+        4,
+        73
+      ],
+      "map_denominator": [
+        21,
+        89,
+        1
+      ],
+      "map_numerator": [
+        105,
+        32,
+        116
+      ],
+      "source_index": 1246,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 116,
+      "incidence_coefficients": [
+        110,
+        62,
+        18
+      ],
+      "map_denominator": [
+        73,
+        127,
+        1
+      ],
+      "map_numerator": [
+        105,
+        21,
+        61
+      ],
+      "source_index": 1256,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 116,
+      "incidence_coefficients": [
+        30,
+        51,
+        48
+      ],
+      "map_denominator": [
+        100,
+        62,
+        1
+      ],
+      "map_numerator": [
+        7,
+        97,
+        91
+      ],
+      "source_index": 1260,
+      "status": "EXCLUDED_NO_PROJECTIVE_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 91,
+      "incidence_coefficients": [
+        28,
+        59,
+        56
+      ],
+      "map_denominator": [
+        71,
+        29,
+        1
+      ],
+      "map_numerator": [
+        68,
+        127,
+        99
+      ],
+      "source_index": 1268,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 77,
+      "incidence_coefficients": [
+        64,
+        87,
+        105
+      ],
+      "map_denominator": [
+        20,
+        30,
+        1
+      ],
+      "map_numerator": [
+        7,
+        67,
+        17
+      ],
+      "source_index": 1283,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    },
+    {
+      "degree": 2,
+      "discriminant": 58,
+      "incidence_coefficients": [
+        15,
+        74,
+        51
+      ],
+      "map_denominator": [
+        129,
+        126,
+        1
+      ],
+      "map_numerator": [
+        60,
+        121,
+        94
+      ],
+      "source_index": 1305,
+      "status": "UNKNOWN_LOCAL_ROOT"
+    }
+  ]
+}

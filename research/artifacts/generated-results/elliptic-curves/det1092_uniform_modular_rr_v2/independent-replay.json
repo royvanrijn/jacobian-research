@@ -1,0 +1,67 @@
+{
+  "boundary": "No full atlas execution, new prime, target, point search or seed. The residual-rank and smooth-reduction theorem covers all minimum norm10 classes by geometry, not by an equation census.",
+  "classification": "verified exact applications; uniform divisor, four-chart and Artin--Tate implications are written proofs",
+  "geometry_regression": {
+    "discriminant_derivative_gcd_degree": 3,
+    "prime": 157
+  },
+  "good_prime_checks": [
+    {
+      "Artin_Tate_Fp_squared_value": 27300,
+      "anti_height_squareclass_representative": "25",
+      "anti_norm_six_possible": false,
+      "arithmetic_Picard_index": 1,
+      "arithmetic_Picard_rank": 19,
+      "basis_Gram_replayed": true,
+      "geometric_Picard_rank": 20,
+      "pair_trace": -248,
+      "prime": 149
+    },
+    {
+      "Artin_Tate_Fp_squared_value": 31668,
+      "anti_height_squareclass_representative": "29",
+      "anti_norm_six_possible": false,
+      "arithmetic_Picard_index": 1,
+      "arithmetic_Picard_rank": 19,
+      "basis_Gram_replayed": true,
+      "geometric_Picard_rank": 20,
+      "pair_trace": -244,
+      "prime": 151
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/det1092_modular_bisection_direct_v1/summary.json": "e8f576147818760cc6842a4b22ef9dc096a8d267ca97bd2820e4e61ad2912335",
+    "artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/arithmetic-lattice.json": "8e3fd51c2a9dcf6e9061ad8cafc6e0a7b195481a0d871d76c1fce36b7b80c28d",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/protocol.json": "4e69957e7e602adb34293b02361cf8ea6da80b84576356b2d1dd05e7a7fe4e30",
+    "artifacts/generated-results/elliptic-curves/det1092_uniform_modular_rr_v2/summary.json": "b4354721c1ab357127483563e7baa749daf5decd77a9269ec5d0c3e12e6d2984",
+    "elliptic-curves/cas/verify_det1092_uniform_modular_rr.sage": "8eab6c38a4c5fa0992a459f8a9906668edb4a2f19442598890f50019761067de"
+  },
+  "new_excluded": [
+    87,
+    103,
+    109,
+    110,
+    115,
+    117,
+    121,
+    122,
+    123
+  ],
+  "new_unresolved": [
+    61,
+    107,
+    111
+  ],
+  "old_orbit_trials": 30,
+  "pole_gate_recovered": [
+    {
+      "chart": 1,
+      "mask": 61,
+      "prime": 149,
+      "status": "LOCALLY_SPLIT_SIMPLE_UNKNOWN_OVER_Q"
+    }
+  ],
+  "status": "PASS_INDEPENDENT_UNIFORM_MODULAR_RR_AND_SMOOTH_REDUCTION_INPUTS",
+  "vertical_chart_symbolic_identity": true
+}

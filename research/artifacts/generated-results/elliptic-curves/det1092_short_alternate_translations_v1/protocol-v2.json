@@ -1,0 +1,24 @@
+{
+  "classification": "generic-only shortest alternate section construction",
+  "existing_source_count": 130,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/independent-replay.json": "b9ae22fb729f47df14af69cc6623c9deb0df8b3a2e90d6e76dd53f2fcf391209",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-47755.json": "fb676c3251da17a395b751d7bd503bcfd78a252b31603660988287a067c3c7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_genus1_picard_image_v1/frame.json": "3a2843642884cbc77bf3cc8b8a0349a873a3a890e2175edf968559605c24c959",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/independent-replay.json": "936c56dba5d3efe38f57c3242ad81af5915b87ce1f9b6894aa97ee655783e085",
+    "artifacts/generated-results/elliptic-curves/det1092_low_degree_source_obstruction_v1/sources.json": "2ba6e24c51500170f14f4e132ef5731bdd3532d0c501706e151def493ba783d0",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "elliptic-curves/cas/construct_det1092_short_alternate_translations_v2.sage": "ee7a693311d42fe08ebe520930959762831ae0da323c2acb0d04af9d4be2404f"
+  },
+  "limits": {
+    "maps": 8,
+    "new_source_enumerations": 0,
+    "parameter_sweeps": 0,
+    "point_searches": 0,
+    "seconds_per_action": 25
+  },
+  "rule": "From the completed original-section source set of alternate degree1, take every section of least positive alternate height. Translate the fixed bidegree2/2 conic once by each sign of each such section. Keep all distinct new image classes of minimum original degree greater than1. Build the whole tied minimum set only if at most8; otherwise retain UNKNOWN_MAP_CAP and do not choose orbit IDs.",
+  "section_height": "least positive among the completed130 common sections",
+  "source_conic": 47755
+}

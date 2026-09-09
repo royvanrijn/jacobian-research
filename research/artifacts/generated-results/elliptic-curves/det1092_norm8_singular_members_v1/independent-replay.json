@@ -1,0 +1,22 @@
+{
+  "Kodaira_configuration": {
+    "I1": 14,
+    "I2": 5
+  },
+  "boundary": "A pencil-specific obstruction, not an exclusion of smooth genus1 carriers or seeds on any original fibre. No rational-parameter incidence or amplification predictor.",
+  "classification": "verified exact application and new pencil-wide obstruction",
+  "conclusion": "No singular member defined over Q in this pencil supplies a genuine original degree2 rational multisection; every rational singular member is a pair of inherited original sections.",
+  "geometric_generic_MW_rank": 12,
+  "inherited_component_sections": 10,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/geometry.json": "7e4636200ad92eb4601e613f9503f1a13fb0d67a386294cda2b171b5dfe77ce2",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/no-rational-nodal-member.json": "d506d71ec0a7dbd0efe3947d76adb37913857c0ed34ea446b2d704e712915393",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/protocol.json": "89ca5c1d25d24e1e0f3d442e821319c7c69976d9cb5d70063123ab44df00d738",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/rational-singular-members.json": "661779f47caeeb1d862038bec9ffa92d72f5bfc88cc6b661f8057bfd45737239",
+    "elliptic-curves/cas/verify_det1092_norm8_singular_members.sage": "50da812fbeecd465db118b6a65eab65262b3d08c93e3cb81d3fcce3158545d0e"
+  },
+  "no_projective_root_prime": 149,
+  "nonrational_simple_discriminant_degree": 14,
+  "rational_singular_parameters": 5,
+  "status": "PASS_INDEPENDENT_NORM8_RATIONAL_SINGULAR_MEMBER_OBSTRUCTION"
+}

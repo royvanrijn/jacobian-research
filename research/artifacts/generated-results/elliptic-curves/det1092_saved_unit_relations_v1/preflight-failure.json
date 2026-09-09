@@ -1,0 +1,6 @@
+{
+  "classification": "implementation preflight failure; no mathematical conclusion",
+  "command": "timeout 25s /home/royvanrijn/.local/bin/sage -python research/elliptic-curves/cas/verify_det1092_saved_unit_relations.sage",
+  "failure": "cypari2 Gen has no nf_get_disc method",
+  "correction": "Use the discriminant component nf[2] of the PARI nf structure."
+}

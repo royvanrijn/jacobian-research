@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "image_NS": [
+        6,
+        14,
+        -1,
+        1,
+        3,
+        -1,
+        -2,
+        -1,
+        -2,
+        2,
+        2,
+        1,
+        -2,
+        -1,
+        0,
+        3,
+        3,
+        -5,
+        0
+      ],
+      "index": 0,
+      "original_degree": 6,
+      "translators": [
+        {
+          "sign": -1,
+          "source_index": 126
+        }
+      ]
+    },
+    {
+      "image_NS": [
+        6,
+        14,
+        1,
+        1,
+        -3,
+        1,
+        2,
+        -1,
+        2,
+        -2,
+        -2,
+        -1,
+        2,
+        1,
+        0,
+        -1,
+        3,
+        -3,
+        0
+      ],
+      "index": 1,
+      "original_degree": 6,
+      "translators": [
+        {
+          "sign": 1,
+          "source_index": 126
+        }
+      ]
+    }
+  ],
+  "classification": "generic-only rational maps, no specialized inputs",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/map-47755.json": "fb676c3251da17a395b751d7bd503bcfd78a252b31603660988287a067c3c7d5",
+    "artifacts/generated-results/elliptic-curves/det1092_norm8_seed_cover_v2/generic.json": "03d3e86e70709934e219ada1d07ddcc10f2422edf4c8f09ba2cc3344f44c519f",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/geometry-v2.json": "fca4c7fbbc209f3f8d8b0d9b5ee583819bec179812d1aa9b3c4eb50431f5c06e",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/protocol-v2.json": "b1a610acc91c521fd26168f43de5559d2e415c84cd25d880906ed5d51a7d7b64",
+    "elliptic-curves/cas/construct_det1092_short_alternate_maps.sage": "390cacd068dfc1050834f449c6d5f24d3d3fe08edf183e8c911e13a11b8a0d42"
+  },
+  "limits": {
+    "maps": 2,
+    "point_searches": 0,
+    "seconds_per_action": 25,
+    "target_inputs": 0
+  }
+}

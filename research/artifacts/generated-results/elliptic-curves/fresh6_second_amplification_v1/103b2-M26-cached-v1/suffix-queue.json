@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1-replay-supervision/supervisor.json": "01c8a114415d31440eec449fc4c4f9fa0dabdb9b8fc2cd70777a35f9cf1137bd",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1-supervision/supervisor.json": "8509d956e0616aaa038f8566325fadf9f05b0b1264060e73c52504b459c2868e",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1/epoch-03/chart-0102.json": "ea4b7974386428e0279fc7bcc436bf028b36554376d682b466ca844f5c738228",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1/epoch-03/landscape/selection.json": "b163760d72f0ccc9d2d6d24bcd6583da2d1f3fc33671ded962657e23469e3a57",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1/protocol.json": "fbdcc205594a3f63c5e9bcb9a55dea259035b1c5b5287eeee3bfbc53abd54a2d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1/terminal.json": "fd7b6a9384300ed71f220bc68c96cd43f8748c75f5077bce834fce935fba5002",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v1/verified.json": "c8889db64f92dbb7e7e02aa2c2a8b2dc5efcd255c7240fa18c68a889e0f6ae50"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "epoch": 3,
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 51,
+  "next_policy_to_consider": "factor_free",
+  "rank_lower_bound": 26,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "status": "QUEUED_NOT_LAUNCHED"
+}

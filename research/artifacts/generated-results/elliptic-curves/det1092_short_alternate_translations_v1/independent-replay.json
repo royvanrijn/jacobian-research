@@ -1,0 +1,39 @@
+{
+  "boundary": "Minimum height2 among130 common sections, not a full MW12 shortest-vector theorem. No conclusion for n beyond the two incidence-tested signs.",
+  "classification": "new deduction and verified generic-only construction; no prospective302 seed",
+  "control_cases": 18,
+  "degree_laws": [
+    {
+      "all_integer_n": true,
+      "constant": 2,
+      "height": "2",
+      "linear": 0,
+      "quadratic": 4,
+      "translator": "short"
+    },
+    {
+      "all_integer_n": true,
+      "constant": 2,
+      "height": "19/2",
+      "linear": 0,
+      "quadratic": 19,
+      "translator": "old_B"
+    }
+  ],
+  "generic_cover_ranks": [
+    18,
+    18
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/replay-geometry.json": "00b816c330786f1915ea02dbff80804e509da659b2e48bdedaf8b6db223591dd",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/replay-incidence.json": "aca36a239283cf2fa918700b24d397895c63fb5b496c2341543a7a36a6aaef26",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/replay-map-0.json": "1f816c80cc0898d98da67e87574d88e94f49aa96d989469747fbbba82a94ced2",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/replay-map-1.json": "37b54a194a8dc40ee14e52c72aaf905cc862b2cfdb0bae06833bdff8fab74794",
+    "artifacts/generated-results/elliptic-curves/det1092_short_alternate_translations_v1/replay-protocol.json": "a613bd2e78d360922f4a176849cc1dd779f0155467c7ae2c89ba80cf5e46ed89"
+  },
+  "new_specialized_rank_claims": 0,
+  "point_searches": 0,
+  "rational_control_incidences": 0,
+  "source_enumerations": 0,
+  "status": "PASS_SHORT_TRANSLATION_DEGREE_LAW_TWO_COVERS_AND_PANEL"
+}

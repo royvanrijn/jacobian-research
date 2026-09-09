@@ -1,0 +1,97 @@
+{
+  "status": "FIRST_SEED_CONFIRMATION_COMPLETE",
+  "packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json",
+    "sha256": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e"
+  },
+  "curves": [
+    {
+      "id": "074d9-fresh-002",
+      "family": "074d9",
+      "parameter": "88/2551",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-748138446810822750362187759315067538001062115147034800",
+        "250090365516820115702365469763720234107261223728588038909303559211459078144086400"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "07ca9-fresh-002",
+      "family": "07ca9",
+      "parameter": "-2475/2848",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-7430520563173433743795041722286377455784564538401722032",
+        "8565052191078301637826295856722517162584285192233366608476675408429374521588791680"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "08234-fresh-002",
+      "family": "08234",
+      "parameter": "2570/2143",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-6464666246333392313155396914232943513625340499729547314031792",
+        "6391296864241292005159706415964919522377597662888594179198791037062716011373973930839613824"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "08f72-fresh-002",
+      "family": "08f72",
+      "parameter": "-2433/3479",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-7190238579132522520612451555336491419541672129670291526192",
+        "222536150676193843215157273360426381263967548713613857674908684665440539817427785299840"
+      ],
+      "rank_lower_bound": 17,
+      "search_status": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN"
+    },
+    {
+      "id": "103b2-fresh-002",
+      "family": "103b2",
+      "parameter": "2815/1088",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1732071835709791953163541201921240648769859698789794112",
+        "877887761788637981682155347546477575260466153130110287893359837183583378914720000"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    },
+    {
+      "id": "11952-fresh-002",
+      "family": "11952",
+      "parameter": "327/1403",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-501238131360430888365372184685985074567373398119959552",
+        "136822609906256956253644827986746199258534348663166290407575549093194946116714496"
+      ],
+      "rank_lower_bound": 18,
+      "search_status": "FIRST_M18_CERTIFIED"
+    }
+  ],
+  "generic_packet_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/fresh6_second_generic17_v1/result.json",
+    "sha256": "6bfd2d34c73ab04c3fd5d673d8e5517b658bb28f4bac5fbf10cdfbd6c96e2579"
+  }
+}

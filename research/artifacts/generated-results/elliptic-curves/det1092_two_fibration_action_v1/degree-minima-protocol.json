@@ -1,0 +1,23 @@
+{
+  "classification": "exact generic-only low-degree translation-orbit calculation",
+  "degree_ceiling": 63,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/action.json": "a9379bb4a92e7582a34f28ed735bd489fed20bfc5e8eef8ce1387161fa35dfa5",
+    "elliptic-curves/cas/minimize_det1092_switch_degree.sage": "8368e5c950813d20145f5639c2574b3cd4b6f5b960c481378cf499f5de948d42",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1"
+  },
+  "limits": {
+    "nodes_per_sign": 200000,
+    "parameter_evaluations": 0,
+    "point_searches": 0,
+    "rational_map_expansions": 0,
+    "seconds_per_sign": 25
+  },
+  "rule": "From the unique degree13 previous rational curve C, minimize the original projection degree after one arbitrary original generic translation and then either sign of alternate B. Enumerate the full closed ellipsoid through the known nonsection witness tau_B(C). No coefficient box or basis prefix truncation.",
+  "signs": [
+    -1,
+    1
+  ],
+  "source_case": 1
+}

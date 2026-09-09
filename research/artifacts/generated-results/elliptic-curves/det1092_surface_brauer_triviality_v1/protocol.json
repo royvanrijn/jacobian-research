@@ -1,0 +1,22 @@
+{
+  "classification": "new arithmetic interpretation of immutable geometric evidence",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "elliptic-curves/cas/audit_det1092_surface_brauer_reductions.sage": "2a8548ef93976efd3424acc40282ab4426b225b95cfa75de0dee175b8e32f525"
+  },
+  "limits": {
+    "Selmer_groups": 0,
+    "class_groups": 0,
+    "exceptional_points": 0,
+    "new_extension_field_counts": 0,
+    "new_test_parameters": 0,
+    "point_searches": 0,
+    "primes": [
+      149,
+      151
+    ],
+    "seconds": 25
+  },
+  "rule": "Use precisely the completed149 and151 Frobenius records. Recheck good reduction, the integral rank19 arithmetic divisor lattice and Artin--Tate over Fp rather than Fp squared. Recount Fp points directly; reuse the certified Fp-squared counts."
+}

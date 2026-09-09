@@ -1,0 +1,808 @@
+{
+  "boundary": "These balls exclude only orbit8044 splitting. Curve302 already has an independent seed from another carrier. No fibre rank upper bounds follow.",
+  "cases": [
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 12,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 16,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 16,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 29,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 23,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 31,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 25,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 37,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 12,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 41,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 32,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 43,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 36,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 47,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 25,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 53,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 36,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 59,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 9,
+          "valuation": 2
+        },
+        {
+          "obstructed": true,
+          "p": 61,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 6,
+          "valuation": 0
+        }
+      ],
+      "label": "scale-0131232",
+      "parameter": "-5901745438112120947494214699000/931606906418246849332694053831643",
+      "q_value": "1700092358346680012675979644710890478721694515485450691501943528602020203670364030422436322248495093580198710167670091468231876000000/17712069960942370258716101454002327362368233794709105516934450601",
+      "witness": {
+        "p": 61,
+        "parameter_ball_exponent": 1,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 6,
+        "valuation": 0
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 10,
+          "valuation": -2
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 15,
+          "valuation": -2
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 17,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 18,
+          "valuation": 0
+        },
+        {
+          "obstructed": true,
+          "p": 29,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 12,
+          "valuation": 2
+        }
+      ],
+      "label": "scale-0257585",
+      "parameter": "26317742566535649550305161948000/178852946241379577155380090934781",
+      "q_value": "1532626425957759749021367885906515829017984091308636496893304775048625610948728650452020820475491107335271050190770173051505161000000/652824007739220673779839965195449830651284028452547197844806489",
+      "witness": {
+        "p": 29,
+        "parameter_ball_exponent": 2,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 12,
+        "valuation": 2
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": true,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 5
+        }
+      ],
+      "label": "scale-0487239",
+      "parameter": "5958632989539102572597501243000/253428619923509450078042313346781",
+      "q_value": "381553569977243321979635967997512431917526768651930797631635769927961439086348698057180776764014989109352293839539114130652196000000/1310736028496624714006635015786287379759089057824839832840062489",
+      "witness": {
+        "p": 3,
+        "parameter_ball_exponent": 4,
+        "unit_is_square_mod_p": true,
+        "unit_residue": 1,
+        "valuation": 5
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 8
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 12,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 17,
+          "valuation": -4
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": true,
+          "p": 29,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 28,
+          "valuation": 3
+        }
+      ],
+      "label": "scale-0177036",
+      "parameter": "743007519072799890054397264000/134587824977161660368519739313081",
+      "q_value": "58945562720404486645107417565758604743071539299276106672198317765959430191524534438519717930170396755271101806613111905243225000000/369671074124144899699941431113305583819791379842881181831381889",
+      "witness": {
+        "p": 29,
+        "parameter_ball_exponent": 3,
+        "unit_is_square_mod_p": true,
+        "unit_residue": 28,
+        "valuation": 3
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 10,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 16,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 7,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 29,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 6,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 31,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 19,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 37,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 27,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 41,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 37,
+          "valuation": 2
+        },
+        {
+          "obstructed": true,
+          "p": 43,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 19,
+          "valuation": 0
+        }
+      ],
+      "label": "scale-0043332",
+      "parameter": "-3963398878651213340856151410000/268094686889278445242796566904059",
+      "q_value": "1491860128776694471716880719417442733612277838985479389390166185567029277179865956970490443752661997288481869051829371334341000000/24046423933844177945362205388253232337055294853431648758819229",
+      "witness": {
+        "p": 43,
+        "parameter_ball_exponent": 1,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 19,
+        "valuation": 0
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": -4
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 12,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 9,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 5,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 16,
+          "valuation": 0
+        },
+        {
+          "obstructed": true,
+          "p": 29,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 12,
+          "valuation": 2
+        }
+      ],
+      "label": "scale-0590501",
+      "parameter": "42435391124559757530009283834000/491977775870158139083888104825513",
+      "q_value": "5351768793084483310871727919751828375411531737579457456047824647341139958545994204116112129730230596296208226333588913968986089000000/4939635345921378695641608231346539863522404851670005254615830881",
+      "witness": {
+        "p": 29,
+        "parameter_ball_exponent": 2,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 12,
+        "valuation": 2
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": -4
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 12,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 18,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 29,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 22,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 31,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 18,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 37,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 41,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 25,
+          "valuation": 2
+        },
+        {
+          "obstructed": true,
+          "p": 43,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 42,
+          "valuation": 0
+        }
+      ],
+      "label": "scale-0290097",
+      "parameter": "-34225538950593317139889263227000/158982883803730567934503511138631",
+      "q_value": "1038086226157159101753456269607644865445565744549759217544581377987576469754858178722227278781202437456953927481403595570838436000000/515827700868377455854944338391916361663841444856804765022460289",
+      "witness": {
+        "p": 43,
+        "parameter_ball_exponent": 1,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 42,
+        "valuation": 0
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": -2
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 3,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 17,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 13,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 29,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 23,
+          "valuation": 2
+        },
+        {
+          "obstructed": false,
+          "p": 31,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 9,
+          "valuation": -2
+        },
+        {
+          "obstructed": false,
+          "p": 37,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 11,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 41,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 5,
+          "valuation": 2
+        },
+        {
+          "obstructed": true,
+          "p": 43,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 39,
+          "valuation": 0
+        }
+      ],
+      "label": "scale-0748009",
+      "parameter": "-27940458691465689212892589858000/1629541600531965695875572674642247",
+      "q_value": "2938764500213762576403072923086165156541277742297851845262530118499471984197866985115184200597979738934447124132746400139088601000000/54191955670699601279334197875387662989697369632928737198559943041",
+      "witness": {
+        "p": 43,
+        "parameter_ball_exponent": 1,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 39,
+        "valuation": 0
+      }
+    },
+    {
+      "conclusion": "No rational splitting of this conic anywhere in the indicated p-adic parameter ball; not an exclusion of other seeds.",
+      "exposures": [
+        {
+          "obstructed": false,
+          "p": 3,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 5,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 6
+        },
+        {
+          "obstructed": false,
+          "p": 7,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 11,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 1,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 13,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 4,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 17,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 2,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 19,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 17,
+          "valuation": 0
+        },
+        {
+          "obstructed": false,
+          "p": 23,
+          "unit_is_square_mod_p": true,
+          "unit_residue": 8,
+          "valuation": 0
+        },
+        {
+          "obstructed": true,
+          "p": 29,
+          "unit_is_square_mod_p": false,
+          "unit_residue": 21,
+          "valuation": 2
+        }
+      ],
+      "label": "302-generic-section-control",
+      "parameter": "0",
+      "q_value": "127598680603895545533594201587042450373210388891137967376445049000000",
+      "witness": {
+        "p": 29,
+        "parameter_ball_exponent": 2,
+        "unit_is_square_mod_p": false,
+        "unit_residue": 21,
+        "valuation": 2
+      }
+    }
+  ],
+  "classification": "verified application of the elementary odd-prime square criterion",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_orbit8044_rank18_base_change_v2.json": "3e71edb8f4d2374f786960ca30fc12787274e14808e2cc54449ab34eae7ebb08",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/protocol.json": "1044eaf4b5c22434eb6cbf2a22ebad0d0154722c929bfaf9d84b06d17ce47df3",
+    "elliptic-curves/cas/verify_det1092_conic_local_incidence.sage": "15cc81aa2a3194ca08ace62003cc5bc119336613f5d67cd5bbab4f91b8ce4615"
+  },
+  "limits": {
+    "cases": 9,
+    "factorizations": 0,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "prime_bound": 179,
+    "seconds": 25
+  },
+  "rule": "First local obstruction at an odd prime<=179, on the unchanged nine-address roster.",
+  "status": "PASS_NINE_EXPLICIT_LOCAL_CONIC_NONINCIDENCE_BALLS",
+  "uniformity": "q(tau+delta)-q(tau)=q_prime(tau)*delta+q2*delta^2. The certified delta valuation makes the difference higher than v_p(q(tau)), preserving its obstructed leading squareclass."
+}

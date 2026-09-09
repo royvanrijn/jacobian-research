@@ -1,0 +1,2495 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-replay-supervision/supervisor.json": "c151019df550497babb66319fc4f05827afe25fe4d1c1eeba326de7774171d7f",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-supervision/supervisor.json": "1ea88c4328adbbbd2b1dc394051dbb46bd029c74b060b156099d6aa5eb33304f",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/landscape/timings.json": "83ab632553202d6cdac2c21dcf0d74807249677c95ada37d0b7c3533bd42bb20",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/reference-verified.json": "af07be026fd45d318196b71e5af31b47103352ffdcf312386fe72a1dce256302",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/stage.json": "b7d84eb8ce65aa87c1242f81560a920dec235fbec56053265b7aabc0bb3a25b9",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/protocol.json": "11dffa51f84c138c966d525f1d0183176d46e19e3b86798d04164b12d5ba6eca",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/terminal.json": "e4e104759322b2c445fe2a27eab339fccdd2df36e3cba5d51c9a054765f240d7",
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/verified.json": "2a5529a2c9346538ff79d90f5e7440e7671fcec94725260139d1949ed531bbca"
+  },
+  "charts": 100,
+  "final_lower_bound": 27,
+  "initial_rank": 27,
+  "records": {
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-replay-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_bounded_maps_seed_v3.py",
+        "replay",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 1800
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-replay-supervision/worker.log",
+      "log_sha256": "a38ad3a65b8c81fba3c2c1b1ef7048099ced641e89c1672d3a82485755d159ab",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 297160704,
+      "pid": 1292754,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "74814020",
+      "termination_signal": null,
+      "timeout_seconds": 1800,
+      "wall_seconds": 128.7644889219664,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-supervision/supervisor.json": {
+      "command": [
+        "/home/royvanrijn/.local/bin/sage",
+        "-python",
+        "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_bounded_maps_seed_v3.py",
+        "search",
+        "--folder",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1",
+        "--preparation",
+        "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve40-v3-preparation-v1"
+      ],
+      "failure_reason": null,
+      "limits": {
+        "address_space_bytes": null,
+        "cgroup": null,
+        "pari_stack_bytes": 256000000,
+        "poll_seconds": 0.05,
+        "rss_bytes": 3221225472,
+        "terminate_grace_seconds": 1.0,
+        "wall_seconds": 1800
+      },
+      "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1-supervision/worker.log",
+      "log_sha256": "a502637d43125bf08851001b4fee8009e28e98785a313a68a3d2efac38826416",
+      "outcome": "completed",
+      "peak_observed_rss_bytes": 691924992,
+      "pid": 1260719,
+      "returncode": 0,
+      "rss_limit_bytes": 3221225472,
+      "start_token": "74791283",
+      "termination_signal": null,
+      "timeout_seconds": 1800,
+      "wall_seconds": 227.36835811997298,
+      "worker_result": null,
+      "worker_result_sha256": null
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/landscape/timings.json": {
+      "landscape_wall_seconds": 40.579446351970546,
+      "preparation_seconds": 0.7378034479916096,
+      "reference_solver": false
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/reference-verified.json": {
+      "rank_lower_bound": 27,
+      "stage_sha256": "b7d84eb8ce65aa87c1242f81560a920dec235fbec56053265b7aabc0bb3a25b9",
+      "status": "PASS_FULL_PRODUCTIVE_EPOCH_REPLAY"
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/epoch-00/stage.json": {
+      "after": 27,
+      "before": 27,
+      "censored": 0,
+      "censored_maps": 6,
+      "charts": 100,
+      "epoch": 0,
+      "last_chart_sha256": "c004fa06d9874d8cce3a9a70f4630f25f80273c6bbcaedc53a73643cbd26d954",
+      "map_attempts": [
+        {
+          "centre_index": 0,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d4e2d687c5d5d4e7af99b630ff11b5014df5af2df3721b89d818291d406d6938"
+        },
+        {
+          "centre_index": 0,
+          "policy": "factor_free",
+          "receipt_sha256": "721822f7e4eb6d1bc9fd3ff19b0e2ef24a43d6726f5a7751821d2f14cb8d5e6d"
+        },
+        {
+          "centre_index": 1,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "38c671737576ce91e2e5307a8ba835c20ba9e53bc99800e76f6451392e15d89c"
+        },
+        {
+          "centre_index": 1,
+          "policy": "factor_free",
+          "receipt_sha256": "6af15fdf5b7f4ecebf144751693dce4e80bdc9dc8d16d82a38d042c10c36debc"
+        },
+        {
+          "centre_index": 2,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "43a56bb012369aef7ce52b89ff0583cc12a6d9d6a3e7b60306ff1c7a8eca7b68"
+        },
+        {
+          "centre_index": 2,
+          "policy": "factor_free",
+          "receipt_sha256": "52bb4daa704cccfb4fe77db1a8b1d7e135b39e7e66bb4457b1537b1bcf9596b9"
+        },
+        {
+          "centre_index": 3,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "3ceb13dff719a01144bf8b7d3a2bbcd6992ad6e713abd149106e83662bb10c54"
+        },
+        {
+          "centre_index": 3,
+          "policy": "factor_free",
+          "receipt_sha256": "19a0db553034b5507ab37a57f5d7583236d3271d8f3193d0b676f7900a0f7b9d"
+        },
+        {
+          "centre_index": 4,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "e07537d2fe97617d60be71cb232e2c8ba5d61e5d42adfdda46fb6dd0dbce2043"
+        },
+        {
+          "centre_index": 4,
+          "policy": "factor_free",
+          "receipt_sha256": "fa7c08cb35c56440e8d79eeb94cac6b59e43ecefaac4cc93e80e61fc807bb6b8"
+        },
+        {
+          "centre_index": 5,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "56e1745d7af3cf48da24fa05e172e6a946a8bf30cd7b98e7b332376eb7b5f04f"
+        },
+        {
+          "centre_index": 5,
+          "policy": "factor_free",
+          "receipt_sha256": "86fe925ab5f78d6e1d49ea8d21ada5799f224b65a0d64128deb8173ab96685cb"
+        },
+        {
+          "centre_index": 6,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d766831b3af5bf9fcebdef506547ff7c7abf4dd23d336585dffd001a30eab33a"
+        },
+        {
+          "centre_index": 6,
+          "policy": "factor_free",
+          "receipt_sha256": "ab372d4119ba98a39b813400560a403c3f03f3b115c306588ff2f1a481ccbf7a"
+        },
+        {
+          "centre_index": 7,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "6ddbc9cef72c3f991b71e25cbe7b408719c45d1ab29bc4a023c30f2ded2ad69a"
+        },
+        {
+          "centre_index": 7,
+          "policy": "factor_free",
+          "receipt_sha256": "d078aff7f9d020fcb96e54ca94f992d2eec8788d7f0e28eee7bf422b4fc3c121"
+        },
+        {
+          "centre_index": 8,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "e2f2717d89579294ad24c909137fe3efaa1d5983774dc444f16b961f59ec5c42"
+        },
+        {
+          "centre_index": 8,
+          "policy": "factor_free",
+          "receipt_sha256": "241604a9b0252b74af0317bb8e862ffe13f9c688c7181d2db5f0ee63eb493a75"
+        },
+        {
+          "centre_index": 9,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "7bf1de7d42200a0739b83a1211e5aa579e254e3601fb3f69665325be868d16d7"
+        },
+        {
+          "centre_index": 9,
+          "policy": "factor_free",
+          "receipt_sha256": "677cb7d0eb9a7ca4da5c10d5b4b13b23efec10282d20821201bc5051f75277e3"
+        },
+        {
+          "centre_index": 10,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "4cfaab0f3002b3f66cfb7b71b821adef8ab712e6037b2dffdac24a9272cd223a"
+        },
+        {
+          "centre_index": 10,
+          "policy": "factor_free",
+          "receipt_sha256": "38c3d94dbf7bd5fe40688676a814e04512cb09899490de5ad0ab7dcf2c89fb31"
+        },
+        {
+          "centre_index": 11,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "c23ba276f19062ad70bf9ea787ec08de59c7ebd62253e639e3eb8fafa3559536"
+        },
+        {
+          "centre_index": 11,
+          "policy": "factor_free",
+          "receipt_sha256": "40c8f7ed3c8d4c3bfa501289d8730c0f39e489b9c1913b08bb7392ac47ee884f"
+        },
+        {
+          "centre_index": 12,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d2c7c0ea60b18c371269d26a794dc2c8802fa50217bf404690bc89a12b9327da"
+        },
+        {
+          "centre_index": 12,
+          "policy": "factor_free",
+          "receipt_sha256": "9d030a5b032c8d4aa687220ca9d16e03b6da2cfd8e917c2c22b8b5f36c9eb295"
+        },
+        {
+          "centre_index": 13,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "3b66d2d9ecb82ec4a67e4354183e09a30b6b3cebd19b8c3e69a660329696758c"
+        },
+        {
+          "centre_index": 13,
+          "policy": "factor_free",
+          "receipt_sha256": "d4726a6f6e51551a764fbf66fd3c830d531f9158fd69bafb6d7f308b2e2a3061"
+        },
+        {
+          "centre_index": 14,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "1da18a724b48fcaa52dcebd409238c9ea14c2806e7bd29fdded53241c6ebc9da"
+        },
+        {
+          "centre_index": 14,
+          "policy": "factor_free",
+          "receipt_sha256": "5997637a29160fe4ef559dac96a5369788293549717151fba3d021607b7c50bd"
+        },
+        {
+          "centre_index": 15,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "0c41ea0237e3c55434a714670a1e4d5af10b92e441193cd69462a8fb383eb11a"
+        },
+        {
+          "centre_index": 15,
+          "policy": "factor_free",
+          "receipt_sha256": "221e032a0b1c5a5a72f1795cd2db52fc0c0f5f3669740fa25f2896466a04110d"
+        },
+        {
+          "centre_index": 16,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "a5246c49e6240f075ef5b19a40af5d9d55006247a5e5d65f0effd73492616369"
+        },
+        {
+          "centre_index": 16,
+          "policy": "factor_free",
+          "receipt_sha256": "bf3f3714569180ba3a60a7a0fcc56d2e3011f5d392a0d556e109f09228a5fa72"
+        },
+        {
+          "centre_index": 17,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "91c337fa1ed6d57c0c04c032e1e063f3184d10e1efe832c96b017d04dc760810"
+        },
+        {
+          "centre_index": 17,
+          "policy": "factor_free",
+          "receipt_sha256": "c097d1501bf9ab74040bc60c47939445bfee37e38fd554a4162d1dcf4ece85e6"
+        },
+        {
+          "centre_index": 18,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "ad386c7f400770ef6fd02bca52940b6d420cd87a148acb9c58c7fcebfd2506f1"
+        },
+        {
+          "centre_index": 18,
+          "policy": "factor_free",
+          "receipt_sha256": "6d66522665f6dc99499d9ce3bf5c82404158a41aa732961e99fd6a4b64f35bc1"
+        },
+        {
+          "centre_index": 19,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "40482ffe82b3caf539be75ec8a27ee60b15da6fd94e7eab7f9612f910f2bea11"
+        },
+        {
+          "centre_index": 19,
+          "policy": "factor_free",
+          "receipt_sha256": "6212d5973240338c3d40078505d4caf84dd073a3ce69fcb4d02081e24bace073"
+        },
+        {
+          "centre_index": 20,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d8f43c3abfdc2a820abcd10c95afca21273cbabd551caaaf2335e6d733c0956b"
+        },
+        {
+          "centre_index": 20,
+          "policy": "factor_free",
+          "receipt_sha256": "d16af684a8c207b5d930a14e2c8bb122a91121222df9696d2a18557c1f32b7eb"
+        },
+        {
+          "centre_index": 21,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "17d8e4d05e320dd2ff8ba947463b59519f4edb345fbe1d73179035772057b861"
+        },
+        {
+          "centre_index": 21,
+          "policy": "factor_free",
+          "receipt_sha256": "a78643ef625eaea9d0d76523523678625c459b5dc9b0489c1d6c53b77fe9b792"
+        },
+        {
+          "centre_index": 22,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d8e4d7a04dda764a4142b443f5dd2f0fb61476d62bfaac79a4de23b2f7d63c72"
+        },
+        {
+          "centre_index": 22,
+          "policy": "factor_free",
+          "receipt_sha256": "9ebc2b3741f734912ed1d07f3328a388d500616bb65467e59be733a4ee499cb4"
+        },
+        {
+          "centre_index": 23,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "1a3adcc11d77008d90754c22bb5dbea64bcbb4ebaa090f02de1d8d0870a8e09a"
+        },
+        {
+          "centre_index": 23,
+          "policy": "factor_free",
+          "receipt_sha256": "7cf247d705ef2698b4970d620ee4f12e95da89f8fd3d8bca9678d3003bde02a5"
+        },
+        {
+          "centre_index": 24,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "62783897cb60029a35b58d3c5089aef62a36cca1cc73a97251f33167effa1150"
+        },
+        {
+          "centre_index": 24,
+          "policy": "factor_free",
+          "receipt_sha256": "ab11768993b1856064b821f86468cb3fb56935955f6aba47f4cf3c5fea42ed88"
+        },
+        {
+          "centre_index": 25,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "a205cf1150cbff81fc73fc30f7c7f010d2a212643bb6a9a0c077d4d2ad6cb307"
+        },
+        {
+          "centre_index": 25,
+          "policy": "factor_free",
+          "receipt_sha256": "17983429c69b14377fad03a483764e8a441ff62c8286db552e7415f2bbc0768c"
+        },
+        {
+          "centre_index": 26,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "779ccac07cc23934cb5b24c5e30b9698a2dba6bbc96dfcc423705c2c5fca68e6"
+        },
+        {
+          "centre_index": 26,
+          "policy": "factor_free",
+          "receipt_sha256": "6246bf7ca83deb121d6b0cafc03e76257d85b879d9543193bd56b77168d976f4"
+        },
+        {
+          "centre_index": 27,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "2e5b78d6c2ae95ffbf8dba6d700e063035a9e6620c4908df0853fbd65b910a4a"
+        },
+        {
+          "centre_index": 27,
+          "policy": "factor_free",
+          "receipt_sha256": "f646d5943b1d9ceb061488dfd0ca088f72b8b353327256272711702e0ec7cf9e"
+        },
+        {
+          "centre_index": 28,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "0f8f6cd1490a84c3d1dfe899135c1c1ed26a7e9c3a9f413c505c0876f9e047f4"
+        },
+        {
+          "centre_index": 28,
+          "policy": "factor_free",
+          "receipt_sha256": "3c0c036d8edc47f1ca8f0b24ed8f9bc910b76eec157841d726039c666995eab6"
+        },
+        {
+          "centre_index": 29,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "e3c93daf9a211a787b4ad47e8f478b4677871ad28df7fde3dafa025afed4003a"
+        },
+        {
+          "centre_index": 29,
+          "policy": "factor_free",
+          "receipt_sha256": "4b0ed315d71a759cfb506cc2dbaccd508abd154cd73a1c06fb4dd6e79dcedb01"
+        },
+        {
+          "centre_index": 30,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "ac00bdf38853f455bfa2c2b057c22e20591e1d6f1e6d22ffb2ff3a3a4ed875f6"
+        },
+        {
+          "centre_index": 30,
+          "policy": "factor_free",
+          "receipt_sha256": "bc1fb529814eb93ee43fc0775369610efefd1055e9d389f1e8a93b1aa91b88c2"
+        },
+        {
+          "centre_index": 31,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "481498a9a4b98d41637eff484bfd15eff7d6e372d95e1d93946dcbc456d7e80d"
+        },
+        {
+          "centre_index": 31,
+          "policy": "factor_free",
+          "receipt_sha256": "3d81d69661b24b2e5add0017be0d5ba9ad0b08b981bf29676560933a953209f1"
+        },
+        {
+          "centre_index": 32,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "d03b258313ae186fbe3a555979a2a9e39c2a92414f20f7ad88a32ad16b03e095"
+        },
+        {
+          "centre_index": 32,
+          "policy": "factor_free",
+          "receipt_sha256": "b47e8e3b2a941d22074b9a01a40544303f0e70a9f3bab47f6f3efc5a8e3baad3"
+        },
+        {
+          "centre_index": 33,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "bf7bd1cecfc7bc297e9529443e547e180e8ae6ba0b04c03f54e3cfbddb8aac6f"
+        },
+        {
+          "centre_index": 33,
+          "policy": "factor_free",
+          "receipt_sha256": "6e0df7dd48647404fbda77d0d0fd90948f69dd9b830ecda8ecc79c13d6803f42"
+        },
+        {
+          "centre_index": 34,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "eb81fb5a0e585f880557cf327c2e73d251b0d65331a28beacbc8c008dc5cbe38"
+        },
+        {
+          "centre_index": 34,
+          "policy": "factor_free",
+          "receipt_sha256": "4a100bff398c2f1e65830ccb110a6733a1b26ab467db904e22ddf6f7234cd629"
+        },
+        {
+          "centre_index": 35,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "93000e63889beba7b0c06533f41b5054007a32e664ebf30a7b065edc78237b85"
+        },
+        {
+          "centre_index": 35,
+          "policy": "factor_free",
+          "receipt_sha256": "e2954eebd9f7fd372445141883fb9461306dff101afd985489d5f64733d6a19a"
+        },
+        {
+          "centre_index": 36,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "ee1f5e386e0419261d5f245f9149f3a9c8b34fae9df091bf2feaf5bff9169950"
+        },
+        {
+          "centre_index": 36,
+          "policy": "factor_free",
+          "receipt_sha256": "72c4ffe7c764d8918a597f3b42ba81bcfeccc8df05059bb14d622692489e720a"
+        },
+        {
+          "centre_index": 37,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "144fe969fb4f631fcc13fba0f323d39ab8416ca9b81faaac0ba7ea74e0a99a56"
+        },
+        {
+          "centre_index": 37,
+          "policy": "factor_free",
+          "receipt_sha256": "87d3ae1082737b41b8a85e64e3ffbb81b39e1ec0ca3e7a13643877a4916f638f"
+        },
+        {
+          "centre_index": 38,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "0b0b91658f8ac5e8a306f2acf12f419e2eaacb9cc0c2b938ad412656b9af852f"
+        },
+        {
+          "centre_index": 38,
+          "policy": "factor_free",
+          "receipt_sha256": "62af86b00b3b3a50d0c64ce73e5a30a56ecf2e4f2856e7c8c9c83c21c07e7aa6"
+        },
+        {
+          "centre_index": 39,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "97b566009be9566aa1232333104720dfaa70495e381f5f95c988760f0f4221e3"
+        },
+        {
+          "centre_index": 39,
+          "policy": "factor_free",
+          "receipt_sha256": "11127eb00bf4dbe6d54f40d470d2a0a133e90630559b52f5df10213b1dca2b8a"
+        },
+        {
+          "centre_index": 40,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "b96a0cafc01804d1d47feda5e70d7888aa75650aa7a43f4a731dcdceca5dba92"
+        },
+        {
+          "centre_index": 40,
+          "policy": "factor_free",
+          "receipt_sha256": "aa9acb39a5bd704ed237e6577d66065e8b3c12458510e8472d33dfa0b652c2ba"
+        },
+        {
+          "centre_index": 41,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "36477c33d97a18d7b9dda262367c1aa2f5592fe27743eb79dbb968fed3680d14"
+        },
+        {
+          "centre_index": 41,
+          "policy": "factor_free",
+          "receipt_sha256": "b51e4b3a564e50e93f6ee1255f6351846e58ccb209162bc01409adce836f1c6b"
+        },
+        {
+          "centre_index": 42,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "796b8386e374743f1c5e2af80af530d68ac9f74166d19598f76691729445e63e"
+        },
+        {
+          "centre_index": 42,
+          "policy": "factor_free",
+          "receipt_sha256": "e9d3718d6bfee5c2d1dc6866b962831d4799096116a051c60d26095a4cf35768"
+        },
+        {
+          "centre_index": 43,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "f28eb75b79730620b4c3bdb511ee8c2e8a5df954b4b45cb05765142981c8f3c5"
+        },
+        {
+          "centre_index": 43,
+          "policy": "factor_free",
+          "receipt_sha256": "3b96d87fccb633be6c93d3d28d9699559500efb1e80ec50a2de36f2ed3583e19"
+        },
+        {
+          "centre_index": 44,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "6ce33ee375b6cf8262335a068e82e304b38a79d2cc22096e5eda3ddaa35dfe37"
+        },
+        {
+          "centre_index": 44,
+          "policy": "factor_free",
+          "receipt_sha256": "85877a17af0d9ee40b7c706f3a750b25b5079d291597fc0b7a5f4306413ff287"
+        },
+        {
+          "centre_index": 45,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "bd4e5d69cde01cb52bcc6da1b3fc3a9bf6fe3d9a929c0dca85fb73d23ddaa4f0"
+        },
+        {
+          "centre_index": 45,
+          "policy": "factor_free",
+          "receipt_sha256": "6634179be3c8429de49fbb375dca74df144b55cc6943a1b950e88903a4c9fbb9"
+        },
+        {
+          "centre_index": 46,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "af6072c5e78d55db07eaf4bd57b5b722651029998e32405c0fde53cba1a1683a"
+        },
+        {
+          "centre_index": 46,
+          "policy": "factor_free",
+          "receipt_sha256": "27b148d6a4cc1848dfebaeb562f06ac0e409f4742c16d6788fe9ba640105fdc4"
+        },
+        {
+          "centre_index": 47,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "c8cf132f8d0df56c4e2726c229cd1db3eeda2936a3ca61ef3b450dfcec841f76"
+        },
+        {
+          "centre_index": 47,
+          "policy": "factor_free",
+          "receipt_sha256": "a0e70362ddee8602affc730b101b19fd1fba79b23033e625a99bb56fcbc1d203"
+        },
+        {
+          "centre_index": 48,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "9ce67f92781ce80432e8b9a8352fbf638830d3e146d892c02a18ee4f194f4a66"
+        },
+        {
+          "centre_index": 48,
+          "policy": "factor_free",
+          "receipt_sha256": "ae82c677dcf6f3830129e81142963b39db9235f15fabb5de2ea3ccfcb2c34b8e"
+        },
+        {
+          "centre_index": 49,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "afb992efe21601fa89b1fac37a7133bf6c9c5f0c664e315b51df25e0679f8381"
+        },
+        {
+          "centre_index": 49,
+          "policy": "factor_free",
+          "receipt_sha256": "46bf8ba5d7b78908adb78a187bad671a7750f45eb73f79d41e54592e7736bd77"
+        },
+        {
+          "centre_index": 50,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "f70a28e425543f8f7c78e6c4b925048c23e9d9d92c631f00833936c0152eb1ca"
+        },
+        {
+          "centre_index": 50,
+          "policy": "factor_free",
+          "receipt_sha256": "dee27b15cd00f6ea9cc02d22a24019937b94b42e03ec30ab762cc8e4ce86384e"
+        },
+        {
+          "centre_index": 51,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "474406fe7c9af78b7d13e3f29b507ee7f510625c09af0d864806bde92481484c"
+        },
+        {
+          "centre_index": 51,
+          "policy": "factor_free",
+          "receipt_sha256": "6718918efa34926d04450887d05df8de4403bafa432ae7bc79f5209cf1ce8582"
+        },
+        {
+          "centre_index": 52,
+          "policy": "quartic_minimized",
+          "receipt_sha256": "8a7ec9e093dbd8d3c8a7998907bb3f4e3bce1fcdee55b017114136c138030a66"
+        },
+        {
+          "centre_index": 52,
+          "policy": "factor_free",
+          "receipt_sha256": "4f3d09ba979ae2140069a22b557c5e18369a6ce8bcad3f90c1a4fd6c7b1056f5"
+        }
+      ],
+      "mod2_sha256": "575ecefb232146572dbc4501fcbb1d2397388b65f0883518ffb3e4fca921f806",
+      "modl_sha256": "c7b3a3454c7d0fbbe4a7827f2134811abc5c2707b21a0b9c14c52d43535f02ea",
+      "odd_ranks": {
+        "3": 27,
+        "5": 27
+      },
+      "selection_sha256": "c6819b9346db8080de444bfd26f55282277c5d63987e9b2b211b7b1b47937516",
+      "skipped": [
+        {
+          "centre_index": 0,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        },
+        {
+          "centre_index": 1,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        },
+        {
+          "centre_index": 2,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        },
+        {
+          "centre_index": 3,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        },
+        {
+          "centre_index": 5,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        },
+        {
+          "centre_index": 7,
+          "policy": "quartic_minimized",
+          "reason": "strict_wall_timeout"
+        }
+      ],
+      "stop_reason": "CHART_BUDGET_EXHAUSTED"
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/protocol.json": {
+      "anchor_count": 9,
+      "anchors_per_shell": 16,
+      "canonical_per_shell": 25,
+      "exact_cvp_node_limit": 2000000,
+      "family": "074d9",
+      "generic_rank": 17,
+      "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+      "height": 125000,
+      "initial_rank": 27,
+      "inputs": {
+        "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/bank.json": "7a3dd072cc5e37ac876a1a4610f0491fbd799ef3a6c959502ab92af8d89aa2e8",
+        "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/seed.json": "8edcbd24a244008f7fcc887a17bc81509d6d09f33b402911e2a057ec3c053b1f",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/anchor-bank.json": "7a3dd072cc5e37ac876a1a4610f0491fbd799ef3a6c959502ab92af8d89aa2e8",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/gains.json": "40d7144a30ef36a836eb796f43b62db6abe0703a5d1d8b7b1698df1bdc740bdf",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/generic-cvp-proofs.json": "a963edf27b447313cee48c3ce68ae41fea2d9374326e3de27d111b9a88a12a72",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/prepared.json": "76d8f8e1064dfdd54eede7b0a55dcef45af948ab04694dc6cc6373d14569db6f",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/protocol.json": "85499a67875f6e871fcc860b23860de58956690c93c80167945e809214217968",
+        "artifacts/local/elliptic-curves/curve40-v3-preparation-v1/seed-M27.json": "8edcbd24a244008f7fcc887a17bc81509d6d09f33b402911e2a057ec3c053b1f"
+      },
+      "map_python": "/home/royvanrijn/.local/bin/sage",
+      "map_python_sha256": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+      "map_rss_bytes": 1073741824,
+      "mapping_order": [
+        "quartic_minimized",
+        "factor_free"
+      ],
+      "max_charts": 100,
+      "max_epochs": 6,
+      "maximum_workers": 1,
+      "parameter": "2818/1535",
+      "prime_bound": 1000,
+      "replay_wall_limit_seconds": 1800,
+      "rss_limit_bytes": 3221225472,
+      "scaled_shells": [
+        24
+      ],
+      "schema": "prepared-parent-bounded-maps.v1",
+      "scope": "New directions beyond the supplied certified native MW16/R17 seed. Exact parent-class selection follows the bound preparation derivation; productivity is not assumed. No withheld/higher-rank point or visibility labels enter execution. The curve90 masked pointwise nulls are not passed controls or rank upper bounds. Map replay verifies exact rational identities without rerunning minimization; no canonical minimality claim. Resource limits imply no point absence. This is a bounded discovery experiment, not a success prediction.",
+      "search_wall_limit_seconds": 1800,
+      "seconds_per_chart": 10,
+      "seconds_per_map": 5,
+      "selection": "V3 diversified extension shortlist over every frozen exact parent class; no per-shell anchor truncation. Full extension scoring, exact CVP. Factor-free chart profiles determine centre order. For each centre try quartic-minimized then factor-free coordinates, skipping identical projective coordinates. Each map has its own5-second and1-GiB worker bound; resource-limited maps have explicit incomplete receipts. Rebuild immediately after the first standalone certified gain.",
+      "software": {
+        "numpy": "2.5.2",
+        "pari": "(2, 17, 3)",
+        "sage": "10.9"
+      },
+      "sources": {
+        "elliptic-curves/cas/adaptive_visibility_cascade.sage": "016f9e721f3ad35158cf281c7a1fe5b19fd7ea3acbc19661685e229a39b96e0d",
+        "elliptic-curves/cas/adaptive_visibility_cascade_v3.sage": "9d4687ab2771ddb236a46239c3961ceb399f6d0bbee12da9d5b03334dac0006e",
+        "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+        "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+        "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+        "elliptic-curves/cas/bounded_map_receipts.py": "2ff2d1e20c6ecea7ba0ab1888ec0c2fa5a20885dd41c375047ce523dfeb21378",
+        "elliptic-curves/cas/bounded_map_worker.py": "1c3413b2486890a244fdd4bc3ca159a4ccb2f57337b2fb0338b66301dcc8a7f3",
+        "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+        "elliptic-curves/cas/future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+        "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+        "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+        "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+        "elliptic-curves/cas/prepare_extended20_mw16_pari_batch.sage": "7b00823cfce7c2092960f0a9ef82dd16b7a9a05de0762c7feeb6d3601359fb77",
+        "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+        "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+        "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+        "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+        "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+        "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+        "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+        "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+        "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+        "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+        "elliptic-curves/cas/run_bounded_maps_seed_v3.py": "d9082b9bd5c0022cd1b22a1ed2e2a0dd12af36a55ee65efbeead23ff46988baa",
+        "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+        "elliptic-curves/cas/v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2",
+        "elliptic-curves/cas/v3_warm_support.py": "b66f67b227fc79e8a688f350c6a1d2cd06eb050e2d9c7b8f03bf22a59ca62e71",
+        "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+        "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+        "elliptic-curves/cas/visibility_parent_subset.py": "cdf47888cd1513c49a82f6aa74c24de93e70f8d50b8139ab7de2b7a872c8f8a1",
+        "elliptic-curves/cas/visibility_selection_v3.py": "7a04867be884b72e628703f94b798f940c47b89aadd5acf7f09c237137fb744e"
+      },
+      "target_rank": 32
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/terminal.json": {
+      "charts": 100,
+      "claim_boundary": "Subgroup lower bounds only. Unadmitted points and bounded misses remain UNKNOWN.",
+      "curve": [
+        "0",
+        "0",
+        "0",
+        "-1434254277194995172799431087202781675244846491861/3",
+        "3216853742735834212829428053814243003487320547835308197954106937159277070/27"
+      ],
+      "points": [
+        [
+          "161002058835663332391200119/3",
+          "-393123840937546600904924270801302945074"
+        ],
+        [
+          "52299420489953402709683083/75",
+          "-44166876215574006987475020480154732266/125"
+        ],
+        [
+          "-1721248467787499383412039/9",
+          "-12182390159075324580780103175160717302/27"
+        ],
+        [
+          "3473905153090259051019943915/15123",
+          "-52410317928157597729226268883064470355430/357911"
+        ],
+        [
+          "13314547971206989228789597/81",
+          "-154640768961912986139763843299284745202/729"
+        ],
+        [
+          "-23959331782720047463617293/75",
+          "61143901852462354572971542193470372878/125"
+        ],
+        [
+          "-10926666988232056398096343757/28227",
+          "-452858549349607077540383669747675126667618/912673"
+        ],
+        [
+          "-2165535463580070867454874/3",
+          "296851736509934232919179997909579962"
+        ],
+        [
+          "8684603971054182228165271/3",
+          "4795299663563472926167554165441593838"
+        ],
+        [
+          "1299308516478950240872871887/5043",
+          "-7879041312422614432949217932806790935386/68921"
+        ],
+        [
+          "-384222951223883664096566/3",
+          "422223049204293004059837703440360024"
+        ],
+        [
+          "4504980519152674489738050715/9408",
+          "-554483402212345171121593714008446040795/175616"
+        ],
+        [
+          "13274604297200992649621497558711/78735387",
+          "27988089409984321151212127980896182989794564942/134453795867"
+        ],
+        [
+          "314685203495374626432631/3",
+          "264854971289458866152756551081690062"
+        ],
+        [
+          "193785548925509423582029201/363",
+          "-168675696774150469034295046391223306228/1331"
+        ],
+        [
+          "1725291913449099366875527/3",
+          "-185481482033510125180718655306986334"
+        ],
+        [
+          "137022808736688636546460692727/279075",
+          "-1493606770913985246141323930633937839417202/28372625"
+        ],
+        [
+          "-23726506125571238194606578326/31827",
+          "270431092357907806919042797577763321642624/1092727"
+        ],
+        [
+          "-120775312708074985994627887565/626547",
+          "43123082670589542141031190857985024555047710/95443993"
+        ],
+        [
+          "681641972723681974412431/3",
+          "149148850212614015881816024530642438"
+        ],
+        [
+          "1933548444741647321569224499/3072",
+          "8518215494606766190616647848620965751559/32768"
+        ],
+        [
+          "250412944554472508624461801/1587",
+          "-2655481912630607309209690563065943819108/12167"
+        ],
+        [
+          "-315424310417927245099685/3",
+          "410179156429245433039211878735575030"
+        ],
+        [
+          "-538107788496350420326820201/867",
+          "2065706816417688350831704375501461650094/4913"
+        ],
+        [
+          "1447586393814539519645743/3",
+          "-28323081641884004367139543755211098"
+        ],
+        [
+          "19365759889819897847029429902871/19522803",
+          "-13081723379415275642796963889713878081569537038/16600890151"
+        ],
+        [
+          "566954356944278352897871/3",
+          "188524863650845064420491293984766662"
+        ]
+      ],
+      "proof": {
+        "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+        "no_rational_2_torsion_prime": 19,
+        "rank_lower_bound": 27,
+        "signatures": [
+          {
+            "doubled_subgroup_order": 5,
+            "group_order": 10,
+            "prime": 5,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 13,
+            "group_order": 26,
+            "prime": 17,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 9,
+            "group_order": 36,
+            "prime": 29,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 10,
+            "group_order": 40,
+            "prime": 31,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 27,
+            "group_order": 54,
+            "prime": 41,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 28,
+            "group_order": 56,
+            "prime": 43,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 17,
+            "group_order": 68,
+            "prime": 53,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 37,
+            "group_order": 74,
+            "prime": 59,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 41,
+            "group_order": 82,
+            "prime": 67,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 21,
+            "group_order": 84,
+            "prime": 73,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 51,
+            "group_order": 102,
+            "prime": 83,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 26,
+            "group_order": 104,
+            "prime": 89,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 58,
+            "group_order": 116,
+            "prime": 97,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 60,
+            "group_order": 120,
+            "prime": 101,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 63,
+            "group_order": 126,
+            "prime": 107,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 55,
+            "group_order": 110,
+            "prime": 109,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 40,
+            "group_order": 160,
+            "prime": 139,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 84,
+            "group_order": 168,
+            "prime": 149,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 44,
+            "group_order": 176,
+            "prime": 151,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 94,
+            "group_order": 188,
+            "prime": 167,
+            "quotient_dimension": 1,
+            "rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "doubled_subgroup_order": 48,
+            "group_order": 192,
+            "prime": 179,
+            "quotient_dimension": 2,
+            "rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "protocol_sha256": "11dffa51f84c138c966d525f1d0183176d46e19e3b86798d04164b12d5ba6eca",
+      "rank_lower_bound": 27,
+      "stages": [
+        {
+          "after": 27,
+          "before": 27,
+          "censored": 0,
+          "censored_maps": 6,
+          "charts": 100,
+          "epoch": 0,
+          "last_chart_sha256": "c004fa06d9874d8cce3a9a70f4630f25f80273c6bbcaedc53a73643cbd26d954",
+          "map_attempts": [
+            {
+              "centre_index": 0,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d4e2d687c5d5d4e7af99b630ff11b5014df5af2df3721b89d818291d406d6938"
+            },
+            {
+              "centre_index": 0,
+              "policy": "factor_free",
+              "receipt_sha256": "721822f7e4eb6d1bc9fd3ff19b0e2ef24a43d6726f5a7751821d2f14cb8d5e6d"
+            },
+            {
+              "centre_index": 1,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "38c671737576ce91e2e5307a8ba835c20ba9e53bc99800e76f6451392e15d89c"
+            },
+            {
+              "centre_index": 1,
+              "policy": "factor_free",
+              "receipt_sha256": "6af15fdf5b7f4ecebf144751693dce4e80bdc9dc8d16d82a38d042c10c36debc"
+            },
+            {
+              "centre_index": 2,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "43a56bb012369aef7ce52b89ff0583cc12a6d9d6a3e7b60306ff1c7a8eca7b68"
+            },
+            {
+              "centre_index": 2,
+              "policy": "factor_free",
+              "receipt_sha256": "52bb4daa704cccfb4fe77db1a8b1d7e135b39e7e66bb4457b1537b1bcf9596b9"
+            },
+            {
+              "centre_index": 3,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "3ceb13dff719a01144bf8b7d3a2bbcd6992ad6e713abd149106e83662bb10c54"
+            },
+            {
+              "centre_index": 3,
+              "policy": "factor_free",
+              "receipt_sha256": "19a0db553034b5507ab37a57f5d7583236d3271d8f3193d0b676f7900a0f7b9d"
+            },
+            {
+              "centre_index": 4,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "e07537d2fe97617d60be71cb232e2c8ba5d61e5d42adfdda46fb6dd0dbce2043"
+            },
+            {
+              "centre_index": 4,
+              "policy": "factor_free",
+              "receipt_sha256": "fa7c08cb35c56440e8d79eeb94cac6b59e43ecefaac4cc93e80e61fc807bb6b8"
+            },
+            {
+              "centre_index": 5,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "56e1745d7af3cf48da24fa05e172e6a946a8bf30cd7b98e7b332376eb7b5f04f"
+            },
+            {
+              "centre_index": 5,
+              "policy": "factor_free",
+              "receipt_sha256": "86fe925ab5f78d6e1d49ea8d21ada5799f224b65a0d64128deb8173ab96685cb"
+            },
+            {
+              "centre_index": 6,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d766831b3af5bf9fcebdef506547ff7c7abf4dd23d336585dffd001a30eab33a"
+            },
+            {
+              "centre_index": 6,
+              "policy": "factor_free",
+              "receipt_sha256": "ab372d4119ba98a39b813400560a403c3f03f3b115c306588ff2f1a481ccbf7a"
+            },
+            {
+              "centre_index": 7,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "6ddbc9cef72c3f991b71e25cbe7b408719c45d1ab29bc4a023c30f2ded2ad69a"
+            },
+            {
+              "centre_index": 7,
+              "policy": "factor_free",
+              "receipt_sha256": "d078aff7f9d020fcb96e54ca94f992d2eec8788d7f0e28eee7bf422b4fc3c121"
+            },
+            {
+              "centre_index": 8,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "e2f2717d89579294ad24c909137fe3efaa1d5983774dc444f16b961f59ec5c42"
+            },
+            {
+              "centre_index": 8,
+              "policy": "factor_free",
+              "receipt_sha256": "241604a9b0252b74af0317bb8e862ffe13f9c688c7181d2db5f0ee63eb493a75"
+            },
+            {
+              "centre_index": 9,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "7bf1de7d42200a0739b83a1211e5aa579e254e3601fb3f69665325be868d16d7"
+            },
+            {
+              "centre_index": 9,
+              "policy": "factor_free",
+              "receipt_sha256": "677cb7d0eb9a7ca4da5c10d5b4b13b23efec10282d20821201bc5051f75277e3"
+            },
+            {
+              "centre_index": 10,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "4cfaab0f3002b3f66cfb7b71b821adef8ab712e6037b2dffdac24a9272cd223a"
+            },
+            {
+              "centre_index": 10,
+              "policy": "factor_free",
+              "receipt_sha256": "38c3d94dbf7bd5fe40688676a814e04512cb09899490de5ad0ab7dcf2c89fb31"
+            },
+            {
+              "centre_index": 11,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "c23ba276f19062ad70bf9ea787ec08de59c7ebd62253e639e3eb8fafa3559536"
+            },
+            {
+              "centre_index": 11,
+              "policy": "factor_free",
+              "receipt_sha256": "40c8f7ed3c8d4c3bfa501289d8730c0f39e489b9c1913b08bb7392ac47ee884f"
+            },
+            {
+              "centre_index": 12,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d2c7c0ea60b18c371269d26a794dc2c8802fa50217bf404690bc89a12b9327da"
+            },
+            {
+              "centre_index": 12,
+              "policy": "factor_free",
+              "receipt_sha256": "9d030a5b032c8d4aa687220ca9d16e03b6da2cfd8e917c2c22b8b5f36c9eb295"
+            },
+            {
+              "centre_index": 13,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "3b66d2d9ecb82ec4a67e4354183e09a30b6b3cebd19b8c3e69a660329696758c"
+            },
+            {
+              "centre_index": 13,
+              "policy": "factor_free",
+              "receipt_sha256": "d4726a6f6e51551a764fbf66fd3c830d531f9158fd69bafb6d7f308b2e2a3061"
+            },
+            {
+              "centre_index": 14,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "1da18a724b48fcaa52dcebd409238c9ea14c2806e7bd29fdded53241c6ebc9da"
+            },
+            {
+              "centre_index": 14,
+              "policy": "factor_free",
+              "receipt_sha256": "5997637a29160fe4ef559dac96a5369788293549717151fba3d021607b7c50bd"
+            },
+            {
+              "centre_index": 15,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "0c41ea0237e3c55434a714670a1e4d5af10b92e441193cd69462a8fb383eb11a"
+            },
+            {
+              "centre_index": 15,
+              "policy": "factor_free",
+              "receipt_sha256": "221e032a0b1c5a5a72f1795cd2db52fc0c0f5f3669740fa25f2896466a04110d"
+            },
+            {
+              "centre_index": 16,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "a5246c49e6240f075ef5b19a40af5d9d55006247a5e5d65f0effd73492616369"
+            },
+            {
+              "centre_index": 16,
+              "policy": "factor_free",
+              "receipt_sha256": "bf3f3714569180ba3a60a7a0fcc56d2e3011f5d392a0d556e109f09228a5fa72"
+            },
+            {
+              "centre_index": 17,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "91c337fa1ed6d57c0c04c032e1e063f3184d10e1efe832c96b017d04dc760810"
+            },
+            {
+              "centre_index": 17,
+              "policy": "factor_free",
+              "receipt_sha256": "c097d1501bf9ab74040bc60c47939445bfee37e38fd554a4162d1dcf4ece85e6"
+            },
+            {
+              "centre_index": 18,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "ad386c7f400770ef6fd02bca52940b6d420cd87a148acb9c58c7fcebfd2506f1"
+            },
+            {
+              "centre_index": 18,
+              "policy": "factor_free",
+              "receipt_sha256": "6d66522665f6dc99499d9ce3bf5c82404158a41aa732961e99fd6a4b64f35bc1"
+            },
+            {
+              "centre_index": 19,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "40482ffe82b3caf539be75ec8a27ee60b15da6fd94e7eab7f9612f910f2bea11"
+            },
+            {
+              "centre_index": 19,
+              "policy": "factor_free",
+              "receipt_sha256": "6212d5973240338c3d40078505d4caf84dd073a3ce69fcb4d02081e24bace073"
+            },
+            {
+              "centre_index": 20,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d8f43c3abfdc2a820abcd10c95afca21273cbabd551caaaf2335e6d733c0956b"
+            },
+            {
+              "centre_index": 20,
+              "policy": "factor_free",
+              "receipt_sha256": "d16af684a8c207b5d930a14e2c8bb122a91121222df9696d2a18557c1f32b7eb"
+            },
+            {
+              "centre_index": 21,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "17d8e4d05e320dd2ff8ba947463b59519f4edb345fbe1d73179035772057b861"
+            },
+            {
+              "centre_index": 21,
+              "policy": "factor_free",
+              "receipt_sha256": "a78643ef625eaea9d0d76523523678625c459b5dc9b0489c1d6c53b77fe9b792"
+            },
+            {
+              "centre_index": 22,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d8e4d7a04dda764a4142b443f5dd2f0fb61476d62bfaac79a4de23b2f7d63c72"
+            },
+            {
+              "centre_index": 22,
+              "policy": "factor_free",
+              "receipt_sha256": "9ebc2b3741f734912ed1d07f3328a388d500616bb65467e59be733a4ee499cb4"
+            },
+            {
+              "centre_index": 23,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "1a3adcc11d77008d90754c22bb5dbea64bcbb4ebaa090f02de1d8d0870a8e09a"
+            },
+            {
+              "centre_index": 23,
+              "policy": "factor_free",
+              "receipt_sha256": "7cf247d705ef2698b4970d620ee4f12e95da89f8fd3d8bca9678d3003bde02a5"
+            },
+            {
+              "centre_index": 24,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "62783897cb60029a35b58d3c5089aef62a36cca1cc73a97251f33167effa1150"
+            },
+            {
+              "centre_index": 24,
+              "policy": "factor_free",
+              "receipt_sha256": "ab11768993b1856064b821f86468cb3fb56935955f6aba47f4cf3c5fea42ed88"
+            },
+            {
+              "centre_index": 25,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "a205cf1150cbff81fc73fc30f7c7f010d2a212643bb6a9a0c077d4d2ad6cb307"
+            },
+            {
+              "centre_index": 25,
+              "policy": "factor_free",
+              "receipt_sha256": "17983429c69b14377fad03a483764e8a441ff62c8286db552e7415f2bbc0768c"
+            },
+            {
+              "centre_index": 26,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "779ccac07cc23934cb5b24c5e30b9698a2dba6bbc96dfcc423705c2c5fca68e6"
+            },
+            {
+              "centre_index": 26,
+              "policy": "factor_free",
+              "receipt_sha256": "6246bf7ca83deb121d6b0cafc03e76257d85b879d9543193bd56b77168d976f4"
+            },
+            {
+              "centre_index": 27,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "2e5b78d6c2ae95ffbf8dba6d700e063035a9e6620c4908df0853fbd65b910a4a"
+            },
+            {
+              "centre_index": 27,
+              "policy": "factor_free",
+              "receipt_sha256": "f646d5943b1d9ceb061488dfd0ca088f72b8b353327256272711702e0ec7cf9e"
+            },
+            {
+              "centre_index": 28,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "0f8f6cd1490a84c3d1dfe899135c1c1ed26a7e9c3a9f413c505c0876f9e047f4"
+            },
+            {
+              "centre_index": 28,
+              "policy": "factor_free",
+              "receipt_sha256": "3c0c036d8edc47f1ca8f0b24ed8f9bc910b76eec157841d726039c666995eab6"
+            },
+            {
+              "centre_index": 29,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "e3c93daf9a211a787b4ad47e8f478b4677871ad28df7fde3dafa025afed4003a"
+            },
+            {
+              "centre_index": 29,
+              "policy": "factor_free",
+              "receipt_sha256": "4b0ed315d71a759cfb506cc2dbaccd508abd154cd73a1c06fb4dd6e79dcedb01"
+            },
+            {
+              "centre_index": 30,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "ac00bdf38853f455bfa2c2b057c22e20591e1d6f1e6d22ffb2ff3a3a4ed875f6"
+            },
+            {
+              "centre_index": 30,
+              "policy": "factor_free",
+              "receipt_sha256": "bc1fb529814eb93ee43fc0775369610efefd1055e9d389f1e8a93b1aa91b88c2"
+            },
+            {
+              "centre_index": 31,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "481498a9a4b98d41637eff484bfd15eff7d6e372d95e1d93946dcbc456d7e80d"
+            },
+            {
+              "centre_index": 31,
+              "policy": "factor_free",
+              "receipt_sha256": "3d81d69661b24b2e5add0017be0d5ba9ad0b08b981bf29676560933a953209f1"
+            },
+            {
+              "centre_index": 32,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "d03b258313ae186fbe3a555979a2a9e39c2a92414f20f7ad88a32ad16b03e095"
+            },
+            {
+              "centre_index": 32,
+              "policy": "factor_free",
+              "receipt_sha256": "b47e8e3b2a941d22074b9a01a40544303f0e70a9f3bab47f6f3efc5a8e3baad3"
+            },
+            {
+              "centre_index": 33,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "bf7bd1cecfc7bc297e9529443e547e180e8ae6ba0b04c03f54e3cfbddb8aac6f"
+            },
+            {
+              "centre_index": 33,
+              "policy": "factor_free",
+              "receipt_sha256": "6e0df7dd48647404fbda77d0d0fd90948f69dd9b830ecda8ecc79c13d6803f42"
+            },
+            {
+              "centre_index": 34,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "eb81fb5a0e585f880557cf327c2e73d251b0d65331a28beacbc8c008dc5cbe38"
+            },
+            {
+              "centre_index": 34,
+              "policy": "factor_free",
+              "receipt_sha256": "4a100bff398c2f1e65830ccb110a6733a1b26ab467db904e22ddf6f7234cd629"
+            },
+            {
+              "centre_index": 35,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "93000e63889beba7b0c06533f41b5054007a32e664ebf30a7b065edc78237b85"
+            },
+            {
+              "centre_index": 35,
+              "policy": "factor_free",
+              "receipt_sha256": "e2954eebd9f7fd372445141883fb9461306dff101afd985489d5f64733d6a19a"
+            },
+            {
+              "centre_index": 36,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "ee1f5e386e0419261d5f245f9149f3a9c8b34fae9df091bf2feaf5bff9169950"
+            },
+            {
+              "centre_index": 36,
+              "policy": "factor_free",
+              "receipt_sha256": "72c4ffe7c764d8918a597f3b42ba81bcfeccc8df05059bb14d622692489e720a"
+            },
+            {
+              "centre_index": 37,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "144fe969fb4f631fcc13fba0f323d39ab8416ca9b81faaac0ba7ea74e0a99a56"
+            },
+            {
+              "centre_index": 37,
+              "policy": "factor_free",
+              "receipt_sha256": "87d3ae1082737b41b8a85e64e3ffbb81b39e1ec0ca3e7a13643877a4916f638f"
+            },
+            {
+              "centre_index": 38,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "0b0b91658f8ac5e8a306f2acf12f419e2eaacb9cc0c2b938ad412656b9af852f"
+            },
+            {
+              "centre_index": 38,
+              "policy": "factor_free",
+              "receipt_sha256": "62af86b00b3b3a50d0c64ce73e5a30a56ecf2e4f2856e7c8c9c83c21c07e7aa6"
+            },
+            {
+              "centre_index": 39,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "97b566009be9566aa1232333104720dfaa70495e381f5f95c988760f0f4221e3"
+            },
+            {
+              "centre_index": 39,
+              "policy": "factor_free",
+              "receipt_sha256": "11127eb00bf4dbe6d54f40d470d2a0a133e90630559b52f5df10213b1dca2b8a"
+            },
+            {
+              "centre_index": 40,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "b96a0cafc01804d1d47feda5e70d7888aa75650aa7a43f4a731dcdceca5dba92"
+            },
+            {
+              "centre_index": 40,
+              "policy": "factor_free",
+              "receipt_sha256": "aa9acb39a5bd704ed237e6577d66065e8b3c12458510e8472d33dfa0b652c2ba"
+            },
+            {
+              "centre_index": 41,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "36477c33d97a18d7b9dda262367c1aa2f5592fe27743eb79dbb968fed3680d14"
+            },
+            {
+              "centre_index": 41,
+              "policy": "factor_free",
+              "receipt_sha256": "b51e4b3a564e50e93f6ee1255f6351846e58ccb209162bc01409adce836f1c6b"
+            },
+            {
+              "centre_index": 42,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "796b8386e374743f1c5e2af80af530d68ac9f74166d19598f76691729445e63e"
+            },
+            {
+              "centre_index": 42,
+              "policy": "factor_free",
+              "receipt_sha256": "e9d3718d6bfee5c2d1dc6866b962831d4799096116a051c60d26095a4cf35768"
+            },
+            {
+              "centre_index": 43,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "f28eb75b79730620b4c3bdb511ee8c2e8a5df954b4b45cb05765142981c8f3c5"
+            },
+            {
+              "centre_index": 43,
+              "policy": "factor_free",
+              "receipt_sha256": "3b96d87fccb633be6c93d3d28d9699559500efb1e80ec50a2de36f2ed3583e19"
+            },
+            {
+              "centre_index": 44,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "6ce33ee375b6cf8262335a068e82e304b38a79d2cc22096e5eda3ddaa35dfe37"
+            },
+            {
+              "centre_index": 44,
+              "policy": "factor_free",
+              "receipt_sha256": "85877a17af0d9ee40b7c706f3a750b25b5079d291597fc0b7a5f4306413ff287"
+            },
+            {
+              "centre_index": 45,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "bd4e5d69cde01cb52bcc6da1b3fc3a9bf6fe3d9a929c0dca85fb73d23ddaa4f0"
+            },
+            {
+              "centre_index": 45,
+              "policy": "factor_free",
+              "receipt_sha256": "6634179be3c8429de49fbb375dca74df144b55cc6943a1b950e88903a4c9fbb9"
+            },
+            {
+              "centre_index": 46,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "af6072c5e78d55db07eaf4bd57b5b722651029998e32405c0fde53cba1a1683a"
+            },
+            {
+              "centre_index": 46,
+              "policy": "factor_free",
+              "receipt_sha256": "27b148d6a4cc1848dfebaeb562f06ac0e409f4742c16d6788fe9ba640105fdc4"
+            },
+            {
+              "centre_index": 47,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "c8cf132f8d0df56c4e2726c229cd1db3eeda2936a3ca61ef3b450dfcec841f76"
+            },
+            {
+              "centre_index": 47,
+              "policy": "factor_free",
+              "receipt_sha256": "a0e70362ddee8602affc730b101b19fd1fba79b23033e625a99bb56fcbc1d203"
+            },
+            {
+              "centre_index": 48,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "9ce67f92781ce80432e8b9a8352fbf638830d3e146d892c02a18ee4f194f4a66"
+            },
+            {
+              "centre_index": 48,
+              "policy": "factor_free",
+              "receipt_sha256": "ae82c677dcf6f3830129e81142963b39db9235f15fabb5de2ea3ccfcb2c34b8e"
+            },
+            {
+              "centre_index": 49,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "afb992efe21601fa89b1fac37a7133bf6c9c5f0c664e315b51df25e0679f8381"
+            },
+            {
+              "centre_index": 49,
+              "policy": "factor_free",
+              "receipt_sha256": "46bf8ba5d7b78908adb78a187bad671a7750f45eb73f79d41e54592e7736bd77"
+            },
+            {
+              "centre_index": 50,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "f70a28e425543f8f7c78e6c4b925048c23e9d9d92c631f00833936c0152eb1ca"
+            },
+            {
+              "centre_index": 50,
+              "policy": "factor_free",
+              "receipt_sha256": "dee27b15cd00f6ea9cc02d22a24019937b94b42e03ec30ab762cc8e4ce86384e"
+            },
+            {
+              "centre_index": 51,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "474406fe7c9af78b7d13e3f29b507ee7f510625c09af0d864806bde92481484c"
+            },
+            {
+              "centre_index": 51,
+              "policy": "factor_free",
+              "receipt_sha256": "6718918efa34926d04450887d05df8de4403bafa432ae7bc79f5209cf1ce8582"
+            },
+            {
+              "centre_index": 52,
+              "policy": "quartic_minimized",
+              "receipt_sha256": "8a7ec9e093dbd8d3c8a7998907bb3f4e3bce1fcdee55b017114136c138030a66"
+            },
+            {
+              "centre_index": 52,
+              "policy": "factor_free",
+              "receipt_sha256": "4f3d09ba979ae2140069a22b557c5e18369a6ce8bcad3f90c1a4fd6c7b1056f5"
+            }
+          ],
+          "mod2_sha256": "575ecefb232146572dbc4501fcbb1d2397388b65f0883518ffb3e4fca921f806",
+          "modl_sha256": "c7b3a3454c7d0fbbe4a7827f2134811abc5c2707b21a0b9c14c52d43535f02ea",
+          "odd_ranks": {
+            "3": 27,
+            "5": 27
+          },
+          "selection_sha256": "c6819b9346db8080de444bfd26f55282277c5d63987e9b2b211b7b1b47937516",
+          "skipped": [
+            {
+              "centre_index": 0,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            },
+            {
+              "centre_index": 1,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            },
+            {
+              "centre_index": 2,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            },
+            {
+              "centre_index": 3,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            },
+            {
+              "centre_index": 5,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            },
+            {
+              "centre_index": 7,
+              "policy": "quartic_minimized",
+              "reason": "strict_wall_timeout"
+            }
+          ],
+          "stop_reason": "CHART_BUDGET_EXHAUSTED"
+        }
+      ],
+      "status": "SEARCH_FINISHED_PENDING_INDEPENDENT_REPLAY",
+      "stop_reason": "CHART_BUDGET_EXHAUSTED"
+    },
+    "artifacts/local/elliptic-curves/curve40-bounded-maps-v3-discovery-v1/verified.json": {
+      "charts": 100,
+      "claim_boundary": "Exact subgroup lower bound and declared finite-policy replay, not an exact rank.",
+      "rank_lower_bound": 27,
+      "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY",
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "terminal_sha256": "e4e104759322b2c445fe2a27eab339fccdd2df36e3cba5d51c9a054765f240d7"
+    }
+  },
+  "scope": "Verbatim sealed evidence export, not an additional arithmetic replay. Certified subgroup lower bound; no exact rank or conductor record claim.",
+  "status": "PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY"
+}

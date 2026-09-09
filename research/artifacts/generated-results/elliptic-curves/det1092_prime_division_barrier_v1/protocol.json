@@ -1,0 +1,25 @@
+{
+  "boundary": "All-prime conclusions use the written proof; finitely many permutation regressions do not prove uniformity.",
+  "checker_sha256": "be6d5101fb7dd4bf38fe6c04bbcf8cfca2ec420de32c227083426dd2cbed8aa3",
+  "classification": "new written all-prime deduction with exact equation and symbolic checks",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_parent_geometric_picard19_v1.json": "574429256daeee72ec2dcb5fe0c39df06e8fc122015da754f5db3ce4f271495c",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_trace_parity_descent_v1/replay.json": "cdfc4f1342eff3820cfb4ac4550dafbb4e635213bcd3117bcfd4980a9fc1c1fd"
+  },
+  "limits": {
+    "class_groups": 0,
+    "cycle_regression_primes": [
+      2,
+      3,
+      5,
+      7,
+      11
+    ],
+    "new_multisections": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "specializations": 0,
+    "subgroup_states": 0
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "attempts": [
+    {
+      "p": 3,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 5,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 7,
+      "rational_residue_roots": 1,
+      "status": "checked"
+    },
+    {
+      "p": 11,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 13,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 17,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 19,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 23,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 29,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 31,
+      "rational_residue_roots": 6,
+      "status": "checked"
+    },
+    {
+      "p": 37,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 41,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 43,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 47,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 53,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 59,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 61,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 67,
+      "rational_residue_roots": 7,
+      "status": "checked"
+    },
+    {
+      "p": 71,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 73,
+      "rational_residue_roots": 3,
+      "status": "checked"
+    },
+    {
+      "p": 79,
+      "rational_residue_roots": 3,
+      "status": "checked"
+    },
+    {
+      "p": 83,
+      "rational_residue_roots": 2,
+      "status": "checked"
+    },
+    {
+      "p": 89,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 97,
+      "rational_residue_roots": 2,
+      "status": "checked"
+    },
+    {
+      "p": 101,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 103,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 107,
+      "rational_residue_roots": 5,
+      "status": "checked"
+    },
+    {
+      "p": 109,
+      "rational_residue_roots": 4,
+      "status": "checked"
+    },
+    {
+      "p": 113,
+      "rational_residue_roots": 2,
+      "status": "checked"
+    },
+    {
+      "p": 127,
+      "status": "denominator_bad"
+    },
+    {
+      "p": 131,
+      "rational_residue_roots": 1,
+      "status": "checked"
+    },
+    {
+      "p": 137,
+      "rational_residue_roots": 3,
+      "status": "checked"
+    },
+    {
+      "p": 139,
+      "rational_residue_roots": 5,
+      "status": "checked"
+    },
+    {
+      "p": 149,
+      "rational_residue_roots": 0,
+      "status": "checked"
+    }
+  ],
+  "geometry_sha256": "7e4636200ad92eb4601e613f9503f1a13fb0d67a386294cda2b171b5dfe77ce2",
+  "prime_pool": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    139,
+    149,
+    151,
+    157,
+    163,
+    167,
+    173,
+    179,
+    181,
+    191,
+    193,
+    197,
+    199,
+    211
+  ],
+  "status": "PASS_NO_RATIONAL_NODAL_PARAMETER",
+  "witness": {
+    "p": 149,
+    "polynomial": [
+      120,
+      96,
+      145,
+      72,
+      143,
+      129,
+      114,
+      89,
+      51,
+      79,
+      31,
+      7,
+      87,
+      59,
+      1
+    ],
+    "value_residues": [
+      120,
+      31,
+      12,
+      25,
+      88,
+      23,
+      93,
+      54,
+      118,
+      47,
+      88,
+      37,
+      41,
+      133,
+      115,
+      44,
+      68,
+      67,
+      24,
+      53,
+      86,
+      64,
+      107,
+      71,
+      20,
+      122,
+      20,
+      141,
+      18,
+      37,
+      12,
+      117,
+      3,
+      142,
+      120,
+      21,
+      103,
+      1,
+      51,
+      69,
+      55,
+      20,
+      41,
+      85,
+      48,
+      113,
+      101,
+      4,
+      11,
+      139,
+      108,
+      86,
+      9,
+      105,
+      3,
+      68,
+      114,
+      30,
+      89,
+      145,
+      33,
+      53,
+      89,
+      41,
+      114,
+      68,
+      25,
+      112,
+      60,
+      148,
+      98,
+      81,
+      137,
+      136,
+      128,
+      50,
+      95,
+      80,
+      93,
+      32,
+      120,
+      103,
+      14,
+      84,
+      77,
+      80,
+      144,
+      32,
+      109,
+      31,
+      71,
+      114,
+      49,
+      85,
+      139,
+      56,
+      39,
+      33,
+      121,
+      144,
+      20,
+      72,
+      20,
+      80,
+      47,
+      23,
+      97,
+      123,
+      94,
+      90,
+      105,
+      144,
+      87,
+      55,
+      21,
+      64,
+      111,
+      99,
+      74,
+      59,
+      7,
+      126,
+      30,
+      96,
+      84,
+      42,
+      50,
+      95,
+      42,
+      146,
+      46,
+      76,
+      49,
+      83,
+      128,
+      93,
+      142,
+      122,
+      37,
+      138,
+      132,
+      145,
+      140,
+      35,
+      133,
+      96,
+      146,
+      70,
+      12
+    ]
+  }
+}

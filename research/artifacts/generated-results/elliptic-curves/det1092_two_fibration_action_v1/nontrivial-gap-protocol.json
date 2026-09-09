@@ -1,0 +1,17 @@
+{
+  "classification": "generic-only exact degree obstruction",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/degree-minima-v2-minus.json": "172f8cff80730ff03e9d655ed02fee78f47b1a9c1648bdbf4565f03b4f24dbf3",
+    "artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/degree-minima-v2-plus.json": "d623e7b7e764e3108d9a9e7c980ea587089a9d4f4ac57a62b6694f8b8c413a45",
+    "elliptic-curves/cas/derive_det1092_nontrivial_switch_gap.sage": "e25577d35d6e2eb24b1cee88105b2c6da7a684547202e60180106ca26d88e6df"
+  },
+  "limits": {
+    "maximum_stored_sign_pairs": 5000,
+    "parameter_evaluations": 0,
+    "point_searches": 0,
+    "seconds": 25,
+    "shell_norm": 4
+  },
+  "rule": "Use the complete original norm-four shell to minimize each quadratic degree formula. Prove by an exact Cauchy bound that norms at least six cannot improve the resulting witness. No change of initial source or final alternate translating section."
+}
