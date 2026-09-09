@@ -1,8 +1,8 @@
 # High-rank search foundry
 
-**RUNNING** · updated 2026-09-09T15:07:19.217602+00:00
+**RUNNING** · updated 2026-09-09T15:07:31.545329+00:00
 
-89 new certified curves across this run and its preserved predecessor; 17320 completed point calls. Jobs: {'DONE': 176, 'FAILED': 4, 'SKIPPED': 17, 'RUNNING': 4}. Up to 4 workers.
+90 new certified curves across this run and its preserved predecessor; 17487 completed point calls. Jobs: {'DONE': 177, 'FAILED': 4, 'SKIPPED': 17, 'RUNNING': 4}. Up to 4 workers.
 
 Ranks are certified lower bounds. Imported historical packets are marked below. Novelty is relative to the frozen catalogue; exact rank and worldwide record status remain unknown.
 
@@ -30,9 +30,9 @@ Ranks are certified lower bounds. Imported historical packets are marked below. 
 | f-3a0ceb7fa9427743b082 | 074d9 | 51/586 | 23 | 137 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000098-f-3a0ceb7fa9427743b082.json) |
 
 Active jobs:
-- 197: f-a3147c3d2e732ef4f579 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2/runtime/research/foundry-jobs/job-0000197)
 - 199: f-b4ecfbe1315ee7c6afa0 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2/runtime/research/foundry-jobs/job-0000199)
 - 200: f-867e9b222fabcbe6ccec (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2/runtime/research/foundry-jobs/job-0000200)
 - 201: f-847f3ef754741a3ec85d (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2/runtime/research/foundry-jobs/job-0000201)
+- 202: f-5b00c0f6912af120a72d (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2/runtime/research/foundry-jobs/job-0000202)
 
 [Full machine-readable status](LIVE_STATUS.json). The accompanying immutable job exports contain portable certificates and complete trajectories. Family/selection-arm aggregates are descriptive and adaptively censored.

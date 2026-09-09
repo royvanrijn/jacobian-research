@@ -1,14 +1,6 @@
 {
   "active_jobs": [
     {
-      "cid": "f-a3147c3d2e732ef4f579",
-      "id": 197,
-      "kind": "fresh",
-      "path": "foundry-jobs/job-0000197",
-      "pid": 3554438,
-      "token": "1942206"
-    },
-    {
       "cid": "f-b4ecfbe1315ee7c6afa0",
       "id": 199,
       "kind": "fresh",
@@ -31,6 +23,14 @@
       "path": "foundry-jobs/job-0000201",
       "pid": 3566089,
       "token": "1959261"
+    },
+    {
+      "cid": "f-5b00c0f6912af120a72d",
+      "id": 202,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000202",
+      "pid": 3569323,
+      "token": "1962921"
     }
   ],
   "best": [
@@ -278,7 +278,7 @@
   "certified_rank_counts": {
     "17": 26,
     "18": 10,
-    "19": 6,
+    "19": 7,
     "20": 7,
     "21": 9,
     "22": 10,
@@ -287,7 +287,7 @@
     "25": 3,
     "26": 2
   },
-  "charged_point_budget": 18120,
+  "charged_point_budget": 18287,
   "claim_boundary": "Adaptively selected, variably censored lower bounds. Group summaries do not establish a causal law, exact ranks, world novelty, or conductor records.",
   "controller": {
     "pid": 1778816,
@@ -327,11 +327,11 @@
       "unresolved": 4
     },
     "07ca9/all": {
-      "attempted": 4,
-      "calls": 461,
-      "certified": 4,
-      "rank_sum": 70,
-      "seeded": 1,
+      "attempted": 5,
+      "calls": 628,
+      "certified": 5,
+      "rank_sum": 89,
+      "seeded": 2,
       "unresolved": 0
     },
     "07ca9/high": {
@@ -493,22 +493,22 @@
   },
   "inherited_from": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v1",
   "jobs": {
-    "DONE": 176,
+    "DONE": 177,
     "FAILED": 4,
     "RUNNING": 4,
     "SKIPPED": 17
   },
-  "new_curves": 89,
-  "point_calls": 17320,
+  "new_curves": 90,
+  "point_calls": 17487,
   "queued_curves": {
     "COOLED": 32,
     "NEW": 4,
     "QUARANTINED": 4,
-    "READY": 75,
+    "READY": 76,
     "UNCERTIFIED_SEED": 17
   },
   "status": "RUNNING",
-  "updated_at": 1788966439.2176023,
-  "worker_seconds": 34171.489696502686,
+  "updated_at": 1788966451.5453286,
+  "worker_seconds": 34378.554899930954,
   "workers": 4
 }
