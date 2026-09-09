@@ -17,5 +17,6 @@
   "next_policy_to_consider": "factor_free",
   "rank_lower_bound": 26,
   "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
-  "status": "QUEUED_NOT_LAUNCHED"
+  "status": "CONSUMED_BY_VERIFIED_CACHED_PASS",
+  "continuation_result": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v2/result.json"
 }

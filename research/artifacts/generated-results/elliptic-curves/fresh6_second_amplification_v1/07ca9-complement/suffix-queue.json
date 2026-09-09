@@ -1,0 +1,21 @@
+{
+  "status": "QUEUED_NOT_LAUNCHED",
+  "rank_lower_bound": 20,
+  "epoch": 2,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery/protocol.json": "0b52c0c0f82f594fdd81d594417116b8c88936c3bb444de251bc0ba468882117",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery/terminal.json": "d48b80fdede0f9f2c6e3a0ee1a52a0627a7f0b57ca63372a7098bbbc76270be9",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery/verified.json": "128ba60a8cb90b538881351135d765b00636407b2809f939d1edc9f121ffb590",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery-supervision/supervisor.json": "e4df40fba0b7b735accf87e8574a6f51c831caa8aebb59526a270e2e2074fc55",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery-replay-supervision/supervisor.json": "e9eb4ed59b41c24e1f09009420c4d6e97c9f683f02ff0e824dbebc834a050c59",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery/epoch-02/landscape/selection.json": "5c68662b38725afef7f99123f9eaeaa1f545b3ab112d052561ba510ef206cce8",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/07ca9-complement-discovery/epoch-02/chart-0041.json": "9a8964140ba690d50a34b165c9c9035a8ce2022edcc850533ca79d5fc252089c"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 21,
+  "next_policy_to_consider": "preconditioned_full"
+}

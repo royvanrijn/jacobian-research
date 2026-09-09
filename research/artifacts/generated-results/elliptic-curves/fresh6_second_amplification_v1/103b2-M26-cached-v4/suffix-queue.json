@@ -1,0 +1,21 @@
+{
+  "status": "QUEUED_NOT_LAUNCHED",
+  "rank_lower_bound": 26,
+  "epoch": 3,
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4/protocol.json": "f1b3a16650f25b322425aaefadf438fe21ff7df4913f80ed0124e722cbee1ba2",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4/terminal.json": "89cef8c8a36d1be510f3df928ec785cfa5e75583047a52660123d7dbb26bf319",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4/verified.json": "87ca45efe65272c2cc3b24633332ef5753aa21451c7501c5ccbabdc7fb1bc1b5",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4-supervision/supervisor.json": "8c6f7c7fe40c1799fb24e43167744ddc32bef9a7772569d9033fa9845dae369a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4-replay-supervision/supervisor.json": "afb9fd578a18ce04493e7b493e76beb25ed2db58ca2fb410e9c1e0b9b8b47fd6",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4/epoch-03/landscape/selection.json": "b163760d72f0ccc9d2d6d24bcd6583da2d1f3fc33671ded962657e23469e3a57",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh6-second-amplification-v1/103b2-M26-cached-v4/epoch-03/chart-0402.json": "fc9111345eaa724765df4a82d9bc5f22cc4d9d98220a5891ff3e47eb9d2f0592"
+  },
+  "censored_maps_in_final_epoch": 0,
+  "censored_maps_require_separate_review": true,
+  "source_sha256": "f7550dcd94f37f990de55ac95c5f761fa4ade123ea518df75a5aad9c9695370b",
+  "claim_boundary": "Exact exposure cursor only. Use the terminal basis and proof. Recheck projective coordinate duplication before executing a remaining map. This suffix cursor does not resolve earlier censored maps. No suffix coverage, new rank or automatic execution is asserted.",
+  "next_action": "CONSIDER_REMAINING_SUFFIX",
+  "next_centre_index": 201,
+  "next_policy_to_consider": "factor_free"
+}

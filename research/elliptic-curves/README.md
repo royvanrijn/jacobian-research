@@ -326,9 +326,13 @@ That V1 result is historical: the separately frozen
 completed **17→18→…→31 in 1169 charts**, with independent replay.
 The [two-seed amplifier](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md)
 also completed **18→31** from each of two retrospectively supplied seeds,
-in **855 and 637 charts**. The same note records completed no-gain transfer
-controls. These results do not establish prospective seed discovery or an
-exact rank upper bound.
+in **855 and 637 charts**. The completed
+[remaining twelve-seed panel](notes/CURVE302_SEED_UNIVERSALITY_RESULTS_2026-09-09.md)
+reaches31 in11/12 cases after13206 charts, with all cases independently
+replayed and no censored charts. Together **13/14 tested seeds reach31**;
+recovered-local-01 stops at29 after its complete1434-chart final epoch.
+The two-seed note also records completed no-gain transfer controls. These
+results do not establish prospective seed discovery or an exact rank upper bound.
 
 The [complete 302 exceptional-subgroup order diagnostic](notes/CURVE302_EXCEPTIONAL_SUBGROUP_ORDER_2026-09-07.md)
 enumerates all `2^14` displayed `M17+S` states retrospectively. Its persistent

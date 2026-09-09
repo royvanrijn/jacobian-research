@@ -1,0 +1,2475 @@
+{
+  "all_cases_present": true,
+  "any_no_gain": false,
+  "claim_boundary": "Retrospective known-seed amplification panel; not a prospective selector or new rank claim.",
+  "known_winners_excluded": [
+    "recovered-strict-02",
+    "recovered-strict-03"
+  ],
+  "maximum_terminal_rank": 31,
+  "minimum_terminal_rank": 29,
+  "order": [
+    "residual-strict-03",
+    "recovered-strict-01",
+    "recovered-local-04",
+    "residual-strict-05",
+    "residual-strict-07",
+    "recovered-local-01",
+    "recovered-local-02",
+    "recovered-local-03",
+    "residual-strict-01",
+    "residual-strict-02",
+    "residual-strict-04",
+    "residual-strict-06"
+  ],
+  "rank31_count": 11,
+  "results": [
+    {
+      "charts": 385,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "dd7f8d8006948266faa34077323893c12729b8021ab84323e3b7ae18d2c56de4",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-03",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 13,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 9,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 22,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 2,
+          "epoch": 3,
+          "landscape": {
+            "centres": 550,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 33,
+          "epoch": 4,
+          "landscape": {
+            "centres": 941,
+            "cosets": 1024,
+            "exact_cvps": 966
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 41,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1238,
+            "cosets": 2048,
+            "exact_cvps": 1325
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 55,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1402,
+            "cosets": 4096,
+            "exact_cvps": 1490
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 1,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1437,
+            "cosets": 8192,
+            "exact_cvps": 1600
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 76,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1495,
+            "cosets": 16384,
+            "exact_cvps": 1637
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 22,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1500,
+            "cosets": 32768,
+            "exact_cvps": 1647
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 12,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1511,
+            "cosets": 65536,
+            "exact_cvps": 1658
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 29,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1515,
+            "cosets": 131072,
+            "exact_cvps": 1665
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 70,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1522,
+            "cosets": 262144,
+            "exact_cvps": 1662
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "8e650b5024a821ed6d3005cccb419628ae530b3fe45ff8e59ee42f337414d55f"
+    },
+    {
+      "charts": 1513,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "a8cbcc6ae423f8c2f986f0635b9c98dd263a540cdf759eb68527f7db0a867179",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-strict-01",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 17,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 21,
+          "before": 19,
+          "charts_replayed": 26,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 1,
+          "epoch": 2,
+          "landscape": {
+            "centres": 555,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 36,
+          "epoch": 3,
+          "landscape": {
+            "centres": 937,
+            "cosets": 1024,
+            "exact_cvps": 965
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 25,
+          "before": 23,
+          "charts_replayed": 39,
+          "epoch": 4,
+          "landscape": {
+            "centres": 1208,
+            "cosets": 2048,
+            "exact_cvps": 1327
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 27,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1471,
+            "cosets": 8192,
+            "exact_cvps": 1600
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 36,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1483,
+            "cosets": 16384,
+            "exact_cvps": 1626
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 5,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1493,
+            "cosets": 32768,
+            "exact_cvps": 1654
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 143,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1512,
+            "cosets": 65536,
+            "exact_cvps": 1666
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 685,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1505,
+            "cosets": 131072,
+            "exact_cvps": 1666
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 498,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1420,
+            "cosets": 262144,
+            "exact_cvps": 1656
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "52ee3dd4f7d9e5f7a0f2c3b3665d75fe2ac96d8880676ad2f09f807dfc414c86"
+    },
+    {
+      "charts": 975,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "bbfbe588a7123ecc9965de68b50108cc71ee82bafee7248d5c23ebdae478b890",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-local-04",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 17,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 37,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 1,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 56,
+          "epoch": 3,
+          "landscape": {
+            "centres": 554,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 40,
+          "epoch": 4,
+          "landscape": {
+            "centres": 933,
+            "cosets": 1024,
+            "exact_cvps": 964
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 31,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1210,
+            "cosets": 2048,
+            "exact_cvps": 1300
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 44,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1359,
+            "cosets": 4096,
+            "exact_cvps": 1485
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 54,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1461,
+            "cosets": 8192,
+            "exact_cvps": 1613
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 77,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1472,
+            "cosets": 16384,
+            "exact_cvps": 1646
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 131,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1471,
+            "cosets": 32768,
+            "exact_cvps": 1655
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 41,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1520,
+            "cosets": 65536,
+            "exact_cvps": 1649
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 351,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1484,
+            "cosets": 131072,
+            "exact_cvps": 1645
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 95,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1471,
+            "cosets": 262144,
+            "exact_cvps": 1661
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "d8dbbd08b6a22f5412b543c1f7f260d9688d355914cdb4219dc14d31eb934e7c"
+    },
+    {
+      "charts": 422,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "89b84b85449c50b5847c0091b5d82d18f20cd133dd2a7c11bf0fbdaf482e903d",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-05",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 5,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 6,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 22,
+          "before": 20,
+          "charts_replayed": 1,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 26,
+          "epoch": 3,
+          "landscape": {
+            "centres": 953,
+            "cosets": 1024,
+            "exact_cvps": 973
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 43,
+          "epoch": 4,
+          "landscape": {
+            "centres": 1227,
+            "cosets": 2048,
+            "exact_cvps": 1309
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 2,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1365,
+            "cosets": 4096,
+            "exact_cvps": 1484
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 22,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1482,
+            "cosets": 8192,
+            "exact_cvps": 1589
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 96,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1487,
+            "cosets": 16384,
+            "exact_cvps": 1640
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 90,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1468,
+            "cosets": 32768,
+            "exact_cvps": 1654
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 61,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1503,
+            "cosets": 65536,
+            "exact_cvps": 1663
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 8,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1489,
+            "cosets": 131072,
+            "exact_cvps": 1653
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 62,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1516,
+            "cosets": 262144,
+            "exact_cvps": 1651
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "0ba625a3f06907f60ed5abeb342e2eafddc9b8ae2ecaa1fe66c9df15a323d1e7"
+    },
+    {
+      "charts": 1034,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "b604ac5014ac666db9442e3e22f32635f3974c8dd0fd20e68c64eefb0d2814ab",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-07",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 4,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 21,
+          "before": 19,
+          "charts_replayed": 5,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 6,
+          "epoch": 2,
+          "landscape": {
+            "centres": 552,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 4,
+          "epoch": 3,
+          "landscape": {
+            "centres": 945,
+            "cosets": 1024,
+            "exact_cvps": 965
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 31,
+          "epoch": 4,
+          "landscape": {
+            "centres": 1232,
+            "cosets": 2048,
+            "exact_cvps": 1298
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 49,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1376,
+            "cosets": 4096,
+            "exact_cvps": 1495
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 50,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1461,
+            "cosets": 8192,
+            "exact_cvps": 1597
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 61,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1503,
+            "cosets": 16384,
+            "exact_cvps": 1630
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 116,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1517,
+            "cosets": 32768,
+            "exact_cvps": 1662
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 283,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1502,
+            "cosets": 65536,
+            "exact_cvps": 1664
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 375,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1490,
+            "cosets": 131072,
+            "exact_cvps": 1660
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 50,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1486,
+            "cosets": 262144,
+            "exact_cvps": 1670
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "a284604b7223d15d4970e8c31be269c1b11434c59e11eabe0ae4c5f22bdc6fb1"
+    },
+    {
+      "charts": 2430,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 11,
+      "initial_rank": 18,
+      "protocol_sha256": "32180a26136e5f6c75772ae579eb72effed4b32494e94b86fec7bf3f513647c3",
+      "rank_lower_bound": 29,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-local-01",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 17,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 37,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 23,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 69,
+          "epoch": 3,
+          "landscape": {
+            "centres": 556,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 43,
+          "epoch": 4,
+          "landscape": {
+            "centres": 932,
+            "cosets": 1024,
+            "exact_cvps": 968
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 26,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1202,
+            "cosets": 2048,
+            "exact_cvps": 1331
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 8,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1356,
+            "cosets": 4096,
+            "exact_cvps": 1489
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 32,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1474,
+            "cosets": 8192,
+            "exact_cvps": 1605
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 53,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1500,
+            "cosets": 16384,
+            "exact_cvps": 1640
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 29,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1506,
+            "cosets": 32768,
+            "exact_cvps": 1651
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 659,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1510,
+            "cosets": 65536,
+            "exact_cvps": 1656
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 29,
+          "before": 29,
+          "charts_replayed": 1434,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1434,
+            "cosets": 131072,
+            "exact_cvps": 1672
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "COMPLETE_FINITE_NO_GAIN",
+      "terminal_sha256": "2947fb22fff39fdc43b7c8e084681a2910a6f7a982cfc0e69459b7abcc9a5edb"
+    },
+    {
+      "charts": 705,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "365f8ffa0b3acabdc9de63c2f52874a31b3f2b7f989d08fac107f5b919285d34",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-local-02",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 37,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 18,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 22,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 67,
+          "epoch": 3,
+          "landscape": {
+            "centres": 556,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 37,
+          "epoch": 4,
+          "landscape": {
+            "centres": 942,
+            "cosets": 1024,
+            "exact_cvps": 957
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 66,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1234,
+            "cosets": 2048,
+            "exact_cvps": 1317
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 8,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1341,
+            "cosets": 4096,
+            "exact_cvps": 1485
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 49,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1480,
+            "cosets": 8192,
+            "exact_cvps": 1621
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 35,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1496,
+            "cosets": 16384,
+            "exact_cvps": 1633
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 51,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1492,
+            "cosets": 32768,
+            "exact_cvps": 1655
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 44,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1515,
+            "cosets": 65536,
+            "exact_cvps": 1663
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 81,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1492,
+            "cosets": 131072,
+            "exact_cvps": 1665
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 190,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1495,
+            "cosets": 262144,
+            "exact_cvps": 1674
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "e94d9984ee3f5796589edd505e20b44194202b26ba58fef8963d66651a96dd1f"
+    },
+    {
+      "charts": 568,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "d875e8411a3592b6e009fadf3b97759c4cd9813765aa749d0fb0296e367c15da",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "recovered-local-03",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 17,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 37,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 1,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 22,
+          "epoch": 3,
+          "landscape": {
+            "centres": 553,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 88,
+          "epoch": 4,
+          "landscape": {
+            "centres": 954,
+            "cosets": 1024,
+            "exact_cvps": 962
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 50,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1212,
+            "cosets": 2048,
+            "exact_cvps": 1333
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 37,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1356,
+            "cosets": 4096,
+            "exact_cvps": 1494
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 2,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1476,
+            "cosets": 8192,
+            "exact_cvps": 1617
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 8,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1481,
+            "cosets": 16384,
+            "exact_cvps": 1646
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 42,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1505,
+            "cosets": 32768,
+            "exact_cvps": 1661
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 72,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1515,
+            "cosets": 65536,
+            "exact_cvps": 1666
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 40,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1515,
+            "cosets": 131072,
+            "exact_cvps": 1672
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 152,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1502,
+            "cosets": 262144,
+            "exact_cvps": 1666
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "d965e6bceefb7fef0e6eb0fde0da37f177ba3dd305b609a386ec7bc3f18e7745"
+    },
+    {
+      "charts": 975,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "89aa8ccd2666695eab1152346e9c3dffd6a7a31261632c4d3d0bc78e919b96d0",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-01",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 2,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 1,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 18,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 1,
+          "epoch": 3,
+          "landscape": {
+            "centres": 558,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 3,
+          "epoch": 4,
+          "landscape": {
+            "centres": 951,
+            "cosets": 1024,
+            "exact_cvps": 964
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 29,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1220,
+            "cosets": 2048,
+            "exact_cvps": 1313
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 23,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1371,
+            "cosets": 4096,
+            "exact_cvps": 1482
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 76,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1471,
+            "cosets": 8192,
+            "exact_cvps": 1594
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 44,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1485,
+            "cosets": 16384,
+            "exact_cvps": 1629
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 21,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1499,
+            "cosets": 32768,
+            "exact_cvps": 1645
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 68,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1493,
+            "cosets": 65536,
+            "exact_cvps": 1646
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 52,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1492,
+            "cosets": 131072,
+            "exact_cvps": 1653
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 637,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1516,
+            "cosets": 262144,
+            "exact_cvps": 1663
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "e4b60480f1e2d3d3b3b622cac05cdbd74041793e24b19596b7aac6fea569c7c2"
+    },
+    {
+      "charts": 1618,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "5ee508a97a2e93e5fe92d680c3334b2d825045d2420b396c8c5fffda369816f0",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-02",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 5,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 1,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 17,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 29,
+          "epoch": 3,
+          "landscape": {
+            "centres": 550,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 23,
+          "epoch": 4,
+          "landscape": {
+            "centres": 948,
+            "cosets": 1024,
+            "exact_cvps": 959
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 39,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1217,
+            "cosets": 2048,
+            "exact_cvps": 1328
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 36,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1393,
+            "cosets": 4096,
+            "exact_cvps": 1494
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 114,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1468,
+            "cosets": 8192,
+            "exact_cvps": 1609
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 8,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1458,
+            "cosets": 16384,
+            "exact_cvps": 1627
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 223,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1503,
+            "cosets": 32768,
+            "exact_cvps": 1661
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 77,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1470,
+            "cosets": 65536,
+            "exact_cvps": 1659
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 91,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1490,
+            "cosets": 131072,
+            "exact_cvps": 1665
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 955,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1496,
+            "cosets": 262144,
+            "exact_cvps": 1658
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "f5ebb2913a5c25e941098412ab63a2d1adaf8ff2dab7d72473ef30fcca4a83e2"
+    },
+    {
+      "charts": 525,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "dbb357b5868620aff2b4933f42e7a87cc59aba9ff5352b7447fb3a5c559149ea",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-04",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 1,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 5,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 17,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 40,
+          "epoch": 3,
+          "landscape": {
+            "centres": 555,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 1,
+          "epoch": 4,
+          "landscape": {
+            "centres": 959,
+            "cosets": 1024,
+            "exact_cvps": 976
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 61,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1221,
+            "cosets": 2048,
+            "exact_cvps": 1327
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 34,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1360,
+            "cosets": 4096,
+            "exact_cvps": 1497
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 33,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1451,
+            "cosets": 8192,
+            "exact_cvps": 1605
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 18,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1486,
+            "cosets": 16384,
+            "exact_cvps": 1624
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 12,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1500,
+            "cosets": 32768,
+            "exact_cvps": 1649
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 100,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1488,
+            "cosets": 65536,
+            "exact_cvps": 1634
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 161,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1485,
+            "cosets": 131072,
+            "exact_cvps": 1649
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 42,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1467,
+            "cosets": 262144,
+            "exact_cvps": 1665
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "5ea370cc0df053a51833d5d5f6482277d7faf594f2ff1d2a23172ad59ab0fa1e"
+    },
+    {
+      "charts": 2056,
+      "claim_boundary": "Retrospective known-seed amplifier experiment; not a prospective selector or new rank claim.",
+      "gain": 13,
+      "initial_rank": 18,
+      "protocol_sha256": "258a5e6c75f64cf5cc6d1112a4a084d9ea1d0538656ee6f0fef6986d34207b49",
+      "rank_lower_bound": 31,
+      "schema": "curve302-seeded-v3-amplifier-result.v1",
+      "seed_direction": "residual-strict-06",
+      "stages": [
+        {
+          "after": 19,
+          "before": 18,
+          "charts_replayed": 17,
+          "epoch": 0,
+          "landscape": {
+            "centres": 114,
+            "cosets": 64,
+            "exact_cvps": 64
+          },
+          "modl_ranks": {
+            "3": 19,
+            "5": 19
+          }
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "charts_replayed": 37,
+          "epoch": 1,
+          "landscape": {
+            "centres": 178,
+            "cosets": 128,
+            "exact_cvps": 128
+          },
+          "modl_ranks": {
+            "3": 20,
+            "5": 20
+          }
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "charts_replayed": 1,
+          "epoch": 2,
+          "landscape": {
+            "centres": 306,
+            "cosets": 256,
+            "exact_cvps": 256
+          },
+          "modl_ranks": {
+            "3": 21,
+            "5": 21
+          }
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "charts_replayed": 22,
+          "epoch": 3,
+          "landscape": {
+            "centres": 550,
+            "cosets": 512,
+            "exact_cvps": 512
+          },
+          "modl_ranks": {
+            "3": 22,
+            "5": 22
+          }
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "charts_replayed": 50,
+          "epoch": 4,
+          "landscape": {
+            "centres": 955,
+            "cosets": 1024,
+            "exact_cvps": 962
+          },
+          "modl_ranks": {
+            "3": 23,
+            "5": 23
+          }
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "charts_replayed": 33,
+          "epoch": 5,
+          "landscape": {
+            "centres": 1225,
+            "cosets": 2048,
+            "exact_cvps": 1323
+          },
+          "modl_ranks": {
+            "3": 24,
+            "5": 24
+          }
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "charts_replayed": 43,
+          "epoch": 6,
+          "landscape": {
+            "centres": 1375,
+            "cosets": 4096,
+            "exact_cvps": 1470
+          },
+          "modl_ranks": {
+            "3": 25,
+            "5": 25
+          }
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "charts_replayed": 8,
+          "epoch": 7,
+          "landscape": {
+            "centres": 1438,
+            "cosets": 8192,
+            "exact_cvps": 1591
+          },
+          "modl_ranks": {
+            "3": 26,
+            "5": 26
+          }
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "charts_replayed": 32,
+          "epoch": 8,
+          "landscape": {
+            "centres": 1495,
+            "cosets": 16384,
+            "exact_cvps": 1647
+          },
+          "modl_ranks": {
+            "3": 27,
+            "5": 27
+          }
+        },
+        {
+          "after": 28,
+          "before": 27,
+          "charts_replayed": 269,
+          "epoch": 9,
+          "landscape": {
+            "centres": 1489,
+            "cosets": 32768,
+            "exact_cvps": 1648
+          },
+          "modl_ranks": {
+            "3": 28,
+            "5": 28
+          }
+        },
+        {
+          "after": 29,
+          "before": 28,
+          "charts_replayed": 47,
+          "epoch": 10,
+          "landscape": {
+            "centres": 1469,
+            "cosets": 65536,
+            "exact_cvps": 1651
+          },
+          "modl_ranks": {
+            "3": 29,
+            "5": 29
+          }
+        },
+        {
+          "after": 30,
+          "before": 29,
+          "charts_replayed": 402,
+          "epoch": 11,
+          "landscape": {
+            "centres": 1487,
+            "cosets": 131072,
+            "exact_cvps": 1660
+          },
+          "modl_ranks": {
+            "3": 30,
+            "5": 30
+          }
+        },
+        {
+          "after": 31,
+          "before": 30,
+          "charts_replayed": 1095,
+          "epoch": 12,
+          "landscape": {
+            "centres": 1454,
+            "cosets": 262144,
+            "exact_cvps": 1665
+          },
+          "modl_ranks": {
+            "3": 31,
+            "5": 31
+          }
+        }
+      ],
+      "status": "PASS_INDEPENDENT_SEEDED_V3_REPLAY",
+      "stop_reason": "TARGET_LOWER_BOUND_REACHED",
+      "terminal_sha256": "70ff47c61c3fa2a73f4b34845d2ce44cfe2bcd91bb0bcaf6844f4865c2d2f658"
+    }
+  ],
+  "status": "COMPLETE_SEED_UNIVERSALITY_PANEL",
+  "total_charts": 13206
+}

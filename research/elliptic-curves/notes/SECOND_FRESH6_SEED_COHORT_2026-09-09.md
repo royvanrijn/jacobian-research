@@ -155,3 +155,44 @@ is claimed. The074d9 and07ca9 complementary branches remain unsearched.
 
 - [Replayed M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json).
 - [M22 continuation cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/suffix-queue.json).
+
+## Final first-pass branches:074d9 and07ca9 reach M20
+
+Both remaining complementary-parent branches complete100 point calls and
+independent replay, with two certified gains each and no point/map timeouts.
+At074d9 parameter88/2551, search takes108.725seconds and replay18.220seconds.
+At07ca9 parameter-2475/2848, search takes107.340seconds and replay19.647seconds.
+Both finish at M20 with `CHART_BUDGET_EXHAUSTED`; their suffixes are queued.
+The replay includes exact rational CVPs, maps, point witnesses, gain provenance
+and complete-cloud audits. No exact rank or record is claimed.
+
+- [074d9 M20 evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-complement/result.json).
+- [07ca9 M20 evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json).
+- [Current five-branch results and cursors](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json).
+
+All five complementary-parent branches have now been tested. Current certified
+lower bounds are20,20,22,17,26,22 in family order074d9,07ca9,08234,08f72,
+103b2,11952. The08f72 seed miss remains unresolved. Rank26 is the strongest
+result in this cohort; the broader goal of a new high-rank or conductor record
+remains open. Bounded misses do not establish rank upper bounds.
+
+### Three further cached M26 batches
+
+Three sequential100-call batches complete with independent replay between
+batches and a stop-on-gain reassessment condition. No gains or point/map
+timeouts occur. The lower bound remains26 at500 cumulative calls from the
+reconciled M23 restart.
+
+| Cached version | Cumulative calls | Search seconds | Replay seconds |
+| --- | ---: | ---: | ---: |
+| 2 | 300 | 96.258 | 11.660 |
+| 3 | 400 | 95.432 | 12.748 |
+| 4 | 500 | 103.331 | 13.372 |
+
+The current cursor is centre201, `factor_free`, in the689-centre M26
+landscape. Its preconditioned box is already searched. Earlier queues point
+to their verified descendants; no completed prefix should be repeated.
+These bounded misses imply no rank upper bound or record.
+
+- [Latest cached result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/result.json).
+- [Current M26 cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/suffix-queue.json).

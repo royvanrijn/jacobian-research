@@ -2,6 +2,11 @@
 
 ## Verified outcomes
 
+Follow-up completed: the [remaining twelve-seed panel](CURVE302_SEED_UNIVERSALITY_RESULTS_2026-09-09.md)
+adds eleven independently replayed rank31 endpoints and one rank29 bounded
+stall. Together with the two cases below, **13/14 tested seeds reach31 and
+all14 reach at least29**. The historical two-seed records below are unchanged.
+
 The [frozen V3 calibration](ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) completed
 generic **17→18→…→31 in 1169 charts**, following its successful fixed-M30
 gate (101 charts). This supersedes the pending-run status in the old handoff,
