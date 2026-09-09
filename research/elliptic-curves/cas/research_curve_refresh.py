@@ -43,6 +43,15 @@ def apply_refresh(rows):
                     or source['final_lower_bound'] != packet['rank_lower_bound']
                     or replay['status'] != source['status']):
                 raise ArithmeticError('productive terminal identity differs')
+        elif entry['kind'] == 'panel':
+            if (source['status'] != 'COMPLETE_BOUNDED_R17_60_PANEL'
+                    or source['completed'] != 60 or source['independently_verified'] != 60):
+                raise ArithmeticError('complete verified panel required')
+            selected = next(r for r in source['results'] if r['id'] == entry['record'])
+            if (selected['family'] != family or selected['parameter'] != parameter
+                    or selected['status'] != 'PASS_INDEPENDENT_R17_60_CASE'):
+                raise ArithmeticError('panel identity differs')
+            packet = selected['packet']
         elif entry['kind'] == 'cohort':
             selected = next(r for r in source['records'] if r['id'] == entry['record'])
             if selected['family'] != family or selected['parameter'] != parameter:
@@ -110,6 +119,38 @@ def apply_refresh(rows):
         claim_for(entry)
         row = next(r for r in rows if r['id'] == entry['id'])
         source = documents[entry['source']]
+        if entry.get('kind') == 'checkpoint':
+            result = source['records'][entry['id']]['result']
+            if result['status'] != 'PASS_INDEPENDENT_CONDUCTOR_REPLAY':
+                raise ArithmeticError('independent conductor replay required')
+            audit = result['certificate']
+            if not cert.isomorphic(row['ainvs'], audit['curve']):
+                raise ArithmeticError('conductor equation differs')
+            remaining = int(audit['remaining_cofactor'])
+            divisor = math.prod(int(r['prime'])**r['conductor_exponent'] for r in audit['local_data'])
+            delta = abs(cert.weierstrass_invariants(audit['curve'])['discriminant'])
+            if (remaining * math.prod(int(r['prime'])**r['discriminant_valuation'] for r in audit['local_data']) != delta
+                    or str(divisor) != audit['conductor_divisor']
+                    or str(divisor*remaining) != audit['conductor_upper_bound']):
+                raise ArithmeticError('local conductor products differ')
+            previous = row.get('conductor_certificate')
+            if previous and previous != entry['source']:
+                row.setdefault('prior_conductor_certificates',[]).append(previous)
+            lower = math.lcm(int(row.get('conductor_divisor') or 1),divisor)
+            upper = min(int(row.get('conductor_upper_bound') or divisor*remaining),divisor*remaining)
+            if lower > upper:raise ArithmeticError('incompatible conductor bounds')
+            row.update(conductor_divisor=str(lower),conductor_upper_bound=str(upper),conductor_certificate=entry['source'])
+            new_bad = [r['prime'] for r in audit['local_data'] if r['conductor_exponent']]
+            row['known_bad_primes'] = sorted(set(row['known_bad_primes']) | set(new_bad),key=int)
+            if audit['status'] == 'EXACT':
+                if remaining != 1 or audit['exact_conductor'] != str(divisor):
+                    raise ArithmeticError('incomplete exact conductor')
+                if row.get('conductor') and row['conductor'] != str(divisor):
+                    raise ArithmeticError('existing exact conductor differs')
+                row.update(conductor=str(divisor),conductor_status='EXACT',log_conductor=math.log(divisor),bad_primes=new_bad)
+            elif audit['status'] != 'UNKNOWN' or audit['exact_conductor'] is not None:
+                raise ArithmeticError('invalid partial conductor status')
+            continue
         selected = next(r for r in source['rows'] if r['family'] == row['family'])
         audit = selected['audit']
         if not cert.isomorphic(row['ainvs'], audit['curve']):

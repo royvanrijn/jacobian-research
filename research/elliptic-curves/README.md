@@ -74,10 +74,11 @@ Complementary-parent passes raise 103b2 to25 and 07ca9 to24, with complete
 saved-cloud reconciliation before continuation.
 
 The [frozen sixty-fibre R17 panel](notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md)
-has passed all sixty zero-chart generic M17 checks and is running detached.
-It compares five lower-height and five higher-height candidates per fibration,
-with bounded first-seed acquisition and at most100 complementary calls per
-seeded fibre; no deep suffixes are included. Search outcomes remain pending.
+is complete: all 60 cases replay, 48 seed, and the best lower bounds are one 27,
+three 26s and four 25s. The 103b2 fibre at 877/781 reaches 27 in one seed call plus
+100 complementary calls, last gaining at 67. Six separate fibres gain at 75 or
+later. All 6090 calls are uncensored; no deep suffixes were run. Full packets,
+height/fibration comparisons and the late-gain watchlist are recorded in the note.
 
 The [optimized productive-anchor search](notes/CURVE200_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
 raises curve200 from certified25 to26. The next [R17 transfer on curve113](notes/CURVE113_PRODUCTIVE_V3_SEARCH_2026-09-09.md)

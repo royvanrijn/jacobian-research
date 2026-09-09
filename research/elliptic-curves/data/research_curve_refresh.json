@@ -19,6 +19,78 @@
       "claim": "EC-FRESH6-08F72-CONDUCTOR-20260909",
       "id": "r17-103b2-fresh-001",
       "source": "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-101",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-102",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-105",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-189",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-50",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-91",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "new-20260906-99",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "r17-103b2-fresh-002",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "r17-panel-074d9-low-04",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "r17-panel-103b2-low-02",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "r17-panel-103b2-low-05",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "id": "r17-panel-11952-low-04",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
     }
   ],
   "curves": [
@@ -115,34 +187,31 @@
       "source": "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json"
     },
     {
-      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "claim": "EC-SECOND-FRESH6-074D9-07CA9-M20-20260909",
       "family": "074d9",
       "id": "r17-074d9-fresh-002",
-      "kind": "cohort",
+      "kind": "productive",
       "parameter": "88/2551",
-      "rank_lower_bound": 18,
-      "record": "074d9-fresh-002",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+      "rank_lower_bound": 20,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-complement/result.json"
     },
     {
-      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "claim": "EC-SECOND-FRESH6-074D9-07CA9-M20-20260909",
       "family": "07ca9",
       "id": "r17-07ca9-fresh-002",
-      "kind": "cohort",
+      "kind": "productive",
       "parameter": "-2475/2848",
-      "rank_lower_bound": 18,
-      "record": "07ca9-fresh-002",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+      "rank_lower_bound": 20,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json"
     },
     {
-      "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
+      "claim": "EC-SECOND-FRESH6-08234-M22-20260909",
       "family": "08234",
       "id": "r17-08234-fresh-002",
-      "kind": "cohort",
+      "kind": "productive",
       "parameter": "2570/2143",
-      "rank_lower_bound": 18,
-      "record": "08234-fresh-002",
-      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json"
+      "rank_lower_bound": 22,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json"
     },
     {
       "claim": "EC-SECOND-FRESH6-FIRST-M18-20260909",
@@ -182,6 +251,661 @@
       "rank_lower_bound": 18,
       "replay": "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/independent-replay.json",
       "source": "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-result.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-AMPLIFICATION-20260909",
+      "family": "074d9",
+      "id": "r17-074d9-lowheight-001",
+      "kind": "reconciled",
+      "parameter": "25/3",
+      "rank_lower_bound": 22,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-lowheight-001/reconciled.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-07CA9-M24-20260909",
+      "family": "07ca9",
+      "id": "r17-07ca9-lowheight-001",
+      "kind": "reconciled",
+      "parameter": "142/561",
+      "rank_lower_bound": 24,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-M20-complement/reconciled.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-FIRST-M18-20260909",
+      "family": "08234",
+      "id": "r17-08234-lowheight-001",
+      "kind": "cohort",
+      "parameter": "383/388",
+      "rank_lower_bound": 17,
+      "record": "08234-lowheight-001",
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_first_m18_v1/result.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-AMPLIFICATION-20260909",
+      "family": "08f72",
+      "id": "r17-08f72-lowheight-001",
+      "kind": "reconciled",
+      "parameter": "254/17",
+      "rank_lower_bound": 22,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-lowheight-001/reconciled.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-103B2-M25-20260909",
+      "family": "103b2",
+      "id": "r17-103b2-lowheight-001",
+      "kind": "productive",
+      "parameter": "-95/728",
+      "rank_lower_bound": 25,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-M22-complement/result.json"
+    },
+    {
+      "claim": "EC-LOWHEIGHT-FRESH6-AMPLIFICATION-20260909",
+      "family": "11952",
+      "id": "r17-11952-lowheight-001",
+      "kind": "reconciled",
+      "parameter": "238/27",
+      "rank_lower_bound": 23,
+      "source": "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-lowheight-001/reconciled.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-01",
+      "kind": "panel",
+      "parameter": "569/530",
+      "rank_lower_bound": 20,
+      "record": "074d9-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-01",
+      "kind": "panel",
+      "parameter": "521/172",
+      "rank_lower_bound": 22,
+      "record": "07ca9-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-low-01",
+      "kind": "panel",
+      "parameter": "-68/245",
+      "rank_lower_bound": 17,
+      "record": "08234-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-01",
+      "kind": "panel",
+      "parameter": "422/743",
+      "rank_lower_bound": 21,
+      "record": "08f72-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-01",
+      "kind": "panel",
+      "parameter": "-16/689",
+      "rank_lower_bound": 23,
+      "record": "103b2-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-low-01",
+      "kind": "panel",
+      "parameter": "38/31",
+      "rank_lower_bound": 22,
+      "record": "11952-low-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-01",
+      "kind": "panel",
+      "parameter": "-3921/797",
+      "rank_lower_bound": 20,
+      "record": "074d9-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-01",
+      "kind": "panel",
+      "parameter": "1032/3619",
+      "rank_lower_bound": 20,
+      "record": "07ca9-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-high-01",
+      "kind": "panel",
+      "parameter": "-3553/1680",
+      "rank_lower_bound": 18,
+      "record": "08234-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-01",
+      "kind": "panel",
+      "parameter": "546/3683",
+      "rank_lower_bound": 20,
+      "record": "08f72-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-01",
+      "kind": "panel",
+      "parameter": "-2352/2999",
+      "rank_lower_bound": 17,
+      "record": "103b2-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-high-01",
+      "kind": "panel",
+      "parameter": "-137/2327",
+      "rank_lower_bound": 19,
+      "record": "11952-high-01",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-02",
+      "kind": "panel",
+      "parameter": "383/943",
+      "rank_lower_bound": 21,
+      "record": "074d9-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-02",
+      "kind": "panel",
+      "parameter": "347/570",
+      "rank_lower_bound": 21,
+      "record": "07ca9-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-low-02",
+      "kind": "panel",
+      "parameter": "272/965",
+      "rank_lower_bound": 18,
+      "record": "08234-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-02",
+      "kind": "panel",
+      "parameter": "-861/383",
+      "rank_lower_bound": 23,
+      "record": "08f72-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-02",
+      "kind": "panel",
+      "parameter": "877/781",
+      "rank_lower_bound": 27,
+      "record": "103b2-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-low-02",
+      "kind": "panel",
+      "parameter": "338/163",
+      "rank_lower_bound": 24,
+      "record": "11952-low-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-02",
+      "kind": "panel",
+      "parameter": "-4069/849",
+      "rank_lower_bound": 17,
+      "record": "074d9-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-02",
+      "kind": "panel",
+      "parameter": "2227/3452",
+      "rank_lower_bound": 22,
+      "record": "07ca9-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-high-02",
+      "kind": "panel",
+      "parameter": "-3248/79",
+      "rank_lower_bound": 24,
+      "record": "08234-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-02",
+      "kind": "panel",
+      "parameter": "2960/3001",
+      "rank_lower_bound": 17,
+      "record": "08f72-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-02",
+      "kind": "panel",
+      "parameter": "-3290/3959",
+      "rank_lower_bound": 17,
+      "record": "103b2-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-high-02",
+      "kind": "panel",
+      "parameter": "443/2529",
+      "rank_lower_bound": 21,
+      "record": "11952-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-03",
+      "kind": "panel",
+      "parameter": "-969/320",
+      "rank_lower_bound": 23,
+      "record": "074d9-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-03",
+      "kind": "panel",
+      "parameter": "272/327",
+      "rank_lower_bound": 24,
+      "record": "07ca9-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-low-03",
+      "kind": "panel",
+      "parameter": "-808/945",
+      "rank_lower_bound": 17,
+      "record": "08234-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-03",
+      "kind": "panel",
+      "parameter": "580/397",
+      "rank_lower_bound": 22,
+      "record": "08f72-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-03",
+      "kind": "panel",
+      "parameter": "-550/521",
+      "rank_lower_bound": 25,
+      "record": "103b2-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-low-03",
+      "kind": "panel",
+      "parameter": "110/179",
+      "rank_lower_bound": 24,
+      "record": "11952-low-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-03",
+      "kind": "panel",
+      "parameter": "1565/713",
+      "rank_lower_bound": 21,
+      "record": "074d9-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-03",
+      "kind": "panel",
+      "parameter": "-3967/2226",
+      "rank_lower_bound": 20,
+      "record": "07ca9-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-high-03",
+      "kind": "panel",
+      "parameter": "567/1342",
+      "rank_lower_bound": 17,
+      "record": "08234-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-03",
+      "kind": "panel",
+      "parameter": "2139/3163",
+      "rank_lower_bound": 18,
+      "record": "08f72-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-03",
+      "kind": "panel",
+      "parameter": "-1873/2620",
+      "rank_lower_bound": 17,
+      "record": "103b2-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-high-03",
+      "kind": "panel",
+      "parameter": "3925/2937",
+      "rank_lower_bound": 18,
+      "record": "11952-high-03",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-04",
+      "kind": "panel",
+      "parameter": "-1013/476",
+      "rank_lower_bound": 26,
+      "record": "074d9-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-04",
+      "kind": "panel",
+      "parameter": "49/353",
+      "rank_lower_bound": 25,
+      "record": "07ca9-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-low-04",
+      "kind": "panel",
+      "parameter": "-600",
+      "rank_lower_bound": 23,
+      "record": "08234-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-04",
+      "kind": "panel",
+      "parameter": "-240/653",
+      "rank_lower_bound": 24,
+      "record": "08f72-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-04",
+      "kind": "panel",
+      "parameter": "555/779",
+      "rank_lower_bound": 18,
+      "record": "103b2-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-low-04",
+      "kind": "panel",
+      "parameter": "287/324",
+      "rank_lower_bound": 26,
+      "record": "11952-low-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-04",
+      "kind": "panel",
+      "parameter": "3889/2225",
+      "rank_lower_bound": 19,
+      "record": "074d9-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-04",
+      "kind": "panel",
+      "parameter": "-2687/3445",
+      "rank_lower_bound": 23,
+      "record": "07ca9-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-high-04",
+      "kind": "panel",
+      "parameter": "2695/232",
+      "rank_lower_bound": 24,
+      "record": "08234-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-04",
+      "kind": "panel",
+      "parameter": "-2318/403",
+      "rank_lower_bound": 25,
+      "record": "08f72-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-04",
+      "kind": "panel",
+      "parameter": "-2030/2773",
+      "rank_lower_bound": 17,
+      "record": "103b2-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-high-04",
+      "kind": "panel",
+      "parameter": "-1732/617",
+      "rank_lower_bound": 24,
+      "record": "11952-high-04",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-05",
+      "kind": "panel",
+      "parameter": "-359/211",
+      "rank_lower_bound": 24,
+      "record": "074d9-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-05",
+      "kind": "panel",
+      "parameter": "-841/643",
+      "rank_lower_bound": 19,
+      "record": "07ca9-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-low-05",
+      "kind": "panel",
+      "parameter": "273/422",
+      "rank_lower_bound": 17,
+      "record": "08234-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-05",
+      "kind": "panel",
+      "parameter": "727/194",
+      "rank_lower_bound": 18,
+      "record": "08f72-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-05",
+      "kind": "panel",
+      "parameter": "-621/281",
+      "rank_lower_bound": 26,
+      "record": "103b2-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-low-05",
+      "kind": "panel",
+      "parameter": "807/434",
+      "rank_lower_bound": 24,
+      "record": "11952-low-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-05",
+      "kind": "panel",
+      "parameter": "-3805/141",
+      "rank_lower_bound": 18,
+      "record": "074d9-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-05",
+      "kind": "panel",
+      "parameter": "-3267/2257",
+      "rank_lower_bound": 25,
+      "record": "07ca9-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08234",
+      "id": "r17-panel-08234-high-05",
+      "kind": "panel",
+      "parameter": "-1983/3790",
+      "rank_lower_bound": 17,
+      "record": "08234-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-05",
+      "kind": "panel",
+      "parameter": "1245/2519",
+      "rank_lower_bound": 23,
+      "record": "08f72-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-05",
+      "kind": "panel",
+      "parameter": "-2897/1356",
+      "rank_lower_bound": 17,
+      "record": "103b2-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
+    },
+    {
+      "claim": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "family": "11952",
+      "id": "r17-panel-11952-high-05",
+      "kind": "panel",
+      "parameter": "2028/1289",
+      "rank_lower_bound": 19,
+      "record": "11952-high-05",
+      "source": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json"
     }
   ],
   "schema": "elliptic-curves.research-curve-refresh.v1",
@@ -200,8 +924,19 @@
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2-exact-complement/result.json": "d1d3d9e4a3be43936ddeed9498b79b0e279b23ddcb38d9279552159f91f8d73e",
     "artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json": "8451e99dc9cb2ab07f712bd400a1cea0638a334317050cbcf22b4ca8a2463298",
     "artifacts/generated-results/elliptic-curves/fresh6_first_m18_v1/result.json": "946db9842740f63da8ffd7071424148b15e10a89f11cd5904935f29f4dbf20bf",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/074d9-lowheight-001/reconciled.json": "cc249d6a4fe384a1c55acabcc628df1ab8b00e56cac146713a9b58bc86ad97af",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/07ca9-M20-complement/reconciled.json": "49ce6dc169a80fd9b45868b82a9e49e5cfb59f5deadc6412139e4ef3b77bc453",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/08f72-lowheight-001/reconciled.json": "e46b6e8fa4809f5133f5162de36263b1ff579dab5f5ba86c376beafccb426444",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/103b2-M22-complement/result.json": "9049456f9b6117d28caca3dc62f20d4d2e81dd60f6a01c89457ce11869c022fb",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_amplification_v1/11952-lowheight-001/reconciled.json": "04aade733b9b1e2ed381d0bc57dad0cd5163264081c2c6e570ec6e4f2df9464d",
+    "artifacts/generated-results/elliptic-curves/fresh6_lowheight_first_m18_v1/result.json": "a8f6c271f11c409ab9269407b673237959da2ba675b53913f3fab45dedbd15de",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-complement/result.json": "c6d783213b0028048a32a20fe7c4e94c7808ef4e1070258f411a75da28fe1c2f",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json": "cd84f5864f769aa4bbcefcb765cf19489e5a9a03d77122970cfc6c306a50313c",
+    "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json": "c656d6624f77d143d715780fe40a4abba762a293358dc8e9c0b6f4a12d72c8f4",
     "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/result.json": "abe10959726b97ceb10183562b545af60ec31e24698f1a17471588baa972cd8b",
     "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json": "294e504a31a35fd73d1f26a96aa60c92b6357b7488bcd55aed9afd813916b7ca",
-    "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e"
+    "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e",
+    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json": "7eddf86858dc59a8f676879e9863e1a556ebaac576e1838be7a812e92b2accac",
+    "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99"
   }
 }

@@ -8,6 +8,112 @@ computation. It is motivated by the [fresh-cohort gains](FRESH6_RETAINED_SEED_CO
 The [302 panel](CURVE302_SEED_UNIVERSALITY_RESULTS_2026-09-09.md) is a separate
 retrospective calibration: its 13/14 closures do not predict this panel's rate.
 
+## Completed findings
+
+All 60 cases completed on 2026-09-09 in 4014.98 seconds (66.92 minutes),
+with four detached workers. Every case passed independent search replay and
+saved-cloud reconciliation. The final full-history audit, fresh native-prefix
+and finite-independence checks, and portable exported-certificate verification
+all passed. All 60 selected equations are pairwise nonisomorphic over Q.
+
+There were **48 first seeds**, including 26 found on the first point call.
+Of these 48 seeded fibres, **38 gained further directions** in the complementary
+pass; ten did not. The experiment used 1349 seed calls and 4741 complementary
+calls, **6090 calls total**, with no point/map censoring or phase-level resource
+stops. Across the 60 separate subgroups, seed-chart clouds contributed 85
+directions beyond their respective M17 inputs, and complementary passes added
+153 more. These are counts across different curves, not the rank of one curve.
+
+The final certified subgroup lower bounds are:
+
+| Lower bound | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cases | 12 | 7 | 4 | 5 | 5 | 4 | 6 | 9 | 4 | 3 | 1 |
+
+Twelve cases stopped after bounded seed misses, 41 exhausted their 100-call
+complementary allowance, and seven exhausted the finite complementary policy
+earlier. None received a deep suffix or an increased budget. No rank-at-least-28
+result was obtained in this panel; this is not an upper bound on any fibre.
+
+### Highest-ranked outcomes
+
+Rows follow the frozen reporting order. All eight used one seed call and 100
+complementary calls. "Gain calls" counts distinct complementary calls that
+supplied admitted directions, including directions recovered from saved clouds.
+"Calls/direction" includes seed calls and divides by the final increase over 17.
+
+| Family, parameter | Seed-cloud bound | Final bound | Gain calls | Calls/direction | Last complementary gain |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 103b2, 877/781 | 19 | 27 | 5 | 101/10 | 67 |
+| 074d9, -1013/476 | 19 | 26 | 7 | 101/9 | 40 |
+| 103b2, -621/281 | 19 | 26 | 6 | 101/9 | 42 |
+| 11952, 287/324 | 20 | 26 | 3 | 101/9 | 7 |
+| 07ca9, -3267/2257 | 18 | 25 | 7 | 101/8 | 62 |
+| 103b2, -550/521 | 19 | 25 | 4 | 101/8 | 26 |
+| 08f72, -2318/403 | 18 | 25 | 4 | 101/8 | 18 |
+| 07ca9, 49/353 | 20 | 25 | 2 | 101/8 | 11 |
+
+For **103b2 at 877/781**, seed call 1 exposes M19 after full-cloud replay.
+Complementary calls 9, 20, 21, 44 and 67 give bounds 20, 21, 24, 26 and 27.
+At calls 21 and 44, independently replayed reconciliation adds two and one
+directions respectively before rebuilding the landscape. Its three search
+segments use 21 + 23 + 56 = 100 calls. The remaining 33 calls after the gain to
+27 add nothing certified. This is a prospective bounded cascade without
+supplied exceptional points or retrospective target labels, not a rank-27
+upper bound or a public-novelty claim.
+
+### Late-gain watchlist
+
+This is the separately frozen last-gain-at-least-75 criterion, not a new
+selection rule. These results justify retaining gain timing alongside rank;
+they do not prove that extending the budget would succeed.
+The table uses the primary ranking order; the raw controller report lists
+the same six IDs in roster order.
+
+| Family, parameter | Final bound | Seed calls | Last complementary gain | Subsequent no-gain calls |
+| --- | ---: | ---: | ---: | ---: |
+| 08234, 2695/232 | 24 | 9 | 92 | 8 |
+| 08f72, 1245/2519 | 23 | 5 | 79 | 21 |
+| 11952, 443/2529 | 21 | 4 | 89 | 11 |
+| 074d9, 569/530 | 20 | 15 | 100 | 0 |
+| 074d9, -3921/797 | 20 | 24 | 96 | 4 |
+| 11952, -137/2327 | 19 | 62 | 81 | 19 |
+
+### Height and fibration comparisons
+
+| Parameter-height stratum | Seeds | First-call seeds | Mean final lower bound | Seed calls | Complement calls | Seed-cloud / complementary directions |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| At most 1024 | 27/30 | 18 | 332/15 = 22.133… | 368 | 2684 | 56 / 98 |
+| 1025–4096 | 21/30 | 8 | 99/5 = 19.8 | 981 | 2057 | 29 / 55 |
+
+| Fibration | Seeds | Best lower bound | Seed-cloud directions | Complementary directions |
+| --- | ---: | ---: | ---: | ---: |
+| 074d9 | 9/10 | 26 | 10 | 29 |
+| 07ca9 | 10/10 | 25 | 15 | 36 |
+| 08234 | 5/10 | 24 | 16 | 6 |
+| 08f72 | 9/10 | 25 | 13 | 28 |
+| 103b2 | 5/10 | 27 | 9 | 25 |
+| 11952 | 10/10 | 26 | 22 | 29 |
+
+All four bounds at least 26 occur in the lower-height stratum, while five of
+the six late-gain cases occur in the higher-height stratum. In 103b2, all five
+lower-height candidates seeded and all five higher-height candidates missed
+within the seed allowance. These are descriptive facts about a score-selected
+finite panel, not a randomized estimate or a causal effect of parameter height.
+
+The operational lessons are distinct: inexpensive seeds can expose several
+directions at once; fresh fibres can exhibit a substantial adaptive cascade;
+easy seed incidence does not by itself identify the largest final lower bound;
+and some modest-rank fibres are still gaining at the cutoff. For example,
+08234 at -3248/79 reaches 24 entirely from its seed cloud, then gains nothing
+in 100 complementary calls. A follow-up would therefore compare the leading
+27/26 states with the separate late-gain cases. **No such follow-up was launched.**
+Exact ranks, conductor improvements, rank 28 or higher on these fibres, and
+novelty beyond the frozen internal exclusion snapshots remain open.
+
+- [Complete results and self-contained point packets](../../artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json), SHA256 `7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99`.
+- [Replayed analysis, all 60 trajectories and rankings](../../artifacts/generated-results/elliptic-curves/r17_60_panel_analysis_v1.json), SHA256 `a395bcb72fd339ef768fa025569df011ebe901072b1d78e0c609d83959777a11`.
+
 ## Frozen selection
 
 Protocol SHA256:
@@ -89,16 +195,16 @@ finite-certificate replay before launch:
 R17_60_PREFLIGHT_COMPLETE|cases=60|rank=17|charts=0|status=PASS
 ```
 
-The four-worker detached controller was launched on2026-09-09. Point-search
-outcomes are pending; this preflight certifies the inputs, not any new rank
-gain. Its receipt is retained as `r17-60-panel-v1/preflight.json` under the
-local evidence root below.
+The four-worker detached controller launched and completed on 2026-09-09.
+Its terminal state is `COMPLETE_BOUNDED_R17_60_PANEL`, with no active workers.
+The zero-chart receipt certifies the inputs, not the later gains; it remains
+at `r17-60-panel-v1/preflight.json` under the local evidence root below.
 
 Raw checkpoints and per-phase supervisor logs are retained under
 `artifacts/local/elliptic-curves/r17-60-panel-v1/`. The sources, projected
 selection inputs, roster, atlas and exact maximum-class catalogue are bound
 before execution. Completed case packets include full independent point
-certificates and evidence hashes. The final report will be exported as
+certificates and evidence hashes. The final report is exported as
 `artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json`.
 
 From `research/`:
@@ -153,6 +259,11 @@ that remains the separate full local audit above. After the complete export:
 ```sh
 python3 elliptic-curves/cas/verify_r17_60_certificates.py
 ```
+
+Final checks passed: `PASS_COMPLETE_PANEL_AUDIT` with fresh Sage proofs for
+all 60 packets; `R17_60_EXPORTED_CERTIFICATES_PASS|cases=60|charts=0`;
+analysis `--write` immediately followed by `--check`; and all 17 targeted
+regression tests. None of these checks launched point searches.
 
 Implementation: [controller](../cas/run_r17_60_panel.py),
 [arithmetic adapters](../cas/r17_60_arithmetic.py), and

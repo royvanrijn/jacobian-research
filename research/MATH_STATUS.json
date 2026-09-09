@@ -54179,6 +54179,68 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "First 291-curve inventory conductor snapshot certifies seven exact conductors and five partial bounds",
+      "scope": "The immutable first snapshot contains twelve independently replayed local arithmetic certificates from a bounded post-discovery pass over161 unresolved conductors. Seven factorizations are complete, including the rank-at-least27 R17 panel fibre103b2 at877/781; five remain UNKNOWN with proved conductor divisors and upper bounds. Local conductor exponents agree between Sage generic Tate over the degree-one presentation Q[a]/(a-1) and PARI elllocalred over Q. Prime certificates and complete discriminant products replay without factor discovery. This snapshot does not claim completion of the161-case pass, exact ranks, minimal-model height metrics, public novelty or conductor records.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md",
+      "dependencies": ["EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909"],
+      "checker": "elliptic-curves/cas/index_inventory_conductor_results.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e4b1f325122ccc52a836a0f2355fb053c6f9ca4023fe22a0b36f2647213ecfa6",
+      "software_lock": [
+        "elliptic-curves/cas/index_inventory_conductor_results.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/run_inventory_conductor_pass.py",
+        "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Frozen sixty-fibre R17 panel certifies one M27, three M26 and four M25 subgroups",
+      "scope": "A prospectively frozen panel selects ten fresh-relative-to-pinned-ledgers candidates in each of six compact R17 fibrations, five of parameter height at most1024 and five of height1025–4096. All60 generic inputs and final packets verify; equations are pairwise nonisomorphic over Q. Bounded first-seed searches find48 seeds,26 on the first call. Full saved-cloud replay contributes85 directions beyond the respective M17 inputs; at most100 cumulative complementary calls per seeded fibre contribute153 more. All6090 point calls are uncensored, with no phase resource stops or deep suffixes. Final subgroup lower bounds are 12x17,7x18,4x19,5x20,5x21,4x22,6x23,9x24,4x25,3x26,1x27. The103b2 fibre at877/781 reaches27 using one seed call plus100 complementary calls, last gaining at67. Six other fibres gain at call75 or later. Lower-height candidates seed27/30 versus21/30 at higher height, a descriptive selected-panel comparison only. Full policy/evidence audit, fresh finite independence, portable certificate checks and analysis replay pass. No exact rank, rank28 or higher result, causal height effect, conductor record or public novelty is claimed.",
+      "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
+      "dependencies": [
+        "EC-R17-EXACT-PARITY-MINIMA-20260906"
+      ],
+      "checker": "elliptic-curves/cas/verify_r17_60_certificates.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:945ae28619723f0414cf29b478c8daaf25f2a194dac26e4612e70edbe61644aa",
+      "software_lock": [
+        "elliptic-curves/cas/verify_r17_60_certificates.py",
+        "elliptic-curves/cas/audit_r17_60_panel.py",
+        "elliptic-curves/cas/analyze_r17_60_panel.py",
+        "elliptic-curves/cas/memory_rank_certificate.py",
+        "artifacts/generated-results/elliptic-curves/r17_60_panel_protocol_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_60_panel_roster_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_60_panel_analysis_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

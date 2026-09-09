@@ -19,7 +19,7 @@
   "icarm_ids": [],
   "id": "r17-08234-fresh-002",
   "known_bad_primes": [],
-  "local_search_rank_lower_bound": 18,
+  "local_search_rank_lower_bound": 22,
   "log_abs_discriminant": null,
   "log_conductor": null,
   "model_status": "SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED",
@@ -99,13 +99,29 @@
     [
       "-487043063470912415625092188162397122452/695957161",
       "-59698817998921654452842849023452342507610986325456096009920/18360045864341"
+    ],
+    [
+      "381591830214471761495857461300225868/130321",
+      "166776164295916308777958247561094024283461364183755200/47045881"
+    ],
+    [
+      "81927633647875176519248759965696637467859052/65469346063969",
+      "270696880090122784135261583495021534676670845114724918618074048000/529732970908891201297"
+    ],
+    [
+      "15210154049674236492161085366154564430028/8014009441",
+      "702373111598033967954487857400890529494472488475615691534400/717422139167761"
+    ],
+    [
+      "955082591038197624378578420673",
+      "1043176181339653910967449449805397978698021655"
     ]
   ],
-  "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json",
+  "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",
-  "rank_lower_bound": 18,
+  "rank_lower_bound": 22,
   "rank_provenance": "standalone_exact_finite_group_certificate",
-  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json",
-  "source_sha256": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e",
-  "status_claim": "EC-SECOND-FRESH6-FIRST-M18-20260909"
+  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json",
+  "source_sha256": "c656d6624f77d143d715780fe40a4abba762a293358dc8e9c0b6f4a12d72c8f4",
+  "status_claim": "EC-SECOND-FRESH6-08234-M22-20260909"
 }

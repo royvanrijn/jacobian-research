@@ -19,7 +19,7 @@
   "icarm_ids": [],
   "id": "r17-07ca9-fresh-002",
   "known_bad_primes": [],
-  "local_search_rank_lower_bound": 18,
+  "local_search_rank_lower_bound": 20,
   "log_abs_discriminant": null,
   "log_conductor": null,
   "model_status": "SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED",
@@ -99,13 +99,21 @@
     [
       "1119196447894013299794644556",
       "-40629376225898278716796820854313170450752"
+    ],
+    [
+      "5848320368748898378522146747801/3136",
+      "6067564138241548018753517340967870888795911747/175616"
+    ],
+    [
+      "10815881072316366062324165844117964/1505529",
+      "1054676486241755200476202946044904729261525477003264/1847284083"
     ]
   ],
-  "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json",
+  "rank_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",
-  "rank_lower_bound": 18,
+  "rank_lower_bound": 20,
   "rank_provenance": "standalone_exact_finite_group_certificate",
-  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json",
-  "source_sha256": "78f5dd490619d40909cc237b3ca95763621f2a642e92cee7488bdc15a591150e",
-  "status_claim": "EC-SECOND-FRESH6-FIRST-M18-20260909"
+  "rank_source_certificate": "artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json",
+  "source_sha256": "cd84f5864f769aa4bbcefcb765cf19489e5a9a03d77122970cfc6c306a50313c",
+  "status_claim": "EC-SECOND-FRESH6-074D9-07CA9-M20-20260909"
 }

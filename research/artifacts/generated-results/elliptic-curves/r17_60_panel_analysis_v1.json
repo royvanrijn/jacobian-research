@@ -1,0 +1,3090 @@
+{
+  "analysis_sources": {
+    "elliptic-curves/cas/analyze_r17_60_panel.py": "36b2487cb462a8fe83b83ef6eb30644573f29ceec49d5e2308269f2420cd06b9",
+    "elliptic-curves/cas/audit_r17_60_panel.py": "c85a09383fd82edfe90bfe9322a836f0cf9c03a78284a283eb2ec96f044f8de3"
+  },
+  "bindings": {
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-high-01/result.json": "aa17f6f72c031edefe3b3024bfc116995a201d684b758e966ea0c5c21148f76b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-high-02/result.json": "878bcdd78d75fc9964ea4b7b686b6b193bb4230041353a0cdf24cab5e86ca0a4",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-high-03/result.json": "04478c6fb77c1cba76baf8a3e70144384f24ee056c7354a0afd0bf957adcb224",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-high-04/result.json": "105f4c3f8ae1a547d3676445ff2cf9b8c8f4a479db6c7610ba75ab1c5a67ee30",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-high-05/result.json": "3e217c380c35ed6aa3479b7c44bb522902713e9417c64d270ad639d65fdc0c71",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-low-01/result.json": "e92963960ca72d229115d0b1e624c59cff176c6ef1b87a868b0a5661bff3891b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-low-02/result.json": "cf76b320d7b8c6603e5a9a1c664937b554648a1f41e652546cc83cbfaa7a85c2",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-low-03/result.json": "6963a07d1c58126b4bead5b5a6dbce92afa83576e13ddffa0332e4652c89b615",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-low-04/result.json": "0bdf5a0bb100095d2ade1fc44a760abb288e22dee8ce209970b1fbd0f6f03874",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/074d9-low-05/result.json": "1a061d6d81b5e026afda90133ee28f34255530af3ad698c16cc053c1b1dc1269",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-high-01/result.json": "22837e5a710c17bbef3df4c6dd3938107bb4c6998d3bb5762661ad627e347a8e",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-high-02/result.json": "d788e178fa94abbcb48d069f307aa3307c7c47646086fc5d4b5c96b088473f9b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-high-03/result.json": "f6005c773f9a476fe95760cf086e1f8e1fc0f384d614e7a1dc15c040313482e2",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-high-04/result.json": "1695ea08f145612c5f638d0088bbae184a04627887b34f84c3492bd3384a5fe3",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-high-05/result.json": "3e351f91b40f341da157ca347c80767479baf49032fd65d04b8287fc59066e9f",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-low-01/result.json": "2d375e9989bba744157d0ae8b0ffd27d10dc88cd0a44f5345eaa4c361c4147b1",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-low-02/result.json": "1ca918669b6e7be6e7814e671cf3e7a98c839d8d3b1d144088bd23c32ef5370b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-low-03/result.json": "772e313023924ba702f1bdf1a394387a6c55154d10059e430502218333b3d146",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-low-04/result.json": "0ce25b210dbe665f92f237d629c74d366da1de25cbd48fde9c203af17dcf50ec",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/07ca9-low-05/result.json": "d7c3bcc90d6eb75aeb732142cd7bcc25b58700a2079f302ac314c3d5cd8f94f7",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-high-01/result.json": "8d588634a934191035f4e619497a68622a600c3c1e9026fc3945401346288bfa",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-high-02/result.json": "c8d7f2ab702cab071c766b327756d6477c4b05bcbc7f01de81a9b7ea7da0dc37",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-high-03/result.json": "d36667995652d5cc60eeb1701db2dcd594b7505dc4c8004b5215da426b0582b1",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-high-04/result.json": "3cad08b1fa3177f7ef59de5ee5552c29a9e9e1b74546eb4d906720e04113f84c",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-high-05/result.json": "7a7f44c3c8854ac0215392c68d1cc99426c201f8b9f6c5e6b182c4c6fe1e5dc5",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-low-01/result.json": "a88a8193ce0adda1b98506bc69bfdb9effca73f657e725e0ce4b4d4bd9cc4d9a",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-low-02/result.json": "240e7d3f430f5b82b933c9abfd1aacfba736960f967fdbbf968043984326a22a",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-low-03/result.json": "0a0995a12c39b515686118357f75a65099786a37ab333413c36467ef1612fd35",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-low-04/result.json": "ee18f19890f4d769e0a33278614830a04028d9f60ad569b9c3b78a00a6b6ac1b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08234-low-05/result.json": "7579e2231e5f91bed0ba746cde16890fc44dc2fe1e8d549d1df8897933da5353",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-high-01/result.json": "baad78c81ff04f1f1bfb7c56f0f873dfc0f2356bedc644753de58662c970728a",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-high-02/result.json": "d457bb10b04ef1ff489a8267aedeb56e29462a02788a04fe77e6c7534e620e37",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-high-03/result.json": "55ab3a79744eaec81ed64fcf3a98ae2aa943068660c8e0621ddb485b21e19131",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-high-04/result.json": "7b05787e4ddd8604214d061537d33ec773c1bf6d2dfab75ec6eaf083b0a549f2",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-high-05/result.json": "7cb6551d26d8ff16c70ff772e9b3bfffbf49c8a2830d8c42ab396a785d7b9013",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-low-01/result.json": "b42dabe92da666c58a874178a45b12fa78e735dfc4e6a6d8a02c9d2e7024205f",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-low-02/result.json": "4f9ec941ac18540eadc95ee4a28a6f1ec4677da7f8e06607f6c207f336e53c41",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-low-03/result.json": "8ceb7ee86e03a2c4d26c6d719a1e136f88e0db3d26b3398aee614c59baf9c69f",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-low-04/result.json": "7bbda86722524d08e7b18e6e2de538e0463428e34c31831bf897d35d6dcdfaba",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/08f72-low-05/result.json": "8084ab7a18b3540ca4f7df2f50ca42d75cad8d3ce92fa5e3fbbfe2b1279fe6dc",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-high-01/result.json": "143fc37c5613534b3abf1de0ff7ec8e3845c19cace945ce038b0dd274337ce53",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-high-02/result.json": "bfd5bfb5e0ab76ef9e9f27fc801e448c0ab926292d029293b783bde4b05883e6",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-high-03/result.json": "85ee8da4ce5218d837b8e6ae480d1e786f6f5ac632fd38279dc61a9cd6437c1a",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-high-04/result.json": "b69b47b928bd6adc250359975f1e7e63d71836ca7eed2925045155334cb0df0c",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-high-05/result.json": "e4aa8e87de3839d3b85713fb3156db642f6a59a070da5961f4174978e18f2f46",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-low-01/result.json": "f1b43152b0c890060d3dd283d56cb529e6fdbb44deb55ddaf6df68568f53d973",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-low-02/result.json": "a44e52558b741f5988b3cb640fe482f35836c511e8caf92987a7904b853dfc4a",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-low-03/result.json": "4f56a6efe428e6e3cd41703877b044887860fa0d2d48e63ecb31fabab6c6d6d1",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-low-04/result.json": "6837dbb7af065c3911d685e29fc2825f7d16427f944d0a20366a26aa47944e87",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/103b2-low-05/result.json": "949edd929eb6e233efebb0aed4b50baae92c755d201a48113cc48ab75920998c",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-high-01/result.json": "a685459a844bf4f0d64683b6bf3bd405347ea89d128890f89bc6ac33cc026b24",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-high-02/result.json": "5ef799e0eafc2a9930d59ab9e0ef408b52bbcc0e299043c189b072d91083bb7c",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-high-03/result.json": "587665ca2e8c307dc98cd53c57a3548ce1d194db76d52f42bb3e1988f68984a7",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-high-04/result.json": "79717a58dc580a7180b29ada6933bc409ef91437ca217ecbca2b6531114e15ac",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-high-05/result.json": "493c5e8e0f2861bb0187cb708bf23d81c8ae5bcf93291173fb910c9b243e4f2b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-low-01/result.json": "df926444e284035c649e854e317b1a7372e03559dff51552a7e19467f5cca426",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-low-02/result.json": "2dc5ba21c7532e44c8a1fe48275fa0eee8eaf96b7522dd4db13fea2f97678a30",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-low-03/result.json": "f70c378b721bd5d4469394ea8e384e45fa0a465137ca027f9e9575456a39449b",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-low-04/result.json": "6cae321a299a63aff4d887bb9600c55439c226812394667f64823acc5887290e",
+    "artifacts/local/elliptic-curves/r17-60-panel-v1/cases/11952-low-05/result.json": "2e7e51d95c4cf0ae43cbcdc69d9d4812f4161ffd80b9766ec99ea92eaedefabd"
+  },
+  "cases": [
+    {
+      "calls_per_added_direction": "115/3",
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 15,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 46,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 100,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "074d9-low-01",
+      "last_complement_gain_call": 100,
+      "map_timeouts": 0,
+      "parameter": "569/530",
+      "point_timeouts": 0,
+      "rank_lower_bound": 20,
+      "seed_calls": 15,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/5",
+      "calls_since_last_complement_gain": 95,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 5,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "07ca9-low-01",
+      "last_complement_gain_call": 5,
+      "map_timeouts": 0,
+      "parameter": "521/172",
+      "point_timeouts": 0,
+      "rank_lower_bound": 22,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08234",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08234-low-01",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-68/245",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "103/4",
+      "calls_since_last_complement_gain": 65,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 3,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 9,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 26,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 35,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "08f72-low-01",
+      "last_complement_gain_call": 35,
+      "map_timeouts": 0,
+      "parameter": "422/743",
+      "point_timeouts": 0,
+      "rank_lower_bound": 21,
+      "seed_calls": 3,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/6",
+      "calls_since_last_complement_gain": 97,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "103b2",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 3,
+          "phase": "complement-cloud"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "103b2-low-01",
+      "last_complement_gain_call": 3,
+      "map_timeouts": 0,
+      "parameter": "-16/689",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/5",
+      "calls_since_last_complement_gain": 100,
+      "complement_added_directions": 0,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "seed-cloud"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "11952-low-01",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "38/31",
+      "point_timeouts": 0,
+      "rank_lower_bound": 22,
+      "seed_calls": 1,
+      "seed_cloud_rank": 22,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "124/3",
+      "calls_since_last_complement_gain": 4,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 24,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 43,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 96,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "074d9-high-01",
+      "last_complement_gain_call": 96,
+      "map_timeouts": 0,
+      "parameter": "-3921/797",
+      "point_timeouts": 0,
+      "rank_lower_bound": 20,
+      "seed_calls": 24,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/3",
+      "calls_since_last_complement_gain": 26,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 5,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 74,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "07ca9-high-01",
+      "last_complement_gain_call": 74,
+      "map_timeouts": 0,
+      "parameter": "1032/3619",
+      "point_timeouts": 0,
+      "rank_lower_bound": 20,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "133",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 0,
+      "complement_calls": 96,
+      "family": "08234",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 37,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08234-high-01",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-3553/1680",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 37,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "103/3",
+      "calls_since_last_complement_gain": 56,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 3,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 7,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 44,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "08f72-high-01",
+      "last_complement_gain_call": 44,
+      "map_timeouts": 0,
+      "parameter": "546/3683",
+      "point_timeouts": 0,
+      "rank_lower_bound": 20,
+      "seed_calls": 3,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "103b2",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "103b2-high-01",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-2352/2999",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "81",
+      "calls_since_last_complement_gain": 19,
+      "complement_added_directions": 1,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 62,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 81,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "11952-high-01",
+      "last_complement_gain_call": 81,
+      "map_timeouts": 0,
+      "parameter": "-137/2327",
+      "point_timeouts": 0,
+      "rank_lower_bound": 19,
+      "seed_calls": 62,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/4",
+      "calls_since_last_complement_gain": 69,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 11,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 30,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 31,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "074d9-low-02",
+      "last_complement_gain_call": 31,
+      "map_timeouts": 0,
+      "parameter": "383/943",
+      "point_timeouts": 0,
+      "rank_lower_bound": 21,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "105/4",
+      "calls_since_last_complement_gain": 90,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 5,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 9,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 10,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "07ca9-low-02",
+      "last_complement_gain_call": 10,
+      "map_timeouts": 0,
+      "parameter": "347/570",
+      "point_timeouts": 0,
+      "rank_lower_bound": 21,
+      "seed_calls": 5,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "115",
+      "calls_since_last_complement_gain": 94,
+      "complement_added_directions": 0,
+      "complement_calls": 94,
+      "family": "08234",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 21,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08234-low-02",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "272/965",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 21,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/6",
+      "calls_since_last_complement_gain": 86,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 14,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 14,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 14,
+          "phase": "complement-cloud"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "08f72-low-02",
+      "last_complement_gain_call": 14,
+      "map_timeouts": 0,
+      "parameter": "-861/383",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/10",
+      "calls_since_last_complement_gain": 33,
+      "complement_added_directions": 8,
+      "complement_calls": 100,
+      "family": "103b2",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 9,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 20,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 21,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 21,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 21,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 44,
+          "phase": "complement"
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "call": 44,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 27,
+          "before": 26,
+          "call": 67,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 5,
+      "id": "103b2-low-02",
+      "last_complement_gain_call": 67,
+      "map_timeouts": 0,
+      "parameter": "877/781",
+      "point_timeouts": 0,
+      "rank_lower_bound": 27,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 4,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "11952-low-02",
+      "last_complement_gain_call": 4,
+      "map_timeouts": 0,
+      "parameter": "338/163",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "074d9",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "074d9-high-02",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-4069/849",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/5",
+      "calls_since_last_complement_gain": 61,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 5,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 5,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 12,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 39,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "07ca9-high-02",
+      "last_complement_gain_call": 39,
+      "map_timeouts": 0,
+      "parameter": "2227/3452",
+      "point_timeouts": 0,
+      "rank_lower_bound": 22,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 100,
+      "complement_added_directions": 0,
+      "complement_calls": 100,
+      "family": "08234",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 1,
+          "phase": "seed-cloud"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08234-high-02",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-3248/79",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 24,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08f72",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08f72-high-02",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "2960/3001",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 98,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "103b2",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "103b2-high-02",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-3290/3959",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "26",
+      "calls_since_last_complement_gain": 11,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 4,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 76,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 89,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "11952-high-02",
+      "last_complement_gain_call": 89,
+      "map_timeouts": 0,
+      "parameter": "443/2529",
+      "point_timeouts": 0,
+      "rank_lower_bound": 21,
+      "seed_calls": 4,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/6",
+      "calls_since_last_complement_gain": 93,
+      "complement_added_directions": 5,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 4,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 7,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 5,
+      "id": "074d9-low-03",
+      "last_complement_gain_call": 7,
+      "map_timeouts": 0,
+      "parameter": "-969/320",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 91,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 2,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 9,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "07ca9-low-03",
+      "last_complement_gain_call": 9,
+      "map_timeouts": 0,
+      "parameter": "272/327",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08234",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08234-low-03",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-808/945",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/5",
+      "calls_since_last_complement_gain": 84,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 11,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 16,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "08f72-low-03",
+      "last_complement_gain_call": 16,
+      "map_timeouts": 0,
+      "parameter": "580/397",
+      "point_timeouts": 0,
+      "rank_lower_bound": 22,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/8",
+      "calls_since_last_complement_gain": 74,
+      "complement_added_directions": 6,
+      "complement_calls": 100,
+      "family": "103b2",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 12,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 13,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 13,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 26,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 4,
+      "id": "103b2-low-03",
+      "last_complement_gain_call": 26,
+      "map_timeouts": 0,
+      "parameter": "-550/521",
+      "point_timeouts": 0,
+      "rank_lower_bound": 25,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 92,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 2,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 8,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 4,
+      "id": "11952-low-03",
+      "last_complement_gain_call": 8,
+      "map_timeouts": 0,
+      "parameter": "110/179",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/4",
+      "calls_since_last_complement_gain": 56,
+      "complement_added_directions": 3,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 9,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 34,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 44,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "074d9-high-03",
+      "last_complement_gain_call": 44,
+      "map_timeouts": 0,
+      "parameter": "1565/713",
+      "point_timeouts": 0,
+      "rank_lower_bound": 21,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/3",
+      "calls_since_last_complement_gain": 50,
+      "complement_added_directions": 2,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 50,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "07ca9-high-03",
+      "last_complement_gain_call": 50,
+      "map_timeouts": 0,
+      "parameter": "-3967/2226",
+      "point_timeouts": 0,
+      "rank_lower_bound": 20,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08234",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08234-high-03",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "567/1342",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "103",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 0,
+      "complement_calls": 96,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 7,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08f72-high-03",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "2139/3163",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 7,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "103b2",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "103b2-high-03",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-1873/2620",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "84",
+      "calls_since_last_complement_gain": 69,
+      "complement_added_directions": 0,
+      "complement_calls": 69,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 15,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "11952-high-03",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "3925/2937",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 15,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/9",
+      "calls_since_last_complement_gain": 60,
+      "complement_added_directions": 7,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 6,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 7,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 8,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 16,
+          "phase": "complement"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 19,
+          "phase": "complement"
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "call": 40,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 7,
+      "id": "074d9-low-04",
+      "last_complement_gain_call": 40,
+      "map_timeouts": 0,
+      "parameter": "-1013/476",
+      "point_timeouts": 0,
+      "rank_lower_bound": 26,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/8",
+      "calls_since_last_complement_gain": 89,
+      "complement_added_directions": 5,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 11,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 2,
+      "id": "07ca9-low-04",
+      "last_complement_gain_call": 11,
+      "map_timeouts": 0,
+      "parameter": "49/353",
+      "point_timeouts": 0,
+      "rank_lower_bound": 25,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/6",
+      "calls_since_last_complement_gain": 100,
+      "complement_added_directions": 0,
+      "complement_calls": 100,
+      "family": "08234",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 1,
+          "phase": "seed-cloud"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08234-low-04",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-600",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 1,
+      "seed_cloud_rank": 23,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 81,
+      "complement_added_directions": 5,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 8,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 8,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 8,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 19,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "08f72-low-04",
+      "last_complement_gain_call": 19,
+      "map_timeouts": 0,
+      "parameter": "-240/653",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "111",
+      "calls_since_last_complement_gain": 94,
+      "complement_added_directions": 0,
+      "complement_calls": 94,
+      "family": "103b2",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 17,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "103b2-low-04",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "555/779",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 17,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/9",
+      "calls_since_last_complement_gain": 93,
+      "complement_added_directions": 6,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 4,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 7,
+          "phase": "complement"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 7,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "call": 7,
+          "phase": "complement-cloud"
+        }
+      ],
+      "gaining_complement_calls": 3,
+      "id": "11952-low-04",
+      "last_complement_gain_call": 7,
+      "map_timeouts": 0,
+      "parameter": "287/324",
+      "point_timeouts": 0,
+      "rank_lower_bound": 26,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "103/2",
+      "calls_since_last_complement_gain": 55,
+      "complement_added_directions": 1,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 3,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 45,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "074d9-high-04",
+      "last_complement_gain_call": 45,
+      "map_timeouts": 0,
+      "parameter": "3889/2225",
+      "point_timeouts": 0,
+      "rank_lower_bound": 19,
+      "seed_calls": 3,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "53/3",
+      "calls_since_last_complement_gain": 50,
+      "complement_added_directions": 5,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 6,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 11,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 18,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 18,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 39,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 50,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 4,
+      "id": "07ca9-high-04",
+      "last_complement_gain_call": 50,
+      "map_timeouts": 0,
+      "parameter": "-2687/3445",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 6,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "109/7",
+      "calls_since_last_complement_gain": 8,
+      "complement_added_directions": 6,
+      "complement_calls": 100,
+      "family": "08234",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 9,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 34,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 37,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 44,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 59,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 92,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 6,
+      "id": "08234-high-04",
+      "last_complement_gain_call": 92,
+      "map_timeouts": 0,
+      "parameter": "2695/232",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 9,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/8",
+      "calls_since_last_complement_gain": 82,
+      "complement_added_directions": 7,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 8,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 8,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 8,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 17,
+          "phase": "complement"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 18,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 4,
+      "id": "08f72-high-04",
+      "last_complement_gain_call": 18,
+      "map_timeouts": 0,
+      "parameter": "-2318/403",
+      "point_timeouts": 0,
+      "rank_lower_bound": 25,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "103b2",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "103b2-high-04",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-2030/2773",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/7",
+      "calls_since_last_complement_gain": 99,
+      "complement_added_directions": 4,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 1,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 1,
+          "phase": "complement-cloud"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "11952-high-04",
+      "last_complement_gain_call": 1,
+      "map_timeouts": 0,
+      "parameter": "-1732/617",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 1,
+      "seed_cloud_rank": 20,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "103/7",
+      "calls_since_last_complement_gain": 79,
+      "complement_added_directions": 6,
+      "complement_calls": 100,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 3,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 10,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 11,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 14,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 21,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 5,
+      "id": "074d9-low-05",
+      "last_complement_gain_call": 21,
+      "map_timeouts": 0,
+      "parameter": "-359/211",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 3,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "56",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 1,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 12,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 4,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "07ca9-low-05",
+      "last_complement_gain_call": 4,
+      "map_timeouts": 0,
+      "parameter": "-841/643",
+      "point_timeouts": 0,
+      "rank_lower_bound": 19,
+      "seed_calls": 12,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08234",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08234-low-05",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "273/422",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "107",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 0,
+      "complement_calls": 96,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 11,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "08f72-low-05",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "727/194",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 11,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "101/9",
+      "calls_since_last_complement_gain": 58,
+      "complement_added_directions": 7,
+      "complement_calls": 100,
+      "family": "103b2",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "seed-cloud"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 4,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 11,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 12,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 13,
+          "phase": "complement"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 13,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 26,
+          "before": 25,
+          "call": 42,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 6,
+      "id": "103b2-low-05",
+      "last_complement_gain_call": 42,
+      "map_timeouts": 0,
+      "parameter": "-621/281",
+      "point_timeouts": 0,
+      "rank_lower_bound": 26,
+      "seed_calls": 1,
+      "seed_cloud_rank": 19,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "15",
+      "calls_since_last_complement_gain": 60,
+      "complement_added_directions": 6,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 5,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 3,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 3,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 14,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 15,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 15,
+          "phase": "complement-cloud"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 40,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 4,
+      "id": "11952-low-05",
+      "last_complement_gain_call": 40,
+      "map_timeouts": 0,
+      "parameter": "807/434",
+      "point_timeouts": 0,
+      "rank_lower_bound": 24,
+      "seed_calls": 5,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "low"
+    },
+    {
+      "calls_per_added_direction": "99",
+      "calls_since_last_complement_gain": 96,
+      "complement_added_directions": 0,
+      "complement_calls": 96,
+      "family": "074d9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 3,
+          "phase": "seed"
+        }
+      ],
+      "gaining_complement_calls": 0,
+      "id": "074d9-high-05",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-3805/141",
+      "point_timeouts": 0,
+      "rank_lower_bound": 18,
+      "seed_calls": 3,
+      "seed_cloud_rank": 18,
+      "stop_reason": "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "101/8",
+      "calls_since_last_complement_gain": 38,
+      "complement_added_directions": 7,
+      "complement_calls": 100,
+      "family": "07ca9",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 1,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 4,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 15,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 21,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 22,
+          "phase": "complement"
+        },
+        {
+          "after": 24,
+          "before": 23,
+          "call": 25,
+          "phase": "complement"
+        },
+        {
+          "after": 25,
+          "before": 24,
+          "call": 62,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 7,
+      "id": "07ca9-high-05",
+      "last_complement_gain_call": 62,
+      "map_timeouts": 0,
+      "parameter": "-3267/2257",
+      "point_timeouts": 0,
+      "rank_lower_bound": 25,
+      "seed_calls": 1,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "08234",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "08234-high-05",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-1983/3790",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "35/2",
+      "calls_since_last_complement_gain": 21,
+      "complement_added_directions": 5,
+      "complement_calls": 100,
+      "family": "08f72",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 5,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 1,
+          "phase": "complement"
+        },
+        {
+          "after": 20,
+          "before": 19,
+          "call": 28,
+          "phase": "complement"
+        },
+        {
+          "after": 21,
+          "before": 20,
+          "call": 29,
+          "phase": "complement"
+        },
+        {
+          "after": 22,
+          "before": 21,
+          "call": 74,
+          "phase": "complement"
+        },
+        {
+          "after": 23,
+          "before": 22,
+          "call": 79,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 5,
+      "id": "08f72-high-05",
+      "last_complement_gain_call": 79,
+      "map_timeouts": 0,
+      "parameter": "1245/2519",
+      "point_timeouts": 0,
+      "rank_lower_bound": 23,
+      "seed_calls": 5,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": null,
+      "calls_since_last_complement_gain": 0,
+      "complement_added_directions": 0,
+      "complement_calls": 0,
+      "family": "103b2",
+      "first_seed": false,
+      "gain_timeline": [],
+      "gaining_complement_calls": 0,
+      "id": "103b2-high-05",
+      "last_complement_gain_call": null,
+      "map_timeouts": 0,
+      "parameter": "-2897/1356",
+      "point_timeouts": 0,
+      "rank_lower_bound": 17,
+      "seed_calls": 86,
+      "seed_cloud_rank": 17,
+      "stop_reason": "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN",
+      "stratum": "high"
+    },
+    {
+      "calls_per_added_direction": "109/2",
+      "calls_since_last_complement_gain": 32,
+      "complement_added_directions": 1,
+      "complement_calls": 100,
+      "family": "11952",
+      "first_seed": true,
+      "gain_timeline": [
+        {
+          "after": 18,
+          "before": 17,
+          "call": 9,
+          "phase": "seed"
+        },
+        {
+          "after": 19,
+          "before": 18,
+          "call": 68,
+          "phase": "complement"
+        }
+      ],
+      "gaining_complement_calls": 1,
+      "id": "11952-high-05",
+      "last_complement_gain_call": 68,
+      "map_timeouts": 0,
+      "parameter": "2028/1289",
+      "point_timeouts": 0,
+      "rank_lower_bound": 19,
+      "seed_calls": 9,
+      "seed_cloud_rank": 18,
+      "stop_reason": "CHART_BUDGET_EXHAUSTED",
+      "stratum": "high"
+    }
+  ],
+  "claim_boundary": "Certified subgroup lower bounds and outcomes of one selected finite panel. Seed incidence is bounded detection, not arithmetic absence. Saved-cloud gains use original call positions. No exact ranks, public novelty, conductor records, general rank distribution, causal height effect, or performance beyond the frozen budget is established.",
+  "groups": {
+    "074d9": {
+      "cases": 10,
+      "complement_added_directions": 29,
+      "complement_calls": 896,
+      "first_call_seeds": 4,
+      "first_seeds": 9,
+      "late_gain_cases": 2,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "209/10",
+      "median_calls_to_seed_conditional": "3",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 2,
+        "21": 2,
+        "23": 1,
+        "24": 1,
+        "26": 1
+      },
+      "seed_calls": 138,
+      "seed_cloud_added_directions": 10,
+      "seeded_without_complement_gain": 1,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 1,
+        "CHART_BUDGET_EXHAUSTED": 8,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 1
+      }
+    },
+    "07ca9": {
+      "cases": 10,
+      "complement_added_directions": 36,
+      "complement_calls": 1000,
+      "first_call_seeds": 7,
+      "first_seeds": 10,
+      "late_gain_cases": 0,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "221/10",
+      "median_calls_to_seed_conditional": "1",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "19": 1,
+        "20": 2,
+        "21": 1,
+        "22": 2,
+        "23": 1,
+        "24": 1,
+        "25": 2
+      },
+      "seed_calls": 30,
+      "seed_cloud_added_directions": 15,
+      "seeded_without_complement_gain": 0,
+      "stop_reasons": {
+        "CHART_BUDGET_EXHAUSTED": 10
+      }
+    },
+    "08234": {
+      "cases": 10,
+      "complement_added_directions": 6,
+      "complement_calls": 490,
+      "first_call_seeds": 2,
+      "first_seeds": 5,
+      "late_gain_cases": 1,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "96/5",
+      "median_calls_to_seed_conditional": "9",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 5,
+        "18": 2,
+        "23": 1,
+        "24": 2
+      },
+      "seed_calls": 499,
+      "seed_cloud_added_directions": 16,
+      "seeded_without_complement_gain": 4,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 5,
+        "CHART_BUDGET_EXHAUSTED": 3,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 2
+      }
+    },
+    "08f72": {
+      "cases": 10,
+      "complement_added_directions": 28,
+      "complement_calls": 892,
+      "first_call_seeds": 4,
+      "first_seeds": 9,
+      "late_gain_cases": 1,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "211/10",
+      "median_calls_to_seed_conditional": "3",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 1,
+        "18": 2,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 2,
+        "24": 1,
+        "25": 1
+      },
+      "seed_calls": 131,
+      "seed_cloud_added_directions": 13,
+      "seeded_without_complement_gain": 2,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 1,
+        "CHART_BUDGET_EXHAUSTED": 7,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 2
+      }
+    },
+    "103b2": {
+      "cases": 10,
+      "complement_added_directions": 25,
+      "complement_calls": 494,
+      "first_call_seeds": 4,
+      "first_seeds": 5,
+      "late_gain_cases": 0,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "102/5",
+      "median_calls_to_seed_conditional": "1",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 5,
+        "18": 1,
+        "23": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1
+      },
+      "seed_calls": 451,
+      "seed_cloud_added_directions": 9,
+      "seeded_without_complement_gain": 1,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 5,
+        "CHART_BUDGET_EXHAUSTED": 4,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 1
+      }
+    },
+    "11952": {
+      "cases": 10,
+      "complement_added_directions": 29,
+      "complement_calls": 969,
+      "first_call_seeds": 5,
+      "first_seeds": 10,
+      "late_gain_cases": 2,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "221/10",
+      "median_calls_to_seed_conditional": "5/2",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "18": 1,
+        "19": 2,
+        "21": 1,
+        "22": 1,
+        "24": 4,
+        "26": 1
+      },
+      "seed_calls": 100,
+      "seed_cloud_added_directions": 22,
+      "seeded_without_complement_gain": 2,
+      "stop_reasons": {
+        "CHART_BUDGET_EXHAUSTED": 9,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 1
+      }
+    },
+    "all": {
+      "cases": 60,
+      "complement_added_directions": 153,
+      "complement_calls": 4741,
+      "first_call_seeds": 26,
+      "first_seeds": 48,
+      "late_gain_cases": 6,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "629/30",
+      "median_calls_to_seed_conditional": "1",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 12,
+        "18": 7,
+        "19": 4,
+        "20": 5,
+        "21": 5,
+        "22": 4,
+        "23": 6,
+        "24": 9,
+        "25": 4,
+        "26": 3,
+        "27": 1
+      },
+      "seed_calls": 1349,
+      "seed_cloud_added_directions": 85,
+      "seeded_without_complement_gain": 10,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 12,
+        "CHART_BUDGET_EXHAUSTED": 41,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 7
+      }
+    },
+    "high": {
+      "cases": 30,
+      "complement_added_directions": 55,
+      "complement_calls": 2057,
+      "first_call_seeds": 8,
+      "first_seeds": 21,
+      "late_gain_cases": 5,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "99/5",
+      "median_calls_to_seed_conditional": "3",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 9,
+        "18": 4,
+        "19": 3,
+        "20": 4,
+        "21": 2,
+        "22": 1,
+        "23": 2,
+        "24": 3,
+        "25": 2
+      },
+      "seed_calls": 981,
+      "seed_cloud_added_directions": 29,
+      "seeded_without_complement_gain": 5,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 9,
+        "CHART_BUDGET_EXHAUSTED": 17,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 4
+      }
+    },
+    "low": {
+      "cases": 30,
+      "complement_added_directions": 98,
+      "complement_calls": 2684,
+      "first_call_seeds": 18,
+      "first_seeds": 27,
+      "late_gain_cases": 1,
+      "map_timeouts": 0,
+      "mean_rank_lower_bound": "332/15",
+      "median_calls_to_seed_conditional": "1",
+      "point_timeouts": 0,
+      "rank_lower_bound_histogram": {
+        "17": 3,
+        "18": 3,
+        "19": 1,
+        "20": 1,
+        "21": 3,
+        "22": 3,
+        "23": 4,
+        "24": 6,
+        "25": 2,
+        "26": 3,
+        "27": 1
+      },
+      "seed_calls": 368,
+      "seed_cloud_added_directions": 56,
+      "seeded_without_complement_gain": 5,
+      "stop_reasons": {
+        "BOUNDED_SEED_ATTEMPT_NO_CERTIFIED_GAIN": 3,
+        "CHART_BUDGET_EXHAUSTED": 24,
+        "FINITE_POLICY_EXHAUSTED_NO_CERTIFIED_GAIN": 3
+      }
+    }
+  },
+  "late_gain_candidates": [
+    "08234-high-04",
+    "08f72-high-05",
+    "11952-high-02",
+    "074d9-low-01",
+    "074d9-high-01",
+    "11952-high-01"
+  ],
+  "pending": [],
+  "point_searches": 0,
+  "protocol_sha256": "edd883ef31ee13a475897a10e1174a495f9e80c9677bc1ab0cbf29038b886379",
+  "ranking": [
+    "103b2-low-02",
+    "074d9-low-04",
+    "103b2-low-05",
+    "11952-low-04",
+    "07ca9-high-05",
+    "103b2-low-03",
+    "08f72-high-04",
+    "07ca9-low-04",
+    "08234-high-04",
+    "074d9-low-05",
+    "11952-low-03",
+    "11952-low-05",
+    "08f72-low-04",
+    "07ca9-low-03",
+    "11952-low-02",
+    "11952-high-04",
+    "08234-high-02",
+    "074d9-low-03",
+    "08f72-high-05",
+    "07ca9-high-04",
+    "08f72-low-02",
+    "103b2-low-01",
+    "08234-low-04",
+    "07ca9-high-02",
+    "07ca9-low-01",
+    "08f72-low-03",
+    "11952-low-01",
+    "074d9-high-03",
+    "074d9-low-02",
+    "08f72-low-01",
+    "11952-high-02",
+    "07ca9-low-02",
+    "07ca9-high-01",
+    "07ca9-high-03",
+    "08f72-high-01",
+    "074d9-low-01",
+    "074d9-high-01",
+    "074d9-high-04",
+    "11952-high-05",
+    "07ca9-low-05",
+    "11952-high-01",
+    "11952-high-03",
+    "074d9-high-05",
+    "08f72-high-03",
+    "08f72-low-05",
+    "103b2-low-04",
+    "08234-low-02",
+    "08234-high-01",
+    "074d9-high-02",
+    "08234-high-03",
+    "08234-high-05",
+    "08234-low-01",
+    "08234-low-03",
+    "08234-low-05",
+    "08f72-high-02",
+    "103b2-high-01",
+    "103b2-high-02",
+    "103b2-high-03",
+    "103b2-high-04",
+    "103b2-high-05"
+  ],
+  "schema": "r17-sixty-panel-analysis.v1",
+  "status": "COMPLETE_INDEPENDENTLY_VERIFIED_PANEL_ANALYSIS",
+  "unresolved": []
+}
