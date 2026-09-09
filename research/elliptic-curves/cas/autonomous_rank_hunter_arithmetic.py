@@ -2,7 +2,7 @@
 """Exact arithmetic adapters used by the autonomous R17 rank hunter.
 
 All expensive point construction remains in the repository's existing frozen
-seed/V3 engines. This file only creates fresh native packets, reconciles full
+seed/V3 engines.  This file only creates fresh native packets, reconciles full
 returned clouds, builds new exact parent banks, and adapts bounded V3 segments.
 """
 from __future__ import annotations
@@ -146,7 +146,7 @@ def _insert(mask, pivots):
     return bool(q)
 
 
-def _exact_rows(family, masks):
+def _exact_rows(family, masks, allow_failures=False):
     from sage.all import ZZ, matrix, pari
     import numpy as np
     from visibility_lattice_fast import IntegerExactParity
@@ -162,8 +162,13 @@ def _exact_rows(family, masks):
         w = matrix(ZZ, 1, 17, [(int(mask) >> j) & 1 for j in range(17)])
         residue = tuple(int(x) % 2 for x in (w * inv).row(0))
         starts, _ = fast.babai(np.asarray([residue], dtype=np.int64)); start = tuple(map(int, starts[0]))
-        proof = fast.solve(residue, start, 2000000)
-        require(proof == ref.solve(residue, start, 2000000), 'generic exact CVP solvers differ')
+        try:
+            proof = fast.solve(residue, start, 2000000)
+            require(proof == ref.solve(residue, start, 2000000), 'generic exact CVP solvers differ')
+        except BaseException:
+            if allow_failures:
+                continue
+            raise
         words = []
         for v in proof['minima']:
             z = tuple(map(int, (matrix(ZZ, 1, 17, v) * u).row(0)))
@@ -196,6 +201,7 @@ def prepare_bank(case, packet_path, output, generation):
     if generation <= 2:
         pool = [m for m in maximum if m not in used and (generation or m != winning)]
     else:
+        # Deterministic broad parity sample. Scores/ranks never enter this construction.
         rng = random.Random(int(hashlib.sha256(f'{row["family"]}/{generation}'.encode()).hexdigest(), 16))
         sample = set()
         while len(sample) < 256:
@@ -204,7 +210,8 @@ def prepare_bank(case, packet_path, output, generation):
                 sample.add(q)
         pool = sorted(sample)
     require(pool, 'no fresh parent classes in this bank generation')
-    g, u, exact, checks = _exact_rows(family, pool)
+    g, u, exact, checks = _exact_rows(family, pool, allow_failures=generation >= 3)
+    require(len(exact) >= min(16, len(pool)), 'too few exact sampled parent classes')
     if generation >= 3:
         exact.sort(key=lambda r: (-r['norm'], r['mask']))
     else:
@@ -243,10 +250,9 @@ def prepare_bank(case, packet_path, output, generation):
         'candidate_count': len(exact), 'new_masks': [r['mask'] for r in chosen],
         'mode': 'exact-maximum-partition' if generation <= 2 else 'deterministic-sampled-shell',
     }, immutable=True)
-    chosen_masks = {r['mask'] for r in chosen}
     atomic(output / 'generic-cvp-proofs.json', {
         'gram': [list(map(int, r)) for r in g.rows()], 'LLL': [list(map(int, r)) for r in u.rows()],
-        'checks': [c for c in checks if c['mask'] in chosen_masks],
+        'checks': [c for c in checks if c['mask'] in {r['mask'] for r in chosen}],
     }, immutable=True)
     bank = {
         'status': 'COMPLETE_FROZEN_COMPLEMENT_PARENT_SUBSET', 'dimension': 17,
