@@ -36,4 +36,4 @@ Proved bad primes (incomplete):
 2, 3, 7, 11, 13, 23, 43, 47, 53, 109, 263
 ```
 
-[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json)
+[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json)

@@ -2,7 +2,7 @@
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
 [expanded inventory](../INVENTORY.md) now index **291 distinct curves**,
-with **184 exact conductors** and **107 unresolved conductors** in the second
+with **195 exact conductors** and **96 unresolved conductors** in the third
 replayed conductor snapshot. Rank entries
 are certified lower bounds, not exact ranks.
 
@@ -37,11 +37,18 @@ any below22 curve with an **exact** conductor at or below the smallest conductor
 reported at that rank or higher in the [pinned ICARM snapshot](../data/icarm_current.json).
 This is a conservative editorial benchmark, not a claim about current world records.
 No such additional exception is certified in this snapshot. Of47 hidden curves,
-nine now have exact conductors above that benchmark and38 remain unresolved;
+sixteen now have exact conductors above that benchmark and31 remain unresolved;
 hiding an unresolved curve is **not** a high-conductor classification.
 They remain in the complete inventory, JSON/CSV and individual
 pages, with points and certificates untouched. Future verified conductor updates
 can automatically bring qualifying curves back into the main table.
+
+Both inventory tables bold the smallest displayed `log N`, naive height,
+Faltings height and `log abs(Δ)` separately within each certified-rank group.
+Ties at the displayed two-decimal precision are all bold; missing values do
+not compete. The main README recomputes minima after its row filter, so its
+below22 highlights can differ from the full inventory. These are within-table
+comparisons, not exact-rank or public-record assertions.
 
 ## Bounded missing-conductor pass
 
@@ -78,6 +85,18 @@ This adds47 exact conductors beyond the seven in the first snapshot, bringing
 the full ledger to184 exact and107 unresolved. Snapshot version2 refers to
 this publication revision, not to results of the V2 continuation worker.
 
+The [third snapshot](../../artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json)
+merges the latest sealed result for each of all161 original cases, including
+the completed33-case continuation and the first three exact results of the
+longer pass (`new-20260906-123`, `new-20260906-142`, `new-20260906-151`).
+It contains65 exact conductors and96 certified partial bounds, all passing
+fresh portable replay with exact model-transport checks where applicable.
+Its SHA-256 is
+`2348fdb738c0a17dce0c76616df16e7ed789fcc45d3e03d4089c209b186510d9`.
+This adds eleven exact conductors to the second snapshot's publication,
+bringing the ledger to195 exact and96 unresolved. It is a fixed cutoff;
+live checkpoints and later completions are not silently included.
+
 ### Preserved V1 stop and V2 continuation
 
 The post-reboot audit found **128 sealed results:54 exact and74 partial**.
@@ -104,14 +123,52 @@ independently replay exactly; corrupted transport metadata is rejected.
 The zero-search Sage preflight passed all33 actual continuation models before
 launch. Four detached workers retain the same90-second build,120-second replay
 and2GiB per-process caps. Completed V1 cases are not repeated. The published
-ledger includes all128 retained V1 results through the second immutable
-snapshot. Results from the33-case continuation require a later snapshot.
+ledger includes all128 retained V1 results and the completed33-case
+continuation through the third immutable snapshot.
 
 ```sh
 python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
 ```
 
 ## Reproduction
+
+### Longer bounded factorization pass
+
+V1 plus its rational-model V2 continuation completed all161 cases, with62
+exact conductors and99 partial results, each independently replayed. The full
+available inventory at that point therefore had192 exact conductors. The
+third publication snapshot adds three more from the longer pass; live results
+are not silently indexed.
+
+At the user's request, the separate
+[long V3 runner](../cas/run_inventory_conductor_long_v3.py) freezes all99
+unresolved cases with **1,800 seconds per build**, up from90, and120 seconds
+per independent replay. It retains four workers and2GiB per process. The
+maximum allotted worker time corresponds to roughly13.3 hours at four-way
+concurrency, plus launch/replay overhead; early completions can shorten it.
+This is one bounded pass, not a promise to factor every remaining integer.
+
+All saved certified primes and prior factor hints are reused. Exact pairwise
+GCDs of the99 residual cofactors provide proper factor splits for two cases;
+these splits are hints, not primality certificates. Scheduling is frozen by
+increasing cofactor digit count, then decreasing certified rank and curve ID.
+The local Tate/PARI algorithms, primality proof requirements and exact replay
+remain unchanged. Ninety of the99 residual cofactors have78–149 digits; the
+largest two have13,569 and22,693 digits. Extra runtime alone need not settle
+those large cases, and nonminimal-model factors can contribute to their size.
+
+Shared-split unit tests and the rational-model arithmetic regressions pass.
+The foreground Sage preflight verifies all99 transported models and checks
+that every saved prime and residual cofactor is retained. The pass then runs
+detached, preserving all V1/V2 sources, inputs, certificates and logs.
+Timeouts keep certified partial bounds and `UNKNOWN`; engineering or replay
+failures stop dispatch for review. No point search or rank change is involved.
+
+```sh
+python3 research/elliptic-curves/cas/run_inventory_conductor_long_v3.py status
+```
+
+### Published snapshot replay
 
 The [refresh manifest](../data/research_curve_refresh.json) selects proved
 `MATH_STATUS.json` entries and pins saved result packets by SHA-256. The
@@ -124,9 +181,8 @@ including matching independent replay evidence for exact results.
 ```sh
 python3 research/elliptic-curves/cas/render_main_readme_curves.py
 python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
-~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_results.py check \
-  --snapshot research/artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json
-python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
+~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_merged.py check
+python3 research/elliptic-curves/cas/run_inventory_conductor_long_v3.py status
 ```
 
 These commands synchronize the README, expanded inventory, JSON/CSV downloads,

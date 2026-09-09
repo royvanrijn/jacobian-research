@@ -54181,6 +54181,35 @@
       "priority": "derived"
     },
     {
+      "id": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT3-20260909",
+      "kind": "example",
+      "state": "proved",
+      "title": "Third conductor snapshot merges161 verified cases with65 exact conductors",
+      "scope": "An immutable merged snapshot selects the latest independently replayed sealed result for each of the161 original missing-conductor cases:128 V1 results,33 rational-model continuation results, with three partial endpoints replaced by exact results from the longer pass. Fresh portable replay checks all161 selected certificates, including exact rational model transports where applicable, prime certificates and agreement of Sage generic Tate with PARI elllocalred. Sixty-five conductors are exact and96 remain UNKNOWN with certified partial bounds. Including130 pre-existing exact conductors, the291-curve inventory has195 exact and96 unresolved. This is a publication cutoff, not completion of the longer pass; no exact rank, conductor record or public novelty is claimed.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md",
+      "dependencies": ["EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909"],
+      "checker": "elliptic-curves/cas/index_inventory_conductor_merged.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:30070df12dea6eb2ca2c64a258d23d424b8dc379da039a7e62b35ce04e8eb6d9",
+      "software_lock": [
+        "elliptic-curves/cas/index_inventory_conductor_merged.py",
+        "elliptic-curves/cas/index_inventory_conductor_results.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/inventory_conductor_worker_v2.py",
+        "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909",
       "kind": "example",
       "state": "proved",

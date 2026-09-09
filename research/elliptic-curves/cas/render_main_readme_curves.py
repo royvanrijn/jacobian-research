@@ -7,6 +7,7 @@ import re
 import subprocess
 import sys
 from refresh_icarm_local_database import load_catalogue
+from curve_table_highlights import highlight_rank_minima
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = next(p for p in ROOT.parents if (p/'.git').exists()) if not (ROOT/'.git').exists() else ROOT
@@ -73,6 +74,9 @@ def run(check=False):
     database = json.loads((inventory.parent/'data/research_curves/database.json').read_text())
     rows = database['curves']
     section, kept = select_section(section, rows, conductor_benchmarks(load_catalogue()['curves']))
+    # Recompute after curation: minima in the displayed subset can differ from
+    # the complete inventory. The helper removes previous numeric bold first.
+    section = highlight_rank_minima(section)
     pending = sum(r['id'] not in kept and r['conductor_status'] != 'EXACT' for r in rows)
     explanation = (f'**Main-table selection: {len(kept)} of {len(rows)} curves.** '
         'Keep every certified lower bound ≥22, documented structural exceptions, '

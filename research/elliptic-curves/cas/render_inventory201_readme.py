@@ -12,6 +12,7 @@ import certify_compact_r17_candidates as cert
 from local_conductor_database import load_conductor_inventory
 from research_curve_supplement import MANIFEST, load_supplement, curve_page
 from research_curve_refresh import MANIFEST as REFRESH_MANIFEST, apply_refresh
+from curve_table_highlights import LEGEND, highlight_rank_minima
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = next(p for p in ROOT.parents if (p/'.git').exists()) if not (ROOT/'.git').exists() else ROOT
@@ -152,7 +153,7 @@ def run(check=False):
         'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
         '', f'The original 201 curves have certified minimal models. The {len(rows)-201} additional [certified seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
         '', '[Download JSON](elliptic-curves/data/research_curves/database.json) · [Download CSV](elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)',
-        '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
+        '', LEGEND, '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
         if r['icarm_ids']:
             name = ', '.join(icarm_label(i) for i in r['icarm_ids'])
@@ -164,7 +165,7 @@ def run(check=False):
                   for k in ('naive_height', 'faltings_height', 'log_abs_discriminant')]
         table.append(f'| {name} | `{ainvs}` | ≥ {r["rank_lower_bound"]} | {ln} | '+ ' | '.join(values)+' |')
     table += ['',END]
-    section = '\n'.join(table)
+    section = highlight_rank_minima('\n'.join(table))
     inventory = ROOT/'elliptic-curves/INVENTORY.md'
     inventory_section = section.replace('](elliptic-curves/','](')
     inventory_old = inventory.read_text() if inventory.exists() else '# Elliptic-curve inventory\n'

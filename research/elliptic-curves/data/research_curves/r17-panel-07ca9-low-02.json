@@ -20,7 +20,7 @@
   ],
   "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
   "conductor": "174660220926393824612779135996666348018222371155426149967668972069127710935224213644312302425015731339395005970",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json",
   "conductor_divisor": "174660220926393824612779135996666348018222371155426149967668972069127710935224213644312302425015731339395005970",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "174660220926393824612779135996666348018222371155426149967668972069127710935224213644312302425015731339395005970",
@@ -134,6 +134,9 @@
       "-218263319660679653716529447375367/244734736",
       "2221275957911597457739222587813299981318952014835/3828630209984"
     ]
+  ],
+  "prior_conductor_certificates": [
+    "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json"
   ],
   "rank_certificate": "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
   "rank_certificate_model": "Exactly the displayed source model; no minimal-model transport asserted.",
