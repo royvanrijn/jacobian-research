@@ -60,6 +60,46 @@ def hash_order(row, salt='x1092-elkies-controls-v1'):
     return sha256((salt+'/'+str(row['id'])).encode()).hexdigest(), str(row['id'])
 
 
+def effective_control_count(eligible, requested):
+    """Preserve at least one ranked fibre whenever any eligible fibre exists."""
+    require(eligible >= 0 and requested >= 0, 'negative control population')
+    return min(requested, max(0, eligible-1))
+
+
+def carrier_quality_summary(height_bits, primary_cap):
+    """Outcome-free carrier quality from induced parameter heights only."""
+    require(primary_cap > 0, 'nonpositive carrier height cap')
+    values=sorted(int(v) for v in height_bits)
+    require(all(v >= 0 for v in values), 'negative parameter height')
+    extended=4*primary_cap
+    if values:
+        median=values[len(values)//2]
+        worst=values[-1]
+    else:
+        median=worst=10**18
+    return {
+        'sampled':len(values),
+        'within_primary':sum(v <= primary_cap for v in values),
+        'within_extended':sum(v <= extended for v in values),
+        'primary_cap':primary_cap,
+        'extended_cap':extended,
+        'median_bits':median,
+        'max_bits':worst,
+    }
+
+
+def carrier_quality_key(summary, same_cover=False):
+    """Prefer usable yield first; same-cover is only a tie-break, never a blocker."""
+    return (
+        int(summary['within_primary']),
+        int(summary['within_extended']),
+        int(bool(same_cover)),
+        -int(summary['median_bits']),
+        -int(summary['max_bits']),
+        int(summary['sampled']),
+    )
+
+
 def split_controls(rows, count):
     require(0 <= count < len(rows), 'controls must leave a nonempty ranked arm')
     require(len({r['id'] for r in rows}) == len(rows), 'duplicate candidate IDs')
