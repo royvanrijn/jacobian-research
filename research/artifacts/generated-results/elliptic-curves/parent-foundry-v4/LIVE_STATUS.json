@@ -1,6 +1,21 @@
 {
   "best_fibres": [
     {
+      "batches": 1,
+      "calls": 64,
+      "empty_batches": 0,
+      "family": "a1-fibration-05",
+      "generic_rank": 16,
+      "id": "e1384d0753a32ce37b1db21f",
+      "last_gain": 4,
+      "packet": "parent-jobs/job-0000235/packet.json",
+      "packet_sha256": "e64beb8dcd2a5bc29b9a77b8cd64e7ee3cb141f38c6fe610731ed0511e96c88e",
+      "panel_index": 2,
+      "parameter": "-8/5",
+      "rank": 20,
+      "stale_calls": 63
+    },
+    {
       "batches": 2,
       "calls": 160,
       "empty_batches": 0,
@@ -34,31 +49,46 @@
       "batches": 1,
       "calls": 64,
       "empty_batches": 0,
-      "family": "x948-11952-a1-00488",
+      "family": "x948-11952-a1-00414",
       "generic_rank": 16,
-      "id": "3fd66214355d3a85b132c86e",
+      "id": "4fec1fcb42881de9dd79997e",
       "last_gain": 3,
-      "packet": "parent-jobs/job-0000217/packet.json",
-      "packet_sha256": "c5bd48d2b6addb21e65b81beea09dcc2094a84bdf4b733a62e833ef310e492b1",
-      "panel_index": 17,
-      "parameter": "13/9",
+      "packet": "parent-jobs/job-0000229/packet.json",
+      "packet_sha256": "97ae5fab3daa3955cedfcb3a6b6e789faf60fdc7fd9034b55dba75d61a9fca4d",
+      "panel_index": 18,
+      "parameter": "-5/14",
       "rank": 19,
-      "stale_calls": 61
+      "stale_calls": 48
     },
     {
-      "batches": 1,
-      "calls": 64,
+      "batches": 2,
+      "calls": 160,
       "empty_batches": 0,
       "family": "x1092-det1092-a1-121385",
       "generic_rank": 16,
       "id": "133d5d92a1f23e830ae5815d",
-      "last_gain": 3,
-      "packet": "parent-jobs/job-0000221/packet.json",
-      "packet_sha256": "ad1d5a5ca6a066889bc25f34205dda3b9668a497421ca7402c346e912cf2606b",
+      "last_gain": 0,
+      "packet": "parent-jobs/job-0000224/packet.json",
+      "packet_sha256": "370c2437ef9ba47267ef3e7cc9a982717b352d39cef3cb695eadca147ab8a4e1",
       "panel_index": 18,
       "parameter": "11/12",
       "rank": 19,
-      "stale_calls": 63
+      "stale_calls": 159
+    },
+    {
+      "batches": 2,
+      "calls": 160,
+      "empty_batches": 0,
+      "family": "x948-11952-a1-00414",
+      "generic_rank": 16,
+      "id": "2013279f02917998d07b68bb",
+      "last_gain": 0,
+      "packet": "parent-jobs/job-0000204/packet.json",
+      "packet_sha256": "f31aa5c447ca2e7476dec6115e9e972e444f413f076adc0f37b298b4a31555cf",
+      "panel_index": 16,
+      "parameter": "13/9",
+      "rank": 19,
+      "stale_calls": 143
     },
     {
       "batches": 2,
@@ -109,6 +139,21 @@
       "batches": 2,
       "calls": 160,
       "empty_batches": 0,
+      "family": "x948-11952-a1-00488",
+      "generic_rank": 16,
+      "id": "3fd66214355d3a85b132c86e",
+      "last_gain": 0,
+      "packet": "parent-jobs/job-0000223/packet.json",
+      "packet_sha256": "30f90883880ddd31e228d336ed01d3e95cf4799c0a717f8827a7437922fe8772",
+      "panel_index": 17,
+      "parameter": "13/9",
+      "rank": 19,
+      "stale_calls": 157
+    },
+    {
+      "batches": 2,
+      "calls": 160,
+      "empty_batches": 0,
       "family": "074d9",
       "generic_rank": 17,
       "id": "51a1902895a0640ec37b94ce",
@@ -134,59 +179,14 @@
       "parameter": "-8/3",
       "rank": 19,
       "stale_calls": 159
-    },
-    {
-      "batches": 2,
-      "calls": 160,
-      "empty_batches": 0,
-      "family": "x948-11952-a1-01070",
-      "generic_rank": 16,
-      "id": "7bcbe1505d61a9de050bd544",
-      "last_gain": 0,
-      "packet": "parent-jobs/job-0000119/packet.json",
-      "packet_sha256": "dcd4a0827c31708c57452389c6ab3e8f9355a51f7f369c5c88bd6079c5681069",
-      "panel_index": 6,
-      "parameter": "-6/5",
-      "rank": 19,
-      "stale_calls": 159
-    },
-    {
-      "batches": 2,
-      "calls": 160,
-      "empty_batches": 0,
-      "family": "x948-11952-a1-00414",
-      "generic_rank": 16,
-      "id": "8464048f9201c759d1571718",
-      "last_gain": 0,
-      "packet": "parent-jobs/job-0000060/packet.json",
-      "packet_sha256": "5c8606b7fc57b55ceed6d120b94255ddf903790694151b2c760bf8907551fe8c",
-      "panel_index": 5,
-      "parameter": "-7/5",
-      "rank": 19,
-      "stale_calls": 159
-    },
-    {
-      "batches": 2,
-      "calls": 160,
-      "empty_batches": 0,
-      "family": "x1092-det1092-a1-14089",
-      "generic_rank": 16,
-      "id": "8807cbd62d9f5ec7b4a57d6c",
-      "last_gain": 0,
-      "packet": "parent-jobs/job-0000139/packet.json",
-      "packet_sha256": "0e15735ded08a5e61123ad7ab7ceb63676ef7aea022c2c451e58e7aad4f79835",
-      "panel_index": 3,
-      "parameter": "7/8",
-      "rank": 19,
-      "stale_calls": 159
     }
   ],
   "boundary": "Tail rates measure certified detection under fixed first-panel exposure. Unequal follow-up is separate. No exact ranks or world-record claims.",
   "construction_proposals_attempted": 6,
   "job_outcomes": {
     "ACCEPTED_NEW_FIBRATION": 6,
-    "PASS_CERTIFIED_PARENT_EVALUATION": 190,
-    "UNRESOLVED_GENERIC_SPECIALIZATION": 27
+    "PASS_CERTIFIED_PARENT_EVALUATION": 202,
+    "UNRESOLVED_GENERIC_SPECIALIZATION": 28
   },
   "new_fibrations": 6,
   "parents": [
@@ -452,28 +452,28 @@
       "target_slots": 12
     },
     {
-      "all_panel_slots": 2,
+      "all_panel_slots": 3,
       "baseline": true,
       "family": "a1-fibration-04",
       "first_panel": {
         "3": {
           "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "1/2"
+          "fraction": "0/3",
+          "incomplete_slot_upper_fraction": "2/3"
         },
         "5": {
           "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "1/2"
+          "fraction": "0/3",
+          "incomplete_slot_upper_fraction": "2/3"
         },
         "8": {
           "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "1/2"
+          "fraction": "0/3",
+          "incomplete_slot_upper_fraction": "2/3"
         },
         "certified_slots": 1,
-        "incomplete_exposures": 1,
-        "slots": 2
+        "incomplete_exposures": 2,
+        "slots": 3
       },
       "generic_rank": 16,
       "promotions": 0,
@@ -481,28 +481,28 @@
       "target_slots": 12
     },
     {
-      "all_panel_slots": 2,
+      "all_panel_slots": 3,
       "baseline": true,
       "family": "a1-fibration-05",
       "first_panel": {
         "3": {
-          "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "0/2"
+          "certified_hits": 1,
+          "fraction": "1/3",
+          "incomplete_slot_upper_fraction": "1/3"
         },
         "5": {
           "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "0/2"
+          "fraction": "0/3",
+          "incomplete_slot_upper_fraction": "0/3"
         },
         "8": {
           "certified_hits": 0,
-          "fraction": "0/2",
-          "incomplete_slot_upper_fraction": "0/2"
+          "fraction": "0/3",
+          "incomplete_slot_upper_fraction": "0/3"
         },
-        "certified_slots": 2,
+        "certified_slots": 3,
         "incomplete_exposures": 0,
-        "slots": 2
+        "slots": 3
       },
       "generic_rank": 16,
       "promotions": 0,
@@ -539,7 +539,7 @@
       "target_slots": 12
     },
     {
-      "all_panel_slots": 19,
+      "all_panel_slots": 20,
       "baseline": false,
       "family": "x1092-det1092-a1-121385",
       "first_panel": {
@@ -568,7 +568,7 @@
       "target_slots": 24
     },
     {
-      "all_panel_slots": 19,
+      "all_panel_slots": 20,
       "baseline": false,
       "family": "x1092-det1092-a1-14089",
       "first_panel": {
@@ -597,7 +597,7 @@
       "target_slots": 24
     },
     {
-      "all_panel_slots": 18,
+      "all_panel_slots": 19,
       "baseline": false,
       "family": "x1092-det1092-a1-27978",
       "first_panel": {
@@ -626,7 +626,7 @@
       "target_slots": 24
     },
     {
-      "all_panel_slots": 18,
+      "all_panel_slots": 19,
       "baseline": false,
       "family": "x948-11952-a1-00414",
       "first_panel": {
@@ -655,7 +655,7 @@
       "target_slots": 24
     },
     {
-      "all_panel_slots": 18,
+      "all_panel_slots": 19,
       "baseline": false,
       "family": "x948-11952-a1-00488",
       "first_panel": {
@@ -684,7 +684,7 @@
       "target_slots": 24
     },
     {
-      "all_panel_slots": 18,
+      "all_panel_slots": 19,
       "baseline": false,
       "family": "x948-11952-a1-01070",
       "first_panel": {
@@ -714,12 +714,12 @@
     }
   ],
   "running_jobs": [],
-  "runs": 5,
+  "runs": 6,
   "seconds": {
     "construct": 10.811990513990168,
-    "exploit": 8402.583504216935,
-    "panel": 19886.02696300704
+    "exploit": 8927.175056132939,
+    "panel": 21139.49268067506
   },
   "status": "STOPPED",
-  "updated_at": 1789041071.878793
+  "updated_at": 1789041848.2569573
 }

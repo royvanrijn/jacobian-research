@@ -1,6 +1,6 @@
 # Autonomous parent foundry
 
-Status: STOPPED. Controller runs: 5.
+Status: STOPPED. Controller runs: 6.
 
 Constructed and accepted new fibrations: 6; proposals attempted: 6.
 
@@ -17,8 +17,8 @@ Every parent receives twelve fixed prospective slots, each with 64 point calls, 
 | a1-fibration-01 | 16 | 3 | 1/3 | 0/3 | 0/3 | 1 |
 | a1-fibration-02 | 16 | 3 | 0/3 | 0/3 | 0/3 | 0 |
 | a1-fibration-03 | 16 | 3 | 1/3 | 0/3 | 0/3 | 0 |
-| a1-fibration-04 | 16 | 2 | 0/2 | 0/2 | 0/2 | 1 |
-| a1-fibration-05 | 16 | 2 | 0/2 | 0/2 | 0/2 | 0 |
+| a1-fibration-04 | 16 | 3 | 0/3 | 0/3 | 0/3 | 2 |
+| a1-fibration-05 | 16 | 3 | 1/3 | 0/3 | 0/3 | 0 |
 | det1092 | 17 | 2 | 0/2 | 0/2 | 0/2 | 1 |
 | x1092-det1092-a1-121385 | 16 | 12 | 2/12 | 0/12 | 0/12 | 5 |
 | x1092-det1092-a1-14089 | 16 | 12 | 1/12 | 0/12 | 0/12 | 5 |

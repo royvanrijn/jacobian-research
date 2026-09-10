@@ -53,6 +53,39 @@
       "priority": "derived"
     },
     {
+      "id": "EC-DET1092-NISHIYAMA-AUXILIARY-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "An explicit rank-seven Nishiyama auxiliary glues primitively to the recovered determinant-1092 rootless MW17 frame",
+      "scope": "The explicit positive even rank-seven Gram of determinant1092 has cyclic discriminant group of order1092 and discriminant-generator value163/1092, anti-isometric to the recovered curve302 MW17 frame. An explicit order-1092 discriminant gluing gives an even unimodular positive rank24 lattice. The auxiliary and its rank17 complement are primitive; the complement has determinant1092, no roots, and is integrally isometric to the recovered frame. This supplies the exact auxiliary input required for a future all-Niemeier classification of ceiling-attaining X1092 frames. It does not enumerate primitive embeddings, classify X1092 J2 or J1 fibrations, realize a marked U or equation, or search specializations.",
+      "canonical_source": "elliptic-curves/notes/GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md",
+      "dependencies": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19",
+        "external: discriminant-form gluing and Niemeier classification framework"
+      ],
+      "checker": "elkies-k3/scripts/build_det1092_nishiyama_auxiliary.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:76bf0f8fb6a689c4a7a361f956a7b0e539fa0e0aa012fafc1150e405fe600e8e",
+      "software_lock": [
+        "elkies-k3/scripts/build_det1092_nishiyama_auxiliary.sage",
+        "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json",
+        "artifacts/generated-results/elliptic-curves/det1092_nishiyama_auxiliary_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/cas/build_fibration_ceiling_atlas.py"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910",
       "kind": "example",
       "state": "proved",

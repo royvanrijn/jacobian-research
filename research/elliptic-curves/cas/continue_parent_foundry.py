@@ -9,6 +9,8 @@ import argparse
 import json
 from pathlib import Path
 import shutil
+import subprocess
+import sys
 import time
 
 from v3_warm_support import atomic, read, require, sha, same_process
@@ -69,10 +71,24 @@ def handoff(source, destination, workers):
                       'workers': workers, 'inputs': len(needed)}))
 
 
+def wait_for_drain(source, seconds):
+    """Wait only for a previously requested graceful drain, never kill work."""
+    while read(source/'state.json')['status'] != 'STOPPED':
+        time.sleep(seconds)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, required=True)
     parser.add_argument('--destination', type=Path, required=True)
     parser.add_argument('--workers', type=int, required=True)
+    parser.add_argument('--wait-for-drain', action='store_true')
+    parser.add_argument('--poll-seconds', type=float, default=15.0)
+    parser.add_argument('--launch', action='store_true')
     args = parser.parse_args()
+    require(args.poll_seconds > 0, 'poll interval must be positive')
+    if args.wait_for_drain:
+        wait_for_drain(args.source.resolve(), args.poll_seconds)
     handoff(args.source, args.destination, args.workers)
+    if args.launch:
+        foundry.launch(args.destination.resolve())

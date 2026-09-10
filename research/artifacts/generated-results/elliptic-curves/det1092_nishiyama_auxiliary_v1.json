@@ -1,0 +1,118 @@
+{
+  "anti_isometry_units_mod_1092": [
+    83,
+    125,
+    239,
+    265,
+    281,
+    307,
+    421,
+    463,
+    629,
+    671,
+    785,
+    811,
+    827,
+    853,
+    967,
+    1009
+  ],
+  "auxiliary": {
+    "determinant": 1092,
+    "discriminant_generator_q": "163/1092",
+    "discriminant_invariants": [
+      1092
+    ],
+    "gram": [
+      [
+        2,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        2,
+        -1,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        2,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        2,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        -1,
+        20,
+        -2
+      ],
+      [
+        -1,
+        0,
+        1,
+        1,
+        0,
+        -2,
+        22
+      ]
+    ]
+  },
+  "chosen_anti_isometry_unit": 83,
+  "claim_boundary": "This produces one valid Nishiyama auxiliary and gluing. It is not a complete Niemeier embedding enumeration, X1092 J2 classification, marked-U realization, equation construction, or specialization search.",
+  "frame": {
+    "determinant": 1092,
+    "discriminant_generator_q": "1853/1092",
+    "discriminant_invariants": [
+      1092
+    ],
+    "minimum_root_count": 0
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40"
+  },
+  "next_gate": "Enumerate every primitive embedding of this auxiliary in all 23 Niemeier lattices and deduplicate precisely the rootless rank17 complements by integral isometry.",
+  "schema": "elkies-k3.det1092-nishiyama-auxiliary.v1",
+  "status": "PASS_EXACT_AUXILIARY_AND_UNIMODULAR_GLUE",
+  "unimodular_glue": {
+    "complement_determinant": 1092,
+    "complement_isometric_to_recovered_frame": true,
+    "complement_root_count": 0,
+    "determinant": 1,
+    "even": true,
+    "primitive_auxiliary": true,
+    "primitive_complement": true,
+    "rank": 24
+  }
+}

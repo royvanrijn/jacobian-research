@@ -1,10 +1,16 @@
 # Autonomous search over constructed fibrations
 
-The active programme constructs elliptic fibrations on both X948 and X1092,
-then evaluates modest, fixed specialization panels. It replaces the stopped
+> Historical operational protocol. The bounded A1/MW16 continuation was
+> stopped after its first panels. The active successor is the
+> [generic-rank ceiling fibration pivot](GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md),
+> which requires complete rootless MW17 frame classification before another
+> fibration or specialization launch.
+
+This protocol constructed elliptic fibrations on both X948 and X1092, then
+evaluated modest, fixed specialization panels. It replaced the stopped
 [parameter foundry](HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md). Operational counts
 are in the [live report](../../artifacts/generated-results/elliptic-curves/parent-foundry-v2/REPORT.md);
-this note records the mathematical gates and frozen protocol.
+this note records its mathematical gates and frozen protocol.
 
 Two cold-reconstructed commissioning examples establish that the new lane is
 executable. They are genuine changes of elliptic fibration on the declared

@@ -1,10 +1,13 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [autonomous parent foundry](notes/PARENT_SEARCH_FOUNDRY_2026-09-10.md)
-now constructs new A1/MW16 fibrations on X948 and X1092 and evaluates fixed
-small specialization panels. Its first new X1092 parent gives a certified
-16→18 commissioning trajectory in eight calls. The detached controller promotes
-productive parents and cascades, renews completed runs and preserves full clouds.
+The A1/MW16 parent foundry is preserved as a completed bounded construction
+lane: its first new X1092 parent gives a certified 16→18 commissioning
+trajectory in eight calls, but its first panels do not yet justify expansion.
+The active construction gate is the
+[generic-rank ceiling fibration pivot](notes/GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md):
+enumerate rootless MW17 frame types before launching another fibration or
+specialization search. The detached controller is stopped with its receipts
+and complete point clouds retained.
 Machine results remain separate from the curated curve inventory.
 
 <!-- status-consumer: EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910 5be8375fcf2cdfbe -->
