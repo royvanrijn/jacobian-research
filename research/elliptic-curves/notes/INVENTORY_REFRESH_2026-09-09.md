@@ -1,9 +1,10 @@
 # Curve inventory refresh — September 9
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
-[expanded inventory](../INVENTORY.md) now index **321 distinct curves**,
-with **250 exact conductors** and **71 unresolved conductors**, using the
-merged conductor snapshot plus the [foundry additions](FOUNDRY_CURVE_LEDGER_2026-09-09.md). Rank entries
+[expanded inventory](../INVENTORY.md) now index **415 distinct curves**,
+with **256 exact conductors** and **159 unresolved conductors**, using the
+merged conductor snapshot plus the first and
+[second foundry additions](FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md). Rank entries
 are certified lower bounds, not exact ranks.
 
 The selected updates are:

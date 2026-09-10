@@ -5,12 +5,12 @@
 <!-- BEGIN GENERATED ELLIPTIC CURVE TABLE -->
 ## Elliptic curve inventory
 
-**321 research curves · 250 exact conductors · 71 unresolved**.
+**415 research curves · 256 exact conductors · 159 unresolved**.
 ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
-The original 201 curves have certified minimal models. The 120 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
+The original 201 curves have certified minimal models. The 214 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](data/research_curves/database.json) · [Download CSV](data/research_curves/database.csv) · [Arithmetic and replay notes](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
@@ -54,6 +54,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-102](data/research_curves/new-20260906-102.md) | `[0, 1, 0, -2497472982592…, 11650272964469…]` | ≥ 26 | — | 359.75 | 28.00 | 351.41 |
 | [r17-103b2-fresh-002](data/research_curves/r17-103b2-fresh-002.md) | `[0, 0, 0, -1732071835709…, 87788776178863…]` | ≥ 26 | — | — | — | — |
 | [new-20260906-189](data/research_curves/new-20260906-189.md) | `[1, -1, 1, -1663545350154…, 25999962336300…]` | ≥ 26 | — | 393.07 | 30.59 | 380.88 |
+| [foundry-103b2-e839666420df](data/research_curves/foundry-103b2-e839666420df.md) | `[0, 0, 0, -2060021917967…, 11589009357839…]` | ≥ 26 | — | — | — | — |
 | [new-20260906-54](data/research_curves/new-20260906-54.md) | `[1, 0, 0, -2903206315434…, 18059949234337…]` | ≥ 25 | **228.23** | 318.75 | 24.50 | 309.00 |
 | [new-20260906-43](data/research_curves/new-20260906-43.md) | `[1, 0, 0, -2430269761279…, 14025401250208…]` | ≥ 25 | 228.74 | **290.59** | **22.14** | **280.54** |
 | [new-20260905-02](data/research_curves/new-20260905-02.md) | `[0, 1, 0, -2294922577037…, 43151908014471…]` | ≥ 25 | 229.99 | 297.36 | 22.67 | 286.65 |
@@ -99,6 +100,12 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-112](data/research_curves/new-20260906-112.md) | `[1, 0, 1, -9445216260008…, 36055694157722…]` | ≥ 25 | — | 329.24 | 25.33 | 318.56 |
 | [r17-panel-07ca9-high-05](data/research_curves/r17-panel-07ca9-high-05.md) | `[0, 0, 0, -5928111271818…, 17473350347049…]` | ≥ 25 | — | — | — | — |
 | [r17-103b2-fresh-001](data/research_curves/r17-103b2-fresh-001.md) | `[0, 0, 0, -5168834811904…, 14190568241678…]` | ≥ 25 | — | — | — | — |
+| [foundry-074d9-56b395dd3758](data/research_curves/foundry-074d9-56b395dd3758.md) | `[0, 0, 0, -1891620546216…, 30907168448887…]` | ≥ 25 | — | — | — | — |
+| [foundry-08f72-ffd2dd39c149](data/research_curves/foundry-08f72-ffd2dd39c149.md) | `[0, 0, 0, -7611587532246…, 27200539338668…]` | ≥ 25 | — | — | — | — |
+| [foundry-103b2-61b22394d44e](data/research_curves/foundry-103b2-61b22394d44e.md) | `[0, 0, 0, -1376829665821…, 96053357975346…]` | ≥ 25 | — | — | — | — |
+| [foundry-103b2-c14cbd686e01](data/research_curves/foundry-103b2-c14cbd686e01.md) | `[0, 0, 0, -5091171995266…, 88635547250856…]` | ≥ 25 | — | — | — | — |
+| [foundry-11952-9738e1ac00ed](data/research_curves/foundry-11952-9738e1ac00ed.md) | `[0, 0, 0, -5262327079717…, 14711482752165…]` | ≥ 25 | — | — | — | — |
+| [foundry-11952-a31493274bef](data/research_curves/foundry-11952-a31493274bef.md) | `[0, 0, 0, -4290605913723…, 34521352318092…]` | ≥ 25 | — | — | — | — |
 | [r17-panel-08234-high-02](data/research_curves/r17-panel-08234-high-02.md) | `[0, 0, 0, -1298869013726…, 16480804689062…]` | ≥ 24 | **213.24** | — | — | — |
 | [new-20260906-129](data/research_curves/new-20260906-129.md) | `[1, 0, 0, -1117426831395…, 43673028426873…]` | ≥ 24 | 218.32 | 288.26 | 21.95 | 278.24 |
 | [new-20260906-127](data/research_curves/new-20260906-127.md) | `[1, 0, 0, -3428548612984…, 36377001247496…]` | ≥ 24 | 218.91 | 292.42 | 22.40 | 284.36 |
@@ -157,12 +164,35 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [r17-panel-08234-high-04](data/research_curves/r17-panel-08234-high-04.md) | `[0, 0, 0, -9384084406529…, 10719555610034…]` | ≥ 24 | 304.79 | — | — | — |
 | [r17-08f72-fresh-001](data/research_curves/r17-08f72-fresh-001.md) | `[0, 0, 0, -1377114562285…, 71112343921765…]` | ≥ 24 | 305.55 | — | — | — |
 | [r17-074d9-fresh-001](data/research_curves/r17-074d9-fresh-001.md) | `[0, 0, 0, -2698073170919…, 59050784949742…]` | ≥ 24 | 310.94 | — | — | — |
+| [foundry-07ca9-8da5bd35f89e](data/research_curves/foundry-07ca9-8da5bd35f89e.md) | `[0, 0, 0, -3821559323715…, 28734438872506…]` | ≥ 24 | 311.48 | — | — | — |
 | [new-20260906-96](data/research_curves/new-20260906-96.md) | `[1, -1, 1, -3421843534327…, 24831278244948…]` | ≥ 24 | — | 305.47 | 23.35 | 294.73 |
 | [new-20260906-84](data/research_curves/new-20260906-84.md) | `[1, 0, 0, -3155622638734…, 21559871690156…]` | ≥ 24 | — | 319.00 | 24.35 | 305.06 |
 | [new-20260906-67](data/research_curves/new-20260906-67.md) | `[1, 0, 0, -6426079574194…, 21005251302244…]` | ≥ 24 | — | 341.97 | 26.44 | 332.30 |
 | [new-20260906-93](data/research_curves/new-20260906-93.md) | `[1, -1, 1, -2136819806863…, 40938394829016…]` | ≥ 24 | — | 338.70 | 26.18 | 329.27 |
 | [new-20260906-138](data/research_curves/new-20260906-138.md) | `[0, 1, 0, -1140167018600…, 50664698433370…]` | ≥ 24 | — | 357.55 | 27.75 | 348.16 |
 | [new-20260906-141](data/research_curves/new-20260906-141.md) | `[0, 1, 0, -2568174338905…, 15911676041496…]` | ≥ 24 | — | 359.84 | 27.82 | 347.66 |
+| [foundry-074d9-51dadf1c0263](data/research_curves/foundry-074d9-51dadf1c0263.md) | `[0, 0, 0, -1128826201505…, 14448421753895…]` | ≥ 24 | — | — | — | — |
+| [foundry-074d9-d7627bf02ac7](data/research_curves/foundry-074d9-d7627bf02ac7.md) | `[0, 0, 0, -2313405512508…, 13555686177950…]` | ≥ 24 | — | — | — | — |
+| [foundry-074d9-fae8341a387f](data/research_curves/foundry-074d9-fae8341a387f.md) | `[0, 0, 0, -6009926711935…, 54873527683432…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-001934fdf897](data/research_curves/foundry-07ca9-001934fdf897.md) | `[0, 0, 0, -3802668283328…, 28107044885659…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-653ad5ebdd37](data/research_curves/foundry-07ca9-653ad5ebdd37.md) | `[0, 0, 0, -2311463467582…, 42007399569603…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-a097fcd42ef0](data/research_curves/foundry-07ca9-a097fcd42ef0.md) | `[0, 0, 0, -1323140926186…, 18796550932038…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-befd8be8d86c](data/research_curves/foundry-07ca9-befd8be8d86c.md) | `[0, 0, 0, -3954463508375…, 33963264726724…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-cb18404d6853](data/research_curves/foundry-07ca9-cb18404d6853.md) | `[0, 0, 0, -7393824175398…, 24377660045692…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-d6098e83c12e](data/research_curves/foundry-07ca9-d6098e83c12e.md) | `[0, 0, 0, -1610392881494…, 23953778441500…]` | ≥ 24 | — | — | — | — |
+| [foundry-07ca9-e92cc9a1fb98](data/research_curves/foundry-07ca9-e92cc9a1fb98.md) | `[0, 0, 0, -4101192587143…, 96713500874041…]` | ≥ 24 | — | — | — | — |
+| [foundry-08234-bdf3e5c261b8](data/research_curves/foundry-08234-bdf3e5c261b8.md) | `[0, 0, 0, -1305498759727…, 17624215236316…]` | ≥ 24 | — | — | — | — |
+| [foundry-08f72-19815487004b](data/research_curves/foundry-08f72-19815487004b.md) | `[0, 0, 0, -5186909516068…, 14743532965982…]` | ≥ 24 | — | — | — | — |
+| [foundry-08f72-8431940c36e8](data/research_curves/foundry-08f72-8431940c36e8.md) | `[0, 0, 0, -3685974013160…, 98156456180705…]` | ≥ 24 | — | — | — | — |
+| [foundry-08f72-d87dfd710756](data/research_curves/foundry-08f72-d87dfd710756.md) | `[0, 0, 0, -1158425490219…, 50684204231207…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-7f68d7fd3051](data/research_curves/foundry-103b2-7f68d7fd3051.md) | `[0, 0, 0, -8462332203180…, 94875095146031…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-8718b170ab7a](data/research_curves/foundry-103b2-8718b170ab7a.md) | `[0, 0, 0, -3763245449295…, 88764590356251…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-8cfe1c404875](data/research_curves/foundry-103b2-8cfe1c404875.md) | `[0, 0, 0, -3032958163069…, 11270408116746…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-98041bd449e2](data/research_curves/foundry-103b2-98041bd449e2.md) | `[0, 0, 0, -2200986813374…, 12594187850854…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-ebc9ba8575e8](data/research_curves/foundry-103b2-ebc9ba8575e8.md) | `[0, 0, 0, -9078613931417…, 10603569648304…]` | ≥ 24 | — | — | — | — |
+| [foundry-103b2-f05e1838f25e](data/research_curves/foundry-103b2-f05e1838f25e.md) | `[0, 0, 0, -9806239839830…, 11000328161322…]` | ≥ 24 | — | — | — | — |
+| [foundry-11952-a61359cf66cb](data/research_curves/foundry-11952-a61359cf66cb.md) | `[0, 0, 0, -2074299602410…, 11627613851958…]` | ≥ 24 | — | — | — | — |
+| [foundry-11952-ab67527f7264](data/research_curves/foundry-11952-ab67527f7264.md) | `[0, 0, 0, -1728609703816…, 27693447979414…]` | ≥ 24 | — | — | — | — |
 | [new-20260906-162](data/research_curves/new-20260906-162.md) | `[1, 0, 0, -3230152894772…, 27145586613507…]` | ≥ 23 | **198.13** | **250.38** | **18.87** | 241.80 |
 | [r17-panel-08234-low-04](data/research_curves/r17-panel-08234-low-04.md) | `[0, 0, 0, -7861397369242…, 27080387789683…]` | ≥ 23 | 201.46 | — | — | — |
 | [ICARM #600](https://elliptic-rank.icarm.cloud/curve/600) ([Bhavik Mehta](https://elliptic-rank.icarm.cloud/user/64)) | `[1, 0, 0, -2673631332732…, 16765556663649…]` | ≥ 23 | 205.75 | 277.06 | 20.91 | 264.68 |
@@ -206,9 +236,11 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-153](data/research_curves/new-20260906-153.md) | `[0, 0, 0, -1221508605764…, 16795651673703…]` | ≥ 23 | 284.37 | 350.74 | 27.13 | 340.13 |
 | [new-20260906-58](data/research_curves/new-20260906-58.md) | `[1, 0, 0, -1112832408013…, 14096997571593…]` | ≥ 23 | 285.07 | 336.60 | 25.93 | 325.52 |
 | [new-20260906-155](data/research_curves/new-20260906-155.md) | `[1, -1, 1, -4838793547941…, 12772587366610…]` | ≥ 23 | 285.12 | 341.01 | 26.30 | 329.98 |
+| [foundry-07ca9-500d8cd3104b](data/research_curves/foundry-07ca9-500d8cd3104b.md) | `[0, 0, 0, -1918188763125…, 10186125283630…]` | ≥ 23 | 285.15 | — | — | — |
 | [new-20260906-149](data/research_curves/new-20260906-149.md) | `[1, 0, 0, -1349138305607…, 58257951475835…]` | ≥ 23 | 287.33 | 357.90 | 27.75 | 347.74 |
 | [new-20260906-154](data/research_curves/new-20260906-154.md) | `[1, 0, 0, -7718651134788…, 25289202550782…]` | ≥ 23 | 288.22 | 356.22 | 27.60 | 345.98 |
 | [new-20260906-190](data/research_curves/new-20260906-190.md) | `[1, 0, 0, -1510167912489…, 71494663866974…]` | ≥ 23 | 290.56 | 372.06 | 28.77 | 358.27 |
+| [foundry-074d9-32a21592b4d6](data/research_curves/foundry-074d9-32a21592b4d6.md) | `[0, 0, 0, -2344115971037…, 13847599104506…]` | ≥ 23 | 291.67 | — | — | — |
 | [foundry-103b2-482d6feeb4cb](data/research_curves/foundry-103b2-482d6feeb4cb.md) | `[0, 0, 0, -2720592152483…, 54966087320315…]` | ≥ 23 | 292.76 | — | — | — |
 | [foundry-08f72-def9a674e629](data/research_curves/foundry-08f72-def9a674e629.md) | `[0, 0, 0, -8400995608785…, 10013887819474…]` | ≥ 23 | 293.80 | — | — | — |
 | [r17-panel-07ca9-high-04](data/research_curves/r17-panel-07ca9-high-04.md) | `[0, 0, 0, -4702859558487…, 12297413341327…]` | ≥ 23 | 294.07 | — | — | — |
@@ -231,6 +263,29 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260905-17](data/research_curves/new-20260905-17.md) | `[0, 1, 0, -1542808627338…, 23479098197119…]` | ≥ 23 | — | 365.22 | 28.28 | 353.43 |
 | [new-20260905-16](data/research_curves/new-20260905-16.md) | `[1, -1, 1, -5693101643316…, 18063073394371…]` | ≥ 23 | — | 369.30 | 28.74 | 360.03 |
 | [new-20260906-148](data/research_curves/new-20260906-148.md) | `[0, 1, 0, -4002927137327…, 97079439842254…]` | ≥ 23 | — | 368.07 | 28.50 | 355.81 |
+| [foundry-074d9-0069c8fba1e2](data/research_curves/foundry-074d9-0069c8fba1e2.md) | `[0, 0, 0, -2617400433337…, 16380262809724…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-50dfdc38dd72](data/research_curves/foundry-074d9-50dfdc38dd72.md) | `[0, 0, 0, -9244041254435…, 37312513138752…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-55e776f03778](data/research_curves/foundry-074d9-55e776f03778.md) | `[0, 0, 0, -3179414352561…, 21649829788487…]` | ≥ 23 | — | — | — | — |
+| [foundry-074d9-5cd1bb924336](data/research_curves/foundry-074d9-5cd1bb924336.md) | `[0, 0, 0, -1886660224764…, 31449893064917…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-2f9da9115d89](data/research_curves/foundry-07ca9-2f9da9115d89.md) | `[0, 0, 0, -8476707809798…, 27366108455584…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-3c3549b281df](data/research_curves/foundry-07ca9-3c3549b281df.md) | `[0, 0, 0, -1970386099575…, 30265679937041…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-41b541aafb58](data/research_curves/foundry-07ca9-41b541aafb58.md) | `[0, 0, 0, -3712671916608…, 23834027134744…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-45e586e72a84](data/research_curves/foundry-07ca9-45e586e72a84.md) | `[0, 0, 0, -3634202245290…, 85896578390622…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-54cb51469aa1](data/research_curves/foundry-07ca9-54cb51469aa1.md) | `[0, 0, 0, -1042986545644…, 42363061972994…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-7f9a74851e79](data/research_curves/foundry-07ca9-7f9a74851e79.md) | `[0, 0, 0, -1116185087384…, 14497550023656…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-afeaae08bccb](data/research_curves/foundry-07ca9-afeaae08bccb.md) | `[0, 0, 0, -2510036095994…, 15491916272140…]` | ≥ 23 | — | — | — | — |
+| [foundry-07ca9-d38578d72afc](data/research_curves/foundry-07ca9-d38578d72afc.md) | `[0, 0, 0, -9829269172500…, 94633804699632…]` | ≥ 23 | — | — | — | — |
+| [foundry-08234-d9a350cacf56](data/research_curves/foundry-08234-d9a350cacf56.md) | `[0, 0, 0, -1861369046436…, 97352970870809…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-1a3ff0647d20](data/research_curves/foundry-08f72-1a3ff0647d20.md) | `[0, 0, 0, -1591784166939…, 73387284953652…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-5c8d713b47d0](data/research_curves/foundry-08f72-5c8d713b47d0.md) | `[0, 0, 0, -3859978779293…, 92616297483315…]` | ≥ 23 | — | — | — | — |
+| [foundry-08f72-7e0fed623055](data/research_curves/foundry-08f72-7e0fed623055.md) | `[0, 0, 0, -8386384056781…, 29507092590853…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-3522eebc6dc0](data/research_curves/foundry-11952-3522eebc6dc0.md) | `[0, 0, 0, -1202657491861…, 15718837690060…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-4a4e9b4ae340](data/research_curves/foundry-11952-4a4e9b4ae340.md) | `[0, 0, 0, -6066438246008…, 15587761507701…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-6599e33bde1e](data/research_curves/foundry-11952-6599e33bde1e.md) | `[0, 0, 0, -6239089413957…, 19132621925650…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-79f99e5fcc43](data/research_curves/foundry-11952-79f99e5fcc43.md) | `[0, 0, 0, -2778055169935…, 17119060156146…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-b0fc6fa02cf0](data/research_curves/foundry-11952-b0fc6fa02cf0.md) | `[0, 0, 0, -9480782411898…, 35633789581302…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-c21d0b49841b](data/research_curves/foundry-11952-c21d0b49841b.md) | `[0, 0, 0, -7660815984196…, 79622550394764…]` | ≥ 23 | — | — | — | — |
+| [foundry-11952-db43616cda53](data/research_curves/foundry-11952-db43616cda53.md) | `[0, 0, 0, -8438912883480…, 94464807790806…]` | ≥ 23 | — | — | — | — |
 | [ICARM #626](https://elliptic-rank.icarm.cloud/curve/626) ([Roy van Rijn](https://elliptic-rank.icarm.cloud/user/83)) | `[1, 0, 0, -1824519766025…, 71000315025379…]` | ≥ 22 | **174.43** | **234.47** | **17.56** | **226.19** |
 | [new-20260906-181](data/research_curves/new-20260906-181.md) | `[1, -1, 1, -5860321714788…, 17761183148463…]` | ≥ 22 | 179.38 | 244.93 | 18.32 | 234.57 |
 | [r17-074d9-lowheight-001](data/research_curves/r17-074d9-lowheight-001.md) | `[0, 0, 0, -2170553516564…, 36567713338509…]` | ≥ 22 | 179.95 | — | — | — |
@@ -241,6 +296,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260905-29](data/research_curves/new-20260905-29.md) | `[1, 0, 0, -2883710112976…, 59903201646862…]` | ≥ 22 | 205.59 | 284.20 | 21.52 | 272.14 |
 | [foundry-08f72-69d055374ecf](data/research_curves/foundry-08f72-69d055374ecf.md) | `[0, 0, 0, -9064298589904…, 34905162055383…]` | ≥ 22 | 224.22 | — | — | — |
 | [new-20260905-27](data/research_curves/new-20260905-27.md) | `[1, 0, 0, -4149207237066…, 31844205037279…]` | ≥ 22 | 231.00 | 292.19 | 22.25 | 281.56 |
+| [foundry-103b2-e9d1426ea4bc](data/research_curves/foundry-103b2-e9d1426ea4bc.md) | `[0, 0, 0, -9093158402342…, 27202031674406…]` | ≥ 22 | 234.69 | — | — | — |
 | [new-20260905-26](data/research_curves/new-20260905-26.md) | `[0, 0, 0, -1160513473040…, 47080765238776…]` | ≥ 22 | 239.01 | 288.37 | 21.93 | 277.76 |
 | [new-20260906-167](data/research_curves/new-20260906-167.md) | `[1, 0, 0, -1328080246714…, 58602998026106…]` | ≥ 22 | 246.94 | 316.41 | 24.20 | 304.38 |
 | [new-20260905-24](data/research_curves/new-20260905-24.md) | `[0, 1, 0, -8722313749028…, 31145701431169…]` | ≥ 22 | 247.61 | 301.33 | 22.96 | 289.55 |
@@ -253,6 +309,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-166](data/research_curves/new-20260906-166.md) | `[1, 0, 0, -1572876882936…, 76398008240300…]` | ≥ 22 | 258.93 | 316.93 | 24.26 | 305.07 |
 | [new-20260905-21](data/research_curves/new-20260905-21.md) | `[1, 0, 1, -2793535264635…, 18068004952949…]` | ≥ 22 | 262.09 | 304.83 | 23.24 | 292.84 |
 | [new-20260906-61](data/research_curves/new-20260906-61.md) | `[1, 0, 0, -4344853162488…, 34825353767971…]` | ≥ 22 | 264.00 | 333.78 | 25.59 | 320.06 |
+| [foundry-07ca9-bb690c16b941](data/research_curves/foundry-07ca9-bb690c16b941.md) | `[0, 0, 0, -3066849787794…, 22821476819749…]` | ≥ 22 | 265.23 | — | — | — |
 | [r17-panel-08f72-low-03](data/research_curves/r17-panel-08f72-low-03.md) | `[0, 0, 0, -3605681714602…, 26609488249780…]` | ≥ 22 | 269.51 | — | — | — |
 | [new-20260906-169](data/research_curves/new-20260906-169.md) | `[1, 0, 0, -1623411907128…, 80083724511219…]` | ≥ 22 | 272.30 | 344.65 | 26.56 | 332.75 |
 | [new-20260906-171](data/research_curves/new-20260906-171.md) | `[0, 1, 0, -6141588560520…, 62031149318571…]` | ≥ 22 | 275.12 | 348.75 | 27.01 | 339.07 |
@@ -266,6 +323,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [new-20260906-174](data/research_curves/new-20260906-174.md) | `[0, 1, 0, -4863170889922…, 41593109262160…]` | ≥ 22 | 290.44 | 334.13 | 25.70 | 322.48 |
 | [new-20260906-170](data/research_curves/new-20260906-170.md) | `[0, 1, 1, -9435946073212…, 33990140963693…]` | ≥ 22 | 291.77 | 343.01 | 26.51 | 332.92 |
 | [new-20260905-31](data/research_curves/new-20260905-31.md) | `[1, 0, 0, -2671116209953…, 16819388980554…]` | ≥ 22 | 294.91 | 373.77 | 28.92 | 360.07 |
+| [foundry-103b2-bd9e31ba3560](data/research_curves/foundry-103b2-bd9e31ba3560.md) | `[0, 0, 0, -1751254735019…, 86264642811885…]` | ≥ 22 | 296.26 | — | — | — |
 | [new-20260905-30](data/research_curves/new-20260905-30.md) | `[1, 0, 0, -5984090776937…, 17434344010559…]` | ≥ 22 | 298.06 | 369.28 | 28.67 | 358.66 |
 | [new-20260906-179](data/research_curves/new-20260906-179.md) | `[0, 1, 0, -6474392930107…, 11481778223250…]` | ≥ 22 | 298.86 | 355.70 | 27.69 | 347.85 |
 | [r17-08234-fresh-002](data/research_curves/r17-08234-fresh-002.md) | `[0, 0, 0, -6464666246333…, 63912968642412…]` | ≥ 22 | 299.67 | — | — | — |
@@ -282,12 +340,48 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [foundry-11952-108b0de34fbc](data/research_curves/foundry-11952-108b0de34fbc.md) | `[0, 0, 0, -1258029691359…, 51022945496339…]` | ≥ 22 | — | — | — | — |
 | [foundry-074d9-bf1f4911a84f](data/research_curves/foundry-074d9-bf1f4911a84f.md) | `[0, 0, 0, -2229110566833…, 12698429201228…]` | ≥ 22 | — | — | — | — |
 | [new-20260906-168](data/research_curves/new-20260906-168.md) | `[1, 0, 0, -5121214450763…, 43480846311916…]` | ≥ 22 | — | 320.46 | 24.61 | 310.00 |
+| [foundry-07ca9-242c4e73dcb3](data/research_curves/foundry-07ca9-242c4e73dcb3.md) | `[0, 0, 0, -3093552421885…, 22950693538731…]` | ≥ 22 | — | — | — | — |
 | [r17-panel-07ca9-high-02](data/research_curves/r17-panel-07ca9-high-02.md) | `[0, 0, 0, -3376697565308…, 25383647336922…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-39f00701dd95](data/research_curves/foundry-07ca9-39f00701dd95.md) | `[0, 0, 0, -1248000678337…, 16867701710237…]` | ≥ 22 | — | — | — | — |
 | [new-20260906-178](data/research_curves/new-20260906-178.md) | `[1, 0, 0, -1221330541006…, 16231053681057…]` | ≥ 22 | — | 350.69 | 27.10 | 339.50 |
 | [new-20260906-185](data/research_curves/new-20260906-185.md) | `[1, 0, 0, -6889419529793…, 21968763016388…]` | ≥ 22 | — | 369.70 | 28.61 | 356.66 |
 | [new-20260906-175](data/research_curves/new-20260906-175.md) | `[1, -1, 1, -4178960739123…, 31658080454283…]` | ≥ 22 | — | 375.11 | 29.18 | 365.04 |
 | [r17-11952-fresh-002](data/research_curves/r17-11952-fresh-002.md) | `[0, 0, 0, -5012381313604…, 13682260990625…]` | ≥ 22 | — | — | — | — |
 | [new-20260906-176](data/research_curves/new-20260906-176.md) | `[1, 0, 1, -6924559956107…, 21911629220112…]` | ≥ 22 | — | 369.71 | 28.68 | 358.53 |
+| [foundry-074d9-78f9ee2cac45](data/research_curves/foundry-074d9-78f9ee2cac45.md) | `[0, 0, 0, -3547832375101…, 26308647531858…]` | ≥ 22 | — | — | — | — |
+| [foundry-074d9-920a50374920](data/research_curves/foundry-074d9-920a50374920.md) | `[0, 0, 0, -2308678112140…, 40959376311765…]` | ≥ 22 | — | — | — | — |
+| [foundry-074d9-a4e303e8d0d2](data/research_curves/foundry-074d9-a4e303e8d0d2.md) | `[0, 0, 0, -6154804819304…, 61468475655414…]` | ≥ 22 | — | — | — | — |
+| [foundry-074d9-d2e36aaa0b7a](data/research_curves/foundry-074d9-d2e36aaa0b7a.md) | `[0, 0, 0, -2140216308019…, 11671884225770…]` | ≥ 22 | — | — | — | — |
+| [foundry-074d9-db7d3bf5850e](data/research_curves/foundry-074d9-db7d3bf5850e.md) | `[0, 0, 0, -1436815727641…, 21126325184382…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-039bd8cbb68e](data/research_curves/foundry-07ca9-039bd8cbb68e.md) | `[0, 0, 0, -4884102458061…, 84642545026688…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-2772d4770f5b](data/research_curves/foundry-07ca9-2772d4770f5b.md) | `[0, 0, 0, -1475347656492…, 97235154785487…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-43e3dcdaef52](data/research_curves/foundry-07ca9-43e3dcdaef52.md) | `[0, 0, 0, -6548162616827…, 22398269932837…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-61e67879d215](data/research_curves/foundry-07ca9-61e67879d215.md) | `[0, 0, 0, -3863491589913…, 26051447548264…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-6e5b45a28829](data/research_curves/foundry-07ca9-6e5b45a28829.md) | `[0, 0, 0, -2443298713729…, 13689297754098…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-f1c00d1ca91d](data/research_curves/foundry-07ca9-f1c00d1ca91d.md) | `[0, 0, 0, -5833350426466…, 25960821428174…]` | ≥ 22 | — | — | — | — |
+| [foundry-07ca9-f2a0430374a0](data/research_curves/foundry-07ca9-f2a0430374a0.md) | `[0, 0, 0, -1529851861552…, 23273491310538…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-0bb573585978](data/research_curves/foundry-08f72-0bb573585978.md) | `[0, 0, 0, -4393378343985…, 36180032785134…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-2befa447e601](data/research_curves/foundry-08f72-2befa447e601.md) | `[0, 0, 0, -5243454879099…, 15393089816957…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-40ac60187fd9](data/research_curves/foundry-08f72-40ac60187fd9.md) | `[0, 0, 0, -1185120686581…, 16723011194756…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-4655a42770e0](data/research_curves/foundry-08f72-4655a42770e0.md) | `[0, 0, 0, -3512173331127…, 72828582513129…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-4d4b1d600f61](data/research_curves/foundry-08f72-4d4b1d600f61.md) | `[0, 0, 0, -3260268309236…, 26061595356343…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-50f717b16d07](data/research_curves/foundry-08f72-50f717b16d07.md) | `[0, 0, 0, -2201694176058…, 70312518337379…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-8f03c411e6ea](data/research_curves/foundry-08f72-8f03c411e6ea.md) | `[0, 0, 0, -3040463652003…, 61861332653927…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-961a8aadd5fb](data/research_curves/foundry-08f72-961a8aadd5fb.md) | `[0, 0, 0, -2083546837710…, 12060587868265…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-b9a8d8af69c1](data/research_curves/foundry-08f72-b9a8d8af69c1.md) | `[0, 0, 0, -1096079642210…, 46136930061698…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-c0eaa624a326](data/research_curves/foundry-08f72-c0eaa624a326.md) | `[0, 0, 0, -5824694655964…, 56868519461479…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-dfb4cc079af5](data/research_curves/foundry-08f72-dfb4cc079af5.md) | `[0, 0, 0, -6174483655819…, 21726023278865…]` | ≥ 22 | — | — | — | — |
+| [foundry-08f72-eb362a7c39e6](data/research_curves/foundry-08f72-eb362a7c39e6.md) | `[0, 0, 0, -1200830942723…, 18499125147251…]` | ≥ 22 | — | — | — | — |
+| [foundry-103b2-6dba7753794a](data/research_curves/foundry-103b2-6dba7753794a.md) | `[0, 0, 0, -2602247773610…, 21481501475090…]` | ≥ 22 | — | — | — | — |
+| [foundry-103b2-8b22d843173a](data/research_curves/foundry-103b2-8b22d843173a.md) | `[0, 0, 0, -3556104748015…, 26828363159425…]` | ≥ 22 | — | — | — | — |
+| [foundry-103b2-8eb55ef6b9b4](data/research_curves/foundry-103b2-8eb55ef6b9b4.md) | `[0, 0, 0, -2007447139536…, 34602367374787…]` | ≥ 22 | — | — | — | — |
+| [foundry-103b2-da67639e8ab8](data/research_curves/foundry-103b2-da67639e8ab8.md) | `[0, 0, 0, -1264495176801…, 49984649423141…]` | ≥ 22 | — | — | — | — |
+| [foundry-103b2-de6dfcc3258c](data/research_curves/foundry-103b2-de6dfcc3258c.md) | `[0, 0, 0, -1695684397962…, 83494215043629…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-34a581776a99](data/research_curves/foundry-11952-34a581776a99.md) | `[0, 0, 0, -9648471832806…, 36574132566379…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-5b08e45579f4](data/research_curves/foundry-11952-5b08e45579f4.md) | `[0, 0, 0, -1687617214853…, 60027154074161…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-825ee63e5a94](data/research_curves/foundry-11952-825ee63e5a94.md) | `[0, 0, 0, -1526264763497…, 82159848208837…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-ad137a40fe6d](data/research_curves/foundry-11952-ad137a40fe6d.md) | `[0, 0, 0, -2317587421016…, 43241074086280…]` | ≥ 22 | — | — | — | — |
+| [foundry-11952-e53292493505](data/research_curves/foundry-11952-e53292493505.md) | `[0, 0, 0, -2832398967882…, 80522792803921…]` | ≥ 22 | — | — | — | — |
 | [r17-panel-07ca9-low-02](data/research_curves/r17-panel-07ca9-low-02.md) | `[0, 0, 0, -8217754558179…, 31305557550567…]` | ≥ 21 | **253.84** | — | — | — |
 | [det1092-funnel-002537010](data/research_curves/det1092-funnel-002537010.md) | `[0, 0, 0, -2530162402717…, 75057748791573…]` | ≥ 21 | 254.17 | — | — | — |
 | [r17-panel-074d9-high-03](data/research_curves/r17-panel-074d9-high-03.md) | `[0, 0, 0, -8168970000781…, 84616899603365…]` | ≥ 21 | 294.37 | — | — | — |

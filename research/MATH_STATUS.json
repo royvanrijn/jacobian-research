@@ -54209,6 +54209,39 @@
       "priority": "derived"
     },
     {
+      "id": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "kind": "example",
+      "state": "proved",
+      "title": "Second foundry snapshot adds94 distinct rank-22–26 curves and certifies6 exact conductors",
+      "scope": "At a fixed cutoff of the still-running high-rank-foundry-v3 experiment,180 sealed rank-at-least22 endpoints reduce by exact Q-isomorphism and strongest-subgroup selection to94 curves absent from the321-curve baseline:39 lower bounds22,25 at23,23 at24,6 at25 and1 at26. Every selected packet passes fresh exact two-path finite-group replay, rational2-torsion exclusion, baseline nonisomorphism and pairwise nonisomorphism. Eight selected curves also had independently replayed conductor endpoints at the cutoff:6 exact conductors and2 partial UNKNOWN bounds, each freshly replayed with exact model transport, prime certificates and Sage generic Tate/PARI elllocalred agreement. The inventory therefore grows to415 curves with256 exact conductors and159 unresolved. Later live endpoints are excluded. No exact-rank, worldwide-novelty or conductor-record claim is made.",
+      "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md",
+      "dependencies": [
+        "EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909",
+        "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909"
+      ],
+      "checker": "elliptic-curves/cas/refresh_foundry_curve_ledger_v2.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:322e82dbd8ef6868efd4749dcf9becce7c26927918057dcfe575e9c0643f2213",
+      "software_lock": [
+        "elliptic-curves/cas/refresh_foundry_curve_ledger_v2.py",
+        "elliptic-curves/cas/verify_high_rank_foundry_certificate.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/inventory_conductor_worker_v2.py",
+        "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json",
+        "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909",
       "kind": "example",
       "state": "proved",

@@ -1150,6 +1150,54 @@
       "id": "foundry-11952-beddd202ac6f",
       "kind": "checkpoint",
       "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-074d9-32a21592b4d6",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-07ca9-242c4e73dcb3",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-07ca9-39f00701dd95",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-07ca9-500d8cd3104b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-07ca9-8da5bd35f89e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-07ca9-bb690c16b941",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-103b2-bd9e31ba3560",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "id": "foundry-103b2-e9d1426ea4bc",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
     }
   ],
   "curves": [
@@ -2265,6 +2313,946 @@
       "rank_lower_bound": 23,
       "record": "foundry-11952-beddd202ac6f",
       "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-0069c8fba1e2",
+      "kind": "foundry",
+      "parameter": "-1327/856",
+      "rank_lower_bound": 23,
+      "record": "foundry-074d9-0069c8fba1e2",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-32a21592b4d6",
+      "kind": "foundry",
+      "parameter": "-750/293",
+      "rank_lower_bound": 23,
+      "record": "foundry-074d9-32a21592b4d6",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-50dfdc38dd72",
+      "kind": "foundry",
+      "parameter": "-3261/4027",
+      "rank_lower_bound": 23,
+      "record": "foundry-074d9-50dfdc38dd72",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-51dadf1c0263",
+      "kind": "foundry",
+      "parameter": "-1072/39",
+      "rank_lower_bound": 24,
+      "record": "foundry-074d9-51dadf1c0263",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-55e776f03778",
+      "kind": "foundry",
+      "parameter": "-293/811",
+      "rank_lower_bound": 23,
+      "record": "foundry-074d9-55e776f03778",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-56b395dd3758",
+      "kind": "foundry",
+      "parameter": "-2997/3308",
+      "rank_lower_bound": 25,
+      "record": "foundry-074d9-56b395dd3758",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-5cd1bb924336",
+      "kind": "foundry",
+      "parameter": "2415/1858",
+      "rank_lower_bound": 23,
+      "record": "foundry-074d9-5cd1bb924336",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-78f9ee2cac45",
+      "kind": "foundry",
+      "parameter": "469/632",
+      "rank_lower_bound": 22,
+      "record": "foundry-074d9-78f9ee2cac45",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-920a50374920",
+      "kind": "foundry",
+      "parameter": "-1745/1901",
+      "rank_lower_bound": 22,
+      "record": "foundry-074d9-920a50374920",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-a4e303e8d0d2",
+      "kind": "foundry",
+      "parameter": "-2705/2307",
+      "rank_lower_bound": 22,
+      "record": "foundry-074d9-a4e303e8d0d2",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-d2e36aaa0b7a",
+      "kind": "foundry",
+      "parameter": "361/705",
+      "rank_lower_bound": 22,
+      "record": "foundry-074d9-d2e36aaa0b7a",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-d7627bf02ac7",
+      "kind": "foundry",
+      "parameter": "1035/812",
+      "rank_lower_bound": 24,
+      "record": "foundry-074d9-d7627bf02ac7",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-db7d3bf5850e",
+      "kind": "foundry",
+      "parameter": "3712/93",
+      "rank_lower_bound": 22,
+      "record": "foundry-074d9-db7d3bf5850e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "074d9",
+      "id": "foundry-074d9-fae8341a387f",
+      "kind": "foundry",
+      "parameter": "889/366",
+      "rank_lower_bound": 24,
+      "record": "foundry-074d9-fae8341a387f",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-001934fdf897",
+      "kind": "foundry",
+      "parameter": "2223/2410",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-001934fdf897",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-039bd8cbb68e",
+      "kind": "foundry",
+      "parameter": "347/616",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-039bd8cbb68e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-242c4e73dcb3",
+      "kind": "foundry",
+      "parameter": "401/643",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-242c4e73dcb3",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-2772d4770f5b",
+      "kind": "foundry",
+      "parameter": "2092/3927",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-2772d4770f5b",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-2f9da9115d89",
+      "kind": "foundry",
+      "parameter": "-3667/3826",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-2f9da9115d89",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-39f00701dd95",
+      "kind": "foundry",
+      "parameter": "2551/3708",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-39f00701dd95",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-3c3549b281df",
+      "kind": "foundry",
+      "parameter": "-278/907",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-3c3549b281df",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-41b541aafb58",
+      "kind": "foundry",
+      "parameter": "-98/137",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-41b541aafb58",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-43e3dcdaef52",
+      "kind": "foundry",
+      "parameter": "1881/3062",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-43e3dcdaef52",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-45e586e72a84",
+      "kind": "foundry",
+      "parameter": "-1007/332",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-45e586e72a84",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-500d8cd3104b",
+      "kind": "foundry",
+      "parameter": "-379/267",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-500d8cd3104b",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-54cb51469aa1",
+      "kind": "foundry",
+      "parameter": "-104/643",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-54cb51469aa1",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-61e67879d215",
+      "kind": "foundry",
+      "parameter": "-447/448",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-61e67879d215",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-653ad5ebdd37",
+      "kind": "foundry",
+      "parameter": "879/962",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-653ad5ebdd37",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-6e5b45a28829",
+      "kind": "foundry",
+      "parameter": "2125/703",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-6e5b45a28829",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-7f9a74851e79",
+      "kind": "foundry",
+      "parameter": "-513/100",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-7f9a74851e79",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-8da5bd35f89e",
+      "kind": "foundry",
+      "parameter": "-2318/1191",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-8da5bd35f89e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-a097fcd42ef0",
+      "kind": "foundry",
+      "parameter": "1678/1203",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-a097fcd42ef0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-afeaae08bccb",
+      "kind": "foundry",
+      "parameter": "584/237",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-afeaae08bccb",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-bb690c16b941",
+      "kind": "foundry",
+      "parameter": "91/804",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-bb690c16b941",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-befd8be8d86c",
+      "kind": "foundry",
+      "parameter": "61/2532",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-befd8be8d86c",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-cb18404d6853",
+      "kind": "foundry",
+      "parameter": "-1059/574",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-cb18404d6853",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-d38578d72afc",
+      "kind": "foundry",
+      "parameter": "-351/826",
+      "rank_lower_bound": 23,
+      "record": "foundry-07ca9-d38578d72afc",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-d6098e83c12e",
+      "kind": "foundry",
+      "parameter": "1123/586",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-d6098e83c12e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-e92cc9a1fb98",
+      "kind": "foundry",
+      "parameter": "2924/3965",
+      "rank_lower_bound": 24,
+      "record": "foundry-07ca9-e92cc9a1fb98",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-f1c00d1ca91d",
+      "kind": "foundry",
+      "parameter": "488/987",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-f1c00d1ca91d",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "07ca9",
+      "id": "foundry-07ca9-f2a0430374a0",
+      "kind": "foundry",
+      "parameter": "3817/477",
+      "rank_lower_bound": 22,
+      "record": "foundry-07ca9-f2a0430374a0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08234",
+      "id": "foundry-08234-bdf3e5c261b8",
+      "kind": "foundry",
+      "parameter": "-2208/235",
+      "rank_lower_bound": 24,
+      "record": "foundry-08234-bdf3e5c261b8",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08234",
+      "id": "foundry-08234-d9a350cacf56",
+      "kind": "foundry",
+      "parameter": "-884/183",
+      "rank_lower_bound": 23,
+      "record": "foundry-08234-d9a350cacf56",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-0bb573585978",
+      "kind": "foundry",
+      "parameter": "399/496",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-0bb573585978",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-19815487004b",
+      "kind": "foundry",
+      "parameter": "-944/497",
+      "rank_lower_bound": 24,
+      "record": "foundry-08f72-19815487004b",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-1a3ff0647d20",
+      "kind": "foundry",
+      "parameter": "-2257/3960",
+      "rank_lower_bound": 23,
+      "record": "foundry-08f72-1a3ff0647d20",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-2befa447e601",
+      "kind": "foundry",
+      "parameter": "-58/717",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-2befa447e601",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-40ac60187fd9",
+      "kind": "foundry",
+      "parameter": "742/177",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-40ac60187fd9",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-4655a42770e0",
+      "kind": "foundry",
+      "parameter": "743/2447",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-4655a42770e0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-4d4b1d600f61",
+      "kind": "foundry",
+      "parameter": "3118/921",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-4d4b1d600f61",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-50f717b16d07",
+      "kind": "foundry",
+      "parameter": "1550/197",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-50f717b16d07",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-5c8d713b47d0",
+      "kind": "foundry",
+      "parameter": "1766/1995",
+      "rank_lower_bound": 23,
+      "record": "foundry-08f72-5c8d713b47d0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-7e0fed623055",
+      "kind": "foundry",
+      "parameter": "1019/16",
+      "rank_lower_bound": 23,
+      "record": "foundry-08f72-7e0fed623055",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-8431940c36e8",
+      "kind": "foundry",
+      "parameter": "3382/1419",
+      "rank_lower_bound": 24,
+      "record": "foundry-08f72-8431940c36e8",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-8f03c411e6ea",
+      "kind": "foundry",
+      "parameter": "915/187",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-8f03c411e6ea",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-961a8aadd5fb",
+      "kind": "foundry",
+      "parameter": "-307/2657",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-961a8aadd5fb",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-b9a8d8af69c1",
+      "kind": "foundry",
+      "parameter": "247/472",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-b9a8d8af69c1",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-c0eaa624a326",
+      "kind": "foundry",
+      "parameter": "-85/966",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-c0eaa624a326",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-d87dfd710756",
+      "kind": "foundry",
+      "parameter": "466/831",
+      "rank_lower_bound": 24,
+      "record": "foundry-08f72-d87dfd710756",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-dfb4cc079af5",
+      "kind": "foundry",
+      "parameter": "399/143",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-dfb4cc079af5",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-eb362a7c39e6",
+      "kind": "foundry",
+      "parameter": "551/213",
+      "rank_lower_bound": 22,
+      "record": "foundry-08f72-eb362a7c39e6",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "08f72",
+      "id": "foundry-08f72-ffd2dd39c149",
+      "kind": "foundry",
+      "parameter": "239/2556",
+      "rank_lower_bound": 25,
+      "record": "foundry-08f72-ffd2dd39c149",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-61b22394d44e",
+      "kind": "foundry",
+      "parameter": "-2818/2091",
+      "rank_lower_bound": 25,
+      "record": "foundry-103b2-61b22394d44e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-6dba7753794a",
+      "kind": "foundry",
+      "parameter": "-91/62",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-6dba7753794a",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-7f68d7fd3051",
+      "kind": "foundry",
+      "parameter": "-281/686",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-7f68d7fd3051",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-8718b170ab7a",
+      "kind": "foundry",
+      "parameter": "2339/888",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-8718b170ab7a",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-8b22d843173a",
+      "kind": "foundry",
+      "parameter": "-7/3487",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-8b22d843173a",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-8cfe1c404875",
+      "kind": "foundry",
+      "parameter": "1604/91",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-8cfe1c404875",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-8eb55ef6b9b4",
+      "kind": "foundry",
+      "parameter": "1974/1031",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-8eb55ef6b9b4",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-98041bd449e2",
+      "kind": "foundry",
+      "parameter": "2538/2041",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-98041bd449e2",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-bd9e31ba3560",
+      "kind": "foundry",
+      "parameter": "995/276",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-bd9e31ba3560",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-c14cbd686e01",
+      "kind": "foundry",
+      "parameter": "-1438/1183",
+      "rank_lower_bound": 25,
+      "record": "foundry-103b2-c14cbd686e01",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-da67639e8ab8",
+      "kind": "foundry",
+      "parameter": "319/1014",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-da67639e8ab8",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-de6dfcc3258c",
+      "kind": "foundry",
+      "parameter": "-1496/3169",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-de6dfcc3258c",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-e839666420df",
+      "kind": "foundry",
+      "parameter": "2538/2143",
+      "rank_lower_bound": 26,
+      "record": "foundry-103b2-e839666420df",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-e9d1426ea4bc",
+      "kind": "foundry",
+      "parameter": "357/598",
+      "rank_lower_bound": 22,
+      "record": "foundry-103b2-e9d1426ea4bc",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-ebc9ba8575e8",
+      "kind": "foundry",
+      "parameter": "329/151",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-ebc9ba8575e8",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "103b2",
+      "id": "foundry-103b2-f05e1838f25e",
+      "kind": "foundry",
+      "parameter": "-2924/4095",
+      "rank_lower_bound": 24,
+      "record": "foundry-103b2-f05e1838f25e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-34a581776a99",
+      "kind": "foundry",
+      "parameter": "718/2715",
+      "rank_lower_bound": 22,
+      "record": "foundry-11952-34a581776a99",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-3522eebc6dc0",
+      "kind": "foundry",
+      "parameter": "1195/1329",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-3522eebc6dc0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-4a4e9b4ae340",
+      "kind": "foundry",
+      "parameter": "-691/498",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-4a4e9b4ae340",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-5b08e45579f4",
+      "kind": "foundry",
+      "parameter": "982/717",
+      "rank_lower_bound": 22,
+      "record": "foundry-11952-5b08e45579f4",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-6599e33bde1e",
+      "kind": "foundry",
+      "parameter": "1328/1075",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-6599e33bde1e",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-79f99e5fcc43",
+      "kind": "foundry",
+      "parameter": "3893/885",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-79f99e5fcc43",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-825ee63e5a94",
+      "kind": "foundry",
+      "parameter": "-131/290",
+      "rank_lower_bound": 22,
+      "record": "foundry-11952-825ee63e5a94",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-9738e1ac00ed",
+      "kind": "foundry",
+      "parameter": "-2052/1075",
+      "rank_lower_bound": 25,
+      "record": "foundry-11952-9738e1ac00ed",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-a31493274bef",
+      "kind": "foundry",
+      "parameter": "3525/1478",
+      "rank_lower_bound": 25,
+      "record": "foundry-11952-a31493274bef",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-a61359cf66cb",
+      "kind": "foundry",
+      "parameter": "-2426/1413",
+      "rank_lower_bound": 24,
+      "record": "foundry-11952-a61359cf66cb",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-ab67527f7264",
+      "kind": "foundry",
+      "parameter": "2328/1285",
+      "rank_lower_bound": 24,
+      "record": "foundry-11952-ab67527f7264",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-ad137a40fe6d",
+      "kind": "foundry",
+      "parameter": "-89/399",
+      "rank_lower_bound": 22,
+      "record": "foundry-11952-ad137a40fe6d",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-b0fc6fa02cf0",
+      "kind": "foundry",
+      "parameter": "596/1543",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-b0fc6fa02cf0",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-c21d0b49841b",
+      "kind": "foundry",
+      "parameter": "324/389",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-c21d0b49841b",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-db43616cda53",
+      "kind": "foundry",
+      "parameter": "3806/1687",
+      "rank_lower_bound": 23,
+      "record": "foundry-11952-db43616cda53",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "family": "11952",
+      "id": "foundry-11952-e53292493505",
+      "kind": "foundry",
+      "parameter": "-1468/2421",
+      "rank_lower_bound": 22,
+      "record": "foundry-11952-e53292493505",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
     }
   ],
   "schema": "elliptic-curves.research-curve-refresh.v1",
@@ -2278,6 +3266,8 @@
     "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-generic-frame.json": "965baf19132d76d8c73f64bdbb1c1e54bdea5da6c3b6421bbfbda53cb754c7f3",
     "artifacts/generated-results/elliptic-curves/det1092_bifibration_conic_sources_v1/seed-result.json": "e8c82f79a6fe2c8c8e053594178fe6ea96b01e9149a1c893b418e7b3bbbd7a83",
     "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json": "52be94faff04dd66cf19c6a2696414b0cb96cb0659e80520ccdbba5b85827628",
+    "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json": "ad2ca22b8b7e25d03def38e7730406c98b7f4870d5e021c6f3065ebc1afb68ec",
+    "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json": "b24f5b3293a29c26a2de496b4ce78a67e746a2e18f7d12eb2f4cdf1043b52b83",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-exact-complement/result.json": "0cded3135708559328600cf2d6f6198a509b7175acb7d3a296f23152738850ef",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json": "895dae912ca8696f3e0f26a1b6acdafed21b5d6fd03c0a46b3fccc4e962f0484",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/08f72-exact-complement/result.json": "a80bf7548695cc506afa73f95f69154a07f5404d4ac7501282ca1a74280da647",
