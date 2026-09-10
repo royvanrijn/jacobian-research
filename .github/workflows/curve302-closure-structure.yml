@@ -1,0 +1,57 @@
+name: Curve302 closure structure smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/curve302-closure-structure.yml'
+      - 'research/elliptic-curves/cas/run_curve302_closure_structure.py'
+      - 'research/elliptic-curves/cas/curve302_closure_structure_core.py'
+      - 'research/elliptic-curves/cas/curve302_closure_structure_sage.py'
+      - 'research/elliptic-curves/tests/test_curve302_closure_structure.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: curve302-closure-structure-smoke
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    container:
+      image: sagemath/sagemath@sha256:e068670ae5863b54b2550e72437ec637b0283acb0dc712c8584c124dbf44e667
+      options: --user root
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Install Git for sparse checkout
+        run: |
+          apt-get update -qq
+          apt-get install -y --no-install-recommends git ca-certificates
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/elliptic-curves/cas/run_curve302_closure_structure.py
+            /research/elliptic-curves/cas/curve302_closure_structure_core.py
+            /research/elliptic-curves/cas/curve302_closure_structure_sage.py
+            /research/elliptic-curves/tests/test_curve302_closure_structure.py
+            /research/artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_unlock_seed_closure_v2.json
+      - name: Expose Sage
+        run: |
+          export PATH="/home/sage/sage/local/bin:/home/sage/sage:$PATH"
+          dirname "$(command -v sage)" >> "$GITHUB_PATH"
+          sage --version
+      - name: Policy regressions
+        run: |
+          sage -python -m unittest discover -s research/elliptic-curves/tests -p test_curve302_closure_structure.py -v
+      - name: Real 16384-state singleton smoke
+        run: |
+          sage -python research/elliptic-curves/cas/run_curve302_closure_structure.py smoke
