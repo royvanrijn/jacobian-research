@@ -3,6 +3,39 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-DET1092-ROOTLESS-J2-COMPLETE-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "X1092 has exactly nineteen rootless rank-17 J2 frame types",
+      "scope": "The certified determinant1092 rank-seven Nishiyama auxiliary is enumerated through all sixteen D5 anchor orbits in the complete rooted Niemeier catalogue. Orthogonal projection norms and exact residual ADE label costs prune only impossible branches; rational LDL shell enumeration, integrality and primitivity checks retain 208 rootless embeddings in the declared Weyl cover, all in 2A7+2D5. Exact integral-isometry deduplication gives nineteen positive rank17 determinant1092 complement classes, all of minimum four. The recovered curve302 frame is uniquely class6; eighteen other classes are nonisometric to it. Every representative Gram, automorphism order, minimum-vector count, primitive embedding and class-assignment isometry is retained. A fresh run reproduces all sixteen anchor packets and the assembled certificate byte-for-byte. The replay uses the same enumerator, with a separate retained-witness checker, and is not independently implemented completeness verification. Embedding-cover multiplicities are not all embeddings or full ambient-isometry orbit counts. This is a J2/frame classification, not a J1/surface-automorphism classification, rational marked-nef-U realization, elliptic-equation catalogue or specialized rank result.",
+      "canonical_source": "elliptic-curves/notes/DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md",
+      "dependencies": [
+        "EC-DET1092-NISHIYAMA-AUXILIARY-20260910",
+        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19",
+        "EC-K3-H3-ROOTLESS-J2-COMPLETE"
+      ],
+      "checker": "elkies-k3/scripts/assemble_det1092_pruned_census.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:56f40a10fbb7a31f25f1bb8ec36859d3518b3e985f5ccc2a10bf7414be483e4e",
+      "software_lock": [
+        "elkies-k3/scripts/classify_det1092_rootless_j2_pruned.sage",
+        "elkies-k3/scripts/classify_det1092_rootless_j2_niemeier.sage",
+        "elkies-k3/scripts/assemble_det1092_pruned_census.sage",
+        "artifacts/generated-results/elliptic-curves/det1092_pruned_rootless_j2_census_v1.json",
+        "artifacts/generated-results/elliptic-curves/det1092_pruned_anchor_packets_v1.zip"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-EUCLIDEAN-FOUR-SPLIT-ADMISSIONS-20260910",
       "kind": "example",
       "state": "proved",

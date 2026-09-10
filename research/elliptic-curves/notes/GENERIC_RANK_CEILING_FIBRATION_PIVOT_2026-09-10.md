@@ -23,32 +23,33 @@ equation-realization proof.
 | Surface | Ceiling | Attainment | Lattice-type census | Production state |
 |---|---:|---|---|---|
 | `X948` | MW17 | rootless | complete at `O(NS)/J2`: two rank-17 rootless frame types, the published R17 and alternate-Q80 types | equation realization may proceed only through marked-`U` and exact equation gates |
-| `X1092` | MW17 | recovered determinant-1092 rootless curve302 parent | incomplete: one realized rootless type, no complete J2 census yet | blocked |
+| `X1092` | MW17 | recovered determinant-1092 rootless curve302 parent | complete: 19 rootless J2 types, including the known frame as class 6 | class 1 selected for marked-U realization; equations pending |
 
 The complete `X948` census is an enumeration of frame/isometry types, not an
 exact classification of fibration orbits under surface automorphisms: the
 known finite J1 count is between two and eight. It nevertheless supplies the
 right level for a fibration construction queue. The recovered `X1092` parent
-proves that its ceiling is attained, but it does **not** enumerate the other
-types. Treating that one parent as an exhaustive catalogue would be the same
-error as treating a successful parameter as a law.
+proves that its ceiling is attained. The now-complete
+[X1092 census](DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md) independently enumerates
+208 primitive embeddings in the Weyl cover and 19 complement types. The 18
+additional types require rational marked-U and equation realization.
 
 [`build_fibration_ceiling_atlas.py`](../cas/build_fibration_ceiling_atlas.py)
 binds the source certificates and creates a fail-closed preflight artifact.
-Its status is deliberately `X1092_J2_PENDING`; no rootless-neighbour equation
-or specialization search is allowed for that surface until the census closes.
+The historical v1 packet records `X1092_J2_PENDING`; v2 binds the completed
+census. New types may enter marked-U construction, while specialization stays
+blocked pending an exact rational equation and generic MW17 certificate.
 
-## Required X1092 proof computation
+## Completed X1092 proof computation
 
 The exact rank-seven Nishiyama auxiliary with opposite discriminant form is
 now retained in
 [`det1092_nishiyama_auxiliary_v1.json`](../../artifacts/generated-results/elliptic-curves/det1092_nishiyama_auxiliary_v1.json).
-Enumerate all its primitive embeddings into the 23 Niemeier lattices, use exact Weyl
-reduction to cover the embedding orbits, retain precisely rootless
-rank-17 complements, and deduplicate them by exact integral isometry. The
-result must record its mass/coverage accounting, each representative Gram and
-its realization status. Only then may an equation layer try to realize a
-marked nef `U` for each type over `Q`.
+Its complete primitive embedding cover through all Niemeier cases is now
+recorded in the linked census, with Weyl accounting, representative Grams,
+minimum data, automorphism orders and integral isometries. A clean replay
+reproduces all sixteen anchor packets. The equation layer may now attempt
+a marked nef `U` for each new type over `Q`.
 
 The existing generic `Genus(...).representatives()` interface is not an
 acceptable substitute here: in this environment it requires Magma, which is

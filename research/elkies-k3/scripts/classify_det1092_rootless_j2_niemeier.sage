@@ -23,7 +23,7 @@ CATALOG = ROOT / "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.
 ANCHORS = ROOT / "artifacts/generated-results/elkies-k3-niemeier-d5-anchor-orbits.json"
 AUXILIARY = ROOT / "artifacts/generated-results/elliptic-curves/det1092_nishiyama_auxiliary_v1.json"
 PARENT = ROOT / "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json"
-OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/det1092_rootless_j2_niemeier_census_v1.json"
+OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/det1092_rootless_j2_niemeier_census_v2.json"
 
 D5 = matrix(ZZ, [
     [2, -1, 0, 0, 0], [-1, 2, -1, 0, 0], [0, -1, 2, -1, -1],
@@ -116,7 +116,7 @@ def ldl(value):
         diagonal.append(value[row, row] - sum(lower[row, index] ** 2 * diagonal[index] for index in range(row)))
         assert diagonal[-1] > 0
         for later in range(row + 1, size):
-            lower[later, row] = (value[later, row] - sum(lower[later, index] * diagonal[index] * lower[row, index] for index in range(row))) / diagonal[index]
+            lower[later, row] = (value[later, row] - sum(lower[later, index] * diagonal[index] * lower[row, index] for index in range(row))) / diagonal[row]
     assert lower * diagonal_matrix(diagonal) * lower.transpose() == value
     return lower, diagonal
 
@@ -235,9 +235,16 @@ def build():
         assert d5 * gram * d5.transpose() == D5
         sixths, sixth_data = chamber_vectors(gram, d5, SIXTH_PAIRINGS, SIXTH_NORM, False)
         seventh_count = 0
+        seventh_accounting, seventh_geometries = Counter(), Counter()
         for sixth in sixths:
             first_six = d5.stack(matrix(ZZ, [sixth["vector"]]))
             sevenths, seventh_data = chamber_vectors(gram, first_six, SEVENTH_PAIRINGS, SEVENTH_NORM, True)
+            seventh_accounting["chambers_enumerated"] += 1
+            seventh_geometries[(seventh_data["residual_root_rank"], seventh_data["fixed_dimension"])] += 1
+            for key, value in seventh_data.items():
+                if key in {"residual_root_rank", "fixed_dimension"}:
+                    continue
+                seventh_accounting[key] += value
             for seventh in sevenths:
                 seventh_count += 1
                 basis = first_six.stack(matrix(ZZ, [seventh["vector"]]))
@@ -246,9 +253,8 @@ def build():
                 complement_gram = complement * gram * complement.transpose()
                 assert complement_gram.nrows() == 17 and complement_gram.det() == 1092
                 assert int(pari(complement_gram).qfminim(2)[0]) == 0
-                assert pari(frame).qfisom(pari(complement_gram)) != 0
-                rootless.append({"anchor": f'{anchor["niemeier"]}:{anchor["anchor_index"]}', "niemeier": anchor["niemeier"], "basis": basis, "complement": complement_gram, "sixth": sixth, "seventh": seventh, "seventh_data": seventh_data})
-        anchor_accounting.append({"anchor": f'{anchor["niemeier"]}:{anchor["anchor_index"]}', "niemeier": anchor["niemeier"], "sixth_candidates": len(sixths), "seventh_rootless_embeddings": seventh_count, "sixth_data": sixth_data})
+                rootless.append({"anchor": f'{anchor["niemeier"]}:{anchor["anchor_index"]}', "niemeier": anchor["niemeier"], "basis": basis, "complement": complement_gram, "sixth": sixth, "seventh": seventh, "isometric_to_recovered_curve302_frame": bool(pari(frame).qfisom(pari(complement_gram)) != 0)})
+        anchor_accounting.append({"anchor": f'{anchor["niemeier"]}:{anchor["anchor_index"]}', "niemeier": anchor["niemeier"], "sixth_candidates": len(sixths), "seventh_rootless_embeddings": seventh_count, "sixth_weyl_accounting": sixth_data, "seventh_weyl_accounting": {"aggregate_counts": {key: int(value) for key, value in seventh_accounting.items()}, "residual_geometry_histogram": [{"residual_root_rank": int(key[0]), "fixed_dimension": int(key[1]), "chambers": int(value)} for key, value in sorted(seventh_geometries.items())]}})
         print(f'DET1092J2|anchor={anchor_accounting[-1]["anchor"]}|sixth={len(sixths)}|rootless={seventh_count}', flush=True)
     classes = []
     for embedding in rootless:
@@ -261,9 +267,16 @@ def build():
     class_rows = []
     for index, item in enumerate(classes, 1):
         gram, representative = item["gram"], item["representative"]
-        class_rows.append({"class_index": index, "gram": rows(gram), "gram_sha256": gram_hash(gram), "determinant": int(gram.det()), "minimum": 4, "norm4_unoriented_pairs": int(pari(gram).qfminim(4)[0]) // 2, "automorphism_group_order": int(pari(gram).qfauto()[0]), "matches_recovered_curve302_frame": bool(pari(frame).qfisom(pari(gram)) != 0), "embedding_count_in_cover": item["count"], "anchor_counts": dict(sorted(item["anchors"].items())), "representative_embedding": {"anchor": representative["anchor"], "niemeier": representative["niemeier"], "auxiliary_basis_in_ambient": rows(representative["basis"]), "sixth_labels": representative["sixth"]["labels"], "seventh_labels": representative["seventh"]["labels"]}})
-    assert sum(row["matches_recovered_curve302_frame"] for row in class_rows) == 1
-    return {"schema": "elkies-k3.det1092-rootless-j2-niemeier-census.v1", "status": "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION", "inputs": {str(path.relative_to(ROOT)): digest(path) for path in (CATALOG, ANCHORS, AUXILIARY, PARENT)}, "classification_scope": {"proved": "Every embedding of the certified D5-containing auxiliary is covered by a complete D5 anchor orbit, a residual-Weyl dominant sixth vector, and a strictly dominant seventh vector. Exact integral ellipsoid enumeration and primitive checks retain precisely rootless rank17 complements, which are deduplicated by integral isometry.", "boundary": "This is an O(NS)/J2 frame classification. It is not a J1 surface-automorphism classification, a rational marked-U realization, or an equation catalogue."}, "accounting": {"rooted_niemeier_classes": 23, "D5_anchor_orbits": len(anchors["anchors"]), "primitive_rootless_embeddings_in_cover": len(rootless), "rootless_complement_isometry_classes": len(class_rows), "anchors": anchor_accounting}, "rootless_classes": class_rows}
+        # PARI returns [number of vectors, minimum, representatives].
+        raw_minimum_data = pari(gram).qfminim()
+        minimum_data = (raw_minimum_data[1], raw_minimum_data[0])
+        class_rows.append({"class_index": index, "gram": rows(gram), "gram_sha256": gram_hash(gram), "determinant": int(gram.det()), "minimum": int(minimum_data[0]), "minimum_vector_count": int(minimum_data[1]), "automorphism_group_order": int(pari(gram).qfauto()[0]), "matches_recovered_curve302_frame": bool(pari(frame).qfisom(pari(gram)) != 0), "embedding_count_in_cover": item["count"], "anchor_counts": dict(sorted(item["anchors"].items())), "representative_embedding": {"anchor": representative["anchor"], "niemeier": representative["niemeier"], "auxiliary_basis_in_ambient": rows(representative["basis"]), "sixth_labels": representative["sixth"]["labels"], "seventh_labels": representative["seventh"]["labels"]}})
+    recovered_classes = [row["class_index"] for row in class_rows if row["matches_recovered_curve302_frame"]]
+    if not recovered_classes:
+        raise ArithmeticError("recovered curve302 rootless frame is absent: missing embedding/orbit or classifier bug")
+    if len(recovered_classes) != 1:
+        raise ArithmeticError("isometry deduplication failed to merge recovered curve302 frame embeddings")
+    return {"schema": "elkies-k3.det1092-rootless-j2-niemeier-census.v2", "status": "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION", "inputs": {str(path.relative_to(ROOT)): digest(path) for path in (CATALOG, ANCHORS, AUXILIARY, PARENT)}, "classification_scope": {"proved": "Every embedding of the certified D5-containing auxiliary is covered by a complete D5 anchor orbit, a residual-Weyl dominant sixth vector, and a strictly dominant seventh vector. Exact integral ellipsoid enumeration and primitive checks retain precisely rootless rank17 complements, which are deduplicated by integral isometry.", "boundary": "This is an O(NS)/J2 frame classification. It is not a J1 surface-automorphism classification, a rational marked-U realization, or an equation catalogue."}, "accounting": {"rooted_niemeier_classes": 23, "D5_anchor_orbits": len(anchors["anchors"]), "primitive_rootless_embeddings_in_cover": len(rootless), "rootless_complement_isometry_classes": len(class_rows), "recovered_curve302_matching_class_indices": recovered_classes, "anchors": anchor_accounting}, "rootless_classes": class_rows}
 
 
 def canonical(value):

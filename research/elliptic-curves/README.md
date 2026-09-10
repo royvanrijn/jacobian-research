@@ -5,8 +5,10 @@ lane: its first new X1092 parent gives a certified 16→18 commissioning
 trajectory in eight calls, but its first panels do not yet justify expansion.
 The active construction gate is the
 [generic-rank ceiling fibration pivot](notes/GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md):
-enumerate rootless MW17 frame types before launching another fibration or
-specialization search. The detached controller is stopped with its receipts
+the [completed X1092 census](notes/DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md)
+has 19 rootless MW17 frame types, including 18 beyond the known curve302 frame.
+Class 1 is first in the prospective marked-U realization queue; new equations
+and generic MW17 certificates must precede specialization. The detached controller is stopped with its receipts
 and complete point clouds retained.
 Machine results remain separate from the curated curve inventory.
 

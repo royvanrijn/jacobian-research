@@ -25,7 +25,8 @@ X948_J1 = GENERATED / "elkies-k3-rootless-j1-uniform-bound-v1.json"
 X1092_PICARD = GENERATED / "elliptic-curves/curve302_parent_geometric_picard19_v1.json"
 X1092_PARENT = GENERATED / "elliptic-curves/curve302_recovered_mw17_parent_v1.json"
 X1092_AUXILIARY = GENERATED / "elliptic-curves/det1092_nishiyama_auxiliary_v1.json"
-DEFAULT_OUTPUT = GENERATED / "elliptic-curves/fibration-generic-rank-ceiling-v1.json"
+X1092_J2 = GENERATED / "elliptic-curves/det1092_pruned_rootless_j2_census_v1.json"
+DEFAULT_OUTPUT = GENERATED / "elliptic-curves/fibration-generic-rank-ceiling-v2.json"
 
 
 def read(path: Path) -> dict:
@@ -49,6 +50,10 @@ def build() -> dict:
     x948_j2, x948_j1 = read(X948_J2), read(X948_J1)
     x1092_picard, x1092_parent = read(X1092_PICARD), read(X1092_PARENT)
     x1092_auxiliary = read(X1092_AUXILIARY)
+    x1092_j2 = read(X1092_J2)
+    assert x1092_j2["status"] == "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION"
+    assert x1092_j2["accounting"]["complete_anchor_count"] == 16
+    assert len(x1092_j2["accounting"]["known_frame_matching_class_indices"]) == 1
 
     assert x948_j2["status"] == "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION"
     x948_classes = x948_j2["rootless_classes"]
@@ -68,9 +73,9 @@ def build() -> dict:
     assert x1092_auxiliary["unimodular_glue"]["complement_isometric_to_recovered_frame"]
 
     return {
-        "schema": "elliptic-curves.fibration-generic-rank-ceiling.v1",
-        "status": "PASS_EXACT_CEILINGS_X948_J2_COMPLETE_X1092_J2_PENDING",
-        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY)},
+        "schema": "elliptic-curves.fibration-generic-rank-ceiling.v2",
+        "status": "PASS_EXACT_CEILINGS_BOTH_ROOTLESS_J2_CENSUSES_COMPLETE",
+        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY, X1092_J2)},
         "shioda_tate": {
             "formula": "rank(MW) = rho(Xbar) - 2 - rank(reducible-fibre root lattice)",
             "consequence": "A Picard-rank-19 Jacobian K3 has generic MW rank at most 17; equality requires a rootless fibration.",
@@ -111,22 +116,27 @@ def build() -> dict:
                     "reducible_fibre_root_rank": 0,
                     "meaning": "The recovered curve302 parent attains MW17, so the ceiling is attained.",
                 },
-                "j2_frame_census": "PENDING",
+                "j2_frame_census": "COMPLETE",
+                "j1_surface_automorphism_classification": "UNKNOWN",
                 "nishiyama_auxiliary": {
                     "status": x1092_auxiliary["status"],
                     "height_determinant": x1092_auxiliary["auxiliary"]["determinant"],
                     "discriminant_generator_q": x1092_auxiliary["auxiliary"]["discriminant_generator_q"],
                 },
-                "rootless_j2_lattice_types": "UNKNOWN_BEYOND_THE_REALIZED_DETERMINANT1092_TYPE",
-                "rootless_neighbour_equation_search": "BLOCKED_PENDING_COMPLETE_ROOTLESS_J2_CENSUS",
+                "rootless_j2_lattice_types": [
+                    {key: row[key] for key in ("class_index", "gram_sha256", "determinant", "minimum", "matches_recovered_curve302_frame")}
+                    for row in x1092_j2["rootless_classes"]
+                ],
+                "rootless_neighbour_equation_search": "ADMISSIBLE_AFTER_EXACT_MARKED_U_GATES",
+                "new_frame_specialization_search": "BLOCKED_PENDING_EXACT_RATIONAL_EQUATION_AND_GENERIC_MW17_CERTIFICATE",
             },
         ],
         "production_gate": {
             "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-            "next_required_proof": "For X1092, enumerate every primitive embedding of the certified rank-seven Nishiyama auxiliary through all Niemeier lattices, and deduplicate rootless rank-17 complements by integral isometry.",
+            "next_required_proof": "Realize a new X1092 type as a rational marked nef U, compile its exact elliptic equation, and certify its generic rational MW17 sections before specialization.",
             "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
         },
-        "claim_boundary": "This records exact generic-rank ceilings and the present completeness of their frame classifications. It neither classifies X1092 rootless frames nor constructs any new fibration, equation, rational point, specialization rank, or conductor record.",
+        "claim_boundary": "This binds exact generic-rank ceilings and both complete J2 frame classifications. It does not classify J1 surface-automorphism orbits or construct new rational fibrations, equations, points, specialization ranks, or conductor records.",
     }
 
 
