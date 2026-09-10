@@ -1,5 +1,10 @@
 # X1092: nineteen rootless MW17 frame types
 
+**Realization follow-up:** [class 1 now has a rational marked nef U, exact
+equation and saturated MW17 basis](X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md).
+The census and prospective ranking below remain the original lattice-only
+certificates; arithmetic strict-class construction precedes the parameter panel.
+
 The complete pruned Niemeier census has **19 integral-isometry classes** of
 rootless rank-17 complements of determinant 1092. The recovered curve302 frame
 is class **6**. Thus there are **18 additional J2/frame types** on this lattice.

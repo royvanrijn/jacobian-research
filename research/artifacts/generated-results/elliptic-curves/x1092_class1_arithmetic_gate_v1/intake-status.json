@@ -1,0 +1,31 @@
+{
+  "V3_release": false,
+  "allowed_class_indices": [
+    1
+  ],
+  "bindings": {
+    "generic_arithmetic_sha256": "b3d61ee1a75f8cde3135be339adfe2fb3c7394596f83115ca894582b82c185de",
+    "intake_sha256": "b00953753a86f1bcf61f68a7736a9b585676dc887e8d4a872ffaab4075035d75",
+    "parent_sha256": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862"
+  },
+  "candidate_supplied": false,
+  "future_contract": [
+    "Pin the implemented checker and its declared domain; do not infer a Q(s) theorem from number-field calibration.",
+    "Bind the exact cubic, marked basis, inherited image, support, candidate and proof dependencies to the frozen parent.",
+    "Replay principal-square identities and an applicable novelty certificate modulo the complete inherited image.",
+    "Only a prospective novelty PASS may dispatch bounded cover construction and solubility work.",
+    "Replay a rational point on the exact fibre and its quotient-independence certificate before allowing V3."
+  ],
+  "gates": {
+    "cover_construction": "BLOCKED",
+    "cover_solubility": "BLOCKED",
+    "independent_quotient_direction": "BLOCKED",
+    "new_rational_point": "BLOCKED",
+    "prospective_class_novelty": "UNAVAILABLE"
+  },
+  "next_action": "WAIT_FOR_APPLICABLE_EXACT_NOVELTY_VERIFIER",
+  "parameter_panel_enabled": false,
+  "reason": "Agent 1 confirms no prospective novelty verifier exists yet. The fixed-number-field principal-recipe adapter is neither a Q(s) interface nor a novelty certificate.",
+  "schema": "x1092.class1.novelty-intake.v1",
+  "status": "UNAVAILABLE_APPLICABLE_PROSPECTIVE_NOVELTY_CHECKER"
+}

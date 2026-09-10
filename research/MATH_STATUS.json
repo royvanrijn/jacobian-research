@@ -54579,6 +54579,38 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "X1092 rootless J2 class1 has an exact rational elliptic realization with saturated MW17",
+      "scope": "The requested class1 embedding33 is transported integrally into the recovered curve302 rational NS marking, with exact full Gram identity and complement isometry. The retained common primitive rank16 determinant4100 core with known embedding25 and sixth index155 is checked; the chosen degree2 transport is not claimed to extend that particular core identification. Generic norm12 orbit109158 supplies D=(3,2,w), primitive and effective by Riemann-Roch, nef by a complete old-degree1/2 negative-wall test, with the existing rational zero O and D.O=1. An exact two-dimensional RR kernel compiles a rational elliptic equation and mutually inverse birational maps to the source K3. Sixteen old sections and one rational bisection give seventeen exact rational sections with positive height Gram determinant1092 and index1 in the rootless frame. Geometric Picard19 gives generic rank exactly17. A separate read-only JSON checker replays the marking, nefness, equation/maps, section classes and coordinates, height Gram, compact chart and four bounded generic carrier identities. Class1 is nonisometric to curve302 class6; this is one rational J2 realization, not a J1 classification or a new K3. Arithmetic strict-class construction and the complete inherited half-ideal image remain UNKNOWN. No specialization panel, specialized rank or conductor record is claimed.",
+      "canonical_source": "elliptic-curves/notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md",
+      "dependencies": [
+        "EC-DET1092-ROOTLESS-J2-COMPLETE-20260910",
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19",
+        "EC-CURVE302-PARENT-DEGREE2-MULTISECTION-QUOTIENT"
+      ],
+      "checker": "elkies-k3/scripts/verify_x1092_class1_realization.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:18eebc471542b457ffb4a63035cf23e245afa0504647ab20c8ab625c0dabf639",
+      "software_lock": [
+        "elkies-k3/scripts/realize_x1092_class1.sage",
+        "elkies-k3/scripts/verify_x1092_class1_realization.sage",
+        "artifacts/generated-results/elliptic-curves/x1092_class1_realization_manifest_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

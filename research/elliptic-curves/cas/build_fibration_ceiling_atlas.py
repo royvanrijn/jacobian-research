@@ -26,6 +26,9 @@ X1092_PICARD = GENERATED / "elliptic-curves/curve302_parent_geometric_picard19_v
 X1092_PARENT = GENERATED / "elliptic-curves/curve302_recovered_mw17_parent_v1.json"
 X1092_AUXILIARY = GENERATED / "elliptic-curves/det1092_nishiyama_auxiliary_v1.json"
 X1092_J2 = GENERATED / "elliptic-curves/det1092_pruned_rootless_j2_census_v1.json"
+X1092_CLASS1 = GENERATED / "elliptic-curves/x1092_class1_realization_compact_parent_v1.json"
+X1092_SECTIONS = GENERATED / "elliptic-curves/x1092_class1_realization_sections_v1.json"
+X1092_STRICT = GENERATED / "elliptic-curves/x1092_class1_realization_strict_preflight_v1.json"
 DEFAULT_OUTPUT = GENERATED / "elliptic-curves/fibration-generic-rank-ceiling-v2.json"
 
 
@@ -51,6 +54,12 @@ def build() -> dict:
     x1092_picard, x1092_parent = read(X1092_PICARD), read(X1092_PARENT)
     x1092_auxiliary = read(X1092_AUXILIARY)
     x1092_j2 = read(X1092_J2)
+    class1, sections, strict = read(X1092_CLASS1), read(X1092_SECTIONS), read(X1092_STRICT)
+    assert class1["status"] == "PASS_EXACT_POLYNOMIAL_MW17_PARENT"
+    assert sections["status"] == "PASS_EXACT_RATIONAL_GENERIC_RANK17"
+    assert sections["index_in_geometric_frame"] == 1
+    assert strict["parent_sha256"] == digest(X1092_CLASS1)
+    assert strict["parameter_panel"] == "BLOCKED_NOT_COMMISSIONED"
     assert x1092_j2["status"] == "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION"
     assert x1092_j2["accounting"]["complete_anchor_count"] == 16
     assert len(x1092_j2["accounting"]["known_frame_matching_class_indices"]) == 1
@@ -75,7 +84,7 @@ def build() -> dict:
     return {
         "schema": "elliptic-curves.fibration-generic-rank-ceiling.v2",
         "status": "PASS_EXACT_CEILINGS_BOTH_ROOTLESS_J2_CENSUSES_COMPLETE",
-        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY, X1092_J2)},
+        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY, X1092_J2, X1092_CLASS1, X1092_SECTIONS, X1092_STRICT)},
         "shioda_tate": {
             "formula": "rank(MW) = rho(Xbar) - 2 - rank(reducible-fibre root lattice)",
             "consequence": "A Picard-rank-19 Jacobian K3 has generic MW rank at most 17; equality requires a rootless fibration.",
@@ -127,16 +136,18 @@ def build() -> dict:
                     {key: row[key] for key in ("class_index", "gram_sha256", "determinant", "minimum", "matches_recovered_curve302_frame")}
                     for row in x1092_j2["rootless_classes"]
                 ],
-                "rootless_neighbour_equation_search": "ADMISSIBLE_AFTER_EXACT_MARKED_U_GATES",
-                "new_frame_specialization_search": "BLOCKED_PENDING_EXACT_RATIONAL_EQUATION_AND_GENERIC_MW17_CERTIFICATE",
+                "rootless_neighbour_equation_search": "PAUSED_FROZEN_CLASS1_ONLY",
+                "allowed_realization_class_indices": [1],
+                "new_rationally_realized_class": {"class_index": 1, "generic_rank": 17, "saturated_basis": True, "parent": relative(X1092_CLASS1)},
+                "new_frame_specialization_search": "BLOCKED_PENDING_PROSPECTIVE_STRICT_CLASS_CONSTRUCTION",
             },
         ],
         "production_gate": {
             "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-            "next_required_proof": "Realize a new X1092 type as a rational marked nef U, compile its exact elliptic equation, and certify its generic rational MW17 sections before specialization.",
+            "next_required_proof": "Class1 is frozen. Generic cubic and inherited norm-square inputs are sealed. An applicable prospective novelty checker remains UNAVAILABLE; integrate its actual implementation before cover/solubility work. Only certified rational independent directions may release V3; no other classes or parameter panel.",
             "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
         },
-        "claim_boundary": "This binds exact generic-rank ceilings and both complete J2 frame classifications. It does not classify J1 surface-automorphism orbits or construct new rational fibrations, equations, points, specialization ranks, or conductor records.",
+        "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1 rational realization certificate. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
     }
 
 

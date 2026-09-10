@@ -1,0 +1,26 @@
+{
+  "V3": "DISABLED_UNTIL_EXACT_RATIONAL_POINT_AND_QUOTIENT_CERTIFICATES",
+  "allowed_class_indices": [
+    1
+  ],
+  "files": {
+    "marking-certificate.json": "67539fdd0f833710e7fbf8b6da0f6ca2f9a7718f343bc084b8ba6e298a028630",
+    "parent.json": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862",
+    "realization-manifest.json": "19a9119bbd2760db33d4d980dec1d99fe29ce8a8151fc18f863680fc7194c803",
+    "section-certificate.json": "30e93bcf22543aef19bebff40bfe07036f718450e6b412aa76f4d6f702048649"
+  },
+  "freeze_script_sha256": "5677ecf974968cbd43a19c7de4cbfd7df3734afc0a598a84a983d4527cde44d3",
+  "generic_input_scope": "Exact cubic algebra, inherited generic section representatives and norm-square identities; no parameter selection, points on specialized fibres or arithmetic-space completeness claims.",
+  "next_gate": "AGENT1_PROSPECTIVE_STRICT_CLASS_NOVELTY_CHECKER",
+  "parameter_panel": "DISABLED",
+  "parent_sha256": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862",
+  "required_order": [
+    "prospective_class_novelty",
+    "cover_construction",
+    "rational_solubility",
+    "independent_quotient_direction",
+    "V3"
+  ],
+  "schema": "x1092.class1.arithmetic-freeze.v1",
+  "status": "FROZEN_CERTIFIED_PARENT_GENERIC_INPUTS_ONLY"
+}

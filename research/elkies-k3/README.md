@@ -11,6 +11,11 @@ neighbour, descent, and specialization calculations require explicit gates and
 reproducible, checkpointed outputs. `../MATH_STATUS.json` remains the authority
 for exact claim status.
 
+[X1092 class 1 is now realized over Q](../elliptic-curves/notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md):
+exact marked nef U, rational equation and birational maps, and a saturated
+MW17 basis distinct from the curve302 frame. Arithmetic strict-class
+construction remains UNKNOWN; no parameter panel has started.
+
 The shared [pointed-quartic search API](../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md)
 now serves MW16, MW17, anchored MW18 and zero-gain rescue. Its MW16 regression
 retains all 55 calibrated control directions; sensitivity on other families

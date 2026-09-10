@@ -1,0 +1,53 @@
+{
+  "schema": "x1092.class1.realization.manifest.v1",
+  "status": "PASS_EXACT_RATIONAL_NEF_U_EQUATION_SATURATED_MW17",
+  "class_index": 1,
+  "known_class_index": 6,
+  "known_embedding_index": 25,
+  "requested_embedding_index": 33,
+  "sixth_index": 155,
+  "shared_core_determinant": 4100,
+  "generic_rank_exact": 17,
+  "height_determinant": 1092,
+  "index_in_geometric_frame": 1,
+  "proof_packets": {
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_0_v1.json": "9db44c3608af468f00cff75a0f885f3c32b68002b3405745de5c8175664c588a",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_1_v1.json": "e9de1ba5a8720b37225a3c54d013005347584776084dd16cc4684cefea53805f",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_2_v1.json": "0644569cf496e33e00fddfd14d0e9ebbc9a40d6567fb4c02181532a0f31cd92d",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_3_v1.json": "9b55a85d5c35fb1f896686dc9c6614aadda46dfa032b663f96edbf4b8bc25e24",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_protocol_triples_v1.json": "8b0166ed4cb2d2b6f9082b2705ffbf07122c5bc038ac3c57a9c88b9fefaf8564",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_carrier_protocol_v1.json": "fb7d4ffa1c9fae95fe1b9157be26340d155ed08c6162e5b5c6531d289721ddf2",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_compact_parent_v1.json": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_equation_v1.json": "103a1e9cdcfb77dd89d9fd0d54a0db25e2bae2fc93f7423dc023425f3fa8e1cf",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_glue_v1.json": "1ae2880f98b812ea93a1391df454afde78f44921cc3e31e7c8b0c27a624692e6",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_marking_v1.json": "67539fdd0f833710e7fbf8b6da0f6ca2f9a7718f343bc084b8ba6e298a028630",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_parent_v1.json": "bded95ed5f59003ce44ccb05ba62f13f2927d4d9a4262eac5ffec21cfd3f63cb",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_rr_v1.json": "fd98185a2c1a64f84ccfc6c4c8680d49d4d49dcfd15567044f9d3e53e635d180",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_section_plan_v1.json": "d913b6281643e8913676fd512c23e5d1fa7e6caa4f5fadf3d6858d87389f49c1",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_sections_progress_v1.json": "95ba7a9439b943eed46ecc72043006998b2e190595b5e882bd6b6443d8965481",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_sections_v1.json": "30e93bcf22543aef19bebff40bfe07036f718450e6b412aa76f4d6f702048649",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_strict_preflight_v1.json": "bbcfc47afa59196902630059066f6d9e092a7365671f20a185a4ed1b413ad44a",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_trace_v1.json": "112100dd1d79687db92153953f237c526fcde910e54f5c17c7bf47ac13a8c21e"
+  },
+  "software": {
+    "elkies-k3/scripts/realize_x1092_class1.sage": "dc0a8dd62318724a245efcb577dc13048a94f471e7995fb8098156c5a15c8900",
+    "elkies-k3/scripts/verify_x1092_class1_realization.sage": "18eebc471542b457ffb4a63035cf23e245afa0504647ab20c8ab625c0dabf639"
+  },
+  "read_only_replay": {
+    "status": "PASS",
+    "command": "sage -python research/elkies-k3/scripts/verify_x1092_class1_realization.sage",
+    "stdout": "PASS full NS transport, class1 isometry, distinct frame, nef fibre and rational zero\nPASS exact equation and mutually inverse rational maps\nPASS 17 exact rational sections, saturated height Gram determinant1092, generic rank17\nPASS normalized and compact parent transports; no specialization used\nPASS four generic carrier equations/maps; arithmetic strict classes remain UNKNOWN\n",
+    "stdout_sha256": "b0459990597eaeb1301fffa2bc38d29a1fe8ce3fba4549c238751f44653cc858",
+    "boundary": "Separate JSON checker, same Sage/PARI engine; not formal verification."
+  },
+  "negative_test": {
+    "status": "PASS_TAMPERED_GRAM_REJECTED",
+    "returncode": 1,
+    "mutation": "frame_gram[0][0] += 2"
+  },
+  "carrier_constructions": 4,
+  "arithmetic_strict_class": "UNKNOWN",
+  "parameter_panel": "BLOCKED_NOT_COMMISSIONED",
+  "specializations_tested": 0,
+  "claim_boundary": "One new realized J2 frame on the known X1092 surface, not a J1 classification, new K3, new specialized rank or conductor record."
+}

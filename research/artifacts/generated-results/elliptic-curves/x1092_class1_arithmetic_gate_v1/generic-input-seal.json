@@ -1,0 +1,6 @@
+{
+  "freeze_sha256": "b0508d7164716f1073cfcf0385e59b65b49a5464174c70ec7760fc8c24af199a",
+  "generic_arithmetic_sha256": "b3d61ee1a75f8cde3135be339adfe2fb3c7394596f83115ca894582b82c185de",
+  "producer_sha256": "924881dcd7c6ff884309d248db5e2f436a8d0abfeafc8ed2517c9fd32d97eb4c",
+  "schema": "x1092.class1.generic-input-seal.v1"
+}

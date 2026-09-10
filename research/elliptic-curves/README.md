@@ -7,8 +7,11 @@ The active construction gate is the
 [generic-rank ceiling fibration pivot](notes/GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md):
 the [completed X1092 census](notes/DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md)
 has 19 rootless MW17 frame types, including 18 beyond the known curve302 frame.
-Class 1 is first in the prospective marked-U realization queue; new equations
-and generic MW17 certificates must precede specialization. The detached controller is stopped with its receipts
+[Class 1 is now realized over Q](notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md),
+with exact birational maps and seventeen saturated rational generic sections.
+The [parent is frozen for generic arithmetic intake](notes/X1092_CLASS1_FROZEN_ARITHMETIC_GATE_2026-09-10.md);
+the applicable prospective novelty checker is UNAVAILABLE. Other classes,
+the parameter panel and V3 release remain blocked. The detached controller is stopped with its receipts
 and complete point clouds retained.
 Machine results remain separate from the curated curve inventory.
 

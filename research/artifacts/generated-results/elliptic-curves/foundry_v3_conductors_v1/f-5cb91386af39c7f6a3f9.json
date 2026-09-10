@@ -1,0 +1,89 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-5cb91386af39c7f6a3f9/build.supervisor.json": "31d79b0c72520d33c735c38b08b1447be7d55f017dcf142ef974506a0957fa9a",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-5cb91386af39c7f6a3f9/conductor.json": "f3c5b4d6f6a7e5ca183df417916d5152683363a6c9b4818698c1ae79e06377d4",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-5cb91386af39c7f6a3f9/input.json": "aecdb085eab0d714ad82ff9cf59d0f9eee459cc4f880ddc14b423873aed0ea2e",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-5cb91386af39c7f6a3f9/replay.supervisor.json": "5f3ab668dba225bbba79a91c5eeb5f549dc1ea7b82d3cc686661ebd1fa204ac6"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "226590",
+    "conductor_upper_bound": "1884556388355723081501910522114318837456167997829482659095419775332112060009752129099355276067355497520523863836932765511390216930",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-10036299986413501192078901527640363260550579138148507",
+      "400490421207311742146593743639715161763520020168228692875615113429911112071606"
+    ],
+    "discriminant_abs": "4590100707546564458574633614455508431734673910660235534755192201195430788715508547665489250681178488531765550174286902887276763573284801457054472470528000000",
+    "exact_conductor": null,
+    "id": "f-5cb91386af39c7f6a3f9",
+    "input_sha256": "aecdb085eab0d714ad82ff9cf59d0f9eee459cc4f880ddc14b423873aed0ea2e",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 27,
+        "kodaira": "I15",
+        "minimal_discriminant_valuation": 15,
+        "pari_local_reduction": "[1, 19, [2, -1, 1, 4], 15]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 23,
+        "kodaira": "I11",
+        "minimal_discriminant_valuation": 11,
+        "pari_local_reduction": "[1, 15, [3, 3, 0, 0], 11]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 6,
+        "kodaira": "I6",
+        "minimal_discriminant_valuation": 6,
+        "pari_local_reduction": "[1, 10, [1, 0, 0, 0], 6]",
+        "prime": "5",
+        "prime_certificate": "5"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 4,
+        "kodaira": "I4",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+        "prime": "7",
+        "prime_certificate": "7"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "83",
+        "prime_certificate": "83"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 19,
+    "remaining_cofactor": "8317032474318032929528710543776507513377324673769727962820158768401571384481892974532659323303568107685793123425273690416127",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-5cb91386af39c7f6a3f9",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}
