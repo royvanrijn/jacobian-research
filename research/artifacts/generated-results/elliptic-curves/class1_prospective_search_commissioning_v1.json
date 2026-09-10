@@ -1,0 +1,65 @@
+{
+  "schema": "class1.prospective-search.commissioning.v1",
+  "status": "RUNNING_DETACHED_WITH_FIRST_TWO_CERTIFIED_EXPOSURES",
+  "plan": {
+    "control_modulus": 8,
+    "control_residue": 7,
+    "cost_rule": "per-parameter scoring CPU plus equal share of cold residue-table CPU, and isolated process-tree search CPU including bank, points, replay and reconciliation; preparation cost reported separately.",
+    "cumulative_rank_allowances": {
+      "17": 24,
+      "20": 256,
+      "23": 1024,
+      "25": 2048,
+      "27": 8192
+    },
+    "failure_semantics": "Censored/failed/generic-gate misses remain UNKNOWN and retain all logs/clouds; no automatic repeat of the same failed batch.",
+    "full_cloud_reconciliation": "Every batch, including below23, with two finite certificate implementations.",
+    "height": 125000,
+    "historical_exceptional_inputs": false,
+    "initial_calls": 24,
+    "initial_offset": 0,
+    "initial_window": 65536,
+    "job_rss_bytes": 3221225472,
+    "job_wall_seconds": 7200,
+    "normalized_parent_sha256": "22491f7474564528aa7b2e7fff2a5da7c17d2f4b67941def57d2341d68265f16",
+    "other_parent_classes_enabled": false,
+    "parent_sha256": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862",
+    "root": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/class1-prospective-v1/runtime/research",
+    "sage": "/home/royvanrijn/.local/bin/sage",
+    "schema": "class1.prospective-search.v1",
+    "score_definition": "sum round(1e12*(2-a_p)*log(p)/(p+1-a_p)) over smooth reductions of coefficientwise p-minimized charts; skipped local singular reductions are recorded, not rank exclusions.",
+    "score_prime_bound": 997,
+    "source_commit": "30916138847626a45b8a80e2f67291271663a0f2",
+    "strict_class_required": false,
+    "subsequent_window_rule": "contiguous address windows, double size up to 262144; freeze each before scoring",
+    "workers": 2
+  },
+  "plan_sha256": "02789d371e91bd0e99f80ef5069f775dcffc4e329fcfeff4e1087fb80736ecaa",
+  "frozen_manifest_sha256": "feebac3aeaf0bb234b17cf8fa7fc12651e28d19a9698634040aba318a8fed89a",
+  "initial_scores_sha256": "80d8aae0fd9ce26e433ba64a0d93bbe44523679a48b16efc9d9722383fb4fc9b",
+  "initial_queue_sha256": "019a2d1f9b136d9db441b15bdb089a7fe1777606fcedf389f255347c183534a7",
+  "first_completed": [
+    {
+      "index": 10074,
+      "parameter": "131/167",
+      "rank_lower_bound": 17,
+      "calls": 24,
+      "total_cpu_seconds": 47.46832318822103,
+      "packet_sha256": "4ab1f0b9b630ba0cb2cbbd6d70f228457acfa22fe122fc4363a55904cb64e1d4",
+      "terminal_sha256": "6b868199a22a948b433b3df07d392da05a4cb233a0951bbf626a8bb5a8e1f1d2"
+    },
+    {
+      "index": 40845,
+      "parameter": "-199/60",
+      "rank_lower_bound": 17,
+      "calls": 24,
+      "total_cpu_seconds": 49.73052089022102,
+      "packet_sha256": "a8d3383adf77b773cf0e374531d3f1f931935974ea30cab7ccf6048c0a195edb",
+      "terminal_sha256": "5597869feb821e259e8d196910392402227fd72db4c3e70e9529c9211e1bfa42"
+    }
+  ],
+  "strict_class_prerequisite": false,
+  "other_parent_classes_enabled": false,
+  "new_high_rank_records": null,
+  "boundary": "Commissioning snapshot only. Complete first-window score rows, controls, per-parameter cost and point packets retained under the campaign directory; no rank20/23/27 or public-novelty claim."
+}

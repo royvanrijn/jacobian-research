@@ -1,5 +1,11 @@
 # Frozen class-1 arithmetic intake
 
+**Operational update:** the subsequent user authorization starts
+[ordinary prospective search](CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md).
+The strict-class prerequisite below is historical for ordinary search and
+still applies only to that separate construction intake. Parent bytes remain
+frozen; the unavailable strict checker does not block ordinary V3 exposure.
+
 The [certified class-1 parent](X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md)
 is frozen byte-for-byte, SHA256
 `7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862`.

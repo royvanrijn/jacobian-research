@@ -1,8 +1,9 @@
 # X1092 class 1: an exact rational MW17 realization
 
-**Current operation:** [the certified parent is frozen for arithmetic intake](X1092_CLASS1_FROZEN_ARITHMETIC_GATE_2026-09-10.md).
-Only generic inputs are prepared; the applicable prospective novelty checker
-is unavailable. Other classes and the parameter panel remain closed.
+**Current operation:** [ordinary prospective search is running](CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
+on the byte-frozen parent. The strict-class prerequisite in the original
+realization handoff below has been removed for ordinary search. The separate
+arithmetic construction intake remains UNKNOWN; other parent classes are paused.
 
 **Completed:** a primitive rational marked nef `U`, an exact rational elliptic
 equation and birational maps to the recovered source K3, and seventeen rational

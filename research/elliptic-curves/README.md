@@ -9,10 +9,13 @@ the [completed X1092 census](notes/DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md)
 has 19 rootless MW17 frame types, including 18 beyond the known curve302 frame.
 [Class 1 is now realized over Q](notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md),
 with exact birational maps and seventeen saturated rational generic sections.
-The [parent is frozen for generic arithmetic intake](notes/X1092_CLASS1_FROZEN_ARITHMETIC_GATE_2026-09-10.md);
-the applicable prospective novelty checker is UNAVAILABLE. Other classes,
-the parameter panel and V3 release remain blocked. The detached controller is stopped with its receipts
-and complete point clouds retained.
+The equation remains frozen. Its [ordinary commissioning panel](notes/CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
+is capped at64 ranked fibres and16 independent controls from the unchanged65,536-address window.
+The [conditional frame transition](notes/X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md)
+escalates any certified ≥20 fibre before moving frames; otherwise a complete null panel
+releases exact realization of the next low-cost frame, class3, followed by32+8 commissioning.
+Strict-class selection remains a separate optional lane. Earlier controllers and
+their complete point clouds are retained.
 Machine results remain separate from the curated curve inventory.
 
 <!-- status-consumer: EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910 5be8375fcf2cdfbe -->

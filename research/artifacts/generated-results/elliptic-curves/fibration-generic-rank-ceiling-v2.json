@@ -14,7 +14,7 @@
   "production_gate": {
     "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
     "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-    "next_required_proof": "Class1 is frozen. Generic cubic and inherited norm-square inputs are sealed. An applicable prospective novelty checker remains UNAVAILABLE; integrate its actual implementation before cover/solubility work. Only certified rational independent directions may release V3; no other classes or parameter panel."
+    "next_required_proof": "Class1 commissioning is capped at64 ranked and16 controls, with frozen scoring. Any certified rank>=20 escalates before a frame transition. A complete null panel releases exact class3 realization and independent replay before a32-ranked/8-control panel. This operational null is not a rank bound. Strict-class novelty remains optional; other frame types remain uncommissioned."
   },
   "schema": "elliptic-curves.fibration-generic-rank-ceiling.v2",
   "shioda_tate": {
@@ -56,14 +56,16 @@
     },
     {
       "allowed_realization_class_indices": [
-        1
+        1,
+        3
       ],
       "ceiling_attaining_root_rank": 0,
+      "class3_release_condition": "Complete class1 panel of64 ranked and16 independent controls with no certified rank>=20; UNKNOWN does not release it.",
       "generic_MW_ceiling": 17,
       "geometric_picard_rank": 19,
       "j1_surface_automorphism_classification": "UNKNOWN",
       "j2_frame_census": "COMPLETE",
-      "new_frame_specialization_search": "BLOCKED_PENDING_PROSPECTIVE_STRICT_CLASS_CONSTRUCTION",
+      "new_frame_specialization_search": "AUTHORIZED_ORDINARY_PROSPECTIVE_SEARCH_WITH_CERTIFIED_GENERIC_SEED_GATE",
       "new_rationally_realized_class": {
         "class_index": 1,
         "generic_rank": 17,
@@ -540,7 +542,8 @@
           "minimum": 4
         }
       ],
-      "rootless_neighbour_equation_search": "PAUSED_FROZEN_CLASS1_ONLY",
+      "rootless_neighbour_equation_search": "CLASS3_CONDITIONAL_ON_COMPLETE_NULL_CLASS1_COMMISSIONING",
+      "strict_class_selector_required_for_ordinary_search": false,
       "surface": "X1092"
     }
   ]

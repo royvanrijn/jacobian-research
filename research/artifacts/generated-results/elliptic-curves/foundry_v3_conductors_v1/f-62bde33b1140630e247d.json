@@ -1,0 +1,98 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-62bde33b1140630e247d/build.supervisor.json": "2443aca36eed5e64067a5157e8dc0699795f851144c56ed811c1475e71a5c49d",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-62bde33b1140630e247d/conductor.json": "187ec7c4b4929cecd4008319669853014a98fc5ee5629e1fd4271e4d966ee2ac",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-62bde33b1140630e247d/input.json": "82dd0812c7275597c1fc7781eae37b5f57775b06029b3f3027ac01b32ad1864c",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-62bde33b1140630e247d/replay.supervisor.json": "a313d88f8f6c8bcfbb0c389ffb168eb86021cca264525a042c20d01c8c845f3b"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "167207040",
+    "conductor_upper_bound": "36397203094548229133966827384817564807199614128392345161354557104090078024048796314887205684837010144387701120",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-23175874210163447380390545198619308563875870684992",
+      "43241074086280156436251687819832451995091640673085648305556351414646680576"
+    ],
+    "discriminant_abs": "11061356376307478386928205608188777007522739582891797550231130019694384994430068938132686804806581817390671378480277113946568072673422096832921600000",
+    "exact_conductor": null,
+    "id": "f-62bde33b1140630e247d",
+    "input_sha256": "82dd0812c7275597c1fc7781eae37b5f57775b06029b3f3027ac01b32ad1864c",
+    "local_data": [
+      {
+        "conductor_exponent": 7,
+        "discriminant_valuation": 25,
+        "kodaira": "I2*",
+        "minimal_discriminant_valuation": 13,
+        "pari_local_reduction": "[7, -6, [2, 0, 0, 0], 4]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 2,
+        "discriminant_valuation": 18,
+        "kodaira": "I0*",
+        "minimal_discriminant_valuation": 6,
+        "pari_local_reduction": "[2, -1, [3, 0, 0, 0], 4]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 5,
+        "kodaira": "I5",
+        "minimal_discriminant_valuation": 5,
+        "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+        "prime": "5",
+        "prime_certificate": "5"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "7",
+        "prime_certificate": "7"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 17,
+        "kodaira": "I5",
+        "minimal_discriminant_valuation": 5,
+        "pari_local_reduction": "[1, 9, [13, 0, 0, 0], 5]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "29",
+        "prime_certificate": "29"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 22,
+    "remaining_cofactor": "217677456012308029219145482061147454121546641387780952054139329923489334085746606810856801752109302003",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-62bde33b1140630e247d",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

@@ -136,15 +136,17 @@ def build() -> dict:
                     {key: row[key] for key in ("class_index", "gram_sha256", "determinant", "minimum", "matches_recovered_curve302_frame")}
                     for row in x1092_j2["rootless_classes"]
                 ],
-                "rootless_neighbour_equation_search": "PAUSED_FROZEN_CLASS1_ONLY",
-                "allowed_realization_class_indices": [1],
+                "rootless_neighbour_equation_search": "CLASS3_CONDITIONAL_ON_COMPLETE_NULL_CLASS1_COMMISSIONING",
+                "allowed_realization_class_indices": [1, 3],
+                "class3_release_condition": "Complete class1 panel of64 ranked and16 independent controls with no certified rank>=20; UNKNOWN does not release it.",
                 "new_rationally_realized_class": {"class_index": 1, "generic_rank": 17, "saturated_basis": True, "parent": relative(X1092_CLASS1)},
-                "new_frame_specialization_search": "BLOCKED_PENDING_PROSPECTIVE_STRICT_CLASS_CONSTRUCTION",
+                "new_frame_specialization_search": "AUTHORIZED_ORDINARY_PROSPECTIVE_SEARCH_WITH_CERTIFIED_GENERIC_SEED_GATE",
+                "strict_class_selector_required_for_ordinary_search": False,
             },
         ],
         "production_gate": {
             "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-            "next_required_proof": "Class1 is frozen. Generic cubic and inherited norm-square inputs are sealed. An applicable prospective novelty checker remains UNAVAILABLE; integrate its actual implementation before cover/solubility work. Only certified rational independent directions may release V3; no other classes or parameter panel.",
+            "next_required_proof": "Class1 commissioning is capped at64 ranked and16 controls, with frozen scoring. Any certified rank>=20 escalates before a frame transition. A complete null panel releases exact class3 realization and independent replay before a32-ranked/8-control panel. This operational null is not a rank bound. Strict-class novelty remains optional; other frame types remain uncommissioned.",
             "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
         },
         "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1 rational realization certificate. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
