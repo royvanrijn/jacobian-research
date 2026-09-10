@@ -185,7 +185,7 @@
   "construction_proposals_attempted": 6,
   "job_outcomes": {
     "ACCEPTED_NEW_FIBRATION": 6,
-    "PASS_CERTIFIED_PARENT_EVALUATION": 103,
+    "PASS_CERTIFIED_PARENT_EVALUATION": 104,
     "PENDING": 0,
     "UNRESOLVED_GENERIC_SPECIALIZATION": 16
   },
@@ -716,11 +716,6 @@
   ],
   "running_jobs": [
     {
-      "kind": "exploit",
-      "path": "parent-jobs/job-0000123",
-      "started_at": 1789036404.5124888
-    },
-    {
       "kind": "panel",
       "path": "parent-jobs/job-0000124",
       "started_at": 1789036468.1396418
@@ -734,9 +729,9 @@
   "runs": 2,
   "seconds": {
     "construct": 10.811990513990168,
-    "exploit": 4795.2744286840025,
+    "exploit": 4930.067742412008,
     "panel": 10647.493223237092
   },
   "status": "RUNNING",
-  "updated_at": 1789036524.7721295
+  "updated_at": 1789036539.4958918
 }
