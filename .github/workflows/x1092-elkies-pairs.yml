@@ -1,0 +1,84 @@
+name: X1092 Elkies pair smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/x1092-elkies-pairs.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: x1092-elkies-pair-smoke
+  cancel-in-progress: false
+
+jobs:
+  bounded-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    container:
+      image: sagemath/sagemath:10.9
+      options: --user root
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Expose the existing PARI executable contract
+        run: |
+          set -euo pipefail
+          export PATH="/home/sage/sage/local/bin:/home/sage/sage:$PATH"
+          command -v sage
+          dirname "$(command -v sage)" >> "$GITHUB_PATH"
+          if [ ! -x /usr/bin/gp ]; then
+            GP="$(sage -sh -c 'command -v gp' | tail -n 1)"
+            test -x "$GP"
+            ln -s "$GP" /usr/bin/gp
+          fi
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          sage --version
+          /usr/bin/gp --version
+      - name: Algebra and selection regressions
+        run: |
+          sage -python -m unittest discover -s research/elliptic-curves/tests -p test_elkies_pair_search.py -v
+      - name: Bounded X1092 construction and M19 V3 smoke
+        run: |
+          sage -python research/elliptic-curves/cas/run_x1092_elkies_pairs.py run \
+            --folder "$GITHUB_WORKSPACE/research/artifacts/local/elliptic-curves/elkies-ci" \
+            --pool-size 16 --pair-limit 32 --addresses 32 \
+            --ranked 1 --controls 1 --deep-keep 4 \
+            --shallow-bound 997 --deep-bound 32749 \
+            --parameter-bits 1024 --v3-calls 24 \
+            --math-seconds 300 --job-seconds 600
+      - name: Summarize actual endpoint
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, os
+          p=pathlib.Path('research/artifacts/local/elliptic-curves/elkies-ci/REPORT.json')
+          text=p.read_text() if p.exists() else json.dumps({'status':'NO_TERMINAL_REPORT'})
+          print(text)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## Bounded X1092 pair smoke\n\n```json\n'+text+'\n```\n')
+          report=json.loads(text)
+          if not any(r.get('status')=='PASS_V3_REPLAY' and r.get('initial_rank')==19
+                     and r.get('calls',0)>0 for r in report.get('results',[])):
+              raise SystemExit('No completed M19-to-V3 smoke; inspect retained evidence')
+          PY
+      - name: Preserve mathematical and failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: x1092-elkies-pair-smoke
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            research/artifacts/local/elliptic-curves/elkies-ci/plan.json
+            research/artifacts/local/elliptic-curves/elkies-ci/manifest.json
+            research/artifacts/local/elliptic-curves/elkies-ci/REPORT.json
+            research/artifacts/local/elliptic-curves/elkies-ci/runtime/research/pair-inputs/
+            research/artifacts/local/elliptic-curves/elkies-ci/runtime/research/pair-results/
