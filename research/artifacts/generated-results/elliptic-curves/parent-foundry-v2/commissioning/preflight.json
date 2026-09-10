@@ -1,0 +1,41 @@
+{
+  "status": "PASS_FROZEN_CONSTRUCTION_AND_POINT_PREFLIGHT",
+  "at": 1789032526.4695823,
+  "runtime_manifest_sha256": "8ca917938888b6e28c152d3ee1d47e13fa724678660cd83bee44d4efaa516ae0",
+  "rows": [
+    {
+      "family": "x948-11952-a1-00414",
+      "generic_rank": 16,
+      "parameter": "1/2",
+      "rank_lower_bound": 16,
+      "calls": 8,
+      "parent_sha256": "6f5d6e341eea56d2913b660968e2614fa27b22c599d5de8695675d70488a8d21",
+      "packet_sha256": "847c5b2a6b402221aa40479301e499a2fcdf3643c0cbdbafb91d66b879708997",
+      "gain_timeline": []
+    },
+    {
+      "family": "x1092-det1092-a1-121385",
+      "generic_rank": 16,
+      "parameter": "-1/5",
+      "rank_lower_bound": 18,
+      "calls": 8,
+      "parent_sha256": "65cf10e9ba98bff682bcd3de4a2c47139871c921789fd365a66414add1ee7279",
+      "packet_sha256": "adb460b3996b763523e522aafd709f2b1c231b447b7fd747de107e31d3a1222c",
+      "gain_timeline": [
+        {
+          "after": 17,
+          "before": 16,
+          "call": 1,
+          "phase": "adaptive"
+        },
+        {
+          "after": 18,
+          "before": 17,
+          "call": 4,
+          "phase": "adaptive"
+        }
+      ]
+    }
+  ],
+  "scope": "Two independent constructions, coefficient/section/invariant regressions, one 8-call point test on each, complete cloud replay and two finite-rank implementations. Commissioning observations are separate from production panels."
+}

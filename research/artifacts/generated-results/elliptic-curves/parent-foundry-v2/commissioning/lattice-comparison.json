@@ -1,0 +1,52 @@
+{
+  "status": "PASS_EXACT_LATTICE_COMPARISON",
+  "rootless_det1092_full_determinant": "1092",
+  "rootless_rank16_principal_determinants": [
+    "1965",
+    "1853",
+    "4392",
+    "2400",
+    "1916",
+    "3876",
+    "2420",
+    "1805",
+    "1776",
+    "1853",
+    "3356",
+    "2933",
+    "1461",
+    "8237",
+    "2621",
+    "1944",
+    "1445"
+  ],
+  "principal_forms_integral_even": true,
+  "constructed_A1": [
+    {
+      "family": "x948-11952-a1-00414",
+      "generic_rank_lower_bound": 16,
+      "generic_rank_upper_bound": 16,
+      "height_determinant": "474",
+      "nonintegral_diagonal_heights": [
+        "11/2",
+        "15/2",
+        "7/2"
+      ]
+    },
+    {
+      "family": "x1092-det1092-a1-121385",
+      "generic_rank_lower_bound": 16,
+      "generic_rank_upper_bound": 16,
+      "height_determinant": "546",
+      "nonintegral_diagonal_heights": [
+        "11/2",
+        "7/2"
+      ]
+    }
+  ],
+  "input_hashes": {
+    "parent-0.json": "6f5d6e341eea56d2913b660968e2614fa27b22c599d5de8695675d70488a8d21",
+    "parent-1.json": "65cf10e9ba98bff682bcd3de4a2c47139871c921789fd365a66414add1ee7279"
+  },
+  "boundary": "Hidden-section principal subgroups and genuine A1 fibrations are different geometric objects. These invariants do not establish specialization-tail superiority."
+}

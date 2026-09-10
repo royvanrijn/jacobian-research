@@ -1,0 +1,21 @@
+{
+  "baseline_every": 5,
+  "construction_seconds": 600,
+  "created_at": 1789031696.5194352,
+  "daily_budget": null,
+  "evaluation_seconds": 7200,
+  "exploit_share": 0.3,
+  "export": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/parent-foundry-v1",
+  "frozen_root": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/parent-foundry-v1/runtime/research",
+  "height": 125000,
+  "min_free_gib": 20,
+  "panel_point_calls": 64,
+  "panel_size": 12,
+  "rss_bytes": 3221225472,
+  "run_jobs": 64,
+  "sage": "/home/royvanrijn/.local/bin/sage",
+  "schema": "parent-foundry.configuration.v1",
+  "scope": "Construct genuine A1 neighbours on X948 and X1092; exact MW16 gate; fixed panels; parent and fibre promotion. No artificial deletion cores or record-driven selection.",
+  "source_commit": "4914c53c05f4f3950446724367b169d430ab8ca5",
+  "workers": 4
+}

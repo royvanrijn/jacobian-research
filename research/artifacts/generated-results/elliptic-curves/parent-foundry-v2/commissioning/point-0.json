@@ -1,0 +1,579 @@
+{
+  "allowance": 8,
+  "call_allowance_consumed": true,
+  "calls": 8,
+  "certified_jump_lower_bound": 0,
+  "claim_boundary": "Certified rank lower bound, not exact rank. Jump is a certified lower bound. Empirical tail rates describe the fixed detection protocol; censored exposures stay explicit.",
+  "exposure_complete": true,
+  "family": "x948-11952-a1-00414",
+  "gain_timeline": [],
+  "generic_rank": 16,
+  "initial_rank": 16,
+  "packet": {
+    "bindings": {
+      "epoch-00/chart-0000.json": "70e0d77a6be647c64c0057279ef01da3f6a7163b1bfd026dcde4734e841f5bbe",
+      "epoch-00/chart-0001.json": "24d12354c2f1f0e90e6e8d1bdcafe40b31666e59c2595e15b686359a4e12d359",
+      "epoch-00/chart-0002.json": "17b26833a99158abb4ecb0e5a99ac3102eefb065d566d084d0938e8cc9b78303",
+      "epoch-00/chart-0003.json": "098d5ca61b671a5d2b1117ed43034f3eab349101ff734a7021c661a7b519c83f",
+      "epoch-00/chart-0004.json": "a8ffc7d6c78ec2037a7ef332da4654d3caa8fe482cef9b918ff1953967cfe170",
+      "epoch-00/chart-0005.json": "72fccd992681985746a70b1a4f14422d325b80d8e28451571f5cf1b131f1bec0",
+      "epoch-00/chart-0006.json": "713c9b53abd7e098ffae59de43e96c3f3b35056027e1e248ae4d555a6a6eef2f",
+      "epoch-00/chart-0007.json": "3210fdadcabcc8a6e9d65126eb9008d540bdd654bf7d911fda837ad2c6c23e7d",
+      "protocol.json": "f7ecace9d2041c42afdf209629fe395a58cb8f6d3514abbd00d5d4b53de4d54f",
+      "terminal.json": "cb7d04710c13aff09a7e8738424723c8d4922f4d43f9d7755c3426ca935aea95",
+      "verified.json": "79693ab71bf2ada2b7a68a876695c44b2f6a8fe457626aaf06ce3b458c712e45"
+    },
+    "certificate_compaction": {
+      "original_prime_count": 161,
+      "rule": "Keep rank-increasing good-prime row blocks in prime order. Both exact finite implementations must replay this subset before promotion.",
+      "selected_prime_count": 14
+    },
+    "claim_boundary": "Exact subgroup lower bound from saved point witnesses, not an exact rank or record.",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-17929770725697485214702420185716107",
+      "924754013409431581612763943518537353783904392132806"
+    ],
+    "family": "x948-11952-a1-00414",
+    "gains": [],
+    "generic_rank": 16,
+    "initial_rank": 16,
+    "parameter": "1/2",
+    "point_searches": 0,
+    "points": [
+      [
+        "487216961522725499673915456686113443/9257696853765371449",
+        "-317320014804255281516351686740057453658350794757732960/28167897606319569172051661293"
+      ],
+      [
+        "246636892062016583492282489633907/1642107936830761",
+        "-2678294060933401035513740576684277038534180724000/66543026618745286680491"
+      ],
+      [
+        "-2308946866638341303038773773925/18692280430849",
+        "-2862683311111827836771052086906540663361453312/80815270674717124993"
+      ],
+      [
+        "270655166914080626350459571551887627/534584944840291921",
+        "-136312426047218599239242585851584751268279992123411200/390863472242990078201912281"
+      ],
+      [
+        "176713392783189683517649319763/2244474396649",
+        "3599635729837288845068464465007393518872000/3362575028660475893"
+      ],
+      [
+        "5996935948944817728094856427/13926124081",
+        "444200409435914018387957450067912328115520/1643407976674729"
+      ],
+      [
+        "127982327181916913667/121",
+        "1436775943575569629121572916160/1331"
+      ],
+      [
+        "2752003616909543132963519399643/34999209816169",
+        "-215208976000007870369279274682207280433201480/207055780262183414197"
+      ],
+      [
+        "3220726991360654625694144494656643/42512302472303689",
+        "9701788112321798970824441578990741630545549814800/8765404059191325375996613"
+      ],
+      [
+        "30418184722261502907/361",
+        "23976395500983729358917562200/6859"
+      ],
+      [
+        "2785708087410252751409403/3972049",
+        "-4570283920758570553723366120467394320/7916293657"
+      ],
+      [
+        "5119001728331407219303966536003/23468085405769",
+        "-9774580644646816856329862748573150445764584400/113688487854597068603"
+      ],
+      [
+        "46050921877902282",
+        "14026088281620039484744080"
+      ],
+      [
+        "30235754207391172569156587670699147/370770402884274481",
+        "500691490745864284271354665304692046845685087085600/225765506067007640847654871"
+      ],
+      [
+        "-96023668570067111410917632853/879673292281",
+        "32808273502034045553357671932339323985383000/825053497889980429"
+      ],
+      [
+        "-2315185347804891504213774409677/15452973274729",
+        "956747265170978788602920782590291737818471200/60746055173238116683"
+      ]
+    ],
+    "proof": {
+      "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+      "no_rational_2_torsion_prime": 17,
+      "rank_lower_bound": 16,
+      "signatures": [
+        {
+          "doubled_subgroup_order": 9,
+          "group_order": 18,
+          "prime": 11,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 15,
+          "group_order": 30,
+          "prime": 23,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 10,
+          "group_order": 40,
+          "prime": 29,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 21,
+          "group_order": 42,
+          "prime": 31,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 24,
+          "group_order": 48,
+          "prime": 37,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 27,
+          "group_order": 54,
+          "prime": 41,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 30,
+          "group_order": 60,
+          "prime": 47,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 35,
+          "group_order": 70,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 38,
+          "group_order": 76,
+          "prime": 61,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 44,
+          "group_order": 88,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 21,
+          "group_order": 84,
+          "prime": 73,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 24,
+          "group_order": 96,
+          "prime": 83,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 29,
+          "group_order": 116,
+          "prime": 103,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 62,
+          "group_order": 124,
+          "prime": 107,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "rank_lower_bound": 16,
+    "source_sha256": "d6832518e368c18919e420955505819b5cb2cf44e241575bdddede76cc430a92",
+    "status": "PASS_TWO_FINITE_IMPLEMENTATIONS"
+  },
+  "packet_sha256": "847c5b2a6b402221aa40479301e499a2fcdf3643c0cbdbafb91d66b879708997",
+  "parameter": "1/2",
+  "rank_lower_bound": 16,
+  "request_sha256": "9a0bf76ac65e19cea81d7518b7013c03a9aa94c96609ff16fb73d2dfb5f92789",
+  "segments": [
+    {
+      "after": 16,
+      "before": 16,
+      "calls": 8,
+      "map_timeouts": 0,
+      "point_timeouts": 0,
+      "search": "preflight/point-0/search-00",
+      "stop": "CHART_BUDGET_EXHAUSTED"
+    }
+  ],
+  "status": "PASS_CERTIFIED_PARENT_EVALUATION",
+  "replay": {
+    "generic_prefix_sha256": "288cbd19285568657a44459ffd89926740f6c2e6d37e1085b10cf575c00d3f9e",
+    "packet_sha256": "847c5b2a6b402221aa40479301e499a2fcdf3643c0cbdbafb91d66b879708997",
+    "status": "PASS_TWO_FINITE_IMPLEMENTATIONS"
+  }
+}

@@ -3,6 +3,46 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910",
+      "kind": "example",
+      "state": "proved",
+      "title": "Two newly constructed A1 fibrations on X948 and X1092 have exact generic MW16 and a certified rank18 specialization",
+      "scope": "Target-free residual-chord construction from generic norm-eight trace sections produces x948-11952-a1-00414 and x1092-det1092-a1-121385 on the existing determinant948 and determinant1092 K3 surfaces. Both have I2+22I1 fibres, sixteen explicit rational sections and positive Shioda height Grams of determinants474 and546. The source geometric Picard19 bounds make their generic rank exactly16; they are not incomplete MW17 deletion cores and cannot acquire an independent seventeenth generic section on these fixed fibrations. An exact affine-invariant vector separates the two pencils from the five pinned A1 fibration classes and each other; the nine known presentations reproduce five invariant keys. Full generic-input reconstruction in fresh directories and exact section/transport checks pass. Specialization at t=1/2 in the first pencil has a certified rank16 subgroup; t=-1/5 in the second reaches16 to17 at point call1 and18 at call4 within an eight-call commissioning exposure. Two finite-group implementations verify the final independent points and their generic prefixes. Symbolic reconstruction shares the construction implementation. Commissioning is separate from prospective production statistics; no new K3 surface, worldwide fibration novelty, superior specialization-tail law, rank28 result, exact specialized rank or conductor record is claimed.",
+      "canonical_source": "elliptic-curves/notes/PARENT_SEARCH_FOUNDRY_2026-09-10.md",
+      "dependencies": [
+        "EC-K3-ICARM-A1-MW16-ATLAS",
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19"
+      ],
+      "checker": "elliptic-curves/cas/replay_parent_foundry_constructions.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d519f190ba1d78df1ad804787d5415070e078f10175d7137e4a437a533aaead8",
+      "software_lock": [
+        "elliptic-curves/cas/replay_parent_foundry_constructions.sage",
+        "elliptic-curves/cas/parent_foundry_geometry.sage",
+        "elliptic-curves/cas/verify_parent_foundry_certificate.py",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/commissioning/parent-0.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/commissioning/parent-1.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/commissioning/point-0.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/commissioning/point-1.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/config.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/manifest.json",
+        "artifacts/generated-results/elliptic-curves/parent-foundry-v2/frozen-runtime.zip"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-CURVE302-SEED-UNIVERSALITY-PANEL-20260909",
       "kind": "example",
       "state": "proved",

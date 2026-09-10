@@ -1,5 +1,9 @@
 # Autonomous high-rank search foundry
 
+Historical protocol: this run has drained and stopped. The active replacement
+is the [search over constructed fibrations](PARENT_SEARCH_FOUNDRY_2026-09-10.md).
+The evidence and original protocol below are retained for replay.
+
 The foundry is a persistent Python/Sage/PARI controller for finding new elliptic
 curves over Q with certified lower bounds 32, then 31, 30, 29 and 28. It does
 not use model calls, Codex automations, or human decisions between batches.
@@ -293,7 +297,8 @@ fibres, capped at 300. At migration the next allowance is 175 calls. The
 controller therefore keeps progressing through the queue instead of waiting at
 midnight, while resource safety remains explicit.
 
-The detached guardian also restarts a controller that exits cleanly without an
-explicit stop or halt state. An explicit `stop` still drains and ends the run.
-This makes a completed bounded controller invocation an automatic continuation
-point while preserving the same ledger and frozen evidence.
+The intended clean-run renewal had a v3 gap: the bounded job-limit path marked
+the controller STOPPED, and the guardian treated that as terminal. The
+[replacement parent foundry](PARENT_SEARCH_FOUNDRY_2026-09-10.md) fixes this
+distinction and tests an actual second clean controller launch. The v3 search
+has now drained and stopped; its frozen runtime and evidence remain preserved.

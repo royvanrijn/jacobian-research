@@ -1,10 +1,13 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [autonomous high-rank foundry](notes/HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md)
-combines fresh R17 intake, trajectory-based amplification, full-cloud replay
-and bounded conductor screening in a detached controller. Its note records
-commissioning and the production launch; machine certificates remain separate
-from the curated mathematical-status register.
+The [autonomous parent foundry](notes/PARENT_SEARCH_FOUNDRY_2026-09-10.md)
+now constructs new A1/MW16 fibrations on X948 and X1092 and evaluates fixed
+small specialization panels. Its first new X1092 parent gives a certified
+16→18 commissioning trajectory in eight calls. The detached controller promotes
+productive parents and cascades, renews completed runs and preserves full clouds.
+Machine results remain separate from the curated curve inventory.
+
+<!-- status-consumer: EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910 5be8375fcf2cdfbe -->
 
 The [first curated foundry snapshot](notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md)
 adds30 verified curves at lower bounds22–26 and strengthens one existing

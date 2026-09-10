@@ -1,8 +1,8 @@
 # High-rank search foundry
 
-**RUNNING** · updated 2026-09-10T08:29:01.997462+00:00
+**STOPPED** · updated 2026-09-10T09:42:37.760232+00:00
 
-774 new certified curves across this run and its preserved predecessor; 184519 completed point calls. Jobs: {'DONE': 1413, 'FAILED': 4, 'SKIPPED': 111, 'RUNNING': 4}. Up to 4 workers.
+788 new certified curves across this run and its preserved predecessor; 188900 completed point calls. Jobs: {'DONE': 1435, 'FAILED': 4, 'SKIPPED': 112}. Up to 4 workers.
 
 Ranks are certified lower bounds. Imported historical packets are marked below. Novelty is relative to the frozen catalogue; exact rank and worldwide record status remain unknown.
 
@@ -15,7 +15,6 @@ Ranks are certified lower bounds. Imported historical packets are marked below. 
 | warm-103b2-low-05 (imported) | 103b2 | -621/281 | 26 | 408 | COOLED | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001379-warm-103b2-low-05.json) |
 | warm-074d9-low-04 (imported) | 074d9 | -1013/476 | 26 | 435 | COOLED | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001419-warm-074d9-low-04.json) |
 | f-46a37e2fcf354796f7e3 | 103b2 | 2538/2143 | 26 | 479 | COOLED | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001496-f-46a37e2fcf354796f7e3.json) |
-| f-31b3d1ff065cb6ded260 | 11952 | 3525/1478 | 25 | 188 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000612-f-31b3d1ff065cb6ded260.json) |
 | f-a0fccd44c8f885377544 | 11952 | -309/166 | 25 | 168 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000577-f-a0fccd44c8f885377544.json) |
 | f-9dc9efd3135585ae3030 | 11952 | 4094/1497 | 25 | 170 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000418-f-9dc9efd3135585ae3030.json) |
 | f-98961f617b63ecd9b3ae | 08234 | -811/166 | 25 | 174 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v1/job-0000025-f-98961f617b63ecd9b3ae.json) |
@@ -28,11 +27,8 @@ Ranks are certified lower bounds. Imported historical packets are marked below. 
 | warm-08f72-high-05 (imported) | 08f72 | 1245/2519 | 25 | 284 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000165-warm-08f72-high-05.json) |
 | f-6ae43e5dee0e2e272d01 | 103b2 | -2818/2091 | 25 | 224 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0000749-f-6ae43e5dee0e2e272d01.json) |
 | warm-07ca9-high-05 (imported) | 07ca9 | -3267/2257 | 25 | 238 | READY | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000589-warm-07ca9-high-05.json) |
+| f-67ef26d6f1f1f3fc98af | 08f72 | 239/2556 | 25 | 328 | COOLED | [points and proof](/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0000987-f-67ef26d6f1f1f3fc98af.json) |
 
 Active jobs:
-- 1528: f-1a04e360173c7cc5bf76 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001528)
-- 1529: f-52632d941ee29b4fa081 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001529)
-- 1531: f-d6974fb0869046135f49 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001531)
-- 1532: f-7a98c0e4ce70fa96d867 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001532)
 
 [Full machine-readable status](LIVE_STATUS.json). The accompanying immutable job exports contain portable certificates and complete trajectories. Family/selection-arm aggregates are descriptive and adaptively censored.

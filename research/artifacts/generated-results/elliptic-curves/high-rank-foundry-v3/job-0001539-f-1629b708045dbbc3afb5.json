@@ -1,0 +1,340 @@
+{
+  "calls": 0,
+  "claim_boundary": "Bounded finite-column seed test only. An incomplete witness is UNKNOWN; no elliptic rank upper bound or dependence conclusion.",
+  "completed_point_invocations": 0,
+  "evidence": {
+    "generic-seed-gate.json": "fd4f797d0073ef36cfc1f51a596781555080340b696d337d652d59dc2d9f7ccd",
+    "phases/generic-00-0/supervisor.json": "7d7b772068da15aef104b6b25e48e3c848ca4d44ec4750bd0bf5af44c853872e",
+    "request.json": "6b055be761f95f0ab6e4d1510af2819ce59c8e7c0a069c48776a0f2c086acf72"
+  },
+  "family": "07ca9",
+  "id": "f-1629b708045dbbc3afb5",
+  "parameter": "3/5",
+  "point_invocation_intents": 0,
+  "rank_lower_bound": null,
+  "request_sha256": "6b055be761f95f0ab6e4d1510af2819ce59c8e7c0a069c48776a0f2c086acf72",
+  "runtime_manifest_sha256": "07c0e35a3c58b84b6ecb2b12a16ac7b2fe029ae2ba12288355c14267c3af4a7c",
+  "seed_gate": {
+    "admissions": [
+      {
+        "rank": 1,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 2,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 3,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 4,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 5,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 6,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 7,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 8,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 9,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 10,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 11,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 12,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 13,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 14,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 14,
+        "status": "UNKNOWN_FINITE_COLUMN_IN_SPAN"
+      },
+      {
+        "rank": 15,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      },
+      {
+        "rank": 16,
+        "status": "INDEPENDENT_FINITE_COLUMN"
+      }
+    ],
+    "admitted_columns": 16,
+    "atlas_sha256": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "claim_boundary": "Bounded finite-column seed test only. An incomplete witness is UNKNOWN; no elliptic rank upper bound or dependence conclusion.",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-22889505416476091961286770384492",
+      "44789745340672349808217898110920792239493327924"
+    ],
+    "family": "07ca9",
+    "id": "f-1629b708045dbbc3afb5",
+    "no_rational_2_torsion_prime": 17,
+    "parameter": "3/5",
+    "point_searches": 0,
+    "prime_bound": 1000,
+    "primes": [
+      17,
+      19,
+      31,
+      41,
+      43,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137,
+      139,
+      149,
+      151,
+      157,
+      163,
+      167,
+      173,
+      179,
+      181,
+      191,
+      193,
+      197,
+      199,
+      211,
+      223,
+      227,
+      229,
+      233,
+      239,
+      241,
+      251,
+      257,
+      263,
+      269,
+      271,
+      277,
+      281,
+      283,
+      293,
+      307,
+      311,
+      313,
+      317,
+      331,
+      337,
+      347,
+      349,
+      353,
+      359,
+      367,
+      373,
+      379,
+      383,
+      389,
+      397,
+      401,
+      409,
+      419,
+      421,
+      431,
+      433,
+      439,
+      443,
+      449,
+      457,
+      461,
+      463,
+      467,
+      479,
+      487,
+      491,
+      499,
+      503,
+      509,
+      521,
+      523,
+      541,
+      547,
+      557,
+      563,
+      569,
+      571,
+      577,
+      587,
+      593,
+      599,
+      601,
+      607,
+      613,
+      617,
+      619,
+      631,
+      641,
+      643,
+      647,
+      653,
+      659,
+      661,
+      673,
+      677,
+      683,
+      691,
+      701,
+      709,
+      719,
+      727,
+      733,
+      739,
+      743,
+      751,
+      757,
+      761,
+      769,
+      773,
+      787,
+      797,
+      809,
+      821,
+      823,
+      827,
+      829,
+      839,
+      853,
+      857,
+      859,
+      863,
+      877,
+      881,
+      883,
+      887,
+      907,
+      911,
+      919,
+      929,
+      937,
+      941,
+      947,
+      953,
+      967,
+      971,
+      977,
+      983,
+      991,
+      997
+    ],
+    "required_points": 17,
+    "specialized_points": [
+      [
+        "1695840130524588942/1849",
+        "12462016837532462068582964250/79507"
+      ],
+      [
+        "122131903552206449628/6241",
+        "1312914882032304921950841711450/493039"
+      ],
+      [
+        "11921504475386821836/5329",
+        "26894167056000414576105229530/389017"
+      ],
+      [
+        "10513139320653330882/5329",
+        "33263029427526529023200657850/389017"
+      ],
+      [
+        "-5716440096661806927/1156",
+        "-7566123475962313009794221175/39304"
+      ],
+      [
+        "1022713811137758",
+        "-149833350508618161935550"
+      ],
+      [
+        "48816518206320318",
+        "10735908302939993317917630"
+      ],
+      [
+        "-2642839918331128550007/1290496",
+        "-422546733271352455733299033426725/1466003456"
+      ],
+      [
+        "-684791183185462778343/369664",
+        "-63901348652202087819243561115005/224755712"
+      ],
+      [
+        "-19629139841027075202/11881",
+        "-361906429154707968933681729450/1295029"
+      ],
+      [
+        "16477299286007061986202/16265089",
+        "9870403628029159422144302797021590/65597103937"
+      ],
+      [
+        "2905143793956858",
+        "-53023098559455171254250"
+      ],
+      [
+        "-429007738594735694044338/81306289",
+        "-100159878811138058445641569724813550/733138807913"
+      ],
+      [
+        "-190793154415877628/169",
+        "-577907234649702442428210630/2197"
+      ],
+      [
+        "1724677293600716628/841",
+        "1962324816472509226452883350/24389"
+      ],
+      [
+        "1777838995942833",
+        "98565339572449576566075"
+      ],
+      [
+        "209758597904601777/289",
+        "-830263662442076613327218565/4913"
+      ]
+    ],
+    "status": "UNRESOLVED_GENERIC_SEED",
+    "torsion_prime_bound": 200
+  },
+  "seed_gate_sha256": "fd4f797d0073ef36cfc1f51a596781555080340b696d337d652d59dc2d9f7ccd",
+  "status": "UNRESOLVED_GENERIC_SEED",
+  "wall_seconds": 0.8208673000335693
+}
