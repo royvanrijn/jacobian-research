@@ -1,5 +1,5 @@
 {
-  "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1 rational realization certificate. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
+  "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1/class3 rational realization certificates. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
   "inputs": {
     "artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json": "a3e1405de1645018d9c2de7895897982356ae33bbf5bf6c67c3cdca3c2e7fed0",
     "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-first.json": "6b6cdacf9afc1b62c757c76de30a9a5fee7b3c66599f07a16afa18cc26a554b1",
@@ -9,12 +9,14 @@
     "artifacts/generated-results/elliptic-curves/det1092_pruned_rootless_j2_census_v1.json": "5ecc05c717469ea8759072d489a43c65c3eb5e455a2278222f302de899a45c19",
     "artifacts/generated-results/elliptic-curves/x1092_class1_realization_compact_parent_v1.json": "7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862",
     "artifacts/generated-results/elliptic-curves/x1092_class1_realization_sections_v1.json": "30e93bcf22543aef19bebff40bfe07036f718450e6b412aa76f4d6f702048649",
-    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_strict_preflight_v1.json": "bbcfc47afa59196902630059066f6d9e092a7365671f20a185a4ed1b413ad44a"
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_strict_preflight_v1.json": "bbcfc47afa59196902630059066f6d9e092a7365671f20a185a4ed1b413ad44a",
+    "artifacts/generated-results/elliptic-curves/x1092_class3_realization_compact_parent_v1.json": "922a985e22c1ffda8fb14424afaf8d91f49da93a6661a633cc32b017c7b04b6f",
+    "artifacts/generated-results/elliptic-curves/x1092_class3_realization_manifest_v1.json": "e074c93dbeba09d9ceb885ab7022b3f247ad40f5df89d38197e616e095d0245e"
   },
   "production_gate": {
     "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
     "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-    "next_required_proof": "Class1 commissioning is capped at64 ranked and16 controls, with frozen scoring. Any certified rank>=20 escalates before a frame transition. A complete null panel releases exact class3 realization and independent replay before a32-ranked/8-control panel. This operational null is not a rank bound. Strict-class novelty remains optional; other frame types remain uncommissioned."
+    "next_required_proof": "Class1 closed at64 ranked and16 controls with no gain beyond lower bound17, retaining frozen scoring/results as the baseline. Class3 exact rational realization and independent replay passed; its32-ranked/8-control panel is active. Any certified rank>=20 escalates before another frame transition. Operational nulls are not rank bounds. Strict-class novelty remains optional; other frame types remain uncommissioned."
   },
   "schema": "elliptic-curves.fibration-generic-rank-ceiling.v2",
   "shioda_tate": {
@@ -55,6 +57,14 @@
       "surface": "X948"
     },
     {
+      "additional_rationally_realized_classes": [
+        {
+          "class_index": 3,
+          "generic_rank": 17,
+          "parent": "artifacts/generated-results/elliptic-curves/x1092_class3_realization_compact_parent_v1.json",
+          "saturated_basis": true
+        }
+      ],
       "allowed_realization_class_indices": [
         1,
         3
@@ -542,7 +552,7 @@
           "minimum": 4
         }
       ],
-      "rootless_neighbour_equation_search": "CLASS3_CONDITIONAL_ON_COMPLETE_NULL_CLASS1_COMMISSIONING",
+      "rootless_neighbour_equation_search": "CLASS3_REALIZED_AFTER_CLOSED_NULL_CLASS1_COMMISSIONING",
       "strict_class_selector_required_for_ordinary_search": false,
       "surface": "X1092"
     }

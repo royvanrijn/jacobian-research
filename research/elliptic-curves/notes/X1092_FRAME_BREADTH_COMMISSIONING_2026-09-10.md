@@ -83,16 +83,67 @@ the compressed full score table and results into
 `research/artifacts/generated-results/elliptic-curves/class1_commissioning_64_16_baseline_v1/`.
 
 The source-frozen detached transition is
-`research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/`.
+`research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/`.
 Its `STATUS.json`, stage receipts and eventual `commissioning-panel/` retain
 progress and limits. The controller is
 [run_x1092_frame_transition.py](../cas/run_x1092_frame_transition.py), with
 [producer](../../elkies-k3/scripts/realize_x1092_next_frame.sage) and
 [separate checker](../../elkies-k3/scripts/verify_x1092_next_frame.sage).
 
-Eight checks pass: existing scoring/control tests plus exact arm-prefix
+Nine checks pass: existing scoring/control tests plus exact arm-prefix
 quotas, fail-closed gain/null/incomplete branching, and complete synthetic
-controller runs confirming the cap, score preservation and gain veto. The
+controller runs confirming the cap, score preservation and gain veto, plus
+exact reversible denominator clearing for a rational-coefficient parent. The
 synthetic worker checks scheduling, not mathematical certification. Class3 is not declared
 rationally realized merely because its abstract frame appears in the census;
 its successful exact replay is the required evidence.
+
+## Closed class1 baseline
+
+The capped panel completed all64 ranked and16 control endpoints. All80 retained
+certified lower bound17 after24 calls each: **1,920 calls**, **3,876.424 CPU
+seconds** of point-search worker computation, plus3.699 CPU seconds for the
+full frozen score window and0.780 seconds of preparation. No endpoint was
+censored or unresolved. The decision is
+**`NO_EVIDENCE_CURRENT_SEARCH_PRODUCTIVE`**. It makes no rank upper-bound claim.
+
+The [portable baseline](../../artifacts/generated-results/elliptic-curves/class1_commissioning_64_16_baseline_v1/commissioning-result.json)
+binds the full compressed65,536-row score distribution and original queue,
+all80 selected rows and result packets, and hashes of every retained raw
+certificate/checkpoint. Class3 realization was released only after this closed
+decision. The class1 controller has exited and will not extend its window.
+
+## Retained realization correction
+
+The first class3 attempt found an exact equation and17 rational old-section
+transports spanning index2, with height determinant4368. The separate checker
+correctly rejected the saturation requirement and no parameter panel launched.
+The original helper `reduce_basis` can return full rank with residual index;
+the generalized planner now uses `improve_basis`, which accepts index1 only,
+and tries retained norm10 bisections when full-rank old sections remain unsaturated.
+
+Attemptv1 retains its packets, failure log and all computation cost. Attemptv2
+reuses its exact discovery, marking, trace and equation checkpoints, then
+recomputes the section plan, coordinates, normalization and separate replay.
+Its new section plan has index1 and height determinant1092. Total construction
+CPU includes the failed attempt once, without charging reused stages twice.
+
+## Active class3 commissioning
+
+Class3 passed [separate exact replay](X1092_CLASS3_RATIONAL_MW17_REALIZATION_2026-09-10.md)
+with17 saturated rational sections and height determinant1092. Its active panel
+is `research/artifacts/local/elliptic-curves/x1092-class3-commissioning-v1/`,
+capped at32 ranked and8 independent controls. Full-window scoring took3.720
+CPU seconds. The first two fibres each passed the specialized generic17 gate,
+completed24 point calls and passed full-cloud replay, remaining at lower bound17.
+
+The first scoring intake stopped before constructing scores or dispatching
+fibres because the new compact equation had constant denominators3,9,27.
+That failed intake is retained in transitionv2. The corrected frozen preparation
+uses the exact constant marking `X=9x,Y=27y`; all coefficient and17 section
+transforms are checked, and the certified parent remains byte-identical.
+The scoring, control-selection and worker function ASTs are identical to
+the class1 baseline. This is an input representation correction, not score retuning.
+Its receipt explicitly leaves unmetered failed-intake scoring CPU unavailable,
+rather than charging it as zero; all realization costs, including the failed
+index2 attempt, and production preparation/scoring/search CPU are retained.

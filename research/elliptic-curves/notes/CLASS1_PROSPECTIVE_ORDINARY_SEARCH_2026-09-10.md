@@ -1,7 +1,9 @@
 # Class1 ordinary prospective search
 
-**The user has capped this commissioning run at64 ranked fibres and16 independent
-controls. Scoring is unchanged; automatic window expansion is disabled.**
+**Closed at64 ranked fibres and16 independent controls, with1,920 calls and no
+gain beyond certified lower bound17: `NO_EVIDENCE_CURRENT_SEARCH_PRODUCTIVE`.**
+This is an operational outcome, not a rank upper bound. Scoring was unchanged;
+automatic window expansion is disabled and the full matched baseline is retained.
 See the [conditional frame-breadth continuation](X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md).
 A strict-class selector is not a prerequisite. The certified class1 equation and generic basis remain
 byte-frozen at `7c6ee40c46f5a1f3d1fc464b5685a0e4c77ed1f3347b67865d7c9f93b2acd862`.

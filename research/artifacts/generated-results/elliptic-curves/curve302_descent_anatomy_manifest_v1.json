@@ -1,0 +1,64 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_descent_anatomy_v1.json": "b75afe8e5de61ab94afc93931960cfc510ff61b8186848b765028ea1b286cefd",
+    "artifacts/generated-results/elliptic-curves/curve302_descent_remaining_class_v1.json": "938c3761fcc944c0c594ffe2d24f5b48ce0d07107c7f4e9cd9936de838a63538",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_quotient_local_filtration_v1.json": "001e12e65bd41bd8ecbfddce42953b41c7365060e6678ac0978a227bb9c1b715",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_v1.json": "db90a1d3e95599dbac001c51693fab379062e913b279db7a88cfacc6e630b096",
+    "artifacts/generated-results/elliptic-curves/rank_jump_generic_only_class_anchors_verification_v1.json": "049dbe69f9ce783952a9486c5a3d857220825255e18cafdfac7a1475010cb02f",
+    "elliptic-curves/cas/complete_curve302_descent_anatomy.sage": "9eba8e0f74b70328fa4bdc4acd785211804fb4fe0b2138b7330ccc4b03c5caf4",
+    "elliptic-curves/cas/curve302_descent_anatomy.sage": "c2a1216311f84637a052a1cee2f224f95f8cfc066e4bc1ee4d6227e2aeb492ea",
+    "elliptic-curves/cas/curve302_descent_remaining_class.sage": "50fc62dc46c5d462264360b1a01e80ecde45b535e6cec067e0fa459ade20b893",
+    "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "elliptic-curves/cas/package_curve302_descent_anatomy.py": "9495bad6c6eeadaaf44603aecd592cbca3fb8401f9dd6d68ff736107c5b69462",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/cas/verify_curve302_descent_anatomy.sage": "d650be321ff6c3104ef0adbee6ba0522a06606c2b01a5f6b3922367ac50d974c",
+    "elliptic-curves/cas/verify_curve302_recovered_quotient_local_filtration.sage": "ce23fc01049bed12cb920dde3cc8ac7970d0ee3e8d49fd17631bebf0065352e6",
+    "elliptic-curves/notes/CURVE302_DESCENT_ANATOMY_2026-09-10.md": "790cfbdd70d22b41b92912eb99f768e5129d0827f17566fb1d529e828822d6a6",
+    "elliptic-curves/rank-jump/DERIVATIVE_RECIPROCITY_AND_COMPLETE_BOUNDARY.md": "f5e950ef52261209640ac32a088de174d2424739694684b6550d744cb429d327",
+    "elliptic-curves/rank-jump/STRICT_SELMER_AND_ARTIN_BLOCKS.md": "c09e39d21b0c24edf1de35bd009fab3a4401458f99c8bdfee913dd1139ef5498",
+    "elliptic-curves/rank-jump/verify_generic_only_class_anchors.py": "697f2ea41fb74e78fdffa8426050153b9738b35e2a16c556a8705ee99c5c23b5",
+    "elliptic-curves/rank-jump/verify_half_ideal_artin.py": "2586b2185c27be84dee955bd207669b683d5efa2df577b18098372bbc4d27384",
+    "elliptic-curves/rank-jump/verify_strict_half_ideals.py": "e2920b041504b8471f1275f3654e51a826193278abe1a8a3caa89a9f9a5efc15"
+  },
+  "boundary": "No complete class group, full Selmer upper bound, matched-fibre predictor, shared carrier, or propagation theorem is claimed.",
+  "limits": {
+    "bnf_calls": 0,
+    "completion_seconds": 60,
+    "half_ideal_and_initial_artin_seconds": 120,
+    "independent_replay_seconds": 120,
+    "new_parameters": 0,
+    "point_searches": 0,
+    "remaining_class_seconds": 60,
+    "workers": 1
+  },
+  "producer_from_repository_root": [
+    "timeout 120 sage -python research/elliptic-curves/cas/curve302_descent_anatomy.sage",
+    "timeout 60 sage -python research/elliptic-curves/cas/complete_curve302_descent_anatomy.sage",
+    "timeout 60 sage -python research/elliptic-curves/cas/curve302_descent_remaining_class.sage"
+  ],
+  "replay_from_repository_root": [
+    "python3 research/elliptic-curves/cas/package_curve302_descent_anatomy.py --check",
+    "timeout 120 sage -python research/elliptic-curves/cas/verify_curve302_descent_anatomy.sage --negative-controls"
+  ],
+  "results": {
+    "S_class_2_rank_lower_bound": 10,
+    "S_elementary_direct_factor_dimension_lower_bound": 9,
+    "c_S": "UNKNOWN; at least 10",
+    "exact_rank": "UNKNOWN; at least 31",
+    "full_selmer_dimension": "21+c_S",
+    "image_modulo_full_generic_even_ideal_image": "UNKNOWN",
+    "narrow_half_ideal_dimension": 10,
+    "ordinary_class_2_rank_lower_bound": 16,
+    "ordinary_elementary_direct_factor_dimension": 10,
+    "ordinary_half_ideal_dimension": 10,
+    "strict_dimension": 10,
+    "unit_kernel_dimension": 0
+  },
+  "schema": "curve302.descent-anatomy.manifest.v1",
+  "scope": "Retrospective exact anatomy of the displayed strict ten-dimensional rational Kummer block.",
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  }
+}

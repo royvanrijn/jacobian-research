@@ -1,7 +1,12 @@
 # Broad rank search: runnable, finite and token-free between batches
 
-**Opt-in implementation, not a completed search result.** It changes no mathematical
-status and neither resumes nor modifies an older campaign. Use a new directory.
+**Operational status, 2026-09-10:** both real backends passed commissioning, and
+`artifacts/local/elliptic-curves/broad-rank-v1` is launched with the default eight
+presentations and four workers. Its [live report](../../artifacts/local/elliptic-curves/broad-rank-v1/REPORT.json)
+records progress; the campaign is not a completed search result. The older
+two-parent MW17 campaign was never dispatched and is stopped, with its inputs
+and smoke evidence preserved. Mathematical status is unchanged. Use a new
+directory when preparing another campaign.
 The [historical ledger](HIGH_RANK_CONSTRUCTION_AND_SEARCH_LEDGER_2026-09-10.md)
 explains why the productive six-presentation R17 route gets most of this exposure.
 
@@ -56,8 +61,20 @@ window if the first one contains only aliases or generic-gate misses.
 written enumeration of every finite point for small-prime score tables, score/
 control invariance, rational scaling, mocked-CAS controller dispatch and resume,
 certificate accounting, censorship, STOP and evidence tampering. Python compilation
-also passes. **Sage/GP are not available in the implementation environment**, so the
-real backend smoke above has not been executed here. No production gain is claimed.
+also passes. Sage/GP were unavailable during the original implementation.
+
+**Local backend commissioning, 2026-09-10:** the exact four-slot smoke above
+completed all four accepted fibres. Both native `074d9` fibres have certified
+lower bound19 after101 calls each; both class1 fibres retain lower bound17 after
+198 calls each. All598 calls have individual attempt and result receipts, with
+zero censored exposures or engineering failures. Every final packet passed both
+finite certificate implementations; all seven job seals and derived state
+bindings verified. The [smoke validation receipt](../../artifacts/local/elliptic-curves/broad-rank-smoke-v1/SMOKE_VALIDATION.json)
+retains parameters, hashes and software versions. The prepared full runtime
+matches all3,940 shared arithmetic files and the executables tested by the smoke;
+additional parent inputs and unrelated new source files are recorded in its
+`smoke-runtime-comparison.json`. The built-in detached `launch` command is used.
+These are commissioning lower bounds, with worldwide novelty unexamined.
 
 ## Prepare and launch the full frozen campaign
 

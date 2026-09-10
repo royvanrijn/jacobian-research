@@ -1122,7 +1122,9 @@
       "narrows_problems": [],
       "consumers": [],
       "invalidates_assumptions": [],
-      "replaced_by": [],
+      "replaced_by": [
+        "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910"
+      ],
       "priority": "derived"
     },
     {
@@ -54611,6 +54613,174 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-X1092-CLASS3-RATIONAL-MW17-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "X1092 rootless J2 class3 has an exact rational elliptic realization with saturated MW17",
+      "scope": "The next prospectively ranked X1092 frame, class3, is realized on the recovered rational Picard19 K3 by generic norm12 orbit15540. Exact integral transport checks the full NS Gram identity and isometries to the class3 representative and embedding24, with the retained primitive rank16 determinant4100 core shared with known embedding25 at sixth index155. The transport is not asserted to extend that particular common-core identification. D=(3,2,w) is primitive, effective by Riemann-Roch, and nef by a complete old-degree1/2 wall test; the existing rational zero has D.O=1. Exact RR compilation gives a rational elliptic equation and mutually inverse source-K3 maps. The first old-section subgroup had index2 and was rejected by the independent commissioning replay. Sixteen old sections plus one exact rational bisection instead give17 saturated rational sections, a positive height Gram of determinant1092, and index1 in the rootless frame. Picard19 supplies the matching generic upper bound17. A separate JSON checker replays the marking, nefness, equations/maps, all section transports, height Gram and compact chart; it verifies nonisometry to class1 and curve302 class6. This is one rational J2 realization, not a J1 classification, a new K3, an arithmetic strict-class construction, or a specialized rank/conductor record.",
+      "canonical_source": "elliptic-curves/notes/X1092_CLASS3_RATIONAL_MW17_REALIZATION_2026-09-10.md",
+      "dependencies": [
+        "EC-DET1092-ROOTLESS-J2-COMPLETE-20260910",
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-PARENT-GEOMETRIC-PICARD19",
+        "EC-CURVE302-PARENT-DEGREE2-MULTISECTION-QUOTIENT"
+      ],
+      "checker": "elkies-k3/scripts/verify_x1092_next_frame.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:19e8e8aa55ef34d6b09ea52decab3554b7edb0d8bcc97016dac7b5ce759e5c4a",
+      "software_lock": [
+        "elkies-k3/scripts/realize_x1092_next_frame.sage",
+        "elkies-k3/scripts/realize_x1092_class1.sage",
+        "elkies-k3/scripts/verify_x1092_next_frame.sage",
+        "artifacts/generated-results/elliptic-curves/x1092_class3_realization_manifest_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Curve302 strict ten-dimensional Kummer block has zero unit kernel and ten independent ordinary and narrow half-ideal classes",
+      "scope": "On the certified rank31 subgroup D of curve302 and the specialized recovered MW17 subgroup, the previously certified quotient has four joint local directions and a ten-dimensional strict kernel V. Exact maximal-order half ideals for all ten frozen strict words satisfy J_i^2=(beta_i), with totally positive beta_i. The complete 10x10 Artin pairing against the same strict characters has rank9 and unique kernel word J0 J2 J3 J5. Six independently certified inherited ordinary unramified characters evaluate on that word as(1,1,0,0,0,0), including the restored bad-prime contribution. Hence the ten half ideals are independent in Cl(K)/2 and generate a split elementary direct factor of dimension10 in both ordinary and narrow class groups. The unit-squareclass kernel on V is exactly zero. Nine split elementary factors survive in the ordinary S-class group; its full two-rank c_S is at least10 and unknown. The disjoint six inherited and ten strict unramified characters give ordinary class two-rank at least16. Derivative reciprocity, its exact real nonmembership, and the joint known local rank21 inside the local product of dimension22 prove dim Sel_2(E)=21+c_S=31+(c_S-10); this is an identity, not a numerical upper bound. A read-only checker reruns the existing local filtration and ordinary-character verifications, checks ideal squares by integral lattice containment and norm equality, replays cyclic ring identities and 100 Artin entries with integer Jacobi symbols and five Hensel repairs at47,67,89, and independently detects the final ideal via the inherited characters. Two altered ideals are rejected. No full class/unit computation, new point, specialization, matched-fibre predictor, shared carrier, or propagation theorem is claimed. Intersection with the full inherited everywhere-even ideal image and all unobserved Selmer/Sha dimensions remain UNKNOWN.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_DESCENT_ANATOMY_2026-09-10.md",
+      "dependencies": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-RECOVERY-CALIBRATION-20260907",
+        "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS",
+        "external: Global class field theory, local Tate self-duality, and quadratic Hilbert reciprocity"
+      ],
+      "checker": "elliptic-curves/cas/verify_curve302_descent_anatomy.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d650be321ff6c3104ef0adbee6ba0522a06606c2b01a5f6b3922367ac50d974c",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/curve302_descent_anatomy_manifest_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve302_descent_anatomy_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve302_descent_remaining_class_v1.json",
+        "elliptic-curves/cas/curve302_descent_anatomy.sage",
+        "elliptic-curves/cas/complete_curve302_descent_anatomy.sage",
+        "elliptic-curves/cas/curve302_descent_remaining_class.sage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910"
+      ],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Curve302 strict ideal image is disjoint from all inherited ideals; the full quotient contributes12–14 ideal dimensions and both seed norm equations are obstructed",
+      "scope": "Retrospective exact arithmetic on the certified public31 and recovered generic17 Kummer images W and G. Everywhere-even dimensions are22 and8; ordinary unramified character dimensions are20 and6. All20 known ordinary characters paired against the eight inherited and ten strict half ideals give ranks8,10,18, proving zero unit kernel on each block, disjoint ordinary ideal images even modulo2, and a split elementary18-dimensional factor. Four more exact half ideals complete W_even; the20x22 pairing has rank19, giving19 split elementary factors, while20 independent characters prove ordinary class two-rank at least20. Dirichlet bounds the norm-positive unit kernel by2, so the whole ideal image has dimension20–22 and its quotient by the exact inherited8-image has dimension12–14. The Artin kernel has dimension3; seven single reductions give no unit but settle no principality question. U_W/U_G maps isomorphically to W/G, representing all fourteen directions by ordinary unramified characters after generic correction. Evaluating the20 characters on the two historical seed relative norm ideals gives chi0(R0)=1 and chi2(R1)=1. Both integral norm equations have no integer solution despite their previously certified everywhere local solubility; the exhaustive correction list proves the first seed ideal lies outside the full inherited image, even modulo2, with augmented split rank9. Independent replay checks22 ideal squares by lattices,440 Artin entries and local repairs, then40 seed entries by independent Jacobi/Hilbert evaluation, and reruns the original correction/norm-form proof. Full class groups, exact Selmer/rank upper bounds, the remaining0–2 unit kernel, prospective prediction and propagation remain UNKNOWN.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md",
+      "dependencies": [
+        "EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910",
+        "EC-DET1092-SEED-ARTIN-TWO-NORM-EQUATIONS-20260909",
+        "external: Dirichlet unit theorem and ordinary unramified Artin reciprocity"
+      ],
+      "checker": "elliptic-curves/cas/verify_curve302_relative_ideal_anatomy.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:253f8a0f7fae39b3e8cb4901fb55b60834fb872c43d85bae7fc2fb4b0d0cf4d7",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/curve302_relative_descent_manifest_v1.json",
+        "elliptic-curves/cas/curve302_seed_norm_artin_obstruction.sage",
+        "elliptic-curves/cas/verify_det1092_seed_artin.sage",
+        "elliptic-curves/cas/package_curve302_relative_descent.py"
+      ],
+      "supersedes": [
+        "EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910",
+        "EC-DET1092-SEED-ARTIN-TWO-NORM-EQUATIONS-20260909"
+      ],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910",
+      "kind": "example",
+      "state": "proved",
+      "title": "Seven of ten fixed same-fibration controls have exact strict/unramified point anatomy and complete Selmer localization images",
+      "scope": "Five fixed within-fibration pairs from the existing determinant948 R17 panel contain three certified rank-lower-bound17, three21, three26 and one27 fibres. Parameter heights and search exposure are not matched; determinant1092 curve302 is a separate reference. Seven rows have complete prime support and independent exact point/native17, global mod2, finite local and real checks. Their ordinary unramified dimensions are21,10,20,17,17,15,11, with generic dimensions11,10,11,8,8,11,11. Strict known dimensions are17,2,15,10,8,10,4; full Selmer localization dimensions are10,15,11,16,18,11,13. Full local Hilbert-dual bases independently replay ideal-log coordinates; a separate degree-three dyadic completion preserves the initial failure. Derivative reciprocity gives a nonzero local constraint, and the known codimension-one images fill it, proving dim Sel_2=ell+c_S in each case with c_S at least the stated strict dimension. Three retained cofactors of126,113,113 digits leave their support and anatomy UNKNOWN. All seven completed controls represent their full displayed quotient by ordinary unramified characters after generic correction, so this feature is not unique to302. Known-character lower bounds do not compare actual full class-group sizes or validate a predictor. Exact control half-ideal images/unit kernels, full class/Selmer upper bounds, and exact elliptic ranks remain UNKNOWN. No missing rows were replaced; no new factorization, parameter or point search was used.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md",
+      "dependencies": [
+        "EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910",
+        "external: Cubic2-descent, strict class-field identification, local Tate self-duality and Hilbert reciprocity"
+      ],
+      "checker": "elliptic-curves/cas/verify_rank_jump_matched_descent_panel.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:53916950548beba7110885c03a6d43d78a86e9541711619c4fb1a44472c18208",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/curve302_relative_descent_manifest_v1.json",
+        "elliptic-curves/cas/rank_jump_matched_descent_panel.py",
+        "elliptic-curves/cas/complete_rank_jump_matched_dyadic.sage",
+        "artifacts/generated-results/elliptic-curves/rank_jump_matched_descent_panel_verification_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "OP-EC-RANK-JUMP-MECHANISM-20260910",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Explain the exceptional302 rank jump through exact descent, overlapping fibrations, and shared low-genus carriers",
+      "scope": "User-authorized theorem-directed programme: explain the fourteen-dimensional displayed302 quotient, compare ten same-fibration controls, transport the exceptional directions through class1/class6 while retaining individual B-base parameters and verifying the common-core identification, construct shared quadratic or genus0/1 carriers with independent twist directions, and prove or delimit seed rationality propagation beyond the finite13-of14 recovery phenomenon. The strict ideal10-image is disjoint from the full inherited8-image; the entire quotient contributes12–14 ideal dimensions. Both historical seed norm equations are now globally obstructed. Seven of ten controls have exact local anatomy and full Selmer localization images; three support gaps and full control ideal/unit calculations remain open. Complete class/Selmer bounds, prospective predictors, shared carriers and propagation remain UNKNOWN. Next priority is exact class1↔class6 point transport and a mathematically valid shared-carrier test. Compute-heavy work requires frozen inputs, finite caps, checkpoints and exact replay; bounded misses are not exclusions. Narrowed by EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910 and EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md",
+      "dependencies": [
+        "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
+        "EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910",
+        "EC-CURVE302-SEED-UNIVERSALITY-PANEL-20260909",
+        "EC-X1092-CLASS1-RATIONAL-MW17-20260910"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

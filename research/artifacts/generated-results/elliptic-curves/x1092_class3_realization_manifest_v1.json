@@ -1,0 +1,423 @@
+{
+  "arithmetic_strict_classes": "UNKNOWN",
+  "checker_sha256": "19e8e8aa55ef34d6b09ea52decab3554b7edb0d8bcc97016dac7b5ce759e5c4a",
+  "class_index": 3,
+  "files": {
+    "x1092_class3_realization_compact_parent_v1.json": "922a985e22c1ffda8fb14424afaf8d91f49da93a6661a633cc32b017c7b04b6f",
+    "x1092_class3_realization_discovery_v1.json": "e71ef4bc8bc720fdca6250874ade83944a62e495ca8be09a2e83926537f4dc7b",
+    "x1092_class3_realization_equation_v1.json": "78972dc863a0f8b3346a27740655f164f563d46f0b1ffff16ea176e41b50841e",
+    "x1092_class3_realization_glue_v1.json": "cea67faa213bdb6ae75950c93315d42dc6e832f0bd47ee06e5c404f14cd25023",
+    "x1092_class3_realization_marking_v1.json": "3432a8bc0d4452a22abfc831c6ce2e90b5e748f14c598c10b6687b51a4c5ece5",
+    "x1092_class3_realization_parent_v1.json": "77d9a5d879b594ec1e8f7da42b09d6ca414e17d85db6133e12c40d7f1e1dbc5e",
+    "x1092_class3_realization_rr_v1.json": "3fa9a6b63d86cb6e8c3ab47fcbf1e17f7a6b08adce2f8f0dfb2b7f0a95a7038a",
+    "x1092_class3_realization_section_plan_v1.json": "444e55550e778f521e75e3620a1bf308f3b67d888aa7c8457a5e99cb288901e5",
+    "x1092_class3_realization_sections_progress_10_v1.json": "a5e27d1d8a5549f775f468fe654b99adcc4aab7f2280e054a750e1cf3ba58b12",
+    "x1092_class3_realization_sections_progress_11_v1.json": "ea9c6d2813b486620666ffa5e11b49e11d14c3ed8ff0fb8701e60945ac3417fc",
+    "x1092_class3_realization_sections_progress_12_v1.json": "fc9494b46c8def451e1272d3f6f26ca9d51ab327606c350c761b80b73258ee95",
+    "x1092_class3_realization_sections_progress_13_v1.json": "741021826a461a397f9a1d03d1d7cb1b8b8560e7daab212ecaf72f84694d210f",
+    "x1092_class3_realization_sections_progress_14_v1.json": "e302214337406da21b1bd684bfe01f5dab313b86a06c1c572429b34d03a94f4d",
+    "x1092_class3_realization_sections_progress_15_v1.json": "2aed19245c026d6d8760833b1aebd4f3066c37c5a070481356f4add81784a32c",
+    "x1092_class3_realization_sections_progress_16_v1.json": "b6a77618e1aa5a42c26f53b9c7116f04a6eff7a010ead020b488410f7aa5ba9d",
+    "x1092_class3_realization_sections_progress_17_v1.json": "122680f5be6dcecbabf462a605415a48204ac3936e88b566ac0a5af272ef3278",
+    "x1092_class3_realization_sections_progress_1_v1.json": "0e28dbf4007f4b66a95f6e6dc69c1993648f7eb2f8f5847a6db62cdf5d586321",
+    "x1092_class3_realization_sections_progress_2_v1.json": "2a58872744485da55598c4681994d5260b1b297365b0b2150623419653ffc994",
+    "x1092_class3_realization_sections_progress_3_v1.json": "8d3187defad6b31d915e75a22f9f219be8f324efd3a847ceb60fcd92de71cb52",
+    "x1092_class3_realization_sections_progress_4_v1.json": "59abfdc7801edd96dded5bf066844bdee422f1e84bbb05de6688c4cfa466cd10",
+    "x1092_class3_realization_sections_progress_5_v1.json": "ff99f6215ff50877b2bb77bc9e8c2b27406ad607a4fccb582dba3ac6e9cbba82",
+    "x1092_class3_realization_sections_progress_6_v1.json": "90cd35527c3fb71e612f2ae927679a1161b917b4670b8189bb3bef249df2af4a",
+    "x1092_class3_realization_sections_progress_7_v1.json": "47ad1842eda6ba9569fa5ea4d293a724a6149e70964a4472066478c39f192093",
+    "x1092_class3_realization_sections_progress_8_v1.json": "3e82d5f142beff6ea67e0c5188ccd31615dea0c20b7eb21ee541a521de3e33c0",
+    "x1092_class3_realization_sections_progress_9_v1.json": "7565ece0e16acae123590fbe1a57969d1709bc22ca5ef9e94fe2b60e5d2a4334",
+    "x1092_class3_realization_sections_v1.json": "a09802fdf9bc2c982e1409c88706ebee34cfb785a75c848be7d83be69f315b97",
+    "x1092_class3_realization_trace_v1.json": "a1325ad84bf76202cf3b528625333a8ef7680d174c80b2c22ff6e88cc5ca5d2f"
+  },
+  "generic_rank": 17,
+  "nonisometric_to_classes": [
+    1,
+    6
+  ],
+  "prior_attempt": {
+    "boundary": "Reuse exact equation/marking checkpoints only; all section planning, coordinate recovery, normalization and independent replay run again. Retain the failed index2 attempt and charge its full computation once.",
+    "prior_attempt": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1",
+    "prior_child_cpu_seconds": 62.32236400000001,
+    "prior_result_sha256": "66d7c8578e3a719125c786f8a24cef5eb8121ac8211a3daed99907ac0a4f0755",
+    "reused_files": {
+      "artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv": "6eabef60743153bad58de5cdc0c49777036991282a362d26ab286722986ae40f",
+      "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+      "artifacts/generated-results/elliptic-curves/det1092_frame_realization_priority_v1.json": "7bf67545d4bb4d1f679e1b6c4c1b6411d1f1f19865abd4ae083ff8d25f269f38",
+      "artifacts/generated-results/elliptic-curves/det1092_pruned_anchor_packets_v1.zip": "790261b02c4e707d1079beb679a230b19f2ace9a25f34cf4436686e0abdbc528",
+      "artifacts/generated-results/elliptic-curves/det1092_pruned_rootless_j2_census_v1.json": "5ecc05c717469ea8759072d489a43c65c3eb5e455a2278222f302de899a45c19",
+      "artifacts/generated-results/elliptic-curves/x1092_class3_realization_discovery_v1.json": "e71ef4bc8bc720fdca6250874ade83944a62e495ca8be09a2e83926537f4dc7b",
+      "artifacts/generated-results/elliptic-curves/x1092_class3_realization_equation_v1.json": "78972dc863a0f8b3346a27740655f164f563d46f0b1ffff16ea176e41b50841e",
+      "artifacts/generated-results/elliptic-curves/x1092_class3_realization_marking_v1.json": "3432a8bc0d4452a22abfc831c6ce2e90b5e748f14c598c10b6687b51a4c5ece5",
+      "artifacts/generated-results/elliptic-curves/x1092_class3_realization_rr_v1.json": "3fa9a6b63d86cb6e8c3ab47fcbf1e17f7a6b08adce2f8f0dfb2b7f0a95a7038a",
+      "artifacts/generated-results/elliptic-curves/x1092_class3_realization_trace_v1.json": "a1325ad84bf76202cf3b528625333a8ef7680d174c80b2c22ff6e88cc5ca5d2f",
+      "artifacts/local/elkies-k3/x1092-class3-realization-v1/equation.sobj": "b07c13b225065c42378e2ed66864fc6f05a0952d77f3e95855dd915776cdf945",
+      "artifacts/local/elkies-k3/x1092-class3-realization-v1/marking.sobj": "cd4187fde91d2b3af6dc4990a5b81c363f0a11a1ff863a7c613a07e73d64584c",
+      "artifacts/local/elkies-k3/x1092-class3-realization-v1/trace.sobj": "895e6606bd450f577d8c359d55e5951aba6e2150eb9e7a70ad7f9dcdaa259eff"
+    },
+    "stages": [
+      "discover",
+      "marking",
+      "trace",
+      "equation"
+    ]
+  },
+  "producer_sha256": "17599b7c090a45d0c383e222e35e991ea2cbb90ae8217c1ac1a90388f3a847a4",
+  "reused_compiler_sha256": "dc0a8dd62318724a245efcb577dc13048a94f471e7995fb8098156c5a15c8900",
+  "scope": "One exact rational J2 realization, no J1 classification, new K3, or specialized-rank claim.",
+  "stages": [
+    {
+      "child_cpu_seconds": 1.2325540000000001,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "discover",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "discover",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/stages/discover/worker.log",
+        "log_sha256": "5196adceea6a80cdb8d4cc4f8b254b445476c8dafb416033cb29bdbca6d92176",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 245506048,
+        "pid": 820453,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11791797",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 1.24667023299844,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 0.8451799999999999,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "marking",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "marking",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/stages/marking/worker.log",
+        "log_sha256": "8d57d9f0fb660965a39c7740d246b17eaddb98fd67eb4666e6c856f6c9fa583b",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 262479872,
+        "pid": 822149,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11791924",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.8371356889983872,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 0.7018719999999998,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "trace",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "trace",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 600
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/stages/trace/worker.log",
+        "log_sha256": "d4a6169562c565c4929aebca5b296383a94a6bbc92416e7fdb9ff4518bcbc8c2",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 240496640,
+        "pid": 823047,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11792009",
+        "termination_signal": null,
+        "timeout_seconds": 600,
+        "wall_seconds": 0.7367696469882503,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 28.943360000000006,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "equation",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "equation",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 600
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v1/stages/equation/worker.log",
+        "log_sha256": "a023c4a852c7aa156750e230981a3b39d6635f3abce349b484d95ae2967fcaa6",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 251613184,
+        "pid": 823522,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11792085",
+        "termination_signal": null,
+        "timeout_seconds": 600,
+        "wall_seconds": 29.00549962799414,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 10.669417,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "section_plan",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "section_plan",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/stages/section_plan/worker.log",
+        "log_sha256": "d2fc6c8f016b3c9ac244e05a8bd0ac3aea7163bb34d6606a1b5e2283496aa94f",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 928350208,
+        "pid": 913694,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11811747",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 10.716276114995708,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 3.7850290000000015,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "sections",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "sections",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 600
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/stages/sections/worker.log",
+        "log_sha256": "ad4cf5504d6df90dc56ed06986a3b3250661e0fe44645d463106b07cf50141e0",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 256643072,
+        "pid": 913700,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11812820",
+        "termination_signal": null,
+        "timeout_seconds": 600,
+        "wall_seconds": 3.791042127995752,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 0.7781250000000002,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "normalize",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "normalize",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/stages/normalize/worker.log",
+        "log_sha256": "994c28e2cbe8164d7c4beb03d696799abec45256cc66e8713fe3f1f129e6ae7c",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 237993984,
+        "pid": 913705,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11813201",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7873501900030533,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 0.761797000000002,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "compact",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/runtime/research/elkies-k3/scripts/realize_x1092_next_frame.sage",
+          "compact",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 120
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/stages/compact/worker.log",
+        "log_sha256": "4acee485911cbd28aba6d1266fdbcd0577b04a05ea878565138a580a003762b0",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 238460928,
+        "pid": 913712,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11813282",
+        "termination_signal": null,
+        "timeout_seconds": 120,
+        "wall_seconds": 0.7876379589870339,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    },
+    {
+      "child_cpu_seconds": 15.769667999999996,
+      "outcome": "completed",
+      "returncode": 0,
+      "stage": "verify",
+      "supervisor": {
+        "command": [
+          "/home/royvanrijn/.local/bin/sage",
+          "-python",
+          "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/runtime/research/elkies-k3/scripts/verify_x1092_next_frame.sage",
+          "--class-index",
+          "3"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 256000000,
+          "poll_seconds": 0.05,
+          "rss_bytes": 3221225472,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 180
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/x1092-class3-transition-v2/stages/verify/worker.log",
+        "log_sha256": "832cb4fcad48b1d2da5fa2763de1c23b82fdec01d837e2cb30a4a9d335ea75db",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 279126016,
+        "pid": 913717,
+        "returncode": 0,
+        "rss_limit_bytes": 3221225472,
+        "start_token": "11813362",
+        "termination_signal": null,
+        "timeout_seconds": 180,
+        "wall_seconds": 15.796633249003207,
+        "worker_result": null,
+        "worker_result_sha256": null
+      }
+    }
+  ],
+  "status": "PASS_SEPARATE_EXACT_REPLAY",
+  "total_realization_child_cpu_seconds": 94.0864
+}

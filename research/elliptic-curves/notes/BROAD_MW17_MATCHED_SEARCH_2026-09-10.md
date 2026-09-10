@@ -1,6 +1,11 @@
 # Broad matched MW17 search
 
-Status: **implemented prospective CPU campaign; no search result is claimed here.**
+Operational handoff, 2026-09-10: the user switched to the
+[eight-presentation broad rank campaign](BROAD_RANK_SEARCH_2026-09-10.md).
+The original sixteen-fibre smoke passed; the prepared768-fibre full campaign
+was never dispatched and is stopped. Its inputs, smoke evidence and prior
+launcher failure receipt remain preserved under the local artifact paths.
+The original implementation and frozen protocol are retained below.
 
 The controller `elliptic-curves/cas/run_broad_mw17_search.py` compares certified generic-rank-17 parents on the same frozen rational-address window. It currently ships with two immediately runnable X1092 presets:
 

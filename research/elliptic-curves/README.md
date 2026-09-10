@@ -1,5 +1,9 @@
 # Elliptic curves over `Q` — ACTIVE
 
+The [eight-presentation broad rank campaign](notes/BROAD_RANK_SEARCH_2026-09-10.md)
+passed both backend smokes and is launched with four workers. Its frozen plans
+and live reports remain under local artifacts.
+
 The A1/MW16 parent foundry is preserved as a completed bounded construction
 lane: its first new X1092 parent gives a certified 16→18 commissioning
 trajectory in eight calls, but its first panels do not yet justify expansion.
@@ -9,11 +13,12 @@ the [completed X1092 census](notes/DET1092_ROOTLESS_J2_CENSUS_2026-09-10.md)
 has 19 rootless MW17 frame types, including 18 beyond the known curve302 frame.
 [Class 1 is now realized over Q](notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md),
 with exact birational maps and seventeen saturated rational generic sections.
-The equation remains frozen. Its [ordinary commissioning panel](notes/CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
-is capped at64 ranked fibres and16 independent controls from the unchanged65,536-address window.
-The [conditional frame transition](notes/X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md)
-escalates any certified ≥20 fibre before moving frames; otherwise a complete null panel
-releases exact realization of the next low-cost frame, class3, followed by32+8 commissioning.
+Its [ordinary commissioning panel](notes/CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
+closed at64 ranked fibres and16 controls:1,920 calls, all retaining lower bound17.
+This is `NO_EVIDENCE_CURRENT_SEARCH_PRODUCTIVE`, not a rank upper bound.
+[Class3 is now independently replayed over Q with saturated MW17](notes/X1092_CLASS3_RATIONAL_MW17_REALIZATION_2026-09-10.md).
+Its [32+8 matched commissioning panel](notes/X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md)
+is running with the same scoring and point-search protocol; any certified ≥20 fibre escalates before another frame transition.
 Strict-class selection remains a separate optional lane. Earlier controllers and
 their complete point clouds are retained.
 Machine results remain separate from the curated curve inventory.
@@ -119,18 +124,17 @@ MW16/R17 seeds; rank29–32 and conductor records remain open. The subsequent
 [M28 continuations on inventory188 / ICARM619](notes/CURVE188_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
 completed900 and3454 charts with independent replay and no gain.
 
-The [seed arithmetic audit](notes/DET1092_SEED_VIRTUAL_UNIT_AND_IDEAL_PARITY_2026-09-09.md)
-now separates new class characters from inherited ideal classes: seven
-split2-class factors are certified, but the seed's ideal-image rank does
-not rise. Its unit-versus-ideal-class ambiguity reduces to two explicit
-integral cubic norm equations, both locally soluble everywhere and still
-unresolved. Their [common rational quadric](notes/DET1092_SEED_NORM_QUADRIC_AND_INTEGRAL_GATE_2026-09-09.md)
-is now explicit; two exact integral lattices retain the principality question.
-The same norm-quadric formula is rational on all nine controls and cannot
-predict a seed. Prospective seed selection remains open.
-An [exact bank-only obstruction](notes/DET1092_SAVED_UNIT_RELATION_OBSTRUCTION_2026-09-09.md)
-now excludes nontrivial units from every multiplicative combination of the
-old567 reduction multipliers; the two norm equations remain open.
+The [relative302 descent and matched-fibre anatomy](notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md)
+proves that the ten strict ideal classes are disjoint from all eight inherited
+classes; the full quotient contributes12–14 new ideal dimensions. Both old
+seed norm equations are globally obstructed, closing the seed's ideal-class
+ambiguity. Seven of ten controls have exact local anatomy; full class groups,
+predictor validation, and the geometric rank-jump mechanism remain open.
+
+The earlier [seed reduction](notes/DET1092_SEED_VIRTUAL_UNIT_AND_IDEAL_PARITY_2026-09-09.md),
+[rational quadric](notes/DET1092_SEED_NORM_QUADRIC_AND_INTEGRAL_GATE_2026-09-09.md),
+and [567-multiplier bank obstruction](notes/DET1092_SAVED_UNIT_RELATION_OBSTRUCTION_2026-09-09.md)
+remain historical proof inputs. Their two principality gates are now closed.
 
 The [reciprocal-quartic gate](notes/DET1092_RECIPROCAL_QUARTIC_AND_COVER_CLASS_2026-09-09.md)
 distinguishes three Jacobian/covering objects: fixing the original parameter

@@ -1,0 +1,31 @@
+{
+  "status": "PASS_CERTIFIED_PARENT_EXACT_INTEGRAL_MARKING_AND_MATCHED_PROTOCOL",
+  "parent_sha256": "922a985e22c1ffda8fb14424afaf8d91f49da93a6661a633cc32b017c7b04b6f",
+  "realization_manifest_sha256": "e074c93dbeba09d9ceb885ab7022b3f247ad40f5df89d38197e616e095d0245e",
+  "normalized_parent_sha256": "97dd009585995717cf058c962d5b13ecb899018fdaedec1f832f15c51a09b1a7",
+  "scale": 3,
+  "forward": "X=9*x; Y=27*y",
+  "inverse": "x=X/9; y=Y/27",
+  "generic_height_gram_unchanged": true,
+  "all17_section_transports_checked": true,
+  "unchanged_functions": [
+    "score",
+    "selection",
+    "control_window",
+    "allowance",
+    "fibre",
+    "run_job"
+  ],
+  "plan_sha256": "e83e6a04d00e8b5b75d849a8903815752a8cb5a103ad016cbc4732e50926915c",
+  "cap_sha256": "f7dce0274df8324dda0a8eae63d21daedc7a0ad99c6a4f15997bd2dcc6b6b4e5",
+  "scores_sha256": "4fca5758a8ca5b1aa82d1ba225cc5e7e2d593e9ba6bf3e8dad0ed11a16f6dd15",
+  "realization_child_cpu_seconds": 94.0864,
+  "first_failed_integer_only_intake": "Retained at x1092-class3-transition-v2/commissioning-panel; no scores or point calls. Its failed-scoring CPU was not separately metered and remains unavailable, not zero.",
+  "panel": {
+    "ranked": 32,
+    "controls": 8,
+    "addresses": 65536,
+    "offset": 65536
+  },
+  "no_historical_exceptional_inputs": true
+}

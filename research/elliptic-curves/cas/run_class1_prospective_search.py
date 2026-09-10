@@ -54,13 +54,39 @@ def control_window(offset,count):
     ordered=sorted(range(offset,offset+count),key=lambda i:(hashlib.sha256(('class1-controls-v2/'+str(i)).encode()).hexdigest(),i))
     return {i:position for position,i in enumerate(ordered[:count//8])}
 
+def integral_projection(parent):
+    """Exact constant coordinate scaling for the integer-only scorer.
+
+    Keep the certified parent unchanged; attach the reversible input marking.
+    No discriminant factorization or parameter/score information is used.
+    """
+    A=list(map(Fraction,parent['A_coefficients_low_to_high']))
+    B=list(map(Fraction,parent['B_coefficients_low_to_high']))
+    scale=math.lcm(*(c.denominator for c in A+B))
+    for p in [2,3]+primes(997):
+        while scale%p==0:
+            candidate=scale//p
+            if any((c*candidate**4).denominator!=1 for c in A) or any((c*candidate**6).denominator!=1 for c in B):break
+            scale=candidate
+    if scale==1:return parent
+    result=json.loads(json.dumps(parent))
+    result['A_coefficients_low_to_high']=[str(c*scale**4) for c in A]
+    result['B_coefficients_low_to_high']=[str(c*scale**6) for c in B]
+    for section in result['sections']:
+        for coordinate,power in [('X',2),('Y',3)]:
+            section[coordinate]['numerator_coefficients_low_to_high']=[str(Fraction(c)*scale**power) for c in section[coordinate]['numerator_coefficients_low_to_high']]
+    result['input_coordinate_scaling']={'scale':scale,'forward':'X=scale^2*x; Y=scale^3*y',
+        'inverse':'x=X/scale^2; y=Y/scale^3','height_gram_unchanged':True}
+    assert all(Fraction(c).denominator==1 for c in result['A_coefficients_low_to_high']+result['B_coefficients_low_to_high'])
+    return result
+
 def prepare(args):
     prep_cpu=time.process_time();prep_wall=time.monotonic()
     from run_euclidean_seed_foundry import normalized_parent,SUFFIXES
     source=getattr(args,'parent',None) or ROOT/'artifacts/generated-results/elliptic-curves/x1092_class1_arithmetic_gate_v1/parent.json'
     expected=getattr(args,'parent_sha256',None) or PIN
     assert sha(source)==expected
-    parent=read(source); normalized=normalized_parent(parent,parent['generic_height_gram'])
+    parent=read(source); normalized=integral_projection(normalized_parent(parent,parent['generic_height_gram']))
     normalized['family']=parent.get('family','x1092-class1-prospective-v1')
     folder=args.folder.resolve();folder.mkdir(parents=True,exist_ok=False)
     rt=folder/'runtime/research'

@@ -29,6 +29,8 @@ X1092_J2 = GENERATED / "elliptic-curves/det1092_pruned_rootless_j2_census_v1.jso
 X1092_CLASS1 = GENERATED / "elliptic-curves/x1092_class1_realization_compact_parent_v1.json"
 X1092_SECTIONS = GENERATED / "elliptic-curves/x1092_class1_realization_sections_v1.json"
 X1092_STRICT = GENERATED / "elliptic-curves/x1092_class1_realization_strict_preflight_v1.json"
+X1092_CLASS3 = GENERATED / "elliptic-curves/x1092_class3_realization_compact_parent_v1.json"
+X1092_CLASS3_MANIFEST = GENERATED / "elliptic-curves/x1092_class3_realization_manifest_v1.json"
 DEFAULT_OUTPUT = GENERATED / "elliptic-curves/fibration-generic-rank-ceiling-v2.json"
 
 
@@ -58,6 +60,9 @@ def build() -> dict:
     assert class1["status"] == "PASS_EXACT_POLYNOMIAL_MW17_PARENT"
     assert sections["status"] == "PASS_EXACT_RATIONAL_GENERIC_RANK17"
     assert sections["index_in_geometric_frame"] == 1
+    class3_manifest = read(X1092_CLASS3_MANIFEST)
+    assert class3_manifest["status"] == "PASS_SEPARATE_EXACT_REPLAY"
+    assert class3_manifest["files"][X1092_CLASS3.name] == digest(X1092_CLASS3)
     assert strict["parent_sha256"] == digest(X1092_CLASS1)
     assert strict["parameter_panel"] == "BLOCKED_NOT_COMMISSIONED"
     assert x1092_j2["status"] == "PASS_COMPLETE_ROOTLESS_J2_CLASSIFICATION"
@@ -84,7 +89,7 @@ def build() -> dict:
     return {
         "schema": "elliptic-curves.fibration-generic-rank-ceiling.v2",
         "status": "PASS_EXACT_CEILINGS_BOTH_ROOTLESS_J2_CENSUSES_COMPLETE",
-        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY, X1092_J2, X1092_CLASS1, X1092_SECTIONS, X1092_STRICT)},
+        "inputs": {relative(path): digest(path) for path in (X948_J2, X948_J1, X1092_PICARD, X1092_PARENT, X1092_AUXILIARY, X1092_J2, X1092_CLASS1, X1092_SECTIONS, X1092_STRICT, X1092_CLASS3, X1092_CLASS3_MANIFEST)},
         "shioda_tate": {
             "formula": "rank(MW) = rho(Xbar) - 2 - rank(reducible-fibre root lattice)",
             "consequence": "A Picard-rank-19 Jacobian K3 has generic MW rank at most 17; equality requires a rootless fibration.",
@@ -136,20 +141,21 @@ def build() -> dict:
                     {key: row[key] for key in ("class_index", "gram_sha256", "determinant", "minimum", "matches_recovered_curve302_frame")}
                     for row in x1092_j2["rootless_classes"]
                 ],
-                "rootless_neighbour_equation_search": "CLASS3_CONDITIONAL_ON_COMPLETE_NULL_CLASS1_COMMISSIONING",
+                "rootless_neighbour_equation_search": "CLASS3_REALIZED_AFTER_CLOSED_NULL_CLASS1_COMMISSIONING",
                 "allowed_realization_class_indices": [1, 3],
                 "class3_release_condition": "Complete class1 panel of64 ranked and16 independent controls with no certified rank>=20; UNKNOWN does not release it.",
                 "new_rationally_realized_class": {"class_index": 1, "generic_rank": 17, "saturated_basis": True, "parent": relative(X1092_CLASS1)},
+                "additional_rationally_realized_classes": [{"class_index": 3, "generic_rank": 17, "saturated_basis": True, "parent": relative(X1092_CLASS3)}],
                 "new_frame_specialization_search": "AUTHORIZED_ORDINARY_PROSPECTIVE_SEARCH_WITH_CERTIFIED_GENERIC_SEED_GATE",
                 "strict_class_selector_required_for_ordinary_search": False,
             },
         ],
         "production_gate": {
             "forbidden": "Launch no rootless-neighbour equation or specialization search from a surface whose j2_frame_census is not COMPLETE.",
-            "next_required_proof": "Class1 commissioning is capped at64 ranked and16 controls, with frozen scoring. Any certified rank>=20 escalates before a frame transition. A complete null panel releases exact class3 realization and independent replay before a32-ranked/8-control panel. This operational null is not a rank bound. Strict-class novelty remains optional; other frame types remain uncommissioned.",
+            "next_required_proof": "Class1 closed at64 ranked and16 controls with no gain beyond lower bound17, retaining frozen scoring/results as the baseline. Class3 exact rational realization and independent replay passed; its32-ranked/8-control panel is active. Any certified rank>=20 escalates before another frame transition. Operational nulls are not rank bounds. Strict-class novelty remains optional; other frame types remain uncommissioned.",
             "MW18_boundary": "Neither active surface can support MW18. A MW18 parent requires a different K3 with geometric Picard rank at least 20 and its own arithmetic descent and fibration-realization gates.",
         },
-        "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1 rational realization certificate. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
+        "claim_boundary": "This binds exact generic-rank ceilings, both complete J2 frame classifications, and the separate class1/class3 rational realization certificates. It does not classify J1 surface-automorphism orbits, construct arithmetic strict classes, or certify specialization ranks or conductor records.",
     }
 
 

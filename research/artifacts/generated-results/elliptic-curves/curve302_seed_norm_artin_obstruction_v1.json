@@ -1,0 +1,934 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/curve302_descent_anatomy_v1.json": "b75afe8e5de61ab94afc93931960cfc510ff61b8186848b765028ea1b286cefd",
+    "artifacts/generated-results/elliptic-curves/curve302_relative_ideal_anatomy_v1.json": "457966ea8ce5f0d02070473613ddbb0f666519db0ec7b59287efb4c045a1b092",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_artin_v2/norm-form-00.json": "ef0d4292a763446c2a4f0583a6ccd578d582a245fc9f31d7e0e8d506cfaf834a",
+    "artifacts/generated-results/elliptic-curves/det1092_seed_artin_v2/norm-form-01.json": "2d2991525bec8bfaaabadb1bd9352ce79b4bb3e4f93800a49f39934ff68cb0a7",
+    "artifacts/generated-results/elliptic-curves/rank_jump_curve302_strict_constructor_arithmetic_v1.json": "2764439bcd7cec13d7f271f4b3e6d0d8e666d3a4083b7748da791e56b20a5446",
+    "elliptic-curves/cas/curve302_seed_norm_artin_obstruction.sage": "dd6f80f84b6541ec21c10341dc6cb9f88360f2318771cfafd66a6af266efae20"
+  },
+  "boundary": "Only nonzero certified ordinary Artin characters certify nonprincipality. These characters use the known31-point group, not generic sections alone.",
+  "cases": [
+    {
+      "entries": [
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 0,
+          "residue": "13755880984282755149189776014208053005695012806026908197946939684501936",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 1,
+          "residue": "6062980693210963668230779682639873529630962801953487459521205365757587",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 2,
+          "residue": "3965147703526051712056719730386727506827616626506026840560672874977592",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 3,
+          "residue": "18068142444356264460338007456114379157088056307330938938068626016043127",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 4,
+          "residue": "5598020339068543548934229340511263610945986759300354125907528705653200",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 5,
+          "residue": "10836860050355011203593118151923474114287011609789355674187454999773348",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 6,
+          "residue": "6907295096409636543601648841518523087749588651905515679046405948492134",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 7,
+          "residue": "15915927964763502897504652304505767196954814870839434030405148591090697",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 8,
+          "residue": "8330547544982476570426860711808670876747052496119533421107852962178335",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 9,
+          "residue": "9059816120194885437610625979915021131714027588902754860204785208553315",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 10,
+          "residue": "17438307490549814439608874471903214359792215032639420055901920766962103",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 11,
+          "residue": "10656031503061331430494676529342308334310052096434773545151888210531098",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 12,
+          "residue": "8203211626080541728678557925714149456133469998701691167574495615934372",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 13,
+          "residue": "17208665137937191883035412339700954327751294881700703365720100977236125",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 14,
+          "residue": "16754143736003773711596950183157144099416477035744059084718635184221434",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 15,
+          "residue": "4630336802897558528497449421171042768277519523355326377706389969332271",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 16,
+          "residue": "1091164752611517454378036447338149396318693813611009333730360617619240",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 17,
+          "residue": "18676989832394992605501350548147036059983030351680440022750438677303749",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 1,
+          "character": 18,
+          "residue": "2601571057842674579172084460923184430191104629901533947205154317561731",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 3,
+              "j": 0,
+              "p": 2
+            },
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 0,
+              "p": 7
+            },
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 0,
+              "p": 13
+            }
+          ],
+          "bit": 0,
+          "character": 19,
+          "residue": "16371610690317437721306274676358250755429135915026531741443210143924622",
+          "status": "PASS",
+          "symbol": 1
+        }
+      ],
+      "good_ideal": [
+        [
+          "19725048305008113152046095842366400925482864675245626739709557245353453",
+          "18621195548958328185596933392783491381253463104215584520288297987473562",
+          "15298387828365150703381702860690330279803614499797151522693584419188869"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "good_norm": "19725048305008113152046095842366400925482864675245626739709557245353453",
+      "index": 0,
+      "integral_norm_equation": "NO_INTEGER_SOLUTION",
+      "nonprincipal_witness_characters": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        11,
+        12,
+        15,
+        18
+      ]
+    },
+    {
+      "entries": [
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 0,
+          "residue": "217377198631304544389844598447156238230256526267280545698061025112833158",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 1,
+          "residue": "1767233055923988105460185006541067152288449283426543344414139943891934",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 2,
+          "residue": "475030314381889902990345755667010725688464829477748102911993489475032076",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 3,
+          "residue": "106272916732029941829522875515007321505586008867179923241218445483990349",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 4,
+          "residue": "812930533676273655295947935087678078581222336688442640073614468212376161",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 5,
+          "residue": "867862273368565145790560361570049101209149291559397969329618964176154548",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 6,
+          "residue": "60891666423714416754118884617580287414635630176701996219664399369315130",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 7,
+          "residue": "550991484032254955775131895021120646732518659312108809251125877439550604",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 8,
+          "residue": "248276414199647144882532897669628432464998027095347639939881944551312756",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 9,
+          "residue": "65515918267657180728365095296102509173259462449768996531039618942257781",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 10,
+          "residue": "782468221107319801473037530530446513459291146331519337763473856975445984",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 11,
+          "residue": "515585935485916840022363944767824978182166696428220306990531549334843450",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 12,
+          "residue": "384340408577091453968835574273875923648700536956352316655841075360612904",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 13,
+          "residue": "252232781302939229552843854161484319760900503845054110384644114838383786",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 14,
+          "residue": "248034754795068475727144126470581434507517925698810396091282869588957600",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 15,
+          "residue": "490061779914592956065616824602237569579775646235034188267654647601434974",
+          "status": "PASS",
+          "symbol": -1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 0,
+          "character": 16,
+          "residue": "516897639271720754956895674131289899415748395945348050548956180026732880",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 17,
+          "residue": "704593382248232222584068931094591180346924289098247023406363751522852282",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 1,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 18,
+          "residue": "338445603240613388560098882229823600232936528960254311661967569626111144",
+          "status": "PASS",
+          "symbol": 1
+        },
+        {
+          "bad_terms": [
+            {
+              "bit": 0,
+              "exponent": 1,
+              "j": 1,
+              "p": 29
+            }
+          ],
+          "bit": 1,
+          "character": 19,
+          "residue": "144246593611884356844876087511582208575392762305210044970252989904471258",
+          "status": "PASS",
+          "symbol": -1
+        }
+      ],
+      "good_ideal": [
+        [
+          "906686562723995642959653411079087801729361561702323806693125014077208307",
+          "806535862027974781849839900494381917128601104063066252597432627561474147",
+          "17622380645113057003267825894761675061169467112561725406822674131130169"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "good_norm": "906686562723995642959653411079087801729361561702323806693125014077208307",
+      "index": 1,
+      "integral_norm_equation": "NO_INTEGER_SOLUTION",
+      "nonprincipal_witness_characters": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        15,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "limits": {
+    "bnf_calls": 0,
+    "characters": 20,
+    "ideals": 2,
+    "new_factorization": 0,
+    "wall_seconds": 60
+  },
+  "schema": "curve302.seed-norm-artin-obstruction.v1"
+}

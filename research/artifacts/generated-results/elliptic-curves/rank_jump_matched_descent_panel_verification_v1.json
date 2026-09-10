@@ -1,0 +1,324 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched_descent_dyadic_completion_v1.json": "4f2498fa2733093c4c3dac3668301e75a1efd6c8ab599014cf61c5f9e1b27246",
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched_descent_panel_protocol_v1.json": "26ae8a56ec21f5a8dbbb0c0f39e3c80b5580d30591d87567a1208f9e2d817a21",
+    "artifacts/generated-results/elliptic-curves/rank_jump_matched_descent_panel_v1.json": "8e4e87adaa0895d394c2d410eb32d3b0f7c169cd12ebba93c76a1cec2c5ee7b7",
+    "elliptic-curves/cas/verify_rank_jump_matched_descent_panel.sage": "53916950548beba7110885c03a6d43d78a86e9541711619c4fb1a44472c18208"
+  },
+  "boundary": "Seven exact known-point subspace calculations and three retained support gaps. These are not complete class groups, exact elliptic ranks, or prospective predictor validation.",
+  "cases": [
+    {
+      "c_S_lower_bound": 17,
+      "derivative_nonmembership_places": [
+        2,
+        13,
+        71,
+        499,
+        5641,
+        456349,
+        232382326340221101753689897691322315496452720090139822409746791313667475051596638459529837926667468767
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 12,
+        "generic_local": 10,
+        "generic_strict": 7,
+        "generic_unramified": 11,
+        "known": 27,
+        "known_even": 22,
+        "known_local": 10,
+        "known_strict": 17,
+        "known_unramified": 21,
+        "local_product": 11,
+        "relative_ideal_lower_bound": 9
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "10+c_S",
+      "id": "103b2-low-02",
+      "ordinary_unramified_relative_dimension": 10,
+      "pair": 0,
+      "rank_lower_bound": 27,
+      "signature": [
+        1,
+        1
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 10
+    },
+    {
+      "c_S_lower_bound": 2,
+      "derivative_nonmembership_places": [
+        2,
+        3,
+        5,
+        23,
+        73,
+        15413521,
+        524986275125743,
+        6484731930025351,
+        20279961813608813365709357700457025202161738207624650412299800158730495373015896006798099449,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 12,
+        "generic_local": 15,
+        "generic_strict": 2,
+        "generic_unramified": 10,
+        "known": 17,
+        "known_even": 12,
+        "known_local": 15,
+        "known_strict": 2,
+        "known_unramified": 10,
+        "local_product": 16,
+        "relative_ideal_lower_bound": 0
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "15+c_S",
+      "id": "103b2-high-01",
+      "ordinary_unramified_relative_dimension": 0,
+      "pair": 0,
+      "rank_lower_bound": 17,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 0
+    },
+    {
+      "c_S_lower_bound": 15,
+      "derivative_nonmembership_places": [
+        2,
+        3,
+        5,
+        13,
+        17,
+        19,
+        29209759,
+        150654793007893,
+        18129390369283774879898189195137311644430361959623647728882026428062998087761514580068465137,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 13,
+        "generic_local": 11,
+        "generic_strict": 6,
+        "generic_unramified": 11,
+        "known": 26,
+        "known_even": 22,
+        "known_local": 11,
+        "known_strict": 15,
+        "known_unramified": 20,
+        "local_product": 12,
+        "relative_ideal_lower_bound": 7
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "11+c_S",
+      "id": "103b2-low-05",
+      "ordinary_unramified_relative_dimension": 9,
+      "pair": 1,
+      "rank_lower_bound": 26,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 9
+    },
+    {
+      "id": "103b2-high-05",
+      "pair": 1,
+      "rank_lower_bound": 17,
+      "remaining_cofactor": "108519968244196019593967914142233980452053944688465021908128018081314281714686689698360682232286627377794304377943594653348489",
+      "status": "UNKNOWN_INCOMPLETE_SUPPORT"
+    },
+    {
+      "c_S_lower_bound": 10,
+      "derivative_nonmembership_places": [
+        2,
+        5,
+        7,
+        13,
+        37,
+        47,
+        4273,
+        212507683,
+        75191933806729,
+        147476904475403719450526931109736233355146440295441754545208498806366323696887843233,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 10,
+        "generic_local": 15,
+        "generic_strict": 2,
+        "generic_unramified": 8,
+        "known": 26,
+        "known_even": 19,
+        "known_local": 16,
+        "known_strict": 10,
+        "known_unramified": 17,
+        "local_product": 17,
+        "relative_ideal_lower_bound": 7
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "16+c_S",
+      "id": "074d9-low-04",
+      "ordinary_unramified_relative_dimension": 9,
+      "pair": 2,
+      "rank_lower_bound": 26,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 8
+    },
+    {
+      "id": "074d9-low-02",
+      "pair": 2,
+      "rank_lower_bound": 21,
+      "remaining_cofactor": "14275430976548023089231891328684395603798076407227608124257696818883050816628270597042309202796103138424244392669",
+      "status": "UNKNOWN_INCOMPLETE_SUPPORT"
+    },
+    {
+      "c_S_lower_bound": 8,
+      "derivative_nonmembership_places": [
+        2,
+        7,
+        11,
+        13,
+        19,
+        31,
+        37,
+        61,
+        14321,
+        34687,
+        8393373962901607,
+        368377741051498777477339,
+        27467769050517204248514338434866788594179417747860613,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 10,
+        "generic_local": 17,
+        "generic_strict": 0,
+        "generic_unramified": 8,
+        "known": 26,
+        "known_even": 19,
+        "known_local": 18,
+        "known_strict": 8,
+        "known_unramified": 17,
+        "local_product": 19,
+        "relative_ideal_lower_bound": 7
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "18+c_S",
+      "id": "11952-low-04",
+      "ordinary_unramified_relative_dimension": 9,
+      "pair": 3,
+      "rank_lower_bound": 26,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 8
+    },
+    {
+      "c_S_lower_bound": 10,
+      "derivative_nonmembership_places": [
+        2,
+        5,
+        11,
+        13,
+        19,
+        168558823026593842411117,
+        1794156702243430790616491966181959,
+        671048225199820762705836598616770542593694901500505448337819011938575449802041,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 13,
+        "generic_local": 11,
+        "generic_strict": 6,
+        "generic_unramified": 11,
+        "known": 21,
+        "known_even": 17,
+        "known_local": 11,
+        "known_strict": 10,
+        "known_unramified": 15,
+        "local_product": 12,
+        "relative_ideal_lower_bound": 2
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "11+c_S",
+      "id": "11952-high-02",
+      "ordinary_unramified_relative_dimension": 4,
+      "pair": 3,
+      "rank_lower_bound": 21,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 4
+    },
+    {
+      "id": "08f72-low-01",
+      "pair": 4,
+      "rank_lower_bound": 21,
+      "remaining_cofactor": "39355165519208010929845919252731069920491709505206179773786757998654418212496726441605714256228502464254815096983",
+      "status": "UNKNOWN_INCOMPLETE_SUPPORT"
+    },
+    {
+      "c_S_lower_bound": 4,
+      "derivative_nonmembership_places": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        37,
+        7933,
+        1529132706571,
+        6818439022457712345402807164998771,
+        1597291895009655852351682793016312726340846728074187335039404955351136942195535250252999,
+        "infinity"
+      ],
+      "dimensions": {
+        "generic": 17,
+        "generic_even": 13,
+        "generic_local": 13,
+        "generic_strict": 4,
+        "generic_unramified": 11,
+        "known": 17,
+        "known_even": 13,
+        "known_local": 13,
+        "known_strict": 4,
+        "known_unramified": 11,
+        "local_product": 14,
+        "relative_ideal_lower_bound": 0
+      },
+      "full_Selmer_boundary_closed": true,
+      "full_Selmer_dimension": "13+c_S",
+      "id": "08f72-high-02",
+      "ordinary_unramified_relative_dimension": 0,
+      "pair": 4,
+      "rank_lower_bound": 17,
+      "signature": [
+        3,
+        0
+      ],
+      "status": "PASS_INDEPENDENT_LOCAL_HILBERT_REPLAY",
+      "strict_relative_dimension": 0
+    }
+  ],
+  "completed_cases": 7,
+  "schema": "rank-jump.matched-descent-panel-verification.v1",
+  "status": "PASS"
+}

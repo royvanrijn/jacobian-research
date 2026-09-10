@@ -1,0 +1,13 @@
+{
+  "baseline": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/class1-prospective-v2/matched-baseline",
+  "baseline_manifest_sha256": "3f9d2968fc0d9c9f4c284ad82a820ebc776f1e863b5e7eaa83edccb81627f86b",
+  "best_certified_lower_bound": 17,
+  "boundary": "Search productivity classification only; no mathematical rank upper bound.",
+  "calls": 1920,
+  "controls": 16,
+  "next_frame_released": true,
+  "ranked": 64,
+  "search_cpu_seconds": 3876.423831563,
+  "status": "NO_EVIDENCE_CURRENT_SEARCH_PRODUCTIVE",
+  "updated_at": 1789064731.196768
+}

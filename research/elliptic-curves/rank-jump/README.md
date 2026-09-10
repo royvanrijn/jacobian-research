@@ -2,11 +2,16 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-Current result: [a constructed two-direction ideal-class block with exact rational lifts](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md).
-Class construction is point-free; solubility is verified retrospectively. The
-new302 MW17 parent is the primary target for transferring the constructor and
-identifying the specialization event.
-Earlier exclusion and carrier results below remain historical evidence.
+Current result: [relative302 descent, seed obstruction, and matched fibres](../notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md).
+The ten strict ideal classes are independent of all eight inherited classes;
+the full quotient contributes12–14 new ideal dimensions. Both historical
+seed norm equations have no integer solution. Seven of ten controls have
+exact local anatomy. The next gate is class1↔class6 point transport and
+shared carriers; full class/Selmer bounds and propagation remain open.
+
+The earlier [constructed two-direction ideal-class block with exact rational lifts](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md)
+remains the positive prospective class-construction calibration; its solubility
+test is retrospective. Earlier exclusion and carrier evidence is retained below.
 
 - [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
 - [Current theorem gates and search priorities](SEARCH_THEOREM_GATES_V2.json)

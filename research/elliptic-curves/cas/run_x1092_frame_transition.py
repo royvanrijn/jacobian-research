@@ -20,7 +20,7 @@ ROOT=Path(__file__).resolve().parents[2]
 ART=ROOT/'artifacts/generated-results/elliptic-curves'
 
 
-def prepare(folder, predecessor):
+def prepare(folder, predecessor, reuse=None):
     from run_euclidean_seed_foundry import SUFFIXES
     folder.mkdir(parents=True,exist_ok=False)
     rt=folder/'runtime/research'
@@ -53,6 +53,30 @@ def prepare(folder, predecessor):
         'scoring':'Same frozen scoring function, rational addresses, control ordering and point exposure as class1; only the generic parent changes.',
         'arithmetic_strict_gate':'Optional and UNKNOWN; not a prerequisite for ordinary search.',
         'next_panel_auto_extension':False}
+    if reuse:
+        oldplan=read(reuse/'plan.json');oldroot=Path(oldplan['runtime_root'])
+        assert oldplan['target_class']==next_class
+        assert read(reuse/'result.json')['status']=='UNKNOWN_BOUNDED_REALIZATION'
+        assert read(reuse/'result.json')['stage']=='verify'
+        stages=['discover','marking','trace','equation']
+        prefix='x1092_class'+str(next_class)+'_realization'
+        proofdir=Path('artifacts/generated-results/elliptic-curves')
+        for name in ('discovery','marking','trace','rr','equation'):
+            rel=proofdir/(prefix+'_'+name+'_v1.json')
+            shutil.copyfile(oldroot/rel,rt/rel)
+        work=Path('artifacts/local/elkies-k3')/('x1092-class'+str(next_class)+'-realization-v1')
+        (rt/work).mkdir(parents=True,exist_ok=True)
+        for name in ('marking','trace','equation'):
+            shutil.copyfile(oldroot/work/(name+'.sobj'),rt/work/(name+'.sobj'))
+        for stage in stages:
+            oldcost=read(reuse/'stages'/stage/'cost.json')
+            assert oldcost['outcome']=='completed' and oldcost['returncode']==0
+            write(folder/'stages'/stage/'cost.json',oldcost,True)
+        plan['reuse']={'prior_attempt':str(reuse),'stages':stages,
+            'prior_result_sha256':sha(reuse/'result.json'),
+            'prior_child_cpu_seconds':sum(read(p)['child_cpu_seconds'] for p in (reuse/'stages').glob('*/cost.json')),
+            'reused_files':{str(p.relative_to(rt)):sha(p) for p in sorted(rt.rglob('*')) if p.is_file() and p.relative_to(rt).parts[0]=='artifacts'},
+            'boundary':'Reuse exact equation/marking checkpoints only; all section planning, coordinate recovery, normalization and independent replay run again. Retain the failed index2 attempt and charge its full computation once.'}
     write(folder/'plan.json',plan,True)
     print('PREPARED',folder,flush=True)
 
@@ -64,6 +88,7 @@ def run(folder):
         os.execv(sys.executable,[sys.executable,str(frozen),'run','--folder',str(folder)])
     lock=(folder/'transition.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     for name,digest in plan['source_files'].items():assert sha(rt/name)==digest,name
+    for name,digest in plan.get('reuse',{}).get('reused_files',{}).items():assert sha(rt/name)==digest,name
     if (folder/'result.json').exists():return
     predecessor=Path(plan['predecessor'])
     assert sha(predecessor/'commissioning-cap.json')==plan['predecessor_cap_sha256']
@@ -125,7 +150,9 @@ def run(folder):
         'producer_sha256':sha(rt/'elkies-k3/scripts/realize_x1092_next_frame.sage'),
         'checker_sha256':sha(rt/'elkies-k3/scripts/verify_x1092_next_frame.sage'),
         'reused_compiler_sha256':sha(rt/'elkies-k3/scripts/realize_x1092_class1.sage'),
-        'stages':costs,'arithmetic_strict_classes':'UNKNOWN',
+        'stages':costs,'prior_attempt':plan.get('reuse'),
+        'total_realization_child_cpu_seconds':plan.get('reuse',{}).get('prior_child_cpu_seconds',0)+sum(c['child_cpu_seconds'] for c in costs if c['stage'] not in plan.get('reuse',{}).get('stages',[])),
+        'arithmetic_strict_classes':'UNKNOWN',
         'scope':'One exact rational J2 realization, no J1 classification, new K3, or specialized-rank claim.'}
     write(output/(prefix+'_manifest_v1.json'),certificate,True)
     for p in output.glob(prefix+'_*_v1.json'):
@@ -150,7 +177,7 @@ def run(folder):
     subprocess.run(capped+['run','--folder',str(panel)],check=True)
     if not (panel/'commissioning-result.json').exists():return
     result={'status':'NEXT_FRAME_SMALL_PANEL_FINISHED','class_index':plan['target_class'],
-        'panel':read(panel/'commissioning-result.json'),'realization_child_cpu_seconds':sum(c['child_cpu_seconds'] for c in costs),
+        'panel':read(panel/'commissioning-result.json'),'realization_child_cpu_seconds':certificate['total_realization_child_cpu_seconds'],
         'no_automatic_panel_extension':True}
     write(folder/'result.json',result,True);write(folder/'STATUS.json',result)
 
@@ -158,6 +185,7 @@ def run(folder):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['prepare','run'])
     p.add_argument('--folder',type=Path,required=True);p.add_argument('--predecessor',type=Path)
+    p.add_argument('--reuse-realization',type=Path)
     a=p.parse_args();a.folder=a.folder.resolve()
-    if a.mode=='prepare':prepare(a.folder,a.predecessor.resolve())
+    if a.mode=='prepare':prepare(a.folder,a.predecessor.resolve(),a.reuse_realization.resolve() if a.reuse_realization else None)
     else:run(a.folder)

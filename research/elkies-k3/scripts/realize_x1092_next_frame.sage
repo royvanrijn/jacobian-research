@@ -117,6 +117,47 @@ def marking():
         'equation':'UNKNOWN','rational_sections':'UNKNOWN','parameter_search':'BLOCKED'})
     WORK.mkdir(parents=True,exist_ok=True);save((G,N,D,O,H,T),str(WORK/'marking.sobj'))
 
+def section_plan():
+    G,N,D,O,H,T=load(str(WORK/'marking.sobj'));inverse=T.inverse()
+    discovery=read(ART/(PREFIX+'_discovery_v1.json'))
+    short=matrix(ZZ,pari(G).qfminim(8)[2]);candidates=[]
+    for col in short.columns()+[vector(ZZ,discovery['word'])]:
+        for word in (col,-col):
+            div=vector(ZZ,[(word*G*word-2)//2,1]+list(word))
+            if div*N*D!=1:continue
+            child=div*inverse;assert child[1]==1 and all(c in ZZ for c in child)
+            candidates.append((word,vector(ZZ,child[2:])))
+    candidates.sort(key=lambda x:(x[0]*G*x[0],sum(abs(c) for c in x[0]),tuple(x[0])))
+    helper=runpy.run_path(str(ROOT/'elkies-k3/scripts/plan_r17_norm12_direct_section_basis.sage'))
+    # Full rational rank is insufficient for the modulo-two production gate.
+    # improve_basis, unlike reduce_basis, rejects a remaining nontrivial index.
+    result=helper['improve_basis']([],candidates);glue_word=None;glue=[]
+    if result is None:
+        for row in csv.DictReader(ORBITS.open(),delimiter='\t'):
+            if int(row['minimum_norm'])!=10:continue
+            word=vector(ZZ,list(map(int,row['parent_MW17_w'].split())))
+            for sign in (1,-1):
+                v=sign*word;div=vector(ZZ,[2,2]+list(v))
+                if div*N*D==1:
+                    child=div*inverse
+                    glue.append((sum(abs(c) for c in v),int(row['orbit_mask']),sign,v,vector(ZZ,child[2:])))
+        glue.sort(key=lambda x:tuple(x[:3]))
+        for _,mask,sign,v,child in glue:
+            result=helper['improve_basis']([child],candidates)
+            if result is not None:
+                glue_word=list(map(int,v));break
+    if result is None:
+        emit('section_plan',{'status':'UNKNOWN_BOUNDED_SATURATED_SECTION_SPAN',
+            'candidate_count':len(candidates),'bisection_candidate_count':len(glue)})
+        return
+    selected,B=result;assert abs(B.det())==1
+    emit('section_plan',{'status':'PASS_EXACT_RANK17_SECTION_CLASS_PLAN','height_bound':12,
+        'candidate_count':len(candidates),'selected_source_words':rows(matrix(ZZ,selected)),
+        'glue_bisection_word':glue_word,'child_frame_coordinates':rows(B),'subgroup_index':1,
+        'height_gram':rows(B*H*B.T),'height_determinant':int((B*H*B.T).det()),
+        'rational_coordinate_recovery':'PENDING',
+        'saturation_gate':'A rank17 but index>1 old-section subgroup triggers the retained norm10 bisection completion.'})
+
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('stage',choices=['discover','marking','trace','equation','section_plan','sections','normalize','compact'])
@@ -126,7 +167,7 @@ if __name__=='__main__':
     WORK=ROOT/('artifacts/local/elkies-k3/x1092-class'+str(args.class_index)+'-realization-v1')
     WORK.mkdir(parents=True,exist_ok=True)
     compiler=runpy.run_path(str(BASE))
-    if args.stage in ('discover','marking'):globals()[args.stage]()
+    if args.stage in ('discover','marking','section_plan'):globals()[args.stage]()
     else:
         discovery=read(ART/(PREFIX+'_discovery_v1.json'))
         assert discovery['status']=='PASS_TARGET_FRAME_IN_GENERIC_DEGREE2_WINDOW'
