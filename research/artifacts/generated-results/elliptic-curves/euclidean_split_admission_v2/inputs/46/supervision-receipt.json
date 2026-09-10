@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/elliptic-curves/cas/run_euclidean_seed_foundry.py",
+    "_admit",
+    "--folder",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 900
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/worker.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "outcome": "completed",
+  "output_sha256": {
+    "admission.json": "53b6312fe0dee1500ebff648fb85b1f4660031ac4f369164ab9c037e324a424b",
+    "seed.json": "f3efd292c14c2f2c3342541347f0b171ee67b58fd5db92f057b3d5e9b362071d"
+  },
+  "peak_observed_rss_bytes": 95789056,
+  "pid": 493458,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "9316107",
+  "termination_signal": null,
+  "timeout_seconds": 900,
+  "wall_seconds": 79.63793973100837,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

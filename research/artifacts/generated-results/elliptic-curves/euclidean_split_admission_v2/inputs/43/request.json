@@ -1,0 +1,27 @@
+{
+  "candidates": [
+    {
+      "mask": 82931,
+      "parameter": "-5/7",
+      "point": [
+        "43195326854800587/2401",
+        "-76140914748605551389600/16807"
+      ],
+      "square_certificate": {
+        "denominator": "12003612721",
+        "denominator_floor_sqrt": "109561",
+        "numerator": "849881351399991532726376293263360000",
+        "numerator_floor_sqrt": "921890097245865600",
+        "root": "921890097245865600/109561",
+        "status": "SQUARE",
+        "value": "849881351399991532726376293263360000/12003612721"
+      },
+      "status": "SPLIT_REQUIRES_ADMISSION"
+    }
+  ],
+  "incidence": "seed-trials/43/incidence.json",
+  "incidence_sha256": "eeaba067c8539e11010ac149d6858b837e9fc3db8398d27f3e6133e6efab8e70",
+  "parameter": "-5/7",
+  "parent": "seed-inputs/parent.json",
+  "parent_sha256": "355d6e203a8f7fbce1e74031848b11fc6ae3331b941e0dd583ca2869c1a1aab7"
+}

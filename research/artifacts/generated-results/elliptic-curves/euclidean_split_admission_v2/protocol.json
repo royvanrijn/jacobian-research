@@ -1,0 +1,184 @@
+{
+  "boundary": "Corrected user roster: four certified-M17 split-point UNKNOWNs only. Five generic-gate failures excluded. No new parameters/orbits, later V3 points, point search, heights or rank upper bounds.",
+  "classification_wall_seconds": 120,
+  "footprint": "Exactly all places in each archived M17 seed proof, in saved order; no extra places.",
+  "independent_replay_wall_seconds": 180,
+  "inputs": {
+    "inputs/17/admission.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/admit/admission.json",
+      "sha256": "6b4e7ababbc14d90a94a8b331be25d0a2068f3e5badf65528fc550a457fb5047"
+    },
+    "inputs/17/incidence.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/incidence.json",
+      "sha256": "8cab5791c97d99a0efc2383f86e004503ff001f34448d9d07b3fad910286dc28"
+    },
+    "inputs/17/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/admit/request.json",
+      "sha256": "93750d1c9cf7137c69ed43c86ff5ac9f69a58425de738b7f1976205b9d35201a"
+    },
+    "inputs/17/seed-gate.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/admit/seed-gate.json",
+      "sha256": "54beafeadcfc0f43b4d1e68fc6f8e1de98b417a04a3687c409156177e7a8b787"
+    },
+    "inputs/17/seed.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/admit/seed.json",
+      "sha256": "1deadcba4001c5ac117abe781eddfcb5fe76df9f9d86af2e334b8839fdf2561a"
+    },
+    "inputs/17/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/17/admit/supervision-receipt.json",
+      "sha256": "0a84f0b8e8776d50f139aa74f6f0f07e874adc06cabea11f91e055bf15499642"
+    },
+    "inputs/4/admission.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/admit/admission.json",
+      "sha256": "1be5ad1435800fe5100ccc2b219cf8489fe16c7e632aaf332a224523a38ffe24"
+    },
+    "inputs/4/incidence.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/incidence.json",
+      "sha256": "fe9702bbe9f508155389b8d4537b6a81b6315c7777706266dd06780b7b5a671d"
+    },
+    "inputs/4/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/admit/request.json",
+      "sha256": "ab3932c50a257d54f32acad7d9306c7719bf0983b89e2f4c26296b8e9a6a44db"
+    },
+    "inputs/4/seed-gate.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/admit/seed-gate.json",
+      "sha256": "9a618210e84db9d56b8885112f4cebb4f33fa2202bb734fd770be77d276fe4e4"
+    },
+    "inputs/4/seed.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/admit/seed.json",
+      "sha256": "8b3248728ee2611c827253846b540f998ecf2a1147c2726230c74eebf00d2e76"
+    },
+    "inputs/4/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/4/admit/supervision-receipt.json",
+      "sha256": "65d30fe173e3014e5f8b913467eab5c1cd772ceeb925b889823601277d6bb4ef"
+    },
+    "inputs/43/admission.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/admit/admission.json",
+      "sha256": "25dbac564114a0a1a635940c85860e9473fef6dc57ccb6db72bfd74d5565ca50"
+    },
+    "inputs/43/incidence.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/incidence.json",
+      "sha256": "eeaba067c8539e11010ac149d6858b837e9fc3db8398d27f3e6133e6efab8e70"
+    },
+    "inputs/43/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/admit/request.json",
+      "sha256": "aafcbdc4780ae1d37470149febe3b13476ee94f4ff6b6f096613bcc3aca1323a"
+    },
+    "inputs/43/seed-gate.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/admit/seed-gate.json",
+      "sha256": "6cafe25b18ce4b43adb6bf208cd44d37344e0d3dbab2e54790d6e4192fde7ed0"
+    },
+    "inputs/43/seed.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/admit/seed.json",
+      "sha256": "44662ecbd1c8df8eab9706dcce253330c6b1a499ff47f01c3e9d8ac1f7a9c95c"
+    },
+    "inputs/43/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/43/admit/supervision-receipt.json",
+      "sha256": "e63731f11190ac7e9d049e20a53e61c627f0cf21988908cf3225251067eaa38c"
+    },
+    "inputs/46/admission.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/admission.json",
+      "sha256": "53b6312fe0dee1500ebff648fb85b1f4660031ac4f369164ab9c037e324a424b"
+    },
+    "inputs/46/incidence.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/incidence.json",
+      "sha256": "0cc618e300f53e47d3389efcf5a8ac73b2a878b395926d464417a427f29144f3"
+    },
+    "inputs/46/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/request.json",
+      "sha256": "406d1095dd4c4ddb2f92391b9b9a063a0d4e4d191a01bd4f78fa5b7ea9cae7a7"
+    },
+    "inputs/46/seed-gate.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/seed-gate.json",
+      "sha256": "2ac13a1311e45ea9878b762b69b69d2b5dabfcdc73ecc703de759af8f2a270ce"
+    },
+    "inputs/46/seed.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/seed.json",
+      "sha256": "f3efd292c14c2f2c3342541347f0b171ee67b58fd5db92f057b3d5e9b362071d"
+    },
+    "inputs/46/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-trials/46/admit/supervision-receipt.json",
+      "sha256": "4cb7b898a80eeb119605647f32aed68c0027d2581ee82f6d7d85600596043034"
+    },
+    "inputs/manifest.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/manifest.json",
+      "sha256": "afdd9b778d62c312e17f63dfb428a1261bb1a24d34acc476c6710cd2caf5cde5"
+    },
+    "inputs/parent.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-inputs/parent.json",
+      "sha256": "355d6e203a8f7fbce1e74031848b11fc6ae3331b941e0dd583ca2869c1a1aab7"
+    },
+    "inputs/plan.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/plan.json",
+      "sha256": "b6125f47094ed584dbd4378094b77a1e35ab75d7ce87236b879c301a9a77c691"
+    },
+    "inputs/traces/30223/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/30223/request.json",
+      "sha256": "65fb31a0116099c6f6de49e459a80788ce1ff8e93f5d550d0c6c5abb77da151f"
+    },
+    "inputs/traces/30223/result.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/30223/result.json",
+      "sha256": "28b7b99a02cb59ec5dad68c3b4b4eb7f616c5973f585739ecb3ab3f985a968b9"
+    },
+    "inputs/traces/30223/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/30223/supervision-receipt.json",
+      "sha256": "d0d743cc215f8b65baa6cbb8449fc96d54c5a20364cbb2e99f1a1db2469ef821"
+    },
+    "inputs/traces/65035/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/65035/request.json",
+      "sha256": "78e33545028d491e505b8c2650e151845dad68420d2f0c08ac16d91fa5cf0aaf"
+    },
+    "inputs/traces/65035/result.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/65035/result.json",
+      "sha256": "333b5ac296c50b80e3c9bd93e7a2c874acc556a1f2efcdfec0f6a445af6feb5b"
+    },
+    "inputs/traces/65035/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/65035/supervision-receipt.json",
+      "sha256": "f3bb934ad5bdb03795339d71075a87e83f1d35392984873fc4c8571b45dec423"
+    },
+    "inputs/traces/82931/request.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/82931/request.json",
+      "sha256": "debbcfda66534c3e47e0248aac2bf47f4ea5b9f0edbc021eb9ecca0442e0d5a8"
+    },
+    "inputs/traces/82931/result.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/82931/result.json",
+      "sha256": "a8bb0c127c5bf4497cf71796fdd52dbfc8f3d634f491e6a07d6d039db1ae4746"
+    },
+    "inputs/traces/82931/supervision-receipt.json": {
+      "origin": "artifacts/local/elliptic-curves/euclidean-seed-foundry-v1/runtime/research/seed-traces/82931/supervision-receipt.json",
+      "sha256": "1534fb1a38b3208efa57e65936dfcdcbe01f5f61b179f1d6aef30ee2f8c9e113"
+    }
+  },
+  "max_successful_halves": 8,
+  "maximum_workers": 2,
+  "nonhalving_proof": "Primitive duplication quartic with a root-free projective reduction at a sealed footprint prime, or exact rational factorization replay.",
+  "roster": [
+    {
+      "index": 4,
+      "mask": 82931,
+      "parameter": "2"
+    },
+    {
+      "index": 17,
+      "mask": 65035,
+      "parameter": "-4/3"
+    },
+    {
+      "index": 43,
+      "mask": 82931,
+      "parameter": "-5/7"
+    },
+    {
+      "index": 46,
+      "mask": 30223,
+      "parameter": "2/7"
+    }
+  ],
+  "rss_bytes": 1610612736,
+  "schema": "euclidean-four-split-admission.v2",
+  "statuses": [
+    "INHERITED_RATIONAL_SPAN",
+    "NEW_INDEPENDENT_DIRECTION",
+    "UNKNOWN"
+  ]
+}

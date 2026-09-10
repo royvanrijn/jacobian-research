@@ -1,0 +1,19 @@
+{
+  "boundary": "UNKNOWN_FINITE_COLUMN_IN_SPAN is not dependence. No inferred gain from a split.",
+  "candidates": [
+    {
+      "mask": 65035,
+      "point": [
+        "4240858632599199782923/881721",
+        "-214080473849750514928668054492800/827936019"
+      ],
+      "rank": 17,
+      "status": "UNKNOWN_FINITE_COLUMN_IN_SPAN"
+    }
+  ],
+  "generic_rank": 17,
+  "request_sha256": "93750d1c9cf7137c69ed43c86ff5ac9f69a58425de738b7f1976205b9d35201a",
+  "seed_rank_lower_bound": 17,
+  "seed_sha256": "1deadcba4001c5ac117abe781eddfcb5fe76df9f9d86af2e334b8839fdf2561a",
+  "status": "NO_CERTIFIED_NEW_DIRECTION"
+}

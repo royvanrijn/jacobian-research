@@ -2,6 +2,12 @@
 
 Status: **experimental implementation; not a new theorem, rank result, or measured production speedup.** Reviewed against main `36d0b5a4315e67e6df817d6044a40c5febbe7be6`.
 
+The subsequent [four-case admission replay](EUCLIDEAN_FOUR_SPLIT_ADMISSIONS_2026-09-10.md)
+closes all four pilot split-point UNKNOWNs with certified M17 frames as
+inherited, by exact integer relations. The five generic-gate failures remain
+separate. The implementation-stage handoff below is retained as historical
+context; current case status is in that proof note and `MATH_STATUS.json`.
+
 ## Decision
 
 Replace the det1092 **seed-discovery front end**, not the certified cascade and not the entire new-A1-parent programme. Initially reallocate two existing worker slots to this bounded pilot; do not add unbudgeted parallel workers. Neither active campaign has been stopped or modified by this change.

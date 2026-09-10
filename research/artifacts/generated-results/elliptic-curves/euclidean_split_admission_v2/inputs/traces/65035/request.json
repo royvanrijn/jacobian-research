@@ -1,0 +1,24 @@
+{
+  "mask": 65035,
+  "parent": "seed-inputs/parent.json",
+  "parent_sha256": "355d6e203a8f7fbce1e74031848b11fc6ae3331b941e0dd583ca2869c1a1aab7",
+  "word": [
+    2,
+    -1,
+    -2,
+    1,
+    1,
+    0,
+    1,
+    -1,
+    -2,
+    -1,
+    2,
+    1,
+    0,
+    -1,
+    0,
+    0,
+    0
+  ]
+}

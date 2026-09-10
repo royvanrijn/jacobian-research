@@ -1,0 +1,1788 @@
+{
+  "cells": [
+    {
+      "mask": 94896,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1944395677073323881",
+        "denominator_floor_sqrt": "1394415891",
+        "numerator": "634755603144372469767041482633634635306330000",
+        "numerator_floor_sqrt": "25194356573335475236070",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "634755603144372469767041482633634635306330000/1944395677073323881"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 72364,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "9597924961",
+        "denominator_floor_sqrt": "97969",
+        "numerator": "50652586236829698464097829409149338801216",
+        "numerator_floor_sqrt": "225061294399613943178",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "50652586236829698464097829409149338801216/9597924961"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 77599,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "34175466738706499761",
+        "denominator_floor_sqrt": "5845978681",
+        "numerator": "40415952476511213222350477451266791555541312160000",
+        "numerator_floor_sqrt": "6357354204109694973850983",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "40415952476511213222350477451266791555541312160000/34175466738706499761"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 4221,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "11190637348081",
+        "denominator_floor_sqrt": "3345241",
+        "numerator": "8608456115196858578799375274223516188944",
+        "numerator_floor_sqrt": "92781766070693322294",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "8608456115196858578799375274223516188944/11190637348081"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 95500,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "855036081",
+        "denominator_floor_sqrt": "29241",
+        "numerator": "2925626467214264069138031186831616",
+        "numerator_floor_sqrt": "54089060513326205",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2925626467214264069138031186831616/855036081"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 123603,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "140196990311361",
+        "denominator_floor_sqrt": "11840481",
+        "numerator": "1604233653703265815719417860056232317428736",
+        "numerator_floor_sqrt": "1266583457062054721245",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1604233653703265815719417860056232317428736/140196990311361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 98674,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "77087818526386889353561",
+        "denominator_floor_sqrt": "277646931419",
+        "numerator": "37058605999184200483952624234245959938632044960000",
+        "numerator_floor_sqrt": "6087578007646735731803358",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "37058605999184200483952624234245959938632044960000/77087818526386889353561"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 15533,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "473758150426541515921",
+        "denominator_floor_sqrt": "21765986089",
+        "numerator": "4478402006148462712541275350049536043357012224",
+        "numerator_floor_sqrt": "66920863758236584139826",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "4478402006148462712541275350049536043357012224/473758150426541515921"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 30352,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "6528982758098641",
+        "denominator_floor_sqrt": "80802121",
+        "numerator": "4505782489904553545638999486627650881640000",
+        "numerator_floor_sqrt": "2122682851936330489005",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "4505782489904553545638999486627650881640000/6528982758098641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 59779,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1",
+        "denominator_floor_sqrt": "1",
+        "numerator": "1026475712952787466264748801600",
+        "numerator_floor_sqrt": "1013151377116365",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1026475712952787466264748801600"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 51261,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "218803264",
+        "denominator_floor_sqrt": "14792",
+        "numerator": "313490548289057931441575849799045025",
+        "numerator_floor_sqrt": "559902266729701614",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "313490548289057931441575849799045025/218803264"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 76208,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "64",
+        "denominator_floor_sqrt": "8",
+        "numerator": "752018794433677508078683225",
+        "numerator_floor_sqrt": "27422961080701",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "752018794433677508078683225/64"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 87902,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "37662769",
+        "denominator_floor_sqrt": "6137",
+        "numerator": "73510327651627283817766494654867600",
+        "numerator_floor_sqrt": "271127880623935988",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "73510327651627283817766494654867600/37662769"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 33698,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "20151121",
+        "denominator_floor_sqrt": "4489",
+        "numerator": "772251260474409774280866015370600000",
+        "numerator_floor_sqrt": "878778277197615857",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "772251260474409774280866015370600000/20151121"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 25679,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "38448938585512081",
+        "denominator_floor_sqrt": "196084009",
+        "numerator": "1327069469580818761818711816623792626017673044225",
+        "numerator_floor_sqrt": "1151985012741406615309778",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1327069469580818761818711816623792626017673044225/38448938585512081"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 67880,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "5047050008286762025",
+        "denominator_floor_sqrt": "2246564045",
+        "numerator": "1544441648108055535823518068247442253945081024",
+        "numerator_floor_sqrt": "39299384831165685001412",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1544441648108055535823518068247442253945081024/5047050008286762025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 120424,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "9748688599521",
+        "denominator_floor_sqrt": "3122289",
+        "numerator": "29655479193787361731538255838732536070400",
+        "numerator_floor_sqrt": "172207662993803390536",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "29655479193787361731538255838732536070400/9748688599521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 20146,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "15882300625",
+        "denominator_floor_sqrt": "126025",
+        "numerator": "2513857154119423685704201615359739456",
+        "numerator_floor_sqrt": "1585514791517071809",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2513857154119423685704201615359739456/15882300625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 85170,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "150884631702198534721",
+        "denominator_floor_sqrt": "12283510561",
+        "numerator": "1590662850081577659278753046923996435335235356224",
+        "numerator_floor_sqrt": "1261214831058364005344996",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1590662850081577659278753046923996435335235356224/150884631702198534721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 72746,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "344111737962001",
+        "denominator_floor_sqrt": "18550249",
+        "numerator": "84006125880251027028739314882111576002500",
+        "numerator_floor_sqrt": "289838102878574312249",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "84006125880251027028739314882111576002500/344111737962001"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 25110,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "14641",
+        "denominator_floor_sqrt": "121",
+        "numerator": "7053459692181671071335600158043600",
+        "numerator_floor_sqrt": "83984877758925571",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "7053459692181671071335600158043600/14641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 4968,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2825761",
+        "denominator_floor_sqrt": "1681",
+        "numerator": "30872799424890652848533682603866726400",
+        "numerator_floor_sqrt": "5556329672084860449",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "30872799424890652848533682603866726400/2825761"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 56981,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2291782096698721",
+        "denominator_floor_sqrt": "47872561",
+        "numerator": "128390573714205199227844154976544098096451584",
+        "numerator_floor_sqrt": "11330956434220599333379",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "128390573714205199227844154976544098096451584/2291782096698721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 77091,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "30736434962025",
+        "denominator_floor_sqrt": "5544045",
+        "numerator": "38000117501254872294418346137491117006967696",
+        "numerator_floor_sqrt": "6164423533571883986178",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "38000117501254872294418346137491117006967696/30736434962025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 68466,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1",
+        "denominator_floor_sqrt": "1",
+        "numerator": "950403285720081486120914944",
+        "numerator_floor_sqrt": "30828611478950",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "950403285720081486120914944"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 130109,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1722629745930625",
+        "denominator_floor_sqrt": "41504575",
+        "numerator": "25772893337026363628875973243918425540129024",
+        "numerator_floor_sqrt": "5076701028918914349355",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "25772893337026363628875973243918425540129024/1722629745930625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 97000,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "3380332275390625",
+        "denominator_floor_sqrt": "58140625",
+        "numerator": "51018583812130184421760438830483627957924",
+        "numerator_floor_sqrt": "225872937316824621006",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "51018583812130184421760438830483627957924/3380332275390625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 126568,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "71413468521201",
+        "denominator_floor_sqrt": "8450649",
+        "numerator": "3665374492533173058926946335939558567502400",
+        "numerator_floor_sqrt": "1914516777814488900470",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "3665374492533173058926946335939558567502400/71413468521201"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 127544,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "9881774573841",
+        "denominator_floor_sqrt": "3143529",
+        "numerator": "1168948353223037901487176919255041678400",
+        "numerator_floor_sqrt": "34189886709713413460",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1168948353223037901487176919255041678400/9881774573841"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 82389,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "314722122001",
+        "denominator_floor_sqrt": "561001",
+        "numerator": "96909311030188223268895120702522814841856",
+        "numerator_floor_sqrt": "311302603635414882581",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "96909311030188223268895120702522814841856/314722122001"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 125664,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "881647759521",
+        "denominator_floor_sqrt": "938961",
+        "numerator": "77207778594277141375898305983003333679360000",
+        "numerator_floor_sqrt": "8786795695489746697738",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "77207778594277141375898305983003333679360000/881647759521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 118282,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "12824883490233253201",
+        "denominator_floor_sqrt": "3581184649",
+        "numerator": "8704051878067777552758860371989046156831328400",
+        "numerator_floor_sqrt": "93295508348836266752907",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "8704051878067777552758860371989046156831328400/12824883490233253201"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 30274,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1836036801",
+        "denominator_floor_sqrt": "42849",
+        "numerator": "319075505701692322372007103494560000",
+        "numerator_floor_sqrt": "564867688668499007",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "319075505701692322372007103494560000/1836036801"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 16857,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1305015625",
+        "denominator_floor_sqrt": "36125",
+        "numerator": "1719771166969338432441928304186031168",
+        "numerator_floor_sqrt": "1311400460183440088",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1719771166969338432441928304186031168/1305015625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 79072,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "36088866774801",
+        "denominator_floor_sqrt": "6007401",
+        "numerator": "2666086013214352626029174503028813344422976",
+        "numerator_floor_sqrt": "1632815364091835285431",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2666086013214352626029174503028813344422976/36088866774801"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 112012,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "4879681",
+        "denominator_floor_sqrt": "2209",
+        "numerator": "3516231737934281073836525559456100",
+        "numerator_floor_sqrt": "59297822370929280",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "3516231737934281073836525559456100/4879681"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 35844,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "4640470641",
+        "denominator_floor_sqrt": "68121",
+        "numerator": "2863215514810690755570105604476654400",
+        "numerator_floor_sqrt": "1692103872346698093",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2863215514810690755570105604476654400/4640470641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 37347,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "96101965591921",
+        "denominator_floor_sqrt": "9803161",
+        "numerator": "7566594998460086206906841099076655004890000",
+        "numerator_floor_sqrt": "2750744444411382648736",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "7566594998460086206906841099076655004890000/96101965591921"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 103576,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "683386457075113418250625",
+        "denominator_floor_sqrt": "826671916225",
+        "numerator": "2517391443698753011472285421888656050197889965581376",
+        "numerator_floor_sqrt": "50173613022172850208940007",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2517391443698753011472285421888656050197889965581376/683386457075113418250625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 125035,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "42771683562811921",
+        "denominator_floor_sqrt": "206813161",
+        "numerator": "686978019416321637765150650453634413816064",
+        "numerator_floor_sqrt": "828841371684788450488",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "686978019416321637765150650453634413816064/42771683562811921"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 12477,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1286522104070641",
+        "denominator_floor_sqrt": "35868121",
+        "numerator": "717797431990724679579809557592041000000",
+        "numerator_floor_sqrt": "26791741861826092914",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "717797431990724679579809557592041000000/1286522104070641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 65773,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "16064300320565129361",
+        "denominator_floor_sqrt": "4008029481",
+        "numerator": "208004115066240284576950820181894054918400",
+        "numerator_floor_sqrt": "456074681457149388838",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "208004115066240284576950820181894054918400/16064300320565129361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 20772,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "13617878638081",
+        "denominator_floor_sqrt": "3690241",
+        "numerator": "33789659289238626575763176241130723185000",
+        "numerator_floor_sqrt": "183819637931420772820",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "33789659289238626575763176241130723185000/13617878638081"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 114665,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "531441",
+        "denominator_floor_sqrt": "729",
+        "numerator": "1524808298410984678804857160619406400",
+        "numerator_floor_sqrt": "1234831283378820411",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1524808298410984678804857160619406400/531441"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 7675,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "364413602201273939375184321",
+        "denominator_floor_sqrt": "19089620273889",
+        "numerator": "263713292352190903260700269524157790988981321169640000",
+        "numerator_floor_sqrt": "513530225354059274831722221",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "263713292352190903260700269524157790988981321169640000/364413602201273939375184321"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 128915,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "84402451441",
+        "denominator_floor_sqrt": "290521",
+        "numerator": "12234963760543724547817765356818457600",
+        "numerator_floor_sqrt": "3497851306236976756",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "12234963760543724547817765356818457600/84402451441"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 113428,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "919441979718732252721",
+        "denominator_floor_sqrt": "30322301689",
+        "numerator": "45130076597138756261491458554761509088532889600",
+        "numerator_floor_sqrt": "212438406596214979851663",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "45130076597138756261491458554761509088532889600/919441979718732252721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 66987,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "395254161",
+        "denominator_floor_sqrt": "19881",
+        "numerator": "86636718696344919251396063371661584",
+        "numerator_floor_sqrt": "294341160384246836",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "86636718696344919251396063371661584/395254161"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 109498,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "729",
+        "denominator_floor_sqrt": "27",
+        "numerator": "5944727359102309518406350400",
+        "numerator_floor_sqrt": "77102058073065",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "5944727359102309518406350400/729"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 75060,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "6122304000241",
+        "denominator_floor_sqrt": "2474329",
+        "numerator": "9546353315003478184825758884553776400",
+        "numerator_floor_sqrt": "3089717351960123582",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "9546353315003478184825758884553776400/6122304000241"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 17643,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2190908347330849441",
+        "denominator_floor_sqrt": "1480171729",
+        "numerator": "312912904038523741650881881419451090423901697600",
+        "numerator_floor_sqrt": "559386185062273183102478",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "312912904038523741650881881419451090423901697600/2190908347330849441"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 50826,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "22243780156282179687361",
+        "denominator_floor_sqrt": "149143488481",
+        "numerator": "73975083152557441964784095414178156549198472880625",
+        "numerator_floor_sqrt": "8600876882769421549789374",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "73975083152557441964784095414178156549198472880625/22243780156282179687361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 57249,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2750058481",
+        "denominator_floor_sqrt": "52441",
+        "numerator": "355680454573649436228982653120360000",
+        "numerator_floor_sqrt": "596389515814664062",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "355680454573649436228982653120360000/2750058481"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 32128,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1432685100017274135539",
+        "denominator_floor_sqrt": "37850826939",
+        "numerator": "365639396097357436808685359173720966077744000000",
+        "numerator_floor_sqrt": "604681235112647957229891",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "365639396097357436808685359173720966077744000000/1432685100017274135539"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 116442,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "923521",
+        "denominator_floor_sqrt": "961",
+        "numerator": "7793350247988705415944987905985600",
+        "numerator_floor_sqrt": "88279953828650734",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "7793350247988705415944987905985600/923521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 80411,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1",
+        "denominator_floor_sqrt": "1",
+        "numerator": "1297325890535268474920166400",
+        "numerator_floor_sqrt": "36018410438764",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1297325890535268474920166400"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 12756,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "797493650625",
+        "denominator_floor_sqrt": "893025",
+        "numerator": "41833565437925918278745093886649417984",
+        "numerator_floor_sqrt": "6467887246846988618",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "41833565437925918278745093886649417984/797493650625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 26427,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "5360301153108123708721",
+        "denominator_floor_sqrt": "73214077561",
+        "numerator": "243437715097023407679852451324443205823809563648400",
+        "numerator_floor_sqrt": "15602490669666282728811946",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "243437715097023407679852451324443205823809563648400/5360301153108123708721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 93209,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1908029761",
+        "denominator_floor_sqrt": "43681",
+        "numerator": "1779466022449166204148536023011078400",
+        "numerator_floor_sqrt": "1333966274854490541",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1779466022449166204148536023011078400/1908029761"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 6315,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1109662094025",
+        "denominator_floor_sqrt": "1053405",
+        "numerator": "24852106465708954106013483440303270757376",
+        "numerator_floor_sqrt": "157645508866281864991",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "24852106465708954106013483440303270757376/1109662094025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 35117,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1783638334337086120907601",
+        "denominator_floor_sqrt": "1335529233801",
+        "numerator": "19573180878809231824887420988666493770748903999041600",
+        "numerator_floor_sqrt": "139904184636519117325793609",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "19573180878809231824887420988666493770748903999041600/1783638334337086120907601"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 76374,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "49",
+        "denominator_floor_sqrt": "7",
+        "numerator": "7635823115852189821189213665562500",
+        "numerator_floor_sqrt": "87383196988049080",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "7635823115852189821189213665562500/49"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 54796,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "426027020338084",
+        "denominator_floor_sqrt": "20640422",
+        "numerator": "32473981711458701225989566395807105072089",
+        "numerator_floor_sqrt": "180205387576117438415",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "32473981711458701225989566395807105072089/426027020338084"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 82090,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "8503056",
+        "denominator_floor_sqrt": "2916",
+        "numerator": "2467896494374217156489151943896221875225",
+        "numerator_floor_sqrt": "49677927637676444810",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2467896494374217156489151943896221875225/8503056"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 71030,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1",
+        "denominator_floor_sqrt": "1",
+        "numerator": "3419783000045352596828232256",
+        "numerator_floor_sqrt": "58478910728957",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "3419783000045352596828232256"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 102124,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "27439591201",
+        "denominator_floor_sqrt": "165649",
+        "numerator": "19610753170698354049286219981476966656",
+        "numerator_floor_sqrt": "4428403004548971043",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "19610753170698354049286219981476966656/27439591201"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 28508,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "625",
+        "denominator_floor_sqrt": "25",
+        "numerator": "14403409510466677928608906657344",
+        "numerator_floor_sqrt": "3795182408062447",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "14403409510466677928608906657344/625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 3470,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "3147870802176",
+        "negative": true,
+        "numerator": "-1022093947065015824671757665163140998119",
+        "status": "NONSQUARE",
+        "value": "-1022093947065015824671757665163140998119/3147870802176"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 1643,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "29986576",
+        "denominator_floor_sqrt": "5476",
+        "numerator": "3268401145652485167169144240355625",
+        "numerator_floor_sqrt": "57169932181632725",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "3268401145652485167169144240355625/29986576"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 1243,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "26244",
+        "denominator_floor_sqrt": "162",
+        "numerator": "181617512301964159885640589576025",
+        "numerator_floor_sqrt": "13476554170186240",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "181617512301964159885640589576025/26244"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 30388,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "4879681",
+        "denominator_floor_sqrt": "2209",
+        "numerator": "1354756174382110309277572112981284",
+        "numerator_floor_sqrt": "36807012570733179",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1354756174382110309277572112981284/4879681"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 126413,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "4499860561",
+        "denominator_floor_sqrt": "67081",
+        "numerator": "27046243030977031081364714156467180594176",
+        "numerator_floor_sqrt": "164457420115290119071",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "27046243030977031081364714156467180594176/4499860561"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 96905,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2300257521",
+        "denominator_floor_sqrt": "47961",
+        "numerator": "102326992541526002929067904083556289600",
+        "numerator_floor_sqrt": "10115680527850116072",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "102326992541526002929067904083556289600/2300257521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 128036,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "81206852783721921",
+        "denominator_floor_sqrt": "284968161",
+        "numerator": "214454031508681749576312881620694696022250000",
+        "numerator_floor_sqrt": "14644249093370467166266",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "214454031508681749576312881620694696022250000/81206852783721921"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 121969,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2517630976",
+        "denominator_floor_sqrt": "50176",
+        "numerator": "9014782714565433202563095342725225",
+        "numerator_floor_sqrt": "94946209585035216",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "9014782714565433202563095342725225/2517630976"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 89167,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "101759666840204423980801",
+        "denominator_floor_sqrt": "318997910401",
+        "numerator": "102562741137571446130313970457396197369783908544400",
+        "numerator_floor_sqrt": "10127326455564244628420818",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "102562741137571446130313970457396197369783908544400/101759666840204423980801"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 10019,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "150644120641",
+        "denominator_floor_sqrt": "388129",
+        "numerator": "9054873198762697018770693359169213504",
+        "numerator_floor_sqrt": "3009131635333139928",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "9054873198762697018770693359169213504/150644120641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 87520,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "6226423383320721",
+        "denominator_floor_sqrt": "78907689",
+        "numerator": "41851837809751641941277886081164210732289600",
+        "numerator_floor_sqrt": "6469299638272418275117",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "41851837809751641941277886081164210732289600/6226423383320721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 90577,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "244140625",
+        "denominator_floor_sqrt": "15625",
+        "numerator": "6864154471930565197689753252485764",
+        "numerator_floor_sqrt": "82850192950472753",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "6864154471930565197689753252485764/244140625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 49357,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "12117361",
+        "denominator_floor_sqrt": "3481",
+        "numerator": "13029755076115742872286017925949",
+        "numerator_floor_sqrt": "3609675203687409",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "13029755076115742872286017925949/12117361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 54724,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "461067296686964496",
+        "denominator_floor_sqrt": "679019364",
+        "numerator": "21545351337961352393569834638012675390625",
+        "numerator_floor_sqrt": "146783348299326352414",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "21545351337961352393569834638012675390625/461067296686964496"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 19814,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "262217733184",
+        "denominator_floor_sqrt": "512072",
+        "numerator": "351825244183542439454842216258234421875",
+        "numerator_floor_sqrt": "18757005202951308011",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "351825244183542439454842216258234421875/262217733184"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 101671,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "39478665072025",
+        "denominator_floor_sqrt": "6283205",
+        "numerator": "560035337840480969699590595931730063905024",
+        "numerator_floor_sqrt": "748355088070149336443",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "560035337840480969699590595931730063905024/39478665072025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 113946,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "127687798792086565201",
+        "negative": true,
+        "numerator": "-103637445661534982596778035883893765433874447600",
+        "status": "NONSQUARE",
+        "value": "-103637445661534982596778035883893765433874447600/127687798792086565201"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 111990,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "139368569041",
+        "denominator_floor_sqrt": "373321",
+        "numerator": "428610342815219881034779939654939025625",
+        "numerator_floor_sqrt": "20702906627215896348",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "428610342815219881034779939654939025625/139368569041"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 127290,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "303120718096",
+        "denominator_floor_sqrt": "550564",
+        "numerator": "638634506176689413436664273632949754900625",
+        "numerator_floor_sqrt": "799146110656048562262",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "638634506176689413436664273632949754900625/303120718096"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 88236,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "343",
+        "denominator_floor_sqrt": "18",
+        "numerator": "5037434975119936733864320000",
+        "numerator_floor_sqrt": "70974889750671",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "5037434975119936733864320000/343"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 7614,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "295757755316881",
+        "denominator_floor_sqrt": "17197609",
+        "numerator": "468818116966607729027563593960228728217717264",
+        "numerator_floor_sqrt": "21652208131426404913407",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "468818116966607729027563593960228728217717264/295757755316881"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 27258,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "37640400147098091977223681",
+        "denominator_floor_sqrt": "6135177271041",
+        "numerator": "4267190749729580023111691618518256373077424271027600",
+        "numerator_floor_sqrt": "65323738026306945435514087",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "4267190749729580023111691618518256373077424271027600/37640400147098091977223681"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 24440,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "424884905381105521",
+        "denominator_floor_sqrt": "651831961",
+        "numerator": "55847511827475435111573201827839010627560000",
+        "numerator_floor_sqrt": "7473119283637551781345",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "55847511827475435111573201827839010627560000/424884905381105521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 114759,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "11419059324455293782240339841",
+        "denominator_floor_sqrt": "106859998710721",
+        "numerator": "957903232221146563514033103805270631799097678752846400",
+        "numerator_floor_sqrt": "978725309890955340422402260",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "957903232221146563514033103805270631799097678752846400/11419059324455293782240339841"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 27135,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "56249134561",
+        "negative": true,
+        "numerator": "-1408808111489404638614869986691303100",
+        "status": "NONSQUARE",
+        "value": "-1408808111489404638614869986691303100/56249134561"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 122629,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "88529281",
+        "denominator_floor_sqrt": "9409",
+        "numerator": "8417946751028946682388547316354603584",
+        "numerator_floor_sqrt": "2901369805975954296",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "8417946751028946682388547316354603584/88529281"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 127436,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "68574961",
+        "denominator_floor_sqrt": "8281",
+        "numerator": "66129101663344170091314670500570000",
+        "numerator_floor_sqrt": "257155792591464231",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "66129101663344170091314670500570000/68574961"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 71221,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "8981853641",
+        "denominator_floor_sqrt": "94772",
+        "numerator": "51130614375486145292350117829222559744",
+        "numerator_floor_sqrt": "7150567416330409320",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "51130614375486145292350117829222559744/8981853641"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 119630,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "398218113881259765625",
+        "denominator_floor_sqrt": "19955403125",
+        "numerator": "2708119233432255026686214713160650820979785601024",
+        "numerator_floor_sqrt": "1645636422005861848470372",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2708119233432255026686214713160650820979785601024/398218113881259765625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 125250,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "18655726927668961",
+        "denominator_floor_sqrt": "136585969",
+        "numerator": "19631057262988277816047499607984011993190400",
+        "numerator_floor_sqrt": "4430694896174670907876",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "19631057262988277816047499607984011993190400/18655726927668961"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 38409,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1245496176324",
+        "denominator_floor_sqrt": "1116018",
+        "numerator": "2181808954543653238341893246712554455225",
+        "numerator_floor_sqrt": "46709837877514124790",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2181808954543653238341893246712554455225/1245496176324"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 21925,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "200510386108561",
+        "denominator_floor_sqrt": "14160169",
+        "numerator": "132335686036165317838372957977864362242916964",
+        "numerator_floor_sqrt": "11503724876585206209604",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "132335686036165317838372957977864362242916964/200510386108561"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 92839,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "84654776528493721",
+        "denominator_floor_sqrt": "290954939",
+        "numerator": "2224208490082629196331302174486987622719502400",
+        "numerator_floor_sqrt": "47161514925653408195261",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "2224208490082629196331302174486987622719502400/84654776528493721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 79609,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "20390869140625",
+        "denominator_floor_sqrt": "4515625",
+        "numerator": "11068456713213746951773451615744554574472256",
+        "numerator_floor_sqrt": "3326929021366964322837",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "11068456713213746951773451615744554574472256/20390869140625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 73815,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "75017234240001",
+        "denominator_floor_sqrt": "8661249",
+        "numerator": "1434772890520832471289828738909076585304927073856",
+        "numerator_floor_sqrt": "1197820057655085550074693",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1434772890520832471289828738909076585304927073856/75017234240001"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 104046,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1325558466241",
+        "denominator_floor_sqrt": "1151329",
+        "numerator": "1086591749936139506661222768050753640000",
+        "numerator_floor_sqrt": "32963491167292027392",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1086591749936139506661222768050753640000/1325558466241"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 38138,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "3911690339033560289761",
+        "denominator_floor_sqrt": "62543507569",
+        "numerator": "35376334147508432426407450127861861219816696064",
+        "numerator_floor_sqrt": "188085975414193049893410",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "35376334147508432426407450127861861219816696064/3911690339033560289761"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 90464,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "23447265625",
+        "negative": true,
+        "numerator": "-8097814448218559506694997251614705776",
+        "status": "NONSQUARE",
+        "value": "-8097814448218559506694997251614705776/23447265625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 65035,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "777431921841",
+        "denominator_floor_sqrt": "881721",
+        "numerator": "295693280030276875072567582322748554635849",
+        "numerator_floor_sqrt": "543776866030798403872",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "295693280030276875072567582322748554635849/777431921841"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 94753,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1204494429489220350625",
+        "negative": true,
+        "numerator": "-4039246283870451722595932416240494666167702976",
+        "status": "NONSQUARE",
+        "value": "-4039246283870451722595932416240494666167702976/1204494429489220350625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 79038,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "47458321",
+        "denominator_floor_sqrt": "6889",
+        "numerator": "55488160092187849895052746178741302500",
+        "numerator_floor_sqrt": "7449037527908410926",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "55488160092187849895052746178741302500/47458321"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 55439,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "40642963201",
+        "negative": true,
+        "numerator": "-720585354557746456655552535566669375",
+        "status": "NONSQUARE",
+        "value": "-720585354557746456655552535566669375/40642963201"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 66979,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "551029849700625",
+        "denominator_floor_sqrt": "23474025",
+        "numerator": "120434345779606343426425869920498541072784",
+        "numerator_floor_sqrt": "347036519374555656325",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "120434345779606343426425869920498541072784/551029849700625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 6889,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "635924907601",
+        "denominator_floor_sqrt": "797449",
+        "numerator": "1334531271625163656658906376403508490756",
+        "numerator_floor_sqrt": "36531236929854478398",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1334531271625163656658906376403508490756/635924907601"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 24527,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "164338240076563257441",
+        "denominator_floor_sqrt": "12819447729",
+        "numerator": "16967330184473905356430370079447444464443016089600",
+        "numerator_floor_sqrt": "4119141923322611781410850",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "16967330184473905356430370079447444464443016089600/164338240076563257441"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 117345,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "192304597486281361",
+        "negative": true,
+        "numerator": "-159975507291557212846237081650657993667584",
+        "status": "NONSQUARE",
+        "value": "-159975507291557212846237081650657993667584/192304597486281361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 52838,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "312900721",
+        "denominator_floor_sqrt": "17689",
+        "numerator": "47751518241090555669994603080739530342400",
+        "numerator_floor_sqrt": "218521207760460988327",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "47751518241090555669994603080739530342400/312900721"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 30223,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "22667121",
+        "denominator_floor_sqrt": "4761",
+        "numerator": "26240859864033025960427804013155520193600",
+        "numerator_floor_sqrt": "161990307932397689977",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "26240859864033025960427804013155520193600/22667121"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 53775,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "1506138481",
+        "denominator_floor_sqrt": "38809",
+        "numerator": "947367926123610693224237050597761600",
+        "numerator_floor_sqrt": "973328272538926454",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "947367926123610693224237050597761600/1506138481"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 127616,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "4796255025",
+        "denominator_floor_sqrt": "69255",
+        "numerator": "135083508414816533215602729654386944",
+        "numerator_floor_sqrt": "367537084407569045",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "135083508414816533215602729654386944/4796255025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 120998,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "5884874371919511695281",
+        "denominator_floor_sqrt": "76712934841",
+        "numerator": "1159781323309989120835245810414285818257967184100",
+        "numerator_floor_sqrt": "1076931438537286421267316",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "1159781323309989120835245810414285818257967184100/5884874371919511695281"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 28204,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "17682025",
+        "denominator_floor_sqrt": "4205",
+        "numerator": "267339437638176551867981249240281",
+        "numerator_floor_sqrt": "16350517962382003",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "267339437638176551867981249240281/17682025"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 7292,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "7381277426038321",
+        "negative": true,
+        "numerator": "-16999954285655967015723818933934893994494976",
+        "status": "NONSQUARE",
+        "value": "-16999954285655967015723818933934893994494976/7381277426038321"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 115892,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "22430753361",
+        "denominator_floor_sqrt": "149769",
+        "numerator": "31947080836398578493252663299970318400",
+        "numerator_floor_sqrt": "5652174876664608162",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "31947080836398578493252663299970318400/22430753361"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 82931,
+      "parameter": "2",
+      "point": [
+        "139156910935755",
+        "1304874026135364155328"
+      ],
+      "square_certificate": {
+        "denominator": "12003612721",
+        "denominator_floor_sqrt": "109561",
+        "numerator": "19487392237810399527185280235589505600",
+        "numerator_floor_sqrt": "4414452654385410840",
+        "root": "4414452654385410840/109561",
+        "status": "SQUARE",
+        "value": "19487392237810399527185280235589505600/12003612721"
+      },
+      "status": "SPLIT_REQUIRES_ADMISSION"
+    },
+    {
+      "mask": 68865,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "100115367202515625",
+        "denominator_floor_sqrt": "316410125",
+        "numerator": "527543326895198437406301027232718908428169946688",
+        "numerator_floor_sqrt": "726321779168984053263357",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "527543326895198437406301027232718908428169946688/100115367202515625"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 19491,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "324",
+        "denominator_floor_sqrt": "18",
+        "numerator": "965492929600215874714852247594121409",
+        "numerator_floor_sqrt": "982594997748419170",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "965492929600215874714852247594121409/324"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 47096,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "83521",
+        "denominator_floor_sqrt": "289",
+        "numerator": "16639973985509697312617297723112681",
+        "numerator_floor_sqrt": "128996023138349878",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "16639973985509697312617297723112681/83521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 36427,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "10061336585521",
+        "denominator_floor_sqrt": "3171961",
+        "numerator": "10679933839001917825550951966566658560000",
+        "numerator_floor_sqrt": "103343765361060450503",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "10679933839001917825550951966566658560000/10061336585521"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 58468,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "2401",
+        "negative": true,
+        "numerator": "-32148096684051105194028926400",
+        "status": "NONSQUARE",
+        "value": "-32148096684051105194028926400/2401"
+      },
+      "status": "EXACT_NONSPLIT"
+    },
+    {
+      "mask": 5721,
+      "parameter": "2",
+      "square_certificate": {
+        "denominator": "169",
+        "denominator_floor_sqrt": "13",
+        "numerator": "3620810679942294279895041000000",
+        "numerator_floor_sqrt": "1902842789076988",
+        "root": null,
+        "status": "NONSQUARE",
+        "value": "3620810679942294279895041000000/169"
+      },
+      "status": "EXACT_NONSPLIT"
+    }
+  ],
+  "control": true,
+  "index": 4,
+  "orbits_constructed": 128,
+  "orbits_planned": 128,
+  "parameter": "2",
+  "status": "SCANNED"
+}

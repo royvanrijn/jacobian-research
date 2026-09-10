@@ -1,0 +1,154 @@
+{
+  "admitted": 17,
+  "boundary": "A bounded finite witness failure is UNKNOWN, not dependence or an upper bound.",
+  "curve": [
+    "0",
+    "0",
+    "0",
+    "-135711154079818061376427342303707",
+    "608328618066833119856246156158204310754071173494"
+  ],
+  "outcomes": [
+    {
+      "rank": 1,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 2,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 3,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 4,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 5,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 6,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 7,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 8,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 9,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 10,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 11,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 12,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 13,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 14,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 15,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 16,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    },
+    {
+      "rank": 17,
+      "status": "INDEPENDENT_FINITE_COLUMN"
+    }
+  ],
+  "points": [
+    [
+      "23924480503872770043/3721",
+      "8960633724918396265883187840/226981"
+    ],
+    [
+      "76560978083409652563/1681",
+      "-649844610782447523570651881280/68921"
+    ],
+    [
+      "4464549513052223019/25",
+      "9413773351912948965467689728/125"
+    ],
+    [
+      "22633348844121123",
+      "3021768014450666466726720"
+    ],
+    [
+      "6620754425505699",
+      "-5926224910676250237120"
+    ],
+    [
+      "24202248347759644083/3721",
+      "-6394017779045854427980014120/226981"
+    ],
+    [
+      "4800673653172323",
+      "259734914242697465066880"
+    ],
+    [
+      "9082412881640283",
+      "353488549870989079578360"
+    ],
+    [
+      "6627974677018698",
+      "2402760222961520734620"
+    ],
+    [
+      "15319490724698163",
+      "-1457595639200490419322000"
+    ],
+    [
+      "-8949806985236037",
+      "1051687339336146265968600"
+    ],
+    [
+      "20382716656144083",
+      "2512025275425157464935760"
+    ],
+    [
+      "11599462792912158",
+      "-771253062243789119527890"
+    ],
+    [
+      "11970132420294786563587/2169729",
+      "-530365218178006411237039672244960/3196010817"
+    ],
+    [
+      "31773220068931857/4",
+      "1420423638185572079072895/8"
+    ],
+    [
+      "6914839185985635",
+      "23256272963097824842368"
+    ],
+    [
+      "8889793362094675",
+      "-323157668053608186302512"
+    ]
+  ],
+  "required": 17,
+  "status": "PASS_GENERIC_SEED_GATE",
+  "torsion_prime": 23
+}

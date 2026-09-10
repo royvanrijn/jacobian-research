@@ -3,6 +3,56 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-EUCLIDEAN-FOUR-SPLIT-ADMISSIONS-20260910",
+      "kind": "example",
+      "state": "proved",
+      "title": "All four certified-M17 Euclidean pilot split UNKNOWNs have independently replayed integer relations",
+      "scope": "The corrected frozen roster consists exactly of (t,mask)=(2,82931),(-4/3,65035),(-5/7,82931),(2/7,30223). Each retains its original seventeen specialized generic sections and complete sealed finite footprint, with respectively160,160,157,159 good places and133,124,123,132 quotient rows of rank17. The unique compatible parity is subtracted and exact rational quartic halving iterates. The first three points repeat after two successful halves and the fourth after three, within the predeclared eight-layer bound. Each exact cycle yields multiplier1 and an explicit integer relation in the original M17 basis. Thus all four are INHERITED_RATIONAL_SPAN, including their inherited-trace companion branches. An independent implementation reconstructs generic sections, norm-ten trace words, Euclidean identities, full maps, square receipts and archived candidate scaling, enumerates every sealed finite group with Sage, and uses manual Fraction group arithmetic to verify the unique parities, subtractions, nine rational halves and four final relations. The reusable prospective adapter accepts only explicit injective frames and points, preserves UNKNOWN at its bound, and rejects deficient frames. Ten new admission/replay regressions and eight existing descent tests pass, including independent points hidden behind in-span columns and multiple halves. All classifiers finish below one second under120-second caps and independent replays below four seconds under180-second caps on Sage10.9, with1.5-GiB RSS bounds and at most two workers. No new parameters, orbits, finite places, later V3 point inputs, point search, certified new direction or seeded V3 run. The five separate generic-gate failures remain unchanged. Prior finite-column misses alone did not certify dependence; these exact cycles now supply the proof for the four specified branches. This rejects these four seeds, not other rational points on the fibres, the Euclidean atlas, or a higher specialized rank.",
+      "canonical_source": "elliptic-curves/notes/EUCLIDEAN_FOUR_SPLIT_ADMISSIONS_2026-09-10.md",
+      "dependencies": [
+        "EC-DET1092-SPLIT-SEED-HALVING-DICHOTOMY-20260908",
+        "EC-DET1092-EUCLIDEAN-BISECTION-FORMULA-20260909",
+        "EC-CURVE302-RECOVERED-MW17-PARENT"
+      ],
+      "checker": "elliptic-curves/cas/verify_frozen_euclidean_admissions.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e31f6a28a31f674401b92a840b5dc27249445d40585cde7692b653aaa20988b2",
+      "software_lock": [
+        "elliptic-curves/cas/verify_frozen_euclidean_admissions.sage",
+        "elliptic-curves/cas/prospective_split_admission.py",
+        "elliptic-curves/cas/replay_split_admission.py",
+        "elliptic-curves/cas/run_frozen_euclidean_admissions.py",
+        "elliptic-curves/cas/split_seed_descent.py",
+        "elliptic-curves/tests/test_prospective_split_admission.py",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/protocol.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/summary.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/4/frame.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/4/receipt.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/4/independent-replay.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/17/frame.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/17/receipt.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/17/independent-replay.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/43/frame.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/43/receipt.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/43/independent-replay.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/46/frame.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/46/receipt.json",
+        "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/cases/46/independent-replay.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910",
       "kind": "example",
       "state": "proved",

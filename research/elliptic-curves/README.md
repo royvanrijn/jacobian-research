@@ -54,6 +54,10 @@ now removes matrix solves and factorization and closes all15 frozen orbits
 at302; the three former survivors also miss all eight controls exactly.
 A cold generic-word replay also separates a productive conic split from an
 inherited split by independent nonhalving/cycle certificates; no new rank.
+The [four frozen pilot admissions](notes/EUCLIDEAN_FOUR_SPLIT_ADMISSIONS_2026-09-10.md)
+now all have independently replayed integer relations in M17 after two or
+three halvings. No Euclidean seed from these four enters V3.
+<!-- status-consumer: EC-EUCLIDEAN-FOUR-SPLIT-ADMISSIONS-20260910 7a27319978e6a5fb -->
 The [local separation theorem](notes/DET1092_LOCAL_INCIDENCE_AND_DEPENDENCE_SEPARATION_2026-09-09.md)
 separately constructs infinite M18 seeds matching a dependent split at25 primes.
 Cover rationality, parameter incidence and specialized independence differ.

@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/verify_frozen_euclidean_admissions.sage",
+    "--index",
+    "4",
+    "--write"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1610612736,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 180
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/execution/4/independent-replay.log",
+  "log_sha256": "d09c898108eb4d4f8a4683a76709c15696bb7621da69a1df4a7a33f613d70075",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 301932544,
+  "pid": 548392,
+  "returncode": 0,
+  "rss_limit_bytes": 1610612736,
+  "start_token": "9432521",
+  "termination_signal": null,
+  "timeout_seconds": 180,
+  "wall_seconds": 3.5609084110037657,
+  "worker_result": null,
+  "worker_result_sha256": null
+}
