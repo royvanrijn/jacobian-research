@@ -94,7 +94,13 @@ def sync():
         case = D / "cases" / identifier
         input_path = case / "input.json"
         packet = integral_packet(identifier, record, source_path)
-        atomic(input_path, packet, immutable=True)
+        # A foundry ID can be re-emitted by a later continuation with a new
+        # endpoint packet.  Once a conductor case is admitted, its first
+        # packet is the frozen input; never mutate it underneath a worker.
+        if input_path.exists():
+            packet = read(input_path)
+        else:
+            atomic(input_path, packet, immutable=True)
         discovered.append({
             "id": identifier,
             "rank_lower_bound": packet["rank_lower_bound"],
@@ -271,7 +277,9 @@ def launch():
 
 def status():
     manifest = sync()
-    value = read(D / "summary.json") if (D / "summary.json").exists() else summary(manifest)
+    # Recompute from the manifest so newly sealed source endpoints are visible
+    # immediately, even between controller polling cycles.
+    value = summary(manifest)
     state = read(D / "state.json") if (D / "state.json").exists() else {"status": "NOT_STARTED"}
     launch_record = read(D / "launch.json") if (D / "launch.json").exists() else {}
     value.update({"controller": state, "launch": launch_record,
