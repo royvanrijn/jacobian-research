@@ -71,7 +71,7 @@ jobs:
           Q=C-B.transpose()*A.inverse()*B
           assert Q.dimensions()==(14,14) and Q.is_positive_definite()
           word=[0]*31; word[0]=1; word[17]=1; word[20]=-2
-          point=ctx['group'].linear_combination(ctx['model'],ctx['ambient_points'],word)
+          point=lab.exact_linear_combination(ctx['model'],ctx['ambient_points'],word)
           recognized=lab.recognize_point(ctx,point)
           assert recognized is not None and recognized['denominator']==1
           assert recognized['word']==word
