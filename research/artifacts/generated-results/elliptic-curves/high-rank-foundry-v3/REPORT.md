@@ -1,6 +1,6 @@
 # High-rank search foundry
 
-**RUNNING** · updated 2026-09-10T08:28:43.226403+00:00
+**RUNNING** · updated 2026-09-10T08:29:01.997462+00:00
 
 774 new certified curves across this run and its preserved predecessor; 184519 completed point calls. Jobs: {'DONE': 1413, 'FAILED': 4, 'SKIPPED': 111, 'RUNNING': 4}. Up to 4 workers.
 
