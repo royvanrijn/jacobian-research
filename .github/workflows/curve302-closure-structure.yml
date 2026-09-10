@@ -38,12 +38,14 @@ jobs:
           persist-credentials: false
           sparse-checkout-cone-mode: false
           sparse-checkout: |
-            /research/elliptic-curves/cas/run_curve302_closure_structure.py
-            /research/elliptic-curves/cas/curve302_closure_structure_core.py
-            /research/elliptic-curves/cas/curve302_closure_structure_sage.py
+            /research/elliptic-curves/cas/
             /research/elliptic-curves/tests/test_curve302_closure_structure.py
             /research/artifacts/generated-results/elliptic-curves/curve302_exceptional_subgroup_landscape_v1.json
             /research/artifacts/generated-results/elliptic-curves/curve302_unlock_seed_closure_v2.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_residual_visibility_geometry_v1.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_recovered_followup_wave_03_mod2_v1.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_recovered_quotient_local_filtration_v1.json
       - name: Expose Sage
         run: |
           export PATH="/home/sage/sage/local/bin:/home/sage/sage:$PATH"
@@ -55,3 +57,24 @@ jobs:
       - name: Real 16384-state singleton smoke
         run: |
           sage -python research/elliptic-curves/cas/run_curve302_closure_structure.py smoke
+      - name: Real quotient-basis and trajectory-recognition smoke
+        run: |
+          sage -python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, str(Path('research/elliptic-curves/cas').resolve()))
+          from sage.all import QQ
+          import curve302_closure_structure_sage as lab
+          ctx=lab.fixed_basis_context()
+          H=ctx['ambient'].change_ring(QQ)
+          A=H[:17,:17]; B=H[:17,17:]; C=H[17:,17:]
+          Q=C-B.transpose()*A.inverse()*B
+          assert Q.dimensions()==(14,14) and Q.is_positive_definite()
+          word=[0]*31; word[0]=1; word[17]=1; word[20]=-2
+          point=ctx['group'].linear_combination(ctx['model'],ctx['ambient_points'],word)
+          recognized=lab.recognize_point(ctx,point)
+          assert recognized is not None and recognized['denominator']==1
+          assert recognized['word']==word
+          assert len(ctx['strict_signature'])==10
+          print('CLOSURE_LAB_SAGE_SMOKE|status=PASS|quotient_dim=14|strict_dim=10|recognition=exact')
+          PY
