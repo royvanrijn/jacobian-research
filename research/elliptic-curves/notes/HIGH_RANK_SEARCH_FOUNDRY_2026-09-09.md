@@ -236,16 +236,16 @@ reused the complete return on its second call. An existing conductor11 curve
 passed the bounded conductor builder and independent replay. These are engineering
 controls, not fresh discoveries.
 
-Production uses the separately frozen `high-rank-foundry-v2` runtime, four
+Production uses the separately frozen `high-rank-foundry-v3` runtime, four
 workers, and the limits above. It excludes all completed commissioning curves
 from fresh intake and imports their useful certified subgroups as historical
 continuation states. Commissioning outcomes do not become labels in the fresh
 score-independent streams.
 
-- [Live report](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/REPORT.md)
-- [Frozen configuration](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/config.json)
-- [Source and input manifest](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/manifest.json)
-- [Detached launch receipt](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/launch-receipt.json)
+- [Live report](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/REPORT.md)
+- [Frozen configuration](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/config.json)
+- [Source and input manifest](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/manifest.json)
+- [Detached launch receipt](../../artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/launch-receipt.json)
 
 The run has no finite job limit. Python selects the next family, parameter,
 continuation, parent bank, cooling/revival decision and eligible conductor job;
@@ -281,4 +281,19 @@ The current report includes the inherited totals.
 This migration is reproducible with `prepare --inherit-state OLD_FOLDER
 --folder NEW_FOLDER`; the parent must be stopped. It creates a new frozen
 source/input manifest without modifying the previous one. The standard
-`status`, `stop` and `resume` commands above now select version2 by default.
+`status`, `stop` and `resume` commands above now select version3 by default.
+
+### Unlimited daily budget and automatic continuation, 2026-09-09
+
+At the user's direction, version3 removes the UTC-day point and worker quotas.
+Per-job and process-tree limits remain finite, disk reserves remain active, and
+physical point returns are still journalled before admission. Work grows in
+bounded steps: 100 amplification calls initially, then +25 after each 100 fresh
+fibres, capped at 300. At migration the next allowance is 175 calls. The
+controller therefore keeps progressing through the queue instead of waiting at
+midnight, while resource safety remains explicit.
+
+The detached guardian also restarts a controller that exits cleanly without an
+explicit stop or halt state. An explicit `stop` still drains and ends the run.
+This makes a completed bounded controller invocation an automatic continuation
+point while preserving the same ledger and frozen evidence.

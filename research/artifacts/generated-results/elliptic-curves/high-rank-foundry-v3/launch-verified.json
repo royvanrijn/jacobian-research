@@ -1,0 +1,54 @@
+{
+  "active_jobs": [
+    {
+      "cid": "f-114ecf6f96177ac15c42",
+      "id": 656,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000656",
+      "pid": 159203,
+      "token": "4074246"
+    },
+    {
+      "cid": "f-3203e90fdcdca7935fb9",
+      "id": 657,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000657",
+      "pid": 159206,
+      "token": "4074563"
+    },
+    {
+      "cid": "f-cd562376c7c1b2b9a7f2",
+      "id": 658,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000658",
+      "pid": 159312,
+      "token": "4074880"
+    },
+    {
+      "cid": "f-708009712a0ba7bf6669",
+      "id": 661,
+      "kind": "fresh",
+      "path": "foundry-jobs/job-0000661",
+      "pid": 159794,
+      "token": "4075848"
+    }
+  ],
+  "at": 1788987625.5420148,
+  "batch_calls_now": 175,
+  "claim_boundary": "Operational launch verification; rank claims require completed exact certificates.",
+  "controller": {
+    "pid": 159192,
+    "token": "4074211"
+  },
+  "daily_point_calls": null,
+  "daily_worker_seconds": null,
+  "growth_rule": "100 base, +25 each 100 fresh fibres, cap300",
+  "guardian": {
+    "pid": 159185,
+    "token": "4074189"
+  },
+  "guardian_detached": true,
+  "launch_receipt_sha256": "1c71c5f5fa5c28d321de1c7f138f2e4fd1f4c2515c5bebc2433c2f997195857b",
+  "manifest_sha256": "07c0e35a3c58b84b6ecb2b12a16ac7b2fe029ae2ba12288355c14267c3af4a7c",
+  "status": "PASS_UNLIMITED_DAILY_AUTORESTART_LAUNCH"
+}

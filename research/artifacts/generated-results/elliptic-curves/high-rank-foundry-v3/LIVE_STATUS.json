@@ -1,36 +1,36 @@
 {
   "active_jobs": [
     {
-      "cid": "f-114ecf6f96177ac15c42",
-      "id": 656,
+      "cid": "f-1a04e360173c7cc5bf76",
+      "id": 1528,
       "kind": "fresh",
-      "path": "foundry-jobs/job-0000656",
-      "pid": 159203,
-      "token": "4074246"
+      "path": "foundry-jobs/job-0001528",
+      "pid": 2303059,
+      "token": "8188648"
     },
     {
-      "cid": "f-3203e90fdcdca7935fb9",
-      "id": 657,
+      "cid": "f-52632d941ee29b4fa081",
+      "id": 1529,
       "kind": "fresh",
-      "path": "foundry-jobs/job-0000657",
-      "pid": 159206,
-      "token": "4074563"
+      "path": "foundry-jobs/job-0001529",
+      "pid": 2361087,
+      "token": "8194312"
     },
     {
-      "cid": "f-cd562376c7c1b2b9a7f2",
-      "id": 658,
+      "cid": "f-f01b2df06d8ec06f7642",
+      "id": 1530,
       "kind": "fresh",
-      "path": "foundry-jobs/job-0000658",
-      "pid": 159312,
-      "token": "4074880"
+      "path": "foundry-jobs/job-0001530",
+      "pid": 2363231,
+      "token": "8194654"
     },
     {
-      "cid": "f-708009712a0ba7bf6669",
-      "id": 661,
+      "cid": "f-d6974fb0869046135f49",
+      "id": 1531,
       "kind": "fresh",
-      "path": "foundry-jobs/job-0000661",
-      "pid": 159794,
-      "token": "4075848"
+      "path": "foundry-jobs/job-0001531",
+      "pid": 2470978,
+      "token": "8202842"
     }
   ],
   "best": [
@@ -45,30 +45,6 @@
       "stale_calls": 233,
       "state": "READY",
       "total_calls": 301
-    },
-    {
-      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v1/job-0000043-warm-103b2-low-05.json",
-      "family": "103b2",
-      "historical_baseline": true,
-      "id": "warm-103b2-low-05",
-      "packet": "foundry-inherited/warm-103b2-low-05.json",
-      "parameter": "-621/281",
-      "rank": 26,
-      "stale_calls": 158,
-      "state": "READY",
-      "total_calls": 201
-    },
-    {
-      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v1/job-0000060-warm-074d9-low-04.json",
-      "family": "074d9",
-      "historical_baseline": true,
-      "id": "warm-074d9-low-04",
-      "packet": "foundry-inherited/warm-074d9-low-04.json",
-      "parameter": "-1013/476",
-      "rank": 26,
-      "stale_calls": 160,
-      "state": "READY",
-      "total_calls": 201
     },
     {
       "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v1/job-0000067-f-cba789931b68e747133c.json",
@@ -107,16 +83,40 @@
       "total_calls": 307
     },
     {
-      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v1/job-0000064-f-1a2d16be859e0513faf9.json",
-      "family": "11952",
+      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001379-warm-103b2-low-05.json",
+      "family": "103b2",
+      "historical_baseline": true,
+      "id": "warm-103b2-low-05",
+      "packet": "foundry-jobs/job-0001379/packet.json",
+      "parameter": "-621/281",
+      "rank": 26,
+      "stale_calls": 408,
+      "state": "COOLED",
+      "total_calls": 451
+    },
+    {
+      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001419-warm-074d9-low-04.json",
+      "family": "074d9",
+      "historical_baseline": true,
+      "id": "warm-074d9-low-04",
+      "packet": "foundry-jobs/job-0001419/packet.json",
+      "parameter": "-1013/476",
+      "rank": 26,
+      "stale_calls": 435,
+      "state": "COOLED",
+      "total_calls": 476
+    },
+    {
+      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0001496-f-46a37e2fcf354796f7e3.json",
+      "family": "103b2",
       "historical_baseline": null,
-      "id": "f-1a2d16be859e0513faf9",
-      "packet": "foundry-inherited/f-1a2d16be859e0513faf9.json",
-      "parameter": "66/3305",
-      "rank": 25,
-      "stale_calls": 161,
-      "state": "READY",
-      "total_calls": 203
+      "id": "f-46a37e2fcf354796f7e3",
+      "packet": "foundry-jobs/job-0001496/packet.json",
+      "parameter": "2538/2143",
+      "rank": 26,
+      "stale_calls": 479,
+      "state": "COOLED",
+      "total_calls": 553
     },
     {
       "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000612-f-31b3d1ff065cb6ded260.json",
@@ -251,6 +251,18 @@
       "total_calls": 505
     },
     {
+      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v3/job-0000749-f-6ae43e5dee0e2e272d01.json",
+      "family": "103b2",
+      "historical_baseline": null,
+      "id": "f-6ae43e5dee0e2e272d01",
+      "packet": "foundry-jobs/job-0000749/packet.json",
+      "parameter": "-2818/2091",
+      "rank": 25,
+      "stale_calls": 224,
+      "state": "READY",
+      "total_calls": 365
+    },
+    {
       "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000589-warm-07ca9-high-05.json",
       "family": "07ca9",
       "historical_baseline": true,
@@ -261,33 +273,21 @@
       "stale_calls": 238,
       "state": "READY",
       "total_calls": 301
-    },
-    {
-      "certificate": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/high-rank-foundry-v2/job-0000630-f-623993602a35bd9c245a.json",
-      "family": "103b2",
-      "historical_baseline": null,
-      "id": "f-623993602a35bd9c245a",
-      "packet": "foundry-inherited/f-623993602a35bd9c245a.json",
-      "parameter": "329/151",
-      "rank": 24,
-      "stale_calls": 148,
-      "state": "READY",
-      "total_calls": 401
     }
   ],
   "certified_rank_counts": {
-    "17": 91,
-    "18": 46,
-    "19": 24,
-    "20": 19,
-    "21": 28,
-    "22": 44,
-    "23": 32,
-    "24": 15,
-    "25": 7,
-    "26": 2
+    "17": 250,
+    "18": 149,
+    "19": 77,
+    "20": 54,
+    "21": 71,
+    "22": 74,
+    "23": 52,
+    "24": 32,
+    "25": 11,
+    "26": 3
   },
-  "charged_point_budget": 59866,
+  "charged_point_budget": 185237,
   "claim_boundary": "Adaptively selected, variably censored lower bounds. Group summaries do not establish a causal law, exact ranks, world novelty, or conductor records.",
   "controller": {
     "pid": 159192,
@@ -295,196 +295,196 @@
   },
   "groups": {
     "074d9/all": {
-      "attempted": 15,
-      "calls": 2608,
-      "certified": 15,
-      "rank_sum": 277,
-      "seeded": 8,
+      "attempted": 37,
+      "calls": 8254,
+      "certified": 37,
+      "rank_sum": 687,
+      "seeded": 20,
       "unresolved": 0
     },
     "074d9/high": {
-      "attempted": 8,
-      "calls": 1545,
-      "certified": 8,
-      "rank_sum": 161,
-      "seeded": 6,
+      "attempted": 18,
+      "calls": 4248,
+      "certified": 18,
+      "rank_sum": 359,
+      "seeded": 12,
       "unresolved": 0
     },
     "074d9/low": {
-      "attempted": 24,
-      "calls": 5263,
-      "certified": 24,
-      "rank_sum": 509,
-      "seeded": 22,
+      "attempted": 48,
+      "calls": 13218,
+      "certified": 48,
+      "rank_sum": 977,
+      "seeded": 40,
       "unresolved": 0
     },
     "074d9/raw": {
-      "attempted": 15,
-      "calls": 86,
-      "certified": 1,
-      "rank_sum": 17,
-      "seeded": 0,
-      "unresolved": 14
+      "attempted": 45,
+      "calls": 3296,
+      "certified": 18,
+      "rank_sum": 325,
+      "seeded": 11,
+      "unresolved": 27
     },
     "07ca9/all": {
-      "attempted": 15,
-      "calls": 2059,
-      "certified": 15,
-      "rank_sum": 268,
-      "seeded": 6,
+      "attempted": 37,
+      "calls": 6737,
+      "certified": 37,
+      "rank_sum": 683,
+      "seeded": 15,
       "unresolved": 0
     },
     "07ca9/high": {
-      "attempted": 8,
-      "calls": 1331,
-      "certified": 8,
-      "rank_sum": 163,
-      "seeded": 6,
+      "attempted": 18,
+      "calls": 5695,
+      "certified": 18,
+      "rank_sum": 372,
+      "seeded": 14,
       "unresolved": 0
     },
     "07ca9/low": {
-      "attempted": 24,
-      "calls": 5573,
-      "certified": 24,
-      "rank_sum": 512,
-      "seeded": 24,
+      "attempted": 57,
+      "calls": 17799,
+      "certified": 57,
+      "rank_sum": 1202,
+      "seeded": 55,
       "unresolved": 0
     },
     "07ca9/raw": {
-      "attempted": 15,
-      "calls": 189,
-      "certified": 1,
-      "rank_sum": 18,
-      "seeded": 1,
-      "unresolved": 14
+      "attempted": 36,
+      "calls": 2258,
+      "certified": 12,
+      "rank_sum": 216,
+      "seeded": 10,
+      "unresolved": 24
     },
     "08234/all": {
-      "attempted": 15,
-      "calls": 1770,
-      "certified": 15,
-      "rank_sum": 265,
-      "seeded": 4,
+      "attempted": 37,
+      "calls": 4943,
+      "certified": 37,
+      "rank_sum": 648,
+      "seeded": 9,
       "unresolved": 0
     },
     "08234/high": {
-      "attempted": 8,
-      "calls": 1063,
-      "certified": 8,
-      "rank_sum": 144,
-      "seeded": 3,
+      "attempted": 18,
+      "calls": 2430,
+      "certified": 18,
+      "rank_sum": 319,
+      "seeded": 5,
       "unresolved": 0
     },
     "08234/low": {
-      "attempted": 24,
-      "calls": 3296,
-      "certified": 24,
-      "rank_sum": 440,
-      "seeded": 12,
+      "attempted": 45,
+      "calls": 6532,
+      "certified": 45,
+      "rank_sum": 813,
+      "seeded": 18,
       "unresolved": 1
     },
     "08234/raw": {
-      "attempted": 14,
-      "calls": 1247,
-      "certified": 8,
-      "rank_sum": 146,
-      "seeded": 5,
-      "unresolved": 6
+      "attempted": 48,
+      "calls": 8250,
+      "certified": 37,
+      "rank_sum": 682,
+      "seeded": 29,
+      "unresolved": 11
     },
     "08f72/all": {
-      "attempted": 15,
-      "calls": 2986,
-      "certified": 15,
-      "rank_sum": 277,
-      "seeded": 6,
+      "attempted": 37,
+      "calls": 8316,
+      "certified": 37,
+      "rank_sum": 678,
+      "seeded": 16,
       "unresolved": 0
     },
     "08f72/high": {
-      "attempted": 7,
-      "calls": 1528,
-      "certified": 7,
-      "rank_sum": 143,
-      "seeded": 4,
+      "attempted": 18,
+      "calls": 5833,
+      "certified": 18,
+      "rank_sum": 357,
+      "seeded": 12,
       "unresolved": 0
     },
     "08f72/low": {
-      "attempted": 24,
-      "calls": 4860,
-      "certified": 24,
-      "rank_sum": 512,
-      "seeded": 23,
+      "attempted": 57,
+      "calls": 15453,
+      "certified": 57,
+      "rank_sum": 1162,
+      "seeded": 48,
       "unresolved": 0
     },
     "08f72/raw": {
-      "attempted": 14,
-      "calls": 732,
-      "certified": 6,
-      "rank_sum": 104,
-      "seeded": 2,
-      "unresolved": 8
+      "attempted": 36,
+      "calls": 2507,
+      "certified": 15,
+      "rank_sum": 266,
+      "seeded": 9,
+      "unresolved": 21
     },
     "103b2/all": {
-      "attempted": 15,
-      "calls": 2757,
-      "certified": 15,
-      "rank_sum": 294,
-      "seeded": 11,
+      "attempted": 37,
+      "calls": 8476,
+      "certified": 37,
+      "rank_sum": 702,
+      "seeded": 23,
       "unresolved": 0
     },
     "103b2/high": {
-      "attempted": 7,
-      "calls": 1735,
-      "certified": 7,
-      "rank_sum": 151,
-      "seeded": 6,
+      "attempted": 18,
+      "calls": 5817,
+      "certified": 18,
+      "rank_sum": 385,
+      "seeded": 15,
       "unresolved": 0
     },
     "103b2/low": {
-      "attempted": 24,
-      "calls": 5187,
-      "certified": 24,
-      "rank_sum": 499,
-      "seeded": 21,
+      "attempted": 51,
+      "calls": 13313,
+      "certified": 51,
+      "rank_sum": 1020,
+      "seeded": 44,
       "unresolved": 0
     },
     "103b2/raw": {
-      "attempted": 14,
-      "calls": 918,
-      "certified": 7,
-      "rank_sum": 123,
-      "seeded": 3,
-      "unresolved": 7
+      "attempted": 42,
+      "calls": 4912,
+      "certified": 27,
+      "rank_sum": 484,
+      "seeded": 18,
+      "unresolved": 15
     },
     "11952/all": {
-      "attempted": 15,
-      "calls": 3130,
-      "certified": 15,
-      "rank_sum": 290,
-      "seeded": 11,
+      "attempted": 37,
+      "calls": 8563,
+      "certified": 37,
+      "rank_sum": 706,
+      "seeded": 23,
       "unresolved": 0
     },
     "11952/high": {
-      "attempted": 7,
-      "calls": 1492,
-      "certified": 7,
-      "rank_sum": 163,
-      "seeded": 7,
+      "attempted": 18,
+      "calls": 5601,
+      "certified": 18,
+      "rank_sum": 386,
+      "seeded": 15,
       "unresolved": 0
     },
     "11952/low": {
-      "attempted": 24,
-      "calls": 5065,
-      "certified": 24,
-      "rank_sum": 507,
-      "seeded": 22,
-      "unresolved": 0
+      "attempted": 56,
+      "calls": 14813,
+      "certified": 55,
+      "rank_sum": 1100,
+      "seeded": 47,
+      "unresolved": 1
     },
     "11952/raw": {
-      "attempted": 14,
-      "calls": 946,
-      "certified": 6,
-      "rank_sum": 107,
-      "seeded": 4,
-      "unresolved": 8
+      "attempted": 37,
+      "calls": 4300,
+      "certified": 21,
+      "rank_sum": 382,
+      "seeded": 15,
+      "unresolved": 16
     }
   },
   "guardian": {
@@ -493,23 +493,23 @@
   },
   "inherited_from": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v2",
   "jobs": {
-    "DONE": 600,
+    "DONE": 1412,
     "FAILED": 4,
     "RUNNING": 4,
-    "SKIPPED": 53
+    "SKIPPED": 111
   },
-  "new_curves": 308,
-  "point_calls": 59066,
+  "new_curves": 773,
+  "point_calls": 184437,
   "queued_curves": {
-    "COOLED": 119,
+    "COOLED": 511,
     "NEW": 4,
     "QUARANTINED": 4,
     "QUARANTINED_CLOUD": 1,
-    "READY": 206,
-    "UNCERTIFIED_SEED": 53
+    "READY": 279,
+    "UNCERTIFIED_SEED": 111
   },
   "status": "RUNNING",
-  "updated_at": 1788987583.8941126,
-  "worker_seconds": 105922.69443893433,
+  "updated_at": 1789028894.8078377,
+  "worker_seconds": 270490.43980169296,
   "workers": 4
 }

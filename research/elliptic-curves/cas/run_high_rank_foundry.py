@@ -26,7 +26,7 @@ CAS=Path(__file__).resolve().parent
 ROOT=CAS.parents[1]
 ART=ROOT/'artifacts/generated-results/elliptic-curves'
 LOCAL=ROOT/'artifacts/local/elliptic-curves'
-DEFAULT_FOLDER=LOCAL/'high-rank-foundry-v2'
+DEFAULT_FOLDER=LOCAL/'high-rank-foundry-v3'
 
 
 def save(path,data,immutable=False):
