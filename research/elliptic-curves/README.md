@@ -131,6 +131,13 @@ seed norm equations are globally obstructed, closing the seed's ideal-class
 ambiguity. Seven of ten controls have exact local anatomy; full class groups,
 predictor validation, and the geometric rank-jump mechanism remain open.
 
+The [class1/core/carrier audit](notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md)
+proves that the prescribed4100-core overlap has incompatible integral glue.
+In the existing13104-core realization, all fourteen transported points remain
+exceptional, and distinct smooth B-fibres never share their A-branch divisor.
+Fourteen twists have primitive height8 sections; second independent sections
+and propagation remain open.
+
 The earlier [seed reduction](notes/DET1092_SEED_VIRTUAL_UNIT_AND_IDEAL_PARITY_2026-09-09.md),
 [rational quadric](notes/DET1092_SEED_NORM_QUADRIC_AND_INTEGRAL_GATE_2026-09-09.md),
 and [567-multiplier bank obstruction](notes/DET1092_SAVED_UNIT_RELATION_OBSTRUCTION_2026-09-09.md)

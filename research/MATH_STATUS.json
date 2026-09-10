@@ -54755,17 +54755,85 @@
       "priority": "derived"
     },
     {
+      "id": "EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "The retained class6/class1 determinant4100 common core cannot extend to a simultaneous marked K3 frame realization",
+      "scope": "For the retained Niemeier embeddings25 and33, the same primitive rank16 core K has determinant4100. In each rank17 determinant1092 frame its primitive normal has norm1119300 and divisibility546, with index2050 in K plus its normal. The projections of the two frames to K dual modulo K are cyclic order2050 subgroups with different unique order2 elements, given by distinct sixteen-bit half-coordinate words. Exact complete norm4 enumeration gives1032 vectors on516 antipodal lines spanning K. Absolute-inner-product color refinement gives248 then516 classes; connected nonorthogonality forces every core isometry to be +I or -I. An independent rational-LDL recursion verifies completeness of the producer minimal-vector roster. Adding an orthogonal unimodular U does not change these projection subgroups. Hence no integral isometry between U+(-frame25) and U+(-frame33) identifies the two retained core embeddings, even after any core isometry. This is a necessary lattice obstruction before period, nefness or rationality, excluding this particular proposed geometric bridge. The existing rational class1 realization remains valid and has literal common frame core determinant13104, not4100. Other core embeddings and overlaps are not excluded.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md",
+      "dependencies": [
+        "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
+        "EC-DET1092-ROOTLESS-J2-COMPLETE-20260910"
+      ],
+      "checker": "elliptic-curves/cas/curve302_class1_prescribed_core_glue.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0da98e667a318e68607d22b0fe38981b49136536a672f3e8dff3cf507ddf436d",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/curve302_class1_bridge_manifest_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Fourteen exact class1 transports remain exceptional; smooth fibre branch covers are injectively parameterized and native twists have primitive height8 sections",
+      "scope": "Use the same fourteen public words as the seed-universality panel; with the generic17 embedding they form a unimodular determinant-minus-one basis of the public31 subgroup. Through the existing equation-explicit class1 realization, all fourteen points have exact inverse-checked transports and distinct B parameters. Each specializes the full generic17 plus one independent point, certified by independently enumerated finite elliptic groups and absence of rational2-torsion. Thus none lies in the rational span of generic B-sections, with no coefficient bound. This applies to the actual13104-core realization; the prescribed4100-core bridge is separately obstructed. The fourteen smooth B-fibres are exact genus1 A-carriers with quartic branches and rational points at A0. A certificate modulo79 makes all14 quartics squarefree and all91 pairs coprime, giving connected joint genus5. Uniformly, the five primitive quartic coefficient polynomials in the B parameter form an invertible5x5 matrix: the branch-divisor map is a degree4 Veronese embedding. Distinct smooth B-fibres therefore never share a quadratic extension even up to constant twist, and have joint genus at least2. Each native anti-invariant section P-sigma(P)=2P-T produces polynomial twist coordinates of degrees8,12. A certificate modulo149 gives24 I1 plus4 I0* fibres and no zero/identity-component corrections for the displayed section, so its height is8. Every nonzero geometric section has height at least4, ruling out torsion and proving primitivity of the rank-one subgroup; full twist ranks remain in[1,22] and UNKNOWN. Finally, any Q-automorphism of the K3 preserving the entire smooth302 fibre preserves its elliptic pencil, and acts on that fibre modulo the full generic group as plus or minus the seed, since j is not0 or1728. Fixed non-preserving words return only on finite intersections. This excludes uniform amplification by fibre-preserving automorphism words, not the finite13-of14 recovery, noninvertible maps, seed-dependent correspondences or other carriers. Independent point, resultant, twist, integral-glue and complete class1 realization replays pass; initial coercion failures and a capped repeated-identity replay are preserved.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md",
+      "dependencies": [
+        "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-CURVE302-SEED-UNIVERSALITY-PANEL-20260909",
+        "EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910",
+        "external: Riemann-Hurwitz, Shioda height formula and Shioda-Tate, quadratic-twist rank decomposition, and the complete linear system of an elliptic fibre"
+      ],
+      "checker": "elliptic-curves/cas/verify_curve302_class1_bridge_bundle.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e24b46cffb904f8ba145613ab897cb74f14766524ccc3711732678493d7e5faf",
+      "software_lock": [
+        "artifacts/generated-results/elliptic-curves/curve302_class1_bridge_manifest_v1.json",
+        "elliptic-curves/cas/verify_curve302_class1_bridge.sage",
+        "elliptic-curves/cas/curve302_class1_branch_veronese.sage",
+        "elliptic-curves/cas/curve302_class1_twist_sections.sage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "OP-EC-RANK-JUMP-MECHANISM-20260910",
       "kind": "open_problem",
       "state": "open",
       "title": "Explain the exceptional302 rank jump through exact descent, overlapping fibrations, and shared low-genus carriers",
-      "scope": "User-authorized theorem-directed programme: explain the fourteen-dimensional displayed302 quotient, compare ten same-fibration controls, transport the exceptional directions through class1/class6 while retaining individual B-base parameters and verifying the common-core identification, construct shared quadratic or genus0/1 carriers with independent twist directions, and prove or delimit seed rationality propagation beyond the finite13-of14 recovery phenomenon. The strict ideal10-image is disjoint from the full inherited8-image; the entire quotient contributes12–14 ideal dimensions. Both historical seed norm equations are now globally obstructed. Seven of ten controls have exact local anatomy and full Selmer localization images; three support gaps and full control ideal/unit calculations remain open. Complete class/Selmer bounds, prospective predictors, shared carriers and propagation remain UNKNOWN. Next priority is exact class1↔class6 point transport and a mathematically valid shared-carrier test. Compute-heavy work requires frozen inputs, finite caps, checkpoints and exact replay; bounded misses are not exclusions. Narrowed by EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910 and EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910.",
-      "canonical_source": "elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md",
+      "scope": "User-authorized theorem-directed programme: explain the fourteen-dimensional302 quotient and exact descent against ten matched controls; understand class1/class6 transports with compatible integral markings; find shared quadratic or genus0/1 carriers carrying two independent twist sections; prove or precisely delimit rationality propagation beyond the finite13-of14 recovery. The strict10 ideal image is disjoint from inherited8; the quotient contributes12–14 ideal dimensions and both historical seed norm equations are obstructed. Seven controls have exact local anatomy; three support gaps and full control ideal/unit computations remain open. The retained4100 common-core witness is integrally incompatible, while the actual13104-core class1 realization transports all14 points to independent eighteenth directions. Its smooth B-fibres have an injective Veronese branch map; the14 native twists each have a primitive height8 section but no second section is known. Fibre-preserving automorphism words cannot amplify a quotient seed. Full class/Selmer bounds, prospective predictors, other compatible overlaps, rank-at-least2 shared twists and a genuine propagation theorem remain UNKNOWN. Next priority is a second independent section on a fixed certified twist or a different low-genus carrier construction with compatible integral geometry. Narrowed by EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910, EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910, EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910 and EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910. Compute-heavy work remains finitely capped, checkpointed and exactly replayable; bounded misses are not exclusions.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md",
       "dependencies": [
         "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
         "EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910",
         "EC-CURVE302-SEED-UNIVERSALITY-PANEL-20260909",
-        "EC-X1092-CLASS1-RATIONAL-MW17-20260910"
+        "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
+        "EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910",
+        "EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910"
       ],
       "checker": null,
       "proof_type": "not-applicable",

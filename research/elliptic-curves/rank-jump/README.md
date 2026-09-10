@@ -2,12 +2,16 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-Current result: [relative302 descent, seed obstruction, and matched fibres](../notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md).
-The ten strict ideal classes are independent of all eight inherited classes;
-the full quotient contributes12–14 new ideal dimensions. Both historical
-seed norm equations have no integer solution. Seven of ten controls have
-exact local anatomy. The next gate is class1↔class6 point transport and
-shared carriers; full class/Selmer bounds and propagation remain open.
+Current result: [the prescribed rank16 bridge fails integral gluing](../notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md).
+The existing class1 realization remains valid; its fourteen transported points
+all add a direction beyond generic17. Its smooth B-fibres have distinct branch
+divisors. Primitive height8 twist sections are explicit; second sections and
+propagation remain open.
+
+The [relative302 descent and matched fibres](../notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md)
+retain the independent inherited8/strict10 ideal images, the12–14 relative
+ideal dimensions, both obstructed seed norm equations, and seven completed
+local control anatomies. Full class/Selmer bounds remain open.
 
 The earlier [constructed two-direction ideal-class block with exact rational lifts](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md)
 remains the positive prospective class-construction calibration; its solubility
