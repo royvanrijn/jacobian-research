@@ -12,7 +12,7 @@ from pathlib import Path
 
 from curve302_closure_structure_core import (
     DIM, GENERIC_RANK, SCALE, EXPECTED_DIRECTIONS, atomic, binary_rank,
-    is_strict_mod2, primitive_vector, read, require, rref_binary, sha,
+    is_strict_mod2, primitive_vector, read, require, rref_binary,
     spearman, stable_float, vector_mask_mod2,
 )
 
@@ -25,8 +25,6 @@ VISIBILITY = ART / "curve302_residual_visibility_geometry_v1.json"
 M24 = ART / "curve302_recovered_followup_wave_03_mod2_v1.json"
 PARENT = ART / "curve302_recovered_mw17_parent_v1.json"
 FILTRATION = ART / "curve302_recovered_quotient_local_filtration_v1.json"
-LANDSCAPE_SOURCE = CAS / "audit_curve302_exceptional_subgroup_landscape.sage"
-GROUP_SOURCE = CAS / "half_lattice_pointed_sieve.py"
 GEOMETRY_SOURCE = CAS / "prospective_half_lattice_v3.sage"
 TWO_SEED_LOCAL = LOCAL / "curve302-seeded-v3-amplifier-v1"
 PANEL_LOCAL = LOCAL / "curve302-seed-universality-panel-v1"
@@ -40,40 +38,67 @@ def seed_folder(seed):
     return (TWO_SEED_LOCAL if seed in {"recovered-strict-02", "recovered-strict-03"} else PANEL_LOCAL) / seed
 
 
+def exact_linear_combination(model, points, coefficients):
+    """Exact Sage group law; deliberately independent of the pointed-sieve C++ worker."""
+    from sage.all import EllipticCurve, QQ, ZZ
+    require(len(points) == len(coefficients), "point/coefficient length mismatch")
+    E = EllipticCurve(QQ, list(map(QQ, model)))
+    total = E(0)
+    for point, coefficient in zip(points, coefficients):
+        require(int(coefficient) == coefficient, "nonintegral exact group coefficient")
+        total += ZZ(coefficient) * E([QQ(str(point[0])), QQ(str(point[1]))])
+    if total.is_zero():
+        return None
+    x, y = total.xy()
+    return F(str(x)), F(str(y))
+
+
 def fixed_basis_context():
-    from sage.all import GF, QQ, RealField, matrix, vector
-    diag = load_module(LANDSCAPE_SOURCE, "closure_lab_landscape")
-    group = load_module(GROUP_SOURCE, "closure_lab_group")
+    from sage.all import GF, QQ, RealField, ZZ, matrix, vector
+    import icarm_curve302 as curve
     geometry = load_module(GEOMETRY_SOURCE, "closure_lab_geometry")
     visibility, m24, parent = read(VISIBILITY), read(M24), read(PARENT)
     require(visibility["status"] == "PASS_RETROSPECTIVE_VETTED_VISIBILITY_DIAGNOSTIC", "visibility input not passed")
     model = tuple(F(v) for v in m24["curve"])
-    base17 = tuple(diag.qpoint(p) for p in m24["independent_points"][:GENERIC_RANK])
+    base17 = tuple(tuple(F(v) for v in p) for p in m24["independent_points"][:GENERIC_RANK])
     directions = visibility["directions"]
     names = [row["id"] for row in directions]
     require(tuple(names) == EXPECTED_DIRECTIONS, "fixed basis roster changed")
-    targets = tuple(diag.primary_target(row, base17, model, group) for row in directions)
+
+    public = tuple(tuple(F(v) for v in point) for point in curve.SHORT_POINTS)
+    require(len(public) == 31, "public rank-31 point roster changed")
+    generic_public = matrix(ZZ, parent["basis_embedding_in_public_D"])
+    require(generic_public.dimensions() == (31, 17), "generic public embedding changed")
+    for column in range(GENERIC_RANK):
+        recovered = exact_linear_combination(model, public, generic_public.column(column))
+        require(recovered == base17[column], "generic public embedding no longer matches M17 basis")
+
+    target_public = []
+    targets = []
+    for entry in directions:
+        word = vector(ZZ, entry["public_word"])
+        require(len(word) == 31, "target public word has wrong width")
+        target = exact_linear_combination(model, public, word)
+        require(target is not None, "target public word became infinity")
+        for row in entry["exact_pointed_quartic_rows"]:
+            translated = tuple(F(v) for v in row["exact_target_point_short_model"])
+            inverse = exact_linear_combination(model, base17, [-int(value) for value in row["target_translation_m17_word"]])
+            reconstructed = translated if inverse is None else exact_linear_combination(model, (translated, inverse), (1, 1))
+            require(reconstructed == target, "target chart and public word encode different directions")
+        target_public.append(word)
+        targets.append(target)
+
+    fixed_to_public = generic_public.augment(matrix(ZZ, [list(v) for v in target_public]).transpose())
+    require(fixed_to_public.dimensions() == (31, 31) and abs(fixed_to_public.det()) == 1,
+            "fixed diagnostic basis is not unimodular in public D")
     ambient_points = (*base17, *targets)
-    ambient, asymmetry = diag.rounded_metric(geometry, model, ambient_points)
+
+    height, asymmetry = geometry.canonical_height_gram(model, ambient_points)
+    ambient = matrix(ZZ, [[int((value * 1_000_000).to_integral_value()) for value in row] for row in height])
+    require(ambient.is_positive_definite(), "rounded 31-dimensional metric is not positive definite")
     expected_hash = read(LANDSCAPE)["fixed_basis"]["rounded_metric_sha256"]
     actual_hash = sha256(json.dumps([list(map(int, row)) for row in ambient.rows()], separators=(",", ":")).encode()).hexdigest()
     require(actual_hash == expected_hash, "reconstructed rounded metric differs from landscape")
-
-    generic_public = matrix(QQ, parent["basis_embedding_in_public_D"])
-    require(generic_public.dimensions() == (31, 17), "generic public embedding changed")
-    target_public = []
-    for entry in directions:
-        words = []
-        for row in entry["exact_pointed_quartic_rows"]:
-            translated = vector(QQ, row["translated_target_public_word"])
-            correction = generic_public * vector(QQ, row["target_translation_m17_word"])
-            words.append(translated - correction)
-        require(words and all(word == words[0] for word in words), "target public words disagree across charts")
-        require(all(value.denominator() == 1 for value in words[0]), "target public word is nonintegral")
-        target_public.append(words[0])
-    fixed_to_public = generic_public.augment(matrix(QQ, [list(v) for v in target_public]).transpose())
-    require(fixed_to_public.dimensions() == (31, 31) and abs(fixed_to_public.det()) == 1,
-            "fixed diagnostic basis is not unimodular in public D")
 
     strict_public = read(FILTRATION)["local_filtration_mod_2"]["strict_kernel_public_words"]
     inv2 = fixed_to_public.change_ring(GF(2)).inverse()
@@ -85,12 +110,11 @@ def fixed_basis_context():
     require(len(strict_signature) == 10, "strict quotient dimension is not ten")
 
     real = RealField(192)
-    high = matrix(real, [[real(str(value).strip("()")) for value in row]
-                         for row in geometry.canonical_height_gram(model, ambient_points)[0]])
+    high = matrix(real, [[real(str(value).strip("()")) for value in row] for row in height])
     return {
-        "diag": diag, "group": group, "geometry": geometry, "model": model,
-        "base17": base17, "targets": targets, "ambient_points": ambient_points,
-        "ambient": ambient, "asymmetry": asymmetry, "names": names,
+        "geometry": geometry, "model": model,
+        "base17": base17, "targets": tuple(targets), "ambient_points": ambient_points,
+        "ambient": ambient, "asymmetry": str(asymmetry), "names": names,
         "strict_signature": strict_signature, "height_real": high,
     }
 
@@ -221,13 +245,9 @@ def relation_experiment(folder):
         result["pairwise_projected_vs_retained"]["spearman"], short_rows[0]["symbolic"]), flush=True)
 
 
-def point_multiple(group, model, point, n):
-    return group.linear_combination(model, (point,), (int(n),))
-
-
 def recognize_point(ctx, point):
     from sage.all import matrix
-    geometry, group, model = ctx["geometry"], ctx["group"], ctx["model"]
+    geometry, model = ctx["geometry"], ctx["model"]
     ambient_points, high = ctx["ambient_points"], ctx["height_real"]
     real = high.base_ring()
     pairing = geometry.canonical_height_gram(model, (*ambient_points, point))[0]
@@ -238,7 +258,7 @@ def recognize_point(ctx, point):
         error = max(abs(denominator*coefficients[i,0]-word[i]) for i in range(31))
         if error > real("1e-24"):
             continue
-        if point_multiple(group, model, point, denominator) == group.linear_combination(model, ambient_points, word):
+        if exact_linear_combination(model, (point,), (denominator,)) == exact_linear_combination(model, ambient_points, word):
             common = denominator
             for value in word:
                 common = math.gcd(common, abs(value))
@@ -348,7 +368,7 @@ def trajectory_experiment(folder):
         "convergence_by_quotient_rank": convergence_rows,
         "repeated_transition_vectors": [{"primitive": key, "count": value} for key, value in transition_counter.most_common()],
         "boundary": (
-            "High-precision heights only propose fixed-basis coordinates; exact elliptic group arithmetic certifies every accepted word. "
+            "High-precision heights only propose fixed-basis coordinates; exact Sage elliptic group arithmetic certifies every accepted word. "
             "This is retrospective reconciliation of completed searches, not a prospective selector."
         ),
     }
