@@ -1,0 +1,808 @@
+{
+  "allowance": 96,
+  "call_allowance_consumed": true,
+  "calls": 96,
+  "catalogue_novelty": {
+    "boundary": "Exact Q-isomorphism comparison to a frozen snapshot; worldwide novelty remains UNKNOWN.",
+    "catalogue_count": 687,
+    "highest_reported_lower_bound": null,
+    "matches": [],
+    "status": "ABSENT_FROM_PINNED_CATALOGUE"
+  },
+  "certified_jump_lower_bound": 3,
+  "claim_boundary": "Certified rank lower bound, not exact rank. Jump is a certified lower bound. Empirical tail rates describe the fixed detection protocol; censored exposures stay explicit.",
+  "conductor_gate": {
+    "discriminant_abs": "4726265203423502258568197493887160392799836092168747724184710444231344359023238934389115099392",
+    "eligible": false,
+    "missing_catalogue_conductors": 8,
+    "proven_short_model_scale": "6",
+    "reason": "LOW_CONDUCTOR_PRIORITY",
+    "threshold": "2368241775053952045429990091103904061860334234693819877055450"
+  },
+  "exposure_complete": true,
+  "family": "a1-fibration-01",
+  "gain_timeline": [],
+  "generic_rank": 16,
+  "initial_rank": 19,
+  "other_foundry_matches": [],
+  "packet": {
+    "bindings": {
+      "epoch-00/chart-0000.json": "d3408736081b2b00fc540fbbdd8e248f81ff9317c29e6eb51f03959e8fb5ee7a",
+      "epoch-00/chart-0001.json": "cc6d1ffd3802a70aa3422a95921985e195c700c4173e2b8f96f49e28003753ae",
+      "epoch-00/chart-0002.json": "20a853003d79e9f9674f5c15ccaba944dee9f6b6585a378bf0728e784304139f",
+      "epoch-00/chart-0003.json": "ec8372e577169541d0afc994d1c6c6f29832130731d49c7c8d945121d11e6f54",
+      "epoch-00/chart-0004.json": "71b75341fdcf36c430a9e324730078d71a92bd2f84539d0d5f022bd164157c75",
+      "epoch-00/chart-0005.json": "eb5b6d8f00768f0a06c3f533dbf697b6604fc687784f76c655059ecf93412807",
+      "epoch-00/chart-0006.json": "ed7f8a7ac04caa3860e80ff78bb151e27ef863c40a59dd45d5b49d9027176ef3",
+      "epoch-00/chart-0007.json": "ec6f2611b92129262e3b236b73cead62d8f5fc86431e59371efb14f4c1d5c013",
+      "epoch-00/chart-0008.json": "b090acb5fb364accce29a5e965d2b01dc0cd73fe10c44d0e71f0656106fe8ed4",
+      "epoch-00/chart-0009.json": "8467646c08f45adb5c3965d74deebed1aa579f542b84c4638a117c929862a3e1",
+      "epoch-00/chart-0010.json": "4bc49e5604e21078c746106d0a83a6cecf69acdb12a6f47707978b3baf990b1f",
+      "epoch-00/chart-0011.json": "a7b2c16a765b101b99c0b956109aa9cef4fddea000a038f76491f60374413333",
+      "epoch-00/chart-0012.json": "2781cb49b0d1e20134d7c71b37de8413dc33de9e5489a12b8699fd3e6d916d4a",
+      "epoch-00/chart-0013.json": "5799629ff79372438d6a4d1b19921ad4826db9557f63eafa838b4b7f6881d92a",
+      "epoch-00/chart-0014.json": "b9bb48f3079f0d7cc6828a22f913dffa78ab195d891ed35c7662b24501452de0",
+      "epoch-00/chart-0015.json": "e617efc4193d9f7b7523c0c7d5ce15fd8f619355f9b79c74f4a4f94c77a42007",
+      "epoch-00/chart-0016.json": "87aad30c5bc31e8846f03c49277ec1132274e186e549fbd30c568304afb799ad",
+      "epoch-00/chart-0017.json": "e9b112ec0643b3d9b5d72f8a943890545796e51940af90a9aa8f2a2e30ec554e",
+      "epoch-00/chart-0018.json": "6c30e6c465e0506f6af6361a3a6eb1256ede157960b59aa9a73735ac55a0343a",
+      "epoch-00/chart-0019.json": "620ce2f1fa8defe6c036195795d80bba48b779c2df274b6bfee7c13a88e7b0a1",
+      "epoch-00/chart-0020.json": "778d8e4ae33f6df5e5a9edd7bb2e1605117559e2b3b77610c91fd617673f55ee",
+      "epoch-00/chart-0021.json": "9a9a106cef9978c31c11eca23f07ca90d233a855c87caa840afae86d3027bf54",
+      "epoch-00/chart-0022.json": "e62a1ffa199e29f02503c7b08252ef910cb1234408e9bb7e79617f95cd2f47dc",
+      "epoch-00/chart-0023.json": "5e396bf66f4219eeac543de2972d97cc05c00c83e5f26bfb4489977a1c25c8ae",
+      "epoch-00/chart-0024.json": "398a1ab0293442656f3a4ddb328dd9cc2d45a0e2ee1e79851c2fdebf762e632e",
+      "epoch-00/chart-0025.json": "64aa948150b20d8e186f4747e5f5ec2f40982e3c27825d196ea0736c8bbef80d",
+      "epoch-00/chart-0026.json": "706a8c4a5a95261db8a9d1e5258177d723b8750d5732d7cdbe8c99d0fab8a4d0",
+      "epoch-00/chart-0027.json": "553f5073370f36283473d025fe0105bd648fca1b59325769cbfafd70d44fcf05",
+      "epoch-00/chart-0028.json": "f88fc8af2c254f6eaa885b1b9a0f461ed96b815190c36ec7e2335e5d7a8e6a38",
+      "epoch-00/chart-0029.json": "8e5310e50bf7bd197286ea4cd174d1f81156085a8279d11416410e7caf5a3896",
+      "epoch-00/chart-0030.json": "f0017b05e72e3223f5402e3bc4476432b17e8731c75f176802c3c9a161696475",
+      "epoch-00/chart-0031.json": "4538c2c8b610db85b0573acddf9d864cb164b880b56d3e0c0ee190271ea50512",
+      "epoch-00/chart-0032.json": "b7523df3f8cada4be9a2abd439a6050458490dfec2bced33ef1f717a1852dc89",
+      "epoch-00/chart-0033.json": "ec961cf191d075d36f60afe5659e8eac9aa9b0a4f3159984e5902be9f9b4a896",
+      "epoch-00/chart-0034.json": "bab5360108bad47a77fd5201a6b0d3c1db3377bb96dd3255caa5931a97c894fc",
+      "epoch-00/chart-0035.json": "b56975d073af123c880cd227898ebad09f5c5e8ce7e262fd764bcb4b9bd0adeb",
+      "epoch-00/chart-0036.json": "efc564f0d3ccecb209ed60d9d1abf286b8f81c046276184822a1c62de20cbfea",
+      "epoch-00/chart-0037.json": "17a142d0818bdd64bb39f55d6ba8cca8a15b0326fc929fec032739216d388129",
+      "epoch-00/chart-0038.json": "1faec778704fb5a7919ea77ad119eff321d7a5b8249cab162d4805401e443886",
+      "epoch-00/chart-0039.json": "1ab1d8e0295e29fb8f5a5e1086b3a8bf0322ee4ebd3a720e61d7ef2af394909d",
+      "epoch-00/chart-0040.json": "9e8874c98144f86213f955f2e54772a32ba9226d8012a12054fd774c056ea90d",
+      "epoch-00/chart-0041.json": "624f01ed71e28ddedc46556fb34093f7190333c1de271ebf9b0f6d64a30ff32a",
+      "epoch-00/chart-0042.json": "754266cd102700c329ed8efaf1cf7386ba8e018fd139443a87452e009814d601",
+      "epoch-00/chart-0043.json": "b6bd9195a567c8ca3c0906398475f39c1bb8255c13f7d63de5851a7dcf5312ef",
+      "epoch-00/chart-0044.json": "7a5d9ebbc6c2f53c4b6f0f599899d383f271f78c261346b6750533e12cb8fd5c",
+      "epoch-00/chart-0045.json": "2205ddda1edb263d681003d1d79207de3b8af5e0beadd3cb5ee0f5b269fd14da",
+      "epoch-00/chart-0046.json": "9ca0c21f2f2a6eca4c136e63989807ece2ca01c068ba10466c192c8680d43320",
+      "epoch-00/chart-0047.json": "0b47a2bba3bc869fe7546cfdbcebe95bf7c84c72e9d963e744c24796c5b7fd56",
+      "epoch-00/chart-0048.json": "e7767edd094c59196a236dbea878b1316100a04a7bbb20612f5a6ba84f31efc3",
+      "epoch-00/chart-0049.json": "967b23cb1652015090c75f595e1dc1aab6a33baa956946db0b0fa1d701092715",
+      "epoch-00/chart-0050.json": "f030afd93f6b1e9356869e793df1a8cf3e35f0dd74187f3a91e82b187b183fd1",
+      "epoch-00/chart-0051.json": "dd748bc9e18c838f303cba6988bc8ba489ae5b6a3f9774b86344c8b547c11f50",
+      "epoch-00/chart-0052.json": "78497d4da881b9288398bd3f192beb44f28674ad2a9e3f9e3bfc392af2fc7ad2",
+      "epoch-00/chart-0053.json": "d6fcd80c42e0e922b1ef658ed5c537915318aa34de7d514d3b8075dc374d31fe",
+      "epoch-00/chart-0054.json": "a766f62df71118a0c99a900c777b694380db6e1cb887cfa2f882c56058cd0c1f",
+      "epoch-00/chart-0055.json": "7fb43dd1b0961dd5055ccd53f9bcef0ee9cbef6fa9f7f68310cdcb809464494f",
+      "epoch-00/chart-0056.json": "5030f41c0640db8ef41e76af8c7aaaee2625feb90e2438bb766194385f4143b8",
+      "epoch-00/chart-0057.json": "31cb168530d34c0f6e0c00ca0c5a0e71918112717a9cee708ffd92393e4953ab",
+      "epoch-00/chart-0058.json": "84be3227c02e26b39a8ec5b26a4701741421c48a1f7b74f743d73051fa9e099f",
+      "epoch-00/chart-0059.json": "323c47cc8107e7b2cadb9840c74f7ce7b2b9663cb5228f6667f6ef1898014efe",
+      "epoch-00/chart-0060.json": "948d53d48446d71f67925e54643dc0ac18588ca58897d90cb7fa54597af43735",
+      "epoch-00/chart-0061.json": "0e4ae1673fbdf275927789b0d5a7a5fa47388c55e92d9613db434492062e1118",
+      "epoch-00/chart-0062.json": "1e60c1f2d35bea79b5415b87d7948f5834a437f552ff384779c326516848eae3",
+      "epoch-00/chart-0063.json": "f3a39fd32f18c687d201f333616d1cd07fe9ec4b7282c4b7ef55e912bf5b125a",
+      "epoch-00/chart-0064.json": "44895b5cbc2cc53445093bef24eac3ef34339f076579e7fe716810d945a8b761",
+      "epoch-00/chart-0065.json": "cb68076d8e7cfbf2c1c99d888c35182c16989ed6ba348bdc63015d78992cabfb",
+      "epoch-00/chart-0066.json": "07eca7cd4c37256695aa0477f5fdcd6f1e65f85c3d04650096a5ac03fd32d280",
+      "epoch-00/chart-0067.json": "92e36273e7aa44df3a179c6747d1a9c3058bbebcebaf3f6e57bab5a0eddf7da3",
+      "epoch-00/chart-0068.json": "26d6f6959e80acf96289f66c88cd116015d56255d4ef555fb2d54c5d5751b3bb",
+      "epoch-00/chart-0069.json": "7d5045527a13e57b8683c05f97cbe8fd2eb7a6126e8c8c356075643410a59dc0",
+      "epoch-00/chart-0070.json": "b071c59797d4cf4e290c483a6f6e334b9f3f71424e33c0d2ee5dddabef4aae1b",
+      "epoch-00/chart-0071.json": "64ba532bea4c72b34ceab36a5aff628df9d282eb26052aff5312c326fa6cb5a3",
+      "epoch-00/chart-0072.json": "630fc05ed1c9306ece2c311156982ee586b5995ab2943496fd98bf98e55a1233",
+      "epoch-00/chart-0073.json": "be8ee36dd30aa5e42e48f8dc8206d16aabc7acb44298924a3a61e7c91849c491",
+      "epoch-00/chart-0074.json": "7173a309339aa7f694a959ca08997b23e2d16e9fa49bdc1ab5be5ccb14383bb6",
+      "epoch-00/chart-0075.json": "24499fd67894aef49517cc7d460a06de10b5b51da57d59f15ce43ab9dd39e2bc",
+      "epoch-00/chart-0076.json": "434fa2ced8f4644cf9dd146557baa2bd8b19ccc29aeaed59fa6c89127f5b9e32",
+      "epoch-00/chart-0077.json": "6ce6c7dd626af4a1deca3f448c566cb85d4a0752a6db6155b71c26dd668da6e5",
+      "epoch-00/chart-0078.json": "0603a4d1159d0860622c6c90b125ce92707c768af2396b45b4e493db995eb29d",
+      "epoch-00/chart-0079.json": "1832f37cea6ec71d423b9e09dad99f4d400a934a8d894939ae599e1b81c9719b",
+      "epoch-00/chart-0080.json": "af3813c7799ad97eaabaf81d50f4bd80955f6928961885af753e3a9ecdc97852",
+      "epoch-00/chart-0081.json": "e2521d7ac2a514dc0c57003a67d54c52232f71a780f049f9b91dbd9775a225d0",
+      "epoch-00/chart-0082.json": "a3a496f9c819a96739945d0453e787c6e77a4255b7b820beba496f6136c587cc",
+      "epoch-00/chart-0083.json": "cc52ad999a7939bb48dbf44f293d3c68030c1c65df02b1545e75a7e6865b47c3",
+      "epoch-00/chart-0084.json": "ad56e86714056231d74e1f0800a6c6f95e1632a12d8bc5939e61cb901cab4638",
+      "epoch-00/chart-0085.json": "9229676b64f1b240f808a65231d4fc8a4f864a84cfcecc7b9ad3ff14ff983bc1",
+      "epoch-00/chart-0086.json": "cb4fb6a469a07aec5c724b111d724f05fe9f8f21dacfbd76ef72a7c9cdffaa35",
+      "epoch-00/chart-0087.json": "382654683c24c1eb584225b344f959791b8425d26aad2a3a7b207bd754b40c67",
+      "epoch-00/chart-0088.json": "25320e3bc68591527b473f140c71b7e578f0331209aa971e61cb828f772c3792",
+      "epoch-00/chart-0089.json": "0d70d2fb0a3fe18c38df384ae3a332d79eccc2f854f3c3e534e97731f61d5620",
+      "epoch-00/chart-0090.json": "0019206e29ec5ebc3e6bd0be92986f38177e5cc35090c915999b99309d8323b5",
+      "epoch-00/chart-0091.json": "65013aa81e98422fe5b99457a33fcb781127bc8870f69d04df65b9eaa757be34",
+      "epoch-00/chart-0092.json": "dbcc68f0fe800bccb15c31f7014050245d9f8172954ba9efe16c3bbb485e2bdd",
+      "epoch-00/chart-0093.json": "6a2db66fc1e8c6adf24feeefe3fafa83ec39de2fb3165ebb9f2c2ad90d7c0885",
+      "epoch-00/chart-0094.json": "d73ffe8247aa516e26b05852c973b04d19a76d8023d0d246c43b92b5d3346c31",
+      "epoch-00/chart-0095.json": "4b11c5ec52df3f4e3de3c2fd2024a914e2ac39150ece9084f334b3d24f0b6c1f",
+      "protocol.json": "392b49a1550dca48fe1e9670c7374f2f70954b5416183dbe29795d77fd58f4a9",
+      "terminal.json": "45270f8279c694e1880c9248b7817308eb3bee97bb5dde08de593442e3ed6f91",
+      "verified.json": "60469683da9802fbdfb665b1b622f0c7d25d0869168aed8ea7ffe1c5a16ab515"
+    },
+    "certificate_compaction": {
+      "original_prime_count": 161,
+      "rule": "Keep rank-increasing good-prime row blocks in prime order. Both exact finite implementations must replay this subset before promotion.",
+      "selected_prime_count": 16
+    },
+    "claim_boundary": "Exact subgroup lower bound from saved point witnesses, not an exact rank or record.",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-8402038175613285866888204740845552",
+      "253094845324060800904910000811337641885877581402240"
+    ],
+    "family": "a1-fibration-01",
+    "gains": [],
+    "generic_rank": 16,
+    "initial_rank": 19,
+    "parameter": "-7/5",
+    "point_searches": 0,
+    "points": [
+      [
+        "101717040455237990484/1369",
+        "316319144126113035742278212496/50653"
+      ],
+      [
+        "-7162359787734268562172/241081",
+        "-2583877257920628165272307830707824/118370771"
+      ],
+      [
+        "20596563355418856",
+        "-9422270179301825373192912"
+      ],
+      [
+        "-3810055418801496927/49",
+        "-7164423762651575055022805991/343"
+      ],
+      [
+        "-618697229254720824780/11881",
+        "30354926554790429091769364612400/1295029"
+      ],
+      [
+        "30842360917174404",
+        "-4826487867618497507082864"
+      ],
+      [
+        "2683504663174194804/361",
+        "-94805372961976056266329934256/6859"
+      ],
+      [
+        "872897203960447332564/11881",
+        "-7368767281554149869954881361776/1295029"
+      ],
+      [
+        "-165330629992222778772/1681",
+        "-779966960756315523292503432576/68921"
+      ],
+      [
+        "734296067321103612",
+        "-624507111598088742017162688"
+      ],
+      [
+        "58957078229460103788/1681",
+        "85965640012055878662352738176/68921"
+      ],
+      [
+        "226841053905675108",
+        "-100098435808970096309323344"
+      ],
+      [
+        "200692586137919825988/1849",
+        "-1979502237614361303640244039184/79507"
+      ],
+      [
+        "16518874145290074339444/58081",
+        "2022114022797782961220955820672816/13997521"
+      ],
+      [
+        "81679295468020468204/625",
+        "581927428574331189000440324608/15625"
+      ],
+      [
+        "-5323818777377552362875166956/334193829025",
+        "-3780419285260435608361553217038719756118928/193195781590207375"
+      ],
+      [
+        "-12044699702461178121564/134689",
+        "-840782224266400565773767342278352/49430863"
+      ],
+      [
+        "10149191450742204362462699844/456850272649",
+        "-2716684777776686189121249948428740216871184/308788297235367643"
+      ],
+      [
+        "573071615883456077510218704018580/16719927071080249",
+        "-5015398488880151616496804577192143851226436280560/2161979482925410188643693"
+      ]
+    ],
+    "proof": {
+      "argument": "Every integral relation is divisible by 2; E(Q)[2]=0 permits infinite descent. Hence all listed points are independent.",
+      "no_rational_2_torsion_prime": 37,
+      "rank_lower_bound": 19,
+      "signatures": [
+        {
+          "doubled_subgroup_order": 5,
+          "group_order": 10,
+          "prime": 5,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 9,
+          "group_order": 18,
+          "prime": 11,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 15,
+          "group_order": 30,
+          "prime": 23,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 9,
+          "group_order": 36,
+          "prime": 29,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 26,
+          "group_order": 52,
+          "prime": 41,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 27,
+          "group_order": 54,
+          "prime": 43,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 14,
+          "group_order": 56,
+          "prime": 47,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 34,
+          "group_order": 68,
+          "prime": 53,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 35,
+          "group_order": 70,
+          "prime": 59,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 35,
+          "group_order": 70,
+          "prime": 61,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 40,
+          "group_order": 80,
+          "prime": 67,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 41,
+          "group_order": 82,
+          "prime": 71,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 20,
+          "group_order": 80,
+          "prime": 73,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 48,
+          "group_order": 96,
+          "prime": 83,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 26,
+          "group_order": 104,
+          "prime": 89,
+          "quotient_dimension": 2,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "doubled_subgroup_order": 62,
+          "group_order": 124,
+          "prime": 103,
+          "quotient_dimension": 1,
+          "rows": [
+            [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "rank_lower_bound": 19,
+    "source_sha256": "d6832518e368c18919e420955505819b5cb2cf44e241575bdddede76cc430a92",
+    "status": "PASS_TWO_FINITE_IMPLEMENTATIONS"
+  },
+  "packet_sha256": "0e096faa5acd39829a3cec9cd1a3a51973e2668bb0c3f5d0b0345fac0ed62460",
+  "parameter": "-7/5",
+  "previous_repository_match": false,
+  "rank_lower_bound": 19,
+  "replay": {
+    "generic_prefix_sha256": "ea1034071e6bff7aee95c842144ace5f0ca73df7bd17a531b177b43e5c593f7f",
+    "packet_sha256": "0e096faa5acd39829a3cec9cd1a3a51973e2668bb0c3f5d0b0345fac0ed62460",
+    "status": "PASS_TWO_FINITE_IMPLEMENTATIONS"
+  },
+  "request_sha256": "f49a893cfc06413df137c268718fc9f407a6eca0e30a9f09a937843952b053a6",
+  "segments": [
+    {
+      "after": 19,
+      "before": 19,
+      "calls": 96,
+      "map_timeouts": 0,
+      "point_timeouts": 0,
+      "search": "parent-jobs/job-0000205/search-00",
+      "stop": "CHART_BUDGET_EXHAUSTED"
+    }
+  ],
+  "status": "PASS_CERTIFIED_PARENT_EVALUATION"
+}
