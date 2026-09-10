@@ -6,6 +6,9 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/x1092-elkies-pairs.yml'
+      - 'research/elliptic-curves/cas/elkies_pair_policy.py'
+      - 'research/elliptic-curves/cas/run_x1092_elkies_pairs_v2.py'
+      - 'research/elliptic-curves/tests/test_elkies_pair_scheduler_v2.py'
 
 permissions:
   contents: read
@@ -43,6 +46,7 @@ jobs:
             /research/elkies-k3/scripts/
             /research/elliptic-curves/*.py
             /research/elliptic-curves/tests/test_elkies_pair_search.py
+            /research/elliptic-curves/tests/test_elkies_pair_scheduler_v2.py
             /research/elliptic-curves/data/research_curves/database.json
             /research/artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/reduced-parent.json
             /research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json
@@ -62,15 +66,15 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           sage --version
           /usr/bin/gp --version
-      - name: Algebra and selection regressions
+      - name: Algebra and scheduling regressions
         run: |
-          sage -python -m unittest discover -s research/elliptic-curves/tests -p test_elkies_pair_search.py -v
+          sage -python -m unittest discover -s research/elliptic-curves/tests -p 'test_elkies_pair*.py' -v
       - name: Bounded X1092 construction and M19 V3 smoke
         run: |
-          sage -python research/elliptic-curves/cas/run_x1092_elkies_pairs.py run \
+          sage -python research/elliptic-curves/cas/run_x1092_elkies_pairs_v2.py run \
             --folder "$GITHUB_WORKSPACE/research/artifacts/local/elliptic-curves/elkies-ci" \
             --pool-size 16 --pair-limit 32 --addresses 32 \
-            --ranked 1 --controls 1 --deep-keep 4 \
+            --ranked 1 --controls 2 --deep-keep 4 \
             --shallow-bound 997 --deep-bound 32749 \
             --parameter-bits 1024 --v3-calls 24 \
             --math-seconds 300 --job-seconds 600
