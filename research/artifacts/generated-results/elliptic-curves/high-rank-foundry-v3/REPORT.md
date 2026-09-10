@@ -1,8 +1,8 @@
 # High-rank search foundry
 
-**RUNNING** · updated 2026-09-10T08:28:14.807838+00:00
+**RUNNING** · updated 2026-09-10T08:28:43.226403+00:00
 
-773 new certified curves across this run and its preserved predecessor; 184437 completed point calls. Jobs: {'DONE': 1412, 'FAILED': 4, 'SKIPPED': 111, 'RUNNING': 4}. Up to 4 workers.
+774 new certified curves across this run and its preserved predecessor; 184519 completed point calls. Jobs: {'DONE': 1413, 'FAILED': 4, 'SKIPPED': 111, 'RUNNING': 4}. Up to 4 workers.
 
 Ranks are certified lower bounds. Imported historical packets are marked below. Novelty is relative to the frozen catalogue; exact rank and worldwide record status remain unknown.
 
@@ -32,7 +32,7 @@ Ranks are certified lower bounds. Imported historical packets are marked below. 
 Active jobs:
 - 1528: f-1a04e360173c7cc5bf76 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001528)
 - 1529: f-52632d941ee29b4fa081 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001529)
-- 1530: f-f01b2df06d8ec06f7642 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001530)
 - 1531: f-d6974fb0869046135f49 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001531)
+- 1532: f-7a98c0e4ce70fa96d867 (fresh); [job directory](/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/high-rank-foundry-v3/runtime/research/foundry-jobs/job-0001532)
 
 [Full machine-readable status](LIVE_STATUS.json). The accompanying immutable job exports contain portable certificates and complete trajectories. Family/selection-arm aggregates are descriptive and adaptively censored.
