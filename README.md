@@ -118,7 +118,7 @@ Ranks are certified lower bounds. Bold marks per-rank column minima among shown 
 | [foundry-103b2-c14cbd686e01](research/elliptic-curves/data/research_curves/foundry-103b2-c14cbd686e01.md) | `[0, 0, 0, -5091171995266…, 88635547250856…]` | ≥ 25 | — | — | — | — |
 | [foundry-11952-9738e1ac00ed](research/elliptic-curves/data/research_curves/foundry-11952-9738e1ac00ed.md) | `[0, 0, 0, -5262327079717…, 14711482752165…]` | ≥ 25 | — | — | — | — |
 | [foundry-11952-a31493274bef](research/elliptic-curves/data/research_curves/foundry-11952-a31493274bef.md) | `[0, 0, 0, -4290605913723…, 34521352318092…]` | ≥ 25 | — | — | — | — |
-| [r17-panel-08234-high-02](research/elliptic-curves/data/research_curves/r17-panel-08234-high-02.md) | `[0, 0, 0, -1298869013726…, 16480804689062…]` | ≥ 24 | **213.24** | — | — | — |
+| [r17-panel-08234-high-02](research/elliptic-curves/data/research_curves/r17-panel-08234-high-02.md) | `[1, 0, 0, -2193143064754…, 11434859229838…]` | ≥ 24 | **213.24** | 290.28 | 22.16 | 281.01 |
 | [new-20260906-129](research/elliptic-curves/data/research_curves/new-20260906-129.md) | `[1, 0, 0, -1117426831395…, 43673028426873…]` | ≥ 24 | 218.32 | 288.26 | 21.95 | 278.24 |
 | [new-20260906-127](research/elliptic-curves/data/research_curves/new-20260906-127.md) | `[1, 0, 0, -3428548612984…, 36377001247496…]` | ≥ 24 | 218.91 | 292.42 | 22.40 | 284.36 |
 | [new-20260906-56](research/elliptic-curves/data/research_curves/new-20260906-56.md) | `[1, 0, 0, -2574004602740…, 17125620800021…]` | ≥ 24 | 222.54 | 290.91 | 22.20 | 281.48 |

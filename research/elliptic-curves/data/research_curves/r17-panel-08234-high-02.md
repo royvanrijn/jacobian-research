@@ -1,22 +1,16 @@
 # r17-panel-08234-high-02
 
-Rank **≥ 24**. Family `08234` at native parameter `-3248/79`.
+Rank **≥ 24**. Family `08234` at `-3248/79`. Unmatched in the current ICARM snapshot.
 
-[Full data and certified points](r17-panel-08234-high-02.json) · [Inventory](../../INVENTORY.md)
+[Full data and transported points](r17-panel-08234-high-02.json) · [Inventory](../../INVENTORY.md)
 
-Source a-invariants (global minimality has not been certified for this inventory):
+Minimal a-invariants:
 
 ```text
-0, 0, 0, -12988690137264083320493083420655251602789672342192, 16480804689062425093764874937353678547426657856609276565494212395537262976
+1, 0, 0, -21931430647545290962975112445891024051790, 1143485922983816588968442719896673870007162534674064734751492
 ```
 
-Conductor status: **EXACT**. Minimal discriminant, naive height and Faltings height are uncomputed in this inventory.
-
-Certified point count: 24. This is a rank lower bound; bounded no-gain searches do not prove exact rank.
-
-[Canonical proof note](../../../elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md) · [Equation and points](../../../artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json) · [Independent rank proof](../../../artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json)
-
-This finite seed supplement makes no literature-wide novelty or conductor-record claim.
+Conductor status: **EXACT**.
 
 Exact conductor:
 
@@ -30,4 +24,19 @@ Complete bad primes:
 2, 3, 5, 11, 13, 17, 19, 23, 37, 347, 5325577263031, 1282497921465413, 3947091299768911220094720296669177876224660861450987
 ```
 
-[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)
+Exact minimal discriminant:
+
+```text
+110253882580621611049080760317936376921573127670772185363721484560221377925783427364876272154621816087245038474950400000000
+```
+
+| log N | Naive height | Faltings height | log abs(Δ) |
+|---:|---:|---:|---:|
+| 213.2443 | 290.2798 | 22.1558 | 281.0130 |
+
+Natural logarithms; numerical columns are rounded. The Faltings column uses ICARM’s minimal-model period-area convention.
+
+Point count: 24. Local search bound: ≥24. Rank provenance: `standalone_exact_finite_group_certificate`.
+
+[Rank source](../../../artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json) · [Minimal model and transport checks](../../../artifacts/generated-results/elliptic-curves/r17_panel_08234_high_02_table_metrics_v1.json)
+· [Conductor certificate](../../../artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json)

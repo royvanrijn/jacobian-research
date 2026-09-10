@@ -185,4 +185,30 @@ def apply_refresh(rows):
                 raise ArithmeticError('exact conductor binding differs')
             row.update(conductor=conductor, conductor_status='EXACT',
                        log_conductor=math.log(int(conductor)), bad_primes=row['known_bad_primes'])
+
+    for entry in manifest.get('metrics', []):
+        claim_for(entry)
+        row = next(r for r in rows if r['id'] == entry['id'])
+        source = documents[entry['source']]
+        if (source['status'] != 'PASS_EXACT_MINIMAL_MODEL_AND_POINT_TRANSPORT'
+                or source['id'] != entry['id']
+                or source['rank_lower_bound'] != row['rank_lower_bound']
+                or source['source_ainvs'] != row['ainvs']
+                or source['point_transports'] != len(row['points'])
+                or source['conductor'] != row.get('conductor')):
+            raise ArithmeticError('selected minimal-model metric binding differs')
+        if any(not cert.is_on_weierstrass_curve(source['minimal_ainvs'], point)
+               for point in source['points']):
+            raise ArithmeticError('selected transported point does not lie on minimal model')
+        row.update(
+            ainvs=source['minimal_ainvs'],
+            points=source['points'],
+            discriminant=source['discriminant'],
+            log_abs_discriminant=source['log_abs_discriminant'],
+            naive_height=source['naive_height'],
+            faltings_height=source['faltings_height'],
+            original_to_minimal_isomorphism=source['original_to_minimal_isomorphism'],
+            model_status='GLOBAL_MINIMAL_MODEL_CERTIFIED',
+            minimal_model_certificate=entry['source'],
+            rank_certificate_model='Selected source packet; all points transported to the certified global minimal model by the saved isomorphism.')
     return rows

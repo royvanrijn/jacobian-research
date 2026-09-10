@@ -3255,6 +3255,13 @@
       "source": "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json"
     }
   ],
+  "metrics": [
+    {
+      "claim": "EC-R17-PANEL-08234-HIGH02-TABLE-METRICS-20260910",
+      "id": "r17-panel-08234-high-02",
+      "source": "artifacts/generated-results/elliptic-curves/r17_panel_08234_high_02_table_metrics_v1.json"
+    }
+  ],
   "schema": "elliptic-curves.research-curve-refresh.v1",
   "scope": "Selected certified updates through 2026-09-09. Saved finite reductions only; no point searches, exact-rank or novelty claims.",
   "sources": {
@@ -3290,6 +3297,7 @@
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v2.json": "9621c25652553978de0332426d8ada196388d85a45b429a99afbc063987e4003",
     "artifacts/generated-results/elliptic-curves/inventory291_conductor_snapshot_v3.json": "2348fdb738c0a17dce0c76616df16e7ed789fcc45d3e03d4089c209b186510d9",
     "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json": "e54ad618bdf65879dbd3e24971c287f57b9cfd910f234a9a931a756376ec618e",
-    "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99"
+    "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99",
+    "artifacts/generated-results/elliptic-curves/r17_panel_08234_high_02_table_metrics_v1.json": "37c0b92d80a6a7d79f3ae02a3f7d9ef51960a2e2e6b9aa0957d851cf01d1e746"
   }
 }

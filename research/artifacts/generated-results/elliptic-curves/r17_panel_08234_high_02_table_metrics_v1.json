@@ -1,0 +1,230 @@
+{
+  "c4": "1052708671082173966222805397402769154485921",
+  "c6": "-987971837458017532870313572997349484635522638054496084557017969",
+  "claim_boundary": "Exact global minimal equation, discriminant, source-model isomorphism, local conductor replay, and 24 point transports. Heights and logarithms are numerical approximations checked at 96 and 160 bits. The saved independent rank lower bound and exact conductor are reused; no exact-rank, novelty, or record claim.",
+  "conductor": "408151225931333636120101726342826073778668448086028074168154441438757841614211839980345370430",
+  "conductor_local_replay": [
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 14,
+      "prime": "2"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 8,
+      "prime": "3"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 8,
+      "prime": "5"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 3,
+      "prime": "11"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 5,
+      "prime": "13"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 4,
+      "prime": "17"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 3,
+      "prime": "19"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 2,
+      "prime": "23"
+    },
+    {
+      "conductor_exponent": 2,
+      "minimal_discriminant_valuation": 4,
+      "prime": "37"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 1,
+      "prime": "347"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 1,
+      "prime": "5325577263031"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 1,
+      "prime": "1282497921465413"
+    },
+    {
+      "conductor_exponent": 1,
+      "minimal_discriminant_valuation": 1,
+      "prime": "3947091299768911220094720296669177876224660861450987"
+    }
+  ],
+  "definitions": {
+    "faltings_height": "-1/2 log(period lattice area) on the global minimal model; Sage stable=False",
+    "log": "natural logarithm",
+    "naive_height": "log max(abs(c4)^3,c6^2) on the global minimal model"
+  },
+  "discriminant": "110253882580621611049080760317936376921573127670772185363721484560221377925783427364876272154621816087245038474950400000000",
+  "faltings_height": 22.1558439255423,
+  "id": "r17-panel-08234-high-02",
+  "invariant_gcd": "1369",
+  "log_abs_discriminant": 281.01299688914315,
+  "minimal_ainvs": [
+    "1",
+    "0",
+    "0",
+    "-21931430647545290962975112445891024051790",
+    "1143485922983816588968442719896673870007162534674064734751492"
+  ],
+  "minimality_local_checks": [
+    {
+      "minimal_discriminant_valuation": 14,
+      "prime": "2"
+    },
+    {
+      "minimal_discriminant_valuation": 8,
+      "prime": "3"
+    },
+    {
+      "minimal_discriminant_valuation": 4,
+      "prime": "37"
+    }
+  ],
+  "naive_height": 290.2798213049514,
+  "original_to_minimal_isomorphism": [
+    "156",
+    "2028",
+    "78",
+    "0"
+  ],
+  "point_transports": 24,
+  "points": [
+    [
+      "76374991157798489184884/5041",
+      "323050283786525043288665960992611118/357911"
+    ],
+    [
+      "-3365478237808036442116/121",
+      "1751652006709021562908055694561958/1331"
+    ],
+    [
+      "878442618477596681256446/16129",
+      "681149357009546287679589917945732804/2048383"
+    ],
+    [
+      "649611233994256535866004/10201",
+      "-73670673763832063432438899225827782/1030301"
+    ],
+    [
+      "50893300863365506109771/484",
+      "-25210096486825643102659564863991/10648"
+    ],
+    [
+      "344240320809136967174",
+      "5864022734008002329861255832038"
+    ],
+    [
+      "707312702721891317551196/5929",
+      "-216525075824262141662078674656478646/456533"
+    ],
+    [
+      "1369170651307391093442771554/8532241",
+      "33029494565390090867898227790678493156888/24922675961"
+    ],
+    [
+      "121903151465897222204",
+      "530567961831616231114958718818"
+    ],
+    [
+      "7111451742047914898273549/55696",
+      "8567331074826678781247763691782699463/13144256"
+    ],
+    [
+      "43128196479720565274876/169",
+      "-7663212223711910438400496252093654/2197"
+    ],
+    [
+      "10493169059733948823676/169",
+      "319384355761898552402731499347466/2197"
+    ],
+    [
+      "7743014722300188359996/49",
+      "-437069871369402600462666251818546/343"
+    ],
+    [
+      "1030718030013606146415356/16129",
+      "111060320655608676822052426548671774/2048383"
+    ],
+    [
+      "29083600359172045078720784/93025",
+      "-141426156419409932613240032835059332958/28372625"
+    ],
+    [
+      "63350584496494703789846/529",
+      "-5892303566551455638906546396819204/12167"
+    ],
+    [
+      "136466234310372721724",
+      "-831866196643088816523768917662"
+    ],
+    [
+      "-1277934551711572450822244/7569",
+      "120355589560399397972524139392209614/658503"
+    ],
+    [
+      "-523828299722252806369/4",
+      "-10642345957186237160932087925711/8"
+    ],
+    [
+      "-14451601405274800810101124/126025",
+      "-65607688611058730089093042297368706666/44738875"
+    ],
+    [
+      "-12599772805765535573382286/609961",
+      "-600257582267839370795271985203676065442/476379541"
+    ],
+    [
+      "-3661701037699276446464/289",
+      "-5853130794662545817866490160515806/4913"
+    ],
+    [
+      "9545302551051398684",
+      "-966960951297750406600699891582"
+    ],
+    [
+      "5745265384508065315932244/95481",
+      "-6024292784695776306600245769139463398/29503629"
+    ]
+  ],
+  "precision_bits": [
+    96,
+    160
+  ],
+  "rank_lower_bound": 24,
+  "sage_version": "10.9",
+  "schema": "elliptic-curves.selected-table-metrics.v1",
+  "source_ainvs": [
+    "0",
+    "0",
+    "0",
+    "-12988690137264083320493083420655251602789672342192",
+    "16480804689062425093764874937353678547426657856609276565494212395537262976"
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json": "e54ad618bdf65879dbd3e24971c287f57b9cfd910f234a9a931a756376ec618e",
+    "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json": "7744dde0e5b5fb1ec27a1f96ec3c65901b73e18f626f9c203877ab8422bdce99",
+    "elliptic-curves/cas/build_r17_panel_08234_high_02_table_metrics.sage": "51387fb8ade412285569a4f820260f28fbdec21448555c5737c92c052554755e"
+  },
+  "status": "PASS_EXACT_MINIMAL_MODEL_AND_POINT_TRANSPORT"
+}

@@ -10,7 +10,7 @@ ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
-The original 201 curves have certified minimal models. The 214 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
+The original 201 curves have certified minimal models. Of the 214 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md), 213 retain source equations with uncomputed minimal-model metrics; separate metric replays cover 1. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](data/research_curves/database.json) · [Download CSV](data/research_curves/database.csv) · [Arithmetic and replay notes](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 
@@ -106,7 +106,7 @@ Bold marks the lowest displayed value in each metric within each certified-rank 
 | [foundry-103b2-c14cbd686e01](data/research_curves/foundry-103b2-c14cbd686e01.md) | `[0, 0, 0, -5091171995266…, 88635547250856…]` | ≥ 25 | — | — | — | — |
 | [foundry-11952-9738e1ac00ed](data/research_curves/foundry-11952-9738e1ac00ed.md) | `[0, 0, 0, -5262327079717…, 14711482752165…]` | ≥ 25 | — | — | — | — |
 | [foundry-11952-a31493274bef](data/research_curves/foundry-11952-a31493274bef.md) | `[0, 0, 0, -4290605913723…, 34521352318092…]` | ≥ 25 | — | — | — | — |
-| [r17-panel-08234-high-02](data/research_curves/r17-panel-08234-high-02.md) | `[0, 0, 0, -1298869013726…, 16480804689062…]` | ≥ 24 | **213.24** | — | — | — |
+| [r17-panel-08234-high-02](data/research_curves/r17-panel-08234-high-02.md) | `[1, 0, 0, -2193143064754…, 11434859229838…]` | ≥ 24 | **213.24** | 290.28 | 22.16 | 281.01 |
 | [new-20260906-129](data/research_curves/new-20260906-129.md) | `[1, 0, 0, -1117426831395…, 43673028426873…]` | ≥ 24 | 218.32 | 288.26 | 21.95 | 278.24 |
 | [new-20260906-127](data/research_curves/new-20260906-127.md) | `[1, 0, 0, -3428548612984…, 36377001247496…]` | ≥ 24 | 218.91 | 292.42 | 22.40 | 284.36 |
 | [new-20260906-56](data/research_curves/new-20260906-56.md) | `[1, 0, 0, -2574004602740…, 17125620800021…]` | ≥ 24 | 222.54 | 290.91 | 22.20 | 281.48 |

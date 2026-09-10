@@ -54181,6 +54181,39 @@
       "priority": "derived"
     },
     {
+      "id": "EC-R17-PANEL-08234-HIGH02-TABLE-METRICS-20260910",
+      "kind": "example",
+      "state": "proved",
+      "title": "The rank-at-least24 R17 panel fibre08234 at -3248/79 has a completed minimal-model table row",
+      "scope": "For r17-panel-08234-high-02, PARI and Sage agree on the global minimal equation and the exact source-to-minimal change [156,2028,78,0]. Exact invariants, local minimality at2,3,37, all saved minimal-discriminant valuations, the exact conductor product and all24 point transports replay. The exact minimal discriminant is 110253882580621611049080760317936376921573127670772185363721484560221377925783427364876272154621816087245038474950400000000. At96/160-bit agreement, natural-log table values are logN213.244296126986, naive height290.279821304951, period-area Faltings height22.155843925542 and log|Delta|281.012996889143. This reuses the certified rank lower bound24 and exact conductor; it makes no exact-rank, novelty or record claim.",
+      "canonical_source": "elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md",
+      "dependencies": [
+        "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
+        "EC-R17-SIXTY-SEED-COMPLEMENT-PANEL-20260909"
+      ],
+      "checker": "elliptic-curves/cas/build_r17_panel_08234_high_02_table_metrics.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:51387fb8ade412285569a4f820260f28fbdec21448555c5737c92c052554755e",
+      "software_lock": [
+        "elliptic-curves/cas/build_r17_panel_08234_high_02_table_metrics.sage",
+        "elliptic-curves/cas/research_curve_refresh.py",
+        "elliptic-curves/cas/render_inventory201_readme.py",
+        "artifacts/generated-results/elliptic-curves/r17_panel_08234_high_02_table_metrics_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_60_panel_results_v1.json",
+        "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-INVENTORY321-CONDUCTOR-SNAPSHOT4-20260909",
       "kind": "example",
       "state": "proved",

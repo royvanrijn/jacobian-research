@@ -20,10 +20,21 @@ The selected updates are:
 | [Bifibration conic](DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md) | One exported determinant1092 specialization of orbit47755 at conic parameter u=0, with lower bound 18. |
 
 The [earlier supplement](INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) remains
-included. All 120 additions to the original 201-row inventory retain source
-models and uncomputed minimal-model height/discriminant fields. An exact
-conductor does not supply those missing metrics. Bounded misses remain
-unresolved, and the inventory makes no current public novelty or record claim.
+included. Supplemental additions retain source models and uncomputed
+minimal-model metrics unless a separate exact replay is linked. An exact
+conductor alone does not supply those metrics. Bounded misses remain unresolved,
+and the inventory makes no current public novelty or record claim.
+
+### Completed rank-24 row
+
+The row `r17-panel-08234-high-02` now has a separately replayed global minimal
+model, exact discriminant, all 24 transported points, and the same height
+conventions as the original 201 rows. Its completed numerical columns are
+`log N = 213.244296126986`, naive height `290.279821304951`, Faltings height
+`22.155843925542`, and `log abs(Delta) = 281.012996889143`. PARI and Sage agree
+on the exact change of variables; local minimal-discriminant valuations match
+the already published exact-conductor certificate. This completes one table
+row and makes no exact-rank, novelty, or conductor-record claim.
 
 ## Main README curation
 

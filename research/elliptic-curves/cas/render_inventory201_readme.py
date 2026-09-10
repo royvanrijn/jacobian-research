@@ -143,15 +143,18 @@ def run(check=False):
             f'| {r["log_conductor"]:.4f} | {r["naive_height"]:.4f} | {r["faltings_height"]:.4f} | {r["log_abs_discriminant"]:.4f} |' if r['conductor'] else f'| — | {r["naive_height"]:.4f} | {r["faltings_height"]:.4f} | {r["log_abs_discriminant"]:.4f} |','',
             'Natural logarithms; numerical columns are rounded. The Faltings column uses ICARM’s minimal-model period-area convention.','',
             f'Point count: {len(r["points"])}. Local search bound: ≥{r["local_search_rank_lower_bound"]}. Rank provenance: `{r["rank_provenance"]}`.','',
-            f'[Rank source](../../../{r["rank_source_certificate"]}) · [Minimal model and transport checks](../../../{METRICS.relative_to(ROOT)})']
+            f'[Rank source](../../../{r["rank_source_certificate"]}) · [Minimal model and transport checks](../../../{r.get("minimal_model_certificate", METRICS.relative_to(ROOT))})']
         if r['conductor_certificate']:
             text += [f'· [Conductor certificate](../../../{r["conductor_certificate"]})']
         put(OUT/(r['id']+'.md'),'\n'.join(text)+'\n',check)
+    supplemental = len(rows)-201
+    source_model_rows = sum(r.get('model_status') == 'SOURCE_MODEL_MINIMALITY_NOT_CERTIFIED' for r in rows)
+    completed_supplemental_metrics = supplemental-source_model_rows
     table = [BEGIN,'## Elliptic curve inventory','',
         f'**{len(rows)} research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**'+(f' · {counts["REPORTED"]} reported only' if counts['REPORTED'] else '')+'.',
         'ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions by Roy van Rijn. Each ICARM entry is followed by its credited submitter. Rank values are proved lower bounds.','',
         'Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.',
-        '', f'The original 201 curves have certified minimal models. The {len(rows)-201} additional [certified seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) retain their source equations; minimal-model metrics remain uncomputed. The [September 9 refresh](elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
+        '', f'The original 201 curves have certified minimal models. Of the {supplemental} additional [certified seed curves](elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md), {source_model_rows} retain source equations with uncomputed minimal-model metrics; separate metric replays cover {completed_supplemental_metrics}. The [September 9 refresh](elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.',
         '', '[Download JSON](elliptic-curves/data/research_curves/database.json) · [Download CSV](elliptic-curves/data/research_curves/database.csv) · [Arithmetic and replay notes](elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)',
         '', LEGEND, '', '| Curve | a-invariants | Rank | log N | Naive height | Faltings height | log abs(Δ) |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
