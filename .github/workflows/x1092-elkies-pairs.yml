@@ -12,7 +12,8 @@ permissions:
 
 concurrency:
   group: x1092-elkies-pair-smoke
-  cancel-in-progress: false
+  # Only this smoke lane; never the user's production processes.
+  cancel-in-progress: true
 
 jobs:
   bounded-smoke:
@@ -21,6 +22,8 @@ jobs:
     container:
       image: sagemath/sagemath:10.9
       options: --user root
+    env:
+      PYTHONINTMAXSTRDIGITS: "0"
     defaults:
       run:
         shell: bash
@@ -28,6 +31,18 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /research/elliptic-curves/cas/
+            /research/elliptic-curves/ecsearch/
+            /research/elkies-k3/scripts/
+            /research/elliptic-curves/*.py
+            /research/elliptic-curves/tests/test_elkies_pair_search.py
+            /research/elliptic-curves/data/research_curves/database.json
+            /research/artifacts/generated-results/elliptic-curves/det1092_reduced_parameter_chart_v1/reduced-parent.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json
+            /research/artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_orbits_v1.tsv
+            /research/artifacts/generated-results/elliptic-curves/curve302_parent_degree2_multisection_lattice_v1.json
       - name: Expose the existing PARI executable contract
         run: |
           set -euo pipefail
