@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     container:
-      image: sagemath/sagemath:10.9
+      image: sagemath/sagemath@sha256:e068670ae5863b54b2550e72437ec637b0283acb0dc712c8584c124dbf44e667
       options: --user root
     env:
       PYTHONINTMAXSTRDIGITS: "0"
@@ -28,6 +28,11 @@ jobs:
       run:
         shell: bash
     steps:
+      - name: Install Git for a real sparse checkout
+        timeout-minutes: 5
+        run: |
+          apt-get update -qq
+          apt-get install -y --no-install-recommends git ca-certificates
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
