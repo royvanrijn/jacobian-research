@@ -1,0 +1,89 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-39bf36c4cc08994fecd0/build.supervisor.json": "a045c5018d5d4cd7db7976fcf3434caf1db9dbf8ee797ab3fac8d1c4b50a7c70",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-39bf36c4cc08994fecd0/conductor.json": "16c75f4cad7f00610106ae90c39eed6fa35afacd7d04b79f3199e38b1d179411",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-39bf36c4cc08994fecd0/input.json": "10507387e538134288acf9191bf90b63232b938ccaf9843b6d59803440c5c4a3",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-39bf36c4cc08994fecd0/replay.supervisor.json": "ae9126194ad24cf5ad0d782b18beac83d93f9b96df7b7c4335cc5ccb7d4aeff0"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "749892",
+    "conductor_upper_bound": "5047446070009886524450544561270925604551973511174598619269950698704937317579415242201566177593730708508030915860486995612968507749244",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-212265039021218298374382040934126840360798987264592",
+      "18789001505204943481770391213909525166870785662992346974693963313896056768320"
+    ],
+    "discriminant_abs": "151895391367124865367309130267603766223296135250381404629862902839738018656941802168172730228906758334900565958197249918441001151928223508309611313631264768",
+    "exact_conductor": null,
+    "id": "f-39bf36c4cc08994fecd0",
+    "input_sha256": "10507387e538134288acf9191bf90b63232b938ccaf9843b6d59803440c5c4a3",
+    "local_data": [
+      {
+        "conductor_exponent": 2,
+        "discriminant_valuation": 16,
+        "kodaira": "IV",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[2, 4, [2, 0, 0, 0], 3]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 20,
+        "kodaira": "I8",
+        "minimal_discriminant_valuation": 8,
+        "pari_local_reduction": "[1, 12, [3, 3, 0, 0], 8]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 5,
+        "kodaira": "I5",
+        "minimal_discriminant_valuation": 5,
+        "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "19",
+        "prime_certificate": "19"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "23",
+        "prime_certificate": "23"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 17,
+    "remaining_cofactor": "6730897342563844559550634706425626096227154725179890729958381605224402070670730241423519890322514053367726173716331145835625007",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-39bf36c4cc08994fecd0",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

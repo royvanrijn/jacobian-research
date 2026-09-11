@@ -1,0 +1,89 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-3c8645219dda71515789/build.supervisor.json": "043616413e1a1f5c13cebe17919854a290411c241f203db06e9c817d7466bfa2",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-3c8645219dda71515789/conductor.json": "c5939221a750c0407a93e38a4c943203e7132182d2494d968b201156e96b1d1c",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-3c8645219dda71515789/input.json": "f074cdbc9c40d3345564a33f7fe5e6779130ce817b36d25d3b2aa17d1dd18154",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-3c8645219dda71515789/replay.supervisor.json": "5ed7e40f39e35db0bef81fb9f66d5a9627c6bbc6cd0a9a2fd5d8f00886d73011"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "124410",
+    "conductor_upper_bound": "53944057854782423311729898834143429625285617194875736792730004855191146727448004840527757372212855602635848419736500265585529041544210",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-16030376944933675374674047996922444604371122806085937067",
+      "24436473724766027160002599417747894990235120654911992374435547922143257571098964774"
+    ],
+    "discriminant_abs": "5674904926610923946280409740606498880136001162928648841066761886792306835475552848394322481508272762495845367211708385985612590830005916206038213522417997840384000000",
+    "exact_conductor": null,
+    "id": "f-3c8645219dda71515789",
+    "input_sha256": "f074cdbc9c40d3345564a33f7fe5e6779130ce817b36d25d3b2aa17d1dd18154",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 26,
+        "kodaira": "I14",
+        "minimal_discriminant_valuation": 14,
+        "pari_local_reduction": "[1, 18, [2, -1, 1, 4], 14]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 23,
+        "kodaira": "I11",
+        "minimal_discriminant_valuation": 11,
+        "pari_local_reduction": "[1, 15, [3, 3, 0, 0], 11]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 6,
+        "kodaira": "I6",
+        "minimal_discriminant_valuation": 6,
+        "pari_local_reduction": "[1, 10, [1, 0, 0, 0], 6]",
+        "prime": "5",
+        "prime_certificate": "5"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 4,
+        "kodaira": "I4",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 5,
+        "kodaira": "I5",
+        "minimal_discriminant_valuation": 5,
+        "pari_local_reduction": "[1, 9, [1, 0, 0, 0], 5]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "29",
+        "prime_certificate": "29"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 21,
+    "remaining_cofactor": "433599050355939420558877090540498590348730947631828123082790811471675482095072782256472609695465441705938818581597140628450518781",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-3c8645219dda71515789",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

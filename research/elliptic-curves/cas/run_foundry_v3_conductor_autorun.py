@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Rolling conductor queue for sealed high-rank-foundry-v3 endpoints.
 
-The source foundry is still running, so this queue deliberately discovers only
-sealed PASS_CERTIFIED_SEARCH packets and adds them one by one.  Selection is
-independent of conductor outcomes: every sealed packet is admitted, converted
-to an integral model with an explicit Q-isomorphism, and sent through the
-maintained conductor worker followed by an independent replay.
+Every sealed PASS_CERTIFIED_SEARCH packet is retained in the queue.  Curves
+eligible for the inventory publication threshold are dispatched first, however:
+they are the only pending endpoints that can affect the next README cutoff.
+This changes scheduling only, never conductor-conditioned admission.
 """
 from __future__ import annotations
 
@@ -31,10 +30,12 @@ OUT = ROOT / "artifacts" / "generated-results" / "elliptic-curves" / "foundry_v3
 WORKER = CAS / "inventory_conductor_worker_v2.py"
 SAGE = Path.home() / ".local" / "bin" / "sage"
 SELF = Path(__file__).resolve()
-DEFAULT_WORKERS = 2
+DEFAULT_WORKERS = 8
 BUILD_SECONDS = 1800
 REPLAY_SECONDS = 120
 RSS_BYTES = 2 * 1024**3
+INVENTORY_PRIORITY_RANK = 22
+TERMINAL_SOURCE_STATUSES = frozenset(("COMPLETE", "STOPPED"))
 
 
 def source_jobs():
@@ -117,6 +118,8 @@ def sync():
         "build_seconds": BUILD_SECONDS,
         "replay_seconds": REPLAY_SECONDS,
         "rss_bytes": RSS_BYTES,
+        "inventory_priority_rank": INVENTORY_PRIORITY_RANK,
+        "priority_policy": "rank-at-least-22 endpoints first, then descending certified lower bound; all sealed endpoints remain admitted",
         "selection": "all sealed PASS_CERTIFIED_SEARCH endpoints; no conductor-conditioned filtering",
         "source_script_sha256": sha(SELF),
         "worker_sha256": sha(WORKER),
@@ -125,6 +128,19 @@ def sync():
     }
     atomic(D / "manifest.json", manifest)
     return manifest
+
+
+def pending_in_priority_order(manifest):
+    """Schedule README-eligible endpoints before deferred lower-rank work."""
+    rank = {row["id"]: int(row["rank_lower_bound"])
+            for row in manifest["records"]}
+    pending = [identifier for identifier in manifest["ids"]
+               if not (D / "cases" / identifier / "result.json").exists()]
+    return sorted(pending, key=lambda identifier: (
+        rank[identifier] < INVENTORY_PRIORITY_RANK,
+        -rank[identifier],
+        identifier,
+    ))
 
 
 def case(identifier):
@@ -201,8 +217,10 @@ def summary(manifest):
         "source_status": manifest.get("source_status"),
         "updated_at": time.time(),
     }
-    if result["source_status"] == "COMPLETE" and result["completed"] == result["discovered"]:
-        result["status"] = "COMPLETE"
+    if (result["source_status"] in TERMINAL_SOURCE_STATUSES
+            and result["completed"] == result["discovered"]):
+        result["status"] = ("COMPLETE" if result["source_status"] == "COMPLETE"
+                            else "COMPLETE_SOURCE_STOPPED")
     atomic(D / "summary.json", result)
     return result
 
@@ -216,8 +234,7 @@ def controller():
     try:
         while True:
             manifest = sync()
-            pending = [identifier for identifier in manifest["ids"]
-                       if not (D / "cases" / identifier / "result.json").exists()]
+            pending = pending_in_priority_order(manifest)
             with ThreadPoolExecutor(max_workers=workers) as pool:
                 active = {}
                 while pending or active:
@@ -238,10 +255,12 @@ def controller():
             current = read(SOURCE / "LIVE_STATUS.json").get("status") \
                 if (SOURCE / "LIVE_STATUS.json").exists() else "UNKNOWN"
             manifest = sync()
-            if current == "COMPLETE":
+            if current in TERMINAL_SOURCE_STATUSES:
                 result = summary(manifest)
                 if result["completed"] == result["discovered"]:
-                    state.update(status="COMPLETE", active=[], finished_unix=time.time())
+                    state.update(status=("COMPLETE" if current == "COMPLETE"
+                                         else "COMPLETE_SOURCE_STOPPED"),
+                                 active=[], finished_unix=time.time())
                     atomic(D / "state.json", state)
                     return
             state.update(active=[], waiting_for_new_source_endpoints=True)
@@ -262,7 +281,30 @@ def launch():
     try:
         fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
     except FileExistsError:
-        raise SystemExit(f"controller lock exists: {lock}")
+        try:
+            owner = int(lock.read_text().strip())
+            os.kill(owner, 0)
+        except (ValueError, ProcessLookupError):
+            # Older launchers wrote their own short-lived PID to the lock.
+            # Consult the durable controller record before treating such a
+            # lock as stale.
+            state = read(D / "state.json") if (D / "state.json").exists() else {}
+            controller = state.get("controller", {})
+            controller_pid = controller.get("pid")
+            try:
+                if controller_pid is not None:
+                    os.kill(int(controller_pid), 0)
+            except (ValueError, ProcessLookupError):
+                pass
+            else:
+                raise SystemExit(f"controller is active despite stale launch lock: {lock}")
+            # A crashed controller cannot clean up its lock.  The queue state
+            # is immutable per case, so removing this confirmed-stale lock is
+            # safe and lets the controller resume from existing checkpoints.
+            lock.unlink()
+            fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+        else:
+            raise SystemExit(f"controller lock exists: {lock}")
     os.write(fd, str(os.getpid()).encode())
     os.close(fd)
     log = D / "autorun.log"
@@ -270,6 +312,7 @@ def launch():
                              cwd=ROOT, stdin=subprocess.DEVNULL,
                              stdout=log.open("ab"), stderr=subprocess.STDOUT,
                              start_new_session=True)
+    lock.write_text(str(child.pid))
     atomic(D / "launch.json", {"pid": child.pid, "launched_unix": time.time(),
                                "script_sha256": sha(SELF)})
     print("FOUNDRY_V3_CONDUCTOR_AUTORUN_LAUNCHED", child.pid, flush=True)
