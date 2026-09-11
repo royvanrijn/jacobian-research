@@ -1,0 +1,89 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-c07c5404fefb7e62402d/build.supervisor.json": "ab8bdbf6ee53527ceea14323600a10d2e992bd8c6652ec82288897bcb3a19e9d",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-c07c5404fefb7e62402d/conductor.json": "1b0745f59ace87db5232c7fcf8475531de07f9ee1eac1873f3ea31e7bccc1ffa",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-c07c5404fefb7e62402d/input.json": "8feda5a0e9f271d6d1cf4d8c453ff5cd40ee7329a009788b8e7c6c2730c59fef",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-c07c5404fefb7e62402d/replay.supervisor.json": "d39c455c6af8f561810886caeda252913610ce6ac6c58e4197600167386bc4a0"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "955110",
+    "conductor_upper_bound": "32162360471913423274035411290909436502847453772874634506973388167280704552849329730103222729037043859766440242275917641153090490",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-200744713953698631275021103182997934420885429113953712",
+      "34602367374787387585892337174468256620928172915345104251417289676378641346092416"
+    ],
+    "discriminant_abs": "496832524271266738537388066469559808125892971614681917296055799070771429555658526671014467716130647054680863428496146449064431068626684782594525130391552000000",
+    "exact_conductor": null,
+    "id": "f-c07c5404fefb7e62402d",
+    "input_sha256": "8feda5a0e9f271d6d1cf4d8c453ff5cd40ee7329a009788b8e7c6c2730c59fef",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 40,
+        "kodaira": "I16",
+        "minimal_discriminant_valuation": 16,
+        "pari_local_reduction": "[1, 20, [4, -4, 2, 32], 16]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 25,
+        "kodaira": "I13",
+        "minimal_discriminant_valuation": 13,
+        "pari_local_reduction": "[1, 17, [3, 3, 0, 0], 13]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 6,
+        "kodaira": "I6",
+        "minimal_discriminant_valuation": 6,
+        "pari_local_reduction": "[1, 10, [1, 0, 0, 0], 6]",
+        "prime": "5",
+        "prime_certificate": "5"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "31",
+        "prime_certificate": "31"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "79",
+        "prime_certificate": "79"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 22,
+    "remaining_cofactor": "33673985689515786950231294082262186033909658335557825283970839136100244529791678162832786515728077247402330875266636974959",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-c07c5404fefb7e62402d",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

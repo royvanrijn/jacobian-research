@@ -1,0 +1,89 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-b0addc592ad626544e81/build.supervisor.json": "2f1633eb448bb40e06902b95ddfdfd7a39c395b061b9baaffa744abdafa67ae5",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-b0addc592ad626544e81/conductor.json": "799e92bb619dbccb7f5ba1c6fbeb77a70cb6cd8d7c7ef0163acb10bd3d297d7d",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-b0addc592ad626544e81/input.json": "d5158092faa1d1ab7a77b5118fbaebc36edd90c7f8d688521808b78e74b37b57",
+    "artifacts/local/elliptic-curves/foundry-v3-conductors-v1/cases/f-b0addc592ad626544e81/replay.supervisor.json": "ca0eabb0f8910e6fcd4a3e457215fa9752a36f99418e23a917b636891a27a1d0"
+  },
+  "build_outcome": "strict_wall_timeout",
+  "certificate": {
+    "argument": "Exact primality certificates and agreement of Sage generic Tate over the degree-one presentation Q[a]/(a-1) with PARI elllocalred over Q. The local product divides N; N is at most that product times the unprocessed discriminant cofactor. Exact only when the cofactor is one. No rank, minimal-model metric or record claim.",
+    "conductor_divisor": "138138",
+    "conductor_upper_bound": "1012257344439854606459235913924352816120008835108525540235067303517456438522952422196389024291010104253733022487947507703149424658182",
+    "curve": [
+      "0",
+      "0",
+      "0",
+      "-8438912883480751959474284812164033544413025595005087152",
+      "9446480779080685198173973002439317728064004182002366564910201084558120303208897920"
+    ],
+    "discriminant_abs": "87276655155237903998764009184904326767098524299676237885190358849158518448085398501922903746125550327337856717061522953610877921932029076500060964875897251811033088",
+    "exact_conductor": null,
+    "id": "f-b0addc592ad626544e81",
+    "input_sha256": "d5158092faa1d1ab7a77b5118fbaebc36edd90c7f8d688521808b78e74b37b57",
+    "local_data": [
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 41,
+        "kodaira": "I17",
+        "minimal_discriminant_valuation": 17,
+        "pari_local_reduction": "[1, 21, [4, -4, 2, 32], 17]",
+        "prime": "2",
+        "prime_certificate": "2"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 24,
+        "kodaira": "I12",
+        "minimal_discriminant_valuation": 12,
+        "pari_local_reduction": "[1, 16, [3, 3, 0, 0], 12]",
+        "prime": "3",
+        "prime_certificate": "3"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 2,
+        "kodaira": "I2",
+        "minimal_discriminant_valuation": 2,
+        "pari_local_reduction": "[1, 6, [1, 0, 0, 0], 2]",
+        "prime": "7",
+        "prime_certificate": "7"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 4,
+        "kodaira": "I4",
+        "minimal_discriminant_valuation": 4,
+        "pari_local_reduction": "[1, 8, [1, 0, 0, 0], 4]",
+        "prime": "11",
+        "prime_certificate": "11"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "13",
+        "prime_certificate": "13"
+      },
+      {
+        "conductor_exponent": 1,
+        "discriminant_valuation": 3,
+        "kodaira": "I3",
+        "minimal_discriminant_valuation": 3,
+        "pari_local_reduction": "[1, 7, [1, 0, 0, 0], 3]",
+        "prime": "23",
+        "prime_certificate": "23"
+      }
+    ],
+    "pari_version": "(2, 17, 3)",
+    "rank_lower_bound": 23,
+    "remaining_cofactor": "7327870277837051401201956839713567708523424655840721164596760511354272094014336548932147738428311574322293811173952914499626639",
+    "sage_version": "10.9",
+    "status": "UNKNOWN",
+    "worker_sha256": "25000c9b4c0a350d143e579bf5f99d92259fc9b609c28295603309b6111771a9"
+  },
+  "id": "f-b0addc592ad626544e81",
+  "status": "PASS_INDEPENDENT_CONDUCTOR_REPLAY"
+}

@@ -1,8 +1,13 @@
 # Broad rank search: runnable, finite and token-free between batches
 
-**Operational status, 2026-09-10:** both real backends passed commissioning, and
-`artifacts/local/elliptic-curves/broad-rank-v1` is launched with the default eight
-presentations and four workers. Its [live report](../../artifacts/local/elliptic-curves/broad-rank-v1/REPORT.json)
+**Operational status, 2026-09-11:** both real backends passed commissioning, and
+`artifacts/local/elliptic-curves/broad-rank-v1` is running with the default eight
+presentations and six workers. It began with four workers; the operator authorized
+two more after a host capacity check. The controller drained all active jobs
+before resuming through a retained scheduling adapter. Its
+[capacity receipt](../../artifacts/local/elliptic-curves/broad-rank-v1/capacity.json)
+points to the frozen adapter and policy; the original plan, manifest and per-fibre
+budgets are unchanged. Its [live report](../../artifacts/local/elliptic-curves/broad-rank-v1/REPORT.json)
 records progress; the campaign is not a completed search result. The older
 two-parent MW17 campaign was never dispatched and is stopped, with its inputs
 and smoke evidence preserved. Mathematical status is unchanged. Use a new
@@ -183,11 +188,24 @@ have an autonomous LLM or guardian retry loop; use `resume` after inspection.
 python3 research/elliptic-curves/cas/run_broad_rank_search.py stop --folder "$RUN"
 # Inspect before clearing the deliberate stop marker.
 python3 research/elliptic-curves/cas/run_broad_rank_search.py status --folder "$RUN"
+# Wait until controller_alive is false and active_jobs is empty.
 rm "$RUN/STOP"
-python3 research/elliptic-curves/cas/run_broad_rank_search.py resume --folder "$RUN"
+# Preserve this campaign's current six-worker scheduling capacity.
+python3 research/elliptic-curves/cas/run_broad_rank_capacity.py launch \
+  --folder "$RUN" --workers 6
 # Check retained input/output integrity; not a fresh arithmetic replay.
 python3 research/elliptic-curves/cas/run_broad_rank_search.py verify --folder "$RUN"
 ```
+
+`run_broad_rank_capacity.py` supports an explicit capacity of1–8 after draining.
+Every launch retains a copy of the adapter and a receipt binding its capacity to
+the original plan and manifest. It imports the frozen controller and changes only
+its in-memory scheduling worker count; dispatches still use the original plan
+hash and arithmetic sources. The original controller's `resume` command instead
+uses the worker count in `plan.json` (four for this campaign). Do not edit that
+plan to scale an existing run. The capacity/resume and original controller tests
+passed together:41 tests, including concurrency, no repeated completed jobs,
+unchanged budgets, STOP, controller locks and receipt tampering.
 
 `REPORT.json` includes per-parent/per-arm baseline and current lower-bound
 histograms, calls, unknowns, aliases and CPU. Detailed gain timelines live in
