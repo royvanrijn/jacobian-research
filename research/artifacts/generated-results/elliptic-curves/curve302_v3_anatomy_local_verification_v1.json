@@ -1,0 +1,76 @@
+{
+  "boundary": "Exact chart identities, public Curve302 points, reduction orders, the mod-2 generic/complement split, and the repository's reduced parent parameter are checked locally. Numerical kappa tables, 12,082/1,734 pair counts, their byte-for-byte replay, and the plot remain an external attestation until all files named by the supplied hash manifest are present.",
+  "curve302_checks": {
+    "focused_exposure_artifact_sha256": "ef09493f9690920f28dc16199d49691a1d1dca0def7562f6c59372c0022c453a",
+    "generic_embedding_mod2_rank": 17,
+    "good_reduction_orders": {
+      "17": 26,
+      "31": 43
+    },
+    "greedy_public_complement_indices_zero_based": [
+      0,
+      2,
+      3,
+      5,
+      8,
+      12,
+      13,
+      16,
+      18,
+      21,
+      25,
+      28,
+      29,
+      30
+    ],
+    "parent_artifact_sha256": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "public_model_nonsingular": true,
+    "public_points_checked_exactly": 31,
+    "rational_torsion_order_divides_gcd": 1,
+    "reduced_parent_parameter_repository_crosscheck": "-164518/143797"
+  },
+  "elementary_checks": {
+    "deck_pair_generates_same_unsaturated_extension": "For Q in S, Q-P lies in S+ZP and P=Q-(Q-P) lies in S+Z(Q-P).",
+    "one_vector_fixed_core_intersection_gain_bound": 1,
+    "reported_target31_height_factor_from_bits": 37386135.091249004
+  },
+  "external_payload_check": {
+    "matched": [],
+    "mismatched": [],
+    "missing": [
+      "README.md",
+      "REPORT.md",
+      "chart_geometry.py",
+      "curve302_kappa_collapse.png",
+      "curve302_reconstructed.json",
+      "icarm_curve302.py",
+      "kappa_results.json",
+      "measure_kappa.py",
+      "measure_same_class.py",
+      "parameter_roots.json",
+      "parent.json",
+      "reconstruct_source.py",
+      "recover_parameter.py",
+      "same_class_results.json",
+      "test_chart_geometry.py"
+    ],
+    "payload_root": "research/elliptic-curves/data/curve302_v3_anatomy_payload_v1",
+    "status": "UNVERIFIED_MISSING_HASHED_PAYLOADS"
+  },
+  "schema": "elliptic-curves.curve302-v3-anatomy-local-verification.v1",
+  "status": "PASS_LOCAL_CLAIMS_EXTERNAL_MEASUREMENTS_UNVERIFIED",
+  "supplied_attestation": {
+    "declared_primary_point_anchor_pairs_checked": 12082,
+    "declared_same_class_point_anchor_pairs_checked": 1734,
+    "declared_status": "PASS_EXACT_GEOMETRY_AND_REAL_CURVE302_DIAGNOSTIC",
+    "declared_tests_passed": 17,
+    "sha256": "9b0b0f57455faf3621bf74e42507ac51e8182e946834e3c1b44c9fc3cbf61d5e"
+  },
+  "symbolic_chart_checks": {
+    "covering_x_of_2P_minus_Q_is_N_over_F": true,
+    "deck_involution_sums_to_Q_x": true,
+    "deck_involution_sums_to_Q_y": true,
+    "inverse_ordinate_is_2x_plus_a_minus_t2": true,
+    "quartic_point_maps_to_E": true
+  }
+}

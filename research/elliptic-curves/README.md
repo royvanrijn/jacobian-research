@@ -390,6 +390,14 @@ recovered-local-01 stops at29 after its complete1434-chart final epoch.
 The two-seed note also records completed no-gain transfer controls. These
 results do not establish prospective seed discovery or an exact rank upper bound.
 
+The [exact V3 chart anatomy and finite-atlas diagnostic](notes/CURVE302_V3_ANATOMY_AND_FINITE_ATLAS_2026-09-11.md)
+separates the birational point map, degree-two parameter map and degree-four
+covering map, and proves that opposite quartic roots generate the same integral
+subgroup extension. Its supplied Curve302 kappa tables remain an external
+attestation because the hashed measurement payload is absent; local checks
+independently verify the symbolic identities, public curve data, reduction
+orders and generic/complement split. No scheduler replay or point search occurs.
+
 The [complete 302 exceptional-subgroup order diagnostic](notes/CURVE302_EXCEPTIONAL_SUBGROUP_ORDER_2026-09-07.md)
 enumerates all `2^14` displayed `M17+S` states retrospectively. Its persistent
 finite-atlas score is monotone on all 745,472 inclusion edges; fresh CVP

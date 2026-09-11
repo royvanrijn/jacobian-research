@@ -1,0 +1,29 @@
+{
+  "byte_for_byte_real_measurement_replay": "PASS",
+  "cross_fibre_rank25_panel_measured": false,
+  "hashes": {
+    "README.md": "da5f9ba12c301f82bdc10b39840eff0b259271776f29e279707fa7958affac74",
+    "REPORT.md": "4dde431fd4279612e0bbeb8a0f357afc8bae674688814c605f10ba3e7218ce8d",
+    "chart_geometry.py": "1e676d1337a52a76400a52a7a304b343bcfba15fe1f9303deecb834d44b92217",
+    "curve302_kappa_collapse.png": "a8506b65a9ea5dabf0298a59475298287403bdb956528ecaa2858be5aff1b3e9",
+    "curve302_reconstructed.json": "e7102216d821bbe9b7f3ac1e6db095e57b314e62b5a269cac453163c3ba06260",
+    "icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "kappa_results.json": "63feea68bff3682d5fd9fbfd8f69cabc3f03f98dab553e21b3f6151e4d65732c",
+    "measure_kappa.py": "c1d6a8e2b9d167b6a36eb9878d01728c56e17daddfc87dc4a1ce363af2aa83f0",
+    "measure_same_class.py": "386a25b356e644cf16fea640ce763e23d7f95cb73c814a90a11c2a322a4813ab",
+    "parameter_roots.json": "e24a0261ac6a1d455e09b8fcd9d9ccb77793c7b89eaab377e4e8ce57146f75d7",
+    "parent.json": "8bf1daf61537a92e11e734040bba7ccd418f1d9e2c6c26df4e2ab2e9a685f5b4",
+    "reconstruct_source.py": "6698d1a5601dd943d824d16afaae794868e22085e90a36824faac1fa7b7724d4",
+    "recover_parameter.py": "b4eeb7e7b3c5f514f4d13a0db00694e5057f9d052ee76b8b6bf8c2f77e03bf29",
+    "same_class_results.json": "3fd3e00b251c6d9cbec8174b986c1b1dad39ff6776c63a8d59074c7a54c87c0d",
+    "test_chart_geometry.py": "e6005194bea11a2c429ca4af484300bb2b49cddd2af02607c7de70f98d8562e7"
+  },
+  "historical_V3_policy_replayed": false,
+  "metric": "log2 exact normalized parameter height before final GL2 Gauss reduction",
+  "new_point_searches": 0,
+  "primary_point_anchor_pairs_checked": 12082,
+  "same_class_point_anchor_pairs_checked": 1734,
+  "source_reconstruction": "PASS: exact Q-isomorphism, 17 sections, rank-31 finite-quotient certificate, trivial torsion",
+  "status": "PASS_EXACT_GEOMETRY_AND_REAL_CURVE302_DIAGNOSTIC",
+  "tests_passed": 17
+}
