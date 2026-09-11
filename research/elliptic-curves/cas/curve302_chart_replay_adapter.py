@@ -379,7 +379,7 @@ def inspect_raw_tree(raw_root: Path, names: Sequence[str]):
 def load_stage_charts(raw_root: Path, names: Sequence[str], expected_epochs: dict[str,set[int]]):
     """Select the maximal cumulative chart snapshot for every historical stage."""
     raw_root = Path(raw_root).resolve()
-    candidates = defaultdict(list)
+    candidates = {}
     for file in sorted(raw_root.rglob("*.json")):
         if not file.is_file(): continue
         rel = file.relative_to(raw_root)
@@ -391,18 +391,24 @@ def load_stage_charts(raw_root: Path, names: Sequence[str], expected_epochs: dic
         charts = obj.get("charts") if isinstance(obj, dict) else None
         if not (isinstance(charts, list) and charts and all(isinstance(c,dict) for c in charts)):
             continue
-        candidates[(seed,epoch)].append((len(charts), file, charts))
+        key = (seed, epoch)
+        row = candidates.get(key)
+        count = len(charts)
+        if row is None or count > row["count"]:
+            candidates[key] = {"count": count, "file": file, "charts": charts,
+                               "canonical": None}
+        elif count == row["count"]:
+            current = canonical_json(charts)
+            if row["canonical"] is None:
+                row["canonical"] = canonical_json(row["charts"])
+            require(current == row["canonical"],
+                    f"ambiguous maximal chart snapshots for {seed}/epoch-{epoch:02d}")
     selected = {}
     for seed, epochs in expected_epochs.items():
         for epoch in sorted(epochs):
-            rows = candidates.get((seed,epoch), [])
-            require(rows, f"no chart snapshot bound to {seed}/epoch-{epoch:02d}")
-            maxn = max(n for n,_,_ in rows)
-            top = [(f,c) for n,f,c in rows if n == maxn]
-            # Cumulative snapshots with equal max length must agree canonically.
-            canon = {canonical_json(c) for _,c in top}
-            require(len(canon) == 1, f"ambiguous maximal chart snapshots for {seed}/epoch-{epoch:02d}")
-            file, charts = top[0]
+            row = candidates.get((seed,epoch))
+            require(row is not None, f"no chart snapshot bound to {seed}/epoch-{epoch:02d}")
+            file, charts = row["file"], row["charts"]
             normalized = []
             for order, chart in enumerate(charts):
                 idx_fields = collect_integer_fields(chart)
