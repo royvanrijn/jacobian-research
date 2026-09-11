@@ -240,8 +240,11 @@ def parsed_rref(value, n):
         value = ast.literal_eval(value)  # numeric tuples only; never eval
     require(isinstance(value, (list, tuple)), "invalid RREF encoding")
     original = tuple(integer(v) for v in value)
-    require(rref(original, n) == original, "noncanonical source RREF")
-    return original
+    reduced = rref(original, n)
+    # The v1 source exporter serializes reduced rows in numeric order; this
+    # runner uses pivot order. Accept those two canonical encodings only.
+    require(original in (reduced, tuple(sorted(reduced))), "noncanonical source RREF")
+    return reduced
 
 
 def validate_results(inputs, expected_names=NAMES):

@@ -86,6 +86,16 @@ class BinaryTests(unittest.TestCase):
     def test_reference_rref(self):
         self.assertEqual(lab.rref([3,5,6],3), (5,6))
 
+    def test_source_rref_numeric_and_pivot_order(self):
+        # v1 rref_binary sorts by integer value, not by pivot column.
+        self.assertEqual(lab.parsed_rref("(2, 9)", 4), (9, 2))
+        self.assertEqual(lab.parsed_rref([9, 2], 4), (9, 2))
+
+    def test_source_rref_rejects_nonreduced_or_redundant_rows(self):
+        for rows in ([2, 3], [2, 2, 9], [0, 2, 9], [4, 9, 2]):
+            with self.subTest(rows=rows), self.assertRaises(ValueError):
+                lab.parsed_rref(rows, 4)
+
     def test_rref_permutations(self):
         for rows in ([3,5,6], [12,7,8], [1,1,0]):
             self.assertEqual(lab.rref(rows,4), lab.rref(list(reversed(rows)),4))

@@ -2,6 +2,11 @@
 
 ## Implementation status and provenance
 
+**Execution update:** the actual sealed 14-run/180-acquisition bundle has now
+completed all three follow-ups and deterministic recomputation. See the
+[execution ledger](#actual-data-execution-ledger-2026-09-11) below. The following
+implementation-session provenance is retained as history.
+
 This additive runner is based on the source schemas inspected in the preceding
 conversation and the user's report of the completed first closure experiment.
 **The newly committed result files were not fetched in the implementation session:**
@@ -191,3 +196,79 @@ implementation session**. This new suite should be recorded once with its
 input hashes, outputs and interpretation, then retained rather than relaunched
 under a new name. A new threshold or merely rerendering these summaries is not
 another scientific experiment.
+
+## Actual-data execution ledger (2026-09-11)
+
+The supplied patch was applied with `git am` as `76b20e01`. All 37 supplied
+tests passed. Real-input preparation then rejected `noncanonical source RREF`:
+the original closure exporter sorts reduced binary rows numerically, while
+the new reader required pivot order. The reader now accepts precisely these
+two orderings of the same reduced basis and returns pivot order. It still
+rejects unreduced, redundant, zero and noncanonical row sequences. Two added
+regressions pass, bringing the specified test suite to **39 passing tests**.
+The complete real source bundle also passes validation (14 runs, 180 gains).
+
+The failed preparation is retained at
+`artifacts/local/elliptic-curves/curve302-closure-followup-v1/`; no stage ran
+there. The successful run uses the fresh sibling
+`curve302-closure-followup-v1-rref-compat/`. From the repository root:
+
+```sh
+sage -python research/elliptic-curves/cas/run_curve302_closure_followup.py run \
+  --results research/artifacts/local/elliptic-curves/curve302-closure-structure-v1 \
+  --folder research/artifacts/local/elliptic-curves/curve302-closure-followup-v1-rref-compat
+sage -python research/elliptic-curves/cas/run_curve302_closure_followup.py check \
+  --folder research/artifacts/local/elliptic-curves/curve302-closure-followup-v1-rref-compat
+```
+
+These commands record the completed invocation; do not rerun `run` in that
+existing folder. Defaults were retained: full vocabulary, 1,000 reference
+draws, seed 3020911, one thread, 1,800 seconds and 3 GiB per stage. No search
+was launched. The report status is `COMPLETE_THREE_RETROSPECTIVE_FOLLOWUPS`;
+the saved check reports `PASS_DETERMINISTIC_RECOMPUTATION` for all three JSON
+outputs, using the frozen source and inputs rather than repeating EC proofs.
+
+| Binding | SHA256 |
+| --- | --- |
+| Frozen runner | `3e327f5384b2e5548c07ff3e50840313e68d132b86ed05f07142525eb493b43c` |
+| Source REPORT | `a3e21d661c29dc30c4334a4cb3bd20ba55ad505d3380eacdbe2584cfd03ec358` |
+| Landscape | `1f6f67d6575bb67842f93c8de2b3d7e14671704ad1118cbc67431cbcf861f38b` |
+| Persistence output | `4858362cb78b15e50eff4e793cdb8656a36bc1929f0df438c29311cb33eb8792` |
+| Strict-filtration output | `e3a73c468bfe91db48561b2834b9c80c0d68b18a7dc20984e62d7116b96c39b0` |
+| Next-moves output | `e31fb3598cd715b475f8f206f76982e63f1a6814a6fa0c18beb24c7f78458062` |
+
+The plan retains all individual source-output hashes, software versions and
+absolute origins; the source report binds the preceding three outputs.
+
+Persistence encodes all 5,930 distinct edge cutoffs. Seven singletons strictly
+lower the full-closure threshold. The empty threshold is 30.94463075 in the
+preceding atlas's units (numerator divided by 4,000,000); recovered-strict-02
+and recovered-strict-03 attain 25.63565575, a 17.1564% reduction. Unchanged full
+thresholds do not imply unchanged arrival curves.
+
+All runs fill the local quotient by quotient dimension 4–7. The rank 29
+exception ends at strict/local dimensions (8,4), so its two missing dimensions
+are strict. Across all acquisitions there are 128 strict-dimension increments;
+125 are supplied by individually mixed vectors, with exact F2 combination
+witnesses retained. Thus the earlier count of only three individually strict
+acquisitions does not measure strict-subspace growth.
+
+Different intermediate subspaces contain a common core: at quotient dimension 6
+all fourteen contain local-02; at 8 they contain local-01 and local-02; at 9 they
+also contain local-04. Their common intersection at 12 has dimension 6. These
+are statements about mod 2 subspaces, not equality of rational or integral
+subgroups. Full-dimension endpoint convergence remains tautological.
+
+Neither adaptive score improves on static quotient norm in either vocabulary:
+
+| Vocabulary | Coverage | Static loss | Residual loss | Unlock loss | Static / residual / unlock top-1 hits |
+| --- | --- | --- | --- | --- | --- |
+| Fixed 18,760 vectors | 49/180 | 0.728571 | 0.732351 | 0.902795 | 23 / 0 / 0 |
+| Leave-one-run-out | 70/180 | 0.632527 | 0.654158 | 0.749235 | 30 / 7 / 0 |
+
+Losses are run-balanced mean percentile losses with absent targets penalized
+by one; lower is better. Top-1 counts use conservative tie handling and all 180
+events. These bounded literal-vector vocabularies have limited coverage.
+This result supports early local completion and shared subspace content, but
+does not support the tested adaptive next-move scores over static height.
+It establishes no prospective predictor, propagation theorem or rank bound.
