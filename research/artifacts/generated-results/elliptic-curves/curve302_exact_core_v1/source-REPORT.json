@@ -1,0 +1,14 @@
+{
+  "boundary": "Retrospective structure analysis only. All fourteen exceptional directions and completed seeded runs are known inputs. No point search is launched and no rank upper bound or prospective success probability is inferred.",
+  "outputs": {
+    "closure-laws": "cb7d8857c0e380b5ae90e814e061cfcb2f4822f6bb5b73aafb05c74ac2018e44",
+    "quotient-relations": "41c976a751004131469adfaea49d9e8e468652a8b65a77440204ed89377b5396",
+    "trajectories": "70ce0a09051f8a5bd8fc4444fd29299064b7907c85d8f6a7a99e6a32d29b13fa"
+  },
+  "status": "PASS_THREE_CLOSURE_EXPERIMENTS",
+  "summary": {
+    "closure": "PASS_EXHAUSTIVE_16384_CLOSURE_ANALYSIS",
+    "relations": "PASS_QUOTIENT_RELATION_ANALYSIS",
+    "trajectories": "PASS_ALL_14_SEEDED_TRAJECTORIES_RECONCILED"
+  }
+}

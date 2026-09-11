@@ -1,0 +1,20 @@
+{
+  "boundary": "Exact linear algebra on previously EC-verified integer quotient words in displayed D/M17. Parity, rational span and integral generation are distinct. Certificates express identities modulo M17, not new EC proofs or statements about saturation in the full Mordell-Weil group. At each dimension only runs attaining that dimension are compared; no missing state is imputed.",
+  "files_sha256": {
+    "exact-core.json": "6507b4c49fc9727888428515b547cb9a96ee3dd5cb78188108e610d0d78d8290",
+    "source-REPORT.json": "a3e21d661c29dc30c4334a4cb3bd20ba55ad505d3380eacdbe2584cfd03ec358",
+    "source-trajectories.json": "70ce0a09051f8a5bd8fc4444fd29299064b7907c85d8f6a7a99e6a32d29b13fa"
+  },
+  "frozen_source_sha256": {
+    "inputs/REPORT.json": "a3e21d661c29dc30c4334a4cb3bd20ba55ad505d3380eacdbe2584cfd03ec358",
+    "inputs/closure-laws.json": "cb7d8857c0e380b5ae90e814e061cfcb2f4822f6bb5b73aafb05c74ac2018e44",
+    "inputs/landscape.json": "1f6f67d6575bb67842f93c8de2b3d7e14671704ad1118cbc67431cbcf861f38b",
+    "inputs/quotient-relations.json": "41c976a751004131469adfaea49d9e8e468652a8b65a77440204ed89377b5396",
+    "inputs/trajectories.json": "70ce0a09051f8a5bd8fc4444fd29299064b7907c85d8f6a7a99e6a32d29b13fa",
+    "source/runner.py": "e0a569a1ed5a1ecd47cb301d8f5a699f884968d3f81f05ddbfe7d2e64a2a8628",
+    "source/support.py": "3e327f5384b2e5548c07ff3e50840313e68d132b86ed05f07142525eb493b43c"
+  },
+  "local_run": "research/artifacts/local/elliptic-curves/curve302-exact-core-v2",
+  "schema": "curve302-exact-core-export.v1",
+  "sealed_output_sha256": "a722574669ebb29eeea6840e5d7399d1bbe9f034cbf2dc90a8e5318388e6b42e"
+}

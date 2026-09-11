@@ -1,5 +1,10 @@
 # Curve302: persistence, filtered subspaces, and held-out next moves
 
+The [exact shared-core audit](CURVE302_EXACT_SHARED_CORE_2026-09-11.md) now
+upgrades the common parity subspaces to integral intersections of the acquired
+quotient lattices, with explicit identities. The negative next-move result
+below remains unchanged.
+
 ## Implementation status and provenance
 
 **Execution update:** the actual sealed 14-run/180-acquisition bundle has now
