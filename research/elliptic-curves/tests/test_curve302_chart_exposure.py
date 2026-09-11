@@ -172,6 +172,43 @@ class CoreTests(unittest.TestCase):
         result=core.counterfactual_stage(stage,[axes[0]],{},NAMES,{axes[1]:0},random_orders=2)
         self.assertTrue(all(p["status"] == "UNKNOWN_INCOMPLETE_CHART_COVERAGE" for p in result["policies"]))
 
+    def test_stage_prefixes_do_not_invent_multi_gain_order(self):
+        axes=[tuple(int(i==j) for i in range(14)) for j in range(14)]
+        runs=[{"seed":"s","seed_index":0,"stages":[
+            {"epoch":0,"gains":[{"word":axes[1]},{"word":axes[2]}]},
+            {"epoch":1,"gains":[{"word":axes[3]}]},
+        ]}]
+        prefixes=core.stage_prefixes(runs,14)
+        self.assertEqual(prefixes[("s",0)],(axes[0],))
+        self.assertEqual(set(prefixes[("s",1)]),{axes[0],axes[1],axes[2]})
+        self.assertEqual(len(prefixes),2)
+
+    def test_multi_gain_counterfactual_is_unknown(self):
+        axes=[tuple(int(i==j) for i in range(14)) for j in range(14)]
+        stage={"seed":"s","epoch":0,"batch_size":2,"actual":{"word":axes[1]}, "coverage_complete":True,
+               "chart_rows":[{"chart_id":"a","original_order":0,"score_band":"x","quartic_coefficient_bits":10,"complete_flag":True,"exposed":[axes[1],axes[2]]}]}
+        result=core.counterfactual_stage(stage,[axes[0]],{},NAMES,{axes[1]:0,axes[2]:1},random_orders=2)
+        self.assertTrue(all(p["status"] == "UNKNOWN_MULTI_GAIN_STAGE" for p in result["policies"]))
+        self.assertEqual(result["post_dimension"],3)
+
+    def test_batch_sibling_is_not_a_norm_matched_control(self):
+        axes=[tuple(int(i==j) for i in range(14)) for j in range(14)]
+        with tempfile.TemporaryDirectory() as td:
+            p=Path(td)/"v.tsv"; rows=candidate_vectors()
+            with p.open("w") as out:
+                out.write("norm\tvector\n")
+                for norm,v in rows: out.write(f"{norm}\t{','.join(map(str,v))}\n")
+            vocab=Vocabulary.load(p,14,len(rows),F(2),[axes[1],axes[2]])
+            charts=[core.normalize_chart({"chart_id":"a","complete":True,"exposures":[
+                {"quotient_word":axes[1],"parameter_height":3},
+                {"quotient_word":axes[2],"parameter_height":4}]},0,14)]
+            candidates=[v for _,v in rows]
+            positions={v:i for i,(_,v) in enumerate(rows)}
+            metrics=core.candidate_metrics_for_stage(charts,candidates,positions,[axes[0]],axes[1],vocab,
+                                                     [[int(i==j) for j in range(14)] for i in range(14)],14,
+                                                     actual_batch=(axes[1],axes[2]))
+            self.assertNotIn(axes[2],{tuple(c["word"]) for c in metrics["controls"]})
+
     def test_tied_percentile(self):
         self.assertEqual(core.tied_percentile(2,[1,2,3],higher_better=True), str(F(1,2)))
 
@@ -186,8 +223,57 @@ class EndToEndTests(unittest.TestCase):
             runner.resume(out)
             self.assertEqual(runner.read(out/"REPORT.json")["status"],"PASS_THREE_CHART_EXPOSURE_EXPERIMENTS")
             census=runner.read(out/"exposure-census.json")
-            self.assertEqual(census["summary"]["stages"],180)
+            self.assertEqual(census["summary"]["acquisitions"],180)
             self.assertEqual(census["summary"]["actual_exposed"],180)
+            runner.check(out)
+
+    def test_double_gain_and_terminal_no_gain_end_to_end(self):
+        with tempfile.TemporaryDirectory() as td:
+            td=Path(td); short, structure, ledger=make_fixture(td)
+            traj=runner.read(structure/"trajectories.json")
+            run=traj["runs"][0]
+            first, second, *rest = run["stages"]
+            merged={"epoch":0,"new":first["new"]+second["new"]}
+            renumbered=[merged]
+            for i,stage in enumerate(rest, start=1):
+                stage=dict(stage); stage["epoch"]=i; renumbered.append(stage)
+            renumbered.append({"epoch":len(renumbered),"new":[]})
+            run["stages"]=renumbered; run["charts"] += 1
+            dump(structure/"trajectories.json",traj)
+            report=runner.read(structure/"REPORT.json")
+            report["outputs"]["trajectories"]=sha(structure/"trajectories.json")
+            dump(structure/"REPORT.json",report)
+
+            led=runner.read(ledger); lrun=led["runs"][0]
+            lfirst,lsecond,*lrest=lrun["stages"]
+            merged_charts=[]
+            for order,chart in enumerate(lfirst["charts"]+lsecond["charts"]):
+                chart=dict(chart); chart["order"]=order; merged_charts.append(chart)
+            lstages=[{"epoch":0,"charts":merged_charts}]
+            for i,stage in enumerate(lrest,start=1):
+                stage=dict(stage); stage["epoch"]=i; lstages.append(stage)
+            lstages.append({"epoch":len(lstages),"charts":[{
+                "chart_id":"terminal","order":0,"score_band":"T","complete":True,
+                "quartic_coefficients":[1,2,3,4,5],"search_bound":100,"exposures":[]}]})
+            lrun["stages"]=lstages; dump(ledger,led)
+
+            data=runner.source_data(short,structure)
+            self.assertEqual(sum(len(s["gains"]) for r in data["runs"] for s in r["stages"]),180)
+            self.assertEqual(sum(len(s["gains"])==2 for r in data["runs"] for s in r["stages"]),1)
+            self.assertEqual(sum(s["terminal_no_gain"] for r in data["runs"] for s in r["stages"]),1)
+
+            out=td/"out-batch"
+            runner.prepare(out,short,structure,ledger_path=ledger,static_limit=20,random_orders=4,
+                           stage_seconds=120,memory_bytes=2*1024**3)
+            runner.resume(out)
+            census=runner.read(out/"exposure-census.json")
+            self.assertEqual(census["summary"]["acquisitions"],180)
+            self.assertEqual(census["summary"]["gain_stages"],179)
+            self.assertEqual(census["summary"]["double_gain_stages"],1)
+            cf=runner.read(out/"counterfactuals.json")
+            multi=[r for r in cf["stages"] if r.get("batch_size")==2]
+            self.assertEqual(len(multi),1)
+            self.assertTrue(all(p["status"]=="UNKNOWN_MULTI_GAIN_STAGE" for p in multi[0]["policies"]))
             runner.check(out)
 
     def test_tampered_ledger_rejected(self):

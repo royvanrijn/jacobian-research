@@ -468,8 +468,7 @@ def validate_ledger(ledger, names, runs, *, expected_total_charts=None):
     for run in runs:
         seed = run["seed"]
         stages = by_seed[seed]["stages"]
-        expected_epochs = [integer(e) for e in run.get("epochs", range(len(run["events"])))]
-        require([integer(s["epoch"]) for s in stages] == expected_epochs,
+        require([integer(s["epoch"]) for s in stages] == [integer(s["epoch"]) for s in run["stages"]],
                 f"ledger epochs differ for {seed}")
         for stage in stages:
             charts = stage["charts"]
@@ -541,12 +540,20 @@ def build_candidate_population(vocab, runs, *, static_limit=1000):
 
 
 def stage_prefixes(runs, n):
+    """Historical prefixes only at actual stage boundaries.
+
+    Multi-gain stages are unordered batches.  Their gains are all adjoined only
+    after recording the shared pre-stage prefix; no synthetic intermediate
+    prefix is created.
+    """
     result = {}
     for run in runs:
         rows = [tuple(int(i == run["seed_index"]) for i in range(n))]
-        for epoch, event in enumerate(run["events"]):
+        for stage in run["stages"]:
+            epoch = integer(stage["epoch"])
             result[(run["seed"], epoch)] = tuple(rows)
-            rows.append(tuple(event["word"]))
+            for gain in stage.get("gains", ()):  # row order is serialization only
+                rows.append(tuple(gain["word"]))
     return result
 
 
@@ -579,7 +586,7 @@ def contains_core_integrally(rows, core):
     return all(integer_contains(rows, v) for v in core)
 
 
-def candidate_metrics_for_stage(charts, candidates, positions, prefix, actual, vocab, form, n):
+def candidate_metrics_for_stage(charts, candidates, positions, prefix, actual, vocab, form, n, *, actual_batch=None):
     state = QuotientMap(n)
     for row in prefix:
         kind, _ = state.admission(row)
@@ -620,7 +627,9 @@ def candidate_metrics_for_stage(charts, candidates, positions, prefix, actual, v
     ai = positions[actual]
     band = vocab.band(ai)
     lo_i, hi_i = band["index_start"], band["index_stop"]
-    controls = [v for v in candidate_set if v != actual and lo_i <= positions[v] < hi_i]
+    batch = {primitive(v) for v in (actual_batch or (actual,))}
+    require(actual in batch, "actual acquisition missing from batch")
+    controls = [v for v in candidate_set if v not in batch and lo_i <= positions[v] < hi_i]
     # If decade-matched population is empty, retain an explicit UNKNOWN rather
     # than widening after looking at the outcome.
     def summary(v):
@@ -678,12 +687,12 @@ def multiplicity_comparison(stage_rows):
     usable = [r for r in records if r["control_count"] and r["coverage_complete"]]
     exposed_actual = sum(r["actual_is_exposed"] for r in records)
     return {"status": "PASS_RECORDED_EXPOSURE_MULTIPLICITY_WITH_COMPLETENESS_GATE",
-            "stages": records,
-            "summary": {"stage_count": len(records), "complete_coverage_stages": sum(r["coverage_complete"] for r in records),
-                        "incomplete_or_unknown_coverage_stages": sum(not r["coverage_complete"] for r in records),
-                        "usable_rank_band_stages": len(usable),
-                        "actual_exposed_stages": exposed_actual,
-                        "actual_not_exposed_stages": len(records) - exposed_actual,
+            "acquisitions": records,
+            "summary": {"acquisition_count": len(records), "complete_coverage_acquisitions": sum(r["coverage_complete"] for r in records),
+                        "incomplete_or_unknown_coverage_acquisitions": sum(not r["coverage_complete"] for r in records),
+                        "usable_rank_band_acquisitions": len(usable),
+                        "actual_exposed_acquisitions": exposed_actual,
+                        "actual_not_exposed_acquisitions": len(records) - exposed_actual,
                         "median_exposure_percentile": median_fraction([r["exposure_count_percentile"] for r in usable]),
                         "median_parameter_height_percentile": median_fraction([r["parameter_height_percentile"] for r in usable]),
                         "median_quartic_bits_percentile": median_fraction([r["quartic_bits_percentile"] for r in usable])},
@@ -717,6 +726,17 @@ def _rng(label):
 def counterfactual_stage(stage, prefix_rows, cores_by_dim, names, positions, *, random_orders=256, master_seed="302-chart-exposure-v1"):
     charts = stage["chart_rows"]
     n = len(names); indices = list(range(len(charts)))
+    batch_size = integer(stage.get("batch_size", 1))
+    if batch_size != 1:
+        policies = [{"policy": name, "status": "UNKNOWN_MULTI_GAIN_STAGE"}
+                    for name in ("original", "reverse", "quartic_bits", "random", "random_within_score_band")]
+        return {"seed": stage["seed"], "epoch": stage["epoch"],
+                "batch_size": batch_size, "post_dimension": len(prefix_rows) + batch_size,
+                "chart_count": len(charts),
+                "score_bands_available": all(c.get("score_band") is not None for c in charts),
+                "coverage_complete": stage.get("coverage_complete") is True,
+                "policies": policies,
+                "boundary": "No historical within-stage ordering is defined for this multi-gain batch."}
     if stage.get("coverage_complete") is not True:
         policies = []
         for name in ("original", "reverse", "quartic_bits", "random", "random_within_score_band"):
@@ -823,7 +843,7 @@ def summarize_counterfactuals(rows):
         row = {"policy": name, **dict(policies[name]), "unknown_stages": unknown[name]}
         summary.append(row)
     return {"status": "PASS_STAGE_LOCAL_CHART_ORDER_CONTROLS", "stages": rows, "summary": summary,
-            "boundary": "Each historical stage is reordered independently and only stages with explicitly complete chart coverage are promoted. A counterfactual gain is never propagated into later historical stages; these controls separate recorded atlas exposure from within-stage scheduling only."}
+            "boundary": "Each historical single-gain stage is reordered independently and only stages with explicitly complete chart coverage are promoted. Multi-gain stages remain UNKNOWN because the transcript defines no within-stage chronology. A counterfactual gain is never propagated into later historical stages; these controls separate recorded atlas exposure from within-stage scheduling only."}
 
 
 def schema_probe(raw_root: Path, names: Sequence[str], *, max_files=10000, max_samples=80):

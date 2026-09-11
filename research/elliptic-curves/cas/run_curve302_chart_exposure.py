@@ -173,35 +173,52 @@ def source_data(short, structure):
         seed = raw["seed"]
         require(seed in NAMES, "unknown trajectory seed")
         events = []
-        no_gain_epochs = []
+        stages = []
         raw_stages = raw["stages"]
         for expected_epoch, stage in enumerate(raw_stages):
             require(integer(stage["epoch"]) == expected_epoch, "trajectory epochs reordered")
-            if not stage["new"]:
-                require(integer(stage["after"]) == integer(stage["before"]),
-                        f"empty acquisition stage changed rank: {seed}/{expected_epoch}")
+            raw_new = list(stage.get("new", ()))
+            if not raw_new:
+                # A bounded terminal stall carries chart evidence but no
+                # acquisition.  It is a stage, not a quotient-dimension step.
+                if "after" in stage or "before" in stage:
+                    require("after" in stage and "before" in stage,
+                            f"incomplete rank transition on no-gain stage: {seed}/{expected_epoch}")
+                    require(integer(stage["after"]) == integer(stage["before"]),
+                            f"empty acquisition stage changed rank: {seed}/{expected_epoch}")
                 require(expected_epoch == len(raw_stages) - 1,
                         f"nonterminal no-gain stage unsupported: {seed}/{expected_epoch}")
-                no_gain_epochs.append(expected_epoch)
+                stages.append({"epoch": expected_epoch, "gains": [], "terminal_no_gain": True})
                 continue
-            # Historical seeded closure runs in this experiment acquired one new
-            # displayed-D direction per accepted stage. Refuse to invent ordering
-            # inside a multi-gain stage.
-            require(len(stage["new"]) == 1,
-                    f"multi-gain stage unsupported for ordering control: {seed}/{expected_epoch}")
-            item = stage["new"][0]
-            require(item.get("integral") is True and integer(item["denominator"]) == 1, "nonintegral trajectory acquisition")
-            word = tuple(integer(v) for v in item["quotient_word"])
-            p = primitive(word)
-            require(tuple(item["primitive_quotient_word"]) == p, "trajectory primitive word changed")
-            events.append({"word": word, "primitive": p, "epoch": expected_epoch})
+            # The real census contains one- and two-gain stages.  A two-gain
+            # stage is an unordered batch: both gains are measured against the
+            # same pre-stage subgroup.  We never manufacture an intermediate
+            # historical prefix between them.
+            require(len(raw_new) in (1, 2),
+                    f"unsupported gain multiplicity {len(raw_new)}: {seed}/{expected_epoch}")
+            gains = []
+            for item in raw_new:
+                require(item.get("integral") is True and integer(item["denominator"]) == 1,
+                        "nonintegral trajectory acquisition")
+                word = tuple(integer(v) for v in item["quotient_word"])
+                p = primitive(word)
+                require(tuple(item["primitive_quotient_word"]) == p, "trajectory primitive word changed")
+                gains.append({"word": word, "primitive": p, "epoch": expected_epoch})
+            require(len({g["primitive"] for g in gains}) == len(gains), "duplicate gain in one historical stage")
+            # Canonical order is serialization only; it is never interpreted as
+            # chronological ordering within a batch.
+            gains.sort(key=lambda g: g["primitive"])
+            batch_words = tuple(g["primitive"] for g in gains)
+            for batch_index, gain in enumerate(gains):
+                event = dict(gain)
+                event.update(batch_size=len(gains), batch_index=batch_index, batch_words=batch_words)
+                events.append(event)
+            stages.append({"epoch": expected_epoch, "gains": gains, "terminal_no_gain": False})
         qfinal = integer(raw["final_rank"]) - 17
         require(qfinal == 1 + len(events), "trajectory endpoint dimension mismatch")
         charts = integer(raw["charts"])
         require(charts > 0, "trajectory chart count missing")
-        runs.append({"seed": seed, "seed_index": NAMES.index(seed), "events": events,
-                     "epochs": list(range(len(raw_stages))),
-                     "no_gain_epochs": no_gain_epochs,
+        runs.append({"seed": seed, "seed_index": NAMES.index(seed), "events": events, "stages": stages,
                      "final_dimension": qfinal, "charts": charts})
         total += len(events); total_charts += charts
     require(len(runs) == 14 and len({r["seed"] for r in runs}) == 14, "expected fourteen seeded runs")
@@ -252,7 +269,7 @@ def prepare(folder, source=None, structure=None, raw_root=None, ledger_path=None
     require(1 <= static_limit <= integer(data["enumeration"]["direction_count"]), "invalid static candidate limit")
     require(1 <= random_orders <= 10000, "invalid random-order count")
     require(stage_seconds > 0 and memory_bytes >= 512*1024**2, "invalid stage resource budget")
-    expected_epochs = {r["seed"]: set(r.get("epochs", range(len(r["events"])))) for r in data["runs"]}
+    expected_epochs = {r["seed"]: {s["epoch"] for s in r["stages"]} for r in data["runs"]}
 
     folder.mkdir(parents=True, exist_ok=False)
     try:
@@ -383,11 +400,14 @@ def stage_rows(folder):
             epoch = event["epoch"]
             charts = ledger_by_seed[run["seed"]]["stages"][epoch]["charts"]
             metrics = candidate_metrics_for_stage(charts, candidates, positions, prefixes[(run["seed"], epoch)],
-                                                  event["primitive"], vocab, data["form"], 14)
+                                                  event["primitive"], vocab, data["form"], 14,
+                                                  actual_batch=event["batch_words"])
             metrics.update(seed=run["seed"], epoch=epoch, quotient_dimension_before=len(prefixes[(run["seed"], epoch)]),
-                           actual_word=list(event["primitive"]))
+                           actual_word=list(event["primitive"]), batch_size=event["batch_size"],
+                           batch_index=event["batch_index"],
+                           batch_words=[list(v) for v in event["batch_words"]])
             rows.append(metrics)
-    require(len(rows) == 180, "stage metric count changed")
+    require(len(rows) == 180, "acquisition metric count changed")
     return data, positions, prefixes, rows
 
 
@@ -417,6 +437,7 @@ def do_stage(folder, stage):
                              "static_rank": (positions[axis] + 1 if axis in positions else None)}
                 special[name] = found
             compact.append({"seed": r["seed"], "epoch": r["epoch"],
+                            "batch_size": r["batch_size"], "batch_index": r["batch_index"],
                             "quotient_dimension_before": r["quotient_dimension_before"],
                             "chart_count": len(r["chart_rows"]), "candidate_count": r["candidate_count"],
                             "coverage_complete": r["coverage_complete"],
@@ -425,25 +446,35 @@ def do_stage(folder, stage):
                             "exposed_candidate_count": r["exposed_candidate_count"],
                             "actual": r["actual"], "rank_band": r["rank_band"],
                             "control_count": len(r["controls"]), "special_axes": special})
-        result = {"schema": "curve302-chart-exposure-census.v1", "status": "PASS_EXACT_HISTORICAL_EXPOSURE_CENSUS",
-                  "stages": compact,
-                  "summary": {"stages": len(compact), "charts": sum(x["chart_count"] for x in compact),
+        unique_gain_stages = {}
+        for row in compact:
+            unique_gain_stages.setdefault((row["seed"], row["epoch"]), row)
+        result = {"schema": "curve302-chart-exposure-census.v2", "status": "PASS_EXACT_HISTORICAL_EXPOSURE_CENSUS",
+                  "acquisitions": compact,
+                  "summary": {"acquisitions": len(compact), "gain_stages": len(unique_gain_stages),
+                              "double_gain_stages": sum(x["batch_size"] == 2 for x in unique_gain_stages.values()),
+                              "charts": sum(x["chart_count"] for x in unique_gain_stages.values()),
                               "actual_exposed": sum(x["actual"]["count"] > 0 for x in compact),
-                              "complete_coverage_stages": sum(x["coverage_complete"] for x in compact),
+                              "complete_coverage_gain_stages": sum(x["coverage_complete"] for x in unique_gain_stages.values()),
                               "candidate_rule": plan["policy"]["candidate_rule"]},
                   "boundary": "Exposure means explicit quotient-word evidence in the historical chart audit/replay. Unsupported point-only records are not treated as misses. Absence-based comparisons require explicit complete chart coverage and otherwise remain UNKNOWN."}
         atomic(folder/"exposure-census.json", result)
     elif stage == "multiplicity":
         result = multiplicity_comparison(rows)
-        result["schema"] = "curve302-chart-multiplicity.v1"
+        result["schema"] = "curve302-chart-multiplicity.v2"
         atomic(folder/"multiplicity.json", result)
     elif stage == "counterfactuals":
         cf = []
+        seen = set()
         for r in rows:
-            cf.append(counterfactual_stage(r, prefixes[(r["seed"], r["epoch"])], data["cores"], NAMES, positions,
+            key = (r["seed"], r["epoch"])
+            if key in seen:
+                continue
+            seen.add(key)
+            cf.append(counterfactual_stage(r, prefixes[key], data["cores"], NAMES, positions,
                                            random_orders=integer(plan["policy"]["random_orders"]),
                                            master_seed=plan["policy"]["master_seed"]))
-        result = summarize_counterfactuals(cf); result["schema"] = "curve302-stage-local-chart-order-controls.v1"
+        result = summarize_counterfactuals(cf); result["schema"] = "curve302-stage-local-chart-order-controls.v2"
         atomic(folder/"counterfactuals.json", result)
     else:
         raise EvidenceError("unknown stage")
@@ -504,11 +535,11 @@ def write_summary(folder):
     folder = Path(folder)
     c, m, f = read(folder/"exposure-census.json"), read(folder/"multiplicity.json"), read(folder/"counterfactuals.json")
     lines = ["# Curve302 historical chart exposure controls", "",
-             f"Historical stages: **{c['summary']['stages']}**; charts: **{c['summary']['charts']}**.",
-             f"Actual acquisitions explicitly exposed: **{c['summary']['actual_exposed']}/{c['summary']['stages']}**.",
-             f"Stages with complete chart coverage: **{c['summary']['complete_coverage_stages']}/{c['summary']['stages']}**.", "",
+             f"Historical gain stages: **{c['summary']['gain_stages']}** ({c['summary']['double_gain_stages']} double); acquisitions: **{c['summary']['acquisitions']}**; charts: **{c['summary']['charts']}**.",
+             f"Actual acquisitions explicitly exposed: **{c['summary']['actual_exposed']}/{c['summary']['acquisitions']}**.",
+             f"Gain stages with complete chart coverage: **{c['summary']['complete_coverage_gain_stages']}/{c['summary']['gain_stages']}**.", "",
              "## Norm-matched multiplicity", "",
-             f"Usable rank-band stages: **{m['summary']['usable_rank_band_stages']}**.",
+             f"Usable rank-band acquisitions: **{m['summary']['usable_rank_band_acquisitions']}**.",
              f"Median exposure-count percentile: **{m['summary']['median_exposure_percentile']}**.",
              f"Median parameter-height percentile: **{m['summary']['median_parameter_height_percentile']}**.",
              f"Median quartic-bit percentile: **{m['summary']['median_quartic_bits_percentile']}**.", "",

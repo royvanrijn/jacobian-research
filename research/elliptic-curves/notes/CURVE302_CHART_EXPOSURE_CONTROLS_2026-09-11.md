@@ -36,9 +36,28 @@ that historical stage has complete coverage. Otherwise the stage remains
 `UNKNOWN_INCOMPLETE_CHART_COVERAGE`; recorded positive hits are still retained in the
 census.
 
+## Historical stage batching
+
+The trajectory audit contains both single-gain and double-gain stages.  A
+double-gain stage has one historical pre-stage subgroup and one chart transcript,
+but no certified chronology between its two acquired quotient directions.  The
+controller therefore treats those two acquisitions as an **unordered batch**:
+
+- both exposure/multiplicity records are evaluated against the same pre-stage
+  subgroup and the same chart list;
+- the sibling acquired direction is excluded from the other acquisition's
+  norm-matched control population;
+- the post-stage subgroup adjoins both gains together; no synthetic intermediate
+  prefix is created;
+- stage-local ordering counterfactuals for such a stage remain
+  `UNKNOWN_MULTI_GAIN_STAGE` rather than inventing first/second chronology.
+
+A terminal no-gain stage remains part of the raw/ledger census but contributes no
+acquisition record and no ordering counterfactual.
+
 ## Candidate population
 
-For every historical stage the frozen candidate population is
+For every historical acquisition, evaluated at its historical pre-stage boundary, the frozen candidate population is
 
 1. the first 1,000 primitive directions in the completed exact static-height
    enumeration; plus
@@ -68,7 +87,7 @@ The output is `exposure-census.json`.
 
 ## Experiment B — norm-matched representation multiplicity
 
-At each stage compare the actual acquisition with all still-unknown candidates in its
+At each acquisition compare the actual direction with all still-unknown candidates in its
 frozen static-rank band. Report tied descriptive percentiles for:
 
 - exposure count (higher is better);
@@ -82,7 +101,7 @@ The output is `multiplicity.json`.
 
 ## Experiment C — stage-local scheduling counterfactuals
 
-Reorder only the already-generated charts of each historical stage under:
+Reorder only the already-generated charts of each historical **single-gain** stage under:
 
 - original order;
 - reverse order;
@@ -92,7 +111,8 @@ Reorder only the already-generated charts of each historical stage under:
   score-band label.
 
 The first chart in that ordering that exposes any still-unknown frozen candidate is the
-stage-local counterfactual gain. For that gain record, exactly over `Z`:
+stage-local counterfactual gain. Multi-gain stages are reported as UNKNOWN for this
+experiment because no historical within-stage acquisition order is certified. For that gain record, exactly over `Z`:
 
 - whether it equals the historical acquisition;
 - whether adjoining it is a primitive lattice extension;
