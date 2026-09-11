@@ -45,7 +45,12 @@ def load(replay):
     er=read(exp/'REPORT.json'); require(er.get('status')=='PASS_THREE_CHART_EXPOSURE_EXPERIMENTS','experiment report not passed')
     short=exp/'inputs/short'; structure=exp/'inputs/structure'
     data=exposure.source_data(short,structure)
-    ledger_path=exp/'inputs/chart-exposure-ledger.json'; ledger=normalize_explicit_ledger(read(ledger_path),exposure.NAMES,14)
+    ledger_path=exp/'inputs/chart-exposure-ledger.json'; raw_ledger=read(ledger_path)
+    # The downstream experiment snapshots the consumer-normalized ledger.  Its
+    # exposure entries already use the canonical ``word`` field, so passing it
+    # through the raw-ledger adapter again would discard every exposure.
+    ledger=(raw_ledger if raw_ledger.get('normalization')=='explicit-ledger'
+            else normalize_explicit_ledger(raw_ledger,exposure.NAMES,14))
     stats=validate_ledger(ledger,exposure.NAMES,data['runs'],expected_total_charts=data['total_charts'])
     return replay,exp,data,ledger,ledger_path,stats
 
