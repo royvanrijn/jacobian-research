@@ -1,0 +1,19 @@
+{
+  "boundary": "Snapshot lower-bound jumps, not exact ranks; adaptive search exposure and parent differ. Equation workers receive no points or ranks. Without g, g+local is symbolic, not a numerical Selmer capacity. Partial factorizations and failed BNF remain UNKNOWN.",
+  "limits": {
+    "bnf_seconds_per_complete_field": 3,
+    "field_seconds_per_case": 15,
+    "geometry_seconds": 180,
+    "geometry_traces_per_target": 34,
+    "new_point_searches": 0,
+    "pari_stack_bytes": 2147483648,
+    "rss_bytes": 3221225472,
+    "strict_seconds": 60,
+    "workers": 1
+  },
+  "panel_sha256": "2328be4194789b5faee91836ef8a0d7e3c1ac6d164804713a9ca9c5bc0141733",
+  "population_sha256": "c3b6e150d470fec75a17533c7fe3b920d5403e4c88d862d677da9aef47c14e90",
+  "producer_sha256": "a242546f59add967e7205b14da967b9431aef407f1f4c36940cf3b63486e0fa2",
+  "schema": "rank-triangle.v1",
+  "selection": "At most two per known-jump stratum0..8, SHA256(triangle-v1:id) order, different families where possible; append named11952 control if absent and302 reference. Never refill after arithmetic failures."
+}

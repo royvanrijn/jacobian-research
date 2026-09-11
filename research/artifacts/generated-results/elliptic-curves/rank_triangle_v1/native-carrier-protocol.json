@@ -1,0 +1,15 @@
+{
+  "limits": {
+    "carriers": 8,
+    "seconds": 180,
+    "workers": 1
+  },
+  "purpose": "Balance the302 alternate-fibration atlas with the existing direct degree2 old-R17/11952 fibration map. Preserve the original matched chord atlas.",
+  "sources": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/geometry.json": "161d3fa512f1ef26d078e385d6597fa0ba701fa517d9db112cc10914b902d411",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_geometry.sage": "6125a36c1a88986f208585fc78d390aa337678308f2c56bfeef3c7a5b18fee8b",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_native_carriers.sage": "52e5449a4d739581522836506eb6a27e0337c9fea30dc834c57b02f6b4a94030"
+  }
+}

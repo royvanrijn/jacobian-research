@@ -1,0 +1,192 @@
+{
+  "bindings": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic.json": "c1bf3abb725d043beb04660c962d7a99748d43883c00eb8177dced05cd63bac8",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/302-cached-support/result.json": "68d9fab45194eaaf087239f6ec332210fb371248a54958a5a795b8ecba659e1a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/geometry.json": "161d3fa512f1ef26d078e385d6597fa0ba701fa517d9db112cc10914b902d411",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/native-carriers.json": "3cdc09eb4313f6fa028287cdd00ba8922a80aedd67e3b31c05934bcde6c178d8",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/panel.json": "2328be4194789b5faee91836ef8a0d7e3c1ac6d164804713a9ca9c5bc0141733",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/population.json": "c3b6e150d470fec75a17533c7fe3b920d5403e4c88d862d677da9aef47c14e90",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/protocol.json": "75734c250104c2455bbba7d4865d3a8d2a4810c4d365c889ddf6f452c9f99500",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/strict.json": "bdbcd52a1fb268d4606763e1b5aeaae78be418fdb6add654d127cadec99c9708",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_geometry.sage": "6125a36c1a88986f208585fc78d390aa337678308f2c56bfeef3c7a5b18fee8b",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/verify_rank_triangle.sage": "bfaf571857c00f694525b8a563bdd90bac7425c61728c032170efb6a6bf9ae4f"
+  },
+  "boundary": "Emitted identity and linear-algebra replay; local number-field arithmetic still uses PARI. No independent full Selmer/class computation, exhaustive genus0 search, or basis-invariant grouping claim.",
+  "carrier_identities_checked": 792,
+  "complete_local_arithmetic_rows": 11,
+  "perturbed_carriers_rejected": 792,
+  "rank_upper_bounds_obtained": 0,
+  "shared_cover_target_pairs": [],
+  "status": "PASS_BOUNDED_TRIANGLE_REPLAY",
+  "strict_geometry_incidence": [
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "target": 1
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "target": 2
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 1,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "target": 3
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "target": 4
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "target": 5
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "target": 6
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 1,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "target": 7
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "target": 8
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "target": 9
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "target": 10
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "target": 11
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "target": 12
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "target": 13
+    },
+    {
+      "best_carrier_genus": 1,
+      "generic_adjusted_strict_dimension_of_this_direction": 0,
+      "other_chosen_targets_sharing_any_tested_cover": [],
+      "quotient_local_class": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "target": 14
+    }
+  ],
+  "targets_with_genus_one_carriers": 22
+}

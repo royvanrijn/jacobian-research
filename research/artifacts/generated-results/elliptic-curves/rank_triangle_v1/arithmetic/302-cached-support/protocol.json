@@ -1,0 +1,31 @@
+{
+  "equation_program_sha256": "b21ca27d529fd7efab85a9bda148fc24beddbe81b45af126a695641cfa351346",
+  "point_inputs": false,
+  "prime_hint_source_sha256": "001e12e65bd41bd8ecbfddce42953b41c7365060e6678ac0978a227bb9c1b715",
+  "primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    19,
+    23,
+    29,
+    37,
+    41,
+    73,
+    131,
+    167,
+    7547,
+    632881,
+    966509,
+    18145679437533309132469,
+    767028866604834801397681553,
+    30580600452196904409276223329355584892025407195996968868775951126238056443210297
+  ],
+  "purpose": "The unhinted reference attempt timed out in factorization. Reuse retained equation-support primes, not point-generated class information. No repeated BNF probe.",
+  "rss_bytes": 3221225472,
+  "script_sha256": "bdf7d8f551cf052b1d8ecdf2b9c8113aae1b476bd0acb9b951dfd45f0301b6e0",
+  "wall_seconds": 15
+}

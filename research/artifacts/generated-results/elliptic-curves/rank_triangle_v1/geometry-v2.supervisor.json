@@ -1,0 +1,30 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "research/elliptic-curves/cas/rank_triangle_geometry.sage"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 180
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/geometry-v2.log",
+  "log_sha256": "9d036dae7289c537a14786e3f8e56a9782b2b871a49a1788a5aa6581434e2919",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 272113664,
+  "pid": 2043698,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "21849159",
+  "termination_signal": null,
+  "timeout_seconds": 180,
+  "wall_seconds": 1.6206417579960544,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "canonical-height-accessibility.final-benchmark-gate.v1",
+  "status": "PAUSED_BY_USER_FOR_CLASSGROUP_QUOTIENT_CERTIFICATION",
+  "previous_preflight_status": "NOT_RUN_MISSING_CERTIFIED_HEIGHT_ENCLOSURES",
+  "purpose": "One final presentation-stable finite-atlas accessibility comparison, not rank inference or a new retrospective campaign.",
+  "fibres": ["302", "11952 at t=921/653"],
+  "supplied_subgroups": "M17 and M17+<Ei> for each original exceptional direction Ei; only targets outside the supplied subgroup are measured.",
+  "anchor_definition": "Every nonzero Q in the supplied subgroup with canonical height(Q)<=H; include both signs and nonprimitive multiples.",
+  "height_convention": "lim 4^(-n) h_x(2^n Q), natural logarithms, the larger/BSD convention used by Sage/PARI; never silently mix the half-height convention.",
+  "frozen_height_bounds": [40, 60, 80],
+  "chart_normalization": "The original curve model and exact raw slope (yP+yQ)/(xP-xQ), with the same curve-and-anchor-only N/F normalization as the sealed atlas; subgroup-independent.",
+  "output": "Absolute best log2 parameter height and exact integer H(n:d), winning rational anchor and full word, complete chart count at each H, and target-level comparisons. Baseline drops are secondary.",
+  "metric_transport": "Freeze one metric with rigorously justified error enclosures per original subgroup. Transport by exact integer congruence under each unimodular rebase; do not recompute or round entries. Use exact rational bounds for enumeration pruning and resolve membership at the H boundary by certified height intervals.",
+  "coverage_gate": "A numerical positive-definite Gram matrix or a complete rounded-metric enumeration is insufficient. Require a certified lower bounding form and membership enclosures; unresolved boundary points imply UNKNOWN coverage. Chart evaluation must wait until coverage passes.",
+  "work_comparison": "Report all three complete H-shell endpoints against chart count. Do not interpret a larger baseline drop as a better endpoint or a runtime speedup. If comparing equal-work prefixes, order anchors target-independently, with ties resolved by exact rational coordinates, never by basis words.",
+  "limits": {
+    "total_worker_wall_seconds": 120,
+    "maximum_workers": 1,
+    "rss_bytes": 1073741824,
+    "maximum_enumeration_nodes_total": 200000,
+    "maximum_target_anchor_evaluations_total": 20000,
+    "automatic_budget_extension": false,
+    "automatic_retry": false
+  },
+  "preflight_finding": "The canonical atlas exposes numerical height entries but no certified uniform or entrywise canonical-height error enclosure. Decimal formatting and a symmetry check are not interval certificates. No canonical-height coverage claim is presently justified.",
+  "next_required_input": "A rigorously bounded height metric and a replayable error-control argument. Do not substitute the rounded-metric short-vector certificate.",
+  "mathematical_claim": "UNKNOWN canonical-height-ball comparison; no new chart arithmetic launched. This pending optional benchmark does not block equation-derived rank work."
+}

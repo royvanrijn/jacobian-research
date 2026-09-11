@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_strict.sage", line 82, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_strict.sage", line 51, in main
+    'generic_correction_mod2':list(map(int,C[i,:17])),
+                              ~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'sage.modules.vector_mod2_dense.Vector_mod2_dense'

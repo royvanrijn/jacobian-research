@@ -1,0 +1,211 @@
+{
+  "bk_offset": 6,
+  "bnf_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "bnf_program_sha256": "444b6daa07298e3e15254ea877e161647dd6c3cf83a207a2d5a49f9da8c6109b",
+  "bnf_supervision": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp",
+      "-q",
+      "-f",
+      "-s",
+      "2147483648",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-d355129341b9e6ca3d95/bnf.gp"
+    ],
+    "failure_reason": "strict_wall_timeout",
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 2147483648,
+      "poll_seconds": 0.05,
+      "rss_bytes": 3221225472,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 3
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-d355129341b9e6ca3d95/bnf.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outcome": "strict_wall_timeout",
+    "peak_observed_rss_bytes": 1749565440,
+    "pid": 1966249,
+    "returncode": -15,
+    "rss_limit_bytes": 3221225472,
+    "start_token": "21818996",
+    "termination_signal": 15,
+    "timeout_seconds": 3,
+    "wall_seconds": 4.0520512250077445,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "conductor": "1059498664436054467526723247592264775264784565270246355235356100549529709773677065655737681247413043183971300949724570170",
+  "cubic": [
+    16727303521286106439781031235400580442231478785969248193166858489446400,
+    -124000651163752419696851800020441236029964642560,
+    1,
+    1
+  ],
+  "dyadic_local_dimension": 2,
+  "field_discriminant": "154575433407893564945358463375608531241898758473975468539279439843823862534001103790456677426036844758211518539552040",
+  "field_index": "682222694400",
+  "field_log_sha256": "0549ec5e1f81da83550fd0b87404274f5ddad0a962e8200bd9f153c30bc504ec",
+  "field_program_sha256": "7daa38b33573d7f738a15b011056927645ade47586c17f869c4153a29124c98b",
+  "field_supervision": {
+    "command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp",
+      "-q",
+      "-f",
+      "-s",
+      "2147483648",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-d355129341b9e6ca3d95/field.gp"
+    ],
+    "failure_reason": null,
+    "limits": {
+      "address_space_bytes": null,
+      "cgroup": null,
+      "pari_stack_bytes": 2147483648,
+      "poll_seconds": 0.05,
+      "rss_bytes": 3221225472,
+      "terminate_grace_seconds": 1.0,
+      "wall_seconds": 15
+    },
+    "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-d355129341b9e6ca3d95/field.log",
+    "log_sha256": "0549ec5e1f81da83550fd0b87404274f5ddad0a962e8200bd9f153c30bc504ec",
+    "outcome": "completed",
+    "peak_observed_rss_bytes": 12939264,
+    "pid": 1955647,
+    "returncode": 0,
+    "rss_limit_bytes": 3221225472,
+    "start_token": "21818683",
+    "termination_signal": null,
+    "timeout_seconds": 15,
+    "wall_seconds": 3.0961612300015986,
+    "worker_result": null,
+    "worker_result_sha256": null
+  },
+  "g_upper": null,
+  "grh_g": null,
+  "id": "b-d355129341b9e6ca3d95",
+  "local": [
+    [
+      2,
+      19,
+      1,
+      23,
+      2,
+      0
+    ],
+    [
+      3,
+      12,
+      1,
+      16,
+      3,
+      1
+    ],
+    [
+      5,
+      5,
+      1,
+      9,
+      2,
+      0
+    ],
+    [
+      13,
+      2,
+      1,
+      6,
+      3,
+      1
+    ],
+    [
+      19,
+      2,
+      1,
+      6,
+      3,
+      1
+    ],
+    [
+      37,
+      2,
+      1,
+      6,
+      2,
+      1
+    ],
+    [
+      345019755723359207,
+      1,
+      1,
+      5,
+      2,
+      0
+    ],
+    [
+      11200476990354859448176014748376230387856296549860901765517073463478247377016597528952685394114743,
+      1,
+      1,
+      5,
+      2,
+      0
+    ]
+  ],
+  "local_2_descent_dimensions": {
+    "11200476990354859448176014748376230387856296549860901765517073463478247377016597528952685394114743": 1,
+    "13": 2,
+    "19": 2,
+    "2": 2,
+    "3": 2,
+    "345019755723359207": 1,
+    "37": 1,
+    "5": 1
+  },
+  "minimal_model": [
+    1,
+    0,
+    0,
+    -7750040697734526231053237501277577251872790160,
+    261364117520095413121578613053134069409866856030769503018232163897600
+  ],
+  "rank_upper": null,
+  "real_local_dimension": 1,
+  "root_number": 1,
+  "signature": [
+    3,
+    0
+  ],
+  "split": [
+    [
+      "2",
+      "[[1, 1], [2, 1]]"
+    ],
+    [
+      "3",
+      "[[1, 1], [1, 1], [1, 1]]"
+    ],
+    [
+      "5",
+      "[[2, 1], [1, 1]]"
+    ],
+    [
+      "13",
+      "[[1, 1], [1, 1], [1, 1]]"
+    ],
+    [
+      "19",
+      "[[1, 1], [1, 1], [1, 1]]"
+    ],
+    [
+      "37",
+      "[[1, 1], [1, 2]]"
+    ],
+    [
+      "345019755723359207",
+      "[[2, 1], [1, 1]]"
+    ],
+    [
+      "11200476990354859448176014748376230387856296549860901765517073463478247377016597528952685394114743",
+      "[[2, 1], [1, 1]]"
+    ]
+  ],
+  "status": "PASS_EQUATION_LOCAL_ARITHMETIC"
+}

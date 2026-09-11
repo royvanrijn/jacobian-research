@@ -1,0 +1,36 @@
+{
+  "automatic_budget_extension": false,
+  "automatic_retry": false,
+  "available_memory_at_prepare": 29759037440,
+  "bnf_flag": 0,
+  "bnfcertify_flag": 1,
+  "claim_gate": "Completed sufficient provisional BNF gives only a GRH-conditional rank25 statement. Quotient certification ==1 plus g_comp<=16 plus the exact g+9 local bound and hash-matched independent rank>=25 replay gives unconditional rank25. Resource failures give no new bound. g_comp>16 stops before certification.",
+  "class_2rank_target": 16,
+  "gp_version": "2.17.3",
+  "host": "Roy5080",
+  "input_sha256": {
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp": "5336582ba45db99b89f8ebc42da5a4925fd0d6546646cf3585729c9eb664777a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/equation.json": "2c20b32f31e56328364d2b4b31eb33f4a8cf5938a89109bd5c89a8d0d40f97f4",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/field.json": "d907020c5e1fb2193bde05e42e4d528d9443a7b360b4c83da2c8e6739921c9aa",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/field.log": "974dca85ae609832e9279fd484efc4751a30e4ce8bac8440c2622c34c113573a",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/11952-rank-bound-audit-v1/nf.bin": "0e588adaf365dfe557540101cca1728bf767e553f54e34b89dfd39cea958f985",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-7bb187bc9254e81c6283/batch-002/search-00/terminal.json": "3a50e6d7c92ebc6ab6c0d74bf08079c8dc9dd93906ed71cb62760cfaa3fab676",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-7bb187bc9254e81c6283/batch-002/search-00/verified.json": "4d0e37bf1a6811bf80e2e5032f8c01da2b428a9fdd3ac57781663c0eb239837d",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_11952_class_quotient.py": "d0e56975bff44fe49990bdbb02320e763c2e2bc854232761239a5034bd13b70d"
+  },
+  "known_points_passed_to_arithmetic": false,
+  "maximum_workers": 1,
+  "pari_stack_bytes": 8589934592,
+  "point_search": false,
+  "program_sha256": {
+    "provisional": "a8b53bab31cfe4c7bceb4c6648a204058f35003ea2ef4e9a875f92bd8b534941",
+    "quotient": "057a95233b9a7cd51e849f95a6dcf8b0c96bca7747f53b2fadd4681030a0155e"
+  },
+  "rss_bytes": 12884901888,
+  "schema": "11952.classgroup-quotient-lane.v1",
+  "wall_seconds": {
+    "provisional": 600,
+    "quotient": 300
+  }
+}

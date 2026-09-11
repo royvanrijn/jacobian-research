@@ -1,14 +1,32 @@
 # Broad rank search: runnable, finite and token-free between batches
 
-**Operational status, 2026-09-11:** both real backends passed commissioning, and
-`artifacts/local/elliptic-curves/broad-rank-v1` is running with the default eight
-presentations and six workers. It began with four workers; the operator authorized
-two more after a host capacity check. The controller drained all active jobs
-before resuming through a retained scheduling adapter. Its
+**Completed, 2026-09-12 at00:20 Europe/Amsterdam:**
+`artifacts/local/elliptic-curves/broad-rank-v1` finished all2,080 initial fibres
+and2,012 continuation batches, totaling398,866 point-search calls. All six workers
+have exited and no fibre remains eligible under the frozen policy. There are no
+unknown or censored endpoints. The
+[completion review](../../artifacts/local/elliptic-curves/broad-rank-v1/COMPLETION_REVIEW.json)
+checks frozen inputs, completion/queue binding, all2,080 final state/result/packet
+and replay-receipt bindings, retained proof statuses, and scheduling exhaustion;
+it does not rerun arithmetic or rehash every raw search transcript.
+
+Final certified lower bounds are1,241x17,333x18,209x19,142x20,79x21,46x22,
+25x23,4x24 and1x25. Continuation improves157 fibres, adding204 to the sum of
+their lower bounds. The best is `11952` at `921/653`, lower bound25 after393
+total calls; its last gain occurred at call5. Thirty fibres finish above22,
+compared with25 at the initial endpoint. No exact rank or worldwide novelty
+follows from these bounded results. The post-discovery
+[catalogue assessment](../../artifacts/local/elliptic-curves/broad-rank-v1/assessments/interest-20260911T201716Z.json)
+found no rational-isomorphism matches for those30 curves in the retained415-curve
+inventory or630-curve ICARM snapshot.
+
+Both real backends passed commissioning. The run began with four workers; the
+operator authorized two more after a host capacity check. The controller drained
+all active jobs before resuming through a retained scheduling adapter. Its
 [capacity receipt](../../artifacts/local/elliptic-curves/broad-rank-v1/capacity.json)
 points to the frozen adapter and policy; the original plan, manifest and per-fibre
-budgets are unchanged. Its [live report](../../artifacts/local/elliptic-curves/broad-rank-v1/REPORT.json)
-records progress; the campaign is not a completed search result. The older
+budgets are unchanged. Its [final report](../../artifacts/local/elliptic-curves/broad-rank-v1/REPORT.json)
+retains per-parent and per-arm results. The older
 two-parent MW17 campaign was never dispatched and is stopped, with its inputs
 and smoke evidence preserved. Mathematical status is unchanged. Use a new
 directory when preparing another campaign.

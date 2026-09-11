@@ -3,6 +3,78 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912",
+      "kind": "example",
+      "state": "proved",
+      "title": "Both fixed exceptional rosters have genus-one bisections; frozen equation panel and exact strict-ideal dictionary",
+      "scope": "For the fixed accessibility representatives, all14 exceptional points of302 and all8 of11952 at921/653 have explicit degree-two genus-one carriers from matched alternate fibrations. Generic rank17 and certified independence exclude degree-one ancestry; minimum genus remains UNKNOWN. All792 emitted carrier identities replay, with792 altered-carrier negative controls. The fixed-base quadratic covers are pairwise distinct within each fibre; no shared tested cover joins two chosen targets. This is not an exhaustive rational-bisection census, arbitrary-base equivalence classification, or exceptional-basis-invariant grouping. A frozen lower-bound-stratified panel of17 of2080 search cases plus302 gives10 complete search-case local Brumer-Kramer offsets5..9 and reference302 offset12 using separately recorded cached equation-support primes. Seven selected search cases remain UNKNOWN, with no replacement. All ten3-second provisional BNF probes are unresolved: no independent class-group, Selmer or rank upper bound is obtained. Exact Kummer/local replay gives W31,G17,V10, local quotient4; the ten strict words are expressed in the same generic/exceptional basis and linked to the certified half ideals. Only E3 and E7 individually admit a generic strict correction in this chosen complement, but every target has genus-one ancestry. The known strict kernel is not asserted to be the full Selmer kernel. These bounded results do not yet explain the rank contrast or improve either rank lower bound. PARI remains shared infrastructure for local field arithmetic and existing ideal certificates.",
+      "canonical_source": "elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md",
+      "dependencies": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
+        "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
+        "EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911"
+      ],
+      "checker": "elliptic-curves/cas/verify_rank_triangle.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:bfaf571857c00f694525b8a563bdd90bac7425c61728c032170efb6a6bf9ae4f",
+      "software_lock": [
+        "elliptic-curves/cas/rank_triangle_geometry.sage",
+        "elliptic-curves/cas/rank_triangle_native_carriers.sage",
+        "elliptic-curves/cas/rank_triangle_panel.py",
+        "elliptic-curves/cas/rank_triangle_reference.py",
+        "elliptic-curves/cas/rank_triangle_strict.sage",
+        "elliptic-curves/cas/report_rank_triangle.py",
+        "artifacts/generated-results/elliptic-curves/rank_triangle_v1/manifest.json",
+        "artifacts/generated-results/elliptic-curves/rank_triangle_v1/verified.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": ["OP-EC-RANK-JUMP-MECHANISM-20260910"],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911",
+      "kind": "example",
+      "state": "proved",
+      "title": "Finite accessibility has diminishing returns; the independent 11952 rank target is cubic class 2-rank at most16",
+      "scope": "In the original signed-unit/pair atlas, all115712 held-out cells reduce exactly to singleton max-weight rules. Curve302 has five rules E1->E10,E14; E2->E7,E10; E6->E12, and11952 has E4->E2. Every two-exceptional support is dominated by an empty or singleton support. The improvement functions are monotone submodular and neither graph has a directed path of length two. This does not explain13-of14 point recovery or intrinsic rank amplification. For11952 at921/653, equation-only PARI maximal-order and local calculations, with exact Python model/discriminant/offset checks, give no rational2-torsion and the Brumer-Kramer criterion rank<=dimSel2<=g+9, where g is the ordinary cubic class-group2-rank. Thus an independently certified g<=16 would match the existing rank-at-least25 certificate. The one bounded BNF attempt overflowed its512MB stack before invariants: no conditional or unconditional class-group/rank upper bound was obtained. The optional120-second canonical-height-ball benchmark is not run because certified height-error enclosures are absent. Original point and four-event evidence is preserved. The checker reuses the sealed independent slope replay but is not an independently implemented full descent.",
+      "canonical_source": "elliptic-curves/notes/ACCESSIBILITY_CLOSURE_AND_11952_RANK_BOUND_2026-09-11.md",
+      "dependencies": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT"
+      ],
+      "checker": "elliptic-curves/cas/verify_accessibility_rank_pivot.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b6ec433832369337535a7ea9fc3ff6013ac8edd5826bb237bbda06ddce789279",
+      "software_lock": [
+        "elliptic-curves/cas/audit_11952_rank_bound.py",
+        "elliptic-curves/cas/verify_accessibility_rank_pivot.py",
+        "artifacts/generated-results/elliptic-curves/accessibility_rank_pivot_v1/verified.json",
+        "artifacts/generated-results/elliptic-curves/accessibility_rank_pivot_v1/height_benchmark_gate.json",
+        "artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/field.json",
+        "artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/class_group.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-CURVE302-SHORT-VECTOR-CORE-20260911",
       "kind": "example",
       "state": "proved",
@@ -54884,16 +54956,18 @@
       "id": "OP-EC-RANK-JUMP-MECHANISM-20260910",
       "kind": "open_problem",
       "state": "open",
-      "title": "Explain the exceptional302 rank jump through exact descent, overlapping fibrations, and shared low-genus carriers",
-      "scope": "User-authorized theorem-directed programme: explain the fourteen-dimensional302 quotient and exact descent against ten matched controls; understand class1/class6 transports with compatible integral markings; find shared quadratic or genus0/1 carriers carrying two independent twist sections; prove or precisely delimit rationality propagation beyond the finite13-of14 recovery. The strict10 ideal image is disjoint from inherited8; the quotient contributes12–14 ideal dimensions and both historical seed norm equations are obstructed. Seven controls have exact local anatomy; three support gaps and full control ideal/unit computations remain open. The retained4100 common-core witness is integrally incompatible, while the actual13104-core class1 realization transports all14 points to independent eighteenth directions. Its smooth B-fibres have an injective Veronese branch map; the14 native twists each have a primitive height8 section but no second section is known. Fibre-preserving automorphism words cannot amplify a quotient seed. Full class/Selmer bounds, prospective predictors, other compatible overlaps, rank-at-least2 shared twists and a genuine propagation theorem remain UNKNOWN. Next priority is a second independent section on a fixed certified twist or a different low-genus carrier construction with compatible integral geometry. Narrowed by EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910, EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910, EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910 and EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910. Compute-heavy work remains finitely capped, checkpointed and exactly replayable; bounded misses are not exclusions.",
-      "canonical_source": "elliptic-curves/notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md",
+      "title": "Connect exceptional multisection ancestry to independent rank arithmetic and strict descent",
+      "scope": "User-directed three-lane investigation: low-degree multisection ancestry of the fixed302/11952 exceptional rosters, equation-only arithmetic on a frozen lower-bound-stratified wide-search panel, and the exact known Kummer/strict/half-ideal dictionary in the same basis. The first bounded comparison constructs degree-two genus-one carriers through all14 and8 targets, respectively, with no shared tested covers between targets. Minimum genus and rich common-cover families remain UNKNOWN; chosen target lists are not invariant under exceptional rebasing. The18-fibre panel completes local arithmetic for10 search fibres plus302; seven search cases and every class-group upper bound remain UNKNOWN. The strict V10 and its ideal correspondence are exact for the known W31, not asserted to exhaust full Selmer. Preserve the sparse one-step accessibility results and common integral core without calling them a rank-amplification mechanism. The11952 rank criterion remains rank<=dimSel2<=g+9, so independently certified g<=16 would prove rank25; the earlier8GiB BNF600-second timeout and short panel probes produced no invariants or quotient certificate. Known-point-derived class lower bounds must not be repackaged as independent upper evidence. Next discriminating gates are genus-zero incidence or multiple independent sections on one common quadratic cover, completion of equation support, and certified class-group/Selmer upper bounds. No larger BNF run, multisection census, or point-search campaign is scheduled. The canonical-height-ball benchmark remains paused. All extensions require frozen finite budgets, checkpoints and certificate plans; bounded misses and unresolved upper bounds do not determine additional rank. Narrowed by EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912, EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911, EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910, EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910, EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910, EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910.",
+      "canonical_source": "elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md",
       "dependencies": [
         "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
         "EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910",
         "EC-CURVE302-SEED-UNIVERSALITY-PANEL-20260909",
         "EC-X1092-CLASS1-RATIONAL-MW17-20260910",
         "EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910",
-        "EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910"
+        "EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910",
+        "EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911",
+        "EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912"
       ],
       "checker": null,
       "proof_type": "not-applicable",

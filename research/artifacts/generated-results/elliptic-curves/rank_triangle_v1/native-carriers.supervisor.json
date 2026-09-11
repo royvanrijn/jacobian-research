@@ -1,0 +1,30 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "research/elliptic-curves/cas/rank_triangle_native_carriers.sage"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 180
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/native-carriers.log",
+  "log_sha256": "4c24dd0129be0ffd3fbb7e5d27c65c72ef68171e3b77cc049e0bf2f18a38fa1c",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 265756672,
+  "pid": 2245663,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "21878984",
+  "termination_signal": null,
+  "timeout_seconds": 180,
+  "wall_seconds": 0.6981287010130472,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

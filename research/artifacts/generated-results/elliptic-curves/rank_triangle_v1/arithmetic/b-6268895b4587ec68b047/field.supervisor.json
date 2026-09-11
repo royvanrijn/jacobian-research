@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp",
+    "-q",
+    "-f",
+    "-s",
+    "2147483648",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-6268895b4587ec68b047/field.gp"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 2147483648,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 15
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/arithmetic/b-6268895b4587ec68b047/field.log",
+  "log_sha256": "e12df5f7e5cdd1601c01b6786a64cc65da2aefb3ba6fa243479929514ca64a1b",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 29986816,
+  "pid": 2029397,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "21828607",
+  "termination_signal": null,
+  "timeout_seconds": 15,
+  "wall_seconds": 0.13020495200180449,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

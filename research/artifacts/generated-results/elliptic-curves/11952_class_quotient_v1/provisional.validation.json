@@ -1,0 +1,17 @@
+{
+  "bnf_sha256": null,
+  "grh_conditional_exact_rank": null,
+  "grh_conditional_rank_upper": null,
+  "independence": "Separate output validation, not independent BNF arithmetic; exact rank depends on the pinned local criterion and independent point replay.",
+  "log_sha256": "c8d1ca0cbeb3412b8d33fb250bbd9289bcbd5d81f48bab5066dbb368cbc08c6f",
+  "original_result_sha256": "9ad97455c2dbe10c4d823278b6630d0aa532d1b5f1bd83f67e94031fc6474d1f",
+  "original_supervision_outcome": "strict_wall_timeout",
+  "protocol_sha256": "8c41b9bde0e3532d00abe4c3b253bff06b2ed9350c664e42f9f977bd8ee410e2",
+  "provisional_class_2rank": null,
+  "stage": "provisional",
+  "status": "RESOURCE_LIMIT",
+  "unconditional_class_2rank_upper": null,
+  "unconditional_exact_rank": null,
+  "unconditional_rank_upper": null,
+  "validator_sha256": "3d00211e1d16bbc2cab6cbcb528ae628a08779629ad229753ce34920257d3c2c"
+}

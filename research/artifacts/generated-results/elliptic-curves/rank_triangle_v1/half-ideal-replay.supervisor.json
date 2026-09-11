@@ -1,0 +1,31 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "research/elliptic-curves/cas/verify_curve302_descent_anatomy.sage",
+    "--negative-controls"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 120
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_triangle_v1/half-ideal-replay.log",
+  "log_sha256": "a437571e5ec79c09dd5948374a0b65749af667363212c36b236b7a91860f4d02",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 256323584,
+  "pid": 2275193,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "21906276",
+  "termination_signal": null,
+  "timeout_seconds": 120,
+  "wall_seconds": 1.0513300700113177,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

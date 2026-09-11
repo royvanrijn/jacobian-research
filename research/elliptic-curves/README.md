@@ -1,8 +1,19 @@
 # Elliptic curves over `Q` — ACTIVE
 
 The [eight-presentation broad rank campaign](notes/BROAD_RANK_SEARCH_2026-09-10.md)
-passed both backend smokes and is launched with four workers. Its frozen plans
-and live reports remain under local artifacts.
+completed all2,080 initial fibres and2,012 continuation batches, with398,866
+point calls and no unknown or censored endpoints. Its best certified lower bound
+is25;30 fibres finish above22. All workers have exited; frozen evidence is retained.
+
+The [ancestry / equation-only panel / strict-descent comparison](notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
+now has 792 replayed carriers: all fourteen 302 targets and eight 11952 targets
+have degree-two genus-one ancestry, with no shared tested cover between targets.
+Minimum genus remains unknown. The frozen 18-fibre panel has eleven complete
+local-arithmetic rows, but no class-group upper bounds. The ten strict classes
+are expressed exactly in the same exceptional basis and linked to their ideals.
+This does not yet explain the rank contrast. The
+[accessibility closure and 11952 rank criterion](notes/ACCESSIBILITY_CLOSURE_AND_11952_RANK_BOUND_2026-09-11.md)
+remain valid; rank is still only at least25, and the height-ball benchmark is paused.
 
 The A1/MW16 parent foundry is preserved as a completed bounded construction
 lane: its first new X1092 parent gives a certified 16→18 commissioning

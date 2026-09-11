@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp",
+    "-q",
+    "-f",
+    "-s",
+    "512000000",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/field.gp"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1610612736,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 30
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/field.log",
+  "log_sha256": "974dca85ae609832e9279fd484efc4751a30e4ce8bac8440c2622c34c113573a",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 45457408,
+  "pid": 143259,
+  "returncode": 0,
+  "rss_limit_bytes": 1610612736,
+  "start_token": "21494519",
+  "termination_signal": null,
+  "timeout_seconds": 30,
+  "wall_seconds": 0.1282042340026237,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

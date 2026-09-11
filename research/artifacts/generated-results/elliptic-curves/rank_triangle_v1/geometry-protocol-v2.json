@@ -1,0 +1,15 @@
+{
+  "atlas": "vertical x; constant slope through +/- each of17 generic sections; plus302 class1 pencil",
+  "base_reparametrizations_quotiented_out": false,
+  "global_minimum_genus": "UNKNOWN",
+  "selection": "Fixed representatives from the prior accessibility input, not the different historical seed-universality basis.",
+  "sha256": {
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/rank_accessibility_subsets_v1/inputs.json.gz": "a3740b2aee5f144b76d246cb58c8d7fd20998d9f72a5791e4be30f898d870ed9",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/x1092_class1_realization_equation_v1.json": "103a1e9cdcfb77dd89d9fd0d54a0db25e2bae2fc93f7423dc023425f3fa8e1cf",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/x1092_class1_realization_rr_v1.json": "fd98185a2c1a64f84ccfc6c4c8680d49d4d49dcfd15567044f9d3e53e635d180",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/x1092_class1_realization_trace_v1.json": "112100dd1d79687db92153953f237c526fcde910e54f5c17c7bf47ac13a8c21e",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-inputs/parents/11952.json": "fc2501f81ee46e2a5c72a87b3b001a16f1bf87ddb6aba54ed49111f11643a637",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/rank_triangle_geometry.sage": "6125a36c1a88986f208585fc78d390aa337678308f2c56bfeef3c7a5b18fee8b"
+  }
+}

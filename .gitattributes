@@ -10,3 +10,4 @@ research/artifacts/generated-results/elliptic-curves/small_conductor_small_base_
 research/artifacts/generated-results/elliptic-curves/small_conductor_class_target_evidence_v1.zip filter=lfs diff=lfs merge=lfs -text
 research/artifacts/generated-results/elliptic-curves/parent-foundry-v3/manifest.json filter=lfs diff=lfs merge=lfs -text
 research/artifacts/generated-results/elliptic-curves/parent-foundry-v4/manifest.json filter=lfs diff=lfs merge=lfs -text
+research/artifacts/generated-results/elliptic-curves/rank_accessibility_atlas_curve302_11952_v1.json.gz filter=lfs diff=lfs merge=lfs -text

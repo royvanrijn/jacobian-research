@@ -1,0 +1,4289 @@
+{
+  "four_event_group_and_exact_height_identities_checked": 4,
+  "independence": "Python Fraction elliptic group law and slope checks; direct sparse support envelopes for every subset cell; complete edge/control survival counts.",
+  "protocol_sha256": "8021ef15491fd34d37a860b6a6a8f61a6a829d28c8292d0c24daeda91869cc52",
+  "results": [
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-original.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "68591348734861564245",
+          "initial_kappa_bits": 65.89466042700742,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "198842432535553677",
+          "initial_kappa_bits": 57.46440327077179,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "604811216881521012792",
+          "initial_kappa_bits": 69.03504679390227,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "50859971845335173550",
+          "initial_kappa_bits": 65.46316446625231,
+          "offers": [],
+          "target": 8
+        },
+        {
+          "initial_H": "157590151418585595039054",
+          "initial_kappa_bits": 77.06052355893246,
+          "offers": [
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 17.805600128551866,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.8494812488334134,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "544082058882174298803",
+          "initial_kappa_bits": 68.88238615402874,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "208411842499194236739396639",
+          "initial_kappa_bits": 87.42956772467556,
+          "offers": [
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 6.7728428115049155,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "134976449914895587469",
+          "initial_kappa_bits": 66.87126961202502,
+          "offers": [],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 42308,
+      "sha256": "fade1e317d5ae39dc7839e9b961f396ca3a09259f30a55c82db857c3e04ab5d6"
+    },
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-generic_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "2523702918808977587565",
+          "initial_kappa_bits": 71.09603208410145,
+          "offers": [
+            {
+              "H": "90533660734898504211",
+              "anchor_label": "-E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 4.800943990190504,
+              "parameter": {
+                "d": "553",
+                "n": "90533660734898504211"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            }
+          ],
+          "target": 2
+        },
+        {
+          "initial_H": "3938535585410309518011",
+          "initial_kappa_bits": 71.73814930343624,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1299566616342946705827",
+          "initial_kappa_bits": 70.13852058150769,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "349820990300125335783450",
+          "initial_kappa_bits": 78.21096304026054,
+          "offers": [
+            {
+              "H": "12103831353295063802850",
+              "anchor_label": "-M8+E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 4.853081161480716,
+              "parameter": {
+                "d": "16367",
+                "n": "12103831353295063802850"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 8
+        },
+        {
+          "initial_H": "220870724903046036773478",
+          "initial_kappa_bits": 77.54754839315288,
+          "offers": [
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 18.292624962772287,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 4.336506083053834,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "978666945357603794101485",
+          "initial_kappa_bits": 79.69516415558702,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "556397842854298723938364719213",
+          "initial_kappa_bits": 98.81203157831848,
+          "offers": [
+            {
+              "H": "480158732083897129771402718469",
+              "anchor_label": "-E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 0.21260541213852946,
+              "parameter": {
+                "d": "2174529729859",
+                "n": "-480158732083897129771402718469"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 18.155306665147833,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            },
+            {
+              "H": "41157994253113140286371193870",
+              "anchor_label": "E10",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 512,
+              "improvement_over_initial_bits": 3.756872244186866,
+              "parameter": {
+                "d": "35228592223",
+                "n": "-41157994253113140286371193870"
+              },
+              "required_exceptional_indices": [
+                9
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "5413364694019635204123801",
+          "initial_kappa_bits": 82.1627998618263,
+          "offers": [
+            {
+              "H": "3155701536380997942879",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 10.744349106281675,
+              "parameter": {
+                "d": "16717",
+                "n": "-3155701536380997942879"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "1369353160859297484043175",
+              "anchor_label": "-E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 1.9830310139649328,
+              "parameter": {
+                "d": "1844137",
+                "n": "-1369353160859297484043175"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 25620,
+      "sha256": "a68a0330c11209f7ca4dcb6777048c7ba3dedb0bc06be6a1660e6ef19c331c24"
+    },
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-generic_minus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "2523702918808977587565",
+          "initial_kappa_bits": 71.09603208410145,
+          "offers": [
+            {
+              "H": "90533660734898504211",
+              "anchor_label": "-E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 4.800943990190504,
+              "parameter": {
+                "d": "553",
+                "n": "90533660734898504211"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            }
+          ],
+          "target": 2
+        },
+        {
+          "initial_H": "3938535585410309518011",
+          "initial_kappa_bits": 71.73814930343624,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1299566616342946705827",
+          "initial_kappa_bits": 70.13852058150769,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "3875961673765993517070",
+          "initial_kappa_bits": 71.71504429781972,
+          "offers": [],
+          "target": 8
+        },
+        {
+          "initial_H": "220870724903046036773478",
+          "initial_kappa_bits": 77.54754839315288,
+          "offers": [
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 18.292624962772287,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 4.336506083053834,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "978666945357603794101485",
+          "initial_kappa_bits": 79.69516415558702,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "235053715305373800939561431780",
+          "initial_kappa_bits": 97.56890523596768,
+          "offers": [
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 16.912180322797028,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            },
+            {
+              "H": "41157994253113140286371193870",
+              "anchor_label": "E10",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 512,
+              "improvement_over_initial_bits": 2.51374590183606,
+              "parameter": {
+                "d": "35228592223",
+                "n": "-41157994253113140286371193870"
+              },
+              "required_exceptional_indices": [
+                9
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "5413364694019635204123801",
+          "initial_kappa_bits": 82.1627998618263,
+          "offers": [
+            {
+              "H": "3155701536380997942879",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 10.744349106281675,
+              "parameter": {
+                "d": "16717",
+                "n": "-3155701536380997942879"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "1369353160859297484043175",
+              "anchor_label": "-E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 1.9830310139649328,
+              "parameter": {
+                "d": "1844137",
+                "n": "-1369353160859297484043175"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 25620,
+      "sha256": "f39d43b88edc4dc87f0c19a36d154455f199842c59c591f44c0ea1e70f13bb1d"
+    },
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-exceptional_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "68591348734861564245",
+          "initial_kappa_bits": 65.89466042700742,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "198842432535553677",
+          "initial_kappa_bits": 57.46440327077179,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "604811216881521012792",
+          "initial_kappa_bits": 69.03504679390227,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "50859971845335173550",
+          "initial_kappa_bits": 65.46316446625231,
+          "offers": [],
+          "target": 8
+        },
+        {
+          "initial_H": "157590151418585595039054",
+          "initial_kappa_bits": 77.06052355893246,
+          "offers": [
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.8494812488334134,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 17.805600128551866,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "544082058882174298803",
+          "initial_kappa_bits": 68.88238615402874,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "208411842499194236739396639",
+          "initial_kappa_bits": 87.42956772467556,
+          "offers": [
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 6.7728428115049155,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "134976449914895587469",
+          "initial_kappa_bits": 66.87126961202502,
+          "offers": [],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 8736,
+      "sha256": "05882fac1832b98cf6e7dcef7089b9ba1c4382ef8e80147017ea572e8ad233ac"
+    },
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-exceptional_minus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "68591348734861564245",
+          "initial_kappa_bits": 65.89466042700742,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "198842432535553677",
+          "initial_kappa_bits": 57.46440327077179,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "604811216881521012792",
+          "initial_kappa_bits": 69.03504679390227,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "50859971845335173550",
+          "initial_kappa_bits": 65.46316446625231,
+          "offers": [],
+          "target": 8
+        },
+        {
+          "initial_H": "157590151418585595039054",
+          "initial_kappa_bits": 77.06052355893246,
+          "offers": [
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.8494812488334134,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 17.805600128551866,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "544082058882174298803",
+          "initial_kappa_bits": 68.88238615402874,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "208411842499194236739396639",
+          "initial_kappa_bits": 87.42956772467556,
+          "offers": [
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 6.7728428115049155,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "134976449914895587469",
+          "initial_kappa_bits": 66.87126961202502,
+          "offers": [],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 8736,
+      "sha256": "025b5ea3ced9b162ebc579075f2b03859f1698315c19d6194da36a3ff7748fa0"
+    },
+    {
+      "cells_checked": 114688,
+      "edges_checked": 745472,
+      "file": "302-both_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "190588687235314413",
+          "initial_kappa_bits": 57.40324010088559,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "324822565808878014",
+          "initial_kappa_bits": 58.1724294748253,
+          "offers": [],
+          "target": 1
+        },
+        {
+          "initial_H": "2523702918808977587565",
+          "initial_kappa_bits": 71.09603208410145,
+          "offers": [
+            {
+              "H": "90533660734898504211",
+              "anchor_label": "-E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 96,
+              "improvement_over_initial_bits": 4.800943990190504,
+              "parameter": {
+                "d": "553",
+                "n": "90533660734898504211"
+              },
+              "required_exceptional_indices": [
+                5,
+                6
+              ]
+            }
+          ],
+          "target": 2
+        },
+        {
+          "initial_H": "3938535585410309518011",
+          "initial_kappa_bits": 71.73814930343624,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1299566616342946705827",
+          "initial_kappa_bits": 70.13852058150769,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "32693282708205904955",
+          "initial_kappa_bits": 64.82562804717445,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "2908084564463501949",
+          "initial_kappa_bits": 61.33477493010427,
+          "offers": [
+            {
+              "H": "336004124904968157",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.113518372873962,
+              "parameter": {
+                "d": "1",
+                "n": "-336004124904968157"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            }
+          ],
+          "target": 6
+        },
+        {
+          "initial_H": "267336361081438443",
+          "initial_kappa_bits": 57.89143368854211,
+          "offers": [],
+          "target": 7
+        },
+        {
+          "initial_H": "349820990300125335783450",
+          "initial_kappa_bits": 78.21096304026054,
+          "offers": [
+            {
+              "H": "12103831353295063802850",
+              "anchor_label": "-M8+E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 4.853081161480716,
+              "parameter": {
+                "d": "16367",
+                "n": "12103831353295063802850"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 8
+        },
+        {
+          "initial_H": "220870724903046036773478",
+          "initial_kappa_bits": 77.54754839315288,
+          "offers": [
+            {
+              "H": "10932506624223735056874",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 4.336506083053834,
+              "parameter": {
+                "d": "36707",
+                "n": "-10932506624223735056874"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "687874710936509862",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 18.292624962772287,
+              "parameter": {
+                "d": "11",
+                "n": "687874710936509862"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 9
+        },
+        {
+          "initial_H": "978666945357603794101485",
+          "initial_kappa_bits": 79.69516415558702,
+          "offers": [],
+          "target": 10
+        },
+        {
+          "initial_H": "556397842854298723938364719213",
+          "initial_kappa_bits": 98.81203157831848,
+          "offers": [
+            {
+              "H": "480158732083897129771402718469",
+              "anchor_label": "-E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 12,
+              "improvement_over_initial_bits": 0.21260541213852946,
+              "parameter": {
+                "d": "2174529729859",
+                "n": "-480158732083897129771402718469"
+              },
+              "required_exceptional_indices": [
+                2,
+                3
+              ]
+            },
+            {
+              "H": "1905871215310146068606045",
+              "anchor_label": "M17+E6",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 32,
+              "improvement_over_initial_bits": 18.155306665147833,
+              "parameter": {
+                "d": "468136633",
+                "n": "1905871215310146068606045"
+              },
+              "required_exceptional_indices": [
+                5
+              ]
+            },
+            {
+              "H": "41157994253113140286371193870",
+              "anchor_label": "E10",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 512,
+              "improvement_over_initial_bits": 3.756872244186866,
+              "parameter": {
+                "d": "35228592223",
+                "n": "-41157994253113140286371193870"
+              },
+              "required_exceptional_indices": [
+                9
+              ]
+            }
+          ],
+          "target": 11
+        },
+        {
+          "initial_H": "5413364694019635204123801",
+          "initial_kappa_bits": 82.1627998618263,
+          "offers": [
+            {
+              "H": "3155701536380997942879",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 10.744349106281675,
+              "parameter": {
+                "d": "16717",
+                "n": "-3155701536380997942879"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "H": "1369353160859297484043175",
+              "anchor_label": "-E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 1.9830310139649328,
+              "parameter": {
+                "d": "1844137",
+                "n": "-1369353160859297484043175"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 12
+        },
+        {
+          "initial_H": "179321568804126109094452287",
+          "initial_kappa_bits": 87.21267949312092,
+          "offers": [
+            {
+              "H": "12858186721943925340161",
+              "anchor_label": "-E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 13.767574199302203,
+              "parameter": {
+                "d": "92597",
+                "n": "-12858186721943925340161"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            }
+          ],
+          "target": 13
+        }
+      ],
+      "new_rational_slopes_checked": 2688,
+      "sha256": "cfb8ba4a83b170dda28be1c78b8ab80f60b5003c9c1ef11fde9cfafa19a9f567"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-original.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "80240328813579530793",
+          "initial_kappa_bits": 66.12096132078342,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "8997052562636928516396",
+          "initial_kappa_bits": 72.92994244410906,
+          "offers": [
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 8,
+              "improvement_over_initial_bits": 1.6546084059555426,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "1116057089489813",
+          "initial_kappa_bits": 49.98733225031379,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "262355336481271348",
+          "initial_kappa_bits": 57.8642997487368,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1932304137675978085869877512",
+          "initial_kappa_bits": 90.64238074898135,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 13808,
+      "sha256": "dc4209a1dd592a60cb341a958373f10bf4bf77b3b076722e6fc1f54690cd1e44"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-generic_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "82336285071691883606191",
+          "initial_kappa_bits": 76.12394644473649,
+          "offers": [
+            {
+              "H": "1780194812281673541912",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 5.5314213236440395,
+              "parameter": {
+                "d": "2497547759",
+                "n": "-1780194812281673541912"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 8,
+              "improvement_over_initial_bits": 6.386959092424064,
+              "parameter": {
+                "d": "523696817",
+                "n": "-983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                3
+              ]
+            }
+          ],
+          "target": 0
+        },
+        {
+          "initial_H": "243797609394793032343791336",
+          "initial_kappa_bits": 87.65581444647013,
+          "offers": [
+            {
+              "H": "223223620881002931439416",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 10.092978566979639,
+              "parameter": {
+                "d": "65290657537",
+                "n": "-223223620881002931439416"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "298545235298102742291376",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 9.673518720189236,
+              "parameter": {
+                "d": "195400824693",
+                "n": "298545235298102742291376"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 8,
+              "improvement_over_initial_bits": 16.380480408316615,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "5654241340610269221",
+          "initial_kappa_bits": 62.29403917116828,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "25400412143404862536770",
+          "initial_kappa_bits": 74.4272699936699,
+          "offers": [
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 4.69028264135747,
+              "parameter": {
+                "d": "523696817",
+                "n": "983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.151935955516379,
+              "parameter": {
+                "d": "10368126013",
+                "n": "2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "14269317933391127388",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 10.797719814484878,
+              "parameter": {
+                "d": "2066359",
+                "n": "14269317933391127388"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            }
+          ],
+          "target": 3
+        },
+        {
+          "initial_H": "1544625155715674181929156269476",
+          "initial_kappa_bits": 100.28509961898817,
+          "offers": [
+            {
+              "H": "22062708924826883915576186726",
+              "anchor_label": "E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 6.129503021961739,
+              "parameter": {
+                "d": "8922124841452913",
+                "n": "22062708924826883915576186726"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 8752,
+      "sha256": "77d8f2cb010687042dc4677427dc78b534353d3a1a55a769896810878d164f34"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-generic_minus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "82336285071691883606191",
+          "initial_kappa_bits": 76.12394644473649,
+          "offers": [
+            {
+              "H": "1780194812281673541912",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 5.5314213236440395,
+              "parameter": {
+                "d": "2497547759",
+                "n": "-1780194812281673541912"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 8,
+              "improvement_over_initial_bits": 6.386959092424064,
+              "parameter": {
+                "d": "523696817",
+                "n": "-983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                3
+              ]
+            }
+          ],
+          "target": 0
+        },
+        {
+          "initial_H": "12492221564504963114724762",
+          "initial_kappa_bits": 83.36923243480582,
+          "offers": [
+            {
+              "H": "223223620881002931439416",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 5.806396555315331,
+              "parameter": {
+                "d": "65290657537",
+                "n": "-223223620881002931439416"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "298545235298102742291376",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 5.386936708524928,
+              "parameter": {
+                "d": "195400824693",
+                "n": "298545235298102742291376"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 8,
+              "improvement_over_initial_bits": 12.093898396652307,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "5654241340610269221",
+          "initial_kappa_bits": 62.29403917116828,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "3896658117985495275792",
+          "initial_kappa_bits": 71.72272735161818,
+          "offers": [
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 1,
+              "improvement_over_initial_bits": 1.9857399993057498,
+              "parameter": {
+                "d": "523696817",
+                "n": "983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                0
+              ]
+            },
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 0.4473933134646586,
+              "parameter": {
+                "d": "10368126013",
+                "n": "2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "14269317933391127388",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 8.093177172433158,
+              "parameter": {
+                "d": "2066359",
+                "n": "14269317933391127388"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            }
+          ],
+          "target": 3
+        },
+        {
+          "initial_H": "1544625155715674181929156269476",
+          "initial_kappa_bits": 100.28509961898817,
+          "offers": [
+            {
+              "H": "22062708924826883915576186726",
+              "anchor_label": "E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 6.129503021961739,
+              "parameter": {
+                "d": "8922124841452913",
+                "n": "22062708924826883915576186726"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 8752,
+      "sha256": "96428f371807b8a0e40bdc0db6f049c4306eb2915c0fc62d6a8f6ab6e8c55300"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-exceptional_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "80240328813579530793",
+          "initial_kappa_bits": 66.12096132078342,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "8997052562636928516396",
+          "initial_kappa_bits": 72.92994244410906,
+          "offers": [
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 24,
+              "improvement_over_initial_bits": 1.6546084059555426,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3,
+                4
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "1116057089489813",
+          "initial_kappa_bits": 49.98733225031379,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "262355336481271348",
+          "initial_kappa_bits": 57.8642997487368,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1932304137675978085869877512",
+          "initial_kappa_bits": 90.64238074898135,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 2064,
+      "sha256": "444d22ee7fe9998d2383ce930ab431f9b79d006fe63986089101e5070ef108bd"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-exceptional_minus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "80240328813579530793",
+          "initial_kappa_bits": 66.12096132078342,
+          "offers": [],
+          "target": 0
+        },
+        {
+          "initial_H": "8997052562636928516396",
+          "initial_kappa_bits": 72.92994244410906,
+          "offers": [
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 24,
+              "improvement_over_initial_bits": 1.6546084059555426,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3,
+                4
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "1116057089489813",
+          "initial_kappa_bits": 49.98733225031379,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "262355336481271348",
+          "initial_kappa_bits": 57.8642997487368,
+          "offers": [],
+          "target": 3
+        },
+        {
+          "initial_H": "1932304137675978085869877512",
+          "initial_kappa_bits": 90.64238074898135,
+          "offers": [],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 2064,
+      "sha256": "1427ede0e9e1ff720c36e040fe024d1fd1c87fb8bfcaf44772a48895dd9e708e"
+    },
+    {
+      "cells_checked": 1024,
+      "edges_checked": 3584,
+      "file": "11952-both_plus.json.gz",
+      "minimal_support_envelopes": [
+        {
+          "initial_H": "82336285071691883606191",
+          "initial_kappa_bits": 76.12394644473649,
+          "offers": [
+            {
+              "H": "1780194812281673541912",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 5.5314213236440395,
+              "parameter": {
+                "d": "2497547759",
+                "n": "-1780194812281673541912"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 24,
+              "improvement_over_initial_bits": 6.386959092424064,
+              "parameter": {
+                "d": "523696817",
+                "n": "-983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                3,
+                4
+              ]
+            }
+          ],
+          "target": 0
+        },
+        {
+          "initial_H": "243797609394793032343791336",
+          "initial_kappa_bits": 87.65581444647013,
+          "offers": [
+            {
+              "H": "298545235298102742291376",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 4,
+              "improvement_over_initial_bits": 9.673518720189236,
+              "parameter": {
+                "d": "195400824693",
+                "n": "298545235298102742291376"
+              },
+              "required_exceptional_indices": [
+                2
+              ]
+            },
+            {
+              "H": "223223620881002931439416",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 5,
+              "improvement_over_initial_bits": 10.092978566979639,
+              "parameter": {
+                "d": "65290657537",
+                "n": "-223223620881002931439416"
+              },
+              "required_exceptional_indices": [
+                0,
+                2
+              ]
+            },
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E4",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 24,
+              "improvement_over_initial_bits": 16.380480408316615,
+              "parameter": {
+                "d": "10368126013",
+                "n": "-2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                3,
+                4
+              ]
+            }
+          ],
+          "target": 1
+        },
+        {
+          "initial_H": "5654241340610269221",
+          "initial_kappa_bits": 62.29403917116828,
+          "offers": [],
+          "target": 2
+        },
+        {
+          "initial_H": "25400412143404862536770",
+          "initial_kappa_bits": 74.4272699936699,
+          "offers": [
+            {
+              "H": "2857679349336509481468",
+              "anchor_label": "E2",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 2,
+              "improvement_over_initial_bits": 3.151935955516379,
+              "parameter": {
+                "d": "10368126013",
+                "n": "2857679349336509481468"
+              },
+              "required_exceptional_indices": [
+                1
+              ]
+            },
+            {
+              "H": "983841188382960435744",
+              "anchor_label": "E1",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 3,
+              "improvement_over_initial_bits": 4.69028264135747,
+              "parameter": {
+                "d": "523696817",
+                "n": "983841188382960435744"
+              },
+              "required_exceptional_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "H": "14269317933391127388",
+              "anchor_label": "E3",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "exceptional_support_mask": 20,
+              "improvement_over_initial_bits": 10.797719814484878,
+              "parameter": {
+                "d": "2066359",
+                "n": "14269317933391127388"
+              },
+              "required_exceptional_indices": [
+                2,
+                4
+              ]
+            }
+          ],
+          "target": 3
+        },
+        {
+          "initial_H": "1544625155715674181929156269476",
+          "initial_kappa_bits": 100.28509961898817,
+          "offers": [
+            {
+              "H": "22062708924826883915576186726",
+              "anchor_label": "E8",
+              "anchor_word_in_original_M17_E": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "exceptional_support_mask": 128,
+              "improvement_over_initial_bits": 6.129503021961739,
+              "parameter": {
+                "d": "8922124841452913",
+                "n": "22062708924826883915576186726"
+              },
+              "required_exceptional_indices": [
+                7
+              ]
+            }
+          ],
+          "target": 4
+        },
+        {
+          "initial_H": "3430383046936638197883",
+          "initial_kappa_bits": 71.53885967371525,
+          "offers": [],
+          "target": 5
+        },
+        {
+          "initial_H": "62275068999280878929337",
+          "initial_kappa_bits": 75.72107280246043,
+          "offers": [],
+          "target": 6
+        },
+        {
+          "initial_H": "3405175472899398854",
+          "initial_kappa_bits": 61.56243485198343,
+          "offers": [],
+          "target": 7
+        }
+      ],
+      "new_rational_slopes_checked": 768,
+      "sha256": "9305adc71b05eed9a5a4c4b2fad6f886e9266deabcdeb088d898a8849299a8dd"
+    }
+  ],
+  "schema": "rank-accessibility.subsets-verification.v1",
+  "status": "PASS",
+  "verifier_sha256": "206917bc1176ba28fa57371d7035893be7c1fe0b4d9132fb38c5d3fecba32ae8"
+}

@@ -1,0 +1,1 @@
+FAIL|error("the PARI stack overflows !\n  current stack size: 2147483648 (2048.000 Mbytes)\n  [hint] set 'parisizemax' to a nonzero value in your GPRC\n")

@@ -1,5 +1,20 @@
 # Active elliptic-curve artifacts
 
+The [bounded geometry–arithmetic comparison](../../../elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
+provides [22 exact ancestry records](rank_triangle_v1/targets.json), an
+[18-fibre equation panel](rank_triangle_v1/panel.csv), and the
+[strict-class / half-ideal dictionary](rank_triangle_v1/strict.json).
+The [replay](rank_triangle_v1/verified.json) passes all 792 carrier identities
+and eleven complete local rows. Both controls have genus-one bisections through
+every chosen target; no shared tested covers or new rank upper bounds were found.
+
+The [accessibility closure / rank-bound audit](../../../elliptic-curves/notes/ACCESSIBILITY_CLOSURE_AND_11952_RANK_BOUND_2026-09-11.md)
+checks the singleton max-rule formula and no two-step paths in all115,712
+original cells. The [11952 equation-only diagnostic](11952_rank_bound_audit_v1/field.json)
+gives `rank <= g+9`. The [8 GiB quotient-lane attempt](11952_class_quotient_v1/provisional.validation.json)
+cleared the initial stack overflow but timed out during provisional BNF at600s;
+no cyclic invariants, quotient certificate or new upper bound were obtained.
+
 The [five compact192 rank26 curves](compact192_rank26_models_v1.json) have a [standalone690KB proof bundle](compact192_five_rank26_evidence_v1.zip), requiring no base archives. Both [isolated model-proof and Sage-export checks](compact192_five_rank26_portable_replay_v1.json) pass.
 
 The [completed endpoint point trial](endpoint_specialized_trial_v1.json) has 252 completed boxes and bounds at most 19 among its certificates. Its [evidence bundle](endpoint_point_trial_evidence_v1.json) passes [all 66 isolated replay stages](endpoint_point_trial_portable_replay_v1.json), including the six rank-27 subgroup saturation proofs at 2, 3 and 5. These lower bounds are not whole-curve upper bounds.
@@ -458,6 +473,32 @@ Important distinctions made explicit by the catalogue:
   `python3 elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py`
   checks both pinned files and their source provenance without performing
   curve arithmetic, finite-group enumeration, or matrix-rank computation.
+- `rank_accessibility_atlas_curve302_11952_v1.json.gz` is the canonical
+  finite-atlas baseline for the displayed `M17 -> D31` Curve302 and
+  `M17 -> D25` 11952 comparisons.  It retains every exact anchor, parameter,
+  residual word, fixed primitive `N/F` evaluation, finite cancellation, and
+  chart-normalization term, with equal-cardinality generic-only controls.
+  It proves no rank statement beyond its input certificates: in particular
+  11952 remains rank at least 25 and its displayed quotient is only the known
+  rank-8 exceptional quotient.  Its compressed SHA-256 is
+  `900ca94ad898d0f00fa022d761c940c9f78048fa1cf9cb4dd58b40611c83722b`;
+  `rank_accessibility_atlas_curve302_11952_v1.summary.json` is the compact
+  navigation index and records the decompressed payload SHA-256.
+- `rank_accessibility_atlas_analysis_v1.json` and its short Markdown report
+  are the descriptive, point-level analysis of that frozen atlas.  They give
+  threshold-free initial distributions, full collapse survival curves,
+  winning-chart residual/finite/archimedean decompositions, equal-budget
+  generic controls, and displayed mod-2 strata.  They do not use anchor pairs
+  as independent samples and make no causal or rank claim.
+- [`rank_accessibility_subsets_v1/REPORT.md`](rank_accessibility_subsets_v1/REPORT.md)
+  is the follow-up interpretation: four exact event decompositions, the full
+  114,688/1,024 original-basis held-out subset cells, and five frozen basis
+  perturbations. Independent rational-arithmetic and sparse-envelope replay
+  checks all cells. The original 11952 zero is acquisition-order dependent;
+  large relative gains are also sensitive to generic-basis presentation.
+  `events.json` preserves full words and N/F identities, `protocol.json`
+  pins the policies, and the per-policy compressed files retain all costs,
+  supports, winners, and survival curves.
 - The ICARM 285/286 analysis exactly proves independence of 21 displayed
   points and now independently replays global minimality and every local
   conductor exponent.

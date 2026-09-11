@@ -1,0 +1,25 @@
+{
+  "arithmetic_gate": "Klagsbrun-Sherman-Weigandt Proposition 3.1: rank <= dim Sel2 <= g+u+n, for no rational 2-torsion. Certify maximal order and local offset, then one class-quotient canary.",
+  "automatic_retry": false,
+  "claim_boundary": "No known point/Kummer generator is supplied to the measured class-group object. The existing 25-point certificate is used only after an independent upper bound. BNF invariants alone are GRH-conditional; flag-1 bnfcertify success certifies a quotient and hence an unconditional 2-rank upper bound. No algebraic parity assumption.",
+  "gp_version": "2.17.3",
+  "inputs": {
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/gp": "5336582ba45db99b89f8ebc42da5a4925fd0d6546646cf3585729c9eb664777a",
+    "artifacts/generated-results/elliptic-curves/11952_rank_bound_audit_v1/equation.json": "2c20b32f31e56328364d2b4b31eb33f4a8cf5938a89109bd5c89a8d0d40f97f4",
+    "elliptic-curves/cas/audit_11952_rank_bound.py": "7dbeb50f46f1ae88b1c769e373f7cfe2eb1a578ce067744e00d2627daef66164",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+  },
+  "maximum_workers": 1,
+  "pari_stack_bytes": 512000000,
+  "point_search": false,
+  "programs": {
+    "class_group": "f0d601a50ea5725280c4bd509c3a77ae4012c490fdc5fffd0049e1912aaba3be",
+    "field": "ce33ba47953a0c055980384b3594e5ce96334f0a7bb7f7bcc54c11f630868e5f"
+  },
+  "rss_bytes": 1610612736,
+  "schema": "11952.equation-only-rank-bound.v1",
+  "wall_seconds": {
+    "class_group": 60,
+    "field": 30
+  }
+}

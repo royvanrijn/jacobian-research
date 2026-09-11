@@ -1,5 +1,10 @@
 # The prescribed rank16 bridge fails integral gluing
 
+Research-priority update: the [accessibility closure and independent11952
+rank-bound target](ACCESSIBILITY_CLOSURE_AND_11952_RANK_BOUND_2026-09-11.md)
+now govern the rank-jump investigation. The carrier and gluing results below
+remain valid; this note is not the current experiment handoff.
+
 **The retained determinant4100 common-core witness does not extend to the
 marked K3 lattice.** Its embeddings in class6/embedding25 and
 class1/embedding33 have different order-two gluing classes. The core has
