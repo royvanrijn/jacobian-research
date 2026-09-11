@@ -123,7 +123,7 @@ def raw_schema_enrichment(raw_root: Path, analysis, ledger):
     """Load raw chart definitions only for the decisive seed/epoch pairs."""
     from curve302_chart_replay_adapter import load_stage_charts
 
-    wanted = {(row["seed"], int(row["epoch"])) for row in analysis["stages"]}
+    wanted = sorted({(row["seed"], int(row["epoch"])) for row in analysis["stages"]})
     expected = {}
     for seed, epoch in wanted:
         expected.setdefault(seed, set()).add(epoch)
