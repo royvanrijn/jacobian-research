@@ -1,0 +1,23 @@
+name: Curve302 chart replay adapter smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/elliptic-curves/cas/curve302_chart_replay_adapter.py'
+      - 'research/elliptic-curves/cas/run_curve302_chart_replay_adapter.py'
+      - 'research/elliptic-curves/tests/test_curve302_chart_replay_adapter.py'
+      - '.github/workflows/curve302-chart-replay-adapter.yml'
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install sympy
+      - name: Adapter tests (Sage recognizer replaced by exact fake recognizer)
+        env:
+          PYTHONPATH: research/elliptic-curves/cas
+          CURVE302_TEST_SKIP_FSYNC: '1'
+        run: python -m unittest research/elliptic-curves/tests/test_curve302_chart_replay_adapter.py -v
