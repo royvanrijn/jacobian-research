@@ -97,6 +97,20 @@ def discover_raw_root(replay: Path, explicit: Path | None):
         p = Path(explicit).resolve()
         require(p.is_dir(), f"raw root missing: {p}")
         return p
+    # The downstream exposure experiment was launched with ``--ledger``, so
+    # its plan records the replay output directory rather than the historical
+    # transcript root.  Recover the latter from the exact MW-state provenance
+    # retained by the replay adapter.
+    replay_ledger = replay / "chart-exposure-ledger.json"
+    if replay_ledger.is_file():
+        chosen = (read(replay_ledger).get("adapter", {}).get("basis", {})
+                  .get("chosen_states", {}))
+        source_files = [str(row["file"]) for row in chosen.values()
+                        if isinstance(row, dict) and row.get("file")]
+        if source_files:
+            common = Path(os.path.commonpath(source_files)).resolve()
+            if common.is_dir():
+                return common
     plan = replay / "experiments" / "plan.json"
     if plan.is_file():
         raw = read(plan).get("raw_root")
