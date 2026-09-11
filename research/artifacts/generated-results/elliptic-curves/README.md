@@ -1,5 +1,12 @@
 # Active elliptic-curve artifacts
 
+The [broad-rank ledger](../../../elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md)
+adds [30 certified curves](broad_rank_ledger_snapshot_v1.json) at lower bounds
+23–25 and [11 exact conductors](broad_rank_conductor_snapshot_v1.json) at a fixed
+cutoff. Fresh [rank](broad_rank_ledger_replay_v1.json) and
+[conductor](broad_rank_conductor_replay_v1.json) replays pass; remaining conductor
+jobs continue separately from the published snapshot.
+
 The [bounded geometry–arithmetic comparison](../../../elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 provides [22 exact ancestry records](rank_triangle_v1/targets.json), an
 [18-fibre equation panel](rank_triangle_v1/panel.csv), and the

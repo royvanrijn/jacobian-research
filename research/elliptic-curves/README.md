@@ -3,7 +3,10 @@
 The [eight-presentation broad rank campaign](notes/BROAD_RANK_SEARCH_2026-09-10.md)
 completed all2,080 initial fibres and2,012 continuation batches, with398,866
 point calls and no unknown or censored endpoints. Its best certified lower bound
-is25;30 fibres finish above22. All workers have exited; frozen evidence is retained.
+is25;30 fibres finish above22. All point-search workers have exited; frozen evidence
+is retained. The [curated broad ledger](notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md)
+adds those 30 curves and the first 11 exact conductors; a separate four-worker
+conductor queue is processing the remaining inputs.
 
 The [ancestry / equation-only panel / strict-descent comparison](notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 now has 792 replayed carriers: all fourteen 302 targets and eight 11952 targets
@@ -36,9 +39,10 @@ Machine results remain separate from the curated curve inventory.
 
 <!-- status-consumer: EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910 5be8375fcf2cdfbe -->
 
-The [first curated foundry snapshot](notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md)
-adds30 verified curves at lower bounds22–26 and strengthens one existing
-curve23→25. The inventory now contains321 curves;274 meet the display rule.
+The [curated inventory](INVENTORY.md) now contains 445 curves, with 267 exact
+conductors; 398 meet the main README display rule. It includes the
+[second foundry snapshot](notes/FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md) and
+[broad-rank additions](notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md).
 
 The [unattended norm12 campaign](notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
 completed all four configured M27/M28 queues without rank gains. Its53 batches

@@ -54983,6 +54983,72 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-BROAD-RANK-LEDGER-20260912",
+      "kind": "example",
+      "state": "proved",
+      "title": "Completed broad search adds 30 distinct curves at certified lower bounds 23–25",
+      "scope": "The completed broad-rank-v1 campaign supplies 30 certified fibres above lower bound 22: 25 at 23, four at 24 and one at 25. Fresh replay of every retained point packet through both existing finite-group paths verifies point membership, independence and rational 2-torsion exclusion. Exact specialization matches the normalized parent equation and generic point prefix. Exact Q-isomorphism checks exclude duplicates within this cohort and relative to the pinned 415-curve baseline. The complete inventory grows to 445 curves, with 398 meeting the existing main README display rule. This proves subgroup lower bounds and baseline distinctness, not exact ranks, worldwide novelty, minimal-model metrics or conductors.",
+      "canonical_source": "elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md",
+      "dependencies": [
+        "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910"
+      ],
+      "checker": "elliptic-curves/cas/publish_broad_rank_results.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:92e246a27b2721eab0557778b1c0f61bf30002256518ae365f2aebfac618fa9f",
+      "software_lock": [
+        "elliptic-curves/cas/publish_broad_rank_results.py",
+        "elliptic-curves/cas/memory_rank_certificate.py",
+        "elliptic-curves/cas/certify_compact_r17_candidates.py",
+        "elliptic-curves/cas/parent_foundry_worker.py",
+        "elliptic-curves/cas/broad_rank_runtime.py",
+        "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_ledger_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "kind": "example",
+      "state": "proved",
+      "title": "First broad-rank conductor cutoff certifies 11 exact conductors",
+      "scope": "A fixed completed-path cutoff of the 30-curve broad-rank conductor queue contains 11 exact conductor certificates, including the lower-bound-25 curve broad-11952-7bb187bc9254e81c6283 at parameter 921/653. Fresh portable replay checks the original-to-integral Q-isomorphism, source and certificate bindings, exact prime certificates, discriminant and conductor products, and agreement of Sage generic Tate with PARI local reduction, without factor discovery. Each remaining discriminant cofactor is one. The published 445-curve inventory therefore has 267 exact conductors and 178 unresolved. Later queue completions are excluded from this cutoff. No exact-rank, minimal-model metric or conductor-record claim is made.",
+      "canonical_source": "elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md",
+      "dependencies": [
+        "EC-BROAD-RANK-LEDGER-20260912"
+      ],
+      "checker": "elliptic-curves/cas/publish_broad_rank_conductors.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5d1cc7fe4665e7217683cbf402f8525816e2711fd25e2cb7cb610338fb2a1be8",
+      "software_lock": [
+        "elliptic-curves/cas/publish_broad_rank_conductors.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/inventory_conductor_worker_v2.py",
+        "elliptic-curves/cas/run_broad_rank_conductors.py",
+        "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }
