@@ -14,10 +14,61 @@ from curve302_short_vector_core import (
     enumerate_primitive_directions, exact_ldl, in_rational_span,
     intersection_saturated, lattice_contains, one_step_core_hit, primitive,
     qnorm, rank_interval, rational_rank, saturation_basis, saturation_index,
+    RationalBasis, IntegerVocabulary, target_rank_intervals,
 )
 
 
 class ShortVectorCoreTests(unittest.TestCase):
+    def test_incremental_basis_against_matrix_rank(self):
+        import random
+        rng = random.Random(302)
+        basis = RationalBasis(4)
+        rows = []
+        for _ in range(25):
+            v = tuple(rng.randrange(-5, 6) for _ in range(4))
+            before = rational_rank(rows, 4)
+            rows.append(v)
+            after = rational_rank(rows, 4)
+            self.assertEqual(basis.add(v), after > before)
+            self.assertEqual(len(basis.independent), after)
+
+    def test_rank_batch_matches_individual_exact_ties(self):
+        q = ((F(2), F(1)), (F(1), F(2)))
+        rows, _ = enumerate_primitive_directions(q, F(20))
+        batch = target_rank_intervals(rows, [v for _, v in rows])
+        for _, v in rows:
+            self.assertEqual(batch[v], rank_interval(rows, v))
+        with self.assertRaisesRegex(ValueError, "absent"):
+            target_rank_intervals(rows, [(100, 1)])
+
+    def test_integer_basins_match_rational_reference(self):
+        import run_curve302_short_vector_core as runner
+        q = tuple(tuple(F(i == j) for j in range(3)) for i in range(3))
+        rows, _ = enumerate_primitive_directions(q, F(6))
+        prefix = ((1, 1, 0),)
+        core = ((1, 1, 0), (0, 1, 1))
+        ann_p = runner.rational_annihilator(prefix, 3)
+        ann_e = runner.rational_annihilator(core, 3)
+        for backend in (False, True):
+            vocabulary = IntegerVocabulary(rows, use_numpy=backend)
+            for already in (False, True):
+                for bound in (F(0), F(2), F(6)):
+                    eligible = [(norm, v) for norm, v in rows if not in_rational_span(v, prefix, 3)]
+                    hit = eligible if already else [(norm, v) for norm, v in eligible if one_step_core_hit(prefix, v, core, 3)]
+                    below = [norm for norm, _ in hit if norm <= bound]
+                    expected = (len(eligible), len(hit), sum(norm <= bound for norm, _ in eligible), len(below), min(below) if below else None)
+                    self.assertEqual(vocabulary.basin_counts(ann_p, ann_e, bound, already), expected)
+
+    def test_integer_dots_fall_back_without_overflow(self):
+        rows = [(F(1), (3, 2)), (F(2), (2, 2))]
+        v = IntegerVocabulary(rows)
+        huge = 2**62
+        self.assertEqual(list(v.zero_mask(((huge, -huge),))), [False, True])
+        rows = [(F(1), (2**70, 2**70)), (F(2), (2**70, 1))]
+        self.assertEqual(list(IntegerVocabulary(rows).zero_mask(((1, -1),))), [True, False])
+        with self.assertRaisesRegex(ValueError, "integer annihilators"):
+            v.zero_mask(((F(1, 2), 0),))
+
     def test_primitive_sign_and_gcd(self):
         self.assertEqual(primitive((-4, 2, 0)), (2, -1, 0))
         self.assertEqual(primitive((0, -3, 6)), (0, 1, -2))
@@ -139,6 +190,23 @@ class ControllerIntegrationTests(unittest.TestCase):
             self.assertEqual(enum["direction_count"], 14)
             ranks = json.loads((output/"ranks-basins.json").read_text())
             self.assertEqual(ranks["rank_summary"]["coverage"], 180)
+            filtration = json.loads((output/"filtration.json").read_text())
+            self.assertEqual(filtration["intrinsic_filtration"][0]["shell_last_rank"], 14)
+            reused = tmp / "reused"
+            subprocess.run([sys.executable, str(runner), "run", "--source", str(source), "--folder", str(reused),
+                            "--reuse-enumeration", str(output), "--max-directions", "1000", "--max-nodes", "100000", "--stage-seconds", "60"],
+                           check=True, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            for name in ("enumeration.json", "primitive-directions.tsv", "filtration.json", "ranks-basins.json"):
+                self.assertEqual((output/name).read_bytes(), (reused/name).read_bytes())
+            self.assertTrue((reused/"phases/enumeration/import.json").is_file())
+            # Corruption must be rejected before a new output folder is created.
+            (output/"primitive-directions.tsv").write_text("corrupted\n")
+            bad = tmp/"bad-import"
+            attempt = subprocess.run([sys.executable, str(runner), "prepare", "--source", str(source), "--folder", str(bad),
+                                      "--reuse-enumeration", str(output)], env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            self.assertNotEqual(attempt.returncode, 0)
+            self.assertIn("donor enumeration TSV changed", attempt.stdout)
+            self.assertFalse(bad.exists())
 
 if __name__ == "__main__":
     unittest.main()

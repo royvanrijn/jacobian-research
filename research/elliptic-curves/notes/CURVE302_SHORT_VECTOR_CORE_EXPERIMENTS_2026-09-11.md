@@ -21,6 +21,53 @@ Use `--source` if the passed closure-structure evidence is not in the canonical
 local folder. The default output is
 `artifacts/local/elliptic-curves/curve302-short-vector-core-v1/`.
 
+## Exact performance fixes after the first real run
+
+The first attached run stopped without a receipt and is retained as UNKNOWN.
+The detached `curve302-short-vector-core-v2` run completed and sealed exact
+enumeration: **1,288,441 primitive directions**, 5,789,129 nodes, covering all
+180 acquisitions. Filtration then reached its 3,600-second cap; its timeout
+receipt and the complete enumeration remain preserved. No basin result or
+completed full check came from that run.
+
+The optimized implementation retains the same mathematical definitions and
+limits:
+
+- Incremental rational echelon reduction replaces repeated general matrix
+  rank calls. Filtration consumes the complete final norm shell, then stops
+  after reaching rank14: saturation is Z^14 at every later shell.
+- A single shell scan computes all observed rank intervals with exact ties.
+- Basin annihilators are cleared to primitive integer rows. Optional NumPy
+  int64 dot products run only when the exact bound
+  `sum(abs(a[j])*max(abs(v[j]))) <= 2^63-1` proves every intermediate fits.
+  Unsafe cases and environments without NumPy use arbitrary-size Python
+  integers. No floating-point containment or cutoff is introduced.
+- Enumeration obtains each leaf's norm from the exact accumulated LDL sum,
+  instead of evaluating all196 matrix terms again. Full deterministic `check`
+  still re-enumerates the entire ball and compares the TSV byte-for-byte.
+
+Seventeen tests pass, including comparison with exact matrix ranks and rational
+basin tests, overflow fallbacks, exact ties and boundary vectors, a full
+synthetic pipeline/check, successful enumeration reuse and rejection of a
+corrupt donor before output creation.
+
+From the repository root, the fresh optimized run is:
+
+```sh
+sage -python research/elliptic-curves/cas/run_curve302_short_vector_core.py run \
+  --reuse-enumeration research/artifacts/local/elliptic-curves/curve302-short-vector-core-v2 \
+  --folder research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3
+sage -python research/elliptic-curves/cas/run_curve302_short_vector_core.py check \
+  --folder research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3
+```
+
+`--reuse-enumeration` is for a fresh folder only. It verifies the donor plan,
+stage seal, output hashes, identical source bindings, exact observed norm bound
+and the current node/vector limits. Imported files are copied and rehashed;
+the new plan and import receipt preserve their producer's code hashes. The
+failed donor is never resumed, edited or relabelled. Sage Python is used here
+because system Python lacks SymPy; the installed SymPy is1.14.0.
+
 ## Experiment 1: complete primitive-vector vocabulary
 
 Let `Q` be the exact rational 14-dimensional Schur form stored by the previous

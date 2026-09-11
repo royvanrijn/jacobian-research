@@ -7,6 +7,8 @@ math dependency is SymPy for exact integer/rational lattice normal forms.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from bisect import bisect_right
+from collections import OrderedDict
 from fractions import Fraction as F
 from functools import reduce
 import math
@@ -117,7 +119,9 @@ def enumerate_primitive_directions(form: Sequence[Sequence[F]], bound: F, *,
             if g != 1 or first < 0:
                 return
             vec = tuple(x)
-            norm = qnorm(form, vec)
+            # LDL recursion has subtracted every quadratic term exactly.
+            # Re-evaluating all n^2 entries here dominated the real run.
+            norm = bound - remaining
             require(norm <= bound, "enumerator emitted vector beyond bound")
             answer.append((norm, vec))
             stats.directions += 1
@@ -158,6 +162,116 @@ def _matrix_rows(rows: Sequence[Sequence[int]], n: int) -> Matrix:
 
 def rational_rank(rows: Sequence[Sequence[int]], n: int) -> int:
     return int(_matrix_rows(rows, n).rank())
+
+
+class RationalBasis:
+    """Incremental exact echelon reduction, preserving the chosen input rows."""
+    def __init__(self, n):
+        self.n = n
+        self.pivots = {}
+        self.independent = []
+
+    def add(self, row):
+        require(len(row) == self.n, "wrong incremental row width")
+        if len(self.pivots) == self.n:
+            return False
+        v = list(map(F, row))
+        for p, basis in sorted(self.pivots.items()):
+            a = v[p]
+            if a:
+                v = [x-a*y for x, y in zip(v, basis)]
+        p = next((i for i, x in enumerate(v) if x), None)
+        if p is None:
+            return False
+        a = v[p]
+        self.pivots[p] = tuple(x/a for x in v)
+        self.independent.append(tuple(row))
+        return True
+
+
+def target_rank_intervals(rows, targets):
+    """One shell scan for all requested directions; retain exact tie intervals."""
+    wanted = set(map(primitive, targets))
+    answer = {}
+    i = 0
+    while i < len(rows):
+        j = i+1
+        while j < len(rows) and rows[j][0] == rows[i][0]:
+            j += 1
+        for k in range(i, j):
+            if rows[k][1] in wanted:
+                answer[rows[k][1]] = (i+1, j, rows[k][0])
+        i = j
+    require(set(answer) == wanted, "observed vector absent from complete enumeration")
+    return answer
+
+
+class IntegerVocabulary:
+    """Exact annihilator counts, optionally accelerated with bounded int64 dots.
+
+    The Python-integer bound sum |a_j| max |v_j| certifies that *every*
+    intermediate int64 product/sum fits. Unsafe cases use arbitrary-size ints.
+    Neither branch uses floating point or changes the candidate vocabulary.
+    """
+    def __init__(self, rows, use_numpy=True):
+        self.rows = rows
+        self.norms = [norm for norm, _ in rows]
+        self.n = len(rows[0][1])
+        self.maxima = [max(abs(v[j]) for _, v in rows) for j in range(self.n)]
+        self.cache = OrderedDict()
+        self.np = None
+        self.array = None
+        if use_numpy:
+            try:
+                import numpy as np
+                if max(self.maxima) <= 2**63-1:
+                    self.np = np
+                    self.array = np.asarray([v for _, v in rows], dtype=np.int64)
+            except ImportError:
+                pass
+
+    def zero_mask(self, functionals):
+        require(all(int(x) == x for f in functionals for x in f), "integer annihilators required")
+        key = tuple(tuple(int(x) for x in f) for f in functionals)
+        if key in self.cache:
+            self.cache.move_to_end(key)
+            return self.cache[key]
+        sparse = [tuple((j, a) for j, a in enumerate(f) if a) for f in key]
+        if self.np is None:
+            result = [all(sum(a*v[j] for j, a in f) == 0 for f in sparse) for _, v in self.rows]
+        else:
+            np = self.np
+            result = np.ones(len(self.rows), dtype=bool)
+            for f, sf in zip(key, sparse):
+                indices = np.flatnonzero(result)
+                if not len(indices):
+                    break
+                bound = sum(abs(a)*self.maxima[j] for j, a in sf)
+                if bound <= 2**63-1 and all(abs(a) <= 2**63-1 for a in f):
+                    values = self.array[indices] @ np.asarray(f, dtype=np.int64)
+                    result[indices] = values == 0
+                else:
+                    result[indices] = [sum(a*self.rows[int(i)][1][j] for j, a in sf) == 0 for i in indices]
+        self.cache[key] = result
+        if len(self.cache) > 32:
+            self.cache.popitem(last=False)
+        return result
+
+    def basin_counts(self, ann_prefix, ann_extended, actual_norm, already_contained=False):
+        cutoff = bisect_right(self.norms, actual_norm)
+        prefix = self.zero_mask(ann_prefix)
+        extended = None if already_contained else self.zero_mask(ann_extended)
+        if self.np is None:
+            eligible = [not x for x in prefix]
+            hit = eligible if already_contained else [a and b for a, b in zip(eligible, extended)]
+            counts = (sum(eligible), sum(hit), sum(eligible[:cutoff]), sum(hit[:cutoff]))
+            first = next((i for i in range(cutoff) if hit[i]), None)
+        else:
+            eligible = ~prefix
+            hit = eligible if already_contained else eligible & extended
+            counts = tuple(int(self.np.count_nonzero(x)) for x in (eligible, hit, eligible[:cutoff], hit[:cutoff]))
+            first = int(self.np.argmax(hit[:cutoff])) if counts[3] else None
+        return (*counts, None if first is None else self.norms[first])
 
 
 def saturation_index(rows: Sequence[Sequence[int]], n: int) -> int:

@@ -31,6 +31,7 @@ from curve302_short_vector_core import (
     enumerate_primitive_directions, fraction, in_rational_span,
     intersection_saturated, lattice_contains, primitive, qnorm, rank_interval,
     rational_rank, saturation_basis, saturation_index,
+    RationalBasis, IntegerVocabulary, target_rank_intervals,
 )
 
 CAS = Path(__file__).resolve().parent
@@ -138,22 +139,63 @@ def source_data(folder):
     return {"form": form, "runs": sorted(runs, key=lambda r: r["seed_index"]), "source": folder}
 
 
-def prepare(folder, source, max_directions, max_nodes, stage_seconds):
+def reusable_enumeration(donor, source_hashes, data, max_directions, max_nodes):
+    """Import only an already sealed complete enumeration of identical inputs.
+
+    A later failed stage in the donor is preserved and does not invalidate its
+    completed enumeration. No donor file or receipt is edited or relabelled.
+    """
+    donor = Path(donor).resolve()
+    old = read(donor / "plan.json")
+    require(sha(donor / "plan.json") == read(donor / "manifest.json")["plan_sha256"], "donor plan changed")
+    require(old["schema"] == "curve302-short-vector-core-plan.v1", "wrong donor schema")
+    require(old["source_hashes"] == source_hashes, "donor source differs")
+    seal = read(donor / "phases/enumeration/seal.json")
+    meta = read(donor / "enumeration.json")
+    require(meta["status"] == "PASS_COMPLETE_EXACT_ENUMERATION", "donor enumeration is incomplete")
+    require(seal["output_sha256"] == sha(donor / "enumeration.json"), "donor enumeration metadata changed")
+    require(seal["enumeration_sha256"] == meta["enumeration_sha256"] == sha(enumeration_path(donor)), "donor enumeration TSV changed")
+    observed = [e["primitive"] for run in data["runs"] for e in run["events"]]
+    bound = max(qnorm(data["form"], v) for v in observed)
+    require(fraction(meta["bound"]) == bound and meta["observed_acquisitions"] == len(observed), "donor bound or exposure differs")
+    require(meta["distinct_observed_directions"] == len(set(observed)), "donor observed roster differs")
+    require(meta["direction_count"] <= max_directions and meta["nodes"] <= max_nodes, "donor exceeds current limits")
+    return {"folder": str(donor), "producer_plan_sha256": sha(donor / "plan.json"),
+            "producer_code_hashes": old["code_hashes"],
+            "files_sha256": {name: sha(donor/name) for name in ("enumeration.json", "primitive-directions.tsv")}}
+
+
+def prepare(folder, source, max_directions, max_nodes, stage_seconds, reuse_enumeration=None):
     folder = Path(folder).resolve(); source = find_source(source)
     require(not folder.exists(), "output folder exists; use resume/check or a new --folder")
     data = source_data(source)
     source_files = [source / "REPORT.json", source / "quotient-relations.json", source / "trajectories.json"]
+    source_hashes = {p.name: sha(p) for p in source_files}
+    reused = None if reuse_enumeration is None else reusable_enumeration(
+        reuse_enumeration, source_hashes, data, max_directions, max_nodes)
     folder.mkdir(parents=True)
     plan = {
         "schema": "curve302-short-vector-core-plan.v1", "status": "SEALED_NOT_RUN",
-        "source": str(source), "source_hashes": {p.name: sha(p) for p in source_files},
+        "source": str(source), "source_hashes": source_hashes,
         "code_hashes": {SELF.name: sha(SELF), CORE.name: sha(CORE)},
         "policy": {"max_directions": int(max_directions), "max_nodes": int(max_nodes), "stage_seconds": int(stage_seconds)},
         "expected": {"directions": 14, "runs": 14, "acquisitions": 180},
+        "reused_enumeration": reused,
         "boundary": "Retrospective static quotient-lattice analysis only; no point search, rank claim, prospective selector or propagation theorem.",
     }
     atomic(folder / "plan.json", plan)
     atomic(folder / "manifest.json", {"plan_sha256": sha(folder / "plan.json"), "created_unix": time.time()})
+    if reused is not None:
+        for name, digest in reused["files_sha256"].items():
+            original = Path(reused["folder"])/name
+            shutil.copyfile(original, folder/name)
+            require(sha(original) == sha(folder/name) == digest, "donor changed during copy")
+        phase = folder/"phases/enumeration"
+        atomic(phase/"import.json", reused)
+        atomic(phase/"seal.json", {"output_sha256": sha(folder/"enumeration.json"),
+                                  "enumeration_sha256": sha(enumeration_path(folder)),
+                                  "import_sha256": sha(phase/"import.json")})
+        print("SHORT_CORE_REUSED_ENUMERATION|complete=PASS|donor="+reused["folder"], flush=True)
     print(f"SHORT_CORE_PREPARED|source={source}|folder={folder}|events=180", flush=True)
 
 
@@ -182,7 +224,7 @@ def read_enumeration(folder):
         for line in stream:
             norm, vector = line.rstrip("\n").split("\t")
             rows.append((fraction(norm), tuple(map(int, vector.split(",")))))
-    require(rows == sorted(rows, key=lambda r: (r[0], r[1])), "enumeration order changed")
+    require(all(rows[i-1] < rows[i] for i in range(1, len(rows))), "enumeration order changed or duplicate row")
     return rows
 
 
@@ -235,22 +277,26 @@ def prefix_lattices(data):
 
 def stage_filtration(folder, data, policy):
     enum = read_enumeration(folder); n = 14
-    independent = []
+    echelon = RationalBasis(n)
     filtration = []
     i = 0
     while i < len(enum):
         norm = enum[i][0]; j = i
-        before = rational_rank(independent, n)
+        before = len(echelon.independent)
         while j < len(enum) and enum[j][0] == norm:
             v = enum[j][1]
-            if rational_rank((*independent, v), n) > rational_rank(independent, n): independent.append(v)
+            echelon.add(v)
             j += 1
-        after = rational_rank(independent, n)
+        after = len(echelon.independent)
         if after > before:
-            sat = saturation_basis(independent, n)
+            sat = saturation_basis(echelon.independent, n)
             filtration.append({"norm": ftext(norm), "rank_before": before, "rank_after": after,
                                "basis": [list(v) for v in sat], "shell_first_rank": i + 1, "shell_last_rank": j})
         i = j
+        # The final shell is consumed in full (including ties). Once rank=n,
+        # saturation is Z^n at every later shell, so no further change exists.
+        if after == n:
+            break
     require(filtration and filtration[-1]["rank_after"] == 14, "enumerated short vectors do not span the full quotient")
 
     prefixes, per_run = prefix_lattices(data)
@@ -287,16 +333,23 @@ def dot_zero(functionals, vector):
 def rational_annihilator(rows, n):
     from sympy import Matrix
     A = Matrix(rows) if rows else Matrix.zeros(0, n)
-    return tuple(tuple(fraction(x) for x in v) for v in A.nullspace())
+    import math
+    answer = []
+    for v in A.nullspace():
+        fractions = [fraction(x) for x in v]
+        denominator = math.lcm(*(x.denominator for x in fractions))
+        answer.append(primitive(tuple(int(x*denominator) for x in fractions)))
+    return tuple(answer)
 
 
 def stage_ranks_basins(folder, data, policy):
     enum = read_enumeration(folder); filtration = read(Path(folder) / "filtration.json"); n = 14
     rank_rows = []
     frequency = Counter(e["primitive"] for run in data["runs"] for e in run["events"])
+    intervals = target_rank_intervals(enum, frequency)
     for run in data["runs"]:
         for step, event in enumerate(run["events"]):
-            lo, hi, norm = rank_interval(enum, event["primitive"])
+            lo, hi, norm = intervals[event["primitive"]]
             rank_rows.append({"seed": run["seed"], "step": step, "primitive": list(event["primitive"]),
                               "norm": ftext(norm), "rank_best": lo, "rank_worst": hi, "multiplicity_across_180": frequency[event["primitive"]]})
     require(len(rank_rows) == 180, "acquisition rank census incomplete")
@@ -313,6 +366,7 @@ def stage_ranks_basins(folder, data, policy):
                      for row in filtration["observed_common_integral_cores"]}
     landmarks = [int(row["quotient_dimension"]) for row in filtration["common_core_landmarks"] if int(row["quotient_dimension"]) >= 2]
     prefixes, per_run = prefix_lattices(data)
+    vocabulary = IntegerVocabulary(enum)
     basins = []
     for d in landmarks:
         core = common_by_dim[d]
@@ -327,16 +381,8 @@ def stage_ranks_basins(folder, data, policy):
             ann_prefix = rational_annihilator(prefix, n)
             extended_space = saturation_basis((*prefix, *core), n)
             ann_extended = rational_annihilator(extended_space, n)
-            eligible_full = hit_full = eligible_actual = hit_actual = 0
-            hit_min = None
-            for norm, vector in enum:
-                if dot_zero(ann_prefix, vector):
-                    continue
-                hit = deficit == 0 or dot_zero(ann_extended, vector)
-                eligible_full += 1; hit_full += int(hit)
-                if norm <= actual_norm:
-                    eligible_actual += 1; hit_actual += int(hit)
-                    if hit and hit_min is None: hit_min = norm
+            eligible_full, hit_full, eligible_actual, hit_actual, hit_min = vocabulary.basin_counts(
+                ann_prefix, ann_extended, actual_norm, already_contained=deficit == 0)
             require(eligible_full > 0 and eligible_actual > 0, "empty basin denominator")
             require(deficit == 0 or dot_zero(ann_extended, actual), "actual acquisition does not enter its observed common core")
             basins.append({
@@ -355,7 +401,7 @@ def stage_ranks_basins(folder, data, policy):
                             "mean_hit_fraction_at_complete_bound": sum(r["hit_fraction_at_complete_bound"] for r in rows)/len(rows),
                             "already_contained_before_count": sum(r["deficit_before"] == 0 for r in rows)})
 
-    repeated = [{"primitive": list(v), "count": c, "rank": rank_interval(enum, v)[:2], "norm": ftext(qnorm(data["form"], v))}
+    repeated = [{"primitive": list(v), "count": c, "rank": intervals[v][:2], "norm": ftext(qnorm(data["form"], v))}
                 for v, c in frequency.most_common() if c > 1]
     result = {
         "schema": "curve302-short-vector-ranks-basins.v1", "status": "PASS_COMPLETE_RANK_AND_BASIN_CENSUS",
@@ -378,6 +424,9 @@ def run_stage(folder, stage):
         record = read(seal); out = output_for(stage, folder)
         require(out.is_file() and record["output_sha256"] == sha(out), "sealed stage output changed")
         if stage == "enumeration": require(record["enumeration_sha256"] == sha(enumeration_path(folder)), "sealed enumeration TSV changed")
+        if "import_sha256" in record:
+            require(record["import_sha256"] == sha(phase/"import.json"), "import receipt changed")
+            require(read(phase/"import.json") == plan["reused_enumeration"], "import provenance differs from plan")
         return
     require(not started.exists(), "interrupted unsealed stage; preserve folder and use a fresh --folder")
     atomic(started, {"stage":stage, "time":time.time()})
@@ -446,6 +495,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("command", choices=("prepare","run","resume","status","check","smoke","_stage"))
     p.add_argument("--source", type=Path)
+    p.add_argument("--reuse-enumeration", type=Path, help="new folder only: import a hash-verified complete enumeration of identical source inputs")
     p.add_argument("--folder", type=Path, default=DEFAULT)
     p.add_argument("--stage", choices=STAGES)
     p.add_argument("--max-directions", type=int, default=2_000_000)
@@ -454,7 +504,7 @@ def main():
     a = p.parse_args()
     if a.command == "smoke": smoke(); return
     if a.command == "status": status(a.folder); return
-    if a.command == "prepare": prepare(a.folder, a.source, a.max_directions, a.max_nodes, a.stage_seconds); return
+    if a.command == "prepare": prepare(a.folder, a.source, a.max_directions, a.max_nodes, a.stage_seconds, a.reuse_enumeration); return
     if a.command == "check": check(a.folder); return
     if a.command == "_stage":
         plan, data = guard(a.folder); require(a.stage is not None, "_stage requires --stage")
@@ -464,7 +514,7 @@ def main():
         return
     if a.command == "run":
         require(not a.folder.exists(), "folder exists; use resume")
-        prepare(a.folder, a.source, a.max_directions, a.max_nodes, a.stage_seconds)
+        prepare(a.folder, a.source, a.max_directions, a.max_nodes, a.stage_seconds, a.reuse_enumeration)
     execute(a.folder)
 
 if __name__ == "__main__": main()
