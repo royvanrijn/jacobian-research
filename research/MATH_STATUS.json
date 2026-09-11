@@ -3,6 +3,35 @@
   "authority": "MATH_STATUS.json",
   "entries": [
     {
+      "id": "EC-CURVE302-SHORT-VECTOR-CORE-20260911",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complete short-vector census partially matches but does not reproduce the Curve302 common-core chain",
+      "scope": "For the supplied exact rational Schur form of the entrywise-rounded height metric, complete exact Fincke-Pohst enumeration through the largest of 180 observed primitive acquisition norms gives 1,288,441 signed-primitive directions modulo sign in 5,789,129 nodes, covering all 124 distinct observed directions. All 194 prefix lattices have index one and the 14 common integral intersections equal the prior exact-core certificate. Intrinsic saturation begins with <L2>, <L2,L4>, <L1,L2,L4>, where Li are the recovered-local axes. Thus the common rank-one and rank-three cores agree, but the observed rank-two core <L1,L2> is never an intrinsic norm-shell step. The common ranks five, six and nine first enter intrinsic ranks ten, eleven and eleven and never occur as exact steps. The first 29 primitive directions already span the full quotient at scaled norm 27.4396586377. Exact acquisition counts are 59 in the top10, 83 in the top100 and 136 in the top1000; the retained upper-middle rank is171. Of 96 basin rows, many have an already-contained core; their fraction one is forced. At quotient dimension six, twelve of fourteen prefixes already contain L2, while the two deficient prefixes have actual-norm basin counts1/1 and104/12580. Initial interruption and filtration timeout evidence is preserved. Exact rank/annihilator optimizations and sealed-enumeration reuse completed the analysis; full deterministic re-enumeration matched all output bytes. This is a finite rounded-metric result and a negative result for equality of the whole intrinsic and observed core chains, not a new rank claim, V3 transition probability, prospective predictor or propagation theorem.",
+      "canonical_source": "elliptic-curves/notes/CURVE302_SHORT_VECTOR_CORE_EXPERIMENTS_2026-09-11.md",
+      "dependencies": [
+        "EC-CURVE302-EXACT-SHARED-CORE-20260911"
+      ],
+      "checker": "elliptic-curves/cas/run_curve302_short_vector_core.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:be49676314aff586a08593bd526b4935b140da62026087d8a2b6683fff58f279",
+      "software_lock": [
+        "elliptic-curves/cas/curve302_short_vector_core.py",
+        "elliptic-curves/cas/run_curve302_short_vector_core.py",
+        "artifacts/generated-results/elliptic-curves/curve302_short_vector_core_v1/manifest.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-CURVE302-EXACT-SHARED-CORE-20260911",
       "kind": "example",
       "state": "proved",

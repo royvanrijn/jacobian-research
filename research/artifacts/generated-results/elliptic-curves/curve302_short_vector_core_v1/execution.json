@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_RUN_AND_DETERMINISTIC_CHECK",
+  "pid": 4156745,
+  "folder": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3",
+  "stages": [
+    {
+      "action": "run",
+      "returncode": 0,
+      "outcome": "COMPLETED",
+      "seconds": 52.173266917990986
+    },
+    {
+      "action": "check",
+      "returncode": 0,
+      "outcome": "COMPLETED",
+      "seconds": 272.06397383500007
+    }
+  ],
+  "child_pid": 4169823,
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_curve302_short_vector_core.py",
+    "check",
+    "--folder",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3"
+  ],
+  "updated_utc": "2026-09-11T09:27:03.456699+00:00"
+}

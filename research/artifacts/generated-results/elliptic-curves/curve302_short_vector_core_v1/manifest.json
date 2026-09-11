@@ -1,0 +1,27 @@
+{
+  "boundary": "Exact finite enumeration and intrinsic/basin analysis for the supplied rounded Schur metric. Full TSV retained locally; compact outputs exported. Deterministic check re-enumerated and matched every output byte-for-byte. Not a new rank or propagation theorem.",
+  "files_sha256": {
+    "REPORT.json": "7ba8cb2b4543ac4da13851accadf38edcbe76a6e660b5f0380835732b881e3fc",
+    "check.log": "203a705b6b802bf74fc72fc7287ecea0fde78db1d4271901b6be9338df288b58",
+    "common-core-crosscheck.json": "77480ad27e9ef4c00cc4d5ad84247b6028dd1bba0fce2ce353cc381f555a1263",
+    "enumeration.json": "ce0e9f81527c67de2e06cf49c35aaade3db0b4aca9aba9a60c7d81651f868c88",
+    "execution.json": "c343acf0b85dfc5bd5f118460d38caad7f6ee4985c2e7c288196a43c5c98592e",
+    "filtration.json": "160e2cacc25b84082793306acbc4af695416f540bf099e523766e4078b5ca168",
+    "plan.json": "5fa47b2fbbe27f03fcbb358da972ece0f890de1f469113f7d32814852b050eff",
+    "ranks-basins.json": "623e37f004523cc37f5c4c17e5538c81f5bf8f01e2a68888dd659988b9477a72"
+  },
+  "primitive_directions_tsv": {
+    "path": "research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3/primitive-directions.tsv",
+    "rows": 1288441,
+    "sha256": "173e1b5f4ff9a250e451957ef200c4e457f99b0d8fec56da392a006fe7e33b96"
+  },
+  "schema": "curve302-short-vector-core-export.v1",
+  "software": {
+    "executable": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+    "numpy": "2.5.2",
+    "python": "3.14.7 | packaged by conda-forge | (main, Aug 19 2026, 15:32:49) [GCC 15.3.0]",
+    "sympy": "1.14.0"
+  },
+  "source_commit": "5195d9451a55c2681ff9c3923783b839295ccc5f",
+  "status": "PASS_COMPLETE_RUN_AND_DETERMINISTIC_CHECK"
+}

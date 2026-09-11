@@ -1,0 +1,9 @@
+{
+  "enumeration_sha256": "173e1b5f4ff9a250e451957ef200c4e457f99b0d8fec56da392a006fe7e33b96",
+  "outputs": {
+    "enumeration": "ce0e9f81527c67de2e06cf49c35aaade3db0b4aca9aba9a60c7d81651f868c88",
+    "filtration": "160e2cacc25b84082793306acbc4af695416f540bf099e523766e4078b5ca168",
+    "ranks-basins": "623e37f004523cc37f5c4c17e5538c81f5bf8f01e2a68888dd659988b9477a72"
+  },
+  "status": "PASS_THREE_SHORT_VECTOR_CORE_EXPERIMENTS"
+}

@@ -1,0 +1,37 @@
+{
+  "boundary": "Retrospective static quotient-lattice analysis only; no point search, rank claim, prospective selector or propagation theorem.",
+  "code_hashes": {
+    "curve302_short_vector_core.py": "80beac89e4fe903e8c510c8dc9375b241ccf7d9c865f62000d4d733ca44910a4",
+    "run_curve302_short_vector_core.py": "be49676314aff586a08593bd526b4935b140da62026087d8a2b6683fff58f279"
+  },
+  "expected": {
+    "acquisitions": 180,
+    "directions": 14,
+    "runs": 14
+  },
+  "policy": {
+    "max_directions": 2000000,
+    "max_nodes": 100000000,
+    "stage_seconds": 3600
+  },
+  "reused_enumeration": {
+    "files_sha256": {
+      "enumeration.json": "ce0e9f81527c67de2e06cf49c35aaade3db0b4aca9aba9a60c7d81651f868c88",
+      "primitive-directions.tsv": "173e1b5f4ff9a250e451957ef200c4e457f99b0d8fec56da392a006fe7e33b96"
+    },
+    "folder": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve302-short-vector-core-v2",
+    "producer_code_hashes": {
+      "curve302_short_vector_core.py": "3efe06d4a7a75787ac715e46aad1b5ca5237c8b4957e2fbc71624a66f939afe9",
+      "run_curve302_short_vector_core.py": "a211a41d37b3809e5b501ad7f22cd697b2a7e3834bbeff21b39c938fde2e2489"
+    },
+    "producer_plan_sha256": "bc8e94c4c13f37fabfc8d2253bdae8edc0ee59a11b2f73684e51f6e8d1ea4991"
+  },
+  "schema": "curve302-short-vector-core-plan.v1",
+  "source": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/curve302-closure-structure-v1",
+  "source_hashes": {
+    "REPORT.json": "a3e21d661c29dc30c4334a4cb3bd20ba55ad505d3380eacdbe2584cfd03ec358",
+    "quotient-relations.json": "41c976a751004131469adfaea49d9e8e468652a8b65a77440204ed89377b5396",
+    "trajectories.json": "70ce0a09051f8a5bd8fc4444fd29299064b7907c85d8f6a7a99e6a32d29b13fa"
+  },
+  "status": "SEALED_NOT_RUN"
+}

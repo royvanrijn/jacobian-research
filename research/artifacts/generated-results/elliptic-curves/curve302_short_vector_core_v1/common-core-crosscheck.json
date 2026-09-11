@@ -1,0 +1,7 @@
+{
+  "status": "PASS_ALL_14_COMMON_INTEGRAL_INTERSECTIONS_MATCH",
+  "filtration_sha256": "160e2cacc25b84082793306acbc4af695416f540bf099e523766e4078b5ca168",
+  "prior_exact_core_sha256": "6507b4c49fc9727888428515b547cb9a96ee3dd5cb78188108e610d0d78d8290",
+  "dimensions_checked": 14,
+  "boundary": "Exact equality of integer row modules against the earlier independently reconstructed core certificate; no new elliptic-curve arithmetic."
+}

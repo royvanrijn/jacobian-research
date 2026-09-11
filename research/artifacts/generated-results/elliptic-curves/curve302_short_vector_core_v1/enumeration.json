@@ -1,0 +1,12 @@
+{
+  "bound": "1915991852253031395516413834360992546439182080547201464141187252553023680779091762649155179015249448174848657156911489114237717891005/15095084349280312365795524807916067234803141612780487904512554853807467067062983959557583685939558460804059591361600453897566",
+  "definition": "All primitive integer directions modulo sign with v^T Q v <= max static Q-norm among the 180 acquired primitive directions.",
+  "direction_count": 1288441,
+  "distinct_observed_directions": 124,
+  "enumeration_sha256": "173e1b5f4ff9a250e451957ef200c4e457f99b0d8fec56da392a006fe7e33b96",
+  "leaves": 2577037,
+  "nodes": 5789129,
+  "observed_acquisitions": 180,
+  "schema": "curve302-short-vector-enumeration.v1",
+  "status": "PASS_COMPLETE_EXACT_ENUMERATION"
+}

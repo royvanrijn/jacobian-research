@@ -9,6 +9,14 @@ They consume only the sealed `curve302-closure-structure-v1` outputs
 (`quotient-relations.json`, `trajectories.json`, `REPORT.json`). No point search,
 Mestre scoring, V3 execution, rank search or new curve construction is launched.
 
+**Completed result:** the intrinsic norm-shell filtration recovers the common
+rank-one and rank-three local cores, but **does not reproduce the entire V3
+common-core chain**. All 180 acquisitions have exact ranks in the complete
+1,288,441-direction vocabulary. The full deterministic check passes.
+See [completed results](#completed-real-results) and the
+[compact certificate bundle](../../artifacts/generated-results/elliptic-curves/curve302_short_vector_core_v1/manifest.json).
+Status authority: `EC-CURVE302-SHORT-VECTOR-CORE-20260911`.
+
 Run from `research/`:
 
 ```sh
@@ -35,7 +43,7 @@ limits:
 
 - Incremental rational echelon reduction replaces repeated general matrix
   rank calls. Filtration consumes the complete final norm shell, then stops
-  after reaching rank14: saturation is Z^14 at every later shell.
+  after reaching rank 14: saturation is Z^14 at every later shell.
 - A single shell scan computes all observed rank intervals with exact ties.
 - Basin annihilators are cleared to primitive integer rows. Optional NumPy
   int64 dot products run only when the exact bound
@@ -43,7 +51,7 @@ limits:
   Unsafe cases and environments without NumPy use arbitrary-size Python
   integers. No floating-point containment or cutoff is introduced.
 - Enumeration obtains each leaf's norm from the exact accumulated LDL sum,
-  instead of evaluating all196 matrix terms again. Full deterministic `check`
+  instead of evaluating all 196 matrix terms again. Full deterministic `check`
   still re-enumerates the entire ball and compares the TSV byte-for-byte.
 
 Seventeen tests pass, including comparison with exact matrix ranks and rational
@@ -66,7 +74,75 @@ stage seal, output hashes, identical source bindings, exact observed norm bound
 and the current node/vector limits. Imported files are copied and rehashed;
 the new plan and import receipt preserve their producer's code hashes. The
 failed donor is never resumed, edited or relabelled. Sage Python is used here
-because system Python lacks SymPy; the installed SymPy is1.14.0.
+because system Python lacks SymPy; the installed SymPy is 1.14.0.
+
+## Completed real results
+
+Optimization commit `5195d945` completed the fresh v3 run in 52.17 seconds:
+filtration 20.81 seconds, ranks/basins 29.43 seconds, plus verified enumeration
+import. The preceding filtration attempt reached its 3,600-second cap. The
+full deterministic check took 272.06 seconds, re-enumerated the entire ball,
+and matched enumeration metadata, all TSV bytes, filtration and ranks/basins
+outputs exactly. It did not merely trust the imported enumeration.
+
+The [export](../../artifacts/generated-results/elliptic-curves/curve302_short_vector_core_v1/manifest.json)
+preserves output hashes, the frozen plan and import provenance, execution
+receipts and check log. The full TSV stays under local artifacts, with hash
+`173e1b5f4ff9a250e451957ef200c4e457f99b0d8fec56da392a006fe7e33b96`.
+A separate Sage integer-module comparison verifies that all 14 independently
+reconstructed common intersections equal the earlier exact-core certificate.
+
+Write L1,L2,L4 for recovered-local-01,02,04. In units Q(v)/10^6, the first
+three primitive directions and saturation steps are:
+
+| Primitive rank | Direction | Norm | Intrinsic saturated lattice |
+| --- | --- | --- | --- |
+| 1 | L2 | 16.4776247118 | <L2> |
+| 2 | L2-L4 | 17.6213023391 | <L2,L4> |
+| 3 | L1 | 19.8433942551 | <L1,L2,L4> |
+
+The observed common rank-two lattice is <L1,L2>. Since L4 enters the intrinsic
+filtration before L1, **no norm threshold produces that rank-two common core**.
+The first and third local cores agree exactly. The later rank-five, rank-six
+and rank-nine common cores are also absent as exact intrinsic steps:
+
+| Trajectory dimension | Runs | Common rank | Intrinsic rank when first contained | Exact intrinsic step? |
+| --- | --- | --- | --- | --- |
+| 6 | 14 | 1 | 1 | Yes |
+| 8 | 14 | 2 | 3 | No |
+| 9 | 14 | 3 | 3 | Yes |
+| 11 | 14 | 5 | 10 | No |
+| 12 | 14 | 6 | 11 | No |
+| 13 | 13 | 9 | 11 | No |
+| 14 | 13 | 14 | 14 | Yes, full ambient lattice |
+
+The intrinsic filtration reaches full rank 14 at norm 27.4396586377, within the
+first 29 primitive directions. Its dependence only on the rounded quotient
+metric does not make it the same filtration as the common V3 histories.
+
+The complete rank census has no missing-vocabulary cases:
+
+| Exact static rank cutoff | Acquisitions |
+| --- | --- |
+| Top 10 | 59/180 |
+| Top 100 | 83/180 |
+| Top 1000 | 136/180 |
+
+The two middle ranks are 168 and 171, giving the usual median 169.5. The output's
+`median_rank_worst` retains the upper middle rank, 171; the maximum is 1,288,441.
+The five most frequent acquired primitive directions have global
+static ranks 1,8,3,4,2, respectively. This supports recurrence of very short
+directions without establishing the complete intrinsic-filtration explanation.
+
+The 96 basin rows must be read with their `deficit_before` fields. At the
+landmarks 6,8,9, respectively 12,13,13 of 14 prefixes already contain the target
+core; their basin fraction is forced to one. Among the two prefixes still
+missing L2 at dimension 6, the actual-norm counts are 1/1 and 104/12,580.
+At the rank-two and rank-three landmarks the one remaining deficient prefix
+has counts 1/2 and 1/1. Full-rank endpoint basin fractions are also forced to one.
+Thus the large aggregate basin means do not by themselves establish a broad
+propagation basin. The complete per-prefix counts are retained, with no
+replacement scoring rule or prospective probability interpretation.
 
 ## Experiment 1: complete primitive-vector vocabulary
 
@@ -145,7 +221,8 @@ observed common cores. It does not infer a V3 transition probability, prove that
 a short lattice vector has a rational point/chart of bounded complexity, or prove
 a self-propagation theorem.
 
-The useful theorem-shaped next target, if the experiment is positive, is:
+The original conditional target below remains unproved; the completed
+experiment does not establish it:
 
 > A distinguished low-height saturated sublattice of `D/M17` has a large basin of
 > short primitive extensions under the half-lattice geometry; once enough of that
