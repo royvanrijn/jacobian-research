@@ -133,7 +133,11 @@ def check(args):
     expected={'lead-times.json':tables['lead_times'],'precontainment-multiplicity.json':tables['precontainment_multiplicity'],
               'coexposure-choices.json':tables['coexposure_choices'],'saturation-impact.json':tables['saturation_impact']}
     for name,obj in expected.items():
-        require(read(out/name)==obj,f'{name} deterministic recomputation mismatch')
+        # JSON encodes tuple-valued lattice words as arrays.  Compare the exact
+        # canonical bytes that ``atomic`` writes instead of Python tuple/list
+        # container types after reloading the file.
+        rendered=json.dumps(obj,sort_keys=True,indent=2,allow_nan=False)+'\n'
+        require((out/name).read_text()==rendered,f'{name} deterministic recomputation mismatch')
         require(report['outputs'][name]==sha(out/name),f'{name} hash mismatch')
     require((out/'SUMMARY.md').read_text()==summary_md(tables,stats),'SUMMARY.md deterministic mismatch')
     require(report['summary_sha256']==sha(out/'SUMMARY.md'),'summary hash mismatch')
