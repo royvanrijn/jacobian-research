@@ -173,13 +173,22 @@ def source_data(short, structure):
         seed = raw["seed"]
         require(seed in NAMES, "unknown trajectory seed")
         events = []
+        no_gain_epochs = []
         raw_stages = raw["stages"]
         for expected_epoch, stage in enumerate(raw_stages):
             require(integer(stage["epoch"]) == expected_epoch, "trajectory epochs reordered")
+            if not stage["new"]:
+                require(integer(stage["after"]) == integer(stage["before"]),
+                        f"empty acquisition stage changed rank: {seed}/{expected_epoch}")
+                require(expected_epoch == len(raw_stages) - 1,
+                        f"nonterminal no-gain stage unsupported: {seed}/{expected_epoch}")
+                no_gain_epochs.append(expected_epoch)
+                continue
             # Historical seeded closure runs in this experiment acquired one new
             # displayed-D direction per accepted stage. Refuse to invent ordering
             # inside a multi-gain stage.
-            require(len(stage["new"]) == 1, f"multi-gain stage unsupported for ordering control: {seed}/{expected_epoch}")
+            require(len(stage["new"]) == 1,
+                    f"multi-gain stage unsupported for ordering control: {seed}/{expected_epoch}")
             item = stage["new"][0]
             require(item.get("integral") is True and integer(item["denominator"]) == 1, "nonintegral trajectory acquisition")
             word = tuple(integer(v) for v in item["quotient_word"])
@@ -191,6 +200,8 @@ def source_data(short, structure):
         charts = integer(raw["charts"])
         require(charts > 0, "trajectory chart count missing")
         runs.append({"seed": seed, "seed_index": NAMES.index(seed), "events": events,
+                     "epochs": list(range(len(raw_stages))),
+                     "no_gain_epochs": no_gain_epochs,
                      "final_dimension": qfinal, "charts": charts})
         total += len(events); total_charts += charts
     require(len(runs) == 14 and len({r["seed"] for r in runs}) == 14, "expected fourteen seeded runs")
@@ -241,7 +252,7 @@ def prepare(folder, source=None, structure=None, raw_root=None, ledger_path=None
     require(1 <= static_limit <= integer(data["enumeration"]["direction_count"]), "invalid static candidate limit")
     require(1 <= random_orders <= 10000, "invalid random-order count")
     require(stage_seconds > 0 and memory_bytes >= 512*1024**2, "invalid stage resource budget")
-    expected_epochs = {r["seed"]: set(range(len(r["events"]))) for r in data["runs"]}
+    expected_epochs = {r["seed"]: set(r.get("epochs", range(len(r["events"])))) for r in data["runs"]}
 
     folder.mkdir(parents=True, exist_ok=False)
     try:

@@ -468,7 +468,8 @@ def validate_ledger(ledger, names, runs, *, expected_total_charts=None):
     for run in runs:
         seed = run["seed"]
         stages = by_seed[seed]["stages"]
-        require([integer(s["epoch"]) for s in stages] == list(range(len(run["events"]))),
+        expected_epochs = [integer(e) for e in run.get("epochs", range(len(run["events"])))]
+        require([integer(s["epoch"]) for s in stages] == expected_epochs,
                 f"ledger epochs differ for {seed}")
         for stage in stages:
             charts = stage["charts"]
