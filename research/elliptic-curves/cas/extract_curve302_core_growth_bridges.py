@@ -309,10 +309,14 @@ def check(args):
     report = read(out / "REPORT.json")
     require(report.get("status") == "PASS_CURVE302_DECISIVE_CORE_GROWTH_BRIDGES", "report not passed")
     require(report["frozen_ledger_sha256"] == sha(ledger_path), "frozen replay ledger changed")
-    require(read(out / "core-growth-analysis.json") == analysis, "core-growth analysis deterministic mismatch")
+    analysis_bytes = json.dumps(analysis, sort_keys=True, indent=2, allow_nan=False) + "\n"
+    require((out / "core-growth-analysis.json").read_text() == analysis_bytes,
+            "core-growth analysis deterministic mismatch")
     require(report["analysis_sha256"] == sha(out / "core-growth-analysis.json"), "analysis hash mismatch")
     if schema is not None:
-        require(read(out / "raw-chart-schema.json") == schema, "raw chart schema deterministic mismatch")
+        schema_bytes = json.dumps(schema, sort_keys=True, indent=2, allow_nan=False) + "\n"
+        require((out / "raw-chart-schema.json").read_text() == schema_bytes,
+                "raw chart schema deterministic mismatch")
         require(report["raw_schema_sha256"] == sha(out / "raw-chart-schema.json"), "raw schema hash mismatch")
     else:
         require(report["raw_schema_sha256"] is None, "report expected raw schema but recomputation has none")
