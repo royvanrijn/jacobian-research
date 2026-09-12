@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "scope": "Source-level review of elliptic-curve and supporting K3 partial results. Earlier reviews of archived programmes are retained as history; unreviewed active coverage remains explicit.",
+  "scope": "Source-level review of elliptic-curve and supporting K3 partial results. Earlier reviews of archived programmes are retained as history; unreviewed active coverage remains explicit. The checker_absence_reviews collection separately classifies written proofs, research objectives and any missing witness; it is not counted as partial-result coverage.",
   "reviews": [
     {
       "id": "LND-PLS",
@@ -3317,7 +3317,7 @@
         "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "2be7f9412e2d9864caedaf5acc1650485adf910709b5942f31b707aa762b4fb5",
         "EC-CURVE302-RECOVERY-CALIBRATION-20260907": "ad2d0dd1bed10dfeb23782d7a51fdc383101352dbb01d10cc94b53755b1a524b",
         "EC-DET1092-REDUCED-PARAMETER-CHART-20260907": "4b9c3b8e0c6e116fa88b055ef2bf4cbdd8fd88138eea114572ca6844b7d07a09",
-        "OP-EC-NEXT": "c9093e3f1127c393be62d7050c70c6766497d6420ab737dcebac42079c22ce56"
+        "OP-EC-NEXT": "9289645b7de88d8c37672d4de2e6e6c39396c89ff13337c1bcd995bd37983c61"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
@@ -4253,7 +4253,7 @@
       "remaining": "No further QQ-marking construction is open for exact NS0031: the later modular theorem excludes it. Keep the finite lift as a local regression; it does not prove the global obstruction itself.",
       "disposition": "historical-route",
       "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes.",
-      "input_review": "Inspected primary checker inputs, decisive assertions, output payloads and replay modes; checked retained compact outputs and input declarations. The NS0031 scan --check launches247 Sage lifts, and the candidate-cover check reconstructs class fields and extension-field sums, so neither was run. The Phase1 marked-curve artifact retains historical two-CM/missing-cover prose; its later companion certificates supply the stronger current result. The T-first metadata builder alone was rerendered: only false-to-null point-existence fields changed, with classifications, ordering, inputs and empty dispatch unchanged. Large source catalogues were inspected through their retained manifests rather than regenerated.",
+      "input_review": "Inspected primary checker inputs, decisive assertions, output payloads and replay modes; checked retained compact outputs and input declarations. The NS0031 scan --check launches247 Sage lifts, and the candidate-cover check reconstructs class fields and extension-field sums, so neither was run. The Phase1 marked-curve artifact retains historical two-CM/missing-cover prose; its later companion certificates supply the stronger current result. The T-first metadata builder alone was rerendered: only false-to-null point-existence fields changed, with classifications, ordering, inputs and empty dispatch unchanged. Large source catalogues were inspected through their retained manifests rather than regenerated. The NS0031 finite arithmetic now also has a compact, independent standard-library replay; its arithmetic period-map premise remains an external review obligation.",
       "dependency_review": "Local modular and formal results do not supply rational markings. The arithmetic classifier validates imported exact assertions and retains the named external theorem obligations. The later candidate cover depends on the marked-curve identification, so the two are companion stages rather than a circular proof dependency. Mathematical states and assurance flags remain unchanged.",
       "evidence": [
         {
@@ -4263,14 +4263,14 @@
       ],
       "reviewed_claims": {
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR": "b45bdbdefec78f9a602b1af1ca67af22d1c3549e233c847de72541e474320f02",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "acf2394e99646296811ad046d44f165c54525bb0ba07924e1245fc07cb6d7c06",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "53775db840b74998344699d359a92bf5ecb3791fed7c9c380b28e8bc361236ec",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "033f97c8e0552005bf1ddeb47d514ba80cea4ad135cec0f04386abeb468d44a6"
       },
       "reviewed_files": {
         "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md": "f2d62a222e0eae622c7e0296225b74e9c9935b0f22ed55b2b70bface78161c2b",
         "elkies-k3/scripts/scan_lattice_foundry_ns0031_a1_2a7_marking_modp.sage": "89670138eaef5fe5c6187d6df2c36466b9e1bd731a8b3bc26eeadbdaa6a5a85c",
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage": "fc70734cb98add64c45c1d36f20cf8ca09e48c2d25f196e1f523dc474cd0bb9f",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "6016fee0e5438ef947a49ffd4634e4ec17e3ca3f2e2593867bf12bf526d29ac3"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "e6196934847acd91ade119712a10576d94cb65189a616db0cb8653b85a726918"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json": "a3975a15ff09770d1dff8f4ec17692e9a0effc04645561336a1205319b8f2aeb",
@@ -4287,7 +4287,7 @@
       "remaining": "The scan itself does not classify rational points or prove irrationality. The separate NS0031 rational-marking obstruction closes this source route; do not extend the box to rediscover that theorem.",
       "disposition": "bounded-only",
       "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes.",
-      "input_review": "Inspected primary checker inputs, decisive assertions, output payloads and replay modes; checked retained compact outputs and input declarations. The NS0031 scan --check launches247 Sage lifts, and the candidate-cover check reconstructs class fields and extension-field sums, so neither was run. The Phase1 marked-curve artifact retains historical two-CM/missing-cover prose; its later companion certificates supply the stronger current result. The T-first metadata builder alone was rerendered: only false-to-null point-existence fields changed, with classifications, ordering, inputs and empty dispatch unchanged. Large source catalogues were inspected through their retained manifests rather than regenerated.",
+      "input_review": "Inspected primary checker inputs, decisive assertions, output payloads and replay modes; checked retained compact outputs and input declarations. The NS0031 scan --check launches247 Sage lifts, and the candidate-cover check reconstructs class fields and extension-field sums, so neither was run. The Phase1 marked-curve artifact retains historical two-CM/missing-cover prose; its later companion certificates supply the stronger current result. The T-first metadata builder alone was rerendered: only false-to-null point-existence fields changed, with classifications, ordering, inputs and empty dispatch unchanged. Large source catalogues were inspected through their retained manifests rather than regenerated. The NS0031 finite arithmetic now also has a compact, independent standard-library replay; its arithmetic period-map premise remains an external review obligation.",
       "dependency_review": "Local modular and formal results do not supply rational markings. The arithmetic classifier validates imported exact assertions and retains the named external theorem obligations. The later candidate cover depends on the marked-curve identification, so the two are companion stages rather than a circular proof dependency. Mathematical states and assurance flags remain unchanged.",
       "evidence": [
         {
@@ -4297,14 +4297,14 @@
       ],
       "reviewed_claims": {
         "EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN": "c75b6b8d7523d42ba808e039959422833de60d8710ce150013542855e7bdb90f",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "acf2394e99646296811ad046d44f165c54525bb0ba07924e1245fc07cb6d7c06",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "53775db840b74998344699d359a92bf5ecb3791fed7c9c380b28e8bc361236ec",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "033f97c8e0552005bf1ddeb47d514ba80cea4ad135cec0f04386abeb468d44a6"
       },
       "reviewed_files": {
         "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md": "ed7e28bd74bdd52165cc25ea74b686793f0be88f15ae022b73d43ac5014569f8",
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage": "fc70734cb98add64c45c1d36f20cf8ca09e48c2d25f196e1f523dc474cd0bb9f",
         "elkies-k3/scripts/scan_lattice_foundry_ns0031_rational_parameters.sage": "cbafe412e528e736c2dd0c87e196dd2cca0683593846c7485232e1c4937153e3",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "6016fee0e5438ef947a49ffd4634e4ec17e3ca3f2e2593867bf12bf526d29ac3"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "e6196934847acd91ade119712a10576d94cb65189a616db0cb8653b85a726918"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json": "0187b44d46d41572961261be344a1bafd3ee204f98754d173f15438699863f55",
@@ -4408,18 +4408,18 @@
       "id": "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912",
       "source": "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md",
       "disposition": "open-obligation",
-      "completed": "Reviewed the full canonical note and both preflight programs. Independent Sage replay reconstructs deterministic selection, checks Q-isomorphism exclusions against the frozen491-equation projection and all128 generic point equations, and verifies3884 retained timing receipts. No production arithmetic was run.",
-      "remaining": "Resolve the resource rule, implement and freeze a parameterized constructor without fixed reference dimensions or residue-degree assumptions, commission it end to end at3/17, freeze numeric budgets from complete metering, execute the eight inputs without replacement, and certify at least one fresh strict-class-to-point rank gain. Matched V3 and post-seal combined-subgroup complementarity remain unrun.",
-      "source_review": "The note explicitly distinguishes frozen inputs from execution, the3202.922-second recorded subtotal from complete cost, and NOT_STARTED from preparation/class/search failures. It preserves the fixed-word/carrier stopping boundary and separate strict, rational, rank and ordinary ideal-class endpoints.",
-      "input_review": "The selector reads the database only to project equations, excluding historical ranks, points and scores from execution inputs. It exports the sanitized family, exact generic specializations and a frozen alias snapshot. Replay used the current bound atlas/database and local timing receipts; no portable full historical cost-replay archive or operating-system worker isolation is claimed. The source adapter and complete timing are not missing artifacts to reconstruct automatically: they are explicit unfinished engineering and measurement gates.",
+      "completed": "Reviewed the full canonical note, frozen inputs, staged controller and narrow constructor/lifting/V3 adapters. Original input replay remains valid. Seven cheap toy regressions and process-tree supervision pass. The corrected detached launch has an exact control generic16 certificate and cold field preparation, with principal-relation collection begun; full commissioning is not complete. The class bank has since completed:841 atoms, projected parity rank841, no dependency and no extracted class. Reviewed its terminal, sealed cost and binary diagnostic; no full independent atom-factorization replay is asserted.",
+      "remaining": "Full class-to-point commissioning and fresh transfer remain unproved. Finish the independent V3 reference arm and stop the pilot without fresh fibres. Diagnose the frozen cold dependency bank before any newly authorized modification; no cap enlargement or panel expansion is automatic.",
+      "source_review": "The complete note now distinguishes the immutable pre-execution snapshots from a dated launch receipt and the live status command. It specifies both executable gates, the36-hour ceiling, complete charging including the initial import failure, source snapshots and the absence of OS isolation. The fixed-word and carrier branches stay closed.",
+      "input_review": "Execution starts only from sanitized equation/generic packets. Field, maximal order, local maps, generic strict dimension, ideal columns and principal dependencies are rebuilt. Code-only snapshots include transitive ecsearch imports. Each arm has an application read allowlist; post-seal comparison receives both outputs only afterward. The lift verifier can read its own new class provenance but receives no historical point or baseline cloud. Public Magma requests retain standard service limits and separate timing. A second snapshot fix includes native C++ helper sources. Reference-only v3 continuation preserves the failed class bank, debits prior class/V3/union costs, and contains an explicit terminal branch that cannot launch fresh fibres.",
       "dependency_review": "The blind control recovery proves only solubility of two fixed control covers. The finite-Selmer-specialization theorem closes only the fixed column6 continuation; neither dependency proves transfer or an infinite parameter mechanism. No broader dependency is marked completed by input preparation.",
       "reviewed_claims": {
-        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "c5ba7044a0f4daef5f18c605a018ce982080f9023e93fa692ca8536d52c6926a",
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "beec8afd34aef2193bc7b997ef21d2334acf415985e1ade4ec445f70cf6827d2",
         "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "dbf48eaa4b82e047164adb62fda91598f176e7cc12b0f689387160345a48bd0b",
         "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912": "0dca85156ed41a8e26a79a3d997f1c15116e882d9c883706ebfa2ae525555efc"
       },
       "reviewed_files": {
-        "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md": "385a94ee614de61be87bc3c81cbae20fdb6a765efd1bbc35f02056e999f6f5b7",
+        "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md": "2b10d4c1e6aef56fbb8c30d81c0d685d8f0ee39b56a6b3447e8c904e06f1a332",
         "elliptic-curves/rank-jump/verify_fresh_constructor_transfer.py": "3b8263de284c8ad9d6bdd4197e873200c5f45193c1831efae570e42934bab431",
         "elliptic-curves/rank-jump/fresh_constructor_transfer.py": "7fa65bc633fc06efc3c0243331f7d75e5179a626ed74e90178c391e551ee2a3f",
         "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/selection.json": "aeb446e4478c2e75cdb53ca26894c9d51f08e79580bdb9ab7e36053bb4cee88d",
@@ -4428,22 +4428,409 @@
         "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/historical-cost-audit.json": "3fc75b7c2cc3d97c8f3cba789e9ff600be6ce7e43ed97f9bbbae2b49c1373f39",
         "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/independent-input-replay.json": "f63f0e1fadd38a5db03d562226d791cebc069046df6681906afb5833e801ccf8",
         "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/design.json": "8cb4004a88b0863defadba8c6c8e4ef8e78d98c1c963e43242732798107f1f67",
-        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/initial-stage-ledger.json": "20ce60705a6a1284fe5bec416194c3aa07cfc879f927d6a93df687e227e073cf"
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/initial-stage-ledger.json": "20ce60705a6a1284fe5bec416194c3aa07cfc879f927d6a93df687e227e073cf",
+        "elliptic-curves/rank-jump/transfer_common.py": "f7b249824a94cac691b156f6062bf7c864b1f75d1a1e4c4baa0cfe643dfcb269",
+        "elliptic-curves/rank-jump/transfer_constructor.py": "19c7869fd5cc9fdef5e2a30d6ab8f8701cfb76c83a4c9693a352bccfff568785",
+        "elliptic-curves/rank-jump/transfer_lift.py": "cf31d7d7962948c3a3bb408edc3c1b9c25b03b081bd82c60c9d3826cb2e03a08",
+        "elliptic-curves/rank-jump/transfer_v3.py": "f3b65301e8600849e3e9da0034dc6fc251ccbab6f6809561fd3d8afcf5297cc2",
+        "elliptic-curves/rank-jump/transfer_compare.py": "57f12e4b1205624a3f66a3627e4596de432d07aee562f8d93bdbd67ab88ec3a8",
+        "elliptic-curves/rank-jump/run_fresh_constructor_transfer.py": "13dc1491f8e9de3e19d84e78bfd11ecdadbda6e96a39efd165822c802d3db61b",
+        "elliptic-curves/rank-jump/test_transfer_commissioning.py": "66a40689446e2fa1661d284bc835c1a88b828974398ed829e9799777110277ed",
+        "elliptic-curves/rank-jump/transfer-status.sh": "6c7a5cabdf6f2e5aa1bc99cfbdc8a948ed268b8d651a81e71b93a3fd53f9d72e",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/execution-protocol.json": "ca93ff551499d32ac4dfdc29df8427db8cab088dd06615f883c51428caffe666",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/execution-protocol-v2.json": "47f0f04023c311b6c3283fb54c06b8de309a2ba541d6da1b2f0e9c67f2c9fae9",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/launch-receipt.json": "cb5c1f6a4819306ae3cd641d53da437466f8616ef7e454bdb8e75984e34d0ce4",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/commissioning-starting-subgroup.json": "ccfa9be82b6d82aaabd27ef7be9a8ed7afb14ff060806bac5747ed204971fed0",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/commissioning-field.json": "5cfb5027f39e0174012e39cf19ce8fd44b98c51eea8c6b38fc7a774cde7a3a0d",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/reference-class-stop.json": "3a3b813b8f3d80daa4b285930fe97f07103315c8e3037e7b908bb340abe3ae2b",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/execution-protocol-v3.json": "d47dd16acb17412a166ff44412f609c2d94bdd11051f1fc8939a598e62b8874a",
+        "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/v3-reference-repair-launch.json": "7f4e444bdbf54fb6523aa88f8a8d61986cbe09ff54b166710d76dfbe3ddf4c6b"
       },
       "evidence": [
         {
           "path": "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md",
-          "quote": "**Only input selection and a historical cost audit have run.**"
+          "quote": "**Metered commissioning has been launched detached.**"
         },
         {
           "path": "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md",
-          "quote": "**The resource question is pending.**"
+          "quote": "**The staged stopping rule is executable and frozen.**"
         },
         {
           "path": "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md",
-          "quote": "Those assumptions require a parameterized adapter with complete local data\nand independent tests."
+          "quote": "These are\nimplementation checks, not a successful high-rank commissioning result."
+        },
+        {
+          "path": "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md",
+          "quote": "**The class commissioning gate did not pass.**"
         }
       ]
+    },
+    {
+      "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "disposition": "bounded-only",
+      "completed": "Original Sage replay and independent finite Clifford/coset/Frobenius replay pass. The exact catalogue projection, primary output digest and precise Velu Theorem7/models reference are retained.",
+      "remaining": "Complete the external arithmetic period-map audit for this literal lattice: stable discriminant action, inclusion in the norm-one group, and the QQ-defined map with its Cartan level structure. This is a proof-source review obligation, not an assertion that the recorded nonexistence theorem is false. No new catalogue or equation search is required.",
+      "source_review": "Read the complete canonical note and all413 lines of the original checker. Its exact finite computations are replayed, but the full rational-marking implication is an external input rather than a calculation in the script. Velu Theorem7 and page176 give the two models. Elkies Section2 is general background and does not alone identify this nonmaximal order or its arithmetic cover.",
+      "input_review": "The original mode reads three unchanged catalogues totaling67820578 bytes. The new read-only mode uses a2771-byte field projection and the5575-byte original certificate. Optional source-projection verification checks all three original hashes and unique selectors; absence never triggers regeneration. The explicit make target also runs five corruption tests and refuses optimized Python; default maintenance performs no arithmetic replay.",
+      "dependency_review": "The formal branch is a compatible local control, not a proof of the rational arithmetic period map. The named external marked-K3/Clifford input still needs the precise rational-model and level justification. The finite replay alone supplies neither that implication nor the global classification; no assurance flag changes.",
+      "evidence": [
+        {
+          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+          "quote": "The separate period/Clifford audit remains open: identify"
+        },
+        {
+          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+          "quote": "The checker does not reprove Vélu's global determination of"
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "53775db840b74998344699d359a92bf5ecb3791fed7c9c380b28e8bc361236ec"
+      },
+      "reviewed_files": {
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "e6196934847acd91ade119712a10576d94cb65189a616db0cb8653b85a726918",
+        "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage": "c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+        "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py": "ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
+        "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json": "f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e",
+        "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+      },
+      "reviewed_on": "2026-09-12"
+    }
+  ],
+  "checker_absence_reviews": [
+    {
+      "id": "EC-DET1092-COMPLETE-SMOOTH-BISECTION-ATLAS-NONUNIVERSAL-20260909",
+      "source": "elliptic-curves/notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md",
+      "disposition": "written-proof",
+      "completed": "Section 3 proves that the complete smooth rational bisection image is thin and has O(B) height count, while a non-thin set of rank-at-least18 fibres remains outside it.",
+      "remaining": "No missing finite witness for this corollary. Effective constants, Curve302 incidence, singular rational curves and other cover constructions are outside its claim.",
+      "source_review": "Read the complete note; Section 3 is the proof of this ID. The separate singular-member calculation in Section 2 has its own artifacts and checkers. Finite union, translation preserving the base, degree-height growth, and subtraction of a thin set supply the written implication.",
+      "input_review": "Written implication of separately certified atlas and two-fibration results; no new census or analytic checker is required for this corollary.",
+      "dependency_review": "The complete 40917-orbit quotient and rational parametrizability are premises, not recomputed here. The parent hypothesis audit supplies the distinct fibration, reduced fibres and density required by Pasten–Salgado. This review does not independently replay those computational premises.",
+      "evidence": [
+        {
+          "path": "elliptic-curves/notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md",
+          "quote": "The atlas corollary is a written implication of completed theorems, not a\nnew independent replay of their census or analytic proofs."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-DET1092-COMPLETE-SMOOTH-BISECTION-ATLAS-NONUNIVERSAL-20260909": "0faefa22e05b2ef5ab6c0425c21b9245c8d29557ee46380be52705a22c4fbbb6",
+        "EC-CURVE302-PARENT-DEGREE2-MULTISECTION-QUOTIENT": "2d14507a7c010021fac4c569cfaedd64486c1ccdd10d59f00f1a3b5a2e21ac22",
+        "EC-DET1092-RATIONAL-BISECTION-INDEX-CONSTRUCTION-20260909": "651201d30eb4c516ba62213c66ec42a259615aab5ca32548a8151bc922e6bf9c",
+        "EC-DET1092-TWO-FIBRATION-RATIONAL-SEEDS-20260908": "28728b4f7d49cf0b1a62e887ef1981350cf0d49afe9e3db353a4f5921794715d"
+      },
+      "reviewed_files": {
+        "elliptic-curves/notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md": "c221203556a1d0cbccccedbac7b700f850012410e2cc96bda6d658640da9f470"
+      },
+      "external_sources": [
+        {
+          "title": "Pasten–Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
+          "url": "https://www.math.rug.nl/algebra/uploads/Main/PastenSalgado_2024.pdf",
+          "version": "Author PDF dated March 12, 2024; Theorem 1.1, printed page 2; inspected 2026-09-12.",
+          "checked": "Over a number field, a non-isotrivial elliptic K3 with reduced fibres and a second elliptic fibration has non-thin rank jumps when its rational points are Zariski dense. The repository must supply each geometric hypothesis on the same rational surface. This theorem gives no effective search bound."
+        }
+      ],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-K3-R17-NONTHIN-RANK-JUMPS",
+      "source": "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md",
+      "disposition": "written-proof",
+      "completed": "The written four-hypothesis audit proves non-thin rank-at-least18 smooth specializations of the published R17 fibration.",
+      "remaining": "No missing executable witness for the implication. Individual exact ranks and effective height bounds remain outside this theorem.",
+      "source_review": "Read the full note. The 24I1 fibres imply reducedness and nonconstant j; the H3 E7+E8/MW2 presentation is a distinct rational fibration on the same certified surface. Infinitely many rational section curves imply Zariski density.",
+      "input_review": "Written application of Pasten–Salgado to four separately certified H3/R17 premises; their existing equation and source-identity checkers remain the computational evidence.",
+      "dependency_review": "Inspected the stated use of the four internal dependencies and the primary external theorem. The alternate candidate field of definition is irrelevant: H3 is the second fibration. No new independent replay of the endpoint chain is claimed.",
+      "evidence": [
+        {
+          "path": "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md",
+          "quote": "All hypotheses of Pasten--Salgado's theorem therefore hold."
+        },
+        {
+          "path": "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md",
+          "quote": "effective height bound for finding the rank jumps."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-R17-NONTHIN-RANK-JUMPS": "8ef12afd8607f4205489730a44afb8d147b0e2fce36fa676b408f3d3e1e27449",
+        "EC-K3-H3-SOURCE": "2ea0db381f740f8a8080b4375fa055ff7093aa8423b7cdf8b4d411545af82f57",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS": "f4587e94d4ad17b4a5bd47e750f400c764fba387d37f3e818ba9b6dfb9ae4b96",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ": "5d2bc56f2f614fb4088b23069de07b0d595899786ed46b9a23aa94c3453900ad",
+        "EC-K3-ELKIES-2026-R17": "3a75a923c9e1f93e3c777987f89ecadfd2a54fecbd1bc1ad452f99ec5ac02d05"
+      },
+      "reviewed_files": {
+        "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md": "7aca4432e101e9d447d55e81068cbc3767ae81ccc5ffedf2dcebe293798689c8"
+      },
+      "external_sources": [
+        {
+          "title": "Pasten–Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
+          "url": "https://www.math.rug.nl/algebra/uploads/Main/PastenSalgado_2024.pdf",
+          "version": "Author PDF dated March 12, 2024; Theorem 1.1, printed page 2; inspected 2026-09-12.",
+          "checked": "Over a number field, a non-isotrivial elliptic K3 with reduced fibres and a second elliptic fibration has non-thin rank jumps when its rational points are Zariski dense. The repository must supply each geometric hypothesis on the same rational surface. This theorem gives no effective search bound."
+        }
+      ],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY",
+      "source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "disposition": "written-proof",
+      "completed": "Theorem H0i.3 proves directed rootless reachability in the same finite marked spinor/level component, including a sufficiently-large compatible-prime one-edge statement.",
+      "remaining": "No finite witness is missing from this non-effective existence proof. A usable prime bound, exact-vector or nef/equation markings, and elliptic-neighbour realization require separate work.",
+      "source_review": "Read H0i.3 and its proof, not the entire 5190-line theorem collection. Compact-open finite markings make the class set finite. The positive equidistribution main term gives an edge; zero-layer survival forces that rootless edge to kill every parent witness. A maximum over finitely many thresholds gives the non-effective finite prime set.",
+      "input_review": "Non-effective written theorem. A finite neighbour search cannot verify its universal prime assertion or supply the absent effective threshold.",
+      "dependency_review": "Chenevier Theorem 5.9 and Remark 5.11 match the stated level, dimension and spinor conditions. H0i.1 supplies the physical-witness step. Finite-level reachability does not repeal fixed-prime traps or prove an equation-side hop.",
+      "evidence": [
+        {
+          "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+          "quote": "It is non-effective: neither\nChenevier's error term nor this argument supplies a usable threshold."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY": "704d0dfe888cdbb86e06b3c0ff1b1bf21bbb2547e9884dc9406be2e8b79d1827",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH": "a8a43e2a55231b7b1456b201a9da284e8ff8b4eba0fb2dfcc929759f7c02d62b",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE": "2cf14f91f2027f0d58dca59412ebde6a1aff8014e98cc7e8322bf23408a4ef55"
+      },
+      "reviewed_files": {
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md": "8597ab4d43d472cca758373ca07df8ba1d69b3003c01d79f9934f5e333897ea3"
+      },
+      "external_sources": [
+        {
+          "title": "Chenevier, Statistics for Kneser p-neighbors",
+          "url": "https://arxiv.org/pdf/2104.06846v2",
+          "version": "arXiv v2, May 2021; Theorem 5.9 and Remarks 5.10–5.11, printed pages 21–22; inspected 2026-09-12.",
+          "checked": "For definite rational quadratic spaces of dimension greater than two and compact open level, normalized neighbour counts have a positive mass main term and O(p^(-1/2)) error along compatible spinor displacements. Every displacement occurs on infinitely many primes, with density 1/|S1(K)|. No numerical threshold is supplied. Exact-vector or nef-chamber stabilizers need not be open."
+        }
+      ],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS",
+      "source": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
+      "disposition": "written-proof",
+      "completed": "S1–S5 give the rank sandwich, real quotient height, midpoint decomposition, discrete depth bound, and everywhere-even Kummer ideal map with unit loss.",
+      "remaining": "No missing numeric witness for these algebraic deductions. Applying them requires certified specialization rank, the declared subgroup, and the relevant complete Selmer or ideal hypotheses.",
+      "source_review": "Read all seven sections. S1 uses A/(M+ell*A), so torsion/saturation can increase residual dimension. S2 is real orthogonal projection, not an integral closest-vector minimum. S3 uses the parallelogram law. S4 gives a restricted-parity lower bound on covering radius. S5 uses everywhere-even ideals and distinguishes unit loss and supported valuations from a full class-group computation.",
+      "input_review": "Written group, height and ideal arguments. Application certificates belong to their individual claims; rerunning a point search cannot prove these general statements.",
+      "dependency_review": "Kummer injection, Neron–Tate bilinearity and Dirichlet units are stated external inputs. Injective or rank-preserving specialization is a hypothesis, not a consequence of the observed quotient. No new rank upper bound or class-group predictor is inferred.",
+      "evidence": [
+        {
+          "path": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
+          "quote": "This is an input: it can follow from an injective specialization certificate"
+        },
+        {
+          "path": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
+          "quote": "a local-signature span,\nan incomplete descent, or a bounded point search does not certify the upper\nside."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS": "bb22cf4a8ed4f1fba793d5bbc95ec7b00a2da6917ea87cab0ca1d22737b47c07"
+      },
+      "reviewed_files": {
+        "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md": "72b39b19ab20b27a5cb952b2f80814dc4cd9576538314ffca4b97c8b894bac1b"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER",
+      "source": "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
+      "disposition": "written-proof",
+      "completed": "R1–R8 identify the residual point space and saturation defect, the surviving 2Sha[4] radical, valid pairing bounds, actual two-covering maps and a witness-complexity filtration.",
+      "remaining": "No missing finite witness for the universal written deductions. Full Selmer complements and insoluble Selmer controls for the eleven-fibre panel remain uncomputed; the panel is a separate application.",
+      "source_review": "Read the full note. R1 retains epsilon_M; R2 uses the multiplication-by-two exact diagram. R3 distinguishes full and restricted matrices. R4 records both birational phi and degree-four covering 2phi-P; R5 gives the two quadrics under b!=0. R6 distinguishes new points from new parity labels. R7 includes model/transport cost, and R8 is only a height-to-coefficient bound. Corrected the external radical citation from Sections 2–3 to the actual Section 4 passage.",
+      "input_review": "Written algebraic and cohomological proofs with explicit symbolic formulas. The 110-cover application checker does not certify the unknown complementary Selmer classes.",
+      "dependency_review": "The specialization theorem supplies the subgroup conventions. The primary Fisher–Schaefer–Stoll text confirms the exact sequence, alternation and 4-Selmer radical; finiteness of Sha alone does not make the radical equal the point space. No assurance flag is upgraded.",
+      "evidence": [
+        {
+          "path": "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
+          "quote": "not merely to finiteness of `Sha`."
+        },
+        {
+          "path": "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
+          "quote": "A zero pairing proves neither one soluble."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER": "dcca34bbacddf2beb35a1e9020824189ed50ad9794b9797ed973602e89cd7baa",
+        "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS": "bb22cf4a8ed4f1fba793d5bbc95ec7b00a2da6917ea87cab0ca1d22737b47c07"
+      },
+      "reviewed_files": {
+        "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md": "d946d9c0beec8fc357a9a8c29ab8e4bff267f4c2c33f341d111d6eb5fabb2d7a"
+      },
+      "external_sources": [
+        {
+          "title": "Fisher–Schaefer–Stoll, The yoga of the Cassels–Tate pairing",
+          "url": "https://mathe2.uni-bayreuth.de/stoll/papers/yoga.pdf",
+          "version": "Author PDF dated March 4, 2009; equation (2.1), start of Section 4, Theorem 6.3; inspected 2026-09-12.",
+          "checked": "The Kummer/Selmer/Sha sequence is exact. The 2-Selmer pairing is alternating; its radical is the image of 4-Selmer. The explicit Cassels pairing equals Cassels–Tate. Passing to the quotient by known point classes does not remove divisible Sha classes. These statements do not require finiteness of the full Sha group."
+        }
+      ],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-EC-RANK-CONDUCTOR",
+      "source": "elliptic-curves/README.md",
+      "disposition": "research-objective",
+      "completed": "The original rank-or-conductor disjunction is parked because both branches have separately certified lower-bound witnesses.",
+      "remaining": "No theorem checker is missing on the objective row. Exact ranks and stronger targets belong to OP-EC-NEXT.",
+      "source_review": "Read the current programme map and full objective scope, replacement edges and forbidden routes. ECR30 and EC-R21-ICARM close the original alternatives; their certificates do not assert matching upper bounds. Reviewed the changed transfer-navigation link: it now points to authorized bounded commissioning and makes no new rank or conductor claim. The later link now records the bounded class-bank stop and separate V3 arm; neither supplies a new rank result or closes these objectives.",
+      "input_review": "Parked objective; use ECR30 and EC-R21-ICARM for the actual point and conductor checkers.",
+      "dependency_review": "The objective depends on the two closing witnesses. Their independent-replay flags are not inherited by this objective. This review does not repeat the rank/conductor computations.",
+      "evidence": [
+        {
+          "path": "elliptic-curves/README.md",
+          "quote": "Exactly verified independent points prove a lower bound without a completed\ndescent."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-EC-RANK-CONDUCTOR": "55b6789281f0c14ff143636add657dfd303b00e65a894ff24e136b0f7080c11c",
+        "ECR30": "350719583c235bda5c20f142a37750d1af3d615b918e3417d26f04ce29674f02",
+        "EC-R21-ICARM": "cd49c548997462f9c674c9db69e27dccda74bf1d652e27ece99ae948dfb47139"
+      },
+      "reviewed_files": {
+        "elliptic-curves/README.md": "7324322a962c2fb179431f8fd73b07d134b9fc14ac2f6e7db3b1545cdb6879c4"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-EC-NEXT",
+      "source": "elliptic-curves/README.md",
+      "disposition": "research-objective",
+      "completed": "The current map reuses Curve302's complete alternative MW17 parent and calibrated V3 recovery; record lower bounds and prospective experiment gates remain distinct.",
+      "remaining": "Rank at least32 or a matching unconditional exact-rank upper bound, and the declared rank-jump mechanism targets, remain open. No new search is scheduled by this review.",
+      "source_review": "Read the programme map, full objective scope, replacements and forbidden routes. Removed only the redundant 138-ID prose list after verifying every ID remains a dependency and every incoming narrowing edge is unchanged. The prior scope is preserved in OP-EC-NEXT.graph-cleanup.json; show exposes incoming narrowing results. The rank-jump mechanism has its own current objective and canonical sources. Reviewed the changed transfer-navigation link: it now points to authorized bounded commissioning and makes no new rank or conductor claim. The later link now records the bounded class-bank stop and separate V3 arm; neither supplies a new rank result or closes these objectives.",
+      "input_review": "Open umbrella objective; checkers belong to the narrower results and future completion certificates.",
+      "dependency_review": "The complete recovered-parent theorem is reusable. Generic saturation does not imply specialized saturation, local scores do not give Selmer upper bounds, and a finite atlas exclusion does not exclude all constructions. No complete semantic review of its 159 historical dependency entries is claimed.",
+      "evidence": [
+        {
+          "path": "elliptic-curves/README.md",
+          "quote": "These results do not prove exact rank31 or rank at least32."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-EC-NEXT": "9289645b7de88d8c37672d4de2e6e6c39396c89ff13337c1bcd995bd37983c61",
+        "EC-CURVE302-RECOVERED-MW17-PARENT": "1543e38ac3f31a2b86d4fed75d92853c524fe65e01a7dfd9dfc64eb26587d11c",
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "0b3d5bdfc47b3903305be9067c4c79d5ebd47991a776532a8be9cff3c32cb1b0"
+      },
+      "reviewed_files": {
+        "elliptic-curves/README.md": "7324322a962c2fb179431f8fd73b07d134b9fc14ac2f6e7db3b1545cdb6879c4"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-K3-NS0024-ARITHMETIC-MW17",
+      "source": "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "disposition": "research-objective",
+      "completed": "The determinant950 rational rank19 marking is excluded; the old NS0024 objective is parked and the broader foundry objective is separate.",
+      "remaining": "No objective-level checker is missing. The negative theorem has its own replay; geometric or local NS0024 constructions do not reopen the rational endpoint.",
+      "source_review": "Read the full 29-line tombstone. It names the rational marking obstruction and its replacement, while preserving the geometric and larger-field meaning of the old artifacts.",
+      "input_review": "Parked objective closed by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION; that claim owns the checker.",
+      "dependency_review": "The Momose/X0+(475) argument is attributed to the separate obstruction proof. This classification does not independently review the external arithmetic marking theorem.",
+      "evidence": [
+        {
+          "path": "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+          "quote": "Status: **CLOSED / REPLACED**."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-K3-NS0024-ARITHMETIC-MW17": "0bdb8c161effc63230f46e7ff7512a2c4beede2b02c03055102bee1d63a3ae25",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION": "879974f788fe9bfe02f1be5c2fcd2348699d230acd5ac045d1da0719fe5b8c22"
+      },
+      "reviewed_files": {
+        "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "b03a49d9daf2ed1ba5615a3858cdd9975f1d7124da092cc9f017105b5d6c2b0d"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "disposition": "research-objective",
+      "completed": "The objective states the stronger different-NS MW17-plus-carrier endpoint, six marking exclusions, and the arithmetic-first admission rule.",
+      "remaining": "A certified rational non-CM point on the full marked curve is required before NS, rootless and equation work; no new positive handoff exists. Determinant1236 still needs identification of its particular cubic CM branch orbit.",
+      "source_review": "Read the full 330-line objective. Its bounded census, local formal branch, rational marking, equation, saturated basis and carrier endpoints are separate. The determinant1236 candidate fibres are already evaluated; only the branch identity remains. The V4 stretch target still lacks its product character and full glue/saturation.",
+      "input_review": "Open construction objective; the existing marking and planner checkers establish only their individual prerequisites and exclusions.",
+      "dependency_review": "The T-first classifier and reranking partial reviews already retain the precise arithmetic boundary. Another equation on determinant948 or two characters of a V4 carrier do not close this objective. No broader marking theorem or long inversion was replayed.",
+      "evidence": [
+        {
+          "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+          "quote": "Only a certified positive row may enter `NS=T^perp`, saturation, rootless,\nor equation work."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "73dcd5f4658ee216958cc3d0364fefaf7dffe6ad79f1f7afe6b453f1fa94a3d6",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "70c635844789157b1e766728367f0b79cdc5c61703ff9e6308bfbd294831c34d",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": "978fb2e25ae7cfe816960dc6ba544a927d12a938355eb2847df351694c3f2fae"
+      },
+      "reviewed_files": {
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "fc46b84437bdf8986e9e886fa3bf527d4a1043791bac12866f11f6632b9fbde1"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-EC-CURVE302-CONSTRUCTION-RECOVERY",
+      "source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
+      "disposition": "research-objective",
+      "completed": "The requested alternative parent endpoint is complete, with explicit generic17 saturated basis and primitive specialization quotient Z^14.",
+      "remaining": "Original discoverer provenance remains UNKNOWN. No outreach is authorized; no alternative-parent reconstruction or MW9 section campaign is needed.",
+      "source_review": "Read the current opening, the objective scope and the original-provenance section. The remainder is explicitly historical and remains in place for older canonical claims. This review does not claim a new full audit of the 1252-line historical proof collection.",
+      "input_review": "Parked objective; EC-CURVE302-RECOVERED-MW17-PARENT owns the completed construction checkers. Missing pre-upload provenance is a documentary gap.",
+      "dependency_review": "The completed alternative parent does not identify the discoverers' method. The earlier MW9 upper bound and inverse-screen failures retain their bounded historical meanings. The route review now explicitly exposes the completed parent, the MW9 same-surface upper bound, and the distinction from original provenance.",
+      "evidence": [
+        {
+          "path": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
+          "quote": "Original discoverer provenance remains `UNKNOWN`. No messages may be sent."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY": "a0db9dd9757d50344873912ea86236ba5fd07294e01421cc87fa1e001d369c67",
+        "EC-CURVE302-RECOVERED-MW17-PARENT": "1543e38ac3f31a2b86d4fed75d92853c524fe65e01a7dfd9dfc64eb26587d11c",
+        "EC-K3-CURVE302-FULL-MW9": "1cce3d0e43033a1f9ba335e649c523e8501c20b9d0504c3a7fab0f23ec288ad3"
+      },
+      "reviewed_files": {
+        "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md": "f3cceff9a2061ce24e400f1ced5e7bfabc0c543b8b19d2db3c9ab3a439a65470"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-EC-RANK-JUMP-MECHANISM-20260910",
+      "source": "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+      "disposition": "research-objective",
+      "completed": "The principal14/11 ancestry comparison and sparse relation pilot are complete within their finite domains. Subsequent fixed-word and constructor-control results narrow the mechanism objective. The class bank has since completed:841 atoms, projected parity rank841, no dependency and no extracted class. Reviewed its terminal, sealed cost and binary diagnostic; no full independent atom-factorization replay is asserted.",
+      "remaining": "Full class-to-point commissioning and fresh transfer remain unproved. Finish the independent V3 reference arm and stop the pilot without fresh fibres. Diagnose the frozen cold dependency bank before any newly authorized modification; no cap enlargement or panel expansion is automatic.",
+      "source_review": "Read the full principal28 note and current objective scope, including the later fixed-word finite-Selmer theorem and fresh-constructor preflight. The canonical principal note does not itself prove those later results; follow their IDs and the existing source review. The selected covers' independence is not a global ancestry obstruction. The failed-route view now includes the selected-radical, carrier-incidence, fixed-word finiteness and relation-deficiency boundaries already proved in these sources. The later transfer note and executable staged gate have now been reviewed at launch; this does not complete the general mechanism or attest ongoing process liveness.",
+      "input_review": "Open research objective. Completed finite ancestry and relation-pilot checkers belong to their result rows; there is no completed general mechanism to replay.",
+      "dependency_review": "The input preflight is not a transferred strict class, a new point, or a new ideal-class direction. Bounded and censored arithmetic remains UNKNOWN where uncertified. The full preflight source review is retained separately; this objective review does not execute its worker.",
+      "evidence": [
+        {
+          "path": "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+          "quote": "No rich shared-cover rank decomposition, full"
+        },
+        {
+          "path": "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+          "quote": "No additional campaign is scheduled."
+        }
+      ],
+      "reviewed_claims": {
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "0b3d5bdfc47b3903305be9067c4c79d5ebd47991a776532a8be9cff3c32cb1b0",
+        "EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912": "413fa756aae410685f81576bf5a117b7a2797cbf5b6c4252ecad9b385a7dec53",
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "beec8afd34aef2193bc7b997ef21d2334acf415985e1ade4ec445f70cf6827d2",
+        "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912": "0dca85156ed41a8e26a79a3d997f1c15116e882d9c883706ebfa2ae525555efc",
+        "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912": "63c03de1f3a79b7a03f53a0fea425b19e1146d9a2d0fc6f6288ff30c1a6b8093"
+      },
+      "reviewed_files": {
+        "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md": "bdf847223440f589d340416d4de691b5696bc9f4a2e51420a8ac74c9553b5c44",
+        "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md": "2b10d4c1e6aef56fbb8c30d81c0d685d8f0ee39b56a6b3447e8c904e06f1a332",
+        "elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md": "07eb601b9ff888d587a0c901c1a662a40a30e196ad4c4b528f621a15ab01babd",
+        "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md": "097a68559709a5101c1b25cc048ad546dabcce9aad4f7e415da5c69e7d0cdfbb"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-12"
     }
   ]
 }

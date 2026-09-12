@@ -92,10 +92,9 @@ relabelled as a mod-two certificate.
 
 Identify `1/2 Z/Z` with `F_2`. The Cassels--Tate pairing pulls back from
 `Sha[2]` to an alternating pairing on `S`. Its radical is the image of
-the natural map `Sel_4(E/K) -> Sel_2(E/K)`. The Kummer exact sequence is equation (2.1); the radical statement and
-alternation are recorded at the start of Section 4 of
-[Fisher--Schaefer--Stoll, *The yoga of the Cassels--Tate pairing*](https://mathe2.uni-bayreuth.de/stoll/papers/yoga.pdf).
-Their Theorem 6.3 identifies the explicit Cassels pairing with Cassels--Tate.
+the natural map `Sel_4(E/K) -> Sel_2(E/K)`. These standard facts are stated
+in Sections 2--3 of
+[Fisher--Schaefer--Stoll, *The yoga of the Cassels--Tate pairing*](https://www.dpmms.cam.ac.uk/~taf1000/papers/casselspairing.pdf).
 No finiteness assumption on the full Tate--Shafarevich group is needed here.
 
 ### Theorem R2: the residual radical retains divisible Sha classes

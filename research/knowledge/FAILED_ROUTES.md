@@ -61,3 +61,27 @@ Recorded programme state: **open**. [Canonical scope](../elkies-k3/DIFFERENT_NS_
 - **Treating a common-core root-budget lower bound as an exact rootless-child classifier** The bound is safe only for rejecting declared excessive root budgets and can miss new glue-coset roots; exact theta convolution classifies rootlessness only on the complete fixed-core universes it enumerates. Witnesses: [EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK](../elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md) (proved), [EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION](../elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md) (proved).
 
 - **Promoting the 2,134-row prescribed-root census to a complete or arithmetic source classification** The exact census covers only its thirteen-ambient, sixteen-anchor, bounded prescribed-root embedding domain and constructs no rational marking or equation. Its rows are not even deduplicated into integral-isometry or J2 classes. Witnesses: [EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS](../elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md) (proved).
+
+## OP-EC-CURVE302-CONSTRUCTION-RECOVERY: Completed: explicit alternative302 parent with full generic MW17 basis
+
+Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md).
+
+Replaced by: `EC-CURVE302-RECOVERED-MW17-PARENT`.
+
+- **Restarting alternative-parent reconstruction as though the Curve302 endpoint were unknown** An explicit different determinant1092 parent, full saturated generic MW17 basis and exact t=0 specialization are already certified. Load that endpoint before considering a new construction question. Witnesses: [EC-CURVE302-RECOVERED-MW17-PARENT](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) (proved).
+
+- **Seeking generic rank above nine by changing fibrations on the completed MW9 control surface** The rational Neron–Severi bound is eleven, so every Q-defined elliptic fibration on that particular K3 has arithmetic MW rank at most nine. The completed MW17 parent lies on a different surface. Witnesses: [EC-K3-CURVE302-FULL-MW9](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) (proved), [EC-CURVE302-RECOVERED-MW17-PARENT](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) (proved).
+
+- **Treating an alternative parent as the discoverers' original construction record** The explicit parent proves a mathematical realization through Curve302, not its historical generation procedure. Pre-upload provenance remains UNKNOWN and the no-outreach instruction remains in force. Witnesses: [EC-CURVE302-RECOVERED-MW17-PARENT](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) (proved).
+
+## OP-EC-RANK-JUMP-MECHANISM-20260910: Connect exceptional multisection ancestry to independent rank arithmetic and strict descent
+
+Recorded programme state: **open**. [Canonical scope](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md).
+
+- **Treating the shared genus-one pencil as one shared quadratic cover explaining the rank contrast** The selected 14/11 branch quartics have disjoint supports and independent radicals, forcing selected common-cover degrees16384/2048. This applies to those emitted extensions only; other ancestries, rebasing and global minimum genus remain open. Witnesses: [EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) (proved).
+
+- **Repairing the 182 completed MW16-05 carrier misses by generic translations or pairings** Each normalized cover has no rational lift above3/17. Generic translation preserves that fibre, and a rational point on a paired cover would project to rational points on both factors. The incomplete shells, interrupted candidate and other carriers remain outside this exclusion. Witnesses: [EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912](../elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md) (proved).
+
+- **Using the frozen coefficientwise column-6 word as an infinite soluble or Selmer family** The fixed complete1676-atom continuation has only finitely many rational Selmer specializations: exact denominator/resultant guards force containment in finitely many genus5 twists. No effective parameter list follows. Adaptive constructors, new dependencies, column7 and other continuations are not excluded. Witnesses: [EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912](../elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) (proved).
+
+- **Promoting the sparse relation pilot's deficiency to the full class2-rank or a rank upper bound** The bounded skew extension adds no independent noncanonical relation beyond the original pilot and fails its frozen density gate. Deficiency concerns only the chosen factor-base image; generation and missing relations remain unresolved. A known-MW lower consequence is not an independent predictor. Witnesses: [EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) (proved).

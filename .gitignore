@@ -366,3 +366,4 @@ research/elkies-k3/results/**/*.sqlite
 # Compact completion evidence used by the inherited EC/K3 cleanup review.
 !/research/artifacts/generated-results/elkies-k3-r17-norm12-1183a-streaming-character-closure-v1.json
 !/research/artifacts/generated-results/elkies-k3-r17-norm12-098fc-streaming-character-closure-v1.json
+!/research/artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json

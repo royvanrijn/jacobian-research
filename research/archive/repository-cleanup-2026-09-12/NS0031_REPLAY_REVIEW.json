@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "before": {
+    "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "NS0031 rational rank-19 marking obstruction",
+    "scope": "No characteristic-zero K3 surface X/QQ with geometric Neron--Severi lattice NS0031 can have all nineteen divisor classes defined over QQ. The exact transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]] has split even Clifford order whose norm-one group is Gamma_ns(4) intersect Gamma_0(37); direct coset enumeration gives index 304, elliptic counts (0,4), cusp widths (4,4,148,148), and genus 23. A full rational NS0031 marking would give a noncuspidal rational point on this curve and hence on X_0(37). By Velu's determination, the only two noncuspidal rational X_0(37) j-invariants are -7*11^3 and -7*137^3*2083^3. Both have good reduction at 19 with a_19=-6, so their mod-4 Frobenius trace-determinant pair is (2,3), which is absent from the full unramified non-split Cartan. Neither point, nor any quadratic twist, lifts. Consequently no rootless NS0031 fibration over QQ(t) can have a saturated rational MW17 basis. The formal ZZ_7 branch and geometric corridor remain valid, but cannot close the arithmetic milestone over QQ.",
+    "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+    "dependencies": [
+      "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+      "external: J. Velu, Les points rationnels de X_0(37)",
+      "external: marked-K3 rank-three period and even-Clifford spin correspondence"
+    ],
+    "checker": "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+    "software_lock": [
+      "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+      "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+      "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+      "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+      "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json"
+    ],
+    "supersedes_notes": [
+      "algebraization of the model-157 formal branch might produce a full rational NS0031 marking",
+      "determinant-1184 NS0031 remains the preferred arithmetic different-NS source candidate"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+    ],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/AGENTS.md",
+      "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+      "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "elkies-k3/README.md",
+      "elkies-k3/scripts/README.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  },
+  "after": {
+    "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "NS0031 rational rank-19 marking obstruction",
+    "scope": "No characteristic-zero K3 surface X/QQ with geometric Neron--Severi lattice NS0031 can have all nineteen divisor classes defined over QQ. The exact transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]] has split even Clifford order whose norm-one group is Gamma_ns(4) intersect Gamma_0(37); direct coset enumeration gives index 304, elliptic counts (0,4), cusp widths (4,4,148,148), and genus 23. A full rational NS0031 marking would give a noncuspidal rational point on this curve and hence on X_0(37). By Velu's determination, the only two noncuspidal rational X_0(37) j-invariants are -7*11^3 and -7*137^3*2083^3. Both have good reduction at 19 with a_19=-6, so their mod-4 Frobenius trace-determinant pair is (2,3), which is absent from the full unramified non-split Cartan. Neither point, nor any quadratic twist, lifts. Consequently no rootless NS0031 fibration over QQ(t) can have a saturated rational MW17 basis. The formal ZZ_7 branch and geometric corridor remain valid, but cannot close the arithmetic milestone over QQ.",
+    "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+    "dependencies": [
+      "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+      "external: J. Velu, Les points rationnels de X_0(37)",
+      "external: marked-K3 rank-three period and even-Clifford spin correspondence"
+    ],
+    "checker": "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+    "software_lock": [
+      "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+      "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+      "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+      "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+      "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+      "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
+      "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json"
+    ],
+    "supersedes_notes": [
+      "algebraization of the model-157 formal branch might produce a full rational NS0031 marking",
+      "determinant-1184 NS0031 remains the preferred arithmetic different-NS source candidate"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+    ],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/AGENTS.md",
+      "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+      "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "elkies-k3/README.md",
+      "elkies-k3/scripts/README.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  },
+  "boundary": "Finite arithmetic replay and exact input packaging; the arithmetic period-map review is unfinished. No mathematical state or assurance changes.",
+  "source_review": {
+    "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+    "source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+    "disposition": "bounded-only",
+    "completed": "Original Sage replay and independent finite Clifford/coset/Frobenius replay pass. The exact catalogue projection, primary output digest and precise Velu Theorem7/models reference are retained.",
+    "remaining": "Complete the external arithmetic period-map audit for this literal lattice: stable discriminant action, inclusion in the norm-one group, and the QQ-defined map with its Cartan level structure. This is a proof-source review obligation, not an assertion that the recorded nonexistence theorem is false. No new catalogue or equation search is required.",
+    "source_review": "Read the complete canonical note and all413 lines of the original checker. Its exact finite computations are replayed, but the full rational-marking implication is an external input rather than a calculation in the script. Velu Theorem7 and page176 give the two models. Elkies Section2 is general background and does not alone identify this nonmaximal order or its arithmetic cover.",
+    "input_review": "The original mode reads three unchanged catalogues totaling67820578 bytes. The new read-only mode uses a2771-byte field projection and the5575-byte original certificate. Optional source-projection verification checks all three original hashes and unique selectors; absence never triggers regeneration.",
+    "dependency_review": "The formal branch is a compatible local control, not a proof of the rational arithmetic period map. The named external marked-K3/Clifford input still needs the precise rational-model and level justification. The finite replay alone supplies neither that implication nor the global classification; no assurance flag changes.",
+    "evidence": [
+      {
+        "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "quote": "The separate period/Clifford audit remains open: identify"
+      },
+      {
+        "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "quote": "The checker does not reprove Vélu's global determination of"
+      }
+    ],
+    "reviewed_claims": {
+      "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "53775db840b74998344699d359a92bf5ecb3791fed7c9c380b28e8bc361236ec"
+    },
+    "reviewed_files": {
+      "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "d98ec365d3c4f3234b2f65c435c6ee0f05444396d2090151b476276aa9516874",
+      "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage": "c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+      "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py": "85c2a73034a2d5575e702187c1e1f966fac4520ec40e853b9d0fcee87d659bd0",
+      "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json": "f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e",
+      "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+    },
+    "reviewed_on": "2026-09-12"
+  },
+  "checks": [
+    "Original Sage --check passed with timeout30s and original input hashes.",
+    "Independent standard-library arithmetic replay and full source-projection check passed.",
+    "Four maintenance tests cover absent originals, altered curves/traces, Clifford/coset corruption and changed projection data."
+  ],
+  "external_sources": [
+    {
+      "url": "https://www.numdam.org/article/MSMF_1974__37__169_0.pdf",
+      "location": "Theorem7 on p.175; models on p.176",
+      "outcome": "Confirms the rational-point classification and both j-invariants/models."
+    },
+    {
+      "url": "https://arxiv.org/pdf/0802.1301v1",
+      "location": "Section2, especially pp.4–6",
+      "outcome": "General background only; does not settle the exact nonmaximal-order arithmetic marked-period implication."
+    }
+  ]
+}

@@ -30,7 +30,8 @@ AREAS = {
     "papers": "Papers",
 }
 GENERATED = {"STATUS.md", "knowledge/ALGORITHMS.md", "knowledge/FAILED_ROUTES.md",
-             "knowledge/WORK_LEDGER.md", "knowledge/LEGACY_WORK_REVIEW.md", "knowledge/PARTIAL_REVIEW.md"}
+             "knowledge/WORK_LEDGER.md", "knowledge/LEGACY_WORK_REVIEW.md", "knowledge/PARTIAL_REVIEW.md",
+             "knowledge/CHECKER_REVIEW.md"}
 
 
 def ledger() -> dict:
@@ -372,9 +373,12 @@ def show(identifier: str, entries: list[dict], items: list[dict], *, work_data: 
         import research_partial_reviews
         return {"entry": e, "current_scope_fingerprint": claim_fingerprint(e),
                 "partial_review": research_partial_reviews.detail(identifier, partial_data, entries, ROOT) if partial_data else None,
+                "checker_absence_review": research_partial_reviews.detail(identifier, partial_data, entries, ROOT,
+                    collection='checker_absence_reviews') if partial_data else None,
                 "related_lessons": [{**i, "review_needed": stale_claims(i, entries)} for i in items
                                     if identifier in i["claims"] or e["canonical_source"] in i["sources"]],
                 "used_by": [x["id"] for x in entries if identifier in x["dependencies"]],
+                "narrowed_by": [x["id"] for x in entries if identifier in x.get("narrows_problems", [])],
                 "related_work": [a["id"] for a in work_data[0]["actions"] if identifier in a["claims"]] if work_data else [],
                 "note": "Recorded scope only. Checker paths are references, never executed by this command."}
     for item in items:
@@ -437,7 +441,8 @@ def main() -> int:
     resource_rows = research_resources.records(ROOT, entries)
     partial_data = research_partial_reviews.load(ROOT)
     research_partial_reviews.validate(partial_data, entries, ROOT, check_reviews=args.command == "check",
-                                      require_complete=args.command == "check" and args.require_partial_review)
+                                      require_complete=args.command == "check" and args.require_partial_review,
+                                      require_checker_review=args.command == "check")
     if args.command in {"render", "check"}:
         outputs = render_outputs(entries, items, work_data=work_data, resource_rows=resource_rows, partial_data=partial_data)
         stale = []
@@ -462,6 +467,11 @@ def main() -> int:
         print(f"Source-level partial review: {len(reviewed)}/{len(current_partial)}; "
               f"{len(current_partial - recorded)} still unreviewed; "
               f"{len(recorded - reviewed)} need reconciliation")
+        current_absent = {e['id'] for e in entries if is_active(e) and e['checker'] is None}
+        reviewed_absent = current_absent & {r['id'] for r in partial_data.get('checker_absence_reviews', [])
+                                           if not research_partial_reviews.stale(r, entries, ROOT)}
+        print(f"Checker-absence review: {len(reviewed_absent)}/{len(current_absent)}; "
+              "classification only, no proof-assurance upgrade")
         unavailable = {path for review in partial_data['reviews']
                        for path in research_partial_reviews.unavailable_local_evidence(review, ROOT)}
         print(f"Local evidence receipts: {len(unavailable)} files unavailable in this checkout; "

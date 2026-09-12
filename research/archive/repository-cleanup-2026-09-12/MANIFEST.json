@@ -373,6 +373,17 @@
       "original_path": "research/elkies-k3/data/k3-model/README.md",
       "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__data__k3-model__README.md.txt",
       "sha256": "a98662db1349c2c40a9021f9ea52ea5c1e86d3ea779e70329070b44cf341b17e"
+    },
+    {
+      "original_path": "research/elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md.txt",
+      "sha256": "c5c16463754dd8e692dea82014091b7123258ed626888fd55c222684ed88e93b",
+      "bytes": 22846
+    },
+    {
+      "original_path": "research/elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md.txt",
+      "sha256": "6016fee0e5438ef947a49ffd4634e4ec17e3ca3f2e2593867bf12bf526d29ac3"
     }
   ],
   "previous_scope_sha256": "0604ee3c20c5ac794035042aa5d2e6a0e9206b724cfa4264cfa48b3b7f8d30d5",

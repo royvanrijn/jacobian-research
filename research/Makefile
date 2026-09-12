@@ -28,6 +28,11 @@ check-navigation:
 	$(SYSTEM_PYTHON) elliptic-curves/cas/render_main_readme_curves.py --check --from-inventory
 	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_research*.py' -q
 
+# Explicit finite arithmetic witness, independent of the original Sage producer.
+.PHONY: verify-ns0031-arithmetic
+verify-ns0031-arithmetic:
+	$(SYSTEM_PYTHON) elkies-k3/scripts/verify_ns0031_marking_arithmetic.py
+	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_ns0031_marking_replay.py' -q
 
 # Explicit broad EC suite. Inspect its cost and prerequisites before invoking.
 verify-elliptic-curves:

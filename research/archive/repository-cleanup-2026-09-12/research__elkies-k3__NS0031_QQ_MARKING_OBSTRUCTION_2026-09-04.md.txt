@@ -80,8 +80,7 @@ structure, a noncuspidal rational point of `X_0(37)`.
 
 ## The rational-point obstruction
 
-Vélu's [Theorem 7 and the models on the following page](https://www.numdam.org/article/MSMF_1974__37__169_0.pdf)
-(pp.175–176) determine `X_0(37)(QQ)`. Apart from its cusps, its two rational points
+Vélu determined `X_0(37)(QQ)`.  Apart from its cusps, its two rational points
 have elliptic-curve `j`-invariants
 
 ```text
@@ -107,10 +106,7 @@ The pair `(2,3)` is absent.  Frobenius at `19` therefore excludes a mod-4
 Galois image inside that Cartan.  This is unchanged by quadratic twisting:
 the trace changes sign, while `6` and `-6` are both `2` modulo `4`.  Hence
 neither noncuspidal point of `X_0(37)(QQ)` lifts, and the fibre product has no
-noncuspidal rational point. More generally, the Cartan contains the scalars
-`+/-I`, so twisting preserves containment of the Galois image even when the
-twist itself has bad reduction at19; a good-reduction trace for every twist
-is not required.
+noncuspidal rational point.
 
 This contradicts the point forced by a full rational `NS0031` marking and
 proves the theorem.
@@ -145,46 +141,6 @@ Galois-invariant sublattice.
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage --check
 ```
-
-## Source review and portable arithmetic replay — 12 September 2026
-
-The original Sage `--check` passed under a 30-second process cap, with all
-three original input hashes unchanged. Its 67,820,578 bytes of catalogue
-inputs supply just eleven selected fields. The exact
-[2,771-byte projection](../artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json) records the unique row selectors,
-field values and original hashes; no catalogue was rebuilt.
-
-```sh
-# From the repository root; Python standard library only:
-python3 research/elkies-k3/scripts/verify_ns0031_marking_arithmetic.py
-# Optional: also compare the projection with the original catalogues:
-python3 research/elkies-k3/scripts/verify_ns0031_marking_arithmetic.py --check-source-projection
-# Explicit finite replay plus corruption checks; separate from make check:
-make verify-ns0031-arithmetic
-```
-
-The independent implementation reduces Clifford words directly, enumerates
-the304 cosets and counts both curves over F19. It checks the finite order,
-signature and Frobenius exclusions. It does not independently prove global
-minimality, rederive the37-isogenies, reconstruct NS0031 from a K3 equation,
-or establish the arithmetic marked-period map. Five tests reject corrupted
-witnesses, missing provenance and optimized Python with assertions disabled.
-Missing original catalogues
-prevent only the optional provenance audit; neither mode rebuilds them.
-
-Primary certificate SHA-256: `49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.
-Projection SHA-256: `f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e`.
-
-Vélu's primary text confirms the rational-point classification and both
-displayed models. The separate period/Clifford audit remains open: identify
-the literal stable discriminant action, justify its containment in this
-norm-one group, and give the map over QQ to the stated Cartan fibre product,
-including the arithmetic level structure. A complex period quotient alone
-does not settle these points. [Elkies, Section2](https://arxiv.org/pdf/0802.1301v1)
-provides general background and illustrates why normalizer quotients and
-quadratic twists must be distinguished; it is not a specific theorem for
-this nonmaximal determinant1184 order. The new finite replay does not upgrade
-the registry's independent-replay, formal-verification or external-review flags.
 
 ## Reference
 

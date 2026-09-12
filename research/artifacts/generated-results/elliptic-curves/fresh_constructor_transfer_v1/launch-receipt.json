@@ -1,0 +1,35 @@
+{
+  "active_case": "control",
+  "active_route": "class",
+  "active_stage": "construct",
+  "captured_unix": 1789239753.46374,
+  "cold_field_preparation": "PASS",
+  "failed_launch": "v1 omitted the ecsearch code package; retained and charged within the same reference cap",
+  "field_sha256": "5cfb5027f39e0174012e39cf19ce8fd44b98c51eea8c6b38fc7a774cde7a3a0d",
+  "fresh_fibres_started": false,
+  "initial_generic_rank": 16,
+  "launch": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v2/implementation/research/elliptic-curves/rank-jump/run_fresh_constructor_transfer.py",
+      "run",
+      "--folder",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v2"
+    ],
+    "detached": true,
+    "pid": 1550308,
+    "start_token": "29281015",
+    "started_unix": 1789239629.4423962
+  },
+  "launch_sha256": "dd6f023862f7c4d9dc41f41290dbdfbbc215a89d0d773126d2801386ab84f1df",
+  "local_run": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v2",
+  "protocol_sha256": "c572f1e6af00e0f1c41d5dc2a72b2e158d240b0de6100622431b9406b2b9b981",
+  "regressions": "Seven cheap Sage/Python tests pass, including dyadic residue degree3, cold toy arithmetic, relation and compaction replay, cover sign, kernel provenance and both staged stopping gates. Toy field test explicitly stubs rank admission and makes no rank16 claim. Bounded supervisor process-tree launch/completion test also passed.",
+  "schema": "mw16-transfer-detached-handover.v1",
+  "scientific_result": "Commissioning in progress; no class-to-point transfer or complementarity claimed.",
+  "seed_sha256": "ccfa9be82b6d82aaabd27ef7be9a8ed7afb14ff060806bac5747ed204971fed0",
+  "source_manifest_sha256": "627ceabfe742fffb426d520f568ec07a805cfff430730ec19be3754851342005",
+  "status_at_handover": "RUNNING",
+  "status_command": "research/elliptic-curves/rank-jump/transfer-status.sh",
+  "stop_command": "research/elliptic-curves/rank-jump/transfer-status.sh stop"
+}

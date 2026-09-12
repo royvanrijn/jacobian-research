@@ -46,7 +46,8 @@
         ],
         "evidence": {
           "archive/repository-cleanup-2026-09-12/EC_SCOPE_RECONCILIATION.json": "43709799e67eacd1f41c7c8c1411694375f3b97f031a72077516e44fb4888d78",
-          "MATH_STATUS.json": "77e0af26e08264fa7cd645c4a162f2d3fb1845b849f112cd26e7e2a82b6f8729"
+          "MATH_STATUS.json": "77e0af26e08264fa7cd645c4a162f2d3fb1845b849f112cd26e7e2a82b6f8729",
+          "archive/repository-cleanup-2026-09-12/EC_SCOPE_FINAL_RECONCILIATION.json": "6f0fba563802310cdc267fa6bdb9106abea9598090f1413c0b18826ccc6a50df"
         }
       }
     },
@@ -80,7 +81,7 @@
       "actions": [
         "WORK-REGISTRY-SEMANTICS"
       ],
-      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "rationale": "All active partial boundaries and checkerless entries have source reviews. The MW9 scope now acknowledges the completed alternative MW17 parent, and OP-EC-NEXT retains its current scope without a redundant historical ID list. A strongest-proof and counterexample review of every remaining active proved claim is still incomplete.",
       "id": "LEGACY-20260904-241"
     },
     {
@@ -143,7 +144,7 @@
       "actions": [
         "WORK-NAVIGATION-INVARIANTS"
       ],
-      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun. NS0031 now has an exact selected-field input projection, an independently written finite arithmetic verifier and primary output digests; this scoped improvement does not complete the repository-wide obligation.",
       "id": "LEGACY-20260904-250"
     },
     {
@@ -237,12 +238,25 @@
     {
       "line": 262,
       "text": "For entries without checkers, identify whether the proof is genuinely prose-only or is missing a compact deterministic witness that should exist.",
-      "disposition": "retained-review",
+      "disposition": "maintained-check",
       "actions": [
         "WORK-REGISTRY-SEMANTICS"
       ],
-      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
-      "id": "LEGACY-20260904-262"
+      "rationale": "All 11 active EC/K3 entries without checkers have source-bound outcomes: five written deductions and six research objectives. Computational premises remain attached to their separate result checkers; no missing finite witness was identified for these written implications. This does not independently audit those premises or the archived programmes.",
+      "id": "LEGACY-20260904-262",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "All 11 active EC/K3 entries without checkers have source-bound outcomes: five written deductions and six research objectives. Computational premises remain attached to their separate result checkers; no missing finite witness was identified for these written implications. This does not independently audit those premises or the archived programmes.",
+        "checks": [
+          "Read the exact proof or current objective sections recorded in each review.",
+          "Verified primary external theorem statements for the non-thin, neighbour and Cassels–Tate deductions.",
+          "Passed strict checker-absence and partial-review validation and all 51 maintenance tests."
+        ],
+        "evidence": {
+          "archive/repository-cleanup-2026-09-12/CHECKER_ABSENCE_REVIEW.json": "48ae0c2265cfb73ebdd0025763f9687994184ef90c828c50d8e9f92ff2df9eeb"
+        }
+      }
     },
     {
       "line": 264,
@@ -262,19 +276,20 @@
       "actions": [
         "WORK-PARTIAL-GATES"
       ],
-      "rationale": "All77 active EC/K3 partials now have current source-level reviews and precise surviving obligations; obsolete operational conclusions were corrected. This completes the active-scope partial review, not the open mathematics.",
+      "rationale": "All78 active EC/K3 partials now have current source-level reviews and precise surviving obligations; obsolete operational conclusions were corrected. This completes the active-scope partial review, not the open mathematics.",
       "id": "LEGACY-20260904-266",
       "resolution": {
         "outcome": "completed-at-snapshot",
         "date": "2026-09-12",
-        "summary": "All77 active EC/K3 partials now have current source-level reviews and precise surviving obligations; obsolete operational conclusions were corrected. This completes the active-scope partial review, not the open mathematics.",
+        "summary": "All78 active EC/K3 partials now have current source-level reviews and precise surviving obligations; obsolete operational conclusions were corrected. This completes the active-scope partial review, not the open mathematics.",
         "checks": [
           "Inspected active-scope sources and evidence listed here.",
           "Passed applicable maintenance checks recorded in EC_SCOPE_RECONCILIATION.json."
         ],
         "evidence": {
           "archive/repository-cleanup-2026-09-12/EC_SCOPE_RECONCILIATION.json": "43709799e67eacd1f41c7c8c1411694375f3b97f031a72077516e44fb4888d78",
-          "knowledge/partial_reviews.json": "de19f507cc2400ea0b1b79e1ea7bf2c1d066e0a1f3850f4ff299de594e479b3e"
+          "knowledge/partial_reviews.json": "cb4e89795a5d9ec86dabe8b976b7c5d25383cb77688aabfa13c13ca2d107c896",
+          "archive/repository-cleanup-2026-09-12/EC_SCOPE_FINAL_RECONCILIATION.json": "6f0fba563802310cdc267fa6bdb9106abea9598090f1413c0b18826ccc6a50df"
         }
       }
     },
@@ -285,7 +300,7 @@
       "actions": [
         "WORK-REGISTRY-SEMANTICS"
       ],
-      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "rationale": "Added seven sourced route boundaries to the Curve302 recovery and rank-jump mechanism objectives, and corrected the stale MW9 construction priority. The snapshot ROUTE_MEMORY_REVIEW.json records the exact changes. These reviewed subsets do not complete the requirement to reconcile every later negative result across all active objectives.",
       "id": "LEGACY-20260904-268"
     },
     {
@@ -340,7 +355,7 @@
       "actions": [
         "WORK-REPLAY-PROVENANCE"
       ],
-      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient. NS0031 now has an exact selected-field input projection, an independently written finite arithmetic verifier and primary output digests; this scoped improvement does not complete the repository-wide obligation.",
       "id": "LEGACY-20260904-307"
     },
     {
@@ -400,7 +415,7 @@
       "actions": [
         "WORK-K3-MARKING-REVIEW"
       ],
-      "rationale": "Keep the existing rational-marking obstructions and geometric controls; the external theorem-input review remains separately attributable.",
+      "rationale": "The original NS0031 checker passed under30 seconds; a separate standard-library replay and exact2771-byte projection now reproduce the finite arithmetic. Velu Theorem7 and the two printed models were inspected. The literal stable-group and QQ-defined marked-period/Cartan map remain unreviewed, so this compound item is not complete. See NS0031_REPLAY_REVIEW.json.",
       "id": "LEGACY-20260904-345"
     },
     {
@@ -541,7 +556,7 @@
       "actions": [
         "WORK-REGISTRY-SEMANTICS"
       ],
-      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation. NS0031 now has an exact selected-field input projection, an independently written finite arithmetic verifier and primary output digests; this scoped improvement does not complete the repository-wide obligation.",
       "id": "LEGACY-20260904-665"
     },
     {
@@ -1046,7 +1061,7 @@
       "actions": [
         "WORK-REPLAY-PROVENANCE"
       ],
-      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient. NS0031 now has an exact selected-field input projection, an independently written finite arithmetic verifier and primary output digests; this scoped improvement does not complete the repository-wide obligation.",
       "id": "LEGACY-20260904-1046"
     },
     {
@@ -1080,7 +1095,8 @@
           "archive/repository-cleanup-2026-09-12/EC_SCOPE_RECONCILIATION.json": "43709799e67eacd1f41c7c8c1411694375f3b97f031a72077516e44fb4888d78",
           "RESEARCH_TIMELINE.md": "626fdb0244de17eb6d30b53095f59e7fdffb23f60e965d2ff95903daeef16de0",
           "KNOWLEDGE_BASE.md": "70cad811b365f53193a38814814a621cfcf734e0de9626efcbfe4a6acd608fe4",
-          "MATH_STATUS.json": "77e0af26e08264fa7cd645c4a162f2d3fb1845b849f112cd26e7e2a82b6f8729"
+          "MATH_STATUS.json": "77e0af26e08264fa7cd645c4a162f2d3fb1845b849f112cd26e7e2a82b6f8729",
+          "archive/repository-cleanup-2026-09-12/EC_SCOPE_FINAL_RECONCILIATION.json": "6f0fba563802310cdc267fa6bdb9106abea9598090f1413c0b18826ccc6a50df"
         }
       }
     },
@@ -1127,7 +1143,7 @@
         ],
         "evidence": {
           "archive/repository-cleanup-2026-09-12/EC_SCOPE_RECONCILIATION.json": "43709799e67eacd1f41c7c8c1411694375f3b97f031a72077516e44fb4888d78",
-          "CLEANUP_REPORT_2026-09-12.md": "4e1f9089c70a1f1c2c0fb5ca11d63c959946a74d2b64a30ae93612d16a51163c"
+          "CLEANUP_REPORT_2026-09-12.md": "c04f7450332eaac6f7145f2f3f306deeca4b66d2e78f98dcb14376e0ae884357"
         }
       }
     }

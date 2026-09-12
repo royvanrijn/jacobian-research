@@ -127,6 +127,14 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 |---|---|---|
 | `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` (partial) | bounded-only | The scan itself does not classify rational points or prove irrationality. The separate NS0031 rational-marking obstruction closes this source route; do not extend the box to rediscover that theorem. |
 
+## NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04
+
+[Canonical source](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+
+| Claim | Disposition | Precise remaining obligation |
+|---|---|---|
+| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved) | bounded-only | Complete the external arithmetic period-map audit for this literal lattice: stable discriminant action, inclusion in the norm-one group, and the QQ-defined map with its Cartan level structure. This is a proof-source review obligation, not an assertion that the recorded nonexistence theorem is false. No new catalogue or equation search is required. |
+
 ## ORBIT42_EQUATION_LIFT
 
 [Canonical source](../elkies-k3/ORBIT42_EQUATION_LIFT.md).
@@ -256,5 +264,5 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 
 | Claim | Disposition | Precise remaining obligation |
 |---|---|---|
-| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` (partial) | open-obligation | Resolve the resource rule, implement and freeze a parameterized constructor without fixed reference dimensions or residue-degree assumptions, commission it end to end at3/17, freeze numeric budgets from complete metering, execute the eight inputs without replacement, and certify at least one fresh strict-class-to-point rank gain. Matched V3 and post-seal combined-subgroup complementarity remain unrun. |
+| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` (partial) | open-obligation | Full class-to-point commissioning and fresh transfer remain unproved. Finish the independent V3 reference arm and stop the pilot without fresh fibres. Diagnose the frozen cold dependency bank before any newly authorized modification; no cap enlargement or panel expansion is automatic. |
 

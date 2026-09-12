@@ -51,6 +51,12 @@ calculation files are checked when those files are present; `show ID` reports
 missing local evidence separately. Such receipts preserve an inspection, not
 a promise that a fresh checkout contains every replay input.
 
+The [checker-absence review](knowledge/CHECKER_REVIEW.md) explains which entries
+use written proofs, which are research objectives, and whether a finite witness
+is missing. `show ID` includes the full record. Navigation checks require a
+fresh explanation for every active entry without a checker; this grants no
+independent replay, formal verification or external review.
+
 The [historical checklist reconciliation](knowledge/LEGACY_WORK_REVIEW.md)
 retains every unchecked retrospective item, including completed subsets and old
 blocked labels. Use `research.py show LEGACY-20260904-556` to see why completed

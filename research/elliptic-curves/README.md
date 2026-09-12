@@ -32,7 +32,7 @@ their historical cohort counts.
 | Load the recovered302 family and basis | [Parent proof](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) · [loader](cas/load_curve302_recovered_parent.sage) |
 | Understand adaptive point recovery | [V3 rule and calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer results](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
 | Recover points from constructed strict classes | [Both fixed covers solved blindly; exact transport and V3 comparison](rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
-| Transfer the constructor to fresh inputs | [Eight fibres frozen; complete-cost commissioning pending](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
+| Transfer the constructor to fresh inputs | [Class commissioning bank stopped; detached V3 comparison](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
 | Propagate the marked two-class block | [The fixed column-6 word has finitely many Selmer specializations; fresh-dependency construction remains open](rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) |
 | Reuse the implemented search improvements | [Shared runtime](notes/SHARED_RESEARCH_RUNTIME.md) · [lean maps, cached continuation and box deduplication](notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md) |
 | Understand what a rank-jump experiment measures | [Structural reassessment](notes/RANK_JUMP_REASSESSMENT_2026-09-05.md) |
@@ -93,7 +93,7 @@ is preserved as a dated navigation snapshot.
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT 50b9aeeb557b4df9 -->
+<!-- status-consumer: OP-EC-NEXT b86e37cc3775f627 -->
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->

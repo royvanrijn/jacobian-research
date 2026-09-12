@@ -118,6 +118,55 @@ class PartialReviewTests(unittest.TestCase):
             with self.assertRaisesRegex(AssertionError, 'local receipts are only'):
                 reviews.validate(data, [entry], root)
 
+    def test_checker_absence_coverage_does_not_count_as_partial_review(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            entry, data = fixture(root)
+            entry.update(kind='theorem', state='proved', checker=None)
+            review = data['reviews'].pop()
+            review['disposition'] = 'written-proof'
+            review['reviewed_claims'] = {'P': reviews.entry_fingerprint(entry)}
+            data['checker_absence_reviews'] = [review]
+            reviews.validate(data, [entry], root, require_complete=True, require_checker_review=True)
+            rendered = reviews.render(data, [entry], root)
+            self.assertIn('0/0 current partial', rendered[root / 'knowledge/PARTIAL_REVIEW.md'])
+            self.assertIn('1/1 current EC/K3', rendered[root / 'knowledge/CHECKER_REVIEW.md'])
+            self.assertIsNone(reviews.detail('P', data, [entry], root))
+            self.assertEqual(reviews.detail('P', data, [entry], root,
+                collection='checker_absence_reviews')['review_needed'], [])
+            other = {**entry, 'id': 'NEW'}
+            with self.assertRaisesRegex(AssertionError, 'checker absence not yet reviewed: NEW'):
+                reviews.validate(data, [entry, other], root, require_checker_review=True)
+
+    def test_written_proof_review_cannot_hide_a_new_checker_or_changed_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            entry, data = fixture(root)
+            entry.update(kind='theorem', state='proved', checker=None)
+            review = data['reviews'].pop()
+            review['disposition'] = 'written-proof'
+            review['reviewed_claims'] = {'P': reviews.entry_fingerprint(entry)}
+            data['checker_absence_reviews'] = [review]
+            with self.assertRaisesRegex(AssertionError, 'checker added'):
+                reviews.validate(data, [{**entry, 'checker': 'checker.py'}], root)
+            (root / 'proof.md').write_text((root / 'proof.md').read_text() + 'A premise has changed.\n')
+            with self.assertRaisesRegex(AssertionError, 'needs reconciliation'):
+                reviews.validate(data, [entry], root, require_checker_review=True)
+
+    def test_open_objective_cannot_be_classified_as_a_completed_written_proof(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            entry, data = fixture(root)
+            entry.update(kind='open_problem', state='open', checker=None)
+            review = data['reviews'].pop()
+            review['disposition'] = 'written-proof'
+            review['reviewed_claims'] = {'P': reviews.entry_fingerprint(entry)}
+            data['checker_absence_reviews'] = [review]
+            with self.assertRaises(AssertionError):
+                reviews.validate(data, [entry], root)
+            review['disposition'] = 'research-objective'
+            reviews.validate(data, [entry], root, require_checker_review=True)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -9,6 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import research
+import render_status
 from research_documents import document_paths
 from render_status import CORE_ORDER, render
 
@@ -99,6 +100,40 @@ class RetrievalTests(unittest.TestCase):
             self.assertTrue(result["entry"]["scope"].endswith("UNKNOWN"))
             with self.assertRaises(ValueError):
                 research.show("MISSING", [item], [])
+
+    def test_narrowing_results_are_retrieved_without_repeating_ids_in_scope(self):
+        problem = claim('OPEN', kind='open_problem', state='open',
+                        scope='The full rank target remains open.', dependencies=['FINITE'])
+        proof = claim('FINITE', scope='Only the frozen finite atlas is complete.',
+                      narrows_problems=['OPEN'])
+        result = research.show('OPEN', [problem, proof], [])
+        self.assertEqual(result['narrowed_by'], ['FINITE'])
+        self.assertNotIn('FINITE', result['entry']['scope'])
+        self.assertEqual(research.show('FINITE', [problem, proof], [])['entry']['scope'], proof['scope'])
+
+    def test_compact_objective_still_requires_reciprocal_graph_dependencies(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'proof.md').write_text('Finite proof and a separate open objective.\n')
+            base = dict(kind='theorem', state='proved', title='Finite theorem', scope='A bounded result.',
+                        canonical_source='proof.md', dependencies=[], checker=None, proof_type='hybrid',
+                        independent_replay=False, formal_verification=False, external_review=False,
+                        artifact_hash=None, software_lock=[], supersedes=[], closes_problems=[],
+                        narrows_problems=[], consumers=[], invalidates_assumptions=[], replaced_by=[],
+                        priority='primary')
+            proof = dict(base, id='FINITE', narrows_problems=['OPEN'], consumers=['OPEN'])
+            problem = dict(base, id='OPEN', kind='open_problem', state='open', proof_type='not-applicable',
+                           scope='The full rank target remains open.', dependencies=['FINITE'])
+            index = dict(schema_version=6, authority='MATH_STATUS.json', entries=[proof, problem])
+            with patch.object(render_status, 'ROOT', root), patch.object(render_status, 'CORE_ORDER', []), \
+                    patch.object(render_status, 'ACTIVE_OPEN', {'OPEN'}):
+                render_status.validate_index(index)
+                problem['dependencies'] = []
+                with self.assertRaisesRegex(AssertionError, 'does not consume the result'):
+                    render_status.validate_index(index)
+                proof['narrows_problems'] = []
+                with self.assertRaisesRegex(AssertionError, 'does not depend on it'):
+                    render_status.validate_index(index)
 
     def test_every_registered_claim_is_in_exactly_one_area_catalogue(self):
         entries = [claim("A", source="verified/core.md"), claim("B", source="HC4_TEST.md"),

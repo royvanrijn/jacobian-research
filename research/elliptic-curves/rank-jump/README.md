@@ -23,10 +23,12 @@ remains sufficient. Its [carrier branch is closed](CARRIER_CLOSURE_AND_DEPENDENC
 182 distinct extensions all miss rational splitting at3/17, and translation
 or pairing cannot repair them. The specific
 [continued column-6 word has only finitely many Selmer specializations](FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md).
-The [fresh-constructor transfer preflight](FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md)
-freezes eight rank-blind inputs; all arithmetic remains unrun while complete-cost
-commissioning and its resource rule are prepared. One fresh class-to-point
-success is the immediate milestone. The marked infinite subfamily remains open.
+The [fresh-constructor transfer pilot](FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md)
+has eight frozen rank-blind inputs and a metered detached commissioning run.
+The cold class bank stopped with841 atoms and no new class; V3 finishes its
+independent reference arm, then the controller stops without fresh fibres.
+Status and stop commands are in the note. No transfer or rank32 success follows.
+The marked infinite subfamily remains open.
 Earlier evidence is retained below.
 The [closure evidence archive](../../artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/evidence.zip)
 and [member manifest](../../artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/evidence-manifest.json)

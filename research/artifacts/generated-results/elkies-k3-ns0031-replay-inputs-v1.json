@@ -1,0 +1,95 @@
+{
+  "boundary": "Exact field projection of three original catalogue rows. Sufficient for the independent finite arithmetic replay, not an independent reconstruction of the NS/transcendental correspondence or a proof of the arithmetic period map. The original Sage mode still uses its original catalogues.",
+  "certificate_path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+  "certificate_sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae",
+  "date": "2026-09-12",
+  "schema": "elkies-k3.ns0031-replay-inputs.v1",
+  "sources": [
+    {
+      "collection": "surfaces",
+      "fields": {
+        "surface_key/transcendental_gram": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            74,
+            1
+          ],
+          [
+            4,
+            1,
+            -2
+          ]
+        ]
+      },
+      "key": "surface_id",
+      "path": "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+      "role": "original-catalogue",
+      "sha256": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
+      "value": "K3-d1b1381f87d69f1c"
+    },
+    {
+      "collection": "surfaces",
+      "fields": {
+        "clifford/integral_even_clifford_order/reduced_discriminant": 592,
+        "clifford/quaternion_discriminant": 1,
+        "literal_transcendental_gram": [
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            74,
+            1
+          ],
+          [
+            4,
+            1,
+            -2
+          ]
+        ],
+        "rational_isotropy/integral_u_split/isotropic_divisibility": 4,
+        "rational_isotropy/primitive_isotropic_vector": [
+          1,
+          0,
+          0
+        ]
+      },
+      "key": "surface_id",
+      "path": "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+      "role": "original-catalogue",
+      "sha256": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
+      "value": "K3-d1b1381f87d69f1c"
+    },
+    {
+      "collection": "sources",
+      "fields": {
+        "determinant": 1184,
+        "source/mw_height_gram": [
+          [
+            "2",
+            "1"
+          ],
+          [
+            "1",
+            "41/8"
+          ]
+        ],
+        "source/root_lattice_primitive": true,
+        "source/root_type": "A1+2A7",
+        "source/torsion": 1
+      },
+      "key": "source_id",
+      "path": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+      "role": "original-catalogue",
+      "sha256": "a3975a15ff09770d1dff8f4ec17692e9a0effc04645561336a1205319b8f2aeb",
+      "value": "NS0031-S001"
+    }
+  ]
+}

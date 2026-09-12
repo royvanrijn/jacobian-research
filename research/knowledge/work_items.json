@@ -342,7 +342,7 @@
       "prerequisites": "Curve302 parent recovery and calibrated V3 amplification are complete; rank32 remains open. A new search needs an explicit finite budget, and a lower bound is not an exact rank. The frozen48-fibre record-scale campaign is complete at2352 certified boxes with zero gains; its11760 adaptive cap is not remaining work.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-EC-NEXT": "50b9aeeb557b4df9",
+        "OP-EC-NEXT": "b86e37cc3775f627",
         "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971"
       }
     },
@@ -391,19 +391,19 @@
         "elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md",
         "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md"
       ],
-      "next_step": "Resolve the proposed commissioning resource rule, parameterize the existing adaptive small-representative constructor without fixed reference dimensions or arithmetic data, and freeze its executable policy. Meter3/17 end to end before numeric fresh-fibre budgets, then run the eight already frozen inputs without replacement, with at most two independently new classes lifted per fibre. Run isolated generic-only V3 with matched allowances and compare sealed combined subgroups.",
+      "next_step": "Let the detached independent V3 reference arm finish, preserve sealed outputs and stop without fresh fibres. Review the specific cold-start dependency bottleneck: the frozen bank produced841 independent projected parity rows and no dependency. Compare that policy with the successful reference relation warm-up before proposing any further bounded implementation change. No new bank, higher cap or fresh campaign starts automatically.",
       "done_when": "At least one fresh fibre supplies an explicit new principal dependency, a fully verified strict class outside its generic16, an exact blind rational lift and an independent generic16-plus1 certificate. After both outputs seal, separately certify or leave UNKNOWN its complementarity to matched-endpoint V3. A bounded panel without such a witness retains every failure and leaves the transfer milestone UNKNOWN. An infinite parameter theorem and ordinary ideal-class increments are separate later endpoints.",
-      "prerequisites": "Principal28 and Curve302 degree-two carriers are certified, but their common pencil does not explain the jump. Selected radical composita do not determine minimum ancestry; the skew relation pilot supplied no new independent relation. The two fixed MW16-05 covers now lift without a point oracle, but generic-only V3 supplies both as well; a parameter criterion and full construction-cost advantage remain unresolved. The simultaneous-splitting theorem is now verified, including an effective finite-reduction neighbourhood refinement. The first full-frame norm10/14 traversal stops at2000000 nodes with both shells incomplete:182 exact genus-zero bisections all miss rational splitting at the control,73 residuals split generically, and candidate171 is UNKNOWN. Preserve the182 equations, exact nonsplitting progression, all failed receipts and original budgets; no pairing or fresh-fibre stage has passed its prerequisites. The final carrier diagnostic closes this branch: all182 extensions are distinct and remain nonsplit under every generic translation; pairing cannot repair a missing lift. A complete coefficientwise continuation of column6 has now been defined without exceptional points and independently checked. Its valuation pattern(2,1,1) above twelve geometric good parameters prevents a point-class interpretation over Q(t); any base making this particular word a point class has genus at least5. This does not justify a higher-genus search. Preserve the full1676/1572 atom words and do not carry specialized ideal columns across varying fields. The stronger closure is now proved: a uniform resultant-defined finite prime set confines all eligible locally soluble specializations of the fixed column6 word to finitely many genus5 twists. Faltings gives finiteness, with no effective list or useful bound. The proof packet includes the expanded definition, prior Bezout certificate,105 integer scalar guards,1693 exact resultant circuits and independent verification. The reusable object is the adaptive constructor; its output word is allowed to change. Column7 remains untested. The frozen eight-input preflight and128 equation identities are verified. Its3884 timing receipts total3202.922 wall seconds but omit some preparation and verification; the complete reference cost remains unknown. All nine cases are NOT_STARTED. Do not call the historical subtotal or18.401-second recovery a complete constructor allowance. The proposed commissioning and matched-budget rule still awaits the resource answer, and the generic constructor adapter is not yet implemented.",
+      "prerequisites": "Principal28 and Curve302 degree-two carriers are certified, but their common pencil does not explain the jump. Selected radical composita do not determine minimum ancestry; the skew relation pilot supplied no new independent relation. The two fixed MW16-05 covers now lift without a point oracle, but generic-only V3 supplies both as well; a parameter criterion and full construction-cost advantage remain unresolved. The simultaneous-splitting theorem is now verified, including an effective finite-reduction neighbourhood refinement. The first full-frame norm10/14 traversal stops at2000000 nodes with both shells incomplete:182 exact genus-zero bisections all miss rational splitting at the control,73 residuals split generically, and candidate171 is UNKNOWN. Preserve the182 equations, exact nonsplitting progression, all failed receipts and original budgets; no pairing or fresh-fibre stage has passed its prerequisites. The final carrier diagnostic closes this branch: all182 extensions are distinct and remain nonsplit under every generic translation; pairing cannot repair a missing lift. A complete coefficientwise continuation of column6 has now been defined without exceptional points and independently checked. Its valuation pattern(2,1,1) above twelve geometric good parameters prevents a point-class interpretation over Q(t); any base making this particular word a point class has genus at least5. This does not justify a higher-genus search. Preserve the full1676/1572 atom words and do not carry specialized ideal columns across varying fields. The stronger closure is now proved: a uniform resultant-defined finite prime set confines all eligible locally soluble specializations of the fixed column6 word to finitely many genus5 twists. Faltings gives finiteness, with no effective list or useful bound. The proof packet includes the expanded definition, prior Bezout certificate,105 integer scalar guards,1693 exact resultant circuits and independent verification. The reusable object is the adaptive constructor; its output word is allowed to change. Column7 remains untested. The frozen eight-input preflight and128 equation identities are verified. Its3884 timing receipts total3202.922 wall seconds but omit some preparation and verification; the complete reference cost remains unknown. Do not call the historical subtotal or18.401-second recovery a complete constructor allowance. The staged spending rule is now authorized and executable. A snapshotted detached adapter has certified reference starting rank16 and cold field preparation, and begun collecting fresh relations. The initial import-package omission is preserved and charged within the same allowance. Full commissioning remains unproved; no fresh run starts without its certificate gate. Status is read from the live controller, not historical ledgers. Before handover the frozen cold class bank completed in321.67 elapsed seconds, collecting841 atoms from23244696 tested norm pairs. Replay of retained projected parity records has rank841 and kernel dimension0; strict extraction and lifting were not reached. This binary replay does not independently recertify all atom factorizations. The class commissioning gate therefore fails; only the already authorized independent V3 reference arm finishes, after which the controller stops without fresh fibres. No automatic bank enlargement follows, and this cold-start bank miss does not invalidate the earlier successful constructor with its longer relation warm-up.",
       "compute": "new-compute",
       "reviewed_claims": {
-        "OP-EC-RANK-JUMP-MECHANISM-20260910": "2df6d7e1ea7b9710",
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "f4004eb744c0042b",
         "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "6cf30e028a790fb1",
         "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912": "a170da1eccd83d2b",
         "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912": "565b1e1c8d99e546",
         "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912": "68ecb62b3fbba931",
         "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912": "5b11f3aea3cb164f",
         "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912": "23db051da77c1a47",
-        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "e72b80b5f41d0813"
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "ea7816dd308d60c6"
       }
     },
     {
@@ -415,9 +415,10 @@
       "claims": [],
       "sources": [
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
-        "scripts/audit_status.py"
+        "scripts/audit_status.py",
+        "knowledge/CHECKER_REVIEW.md"
       ],
-      "next_step": "Review a bounded set of high-risk elliptic-curve and supporting K3 claims for exact title/scope, logical dependencies, checker purpose, prose-only evidence and assurance flags; record outcomes per claim.",
+      "next_step": "Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the eleven checker-absence classifications unless their bound sources change.",
       "done_when": "Each reviewed claim has a sourced semantic outcome and any correction has propagated to its consumers. Metadata PASS alone does not complete this task.",
       "prerequisites": "Start from the existing retrospective completed subsets and current registry audit; do not assume a checker default mode covers all modes.",
       "compute": "none",
@@ -747,7 +748,7 @@
       "prerequisites": "Public hit counts and a later prospective roster cannot reconstruct the original discoverers' effort.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-EC-RANK-JUMP-MECHANISM-20260910": "2df6d7e1ea7b9710"
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "f4004eb744c0042b"
       }
     },
     {

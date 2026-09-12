@@ -322,10 +322,14 @@ def validate_index(index: dict) -> None:
             assert item_id in target["dependencies"], (
                 f"{item_id}: narrowed problem {target_id} does not consume the result"
             )
-            assert item_id in target["scope"], (
-                f"{item_id}: narrowed problem {target_id} does not mention the result "
-                "in its scope"
-            )
+            # The typed edge and reciprocal dependency preserve the result.
+            # Requiring its ID in prose made umbrella scopes append-only lists.
+            # Source-review receipts bind active checkerless objectives to their
+            # full entries, including dependency changes (research.py check).
+            if not (is_active(target) and target['checker'] is None):
+                assert item_id in target['scope'], (
+                    f"{item_id}: narrowed problem {target_id} does not mention the result in its scope"
+                )
         for target_id in item["invalidates_assumptions"]:
             assert item["state"] == "proved", (
                 f"{item_id}: only a proved entry may invalidate an assumption"
@@ -344,10 +348,11 @@ def validate_index(index: dict) -> None:
                 assert item_id in target["dependencies"], (
                     f"{item_id}: declared consumer {consumer} does not depend on it"
                 )
-                assert item_id in target["scope"], (
-                    f"{item_id}: declared consumer {consumer} does not acknowledge it "
-                    "in its scope"
-                )
+                if not (is_active(target) and target['kind'] == 'open_problem' and target['checker'] is None):
+                    assert item_id in target["scope"], (
+                        f"{item_id}: declared consumer {consumer} does not acknowledge it "
+                        "in its scope"
+                    )
                 continue
             consumer_path = (ROOT / consumer).resolve()
             assert ROOT.resolve() in consumer_path.parents, (

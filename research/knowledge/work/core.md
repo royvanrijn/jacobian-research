@@ -12,13 +12,13 @@ Proposals are unscheduled. Read the full claim scope before acting; supporting c
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Review a bounded set of high-risk elliptic-curve and supporting K3 claims for exact title/scope, logical dependencies, checker purpose, prose-only evidence and assurance flags; record outcomes per claim.
+**Next step:** Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the eleven checker-absence classifications unless their bound sources change.
 
 **Completion evidence:** Each reviewed claim has a sourced semantic outcome and any correction has propagated to its consumers. Metadata PASS alone does not complete this task.
 
 **Prerequisites and boundary:** Start from the existing retrospective completed subsets and current registry audit; do not assume a checker default mode covers all modes.
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [audit_status.py](../../scripts/audit_status.py).
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [audit_status.py](../../scripts/audit_status.py); [CHECKER_REVIEW.md](../../knowledge/CHECKER_REVIEW.md).
 
 Inherited checklist items: `LEGACY-20260904-241`, `LEGACY-20260904-243`, `LEGACY-20260904-245`, `LEGACY-20260904-247`, `LEGACY-20260904-256`, `LEGACY-20260904-258`, `LEGACY-20260904-262`, `LEGACY-20260904-264`, `LEGACY-20260904-268`, `LEGACY-20260904-665`, `LEGACY-20260904-1038`. Full wording: `research.py show LEGACY-ID`.
 

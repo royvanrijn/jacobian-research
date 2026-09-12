@@ -1,0 +1,28 @@
+{
+  "boundary": "Packaging repair within the original reference V3 cap; no comparative rank or efficiency result is claimed by launch.",
+  "captured_unix": 1789240322.3588169,
+  "class_gate": "CLOSED_NO_NEW_CLASS_WITHIN_FROZEN_BANK",
+  "launch": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/implementation/research/elliptic-curves/rank-jump/run_fresh_constructor_transfer.py",
+      "run",
+      "--folder",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v3"
+    ],
+    "detached": true,
+    "pid": 1758735,
+    "start_token": "29340083",
+    "started_unix": 1789240220.128159
+  },
+  "previous_costs": {
+    "class": 327.02057373395655,
+    "v3": 31.945021716004703
+  },
+  "protocol_sha256": "d451a85b830d5c17ff036697894d71585df499c4d28a96560ab0cd9501b217cd",
+  "reason": "The v2 V3 landscape read needed the native pointed_quartic_sieve.cpp source. v3 includes native code in the snapshot and allowlist. No point-search or mathematical policy change.",
+  "remaining_work": "Independent V3 reference only, then stop; no class rerun or fresh fibres.",
+  "schema": "mw16-transfer-reference-v3-packaging-repair.v1",
+  "source_manifest_sha256": "fb41fed2e932443af88d3f6c048a3914421820123be1640e5c60e3fab9ae7947",
+  "status_command": "research/elliptic-curves/rank-jump/transfer-status.sh"
+}

@@ -4,7 +4,7 @@
 
 All **77 unchecked items** in the [preserved retrospective](../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt) are retained in [legacy_work_review.json](legacy_work_review.json), including the long completed-subset annotations. These dispositions describe cleanup decisions; they do not certify completion of a mathematical audit or schedule a calculation.
 
-**23/77 items have explicit completion records** with the inspected snapshot hashes and checks performed. Completion applies to that recorded snapshot; the maintained checks must still pass on current work. An item without a completion record remains unfinished, regardless of its destination.
+**24/77 items have explicit completion records** with the inspected snapshot hashes and checks performed. Completion applies to that recorded snapshot; the maintained checks must still pass on current work. An item without a completion record remains unfinished, regardless of its destination.
 
 27 inherited items now belong only to archived programmes. Their completion status remains as recorded; they are outside the active EC/K3 cleanup scope.
 
@@ -26,7 +26,7 @@ Use `research.py show LEGACY-20260904-LINE` for the full text, rationale and cur
 | `LEGACY-20260904-256` | Ensure a proved bounded reproduction is described as a proved execution of a bounded protocol, never as the unbounded mathematical conc… | retained-review | unfinished | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics) |
 | `LEGACY-20260904-258` | Ensure `independent_replay`, `formal_verification`, and `external_review` are evidence flags, not inferred from proof type or a passing… | retained-review | unfinished | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics) |
 | `LEGACY-20260904-260` | Preserve falsified and archived evidence needed to explain why a route or assumption must not be reused. | maintained-check | completed 2026-09-12 | [WORK-NAVIGATION-INVARIANTS](work/core.md#work-navigation-invariants) |
-| `LEGACY-20260904-262` | For entries without checkers, identify whether the proof is genuinely prose-only or is missing a compact deterministic witness that sho… | retained-review | unfinished | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics) |
+| `LEGACY-20260904-262` | For entries without checkers, identify whether the proof is genuinely prose-only or is missing a compact deterministic witness that sho… | maintained-check | completed 2026-09-12 | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics) |
 | `LEGACY-20260904-264` | For shared checkers, replay every parameter/source mode named by status; a default-mode pass is not coverage of alternate modes. | unscheduled-replay | unfinished | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics), [WORK-K3-REPLAY-TRIAGE](work/elkies-k3.md#work-k3-replay-triage) |
 | `LEGACY-20260904-266` | For all partial entries, name the first exact missing gate and remove any prose that implies the partial calculation is “almost” a theo… | retained-review | completed 2026-09-12 | [WORK-PARTIAL-GATES](work/core.md#work-partial-gates) |
 | `LEGACY-20260904-268` | For open and parked problems, verify forbidden attack classes and witnesses reflect every later negative result. | retained-review | unfinished | [WORK-REGISTRY-SEMANTICS](work/core.md#work-registry-semantics) |
