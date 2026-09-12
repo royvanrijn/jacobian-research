@@ -134,12 +134,11 @@ The exact frame minimum-norm histograms are retained only as reference data.
 They become marked minimum-class data on `103b2` and `11952`, and only the
 norm-eight/norm-ten counts have marked evidence on `074d9` and `08f72`.  The
 complete marked norm-ten count is exact on all ten alternate-Q80 charts;
-their other minimum rows remain `UNKNOWN`.  For the seventeen selected `11952` products, the later
-[arithmetic rank-zero closure](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
-gives `A-=Gamma_d=H_d=0`; their full Tate quotients are no longer unknown.
-This does not compute full two-Selmer groups or settle quotients on other
-products. The earlier zero-class certificate remains a separate, weaker
-result.
+their other minimum rows remain `UNKNOWN`.  Every full Tate quotient remains
+`UNKNOWN`.  On `11952`, the separate product-character
+reduction excludes the zero Tate class for height-eight sections under its
+stated gates; it does not determine a quotient dimension, a nonzero class,
+or existence.
 
 ## Next quotient-only transport tranche
 

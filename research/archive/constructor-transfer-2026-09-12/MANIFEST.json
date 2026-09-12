@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "reason": "User-directed closure of the failed positive commissioning pilot; preserve inputs, receipts and prior instructions as historical evidence, not a work queue.",
+  "files": {
+    "FRESH_CONSTRUCTOR_TRANSFER.before.md.txt": "2b10d4c1e6aef56fbb8c30d81c0d685d8f0ee39b56a6b3447e8c904e06f1a332",
+    "MATH_STATUS.before.json": "f8a48cd4ba2de1b8e718fddbdebb82e740738bb1fc64cc56b529eab077ee5e1d",
+    "v3-terminal.json": "4ccecb326ad43cafe76c472d16050c1ae0fca0edda68d90f259ce4741662e9d9",
+    "v3-verify-supervisor.json": "191d6af1ffbe1946074d50d42cf5d92eb64d8ac99bb66eb25d2680a1e0feaa00",
+    "v3-verify.log": "179f98ee9d2c1b85fa6a7c2fc511e8fac772ef654daf3030ad5ff78cdf7e87cc",
+    "work_items.before.json": "c4e304e809746e74ae6d73e1b53d26073a603eafdaa2610c24f7f11503799061"
+  }
+}

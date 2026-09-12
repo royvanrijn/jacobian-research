@@ -384,6 +384,26 @@
       "original_path": "research/elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
       "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md.txt",
       "sha256": "6016fee0e5438ef947a49ffd4634e4ec17e3ca3f2e2593867bf12bf526d29ac3"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md.txt",
+      "sha256": "856ba4dbfcd2d89d2dccc3910001122f105373ff48a663cf9a01b85229eaef7f"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md.txt",
+      "sha256": "a03280a308be356c3251fb88ece9e095e943be9ccf7bc9b1d057c57b2ba6f699"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md.txt",
+      "sha256": "13f6dda95d203bfd2cc921ab70294f0bdd239a7af25d5ad8eae61b1b081cbec3"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md.txt",
+      "sha256": "2c6d255fa3549aba506e4a88dcb06217bfd4be63d6cc6838d73c076170052e93"
     }
   ],
   "previous_scope_sha256": "0604ee3c20c5ac794035042aa5d2e6a0e9206b724cfa4264cfa48b3b7f8d30d5",

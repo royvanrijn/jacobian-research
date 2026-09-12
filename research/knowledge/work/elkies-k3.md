@@ -96,13 +96,15 @@ Inherited checklist items: `LEGACY-20260904-323`. Full wording: `research.py sho
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Review the two V4 rank timeouts separately, then identify missing infinity/bad-reduction charts and the full involution/2-Selmer lattice prerequisite for nonzero quotient classes.
+**Next step:** Review which complete character and singular-normalization exclusions still need independent witnesses. The V4 timeout record review and genus-two boundary review are complete; the old17-product class/section worklist is closed by later rank-zero theorems.
 
 **Completion evidence:** Each selected gate has a current scoped obligation or closure; independent character and singular-normalization replays are proposed only where still needed.
 
-**Prerequisites and boundary:** The historical screen is 62 complete plus two timeouts. Zero-class exclusion and a bounded CRT box do not prove a positive class or a global normalization theorem.
+**Prerequisites and boundary:** The two base-Jacobian timeouts remain UNKNOWN. All17 selected product twists instead have arithmetic rank zero, so no full Selmer or involution-lattice reconstruction is needed for their Tate quotients. Use full integral groups and actual point-Kummer images if a new product target is proposed.
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md](../../elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md).
+Authority: [EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md) (proved); [EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION](../../elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) (proved); [EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO](../../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md) (proved); [EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) (proved); [EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md) (proved).
+
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md](../../elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md); [R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md); [R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md); [R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
 
 Inherited checklist items: `LEGACY-20260904-367`, `LEGACY-20260904-369`, `LEGACY-20260904-372`, `LEGACY-20260904-375`. Full wording: `research.py show LEGACY-ID`.
 

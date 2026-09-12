@@ -24,6 +24,7 @@ check-navigation:
 	$(SYSTEM_PYTHON) scripts/audit_repository_hygiene.py
 	$(SYSTEM_PYTHON) scripts/audit_cleanup_snapshot.py
 	$(SYSTEM_PYTHON) scripts/audit_programme_archive.py
+	$(SYSTEM_PYTHON) scripts/audit_v4_base_rank_screen.py
 	$(SYSTEM_PYTHON) elkies-k3/scripts/analyze_process_ledger.py --check-document
 	$(SYSTEM_PYTHON) elliptic-curves/cas/render_main_readme_curves.py --check --from-inventory
 	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_research*.py' -q

@@ -247,7 +247,7 @@ disjoint member of any section-nonnegative norm-eight genus-one bisection
 pencil.  Equivalently, none supplies a minimal product-character section in
 the integral coboundary image with norm-eight trace.
 
-The inversion calculation alone does not prove the stronger sentence:
+The following stronger sentence is **not yet proved**:
 
 > None of the selected product twists has a minimal product-character
 > section.
@@ -261,12 +261,8 @@ Likewise, the present negative does not imply that every remaining section
 has positive zero intersection or comes from a higher-arithmetic-genus
 curve.
 
-The [later geometric classification](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md)
-and [arithmetic regulator closure](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
-now exclude all seventeen selected product twists at every rational height.
-Their anti-invariant and Tate groups are zero. The integral qualification
-remains essential for a new target, but these seventeen require no further
-saturation, descent or section search.
+Thus the next exact gate is a 2-primary saturation/descent calculation, not a
+return to the twelve-equation product-twist `msolve` systems.
 
 ## Replay
 

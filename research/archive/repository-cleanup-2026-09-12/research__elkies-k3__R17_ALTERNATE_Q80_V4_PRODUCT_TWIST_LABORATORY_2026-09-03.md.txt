@@ -69,38 +69,6 @@ one.  No ambiguous interval is treated as an exact rank.  The rank artifact is
 SHA-256
 `ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69`.
 
-## Timeout and checker review — 12 September 2026
-
-The two censored cases are retained individually:
-
-| Shortlist position | Pair | Recorded rank |
-|---:|---|---|
-| 3 | `alternate-orbit-1463f:alternate-orbit-083ad` | `UNKNOWN` |
-| 30 | `alternate-orbit-19b4e:alternate-orbit-146dc` | `UNKNOWN` |
-
-Both local checkpoints agree exactly with their rows in the committed screen.
-The ten-second allowance covered the whole Sage subprocess, including startup;
-it is not a measurement of ten seconds spent inside PARI. Their five curve
-coefficients remain in the original shortlist. Neither rank was recalculated.
-
-The original screen's `--check` verifies input hashes and prints stored totals.
-It does not check the result roster, recompute those totals or replay `ellrank`.
-The separate [record audit](../scripts/audit_v4_base_rank_screen.py) now checks
-all64 identities, run keys, interval types, both timeout records, the interval
-histogram and the ranked list. Five corruption tests cover omissions,
-duplicates, false timeout bounds, altered summaries and changed execution modes.
-
-```sh
-# From research/; metadata only, no Sage or PARI:
-python3 scripts/audit_v4_base_rank_screen.py
-```
-
-This closes the bookkeeping review of the two timeouts. Their exact ranks and
-the45 non-singleton completed intervals remain unresolved by this screen.
-The audit grants no independent mathematical replay. A new rank calculation
-would need its own scope and result artifact; the original62-plus2 record
-and its hashes remain unchanged.
-
 ## Product-character bisection inversion
 
 The unsliced product-twist `msolve` system is no longer the active route.
@@ -178,11 +146,11 @@ sage -python \
 The 64 rational pair-base points, their genus-one geometry, and the seventeen
 exact rank-one base Jacobians are established.  The complete norm-eight
 bisection inversion has no product-character hit, so no generic
-rank-at-least-20 `V4` base change is obtained.  The [complete cohomological classification](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md)
-and [regulator proofs](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
-now prove arithmetic product-twist rank zero for all seventeen selected
-rank-one bases, including every non-coboundary section and every rational
-height. Their point-Kummer and Tate groups are zero; the product-section
-worklist is closed. Twelve have geometric rank zero, while the other five
-retain geometric rank `UNKNOWN` in `[0,2]`. The two base-Jacobian timeouts
-above concern different objects and are unchanged.
+rank-at-least-20 `V4` base change is obtained.  A non-coboundary minimal
+product-twist section remains `UNKNOWN` on sixteen targets until the
+2-primary integral descent quotient or another complete Frobenius bound is
+computed.  Shortlist rank `55`, pair
+`alternate-orbit-0fda0:alternate-orbit-1037d`, is now closed independently:
+its complete degree-28 Frobenius polynomial at `p=131` gives `rho<=18` and
+geometric product-twist rank zero.  See
+[`R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md).

@@ -45383,7 +45383,9 @@
       "software_lock": [
         "elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py",
         "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json",
-        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json"
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json",
+        "scripts/audit_v4_base_rank_screen.py",
+        "tests/test_research_v4_screen.py"
       ],
       "supersedes_notes": [
         "all 64 shortlisted alternate-Q80 V4 base-Jacobian ranks are unresolved"

@@ -4,7 +4,7 @@
 
 All **77 unchecked items** in the [preserved retrospective](../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt) are retained in [legacy_work_review.json](legacy_work_review.json), including the long completed-subset annotations. These dispositions describe cleanup decisions; they do not certify completion of a mathematical audit or schedule a calculation.
 
-**24/77 items have explicit completion records** with the inspected snapshot hashes and checks performed. Completion applies to that recorded snapshot; the maintained checks must still pass on current work. An item without a completion record remains unfinished, regardless of its destination.
+**26/77 items have explicit completion records** with the inspected snapshot hashes and checks performed. Completion applies to that recorded snapshot; the maintained checks must still pass on current work. An item without a completion record remains unfinished, regardless of its destination.
 
 27 inherited items now belong only to archived programmes. Their completion status remains as recorded; they are outside the active EC/K3 cleanup scope.
 
@@ -42,8 +42,8 @@ Use `research.py show LEGACY-20260904-LINE` for the full text, rationale and cur
 | `LEGACY-20260904-345` | Replay the NS0031 rational-marking checker and independently inspect the two external theorem inputs: Vélu’s `X_0(37)(Q)` classificatio… | retained-review | unfinished | [WORK-K3-MARKING-REVIEW](work/elkies-k3.md#work-k3-marking-review) |
 | `LEGACY-20260904-355` | Keep the NS0024 and NS0031 local/geometric artifacts as controls while preventing either from re-entering the rational-source queue. | retained-review | completed 2026-09-12 | [WORK-K3-MARKING-REVIEW](work/elkies-k3.md#work-k3-marking-review) |
 | `LEGACY-20260904-360` | Complete the long 103b2 MW-lattice, 63,917-class product-inversion, and high-throughput splitting replays with checkpoints. | needs-reconciliation | unfinished | [WORK-K3-REPLAY-TRIAGE](work/elkies-k3.md#work-k3-replay-triage) |
-| `LEGACY-20260904-367` | Revisit the two V4 base-rank timeouts separately; the stored `62 complete, 2 timeout` screen must never be summarized as 64 completed r… | retained-review | unfinished | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
-| `LEGACY-20260904-369` | Compute nonzero product quotient classes only after the exact full involution/2-Selmer lattice is available; zero-class exclusion is no… | retained-review | unfinished | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
+| `LEGACY-20260904-367` | Revisit the two V4 base-rank timeouts separately; the stored `62 complete, 2 timeout` screen must never be summarized as 64 completed r… | retained-review | completed 2026-09-12 | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
+| `LEGACY-20260904-369` | Compute nonzero product quotient classes only after the exact full involution/2-Selmer lattice is available; zero-class exclusion is no… | partly-superseded | completed 2026-09-12 | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
 | `LEGACY-20260904-372` | Keep the genus-two normalization result bounded until infinity charts, simultaneous bad reduction, and parameters beyond the CRT box ar… | retained-review | completed 2026-09-12 | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
 | `LEGACY-20260904-375` | Add independent replay implementations for the highest-risk complete character and singular-normalization exclusions. | retained-review | unfinished | [WORK-LOW-GENUS-GATES](work/elkies-k3.md#work-low-genus-gates) |
 | `LEGACY-20260904-472` | Re-audit the alternate-bisection chunk merger after its concurrent `1183a`/`098fc` expansion settles; do not bless its intermediate has… | maintained-check | completed 2026-09-12 | [WORK-K3-REPLAY-TRIAGE](work/elkies-k3.md#work-k3-replay-triage) |

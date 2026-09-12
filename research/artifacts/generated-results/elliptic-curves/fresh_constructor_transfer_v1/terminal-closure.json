@@ -1,0 +1,35 @@
+{
+  "schema": "fresh-constructor-transfer-closure.v1",
+  "status": "STOPPED_COMMISSIONING_GATE",
+  "charged_wall_seconds": 543.227574708988,
+  "cases_started": [
+    "control"
+  ],
+  "fresh_fibres_started": 0,
+  "class_route": {
+    "status": "INCOMPLETE_WITH_RETAINED_CHECKPOINTS",
+    "verified": false,
+    "transfer_success": false,
+    "charged_seconds": 321.6695286039612
+  },
+  "v3_route": {
+    "status": "INCOMPLETE_WITH_RETAINED_CHECKPOINTS",
+    "verified": false,
+    "transfer_success": false,
+    "charged_seconds": 180.1088694910286
+  },
+  "v3_checkpoint": {
+    "status": "BOUNDED_V3_FINISHED_PENDING_REPLAY",
+    "rank_lower_bound": 22
+  },
+  "v3_verification_failure": "AssertionError at transfer_v3.py:187, assert fresh == old. Final rank gain remains UNKNOWN; no repair or rerun is authorized by this closure.",
+  "decision": "Archive failed positive calibration of this restricted empty-pool cold adapter. No fresh class route or further arithmetic-constructor experiment without a new mathematical reason and separately scoped authorization. Return to certified next-direction point search for rank32.",
+  "boundary": "841 distinct atoms; projected outside-S parity rank841 and kernel0. The historical successful relation warm-up was not reproduced. This does not refute that constructor or the rational lifts. The post-seal comparison falls back to initial16 when an arm is unverified, so it is not a V3 equality or complementarity result.",
+  "inputs": {
+    "artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/state.json": "35e27f71a10711951bb321e40fa5ec6e6258743f98e33723a0813c3591f5238f",
+    "artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/control/v3/terminal.json": "4ccecb326ad43cafe76c472d16050c1ae0fca0edda68d90f259ce4741662e9d9",
+    "artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/control/v3/verify.log": "179f98ee9d2c1b85fa6a7c2fc511e8fac772ef654daf3030ad5ff78cdf7e87cc",
+    "artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/control/v3/verify-supervisor.json": "191d6af1ffbe1946074d50d42cf5d92eb64d8ac99bb66eb25d2680a1e0feaa00",
+    "artifacts/generated-results/elliptic-curves/fresh_constructor_transfer_v1/reference-class-stop.json": "3a3b813b8f3d80daa4b285930fe97f07103315c8e3037e7b908bb340abe3ae2b"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/implementation/research/elliptic-curves/rank-jump/transfer_v3.py",
+    "verify",
+    "--folder",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/control/v3"
+  ],
+  "failure_reason": "backend_failure",
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 268435456,
+    "poll_seconds": 0.5,
+    "rss_bytes": 2147483648,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 6989.587127396953
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/fresh-constructor-transfer-v3/control/v3/verify.log",
+  "log_sha256": "179f98ee9d2c1b85fa6a7c2fc511e8fac772ef654daf3030ad5ff78cdf7e87cc",
+  "outcome": "backend_failure",
+  "peak_observed_rss_bytes": 77365248,
+  "pid": 1902824,
+  "returncode": 1,
+  "rss_limit_bytes": 2147483648,
+  "start_token": "29357288",
+  "termination_signal": null,
+  "timeout_seconds": 6989.587127396953,
+  "wall_seconds": 8.069487428991124,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

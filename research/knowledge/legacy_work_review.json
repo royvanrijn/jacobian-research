@@ -459,18 +459,69 @@
       "actions": [
         "WORK-LOW-GENUS-GATES"
       ],
-      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
-      "id": "LEGACY-20260904-367"
+      "rationale": "Reviewed each original timeout separately at shortlist positions3 and30; both remain UNKNOWN. Added a maintained record audit so a duplicate, omission or invented bound cannot turn this into64 completed ranks. Resolving the two mathematical ranks is separate unscheduled work.",
+      "id": "LEGACY-20260904-367",
+      "claims": [
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64"
+      ],
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Completed the requested timeout review, preserving both UNKNOWN outcomes and the immutable62-plus2 screen. Compared each local checkpoint to its retained row; verified all64 identities, interval histogram, exact-rank count, frozen modes and ranked list. The original --check is documented as an input-hash check, not an independent rank replay.",
+        "checks": [
+          "Standard-library record audit passed; five omission, corruption and timeout regressions passed. No rank or descent calculation."
+        ],
+        "evidence": {
+          "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md": "7c7fb1c5c6f6b1e93790980a52f7232857dc8fd8fb236b4f031d7944aa9b2fb1",
+          "scripts/audit_v4_base_rank_screen.py": "0ee5f4c57bc87716f7298c4c38a3ff03ec8e4a8240453a631bf3458dd8bd2970",
+          "tests/test_research_v4_screen.py": "e6472e032303f2a0272a7becda2bafcfc6a53551e0cc17481bb815417a679d79",
+          "elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py": "d139fd59dbf66745d90896d3fab7a3fcd71c82467dd4e09e80b6a04b14186e20",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json": "ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0"
+        }
+      }
     },
     {
       "line": 369,
       "text": "Compute nonzero product quotient classes only after the exact full involution/2-Selmer lattice is available; zero-class exclusion is not an existence or rank theorem.",
-      "disposition": "retained-review",
+      "disposition": "partly-superseded",
       "actions": [
         "WORK-LOW-GENUS-GATES"
       ],
-      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
-      "id": "LEGACY-20260904-369"
+      "rationale": "The full-lattice prerequisite remains essential for a new target. For the original17 products, later geometric and regulator theorems already imply A-=Gamma_d=H_d=0. There are no nonzero arithmetic classes to enumerate. Reconciled four stale source narratives with that completed closure; no descent is needed.",
+      "id": "LEGACY-20260904-369",
+      "claims": [
+        "EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
+        "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
+        "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP"
+      ],
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Resolved the obsolete product-class worklist using its later complete arithmetic closures. Verified the17-target partition, empty section queue and retained source identities. Preserved the full-group/visible-sublattice and point-Kummer/Selmer boundaries for new targets.",
+        "checks": [
+          "Read the Tate exact sequence and later canonical regulator/cohomology proofs; verified65 generation pins with2 documented historical-source matches.",
+          "Standard-library record audit and seven coverage/censoring/closure tests passed; no mathematical replay."
+        ],
+        "evidence": {
+          "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md": "53c2af6a48e835ba7b299bbd0241d80f257383d2f2c2cec0d8e36d018856481c",
+          "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md": "f1058aed68a8b18ed1a401184ca3b284d5c8cc06467a1e5dd37b894d44222389",
+          "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md": "c56f6a9e253313db710627fd58d965b44e122d1b5cc38047e216cd109922a39e",
+          "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160",
+          "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md": "9ea8d0a04bad8c7af84d7698ce1931d3b9b5b958a95cfb3a2bd6f4a9a28d049a",
+          "elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md": "813571df7c86831d95b4d66e8de4c5332108c4ee86daab9a03a426d25c383fa4",
+          "elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md": "2d5ab40cc5ebe14accf46cb572d79d0cb060d1358979535f1d1ea8e57639142a",
+          "scripts/audit_v4_base_rank_screen.py": "f4b92b2858728bd85e2a3ceaa4f74eab692f79ba0845c34b750696d43e85ebbb",
+          "tests/test_research_v4_screen.py": "5c59bd60baefa4565f353d3c3800a6f81cba7b6550bac841835a85ba97b01e46",
+          "elkies-k3/scripts/compute_involution_tate_hminus1.sage": "342dee0399130e97dbc28c2fdd7fd0cc8fab983403ee5c773f607eed2ba3b723",
+          "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage": "80783142c26ec5bac163ef99fb7e72767c4382e333d9602abef21229a76a4566",
+          "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json": "9b9467f6c1a754f41f9feeed6be0ae8c13d275e4203f9cd358df08705ef7318c",
+          "artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json": "8c02b033f4ae85ba3b490863756054328cca3ec35ebc9794ebe358e4058498f0",
+          "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+          "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json": "7541adc5f2ed190620bbb7ed4130898833fc90be83e27fdbe6ce4095131e4be7"
+        }
+      }
     },
     {
       "line": 372,
@@ -917,7 +968,7 @@
       "actions": [
         "WORK-NAVIGATION-INVARIANTS"
       ],
-      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun. The17-product Tate/section handoff has now been reconciled across four source notes with the complete12+5 arithmetic closure; other source documents still require review.",
       "id": "LEGACY-20260904-1024"
     },
     {
@@ -995,7 +1046,7 @@
       "actions": [
         "WORK-NAVIGATION-INVARIANTS"
       ],
-      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun. The17-product Tate/section handoff has now been reconciled across four source notes with the complete12+5 arithmetic closure; other source documents still require review.",
       "id": "LEGACY-20260904-1030"
     },
     {

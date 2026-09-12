@@ -153,6 +153,14 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 | `EC-K3-H3-Q4O208-Q4O1599-QQ-A3-2A2` (partial) | open-obligation | If this optional edge is reused, identify an equation-effective child/suffix transport. Unique branch16 marking does not identify its A3+2A2 child with the stored q207 suffix frame. |
 | `EC-K3-H3-Q4O208-Q4O323-QQ-A3-2A2` (partial) | open-obligation | Construct the correctly marked outgoing physical q207/q12 horizontal and required 5A1 child. The component-2 zero is already exact; candidate5887 is an exact rational wrong-target section with a 6A1 child and must not be relifted as q207. |
 
+## R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03
+
+[Canonical source](../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md).
+
+| Claim | Disposition | Precise remaining obligation |
+|---|---|---|
+| `EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64` (proved) | bounded-only | Positions3 and30 have rank UNKNOWN; the45 non-singleton completed intervals do not give exact ranks. No ellrank calculation was repeated. Any scoped successor should target its chosen curve and retain this frozen screen rather than rewriting its censored outcomes. |
+
 ## R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02
 
 [Canonical source](../elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md).
@@ -176,6 +184,14 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 | Claim | Disposition | Precise remaining obligation |
 |---|---|---|
 | `EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200` (partial) | bounded-only | A second independent anti-invariant section must evade this exact scope: known-section or singular reductions at both selected primes, positive P.O, another of the 38,947 characters, or a non-singleton character. No larger search is scheduled. Independent arithmetic replay of obstructions is distinct from the passing retained-record audit. |
+
+## R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04
+
+[Canonical source](../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md).
+
+| Claim | Disposition | Precise remaining obligation |
+|---|---|---|
+| `EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION` (proved) | historical-route | For different targets, a full integral involution lattice or actual point-Kummer image is required to compute H_d. The five former geometric survivors remain UNKNOWN in[0,2] over QQbar(u), and no full two-Selmer or Sha[2] vanishing is implied. These unknowns do not reopen the closed rational section worklist. |
 
 ## R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04
 
@@ -264,5 +280,5 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 
 | Claim | Disposition | Precise remaining obligation |
 |---|---|---|
-| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` (partial) | open-obligation | Full class-to-point commissioning and fresh transfer remain unproved. Finish the independent V3 reference arm and stop the pilot without fresh fibres. Diagnose the frozen cold dependency bank before any newly authorized modification; no cap enlargement or panel expansion is automatic. |
+| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` (partial) | open-obligation | Fresh class-to-point transfer and a general rank-jump mechanism remain unproved. This restricted cold adapter is closed after failed positive calibration; no further experiment or verification repair is scheduled by cleanup. A new attempt requires a new mathematical reason and separately scoped authorization. |
 

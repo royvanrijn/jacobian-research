@@ -14,12 +14,13 @@ is explicit with a full saturated generic basis; construction recovery is comple
 [Calibrated V3](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) recovers31 from
 generic17 on that curve. These results do not prove exact rank31 or rank at least32.
 
-The [principal rank28 ancestry control](notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md)
-compares the fixed14/11 exceptional rosters. Each target has a genus-one
-bisection, but the selected quadratic covers are independent; this does not
-explain the rank contrast. The bounded relation-sieve extension adds no
-independent relation beyond the sparse pilot. Class-group upper bounds and a
-general rank-jump mechanism remain unresolved.
+The active task is [finding the next independent point](notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md):
+compare search representations on the retained27→28,29→30 and30→31 controls,
+then apply a frozen, validated policy to existing rank27 R17/MW16 candidates.
+Measure complete CPU to a certified gain beyond the starting subgroup.
+The [constructor pilot is closed after failed positive calibration](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md);
+no fresh fibre ran. The theory results remain retained, but further constructor,
+carrier or fixed-word work is not a prerequisite for the rank32 search.
 
 Current curve and conductor totals are generated in the [inventory](INVENTORY.md)
 and its [JSON export](data/research_curves/database.json). Dated notes retain
@@ -32,7 +33,8 @@ their historical cohort counts.
 | Load the recovered302 family and basis | [Parent proof](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) · [loader](cas/load_curve302_recovered_parent.sage) |
 | Understand adaptive point recovery | [V3 rule and calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer results](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
 | Recover points from constructed strict classes | [Both fixed covers solved blindly; exact transport and V3 comparison](rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
-| Transfer the constructor to fresh inputs | [Class commissioning bank stopped; detached V3 comparison](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
+| Find the next direction toward32 | [Frozen representation benchmark and follow-up protocol](notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md) |
+| Inspect the closed constructor pilot | [Failed positive calibration; no fresh fibres](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
 | Propagate the marked two-class block | [The fixed column-6 word has finitely many Selmer specializations; fresh-dependency construction remains open](rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) |
 | Reuse the implemented search improvements | [Shared runtime](notes/SHARED_RESEARCH_RUNTIME.md) · [lean maps, cached continuation and box deduplication](notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md) |
 | Understand what a rank-jump experiment measures | [Structural reassessment](notes/RANK_JUMP_REASSESSMENT_2026-09-05.md) |
@@ -45,7 +47,9 @@ their historical cohort counts.
 ## Active fronts
 
 The [generated open queue](../STATUS.md#active-open-problems) records
-`OP-EC-NEXT` and `OP-EC-RANK-JUMP-MECHANISM-20260910`.
+`OP-EC-NEXT` as the primary objective. `OP-EC-RANK-JUMP-MECHANISM-20260910`
+is parked; reopening the constructor route needs a new mathematical reason
+and separately scoped authorization.
 Construction paths include direct R17/MW17, the deduplicated A1/MW16 family,
 Curve302's recovered parent and the [different-NS K3 foundry](../elkies-k3/README.md).
 A dated runbook or “ACTIVE” filename does not establish that a worker is running

@@ -1033,3 +1033,57 @@ Sources: [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKI
 Implementation: [verify_ns0031_marking_arithmetic.py](../elkies-k3/scripts/verify_ns0031_marking_arithmetic.py); [test_ns0031_marking_replay.py](../tests/test_ns0031_marking_replay.py).
 
 Recorded claims: `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved).
+
+### METHOD-K3-RANK-SCREEN-RECORDS: Audit rank-screen identities and censoring before replaying calculations
+
+**When:** Reusing a bounded rank screen or interpreting a command named --check.
+
+**Use:** Read the checker body and validate the complete roster, per-case input and execution identities, interval types, summary and ranking from the stored rows. Keep completed intervals, singleton exact ranks and censored cases as different counts. The V4 screen has62 completed intervals,17 exact ranks and2 named timeouts.
+
+**Avoid repeating:** Trusting a saved total after checking only input hashes, counting timeout as rank zero, or rerunning the entire screen to inspect two unresolved cases.
+
+**Boundary:** A record audit does not independently prove PARI rank bounds. The original10-second limit includes Sage startup. Base-Jacobian rank and product-twist rank are separate questions; the later rank-zero product target55 does not settle timeout cases3 or30.
+
+**Revisit when:** A new scoped calculation supplies a rank certificate for a specific unresolved curve or the stored universe/input identities change.
+
+Sources: [R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03](../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md#timeout-and-checker-review--12-september-2026).
+
+Implementation: [audit_v4_base_rank_screen.py](../scripts/audit_v4_base_rank_screen.py); [test_research_v4_screen.py](../tests/test_research_v4_screen.py).
+
+Recorded claims: `EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64` (proved).
+
+### METHOD-K3-REGULATOR-OBSTRUCTION: Reuse regulator squareclass obstructions before a full descent
+
+**When:** A product twist has certified good reductions of analytic rank one and a height-preserving specialization argument.
+
+**Use:** A hypothetical nontorsion section forces rank equality at each usable prime. Refined BSD then gives its height the squareclass of p^(chi-1)*L_star/product(c_v). Incompatible squareclasses exclude every rational height. Reuse the completed17-product closure and empty section queue.
+
+**Avoid repeating:** Launching the old height-eight/height-ten solver or complete Selmer calculation after arithmetic rank zero is proved, or using an analytic-rank-two row in a rank-one height comparison.
+
+**Boundary:** Count each closed-place Tamagawa factor once. The argument needs complete certified L-polynomials, good reduction, height preservation and the stated finite-function-field theorem. Arithmetic rank zero does not imply geometric rank zero or Sha[2]=0.
+
+**Revisit when:** A different target survives the exact eligible-prime comparison or the specialization hypotheses differ.
+
+Sources: [R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05](../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md#why-this-is-an-unconditional-obstruction); [R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05](../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
+
+Implementation: [certify_r17_product_regulator_sweep.sage](../elkies-k3/scripts/certify_r17_product_regulator_sweep.sage).
+
+Recorded claims: `EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO` (proved); `EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP` (proved).
+
+### METHOD-K3-INTEGRAL-TATE-QUOTIENT: Use the full integral involution module for the Tate quotient
+
+**When:** Computing a product-character obstruction from invariant and anti-invariant sections.
+
+**Use:** For a saturated basis B of ker_Z(1+S), solve 1-S=B*D integrally and compute coker(D); Smith factors are1 or2. The quotient can be represented by F2 functionals on the anti-invariant coordinates. If a stronger theorem already gives A-=0, conclude the quotient is zero directly.
+
+**Avoid repeating:** Substituting a visible eigensublattice for the full MW group, equating a Selmer candidate space with the point-Kummer image, or taking exclusion of the zero class as existence of a nonzero class.
+
+**Boundary:** The supplied lattice must be full; checking S^2=1 and its Gram isometry cannot prove arithmetic fullness. All17 old products are arithmetically closed, although full Selmer groups were not computed.
+
+**Revisit when:** A new target has a certified full involution lattice or complete actual point-Kummer image.
+
+Sources: [R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04](../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md#matrix-presentation).
+
+Implementation: [compute_involution_tate_hminus1.sage](../elkies-k3/scripts/compute_involution_tate_hminus1.sage).
+
+Recorded claims: `EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION` (proved); `EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP` (proved).
