@@ -29,6 +29,6 @@ It therefore fixes the cancellation reconstruction residue
 Hence the `mr` distinct geometric roots of `M_(m,r)` give `mr` distinct
 stable left--right classes.  The proof, including stabilization and the
 `m=1` factor-swap exclusion, is the
-[cancellation-parameter faithfulness theorem](../../cancellation/RIGIDITY.md).
+[cancellation-parameter faithfulness theorem](../non-elliptic/cancellation/RIGIDITY.md).
 Computing the target kernel itself remains an optional automorphism-group
 problem, not an input to parameter faithfulness.

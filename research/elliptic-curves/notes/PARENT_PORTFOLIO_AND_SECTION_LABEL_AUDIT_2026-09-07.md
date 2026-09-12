@@ -1,6 +1,6 @@
 # Parent expansion and a generic-section certification correction
 
-The current201-curve high-rank inventory is concentrated on one underlying
+The historical201-curve V22 high-rank inventory was concentrated on one underlying
 determinant-948 K3 surface. It uses twelve family labels: six compact R17
 inputs, five compact A1/MW16 inputs and the published-R17 presentation.
 The exact fibration-hop and atlas provenance, rather than equality of lattice
@@ -92,6 +92,12 @@ A relation among fixed generic sections specializes with the same integer
 coefficients. These changing labels/signs broke that premise. The old
 finite calculations themselves still replay, but cannot prove the claimed
 generic independence.
+
+The old executable now rejects its rank-13 conclusion. Its helper functions
+remain available to the coherent audit; its original bytes and output remain
+archived. The current checker replays the same finite mathematics while
+explicitly accounting for those source changes, without rewriting the old
+certificate's source hashes.
 
 The correction fixes the source-root permutation at u=-5, derives exact
 global rational ordinate polynomials in Q(u)[T], and verifies their square

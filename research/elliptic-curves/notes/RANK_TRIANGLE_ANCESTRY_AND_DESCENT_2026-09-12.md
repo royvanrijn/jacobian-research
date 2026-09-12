@@ -1,5 +1,10 @@
 # Exceptional ancestry, equation-only arithmetic, and strict descent classes
 
+The [principal control is now11952 at110314/102227, rank at least28](PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md).
+Its completed14-versus11 ancestry comparison supersedes the principal-control
+role of the14-versus8 experiment below, whose exact carriers and strict-descent
+certificates remain intact as secondary evidence.
+
 The subsequent [completed-wide-population arithmetic profile](WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
 extends the equation-only lane to all 2,080 fibres under a separately authorized
 fixed budget. It is complete: BASE2,080 PASS; LOCAL898 PASS and1,182 UNKNOWN

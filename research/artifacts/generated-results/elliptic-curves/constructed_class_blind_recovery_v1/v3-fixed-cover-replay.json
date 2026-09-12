@@ -1,0 +1,19 @@
+{
+  "boundary": "Independent Fraction arithmetic verifies the combination of freshly discovered V3 points, source cover, field square identity and original curve equation.",
+  "cases": [
+    {
+      "column": 6,
+      "earliest_certified_prefix_rank": 22,
+      "status": "PASS_EXACT_FRESH_SUBGROUP_LIFT"
+    },
+    {
+      "column": 7,
+      "earliest_certified_prefix_rank": 22,
+      "status": "PASS_EXACT_FRESH_SUBGROUP_LIFT"
+    }
+  ],
+  "replayer_sha256": "f1fffce6e7af25e3165a6deca98a39e6a2a8ab0208b233ddc48f391dbeacefda",
+  "source_sha256": "97a535735cc43be3c75b47e5c206eb4ee8089b1789d0b7663380963bf8bace83",
+  "status": "PASS",
+  "wall_seconds": 0.006475081027019769
+}

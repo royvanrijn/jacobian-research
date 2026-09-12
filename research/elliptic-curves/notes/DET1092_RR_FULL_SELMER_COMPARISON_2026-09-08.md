@@ -196,11 +196,12 @@ with this result. These computations do not identify new Sha classes.
 
 ## Backend audit and remaining local implementation
 
-**Verified environment audit.** The available Sage10.9/PARI2.17.3 instance
-has no exposed full Selmer method on its genus-two Jacobian class, and no
-`magma` executable is found on `PATH`. The repository's completed small
+**Historical environment audit.** The inspected Sage10.9/PARI2.17.3 instance
+had no exposed full Selmer method on its genus-two Jacobian class, and no
+`magma` executable was found on `PATH`. The repository's completed small
 Jacobian Selmer examples use elliptic quotient gluing and are not a general
-backend for these simple Jacobians. No computation is currently running.
+backend for these simple Jacobians. That audit did not launch a computation;
+it is not a live process-status record.
 
 The earlier public-page check returned HTTP401. The
 [access snapshot](../../artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/backend-access-audit.json)
@@ -222,8 +223,10 @@ the Jacobian group.
 
 **Implementation plan, not a completed theorem.** Continue with local
 Sage/PARI arithmetic and small independently checkable custom components:
-resolve the four anchor cases and the remaining genuinely bad-place
-images with certified local squareclass arithmetic. The complete real
+resolve the four anchor cases and83 unresolved reduction-test pairs, then
+identify and cover every other required place with certified local
+squareclass arithmetic. A failed reduction test does not establish intrinsic
+bad reduction. The complete real
 and 2-adic images, including their true/fake kernel distinction, are now
 certified and spanned by inherited subgroups.
 A full global
@@ -261,6 +264,12 @@ not an equivalence with elliptic rank incidence or a construction of an
 extra elliptic point. No such difference is currently asserted.
 
 ## Replay and limits
+
+The input-preparation, good-prime, real/dyadic and full dyadic replays have
+separate checkpoints and proof boundaries. The first command below verifies
+only prepared models and isolated payloads. It cannot certify the later
+local-image claims or global Selmer completeness. The complete local-image
+replay entry points are linked in their respective canonical notes above.
 
 ```sh
 sage -python research/elliptic-curves/cas/verify_det1092_rr_full_selmer_inputs.sage

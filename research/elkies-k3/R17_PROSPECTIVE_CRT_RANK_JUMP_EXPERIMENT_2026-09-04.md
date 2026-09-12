@@ -1,12 +1,21 @@
 # Prospective R17 CRT rank-jump experiment
 
 Date: 2026-09-04  
-Status: complete frozen first experiment; detector-limited; replacement half-lattice protocol frozen and running; rank-32 promotion forbidden
+Status: first experiment complete at its frozen bound; replacement protocol retained; no merged replacement outcome at the documented paths
 
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
 
 ## Result
+
+The first experiment is complete and must not be extended in place. The
+historical replacement-worker command now uses the amended pointed-quartic
+runtime and writes `elkies-k3-r17-prospective-crt-half-lattice-pointed-ledger-v1.json`;
+the frozen v3 analyzer expects `elkies-k3-r17-prospective-crt-half-lattice-ledger-v3.json`.
+Neither merged ledger is retained at those paths in the cleanup snapshot.
+The old word “running” was a dated handoff, not a live process observation.
+Use the existing commitment and explicit runtime/coordinate compatibility
+gates before any separately scoped continuation.
 
 The original `p^3` premise fails, but a pre-outcome local-only refinement does
 produce two empirically stable finite-sample cylinders.  The complete frozen
@@ -95,7 +104,9 @@ point, public rank, cover split, or later outcome enters selection.
 
 The complete candidate-list commitment is
 `5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb`.
-The original manifest remains unopened; outcomes live in separate ledgers.
+The original manifest retains null outcome fields; completed outcomes live
+in separate ledgers. Those nulls are not evidence that the first experiment
+was never executed.
 
 ## Phase 3: pre-search arithmetic panel
 
@@ -249,8 +260,10 @@ jump is 12, while rank 32 requires 15 independent directions beyond `MW17`.
 A successor promotion rule must freeze the exact certified quotient gain as an
 ordinal score, validate directional score--jump association on an independent
 multi-stratum panel, and predeclare and pass an upper-tail enrichment endpoint.
-The separate completed residual 2-Selmer gate on the same minimal curve remains
-mandatory before expensive follow-up.  Finding fifteen exactly certified
+This experiment's statistical promotion rule retains its separate completed
+residual 2-Selmer gate. It is not a repository-wide requirement to finish a
+descent before a separately scoped production point search; see the
+[detector-v2 boundary](R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).  Finding fifteen exactly certified
 directions is different: that directly proves rank at least 32 and needs no
 heuristic promotion.
 
@@ -294,7 +307,12 @@ The large arithmetic artifact stores every exact local matrix.  The point
 ledger stores every frozen outcome and retains separate timeout/backend
 fields even though their counts are zero.
 
-## Reproduction
+## Historical campaign commands
+
+The block below launches arithmetic panels, searches and reconstruction. It is
+retained to explain the original experiment, not as a current runbook. In
+particular, the current amended half-lattice worker and frozen v3 analyzer
+use different merged-ledger paths and must not be chained blindly.
 
 ```bash
 # Phase 1: exact p^3 audit and local-only refinement
@@ -343,7 +361,10 @@ python3 elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.
 python3 -m unittest elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py
 ```
 
-For immutable replay checks of the deterministic commitments:
+For scoped checks of the retained commitments: `--check` is not uniformly
+cheap. The Phase-1 local-stability program calls its full arithmetic `build()`
+before comparison, and the sensitivity checker runs a point-search control.
+Inspect the implementation and existing outputs before choosing a command:
 
 ```bash
 sage -python elkies-k3/scripts/audit_r17_prospective_crt_local_stability.sage --check

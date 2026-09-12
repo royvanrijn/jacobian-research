@@ -96,4 +96,4 @@ explicit through the pairing matrices `B` and `C`.
 
 Dimension 451 is minimal for this fixed polarization matrix `B_0`; no
 minimality among all cube decompositions is claimed.  See
-[STABLE_NORMAL_FORM_AUDIT.md](../../extended-geometry/STABLE_NORMAL_FORM_AUDIT.md).
+[STABLE_NORMAL_FORM_AUDIT.md](../non-elliptic/extended-geometry/STABLE_NORMAL_FORM_AUDIT.md).

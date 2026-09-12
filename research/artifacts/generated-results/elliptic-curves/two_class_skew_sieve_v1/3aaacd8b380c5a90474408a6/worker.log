@@ -1,0 +1,2 @@
+SKEW_SETUP 3aaacd8b380c5a90474408a6 {'A': 32, 'B': 8192, 'norm_triangle_upper_bound': '11331192919675976095498120289454518075392', 'lattice_cells': 532480, 'area_exponent': 18}
+SKEW_DONE 3aaacd8b380c5a90474408a6 attempted 325173 relations 1 deficiency 1890 NOT_SERIOUS_RELATION_DENSITY

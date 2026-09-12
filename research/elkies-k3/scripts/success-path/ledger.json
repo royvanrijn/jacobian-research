@@ -2,7 +2,7 @@
   "schema": "elkies-k3.h3-equation-success-path.v1",
   "authority": "MATH_STATUS.json",
   "canonical_note": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
-  "route_status": "ACTIVE_AT_Q922_A11_TO_2A5_EQUATION_LIFT",
+  "route_status": "HISTORICAL_PREFIX_ENDPOINT_COMPLETE",
   "route": [
     {
       "id": "q24_o85_d12_equation",
@@ -337,5 +337,10 @@
       },
       "proof_boundary": "Modulo 100003, the exact 18-point shell has eight pointed-anchor-compatible markings. Four rational degree-three relative halves survive, but all four chord branch polynomials remain squarefree of degree 18 and none has an A11 fibre. This is a modular shortcut rejection, not a characteristic-zero non-existence theorem."
     }
-  ]
+  ],
+  "current_endpoint": {
+    "claim": "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+    "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+    "boundary": "Original stage records and hashes are preserved; pending statuses describe the historical prefix, not the current endpoint."
+  }
 }

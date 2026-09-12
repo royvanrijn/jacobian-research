@@ -1,0 +1,39 @@
+{
+  "branch_polynomial_degree_histogram": {
+    "2": 39147
+  },
+  "character_count": 39147,
+  "committed_character_catalog": {
+    "comparison_count": 12,
+    "formal_variable_rename_product_match_count": 0,
+    "formal_variable_rename_product_matches": []
+  },
+  "distinct_polynomial_support_count": 39147,
+  "equal_cover_collision_count": 0,
+  "equal_cover_collisions": [],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json": "3678dd4e3074e15a4c23d6cc57f491f720afcd55d9c5fc53ca5d4ff78db4d036",
+    "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisection-priority-v1.tsv": "58355948b272cc910fe2a90391361dbd01eae5816ed5115270f2ff7ae15fd928",
+    "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-00000-10000-v1.json": "f89250cad9b3af9f5ee61c370ba261df0e835b87b0ec30045ece53d54e982ce0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-10000-20000-v1.json": "f4a13ab29ec94a16430446635dd8124c210768fa6e7551ed2300b492288ea680",
+    "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-20000-30000-v1.json": "daa86b4d34ddf56ddcc12d022af9157eed9089600326361a081b17af69ba6a2f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-30000-39147-v1.json": "79111f1631463881a184d663de9a964c683118ef1bc86ec96c3e908c854d81c8",
+    "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json": "0169f4b764268c63e7919496be8570e1a794ab5ddcc4856aeee69a3f5e5e5deb"
+  },
+  "irreducible_quadratic_count": 39147,
+  "priority_orbit_count": 39147,
+  "proof_boundary": "Every supplied exact degree-two branch record is streamed, with complete orbit coverage checked against the declared count and priority table. Equal covers are grouped by identical geometric support and exact rational-square scalar ratio. Because every support has size one or two, the endpoint and triangle search exhausts q_i*q_j=q_k while retaining the rational constant squareclass. Every pair product is also compared exactly against the eleven committed rank-28 characters and q_103b2 by support xor and a factorless rational-square test. Those catalog comparisons are formal variable renames until a target-base degree-two compatibility gate is proved. A collision or relation still requires the separate anti-invariant height and base certification.",
+  "reproducing_command": ".venv/bin/python elkies-k3/scripts/search_r17_norm12_quadratic_character_closure_streaming.py --source-label norm12-orbit-098fc --priority-table artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisection-priority-v1.tsv --input artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-00000-10000-v1.json --input artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-10000-20000-v1.json --input artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-20000-30000-v1.json --input artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-chunk-30000-39147-v1.json --output artifacts/generated-results/elkies-k3-r17-norm12-098fc-streaming-character-closure-v1.json",
+  "schema": "elkies-k3.r17-norm12-streaming-quadratic-character-closure.v1",
+  "source_label": "norm12-orbit-098fc",
+  "status": "PASS_EXACT_NO_EQUAL_COVER_OR_THREE_CHARACTER_CLOSURE",
+  "support_graph_search": {
+    "endpoint_scalar_candidate_count": 0,
+    "singleton_support_count": 39147,
+    "triangle_scalar_candidate_count": 0,
+    "triangle_support_count": 0,
+    "two_atom_support_count": 0
+  },
+  "three_character_relation_count": 0,
+  "three_character_relations": []
+}

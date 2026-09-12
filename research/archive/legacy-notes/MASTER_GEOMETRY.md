@@ -19,7 +19,7 @@ the uniqueness of the cubic affine complement, and the obstruction to the
 next `(2,3)` candidate are developed in
 [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../transfer-program/cubic-factorization-obstruction.md).
 The foundational Keller map remains independently certified by Dean Cureton's Lean 4
-formalization; see [LEAN_FOUNDATIONAL_MAP.md](../../verified/LEAN_FOUNDATIONAL_MAP.md).
+formalization; see [LEAN_FOUNDATIONAL_MAP.md](../non-elliptic/verified/LEAN_FOUNDATIONAL_MAP.md).
 
 ## 1. The target-side construction
 
@@ -159,7 +159,7 @@ replace those slice and local-algebra arguments.
 
 The complete finite-normalization, slice-nonemptiness, exact-closure, and
 common-coarsening proof for Contact-Strata Theorem--Component-Normalization Theorem is collected in
-[COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md).
+[COINCIDENT_ROOT_REBUILD.md](../non-elliptic/extended-geometry/COINCIDENT_ROOT_REBUILD.md).
 
 ## 4. Why 2 and 3 are the cusp
 
@@ -285,7 +285,7 @@ the local statement to the global closed immersion.
 The official Macaulay2 `CoincidentRootLoci` package constructs
 `Delta_lambda`, its ideal, parameterization, tangent space, and singular
 locus.  The repository script
-[`verify_coincident_root_slices.m2`](../../scripts/verify_coincident_root_slices.m2)
+[`verify_coincident_root_slices.m2`](../non-elliptic/scripts/verify_coincident_root_slices.m2)
 uses those package ideals through degree seven, substitutes the normalized
 hyperplane section, saturates by the exact-degree and weighted-admissibility
 factors, and eliminates the constant and linear coefficients.  In degree

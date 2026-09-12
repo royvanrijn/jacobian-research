@@ -1,0 +1,16 @@
+{
+  "atoms_checked": 1676,
+  "boundary": "Checks the complete specified family-element continuation and its good-divisor valuation obstruction. It inherits the earlier number-field strictness and compaction circuit; it does not replay ideal factorization, search for points or conclude anything about other continuations.",
+  "coprimality_certificate": "Complete product recomputed; supplied Bezout identity equals 1 over F_1000003[t]",
+  "cpu_seconds": 0.6823403219999999,
+  "definition_sha256": "fbd4c9964ceaedafee8a3989a971a90f65ed39eb26b7956f25099d7023c96579",
+  "generic_sections_checked": 16,
+  "norm_identity": "Independent symbolic resultant for atom 2",
+  "peak_rss_bytes": 160993280,
+  "result_sha256": "5d658c542fa668ec31d3ac9544322dee50881a5ccc9fe6b9fc629852a7f45270",
+  "schema": "marked-dependency.independent-replay.v1",
+  "status": "VERIFIED",
+  "sympy_version": "1.14.0",
+  "verifier": "elliptic-curves/rank-jump/verify_frozen_dependency_continuation.py",
+  "verifier_sha256": "c3fb3590a1ab76cbcea35ff26a2847a45618acdf4f424a4adf739af96a1a3235"
+}

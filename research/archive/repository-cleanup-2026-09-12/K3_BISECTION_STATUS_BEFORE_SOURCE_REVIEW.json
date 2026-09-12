@@ -1,0 +1,1552 @@
+[
+  {
+    "id": "EC-K3-H3-Q8-AMBIENT",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact generic-fibre ambient for the first H3 q8 neighbour",
+    "scope": "For the selected q8-to-D13/MW4 class in the exhaustive H3 q6-child Weyl classification, the original H3 E7+E8 chamber has 122 deterministic fixed-component reflections. The resulting source-nef class has an explicit literal support certificate D=9O+9(-P1)+V-11F, where V is the displayed simple-component vertical sum (2,3,4,6,5,5,6,-4,-5,-7,-10,-8,-6,-4,-2); it reconstructs the full Neron--Severi vector and has old-fibre degree 18. Thus its old generic-fibre restriction is 9(O)+9(-P1). With m=(y-y(P1))/(x-x(P1)), eliminating y gives a monic quadratic relation for x over QQ(t)(m), and the 18 functions 1,m,...,m^9,x,x*m,...,x*m^7 are exactly L(9O+9(-P1)) on the generic genus-one fibre. This determines the full generic-fibre ambient and the correct source-side vertical target for the q8 pencil. It does not derive vertical/resolved-chart conditions, certify a two-dimensional global pencil, construct the D13 equation, or assert any rootless bisection, extension collision, or generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_generic_rr_ambient.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:7318d1194b1f7701dc765a37524ab5ebe456ece5c72fa365836f31cc4198e95c",
+    "software_lock": [
+      "elkies-k3/scripts/classify_h3_q6_child_q8_orbits.sage",
+      "elkies-k3/scripts/derive_h92_q8_generic_rr_ambient.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES",
+    "kind": "example",
+    "state": "partial",
+    "title": "Actual generic E7 chart frames for source q8 residue evaluation",
+    "scope": "For all seven resolved H92 E7 components, an actual edge chart, reduced component equation, normal weight vector in (Z,U,Y), and chart surface equation are pinned from the H92 blow-up pullbacks. The weights (2,0,1), (0,2,1), (0,2,1), (1,0,0), (1,0,0), (1,0,0), and (0,1,0) respectively reproduce the independently certified orders of (t,x,y) on E7_1 through E7_7 exactly. In particular the Y components retain their actual quadratic normal branches rather than a Kodaira-diagram normalization. This supplies the chart-function-field input for evaluating non-singleton q8 generic leading residues; it does not yet evaluate those residues or relations, test nodes/marked branches/overlaps, construct a global kernel or pencil, or make a rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:b8e8229fb37462f3a2088eeebc8475262d9efa6390560ad3a37233c6ba3ae9f1",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_chart_pullbacks.sage",
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage",
+      "elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-4-7-GENERIC-RESIDUES",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact source-q8 generic residue rows on actual E7_4 and E7_7",
+    "scope": "On the actual H92 E7_4--E7_3 and E7_3--E7_7 blow-up charts, normalize E7_4 by Z=e,U=s^2,Y=s and E7_7 by U=e,Z=gamma*s^2,Y=s, where gamma is solved from the restricted actual surface equation. The strict actual marked-chord inequalities give the leading form m=y/x on both components. For every non-singleton negative-order source-q8 endpoint group, exact substitution of g*t^(4k-i-9)*x^a*m^b/h_lead^k yields a Laurent monomial in s and therefore an exact linear leading-residue row. The 54-column seed has 42 such E7_4 rows and 34 such E7_7 rows. This evaluates generic residues in two actual component function fields only; it does not cover the other five components, nodes, marked branch, overlaps, a global kernel, or a pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:bb3dcb5432d36a0c19d64be3bdeb88a5db42dc2d007245d84451ec1c4cb94652",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-ALL-GENERIC-E7-RESIDUE-COVER",
+    "kind": "example",
+    "state": "partial",
+    "title": "Complete exact generic-component E7 residue cover for the source q8 seed",
+    "scope": "For all seven actual resolved H92 E7 components, every non-singleton negative-order group in the corrected 54-column source-q8 endpoint seed has an exact leading-residue evaluator in its actual component function field. The row counts are E7_1:42, E7_2:189, E7_3:391, E7_4:42, E7_5:228, E7_6:57, E7_7:34, for 983 exact residue rows. The Y-branch components solve their actual linear quadratic-normal equation, the conic components reduce in QQ(U,Y)/(F(0,U,Y)), and the marked E7_2/E7_5 cancellations use the audited P1 coefficients. Thus generic component valuations are no longer an incomplete q8 E7 layer. This does not include edge-node conditions, marked-branch jets, overlap gluing, E8/smooth assembly, a characteristic-zero global kernel, a pencil, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:4ce34028b78faf505ac9fe70bdd396463466bd23fe799de2a4a35e627995d649",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-GENERIC-COMPONENT-CONDITION-BLOCK",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact all-component generic E7 condition block for the source q8 endpoint ambient",
+    "scope": "For the corrected 54-column source-q8 endpoint ambient, the 22 singleton generic-component negative orders and all 983 exact non-singleton residue-cancellation rows from the seven actual resolved H92 E7 components form a 1005-by-54 characteristic-zero condition matrix. Exact rational linear algebra gives rank and codimension 54 and kernel dimension zero. Thus this least endpoint ambient has no direction compatible with the complete generic E7 component layer, independently of the already known smooth rank-54 obstruction. This is a rejection result for that bounded ambient, not a complete q8 cover or a nonexistence result for enlarged Riemann--Roch spaces: nodes, marked branches, overlaps, E8, smooth assembly, a pencil, child equation, bisection, collision, and rank statement remain outside its scope.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ALL-GENERIC-E7-RESIDUE-COVER",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/compile_h92_q8_generic_component_conditions.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2174ae8991e64dad8aad563318327e7e11ad477f26823f54ab500068e2bd5e5a",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/compile_h92_q8_generic_component_conditions.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+      "elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA7-SMOOTH-GENERIC-REJECTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth-plus-generic rejection of the r=7 q8 endpoint enlargement",
+    "scope": "For the endpoint-compatible r=7 enlargement with 558 coefficient columns, the actual smooth q/X principal-part matrix has rank 556 modulo 43 and a two-dimensional kernel. The six singleton and 2481 non-singleton exact generic E7 residue rows from all seven actual resolved components restrict to rank two on that kernel. Every residue denominator used in this restriction is nonzero modulo 43. Hence the stacked smooth-plus-generic matrix has full column rank 558 modulo 43, which proves full rank over QQ. This exactly rejects that r=7 enlarged ambient before node, marked-branch, overlap, or E8 conditions; it does not prove that a larger ambient has no pencil or furnish a complete q8 cover, child equation, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA7-ALL-COMPONENT-SINGLETON-OBSTRUCTION",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:496c68ad7a47d5ec755f7c84a5e4433fd8cd7a920466d0b66bfddb6f2950fb16",
+    "software_lock": [
+      "elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+      "elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA8-SMOOTH-GENERIC-REJECTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth-plus-generic rejection of the r=8 q8 endpoint enlargement",
+    "scope": "For the endpoint-compatible r=8 enlargement with 630 coefficient columns, the actual smooth q/X principal-part matrix has rank 624 modulo 43 and a six-dimensional kernel. The six singleton and 2481 non-singleton exact generic E7 residue rows from all seven actual resolved components restrict to rank six on that kernel. Every residue denominator used in this restriction is nonzero modulo 43. Hence the stacked smooth-plus-generic matrix has full column rank 630 modulo 43, which proves full rank over QQ. This exactly rejects that r=8 enlarged ambient before node, marked-branch, overlap, or E8 conditions; it does not prove that a larger ambient has no pencil or furnish a complete q8 cover, child equation, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA7-SMOOTH-GENERIC-REJECTION",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:496c68ad7a47d5ec755f7c84a5e4433fd8cd7a920466d0b66bfddb6f2950fb16",
+    "software_lock": [
+      "elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+      "elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA9-SMOOTH-GENERIC-REJECTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth-plus-generic rejection of the r=9 q8 endpoint enlargement",
+    "scope": "For the endpoint-compatible r=9 enlargement with 702 coefficient columns, the actual smooth q/X principal-part matrix has rank 690 modulo 43 and a twelve-dimensional kernel. The six singleton and 2481 non-singleton exact generic E7 residue rows from all seven actual resolved components restrict to rank twelve on that kernel. Every residue denominator used in this restriction is nonzero modulo 43. Hence the stacked smooth-plus-generic matrix has full column rank 702 modulo 43, which proves full rank over QQ. This exactly rejects that r=9 enlarged ambient before node, marked-branch, overlap, or E8 conditions; it does not prove that a larger ambient has no pencil or furnish a complete q8 cover, child equation, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA8-SMOOTH-GENERIC-REJECTION",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:496c68ad7a47d5ec755f7c84a5e4433fd8cd7a920466d0b66bfddb6f2950fb16",
+    "software_lock": [
+      "elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+      "elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA11-SMOOTH-GENERIC-REJECTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth-plus-generic rejection of the r=11 q8 endpoint enlargement",
+    "scope": "For the endpoint-compatible r=11 enlargement with 846 coefficient columns, the actual smooth q/X principal-part matrix has rank 822 modulo 43 and a twenty-four-dimensional kernel.  The six singleton and 2,481 non-singleton exact generic E7 residue rows from all seven actual resolved components restrict to rank twenty-four on that kernel.  Every residue denominator used in this restriction is nonzero modulo 43.  Hence the stacked smooth-plus-generic matrix has full column rank 846 modulo 43, which proves full rank over QQ.  This exactly rejects that r=11 enlarged ambient before node, marked-branch, overlap, or E8 conditions; it does not prove that a larger ambient has no pencil or furnish a complete q8 cover, child equation, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA9-SMOOTH-GENERIC-REJECTION",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:496c68ad7a47d5ec755f7c84a5e4433fd8cd7a920466d0b66bfddb6f2950fb16",
+    "software_lock": [
+      "elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+      "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage",
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-UNMARKED-E7-NODE-FRAMES",
+    "kind": "example",
+    "state": "partial",
+    "title": "Actual q8 local module frames on all five unmarked H92 E7 edge nodes",
+    "scope": "On each of the actual H92 E7_1--E7_4, E7_4--E7_3, E7_3--E7_7, E7_7--E7_2, and E7_3--E7_6 edge charts, the exact P1 entrance orders ord_t(x(P1))=2 and ord_t(y(P1))=3 combine with the transported pullbacks and the actual implicit quadratic chart relation to show x(P1)/x and y(P1)/y lie in the completed maximal ideal. Thus x-x(P1)=x*unit, y-y(P1)=y*unit, and the q6 fractional marked module is tR on every unmarked edge node. The actual q8 conditions are respectively U^4Y^2*f/t^9, Z^4Y^6*f/t^9, U^5Y^6*f/t^9, Z^5Y^5*f/t^9, and Z^3Y^6*f/t^9 in their corresponding local rings. The E7_2--E7_5 node is excluded only because its P1 leading cancellation is checked in a separate exact node calculation. This supplies local trivializations only, not node principal-part matrices, marked-node treatment, overlap gluing, a global kernel, or a pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_unmarked_e7_node_frames.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:fe53a9210400c6c122e6c4509ea063385f8db2771429d032bd0733093a3a60bc",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_chart_pullbacks.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage",
+      "elkies-k3/scripts/certify_h92_q8_unmarked_e7_node_frames.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-2-5-NODE-FRAME",
+    "kind": "example",
+    "state": "partial",
+    "title": "Cancellation-sensitive actual q8 local module frame at the H92 E7_2--E7_5 node",
+    "scope": "On the actual H92 second-U E7_2--E7_5 chart, x(P1) has the same leading order as x, so a strict-order shortcut is invalid. The exact leading cancellation is x-c2*t^2=-c2*Z^3*U^2*(Z-A1/B1), while the remaining x(P1) tail is divisible by t^3. The actual surface relation makes U=Y^2*unit, and y-y(P1)=Z^3*U^2*(Z-A1/B1)*Y*unit. Hence m=(y-y(P1))/(x-x(P1))=Y*unit is regular at the node, the q6 module is tR, and the exact q8 node condition is Z^6Y^5*f/t^9 in R. This is a node calculation; it does not replace the separate marked smooth-point frame at -P1, form a finite node quotient, cover overlaps, or yield a global kernel or pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_e7_2_5_node_frame.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:33d3f7b567294c44e805cb1e8db74d61176e58087565e0404f26280181c13cb3",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_chart_pullbacks.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage",
+      "elkies-k3/scripts/certify_h92_q8_e7_2_5_node_frame.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-ALL-E7-NODE-PRINCIPAL-BIDEGREE-TEMPLATE",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact two-parameter principal-bidegree templates at all six source-q8 E7 nodes",
+    "scope": "Using the six actual H92 node module frames, each q8 endpoint term u^i*x^a*m^b/h^k has at every edge node the exact leading bidegree ord(g)+(4k-i-9)ord(t)+a ord(x)+b ord(m) in the transported completed regular parameters. On the 54-column endpoint seed the six charts yield 260 negative-bidegree groups, 196 initially singleton; on the recorded 774-column r=10 endpoint enlargement they yield 837 groups and 442 initially singleton groups. Pareto-minimality gives one exact independent initial coordinate row in either ambient: five charts display the same basis coefficient, while the sixth minimum is non-singleton. The component order vectors and Cartier factors come from actual blow-up pullbacks, implicit chart equations, and the separately audited cancellation node, not from Kodaira labels. This is a necessary leading-principal-part template only: equal or nonminimal bidegrees can interact through unit expansions and require the finite two-variable local quotient and overlap calculation before any matrix, kernel, or pencil claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-UNMARKED-E7-NODE-FRAMES",
+      "EC-K3-H3-Q8-E7-2-5-NODE-FRAME"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_all_e7_node_principal_bidegrees.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:020eada039e04405e0fbc45cb039fa3d48cc80f5f36bc482ef58684a0fd835ea",
+    "software_lock": [
+      "elkies-k3/scripts/certify_h92_q8_unmarked_e7_node_frames.sage",
+      "elkies-k3/scripts/certify_h92_q8_e7_2_5_node_frame.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_e7_node_principal_bidegrees.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-INITIAL-NODE-CONDITION-BLOCK",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact initial source-q8 E7 node condition block",
+    "scope": "The singleton Pareto-minimal bidegrees in the six actual H92 node frames give one independent exact leading coordinate condition: all five unmarked charts identify the same endpoint basis element, while the cancellation node minimum is non-singleton. After dividing by the nonzero leading chart unit, the shared resolved-condition compiler produces a rank-one 1-by-54 block with 53-dimensional kernel on the base endpoint ambient; the recorded r=10 774-column enlargement likewise has a rank-one initial node block. This integrates only the universally safe node-leading row. The finite two-variable quotient for all remaining node groups, marked smooth-point and overlap conditions, and global matrix/pencil construction remain open.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ALL-E7-NODE-PRINCIPAL-BIDEGREE-TEMPLATE"
+    ],
+    "checker": "elkies-k3/scripts/compile_h92_q8_initial_node_conditions.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:4e98228cb0e8dc643c3fa22c0bbf54fb13da44a15c5238ab9ce09a4090ad7b45",
+    "software_lock": [
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_e7_node_principal_bidegrees.sage",
+      "elkies-k3/scripts/compile_h92_q8_initial_node_conditions.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-4-3-PRINCIPAL-NODE-CLEARING",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact principal-frame clearing identity at the H92 source-q8 E7_4--E7_3 node",
+    "scope": "At the actual H92 E7_4--E7_3 node, write m=Z^2*U*Y*B/A after the exact unit comparisons x(P1)/x=Z^2*U*(x(P1)/t^2) and y(P1)/y=Z^3*U*Y*(y(P1)/t^3)/H, where U*H=Y^2. The factors A and B, the reversed h denominator, and all P1 denominators are explicit units at the node. For the 54-column source-q8 ambient, multiplying by the common unit A_num^9*H^9*s_den^9*h_reverse^6 and by t^17 sends every q8 local expression g*f/t^9 to a displayed polynomial numerator. Thus its node regularity is exactly common-numerator membership in t^17 R. This replaces the computationally heavy singular-model ninth-power presentation at this node by a principal actual-chart divisibility problem. It does not yet calculate R/(t^17), cover other nodes/overlaps, or give a global matrix, kernel, or pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-E7-4-3-NODE-FRAME"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e7_4_3_principal_node_clearing.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e1f675557cee01b3a30f31b477025975bf6dd5405f09263632a5ee35bedcfd23",
+    "software_lock": [
+      "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_frame.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_3_principal_node_clearing.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-4-3-NODE-DIVISIBILITY-GEOMETRY",
+    "kind": "example",
+    "state": "partial",
+    "title": "Normal-crossing geometry of the source-q8 E7_4--E7_3 principal node condition",
+    "scope": "For the exact E7_4--E7_3 principal clearing exponent T=17, the actual H92 completed chart has regular parameters (Z,Y), U=Y^2*unit, and t^17=Z^51Y^68*unit. Hence R/(t^17) is one-dimensional and cannot serve as a finite node quotient. The distinct rectangular corner jet R/(Z^51,Y^68) has length 3468; its dimension is checked in the actual chart relation modulo 43. This finite rectangle is explicitly not equivalent to product divisibility by t^17. Thus any legitimate finite node block must arise only after componentwise and overlap/module conditions define a residual corner quotient. This is a safety result, not that residual quotient or a q8 matrix/pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-E7-4-3-PRINCIPAL-NODE-CLEARING"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_divisibility_geometry.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:a8cda9e39b8bb9442fe0c6dd9ce600ab48b07ec278d8344498ae7269fdaf8db8",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_e7_4_3_principal_node_clearing.sage",
+      "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_divisibility_geometry.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-4-3-NODE-FRAME",
+    "kind": "example",
+    "state": "partial",
+    "title": "Actual q8 local module frame at the H92 E7_4--E7_3 node",
+    "scope": "On the actual H92 E7_4--E7_3 edge chart, the transported pullbacks are t=Z^3 U^2, x=Z^4 U^3, and y=Z^6 U^4 Y, while the actual surface equation is Y^2-U*H(Z,U)=0 with H(0)=1. The exact P1 entrance functions have t-orders two and three. In the completed local ring this makes x(P1)/x and y(P1)/y elements of the maximal ideal, so x-x(P1)=x*unit and y-y(P1)=y*unit. Hence m=Z^2 U Y*unit and the q6 fractional marked module t*(x-x(P1),y-y(P1))/(x-x(P1)) is exactly tR. The q8 Cartier factor is g=Z^4Y^6, so the actual q8 node condition is g*f/t^9 in R. This establishes one resolved local frame only; it does not expand its two-variable quotient, cover the other nodes or overlaps, assemble a global matrix, or produce a pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_frame.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:a19fbf2d2a57ec453ee3a4a7160b98b4cbc0d6f0331a5b42d1cb97f844eb02c3",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_chart_pullbacks.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage",
+      "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_frame.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth principal-part condition block for the source q8 endpoint seed",
+    "scope": "On the four actual smooth H92 P1.O collision fibres, the transported coordinates q=(m-y(P1)/x(P1))/h and X=h^2*x give the exact regular degree-18 local algebra. For every one of the 54 endpoint generators, all negative h-principal parts in this actual frame are imposed as the q8 smooth line-bundle condition. The condition-template has 18*deg(h^15)=1080 coefficient rows, and its finite ambient image is compiled through the shared resolved-condition core. Its reduction modulo 43 has full column rank 54, and therefore the exact characteristic-zero matrix has rank 54 and zero kernel. Thus the least endpoint seed has no smooth-compatible direction even before any E7 generic, node, marked, or overlap condition. This is a complete exact result for this single local smooth block only; it does not prove that a larger ambient has no kernel, furnish a complete resolved-chart cover, a q8 pencil, child equation, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-AMBIENT"
+    ],
+    "checker": "elkies-k3/scripts/compile_h92_q8_smooth_principal_parts_exact.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:78f7b15299b8f18b49f99b34806d153c3abd0b18a3f71a81f9032b8e91621ba7",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_smooth_collision_frame.sage",
+      "elkies-k3/scripts/derive_h92_q8_smooth_collision_principal_parts.sage",
+      "elkies-k3/scripts/compile_h92_q8_smooth_principal_parts_exact.sage",
+      "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-5-6-GENERIC-RESIDUES",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact source-q8 generic residue rows on actual conic components E7_5 and E7_6",
+    "scope": "On the actual H92 E7_2--E7_5 and E7_3--E7_6 charts, set Z=0 and work directly in the exact component coordinate rings QQ(U,Y)/(F(0,U,Y)). For every non-singleton negative-order source-q8 endpoint group, clear an explicit common t-and-chord denominator and reduce modulo that actual conic relation. At E7_5 the leading chord retains the audited x-x(P1) and y-y(P1) cancellations through t^3; at E7_6 the strict orders give m=y/x. The corrected 54-column seed produces 228 exact E7_5 coordinate-ring rows and 57 E7_6 rows. This covers two generic components only; it does not cover E7_1--E7_4/E7_7, nodes, marked branch, overlaps, a global kernel, or a pencil.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES",
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e570aa45a96871e9f6fb7c8f0e6e2d0d85c656ff703e686edb8f0fc77bf51aed",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA10-E7-4-7-GENERIC-RESIDUE-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "E7_4/E7_7 exact-residue obstruction to the r=10 source-q8 smooth kernel modulo 43",
+    "scope": "For the declared r=10 774-column source-q8 endpoint enlargement, the smooth principal-part map modulo 43 has a sixteen-dimensional kernel. Reducing the exact actual E7_4/E7_7 generic leading-residue rows gives sixteen successive independent constraints and no survivor. Thus this one-prime bounded smooth kernel is already excluded by component-function-field residue rows on two actual H92 E7 components, without using node conditions. This is not a characteristic-zero kernel computation, a complete E7 cover, a global q8 pencil, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-E7-4-7-GENERIC-RESIDUES"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_e7_4_7_generic_residues_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2581348cdcf13ae9d7d74ab0aa95092026fe7e1314c80c5497c6aa78f04c01b6",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage",
+      "elkies-k3/scripts/probe_h92_q8_e7_4_7_generic_residues_modp.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact all-component generic E7 condition template for source q8",
+    "scope": "For every one of the seven actual resolved E7 components, the corrected q6 all-edge module gives exact orders of (t,x,m), and the q8 Cartier twist is (2,5,6,4,6,3,5). Thus an endpoint term u^i/h^k*x^a*m^b has exact generic residual order w+(4k-i-9)ord(t)+a ord(x)+b ord(m) in the cleared ninth-power q6 comparison. On the corrected 54-term endpoint seed there are 139 negative-order groups; 41 are singleton groups, yielding an exact rank-22 coordinate condition block. The remaining groups require leading-residue calculations in the actual chart function fields, followed by edge-node, marked-branch, and overlap conditions. This is a generic-component compiler layer, not a complete q8 E7 module, global kernel, pencil, or rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-AMBIENT"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:690c118efb7a1baafabbe6beb17cb876bab47b14cf34cc3903cafbc21c3429f5",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_all_edge_module.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_power_module.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA7-ALL-COMPONENT-SINGLETON-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "All-component singleton obstruction to the corrected r=7 smooth q8 kernel",
+    "scope": "For the corrected r=7 endpoint enlargement, the 558-column actual smooth principal-part map modulo 43 has rank 556 and a two-dimensional kernel. The exact all-component generic E7 template supplies six independent singleton coordinate rows on this enlarged ambient. Their restriction to the smooth kernel has rank two, leaving zero survivors. Thus every r=7 smooth direction is already excluded by unique negative leading terms on actual generic E7 components, before any non-singleton residue, node, marked-branch, or overlap calculation. This is a single-prime bounded modular obstruction, not a characteristic-zero q8 nonexistence theorem, a complete E7 cover, a pencil, bisection, collision, or rank statement.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_all_component_singleton_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99b19602d27414f93ea0b5ff2bfdea3861a52d6f0ee572fa968b947b321a7252",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/probe_h92_q8_all_component_singleton_modp.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact smooth-collision line-bundle lattice for the source q8 divisor",
+    "scope": "The source-nef q8 class has a literal support certificate with horizontal part 9O+9(-P1), the exact simple-component vertical coefficients (2,3,4,6,5,5,6,-4,-5,-7,-10,-8,-6,-4,-2), and fibre twist -11F. At every root of the smooth collision polynomial h, the E7/E8 component terms are supported elsewhere, and -11F may be represented by a fibre away from that neighbourhood. Hence the local q8 divisor is exactly 9O+9(-P1), with no vertical modification. In the exact regular collision algebra q=(m-y(P1)/x(P1))/h, X=h^2*x, its line-bundle lattice is the regular eighteen-term frame 1,q,...,q^9,X,Xq,...,Xq^7. Thus every negative h-principal part in that frame must vanish; the corrected 54-term endpoint ambient has a complete h^-15 principal-part map, which is the actual smooth condition when its target is set to zero. This does not impose the E7/E8 resolved conditions, prove their common kernel has dimension two, construct the D13/rootless equations or bisection covers, find collisions, or prove rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-AMBIENT"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_smooth_line_bundle_lattice.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:68e8e9d3217482875bbc48cfba5a718ccbd77d883cf75d0e2f6ccc49ad31e12e",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_generic_rr_ambient.sage",
+      "elkies-k3/scripts/derive_h92_q8_smooth_collision_frame.sage",
+      "elkies-k3/scripts/derive_h92_q8_smooth_line_bundle_lattice.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-ENDPOINT-SMOOTH-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Full-rank smooth obstruction for the corrected 54-term source q8 endpoint seed",
+    "scope": "The corrected marked-E7 trivialization changes the least endpoint envelope to 54 terms and its smooth principal-part quotient to dimension 1080. Its reduction modulo 43 has column rank 54, hence zero kernel; the resulting nonzero 54-by-54 minor proves injectivity of the characteristic-zero smooth map on this corrected seed. This is a bounded obstruction to that seed, not an obstruction to the q8 pencil: the endpoint construction explicitly allows that the true global coefficient ambient may require enlargement before the E7/E8 conditions are imposed.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e5b2faa343054b6900f01c4362c2f912d2dc35edc4dc7fd397e90c3a8d341132",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-ENLARGED-ENDPOINT-SMOOTH-KERNEL",
+    "kind": "example",
+    "state": "partial",
+    "title": "No r=4 smooth survivor in the corrected endpoint-compatible q8 enlargement",
+    "scope": "For every generic q8 basis family with certified E8 floor e and corrected marked-E7 endpoint allowance i<=4k+d, replace its minimum h-denominator k by k+r and retain all e<=i<=4(k+r)+d. At r=4 the enlarged ambient has 342 columns and its smooth map to the 1368-dimensional h^-19 quotient has rank 342 modulo 43, hence zero kernel. The prior 335-column, three-dimensional modular kernel used an invalid m/t marked-frame normalization and is withdrawn. This remains a bounded modular obstruction: it neither proves global minimality among all ambients nor constructs a D13/rootless equation, bisection cover, collision, or rank 18/19 surface.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ENDPOINT-SMOOTH-OBSTRUCTION"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e5b2faa343054b6900f01c4362c2f912d2dc35edc4dc7fd397e90c3a8d341132",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA4-MARKED-E7-COVER",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact marked-E7 cover for the corrected r=4 endpoint ambient",
+    "scope": "For the corrected r=4 nested endpoint enlargement with no extra E7 pole slack, all 342 generators satisfy i<=4k+d(a,b), where d is 6 for m^b and 8 for x*m^b, as derived from Z*m/t=unit/W on the actual E7_2--E7_5 chart. Thus the marked E7 chart imposes no additional condition on this ambient. The five other E7 edges and the complete resolved quotient map remain unproved; this is not a D13 pencil or any bisection/rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ENLARGED-ENDPOINT-SMOOTH-KERNEL"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_marked_e7.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:8ab7ee64dd2a657e49cb5a17ab9fb908e37869c128de2683f3325bac66135b90",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_marked_frame.sage",
+      "elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_marked_e7.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA4-E8-COVER",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact E8 cover for the corrected r=4 endpoint ambient",
+    "scope": "The corrected r=4 nested endpoint enlargement has h(0)=1 and retains every certified E8 lower u-floor. Therefore all 342 generators lie in the exact q8 E8 module. Together with the marked E7 cover, only the five non-marked E7 edges remain among the local conditions for this ambient. This does not reconstruct a characteristic-zero smooth kernel, impose those five edges, construct a D13/rootless equation or bisection cover, find a collision, or prove rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA4-MARKED-E7-COVER"
+    ],
+    "checker": "elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_e8_cover.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:12d55ae4a940332be98d34cd10fceb4f89409cc883cda358b6a992c39cf17d28",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q8_e8_ambient_weights.sage",
+      "elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_e8_cover.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA7-E3-GENERIC-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Generic E7_3 obstruction to the current r=7 smooth q8 survivors",
+    "scope": "For the current 54-term source q8 endpoint compiler with smooth principal parts through h^-15, its declared r=7 nested denominator enlargement has 558 columns and a two-dimensional smooth kernel modulo each of 43,53,59,89. At the actual generic E7_3 point of the E7_4--E7_3 chart, ord(t,x,y)=(4,6,9), while the exact P1 entrance has orders (8,12), so ord(m)=3. The q8 Cartier factor Z^4*Y^6 has E7_3 order six and the fractional q6 marked module is generated there by t. Hence a source term u^i*x^a*m^b/h^k has necessary residual order 6+4*(4k-i-9)+6a+3b. In each of the four reductions, the two independent r=7 smooth-kernel directions have unique negative leading labels (h_power,m_power,u_power)=(9,0,42) and (9,1,42), with residual orders -54 and -51. Their coefficient rows have rank two, so the generic E7_3 condition leaves no r=7 smooth survivor modulo those primes. This is a bounded modular obstruction in one generic E7 chart: it neither proves r=7 globally minimal nor imposes the other edge/node/overlap conditions, lifts to characteristic zero, constructs a q8/D13/rootless pencil or bisection cover, finds an extension collision, or proves generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_e3_generic_module_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:de9ad9ebb31fc0c045e7057e123faea9a32c245db5f3803b42eb22b1cbe28e51",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_e3_generic_module_modp.sage",
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-SLACK1-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Unmarked generic-and-node obstruction to the first E7-slack q8 endpoint windows modulo 43",
+    "scope": "Allow one extra individual E7 pole in the declared nested source-q8 endpoint ambient, while retaining the exact smooth principal-part condition. At r=4 the 360-column modulo-43 smooth block has zero kernel. At r=7 it has a 9-dimensional smooth kernel, and the necessary unique-leading conditions on unmarked E7 components give nine independent rows and zero survivors. At r=10 it has a 25-dimensional smooth kernel; the unmarked generic rows leave 13 directions, and the actual E7_4--E7_3 node gives thirteen independent necessary leading rows and zero survivors. Thus these first slack-one windows are excluded without relying on an unproved marked-E7 slack quotient. This is a one-prime bounded obstruction only: it does not classify all slack ambients, complete the resolved module, lift a pencil to characteristic zero, construct a q8/D13/rootless equation or bisection cover, find a collision, or prove rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA10-NODE-OBSTRUCTION",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:30bf396f556b7340193ea145954773814de02281b855f41c9ebdae6bf3c02c81",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA13-NODE-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Generic-and-node E7 obstruction to the r=13,16,19 source-q8 smooth kernels modulo 43",
+    "scope": "For the declared nested denominator enlargements r=13,16,19 of the corrected 54-term source-q8 endpoint compiler, the modulo-43 smooth principal-part maps have respectively (columns,rank,kernel)=(990,952,38),(1206,1156,50),(1422,1372,50). The necessary unique-leading generic-point conditions on the six unmarked E7 components give twelve independent rows and leave respectively 26,38,38 directions. At the actual E7_4--E7_3 node, the unique Pareto-minimal negative leading terms give respectively 26,38,38 successive independent necessary rows on those candidate spaces, always leaving zero survivors. Thus these three stated modular envelopes are excluded by the existing resolved generic-and-node leading-term screens. This is a one-prime bounded obstruction only: it neither proves a global coefficient bound nor completes the resolved-chart module, lifts a pencil to characteristic zero, constructs a q8/D13/rootless equation or bisection cover, finds a collision, or proves rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA10-NODE-OBSTRUCTION",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:30bf396f556b7340193ea145954773814de02281b855f41c9ebdae6bf3c02c81",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA10-NODE-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Generic-and-node E7 obstruction to the current r=10 smooth q8 survivors",
+    "scope": "For the current 54-term source q8 endpoint compiler with smooth principal parts through h^-15, its declared r=10 nested denominator enlargement has 774 columns and a sixteen-dimensional smooth kernel modulo each of 43,53,59,89. The necessary generic-point tests on all six unmarked E7 components have twelve independent unique-leading rows and leave a four-dimensional subspace at every listed prime. At the actual E7_4--E7_3 edge node, U is a unit times Y^2, so the leading bidegrees of (t,x,m,g) are ((3,4),(4,6),(2,3),(4,6)); x-x(P1) is the lower-order generator of the marked ideal and the q6 module is generated there by t. The four successive unique Pareto-minimal negative bidegrees (-31,-39), (-29,-36), (-28,-35), and (-26,-32) give independent necessary rows and eliminate the remaining four directions modulo every listed prime. This is a bounded modular leading-term obstruction in the declared r=10 envelope: it does not prove a global minimum over coefficient ambients, complete the other edge/node/overlap conditions, lift to characteristic zero, construct a q8/D13/rootless pencil or bisection cover, find an extension collision, or prove generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-EXTRA7-E3-GENERIC-OBSTRUCTION",
+      "EC-K3-H3-Q8-E7-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:30bf396f556b7340193ea145954773814de02281b855f41c9ebdae6bf3c02c81",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage",
+      "elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage",
+      "elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage",
+      "elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-EXTRA10-ALL-COMPONENT-GENERIC-OBSTRUCTION",
+    "kind": "example",
+    "state": "partial",
+    "title": "All-component generic E7 obstruction to the r=10 source q8 smooth kernel modulo 43",
+    "scope": "For the declared r=10 source q8 endpoint enlargement, the 774-column smooth principal-part map modulo 43 has a sixteen-dimensional kernel. The actual all-component generic E7 template, including the audited marked E7_5 chord order ord(m)=0, is applied successively to every negative-order group that has exactly one live coefficient on the current candidate space. It gives sixteen independent necessary leading-coefficient rows and leaves no survivor. Thus the r=10 smooth kernel is excluded at generic points of the actual resolved E7 components modulo 43, without invoking the E7_4--E7_3 node screen. This is a one-prime bounded modular generic-point obstruction only: groups with several live leading residues, node and marked-branch membership, overlap gluing, characteristic-zero lifting, a q8 pencil, bisection, collision, and rank claims remain outside it.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-ALL-COMPONENT-GENERIC",
+      "EC-K3-H3-Q8-EXTRA10-NODE-OBSTRUCTION"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q8_all_component_generic_module_modp.sage",
+    "proof_type": "exact_modular",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:12d46671b2b3a98dc705adc0f5f1a16df2be0c82ef6231431e3cc5c83f883c51",
+    "software_lock": [
+      "elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage",
+      "elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage",
+      "elkies-k3/scripts/probe_h92_q8_all_component_generic_module_modp.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-MARKING",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact degree-two q8 marking on the H3 q6 child",
+    "scope": "On the exact H92 E8+E6/MW3 q6-child Jacobian, the transported old E7_7 and affine-E7 components give covariant differences Pmap and Qmap. The binary-quartic covariant is already the degree-two covering map to the Jacobian, so the primitive q8 section is S=Pmap+Qmap, not the withdrawn 2Pmap+2Qmap. The corrected section has Mordell--Weil coordinate (-2,-2,0), height 24, zero intersection ten, and a reduced degree-ten smooth collision divisor. Its x and y denominators are square and cube powers of that same divisor, it specializes smoothly to the identity component at both II* and IV*, and the withdrawn section is exactly 2S with height 96 and collision degree 46. Its generic divisor O+S has the exact chord basis (1,m). This pins the corrected generic marking; the complete pencil and D13/MW4 child are certified separately by EC-K3-H3-Q8-QQ-D13.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q6",
+      "EC-K3-H3-Q8-AMBIENT"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:fe1cf5d14bc91c93d7c4d9fbb1c3126869abdb01e4aeab7b1f938df04ef7d174",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_zero_section.sage",
+      "elkies-k3/scripts/certify_h3_q6_component_section_lattice.sage",
+      "elkies-k3/scripts/certify_h3_q6_weyl_section_transport.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-PHYSICAL-ROOT-TARGET",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact physical E8+E6 component target for the marked child q8 divisor",
+    "scope": "Using the transported old zero as the explicit q6-child origin, the finite root lattice is the orthogonal complement of <F,O+F>. Both O and the corrected marked section S are orthogonal to every finite simple component. The exact decomposition q8_fibre=O+S+V has V=-F+(3,5,6,4,2,3) on a pinned E6 simple-root order and +(4,5,7,10,8,6,4,2) on a pinned E8 order. Thus V has component degrees (-1,-1,0,0,0,0) on E6 and (-1,0,0,0,0,0,0,0) on E8. These are lattice component labels only: a resolved-chart correspondence and finite II*/IV* quotient maps remain unproved, as do a global q8 pencil, D13 equation, bisection, extension collision, and generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-MARKING"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:fd50ef758e44e6fb47edec17dc87866101f9f7fe26afac68619e3a9f73d31ad7",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-IISTAR-VERTICAL-IDEAL",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact II* vertical ideal for the corrected child q8 divisor",
+    "scope": "At the II* fibre of the explicit H92 q6 child, use the unit-normalized germ Y^2=X^3+u^4 a(u)X+u^5 b(u), with a(0)b(0) nonzero. The corrected physical q8 target has E8 cycle (4,5,7,10,8,6,4,2) and component degrees (-1,0,0,0,0,0,0,0). In the pinned II* blow-up chart order this is the valuation cycle (2,4,6,10,4,7,5,8) of X, so its complete vertical ideal is (u^2,X,Y). Its quotient basis is 1,u and its exact colength is two, equal to the cycle colength. This is only a vertical ideal target: it does not trivialize the generic chord basis, derive the IV* module, assemble the smooth and additive conditions into a global q8 pencil, construct the rootless equation or bisection covers, find an extension collision, or prove generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-PHYSICAL-ROOT-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_iistar_vertical_ideal.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:07f78e17bbb3095062783d7d1fc01b904f1303401d582e0fbf0bd2317cbb7cff",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_iistar_vertical_ideal.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE",
+    "kind": "example",
+    "state": "partial",
+    "title": "Corrected finite q8 module for the Weyl-nef child fibre",
+    "scope": "The q8 orbit certificate distinguishes the dominant D13 representative from the Weyl-nef q8 fibre by four root reflections, although their Mordell--Weil projection is the same. For the nef representative, the E6 vertical cycle is (2,3,4,3,2,2) with degrees (-1,0,0,0,-1,0). Both chart identifications give the same IV* cycle (2,2,2,3,3,4) and complete ideal (u^2,X,Y), of colength two; thus the II*/IV* chord blocks have ranks two and two. In q=(m-p)/h, q vanishes in both cusp quotients, so the exact finite module is <(1,0),(0,f_II*^2*f_IV*^2)>, with CRT degree four. In q_regular=q-R/Nx this transports to <(1,lift(R/Nx)),(0,f_II*^2*f_IV*^2)>. These are finite local data for the nef class only; they do not derive its infinity lattice, a global q8/D13/rootless pencil, bisection cover, extension collision, or rank 18/19 family.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-MARKING"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:db48c3351faa020783bd91e88e1bea047f94b786dc89055ea1d02cb3d85b2400",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-BISECTION-PENCIL",
+    "kind": "example",
+    "state": "partial",
+    "title": "Lattice genus-one bisection pencil for the explicit q6 child",
+    "scope": "Start from q8.nef_representative and reflect it 102 times into the chamber of the actual E8+E6 components of the explicit q6 child. The resulting primitive isotropic class D has old-fibre degree two, nonnegative degree on all finite and affine E8+E6 components, and no negative old-fibre section wall: every such wall would yield a vector of norm below eight in one fixed rank-17 lattice coset, and the complete PARI enumeration finds none. The bisection identity (x-v)^2=2(D.C+1) excludes a negative bisection by parity. If D.C<0 for any irreducible curve C, then C is a fixed component of D and F.C<=2, so these three cases prove D nef. Thus D defines a primitive genus-one pencil whose generic member is a bisection of the explicit q6 fibration in the transported-old-zero marking. The available standard-Weierstrass chord belongs instead to its translated divisor; transporting that translation in the exact NS marking is required before its coefficient modules can be treated as an equation for D. This is a lattice certificate only; it does not construct the pencil equation or its branch divisor, compare quadratic extensions, or prove a generic rank 18 or 19 family.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-MARKING",
+      "EC-K3-H3-Q8-CHILD-PHYSICAL-ROOT-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/probe_h92_q6_child_q8_section_walls.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:9496d2db44afc98ad7884e9c4566c50c65991084ebe3aaee83e4d7826d9c9c55",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+      "elkies-k3/scripts/probe_h92_q6_child_q8_section_walls.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-CHORD-TRANSPORT",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact generic chord for the component-nef child bisection class",
+    "scope": "The component-nef bisection class is marked by the transported old zero P0, while the displayed child equation uses the standard Weierstrass infinity zero. Let S be the existing standard-coordinate marked point and Q=P0+S in the standard elliptic-curve group. Translation tau_-P0 sends the physical horizontal divisor P0+Q to O_standard+S. Hence its exact generic Riemann--Roch space is L(P0+Q), with basis 1 and m_component_nef=m_S after tau_-P0. In standard variables, lambda=(y+y(P0))/(x-x(P0)), x'=lambda^2-x-x(P0), y'=lambda*(x-x')-y, and m_component_nef=(y'+y(S))/(x'-x(S)). This aligns the lattice bisection class with an exact generic Weierstrass function. It does not transport any resolved II*/IV* module through the translation, impose the infinity module, construct a global pencil or branch divisor, or provide an extension collision or rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-BISECTION-PENCIL",
+      "EC-K3-H3-Q8-CHILD-MARKING"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_component_nef_chord.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e36e1ff0275d318c723cb4cff990e22c41d930b8dbcb2654e08830644f5b2ef3",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_component_nef_chord.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact rejection of the uncorrected component-nef chord level as a rational bisection",
+    "scope": "For level c=0 of the exact component-nef chord, write the equation after translation tau_-P0 in standard coordinates as y'=c*(x'-x(S))-y(S). Its fixed intersection -S at x'=x(S) divides out of the Weierstrass line intersection, leaving a monic quadratic in x' over QQ(T). Pulling that line back through tau_-P0 gives an exact curve of old-fibre degree two. Its discriminant is (-3*Nx^2-4*A*Dx^2)/Dx^2, where Dx is a square; the degree-192 numerator is coprime to Dx and squarefree by an exact gcd-with-derivative check. Thus its canonical squareclass has finite geometric branch degree 192 (and no infinity branch point), not degree two. This uncorrected chord level is therefore not a rational bisection eligible for the extension-collision protocol. It neither identifies the corrected resolved pencil nor rules out other rational bisections, and provides no collision or rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-CHORD-TRANSPORT"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_component_nef_bisection_branch.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:12e4da2607d7026834186f5935ed6e00d83fd08155b4b6dc2fe34684e78a8f1c",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_component_nef_chord.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_component_nef_bisection_branch.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS",
+    "kind": "example",
+    "state": "partial",
+    "title": "Smooth additive specializations of the component-nef translation centre",
+    "scope": "For the explicit component-nef q8 bisection marking, let P0 be the transported old zero and Q=P0+S in the displayed standard Weierstrass group. At both finite additive fibres II* and IV*, the exact P0 coordinates are regular and their specializations have nonzero Weierstrass gradient. In the corresponding cusp local rings, the chord denominator X-x(P0) is a unit; the exact translation formula sends the cusp to a point whose X,Y coordinates have the required additive orders, and its tangent action in (u,X,Y) is unipotent with determinant one. Thus P0 lies in the smooth locus of both additive Weierstrass fibres, and translation by -P0 extends on their Neron smooth loci. This removes the smooth-centre obstruction to pulling the generic chord through the additive models. It is a singular-germ and tangent calculation only: it does not compute a resolved blow-up-chart lift of that translation, identify the resulting II*/IV* quotient modules, impose an infinity module, construct a pencil or branch divisor, find an extension collision, or establish a rank claim.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-CHORD-TRANSPORT"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q6_child_component_nef_translation_additive_jets.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:ff515630eed9c637f83aa84f7fe5daf0bf90cc17e0e0fed97e1681b3a0c20228",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_child_component_nef_chord.sage",
+      "elkies-k3/scripts/derive_h92_q6_child_component_nef_translation_additive_jets.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E7-TARGET",
+    "kind": "example",
+    "state": "partial",
+    "title": "Resolved E7 target for the first H3 q8 neighbour",
+    "scope": "For the source-nef q8 divisor of EC-K3-H3-Q8-AMBIENT, the literal horizontal-support certificate supplies E7 vertical coefficients (2,3,4,6,5,5,6) before the component calculation. The original H3 E7 component numbering maps to the explicit H92 blow-up numbering by (1,6,4,3,7,2,5), normalized by the old affine multiplicity vector mapping to div(Z). The q8 E7 restriction degrees are (0,1,0,0,2,0,1) in resolved order. Its rational exceptional cycle c8=(-7,-13,-21,-14,-15/2,-21/2,-35/2) satisfies c8=9*c6+(2,5,6,4,6,3,5), where c6 is the cycle of the certified q6 non-Cartier module. Hence the q8 E7 local module is the ninth marked q6 branch-module tensor power followed by the displayed integral exceptional twist; its marked-branch pole order remains nine and must not be collapsed to one by a class-group reduction. The correction has exceptional intersection degrees (0,1,0,0,-7,0,1), hence is not anti-nef and cannot be represented by one complete ideal in the singular E7 local ring: a quotient compiler must retain resolved-chart trivializations and gluing. This does not compute the finite q8 E7 quotient map, the E8 target, a global kernel, a pencil, a bisection branch divisor, an extension collision, or generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-AMBIENT",
+      "EC-K3-H3-Q6"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e7_local_target.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:a4edb436673aef745243eaf1015e7b84cecefd7726bf81742abcd864a1f5c443",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_e7_resolution.sage",
+      "elkies-k3/scripts/derive_h92_q6_e7_p1_branch_module.sage",
+      "elkies-k3/scripts/derive_h92_q8_e7_local_target.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E8-TARGET",
+    "kind": "example",
+    "state": "partial",
+    "title": "Source E8 target for the first H3 q8 neighbour",
+    "scope": "For the source-nef q8 divisor of EC-K3-H3-Q8-AMBIENT, the literal horizontal-support certificate supplies E8 vertical coefficients (-4,-5,-7,-10,-8,-6,-4,-2) before the component calculation. Its finite E8 component degrees in the pinned source order are (1,0,0,0,0,0,0,0). Since the E8 Cartan matrix is unimodular, the unique exceptional cycle with these degrees is (-4,-5,-7,-10,-8,-6,-4,-2), exactly the E8 coordinate vector of the source-nef divisor. The source E8 components are identified with the eight explicit ordinary-blow-up components by the affine attachment, giving chart cycle (-2,-4,-6,-10,-4,-7,-5,-8) and chart degree vector (0,1,0,0,0,0,0,0). Therefore the q8 E8 module is the ninth tensor power of the certified q6 module u*<1,Q>, followed by this integral exceptional twist. This does not compute a finite q8 quotient map or global kernel, construct a pencil, a bisection branch divisor, an extension collision, or generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-AMBIENT",
+      "EC-K3-H3-Q6"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e8_local_target.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:77a8a48ba68448fb66545b9fb5c3b335501913b3d9bac347ab05c55200e3a3b4",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_e8_resolution.sage",
+      "elkies-k3/scripts/derive_h92_q6_e8_p1_branch_module.sage",
+      "elkies-k3/scripts/derive_h92_q8_e8_local_target.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-H3-Q8-E8-MODULE",
+    "kind": "example",
+    "state": "partial",
+    "title": "Complete E8 local module for the first H3 q8 neighbour",
+    "scope": "For the chart-level E8 target of EC-K3-H3-Q8-E8-TARGET, the exceptional valuations of (u,X,Y) identify the required integral twist with the complete ideal (u^2,X,Y). Its quotient has basis (1,u) and colength two, equal to the rational-double-point cycle colength. Since the q6 marked module u*<1,Q> has Q a unit at the E8 singularity, its ninth tensor power contributes u^9 locally. Hence the exact q8 E8 module is u^9*(u^2,X,Y). This does not assemble the module on a bounded global ambient, derive the E7 finite quotient or common global kernel, construct a pencil, a bisection branch divisor, an extension collision, or generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-Q8-E8-TARGET"
+    ],
+    "checker": "elkies-k3/scripts/derive_h92_q8_e8_complete_module.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:64840c85a79253099b49d0497fd2a96792e9554b87a596a89d54eef62fc610ec",
+    "software_lock": [
+      "elkies-k3/scripts/derive_h92_q6_e8_resolution.sage",
+      "elkies-k3/scripts/derive_h92_q8_e8_local_target.sage",
+      "elkies-k3/scripts/derive_h92_q8_e8_complete_module.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-BISECT-ORBIT",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact rootless MW17 lattice bisection-orbit enumeration",
+    "scope": "In the pinned rootless Neron--Severi lattice U+(-M) with det(M)=948, every degree-two (-2)-class is B_w=((w.M.w-2)/4,2,w), and section translation is w -> w+2x. Exact enumeration of M/2M finds 65,792 norm-2-mod-4 cosets. Removing the 26,672 cosets with a norm-6 representative leaves exactly 39,120 cosets; every survivor has minimum norm 10, so its canonical representative B_w=(2,2,w) has square -2, fiber degree 2, zero-section intersection 0, and nonnegative intersection with every section. Fibrewise inversion is w -> -w, which is the identity on M/2M because -w-w=-2w belongs to 2M; it therefore produces no spurious second translation-orbit collision. On any K3 realization of this rootless fibration, K3 Riemann--Roch makes B_w effective; rootlessness and section nonnegativity rule out respectively vertical and two-section decompositions, so every survivor is an irreducible smooth rational bisection. The 806,238 unoriented norm-10 representatives and all 39,120 canonical classes are exported. This is an exact Neron--Severi lattice computation only: it neither constructs bisection equations or branch divisors nor hashes quadratic extensions, finds a collision, constructs anti-invariant sections, computes a height matrix, or claims generic rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-H3-SOURCE"
+    ],
+    "checker": "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be",
+    "software_lock": [
+      "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-BISECT-DISJOINT-FRONTIER",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact disjoint-pair frontier among rootless rational-bisection translation orbits",
+    "scope": "For two rootless bisection classes B_w and B_v in U+(-M), B_w.B_v=(w-v).M.(w-v)/2-2, while independent section translations change w and v by 2M. Hence two distinct M/2M translation orbits can be represented by disjoint rational bisections exactly when their mask XOR has a norm-four representative. The exact short shell has 1,311 unoriented norm-four masks, all active on the complete 39,120-orbit survivor set. Exact XOR membership counting gives 8,895,801 unordered translation-orbit pairs with minimum attainable intersection zero. This finite graph is a priority frontier for equation-level collision work; it does not construct equations or branch covers, assert that any two covers coincide, compute anti-invariant heights, or prove rank 18 or 19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-BISECT-ORBIT"
+    ],
+    "checker": "elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:a55a381bdd915dff81d359e98585156b49bd6d741745853d098ab692466fae48",
+    "software_lock": [
+      "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
+      "elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-ALT-BISECT-ORBIT",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact alternate-rootless MW17 lattice bisection-orbit enumeration",
+    "scope": "The equation-friendlier alternate q80 q6 endpoint has a second rootless rank-17 frame of determinant 948, not integrally isometric to the previously pinned rootless frame. In its U+(-M) lattice every degree-two (-2)-class is B_w=((w.M.w-2)/4,2,w), with section translation w -> w+2x; fibrewise inversion w -> -w is already the identity on M/2M because -w-w=-2w belongs to 2M. An LLL-reduced streaming Fincke--Pohst traversal visits all 2,988,326 signed vectors through norm ten, rechecks every retained norm exactly, and matches PARI's exact count-only qfminim total. It finds 65,792 norm-2-mod-4 cosets, excludes 26,645 with a norm-6 representative, and leaves exactly 39,147 section-nonnegative cosets, all of minimum norm ten. The 805,466 unoriented norm-ten representatives and all 39,147 canonical classes are exported. The same rootless effectivity and intersection argument makes each survivor an irreducible smooth rational bisection on any K3 realization. This is lattice-only: it neither lifts the finite-field alternate q6 equation to characteristic zero nor constructs bisection equations, branch divisors, extension collisions, anti-invariant height matrices, or generic rank 18/19.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [],
+    "checker": "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be",
+    "software_lock": [
+      "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
+      "elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-BISECT-EXTENSION-PROTOCOL",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact squareclass and height gate for rootless bisection collisions",
+    "scope": "Given equation-level records for smooth rational rootless bisections, the checker exactly reduces the branch rational function, retains its rational constant squareclass and odd monic factors, and hashes equality in QQ(t)^*/QQ(t)^{*2}. It rejects split covers and covers with any branch degree other than two. It also accepts a quadratic bisection relation and derives its class from the discriminant; when the resolved chord supplies h and q it first verifies the exact identity discriminant=h^2*q and then normalizes q. Across the entire supplied record set, every declared lattice translation-orbit mask must be unique: section translates define the same base cover and can contribute only one anti-invariant direction, even if inconsistent input equations would otherwise put them in different squareclass buckets. A collision bucket cannot mix masked with unmasked records. When a collision bucket supplies exact anti-invariant coordinates in a declared positive-definite rational twist-height lattice, it computes the exact height matrix and its rank. Alternatively, after an equation-level certificate establishes that the common double base change has chi=4, branches only at smooth fibres, and remains rootless, declared lift intersections P_i.P_j and P_i.tau(P_j) give the exact formula <P_i-tau(P_i),P_j-tau(P_j)>=2*(P_i.tau(P_j)-P_i.P_j), with checked diagonal values P_i^2=-4 and P_i.tau(P_i)=2. If both routes are supplied they must agree. An optional complete-coverage gate validates one record for every canonical M/2M orbit against either the pinned rank17 Gram or a declared exported alternate rootless frame, including the corresponding integral bisection vector modulo 2M. Compact output retains a complete label/orbit/extension-digest manifest and every collision bucket while omitting bulky singleton provenance, and pins the equation input by SHA-256. For declared invariant rank 17, a collision matrix of rank two certifies base-changed rank at least 19. The included synthetic regression exercises this implication, cover normalization, both lattice-record attachment modes, duplicate-orbit rejection including inconsistent branch data, missing-height rejection, indefinite-height rejection, and the geometric lift formula. The complete production input supplies all 39,120 actual pinned rootless bisection equations; it has 39,120 distinct extensions and therefore no collision, twist-height matrix, or generic-rank-19 consequence.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [
+      "EC-K3-BISECT-ORBIT"
+    ],
+    "checker": "elkies-k3/scripts/hash_bisection_extensions.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:caae324023836a3084c2589a1a8269cb12304164a0f2e4de9d952fd4c0e790e4",
+    "software_lock": [
+      "elkies-k3/scripts/hash_bisection_extensions.py"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION",
+    "kind": "example",
+    "state": "partial",
+    "title": "Exact unmarked first q4 collision on the rational Q80 coefficient curve",
+    "scope": "The exact rational coefficient curve reconstructed from the slope-8/87 Q80 branch lies identically on the degree-eight first-q4 collision divisor: direct substitution in QQ(u) is zero. The explicit first-neighbor coordinate U=(x-T)/T^2 therefore has finite I5 at U=d(u)-1. At the exact rational witness u=0, the fifth but not sixth discriminant factor is present, the remaining degree-eight finite factor is squarefree, and A and B are units; these nonvanishings prove the generic configuration over QQ(u). Degree checks give I5* at infinity, so the unmarked first child has I5*+I5+8I1 and root lattice D9+A4. This does not construct global marked sections, a second or later pencil, a rootless MW17 equation, a bisection, an extension collision, or a generic rank-19 family.",
+    "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+    "dependencies": [],
+    "checker": "elkies-k3/scripts/verify_q80_unmarked_first_q4_collision_qq.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:7819d492a57833d5d6b538e8290b63470eac437aa969fa0e037028fee6c43b0f",
+    "software_lock": [
+      "elkies-k3/scripts/derive_q80_first_q4_pencil.sage",
+      "elkies-k3/scripts/verify_q80_unmarked_first_q4_collision_qq.sage"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  }
+]

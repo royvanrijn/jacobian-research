@@ -9,8 +9,10 @@ The authoritative result is `EC-LOW-HEIGHT-MW-SUBLATTICES-20260906` in
 
 The [summary certificate](../../artifacts/generated-results/elliptic-curves/low_height_mw_sublattices_summary_v1.json)
 binds the selections, calibration results and arithmetic replay. No rank bound
-changes. This is a user-authorized reopening for curves 245 and 302, not a
-resumption of the retired wgxli or E29/398–400 target campaigns.
+changes. The historical reopening covered curves245 and302. Curve302's
+[explicit alternative MW17 parent and full generic basis](CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+were subsequently recovered; use that proof and loader for construction
+recovery. The failed proposal methods below remain calibration regressions.
 
 ## What was searched
 
@@ -152,10 +154,15 @@ retuned after this correction.
 
 ## Replay
 
-From the repository root, set `OPENBLAS_NUM_THREADS=1`. Both search scripts
-have immutable checkpoints; remove or relocate only this experiment's own
-checkpoints to regenerate them from scratch. Every GP invocation is bounded
-by 120 seconds. No broader search is started by the verifiers.
+Run from `research/` after the environment setup in
+[`REPRODUCE.md`](../../REPRODUCE.md), with `OPENBLAS_NUM_THREADS=1`.
+Read the retained summary and replay first. The commands below perform
+algebra and enumeration: even `verify_low_height_mw_sublattices.py --check`
+rebuilds100-digit height balls, minimum searches and finite reductions.
+The summary checker also invokes GP for an HNF comparison. They are not
+cleanup checks. Both search scripts preserve existing checkpoints; a fresh
+regeneration needs an explicitly scoped experiment. Each GP call has a
+120-second bound, which is not a bound for the whole multi-call replay.
 
 ```sh
 .venv/bin/python elliptic-curves/cas/search_low_height_mw_sublattices.py --curve 245

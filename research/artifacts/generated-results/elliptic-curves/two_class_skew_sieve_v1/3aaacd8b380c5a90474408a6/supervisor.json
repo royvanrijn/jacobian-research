@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_skew_sieve.sage",
+    "--input",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/two_class_relation_pilot_v1/inputs/3aaacd8b380c5a90474408a6.json",
+    "--setup",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/two_class_relation_pilot_v1/3aaacd8b380c5a90474408a6/setup.json",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/two_class_skew_sieve_v1/3aaacd8b380c5a90474408a6"
+  ],
+  "curve_key": "3aaacd8b380c5a90474408a6",
+  "returncode": 0,
+  "status": "PASS_BOUNDED_WORKER",
+  "t": "110314/102227",
+  "wall_limit_seconds": 180,
+  "wall_seconds": 12.225763
+}

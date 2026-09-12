@@ -1,0 +1,97 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/fixed_word_selmer_finiteness_v1/proof-packet.zip",
+  "archive_bytes": 1442755,
+  "archive_sha256": "8edfcb124432611c9b83d5fd8f836ed1147caa3f03d8447989a08fe1c8159946",
+  "boundary": "No point or twist search, resultants factorization, effective parameter enumeration, new principal relation or calculation on column7.",
+  "contents": "Expanded full column6 definition; prior Bezout/result and independent receipt; exact Sigma determinant circuit and guard data; new independent receipt; full allowlisted source bindings, both replay scripts and canonical proofs. The current packet does not replay older compaction or ideal certificates; those remain inherited.",
+  "members": [
+    {
+      "bytes": 1049,
+      "path": "artifacts/generated-results/elliptic-curves/fixed_word_selmer_finiteness_v1/independent-replay.json",
+      "sha256": "66b6210fc58b730e65694ad3139f2200c174ff409d4c21be94c08be84b38ee9a"
+    },
+    {
+      "bytes": 565,
+      "path": "artifacts/generated-results/elliptic-curves/fixed_word_selmer_finiteness_v1/protocol.json",
+      "sha256": "028a2ec3c53040a4759c28f4217e151ceec35661525ebde9873e316c13e21860"
+    },
+    {
+      "bytes": 2671773,
+      "path": "artifacts/generated-results/elliptic-curves/fixed_word_selmer_finiteness_v1/sigma-binding.json",
+      "sha256": "ad1da5cc42f5847f84423cb0f20b7dab425073c956307c78599c4cc2322efbd8"
+    },
+    {
+      "bytes": 490934,
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/definition.json",
+      "sha256": "fbd4c9964ceaedafee8a3989a971a90f65ed39eb26b7956f25099d7023c96579"
+    },
+    {
+      "bytes": 1063,
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/independent-replay.json",
+      "sha256": "2e9f5eeeaea7a12a5fc5008969257da9ec0535fb7bd5386f5b216a5424e1cda5"
+    },
+    {
+      "bytes": 1903,
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/result.json",
+      "sha256": "5d658c542fa668ec31d3ac9544322dee50881a5ccc9fe6b9fc629852a7f45270"
+    },
+    {
+      "bytes": 2845,
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/frozen-block.json",
+      "sha256": "feea396ffdc62f5638dff2c9670a8525ad54baad4ceaa26267c698f7c0316281"
+    },
+    {
+      "bytes": 432804,
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/geometry.json",
+      "sha256": "b8a8063ce04179aef71d89ea1fa684d8738696b2c712f991a15e0dda959e445e"
+    },
+    {
+      "bytes": 4718336,
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_reference_additional_strict_verification_v1.json",
+      "sha256": "f9ac9d48d542b914e621cb3acc1d58a6b22e13e20432d1382b267bf3459bc60c"
+    },
+    {
+      "bytes": 3919,
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json",
+      "sha256": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee"
+    },
+    {
+      "bytes": 13708,
+      "path": "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md",
+      "sha256": "097a68559709a5101c1b25cc048ad546dabcce9aad4f7e415da5c69e7d0cdfbb"
+    },
+    {
+      "bytes": 12267,
+      "path": "elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md",
+      "sha256": "07eb601b9ff888d587a0c901c1a662a40a30e196ad4c4b528f621a15ab01babd"
+    },
+    {
+      "bytes": 1174,
+      "path": "elliptic-curves/rank-jump/FROZEN_DEPENDENCY_CONTINUATION_PROTOCOL.json",
+      "sha256": "541488e59a2f5227da09c2427dfe12d2fd74ceb6a77cb8c9e4f519422fb66902"
+    },
+    {
+      "bytes": 10711,
+      "path": "elliptic-curves/rank-jump/bind_fixed_word_exceptional_primes.py",
+      "sha256": "c1a923992d707608af26211b1ed712bfd87df2a898b62ca323a044b96ba1cfa5"
+    },
+    {
+      "bytes": 11463,
+      "path": "elliptic-curves/rank-jump/finish_frozen_dependency_continuation.py",
+      "sha256": "81d570a7f114530375f923f817f02ac58e55c6f18678fa35702beb0dac39375c"
+    },
+    {
+      "bytes": 9672,
+      "path": "elliptic-curves/rank-jump/verify_fixed_word_selmer_finiteness.py",
+      "sha256": "bc68bb341e64dc84ce7d00356d782fa65efd9a9d3de6df44e890598536aa782d"
+    },
+    {
+      "bytes": 8053,
+      "path": "elliptic-curves/rank-jump/verify_frozen_dependency_continuation.py",
+      "sha256": "c3fb3590a1ab76cbcea35ff26a2847a45618acdf4f424a4adf739af96a1a3235"
+    }
+  ],
+  "replay_command": "sage -python research/elliptic-curves/rank-jump/verify_fixed_word_selmer_finiteness.py",
+  "restoration": "Member paths are relative to research/. Restore only into an empty replay checkout, not over a live shared repository.",
+  "schema": "fixed-word.finiteness-proof-packet.v1"
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "blind-cover-quartic.v1",
+  "column": 6,
+  "degree4_reduction_certificate": "cover-worker-c6-reduction.json",
+  "source_result": "conic-quartic-minred-v3-c6.result.txt",
+  "source_sha256": "786c7d9a2e8fa52c183aaae58f1361f072e83debe15f27ace2dbd3b8558000ec",
+  "conic_parametrization_matrix": [
+    [
+      "325",
+      "-245",
+      "105"
+    ],
+    [
+      "653",
+      "-52",
+      "319"
+    ],
+    [
+      "46",
+      "13",
+      "166"
+    ]
+  ],
+  "conic_parametrization_convention": "[q1,q2,q3]=[a^2,a*b,b^2]*P",
+  "raw_quartic_descending": [
+    "27944320976775025",
+    "-107473449353018070",
+    "-79195762889783171",
+    "2410949510238468",
+    "5094615462908644"
+  ],
+  "reduced_quartic_descending": [
+    "5094615462908644",
+    "17967512341396108",
+    "-55860918643046711",
+    "-37772463105629100",
+    "58905673392680100"
+  ],
+  "degree2_scalar": "1",
+  "degree2_binary_matrix": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "1"
+    ]
+  ],
+  "degree2_transformation": "[a,b]=[r,t]*T; reduced_F(r,t)=k^2*raw_F(a,b); raw_Y=reduced_Y/k",
+  "degree4_recovery": "q0=(raw_Y-L(q1,q2,q3))/2; L is coefficients of q0*qj in the second reduced degree4 quadric",
+  "linear_term_on_conic_param_descending": [
+    "325",
+    "653",
+    "46"
+  ],
+  "degree2_minimisation": "Magma Minimise with CrossTerms=false, then Reduce",
+  "degree2_positive_level_primes": [
+    2
+  ],
+  "degree2_minimisation_boundary": "No-cross-term model may retain positive level at p=2; no local insolubility is inferred.",
+  "exact_conic_parametrization_verified": true,
+  "exact_quartic_discriminant_verified": true,
+  "exact_binary_transformation_verified": true,
+  "status": "RECOVERED_EXACT_ON_REDUCED_DEGREE4",
+  "pari_version": "[2, 17, 3]",
+  "search_wall_seconds": 0.012714533018879592,
+  "search_bound_abscissa_height": 1000,
+  "search_method": "PARI hyperellratpoints flag=1, after exact infinity test",
+  "reduced_quartic_point": [
+    "1/2",
+    "169170224",
+    "1"
+  ],
+  "reduced_degree4_point": [
+    "169170775/2",
+    "-551",
+    "-551/4",
+    "0"
+  ],
+  "reduced_degree4_primitive": [
+    "614050",
+    "-4",
+    "-1",
+    "0"
+  ],
+  "reduced_binary_parameter": [
+    "1/2",
+    "1"
+  ],
+  "raw_binary_parameter": [
+    "-1",
+    "3/2"
+  ]
+}

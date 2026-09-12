@@ -1,0 +1,196 @@
+[
+  {
+    "id": "GVC2D5RJ",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Binary repeated-root quartic migrating-jet search",
+    "scope": "The first degree-five binary architecture capable of moving a filtration defect linearly with the moment is (Lambda4+Lambda5,P5+P4): the defect is the number of Lambda5 selections plus the number of P4 selections. Faithful-characteristic samples at p=23 cover 100000 normalized points on each of the quartic root partitions (4), (3+1), and (2+2) through moment four. A conditioned (4)-orbit search at p=29 covers 500000 points through moment five; its two final survivors have max_x Supp(P5)=1, max_x Supp(P4)=3, and min_x Supp(Lambda5)=2, which gives the all-order mixed cutoff m>3 deg(Q). A second conditioned p=29 search adds the complete Weierstrass-normalized Lambda6 and P3 defect-two data: 1722 samples solve the defect-one affine system, 1108 solve moment two, one survives moment three, and that point has fourth moment 20+17y modulo 29. These are bounded modular samples, not exhaustive scheme calculations, a characteristic-zero elimination, or a GVC counterexample. GVC2D5Q4, GVC2D5Q31, and GVC2D5Q2 subsequently close all four repeated-root quartic orbits exactly, including arbitrary deeper jets; this search is retained as discovery history.",
+    "canonical_source": "extended-geometry/BINARY_REPEATED_QUARTIC_GVC_JET_SEARCH.md",
+    "dependencies": [
+      "GVC2D5F",
+      "GVC2D5Q4",
+      "GVC2D5Q31",
+      "GVC2D5Q2",
+      "GVC2NHO"
+    ],
+    "checker": "scripts/search_binary_repeated_quartic_gvc_jets_mod_p.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:ec67b1544a61df3d6dc4efa4025d2fc6e4191dd9907e26c2fc70ebe71cda3f8c",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "G2E",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Five-weight two-real cubic GMC census",
+    "scope": "Among the 21 five-weight cubic supports and 102 ordinary coefficient charts, centering and reflection leave 35 chart presentations. Every presentation has unit saturated moment ideal modulo 1000003 through order eight. Exact rational saturation promotes 31 presentations; chart reflection then excludes 92 ordinary charts and 18 supports. Three chart orbits remain without characteristic-zero promotion: the constant/constant chart on {-2,-1,0,1,2} and two constant-negative charts on {-3,-1,0,1,2}, representing ten ordinary charts on three supports. Their order-six modular quotient lengths are respectively 100, 164, and 164. Modular unit results are discovery only and no all-order survivor is claimed.",
+    "canonical_source": "extended-geometry/TWO_REAL_GMC_CLOSURE_PROGRAM.md",
+    "dependencies": [
+      "G2D"
+    ],
+    "checker": "scripts/verify_two_real_gmc_five_weight_frontier.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:cd4e9b61f62949a2028d1b5e08b9a65debd8f7132384ce4ce678c4fde1506f32",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "unstructured 21-support / 102-chart five-weight cubic frontier"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [
+      "G2N"
+    ],
+    "priority": "derived"
+  },
+  {
+    "id": "G2N",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Finite cubic Gaussian null-cone theorem",
+    "scope": "For every complex polynomial of total degree at most three in two real Gaussian variables, the torus null-cone ideal is contained in the radical of the first ten pure moments. A finite audit of all 11 two-weight presentations, the last three five-weight chart orbits, all 44 six-weight charts, and all eight seven-weight charts has exact characteristic-zero reduced bases [1]; moments through order eight suffice on the new five- and six-weight systems. The audit-only replay requires the exact three-orbit handoff from G2E, proves that reflection covers every declared ordinary chart key, and matches all 31 stored systems and input hashes to QQ unit outcomes without invoking msolve. Hence pure-moment vanishing forces strictly one-sided rotational support and GMC holds for every two-real-variable cubic. Literal ideal containment without the radical is false already in coefficient degree two.",
+    "canonical_source": "extended-geometry/CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md",
+    "dependencies": [
+      "G2D",
+      "G2E"
+    ],
+    "checker": "scripts/verify_cubic_gaussian_null_cone_closure.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:93941a80f63c30d61ee498169bd18bb207829c08c6d2ee4259ee8560b91b0d72",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "five-to-seven-weight cubic GMC frontier",
+      "literal cubic moment-ideal containment conjecture"
+    ],
+    "supersedes": [
+      "G2E"
+    ],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "CL20",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Minimal coupled Danielewski ansatz obstruction",
+    "scope": "For P=x(x^2+1), Cauchy--Binet gives [x^2]J=3[1]J on span(1,a,c,x,w,ac,ax,aw), excluding the smallest genuinely coupled ansatz. Adjoining all diagonal ambient quadratics a^2,c^2,x^2,w^2,cw gives the stronger lock [x^2]J-[x^4]J+[x^6]J=3[1]J. The normalized five-equation certificate for the cx,xw escape chart omits the three residual target coefficients of x, so that final chart conclusion is only proved on the zero-linear-x slice.",
+    "canonical_source": "extended-geometry/DANIELEWSKI_MINIMAL_COUPLED_ANSATZ.md",
+    "dependencies": [
+      "CL19"
+    ],
+    "checker": "scripts/verify_danielewski_minimal_coupled_ansatz.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:fb8c48db78fc60af87a29a35fef01c9b2ed7b165b34a621da084f4a95d1daab9",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "CL24",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Full ambient-quadratic Danielewski obstruction",
+    "scope": "For P=x(x^2+1), every ambient-quadratic candidate normalizes to (a,c,w) while retaining three residual coefficients of x=bc. The corrected determinant ledger has 33 coefficients; three exact linear eliminations leave 30 variables and 89 equations. Column-major exact modular reconstruction over Q gives the reduced Groebner basis {1}, closing the full ambient-quadratic coefficient scheme in characteristic zero.",
+    "canonical_source": "extended-geometry/DANIELEWSKI_FULL_QUADRATIC_OBSTRUCTION.md",
+    "dependencies": [
+      "CL21",
+      "CL22",
+      "CL23"
+    ],
+    "checker": "scripts/verify_danielewski_full_quadratic_obstruction.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:86576c4f012fd0bfb9d0b6d15b2645052693e3e812b98e00703a710392d4e9a4",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the zero-linear-x quadratic slice certificate"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "CL25",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "All-degree Danielewski contraction audit",
+    "scope": "Any coupled solution on A^1 times {cw=x(x^2+1)} composes with the canonical A^3 open immersion to give a noninvertible three-dimensional Keller map. The corrected quadratic ideal is exactly unit over Q. Correct cubic normalization leaves 90 coefficients and the de Rham compiler gives 11 nonconstant flux equations. An explicit normalized cubic family satisfies the leading-face collapse and the complete compiled flux identity while failing J=1 pointwise, so those two gates alone cannot prove the all-degree obstruction. The two boundary roots have equal P'=-2, and one-boundary poles of the leading rational pencil are genuine.",
+    "canonical_source": "extended-geometry/DANIELEWSKI_ALL_DEGREE_OBSTRUCTION_AUDIT.md",
+    "dependencies": [
+      "CL22",
+      "CL23",
+      "CL24"
+    ],
+    "checker": "scripts/verify_danielewski_cubic_frontier.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99824a7308a0990bcbeae650e71e5989ff8821150960241e5c1b0c827dcf0617",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  }
+]

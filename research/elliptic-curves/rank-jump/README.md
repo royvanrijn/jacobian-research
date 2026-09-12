@@ -13,9 +13,24 @@ retain the independent inherited8/strict10 ideal images, the12–14 relative
 ideal dimensions, both obstructed seed norm equations, and seven completed
 local control anatomies. Full class/Selmer bounds remain open.
 
-The earlier [constructed two-direction ideal-class block with exact rational lifts](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md)
-remains the positive prospective class-construction calibration; its solubility
-test is retrospective. Earlier exclusion and carrier evidence is retained below.
+The [blind recovery experiment](BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md)
+now solves both covers of the earlier
+[constructed two-direction ideal-class block](CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md)
+without a point oracle. Exact transport and a fresh generic16-plus2 independence
+proof pass; ordinary V3 also supplies both lifts from its newly recovered group.
+The [marked propagation theorem](MARKED_TWO_CLASS_PROPAGATION_2026-09-12.md)
+remains sufficient. Its [carrier branch is closed](CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md):
+182 distinct extensions all miss rational splitting at3/17, and translation
+or pairing cannot repair them. The specific
+[continued column-6 word has only finitely many Selmer specializations](FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md).
+The [fresh-constructor transfer preflight](FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md)
+freezes eight rank-blind inputs; all arithmetic remains unrun while complete-cost
+commissioning and its resource rule are prepared. One fresh class-to-point
+success is the immediate milestone. The marked infinite subfamily remains open.
+Earlier evidence is retained below.
+The [closure evidence archive](../../artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/evidence.zip)
+and [member manifest](../../artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/evidence-manifest.json)
+freeze the final diagnostic and the full-dependency compatibility check.
 
 - [J7–J10: adding independent blocks, radical partners, and certified rank exclusions](INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md)
 - [Current theorem gates and search priorities](SEARCH_THEOREM_GATES_V2.json)

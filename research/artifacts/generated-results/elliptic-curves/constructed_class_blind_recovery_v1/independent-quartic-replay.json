@@ -1,0 +1,26 @@
+{
+  "bindings": {
+    "artifacts/local/elliptic-curves/constructed-class-blind-cover-v1/cover-worker-witness.json": "ec32c922f3670e91fb50e6b63aea7ce43e3eef73da8eea618548b28f6fbcd823",
+    "artifacts/local/elliptic-curves/constructed-class-blind-cover-v1/quartic-c6-b1000.json": "3aca36ba1737f09724284c016e505cef9f6f47eb3f7b09faaf3eb1660a3772ec",
+    "artifacts/local/elliptic-curves/constructed-class-blind-cover-v1/quartic-c7-b1000.json": "8e1203491e7ab2febe19d980e4ded487a39b5b9b3e8ae83629c7f013f0ce0df8",
+    "elliptic-curves/rank-jump/replay_constructed_class_quartic.py": "66fec06d0e0c4887a62a9e6e545323b1a8f8b27c954ddd457d456c6238930cfe",
+    "elliptic-curves/rank-jump/verify_constructed_class_blind.py": "f19adb65f37586ac04bdeb482fab01a1002d513e58b352a2970e8eb74d06ff02"
+  },
+  "boundary": "Independent Fraction polynomial arithmetic checks the full conic parametrisation, degree-two transformation, square hit and map to the reduced degree-four cover. Original-cover transport is checked separately.",
+  "cases": [
+    {
+      "bounded_height": 1000,
+      "column": 6,
+      "quartic_parameter": "1/2",
+      "status": "PASS_FULL_QUARTIC_TRANSPORT"
+    },
+    {
+      "bounded_height": 1000,
+      "column": 7,
+      "quartic_parameter": "3/10",
+      "status": "PASS_FULL_QUARTIC_TRANSPORT"
+    }
+  ],
+  "status": "PASS",
+  "wall_seconds": 0.0017545789596624672
+}

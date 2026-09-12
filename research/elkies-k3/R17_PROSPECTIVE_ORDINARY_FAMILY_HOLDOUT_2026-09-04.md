@@ -5,6 +5,13 @@
 
 ## Status
 
+This 1,536-row commitment remains a separate unopened whole-family experiment.
+The retained manifest has null features and outcomes on every row. Its
+execution protocol is a proposal, not a record of completed searches or
+authorization to launch them during repository cleanup. The separate
+[2,560-row CRT experiment](R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md)
+already completed its first bounded protocol; do not conflate their denominators.
+
 Two corrections are now pinned.
 
 First, the 69 recognized ICARM fibres are a public-success endpoint, not a
@@ -99,6 +106,11 @@ ideas developed before this commitment; that residual limitation must remain
 visible in any later predictor report.
 
 ## Replay
+
+The first commands reconstruct section bases and equations; they are not
+needed to inspect this frozen commitment. The final builder `--check`
+reconstructs the deterministic parameter commitment without point searches.
+Choose an explicitly needed stage and reuse the existing transport certificates.
 
 ```sh
 sage -python elkies-k3/scripts/plan_r17_norm12_direct_section_basis.sage \

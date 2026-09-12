@@ -16,6 +16,15 @@ thirteen probes have rank11, not13. The component identities and the separate
 single-fibre rank13 proofs mentioned above remain unaffected. See the
 [parent-expansion and label audit](PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md).
 
+The active replay is `verify_mestre_parent_and_label_audits.sage --check`;
+the old rank-13 entry point now rejects execution and import-based `replay()`
+calls. Its original source and certificate remain historical evidence.
+The [portable coherent section data](../../artifacts/generated-results/elliptic-curves/mestre_component_coherent_sections_v1.json)
+and [adapter](../cas/mestre_parent_adapter.py) preserve labels and ordinate
+branches for reuse. The remaining obligation for `EC-MF2S13` is an exact
+independence or relation argument for those coherent sections; rank13 is
+unproved by the rejected matrix. New specializations need their own checks.
+
 ## Affine normalization
 
 Fix two labelled roots at `0` and `1` and write
@@ -131,10 +140,11 @@ equations lifts to a rational ordinate only when `D` is a rational square;
 the equation `w^2=D` must therefore remain part of any arithmetic search.
 
 For two extra affine sections, introduce two pairs `(x0_j,x1_j)` and impose a
-copy of the three residual equations for each, sharing `M` and `D`.  Away from
+copy of the three residual equations for each, sharing `M` and `D`. Away from
 coincident sections and the excluded leading locus, the naive dimension count
-is one: eight variables and seven equations.  No explicit two-extra
-positive-dimensional component is asserted here.
+is one: eight variables and seven equations. This count alone proves no
+component. The later sections below construct explicit components and show
+why component dimension does not establish a new Mordell--Weil direction.
 
 ## Explicit rational two-dimensional solution locus
 
@@ -615,7 +625,7 @@ where both signed sections pass through the finite point
 it is not the full section intersection number and says nothing about an
 infinite-fibre contribution, reducible fibres, or a Shioda correction.
 
-The rank audit currently gives a negative gate, not a promotion.  At
+The historical rank audit gave a negative gate. At
 `r=8`, `T=3`, the twelve visible Jacobian images have combined exact mod-3
 finite-reduction rank `9` using the displayed primes through `139`; adjoining
 both affine points leaves the same rank, the same nine pivot indices, and the
@@ -623,8 +633,9 @@ same independent-subset hash.  This says only that these two points add no
 direction to that recorded finite quotient span.  It is not a Mordell--Weil
 relation, saturation calculation, intersection computation at infinity, or
 Shioda Gram-matrix calculation.  In particular, this new component does
-**not** yet prove generic rank at least `14`, and its height/intersection and
-independence work remains open.
+**not** prove generic rank at least `14`. The later exact generic relations
+below close the selected pair as a source of extra directions; they do not
+compute its full heights, intersections or saturation.
 
 The first two-parameter quotient screen is also a non-promotion result.  For
 every reduced `r` and `T` of numerator/denominator height at most five on the
@@ -1192,7 +1203,23 @@ the earlier first-section-only artifact remains a smaller replay checkpoint.
 
 ## Reproduction
 
-From the repository root:
+For the corrected `EC-MF2S13` result, run from `research/`:
+
+```sh
+sage -python elliptic-curves/cas/verify_mestre_parent_and_label_audits.sage --check
+sage -python elliptic-curves/cas/export_mestre_coherent_sections.sage --check
+```
+
+The first command replays the complete finite groups and compares the exact
+mathematical payload with the retained result. Two explicitly archived source
+versions account for disabling the rejected entry point and adding that
+comparison; stored certificate hashes are not rewritten. The second checks
+the portable rational-function export. Neither runs a parameter search.
+
+The older construction and search commands below are historical reference,
+also run from `research/` after environment setup. They include symbolic
+elimination and finite searches and are not cleanup checks. Prefer the
+retained checkpoints and current theorem gates before choosing a replay.
 
 ```bash
 Singular -q archive/elliptic-curves/cas/mestre_affine_section_elimination.sing

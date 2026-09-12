@@ -9,7 +9,7 @@ theorems.  In particular:
 - contact-partition and exceptional-seed drafts were superseded by the
   coincident-root rebuild and contact-atom theorem; and
 - the unique omitted-value proof was promoted to the active
-  [canonical lemma](../../extended-geometry/UNIQUE_OMITTED_VALUE.md); and
+  [canonical lemma](../non-elliptic/extended-geometry/UNIQUE_OMITTED_VALUE.md); and
 - the simple/repeated deformation notes were superseded by the general
   omitted-value and canonical-family results.
 

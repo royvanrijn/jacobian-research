@@ -1,5 +1,10 @@
 # A constructed class-group block with two rational lifts
 
+The subsequent [blind recovery and V3 comparison](BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md)
+recovers rational points on both frozen covers without reading the known point
+oracle. This report retains the original class-block proof and its explicitly
+retrospective first solubility evaluation.
+
 The two equation/generic-only strict classes on MW16-05 at `t=3/17` now
 have a certified arithmetic interpretation and rational lifts. Their
 square-root ideals add **two ordinary ideal-class2-torsion directions**

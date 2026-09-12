@@ -28,7 +28,7 @@ identities and type (3) in selected degrees.
 - Dean Cureton's separately authored Lean 4 project formally proves the
   determinant and collision, a determinant-one rescaling over every field,
   and the complex specialization. `make verify-lean-foundational` reproduces the
-  pinned external build; see the [Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md).
+  pinned external build; see the [Lean foundational-map audit](../non-elliptic/verified/LEAN_FOUNDATIONAL_MAP.md).
 - The dependency-free verifier uses standard-library rational arithmetic and
   its own sparse polynomial representation.
 - The primitive cubic, rational reconstruction, and discriminant identity are

@@ -9,10 +9,10 @@ They are retained for derivations and historical reference, but they are not
 the active reading path and should not be cited as separate headline claims.
 The consolidated programme is:
 
-- [construction](../../cancellation/CONSTRUCTION.md);
-- [arithmetic](../../cancellation/ARITHMETIC.md);
-- [boundary geometry](../../cancellation/BOUNDARY_GEOMETRY.md);
-- [rigidity within the current ansatz](../../cancellation/RIGIDITY.md);
-- [research roadmap](../../cancellation/RESEARCH_ROADMAP.md).
+- [construction](../non-elliptic/cancellation/CONSTRUCTION.md);
+- [arithmetic](../non-elliptic/cancellation/ARITHMETIC.md);
+- [boundary geometry](../non-elliptic/cancellation/BOUNDARY_GEOMETRY.md);
+- [rigidity within the current ansatz](../non-elliptic/cancellation/RIGIDITY.md);
+- [research roadmap](../non-elliptic/cancellation/RESEARCH_ROADMAP.md).
 
 Verification scripts remain active in the top-level `scripts/` directory.

@@ -161,7 +161,7 @@ and document the exact command and whole-file SHA-256.
   unused slots switch to the existing quotient-adaptive policy.  The total cap
   remains 344 charts and the leaderboard remains exact quotient gain.  The arm
   is frozen but unrun; no parameter census is repeated.
-<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE 39ac93b60152bf88 -->
+<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE e5320f1f3bf33148 -->
 
 <!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
 
@@ -351,7 +351,7 @@ local cache so it cannot become a competing mathematical-status authority.
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
 <!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
@@ -3190,7 +3190,7 @@ artifact.
   Replay with `scripts/verify_binary_gvc_finite_certificate.py`; the default
   requires byte-identical output. The universal classification and the
   degree-only cutoff are written proofs in
-  [`BINARY_GVC_FINITE_CERTIFICATE.md`](../../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md),
+  [`BINARY_GVC_FINITE_CERTIFICATE.md`](../../archive/non-elliptic/extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md),
   not conclusions inferred from this finite artifact.
 
 - `binary-gvc-optimal-cutoff-v1.json` records the exact support-gap identities,
@@ -3579,7 +3579,7 @@ binary GVC without using these bounded searches.
   `419c970e322b16e1bfb6403dc36b1a38b95eb9a52403def6b7ee067c42fe8ddc`.
   The artifact is an exact incomplete-obligation report, not a global
   completion or an exclusion of `(75,125)`.
-  <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+  <!-- status-consumer: PF2GA1 7a20aae5ef69e2f1 -->
   <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
 - `jc2_f2_75_125_carrier_wronskian.json` records the exact continuation at
   the generic source carrier.  It proves that seven pre-target coefficients
@@ -3626,7 +3626,7 @@ binary GVC without using these bounded searches.
   `381854d84a0377a14745280c3b74ac5376f78fa7a07906eac24a826fd566daed`.
   This presentation does not itself impose the open `a!=0` localization and
   is not an F2 exclusion.
-  <!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+  <!-- status-consumer: PF2NF1 acf301f85df9017a -->
 - `jc2_f2_75_125_modular_probe.json` records the first localized
   good-reduction tangent audit of that circuit.  Over `F_31`, with `rho=14`
   and `y=3`, it adds `a*localize_a_inverse-1`, obtains full Jacobian rank
@@ -3934,14 +3934,14 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   records the determinant-one normalization, the exact positive-sign
   left-kernel certificate, and a compatible negative-sign finite jet.
   Replay with `scripts/verify_hc4_motion_frame_transport.py`. The
-  [canonical audit](../../HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) explains why
+  [canonical audit](../../archive/non-elliptic/HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) explains why
   the earlier augmented-system certificate does not close the full branch.
 
 - [hc4-negative-motion-polynomial-obstruction-v1.json](hc4-negative-motion-polynomial-obstruction-v1.json)
   records the literal curvature certificates, affine-leaf connection, and
   polynomial ODE algebra for the replacement negative-sign proof. Replay
   with `scripts/verify_hc4_negative_motion_polynomial_obstruction.py`; its
-  [canonical note](../../HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+  [canonical note](../../archive/non-elliptic/HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
   supplies the global polynomiality step that a finite jet cannot test.
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->
@@ -3954,6 +3954,6 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   sharp birational `r=7` target. Replay with
   `.venv/bin/python scripts/verify_f2_degree_6_10_gap.py`; optional
   `--regenerate-certificate` reconstructs the multipliers with Singular.
-  The [canonical proof](../../plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
+  The [canonical proof](../../archive/non-elliptic/plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
   explains why the gap bound excludes normal `r=9`. Whole-file SHA-256:
   `5a0fde640d7b38210c7cb6a5512f8a60dcda1e498464ead8f33476c4a67c2b8e`.

@@ -1,0 +1,99 @@
+{
+  "bounded_sieve": [
+    {
+      "density_gate": "NOT_SERIOUS_RELATION_DENSITY",
+      "global_class_2rank_estimate": null,
+      "matrix_deficiency": 1905,
+      "median_norm_numerator_bits_after": 122,
+      "median_norm_numerator_bits_before": 140,
+      "new_relation_pairs": [],
+      "noncanonical_relations": 0,
+      "parameter": "921/653",
+      "primitive_candidates": 524289,
+      "status": "PASS_EXACT_BOUNDED_SKEW_SIEVE_NOT_CLASS_RANK"
+    },
+    {
+      "density_gate": "NOT_SERIOUS_RELATION_DENSITY",
+      "global_class_2rank_estimate": null,
+      "matrix_deficiency": 1890,
+      "median_norm_numerator_bits_after": 131,
+      "median_norm_numerator_bits_before": 135,
+      "new_relation_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "noncanonical_relations": 1,
+      "parameter": "110314/102227",
+      "primitive_candidates": 325173,
+      "status": "PASS_EXACT_BOUNDED_SKEW_SIEVE_NOT_CLASS_RANK"
+    }
+  ],
+  "comparison": [
+    {
+      "best_genus_each": [
+        1
+      ],
+      "distinct_fixed_base_covers": 504,
+      "fibre": "302",
+      "genus_histogram": {
+        "1": 14,
+        "3": 420,
+        "5": 70
+      },
+      "global_minimum_genus": "UNKNOWN",
+      "known_extra_directions": 14,
+      "minimum_common_cover_degree_for_selected_extensions": "16384",
+      "minimum_degree_each": 2,
+      "pairwise_disjoint_selected_branch_divisors": true,
+      "parameter": "0",
+      "rank_lower_bound": 31,
+      "same_generic_trace_in_pencil": true,
+      "selected_carrier_pencils": 1,
+      "selected_distinct_carriers": 14,
+      "selected_radical_squareclass_rank": 14,
+      "shared_target_cover_count": 0,
+      "tested_covers": 504
+    },
+    {
+      "best_genus_each": [
+        1
+      ],
+      "distinct_fixed_base_covers": 396,
+      "fibre": "11952",
+      "genus_histogram": {
+        "1": 11,
+        "3": 110,
+        "5": 231,
+        "7": 44
+      },
+      "global_minimum_genus": "UNKNOWN",
+      "known_extra_directions": 11,
+      "minimum_common_cover_degree_for_selected_extensions": "2048",
+      "minimum_degree_each": 2,
+      "pairwise_disjoint_selected_branch_divisors": true,
+      "parameter": "110314/102227",
+      "rank_lower_bound": 28,
+      "same_generic_trace_in_pencil": true,
+      "selected_carrier_pencils": 1,
+      "selected_distinct_carriers": 11,
+      "selected_radical_squareclass_rank": 11,
+      "shared_target_cover_count": 0,
+      "tested_covers": 396
+    }
+  ],
+  "global_minimum_genus": "UNKNOWN",
+  "interpretation": "Similar existing genus-one pencils, but independent selected quadratic covers. No common-cover decomposition of the rank jumps is established.",
+  "no_new_point_searches": true,
+  "principal_control": "11952 @ 110314/102227, rank >=28",
+  "secondary_control": "11952 @ 921/653, rank >=25",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/branch-analysis.json": "dc7178b845b619309d9b48c9829fac42e5440dde637380315acce134d83b0b88",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/geometry.json": "3c6923aaf0db30346fded602e3a239da264c4179d17e2dcc61992ca0efe4ca41",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/verified.json": "ef3d608070c05390140dd375ac5dd9ca978a478b0c2f3aed8c2d11b45de672d5",
+    "artifacts/generated-results/elliptic-curves/two_class_skew_sieve_v1/verified.json": "b043f1baae37374613ffb49be49d4016e48bf60ec31cd1e79551d06d107dc28a",
+    "elliptic-curves/cas/report_principal28_ancestry.py": "7a045672b198a346b4127ffa45cf01c7a1a2948a252de0d982baf52e6c128744"
+  },
+  "status": "PASS_PRINCIPAL28_BOUNDED_COMPARISON"
+}

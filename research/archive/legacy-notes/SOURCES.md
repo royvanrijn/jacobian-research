@@ -28,7 +28,7 @@ materials that have not yet been located.
   Two-Dimensional Jacobian Problem*, version 1.0.1, 21 July 2026: manuscript,
   exact coefficient ideals, explicit membership/unit certificates, and replay
   code.  Exact archive/PDF hashes and the version comparison are in the
-  [plane-JC provenance record](../../plane-jc/PROVENANCE.md).
+  [plane-JC provenance record](../non-elliptic/plane-jc/PROVENANCE.md).
 - [Jorge Alberto Guccione, Juan José Guccione, Rodrigo Horruitiner, and
   Christian Valqui, *Increasing the degree of a possible counterexample to the
   Jacobian Conjecture from 100 to 108*](https://arxiv.org/abs/2204.14178):
@@ -71,12 +71,12 @@ materials that have not yet been located.
   public compilation of the expanded `F4a`, `F4b`, and `F4c` maps, their
   Island A/B/C labels, constant-Jacobian checks, and rational collision
   certificates.  The repository's resolvent and canonical-boundary analysis
-  is recorded separately in the [quartic-islands audit](../../extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
+  is recorded separately in the [quartic-islands audit](../non-elliptic/extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
 - [Dean Cureton, `deancureton/jacobian`](https://github.com/deancureton/jacobian),
   pinned here at commit
   [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88):
   external Lean 4 formalization of the determinant, collisions, unit-Jacobian
-  counterexample, and complex specialization. See [Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md) for
+  counterexample, and complex specialization. See [Lean foundational-map audit](../non-elliptic/verified/LEAN_FOUNDATIONAL_MAP.md) for
   theorem scope, reproduction, attribution, and the no-license source boundary.
 - [Macaulay2 `CoincidentRootLoci` package](https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/CoincidentRootLoci/html/toc.html):
   classical coincident-root ideals, parameterizations, tangent spaces, and

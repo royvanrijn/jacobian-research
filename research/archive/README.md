@@ -1,14 +1,22 @@
 # Archive
 
-This directory preserves superseded derivations, programme-level notes, checklists, exploratory scans, intermediate write-ups, and historical navigation states. Archived material is provenance, not a current theorem or task source.
+This directory preserves superseded derivations, programme-level notes, checklists, exploratory scans, intermediate write-ups, and historical navigation states. Superseded material is historical provenance. Archived programmes retain their canonical evidence through the live claim ledger; they are outside the active work queue.
 
 For exact current status use [`../MATH_STATUS.json`](../MATH_STATUS.json); for replay use [`../REPRODUCE.md`](../REPRODUCE.md).
 
+The [12 September2026 cleanup](repository-cleanup-2026-09-12/README.md)
+preserves expanded READMEs, the old replay guide and dated review worklists
+with hashes. Current methods are extracted into the
+[algorithmic memory](../knowledge/ALGORITHMS.md); the
+[failed-route index](../knowledge/FAILED_ROUTES.md) is generated from the authority.
+
 ## 2026-09-03 repository snapshot
 
-[`STREAMLINING_2026-09-03.md`](STREAMLINING_2026-09-03.md) records the navigation cleanup and pins the complete pre-cleanup tree at commit `f47f1a1872881680d9296170f3f9619bcc943c29`. Its old compute policy is historical; the programmes are active again.
+[`STREAMLINING_2026-09-03.md`](STREAMLINING_2026-09-03.md) records the navigation cleanup and pins the complete pre-cleanup tree at commit `f47f1a1872881680d9296170f3f9619bcc943c29`. Its old compute policy is historical. The current active scope is elliptic curves and supporting K3 work.
 
 ## Main archive areas
+
+- [Other projects](non-elliptic/README.md) — complete archived Keller, geometry, Hessian, plane JC, formal and paper programmes, with byte-preserved code and proofs.
 
 - [`legacy-notes/`](legacy-notes/) — first archived tranche.
 - [`transfer-program/`](transfer-program/) — abandoned transfer programme and scoped obstructions.
@@ -28,4 +36,5 @@ notes, the dated status-hash maintenance report, and the anonymous-curve search
 launcher. Only relative links in the degree-seven note changed; the other
 three files were moved byte for byte.
 
-Generated expressions, exact verification logs, and certificates remain under top-level `artifacts/`; scripts may remain outside the archive when they are still useful regressions.
+Generated expressions and certificates remain under `research/artifacts/` from
+the repository root; scripts may remain outside the archive as useful regressions.

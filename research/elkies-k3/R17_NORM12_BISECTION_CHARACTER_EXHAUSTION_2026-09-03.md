@@ -115,8 +115,12 @@ Exact norm-ten enumeration gives 39,147 section-nonnegative translation
 classes in the alternate-Q80 frame.  The priority compiler selects a cheap
 equation representative in each class.  The equation compiler then constructs
 the cover and verifies the lifted section for every class, using a reciprocal
-chart when required.  Merging is accepted only after matching the complete
-priority table by orbit mask and frame vector.
+chart when required. The chunk merger checks source-specific schemas and
+statuses, contiguous intervals, the declared final count and uniqueness of
+labels and masks. The subsequent squareclass checker separately matches the
+complete lattice table by orbit mask and frame vector. Both stages are needed:
+the merger's count and `complete_translation_orbit_coverage` flag alone do not
+verify that attachment.
 
 The merged equation artifact has SHA-256
 `fbf979bfe7d92528405c62330a80dbfd7742dc27c41a0426dcd4014f6865c8ce`.

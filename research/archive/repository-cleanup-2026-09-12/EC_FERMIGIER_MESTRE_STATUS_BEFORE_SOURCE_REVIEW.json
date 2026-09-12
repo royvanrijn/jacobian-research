@@ -1,0 +1,63 @@
+[
+  {
+    "id": "EC-FERM1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Fermigier--Mestre canonical family and E22 model reproduction",
+    "scope": "The fixed-root product construction with roots 0,55,314,378,1007,1036 is replayed exactly: the square remainder is quartic and twelve immediately visible affine points are checked. Binary-quartic invariants give a canonical Weierstrass family in the adapter coordinate u=s/2 with one primitive even degree-twenty discriminant factor; the apparent u^12 and 202464^12 raw factors are nonminimal coordinate artifacts. At u=19754/39 the canonical model and the doubled literal shift s=39508/39 minimize to Fermigier's displayed E22 equation and exact conductor. However the paper prints q=p6(x-t)p6(x+t) and t=19754/39; that literal shift gives a different j-invariant, model, and conductor. The factor-two discrepancy remains unresolved. Point reconstruction and rank lower bounds are separated into EC-FRANK1.",
+    "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+    "dependencies": [
+      "external: Fermigier, Acta Arithmetica 82 (1997), 359--363",
+      "external: PARI/GP 2.15.4 ellfromeqn, minimal-model, and conductor routines"
+    ],
+    "checker": "elliptic-curves/scripts/verify_benchmarks.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:a21b0150987f39369bcc04ac6345b4a80f72dd5d59695b1efafc340806fdad58",
+    "software_lock": [
+      ".python-version"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "reference"
+  },
+  {
+    "id": "EC-MF2S13",
+    "kind": "theorem",
+    "state": "partial",
+    "title": "Fermigier two-section component: coherent lower bound11; former rank13 certificate rejected",
+    "scope": "The exact rational two-section component v=(u^2+u+2)/u remains valid. Its former thirteen-probe generic independence argument mixed section columns: SixRootMestreConstruction sorted roots independently at each outer parameter, and both extra ordinates were chosen as positive rational square roots independently. These do not specialize one fixed list of rational-function sections. Exact global ordinate-square identities and a fixed source-root permutation restore coherent columns; the same13 historical probes then have stacked finite rank11 rather than13. Independent full finite-group enumeration and quotient-by-triples replay confirm both matrix ranks and the unchanged good-prime group order28 at p=19 excluding rational3-torsion. The corrected coherent probes certify a generic lower bound11. The former rank13 artifact/source remain preserved as rejected evidence; neither generic rank13 nor an independent second extra direction is proved by them. This is not a generic-rank upper bound, dependence theorem, saturation statement or change to unrelated single-specialization rank13 proofs.",
+    "canonical_source": "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+    "dependencies": [
+      "external: smooth good specialization of prime-to-characteristic torsion",
+      "external: finite-reduction and infinite-descent independence criterion"
+    ],
+    "checker": "elliptic-curves/cas/verify_mestre_parent_and_label_audits.sage",
+    "proof_type": "exact_symbolic",
+    "independent_replay": true,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:83720b2c122a0d715915a22ec4e1dd1811139b00f80ffada15df5dffb19aed63",
+    "software_lock": [
+      ".python-version",
+      "artifacts/generated-results/elliptic-curves/mestre_component_label_audit_v1.json",
+      "artifacts/generated-results/elliptic-curves/mestre_parent_and_label_independent_v1.json",
+      "artifacts/generated-results/elliptic-curves/mestre_component_coherent_sections_v1.json"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  }
+]

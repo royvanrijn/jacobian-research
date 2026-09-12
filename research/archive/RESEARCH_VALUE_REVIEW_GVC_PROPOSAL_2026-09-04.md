@@ -2,7 +2,7 @@
 
 This is the original proposal, retained as development history. The current
 result is `GVC2SC` in [MATH_STATUS.json](../MATH_STATUS.json), with its
-[canonical proof](../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md).
+[canonical proof](non-elliptic/extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md).
 It was strengthened and incorporated into the GVC manuscript on 5 September.
 
 ## A concrete GVC consequence to extract

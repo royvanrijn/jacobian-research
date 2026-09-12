@@ -61,7 +61,7 @@ three.
 There are three independent certificates for this finite calculation: two
 local implementations and Dean Cureton's separately authored pinned Lean 4
 formalization.  The Lean scope and attribution are recorded in
-[LEAN_FOUNDATIONAL_MAP.md](../../verified/LEAN_FOUNDATIONAL_MAP.md).
+[LEAN_FOUNDATIONAL_MAP.md](../non-elliptic/verified/LEAN_FOUNDATIONAL_MAP.md).
 
 A complementary positive covariance test is
 [FOUNDATIONAL_INVARIANCE_REGRESSION.md](FOUNDATIONAL_INVARIANCE_REGRESSION.md).  It applies

@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from research_programmes import is_active, validate_programme, programme_path_allowed
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,6 +22,7 @@ REQUIRED_FIELDS = {
     "consumers", "invalidates_assumptions", "replaced_by", "priority",
 }
 OPTIONAL_FIELDS = {
+    "programme_status",
     "external_formal_certificates",
     "forbidden_attack_classes",
     "forbidden_attack_review",
@@ -64,18 +66,6 @@ ACTIVE_OPEN = {
     "OP-EC-NEXT",
     "OP-EC-RANK-JUMP-MECHANISM-20260910",
 }
-GMC2_RETAINED_IDS = {
-    "G2F",
-    "G2C",
-    "G2D",
-    "G2E",
-    "G2N",
-    "G2Q",
-    "G2S",
-    "G2R",
-}
-
-
 def load_index() -> dict:
     return json.loads(INDEX_PATH.read_text())
 
@@ -128,6 +118,7 @@ def validate_index(index: dict) -> None:
             f"{item_id}: unexpected schema"
         )
         assert item["id"] and item["title"] and item["scope"]
+        validate_programme(item)
         assert item["kind"] in KINDS, f"{item_id}: invalid kind"
         assert item["state"] in STATES, f"{item_id}: invalid state"
         assert item["proof_type"] in PROOF_TYPES, f"{item_id}: invalid proof type"
@@ -241,7 +232,7 @@ def validate_index(index: dict) -> None:
                 assert target in known, f"{item_id}: unresolved {field} target {target}"
                 assert target != item_id, f"{item_id}: self-referential {field} edge"
         canonical_source = Path(item["canonical_source"])
-        assert not canonical_source.parts or canonical_source.parts[0] != "archive", (
+        assert programme_path_allowed(item["canonical_source"], item), (
             f"{item_id}: archived note cannot be a canonical source"
         )
         assert (ROOT / canonical_source).is_file(), (
@@ -250,7 +241,7 @@ def validate_index(index: dict) -> None:
         checker = item["checker"]
         if checker is not None:
             checker_path = Path(checker)
-            assert not checker_path.parts or checker_path.parts[0] != "archive", (
+            assert programme_path_allowed(checker, item), (
                 f"{item_id}: archived script cannot be an active checker"
             )
         assert checker is None or (ROOT / checker).is_file(), (
@@ -395,128 +386,97 @@ def validate_index(index: dict) -> None:
     assert active == ACTIVE_OPEN, "the primary continuation queue changed"
 
 
-def _link(label: str, path: str) -> str:
-    return f"[{label}]({path})"
-
-
-def _items(values: list[str]) -> str:
-    if not values:
-        return "—"
-    return ", ".join(f"`{v}`" if not v.startswith("external: ") else v for v in values)
-
-
-def _evidence(item: dict) -> str:
-    parts = [item["proof_type"]]
-    if item["independent_replay"]:
-        parts.append("independent replay")
-    if item["formal_verification"]:
-        parts.append("formal verification")
-    if item["external_review"]:
-        parts.append("external review")
-    certificates = item.get("external_formal_certificates", [])
-    if certificates:
-        links = ", ".join(
-            _link(certificate["name"], certificate["url"])
-            for certificate in certificates
-        )
-        parts.append(f"external formal certificates: {links}")
-    if item["artifact_hash"]:
-        parts.append(f"`{item['artifact_hash'][:19]}…`")
-    if item["software_lock"]:
-        parts.append("locks: " + ", ".join(f"`{x}`" for x in item["software_lock"]))
-    updates = []
-    for field in (
-        "supersedes",
-        "closes_problems",
-        "narrows_problems",
-        "consumers",
-        "invalidates_assumptions",
-    ):
-        if item[field]:
-            updates.append(f"{field.replace('_', ' ')} {_items(item[field])}")
-    if updates:
-        parts.append("updates: " + "; ".join(updates))
-    return "; ".join(parts)
-
-
-def _table(lines: list[str], entries: list[dict], *, replacements: bool = False) -> None:
-    tail = " | Replaced by" if replacements else ""
+def _compact_table(lines: list[str], entries: list[dict]) -> None:
     lines.extend([
-        f"| ID | Result | Scope | Source | Dependencies | Checker | Evidence{tail} |",
-        f"|---|---|---|---|---|---|---{'|---' if replacements else ''}|",
+        "| ID | State | Result / canonical source |",
+        "|---|---|---|",
     ])
     for item in entries:
-        source = _link("source", item["canonical_source"])
-        checker = _link("checker", item["checker"]) if item["checker"] else "—"
-        extra = f" | {_items(item['replaced_by'])}" if replacements else ""
+        title = item["title"].replace("|", "\\|").replace("\n", " ")
+        state = item["state"]
+        if item["replaced_by"]:
+            state += "; replaced by " + ", ".join(item["replaced_by"])
         lines.append(
-            f"| {item['id']} | {item['title']} | {item['scope']} | {source} | "
-            f"{_items(item['dependencies'])} | {checker} | {_evidence(item)}{extra} |"
+            f"| `{item['id']}` | {state} | "
+            f"[{title}]({item['canonical_source']}) |"
         )
     lines.append("")
 
 
-def _forbidden_attack_sections(lines: list[str], entries: list[dict]) -> None:
-    for item in entries:
-        attacks = item.get("forbidden_attack_classes", [])
-        if not attacks:
-            continue
-        lines.extend([
-            f"### {item['id']}: Forbidden attack classes",
-            "",
-            "The following routes are obsolete for this programme. The cited results "
-            "either remove the proposed defect or provide explicit countermodels:",
-            "",
-        ])
-        for attack in attacks:
-            witnesses = _items(attack["witnesses"])
-            lines.append(
-                f"- **{attack['attack']}.** {attack['reason']} "
-                f"Witnesses: {witnesses}."
-            )
-        lines.append("")
-
-
 def render(index: dict) -> str:
-    by_id = {x["id"]: x for x in index["entries"]}
-    entries = index["entries"]
-    gmc2_retained = [x for x in entries if x["id"] in GMC2_RETAINED_IDS]
+    from collections import Counter
+    from research import AREAS, area
+
+    entries = [e for e in index["entries"] if is_active(e)]
+    archived_count = len(index["entries"]) - len(entries)
+    by_id = {e["id"]: e for e in entries}
+    counts = Counter(e["state"] for e in entries)
     lines = [
-        "# Mathematical status",
+        "# Elliptic-curve mathematical status",
         "",
         "<!-- Generated by scripts/render_status.py from MATH_STATUS.json; do not edit. -->",
         "",
-        "[`MATH_STATUS.json`](MATH_STATUS.json) is the sole status authority. Canonical "
-        "sources contain the proofs; this page records their scope, dependency role, "
-        "proof classification, and separate assurance signals. The `artifact_hash` field "
-        "pins the checker source, not its generated output; output hashes belong in the "
-        "artifact documentation. A checker establishes reproducibility, not independent "
-        "replay, formal verification, or external review. "
-        "External review includes identified refereeing by a formal-proof archive as well "
-        "as conventional publication review.",
+        "[MATH_STATUS.json](MATH_STATUS.json) is the sole mathematical-status authority. "
+        "This is a compact navigation view. Read a claim's full scope before using it; "
+        "a proved bounded experiment does not become an unrestricted theorem.",
         "",
-        "## Core theorem chain",
+        f"**{len(entries)} claims:** " + ", ".join(f"{counts[state]} {state}" for state in
+            ("proved", "partial", "open", "parked", "archived", "falsified")) + ".",
+        "",
+        "[Complete catalogue](index/README.md) · [Algorithmic lessons](knowledge/ALGORITHMS.md) · "
+        "[Scoped failed routes](knowledge/FAILED_ROUTES.md) · [Replay guide](REPRODUCE.md)",
+        "",
+        f"The active programme is elliptic curves and supporting K3 constructions. "
+        f"[Other programmes](archive/non-elliptic/README.md) retain {archived_count} claims "
+        "in the same authority with `programme_status: archived`; their mathematical states are unchanged.",
+        "",
+        "From the repository root, read full scope, proof type, assurance, checkers, "
+        "software locks, dependencies and replacements without executing anything:",
+        "",
+        "```sh",
+        "python3 research/scripts/research.py show CLAIM-ID",
+        "```",
+        "",
+        "The `artifact_hash` field pins checker source, not its generated output. "
+        "Independent replay, formal verification and external review are separate "
+        "recorded assurances. `parked` includes resolved and deferred problems; "
+        "consult its scope and replacement edges.",
         "",
     ]
-    _table(lines, [by_id[i] for i in CORE_ORDER])
-
-    sections = [
-        ("Primary theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "primary"], False),
-        ("Falsified claims", [x for x in entries if x["state"] == "falsified"], True),
-        ("Audited high-risk claims", [x for x in entries if x["kind"] == "theorem" and x["state"] == "partial" and x["priority"] == "reference"], False),
-        ("Completed reference theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "reference"], False),
-        ("Superseded proof route / retained refinements", gmc2_retained, False),
-        ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"} and x["id"] not in GMC2_RETAINED_IDS], False),
-        ("Examples and regressions", [x for x in entries if x["kind"] == "example" and x["state"] in {"proved", "partial"}], True),
-        ("External reproductions", [x for x in entries if x["kind"] == "reproduction" and x["state"] in {"proved", "partial"}], False),
-        ("Active open problems", [x for x in entries if x["kind"] == "open_problem" and x["state"] == "open"], False),
-        ("Parked problems", [x for x in entries if x["kind"] == "open_problem" and x["state"] == "parked"], False),
-    ]
-    for heading, members, replacements in sections:
+    if any(i in by_id for i in CORE_ORDER):
+        lines.extend(["## Core theorem chain", ""])
+        _compact_table(lines, [by_id[i] for i in CORE_ORDER if i in by_id])
+    for heading, members in [
+        ("Active open problems", [e for e in entries if e["kind"] == "open_problem" and e["state"] == "open"]),
+        ("Parked problems", [e for e in entries if e["kind"] == "open_problem" and e["state"] == "parked"]),
+        ("Falsified claims", [e for e in entries if e["state"] == "falsified"]),
+    ]:
         lines.extend([f"## {heading}", ""])
-        _table(lines, members, replacements=replacements)
-        _forbidden_attack_sections(lines, members)
+        _compact_table(lines, members)
+
+    lines.extend(["## Active research", "", "| Area | Registered claims |", "|---|---:|"])
+    for key, label in AREAS.items():
+        count = sum(area(e["canonical_source"]) == key for e in entries)
+        if not count:
+            continue
+        lines.append(f"| [{label}](index/{key}.md) | {count} |")
+    lines.append("")
+    # Preserve the established section anchors used by existing source notes.
+    sections = [
+        ("Primary theorems", "All primary results, with their recorded state and canonical source,"),
+        ("Audited high-risk claims", "Partial/reference claims retain their proof limitations and"),
+        ("Completed reference theorems", "Completed reference results and their exact scopes"),
+        ("Superseded proof route / retained refinements", "Superseded routes retain their valid refinements and replacement edges; these"),
+        ("Derived corollaries", "Derived results and their dependencies"),
+        ("Examples and regressions", "Finite experiments, examples, archived claims and regression witnesses"),
+        ("External reproductions", "External reproductions and their separate assurance fields"),
+    ]
+    for heading, description in sections:
+        lines.extend([f"## {heading}", "",
+                      f"{description} remain available in the [complete catalogue](index/README.md) "
+                      "and through `research.py show ID`.", ""])
     return "\n".join(lines)
+
 
 
 def main() -> None:

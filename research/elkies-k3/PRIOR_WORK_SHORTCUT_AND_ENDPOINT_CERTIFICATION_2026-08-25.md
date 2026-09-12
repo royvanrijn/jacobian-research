@@ -2,7 +2,17 @@
 
 Date: 2026-08-25.
 
-## Outcome
+## Current outcome
+
+The q8/orbit376 and q12/orbit5867 equation route is complete. The endpoint
+closeout below proves source identity, Picard rank 19, exact MW rank 17 and
+saturation. The original construction instructions are retained as history,
+not a request to rebuild those equations. The optional q1599 child is not
+the stored q207 suffix frame; the q323 component-2 zero is already exact,
+and its surviving optional gate is the correctly marked outgoing q12 horizontal.
+Candidate 5887 was lifted and rejected as that target; see the retained outcome below.
+
+## Historical construction rationale
 
 The historical construction already establishes that the determinant-948
 rank-19 K3 admits a rootless elliptic fibration of Mordell--Weil rank 17 over
@@ -50,8 +60,8 @@ and the explicit genus-two-to-`E8+E7` model comes from
 [A. Kumar, *K3 surfaces associated with curves of genus two*](https://arxiv.org/abs/math/0701669).
 
 These sources validate the overall route architecture but do not identify the
-historical intermediate markings.  They therefore cannot replace the two
-remaining equation lifts unless the missing original data are recovered.
+historical intermediate markings.  They did not replace the intermediate equation lifts; those lifts are now
+closed by the repository certificates below.
 
 ## Minimum construction record for an intermediate edge
 
@@ -131,7 +141,7 @@ finite-field/Hensel strategy natural:
 This is preferable to a fresh unconstrained 17-section nonlinear solve and may
 be preferable to transporting seventeen sections through all remaining edges.
 
-## Current routing instruction
+## Historical routing instruction — completed
 
 The q4/orbit1584 and q4/orbit164 equation edges are now certified exactly as
 described below.  Preserve those results narrowly.  The intended construction
@@ -144,7 +154,7 @@ continuation is:
     --q12/orbit5867--> rootless R17/MW17.
 ```
 
-Until this route fails an exact construction gate:
+At the construction stage, the routing instruction was:
 
 - prioritize q8/orbit376, then the preferred optional q12/orbit5867 equation
   lift; retain q12/orbit4484 as the certified fallback;
@@ -220,9 +230,14 @@ For that equation gate, the q12/orbit5867 polynomial-shell method has been
 reused instead of starting a degree-16 Abel inversion.  The fibre-safe prime
 61 gives a complete signed polynomial `P.O=0` shell of size 602, with 120
 ordinary rank-12 Hensel candidates.  Prime 31 is explicitly rejected because
-the two marked `I3` valuations become `(4,4)`.  Resolved component naming,
-target-coset selection, and characteristic-zero lifting remain open; this
-bounded modular shell is not yet the q12 equation.
+the two marked `I3` valuations become `(4,4)`.  The bounded modular shell alone did not close the q12 equation. Later
+two-step deflated Hensel lifting produced exact rational candidate 5887,
+and its smooth chord module gave a 22-to-2 pencil and an exact `6A1` child.
+That child is wrong for the required `5A1` edge; the retained mod-61 Abel-trace
+audit also rejects its target marking. The remaining gate is a correctly
+marked outgoing q207/physical-q12 horizontal, not another lift of candidate 5887.
+See [the rejected candidate compiler](scripts/compile_h92_q4o323_q207_smooth_rr_qq.sage)
+and its [retained result](../artifacts/local/elkies-k3/q4o323-q207-smooth-rr-qq.json).
 
 ## Exact physical-suffix closeout on 2026-08-25
 
@@ -346,8 +361,8 @@ The exact marked lattice continuation is
   --q12/orbit5867--> rootless/MW17.
 ```
 
-The q12/orbit5867 edge is the preferred optional final compiler target after
-q8/orbit376. It is fully marked and pinned to the same R17 lattice as the
+The q12/orbit5867 edge was the selected final compiler target after
+q8/orbit376 and is now complete. It is fully marked and pinned to the same R17 lattice as the
 q12/orbit4484 fallback. Its nominal optimized four-`P.O=0` lattice word has
 q4/orbit164 parent degrees `(3,2,1,2)` and parent `a-b` values `(2,2,1,1)`,
 lowering the planning totals from `(10,8)` for orbit4484 to `(8,6)`. The
@@ -488,10 +503,11 @@ q12/orbit4484 lattice edge remains a certified but unnecessary fallback.
 <!-- status-consumer: EC-K3-H3-Q12O5867-QQ-R17-BASIS a2097150acf00645 -->
 <!-- status-consumer: EC-K3-H3-Q12O5867-ENDPOINT-QQ a83b08acd921c32b -->
 
-## Highest-value external shortcut
+## Historical source-recovery proposal
 
-The single highest-value external action is recovery of Elkies's original
-data.  A focused request should ask for any surviving copy of:
+Recovery of Elkies's original data remains a provenance question. The
+completed endpoint does not depend on a new request. The historical proposal
+asked for any surviving copy of:
 
 - the rank-17 Weierstrass coefficients;
 - the 17 section coordinates or an MW basis;

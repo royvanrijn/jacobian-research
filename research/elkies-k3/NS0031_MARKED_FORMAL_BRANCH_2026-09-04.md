@@ -143,7 +143,9 @@ The generated certificate is
 with SHA-256
 `8f6ab911eee02c65427dc8202d99c2300da1ec9eca9cdf35902fde52fd9c943b`.
 
-The bounded rational-coordinate scan is replayed by
+The following historical command repeats all 247 Sage lifts even with
+`--check`. It is retained for explicitly scoped reproduction, not for
+continuing the arithmetically excluded route. The bounded scan is replayed by
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \

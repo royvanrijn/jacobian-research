@@ -1,55 +1,39 @@
-# Jacobian Research
+# Elliptic-curve research
 
-This directory is the research root. Run research commands here; the
-repository-level [landing page](../README.md) stays deliberately short.
+The active programme is elliptic curves, including the K3 constructions used to
+produce high-rank families. Start with the [current status](STATUS.md) and the
+canonical source for the claim you need. [MATH_STATUS.json](MATH_STATUS.json)
+remains the sole mathematical-status authority.
 
-To prepare the standard Python environment:
+| Need | Entry point |
+|---|---|
+| Elliptic curves and rank jumps | [Programme map](elliptic-curves/README.md) · [Curve inventory](elliptic-curves/INVENTORY.md) |
+| Supporting K3 constructions | [K3 map](elkies-k3/README.md) · [Process atlas](elkies-k3/ELKIES_K3_PROCESS_ATLAS.md) |
+| Prior methods and failed approaches | [Research memory](KNOWLEDGE_BASE.md) |
+| Remaining obligations and cleanup | [Work ledger](knowledge/WORK_LEDGER.md) · [Source reviews](knowledge/PARTIAL_REVIEW.md) |
+| What this cleanup completed | [Dated report and remaining audit work](CLEANUP_REPORT_2026-09-12.md) |
+| Exact results and provenance | [Claim catalogue](index/README.md) · [Structured records](index/resources.md) |
+| Reproduction and discoveries | [Replay guide](REPRODUCE.md) · [Timeline](RESEARCH_TIMELINE.md) |
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install --requirement requirements.txt
+Before computing, read the full scope, replacements, retained inputs and failure
+reason. Reuse the completed calculation when it answers the same question.
+Missing local artifacts do not authorize reconstruction.
+
+```sh
+python3 research/scripts/research.py search "class group"
+python3 research/scripts/research.py routes --area elliptic-curves
+python3 research/scripts/research.py show METHOD-EC-CACHED-CONTINUATION
+python3 research/scripts/research.py work --area elkies-k3
+make check-navigation
 ```
 
-This repository studies polynomial maps and the Jacobian Conjecture.
-
-A polynomial map is a collection of formulas built from addition and
-multiplication. Its Jacobian measures how the map changes space nearby. The
-Jacobian Conjecture asks whether every polynomial map with a constant,
-non-zero Jacobian can be reversed by another polynomial map.
-
-The project investigates this question through concrete examples, written
-proofs, and reproducible computer calculations. It focuses on the difference
-between a map that works in reverse nearby and one that works in reverse
-everywhere, including whether different inputs can produce the same output.
-
-Computer searches help find patterns and examples. The equations and exact
-checks needed to verify the resulting mathematical claims are kept alongside
-the research.
-
-## Other active research programmes
-
-- [Elliptic K3 / high-rank programme](elkies-k3/README.md)
-- [Elliptic-curve programme](elliptic-curves/README.md) — [current ICARM database, 201 research curves and six recovery controls](elliptic-curves/notes/CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md).
-
-The [201-curve elliptic inventory and current exact conductors](elliptic-curves/INVENTORY.md) are maintained with the elliptic-curve programme.
-
-## Further reading
-
-- [Mathematical status](MATH_STATUS.json) — the authoritative typed claim ledger.
-- [Discovery ledger](RESEARCH_TIMELINE.md) — the story of how the project’s
-  ideas and discoveries developed.
-- [Retrospective discovery audit](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
-  — the live actionable review of claims, scripts, certificates, and historical
-  failure modes.
-- [Research value review](RESEARCH_VALUE_REVIEW_2026-09-04.md) — results worth
-  publishing, proof-review priorities, and the remaining GVC, HC4, and JC2 gates.
-- [Research papers](papers/README.md) — longer mathematical write-ups.
-- [Reproduce the calculations](REPRODUCE.md) — instructions for checking the
-  computer-assisted work.
-- [Archive](archive/README.md) — closed experiments and historical provenance.
+Search and work lists default to this programme. `--history` includes the
+[archived projects](archive/non-elliptic/README.md); `show ID` retrieves any
+retained claim. Archiving preserves mathematical states and unfinished
+obligations. It does not mark them proved or completed.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT 5fd7a6760deb6c33 -->
+<!-- status-consumer: OP-EC-NEXT 50b9aeeb557b4df9 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

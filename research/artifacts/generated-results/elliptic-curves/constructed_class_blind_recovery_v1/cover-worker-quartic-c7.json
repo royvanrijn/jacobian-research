@@ -1,0 +1,95 @@
+{
+  "schema": "blind-cover-quartic.v1",
+  "column": 7,
+  "degree4_reduction_certificate": "cover-worker-c7-reduction.json",
+  "source_result": "conic-quartic-minred-v3-c7.result.txt",
+  "source_sha256": "f861c2dc48d931ddd9c04f9319ee4793dec31238ef6f546fbe9600ddde03ceaa",
+  "conic_parametrization_matrix": [
+    [
+      "-189",
+      "99",
+      "4"
+    ],
+    [
+      "-2028",
+      "1024",
+      "73"
+    ],
+    [
+      "-5443",
+      "2642",
+      "273"
+    ]
+  ],
+  "conic_parametrization_convention": "[q1,q2,q3]=[a^2,a*b,b^2]*P",
+  "raw_quartic_descending": [
+    "-254562759147284351",
+    "-5423306992857245558",
+    "-43236640543628805131",
+    "-152874206066904103860",
+    "-202259528794906631100"
+  ],
+  "reduced_quartic_descending": [
+    "7137588996735300",
+    "31546233241176300",
+    "-53474259337363811",
+    "-31997178436482706",
+    "33508363310851081"
+  ],
+  "degree2_scalar": "1",
+  "degree2_binary_matrix": [
+    [
+      "5",
+      "-1"
+    ],
+    [
+      "11",
+      "-2"
+    ]
+  ],
+  "degree2_transformation": "[a,b]=[r,t]*T; reduced_F(r,t)=k^2*raw_F(a,b); raw_Y=reduced_Y/k",
+  "degree4_recovery": "q0=(raw_Y-L(q1,q2,q3))/2; L is coefficients of q0*qj in the second reduced degree4 quadric",
+  "linear_term_on_conic_param_descending": [
+    "-185",
+    "-1955",
+    "-5170"
+  ],
+  "degree2_minimisation": "Magma Minimise with CrossTerms=false, then Reduce",
+  "degree2_positive_level_primes": [
+    2
+  ],
+  "degree2_minimisation_boundary": "No-cross-term model may retain positive level at p=2; no local insolubility is inferred.",
+  "exact_conic_parametrization_verified": true,
+  "exact_quartic_discriminant_verified": true,
+  "exact_binary_transformation_verified": true,
+  "status": "RECOVERED_EXACT_ON_REDUCED_DEGREE4",
+  "pari_version": "[2, 17, 3]",
+  "search_wall_seconds": 0.011990174010861665,
+  "search_bound_abscissa_height": 1000,
+  "search_method": "PARI hyperellratpoints flag=1, after exact infinity test",
+  "reduced_quartic_point": [
+    "3/10",
+    "707214416/5",
+    "1"
+  ],
+  "reduced_degree4_point": [
+    "282885865/4",
+    "-493/25",
+    "493/100",
+    "-1479/50"
+  ],
+  "reduced_degree4_primitive": [
+    "14345125",
+    "-4",
+    "1",
+    "-6"
+  ],
+  "reduced_binary_parameter": [
+    "3/10",
+    "1"
+  ],
+  "raw_binary_parameter": [
+    "25/2",
+    "-23/10"
+  ]
+}

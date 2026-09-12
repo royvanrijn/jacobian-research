@@ -1,0 +1,1513 @@
+{
+  "attempted_curves": 48,
+  "boundary": "Only completed independent proofs count as certified gains. Completed workers can precede proof completion. Recorded stage seconds include finished failed/censored stages but exclude the live stage and must not be called total eventual cost. Rank lower bounds are not exact ranks. A running snapshot is not a terminal comparison. No external novelty claim.",
+  "certified_boxes": 2352,
+  "certified_gains": 0,
+  "checker_sha256": "a88f109fd96276b8e17a251afadc5626558d013dec53ad89cd7bed884eb7a06a",
+  "completed_curves": 48,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0034486_wave_01_mod2_v1.json": "676048aca58e198e6a97efa58581c4e5cb6bed0280abbe423c5eefa99ee16920",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0034486_wave_01_modl_v1.json": "b6094ed40baf03da5004a68917875599548dc59f0cedf99494b72a7afcbc4b28",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0043332_wave_01_mod2_v1.json": "2f9734e683a0f2827b718e954fe51265257929043430232e9db089ceeeaa063f",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0043332_wave_01_modl_v1.json": "40de5c519c5942df1b858ced486e71c4bbe73b567320a5c864cfae9723c1e598",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0131232_wave_01_mod2_v1.json": "ad4a57af93db379cac907e02b8c783ee044e5940a8601225b41551b57bcaf6ff",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0131232_wave_01_modl_v1.json": "32e2f79e3fe65e2e606b8ad0adf2c2f2f90718688a7a6bcddcc89a329fc46d9c",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0133940_wave_01_mod2_v1.json": "4cf36eea541cf2c95475d7796912a24e5fa4eab53a55ebba86f1595109ca6ee1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0133940_wave_01_modl_v1.json": "0ec248709f069ae1cee026170f81db49c2db360dcb48a883c899ce10888722be",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0177036_wave_01_mod2_v1.json": "9ea0fc976d2f54f256c91f37e4d5e36ae9c064de80576c8d770616ac4b4e6f74",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0177036_wave_01_modl_v1.json": "a01436aeecb17b9744775b8d70c3c581d407a1abf758e4971c7f748d8d3fc547",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0185392_wave_01_mod2_v1.json": "0fc8cf897067db05e3e5aafaac2b6d9695f16b9b22a7660623b77935aaa59128",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0185392_wave_01_modl_v1.json": "45c4cbbcb4da56ff1b880eb3fed6184bc954f9fc7693d180002e6b7e349746fa",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0213106_wave_01_mod2_v1.json": "9e2cacbb7473e1e68a053b0031c9f0de5d6cdeb7bdd3c426c37fa39bb20f7dff",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0213106_wave_01_modl_v1.json": "46b4e90b26b628606fb06ae661db5e6a6045315b206cee96e9321b57d963f0d1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0217956_wave_01_mod2_v1.json": "389e6dc73497342849de1185bbce8302e403e1de68bba7998220775dd27fb4ae",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0217956_wave_01_modl_v1.json": "8fe72542609f96658567fd80d0b143023db28538cd8e39cc257396bf8491dbc1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0257585_wave_01_mod2_v1.json": "e9cee148a32729dd2596c4d0514256061177de088ba3198f6943a3e1f00bafe6",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0257585_wave_01_modl_v1.json": "39811ceca99bf4a711cb9eabed4f4b962edd295e6ea51bd172819b2d57368cd2",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0272443_wave_01_mod2_v1.json": "4bd8f6b8e13a2f5394f56a5e7daac87050563e31a9e52a53bfcb275ec1cf4cfa",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0272443_wave_01_modl_v1.json": "d0abe55de192461b7152333dd7ba18faef4d7568632dec15c9322e25413388df",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0290097_wave_01_mod2_v1.json": "095b6a45d6cff29a484e522ff95138272c914b4e41e7c71c76706e1ad3dcccc0",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0290097_wave_01_modl_v1.json": "eb6359af35afaa37d76100487f38eabe358791be67617c43b87f1e0c4d7ad667",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0327807_wave_01_mod2_v1.json": "bbc1d4bd602ed84d7cad9bb20ff0c2ff65cdb05a1fcb0976f5f61780aa00081a",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0327807_wave_01_modl_v1.json": "524a7990ea9e3b58244477db1c361bb788eaa0dd84138f68ba5a31d139b9b019",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0361865_wave_01_mod2_v1.json": "944696282db4af1a90a1849bd4d48633b4e516ef3d91665fe6084c92633cdc97",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0361865_wave_01_modl_v1.json": "9baa1eb6e09927df637141d36e69a363f75defc73fd4bb6188d6a688a588760f",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0385316_wave_01_mod2_v1.json": "31e48809dfa01075d3f092284895c547a8115a819164f924b3c29d5d4a0e44c8",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0385316_wave_01_modl_v1.json": "53ea9dbe322584ca1685fa97c23099d0dde9df38c161aeb7ff09e7b9de6d0553",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0388291_wave_01_mod2_v1.json": "be1b0321dbe97f39da3eb900a2f94f2393a403b30b3169e1591a6cdbf4ef176d",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0388291_wave_01_modl_v1.json": "89bb073c6e754c0a7d090634a15f33d843b10196b890c40fa896580258b6ba00",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0392018_wave_01_mod2_v1.json": "c86f7d026960f900a7dfb9a0a5d4c00f2bb364b4d97d69efc5865ee4afbcf482",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0392018_wave_01_modl_v1.json": "2dc78f7895e70524ecf367b7e083d133edfe586464920d765228068754de4610",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0400496_wave_01_mod2_v1.json": "741ad79c782f33b1743c9449bdc98a1980ef36168b8f2ceef7fa68d3817bb9e0",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0400496_wave_01_modl_v1.json": "6348154854a23349834154de63599940ab09cb9966b2770190f927ab01cd576d",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0413022_wave_01_mod2_v1.json": "056ee38cc043e1114410d4725bc14428faf7ce303e86167dbd4957183d0a8ea6",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0413022_wave_01_modl_v1.json": "68d13ac1c93a3da6b14a04bea7c7fadcd0eb611ea6d46fbc9549f6f68c44efa4",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0470020_wave_01_mod2_v1.json": "6aa3c7bee54d0c3d9d8176313cf71b616245b1c8e4cda8834280e97e6e7af451",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0470020_wave_01_modl_v1.json": "b5a60171e0003c0a908c491b8da220efa39ac87686ea0657c7c7ad6f5f9611e1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0487239_wave_01_mod2_v1.json": "35a7203d1629ade1903f5fca7272cd3f4a6d941f674f86204de4fc1461872e12",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0487239_wave_01_modl_v1.json": "1aaf9d28b7ec4f0670fa217522e227e0981ab208f963075cddd866e6ea97b989",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0499565_wave_01_mod2_v1.json": "a4b7950c63180c8325ee5dd95f5e64b332f865411a069889901f9e74953d5772",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0499565_wave_01_modl_v1.json": "88b951091df992baa99545d5e96876f5ef4847298729c8dcb6fc1fe02249849c",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0531213_wave_01_mod2_v1.json": "676595a67821b48dbca7a63c47f692c4f969be8cb294617faec884e47f9c87fe",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0531213_wave_01_modl_v1.json": "9696d2d36629d8b07973116044392f64e325779af9fc2d207edc0c7bf7ae1afb",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0542153_wave_01_mod2_v1.json": "640491be39cab655827939a492e60a6377894fa0dc75ad082a143bdc7f406f03",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0542153_wave_01_modl_v1.json": "939ece33b58d6431eefb28a2c44bedc626ffea82ad1dee6ea3fdbc51c41efb50",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0546347_wave_01_mod2_v1.json": "2d5d38cdc85d73ec7ca467682d78c3515adcbab3f2f45036230b4f4070ea4ef3",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0546347_wave_01_modl_v1.json": "cc3e8a1c46b444d64d655ffb478130f047d6ddc877f15f63ed39f0d259eaa9d1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0578388_wave_01_mod2_v1.json": "f8fea88ddba3ce67caadf1c184712cf45b856bd21297477a88519557b9b0234d",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0578388_wave_01_modl_v1.json": "e7d9553cbaa3d00a57aa5de9375db18292d673ad69fd02d173a4a72e00352079",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0590501_wave_01_mod2_v1.json": "e78f4a5943f1019c679bf724d7efcdb95976004302f781c176056ddc380157ea",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0590501_wave_01_modl_v1.json": "9ac1ac6856837b6ec1cc1ce18486024a142da280caa2f8d80475bd7945c4782f",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0645889_wave_01_mod2_v1.json": "76eae0de72ad0b4fe95220758d60697fc7cf4a353b6ed9660d800774edab3fd5",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0645889_wave_01_modl_v1.json": "1dc69364d5b7938a1575e91b5e9a2d4e8e2a846da8e3f460609a0665df63752a",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0691410_wave_01_mod2_v1.json": "d7233d12604c5f6adc53f6825b25a248e8554398cff4a5b60d41b81107509a3f",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0691410_wave_01_modl_v1.json": "7393bc3976e3f061d7c082195443842deb90991df9574e0b6e3ce6ae2b296470",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0706308_wave_01_mod2_v1.json": "59f5a8dcca004794151146c69db2a4372efe4ac64af806d15f94fb0a29625be8",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0706308_wave_01_modl_v1.json": "da1f41f3c0503b910f8080b75b6d6fd0768efa8c27186af58f1fee0fecc3ff95",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0707991_wave_01_mod2_v1.json": "04a67a6959cdcf98626390fb40b37b0307ec5c66df061880849436c52acaa2ff",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0707991_wave_01_modl_v1.json": "7ba77d13892264004914ff630cf2f6c2c6c9dd45ce55a4a98fd88f232a8eedb9",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0735967_wave_01_mod2_v1.json": "b881d2dfc4d96d81bd53555b555321a8ef8314b623c3845f41a4d6a949f25998",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0735967_wave_01_modl_v1.json": "beeb1fee0f7fcca6d8a0fbdccf739b000a3b731921fdfc0f28a4ee3b08b63852",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0748009_wave_01_mod2_v1.json": "db8d40fb984166167e56f4e7f5325d87f57255c55196aabe147f14fd911701b6",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0748009_wave_01_modl_v1.json": "3f1f13da6e3ce58e04ad4dfba1881be1ccead243eb7ca7db7638bb4cbcfde54e",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0751246_wave_01_mod2_v1.json": "571dffcf4ec7600d08c0a97f7007094cbef2474e0e369a11336adda44c32ae72",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0751246_wave_01_modl_v1.json": "31aa785992c70dfbaf4f9ff9d82b87f24e97c76e749106ab3dd75fbda2d8dc93",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0784611_wave_01_mod2_v1.json": "be7305f3f8488b88ccc7b27bafdff98c03f1e3cae8036776a25934c900bd9f46",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0784611_wave_01_modl_v1.json": "57e612ebb10ab9588ebfc71ccba76117c399e8f5633cfb38a34671c8d81ca708",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0786210_wave_01_mod2_v1.json": "4e6f942267cd58b9b1a81e3aba7ca24a36c51dcd0e466472b30c34f6211fc4fa",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0786210_wave_01_modl_v1.json": "6ea847f9a14f94a22d291ef6c7a649f6747ca3fa75d778ab487c28f2f1e48466",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0800956_wave_01_mod2_v1.json": "0c246922828ce959cbad70da5663ba384c41ae65e9f114e8d4ac0914cf276dd4",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0800956_wave_01_modl_v1.json": "c4fbbb71e86c88ceac8dc2b628508f7d2431720086145eec60d8666a6a7cb173",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0804474_wave_01_mod2_v1.json": "4427a1aefbab3e1ea2c92cfb2e174ff4412f0434b50785c51a7ecf64726b1ad3",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0804474_wave_01_modl_v1.json": "fc43cc33dd48b4d8f8254ae87f2cb53e2ebe1c696c74692be6034a1b06d3a212",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0834215_wave_01_mod2_v1.json": "1118e8b12e39db06d63e7d9ae5934d4e686c09a8a10f5d6d26fc940d28d0d498",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0834215_wave_01_modl_v1.json": "eb4edb725d4c4dff342d2b2ea8896e99150cef0d8f3785dccfcbe4c4cb3274d5",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0840111_wave_01_mod2_v1.json": "fbcb279f8da44be63b8cb2a1e76c4513282fe01f9585811ca72739bdd5cd6b58",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0840111_wave_01_modl_v1.json": "2637dde6623109542bb88c89dea309084dac48609895db3c226985bdd76c9546",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0879623_wave_01_mod2_v1.json": "314e556dbad293733d93c70397ccb0e42a8db479312d1bcecbe30c015d545d39",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0879623_wave_01_modl_v1.json": "8a2cf50c16d6e4b10cc4c8091b6ce4080a97b853edd7c850c8b79d8ba0aa0341",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0880594_wave_01_mod2_v1.json": "761a98717c6cde527ea4dc9fa95dc884ab6ab7111b899c8b40c147fdf760267e",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0880594_wave_01_modl_v1.json": "06e18551c4fddc442b11d96de5f84c451e6762c95c7bd9765b23fc8ac38784db",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0927322_wave_01_mod2_v1.json": "0e17b2ac64f2e2023b9f377be9a3925231822326298b675dbf03f7c6acba55a1",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0927322_wave_01_modl_v1.json": "d2978b3d1103b8195d740d05b83136cca4c5258ccd0c9e62534dab1ea28926a7",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0933687_wave_01_mod2_v1.json": "f945e0dc0fdb0f145a271598f140848d972774f26b436a84d0dacdf9b4ac175c",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0933687_wave_01_modl_v1.json": "f401d7a089804d86886ea3a503256a87112e953b99941b6b5d976ef8cb9e6969",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0966474_wave_01_mod2_v1.json": "ace3cb40b68c4b230d4b3b37febebc14be0172a1ced9a36cdc3e7c4ccac7b5ce",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0966474_wave_01_modl_v1.json": "0a3a4db262fc63b7d5ebccdfd2af490a88a0bd2110ed3bea12a940ebc470e754",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0980628_wave_01_mod2_v1.json": "e87d474cbe75fae99657f8fc13c2c7fc371f7cfaa0b847ed62845d9887675d6c",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_0980628_wave_01_modl_v1.json": "c6aad06fdedd34517b27069865b181889e663f1b1e587d270920ff89dc044519",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1016138_wave_01_mod2_v1.json": "298973c2787bad3c45f33dd93d3f08f261193eac46412b5e6246f663882f8f1a",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1016138_wave_01_modl_v1.json": "85cf2d9626951e0479d8560d1f69fb9c340ad77f8507866bece4285c540f8008",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1017037_wave_01_mod2_v1.json": "b34d59a6384e0486f76d504c0c39f8fd94ec4bf2264589a3f4ef583dda22a6a6",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1017037_wave_01_modl_v1.json": "eb56e89e6051ad35d333b02de83b22930865c9b323aed9baab6cf7e0f6fc5ee7",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1037401_wave_01_mod2_v1.json": "e3d3744ce89d9457183f48f24a6ca10a75de520792dd3a93bf8f104d22879f5b",
+    "artifacts/generated-results/elliptic-curves/det1092_record_scale_scale_1037401_wave_01_modl_v1.json": "b82af7321c41e02a29b8b3c1fbe3a3dd65cd261eb9f84d6bc3e6aba8df0e0571",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/certification-ledger.json": "39f2569ef597278f796493ddcad086125b4a376e6258be60108d1ed4aef6f944",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/certification-protocol.json": "ff40d8bfa44edac37303b4bd394edf131f3aac119d798d901a899855de7084bd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/maps.json": "4dd677772aa97920f56f2a5b0afc4889aa7e94fe0bae4c171cfb1bb573800551",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/protocol.json": "12896533d1e8acc65693cd754455640979a15ce37c718f076c178460287eea37",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/result.json": "6114b9ea95ab45e1b8fcaa533f47f832d6c86627aef5f7bd90b6445dc603e950",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0034486/wave-01/seed.json": "5fd910c8d6d4a00573547634e7a8dbbadaba9da0ef0a3cd41879428b045751d6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/certification-ledger.json": "a1d8187d601f2e8883a65d8d95db6fe2fbfe2585fdd477bd25a3971da0ab631a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/certification-protocol.json": "337e3efeeffeed8930d8148fc2ed7ed73f45119940fbcf587be552faa62bd2c2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/maps.json": "84c13ac1e46fb010c3d40446daf34ad3736c8dfbd9d7b6a2db5c925ccb2f23c3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/protocol.json": "fee84b3e523947f2dbb29a7b4ce1411b6ecd021fc4f6152255bfe0dc036c8f61",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/result.json": "dd2c0381377693e4d2d219e4eed923f3d9ba8b44962d6a5593ef54a26efb38cd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0043332/wave-01/seed.json": "c84fe5306f55f751194b3e5d77ac1d7dc011ac1f74110a9ae982b4852eb55a7a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/certification-ledger.json": "0c5ac1f8092a4b07436cf9789ad75ca7f9702ffae32c2f78add4067cf8ee76cb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/certification-protocol.json": "377e06b1cbe3a1a62cbd9f14deeff6310242badcbcd71004742246f43f1e6c18",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/maps.json": "d3a05c249241e20f3c4efacebeaedf325fdf4afa4c24dc612ceecffaf10afceb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/protocol.json": "299025f7a06225d6500964b8aa46b325e01d46c5df389f22120013bfbf7a1a85",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/result.json": "fae2b0564675427ebccc20112eaa4aed9915ef257bc9047982f27a90da57ab93",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0131232/wave-01/seed.json": "e9b61b1e997d6005d5161d2bb2b1f84360e51b547fef85e70c45732f8d27c824",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/certification-ledger.json": "fba26166ba7f8bd2766a78a2a277924bcb6eb6457a1293426970c6d65d3e2b51",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/certification-protocol.json": "de39ae5b092df39adca7d4c5c41474960aea2f6860277772e7dc105e076e04a0",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/maps.json": "c7818dd4bed178fdc7aaadd6e1a590f2c5f19a546b9f72b89468c2f46cd1dbda",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/protocol.json": "fb5ddb054c159fd8e22369b6a7f2fcb95734cfcd20868168da66911020b303dc",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/result.json": "68ea4bd566efc7d0bc578c26eebd9f3ff8561fa4d20a520e596e45ecdca65c1b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0133940/wave-01/seed.json": "f7c73a610865bdd27d17b0ea5279e4f72d3485e277dd3900da441a3342506544",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/certification-ledger.json": "362580131de1c1005394fff3d0fbaec86e6dc7dfd9b0473f877f39ed0f483232",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/certification-protocol.json": "6ba744de30951bca53920c8836694f59087bc91390679fd8192e8687cdb29f3f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/maps.json": "0da8d97f17d11de78e28d4458cd59adb5a6164d637517b802262aabad5326f6e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/protocol.json": "2f68fd6378f5962723f07a386c14a0d44a3cc56fdee0796310e6b65cc12c1121",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/result.json": "e0d55414f0b5229f6cd895520b37ae8533b7d22c03f94c216b8f1b95354a028b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0177036/wave-01/seed.json": "434eda7088c4699852214deff6bc20e3bdd6062394809832aaba99402f254ec8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/certification-ledger.json": "5cae2250aa9fcb257ee7ce2f6032a8313f9b56a87d47fd76a9f10ecc792e4a5d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/certification-protocol.json": "e1f7b1643e98c68afd5cf0d285019546deedd39ecd7f4778e97eb904d2a1cdec",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/maps.json": "ba40b015eaaf6321d4f41eaf7ac34f4c23d8a554adb1a728fc1aa32c0d358ba8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/protocol.json": "8ad0460678bb872007881e868410fb9b4685be99384b10618a909453041fd2ce",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/result.json": "a6d723c9258673dd592aeffc74cd31af8a69ef7c6931d5a9282ae2ffcb35f1c8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0185392/wave-01/seed.json": "9531de1e1d07f02e48d2d05f5938058e0c039279b813cb1230852ec755eace39",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/certification-ledger.json": "0f0bf4d0e7ee104b3418996a59c41e7122695c737bb34b03defce83edb934a35",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/certification-protocol.json": "53448be53830d183d4ae472e5def4a4f9f902db0800dbaa65b1fb6765f035557",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/maps.json": "1e2c06ce19c0942743ebd5eeb78dcff38e537ff0d5ff7a2521e31c30450e13e4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/protocol.json": "7f32da86f08793963b916253c0455892e1d782567e00530031ae697741b9360c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/result.json": "e35a2ae0285796b955558153c708f1267a6b220c4c923c457881d6c09840d4f2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0213106/wave-01/seed.json": "32dd23111e1cb6c6cbdde36fa4a9fab8bc93f4585828361bf6d072a8311fbd9f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/certification-ledger.json": "e0c0f009ff07a63351e726005b679499832c373a088f07b24736e61a15837a1e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/certification-protocol.json": "006613aab747905285a0e607c9243ccdc3e0da29cb7b0af0dda5cc905fdad100",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/maps.json": "b688852a71c154f299c6638c762fe1de7504e2d722bc2125d4d51d08d6a8c682",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/protocol.json": "a60acfafd6de41009a6b775dea6d6867f029f8e4932988e0f28162876d7c7366",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/result.json": "f44e547d507b39fdcfb3ecb5542f7059f8c790f84718b99f5043713e21530201",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0217956/wave-01/seed.json": "a1025422b32c5a9e62902cf88a7af0655151abcfbb3bba7ef6ab279b4b09da71",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/certification-ledger.json": "c5be5c7ec745e12800b836dd809aad716e52d045efffa8fc08c0e0675bfbb067",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/certification-protocol.json": "5daff2bcc1812abcc3daff93ec9be1df55816b87590e68940f4d49a9383fe091",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/maps.json": "c2b83c6838f68776371384c74c144fd88cf82ba22ea5fe6eaae415ae883bd2bb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/protocol.json": "91b4a7e1dde49e1351decec44f1f04822580105916dbaf5a7df275b0a55b4551",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/result.json": "9b41eaaa9c2551ac7bfe0ffe2131d483e11962a7da9fde543523525b3f4999e1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0257585/wave-01/seed.json": "55ebbd0490e42845a28ce6c9eb8d84fefd8bab70f7d9dd86aa1abd2d276cb8ec",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/certification-ledger.json": "374fa85d713f8243afb0cae4ddd4dbda5eef19807067cb6846b8af3354824fa3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/certification-protocol.json": "88273f52f4d62c43010d8977c805f83cfdc9560dea2c15f510d161c87837a0b6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/maps.json": "fd7665108bdc31fcc63fc7e3ef1dbf0003235c63ff7f8671d543154e7fe01b7a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/protocol.json": "eff665155a857ed1863bd29c10f52826d48f6acca8624577d47b8cb26a491049",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/result.json": "004ad57fcb71ae4b95f80bc71454b4f58cbc9d982e8810652efbfa24252f3818",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0272443/wave-01/seed.json": "04baa420703448bbe5ca0eae2ebf43620f40795126d77f66fffd88efd9dd5059",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/certification-ledger.json": "92537ae45f41d748fec136c001c78fd79d8f426357b5f189fc7b3202a538bb82",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/certification-protocol.json": "ed50b2c48bde64484c0559ab3ae0638c93d8b84879a2564a08a6455a2313e919",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/maps.json": "ab9760ada65e34216ef66314fc2c2727db99d35c26d7ac349988a9bfac98f405",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/protocol.json": "9b36d680f898a5988828246723692968dade8ca8023bf2f16af66bfa73bc4672",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/result.json": "5f3acd0f8e7c04aee3e80d50dbb6b236a4b9474ba1f57a1e14c8f6bb964169be",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0290097/wave-01/seed.json": "630a3f2d7c150f0befd44489ef9717c9140f5a33d7289beed6811229efc7a264",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/certification-ledger.json": "d6f112eb29c55b735e5d590f537dc93dad2891ee3281f623dfa64faea9110cbc",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/certification-protocol.json": "b23b802f447d890380dd5ef9f70a04f620d59b057d887c3f1eca1a7e00e13bef",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/maps.json": "bce3834a1fb510bdccb4ab6936c48667e5edace168132d42e8b41e201a309cb2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/protocol.json": "d8de2bb9dec671afcdce71a47f6aea46ec3defd5489439c33e892d87de61f90d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/result.json": "2c5336315cbfa7040f3e8bda5a1620359075d149418e43b8f8cb97288e27c9e7",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0327807/wave-01/seed.json": "c1958ce5d35aa9a506453338968e14acfe7ab1814ba5bf3c2fca119961f42304",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/certification-ledger.json": "4e8c2483e3ba8db0ae2a1bceddde990df1622ec3f2505882bde99966de1385a4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/certification-protocol.json": "d530eb34754b7bbca3a8ca95f3b91ac999c2bda8dc3733fb550f87ab2482b88e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/maps.json": "c002b8f1f24a9626296b56b0572e25086cdc25522c7d1417e129262b65e2a7d8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/protocol.json": "c7c9b96ea49ec25fc195827bf88ba939a92a49527fe868bb8b1b3e03b39425fb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/result.json": "d2de223ae867002a0d917b0b04884cf58f33699fab436fd9344f9c80d8a21f0b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0361865/wave-01/seed.json": "32470ec540371513b4e433c8802fcca1a3200ca2f1e976620176e70b20eeedbb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/certification-ledger.json": "00b768604472778fd81619e2d0055a8ed1b4b86390621964154fbe21a7e9ada8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/certification-protocol.json": "1bbb87f32d6db85a957bceeb94d5788119e04bbd438f98cedc6bee425bbb72c8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/maps.json": "21a269ae2633f2d073b7a593b04e27d2c46d5ca3d5f9616dc5d5cc9094fba8de",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/protocol.json": "d0994d74046c1ff0392b90099c31821bf1809b9353316a3fd794aa8c9658c7b9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/result.json": "8aff4ee9d404dc4d5f43ba1f8f594f3f75f64fd7064304b0225662c70ccf4e6b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0385316/wave-01/seed.json": "1a8dbc425c85b1bef3c9f7c5c6237614dbe4b3e7b35602cd2e86c2a6ffbc22c6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/certification-ledger.json": "a1ddac23763c7ef25d90287fcc284f7f4e906c8c25eccf35b4c14bea248ba3d5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/certification-protocol.json": "8bb74aedb76b77f92f7d3545d2afcc8fea46d2055e8dd137ae667f899c8ca763",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/maps.json": "1760dfec996b3323d7169a0a6b756d06a05c44e916922771bd568ea3be1c0705",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/protocol.json": "8441f3accfbfa516c4464ad70b8158453fd1d3d4b3a4078f233a77ff19fc97e9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/result.json": "c6f36c4779199bd05480f0d90f12de311359c5fc4e29c00d6908c6a78c21091c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0388291/wave-01/seed.json": "66fddf56e436b812c20207ad7da5279ba2fcbe7e4c65d8b892965e45f0bf40c5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/certification-ledger.json": "36358b65e543ae18c60f34c38882503b1aa9e367a0236f07b0b01f179f65020d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/certification-protocol.json": "9a007723edaec97bedbad3de8db489bfc3421726705fbf7528bc208a1006edc3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/maps.json": "d6f307544fa65b7d3c7f9e0911e8fff3148fbd64549d93ee060f111783297aec",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/protocol.json": "fac2cebd2f99f0f44d4ea035c0e23dda1481f9fda3777ba2191ea1d559693d58",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/result.json": "8ebe3d472421476df1aaf32d96e9499bb8d4ba36732ae964f61768ae47cb6dee",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0392018/wave-01/seed.json": "58c01fb2179bf6860fd3e188e766f9c941ab3a3d645b3656fedcd84cf6eaa173",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/certification-ledger.json": "46cd0a8b7dc81de629a2762a63302ac28763b581caf411b075f330f5b0ae0d74",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/certification-protocol.json": "40e82c5ccfb8a3a3fc6d9d808ca13ea827bd282b12fc77d85d528500a89190ff",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/maps.json": "2b21cf97b0afa35e9049763dbf30cdc1e857c4dfea7c06661b950bbebe5e4ca5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/protocol.json": "2648f54a138c022f25fb1d03b1733aca0a7ea9449d7ef59cba827fabc73bd050",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/result.json": "4759702754ee35a056c8eb82ed6b1f75a7c1bf6775cd2404f1fa2b18d7961f41",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0400496/wave-01/seed.json": "1eadf47587c220ec399a9d1ff00e4ad0ce1f1a095a4c89ba866b954ffd97a1c3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/certification-ledger.json": "a2b4fa6addbd18c3894fd0c8f78b5125f4ac08327f6f85b9a2d1c0e426ca175c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/certification-protocol.json": "0d31aa14cc7f060ef61d6423bf429e0eeb55b680649c58b66860a66b2ac95ba4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/maps.json": "601bef99b66002c89046c6479e2ecb2627d2c915364561a22e1f720ea6eacf94",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/protocol.json": "39dc1b01d7bd14404a31665673acae9530e5f0e17a22de020297974161d0d7ac",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/result.json": "7c5db8e400f22957b2ebafd5d11f19c3599384a95509cccd34966e1f46ca6948",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0413022/wave-01/seed.json": "1f42105d9ecdd162f6bc3ada3cccdac00b2854a522d3bff267606fb35eb65cbc",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/certification-ledger.json": "b7c2edfcd7c0102f472d852d43425ae547b6c387d8fbc671ed76738cc9df473a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/certification-protocol.json": "e50e54a85e6cc2b6d567a119dad266f44788e408b21c3f28b9b1144dfa2ff7bd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/maps.json": "ba40bcbe7133d263284a099b739fdeda8ee1b7a6740cfc9da03a9974cbf8dd93",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/protocol.json": "9d996d4849441d67bc9dfbad9e3afac25e644d41ccd80f9439804efdea4de9a1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/result.json": "f262eee6015f686b71f1500377231fd1ad808c82a7d87821917f41c18f52d4ec",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0470020/wave-01/seed.json": "813e12db31f03358bab2f3f8a54963a6606d03333e5e251c9416169a011d2465",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/certification-ledger.json": "54233004522719d701a7be1ef6e842ece4bcb41eae17286428b2bb897ba2957e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/certification-protocol.json": "1441be8f7a26e98957b3613dc28cd83b43cab819d89fbc58d9f7f3df5866a653",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/maps.json": "0ef7d8fcb34f3c5f1c93547f150804872bb78b20ca0b5282ff581b27e28d4a67",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/protocol.json": "25683d554d9e78ece7e1ae62dac0f4b4b02fd91b2f2a496850bf5793ff39b8fc",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/result.json": "f77b700a6abf0c237aefec6af082c36ad1733250da2675275b667be6b8adbc6c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0487239/wave-01/seed.json": "36cef0b33451340c8d4c60318803cb1f7a20c21779eaf7a7b07e01fbde648809",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/certification-ledger.json": "ea12e2e2f646967da946c755a609eab703d9f4bc79d19a353495ea99033c44f4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/certification-protocol.json": "53eef86005ea81eee22e274616ee75c0069f54dbd149fa6de260a65ecfc56e80",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/maps.json": "d9fb833fc08bc704b9968b709e9df3c21b3c19ade8803f5d3fc51209e655c749",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/protocol.json": "8db92912c268e9d2221162b0089d72cce44d98d755b88caed32785aea7ddbfb3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/result.json": "276c32161019666c87ac38fd06689484ca86cb5eb92b35b6eb3398a7a4dbab79",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0499565/wave-01/seed.json": "0286a12fecce6a8b069938baf1a7c1e0141352ab48575b2da943c9a755656a40",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/certification-ledger.json": "727af7dc8e74a782509117d5a315c3921bc04cf29609676f41c5ed9c126766fd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/certification-protocol.json": "072215a7b443be05dfaa065e8e002daa17932cb7451e97a2d3b1f0f58a6baad7",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/maps.json": "fb0928a0e29cc9f955a6ae18999974939c8cc7473e3e2f29372451ddd6971f1a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/protocol.json": "a1c6e386f076882175215d83142ce6bc7d5f948a7c240b9b6b55aa79a1518061",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/result.json": "5c9957c8080e8bf54d6f2602747d2ab6e77138afc872581adceff94f95763ccd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0531213/wave-01/seed.json": "a4f382dbfa0b2abd59c3ddeb7608517dcaa675683af557713ebdef38985cc08f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/certification-ledger.json": "82c6e17f7d6a4d1f04a1acfd9e4cdc731b79476f98c9b1316534e4cb87a4307c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/certification-protocol.json": "b9c7a61d7f58ce748e6df7b32ecf102f3a55d7f80da189083da9b98f34b5a051",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/maps.json": "4593099937be422044eb89241cb8660a252a9c3cf40880d54bb2c22eaf826db4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/protocol.json": "fb5a960306dc0bbb707f0a6a26e1f26aef2a4b0379d70e06900bb8c68c4df27b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/result.json": "73f6ad5664807a4e5ab34cd59cb88c8afd193672f8a2c684691dfbc52a772253",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0542153/wave-01/seed.json": "40d9239187f1473aa119c8e5f5239edab322f8e22a483c6d1312e65262fe89af",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/certification-ledger.json": "ae309427cb5f9b247881d7a1cf84aaac9df6b933c7dfffc4df03911179d7498d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/certification-protocol.json": "488a1407a3dc374740e329cbfbcff4df9a62d6eb0655baadb99773aa13b7d30c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/maps.json": "a320bc1ffed6b176951a1a6b96cfdeb2b36c2f13e650c30d08d661df2259111a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/protocol.json": "53e0f232040392c3987b1bbc6313800422d28cd8f9435bae3ae49975a0e98184",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/result.json": "dfb6ee8732c2eff1ef8a712bbe59856f2558e4aa77289d662a7fcbf5e107ca87",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0546347/wave-01/seed.json": "44027e1f9d8fa57073a554f924719874ec5df43bd9deb8198aa2c7b8cb1124e4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/certification-ledger.json": "8a04524245a6641dcca8b2f1b19ac809d2bb423d4e67024472cfdcb53b3a4192",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/certification-protocol.json": "d1e72816aea60284a10c9726766eb8879abccccb8b56817dbbf076c16df582e9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/maps.json": "c11baa375173052246296efaa5fe02ec98be424e24b7ffe00de1c1464794b21f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/protocol.json": "4beb952e488704089756739c03ecc2007a433d4202ece3df6851db3683a66a5c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/result.json": "474dec18e7a33e0f216f3f2469e89f8dabeb4e67f7230b492fa856c1278da00d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0578388/wave-01/seed.json": "f05e54569bccead3e5a925f4b3beff13f22fd6a36a41f182472670ba5f202e52",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/certification-ledger.json": "3f8ddd189468dd904cfcad32e052bd031ece249e0b167054fd8cdffe5f4dbae5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/certification-protocol.json": "79344ef2ff34fce44024e28633d824a5ded1f212dcbe38b00e58325828ff59d1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/maps.json": "2fc1f35870ba78b28826abd1f135bce8d72372c0d001066f029b38b5109ff5f5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/protocol.json": "c286ead5e5c65b963599d2f89db05a1aa647dd402afe5dbd5342375d1a662f8b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/result.json": "ca278834f8d5297a7d00bdd7adca292268458be2b612b409eb4788e61a6fa672",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0590501/wave-01/seed.json": "b701de96eae5095dbd27a4f8593e110e5f4fe273a23bb0445586692d35ba85e9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/certification-ledger.json": "ffbf841211a76fbe608b7a60c6d177db74fbbe0a9e6e20ce925a811dbd2a395f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/certification-protocol.json": "cdbfe370705a94c88be10e753e514606d7c4676e133115c7d5479fcc10d85888",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/maps.json": "d11694a684c6525c5754b685a36619e2a10f85776da5fd56273369c8a67f2673",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/protocol.json": "b4b4d0da54140492ed518f5cb159bf5ba5d301e19237b4fd9cdda104d1742581",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/result.json": "1a20efbf4a679c87161bb2fe890dc97afcf968533104269cfb3c17e4481bdb57",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0645889/wave-01/seed.json": "f44f2297243684b5a8b0b9ca8408102ade800b28d1885475e9c01856458e7dc6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/certification-ledger.json": "70e46f152d9809d27694d83d984b44e7eabcb36f649bd80d1527ab4c9973bbee",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/certification-protocol.json": "b890dbd23cdfc0bedccb60077a2f5dc5075dff8a59655a1e656d5df3ab6ccd28",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/maps.json": "9decdb667e2aec80ed55d1033ebffa939688bec21d3636736231d0189249fd52",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/protocol.json": "a40972287a86f02ec66927ea8ec50a2418d7fab4c7e6061544c2177da9da9658",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/result.json": "5896e3adc033dff1580f61923ffdb5b036aae193d2074b7b6a2e48fc52060647",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0691410/wave-01/seed.json": "4734cca3819e9aa706c6f36af931d1fff9722284f171a0349f9e7556551ac722",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/certification-ledger.json": "b13b291835f4d8a56650ac6392d77da53823425e385c949ff072c3d1c1c12c53",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/certification-protocol.json": "4f1d610f30ef3a34802c09eeab2b4555516951fbf75454a6984e57b82d36d517",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/maps.json": "2cbaeecc7f0ca331220518e52daaf5274b8a0f669e72afe5a6e716ef47151574",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/protocol.json": "e3c733230b3101eee41a587bb4754ae7ed5a29da9e54019281d0ee14eefb3328",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/result.json": "17db46e73a3f30d4bec74c41436b427bcb55a0d535b5f109b4a75a748b845cb1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0706308/wave-01/seed.json": "1cb620fc329c74bd5e86de178a55659d8ca1c950a950093a172cee0b0d14ed11",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/certification-ledger.json": "cb27f3672acbc96aa11e5856bff9d19fd99bf9fbe3267f719d8be44a65dcf537",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/certification-protocol.json": "6306e9d777366d47fc861817ee56ccedfcfb4640abc72324b8031417c1c9a4d0",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/maps.json": "fef7480d0af75fcf29fcf725dbe6540287dc0719986fc1a2025d6f5f1f7cdb25",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/protocol.json": "3668b6b550cd904defd81a34875b7443d73cccae683adc389b808c6705c88aa9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/result.json": "6d47c05b4605405bf736e4187b1f1ae2341b4dd0d850523c9bd78b4276aade4a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0707991/wave-01/seed.json": "806692bc3c9bb1388b9061e20d179078ee583bf6af8fbd0b7931d8cf8ebbd688",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/certification-ledger.json": "2854bff034d9f29746fef37d62f7ecb05b0fc04adaacc4d6b15cdbcb0aaeea5f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/certification-protocol.json": "5ac0589ce81b7e3c280feaa0edbfe20d9eeda6b2442a752080fb6f36536ef0d9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/maps.json": "ae2f2657497896bd27bfe179127f6f595ddb5017137720c040c7d726c8b1c506",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/protocol.json": "390543d91730091ba9245148213b3a39e1236c839107f93d171ce58a8e64268d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/result.json": "e852da11cdea86d349f29b26c6038a4159343bc28943e64e47e5631164ad4278",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0735967/wave-01/seed.json": "c258ca250081f8ce0b2dda524dcd9a5db852c4d01fc49c191d793ac1b551244c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/certification-ledger.json": "32fcd53bad26657d1bf372cb7ab4649d4000089d062c3bffda2698fa184d5c62",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/certification-protocol.json": "b1cca147f45f2210b9216d05d97afcec0f92a5a7083342f8ccb60a525cb9b7a2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/maps.json": "71592e98698254e1dcbd4ab53b0123e1348be96c0309229e614d1e5cc907413d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/protocol.json": "9f8618a21598b6faca7b8ce74ecba9621d74362e70ae75ea7730d94bed38d33b",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/result.json": "eca31e9a96e53d2dcaa52b05dbc57a3be1f98f5dea467b994a7c58f8f8ebbc7a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0748009/wave-01/seed.json": "ce96e7f977d8374beca0dc8c1929e221a4459405c0e0e5286862e107bfaa3dd6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/certification-ledger.json": "f64c575511410f4b65d6410896dc53502ce9120e8f4c7185eca68937a10ebe3a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/certification-protocol.json": "ed05a3a28846f3368659c465fc7f7091750a08edbc5b44be73b352161632255c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/maps.json": "c6bc82296e4b24a62ef0249fc76ce6da929a2d0134318c9e0532ff0d746bc9d2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/protocol.json": "2c1ccfcfffcca230f0af7b97a354545ea2403ab2b96d5b4bce199af0f86c8b00",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/result.json": "4e8eb5c6a224c641587eb905f89e3990093d7e66e84bc4488b1ffe9f9362dfe9",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0751246/wave-01/seed.json": "835ff83a4631e1bfa04ca08d595ebbc3e77f99ff7aed2c5f66451dcf8c3e973e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/certification-ledger.json": "4afda6a1c3ecc706e9cde89005abe2ed802f92eaeba51023cbdbe66baff8be9e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/certification-protocol.json": "4f42ae9ac7fdbf8958419118da3e60790f6ad78783994157730e8f13cbe7abfd",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/maps.json": "5adc91a139c43c2779be06c5821224b434ade6244ea9b74cf7c06fca42415a40",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/protocol.json": "93a532009e2ebea3cf8bc6cd77e94145df3994b3a20e30343bb14e4fc6b47cd8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/result.json": "6e20e5da5c8c238ea5ec56c3666aec0f9f8fd6a091e9f314ddca8aab426e74f7",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0784611/wave-01/seed.json": "2babd4982144f8eb99bad9f3dedd5626ba56c9ae9d062d135b20d8cabea5cdd0",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/certification-ledger.json": "00698094e411253533af6a1a9f8f0db2d6b06646eff5f8a91c0a527a4e3d00e2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/certification-protocol.json": "22610761b1daaf32b02096d2e05eac661d9eca0f7379f80cb2991a479f89d887",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/maps.json": "96f4b6688bbb27b001d9b6338d6387266d54adf18b3ada97c019b323b1b22921",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/protocol.json": "09c96c5893968b36342448dbcc1d0bd32fc08c549f1dfffc66a04837a123fa3f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/result.json": "ad4cd85d3e1858e450e252b8dc8ed6212cdf4ff4c46ecc7f1e0eb2bf70bb4721",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0786210/wave-01/seed.json": "928787707d95c3e9b143cc3e8562ef217574f92f435fd82ee5f92ec66ec538c1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/certification-ledger.json": "7e5718a2437b6f452c5628e052abb4c6cf848f5909235254f681624fb90b336f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/certification-protocol.json": "e229d1c0d46e4f305a1b38ece9c916e20f1e46aeaf0f2fef0d7b01acb6eebda6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/maps.json": "d326e7508e3973f56669b9e956764f57958e29ee93003792438aef6e1d34314a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/protocol.json": "aa415e983505573d8280361ea171bb2ce78b61b94b6405996567e38490ea99ca",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/result.json": "1bff63b2d0a73e1a364d8c6d63e05b7e8f33f530136ba68208c33b359927b8b6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0800956/wave-01/seed.json": "15469bdf9da98de1e90cbbcc26cf33e19694cee083705a4cc616420d8e64ab2a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/certification-ledger.json": "ca4090d252ca7d29ab4d6d100d4b14d0a09cb8291f0c9a8ca7b506fa4cb8f8e1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/certification-protocol.json": "02a82e34ed047b9bde56647bb172d4c7267eaaa8856bb31032afe76ec6093665",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/maps.json": "a3e11c5ffd0fd12a5956bcffbcefe7d6a79da5a0a7fd72c9740aa433c93a5c4e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/protocol.json": "1db0355cce1602457dc3a1b8304bf7b633e6002a74de20099bab911ec65e9b4c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/result.json": "c7077e407fd2043c4036b51459d32883a5e62d719f522e288cf99df166c5edfa",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0804474/wave-01/seed.json": "6463ebbd0b261066bd5f023ebeaa2b1e8fb5f3cba5f8e4611329af7fc3f7eab2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/certification-ledger.json": "c20e7af088055c8a94a9699f8b5afc49402ffd5d411c4ccce38894b01c3e2228",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/certification-protocol.json": "a116b6d886f7e1f7ffcf7f00f61032bc10c965875f0da30278cee215e7303927",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/maps.json": "f59610a52bc27029f26cbf36b0d7ce3f7406ca52b9eedd183688eb99a9debf07",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/protocol.json": "5926ee37f3171f90dcb3af59d75f971fd36f91d7dbd1ba4517a53dd7f50c727a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/result.json": "a09fa6712fa56e5193449b87869413082f7cba75a4ea1601e6c408f96591a7ce",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0834215/wave-01/seed.json": "15081061e718c6acab242187220454e012261e270f444bbdb1d51f7df84b5c02",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/certification-ledger.json": "b4545c54fc9220c845e03b7ea65087240b1215d7c4718790a09430184de18019",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/certification-protocol.json": "9dfc7f18e85f9bd6d5771600823578d0bc3ff4e1f90415e3c73da972709181e0",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/maps.json": "0e7c98b566c840159d8600b1bf1d844fd419ea17e399fd295575403ffc66c2d3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/protocol.json": "a4e52e456d4042c4a43922818795e3942af98613b1a84dee01b1473d063863ac",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/result.json": "7c801bf2208bcf30fb148e7d9eec597faf0da11cfec2e92a5324f51f1d96e1ea",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0840111/wave-01/seed.json": "0454fae98b74cf434e7c7a8d36e354ddafbbc98e46a3ab94b1e3531ccdcd0887",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/certification-ledger.json": "950a314f2eb5e7311deeaa26d02683523d808765346e7e35c6b0750759b0eb78",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/certification-protocol.json": "b97b79c0993f0a8c9f3129166769ec596254edc99a710f78e77154d191032af6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/maps.json": "d61164b2b3ce08cc4ddff9a53a8c6d94dbb600acc1f4002baac77258283c9300",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/protocol.json": "f8ff7ed34a0e6a56edf847581e796025718bdab1803f17fcf9917349c7c1f886",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/result.json": "e04861588ef4ba142cc2d3ed48eefae3e2ebd8157eb5c03bbc33fb682ab4729f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0879623/wave-01/seed.json": "3eff084c2186bb7e931bf8e975d3a3fcc059e019a04804545a3b50d3e6587bf2",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/certification-ledger.json": "d3aaad45dfdd8b0d5e6669dd6cde3278d1cc280249c2e6eb0fe56616e2c76b75",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/certification-protocol.json": "d1c93437ee7c818985ae7887ec2aafe86d0014bdc470f7a603ebb42c173bc0ca",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/maps.json": "c463550171e129511a4d16ddc9d946beb57f65b4a36e882bb8b81dc7d1fac060",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/protocol.json": "d5b3bff602420ba75293d50c368e6cde3bbbf63681de745edaa266eb33110105",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/result.json": "696cf831398de615bb3e4b7ef980b5086c7145095d6878e6a6497d531b785767",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0880594/wave-01/seed.json": "3fbe63df56bb67e8c90bf4e29789703069531d7e7875321ebc4e1e68c7f16b38",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/certification-ledger.json": "3813e4f83651b376b6f4cdb9cf27691e41bc5d28460ff5061159e51046c7d7b1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/certification-protocol.json": "0b8a3fb4ada883c62e90dfffa5352ac2b4055f9dab21f6125a59604cc26581b1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/maps.json": "0fc9acdb745ca0117f1fc7cecea4467eab697396f96f476128dbc1b7af40084f",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/protocol.json": "655bf18328f47f5e6ff1a2244b26e85bd649fc34070ed7ba828ae9660904ba57",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/result.json": "401ef57cbf853bcd4c05e5075739dfa720716f038288ef97d7b0b8ec379d81a8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0927322/wave-01/seed.json": "5643f08ed63cc7be94753cbd3a303b5f9462b2aefbde11c01b9dbb930fbeecd8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/certification-ledger.json": "d3f5173857ce89970ecf712c22cfac06f576ccbbb3cdd6032caa16b1cbaa0a87",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/certification-protocol.json": "5cd51fd4a9f849df80873c313edd9ddcb6b2c0fdd28e5845310a146367fd5df7",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/maps.json": "d66fbeb43973c9c806f3fe3a8ea30aac274923fc52f7450b2911505be3b34fc6",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/protocol.json": "8b30eed180e4b03d9b3b2a9220dcea7b4c28734ef4c2ffeafc3a1398fdb2abc0",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/result.json": "c274d0aee017b2471e77696eab416adbf9d345c010bee39c21cf76b07d5f76f5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0933687/wave-01/seed.json": "543c156831a7939a08e5d83a6f9bc5ad672c827da070bb700b249a5954383355",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/certification-ledger.json": "ae56821d75358b1d561231d6ca9e549582192da101bab0b1d2af4dc0ac71f60d",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/certification-protocol.json": "9890b6c36a21c074e2668a543082382daae8b14b0ec89ab60003c7a61364e1ec",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/maps.json": "6cdffba8d8ef5d871b9a4f999bf0b69b95d36e9e6e96024f8c9f8bb2827b2e0c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/protocol.json": "d2ef580061c0595bd439df7284c61ec2ca837f2b42bb967239cef773e8c823f8",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/result.json": "cc5cf32d7bec04ab690ac0a405507e85eaaccc8bc67468edc09ad6c79ab8afb4",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0966474/wave-01/seed.json": "212ed439bdca0777d113119b5126eb743f876f1e6e953d15b7e041b69006966c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/certification-ledger.json": "8390fd1fae9dca7d5fe360c43ab21b57126c9cecb4cf012d9c699ef7dcce7bc3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/certification-protocol.json": "95f2ea246d46390a9c391f26d9312acb18088560fd44b221bac378cf41734c25",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/maps.json": "bc2cecd50555a53bcdfb9328ef19f31603e57b7ef11bbc708a470ba4db062435",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/protocol.json": "b98582bddb875b3dadfad59e55982d6ade1ff7f4e94022e21c3bc9686fd89788",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/result.json": "beee51f69419a2fab16e7b3c3539f0ed90d6f695157eb93d51669569a39edff5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-0980628/wave-01/seed.json": "b0511913f9744a273adbc81eb0b6323ffa1d97ea95f0fd3f5b12c90f19f345a3",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/certification-ledger.json": "ee439081b423344487c0fadb8dcbdecc8f8a5953154ae94c0c96eaf8c246b31e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/certification-protocol.json": "8bbdad57ceb59ebef313b5fb7648990acecb1dcb326e02da03c9bbf655cc9df1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/maps.json": "cd101d1499a79443e57aae4d24e93c617441acd93dd2df5abe65d95b5a66bb0a",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/protocol.json": "c0e3b27db09d7d9f2ccb7287e556d4c51bc679585589d7a85327b0d3de70cb66",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/result.json": "aa034c1a80a977d66a5244ac5b7881b834dcc148758b1021d306c58bb0134cc5",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1016138/wave-01/seed.json": "3674889c1f210c9a9d4ce1c657bd20c66ed79ffc88844752046b603d4c977396",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/certification-ledger.json": "7697c2eb25bf2cbcadc5c8c2a6f0a42aaaff548ce72f8e97fccef63bb363a85c",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/certification-protocol.json": "11834de9a2544777fde74e3192ac6736984314ae9c2d31276badb1d0cf94b4e1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/maps.json": "e02aebe60fb3f5337f4f03ba988de70c20788681248e35b93db7e254241e9a14",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/protocol.json": "30241bda90b66f1ce5aaec4f8980e29e02a4d0db726a9b38b9fa5096023fb2b7",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/result.json": "110cf0a126b9231e12ada199e9735474ad597dfaa71359853f4a3e0fbad175f1",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1017037/wave-01/seed.json": "f34291b743648ac647ff43e3f2e585d90cd9b0c11a3c2bae861ab880dbbb1999",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/certification-ledger.json": "25bfc2202d0cd94461fefb0b8399e4cbce5bede0301adf725979963b689f94fb",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/certification-protocol.json": "3b9e726e82acc2978eb2f28543123a8ac1635f61216a913e493034153ba1f274",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/maps.json": "9395f15b1a6fe4d3ee6591b276d4cb3bf78803648a9c67e0ff7dfbb9550e129e",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/protocol.json": "0214296d5d11f8dff1342caaf841ff477c4e1e8d8bad908b9c17ad4983b80837",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/result.json": "4cdf6844545d85187f7470925f9961b07a4282a9956a517db91175c7f614f289",
+    "artifacts/local/elliptic-curves/det1092-record-scale-points-v1/scale-1037401/wave-01/seed.json": "ba4668e286fab267a7cade0c63d26a567ccad4f0f6287f7a9380082f6123a3bf"
+  },
+  "ledger_sha256": "ab7287eaf2589948ad5569d29f0a35e4ab64eb3e9c93cb0c22bbcfee76405177",
+  "protocol_sha256": "2e79c527802fcfbee0e358cd268872676a88cc0b2134536b36c2bb785cbe490c",
+  "rows": [
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 70.36878226220142,
+      "height_bin": 10,
+      "id": "scale-0131232",
+      "parameter": "-341739/441188",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 55.456257642945275,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.33617657516152,
+      "height_bin": 10,
+      "id": "scale-0257585",
+      "parameter": "469338/225187",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.469194195000455,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.62468979309779,
+      "height_bin": 10,
+      "id": "scale-0487239",
+      "parameter": "-204213/34628",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 51.8325360059971,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 68.70589648501482,
+      "height_bin": 10,
+      "id": "scale-0177036",
+      "parameter": "-72838/45725",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.81807755189948,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 68.81140050990507,
+      "height_bin": 10,
+      "id": "scale-0470020",
+      "parameter": "293038/371809",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 53.55002473294735,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.01844799623359,
+      "height_bin": 10,
+      "id": "scale-0880594",
+      "parameter": "-60817/237198",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 51.85982255102135,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 75.90930591721553,
+      "height_bin": 10,
+      "id": "scale-0413022",
+      "parameter": "-158194/105381",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 60.80918957001995,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 73.19942724786233,
+      "height_bin": 10,
+      "id": "scale-0388291",
+      "parameter": "94532/27833",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 57.75942637794651,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 73.91971515724435,
+      "height_bin": 10,
+      "id": "scale-0691410",
+      "parameter": "-332178/441317",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 58.360129565000534,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.36724497599062,
+      "height_bin": 10,
+      "id": "scale-0980628",
+      "parameter": "345247/407828",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.261461662943475,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 60.36142428801395,
+      "height_bin": 10,
+      "id": "scale-0133940",
+      "parameter": "-115393/60280",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 45.21132785396185,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 68.68669524102006,
+      "height_bin": 10,
+      "id": "scale-0290097",
+      "parameter": "430237/450288",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 53.65313267509919,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 70.66528989409562,
+      "height_bin": 10,
+      "id": "scale-0578388",
+      "parameter": "849510/871577",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 55.76877660001628,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.90150025184266,
+      "height_bin": 10,
+      "id": "scale-0751246",
+      "parameter": "-16399/298965",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.19236198998988,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 61.24424871685915,
+      "height_bin": 10,
+      "id": "scale-0834215",
+      "parameter": "402314/991871",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 46.91666786605492,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 69.61082420207094,
+      "height_bin": 10,
+      "id": "scale-0800956",
+      "parameter": "-126087/154372",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 54.664458150044084,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 60.58572903100867,
+      "height_bin": 10,
+      "id": "scale-0185392",
+      "parameter": "-25954/420067",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 45.829518920974806,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.22032244200818,
+      "height_bin": 10,
+      "id": "scale-1037401",
+      "parameter": "-208093/257246",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 49.99838515592273,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 70.99170239688829,
+      "height_bin": 10,
+      "id": "scale-0043332",
+      "parameter": "-65032/152533",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 56.47282861592248,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 69.82834191503935,
+      "height_bin": 10,
+      "id": "scale-0385316",
+      "parameter": "269354/195031",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 55.01343554700725,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 62.36478117806837,
+      "height_bin": 10,
+      "id": "scale-0213106",
+      "parameter": "184019/474399",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 47.20144555205479,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 68.80821748601738,
+      "height_bin": 10,
+      "id": "scale-0542153",
+      "parameter": "199481/12328",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 53.444179806043394,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 62.4626186019741,
+      "height_bin": 10,
+      "id": "scale-1017037",
+      "parameter": "1010659/703710",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 47.921581292990595,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 70.39620847511105,
+      "height_bin": 10,
+      "id": "scale-0804474",
+      "parameter": "-313647/496990",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 54.472652388038114,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 64.77939018502366,
+      "height_bin": 11,
+      "id": "scale-1016138",
+      "parameter": "-874337/473297",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 51.109481919091195,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 66.66815453895833,
+      "height_bin": 11,
+      "id": "scale-0217956",
+      "parameter": "466787/115463",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.44976733496878,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.92380599596072,
+      "height_bin": 11,
+      "id": "scale-0400496",
+      "parameter": "-296804/735125",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.141746661043726,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.95396988687571,
+      "height_bin": 11,
+      "id": "scale-0735967",
+      "parameter": "-216967/843335",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 51.8334541519871,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.03964653681032,
+      "height_bin": 11,
+      "id": "scale-0879623",
+      "parameter": "-427495/661543",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.93882630893495,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 58.64102905197069,
+      "height_bin": 11,
+      "id": "scale-0784611",
+      "parameter": "-860311/318188",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 44.66895820805803,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.88783461006824,
+      "height_bin": 11,
+      "id": "scale-0546347",
+      "parameter": "-502814/414009",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 54.01188315998297,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 64.6219358658418,
+      "height_bin": 11,
+      "id": "scale-0392018",
+      "parameter": "922667/109153",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.852999876020476,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 64.17411843093578,
+      "height_bin": 11,
+      "id": "scale-0840111",
+      "parameter": "-510668/721809",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.39916903199628,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 63.25040993397124,
+      "height_bin": 11,
+      "id": "scale-0707991",
+      "parameter": "-328613/383933",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 49.17685202707071,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 66.82789564912673,
+      "height_bin": 11,
+      "id": "scale-0499565",
+      "parameter": "-668670/943969",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.65237456699833,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 62.579491795855574,
+      "height_bin": 11,
+      "id": "scale-0933687",
+      "parameter": "-84662/759449",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 48.50377354910597,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 63.761624388047494,
+      "height_bin": 11,
+      "id": "scale-0327807",
+      "parameter": "-936029/17163",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.197369191912,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 60.85252432490233,
+      "height_bin": 11,
+      "id": "scale-0706308",
+      "parameter": "-614621/513288",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 47.12579186598305,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 58.344644449069165,
+      "height_bin": 11,
+      "id": "scale-0361865",
+      "parameter": "-752573/838048",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 44.772399784997106,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 71.9806657001609,
+      "height_bin": 11,
+      "id": "scale-0927322",
+      "parameter": "759958/9799",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 58.10972041008063,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "strong",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 66.72278312291019,
+      "height_bin": 11,
+      "id": "scale-0272443",
+      "parameter": "988207/9767",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 53.36193190398626,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 66.18088025215548,
+      "height_bin": 11,
+      "id": "scale-0966474",
+      "parameter": "-735577/117601",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 52.25273477297742,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 59.11689245386515,
+      "height_bin": 11,
+      "id": "scale-0590501",
+      "parameter": "850424/281241",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 44.93943017499987,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 68.63462068198714,
+      "height_bin": 11,
+      "id": "scale-0034486",
+      "parameter": "838438/505117",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 54.718600347987376,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "moderate",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 69.96373860619497,
+      "height_bin": 11,
+      "id": "scale-0748009",
+      "parameter": "-338656/970593",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 55.83891892200336,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.66154192900285,
+      "height_bin": 11,
+      "id": "scale-0786210",
+      "parameter": "652814/239339",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 50.66082595998887,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 65.82317584496923,
+      "height_bin": 11,
+      "id": "scale-0531213",
+      "parameter": "-1017112/1018077",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 51.85509910294786,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    },
+    {
+      "certified_boxes": 49,
+      "certified_gains": 0,
+      "certified_rank_lower_bound": 17,
+      "completed_stage_seconds": 67.8464290658012,
+      "height_bin": 11,
+      "id": "scale-0645889",
+      "parameter": "968696/611415",
+      "point_boxes_completed": 49,
+      "point_worker_seconds": 53.56007166998461,
+      "status": "PASS",
+      "stop_reason": "NO_CERTIFIED_GAIN",
+      "stratum": "lower_fixed",
+      "waves": [
+        {
+          "certified_rank_lower_bound": 17,
+          "completed_boxes": 49,
+          "id": "wave-01",
+          "initial_rank": 17
+        }
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.det1092-record-scale-point-report.v1",
+  "selected_curves": 48,
+  "status": "PASS",
+  "strata": {
+    "10:lower_fixed": {
+      "certified_boxes": 196,
+      "certified_gains": 0,
+      "completed_curves": 4,
+      "completed_stage_seconds": 264.0318257411709,
+      "point_boxes_completed": 196,
+      "point_worker_seconds": 203.0398590391269,
+      "selected_curves": 4
+    },
+    "10:moderate": {
+      "certified_boxes": 196,
+      "certified_gains": 0,
+      "completed_curves": 4,
+      "completed_stage_seconds": 266.6260957849445,
+      "point_boxes_completed": 196,
+      "point_worker_seconds": 207.31416823982727,
+      "selected_curves": 4
+    },
+    "10:strong": {
+      "certified_boxes": 784,
+      "certified_gains": 0,
+      "completed_curves": 16,
+      "completed_stage_seconds": 1096.7310695138294,
+      "point_boxes_completed": 784,
+      "point_worker_seconds": 853.5828449908877,
+      "selected_curves": 16
+    },
+    "11:lower_fixed": {
+      "certified_boxes": 196,
+      "certified_gains": 0,
+      "completed_curves": 4,
+      "completed_stage_seconds": 269.29488544596825,
+      "point_boxes_completed": 196,
+      "point_worker_seconds": 211.9149156549247,
+      "selected_curves": 4
+    },
+    "11:moderate": {
+      "certified_boxes": 196,
+      "certified_gains": 0,
+      "completed_curves": 4,
+      "completed_stage_seconds": 260.65517651091795,
+      "point_boxes_completed": 196,
+      "point_worker_seconds": 205.27269719995093,
+      "selected_curves": 4
+    },
+    "11:strong": {
+      "certified_boxes": 784,
+      "certified_gains": 0,
+      "completed_curves": 16,
+      "completed_stage_seconds": 1031.2871413435787,
+      "point_boxes_completed": 784,
+      "point_worker_seconds": 808.9445680482313,
+      "selected_curves": 16
+    }
+  }
+}

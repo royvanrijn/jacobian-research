@@ -1,6 +1,16 @@
 # A11 equation-cost route search handoff (2026-08-24)
 
-## Status
+## Current boundary
+
+The physical q4/orbit208, q4/orbit1584, q4/orbit164, q8/orbit376 and
+q12/orbit5867 equation route is complete through the saturated, source-identified
+MW17 endpoint. See the [canonical closeout](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+The q10 equation lift is an optional uncompiled alternative. The q6/orbit1307
+component-10 continuation and q4/orbit230--q6/orbit1315 cost promotion are
+withdrawn. Preserve their exact lattice repairs; do not use their historical
+agent instructions to reopen construction or a completed shell search.
+
+## Historical route decisions and corrections
 
 **Promoted physical q4/orbit208 replacement (2026-08-25).** The physical
 component-chamber search has superseded the q10/RR15 lifting target by the
@@ -50,7 +60,7 @@ with status `PASS_EXACT_QQ_PHYSICAL_Q4O208_3A3_RR_AND_JACOBIAN`.
 The equation-effective C5 point/sign and full old-curve equation marking have
 also been attached exactly. The old automatic suffix nevertheless fails the
 physical zero gate; the active continuation is now q4/orbit1584 followed by
-q4/orbit164, q8/orbit376, and q12/orbit4484, as recorded in
+q4/orbit164, q8/orbit376, and the completed q12/orbit5867 endpoint, as recorded in
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 The q10 certificates remain exact and reusable, but q10 is no longer the
 active lifting target.
@@ -75,7 +85,7 @@ score came from a Weyl/chamber pseudo-zero. The exact q4 equation return and
 its effective changed zero (the nonidentity component of the forward I2 at
 infinity) remain valid; the returned frontier could be reranked using only
 equation-effective curves, but that work is parked while the selected
-physical suffix is open. Do not use q6/orbit1315 as a lifting target on the
+physical suffix was being completed. That suffix is now closed. Do not use q6/orbit1315 as a lifting target on the
 strength of the old score.
 
 The earlier q6/orbit1307 score 10,334 is also withdrawn as an equation target.
@@ -95,13 +105,13 @@ The durable replay is
 [`../artifacts/local/elkies-k3/q24-2a5-q6o1307-physical-nef-audit.json`](../artifacts/local/elkies-k3/q24-2a5-q6o1307-physical-nef-audit.json),
 with status `PASS_EXACT_Q6O1307_PHYSICAL_WEYL_REPAIR_REJECT_C10_ZERO`.
 
-<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE 9ee5630063324558 -->
-<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE a8889fef54ee3b47 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE a5f8ab2e2cc6c3a5 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE 97a27c2d5865e517 -->
 
 The first-q8 and D13 lattice improvements remain separately certified, but
 their combined cost totals that included 4,199 are withdrawn. The physical
 q4/orbit208 edge above is the proved entrance to the current q4/orbit1584,
-q4/orbit164, q8/orbit376, q12/orbit4484 suffix; q10 below is retained as the
+q4/orbit164, q8/orbit376, q12/orbit5867 suffix; q10 below is retained as the
 superseded physical repair.
 
 <!-- status-consumer: EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE ba6ee6488fce2411 -->
@@ -109,7 +119,7 @@ superseded physical repair.
 
 ## Superseded physical q10 target
 
-<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE e8dbe599e076f13d -->
+<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE 20a662e4249157c3 -->
 
 The canonical historical q104 class is not nef in the equation chamber.  Its
 complete physical Weyl reduction yields
@@ -479,9 +489,9 @@ R17.  Thus the promoted route from A11 has q sequence
 ```
 
 and resumes the existing route immediately after `3A3`. This remains an exact
-historical certificate, but the lifting agent should now use the cheaper
-q4/orbit230 and q6/orbit1315 double-zero splice above after completing the
-already-active A11 q8/orbit12 lift.
+historical lattice certificate. Its component-10 continuation and the
+later q4/orbit230--q6/orbit1315 cost promotion are both withdrawn.
+The A11 q8/orbit12 lift and the selected physical endpoint route are complete.
 The canonical machine certificate is
 [`../artifacts/generated-results/elkies-k3-h3-a5a5-q6o1307-promoted-route-certificate.json`](../artifacts/generated-results/elkies-k3-h3-a5a5-q6o1307-promoted-route-certificate.json),
 and the exhaustive ranking is
@@ -634,8 +644,9 @@ and
 [`../artifacts/generated-results/elkies-k3-h3-a11-q9d3o1802-lattice-certificate.json`](../artifacts/generated-results/elkies-k3-h3-a11-q9d3o1802-lattice-certificate.json).
 
 These negative A11 degree-three branches did not change the decision at that
-stage.  The later q6/orbit1307 zero-loop search above supplies the strict-cost
-fully certified route and supersedes that earlier no-promotion boundary.
+stage.  The later q6/orbit1307 zero-loop search initially supplied a cost promotion,
+but the physical component audit withdrew that continuation. The numerical
+comparison is historical, not a surviving equation-cost certificate.
 
 ## Earlier equation-D13 branch
 
@@ -736,10 +747,10 @@ Neither corridor currently has a certified cheap A11/orbit12 prefix, and the
 degree-three detour's `P.O=10` tradeoff is not clearly preferable to the
 all-degree-two corridor.  The physical MW3 frame was separately probed at its
 correct q24--q40 scale; the bounded fixed-chamber search found no nef
-degree-two candidate.  These reverse-corridor results do not affect the later
-q6/orbit1307 promotion.
+degree-two candidate.  These reverse-corridor results are historical lattice controls; the later
+q6/orbit1307 equation-cost promotion was withdrawn.
 
-## Requested exchange with the lifting agent
+## Historical exchange with the lifting agent
 
 The lifting agent supplied an exact characteristic-zero bridge section during
 this search. The artifact
@@ -749,8 +760,8 @@ has status `PASS_EXACT_Q24_A11_BRIDGE_M_SECTION_QQ`, equation `P.O=8`, pinned
 closes the requested bridge-class gap but confirms that the current lift is
 extremely expensive.
 
-Please add a note or machine artifact with either of the following when it
-becomes available:
+The historical exchange requested the following, now recorded by the
+component-9 zero and completed physical route above:
 
 - the actual zero chosen by the equation compiler after orbit12;
 - measured resolved-RR dimensions or coefficient growth for the current
@@ -774,9 +785,9 @@ and
 
 After the effective-zero pivot, P1229 for the q6/orbit1307 route was certified
 exactly over QQ with degrees `(4,6,0)`, 1,000-digit branch agreement, and
-maximum rational coefficient height 1,259,550 bits.  P146 is being rebuilt as
+maximum rational coefficient height 1,259,550 bits.  P146 was being rebuilt as
 the exact short word `P_affine+P1+P32` modulo the trivial lattice; the regular
-P1 and P32 Hensel branches are active.  The later physical-nef audit preserves
+P1 and P32 Hensel branches were active at that historical stage.  The later physical-nef audit preserves
 this horizontal and improves the expected RR profile, but withdraws its
 component-10 continuation and 10,334 score.  See
 [`../artifacts/local/elkies-k3/q24-2a5-p1229-scaled-x-qq.json`](../artifacts/local/elkies-k3/q24-2a5-p1229-scaled-x-qq.json).
@@ -796,9 +807,12 @@ filter retains none below the direct q9 contact degree 735.  Thus this entire
 degree-three box also cannot improve the q9 meeting.  Its replay artifact is
 [`../artifacts/generated-results/elkies-k3-h3-current_3A3-d3-q6q9q12-q9lt735-neighbors.json`](../artifacts/generated-results/elkies-k3-h3-current_3A3-d3-q6q9q12-q9lt735-neighbors.json).
 
-## Reproduction
+## Historical reproduction commands
 
-Use the documented Sage Python launcher:
+These commands include exhaustive shell searches and equation reconstruction;
+they are not the cheap cleanup suite. Inspect the retained compact artifact
+and its input manifest first. The canonical completed endpoint above replaces
+the historical routing instructions. The original Sage launcher was:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -906,5 +920,6 @@ python3 elkies-k3/scripts/extract_h92_root_data_frontier.py \
 ```
 
 The exhaustive shell dumps are intentionally not retained after their
-survivors are copied into compact gate artifacts.  Regenerate a shell with
-`search_root_adapted_weyl_neighbors.sage` before replaying a new branch.
+survivors are copied into compact gate artifacts. Missing shells remain
+missing. Reconstruct one with `search_root_adapted_weyl_neighbors.sage` only
+when an explicitly scoped new branch needs that exact input.

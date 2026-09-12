@@ -61,17 +61,30 @@ The first twenty characters were rescored on two disjoint 48-prime blocks,
 scores are target-selection heuristics and are not used in the exact local
 exclusions.
 
-## Replay
+## Retained-record audit and replay boundary
+
+From `research/`, the following command checks the retained two-prime
+records, all input hashes, shell/branch coverage and aggregate counts:
 
 ```bash
-.venv/bin/python \
-  elkies-k3/scripts/audit_r17_norm12_11952_singleton_po0_two_prime_top200.py \
-  --check
-
-.venv/bin/python \
-  elkies-k3/scripts/audit_r17_norm12_11952_singleton_po0_top20.py \
-  --check
+python3 elkies-k3/scripts/audit_retained_r17_singleton_po0.py
 ```
+
+It invokes the unchanged campaign auditors and resolves only two producer
+source pins to their exact
+[generation-time snapshots](../archive/elliptic-curves/runtime-source-snapshots-2026-09-05/index.json).
+The exporter and subprocess wrapper changed during the runtime migration;
+the direct `audit_r17_norm12_11952_singleton_po0_two_prime_top200.py --check`
+therefore rejects current-source hashes. The retained audit neither edits
+those hashes nor executes archived producers. It caches a file digest only
+while the file's identity, size and modification/change times stay fixed
+within that audit; data drift remains an error.
+
+This is an integrity and coverage check on stored results, not an independent
+recalculation of the finite-field shells or Hensel obstructions. Full
+regeneration needs the pinned source environment and explicit scope for
+10,690,517,260 polynomial candidates. The top-150 and top-20 records remain
+historical controls; their existence is not a reason to rerun smaller shells.
 
 ## Boundary
 

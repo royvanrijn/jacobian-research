@@ -1,0 +1,14 @@
+{
+  "address_space_bytes": 1073741824,
+  "boundary": "A failed modular coprimality check is UNKNOWN. This does not test alternative element continuations, arithmetic incidence conditions, ramified base changes, new parameters, strictness of new fibres, or ordinary ideal-class transfer. No exceptional point coordinates or oracle square roots are inputs.",
+  "column": 6,
+  "coprimality_prime": 1000003,
+  "cpu_seconds": 60,
+  "distinguished_atom_rule": "Least projected-atom index in the complete frozen word",
+  "no_retry_or_parameter_enlargement": true,
+  "positive_endpoint": "A complete algebraic definition and exact specialization of the word; plus, if certified, an odd-valuation obstruction along a good-reduction horizontal divisor to this particular word being a rational-point Kummer class over Q(t).",
+  "purpose": "Test the coefficientwise continuation of the complete frozen column-6 principal-atom word, in an explicitly transported MW16-05 cubic algebra. This is a compatibility check, not a new relation collector or carrier search.",
+  "required_projected_atom_count": 1676,
+  "schema": "marked-dependency.continuation-protocol.v1",
+  "worker_count": 1
+}

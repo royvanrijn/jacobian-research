@@ -320,7 +320,12 @@ per prime, enumerates its finite image in at most `#E0(F_p)` steps, caches the
 `E0 -> t` Nagao symbol, and scans a bounded coefficient box. Finalists include
 the exact rational `E0` point and exact `t` value.
 
-## Active search order
+## Historical specialization workflow
+
+This is the paper-integration workflow. Current project priorities are
+`OP-EC-NEXT` and `OP-EC-RANK-JUMP-MECHANISM-20260910` in
+[MATH_STATUS.json](../MATH_STATUS.json); this ordered list is not an active
+campaign or a reason to repeat the completed calibration.
 
 1. Keep the four exact fibres in every score calibration report.
 2. Search compact `t=a/b` with three or more disjoint prime ensembles and rank
@@ -360,6 +365,20 @@ The following are provenance or regression paths, not current priorities:
   known 28 independent points.
 
 ## Reproduction
+
+The commands below record mathematical replays and bounded campaigns; they
+are not a cleanup checklist. The completed factorization, exact
+`theta=-3*x+1` field transport, 120-second BNF diagnostics, 12-cover local
+pilot and 121,589,944-parameter calibration should be reused at their stated
+boundaries. Running a command with `--overwrite` creates a new attempt.
+
+A 2026-09-12 input audit found the retained rank-28 data at the current
+`research/artifacts/` paths, with the same hashes as the older absolute
+paths that omitted `research/`. This includes the factor table, controls,
+local signatures, canonical principal-relation ledger, norm-one two-covers
+and exact specialization input. The old paths are relocation history, not
+missing mathematical data; preserve their stored hashes. No descent,
+class-group, local-solubility or score computation was rerun by that audit.
 
 ```bash
 SAGE=/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python
@@ -463,8 +482,10 @@ python3 elkies-k3/scripts/search_elkies_2026_E0_mw_nagao.py \
 
 The model, coordinate, control, and cover verifiers are exact replays. The
 Nagao command is a complete bounded heuristic ranking. The two local
-residual-descent commands are exact backend attempts, but their pinned timeouts
-are incomplete and authorize no search. The Magma builder/parser is an exact,
+residual-descent commands are exact backend attempts; their pinned timeouts
+supply no Selmer bound or proof-gate decision. A point-based lower-bound
+search has its own explicit model and resource gate, as explained above.
+The Magma builder/parser is an exact,
 fail-closed external path, not a completed computation on this host. The last
 two commands are bounded supporting heuristic searches.
 

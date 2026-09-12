@@ -1,0 +1,78 @@
+{
+  "class_group_and_point_searches": false,
+  "limits": {
+    "A_times_B": 262144,
+    "max_jobs": 2,
+    "wall_seconds_per_field": 180
+  },
+  "old_pilot_tree": {
+    "3aaacd8b380c5a90474408a6/prefix-000128.json": "cc640686cf6cb18b4fe66bae8335952158edee4ab718f0c1ed174382aaa278cf",
+    "3aaacd8b380c5a90474408a6/prefix-001024.json": "d87c4d09b896cbd43013fca2c762de8470e4c497f3682c5931bd794931072362",
+    "3aaacd8b380c5a90474408a6/prefix-008192.json": "821d9a6872348a8ce2669335bb4161d942727e8ab3c31e1e1f7f14bb14d40bee",
+    "3aaacd8b380c5a90474408a6/prefix-016384.json": "78cfc8d52e2be662be18d99fcd64dd6b4d7422369f037ecab44542f926bc9452",
+    "3aaacd8b380c5a90474408a6/relations-000128.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+    "3aaacd8b380c5a90474408a6/relations-001024.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+    "3aaacd8b380c5a90474408a6/relations-008192.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+    "3aaacd8b380c5a90474408a6/relations-016384.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+    "3aaacd8b380c5a90474408a6/result.json": "0b086517a455e164f984d05a6bb9517da7ec37380cf6a540c3727bcb6273d986",
+    "3aaacd8b380c5a90474408a6/setup.json": "ad8f41e9993dea063b3b171a7807eeee161347655c94b37f556e81ddf29a66ad",
+    "3aaacd8b380c5a90474408a6/supervisor.json": "0abfa4b6d284b5833192755389ad9bcf623b5a03e5bf10355015217c540d2634",
+    "3aaacd8b380c5a90474408a6/worker.log": "49ec8517a76afddca0a1d5fce6e66bbbdd84020df5904a9eb941ab172dd2740b",
+    "7dfba62880b8a143a8e12069/prefix-000128.json": "513dd470831843cda78824c48860f483cfc7cf97d7d902ab30c4bda1a3e37dfe",
+    "7dfba62880b8a143a8e12069/prefix-001024.json": "ec71250b85d3efa721cc1c2de9bfdfaf983e47918e0541eb81d1e33f2b3acf84",
+    "7dfba62880b8a143a8e12069/prefix-008192.json": "aa229da26a35b8364fa7376ada1b039abd0dacd70caba64bea94257ee2cb897c",
+    "7dfba62880b8a143a8e12069/prefix-016384.json": "e0f6f4cef45c9eccc007bfc444beb6d27dded264401a55021597fa5a776d96d2",
+    "7dfba62880b8a143a8e12069/relations-000128.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+    "7dfba62880b8a143a8e12069/relations-001024.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+    "7dfba62880b8a143a8e12069/relations-008192.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+    "7dfba62880b8a143a8e12069/relations-016384.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+    "7dfba62880b8a143a8e12069/result.json": "fc705bd877ad94148d3d9a069021b89b4ff31a183fd7a6fb1b28f2204a34767f",
+    "7dfba62880b8a143a8e12069/setup.json": "bb735fa3bf6f75384a04e01998a3934de271886af324f0516f33a1a8745ad76c",
+    "7dfba62880b8a143a8e12069/supervisor.json": "68da4030c7df8d3d0640929e92a106b29827895a5a4526c41808fcb079813388",
+    "7dfba62880b8a143a8e12069/worker.log": "6638eaae963ef0db2aa60f7a8c8f0e7373e618924aceca270a904e9e14caf331",
+    "CENSORING.md": "f71d9d76a1cd031d7fe50a6e6c0d68b6bc59affec7660f759dea701044b408ae",
+    "REPLAY.json": "cf957cdce1dfff351645f1391d11b71d96cb42efec32766358b5d6e80b14b5e9",
+    "REPORT.json": "a07570d98ec3586881aebee63ffdc4d48e4553bfc218ff137cc28c53f0ea327c",
+    "SUMMARY.md": "d36e7dd13e1bd1b0aec49b8a8f7a7af4690faa58b28e98181820fb90c7910c43",
+    "censoring_audit.json": "74251c9c4338ee10579145e1d735995aba5174e07dd5ae47d99222a9d659f6f4",
+    "inputs/3aaacd8b380c5a90474408a6.json": "e934685aa3259b5ad0e7a050392aef513d43fa26314820a7edb9a33dcc0f010a",
+    "inputs/7dfba62880b8a143a8e12069.json": "185c279f05c9afee6017460d2f098b1f3154c7bf03f1730955be6ac29045d058",
+    "plan.json": "adc165821f76732c841654dde860b8c13dc064abea9436c993af180486838e49"
+  },
+  "rows": [
+    {
+      "bk_local_term": 9,
+      "cohort": "prospective_broad_2080",
+      "curve_key": "7dfba62880b8a143a8e12069",
+      "family": "11952",
+      "final_rank_lower_bound": 25,
+      "forced_g_lower_from_known_rank": 16,
+      "selection_mode": "frozen_prospective",
+      "t": "921/653"
+    },
+    {
+      "bk_local_term": 10,
+      "cohort": "historical_external",
+      "curve_key": "3aaacd8b380c5a90474408a6",
+      "family": "11952",
+      "final_rank_lower_bound": 28,
+      "forced_g_lower_from_known_rank": 18,
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "110314/102227"
+    }
+  ],
+  "runtime": {
+    "memory_gb": 0.0,
+    "sage": "/home/royvanrijn/.local/bin/sage",
+    "sage_sha256": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+    "sage_version": "10.9",
+    "timeout_seconds": 60
+  },
+  "schema": "elliptic-curves.two-class-skew-supervisor.v1",
+  "selection": "same retrospective two-field engineering control, not a prospective rank prediction",
+  "sources": {
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/run_two_class_skew.py": "c9a61886f5532e83db32b82e3074083cf0c397d2a60593ce720d6b2a8b3ee657",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_skew_core.py": "347ce6bc4910b7a07a3c2b463f628f3252f8ce93131ae6481314c3e55b15af9e",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_skew_sieve.sage": "a2de3ce06119e6ba8e1181adf4f21e81d398d5ef80a8c8c8c3eb98f86a856816"
+  }
+}

@@ -1,0 +1,551 @@
+[
+  {
+    "id": "KIG7",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "A4 root-incidence derivative split",
+    "scope": "For the scaled Jensen--Ledet--Yui quartic, the inverse of P'(T) has an explicit four-term representative in the finite free rank-four root algebra. A quartic primitive I gives det d(I/Omega,Q/Omega)/d(T,Q)=1/P'(T) when Omega^2 is the discriminant, and I remains a generic primitive element, so the four-sheet root field is recoverable. After the A4 specialization, exact coefficient divisibility leaves a genuine residual sigma-pole in I/Omega. On the ordinary rational root chart the selected root, derivative, and orientation have exact pullback factorizations, and the derivative suspension retains Jacobian H^6/(2 Theta K^6 L^3); the reciprocal required by that chart is still H^3/(4K^3L). This is not an affine polynomial Keller map; a new root chart or nontriangular Q-linear coordinates with two source-dependent masks remain open.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG1",
+      "KIG2",
+      "external: Jensen--Ledet--Yui generic A4 polynomial"
+    ],
+    "checker": "scripts/verify_a4_root_incidence_derivative_split.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:005d982a619a766bb51ba1e37cdfbae404a048546f79ca8dc602638d140f0e2e",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG8",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Rank-four expansion of the correct A4 chart unit",
+    "scope": "Exact interpolation over the four V4-conjugate roots expresses the ordinary chart reciprocal H^3/(4K^3L) as (3 B p0+B p1 T+p2 T^2-p3 T^3)/(72 B^2 rho sigma), with coefficient degrees 9,6,6,3. The three denominator factors B, rho, and sigma are irreducible and pairwise coprime. Grouping them as B^2 and rho sigma gives a localized diagonal two-mask suspension whose fourfold rational Jacobian is one and whose generic degree-four A4 field is unchanged. Exact gcd and quotient-ring tests show that both mask coordinates retain genuine target poles. This is not a polynomial Keller map; the remaining task is an affine source modification realizing those two mask divisors.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG7"
+    ],
+    "checker": "scripts/verify_a4_chart_unit_rank_four.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG9",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Local viability screen for the A4 two-mask divisors",
+    "scope": "The reduced divisors B, rho, and sigma underlying the localized rank-four two-mask suspension are not simple normal crossings. Sigma has singular scheme (a^2,rho); every divisor pair has the same nontransverse scheme; and the triple-intersection ideal is (a^3,rho). In local coordinates z=rho and c=2 beta+3, one has B=a^3-3az+cz and sigma=c a^3-3a^2z+z^2. Thus B^2 and rho sigma have local orders two and three, while the p3 numerator coefficient has order one. This excludes the simplest normal-crossings two-mask chart, but not a resolution-aware affine modification of the common cluster.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG8"
+    ],
+    "checker": "scripts/verify_a4_two_mask_local_viability.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:25a58662477100ce50f161ba80abf2c2a56e6a69dc6a49e3abd091c5a7c0ebdd",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG10",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Resolved divisor allocation for the A4 two-mask chart",
+    "scope": "Four ordinary point blowups resolve the common A4 boundary cluster, with exceptional rays E1=(1,1), E2=(1,2), E3=(1,3), and F=(2,3) in (a,rho). The exceptional orders of B^2 are (2,4,6,6), and those of rho sigma are (3,5,6,9). Newton polygons of the characteristic polynomial of the full rank-four numerator give branch orders E1: 6,4,4,4; E2: 8,7,7,7; E3: 9,9,9,9; and F: 15,12,12,12. The resulting minimum residual mask orders are respectively 0,1,1,1; 1,2,2,2; 3,3,3,3; and 0,3,3,3. On strict transforms, B leaves one normalized mask order on every branch, rho leaves one on three branches, and sigma is canceled divisorially. Hence the local divisor-allocation intervals are explicit, but no allocation removes every residual mask. Because the residual orders differ over branches above the same exceptional divisor, target-monomial contraction is impossible; root-dependent principal Cartier masks and their gluing remain open.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG8",
+      "KIG9"
+    ],
+    "checker": "scripts/verify_a4_chart_unit_rank_four.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG11",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Forced A4 rho-selector and polynomial-descent obstruction",
+    "scope": "Modulo rho, the specialized A4 quartic factors exactly as (T-3a^3)(T+a^3)^3. The full chart numerator vanishes on the simple component T=3a^3 but is generically 144a^9(2 beta+3) on the triple component T=-a^3, so G=T+a^3 is the forced reduced selector for the uncanceled rho pole. Its exceptional orders are uniformly (1,2,3,3) over E1,E2,E3,F, and its strict-rho orders are one on the normalized triple component and zero on the simple component. Hence the strict selector is Cartier on the resolved charts after dividing G by the exceptional chart equations. However, its height-one prime (rho,T+a^3) lies in the cluster maximal ideal (a,rho,T). Any product of regular polynomial masks vanishing on the forced triple component therefore has positive order on every E1 branch, contradicting the exact residual vector (0,1,1,1). Thus no two masks in the original polynomial root algebra realize the exact resolved residual divisor. A genuinely new affine modification adjoining exceptional quotients remains open.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG10"
+    ],
+    "checker": "scripts/verify_a4_chart_unit_rank_four.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:9ad234ef649bcd0eced0900880b5c9bf3f40a9e2a1b5ae19e6c1aa871f466448",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG12",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "A4 exceptional-quotient affine-modification obstruction",
+    "scope": "Adjoining q=(T+a^3)/a^3 gives a hypersurface whose fiber over a=0 has fourth order along c^2+27=0; the resulting cluster cylinder is codimension-one singular, so the direct affine-modification ring is nonnormal. The forced integral correction w=rho/a^3 gives the exact E3 complete-intersection chart but retains two conjugate surface singularities at a=0, q=1, 27w=c. On the F chart a=u^2k, rho=u^3k, G=u^3r, the exceptional equation is exactly one simple line times one triple line cubed, and the total surface is nonnormal along the triple line. Normalizing that line forces s=(2r-(c-9)k)/u and reaches the next singular fan center u=k=s=0. Completing the adjacent charts reconstructs the negative-definite E1-F-E2-E3 resolution, whose self-intersections are (-3,-1,-3,-1); it is smooth but nonaffine because it contains complete exceptional curves. Thus the canonical full-chain affine-modification route is singular or nonnormal on individual affine charts and nonaffine when completed. A remaining model would have to delete a new codimension-one divisor and enlarge the determinant ledger.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG11"
+    ],
+    "checker": "scripts/verify_a4_affine_modification_obstruction.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e695cb4c2c9eb38ddf2efcdf5ee5f0fbc2f711a2705403e041a704b4b87cae25",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG13",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Corrected A4 exceptional selector and coarse deletion candidate",
+    "scope": "On the first resolved A4 chart the exceptional quartic factors as one simple line times one triple line cubed. Correcting the simple selector one order further gives Hhat=4c(2T-(27-3c)rho)-27(c-9)a rho, whose root orders on E1,E2,E3,F are (2,1,1,1), (3,2,2,2), (3,3,3,3), and (6,3,3,3). Consequently T(T+a^3)/Hhat has exactly the complete residual mask vectors (0,1,1,1), (1,2,2,2), (3,3,3,3), and (0,3,3,3), together with the required normalized strict-B and strict-rho orders. It splits as M1=B T/Hhat and M2=(T+a^3)/B. The coefficient-plane norm of Hhat is irreducible of degree 16 with exceptional multiplicities (5,15,9,12) in chain order E1,F,E2,E3. The coarse deletion {F,E3,B,Hhat} is unimodular, and F+E3+B+2Hhat intersects the exceptional chain in (1,1,2,6), so it passes the relative unit, Picard, and ampleness screens. This is an exact coarse candidate; KIG14 records its normalized-incidence obstruction.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG12"
+    ],
+    "checker": "scripts/verify_a4_corrected_boundary_selector.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG14",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Normalized A4 corrected-deletion class obstruction",
+    "scope": "Above each retained exceptional divisor E1 and E2, the quartic pullback has one simple branch and one triple branch. Centering the triple line gives Newton coefficient orders (1,1,1,0,0), hence a distinct normalized component of slope 1/3; the proposed open retains at least four independent exceptional prime classes. Strict B contributes only one deleted prime: all roots have B-order 1/2, the residual polynomial is (U^2-3A)^2, and A has odd order three on the normalized B-curve, so U^2-3A is irreducible with residue and ramification degrees two. Hhat is linear in T with irreducible norm and also contributes one prime. Deleted components over F and E3 remove at most their own exceptional directions, while any further boundary resolution adds one class and one deletion together. The divisor exact sequence therefore leaves relative class rank at least two. Thus the normalized {F,E3,B,Hhat} open is not affine space and cannot become affine space after polynomial stabilization. KIG15 strengthens this rank count to a terminal index-two obstruction for every boundary enlargement retaining the same forced mask primes.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG13"
+    ],
+    "checker": "scripts/verify_a4_corrected_boundary_selector.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG15",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "A3 discriminant-lattice obstruction for the corrected A4 masks",
+    "scope": "The normalized exceptional divisor over the A4 boundary cluster is the seven-curve chain with self-intersections (-3,-1,-3,-4,-1,-3,-1), determinant -4, and Smith form (1,1,1,1,1,1,4). Four explicit (-1)-curve contractions leave the (-2,-2,-2) A3 chain, so the local discriminant group is Z/4. The divisor chi=16a^2-8ab-12a+rho, paired with an explicit linear root selector L_chi whose norm is chi times an irreducible degree-14 complement, gives an odd curvette generator. In a basis of the full dual lattice, the strict B and Hhat prime classes forced by the first corrected split are (4,6,2,0,0,0,-6) and (7,9,3,0,0,0,-12). The B class itself has coordinate gcd two, and the pair's 2-by-2 minors also have gcd two. Thus the irreducible strict B prime cannot occur in any boundary basis. The local divisor exact sequence rules out every resolved boundary enlargement retaining this forced mask prime from having simultaneously trivial boundary units and trivial relative class group. This closes the B-containing factorization, not the corrected total mask or the A4 Keller problem; KIG16 records a B-free factorization which survives the lattice screen.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG14"
+    ],
+    "checker": "scripts/verify_a4_corrected_boundary_selector.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG16",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "B-free A4 curvette-mask candidate",
+    "scope": "With chi=16a^2-8ab-12a+rho and the explicit linear root selector L_chi from KIG15, the corrected total mask has the B-free factorization M1=T*L_chi/Hhat and M2=(T+a^3)/L_chi. The normalized exceptional orders are (0,-1,0,1,3,2,3) and (0,1,1,2,3,1,0), so the only exceptional pole is F_simple; the genuine horizontal poles are Hhat and the two irreducible norm components chi and q14. Their four forced classes span a primitive sublattice. Among completions by three exceptional primes, the unique unimodular boundary is {F_simple,E2_triple,F_triple,E1_triple,Hhat,D_chi,D_14}. The effective divisor F_simple+E2_triple+2F_triple+6E1_triple+2D_Hhat+D_chi+5D_14 has intersections (2,1,1,7,1,1,1) with the seven exceptional curves. Thus this B-free split passes the normalized local unit, class, and relative-ampleness screens. KIG17 proves that its indispensable Hhat and D_14 boundaries have genera thirteen and twenty, so the affine complement is not A2.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG15"
+    ],
+    "checker": "scripts/verify_a4_corrected_boundary_selector.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:f4cdabcbfb7257a77557a35572626e8b14868053aecaccf3cb294a80a4d88852",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG17",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Positive-genus obstruction for the corrected A4 selectors",
+    "scope": "The corrected selector Hhat is linear in the selected root, and its coefficient-plane norm is the irreducible degree-16 curve already certified in KIG13. Exact projective normalization with Singular normal.lib gives geometric genus 13. The curvette selector is also linear; exact division gives Norm(L_chi)=chi*q14 with q14 of degree 14, and its projective normalization has geometric genus 20. Hence the strict Hhat and D_14 primes on the resolved root incidence are positive-genus boundary components. If the B-free complement from KIG16 were A2, a common smooth resolution with P2 would have to map the genus-13 strict transform either birationally to the rational line at infinity or exceptionally to a point; both are impossible because exceptional components of birational morphisms between smooth surfaces are rational. Therefore the B-free complement is not A2. Since every factorization of the corrected total mask retains its genuine Hhat pole, the corrected selector path is closed. This does not solve the A4 Keller problem: a continuation must replace Hhat by a selector with rational horizontal prime components or use a different root chart.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG16",
+      "external: Singular 4.4.1 normal.lib genus computation",
+      "external: resolution of birational maps between smooth surfaces",
+      "external: rationality of exceptional curves for smooth surface blowups"
+    ],
+    "checker": "scripts/verify_a4_corrected_boundary_genus.sing",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:c4d3de98cb2cefa0d54e07050814b369037564ca07c33ed5872361fa4bc4ecc3",
+    "software_lock": [],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG18",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Low-degree A4 selector floor and exact one-jet correction",
+    "scope": "Let V_{d,r} be the A4 selected-root polynomials of ordinary total degree at most d, selected-root degree at most r, and normalized exceptional valuation vector at least (2,6,3,3,6,3,3) in the seven-curve order. Exact truncated simple-root jets and rational linear algebra give V_{2,1}=0, V_{2,2}=<T^2>, dim(V_{3,1})=6 with an explicit basis q0,...,q5, and V_{3,2}=V_{3,1}+<T^2,aT^2,bT^2>. Four displayed root-linear basis elements have exactly the required unsplit order vectors (2,1,1,1), (3,2,2,2), (3,3,3,3), and (6,3,3,3). The pole-degree leading form shows that a nonzero root-quadratic coefficient forces norm degree at least 24, a quadratic coefficient of T forces norm degree 20, and every exact selector in the remaining span <q0,q1,q3> has norm degree exactly 16. Hence no total-degree-at-most-three, root-degree-at-most-two selector with horizontal norm degree below 16 can have both the required valuations and genus zero. The bound is sharp because q1 and q3 have exact valuations and degree-16 norms. Beyond the sharp plane, 3*q1+q2=T*rho and 6*q3+q4=a*J with J=(b+6)*T-81*rho. J has the required normalized truncation on six branches and only the simple-F residue (27/4)*c*k^2*u^5 on the seventh. For R=9*a*b^2+27*a*b-162*a-8*b^3-36*b^2-108*b-108, rho*R has only the simple-F residue -243*k^2*u^5, so S_jet=36*J+(2*b+3)*rho*R is an exact selector on all seven branches with irreducible norm degree 24. Its correction obeys the exact syzygies (c+9)*Hhat-16*c*J=-12*rho*R and 12*S_jet=64*rho*J-c*(c+9)*Hhat. This theorem does not classify the sharp degree-16 plane or the higher correction space.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG17",
+      "KIG13"
+    ],
+    "checker": "scripts/verify_a4_genus_zero_selector_search.py",
+    "proof_type": "unclassified",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:96f56858f5a42296c2204a57c2e6ab416d495567ee461bde309aababe94bcbae",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the absence of a bounded rational-horizontal selector search"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG19",
+    "kind": "reproduction",
+    "state": "proved",
+    "title": "Sharp-bound A4 selector genus probes",
+    "scope": "Two explicit exact root-linear selectors from KIG18 have irreducible coefficient-plane norms of degree 16. Singular normal.lib computes geometric genera 12 and 14 for their projective normalizations. The displayed perturbation q1+a^3 also has an irreducible degree-16 norm of genus 12. The near-selector J=(b+6)*T-81*rho has an irreducible degree-16 norm of genus 10. These exact computations reject four displayed selectors at the rational-component gate. They are probes, not an exhaustive classification of the projective parameter plane P<q0,q1,q3> or the one-jet correction space, and they imply no affine reconstruction claim.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG18",
+      "external: Singular 4.4.1 normal.lib genus computation"
+    ],
+    "checker": "scripts/verify_a4_genus_zero_selector_search.sing",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:7312fa65918d4af42a8a7b58992dd9ed6a99ecbdffc9e3989bb2c3eecfcfaf0d",
+    "software_lock": [],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG23",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "Sharp A4 selector-plane strict model and rational infinity hierarchy",
+    "scope": "On the rational A4 selected-root chart, the sharp selector plane P<q0,q1,q3> has a common fixed K^3 component whose removal gives the degree-ten strict net 12*lambda*R0+3*mu*R1+4*nu*R3, with degrees (9,10,10) and gcd one. Root-chart field recovery makes an integral strict member birational to its horizontal norm curve. Absolute factorization over rational function fields proves geometric integrality of the generic plane member and of the generic nu=0 pencil member. The two fixed points at infinity have an exact rational-parameter tangent-cone hierarchy: the exceptional lines meet at [9:-4:0], an absolutely irreducible genus-ten curve, and the unique deepest rational point [65:-4:4] is an absolutely irreducible genus-nine curve. Thus the fixed-infinity degenerations found here do not yield a rational horizontal component. Separately, every one of the 864 primitive rational parameters of height at most six is absolutely irreducible, and the height-at-most-three genus census consists of 15 genus-twelve and 129 genus-fourteen curves. These height censuses are bounded experiments, not a classification: larger-height moving singularities or further affine-cluster degeneration remain open, and no affine-space complement or Keller map is constructed.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG18",
+      "KIG19",
+      "external: Singular absfact.lib and normal.lib"
+    ],
+    "checker": "scripts/verify_a4_sharp_selector_plane.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:45054677720ea557dd38268abb53f10e8403488446b20a31eba49f11fbf70e59",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the sharp A4 selector plane represented only by three isolated genus probes"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG24",
+    "kind": "corollary",
+    "state": "partial",
+    "title": "A4 moving critical curve and first rational norm component",
+    "scope": "For the degree-ten strict A4 selector net of KIG23, the value-and-gradient determinant factors exactly as -54*M^2*D23, where D23 is irreducible over Q of degree 23 and has the displayed structured leading form. Its generic kernel map to the selector plane has primitive coordinate degrees (19,18,18). On M=0 the generic kernel is the nonexact selector q0; the only rank drops of the other columns are the universal fixed cluster and one conjugate quadratic pair whose conjugate kernel ratios have rational intersection q0, so M contributes no rational exact moving selector. The restriction D23(0,V)=8*(2V+3)^2*(4V+87)*(V^2+3V+9)^10 yields two exact rational selectors. The member [77:-16:-8] is absolutely irreducible of genus 12 and has new ordinary nodes at (0,-3/2) and [-2:1:0]. The member [103:-16:8] factors on the strict chart as 36*U*G9, where G9 is absolutely irreducible of genus 10. Its coefficient-plane norm factors as a rational conic a^2-4b^2-12b-36 and an absolutely irreducible genus-ten degree-14 component birational to G9. This is the first rational horizontal component found in the sharp selector plane, but the same selector retains the positive-genus residual and therefore fails the all-rational-component gate. KIG25 closes principal isolation of this conic for every positive multiplicity. The full parameter-plane image of D23 is not implicitized, and no affine-space complement or Keller map is constructed.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG23",
+      "external: Singular primdec.lib, absfact.lib, and normal.lib"
+    ],
+    "checker": "scripts/verify_a4_sharp_selector_plane.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:45054677720ea557dd38268abb53f10e8403488446b20a31eba49f11fbf70e59",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the moving singularities of the sharp A4 selector plane as wholly unlocated"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "KIG25"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG25",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Purified A4 conic and all-multiplicity conductor obstruction",
+    "scope": "The rational conic component q2=a^2-4*b^2-12*b-36 of KIG24 has pure height-one root-incidence prime p=(q2,L), where L=2*T+3*a*b^2+6*b^3+9*a*b+27*a-162 and S103=16*(3*a-6*b+4)*L+12*(103*a-12*b^2-36*b-108)*q2. Exact elimination gives Res_T(P,L)=-3*q2*R10, with R10 absolutely irreducible of degree 10 and genus 2. On the rational root chart L=3*U*K^3*G5/H^3, where G5 is absolutely irreducible of degree 5 and genus 2. Writing 16*P=L*C-3*q2*R10, the simultaneous conormal coefficient-zero locus is two quadratic closed points, hence four geometric points, where p needs two generators. At the universal cluster, the conic meets the simple E2 component, which is the middle curve of the minimal A3 chain; its class is 2 in Z/4 and its local Cartier index is exactly 2. At the other quadratic pair, rho and B are units, sigma is a smooth conductor, and the selected root is exactly double with rank-two tangent cone. Two explicit root-chart preimages map to the same point with coefficient Jacobians -32/27 and -4, proving an ordinary two-branch conductor node. The pullbacks q2=U*K^2*J3/H^2 and L=3*U*K^3*G5/H^3 show that p is divisorial on the U=0 branch but only a transverse codimension-two incidence on the other; q2 meets the conductor transversely. Conductor matching plus the principal ideal theorem therefore forces every principal function vanishing on a positive multiple of p to acquire another height-one component. No positive principal divisor has support only p. This closes the rational conic route, but does not exclude a different rational-horizontal selector or construct a Keller map.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG24",
+      "KIG15",
+      "external: Singular primdec.lib, absfact.lib, and normal.lib"
+    ],
+    "checker": "scripts/verify_a4_conic_principal_obstruction.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:49851b6d137373a889f25406c8f3fc9ce7aa96118b11855cbc7b2c01e98a1baa",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "coefficient-one principal isolation of the first rational A4 norm conic as untested",
+      "support-only positive multiples of the first rational A4 norm conic as open"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG26",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Degree-twenty A4 factor kernels and full affine-line theorem",
+    "scope": "For the six-dimensional root-linear valuation space <q0,...,q5>, q5=a^2*T, removal of the common K^3 pullback gives strict root-chart degrees (12,13,14,13,14,14) and gcd one. In the integral basis (q0,4*q1,4*q2,3*q3,q4,q5), the complete K-divisibility kernel is spanned by (0,3,1,0,0,0), (0,0,0,2,1,0), and q5; the complete M-kernel is spanned by q0, (0,0,0,2,1,0), and q5; the chart-rho kernel is spanned by (0,3,1,0,0,0). For graph lines U=m*V+n in the full space, let f0,...,f3 be the four consecutive 6-by-6 coefficient minors. Exact resultants give gcd_i Res_m(f0,fi)=n^16*(4*n^2+6*n+9)^81; on n=0 their gcd is m^4, while the corresponding vertical-line gcd is (n^2+3*n+9)^15. The two quadratics are anisotropic over Q, so U=0 is the only rational affine line. Its complete selector kernel is spanned by (309,-12,0,8,0,0) and (0,-3,-1,0,0,1). The first is the known [103:-16:0:8:0:0] direction with degree-nine genus-ten residual; the second is q5-4*(3*q1+q2)=T*(a^2-4*rho), the old rational conic multiplied by T, not a new isolated boundary. Thus the full affine-line problem in this stratum is closed; nonlinear rational components remain open. An exhaustive good-reduction conic sieve checks all 3875 projective degree-two forms over F_5. The only rank drops are the reductions of M, K, rho_V and one exceptional point Q=U^2+V^2+3V+4 with selector (1,-1,1,0,0,0). In the monic U^2 and s0 charts the exceptional lift tree has 5, 25, and 0 solutions modulo 25, 125, and 625, so that residue has no characteristic-zero lift. Consequently a new rational conic must either lose quadratic degree modulo 5 or specialize into a nonreduced K/M/rho_V neighborhood; this is not a full characteristic-zero conic classification. An exhaustive cubic-component sieve factors all 3906 projective selector members over F_5. The only irreducible cubic factors are A_*, L, H, and Q_c=U^3-12*U*V^2-16*V^3-36*U*V-72*V^2-108*U-216*V-216; Q_c has selector kernel (0,-3,-1,0,0,1) and is the known cubic factor of T*(a^2-4*rho). At all 38 non-H incidence points the tangent kernel has zero factor-coordinate part. Every excess tangent occurs on the artificial H plane. On the transverse slice R3+x*R4+y*R5, the bounded lift counts through eight levels are 5,5,25,25,125,125,625,625; these counts are an experiment, not a characteristic-zero existence or nonexistence theorem. Hence a new rational irreducible cubic must lose degree modulo 5, reduce reducibly, or enter the nontransverse H-adic neighborhood; this is not a global characteristic-zero cubic classification. Separately, bounded Singular censuses find that all 175680 primitive q-height-at-most-six parameters on q5=0 and all 58095 primitive q-height-at-most-three parameters in the full space are rationally reducible exactly on the projectivized K/M kernels. Those two censuses are experiments, not a classification of nonlinear rational components or larger heights.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG18",
+      "KIG24",
+      "external: Singular exact determinants, resultants, gcds, and factorization"
+    ],
+    "checker": "scripts/verify_a4_degree_twenty_line_selectors.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:22a29a1595d0fbe8f2bd9aa621c07ecdcd010d09ae427e3df72d7e324bd17fab",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the degree-twenty root-linear stratum as wholly unsearched",
+      "q2 and q4 as possible sources of a new rational affine-line selector on q5=0",
+      "affine lines with nonzero q5 coefficient as an open degree-twenty selector source",
+      "the generic good-reduction conic chart as wholly unsearched",
+      "the good-reduction irreducible-cubic selector layer as wholly unsearched"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "KIG27",
+    "kind": "reproduction",
+    "state": "proved",
+    "title": "A4 one-jet near-selector and corrected genus obstruction",
+    "scope": "The near-selector J=(b+6)*T-81*rho from KIG18 has an absolutely irreducible coefficient-plane norm of degree 16 and geometric genus 10. Its exact correction S_jet=36*J+(2*b+3)*rho*R has irreducible norm degree 24. On the rational root chart, its cleared numerator is exactly divisible by the fixed K^3 and leaves a degree-18 strict residual. Singular factorization, absfact.lib, and normal.lib prove that this residual is absolutely irreducible of geometric genus 31. Thus both the one-jet near miss and the first explicit exact correction fail the rational-component gate. This is not a classification of the higher correction module and gives no affine reconstruction or Keller map.",
+    "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+    "dependencies": [
+      "KIG18",
+      "KIG13",
+      "external: Singular 4.4.1 absfact.lib and normal.lib"
+    ],
+    "checker": "scripts/verify_a4_degree_twenty_near_selector.sing",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:04655e4670e4cdda582f9ea9feb02b7a013f5ebcbf126442b0c8557ef563cc81",
+    "software_lock": [],
+    "supersedes_notes": [
+      "the quotient (6*q3+q4)/a as only an unexplained reducible direction"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  }
+]

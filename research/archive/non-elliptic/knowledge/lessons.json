@@ -1,0 +1,2774 @@
+{
+  "schema_version": 1,
+  "purpose": "Sourced engineering decisions and scoped failed approaches; MATH_STATUS.json remains the sole mathematical-status authority.",
+  "lessons": [
+    {
+      "id": "METHOD-EXACT-ENDPOINTS",
+      "area": "core",
+      "title": "Separate discovery, identity replay and proof scope",
+      "when": "Any finite search, modular experiment or certificate promotion.",
+      "use": "Freeze inputs and bounds; verify exact identities; state the mathematical implication and its hypotheses. Record independent replay, formal proof and external review separately.",
+      "avoid": "Interpreting a completed box, matching hash, numerical residual or good-prime success as a theorem outside its scope.",
+      "boundary": "Source hashes establish integrity. They do not establish mathematical correctness or independent implementation.",
+      "reopen_when": "A new exact certificate closes the missing implication.",
+      "claims": [],
+      "sources": [
+        "verified/README.md",
+        "MATH_STATUS.json"
+      ],
+      "implementation": [
+        "scripts/audit_discovery_registry.py"
+      ],
+      "keywords": [
+        "certificate",
+        "finite",
+        "UNKNOWN",
+        "fail-closed"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-SATURATION",
+      "area": "core",
+      "title": "Saturate the intended geometric open before elimination",
+      "when": "Collision ideals, Fitting modules, boundary components or resolved Riemann–Roch modules.",
+      "use": "Identify the boundary and wrong-thickness factors, saturate by the required open, and retain a certificate of the resulting ideal or module.",
+      "avoid": "Counting degenerate collision factors or imposing independent rows on conditions with resolution-graph syzygies.",
+      "boundary": "Saturation changes the geometric locus. Every excluded factor and its interpretation must be explicit.",
+      "reopen_when": "The proposed problem uses a different open or a genuinely new boundary stratum.",
+      "claims": [
+        "SST1"
+      ],
+      "sources": [
+        "plane-jc/UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md",
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "saturation",
+        "elimination",
+        "Fitting",
+        "Groebner"
+      ],
+      "reviewed_claims": {
+        "SST1": "12c5cb15e8b6de26"
+      }
+    },
+    {
+      "id": "METHOD-CENSUS-COVERAGE",
+      "area": "geometry",
+      "title": "Audit the exact universe, not just totals",
+      "when": "Finite support, orbit, chart or parameter censuses.",
+      "use": "Reconstruct the ordered universe; require one record per key; compare explicit predecessor unions with the final complement. Keep a cheap coverage audit separate from elimination replay.",
+      "avoid": "Using aggregate counts or the complement of the last batch to certify that all earlier cases were actually closed.",
+      "boundary": "A complete finite census remains limited to its basis, degree, roster and equivalence relation.",
+      "reopen_when": "The universe, equivalence relation or mathematical coverage argument changes.",
+      "claims": [
+        "SIC2B33SP9"
+      ],
+      "sources": [
+        "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "census",
+        "coverage",
+        "duplicates",
+        "completeness"
+      ],
+      "reviewed_claims": {
+        "SIC2B33SP9": "29fe499aaf8bc6de"
+      }
+    },
+    {
+      "id": "METHOD-GVC-CLOSURE",
+      "area": "geometry",
+      "title": "Use the binary closure and finite cutoff",
+      "when": "Starting another binary GVC promotion or low-degree search.",
+      "use": "Start from the Hall-envelope closure and finite-certificate note; use its proved rational decision procedure and operator-independent cutoff.",
+      "avoid": "Reopening the prime-dependent Hall/carry promotion route as if unrestricted binary GVC were still open.",
+      "boundary": "The Hall/carry subtheorems remain useful; their parked promotion statement is neither proved nor needed by the closure. Ternary minimum degree and efficient polarization are separate questions.",
+      "reopen_when": "A task explicitly concerns the historical promotion statement or a hypothesis outside the binary theorem.",
+      "claims": [
+        "GVC2ENV",
+        "GVC2SC",
+        "GVC2OC",
+        "GVC2ALL",
+        "GVC3HC"
+      ],
+      "sources": [
+        "extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md",
+        "extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "binary",
+        "GVC",
+        "Hall",
+        "cutoff",
+        "carry"
+      ],
+      "reviewed_claims": {
+        "GVC2ENV": "fca2e7df96a1ea80",
+        "GVC2SC": "f31ee48fbbecd427",
+        "GVC2OC": "75a2a340b8aa099a",
+        "GVC2ALL": "ce1f1020cd7621fa",
+        "GVC3HC": "18bcc7c7dcd52939"
+      }
+    },
+    {
+      "id": "METHOD-MOMENT-NULLCONE",
+      "area": "geometry",
+      "title": "Distinguish pure-moment vanishing from SIC failure",
+      "when": "A semistable point has a long or all-order zero pure-moment sequence.",
+      "use": "Test a fixed multiplier and its mixed tail, using an all-order identity when claiming failure. Preserve the Rodrigues point as a negative control for moment–nullcone equality.",
+      "avoid": "Treating semistability plus pure-zero moments as a mixed-moment counterexample.",
+      "boundary": "The bidegree-(3,3) Rodrigues orbit is SIC-safe despite falsifying moment–nullcone equality. Dense bidegree-(3,3) classification remains open.",
+      "reopen_when": "A new multiplier has an exact infinite nonzero tail, or a new all-order safety theorem applies.",
+      "claims": [
+        "OP-SIC2-MN",
+        "OP-SIC2-B33"
+      ],
+      "sources": [
+        "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
+        "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "SIC",
+        "Rodrigues",
+        "nullcone",
+        "mixed moment"
+      ],
+      "reviewed_claims": {
+        "OP-SIC2-MN": "947ee5fe48719a12",
+        "OP-SIC2-B33": "690ddcb13eafdb3f"
+      }
+    },
+    {
+      "id": "METHOD-HOLONOMIC-BOUNDARIES",
+      "area": "geometry",
+      "title": "Prove recurrence boundaries before inferring all-order vanishing",
+      "when": "Compiling sparse contraction moments into hypergeometric sums.",
+      "use": "Choose independent lattice coordinates, retain factorial zero conventions or explicit boundary terms, and certify the recurrence including its singular indices.",
+      "avoid": "Inferring an all-order zero identity from holonomicity or a bounded zero prefix alone.",
+      "boundary": "The holonomic-framework note supplies methods, not a new universal moment cutoff.",
+      "reopen_when": "A recurrence, its boundary contributions, initial conditions and required ordinary-point hypotheses are certified.",
+      "claims": [],
+      "sources": [
+        "extended-geometry/HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "holonomic",
+        "hypergeometric",
+        "telescoping",
+        "recurrence"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-DANIELEWSKI-NORMALIZE",
+      "area": "geometry",
+      "title": "Close a normalized full ideal before extending support-by-support searches",
+      "when": "Revisiting quadratic Danielewski contraction charts.",
+      "use": "Retain the residual linear-x coefficients, perform the justified linear eliminations, and use the exact rational unit-ideal certificate for the full quadratic space.",
+      "avoid": "Repeating the 28 formerly surviving large-support charts or omitting the three residual coefficients.",
+      "boundary": "The full quadratic obstruction closes degree two; it does not close arbitrary degree.",
+      "reopen_when": "The ansatz has higher degree or a hypothesis outside the certified ambient-quadratic space.",
+      "claims": [],
+      "sources": [
+        "extended-geometry/DANIELEWSKI_FULL_QUADRATIC_OBSTRUCTION.md",
+        "extended-geometry/DANIELEWSKI_ALL_DEGREE_OBSTRUCTION_AUDIT.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "quadratic",
+        "normalization",
+        "msolve",
+        "modular reconstruction"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-HC4-MOTION",
+      "area": "hessian",
+      "title": "Use the corrected motion frame and keep the master equivalence scoped",
+      "when": "HC4 relative-nilpotent or moving-kernel calculations.",
+      "use": "Read the master reduction together with the motion-frame correction and polynomial obstruction. Separate formal leaf solutions from global polynomial realizations.",
+      "avoid": "Reusing the pre-correction motion equations or promoting local affine-leaf integration to a global HC4 proof.",
+      "boundary": "The master reduction is an equivalence with the stated JC2 problem. The open Schur and degree-five entries remain authoritative.",
+      "reopen_when": "A new global polynomial argument closes a named remaining packet.",
+      "claims": [
+        "HC4MR1",
+        "HC4MR2",
+        "HC4MRA1",
+        "HC4MRA2"
+      ],
+      "sources": [
+        "HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md",
+        "HC4_MOTION_FRAME_TRANSPORT_AUDIT.md",
+        "HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "motion",
+        "HC4",
+        "Schur",
+        "polynomial"
+      ],
+      "reviewed_claims": {
+        "HC4MR1": "677f3802e5bd331b",
+        "HC4MR2": "3d360fe31f33ad61",
+        "HC4MRA1": "134a43a6d5418ee7",
+        "HC4MRA2": "f6bf8d52d922f793"
+      }
+    },
+    {
+      "id": "METHOD-PLANE-GLOBAL-GATE",
+      "area": "plane-jc",
+      "title": "Demand global carriers before another boundary census",
+      "when": "Continuing finite-normalization, logarithmic or degree-frontier JC2 work.",
+      "use": "Read both parked programme scopes and their forbidden-route witnesses. Identify the global branch carrier, attachment and compactification data that the proposed calculation supplies.",
+      "avoid": "Expecting local packet numerics, a pole budget or finite enumeration alone to prove the missing global Keller compatibility.",
+      "boundary": "The repository records scoped degree and boundary results; it does not claim a proof of JC2.",
+      "reopen_when": "A concrete global carrier or a new compactification constraint supplies a missing hypothesis.",
+      "claims": [
+        "OP-PLANE",
+        "OP-PLANE-NORM"
+      ],
+      "sources": [
+        "plane-jc/NEXT_DEGREE_FRONTIER.md",
+        "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "JC2",
+        "carrier",
+        "boundary",
+        "finite normalization"
+      ],
+      "reviewed_claims": {
+        "OP-PLANE": "cc4138b362602964",
+        "OP-PLANE-NORM": "9a7061cd6e9fa8a2"
+      }
+    },
+    {
+      "id": "METHOD-K3-MARKING",
+      "area": "elkies-k3",
+      "title": "Use full marked fibrations as identities",
+      "when": "A neighbour route, specialization or change of zero is proposed.",
+      "use": "Carry the embedded U, fibre, actual equation-side zero, effective components, MW coordinates, glue and both integral transports. Re-chamber after specialization.",
+      "avoid": "Identifying states by ADE/MW labels, or ranking equation cost before physical Weyl reduction and zero verification.",
+      "boundary": "A lattice path proves navigation data. Rational equations, section identities, saturation and Picard bounds are separate endpoints.",
+      "reopen_when": "The full marked transport is supplied and the first missing endpoint has a certificate plan.",
+      "claims": [],
+      "sources": [
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "Weyl",
+        "marking",
+        "nef",
+        "zero",
+        "ADE",
+        "specialization"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-K3-Q8-REPAIR",
+      "area": "elkies-k3",
+      "title": "Preserve the q8 denominator and zero-normalization corrections",
+      "when": "Reusing the H3 q8 section or its local IV* conditions.",
+      "use": "Use the corrected marked section; derive residues with the full x and y denominators. Retain the old depth-two entrance and component claims as falsified controls.",
+      "avoid": "Using the wrongly normalized section, omitted denominator factors or old nonidentity-component orientation to compile an RR module.",
+      "boundary": "The corrected section is smooth in the IV* Weierstrass chart. Other unresolved module gates keep their recorded scope.",
+      "reopen_when": "A new calculation uses the corrected equation, zero and physical resolved components.",
+      "claims": [
+        "EC-K3-H3-Q8-CHILD-MARKING",
+        "EC-K3-H3-Q8-CHILD-IVSTAR-ENTRANCE",
+        "EC-K3-H3-Q8-CHILD-IVSTAR-COMPONENT"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "q8",
+        "IVstar",
+        "denominator",
+        "zero translation"
+      ],
+      "reviewed_claims": {
+        "EC-K3-H3-Q8-CHILD-MARKING": "745bf011cb47e7f3",
+        "EC-K3-H3-Q8-CHILD-IVSTAR-ENTRANCE": "86bf6cc2487fd0b4",
+        "EC-K3-H3-Q8-CHILD-IVSTAR-COMPONENT": "ee2d661e3dc73ef0"
+      }
+    },
+    {
+      "id": "METHOD-K3-DIRECT-Q80",
+      "area": "elkies-k3",
+      "title": "Reuse the direct degree-two alternate-Q80 equation",
+      "when": "Recovering the alternate rootless determinant-948 MW17 chart.",
+      "use": "Load the certified direct norm12-orbit-11952 hop and its rational equation and basis before considering another reconstruction route.",
+      "avoid": "Restarting the degree-11511 transport, million-bit third-q12 reconstruction or suffix searches to reach an already explicit endpoint.",
+      "boundary": "Operational supersession does not invalidate the retained exact lattice-route evidence.",
+      "reopen_when": "The task requires a different marked endpoint or the old route itself, with a new cost justification.",
+      "claims": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION"
+      ],
+      "sources": [
+        "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
+        "archive/elkies-k3/README.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "Q80",
+        "q12",
+        "11952",
+        "degree11511",
+        "direct"
+      ],
+      "reviewed_claims": {
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION": "077c6409d76cbe63"
+      }
+    },
+    {
+      "id": "METHOD-K3-ARITHMETIC-FIRST",
+      "area": "elkies-k3",
+      "title": "Check the full rational marking before equation search",
+      "when": "Selecting a different-NS rootless MW17 source over Q.",
+      "use": "Start with T and the stable discriminant-kernel marked curve, including its exact rational-point and CM conditions; only then proceed to NS, rootlessness and equations.",
+      "avoid": "Treating a coarse norm-one point, geometric rank nineteen, modular solution or Hensel branch as a fully rational marking.",
+      "boundary": "Keep the determinant-specific exclusions and the unresolved determinant-1236 descent at their exact scope. No equation handoff follows from an UNKNOWN arithmetic gate.",
+      "reopen_when": "A certified rational non-CM point on the required full marking curve passes the gate.",
+      "claims": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "sources": [
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "NS0024",
+        "NS0031",
+        "determinant1236",
+        "Galois",
+        "Clifford",
+        "marked curve"
+      ],
+      "reviewed_claims": {
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6a9cd04e00dcdaad"
+      }
+    },
+    {
+      "id": "METHOD-EC-PARENT-CLOSED",
+      "area": "elliptic-curves",
+      "title": "Load Curve302's recovered MW17 parent",
+      "when": "Beginning another construction-recovery or seed calculation for Curve302.",
+      "use": "Use the explicit determinant-1092 family, saturated generic17 basis and literal t=0 specialization. Consult its certified primitive core before reconstructing it again.",
+      "avoid": "Treating the alternative parent, equation or full generic section basis as unknown; restarting the completed MW9 baseline to satisfy the same endpoint.",
+      "boundary": "The original discoverer's construction provenance remains UNKNOWN. This alternative parent does not prove rank32 or an exact specialized rank.",
+      "reopen_when": "A new construction target is explicitly stronger or requires a different marked parent.",
+      "claims": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT",
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY"
+      ],
+      "sources": [
+        "elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/load_curve302_recovered_parent.sage"
+      ],
+      "keywords": [
+        "302",
+        "MW17",
+        "det1092",
+        "parent",
+        "recovered"
+      ],
+      "reviewed_claims": {
+        "EC-CURVE302-RECOVERED-MW17-PARENT": "3aba67f4281fcef1",
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY": "f2b5fd05a821379e"
+      }
+    },
+    {
+      "id": "METHOD-EC-FIBRATION-DEDUP",
+      "area": "elliptic-curves",
+      "title": "Deduplicate fibrations before testing subgroup transversality",
+      "when": "Comparing two recovered MW16/MW17 presentations.",
+      "use": "Check exact PGL2(Q) and Weierstrass equivalence, then compare specialized integral subgroups. Keep Curve398's survivor pair as the regression.",
+      "avoid": "Counting two labels of the same fibration as independent generic structures, or selecting a family by generic rank alone.",
+      "boundary": "Generic rank and demonstrated specialization jump are separate axes; chart incidence exclusions are chart-specific.",
+      "reopen_when": "The presentations are inequivalent in the required sense or their actual specialized subgroups differ.",
+      "claims": [
+        "EC-K3-CURVE398-TWO-PARENT-COLLISION"
+      ],
+      "sources": [
+        "elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "398",
+        "PGL2",
+        "transversality",
+        "duplicate"
+      ],
+      "reviewed_claims": {
+        "EC-K3-CURVE398-TWO-PARENT-COLLISION": "626a440519ff77f3"
+      }
+    },
+    {
+      "id": "METHOD-EC-POINTED-FACTOR-FREE",
+      "area": "elliptic-curves",
+      "title": "Construct integral pointed quartics without denominator factorization",
+      "when": "Searching from Q=(a/d²,b/d³) on an integral short curve.",
+      "use": "Compute k=-b/a modulo d² by extended gcd, apply t=d*s+k/d, check every exact division and quartic invariant, then use the shared pointed-quartic API.",
+      "avoid": "Making full factorization or global minimalization a prerequisite for raw point exposure.",
+      "boundary": "The safe rational clearing scale may retain large coefficients and does not prove minimality. Both ordinate signs and slope infinity need exact transport checks.",
+      "reopen_when": "The requested arithmetic endpoint actually requires a certified minimal model or factor support.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/POINTED_QUARTIC_SIEVE.md",
+        "elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py"
+      ],
+      "keywords": [
+        "factor-free",
+        "denominator",
+        "quartic",
+        "gcd",
+        "preconditioning"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-SIEVE",
+      "area": "elliptic-curves",
+      "title": "Filter homogeneous quartic values before big-integer evaluation",
+      "when": "Enumerating a bounded rational-slope box.",
+      "use": "Precompute useful square-residue filters, retain zero residues and p-dividing-denominator cases, batch small-prime filters, then test surviving integer squares exactly with GMP.",
+      "avoid": "Interpreting these square-value filters as full local-solubility or Selmer tests; recording an interrupted denominator row as a completed box.",
+      "boundary": "Only fully accounted denominator intervals establish completed coverage. Worker timeouts remain censored.",
+      "reopen_when": "A new box or backend policy has explicit coverage and transport checks.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/POINTED_QUARTIC_SIEVE.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp"
+      ],
+      "keywords": [
+        "GMP",
+        "sieve",
+        "homogeneous",
+        "timeout",
+        "denominator"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-ARITHMETIC-CACHE",
+      "area": "elliptic-curves",
+      "title": "Reuse exact model and field contexts",
+      "when": "Repeated discriminant, field, finite-reduction or local-descent work on the same inputs.",
+      "use": "Use ArithmeticContext, TwoTorsionContext and immutable witness caches; retain generator maps, maximal-basis transports, proved factor support and exact model/prime identities.",
+      "avoid": "Refactoring the same field polynomial, losing the inverse polredabs map, or silently rediscovering missing arithmetic during replay.",
+      "boundary": "Replay consumes retained witnesses and preserves missing-data status. Hash equality is integrity, not proof.",
+      "reopen_when": "Model, field labelling, prime, source version or required proof scope changes.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md",
+        "elliptic-curves/cas/research_runtime/README.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/research_runtime/arithmetic.py",
+        "elliptic-curves/cas/research_runtime/store.py",
+        "elliptic-curves/cas/research_runtime/sage_arithmetic.py"
+      ],
+      "keywords": [
+        "cache",
+        "polredabs",
+        "factorization",
+        "maximal order",
+        "BNF"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-INCREMENTAL-RANK",
+      "area": "elliptic-curves",
+      "title": "Admit new points with cached finite-quotient columns",
+      "when": "A search cloud gains points while the current independent subgroup is retained.",
+      "use": "Reuse finite-reduction signatures and incremental column bases, escalating to additional primes only on ambiguity. Maintain immutable MWState transitions and an exact final certificate.",
+      "avoid": "Reclassifying the entire cloud after each point or treating a failed finite-column test as dependence.",
+      "boundary": "Full finite-quotient column rank with the stated torsion checks proves a lower bound. Failure remains UNKNOWN.",
+      "reopen_when": "The model, subgroup or required reduction witnesses change.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md",
+        "elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/research_runtime/finite_reduction.py",
+        "elliptic-curves/cas/research_runtime/mw_state.py"
+      ],
+      "keywords": [
+        "independence",
+        "column",
+        "incremental",
+        "rank",
+        "torsion"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-CENTRE-POLICY",
+      "area": "elliptic-curves",
+      "title": "Keep shallow enumeration, deep centres and adaptive coverage distinct",
+      "when": "Selecting half-lattice centres or transferring a chart metric between families.",
+      "use": "Use the declared height/scoring Gram and calibrate centre selection at fixed exposure. Preserve V1/V2/V3 as separate frozen rules; V3 adds stratified coverage and Pareto/quantile shortlists.",
+      "avoid": "Calling nearest-first traversal a deep-hole policy, interpreting an identity-Gram MW18 null result as backend insensitivity, or narrowing to fixed top-k survivors.",
+      "boundary": "V1 reached28, V2 reached30 and calibrated V3 reached31 on302; these are bounded calibration outcomes, not universal sensitivity or prospective rank predictions.",
+      "reopen_when": "A new family or policy passes a separately frozen control gate without target leakage.",
+      "claims": [
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-20260907",
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-V2-20260907",
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-V3-20260908"
+      ],
+      "sources": [
+        "elliptic-curves/notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md",
+        "elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/research_runtime/cvp.py",
+        "elliptic-curves/cas/research_runtime/deep_centres.py"
+      ],
+      "keywords": [
+        "V1",
+        "V2",
+        "V3",
+        "deep holes",
+        "CVP",
+        "Pareto",
+        "quantile"
+      ],
+      "reviewed_claims": {
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-20260907": "c331facf63be6106",
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-V2-20260907": "93091eab53fbff0d",
+        "EC-ADAPTIVE-HALF-LATTICE-CASCADE-V3-20260908": "b4ecaa5085b7870f"
+      }
+    },
+    {
+      "id": "METHOD-EC-LEAN-MAPS",
+      "area": "elliptic-curves",
+      "title": "Bound map construction separately from point search",
+      "when": "Running a compatible native-seed short pass.",
+      "use": "Use the lean preconditioned runner, isolated map-worker limits and the factor-free coordinate lane. Initialize PARI through cypari2 where supported, retaining exact map dictionaries and receipts.",
+      "avoid": "Letting minimization consume the whole search budget or loading sage.all into every isolated map worker.",
+      "boundary": "The recorded roughly4.3x improvement is a fixed map-worker component comparison, not an end-to-end speedup. Coordinate maps can expose different bounded boxes.",
+      "reopen_when": "The input protocol is compatible and a new bounded pass is in scope.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/run_lean_preconditioned_seed_v3.py",
+        "elliptic-curves/cas/audit_lean_map_workers.py"
+      ],
+      "keywords": [
+        "lean",
+        "cypari2",
+        "startup",
+        "minimization",
+        "map timeout"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-CACHED-CONTINUATION",
+      "area": "elliptic-curves",
+      "title": "Reuse a sealed landscape without rerunning its construction",
+      "when": "Continuing a compatible completed seed pass with the same basis and metric.",
+      "use": "Bind the parent independent landscape verification; keep inherited maps at original paths; replay their identities and all new point witnesses in a new receipt chain.",
+      "avoid": "Silently starting workers for missing or censored inherited maps, or repeating full CVP proof work without an input change.",
+      "boundary": "A changed basis requires a new landscape and rational-CVP replay. Inherited verification and full fresh verification perform different work.",
+      "reopen_when": "The compatible continuation has new exposure and a declared budget; otherwise reuse the completed result.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/run_lean_cached_seed_v3.py"
+      ],
+      "keywords": [
+        "cached",
+        "CVP",
+        "receipts",
+        "landscape",
+        "replay"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-BOX-DEDUP",
+      "area": "elliptic-curves",
+      "title": "Check actual bounded-box equivalence before another point call",
+      "when": "Comparing completed pointed charts under a new map policy.",
+      "use": "Use exact rational centres up to sign and projective-box keys for t,-t,1/t,-1/t. Apply the box equivalence only at the same bound with infinity included.",
+      "avoid": "Treating every change of quartic presentation as new point exposure, or treating arbitrary PGL2 transformations as preserving a bounded box.",
+      "boundary": "The helper proves equivalence for signed coordinate permutations of the declared box; it is not general coordinate-invariant height coverage.",
+      "reopen_when": "The preflight demonstrates a genuinely new box or an explicitly larger budget.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md",
+        "elliptic-curves/notes/CURVE92_PRODUCTIVE_V3_SEARCH_2026-09-09.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/pointed_box_equivalence.py",
+        "elliptic-curves/cas/prepare_lean_preconditioned_exposure.py"
+      ],
+      "keywords": [
+        "projective",
+        "box",
+        "duplicate",
+        "exposure",
+        "preflight"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-PARENT-SPAN",
+      "area": "elliptic-curves",
+      "title": "Diversify outside the earlier productive-parent span",
+      "when": "Repeated productive-anchor or pairwise policies have stalled.",
+      "use": "Audit the span of earlier winning masks and certify prospective generic classes outside it before constructing a bounded new parent bank.",
+      "avoid": "Assuming pairwise closure of earlier productive directions reaches all later successful classes.",
+      "boundary": "The302 retrospective mask audit diagnoses a coverage limitation. It is not a predictor and its oracle labels must not enter prospective selection.",
+      "reopen_when": "A frozen bank adds certified new generic coverage under the stated budget.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/PRODUCTIVE_PARENT_SPAN_REASSESSMENT_2026-09-09.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "parent",
+        "span",
+        "pairwise",
+        "coverage",
+        "302"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-FIXED-FIELD",
+      "area": "elliptic-curves",
+      "title": "Prove generic geometry before a fixed-cubic deformation sweep",
+      "when": "Varying the elliptic equation while preserving its cubic two-division field.",
+      "use": "Compute generic rank and the labelled Kummer transport first; distinguish inherited local classes, restricted Cassels–Tate radicals and actual soluble coverings.",
+      "avoid": "Assuming fixed E[2] preserves the Mordell–Weil group, or treating the forced radical of an odd alternating space as a point.",
+      "boundary": "The theta+u*theta² pencil has arithmetic generic rank zero for its nonsquare B. Low-genus full fixed-cubic transfer is also obstructed in the tested K3 families.",
+      "reopen_when": "The new deformation has a proved generic subgroup or an exact global solubility witness.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/RANK_JUMP_REASSESSMENT_2026-09-05.md",
+        "elliptic-curves/rank-jump/FIXED_CUBIC_TRANSFER_REQUIRES_HIGH_GENUS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "fixed field",
+        "E2",
+        "Sha",
+        "Cassels",
+        "generic rank",
+        "cubic"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-CLASS-RELATIONS",
+      "area": "elliptic-curves",
+      "title": "Separate principal-dependency construction, family transport and class-group bounds",
+      "when": "A factor-base relation matrix or bounded BNF attempt is proposed for rank arithmetic. Also applies when attempting to continue a successful specialized principal dependency with a family parameter still variable.",
+      "use": "Distinguish maximal-order/local computations, selected factor-base image, class-group generation and certified full2-rank. Measure noncanonical relation coverage before widening a comparison. Before writing another collector, read the successful adaptive small-ideal principal-relation constructor on MW16-05 at3/17: it constructed two additional strict classes without exceptional points. Extra-class construction and a full class-group upper bound are distinct tasks. For the published rank-28 control, reuse the proved discriminant factors and exact theta=-3*x+1 reduced-field map; both original and reduced fields already reach the same BNF relation plateau. Preserve all1676/1572 principal atoms and their generic corrections. Define the varying cubic algebra, every element formula and the specialization homomorphism before discussing parameter dependence; specialized prime-ideal columns have no default common coordinate system. Test valuation cancellation in the full continued word before substantial computation.",
+      "avoid": "Calling deficiencies1905/1890 from the sparse two-field pilots full class-rank estimates, or escalating a generic BNF timeout without a new arithmetic plan. Do not reverse-engineer only closing atoms, interpolate specialized coefficients and call it a mechanism, or interpret a presentation-dependent vanishing minor as class creation.",
+      "boundary": "The two pilots and their bounded skew-sieve extension found zero/one noncanonical relations with no new independent relation in the extension. Deficiencies1905/1890 remain factor-base-image bounds; a generation argument is required for a full class-group bound. Missing data remain UNKNOWN. The separate MW16-05 positive constructor remains valid; both frozen covers now have independently verified blind lifts. The sparse two-field pilot does not invalidate it. Its factor-base-1000 pilot has 172 canonical principal rows, zero noncanonical relations and displayed deficiency 141 below the generation bound 1202640; none is an S-class or Selmer bound. The complete coefficientwise continuation of column6 is now defined and obstructed: an exact full-product coprimality certificate gives odd valuations at twelve good geometric parameters. Any parameter cover making this specific word a point class has genus at least5. This does not obstruct the soluble class at3/17, alternative formulas or arithmetic incidence conditions; it is not a reason to launch a higher-genus search.",
+      "reopen_when": "Substantial independent relation coverage and the needed generation/certification argument are available. A family-continuation proposal must additionally supply exact element/specialization maps and explain how its moving valuations cancel; the naive coefficientwise proposal is closed.",
+      "claims": [
+        "EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912",
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912",
+        "EC-K3-ELKIES-2026-R28-S-CLASS-PILOT",
+        "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912"
+      ],
+      "sources": [
+        "elliptic-curves/notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md",
+        "elliptic-curves/notes/ACCESSIBILITY_CLOSURE_AND_11952_RANK_BOUND_2026-09-11.md",
+        "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+        "elliptic-curves/rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md",
+        "elliptic-curves/rank-jump/TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md",
+        "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+        "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md"
+      ],
+      "implementation": [
+        "elliptic-curves/rank-jump/reference_large_support_extraction.py",
+        "elliptic-curves/rank-jump/reference_small_representative_class.py",
+        "elliptic-curves/rank-jump/reference_adaptive_class_completion.py",
+        "elliptic-curves/rank-jump/reference_class_targeted_relations.py",
+        "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
+        "elliptic-curves/rank-jump/finish_frozen_dependency_continuation.py",
+        "elliptic-curves/rank-jump/verify_frozen_dependency_continuation.py"
+      ],
+      "keywords": [
+        "class group",
+        "BNF",
+        "factor base",
+        "relations",
+        "two-class",
+        "Selmer",
+        "family continuation",
+        "principal dependency",
+        "valuation obstruction"
+      ],
+      "reviewed_claims": {
+        "EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912": "6ec31382053cf154",
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "6cf30e028a790fb1",
+        "EC-K3-ELKIES-2026-R28-S-CLASS-PILOT": "10d0c2f8cbc5a782",
+        "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912": "5b11f3aea3cb164f"
+      }
+    },
+    {
+      "id": "METHOD-EC-CENSORING",
+      "area": "elliptic-curves",
+      "title": "Keep timeout censoring and retrospective controls visible",
+      "when": "Comparing arithmetic features across frozen rank-search populations.",
+      "use": "Retain all selected rows, distinguish BASE/LOCAL/CLASS endpoints, report completion by family and size, and separate historical high-rank controls from prospective statistics.",
+      "avoid": "Replacing timeouts with zero, replacing unresolved selected cases, or pooling historical enriched examples into the prospective population.",
+      "boundary": "The broad census has898 LOCAL passes and1182 timeouts. The observed prospective ramification association did not reproduce the historical positive enrichment; this does not exclude every underlying relationship.",
+      "reopen_when": "A new frozen population or a justified missing-data analysis changes the evidential question.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/WIDE_ARITHMETIC_PROFILE_2026-09-12.md",
+        "elliptic-curves/notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "censoring",
+        "timeout",
+        "ramification",
+        "prospective",
+        "CLASS"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-SHORT-VECTORS",
+      "area": "elliptic-curves",
+      "title": "Replace repeated rank work with incremental bases and annihilators",
+      "when": "Analyzing a sealed finite short-vector vocabulary and many prefix lattices.",
+      "use": "Maintain an exact echelon basis; scan norm shells once for all target tie intervals; reduce containment to annihilator tests. Use int64 batches only after an exact overflow bound, with arbitrary-integer fallback.",
+      "avoid": "Recomputing dense rational ranks or Smith forms for every candidate, or re-enumerating a sealed ball merely to analyze a new statistic.",
+      "boundary": "The recorded fresh analysis took52.17s after a prior3600s filtration timeout. The separate272.06s full deterministic replay re-enumerated and matched bytes. The intrinsic chain still does not reproduce the full observed common core.",
+      "reopen_when": "The vocabulary or metric changes, or a full independent re-enumeration is the explicit proof goal.",
+      "claims": [
+        "EC-CURVE302-SHORT-VECTOR-CORE-20260911"
+      ],
+      "sources": [
+        "elliptic-curves/notes/CURVE302_SHORT_VECTOR_CORE_EXPERIMENTS_2026-09-11.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/curve302_short_vector_core.py"
+      ],
+      "keywords": [
+        "annihilator",
+        "incremental",
+        "short vector",
+        "int64",
+        "Fincke",
+        "filtration"
+      ],
+      "reviewed_claims": {
+        "EC-CURVE302-SHORT-VECTOR-CORE-20260911": "ff936cd5d5ee072a"
+      }
+    },
+    {
+      "id": "METHOD-EC-RETAINED-SHARDS",
+      "area": "elliptic-curves",
+      "title": "Audit retained candidates before enlarging a search",
+      "when": "Considering a broader score cutoff, higher height or new parameter population.",
+      "use": "Inspect completed lower-score and discarded shards, exact equation duplicates and already exposed boxes before generating new candidates.",
+      "avoid": "Assuming the old ranked prefix was exhaustive, or treating a low heuristic score as a mathematical exclusion.",
+      "boundary": "The retained-shard investigation recovered eight additional certified examples. Its historical inventory count and catalogue matches are dated snapshots.",
+      "reopen_when": "A new candidate population adds exposure outside the retained, exactly identified cohort.",
+      "claims": [
+        "EC-DISCARDED-SHARD-NEW-CURVES-20260906"
+      ],
+      "sources": [
+        "elliptic-curves/notes/TRANSLATED_HEIGHT_AND_DISCARDED_SHARDS_2026-09-06.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "discarded",
+        "shards",
+        "retention",
+        "score",
+        "Nagao"
+      ],
+      "reviewed_claims": {
+        "EC-DISCARDED-SHARD-NEW-CURVES-20260906": "40c81f31377469c5"
+      }
+    },
+    {
+      "id": "METHOD-EC-ANCESTRY",
+      "area": "elliptic-curves",
+      "title": "Reuse the bounded ancestry panel without promoting it to a rank mechanism",
+      "when": "Connecting exceptional points, genus-one carriers and independent rank arithmetic.",
+      "use": "Reuse the earlier792-map panel and the principal rank28 comparison with900 checked maps. The fixed14/11 selected quartics have pairwise-disjoint branch divisors and independent quadratic radicals; identify the missing global or class-group implication explicitly.",
+      "avoid": "Recomputing carriers already certified, or inferring minimum genus, a complete Selmer kernel or an exact rank from the finite ancestry dictionary.",
+      "boundary": "Every chosen target has a genus-one bisection and minimum multisection degree2. Minimum genus, full ancestry classification and an explanatory rank-jump mechanism remain UNKNOWN. The common-cover degree statements apply only to the selected extensions.",
+      "reopen_when": "A new equivalence classification, generation argument or exact upper-bound certificate closes a named gap.",
+      "claims": [
+        "EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912",
+        "EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912"
+      ],
+      "sources": [
+        "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+        "elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/verify_rank_triangle.sage"
+      ],
+      "keywords": [
+        "ancestry",
+        "792",
+        "genus",
+        "rank triangle",
+        "strict ideal",
+        "principal28",
+        "900",
+        "branch divisor"
+      ],
+      "reviewed_claims": {
+        "EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912": "36cb6aab3973bdfc",
+        "EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912": "6ec31382053cf154"
+      }
+    },
+    {
+      "id": "METHOD-MARKED-ROOT-COMPILER",
+      "area": "core",
+      "title": "Keep the root presentation separate from the intrinsic normalization",
+      "when": "Reusing the Keller incidence or finite-étale fibre compiler.",
+      "use": "Retain the finite normalization, affine reconstruction open and omitted boundary as separate objects. Check the exact inverse identities and scheme-theoretic fibre, then use the canonical boundary invariant for comparisons.",
+      "avoid": "Treating the chosen primitive polynomial presentation as the invariant, or assuming a construction descends through every change of primitive generator.",
+      "boundary": "The generic Tschirnhaus non-descent result concerns the named quadratic-gauge compiler; it does not supply a global minimum for every Keller construction.",
+      "reopen_when": "The new compiler has an explicit invariant receiver or a proved descent mechanism.",
+      "claims": [
+        "OP-KDESC",
+        "OP-KCOMP"
+      ],
+      "sources": [
+        "UNIFYING_THESIS.md",
+        "verified/FINITE_ETALE_KELLER_FIBERS.md",
+        "verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "marked root",
+        "normalization",
+        "primitive",
+        "compiler",
+        "Tschirnhaus"
+      ],
+      "reviewed_claims": {
+        "OP-KDESC": "1f2c7ed29a768061",
+        "OP-KCOMP": "d2e080efd2dde572"
+      }
+    },
+    {
+      "id": "METHOD-VALUATION-LEDGERS",
+      "area": "core",
+      "title": "Prove polynomiality and the determinant balance together",
+      "when": "Constructing a boundary-cancelled or weighted suspension.",
+      "use": "Use an explicit source–core–target valuation ledger, record divisibility at each boundary and verify the complete determinant product.",
+      "avoid": "Treating formal pole cancellation or a rational coordinate identity as proof of a polynomial Keller map.",
+      "boundary": "The chosen reconstruction open and divisor multiplicities are part of the construction. A relative or marked invariant is not automatically an unrestricted stable invariant.",
+      "reopen_when": "A different ansatz supplies its own polynomiality and boundary-exhaustion certificates.",
+      "claims": [
+        "C1"
+      ],
+      "sources": [
+        "cancellation/CONSTRUCTION.md",
+        "UNIFYING_THESIS.md"
+      ],
+      "implementation": [
+        "scripts/verify_master_universal.py"
+      ],
+      "keywords": [
+        "valuation",
+        "polynomiality",
+        "determinant",
+        "boundary cancellation"
+      ],
+      "reviewed_claims": {
+        "C1": "7a91ef91e6d55568"
+      }
+    },
+    {
+      "id": "METHOD-K3-INTERPOLATION",
+      "area": "elkies-k3",
+      "title": "Exploit branch-value interpolation before nonlinear elimination",
+      "when": "An RR pencil has rational double-branch values on known fibres.",
+      "use": "Interpolate the branch line, divide by the product of the branch parameters and inspect forced denominator squares and recurrence structure.",
+      "avoid": "Starting a generic Groebner or full coefficient solve before checking whether the marked data determine a linear interpolation problem.",
+      "boundary": "The interpolated candidate still needs literal equation, marking, denominator and section checks; interpolation alone does not certify the endpoint.",
+      "reopen_when": "The rational branch-value assumptions hold on the selected physical chart.",
+      "claims": [],
+      "sources": [
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "interpolation",
+        "Riemann Roch",
+        "branch value",
+        "linear",
+        "Groebner"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-K3-COVARIANT-DEGREE",
+      "area": "elkies-k3",
+      "title": "Record the degree of every quartic point map",
+      "when": "Transporting sections through a binary-quartic Jacobian or covariant map.",
+      "use": "Annotate the map degree and compare exact group-law images and heights before claiming a new section or saturation index.",
+      "avoid": "Missing that a covariant transported 2P rather than P, thereby multiplying heights by four and creating a false rank/glue interpretation.",
+      "boundary": "A rational point map and an isomorphism of pointed elliptic models are different certificate types.",
+      "reopen_when": "The map degree, chosen origin and exact section identity are all established.",
+      "claims": [],
+      "sources": [
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "covariant",
+        "degree two",
+        "height",
+        "2P",
+        "quartic"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-COST-ACCOUNTING",
+      "area": "elliptic-curves",
+      "title": "Optimize the measured dominant phase",
+      "when": "Proposing a runtime improvement or comparing two research runners.",
+      "use": "Separate worker startup, map construction, landscape/CVP, admission, point search and replay. Use retained ordered receipts and compare like inputs and verification work.",
+      "avoid": "Reporting a component speedup as a whole-run improvement, or calling inherited landscape verification equivalent work to rebuilding it.",
+      "boundary": "In the seven recorded future-V3 searches, point work accounts for roughly84–88% of wall time; eliminating all other work only yields the stated roughly1.14–1.18x ceiling with point time fixed. This is not a forecast for other runs.",
+      "reopen_when": "A new profile identifies a different bottleneck or a controlled comparison measures a changed component.",
+      "claims": [],
+      "sources": [
+        "elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/audit_future_search_costs.py"
+      ],
+      "keywords": [
+        "performance",
+        "Amdahl",
+        "timing",
+        "receipts",
+        "CVP"
+      ],
+      "reviewed_claims": {}
+    },
+    {
+      "id": "METHOD-EC-CRT-BEAM",
+      "area": "elliptic-curves",
+      "title": "Keep beam truncation separate from certified CRT pruning",
+      "when": "Using height-ranked CRT prefixes to retain candidate branches.",
+      "use": "Record every omitted branch and use exact branch-specific lower bounds only where proved. Preserve the four-prime ordering counterexample as a regression.",
+      "avoid": "Treating survival in a finite beam as an exhaustive sieve or assuming the ordering of branches cannot change.",
+      "boundary": "A width-one beam ends at height1409 after discarding a branch completing at53. Minimum height is nondecreasing on a fixed branch; that does not preserve the ordering between branches.",
+      "reopen_when": "The omitted branches have an independent exact obstruction or the task explicitly accepts a bounded beam.",
+      "claims": [
+        "EC-CRT-BEAM-NONMONOTONE"
+      ],
+      "sources": [
+        "elliptic-curves/THEORY.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "CRT",
+        "beam",
+        "pruning",
+        "nonmonotone",
+        "height"
+      ],
+      "reviewed_claims": {
+        "EC-CRT-BEAM-NONMONOTONE": "b5bfb5f8d033075c"
+      }
+    },
+    {
+      "id": "METHOD-EC-CONSTRUCTED-COVER-RECOVERY",
+      "area": "elliptic-curves",
+      "title": "Reduce fixed constructed covers and compare blind lifting against generic-only V3",
+      "when": "Explicit extra Kummer/Selmer classes have fixed genus-one covers but their known rational lifts used a point oracle.",
+      "use": "Freeze the classes, give a fresh-context worker only equations, retain all rational transformations, apply established degree4 minimisation/reduction, and exploit a ternary conic to pass to a reduced degree2 model. Independently check the complete coefficient and point transport and finite independence. Compare ordinary V3 from the same generic subgroup, with upstream construction, maps, search and replay costs stated separately.",
+      "avoid": "Treating huge expanded coefficients or a degree4 height-box miss as a final search model or obstruction; treating a known-fibre blind recovery as a parameter-selection mechanism; calling the cover-only runtime the end-to-end class-route cost.",
+      "boundary": "On MW16-05 at3/17, fixed columns6/7 reduce from2464/1766 to39/44 coefficient bits. Degree4 bounds1000/100000 miss, but conic-to-quartic reduction yields points at1/2 and3/10 at bound1000, independently certifying generic16 plus2. Fresh V3 reaches22 in6 charts and also supplies both exact fixed-class lifts. These are fixed-control results, not a general speed or parameter criterion.",
+      "reopen_when": "An equation-derived parameter condition forces the arithmetic block, or a preregistered multi-fibre experiment accounts for class construction and recovery on common backend resources.",
+      "claims": [
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912"
+      ],
+      "sources": [
+        "elliptic-curves/rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md",
+        "elliptic-curves/rank-jump/CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md",
+        "elliptic-curves/rank-jump/TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md"
+      ],
+      "implementation": [
+        "elliptic-curves/rank-jump/blind_constructed_cover_quartic.py",
+        "elliptic-curves/rank-jump/verify_constructed_class_blind.py",
+        "elliptic-curves/rank-jump/replay_constructed_class_quartic.py",
+        "elliptic-curves/rank-jump/run_constructed_class_v3.py"
+      ],
+      "keywords": [
+        "blind recovery",
+        "strict classes",
+        "Selmer",
+        "genus-one reduction",
+        "conic",
+        "quartic",
+        "V3",
+        "point oracle"
+      ],
+      "reviewed_claims": {
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "6cf30e028a790fb1"
+      }
+    },
+    {
+      "id": "METHOD-EC-INVERSE-PARENT",
+      "area": "elliptic-curves",
+      "title": "Turn a target-conditioned height lattice into an explicit K3 parent",
+      "when": "A certified point configuration suggests a generic core but its explicit parent surface is missing.",
+      "use": "Recognize the candidate height form, choose a low-degree polarization and solve the line-incidence kernel. Verify both incidences and nonincidences, compile the residual cubic pencil with a rational origin, then measure section rank before proving heights, saturation and the Picard upper bound.",
+      "avoid": "Counting displayed sections as independent; treating a matching lattice or equal j-invariant as a literal specialization; repeating the completed Curve302 reconstruction.",
+      "boundary": "For Curve302, removing the unique norm-six outlier leaves 400 words for the determinant1092 form. The degree-four O+P+Q polarization supplies fifteen lines; the first seventeen displayed sections have rank fifteen, and two further conics complete rank seventeen. This is inverse construction conditioned on known exceptional points, not a prospective parameter selector.",
+      "reopen_when": "A different target has a certified candidate generic core, a realizable low-degree polarization and an unmet geometric construction gate.",
+      "claims": [
+        "EC-CURVE302-RECOVERED-MW17-PARENT"
+      ],
+      "sources": [
+        "elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md",
+        "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__HIGH_RANK_CONSTRUCTION_AND_SEARCH_LEDGER_2026-09-10.md.txt"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/load_curve302_recovered_parent.sage"
+      ],
+      "keywords": [
+        "inverse reconstruction",
+        "line incidence",
+        "polarization",
+        "determinant1092",
+        "conics",
+        "kernel"
+      ],
+      "reviewed_claims": {
+        "EC-CURVE302-RECOVERED-MW17-PARENT": "3aba67f4281fcef1"
+      }
+    },
+    {
+      "id": "METHOD-LND-MODULE-REUSE",
+      "area": "geometry",
+      "title": "Reuse weight modules and prove quotient closure",
+      "when": "Exact image membership for the two-slice derivation D=u*partial_x+v*partial_y.",
+      "use": "Group expressions by target weight, compute one standard basis of the primitive module per group, then lift each query and verify D(primitive)=expression. Reuse those primitives across ideals. Build the quotient image of ker(D) by closure under u, v and w; require the frontier to become empty.",
+      "avoid": "Rebuilding the same module for each seed or treating a finite iteration cap or arbitrary y-degree truncation as kernel-image closure.",
+      "boundary": "A membership answer is exact only after the primitive and kernel correction tests succeed. Pure/mixed exponent windows remain bounded experiments. The 128-step guard fails if closure does not stabilize; it is not a completeness bound.",
+      "reopen_when": "The derivation, coefficient ring, ideal or target-weight module changes; otherwise reuse the existing compiler and declared inputs.",
+      "claims": [
+        "LND-NPL",
+        "LND-PDP"
+      ],
+      "sources": [
+        "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/search_lnd_nonprincipal_plinth.py",
+        "scripts/search_lnd_positive_dimensional_plinth.py"
+      ],
+      "keywords": [
+        "LND",
+        "plinth",
+        "module",
+        "cache",
+        "primitive",
+        "kernel",
+        "Singular"
+      ],
+      "reviewed_claims": {
+        "LND-NPL": "b54848a7a34d4e86",
+        "LND-PDP": "9eed4c5124092df6"
+      }
+    },
+    {
+      "id": "METHOD-LND-CLOSED-FAMILIES",
+      "area": "geometry",
+      "title": "Apply the principal and plinth-power theorems before searching",
+      "when": "Choosing an ideal for the rank-two model LND or reusing its old conductor search queue.",
+      "use": "First test whether the ideal contains a power of (u,v), or is nonzero principal. The plinth-power theorem LND-NPF and complete principal theorem LND-CPM give all-order safety. The five historical nonprincipal charts all contain (u,v)^3.",
+      "avoid": "Expanding old NPL/PDP/PCD power windows or treating the rational-root ladder as the current end of the principal classification.",
+      "boundary": "These theorems concern the stated rank-two derivation and ideal classes. Genuinely nonprincipal ideals outside plinth-power saturation, and different derivations, retain their own obligations.",
+      "reopen_when": "An explicitly specified ideal lies outside both completed classes, with an all-order theorem or counterexample target.",
+      "claims": [
+        "LND-NPF",
+        "LND-CPM",
+        "LND-NPL",
+        "LND-PCD"
+      ],
+      "sources": [
+        "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/search_lnd_nonprincipal_plinth.py",
+        "scripts/search_lnd_principal_conductor.py"
+      ],
+      "keywords": [
+        "LND",
+        "principal",
+        "nonprincipal",
+        "plinth",
+        "all-order",
+        "closed"
+      ],
+      "reviewed_claims": {
+        "LND-NPF": "a55e349483ba7441",
+        "LND-CPM": "a04fdcdd32049e3e",
+        "LND-NPL": "b54848a7a34d4e86",
+        "LND-PCD": "3be71af90630ea61"
+      }
+    },
+    {
+      "id": "METHOD-LND-LOWEST-FACE",
+      "area": "geometry",
+      "title": "Use the lowest valuation face in conductor arguments",
+      "when": "Clearing Laurent denominators in the invariant-affine principal LND families.",
+      "use": "Pass to the associated graded ring for the relevant prime valuation. The lowest negative face carries the required power of the carrier. Apply pure vanishing at growing moment orders to force positive valuation, which eventually clears every fixed multiplier denominator.",
+      "avoid": "Claiming carrier divisibility for every negative Laurent coefficient: u^2*y^3 contains the coefficient w^3/u in the rational-root chart, which is not divisible by q1-w.",
+      "boundary": "Theorems 6.8–6.16 use lowest faces and explicitly controlled denominator losses in the model LND. The stronger coefficientwise statement is false and cannot be used as a shortcut.",
+      "reopen_when": "A new carrier has a proved associated-graded divisibility statement and a compatible denominator bound.",
+      "claims": [
+        "LND-RRL",
+        "LND-CPM"
+      ],
+      "sources": [
+        "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/search_lnd_principal_conductor.py"
+      ],
+      "keywords": [
+        "valuation",
+        "LND",
+        "Laurent",
+        "lowest face",
+        "conductor",
+        "denominator"
+      ],
+      "reviewed_claims": {
+        "LND-RRL": "ff380d69c6c03113",
+        "LND-CPM": "a04fdcdd32049e3e"
+      }
+    },
+    {
+      "id": "METHOD-DANIELEWSKI-NECESSARY-GATES",
+      "area": "geometry",
+      "title": "Keep pointwise equations after cohomological compression",
+      "when": "Reducing the cubic or higher Danielewski contraction equations.",
+      "use": "Compile the small de Rham flux ledger and leading pencil first, then retain the lowest nonzero coefficients of J-1 for each degree and boundary-pole profile. Use the explicit normalized cubic family in CL25 as a regression against any claim that flux plus leading face is sufficient.",
+      "avoid": "Launching the unstructured 90-variable cubic ideal, replacing J=1 by its cohomology class, using opposite signs for P'(i) and P'(-i), or quotienting by automorphisms that do not preserve the chosen degree filtration.",
+      "boundary": "The 11 nonconstant flux equations are necessary. The exhibited family satisfies them all but fails J=1; both boundary derivatives equal -2. A degree-bounded quotient needs filtration-preserving transformations.",
+      "reopen_when": "A complete chart classification adds the missing pointwise conditions or proves a degree-preserving normal form.",
+      "claims": [
+        "CL25",
+        "CL24"
+      ],
+      "sources": [
+        "extended-geometry/DANIELEWSKI_ALL_DEGREE_OBSTRUCTION_AUDIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_danielewski_cubic_frontier.py"
+      ],
+      "keywords": [
+        "Danielewski",
+        "flux",
+        "de Rham",
+        "Poisson",
+        "normalization",
+        "cubic"
+      ],
+      "reviewed_claims": {
+        "CL25": "50ba3c3837fedf71",
+        "CL24": "4ebaa40d4839081d"
+      }
+    },
+    {
+      "id": "METHOD-QUARTIC-REES-ASSEMBLY",
+      "area": "geometry",
+      "title": "Reuse the finite Rees atlas and finish the surface ledger",
+      "when": "Continuing the quartic weighted graph normalization or Hilbert-polynomial calculation.",
+      "use": "Start from the three completed side point bases, eight-cone corner atlas and exact side-to-corner packet matches. The next finite calculation records divisor classes, Rees multiplicities, polarization restrictions and normal-bundle degrees of the center curves; apply centerwise Riemann–Roch and the existing endpoint conductor corrections before one global pushout.",
+      "avoid": "Repeating ambient normalI runs that produced no certificate, redoing the completed local principalizations, or equating matching conductor colengths with equality of quotient sheaves.",
+      "boundary": "The modular graph multidegree and two unknown coefficients alpha/beta remain a calibration. Local normalization and a finite-model Euler-characteristic formula do not prove global normalization, flatness or equinormalization.",
+      "reopen_when": "The actual missing surface-intersection or gluing data are supplied, or a changed model invalidates the existing atlas.",
+      "claims": [
+        "WQG1",
+        "WQRS1",
+        "WQCA1",
+        "WQSM1"
+      ],
+      "sources": [
+        "extended-geometry/STABLE_KELLER_MODULI_PROBLEM.md"
+      ],
+      "implementation": [
+        "scripts/verify_quartic_biprojective_graph.py",
+        "scripts/verify_quartic_rees_stratification.py",
+        "scripts/verify_quartic_rees_corner_atlas.py",
+        "scripts/verify_quartic_rees_side_corner_matching.py"
+      ],
+      "keywords": [
+        "quartic",
+        "Rees",
+        "normalization",
+        "normal bundle",
+        "Hilbert polynomial",
+        "conductor",
+        "timeout"
+      ],
+      "reviewed_claims": {
+        "WQG1": "5951b324e5db0e9d",
+        "WQRS1": "06f8736d7364cf2b",
+        "WQCA1": "cb5dc45fb1313bb1",
+        "WQSM1": "322226330db5cf1c"
+      }
+    },
+    {
+      "id": "METHOD-K3-KERNEL-RESTRICTION",
+      "area": "elkies-k3",
+      "title": "Restrict later local rows to the existing kernel",
+      "when": "A large RR ambient has a smooth block with a small exact modular kernel.",
+      "use": "Match ambient labels and hashes, then restrict actual sparse component rows to the small kernel. Check every rational denominator at the chosen prime and bind the independent smooth-block rank/kernel certificate. Full stacked column rank mod p then certifies the same bounded rank over QQ.",
+      "avoid": "Rebuilding a dense stacked matrix, computing node layers after the kernel is already zero, or using a smooth-kernel record from a different pole bound.",
+      "boundary": "A surviving modular direction is not a rational pencil. A full-rank minor rejects only the supplied ambient; it gives no exhaustive pole bound. The good-reduction consumer trusts the independently recorded smooth rank/kernel and does not reconstruct that matrix.",
+      "reopen_when": "A different, mathematically justified ambient has a compatible smooth-kernel certificate.",
+      "claims": [
+        "EC-K3-H3-Q8-EXTRA7-SMOOTH-GENERIC-REJECTION",
+        "EC-K3-H3-Q8-EXTRA8-SMOOTH-GENERIC-REJECTION",
+        "EC-K3-H3-Q8-EXTRA9-SMOOTH-GENERIC-REJECTION",
+        "EC-K3-H3-Q8-EXTRA11-SMOOTH-GENERIC-REJECTION"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage",
+        "elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage"
+      ],
+      "keywords": [
+        "kernel",
+        "good reduction",
+        "sparse",
+        "rank",
+        "modular",
+        "Riemann Roch"
+      ],
+      "reviewed_claims": {
+        "EC-K3-H3-Q8-EXTRA7-SMOOTH-GENERIC-REJECTION": "e0e67861f23d4f24",
+        "EC-K3-H3-Q8-EXTRA8-SMOOTH-GENERIC-REJECTION": "0d66d55dd153a589",
+        "EC-K3-H3-Q8-EXTRA9-SMOOTH-GENERIC-REJECTION": "8035f0b465038995",
+        "EC-K3-H3-Q8-EXTRA11-SMOOTH-GENERIC-REJECTION": "c755bb2f34d68f41"
+      }
+    },
+    {
+      "id": "METHOD-K3-NODE-PRODUCT-IDEAL",
+      "area": "elkies-k3",
+      "title": "Keep product divisibility distinct from a rectangular jet",
+      "when": "A resolved normal-crossing chart reduces a global pole condition to Z^a*Y^b divisibility.",
+      "use": "Identify the actual principal ideal before forming a quotient. Impose compatible componentwise divisibility and overlap gluing before extracting any finite residual corner. In the recorded node t^17=Z^51*Y^68 times a unit.",
+      "avoid": "Replacing the one-dimensional quotient R/(Z^51*Y^68) with the finite length-3468 quotient R/(Z^51,Y^68), or expanding a raw ten-generator ninth-power ideal before clearing chart units.",
+      "boundary": "A rectangle and a product impose different conditions. Pareto-leading rows are necessary conditions; equal-leading terms and unit expansions can still interact.",
+      "reopen_when": "An exact component/gluing argument identifies a finite residual quotient without changing the ideal.",
+      "claims": [
+        "EC-K3-H3-Q8-E7-4-3-PRINCIPAL-NODE-CLEARING",
+        "EC-K3-H3-Q8-E7-4-3-NODE-DIVISIBILITY-GEOMETRY"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/derive_h92_q8_e7_4_3_principal_node_clearing.sage",
+        "elkies-k3/scripts/certify_h92_q8_e7_4_3_node_divisibility_geometry.sage"
+      ],
+      "keywords": [
+        "node",
+        "product ideal",
+        "rectangle",
+        "jets",
+        "gluing",
+        "Pareto"
+      ],
+      "reviewed_claims": {
+        "EC-K3-H3-Q8-E7-4-3-PRINCIPAL-NODE-CLEARING": "dc4e3312a8eb2cef",
+        "EC-K3-H3-Q8-E7-4-3-NODE-DIVISIBILITY-GEOMETRY": "e287ab81214ee330"
+      }
+    },
+    {
+      "id": "METHOD-K3-MARKING-SCHEMA",
+      "area": "elkies-k3",
+      "title": "Bind replay schemas to the exact marked section",
+      "when": "An old module or physical-target script is reused after a section-normalization correction.",
+      "use": "Use the primitive height-24, degree-ten q8 section and the full R*h*Dy=Ny*Dx normalization. The corrected marking wrapper dispatches the 2cover implementation. The corrected QQ checker reconstructs the section from q6 points and consumes the frozen tracked component-nef target.",
+      "avoid": "Renaming the new marking JSON to the old filename, accepting its new status in old consumers, or applying the historical degree-192 branch result to a different chord input.",
+      "boundary": "The old consumers require the withdrawn NS-decomposition schema; the finite-module script asserts collision degree 46. Missing q6 Jacobian/zero/E7-section inputs are a recovery gap, not permission to rebuild a campaign or evidence that q8 remains unsolved.",
+      "reopen_when": "The original inputs are recovered with matching hashes, or a separately verified schema/marking transport is supplied.",
+      "claims": [
+        "EC-K3-H3-Q8-CHILD-MARKING",
+        "EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE",
+        "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH",
+        "EC-K3-H3-Q8-QQ-D13"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+        "elkies-k3/H3_Q8_REAUDIT_2026-08-22.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/derive_h92_q6_child_q8_marking_2cover.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage"
+      ],
+      "keywords": [
+        "schema",
+        "q8",
+        "degree 46",
+        "degree 10",
+        "marking",
+        "replay"
+      ],
+      "reviewed_claims": {
+        "EC-K3-H3-Q8-CHILD-MARKING": "745bf011cb47e7f3",
+        "EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE": "b9d168cb2d4d9a35",
+        "EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH": "c197757e2f9a3e48",
+        "EC-K3-H3-Q8-QQ-D13": "1dab3f25405e1a19"
+      }
+    },
+    {
+      "id": "METHOD-K3-CHARACTER-SUPPORT",
+      "area": "elkies-k3",
+      "title": "Use factor supports to avoid all pair products",
+      "when": "A complete finite set of rational quadratic covers is tested for q_i*q_j=q_k.",
+      "use": "Canonicalize rational sign/prime atoms and odd monic polynomial factors. A two-branch-point cover has at most two finite polynomial atoms: only an edge with its singleton endpoints or a triangle can give a three-character relation. Test candidate support XORs with the full constant squareclass. The alternate11952 frame has 39,147 distinct irreducible quadratic atoms, so it has no candidate support relation.",
+      "avoid": "Forming hundreds of millions of polynomial pair products, discarding rational constants by making a branch polynomial monic, or treating a formal variable rename as transport between two bases.",
+      "boundary": "Complete orbit and equation attachment must be established separately. A found relation still needs a base/height certificate. The old rank-28 and q_103b2 curves have base degrees 8 and 9 over alternate11952, so they are not quadratic characters there.",
+      "reopen_when": "A new source has actual repeated/two-factor supports or certified new degree-two characters on the same base.",
+      "claims": [
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION"
+      ],
+      "sources": [
+        "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py",
+        "elkies-k3/scripts/hash_bisection_extensions.py"
+      ],
+      "keywords": [
+        "squareclass",
+        "XOR",
+        "character",
+        "support graph",
+        "triangle",
+        "quadratic"
+      ],
+      "reviewed_claims": {
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION": "6a83ca559fed9c2b",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION": "c79f496f7a669ae4"
+      }
+    },
+    {
+      "id": "METHOD-K3-STREAMED-QUOTIENT",
+      "area": "elkies-k3",
+      "title": "Stream the short shell and retain the quotient",
+      "when": "The short-vector list is too large although the finite quotient and one representative per orbit are small.",
+      "use": "Use a unimodular LLL basis with an explicit row-coordinate transport, stream Fincke-Pohst leaves, and retain parity masks, multiplicities and canonical representatives. Evaluate every accepted norm exactly and require equality with an independent exact PARI count before asserting completeness. Export representatives in the pinned frame.",
+      "avoid": "Materializing nearly three million signed vectors just to recover 39,147 M/2M classes, or confusing LLL column transforms with row-vector coordinates.",
+      "boundary": "Floating pruning and a generous guard are not themselves a completeness proof; exact leaf membership, uniqueness of coordinate visits and the matching exact count are essential. Lattice coverage still does not construct branch equations.",
+      "reopen_when": "The lattice, norm bound or equivalence relation actually changes; the existing complete frame tables should be reused otherwise.",
+      "claims": [
+        "EC-K3-ALT-BISECT-ORBIT"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage"
+      ],
+      "keywords": [
+        "streaming",
+        "Fincke Pohst",
+        "LLL",
+        "PARI",
+        "M/2M",
+        "quotient",
+        "memory"
+      ],
+      "reviewed_claims": {
+        "EC-K3-ALT-BISECT-ORBIT": "55c1a21f7241c882"
+      }
+    },
+    {
+      "id": "METHOD-K3-DISJOINTNESS-LIMIT",
+      "area": "elkies-k3",
+      "title": "Use the disjoint graph only for equation cost",
+      "when": "Selecting two bisections for a rank-19 biquadratic construction.",
+      "use": "Use XOR with norm-four masks to identify all disjoint representatives when that lowers equation cost. Test Galois-character independence by the exact quadratic squareclasses and then use the appropriate lifted height theorem.",
+      "avoid": "Using membership in the 8,895,801-pair disjoint graph as a hard filter for independent characters, or restarting its common-cover scan after complete bisection injectivity.",
+      "boundary": "All common-cover pairs in the published smooth-bisection frame are excluded. Distinct-character biquadratic rank 19 is a separate construction; both the published pair and the recorded low-complexity pair lie outside the disjoint graph.",
+      "reopen_when": "A different geometric objective specifically requires disjoint representatives, or genuinely new quadratic characters are supplied.",
+      "claims": [
+        "EC-K3-BISECT-DISJOINT-FRONTIER",
+        "EC-K3-BISECT-EQUATION-BATCH",
+        "EC-K3-BISECT-BIQUADRATIC-R19"
+      ],
+      "sources": [
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+        "elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage",
+        "elkies-k3/scripts/hash_bisection_extensions.py"
+      ],
+      "keywords": [
+        "disjoint",
+        "XOR",
+        "character independence",
+        "rank 19",
+        "biquadratic"
+      ],
+      "reviewed_claims": {
+        "EC-K3-BISECT-DISJOINT-FRONTIER": "ab184538a643a32f",
+        "EC-K3-BISECT-EQUATION-BATCH": "a0570a5a4ea8e02b",
+        "EC-K3-BISECT-BIQUADRATIC-R19": "707bffd8b85f8f3e"
+      }
+    },
+    {
+      "id": "METHOD-EC-MARKED-BISECTION-PROPAGATION",
+      "area": "elliptic-curves",
+      "title": "Close a failed incidence bank before enlarging a speculative carrier hypothesis",
+      "when": "Trying to propagate a frozen exceptional Kummer block into an infinite rank-gain subfamily.",
+      "use": "Keep the full integral frame, physical zero and I2 component; enumerate signed norm10/14 vectors with exact LDL arithmetic and an explicitly incomplete prefix at a node stop. Compile actual curves by the marked trace RR identity, including the A1 vanishing condition. Require nonzero rational splitting at the control before exact cubic-field labels, then normalize the fixed-line fibre product and certify its rational infinitude. Finite-reduction neighbourhoods can make the eventual output condition effective. First count extensions over the fixed t-line with constant squareclasses retained. Translation identifies normalized covers, so a completed nonsplitting miss excludes its entire generic-translation orbit. Pairing cannot supply a missing constituent lift. Close a stopped bank before returning to the successful arithmetic dependency.",
+      "avoid": "Replacing the rank17 frame by its rank16 MW height matrix, calling a lattice vector a curve, identifying constant twists or arbitrary independent base changes, treating one genus-one point as infinitude, or choosing generic corrections independently at different places. Do not infer low-intersection rational bisections from soluble extra strict classes, count formulas as independent arithmetic directions, or treat a failure before label matching as evidence against the marked block.",
+      "boundary": "The stopped MW16-05 prefix supplies182 exact genus-zero bisections with182 distinct extensions, all nonsplit at3/17. The control values represent182 distinct rational squareclasses, without an independence claim. There is no common obstruction among the real place and primes at most1009;21 fail by sign. Both shells remain incomplete,73 split residuals and candidate171 remain separate. Translation and pairing cannot rescue these completed incidence misses. No marked rank18 family or strict/ideal transfer is constructed; the conditional propagation theorem remains valid.",
+      "reopen_when": "Only a new theoretical connection from the actual arithmetic dependency to a different carrier hypothesis would justify a separately scoped proposal. This bank is closed; no shell completion, enlargement or interrupted-candidate repair is scheduled.",
+      "claims": [
+        "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912",
+        "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912",
+        "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912"
+      ],
+      "sources": [
+        "elliptic-curves/rank-jump/MARKED_TWO_CLASS_PROPAGATION_2026-09-12.md",
+        "elliptic-curves/rank-jump/CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md",
+        "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md"
+      ],
+      "implementation": [
+        "elliptic-curves/rank-jump/prepare_marked_two_class.sage",
+        "elliptic-curves/rank-jump/enumerate_marked_two_class.py",
+        "elliptic-curves/rank-jump/compile_marked_two_class.sage",
+        "elliptic-curves/rank-jump/finish_marked_two_class_export.sage",
+        "elliptic-curves/rank-jump/verify_marked_two_class.sage",
+        "elliptic-curves/rank-jump/diagnose_marked_carrier_nonsplitting.py"
+      ],
+      "keywords": [
+        "bisection",
+        "marked classes",
+        "norm10",
+        "norm14",
+        "A1",
+        "Riemann-Roch",
+        "Silverman",
+        "joint local correction",
+        "incidence failure",
+        "translation",
+        "nonsplitting"
+      ],
+      "reviewed_claims": {
+        "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912": "a170da1eccd83d2b",
+        "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912": "565b1e1c8d99e546",
+        "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912": "68ecb62b3fbba931"
+      }
+    },
+    {
+      "id": "METHOD-A4-ACTUAL-CHART-UNIT",
+      "area": "geometry",
+      "title": "Cancel the Jacobian of the actual source chart",
+      "when": "A primitive-polynomial derivative is used to design a mask suspension.",
+      "use": "Compute the chart Jacobian first. In the A4 root algebra, interpolate H^3/(4K^3L) in the four conjugate roots and factor its denominator B^2*rho*sigma. Carry the selected field generator and exact residual divisor through every change of chart.",
+      "avoid": "Substituting 1/P'(T) for the required chart reciprocal: the derivative split preserves the four-sheet field but leaves H^6/(2*Theta*K^6*L^3) in the ordinary chart. Do not confuse coefficient gcd in a nonnormal presentation with divisorial cancellation on its normalization.",
+      "boundary": "The localized fourfold determinant-one map still has genuine poles. Its existence does not supply a polynomial affine source; the original masks and Hhat continuation are already closed.",
+      "reopen_when": "A different chart or coupled source/target construction has a new exact divisor ledger and a field-recovery argument.",
+      "claims": [
+        "KIG7",
+        "KIG8",
+        "KIG10",
+        "KIG17"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_root_incidence_derivative_split.py",
+        "scripts/verify_a4_chart_unit_rank_four.py"
+      ],
+      "keywords": [
+        "A4",
+        "Jacobian",
+        "reciprocal",
+        "interpolation",
+        "conductor",
+        "normalization"
+      ],
+      "reviewed_claims": {
+        "KIG7": "3be89775f9ed7174",
+        "KIG8": "2816054888aff822",
+        "KIG10": "0566562163ebc681",
+        "KIG17": "e3ff3058e51baeaf"
+      }
+    },
+    {
+      "id": "METHOD-A4-NORMALIZED-BOUNDARY",
+      "area": "geometry",
+      "title": "Normalize and reject the boundary before reconstructing coordinates",
+      "when": "A coarse deletion passes unit, class-group and ampleness screens.",
+      "use": "Count actual simple/triple primes on the normalized incidence, then use its seven-curve lattice. Test forced-column content before enumerating completions. The strict B column has content two, excluding every boundary basis containing it. For a surviving split, test indispensable horizontal genera before presenting a coordinate ring.",
+      "avoid": "Using the four-curve coefficient-plane matrix upstairs, trying to fix a nonprimitive forced column by adding primes, or rebuilding the B-free coordinate ring after Hhat and q14 were shown to have genera 13 and 20.",
+      "boundary": "The B-free split passes local lattice/ampleness tests but is not A2. The lattice rejection is stable under polynomial extension; the separate surface-boundary genus proof is not automatically a universal stable-cancellation theorem.",
+      "reopen_when": "A genuinely different selector has rational horizontal boundary components and survives the normalized divisor exact sequence.",
+      "claims": [
+        "KIG13",
+        "KIG14",
+        "KIG15",
+        "KIG16",
+        "KIG17"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_corrected_boundary_selector.py",
+        "scripts/verify_a4_corrected_boundary_genus.sing"
+      ],
+      "keywords": [
+        "normalization",
+        "class group",
+        "content two",
+        "unimodular",
+        "genus",
+        "affine recognition"
+      ],
+      "reviewed_claims": {
+        "KIG13": "3b6ae9992cfbb8bb",
+        "KIG14": "b211a30484912884",
+        "KIG15": "b2c101a696dd6545",
+        "KIG16": "a660ebd63da5f728",
+        "KIG17": "e3ff3058e51baeaf"
+      }
+    },
+    {
+      "id": "METHOD-A4-CONDUCTOR-MULTIPLICITY",
+      "area": "geometry",
+      "title": "Check the conductor before trying a multiple of a boundary prime",
+      "when": "A rational component is non-Cartier but has finite local index at one singularity.",
+      "use": "Purify the height-one ideal first: (q2,S103) has an embedded finite contamination, while (q2,L) is the intended conic prime. Examine every non-Cartier point. At the other quadratic pair the conic is divisorial on one normalization branch and only codimension two on the other; conductor matching forces an extra height-one zero for every positive multiplicity.",
+      "avoid": "Treating the A3 local index two as a reason to try doubling, or treating one rational norm factor as a selector whose entire horizontal boundary is rational.",
+      "boundary": "KIG25 excludes all positive principal divisors supported only on this conic. It does not exclude other rational-horizontal selectors or a genuinely coupled ideal-contraction construction.",
+      "reopen_when": "The proposed prime or normalization/conductor incidence is different, with an exact gluing argument.",
+      "claims": [
+        "KIG24",
+        "KIG25",
+        "KIG15"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_conic_principal_obstruction.py"
+      ],
+      "keywords": [
+        "conductor",
+        "Cartier index",
+        "multiplicity",
+        "purification",
+        "embedded component",
+        "rational conic"
+      ],
+      "reviewed_claims": {
+        "KIG24": "833a1d93dfd5c82e",
+        "KIG25": "6be6961ac070aa22",
+        "KIG15": "b2c101a696dd6545"
+      }
+    },
+    {
+      "id": "METHOD-A4-JET-KERNEL",
+      "area": "geometry",
+      "title": "Compile branch jets and a norm floor before factoring selectors",
+      "when": "Searching polynomial masks with prescribed normalized exceptional orders.",
+      "use": "Reduce forbidden coefficients of all seven truncated branch jets modulo c^2+27 and solve exact rational linear algebra. Reuse V2,1=0, V2,2=<T^2>, the six-dimensional V3,1 and its root-quadratic extension. The pole-degree leading form gives the sharp norm floor 16 and rules out root-quadratic directions below degree 24.",
+      "avoid": "Brute-force coefficient searches below a proved degree floor, or scoring the near-selector J as almost viable because only one branch jet fails. Its first exact correction is linked to Hhat by syzygies and has an absolute genus-31 strict curve.",
+      "boundary": "The floor covers total degree at most three and root degree at most two. The higher correction module and other root charts remain open; satisfying all valuation jets does not imply rational boundary.",
+      "reopen_when": "A specified higher-degree jet space or different valuation row changes the exact kernel problem.",
+      "claims": [
+        "KIG18",
+        "KIG19",
+        "KIG27"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_genus_zero_selector_search.py",
+        "scripts/verify_a4_degree_twenty_near_selector.sing"
+      ],
+      "keywords": [
+        "jets",
+        "kernel",
+        "degree floor",
+        "valuation",
+        "syzygy",
+        "norm"
+      ],
+      "reviewed_claims": {
+        "KIG18": "20d65209ffc5986a",
+        "KIG19": "3cbdeb716603f747",
+        "KIG27": "8c7440ffcd17647d"
+      }
+    },
+    {
+      "id": "METHOD-A4-STRICT-NET",
+      "area": "geometry",
+      "title": "Remove fixed components and use the value-gradient kernel map",
+      "when": "A selector norm has high degree but a known birational root chart.",
+      "use": "Remove fixed K^3 before analyzing the curve: the degree-16 norm plane becomes a strict net of degrees 9,10,10. Replace the three moving-singularity equations by the value-gradient determinant -54*M^2*D23 and its generic kernel map of degrees 19,18,18. Audit exceptional rank drops of M separately.",
+      "avoid": "Repeatedly normalizing large expanded norms at random heights, counting a fixed-component rank drop as a new exact selector, or claiming the 864/144 height samples classify the parameter plane.",
+      "boundary": "D23 is known, but its full parameter image is not implicitized. The first rational conic member retains positive genus and its isolated principal route is closed. Generic integrality and bounded boxes do not settle every degeneration.",
+      "reopen_when": "An exact parameter-image calculation, chart cover or new critical-locus intersection produces a different admissible candidate.",
+      "claims": [
+        "KIG23",
+        "KIG24",
+        "KIG25"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_sharp_selector_plane.py"
+      ],
+      "keywords": [
+        "strict transform",
+        "fixed component",
+        "discriminant",
+        "kernel map",
+        "D23",
+        "degree reduction"
+      ],
+      "reviewed_claims": {
+        "KIG23": "89345d92abe46fb4",
+        "KIG24": "833a1d93dfd5c82e",
+        "KIG25": "6be6961ac070aa22"
+      }
+    },
+    {
+      "id": "METHOD-A4-SMALL-SELECTOR-SIEVE",
+      "area": "geometry",
+      "title": "Search the smaller selector space and retain reduction exceptions",
+      "when": "Looking for nonlinear factors of a small linear system over a finite field.",
+      "use": "Factor all 3906 points of P5(F5) in the six-dimensional A4 selector space rather than enumerating every projective cubic coefficient vector. Reuse the classified factor list and tangent kernels. For conics, all 3875 degree-two forms have been screened; the exceptional monic-U^2/s0 lift tree dies modulo 625.",
+      "avoid": "Launching the same finite-field or 175680/58095 rational census again, or promoting a lift obstruction in one chart to a characteristic-zero classification. Do not discard degree loss, reducible reduction or the artificial H-factor neighborhood.",
+      "boundary": "Only U=0 is a rational affine line in the full root-linear space, by exact resultant gcds. Nonlinear rational factors remain possible in the specified structural/degree-drop neighborhoods. The eight H-slice lift levels are bounded evidence.",
+      "reopen_when": "A precise formal neighborhood or reduction exception outside the closed charts has a new theorem-directed test.",
+      "claims": [
+        "KIG26"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md"
+      ],
+      "implementation": [
+        "scripts/verify_a4_degree_twenty_line_selectors.py"
+      ],
+      "keywords": [
+        "finite field",
+        "smaller search space",
+        "factorization",
+        "Hensel",
+        "degree drop",
+        "conic",
+        "cubic"
+      ],
+      "reviewed_claims": {
+        "KIG26": "9193ae5f2751be9a"
+      }
+    },
+    {
+      "id": "METHOD-AFFINE-SOURCE-RECOGNITION",
+      "area": "geometry",
+      "title": "Use independent affine-source rejection gates",
+      "when": "An affine modification passes smoothness, factoriality or flexibility tests.",
+      "use": "Keep units, class group, ML, Derksen, Hodge/topology and explicit coordinate recognition separate. SL2 passes the early algebraic tests but has class L^3-L and S^3 topology. The smooth rho=h model has class L^3 yet class group Z/2. Exact invariant failures can reject a candidate before a large mixed-incidence solve.",
+      "avoid": "Calling matching invariants an affine-space isomorphism, treating a rational/logarithmic determinant-one lift as an ordinary polynomial Keller map, or requiring two modified p,q,r outputs when the retained-block argument only proves at least one.",
+      "boundary": "The remaining S4 mixed-incidence problem is finite only after degree and support are fixed. It still needs constant full Jacobian, degree-six field preservation, mask reconstruction and an actual affine-space recognition proof.",
+      "reopen_when": "An asymmetric coupled construction supplies the missing divisibilities and explicit source identification.",
+      "claims": [
+        "KIG21",
+        "KIG22"
+      ],
+      "sources": [
+        "extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/verify_s4_collision_frame_keller_frontier.py"
+      ],
+      "keywords": [
+        "SL2",
+        "affine space",
+        "class group",
+        "Makar Limanov",
+        "Derksen",
+        "S4",
+        "mixed incidence"
+      ],
+      "reviewed_claims": {
+        "KIG21": "b7344f18644be62f",
+        "KIG22": "9316beead0b9e5c7"
+      }
+    },
+    {
+      "id": "METHOD-SINGULAR-EXECUTION-GUARD",
+      "area": "core",
+      "title": "Reject CAS interpreter errors even after a success marker",
+      "when": "A Singular subprocess is used to certify identities, factor lists or a finite census.",
+      "use": "Use singular_runner.py for the audited A4, F2 optional bridge and tagged-lift callers: reject interpreter diagnostics and nonempty stderr, require a unique terminal marker, and check expected result markers as complete lines. The many-channel RESULT adapter keeps historical program hashes and timeout records, but discards stdout on interpreter failure so downstream parsers cannot retain an apparent unit or rank.",
+      "avoid": "Trusting returncode==0, subprocess check=True, a later PASS substring, or absence of a reported factor. An intentional ERROR followed by PASS exits zero on the locally inspected Singular 4.3.2.",
+      "boundary": "The base guard has six small protocol tests and earlier tiny real interpreter controls. The RESULT adapter has four additional tests plus mocked many-channel/tagged integration; no GVC moment, elimination or census was replayed. The 19 many-channel substitutions preserve the AST of all mathematics, generated programs and timeouts. Historical outputs are not fresh guarded executions, and other CAS wrappers remain outside this audit.",
+      "reopen_when": "A new interpreter version or output protocol changes diagnostic/completion behavior; cover that behavior with a tiny test before authorizing any research replay.",
+      "claims": [
+        "KIG17",
+        "KIG19",
+        "KIG23",
+        "KIG24",
+        "KIG25",
+        "KIG26",
+        "KIG27",
+        "PF2MCB1",
+        "GVC3TAG",
+        "GVC3TAGX",
+        "GVC3D10F5G"
+      ],
+      "sources": [
+        "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+        "plane-jc/F2_MODIFIED_CHART_BRIDGE.md",
+        "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+        "extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/singular_runner.py",
+        "tests/test_singular_runner.py",
+        "scripts/singular_result_runner.py",
+        "tests/test_research_singular_results.py"
+      ],
+      "keywords": [
+        "Singular",
+        "ERROR",
+        "exit zero",
+        "PASS",
+        "timeout",
+        "completion",
+        "fail-closed"
+      ],
+      "reviewed_claims": {
+        "KIG17": "e3ff3058e51baeaf",
+        "KIG19": "3cbdeb716603f747",
+        "KIG23": "89345d92abe46fb4",
+        "KIG24": "833a1d93dfd5c82e",
+        "KIG25": "6be6961ac070aa22",
+        "KIG26": "9193ae5f2751be9a",
+        "KIG27": "8c7440ffcd17647d",
+        "PF2MCB1": "6ff13314e0090f52",
+        "GVC3TAG": "eca05b28b6dc69b2",
+        "GVC3TAGX": "d8b39f6b50b9b13c",
+        "GVC3D10F5G": "46aebb1065fc9dbb"
+      }
+    },
+    {
+      "id": "METHOD-EC-LOCAL-KUMMER-CONTROL",
+      "area": "elliptic-curves",
+      "title": "Calibrate local signatures against known quotient directions",
+      "when": "A local Kummer signature rank is proposed as an exceptional-rank or Selmer predictor.",
+      "use": "Use the rank-28 control: the generic seventeen and all twenty-eight points both have signature rank 15 in 53 coordinates, despite eleven globally independent quotient directions. At odd p compare known-image rank with v2(c_p*#E_ns(F_p)); equality certifies full local coverage. Keep the p=2 formal group separate.",
+      "avoid": "Reading zero incremental local rank as zero global quotient gain, treating a smooth local point as everywhere-local solubility, or treating capped and timed-out lifts as obstructions.",
+      "boundary": "Four odd places and infinity are covered; seven odd places and p=2 remain unresolved. The pilot has 60 witnesses and 24 inconclusive tests. Exact public point covers supply residual lower bound 11, but no ambient Selmer upper bound.",
+      "reopen_when": "A complete ambient squareclass construction and all local conditions are available, or a different signature is tested against these positive controls.",
+      "claims": [
+        "EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE",
+        "EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "sources": [
+        "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
+        "elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py"
+      ],
+      "keywords": [
+        "Kummer",
+        "local image",
+        "positive control",
+        "Selmer",
+        "two adic",
+        "Tamagawa"
+      ],
+      "reviewed_claims": {
+        "EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE": "f5221a793eb3c648",
+        "EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS": "56509673b9eb1940",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE": "f7a8c94736f1b44f"
+      }
+    },
+    {
+      "id": "METHOD-K3-VISIBILITY-INCIDENCE",
+      "area": "elkies-k3",
+      "title": "Record whether visibility predicts or fits a known point",
+      "when": "Comparing a multisection atlas against known high-rank fibres.",
+      "use": "Freeze the atlas and cost order before targets; record genus, degree, family dimension and incidence codimension. The rigid rational-bisection span ranks are 5,3,2,1, but individually named degree-two generators number 4,0,0,0. All 38 displayed generators admit a genus-one degree-two member fitted after seeing the point, using the common norm-eight trace -P2-P5.",
+      "avoid": "Calling a post-hoc moving-pencil interpolation predictive, equating span rank with the number of exposed named generators, or constructing millions of rational trisection equations just to fit already known points.",
+      "boundary": "Only degree-two rational curves and the 320 deep norm-26 trisection classes are complete. The norm-20 and degree-four equation sets are samples, and degrees five/six were stopped, not excluded. The quotient is the displayed L_t/M_t, not a saturated full Mordell-Weil group.",
+      "reopen_when": "A predeclared pencil gives a genuinely new target, or a target-directed rational multisection solves one of the remaining named-generator obligations.",
+      "claims": [
+        "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS",
+        "EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION"
+      ],
+      "sources": [
+        "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
+        "elkies-k3/R17_VISIBILITY_COMPLEXITY_2026-09-03.md"
+      ],
+      "implementation": [
+        "elliptic-curves/scripts/analyze_elkies_2026_deep_cover_quotients.py",
+        "elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage"
+      ],
+      "keywords": [
+        "visibility",
+        "post hoc",
+        "incidence",
+        "genus",
+        "span",
+        "rational multisection"
+      ],
+      "reviewed_claims": {
+        "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS": "aa868a2aaeb4dff3",
+        "EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION": "5569f42aac3ab952"
+      }
+    },
+    {
+      "id": "METHOD-K3-GENUS2-CRT-BOUNDARY",
+      "area": "elkies-k3",
+      "title": "Eliminate first and retain every good-reduction hypothesis",
+      "when": "Seeking a two-node genus-two bisection with rational quadratic normalization.",
+      "use": "Use the finite-pole chord M=M0+(l0+l1*u)h^2. In q=(u^2+a*u+b)^2*(c2*u^2+c1*u+c0), eliminate the three c coefficients from the top terms before solving the four essential variables. Intersect full quadratic squareclasses, including scalar characters, at distinct primes. Reconstruct coordinatewise only with compatible trace bases, then factor over QQ and check both section identities.",
+      "avoid": "Dropping the scalar squareclass, trusting incompatible chart labels, promoting an empty affine multi-prime intersection to a global theorem, or treating standard CRT reconstruction as an unlimited rational-height search.",
+      "boundary": "The recorded primes 17,23,29,31,37 and modulus 13005833 give no accepted candidates in the reconstructed boxes. Infinity, simultaneous bad reduction and larger heights remain open. The separate complete singular genus-one row gives first possible arithmetic genus at least two, not equality.",
+      "reopen_when": "An exact infinity/bad-reduction chart or an unbounded covering theorem supplies information outside the completed boxes.",
+      "claims": [
+        "EC-K3-R17-NORM12-GENUS2-RATIONAL-NORMALIZATION-SCREEN",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION"
+      ],
+      "sources": [
+        "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/export_r17_norm12_direct_genus2_normalizations_modp.sage",
+        "elkies-k3/scripts/reconstruct_r17_norm12_direct_genus2_normalizations.sage",
+        "elkies-k3/scripts/analyze_r17_norm12_direct_genus2_cover_collisions.py"
+      ],
+      "keywords": [
+        "CRT",
+        "genus two",
+        "elimination",
+        "squareclass",
+        "good reduction",
+        "infinity"
+      ],
+      "reviewed_claims": {
+        "EC-K3-R17-NORM12-GENUS2-RATIONAL-NORMALIZATION-SCREEN": "08357122de3c43ff",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION": "bf05d9b06ccc1502"
+      }
+    },
+    {
+      "id": "METHOD-K3-ISOLATED-SECTION-LIFTS",
+      "area": "elkies-k3",
+      "title": "Reuse exact local lift failures and retain singular branches",
+      "when": "Searching for a second anti-invariant section of a direct singleton twist.",
+      "use": "For chi=3 and P.O=0, use the exact polynomial box deg X<=6, deg Y<=9. Fix the smooth infinity point, solve lower Y coefficients recursively, then classify tangent rank. Full-rank extra branches admit digit-by-digit exact lift tests. Reuse the 2423 recorded nonlifting certificates and the known-section depth-512 reconstruction control before another shell.",
+      "avoid": "Re-enumerating the 10,690,517,260 recorded X candidates, interpreting nonlifting of isolated extras as closure of singular/known-section reductions, or allowing producer-source drift to trigger a campaign rebuild.",
+      "boundary": "The result covers 400 distinct shells for 200 ranked characters only. The other 38947 characters, P.O>0 and nonsingleton covers remain open. The retained-record auditor checks source/data integrity and coverage without rerunning arithmetic; its per-run digest cache invalidates on file changes.",
+      "reopen_when": "A new mathematical argument addresses singular reductions, another degree box or a separately justified character set.",
+      "claims": [
+        "EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200"
+      ],
+      "sources": [
+        "elkies-k3/R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_retained_r17_singleton_po0.py",
+        "elkies-k3/scripts/lift_r17_norm12_direct_singleton_po0_bruteforce.sage",
+        "elkies-k3/scripts/bruteforce_twist_polynomial_sections_modp.cpp"
+      ],
+      "keywords": [
+        "Hensel",
+        "tangent rank",
+        "singular branch",
+        "P.O",
+        "positive control",
+        "digest cache"
+      ],
+      "reviewed_claims": {
+        "EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200": "80ab545a98b4e2d7"
+      }
+    },
+    {
+      "id": "METHOD-F2-SOURCE-IMAGE",
+      "area": "plane-jc",
+      "title": "Check the exact source image before tangent calculations",
+      "when": "A coordinate change produces a finite Laurent support envelope.",
+      "use": "Build the binomial-jet image matrix and retain its linear relations. The F2 r=3 images have ranks 74/83 and 196/215; the formal terminal point violates a primitive source relation by 3470256. Reject such a base point before interpreting its tangent dimension.",
+      "avoid": "Treating every supported monomial as an independent source coefficient, or treating a tangent at an invalid base point as a component.",
+      "boundary": "The r=3 literal polynomial projection is already excluded by its length-27 top-gap algebra and unit Q gap. Full Laurent cross terms remain unaccounted for; finite r=4/5 samples do not establish an all-r theorem.",
+      "reopen_when": "A proved tail correction or a different exact source image changes the projection problem.",
+      "claims": [
+        "PF2MCB1",
+        "PF2MS1"
+      ],
+      "sources": [
+        "plane-jc/F2_MODIFIED_CHART_BRIDGE.md",
+        "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/verify_f2_modified_chart_bridge.py"
+      ],
+      "keywords": [
+        "binomial jet",
+        "source image",
+        "support box",
+        "negative Laurent tail",
+        "tangent"
+      ],
+      "reviewed_claims": {
+        "PF2MCB1": "6ff13314e0090f52",
+        "PF2MS1": "8a299e7f1b489fe0"
+      }
+    },
+    {
+      "id": "METHOD-F2-CARRIER-STRATA",
+      "area": "plane-jc",
+      "title": "Separate carrier strata before number-field specialization",
+      "when": "Specializing a coefficient system at classified carrier parameters.",
+      "use": "Branch first: the rational squarefree cofactor is outside the movable-double-root component. Compute double-carrier operators over Q(rho), rho^2-3rho+1=0, using exact quotient-field arithmetic; the defect ratio adds the independent quadratic 27y^2-9y+1 and gives four embeddings of one quartic compositum.",
+      "avoid": "Plugging the squarefree cofactor into a double-root chart, or replacing exact number-field kernels by floating-point ranks.",
+      "boundary": "The 82 squarefree spacings are routed but not eliminated. Specialized linear maps do not decide the nonlinear ideal.",
+      "reopen_when": "A new carrier stratum or a theorem covering its full target-and-tail component is supplied.",
+      "claims": [
+        "PF2CW1",
+        "PF2CS1",
+        "PF2NF1"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md",
+        "plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+        "plane-jc/F2_75_125_NONLINEAR_FORCING.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/verify_f2_75_125_carrier_specializations.py"
+      ],
+      "keywords": [
+        "carrier",
+        "stratum",
+        "number field",
+        "quartic compositum",
+        "rational squarefree"
+      ],
+      "reviewed_claims": {
+        "PF2CW1": "a7774b0fa736b64c",
+        "PF2CS1": "666da98d2d24669e",
+        "PF2NF1": "acf301f85df9017a"
+      }
+    },
+    {
+      "id": "METHOD-F2-FULL-COKERNEL",
+      "area": "plane-jc",
+      "title": "Keep divisibility conditions when factoring an operator",
+      "when": "Factoring a common Laurent divisor before projecting nonlinear forcing.",
+      "use": "First retain the Euclidean remainder against the forced factor, then project the quotient in its exact cokernel basis. In F2 the coupled obstruction is 294 divisibility jets plus 53 quotient coordinates; the final block is seven target and six Hermite coordinates after earlier endpoint controls.",
+      "avoid": "Keeping only the 53 normalized quotient equations, or mistaking thirteen final cokernel coordinates for thirteen source variables.",
+      "boundary": "These are presentation dimensions. The complete circuit has 954 reachable variables and its component remains undecided.",
+      "reopen_when": "A new proved elimination removes the discarded-factor constraints on the precise localized component.",
+      "claims": [
+        "PF2CS1",
+        "PF2NF1"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+        "plane-jc/F2_75_125_NONLINEAR_FORCING.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/verify_f2_75_125_carrier_specializations.py",
+        "plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py"
+      ],
+      "keywords": [
+        "Fitting",
+        "cokernel",
+        "divisibility",
+        "294+53",
+        "Hermite",
+        "factor quotient"
+      ],
+      "reviewed_claims": {
+        "PF2CS1": "666da98d2d24669e",
+        "PF2NF1": "acf301f85df9017a"
+      }
+    },
+    {
+      "id": "METHOD-F2-CIRCUIT-CONTINUATION",
+      "area": "plane-jc",
+      "title": "Carry endpoint solutions as a shared arithmetic circuit",
+      "when": "Large nonlinear forcing is assembled after exact triangular eliminations.",
+      "use": "Intern field constants and repeated arithmetic nodes, carry the 1489-term endpoint substitutions, and propagate the 134 upper Q eliminations before projecting all remaining rows. Evaluate the DAG and sparse Jacobian without expanding a multivariate polynomial list. Higher formal coefficients use the fixed Jacobian and its left cokernel.",
+      "avoid": "Expanding the whole source presentation before specialization, or rerunning the forcing regression merely to inspect its counts.",
+      "boundary": "The compact JSON stores digests and summaries, not the 710439-node DAG. Full replay rebuilds it; the retained-checkpoint audit is only an integrity and metadata check.",
+      "reopen_when": "The exact circuit or mathematical component changes, or a separately scoped replay is needed.",
+      "claims": [
+        "PF2ER1",
+        "PF2CS1",
+        "PF2NF1"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_DERIVATION.md",
+        "plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+        "plane-jc/F2_75_125_NONLINEAR_FORCING.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py",
+        "plane-jc/cas/sparse_circuit_modp.py",
+        "plane-jc/cas/compile_f2_75_125_formal_homotopy.py",
+        "plane-jc/cas/audit_f2_retained_checkpoints.py"
+      ],
+      "keywords": [
+        "DAG",
+        "hash consing",
+        "endpoint substitution",
+        "sparse Jacobian",
+        "formal homotopy"
+      ],
+      "reviewed_claims": {
+        "PF2ER1": "64378dad616fc3f2",
+        "PF2CS1": "666da98d2d24669e",
+        "PF2NF1": "acf301f85df9017a"
+      }
+    },
+    {
+      "id": "METHOD-F2-FORMAL-JET-BOUNDARY",
+      "area": "plane-jc",
+      "title": "Check the target value separately from formal continuation",
+      "when": "A modular Newton direction or finite formal homotopy appears unobstructed.",
+      "use": "Use exact line-polynomial gcds for line exclusions and project each formal forcing into the full left cokernel before solving the next coefficient. Preserve the gauge, field, order, denominators and target residual. The regular F31 order-16 jet still fails 50 equations at lambda=1; F61 supplies an order-8 checkpoint, not a characteristic-zero lift.",
+      "avoid": "Calling same-field Newton a Hensel lift, inferring a multivariate obstruction identity from finitely many tangent lines, or evaluating a truncated jet at lambda=1 as if convergence were proved.",
+      "boundary": "The gcd-one result excludes its specific whole line. The 112 coordinate and eight dense lines do not reconstruct the entire obstruction map; finite jet recurrence patterns do not prove rationality.",
+      "reopen_when": "A reconstructed branch passes the complete circuit at the target, or an exact ideal certificate closes the component; characteristic-zero and global realization remain separate.",
+      "claims": [
+        "PF2NF1"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_NONLINEAR_FORCING.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/probe_f2_75_125_nonlinear_modular.py",
+        "plane-jc/cas/compile_f2_75_125_tangent_obstruction.py",
+        "plane-jc/cas/compile_f2_75_125_formal_homotopy.py"
+      ],
+      "keywords": [
+        "Newton",
+        "Hensel",
+        "finite jet",
+        "lambda=1",
+        "regular gauge",
+        "algebraization",
+        "gcd"
+      ],
+      "reviewed_claims": {
+        "PF2NF1": "acf301f85df9017a"
+      }
+    },
+    {
+      "id": "METHOD-SPARSE-PIVOT-ORDER",
+      "area": "plane-jc",
+      "title": "Back-substitute by pivot column, not discovery order",
+      "when": "Sparse Gaussian elimination discovers pivots out of column order.",
+      "use": "Back-substitute in descending numerical pivot-column order and check J*delta against the requested right-hand side. Retain a regression whose pivot discovery order is y,x: reverse insertion order gives the wrong solution. F2 also keeps the full 153-dimensional left cokernel when testing obstructions.",
+      "avoid": "Reversing a pivot dictionary or using only the inconsistent-row indices as an obstruction basis.",
+      "boundary": "This repairs the linear solve; a consistent tangent equation still need not integrate to a solution.",
+      "reopen_when": "The solver, pivot policy, prescribed-coordinate gauge or field representation changes.",
+      "claims": [
+        "PF2NF1"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_NONLINEAR_FORCING.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/sparse_circuit_modp.py",
+        "plane-jc/cas/test_sparse_circuit_modp.py"
+      ],
+      "keywords": [
+        "sparse elimination",
+        "pivot order",
+        "back substitution",
+        "left cokernel",
+        "regression"
+      ],
+      "reviewed_claims": {
+        "PF2NF1": "acf301f85df9017a"
+      }
+    },
+    {
+      "id": "METHOD-F2-GEOMETRY-BEFORE-PERMUTATIONS",
+      "area": "plane-jc",
+      "title": "Verify the geometric bridge before enlarging a permutation census",
+      "when": "Local Kummer data are proposed as branch cycles of a global cover.",
+      "use": "Read the actual carrier map first: PF2CW1 makes the simple squarefree points unramified, invalidating both historical transposition applications. Retain the conditional censuses as regressions. Their S11 certificate generates all 330 three-cycles from intersecting A6 supports; repeated star connectors give an all-degree coarse witness.",
+      "avoid": "Re-enumerating 11! permutations or more degree bounds to settle a bridge already contradicted by the carrier theorem; confusing residue-cover product one with a global Keller meridian completion.",
+      "boundary": "The conditional S7/S11 covers neither realize nor exclude F2. A terminal A6 residue quotient and a global transitive group are different data.",
+      "reopen_when": "A different actual carrier has a proved ramification and attachment theorem matching the proposed permutation model.",
+      "claims": [
+        "PF2SG1",
+        "PF2CW1",
+        "PF2GA1"
+      ],
+      "sources": [
+        "plane-jc/F2_A6_SIMPLE_SPECTATOR_GLUING.md",
+        "plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md",
+        "plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py",
+        "plane-jc/cas/verify_f2_75_125_global_attachment.py"
+      ],
+      "keywords": [
+        "monodromy",
+        "Kummer",
+        "Nielsen class",
+        "S11",
+        "unramified spectator",
+        "global meridians"
+      ],
+      "reviewed_claims": {
+        "PF2SG1": "c03d12ec118e8b73",
+        "PF2CW1": "a7774b0fa736b64c",
+        "PF2GA1": "7a20aae5ef69e2f1"
+      }
+    },
+    {
+      "id": "METHOD-F2-VALUATION-AND-TRANSVERSE-POLES",
+      "area": "plane-jc",
+      "title": "Transport original valuations and transverse poles together",
+      "when": "A translated Laurent chart is used to compile a source boundary graph.",
+      "use": "Undo the translation before assigning original orders: the terminal normal gives nu(x),nu(y_old),nu(x*y_old^5-c)=(-25,5,12), not a monomial ray (-25,17). At each interior residue-node preimage also inspect the transverse coefficient: its order -2 requires two source blowups.",
+      "avoid": "Using residue incidence alone to count attachments, or charging the root matching length 54 as a logarithmic point correction.",
+      "boundary": "The later exact cyclic root contribution is 27 and the outgoing tail contributes zero. These local results leave the affine purity divisors and effective global Chern filtration unresolved.",
+      "reopen_when": "A new coordinate change or actual global boundary packet changes the full valuation and logarithmic-unit data.",
+      "claims": [
+        "PF2GA1",
+        "PF2LNP1",
+        "PF2OTT1",
+        "OP-PLANE"
+      ],
+      "sources": [
+        "plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md",
+        "plane-jc/F2_LOG_NODE_PROFILE.md",
+        "plane-jc/F2_OUTGOING_TERMINAL_TAIL.md",
+        "plane-jc/NEXT_DEGREE_FRONTIER.md"
+      ],
+      "implementation": [
+        "plane-jc/cas/verify_f2_75_125_global_attachment.py"
+      ],
+      "keywords": [
+        "valuation",
+        "translation",
+        "nonmonomial",
+        "transverse pole",
+        "blowup",
+        "root charge"
+      ],
+      "reviewed_claims": {
+        "PF2GA1": "7a20aae5ef69e2f1",
+        "PF2LNP1": "e4f0f231bf7494d5",
+        "PF2OTT1": "af25012e34020e11",
+        "OP-PLANE": "cc4138b362602964"
+      }
+    },
+    {
+      "id": "METHOD-GVC-TAGGED-ROUTE-CLOSED",
+      "area": "geometry",
+      "title": "Use the existing ternary counterexample before designing another lift",
+      "when": "A proposed GVC experiment starts by purifying the rank-five SIC witness or searching for a first three-variable counterexample.",
+      "use": "Start with GVC3HC: P has degree twelve and Lambda=Delta^6; the all-order written and Lean proofs are available. GVC2ENV supplies the binary closure. Retain tagged-lift failures as architecture regressions and route lower-degree work through OP-GVC3-MIN.",
+      "avoid": "Repeating the 200 GF(101) cubic-profile fibres, the canonical rank-five ancilla or the literal Long tag to settle the already closed existence/dimension question.",
+      "boundary": "The sixth power of a quadratic operator is not the ordinary Laplacian. Minimum degree and unclassified lift architectures remain open; a completed existence theorem does not promote the old finite-field searches.",
+      "reopen_when": "A precisely stated minimum-degree or architecture-classification question requires a channel family not already excluded.",
+      "claims": [
+        "GVC3TAGX",
+        "GVC3TAG",
+        "GVC3HC",
+        "GVC2ENV",
+        "OP-GVC3-MIN"
+      ],
+      "sources": [
+        "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+        "extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md"
+      ],
+      "implementation": [
+        "scripts/research_three_variable_gvc_tagged_lift.py",
+        "scripts/verify_gvc3_homogeneous_counterexample.py"
+      ],
+      "keywords": [
+        "tagged lift",
+        "rank five",
+        "counterexample",
+        "minimum degree",
+        "Delta^6",
+        "closed route"
+      ],
+      "reviewed_claims": {
+        "GVC3TAGX": "d8b39f6b50b9b13c",
+        "GVC3TAG": "eca05b28b6dc69b2",
+        "GVC3HC": "18bcc7c7dcd52939",
+        "GVC2ENV": "fca2e7df96a1ea80",
+        "OP-GVC3-MIN": "5c00fcbdc7ae276d"
+      }
+    },
+    {
+      "id": "METHOD-GVC-POWER-COMPATIBLE-LIFTS",
+      "area": "geometry",
+      "title": "Preserve factorial contractions when compressing exponent lattices",
+      "when": "Monomial compression or weighted channel matching is proposed as an all-order GVC transfer.",
+      "use": "Prove both operator-versus-polynomial degree inequalities before replacing a contraction by matched channel counts. The cubic tagged lift forces equality and yields the explicit binomial/factorial channel sum. The weighted quartic plane instead admits unequal selections of equal weight; use its full moment equations. Keep the odd-only prime decomposition as a regression face when restoring even endpoints.",
+      "avoid": "Inferring a power-compatible differential identity from an exponent-lattice parallelogram, or applying odd-face equations to the full restored coefficient space. All 56 four-term orientations are already excluded over Q by moments three or four.",
+      "boundary": "A lattice compression can preserve monomials while changing their factorial weights. Field-valued disappearance of a channel does not remove its nilpotent structure from the finite moment scheme.",
+      "reopen_when": "A new transfer proves the complete contraction identity and accounts for every restored channel and boundary.",
+      "claims": [
+        "GVC3TAG",
+        "GVC3CH",
+        "GVC3TAGX"
+      ],
+      "sources": [
+        "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md"
+      ],
+      "implementation": [
+        "scripts/research_three_variable_gvc_tagged_lift.py",
+        "scripts/research_three_channel_gvc_lift.py"
+      ],
+      "keywords": [
+        "factorial weights",
+        "channel count",
+        "weighted degree",
+        "parallelogram",
+        "even odd",
+        "nilpotent"
+      ],
+      "reviewed_claims": {
+        "GVC3TAG": "eca05b28b6dc69b2",
+        "GVC3CH": "ccb3325192b767db",
+        "GVC3TAGX": "d8b39f6b50b9b13c"
+      }
+    },
+    {
+      "id": "METHOD-GVC-PIVOT-COST",
+      "area": "geometry",
+      "title": "Choose elimination pivots by downstream expansion cost",
+      "when": "A multi-channel moment system has several linear pivots or a fixed rational direction slice.",
+      "use": "Reuse the recorded term counts before compiling another system. For the nested degree-ten boundary, the a3 pivot gives 648/7340/15300 terms versus 958/6173/34782 for a2, so the slightly larger middle equation buys a much smaller next one. On a fixed rational cross-ratio slice compile with the numeric Gram matrix before expansion.",
+      "avoid": "Selecting a pivot from one equation only, expanding the symbolic cross-ratio system before specializing a declared fibre, or treating --compile-only as a cheap metadata operation.",
+      "boundary": "A rational slice is not the generic chart. Record every inverted pivot coefficient and retain its excluded projective face.",
+      "reopen_when": "New moments or a different normalization change the downstream size profile, or a genuinely new chart is required.",
+      "claims": [
+        "GVC3D10F5G",
+        "GVC3D10F5S"
+      ],
+      "sources": [
+        "extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/research_gvc3_many_coherent_channels.py"
+      ],
+      "keywords": [
+        "pivot",
+        "term counts",
+        "Gram matrix",
+        "specialization",
+        "symbolic expansion",
+        "compile-only"
+      ],
+      "reviewed_claims": {
+        "GVC3D10F5G": "46aebb1065fc9dbb",
+        "GVC3D10F5S": "c9dd7c285a93b9e5"
+      }
+    },
+    {
+      "id": "METHOD-GVC-STAGED-LOCALIZATION",
+      "area": "geometry",
+      "title": "Factor and rechart localization before retrying a large saturation",
+      "when": "A product saturation times out on the coherent degree-ten boundary.",
+      "use": "Reuse the cutoff-three factor-by-factor result: only a1 divides the original principal generator; after setting a1=1 every localization factor is coprime. At cutoff four use the recorded residual-intersection minors and solved linear D restriction to identify where growth and thickness occur.",
+      "avoid": "Repeating the old 60-second product timeout with a larger limit, calling a timeout a survivor, or treating closure of all ten factor supports as construction of the saturated scheme.",
+      "boundary": "Seven factors are scheme-complete in the three-prime cutoff-four calculation. The D/collision branch has normal thickness, so radical support alone loses information. These modular facts require their stated chart and primes.",
+      "reopen_when": "A new residual ideal or structural representation addresses the actual unresolved localization, with a declared mathematical gate.",
+      "claims": [
+        "GVC3D10F5G"
+      ],
+      "sources": [
+        "extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/research_gvc3_many_coherent_channels.py"
+      ],
+      "keywords": [
+        "successive saturation",
+        "rechart",
+        "principal gcd",
+        "residual intersection",
+        "timeout",
+        "support versus scheme"
+      ],
+      "reviewed_claims": {
+        "GVC3D10F5G": "46aebb1065fc9dbb"
+      }
+    },
+    {
+      "id": "METHOD-GVC-NORMAL-FIBRE-CLOSURE",
+      "area": "geometry",
+      "title": "Use the next moment to close a thick fibre before building its ambient colon",
+      "when": "A moment ideal has a thick normal component and further equations are available.",
+      "use": "On the degree-ten nested chart, solve D=C*a0+R with C invertible and use cleared restrictions. Cutoff-four normal lengths 12 and 18 are already classified. At moment five the second restriction is a unit times e^20 and the third is a unit modulo e, where e=lam-mu. A finite geometric-series inverse closes the entire D=0 fibre, including the exceptional branch.",
+      "avoid": "Rebuilding a large ambient cutoff-four colon to reclose the D fibre, or replacing the finite inverse proof with a common-polynomial-gcd claim. The retained 600/900-second runs are diagnostics.",
+      "boundary": "The closure holds on the declared localization. Residual D!=0, main A*B!=0 and omitted pivot/projective faces remain unresolved. Filenames ending modular3 can contain cutoff-four data; read max_order and field labels.",
+      "reopen_when": "A new target concerns an unresolved residual chart or requires the ambient cutoff-four scheme itself.",
+      "claims": [
+        "GVC3D10F5G",
+        "OP-GVC3-MIN"
+      ],
+      "sources": [
+        "extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "implementation": [
+        "scripts/research_gvc3_many_coherent_channels.py"
+      ],
+      "keywords": [
+        "D fibre",
+        "normal length",
+        "12",
+        "18",
+        "finite inverse",
+        "moment five",
+        "cleared restriction"
+      ],
+      "reviewed_claims": {
+        "GVC3D10F5G": "46aebb1065fc9dbb",
+        "OP-GVC3-MIN": "5c00fcbdc7ae276d"
+      }
+    },
+    {
+      "id": "METHOD-FILTERED-TANGENT-REUSE",
+      "area": "geometry",
+      "title": "Compute all source-degree cutoffs with one incremental echelon",
+      "when": "The same tangent space is tested at many degree cutoffs for its unique source trivializer.",
+      "use": "Construct the tangent basis and coefficient rows of adj(DF)G once, group the rows by source degree, then insert them in descending degree order. Rank above each cutoff gives the whole filtered profile without solving a new tangent system. Reuse the retained p=32003 profiles and CSK1 exact rational seed degrees.",
+      "avoid": "Reconstructing the tangent matrix for each cutoff or redoing the rational seed gauges as if they were only modular observations.",
+      "boundary": "The full cutoffs 33/48/63 remain single-prime results. Source-only first-order degree is not the optimal two-sided filtration, and finite exhaustion does not erase stable moduli or prove algebraization.",
+      "reopen_when": "A characteristic-zero full-profile certificate, a new coefficient box or a precisely defined two-sided filtration is in scope.",
+      "claims": [
+        "CSK4",
+        "CSK1",
+        "O1",
+        "OP-CCDM"
+      ],
+      "sources": [
+        "extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md"
+      ],
+      "implementation": [
+        "scripts/research_filtered_source_tangent_profile.py",
+        "scripts/verify_all_degree_coefficient_tangents.py"
+      ],
+      "keywords": [
+        "filtered tangent",
+        "incremental echelon",
+        "source degree",
+        "adjugate",
+        "32003",
+        "breakpoints"
+      ],
+      "reviewed_claims": {
+        "CSK4": "9bfaba861b230376",
+        "CSK1": "9710349f53517340",
+        "O1": "5b71eb9eb9eb6122",
+        "OP-CCDM": "0604e7b723ecefcd"
+      }
+    },
+    {
+      "id": "METHOD-KURANISHI-KERNEL-CHOICES",
+      "area": "geometry",
+      "title": "Keep lower-order kernel choices in higher deformation obstructions",
+      "when": "A greedy formal lift fails, or quadratic and cubic homogeneous layers are passed to a component calculation.",
+      "use": "Retain the lower-order free kernel parameters when formulating the next obstruction. Use the known seed family as a positive control. The quartic generic compiler already records 22 normal quadrics and 305 cubic equations; its 327-generator homogeneous-layer input is retained, together with the failed primary-decomposition attempt.",
+      "avoid": "Calling a fourth-order failure of one chosen correction a universal obstruction, identifying the layer ideal with the completed local ideal, or interpreting transverse tangent excess as proof of embedded nilpotents.",
+      "boundary": "A reduced family need not be a component; excess tangent dimension can come from thickness, other branches or both. The 12 GB failed standard-basis run produced no radical or primary decomposition.",
+      "reopen_when": "An exact calculation retains all lower-order choices and proves the claimed completed-scheme or algebraization implication.",
+      "claims": [
+        "CSK2",
+        "CSK3",
+        "OP-CCDM"
+      ],
+      "sources": [
+        "extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md"
+      ],
+      "implementation": [
+        "scripts/research_quartic_coefficient_kuranishi.py",
+        "scripts/research_quartic_generic_component.py"
+      ],
+      "keywords": [
+        "Kuranishi",
+        "kernel choices",
+        "greedy lift",
+        "positive control",
+        "completed local ideal",
+        "primary decomposition"
+      ],
+      "reviewed_claims": {
+        "CSK2": "45d12ecc37db9352",
+        "CSK3": "2b27431804a04b4c",
+        "OP-CCDM": "0604e7b723ecefcd"
+      }
+    },
+    {
+      "id": "METHOD-EC-ADAPTIVE-CAMPAIGN-CLOSURE",
+      "area": "elliptic-curves",
+      "title": "Read terminal stopping reasons before treating unused adaptive capacity as work",
+      "when": "A historical runbook calls a campaign active or quotes its maximum possible box count.",
+      "use": "Use the existing terminal reporter on retained checkpoints. The record-scale cohort completed all48 curves at2352 certified boxes with zero gains; every initial no-gain wave stopped its curve. The32/8/8 score strata are fully reported. Bind roster, wave proofs, stopping reasons and completed exposure before interpreting a comparison.",
+      "avoid": "Restarting a completed cohort to fill its11760-box adaptive maximum, treating a RUNNING snapshot as live state, or rebuilding the million-parameter intake to learn a retained outcome.",
+      "boundary": "A completed no-gain detector result is a bounded miss. It establishes neither an upper rank bound nor score equivalence. Reporter hash checks reuse prior certificates; they are not a fresh independent arithmetic replay.",
+      "reopen_when": "A different detector or population has a separately declared hypothesis, finite budget and proof plan.",
+      "claims": [
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907"
+      ],
+      "sources": [
+        "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/report_det1092_record_scale_points.py",
+        "elliptic-curves/cas/det1092_record_scale_points.py"
+      ],
+      "keywords": [
+        "adaptive stopping",
+        "terminal ledger",
+        "2352 boxes",
+        "zero gain",
+        "record scale",
+        "unused capacity"
+      ],
+      "reviewed_claims": {
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971"
+      }
+    },
+    {
+      "id": "METHOD-EC-FROZEN-RUNTIME-COMPATIBILITY",
+      "area": "elliptic-curves",
+      "title": "Preserve frozen assignments while separating changed coordinate measurements",
+      "when": "A historical protocol source hash differs after an explicit backend amendment.",
+      "use": "Audit population, assignment, context and budgets unchanged; permit only declared source replacements whose historical bytes match the pinned revision. Keep raw and amended-runtime checkpoints separate. The rescue audit verifies the2239 assignments and historical66 clean zeros without Sage, while reporting current readiness as NOT_CERTIFIED. Preserve the exact301-class rescue set and its separate specialized reranking.",
+      "avoid": "Overwriting a frozen protocol to make its old builder --check pass, merging raw boxes into changed coordinate boxes, treating12 assigned historical zeros as12 compatible current inputs, or reconstructing absent base chunks during cleanup.",
+      "boundary": "No rescue chart has run. The current worker recomputes the complete generic parity census rather than loading a persisted table. Assignment without outcome inputs does not erase that the protocol was frozen after the base checkpoint was known.",
+      "reopen_when": "Compatible base evidence has been recovered and identity-checked, or a separately scoped implementation reuses a certified order keyed by exact generic Gram, basis and labels.",
+      "claims": [
+        "EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE"
+      ],
+      "sources": [
+        "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/audit_mw17_rescue_commitment.py",
+        "elliptic-curves/cas/pointed_quartic_migration.py",
+        "elliptic-curves/cas/run_mw17_jump_v2_zero_gain_rescue.sage",
+        "elkies-k3/scripts/build_mw17_jump_v2_zero_gain_rescue.py"
+      ],
+      "keywords": [
+        "frozen protocol",
+        "source amendment",
+        "checkpoint compatibility",
+        "rescue",
+        "generic census",
+        "coordinate policy"
+      ],
+      "reviewed_claims": {
+        "EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE": "e5320f1f3bf33148"
+      }
+    },
+    {
+      "id": "METHOD-EC-RR-DIVISOR-NORMALIZATION",
+      "area": "elliptic-curves",
+      "title": "Normalize each local divisor before discarding a prime",
+      "when": "An RR fake-Kummer panel rejects a place because one evaluation is nonunit or its basepoint has negative valuation.",
+      "use": "Normalize the sextic and each divisor separately by rational prime powers. Omit only nonunit divisors; for negative basepoint valuation use the scalar-equivalent anchor1-T/T0. This recovered152 previously skipped pairs without new primes or points. At certified good reduction, compare the attained rank with the complete local dimension and independently check the fake kernel.",
+      "avoid": "Requiring every inherited generator to be a unit, discarding a whole prime unnecessarily, or calling failure of this model reduction test intrinsic bad reduction.",
+      "boundary": "The frozen panel closes553/640 pairs. The83 failed reduction tests and four anchor cases remain unresolved. Rational-scalar normalization is justified in the stated fake squareclass quotient; its true-image conclusion also uses the proved kernel statement.",
+      "reopen_when": "An unresolved anchor or reduction case has a certified alternative local model, with the same class maps and completeness checks.",
+      "claims": [
+        "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908",
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908"
+      ],
+      "sources": [
+        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/construct_det1092_rr_good_local_images.sage",
+        "elliptic-curves/cas/verify_det1092_rr_good_local_images.sage"
+      ],
+      "keywords": [
+        "RR",
+        "local Kummer",
+        "divisor normalization",
+        "negative valuation",
+        "fake kernel",
+        "152 recovered pairs"
+      ],
+      "reviewed_claims": {
+        "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908": "c82a1b160c0c4b6d",
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "b22e4c511e3fe2c3"
+      }
+    },
+    {
+      "id": "METHOD-EC-RR-LOCAL-GLOBAL-COMPATIBILITY",
+      "area": "elliptic-curves",
+      "title": "Reuse complete local images without collapsing the remaining global problem",
+      "when": "A proposed RR incidence detector asks for classes outside the inherited image at an already certified place.",
+      "use": "Reuse the553 complete good-prime images and all ten real and2-adic images: the inherited subgroup spans each. Preserve true/fake kernel data. A global comparison still needs simultaneous compatibility in a complete supported squareclass space, including unramified class contributions; the inherited combination can differ from place to place.",
+      "avoid": "Searching for an outside-inherited class at a place already proved fully spanned, identifying local proxies with the original global fields, or replacing global completeness with trial-prime support or known rational classes.",
+      "boundary": "The known rational Kummer dimension is18. A certified full Selmer dimension18 would give exact Jacobian rank18 and zero Sha[2]; a larger dimension is not automatically Sha. Prepared equation replay does not prove any local image or global Selmer group.",
+      "reopen_when": "A complete global algorithm or a new unresolved-place certificate supplies an obligation beyond the already closed local panels.",
+      "claims": [
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908",
+        "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908",
+        "EC-DET1092-RR-COMPLETE-DYADIC-IMAGES-20260908"
+      ],
+      "sources": [
+        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md",
+        "elliptic-curves/notes/DET1092_RR_COMPLETE_DYADIC_IMAGES_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/verify_det1092_rr_full_selmer_inputs.sage",
+        "elliptic-curves/cas/verify_det1092_rr_dyadic_image_panel.sage",
+        "elliptic-curves/cas/verify_det1092_rr_dyadic_images.sage"
+      ],
+      "keywords": [
+        "RR",
+        "local global compatibility",
+        "supported squareclasses",
+        "true fake",
+        "Sha",
+        "Selmer completeness"
+      ],
+      "reviewed_claims": {
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "b22e4c511e3fe2c3",
+        "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908": "c82a1b160c0c4b6d",
+        "EC-DET1092-RR-COMPLETE-DYADIC-IMAGES-20260908": "6fe536a0b8cd5aad"
+      }
+    },
+    {
+      "id": "METHOD-EC-SUBLATTICE-CALIBRATION",
+      "area": "elliptic-curves",
+      "title": "Test proposal recall and actual integral subgroup identity before tuning scores",
+      "when": "A low-height or common-cover lattice candidate is proposed as a recovered generic family.",
+      "use": "Check the full proposal ledger against the frozen masked control. The two generators peak at rank12 intersections8 and10; the second comparison covers all1928 rank12 proposals, so rescoring cannot recover an absent space. Keep the successful older graph-consensus primitive closure and its index2048 actual subgroup separate. Use Curve302's completed alternative MW17 parent for construction recovery.",
+      "avoid": "Promoting a containing higher-rank space to exact recovery, recognizing Fermigier from index2^11 alone, or rerunning failed proposal generators to rediscover Curve302's already proved parent.",
+      "boundary": "Any independent rank-r set in one nonzero parity class forces index divisible by2^(r-1) in its primitive closure. A projected Schur quotient is not an exact integral orthogonal complement. Neither rounded heights nor bounded proposal failure proves nonexistence.",
+      "reopen_when": "A new generator passes a declared control at the exact requested rank and actual integral subgroup, with a separate geometric reconstruction proof.",
+      "claims": [
+        "EC-LOW-HEIGHT-MW-SUBLATTICES-20260906",
+        "EC-CURVE302-RECOVERED-MW17-PARENT"
+      ],
+      "sources": [
+        "elliptic-curves/notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md",
+        "elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/search_low_height_mw_sublattices.py",
+        "elliptic-curves/cas/search_common_cover_mw_sublattices.py",
+        "elliptic-curves/cas/audit_common_cover_generated_lattices.py"
+      ],
+      "keywords": [
+        "proposal recall",
+        "Fermigier control",
+        "primitive closure",
+        "actual subgroup",
+        "parity index",
+        "Curve302"
+      ],
+      "reviewed_claims": {
+        "EC-LOW-HEIGHT-MW-SUBLATTICES-20260906": "394bbc48ea2a0040",
+        "EC-CURVE302-RECOVERED-MW17-PARENT": "3aba67f4281fcef1"
+      }
+    },
+    {
+      "id": "METHOD-EC-SUBLATTICE-BATCHING",
+      "area": "elliptic-curves",
+      "title": "Batch coset norms and sieve exact membership while preserving relation content",
+      "when": "A fixed lattice proposal searches many shifted representatives or tests a large pool against candidate spaces.",
+      "use": "Precompute shifts and their norms, then evaluate each coset with q(c+s)=q(s)+2s^T Hc+q(c) and stable ordering. Reuse an exact integer kernel: mod1009 matrix products reject nonmembers before exact integer products on survivors. Keep unit relations v_i plus or minus v_j equals v_k literal; dividing content would turn a+b=2c into a false unit edge.",
+      "avoid": "Repeating full norm/rank calculations for every representative, treating the support-at-most-two shifted box as complete CVP, or using bounded qfminim's second field as the minimum.",
+      "boundary": "The search explicitly minimizes returned norms. Agreement of80- and100-digit height balls is numerical evidence, not an interval-certified cutoff. verify_low_height_mw_sublattices --check rebuilds balls, minima and finite reductions; it is not a cheap metadata check.",
+      "reopen_when": "The exact basis or proposal domain changes, or a new completeness claim requires certified numerical bounds and an appropriately scoped replay.",
+      "claims": [
+        "EC-LOW-HEIGHT-MW-SUBLATTICES-20260906"
+      ],
+      "sources": [
+        "elliptic-curves/notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/search_common_cover_mw_sublattices.py",
+        "elliptic-curves/cas/search_low_height_mw_sublattices.py",
+        "elliptic-curves/cas/verify_low_height_mw_sublattices.py"
+      ],
+      "keywords": [
+        "batched norms",
+        "integer kernel",
+        "modular sieve",
+        "unit relations",
+        "qfminim",
+        "numerical boundaries"
+      ],
+      "reviewed_claims": {
+        "EC-LOW-HEIGHT-MW-SUBLATTICES-20260906": "394bbc48ea2a0040"
+      }
+    },
+    {
+      "id": "METHOD-EC-COHERENT-SECTION-LABELS",
+      "area": "elliptic-curves",
+      "title": "Keep section labels and ordinate branches fixed before stacking fibres",
+      "when": "Finite reductions from several parameter values are stacked to prove generic independence.",
+      "use": "Use one source-root permutation and exact rational-function ordinate branches. The Mestre adapter preserves both. The corrected13 probes have rank11; the old sorted-root and positive-square-root probes still have matrix rank13 but do not specialize one common coefficient relation.",
+      "avoid": "Sorting section columns independently at each fibre, choosing square-root signs numerically, or treating tests that reproduce the old matrix as a valid generic proof.",
+      "boundary": "A fixed coherent matrix of full column rank plus torsion exclusion proves the stated lower bound. Rank defects alone give neither dependence nor an upper bound. The rejected entry point now fails rather than emitting a false conclusion.",
+      "reopen_when": "A fixed labelled section list has a new exact certificate for the stronger claimed rank.",
+      "claims": [
+        "EC-MF2S13"
+      ],
+      "sources": [
+        "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+        "elliptic-curves/notes/PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/mestre_parent_adapter.py",
+        "elliptic-curves/cas/verify_mestre_parent_and_label_audits.sage",
+        "elliptic-curves/cas/mestre_replay_provenance.py"
+      ],
+      "keywords": [
+        "generic sections",
+        "label coherence",
+        "root sorting",
+        "ordinate sign",
+        "stacked rank",
+        "rejected proof"
+      ],
+      "reviewed_claims": {
+        "EC-MF2S13": "f3852809b9a798d9"
+      }
+    },
+    {
+      "id": "METHOD-EC-COMPACT-SECTION-IDENTITIES",
+      "area": "elliptic-curves",
+      "title": "Prove recursive section identities using explicit degree bounds",
+      "when": "Expanded Mestre two-section residuals would create tens or hundreds of thousands of terms.",
+      "use": "Keep the monic-square and triangular ordinate recursions. Bound the numerator degree after the declared denominator clearing, then check more distinct admissible exact values than that degree. The Fermigier component uses1141 values for bound1140; the diameter235 component uses1099 for bound1080. Retain excluded poles and the leading-square condition.",
+      "avoid": "Treating a Hensel or Pade fit alone as a global identity, expanding residuals unnecessarily, or dropping D=w^2 after projecting to abscissa equations.",
+      "boundary": "An identity proves an incidence component, not independence of its sections. Jacobian rank and finite jets do not settle the full component without the later exact argument.",
+      "reopen_when": "A changed parameterization comes with a new denominator and degree proof.",
+      "claims": [
+        "EC-MF2S13",
+        "EC-MD235"
+      ],
+      "sources": [
+        "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/probe_mestre_fermigier_two_section_local_continuation.py",
+        "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_component.py"
+      ],
+      "keywords": [
+        "compact recursion",
+        "degree bound",
+        "interpolation proof",
+        "Pade holdout",
+        "ordinate square",
+        "open chart"
+      ],
+      "reviewed_claims": {
+        "EC-MF2S13": "f3852809b9a798d9",
+        "EC-MD235": "f73c0bd13e5de3c3"
+      }
+    },
+    {
+      "id": "METHOD-EC-FERMIGIER-COORDINATE-SCALES",
+      "area": "elliptic-curves",
+      "title": "Separate parameter aliases and nonminimal factors from source discrepancies",
+      "when": "A Fermigier specialization or raw quartic discriminant appears to give a different family or bad-fibre pattern.",
+      "use": "Reuse the exact adapter u=s/2 and retained coefficients. For Y^2=X^3-27IX-27J the raw discriminant scale is(607392u)^12, since c4_raw=1296I. The twelfth-power scalar and u factor are coordinate artifacts. The exact generic arithmetic rank12 is already proved separately.",
+      "avoid": "Reusing the stale202464 scale, counting literal s and adapter u as unrelated candidates, or treating completed rank computations as a resolution of the paper convention.",
+      "boundary": "Literal printed shift19754/39 and reconstruction shift39508/39 give different j-invariants; the source factor-two discrepancy remains unresolved. Benchmark GP conductor calls are not metadata checks.",
+      "reopen_when": "Primary-source provenance explains the convention, or an explicit new coordinate map is proved.",
+      "claims": [
+        "EC-FERM1",
+        "EC-FG12"
+      ],
+      "sources": [
+        "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md"
+      ],
+      "implementation": [
+        "elliptic-curves/ecsearch/fermigier.py",
+        "elliptic-curves/scripts/verify_benchmarks.py"
+      ],
+      "keywords": [
+        "Fermigier",
+        "adapter parameter",
+        "discriminant scale",
+        "607392",
+        "source discrepancy",
+        "reuse generic rank"
+      ],
+      "reviewed_claims": {
+        "EC-FERM1": "f8882722815b3d23",
+        "EC-FG12": "041c87897c25dd2d"
+      }
+    }
+  ]
+}

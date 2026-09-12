@@ -1,0 +1,18 @@
+{
+  "attempted": 81880,
+  "matrix": {
+    "canonical_rank": 2263,
+    "columns": 4154,
+    "deficiency": 1891,
+    "deficiency_fraction": 0.4552238805970149,
+    "distinct_rows": 2263,
+    "rank_gain_beyond_canonical": 0,
+    "rank_mod2": 2263,
+    "rows": 2263,
+    "singleton_columns": 4148,
+    "zero_columns": 6,
+    "zero_rows": 0
+  },
+  "relations": [],
+  "trial_sha256": "15b6c473ffcb97e3fc588cfb4ed431bc6767d34e84f5d3f459c51e4922bffc93"
+}

@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Publish the canonical inventory table as an expandable main README section."""
+"""Render a compact main README summary from the existing curve inventory.
+
+The legacy selection helpers remain as regressions for the former highlighted
+table. The full table and all curve pages live in elliptic-curves/INVENTORY.md.
+"""
 import argparse
+from collections import Counter
 import json
 from pathlib import Path
 import re
 import subprocess
 import sys
-from refresh_icarm_local_database import load_catalogue
-from curve_table_highlights import highlight_rank_minima
 
 ROOT = Path(__file__).resolve().parents[2]
 REPO = next(p for p in ROOT.parents if (p/'.git').exists()) if not (ROOT/'.git').exists() else ROOT
@@ -66,12 +69,13 @@ def select_section(section, rows, benchmarks):
 def short_introduction(database):
     counts = database['conductor_status_counts']
     return (BEGIN+'\n## Elliptic curve inventory\n\n'
-        f'**{database["count"]} research curves · {counts["EXACT"]} exact conductors · {counts["UNKNOWN"]} unresolved**.\n\n'
+        f'**{database["count"]} research curves · {counts.get("EXACT", 0)} exact conductors · {counts.get("UNKNOWN", 0)} unresolved**'
+        +(f' · {counts["REPORTED"]} reported only' if counts.get('REPORTED') else '')+'.\n\n'
         '[Full inventory](INVENTORY.md) · [JSON](data/research_curves/database.json) · '
         '[CSV](data/research_curves/database.csv) · '
         '[Methods and selection](notes/INVENTORY_REFRESH_2026-09-09.md)\n\n'
-        'Ranks are certified lower bounds. Bold marks per-rank column minima among shown rows '
-        '(rounded ties included); — means unknown. Logs are natural.\n\n')
+        'Ranks are certified lower bounds. Full equations, points, conductor bounds and '
+        'provenance are retained in the linked inventory.\n\n')
 
 
 def run(check=False, from_inventory=False):
@@ -81,15 +85,13 @@ def run(check=False, from_inventory=False):
     if not from_inventory:
         subprocess.run(argv,check=True)
     inventory = ROOT/'elliptic-curves/INVENTORY.md'
-    source = inventory.read_text()
-    section = source[source.index(BEGIN):source.index(END)+len(END)]
     database = json.loads((inventory.parent/'data/research_curves/database.json').read_text())
     rows = database['curves']
-    section, kept = select_section(section, rows, conductor_benchmarks(load_catalogue()['curves']))
-    # Recompute after curation: minima in the displayed subset can differ from
-    # the complete inventory. The helper removes previous numeric bold first.
-    section = highlight_rank_minima(section)
-    section = short_introduction(database)+section[section.index('| Curve |'):]
+    if database['count'] != len(rows):
+        raise ArithmeticError('inventory count differs from exported rows')
+    if dict(Counter(r['conductor_status'] for r in rows)) != database['conductor_status_counts']:
+        raise ArithmeticError('conductor status totals differ from exported rows')
+    section = short_introduction(database)+END
     def link(match):
         target = match.group(1)
         if '://' in target or target.startswith('#'):
@@ -98,9 +100,6 @@ def run(check=False, from_inventory=False):
         relative = (inventory.parent/path).resolve().relative_to(REPO)
         return ']('+str(relative)+(separator+anchor if separator else '')+')'
     section = re.sub(r'\]\(([^)]+)\)',link,section)
-    count = len(kept)
-    section = section.replace('| Curve |',f'<details>\n<summary>Show {count} highlighted curves</summary>\n\n| Curve |',1)
-    section = section.replace('\n'+END,'\n</details>\n\n'+END,1)
     path = REPO/'README.md'
     previous = path.read_text()
     if BEGIN in previous:
@@ -110,10 +109,10 @@ def run(check=False, from_inventory=False):
         expected = previous.rstrip()+'\n\n'+section+'\n'
     if check:
         if previous != expected:
-            raise ArithmeticError('main README table differs from canonical inventory')
+            raise ArithmeticError('main README summary differs from canonical inventory')
     else:
         path.write_text(expected)
-    print(f'MAIN README TABLE PASS: {count} highlighted / {len(rows)} archived rows')
+    print(f'MAIN README SUMMARY PASS: {len(rows)} curves; full inventory retained')
 
 
 if __name__ == '__main__':

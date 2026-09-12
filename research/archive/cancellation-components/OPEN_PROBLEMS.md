@@ -2,10 +2,10 @@
 
 > **Archived snapshot.**  This file preserves the component-era problem
 > ledger.  The current arithmetic overview and frontier are maintained in
-> [ARITHMETIC.md](../../cancellation/ARITHMETIC.md) and
-> [the active research roadmap](../../cancellation/RESEARCH_ROADMAP.md).  The
+> [ARITHMETIC.md](../non-elliptic/cancellation/ARITHMETIC.md) and
+> [the active research roadmap](../non-elliptic/cancellation/RESEARCH_ROADMAP.md).  The
 > fixed-row ramification advance is recorded separately in
-> [FIXED_R_NEWTON_RAMIFICATION.md](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+> [FIXED_R_NEWTON_RAMIFICATION.md](../non-elliptic/cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
 
 ## Current open frontier
 
@@ -157,8 +157,8 @@ cover-lifting part of that residual kernel.
 ## Parameter-polynomial arithmetic
 
 This archived section is superseded by the canonical
-[arithmetic overview](../../cancellation/ARITHMETIC.md) and
-[active arithmetic frontier](../../cancellation/RESEARCH_ROADMAP.md).  Exact
+[arithmetic overview](../non-elliptic/cancellation/ARITHMETIC.md) and
+[active arithmetic frontier](../non-elliptic/cancellation/RESEARCH_ROADMAP.md).  Exact
 component proofs and finite certificates remain available in
 [PARAMETER_IRREDUCIBILITY.md](PARAMETER_IRREDUCIBILITY.md),
 [PARAMETER_DISCRIMINANT.md](PARAMETER_DISCRIMINANT.md), and

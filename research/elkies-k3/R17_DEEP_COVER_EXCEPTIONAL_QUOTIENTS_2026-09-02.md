@@ -1,6 +1,6 @@
 # R17 degree-filtration source calculations at the rank-25--28 fibres
 
-<!-- status-consumer: EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS 31a6363906ad0ac0 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS aa868a2aaeb4dff3 -->
 
 <!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 5569f42aac3ab952 -->
 

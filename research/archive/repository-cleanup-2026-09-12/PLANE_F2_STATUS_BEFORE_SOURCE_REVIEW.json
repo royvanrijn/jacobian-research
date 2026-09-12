@@ -1,0 +1,247 @@
+[
+  {
+    "id": "PF2TF1",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "F2 terminal residue family and geometric A_(2r) monodromy",
+    "scope": "For every F2 parameter r>=2, the forced final type-I edge has the unique normalized block s=X^(7r-4)*y^(2r-1), P=X^4*y*(1+s), Q=-X*(1+A_r*s+B_r*s^2), with A_r=2r/(r-1), B_r=2r^2/((r-1)(2r-1)), and [P,Q]=X^4. In t=X*y,z=y^-1 coordinates its primitive source normal is (5r-3,4-7r), with pole orders (r,2r-1); the target ray is (2r-1,r-1), and the transverse index is one. The residue map h_r=s*(1+s)^(2r-1)/(1+A_r*s+B_r*s^2)^r has degree 2r, logarithmic derivative 1/(s*(1+s)*(1+A_r*s+B_r*s^2)), and passport (2r-1,1)|(r,r)|(3,1^(2r-3)). An explicit product-one branch triple generates geometric A_(2r): for r>=3 this follows from primitivity, the literal 3-cycle, and Jordan's theorem, while r=2 is direct. The defining polynomial has discriminant ((-1)^(r+1)/(2r-1)^(2(r-1)^2-1))*u^(2r-2)*(1-B_r^r*u)^2 and squareclass (-1)^(r+1)*(2r-1), determining arithmetic A_(2r) versus S_(2r). This is a theorem about the terminal edge forced by the F2 corner-chain family; it does not prove the full modified-Laurent chart, attach the row globally, or exclude any F2 member.",
+    "canonical_source": "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md",
+    "dependencies": [
+      "external: F2 regular-corner table and complete-chain terminal-edge theorem"
+    ],
+    "checker": "plane-jc/cas/verify_f2_terminal_residue_cover.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:baa8fe7abdcf1652bc0a8636437b9505ebc6838bf2eebaf2492c03684fd63cbf",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "reference"
+  },
+  {
+    "id": "PF2GA1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "F2 degree-125 global attachment obligation compiler",
+    "scope": "Starting from PF2GC1, the F2 global-attachment compiler tracks the terminal Laurent chart through y_translated=y_old-X^-1. The normal (12,-17) gives nu(X)=-5 and nu(y_translated)=17, but the original coordinate has nu(y_old)=5. With v=x*y_old^5=(1+t)^5, the normalized original valuation is nonmonomial: nu(x),nu(y_old),nu(v-c)=(-25,5,12), where c=1 for the fixed chain and c=rho for the second double-root chain. Six blowups extract the shared carrier ray (-5,1); at each principal point v=c, six further blowups extract the local ray (5,12). The terminal residue monomial is unit*(v-c)^5/y_old^12, orienting adjacent rays (3,7),(2,5) as s=infinity,0. PF2LNP1 corrects the earlier incidence-only attachment count: each of the three interior node preimages has transverse coefficient order -2 and requires two successive source blowups. Hence each terminal has self-intersection -7 and valency five; the squarefree principal lower-bound graph has 19 components, 6 leaves, determinant 1, inertia (1,18,0), and integral canonical coefficients, while the two-arm graph has 31 components, 10 leaves, determinant 1, inertia (1,30,0), and integral canonical coefficients. The two simple squarefree R roots are distinct spectator points on the carrier, while the double R root is the second principal center. On the target, four blowups extract (5,2), with boundary weights (-2,-2,-1,-3,-2), determinant one, and canonical coefficients (-3,-6,-9,-4,-2). Every principal packet has global target orders ord(a,b)=(5,2), order-one uniformizer b^3/a, and nonconstant residue a^2/b^5, so all packets dominate the same unique target divisor. This excludes the distinct-target double row and makes the double-root degree floor uniformly twelve. The live equations are d=6+rho_T and d=12+rho_T. Candidate mode checks declared source graphs, class/unit/canonical ledgers, finite-normalization identities, purity, spectator profiles, local A6 packets, and product-one meridian systems. The simple-spectator scales/inertia, affine purity row, full map resolution, global degree, and global meridian completion remain open, so this does not exclude (75,125).",
+    "canonical_source": "plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md",
+    "dependencies": [
+      "PF2GC1",
+      "PF2LNP1",
+      "external: toric point-blowup intersection and adjunction formulas"
+    ],
+    "checker": "plane-jc/cas/verify_f2_75_125_global_attachment.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:1acde52a026ba3e1dcb6a7213285a6b5cc4ec0b6949374f4ddc5550d1c28f0ac",
+    "software_lock": [
+      ".python-version"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "OP-PLANE",
+      "replay/CATALOGUE.md",
+      "artifacts/generated-results/README.md",
+      "plane-jc/F2_BOUNDARY_HANDOFF.md",
+      "plane-jc/NEXT_DEGREE_FRONTIER.md",
+      "plane-jc/README.md",
+      "plane-jc/cas/README.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  },
+  {
+    "id": "PF2CS1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "F2 exact carrier specialization and number-field cokernel compiler",
+    "scope": "PF2CS1 connects the three PF2CW1 carrier points to the PF2ER1 lower-Laurent presentation without conflating components. The rational squarefree cofactor R=(w^2-3*w+3)/25 has discriminant -3/625 and is not a point of the movable-double-root descent-eight component; it must branch before that specialization and be compiled from the later first-defect ledger. The two double carriers lie over K=QQ[rho]/(rho^2-3*rho+1), where rho and rho-1 are units. Together with the descent-eight ratio 27*y^2-9*y+1 they give a linearly disjoint quartic compositum with primitive-element polynomial 729*theta^4-4860*theta^3+10341*theta^2-7470*theta+1756, hence four lower-Laurent coefficient branches. Over K the checker constructs every exposed normalized zero-row operator T_delta(q)=5*C0*q'-(25-delta)*C0'*q for delta=1..35 and 37, with exact canonical kernel/cokernel basis digests. Descents 1..11 recover rank 134 and the two source centralizers of PF2ER1. On coupled descents 12..35 and 37, the normalized factor-quotient forcing cokernels total 53, with extra one-dimensional source centralizers at 15,20,25; before common-factor division the full coupled Laurent-row cokernel has dimension 347, so 294 additional divisibility/local-jet conditions must be retained. The specialized target quotient operator K[w]_(<=19)->K[w]_(<=21) has shape 22x20, rank 20 and cokernel two; after multiplication by D=w^2*(w-1)^5*(w-rho)^5 its complete degree-33 image has cokernel fourteen, consisting of twelve local jets and the two quotient residues. The layer-zero image K*1+w^3*(w-1)^6*(w-rho)^6*K[w]_(<=18) also has rank 20 and cokernel fourteen, exactly equal to its Hermite row space. After prior w=0 control and fixed w=1 endpoint elimination, the specialized residual cokernel is 7 target plus 6 Hermite coordinates. This record pins the linear maps but does not itself evaluate the nonlinear forcing; PF2NF1 performs that continuation. No component ideal is tested here, and neither a unit ideal, an F2 exclusion, nor a Keller map is obtained.",
+    "canonical_source": "plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+    "dependencies": [
+      "PF2L1",
+      "PF2ER1",
+      "PF2CW1"
+    ],
+    "checker": "plane-jc/cas/verify_f2_75_125_carrier_specializations.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:79316813f94d0eae4ebfee5ffe55f9c436b40a13290f4362db2801cdec6e24ea",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "OP-PLANE",
+      "replay/CATALOGUE.md",
+      "artifacts/generated-results/README.md",
+      "plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md",
+      "plane-jc/F2_75_125_DERIVATION.md",
+      "plane-jc/NEXT_DEGREE_FRONTIER.md",
+      "plane-jc/README.md",
+      "plane-jc/cas/README.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  },
+  {
+    "id": "PF2NF1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "F2 exact nonlinear forcing arithmetic-circuit compiler",
+    "scope": "PF2NF1 continues PF2CS1 on the two conjugate double-carrier points. It rebuilds the ten fixed-endpoint pivot circuits from the exact determinant-75000 block and substitutes the already-certified upper tangent solutions Q_(25-delta)=-3*C0^2*P_(15-delta) for delta=1..11, retaining the C0^4 and C0^3 resonant parameters. On coupled descents 12..35 and 37 it forms the complete nonlinear bracket forcing as a hash-consed arithmetic DAG over the relative quartic algebra QQ(rho)[y]/(27*y^2-9*y+1). Exact forced-factor division splits the full Laurent obstruction into 294 divisibility/local-jet coordinates and 53 pinned normalized quotient-cokernel coordinates, for 347 coupled equations. It appends five target jets at rho, two target quotient residues, six movable Hermite rows, five descent-eight incidence equations, and the relative quadratic relation, giving 366 displayed circuit equations. The reachable presentation has 954 variables, 710439 DAG nodes, and total degree at most seven on this carrier specialization; these are presentation counts, not dimension or independence claims. Separately, the rational squarefree carrier is routed outside the double-root component through all 82 later first-defect spacings 9..90: spacings 9..11 retain primitive multiples 2,3; 12..17 retain multiple 2; and 18..90 have no primitive multiple before the target. Those squarefree rows are routed but not eliminated. No localized ideal test, unit ideal, F2 exclusion, or Keller map is obtained.",
+    "canonical_source": "plane-jc/F2_75_125_NONLINEAR_FORCING.md",
+    "dependencies": [
+      "PF2ER1",
+      "PF2CS1"
+    ],
+    "checker": "plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:03b1b8e8eaf0e9a7f52f4c9cc435ce326673053f74dcd045310c8325355d51a4",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "OP-PLANE",
+      "replay/CATALOGUE.md",
+      "artifacts/generated-results/README.md",
+      "plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+      "plane-jc/F2_75_125_DERIVATION.md",
+      "plane-jc/NEXT_DEGREE_FRONTIER.md",
+      "plane-jc/README.md",
+      "plane-jc/cas/README.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "primary"
+  },
+  {
+    "id": "PF2SG1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Conditional A6/Kummer spectator permutation gluing",
+    "scope": "Assume that each of the two simple squarefree-R Kummer orbits gives one transposition on the same compact target P1 as the terminal A6 packet, that the A6 triple fixes every outside sheet, and that there are no other branch cycles. The meridian product then makes the two transpositions equal; requiring a spectator, transitivity and Riemann-Hurwitz force degree seven and genus zero. Exact enumeration gives 30 normalized tuples, six simultaneous-conjugacy classes, and 30,240 fully labelled tuples, all with monodromy S7. The certified endpoint/interior markings refine these classes: five anchors can specialize to the interior five-cycle point over zero, all six to an interior denominator-root point over infinity, and the strongest naive condition that the anchor avoid both toric source endpoints leaves three classes of signature (5,3,1). Repeated star connectors give product-one transitive genus-zero S_(6+k) witnesses for every k>=1, and an abstract two-packet S12 witness also survives. The terminal inertia C5 has centralizer C5 and normalizer C5 semidirect C4=AGL(1,5) in S6, exactly the generic fifth-root Kummer group; its multiplier parity cuts out Q(sqrt(5)), the same quadratic constant field as the arithmetic terminal S6 cover. Exact commutator normal closures prove that A6 is perfect and that the S6 abelianization is C2, while the full marked triple centralizer is trivial, so this arithmetic synchronization is not a global C5 character or deck identification. Under the stronger conditional model in which each simple Kummer orbit contributes five disjoint transpositions at one branch value and the connected compact source boundary is rational, product one, transitivity, and Riemann-Hurwitz force degree eleven and genus zero. There are 3,600 normalized tuples, six simultaneous-conjugacy classes, and monodromy S11; requiring the five matched core sheets to equal the terminal five-cycle support leaves one unoriented class, with four Kummer-generator orientations. Thus neither the coarse, marked, nor order-five permutation filters contradict the row. Sheet specialization is not a toroidal node-gluing theorem, and neither the one-transposition nor fivefold Kummer branch-cycle model has been proved to share this target component, so these are conditional finite enumerations, not an F2 exclusion.",
+    "canonical_source": "plane-jc/F2_A6_SIMPLE_SPECTATOR_GLUING.md",
+    "dependencies": [
+      "PF2KO1",
+      "PF2TR1"
+    ],
+    "checker": "plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2633ba0c5797f27819a2f944d7828384f658d9a12602a4e9ab019eb69b3d3899",
+    "software_lock": [
+      ".python-version"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [
+      "PF2CW1"
+    ],
+    "priority": "derived"
+  },
+  {
+    "id": "PF2MS1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Conditional reduced F2 modified-system generator",
+    "scope": "Assume the unproved common-power ansatz P=C^r and Q=C^(2r-1)+lambda*C^(-1)+F, with leading x-degree d for C and bracket x-degree h in the chosen modified chart. Exact formal-series arithmetic reconstructs the finite window through t^(d(3r-1)-1), triangularly removes d(2r-1)-1 coefficients forced by polynomiality of P, and changes to B=trunc(A^r) coordinates. The r=2,d=2 and d=3 cases reproduce the published (50,75) left-hand sides. The r=3 cases inspect 14 and 22 coefficient functions, not scalar variables. For h=2 their true residues are respectively one 16-by-16 determinant and a four-generator 21-minor/Fitt_3 ideal; for the certified X^4 chart h=4 they have zero and two generic residue equations. For every r,d, the endpoint section B=1+a*t^(dr), lambda=-(2r-1)(r-1)*a^2/(2r^2) kills the full compact Q block, proving every compact residue ideal proper; its first lower nonzero core coefficient occurs at row dr+d. On every congruence section B in K[y,y^(-1)][t^d], with 0<=h<=dr-2, the first bracket-visible coefficient vanishes whenever d does not divide h+1. Thus for the certified X^4 weight and dr>=6, only d=5 can escape this congruence gate; in particular the proposed r=3,d=2 and d=3 congruence sections are excluded. For r=3,d=2 the unrestricted h=2 residue has a rational fourfold with an explicit smooth coefficient-torus point, nonzero lambda, and nonzero first F coefficient. For r=3,d=3 a smooth fourfold meets the full coefficient torus over Q((epsilon)); on B in Q[t^3], the residue reduces to cubic invariants A=u^2-3v and D=2u^3-9uv+27w, with lambda=-5(3A^3+D^2)/6561, F_-6=5A^2D/6561, and reduced bracket (3X+u)lambda'+3F_-6'. If its leading h=2 bracket coefficient is a nonzero Laurent monomial mu*y^s, the integration constant in F_-6 is impossible and every survivor has s+1=7*ell, lambda=0, A=a*y^(2*ell), D=b*y^(3*ell), and 3*a^3+b^2=0. The first sharp member B=1+y^2*t^6+y^3*t^9/3, F_-6=5*y^7/81 solves all eight compiled fiber rows and has leading bracket coefficient 35*y^6/9. A separate Toeplitz determinant records fixed-(lambda,F) coefficient-map ramification and is not confused with the residue ideal. The calculation does not prove the common-power chart, d=2 or d=3 exhaustiveness, the lower Laurent-y ledger, or the F-tail reconstruction; it narrows but does not exclude (75,125) or the F2 family.",
+    "canonical_source": "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md",
+    "dependencies": [
+      "PF2L1"
+    ],
+    "checker": "plane-jc/cas/generate_f2_modified_system.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:5f0cdcadd5dc173e7741459a87300d2c7ad7952998efdb398ca0d46b64cbb3a6",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "PF2MCB1",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "F2 modified-chart source projection and top-gap obstruction",
+    "scope": "The complete F2 generated-corner identity fixes gamma=2 and the historical d=3 chart. The monomial substitution X=xi*y^2, Y=xi^(-2)*y^(-7) sends the bracket X^4 to -3*xi^2*y^2, derives xi-degrees 3*r and 3*(2*r-1), and forces Tschirnhaus support {y^(-2),y^(-5)}. Exact translated binomial-jet matrices show that at r=3 the nonnegative-xi P image has rank 74 in 83 possible positions and the Q image rank 196 in 215 positions; an explicit primitive P top-diagonal relation evaluates to 3470256 at the formal terminal resonance, so that point is outside the source image. If the literal polynomial projection is additionally required to preserve the target bracket, its highest diagonal forces B=H^r and D=H^(2*r-1) for a cubic H. Source membership becomes the gap equations [v^q]L(v)^n=0 for 2*n<q<=3*n. At r=3 the three P gaps define an Artinian algebra of length 27 with leading ideal (c1,c2,c3^27), and the first Q gap is a unit in it: its degree-26 residue is coprime to the degree-27 eliminant and has nonzero resultant/multiplication determinant. Thus the combined projected top-gap ideal is (1). The r=2 combined ideal and the r=4 P-only ideal are also (1); an optional exact QQ Singular replay gives the same P-only conclusion at r=5. This exactly excludes every branch of the literal bracket-preserving polynomial projection and proves that naive negative-tail deletion cannot be the missing modified-Laurent theorem. The full two-parameter Laurent seed has the exact degree-25 polynomial source lift x*(x*y^5-1)^2*(1/25+rho1*(x*y^5-1)+rho2*(x*y^5-1)^2). The corrected source tangent has first-five kernel dimensions 6,6,7,7,10; its descent-five extra is the commuting C0^4 term, while formal lambda*C0^-1 is at layer 10 and is not an independent source kernel. It does not exclude the full Laurent F2 row; nonlinear F-tail cancellation is still required. The six-dimensional terminal tangent calculation is only an ambient 80-position support-box audit, not a source-compatible component.",
+    "canonical_source": "plane-jc/F2_MODIFIED_CHART_BRIDGE.md",
+    "dependencies": [
+      "PF2L1"
+    ],
+    "checker": "plane-jc/cas/verify_f2_modified_chart_bridge.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:4933215016152cb1649b450edffe0f0abac132f681e8a04a6fc40e66bcc3d3e7",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the 80-position r=3 P support mask is an independent scalar coefficient space",
+      "the formal terminal resonance is a residual source-projection candidate",
+      "literal deletion of all negative xi powers preserves the F2 top bracket"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "replay/CATALOGUE.md",
+      "plane-jc/README.md",
+      "plane-jc/cas/README.md",
+      "plane-jc/F2_75_125_DERIVATION.md",
+      "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  }
+]

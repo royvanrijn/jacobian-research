@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "equation-aliases.json": "fcfe7df9146a8ad6b472fc3637497accb04612a1ed39fec1063ebee0748aa949",
+    "family.json": "ae38533c564930af0c1cfdeeca6d72f5953a8bef759b8c00b1b8f38cb8fd4e22",
+    "historical-cost-audit.json": "3fc75b7c2cc3d97c8f3cba789e9ff600be6ce7e43ed97f9bbbae2b49c1373f39",
+    "selection.json": "aeb446e4478c2e75cdb53ca26894c9d51f08e79580bdb9ab7e36053bb4cee88d"
+  },
+  "boundary": "Independent input-selection and bookkeeping replay only. No new class, rational lift, rank gain or full reference-cost measurement.",
+  "cpu_seconds": 0.228291751,
+  "fresh_fibres": 8,
+  "frozen_alias_equations": 491,
+  "generic_point_equations_checked": 128,
+  "historical_cost_is_complete": false,
+  "historical_receipts_checked": 3884,
+  "new_field_computations": 0,
+  "new_relation_searches": 0,
+  "point_searches": 0,
+  "schema": "fresh-constructor-transfer.input-replay.v1",
+  "source_sha256": "3b8263de284c8ad9d6bdd4197e873200c5f45193c1831efae570e42934bab431",
+  "status": "PASS"
+}

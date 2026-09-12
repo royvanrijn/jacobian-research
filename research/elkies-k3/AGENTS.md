@@ -1,102 +1,60 @@
-# AGENTS.md — elliptic K3 / high-rank programme
+# K3 and high-rank research instructions
 
-This directory inherits the repository rules. `../MATH_STATUS.json` is the only authority for what is proved.
+This directory inherits the repository rules. [MATH_STATUS.json](../MATH_STATUS.json)
+is the sole mathematical-status authority. The programme remains open for
+theorem-directed work.
 
-## Programme state
+## Required preflight
 
-**ACTIVE.** The programme is open for theorem-directed breakthrough work.
+Read the [programme map](README.md), [method memory](../KNOWLEDGE_BASE.md),
+[rank and lift theorem layer](RANK_MUTATION_AND_LIFT_THEOREMS.md) and the
+[process atlas](ELKIES_K3_PROCESS_ATLAS.md). Search current claims and
+[scoped failed routes](../knowledge/FAILED_ROUTES.md) before another calculation.
 
-Large specialization, Selmer, point, neighbour, Q80 reconstruction, or foundry
-searches must have an explicit mathematical gate, declared limits, checkpoints,
-and a reproducible certificate plan.
+Use the [direct11952 equation](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md)
+for the alternate-Q80 endpoint. Curve302's
+[alternative MW17 parent](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+is complete. Current foundry exclusions and unresolved marking gates live in
+the [different-NS objective](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md),
+not in duplicated candidate counts.
 
-## Start here
+## Construction and compute discipline
 
-1. [`README.md`](README.md) — three peer primary lanes and current certified position.
-2. [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) and [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md) — record-construction recovery lane and A1/MW16 family source.
-3. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
-4. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
-5. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
-6. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
-7. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
-
-## Current conclusions
-
-- A target-free A1/MW16 parameter experiment is active alongside the other
-  rank-jump experiments.  It searches new specializations for exact quotient
-  gains without known-record targets in selection or execution.
-- Published R17 and alternate Q80 are both explicit rootless rank-17 fibrations over `QQ` on the pinned determinant-948 K3.
-- The alternate chart's canonical route is the direct degree-two `norm12-orbit-11952` hop, not the historical degree-11511 Q80 transport.
-- The maximal noncyclic determinant-948 bridge is equation-explicit in both
-  directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
-  sections and target-free reverse selection.
-- The rank-32 programme has three peer lanes: calibrated R17/MW17
-  specialization, record-construction recovery around curve 398 and curve
-  302's recovered determinant1092 MW17 parent, and the different-NS foundry.  Curve 398's two
-  norm-eight A1/MW16 survivor labels are exact `PGL2(Q)`/Weierstrass-equivalent
-  presentations of one fibration, and their specialized integral MW16 groups
-  agree.  Deduplicate fibrations before applying a relative-subgroup
-  transversality gate.  Generic rank and demonstrated jump size are separate
-  prioritization axes; no lane is the unique critical path.
-- Lane C is arithmetic-first globally: `T` and its full stable marked curve
-  precede `NS=T^perp`, rootlessness, and equation work. Determinants `500`,
-  `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031`, together with the split
-  determinant-378 row, are arithmetically excluded. The determinant-500 and
-  determinant-750 rootless rows have exact stable curves `X_H(50)` and
-  `X_H(75)` and no rational noncuspidal points. The rootless subqueue is now
-  `1` possible, `5` excluded, and `60` unknown; the equation handoff is empty.
-- The construction target is stronger than a plain different-NS MW17:
-  require a certified positive-rank low-genus carrier and an independent
-  pullback section. The stretch target is an integral `V4`-stable MW lattice
-  with character ranks `17+1+1+1` and exact 2-primary graph glue.
-- The four published rank-25--28 R17 controls do not transfer to rational alternate-Q80 parameters, but the complete ICARM sweep now supplies native controls: curve 12 has rank at least 29 in class `11952`, while curves 363, 364, 378, and 395 give further rank-at-least-24--28 fibres in classes `08f72` and `11952`.
-- Rank `>=32` is open.
-- One curated inverse-ADE/foundry route is end-to-end planner-ready; the 936 bulk routes are not.
-
-## Do not reopen by default
-
-- historical degree-11511 alternate-Q80 transport;
-- million-bit third-`q12` reconstruction and associated long PRS/Hensel work;
-- broad Q80 suffix, q323, or changed-zero route searches;
-- unbudgeted Nagao/point/Selmer sweeps, or treating incomplete arithmetic as a
-  mathematical exclusion;
-- bulk foundry route enumeration without complete marked planner inputs.
-- treating another determinant-948 equation as the different-NS foundry
-  milestone.
-- restarting a full-rational-marking NS0024 search over `QQ`.
-- restarting the NS0031 model-157 rational-point or algebraization search over
-  `QQ`.
-- reopening determinant 720 as a full rational rank-19 source over `QQ`.
-- reopening the split determinant-378 `X_0(7)` row; its literal marked curve
-  is `X_0(63)` and has no rational noncuspidal point.
-- reopening the determinant-500 or determinant-750 rootless rows; their
-  literal marked curves map to `X_0(50)` and `X_0(75)` and have only rational
-  cusps.
-- inspecting rootless frames or launching coefficient searches before their
-  full marked `T` curve has a certified rational non-CM point.
-- putting known-record targets into the A1/MW16 parameter experiment.
-
-These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
-
-## Claim discipline
-
-- Keep classical infrastructure under established terminology: Shioda–Tate, Nikulin gluing, Kneser–Nishiyama, Kneser neighbours, and fibration hopping.
-- Separate theorem gates from resource gates.  Only a certified upper bound
-  below the target excludes a production candidate; conditional or incomplete
-  descent data may affect priority but cannot veto a bounded search.  Exactly
-  verified independent points give an unconditional lower bound regardless of
-  descent completion.
-- Reserve novelty language for narrow inverse/target-directed pieces supported by the provenance map.
-- Preserve `UNKNOWN` and bounded-negative qualifiers.
-- Do not modify `STATUS.md` manually. If mathematical status genuinely changes, update the canonical proof and `MATH_STATUS.json`, then regenerate status.
-- Preserve scripts and generated certificates even when an operational route is archived.
+- Large neighbour, equation, specialization, point or descent campaigns need
+  explicit mathematical gates, limits, checkpoints and reproducible certificates.
+- Carry full marked fibrations: embedded U, actual equation-side zero, fibre,
+  physical components, MW coordinates, glue and exact integral transports.
+  ADE/MW labels are not identities.
+- Reduce to the physical nef chamber before scoring equation cost. Specialize,
+  re-chamber and recompute the relevant roots, heights and poles as a typed stage.
+- Distinguish lattice navigation, characteristic-zero equations, rational
+  sections, saturation and Picard bounds. Each has its own proof endpoint.
+- For different-NS work, start with T and its full stable marked curve.
+  A coarse norm-one point, modular solution or formal branch does not give
+  a rational marking. Require a certified rational non-CM point before
+  rootless-frame or coefficient searches.
+- The stronger carrier/pullback objective is distinct from finding another
+  equation on the same determinant948 surface.
+- Generic rank and demonstrated jump are separate selection axes. Follow the
+  [elliptic instructions](../elliptic-curves/AGENTS.md) for point experiments,
+  target quarantine and unconditional rank/conductor claims.
+- Preserve the q8 zero/denominator corrections. Historical degree11511 Q80,
+  third-q12 and obsolete suffix routes are indexed in the
+  [K3 archive](../archive/elkies-k3/README.md); do not restart an already closed
+  endpoint without a new mathematical reason.
+- Use established terminology for Shioda–Tate, Nikulin gluing,
+  Kneser–Nishiyama, Kneser neighbours and fibration hopping. Scope novelty
+  through the [literature map](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md).
+- Preserve scripts, proof artifacts and exact inputs when retiring a route.
+  Record its failure boundary and reusable method in `../knowledge/lessons.json`.
+  Regenerate status and navigation; do not hand-edit generated pages.
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK fd9549d1fcb2e9e7 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->

@@ -5,11 +5,11 @@
 > three-variable GMC, `(xz)`, and `SU(2)` witnesses.  The current consequence
 > graph and the distinction between the nonexplicit `GMC(158)` route and the
 > direct `GMC(n>=3)` witness are maintained in
-> [External consequences and provenance](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+> [External consequences and provenance](../non-elliptic/extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
 > The 190-variable Image/HN bullets below are also superseded quantitatively
 > by the repository's 20/40/42 artifacts.  They remain valid historical
 > witnesses, not best-known or priority claims; see
-> [Image and Vanishing consequences](../../extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
+> [Image and Vanishing consequences](../non-elliptic/extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
 
 This note audits the claims in Zihan Zhang's 20 July 2026 expository page.
 
@@ -47,4 +47,4 @@ The first two bullets describe only the original route and remain
 nonconstructive as written.  Long's later direct witnesses are explicit and
 strictly stronger on Gaussian dimension.  The final three bullets here are explicit;
 their formulas, hypothesis audit, and remaining minimality questions are in
-[STABLE_NORMAL_FORM_AUDIT.md](../../extended-geometry/STABLE_NORMAL_FORM_AUDIT.md).
+[STABLE_NORMAL_FORM_AUDIT.md](../non-elliptic/extended-geometry/STABLE_NORMAL_FORM_AUDIT.md).

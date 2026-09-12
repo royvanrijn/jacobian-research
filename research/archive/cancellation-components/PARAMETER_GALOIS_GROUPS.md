@@ -163,7 +163,7 @@ group has order divisible by a prime `p>(log X)^10`.  This follows by
 retaining the root-of-unity Newton clusters in the proof of the
 Borisov--Filaseta--Lam--Trifonov fixed-derivative theorem.  The exact
 translation is in
-[the fixed-row ramification note](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+[the fixed-row ramification note](../non-elliptic/cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
 
 This result deliberately stops short of calling the resulting order-`p`
 element a Jordan cycle.  Several clusters can contribute simultaneous

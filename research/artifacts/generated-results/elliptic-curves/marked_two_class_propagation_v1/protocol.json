@@ -1,0 +1,44 @@
+{
+  "aggregate_cpu_seconds": 14400,
+  "automatic_enlargement": false,
+  "base_probe_cpu_seconds": 120,
+  "compilation_cpu_seconds_per_candidate": 30,
+  "control_parameter": "3/17",
+  "enumeration": {
+    "candidate_order": "After known effective-wall rejections, increasing native fibre degree, native O intersection, sum of absolute native NS coordinates, then lexicographic native NS coordinates. This is a fixed generic RR-cost proxy; no splitting or labels enter ordering.",
+    "checkpoint_nodes": 100000,
+    "compilation_prefix_per_shell": 128,
+    "cpu_seconds": 3600,
+    "interrupted_order_boundary": "The ordered first128 of the retained prefix, not the first128 of a completed shell.",
+    "schedule": "One exact integer LDL depth-first closed ellipsoid of norm <=14; retain both signed norm10 and norm14 vectors. Increasing integer coordinates, fixed frozen reduced basis. A node stop leaves BOTH shells incomplete.",
+    "shells": [
+      10,
+      14
+    ],
+    "total_nodes": 2000000
+  },
+  "fresh_fibres": 16,
+  "genus_one_base_probes": 8,
+  "geometry_sha256": "b8a8063ce04179aef71d89ea1fa684d8738696b2c712f991a15e0dda959e445e",
+  "labels_per_nonzero_class": 8,
+  "maximum_pairs": 192,
+  "maximum_workers": 1,
+  "preparation_cpu_seconds": 0.06100351100000001,
+  "rss_bytes": 8589934592,
+  "schema": "marked-two-class.protocol.v1",
+  "scope": "Finite class-labelled smooth rational bisection bank on MW16-05, not a rank correlation study.",
+  "separation": "Equation-only geometry input; frozen columns and generic Kummer data admitted in the later label stage. Instruction and audited input boundaries, no OS isolation claim.",
+  "sources": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "elkies-k3/scripts/certify_icarm_norm8_low_root_strata.sage": "e3111fa6205986d80dde0c539733a297732a75bfb3ed71b326ac7ced81b3b395",
+    "elkies-k3/scripts/construct_elkies_2026_bisections.sage": "146c0fdeddb2b5de44989bb650b36e28e600a1d5a8ea61f54f05df09db65a3df",
+    "elliptic-curves/cas/export_compact_mw16_atlas.sage": "de767e8ec2392e9d87719da8dc1f55e608390fd707185eeaad55d8ef89cb9fcd",
+    "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+    "elliptic-curves/data/a1_mw16_family_template_v1.json": "a983c3b21d4f990256d4728edae5716031202a9c5ff929bb3990e7cc274674bd",
+    "elliptic-curves/rank-jump/enumerate_marked_two_class.py": "df1786bbf597464803794e0d5779e21465c68d137cb5de5fdb8539e6a81fa5ab",
+    "elliptic-curves/rank-jump/prepare_marked_two_class.sage": "cf56f1ecf57d6f27d6250f5ca2206b0424ace699c1e1018d5f9c8d93c7e2b99b"
+  },
+  "status": "FROZEN_BEFORE_ENUMERATION"
+}

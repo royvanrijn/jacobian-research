@@ -41,13 +41,13 @@ therefore proves irreducibility for density-one many `m` on every fixed-`r`
 row, but even the complete `r=1` row contains the classical open geometric-
 derivative conjecture.  The complete range `mr<=30`, the full `m=1` column,
 additional uniform criteria, quantitative density bounds, and known `r=1`
-subfamilies are recorded in [ARITHMETIC.md](../../cancellation/ARITHMETIC.md).
+subfamilies are recorded in [ARITHMETIC.md](../non-elliptic/cancellation/ARITHMETIC.md).
 
 A first part of the sharper fixed-row target is now proved.  The same
 Newton-polygon argument gives, for density-one many `m`, a prime
 `p>(log X)^10` dividing the Galois-group order and an order-`p` permutation
 of type `p^t 1^f` with `f>=p-1`; see
-[FIXED_R_NEWTON_RAMIFICATION.md](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).  It does not
+[FIXED_R_NEWTON_RAMIFICATION.md](../non-elliptic/cancellation/FIXED_R_NEWTON_RAMIFICATION.md).  It does not
 yet give a Jordan cycle, because inertia can act on several root-of-unity
 clusters at once.  The two precise remaining tasks are to isolate one
 `p`-cycle (`t=1`) and to prove primitivity.  Their combination would imply
@@ -77,10 +77,10 @@ length `m`; distinct `K`-branches meet in the common reduced central stratum.
 Since `K` is a fractional-linear transform of the parameter polynomial `M`
 and `K,L` are visibly not associates, this closes the diagram in every proved
 parameter-irreducibility range: all `mr<=30`, the complete `m=1` ladder, and
-the uniform criteria in [ARITHMETIC.md](../../cancellation/ARITHMETIC.md).  Direct resultants are
+the uniform criteria in [ARITHMETIC.md](../non-elliptic/cancellation/ARITHMETIC.md).  Direct resultants are
 also checked on the regression grid `1<=m,r<=5`.
 
-The [endpoint-moment reduction](../../cancellation/CONTACT_RESULTANT.md) now gives four further
+The [endpoint-moment reduction](../non-elliptic/cancellation/CONTACT_RESULTANT.md) now gives four further
 uniform theorems independent of parameter irreducibility.  It proves
 nonvanishing for every `m` in the columns `r=1,2,3,4`; for `r=1` it also gives
 the closed resultant `((m+1)(m+2))^(-m)`.  For fixed `r`, the same method
@@ -120,7 +120,7 @@ object should remain canonically isomorphic.
 
 ## 4. Go beyond the skeleton
 
-[RIGIDITY.md](../../cancellation/RIGIDITY.md) exhausts additional monomial weights, finitely many
+[RIGIDITY.md](../non-elliptic/cancellation/RIGIDITY.md) exhausts additional monomial weights, finitely many
 normalized resolvent factors, and arbitrary target-dependent polynomial
 derivatives while retaining one triangular reconstruction variable.  A
 genuinely broader classification must change that skeleton—for example by
@@ -152,10 +152,10 @@ are whether every one-boundary suspension is equivalent to one of these two
 normal forms, and which divisor, monodromy, and reconstruction data obstruct
 such an equivalence.  The precise comparison theorem and determinant ledgers
 are in the
-[tangent-map core note](../../verified/TANGENT_MAP_CORE.md).  A two-sided
+[tangent-map core note](../non-elliptic/verified/TANGENT_MAP_CORE.md).  A two-sided
 suspension-square formalism, the simple-section plane-core normal form, and
 the first independent two-boundary triangular obstruction are developed in
-[the controlled-boundary suspension note](../../cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md).
+[the controlled-boundary suspension note](../non-elliptic/cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md).
 
 The orientation-reversing reciprocal branch is now closed after its
 height-one link and boundary-noncontraction marking are supplied.  Unsliced
@@ -165,4 +165,4 @@ Thus the remaining cancellation-side problem is upstream: prove that an
 arbitrary divisor-minimal suspension supplies that reciprocal height-one
 link.  The orientation-preserving weighted chart classification remains
 separate; see the
-[log-geometric suspension bridge](../../cancellation/LOG_GEOMETRY_OF_SUSPENSIONS.md).
+[log-geometric suspension bridge](../non-elliptic/cancellation/LOG_GEOMETRY_OF_SUSPENSIONS.md).

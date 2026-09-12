@@ -1,0 +1,42 @@
+name: Research navigation
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - 'research/MATH_STATUS.json'
+      - 'research/knowledge/**'
+      - 'research/index/**'
+      - 'research/archive/repository-cleanup-2026-09-12/**'
+      - 'research/archive/non-elliptic/**'
+      - 'research/scripts/research*.py'
+      - 'research/scripts/render_status.py'
+      - 'research/scripts/audit_status.py'
+      - 'research/scripts/audit_repository_hygiene.py'
+      - 'research/scripts/audit_cleanup_snapshot.py'
+      - 'research/scripts/audit_programme_archive.py'
+      - 'research/scripts/check_markdown_links.py'
+      - 'research/tests/test_research*.py'
+      - 'research/elliptic-curves/cas/render_main_readme_curves.py'
+      - 'research/elliptic-curves/data/research_curves/database.json'
+      - 'research/elkies-k3/data/process/elkies_k3_process_ledger.json'
+      - 'research/elkies-k3/scripts/analyze_process_ledger.py'
+      - 'research/elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py'
+      - '**/Makefile'
+      - '.github/workflows/research-navigation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate metadata, links, history and retrieval
+        run: make check-navigation

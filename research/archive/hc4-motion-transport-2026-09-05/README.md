@@ -4,7 +4,7 @@ These two snapshots preserve the superseded closure argument. Relative links
 in the snapshots retain their original repository-root context. They are
 historical evidence, not active proof authorities.
 
-The [transport audit](../../HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) gives the
+The [transport audit](../non-elliptic/HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) gives the
 correction, positive-sign repair, and the remaining negative sign. Current
 status is in [MATH_STATUS.json](../../MATH_STATUS.json).
 

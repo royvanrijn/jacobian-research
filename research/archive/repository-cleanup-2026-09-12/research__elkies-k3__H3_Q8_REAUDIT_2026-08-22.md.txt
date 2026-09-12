@@ -1,0 +1,266 @@
+# H3 q=8 re-audit and repair — 2026-08-22
+
+This note supersedes the active q8 conclusions in the earlier module-intersection notes and in the q8 sections of `BISECTION_COLLISION_SEARCH.md` wherever they conflict.
+
+The re-audit is now **resolved**: two independent bugs were found, repaired, and the second H3 neighbour has been reconstructed exactly over `QQ`.
+
+## Final certified route
+
+```text
+H3 E7+E8/MW2
+  --q6-->
+E8+E6/MW3
+  --q8-->
+D13/MW4.
+```
+
+The first q6 hop was never invalidated. The corrected second q8 hop now has an exact characteristic-zero Riemann--Roch pencil and Jacobian certificate.
+
+## Bug 1: binary-quartic covariant map was doubled twice
+
+The q6 child is obtained from a genus-one binary quartic. The classical covariant map used by the repository is the degree-two covering map to the Jacobian. Therefore differences of two transported quartic points are already **twice** the corresponding primitive MW differences.
+
+The old marking code formed
+
+```text
+Pmap = phi(E7_7) - phi(old_O)
+Qmap = phi(E7_7) - phi(affine_E7)
+S_old = 2*Pmap + 2*Qmap.
+```
+
+Direct geometric height calculations on the globally minimal `E8+E6` K3 found
+
+```text
+height(Pmap) = 32/3
+height(Qmap) = 32/3
+<Pmap,Qmap> = 4/3
+height(Pmap+Qmap) = 24
+height(2Pmap+2Qmap) = 96.
+```
+
+The pinned MW lattice has primitive first block
+
+```text
+[[8/3,1/3],
+ [1/3,8/3]],
+```
+
+so the factor four in the height Gram is exact evidence that `Pmap,Qmap` are doubled directions. The corrected marked section is therefore
+
+```text
+S = Pmap + Qmap,
+MW coordinate = (-2,-2,0).
+```
+
+It satisfies
+
+```text
+S.O = 10,
+height(S) = 24,
+II* component = identity,
+IV* component = identity,
+withdrawn section = 2*S,
+withdrawn height = 96.
+```
+
+The smooth collision divisor consequently has degree **10**, not 46.
+
+Reproduce the corrected marking with
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking_2cover.sage
+```
+
+or the compatibility/regression entry points
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage
+sage -python elkies-k3/scripts/audit_h92_q6_child_q8_marking_height.sage
+```
+
+Expected terminal status:
+
+```text
+PASS_EXACT_Q8_MARKING_2COVER_CORRECTION
+```
+
+## Bug 2: q-regular normalization omitted `Dx`
+
+For the corrected standard-Jacobian section write
+
+```text
+x(S)=Nx/Dx,
+y(S)=Ny/Dy,
+m=(y+y(S))/(x-x(S)),
+p=-y(S)/x(S),
+q=(m-p)/h.
+```
+
+The old q-regular normalization used
+
+```text
+R*h*Dy == Ny mod Nx.
+```
+
+But
+
+```text
+-p/h = Ny*Dx/(h*Dy*Nx),
+```
+
+so the actual `Nx` residue contains `Dx`. The correct cancellation is
+
+```text
+R*h*Dy == Ny*Dx mod Nx.
+```
+
+Without `Dx`, the supposedly regular q-frame retains a degree-24 vertical pole. The diagnostic consequence was striking: the recovered two-dimensional modular system had generic branch degree about 100. After the correction, the same exact-bound system has branch degree 4 at every nonsingular finite level.
+
+At `p=43`:
+
+```text
+ambient=13, rank=11, kernel=2,
+42 nonsingular finite levels: branch degree 4,
+1 singular level.
+```
+
+At `p=59`:
+
+```text
+ambient=13, rank=11, kernel=2,
+58 nonsingular finite levels: branch degree 4,
+1 singular level.
+```
+
+These modular runs were diagnostics. The final certificate is characteristic zero.
+
+## Exact QQ q8 pencil
+
+The corrected marking has
+
+```text
+deg h = 10,
+deg Nx = 24,
+deg Ny = 36.
+```
+
+For the component-nef q8 target, the finite E8 and E6 cycles are the negatives of the corresponding `x` valuation cycles, so both additive finite conditions are the complete ideal
+
+```text
+(u^2,X,Y).
+```
+
+After the corrected q-normalization, the exact infinity bounds give
+
+```text
+deg s <= 6,
+deg t <= 5,
+ambient dimension = 13.
+```
+
+Over `QQ` the complete condition matrix is
+
+```text
+13 columns,
+11 rows,
+rank 11,
+kernel dimension 2.
+```
+
+The resulting pencil eliminates to a degree-four binary quartic. Its exact Jacobian has
+
+```text
+finite fibres:
+  I9* at one rational place,
+  9 I1 over a degree-nine factor,
+infinity: smooth,
+root rank = 13,
+root determinant = 4,
+Euler number = 24,
+MW rank = 4 (for rho=19).
+```
+
+Hence the child root lattice is exactly
+
+```text
+D13/MW4.
+```
+
+Reproduce the complete characteristic-zero hop with
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --representative component-nef \
+  --output artifacts/local/elkies-k3/q8-target-component-nef-audit.json
+cmp artifacts/local/elkies-k3/q8-target-component-nef-audit.json \
+  elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
+```
+
+Clean-checkout replay warning (2026-09-04): the final command also consumes
+three ignored q6 intermediates that are not retained in the current checkout:
+
+```text
+artifacts/generated-results/elkies-k3-h92-q6-child-jacobian.json
+artifacts/generated-results/elkies-k3-h92-q6-child-zero-section.json
+artifacts/generated-results/elkies-k3-h92-q6-child-e7-infinity-sections.json
+```
+
+They must first be rebuilt through the `EC-K3-H3-Q6` script chain.  The
+tracked component-nef target and checker source remain pinned, but the command
+above is not by itself a portable clean-checkout replay.  This is an evidence-
+packaging gap, not a new equation computation or a broader theorem claim.
+
+The target artifact is pinned with SHA-256
+`569667c6ad6dc6a8fb82bd22ac9444e208e5ee1bb50788a0917ef1c5a80fdc46`;
+the q8 checker consumes
+`data/fibrations/h3_q8_component_nef_physical_root_target.json` by default.
+
+Expected endpoint:
+
+```text
+Q8QQCHILD|...|root_rank=13|root_euler=24|root_det=4|MW_rank=4|status=PASS_EXACT_CORRECTED_Q8_D13_CHILD
+```
+
+## Representative reconciliation remains valid
+
+The separate source-lattice audit remains re-authorized:
+
+```text
+dominant D13 representative --122 finite old-fibre reflections--> degree-18 class
+classifier-nef representative --120 finite old-fibre reflections--> degree-16 class.
+```
+
+The degree-16 terminal vector is
+
+```text
+(22,16,-14,-20,-27,-40,-33,-26,-18,-4,-5,-7,-10,-8,-6,-4,-2,8,0).
+```
+
+This explains the historical source-side confusion but is no longer needed to build the q8 equation: the corrected q6-child route is dramatically smaller.
+
+## Superseded diagnostics
+
+Do not use the following as the canonical q8 construction:
+
+- the degree-46 child marking and its derived smooth-collision/q-frame chain;
+- the source-side degree-18 `true1600` pipeline as the final q8 RR system;
+- the hand-converted degree-16 `corrected1278` / q6^8 compiler;
+- the old q-regular normalization omitting `Dx`.
+
+Those calculations remain useful historical diagnostics for the inputs they used, but they are superseded by the exact `13 -> 2 -> D13/MW4` characteristic-zero certificate.
+
+## Re-authorized results
+
+The following are now exact together:
+
+1. first H3 q6 neighbour and its complete resolved RR cover;
+2. globally minimal `E8+E6/MW3` q6 child;
+3. abstract child MW height lattice;
+4. q8 lattice orbit/classifier and component-nef target;
+5. corrected q8 rational section of height 24 and collision degree 10;
+6. exact corrected q8 finite/infinity module intersection over `QQ`;
+7. exact degree-four q8 pencil and `D13/MW4` Jacobian child;
+8. independent Q80 lattice/equation programme.
+
+The next H3 gate is no longer the second neighbour. It is continuation **from the exact D13/MW4 child** toward the rootless/high-rank target, with the two repaired normalization rules retained as compiler regressions.

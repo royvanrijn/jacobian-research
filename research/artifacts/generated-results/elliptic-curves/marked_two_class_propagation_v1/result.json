@@ -1,0 +1,58 @@
+{
+  "candidate_count": 256,
+  "common_bases": 0,
+  "enumeration_nodes": 2000000,
+  "exact_bisections": 182,
+  "exact_nonzero_labels": 0,
+  "fresh_fibres": 0,
+  "ideal_transfer": "UNKNOWN_NO_FRESH_FIBRES",
+  "independent_replay_sha256": "3b27b8326bab8571a93c49b4e34f4102c364a2b4dc68da19331ee9f7b367bbfd",
+  "next_gate": "Two actual class-labelled carriers and an infinite rational common base. Any new search, shell continuation or interrupted-candidate work requires a new explicitly scoped protocol; no automatic enlargement.",
+  "nonsplit_at_control": 182,
+  "nonsplitting_progression": {
+    "M": "1217269416735962936106761",
+    "formula": "t=3/17+M*z, z in Z",
+    "primes": [
+      7,
+      11,
+      13,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      79
+    ],
+    "scope": "All182 completed bisections are nonsplit at every parameter in this explicit progression. This is a visibility exclusion for these curves only, not a rank or class-block exclusion."
+  },
+  "recorded_or_charged_cpu_seconds": {
+    "compilation_children_including_prior_and_conservative_interrupt_charge": 169.20218,
+    "enumeration": 25.901554264,
+    "export_repair_parent": 1.9483275539999998,
+    "independent_replay": 72.50006613400001,
+    "marking": 0.06100351100000001
+  },
+  "recorded_or_charged_sum": 269.613131463,
+  "reducible_residuals": 73,
+  "retained_shell_counts": {
+    "10": 16356,
+    "14": 562451
+  },
+  "schema": "marked-two-class.result.v1",
+  "shells_complete": false,
+  "status": "PASS_BOUNDED_VISIBILITY_MISS",
+  "strict_transfer": "UNKNOWN_NO_FRESH_FIBRES",
+  "tests": "18 small exact regressions passed; source included for replay.",
+  "theorem": "Valid sufficient simultaneous-splitting implication; explicit MW16-05 pair NOT constructed.",
+  "timing_boundary": "Includes the whole30-second allowance for an interrupted child. Process import/startup, the interrupted first parent overhead, authoring, source retrieval, packaging and navigation are not component-timed. No end-to-end speed comparison is claimed.",
+  "unknown_candidates": [
+    171
+  ]
+}

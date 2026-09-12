@@ -33,7 +33,7 @@ Each rational function is encoded by numerator and denominator coefficient
 lists in **ascending degree**, with rational numbers stored as strings.
 This is an explicit coefficient list, not an implicit equation-solving task.
 
-From the repository root, in Sage:
+From `research/`, in Sage:
 
 ```python
 load('elliptic-curves/cas/load_curve302_recovered_parent.sage')

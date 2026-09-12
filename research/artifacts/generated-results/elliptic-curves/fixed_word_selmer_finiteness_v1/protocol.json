@@ -1,0 +1,14 @@
+{
+  "address_space_bytes": 1073741824,
+  "column": 6,
+  "column_7": "untouched",
+  "cpu_seconds": 60,
+  "new_atoms": 0,
+  "on_failure": "Preserve completed evidence; no alternate prime, word or increased bound.",
+  "parameter_searches": 0,
+  "purpose": "Bind the finite-prime lemma using only the retained polynomial identities and the complete fixed word.",
+  "resultants": "Exact integer Sylvester-determinant circuits; no integer expansion or factorization.",
+  "schema": "fixed-word.finiteness-binding-protocol.v1",
+  "twist_searches": 0,
+  "worker_count": 1
+}

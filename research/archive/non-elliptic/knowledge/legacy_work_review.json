@@ -1,0 +1,938 @@
+{
+  "schema": 1,
+  "source": "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+  "source_sha256": "a7bc381cfd76a3ce02f750a51b7ace5c49d72d435a2604fb05b8d6cd123b3eb6",
+  "boundary": "Disposition is a cleanup review outcome, not a theorem state or execution schedule. Original completed-subset annotations are retained.",
+  "items": [
+    {
+      "line": 60,
+      "text": "Re-run `make check`, `git diff --check`, Markdown-link validation, process ledger validation, and repository hygiene as the final release gate.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-60"
+    },
+    {
+      "line": 62,
+      "text": "Recount all states and re-diff every status entry against the audit-start commit so concurrently committed discoveries cannot fall between snapshots.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-62"
+    },
+    {
+      "line": 184,
+      "text": "At close, verify that every new September 4 status entry is represented in the research timeline or is deliberately omitted as an implementation detail.",
+      "disposition": "superseded-navigation",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "The generated catalogue now lists every current claim; the concise discovery timeline is intentionally selective.",
+      "id": "LEGACY-20260904-184",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Replaced the requirement for a timeline entry per intermediate result with a complete generated catalogue. The timeline explicitly states that it omits intermediate results and links to that catalogue; the catalogue coverage test checks each authority entry appears exactly once in an area index.",
+        "checks": [
+          "make check-navigation: complete claim catalogue and 24 navigation tests passed"
+        ],
+        "evidence": {
+          "scripts/research.py": "35068e4df7ef72acc07a1a215107b782763f570d45d2a3a4ffb83a7c0a45cbbe",
+          "tests/test_research_navigation.py": "d4e82ea47502b3a16ed6d551c4f561d665633d750fbe59a0a2a2fc7d6d9eccbd",
+          "RESEARCH_TIMELINE.md": "fb73868ae5c3410d95c6fc215c087e1fb9bd31d04c89663994536ac67b0d5c2b"
+        }
+      }
+    },
+    {
+      "line": 241,
+      "text": "Confirm the title and scope still match the strongest current canonical proof and do not omit a later counterexample or narrowing theorem.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-241"
+    },
+    {
+      "line": 243,
+      "text": "Confirm every dependency is logically necessary, correctly directed, and not merely a historically adjacent calculation.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-243"
+    },
+    {
+      "line": 245,
+      "text": "Confirm the canonical source is unique, active, and contains the theorem boundary rather than only an experiment narrative.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-245"
+    },
+    {
+      "line": 247,
+      "text": "Confirm every named checker is the program that proves the recorded payload, not a generator, downstream summarizer, or unrelated smoke test.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-247"
+    },
+    {
+      "line": 249,
+      "text": "Recompute each checker-source hash after all live edits settle.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-249",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Recomputed source hashes for every one of the 1430 checker-bearing status rows (1251 distinct programs); audit_status reported no mismatches. This verifies source identity, not mathematical payload or independent replay.",
+        "checks": [
+          "python3 scripts/audit_status.py: PASS mathematical status"
+        ],
+        "evidence": {
+          "MATH_STATUS.json": "35049e4298c58f0311de8f71ae97ec733a596722db8c41fbc13e0a50a94b5cc1",
+          "scripts/render_status.py": "84a4003ee286390aaabb6db399c3c93260722da1501cd04d88285b0b23dc118c",
+          "scripts/audit_status.py": "0249b224221a683c22af19f3f45dc3165bb3a744f8128a6b8190f91116340f4c"
+        }
+      }
+    },
+    {
+      "line": 250,
+      "text": "Confirm each software lock exists and distinguishes source programs, raw replay inputs, compact certificates, and optional local checkpoints.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-250"
+    },
+    {
+      "line": 252,
+      "text": "Validate document consumers and their status markers after every scope change.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-252",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Validated all 1445 document-consumer edges against current state/title/scope markers after the LND, Gaussian, Danielewski and quartic scope corrections.",
+        "checks": [
+          "python3 scripts/audit_status.py: PASS mathematical status"
+        ],
+        "evidence": {
+          "MATH_STATUS.json": "35049e4298c58f0311de8f71ae97ec733a596722db8c41fbc13e0a50a94b5cc1",
+          "scripts/render_status.py": "84a4003ee286390aaabb6db399c3c93260722da1501cd04d88285b0b23dc118c"
+        }
+      }
+    },
+    {
+      "line": 254,
+      "text": "Check reciprocal `supersedes`, `replaced_by`, `closes_problems`, `narrows_problems`, and `invalidates_assumptions` edges.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-254",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Validated the full dependency/update graph, including reciprocal replacement/supersession, closure, narrowing and invalidated-assumption constraints. Logical necessity of every dependency remains the separate unfinished item 243.",
+        "checks": [
+          "python3 scripts/audit_status.py: PASS mathematical status"
+        ],
+        "evidence": {
+          "MATH_STATUS.json": "35049e4298c58f0311de8f71ae97ec733a596722db8c41fbc13e0a50a94b5cc1",
+          "scripts/render_status.py": "84a4003ee286390aaabb6db399c3c93260722da1501cd04d88285b0b23dc118c"
+        }
+      }
+    },
+    {
+      "line": 256,
+      "text": "Ensure a proved bounded reproduction is described as a proved execution of a bounded protocol, never as the unbounded mathematical conclusion.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-256"
+    },
+    {
+      "line": 258,
+      "text": "Ensure `independent_replay`, `formal_verification`, and `external_review` are evidence flags, not inferred from proof type or a passing local checker.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-258"
+    },
+    {
+      "line": 260,
+      "text": "Preserve falsified and archived evidence needed to explain why a route or assumption must not be reused.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Falsified and archived claims, replacement edges, immutable snapshots and failed-route witnesses remain discoverable and checked.",
+      "id": "LEGACY-20260904-260"
+    },
+    {
+      "line": 262,
+      "text": "For entries without checkers, identify whether the proof is genuinely prose-only or is missing a compact deterministic witness that should exist.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-262"
+    },
+    {
+      "line": 264,
+      "text": "For shared checkers, replay every parameter/source mode named by status; a default-mode pass is not coverage of alternate modes.",
+      "disposition": "unscheduled-replay",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS",
+        "WORK-K3-REPLAY-TRIAGE"
+      ],
+      "rationale": "A shared checker needs each claimed mode checked; choose exact modes and a finite replay budget after semantic triage.",
+      "id": "LEGACY-20260904-264"
+    },
+    {
+      "line": 266,
+      "text": "For all partial entries, name the first exact missing gate and remove any prose that implies the partial calculation is “almost” a theorem.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PARTIAL-GATES"
+      ],
+      "rationale": "All current partial entries are automatically discoverable. Their first missing gates still require source-level review, not regex-based theorem inference.",
+      "id": "LEGACY-20260904-266"
+    },
+    {
+      "line": 268,
+      "text": "For open and parked problems, verify forbidden attack classes and witnesses reflect every later negative result.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-268"
+    },
+    {
+      "line": 285,
+      "text": "Refresh the downstream generic-quartic certificate after its local exact first-jet prerequisite. The prerequisite was rebuilt successfully, but the full multi-million-bit discriminant/division replay was stopped when the user clarified that this pass is cleanup-only. Do not resume it without explicit compute scope. **Long replay.**",
+      "disposition": "unscheduled-replay",
+      "actions": [
+        "WORK-QUARTIC-REPLAY"
+      ],
+      "rationale": "The original item explicitly defers a long mathematical replay outside cleanup scope; no computation is restarted.",
+      "id": "LEGACY-20260904-285"
+    },
+    {
+      "line": 295,
+      "text": "Never bulk-refresh embedded hashes: regenerate through the owning checker and diff the mathematical payload first.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REPLAY-PROVENANCE"
+      ],
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "id": "LEGACY-20260904-295"
+    },
+    {
+      "line": 297,
+      "text": "For every mutable external source, preserve a minimal exact projection or raw snapshot sufficient for the claim; a URL plus old hash is not replayable once upstream bytes change.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REPLAY-PROVENANCE"
+      ],
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "id": "LEGACY-20260904-297"
+    },
+    {
+      "line": 307,
+      "text": "Add output hashes to canonical notes when a certificate is primary and currently lacks a documented digest.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REPLAY-PROVENANCE"
+      ],
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "id": "LEGACY-20260904-307"
+    },
+    {
+      "line": 309,
+      "text": "Rebuild the full `EC-K3-H3-Q6` intermediate chain and preserve a compact sufficient projection of the three inputs needed by `derive_h92_q6_child_q8_corrected2cover_qq.sage`; this is an explicit replay- packaging calculation and remains outside the cleanup-only execution scope.",
+      "disposition": "unscheduled-replay",
+      "actions": [
+        "WORK-H3-Q6-PACKAGING"
+      ],
+      "rationale": "The compact-input packaging goal is retained without changing the theorem status or rebuilding the expensive chain.",
+      "id": "LEGACY-20260904-309"
+    },
+    {
+      "line": 321,
+      "text": "Replay every checker behind the seven-fibre native quotient/visibility audit after the current `08f72` extensions settle. **Blocked-current.**",
+      "disposition": "needs-reconciliation",
+      "actions": [
+        "WORK-K3-REPLAY-TRIAGE"
+      ],
+      "rationale": "Old blocked-current labels and long replay lists must be reconciled with later certificates. They are neither live worker observations nor automatic restart instructions.",
+      "id": "LEGACY-20260904-321"
+    },
+    {
+      "line": 323,
+      "text": "Compile saturated chart transports for the 54 recognized fibres whose quotient dimensions remain unknown; preserve nulls until each exact replay. The highest-rank tranche is complete: curves 11, 391, and 423 each have an exact displayed `Z^11` quotient transport.",
+      "disposition": "needs-reconciliation",
+      "actions": [
+        "WORK-QUOTIENT-TRANSPORTS"
+      ],
+      "rationale": "The old count and completed highest-rank tranche are preserved; current unresolved membership must be reconciled before any transport work.",
+      "id": "LEGACY-20260904-323"
+    },
+    {
+      "line": 331,
+      "text": "Record actual search exposure denominators before comparing public hit counts across families; do not infer effort from successes.  The historical denominator remains unknown; the prospective protocol instead commits a new, fully enumerated 1,536-row scheduled denominator.",
+      "disposition": "retained-unknown",
+      "actions": [
+        "WORK-SEARCH-EXPOSURE"
+      ],
+      "rationale": "A fresh prospective denominator does not recover unknown historical exposure.",
+      "id": "LEGACY-20260904-331"
+    },
+    {
+      "line": 342,
+      "text": "Complete long replays for core generation, prime-local bridge mutation, 103b2 MW glue, determinant-78 frame classification, rootless low-degree census, and full J2 Niemeier enumeration.",
+      "disposition": "needs-reconciliation",
+      "actions": [
+        "WORK-K3-REPLAY-TRIAGE"
+      ],
+      "rationale": "Old blocked-current labels and long replay lists must be reconciled with later certificates. They are neither live worker observations nor automatic restart instructions.",
+      "id": "LEGACY-20260904-342"
+    },
+    {
+      "line": 345,
+      "text": "Replay the NS0031 rational-marking checker and independently inspect the two external theorem inputs: Vélu’s `X_0(37)(Q)` classification and the marked-K3 period/Clifford implication.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-K3-MARKING-REVIEW"
+      ],
+      "rationale": "Keep the existing rational-marking obstructions and geometric controls; the external theorem-input review remains separately attributable.",
+      "id": "LEGACY-20260904-345"
+    },
+    {
+      "line": 355,
+      "text": "Keep the NS0024 and NS0031 local/geometric artifacts as controls while preventing either from re-entering the rational-source queue.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-K3-MARKING-REVIEW"
+      ],
+      "rationale": "Keep the existing rational-marking obstructions and geometric controls; the external theorem-input review remains separately attributable.",
+      "id": "LEGACY-20260904-355"
+    },
+    {
+      "line": 360,
+      "text": "Complete the long 103b2 MW-lattice, 63,917-class product-inversion, and high-throughput splitting replays with checkpoints.",
+      "disposition": "needs-reconciliation",
+      "actions": [
+        "WORK-K3-REPLAY-TRIAGE"
+      ],
+      "rationale": "Old blocked-current labels and long replay lists must be reconciled with later certificates. They are neither live worker observations nor automatic restart instructions.",
+      "id": "LEGACY-20260904-360"
+    },
+    {
+      "line": 367,
+      "text": "Revisit the two V4 base-rank timeouts separately; the stored `62 complete, 2 timeout` screen must never be summarized as 64 completed ranks.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-LOW-GENUS-GATES"
+      ],
+      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
+      "id": "LEGACY-20260904-367"
+    },
+    {
+      "line": 369,
+      "text": "Compute nonzero product quotient classes only after the exact full involution/2-Selmer lattice is available; zero-class exclusion is not an existence or rank theorem.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-LOW-GENUS-GATES"
+      ],
+      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
+      "id": "LEGACY-20260904-369"
+    },
+    {
+      "line": 372,
+      "text": "Keep the genus-two normalization result bounded until infinity charts, simultaneous bad reduction, and parameters beyond the CRT box are covered or a theorem removes them.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-LOW-GENUS-GATES"
+      ],
+      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
+      "id": "LEGACY-20260904-372",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Read the full rational-normalization boundary and both genus-two consumers. The authority and canonical note explicitly retain infinity, simultaneous bad reduction and unbounded rational heights as UNKNOWN. The singular genus-one exhaustion only gives first possible arithmetic genus at least two. Verified the four compact output hashes and 16 distinct named source/data pins without re-running either modular intersection or CRT reconstruction.",
+        "checks": [
+          "Source review and exact file-hash comparison; no Sage, finite-field scan or CRT replay."
+        ],
+        "evidence": {
+          "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md": "1d22ee2b3a750d6a240ef983f6b6651bfc83c9c01ddf2300c552d8e159665050",
+          "elkies-k3/scripts/reconstruct_r17_norm12_direct_genus2_normalizations.sage": "a5cb9cb14c4c41f8eb15c56b85b2bf583d206bcee3a88b65f1d7094d9be12a5d",
+          "elkies-k3/scripts/analyze_r17_norm12_direct_genus2_cover_collisions.py": "f54edc1cad77699f9a29fbd329ec7d8f64f36503cd8b5ad8d23bcd843de04799"
+        }
+      }
+    },
+    {
+      "line": 375,
+      "text": "Add independent replay implementations for the highest-risk complete character and singular-normalization exclusions.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-LOW-GENUS-GATES"
+      ],
+      "rationale": "Timeouts, full involution-lattice prerequisites, bounded normalization and independent replay are different obligations; no global result is inferred.",
+      "id": "LEGACY-20260904-375"
+    },
+    {
+      "line": 472,
+      "text": "Re-audit the alternate-bisection chunk merger after its concurrent `1183a`/`098fc` expansion settles; do not bless its intermediate hashes. **Blocked-current.**",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-K3-REPLAY-TRIAGE"
+      ],
+      "rationale": "The former concurrent-work block is resolved at the 2026-09-12 source snapshot. Preserve the separate structural merge and mathematical attachment gates; future source changes require a new audit.",
+      "id": "LEGACY-20260904-472",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Reviewed the settled source-label expansion, including 1183a and 098fc, and reconciled it with the saved final complete-frame character reports. The merger validates chunk structure; full orbit/vector attachment belongs to the downstream checker. Corrected the canonical note to preserve that distinction. This completes the requested source/provenance audit, not an independent equation replay.",
+        "checks": [
+          "Read the full merger: per-source artifact schema/status, sorted contiguous intervals, exact final count, duplicate label/mask rejection, source-specific output selection and chunk SHA256 manifest.",
+          "Read the downstream attachment gates: complete mask set and frame-vector checks; the streaming 1183a/098fc commands explicitly supply their priority tables.",
+          "Verified both final reports declare 39,147 characters, complete priority coverage, no equal-cover collision and no three-character relation; all 12 unique referenced input SHA256 values match retained bytes.",
+          "The streaming parser is tied to the preserved pretty-printed record layout. The merger alone is not a vector-attachment or equation-identity verifier. No Sage, lattice enumeration, factorization, equation construction or character search was executed."
+        ],
+        "evidence": {
+          "elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py": "0b30d9b30276cc740202356a4b3312ad13fb1b8f729dcc906b0bcc8d5bc0b1d5",
+          "elkies-k3/scripts/search_r17_norm12_quadratic_character_closure_streaming.py": "300e64e06c2c2fa40454de8081dc0520f42b74ed4c49a9b19e689a057b12fac9",
+          "elkies-k3/scripts/hash_bisection_extensions.py": "caae324023836a3084c2589a1a8269cb12304164a0f2e4de9d952fd4c0e790e4",
+          "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md": "7d29a23d0581694b612f6bb004ee282302de2e588f600c9840a30f33b298153a",
+          "artifacts/generated-results/elkies-k3-r17-norm12-1183a-streaming-character-closure-v1.json": "182c81e3be7dedaff6bae518336430102d6f7ea642fc33eda449b6be0aa2bc94",
+          "artifacts/generated-results/elkies-k3-r17-norm12-098fc-streaming-character-closure-v1.json": "72f41930543067c60b9f5c7dc1d2d4f5a8cbeb1cc512e3ae2fa5d44d07c501f1"
+        }
+      }
+    },
+    {
+      "line": 556,
+      "text": "Treat curve-398 A1/MW16 reconstruction and curve-302 parent-family reconstruction as a first-class rank-32 path parallel to R17/MW17.  For 398, recover the exact fibration, parameter, sixteen-section map, and rank-14 displayed quotient before neighbourhood search.  For 302, work from the complete 31-point configuration without assuming a generic rank or `17+14` split.  Keep curve 273 and low-conductor near misses behind completed residual descent or a sharper unconditional upper-bound route.",
+      "disposition": "partly-superseded",
+      "actions": [
+        "WORK-EC-NEXT",
+        "WORK-CURVE302-PROVENANCE"
+      ],
+      "rationale": "The current parent-recovery and A1/MW16 results supersede the proposed reconstruction stage. Rank32, exact upper-bound issues and original Curve302 provenance remain distinct; the historical paragraph is retained in full.",
+      "id": "LEGACY-20260904-556",
+      "claims": [
+        "EC-K3-CURVE398-A1-MW16-RECOVERY",
+        "EC-CURVE302-RECOVERED-MW17-PARENT"
+      ]
+    },
+    {
+      "line": 665,
+      "text": "Identify high-risk theorems with no independent replay and add compact low-dependency witnesses where feasible.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-665"
+    },
+    {
+      "line": 667,
+      "text": "Keep presentation-free stable descent, global minima, and full stable moduli open unless an exact new certificate closes them.",
+      "disposition": "maintained-open",
+      "actions": [
+        "WORK-KDESC",
+        "WORK-KCOMP",
+        "WORK-KMOD"
+      ],
+      "rationale": "All three targets remain open in the authority, with current proposed gates in the work ledger.",
+      "id": "LEGACY-20260904-667"
+    },
+    {
+      "line": 672,
+      "text": "Recheck every finite-degree or finite-support GVC/SIC census for exact domain enumeration, symmetry quotienting, and no missing support orbit. **Completed subset:** the complete bidegree-`(2,2)` 501-support regression and the bidegree-`(3,3)` size-three through size-nine chain now have exact key/coverage checks.  The bidegree-`(4,4)` two-row layer now also has solver-free exact-artifact audits for the dense degree-604/mu8 chart, all 135 separated-row boundary orbits, all six dense off-diagonal representatives covering ten row pairs, all 1,174 off-diagonal boundary orbits, all 942 stored rank-two unit opens, both delayed-fibre records, all 60 single-shear charts, and the exact 150-chart/78-orbit double-shear reversal cover.  Other extended-geometry censuses remain queued.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-COVERAGE-AUDIT"
+      ],
+      "rationale": "The original checkbox records completed subsets; preserve them and audit remaining coverage without treating a subset as a universal completion.",
+      "id": "LEGACY-20260904-672"
+    },
+    {
+      "line": 684,
+      "text": "Recheck moment and Fitting ideals for the intended saturation and marked scheme thickness. **Completed completed-moment subset:** `SIC2MDF35`, `SIC2MSP35`, `SIC2MIA36`, and `SIC2MCR` now pin their committed output ledgers and direct helper sources. The canonical note's automatic-ledger command was missing `--ladder-beta-check 32` and cited a superseded output hash; both are corrected. The older bounded relation ledger is now identified as the `c91498bbca85` historical schema instead of being presented as a byte-identical output of the extended current producer. Static review keeps all finite-field relation exclusions support-bounded, all Hilbert tests necessary-only, and every fixed-field conclusion restricted to its diagonal or single-phase slice. A stdlib-only auditor checks bytes and stored scope flags; no SymPy invariant scan or Singular process was run. Fitting and remaining moment programmes stay queued. **Completed degree-four field subset:** `SIC2C4I`, `SIC2C4D`, `SIC2C4SP`, `SIC2C4P1M`, and `SIC2MA` now pin all six committed ledgers and the helper sources that actually prove their composite scopes. In particular, `SIC2C4D` no longer relies on its diagonal checker alone for the separate 22-even-parameter and weight-16 nonrelation assertions. Static review found no sieve promotion: full modular column rank excludes only the declared relation support, rank defects remain candidates, diagonal and fixed-locus fibers remain slice results, and the four-point phase-one completeness remains only over `F_101`. Its rational branches and orbit identity are exact, but additional characteristic-zero components and generic degree are still open. The pinned phase-one path asserts solver success before writing; timeouts produce no certificate. No SymPy, Singular, or `msolve` run was performed. **Completed quartic `q_2` normal-jet subset:** `SIC2Q2NJ4` and `SIC2Q2C3D4` now pin their two committed artifacts and the shared producer. The maintenance audit preserves all three logical boundaries: dimensions six and four are finite-field quadratic/cubic jet statements at one normalized point, the quartic dominant-sheet radicals do not prove formal isolation, and the `F_2=0` boundary plus characteristic-zero/global integrality remain open. The 300-second quartic row is a checked timeout; the separate 240-second off-axis timeout is a retained historical field serialized by the cubic checker rather than rerun by it, with inference explicitly `none`. No SymPy or Singular calculation was run.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-MOMENT-SCHEMES"
+      ],
+      "rationale": "Completed subset evidence stays in the original text. Remaining saturation, characteristic and quantifier checks need specific source review, not blanket replay.",
+      "id": "LEGACY-20260904-684"
+    },
+    {
+      "line": 721,
+      "text": "Recheck polarization steps for division by a characteristic-dependent scalar or an implicit genericity assumption.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-MOMENT-SCHEMES"
+      ],
+      "rationale": "Completed subset evidence stays in the original text. Remaining saturation, characteristic and quantifier checks need specific source review, not blanket replay.",
+      "id": "LEGACY-20260904-721"
+    },
+    {
+      "line": 723,
+      "text": "Recheck the two-pair all-order and bidegree results against their explicit counterexamples and status replacements.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-MOMENT-SCHEMES"
+      ],
+      "rationale": "Completed subset evidence stays in the original text. Remaining saturation, characteristic and quantifier checks need specific source review, not blanket replay.",
+      "id": "LEGACY-20260904-723"
+    },
+    {
+      "line": 725,
+      "text": "Recheck Ritt/Hurwitz deformation computations for formal-to-algebraic promotion and for omitted obstruction stages.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-DEFORMATION-BOUNDARIES"
+      ],
+      "rationale": "The recorded ordinary-quotient correction is complete; the wider filtered/cotangent review remains explicit.",
+      "id": "LEGACY-20260904-725"
+    },
+    {
+      "line": 727,
+      "text": "Recheck tangent-space conclusions: a vanishing ordinary quotient does not erase filtered or boundary-decorated moduli. **Status-layer repair complete:** `O1` now distinguishes Artin/formal source triviality, order-dependent reduced representatives, and failed global algebraization; checker-by-checker Ritt cotangent review remains queued.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-DEFORMATION-BOUNDARIES"
+      ],
+      "rationale": "The recorded ordinary-quotient correction is complete; the wider filtered/cotangent review remains explicit.",
+      "id": "LEGACY-20260904-727"
+    },
+    {
+      "line": 732,
+      "text": "Re-run cheap exact coefficient and independent-Python/Singular/Lean controls before any large Gröbner refresh.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-MOMENT-SCHEMES"
+      ],
+      "rationale": "Completed subset evidence stays in the original text. Remaining saturation, characteristic and quantifier checks need specific source review, not blanket replay.",
+      "id": "LEGACY-20260904-732"
+    },
+    {
+      "line": 734,
+      "text": "Keep minimum GVC(3) degree, efficient polarization, and complete bidegree-(3,3) SIC classification open.",
+      "disposition": "maintained-open",
+      "actions": [
+        "WORK-GVC3-MIN",
+        "WORK-GVC2-RP",
+        "WORK-SIC2-B33"
+      ],
+      "rationale": "The current open targets retain their narrowed scopes; the historical label does not reopen already closed binary GVC.",
+      "id": "LEGACY-20260904-734",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Checked the full current scopes, corresponding work gates and active source status passages. Minimum ternary degree, ordinary-Laplacian rank-efficient polarization and dense bidegree-(3,3) SIC classification remain open. Added the completed generic D=0 fibre to the minimum frontier, without reopening tagged construction, binary GVC or closed support censuses. This completes the status-maintenance obligation at this snapshot, not those mathematical programmes.",
+        "checks": [
+          "Read-only scope and source review plus the explicit obsolete-guidance corrections; no moment, saturation or support census was run."
+        ],
+        "evidence": {
+          "MATH_STATUS.json": "23f9cee4f141dc2d003dbe6e3e2ecec774fe7e5dc5b404846a26f5464194af87",
+          "knowledge/work_items.json": "5f814d5c9aecf225cdc8c072864d7402cf172ca09f4dc7657da6092624cf4b5e",
+          "extended-geometry/README.md": "bfd17c1fd397d9ee6b50097e8a20892225013dca8b4571d93912b00f19a41f10",
+          "extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md": "5fff1bb5aae08c4bb968d7b4945086944d698a54fcc7bd08c8f9fdcd014b474f",
+          "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md": "3343e67b9153e0ef772c68363a802109ebca432965211dbd4e252516c1af670b",
+          "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md": "346d8e9da14d7b64f2fa01eef95cd65dc4d9870135d8e330823d4485d22135fa"
+        }
+      }
+    },
+    {
+      "line": 784,
+      "text": "Recheck every local conductor, cusp, node, and connector calculation for saturation and compatible global gluing assumptions.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PLANE-GLOBAL-GATES"
+      ],
+      "rationale": "Keep local results scoped behind saturation, infinity, actual monodromy and global carrier gates; the programme remains parked.",
+      "id": "LEGACY-20260904-784"
+    },
+    {
+      "line": 786,
+      "text": "Recheck pole and valuation ledgers for omitted infinity components or incorrect common-power cancellation.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PLANE-GLOBAL-GATES"
+      ],
+      "rationale": "Keep local results scoped behind saturation, infinity, actual monodromy and global carrier gates; the programme remains parked.",
+      "id": "LEGACY-20260904-786"
+    },
+    {
+      "line": 788,
+      "text": "Recheck finite-cover and monodromy claims for actual braid/meridian data, not abstract endpoint matchings.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PLANE-GLOBAL-GATES"
+      ],
+      "rationale": "Keep local results scoped behind saturation, infinity, actual monodromy and global carrier gates; the programme remains parked.",
+      "id": "LEGACY-20260904-788"
+    },
+    {
+      "line": 790,
+      "text": "Verify the F2 carrier and outgoing-tail handoffs do not present local compatibility as a global compactification.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PLANE-GLOBAL-GATES"
+      ],
+      "rationale": "Keep local results scoped behind saturation, infinity, actual monodromy and global carrier gates; the programme remains parked.",
+      "id": "LEGACY-20260904-790",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Read the full carrier, global-attachment and outgoing-tail notes and the retained boundary handoff. Corrected the ambiguous global-meridian wording to the terminal residue-cover relation, linked completed coefficient work, and retained the missing full boundary pullback, global degree and meridian completion. The outgoing tail explicitly contributes zero without constructing a compactification.",
+        "checks": [
+          "Complete source reading and status/replay-metadata audit; no research calculation or enumeration."
+        ],
+        "evidence": {
+          "plane-jc/F2_BOUNDARY_HANDOFF.md": "ea176a6d9350920c80c7d9bad7ad8c65577fb90145cc1c607f498191d1d02015",
+          "plane-jc/F2_OUTGOING_TERMINAL_TAIL.md": "964283559d09435f376d21c6b7d18d6b5723f0874bb8aaaa40ce9b2a84a46468",
+          "plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md": "7a62da8685ab9f0c6795c6fc42e020fc4b3b4cf09e9991a44676ad53c63c9a07",
+          "plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md": "1fc2aa96627668884f26392e41a5b5685c1664934e372404e403bb271f31252e"
+        }
+      }
+    },
+    {
+      "line": 792,
+      "text": "Keep the programme parked where actual global carrier/compactification data are missing; no bounded chart census proves `JC(2)`.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PLANE-GLOBAL-GATES"
+      ],
+      "rationale": "Keep local results scoped behind saturation, infinity, actual monodromy and global carrier gates; the programme remains parked.",
+      "id": "LEGACY-20260904-792",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Checked that OP-PLANE and OP-PLANE-NORM remain parked and that the active plane navigation and reviewed F2 notes make no JC(2) or (75,125) exclusion. Bounded formal jets, local graph compatibility and conditional permutation censuses remain behind their global realization gates. This completes the status-maintenance check at this snapshot, not the parked mathematical programmes.",
+        "checks": [
+          "Complete source reading and status/replay-metadata audit; no research calculation or enumeration."
+        ],
+        "evidence": {
+          "plane-jc/README.md": "8010943d463a09be460768b397985922daead0f7055e64dfc0368c94e980d171",
+          "plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md": "7a62da8685ab9f0c6795c6fc42e020fc4b3b4cf09e9991a44676ad53c63c9a07",
+          "plane-jc/F2_75_125_NONLINEAR_FORCING.md": "24dbc0167a634cb371cecfc9233f533d0ccce7481d538e96cb28dcae0c93d7cd",
+          "MATH_STATUS.json": "24d467b494f8532fac694422896e12ed981f1d5a80775bc1496fb86898c2e230"
+        }
+      }
+    },
+    {
+      "line": 804,
+      "text": "Recheck scalar, rank-one, rank-two, repeated-factor, and Schur packets for a complete pivot stratification. **Completed clean split-linear subset:** static review of `HC4NHM4--12` confirms the exact denominator partition chain `3+1`, `2+2`, `2+1+1`, and `1+1+1+1`.  `HC4NHM4` remains a nonempty leading Hessian--Schur packet rather than an exclusion; `HC4NHM5` excludes only its genuinely two-component prolongation.  The squarefree domain is partitioned exactly into 16 all-concurrent, 8 triple-concurrent/transverse-fourth, 16 no-three-concurrent, and 8 triple-concurrent/tangent-fourth flag patterns. The notes and status scopes retain the positive-defect, lower-Smith, nonlinear-denominator, and rank-at-most-two frontiers.  `HC4NHM10--11` now carry their missing `narrows_problems` edges to `OP-HC4-D5`.  This cleanup did not rerun the `HC4NHM12` Singular saturations. **Completed scalar relative-pencil subset:** the staged degree-six frontier in `HC4RSD24` was still being repeated in the introduction to `HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md` even though the same note later closes degrees six and seven and `HC4MR1` closes the complete auxiliary relative-nilpotent pencil branch in all degrees.  The headline now names that current endpoint while preserving the theorem-local historical frontier and the essential warning that neither `HC4` nor `JC2` follows. The primary `HC4MR1` checker proves only the final local moving-frame step; its previously unregistered committed prolongation artifact is now a software lock with a no-rewrite audit that requires the artifact's explicit written-proof boundary.  No prolongation calculation was rerun. The shared `HC4RSD17--23,25--28` artifact is now registered on all eleven status rows as well.  Its apparent degree-seven `open_frontier` is retained as stage-local historical provenance and explicitly marked superseded by `HC4RSD40`/`HC4MR1`; its audit-only mode checks that distinction without regenerating the symbolic ledger. The same stage/current distinction is now enforced for the shared `HC4RSD11--16` scalar-dichotomy ledger: its higher-degree pencil handoff is preserved as historical `HC4RSD16` data, registered on all six consumers, and explicitly superseded by `HC4MR1`.  No quadratic or higher-degree symbolic identity was rerun. The three quadratic-pivot predecessor ledgers now have the same fail-closed treatment.  Their `HC4RSD8`, `HC4RSD9`, and `HC4RSD10` frontier fields are preserved byte-for-byte as historical stage data, but their audit modes and canonical notes point to `HC4RSD9--10`, `HC4RSD11--16`, and `HC4MR1` as the corresponding closures.  All three artifacts are newly registered on their theorem rows; no block determinant or normal-form calculation was rerun. **Completed affine-pivot scope split:** the `HC4RSD6` constant-span-deficient frontier is still meaningful for classifying affine Schur representations, but `HC4RSD7` already bypasses it for collisions inherited at a common pivot value.  The latter does not cover nonlinear pivots or collisions joining different affine fibers.  Both committed ledgers are now registered and have audit-only modes that enforce this distinction without rebuilding the determinant identities. **Completed scalar-kernel predecessor subset:** the five `HC4RSD1--5` ledgers and their shared equation helper are now registered and cleanup-auditable without importing SymPy. `HC4RSD1--2` also register the projective-polar atlas they actually consume. The committed artifact bytes remain unchanged, but their stage-local frontier text is no longer treated as current: `HC4RSD2--5` close all affine-in-`x` primitive kernel lines and fixed primitive two-component constant-support kernels, while `HC4MR1` closes the nonzero-corner auxiliary constant-Hessian-pencil branch. Fixed three/four-component and parameter-moving nonlinear singular kernels, nonlinear zero-corner exact remainders, and moving matrix pivots remain explicit. No symbolic identity or search was rerun. **Completed pure-sextic/septic artifact subset:** all twelve committed `HC4RSD29--40` stage ledgers were present but absent from their status-row software locks. They are now individually registered and covered by one stdlib-only batch auditor that checks exact bytes and status/format mapping. Their generators were not changed or run: `HC4RSD32` and `HC4RSD40` remain the degree-six/seven endpoints, and `HC4MR1` remains the later all-degree endpoint only inside the auxiliary relative-nilpotent pencil branch. **Completed nonreduced predecessor navigation subset:** static review of `HC4NHM1--3` found no hidden artifact or permissive CAS fallback. The `HC4NHM2` checker fails closed when Singular is unavailable, while each checker explicitly separates its executable identities from the written normalization/DVR proof. The stale `HC4NHM2--3` “next” text is now joined to current knowledge: `HC4NHM4--12` close every split-linear clean denominator partition. Clean nonlinear denominator components, positive-defect packets, and lower-Smith strata remain open. No checker was executed and no mathematical claim was strengthened. **Completed projective-polar provenance subset:** the `HC4PPG1--9` rows previously named only the Python environment even though their checkers share a Segre helper and form an atlas -> Rees/strata -> vertex and conditional-sieve artifact chain. Each row now registers the exact artifacts it produces or consumes, and one stdlib-only auditor validates all five committed ledgers and the helper by hash and semantic scope. It explicitly preserves the 624 surviving rows as necessary numerical configurations, not realized candidates, and retains higher torsion and exceptional codimension-three packets. No symbolic or Macaulay2 replay was run. **Completed all-dimensional Segre provenance subset:** `PGS1--PGS3` now pin their three committed ledgers, shared implementation helper, and four Macaulay2 calibration sources.  Their Python verifiers previously rewrote generated artifacts on every ordinary run; default behavior now compares exact committed bytes and requires explicit `--write` for replacement.  A stdlib-only auditor checks all 84 transform regressions, the exact 270- and 2,160-row parameter-key domains, and the distinctions among complete Segre vectors, top-degree-only controls, uncomputed families, smooth generic first-Segre laws, and singular DVR-profile laws. No SymPy or Macaulay2 calculation was run. **Completed mixed-canonical artifact subset:** all ten committed `HC4MCP1--10` ledgers are now registered on their status rows together with the directly imported source files needed to interpret them. A stdlib-only auditor checks their exact bytes and semantic scope without importing SymPy, invoking Singular, launching a search, or rewriting an artifact. Static inspection confirms that the early modular breaks discard a chart only after unequal values give a valid characteristic-zero nonconstancy witness; agreements remain survivors for exact handling. `HC4MCP1--4` and `HC4MCP7--9` retain their declared finite boxes. `HC4MCP10` removes the coefficient and constant-direction bounds only for the 54 `HC4MCP6` resonance families; moving pivots, other supports, and longer words remain open. **Completed nonlinear clean-denominator static subset:** `HC4NHM13`, `HC4NHM15`, `HC4NHM18`, and `HC4NHM19` have no generated ledgers to register. Their checkers are self-contained; the two Singular-backed entry points require the executable and fail closed if it is missing. The notes already preserve the exact chain from conic-divisible exclusion through at-most-four-root double-conic closure and the unsaturated many-root warning, while the smooth-cubic degree packets `(2,7)`, `(3,6)`, and `(4,5)` remain open. Only the stale “next action” heading was relabeled historical. No CAS command was run. **Completed relative rank-two navigation subset:** the seven local proof-map notes `HC4RSD56--63` still exposed their discovery-time “what remains” and “next target” sections without saying that the targets were later closed. Each now identifies its historical stage and exact successor: `HC4RSD60` closes `[2,2]`, `HC4RSD63` closes `[3,1]`, and `HC4MR1` subsumes both in the all-degree auxiliary relative-nilpotent branch.  This is navigation cleanup, not a stronger claim; unrestricted `HC4` and `JC2` remain untouched. **Completed repeated-linear direct subset:** the `HC4DIR27` headline stopped at a three-packet lower-rank sextuple reduction even though later sections in the same canonical note synchronize those packets to one degree-five, order-one pure-cube scalar-parent resonance and `HC4DIR28` excludes that family as a collision source.  The current headline now matches the proved endpoint while retaining nonlinear factors, multiple repeated factors, multiplicity at least seven, and top-Hessian rank at most two as separate frontiers.  Its previously documented but unregistered generated artifact is now a software lock with a no-rewrite audit of the exact endpoint and the written UFD/DVR proof boundary.  No symbolic identities were rerun.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-HC4-RESIDUAL-AUDIT"
+      ],
+      "rationale": "The long completed-subset annotations are retained exactly. Only residual strata and unmet hypotheses justify new work.",
+      "id": "LEGACY-20260904-804"
+    },
+    {
+      "line": 936,
+      "text": "Recheck denominator extraction and localization before interpreting a Schur complement or moving kernel. **Completed historical-failure guard:** `HC4NHM21` already records the explicit lower-Smith counter-witness to unsaturated discriminant membership and correctly leaves the clean invariant elimination open.  Its checker now hash-pins the normal-layer helper it imports and has a cleanup-only mode that validates that provenance without replaying symbolic algebra.  This prevents helper drift from silently reviving the false unsaturated route; the wider denominator/localization packet review remains queued. **Completed committed Fitting-denominator subset:** the previously unregistered cube-torsion and fourth-power ledgers are now the explicit partial record `HC4QSE5`. Static review confirms that the fourth-power scanner's early exit is monotone: it fires only once all fifteen targets already lie in the current column span. The status and a stdlib-only auditor enforce the real boundaries instead: primitive rows are interpreted only on `D(nu)`, the scans do not cover proper finite-field extensions or prove a characteristic-zero support theorem, and all timed-out symbolic routes have mathematical conclusion `none`. The additional rational point is only a cube-to-fourth-power nilpotence jump, not a reduced Schur component. No Singular calculation or finite-field scan was rerun.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-HC4-RESIDUAL-AUDIT"
+      ],
+      "rationale": "The long completed-subset annotations are retained exactly. Only residual strata and unmet hypotheses justify new work.",
+      "id": "LEGACY-20260904-936"
+    },
+    {
+      "line": 956,
+      "text": "Recheck all “all degree” frontends for the exact hypothesis under which induction or recurrence closes. **Completed squarefree direct-filtration subset:** `HC4DIR2` is genuinely degree-free only under characteristic zero, top-Hessian generic rank three, and squarefree nonzero ternary Hessian determinant.  Its universal step is the written factorwise divisibility/negative-degree proof, not the checker's two sample determinant faces.  The stale status claim that an off-diagonal term was removed by a triangular change is corrected: the proof forces the assumed first nonzero term to vanish.  The documented committed identity artifact is now registered and has a no-rewrite, no-symbolic-replay audit path.  Rank at most two and the nonsquarefree locus remain open. **Completed diagonal/Meng--Yang subset:** `HC4FSD1--3` and `HC4MYGJ2` correctly separate degree-free written arguments from the committed bounded degree-4--8/order-1--12 discovery tables.  The latter are now source- and artifact-locked on the three results they actually regress, and their scope grid has a cleanup-only audit.  The artifact's old recommendation to control arbitrary lower layers is retained as historical provenance but is explicitly superseded by `HC4FSD3`; formal Meng--Yang solvability still does not imply polynomial termination or collision preservation.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-HC4-RESIDUAL-AUDIT"
+      ],
+      "rationale": "The long completed-subset annotations are retained exactly. Only residual strata and unmet hypotheses justify new work.",
+      "id": "LEGACY-20260904-956"
+    },
+    {
+      "line": 975,
+      "text": "Recheck modular searches for good-prime coverage and characteristic-zero reconstruction. <!-- status-consumer: HC4FF1 c659c03cbc63d15e --> **Completed collision-first finite-field subset:** the formerly narrative-only `GF(11)`/`GF(13)` campaign is now registered as `HC4FF1`. A cleanup-only audit pins all five artifacts and three generating scripts, reconstructs the exact 45,181,194-choice nonempty one/two-direction domain, checks the 96+32+128+144 selected dense-family keys, and requires all 800 support-prime outcomes to be unit with no timeout/error.  The open-problem ledger now explicitly forbids promoting this fixed-normalization, fixed-prime, sampled-support evidence to characteristic zero or unrestricted `HC4`; no search was rerun.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-HC4-RESIDUAL-AUDIT"
+      ],
+      "rationale": "The long completed-subset annotations are retained exactly. Only residual strata and unmet hypotheses justify new work.",
+      "id": "LEGACY-20260904-975"
+    },
+    {
+      "line": 1002,
+      "text": "Keep mixed/coisotropic Schur descent and direct degree-five residual packets open; do not summarize the packet library as unrestricted `HC(4)`.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-HC4-RESIDUAL-AUDIT"
+      ],
+      "rationale": "The long completed-subset annotations are retained exactly. Only residual strata and unmet hypotheses justify new work.",
+      "id": "LEGACY-20260904-1002"
+    },
+    {
+      "line": 1007,
+      "text": "Map each Lean theorem to the exact registry scope and list all arithmetic or geometric hypotheses that remain external.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1007"
+    },
+    {
+      "line": 1009,
+      "text": "Re-run the dependency-minimal formal targets before describing a result as formally verified.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1009"
+    },
+    {
+      "line": 1011,
+      "text": "Confirm external certificate URLs, prover identities, and refereed flags remain accurate.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1011"
+    },
+    {
+      "line": 1013,
+      "text": "Recheck paper theorem statements against current status and generated artifacts before rebuilding PDFs.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1013"
+    },
+    {
+      "line": 1015,
+      "text": "Keep a publication’s theorem, the repository’s independent replay, and a new derived corollary as three distinct evidence records.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1015"
+    },
+    {
+      "line": 1017,
+      "text": "Refresh literature claims only from primary sources and record the exact version/date when the distinction affects scope.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-FORMAL-PUBLICATION"
+      ],
+      "rationale": "Formal targets, external theorem versions, publication statements and independent replay require distinct scoped evidence; no bulk rebuild or web refresh occurs here.",
+      "id": "LEGACY-20260904-1017"
+    },
+    {
+      "line": 1022,
+      "text": "Verify every active README points to current canonical notes rather than a superseded handoff.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1022"
+    },
+    {
+      "line": 1024,
+      "text": "Replace obsolete operational instructions by short tombstones linking to the new route; preserve scripts and evidence.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1024"
+    },
+    {
+      "line": 1026,
+      "text": "Verify archived narratives are not canonical sources or active checkers.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1026",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Validated every registry canonical_source and checker path: no archive path is used as a canonical source or active checker. Historical source narratives retained at nonarchive paths still require their separate semantic review.",
+        "checks": [
+          "python3 scripts/audit_status.py: PASS mathematical status"
+        ],
+        "evidence": {
+          "MATH_STATUS.json": "35049e4298c58f0311de8f71ae97ec733a596722db8c41fbc13e0a50a94b5cc1",
+          "scripts/render_status.py": "84a4003ee286390aaabb6db399c3c93260722da1501cd04d88285b0b23dc118c"
+        }
+      }
+    },
+    {
+      "line": 1027,
+      "text": "Recheck archive manifests and hashes after any move.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1027",
+      "resolution": {
+        "outcome": "completed-at-snapshot",
+        "date": "2026-09-12",
+        "summary": "Verified all 18 preserved document snapshots, the former OP-EC-NEXT scope and both partial-review status baselines against the archive manifest; also verified all 871 replay command blocks survived the guide relocation unchanged.",
+        "checks": [
+          "python3 scripts/audit_cleanup_snapshot.py: PASS cleanup preservation"
+        ],
+        "evidence": {
+          "scripts/audit_cleanup_snapshot.py": "5e6d0bd87f3de887a62b54c069a2fadd5c907550ea54b12036eb02495e4f611c",
+          "archive/repository-cleanup-2026-09-12/MANIFEST.json": "7452c7e644e1d8d7f6f73af4ca88e0ba55b6a28fdc3640d3e96fef8516e206f7"
+        }
+      }
+    },
+    {
+      "line": 1028,
+      "text": "Keep historical script-input hashes unchanged when they document the code actually run; do not confuse them with current-source replay claims.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1028"
+    },
+    {
+      "line": 1030,
+      "text": "Add explicit historical labels to notes that still say “current,” “next,” or “open” after a later theorem closed the route.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1030"
+    },
+    {
+      "line": 1032,
+      "text": "Ensure `RESEARCH_TIMELINE.md`, `KNOWLEDGE_BASE.md`, programme READMEs, and process/failure ledgers agree with `MATH_STATUS.json` without becoming competing status authorities.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1032"
+    },
+    {
+      "line": 1038,
+      "text": "Every registry entry has a recorded semantic review outcome and every active checker has either a passing exact replay or a named bounded/blocked reason.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REGISTRY-SEMANTICS"
+      ],
+      "rationale": "Structural checks pass, but they cannot establish proof meaning, logical necessity, independent assurance or every checker mode. The semantic audit remains a separate obligation.",
+      "id": "LEGACY-20260904-1038"
+    },
+    {
+      "line": 1041,
+      "text": "Every complete negative search has exact domain, coverage, exception, and merge certificates plus at least one adversarial omission/duplication control.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-COVERAGE-AUDIT"
+      ],
+      "rationale": "The original checkbox records completed subsets; preserve them and audit remaining coverage without treating a subset as a universal completion.",
+      "id": "LEGACY-20260904-1041"
+    },
+    {
+      "line": 1044,
+      "text": "Every partial or bounded result exposes its first unproved gate in both canonical prose and registry scope.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-PARTIAL-GATES"
+      ],
+      "rationale": "All current partial entries are automatically discoverable. Their first missing gates still require source-level review, not regex-based theorem inference.",
+      "id": "LEGACY-20260904-1044"
+    },
+    {
+      "line": 1046,
+      "text": "Every mutable external input needed for replay is preserved by a sufficient exact projection or immutable source.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REPLAY-PROVENANCE"
+      ],
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "id": "LEGACY-20260904-1046"
+    },
+    {
+      "line": 1048,
+      "text": "All repaired checker and certificate hashes propagate through dependent artifacts and documented output digests.",
+      "disposition": "retained-review",
+      "actions": [
+        "WORK-REPLAY-PROVENANCE"
+      ],
+      "rationale": "Preserve historical input hashes and inspect sufficient projections. Existing paths and matching hashes do not establish every input or output is semantically sufficient.",
+      "id": "LEGACY-20260904-1048"
+    },
+    {
+      "line": 1050,
+      "text": "The generated status, discovery timeline, knowledge base, process atlas, failure ledger, and programme navigation agree with the final registry.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1050"
+    },
+    {
+      "line": 1052,
+      "text": "The final cheap suite passes; long calculations are either replayed with checkpoints or left as explicit actions without theorem promotion.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1052"
+    },
+    {
+      "line": 1054,
+      "text": "The closeout report distinguishes confirmed discoveries, corrected scripts/claims, historical immutable drift, current-work blockers, bounded misses, and genuinely new theorem-directed opportunities.",
+      "disposition": "maintained-check",
+      "actions": [
+        "WORK-NAVIGATION-INVARIANTS"
+      ],
+      "rationale": "Metadata, links, source hashes and preserved-history checks have an active lightweight command. This does not assert that the old whole-suite or semantic audit was rerun.",
+      "id": "LEGACY-20260904-1054"
+    }
+  ]
+}

@@ -16,7 +16,7 @@ remain at their existing paths as regression evidence. The
 both source and archived hashes.
 
 For the current programme, use the
-[fixed-rank Dixmier reduction](../../extended-geometry/FIXED_RANK_DIXMIER_REDUCTION.md),
-[marked-root degree ladder](../../extended-geometry/DC2_MARKED_ROOT_DEGREE_LADDER.md),
+[fixed-rank Dixmier reduction](../non-elliptic/extended-geometry/FIXED_RANK_DIXMIER_REDUCTION.md),
+[marked-root degree ladder](../non-elliptic/extended-geometry/DC2_MARKED_ROOT_DEGREE_LADDER.md),
 and [mathematical status](../../MATH_STATUS.json). The unresolved degree-nine
 experiment remains in the active tree.

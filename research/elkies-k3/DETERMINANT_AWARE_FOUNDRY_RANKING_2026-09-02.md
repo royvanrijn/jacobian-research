@@ -3,9 +3,9 @@
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK fd9549d1fcb2e9e7 -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Result
@@ -198,6 +198,11 @@ arithmetically excluded over `QQ`: the split-Clifford modular curve is
 of `X_0(37)` passes the mod-4 Cartan Frobenius test. It is retained as a
 geometric/local control, not an equation candidate. Future rankings must put
 this rational-marking screen ahead of equation cost.
+
+For determinant1236 the [exact candidate cover](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md)
+and its twelve fibre evaluations are already available. Its only remaining
+gate is the characteristic-zero identification of the cubic CM branch orbit;
+that would prove exclusion, not produce a positive equation handoff.
 
 ## Rank-jump coordinate
 

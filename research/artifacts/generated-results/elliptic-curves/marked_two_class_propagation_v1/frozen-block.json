@@ -1,0 +1,57 @@
+{
+  "boundary": "Retains full original atom dependencies and norm/square-equivalence circuits. Their earlier certificates are inherited, not recomputed. Geometry was already frozen independently; no carrier splits at the control, so field-square label matching is not reached. No historical exceptional points or oracle lifts are included.",
+  "circuit_archive_sha256": "cb60d13af1da29bd111ea535b2c9a7a7826550de8cd4da03de1fe263c1d2d2d5",
+  "circuits": [
+    {
+      "column": 6,
+      "member_sha256": "92d30218857c6020792e036fc18efb0ac9474c6aee37a87f7a033e48ecaa1397",
+      "principal_atom_count": 1676,
+      "retained_path": "artifacts/local/elliptic-curves/marked-two-class-v1/block-provenance/column_06_square_equivalence.json",
+      "source_member": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_06_factorization.json"
+    },
+    {
+      "column": 7,
+      "member_sha256": "908e634da9dd3b4638c8b264fc0deb97071ae99dbfdd56f3104cb78ff565f8d8",
+      "principal_atom_count": 1572,
+      "retained_path": "artifacts/local/elliptic-curves/marked-two-class-v1/block-provenance/column_07_square_equivalence.json",
+      "source_member": "artifacts/local/rank-jump-constructed-class-compaction-v1/column_07_factorization.json"
+    }
+  ],
+  "columns": [
+    6,
+    7
+  ],
+  "control_parameter": "3/17",
+  "generic_control_transport": {
+    "formula": "Xshort=u^2*Xcompact=36*x_original+3; Yshort=u^3*Ycompact=216*y_original+108*x_original",
+    "generic_classes_checked": 16,
+    "generic_ordinate_signs_relative_to_positive_control": [
+      -1,
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "short_scale_u": "289/2"
+  },
+  "schema": "marked-two-class.frozen-block.v1",
+  "source_bindings": {
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/covers.json": "a8218511b1ac1b2def5dafe9c7803ebbdb0d33a7a0ffffca1c8e33a090efca1f",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/generic.json": "b8ce5170aa69a31145e4faa48ed1f4e550a6390343f0e53816cf3242f448a153",
+    "artifacts/generated-results/elliptic-curves/rank_jump_constructed_class_compaction_v1.json": "dc82ce34d07078e4546cc2b9218b971d79a77dcfdf61d5432e38b50c76f04c64",
+    "artifacts/generated-results/elliptic-curves/rank_jump_constructed_class_half_ideal_v1.json": "c39c3698a87b5341929f7345ad77c0398c807004c0d29ccb823cbd8e1799105b",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_additional_strict_verification_v1.json": "f9ac9d48d542b914e621cb3acc1d58a6b22e13e20432d1382b267bf3459bc60c",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee"
+  }
+}

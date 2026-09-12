@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-12",
+  "base_revision": "d3c95f0068c81d4f00fa98d19c44dd03da449aa6",
+  "boundary": "Navigation snapshots copied from the working tree immediately before this cleanup. Concurrent principal28 research is preserved. This archive is not current mathematical authority.",
+  "files": [
+    {
+      "original_path": "README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/README.md.txt",
+      "sha256": "ceffb406332df8d0ce8bb8feafc70b53acaf8841383ab296dc47e584bd3bcd47"
+    },
+    {
+      "original_path": "AGENTS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/AGENTS.md.txt",
+      "sha256": "81d0f19937c2c0c931bc3e68a220f202e0f83698aaddd00007b2955697aa52e3"
+    },
+    {
+      "original_path": "research/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__README.md.txt",
+      "sha256": "7c58a13417169a129e1b76d0c73de437273022b0ba06f2a9f9546dfa861a5119"
+    },
+    {
+      "original_path": "research/KNOWLEDGE_BASE.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__KNOWLEDGE_BASE.md.txt",
+      "sha256": "e8b97fca53f2b69406dca40c2d89e8f325cf8da1f707e8457872f76c7e9eaa6f"
+    },
+    {
+      "original_path": "research/RESEARCH_TIMELINE.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__RESEARCH_TIMELINE.md.txt",
+      "sha256": "12e51dcac2a485a6b2388d2856701831eb23c8fa481c4a64596d876c8d0e0f71"
+    },
+    {
+      "original_path": "research/DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+      "sha256": "a7bc381cfd76a3ce02f750a51b7ace5c49d72d435a2604fb05b8d6cd123b3eb6"
+    },
+    {
+      "original_path": "research/RESEARCH_VALUE_REVIEW_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__RESEARCH_VALUE_REVIEW_2026-09-04.md.txt",
+      "sha256": "6a9718708174c59474a71ba214be81e5358f57f6e08a69cf029d1cc39e3fa94b"
+    },
+    {
+      "original_path": "research/REPRODUCE.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__REPRODUCE.md.txt",
+      "sha256": "59e92d3569cef3e4592b001be0cf0f8d3b5bd4fc8f4cdd41773876bcfdc8c38e"
+    },
+    {
+      "original_path": "research/elliptic-curves/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__README.md.txt",
+      "sha256": "a2c8448becb4fb7eb97765f75cb44cb0b70b2a110a2d1c2df82d0d0ac19577f7"
+    },
+    {
+      "original_path": "research/elliptic-curves/AGENTS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__AGENTS.md.txt",
+      "sha256": "8e509b8b31408d6141840a3682fda6a6236e6d93930c1287bb367c6a01860ad0"
+    },
+    {
+      "original_path": "research/elkies-k3/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__README.md.txt",
+      "sha256": "d9c2c727ae4294b185f030b5c486bef4e9201106a89533ed8bae0ddd4ec46540"
+    },
+    {
+      "original_path": "research/elkies-k3/AGENTS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__AGENTS.md.txt",
+      "sha256": "b8b8581ac329ea5b73563f63b0df6e7c947e9acb53d8c600793620d38c3dac26"
+    },
+    {
+      "original_path": "research/extended-geometry/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__README.md.txt",
+      "sha256": "46dfb1759a84d2b3ea10b46b2d6fe0d736c37cf106224a9f28057f3ddd1728f4"
+    },
+    {
+      "original_path": "research/plane-jc/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__README.md.txt",
+      "sha256": "7f3dec43ac9d85c938fa4e710047e6b7e18f93a3653c9fa8b283b96d33848329"
+    },
+    {
+      "original_path": "research/verified/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__verified__README.md.txt",
+      "sha256": "e28ba26768ef463ff5d696ee0ec8f6f764cb6e0119274ad79cc7ab714ee46ea0"
+    },
+    {
+      "original_path": "research/archive/elliptic-curves/EXTENDED_CACHE_RETENTION_GATE_2026-09-06_PRE_COMPLETION.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__archive__elliptic-curves__EXTENDED_CACHE_RETENTION_GATE_2026-09-06_PRE_COMPLETION.md.txt",
+      "sha256": "10b59175c9d132119034a058de5bd0bdd8df643ebb8aa51894ad866a6ed15f9f"
+    },
+    {
+      "original_path": "research/OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md.txt",
+      "sha256": "bf131f61a0b41ead08b398a26c3fd433bd0a0dbbe2492a13a20d21d1954f93f7"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/HIGH_RANK_CONSTRUCTION_AND_SEARCH_LEDGER_2026-09-10.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__HIGH_RANK_CONSTRUCTION_AND_SEARCH_LEDGER_2026-09-10.md.txt",
+      "sha256": "ca4b172078a0ef1a1ef38e01e7a2cc04cb395db005a652491ee1f1b1aa690b66"
+    },
+    {
+      "original_path": "research/elkies-k3/BISECTION_COLLISION_SEARCH.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__BISECTION_COLLISION_SEARCH.md.txt",
+      "sha256": "a2553bfe23c3a9d877fae59b1974cc40c96f52bcf73f7a2970b5d9488e99627c"
+    },
+    {
+      "original_path": "research/elkies-k3/H3_Q8_REAUDIT_2026-08-22.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__H3_Q8_REAUDIT_2026-08-22.md.txt",
+      "sha256": "15361e0d0c28346002ed62fd425559dfe83d30496bcfdf56e2d88478cfb255dd"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md.txt",
+      "sha256": "8931a3752091ee20a7049d745465f6545bc228c470277fa86b8ae4394d44ebae"
+    },
+    {
+      "original_path": "research/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md.txt",
+      "sha256": "10ebe4cca979e5df550b4e1f0688a8b41c3cc100cdbd50da2776ed9f204d860c"
+    },
+    {
+      "original_path": "research/scripts/verify_a4_sharp_selector_plane.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__scripts__verify_a4_sharp_selector_plane.py.txt",
+      "sha256": "45054677720ea557dd38268abb53f10e8403488446b20a31eba49f11fbf70e59"
+    },
+    {
+      "original_path": "research/scripts/verify_a4_conic_principal_obstruction.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__scripts__verify_a4_conic_principal_obstruction.py.txt",
+      "sha256": "49851b6d137373a889f25406c8f3fc9ce7aa96118b11855cbc7b2c01e98a1baa"
+    },
+    {
+      "original_path": "research/scripts/verify_a4_degree_twenty_line_selectors.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__scripts__verify_a4_degree_twenty_line_selectors.py.txt",
+      "sha256": "22a29a1595d0fbe8f2bd9aa621c07ecdcd010d09ae427e3df72d7e324bd17fab"
+    },
+    {
+      "original_path": "research/elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md.txt",
+      "sha256": "e0a0d9217c0b000d5dfe6fc12a0b95d5f156438d8b556dadae61c63aa3939996"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md.txt",
+      "sha256": "5e81e8988be03414add239869fc6884917789f907f5ebf181cfc000d7e0ec6d8"
+    },
+    {
+      "original_path": "research/plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_75_125_CARRIER_SPECIALIZATIONS.md.txt",
+      "sha256": "fb48591d6766cf72ef856b67d217d941258225ac9b5650ac99c05202142c675b"
+    },
+    {
+      "original_path": "research/plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md.txt",
+      "sha256": "b7acdd42ff387cd58b6915bbd212453c0aa548b3c6b08143683dc0ddd4852cb5"
+    },
+    {
+      "original_path": "research/plane-jc/F2_75_125_NONLINEAR_FORCING.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_75_125_NONLINEAR_FORCING.md.txt",
+      "sha256": "b9be7b82f3e1d1490c68d3d5c26e27931f46e8861524324319a38e3b6d53b5de"
+    },
+    {
+      "original_path": "research/plane-jc/F2_A6_SIMPLE_SPECTATOR_GLUING.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_A6_SIMPLE_SPECTATOR_GLUING.md.txt",
+      "sha256": "c9c4c637031884a328ffcf026c405e46886f43d8570bdb4d0c2cce91f0788f8c"
+    },
+    {
+      "original_path": "research/plane-jc/F2_MODIFIED_CHART_BRIDGE.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_MODIFIED_CHART_BRIDGE.md.txt",
+      "sha256": "692b3180359681b2ec41c01d94a71c5693dfc1cb686ff5bd47ad49be5c384845"
+    },
+    {
+      "original_path": "research/plane-jc/F2_MODIFIED_LAURENT_FAMILY.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_MODIFIED_LAURENT_FAMILY.md.txt",
+      "sha256": "e8f04706a0d82ef04412efa86080e73d56ffb091fbf90cbd505f6e61973a0443"
+    },
+    {
+      "original_path": "research/plane-jc/cas/verify_f2_modified_chart_bridge.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__cas__verify_f2_modified_chart_bridge.py.txt",
+      "sha256": "4933215016152cb1649b450edffe0f0abac132f681e8a04a6fc40e66bcc3d3e7"
+    },
+    {
+      "original_path": "research/plane-jc/cas/compile_f2_75_125_formal_homotopy.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__cas__compile_f2_75_125_formal_homotopy.py.txt",
+      "sha256": "1d5e58a70d68bde297b4ea1557221bc90a6cba7aa36f39eccd71feaa93df4a9a"
+    },
+    {
+      "original_path": "research/plane-jc/F2_BOUNDARY_HANDOFF.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_BOUNDARY_HANDOFF.md.txt",
+      "sha256": "57b72c54943ef2ccf7baa9eaa135a08ca364f10f138509733156e2d66690bb6a"
+    },
+    {
+      "original_path": "research/plane-jc/F2_OUTGOING_TERMINAL_TAIL.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_OUTGOING_TERMINAL_TAIL.md.txt",
+      "sha256": "3c60e0e5a27c2addf3932928edaac02df5ba6dde293eb25829bc27ba4c3194a1"
+    },
+    {
+      "original_path": "research/plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__plane-jc__F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md.txt",
+      "sha256": "14cc88cce613e7797e6ae9d9487f71215932c77825f4c1ab19f498f6c6e03e0f"
+    },
+    {
+      "original_path": "research/extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md.txt",
+      "sha256": "196e0e92306804121fe5df6faf66b563f2d7fdd037d29044f360fd0b1ad602e7"
+    },
+    {
+      "original_path": "research/extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__JELONEK_COEFFICIENT_COMPONENTS.md.txt",
+      "sha256": "d1267c4370b533808aba6825409424f8f279d9b8363b2d4111eee93e1f99a0e4"
+    },
+    {
+      "original_path": "research/extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__THREE_VARIABLE_GVC_TAGGED_LIFT.md.txt",
+      "sha256": "d42261c3287b222c90621783b7cdf5e3d9bb0a52d955ce748dc0d30164da1200"
+    },
+    {
+      "original_path": "research/scripts/research_gvc3_many_coherent_channels.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__scripts__research_gvc3_many_coherent_channels.py.txt",
+      "sha256": "a644b09b9026c9c4ce4cda63f0881c5bd3bc2e82e1898619a295ece5eee86ce7"
+    },
+    {
+      "original_path": "research/scripts/research_three_variable_gvc_tagged_lift.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__scripts__research_three_variable_gvc_tagged_lift.py.txt",
+      "sha256": "e686b67ad58668c1c868af02421eb2dba92ec83da7e58a0954a1468e38f2ed8d"
+    },
+    {
+      "original_path": "research/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__extended-geometry__GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md.txt",
+      "sha256": "027971b0a85b7c0bd74b4b6c3042d0c79c7c67abe4be4eebdb7e9e455b3a3b8c"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md.txt",
+      "sha256": "b511a58678bd7086b6cbf4087838d23b3516577d5e6924fcc9c264777bf04374"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__MW17_JUMP_V2_2026-09-04.md.txt",
+      "sha256": "194a0e96400067f03d91ef94127ffd4c1c17ab2736429dd97693f4fa8d2a45e5"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md.txt",
+      "sha256": "de9ad31001a5c9581d9f6a30d418695a86e4e90457822c446e2592b7f458d646"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md.txt",
+      "sha256": "e507d4666dec5159855a517d93a37dfa1f0d6b880d5e87f130b672913e8496f9"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__FERMIGIER_REPRODUCTION.md.txt",
+      "sha256": "ab1023e7455b070b5a3bf06fe52343e1a96269c2739a7d4cf06e91711609ee25"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__MESTRE_AFFINE_SECTION_MODULI.md.txt",
+      "sha256": "f1a23b51a74fc5f9c48976c25a9c96e8f17eaacd18f3480a2ef8e2a0aca32587"
+    },
+    {
+      "original_path": "research/elliptic-curves/notes/PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__notes__PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md.txt",
+      "sha256": "669fa4c0218e3bc7d7b020658df2bcde9de5be12b4b177815343bc0eeb026ac9"
+    },
+    {
+      "original_path": "research/elliptic-curves/cas/verify_mestre_fermigier_two_section_generic_rank13.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__cas__verify_mestre_fermigier_two_section_generic_rank13.py.txt",
+      "sha256": "c548a3c9febf37f3e8d8f92c857a50015ba87808c5a10815a63f3393c42498b8"
+    },
+    {
+      "original_path": "research/elliptic-curves/cas/verify_mestre_parent_and_label_audits.sage",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__cas__verify_mestre_parent_and_label_audits.sage.txt",
+      "sha256": "83720b2c122a0d715915a22ec4e1dd1811139b00f80ffada15df5dffb19aed63"
+    },
+    {
+      "original_path": "research/elliptic-curves/tests/test_mestre_fermigier_two_section_generic_rank13.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__tests__test_mestre_fermigier_two_section_generic_rank13.py.txt",
+      "sha256": "2df3dc1b08ba1c9e9dc627ef2484c95445a8f060b364483cc89c426b23d29db9"
+    },
+    {
+      "original_path": "research/elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__ORBIT42_EQUATION_LIFT.md.txt",
+      "sha256": "364ed68ca2bce517d4677bd4695bf97ef41a75c9d8f8cc9fc5a1c85f8c8ac9cf"
+    },
+    {
+      "original_path": "research/elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md.txt",
+      "sha256": "556de0f67dd697220479d9a6312fabcca164209b34a94531e067de14d52d0caf"
+    },
+    {
+      "original_path": "research/elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md.txt",
+      "sha256": "642ee2ab5029f2df07f589eb4aa375dbfef27752ec815fb89c39f4e278292b40"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md.txt",
+      "sha256": "ed06c0616d2bf5c54cf17c6003ec9f36417d0826d7bfb3eff3996b11245d9c47"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md.txt",
+      "sha256": "146ceabdd90d32e32428e520b77a9f902f74270a5b093c2a2e078667a55f1876"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md.txt",
+      "sha256": "dddd2f5f07160de48bda85a7dc6d8ae91dd6b980475378d862a890e91040fc8c"
+    },
+    {
+      "original_path": "research/elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md.txt",
+      "sha256": "444b33cbb8f564727b1283d91b0824a35e77bb21b221b6e7ffb618bad7730eb7"
+    },
+    {
+      "original_path": "research/elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md.txt",
+      "sha256": "3e5e786aae4339208489905b11696c2a8853faaca2166bcde33f905f24247c70"
+    },
+    {
+      "original_path": "research/elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md.txt",
+      "sha256": "228176dadc50afd7d3e7722bd3fed23a3c9cb68a3523050f1266bad2def9c724"
+    },
+    {
+      "original_path": "research/elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md.txt",
+      "sha256": "5f98e2b50c30a41eb25770e23db011ea883323133b90c82b09541a7e6ad3649f"
+    },
+    {
+      "original_path": "research/elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md.txt",
+      "sha256": "e51041873fb5be90398b0b458bcd940667173cc5d79d826e9e0c6657643cb01c"
+    },
+    {
+      "original_path": "research/elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md.txt",
+      "sha256": "a09e5a9a891a7ec391fd8468f680861a37fdfd3cbf7eaef38f6494d1de988f6a"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__build_arithmetic_first_marked_t_foundry.py.txt",
+      "sha256": "8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43"
+    },
+    {
+      "original_path": "research/artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__artifacts__generated-results__elkies-k3-arithmetic-first-marked-t-foundry-v1.json.txt",
+      "sha256": "794344a2255a49c0682fb58168037c52be13133c2892764d04f0892f825f0e54"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__README.md.txt",
+      "sha256": "d9015a510597f7cce48b51fae79c3fac238c373ee4ea814bcf69f3bb31664a54"
+    },
+    {
+      "original_path": "research/elliptic-curves/cas/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elliptic-curves__cas__README.md.txt",
+      "sha256": "fe68c83f1ccd9d6ff9080431f35435ebc44e988dd2e796f0cf24527ee2fc9b84"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/success-path/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__success-path__README.md.txt",
+      "sha256": "a7c7a96ad3b37d53051593cc4c4fc6bb5625d7a2b61fbef6682e8cbf4b66a085"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/success-path/ledger.json",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__success-path__ledger.json.txt",
+      "sha256": "3c9168f0f049a0c47ad7acb05ed3e435eecaf14ad7d2fe0359c0f44157e47860"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/success-path/run_stage.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__success-path__run_stage.py.txt",
+      "sha256": "f74426cb1d63f79161f4943b2fad89a5592d21367d8a16e00116fa3c4fb01830"
+    },
+    {
+      "original_path": "research/elkies-k3/data/k3-model/README.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__data__k3-model__README.md.txt",
+      "sha256": "a98662db1349c2c40a9021f9ea52ea5c1e86d3ea779e70329070b44cf341b17e"
+    }
+  ],
+  "previous_scope_sha256": "0604ee3c20c5ac794035042aa5d2e6a0e9206b724cfa4264cfa48b3b7f8d30d5",
+  "partial_review_baselines": [
+    {
+      "path": "archive/repository-cleanup-2026-09-12/LND_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "ece9b3134dbe96f1ee58577d5a5cd4f0a1e6ed5f09a0971d0e6ee85a40036af3"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/GVC_GAUSSIAN_DANIELEWSKI_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "ecb7c4c037297abb0af7c6cf42fb60db081d0a0f625a8791d4a281b84cdeba98"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/K3_BISECTION_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "2e79c0481343484770a60eee7ce62e80f632e49241a8c46a180ac99264230704"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/A4_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "9ed11647b3d2f0bff389069ba08d3af716c95b4b2de9254a9f1db5f26bffd936"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/R17_COVER_SELMER_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "f87d179700dd1ce779738260acc0eaa437d1b7165d139f32383d119fd9c17dcd"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/PLANE_F2_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "b6903e04685b2906e9a919ccd7fa8c809aaa340dc24e5229d93c9e744ca5460f"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/GEOMETRY_REMAINING_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "e56df90b02797f2278d7ac8b6391dfcf6b853077fa09efb7d2d103abf52e8705"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/GVC3_MINIMUM_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "5eaf026d836fbd9c374149a091a34a3b6d80ccf05154338b1801976ed5f7aa1a"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/EC_RETAINED_EXPERIMENTS_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "b30a824d9576e549ce18cf27dfdf75533991f9a3aab5cbc338ab3ec70b95617b"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/EC_FERMIGIER_MESTRE_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "2fb486844c21dc3075d46646889a3b4ec7a51e3230d1c44f33625a1fa6457090"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/EC_K3_CORRIDOR_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "3c2f6b045f5c1b788cac92fa30729bcc07821b90fbb0f2965319552c28a37068"
+    },
+    {
+      "path": "archive/repository-cleanup-2026-09-12/EC_K3_ARITHMETIC_STATUS_BEFORE_SOURCE_REVIEW.json",
+      "sha256": "c8de34949440fcce8ed1842a577e391a212d33dd5f6fb2b66d4c73c961330a61"
+    }
+  ]
+}

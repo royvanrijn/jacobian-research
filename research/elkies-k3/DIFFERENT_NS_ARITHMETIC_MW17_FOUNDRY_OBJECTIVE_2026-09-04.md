@@ -4,9 +4,9 @@ Date: 2026-09-04.
 
 Status: **OPEN**.
 
-This was historically called Lane B.  In the current three-lane roadmap it is
-Lane C, with the first-class curve-398/curve-302 construction-recovery work
-occupying Lane B.
+This different-NS objective was historically called Lane B, then Lane C.
+Curve302's [alternative MW17 parent](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
+is now complete. Lane labels do not define a current construction queue.
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
 <!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
@@ -18,10 +18,10 @@ occupying Lane B.
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK fd9549d1fcb2e9e7 -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
 
@@ -141,8 +141,8 @@ that these are all fourteen rational points on the genus-two quotient,
 mapping to `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G` on `618f1`. It also resolves
 both rational fixed fibers: one comes from the rational discriminant-`-3` CM
 pair, while the other comes from a quadratic discriminant-`-24` CM pair and
-has no rational point upstairs. Thus the remaining covering descent starts
-with twelve explicit non-fixed rational quotient points.
+has no rational point upstairs. The subsequent candidate calculation below
+already evaluates all twelve non-fixed rational quotient points.
 
 Exact Jacquet--Langlands accounting gives
 `Jac(C_1236) ~ 618a1 x ... x 618f1`, all six factors of rank one. The
@@ -188,7 +188,9 @@ rows without using rootless-frame data in its arithmetic priority. It
 propagates six exact exclusions and the already-realized determinant-948
 positive control. The remaining arithmetic research queue has 820 rows: 60
 from the old rootless-MW17 subcatalogue and 760 not yet screened at the NS
-stage. Twenty-one currently have coarse genus at most two. That coarse genus
+stage. The planner records an unproved rational non-CM point as `null`, a certified
+exclusion as `false`, and an exact positive witness as `true`.
+Twenty-one currently have coarse genus at most two. That coarse genus
 is a prioritization diagnostic only; it is not the genus of the stable
 marking curve and proves neither a rational point nor a rational marking.
 
@@ -312,9 +314,9 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
   — literal mod-five stable kernels, exact `X_H(50)`/`X_H(75)` curves, and two
   rootless-MW17 arithmetic exclusions.
 - [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md)
-  — exact genus-six stable marked curve, low-genus quotient tower, two rational
-  CM controls, complete fourteen-point genus-two quotient, and the degree-two
-  rational-lift obstruction.
+  — exact genus-six marked curve, fourteen rational quotient points, ten
+  rational CM points and the candidate cover; only its particular CM
+  branch-orbit identification remains open.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
   — marking decisions and empty equation-agent handoff.
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)

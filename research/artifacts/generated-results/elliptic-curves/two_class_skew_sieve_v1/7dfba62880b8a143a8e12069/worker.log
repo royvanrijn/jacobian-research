@@ -1,0 +1,2 @@
+SKEW_SETUP 7dfba62880b8a143a8e12069 {'A': 262144, 'B': 1, 'norm_triangle_upper_bound': '4267767948820278178392313796228475782', 'lattice_cells': 524289, 'area_exponent': 18}
+SKEW_DONE 7dfba62880b8a143a8e12069 attempted 524289 relations 0 deficiency 1905 NOT_SERIOUS_RELATION_DENSITY

@@ -1,0 +1,105 @@
+{
+  "schema": "marked-carrier.arithmetic-closure-evidence.v1",
+  "archive": "artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/evidence.zip",
+  "archive_sha256": "5c6330d8d0bfd3225757fce2fc69b4bb6dfb16ab8e7fd9f45a6f85e36a40dd17",
+  "archive_bytes": 1969031,
+  "members": [
+    {
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/definition.json",
+      "sha256": "fbd4c9964ceaedafee8a3989a971a90f65ed39eb26b7956f25099d7023c96579",
+      "bytes": 490934
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/independent-replay.json",
+      "sha256": "2e9f5eeeaea7a12a5fc5008969257da9ec0535fb7bd5386f5b216a5424e1cda5",
+      "bytes": 1063
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/protocol.json",
+      "sha256": "a88f0305905548ef361a0440bbf9e8aba36954bcb78fc43fea42a8609734fbc0",
+      "bytes": 1174
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/result.json",
+      "sha256": "5d658c542fa668ec31d3ac9544322dee50881a5ccc9fe6b9fc629852a7f45270",
+      "bytes": 1903
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/frozen_dependency_continuation_v1/setup-failure.json",
+      "sha256": "bef84bc074d8d52fc6b79c7944867d4eda4c9f896fee6114db699888ed8ab82a",
+      "bytes": 668
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/nonsplitting.csv",
+      "sha256": "2b51898d1b1e48973895457bba03195e5c05a40c6e9afa56d42282a091d2b056",
+      "bytes": 142780
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_carrier_closure_v1/result.json",
+      "sha256": "ad2493253336520ffee6c7096d3f25fd70a9767f625db3a31625c063b1f1ec88",
+      "bytes": 6278132
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/carriers.json",
+      "sha256": "4996078b9796c0c29f2ce033519d0639ee44be17655cb74c09c554a86c535b58",
+      "bytes": 2916441
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/frozen-block.json",
+      "sha256": "feea396ffdc62f5638dff2c9670a8525ad54baad4ceaa26267c698f7c0316281",
+      "bytes": 2845
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/geometry.json",
+      "sha256": "b8a8063ce04179aef71d89ea1fa684d8738696b2c712f991a15e0dda959e445e",
+      "bytes": 432804
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/marked_two_class_propagation_v1/independent-replay.json",
+      "sha256": "3b27b8326bab8571a93c49b4e34f4102c364a2b4dc68da19331ee9f7b367bbfd",
+      "bytes": 79061
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_reference_additional_strict_verification_v1.json",
+      "sha256": "f9ac9d48d542b914e621cb3acc1d58a6b22e13e20432d1382b267bf3459bc60c",
+      "bytes": 4718336
+    },
+    {
+      "path": "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json",
+      "sha256": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee",
+      "bytes": 3919
+    },
+    {
+      "path": "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md",
+      "sha256": "dd5f5172bb3aae91236ff183b53e2c622a0b6fb732cb7d366e5c33fa016958ee",
+      "bytes": 13320
+    },
+    {
+      "path": "elliptic-curves/rank-jump/FROZEN_DEPENDENCY_CONTINUATION_PROTOCOL.json",
+      "sha256": "541488e59a2f5227da09c2427dfe12d2fd74ceb6a77cb8c9e4f519422fb66902",
+      "bytes": 1174
+    },
+    {
+      "path": "elliptic-curves/rank-jump/check_frozen_dependency_continuation.sage",
+      "sha256": "8cfc7a98f4f71ea84d3a6f0c0e60bc4a67ec2e22de66ef7aa6be1ccd908c9a28",
+      "bytes": 9025
+    },
+    {
+      "path": "elliptic-curves/rank-jump/diagnose_marked_carrier_nonsplitting.py",
+      "sha256": "3005eb73db657765c768332c5dc20b7778ef362c8daedd3ce42fd63085790345",
+      "bytes": 7913
+    },
+    {
+      "path": "elliptic-curves/rank-jump/finish_frozen_dependency_continuation.py",
+      "sha256": "81d570a7f114530375f923f817f02ac58e55c6f18678fa35702beb0dac39375c",
+      "bytes": 11463
+    },
+    {
+      "path": "elliptic-curves/rank-jump/verify_frozen_dependency_continuation.py",
+      "sha256": "c3fb3590a1ab76cbcea35ff26a2847a45618acdf4f424a4adf739af96a1a3235",
+      "bytes": 8053
+    }
+  ],
+  "restoration": "Paths are relative to research/. Restore only in an empty replay checkout, never over a live shared repository.",
+  "boundary": "Archives exactly the inputs and new mathematics needed for the closure and continuation checks, including the failed Sage setup source. Earlier full number-field ideal/compaction proofs are inherited from the separately retained original archives. No historical exceptional points or new search outputs are included."
+}

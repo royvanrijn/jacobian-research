@@ -1,0 +1,775 @@
+{
+  "schema": 1,
+  "authority": "MATH_STATUS.json",
+  "purpose": "Suggested actions and review gates; no mathematical status or compute authorization is conferred.",
+  "actions": [
+    {
+      "id": "WORK-KDESC",
+      "kind": "research",
+      "area": "core",
+      "title": "Find a descent receiver beyond the failed quadratic gauge",
+      "target": "OP-KDESC",
+      "claims": [
+        "OP-KDESC"
+      ],
+      "sources": [
+        "archive/non-elliptic/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md"
+      ],
+      "next_step": "Specify an invariant compiler or correspondence/torsor receiver that survives generic Tschirnhaus changes; state its descent datum before constructing equations.",
+      "done_when": "An exact descent theorem with effective gluing, or a new obstruction covering the proposed receiver.",
+      "prerequisites": "The generic degree-at-least-five obstruction and hidden-stabilizer repair already close the old compiler loophole. Target-local polynomial extension and all-rank projective lifts have separate gates.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-KDESC": "1f2c7ed29a768061"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-KCOMP",
+      "kind": "research",
+      "area": "core",
+      "title": "Make a complexity obstruction independent of the compiler",
+      "target": "OP-KCOMP",
+      "claims": [
+        "OP-KCOMP"
+      ],
+      "sources": [
+        "archive/non-elliptic/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md"
+      ],
+      "next_step": "Identify an invariant functorial under every field-versal Keller realization and test the known upper-bound constructions against it.",
+      "done_when": "A universal lower bound, with a matching realization if an exact minimum is claimed.",
+      "prerequisites": "Template exclusions and vertical defects do not prove global minima; keep Keller complexity distinct from resolvent degree.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-KCOMP": "d2e080efd2dde572"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-KMOD",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Close the first global gluing gate for stable moduli",
+      "target": "OP-KMOD",
+      "claims": [
+        "OP-KMOD"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/STABLE_KELLER_MODULI_PROBLEM.md"
+      ],
+      "next_step": "For the quartic target, assemble the side-center curves, bigraded conductor pushout and normalized graph Hilbert polynomial; specify the flat integral model.",
+      "done_when": "Normalization/Stein algebra commutes with the required reduced base changes, followed by a represented local functor with its equivalence relation.",
+      "prerequisites": "The represented marked core and marked receiver are available. They do not yet give the ambient quotient; more inequivalent families alone will not supply it.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-KMOD": "8c8103eef217ea1f"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-KMON",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Separate the first proper-simple action obstruction",
+      "target": "OP-KMON",
+      "claims": [
+        "OP-KMON"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md"
+      ],
+      "next_step": "Fix one low-index PSL2 action and compare boundary, inertia, genus, units and exact action masks under each realization category.",
+      "done_when": "An exact realization or exclusion for the named faithful transitive action and category.",
+      "prerequisites": "Keep existential, smooth-affine, absolute and field-versal spectra separate. Relative Gassmann examples do not settle absolute realization.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-KMON": "84d85b77d9f7ae8c"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-SIC2-B33",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Resolve a remaining dense two-pair SIC component",
+      "target": "OP-SIC2-B33",
+      "claims": [
+        "OP-SIC2-B33"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md"
+      ],
+      "next_step": "Choose an unspecialized normalized non-null component or a remaining generic rank-two Hurwitz chart; retain its border factors and later-moment conditions.",
+      "done_when": "A fixed multiplier with a certified nonzero tail, or an all-orders safety theorem on the full stated component including boundaries.",
+      "prerequisites": "Support sizes through nine are already closed. Pure-moment vanishing is not nullcone equality, and finite moment checks do not establish SIC.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-SIC2-B33": "690ddcb13eafdb3f"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-GVC3-MIN",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Attack a mechanism outside the closed one-profile minimum",
+      "target": "OP-GVC3-MIN",
+      "claims": [
+        "OP-GVC3-MIN",
+        "GVC3D10F5G"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md",
+        "archive/non-elliptic/extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "next_step": "Select a precise unclosed chart: characteristic-zero promotion of a pairwise-distinct four-channel chart, or the five-channel residual D!=0 boundary/main A*B!=0 chart with its excluded projective faces. The exact D=0 closure and normal lengths 12 and 18 are completed inputs.",
+      "done_when": "An exact lower-degree witness or a complete characteristic-zero exclusion of the specified component; a global minimum needs every remaining mechanism.",
+      "prerequisites": "Degree twelve exists; the one-profile phase-square architecture and harmonic cubic cases are closed. Three modular unit ideals are not a characteristic-zero proof. The independent-linear quartic repair is also closed; the old tagged construction target was settled by GVC3HC.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-GVC3-MIN": "5c00fcbdc7ae276d",
+        "GVC3D10F5G": "46aebb1065fc9dbb"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-GVC2-RP",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Reduce auxiliary rank in nonseparable quadraticization",
+      "target": "OP-GVC2-RP",
+      "claims": [
+        "OP-GVC2-RP"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md"
+      ],
+      "next_step": "Design an ordinary-Laplacian quadratic lift of a nonseparable Image/Mathieu instance preserving its mixed obstruction, and count the auxiliary variables.",
+      "done_when": "An exact polarization/transport identity with the required mixed moments and an improved rank bound.",
+      "prerequisites": "Binary GVC is closed. The canonical one-pair completion fails its second pure moment; repeating that completion will not address this gate.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-GVC2-RP": "346da3485ccaf8e0"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-CR",
+      "kind": "research",
+      "area": "core",
+      "title": "Prove the residual contact-resultant arithmetic bound",
+      "target": "OP-CR",
+      "claims": [
+        "OP-CR"
+      ],
+      "sources": [
+        "archive/non-elliptic/cancellation/CONTACT_RESULTANT.md"
+      ],
+      "next_step": "Use the existing prime-factor and short-interval reductions on the residual composite staircase starting at r=9, rather than another unrestricted scan.",
+      "done_when": "A theorem covering every residual (m,r) in the stated range, or an exact counterexample.",
+      "prerequisites": "The first eight fixed-r columns are complete. Retain the m>=1001 and N=(m+1)r+1 hypotheses and the stated BHP threshold.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-CR": "d3ecceb419f1ff3d"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-CCDM",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Identify the first intrinsic filtered moduli obstruction",
+      "target": "OP-CCDM",
+      "claims": [
+        "OP-CCDM",
+        "CSK4"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md"
+      ],
+      "next_step": "Compare the decorated-normalization map on reduced arcs with the completed coefficient schemes; separate reduced branches, embedded thickness and the optimal filtered trivialization.",
+      "done_when": "A precise branch/intersection classification or a first intrinsic class proved not to algebraize, at its stated filtration.",
+      "prerequisites": "The ordinary Artin left-right quotient vanishes. One-face normal classes do not establish full jet nonsplitting; the old FC/LR-Rees/LR-II routes are folded here. Exact rational seed-trivializer degrees are already known. Full source-cutoff profiles remain modular; their rational promotion alone would not settle two-sided or higher-order algebraization.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-CCDM": "0604e7b723ecefcd",
+        "CSK4": "9bfaba861b230376"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-GLDC",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Reduce seven-term support candidates before enumeration",
+      "target": "OP-GLDC",
+      "claims": [
+        "OP-GLDC"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md"
+      ],
+      "next_step": "Use support and leading-torus obstructions to define a small exact shard above the six-term exclusions; include gauge compactification and boundary coverage.",
+      "done_when": "A certified seven-term witness or a complete exclusion of the explicitly defined new shard.",
+      "prerequisites": "The lower bound is seven, not an attained minimum. All 74 degree-two support profiles are closed; the huge raw coefficient count is not an executable plan.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-GLDC": "0407ecc3376e69a8"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-LR-NE",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Construct the proper induced Isom closure",
+      "target": "OP-LR-NE",
+      "claims": [
+        "OP-LR-NE"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/COMPLEXITY_FILTERED_CONTACT.md"
+      ],
+      "next_step": "Build the marked normalized incidence-cover compactification and prove unique DVR specialization/deck rigidity before reconstructing left-right transformations.",
+      "done_when": "A finite proper clean Isom correspondence with the required reconstruction and base-change statements.",
+      "prerequisites": "The formal or generic correspondence alone does not give a proper global extension.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-LR-NE": "8a316d275f0108fd"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-RITT",
+      "kind": "research",
+      "area": "geometry",
+      "title": "Pass from closed first jets to the coupled filtered complex",
+      "target": "OP-RITT",
+      "claims": [
+        "OP-RITT"
+      ],
+      "sources": [
+        "archive/non-elliptic/extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md"
+      ],
+      "next_step": "Specify the universal commuting and braid cells and their relative obstruction totalization, retaining characteristic and filtration labels.",
+      "done_when": "A full filtered obstruction theorem or a certified higher-stage obstruction, with formal-to-algebraic hypotheses explicit.",
+      "prerequisites": "First Postnikov and rotated half-braid cases already have exact results; cut-six nonsplitting and the rotated split cases must not be conflated.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-RITT": "6dfaf8a2b17c46e1"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-SUSP",
+      "kind": "research",
+      "area": "core",
+      "title": "Derive boundary hypotheses from Keller geometry",
+      "target": "OP-SUSP",
+      "claims": [
+        "OP-SUSP"
+      ],
+      "sources": [
+        "archive/non-elliptic/cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md"
+      ],
+      "next_step": "For double-line, triple-line or zero cubic symbols, derive the boundary-minimal witness predicates or the needed S2/local-CM/Cartier conditions.",
+      "done_when": "A Keller-compatible global witness satisfying all eight predicates, or a theorem deriving the missing hypotheses on the stated class.",
+      "prerequisites": "Squarefree leading-different formal tails are closed. Local boundary classification does not settle arbitrary cubic maps or arbitrary three-variable base change.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-SUSP": "15ad439686377d97"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-HC4-SCHUR",
+      "kind": "research",
+      "area": "hessian",
+      "title": "Resolve polynomial termination for a remaining moving pivot",
+      "target": "OP-HC4-SCHUR",
+      "claims": [
+        "OP-HC4-SCHUR"
+      ],
+      "sources": [
+        "archive/non-elliptic/HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md"
+      ],
+      "next_step": "Choose a nonconstant mixed two-by-two Schur pivot or the remaining polynomially moving resonance case; couple termination to the global collision condition.",
+      "done_when": "A polynomial global collision or a theorem excluding the complete stated pivot stratum.",
+      "prerequisites": "Affine planes and graph degree at most four are closed, as is the corrected auxiliary relative pencil. Formal normal-form solvability for every plane trace is not polynomial termination.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-HC4-SCHUR": "e97066af05f8a94b"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-HC4-D5",
+      "kind": "research",
+      "area": "hessian",
+      "title": "Close a residual direct-quintic normal-cone gate",
+      "target": "OP-HC4-D5",
+      "claims": [
+        "OP-HC4-D5"
+      ],
+      "sources": [
+        "archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md"
+      ],
+      "next_step": "Select the codimension-three rank-two h4 restriction, the nonsquarefree sigma3=16 row, or a remaining codimension-two torsion layer, with all incidence and saturation conditions.",
+      "done_when": "An exact collision or a full residual-stratum exclusion in characteristic zero.",
+      "prerequisites": "Squarefree rank-three top symbols are closed in all degrees. Absence of a constant symmetric determinant-preserving direction does not exclude nonlinear or moving recharting.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-HC4-D5": "01258ee8c7f2da37"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-EC-NEXT",
+      "kind": "research",
+      "area": "elliptic-curves",
+      "title": "Design a prospective rank-jump test from completed evidence",
+      "target": "OP-EC-NEXT",
+      "claims": [
+        "OP-EC-NEXT",
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907"
+      ],
+      "sources": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md"
+      ],
+      "next_step": "State a new arithmetic or coverage hypothesis, freeze the fresh-family roster and target quarantine, and specify a finite exposure and independent point-certificate plan.",
+      "done_when": "A predeclared prospective protocol and, only after separately scoped execution, exact independent-point evidence for any enlarged lower bound.",
+      "prerequisites": "Curve302 parent recovery and calibrated V3 amplification are complete; rank32 remains open. A new search needs an explicit finite budget, and a lower bound is not an exact rank. The frozen48-fibre record-scale campaign is complete at2352 certified boxes with zero gains; its11760 adaptive cap is not remaining work.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-EC-NEXT": "50b9aeeb557b4df9",
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971"
+      }
+    },
+    {
+      "id": "WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "kind": "research",
+      "area": "elkies-k3",
+      "title": "Close an arithmetic marking gate before equation work",
+      "target": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "claims": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "sources": [
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
+      ],
+      "next_step": "Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate.",
+      "done_when": "An exact marked rational source or obstruction; a positive handoff must include full rational NS, primitive nef rootless U and seventeen saturated rational sections.",
+      "prerequisites": "Local splitting, a coarse arithmetic quotient or a formal branch does not imply a fully marked rational K3. The stronger carrier/pullback objective remains additional.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6a9cd04e00dcdaad"
+      }
+    },
+    {
+      "id": "WORK-EC-RANK-JUMP-MECHANISM-20260910",
+      "kind": "research",
+      "area": "elliptic-curves",
+      "title": "Obtain one fresh independently certified dependency-to-point transfer",
+      "target": "OP-EC-RANK-JUMP-MECHANISM-20260910",
+      "claims": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910",
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912",
+        "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912",
+        "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912",
+        "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912",
+        "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912",
+        "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912",
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912"
+      ],
+      "sources": [
+        "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md",
+        "elliptic-curves/rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md",
+        "elliptic-curves/rank-jump/MARKED_TWO_CLASS_PROPAGATION_2026-09-12.md",
+        "elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md",
+        "elliptic-curves/rank-jump/TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md",
+        "elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md",
+        "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md"
+      ],
+      "next_step": "Resolve the proposed commissioning resource rule, parameterize the existing adaptive small-representative constructor without fixed reference dimensions or arithmetic data, and freeze its executable policy. Meter3/17 end to end before numeric fresh-fibre budgets, then run the eight already frozen inputs without replacement, with at most two independently new classes lifted per fibre. Run isolated generic-only V3 with matched allowances and compare sealed combined subgroups.",
+      "done_when": "At least one fresh fibre supplies an explicit new principal dependency, a fully verified strict class outside its generic16, an exact blind rational lift and an independent generic16-plus1 certificate. After both outputs seal, separately certify or leave UNKNOWN its complementarity to matched-endpoint V3. A bounded panel without such a witness retains every failure and leaves the transfer milestone UNKNOWN. An infinite parameter theorem and ordinary ideal-class increments are separate later endpoints.",
+      "prerequisites": "Principal28 and Curve302 degree-two carriers are certified, but their common pencil does not explain the jump. Selected radical composita do not determine minimum ancestry; the skew relation pilot supplied no new independent relation. The two fixed MW16-05 covers now lift without a point oracle, but generic-only V3 supplies both as well; a parameter criterion and full construction-cost advantage remain unresolved. The simultaneous-splitting theorem is now verified, including an effective finite-reduction neighbourhood refinement. The first full-frame norm10/14 traversal stops at2000000 nodes with both shells incomplete:182 exact genus-zero bisections all miss rational splitting at the control,73 residuals split generically, and candidate171 is UNKNOWN. Preserve the182 equations, exact nonsplitting progression, all failed receipts and original budgets; no pairing or fresh-fibre stage has passed its prerequisites. The final carrier diagnostic closes this branch: all182 extensions are distinct and remain nonsplit under every generic translation; pairing cannot repair a missing lift. A complete coefficientwise continuation of column6 has now been defined without exceptional points and independently checked. Its valuation pattern(2,1,1) above twelve geometric good parameters prevents a point-class interpretation over Q(t); any base making this particular word a point class has genus at least5. This does not justify a higher-genus search. Preserve the full1676/1572 atom words and do not carry specialized ideal columns across varying fields. The stronger closure is now proved: a uniform resultant-defined finite prime set confines all eligible locally soluble specializations of the fixed column6 word to finitely many genus5 twists. Faltings gives finiteness, with no effective list or useful bound. The proof packet includes the expanded definition, prior Bezout certificate,105 integer scalar guards,1693 exact resultant circuits and independent verification. The reusable object is the adaptive constructor; its output word is allowed to change. Column7 remains untested. The frozen eight-input preflight and128 equation identities are verified. Its3884 timing receipts total3202.922 wall seconds but omit some preparation and verification; the complete reference cost remains unknown. All nine cases are NOT_STARTED. Do not call the historical subtotal or18.401-second recovery a complete constructor allowance. The proposed commissioning and matched-budget rule still awaits the resource answer, and the generic constructor adapter is not yet implemented.",
+      "compute": "new-compute",
+      "reviewed_claims": {
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "2df6d7e1ea7b9710",
+        "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "6cf30e028a790fb1",
+        "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912": "a170da1eccd83d2b",
+        "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912": "565b1e1c8d99e546",
+        "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912": "68ecb62b3fbba931",
+        "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912": "5b11f3aea3cb164f",
+        "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912": "23db051da77c1a47",
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "e72b80b5f41d0813"
+      }
+    },
+    {
+      "id": "WORK-REGISTRY-SEMANTICS",
+      "kind": "review",
+      "area": "core",
+      "title": "Review proof meaning beyond metadata validation",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "scripts/audit_status.py"
+      ],
+      "next_step": "Review a bounded set of high-risk elliptic-curve and supporting K3 claims for exact title/scope, logical dependencies, checker purpose, prose-only evidence and assurance flags; record outcomes per claim.",
+      "done_when": "Each reviewed claim has a sourced semantic outcome and any correction has propagated to its consumers. Metadata PASS alone does not complete this task.",
+      "prerequisites": "Start from the existing retrospective completed subsets and current registry audit; do not assume a checker default mode covers all modes.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-PARTIAL-GATES",
+      "kind": "maintenance",
+      "area": "core",
+      "title": "Keep every partial result’s first missing gate current",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "knowledge/partial_reviews.json",
+        "MATH_STATUS.json"
+      ],
+      "next_step": "The active EC/K3 partial-result source review is complete. After a partial claim or reviewed source changes, review its surviving obligation and later results, then update that specific review and regenerate navigation.",
+      "done_when": "Every active partial entry has a fresh source-level record with its exact first missing gate, input boundary and scoped evidence; check-navigation enforces coverage.",
+      "prerequisites": "A review records what remains unproved; it does not complete the theorem or authorize a missing calculation. Archived programme reviews remain historical.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-REPLAY-PROVENANCE",
+      "kind": "review",
+      "area": "core",
+      "title": "Package sufficient replay inputs and output digests",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "REPRODUCE.md",
+        "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md"
+      ],
+      "next_step": "Audit elliptic-curve/K3 primary certificates and mutable external inputs for sufficient local projections, replay mode, source versus output hashes and documented digests.",
+      "done_when": "Each selected claim can be replayed from its preserved sufficient inputs; missing projections remain explicit and hashes change only through the owning producer.",
+      "prerequisites": "Existing software-lock paths pass the current metadata audit. This does not establish semantic sufficiency or byte-for-byte reproducibility of every external input. MW17-jump-v2 retains historical raw chunks, while amended-runtime base chunks are absent; recovering compatible inputs requires identity review, not automatic regeneration.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-COVERAGE-AUDIT",
+      "kind": "review",
+      "area": "geometry",
+      "title": "Retain exact coverage and adversarial controls",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "knowledge/lessons.json"
+      ],
+      "next_step": "Audit remaining complete negative-search claims for exact domain keys, symmetry quotients, exceptions and merge rules; reuse the recorded completed coverage audits.",
+      "done_when": "Every selected complete-search claim has a coverage certificate and an omission/duplication control, without expanding its mathematical domain.",
+      "prerequisites": "Do not rerun a large search to reconstruct coverage already recoverable from committed shards.",
+      "compute": "none",
+      "reviewed_claims": {},
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-FORMAL-PUBLICATION",
+      "kind": "review",
+      "area": "formal",
+      "title": "Align formal and publication evidence with exact scopes",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "archive/non-elliptic/formal/README.md",
+        "archive/non-elliptic/papers/README.md"
+      ],
+      "next_step": "Map formal theorem names, external hypotheses and paper statements to current claims; record immutable primary-source versions and review provenance.",
+      "done_when": "Each selected formal/publication claim has a precise theorem mapping and independently supported assurance fields; required formal replays are separately budgeted.",
+      "prerequisites": "Publication, local replay and a derived corollary are distinct records. Do not infer formal verification from a Python metadata check.",
+      "compute": "none",
+      "reviewed_claims": {},
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-NAVIGATION-INVARIANTS",
+      "kind": "maintenance",
+      "area": "core",
+      "title": "Keep lookup, history and action coverage current",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "KNOWLEDGE_BASE.md",
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt"
+      ],
+      "next_step": "After a result changes, review affected work items and method records, regenerate navigation, and run the metadata-only navigation checks.",
+      "done_when": "Current claims, source links, replacement edges, preserved history and generated registers pass their checks; any semantic or long-replay work is still named separately.",
+      "prerequisites": "Rendering must not approve stale reviewed fingerprints. A historical running or blocked label is not a live process observation.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-K3-REPLAY-TRIAGE",
+      "kind": "review",
+      "area": "elkies-k3",
+      "title": "Reconcile the old K3 replay queue with later closures",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md"
+      ],
+      "next_step": "Compare the old seven-fibre, alternate-bisection, long lattice/glue, 63917-class and Niemeier replay items against current claims, modes and certificates before selecting any replay.",
+      "done_when": "Each inherited replay has a current exact target, existing coverage evidence and either a supersession or a finite checkpointed proposal.",
+      "prerequisites": "Old 08f72/1183a/098fc blocked-current labels describe September 4 snapshots. They do not authorize restarting or touching current workers.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-QUARTIC-REPLAY",
+      "kind": "replay",
+      "area": "geometry",
+      "title": "Package the deferred generic-quartic downstream replay",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt"
+      ],
+      "next_step": "Identify the rebuilt first-jet input, downstream output and sufficient exact projection; estimate the smallest independent replay before scheduling it.",
+      "done_when": "A separately authorized replay verifies the downstream mathematical payload and refreshes dependent digests through its producer.",
+      "prerequisites": "The historical multi-million-bit discriminant/division replay was stopped for cleanup-only scope; it remains unscheduled here.",
+      "compute": "bounded-replay",
+      "reviewed_claims": {},
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-H3-Q6-PACKAGING",
+      "kind": "replay",
+      "area": "elkies-k3",
+      "title": "Preserve the sufficient H3-Q6 intermediate projection",
+      "target": null,
+      "claims": [
+        "EC-K3-H3-Q6"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
+      "next_step": "Identify the three exact inputs consumed by derive_h92_q6_child_q8_corrected2cover_qq.sage and inspect whether a sufficient compact projection is already retained.",
+      "done_when": "A self-contained projection and independent replay reproduce the stated H3-Q6-to-q8 payload with unchanged proof meaning.",
+      "prerequisites": "The theorem remains at its recorded status. Rebuilding a missing intermediate chain is an explicitly scoped replay calculation, not a cleanup command.",
+      "compute": "bounded-replay",
+      "reviewed_claims": {
+        "EC-K3-H3-Q6": "177cd6e614c8b8e0"
+      }
+    },
+    {
+      "id": "WORK-K3-MARKING-REVIEW",
+      "kind": "review",
+      "area": "elkies-k3",
+      "title": "Review external full-marking theorem inputs",
+      "target": null,
+      "claims": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
+      ],
+      "next_step": "Inspect the exact X0(37) rational-point theorem and marked-K3 period/Clifford implication used for NS0031, retaining source versions and hypotheses.",
+      "done_when": "A scoped independent review documents both external inputs and the checker implication; any replay has a declared mode and budget.",
+      "prerequisites": "NS0024 and NS0031 stay outside the rational-source queue under the current obstructions; local and geometric controls remain useful.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6a9cd04e00dcdaad"
+      }
+    },
+    {
+      "id": "WORK-QUOTIENT-TRANSPORTS",
+      "kind": "review",
+      "area": "elkies-k3",
+      "title": "Reconcile unresolved fibre quotient transports",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
+      ],
+      "next_step": "Match the historical 54 untransported fibres against current exact transport records; propose a small remaining cohort only after identifying which dimensions are still unknown.",
+      "done_when": "Every reconciled fibre has a sourced saturated transport or an explicit unknown. Historical top-tranche completions are preserved.",
+      "prerequisites": "Do not turn the old count into a current census without comparison; displayed quotients are not full Mordell-Weil quotients.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-LOW-GENUS-GATES",
+      "kind": "review",
+      "area": "elkies-k3",
+      "title": "Separate timeout, normalization and quotient-class gates",
+      "target": null,
+      "claims": [],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md"
+      ],
+      "next_step": "Review the two V4 rank timeouts separately, then identify missing infinity/bad-reduction charts and the full involution/2-Selmer lattice prerequisite for nonzero quotient classes.",
+      "done_when": "Each selected gate has a current scoped obligation or closure; independent character and singular-normalization replays are proposed only where still needed.",
+      "prerequisites": "The historical screen is 62 complete plus two timeouts. Zero-class exclusion and a bounded CRT box do not prove a positive class or a global normalization theorem.",
+      "compute": "none",
+      "reviewed_claims": {}
+    },
+    {
+      "id": "WORK-MOMENT-SCHEMES",
+      "kind": "review",
+      "area": "geometry",
+      "title": "Audit saturation and characteristic in moment arguments",
+      "target": null,
+      "claims": [
+        "OP-SIC2-B33",
+        "OP-GVC3-MIN"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "archive/non-elliptic/extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+        "archive/non-elliptic/extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md",
+        "archive/non-elliptic/extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md"
+      ],
+      "next_step": "Continue the remaining moment/Fitting review from the completed degree-ten D-fibre audit: preserve the distinction between support gcds, nilpotent lengths, the written local unit identity and unsolved residual charts. Do not replay the completed support subsets.",
+      "done_when": "Each reviewed argument states its exact characteristic, saturation, scheme thickness and multiplier/quantifier boundary.",
+      "prerequisites": "Finite moments and nullcone tests are different; complete support subsets in the old audit must not be recomputed.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-SIC2-B33": "690ddcb13eafdb3f",
+        "OP-GVC3-MIN": "5c00fcbdc7ae276d"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-DEFORMATION-BOUNDARIES",
+      "kind": "review",
+      "area": "geometry",
+      "title": "Preserve filtered and algebraization boundaries",
+      "target": null,
+      "claims": [
+        "OP-CCDM",
+        "OP-RITT"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "archive/non-elliptic/extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md",
+        "archive/non-elliptic/extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md"
+      ],
+      "next_step": "Review the remaining Ritt cotangent and coefficient-moduli steps for omitted obstruction stages and formal-to-algebraic promotion.",
+      "done_when": "Each selected statement identifies its filtration, coefficient scheme and exact algebraization hypothesis.",
+      "prerequisites": "The ordinary Artin quotient repair is already recorded; it does not erase filtered or boundary-decorated moduli.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-CCDM": "0604e7b723ecefcd",
+        "OP-RITT": "6dfaf8a2b17c46e1"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-PLANE-GLOBAL-GATES",
+      "kind": "review",
+      "area": "plane-jc",
+      "title": "Keep local plane certificates behind the global gates",
+      "target": null,
+      "claims": [
+        "OP-PLANE",
+        "PF2NF1",
+        "PF2SG1"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "archive/non-elliptic/verified/SUPPORT_SATURATION_PATHS.json",
+        "archive/non-elliptic/plane-jc/NEXT_DEGREE_FRONTIER.md",
+        "archive/non-elliptic/plane-jc/F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md",
+        "archive/non-elliptic/plane-jc/F2_75_125_NONLINEAR_FORCING.md",
+        "archive/non-elliptic/plane-jc/F2_A6_SIMPLE_SPECTATOR_GLUING.md"
+      ],
+      "next_step": "Audit the remaining conductor, infinity/pole and actual braid/meridian packages against their matching global family. Start from the completed carrier classification and nonlinear circuit; the regular order-16 jet fails 50 target equations, and the old simple-spectator transposition models are already superseded.",
+      "done_when": "Every reviewed local statement exposes its remaining global gluing or compactification obligation; any global theorem supplies the actual data.",
+      "prerequisites": "The plane programme remains parked. A bounded local chart census or endpoint matching does not prove JC(2).",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-PLANE": "cc4138b362602964",
+        "PF2NF1": "acf301f85df9017a",
+        "PF2SG1": "c03d12ec118e8b73"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-HC4-RESIDUAL-AUDIT",
+      "kind": "review",
+      "area": "hessian",
+      "title": "Audit only the remaining HC4 denominator strata",
+      "target": null,
+      "claims": [
+        "OP-HC4-SCHUR",
+        "OP-HC4-D5"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "archive/non-elliptic/HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+        "archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md"
+      ],
+      "next_step": "Compare residual scalar/rank-one/rank-two and repeated-factor packets with the completed pivot, localization and characteristic-zero audits before proposing new work.",
+      "done_when": "Each remaining stratum has a precise denominator/saturation partition and a characteristic-zero proof obligation; all-degree wording carries its hypotheses.",
+      "prerequisites": "The retrospective records many completed split-linear and squarefree cases. Nonempty leading packets and modular unit ideals are not unrestricted exclusions.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-HC4-SCHUR": "e97066af05f8a94b",
+        "OP-HC4-D5": "01258ee8c7f2da37"
+      },
+      "programme_status": "archived"
+    },
+    {
+      "id": "WORK-SEARCH-EXPOSURE",
+      "kind": "provenance",
+      "area": "elliptic-curves",
+      "title": "Keep historical exposure and new protocols separate",
+      "target": null,
+      "claims": [
+        "OP-EC-RANK-JUMP-MECHANISM-20260910"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md"
+      ],
+      "next_step": "Recover historical exposure only from contemporaneous manifests or logs; report any irrecoverable denominator as unknown and use a new frozen roster for future comparisons.",
+      "done_when": "Every quoted rate has its own exposure, timeout policy, eligibility definition and historical/prospective classification.",
+      "prerequisites": "Public hit counts and a later prospective roster cannot reconstruct the original discoverers' effort.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "2df6d7e1ea7b9710"
+      }
+    },
+    {
+      "id": "WORK-CURVE302-PROVENANCE",
+      "kind": "provenance",
+      "area": "elliptic-curves",
+      "title": "Retain the original-construction provenance unknown",
+      "target": null,
+      "claims": [
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY"
+      ],
+      "sources": [
+        "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
+        "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md"
+      ],
+      "next_step": "If a new primary public construction source appears, compare its exact family, parameter and section map with the public curve and recovered alternative parent.",
+      "done_when": "The original discoverers' construction is identified by a precise attributable source, or remains UNKNOWN.",
+      "prerequisites": "The alternative MW17 parent and its primitive 17+14 displayed split are complete. Reconstructing them again cannot recover unpublished provenance; no outreach is authorized.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY": "f2b5fd05a821379e"
+      }
+    }
+  ]
+}

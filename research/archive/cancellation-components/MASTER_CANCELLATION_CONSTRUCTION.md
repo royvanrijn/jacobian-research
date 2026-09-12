@@ -253,9 +253,9 @@ factor of (13) give Galois-conjugate maps.  The displayed fields are:
 
 The arithmetic status of (13) is no longer maintained in this construction
 archive.  The canonical overview is
-[ARITHMETIC.md](../../cancellation/ARITHMETIC.md), with the fixed-row local
+[ARITHMETIC.md](../non-elliptic/cancellation/ARITHMETIC.md), with the fixed-row local
 theorem and its exact limitation isolated in
-[FIXED_R_NEWTON_RAMIFICATION.md](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+[FIXED_R_NEWTON_RAMIFICATION.md](../non-elliptic/cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
 The component proofs remain in
 [PARAMETER_IRREDUCIBILITY.md](PARAMETER_IRREDUCIBILITY.md),
 [PARAMETER_DISCRIMINANT.md](PARAMETER_DISCRIMINANT.md), and

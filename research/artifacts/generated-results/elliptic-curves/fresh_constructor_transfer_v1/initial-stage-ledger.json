@@ -1,0 +1,133 @@
+{
+  "boundary": "These are unrun cases, not preparation timeouts or no-class outcomes.",
+  "records": [
+    {
+      "id": "control",
+      "parameter": "3/17",
+      "role": "separate commissioning control",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-01",
+      "parameter": "27/4",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-02",
+      "parameter": "-29/4",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-03",
+      "parameter": "18/17",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-04",
+      "parameter": "-4/19",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-05",
+      "parameter": "32/3",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-06",
+      "parameter": "-17/14",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-07",
+      "parameter": "-7/17",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    },
+    {
+      "id": "fresh-08",
+      "parameter": "4/11",
+      "role": "prospective frozen input",
+      "stages": {
+        "arithmetic_preparation": "NOT_STARTED",
+        "class_construction": "NOT_STARTED",
+        "combined_subgroup": "NOT_STARTED",
+        "ordinary_ideal_classes": "NOT_STARTED",
+        "rank_gain": "NOT_STARTED",
+        "rational_lifting": "NOT_STARTED",
+        "v3": "NOT_STARTED"
+      }
+    }
+  ],
+  "schema": "fresh-constructor-transfer.stage-ledger.v1",
+  "status": "NOT_STARTED"
+}

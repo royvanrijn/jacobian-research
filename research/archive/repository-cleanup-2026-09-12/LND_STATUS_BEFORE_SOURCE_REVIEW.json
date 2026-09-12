@@ -1,0 +1,722 @@
+[
+  {
+    "id": "LND-RZF",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Radical finite-fiber theorem for slice-LND ideal images",
+    "scope": "Let k be algebraically closed of characteristic zero, B=k[x,s], D=partial_s, and I a radical zero-dimensional ideal. Then D(I) is a Mathieu--Zhao subspace. More strongly, if f^m lies in D(I) for every m>=1, then g*f^m lies in D(I) for every g and every m>=1. Zero-constant integration identifies membership with equality of primitive values on each vertical fiber; the one-variable polynomial moment lemma forces f to vanish identically on every fiber containing two points. LND-ZDF extends this to arbitrary zero-dimensional ideals, LND-MCF closes positive-s-degree monic carriers, and LND-NDD closes the normalized repeated degree-drop carrier. The checker verifies a six-point reduced complete intersection, the generic membership kernel in a fixed degree window, and powers through order twelve; those bounded computations are regressions, not the all-order proof.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/verify_lnd_radical_slice_fibers.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2d300d9d13eb41a598e390791984f86b5dd5a9cb39a28b9e8637a568ec394078",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-MCF",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Monic-carrier finite-residual theorem for slice-LND images",
+    "scope": "Let k be algebraically closed of characteristic zero, B=k[x,s], D=partial_s, and I=qJ, where q is monic of positive s-degree and J=B or B/J has finite length, with no reducedness assumption. Then D(I) is a Mathieu--Zhao subspace. If q has two distinct roots over the algebraic closure of k(x), primitive evaluation and the one-variable moment lemma force every pure-power seed to be zero. If q has one root, q=(s-alpha(x))^d; translation reduces to t^d, and primary decomposition of J shows that off-carrier components force vertical-line vanishing while on-carrier components acquire linearly growing local order. Hence every fixed mixed multiplier enters D(I) eventually. Together with LND-ZDF and LND-NDD, this leaves only more complicated nonmonic leading-coefficient divisors, local-slice plinth saturation, and nonslice LNDs open in this program. The checker replays two nonreduced length-two residual charts for q=s^2 through order twelve; the all-order proof is written.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-RZF",
+      "external: one-variable polynomial moment lemma",
+      "external: primary decomposition for zero-dimensional ideals"
+    ],
+    "checker": "scripts/verify_lnd_radical_slice_fibers.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2d300d9d13eb41a598e390791984f86b5dd5a9cb39a28b9e8637a568ec394078",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "monic positive-s-degree carrier/residual couplings as live LND counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-ZDF",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Arbitrary zero-dimensional theorem for slice-LND ideal images",
+    "scope": "Let k be algebraically closed of characteristic zero, B=k[x,s], D=partial_s, and J any zero-dimensional ideal. Then D(J) is a Mathieu--Zhao subspace. For a primary component Q at P, either Q contains a polynomial slice s-phi(x), so D(Q)=B, or every Q-element has zero s-derivative at P and pure membership forces f(P)=0; local order then proves eventual mixed membership. Components on distinct x-fibers are patched by Hermite interpolation. If one x-fiber contains several support points, reduction to the radical interval-moment theorem forces x-a to divide f, and powers enter every primary component on that fiber. This removes all carrier-free finite residual schemes, including nonreduced ones, from the counterexample search. The checker replays both primary branches through order twelve; the all-order proof is written.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-RZF",
+      "external: primary decomposition for zero-dimensional ideals",
+      "external: formal implicit function theorem in an Artin local quotient",
+      "external: Hermite interpolation"
+    ],
+    "checker": "scripts/verify_lnd_radical_slice_fibers.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2d300d9d13eb41a598e390791984f86b5dd5a9cb39a28b9e8637a568ec394078",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "carrier-free nonreduced finite schemes as live slice-LND counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-NDD",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Normalized repeated nonmonic degree-drop theorem",
+    "scope": "Let k be algebraically closed of characteristic zero, B=k[x,s], D=partial_s, p=xs-1, and I=x^c p^d J for c>=0 and d>=1, where J=B or B/J has finite length supported at (0,0). Then D(I) is a Mathieu--Zhao subspace. The canonical primitive at the rational root s=1/x defines the support weight w(f)=min_j(v_x(f_j)-j). Polynomiality of every pure-power quotient and the one-variable moment lemma force w(f)>=1, while root multiplicity forces p^(d-1) to divide f. For every fixed g, both the p-order and x-support weight of g*f^m then grow linearly; the fixed x-content loss does not affect eventual entry into J. The exact bounded compiler tests (c,d)=(0,1),(0,2),(1,1), three primary residual schemes, 256 sparse seeds, and six multipliers; it finds 58 pure-prefix survivors and no bounded mixed-tail obstruction. The search is a regression/candidate audit, not the all-order proof.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_nonmonic_degree_drop.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:44bdf7b80218b003f3b043075fef51ca9a4b364e03574e3834aad3b47c22b21a",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the carriers x^c*(xs-1)^d with residual support at the degree-drop point as live LND counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-PLS",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Bounded plinth-divisor ideal-image search",
+    "scope": "For the linear locally nilpotent derivation D=x*partial_y+y*partial_z of Q[x,y,z], the local slice y/x has plinth element x and 2*x*z-y^2 is invariant. Exact rational linear algebra constructs D(I_n) degree by degree for five homogeneous ideals crossing x=0. Among 45 monomial/binomial homogeneous seeds, pure powers through six leave 13 survivors; every noncontrol survivor is visibly divisible by x, and none gives a mixed-tail obstruction through exponents four to six for g in {1,x,y,z}. This is a bounded negative search and support-cone diagnostic, not an all-order theorem or a proof of the LNED conjecture for this derivation. It redirects the counterexample search to nonhomogeneous triangular LNDs or reducible plinth divisors.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-NDD"
+    ],
+    "checker": "scripts/search_lnd_plinth_ideal_images.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:fc01b3e53d751d9b3fbb1dd43793e73c56a54cd4460b90ab31c614acdd122337",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-RPL",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Exact bounded linear and nonlinear reducible-plinth ideal-image search",
+    "scope": "For D_r=x*(x-1)*partial_y+y^r*partial_z on Q[x,y,z], r=1,2, assign weights wt(x)=0, wt(y)=1 and wt(z)=r+1. Each D_r lowers weight exactly by one, so membership in D_r(I) at fixed weight is an exact finite module calculation over Q[x]. Five coupled ideals leave respectively fourteen and seventeen six-power survivors, all divisible by x*(x-1), with no bounded mixed-tail obstruction. The grading-breaking perturbation D=x*(x-1)*partial_y+(y^2+x)*partial_z is handled by normalizing primitives modulo the kernel k[x,3*x*(x-1)*z-y^3-3*x*y], lifting a bounded primitive over Q[x], and testing its class in the finite kernel image modulo I. Across eight ideals, including three non-weight-homogeneous jet charts, and 350 mixed-weight seeds, it leaves 48 chartwise survivors representing seven distinct forms; all are divisible by x*(x-1), and none has a bounded mixed-tail obstruction for g in {1,x,x-1,y,z}. Individual membership decisions are exact, but the exponent ranges are bounded, so this is not an all-order theorem or counterexample. It redirects the search to the crossing plinth uv=0 for D=uv*partial_y+(y^2+u)*partial_z on four variables.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PLS",
+      "external: Singular module standard bases over Q[x]"
+    ],
+    "checker": "scripts/search_lnd_reducible_plinth.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:1941abf8eab866be078939273f6218c93001206b0e1d2aba2b681238fc62b407",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-CPL",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Exact bounded crossing-plinth ideal-image search",
+    "scope": "For D=u*v*partial_y+(y^2+u)*partial_z on Q[u,v,y,z], the plinth equation u*v has intersecting components and W=3*u*v*z-y^3-3*u*y is invariant. Leading-weight normalization modulo Q[u,v,W], a Singular module lift over Q[u,v], and a finite quotient/kernel-image calculation decide every tested membership exactly. Five zero-dimensional crossing ideals and 956 sparse seeds, including quadratic base coefficients, invariant combinations, and images of ideal generators, leave 177 chartwise six-power survivors representing 36 distinct forms. Every survivor is divisible by u*v, no bounded mixed-tail obstruction occurs for g in {1,u,v,y,z}, and every tested seed not divisible by u*v fails by its square. The exponent ranges are bounded, so this is neither an all-order theorem nor a counterexample. It redirects the search to a genuinely nonprincipal plinth ideal, beginning with D=u*partial_x+v*partial_y.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-RPL",
+      "external: Singular module standard bases over Q[u,v]"
+    ],
+    "checker": "scripts/search_lnd_crossing_plinth.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:0393332d7088ba441fcb038bb1730db1502454b323d10012fd768e5f7204b3d8",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-NPL",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Exact bounded nonprincipal-plinth ideal-image search",
+    "scope": "For D=u*partial_x+v*partial_y on Q[u,v,x,y], the kernel is Q[u,v,w] with w=u*y-v*x and the plinth ideal is nonprincipal. Exact homogeneous module lifts over Q[u,v] and finite quotient closure under u,v,w decide each tested membership. Five zero-dimensional ideals meeting (u,v), 1,055 sparse seeds, and pure powers through six leave 494 chartwise survivors representing 100 distinct forms. Every survivor lies in the base-support cone (u,v)A, no bounded mixed-tail obstruction occurs for g in {1,u,v,x,y,w}, and every tested seed outside (u,v)A fails its first power. The exponent windows are bounded, so this is not an all-order theorem or counterexample. It redirects the search to positive-dimensional residual modules along the nonprincipal plinth locus.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-CPL",
+      "external: Singular module standard bases over Q[u,v]"
+    ],
+    "checker": "scripts/search_lnd_nonprincipal_plinth.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:2b6baf22e36aa785d0e5bb4a1ee77e75b1b08bf5a56c8535919fa8a6b493217f",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-NPF",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Nonprincipal plinth-power saturation LNED theorem",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field, D=u*partial_x+v*partial_y, and p=(u,v). The grading by total (u,v)-degree gives Im(D) intersect p^N=D(p^(N-1)) for every N>=1: low-degree components of any primitive are kernel elements and can be subtracted. The published rank-at-most-two four-variable linear-derivation theorem makes Im(D) Mathieu-Zhao. If p^q is contained in an ideal I and powers of f eventually lie in D(I), then primality of p forces f into p; hence g*f^m lies in Im(D) intersect p^m eventually and therefore in D(p^(m-1)), which is contained in D(I) for m>=q+1. Thus D(I) is Mathieu-Zhao for every I with p contained in radical(I). This includes I=(u,v,ell(x,y)) for every nonzero linear form ell and all nilpotent plinth-supported thickenings. It does not treat ideals such as (x), whose invariant image modulo I has positive module rank.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "external: Gupta-Ahuja-Kour rank-at-most-two linear image theorem, DOI 10.1080/00927872.2023.2224885",
+      "LND-NPL"
+    ],
+    "checker": "scripts/search_lnd_positive_dimensional_plinth.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e0026734577f4082b8556727054537ab13774f371baa045e1f4c510195aa53a9",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-PDP",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Exact bounded positive-dimensional nonprincipal-plinth search",
+    "scope": "For D=u*partial_x+v*partial_y, five ideals retain a free y-direction: (u,v,x) and four nilpotent or tilted plinth jets. The images of u,v,w=u*y-v*x are nilpotent in each quotient, so the kernel-image span and each membership decision are exact without truncating y-degree. Among 1,055 seeds, pure powers through six leave 289 chartwise survivors representing 75 distinct forms. Every survivor lies in (u,v)A, every tested seed outside that cone fails its first power, and no bounded mixed-tail obstruction occurs for g in {1,u,v,x,y,w}. The checker verifies the free-line coefficient-functional identity through total degree eight and the plinth-filtration identity through total degree seven. The exponent windows are bounded regressions, while LND-NPF independently proves all five ideals safe to every order.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-NPF",
+      "external: Singular module standard bases over Q[u,v]"
+    ],
+    "checker": "scripts/search_lnd_positive_dimensional_plinth.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:e0026734577f4082b8556727054537ab13774f371baa045e1f4c510195aa53a9",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-PCD",
+    "kind": "reproduction",
+    "state": "partial",
+    "title": "Exact bounded principal-conductor valuation-face search",
+    "scope": "For A=Q[u,v,x,y], D=u*partial_x+v*partial_y, and I=(x), the invariant ring Q[u,v,w] with w=u*y-v*x maps modulo I to Q[u,v,u*y]. Hence a primitive residue lies in the invariant image exactly when every monomial u^a*v^b*y^c satisfies a>=c. This gives an exact, untruncated membership test. Among 1,055 seeds, pure powers through six leave 48 survivors, all divisible by u; no bounded mixed-tail obstruction occurs for g in {1,u,v,x,y,w}, and every failed seed has pure-prefix length at most one. Of the survivors, 43 are y-free, thirteen are invariant, and four touch the slope-zero face. Every survivor lies in u*ker(D)[x], and LND-PCG proves all 48 safe to all orders. The checker also verifies over Q(sqrt(-15)) an exact failure of the proposed square gate: the homogenized face p(t)=2*t-1+(sqrt(-15)/3)*(6*t^2-6*t+1) gives f,f^2 in D((x)) but f^3 not in D((x)). Thus it is a finite-prefix obstruction, not an LNED counterexample. It verifies the local-slice identity T(D(x*y*a))=(u*y)*a used by the exact two-branch criterion and the aligned/crossed identities D(u*x*a)=u*D(x*a), D(u*y*a)=u*D(y*a). For q_1=u*x+w, normalization of A/(q_1) gives the exact support criterion a>=2*c; seventeen seeds survive powers four through six, all in u*ker(D)[q_1], with no bounded mixed-tail obstruction. For q_(1,1)=u*v*x+w, the exact cone is a>=2*c and b>=c; eight seeds survive powers four through six, all in u*v*ker(D)[q_(1,1)], with no bounded mixed-tail obstruction. The exponent windows remain bounded; the independent all-order conclusions are LND-PMI, LND-MLT, LND-GTR, LND-LIC, LND-RRL, and LND-TPR.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-NPF",
+      "external: Singular module standard bases over Q[u,v]"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "reproduction",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-PCG",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Principal-conductor strict and local-slice polynomial cone theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, I=(x), and B=ker(D)=k[u,v,w] with w=u*y-v*x. Define omega(f) as the minimum of a-c over support monomials u^a*v^b*x^d*y^c. For every fixed g, g*f^m lies in D(I) for all sufficiently large m if ord_u(f)>deg_y(f), or if ord_v(f)>deg_x(f) and omega(f)>0. These cases follow from finite Neumann-series inversions using zero-constant x- or y-integration. More generally, the conclusion holds for every f=u^r*F with r>=1 and F in B[x]. In the local slice s=x/u, write g=sum b_j*s^j over B_u and F^m=sum c_(m,k)*u^k*s^k. Termwise integration has summands b_j*c_(m,k)*u^(r*m-j-1)*x^(j+k+1)/(j+k+1), which are polynomial and divisible by x for large m. This larger normal form subsumes the strict cones and proves all 48 survivors of LND-PCD safe to all orders. LND-PMI proves that the eventual pure-power hypothesis always forces this normal form.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PCD"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-PMI",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Moving-linear principal-ideal LNED theorem",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field and D=u*partial_x+v*partial_y. Then D((ell(x,y))) is Mathieu-Zhao for every nonzero linear form ell. More strongly, eventual membership f^m in D((ell)) implies eventual mixed membership g*f^m in D((ell)) for every fixed g. After reducing to ell=x and embedding A in B_u[x], B=k[u,v,w] with w=u*y-v*x, exact membership is T(h) in u*A for T(h)=x^(-1)*integral_0^x h dt. If the lowest u-order of f is r=-q<=0, its leading face F is divisible by z^q for z=w+v*x, while membership of the powers forces T(F^m) to be divisible by z^(q*m+1). In the z-coordinate this is the vanishing of integral_0^w Phi(t)^m dt for every sufficiently large m. Applying the one-variable polynomial moment lemma to Phi^M for one sufficiently large M forces Phi=0, a contradiction. Thus r>=1, so f lies in u*B[x], and LND-PCG supplies the mixed tail. A simultaneous GL_2 change gives every nonzero ell. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PCG",
+      "external: one-variable polynomial moment lemma (Sun-Wang 2024, Lemma 2.2)"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-MLT",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Moving-linear thickening LNED theorem",
+    "scope": "For A=k[u,v,x,y], D=u*partial_x+v*partial_y, every nonzero linear form ell(x,y), and every d>=1, D((ell^d)) is Mathieu-Zhao. After reducing to ell=x, D(x^d*A) is contained in x^(d-1)*A, so eventual pure-power membership forces x to divide f. LND-PMI gives a primitive P_m in x*A for each eventual mixed target g*f^m, while x|f makes that target divisible by x^m. If P_m=x^r*a and D(P_m) is divisible by x^r, reduction of D(P_m)=r*u*x^(r-1)*a+x^r*D(a) modulo x^r forces x|a. Iterating from r=1 through d puts P_m in x^d*A. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PMI"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "moving-linear multiplicity, including (x^2), as the next principal-conductor obstruction"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-GTR",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Generic two-root principal-carrier theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, B=ker(D)=k[u,v,w] with w=u*y-v*x, and L=Frac(B). If a nonzero carrier q in A, viewed in the local-slice polynomial ring L[x], has at least two distinct roots over the algebraic closure of L, then the eventual-power radical of D(q*A) is zero. Indeed, a primitive q*a_m of f^m vanishes at two distinct roots alpha,beta, so integral_alpha^beta f(t)^m dt=0 for every sufficiently large m. Applying the one-variable polynomial moment lemma to f^M for one sufficiently large M forces f=0. Consequently D((x*y)) and D((x*(x-1))) are Mathieu-Zhao. For q=x*y the exact criterion is T(h)/(u*y) in A, and the checker verifies T(D(x*y*a))=(u*y)*a in the local slice. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PMI",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the reducible carriers (x*y) and (x*(x-1)) as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-LIC",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Linear invariant-content principal-carrier theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, and B=ker(D)=k[u,v,u*y-v*x]. For every a in {u,v} and ell in {x,y}, D((a*ell)) is Mathieu-Zhao. It suffices by simultaneous exchange to treat (u*x) and (u*y). Since u is invariant, D(u*x*A)=u*D(x*A) and D(u*y*A)=u*D(y*A). In the aligned case, eventual pure membership and LND-PMI force f=u*F with F in B[x]; the local-slice proof of LND-PCG accepts the fixed multiplier g/u because f^m clears its one extra u-denominator. In the crossed case, pure membership gives u|f and the y-version of LND-PMI gives f=v*F with F in B[y]. Injectivity of B[y]/(u)=k[v,w,y] into A/(u)=k[v,x,y] under w->-v*x yields F=u*H, hence f=u*v*H. In the slice t=y/v, the factors u^(m-1)*v^m clear all fixed coefficient and substitution denominators in the primitive of g*f^m/u, which is polynomial and divisible by y for large m. Multiplication by u completes both cases. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PCG",
+      "LND-PMI"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the aligned and crossed invariant-content carriers (u*x) and (u*y) as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-RRL",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Rational-root monomial-ladder principal-carrier theorem",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field, D=u*partial_x+v*partial_y, w=u*y-v*x, and q_n=u^n*x+w for n>=1. Then D(q_n*A) is Mathieu-Zhao. In B_u[q_n], B=k[u,v,w], one has x=(q_n-w)/u^n, y=(v*(q_n-w)+u^n*w)/u^(n+1), and D=u^(n+1)*partial_(q_n). If the lowest u-order of f is r<=0, the actual lowest associated-graded face of the zero-constant primitive of f^m is divisible by q_n-w. Evaluation at q_n=w produces all sufficiently large moments integral_0^w F(s)^m ds=0, and the one-variable polynomial moment lemma gives a contradiction. Thus r>=1 and f lies in u*B[q_n]; its growing u^m content clears every fixed denominator in the mixed primitive. Exactly, normalization of A/(q_n) by x=u*t and y=-(u^n-v)*t sends w to -u^(n+1)*t, so a primitive residue is invariant-correctable iff every monomial u^a*v^b*t^c satisfies a>=(n+1)c. For n=1, the exact bounded search retains seventeen of 1,055 seeds on powers four through six; all seventeen lie in u*B[q_1], and no bounded mixed-tail obstruction occurs. The census is bounded; the ladder conclusion is an independent internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PCD",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the monomial rational-root carriers u^n*x+(u*y-v*x) as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-TPR",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Two-prime monomial rational-root principal-carrier theorem",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field, D=u*partial_x+v*partial_y, w=u*y-v*x, and q_(r,s)=u^r*v^s*x+w for r,s>=1. Then D(q_(r,s)*A) is Mathieu-Zhao. Normalization of A/(q_(r,s)) by x=u*t and y=-(u^r*v^s-v)*t sends w to -u^(r+1)*v^s*t, giving the exact primitive-residue support cone a>=(r+1)c and b>=s*c. In B_(uv)[q_(r,s)], independent lowest-face arguments at u and v show that eventual pure-power membership forces positive order at both primes: f lies in u*v*B[q_(r,s)]. The factor (u*v)^m then clears the fixed u- and v-denominators of every mixed primitive. For q_(1,1)=u*v*x+w, the exact bounded search retains eight of 1,055 seeds on powers four through six; all eight lie in u*v*B[q_(1,1)], and no bounded mixed-tail obstruction occurs. The checker verifies normalization identities for 1<=r,s<=3. The census is bounded; the two-prime grid conclusion is an independent internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-RRL",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "the tied monomial rational-root carriers u^r*v^s*x+(u*y-v*x) as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-MSI",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Monomial invariant slope with arbitrary invariant intercept theorem",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field, D=u*partial_x+v*partial_y, B=ker(D)=k[u,v,u*y-v*x], and q=u^r*v^s*x+b with r>=1, s>=0, and arbitrary b in B. Then D(q*A) is Mathieu-Zhao. For b nonzero, writing delta=q-b in B_(uv)[q], the lowest-u face moment argument forces f to have positive u-order; when s>=1, the independent lowest-v face forces positive v-order. Thus eventual pure-power membership puts f in u*B[q] for s=0 and in u*v*B[q] for s>=1, which clears every fixed mixed-primitive denominator. For b=0, D(q*A)=u^r*v^s*D(x*A); divisibility supplies the required u and v content, while the moving-linear theorem supplies the B[x] normal form and accepts the fixed multiplier denominator. This is an internal proof, depends on the one-variable polynomial moment lemma, and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-PMI",
+      "LND-TPR",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "translated monomial-slope rational-root carriers as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-GCS",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Complete coprime invariant-slope theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, B=ker(D)=k[u,v,w], and q=a*x+b for arbitrary nonzero coprime a,b in B. Then D(q*A) is Mathieu-Zhao. For each irreducible factor pi of a other than u, the lowest pi-face of the zero-constant primitive is divisible by q-b; coprimality makes the endpoint b mod pi nonzero, and the one-variable moment lemma forces positive pi-order of every eventual-power seed. The u-face gives the same conclusion when u divides a. When u does not divide a, its face root is beta=(b mod u)-(a mod u)*w/v. If beta is nonzero, the moment lemma forces positive u-order. If beta is zero, the equality v*(b mod u)=(a mod u)*w is equivalent to q lying in u*A; then D(q*A) is contained in u*A, so eventual pure membership directly forces u to divide the seed. In every case the accumulated radical content clears u*a and every fixed mixed denominator. Only a nontrivial common invariant factor of a,b remains outside this theorem. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-MSI",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "all coprime nonmonomial invariant slopes, including aligned conductor descent, as live counterexample charts"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-CIL",
+    "kind": "corollary",
+    "state": "proved",
+    "title": "Complete invariant-linear principal-carrier theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, B=ker(D)=k[u,v,w], and q=a*x+b for arbitrary a,b in B with a nonzero. Then D(q*A) is Mathieu-Zhao, without a coprimality assumption. The abstract scaling lemma says that if M is a Mathieu-Zhao subspace of a domain and c*M is contained in M, then c*M is Mathieu-Zhao: from eventual f^m in c*M, choose one large N and apply the Mathieu property of M to the fixed multiplier g*f^N/c. Writing c=gcd(a,b) and q=c*q_0, LND-GCS or the moving-linear theorem makes M=D(q_0*A) Mathieu-Zhao. Since c is invariant, D(q*A)=c*M and M is a B-module, so the scaling lemma applies. This closes every degree-one carrier already presented in the generic B[x] slice. LND-IAC supplies the intrinsic denominator descent and multiplicity step for all remaining one-root principal carriers. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-GCS",
+      "LND-PMI"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "exact_symbolic",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "common invariant content of a generic linear carrier as a remaining principal obstruction"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-IAC",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Invariant-affine carrier and thickening theorem",
+    "scope": "Let A=k[u,v,x,y], D=u*partial_x+v*partial_y, and B=ker(D)=k[u,v,w]. If H is a noninvariant irreducible polynomial with D^2(H)=0, then D(H*A) is Mathieu-Zhao. Writing s=D(H)=b_1*u+b_2*v gives H=b_0+b_1*x+b_2*y and embeds A in B_s[H]. At each irreducible pi dividing s, one of u,v is a unit in B_(pi), and the corresponding inverse coordinate is unit*(H-beta_tilde)/s. Every negative pi-face is therefore divisible by H-beta. The endpoint beta cannot vanish, because the inverse identities would imply H in pi*A, contradicting irreducibility and noninvariance. Eventual pure powers and the one-variable polynomial moment lemma force positive pi-order at every denominator prime, which clears the primitive of every fixed mixed multiple. If h lies in ker(D^2) minus ker(D), then h=c*H with c in B and one such H; divisibility bootstrapping proves D(H^d*A) Mathieu-Zhao for every d>=1, and the Mathieu scaling lemma restores c^d. The checker replays the invariant-affine coordinate identities but not the all-order moment argument. This is an internal proof and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-CIL",
+      "external: factorial closure of kernels of locally nilpotent derivations",
+      "external: one-variable polynomial moment lemma"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "denominator descent and multiplicity for generic one-root principal carriers as an open layer"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [
+      "LND-CPM"
+    ],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  },
+  {
+    "id": "LND-CPM",
+    "kind": "theorem",
+    "state": "proved",
+    "title": "Complete principal-ideal theorem for the rank-two linear model LND",
+    "scope": "Let A=k[u,v,x,y] over a characteristic-zero field and D=u*partial_x+v*partial_y. Then D(q*A) is Mathieu-Zhao for every nonzero q in A. If q is invariant, this follows from the plinth-power theorem for D(A) and Mathieu scaling. Otherwise view q over Frac(ker(D)) in the generic orbit coordinate. Two or more distinct roots give zero eventual-power radical by LND-GTR. With one root, UFD factorization and A_u=B_u[x] show that q=c*H^d with c invariant and H the unique noninvariant irreducible factor of generic degree one; equivalently D^2(H)=0. LND-IAC handles H^d and scaling removes c. This closes all principal ideals only for this model derivation. Genuinely nonprincipal ideals outside the existing finite-residual and plinth-power theorems, and general locally nilpotent derivations not reducible to this two-slice normal form, remain open. The proof is internal, unformalized, and has not been externally reviewed.",
+    "canonical_source": "extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md",
+    "dependencies": [
+      "LND-NPF",
+      "LND-GTR",
+      "LND-IAC",
+      "external: Gauss lemma and UFD localization"
+    ],
+    "checker": "scripts/search_lnd_principal_conductor.py",
+    "proof_type": "hybrid",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:99aec065dedda0993128a47ba766adc6ff48b9e29056212e8891f2bf49234929",
+    "software_lock": [
+      ".python-version",
+      "requirements.txt"
+    ],
+    "supersedes_notes": [
+      "principal ideals as a live counterexample locus for D=u*partial_x+v*partial_y"
+    ],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "derived"
+  }
+]

@@ -14,4 +14,4 @@ Its associated exploratory programs are stored in
 The finite unit-ideal calculations remain valid scoped exclusions.  They are
 historical reconnaissance, not an active continuation program.  Current GMC
 work is defined by the
-[`GMC(2) research program`](../../extended-geometry/GMC2_RESEARCH_PROGRAM.md).
+[`GMC(2) research program`](../non-elliptic/extended-geometry/GMC2_RESEARCH_PROGRAM.md).

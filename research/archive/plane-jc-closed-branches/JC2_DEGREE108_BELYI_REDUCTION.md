@@ -257,7 +257,7 @@ equations in five parameters.  On the required `deg(B)=8` open their exact
 Singular ideal is `(1)`.
 
 The canonical proof and reproduction commands are in
-[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](../../plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md).
+[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](../non-elliptic/plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md).
 This conclusion is conditional on the audited Proposition-4.3 Laurent
 reduction and the complete intrinsic first-block graph; it is not a
 stand-alone proof of the general degree reduction or of `JC(2)`.  The other

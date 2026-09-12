@@ -1,0 +1,109 @@
+{
+  "bindings": {
+    "commissioning-input.json": "3edd0fbadca5d3f35c68f960119e62c760a780e124405712263c05dfeb0612ae",
+    "equation-aliases.json": "fcfe7df9146a8ad6b472fc3637497accb04612a1ed39fec1063ebee0748aa949",
+    "family.json": "ae38533c564930af0c1cfdeeca6d72f5953a8bef759b8c00b1b8f38cb8fd4e22",
+    "inputs/fresh-01.json": "8a18e06f4f4cf2f63749d1cc5208c9d564db3cc9d72a4ea7cce67b22150dc90a",
+    "inputs/fresh-02.json": "3bbb439ea5a34ae4b2a062c11529a248155428fee75809627a73dcda7f77f752",
+    "inputs/fresh-03.json": "f67ecf1a8810dcf7f6500d3a483360df33fd7221929fe6bc039243e045771ea9",
+    "inputs/fresh-04.json": "7b0c5cb6a7c5f805978aad89c371cf999743f4ceefba12ea1a1418f83d2267ad",
+    "inputs/fresh-05.json": "89d277eea37606e77d6618b29a3dd2f7e138dae3e390eceec35cafef20bb23fe",
+    "inputs/fresh-06.json": "2980431d440506feb75f4986585868625eeb78494fee60e4fb7b09d5d50c1c92",
+    "inputs/fresh-07.json": "3328d0513932e92e1d4c5295ab6b16f1b8e0bce2f9e5cb07c7c693f25ec82ea8",
+    "inputs/fresh-08.json": "1a611fa1de9e3b4c5aa1c8caf439fb06db05ed4fbaec14b266d7b7c9fc903d6c"
+  },
+  "boundary": "Rank-blind finite panel selection and exact generic point substitution only. No fresh number-field, local, relation, class or point search has run. Known-alias exclusion is complete relative to this frozen equation list, not every historical experiment.",
+  "family": "MW16-05",
+  "fresh_parameters": [
+    "27/4",
+    "-29/4",
+    "18/17",
+    "-4/19",
+    "32/3",
+    "-17/14",
+    "-7/17",
+    "4/11"
+  ],
+  "height": "max(abs(m),n), gcd(m,n)=1, n>0",
+  "height_band_inclusive": [
+    8,
+    32
+  ],
+  "ledger": [
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-01",
+      "ordering_sha256": "0042a99a04ddc12e2875c56dee8833180967fda05a91d4c98ff04929db4f1c8f",
+      "ordinal": 0,
+      "parameter": "27/4"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-02",
+      "ordering_sha256": "00c57949b31838bd519f4ec25de24a382bdaa907d529fcd0760ec172b043f289",
+      "ordinal": 1,
+      "parameter": "-29/4"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-03",
+      "ordering_sha256": "00cdb44523aaf79742a7d617c5feab815482da4d646b29c97c0dac031db420b3",
+      "ordinal": 2,
+      "parameter": "18/17"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-04",
+      "ordering_sha256": "00dc1847574673d320d427355f03ac5d18df561fc971df4f76e61ad6e87e2c97",
+      "ordinal": 3,
+      "parameter": "-4/19"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-05",
+      "ordering_sha256": "00f6ce9c2ee646d97c75a095658472344325b448096a028ff152ceca60540628",
+      "ordinal": 4,
+      "parameter": "32/3"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-06",
+      "ordering_sha256": "01028d6d00190b9a3348dddc7a161befc8d004f2959dccc247e3d335cee294a1",
+      "ordinal": 5,
+      "parameter": "-17/14"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-07",
+      "ordering_sha256": "0117e7a1e7ddddb06d3a0d900d1146af777f98c59d052da362faa78084480906",
+      "ordinal": 6,
+      "parameter": "-7/17"
+    },
+    {
+      "alias_row": null,
+      "disposition": "SELECTED",
+      "id": "fresh-08",
+      "ordering_sha256": "013eb643f2051e51524707499262063317fe7da333314b736231fcab31f9de49",
+      "ordinal": 7,
+      "parameter": "4/11"
+    }
+  ],
+  "no_replacements_after_arithmetic": true,
+  "ordering": "SHA256(seed + newline + canonical Fraction string), then m,n",
+  "population_size": 1224,
+  "schema": "fresh-constructor-transfer.selection.v1",
+  "seed": "MW16-05 fresh dependency transfer v1; 2026-09-12",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801",
+    "elliptic-curves/data/research_curves/database.json": "aad55254ca81ecd5676ef6906ee56f30a67a426e3597954ee6e64beb2804bd71",
+    "elliptic-curves/rank-jump/fresh_constructor_transfer.py": "7fa65bc633fc06efc3c0243331f7d75e5179a626ed74e90178c391e551ee2a3f"
+  },
+  "status": "INPUTS_FROZEN_ARITHMETIC_NOT_STARTED"
+}

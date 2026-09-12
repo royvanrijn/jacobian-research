@@ -10,7 +10,7 @@ Status: **ACTIVE, fail-closed infrastructure**.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
@@ -73,7 +73,7 @@ The small auditable decision registry is
 New registered decisions, including exact-curve unresolved records, must name
 exact certificate assertions and any external theorem inputs.
 
-## The six controls
+## The seven control rows
 
 ### Determinant 948: possible
 
@@ -148,7 +148,7 @@ leave four rational cusps on each marked curve. Thus neither row has a K3
 period point. See
 [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
 
-### Determinant 1236: exact curve, rational lift unresolved
+### Determinant 1236: candidate branch-orbit identification unresolved
 
 For
 

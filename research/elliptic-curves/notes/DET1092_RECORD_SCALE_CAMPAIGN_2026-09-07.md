@@ -3,8 +3,25 @@
 The recovered determinant1092 MW17 parent is the main search family for this
 campaign. The [302 calibration](CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md)
 recovers seven of fourteen known exceptional directions before the prospective
-intake starts. Selection is complete; point exposure is active and has no
-terminal outcome yet. No new near-record curve is claimed.
+intake starts. **The frozen campaign is complete:** all48 fibres finished
+their initial49 boxes, for2352 completed and certified boxes with zero
+certified gains. Every curve stopped under `NO_CERTIFIED_GAIN`; none entered
+an adaptive wave. All retained lower bounds remain17. This is a bounded
+detector miss, not an upper rank bound or a new near-record curve.
+
+The [terminal report](../../artifacts/generated-results/elliptic-curves/det1092_record_scale_points_v1.json)
+was recovered from the completed checkpoint ledger. Its existing reporter
+checks the fixed roster, wave/proof consistency and384 input/certificate
+hashes without rerunning point search or finite-group arithmetic.
+
+| Score stratum | Completed curves | Certified boxes | Certified gains |
+|---|---:|---:|---:|
+| Strong | 32 | 1568 | 0 |
+| Moderate | 8 | 392 | 0 |
+| Fixed lower | 8 | 392 | 0 |
+
+Both height bands are represented in each stratum. Zero gains in this fixed
+portfolio do not establish score equivalence or exclude unsearched points.
 
 The [immutable intake package](../../artifacts/generated-results/elliptic-curves/det1092_record_scale_intake_v1/manifest.json)
 preserves the frozen protocol, full projective trace tables, population block
@@ -71,7 +88,7 @@ proof cost and any failures. The32/8/8 stratum sizes and two height bands make
 this a bounded portfolio comparison, not a universal score law. Adaptive
 exposure is identical as a policy but may consume more boxes on gaining curves.
 
-Live checkpoints are in
+The completed checkpoints are in
 `artifacts/local/elliptic-curves/det1092-record-scale-points-v1/ledger.json`.
 The driver is `elliptic-curves/cas/det1092_record_scale_points.py`.
 `report_det1092_record_scale_points.py --snapshot` checks completed proofs and
@@ -84,6 +101,13 @@ The completed selection replays with:
 python3 elliptic-curves/cas/report_det1092_record_scale_selection.py --check
 ```
 
-Keep the frozen campaign sources and gate unchanged while it runs. Update this
-note with independently completed outcomes when the fixed48-curve experiment
-terminates; intermediate bounds do not stand in for a completed comparison.
+The terminal point report checks with:
+
+```sh
+python3 elliptic-curves/cas/report_det1092_record_scale_points.py --check
+```
+
+These commands read retained evidence. Preserve the frozen campaign sources,
+inputs and checkpoints. The11760-box cap is a maximum under adaptive stopping,
+not a remaining queue: the original48-fibre policy has finished. A changed
+detector or new population is a separate experiment.

@@ -80,7 +80,7 @@ def full_curve_summary(classifier_row: dict | None) -> dict:
             "status": "UNKNOWN_NO_ROOTLESS_SUBCATALOGUE_DECISION_RECORD",
             "label": None,
             "genus": None,
-            "rational_non_CM_point": False,
+            "rational_non_CM_point": None,
             "stable_kernel_index_over_coarse": None,
         }
     curve = classifier_row["full_discriminant_marking_curve"]
@@ -100,9 +100,6 @@ def full_curve_summary(classifier_row: dict | None) -> dict:
         else False
         if classification == "ARITHMETICALLY_EXCLUDED"
         else None
-        if classifier_row.get("phase_2_certificate_status")
-        == "UNRESOLVED_FOR_EXPLICIT_REASON"
-        else False
     )
     kernel_indices = [
         quotient["degree"]

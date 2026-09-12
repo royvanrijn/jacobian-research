@@ -1,0 +1,89 @@
+{
+  "baseline": {
+    "allowance": "Same frozen charged allowance per fibre as the class route; retain actual consumption and unequal backends.",
+    "comparison_gate": "Seal both outputs before any evaluator reads both. Certify the combined subgroup, not just compare rank totals.",
+    "inputs": "Identical equation and generic sixteen only; separate output directory and read allowlist.",
+    "method": "Maintained MW16 upper-shell V3 with lean bounded map workers, exact admission and immediate rebuild after a gain."
+  },
+  "closed_routes": [
+    "fixed column6 continuation",
+    "column7 continuation",
+    "carrier bank and larger shells",
+    "full class-group upper-bound campaign"
+  ],
+  "cohort_size": 8,
+  "commissioning_control": "3/17",
+  "constructor_policy": {
+    "class_order": "Chronological completed extraction checkpoint, then its deterministic coefficient-kernel order; retain a candidate only after strictness replay and incremental independence against G and previously retained candidates. Fix this before search; never rank by expected lift difficulty.",
+    "fresh_objects": [
+      "cubic algebra and exact model maps",
+      "maximal order",
+      "complete bad-prime and dyadic/real data",
+      "generic Kummer classes",
+      "generic-only ordinary unramified characters and protected ideal anchors",
+      "factor-base labels and canonical rational-prime rows",
+      "principal-ideal dependency matrix and atom dictionary"
+    ],
+    "full_class_group_upper_bound_required": false,
+    "independence_characters": "Evaluate away from complete factor support. A finite-character rank can certify independence but does not prove a guessed square identity.",
+    "new_classes_to_lift_maximum": 2,
+    "no_inherited_atoms_or_ideal_coordinates": true,
+    "no_inherited_dimensions": true,
+    "reuse_sources": [
+      "elliptic-curves/rank-jump/reference_small_representative_class.py",
+      "elliptic-curves/rank-jump/reference_adaptive_class_completion.py",
+      "elliptic-curves/rank-jump/reference_class_targeted_relations.py",
+      "elliptic-curves/rank-jump/generic_only_class_anchors.py",
+      "elliptic-curves/rank-jump/reference_large_support_extraction.py",
+      "elliptic-curves/rank-jump/verify_reference_additional_strict.py",
+      "elliptic-curves/rank-jump/constructed_class_half_ideal.py",
+      "elliptic-curves/rank-jump/constructed_class_compaction.py"
+    ],
+    "selection": "Small representatives of unresolved ideal combinations, including pivot columns; protect only independently certified generic anchors. Retain all outside coordinates until cancellation. Fixed ordering and per-stage cutoffs must be frozen in the executable adapter before commissioning.",
+    "source_generalization_status": "PENDING: reference entry points have fixed paths, hard-coded generic strict dimensions and residue-degree-one dyadic assumptions. Generalize and verify these without reading fresh arithmetic outcomes; do not pass them off as a ready parameterized runner."
+  },
+  "cost_measurement": {
+    "accounting": "Retain phase wall and process-tree CPU times separately, including startup and failures. Charge remote reduction requests with both reported CPU and full request elapsed time. Report setup/implementation separately. Remote/local clocks do not prove a speed theorem.",
+    "aggregate_explanation": "At most nine fibres including the control, two routes per fibre, two hours per route =36 worker-hours; this is a proposed worst-case ceiling, not expected consumption.",
+    "current_full_reference_cost": "UNKNOWN",
+    "historical_subtotal_is_complete": false,
+    "missing_or_censored_C": "Do not substitute 18.401 seconds, the historical subtotal, a timeout duration, or an unverified candidate for C. Keep this gate unresolved.",
+    "numeric_fresh_allowance": null,
+    "pending_user_budget_answer": true,
+    "proposed_aggregate_wall_ceiling_seconds": 129600,
+    "proposed_commissioning_wall_ceiling_seconds": 7200,
+    "proposed_fresh_allowance_rule": "min(7200,ceil(2*C)) charged seconds per route, where C is the fully metered successful commissioning class route including all preparation, dependency construction, extraction, compaction, failed attempts, lifting, and independent verification.",
+    "proposed_maximum_workers": 1,
+    "proposed_rss_ceiling_bytes": 2147483648,
+    "successful_commissioning_required": true
+  },
+  "endpoints": {
+    "complementarity_success": "The class-route point adds a certified direction to the subgroup in the sealed matched-endpoint V3 output.",
+    "ordinary_ideal_class_increment": "UNKNOWN unless separately certified by half-ideal/Artin detection; strict Kummer independence does not exclude a unit kernel.",
+    "population_claim": "Eight fibres give no general success-rate or parameter theorem.",
+    "transfer_success": "At least one fresh fibre supplies a newly constructed independently strict class outside G, an exact blind rational lift of that class, and a fresh independence certificate for G plus that point."
+  },
+  "execution_started": false,
+  "historical_cost_audit_sha256": "3fc75b7c2cc3d97c8f3cba789e9ff600be6ce7e43ed97f9bbbae2b49c1373f39",
+  "input_manifest_sha256": "aeb446e4478c2e75cdb53ca26894c9d51f08e79580bdb9ab7e36053bb4cee88d",
+  "lifting": {
+    "failure": "RATIONAL_SOLUBILITY_UNKNOWN; a failed search is not Sha.",
+    "input_boundary": "Only frozen candidate cover equations, norm invariant and exact source-model maps. No historical exceptional points, inherited roots/combinations, or V3 results.",
+    "method": "Exact half-ideal square reduction and verified compaction; degree4 genus-one minimisation/reduction; conic parameterisation where available; degree2 minimisation/reduction; bounded rational quartic point search. Retain every transformation, miss and timeout.",
+    "point_verification": "Independently substitute into original cover, replay every coordinate transport and cubic square identity, then check the original elliptic equation."
+  },
+  "objective": "One fresh equation-and-generic-only dependency, independently new strict class, blind rational lift and independently certified rank gain; test transfer before a new parameter theorem.",
+  "replace_fibres_after_arithmetic": false,
+  "schema": "fresh-constructor-transfer.design.v1",
+  "source_hashes": {
+    "elliptic-curves/rank-jump/constructed_class_compaction.py": "25ef16a6ce28af1f06c83f573642312a6456fd2033ae00bf41905305535c7783",
+    "elliptic-curves/rank-jump/constructed_class_half_ideal.py": "26bb57d16380cc3d39e37f5e340d83d7fff3b7ea7da54eda571812a660bfbb24",
+    "elliptic-curves/rank-jump/generic_only_class_anchors.py": "cf83ee243963ced7fe95c1211822839964a94b5cce40624553a71eb41e780a76",
+    "elliptic-curves/rank-jump/reference_adaptive_class_completion.py": "042391b9d9e5ad9c9d070a8349d43d0a451f9ad34dcd28230ec38ebf26ae8fc0",
+    "elliptic-curves/rank-jump/reference_class_targeted_relations.py": "649b6a2b104d4ddd44b399829c5bff20b6ad3befc100f1479bedd5b9345f1a68",
+    "elliptic-curves/rank-jump/reference_large_support_extraction.py": "fcfd200dea5ce29869975d292b40a2dc5707f4d8c85be832869a5b3c6b213ff6",
+    "elliptic-curves/rank-jump/reference_small_representative_class.py": "fb755f878bb32723bbaf0aa9dcfd6d4bd555ebfbfabc65dec066a35ecaa60404",
+    "elliptic-curves/rank-jump/verify_reference_additional_strict.py": "69164e33964ceaf998487000b20e15ea182e5656a0a79d11414b2861288d2c01"
+  },
+  "status": "INPUTS_FROZEN_EXECUTION_POLICY_PENDING"
+}

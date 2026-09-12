@@ -1,5 +1,12 @@
 # Exact rank-lower-bound reproduction of the Fermigier--Mestre family
 
+The construction and exact arithmetic generic rank12 are available below.
+`EC-FERM1` remains partial specifically because the printed parameter and
+literal shifted-product formula have an unresolved factor-two discrepancy.
+That source question does not require repeating the completed point searches.
+The raw discriminant scale is `607392`, already corrected in the family
+record; the earlier `202464` value must not be reused.
+
 ## Source construction
 
 Fermigier fixes
@@ -312,8 +319,8 @@ and conductor
 It does not give the displayed E22 curve.  Substitution at the doubled shift
 \(s=39508/39\), equivalently adapter coordinate \(u=19754/39\), gives exactly
 Fermigier's displayed minimal model and conductor.  The two literal
-specializations have different exact \(j\)-invariants.  No intervening change
-of parameter or published erratum was found, so this remains an explicit
+specializations have different exact \(j\)-invariants. The earlier source audit
+found no intervening change of parameter or published erratum, so this remains an explicit
 reproduction discrepancy rather than a resolved normalization.
 
 ## Constructive rank-gain bridge
@@ -359,6 +366,13 @@ specializations, the exact E22 model and conductor, and the literal
 `log(N)<182.72` cutoff.  `verify_family_data.py` cross-checks the stored family
 equation, discriminant, and thirteenth-point metadata.
 `verify_fermigier_rank_certificates.py` replays both independence certificates.
+
+These are separate proof layers. The benchmark's GP minimal-model and
+conductor subprocesses have no built-in wall timeout; its ordinary invocation
+is not a metadata-only check. The family record retains the exact roots,
+coefficients and both specializations, sufficient to inspect the discrepancy
+without those calculations. Resolving the printed convention still needs
+primary-source provenance, not a stronger rank or point-search result.
 
 For a new parameter, `evaluate_fermigier_specialization.py` reconstructs the
 twelve baseline differences and can call PARI's `hyperellratpoints` for a

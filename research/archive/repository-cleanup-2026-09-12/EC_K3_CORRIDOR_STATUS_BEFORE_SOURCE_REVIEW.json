@@ -1,0 +1,261 @@
+{
+  "entries": [
+    {
+      "id": "EC-K3-H3-Q4O208-Q4O1599-QQ-A3-2A2",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact QQ q4/orbit1599 replacement equation for A3+2A2",
+      "scope": "The earlier branch-33 q4/orbit323 identification is false: a local profile/intersection candidate was not checked against either complete signed eleven-section graph solution, and the corrected graph has zero target hits. An exact summand-first replay independently reconstructs branch 33 inverse but confirms it is not q4/orbit323. Exhaustive q=4 root-adapted enumeration instead finds ten A3+2A2/MW10 orbits, and already-lifted exact branch 16 supplies orbit1599. Its saturated P.O=1 chord ambient has dimensions 5 to 3 to 2. At the compact t=0 I4, factoring the constant resolved chord trace selects the unique linear quotient whose radicand is two squared linear factors times a quartic. Binary-quartic invariants give an exact QQ Jacobian with fibres I4+2I3+14I1, Euler number 24, root data (7,24,36), and MW rank 10 in the pinned rank-19 NS lattice. No Groebner basis is used. The q4/orbit1599 edge is primitive nef and has bidirectional unimodular NS transport. Although the complete lifted-section graph has two global labelings, branch 16 has sign +1 and exactly the same raw NS class in both. After the certified raw-to-physical basis change, the lattice fibre decomposes as D=O+P+V with V supported in the old fibre root lattice and zero MW tail. Hence the residual ambiguity affects only an unused branch and the equation edge composes unambiguously with the pinned-R17 suffix.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q4o208_q4o1599_a3_2a2_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:670e66acffd3b7613c63387dc41e97615ca066af357fe1fcd68d7f3608416a4b",
+      "software_lock": [
+        "elkies-k3/scripts/compile_h92_q4o208_q4o1599_a3_2a2_qq.sage",
+        "elkies-k3/scripts/certify_h92_q4o323_horizontal_marking_qq.sage",
+        "elkies-k3/scripts/lift_h92_q4o323_horizontal_via_summands_qq.sage",
+        "elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q4O208-Q4O323-QQ-A3-2A2",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact corrected q4/orbit323 horizontal, RR pencil, and A3+2A2 Jacobian",
+      "scope": "The corrected fixed-corridor q4/orbit323 horizontal is recovered without a new shell search or a Groebner basis. In the marked q4/orbit208 Mordell-Weil quotient, doubling the target gives P8+2P18+P33-2C7 after resolving the inherited global-inversion ambiguity by the certified invariant P.O=1; the opposite orientation has P.O=3 and is excluded. The duplication quartic factors exactly as linear times cubic, and its unique marked rational half has compact degrees x=(6,2), y=(8,3), with maximum coefficient sizes 94 and 135 bits. The exact marked NS doubling relation is verified modulo the primitive trivial lattice, whose Smith invariants are all one, so no torsion ambiguity remains. The prescribed vertical residual is exactly components 2 and 3 of the second old I4. Its t=0 connected-component trace gives a resolved Riemann--Roch calculation 5 to 3 to 2. The chord radicand is two squared linear factors times a quartic; binary-quartic invariants give a minimal exact QQ Jacobian with fibres I4+2I3+14I1, Euler number 24, root data (7,24,36), and MW rank 10 under the pinned rank-19 NS identity. The remaining gate is to attach an equation-effective child zero/component marking that selects the stored q4/orbit207 suffix frame.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q4o208_q4o323_a3_2a2_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9773ae1a1a9b51c9675de53e3082bd7eed2451ed8d2e0c6ef608f2605cf26cf1",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q4o323_horizontal_by_halving_qq.sage",
+        "elkies-k3/scripts/compile_h92_q4o208_q4o323_a3_2a2_qq.sage",
+        "elkies-k3/scripts/recover_h92_q4o323_horizontal_mod131.sage",
+        "elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact construction-compatible equation-side target for the H3 A11-to-2A5 q8 lift",
+      "scope": "The historical A11/MW6 -> 2A5/MW7 q8/orbit922 neighbour has the stronger divisor fingerprint new_fibre=O+P-2F with no vertical-root correction. Between the historical and equation-side orbit64 A11 frames, splitting the positive frame isometry into the A11 root chain and rank-six Mordell--Weil quotient gives two root orientations and an MW automorphism group of order 16. Exactly eight combinations satisfy the integral glue condition. Four transported rays occur in the exhaustive equation-side nef q8 search, yielding exactly orbits 12 and 2162, both with root data (10,60,36), type A5+A5 and MW rank 7. Orbit12, with MW projection (0,0,-1,0,0,1), is selected by the explicit minimum MW-coordinate L1 convention; this is a complexity convention, not a proof that orbit2162 is geometrically impossible. The transported orbit12 divisor still has formula O+P-2F and P.O=6. A finite-field central-I12-component chart at the preferred discovery prime p=43 can eliminate eight leading R coefficients to a 26-variable, 28-equation sparse system with 16 infinity branches; a bounded msolve benchmark completed degree 10, reached degree 11, and was stopped. This record fixes a construction-compatible target and improves the discovery system, but it does not construct the section function, resolved RR plane, quartic, characteristic-zero Weierstrass child, or any later equation edge.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-QQ-A11",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f8bb3fabf1a2fc6828774fe9705a38dd1127e76486e1de0867f00708d9d151d1",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage",
+        "elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage",
+        "artifacts/local/elkies-k3/q24-a11-q8-construction-fingerprint.json",
+        "artifacts/local/elkies-k3/q24-a11-q8-component6-modp/p43-branch00-c0-l1-elimR08.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT",
+        "replay/CATALOGUE.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact abstract q6/orbit1307 lattice path with withdrawn component-10 continuation",
+      "scope": "Starting from the exact component-9-zero 2A5 equation in EC-K3-H3-A11-Q8-QQ-2A5, the stored q6/orbit1307 marked-lattice path, component-10-zero return, current-3A3 landing, and pinned-R17 transport are exact in the abstract root-adapted chamber. A later replay in the physical equation Gram finds that the stored q6 fibre has intersection -1 with the first physical I6 affine component. Exact Weyl reduction in that affine component and old A11 components 0 and 3 produces a primitive isotropic physical-nef representative with the same horizontal P1307, but its physical old-component degrees are C3=C5=C9=1 and C10=0. Therefore old_A11_component_10 is not a section of the corrected pencil, and the advertised q4 return, q6 landing, 10334 score, and lifting-target promotion are withdrawn. The corrected horizontal has an estimated 9-to-3-to-2 RR profile and may still support lateral routes from physical zero C3, C5, or C9. EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE and EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE record the active replacement corridor.",
+      "canonical_source": "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+      "dependencies": [
+        "EC-K3-H3-A11-Q8-QQ-2A5",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/audit_h92_a5a5_q6o1307_physical_nef.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:be693f7642be184b1a04305bb6eeec336431cdb211791bf1b5212b77f073d7f3",
+      "software_lock": [
+        "elkies-k3/scripts/search_h92_a5a5_zero_changing_loops.sage",
+        "elkies-k3/scripts/certify_h92_a5a5_q6o1307_promoted_route.sage",
+        "elkies-k3/scripts/audit_h92_a5a5_q6o1307_physical_nef.sage",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-zero-changing-loop-search.json",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-q6o1307-promoted-route-certificate.json",
+        "artifacts/local/elkies-k3/q24-2a5-q6o1307-physical-nef-audit.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT",
+        "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact promoted physical q10 lattice route from the orbit12 equation to pinned R17",
+      "scope": "In the exact component-9-zero 2A5/MW7 equation marking, the stored historical q104 representative has negative physical degrees C0=-12 and C6=-9. Deterministic reduction against all eleven old components, both current-I6 affine components, old A11 affine, oldI9_A0, and close_P24 takes 61 exact root reflections and yields the primitive nef degree-two q10 fibre [5,2,0,-1,-1,-3,-3,1,0,-2,0,-2,0,0,1,0,-2,0,1]. It has P.O=5, three connected vertical layers, estimated RR ambient 15, eight exact degree-zero curves and four exact degree-one curves. Complete physical-component, all-section, and finite horizontal-wall gates pass. The canonical chamber zero is itself non-effective, but an exhaustive reframe over the four physical degree-one curves selects effective old_A11_component_5 by minimum child-frame coefficient growth. That marked U has exact 3A3 root data, bidirectional determinant-one NS transports, a determinant-minus-one identification with canonical current 3A3/MW8, and a full determinant-one endpoint identification with pinned R17. The deterministic operational score is 4471, or 5071 under the older convention omitting the two current-I6 affine curves, versus the withdrawn nonphysical q104 score 13518. This entry is partial only because the q10 characteristic-zero H0 basis, quartic, Jacobian, fibre classification, and equation marking remain to be compiled.",
+      "canonical_source": "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+      "dependencies": [
+        "EC-K3-H3-A11-Q8-QQ-2A5",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_a5a5_direct_physical_q10_promoted_route.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:79b70f95f8c610db01c3e0314658d47d64fc951f0be9214ba87da638ad275aad",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_a5a5_direct_physical_q10.sage",
+        "elkies-k3/scripts/certify_h92_a5a5_direct_physical_q10_effective_zero.sage",
+        "elkies-k3/scripts/certify_h92_a5a5_direct_physical_q10_promoted_route.sage",
+        "artifacts/local/elkies-k3/q24-2a5-direct-physical-q10-certificate.json",
+        "artifacts/local/elkies-k3/q24-2a5-direct-physical-q10-effective-c5-zero-certificate.json",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-direct-physical-q10-promoted-route-certificate.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT",
+        "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact q4/orbit230--q6/orbit1315 lattice path with withdrawn equation-cost promotion",
+      "scope": "The q4/orbit230 and q4-return equations, all marked lattice neighbours, bidirectional unimodular transports, current-3A3 landing, and pinned R17 endpoint remain exact. However, the stored q4-return chamber zero used to score q6/orbit1315 is [27,1,-2,3,3,-8,-9,1,-8,-8,-6,-4,-2,0,1,-1,-1,-1,-1] in parent 2A5 coordinates and has P.O=26. It differs from the exact effective P230 section by an old-fibre/root-vertical class, although both have the same MW quotient. The intrinsically primitive isotropic degree-two q6/orbit1315 fibre intersects effective P230 in 54 and the original zero in 58. Therefore the former 4199 operational score and lifting-target promotion are withdrawn: they used a Weyl/chamber pseudo-zero rather than an equation-effective section. This entry now proves the exact lattice path and the exact obstruction to its old cost interpretation, but no compiler-cheap replacement suffix.",
+      "canonical_source": "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+      "dependencies": [
+        "EC-K3-H3-A11-Q8-QQ-2A5",
+        "EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/audit_h92_a5a5_q4o230_effective_return_zero.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b8e5c8ba7876c00976b0a7814f11bf8b2e07c36c4fe1b1c133db5f89eaa60678",
+      "software_lock": [
+        "elkies-k3/scripts/export_h92_a5a5_zero_loop_returned_marking.sage",
+        "elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage",
+        "elkies-k3/scripts/rank_h92_marked_root_adapted_frontier.sage",
+        "elkies-k3/scripts/search_h92_d13_zero_changing_d12_presentations.sage",
+        "elkies-k3/scripts/certify_h92_a5a5_q6o3372_q6o2052_promoted_route.sage",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-q4o230-c10-returned-marking.json",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-q4o230-c10-second-zero-changing-3a3-presentations.json",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-q4o230-q6o1315-promoted-route-certificate.json",
+        "elkies-k3/scripts/audit_h92_a5a5_q4o230_effective_return_zero.sage",
+        "artifacts/generated-results/elkies-k3-h3-a5a5-q4o230-effective-return-zero-audit.json",
+        "artifacts/local/elkies-k3/q24-a1a4a5-to-2a5-q4-return-resolved-rr-qq.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT",
+        "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact minimum-pole target-coset bridge for the H3 A11-to-2A5 q8 lift",
+      "scope": "In the pinned equation-side orbit64 A11/MW6 marking, the eighteen already exact identity-shell sections span rank five but have index five in the saturated hyperplane with sixth MW coordinate zero. Therefore an arbitrary missing-rank section does not necessarily generate the selected q8/orbit12 target with those exact points; in particular the previously proposed pole-order-four vector (0,0,0,1,0,1) lies in the wrong coset. Exhaustive exact MW enumeration through P.O <= 5 proves there is no target-coset section with P.O <= 4 and exactly two with P.O=5. The selected bridge is M=(1,0,0,0,0,1), of height 47/4, I12 correction 9/4 and component 3 or 9 up to negation. The literal equation-marked group-law identity P12=M+S6-2*S2-2*S8 gives the orbit12 vector (0,0,-1,0,0,1), where shell indices are zero-based equation order. A free-infinity finite-field chart covers every smooth-fibre leading value simultaneously; at p=100003 it has 36 variables, 37 equations and maximum degree six. A bounded four-thread msolve run with linear algebra mode 42 completed two degree-eight reductions, entered a third 257692-by-2857438 matrix, and stopped at the fixed 600-second timeout using about 13 GB resident memory. It produced no modular section and proves no non-existence statement. Characteristic-zero coordinates for M, the orbit12 section, resolved RR pencil, quartic and 2A5 child remain open.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-QQ-A11",
+        "EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0f1f9eeda95f32e06ce0d7d508e1da375c0246c3905c2a914a58e9695b33b260",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage",
+        "elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage",
+        "artifacts/local/elkies-k3/q24-a11-target-coset-bridge.json",
+        "artifacts/local/elkies-k3/q24-a11-q8-component6-modp/p100003-freeInfinity-elimR00-pO5-cpt3.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT",
+        "replay/CATALOGUE.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    }
+  ]
+}

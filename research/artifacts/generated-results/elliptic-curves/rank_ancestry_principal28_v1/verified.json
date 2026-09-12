@@ -1,0 +1,27 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/geometry.json": "3c6923aaf0db30346fded602e3a239da264c4179d17e2dcc61992ca0efe4ca41",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/inputs.json": "1f3be37774eda4e015abecbb0a8a417ee3477a788ee84a24f4265823edf75d14",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/plan.json": "0a16a58ea7000c3a2781c8d2e1e58a11568dd6aa4abcad37c3fddabb177a60fd",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/rank-11952.json": "3fea2e643d24b9443518c6c788cd040f2b7a7768b3232ffd2cbd5477207a713f",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/rank-302.json": "bec462ea01cc4a4d1077a7fab1363f2e946a78b2f0ae081ff00c4d03e9cd8300",
+    "elliptic-curves/cas/verify_principal28_ancestry.sage": "778370dec8f3be7e1c17898d351606606c9f262032f0282540784e8dd2178d2c"
+  },
+  "carrier_identities_checked": 900,
+  "checker_correction": "Normalize Python tuple-valued signatures to their emitted JSON arrays before exact equality; construction evidence unchanged.",
+  "construction_time_checker_sha256": "edf6c0e3d7ee6fb6bbcd3f517d1b414d75f9a73e71db35f9052ef8bd69231df7",
+  "finite_rank_certificates_replayed": [
+    31,
+    28
+  ],
+  "generic_prefixes_checked": [
+    17,
+    17
+  ],
+  "global_minimum_genus": "UNKNOWN",
+  "old_302_cover_payloads_unchanged": 504,
+  "perturbed_carriers_rejected": 900,
+  "replay_checker_sha256": "778370dec8f3be7e1c17898d351606606c9f262032f0282540784e8dd2178d2c",
+  "shared_cover_target_groups": [],
+  "status": "PASS_EXACT_14_VS_11_ANCESTRY_REPLAY"
+}

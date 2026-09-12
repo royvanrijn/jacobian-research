@@ -11,8 +11,8 @@ These files preserve supporting and superseded narratives for foundational-throu
 - the former foundational-facts summary.
 
 The active reading path is now one document per result:
-[Foundational Keller map](../../verified/FOUNDATIONAL_GEOMETRY.md),
-[Cubic Marked-Root Model](../../verified/MARKED_ROOT_MODEL.md),
-[Cubic Image and Nonproperness Theorem](../../verified/IMAGE_AND_NONPROPERNESS.md), and
-[weighted marked-root theorem](../../verified/WEIGHTED_SEED_THEOREM.md).
+[Foundational Keller map](../non-elliptic/verified/FOUNDATIONAL_GEOMETRY.md),
+[Cubic Marked-Root Model](../non-elliptic/verified/MARKED_ROOT_MODEL.md),
+[Cubic Image and Nonproperness Theorem](../non-elliptic/verified/IMAGE_AND_NONPROPERNESS.md), and
+[weighted marked-root theorem](../non-elliptic/verified/WEIGHTED_SEED_THEOREM.md).
 The scripts remain active through [REPRODUCE.md](../../REPRODUCE.md).

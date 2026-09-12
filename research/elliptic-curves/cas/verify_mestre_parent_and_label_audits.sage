@@ -6,6 +6,7 @@ from sage.all import QQ,ZZ,GF,EllipticCurve,PolynomialRing,Matrix,lcm,gcd
 ROOT=Path(__file__).resolve().parents[2];CAS=ROOT/'elliptic-curves/cas';sys.path.insert(0,str(CAS))
 import certify_compact_r17_candidates as cert
 from research_runtime.store import checkpoint
+from mestre_replay_provenance import check_retained_replay
 import verify_mestre_fermigier_two_section_generic_rank13 as old
 from mestre_root_tuples import SixRootMestreConstruction
 ART=ROOT/'artifacts/generated-results/elliptic-curves';PARENTS=ART/'mestre_parent_portfolio_intake_v1.json';LABELS=ART/'mestre_component_label_audit_v1.json';OUT=ART/'mestre_parent_and_label_independent_v1.json'
@@ -59,7 +60,7 @@ def expected():
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');a=p.parse_args();result=expected()
-    if a.check:assert result==cert.read(OUT)
+    if a.check:check_retained_replay(result,cert.read(OUT),ROOT)
     else:
         if OUT.exists():raise FileExistsError('preserve independent replay')
         checkpoint(OUT,result)

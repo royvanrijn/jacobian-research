@@ -167,10 +167,13 @@ survive, but every chord branch polynomial is squarefree of degree `18`; none
 has an A11 fibre.  This is a modular rejection of the rational-halving
 shortcut, not a characteristic-zero non-existence theorem.
 
-## Active gate
+## Historical q8 construction gates — subsequently closed
 
-The orbit42 gate is closed.  The next gate is the exact equation lift from the
-selected orbit64 A11 frame through the q8 neighbor whose child is `2A5/MW7`.
+The orbit42 and q8 equation gates are closed, including the equation-effective
+zero and full transport. `EC-K3-H3-A11-Q8-QQ-2A5` records that closure below.
+The following target selection and failed modular solves explain the eventual
+construction; they are not an active launch queue. At that stage the next
+gate was the lift from orbit64 A11 to `2A5/MW7`.
 The historical orbit number must not be copied into this frame.  The exact
 construction transport
 
@@ -200,7 +203,7 @@ benchmark completed its degree-10 matrix and reached degree 11 before being
 stopped; this is a search-performance observation, not a section or
 non-existence result.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET 9012c49cd14074d3 -->
 
 The construction audit one level deeper changes the preferred section target.
 Under the pinned equation marking, the eighteen exact identity-shell points
@@ -222,8 +225,9 @@ free-infinity chart covers every leading smooth-fibre value at once; over
 bounded four-thread msolve mode-42 run completed two degree-eight reductions,
 entered a third `257692 x 2857438` matrix and stopped at 600 seconds (about
 13 GB resident).  It found no section, and this bounded run is not a
-non-existence result.  The exact next gate is characteristic-zero coordinates
+non-existence result.  The missing gate at that stage was characteristic-zero coordinates
 for `M`, followed by the displayed group-law reconstruction of `P12`.
+Both were supplied by the later resolved route below.
 
 The degree-one alternative has now been exhausted exactly, without a section
 ansatz.  Möbius inversion of the resolved pencil and binary-quartic
@@ -256,8 +260,8 @@ neighbours: the apparent best candidates 849 and 591 fail the full nefness
 gate, while the first passing candidates lead to different ADE types or lack
 a certified continuation to pinned R17.
 
-The active no-large-elimination direction therefore keeps equation orbit12
-and exploits its split `I12` fibre directly.  With the formal nodal centre
+The subsequent successful construction kept equation orbit12 and
+exploited its split `I12` fibre directly.  With the formal nodal centre
 `c(s)`, the identity
 
 ```text
@@ -272,7 +276,7 @@ that is evidence to use bidirectional coefficient recurrences or resolved
 linear Riemann--Roch, not a large Gröbner calculation.  Modular systems remain
 bounded discovery aids only.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE 8d17ab150a7e3567 -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE 1f00fcc43946afc9 -->
 
 That resolved route has now closed the q8 edge exactly.  The component-3
 chart first reconstructs the small residual `R=P12-M` over `QQ`; exact
@@ -328,19 +332,21 @@ current physical route is
  --q4 orbit1584--> D4+A3+3A1/MW7
  --q4 orbit164--> 2A3+2A1/MW9
  --q8 orbit376--> 4A1/MW13
- --q12 orbit4484--> rootless/MW17
+ --q12 orbit5867--> rootless/MW17
  -> pinned R17.
 ```
 
-The first three arrows have exact characteristic-zero equations and effective
-zeros. The q8/orbit376 and q12/orbit4484 arrows are exact marked-lattice
-edges but remain equation-open. See
+All displayed arrows now have exact characteristic-zero equations and
+effective zeros. The q12/orbit5867 endpoint has seventeen rational sections,
+source identity, Picard rank 19 and saturation; q12/orbit4484 remains an
+unneeded lattice fallback. Do not restart the closed q8 lift or endpoint
+construction from this historical handoff. See
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 
 <!-- status-consumer: EC-K3-H3-Q24-O42-QQ-A11 ffa4308117c55056 -->
-<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET c892eec88af45f08 -->
-<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE 9ee5630063324558 -->
-<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE a8889fef54ee3b47 -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET 9012c49cd14074d3 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE a5f8ab2e2cc6c3a5 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE 97a27c2d5865e517 -->
 <!-- status-consumer: EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE ba6ee6488fce2411 -->
 
 The operational stage ledger and version-locked launch commands live in

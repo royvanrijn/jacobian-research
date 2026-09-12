@@ -5,7 +5,7 @@
 > dimension \(n\geq3\) after adjoining unused coordinates.  Its finite
 > weighted-family exclusions are retained for provenance only; the surviving
 > ansatzes below are not an active research frontier.  See the
-> [current GMC(2) program](../../extended-geometry/GMC2_RESEARCH_PROGRAM.md).
+> [current GMC(2) program](../non-elliptic/extended-geometry/GMC2_RESEARCH_PROGRAM.md).
 
 ## 1. Outcome and scope
 
@@ -52,7 +52,7 @@ arbitrary polynomial in `(Z,W,T)`.
 ## 2. Clean-room audit of the Gaussian--Lagrange lemma
 
 The standalone
-[formal Gaussian--Lagrange lemma](../../extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) was
+[formal Gaussian--Lagrange lemma](../non-elliptic/extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) was
 treated as read-only.  A clean-room pass reconstructed its proof in the
 following order.
 

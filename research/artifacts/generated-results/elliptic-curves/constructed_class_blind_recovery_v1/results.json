@@ -1,0 +1,107 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/blind-lift-independence.json": "fc274bb6e9ad966f1096badb58288304f49f3d8c158aafafefd895dbcfcbf556",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/cover-worker-report.json": "7bb1011d4e8d0eb72239660995381457450371bb994ffdaeb17a67e504829c4e",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/cover-worker-witness.json": "ec32c922f3670e91fb50e6b63aea7ce43e3eef73da8eea618548b28f6fbcd823",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/covers.json": "a8218511b1ac1b2def5dafe9c7803ebbdb0d33a7a0ffffca1c8e33a090efca1f",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/generic.json": "b8ce5170aa69a31145e4faa48ed1f4e550a6390343f0e53816cf3242f448a153",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/independent-cover-replay.json": "76218352fe97e385c91f2f1921b30c0ef7fc042d909c895b2bb5720d7a1d8cdd",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/independent-quartic-replay.json": "d774df09f00e5f624a4f14d8801dd0f3ccccf31d703e5fce2b870967b62c2664",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/protocol.json": "d09942c6046f24336cf8c5520129c545721ccc5c807892169b530f4896080253",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/v3-fixed-cover-lifts.json": "97a535735cc43be3c75b47e5c206eb4ee8089b1789d0b7663380963bf8bace83",
+    "artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/v3-fixed-cover-replay.json": "9dd233561f3e3bf619dd9389c7444a495c5c9e4e6eb3fa55e97c386ab020c732",
+    "artifacts/local/elliptic-curves/constructed-class-blind-v3-v2/protocol.json": "caf105f07cee7f33a1fc165bd8781966a26d0a5c7a2711021d505ddd4c3c9aa3",
+    "artifacts/local/elliptic-curves/constructed-class-blind-v3-v2/terminal.json": "ac6dc086973fb57c1236c452cc9ad63cb95bae58fcfb4f012ccd10b22f62a418",
+    "artifacts/local/elliptic-curves/constructed-class-blind-v3-v2/verified-v2.json": "b436ea430da613c1799870f8011de4eeff8c865b3c3226c2a9e6aa7bf54f0b56"
+  },
+  "comparison_boundary": "The cover arm starts from pre-existing fixed classes; their upstream construction cost is excluded. V3 starts only from equation and the same generic subgroup. Remote Magma versus local Sage/PARI, independent preparation choices and implementation time prevent an end-to-end or general speed-superiority claim. This is a retrospective fixed-fibre recovery experiment, not a parameter-selection mechanism, new rank record, exact-rank proof or global class/Selmer computation.",
+  "cover_arm": {
+    "arithmetic_wall_seconds_charged": 18.401175454142503,
+    "combined_rank_lower_bound": 18,
+    "direct_degree4_search_bounds_without_hit": [
+      1000,
+      100000
+    ],
+    "independent_rank_over_generic": 2,
+    "initial_generic_rank": 16,
+    "quartic_parameters": [
+      "1/2",
+      "3/10"
+    ],
+    "quartic_search_bound": 1000,
+    "quartic_search_wall_seconds": 0.024704707029741257,
+    "rational_covers_recovered": 2,
+    "raw_coefficient_bits": [
+      2464,
+      1766
+    ],
+    "reduced_degree4_coefficient_bits": [
+      39,
+      44
+    ]
+  },
+  "family": "MW16-05",
+  "fixed_compaction_columns": [
+    6,
+    7
+  ],
+  "parameter": "3/17",
+  "schema": "constructed-class-blind-comparison.v1",
+  "status": "PASS",
+  "v3_arm": {
+    "backend_search_wall_seconds": 60.12927732511889,
+    "chart_bound": 125000,
+    "charts": 100,
+    "completed_charts": 100,
+    "final_rank_lower_bound": 22,
+    "first_two_directions_seconds_including_preparation": 38.01064894796582,
+    "fixed_class_evaluation_wall_seconds": 0.854901376995258,
+    "fixed_class_independent_replay_seconds": 0.006475081027019769,
+    "fixed_cover_earliest_prefix_ranks": [
+      22,
+      22
+    ],
+    "fixed_covers_recovered_from_new_subgroup": 2,
+    "full_search_wall_seconds": 214.11883446900174,
+    "gain_times": [
+      {
+        "chart": 1,
+        "rank": 17,
+        "search_arm_seconds": 6.935355219990015
+      },
+      {
+        "chart": 2,
+        "rank": 18,
+        "search_arm_seconds": 12.980481681996025
+      },
+      {
+        "chart": 3,
+        "rank": 19,
+        "search_arm_seconds": 20.321055557986256
+      },
+      {
+        "chart": 4,
+        "rank": 20,
+        "search_arm_seconds": 30.04620372300269
+      },
+      {
+        "chart": 5,
+        "rank": 21,
+        "search_arm_seconds": 46.010405492037535
+      },
+      {
+        "chart": 6,
+        "rank": 22,
+        "search_arm_seconds": 78.93138698703842
+      }
+    ],
+    "initial_generic_rank": 16,
+    "landscape_seconds": 115.29347977397265,
+    "map_seconds": 16.470981343300082,
+    "preparation_wall_seconds": 24.12852746399585,
+    "rank22_prefix_seconds_including_preparation": 103.96155425300822,
+    "replay_wall_seconds_including_serialization_failure": 19.676927658962086,
+    "retained_failed_preparation_wall_seconds": 0.9016398019739427,
+    "stop_reason": "CHART_BOUND"
+  }
+}

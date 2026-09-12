@@ -4,7 +4,9 @@ Research repository. Keep changes reproducible, claims fail-closed, and navigati
 
 ## Research posture
 
-All programmes are open for theorem-directed breakthrough work. Large searches,
+The active programme is elliptic curves and their supporting K3 constructions.
+Other projects are preserved under `research/archive/non-elliptic/`; their old
+runbooks and TODOs are historical, not an active work queue. Large searches,
 descents, neighbour enumerations, specialization sweeps, and comparable
 compute-heavy campaigns must still be explicitly in scope, mathematically
 motivated, checkpointed, and reproducible.
@@ -13,12 +15,48 @@ motivated, checkpointed, and reproducible.
 
 1. `research/MATH_STATUS.json` — mathematical status.
 2. Canonical proof/source notes referenced by that file.
-3. Generated certificates under `artifacts/generated-results/`.
+3. Generated certificates under `research/artifacts/generated-results/`.
 4. Exploratory notes.
-5. `research/archive/` — historical context only.
+5. `research/archive/` — historical context. Archived programmes retain canonical
+   evidence through the live ledger, with `programme_status: archived`; this flag
+   is separate from mathematical state.
 
 `research/STATUS.md` is generated. Regenerate it through the repository status
 renderer; never edit it by hand.
+
+## Find prior work before computing
+
+Start with `research/README.md`, `research/KNOWLEDGE_BASE.md` and the generated
+catalogue in `research/index/`. Search the current tree before designing a
+calculation, including historical failure reasons:
+
+```sh
+python3 research/scripts/research.py search "your topic"
+python3 research/scripts/research.py show CLAIM-ID
+python3 research/scripts/research.py routes --area elliptic-curves
+python3 research/scripts/research.py work --area elkies-k3
+```
+
+Read full scopes, replacements and retained checkpoints. Dated runbooks,
+historical inventory totals and `LIVE_STATUS.json` snapshots are not current
+instructions or evidence that a process is running. Missing local artifacts
+must not trigger automatic reconstruction.
+
+When work changes an algorithm or invalidates an approach, update the sourced
+record in `research/knowledge/lessons.json`: applicability, implementation,
+failed approach, exact boundary and the condition for revisiting it. Preserve
+the underlying experiment. `make render-navigation` regenerates status and
+indexes; `make check-navigation` checks metadata and links without research
+calculations. Generated navigation is not a second mathematical authority.
+
+Use `research/knowledge/WORK_LEDGER.md` for unknowns and suggested next gates.
+Maintain `research/knowledge/work_items.json` with the canonical claim, next
+step, completion evidence and prerequisites; review affected scope fingerprints
+after a result changes. Work items are unscheduled proposals. Every inherited
+retrospective checkbox is preserved in `research/knowledge/legacy_work_review.json`;
+do not recreate its completed subsets as new tasks. `research.py resources`
+also exposes K3 process mechanisms and the curve inventory. Use `--history`
+to include other archived programmes. `show ID` can read any retained claim.
 
 ## Editing discipline
 

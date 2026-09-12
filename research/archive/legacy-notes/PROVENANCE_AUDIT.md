@@ -49,7 +49,7 @@ the formalization and does not infer discovery priority from the later proof.
 The audited commit has no license file.  The integration therefore records
 authorship and an immutable source link and supplies a target that builds the
 upstream checkout, rather than copying or adapting its Lean source.  See
-[Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md) for the theorem-by-theorem scope and reproduction
+[Lean foundational-map audit](../non-elliptic/verified/LEAN_FOUNDATIONAL_MAP.md) for the theorem-by-theorem scope and reproduction
 instructions.
 
 ## Later exposition, not discovery provenance
@@ -106,7 +106,7 @@ search on 22 July 2026 did not locate an earlier source for this exact uniform
 boundary-lattice formulation.  The repository records that negative search
 result without making a priority claim.  The theorem and its explicit scope
 boundary are in the
-[marked-point dimension-barrier note](../../extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md).
+[marked-point dimension-barrier note](../non-elliptic/extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md).
 
 ## Juntang Zhuang's quartic compilation
 
@@ -129,7 +129,7 @@ not infer discovery priority for
 the individual quartic formulas.  The local integration does not copy the
 upstream checker: it reconstructs the maps from compact formulas and derives
 their weighted-seed resolvents and canonical boundaries independently.  The
-result is the [quartic-islands audit](../../extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md):
+result is the [quartic-islands audit](../non-elliptic/extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md):
 all three have degree four and `S_4` monodromy; Island A is the canonical
 triple-zero seed, while B and C are split seeds with extra roots `3` and
 `-1/2`; none is a cancellation `(m,r,h)` normal form.
@@ -170,11 +170,11 @@ DVEZ/Zhao implication to `not GMC(158)` is now also proved locally through
 Gaussian contraction, the countable-union lemma, and formal inversion.  This
 reproduction does not transfer authorship or constitute review.  Full
 formulas, evidence labels, and reproduction scope are in the
-[external-consequences note](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+[external-consequences note](../non-elliptic/extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
 
 Long's Lagrange--Good discussion subsequently motivated a distinct internal
 construction: the repository's
-[weighted-seed Gaussian bridge](../../extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
+[weighted-seed Gaussian bridge](../non-elliptic/extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
 That theorem uses a new polynomial auxiliary coordinate to cancel the Good
 determinant for every normalized inverse seed.  It is proved and exactly
 checked locally, is not asserted in Long's paper, is not attributed to Long,

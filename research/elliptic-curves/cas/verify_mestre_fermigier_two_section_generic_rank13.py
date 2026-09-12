@@ -1,24 +1,17 @@
 #!/usr/bin/env python3
-"""Certify thirteen independent sections on the Fermigier two-section curve.
+"""Rejected mixed-label rank-13 entry point; retained helpers support its audit.
 
-The exact component identity supplies twelve visible Mestre sections, the
-Fermigier line, and the reconstructed second line over ``Q(u)(T)``.  This
-checker selects the first eleven visible points and both affine sections.
-
-For a putative relation between these thirteen generic sections, every good
-specialization has the same relation.  The thirteen fixed exact finite
-quotients below make its coefficient vector zero modulo 3.  The generic
-curve has no rational 3-torsion: at the smooth specialization ``u=-5,T=1``
-its reduction modulo 19 has order 28.  Hence the relation is divisible by 3,
-and repeated division proves it is zero.  This is a generic rank-at-least-13
-certificate, not a saturation, Shioda, or rank-upper-bound computation.
-
-All section coordinates are obtained from the compact root formulas and the
-triangular square-root recurrence; no universal two-section residual is
-expanded.
+Sorting roots and choosing positive ordinate branches independently at each
+specialization changes column identities. The old stacked matrix cannot prove
+generic rank13. EC-MF2S13 records the corrected coherent lower bound11.
+Use verify_mestre_parent_and_label_audits.sage --check for the current replay.
+The original source and result are preserved in the cleanup archive.
 """
 
 from __future__ import annotations
+
+if __name__ == "__main__":
+    raise SystemExit("REJECTED rank-13 certificate: mixed generic section labels. Use verify_mestre_parent_and_label_audits.sage --check; corrected lower bound11.")
 
 import argparse
 from fractions import Fraction
@@ -38,9 +31,8 @@ MODULUS = 3
 TORSION_SPECIALIZATION = (Q(-5), Q(1))
 TORSION_REDUCTION_PRIME = 19
 
-# Each listed quotient raises the combined rank by one.  The first eleven
-# columns are visible points in their fixed primitive order; columns twelve
-# and thirteen are respectively Fermigier's line and the new second line.
+# Historical probe roster. Sorted visible positions and positive extra signs
+# are not fixed generic labels; the coherent audit corrects both separately.
 PROBES = (
     (Q(-5), Q(1), 23),
     (Q(-5), Q(1), 41),
@@ -112,73 +104,8 @@ def torsion_exclusion() -> dict[str, object]:
 
 
 def replay() -> dict[str, object]:
-    rows: list[tuple[int, ...]] = []
-    records = []
-    for index, ((u, parameter, prime), expected_order) in enumerate(
-        zip(PROBES, EXPECTED_GROUP_ORDERS), start=1
-    ):
-        coefficients, points = specialized_points(u, parameter)
-        selected = basis_points(points)
-        verify_point_equations(coefficients, selected)
-        signature = mod_l_reduction_signature(
-            coefficients, selected, prime, modulus=MODULUS
-        )
-        if signature.group_order != expected_order or signature.quotient_dimension != 1:
-            raise AssertionError("a frozen Fermigier quotient probe changed")
-        before_rank, _ = gf_l_rank_and_pivots(rows, len(selected), MODULUS)
-        candidate_rows = [*rows, *signature.rows]
-        after_rank, _ = gf_l_rank_and_pivots(
-            candidate_rows, len(selected), MODULUS
-        )
-        if after_rank != index or after_rank != before_rank + 1:
-            raise AssertionError("a quotient probe no longer raises rank by one")
-        rows.extend(signature.rows)
-        records.append(
-            {
-                "u": rational_text(u),
-                "T": rational_text(parameter),
-                "reduction_prime": prime,
-                "finite_group_order": signature.group_order,
-                "quotient_rows": [list(row) for row in signature.rows],
-                "combined_rank_after_probe": after_rank,
-            }
-        )
-    rank, pivots = gf_l_rank_and_pivots(rows, 13, MODULUS)
-    if rank != 13 or pivots != tuple(range(13)):
-        raise AssertionError("the Fermigier generic independence matrix changed")
-    return {
-        "status": "generic rank-at-least-13 finite-reduction certificate verified",
-        "base_field": "Q(u)(T), on v=(u^2+u+2)/u",
-        "basis": [
-            "the first eleven primitive visible sections",
-            "the Fermigier affine section",
-            "the reconstructed second affine section",
-        ],
-        "section_count": 13,
-        "descent_modulus": MODULUS,
-        "torsion_exclusion": torsion_exclusion(),
-        "quotient_probes": records,
-        "combined_exact_rank_over_F3": rank,
-        "conclusion": "the two affine sections, together with eleven visible sections, are independent over Q(u)(T); the Fermigier two-section component has generic Mordell-Weil rank at least 13",
-        "not_established": [
-            "generic rank at least 14 or independence from any separate rank-13 family",
-            "saturation, pair intersections beyond the recorded finite meeting, or a Shioda Gram matrix",
-            "a generic rank upper bound",
-        ],
-    }
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path)
-    args = parser.parse_args()
-    rendered = json.dumps(replay(), indent=2, sort_keys=True) + "\n"
-    if args.output is None:
-        print(rendered, end="")
-    else:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(rendered)
-
-
-if __name__ == "__main__":
-    main()
+    """Prevent import callers from reviving the rejected generic-rank claim."""
+    raise RuntimeError(
+        "REJECTED rank-13 certificate: mixed section labels; "
+        "use verify_mestre_parent_and_label_audits.sage --check for lower bound11"
+    )

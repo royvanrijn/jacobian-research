@@ -1,0 +1,44 @@
+{
+  "atlas_per_target": "vertical x; chords through +/-17 generic sections; one existing alternate-fibration fibre",
+  "basis_invariant_rank_jump_decomposition": false,
+  "complexity_order": [
+    "degree_over_base",
+    "normalization_genus"
+  ],
+  "cover_equivalence": "over the fixed original base: monic branch polynomial equal and twist ratio a rational square",
+  "global_minimum_genus": "UNKNOWN",
+  "limits": {
+    "covers_per_target": 36,
+    "jobs": 1,
+    "targets": 25,
+    "wall_seconds_per_run": 300
+  },
+  "new_point_searches": false,
+  "parameters": {
+    "11952": "110314/102227",
+    "302": "0"
+  },
+  "runtime": "SageMath version 10.9, Release Date: 2026-05-04",
+  "schema": "elliptic-curves.principal28-ancestry-plan.v1",
+  "selection_mode": "retrospective_known_high_rank",
+  "sources": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "artifacts/generated-results/elliptic-curves/curve302_recovered_mw17_parent_v1.json": "d39766426184121e118eb9c3b8f27e968e60483aefa70adcbb3b6151e9709b40",
+    "artifacts/generated-results/elliptic-curves/inventory188_public28_reproduction_v1.json": "8ddc99180ab3f5455e60653afef6eeb30621000ad9daa228b0a941e37c4c92f2",
+    "artifacts/generated-results/elliptic-curves/rank_accessibility_subsets_v1/inputs.json.gz": "a3740b2aee5f144b76d246cb58c8d7fd20998d9f72a5791e4be30f898d870ed9",
+    "artifacts/generated-results/elliptic-curves/rank_triangle_v1/geometry.json": "161d3fa512f1ef26d078e385d6597fa0ba701fa517d9db112cc10914b902d411",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_equation_v1.json": "103a1e9cdcfb77dd89d9fd0d54a0db25e2bae2fc93f7423dc023425f3fa8e1cf",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_rr_v1.json": "fd98185a2c1a64f84ccfc6c4c8680d49d4d49dcfd15567044f9d3e53e635d180",
+    "artifacts/generated-results/elliptic-curves/x1092_class1_realization_trace_v1.json": "112100dd1d79687db92153953f237c526fcde910e54f5c17c7bf47ac13a8c21e",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-inputs/parents/11952.json": "fc2501f81ee46e2a5c72a87b3b001a16f1bf87ddb6aba54ed49111f11643a637",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/principal28_ancestry.sage": "143c55100ac01a92eab18174dc5932712b8b76d8bb0b689fb5ce5d1d79d4033b",
+    "elliptic-curves/cas/rank_triangle_geometry.sage": "6125a36c1a88986f208585fc78d390aa337678308f2c56bfeef3c7a5b18fee8b",
+    "elliptic-curves/cas/verify_principal28_ancestry.sage": "edf6c0e3d7ee6fb6bbcd3f517d1b414d75f9a73e71db35f9052ef8bd69231df7"
+  },
+  "targets": {
+    "11952": 11,
+    "302": 14
+  }
+}

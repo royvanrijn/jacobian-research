@@ -1,0 +1,10 @@
+{
+  "seconds": 60,
+  "selection": "unique minimum-genus cover in each already frozen target row; no new curves",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/geometry.json": "3c6923aaf0db30346fded602e3a239da264c4179d17e2dcc61992ca0efe4ca41",
+    "artifacts/generated-results/elliptic-curves/rank_ancestry_principal28_v1/verified.json": "ef3d608070c05390140dd375ac5dd9ca978a478b0c2f3aed8c2d11b45de672d5",
+    "elliptic-curves/cas/analyze_principal28_covers.sage": "bbc62e035f6a1b7a44d85f0f2d659db43b78f1728af3d700a43231673ad3a8db"
+  },
+  "tests": "exact trace identities and pairwise branch gcds within each fibre"
+}

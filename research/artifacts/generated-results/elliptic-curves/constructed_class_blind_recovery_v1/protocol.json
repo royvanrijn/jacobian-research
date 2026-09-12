@@ -1,0 +1,40 @@
+{
+  "blindness": "Separate fresh-context cover worker reads only covers.json, permitted algorithm sources/docs and its own generated files. Root handles generic-only V3 and independent rational verification. Shared filesystem separation is an instruction/dataflow boundary, not OS access isolation.",
+  "comparison": "Report setup, reduction, search, verification and total costs separately; count recovered fixed covers separately from new V3 subgroup directions. No timing superiority claim from unequal or incomplete exposure.",
+  "cover_preparation": "Use established genus-one minimisation/reduction where available; retain all transformations and coefficientwise identities. A bounded miss or unavailable backend cannot establish point absence.",
+  "forbidden": [
+    "known exceptional points",
+    "oracle square roots in the cubic field",
+    "retrospective point combinations",
+    "old point-search output as execution input"
+  ],
+  "frozen_inputs": {
+    "covers.json": "a8218511b1ac1b2def5dafe9c7803ebbdb0d33a7a0ffffca1c8e33a090efca1f",
+    "generic.json": "b8ce5170aa69a31145e4faa48ed1f4e550a6390343f0e53816cf3242f448a153"
+  },
+  "input_bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_constructed_class_compaction_v1.json": "dc82ce34d07078e4546cc2b9218b971d79a77dcfdf61d5432e38b50c76f04c64",
+    "artifacts/generated-results/elliptic-curves/rank_jump_reference_strict_class_construction_inputs_v1.json": "0a3980b6ab354d3c365160afc175b191fb39c5c777981a8fc20f5e5c0edd78ee",
+    "elliptic-curves/rank-jump/prepare_constructed_class_blind.py": "4a8f02bbdc269cbe30f11ac89c3a7fdab8d17b7f199485310c0a6f9c4b083924"
+  },
+  "limits": {
+    "computation_seconds_per_arm": 1200,
+    "maximum_parallel_workers_per_arm": 1,
+    "maximum_single_preparation_step_seconds": 60,
+    "rss_bytes_per_worker": 2147483648,
+    "v3_chart_height": 125000,
+    "v3_maximum_charts": 100,
+    "v3_seconds_per_chart": 10,
+    "v3_seconds_per_map": 5
+  },
+  "prior_work": [
+    "elliptic-curves/rank-jump/CONSTRUCTED_CLASS_BLOCK_AND_RATIONAL_LIFTS.md",
+    "elliptic-curves/rank-jump/TWO_CONSTRUCTED_STRICT_CLASSES_AND_302.md",
+    "elliptic-curves/notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md"
+  ],
+  "question": "Recover points on two previously fixed extra classes without point-oracle inputs; compare ordinary V3 initialized only with the same generic subgroup.",
+  "schema": "constructed-class-blind-experiment.v1",
+  "scope": "One bounded paired experiment. No relation recollection, full class group, Selmer upper bound, parameter sweep, new curve, or rank upper bound.",
+  "selection": "User-fixed MW16-05 at t=3/17 and compaction columns 6 and 7; retrospective positive control, not prospective fibre selection.",
+  "success_gate": "Primitive rational cover coordinates, exact transport to the original elliptic equation, beta*xi^2=4*x-theta, and independent exact-arithmetic replay; no oracle-derived discovery input."
+}

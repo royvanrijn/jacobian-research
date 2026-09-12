@@ -199,6 +199,13 @@ The outcome does not impose its phase boundary on the production constructor.
 
 ## Replay
 
+The retained run ledger records `execution.requested=false` and zero completed
+record replays. The wrapper's `--check` is mutually exclusive with `--execute`;
+checking the ledger does not run Magma. The Sage control certificate performs
+exact arithmetic and must be scoped separately from navigation checks.
+The one-day execution block below is a historical reproduction option, not
+a cleanup task or a consequence of finding missing local transcripts.
+
 ```bash
 python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
 python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --check

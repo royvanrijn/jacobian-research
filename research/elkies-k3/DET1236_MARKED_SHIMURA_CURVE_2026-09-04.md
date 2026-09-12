@@ -301,9 +301,9 @@ On the genus-two model, the involution induced by `w_3` is `x -> -x` and
 its rational fixed locus is exactly `(0,+/-3)`. Up to interchanging those two
 signs, one is the image of the pair of rational discriminant `-3` points on
 `C_1236`; the other is the image of the conjugate discriminant `-24` pair.
-Consequently both fixed fibers are understood. The remaining displayed
-points, beginning with `x=+/-1/3`, `+/-1`, and `+/-1/5`, are the first
-non-fixed fibers whose lift squareclasses must be computed.
+Consequently both fixed fibers are understood. The later candidate calculation
+below evaluates all twelve non-fixed fibers. Those evaluations need not be
+repeated; only the Shimura branch-orbit identification remains open.
 
 | point class on `C_1236` | result |
 |---|---|
@@ -631,6 +631,14 @@ Only the marked Shimura branch-orbit identification remains open.
 
 ## Replay and independence
 
+Run from `research/`. These are separate proof stages, not one cheap replay
+command. The original marked-curve certificate retains its Phase-1 wording
+about two known CM points and a missing cover. The later candidate and complete
+CM-locus certificates supersede that historical frontier; they preserve the
+exact Phase-1 lattice and curve identification. The candidate `check` rebuilds
+class fields and finite-extension character sums, while the quotient
+`--fresh` repeats quadratic Chabauty. Neither was run for this cleanup.
+
 The checker is
 [`scripts/certify_det1236_marked_shimura_curve.sage`](scripts/certify_det1236_marked_shimura_curve.sage),
 and the generated certificate is
@@ -673,7 +681,9 @@ sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage
 sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage check
 ```
 
-The replay reads only the lattice catalogue and its transcendental-arithmetic
-ledger. It does not read curve 356, curve 385, or any frozen prospective
+The marked-curve checker reads the lattice catalogue, transcendental-arithmetic
+ledger and complete genus-two rational-point certificate. The candidate
+checker instead reconstructs its literal algebraic input with Sage and its
+elliptic-curve database. It does not read curve 356, curve 385, or any frozen prospective
 experiment artifact. It performs no K3 equation work and no broad rank
 search.

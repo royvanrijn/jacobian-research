@@ -1,0 +1,195 @@
+# Provenance audit
+
+Audited 20--22 July 2026. This note separates the earliest public announcement
+located so far from exact mathematical verification and from later structural
+exposition.
+
+## Public trail located
+
+The earliest primary public item located is Levent Alpöge's X post, status
+[`2079028340955197566`](https://x.com/__alpoge__/status/2079028340955197566).
+The X page was not readable through the audit environment, so its text and
+timestamp could not be captured directly.
+
+Two same-day sources link that exact post and independently transcribe the same
+map:
+
+- [Zihan Zhang's source audit](https://zzhang-iu.github.io/papers/direct-consequences-jacobian/index.html)
+  dates the post to 20 July 2026 UTC and says it credits Akhil with posing the
+  question and Fable with producing the example.
+- [Alexis Gallagher's explainer](https://jacobianfun.org/jacobian-explained)
+  describes Alpöge's announcement as 19 July 2026 and credits “Levent Alpöge +
+  Fable.” The one-day discrepancy is consistent with timezone presentation but
+  cannot be resolved without a direct timestamp or archive of the post.
+
+Both sources give, in the same coordinate order,
+
+\[
+\begin{aligned}
+F_1&=(1+xy)^3z+y^2(1+xy)(4+3xy),\\
+F_2&=y+3x(1+xy)^2z+3xy^2(4+3xy),\\
+F_3&=2x-3x^2y-x^3z,
+\end{aligned}
+\]
+
+the determinant `-2`, and the same three-point collision stored here. This
+agrees with the repository's independent finite certificates.
+
+## Lean formalization
+
+[Dean Cureton's `deancureton/jacobian`](https://github.com/deancureton/jacobian)
+provides a separately authored Lean 4 formalization.  Commit
+[`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88),
+authored 20 July 2026, proves the determinant and three rational evaluations
+for the displayed map, then proves a determinant-one rescaling noninjective
+over every field and specializes the result to `C`.  Its README credits
+“Levent Alpöge/Fable 5's counterexample”; this repository credits Cureton for
+the formalization and does not infer discovery priority from the later proof.
+
+The audited commit has no license file.  The integration therefore records
+authorship and an immutable source link and supplies a target that builds the
+upstream checkout, rather than copying or adapting its Lean source.  See
+[Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md) for the theorem-by-theorem scope and reproduction
+instructions.
+
+## Later exposition, not discovery provenance
+
+Gallagher's page explicitly distinguishes the externally announced map from
+its own weighted-lift interpretation and higher-degree seed family. It names
+its `RESEARCH.md` and verification scripts as the source of truth for those
+follow-on claims, and says it does not establish whether the discoverer's
+derivation used that mechanism.
+
+Zhang's page is a same-day consequence audit, not the discovery record. Its
+value for provenance is its direct link to the announcement and exact formula
+transcription.
+
+## Marked-projective-root interpretation
+
+Qiaochu Yuan's same-day MathOverflow update links a geometric interpretation
+to [Andy Jiang (`@davikrehalt`), status
+`2079175065695035442`](https://x.com/davikrehalt/status/2079175065695035442).
+The status ID encodes a posting time of 20 July 2026 at 12:02:19 UTC. The link
+and attribution were located for this audit at 20 July 2026 22:43 UTC
+(21 July 00:43 CEST).
+
+The repository adopts from that post the organization of the source as binary
+cubics with a marked simple projective root. The affine cubic, its derivative
+reconstruction, generic degree, discriminant, root at infinity, and `3/1/0`
+fiber results substantially overlap the pre-existing cubic marked-root and image results material in
+`IMAGE_AND_NONPROPERNESS.md` and its exact scripts. The new
+`MARKED_ROOT_MODEL.md` supplies the two-chart global isomorphism proof and
+credits the public post for the projective marked-root formulation. This
+audit has not established priority for that formulation, and the repository
+makes no such claim.
+
+## Marked-point dimension barrier
+
+The universal factorization setup, the boundary classes `(1,1)` and `(b,a)`,
+and the exact cubic contact classification were already present in the
+repository's scoped factorization-slice note.  On 22 July 2026 the repository
+isolated the uniform marked-point specialization
+
+\[
+ [R_n]=(n-1,1),\qquad [E_H]=(1,1),
+\]
+
+and the determinant `n-2` of the resulting boundary map.  This gives the
+complete unit/Picard obstruction in degree two and shows that affine space can
+occur in the universal marked-point/hyperplane-complement family only in
+dimension three.
+
+The argument depends conceptually on Jiang's marked-projective-root
+organization and on the repository's prior factorization-slice calculation;
+it is not attributed to the original counterexample announcement.  A limited
+search on 22 July 2026 did not locate an earlier source for this exact uniform
+boundary-lattice formulation.  The repository records that negative search
+result without making a priority claim.  The theorem and its explicit scope
+boundary are in the
+[marked-point dimension-barrier note](../../extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md).
+
+## Juntang Zhuang's quartic compilation
+
+On 21 July 2026, Juntang Zhuang published
+[`jzkay12/jacobian_conjecture`](https://github.com/jzkay12/jacobian_conjecture)
+with a PDF titled *Explicit Polynomial Maps with Constant Jacobian and
+Verified Collisions* and parallel Python and Wolfram Language checkers.  This
+audit pins commit
+[`1ff68e870f66afec8c6611f910fcc8f5522fdbce`](https://github.com/jzkay12/jacobian_conjecture/commit/1ff68e870f66afec8c6611f910fcc8f5522fdbce).
+The source names three quartic examples `F4a`, `F4b`, and `F4c`, labels them
+Islands A, B, and C, displays their expanded rational-coefficient maps, and
+checks their constant Jacobians and listed rational collisions.  The PDF is
+authored by Juntang Zhuang and says it was inspired by Levent Alpöge's public
+post.
+
+This repository credits Zhuang for that public compilation, notation, and
+the external finite certificates.  No license file was present at the pinned
+commit, so no upstream source code or prose is copied here.  This audit does
+not infer discovery priority for
+the individual quartic formulas.  The local integration does not copy the
+upstream checker: it reconstructs the maps from compact formulas and derives
+their weighted-seed resolvents and canonical boundaries independently.  The
+result is the [quartic-islands audit](../../extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md):
+all three have degree four and `S_4` monodromy; Island A is the canonical
+triple-zero seed, while B and C are split seeds with extra roots `3` and
+`-1/2`; none is a cancellation `(m,r,h)` normal form.
+
+## Christopher D. Long's external consequences
+
+Christopher D. Long submitted
+[*Small Counterexamples to the Gaussian Moments Conjecture*](https://arxiv.org/abs/2607.18186)
+as arXiv:2607.18186v1 on 20 July 2026 and
+[*Counterexamples to the (xz)-Conjecture and the Mathieu Conjecture for
+(SU(2))*](https://arxiv.org/abs/2607.19012) as arXiv:2607.19012v1 on 21 July
+2026.  These are independently authored external manuscripts, not external
+reviews of this repository.
+
+The first paper records three provenance levels which must not be collapsed.
+The announced JC(3) map motivated the search; tracking that map through a BCW
+reduction gives a nonexplicit fixed-dimensional route to `not GMC(158)`;
+Long's direct three-Gaussian witness separately proves `not GMC(n)` for all
+`n>=3` and was not derived from the announced map.  The determinant-one map
+used in the route is exactly
+
+\[
+ L=\operatorname{diag}(1/2,1/2,-1/2)\circ
+ F\circ\operatorname{diag}(1,2,2),
+\]
+
+where `F` is the repository's determinant `-2` presentation.  This identity
+and its transported three-point collision are locally checked.
+
+The second paper's `(xz)` and `SU(2)` witnesses were likewise motivated by the
+post-JC search rather than extracted from the marked-root map.  The repository
+reproduces the exact beta/binomial and Laurent-polynomial identities.  Its
+local `SU(2)` proof now derives normalized Haar measure from the unit
+three-sphere and Hopf coordinates.  The repository also reproduces all 18 BCW
+steps, the dimensions `3 -> 39 -> 79`, and the final cubic-homogeneous
+collision, with a separate standard-library replay.  The fixed-dimensional
+DVEZ/Zhao implication to `not GMC(158)` is now also proved locally through
+Gaussian contraction, the countable-union lemma, and formal inversion.  This
+reproduction does not transfer authorship or constitute review.  Full
+formulas, evidence labels, and reproduction scope are in the
+[external-consequences note](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+
+Long's Lagrange--Good discussion subsequently motivated a distinct internal
+construction: the repository's
+[weighted-seed Gaussian bridge](../../extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
+That theorem uses a new polynomial auxiliary coordinate to cancel the Good
+determinant for every normalized inverse seed.  It is proved and exactly
+checked locally, is not asserted in Long's paper, is not attributed to Long,
+and has no recorded external specialist review.
+
+## Not yet located
+
+- the original Fable conversation or full prompt;
+- discovery/search code, model and sampling settings, random seeds, or
+  intermediate candidates;
+- a repository or immutable archive owned by the discoverer;
+- a paper or preprint giving the construction and attribution history; or
+- a direct archived copy of the announcement with an unambiguous UTC timestamp.
+
+Accordingly, the formula and public attribution trail are corroborated, but
+the construction provenance is still incomplete.  Mathematical validity rests
+on the executable core certificate together with the written proofs of the
+subsequent structural theorems, not on attribution or source authority.

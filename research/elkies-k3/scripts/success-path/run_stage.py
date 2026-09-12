@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""List or run a canonical H3 equation-lift success-path stage."""
+"""List or explicitly replay a historical H3 equation-lift prefix stage."""
 
 from __future__ import annotations
 
@@ -27,6 +27,7 @@ def main() -> None:
 
     ledger = json.loads(LEDGER.read_text())
     records = all_records(ledger)
+    print("HISTORICAL_PREFIX|endpoint complete; see EC-K3-H3-Q12O5867-ENDPOINT-QQ", flush=True)
     if args.list:
         for record in records:
             runnable = "run" if record.get("command") else "--"

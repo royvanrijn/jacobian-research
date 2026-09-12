@@ -162,7 +162,7 @@ first exact escape, the unused portion of the 301-chart allowance switches to
 the established quotient-adaptive policy.  This gives treated zeros the same
 344-chart cap without repeating the parameter census.  The rescue is frozen
 but unrun.
-<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE 39ac93b60152bf88 -->
+<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE e5320f1f3bf33148 -->
 
 ### ICARM curve 356: rank at least 29 and the new rank-29 size record
 

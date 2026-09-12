@@ -1,0 +1,26 @@
+{
+  "candidate_rule": "all primitive pairs in [-A,A] x [1,B], ordered by short axis then long axis",
+  "factor_base_generation": "UNKNOWN_NOT_CERTIFIED",
+  "filter": "exact modular-root progression division by every support prime, including all powers; no score cutoff",
+  "full_class_group": false,
+  "global_class_2rank_estimate": null,
+  "input_sha256": "e934685aa3259b5ad0e7a050392aef513d43fa26314820a7edb9a33dcc0f010a",
+  "max_wall_seconds": 180,
+  "new_point_searches": false,
+  "rational_support_unchanged": true,
+  "rectangle": {
+    "A": 32,
+    "B": 8192,
+    "area_exponent": 18,
+    "lattice_cells": 532480,
+    "norm_triangle_upper_bound": "11331192919675976095498120289454518075392"
+  },
+  "selection": "minimum exact coefficient triangle bound among A*B=2^18 dyadic boxes",
+  "serious_density_gate": "at least100 independent noncanonical rows and at least5 percent of initial deficiency removed",
+  "setup_sha256": "ad8f41e9993dea063b3b171a7807eeee161347655c94b37f556e81ddf29a66ad",
+  "sources": {
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_relation_core.py": "ea1b382903f08240e8c9313470ad623cf871a3092aa501539d62cdecf4ef1275",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_skew_core.py": "347ce6bc4910b7a07a3c2b463f628f3252f8ce93131ae6481314c3e55b15af9e",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_skew_sieve.sage": "a2de3ce06119e6ba8e1181adf4f21e81d398d5ef80a8c8c8c3eb98f86a856816"
+  }
+}

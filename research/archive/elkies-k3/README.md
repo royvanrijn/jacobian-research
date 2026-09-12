@@ -4,7 +4,7 @@ Historical and superseded K3 work is indexed here. It is useful for provenance, 
 
 For current status use:
 
-- [`../../elkies-k3/README.md`](../../elkies-k3/README.md) — frozen programme milestone;
+- [`../../elkies-k3/README.md`](../../elkies-k3/README.md) — current programme map;
 - [`../../MATH_STATUS.json`](../../MATH_STATUS.json) — mathematical authority;
 - [`../../REPRODUCE.md`](../../REPRODUCE.md) — exact replay entry points.
 

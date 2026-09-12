@@ -1,0 +1,9 @@
+{
+  "failed_source": "elliptic-curves/rank-jump/check_frozen_dependency_continuation.sage",
+  "failed_source_sha256": "8cfc7a98f4f71ea84d3a6f0c0e60bc4a67ec2e22de66ef7aa6be1ccd908c9a28",
+  "failure": "ImportError: failed to map segment from shared object under the 1 GiB address-space bound",
+  "mathematical_modular_test_reached": false,
+  "prior_setup_cpu_seconds": "UNMEASURED; excluded from the component timing below",
+  "repair": "Use plain Python for the same fixed arithmetic, with the same 1 GiB address-space ceiling. No alternate atom, prime, word or parameter is tested.",
+  "stage": "Sage polynomial-ring coercion while preparing the distinguished norm"
+}

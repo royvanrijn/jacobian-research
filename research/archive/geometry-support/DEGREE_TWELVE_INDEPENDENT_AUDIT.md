@@ -1,7 +1,7 @@
 # Clean-room strengthening of the Degree-Twelve Local Singularity local singularity
 
 This audit isolates the algebraic heart of
-[DEGREE12_LOCAL_SINGULARITY.md](../../extended-geometry/DEGREE12_LOCAL_SINGULARITY.md) and checks it
+[DEGREE12_LOCAL_SINGULARITY.md](../non-elliptic/extended-geometry/DEGREE12_LOCAL_SINGULARITY.md) and checks it
 without SymPy or project algebra helpers.
 
 For one exchanged sixfold root, depress the cubic and write

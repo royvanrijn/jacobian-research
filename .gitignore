@@ -27,19 +27,19 @@ research/artifacts/verification/
 /research/artifacts/local/
 
 # Paper-local LaTeX build products
-/research/papers/**/*.aux
-/research/papers/**/*.log
-/research/papers/**/*.fls
-/research/papers/**/*.fdb_latexmk
-/research/papers/**/*.out
-/research/papers/**/*.toc
-/research/papers/**/*.bbl
-/research/papers/**/*.blg
-/research/papers/**/main.pdf
+/research/archive/non-elliptic/papers/**/*.aux
+/research/archive/non-elliptic/papers/**/*.log
+/research/archive/non-elliptic/papers/**/*.fls
+/research/archive/non-elliptic/papers/**/*.fdb_latexmk
+/research/archive/non-elliptic/papers/**/*.out
+/research/archive/non-elliptic/papers/**/*.toc
+/research/archive/non-elliptic/papers/**/*.bbl
+/research/archive/non-elliptic/papers/**/*.blg
+/research/archive/non-elliptic/papers/**/main.pdf
 
 # arXiv upload copies intentionally include their precompiled bibliographies.
-!/research/papers/**/arxiv-upload/
-!/research/papers/**/arxiv-upload/main.bbl
+!/research/archive/non-elliptic/papers/**/arxiv-upload/
+!/research/archive/non-elliptic/papers/**/arxiv-upload/main.bbl
 
 .lake/
 
@@ -362,3 +362,7 @@ research/elkies-k3/results/**/*.sqlite
 !/research/artifacts/generated-results/elliptic-curves/mestre_degree3_component_gate_v1.json
 !/research/artifacts/generated-results/elliptic-curves/curve302_integral_shell_inputs_v1.json
 !/research/artifacts/generated-results/elliptic-curves/curve302_integral_shell_lift_v1.json
+
+# Compact completion evidence used by the inherited EC/K3 cleanup review.
+!/research/artifacts/generated-results/elkies-k3-r17-norm12-1183a-streaming-character-closure-v1.json
+!/research/artifacts/generated-results/elkies-k3-r17-norm12-098fc-streaming-character-closure-v1.json

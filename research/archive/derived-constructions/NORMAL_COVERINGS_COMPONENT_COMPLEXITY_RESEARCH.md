@@ -51,11 +51,11 @@ The main external sources are:
 
 The relevant internal inputs are:
 
-- [`verified/FINITE_ETALE_KELLER_FIBERS.md`](../../verified/FINITE_ETALE_KELLER_FIBERS.md),
+- [`verified/FINITE_ETALE_KELLER_FIBERS.md`](../non-elliptic/verified/FINITE_ETALE_KELLER_FIBERS.md),
   for the determinant-one realization of a squarefree polynomial quotient;
-- [`verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md`](../../verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md),
+- [`verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md`](../non-elliptic/verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md),
   for the explicit quintic Hasse failure;
-- [`papers/common-arithmetic-fibers/sections/01-keller-fibers.tex`](../../papers/common-arithmetic-fibers/sections/01-keller-fibers.tex),
+- [`papers/common-arithmetic-fibers/sections/01-keller-fibers.tex`](../non-elliptic/papers/common-arithmetic-fibers/sections/01-keller-fibers.tex),
   for the current manuscript statement of the realization theorem.
 
 ## 2. Normal coverings

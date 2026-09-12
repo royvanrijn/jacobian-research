@@ -1,18 +1,30 @@
 # Rootless MW17 bisection-collision search
 
-This note defines the exact lattice gate for the proposed generic-rank-19
-search. It does **not** claim a new elliptic surface, a quadratic base change,
-or generic rank 19.
+This note preserves the lattice reduction, local compiler experiments and
+completed published-R17 bisection census. Consult these completed endpoints
+before treating a historical next step below as new work:
 
-> **Current-chain warning (2026-08-23).** The canonical H3 entrance is
-> `E7+E8/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4`; the q8 section has height
-> `24`, collision degree `10`, and uses the full normalization
-> `R*h*Dy == Ny*Dx mod Nx`. The later lattice/chamber chain reaches
-> rootless/MW17 through eleven further nef degree-two neighbours, but those
-> eleven equations have not been executed over characteristic zero. The
-> degree-46 child-section and no-`Dx` q-normalizer calculations later in this
-> note are historical diagnostics only. The authoritative repair ledger is
-> [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
+- **H3 q8:** the [corrected characteristic-zero construction](H3_Q8_REAUDIT_2026-08-22.md)
+  gives `13 -> 2 -> D13/MW4`. Its primitive section has height `24`, collision
+  degree `10`, and normalization `R*h*Dy == Ny*Dx mod Nx`. The source-side
+  degree-18 ambient and degree-46 child modules below are historical compiler
+  diagnostics. Later physical stages are indexed in the
+  [process atlas](ELKIES_K3_PROCESS_ATLAS.md); this note's old eleven-hop count
+  is not a current list of unexecuted equations.
+- **Published R17:** all 39,120 rational-bisection classes have exact equations
+  and distinct quadratic characters (`EC-K3-BISECT-EQUATION-BATCH`, below).
+  This closes the equal-cover collision search on that complete frame.
+  The [distinct-cover biquadratic construction](BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md)
+  is a separate proved rank-19 result.
+- **Alternate Q80:** the [direct11952 equation and saturated section basis](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md)
+  and [all 39,147 bisection characters](R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md)
+  are complete. That frame has neither equal-cover collisions nor
+  three-character closure. Higher-genus curves and other twist characters
+  remain outside this finite result.
+
+The [partial-result review](../knowledge/PARTIAL_REVIEW.md) records the precise
+limits and replay prerequisites of each retained experiment. Missing generated
+inputs do not authorize rebuilding these campaigns during repository cleanup.
 
 ## Lattice reduction
 
@@ -111,7 +123,7 @@ sage -python elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage
   --output artifacts/generated-results/elkies-k3-rootless-bisection-disjoint-frontier.json
 ```
 
-<!-- status-consumer: EC-K3-BISECT-DISJOINT-FRONTIER c7ad7497253ac0b3 -->
+<!-- status-consumer: EC-K3-BISECT-DISJOINT-FRONTIER ab184538a643a32f -->
 
 ## Equation-level entrance prerequisite
 
@@ -138,7 +150,7 @@ It uses a direct rational-function identity for the collision and an exact
 marked sections and reaches neither the later `q12,q12,q4,q6` pencils nor a
 rootless equation, so it supplies no bisection cover yet.
 
-<!-- status-consumer: EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION d18185784da1e93d -->
+<!-- status-consumer: EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION 9dbb1d9bb1868643 -->
 
 The first source-side degree-two neighbor is the marked class
 `D=O+(-P1)-F` on the explicit H3 `E7+E8/MW2` model. Its lattice shell name is
@@ -268,7 +280,7 @@ gate is to derive the finite vertical and resolved E7/E8 quotient conditions
 using this source-nef vertical divisor, and prove that their common kernel
 has dimension two.  Applying q=6 local conditions to the pre-reflection class
 or simply taking a ninth power is not a valid substitute.
-<!-- status-consumer: EC-K3-H3-Q8-AMBIENT 2e14dd27b9a3dd79 -->
+<!-- status-consumer: EC-K3-H3-Q8-AMBIENT e2b22858eb0b5f3c -->
 
 The actual q6 all-edge cover now also gives an exact generic-component layer
 for the source q8 E7 condition.  For each endpoint term
@@ -358,7 +370,9 @@ sage -python elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_marked_e7.sage \
 <!-- status-consumer: EC-K3-H3-Q8-EXTRA4-MARKED-E7-COVER 5deb19aa922fd23b -->
 
 E8 also adds no row to this ambient: `h(0)=1`, while each generator retains
-the same certified E8 `u`-floor.  Thus only five non-marked E7 edges remain.
+the same certified E8 `u`-floor. The five non-marked E7 edges were the next
+local layer at that stage. The corrected 342-column ambient is already
+rejected by its full-rank smooth block; those edges cannot restore a pencil.
 
 ```bash
 sage -python elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_e8_cover.sage \
@@ -391,8 +405,18 @@ checker; this subsection records only the marking identity.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage \
-  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking-2cover.json
 ```
+
+The wrapper executes `derive_h92_q6_child_q8_marking_2cover.sage` and emits
+`PASS_EXACT_Q8_MARKING_2COVER_CORRECTION`. The historical physical-target,
+finite-module and chord consumers below require the old
+`PASS_EXACT_Q6_CHILD_Q8_MARKING` schema, including its NS decomposition;
+the finite-module checker also requires collision degree 46. Renaming the
+corrected output or accepting its status in those consumers would not repair
+their mathematical inputs. For the current q8 hop use the corrected checker
+and the frozen tracked component-nef target in the
+[re-audit note](H3_Q8_REAUDIT_2026-08-22.md).
 
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 745bf011cb47e7f3 -->
 
@@ -409,8 +433,10 @@ V = -F + (3,5,6,4,2,3)_E6 + (4,5,7,10,8,6,4,2)_E8.
 
 In the pinned simple-root orders, its component degrees are
 `(-1,-1,0,0,0,0)` on `E6` and `(−1,0,0,0,0,0,0,0)` on `E8`.  These labels are
-lattice-only; matching them with actual resolved II*/IV* charts and compiling
-the corresponding finite quotient modules remains an equation-level task.
+lattice-only in this historical target generator. The corrected q8 checker
+now supplies the finite/infinity intersection and equation using the frozen
+component-nef representative; the old schema-dependent generator is retained
+for provenance.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
@@ -420,11 +446,12 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage 
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-PHYSICAL-ROOT-TARGET 064318c2afe537fd -->
 
 The Weyl-nef q8 fibre differs from this dominant D13 representative by four
-root reflections.  Its IV* ideal is the arm-invariant `(u^2,X,Y)`, and its
-finite q-regular module is `<(1,lift(R/Nx)),(0,f_II^2*f_IV^2)>`; the infinity
-lattice remains open.
+root reflections. Its IV* ideal is the arm-invariant `(u^2,X,Y)`, and its
+historical finite q-regular module is `<(1,lift(R/Nx)),(0,f_II^2*f_IV^2)>`.
+That degree-46 implementation did not complete the infinity intersection.
+The corrected degree-ten q8 construction has since completed both layers.
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE e2887bd2bd4f6c27 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE b9d168cb2d4d9a35 -->
 
 ### A certified lattice bisection pencil on the explicit child
 
@@ -453,8 +480,9 @@ This supplies one exact lattice bisection pencil, not its equation, branch
 divisor, quadratic extension, collision, or a rank claim.  In particular,
 the available standard-Weierstrass chord is for the divisor after translating
 the transported old zero to the Weierstrass infinity section.  That exact NS
-translation has not yet been transported for this component-nef class, so its
-existing local chord modules cannot yet be used as this bisection equation.
+translation was a missing step at this stage. The next subsection supplies
+the generic translation; it does not supply a resolved-chart transport. The
+current corrected q8 equation is certified separately in the re-audit note.
 
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-BISECTION-PENCIL 84142196f27e5e2d -->
 
@@ -476,20 +504,24 @@ pencil or produces a branch divisor.
 
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-CHORD-TRANSPORT c3896078bcdd432d -->
 
-At level zero this generic chord gives an exact quadratic function field. In
+For the historical degree-46 marking, level zero of this generic chord gives
+an exact quadratic function field. In
 the translated coordinates it is the line `y'=-y(S)`; its fixed intersection
 at `-S` is removed from the Weierstrass line intersection, leaving a monic
 quadratic in `x'`. Pulling this equation back by `tau_-P0` gives a curve of
 old-fibre degree two. Its discriminant is exactly
 `(-3*Nx^2-4*A*Dx^2)/Dx^2`; `Dx` is a square, while the degree-192 numerator
 is squarefree. Thus this uncorrected chord level has branch degree 192, so it
-is *not* a rational bisection and must not enter the collision hash.
+is *not* a rational bisection and must not enter the collision hash. The
+number 192 belongs to that old input; the current script computes its degree
+from the supplied chord and does not establish that number for the corrected
+primitive section.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_bisection_branch.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH 6d0dbb4b90b14710 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH c197757e2f9a3e48 -->
 
 The translation centre itself presents no additive-fibre obstruction: at both
 cusps the exact chord denominator is a unit, its translated cusp image has
@@ -1585,9 +1617,10 @@ collision.
 All 39,120 pinned classes now have exact equation-level records and pairwise
 distinct squareclasses.  Thus the pinned map is injective on its complete
 survivor set and supplies no common quadratic cover with a rank-two
-anti-invariant height matrix.  The 39,147 alternate classes are still only
-exact lattice candidates because that alternate finite-field endpoint has not
-been lifted to a characteristic-zero rootless surface.
+anti-invariant height matrix. The alternate frame has since reached the same
+equation-level injectivity endpoint: all 39,147 exact branch-cover records and
+their verified lifts are available in the
+[complete character exhaustion](R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md).
 
 Injectivity does not end the paired-cover programme.  Taking two distinct
 quadratic extensions gives a biquadratic base whose two new sections have
@@ -1599,19 +1632,26 @@ pair has base Jacobian rank at least 3.  Neither that pair nor the published
 rank-19 pair lies in the norm-four disjointness graph, so that graph is a
 priority heuristic rather than a valid hard filter for character independence.
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
-<!-- status-consumer: EC-K3-BISECT-ORBIT 81da2fd80c3623b6 -->
+<!-- status-consumer: EC-K3-BISECT-ORBIT de5b0a27d5cf4177 -->
 
 The alternate q80 q6 endpoint supplies a second, nonisometric rootless
-rank-17 lattice that is closer to the available finite-field equation route.
+rank-17 lattice, now realized by the direct11952 characteristic-zero equation.
 The streamed exact quotient has 39,147 section-nonnegative bisection orbits,
 with 805,466 unoriented norm-ten representatives.  It is independently
 cross-checked against PARI's signed short-vector count through norm ten;
-the finite-field endpoint has not been lifted to a characteristic-zero
-rootless surface, so these are not yet branch-cover records.
+the lattice enumeration is preserved here as an input to the later complete
+equation and character construction. Neither the equation nor its 39,147
+branch covers remains a pending lift.
 
 ```bash
 sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
   --frame-artifact artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json
 ```
 
-<!-- status-consumer: EC-K3-ALT-BISECT-ORBIT eca5fc0bfee5038d -->
+<!-- status-consumer: EC-K3-ALT-BISECT-ORBIT 55c1a21f7241c882 -->
+
+<!-- status-consumer: EC-K3-H3-Q8-QQ-D13 1dab3f25405e1a19 -->
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION 6a83ca559fed9c2b -->

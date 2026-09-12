@@ -1,0 +1,2311 @@
+{
+  "boundary": "Checks all256 retained divisor classes and independently replays all255 completed equation computations. Does not regenerate the incomplete shell traversal or the upstream surface realization; the pre-existing exact model/marking certificates are inherited.",
+  "candidate_divisors_checked": 256,
+  "common_base": "NOT_REACHED_NO_SPLIT_CARRIER",
+  "cpu_seconds": 72.50006613400001,
+  "exact_smooth_geometrically_rational_bisections": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    20,
+    21,
+    24,
+    25,
+    26,
+    31,
+    32,
+    36,
+    40,
+    41,
+    42,
+    44,
+    46,
+    48,
+    49,
+    50,
+    52,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    96,
+    97,
+    98,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    115,
+    118,
+    119,
+    120,
+    124,
+    125,
+    126,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    140,
+    141,
+    143,
+    145,
+    146,
+    148,
+    149,
+    150,
+    152,
+    153,
+    154,
+    155,
+    156,
+    159,
+    161,
+    162,
+    163,
+    165,
+    167,
+    168,
+    170,
+    172,
+    173,
+    174,
+    175,
+    176,
+    179,
+    180,
+    181,
+    183,
+    184,
+    185,
+    187,
+    190,
+    191,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    224,
+    225,
+    226,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    242,
+    243,
+    244,
+    245,
+    246,
+    248,
+    249,
+    251,
+    253,
+    254,
+    255
+  ],
+  "generic_sections_checked": 16,
+  "geometrically_reducible_residuals": [
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    22,
+    23,
+    27,
+    28,
+    29,
+    30,
+    33,
+    34,
+    35,
+    37,
+    38,
+    39,
+    43,
+    45,
+    47,
+    51,
+    53,
+    54,
+    65,
+    69,
+    91,
+    92,
+    93,
+    94,
+    95,
+    99,
+    100,
+    101,
+    102,
+    103,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    121,
+    122,
+    123,
+    127,
+    139,
+    142,
+    144,
+    147,
+    151,
+    157,
+    158,
+    160,
+    164,
+    166,
+    169,
+    177,
+    178,
+    182,
+    186,
+    188,
+    189,
+    192,
+    199,
+    206,
+    223,
+    227,
+    241,
+    247,
+    250,
+    252
+  ],
+  "ideal_class_increment": "UNKNOWN_NO_FRESH_FIBRES",
+  "inputs": {
+    "artifacts/local/elliptic-curves/marked-two-class-v1/compilation-v2.json": "900ae753ceb1d62b560933bae8c56bd3155c4b297c097443cb96f5976d2954ba",
+    "artifacts/local/elliptic-curves/marked-two-class-v1/frozen-candidates.json": "45266b9bc95e5d6bb1ca659555c6deb17a3e7fb3fc2761f90a0398669be7274e",
+    "artifacts/local/elliptic-curves/marked-two-class-v1/geometry.json": "b8a8063ce04179aef71d89ea1fa684d8738696b2c712f991a15e0dda959e445e",
+    "artifacts/local/elliptic-curves/marked-two-class-v1/protocol.json": "b26875c2ee795cd2c741945c87c1013a3255d7b0b26dbb1fe39fe4ca2d10a9be",
+    "elliptic-curves/rank-jump/verify_marked_two_class.sage": "84c0550649a7a3d52c6d15668007fe78750ba496dffbc247d920655de1cda60d"
+  },
+  "marking": "full integral rank17 frame, determinant948, exact U and A1 transports",
+  "nonconstant_j": true,
+  "nonsplit_at_control": [
+    {
+      "absolute_numerator_floor_sqrt": "31768003751623341549372111551102",
+      "branch_value_at_control": "-1009206062363154703358603337587588882710094179416724003015970999/44321491471654105583906550488459308900",
+      "denominator_floor_sqrt": "6657438807203120330",
+      "index": 0,
+      "local_nonsplitting": {
+        "branch_value_residue": 35,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "560578670537252909464871853346",
+      "branch_value_at_control": "314248445861313943171537239266805503196238567111935953203881/295142519139783600174868725760000",
+      "denominator_floor_sqrt": "17179712428902400",
+      "index": 1,
+      "local_nonsplitting": {
+        "branch_value_residue": 23,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4770977312384267186994",
+      "branch_value_at_control": "22762224515285405405939976818887309645436481/1004412308619157411600",
+      "denominator_floor_sqrt": "31692464540",
+      "index": 2,
+      "local_nonsplitting": {
+        "branch_value_residue": 11,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1579525536335711791230",
+      "branch_value_at_control": "2494900919936617990081904592723486111315625/84407246267679504",
+      "denominator_floor_sqrt": "290529252",
+      "index": 3,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "175671685798666464415836073127",
+      "branch_value_at_control": "30860541191345392751713048682817683074284243088858653896841/192778254698493619379550453760000",
+      "denominator_floor_sqrt": "13884460907737600",
+      "index": 4,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3357797915718227965610790638",
+      "branch_value_at_control": "11274806842801675956361060427513617880015007779912624889/672804931431155082960490000",
+      "denominator_floor_sqrt": "25938483599300",
+      "index": 5,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "125676251863947818569640523",
+      "branch_value_at_control": "15794520282570447541327039991744630384041666764811641/246131981386746315867136",
+      "denominator_floor_sqrt": "496116902944",
+      "index": 6,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "21447227433712814078536",
+      "branch_value_at_control": "459983564593403540809129420328938512629013969/1844417541881849104",
+      "denominator_floor_sqrt": "1358093348",
+      "index": 7,
+      "local_nonsplitting": {
+        "branch_value_residue": 58,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1192312423779205987736386",
+      "branch_value_at_control": "1421608915898244888115320395670541155250052419625/203682994894829371779",
+      "denominator_floor_sqrt": "14271755144",
+      "index": 8,
+      "local_nonsplitting": {
+        "branch_value_residue": 11,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "234942255243863816778712",
+      "branch_value_at_control": "55197863299072855113264816919274614209131900100/222663254588880367249",
+      "denominator_floor_sqrt": "14921905193",
+      "index": 9,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 42,
+        "prime": 79
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "44743167002858889137107886203",
+      "branch_value_at_control": "2001950993445720508200381345918148959322377920125185527721/6158114671426193413927908582400",
+      "denominator_floor_sqrt": "2481554889867680",
+      "index": 10,
+      "local_nonsplitting": {
+        "branch_value_residue": 35,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "11387124949043166786804798222",
+      "branch_value_at_control": "129666614605121343790988027028015751275612287180256899136/382546850379999064534436550625",
+      "denominator_floor_sqrt": "618503718970225",
+      "index": 11,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "30936932735730547080523462",
+      "branch_value_at_control": "957093807095116352005343669705033561627508807852489/4263857034850382325760000",
+      "denominator_floor_sqrt": "2064910902400",
+      "index": 13,
+      "local_nonsplitting": {
+        "branch_value_residue": 35,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "86070457994794799443254",
+      "branch_value_at_control": "7408123739433736008225282749387184845401539225/28988962505845129216",
+      "denominator_floor_sqrt": "5384139904",
+      "index": 14,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3743085899956125120877287525",
+      "branch_value_at_control": "14010692054450355117185066140125320929970157242633475625/145707047658683542331116609",
+      "denominator_floor_sqrt": "12070917432353",
+      "index": 20,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1321908263624671717499089",
+      "branch_value_at_control": "1747441457439194579439110510894575487591024532729/22544999264953651600",
+      "denominator_floor_sqrt": "4748157460",
+      "index": 21,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "146948282815417479754072965",
+      "branch_value_at_control": "21593797822399920190167275794592677925786296340157681/2485376173810819916563456",
+      "denominator_floor_sqrt": "1576507587616",
+      "index": 24,
+      "local_nonsplitting": {
+        "branch_value_residue": 32,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "153883698363218054280475",
+      "branch_value_at_control": "23680192621941878878015814449884249594125819721/118870945280755600",
+      "denominator_floor_sqrt": "344776660",
+      "index": 25,
+      "local_nonsplitting": {
+        "branch_value_residue": 35,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1073597296448482683625729",
+      "branch_value_at_control": "1152611154941491209087949219587998771112892914025/112418137728596427257104",
+      "denominator_floor_sqrt": "335288141348",
+      "index": 26,
+      "local_nonsplitting": {
+        "branch_value_residue": 18,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "83037850165891102661765",
+      "branch_value_at_control": "6895284560172981025844452806501535167563312025/34630063932613067776",
+      "denominator_floor_sqrt": "5884731424",
+      "index": 31,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "754778738278884858469424",
+      "branch_value_at_control": "569690943757865367123499145180179049025648582241/6128177089760870400",
+      "denominator_floor_sqrt": "2475515520",
+      "index": 32,
+      "local_nonsplitting": {
+        "branch_value_residue": 19,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7643976640862420481478",
+      "branch_value_at_control": "58430378886050333629301916116547234326394025/123749071553536",
+      "denominator_floor_sqrt": "11124256",
+      "index": 36,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "47638265687356831416560463",
+      "branch_value_at_control": "2269404357699199241624279158619253325776748297763601/8570112761737308390400",
+      "denominator_floor_sqrt": "92574903520",
+      "index": 40,
+      "local_nonsplitting": {
+        "branch_value_residue": 11,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1952356315890951752729709",
+      "branch_value_at_control": "3811695184199289787398129557740219300231994131569/290259357074100122500",
+      "denominator_floor_sqrt": "17036999650",
+      "index": 41,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "10606388740264488029027543",
+      "branch_value_at_control": "112495482109609313305955014527202965838706085282561/451289797434306250000",
+      "denominator_floor_sqrt": "21243582500",
+      "index": 42,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "54566947500038282589413851738053",
+      "branch_value_at_control": "2977551759471934178093420872682983030629686320067428019016121401/9203029780714013073305986329640960000",
+      "denominator_floor_sqrt": "3033649581067993600",
+      "index": 44,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 6,
+        "prime": 11
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "682714974735282523933283086",
+      "branch_value_at_control": "466099736727797454960171870330899048747690040024832801/1615051012257397378279014400",
+      "denominator_floor_sqrt": "40187697274880",
+      "index": 46,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "31690662431811804232673105753",
+      "branch_value_at_control": "1004298085367048057557059776494653631384561760349359094429/376650331046584772329103173959680",
+      "denominator_floor_sqrt": "19407481316404371",
+      "index": 48,
+      "local_nonsplitting": {
+        "branch_value_residue": 29,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "78814325323155092551152",
+      "branch_value_at_control": "6211697876144126083892495030215912413977691225/57947501585374129",
+      "denominator_floor_sqrt": "240722873",
+      "index": 49,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1540036959532781490514776",
+      "branch_value_at_control": "2371713836726974054211582521985218799250351548025/246131981386746315867136",
+      "denominator_floor_sqrt": "496116902944",
+      "index": 50,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "54211458506286765643532042",
+      "branch_value_at_control": "2938882233378851719606649647195515350551252064638089/1909123226383305344676806656",
+      "denominator_floor_sqrt": "43693514694784",
+      "index": 52,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2096269841408300197890",
+      "branch_value_at_control": "4394347247997980062991709452703940034419225/17199814690948096",
+      "denominator_floor_sqrt": "131148064",
+      "index": 55,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "11009381570940859331396266705",
+      "branch_value_at_control": "121206482574572223666958378353755689551782615007485414241/645678124850355957144268723600",
+      "denominator_floor_sqrt": "803540991393940",
+      "index": 56,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "80503668730333388564815680",
+      "branch_value_at_control": "6480840679043257818060694501675705000157000958464601/37431793440645358956010000",
+      "denominator_floor_sqrt": "6118152780100",
+      "index": 57,
+      "local_nonsplitting": {
+        "branch_value_residue": 24,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "441491487413331569613813",
+      "branch_value_at_control": "194914733458435907756535676722530261516297980401/1080082374860269158400",
+      "denominator_floor_sqrt": "32864606720",
+      "index": 58,
+      "local_nonsplitting": {
+        "branch_value_residue": 18,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "253906303814694657688274242",
+      "branch_value_at_control": "-64468411116840026878687863928577057518959492151494975/1599803586466145682452964676",
+      "denominator_floor_sqrt": "39997544755474",
+      "index": 59,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "272507094653626750944840465",
+      "branch_value_at_control": "74260116636560689348508388482523667536811030166323200/33021215301383099001422761",
+      "denominator_floor_sqrt": "5746408904819",
+      "index": 60,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3249149288800681650675",
+      "branch_value_at_control": "10556971100913975375055092989912265816949284/1050806000244947521",
+      "denominator_floor_sqrt": "1025088289",
+      "index": 61,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "347615525047569757556259",
+      "branch_value_at_control": "120836553254097597496346806274681450727518547609/2231503845018459664",
+      "denominator_floor_sqrt": "1493821892",
+      "index": 62,
+      "local_nonsplitting": {
+        "branch_value_residue": 31,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "76768201652997736480270825",
+      "branch_value_at_control": "5893356785035324399730970347142349968395728546945201/361863392431008455648870400",
+      "denominator_floor_sqrt": "19022707284480",
+      "index": 63,
+      "local_nonsplitting": {
+        "branch_value_residue": 18,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "101862383532083582325396",
+      "branch_value_at_control": "-10375945178837292584796018839489758889507044431/28882547035795600",
+      "denominator_floor_sqrt": "169948660",
+      "index": 64,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "893719361804406891053713",
+      "branch_value_at_control": "798734297664076346960113010450173288786709415201/1199476267854312457216",
+      "denominator_floor_sqrt": "34633455904",
+      "index": 66,
+      "local_nonsplitting": {
+        "branch_value_residue": 21,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "5839407332227948874156",
+      "branch_value_at_control": "34098677991677530878191732068969696178068314/181348584472680625",
+      "denominator_floor_sqrt": "425850425",
+      "index": 67,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "20701814401176046153800",
+      "branch_value_at_control": "428565119500739938405027279506115198920921441/19077483215367261798400",
+      "denominator_floor_sqrt": "138121262720",
+      "index": 68,
+      "local_nonsplitting": {
+        "branch_value_residue": 33,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "634056084199500182746309945331",
+      "branch_value_at_control": "402027117910403665298619621689508227039938574490618675140625/3153727913557254225116947567930564",
+      "denominator_floor_sqrt": "56158061875008242",
+      "index": 70,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4114251546206874334317883",
+      "branch_value_at_control": "16927065785465656215632942405494479565841997554169/6852270396361517182222336",
+      "denominator_floor_sqrt": "2617684166656",
+      "index": 71,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 6,
+        "prime": 11
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3840313833862978913304215621",
+      "branch_value_at_control": "14748010342559371606443706584456693133585485595470221025/35546799147863157715737527296",
+      "denominator_floor_sqrt": "188538587954464",
+      "index": 72,
+      "local_nonsplitting": {
+        "branch_value_residue": 19,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3192718431502876426603",
+      "branch_value_at_control": "-10193450982858187432718479181943281951075375/1158702580425891361",
+      "denominator_floor_sqrt": "1076430481",
+      "index": 73,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "6236577707043474839049855070",
+      "branch_value_at_control": "-38894901495991646273069368455371496455875291849414447959/5291616729832585496061592576",
+      "denominator_floor_sqrt": "72743499570976",
+      "index": 74,
+      "local_nonsplitting": {
+        "branch_value_residue": 24,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "33996894490203541812554",
+      "branch_value_at_control": "-1155788834978031939151473957692870005692242375/3383676304229376",
+      "denominator_floor_sqrt": "58169376",
+      "index": 75,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2536008170082635544554509",
+      "branch_value_at_control": "6431337438725877732252096392231837588141462459529/2147319934114322500",
+      "denominator_floor_sqrt": "1465373650",
+      "index": 76,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1221687937399956188853",
+      "branch_value_at_control": "1492521416388559271661355174791984935853969/1979985144856576",
+      "denominator_floor_sqrt": "44497024",
+      "index": 77,
+      "local_nonsplitting": {
+        "branch_value_residue": 18,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "350070847224988762144897506553",
+      "branch_value_at_control": "122549598076821422109711556786250312082653031241131011766225/10384232045034592146988259924885061904",
+      "denominator_floor_sqrt": "3222457454340490148",
+      "index": 78,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "33385791128539839644937573060",
+      "branch_value_at_control": "1114611049278489459641290420445583874510308136351153389361/7981245470122261402319469904896",
+      "denominator_floor_sqrt": "2825109815586336",
+      "index": 79,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "9837522863322151643179",
+      "branch_value_at_control": "-96776856086386065079363126684524960004760391/2590070509404160000",
+      "denominator_floor_sqrt": "1609369600",
+      "index": 80,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "178739398961972578046107554",
+      "branch_value_at_control": "31947772741287203910329802122881690980456586487330625/199683742154764390760983876",
+      "denominator_floor_sqrt": "14130949796626",
+      "index": 81,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2200594314708944884099613222",
+      "branch_value_at_control": "4842615337929330758280598583619007511340076375566291525/5344909973719619763276724996",
+      "denominator_floor_sqrt": "73108891208386",
+      "index": 82,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "327038030601287721846470",
+      "branch_value_at_control": "-106953873459568804393262135984492720115469711029/1747870716665771425729",
+      "denominator_floor_sqrt": "41807543777",
+      "index": 83,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "36570372627801161680321489",
+      "branch_value_at_control": "1337392154136228443497302486519565107114469767442521/1837876337500521777323536",
+      "denominator_floor_sqrt": "1355682978244",
+      "index": 84,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "42542395264951761563",
+      "branch_value_at_control": "-1809855394879390062983967509786327557959/41773781533696",
+      "denominator_floor_sqrt": "6463264",
+      "index": 85,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "524660881044809032297166529",
+      "branch_value_at_control": "275269040098715253725585539911088340168046043835714025/3168439881613148431177978384",
+      "denominator_floor_sqrt": "56288896610372",
+      "index": 86,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1143226491406604178717260",
+      "branch_value_at_control": "1306966810653854418087068007075805050447354759225/2572047471928493056",
+      "denominator_floor_sqrt": "1603760416",
+      "index": 87,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 42,
+        "prime": 79
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3276968913820947213",
+      "branch_value_at_control": "10738525262148838565513786317428440100/7890481",
+      "denominator_floor_sqrt": "2809",
+      "index": 88,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "747631289921899369521",
+      "branch_value_at_control": "558952545670283149777533936420097460433025/770941204525584",
+      "denominator_floor_sqrt": "27765828",
+      "index": 89,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "277288161588693979",
+      "branch_value_at_control": "76888724557237663300660696839751325/595508",
+      "denominator_floor_sqrt": "771",
+      "index": 90,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7786132344113058979",
+      "branch_value_at_control": "60623856880043518688911840575191966850/120848702689",
+      "denominator_floor_sqrt": "347633",
+      "index": 96,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "45878780872110548957191105",
+      "branch_value_at_control": "2104862534311136783149209909839875189031083930506081/1200995313119667583159699600",
+      "denominator_floor_sqrt": "34655379281140",
+      "index": 97,
+      "local_nonsplitting": {
+        "branch_value_residue": 19,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7595693132487286940163",
+      "branch_value_at_control": "57694554162914533553663936975800551764533275/107523149819569",
+      "denominator_floor_sqrt": "10369337",
+      "index": 98,
+      "local_nonsplitting": {
+        "branch_value_residue": 29,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "532047197620193045932683",
+      "branch_value_at_control": "283074220495500752759392928299757695593955451136/1269699130037437218025",
+      "denominator_floor_sqrt": "35632837805",
+      "index": 104,
+      "local_nonsplitting": {
+        "branch_value_residue": 43,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1319266068429647972585795558",
+      "branch_value_at_control": "1740462959309820607019465978751439605319863283460087121/24891641345242825437112960000",
+      "denominator_floor_sqrt": "157770850746400",
+      "index": 105,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7396858966984699704446805",
+      "branch_value_at_control": "54713522577461958832279433552131190669491929707601/861088609265985828001562500",
+      "denominator_floor_sqrt": "29344311361250",
+      "index": 106,
+      "local_nonsplitting": {
+        "branch_value_residue": 11,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "241445078016719050028157",
+      "branch_value_at_control": "58295725698499548676548348725889756588066078225/137884237323200905216",
+      "denominator_floor_sqrt": "11742411904",
+      "index": 107,
+      "local_nonsplitting": {
+        "branch_value_residue": 58,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4539793544802656795237",
+      "branch_value_at_control": "20609725429431872210779539118215471897132681/37844479401803776",
+      "denominator_floor_sqrt": "194536576",
+      "index": 108,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "238590297695201215453",
+      "branch_value_at_control": "-56925330154284738422843567398768020033159/37844479401803776",
+      "denominator_floor_sqrt": "194536576",
+      "index": 109,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4284497738523541424433162",
+      "branch_value_at_control": "18356920871413340741740463387383876602615090233025/1805363459699224119556",
+      "denominator_floor_sqrt": "42489568834",
+      "index": 115,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 6,
+        "prime": 11
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2062018718398984348331564",
+      "branch_value_at_control": "4251921195027789913056623934348106791585276354225/98807775681604989239296",
+      "denominator_floor_sqrt": "314337041536",
+      "index": 118,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2053327705608129110013313",
+      "branch_value_at_control": "4216154666617943724984481699674190912323480434409/21407856826777600000000",
+      "denominator_floor_sqrt": "146314240000",
+      "index": 119,
+      "local_nonsplitting": {
+        "branch_value_residue": 45,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "40877844359519680617",
+      "branch_value_at_control": "1670998159481114967638499506376350552601/6382067618968336",
+      "denominator_floor_sqrt": "79887844",
+      "index": 120,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "23676466327778323528",
+      "branch_value_at_control": "560575057770420772538091872150802335025/682550259556",
+      "denominator_floor_sqrt": "826166",
+      "index": 124,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "12992793467990363468725118",
+      "branch_value_at_control": "168812682101853056102795165538214417027337442735225/1789819613865749939946496",
+      "denominator_floor_sqrt": "1337841400864",
+      "index": 125,
+      "local_nonsplitting": {
+        "branch_value_residue": 43,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4004842759949224952535",
+      "branch_value_at_control": "16038765531917725437549037991117545122875625/9435249894178595344",
+      "denominator_floor_sqrt": "3071685188",
+      "index": 126,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "20226210677670681615719441660446",
+      "branch_value_at_control": "409099598377519493642914177727685393212344617711572994002147584/276050056062907285631017143000390625",
+      "denominator_floor_sqrt": "525404659346400625",
+      "index": 128,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "6574115197746498756512668205332359",
+      "branch_value_at_control": "43218990633241486449020329936863325741806236029579257755460167311089/92749039194891849213280484700748275602500",
+      "denominator_floor_sqrt": "304547269229083466450",
+      "index": 129,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "31788233921976915119526140390",
+      "branch_value_at_control": "1010491815878323846922871613949461035266760153073850750625/145477495534972518452241242176",
+      "denominator_floor_sqrt": "381415122320776",
+      "index": 130,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 4,
+        "prime": 13
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "482500014199133070048961637183",
+      "branch_value_at_control": "-232806263702163614212627920840580724844725855368571322429111/41869754707500858226770313374893056",
+      "denominator_floor_sqrt": "204621002606039584",
+      "index": 131,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "52439628244445510946972245904674",
+      "branch_value_at_control": "2749914610415647380411912425257612552653315948594533895615173025/58391593723245876890820977737842835456",
+      "denominator_floor_sqrt": "7641439244229183616",
+      "index": 132,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "821745460002472869159320547173725285",
+      "branch_value_at_control": "675265601034675738009697467731328288388740890511397163650914584709735609/12256295896753153511050241894645314090000",
+      "denominator_floor_sqrt": "110708156414751815300",
+      "index": 133,
+      "local_nonsplitting": {
+        "branch_value_residue": 24,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "14175491172707951755151467986131546",
+      "branch_value_at_control": "-200944549987521061295204275608118763549209465401209820089997351318975/271412943300397272079644058853435008589234176",
+      "denominator_floor_sqrt": "16474615118429846708224",
+      "index": 134,
+      "local_nonsplitting": {
+        "branch_value_residue": 20,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "740375857227340729456445100402277",
+      "branch_value_at_control": "548156409965119623856325178037363260638592218729147056061405582400/6113426874293974362721470252337084561",
+      "denominator_floor_sqrt": "2472534504166519081",
+      "index": 135,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "5740321167634622396411901942744",
+      "branch_value_at_control": "32951287107594114639753756731358315393983387591521905046749184/12970001984451115758447890869140625",
+      "denominator_floor_sqrt": "113885916532515625",
+      "index": 136,
+      "local_nonsplitting": {
+        "branch_value_residue": 28,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "6619389206144746012741605185965419",
+      "branch_value_at_control": "43816313462425570824727591078390831055914718381171271676119444416025/10309052389970600180818412317336904958976",
+      "denominator_floor_sqrt": "101533503780627014176",
+      "index": 137,
+      "local_nonsplitting": {
+        "branch_value_residue": 45,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2354119462083793190398773212407705707",
+      "branch_value_at_control": "5541878441761687804608668419263684829621603670691136859224003025208054225/124864353028183083314681795676132387480996672784",
+      "denominator_floor_sqrt": "353361504734433520487972",
+      "index": 138,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3444996964152158726607255909736",
+      "branch_value_at_control": "11868004083017589998439357536907684029362822146379903824764025/234977270047855899889670610912256",
+      "denominator_floor_sqrt": "15328968329533984",
+      "index": 140,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "99779546946308872370901324179456022",
+      "branch_value_at_control": "9955957988810656217381437402736700429994910345513499833642377610091225/29919829134872596931800682425807912517800516",
+      "denominator_floor_sqrt": "5469902113829149404754",
+      "index": 141,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "47039865533721694728675120418755",
+      "branch_value_at_control": "2212748949430618220075026010763072366244010790639233912167667776/1237445799166838515296850067816015625",
+      "denominator_floor_sqrt": "1112405411334751875",
+      "index": 143,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "128736583641818287618680990",
+      "branch_value_at_control": "16573107967766875921811109643840593413721654925722225/8196415610145381445696",
+      "denominator_floor_sqrt": "90534057736",
+      "index": 145,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1566484069796900718443942148824",
+      "branch_value_at_control": "2453872340927461321669230446440238695731857546147449014936324/4519365005712988350852683078329225",
+      "denominator_floor_sqrt": "67226222604821315",
+      "index": 146,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 4,
+        "prime": 13
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "95516046828134540849225528650147",
+      "branch_value_at_control": "9123315201674390481693827065401266923202266742996506773887500209/95377279144422969747874104673824400",
+      "denominator_floor_sqrt": "308832121296381620",
+      "index": 148,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "53152845494284021279754563707",
+      "branch_value_at_control": "2825224984139229182435685618040911175361374225669378041225/82454744680390215655393029047296",
+      "denominator_floor_sqrt": "9080459497205536",
+      "index": 149,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 4,
+        "prime": 13
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3192541428632163790123304216873031716",
+      "branch_value_at_control": "10192320773532697362899922938771561763267127333594694841557983448986660809/777825451769483317778473053008468898804456490000",
+      "denominator_floor_sqrt": "881944131886755805165700",
+      "index": 150,
+      "local_nonsplitting": {
+        "branch_value_residue": 29,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "418929664285666764388879045469",
+      "branch_value_at_control": "175502063618501459324406027986631624576663428636691799445625/1633296485508408102678762898441216",
+      "denominator_floor_sqrt": "40414062967096096",
+      "index": 152,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3621905036679621958158300253061119227",
+      "branch_value_at_control": "13118196094725213682121343949535206710596345716406720418189468234474650625/250145578785399142701180438153893790862033729",
+      "denominator_floor_sqrt": "15815991236258293485473",
+      "index": 153,
+      "local_nonsplitting": {
+        "branch_value_residue": 21,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "162102356256925178345502954232856",
+      "branch_value_at_control": "26277173904047089517062969040080845603641930351587281577280487225/334248990467550130779990014146875851776",
+      "denominator_floor_sqrt": "18282477689513260576",
+      "index": 154,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "336522354787000123806233362465489",
+      "branch_value_at_control": "113247295271387585142499376891470149559350503720942379286293644025/1028083656617794069636521376246482912256",
+      "denominator_floor_sqrt": "32063743646333533984",
+      "index": 155,
+      "local_nonsplitting": {
+        "branch_value_residue": 20,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "24687476904528744535131254895189",
+      "branch_value_at_control": "609471515911640162214617714450488592111449560344997884282250000/2759925494686340234856980224557933121",
+      "denominator_floor_sqrt": "1661302348967923489",
+      "index": 156,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "17927669165192213889172473785888590522",
+      "branch_value_at_control": "321401321696583691253041117495282200916516175621686221214442446950929342464/522395601513695908075700975593506070382340701025",
+      "denominator_floor_sqrt": "722769397189515701810895",
+      "index": 159,
+      "local_nonsplitting": {
+        "branch_value_residue": 23,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "34833847827318055330478731114062",
+      "branch_value_at_control": "1213396954456750803894025788567840792661605909374258600860330825/42188163254912798272690043608848434176",
+      "denominator_floor_sqrt": "6495241585569608224",
+      "index": 161,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "146494404704773163077797707863178115",
+      "branch_value_at_control": "21460610609805865457258773086648825554991702806599492637617437300291225/3040279226988361951742407351746339107528836096",
+      "denominator_floor_sqrt": "55138727107073862444064",
+      "index": 162,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "15589635414356349836112081348575668",
+      "branch_value_at_control": "243036732352553679445778984135705347207043113262779737954264095745801/76248062216073971778717332123953694890000",
+      "denominator_floor_sqrt": "276130516633120381700",
+      "index": 163,
+      "local_nonsplitting": {
+        "branch_value_residue": 24,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1316773929021346953447312570774",
+      "branch_value_at_control": "-1733893580150315264526451429040063085584467439457717123178775/35958760652599209483807740040604435456",
+      "denominator_floor_sqrt": "5996562402960483616",
+      "index": 165,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "140117045192414178166877349625311",
+      "branch_value_at_control": "19632786353453037158715958173495738357959106292872691818832401225/560052847530111988194104039451254096896",
+      "denominator_floor_sqrt": "23665435713929122336",
+      "index": 167,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "14560180758252995592857053853",
+      "branch_value_at_control": "211998863713000777690016162296916469936419814991335601089/344136553798522799707219225",
+      "denominator_floor_sqrt": "18550917869435",
+      "index": 168,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7374509170108493757817511326814212",
+      "branch_value_at_control": "54383385500014265323837763827825916312778909361496078289357499537984/11760018858769862428661270157470071990225",
+      "denominator_floor_sqrt": "108443620645798535735",
+      "index": 170,
+      "local_nonsplitting": {
+        "branch_value_residue": 28,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "91663851392784812384072105653841780",
+      "branch_value_at_control": "8402261652158538189152989371410744906873107447151322940500989605859361/27921141471657014119907901644058384306250000",
+      "denominator_floor_sqrt": "5284045937693673582500",
+      "index": 172,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "216947826527979586055863608278304",
+      "branch_value_at_control": "47066359435214323013161492028708470096825089379790972428034174025/58732516737911251162690629418205227396",
+      "denominator_floor_sqrt": "7663714291250114914",
+      "index": 173,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "36699174294215224429127009174064",
+      "branch_value_at_control": "1346829393877187516109763841438741692096803789868881772794922225/7436787970598057409102031557378591504",
+      "denominator_floor_sqrt": "2727047482277867748",
+      "index": 174,
+      "local_nonsplitting": {
+        "branch_value_residue": 48,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "71012025323254632517853860510825713",
+      "branch_value_at_control": "5042707740510557195940860022135279111443528769353861344790508727246425/898577637522006947536748095298882569216",
+      "denominator_floor_sqrt": "29976284585018319904",
+      "index": 175,
+      "local_nonsplitting": {
+        "branch_value_residue": 33,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "38960628985638340383698604807226862",
+      "branch_value_at_control": "1517930610956562415936255246358466967236197029398394977497391994818081/20740406394803393948014654339308504064",
+      "denominator_floor_sqrt": "4554163632853280992",
+      "index": 176,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1154544677641819910126687229179989",
+      "branch_value_at_control": "1332973412671053851070703069222300846748489482331677321749941480025/559464340726512713860008089391533556736",
+      "denominator_floor_sqrt": "23652998556768922144",
+      "index": 179,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "11922677561634721430969350935",
+      "branch_value_at_control": "142150240238708066646411053054931118928795319290804616025/854956028327472267919000576",
+      "denominator_floor_sqrt": "29239631125024",
+      "index": 180,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "311188965731087990915891757402849459",
+      "branch_value_at_control": "96838572392784255968581166537882651285522701952280601051381081443911625/29484089203594307452512745515591483213420541444",
+      "denominator_floor_sqrt": "171709316007007340977538",
+      "index": 181,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "144936555368861272736233044085734",
+      "branch_value_at_control": "21006605082190989422668720698492636569546819718460763597215451025/93199109744135455061129317224995229169",
+      "denominator_floor_sqrt": "9653968600743191513",
+      "index": 183,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2473418394736382842352673727423",
+      "branch_value_at_control": "6117798555420304971144470555493373275403873531315174800684729/65096080895605238515091699182073906176",
+      "denominator_floor_sqrt": "8068214232133727776",
+      "index": 184,
+      "local_nonsplitting": {
+        "branch_value_residue": 35,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "64300316510220319075469453119",
+      "branch_value_at_control": "4134530703314511752671801365378336867294707443044444583936/15619233260514083056802153184025",
+      "denominator_floor_sqrt": "3952117566636155",
+      "index": 185,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1230088819701906626521734812269",
+      "branch_value_at_control": "1513118504355629748025462618466570777740433665753144231857921/1424322221120920632805242797802496",
+      "denominator_floor_sqrt": "37740193708047136",
+      "index": 187,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1222266667485997041216950549171466581",
+      "branch_value_at_control": "1493935806447324856716400667350886471401233665031553324292495671592420121/2055076446629549141260819841624495442794300416",
+      "denominator_floor_sqrt": "45332951002880334673696",
+      "index": 190,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "69789232928156579208305252275853",
+      "branch_value_at_control": "4870537032700494538864218683459221837034649706361633156574605625/7682497809056854560384599192906234880064",
+      "denominator_floor_sqrt": "87649859150239680008",
+      "index": 191,
+      "local_nonsplitting": {
+        "branch_value_residue": 32,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "51952495610591921934438998143835759151",
+      "branch_value_at_control": "2699061800168572915501159889337320857423967304803435140447382894899580260129/1541159864778930193948605548936421399689756250000",
+      "denominator_floor_sqrt": "1241434599477125171827500",
+      "index": 193,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1718437132137475997692123975594",
+      "branch_value_at_control": "2953026177108873142404683937160137321370117428939521353494441/1385174355436772367578254725760000",
+      "denominator_floor_sqrt": "37217930563597600",
+      "index": 194,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "9233103607564273886780031594364",
+      "branch_value_at_control": "85250202228016408968047643678300612767492845421004626808177225/185577981895419896616189461141977547776",
+      "denominator_floor_sqrt": "13622700976510491424",
+      "index": 195,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "90545889653493024486525235388496",
+      "branch_value_at_control": "8198558133142535141915524970917600817655992544819338211391775625/1975838649005923794668235910806209536",
+      "denominator_floor_sqrt": "1405645278513012256",
+      "index": 196,
+      "local_nonsplitting": {
+        "branch_value_residue": 5,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "91300790572725395028472396200862086",
+      "branch_value_at_control": "8335834359204662366337582643183168156500635799232636196881893978841344/986963105174069956768109786396171766015625",
+      "denominator_floor_sqrt": "993460167884988711875",
+      "index": 197,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4451003514833414814752503900859416881",
+      "branch_value_at_control": "19811432289059412734860688059496894714605271872796738069956646442092705625/21878965002657059456606564236062846642699146100736",
+      "denominator_floor_sqrt": "4677495590875213156089856",
+      "index": 198,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "26120642450326396945666815736964233",
+      "branch_value_at_control": "682287962017793398329176476356692599663826968941556001402121935044494/90768409647071159053691435331462960191714209",
+      "denominator_floor_sqrt": "9527245648510967151953",
+      "index": 200,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 6,
+        "prime": 11
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "201604496815276994546892005487860",
+      "branch_value_at_control": "40644373136141031836718400103031495305725719738935907741067441761/1724179229936913674201977613047014400",
+      "denominator_floor_sqrt": "1313080054656574880",
+      "index": 201,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "211381841059175085005959944538723399",
+      "branch_value_at_control": "44682282729566357823284308783169081198701509585123651986563689614432100/174609510475029837068445080230012025968655281",
+      "denominator_floor_sqrt": "13213989196114466214841",
+      "index": 202,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "2351906023179859072462967308473462",
+      "branch_value_at_control": "5531461941869699800666041800448911749371165243200514976095981010944/3856500476657843015083288878184031640625",
+      "denominator_floor_sqrt": "62100728471233274375",
+      "index": 203,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "39216199761658464113597614279836",
+      "branch_value_at_control": "1537910323746301377550021250931055268068495963245249539628327936/1652220478196459746841063111550390625",
+      "denominator_floor_sqrt": "1285387287239320625",
+      "index": 204,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3393599155776834317478481561555561",
+      "branch_value_at_control": "11516515230089242592343425072768329381708843293836137089704954645025/13709186295639223951101493702837424449",
+      "denominator_floor_sqrt": "3702591834869085857",
+      "index": 205,
+      "local_nonsplitting": {
+        "branch_value_residue": 31,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "11217269758976407040994162802761062",
+      "branch_value_at_control": "125827140845646620909837548033583338077964693336446175773795862191225/80343260678673477576900899779850260175521",
+      "denominator_floor_sqrt": "283448867838052014289",
+      "index": 207,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "279330775299401302877277950989620975648",
+      "branch_value_at_control": "-78025682029364621027080700045297214422343168363406455834122154131882978756544/2673299889635940749172754577456492805661386846150625",
+      "denominator_floor_sqrt": "51703963964438362481338225",
+      "index": 208,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 8,
+        "prime": 19
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "8779942505563450970266261",
+      "branch_value_at_control": "-77087390400999809271965966082186178228161473396775/53016802698076767808144384",
+      "denominator_floor_sqrt": "7281263811872",
+      "index": 209,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3884702445930709912339815669413937",
+      "branch_value_at_control": "15090913093420040169970656144570854883430444181134443960169262291008/4194647241398958417577926951098516158578025",
+      "denominator_floor_sqrt": "2048083797455308813805",
+      "index": 210,
+      "local_nonsplitting": {
+        "branch_value_residue": 19,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "36007617954285753469351655288795",
+      "branch_value_at_control": "1296548550741801749622970558478169624487847972244983149913763225/1287801051155642053995638061517210624",
+      "denominator_floor_sqrt": "1134813223026433568",
+      "index": 211,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 4,
+        "prime": 13
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "64106927982943523488303317255048972",
+      "branch_value_at_control": "4109698215410307376952862593855224830507843975807889771790201571386001/69984179946925530639427838391706766716900",
+      "denominator_floor_sqrt": "264545232326960545130",
+      "index": 212,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1507038709870645265870720801",
+      "branch_value_at_control": "2271165673048578916707568855368384771292477413163232784/149671861189424790104629225",
+      "denominator_floor_sqrt": "12234045168685",
+      "index": 213,
+      "local_nonsplitting": {
+        "branch_value_residue": 7,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "10607305721658927340904692671879",
+      "branch_value_at_control": "112514934672738217347237513028940902556992627847388580062176256/13622076069735603233255248709100625",
+      "denominator_floor_sqrt": "116713649886102025",
+      "index": 214,
+      "local_nonsplitting": {
+        "branch_value_residue": 23,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1145410693641771834815019854676",
+      "branch_value_at_control": "1311965657108924893538577925069054579715855597309708570674176/601785821686152954650953949250625",
+      "denominator_floor_sqrt": "24531323276296225",
+      "index": 215,
+      "local_nonsplitting": {
+        "branch_value_residue": 12,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "76404510700590106729706270165453182",
+      "branch_value_at_control": "5837649255396588121888317679379361477873499209609413852280339518625225/20839732619895348414455269350941301919350544",
+      "denominator_floor_sqrt": "4565055598773726700388",
+      "index": 216,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7832274444245508931093234729208840",
+      "branch_value_at_control": "61344522969981295789610873336997863375363215672548979928287476271225/202219224477452999138043368270813122200576",
+      "denominator_floor_sqrt": "449687918980989525024",
+      "index": 217,
+      "local_nonsplitting": {
+        "branch_value_residue": 20,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "69162254088083032244969078064565098818",
+      "branch_value_at_control": "4783417390544558106192103767962821872414966384998681178774821856598233846016/1546030069714145370565246403338096706766706640625",
+      "denominator_floor_sqrt": "1243394575231107146945625",
+      "index": 218,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "35651538494534920815743673984105405528",
+      "branch_value_at_control": "1271032197027305288143741088841756296329885356360337069442682048359048339049/684200268470935420782673595927330554399360000",
+      "denominator_floor_sqrt": "26157222109217473645600",
+      "index": 219,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "352563735892338918108432767124472",
+      "branch_value_at_control": "124301187866362909504605127518506496740202048130259172233489286144/113945113750395553588156943355930750625",
+      "denominator_floor_sqrt": "10674507658454115025",
+      "index": 220,
+      "local_nonsplitting": {
+        "branch_value_residue": 31,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "22205691061590974551341542202636035",
+      "branch_value_at_control": "493092715522821302345355989414391884760322480454624423723392378760025/9507015742975477372604038671760045637026816",
+      "denominator_floor_sqrt": "3083344895235607172896",
+      "index": 221,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 21,
+        "prime": 59
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "241144276006492490575265808810169173",
+      "branch_value_at_control": "58150561850695429878460746380035248940098781990950452371874609558959225/4057898833607409779361613087538200983619142656",
+      "denominator_floor_sqrt": "63701639175200270346784",
+      "index": 222,
+      "local_nonsplitting": {
+        "branch_value_residue": 18,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "9287687175989431401147007360879293",
+      "branch_value_at_control": "86261133079038539295929655608114146476539926341685009240396545768750/11037790262973651461678707906929610967609569",
+      "denominator_floor_sqrt": "3322317002179902076913",
+      "index": 224,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "10622199011630886822278349392150597713",
+      "branch_value_at_control": "112831111842692188880714049542553534002022743222846981415779189030705074176/37415554598047602530086467793210239324899574025",
+      "denominator_floor_sqrt": "193431007333487260961405",
+      "index": 225,
+      "local_nonsplitting": {
+        "branch_value_residue": 44,
+        "control_residue": 54,
+        "prime": 61
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "255891292440093614666483334245099",
+      "branch_value_at_control": "-65480353546661511509595528663104080820063019848313185539466300775/291194854552768204379522878982982009856",
+      "denominator_floor_sqrt": "17064432441565942816",
+      "index": 226,
+      "local_nonsplitting": {
+        "branch_value_residue": 13,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "694540575764446936912147326715686",
+      "branch_value_at_control": "482386611383209455824282176918016346196031699155462557154275927825/377476838852882725141750409300306814828544",
+      "denominator_floor_sqrt": "614391437808896165888",
+      "index": 228,
+      "local_nonsplitting": {
+        "branch_value_residue": 32,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "6588848771945525599989284023016",
+      "branch_value_at_control": "-43412928139568060816770881956673095824376914988681179413456875/98108096200549860527675789913016804",
+      "denominator_floor_sqrt": "313222119590155798",
+      "index": 229,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "187467622848926356608065541225328111",
+      "branch_value_at_control": "35144109616627295373552025011154918993584160763425354069565191690957056/27171822562854427910662687763510068049634025",
+      "denominator_floor_sqrt": "5212659835712899068845",
+      "index": 230,
+      "local_nonsplitting": {
+        "branch_value_residue": 27,
+        "control_residue": 12,
+        "prime": 67
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "261401552690800754280228485675000",
+      "branch_value_at_control": "68330771749161483060450420254242403526376913853944394197215040836/23457674046549329702675972986206264025",
+      "denominator_floor_sqrt": "4843312301158095845",
+      "index": 231,
+      "local_nonsplitting": {
+        "branch_value_residue": 40,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "44501889586672822099135119019934797853",
+      "branch_value_at_control": "-1980418176784418960929916315017298401947419432744304815979600061951754183616/137596136543429165141073522157599957052509750390625",
+      "denominator_floor_sqrt": "11730137959266683967480625",
+      "index": 232,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "4388297144490442863680063081576181432",
+      "branch_value_at_control": "19257151828342974772205338503775892936831421861785352969729018551298775296/1422955785117853925487176294040737714346675625",
+      "denominator_floor_sqrt": "37722086171338057711475",
+      "index": 233,
+      "local_nonsplitting": {
+        "branch_value_residue": 24,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7515805445189676303834750423133",
+      "branch_value_at_control": "56487331489942788419333360321047836499885893423983422901551104/11976404721792318887793568969140625",
+      "denominator_floor_sqrt": "109436761290675625",
+      "index": 234,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "285470326218212556578036982911814082",
+      "branch_value_at_control": "81493307151132695374868043752106981877490680126371090920459031725428809/36525485588066853822167103943923660153996490000",
+      "denominator_floor_sqrt": "191116418938998681265700",
+      "index": 235,
+      "local_nonsplitting": {
+        "branch_value_residue": 3,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1248047574471435980585988258271608",
+      "branch_value_at_control": "1557622748144034539955559372047804481227785157618836031893651817921/757119571950740533920844112655444361216",
+      "denominator_floor_sqrt": "27515805856829643904",
+      "index": 236,
+      "local_nonsplitting": {
+        "branch_value_residue": 11,
+        "control_residue": 7,
+        "prime": 29
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "135178711860774243213282008858911",
+      "branch_value_at_control": "18273284140338227060076217853474772673989292284847299236909794269/339260746978962883889808515260605602682122500",
+      "denominator_floor_sqrt": "18419032194416808822850",
+      "index": 237,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "5604324982742342210833698701027",
+      "branch_value_at_control": "31408458512189954319287889313249745331515722620432346480705161/45314686941271234168011486426612736",
+      "denominator_floor_sqrt": "212872466376634144",
+      "index": 238,
+      "local_nonsplitting": {
+        "branch_value_residue": 2,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1167556626399185978201992399644502",
+      "branch_value_at_control": "-1363188475848648343871405030406238340651096006917864297501659719151/443842234139631933918689857247629935616",
+      "denominator_floor_sqrt": "21067563554897180704",
+      "index": 239,
+      "local_nonsplitting": {
+        "branch_value_residue": 26,
+        "control_residue": 2,
+        "prime": 31
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "636585689629050767961931176039790",
+      "branch_value_at_control": "405241340240494154473755035613236278314192064394827467005631566025/5584188339740399865337017111973037056",
+      "denominator_floor_sqrt": "2363088728706647584",
+      "index": 240,
+      "local_nonsplitting": {
+        "branch_value_residue": 14,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3715641853566526736520308343097074",
+      "branch_value_at_control": "13805994383975294515437675071345495986864033733072808984326554996521/33098048645338343916688958672481299482264576",
+      "denominator_floor_sqrt": "5753090356090224306976",
+      "index": 242,
+      "local_nonsplitting": {
+        "branch_value_residue": 41,
+        "control_residue": 14,
+        "prime": 47
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "419107212933006217630298673702",
+      "branch_value_at_control": "175650855932472214169900049862696270025700662439052456035081/1129084418355280866094547430163456",
+      "denominator_floor_sqrt": "33601851412612384",
+      "index": 243,
+      "local_nonsplitting": {
+        "branch_value_residue": 22,
+        "control_residue": 11,
+        "prime": 23
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "111053640962242757551519124678860",
+      "branch_value_at_control": "12332911170970722505378497110754161475511639821318495463653142761/5525495486620325772046338154924327936",
+      "denominator_floor_sqrt": "2350637251176864544",
+      "index": 244,
+      "local_nonsplitting": {
+        "branch_value_residue": 30,
+        "control_residue": 5,
+        "prime": 41
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "21984724250433474688638283830847",
+      "branch_value_at_control": "-483328100367597705498322456334530134838633005639175842472703424/4411728838846491517896536262561127681",
+      "denominator_floor_sqrt": "2100411587962343041",
+      "index": 245,
+      "local_nonsplitting": {
+        "branch_value_residue": 23,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "7349490884026798536202330037187318297",
+      "branch_value_at_control": "54015016254393012651047855337277741255990722770450786769611089048333191081/146299047396413885490921348141713371520041010176",
+      "denominator_floor_sqrt": "382490584716034396520224",
+      "index": 246,
+      "local_nonsplitting": {
+        "branch_value_residue": 6,
+        "control_residue": 1,
+        "prime": 7
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "5020020051580652526269083572781968",
+      "branch_value_at_control": "25200601318271817250406364869783066955500223033480338680229185373025/231395883641519656089001462163682974585541904",
+      "denominator_floor_sqrt": "15211702194084646754852",
+      "index": 248,
+      "local_nonsplitting": {
+        "branch_value_residue": 32,
+        "control_residue": 28,
+        "prime": 43
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "810588851113483777746953632250",
+      "branch_value_at_control": "657054285549477571034963594844067308929158256441835957402825/18611959317777805560942143819716",
+      "denominator_floor_sqrt": "4314158007975346",
+      "index": 249,
+      "local_nonsplitting": {
+        "branch_value_residue": 15,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "3769094205210004526821846061447",
+      "branch_value_at_control": "14206071127747635715180076016489673570935880002888692822554225/12456853248588812122982992522161424",
+      "denominator_floor_sqrt": "111610273938328868",
+      "index": 251,
+      "local_nonsplitting": {
+        "branch_value_residue": 8,
+        "control_residue": 4,
+        "prime": 13
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "40416064088193419374341988055",
+      "branch_value_at_control": "-1633458236380957771402570715195047242342073905252171294375/10185622359977307569811881059652356",
+      "denominator_floor_sqrt": "100923844357898434",
+      "index": 253,
+      "local_nonsplitting": {
+        "branch_value_residue": 50,
+        "control_residue": 22,
+        "prime": 53
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "9253795194179030580131361218",
+      "branch_value_at_control": "85632725495810922280029296611575406652341851294618792225/43156367202514001419088183296",
+      "denominator_floor_sqrt": "207741106193536",
+      "index": 254,
+      "local_nonsplitting": {
+        "branch_value_residue": 17,
+        "control_residue": 35,
+        "prime": 37
+      }
+    },
+    {
+      "absolute_numerator_floor_sqrt": "1170516098631123860895551825204",
+      "branch_value_at_control": "1370107937154626882418629543781055488120308524163816764148049/50565113448390345002130544144000000",
+      "denominator_floor_sqrt": "224866879393988000",
+      "index": 255,
+      "local_nonsplitting": {
+        "branch_value_residue": 10,
+        "control_residue": 11,
+        "prime": 23
+      }
+    }
+  ],
+  "nonsplitting_progression": {
+    "M": "1217269416735962936106761",
+    "formula": "t=3/17+M*z, z in Z",
+    "primes": [
+      7,
+      11,
+      13,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      79
+    ],
+    "scope": "All182 completed bisections are nonsplit at every parameter in this explicit progression. This is a visibility exclusion for these curves only, not a rank or class-block exclusion."
+  },
+  "nonzero_control_labels": 0,
+  "prospective_fibres": "NOT_REACHED",
+  "schema": "marked-two-class.independent-replay.v1",
+  "status": "PASS_BOUNDED_VISIBILITY_MISS",
+  "strict_quotient_increment": "UNKNOWN_NO_FRESH_FIBRES",
+  "unknown_candidates": [
+    171
+  ]
+}

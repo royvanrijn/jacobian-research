@@ -10,7 +10,7 @@ residue150 modulo1024 differs from the sampled positive residue754.
 The [comparison certificate](../../artifacts/generated-results/elliptic-curves/outer_known29_retention_comparison_v1.json)
 is conditional on the saved population. It proves neither a full-population
 quantile nor a discard probability or prospective success rate. The completed
-[outer48 experiment](OUTER131072_TRIAL_2026-09-06.md) remains unchanged:2160 boxes,
+[outer48 experiment](../../elliptic-curves/notes/OUTER131072_TRIAL_2026-09-06.md) remains unchanged:2160 boxes,
 2223 retained point witnesses, all48 certified bounds still17 modulo2,3,5.
 
 ## Fixed cache cost gate

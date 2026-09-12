@@ -1,0 +1,18 @@
+{
+  "M_mod_1000003": 700418,
+  "boundary": "Verifies the finite-prime binding and exact polynomial hypotheses. The written finiteness deduction invokes Faltings. It does not expand/factor resultants, enumerate Sigma or twists, test new specializations, replay ideal factorizations, or use column7.",
+  "cpu_seconds": 1.242264471,
+  "full_atom_specializations_checked": 1676,
+  "generic_section_identities_checked": 16,
+  "homogeneous_denominator_identity": "VERIFIED SYMBOLICALLY",
+  "independent_engine": "SymPy 1.14.0",
+  "independent_modular_resultants_checked": 1693,
+  "integer_polynomial_normalizations_checked": 1693,
+  "peak_rss_bytes": 158257152,
+  "prior_definition_sha256": "fbd4c9964ceaedafee8a3989a971a90f65ed39eb26b7956f25099d7023c96579",
+  "scalar_guard_count": 105,
+  "schema": "fixed-word.finiteness-independent-replay.v1",
+  "sigma_binding_sha256": "ad1da5cc42f5847f84423cb0f20b7dab425073c956307c78599c4cc2322efbd8",
+  "status": "VERIFIED",
+  "verifier_sha256": "bc68bb341e64dc84ce7d00356d782fa65efd9a9d3de6df44e890598536aa782d"
+}

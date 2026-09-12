@@ -2,9 +2,9 @@
 
 This note generalizes the marked-root viewpoint from the exceptional cubic to
 the admissible weighted inverse-pencil family.  It packages formulas already
-used in [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md) and the divisor
+used in [WEIGHTED_SEED_THEOREM.md](../non-elliptic/verified/WEIGHTED_SEED_THEOREM.md) and the divisor
 classification in
-[DICRITICAL_COMPACTIFICATION.md](../../extended-geometry/DICRITICAL_COMPACTIFICATION.md).  The main
+[DICRITICAL_COMPACTIFICATION.md](../non-elliptic/extended-geometry/DICRITICAL_COMPACTIFICATION.md).  The main
 new point is the correct global formulation: the raw simple-root locus works
 over `C!=0`, but over `C=0` one must normalize the root incidence and retain
 exactly the branches on which reconstruction is regular.
@@ -361,7 +361,7 @@ in the canonical, deformed, and repeated-root notes.
 ## Relation with the exceptional cubic
 
 For the exceptional cubic, the alternative binary root `[U:V]` used in
-[MARKED_ROOT_MODEL.md](../../verified/MARKED_ROOT_MODEL.md) already packages the affine
+[MARKED_ROOT_MODEL.md](../non-elliptic/verified/MARKED_ROOT_MODEL.md) already packages the affine
 source as a raw simple-root locus, including its root at infinity.  For a
 general weighted seed the natural root `W` has no projective root at infinity,
 but its incidence is singular over the multiple root `W=0`; normalization and

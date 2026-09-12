@@ -1,0 +1,142 @@
+{
+  "schema": "constructed-class-blind-cover-report.v1",
+  "status": "BOTH_COVERS_RECOVERED_EXACT",
+  "input_sha256": "a8218511b1ac1b2def5dafe9c7803ebbdb0d33a7a0ffffca1c8e33a090efca1f",
+  "cases": [
+    {
+      "column": 6,
+      "status": "RECOVERED_EXACT",
+      "raw_max_coefficient_bits": 2464,
+      "reduced_degree4_max_coefficient_bits": 39,
+      "degree4_reduced_point_primitive": [
+        "614050",
+        "-4",
+        "-1",
+        "0"
+      ],
+      "primitive_original_cover_point": [
+        "2606021664583601668680187379254538761667340165914282954466532202705635836873861230070005696831783606013859631333121809846834891997518241222741020441361480179165469899681034100599025179543653534893472977187231035221368104911269222739397856376985932009956400973572468657996557216",
+        "-17277907259797973066268730663642078510098010539618037993369557290911027644499305108801966296616927735572810691013889845352621999349069993822653233427104661693142923343102091047329958910572860551533886574611506422638878152773715329934904501379354722724291431309",
+        "-995438549672900980792952096402722014959833803208216745335770879928217767564948439465021987258875129054752129501246429352158961975767826969265890950448970430589115045460475144196127836630991914055935280452297454150126638505643593416995098018797",
+        "67107129457469728056650012072243791452442006425600"
+      ],
+      "quartic_point": [
+        "1/2",
+        "169170224"
+      ],
+      "quartic_search_bound": 1000,
+      "quartic_search_wall_seconds": 0.012714533018879592,
+      "curve_x": "393529041691378317987472481/23565934144",
+      "curve_y": "-5510134102973774284362303569829330262811/3617653682313728",
+      "degree4_nominal_search_bounds_completed_without_hit": [
+        1000,
+        100000
+      ],
+      "quartic_larger_bound_100000_run": false
+    },
+    {
+      "column": 7,
+      "status": "RECOVERED_EXACT",
+      "raw_max_coefficient_bits": 1766,
+      "reduced_degree4_max_coefficient_bits": 44,
+      "degree4_reduced_point_primitive": [
+        "14345125",
+        "-4",
+        "1",
+        "-6"
+      ],
+      "primitive_original_cover_point": [
+        "4798983259353611455116188116475549259761576114639139289863813154489966509625899821588539956855511387249713855371615423790139781765660814974644389895577593916351248167807144576830779318798349548028829367335638389112418125889310688",
+        "-31817228852425270760758133299832929080920815290647834966794770566035047393566243030975479650736672349248269284629436989128391392836051010106344962844432314714121406453048502643312088431022119273929450082656435487",
+        "-1833097936412892073438215379248772650556553963773100143233374925190094056178501060213814462482594039497812179524977320441863151177376249317367123090290112818403338846009806096189547726467206833471",
+        "5859022231479134674395561637792738530999461376000"
+      ],
+      "quartic_point": [
+        "3/10",
+        "707214416/5"
+      ],
+      "quartic_search_bound": 1000,
+      "quartic_search_wall_seconds": 0.011990174010861665,
+      "curve_x": "6645456506656578661752762977/514456169536",
+      "curve_y": "263153926079171740018115325763293187855523/368996774336713216",
+      "degree4_nominal_search_bounds_completed_without_hit": [
+        1000,
+        100000
+      ],
+      "quartic_larger_bound_100000_run": false
+    }
+  ],
+  "algorithm": "Magma 2.29-10 degree4 Minimise and Reduce; bounded PointsQI miss; Simon conic parametrisation; Magma degree2 Minimise (CrossTerms=false) and Reduce; PARI 2.17.3 hyperellratpoints flag=1 on reduced quartic; exact Fraction-only back-transport.",
+  "arithmetic_wall_seconds_charged": 18.401175454142503,
+  "arithmetic_wall_boundary": "All cover computations, exact checks, retained failed arithmetic preparations and backend probes charged; remote calls charged full request wall including network. Read-only public docs/source and implementation preparation excluded from arithmetic.",
+  "reported_remote_arithmetic_cpu_seconds_sum": 2.44,
+  "local_quartic_search_wall_seconds_sum": 0.024704707029741257,
+  "budget_seconds": 1200,
+  "largest_observed_preparation_request_wall_seconds": 2.034096942981705,
+  "remote_memory_limit_bytes": 400000000,
+  "local_process_memory_limit_bytes": 2147483648,
+  "arithmetic_workers": 1,
+  "earliest_retained_artifact_utc": "2026-09-12T12:26:12.766563+00:00",
+  "completed_report_utc": "2026-09-12T12:46:30.230607+00:00",
+  "recorded_interval_wall_seconds": 1217.464044,
+  "overall_wall_caveat": "First tool-call timestamp was not captured. Parent spawn timestamp determines complete arm elapsed; recorded_interval_wall_seconds starts at earliest retained public-algorithm artifact.",
+  "exact_checks": [
+    "Frozen input SHA256",
+    "Norm(beta) and provided rational norm square root",
+    "beta expansion agrees with both frozen quadrics and x numerator",
+    "All 20 coefficient identities in each degree4 coordinate/equation transform",
+    "Both conic parametrisations vanish identically",
+    "Both conic discriminants equal the raw binary quartics",
+    "Both degree2 transformations match all quartic coefficients",
+    "Both PARI search hits satisfy the reduced quartics",
+    "Full map from quartic hits to reduced degree4 points",
+    "Primitive original cover coordinates satisfy Q2=0 and Q1+s^2=0",
+    "beta*xi^2=4*x-theta",
+    "Both supplied curve-map images satisfy the original elliptic equation"
+  ],
+  "retained_failures": [
+    {
+      "name": "original-minred-c6",
+      "boundary": "SetMemoryLimit was prohibited, while existing service limit (later read and asserted) is 400000000 bytes. Calculation returned a valid reduced model. Verbose export hit the normal 20000-character output limit. Compact final-only export repeated the reduction and verified the complete map."
+    },
+    {
+      "name": "conic-quartic-minred-c6",
+      "boundary": "Incorrect initial matrix action failed the exact conic parametrisation identity. No point search was run on that invalid quartic. Exact action selection in the corrected request chooses a valid parametrisation."
+    },
+    {
+      "name": "conic-quartic-minred-v2-c6",
+      "boundary": "Magma loop-variable scope prevented evaluation; corrected in v3, with assertion failure aborting the enclosing procedure."
+    }
+  ],
+  "claim_boundary": "This proves rational points exist on these two fixed supplied covers. No exceptional point, prior rational-lift certificate, point combination, number-field point square root or sibling baseline data entered recovery. The supplied constructed classes and their upstream construction cost are outside this arm; mixed local/remote backend times do not give an end-to-end speed comparison. Bounded misses remain misses.",
+  "mathematical_input_allowlist": [
+    "research/artifacts/generated-results/elliptic-curves/constructed_class_blind_recovery_v1/covers.json"
+  ],
+  "public_algorithm_sources": [
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1592",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1590",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1588",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1570",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1538",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1539",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/1442",
+    "https://magma.maths.usyd.edu.au/magma/handbook/text/49",
+    "https://magma.maths.usyd.edu.au/calc/",
+    "https://www.dpmms.cam.ac.uk/~taf1000/papers/minred-234.pdf"
+  ],
+  "installed_source_paths": [
+    "/home/royvanrijn/.local/bin/sage",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/interfaces/magma_free.py",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/matrix/matrix_integer_dense.pyx",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/rings/polynomial/binary_form_reduce.py",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/cypari2/auto_gen.pxi"
+  ],
+  "outputs": {
+    "witness": "cover-worker-witness.json",
+    "quartics": [
+      "cover-worker-quartic-c6.json",
+      "cover-worker-quartic-c7.json"
+    ],
+    "evidence_archive_expected_from_parent": true
+  }
+}
