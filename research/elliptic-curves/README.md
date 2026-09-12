@@ -17,6 +17,12 @@ labeled retrospective panel of five historical11952 fibres at lower bounds27–2
 has three LOCAL passes (u+n=8,8,10) and two timeouts. It never enters prospective
 statistics or frozen controls. CLASS is off; original census hashes are unchanged.
 
+The [censoring / mod-two class-relation pilot](notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md)
+finds no positive prospective ramification enrichment and substantial timeout
+bias. Two equation-only16384-candidate pilots produce zero/one new principal
+relations, leaving deficiencies1905/1890—not class-rank estimates. Exact replay
+passes; class-group upper bounds remain UNKNOWN. No BNF or point searches run.
+
 The [ancestry / equation-only panel / strict-descent comparison](notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 now has 792 replayed carriers: all fourteen 302 targets and eight 11952 targets
 have degree-two genus-one ancestry, with no shared tested cover between targets.

@@ -1,0 +1,16 @@
+{
+  "attempted": 1024,
+  "canonical_rank": 2263,
+  "columns": 4154,
+  "deficiency": 1890,
+  "deficiency_fraction": 0.4549831487722677,
+  "distinct_rows": 2264,
+  "rank_gain_beyond_canonical": 1,
+  "rank_mod2": 2264,
+  "rows": 2264,
+  "singleton_columns": 4135,
+  "smooth_relations": 1,
+  "trial_sha256": "5d8c8313314c76704f96721f1293c5f861992854c7d0fbb3b4e315f6c18864b7",
+  "zero_columns": 6,
+  "zero_rows": 0
+}

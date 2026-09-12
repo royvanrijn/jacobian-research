@@ -1,0 +1,55 @@
+{
+  "certified_bad_rational_primes": [
+    "2",
+    "3",
+    "5",
+    "7",
+    "11",
+    "13",
+    "17",
+    "19",
+    "37",
+    "41",
+    "107",
+    "139",
+    "241",
+    "2309",
+    "146750759902520012671",
+    "174361184822160214729",
+    "1087614221970164994197309267684770841847552381021820065017808837975906824362877"
+  ],
+  "curve_key": "3aaacd8b380c5a90474408a6",
+  "field_discriminant": "-11745125294215423944325119488871324777516375948433450278279447283566896380111330979951999442580389905547198082316321948728965860",
+  "field_signature": [
+    1,
+    1
+  ],
+  "integral_monic_cubic_ascending": [
+    "1295496335885301858830067756364096120794962874446173205702293016778234381975908607242265600",
+    "-2211480105017694237952692221676507158032266699919068376217280",
+    "1",
+    "1"
+  ],
+  "protocol": {
+    "candidate_budget": 16384,
+    "candidate_prefixes": [
+      128,
+      1024,
+      8192,
+      16384
+    ],
+    "classes_or_points_supplied": false,
+    "comparison": "fixed attempted-candidate prefixes; report achieved relation counts, not an assumed N",
+    "factor_base_bound": 20000,
+    "factor_base_rule": "all prime ideals above rational p<=20000 plus all denominator-prime ideals",
+    "full_class_group": false,
+    "height_reduction_max_steps": 128,
+    "interpretation": "factor-base image bound only; full g and generation UNKNOWN",
+    "large_prime_variant": false,
+    "max_jobs": 2,
+    "new_point_searches": false,
+    "relation_rule": "all canonical (p) relations, then primitive (a,b), b>0, ordered by max(|a|,b)",
+    "wall_seconds_per_field": 180
+  },
+  "schema": "elliptic-curves.two-class-relation-input.v1"
+}

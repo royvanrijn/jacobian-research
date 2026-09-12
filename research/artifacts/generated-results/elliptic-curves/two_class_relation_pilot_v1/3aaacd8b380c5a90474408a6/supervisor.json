@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/two_class_relation_worker.sage",
+    "--input",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/two_class_relation_pilot_v1/inputs/3aaacd8b380c5a90474408a6.json",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/two_class_relation_pilot_v1/3aaacd8b380c5a90474408a6"
+  ],
+  "input_sha256": "e934685aa3259b5ad0e7a050392aef513d43fa26314820a7edb9a33dcc0f010a",
+  "no_full_class_group": true,
+  "no_new_point_searches": true,
+  "returncode": 0,
+  "status": "PASS_BOUNDED_WORKER",
+  "wall_limit_seconds": 180,
+  "wall_seconds": 1.208645
+}

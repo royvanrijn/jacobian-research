@@ -1,0 +1,1370 @@
+{
+  "analysis_mode": "retrospective_analysis_of_frozen_prospective_population",
+  "base_size_quintile_cuts": [
+    457.05237123752363,
+    476.0531992042401,
+    492.32547351738253,
+    513.0141645464843
+  ],
+  "by_base_size_quintile": {
+    "1": {
+      "completion_rate": 0.5649038461538461,
+      "count": 416,
+      "local_pass": 235,
+      "local_unknown": 181,
+      "median_base_log2_delta": 440.1902593557245,
+      "median_base_log2_delta_pass": 436.72638511231185,
+      "median_base_log2_delta_unknown": 442.9409062872741,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 235,
+      "ramified_ge9_known": 58,
+      "ramified_ge9_population_fraction_bounds": [
+        0.13942307692307693,
+        0.5745192307692307
+      ],
+      "tail_ge23_count": 14
+    },
+    "2": {
+      "completion_rate": 0.44711538461538464,
+      "count": 416,
+      "local_pass": 186,
+      "local_unknown": 230,
+      "median_base_log2_delta": 466.1008587093502,
+      "median_base_log2_delta_pass": 465.5409957597611,
+      "median_base_log2_delta_unknown": 466.64778383382907,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 186,
+      "ramified_ge9_known": 29,
+      "ramified_ge9_population_fraction_bounds": [
+        0.06971153846153846,
+        0.6225961538461539
+      ],
+      "tail_ge23_count": 9
+    },
+    "3": {
+      "completion_rate": 0.4567307692307692,
+      "count": 416,
+      "local_pass": 190,
+      "local_unknown": 226,
+      "median_base_log2_delta": 484.4978147291397,
+      "median_base_log2_delta_pass": 484.59189532332255,
+      "median_base_log2_delta_unknown": 484.07429049864675,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 190,
+      "ramified_ge9_known": 28,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0673076923076923,
+        0.6105769230769231
+      ],
+      "tail_ge23_count": 6
+    },
+    "4": {
+      "completion_rate": 0.38461538461538464,
+      "count": 416,
+      "local_pass": 160,
+      "local_unknown": 256,
+      "median_base_log2_delta": 500.55513069229414,
+      "median_base_log2_delta_pass": 500.3191634319201,
+      "median_base_log2_delta_unknown": 500.91495459493046,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 160,
+      "ramified_ge9_known": 26,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0625,
+        0.6778846153846154
+      ],
+      "tail_ge23_count": 1
+    },
+    "5": {
+      "completion_rate": 0.30528846153846156,
+      "count": 416,
+      "local_pass": 127,
+      "local_unknown": 289,
+      "median_base_log2_delta": 539.5511302020535,
+      "median_base_log2_delta_pass": 532.3956758597435,
+      "median_base_log2_delta_unknown": 546.209365447558,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 127,
+      "ramified_ge9_known": 19,
+      "ramified_ge9_population_fraction_bounds": [
+        0.04567307692307692,
+        0.7403846153846154
+      ],
+      "tail_ge23_count": 0
+    }
+  },
+  "by_family": {
+    "074d9": {
+      "completion_rate": 0.471875,
+      "count": 320,
+      "local_pass": 151,
+      "local_unknown": 169,
+      "median_base_log2_delta": 476.06519611899427,
+      "median_base_log2_delta_pass": 474.1434079311896,
+      "median_base_log2_delta_unknown": 478.9547573790555,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 151,
+      "ramified_ge9_known": 23,
+      "ramified_ge9_population_fraction_bounds": [
+        0.071875,
+        0.6
+      ],
+      "tail_ge23_count": 7
+    },
+    "07ca9": {
+      "completion_rate": 0.51875,
+      "count": 320,
+      "local_pass": 166,
+      "local_unknown": 154,
+      "median_base_log2_delta": 471.8285800378436,
+      "median_base_log2_delta_pass": 471.54719764025754,
+      "median_base_log2_delta_unknown": 471.8619830408384,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 166,
+      "ramified_ge9_known": 39,
+      "ramified_ge9_population_fraction_bounds": [
+        0.121875,
+        0.603125
+      ],
+      "tail_ge23_count": 7
+    },
+    "08234": {
+      "completion_rate": 0.346875,
+      "count": 320,
+      "local_pass": 111,
+      "local_unknown": 209,
+      "median_base_log2_delta": 532.2289153169652,
+      "median_base_log2_delta_pass": 533.4297737686073,
+      "median_base_log2_delta_unknown": 531.4743644802637,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 111,
+      "ramified_ge9_known": 17,
+      "ramified_ge9_population_fraction_bounds": [
+        0.053125,
+        0.70625
+      ],
+      "tail_ge23_count": 1
+    },
+    "08f72": {
+      "completion_rate": 0.44375,
+      "count": 320,
+      "local_pass": 142,
+      "local_unknown": 178,
+      "median_base_log2_delta": 488.6807716619951,
+      "median_base_log2_delta_pass": 482.27761695633217,
+      "median_base_log2_delta_unknown": 492.08472734349164,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 142,
+      "ramified_ge9_known": 26,
+      "ramified_ge9_population_fraction_bounds": [
+        0.08125,
+        0.6375
+      ],
+      "tail_ge23_count": 6
+    },
+    "103b2": {
+      "completion_rate": 0.4625,
+      "count": 320,
+      "local_pass": 148,
+      "local_unknown": 172,
+      "median_base_log2_delta": 475.65881780688096,
+      "median_base_log2_delta_pass": 470.38627008265973,
+      "median_base_log2_delta_unknown": 477.81480121745636,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 148,
+      "ramified_ge9_known": 31,
+      "ramified_ge9_population_fraction_bounds": [
+        0.096875,
+        0.634375
+      ],
+      "tail_ge23_count": 2
+    },
+    "11952": {
+      "completion_rate": 0.453125,
+      "count": 320,
+      "local_pass": 145,
+      "local_unknown": 175,
+      "median_base_log2_delta": 480.21617536942745,
+      "median_base_log2_delta_pass": 476.0531992042401,
+      "median_base_log2_delta_unknown": 482.72859472541126,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 145,
+      "ramified_ge9_known": 17,
+      "ramified_ge9_population_fraction_bounds": [
+        0.053125,
+        0.6
+      ],
+      "tail_ge23_count": 6
+    },
+    "x1092-class1": {
+      "completion_rate": 0.0375,
+      "count": 80,
+      "local_pass": 3,
+      "local_unknown": 77,
+      "median_base_log2_delta": 2846.286029371913,
+      "median_base_log2_delta_pass": 2860.98453685396,
+      "median_base_log2_delta_unknown": 2843.78983213268,
+      "median_ramified_primes": 5.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 3,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.9625
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-original": {
+      "completion_rate": 0.4,
+      "count": 80,
+      "local_pass": 32,
+      "local_unknown": 48,
+      "median_base_log2_delta": 460.45627949582865,
+      "median_base_log2_delta_pass": 451.6817045735586,
+      "median_base_log2_delta_unknown": 461.89107687512615,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 32,
+      "ramified_ge9_known": 7,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0875,
+        0.6875
+      ],
+      "tail_ge23_count": 1
+    }
+  },
+  "by_family_and_size_quintile": {
+    "074d9/Q1": {
+      "completion_rate": 0.6027397260273972,
+      "count": 73,
+      "local_pass": 44,
+      "local_unknown": 29,
+      "median_base_log2_delta": 437.74073633820467,
+      "median_base_log2_delta_pass": 433.2067854825315,
+      "median_base_log2_delta_unknown": 447.7080360196972,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 44,
+      "ramified_ge9_known": 9,
+      "ramified_ge9_population_fraction_bounds": [
+        0.1232876712328767,
+        0.5205479452054794
+      ],
+      "tail_ge23_count": 2
+    },
+    "074d9/Q2": {
+      "completion_rate": 0.4482758620689655,
+      "count": 87,
+      "local_pass": 39,
+      "local_unknown": 48,
+      "median_base_log2_delta": 467.8303003329061,
+      "median_base_log2_delta_pass": 466.5213391833805,
+      "median_base_log2_delta_unknown": 468.3394266082716,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 39,
+      "ramified_ge9_known": 3,
+      "ramified_ge9_population_fraction_bounds": [
+        0.034482758620689655,
+        0.5862068965517241
+      ],
+      "tail_ge23_count": 2
+    },
+    "074d9/Q3": {
+      "completion_rate": 0.4523809523809524,
+      "count": 84,
+      "local_pass": 38,
+      "local_unknown": 46,
+      "median_base_log2_delta": 482.76739538595257,
+      "median_base_log2_delta_pass": 482.54224586703936,
+      "median_base_log2_delta_unknown": 483.1553347114162,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 38,
+      "ramified_ge9_known": 8,
+      "ramified_ge9_population_fraction_bounds": [
+        0.09523809523809523,
+        0.6428571428571429
+      ],
+      "tail_ge23_count": 3
+    },
+    "074d9/Q4": {
+      "completion_rate": 0.3972602739726027,
+      "count": 73,
+      "local_pass": 29,
+      "local_unknown": 44,
+      "median_base_log2_delta": 499.1468877393884,
+      "median_base_log2_delta_pass": 497.97020956027814,
+      "median_base_log2_delta_unknown": 499.7510609549912,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 29,
+      "ramified_ge9_known": 3,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0410958904109589,
+        0.6438356164383562
+      ],
+      "tail_ge23_count": 0
+    },
+    "074d9/Q5": {
+      "completion_rate": 0.3333333333333333,
+      "count": 3,
+      "local_pass": 1,
+      "local_unknown": 2,
+      "median_base_log2_delta": 517.3670186745896,
+      "median_base_log2_delta_pass": 517.3670186745896,
+      "median_base_log2_delta_unknown": 515.6947072463468,
+      "median_ramified_primes": 5.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 1,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.6666666666666666
+      ],
+      "tail_ge23_count": 0
+    },
+    "07ca9/Q1": {
+      "completion_rate": 0.6179775280898876,
+      "count": 89,
+      "local_pass": 55,
+      "local_unknown": 34,
+      "median_base_log2_delta": 439.774327118809,
+      "median_base_log2_delta_pass": 441.6924926069834,
+      "median_base_log2_delta_unknown": 438.2718069570541,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 55,
+      "ramified_ge9_known": 17,
+      "ramified_ge9_population_fraction_bounds": [
+        0.19101123595505617,
+        0.5730337078651685
+      ],
+      "tail_ge23_count": 5
+    },
+    "07ca9/Q2": {
+      "completion_rate": 0.4175824175824176,
+      "count": 91,
+      "local_pass": 38,
+      "local_unknown": 53,
+      "median_base_log2_delta": 465.7943297360406,
+      "median_base_log2_delta_pass": 465.44342571718505,
+      "median_base_log2_delta_unknown": 465.8289567642648,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 38,
+      "ramified_ge9_known": 5,
+      "ramified_ge9_population_fraction_bounds": [
+        0.054945054945054944,
+        0.6373626373626373
+      ],
+      "tail_ge23_count": 2
+    },
+    "07ca9/Q3": {
+      "completion_rate": 0.5679012345679012,
+      "count": 81,
+      "local_pass": 46,
+      "local_unknown": 35,
+      "median_base_log2_delta": 485.0891009074253,
+      "median_base_log2_delta_pass": 484.9220498032498,
+      "median_base_log2_delta_unknown": 485.1232863605871,
+      "median_ramified_primes": 6.5,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 46,
+      "ramified_ge9_known": 9,
+      "ramified_ge9_population_fraction_bounds": [
+        0.1111111111111111,
+        0.5432098765432098
+      ],
+      "tail_ge23_count": 0
+    },
+    "07ca9/Q4": {
+      "completion_rate": 0.4883720930232558,
+      "count": 43,
+      "local_pass": 21,
+      "local_unknown": 22,
+      "median_base_log2_delta": 499.1386083686394,
+      "median_base_log2_delta_pass": 499.1386083686394,
+      "median_base_log2_delta_unknown": 498.72951491957986,
+      "median_ramified_primes": 8.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 21,
+      "ramified_ge9_known": 8,
+      "ramified_ge9_population_fraction_bounds": [
+        0.18604651162790697,
+        0.6976744186046512
+      ],
+      "tail_ge23_count": 0
+    },
+    "07ca9/Q5": {
+      "completion_rate": 0.375,
+      "count": 16,
+      "local_pass": 6,
+      "local_unknown": 10,
+      "median_base_log2_delta": 516.6533711757053,
+      "median_base_log2_delta_pass": 515.2744749705835,
+      "median_base_log2_delta_unknown": 517.0221318406414,
+      "median_ramified_primes": 6.5,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 6,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.625
+      ],
+      "tail_ge23_count": 0
+    },
+    "08234/Q1": {
+      "completion_rate": 0.25,
+      "count": 12,
+      "local_pass": 3,
+      "local_unknown": 9,
+      "median_base_log2_delta": 449.5903804276927,
+      "median_base_log2_delta_pass": 451.1433498093937,
+      "median_base_log2_delta_unknown": 448.4883742192063,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 18.5,
+      "ramification_known": 3,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.75
+      ],
+      "tail_ge23_count": 0
+    },
+    "08234/Q2": {
+      "completion_rate": 0.2,
+      "count": 10,
+      "local_pass": 2,
+      "local_unknown": 8,
+      "median_base_log2_delta": 467.97064979096945,
+      "median_base_log2_delta_pass": 461.1652756259299,
+      "median_base_log2_delta_unknown": 469.5707266482707,
+      "median_ramified_primes": 8.5,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 2,
+      "ramified_ge9_known": 1,
+      "ramified_ge9_population_fraction_bounds": [
+        0.1,
+        0.9
+      ],
+      "tail_ge23_count": 0
+    },
+    "08234/Q3": {
+      "completion_rate": 0.4166666666666667,
+      "count": 24,
+      "local_pass": 10,
+      "local_unknown": 14,
+      "median_base_log2_delta": 485.29572316087194,
+      "median_base_log2_delta_pass": 485.8273227974832,
+      "median_base_log2_delta_unknown": 484.2354442303053,
+      "median_ramified_primes": 5.5,
+      "median_rank_lower_bound": 17.5,
+      "ramification_known": 10,
+      "ramified_ge9_known": 1,
+      "ramified_ge9_population_fraction_bounds": [
+        0.041666666666666664,
+        0.625
+      ],
+      "tail_ge23_count": 1
+    },
+    "08234/Q4": {
+      "completion_rate": 0.3469387755102041,
+      "count": 49,
+      "local_pass": 17,
+      "local_unknown": 32,
+      "median_base_log2_delta": 501.7495183300883,
+      "median_base_log2_delta_pass": 502.2182319578315,
+      "median_base_log2_delta_unknown": 500.93564421961855,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 17,
+      "ramified_ge9_known": 3,
+      "ramified_ge9_population_fraction_bounds": [
+        0.061224489795918366,
+        0.7142857142857143
+      ],
+      "tail_ge23_count": 0
+    },
+    "08234/Q5": {
+      "completion_rate": 0.3511111111111111,
+      "count": 225,
+      "local_pass": 79,
+      "local_unknown": 146,
+      "median_base_log2_delta": 543.5064054544387,
+      "median_base_log2_delta_pass": 541.0241525448979,
+      "median_base_log2_delta_unknown": 544.3763508340903,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 79,
+      "ramified_ge9_known": 12,
+      "ramified_ge9_population_fraction_bounds": [
+        0.05333333333333334,
+        0.7022222222222222
+      ],
+      "tail_ge23_count": 0
+    },
+    "08f72/Q1": {
+      "completion_rate": 0.5849056603773585,
+      "count": 53,
+      "local_pass": 31,
+      "local_unknown": 22,
+      "median_base_log2_delta": 438.36771256452386,
+      "median_base_log2_delta_pass": 433.9986390224528,
+      "median_base_log2_delta_unknown": 441.90555687168705,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 31,
+      "ramified_ge9_known": 10,
+      "ramified_ge9_population_fraction_bounds": [
+        0.18867924528301888,
+        0.6037735849056604
+      ],
+      "tail_ge23_count": 3
+    },
+    "08f72/Q2": {
+      "completion_rate": 0.5535714285714286,
+      "count": 56,
+      "local_pass": 31,
+      "local_unknown": 25,
+      "median_base_log2_delta": 465.6407420507545,
+      "median_base_log2_delta_pass": 467.8627920766371,
+      "median_base_log2_delta_unknown": 463.5292945888835,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 31,
+      "ramified_ge9_known": 4,
+      "ramified_ge9_population_fraction_bounds": [
+        0.07142857142857142,
+        0.5178571428571429
+      ],
+      "tail_ge23_count": 1
+    },
+    "08f72/Q3": {
+      "completion_rate": 0.391304347826087,
+      "count": 69,
+      "local_pass": 27,
+      "local_unknown": 42,
+      "median_base_log2_delta": 485.15564876653787,
+      "median_base_log2_delta_pass": 485.1076990840428,
+      "median_base_log2_delta_unknown": 485.3605615534848,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 27,
+      "ramified_ge9_known": 5,
+      "ramified_ge9_population_fraction_bounds": [
+        0.07246376811594203,
+        0.6811594202898551
+      ],
+      "tail_ge23_count": 1
+    },
+    "08f72/Q4": {
+      "completion_rate": 0.3584905660377358,
+      "count": 106,
+      "local_pass": 38,
+      "local_unknown": 68,
+      "median_base_log2_delta": 501.13017883103885,
+      "median_base_log2_delta_pass": 499.6225583520647,
+      "median_base_log2_delta_unknown": 501.8417496489956,
+      "median_ramified_primes": 6.5,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 38,
+      "ramified_ge9_known": 6,
+      "ramified_ge9_population_fraction_bounds": [
+        0.05660377358490566,
+        0.6981132075471698
+      ],
+      "tail_ge23_count": 1
+    },
+    "08f72/Q5": {
+      "completion_rate": 0.4166666666666667,
+      "count": 36,
+      "local_pass": 15,
+      "local_unknown": 21,
+      "median_base_log2_delta": 518.7304674006273,
+      "median_base_log2_delta_pass": 515.7407340083005,
+      "median_base_log2_delta_unknown": 519.7707513999624,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 15,
+      "ramified_ge9_known": 1,
+      "ramified_ge9_population_fraction_bounds": [
+        0.027777777777777776,
+        0.6111111111111112
+      ],
+      "tail_ge23_count": 0
+    },
+    "103b2/Q1": {
+      "completion_rate": 0.573170731707317,
+      "count": 82,
+      "local_pass": 47,
+      "local_unknown": 35,
+      "median_base_log2_delta": 441.0530216168878,
+      "median_base_log2_delta_pass": 440.2201768845195,
+      "median_base_log2_delta_unknown": 442.022803639989,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 47,
+      "ramified_ge9_known": 11,
+      "ramified_ge9_population_fraction_bounds": [
+        0.13414634146341464,
+        0.5609756097560976
+      ],
+      "tail_ge23_count": 1
+    },
+    "103b2/Q2": {
+      "completion_rate": 0.43209876543209874,
+      "count": 81,
+      "local_pass": 35,
+      "local_unknown": 46,
+      "median_base_log2_delta": 465.90899270475114,
+      "median_base_log2_delta_pass": 465.37945929232666,
+      "median_base_log2_delta_unknown": 466.7434215993493,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 35,
+      "ramified_ge9_known": 10,
+      "ramified_ge9_population_fraction_bounds": [
+        0.12345679012345678,
+        0.691358024691358
+      ],
+      "tail_ge23_count": 1
+    },
+    "103b2/Q3": {
+      "completion_rate": 0.44,
+      "count": 75,
+      "local_pass": 33,
+      "local_unknown": 42,
+      "median_base_log2_delta": 482.75983180335584,
+      "median_base_log2_delta_pass": 482.75983180335584,
+      "median_base_log2_delta_unknown": 482.2343499623538,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 33,
+      "ramified_ge9_known": 2,
+      "ramified_ge9_population_fraction_bounds": [
+        0.02666666666666667,
+        0.5866666666666667
+      ],
+      "tail_ge23_count": 0
+    },
+    "103b2/Q4": {
+      "completion_rate": 0.390625,
+      "count": 64,
+      "local_pass": 25,
+      "local_unknown": 39,
+      "median_base_log2_delta": 501.30672291570806,
+      "median_base_log2_delta_pass": 499.54239120056525,
+      "median_base_log2_delta_unknown": 501.7617915850552,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 25,
+      "ramified_ge9_known": 5,
+      "ramified_ge9_population_fraction_bounds": [
+        0.078125,
+        0.6875
+      ],
+      "tail_ge23_count": 0
+    },
+    "103b2/Q5": {
+      "completion_rate": 0.4444444444444444,
+      "count": 18,
+      "local_pass": 8,
+      "local_unknown": 10,
+      "median_base_log2_delta": 515.580320926528,
+      "median_base_log2_delta_pass": 516.2577350301117,
+      "median_base_log2_delta_unknown": 515.1624800587267,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 8,
+      "ramified_ge9_known": 3,
+      "ramified_ge9_population_fraction_bounds": [
+        0.16666666666666666,
+        0.7222222222222222
+      ],
+      "tail_ge23_count": 0
+    },
+    "11952/Q1": {
+      "completion_rate": 0.5428571428571428,
+      "count": 70,
+      "local_pass": 38,
+      "local_unknown": 32,
+      "median_base_log2_delta": 441.84673190500166,
+      "median_base_log2_delta_pass": 439.07349847068326,
+      "median_base_log2_delta_unknown": 445.19076666674243,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 38,
+      "ramified_ge9_known": 7,
+      "ramified_ge9_population_fraction_bounds": [
+        0.1,
+        0.5571428571428572
+      ],
+      "tail_ge23_count": 2
+    },
+    "11952/Q2": {
+      "completion_rate": 0.4533333333333333,
+      "count": 75,
+      "local_pass": 34,
+      "local_unknown": 41,
+      "median_base_log2_delta": 465.45840486726314,
+      "median_base_log2_delta_pass": 464.9786990478099,
+      "median_base_log2_delta_unknown": 466.6955751708348,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 34,
+      "ramified_ge9_known": 4,
+      "ramified_ge9_population_fraction_bounds": [
+        0.05333333333333334,
+        0.6
+      ],
+      "tail_ge23_count": 3
+    },
+    "11952/Q3": {
+      "completion_rate": 0.45588235294117646,
+      "count": 68,
+      "local_pass": 31,
+      "local_unknown": 37,
+      "median_base_log2_delta": 485.15080903358694,
+      "median_base_log2_delta_pass": 486.04913642974776,
+      "median_base_log2_delta_unknown": 483.7872561877464,
+      "median_ramified_primes": 5.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 31,
+      "ramified_ge9_known": 2,
+      "ramified_ge9_population_fraction_bounds": [
+        0.029411764705882353,
+        0.5735294117647058
+      ],
+      "tail_ge23_count": 1
+    },
+    "11952/Q4": {
+      "completion_rate": 0.3698630136986301,
+      "count": 73,
+      "local_pass": 27,
+      "local_unknown": 46,
+      "median_base_log2_delta": 501.0024713738264,
+      "median_base_log2_delta_pass": 501.1153765073476,
+      "median_base_log2_delta_unknown": 499.8913262217037,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 27,
+      "ramified_ge9_known": 1,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0136986301369863,
+        0.6438356164383562
+      ],
+      "tail_ge23_count": 0
+    },
+    "11952/Q5": {
+      "completion_rate": 0.4411764705882353,
+      "count": 34,
+      "local_pass": 15,
+      "local_unknown": 19,
+      "median_base_log2_delta": 521.2908644232809,
+      "median_base_log2_delta_pass": 522.8562595053276,
+      "median_base_log2_delta_unknown": 521.1646037415878,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 15,
+      "ramified_ge9_known": 3,
+      "ramified_ge9_population_fraction_bounds": [
+        0.08823529411764706,
+        0.6470588235294118
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-class1/Q5": {
+      "completion_rate": 0.0375,
+      "count": 80,
+      "local_pass": 3,
+      "local_unknown": 77,
+      "median_base_log2_delta": 2846.286029371913,
+      "median_base_log2_delta_pass": 2860.98453685396,
+      "median_base_log2_delta_unknown": 2843.78983213268,
+      "median_ramified_primes": 5.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 3,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.9625
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-original/Q1": {
+      "completion_rate": 0.4594594594594595,
+      "count": 37,
+      "local_pass": 17,
+      "local_unknown": 20,
+      "median_base_log2_delta": 441.2507897180278,
+      "median_base_log2_delta_pass": 433.551772533161,
+      "median_base_log2_delta_unknown": 444.2593234996221,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 17,
+      "ramified_ge9_known": 4,
+      "ramified_ge9_population_fraction_bounds": [
+        0.10810810810810811,
+        0.6486486486486487
+      ],
+      "tail_ge23_count": 1
+    },
+    "x1092-original/Q2": {
+      "completion_rate": 0.4375,
+      "count": 16,
+      "local_pass": 7,
+      "local_unknown": 9,
+      "median_base_log2_delta": 465.70848452243746,
+      "median_base_log2_delta_pass": 470.37486949001044,
+      "median_base_log2_delta_unknown": 461.97531855629956,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 18.0,
+      "ramification_known": 7,
+      "ramified_ge9_known": 2,
+      "ramified_ge9_population_fraction_bounds": [
+        0.125,
+        0.6875
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-original/Q3": {
+      "completion_rate": 0.3333333333333333,
+      "count": 15,
+      "local_pass": 5,
+      "local_unknown": 10,
+      "median_base_log2_delta": 485.3486037949732,
+      "median_base_log2_delta_pass": 484.71558479218817,
+      "median_base_log2_delta_unknown": 486.3408419552884,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 5,
+      "ramified_ge9_known": 1,
+      "ramified_ge9_population_fraction_bounds": [
+        0.06666666666666667,
+        0.7333333333333333
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-original/Q4": {
+      "completion_rate": 0.375,
+      "count": 8,
+      "local_pass": 3,
+      "local_unknown": 5,
+      "median_base_log2_delta": 501.47662738449026,
+      "median_base_log2_delta_pass": 503.20594788098083,
+      "median_base_log2_delta_unknown": 499.7473068879997,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 3,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.625
+      ],
+      "tail_ge23_count": 0
+    },
+    "x1092-original/Q5": {
+      "completion_rate": 0.0,
+      "count": 4,
+      "local_pass": 0,
+      "local_unknown": 4,
+      "median_base_log2_delta": 520.2526537242301,
+      "median_base_log2_delta_pass": null,
+      "median_base_log2_delta_unknown": 520.2526537242301,
+      "median_ramified_primes": null,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 0,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "tail_ge23_count": 0
+    }
+  },
+  "by_rank_stratum": {
+    "17-18": {
+      "completion_rate": 0.41232528589580686,
+      "count": 1574,
+      "local_pass": 649,
+      "local_unknown": 925,
+      "median_base_log2_delta": 492.0204051157867,
+      "median_base_log2_delta_pass": 487.18825457027407,
+      "median_base_log2_delta_unknown": 495.91192667812106,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 649,
+      "ramified_ge9_known": 121,
+      "ramified_ge9_population_fraction_bounds": [
+        0.07687420584498093,
+        0.6645489199491741
+      ],
+      "tail_ge23_count": 0
+    },
+    "19-20": {
+      "completion_rate": 0.48148148148148145,
+      "count": 351,
+      "local_pass": 169,
+      "local_unknown": 182,
+      "median_base_log2_delta": 462.3068660045941,
+      "median_base_log2_delta_pass": 457.52413719564976,
+      "median_base_log2_delta_unknown": 468.8836485503242,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 19.0,
+      "ramification_known": 169,
+      "ramified_ge9_known": 28,
+      "ramified_ge9_population_fraction_bounds": [
+        0.07977207977207977,
+        0.5982905982905983
+      ],
+      "tail_ge23_count": 0
+    },
+    "21-22": {
+      "completion_rate": 0.504,
+      "count": 125,
+      "local_pass": 63,
+      "local_unknown": 62,
+      "median_base_log2_delta": 453.2971107052953,
+      "median_base_log2_delta_pass": 450.4188170320198,
+      "median_base_log2_delta_unknown": 458.6483807076884,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 21.0,
+      "ramification_known": 63,
+      "ramified_ge9_known": 9,
+      "ramified_ge9_population_fraction_bounds": [
+        0.072,
+        0.568
+      ],
+      "tail_ge23_count": 0
+    },
+    "23": {
+      "completion_rate": 0.6,
+      "count": 25,
+      "local_pass": 15,
+      "local_unknown": 10,
+      "median_base_log2_delta": 460.62549530961815,
+      "median_base_log2_delta_pass": 455.32419586683903,
+      "median_base_log2_delta_unknown": 469.07485467556035,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 23.0,
+      "ramification_known": 15,
+      "ramified_ge9_known": 2,
+      "ramified_ge9_population_fraction_bounds": [
+        0.08,
+        0.48
+      ],
+      "tail_ge23_count": 25
+    },
+    "24": {
+      "completion_rate": 0.25,
+      "count": 4,
+      "local_pass": 1,
+      "local_unknown": 3,
+      "median_base_log2_delta": 460.93935252970505,
+      "median_base_log2_delta_pass": 482.7134298161762,
+      "median_base_log2_delta_unknown": 446.5856447245652,
+      "median_ramified_primes": 3.0,
+      "median_rank_lower_bound": 24.0,
+      "ramification_known": 1,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.75
+      ],
+      "tail_ge23_count": 4
+    },
+    "25+": {
+      "completion_rate": 1.0,
+      "count": 1,
+      "local_pass": 1,
+      "local_unknown": 0,
+      "median_base_log2_delta": 459.5698199171877,
+      "median_base_log2_delta_pass": 459.5698199171877,
+      "median_base_log2_delta_unknown": null,
+      "median_ramified_primes": 5.0,
+      "median_rank_lower_bound": 25.0,
+      "ramification_known": 1,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "tail_ge23_count": 1
+    }
+  },
+  "cohort": "prospective_broad_2080",
+  "completed_11952_ramification_association": {
+    "n": 145,
+    "spearman_ramification_vs_rank_LB": -0.13435254534365634
+  },
+  "completed_case_ramification_association": {
+    "n": 898,
+    "spearman_ramification_vs_rank_LB": 0.00802020131534974
+  },
+  "completion_vs_base_size_spearman": -0.1798294980299543,
+  "missing_data_boundary": "Worst-case fraction intervals assign every unknown to low or high ramification. No missing-at-random assumption, inverse weighting or imputation.",
+  "population": {
+    "completion_rate": 0.43173076923076925,
+    "count": 2080,
+    "local_pass": 898,
+    "local_unknown": 1182,
+    "median_base_log2_delta": 484.4978147291397,
+    "median_base_log2_delta_pass": 478.515364285025,
+    "median_base_log2_delta_unknown": 488.8309927278302,
+    "median_ramified_primes": 6.0,
+    "median_rank_lower_bound": 17.0,
+    "ramification_known": 898,
+    "ramified_ge9_known": 160,
+    "ramified_ge9_population_fraction_bounds": [
+      0.07692307692307693,
+      0.6451923076923077
+    ],
+    "tail_ge23_count": 30
+  },
+  "ramification_strata": {
+    "0-4": {
+      "completion_rate": 1.0,
+      "count": 168,
+      "local_pass": 168,
+      "local_unknown": 0,
+      "median_base_log2_delta": 478.67476906733935,
+      "median_base_log2_delta_pass": 478.67476906733935,
+      "median_base_log2_delta_unknown": null,
+      "median_ramified_primes": 4.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 168,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "tail_ge23_count": 5
+    },
+    "5-6": {
+      "completion_rate": 1.0,
+      "count": 312,
+      "local_pass": 312,
+      "local_unknown": 0,
+      "median_base_log2_delta": 482.61668966332155,
+      "median_base_log2_delta_pass": 482.61668966332155,
+      "median_base_log2_delta_unknown": null,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 312,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "tail_ge23_count": 7
+    },
+    "7-8": {
+      "completion_rate": 1.0,
+      "count": 258,
+      "local_pass": 258,
+      "local_unknown": 0,
+      "median_base_log2_delta": 476.9976568602535,
+      "median_base_log2_delta_pass": 476.9976568602535,
+      "median_base_log2_delta_unknown": null,
+      "median_ramified_primes": 7.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 258,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        0.0
+      ],
+      "tail_ge23_count": 3
+    },
+    "9+": {
+      "completion_rate": 1.0,
+      "count": 160,
+      "local_pass": 160,
+      "local_unknown": 0,
+      "median_base_log2_delta": 472.09769241059746,
+      "median_base_log2_delta_pass": 472.09769241059746,
+      "median_base_log2_delta_unknown": null,
+      "median_ramified_primes": 10.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 160,
+      "ramified_ge9_known": 160,
+      "ramified_ge9_population_fraction_bounds": [
+        1.0,
+        1.0
+      ],
+      "tail_ge23_count": 2
+    },
+    "UNKNOWN": {
+      "completion_rate": 0.0,
+      "count": 1182,
+      "local_pass": 0,
+      "local_unknown": 1182,
+      "median_base_log2_delta": 488.8309927278302,
+      "median_base_log2_delta_pass": null,
+      "median_base_log2_delta_unknown": 488.8309927278302,
+      "median_ramified_primes": null,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 0,
+      "ramified_ge9_known": 0,
+      "ramified_ge9_population_fraction_bounds": [
+        0.0,
+        1.0
+      ],
+      "tail_ge23_count": 13
+    }
+  },
+  "rank_boundary": "All ranks are certified lower bounds; no exact ranks, p-values, predictive validation, Selmer dimensions or class ranks inferred.",
+  "same_family_11952": {
+    "by_rank_stratum": {
+      "17-18": {
+        "completion_rate": 0.4462809917355372,
+        "count": 242,
+        "local_pass": 108,
+        "local_unknown": 134,
+        "median_base_log2_delta": 487.81193307992305,
+        "median_base_log2_delta_pass": 485.0519221689258,
+        "median_base_log2_delta_unknown": 489.03216697353,
+        "median_ramified_primes": 6.0,
+        "median_rank_lower_bound": 17.0,
+        "ramification_known": 108,
+        "ramified_ge9_known": 14,
+        "ramified_ge9_population_fraction_bounds": [
+          0.05785123966942149,
+          0.6115702479338843
+        ],
+        "tail_ge23_count": 0
+      },
+      "19-20": {
+        "completion_rate": 0.5,
+        "count": 50,
+        "local_pass": 25,
+        "local_unknown": 25,
+        "median_base_log2_delta": 457.55705921792946,
+        "median_base_log2_delta_pass": 450.0660906844326,
+        "median_base_log2_delta_unknown": 460.465685628329,
+        "median_ramified_primes": 6.0,
+        "median_rank_lower_bound": 19.0,
+        "ramification_known": 25,
+        "ramified_ge9_known": 3,
+        "ramified_ge9_population_fraction_bounds": [
+          0.06,
+          0.56
+        ],
+        "tail_ge23_count": 0
+      },
+      "21-22": {
+        "completion_rate": 0.36363636363636365,
+        "count": 22,
+        "local_pass": 8,
+        "local_unknown": 14,
+        "median_base_log2_delta": 454.3209491754547,
+        "median_base_log2_delta_pass": 459.77956029346694,
+        "median_base_log2_delta_unknown": 450.14167412227334,
+        "median_ramified_primes": 6.0,
+        "median_rank_lower_bound": 21.0,
+        "ramification_known": 8,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.6363636363636364
+        ],
+        "tail_ge23_count": 0
+      },
+      "23": {
+        "completion_rate": 0.6666666666666666,
+        "count": 3,
+        "local_pass": 2,
+        "local_unknown": 1,
+        "median_base_log2_delta": 455.32419586683903,
+        "median_base_log2_delta_pass": 458.75546159895777,
+        "median_base_log2_delta_unknown": 400.22950742982357,
+        "median_ramified_primes": 4.5,
+        "median_rank_lower_bound": 23.0,
+        "ramification_known": 2,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.3333333333333333
+        ],
+        "tail_ge23_count": 3
+      },
+      "24": {
+        "completion_rate": 0.5,
+        "count": 2,
+        "local_pass": 1,
+        "local_unknown": 1,
+        "median_base_log2_delta": 479.0032450755105,
+        "median_base_log2_delta_pass": 482.7134298161762,
+        "median_base_log2_delta_unknown": 475.2930603348448,
+        "median_ramified_primes": 3.0,
+        "median_rank_lower_bound": 24.0,
+        "ramification_known": 1,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.5
+        ],
+        "tail_ge23_count": 2
+      },
+      "25+": {
+        "completion_rate": 1.0,
+        "count": 1,
+        "local_pass": 1,
+        "local_unknown": 0,
+        "median_base_log2_delta": 459.5698199171877,
+        "median_base_log2_delta_pass": 459.5698199171877,
+        "median_base_log2_delta_unknown": null,
+        "median_ramified_primes": 5.0,
+        "median_rank_lower_bound": 25.0,
+        "ramification_known": 1,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.0
+        ],
+        "tail_ge23_count": 1
+      }
+    },
+    "population": {
+      "completion_rate": 0.453125,
+      "count": 320,
+      "local_pass": 145,
+      "local_unknown": 175,
+      "median_base_log2_delta": 480.21617536942745,
+      "median_base_log2_delta_pass": 476.0531992042401,
+      "median_base_log2_delta_unknown": 482.72859472541126,
+      "median_ramified_primes": 6.0,
+      "median_rank_lower_bound": 17.0,
+      "ramification_known": 145,
+      "ramified_ge9_known": 17,
+      "ramified_ge9_population_fraction_bounds": [
+        0.053125,
+        0.6
+      ],
+      "tail_ge23_count": 6
+    },
+    "ramification_strata": {
+      "0-4": {
+        "completion_rate": 1.0,
+        "count": 35,
+        "local_pass": 35,
+        "local_unknown": 0,
+        "median_base_log2_delta": 476.0594452160146,
+        "median_base_log2_delta_pass": 476.0594452160146,
+        "median_base_log2_delta_unknown": null,
+        "median_ramified_primes": 4.0,
+        "median_rank_lower_bound": 17.0,
+        "ramification_known": 35,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.0
+        ],
+        "tail_ge23_count": 2
+      },
+      "5-6": {
+        "completion_rate": 1.0,
+        "count": 51,
+        "local_pass": 51,
+        "local_unknown": 0,
+        "median_base_log2_delta": 478.5613149032368,
+        "median_base_log2_delta_pass": 478.5613149032368,
+        "median_base_log2_delta_unknown": null,
+        "median_ramified_primes": 6.0,
+        "median_rank_lower_bound": 18.0,
+        "ramification_known": 51,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.0
+        ],
+        "tail_ge23_count": 2
+      },
+      "7-8": {
+        "completion_rate": 1.0,
+        "count": 42,
+        "local_pass": 42,
+        "local_unknown": 0,
+        "median_base_log2_delta": 481.4724767277843,
+        "median_base_log2_delta_pass": 481.4724767277843,
+        "median_base_log2_delta_unknown": null,
+        "median_ramified_primes": 7.0,
+        "median_rank_lower_bound": 17.0,
+        "ramification_known": 42,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          0.0
+        ],
+        "tail_ge23_count": 0
+      },
+      "9+": {
+        "completion_rate": 1.0,
+        "count": 17,
+        "local_pass": 17,
+        "local_unknown": 0,
+        "median_base_log2_delta": 464.90662561456435,
+        "median_base_log2_delta_pass": 464.90662561456435,
+        "median_base_log2_delta_unknown": null,
+        "median_ramified_primes": 9.0,
+        "median_rank_lower_bound": 17.0,
+        "ramification_known": 17,
+        "ramified_ge9_known": 17,
+        "ramified_ge9_population_fraction_bounds": [
+          1.0,
+          1.0
+        ],
+        "tail_ge23_count": 0
+      },
+      "UNKNOWN": {
+        "completion_rate": 0.0,
+        "count": 175,
+        "local_pass": 0,
+        "local_unknown": 175,
+        "median_base_log2_delta": 482.72859472541126,
+        "median_base_log2_delta_pass": null,
+        "median_base_log2_delta_unknown": 482.72859472541126,
+        "median_ramified_primes": null,
+        "median_rank_lower_bound": 17.0,
+        "ramification_known": 0,
+        "ramified_ge9_known": 0,
+        "ramified_ge9_population_fraction_bounds": [
+          0.0,
+          1.0
+        ],
+        "tail_ge23_count": 2
+      }
+    }
+  },
+  "schema": "elliptic-curves.wide-censoring-ramification-audit.v1",
+  "selection_mode": "frozen_prospective",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/plan.json": "bd901aeb24ec8a79725101033952d94ab862879f41a67dd60a371d30b327cafd",
+    "artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/prospective_profiles.json": "ab7099fec0cea7287006b8dc83057fa686d62113c18b03b25dedb64e297d0f0c",
+    "elliptic-curves/cas/arithmetic_frozen_snapshot.py": "6cec5bcf6e331d451905c3e4a51660fcc821a7d2133eda409b6f720087ae52e3",
+    "elliptic-curves/cas/audit_wide_arithmetic_censoring.py": "a7095fa17187f305af930dc44bd099d6ea645dcd770b41a70b3a36995164d888",
+    "elliptic-curves/cas/wide_arithmetic_profile_core.py": "bebe2b5269fdee876e3d8bd8c6f8ce993ac924d1ce172293389dbe1c1d806ad5"
+  },
+  "within_family_and_size_rank_association": {
+    "centered_rank_association": -0.05442432735614881,
+    "informative_strata": 30,
+    "pairs": 883
+  },
+  "within_family_rank_association": {
+    "centered_rank_association": -0.03001037633632978,
+    "informative_strata": 7,
+    "pairs": 895
+  }
+}

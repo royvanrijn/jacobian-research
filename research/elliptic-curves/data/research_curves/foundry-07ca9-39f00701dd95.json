@@ -9,7 +9,7 @@
   "bad_primes": null,
   "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md",
   "conductor": null,
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json",
   "conductor_divisor": "2275855777650",
   "conductor_status": "UNKNOWN",
   "conductor_upper_bound": "10189539803073990067243925413873841783494553902646466874249993259332499504285092697513800957047099214683158725880121493156050",

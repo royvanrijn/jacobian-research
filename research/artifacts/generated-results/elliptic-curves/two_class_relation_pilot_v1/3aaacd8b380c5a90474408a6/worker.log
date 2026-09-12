@@ -1,0 +1,5 @@
+MOD2_SETUP|key=3aaacd8b380c5a90474408a6|columns=4154|canonical_rank=2263|deficiency=1891
+MOD2_PREFIX|key=3aaacd8b380c5a90474408a6|attempts=128|smooth=1|deficiency=1890
+MOD2_PREFIX|key=3aaacd8b380c5a90474408a6|attempts=1024|smooth=1|deficiency=1890
+MOD2_PREFIX|key=3aaacd8b380c5a90474408a6|attempts=8192|smooth=1|deficiency=1890
+MOD2_PREFIX|key=3aaacd8b380c5a90474408a6|attempts=16384|smooth=1|deficiency=1890

@@ -1152,52 +1152,52 @@
       "source": "artifacts/generated-results/elliptic-curves/inventory321_conductor_snapshot_v4.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-074d9-32a21592b4d6",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-07ca9-242c4e73dcb3",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-07ca9-39f00701dd95",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-07ca9-500d8cd3104b",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-07ca9-8da5bd35f89e",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-07ca9-bb690c16b941",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-103b2-bd9e31ba3560",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
       "id": "foundry-103b2-e9d1426ea4bc",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     },
     {
       "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
@@ -1378,6 +1378,522 @@
       "id": "broad-x1092-original-37d50595eb8037ca7d7c",
       "kind": "checkpoint",
       "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-0069c8fba1e2",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-50dfdc38dd72",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-51dadf1c0263",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-55e776f03778",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-56b395dd3758",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-5cd1bb924336",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-78f9ee2cac45",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-920a50374920",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-a4e303e8d0d2",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-d2e36aaa0b7a",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-d7627bf02ac7",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-db7d3bf5850e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-074d9-fae8341a387f",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-001934fdf897",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-039bd8cbb68e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-2772d4770f5b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-2f9da9115d89",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-3c3549b281df",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-41b541aafb58",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-43e3dcdaef52",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-45e586e72a84",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-54cb51469aa1",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-61e67879d215",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-653ad5ebdd37",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-6e5b45a28829",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-7f9a74851e79",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-a097fcd42ef0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-afeaae08bccb",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-befd8be8d86c",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-cb18404d6853",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-d38578d72afc",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-d6098e83c12e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-e92cc9a1fb98",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-f1c00d1ca91d",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-07ca9-f2a0430374a0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08234-bdf3e5c261b8",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08234-d9a350cacf56",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-0bb573585978",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-19815487004b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-1a3ff0647d20",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-2befa447e601",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-40ac60187fd9",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-4655a42770e0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-4d4b1d600f61",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-50f717b16d07",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-5c8d713b47d0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-7e0fed623055",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-8431940c36e8",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-8f03c411e6ea",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-961a8aadd5fb",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-b9a8d8af69c1",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-c0eaa624a326",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-d87dfd710756",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-dfb4cc079af5",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-eb362a7c39e6",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-08f72-ffd2dd39c149",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-61b22394d44e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-6dba7753794a",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-7f68d7fd3051",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-8718b170ab7a",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-8b22d843173a",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-8cfe1c404875",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-8eb55ef6b9b4",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-98041bd449e2",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-c14cbd686e01",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-da67639e8ab8",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-de6dfcc3258c",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-e839666420df",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-ebc9ba8575e8",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-103b2-f05e1838f25e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-34a581776a99",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-3522eebc6dc0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-4a4e9b4ae340",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-5b08e45579f4",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-6599e33bde1e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-79f99e5fcc43",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-825ee63e5a94",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-9738e1ac00ed",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-a31493274bef",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-a61359cf66cb",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-ab67527f7264",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-ad137a40fe6d",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-b0fc6fa02cf0",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-c21d0b49841b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-db43616cda53",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-FOUNDRY-V3-CONDUCTORS-V2-20260912",
+      "id": "foundry-11952-e53292493505",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json"
     }
   ],
   "curves": [
@@ -3733,6 +4249,466 @@
       "rank_lower_bound": 23,
       "record": "broad-074d9-6268895b4587ec68b047",
       "source": "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-00afced4a28be454f129",
+      "kind": "cohort",
+      "parameter": "-160/553",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-00afced4a28be454f129",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-257c2359a7a9a2be8b28",
+      "kind": "cohort",
+      "parameter": "-606/349",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-257c2359a7a9a2be8b28",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "x1092-original",
+      "id": "broad-x1092-original-e374acf7da628c9b0226",
+      "kind": "cohort",
+      "parameter": "376/83",
+      "rank_lower_bound": 22,
+      "record": "broad-x1092-original-e374acf7da628c9b0226",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-1b21405657690013f96e",
+      "kind": "cohort",
+      "parameter": "46/15",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-1b21405657690013f96e",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08f72",
+      "id": "broad-08f72-050a6374083d8cb9328c",
+      "kind": "cohort",
+      "parameter": "912/1259",
+      "rank_lower_bound": 22,
+      "record": "broad-08f72-050a6374083d8cb9328c",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-435884aaa910f132bd9a",
+      "kind": "cohort",
+      "parameter": "175/388",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-435884aaa910f132bd9a",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-0f3bc12e9be4473c6086",
+      "kind": "cohort",
+      "parameter": "-168/115",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-0f3bc12e9be4473c6086",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-6c2c36055bafe74fe083",
+      "kind": "cohort",
+      "parameter": "184/863",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-6c2c36055bafe74fe083",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-6da6fc1625cb7d8b6c7c",
+      "kind": "cohort",
+      "parameter": "-905/534",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-6da6fc1625cb7d8b6c7c",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "x1092-original",
+      "id": "broad-x1092-original-d35bbd4fb5df06adb311",
+      "kind": "cohort",
+      "parameter": "-137/363",
+      "rank_lower_bound": 22,
+      "record": "broad-x1092-original-d35bbd4fb5df06adb311",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "103b2",
+      "id": "broad-103b2-78f22e1df10bfbea76d7",
+      "kind": "cohort",
+      "parameter": "-560/437",
+      "rank_lower_bound": 22,
+      "record": "broad-103b2-78f22e1df10bfbea76d7",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "x1092-original",
+      "id": "broad-x1092-original-0a747e12471c338d5d61",
+      "kind": "cohort",
+      "parameter": "-614/185",
+      "rank_lower_bound": 22,
+      "record": "broad-x1092-original-0a747e12471c338d5d61",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08f72",
+      "id": "broad-08f72-43eeec75fb577a8c3b1f",
+      "kind": "cohort",
+      "parameter": "-569/78",
+      "rank_lower_bound": 22,
+      "record": "broad-08f72-43eeec75fb577a8c3b1f",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "11952",
+      "id": "broad-11952-8ddc9844f9a333346410",
+      "kind": "cohort",
+      "parameter": "856/253",
+      "rank_lower_bound": 22,
+      "record": "broad-11952-8ddc9844f9a333346410",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08234",
+      "id": "broad-08234-09e7e5d490e0e527432f",
+      "kind": "cohort",
+      "parameter": "-1132/203",
+      "rank_lower_bound": 22,
+      "record": "broad-08234-09e7e5d490e0e527432f",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-bdf06112bfaa3b34ae21",
+      "kind": "cohort",
+      "parameter": "1255/743",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-bdf06112bfaa3b34ae21",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08234",
+      "id": "broad-08234-53593b19ebc7b75e78b8",
+      "kind": "cohort",
+      "parameter": "344/39",
+      "rank_lower_bound": 22,
+      "record": "broad-08234-53593b19ebc7b75e78b8",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-f8a93590667f01707462",
+      "kind": "cohort",
+      "parameter": "653/230",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-f8a93590667f01707462",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "103b2",
+      "id": "broad-103b2-8ef0f429d97746bbc4d6",
+      "kind": "cohort",
+      "parameter": "699/146",
+      "rank_lower_bound": 22,
+      "record": "broad-103b2-8ef0f429d97746bbc4d6",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08f72",
+      "id": "broad-08f72-16c620035d9557cad55e",
+      "kind": "cohort",
+      "parameter": "-1079/246",
+      "rank_lower_bound": 22,
+      "record": "broad-08f72-16c620035d9557cad55e",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-b241bcae90ce1bb9862d",
+      "kind": "cohort",
+      "parameter": "-365/642",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-b241bcae90ce1bb9862d",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "103b2",
+      "id": "broad-103b2-0421ace6af8aad44083f",
+      "kind": "cohort",
+      "parameter": "-349/1289",
+      "rank_lower_bound": 22,
+      "record": "broad-103b2-0421ace6af8aad44083f",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "11952",
+      "id": "broad-11952-5651a8129478dbcf9d3b",
+      "kind": "cohort",
+      "parameter": "454/207",
+      "rank_lower_bound": 22,
+      "record": "broad-11952-5651a8129478dbcf9d3b",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "11952",
+      "id": "broad-11952-bff3de02dbfd41143382",
+      "kind": "cohort",
+      "parameter": "565/1002",
+      "rank_lower_bound": 22,
+      "record": "broad-11952-bff3de02dbfd41143382",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-8ca79d14105b24eaf1a3",
+      "kind": "cohort",
+      "parameter": "143/28",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-8ca79d14105b24eaf1a3",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-d61b0f1908cbef25af5f",
+      "kind": "cohort",
+      "parameter": "-463/745",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-d61b0f1908cbef25af5f",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-af0cddb48290834e437d",
+      "kind": "cohort",
+      "parameter": "547/632",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-af0cddb48290834e437d",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-dfe33743c1c2664f4961",
+      "kind": "cohort",
+      "parameter": "543/788",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-dfe33743c1c2664f4961",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-cefd4f26d353790b12df",
+      "kind": "cohort",
+      "parameter": "493/706",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-cefd4f26d353790b12df",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-fad864201009c3186e8a",
+      "kind": "cohort",
+      "parameter": "581/1563",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-fad864201009c3186e8a",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "11952",
+      "id": "broad-11952-80eed22ad2e0a79e8271",
+      "kind": "cohort",
+      "parameter": "439/82",
+      "rank_lower_bound": 22,
+      "record": "broad-11952-80eed22ad2e0a79e8271",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08234",
+      "id": "broad-08234-b06081ea41b73338e1d3",
+      "kind": "cohort",
+      "parameter": "-315/44",
+      "rank_lower_bound": 22,
+      "record": "broad-08234-b06081ea41b73338e1d3",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-bee39fa4c1cc503b809a",
+      "kind": "cohort",
+      "parameter": "1325/302",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-bee39fa4c1cc503b809a",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-112f703bd6c54d87730b",
+      "kind": "cohort",
+      "parameter": "376/1059",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-112f703bd6c54d87730b",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-0134bf4effe0cfecf8f6",
+      "kind": "cohort",
+      "parameter": "-300/187",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-0134bf4effe0cfecf8f6",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08234",
+      "id": "broad-08234-24a8ce07d8547acc01dd",
+      "kind": "cohort",
+      "parameter": "471/328",
+      "rank_lower_bound": 22,
+      "record": "broad-08234-24a8ce07d8547acc01dd",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-2954376adc6846f6b969",
+      "kind": "cohort",
+      "parameter": "-414/151",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-2954376adc6846f6b969",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-8404abb56d5a66b3982a",
+      "kind": "cohort",
+      "parameter": "-492/77",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-8404abb56d5a66b3982a",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "103b2",
+      "id": "broad-103b2-2333851be293d8597aff",
+      "kind": "cohort",
+      "parameter": "-675/178",
+      "rank_lower_bound": 22,
+      "record": "broad-103b2-2333851be293d8597aff",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08f72",
+      "id": "broad-08f72-565c7ed6742f1b50f73f",
+      "kind": "cohort",
+      "parameter": "-849/626",
+      "rank_lower_bound": 22,
+      "record": "broad-08f72-565c7ed6742f1b50f73f",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-c4f5ac404805ee0025db",
+      "kind": "cohort",
+      "parameter": "838/661",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-c4f5ac404805ee0025db",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "103b2",
+      "id": "broad-103b2-cf9dbdba5e5465a71264",
+      "kind": "cohort",
+      "parameter": "-624/181",
+      "rank_lower_bound": 22,
+      "record": "broad-103b2-cf9dbdba5e5465a71264",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "074d9",
+      "id": "broad-074d9-e123716186cff91ef3cf",
+      "kind": "cohort",
+      "parameter": "-61/390",
+      "rank_lower_bound": 22,
+      "record": "broad-074d9-e123716186cff91ef3cf",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-71d41b62b2f01bd11219",
+      "kind": "cohort",
+      "parameter": "733/538",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-71d41b62b2f01bd11219",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "08234",
+      "id": "broad-08234-0968c86e000a2e181cd9",
+      "kind": "cohort",
+      "parameter": "-443/208",
+      "rank_lower_bound": 22,
+      "record": "broad-08234-0968c86e000a2e181cd9",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK22-LEDGER-20260912",
+      "family": "07ca9",
+      "id": "broad-07ca9-caf37d8af29c6e8e74df",
+      "kind": "cohort",
+      "parameter": "-423/49",
+      "rank_lower_bound": 22,
+      "record": "broad-07ca9-caf37d8af29c6e8e74df",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json"
     }
   ],
   "metrics": [
@@ -3745,6 +4721,7 @@
   "schema": "elliptic-curves.research-curve-refresh.v1",
   "scope": "Selected certified updates through 2026-09-09. Saved finite reductions only; no point searches, exact-rank or novelty claims.",
   "sources": {
+    "artifacts/generated-results/elliptic-curves/broad_rank22_ledger_snapshot_v1.json": "1a3a10590538241d535e8bc7b512ffa3f31434a47ca6281bfdfc01018670057e",
     "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json": "40ed097e289f66e70d5e53a3a1bb726c96cb1cd8d3d020392fb1735cb2aa9e2a",
     "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json": "c8271fcb72d55c370fd4350973e9dfa046b02ee40e13a8b1e4bcb9b3a0bd6911",
     "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json": "d6dfa78368ca974e514d5276ba91b8c0b2df8edf0644ba0367bf2273454f652d",
@@ -3758,6 +4735,7 @@
     "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v1.json": "52be94faff04dd66cf19c6a2696414b0cb96cb0659e80520ccdbba5b85827628",
     "artifacts/generated-results/elliptic-curves/foundry_curve_ledger_snapshot_v2.json": "ad2ca22b8b7e25d03def38e7730406c98b7f4870d5e021c6f3065ebc1afb68ec",
     "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json": "b24f5b3293a29c26a2de496b4ce78a67e746a2e18f7d12eb2f4cdf1043b52b83",
+    "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v2.json": "d4ee09e90bcb4c2a2c038c97367e4372fa860f3db493266cdbf806e2f7bdef68",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/074d9-exact-complement/result.json": "0cded3135708559328600cf2d6f6198a509b7175acb7d3a296f23152738850ef",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/07ca9-exact-complement/reconciled.json": "895dae912ca8696f3e0f26a1b6acdafed21b5d6fd03c0a46b3fccc4e962f0484",
     "artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/08f72-exact-complement/result.json": "a80bf7548695cc506afa73f95f69154a07f5404d4ac7501282ca1a74280da647",

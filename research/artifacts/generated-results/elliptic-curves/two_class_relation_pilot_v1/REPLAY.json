@@ -1,0 +1,85 @@
+{
+  "boundary": "Exact candidate replay, principal-ideal identities and independent GF(2) matrix rank. Shared Sage/PARI; no class-group generation or full g result.",
+  "checker_sha256": "a69d527e95edd0aefe745e794a8e66a327121d7be8131f54c35f161de14c2f12",
+  "plan_sha256": "adc165821f76732c841654dde860b8c13dc064abea9436c993af180486838e49",
+  "rows": [
+    {
+      "bindings": {
+        "prefix-000128.json": "513dd470831843cda78824c48860f483cfc7cf97d7d902ab30c4bda1a3e37dfe",
+        "prefix-001024.json": "ec71250b85d3efa721cc1c2de9bfdfaf983e47918e0541eb81d1e33f2b3acf84",
+        "prefix-008192.json": "aa229da26a35b8364fa7376ada1b039abd0dacd70caba64bea94257ee2cb897c",
+        "prefix-016384.json": "e0f6f4cef45c9eccc007bfc444beb6d27dded264401a55021597fa5a776d96d2",
+        "relations-000128.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+        "relations-001024.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+        "relations-008192.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+        "relations-016384.json": "5bdaecbaab1b77a4e5d193e78d57c094a736b4060dda739350c1f4166631575b",
+        "result.json": "fc705bd877ad94148d3d9a069021b89b4ff31a183fd7a6fb1b28f2204a34767f",
+        "setup.json": "bb735fa3bf6f75384a04e01998a3934de271886af324f0516f33a1a8745ad76c",
+        "supervisor.json": "68da4030c7df8d3d0640929e92a106b29827895a5a4526c41808fcb079813388",
+        "worker.log": "6638eaae963ef0db2aa60f7a8c8f0e7373e618924aceca270a904e9e14caf331"
+      },
+      "candidates_replayed": 16384,
+      "cohort": "prospective_broad_2080",
+      "curve_key": "7dfba62880b8a143a8e12069",
+      "global_class_2rank_estimate": null,
+      "ideal_relations_replayed": 2262,
+      "matrix": {
+        "canonical_rank": 2262,
+        "columns": 4167,
+        "deficiency": 1905,
+        "deficiency_fraction": 0.45716342692584594,
+        "distinct_rows": 2262,
+        "rank_gain_beyond_canonical": 0,
+        "rank_mod2": 2262,
+        "rows": 2262,
+        "singleton_columns": 4164,
+        "zero_columns": 3,
+        "zero_rows": 0
+      },
+      "noncanonical_relations": 0,
+      "selection_mode": "frozen_prospective",
+      "status": "PASS_EXACT_BOUNDED_RELATION_REPLAY",
+      "t": "921/653"
+    },
+    {
+      "bindings": {
+        "prefix-000128.json": "cc640686cf6cb18b4fe66bae8335952158edee4ab718f0c1ed174382aaa278cf",
+        "prefix-001024.json": "d87c4d09b896cbd43013fca2c762de8470e4c497f3682c5931bd794931072362",
+        "prefix-008192.json": "821d9a6872348a8ce2669335bb4161d942727e8ab3c31e1e1f7f14bb14d40bee",
+        "prefix-016384.json": "78cfc8d52e2be662be18d99fcd64dd6b4d7422369f037ecab44542f926bc9452",
+        "relations-000128.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+        "relations-001024.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+        "relations-008192.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+        "relations-016384.json": "0de35e29cbf226a2db96a21e6e8dbcbb881143223635c913b187cdcac44e0f89",
+        "result.json": "0b086517a455e164f984d05a6bb9517da7ec37380cf6a540c3727bcb6273d986",
+        "setup.json": "ad8f41e9993dea063b3b171a7807eeee161347655c94b37f556e81ddf29a66ad",
+        "supervisor.json": "0abfa4b6d284b5833192755389ad9bcf623b5a03e5bf10355015217c540d2634",
+        "worker.log": "49ec8517a76afddca0a1d5fce6e66bbbdd84020df5904a9eb941ab172dd2740b"
+      },
+      "candidates_replayed": 16384,
+      "cohort": "historical_external",
+      "curve_key": "3aaacd8b380c5a90474408a6",
+      "global_class_2rank_estimate": null,
+      "ideal_relations_replayed": 2264,
+      "matrix": {
+        "canonical_rank": 2263,
+        "columns": 4154,
+        "deficiency": 1890,
+        "deficiency_fraction": 0.4549831487722677,
+        "distinct_rows": 2264,
+        "rank_gain_beyond_canonical": 1,
+        "rank_mod2": 2264,
+        "rows": 2264,
+        "singleton_columns": 4135,
+        "zero_columns": 6,
+        "zero_rows": 0
+      },
+      "noncanonical_relations": 1,
+      "selection_mode": "retrospective_known_high_rank",
+      "status": "PASS_EXACT_BOUNDED_RELATION_REPLAY",
+      "t": "110314/102227"
+    }
+  ],
+  "schema": "elliptic-curves.two-class-pilot-replay.v1",
+  "status": "PASS_BOUNDED_EVIDENCE_REPLAY"
+}

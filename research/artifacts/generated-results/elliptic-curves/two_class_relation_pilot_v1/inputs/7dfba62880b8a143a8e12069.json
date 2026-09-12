@@ -1,0 +1,49 @@
+{
+  "certified_bad_rational_primes": [
+    "2",
+    "3",
+    "5",
+    "7",
+    "13",
+    "17",
+    "19",
+    "47",
+    "83",
+    "7568348148323",
+    "1023034923031265640083839109496335411267837093185764838343605884505996669629389738604483673"
+  ],
+  "curve_key": "7dfba62880b8a143a8e12069",
+  "field_discriminant": "30932024439246801322787810077880389223317162788400703970784702350579246728265890412316825281477068142364105",
+  "field_signature": [
+    3,
+    0
+  ],
+  "integral_monic_cubic_ascending": [
+    "4435391760277318534244859474079983409163674921324763384533182698342400",
+    "-64966528662994074550191342129437272354760546880",
+    "4",
+    "1"
+  ],
+  "protocol": {
+    "candidate_budget": 16384,
+    "candidate_prefixes": [
+      128,
+      1024,
+      8192,
+      16384
+    ],
+    "classes_or_points_supplied": false,
+    "comparison": "fixed attempted-candidate prefixes; report achieved relation counts, not an assumed N",
+    "factor_base_bound": 20000,
+    "factor_base_rule": "all prime ideals above rational p<=20000 plus all denominator-prime ideals",
+    "full_class_group": false,
+    "height_reduction_max_steps": 128,
+    "interpretation": "factor-base image bound only; full g and generation UNKNOWN",
+    "large_prime_variant": false,
+    "max_jobs": 2,
+    "new_point_searches": false,
+    "relation_rule": "all canonical (p) relations, then primitive (a,b), b>0, ordered by max(|a|,b)",
+    "wall_seconds_per_field": 180
+  },
+  "schema": "elliptic-curves.two-class-relation-input.v1"
+}

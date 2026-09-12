@@ -1,5 +1,9 @@
 # Wide-search equation-only arithmetic profile
 
+Follow-up: the [censoring audit and two-class relation pilot](TWO_CLASS_RELATION_PILOT_2026-09-12.md)
+is complete. It keeps this census unchanged, finds no positive prospective
+ramification enrichment, and obtains no class-group 2-rank estimate or upper bound.
+
 Status: **census complete; separate historical controls complete; final checks PASS**.
 The attached patch was applied as commit `604528fa`. The source is the completed
 `artifacts/local/elliptic-curves/broad-rank-v1` campaign, not the earlier live
