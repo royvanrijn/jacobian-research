@@ -24,6 +24,7 @@ import signal
 import subprocess
 import sys
 import time
+import tempfile
 
 import wide_arithmetic_profile_core as core
 
@@ -64,6 +65,8 @@ def source_hashes():
 
 
 def parse_source(source: Path, cap_files: int = 20000):
+    if (source / "COMPLETION_REVIEW.json").is_file():
+        return core.read_completed_campaign(source)
     files = core.discover_source_files(source)
     require(len(files) <= cap_files, f"too many candidate census files ({len(files)} > {cap_files}); point --source at the frozen campaign folder")
     rows = []
@@ -137,6 +140,9 @@ def command_prepare(args):
     (out / "local").mkdir()
     (out / "class").mkdir()
     (out / "logs").mkdir()
+    (out / "frozen-sources").mkdir()
+    for p in (SELF, WORKER, CAS / "wide_arithmetic_profile_core.py"):
+        (out / "frozen-sources" / p.name).write_bytes(p.read_bytes())
 
     # Persist one canonical row per curve; workers consume these exact bytes.
     for row in curves:
@@ -185,6 +191,8 @@ def check_plan(out: Path):
         require(p.exists() and sha(p) == digest, f"source changed since prepare: {path}")
     pop = read(out / "population.json")["curves"]
     require(hashlib.sha256(core.stable_json(pop).encode()).hexdigest() == plan["population_sha256"], "population changed")
+    for row in pop:
+        require((out / "inputs" / f"{row['curve_key']}.json").read_text() == core.stable_json(row), "frozen worker input changed")
     return plan, pop
 
 
@@ -196,20 +204,30 @@ def run_one(out: Path, row: dict, mode: str, timeout: int, memory_gb: float, sag
             return old.get("status", "UNKNOWN_EXISTING")
         raise RuntimeError(f"existing result input mismatch: {target}")
     temp = target.with_suffix(".tmp.json")
-    cmd = [sage, "-python", str(WORKER), "--input", str(out / "inputs" / f"{row['curve_key']}.json"), "--output", str(temp), "--mode", mode, "--memory-gb", str(memory)]
+    require(not temp.exists(), f"unresolved temporary checkpoint: {temp}")
+    cmd = [sage, "-python", str(WORKER), "--input", str(out / "inputs" / f"{row['curve_key']}.json"), "--output", str(temp), "--mode", mode, "--memory-gb", str(memory_gb)]
     start = time.monotonic()
     try:
-        cp = subprocess.run(
+        cp = subprocess.Popen(
             cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
-            timeout=timeout,
+            start_new_session=True,
         )
+        try:
+            stdout, stderr = cp.communicate(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            os.killpg(cp.pid, signal.SIGKILL)
+            cp.communicate()
+            raise
+        (out / "logs" / f"{mode}-{row['curve_key']}.txt").write_text(stdout + stderr)
         if temp.exists():
             result = read(temp)
+            require(result.get("curve_key") == row["curve_key"], "worker curve mismatch")
+            require(cp.returncode == 0 or not result.get("status", "").startswith("PASS"), "failed worker emitted PASS")
         else:
             result = {
                 "schema": f"elliptic-curves.wide-arithmetic-{mode}-controller.v1",
                 "curve_key": row["curve_key"], "status": "UNKNOWN_WORKER_NO_OUTPUT",
-                "returncode": cp.returncode, "stderr_tail": cp.stderr[-4000:],
+                "returncode": cp.returncode, "stderr_tail": stderr[-4000:],
             }
     except subprocess.TimeoutExpired as exc:
         result = {
@@ -225,9 +243,10 @@ def run_one(out: Path, row: dict, mode: str, timeout: int, memory_gb: float, sag
             "error_type": type(exc).__name__, "error": str(exc),
         }
     result["input_sha256"] = sha(out / "inputs" / f"{row['curve_key']}.json")
+    result["runtime"] = {"mode": mode, "timeout_seconds": timeout, "memory_gb": memory_gb, "command": cmd}
     result["wall_seconds"] = round(time.monotonic() - start, 6)
     temp.unlink(missing_ok=True)
-    target.write_text(core.stable_json(result))
+    save(target, result)
     return result["status"]
 
 
@@ -240,6 +259,11 @@ def run_mode(args, mode: str, selected_keys: set[str] | None = None):
         rows = rows[:args.limit]
     timeout = {"base": args.base_timeout, "local": args.local_timeout, "class": args.class_timeout}[mode]
     memory = {"base": args.base_memory_gb, "local": args.local_memory_gb, "class": args.class_memory_gb}[mode]
+    executable = shutil.which(args.sage)
+    require(executable is not None, f"Sage executable unavailable: {args.sage}")
+    save(out / f"{mode}-runtime.json", {"timeout_seconds": timeout, "memory_gb": memory,
+         "sage": executable, "sage_sha256": sha(executable),
+         "sage_version": subprocess.check_output([executable, "--version"], text=True).strip()})
     counts = {}
     done = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:
@@ -358,10 +382,20 @@ def command_check(args):
     require(report["population_count"] == len(pop), "report population mismatch")
     require(report.get("full_population_checkpointed") is True, "profile is partial; BASE and LOCAL must each checkpoint all population rows before final check")
     require(report["population_sha256"] == plan["population_sha256"], "report population hash mismatch")
+    for mode in ("base", "local"):
+        for row in pop:
+            p = out / mode / f"{row['curve_key']}.json"
+            result = read(p)
+            require(result.get("input_sha256") == sha(out / "inputs" / f"{row['curve_key']}.json"), f"checkpoint input mismatch: {p}")
+            require(result.get("curve_key") == row['curve_key'], f"checkpoint curve mismatch: {p}")
     # Recompute summary from immutable per-curve checkpoints and compare bytes.
-    before = {name: (out / name).read_bytes() for name in ("profiles.json", "summary.json", "SUMMARY.md", "REPORT.json")}
-    summarize(out)
-    after = {name: (out / name).read_bytes() for name in before}
+    before = {name: (out / name).read_bytes() for name in ("profiles.json", "profiles.csv", "summary.json", "SUMMARY.md", "REPORT.json")}
+    with tempfile.TemporaryDirectory(prefix='wide-arithmetic-replay-') as td:
+        replay=Path(td)
+        for name in ['plan.json','population.json','inputs','base','local','class']:
+            (replay/name).symlink_to(out/name)
+        summarize(replay)
+        after = {name: (replay / name).read_bytes() for name in before}
     require(before == after, "deterministic summary replay mismatch")
     print("WIDE_ARITH_CHECK|status=PASS|deterministic_summary=PASS")
     return 0

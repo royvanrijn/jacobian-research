@@ -1,0 +1,130 @@
+{
+  "certificates": {
+    "broad-074d9-4ced5e6a400d884e4c06": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-4ced5e6a400d884e4c06.json",
+      "sha256": "d945824c1cdedd60aa8104162ae449f5f97204ec5ff5868f243d80714d32f163"
+    },
+    "broad-074d9-6268895b4587ec68b047": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-6268895b4587ec68b047.json",
+      "sha256": "323042d99fd2d6eb2cad93b1c1a7ea5ec577462cf8aef2dd8e19d61967f4f9c8"
+    },
+    "broad-074d9-63dd49c4305ec54c5cdd": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-63dd49c4305ec54c5cdd.json",
+      "sha256": "a19abf3936ba7f110ff95dcd7a6f97aeea05de0dea831221416192847b882d57"
+    },
+    "broad-074d9-7c47b0d89d71478bfbb9": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-7c47b0d89d71478bfbb9.json",
+      "sha256": "f9f06cb3bf7988bb7c15ebe51254b2b8fde8f3e773e7107926cc867048a75ce5"
+    },
+    "broad-074d9-87ef4a86f497dd1b1175": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-87ef4a86f497dd1b1175.json",
+      "sha256": "380eb2adf4c673e55d1e1cb38bfa8759ec7a631adf588bf7babdc37014be53b5"
+    },
+    "broad-074d9-e6d04993ed063649fccb": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-e6d04993ed063649fccb.json",
+      "sha256": "ae648496fa17d1cc83fa14013241fd2d19ece753cef6393431d90d5caa7a91e7"
+    },
+    "broad-074d9-f5bf80951b1c2164656e": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-074d9-f5bf80951b1c2164656e.json",
+      "sha256": "81698df10f0fa47650d5a6eb4dc561dcb28905fa399e817c884a86531ca90953"
+    },
+    "broad-07ca9-08fae58c0accfd75962b": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-08fae58c0accfd75962b.json",
+      "sha256": "95b8fc3da8bcd4073c719aaa47fb2e53959855865abc717cb3efd930f9239b78"
+    },
+    "broad-07ca9-1cd5bce4943b9b28a095": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-1cd5bce4943b9b28a095.json",
+      "sha256": "a00a3da8e33dbdce54b4511fd9e5fe8eff6dc42a0cba9aed65c32e1546059150"
+    },
+    "broad-07ca9-8115824ac0e6b26f7e6f": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-8115824ac0e6b26f7e6f.json",
+      "sha256": "b43fb371da9c5db60c1a2f476275b29b72b36026db803528afdbfb688a7cc2d5"
+    },
+    "broad-07ca9-89350e71e29514573ef6": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-89350e71e29514573ef6.json",
+      "sha256": "8a9536351ae302f2e20471f3d60de41dd686cd3c43284fa2b18018f1fe60af19"
+    },
+    "broad-07ca9-abdbb535111fd5090fb6": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-abdbb535111fd5090fb6.json",
+      "sha256": "1eeb2684ea836142f7de444cb0b1b1c0b2e979eba10b62ba4780106d81410db2"
+    },
+    "broad-07ca9-d56b29af89fb6f62ef8f": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-d56b29af89fb6f62ef8f.json",
+      "sha256": "47b07e84d8ddb67789175cf99eb575a665c782ea5bb930182727322e34d178d7"
+    },
+    "broad-07ca9-d6c7a23093c65bf22c41": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-07ca9-d6c7a23093c65bf22c41.json",
+      "sha256": "5e4653434861c6401cda6a5d484db2fd3fec9af102ff2573cb7e6730536e70c9"
+    },
+    "broad-08234-f4523a2ab7fa837bb374": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08234-f4523a2ab7fa837bb374.json",
+      "sha256": "af3e6df00a6524d0455b5eeceaf94b56b3832961a2a1781c79aa1d9dfe87e668"
+    },
+    "broad-08f72-477371c10385690c84a4": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-477371c10385690c84a4.json",
+      "sha256": "c6f25d5069ee3bfd3e9359fedd81963bbb484d6987e934c66cd557a1af6de0df"
+    },
+    "broad-08f72-71765079c9412ec2a43b": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-71765079c9412ec2a43b.json",
+      "sha256": "bfc2d29ef4dd98c431c63c3a78318beddd5cac60c6d2bdf2a3b2ba290814b749"
+    },
+    "broad-08f72-9b261fe2598148ccc4da": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-9b261fe2598148ccc4da.json",
+      "sha256": "d706753ace860e00546c5f0a8a33b26d32d9240c3157ea2a58c780571a80f1a2"
+    },
+    "broad-08f72-abfc2beeb916ffe84cb9": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-abfc2beeb916ffe84cb9.json",
+      "sha256": "19639dbdc8137ab757941390dbf71ad2df01b51ab6587f1668e64986e1354634"
+    },
+    "broad-08f72-c1c61596468940fe47df": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-c1c61596468940fe47df.json",
+      "sha256": "83b08252c7ae656e9c071379d01d5c2c1b6a57b4ac39a8cf73de157da48ba57d"
+    },
+    "broad-08f72-f3e9a3dc98feabb7bab9": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-08f72-f3e9a3dc98feabb7bab9.json",
+      "sha256": "c7e16cfd91f672de7a32ff78d3c892cf74cdd88ace4dd95f51080234bb1e1cc3"
+    },
+    "broad-103b2-6fa796d523a324491258": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-103b2-6fa796d523a324491258.json",
+      "sha256": "543a97077daaf450d093efadef855fc0e52fd521326a69ef69792c239170c089"
+    },
+    "broad-103b2-c6696036d8e65c023954": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-103b2-c6696036d8e65c023954.json",
+      "sha256": "b200280f2d2777ccac184a03a054f95c5f6b6ebe46705850cc4c833f75d3cef2"
+    },
+    "broad-11952-4410cdc73412aacf2537": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-4410cdc73412aacf2537.json",
+      "sha256": "fb28a1eda2faf639a049bd85f1e28ae3b2c8a6d9592d020829f0574de287338c"
+    },
+    "broad-11952-516ff5b73983bcd0accd": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-516ff5b73983bcd0accd.json",
+      "sha256": "6b1a1607cf8f7c678a1d37d4db6de340aeaac05e393e3d72037185727ac47989"
+    },
+    "broad-11952-7bb187bc9254e81c6283": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-7bb187bc9254e81c6283.json",
+      "sha256": "0e9421a3d72313bf95c1aad700fd78280cd5e1158fea6188bbb83e97bf011f28"
+    },
+    "broad-11952-b1dfd57aaf748bf8725b": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-b1dfd57aaf748bf8725b.json",
+      "sha256": "1137867cf6f555e837099439ad79d31f5f878a196db7de78c75d454738afbfce"
+    },
+    "broad-11952-c907453d80ddd62ca2fd": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-c907453d80ddd62ca2fd.json",
+      "sha256": "1f1118c2efdf4145ecad89400935103b532511edaacced30734924e5f2201de1"
+    },
+    "broad-11952-dea09f09762ca96b5be1": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-11952-dea09f09762ca96b5be1.json",
+      "sha256": "229ca01185d8922b9acf3784b5adb05835bb1193abdda17036fa8a17eb5ac8b4"
+    },
+    "broad-x1092-original-37d50595eb8037ca7d7c": {
+      "path": "artifacts/generated-results/elliptic-curves/broad_rank_conductors_v1/broad-x1092-original-37d50595eb8037ca7d7c.json",
+      "sha256": "159c487fd52dbb2f74bc2f013add7385038a80195aa229accaf6ba0d597d6b9d"
+    }
+  },
+  "completed": 30,
+  "exact": 26,
+  "independently_replayed": 30,
+  "protocol_sha256": "3cfb3de508198a29a05c0a48fa9feac5e77bacee08bb6979f3e1140403bbd193",
+  "status": "COMPLETE",
+  "total": 30
+}

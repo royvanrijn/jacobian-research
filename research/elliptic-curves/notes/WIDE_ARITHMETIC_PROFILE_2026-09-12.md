@@ -1,6 +1,43 @@
 # Wide-search equation-only arithmetic profile
 
-Status: **implementation protocol, no population result in this commit**.
+Status: **six-worker BASE+LOCAL census launched after Sage commissioning**. The attached
+patch was applied as commit `604528fa`. The source is the completed
+`artifacts/local/elliptic-curves/broad-rank-v1` campaign, not the earlier live
+triangle snapshot. No full arithmetic-population result is claimed yet.
+
+The bound census has 2,080 distinct equations, final tail `23=25,24=4,25=1`,
+and 157 follow-up improvements. Every initial rank is bound to its actual
+batch-000 packet and replay receipt. Final endpoints are checked against the
+completion receipt. This is a provenance replay, not a new point-independence
+calculation. The frozen [plan](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/plan.json)
+records all 9,185 referenced input/receipt hashes.
+
+The [three-fibre smoke replay](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/SMOKE_VALIDATION.json)
+passes all three BASE transports/cubic identities. Two LOCAL rows complete
+with Brumer–Kramer local terms 8 and 6, and replay through the integral monic
+2-division polynomial, certified PARI maximal order, and local reductions.
+The third LOCAL row timed out at 180 seconds and remains UNKNOWN. These are
+not three successful local computations or a representative tail result.
+
+The [detached launch receipt](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/launch.json)
+records six workers, BASE 60 seconds and LOCAL 180 seconds per curve. The
+controller reuses all six smoke checkpoints, including the timeout. CLASS
+is disabled, and no point searches are launched. After the full census the
+detached wrapper runs `check`; the checker was already tested to reject the
+partial smoke. Live progress is in `/tmp/wide-arithmetic-profile.log` and
+the stage directories. `SUMMARY.md` is still the partial smoke summary until
+the full controller finishes or `summarize` is explicitly invoked.
+
+While workers are active, use the race-free observer from the repository root:
+
+```sh
+python3 research/elliptic-curves/cas/status_wide_arithmetic_profile.py
+```
+
+The original `status` glob can see a worker's transient `*.tmp.json` file and
+race its removal. This observer reads only the frozen population's final
+checkpoint names. It leaves the active arithmetic sources and their hashes
+unchanged; the post-completion checker has no concurrent worker files.
 
 This controller turns the completed wide R17 specialization search into a frozen
 arithmetic census.  It does **not** launch rational-point searches and it does
@@ -51,7 +88,7 @@ equations and final lower-bound tail `23=25,24=4,25=1`:
 
 ```bash
 sage -python elliptic-curves/cas/run_wide_arithmetic_profile.py prepare \
-  --source /path/to/frozen-wide-search
+  --source /path/to/frozen-wide-search --expected-improved 157
 ```
 
 Before the long run, use the deterministic first three rows as a Sage/API smoke:
@@ -129,3 +166,37 @@ how many are observed to improve.  If that count is the expected **157**, rerun
 starting rank is deliberately not treated as the initial-search result.
 `--expected-tail ''` disables the tail gate only when intentionally profiling a
 different frozen population.
+
+## Integration checks and retained commissioning failure
+
+The original eleven ordinary regressions passed. The expanded suite has eighteen
+passing tests, covering worker invocation/resume, timeout process-group cleanup,
+incorrect worker output, endpoint bindings, altered packets/replays, and missing
+completion evidence. Integration corrected
+an undefined `memory` variable in the worker launcher. It also removed the
+unlabelled-minimum-observation fallback: a collection of ranks without an
+identified initial endpoint does not certify a pre-follow-up phenotype.
+
+The first smoke is retained at
+`artifacts/local/elliptic-curves/wide-arithmetic-profile-precommissioning-v1`.
+Its BASE worker timed out because Sage's inherited `global_minimal_model()`
+uses the general number-field path and factors the entire discriminant.
+The controller and its active child group were stopped. Source snapshots,
+the timeout checkpoint and a stop receipt are preserved there.
+The corrected rational-curve `minimal_model()` path completed the same
+calculation in about 0.007 seconds excluding process startup. A fresh plan
+was frozen before repeating the three-fibre smoke; no failed checkpoint was
+silently converted to PASS.
+
+Runtime limits and Sage version are frozen separately per stage; changing the
+worker count from one to six does not change per-curve budgets. Workers have
+isolated process groups, final checkpoints are written atomically, and altered
+worker inputs fail the plan check. The final `check` recomputes JSON, CSV and
+Markdown in a temporary directory so a mismatch cannot overwrite its evidence.
+The human-readable tables include completed-case denominators, signature/root
+counts, conductor sizes, and the number of paired observations per correlation.
+
+Absence of a descriptive local-term association would not by itself locate a
+missing signal in g: censoring, adaptive exposure, parent composition and
+incomplete local arithmetic remain alternative explanations. Conversely, a
+local-term association is not a measurement of the full Selmer dimension.

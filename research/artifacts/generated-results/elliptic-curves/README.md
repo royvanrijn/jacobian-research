@@ -2,10 +2,10 @@
 
 The [broad-rank ledger](../../../elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md)
 adds [30 certified curves](broad_rank_ledger_snapshot_v1.json) at lower bounds
-23–25 and [11 exact conductors](broad_rank_conductor_snapshot_v1.json) at a fixed
-cutoff. Fresh [rank](broad_rank_ledger_replay_v1.json) and
-[conductor](broad_rank_conductor_replay_v1.json) replays pass; remaining conductor
-jobs continue separately from the published snapshot.
+23–25 and [26 exact conductors plus four partial bounds](broad_rank_conductor_snapshot_v2.json).
+Fresh [rank](broad_rank_ledger_replay_v1.json) and
+[conductor](broad_rank_conductor_replay_v2.json) replays pass. The conductor queue
+is complete, and the earlier 11-certificate snapshot remains preserved.
 
 The [bounded geometry–arithmetic comparison](../../../elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 provides [22 exact ancestry records](rank_triangle_v1/targets.json), an

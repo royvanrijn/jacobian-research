@@ -1,0 +1,8 @@
+{
+  "checker_sha256": "3753d3ba885faecf87ad94a40505ed856ce7dd5b1e5dc493117c910d4282aef5",
+  "exact_count": 26,
+  "record_count": 30,
+  "scope": "Fresh exact transport, prime-certificate and Sage generic Tate/PARI local conductor replay, with no factor discovery.",
+  "snapshot_sha256": "c8271fcb72d55c370fd4350973e9dfa046b02ee40e13a8b1e4bcb9b3a0bd6911",
+  "status": "PASS_BROAD_CONDUCTOR_PUBLICATION_REPLAY"
+}

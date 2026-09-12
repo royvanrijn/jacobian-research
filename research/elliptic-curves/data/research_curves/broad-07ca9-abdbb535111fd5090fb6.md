@@ -30,4 +30,4 @@ Complete bad primes:
 2, 3, 5, 7, 13, 31, 43, 109, 241, 225366899, 29754293827707165430823, 81793369588600835682623, 553761573080621001668523315930903484513081447
 ```
 
-[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json)
+[Conductor certificate](../../../artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json)

@@ -1200,70 +1200,184 @@
       "source": "artifacts/generated-results/elliptic-curves/foundry_v3_conductor_snapshot_v1.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-074d9-6268895b4587ec68b047",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-074d9-63dd49c4305ec54c5cdd",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-074d9-7c47b0d89d71478bfbb9",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-074d9-87ef4a86f497dd1b1175",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-074d9-e6d04993ed063649fccb",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-07ca9-08fae58c0accfd75962b",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-07ca9-1cd5bce4943b9b28a095",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-07ca9-abdbb535111fd5090fb6",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-11952-4410cdc73412aacf2537",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-11952-7bb187bc9254e81c6283",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     },
     {
-      "claim": "EC-BROAD-RANK-CONDUCTORS-V1-20260912",
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
       "id": "broad-11952-b1dfd57aaf748bf8725b",
       "kind": "checkpoint",
-      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json"
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-074d9-4ced5e6a400d884e4c06",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-074d9-f5bf80951b1c2164656e",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-07ca9-8115824ac0e6b26f7e6f",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-07ca9-89350e71e29514573ef6",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-07ca9-d56b29af89fb6f62ef8f",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-07ca9-d6c7a23093c65bf22c41",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08234-f4523a2ab7fa837bb374",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-477371c10385690c84a4",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-71765079c9412ec2a43b",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-9b261fe2598148ccc4da",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-abfc2beeb916ffe84cb9",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-c1c61596468940fe47df",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-08f72-f3e9a3dc98feabb7bab9",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-103b2-6fa796d523a324491258",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-103b2-c6696036d8e65c023954",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-11952-516ff5b73983bcd0accd",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-11952-c907453d80ddd62ca2fd",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-11952-dea09f09762ca96b5be1",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
+    },
+    {
+      "claim": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "id": "broad-x1092-original-37d50595eb8037ca7d7c",
+      "kind": "checkpoint",
+      "source": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json"
     }
   ],
   "curves": [
@@ -3632,6 +3746,7 @@
   "scope": "Selected certified updates through 2026-09-09. Saved finite reductions only; no point searches, exact-rank or novelty claims.",
   "sources": {
     "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json": "40ed097e289f66e70d5e53a3a1bb726c96cb1cd8d3d020392fb1735cb2aa9e2a",
+    "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json": "c8271fcb72d55c370fd4350973e9dfa046b02ee40e13a8b1e4bcb9b3a0bd6911",
     "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json": "d6dfa78368ca974e514d5276ba91b8c0b2df8edf0644ba0367bf2273454f652d",
     "artifacts/generated-results/elliptic-curves/curve113_productive_v3_v1/result.json": "d7f6dcc8c2b0cfbba2e657b7e33913e8bcd52fd9113187d4ae31ea9c4136c783",
     "artifacts/generated-results/elliptic-curves/curve116_productive_v3_v1/result.json": "182d3947a08ced3fb50ee1ffe5cca517b78ea65368539b0113dd146d073bce2f",

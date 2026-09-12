@@ -5,8 +5,15 @@ completed all2,080 initial fibres and2,012 continuation batches, with398,866
 point calls and no unknown or censored endpoints. Its best certified lower bound
 is25;30 fibres finish above22. All point-search workers have exited; frozen evidence
 is retained. The [curated broad ledger](notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md)
-adds those 30 curves and the first 11 exact conductors; a separate four-worker
-conductor queue is processing the remaining inputs.
+adds those 30 curves and 26 exact conductors. The conductor pass is complete:
+all 30 results replay, four retain partial bounds after timeouts, and its workers
+have exited.
+
+The [read-only wide arithmetic profile](notes/WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
+has bound all 2,080 completed fibres and 157 follow-up improvements to their
+initial/final certificates. Its six-worker BASE+LOCAL census is launched after
+a three-fibre Sage smoke; one LOCAL timeout is retained as UNKNOWN. CLASS is
+off, no point searches are launched, and full-population conclusions await completion.
 
 The [ancestry / equation-only panel / strict-descent comparison](notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 now has 792 replayed carriers: all fourteen 302 targets and eight 11952 targets
@@ -39,7 +46,7 @@ Machine results remain separate from the curated curve inventory.
 
 <!-- status-consumer: EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910 5be8375fcf2cdfbe -->
 
-The [curated inventory](INVENTORY.md) now contains 445 curves, with 267 exact
+The [curated inventory](INVENTORY.md) now contains 445 curves, with 282 exact
 conductors; 398 meet the main README display rule. It includes the
 [second foundry snapshot](notes/FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md) and
 [broad-rank additions](notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md).

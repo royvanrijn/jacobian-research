@@ -19,7 +19,7 @@
   ],
   "canonical_source": "elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md",
   "conductor": "78205294480774764123734841012321173744073684257639907272926586796767713243338690779937104556688183702584210",
-  "conductor_certificate": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json",
+  "conductor_certificate": "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json",
   "conductor_divisor": "78205294480774764123734841012321173744073684257639907272926586796767713243338690779937104556688183702584210",
   "conductor_status": "EXACT",
   "conductor_upper_bound": "78205294480774764123734841012321173744073684257639907272926586796767713243338690779937104556688183702584210",

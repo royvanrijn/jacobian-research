@@ -1,5 +1,10 @@
 # Exceptional ancestry, equation-only arithmetic, and strict descent classes
 
+The subsequent [completed-wide-population arithmetic profile](WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
+extends the equation-only lane to all 2,080 fibres under a separately authorized
+fixed budget. Its BASE+LOCAL census is running; CLASS is off. The finite
+three-lane results below are unchanged, not superseded by an unfinished census.
+
 ## Result and boundary
 
 The first frozen three-lane comparison is complete. It does **not** yet explain

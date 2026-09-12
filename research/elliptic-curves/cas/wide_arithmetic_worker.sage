@@ -66,10 +66,10 @@ def kodaira_kind(symbol):
 
 def construct(row):
     E = EllipticCurve(QQ, [ZZ(x) for x in row["ainvs"]])
-    try:
-        Emin = E.global_minimal_model()
-    except Exception:
-        Emin = E.minimal_model()
+    # Over QQ this is the direct PARI minimal model. The inherited
+    # global_minimal_model takes the general number-field path and first
+    # factors the entire discriminant, defeating the inexpensive BASE stage.
+    Emin = E.minimal_model()
     return E, Emin
 
 

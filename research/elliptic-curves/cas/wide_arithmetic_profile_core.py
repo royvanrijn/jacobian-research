@@ -298,11 +298,6 @@ def aggregate_rows(rows: Iterable[dict]) -> list[dict]:
             initial = min(map(int, declared_initials)); initial_source = "declared_initial_stage"
         elif stage_initials:
             initial = min(stage_initials); initial_source = "stage_label"
-        elif len(observed_ranks) > 1:
-            initial = min(observed_ranks); initial_source = "earliest_observed_rank"
-        elif len(distinct_sources) > 1:
-            # Same bound persisted into at least one later source file.
-            initial = observed_ranks[0]; initial_source = "multi_source_same_bound"
         else:
             initial = None; initial_source = None
         chosen = sorted(items, key=lambda r: (str(r.get("id")), str(r.get("source")), int(r.get("source_ordinal", 0))))[0]
@@ -325,6 +320,74 @@ def aggregate_rows(rows: Iterable[dict]) -> list[dict]:
             "sources": sorted({str(x["source"]) for x in items}),
         })
     return sorted(out, key=lambda r: (r["curve_key"], r["id"]))
+
+
+def read_completed_campaign(source: Path):
+    """Bind only actual initial/final endpoints, never intermediate search files.
+
+    Checks retained packet/replay receipts, not a fresh arithmetic proof replay.
+    The completed campaign is read-only; no recursive point-cloud traversal.
+    """
+    source = Path(source).resolve()
+    seen = {}
+    def checked(path, digest=None):
+        path = Path(path).resolve()
+        if not path.is_relative_to(source):
+            raise RuntimeError(f"campaign reference leaves source: {path}")
+        raw = path.read_bytes(); h = sha256_bytes(raw)
+        if digest is not None and h != digest:
+            raise RuntimeError(f"campaign hash mismatch: {path}")
+        seen[str(path)] = {"file": str(path), "status": "ROWS", "rows": 0, "sha256": h}
+        return json.loads(raw)
+    review = checked(source / "COMPLETION_REVIEW.json")
+    complete = checked(source / "COMPLETE.json")
+    if review['status'] != 'COMPLETE_BOUNDED_CAMPAIGN' or complete['status'] != review['status']:
+        raise RuntimeError('campaign is not certified complete')
+    if review['unknown_or_censored'] != 0 or review['still_eligible'] != 0:
+        raise RuntimeError('campaign has unresolved endpoints')
+    queue = checked(source / 'queue.json', review['queue_sha256'])
+    if complete['queue_sha256'] != review['queue_sha256']:
+        raise RuntimeError('completion queue mismatch')
+    for name in ['plan', 'manifest']:
+        checked(source / (name+'.json'), review[name+'_sha256'])
+    bindings = {r['id']: r for r in review['final_certificate_bindings']}
+    if len(bindings) != len(queue['rows']) or len(bindings) != review['final_fibres_checked']:
+        raise RuntimeError('completion roster mismatch')
+    rows=[]; initial_counts=defaultdict(int); final_counts=defaultdict(int)
+    improved=0; increase=0
+    runtime = source / 'runtime/research'
+    for ordinal, item in enumerate(queue['rows']):
+        bound = bindings[item['id']]
+        ranks=[]
+        for number in [0, bound['final_round']]:
+            folder=runtime/'broad-cases'/item['id']/f'batch-{number:03d}'
+            final = number == bound['final_round']
+            state=checked(folder/'broad-state.json', bound['state_sha256'] if final else None)
+            if state['id'] != item['id'] or state['round'] != number or state['status'] != 'CERTIFIED':
+                raise RuntimeError(f'uncertified endpoint: {folder}')
+            packet_path=runtime/state['packet']; packet=checked(packet_path,state['packet_sha256'])
+            if final and state['packet_sha256'] != bound['packet_sha256']:
+                raise RuntimeError('final packet differs from completion receipt')
+            replay=checked(packet_path.parent/('packet-verified.json' if item['backend']=='native' else 'verified.json'))
+            if replay['status'] != 'PASS_TWO_FINITE_IMPLEMENTATIONS' or replay['packet_sha256'] != state['packet_sha256']:
+                raise RuntimeError(f'packet replay not bound: {packet_path}')
+            if list(map(int,packet['curve'])) != list(map(int,item['model'])) or packet['rank_lower_bound'] != state['rank']:
+                raise RuntimeError('equation/rank binding mismatch')
+            ranks.append(state['rank'])
+        initial,final=ranks
+        if initial>final:raise RuntimeError('decreasing certified lower bound')
+        initial_counts[str(initial)]+=1;final_counts[str(final)]+=1
+        improved+=final>initial;increase+=final-initial
+        row=normalize_row({'id':item['id'],'parameter':item['parameter'],'ainvs':item['model'],
+                           'initial_stage_rank_lower_bound':initial,'final_rank_lower_bound':final,
+                           'generic_rank':17},str(source/'COMPLETION_REVIEW.json'),ordinal)
+        rows.append(row)
+    if dict(initial_counts)!=review['initial_lower_bound_histogram'] or dict(final_counts)!=review['final_lower_bound_histogram']:
+        raise RuntimeError('endpoint histogram mismatch')
+    if improved!=review['fibres_improved_in_continuations'] or increase!=review['sum_of_certified_lower_bound_increases']:
+        raise RuntimeError('continuation history mismatch')
+    seen[str(source/'COMPLETION_REVIEW.json')]['rows']=len(rows)
+    return list(map(Path,seen)),rows,list(seen.values())
 
 
 def discover_source_files(source: Path) -> list[Path]:
@@ -456,7 +519,8 @@ def flatten_profile(row: dict, base: dict | None, local: dict | None, class_prob
         out["provisional_class_2rank"] = class_probe.get("class_2rank")
         if out.get("bk_local_term") is not None:
             out["provisional_grh_selmer_upper"] = int(class_probe["class_2rank"]) + int(out["bk_local_term"])
-            out["provisional_grh_closes_known_rank"] = out["provisional_grh_selmer_upper"] <= int(row["final_rank_lower_bound"])
+            out["provisional_grh_closes_known_rank"] = out["provisional_grh_selmer_upper"] == int(row["final_rank_lower_bound"])
+            out["provisional_grh_conflicts_with_lower_bound"] = out["provisional_grh_selmer_upper"] < int(row["final_rank_lower_bound"])
     return out
 
 
@@ -475,6 +539,9 @@ def summarize_profiles(flat: list[dict]) -> dict:
             "count": len(rows),
             "improved_known_count": sum(1 for r in rows if r.get("improved_since_initial") is True),
             "root_number_minus_one_count": sum(1 for r in rows if r.get("root_number") == -1),
+            "root_number_known_count": sum(1 for r in rows if r.get("root_number") is not None),
+            "totally_real_count": sum(1 for r in rows if r.get("field_signature") == [3,0]),
+            "signature_known_count": sum(1 for r in rows if r.get("field_signature") is not None),
         }
         for metric in numeric_metrics:
             vals = [r[metric] for r in rows if r.get(metric) is not None]
@@ -482,6 +549,7 @@ def summarize_profiles(flat: list[dict]) -> dict:
             entry[f"n_{metric}"] = len(vals)
         by_bucket[bucket] = entry
     correlations = {}
+    correlation_counts = {}
     for metric in numeric_metrics:
         pairs = [(float(r[metric]), float(r["final_rank_lower_bound"])) for r in flat if r.get(metric) is not None]
         correlations[f"spearman_{metric}_vs_final_lower_bound"] = spearman(
@@ -494,12 +562,14 @@ def summarize_profiles(flat: list[dict]) -> dict:
         correlations[f"spearman_{metric}_vs_followup_gain"] = spearman(
             [p[0] for p in pairs2], [p[1] for p in pairs2]
         )
+        correlation_counts[metric] = {"final": len(pairs), "followup": len(pairs2)}
     return {
         "schema": SCHEMA,
         "population_count": len(flat),
         "rank_lower_bound_counts": dict(sorted((str(k), v) for k, v in _counts(int(r["final_rank_lower_bound"]) for r in flat).items())),
         "bucket_summary": by_bucket,
         "correlations": correlations,
+        "correlation_pair_counts": correlation_counts,
         "interpretation_boundary": (
             "Rank values are certified lower bounds, not exact ranks. Follow-up gain is search-outcome data and is adaptively sampled. "
             "Correlations are descriptive only; no p-values or causal interpretation are claimed."
@@ -530,25 +600,31 @@ def markdown_summary(summary: dict, flat: list[dict]) -> str:
     for rank, count in sorted(((int(k), v) for k, v in summary["rank_lower_bound_counts"].items()), reverse=True):
         lines.append(f"| ≥{rank} | {count} |")
     lines += ["", "## Arithmetic by lower-bound stratum", ""]
-    headers = ["Stratum", "n", "median BK local", "median log2|D_K|", "median ramified primes", "median forced g lower"]
+    headers = ["Stratum", "population n", "BK completed n", "median BK local", "median log2(abs(D_K))", "median ramified primes", "median forced g lower"]
     lines.append("| " + " | ".join(headers) + " |")
-    lines.append("|---|---:|---:|---:|---:|---:|")
+    lines.append("|---|---:|---:|---:|---:|---:|---:|")
     for bucket, e in summary["bucket_summary"].items():
         def fmt(key):
             v = e.get(key)
             return "—" if v is None else (f"{v:.3f}" if isinstance(v, float) else str(v))
         lines.append(
-            f"| {bucket} | {e['count']} | {fmt('median_bk_local_term')} | {fmt('median_log2_abs_field_discriminant')} | "
+            f"| {bucket} | {e['count']} | {e['n_bk_local_term']} | {fmt('median_bk_local_term')} | {fmt('median_log2_abs_field_discriminant')} | "
             f"{fmt('median_field_ramified_prime_count')} | {fmt('median_forced_class_2rank_lower_from_known_rank')} |"
         )
+    lines += ["", "Local arithmetic below uses completed cases only; missing cases are not zero.", "",
+              "| Stratum | median #Phi_m | median #Phi_a | median log2(conductor) | totally real / known | root -1 / known |",
+              "|---|---:|---:|---:|---:|---:|"]
+    for bucket,e in summary['bucket_summary'].items():
+        def display(k):return '—' if e.get(k) is None else f'{e[k]:.3f}'
+        lines.append(f"| {bucket} | {display('median_phi_m_count')} | {display('median_phi_a_count')} | {display('median_log2_conductor')} | {e['totally_real_count']}/{e['signature_known_count']} | {e['root_number_minus_one_count']}/{e['root_number_known_count']} |")
     lines += [
         "",
         "## Descriptive correlations",
         "",
         "These are diagnostics for prioritising theory work. They are confounded by the search design and lower-bound censoring.",
         "",
-        "| Metric | Spearman vs final lower bound | Spearman vs follow-up gain |",
-        "|---|---:|---:|",
+        "| Metric | Spearman vs final lower bound | pairs | Spearman vs follow-up gain | pairs |",
+        "|---|---:|---:|---:|---:|",
     ]
     for key in sorted(k for k in summary["correlations"] if k.endswith("_vs_final_lower_bound")):
         metric = key[len("spearman_"):-len("_vs_final_lower_bound")]
@@ -556,7 +632,8 @@ def markdown_summary(summary: dict, flat: list[dict]) -> str:
         b = summary["correlations"].get(f"spearman_{metric}_vs_followup_gain")
         fa = "—" if a is None else f"{a:.4f}"
         fb = "—" if b is None else f"{b:.4f}"
-        lines.append(f"| `{metric}` | {fa} | {fb} |")
+        counts=summary['correlation_pair_counts'][metric]
+        lines.append(f"| `{metric}` | {fa} | {counts['final']} | {fb} | {counts['followup']} |")
     provisional = [r for r in flat if r.get("provisional_class_2rank") is not None]
     if provisional:
         lines += [

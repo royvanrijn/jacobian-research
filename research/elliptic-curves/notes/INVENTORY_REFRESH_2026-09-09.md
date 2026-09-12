@@ -2,10 +2,10 @@
 
 The [main README](../../../README.md#elliptic-curve-inventory) and
 [expanded inventory](../INVENTORY.md) now index **445 distinct curves**,
-with **267 exact conductors** and **178 unresolved conductors**, using the
+with **282 exact conductors** and **163 unresolved conductors**, using the
 merged conductor snapshot plus the first and
 [second foundry additions](FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md), and the
-[30 broad-rank additions with 11 exact conductors](BROAD_RANK_CURVE_LEDGER_2026-09-12.md). Rank entries
+[30 broad-rank additions with 26 exact conductors](BROAD_RANK_CURVE_LEDGER_2026-09-12.md). Rank entries
 are certified lower bounds, not exact ranks.
 
 The selected updates are:
@@ -18,7 +18,7 @@ The selected updates are:
 | [Lower-height cohort](LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md) | Six previously omitted certified curves, using their strongest retained subgroup packets. |
 | [Frozen sixty-fibre panel](R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md) | All60 independently replayed curves retained, including one lower bound27, three26 and four25. |
 | [First foundry ledger snapshot](FOUNDRY_CURVE_LEDGER_2026-09-09.md) | Thirty further distinct curves at lower bounds22–26; the existing08f72 fibre1245/2519 strengthens23→25. All31 selected packets replay. |
-| [Broad-rank ledger snapshot](BROAD_RANK_CURVE_LEDGER_2026-09-12.md) | Thirty distinct curves: 25 lower bounds of 23, four of 24, one of 25; 11 exact conductors at the first publication cutoff. |
+| [Broad-rank ledger snapshot](BROAD_RANK_CURVE_LEDGER_2026-09-12.md) | Thirty distinct curves: 25 lower bounds of 23, four of 24, one of 25; the completed conductor pass gives 26 exact conductors and four partial bounds. |
 | [Bifibration conic](DET1092_BIFIBRATION_CONIC_SEEDS_2026-09-09.md) | One exported determinant1092 specialization of orbit47755 at conic parameter u=0, with lower bound 18. |
 
 The [earlier supplement](INVENTORY_SEED_SUPPLEMENT_2026-09-08.md) remains

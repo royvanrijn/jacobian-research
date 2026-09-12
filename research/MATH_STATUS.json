@@ -54957,7 +54957,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Connect exceptional multisection ancestry to independent rank arithmetic and strict descent",
-      "scope": "User-directed three-lane investigation: low-degree multisection ancestry of the fixed302/11952 exceptional rosters, equation-only arithmetic on a frozen lower-bound-stratified wide-search panel, and the exact known Kummer/strict/half-ideal dictionary in the same basis. The first bounded comparison constructs degree-two genus-one carriers through all14 and8 targets, respectively, with no shared tested covers between targets. Minimum genus and rich common-cover families remain UNKNOWN; chosen target lists are not invariant under exceptional rebasing. The18-fibre panel completes local arithmetic for10 search fibres plus302; seven search cases and every class-group upper bound remain UNKNOWN. The strict V10 and its ideal correspondence are exact for the known W31, not asserted to exhaust full Selmer. Preserve the sparse one-step accessibility results and common integral core without calling them a rank-amplification mechanism. The11952 rank criterion remains rank<=dimSel2<=g+9, so independently certified g<=16 would prove rank25; the earlier8GiB BNF600-second timeout and short panel probes produced no invariants or quotient certificate. Known-point-derived class lower bounds must not be repackaged as independent upper evidence. Next discriminating gates are genus-zero incidence or multiple independent sections on one common quadratic cover, completion of equation support, and certified class-group/Selmer upper bounds. No larger BNF run, multisection census, or point-search campaign is scheduled. The canonical-height-ball benchmark remains paused. All extensions require frozen finite budgets, checkpoints and certificate plans; bounded misses and unresolved upper bounds do not determine additional rank. Narrowed by EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912, EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911, EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910, EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910, EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910, EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910.",
+      "scope": "User-directed three-lane investigation: low-degree multisection ancestry of the fixed302/11952 exceptional rosters, equation-only arithmetic on a frozen lower-bound-stratified wide-search panel, and the exact known Kummer/strict/half-ideal dictionary in the same basis. The first bounded comparison constructs degree-two genus-one carriers through all14 and8 targets, respectively, with no shared tested covers between targets. Minimum genus and rich common-cover families remain UNKNOWN; chosen target lists are not invariant under exceptional rebasing. The18-fibre panel completes local arithmetic for10 search fibres plus302; seven search cases and every class-group upper bound remain UNKNOWN. The strict V10 and its ideal correspondence are exact for the known W31, not asserted to exhaust full Selmer. Preserve the sparse one-step accessibility results and common integral core without calling them a rank-amplification mechanism. The11952 rank criterion remains rank<=dimSel2<=g+9, so independently certified g<=16 would prove rank25; the earlier8GiB BNF600-second timeout and short panel probes produced no invariants or quotient certificate. Known-point-derived class lower bounds must not be repackaged as independent upper evidence. Next discriminating gates are genus-zero incidence or multiple independent sections on one common quadratic cover, completion of equation support, and certified class-group/Selmer upper bounds. No larger BNF run, multisection census, or point-search campaign is scheduled. The canonical-height-ball benchmark remains paused. All extensions require frozen finite budgets, checkpoints and certificate plans; bounded misses and unresolved upper bounds do not determine additional rank. Narrowed by EC-RANK-TRIANGLE-BOUNDED-ANCESTRY-PANEL-20260912, EC-ACCESSIBILITY-CLOSURE-11952-RANK-CRITERION-20260911, EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910, EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910, EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910, EC-CURVE302-CLASS1-TRANSPORT-AND-CARRIER-GATES-20260910. The user subsequently authorized the read-only wide arithmetic profiler on the completed2080-fibre population, with actual batch000 and final packet/replay bindings for all endpoints and exactly157 follow-up improvements. After18 Python regressions and a three-fibre Sage smoke (BASE3 PASS; LOCAL2 PASS and1 UNKNOWN timeout, with separate exact replay), the six-worker BASE60s/LOCAL180s census is launched; all smoke checkpoints are reused. Optional CLASS probes remain off, zero point searches are launched, and the final deterministic check is scheduled only after all BASE/LOCAL rows checkpoint. Full-population stratification remains pending; the earlier18-fibre panel is not silently relabelled as the completed census.",
       "canonical_source": "elliptic-curves/notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md",
       "dependencies": [
         "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
@@ -55041,6 +55041,42 @@
         "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json",
         "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json",
         "artifacts/generated-results/elliptic-curves/broad_rank_conductor_replay_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-BROAD-RANK-CONDUCTORS-V2-20260912",
+      "kind": "example",
+      "state": "proved",
+      "title": "Completed broad-rank conductor pass certifies 26 exact conductors and four partial bounds",
+      "scope": "The completed thirty-curve broad-rank conductor pass has 26 exact conductors and four partial UNKNOWN results. Every endpoint passes fresh portable replay of the original-to-integral Q-isomorphism, input and certificate bindings, exact prime certificates, discriminant and conductor products, and agreement of Sage generic Tate with PARI local reduction, without factor discovery. The four partial cases reached the declared 1800-second build limit and retain only certified divisor and upper bounds. The completed snapshot covers the full frozen roster and preserves all eleven certificates from the first publication cutoff. This publishes fifteen additional exact conductors, giving 282 exact and 163 unresolved conductors across the unchanged 445-curve inventory. No exact-rank, minimal-model metric or conductor-record claim is made.",
+      "canonical_source": "elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md",
+      "dependencies": [
+        "EC-BROAD-RANK-CONDUCTORS-V1-20260912"
+      ],
+      "checker": "elliptic-curves/cas/publish_broad_rank_conductors_v2.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3753d3ba885faecf87ad94a40505ed856ce7dd5b1e5dc493117c910d4282aef5",
+      "software_lock": [
+        "elliptic-curves/cas/publish_broad_rank_conductors_v2.py",
+        "elliptic-curves/cas/publish_broad_rank_conductors.py",
+        "elliptic-curves/cas/inventory_conductor_worker.py",
+        "elliptic-curves/cas/inventory_conductor_worker_v2.py",
+        "elliptic-curves/cas/run_broad_rank_conductors.py",
+        "artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_snapshot_v2.json",
+        "artifacts/generated-results/elliptic-curves/broad_rank_conductor_replay_v2.json"
       ],
       "supersedes": [],
       "closes_problems": [],
