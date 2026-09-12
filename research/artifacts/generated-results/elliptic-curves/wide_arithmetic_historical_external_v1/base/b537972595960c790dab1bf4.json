@@ -1,0 +1,47 @@
+{
+  "c4": "3059164480456846438008217711127521600609004317681",
+  "c6": "-6884880625329953535681750963796674132703993924804026175350213563702528329",
+  "cubic_irreducible": true,
+  "curve_key": "b537972595960c790dab1bf4",
+  "delta_sign": -1,
+  "input_sha256": "22af4b895f6716315f645dd53afdf9644bae1f70f743c96211a15fe405bb9972",
+  "log2_abs_minimal_discriminant": 471.8333016094225,
+  "log2_abs_polynomial_discriminant": 475.8333016094225,
+  "minimal_ainvs": [
+    "1",
+    "0",
+    "0",
+    "-63732593342850967458504535648490033346020923285",
+    "7968611834872631407039058304455964638234186241293355884337746122912097"
+  ],
+  "minimal_discriminant": "-10863674322637137846445544651693256944481282560960892285281862063428728947974938098910621879159341471070348304525089881189071500256450112000000",
+  "rational_2torsion_rank": 0,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/b537972595960c790dab1bf4.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/base/b537972595960c790dab1bf4.tmp.json",
+      "--mode",
+      "base",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "base",
+    "timeout_seconds": 60
+  },
+  "schema": "elliptic-curves.wide-arithmetic-base.v1",
+  "status": "PASS",
+  "two_division_cubic": [
+    "31874447339490525628156233217823858552936744965173423537350984491648388",
+    "-254930373371403869834018142593960133384083693140",
+    "1",
+    "4"
+  ],
+  "two_division_cubic_discriminant": "-173818789162194205543128714427092111111700520975374276564509793014859663167599009582569950066549463537125572872401438099025144004103201792000000",
+  "wall_seconds": 0.528834
+}

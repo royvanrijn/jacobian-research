@@ -11,9 +11,11 @@ have exited.
 
 The [read-only wide arithmetic profile](notes/WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
 has bound all 2,080 completed fibres and 157 follow-up improvements to their
-initial/final certificates. Its six-worker BASE+LOCAL census is launched after
-a three-fibre Sage smoke; one LOCAL timeout is retained as UNKNOWN. CLASS is
-off, no point searches are launched, and full-population conclusions await completion.
+initial/final certificates. The census is complete: BASE2,080 PASS;
+LOCAL898 PASS and1,182 UNKNOWN timeouts; final replay passes. A separately
+labeled retrospective panel of five historical11952 fibres at lower bounds27–28
+has three LOCAL passes (u+n=8,8,10) and two timeouts. It never enters prospective
+statistics or frozen controls. CLASS is off; original census hashes are unchanged.
 
 The [ancestry / equation-only panel / strict-descent comparison](notes/RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md)
 now has 792 replayed carriers: all fourteen 302 targets and eight 11952 targets

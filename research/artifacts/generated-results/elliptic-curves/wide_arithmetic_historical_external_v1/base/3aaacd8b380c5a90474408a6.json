@@ -1,0 +1,47 @@
+{
+  "c4": "6634440315053082713858076665029521474096800099757205128651841",
+  "c6": "-17489200534451575094205914710925249291204578429094125391978500008717309356824402005463563361",
+  "cubic_irreducible": true,
+  "curve_key": "3aaacd8b380c5a90474408a6",
+  "delta_sign": -1,
+  "input_sha256": "141e2bc88305195b6b82c52b2e694bc4a2d91f8dcacfa0f1e93e4112770e018e",
+  "log2_abs_minimal_discriminant": 590.9841866152101,
+  "log2_abs_polynomial_discriminant": 594.9841866152101,
+  "minimal_ainvs": [
+    "1",
+    "0",
+    "0",
+    "-138217506563605889872043263854781697377016668744941773513580",
+    "20242130248207841544219808693189001887421294913221456339098328387159912218373571988160400"
+  ],
+  "minimal_discriminant": "-8016173977599554153084600438157612362508330895282880069000108443445706401713332279338193539308317679859440802108986091182605797989242654639201392845727839789311853979504640000000",
+  "rational_2torsion_rank": 0,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/3aaacd8b380c5a90474408a6.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/base/3aaacd8b380c5a90474408a6.tmp.json",
+      "--mode",
+      "base",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "base",
+    "timeout_seconds": 60
+  },
+  "schema": "elliptic-curves.wide-arithmetic-base.v1",
+  "status": "PASS",
+  "two_division_cubic": [
+    "80968520992831366176879234772756007549685179652885825356393313548639648873494287952641600",
+    "-552870026254423559488173055419126789508066674979767094054320",
+    "1",
+    "4"
+  ],
+  "two_division_cubic_discriminant": "-128258783641592866449353607010521797800133294324526081104001735095131302427413316469411096628933082877751052833743777458921692767827882474227222285531645436628989663672074240000000",
+  "wall_seconds": 0.567065
+}

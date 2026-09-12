@@ -1,0 +1,47 @@
+{
+  "c4": "617425053023481477243467764985745929583608313192225",
+  "c6": "-15381105923607590097058380533239219461936238054612455210227912667774033023025",
+  "cubic_irreducible": true,
+  "curve_key": "0c150cb544319c5994686201",
+  "delta_sign": -1,
+  "input_sha256": "fa180c10ed705b00c7a0b9eca50f69da80382da986e49bcc61ed4f0785d16f9f",
+  "log2_abs_minimal_discriminant": 487.80638923337693,
+  "log2_abs_polynomial_discriminant": 491.80638923337693,
+  "minimal_ainvs": [
+    "1",
+    "-1",
+    "1",
+    "-12863021937989197442572245103869706866325173191505",
+    "17802205930101377427150906610708284800466302835899765794079393280105836097"
+  ],
+  "minimal_discriminant": "-698803764333922225881452682703627988473575385055139144321696385420459618811963213599318605839675657668786479665115883391213066301636816763473920000",
+  "rational_2torsion_rank": 0,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/0c150cb544319c5994686201.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/base/0c150cb544319c5994686201.tmp.json",
+      "--mode",
+      "base",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "base",
+    "timeout_seconds": 60
+  },
+  "schema": "elliptic-curves.wide-arithmetic-base.v1",
+  "status": "PASS",
+  "two_division_cubic": [
+    "71208823720405509708603626442833139201865211343599063176317573120423344389",
+    "-51452087751956789770288980415478827465300692766018",
+    "-3",
+    "4"
+  ],
+  "two_division_cubic_discriminant": "-11180860229342755614103242923258047815577206160882226309147142166727353900991411417589097693434810522700583674641854134259409060826189068215582720000",
+  "wall_seconds": 0.562584
+}

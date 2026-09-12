@@ -1,0 +1,7 @@
+{
+  "memory_gb": 0.0,
+  "sage": "/home/royvanrijn/.local/bin/sage",
+  "sage_sha256": "05ef0e7babd8273634a287d4817f03b3c240f12cd4ce5db713825b51f3a1a4d2",
+  "sage_version": "10.9",
+  "timeout_seconds": 180
+}

@@ -1,0 +1,281 @@
+{
+  "additive_split_counts": [
+    2
+  ],
+  "bk_applicable": true,
+  "bk_local_term": 8,
+  "bk_n": 6,
+  "bk_u": 2,
+  "conductor": "147676042850045582105281636565121030866804104224016092263850219019460568292075503441131704586859227228714615923228919163468564630",
+  "curve_key": "d3ec7c934f6c5905cc7501a1",
+  "field_discriminant": "9996718070343809337365047311211258311157480738152049719831572923958331786280951212476852072251322333154539906168520031692",
+  "field_ramified_prime_count": 12,
+  "field_ramified_primes": [
+    "2",
+    "3",
+    "7",
+    "11",
+    "19",
+    "1880603",
+    "7106189011",
+    "259807211574607",
+    "553567795022107",
+    "1129105272486743",
+    "1872767131490633970393149",
+    "140106331191119962071569896497953"
+  ],
+  "field_signature": [
+    3,
+    0
+  ],
+  "input_sha256": "341a35b0c8635c58caf22d3c5712c65103404dba89e61e5c4c3270d012ca8ed2",
+  "local_data": [
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I12",
+      "p": "2",
+      "root_number": -1,
+      "v_delta": 12
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I7",
+      "p": "3",
+      "root_number": -1,
+      "v_delta": 7
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I6",
+      "p": "5",
+      "root_number": -1,
+      "v_delta": 6
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I5",
+      "p": "7",
+      "root_number": -1,
+      "v_delta": 5
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I3",
+      "p": "11",
+      "root_number": -1,
+      "v_delta": 3
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "13",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 2,
+      "cubic_prime_count": 2,
+      "kind": "additive",
+      "kodaira": "III",
+      "p": "19",
+      "root_number": 1,
+      "v_delta": 3
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "47",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "509",
+      "root_number": -1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1880603",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "7106189011",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "259807211574607",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "553567795022107",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1129105272486743",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1872767131490633970393149",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "140106331191119962071569896497953",
+      "root_number": -1,
+      "v_delta": 1
+    }
+  ],
+  "log2_abs_field_discriminant": 401.9528259212931,
+  "log2_conductor": 425.76923194551847,
+  "minimal_discriminant_factorization": [
+    [
+      "2",
+      12
+    ],
+    [
+      "3",
+      7
+    ],
+    [
+      "5",
+      6
+    ],
+    [
+      "7",
+      5
+    ],
+    [
+      "11",
+      3
+    ],
+    [
+      "13",
+      2
+    ],
+    [
+      "19",
+      3
+    ],
+    [
+      "47",
+      2
+    ],
+    [
+      "509",
+      2
+    ],
+    [
+      "1880603",
+      1
+    ],
+    [
+      "7106189011",
+      1
+    ],
+    [
+      "259807211574607",
+      1
+    ],
+    [
+      "553567795022107",
+      1
+    ],
+    [
+      "1129105272486743",
+      1
+    ],
+    [
+      "1872767131490633970393149",
+      1
+    ],
+    [
+      "140106331191119962071569896497953",
+      1
+    ]
+  ],
+  "phi_a": [
+    "19"
+  ],
+  "phi_a_count": 1,
+  "phi_m": [
+    "2",
+    "5",
+    "13",
+    "47",
+    "509"
+  ],
+  "phi_m_count": 5,
+  "rational_2torsion_rank": 0,
+  "root_number": -1,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/d3ec7c934f6c5905cc7501a1.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/local/d3ec7c934f6c5905cc7501a1.tmp.json",
+      "--mode",
+      "local",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "local",
+    "timeout_seconds": 180
+  },
+  "schema": "elliptic-curves.wide-arithmetic-local.v1",
+  "status": "PASS",
+  "wall_seconds": 14.087819
+}

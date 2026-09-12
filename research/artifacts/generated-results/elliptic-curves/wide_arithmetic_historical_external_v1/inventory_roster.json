@@ -1,0 +1,3119 @@
+{
+  "rows": [
+    {
+      "family": "11952",
+      "id": "new-20260906-188",
+      "parameter": "110314/102227",
+      "rank_lower_bound": 28,
+      "rank_provenance": "PUBLIC_POINT_REPRODUCTION"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-40",
+      "parameter": "2818/1535",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-41",
+      "parameter": "-2448/11",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-186",
+      "parameter": "4286/1881",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-71",
+      "parameter": "3726/881",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-72",
+      "parameter": "2012/211",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-02",
+      "parameter": "877/781",
+      "rank_lower_bound": 27,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-48",
+      "parameter": "2828/2015",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260906-90",
+      "parameter": "-1867/270",
+      "rank_lower_bound": 27,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-02",
+      "id": "new-20260906-92",
+      "parameter": "3161/432",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-74",
+      "parameter": "613/828",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260905-37",
+      "parameter": "-2507/3068",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-104",
+      "parameter": "760/211",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-49",
+      "parameter": "2773/962",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-low-04",
+      "parameter": "287/324",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260906-192",
+      "parameter": "-4444/217",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-42",
+      "parameter": "808/2259",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-63",
+      "parameter": "2588/1603",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-04",
+      "parameter": "-1013/476",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-75",
+      "parameter": "-1376/455",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-73",
+      "parameter": "1175/1901",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-05",
+      "parameter": "-621/281",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-02",
+      "id": "new-20260906-200",
+      "parameter": "-32999/14074",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-103",
+      "parameter": "3307/1128",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-106",
+      "parameter": "-1826/2583",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260906-91",
+      "parameter": "-557/3572",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-113",
+      "parameter": "-3292/1853",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-116",
+      "parameter": "-1588/3431",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-52",
+      "parameter": "-164/2855",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-99",
+      "parameter": "7460/32309",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-50",
+      "parameter": "-1173/127",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-105",
+      "parameter": "726/761",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-0a6622356965",
+      "parameter": "-1508/909",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-102",
+      "parameter": "-575/1207",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-103b2-fresh-002",
+      "parameter": "2815/1088",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-189",
+      "parameter": "2618/26913",
+      "rank_lower_bound": 26,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-e839666420df",
+      "parameter": "2538/2143",
+      "rank_lower_bound": 26,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-54",
+      "parameter": "-538/249",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-43",
+      "parameter": "1361/72",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260905-02",
+      "parameter": "-1647/91",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-64",
+      "parameter": "-489/40",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-79",
+      "parameter": "-2741/118",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-82",
+      "parameter": "2280/299",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-77",
+      "parameter": "21/1196",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260905-38",
+      "parameter": "-1525/1388",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-66",
+      "parameter": "-695/311",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-110",
+      "parameter": "3/377",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-76",
+      "parameter": "492/169",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-107",
+      "parameter": "-2336/731",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-954eca52c40b",
+      "parameter": "308/9",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-121",
+      "parameter": "914/2111",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260905-01",
+      "parameter": "505/794",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-101",
+      "parameter": "102/1525",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-81",
+      "parameter": "4051/121",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-5d2a0e3497b2",
+      "parameter": "-943/412",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-04",
+      "parameter": "49/353",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-114",
+      "parameter": "-3791/529",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-03",
+      "parameter": "307/206",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-111",
+      "parameter": "774/149",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-53",
+      "parameter": "2454/25",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-7bb187bc9254e81c6283",
+      "parameter": "921/653",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-03",
+      "parameter": "-550/521",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-120",
+      "parameter": "3148/2791",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-118",
+      "parameter": "-2254/1257",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-119",
+      "parameter": "2566/3809",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-3393b35c6b53",
+      "parameter": "66/3305",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-44",
+      "parameter": "-328/1123",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "foundry-08234-06a6f3ddb210",
+      "parameter": "-811/166",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-109",
+      "parameter": "2393/1860",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-108",
+      "parameter": "-1193/99",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-78",
+      "parameter": "3469/2070",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-117",
+      "parameter": "-2101/756",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-05",
+      "parameter": "1245/2519",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-65",
+      "parameter": "2059/3120",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-80",
+      "parameter": "-2980/811",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-51",
+      "parameter": "922/2063",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-103b2-lowheight-001",
+      "parameter": "-95/728",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260905-39",
+      "parameter": "-951/1696",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-115",
+      "parameter": "4071/52",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-04",
+      "parameter": "-2318/403",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-112",
+      "parameter": "-2129/1207",
+      "rank_lower_bound": 25,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-05",
+      "parameter": "-3267/2257",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-103b2-fresh-001",
+      "parameter": "3889/2172",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-56b395dd3758",
+      "parameter": "-2997/3308",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-ffd2dd39c149",
+      "parameter": "239/2556",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-61b22394d44e",
+      "parameter": "-2818/2091",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-c14cbd686e01",
+      "parameter": "-1438/1183",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-9738e1ac00ed",
+      "parameter": "-2052/1075",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-a31493274bef",
+      "parameter": "3525/1478",
+      "rank_lower_bound": 25,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-high-02",
+      "parameter": "-3248/79",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-129",
+      "parameter": "561/26",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-127",
+      "parameter": "117/238",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-56",
+      "parameter": "1504/3",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-03",
+      "id": "new-20260906-94",
+      "parameter": "1784/39",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-10",
+      "parameter": "33/119",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-123",
+      "parameter": "-1773/136",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-140",
+      "parameter": "1292/601",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-126",
+      "parameter": "26/57",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-85",
+      "parameter": "-1498/507",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-07",
+      "parameter": "509/149",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-06",
+      "parameter": "-227/647",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260905-04",
+      "parameter": "-704/93",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-33",
+      "parameter": "-109/521",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-high-04",
+      "parameter": "-1732/617",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260905-05",
+      "parameter": "787/103",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-09",
+      "parameter": "-695/97",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-133",
+      "parameter": "-543/229",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-125",
+      "parameter": "-670/1129",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-3bf3a74b3ae7",
+      "parameter": "248/319",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-83",
+      "parameter": "2784/167",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-low-03",
+      "parameter": "110/179",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-136",
+      "parameter": "-778/259",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-low-02",
+      "parameter": "338/163",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-07ca9-lowheight-001",
+      "parameter": "142/561",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-05",
+      "parameter": "-359/211",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-68de3bc5e897",
+      "parameter": "-704/67",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-03",
+      "id": "new-20260906-95",
+      "parameter": "2555/33",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-03",
+      "parameter": "272/327",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-57",
+      "parameter": "934/1207",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-143",
+      "parameter": "775/803",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-137",
+      "parameter": "1130/789",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-abdbb535111fd5090fb6",
+      "parameter": "371/601",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-87",
+      "parameter": "-811/1609",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-122",
+      "parameter": "-1449/1094",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-04",
+      "parameter": "-240/653",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-03",
+      "id": "new-20260906-197",
+      "parameter": "24405/86",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-130",
+      "parameter": "869/2730",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-135",
+      "parameter": "107/603",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-08",
+      "parameter": "-2300/843",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-132",
+      "parameter": "-517/543",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-128",
+      "parameter": "422/879",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-45",
+      "parameter": "503/138",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-194",
+      "parameter": "4584/115",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-124",
+      "parameter": "-2021/2823",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-193",
+      "parameter": "-6577/1092",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-low-05",
+      "parameter": "807/434",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-142",
+      "parameter": "2324/1991",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-86",
+      "parameter": "-2558/3185",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-55",
+      "parameter": "-1477/1933",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-4410cdc73412aacf2537",
+      "parameter": "161/452",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-139",
+      "parameter": "-3814/2675",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-b1dfd57aaf748bf8725b",
+      "parameter": "-1670/647",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-134",
+      "parameter": "1055/1833",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-97",
+      "parameter": "-2138/473",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-46",
+      "parameter": "791/627",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-02",
+      "id": "new-20260906-196",
+      "parameter": "-22059/7204",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-131",
+      "parameter": "-2751/886",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-high-04",
+      "parameter": "2695/232",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-08f72-fresh-001",
+      "parameter": "4032/1663",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-074d9-fresh-001",
+      "parameter": "-2707/3437",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-8da5bd35f89e",
+      "parameter": "-2318/1191",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-96",
+      "parameter": "-1786/317",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-477371c10385690c84a4",
+      "parameter": "-514/143",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-84",
+      "parameter": "3431/70",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-67",
+      "parameter": "-649/921",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-02",
+      "id": "new-20260906-93",
+      "parameter": "3853/666",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-138",
+      "parameter": "1139/1293",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-141",
+      "parameter": "1551/1252",
+      "rank_lower_bound": 24,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-51dadf1c0263",
+      "parameter": "-1072/39",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-d7627bf02ac7",
+      "parameter": "1035/812",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-fae8341a387f",
+      "parameter": "889/366",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-001934fdf897",
+      "parameter": "2223/2410",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-653ad5ebdd37",
+      "parameter": "879/962",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-a097fcd42ef0",
+      "parameter": "1678/1203",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-befd8be8d86c",
+      "parameter": "61/2532",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-cb18404d6853",
+      "parameter": "-1059/574",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-d6098e83c12e",
+      "parameter": "1123/586",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-e92cc9a1fb98",
+      "parameter": "2924/3965",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "foundry-08234-bdf3e5c261b8",
+      "parameter": "-2208/235",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-19815487004b",
+      "parameter": "-944/497",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-8431940c36e8",
+      "parameter": "3382/1419",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-d87dfd710756",
+      "parameter": "466/831",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-7f68d7fd3051",
+      "parameter": "-281/686",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-8718b170ab7a",
+      "parameter": "2339/888",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-8cfe1c404875",
+      "parameter": "1604/91",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-98041bd449e2",
+      "parameter": "2538/2041",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-ebc9ba8575e8",
+      "parameter": "329/151",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-f05e1838f25e",
+      "parameter": "-2924/4095",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-a61359cf66cb",
+      "parameter": "-2426/1413",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-ab67527f7264",
+      "parameter": "2328/1285",
+      "rank_lower_bound": 24,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-162",
+      "parameter": "48/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-low-04",
+      "parameter": "-600",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260905-12",
+      "parameter": "-506/9",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-150",
+      "parameter": "197/116",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-11952-lowheight-001",
+      "parameter": "238/27",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-3e89d8d06a19",
+      "parameter": "190/39",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-161",
+      "parameter": "41/38",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-156",
+      "parameter": "146/59",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-5a7c841bd0cd",
+      "parameter": "-97/25",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-34",
+      "parameter": "643/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-68",
+      "parameter": "-307/72",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-89",
+      "parameter": "149/177",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-195",
+      "parameter": "4104/563",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260905-11",
+      "parameter": "-839/505",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "x1092-original",
+      "id": "broad-x1092-original-37d50595eb8037ca7d7c",
+      "parameter": "762/587",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-3c8f8fa2f6f9",
+      "parameter": "-157/198",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-20",
+      "parameter": "44/35",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-62f0411b46b4",
+      "parameter": "-313",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-6268895b4587ec68b047",
+      "parameter": "-601/716",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-01",
+      "parameter": "-16/689",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-0279c520944c",
+      "parameter": "-79/541",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-87ef4a86f497dd1b1175",
+      "parameter": "-156/197",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-157",
+      "parameter": "2007/112",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-03",
+      "id": "new-20260905-13",
+      "parameter": "478/49",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-07ca9-fresh-001",
+      "parameter": "587/1074",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "broad-103b2-c6696036d8e65c023954",
+      "parameter": "-297/70",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-151",
+      "parameter": "965/1196",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-f3e9a3dc98feabb7bab9",
+      "parameter": "577/177",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "broad-103b2-6fa796d523a324491258",
+      "parameter": "553/680",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-dbcce1f15f8b",
+      "parameter": "51/586",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-59",
+      "parameter": "522/329",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-146",
+      "parameter": "-807/115",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-08fae58c0accfd75962b",
+      "parameter": "167/630",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "foundry-08234-e3f6e770e3b8",
+      "parameter": "-2311/6",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-9b261fe2598148ccc4da",
+      "parameter": "1425/296",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-03",
+      "id": "new-20260906-191",
+      "parameter": "9053/2",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-70",
+      "parameter": "-481/278",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-89350e71e29514573ef6",
+      "parameter": "381/1261",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-1cd5bce4943b9b28a095",
+      "parameter": "905/514",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-158",
+      "parameter": "-1616/419",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-abfc2beeb916ffe84cb9",
+      "parameter": "-657/206",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-14",
+      "parameter": "-1193/1560",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-02",
+      "parameter": "-861/383",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-145",
+      "parameter": "-676/921",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-03",
+      "parameter": "-969/320",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260906-98",
+      "parameter": "2407/532",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-beddd202ac6f",
+      "parameter": "-502/171",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-159",
+      "parameter": "-1788/7",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-7c47b0d89d71478bfbb9",
+      "parameter": "865/312",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-63dd49c4305ec54c5cdd",
+      "parameter": "980/211",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-d56b29af89fb6f62ef8f",
+      "parameter": "470/1287",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-1a490c266c68",
+      "parameter": "757/617",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-69609b2b1b80",
+      "parameter": "-707/325",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "broad-08234-f4523a2ab7fa837bb374",
+      "parameter": "860/237",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-163",
+      "parameter": "1490/943",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-d6c7a23093c65bf22c41",
+      "parameter": "-301/397",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-153",
+      "parameter": "-2799/491",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-58",
+      "parameter": "-2387/360",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-155",
+      "parameter": "1308/277",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-500d8cd3104b",
+      "parameter": "-379/267",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-f5bf80951b1c2164656e",
+      "parameter": "1081/402",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-516ff5b73983bcd0accd",
+      "parameter": "811/1277",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-149",
+      "parameter": "1053/2968",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-e6d04993ed063649fccb",
+      "parameter": "-691/948",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-154",
+      "parameter": "-2884/621",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-c1c61596468940fe47df",
+      "parameter": "-1102/775",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-dea09f09762ca96b5be1",
+      "parameter": "1625/1269",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-02",
+      "id": "new-20260906-190",
+      "parameter": "-5383/2146",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-32a21592b4d6",
+      "parameter": "-750/293",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-482d6feeb4cb",
+      "parameter": "-175/446",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-def9a674e629",
+      "parameter": "278/3433",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-04",
+      "parameter": "-2687/3445",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-164",
+      "parameter": "3058/1387",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-60",
+      "parameter": "-1451/86",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "broad-08f72-71765079c9412ec2a43b",
+      "parameter": "-798/1093",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260906-199",
+      "parameter": "28195/1219",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-69",
+      "parameter": "-2445/83",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-187",
+      "parameter": "11019/11983",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "broad-11952-c907453d80ddd62ca2fd",
+      "parameter": "277/226",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "broad-07ca9-8115824ac0e6b26f7e6f",
+      "parameter": "345/286",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-18",
+      "parameter": "129/70",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-147",
+      "parameter": "38/353",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-15",
+      "parameter": "-1264/1047",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-88",
+      "parameter": "-289/572",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-2149e9c7407b",
+      "parameter": "999/82",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-160",
+      "parameter": "2390/1319",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-152",
+      "parameter": "-11/235",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-156b9c9a0946",
+      "parameter": "-730/613",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "broad-074d9-4ced5e6a400d884e4c06",
+      "parameter": "361/942",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-144",
+      "parameter": "-661/900",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-19",
+      "parameter": "2291/2392",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260907-201",
+      "parameter": "-27546/407",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-17",
+      "parameter": "1229/894",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-16",
+      "parameter": "-3895/3749",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-148",
+      "parameter": "-2402/1309",
+      "rank_lower_bound": 23,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-0069c8fba1e2",
+      "parameter": "-1327/856",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-50dfdc38dd72",
+      "parameter": "-3261/4027",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-55e776f03778",
+      "parameter": "-293/811",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-5cd1bb924336",
+      "parameter": "2415/1858",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-2f9da9115d89",
+      "parameter": "-3667/3826",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-3c3549b281df",
+      "parameter": "-278/907",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-41b541aafb58",
+      "parameter": "-98/137",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-45e586e72a84",
+      "parameter": "-1007/332",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-54cb51469aa1",
+      "parameter": "-104/643",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-7f9a74851e79",
+      "parameter": "-513/100",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-afeaae08bccb",
+      "parameter": "584/237",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-d38578d72afc",
+      "parameter": "-351/826",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "foundry-08234-d9a350cacf56",
+      "parameter": "-884/183",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-1a3ff0647d20",
+      "parameter": "-2257/3960",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-5c8d713b47d0",
+      "parameter": "1766/1995",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-7e0fed623055",
+      "parameter": "1019/16",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-3522eebc6dc0",
+      "parameter": "1195/1329",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-4a4e9b4ae340",
+      "parameter": "-691/498",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-6599e33bde1e",
+      "parameter": "1328/1075",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-79f99e5fcc43",
+      "parameter": "3893/885",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-b0fc6fa02cf0",
+      "parameter": "596/1543",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-c21d0b49841b",
+      "parameter": "324/389",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-db43616cda53",
+      "parameter": "3806/1687",
+      "rank_lower_bound": 23,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-36",
+      "parameter": "3/17",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-181",
+      "parameter": "-8/27",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-074d9-lowheight-001",
+      "parameter": "25/3",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-08f72-lowheight-001",
+      "parameter": "254/17",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-32",
+      "parameter": "8/39",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-low-01",
+      "parameter": "38/31",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260905-25",
+      "parameter": "-20/23",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-29",
+      "parameter": "-70/61",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-69d055374ecf",
+      "parameter": "-304/31",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260905-27",
+      "parameter": "-338/47",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-e9d1426ea4bc",
+      "parameter": "357/598",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "a1-fibration-04",
+      "id": "new-20260905-26",
+      "parameter": "-209/118",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-167",
+      "parameter": "1224/931",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260905-24",
+      "parameter": "699/19",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-01",
+      "id": "new-20260905-23",
+      "parameter": "32/253",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-c78fcfe9b6eb",
+      "parameter": "169/552",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260905-22",
+      "parameter": "744/5",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-28",
+      "parameter": "-3/148",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-01",
+      "parameter": "521/172",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-1f2eddc6d781",
+      "parameter": "-241/219",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-166",
+      "parameter": "-297/335",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260905-21",
+      "parameter": "148/225",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-61",
+      "parameter": "267/1004",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-bb690c16b941",
+      "parameter": "91/804",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-03",
+      "parameter": "580/397",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-169",
+      "parameter": "1443/986",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-171",
+      "parameter": "167/887",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-182",
+      "parameter": "1737/530",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-173",
+      "parameter": "-2185/106",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-5dda9b32f508",
+      "parameter": "-511/265",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-184",
+      "parameter": "402/517",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-bc8f314574e2",
+      "parameter": "1964/1045",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-62",
+      "parameter": "3221/1002",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-180",
+      "parameter": "3466/307",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "new-20260906-174",
+      "parameter": "2627/65",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-170",
+      "parameter": "1572/785",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-31",
+      "parameter": "1348/1431",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-bd9e31ba3560",
+      "parameter": "995/276",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "published-R17",
+      "id": "new-20260905-30",
+      "parameter": "-7540/2317",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-179",
+      "parameter": "3371/300",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08234",
+      "id": "r17-08234-fresh-002",
+      "parameter": "2570/2143",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-7e31778a22e3",
+      "parameter": "-2726/913",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-172",
+      "parameter": "3076/2339",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-17c9961e2734",
+      "parameter": "112/2777",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-183",
+      "parameter": "1972/1459",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260906-198",
+      "parameter": "-37260/16691",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "new-20260906-47",
+      "parameter": "633/4064",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-165",
+      "parameter": "-2789/1357",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-177",
+      "parameter": "-3939/2032",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-100",
+      "parameter": "4271/6508",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "a1-fibration-05",
+      "id": "new-20260905-35",
+      "parameter": "-279/730",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-108b0de34fbc",
+      "parameter": "-235/163",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-bf1f4911a84f",
+      "parameter": "85/557",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "new-20260906-168",
+      "parameter": "1381/558",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-242c4e73dcb3",
+      "parameter": "401/643",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-02",
+      "parameter": "2227/3452",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-39f00701dd95",
+      "parameter": "2551/3708",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "new-20260906-178",
+      "parameter": "1986/1147",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "new-20260906-185",
+      "parameter": "420/2827",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-175",
+      "parameter": "-1737/1790",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "11952",
+      "id": "r17-11952-fresh-002",
+      "parameter": "327/1403",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "new-20260906-176",
+      "parameter": "-2449/1927",
+      "rank_lower_bound": 22,
+      "rank_provenance": "LOCAL_POINT_SEARCH"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-78f9ee2cac45",
+      "parameter": "469/632",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-920a50374920",
+      "parameter": "-1745/1901",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-a4e303e8d0d2",
+      "parameter": "-2705/2307",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-d2e36aaa0b7a",
+      "parameter": "361/705",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "foundry-074d9-db7d3bf5850e",
+      "parameter": "3712/93",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-039bd8cbb68e",
+      "parameter": "347/616",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-2772d4770f5b",
+      "parameter": "2092/3927",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-43e3dcdaef52",
+      "parameter": "1881/3062",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-61e67879d215",
+      "parameter": "-447/448",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-6e5b45a28829",
+      "parameter": "2125/703",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-f1c00d1ca91d",
+      "parameter": "488/987",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "foundry-07ca9-f2a0430374a0",
+      "parameter": "3817/477",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-0bb573585978",
+      "parameter": "399/496",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-2befa447e601",
+      "parameter": "-58/717",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-40ac60187fd9",
+      "parameter": "742/177",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-4655a42770e0",
+      "parameter": "743/2447",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-4d4b1d600f61",
+      "parameter": "3118/921",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-50f717b16d07",
+      "parameter": "1550/197",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-8f03c411e6ea",
+      "parameter": "915/187",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-961a8aadd5fb",
+      "parameter": "-307/2657",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-b9a8d8af69c1",
+      "parameter": "247/472",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-c0eaa624a326",
+      "parameter": "-85/966",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-dfb4cc079af5",
+      "parameter": "399/143",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "foundry-08f72-eb362a7c39e6",
+      "parameter": "551/213",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-6dba7753794a",
+      "parameter": "-91/62",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-8b22d843173a",
+      "parameter": "-7/3487",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-8eb55ef6b9b4",
+      "parameter": "1974/1031",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-da67639e8ab8",
+      "parameter": "319/1014",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "foundry-103b2-de6dfcc3258c",
+      "parameter": "-1496/3169",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-34a581776a99",
+      "parameter": "718/2715",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-5b08e45579f4",
+      "parameter": "982/717",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-825ee63e5a94",
+      "parameter": "-131/290",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-ad137a40fe6d",
+      "parameter": "-89/399",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "foundry-11952-e53292493505",
+      "parameter": "-1468/2421",
+      "rank_lower_bound": 22,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-02",
+      "parameter": "347/570",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-funnel-002537010",
+      "parameter": "1926/2699",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-03",
+      "parameter": "1565/713",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-high-02",
+      "parameter": "443/2529",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-02",
+      "parameter": "383/943",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-01",
+      "parameter": "422/743",
+      "rank_lower_bound": 21,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-low-01",
+      "parameter": "569/530",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-03",
+      "parameter": "-3967/2226",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-07ca9-fresh-002",
+      "parameter": "-2475/2848",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-high-01",
+      "parameter": "1032/3619",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-01",
+      "parameter": "-3921/797",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-074d9-fresh-002",
+      "parameter": "88/2551",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-01",
+      "parameter": "546/3683",
+      "rank_lower_bound": 20,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-high-05",
+      "parameter": "2028/1289",
+      "rank_lower_bound": 19,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "07ca9",
+      "id": "r17-panel-07ca9-low-05",
+      "parameter": "-841/643",
+      "rank_lower_bound": 19,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-high-01",
+      "parameter": "-137/2327",
+      "rank_lower_bound": 19,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-04",
+      "parameter": "3889/2225",
+      "rank_lower_bound": 19,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-low-05",
+      "parameter": "727/194",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-03",
+      "parameter": "2139/3163",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-funnel-019791672",
+      "parameter": "1117/2193",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-small-conic",
+      "parameter": "5193/35630",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-low-04",
+      "parameter": "555/779",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-05",
+      "parameter": "-3805/141",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000003",
+      "parameter": "257306782577/1766023495870",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-funnel-020887854",
+      "parameter": "2953/1671",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "r17-panel-11952-high-03",
+      "parameter": "3925/2937",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-low-02",
+      "parameter": "272/965",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-high-01",
+      "parameter": "-3553/1680",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000000",
+      "parameter": "1004777772/6898189895",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000005",
+      "parameter": "2073030269/14240022390",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000002",
+      "parameter": "1609736129/11039275010",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000006",
+      "parameter": "7159030427/49068265370",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-orbit8044-000004",
+      "parameter": "257474118081/1766197190110",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-progression-n0",
+      "parameter": "1636579823608344775969579426883491310836441501800610644096637979339414901424849081843284973507691000/6102275947055890661075259641569164647354846459461782772324094998826318153155853546790385417152874979",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "det1092",
+      "id": "det1092-bifibration-47755-u0",
+      "parameter": "-794459991237661142209617508397391440884113108634171074066711018838945978224174452588881613221706265734197809555933012393733591703340128781049296741873890600/101152243121506013840142801432912819448788194901148571208554069335678583838683534671173935055963529387783391020656808709697708481177511551536549698509613977187",
+      "rank_lower_bound": 18,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-08234-lowheight-001",
+      "parameter": "383/388",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-01",
+      "parameter": "-2352/2999",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-02",
+      "parameter": "-3290/3959",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "074d9",
+      "id": "r17-panel-074d9-high-02",
+      "parameter": "-4069/849",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-03",
+      "parameter": "-1873/2620",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-panel-08f72-high-02",
+      "parameter": "2960/3001",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-04",
+      "parameter": "-2030/2773",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-high-05",
+      "parameter": "-1983/3790",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-low-01",
+      "parameter": "-68/245",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "103b2",
+      "id": "r17-panel-103b2-high-05",
+      "parameter": "-2897/1356",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-low-05",
+      "parameter": "273/422",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "11952",
+      "id": "r17-11952-fresh-001",
+      "parameter": "-436/3149",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-low-03",
+      "parameter": "-808/945",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08f72",
+      "id": "r17-08f72-fresh-002",
+      "parameter": "-2433/3479",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-panel-08234-high-03",
+      "parameter": "567/1342",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    },
+    {
+      "family": "08234",
+      "id": "r17-08234-fresh-001",
+      "parameter": "2071/4060",
+      "rank_lower_bound": 17,
+      "rank_provenance": "standalone_exact_finite_group_certificate"
+    }
+  ]
+}

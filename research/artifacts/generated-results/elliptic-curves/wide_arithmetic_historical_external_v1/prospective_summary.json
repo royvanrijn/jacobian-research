@@ -1,0 +1,242 @@
+{
+  "bucket_summary": {
+    "17-18": {
+      "count": 1574,
+      "improved_known_count": 0,
+      "median_bk_local_term": 5.0,
+      "median_bk_n": 4.0,
+      "median_field_ramified_prime_count": 6.0,
+      "median_forced_class_2rank_lower_from_known_rank": 12.0,
+      "median_log2_abs_field_discriminant": 418.93769043689986,
+      "median_log2_abs_minimal_discriminant": 492.0204051157867,
+      "median_log2_conductor": 432.64642839853786,
+      "median_phi_a_count": 1.0,
+      "median_phi_m_count": 3.0,
+      "n_bk_local_term": 649,
+      "n_bk_n": 649,
+      "n_field_ramified_prime_count": 649,
+      "n_forced_class_2rank_lower_from_known_rank": 649,
+      "n_log2_abs_field_discriminant": 649,
+      "n_log2_abs_minimal_discriminant": 1574,
+      "n_log2_conductor": 649,
+      "n_phi_a_count": 649,
+      "n_phi_m_count": 649,
+      "root_number_known_count": 649,
+      "root_number_minus_one_count": 322,
+      "signature_known_count": 649,
+      "totally_real_count": 256
+    },
+    "19-20": {
+      "count": 351,
+      "improved_known_count": 109,
+      "median_bk_local_term": 6.0,
+      "median_bk_n": 4.0,
+      "median_field_ramified_prime_count": 6.0,
+      "median_forced_class_2rank_lower_from_known_rank": 14.0,
+      "median_log2_abs_field_discriminant": 378.47832990880465,
+      "median_log2_abs_minimal_discriminant": 462.3068660045941,
+      "median_log2_conductor": 392.80443009180965,
+      "median_phi_a_count": 1.0,
+      "median_phi_m_count": 4.0,
+      "n_bk_local_term": 169,
+      "n_bk_n": 169,
+      "n_field_ramified_prime_count": 169,
+      "n_forced_class_2rank_lower_from_known_rank": 169,
+      "n_log2_abs_field_discriminant": 169,
+      "n_log2_abs_minimal_discriminant": 351,
+      "n_log2_conductor": 169,
+      "n_phi_a_count": 169,
+      "n_phi_m_count": 169,
+      "root_number_known_count": 169,
+      "root_number_minus_one_count": 80,
+      "signature_known_count": 169,
+      "totally_real_count": 71
+    },
+    "21-22": {
+      "count": 125,
+      "improved_known_count": 42,
+      "median_bk_local_term": 6.0,
+      "median_bk_n": 5.0,
+      "median_field_ramified_prime_count": 7.0,
+      "median_forced_class_2rank_lower_from_known_rank": 15.0,
+      "median_log2_abs_field_discriminant": 371.0258525796976,
+      "median_log2_abs_minimal_discriminant": 453.2971107052953,
+      "median_log2_conductor": 381.79487844097423,
+      "median_phi_a_count": 1.0,
+      "median_phi_m_count": 4.0,
+      "n_bk_local_term": 63,
+      "n_bk_n": 63,
+      "n_field_ramified_prime_count": 63,
+      "n_forced_class_2rank_lower_from_known_rank": 63,
+      "n_log2_abs_field_discriminant": 63,
+      "n_log2_abs_minimal_discriminant": 125,
+      "n_log2_conductor": 63,
+      "n_phi_a_count": 63,
+      "n_phi_m_count": 63,
+      "root_number_known_count": 63,
+      "root_number_minus_one_count": 37,
+      "signature_known_count": 63,
+      "totally_real_count": 31
+    },
+    "23": {
+      "count": 25,
+      "improved_known_count": 5,
+      "median_bk_local_term": 7.0,
+      "median_bk_n": 5.0,
+      "median_field_ramified_prime_count": 6.0,
+      "median_forced_class_2rank_lower_from_known_rank": 16.0,
+      "median_log2_abs_field_discriminant": 376.06132809239415,
+      "median_log2_abs_minimal_discriminant": 460.62549530961815,
+      "median_log2_conductor": 390.4478873226416,
+      "median_phi_a_count": 1.0,
+      "median_phi_m_count": 4.0,
+      "n_bk_local_term": 15,
+      "n_bk_n": 15,
+      "n_field_ramified_prime_count": 15,
+      "n_forced_class_2rank_lower_from_known_rank": 15,
+      "n_log2_abs_field_discriminant": 15,
+      "n_log2_abs_minimal_discriminant": 25,
+      "n_log2_conductor": 15,
+      "n_phi_a_count": 15,
+      "n_phi_m_count": 15,
+      "root_number_known_count": 15,
+      "root_number_minus_one_count": 15,
+      "signature_known_count": 15,
+      "totally_real_count": 8
+    },
+    "24": {
+      "count": 4,
+      "improved_known_count": 1,
+      "median_bk_local_term": 9.0,
+      "median_bk_n": 7.0,
+      "median_field_ramified_prime_count": 3.0,
+      "median_forced_class_2rank_lower_from_known_rank": 15.0,
+      "median_log2_abs_field_discriminant": 383.0110392156953,
+      "median_log2_abs_minimal_discriminant": 460.93935252970505,
+      "median_log2_conductor": 411.834134203918,
+      "median_phi_a_count": 0.0,
+      "median_phi_m_count": 7.0,
+      "n_bk_local_term": 1,
+      "n_bk_n": 1,
+      "n_field_ramified_prime_count": 1,
+      "n_forced_class_2rank_lower_from_known_rank": 1,
+      "n_log2_abs_field_discriminant": 1,
+      "n_log2_abs_minimal_discriminant": 4,
+      "n_log2_conductor": 1,
+      "n_phi_a_count": 1,
+      "n_phi_m_count": 1,
+      "root_number_known_count": 1,
+      "root_number_minus_one_count": 0,
+      "signature_known_count": 1,
+      "totally_real_count": 1
+    },
+    "25+": {
+      "count": 1,
+      "improved_known_count": 0,
+      "median_bk_local_term": 9.0,
+      "median_bk_n": 7.0,
+      "median_field_ramified_prime_count": 5.0,
+      "median_forced_class_2rank_lower_from_known_rank": 16.0,
+      "median_log2_abs_field_discriminant": 353.7534793160878,
+      "median_log2_abs_minimal_discriminant": 459.5698199171877,
+      "median_log2_conductor": 375.46920340179815,
+      "median_phi_a_count": 1.0,
+      "median_phi_m_count": 5.0,
+      "n_bk_local_term": 1,
+      "n_bk_n": 1,
+      "n_field_ramified_prime_count": 1,
+      "n_forced_class_2rank_lower_from_known_rank": 1,
+      "n_log2_abs_field_discriminant": 1,
+      "n_log2_abs_minimal_discriminant": 1,
+      "n_log2_conductor": 1,
+      "n_phi_a_count": 1,
+      "n_phi_m_count": 1,
+      "root_number_known_count": 1,
+      "root_number_minus_one_count": 1,
+      "signature_known_count": 1,
+      "totally_real_count": 1
+    }
+  },
+  "correlation_pair_counts": {
+    "bk_local_term": {
+      "final": 898,
+      "followup": 898
+    },
+    "bk_n": {
+      "final": 898,
+      "followup": 898
+    },
+    "field_ramified_prime_count": {
+      "final": 898,
+      "followup": 898
+    },
+    "forced_class_2rank_lower_from_known_rank": {
+      "final": 898,
+      "followup": 898
+    },
+    "log2_abs_field_discriminant": {
+      "final": 898,
+      "followup": 898
+    },
+    "log2_abs_minimal_discriminant": {
+      "final": 2080,
+      "followup": 2080
+    },
+    "log2_conductor": {
+      "final": 898,
+      "followup": 898
+    },
+    "phi_a_count": {
+      "final": 898,
+      "followup": 898
+    },
+    "phi_m_count": {
+      "final": 898,
+      "followup": 898
+    }
+  },
+  "correlations": {
+    "spearman_bk_local_term_vs_final_lower_bound": 0.08879417032930183,
+    "spearman_bk_local_term_vs_followup_gain": 0.0425718081824931,
+    "spearman_bk_n_vs_final_lower_bound": 0.08111947590055946,
+    "spearman_bk_n_vs_followup_gain": 0.03903020870792238,
+    "spearman_field_ramified_prime_count_vs_final_lower_bound": 0.00802020131534974,
+    "spearman_field_ramified_prime_count_vs_followup_gain": -0.012989559752422426,
+    "spearman_forced_class_2rank_lower_from_known_rank_vs_final_lower_bound": 0.5158275978473649,
+    "spearman_forced_class_2rank_lower_from_known_rank_vs_followup_gain": 0.24719339392155684,
+    "spearman_log2_abs_field_discriminant_vs_final_lower_bound": -0.5351656498459106,
+    "spearman_log2_abs_field_discriminant_vs_followup_gain": -0.1463182492458879,
+    "spearman_log2_abs_minimal_discriminant_vs_final_lower_bound": -0.5046678621676092,
+    "spearman_log2_abs_minimal_discriminant_vs_followup_gain": -0.15119167432329272,
+    "spearman_log2_conductor_vs_final_lower_bound": -0.5487917045853692,
+    "spearman_log2_conductor_vs_followup_gain": -0.14816596990771258,
+    "spearman_phi_a_count_vs_final_lower_bound": -0.1187542977460234,
+    "spearman_phi_a_count_vs_followup_gain": -0.0528495005403055,
+    "spearman_phi_m_count_vs_final_lower_bound": 0.13426631121971905,
+    "spearman_phi_m_count_vs_followup_gain": 0.05193312753332603
+  },
+  "interpretation_boundary": "Rank values are certified lower bounds, not exact ranks. Follow-up gain is search-outcome data and is adaptively sampled. Correlations are descriptive only; no p-values or causal interpretation are claimed.",
+  "population_count": 2080,
+  "rank_lower_bound_counts": {
+    "17": 1241,
+    "18": 333,
+    "19": 209,
+    "20": 142,
+    "21": 79,
+    "22": 46,
+    "23": 25,
+    "24": 4,
+    "25": 1
+  },
+  "schema": "elliptic-curves.wide-arithmetic-profile.v1",
+  "stage_status_counts": {
+    "base": {
+      "PASS": 2080
+    },
+    "class": {},
+    "local": {
+      "PASS": 898,
+      "UNKNOWN_TIMEOUT": 1182
+    }
+  }
+}

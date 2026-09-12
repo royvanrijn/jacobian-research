@@ -1,0 +1,27 @@
+{
+  "curve_key": "b537972595960c790dab1bf4",
+  "input_sha256": "22af4b895f6716315f645dd53afdf9644bae1f70f743c96211a15fe405bb9972",
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/b537972595960c790dab1bf4.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/local/b537972595960c790dab1bf4.tmp.json",
+      "--mode",
+      "local",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "local",
+    "timeout_seconds": 180
+  },
+  "schema": "elliptic-curves.wide-arithmetic-local-controller.v1",
+  "status": "UNKNOWN_TIMEOUT",
+  "stderr_tail": "",
+  "timeout_seconds": 180,
+  "wall_seconds": 180.1143
+}

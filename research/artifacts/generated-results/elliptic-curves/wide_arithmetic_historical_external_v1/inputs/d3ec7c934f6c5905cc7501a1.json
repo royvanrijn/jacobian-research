@@ -1,0 +1,20 @@
+{
+  "ainvs": [
+    1,
+    0,
+    0,
+    -32856125399473211842388268920550481481461685620655,
+    50166999670818394109703619550634496881463755230595821387380798956334398777
+  ],
+  "cohort": "historical_external",
+  "curve_key": "d3ec7c934f6c5905cc7501a1",
+  "family": "11952",
+  "final_rank_lower_bound": 27,
+  "id": "new-20260906-48",
+  "improved_since_initial": null,
+  "initial_rank_lower_bound": null,
+  "local_search_rank_lower_bound": 27,
+  "rank_provenance": "LOCAL_POINT_SEARCH",
+  "selection_mode": "retrospective_known_high_rank",
+  "t": "2828/2015"
+}

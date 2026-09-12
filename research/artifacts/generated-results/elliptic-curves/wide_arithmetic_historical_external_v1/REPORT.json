@@ -1,0 +1,32 @@
+{
+  "arithmetic_replay_sha256": "cca0200059630e36c877e1a598592e8cd80fc0df1dfd72d599a8d5c4ed30e1b8",
+  "class_workers": 0,
+  "family_queue_sha256": "fa611efd53e6c4ea2165021d04239a13765b1f46092eee460ec9277625c7a823",
+  "historical_count": 5,
+  "historical_stage_counts": {
+    "base": {
+      "PASS": 5
+    },
+    "local": {
+      "PASS": 3,
+      "UNKNOWN_TIMEOUT": 2
+    }
+  },
+  "output_sha256": {
+    "SUMMARY.md": "a7f85dc22fdeba5bcb8ee6c0a82889beebe87effdc0dd32723d14e10ccde4278",
+    "comparison.csv": "e1e00662466a47e6b0e3aaeae572480ca2460e5f0dacd106088bcc10eb2fd10f",
+    "comparison.json": "5373c0d8b2e029eb36b68a540b0d6cf7fc86c006a4b17aba5a55853e4aec0463",
+    "historical_profiles.json": "978a20d13669048a0ca5f8652e0da638ccc0aae5eb7ae22bd4009a91c564456f",
+    "prospective_profiles.json": "ab7099fec0cea7287006b8dc83057fa686d62113c18b03b25dedb64e297d0f0c",
+    "prospective_summary.json": "7f5ec337a3635079ded36d1fae7118cadd792a99285fd75b14c9deb3e7a1a7cf"
+  },
+  "plan_sha256": "bd901aeb24ec8a79725101033952d94ab862879f41a67dd60a371d30b327cafd",
+  "point_searches_launched": 0,
+  "prospective_count": 2080,
+  "prospective_diagnostics_unchanged": true,
+  "prospective_files_unchanged": 9232,
+  "prospective_population_sha256": "963e6b5b42236c6ac49568f8e180a04c7025d0ae83e368d8c533e9564eb4b7f0",
+  "reporter_sha256": "0b6978643281b64ef0839120e108331693e39f5e79334b7038a4bab772c28075",
+  "schema": "elliptic-curves.historical-external-report.v1",
+  "status": "PASS_SEPARATE_COHORT_ANALYSIS"
+}

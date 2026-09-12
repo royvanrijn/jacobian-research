@@ -1,0 +1,47 @@
+base_status_counts,cohort,count,group,local_status_counts,max_bk_local_term,max_field_ramified_prime_count,max_forced_class_2rank_lower_from_known_rank,max_log2_abs_field_discriminant,max_log2_abs_minimal_discriminant,max_log2_conductor,max_phi_a_count,max_phi_m_count,median_bk_local_term,median_field_ramified_prime_count,median_forced_class_2rank_lower_from_known_rank,median_log2_abs_field_discriminant,median_log2_abs_minimal_discriminant,median_log2_conductor,median_phi_a_count,median_phi_m_count,min_bk_local_term,min_field_ramified_prime_count,min_forced_class_2rank_lower_from_known_rank,min_log2_abs_field_discriminant,min_log2_abs_minimal_discriminant,min_log2_conductor,min_phi_a_count,min_phi_m_count,n_bk_local_term,n_field_ramified_prime_count,n_forced_class_2rank_lower_from_known_rank,n_log2_abs_field_discriminant,n_log2_abs_minimal_discriminant,n_log2_conductor,n_phi_a_count,n_phi_m_count,root_known_count,root_minus_one_count,selection_mode,signature_known_count,totally_real_count
+"{
+  ""PASS"": 5
+}",historical_external,5,"Historical 11952, LB >=27","{
+  ""PASS"": 3,
+  ""UNKNOWN_TIMEOUT"": 2
+}",10,12,19,422.11693015445627,590.9841866152101,460.1869914370954,1,9,8.0,11.0,19.0,401.9528259212931,487.80638923337693,425.76923194551847,0.0,6.0,8,9,18,384.6774990717563,471.8333016094225,407.2223618308978,0,5,3,3,3,3,5,3,3,3,3,2,retrospective_known_high_rank,3,2
+"{
+  ""PASS"": 1
+}",prospective_broad_2080,1,"Broad 11952 @ 921/653, LB 25","{
+  ""PASS"": 1
+}",9,5,16,353.7534793160878,459.5698199171877,375.46920340179815,1,5,9.0,5.0,16.0,353.7534793160878,459.5698199171877,375.46920340179815,1.0,5.0,9,5,16,353.7534793160878,459.5698199171877,375.46920340179815,1,5,1,1,1,1,1,1,1,1,1,1,frozen_prospective,1,1
+"{
+  ""PASS"": 30
+}",prospective_broad_2080,30,Prospective LB >=23 tail,"{
+  ""PASS"": 17,
+  ""UNKNOWN_TIMEOUT"": 13
+}",9,10,20,411.085132462738,508.37933409095945,434.94266381329226,2,7,7.0,5.0,16.0,376.06132809239415,460.09765761340293,390.4478873226416,1.0,4.0,3,3,15,305.03766144147016,391.05363329458686,334.7390115869805,0,1,17,17,17,17,30,17,17,17,17,16,frozen_prospective,17,10
+"{
+  ""PASS"": 25
+}",prospective_broad_2080,25,Prospective LB 23,"{
+  ""PASS"": 15,
+  ""UNKNOWN_TIMEOUT"": 10
+}",8,10,20,411.085132462738,508.37933409095945,434.94266381329226,2,6,7.0,6.0,16.0,376.06132809239415,460.62549530961815,390.4478873226416,1.0,4.0,3,3,15,305.03766144147016,391.05363329458686,334.7390115869805,0,1,15,15,15,15,25,15,15,15,15,15,frozen_prospective,15,8
+"{
+  ""PASS"": 4
+}",prospective_broad_2080,4,Prospective LB 24,"{
+  ""PASS"": 1,
+  ""UNKNOWN_TIMEOUT"": 3
+}",9,3,15,383.0110392156953,482.7134298161762,411.834134203918,0,7,9.0,3.0,15.0,383.0110392156953,460.93935252970505,411.834134203918,0.0,7.0,9,3,15,383.0110392156953,445.9529006884053,411.834134203918,0,7,1,1,1,1,4,1,1,1,1,0,frozen_prospective,1,1
+"{
+  ""PASS"": 1
+}",prospective_broad_2080,1,Prospective LB 25,"{
+  ""PASS"": 1
+}",9,5,16,353.7534793160878,459.5698199171877,375.46920340179815,1,5,9.0,5.0,16.0,353.7534793160878,459.5698199171877,375.46920340179815,1.0,5.0,9,5,16,353.7534793160878,459.5698199171877,375.46920340179815,1,5,1,1,1,1,1,1,1,1,1,1,frozen_prospective,1,1
+"{
+  ""PASS"": 2080
+}",prospective_broad_2080,2080,Full prospective population,"{
+  ""PASS"": 898,
+  ""UNKNOWN_TIMEOUT"": 1182
+}",12,16,20,2749.411556786663,2932.7423130944912,2789.2810705128595,5,10,5.0,6.0,12.0,405.90579003529524,484.4978147291397,420.21104369433954,1.0,3.0,1,1,5,241.10529346796568,328.0598458737621,270.8905376890575,0,0,898,898,898,898,2080,898,898,898,898,455,frozen_prospective,898,368
+"{
+  ""PASS"": 320
+}",prospective_broad_2080,320,Prospective 11952 only (same-family diagnostic),"{
+  ""PASS"": 145,
+  ""UNKNOWN_TIMEOUT"": 175
+}",10,13,20,482.62140471956565,539.268377958471,492.6247198000257,4,7,6.0,6.0,12.0,408.86437906444274,480.21617536942745,423.4552566080825,1.0,3.0,2,1,9,276.6444940138734,378.0185151987605,298.0870966354237,0,0,145,145,145,145,320,145,145,145,145,74,frozen_prospective,145,59

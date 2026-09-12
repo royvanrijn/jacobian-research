@@ -2,8 +2,10 @@
 
 The subsequent [completed-wide-population arithmetic profile](WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
 extends the equation-only lane to all 2,080 fibres under a separately authorized
-fixed budget. Its BASE+LOCAL census is running; CLASS is off. The finite
-three-lane results below are unchanged, not superseded by an unfinished census.
+fixed budget. It is complete: BASE2,080 PASS; LOCAL898 PASS and1,182 UNKNOWN
+timeouts. A separate retrospective historical11952 panel has three LOCAL passes
+and two timeouts and never enters prospective statistics. CLASS is off. The
+finite three-lane results below remain separate from the completed census.
 
 ## Result and boundary
 

@@ -1,9 +1,60 @@
 # Wide-search equation-only arithmetic profile
 
-Status: **six-worker BASE+LOCAL census launched after Sage commissioning**. The attached
-patch was applied as commit `604528fa`. The source is the completed
+Status: **census complete; separate historical controls complete; final checks PASS**.
+The attached patch was applied as commit `604528fa`. The source is the completed
 `artifacts/local/elliptic-curves/broad-rank-v1` campaign, not the earlier live
-triangle snapshot. No full arithmetic-population result is claimed yet.
+triangle snapshot. BASE has 2,080 PASS checkpoints; LOCAL has 898 PASS and
+1,182 UNKNOWN_TIMEOUT checkpoints. CLASS remains off and no point searches
+were launched. Completion means every requested worker has a checkpoint,
+not that all local arithmetic succeeded.
+
+The [final comparison report](../../artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/SUMMARY.md)
+adds a separate retrospective panel without changing the original census.
+All five inventory 11952 fibres with certified lower bound at least27 are
+included. Existing rank certificates, specialization isomorphisms and point
+transports replay exactly. All five BASE workers pass; LOCAL gives:
+
+| 11952 parameter | Certified rank lower bound | LOCAL | u+n |
+| --- | --- | --- | --- |
+| -2448/11 | 27 | PASS | 8 |
+| 2012/211 | 27 | UNKNOWN_TIMEOUT | UNKNOWN |
+| 2828/2015 | 27 | PASS | 8 |
+| 4286/1881 | 27 | UNKNOWN_TIMEOUT | UNKNOWN |
+| 110314/102227 | 28 | PASS | 10 |
+
+The last entry is a public-point reproduction; its original local-search
+bound remains27. The three completed LOCAL rows replay via integral-monic
+2-division equations, certified PARI maximal orders, prime-factor proofs and
+exact local reductions. This is a separate replay path sharing Sage/PARI,
+not an independent full descent. The two timeouts are not retried or filled
+from pre-existing conductor certificates.
+
+Completed-case median u+n is8 for the historical panel (3/5 known),9 for
+broad11952@921/653 (1/1),7 for the prospective >=23 tail (17/30),5 for the
+full prospective population (898/2080), and6 for prospective11952 alone
+(145/320). Historical median log2|D_K| is401.953 versus376.061 in the tail;
+median ramified-prime counts are11 versus5. These are selected, censored
+descriptive comparisons, not independent samples or exact ranks.
+
+The unchanged prospective u+n Spearman correlation with final rank lower
+bound is0.0888 (898 completed pairs); log2|D_K| and log2 conductor correlations
+are -0.5352 and -0.5488. The local term alone does not sharply separate the
+known high-rank controls. Neither that observation nor the stronger size
+associations locate a missing signal in the unknown class-group term g.
+
+The new labeled analysis views use exactly:
+
+* `prospective_broad_2080` / `frozen_prospective` for existing broad rows;
+* `historical_external` / `retrospective_known_high_rank` for historical rows.
+
+The historical workers call the unchanged census controller and worker with
+the same schema, Sage version, BASE60s/LOCAL180s and memory policy, with at
+most two concurrent workers. No known points or factorization hints enter
+arithmetic. Historical rows never enter the2,080 population, frozen control
+selection, prospective correlations or population histograms. All9,232
+existing census file hashes and its file set are unchanged, including launch
+state, frozen inputs/sources and aggregate outputs. Labels live in the new
+final-analysis views, not edits to the original frozen rows.
 
 The bound census has 2,080 distinct equations, final tail `23=25,24=4,25=1`,
 and 157 follow-up improvements. Every initial rank is bound to its actual
@@ -13,7 +64,7 @@ calculation. The frozen [plan](../../artifacts/local/elliptic-curves/wide-arithm
 records all 9,185 referenced input/receipt hashes.
 
 The [three-fibre smoke replay](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/SMOKE_VALIDATION.json)
-passes all three BASE transports/cubic identities. Two LOCAL rows complete
+passed all three BASE transports/cubic identities. Two LOCAL rows completed
 with Brumer–Kramer local terms 8 and 6, and replay through the integral monic
 2-division polynomial, certified PARI maximal order, and local reductions.
 The third LOCAL row timed out at 180 seconds and remains UNKNOWN. These are
@@ -21,14 +72,13 @@ not three successful local computations or a representative tail result.
 
 The [detached launch receipt](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/launch.json)
 records six workers, BASE 60 seconds and LOCAL 180 seconds per curve. The
-controller reuses all six smoke checkpoints, including the timeout. CLASS
-is disabled, and no point searches are launched. After the full census the
-detached wrapper runs `check`; the checker was already tested to reject the
-partial smoke. Live progress is in `/tmp/wide-arithmetic-profile.log` and
-the stage directories. `SUMMARY.md` is still the partial smoke summary until
-the full controller finishes or `summarize` is explicitly invoked.
+controller reused all six smoke checkpoints, including the timeout. The
+detached wrapper's final `check` passed; a fresh read-only replay also passes.
+The retained log is `/tmp/wide-arithmetic-profile.log`; the original
+[SUMMARY.md](../../artifacts/local/elliptic-curves/wide-arithmetic-profile-v1/SUMMARY.md)
+now reports the complete checkpoint population, not the earlier smoke.
 
-While workers are active, use the race-free observer from the repository root:
+The read-only race-free observer remains available from the repository root:
 
 ```sh
 python3 research/elliptic-curves/cas/status_wide_arithmetic_profile.py
@@ -38,6 +88,30 @@ The original `status` glob can see a worker's transient `*.tmp.json` file and
 race its removal. This observer reads only the frozen population's final
 checkpoint names. It leaves the active arithmetic sources and their hashes
 unchanged; the post-completion checker has no concurrent worker files.
+
+## Separate historical panel reproduction
+
+The panel is already prepared and completed. Preparation refuses an existing
+folder; `run` reuses every final checkpoint, including UNKNOWN. Ordinary
+regressions total33 PASS (18 original/integration plus15 new isolation tests).
+From the repository root:
+
+```sh
+python3 research/elliptic-curves/cas/historical_external_arithmetic.py check
+timeout 180 sage -python research/elliptic-curves/cas/verify_historical_external_arithmetic.sage
+python3 research/elliptic-curves/cas/report_historical_external_arithmetic.py check
+PYTHONPATH=research/elliptic-curves/cas python3 -m unittest discover \
+  -s research/elliptic-curves/tests -p test_historical_external_arithmetic.py -v
+```
+
+For a deliberate reproduction in a new output directory, the sequence is
+`historical_external_arithmetic.py prepare`, `run --jobs 2`, the bounded Sage
+replay, then `report_historical_external_arithmetic.py report`; pass the same
+fresh `--output` to each command. The plan freezes the whole445-row selection
+roster, selected rank evidence, source hashes, per-stage budgets and original
+census file hashes before arithmetic. Arithmetic inputs contain equations and
+metadata only. The report checker byte-rebuilds every new aggregate and checks
+that the original prospective statistics are unchanged.
 
 This controller turns the completed wide R17 specialization search into a frozen
 arithmetic census.  It does **not** launch rational-point searches and it does

@@ -1,0 +1,290 @@
+{
+  "additive_split_counts": [],
+  "bk_applicable": true,
+  "bk_local_term": 8,
+  "bk_n": 6,
+  "bk_u": 2,
+  "conductor": "385607805404546669757702543986640850533250291865584023383775058428481038963318413094656176510273957729702535113365122962530",
+  "curve_key": "08345c1613d0304a0a8b39af",
+  "field_discriminant": "63018183083244651623047362490606129666234739674366181163358145575263353427460493901493211690808745888725319230581720",
+  "field_ramified_prime_count": 11,
+  "field_ramified_primes": [
+    "2",
+    "5",
+    "229",
+    "11483",
+    "1015067",
+    "1185749",
+    "11359109",
+    "28592101",
+    "2613768493918386139",
+    "8789417427421464766489779706511",
+    "66712930379907104512639308779323"
+  ],
+  "field_signature": [
+    3,
+    0
+  ],
+  "input_sha256": "ff49d7903e5d27ae4b4053ab1e87b3f5a005dd999ed2c2c9ac9ffa07ef80ec59",
+  "local_data": [
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I15",
+      "p": "2",
+      "root_number": -1,
+      "v_delta": 15
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I10",
+      "p": "3",
+      "root_number": -1,
+      "v_delta": 10
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I7",
+      "p": "5",
+      "root_number": -1,
+      "v_delta": 7
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "13",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I4",
+      "p": "17",
+      "root_number": -1,
+      "v_delta": 4
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "19",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "29",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "67",
+      "root_number": -1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "229",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "11483",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1015067",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1185749",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "11359109",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "28592101",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "2613768493918386139",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "8789417427421464766489779706511",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "66712930379907104512639308779323",
+      "root_number": 1,
+      "v_delta": 1
+    }
+  ],
+  "log2_abs_field_discriminant": 384.6774990717563,
+  "log2_conductor": 407.2223618308978,
+  "minimal_discriminant_factorization": [
+    [
+      "2",
+      15
+    ],
+    [
+      "3",
+      10
+    ],
+    [
+      "5",
+      7
+    ],
+    [
+      "13",
+      2
+    ],
+    [
+      "17",
+      4
+    ],
+    [
+      "19",
+      2
+    ],
+    [
+      "29",
+      2
+    ],
+    [
+      "67",
+      2
+    ],
+    [
+      "229",
+      1
+    ],
+    [
+      "11483",
+      1
+    ],
+    [
+      "1015067",
+      1
+    ],
+    [
+      "1185749",
+      1
+    ],
+    [
+      "11359109",
+      1
+    ],
+    [
+      "28592101",
+      1
+    ],
+    [
+      "2613768493918386139",
+      1
+    ],
+    [
+      "8789417427421464766489779706511",
+      1
+    ],
+    [
+      "66712930379907104512639308779323",
+      1
+    ]
+  ],
+  "phi_a": [],
+  "phi_a_count": 0,
+  "phi_m": [
+    "3",
+    "13",
+    "17",
+    "19",
+    "29",
+    "67"
+  ],
+  "phi_m_count": 6,
+  "rational_2torsion_rank": 0,
+  "root_number": -1,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/08345c1613d0304a0a8b39af.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/local/08345c1613d0304a0a8b39af.tmp.json",
+      "--mode",
+      "local",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "local",
+    "timeout_seconds": 180
+  },
+  "schema": "elliptic-curves.wide-arithmetic-local.v1",
+  "status": "PASS",
+  "wall_seconds": 21.426525
+}

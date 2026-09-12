@@ -1,0 +1,74 @@
+{
+  "boundary": "Exact BASE identities, certified integral-monic maximal orders and reductions for completed LOCAL rows. Shared Sage/PARI, not independent full descent. UNKNOWN unchanged. No point searches or class groups.",
+  "checker_sha256": "0bf5601ac012b71b9d3e62cc71512c4bbdc5c14ab77e5176f2ebdd2e6b68de6f",
+  "checkpoint_sha256": {
+    "base/08345c1613d0304a0a8b39af.json": "ea49a17bf3093251fdfa2a5b0f7ea2c45f1a6af07f9f8614fb2a4da865fa0d59",
+    "base/0c150cb544319c5994686201.json": "41c8bf91a8a558c3ca0190cab143fbb375e651057d1aa94e00cc3355f8ebd03c",
+    "base/3aaacd8b380c5a90474408a6.json": "c940af451973fed9500b723e7cc0fc6f816fbc5d9985dff9fa672331c81222f0",
+    "base/b537972595960c790dab1bf4.json": "96daa81a51ce252397bdeb8b364a54c5e0d1cd2dbc480d677001b3b209f3789a",
+    "base/d3ec7c934f6c5905cc7501a1.json": "3c24fc02d6e772f3c2166395843ee859ba8cf1182c7edc6fd1914ec5435e66c5",
+    "inputs/08345c1613d0304a0a8b39af.json": "ff49d7903e5d27ae4b4053ab1e87b3f5a005dd999ed2c2c9ac9ffa07ef80ec59",
+    "inputs/0c150cb544319c5994686201.json": "fa180c10ed705b00c7a0b9eca50f69da80382da986e49bcc61ed4f0785d16f9f",
+    "inputs/3aaacd8b380c5a90474408a6.json": "141e2bc88305195b6b82c52b2e694bc4a2d91f8dcacfa0f1e93e4112770e018e",
+    "inputs/b537972595960c790dab1bf4.json": "22af4b895f6716315f645dd53afdf9644bae1f70f743c96211a15fe405bb9972",
+    "inputs/d3ec7c934f6c5905cc7501a1.json": "341a35b0c8635c58caf22d3c5712c65103404dba89e61e5c4c3270d012ca8ed2",
+    "local/08345c1613d0304a0a8b39af.json": "5410890901d65d06b9c73ccfc6071cfa6f49bcc2b296ad7ea13ec9c1e977e1af",
+    "local/0c150cb544319c5994686201.json": "46de2c7ff19b14a8b11d1f983f693af68a1ccfcc8715eb1e742d6b996f49a83a",
+    "local/3aaacd8b380c5a90474408a6.json": "0680b7ea9e5b0c68bdb4d8cbae4c2077c9bb20709d9b489cb3ba243c36c2ca3f",
+    "local/b537972595960c790dab1bf4.json": "62fa68a6b96b4020ebaa49d33bcf76f75057fe374a597bf179231625a8902cef",
+    "local/d3ec7c934f6c5905cc7501a1.json": "2af8ac494bd290735f76e4483df91e95d55f1925693dc83ae2de971992af64d1"
+  },
+  "rows": [
+    {
+      "base": "PASS",
+      "bk_local_term": 8,
+      "certified_maximal_order": "PASS",
+      "cohort": "historical_external",
+      "curve_key": "08345c1613d0304a0a8b39af",
+      "local": "PASS",
+      "local_replay": "PASS",
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "-2448/11"
+    },
+    {
+      "base": "PASS",
+      "bk_local_term": 10,
+      "certified_maximal_order": "PASS",
+      "cohort": "historical_external",
+      "curve_key": "3aaacd8b380c5a90474408a6",
+      "local": "PASS",
+      "local_replay": "PASS",
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "110314/102227"
+    },
+    {
+      "base": "PASS",
+      "bk_local_term": 8,
+      "certified_maximal_order": "PASS",
+      "cohort": "historical_external",
+      "curve_key": "d3ec7c934f6c5905cc7501a1",
+      "local": "PASS",
+      "local_replay": "PASS",
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "2828/2015"
+    },
+    {
+      "base": "PASS",
+      "cohort": "historical_external",
+      "curve_key": "0c150cb544319c5994686201",
+      "local": "UNKNOWN_TIMEOUT",
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "4286/1881"
+    },
+    {
+      "base": "PASS",
+      "cohort": "historical_external",
+      "curve_key": "b537972595960c790dab1bf4",
+      "local": "UNKNOWN_TIMEOUT",
+      "selection_mode": "retrospective_known_high_rank",
+      "t": "2012/211"
+    }
+  ],
+  "schema": "elliptic-curves.historical-external-arithmetic-replay.v1",
+  "status": "PASS_EXISTING_CHECKPOINT_REPLAY"
+}

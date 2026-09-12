@@ -1,0 +1,291 @@
+{
+  "additive_split_counts": [],
+  "bk_applicable": true,
+  "bk_local_term": 10,
+  "bk_n": 9,
+  "bk_u": 1,
+  "conductor": "3389128510548161319756016765334023590717644951355796487807190277570543774230467803189406795413101608614781556190293416559648058753190270430",
+  "curve_key": "3aaacd8b380c5a90474408a6",
+  "field_discriminant": "-11745125294215423944325119488871324777516375948433450278279447283566896380111330979951999442580389905547198082316321948728965860",
+  "field_ramified_prime_count": 9,
+  "field_ramified_primes": [
+    "2",
+    "5",
+    "13",
+    "19",
+    "37",
+    "2309",
+    "146750759902520012671",
+    "174361184822160214729",
+    "1087614221970164994197309267684770841847552381021820065017808837975906824362877"
+  ],
+  "field_signature": [
+    1,
+    1
+  ],
+  "input_sha256": "141e2bc88305195b6b82c52b2e694bc4a2d91f8dcacfa0f1e93e4112770e018e",
+  "local_data": [
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I18",
+      "p": "2",
+      "root_number": -1,
+      "v_delta": 18
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I12",
+      "p": "3",
+      "root_number": -1,
+      "v_delta": 12
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I7",
+      "p": "5",
+      "root_number": -1,
+      "v_delta": 7
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I6",
+      "p": "7",
+      "root_number": -1,
+      "v_delta": 6
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "11",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I5",
+      "p": "13",
+      "root_number": -1,
+      "v_delta": 5
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "17",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I3",
+      "p": "19",
+      "root_number": -1,
+      "v_delta": 3
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I3",
+      "p": "37",
+      "root_number": -1,
+      "v_delta": 3
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "41",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "107",
+      "root_number": -1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "139",
+      "root_number": -1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I2",
+      "p": "241",
+      "root_number": 1,
+      "v_delta": 2
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "2309",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "146750759902520012671",
+      "root_number": 1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "174361184822160214729",
+      "root_number": -1,
+      "v_delta": 1
+    },
+    {
+      "conductor_exponent": 1,
+      "cubic_prime_count": null,
+      "kind": "multiplicative",
+      "kodaira": "I1",
+      "p": "1087614221970164994197309267684770841847552381021820065017808837975906824362877",
+      "root_number": 1,
+      "v_delta": 1
+    }
+  ],
+  "log2_abs_field_discriminant": 422.11693015445627,
+  "log2_conductor": 460.1869914370954,
+  "minimal_discriminant_factorization": [
+    [
+      "2",
+      18
+    ],
+    [
+      "3",
+      12
+    ],
+    [
+      "5",
+      7
+    ],
+    [
+      "7",
+      6
+    ],
+    [
+      "11",
+      2
+    ],
+    [
+      "13",
+      5
+    ],
+    [
+      "17",
+      2
+    ],
+    [
+      "19",
+      3
+    ],
+    [
+      "37",
+      3
+    ],
+    [
+      "41",
+      2
+    ],
+    [
+      "107",
+      2
+    ],
+    [
+      "139",
+      2
+    ],
+    [
+      "241",
+      2
+    ],
+    [
+      "2309",
+      1
+    ],
+    [
+      "146750759902520012671",
+      1
+    ],
+    [
+      "174361184822160214729",
+      1
+    ],
+    [
+      "1087614221970164994197309267684770841847552381021820065017808837975906824362877",
+      1
+    ]
+  ],
+  "phi_a": [],
+  "phi_a_count": 0,
+  "phi_m": [
+    "2",
+    "3",
+    "7",
+    "11",
+    "17",
+    "41",
+    "107",
+    "139",
+    "241"
+  ],
+  "phi_m_count": 9,
+  "rational_2torsion_rank": 0,
+  "root_number": 1,
+  "runtime": {
+    "command": [
+      "/home/royvanrijn/.local/bin/sage",
+      "-python",
+      "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/wide_arithmetic_worker.sage",
+      "--input",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/inputs/3aaacd8b380c5a90474408a6.json",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/research/artifacts/generated-results/elliptic-curves/wide_arithmetic_historical_external_v1/local/3aaacd8b380c5a90474408a6.tmp.json",
+      "--mode",
+      "local",
+      "--memory-gb",
+      "0.0"
+    ],
+    "memory_gb": 0.0,
+    "mode": "local",
+    "timeout_seconds": 180
+  },
+  "schema": "elliptic-curves.wide-arithmetic-local.v1",
+  "status": "PASS",
+  "wall_seconds": 86.486955
+}
