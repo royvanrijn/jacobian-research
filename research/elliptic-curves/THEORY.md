@@ -457,6 +457,8 @@ partial sum gives
 is `18 x 17` of rank 17, and the reduced 2-division cubic at `p=31` has no
 root.  These are exact, portable rank-lower-bound certificates, but none
 reaches rank 21: four further independent points are still required.
+The retained [rank-17 certificate](../artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json)
+is the exact finite-reduction payload for this bounded frontier.
 
 **Exact generic companion audit.**  Solving symbolically for all polynomial
 sections with `x=mT+n` and `deg(y)<=3`, up to changing the sign of `y`, finds
@@ -497,7 +499,9 @@ is an isomorphism over `Q` to an integral short model.  Reductions at
 give a stacked `F_2` matrix of column rank 29.  The short 2-division cubic has
 no root modulo 67, so `E(Q)[2]=0`; the finite-reduction lemma above proves the
 29 points independent unconditionally.  The published claim that the exact
-rank is 29 assumes GRH and is not used here.
+rank is 29 assumes GRH and is not used here.  The retained
+[rank-29 certificate](../artifacts/generated-results/elliptic-curves/elliptic_elkies_klagsbrun_rank29_certificate.json)
+is the exact public-point and finite-reduction payload.
 
 A bounded search on the fiber completed two 1,647-chart manifests.  The
 deeper manifest searched 406 affine abscissa-pair charts, 812 oriented
@@ -705,7 +709,9 @@ of unity, while the other four are not.  Hence `rho(S/Qbar)<=18` and
 
 This last interval does not assert that a thirteenth geometric section exists.
 In particular, there is no missing thirteenth section over `Q(T)`; the search
-must exploit specialization rank jumps.
+must exploit specialization rank jumps.  The retained
+[Picard-bound certificate](../artifacts/generated-results/elliptic-curves/elliptic_nagao_section7_picard_bound.json)
+carries the finite-field counts and factor reconstruction used here.
 
 The strongest such jump currently certified is Nagao's paper parameter
 `t=5081/94`, constructor parameter `T=5081/47`.  Exact finite-reduction
@@ -723,7 +729,9 @@ points, all exactly dependent in the same rank-20 subgroup.  Separately, a
 sharpened explicit-formula computation gives a conservative bound below 22;
 with root number `+1`, GRH implies analytic rank at most 20, and BSD+GRH would
 make the algebraic rank exactly 20.  That conditional closure is useful for
-search allocation but is not an unconditional upper bound.
+search allocation but is not an unconditional upper bound.  The retained
+[rank-20 certificate](../artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json)
+contains the exact point and finite-reduction evidence.
 
 The fixed fiber also suggests a more general search-space construction.  After
 removing the twenty-one known generic quartic abscissas, its bounded point pool
@@ -799,6 +807,8 @@ certificate is a stronger replay of the benchmark, not a target hit.  The
 strict comparison is exact as well: a rational exponential-series bound gives
 `e<1359141/500000`, and direct integer arithmetic verifies
 `1359141^4568 < 500000^4568*N^25`, hence `ln N>4568/25=182.72`.
+The retained [rank-22 certificate](../artifacts/generated-results/elliptic-curves/elliptic_fermigier_rank22_points.json)
+is the exact point-transport and finite-reduction payload.
 
 The same accidental-slice construction is especially natural here because
 the benchmark is so close to the conductor boundary.  An exact

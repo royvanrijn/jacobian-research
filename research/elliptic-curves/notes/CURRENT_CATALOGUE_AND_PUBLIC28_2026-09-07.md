@@ -1,8 +1,10 @@
-# Current catalogue matches and a public28 reproduction
+# Dated 620-entry catalogue comparison and a public28 reproduction
 
-For the active database view and new recovery controls, use the
-[current ICARM index](CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md).
-This note retains the original 620-entry comparison and public28 proof.
+This note retains the original 620-entry comparison and public28 proof. Its
+catalogue and V20 counts are historical snapshot data. Use the generated
+[current inventory](../INVENTORY.md) for present repository totals and the
+[ICARM snapshot/control record](CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md)
+for its later 626/630 evidence.
 
 **Later publication update:** the
 [626-entry comparison](ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
@@ -34,8 +36,9 @@ The snapshot records entry600 at2026-09-06 15:45:21 and entry619
 at2026-09-06 22:22:59. These are reported submission times, not a proof of
 first-discovery priority. The old593-equation absence claims remain true
 for that snapshot. Present-day claims must acknowledge these two matches.
-The inventory remains a collection of distinct equations and valid point
-certificates; it must not be described as200 currently catalogue-absent curves.
+The V20 inventory remains a collection of distinct equations and valid point
+certificates; it must not be described as200 catalogue-absent curves beyond
+this snapshot.
 Absence from the larger catalogue still does not establish universal novelty.
 
 ## Independent reproduction of the public28 points

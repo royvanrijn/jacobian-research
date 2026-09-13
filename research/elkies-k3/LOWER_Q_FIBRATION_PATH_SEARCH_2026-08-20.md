@@ -1,4 +1,9 @@
-# Lower-q fibration path search (2026-08-20)
+# Lower-q fibration path search (2026-08-20, historical)
+
+This bounded lattice-search record is retained for its exact frames and
+non-exhaustive-search boundary. It is not the current construction queue. Use
+the [programme map](README.md) for selected equation-side entry points and the
+[process atlas](ELKIES_K3_PROCESS_ATLAS.md) for later route choices.
 
 ## Status
 
@@ -169,7 +174,7 @@ A10 MW Gram up to a basis sign, so they are genuine nef return loops rather
 than reductions to a better frame. Replay the chamber certificate with
 [`scripts/analyze_a13_q8_neighbors.sage`](scripts/analyze_a13_q8_neighbors.sage).
 
-## Reproduction
+## Historical reproduction (not a current work request)
 
 The generalized discovery driver now accepts an arbitrary frame, suppresses
 unit-factor rediscoveries, can cap retained representatives per root invariant,

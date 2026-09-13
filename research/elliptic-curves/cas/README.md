@@ -12,6 +12,7 @@ current repository inventory.
 | Understand calibrated V3 | [Exact rule and calibration](../notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer outcomes](../notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
 | Reuse performance improvements | [Lean maps, cached continuation and box deduplication](../notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md) |
 | Certify or interpret ranks | [Stable commands](../scripts/README.md) · [replay reference](../REPRODUCE.md) |
+| Replay the three retained six-fibre cohorts | [37 subgroup witnesses and replay boundaries](../notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md#retained-rank-replay) · [small checker](verify_fresh6_retained_ranks.py) |
 | Recover Curve398's source | [Recovery and equivalent MW16 presentations](../notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) |
 | Use the corrected Mestre/Fermigier labels | [Coherent-label audit and historical failure](../notes/PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md) |
 | Reuse the broad completed search | [Curve ledger](../notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md) · [rank22 additions](../notes/BROAD_RANK22_CURVE_LEDGER_2026-09-12.md) |

@@ -27,6 +27,10 @@ checks all six families. Four choose the original square. Only `08234` and
 weighted bound. This is a worst-case coefficient bound, not minimal
 arithmetic height or a rank predictor.
 
+The shared [skew/endpoint evidence](../../artifacts/generated-results/elliptic-curves/skew_endpoint_evidence_v1.json)
+and [portable replay](../../artifacts/generated-results/elliptic-curves/skew_endpoint_portable_replay_v1.json)
+bind the combined isolated checks used by this audit.
+
 At `H = 32768`, the new rectangles are:
 
 | Family | Numerator bound | Denominator bound | Chosen k |

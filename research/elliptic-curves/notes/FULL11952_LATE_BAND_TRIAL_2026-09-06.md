@@ -1,4 +1,9 @@
-# A new27-point curve from the second-prime-band trial
+# Historical second-prime-band trial: two new inventory curves
+
+> **Current-boundary note (2026-09-13).** This completed dated trial retains
+> its certificates, frozen roster and selection controls as evidence. It does
+> not select a further campaign; prospective work starts from the current
+> [elliptic-curve programme map](../README.md).
 
 **Completed: two new inventory curves, with certified lower bounds27 and26.**
 
@@ -24,7 +29,8 @@ unreviewed. The [V15 inventory](../../artifacts/generated-results/elliptic-curve
 contains189 distinct curves, including eight with lower bound27 and seventeen
 with lower bound26. All189 exact point certificates and the CSV replay.
 
-The next parameter campaign is the [three-band MW16 experiment](MW16_OUTER_PARAMETER_BANDS_2026-09-06.md).
+The former three-band MW16 follow-up is retained separately as completed
+historical evidence; this note does not authorize another parameter campaign.
 
 The completed [full11952 cohort](FULL11952_RETENTION_TRIAL_2026-09-06.md)
 has scalar traces in a32771..65521 band that did not enter its selection.

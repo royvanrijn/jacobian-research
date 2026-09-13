@@ -207,7 +207,7 @@
     },
     {
       "surface_id": "K3-d1b1381f87d69f1c",
-      "classification": "ARITHMETICALLY_EXCLUDED",
+      "classification": "UNKNOWN",
       "certificates": [
         {
           "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
@@ -229,42 +229,85 @@
               "equals": 23
             }
           ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_STABLE_REFLECTION_OUTSIDE_RATIONAL_NORM_ONE_IMAGE"
+            },
+            {
+              "path": "surface_id",
+              "equals": "K3-d1b1381f87d69f1c"
+            },
+            {
+              "path": "projective_spin_determinant",
+              "equals": 37
+            },
+            {
+              "path": "reflection",
+              "equals": [
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  4,
+                  1,
+                  -1
+                ]
+              ]
+            }
+          ]
         }
       ],
       "full_marking_curve": {
-        "status": "PARTIAL_ABSTRACT_FULL_MARKING_COVER_OF_EXACT_NORM_ONE_CURVE",
-        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "status": "UNKNOWN_FULL_STABLE_PERIOD_GROUP_AND_QQ_MODEL",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T)), acting projectively",
         "explicit_model": null,
-        "boundary": "The stable marked curve maps to the exact norm-one fibre product; an equation for the full cover is not needed for the obstruction."
-      },
-      "easy_quotient_maps": [
-        {
-          "status": "PASS_EXACT_SPLIT_CLIFFORD_NORM_ONE_CURVE",
-          "source": "full NS0031 marking curve",
-          "target": "X_ns(4) x_{X(1)} X_0(37)",
-          "target_genus": 23,
-          "target_model": null
-        },
-        {
-          "status": "PASS_EXACT_FORGET_LEVEL_4_MAP",
-          "source": "X_ns(4) x_{X(1)} X_0(37)",
-          "target": "X_0(37)",
-          "target_genus": 2,
-          "target_model": null
+        "boundary": "The stable root reflection is projectively represented by a determinant37 normalizer element, outside rational norm-one units. The previously asserted period-induced map to the norm-one Cartan fibre product is invalid.",
+        "coarse_norm_one_curve": {
+          "status": "PASS_EXACT_NORM_ONE_CURVE_ONLY",
+          "group": "Gamma_ns(4) intersect Gamma_0(37)",
+          "label": "X_ns(4) x_{X(1)} X_0(37)",
+          "genus": 23,
+          "index": 304,
+          "cusps": 4,
+          "cusp_widths": [
+            4,
+            4,
+            148,
+            148
+          ],
+          "boundary": "Exact norm-one arithmetic; the full stable period group is not contained in this group."
         }
-      ],
+      },
+      "easy_quotient_maps": [],
       "arithmetic_tests": [
         {
           "status": "PASS_EXACT_FROBENIUS_LIFT_EXCLUSION",
           "method": "Vélu classification followed by the mod-4 Frobenius test at 19",
           "conclusion": "Both noncuspidal QQ-points of X_0(37) have (trace,determinant)=(2,3) modulo 4 and do not lift to the unramified non-split Cartan curve, even after quadratic twist."
+        },
+        {
+          "status": "PASS_STABLE_REFLECTION_OUTSIDE_RATIONAL_NORM_ONE_IMAGE",
+          "method": "Exact integral reflection, discriminant action, positive-plane and Clifford adjoint identities",
+          "conclusion": "The old group-containment step is false. Rational NS0031 marking existence remains UNKNOWN."
         }
       ],
-      "decision": "The exact norm-one fibre product has no noncuspidal rational point, so the full rational NS0031 marking cannot exist.",
+      "decision": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
       "theorem_inputs": [
-        "Vélu's determination of X_0(37)(QQ)",
-        "the standard marked-K3 ternary-spin period correspondence"
-      ]
+        "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
+        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice"
+      ],
+      "next_arithmetic_gate": "Determine the full stable projective period group, its correct QQ model and rational non-CM points, or supply an independent arithmetic obstruction. Retain determinant-minus-one stable isometries; do not reconstruct the formal branch or launch equations from this correction."
     },
     {
       "surface_id": "K3-04b86146cc6b284b",

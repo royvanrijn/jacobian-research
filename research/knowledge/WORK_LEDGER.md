@@ -4,23 +4,24 @@
 
 Mathematical states come from [MATH_STATUS.json](../MATH_STATUS.json). This ledger makes remaining obligations and suggested next steps discoverable. **All actions are unscheduled**; a work item does not authorize a search or replay.
 
-There are **3 open problems**, **78 partial results** and **3 parked problems** in elliptic curves and supporting K3 work. The 14 active work proposals include shared repository maintenance. The 22 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
+There are **3 open problems**, **79 partial results** and **4 parked problems** in elliptic curves and supporting K3 work. The 15 active work proposals include shared repository maintenance. The 22 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
 
 Start with the exact source and [method lessons](ALGORITHMS.md). The proposals summarize a useful next gate; they do not replace the full scope. Partial-result rows guarantee coverage, while the [source-level partial review](PARTIAL_REVIEW.md) records inspected obligations and explicitly lists the unreviewed remainder. A parked replacement can retire a route without proving its original statement.
 
 | Area | Open | Partial | Parked | Proposals |
 |---|---:|---:|---:|---:|
 | [Keller core, cancellation and arithmetic](work/core.md) | 0 | 0 | 0 | 4 |
-| [Elliptic curves and rank jumps](work/elliptic-curves.md) | 2 | 7 | 2 | 4 |
-| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 1 | 71 | 1 | 6 |
+| [Elliptic curves and rank jumps](work/elliptic-curves.md) | 1 | 7 | 3 | 4 |
+| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 2 | 72 | 1 | 7 |
 
 ## Suggested starting points
 
 | Action | Remaining gate |
 |---|---|
-| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Design a prospective rank-jump test from completed evidence |
+| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Test whether certified coordinate coverage improves CPU to the next direction |
 | [WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17](work/elkies-k3.md#work-k3-different-ns-arithmetic-mw17) | Close an arithmetic marking gate before equation work |
-| [WORK-EC-RANK-JUMP-MECHANISM-20260910](work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910) | Obtain one fresh independently certified dependency-to-point transfer |
+| [WORK-EC-RANK-JUMP-MECHANISM-20260910](work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910) | Parked mechanism work; preserve the closed constructor calibration |
+| [WORK-K3-CORRELATED-QUADRATIC-GAINS](work/elkies-k3.md#work-k3-correlated-quadratic-gains) | Construct two independent gains on one quadratic cover |
 
 ## Retrieve the details
 

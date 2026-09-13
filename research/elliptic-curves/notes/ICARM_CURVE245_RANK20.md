@@ -81,8 +81,14 @@ Run
 
 against
 [`icarm_curve245_rank20_v1.json`](../../artifacts/generated-results/elliptic-curves/icarm_curve245_rank20_v1.json).
-The pinned artifact has SHA-256
+The pinned artifact is byte-identical to the preserved 2026-08-24 snapshot;
+its SHA-256 is
 `487d6e072ed7a2508d7ab12663910b3028c8b23362039c3e8b93a278809a2cbd`.
+
+The archived original remains retained. The checker rebuilds exact membership,
+finite-reduction, and PARI local-reduction data before comparison, so
+`--check` is arithmetic replay rather than a metadata check. Do not regenerate
+the artifact during cleanup.
 
 ## Conditional fixed-fiber closure
 

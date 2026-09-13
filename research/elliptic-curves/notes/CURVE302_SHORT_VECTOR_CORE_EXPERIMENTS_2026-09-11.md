@@ -17,17 +17,10 @@ See [completed results](#completed-real-results) and the
 [compact certificate bundle](../../artifacts/generated-results/elliptic-curves/curve302_short_vector_core_v1/manifest.json).
 Status authority: `EC-CURVE302-SHORT-VECTOR-CORE-20260911`.
 
-Run from `research/`:
-
-```sh
-python3 elliptic-curves/cas/run_curve302_short_vector_core.py run
-python3 elliptic-curves/cas/run_curve302_short_vector_core.py status
-python3 elliptic-curves/cas/run_curve302_short_vector_core.py check
-```
-
-Use `--source` if the passed closure-structure evidence is not in the canonical
-local folder. The default output is
-`artifacts/local/elliptic-curves/curve302-short-vector-core-v1/`.
+The [runner](../cas/run_curve302_short_vector_core.py) retains its isolated
+run/status/check modes for certificate review. The sealed v3 receipt and full
+deterministic check below are the evidence for this result; no rerun is a
+current cleanup action.
 
 ## Exact performance fixes after the first real run
 
@@ -59,17 +52,7 @@ basin tests, overflow fallbacks, exact ties and boundary vectors, a full
 synthetic pipeline/check, successful enumeration reuse and rejection of a
 corrupt donor before output creation.
 
-From the repository root, the fresh optimized run is:
-
-```sh
-sage -python research/elliptic-curves/cas/run_curve302_short_vector_core.py run \
-  --reuse-enumeration research/artifacts/local/elliptic-curves/curve302-short-vector-core-v2 \
-  --folder research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3
-sage -python research/elliptic-curves/cas/run_curve302_short_vector_core.py check \
-  --folder research/artifacts/local/elliptic-curves/curve302-short-vector-core-v3
-```
-
-`--reuse-enumeration` is for a fresh folder only. It verifies the donor plan,
+The completed v3 run used `--reuse-enumeration` only with a fresh folder. It verifies the donor plan,
 stage seal, output hashes, identical source bindings, exact observed norm bound
 and the current node/vector limits. Imported files are copied and rehashed;
 the new plan and import receipt preserve their producer's code hashes. The

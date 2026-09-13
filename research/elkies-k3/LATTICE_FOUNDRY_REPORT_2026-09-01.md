@@ -1,13 +1,14 @@
 # Lattice foundry report — 2026-09-01
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6f5cc7d2daf2dfe2 -->
 
 > **Current programme directive (2026-09-04).** This report records the first
 > target-first foundry run and its then-preferred determinant-950 `NS0024`
 > lattice candidate. A later Fricke-quotient theorem excludes the full
 > rational NS0024 marking required over `QQ`. Later split-Clifford arguments
-> also exclude determinant `720` and determinant-1184 `NS0031`. The live
+> also exclude determinant `720`. NS0031 is `UNKNOWN` after the
+> [period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md). The live
 > programme begins with the global `T`-first arithmetic queue and targets
 > arithmetic MW17 plus a certified carrier, with integral `V4` rank 20 as the
 > stretch objective. See

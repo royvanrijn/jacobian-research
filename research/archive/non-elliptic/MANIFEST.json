@@ -11597,6 +11597,11 @@
       "original_path": "verified/lean-foundational-v4.32.1.patch",
       "path": "archive/non-elliptic/verified/lean-foundational-v4.32.1.patch",
       "sha256": "d4c045c9ee6a4945608c6a02e09e48d69faa97e50a0a74641d7d20d8ea33eaa4"
+    },
+    {
+      "original_path": "elliptic-curves/notes/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md",
+      "path": "archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.before-ec-focus.md.txt",
+      "sha256": "a267516206d489f2daf9decbc68cd3930dcec871773ec8a5fd216c5b9679ca41"
     }
   ],
   "copies": [
@@ -13232,7 +13237,6 @@
     "EC-DET1092-COMPLETE-SMOOTH-BISECTION-ATLAS-NONUNIVERSAL-20260909",
     "EC-DET1092-CONIC-UNIFORM-SEED-PROGRESSION-20260908",
     "EC-DET1092-EUCLIDEAN-BISECTION-FORMULA-20260909",
-    "EC-DET1092-FIRST-PENCIL-ELLIPTIC-INVOLUTION-20260908",
     "EC-DET1092-FIRST-SEED-LOCAL-COMPATIBILITY-20260908",
     "EC-DET1092-FIRST-UNLOCK-BISECTION-OBSTRUCTIONS-20260908",
     "EC-DET1092-FIRST-UNLOCK-JACOBIAN-CLASS-20260908",
@@ -13268,7 +13272,6 @@
     "EC-DET1092-RR-INHERITED-POINT-20260908",
     "EC-DET1092-RR-NET-REDUCIBLE-LOCUS-20260908",
     "EC-DET1092-RR-NET-SINGULAR-HALVING-GATE-20260908",
-    "EC-DET1092-RR-PLANE-JACOBIAN-GATE-20260908",
     "EC-DET1092-RR-REAL-DYADIC-DESCENT-20260908",
     "EC-DET1092-RR-TORSION-TRANSPORT-OBSTRUCTION-20260908",
     "EC-DET1092-SAVED-UNIT-RELATION-OBSTRUCTION-20260909",
@@ -14677,7 +14680,9 @@
     "WQRS1",
     "WQSM1",
     "WR12",
-    "WT1"
+    "WT1",
+    "EC-DET1092-RR-PLANE-JACOBIAN-GATE-20260908",
+    "EC-DET1092-FIRST-PENCIL-ELLIPTIC-INVOLUTION-20260908"
   ],
   "link_relocations": [
     {
@@ -14925,6 +14930,20 @@
     {
       "path": "archive/non-elliptic/archive/V3_DETACHED_HANDOFF_2026-09-07.md",
       "sha256": "2436fea0622ebfd84d8339029424405890ee92f87d0a3041e8d644873707d561"
+    },
+    {
+      "path": "archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md",
+      "sha256": "d36f41c32f9ddc0bf57dea494f99e38fbf86ce273ca66bc141788679824e34c7"
+    }
+  ],
+  "claim_relocations": [
+    {
+      "id": "EC-DET1092-FIRST-PENCIL-ELLIPTIC-INVOLUTION-20260908",
+      "canonical_source": "archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md"
+    },
+    {
+      "id": "EC-DET1092-RR-PLANE-JACOBIAN-GATE-20260908",
+      "canonical_source": "archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md"
     }
   ]
 }

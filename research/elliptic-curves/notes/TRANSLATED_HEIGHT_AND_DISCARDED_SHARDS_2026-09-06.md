@@ -26,8 +26,9 @@ The [70-curve JSON](../../artifacts/generated-results/elliptic-curves/new_high_r
 and [CSV](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v6.csv)
 preserve all 62 earlier IDs. The exact lower-bound buckets are 3 at 27, 5 at 26,
 14 at 25, 14 at 24, 17 at 23, and 17 at 22. All 70 have distinct j-invariants.
-Cross-family incidence remains checked for the earlier 47 curves; the latest
-23 additions have not yet received that audit.
+The later [70-curve cross-family incidence extension](INVENTORY70_CROSS_FAMILY_INCIDENCE_2026-09-06.md)
+audits the latest 23 additions. Its scoped duplicate-subgroup conclusion does
+not change these independent-point certificates.
 
 ## The missed control directions become visible after translation
 

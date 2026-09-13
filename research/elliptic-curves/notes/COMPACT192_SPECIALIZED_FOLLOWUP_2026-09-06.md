@@ -9,7 +9,8 @@ The [aggregate certificate](../../artifacts/generated-results/elliptic-curves/co
 binds742 retained point witnesses. All five map files preceded every point
 search. The canonical execution record is
 `artifacts/local/elliptic-curves/compact192-specialized-followup-controller-v1/ledger.json`.
-An isolated replay of this additional follow-up is not yet claimed.
+Its local ledger is retained separately; the standalone portable supplement
+replay is recorded below.
 
 The initial [compact192 experiment](COMPACT192_UNSEARCHED_TRIAL_2026-09-06.md)
 uses centres from each curve's original17 generic points. A newly certified

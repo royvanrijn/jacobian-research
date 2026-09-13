@@ -1,0 +1,35 @@
+{
+  "boundary": "Startup and authoring are excluded from component timings. No detached worker is left.",
+  "completed_attempt": {
+    "changed_mathematical_parameters": false,
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/construct_r17_correlated_genus_one_pencils.sage run",
+    "component_cpu_seconds": 0.17377347199999998,
+    "exit_code": 0,
+    "same_frozen_input": true
+  },
+  "first_attempt": {
+    "arithmetic_outputs": 0,
+    "command": "sage -python research/elkies-k3/scripts/construct_r17_correlated_genus_one_pencils.sage run",
+    "exit_code": 1,
+    "observed_fresh_runtime": {
+      "VmRSS_kib": 218600,
+      "VmSize_kib": 5964388
+    },
+    "reason": "Default numerical-library thread pool reserved more virtual memory than the frozen 4GiB address-space limit; loading _csv failed to map a shared-object segment.",
+    "stage": "startup before constructing a pencil"
+  },
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py",
+    "exit_code": 0,
+    "wall_seconds": 0.123
+  },
+  "live_processes": false,
+  "producer_sha256": "b164a7223ea618032bba4dc6eb579490ba359f4be7239e1508dd04d3cca45f04",
+  "regressions": {
+    "command": "python3 -m unittest discover -s research/tests -p 'test_r17_correlated_pencil_replay.py' -q",
+    "passed": 7,
+    "seconds": 0.122
+  },
+  "schema": "r17-correlated-genus-one-execution-v1",
+  "verifier_sha256": "81ae711eea7a3e072532d9180e94014c1081c5884c259b88e964299f98700496"
+}

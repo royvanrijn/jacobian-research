@@ -1,193 +1,129 @@
-# NS0031 cannot carry the required rational rank-19 marking
+# NS0031: valid modular arithmetic, unresolved rational marking
 
-Date: 2026-09-04.
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
 
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+The September 4 nonexistence conclusion is withdrawn. Its finite Clifford,
+coset and Frobenius calculations remain valid, but the asserted containment
+of the full marked period group in rational norm-one units is false.
+**Existence of a K3 over QQ with the full rational NS0031 marking is UNKNOWN.**
+The model-157 formal branch and F017 physical corridor retain their local and
+geometric meanings; neither supplies a rational source.
 
-## Theorem
+The [preserved note and ledgers](../archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json)
+record the pre-correction claims. The original arithmetic producer and its
+certificate are unchanged. Their old K3-obstruction status label is historical,
+not a current arithmetic exclusion.
 
-There is no characteristic-zero K3 surface `X/QQ` with
+<!-- status-consumer: EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS c318a7d819b28d32 -->
 
-```text
-NS(X_Qbar) = NS0031
-```
+## Exact counter-witness to the group containment
 
-for which all nineteen Néron--Severi divisor classes are defined over `QQ`.
-Consequently no rootless fibration on `NS0031` can have a saturated rank-17
-Mordell--Weil basis over `QQ(t)`.
+For the literal transcendental lattice and negative root
 
-This closes the determinant-1184 candidate negatively.  It does not conflict
-with the formally smooth `ZZ_7` branch through model 157: that branch has
-`QQ_7` points but no rational point satisfying the full marking can exist.
+\[
+G=\begin{pmatrix}0&0&4\\0&74&1\\4&1&-2\end{pmatrix},
+\qquad v=(0,0,1)^t,\qquad v^tGv=-2,
+\]
 
-## The exact modular curve
+the root reflection is
 
-The rank-three transcendental lattice attached to `NS0031` is
+\[
+R=I+v(Gv)^t=\begin{pmatrix}1&0&0\\0&1&0\\4&1&-1\end{pmatrix}.
+\]
 
-```text
-T = [ 0   0   4 ]
-    [ 0  74   1 ]
-    [ 4   1  -2 ],       det(T) = -1184.
-```
+Direct multiplication gives `R^t G R=G`, `R^2=I`, and `det(R)=-1`.
+Moreover `(R-I)G^-1=vv^t` is integral, so `R` acts trivially on `T^dual/T`.
+It fixes the plane spanned by `(1,0,2)` and `(0,2,1)` pointwise. That plane
+has Gram `[[8,4],[4,298]]`, with positive first minor and determinant 2368.
+Thus `R` preserves the chosen positive-plane orientation and belongs to the
+literal stable group `O^+(T)^*`.
 
-It is rationally isotropic, with primitive isotropic vector `(1,0,0)` of
-divisibility `4`.  Its even Clifford algebra is split.  In the basis
+This is the group relevant to fixing the polarizing NS lattice: see
+[Dolgachev, Proposition 3.3 and its following period-quotient discussion](https://arxiv.org/pdf/alg-geom/9502005v2).
+A modern formulation for primitive lattice polarizations, with the small ample
+cone hypothesis, is [Bragg–Brakkee–Várilly-Alvarado, Theorem 5.6](https://arxiv.org/pdf/2510.11477v1).
+The discriminant-kernel condition extends `R` by the identity on NS across the
+unimodular K3 gluing. A full NS marking therefore does not justify discarding
+this determinant-minus-one isometry. These are complex period statements;
+the arithmetic descent of the corrected curve still requires justification.
 
-```text
-1, e0*e1, e0*e2, e1*e2
-```
+In the original split Clifford embedding, multiplication by the central
+volume element identifies `T_Q` with the trace-zero matrices
 
-an exact embedding into `M2(QQ)`, followed by conjugation by `diag(4,1)`,
-gives the integral order with basis
+\[
+B_0=\begin{pmatrix}0&8\\0&0\end{pmatrix},\quad
+B_1=\begin{pmatrix}-74&2\\0&74\end{pmatrix},\quad
+B_2=\begin{pmatrix}0&-2\\74&0\end{pmatrix}.
+\]
 
-```text
-[1 0]  [0 4]  [4 0]  [ 1 1]
-[0 1], [0 0], [0 0], [37 0].
-```
+They span the trace-zero algebra and satisfy
+`B_i B_j+B_j B_i=148*G_ij*I`. The matrix
 
-Thus a matrix `[A B; C D]` belongs to this order exactly when
+\[
+A=\begin{pmatrix}0&-1\\37&0\end{pmatrix},\qquad\det(A)=37,
+\]
 
-```text
-37 | C,
-B     = C/37 (mod 4),
-A - D = C/37 (mod 4).
-```
+acts by `A B_j A^-1=sum_i (-R)_ij B_i`. Since `R` and `-R` have the same
+projective period action, `A` represents this stable period transformation.
+Any other rational matrix with the same adjoint action is a scalar multiple
+of `A`; its determinant is `37*c^2`, never 1 for rational `c`.
+The matrix also normalizes the retained integral order, as verified by an
+explicit integral involution on its four basis elements. It is a normalizer
+action, not a rational norm-one unit.
 
-For determinant one, the mod-4 reduction is the norm-one subgroup of the
-unramified non-split Cartan and the mod-37 reduction is upper triangular.
-The projective norm-one modular curve is therefore
+Consequently the claimed containment in the projective norm-one group fails
+already over the complex period domain. The proposed period-induced map to
+`X_ns(4) x_{X(1)} X_0(37)` cannot be obtained from that containment.
+This does not construct a rational NS0031 K3 or disprove its nonexistence by
+some other argument. It identifies the precise failure in the recorded proof.
 
-```text
-X_ns(4) x_{X(1)} X_0(37),
-```
+## Arithmetic result that survives
 
-with congruence group `Gamma_ns(4) intersection Gamma_0(37)`.  Direct coset
-enumeration gives
+The original even Clifford order, after conjugation by `diag(4,1)`, has basis
+`I`, `[[0,4],[0,0]]`, `[[4,0],[0,0]]`, `[[1,1],[37,0]]`.
+Its norm-one group has congruences
+`37|C`, `B=C/37 mod4`, `A-D=C/37 mod4` for the entries of a matrix.
+The associated norm-one modular curve has index 304, elliptic counts `(0,4)`,
+cusp widths `[4,4,148,148]` and genus 23.
 
-```text
-index       304
-elliptic-2  0
-elliptic-3  4
-cusps       4, with widths 4,4,148,148
-genus       23.
-```
+[Vélu, Theorem 7 and the following models, pp.175–176](https://www.numdam.org/article/MSMF_1974__37__169_0.pdf)
+gives the two noncuspidal rational `X_0(37)` points, with j-invariants
+`-7*11^3` and `-7*137^3*2083^3`. Both displayed elliptic curves have good
+reduction at 19 and trace -6. Their mod-4 trace/determinant pair `(2,3)` is
+absent from the full nonsplit Cartan; twisting preserves containment because
+that Cartan contains `+/-I`. Hence neither point lifts to the stated Cartan
+fibre product. The fibre product has no noncuspidal rational point.
 
-The full rational `NS0031` marking fixes the discriminant gluing.  By the
-standard rank-three period/spin description, its moduli curve is a cover of
-this norm-one curve.  Hence a rational marked K3 would give a noncuspidal
-`QQ`-point on the displayed fibre product and, after forgetting the level-4
-structure, a noncuspidal rational point of `X_0(37)`.
+That valid modular-curve obstruction is conditional input for any application
+that separately proves the required rational lift. It no longer closes the
+NS0031 rational-marking question. [Elkies, Section 2](https://arxiv.org/pdf/0802.1301v1)
+already distinguishes norm-one groups, normalizer quotients and arithmetic
+twists; replacing one with another needs an explicit proof.
 
-## The rational-point obstruction
+## Replay and remaining gate
 
-Vélu's [Theorem 7 and the models on the following page](https://www.numdam.org/article/MSMF_1974__37__169_0.pdf)
-(pp.175–176) determine `X_0(37)(QQ)`. Apart from its cusps, its two rational points
-have elliptic-curve `j`-invariants
+The [counter-witness](../artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json)
+and [standard-library verifier](scripts/verify_ns0031_period_group.py) check
+the reflection, discriminant action, fixed positive plane, Clifford
+identification, adjoint action and order normalizer. Six corruption controls and a valid-witness check accompany the proof;
+five additional checks protect its propagation and preserved history. From `research/`, run
+`python3 elkies-k3/scripts/verify_ns0031_period_group.py`.
 
-```text
-j1 = -7*11^3,
-j2 = -7*137^3*2083^3.
-```
+The separate [finite arithmetic replay](scripts/verify_ns0031_marking_arithmetic.py)
+uses the [2,771-byte original-input projection](../artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json)
+and the [original arithmetic certificate](../artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json).
+`make verify-ns0031-arithmetic` runs that bounded replay and its controls;
+`--check-source-projection` optionally compares the three original catalogues.
+No mode reconstructs missing inputs. The original Sage checker had already
+passed its finite arithmetic replay; repeating it cannot repair the period map.
 
-Neither point lifts to `X_ns(4)`.  For each `j`, an exact rational minimal
-model has a rational 37-isogeny, good reduction at `19`, and
+Original certificate SHA-256:
+`49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.
+Original projection SHA-256:
+`f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e`.
 
-```text
-a_19 = -6,       (a_19 mod 4, 19 mod 4) = (2,3).
-```
-
-For the full unramified non-split Cartan in `GL(2,Z/4Z)`, the possible
-`(trace,determinant)` pairs are
-
-```text
-(0,3), (1,1), (1,3), (2,1), (3,1), (3,3).
-```
-
-The pair `(2,3)` is absent.  Frobenius at `19` therefore excludes a mod-4
-Galois image inside that Cartan.  This is unchanged by quadratic twisting:
-the trace changes sign, while `6` and `-6` are both `2` modulo `4`.  Hence
-neither noncuspidal point of `X_0(37)(QQ)` lifts, and the fibre product has no
-noncuspidal rational point. More generally, the Cartan contains the scalars
-`+/-I`, so twisting preserves containment of the Galois image even when the
-twist itself has bad reduction at19; a good-reduction trace for every twist
-is not required.
-
-This contradicts the point forced by a full rational `NS0031` marking and
-proves the theorem.
-
-## Foundry consequence
-
-The model-157 formal branch, the rational-coordinate scan, and the exact
-five-edge route to `NS0031-F017` remain valid local and geometric evidence.
-They cannot be upgraded to the requested arithmetic source over `QQ`, so the
-different-NS foundry objective must move again.  A replacement candidate must
-pass the rational-marking arithmetic gate before another equation-facing
-coefficient campaign begins.
-
-## Exact replay and theorem boundary
-
-The checker
-[`scripts/certify_ns0031_qq_marking_obstruction.sage`](scripts/certify_ns0031_qq_marking_obstruction.sage)
-reconstructs the Clifford embedding and integral order, identifies the two
-local congruence conditions, computes the full signature, verifies the two
-37-isogenies, and performs both Frobenius exclusions.  Its output is
-[`../artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json`](../artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json).
-
-The checker does not reprove Vélu's global determination of
-`X_0(37)(QQ)` or the general marked-K3 period/Clifford correspondence.  Those
-are theorem inputs.  No claim is made about geometric `NS0031` surfaces,
-models over larger number fields, or rational models with a proper
-Galois-invariant sublattice.
-
-```bash
-/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
-  elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage
-/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
-  elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage --check
-```
-
-## Source review and portable arithmetic replay — 12 September 2026
-
-The original Sage `--check` passed under a 30-second process cap, with all
-three original input hashes unchanged. Its 67,820,578 bytes of catalogue
-inputs supply just eleven selected fields. The exact
-[2,771-byte projection](../artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json) records the unique row selectors,
-field values and original hashes; no catalogue was rebuilt.
-
-```sh
-# From the repository root; Python standard library only:
-python3 research/elkies-k3/scripts/verify_ns0031_marking_arithmetic.py
-# Optional: also compare the projection with the original catalogues:
-python3 research/elkies-k3/scripts/verify_ns0031_marking_arithmetic.py --check-source-projection
-# Explicit finite replay plus corruption checks; separate from make check:
-make verify-ns0031-arithmetic
-```
-
-The independent implementation reduces Clifford words directly, enumerates
-the304 cosets and counts both curves over F19. It checks the finite order,
-signature and Frobenius exclusions. It does not independently prove global
-minimality, rederive the37-isogenies, reconstruct NS0031 from a K3 equation,
-or establish the arithmetic marked-period map. Five tests reject corrupted
-witnesses, missing provenance and optimized Python with assertions disabled.
-Missing original catalogues
-prevent only the optional provenance audit; neither mode rebuilds them.
-
-Primary certificate SHA-256: `49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.
-Projection SHA-256: `f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e`.
-
-Vélu's primary text confirms the rational-point classification and both
-displayed models. The separate period/Clifford audit remains open: identify
-the literal stable discriminant action, justify its containment in this
-norm-one group, and give the map over QQ to the stated Cartan fibre product,
-including the arithmetic level structure. A complex period quotient alone
-does not settle these points. [Elkies, Section2](https://arxiv.org/pdf/0802.1301v1)
-provides general background and illustrates why normalizer quotients and
-quadratic twists must be distinguished; it is not a specific theorem for
-this nonmaximal determinant1184 order. The new finite replay does not upgrade
-the registry's independent-replay, formal-verification or external-review flags.
-
-## Reference
-
-- J. Vélu,
-  [*Les points rationnels de X0(37)*](https://doi.org/10.24033/msmf.145),
-  Bull. Soc. Math. France, Mémoire 37 (1974), 169--179.
+The next proof gate is to determine the full stable projective period group,
+its correct model over QQ and its rational non-CM points, or supply another
+exact arithmetic obstruction. Neither an empty norm-one cover nor the known
+formal local branch decides this. NS0031 is an unresolved research row;
+no equation or foundry campaign is authorized by this correction.

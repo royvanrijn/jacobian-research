@@ -24,6 +24,8 @@ python3 research/scripts/research.py show ID
 | `CJT1` | archived programme; proved | [Conductor/contact-loss finite-jet truncation theorem](../archive/non-elliptic/plane-jc/CONDUCTOR_JET_TRUNCATION.md) |
 | `PCJDP1` | archived programme; proved | [Primitive coprime carrier saturation and F2 nonimmersion-discriminant theorem](../archive/non-elliptic/plane-jc/COPRIME_CARRIER_JET_DISCRIMINANT_PATTERN.md) |
 | `PJ1` | archived programme; proved | [Plane Jacobian degree frontier](../archive/non-elliptic/plane-jc/DEGREE_FRONTIER_125.md) |
+| `EC-DET1092-FIRST-PENCIL-ELLIPTIC-INVOLUTION-20260908` | archived programme; proved | [The entire rational first-witness RR pencil has no degree-two elliptic quotient](../archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md) |
+| `EC-DET1092-RR-PLANE-JACOBIAN-GATE-20260908` | archived programme; proved | [Explicit nodal RR double plane and absolutely simple fixed and geometric generic genus-two Jacobians](../archive/non-elliptic/plane-jc/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md) |
 | `PF2CS1` | archived programme; partial | [F2 exact carrier specialization and number-field cokernel compiler](../archive/non-elliptic/plane-jc/F2_75_125_CARRIER_SPECIALIZATIONS.md) |
 | `PF2CW1` | archived programme; proved | [F2 carrier Wronskian and finite cofactor classification](../archive/non-elliptic/plane-jc/F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md) |
 | `PF2ER1` | archived programme; proved | [F2 fixed-endpoint carried reduction and layer-28 coupling boundary](../archive/non-elliptic/plane-jc/F2_75_125_DERIVATION.md) |

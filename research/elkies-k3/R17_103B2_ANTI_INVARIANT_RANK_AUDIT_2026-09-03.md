@@ -198,9 +198,9 @@ projective hypersurfaces, whereas this model is a degree-24 hypersurface in
 characters disappear modulo 2 and the original rank-17 central factor
 persists; compare [Boudreau](https://arxiv.org/abs/2110.12156).
 
-## Next decisive computation
+## Unscheduled global upper-bound routes
 
-The shortest rigorous closeout is one of:
+An exact-rank closeout would require one of:
 
 1. implement weighted/toric controlled reduction at two good primes and use
    Shioda--Tate (plus Artin--Tate discriminant classes if both reductions have
@@ -209,4 +209,6 @@ The shortest rigorous closeout is one of:
    algebra and show the Selmer dimension is one.
 
 Extending polynomial shells alone cannot prove the rank upper bound without
-one of these global inputs.
+one of these global inputs.  Neither route is selected by this local audit;
+any implementation needs its own mathematical gate, resource budget and
+checkpointed certificate.

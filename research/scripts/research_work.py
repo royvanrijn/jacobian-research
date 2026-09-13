@@ -17,6 +17,26 @@ def load_work(root: Path) -> tuple[dict, dict]:
             json.loads((root / 'knowledge/legacy_work_review.json').read_text()))
 
 
+def legacy_scope_counts(data: dict, legacy: dict) -> dict[str, int | set[str]]:
+    """Classify preserved checklist items by their current work destination.
+
+    An archived destination preserves a historical mathematical obligation but
+    puts it outside the active EC/K3 cleanup scope. That is not completion.
+    """
+    actions = {action['id']: action for action in data['actions']}
+    archived_only = {
+        item['id'] for item in legacy['items']
+        if all(not is_active(actions[action_id]) for action_id in item['actions'])
+    }
+    unfinished = [item for item in legacy['items'] if 'resolution' not in item]
+    archived_unfinished = sum(item['id'] in archived_only for item in unfinished)
+    return {
+        'archived_only': archived_only,
+        'unfinished': len(unfinished),
+        'archived_unfinished': archived_unfinished,
+        'active_unfinished': len(unfinished) - archived_unfinished,
+    }
+
 def original_checkboxes(text: str) -> list[dict]:
     """Retain every unchecked item, including its indented completed subsets."""
     found, current = [], None
@@ -146,6 +166,8 @@ def show(identifier: str, data: dict, legacy: dict, entries: list[dict]) -> dict
 
 def render(data: dict, legacy: dict, entries: list[dict], root: Path) -> dict[Path, str]:
     actions = data['actions']
+    action_map = {action['id']: action for action in actions}
+    legacy_counts = legacy_scope_counts(data, legacy)
     active_actions = [a for a in actions if is_active(a)]
     by_id = {e['id']: e for e in entries}
     counts = Counter(e['state'] for e in entries if is_active(e))
@@ -236,18 +258,36 @@ def render(data: dict, legacy: dict, entries: list[dict], root: Path) -> dict[Pa
                     'with the inspected snapshot hashes and checks performed. Completion applies to '
                     'that recorded snapshot; the maintained checks must still pass on current work. '
                     'An item without a completion record remains unfinished, regardless of its destination.', '',
-                    f"{sum(not is_active(item) for item in legacy['items'])} inherited items now belong only to archived programmes. "
-                    'Their completion status remains as recorded; they are outside the active EC/K3 cleanup scope.', '',
+                    f"{len(legacy_counts['archived_only'])} inherited items now belong only to archived programmes. "
+                    f"Of the {legacy_counts['unfinished']} unfinished records, "
+                    f"{legacy_counts['active_unfinished']} have active EC/K3 review or provenance destinations and "
+                    f"{legacy_counts['archived_unfinished']} are archived-programme research handoffs. "
+                    'An archived destination is not completion.', '',
                     'Use `research.py show LEGACY-20260904-LINE` for the full text, rationale and current '
                     'destination. [Current work ledger](WORK_LEDGER.md).', '',
+                    '## Active EC/K3 remainder', '',
+                    'This compact view exposes the unfinished active obligations without treating a review, '
+                    'replay, or research proposal as authorized computation.', '',
+                    '| Active action | Unfinished inherited items | Current gate | Compute class |',
+                    '|---|---|---|---|']
+    for action in active_actions:
+        inherited = [item['id'] for item in legacy['items']
+                     if 'resolution' not in item and action['id'] in item['actions']]
+        if not inherited:
+            continue
+        link = f"[{action['id']}](work/{action['area']}.md#{action['id'].lower()})"
+        review_lines.append(
+            f"| {link} | {', '.join(f'`{identifier}`' for identifier in inherited)} | "
+            f"{cell(action['next_step'])} | `{action['compute']}` |"
+        )
+    review_lines += ['', '## Complete preserved checklist', '',
                     '| Original line / ID | Original item (excerpt) | Disposition | Completion | Current destination |', '|---|---|---|---|---|']
-    action_map = {a['id']: a for a in actions}
     for item in legacy['items']:
         preview = item['text'][:135] + ('…' if len(item['text']) > 135 else '')
         links = ', '.join(f"[{i}](work/{action_map[i]['area']}.md#{i.lower()})" for i in item['actions'])
         resolution = item.get('resolution')
         completion = 'completed ' + resolution['date'] if resolution else 'unfinished'
-        if not is_active(item):
+        if item['id'] in legacy_counts['archived_only']:
             completion += '; archived programme'
         review_lines.append(f"| `{item['id']}` | {cell(preview)} | {item['disposition']} | {completion} | {links} |")
     outputs[root / 'knowledge/LEGACY_WORK_REVIEW.md'] = '\n'.join(review_lines) + '\n'

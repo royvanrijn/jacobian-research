@@ -1,4 +1,9 @@
-# Other rank-17 fibration: Gate B audit — 2026-08-31
+# Other rank-17 fibration: historical Gate-B audit (2026-08-31)
+
+> **Current-boundary note (2026-09-13).** This retained bounded negative
+> bridge probe does not select a construction route. Current K3 work begins
+> from the [programme map](README.md), with a separately stated mathematical
+> gate and scope.
 
 ## Result
 
@@ -81,13 +86,13 @@ are also absent from this checkout.  Consequently the present code cannot be
 rerun at a second prime by changing a command-line option, and one residue
 cannot support CRT/LLL reconstruction.
 
-The next construction step is therefore earlier than CRT: recover and persist
-the generic fourth-q12 equation/marking in a prime-independent form, then
-parameterize the compensated pair23 and final-q6 compilers by the prime.  Only
-after compatible outputs exist at several split good primes is canonical
-marking alignment and rational reconstruction justified.  Until that generic
-equation is obtained, no alternate-frame `j`-map exists and no recognition
-claim for the rank-29 curve or ICARM 398--400, 273, or 302 is made.
+An independently scoped alternate-frame reconstruction would first need to
+recover and preserve the generic fourth-q12 equation/marking in a
+prime-independent form, then parameterize the compensated pair23 and final-q6
+compilers by prime. Only compatible outputs at several split good primes could
+justify canonical marking alignment and rational reconstruction. Until then,
+no alternate-frame `j`-map exists and no recognition claim for the rank-29
+curve or ICARM 398--400, 273, or 302 is made.
 
 ### Quadratic third-q12 marking recovered modulo 19
 

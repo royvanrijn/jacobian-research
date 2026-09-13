@@ -1,0 +1,143 @@
+{
+  "cpu_seconds": 0.6278807,
+  "input_sha256": "c8e6cb2f0abe2f5e8639131295dcf059878e230a535c242c3a04900fe5265f74",
+  "records": [
+    {
+      "matches": [
+        {
+          "lambda": 83,
+          "node": 66,
+          "source_parameter": [
+            6,
+            64,
+            1
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            17,
+            67,
+            35,
+            83,
+            82
+          ],
+          "target_repeated_factor_degree": 2
+        }
+      ],
+      "prime": 101
+    },
+    {
+      "matches": [
+        {
+          "lambda": 71,
+          "node": 93,
+          "source_parameter": [
+            10,
+            1,
+            0
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            33,
+            74,
+            79,
+            3,
+            72
+          ],
+          "target_repeated_factor_degree": 2
+        }
+      ],
+      "prime": 103
+    },
+    {
+      "matches": [
+        {
+          "lambda": 89,
+          "node": 22,
+          "source_parameter": [
+            27,
+            15,
+            1
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            4,
+            96,
+            83,
+            76,
+            30
+          ],
+          "target_repeated_factor_degree": 2
+        }
+      ],
+      "prime": 107
+    },
+    {
+      "matches": [
+        {
+          "lambda": null,
+          "node": 56,
+          "source_parameter": [
+            59,
+            50,
+            1
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            82,
+            94,
+            6,
+            30,
+            1
+          ],
+          "target_repeated_factor_degree": 2
+        },
+        {
+          "lambda": 64,
+          "node": 39,
+          "source_parameter": [
+            70,
+            1,
+            0
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            84,
+            83,
+            90,
+            62,
+            81
+          ],
+          "target_repeated_factor_degree": 2
+        }
+      ],
+      "prime": 109
+    },
+    {
+      "matches": [
+        {
+          "lambda": 50,
+          "node": 24,
+          "source_parameter": [
+            4,
+            1,
+            0
+          ],
+          "target_affine_degree": 4,
+          "target_quartic": [
+            52,
+            52,
+            76,
+            88,
+            62
+          ],
+          "target_repeated_factor_degree": 3
+        }
+      ],
+      "prime": 113
+    }
+  ],
+  "schema": "r17-one-node-survivor-diagnostic-v1",
+  "scope": "These finite-field intersections are necessary local conditions, not rational solutions or a rank construction.",
+  "source_index": 27,
+  "target_index": 3
+}

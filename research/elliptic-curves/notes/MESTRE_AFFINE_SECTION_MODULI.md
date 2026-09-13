@@ -516,8 +516,12 @@ branch.  The incidence-germ note now supplies the surrounding
 two-dimensional moduli surface and its selected dependence classification.
 Neither
 calculation proves saturation, heights, intersections, a Shioda Gram matrix,
-or a rank upper bound.  The fixed-root exact certificate is
-`elliptic_mestre_dsquare_all_companion_generic_relations.json`.
+or a rank upper bound.  The fixed-root [relation certificate](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_dsquare_all_companion_generic_relations.json)
+(SHA-256 `45801765d20111d9ae4e10441e3e3a7bef18852d0d327b8895b3703975f55675`)
+is the registered generated output of
+[`audit_mestre_dsquare_all_companion_relations.py`](../cas/audit_mestre_dsquare_all_companion_relations.py).
+A fresh virtual-environment replay compares byte-for-byte with it. This is
+reproducible exact arithmetic, not an independent replay.
 
 In particular, this investigation does **not** establish a rational
 parameterization of the global projective surface, pair intersections, a
@@ -688,7 +692,7 @@ Thus both selected affine sections are generically visible.  This first
 rational component, like the later conic-rational component, is a genuine
 positive-dimensional two-section locus but not a generic rank-jump locus.
 The certificate is
-`elliptic_mestre_transverse_component_generic_relations.json`; it does not
+[`elliptic_mestre_transverse_component_generic_relations.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_transverse_component_generic_relations.json); it does not
 determine saturation, full intersections, or a Shioda Gram matrix.
 
 ### Bounded seed census beyond the initial families
@@ -799,8 +803,8 @@ As for the first component, this is only a finite-fibre intersection audit;
 the full intersection number, Shioda corrections, saturation, and any
 independence from a rank-13 subgroup are still open.  The bounded census and
 the new exact component certificate are pinned in
-`elliptic_mestre_two_section_seed_screen_max200.json` and
-`elliptic_mestre_transverse_two_section_conic_component.json`, respectively.
+[`elliptic_mestre_two_section_seed_screen_max200.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200.json) and
+[`elliptic_mestre_transverse_two_section_conic_component.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component.json), respectively.
 
 The first-good-prime condition in that census is deliberately not a negative
 test: a rational affine section can be singular in its two projected
@@ -814,8 +818,8 @@ two-parameter roots at `(u,v)=(-3,-8/3)`, with `alpha_1 -> 0` and
 rank-seven *base point* in the frozen panel.  It does not prove a generic
 relation for every labelled pair at those points, or a height, saturation, or
 independence statement.  The reproducible artifacts are
-`elliptic_mestre_two_section_seed_screen_max200_all_primes.json` and
-`elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json`.
+[`elliptic_mestre_two_section_seed_screen_max200_all_primes.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json) and
+[`elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json).
 
 At the Fermigier base point the first recovered affine line is exactly the
 generic Fermigier extra line after that affine normalization.  Appending the
@@ -861,8 +865,8 @@ expanded residual.  Its leading invariant is the square
 
 so the triangular recursion supplies rational cubic ordinates on the stated
 open locus.  The pinned discovery and identity artifacts are
-`elliptic_mestre_fermigier_two_section_local_branch.json` and
-`elliptic_mestre_fermigier_two_section_component.json`.
+[`elliptic_mestre_fermigier_two_section_local_branch.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_fermigier_two_section_local_branch.json) and
+[`elliptic_mestre_fermigier_two_section_component.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_fermigier_two_section_component.json).
 
 The historical `elliptic_mestre_fermigier_two_section_generic_rank13.json`
 is retained as rejected evidence. Its thirteen finite probes at
@@ -897,7 +901,7 @@ twelve visible points and after adjoining this signed pair.  This records a
 finite intersection and rejects this seed as an independence witness; it is
 not the complete pair intersection number, a height calculation, saturation,
 or a generic dependence proof.  The pinned audit is
-`elliptic_mestre_fermigier_two_section_intersection.json`.
+[`elliptic_mestre_fermigier_two_section_intersection.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_fermigier_two_section_intersection.json).
 
 The component-level mod-2/mod-3 quotient grid now covers all 136 admissible
 pairs with `H(u)<=5` and `T=1,...,4`, using reduction primes through 151.
@@ -907,7 +911,7 @@ visible-plus-first baseline for either modulus.  This is bounded non-escape
 data only. The later stacked certificate has been rejected for changing its
 section columns. This grid remains neither a generic relation, saturation,
 nor Shioda calculation. The pinned record is
-`elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json`.
+[`elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json).
 
 A separate numerical-height triage covers all 366 smooth specializations in
 the rational panel `H(u)<=10`, `T=1,2,3`, always with the twelve visible and
@@ -918,7 +922,7 @@ canonical-height rank is neither an algebraic rank bound nor a generic
 dependence statement.  In particular, it does not give a rank-14 witness;
 the former exact quotient claim has been withdrawn as described above. The pinned
 record is
-`elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json`.
+[`elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json).
 
 ### A non-transverse conjugate-slope germ at diameter 233
 
@@ -988,16 +992,16 @@ each seed.  Thus these two specializations provide no additional direction;
 they are evidence against, not proof of, a rank jump on the formal germ.  In
 particular, they neither supply a generic relation nor determine saturation,
 heights, intersections, or Shioda data.  The reproducible audit is
-`elliptic_mestre_conjugate_two_section_seed_relations.json`.
+[`elliptic_mestre_conjugate_two_section_seed_relations.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_conjugate_two_section_seed_relations.json).
 
 It has not yet been recognized as a rational surface or low-degree plane
 model, nor reconstructed to a global identity.  No Mordell--Weil
 independence, intersection, saturation, height, Shioda, or rank assertion is
 made for it.  The reproducible local record is
-`elliptic_mestre_conjugate_two_section_germ.json`.
+[`elliptic_mestre_conjugate_two_section_germ.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_conjugate_two_section_germ.json).
 
-The same all-prime method begins the post-census search without modifying the
-frozen panel.  The diameter band `201`--`205` has no rank-seven pair; its sole
+The same all-prime method was applied in a bounded post-census search without
+modifying the frozen panel. The diameter band `201`--`205` has no rank-seven pair; its sole
 six-companion recovery is the already-known D-square germ, whose fifteen
 pairs all have rank six.  The disjoint band `206`--`210` has 224
 nonreflection square-leading candidates and no reconstructed affine section
@@ -1078,7 +1082,7 @@ denominator, every numerator has degree at most 1,080.  This proves all seven
 residual identities over \(\mathbb Q(p)\) without materializing an expanded
 residual.  Thus this is an exact rational split-six-root two-section
 component, not merely a local branch.  The certificate is
-`elliptic_mestre_diameter235_eight_companion_component.json`; the earlier
+[`elliptic_mestre_diameter235_eight_companion_component.json`](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_diameter235_eight_companion_component.json); the earlier
 order-32 low-bidegree record remains useful provenance for its discovery.
 
 The two selected affine **abscissae** collide at
@@ -1102,9 +1106,7 @@ so each selected affine section is outside the generic subgroup generated by
 the twelve visible sections; the component therefore has generic rank at
 least 11.  This does not separate the two new points from each other, prove
 generic rank at least 12 or 14, establish saturation, or determine a Shioda
-Gram matrix.  Full intersection/height work remains necessary.  The
-reproducible local record is
-`elliptic_mestre_diameter235_eight_companion_local.json`.
+Gram matrix.  Full intersection/height work remains necessary.  The local-search record is retained as [historical provenance](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_local.json); it is not the component or relation certificate.
 
 The same identity is now exact over the full field \(\mathbb Q(p,T)\):
 
@@ -1134,9 +1136,9 @@ over \(\mathbb Q(p,T)\).  This is a subgroup statement, not an upper bound
 for the full Mordell--Weil group: it does not prove generic rank 12 or 14,
 saturation, a full intersection calculation, or a Shioda Gram matrix.  The
 generic certificate is
-`elliptic_mestre_diameter235_eight_companion_generic_relation.json`; the
+[`elliptic_mestre_diameter235_eight_companion_generic_relation.json`](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_diameter235_eight_companion_generic_relation.json); the
 seed-only checkpoint remains
-`elliptic_mestre_diameter235_eight_companion_seed_pair_relation.json`.
+[`elliptic_mestre_diameter235_eight_companion_seed_pair_relation.json`](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_diameter235_eight_companion_seed_pair_relation.json).
 
 The first ten visible sections plus (P_1) have also been audited at the
 regular seed fibre `p=-294,T=2`.  The real height matrix has numerical rank
@@ -1157,7 +1159,7 @@ the PARI routine is documented under a finite-index hypothesis and this audit
 does not determine the full fibre rank.  Nor does it supply the missing full
 intersection calculation, reducible-fibre contributions, or Shioda Gram
 matrix.  The replayable record is
-`elliptic_mestre_diameter235_displayed_lattice_seed_audit.json`.
+[`elliptic_mestre_diameter235_displayed_lattice_seed_audit.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_diameter235_displayed_lattice_seed_audit.json).
 
 At the seed specialization `s=-357/47,T=1`, exact group law puts both affine
 points in the visible subgroup:
@@ -1173,8 +1175,8 @@ in the conic parameter `s` and Mestre parameter `T` covers all 1,482
 candidate pairs; each is admissible and none raises that rank-nine quotient.
 Both are negative bounded-search results only, not a saturation calculation,
 Shioda Gram matrix, or generic rank upper bound.  The reproducible artifacts
-are `elliptic_mestre_transverse_two_section_conic_component_seed_relations.json`
-and `elliptic_mestre_transverse_two_section_conic_component_independence_h5.json`.
+are [`elliptic_mestre_transverse_two_section_conic_component_seed_relations.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_seed_relations.json)
+and [`elliptic_mestre_transverse_two_section_conic_component_independence_h5.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_independence_h5.json).
 
 There is one stronger generic result on this component.  Keeping the
 triangular-recursion sign of the first selected cubic ordinate, exact
@@ -1198,7 +1200,7 @@ subgroup on this component: it is a genuine positive-dimensional two-section
 locus, but it gives no new Mordell--Weil direction.  This does not determine
 the visible subgroup's rank or saturation, nor its Shioda data.  The combined
 certificate is
-`elliptic_mestre_transverse_two_section_conic_component_generic_relations.json`;
+[`elliptic_mestre_transverse_two_section_conic_component_generic_relations.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_generic_relations.json);
 the earlier first-section-only artifact remains a smaller replay checkpoint.
 
 ## Reproduction

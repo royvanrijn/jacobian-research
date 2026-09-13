@@ -32,7 +32,25 @@ def audit() -> None:
     old = json.loads((ARCHIVE / 'MATH_STATUS.json').read_text())
     current = json.loads((ROOT / 'MATH_STATUS.json').read_text())
     by_id = {entry['id']: entry for entry in current['entries']}
+    active_entries = [entry for entry in current['entries'] if is_active(entry)]
+    active_source_roots = ('elliptic-curves/', 'elkies-k3/', 'replay/')
+    for entry in active_entries:
+        source = entry['canonical_source']
+        assert source.startswith(active_source_roots), (
+            'active EC/K3 claim has an archived or unrelated canonical source: '
+            f"{entry['id']}: {source}"
+        )
     archived = set(manifest['archived_claim_ids'])
+    relocations = manifest.get('claim_relocations', [])
+    relocated_sources = {}
+    for record in relocations:
+        assert set(record) == {'id', 'canonical_source'}, 'invalid claim relocation'
+        assert record['id'] in archived, 'only archived claims may be relocated'
+        source = record['canonical_source']
+        assert source.startswith('archive/non-elliptic/'), 'invalid relocated source'
+        assert (ROOT / source).is_file(), f'missing relocated source: {source}'
+        assert record['id'] not in relocated_sources, f"duplicate claim relocation: {record['id']}"
+        relocated_sources[record['id']] = source
     for entry in old['entries']:
         assert entry['id'] in by_id, f"lost historical claim: {entry['id']}"
         if entry['id'] not in archived:
@@ -42,6 +60,8 @@ def audit() -> None:
         for field in ['canonical_source', 'checker']:
             if expected[field] is not None:
                 expected[field] = relocate_reference(expected[field])
+        if entry['id'] in relocated_sources:
+            expected['canonical_source'] = relocated_sources[entry['id']]
         for field in ['software_lock', 'consumers']:
             expected[field] = [relocate_reference(p) for p in expected[field]]
         assert by_id[entry['id']] == expected, f"archiving changed mathematical metadata: {entry['id']}"
@@ -60,7 +80,8 @@ def audit() -> None:
                 'archiving must not supply a completion record'
             )
     print(f"PASS programme archive: {len(manifest['files'])} byte-identical moved files, "
-          f"{len(archived)} claims preserved, shared replay inputs and all inherited obligations retained")
+          f"{len(archived)} archived claims preserved, {len(active_entries)} active EC/K3 claims "
+          "use only EC/K3 or shared-replay sources, and all inherited obligations retained")
 
 
 if __name__ == '__main__':

@@ -33,6 +33,11 @@ MECHANISMS_END = "<!-- END GENERATED CANCELLATION MECHANISMS -->"
 
 ADE_TERM = re.compile(r"(?:(\d+))?([ADE])(\d+)")
 STATUS_ID = re.compile(r"^[A-Z][A-Z0-9-]+$")
+CURRENT_BOUNDARY = re.compile(
+    r"\b(?:open|partial|unknown|unproved|bounded|not(?:\s+yet)?\s+(?:proved|complete)|"
+    r"does not|cannot|no\s+(?:rank|equation|handoff|source))\b",
+    re.IGNORECASE,
+)
 
 
 class LedgerError(RuntimeError):
@@ -82,9 +87,9 @@ def parse_time(value: str) -> datetime:
     return parsed
 
 
-def status_ids() -> set[str]:
+def status_entries() -> dict[str, dict[str, Any]]:
     authority = load_json(ROOT / "MATH_STATUS.json")
-    return {entry["id"] for entry in authority["entries"]}
+    return {entry["id"]: entry for entry in authority["entries"]}
 
 
 def validate_evidence(reference: str, known_status_ids: set[str]) -> None:
@@ -105,7 +110,8 @@ def validate_ledger(ledger: dict[str, Any]) -> dict[str, Any]:
     events = unique_index(ledger["events"], "event")
     mechanisms = unique_index(ledger["mechanisms"], "mechanism")
     literature = unique_index(ledger["literature"], "literature entry")
-    known_status_ids = status_ids()
+    known_status_entries = status_entries()
+    known_status_ids = set(known_status_entries)
 
     for stage in stages.values():
         expected_root_rank = ade_rank(stage["ade"])
@@ -155,6 +161,17 @@ def validate_ledger(ledger: dict[str, Any]) -> dict[str, Any]:
         )
         for reference in event["evidence"]:
             validate_evidence(reference, known_status_ids)
+        current_states = {
+            known_status_entries[reference]["state"]
+            for reference in event["evidence"]
+            if reference in known_status_entries
+        }
+        if current_states & {"partial", "open"}:
+            current_text = f"{event['meaning']} {event['status']}"
+            require(
+                CURRENT_BOUNDARY.search(current_text) is not None,
+                f"{event['id']}: cites a current partial/open claim without an explicit boundary",
+            )
 
     for mechanism in mechanisms.values():
         for reference in mechanism["evidence"]:

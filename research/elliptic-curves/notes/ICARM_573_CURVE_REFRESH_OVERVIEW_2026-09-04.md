@@ -40,6 +40,9 @@ Mestre--Fermigier fibres, five other commented records, and 47 records with no
 public construction commentary.  These tags organize the intake; they do not
 independently prove provenance.
 
+Primary evidence: [v2 database sweep](../../artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v2.json)
+and [573-curve overview](../../artifacts/generated-results/elliptic-curves/icarm_curve_refresh_475_573_overview_v1.json).
+
 ## Incorporated atlas hits and priority misses
 
 Every appended curve of rank at least 24 received an independent exact rank

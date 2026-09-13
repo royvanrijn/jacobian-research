@@ -39,6 +39,9 @@ nor any specialized rank jump. The productive anti-traces remain explicit
 examples of that distinction. Nor does it exclude covers obtained after a
 base change or lifts ramified at smooth parameter places.
 
+Primary evidence: [controls](../../artifacts/generated-results/elliptic-curves/det1092_bad_fibre_kummer_v1/controls.json)
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_bad_fibre_kummer_v1/independent-replay.json).
+
 ## 1. Audit of completed inputs
 
 **Verified prior applications.** The

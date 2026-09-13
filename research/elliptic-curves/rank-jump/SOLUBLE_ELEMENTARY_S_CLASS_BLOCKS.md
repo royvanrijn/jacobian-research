@@ -238,7 +238,7 @@ Construction and replay used Sage 10.9 and PARI 2.17.3. Each construction
 worker completed inside its 30-second cap. This work changes no active
 search input, output, scoring policy or mathematical-status entry.
 
-## Ranked interpretation and next experiment
+## Ranked interpretation and completed solubility-switch test
 
 1. **Incidence, strongest established block:** the high fibres contain
    large elementary \(S\)-class direct factors whose duals include many
@@ -264,12 +264,10 @@ search input, output, scoring policy or mathematical-status entry.
    exposure information. It supplies no reason to change the search
    budget or chart ranking.
 
-The next falsifiable test should directly probe the missing solubility
-implication: compare strict characters that remain in the same cubic
-arithmetic block under the already retained fixed-cubic deformations,
-but whose rationality changes as witnessed by nonzero CT pairings.
-First compute their common strict subspace at the union of the retained
-bad places. If that subspace contains an obstructed class, the unchanged
-class-field data cannot by itself explain simultaneous rationality.
-If it contains none, retain that negative endpoint; do not enlarge the
-deformation or parameter set.
+That falsifiable test is now complete in
+[the rational/Sha switching theorem](SAME_CLASS_FACTOR_DIFFERENT_SOLUBILITY.md):
+strict characters in the same retained cubic arithmetic block are rational on
+the anchor and Cassels--Tate obstructed on the deformations. Thus an elementary
+\(S\)-class direct factor does not by itself explain simultaneous rationality.
+The result changes neither the exact incidence theorem above nor the closed
+mechanism-work priority.

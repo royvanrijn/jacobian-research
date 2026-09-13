@@ -41,6 +41,9 @@ families. It does not exclude other starting curves, other alternate
 translating sections, longer alternating words, or rational incidence
 on the high-degree curves. It neither constructs nor excludes a seed on302.
 
+Primary evidence: [global gap](../../artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/nontrivial-gap.json)
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_two_fibration_action_v1/independent-replay.json).
+
 ## Reconstructing the actual automorphisms
 
 **Verified application of established elliptic-surface theory.** Work in

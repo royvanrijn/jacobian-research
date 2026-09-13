@@ -26,6 +26,9 @@ prospective member selection remains **UNKNOWN**. No point, parameter or
 subgroup search, new CVP, integer factorization, class group, production
 mutation or later cascade input was used.
 
+Primary evidence: [rational-singular-member classification](../../artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/rational-singular-members.json)
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_norm8_singular_members_v1/independent-replay.json).
+
 ## 1. A precise census boundary
 
 The [complete degree-two census](CURVE302_LOW_DEGREE_MULTISECTIONS_2026-09-07.md)

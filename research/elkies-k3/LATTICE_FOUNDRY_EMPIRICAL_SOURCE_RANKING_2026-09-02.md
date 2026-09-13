@@ -1,6 +1,11 @@
-# Empirical source ranking from equation-construction attempts
+# Empirical source ranking — historical scoring snapshot (2026-09-02)
 
 Date: 2026-09-02.
+
+> **Current-boundary note (2026-09-13).** This is a retained calibration
+> snapshot, not a current construction queue. Its score never certified an
+> equation probability, and prospective work must begin at the separate
+> [rational-marking arithmetic gate](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 ## Outcome
 
@@ -64,7 +69,7 @@ between the frame norm and the MW height.  Nonprimitive rows deliberately get
 unknown correction and pole fields rather than values inferred from an
 unsaturated root sublattice.
 
-## The current empirical signal
+## Historical empirical signal
 
 The six attempted MW1 sources are strongly selected, not a random sample.
 They were tried because the preceding lattice score already made them look
@@ -88,9 +93,9 @@ failure stage contains substantially more routing information than one binary
 failure label.
 
 Second, the only full marked signal is presently the mixed additive NS0048
-profile.  Its `I1*` fibre lowers the short-Weierstrass degree bounds and it
-produces smooth one-dimensional marked loci at two primes.  This is a real
-reason to keep additive-fibre candidates in the next batch.  It is not yet
+profile. Its `I1*` fibre lowers the short-Weierstrass degree bounds and it
+produces smooth one-dimensional marked loci at two primes. This was a real
+reason to retain additive-fibre candidates in the historical batch. It is not
 evidence that additive profiles are generally superior: the conclusion rests
 on one attempted additive source.
 
@@ -140,7 +145,7 @@ about `0.217`.  More importantly, when NS0048 is held out, the remaining five
 all-semistable attempts cannot predict its marked-locus signal.  The generated
 artifact records this failed validation explicitly.
 
-## Which ten to try next
+## Historical diversified ten-row selection (not current work)
 
 The unconstrained top ten are dominated by repeated reduced-Gram rows in
 NS0048 and NS0043.  That is a poor experimental allocation: one hidden
@@ -172,7 +177,7 @@ is a diversified test batch, not a wholesale rewrite of the lattice score.
 The fifth row deliberately preserves a semistable control with the same exact
 features as the attempted NS0011 source but a different reduced Gram.
 
-## How to obtain a real success model
+## Historical requirements for a success model
 
 Every new run should append one attempt record before inspecting the outcome.
 The record needs:
@@ -186,27 +191,27 @@ The record needs:
 - wall time, memory, and termination reason;
 - characteristic-zero lift, reconstruction, substitution, and equation status.
 
-The next batch should contain the ten rows above plus matched controls selected
-before running: several all-`A` low-pole rows, several additive rows outside
-the top score, and random primitive rows from score deciles.  This breaks the
-current selection loop and makes failures interpretable.
+The original proposed batch contained the ten rows above plus matched controls
+selected before running: several all-`A` low-pole rows, several additive rows
+outside the top score, and random primitive rows from score deciles. This would
+have broken the selection loop and made failures interpretable.
 
-After at least five independent marked-locus successes, fit two small gate
-models rather than one monolith:
+After at least five independent marked-locus successes, the recorded plan was
+to fit two small gate models rather than one monolith:
 
 ```text
 P(prescribed fibre | static lattice features)
 * P(marked section/locus | prescribed fibre, static features).
 ```
 
-Use no more than three or four predeclared predictors initially, Firth or a
-weakly regularized Bayesian logit, and leave one NS class out at a time.  Only
-after multiple characteristic-zero equations succeed should the response be
-renamed from "equation precursor" to "equation success".  Until then, a top
-ten is an allocation rule for the next computation, not a mathematical
-existence claim.
+The plan limited itself to three or four predeclared predictors, Firth or a
+weakly regularized Bayesian logit, and leave-one-NS-class-out validation. Only
+multiple characteristic-zero equations could have renamed the response from
+"equation precursor" to "equation success." The top ten was an allocation
+rule, not a mathematical existence claim; this historical plan is not current
+work.
 
-## Replay
+## Historical replay
 
 Generate and check the deterministic ranking with
 

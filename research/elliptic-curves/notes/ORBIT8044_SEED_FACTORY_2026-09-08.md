@@ -1,6 +1,12 @@
 # Orbit8044: a parametrized M18 seed factory
 
-**Implemented and validated alongside the running determinant1092 funnel.**
+> **Historical finite-factory record.** The pilot and its six V3 admissions
+> completed; the prepared larger batch was never launched. Commands and queue
+> mechanics below preserve evidence only and do not authorize a producer,
+> consumer, resume, or budget expansion. The [current elliptic-curve programme](../README.md)
+> selects new work.
+
+**Implemented and validated alongside the historical determinant1092 funnel.**
 All seven reduced rational parameters of height at most2 produced independently
 certified M18 subgroups in57.998 supervised seconds. One is the already known
 small conic fibre; exact rational-isomorphism deduplication admitted the other
@@ -117,28 +123,9 @@ all six queue files unchanged. The V3 consumer drains the queue snapshot
 present at invocation; another invocation can consume later arrivals within
 the same remaining aggregate budget.
 
-The [pure arithmetic/queue contracts](../cas/orbit8044_seed_factory.py) and
-[Sage worker](../cas/orbit8044_seed_factory_worker.py) are new files. The live
-original90 campaign, completed conic follow-up and all frozen V3 sources are
-preserved.
-
-From the repository root, inspect the running pilot consumer:
-
-```sh
-python3 research/elliptic-curves/cas/run_orbit8044_seed_factory.py status \
-  --directory research/artifacts/local/elliptic-curves/orbit8044-seed-factory-pilot-v1
-```
-
-The larger batch is already frozen. These separate commands start its producer
-and consume its resulting queue; they are not implicitly run by `freeze`:
-
-```sh
-python3 research/elliptic-curves/cas/run_orbit8044_seed_factory.py launch \
-  --directory research/artifacts/local/elliptic-curves/orbit8044-seed-factory-production-v1
-python3 research/elliptic-curves/cas/run_orbit8044_seed_factory.py launch-v3 \
-  --directory research/artifacts/local/elliptic-curves/orbit8044-seed-factory-production-v1
-```
-
-The same commands resume within existing budgets. A fresh protocol uses
-`freeze --parent-run ... --max-height H --maximum-parameters N`, with explicit
-`--exclude-run` snapshots as needed. Source/input/runtime changes fail closed.
+The [pure arithmetic/queue contracts](../cas/orbit8044_seed_factory.py),
+[Sage worker](../cas/orbit8044_seed_factory_worker.py), and controller remain
+historical evidence implementations. The pilot's 14 proof stages and six V3
+admissions are terminal; the prepared 4,096-address batch remains unlaunched.
+Neither queue can be resumed from this record. A new factory requires a new
+frozen domain, exclusion snapshot, budget, and replay contract.

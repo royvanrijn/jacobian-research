@@ -4,7 +4,7 @@ Choose a claim in [MATH_STATUS.json](MATH_STATUS.json) or the
 [research catalogue](index/README.md), read its canonical source, and identify
 the smallest check that establishes the required endpoint.
 
-## Navigation checks: no research calculations
+## Navigation and small regression checks
 
 These commands use the Python standard library and can run from the repository root:
 
@@ -15,8 +15,9 @@ python3 research/scripts/research.py show EC-CURVE302-RECOVERED-MW17-PARENT
 ```
 
 They validate navigation, claim metadata, checker-source hashes, lesson references
-and preserved snapshots. They do not replay mathematical certificates, discover
-factors, rebuild curve inventories or run CAS searches.
+and preserved snapshots. Small regression controls include the literal NS0031
+period-group counter-witness. They do not rebuild curve inventories, replay
+large certificates or run CAS searches.
 
 ## Exact replay
 
@@ -27,6 +28,30 @@ now resolve from `research/archive/non-elliptic/`. Commands are preserved as
 historical evidence, not a current execution queue.
 The [elliptic-curve replay guide](elliptic-curves/REPRODUCE.md) and canonical
 proof notes specify the relevant inputs, versions and limits.
+
+The level-474 H3 rational base has a current Sage 10.9
+quadratic-Chabauty and finite Mordell--Weil-sieve certificate:
+
+```sh
+sage elkies-k3/scripts/certify_h3_level474_rational_points_qc.sage --check
+```
+
+It fetches only a SHA-pinned upstream implementation when its local cache is
+empty. The historical Magma output remains unavailable; the source-family
+replay still has its separately recorded input boundary.
+Do not replace those missing inputs by downloading a newer external copy.
+
+For NS0031, the [current proof note](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+withdraws the original K3 exclusion. `make verify-ns0031-arithmetic` checks only
+the retained modular arithmetic; `make verify-ns0031-period-group` checks the
+exact counter-witness to its former period-map argument. Neither decides
+rational K3 existence.
+
+For the three retained six-fibre cohorts, `make verify-fresh6-retained-ranks`
+checks 37 subgroup endpoints using saved points and sufficient reduction
+primes. The [replay boundary](elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md#retained-rank-replay)
+distinguishes this small check from full search/map replay, a cached receipt
+check and conductor factorization.
 
 1. Read the full claim scope and its checker/software-lock fields.
 2. Check that the retained certificate and input paths exist.

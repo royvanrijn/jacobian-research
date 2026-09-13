@@ -92,8 +92,13 @@ theorems remain correctly gated:
 ## Arithmetic gate
 
 No custom row in this batch is currently authorized for equation-level work:
-30 are `UNKNOWN`, while `NS0024` and `NS0031` are arithmetically excluded over
-`QQ`.  In particular, their geometric spectra remain regression data only.
+the recorded geometric spectra do not certify rational markings. NS0024
+retains its exclusion; NS0031 is `UNKNOWN` after the
+[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+Use the current arithmetic classifier for dispositions, not the old sweep
+certificate's historical marking labels. Joining the 32 eligible surface IDs
+to that classifier gives 31 `UNKNOWN` rows and the NS0024 exclusion; only
+NS0031 changed disposition. No spectral census was repeated.
 For `NS0021`, the next certified step is to embed its displayed split order
 in `M_2(QQ)`, derive the exact congruence conditions and signature, and
 compute the stable marking subgroup.  A rational noncuspidal non-CM lift is
@@ -110,6 +115,19 @@ Every deepest class and a deterministic stride through all other classes is
 repeated with 256-bit MPFR Gram--Schmidt arithmetic.  The runner checkpoints
 after each complete frame.
 
+The frozen certificate pins the [pre-correction classifier](../archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank19-arithmetic-marking-classifier-v1.json.txt)
+at SHA-256 `6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230`.
+It remains an input to the historical replay; current marking decisions come
+from `EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER`.
+
+The commands below are full census entry points. `--check` still computes
+every frame missing from its checkpoint before comparing the output. The
+checkpoint configuration includes the classifier hash, so the current
+classifier cannot reuse a pre-correction checkpoint. The producer also deletes
+the checkpoint after a successful run. A historical replay needs the frozen
+classifier at its original logical path in an isolated replay checkout.
+Updating the 32 marking labels requires only a keyed join of retained results.
+
 ```bash
 sage -python elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage
 sage -python elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage --check
@@ -118,5 +136,7 @@ sage -python elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage --check
 The sweep constructs no K3 equation or rational marking, performs no
 specialization, finds no point, and computes no Selmer group.  It therefore
 does not prove a rank jump or turn a bounded search miss into point absence.
+The [earlier note](../archive/elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.before-2026-09-13.md.txt)
+is preserved alongside the original certificate and producer.
 
-<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 9dc0e4d23f677392 -->
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 582b0c9d781037fb -->

@@ -1,9 +1,15 @@
-# First certified seeds and a rank21 cascade from the determinant1092 funnel
+# First certified seeds and a rank21 result from the determinant1092 funnel
+
+> **Historical execution snapshot.** This note certifies three M18 fibres and
+> the rank21 subgroup at `s=1926/2699`. Its V3 history later ended after568
+> charts with an independent terminal replay and no further gain; see the
+> [seed-density ledger](DET1092_SEED_DENSITY_AND_LIMITING_LATTICE_2026-09-08.md).
+> The [current elliptic-curve programme](../README.md) selects new work. This
+> note does not authorize a controller restart.
 
 **Verified examples.** Three fibres from the audited ten-million-parameter
 population have independently proved M18 subgroups. The fibre at
-`s=1926/2699` has subsequently reached a separately verified rank21 subgroup
-in unchanged V3. This certifies a completed epoch; its cascade remains active.
+`s=1926/2699` reached a separately verified rank21 subgroup in unchanged V3.
 
 | Reduced parameter `s` | Selection | Certified lower bound in this package | `j` numerator/denominator bits |
 |---|---|---:|---:|
@@ -16,7 +22,8 @@ retains equations, ordered points, exact generic-section prefixes and complete
 finite-group proofs. All three equations are unmatched under rational
 isomorphism in the pinned630 public and201 local equations. This comparison
 does not establish literature-wide novelty, a conductor improvement, or an
-exact rank. The original90-fibre search continues under its frozen protocol.
+exact rank. The original90-fibre exposure and its follow-ups are retained
+historical evidence, not a current execution queue.
 
 ## Arithmetic selection and conic confirmation
 
@@ -72,13 +79,13 @@ Full search-policy replay is a separate terminal check.
 The first main-funnel seed, `s=1117/2193`, completed114 V3 charts with no further
 certified gain. Its full independent landscape, map and point-cloud replay
 passed, including the mod3 and mod5 audits. This is a bounded no-gain result.
-The split follow-up is sequential: the second independently proved M18 waits
-for the current cascade. Each cascade retains unchanged V3 settings, a
-14,400-second combined search/replay cap, and3GiB RSS. Each seed proof and
-standalone seed verification has a120-second cap. There are exactly three
-fixed follow-up fibres, with one attempt per stage.
+The three fixed split follow-ups used unchanged V3 settings, a14,400-second
+combined search/replay cap and3GiB RSS, with one attempt per stage. The later
+rank21 fibre completed its terminal568-chart run without another certified
+gain. These are historical bounded exposures; neither result is a rank upper
+bound or a current search instruction.
 
-## Reproduction
+## Retained checker
 
 The [follow-up controller](../cas/run_det1092_split_followup.py) freezes the
 three extracted equation rows, confirms all seeds, independently verifies
@@ -92,6 +99,9 @@ sage -python research/elliptic-curves/cas/verify_det1092_funnel_seed.sage \
   --output research/artifacts/local/elliptic-curves/det1092-funnel-conic-split-seeds-v1/seeds/funnel-002537010/standalone-replay.json
 ```
 
-This package records verified lower bounds at a fixed checkpoint. Later
-progress belongs to the live controller and subsequently verified certificates;
-the rank32 and conductor-above-rank22 objectives remain open.
+This checker is retained for certificate audit, not routine cleanup: it invokes
+Sage and writes a replay output. The compact package establishes the stated
+rank lower bounds, while the full terminal receipt remains a local replay
+input. Preserve that receipt rather than reconstructing or rerunning it. The
+rank32 and conductor-above-rank22 objectives remain open through the current
+programme.

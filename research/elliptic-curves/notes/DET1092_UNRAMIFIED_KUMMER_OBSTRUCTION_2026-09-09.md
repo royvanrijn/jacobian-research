@@ -29,6 +29,9 @@ coefficients in `1,theta,theta^2` are allowed. This is an obstruction to
 globally unramified lifts of a nongeneric **mod-2 class**, not an obstruction
 to all nongeneric rational points or all multisections.
 
+Primary evidence: [protocol](../../artifacts/generated-results/elliptic-curves/det1092_unramified_kummer_v1/protocol.json)
+and [replay](../../artifacts/generated-results/elliptic-curves/det1092_unramified_kummer_v1/replay.json).
+
 In particular, at a smooth rational parameter `t0`, a class
 `delta(P) outside delta(M17(t0))` cannot be the specialization of such an
 unramified lift. Specialization means restriction of the extended torsor;

@@ -98,7 +98,7 @@ def validate(data: dict, entries: list[dict], root: Path, *, check_reviews: bool
             changed = stale(review, entries, root)
             assert not changed, f"{review['id']}: source-level review needs reconciliation: {', '.join(changed)}"
     if require_complete:
-        remaining = {e['id'] for e in entries if is_active(e) and e['state'] == 'partial'} - set(ids)
+        remaining = {e['id'] for e in entries if e['state'] == 'partial'} - set(ids)
         assert not remaining, 'partial results not yet reviewed: ' + ', '.join(sorted(remaining))
     if require_checker_review:
         remaining = {e['id'] for e in entries if is_active(e) and e['checker'] is None} - absence_ids

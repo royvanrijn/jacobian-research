@@ -4,11 +4,11 @@
 
 [MATH_STATUS.json](MATH_STATUS.json) is the sole mathematical-status authority. This is a compact navigation view. Read a claim's full scope before using it; a proved bounded experiment does not become an unrestricted theorem.
 
-**617 claims:** 515 proved, 78 partial, 3 open, 3 parked, 16 archived, 2 falsified.
+**625 claims:** 521 proved, 79 partial, 3 open, 4 parked, 16 archived, 2 falsified.
 
 [Complete catalogue](index/README.md) · [Algorithmic lessons](knowledge/ALGORITHMS.md) · [Scoped failed routes](knowledge/FAILED_ROUTES.md) · [Replay guide](REPRODUCE.md)
 
-The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 901 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
+The active programme is elliptic curves and supporting K3 constructions. [Other programmes](archive/non-elliptic/README.md) retain 903 claims in the same authority with `programme_status: archived`; their mathematical states are unchanged.
 
 From the repository root, read full scope, proof type, assurance, checkers, software locks, dependencies and replacements without executing anything:
 
@@ -22,17 +22,18 @@ The `artifact_hash` field pins checker source, not its generated output. Indepen
 
 | ID | State | Result / canonical source |
 |---|---|---|
-| `OP-EC-NEXT` | open | [Parallel rank-jump experiments and rank-32 certification](elliptic-curves/README.md) |
+| `OP-EC-NEXT` | open | [Select productive candidates toward a certified rank32 subgroup](elliptic-curves/README.md) |
 | `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` | open | [Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20](elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
-| `OP-EC-RANK-JUMP-MECHANISM-20260910` | open | [Connect exceptional multisection ancestry to independent rank arithmetic and strict descent](elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) |
+| `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 
 ## Parked problems
 
 | ID | State | Result / canonical source |
 |---|---|---|
-| `OP-EC-RANK-CONDUCTOR` | parked; replaced by ECR30, EC-R21-ICARM, OP-EC-NEXT | [Exceptional elliptic rank with record conductor (closed disjunction)](elliptic-curves/README.md) |
+| `OP-EC-RANK-CONDUCTOR` | parked; replaced by ECR30, EC-R21-ICARM, OP-EC-NEXT | [Exceptional elliptic rank with record conductor (closed disjunction)](elliptic-curves/notes/ORIGINAL_RANK_CONDUCTOR_TARGET_CLOSED.md) |
 | `OP-K3-NS0024-ARITHMETIC-MW17` | parked; replaced by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 | [Former NS0024 arithmetic MW17 candidate](elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
-| `OP-EC-CURVE302-CONSTRUCTION-RECOVERY` | parked; replaced by EC-CURVE302-RECOVERED-MW17-PARENT | [Completed: explicit alternative302 parent with full generic MW17 basis](elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) |
+| `OP-EC-CURVE302-CONSTRUCTION-RECOVERY` | parked; replaced by EC-CURVE302-RECOVERED-MW17-PARENT | [Completed: explicit alternative302 parent with full generic MW17 basis](elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) |
+| `OP-EC-RANK-JUMP-MECHANISM-20260910` | parked | [Parked: explain rank jumps beyond the completed scoped obstructions](elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) |
 
 ## Falsified claims
 
@@ -46,7 +47,7 @@ The `artifact_hash` field pins checker source, not its generated output. Indepen
 | Area | Registered claims |
 |---|---:|
 | [Elliptic curves and rank jumps](index/elliptic-curves.md) | 361 |
-| [K3 constructions and lattice algorithms](index/elkies-k3.md) | 256 |
+| [K3 constructions and lattice algorithms](index/elkies-k3.md) | 264 |
 
 ## Primary theorems
 

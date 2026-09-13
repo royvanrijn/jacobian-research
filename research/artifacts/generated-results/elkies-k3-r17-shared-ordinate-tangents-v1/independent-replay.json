@@ -1,0 +1,14 @@
+{
+  "elapsed_seconds": 0.989,
+  "excluded_pairs": 136,
+  "genus_lower_bound_counts": {
+    "86": 1,
+    "87": 135
+  },
+  "goal_complete": false,
+  "independence_not_assessed": true,
+  "minimum_genus_lower_bound": 86,
+  "no_positive_candidate": true,
+  "scope": "One tangent from each unordered pair of the 17 published generic basis sections; both ordinate signs give the same branch class. Other words, iterates and identities remain outside this fixed gate.",
+  "status": "PASS_136_SHARED_ORDINATE_TANGENT_GENUS_EXCLUSIONS"
+}

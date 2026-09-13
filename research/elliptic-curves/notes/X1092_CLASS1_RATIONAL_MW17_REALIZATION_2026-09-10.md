@@ -1,9 +1,15 @@
 # X1092 class 1: an exact rational MW17 realization
 
-**Current operation:** [ordinary prospective search is running](CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
-on the byte-frozen parent. The strict-class prerequisite in the original
-realization handoff below has been removed for ordinary search. The separate
-arithmetic construction intake remains UNKNOWN; other parent classes are paused.
+> **Historical realization and exposure record.** The following ordinary
+> prospective search closed at 64 ranked fibres and 16 independent controls
+> without a gain beyond the certified lower bound 17. Its protocol is retained
+> in [the terminal report](CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md),
+> not as an executable queue. The [current elliptic-curve programme](../README.md)
+> selects new work.
+
+The strict-class prerequisite in the original realization handoff was removed
+for that completed ordinary search. The separate arithmetic construction intake
+remains UNKNOWN; other parent classes are paused.
 
 **Completed:** a primitive rational marked nef `U`, an exact rational elliptic
 equation and birational maps to the recovered source K3, and seventeen rational
@@ -14,8 +20,9 @@ nonisometric to curve302's class **6**.
 **Still UNKNOWN:** construction of a new arithmetic strict class modulo the
 full inherited image on this marked parent. Four bounded generic carrier
 constructions passed; none is asserted to be an arithmetic strict class.
-The strict preflight fails closed. **No parameter panel was commissioned or
-run.** There is no new specialized rank or conductor claim.
+The strict preflight fails closed. **No parameter panel was commissioned or run
+under that strict intake.** The separate ordinary exposure above did not create
+a new specialized rank or conductor claim.
 
 ## Exact transport and the prescribed witness
 

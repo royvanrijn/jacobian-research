@@ -192,7 +192,7 @@ d^2 = denominator(4*x(P)),
 and verifies that each square correction is supported only above the declared
 bad primes.
 
-## Interpretation and next experiment
+## Interpretation and unscheduled residual-Selmer gate
 
 The theorem supplies a localization layer for the failed full-BNF front door.
 A `+12` record does not merely coexist with a large auxiliary class group: its
@@ -220,23 +220,19 @@ at `S` must not be identified with first taking the valuation kernel in the
 full class group.  Any association found for this localized feature therefore
 has its own interpretation.
 
-The constructive experiment should instead:
-
-1. compute a certified residual 2-Selmer basis modulo the specialized generic
-   subgroup;
-2. materialize basis classes and selected compatible combinations as explicit
-   2-coverings, with complete local-solubility certificates;
-3. use certified Cassels--Tate information as an obstruction and prioritization
-   layer, without promoting its radical to rational points; and
-4. search the compatible coverings for rational points, map every witness back
-   to `E(Q)`, certify independence modulo the growing known subgroup, and
-   iterate.
+The only constructive route retained from this comparison is the
+[canonical rational-solubility and residual-Selmer theorem package](RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md).
+It first requires a complete residual 2-Selmer basis on one declared fibre,
+actual 2-coverings with local-solubility certificates, and an independence
+certificate for each rational witness. Cassels--Tate data can obstruct or
+prioritize classes; it cannot turn a radical or an isotropic class into a
+rational point.
 
 For an `MW17` rank-32 target, success means producing fifteen independent
 rational directions, not merely exhibiting a residual Selmer space of
-dimension at least fifteen.  The present six rows support neither that
+dimension at least fifteen. The present six rows support neither that
 construction nor a population-level correlation, Selmer upper bound, or
-rank-search gate.
+rank-search gate. No calculation is scheduled by this note.
 
 ## Replay
 

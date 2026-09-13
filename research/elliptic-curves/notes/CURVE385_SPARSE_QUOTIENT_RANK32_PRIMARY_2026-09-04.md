@@ -110,12 +110,17 @@ python3 -m unittest -v \
 ```
 <!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
 
-## Next gate
+## Historical next-stage boundary
 
-The next precommitted stage is
-`alternate-a-weight-at-most-2`, containing 3,268 new charts after exact
-physical-word deduplication.  The protocol intentionally requires explicit
-stage-limit escalation before running it.  The primary result supplies
-evidence that the natural low-weight heuristic does not transfer naively from
-the three-bit recovery cylinder to this twelve-bit quotient; it does not by
-itself decide whether the alternate-basis stage is worthwhile.
+The retained `alternate-a-weight-at-most-2` plan has 3,268 deduplicated
+charts, but it was not launched.  The later
+[height-compression builder pilot](HALF_LATTICE_HEIGHT_COMPRESSION_MECHANISM_2026-09-04.md)
+tested a separate, committed sixteen-chart control with no group growth; it
+does not validate or complete this alternate basis stage.  Current rank-32
+work is selected through the [programme map](../README.md), so this dated plan
+does not authorize a stage-limit escalation or restart.
+
+The primary result still shows only that the natural low-weight heuristic did
+not transfer naively from the three-bit recovery cylinder to this twelve-bit
+quotient.  It supplies neither a rank upper bound nor evidence that the
+unrun alternate stage is worthwhile.

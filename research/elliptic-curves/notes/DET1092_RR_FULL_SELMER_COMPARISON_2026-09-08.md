@@ -221,12 +221,11 @@ unit arithmetic as a major part of the computation. The curve
 `TwoCoverDescent` routine is a different object and must not substitute for
 the Jacobian group.
 
-**Implementation plan, not a completed theorem.** Continue with local
-Sage/PARI arithmetic and small independently checkable custom components:
-resolve the four anchor cases and83 unresolved reduction-test pairs, then
-identify and cover every other required place with certified local
-squareclass arithmetic. A failed reduction test does not establish intrinsic
-bad reduction. The complete real
+**Unscheduled implementation boundary, not a completed theorem.** A future
+local Sage/PARI implementation would first resolve the four anchor cases and83
+unresolved reduction-test pairs, then identify and cover every other required
+place with certified local squareclass arithmetic. A failed reduction test
+does not establish intrinsic bad reduction. The complete real
 and 2-adic images, including their true/fake kernel distinction, are now
 certified and spanned by inherited subgroups.
 A full global
@@ -235,8 +234,8 @@ unramified class-group contribution; a span of known rational classes or
 trial-prime support is not a substitute. There is currently no certified
 completeness algorithm for that global step in this repository.
 
-No broad class-group calculation is authorized by these scripts. Any
-future run must retain its full/conditional status, field and
+No broad class-group calculation is authorized by these scripts. Any future
+run must retain its full/conditional status, field and
 unit certificates, complete required local support, raw group/map data,
 and all failures. Neither heuristic class-group bounds nor a timeout may
 produce an unconditional Selmer dimension. Global point-search entrypoints

@@ -135,6 +135,31 @@ class RetrievalTests(unittest.TestCase):
                 with self.assertRaisesRegex(AssertionError, 'does not depend on it'):
                     render_status.validate_index(index)
 
+    def test_assurance_flags_are_not_inferred_from_proof_type_or_checker(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / 'elliptic-curves/proof.md'
+            checker = root / 'elliptic-curves/checker.py'
+            source.parent.mkdir(parents=True)
+            source.write_text('A finite exact statement.\n')
+            checker.write_text('print("fixed finite check")\n')
+            digest = 'sha256:' + __import__('hashlib').sha256(checker.read_bytes()).hexdigest()
+            entry = dict(id='FINITE', kind='theorem', state='proved',
+                         title='Finite exact statement', scope='Only this finite statement is proved.',
+                         canonical_source='elliptic-curves/proof.md', dependencies=[],
+                         checker='elliptic-curves/checker.py', proof_type='exact_symbolic',
+                         independent_replay=False, formal_verification=False,
+                         external_review=False, artifact_hash=digest, software_lock=[],
+                         supersedes=[], closes_problems=[], narrows_problems=[], consumers=[],
+                         invalidates_assumptions=[], replaced_by=[], priority='derived')
+            with patch.object(render_status, 'ROOT', root), patch.object(render_status, 'CORE_ORDER', []), \
+                    patch.object(render_status, 'ACTIVE_OPEN', set()):
+                for proof_type in ('exact_symbolic', 'formal', 'reproduction'):
+                    with self.subTest(proof_type=proof_type):
+                        render_status.validate_index({'schema_version': 6,
+                                                      'authority': 'MATH_STATUS.json',
+                                                      'entries': [{**entry, 'proof_type': proof_type}]})
+
     def test_every_registered_claim_is_in_exactly_one_area_catalogue(self):
         entries = [claim("A", source="verified/core.md"), claim("B", source="HC4_TEST.md"),
                    claim("C", state="partial"), claim("D", state="archived"),

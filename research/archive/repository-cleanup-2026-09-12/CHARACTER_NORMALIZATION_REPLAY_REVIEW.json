@@ -1,0 +1,1276 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "boundary": "Source review and metadata replay only for singular pencils; no discriminant, trace, lattice or section reconstruction. Smooth finite-polynomial replay is recorded separately below.",
+  "singular_atlases": [
+    {
+      "chart": "11952",
+      "certificate": "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json",
+      "certificate_sha256": "2e20206614e17cad992e98742f917c6a50abccd39799a618ad6126fc62733f13",
+      "input_bytes": 79157802,
+      "inputs": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv": {
+          "sha256": "85f19177d9da3eac695b432cb5440653f70ee72d20d19c71bc77fc14ba8cdb69",
+          "bytes": 12614328
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-06517-07517-v1.json": {
+          "sha256": "9560ab7585299388a27f99ce68be420d7429c60ec5a2d88ae2969498a87eff98",
+          "bytes": 968996
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-07517-08517-v1.json": {
+          "sha256": "92854160234b36860ba7c4903d48b8fd0d52d0b1426662e77fc1e4f7757d3bfa",
+          "bytes": 968562
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-08517-09517-v1.json": {
+          "sha256": "3b4965daf30fc6bdae201c1ad4b651e5f5910b3826d0f29c65a26044de8c5778",
+          "bytes": 968343
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-09517-10517-v1.json": {
+          "sha256": "133a22ee82fd64b47a191a130b5a6c704ef56e7372f8cd7e97ecfae771609b21",
+          "bytes": 968384
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-10517-11517-v1.json": {
+          "sha256": "bc1b8cc3f373d5454cf81210ac4e31335852c0d44041aabde2681dbe603e18e1",
+          "bytes": 968782
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-11517-12517-v1.json": {
+          "sha256": "3af949c8a52e92d13d2f8210a80edcb0c9bf1aebc0158154d83f420c1fe83ee7",
+          "bytes": 969287
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-12517-13517-v1.json": {
+          "sha256": "3ce759e8cd6b070a5ffb9deda05b0dc95b49e48d043e005c73d8d0184d217d63",
+          "bytes": 969234
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-13517-14517-v1.json": {
+          "sha256": "38e6c3286d374c72971b44f18eb61cd88c4031b72ca177cdf009a811716895b3",
+          "bytes": 969019
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-14517-15517-v1.json": {
+          "sha256": "b8f31dbb3135868f6fa520f936153f3913fa19239036f1a7eb00d5cc0a1b4719",
+          "bytes": 969029
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-15517-16517-v1.json": {
+          "sha256": "c7c82a76335291a9fc5595d5d11d02b2d844124e816a9754933136c26df80669",
+          "bytes": 968999
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-16517-17517-v1.json": {
+          "sha256": "623ae736d53224a59cec28b787b92066ff58c82e508f828dfa105abb2c940297",
+          "bytes": 969482
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-17517-18517-v1.json": {
+          "sha256": "e78911654872c92a5dd7fc1f57b2a8ec75e31e6c7dee84ee8bcdbfb766eb08fd",
+          "bytes": 969755
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-18517-19517-v1.json": {
+          "sha256": "416c1c5443c67eef58d198a9e8ca1be4f72fc558e1d6bdb78c4f0e4636e94c0d",
+          "bytes": 969922
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-19517-20517-v1.json": {
+          "sha256": "d29f2e8b0c68cf85bd31f9f577165519686e471723c9da9bd445befe0fc487ae",
+          "bytes": 969346
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-20517-21517-v1.json": {
+          "sha256": "97d9aaf673db7b700fe39c7f1068e682aa9fb5c758bc690c61001634b9ed34d4",
+          "bytes": 969152
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-21517-22517-v1.json": {
+          "sha256": "59f8f102d6686ea4130f8a37882e5b0124ed301a8149a372a717c42506c2b01d",
+          "bytes": 969243
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-22517-23517-v1.json": {
+          "sha256": "aa9f2615196b008204b9303f4a236e204a7ee445e9cf69814c026e6f9b48715f",
+          "bytes": 969301
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-23517-24517-v1.json": {
+          "sha256": "519888c4dd54911dc832d5d3b379840f725066edeb9c9a99189924505c21e36a",
+          "bytes": 970381
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-24517-25517-v1.json": {
+          "sha256": "8c126859e4ce932bf4bdd1d0c01c391fa44c5ed65dee537e3612ee4bc57fd72d",
+          "bytes": 971015
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-25517-26517-v1.json": {
+          "sha256": "5f762e3df3731d249f1e57ca06708519472e0ba94fa2940e640c2075ce1b1fac",
+          "bytes": 971239
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-26517-27517-v1.json": {
+          "sha256": "a27684a759bc2dc10346834e39d1c8a46edbb3c6c96e07b2b52a40c1fed29af0",
+          "bytes": 970971
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-27517-28517-v1.json": {
+          "sha256": "e13cc28ab6cb211825e6a6e4a3a6db37efd5dbb9119c016f370405267a7399cf",
+          "bytes": 970844
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-28517-29517-v1.json": {
+          "sha256": "14b89870ba2c8cdc5c86a607b7a07115932a1f11d535965534513b91f6cd665d",
+          "bytes": 970760
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-29517-30517-v1.json": {
+          "sha256": "f9a220b737abccf0ef12a1eb4fced5a7e0c1200577f3a171081be0823f63000e",
+          "bytes": 970953
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-30517-31517-v1.json": {
+          "sha256": "5e4933c7971c8cd424554d0af775455d2f094bfd21d85b1cf5ade1f7552aed5d",
+          "bytes": 971394
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-31517-32517-v1.json": {
+          "sha256": "86f09ad8f028d95a86169249fca4926e6e60b3d68b49560b4eb8eac69a8b4b0d",
+          "bytes": 971625
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-32517-33517-v1.json": {
+          "sha256": "f08bd42764a2ea8459b942ebe67f96154c7c5688f7a228e26c5a249db5135f11",
+          "bytes": 971575
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-33517-34517-v1.json": {
+          "sha256": "e445296d42d06bf8117ce4a46177baaa2bb43c1ffba822f029fd40c2bebb686d",
+          "bytes": 971301
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-34517-35517-v1.json": {
+          "sha256": "dad25a725f7a031d5d9e3420cff39bcdb48a4dbed6df2f6ad4f0aabd4ea66aa5",
+          "bytes": 970967
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-35517-36517-v1.json": {
+          "sha256": "50ea82840e97826b30f4a3a91de416690185084c77f3f340f8c9849563f4f303",
+          "bytes": 970915
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-36517-37517-v1.json": {
+          "sha256": "e0dd752e102cbdf52a95cf7c69e95b6fe44ff5c8c81e693e860c153439c1e17c",
+          "bytes": 971135
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-37517-38517-v1.json": {
+          "sha256": "dce931bb839f1e13880c936da5d9a645d738718b0f199f3f524117da548506ad",
+          "bytes": 971642
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-38517-39517-v1.json": {
+          "sha256": "10aaeab843cf33ac48b87c4b85c3ffd1ac33560ae6f2274ef473a5c6a6b884fd",
+          "bytes": 971806
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-39517-40517-v1.json": {
+          "sha256": "f1c2c53b9f84a9c72bba815170e20cde3492a3631d31dd22f3dfb5768877763a",
+          "bytes": 971840
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-40517-41517-v1.json": {
+          "sha256": "d8c5b62bf4f6c1aec1c1bf2c87c6f01db820fc7193136b3cb4cad425f5d5027c",
+          "bytes": 971623
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-41517-42517-v1.json": {
+          "sha256": "e23f3d9b600d21d1ddecce219e7ed5b3ecb9262367fb995c6a88a68cde2d6017",
+          "bytes": 971523
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-42517-43517-v1.json": {
+          "sha256": "854e5d16d9fcc782de2d5998efe123a62ba8f215d5a38e9ecd8e81f9631358b3",
+          "bytes": 971500
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-43517-44517-v1.json": {
+          "sha256": "898fccdffc0a17b0c488846b8ce23685e94428431fe38c74071305e490b9e9a5",
+          "bytes": 972029
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-44517-45517-v1.json": {
+          "sha256": "2363c1914d8b983a3cffdc91492d0ccdba3f5d681ef25494510bdeffe45fa152",
+          "bytes": 972271
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-45517-46517-v1.json": {
+          "sha256": "24c6c1a4c9515f0f61825e3bde1bd0d24f2471d2dbf60693e0ca750e3512b87f",
+          "bytes": 972227
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-46517-47517-v1.json": {
+          "sha256": "4f14815af350d5d889d1dea36996f1217f980d1455923d254445f25157384997",
+          "bytes": 971719
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-47517-48517-v1.json": {
+          "sha256": "fb9ac8971d19cde31bb8891d259083c35ecbabafaa5c4035135ac1e7f1e0bed1",
+          "bytes": 971554
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-48517-49517-v1.json": {
+          "sha256": "83d08323d630befe6e65dd0ddb12f37c5ecab5172d4f79f330031774511fc98f",
+          "bytes": 972314
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-49517-50517-v1.json": {
+          "sha256": "a3f687bd3eb63c706b30e08b8a43661995a652653eade47ff0589a24a53edc61",
+          "bytes": 972364
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-50517-51517-v1.json": {
+          "sha256": "6c449d99c4a133344de3e123daff1daf62d610b7ae22a1a57054968a344c64d9",
+          "bytes": 972387
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-51517-52517-v1.json": {
+          "sha256": "d6843eb7c9dd34239977eb4e226211d1c523787120995ec9e79b987144469781",
+          "bytes": 971913
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-52517-53517-v1.json": {
+          "sha256": "c3a3ee8321097a494bc20bd95a3227432ec59f773c8ba42b33a4243cb129f661",
+          "bytes": 972481
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-53517-54517-v1.json": {
+          "sha256": "48ce112e65667b80ae900bdfdac43c5c37f56bfa903e695a69e53f036e7e00e0",
+          "bytes": 972778
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-54517-55517-v1.json": {
+          "sha256": "7b0385ce3bbaced4a8417180cb2b0f40326940123155920d8c1e8c44382a547a",
+          "bytes": 972234
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-55517-56517-v1.json": {
+          "sha256": "d39be48c35ad5c3cdabbbc40e57b2ccc0944dd4cb331f4e95e9c695fda41a2af",
+          "bytes": 972561
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-56517-57517-v1.json": {
+          "sha256": "a3ee021573ce2086422e5a1d783aea8d25d11ea351adfc2a113a280ecb551ecb",
+          "bytes": 784900
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-57517-58517-v1.json": {
+          "sha256": "23b60d5a7eda234e5720fb4166552680ad551ff5f4caad9dd8496e2062dbad99",
+          "bytes": 788695
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-58517-59517-v1.json": {
+          "sha256": "ca7e7cdc6c7b00496004e4cb4dd35eb8c512aebf234c9e8f243adaa2d7f7ace4",
+          "bytes": 785859
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-59517-60517-v1.json": {
+          "sha256": "7321c22d98dc359c63b5b78e15b387b0d4adceeda7bdc26b260aa2083a91a22c",
+          "bytes": 790523
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-60517-60767-v1.json": {
+          "sha256": "40b9ccbb4961c64b8dfa5453027cd94323cd5a2e714709d540ca88ab136726ca",
+          "bytes": 245608
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-60767-61017-v1.json": {
+          "sha256": "aca61b938954c561aca248f4cedddc678aefb5d4c70e4a21b9eaf178724477b5",
+          "bytes": 245522
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61017-61267-v1.json": {
+          "sha256": "acb95f864bd584219beaa6e35429ca53aad267747104fbed00d3134ea0e2ae01",
+          "bytes": 245513
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61267-61517-v1.json": {
+          "sha256": "48be744cde0bca458502ae5a8a63126b9693c30f6ce654f5e99fe9a9573aa58e",
+          "bytes": 245635
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61517-61767-v1.json": {
+          "sha256": "4fc6233f89176771ff7292fc967866334b09c9c1ad13b192e916dbd3142ae104",
+          "bytes": 245681
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61767-62017-v1.json": {
+          "sha256": "47df0505fa303b457479db315a7a7869bcd3e8e45eb49b94c64c7b866f7c22e3",
+          "bytes": 245547
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62017-62267-v1.json": {
+          "sha256": "e55aab1454f3cf9ca126e2c3a2af1f8cba1f244ae964e2b397a38b9713f5b6f4",
+          "bytes": 245662
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62267-62517-v1.json": {
+          "sha256": "13c88d395a4f1a7cba3f70eab49bdef1eb539285ede4011c1ebd1b39460f872b",
+          "bytes": 245648
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62517-62767-v1.json": {
+          "sha256": "af17d0bb420ae304274d0ce4fb2bda0cf77416c7534e668422d81f24f2137167",
+          "bytes": 245604
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62767-63017-v1.json": {
+          "sha256": "0e0c8024cedd35a891c63b32a6839caa923a7c1f6bbc2e1d957f338d50ad4480",
+          "bytes": 245694
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63017-63267-v1.json": {
+          "sha256": "0a51cc05abe6a7532be4ae99a706eec2c84ef36cef3c5dcb39b8d03114f591b7",
+          "bytes": 245665
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63267-63517-v1.json": {
+          "sha256": "6d0ce425530d5d9c7d465cd157c70fce9b986e771059ee7ad7fe18ce421c9acf",
+          "bytes": 245736
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63517-63767-v1.json": {
+          "sha256": "6bb73d86210eacf9029cf95c5095b87d255e9b0724810b99ff2a969f729dcfe1",
+          "bytes": 245746
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63767-63917-v1.json": {
+          "sha256": "5952177275654522b650c502691c64af794b3050f1dc7b3d8f83e879fc16749e",
+          "bytes": 180607
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1eq5-v1.json": {
+          "sha256": "2370f6e291b27a87467cfa0c79a24c033ceb220bda7d05e8bf1bfd27b3cacd25",
+          "bytes": 3319476
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1eq6-v1.json": {
+          "sha256": "685a776f7fdfff2bb7af32a10f7770dbd1183b766a84ec931629c2c46e7b7086",
+          "bytes": 5834008
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1le4-v1.json": {
+          "sha256": "3d26230af4fa8a0046de5150f19f12318b5b0f4bc7cff8cdffee9785c7ee9a90",
+          "bytes": 2327468
+        }
+      },
+      "records_reviewed": 63917,
+      "status_histogram": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": 53730,
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": 6517,
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": 150,
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": 3520
+      },
+      "top_level_record_keysets": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "finite_pole_degree",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_root_sieve",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "factor_degree_multiplicities",
+            "finite_pole_degree",
+            "pencil_discriminant_degree",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "excluding_prime",
+            "finite_pole_degree",
+            "minimum_unoriented_split_member_count",
+            "modular_reductions",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "excluding_prime",
+            "finite_pole_degree",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_root_sieve",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ]
+      },
+      "nested_field_counts": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": {
+          "basis_coordinates": 53730,
+          "coefficient_l1": 53730,
+          "finite_pole_degree": 53730,
+          "odd_multiplicity_pencil_discriminant_degree": 53730,
+          "pencil_discriminant_degree": 53730,
+          "prime": 268650,
+          "projective_root_count": 268650,
+          "rational_root_sieve": 53730,
+          "rational_singular_parameters": 53730,
+          "status": 53730,
+          "trace_index": 53730
+        },
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": {
+          "basis_coordinates": 6517,
+          "branch_squarefree_degree": 18620,
+          "coefficient_l1": 6517,
+          "discriminant_root_multiplicity": 18620,
+          "factor_degree_multiplicities": 6517,
+          "finite_pole_degree": 6517,
+          "lambda": 18620,
+          "pencil_discriminant_degree": 6517,
+          "rational_singular_parameters": 6517,
+          "status": 6517,
+          "trace_index": 6517
+        },
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": {
+          "basis_coordinates": 150,
+          "chart": 227,
+          "coefficient_l1": 150,
+          "excludes_rational_nonsplit_singular_parameter": 227,
+          "excluding_prime": 150,
+          "finite_pole_degree": 150,
+          "full_degree_and_split_exhaustion_verified": 227,
+          "minimum_unoriented_split_member_count": 150,
+          "modular_reductions": 150,
+          "odd_multiplicity_pencil_discriminant_degree": 377,
+          "odd_part_projective_root_count": 227,
+          "pencil_discriminant_degree": 377,
+          "prime": 227,
+          "rational_singular_parameters": 150,
+          "status": 150,
+          "trace_index": 150
+        },
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": {
+          "basis_coordinates": 3520,
+          "coefficient_l1": 3520,
+          "excluding_prime": 3520,
+          "finite_pole_degree": 3520,
+          "odd_multiplicity_pencil_discriminant_degree": 3520,
+          "pencil_discriminant_degree": 3520,
+          "prime": 6698,
+          "projective_root_count": 6698,
+          "rational_root_sieve": 3520,
+          "rational_singular_parameters": 3520,
+          "status": 3520,
+          "trace_index": 3520
+        }
+      },
+      "replay": {
+        "argv": [
+          "python3",
+          "elkies-k3/scripts/merge_r17_norm12_direct_norm8_singular_search.py",
+          "--source-label",
+          "norm12-orbit-11952",
+          "--priority-table",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1le4-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1eq5-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-l1eq6-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-06517-07517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-07517-08517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-08517-09517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-09517-10517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-10517-11517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-11517-12517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-12517-13517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-13517-14517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-14517-15517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-15517-16517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-16517-17517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-17517-18517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-18517-19517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-19517-20517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-20517-21517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-21517-22517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-22517-23517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-23517-24517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-24517-25517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-25517-26517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-26517-27517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-27517-28517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-28517-29517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-29517-30517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-30517-31517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-31517-32517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-32517-33517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-33517-34517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-34517-35517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-35517-36517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-36517-37517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-37517-38517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-38517-39517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-39517-40517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-40517-41517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-41517-42517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-42517-43517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-43517-44517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-44517-45517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-45517-46517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-46517-47517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-47517-48517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-48517-49517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-49517-50517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-50517-51517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-51517-52517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-52517-53517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-53517-54517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-54517-55517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-55517-56517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-56517-57517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-57517-58517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-58517-59517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-59517-60517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-60517-60767-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-60767-61017-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61017-61267-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61267-61517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61517-61767-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-61767-62017-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62017-62267-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62267-62517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62517-62767-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-62767-63017-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63017-63267-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63267-63517-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63517-63767-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-full-63767-63917-v1.json",
+          "--output",
+          "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json",
+          "--check"
+        ],
+        "returncode": 0,
+        "stdout": "R17NORM8SINGULARMERGE|classes=63917|shards=71|candidates=0|output=artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json|status=PASS_COMPLETE_NO_NONSPLIT_RATIONAL_SINGULAR_MEMBER\n",
+        "stderr": "",
+        "elapsed_seconds": 0.771
+      }
+    },
+    {
+      "chart": "103b2",
+      "certificate": "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-complete-v1.json",
+      "certificate_sha256": "a35bf3c64fa889036d41097f193026409dde3ee44882e978badd69f21e5b7a13",
+      "input_bytes": 87583695,
+      "inputs": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.tsv": {
+          "sha256": "572aef7e5e7cd3dbffb94c05bc57be7f5f1f07e7e12cb745a1fc93f5ce8df021",
+          "bytes": 7310921
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-01288-02288-v1.json": {
+          "sha256": "3fbb4a12acb568212041b4ffc1d99d34c6c059922408ea6d9c3518f0b22f7e3b",
+          "bytes": 1265825
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-02288-03091-v1.json": {
+          "sha256": "5b0806773130e41164103978fdd12755c0062343b8cbefd1f5e27ff089bffc71",
+          "bytes": 1015490
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03091-03092-v1.json": {
+          "sha256": "bcf67dcb3649a6de9ab95a29a3a80c9e62022cb6b707a1ea75bec1a80642e8c3",
+          "bytes": 4337
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03092-03288-v1.json": {
+          "sha256": "8a6c70a9239bb7f82f77caa58dbf779d6533646879fc3771919dd0fc54c723ba",
+          "bytes": 248639
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03288-04288-v1.json": {
+          "sha256": "b9da2c26e362f7024a06a726e0e8b113def2cb345e8b6afc58318e4733db55d4",
+          "bytes": 1250977
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-04288-05288-v1.json": {
+          "sha256": "b75cf18692483ebe04acf6a6105548680af9476ae6a675894cd0361510ad8d8b",
+          "bytes": 1263591
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-05288-06288-v1.json": {
+          "sha256": "1cba6e7364734a0337c40b54ba6a6c83851b53046a7ee79c0f1fc46703c887d4",
+          "bytes": 1256996
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-06288-07288-v1.json": {
+          "sha256": "915f0d529975b8e49900eb9a82083f36c176cf781b28f48d7f1d2a4ad58538eb",
+          "bytes": 1243145
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-07288-08288-v1.json": {
+          "sha256": "fe307949d6f2029bc14f4050530ad951bd925d2cc0a163fedeabc32211fa07e0",
+          "bytes": 1247531
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-08288-09288-v1.json": {
+          "sha256": "238f6489d8e68c6411c9df6fff830a0bf3943380716a2d9ec434f05be445b0d7",
+          "bytes": 1258227
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-09288-10288-v1.json": {
+          "sha256": "76a50cbfaabfe9e704f0420f291858401091a2fba74b36b7bb8e496a68681d83",
+          "bytes": 1250481
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-10288-11288-v1.json": {
+          "sha256": "ec3b0c0ff6cb8534481f16b8a2a2092a9b17c86d2bd3eaaec471a36b1f7e2360",
+          "bytes": 1222676
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-11288-12288-v1.json": {
+          "sha256": "0b01460df4d3c93da21aed4e9e07392b6879ba771f73b0301b034129f8b43c64",
+          "bytes": 1260511
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-12288-13206-v1.json": {
+          "sha256": "f26e026995f1f80b0e782a7c6b29e88c73d4e6f492ffd3934efa27548dfdffe5",
+          "bytes": 1141901
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13206-13207-v1.json": {
+          "sha256": "056cc40134fd8809da4840bc68f9825cef5d63c50896f0adf5eb32c60a2592a4",
+          "bytes": 4535
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13207-13288-v1.json": {
+          "sha256": "2c982acd73e7fc4c946e610fdf616a8369124ec7983c3f15fcae0d83a4738445",
+          "bytes": 102561
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13288-14288-v1.json": {
+          "sha256": "54e3972fe42f8fa660f8c74a822e6564e58bf56229ec204b866ac88b2b921a0b",
+          "bytes": 1279721
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-14288-15288-v1.json": {
+          "sha256": "171b01c6432d0b61f525f8a9baac74202ab6dc4119f5a69f075cd22940ca8807",
+          "bytes": 1266991
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-15288-16288-v1.json": {
+          "sha256": "db22661bb1ce48988ab079c592f278eae839b757134c83a7916b2f930a209560",
+          "bytes": 1260441
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-16288-17288-v1.json": {
+          "sha256": "bce2c98b8597bd082f4b9c01121e0e245506dfa9a1db4afae9e6b09214626755",
+          "bytes": 1259240
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-17288-18288-v1.json": {
+          "sha256": "a84b5cf595f491d40410f6fc75e0ee8aafe3c11ac05415d4e1d6c2d90fd5b189",
+          "bytes": 1258606
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-18288-19288-v1.json": {
+          "sha256": "c0021f13c24d50647c2faf527ddbd5fcd3747ff490d57599797eb106a99ee3bd",
+          "bytes": 1251266
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-19288-20288-v1.json": {
+          "sha256": "23e1af1a02c641e94760f0bf4f92f34e2b3155ff1b8909ad2b90dfca71ec42c1",
+          "bytes": 1243519
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-20288-21288-v1.json": {
+          "sha256": "880a8df1cd72a7092bf07842b19f1cfb13754e5e24ff23a216f6926829e0809c",
+          "bytes": 1277228
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-21288-22288-v1.json": {
+          "sha256": "c44e942220d45b3eb513d28abfdb744d71798da846dc19e1b641eacc6d1eb33e",
+          "bytes": 1263930
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-22288-23288-v1.json": {
+          "sha256": "f758ebeb5d9250ac0f6505e1c316016a84935b88598f4fb3b8bad42387714ad2",
+          "bytes": 1246283
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-23288-24288-v1.json": {
+          "sha256": "af278443a1ffe6cd2f65e8e91bdc88de40382ffff0c7ac8595c83f26042641a8",
+          "bytes": 1254679
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-24288-25288-v1.json": {
+          "sha256": "5452c16e0dce24c371d51aea22b0d8923688cf1fb8e4b254d6a62795cc1d7e94",
+          "bytes": 1235753
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-25288-26288-v1.json": {
+          "sha256": "163602b2e6f8560aba0c169d4cd847af1c9161d69bfe5e44364dc8e4b79d586f",
+          "bytes": 1250716
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-26288-27288-v1.json": {
+          "sha256": "01225020a225d33fdf20328a8312f640bc57bc61e7f415435f4ebfb63ee3fc2a",
+          "bytes": 1229846
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-27288-28288-v1.json": {
+          "sha256": "b9ed29719299757ebd4dc24b3a92cb47a046be3dc817c1a71055e61d98028870",
+          "bytes": 1261263
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-28288-29288-v1.json": {
+          "sha256": "cc8982134d9e4e327558ab23acef38c503b82d255af591e5b97b52dde6ce5ad6",
+          "bytes": 1254170
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-29288-30288-v1.json": {
+          "sha256": "f18c13dba4a5926f4a2c039a6d7c99e4e34d69b941bc1e073db43bf677975ea9",
+          "bytes": 1268554
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-30288-31288-v1.json": {
+          "sha256": "4ee347813deeb89b58ee5b0dbae1cf3a9c1dc1c6d8e2745e0b4b39744e975a6c",
+          "bytes": 1272231
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-31288-32288-v1.json": {
+          "sha256": "58c44c70b045cc8ac155fa197083c824f0e8790907b83582e9ceacb2184803c0",
+          "bytes": 1251722
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-32288-33288-v1.json": {
+          "sha256": "8eba16a3a5497addc468f06a9546e7e4c2dac1476fc82138e200664249c804a6",
+          "bytes": 1263846
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-33288-34288-v1.json": {
+          "sha256": "99837e035baa06105de1fb007a1a2f1e6babeba446d22ade78e220bc4431d777",
+          "bytes": 1267568
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-34288-35288-v1.json": {
+          "sha256": "ba6c2a0ad099a200ebb12162929fc47be056be37acceac60a92bd2d57622c666",
+          "bytes": 1259704
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-35288-36288-v1.json": {
+          "sha256": "cb2822c6c3a9b4f25a6fe6749b40ee1efe312cbba542a345eece474c67703a70",
+          "bytes": 1258881
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-36288-37288-v1.json": {
+          "sha256": "d19fe692e6480a90b69831a4fab569aac07f68964e34f5c3cd5b78a25f593274",
+          "bytes": 1250222
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-37288-38288-v1.json": {
+          "sha256": "0c072b9ad2c6d9b214d8a845928182a98427670b229ee0cee5850976f30845d4",
+          "bytes": 1248285
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-38288-39288-v1.json": {
+          "sha256": "f18a74c146ba022c9834766565957aa5c5373434f7909711a6fdf569d25482ba",
+          "bytes": 1254520
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-39288-40288-v1.json": {
+          "sha256": "0bae4f1054cfb6e57ecfa5abf26f6433eff29e285f7843cb8b851010c9683e43",
+          "bytes": 1242177
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-40288-41288-v1.json": {
+          "sha256": "68ca8158b6acaf1f6072eb8d7968c641b76d6450a54ec78958505ba681821b45",
+          "bytes": 1275462
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-41288-42288-v1.json": {
+          "sha256": "26f43d7c3bb6f458416415b7ce2bb80973ba6103a9b136142a718e55af2e2e9b",
+          "bytes": 1246034
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-42288-43288-v1.json": {
+          "sha256": "08416687c068f6bee3545e9869298556200a25efd5e7978bbabface1ee6ba955",
+          "bytes": 1263850
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43288-43478-v1.json": {
+          "sha256": "9232f95eda41e4b25b6c289c6a45cdfbb737c64957e8a3901924d8534d977542",
+          "bytes": 235289
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43478-43479-v1.json": {
+          "sha256": "eb85c8148ff9dddaa47ff459fc7cdfe95b726770f757eab9d8c3c16a8bcfc461",
+          "bytes": 4262
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43479-44288-v1.json": {
+          "sha256": "0490b7f8ad0985f63aa3170de17ef29646838206d4cd01f62dc61aa14a3001e1",
+          "bytes": 1011618
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-44288-45288-v1.json": {
+          "sha256": "8c90fb323959c6e86e139d52efe892adef03c16d90ebe4d7e24f8e0501fd624a",
+          "bytes": 1250960
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-45288-46288-v1.json": {
+          "sha256": "b897c6d5b183c01b6b18789079b132a21f1e0a4215b0f9289b26498adb5530f7",
+          "bytes": 1254025
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-46288-47288-v1.json": {
+          "sha256": "a77b2a62b5695c8deb0895aef308b0f6e34f43b1ec3a3759562ec5f4ad23eb86",
+          "bytes": 1248865
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-47288-48288-v1.json": {
+          "sha256": "18fe393628d30804965361c3ff3fc60ab13dff4779d9e5b2a6a3a5f6d6a84fae",
+          "bytes": 1220982
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-48288-49288-v1.json": {
+          "sha256": "843fd121b2241f4c471f08cd04784c75197c6d3d8f5043bfd27e226220a2a6ce",
+          "bytes": 1237600
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-49288-50288-v1.json": {
+          "sha256": "e3960e0b7f3ca2e0e01c8fc03fb3481c7e9e2419e592defc5cc56f52aa18116f",
+          "bytes": 1264063
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-50288-51288-v1.json": {
+          "sha256": "fefc843ba885badefd5dfaca283b5113f576fa827eb7fd9c100ba739f6e8ee02",
+          "bytes": 1247005
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-51288-52288-v1.json": {
+          "sha256": "1954b7c0a96c0826060480ea34d68506aeb289496e63f15405fa93a01132b5a5",
+          "bytes": 1249217
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-52288-53288-v1.json": {
+          "sha256": "10e0acb4aca6af6b0c8b0fbe76e4533666e8b1bd89c77d8f1704530b0a067a83",
+          "bytes": 1233168
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-53288-54288-v1.json": {
+          "sha256": "75f9adc4dfc26b215907fc64413d113fe91eb7b3e0a716a155f167b0e807aaf5",
+          "bytes": 1231351
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-54288-55288-v1.json": {
+          "sha256": "e29f50e36bd951e18635c4a8c69bd6c3665956c8c121522f47116409463df382",
+          "bytes": 1222075
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-55288-56288-v1.json": {
+          "sha256": "9c438caaa7519c7bf6a7cf1bad93d420760e5668f6681592e5163db4167d8d2f",
+          "bytes": 1247118
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-56288-57288-v1.json": {
+          "sha256": "20109e71fcd262cceca4a4524c1e7230949179d6526526b3f0e80996911a09e0",
+          "bytes": 1258469
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-57288-58288-v1.json": {
+          "sha256": "6f47809d1c575c2f7383e16df0db75ecf22e2fc3dfbfc827e3339a00322c4502",
+          "bytes": 1209530
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-58288-59288-v1.json": {
+          "sha256": "c4e1e5f93479b684bffca77d25b370bc1e5e7644fd2acfa3bc8ae089668e2c6a",
+          "bytes": 1217197
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-59288-60288-v1.json": {
+          "sha256": "db720e53577c23ea01c3b99df9c3f91506ce6c41bff3e9c3ce69889fff3c03f5",
+          "bytes": 1234681
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-60288-61288-v1.json": {
+          "sha256": "7dcf4ef59d248287a59f05fcf7400df4ce338f87f11ef4633411d156be1d9f38",
+          "bytes": 1204905
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-61288-62288-v1.json": {
+          "sha256": "e995338e66bebec18c7ada4bd0561c8a31d1d7e95ec11e3d7fb2b9fe4fca7669",
+          "bytes": 1194458
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-62288-63288-v1.json": {
+          "sha256": "1fd020208f5eaf03e172d1d7f17f9dd6e2621787e052d3260080d4162a3c05c9",
+          "bytes": 1211547
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-63288-63925-v1.json": {
+          "sha256": "a597f84198e65116207b522cbc42ead94f6fc62f429d49adacd86d8941970737",
+          "bytes": 761139
+        },
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-l1le4-v1.json": {
+          "sha256": "a00142b5628fdf4c7ccb3271228c0a33de8da80e986e49e41be04abf3618f98a",
+          "bytes": 2069119
+        }
+      },
+      "records_reviewed": 63925,
+      "status_histogram": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": 1,
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": 1288,
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": 62634,
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": 2
+      },
+      "top_level_record_keysets": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "finite_pole_degree",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_root_sieve",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "factor_degree_multiplicities",
+            "finite_pole_degree",
+            "pencil_discriminant_degree",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "excluding_prime",
+            "finite_pole_degree",
+            "minimum_unoriented_split_member_count",
+            "modular_reductions",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ],
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": [
+          [
+            "basis_coordinates",
+            "coefficient_l1",
+            "excluding_prime",
+            "finite_pole_degree",
+            "odd_multiplicity_pencil_discriminant_degree",
+            "pencil_discriminant_degree",
+            "rational_root_sieve",
+            "rational_singular_parameters",
+            "status",
+            "trace_index"
+          ]
+        ]
+      },
+      "nested_field_counts": {
+        "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE": {
+          "basis_coordinates": 1,
+          "coefficient_l1": 1,
+          "finite_pole_degree": 1,
+          "odd_multiplicity_pencil_discriminant_degree": 1,
+          "pencil_discriminant_degree": 1,
+          "prime": 5,
+          "projective_root_count": 5,
+          "rational_root_sieve": 1,
+          "rational_singular_parameters": 1,
+          "status": 1,
+          "trace_index": 1
+        },
+        "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION": {
+          "basis_coordinates": 1288,
+          "branch_squarefree_degree": 3841,
+          "coefficient_l1": 1288,
+          "discriminant_root_multiplicity": 3841,
+          "factor_degree_multiplicities": 1288,
+          "finite_pole_degree": 1288,
+          "lambda": 3841,
+          "pencil_discriminant_degree": 1288,
+          "rational_singular_parameters": 1288,
+          "status": 1288,
+          "trace_index": 1288
+        },
+        "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION": {
+          "basis_coordinates": 62634,
+          "chart": 105738,
+          "coefficient_l1": 62634,
+          "error_type": 5,
+          "excludes_rational_nonsplit_singular_parameter": 105738,
+          "excluding_prime": 62634,
+          "finite_pole_degree": 62634,
+          "full_degree_and_split_exhaustion_verified": 105738,
+          "minimum_unoriented_split_member_count": 62634,
+          "modular_reductions": 62634,
+          "odd_multiplicity_pencil_discriminant_degree": 168372,
+          "odd_part_projective_root_count": 105738,
+          "pencil_discriminant_degree": 168372,
+          "prime": 105743,
+          "rational_singular_parameters": 62634,
+          "status": 62639,
+          "trace_index": 62634
+        },
+        "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER": {
+          "basis_coordinates": 2,
+          "coefficient_l1": 2,
+          "excluding_prime": 2,
+          "finite_pole_degree": 2,
+          "odd_multiplicity_pencil_discriminant_degree": 2,
+          "pencil_discriminant_degree": 2,
+          "prime": 3,
+          "projective_root_count": 3,
+          "rational_root_sieve": 2,
+          "rational_singular_parameters": 2,
+          "status": 2,
+          "trace_index": 2
+        }
+      },
+      "replay": {
+        "argv": [
+          "python3",
+          "elkies-k3/scripts/merge_r17_norm12_direct_norm8_singular_search.py",
+          "--source-label",
+          "norm12-orbit-103b2",
+          "--priority-table",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.tsv",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-l1le4-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-01288-02288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-02288-03091-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03091-03092-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03092-03288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-03288-04288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-04288-05288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-05288-06288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-06288-07288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-07288-08288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-08288-09288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-09288-10288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-10288-11288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-11288-12288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-12288-13206-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13206-13207-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13207-13288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-13288-14288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-14288-15288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-15288-16288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-16288-17288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-17288-18288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-18288-19288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-19288-20288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-20288-21288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-21288-22288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-22288-23288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-23288-24288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-24288-25288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-25288-26288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-26288-27288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-27288-28288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-28288-29288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-29288-30288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-30288-31288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-31288-32288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-32288-33288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-33288-34288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-34288-35288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-35288-36288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-36288-37288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-37288-38288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-38288-39288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-39288-40288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-40288-41288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-41288-42288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-42288-43288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43288-43478-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43478-43479-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-43479-44288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-44288-45288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-45288-46288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-46288-47288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-47288-48288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-48288-49288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-49288-50288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-50288-51288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-51288-52288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-52288-53288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-53288-54288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-54288-55288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-55288-56288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-56288-57288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-57288-58288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-58288-59288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-59288-60288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-60288-61288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-61288-62288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-62288-63288-v1.json",
+          "--input",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-full-63288-63925-v1.json",
+          "--output",
+          "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-complete-v1.json",
+          "--check"
+        ],
+        "returncode": 0,
+        "stdout": "R17NORM8SINGULARMERGE|classes=63925|shards=70|candidates=0|output=artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-complete-v1.json|status=PASS_COMPLETE_NO_NONSPLIT_RATIONAL_SINGULAR_MEMBER\n",
+        "stderr": "",
+        "elapsed_seconds": 0.728
+      }
+    }
+  ],
+  "smooth_packet_replay": {
+    "argv": [
+      "python3",
+      "elkies-k3/scripts/verify_r17_smooth_character_witness.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\"atlases\": {\"103b2\": {\"count\": 39120, \"distinct_irreducible_quadratic_atoms\": 39120, \"internal_three_character_relations\": 0, \"priority_attachments\": 39120}, \"11952\": {\"count\": 39147, \"distinct_irreducible_quadratic_atoms\": 39147, \"internal_three_character_relations\": 0, \"priority_attachments\": 39147}}, \"elapsed_seconds\": 1.221, \"packet_bytes\": 10328199, \"packet_sha256\": \"fa46f7e1e344e4b9003a4b686783f88c023509ab98f5abef44cb6143f36a0450\", \"source_projection_checked\": false, \"status\": \"PASS_RETAINED_SMOOTH_CHARACTER_WITNESS\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 1.27
+  },
+  "small_controls": {
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_research_smooth_character_witness.py",
+      "-q"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nOK\n",
+    "elapsed_seconds": 0.04
+  },
+  "ten_chart_summary": {
+    "argv": [
+      "python3",
+      "elkies-k3/scripts/audit_r17_norm12_alternate_chart_character_sweep.py",
+      "--check"
+    ],
+    "returncode": 0,
+    "stdout": "R17ALTCHARTSWEEP|inherited_charts=10|inherited_covers=1198|full_charts=10|full_covers=391470|halved_full_charts=4|status=PASS_EXACT_ALTERNATE_CHART_SWEEP_NO_RANK19_OR_RANK20_CHARACTER_INPUT\n",
+    "stderr": "",
+    "elapsed_seconds": 0.062
+  },
+  "smooth_projection_export": {
+    "argv": [
+      "timeout",
+      "60s",
+      "python3",
+      "elkies-k3/scripts/verify_r17_smooth_character_witness.py",
+      "--export-inputs",
+      "artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz"
+    ],
+    "returncode": 0,
+    "elapsed_seconds_reported": 4.841,
+    "original_input_bytes": 691848547,
+    "packet_bytes": 10328199,
+    "packet_sha256": "fa46f7e1e344e4b9003a4b686783f88c023509ab98f5abef44cb6143f36a0450",
+    "source_specs": [
+      {
+        "chart": "11952",
+        "count": 39147,
+        "atlas": "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json",
+        "atlas_sha256": "fbf979bfe7d92528405c62330a80dbfd7742dc27c41a0426dcd4014f6865c8ce",
+        "atlas_schema": "elkies-k3.r17-norm12-11952-alternate-bisections-full.v1",
+        "vector_field": "alternate_rank17_w",
+        "priority": "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv",
+        "priority_sha256": "d052174f241d9ea786570138bda6b32498c3526eaf0f3e8ee99f65f7e8925256",
+        "priority_vector_field": "historical_alternate_w"
+      },
+      {
+        "chart": "103b2",
+        "count": 39120,
+        "atlas": "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json",
+        "atlas_sha256": "faa98745f9bc8fb304493533ca93ecbb4b36606981ed2899282de381305fdeed",
+        "atlas_schema": "elkies-k3.r17-norm12-103b2-hidden-bisections-full.v1",
+        "vector_field": "direct_hidden_w",
+        "priority": "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv",
+        "priority_sha256": "c43750377c5772b3fabd4ed0bcd5e9950f6e3aa1c3fba3eee1ef41a608922898",
+        "priority_vector_field": "direct_hidden_w"
+      }
+    ],
+    "verified": "All raw branch and priority fields projected from four hash-matched originals. Both atlases passed independent polynomial and frame-attachment verification before the new packet was written. No section/lattice reconstruction. Two initial parser-development attempts rejected the space-delimited TSV word before any packet was written; fixed-format extraction and tests now use that exact format."
+  },
+  "source_files": {
+    "elkies-k3/scripts/verify_r17_smooth_character_witness.py": "923a22857e6d877bd95ebef6a0d04c9ebcbe3835275ea6a12bf938e39e546489",
+    "tests/test_research_smooth_character_witness.py": "6b9d78a40cd286e71fdf71271e6fb77ee719937646f019c47fc65a29c3b143c3",
+    "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py": "39204373fbb9e4b9dfa475d5d20f744ed0a191f05d732084862aea7f7d6a089d",
+    "elkies-k3/scripts/search_r17_norm12_quadratic_character_closure_streaming.py": "300e64e06c2c2fa40454de8081dc0520f42b74ed4c49a9b19e689a057b12fac9",
+    "elkies-k3/scripts/audit_r17_norm12_alternate_chart_character_sweep.py": "c52db65724d59e22187a696d1181860325cef9990c3955907764567416df3278",
+    "elkies-k3/scripts/merge_r17_norm12_direct_norm8_singular_search.py": "ee80de89e183da005a4a40efde60458461662e8bb45eb5a34a072a144e1b7acb",
+    "elkies-k3/scripts/search_r17_norm12_direct_singular_bisections.sage": "89cf8fdb588f033e94af6c90215e57096b9f792e173048cd4dad46179de5b31a",
+    "elkies-k3/scripts/search_r17_norm12_direct_norm8_singular_modp.sage": "9689b4b8527b37a2a013ebaccc8388f871255074d6a3e0b9bf7b8eabedd56565"
+  },
+  "remaining": [
+    "The smooth packet does not replay lattice enumeration, section identities, older-catalogue comparisons or source-curve base degrees.",
+    "The ten-chart summary audit is not a new independent replay of every chart or rational-halving saturation.",
+    "The 127842 singular trace records retain no pencil/discriminant coefficients, so mathematical replay of their root/irreducibility outcomes requires more inputs than these summary shards. No reconstruction was launched."
+  ],
+  "claim_lock_updates": [
+    {
+      "id": "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+      "before_sha256": "dbd74e65cb77c91117a06ad90c930403438cb692eaec0f4dcf60344a514722b9",
+      "after_sha256": "fda9a629399d8a7ae88a38e9df871da8b3b46126fef6786ce6755d1b0dc81af3",
+      "added_software_lock": [
+        "elkies-k3/scripts/verify_r17_smooth_character_witness.py",
+        "tests/test_research_smooth_character_witness.py",
+        "artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz"
+      ],
+      "unchanged": "State, title, scope, dependencies, original checker/source pin and assurance flags."
+    },
+    {
+      "id": "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION",
+      "before_sha256": "07a7b32e53f6b17bf8f9f4acc906715d28adfc7da04071f3e6dc84b25eca86c9",
+      "after_sha256": "ded52198898e926e3fe6bcd94fd5008263c30a4f8361a4e6197c36a0ec33699b",
+      "added_software_lock": [
+        "elkies-k3/scripts/verify_r17_smooth_character_witness.py",
+        "tests/test_research_smooth_character_witness.py",
+        "artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv"
+      ],
+      "unchanged": "State, title, scope, dependencies, original checker/source pin and assurance flags."
+    }
+  ]
+}

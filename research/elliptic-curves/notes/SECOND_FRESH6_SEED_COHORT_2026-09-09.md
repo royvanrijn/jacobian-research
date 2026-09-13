@@ -1,221 +1,91 @@
-# Second fresh six-fibre seed cohort
+# Second retained six-fibre cohort
 
-Five of six newly selected native R17 fibres now have independently certified
-M18 seeds. The remaining fibre retains lower bound17 after a bounded miss.
-No exact rank, public novelty or record is claimed.
+The completed 9 September experiment retains subgroup lower bounds
+**20, 20, 22, 17, 26, 22**, reviewed on 12 September. These are dated cohort
+results; use [MATH_STATUS.json](../../MATH_STATUS.json) for claim authority
+and the [inventory](../INVENTORY.md) for subsequent results on these curves.
+No exact rank, public novelty, conductor record or general success rate follows.
 
-Selection uses the same6144 saved score rows and unchanged per-family order,
-with a new frozen exclusion snapshot containing the first cohort reservation.
-It selects one additional fibre per family, excluding rationally isomorphic
-curves and scheduled addresses in the named snapshots.5822 address rows
-remain eligible at selection; this is not a predicted rank density.
-Selection and replay take2.096 and2.043seconds. Generic17 preparation and
-replay take19.666 and14.261seconds, without point search.
+| Family | Native parameter | Initial seed bound | Seed calls | Final dated bound |
+|---|---|---:|---:|---:|
+| 074d9 | 88/2551 | 18 | 9 | 20 |
+| 07ca9 | -2475/2848 | 18 | 3 | 20 |
+| 08234 | 2570/2143 | 18 | 5 | 22 |
+| 08f72 | -2433/3479 | 17 | 98 | 17 |
+| 103b2 | 2815/1088 | 18 | 7 | 26 |
+| 11952 | 327/1403 | 18 | 11 | 22 |
 
-| Family | Parameter | Certified lower bound | Seed point calls |
-| --- | --- | ---: | ---: |
-| 074d9 | 88/2551 | 18 | 9 |
-| 07ca9 | -2475/2848 | 18 | 3 |
-| 08234 | 2570/2143 | 18 | 5 |
-| 08f72 | -2433/3479 | 17 | 98 |
-| 103b2 | 2815/1088 | 18 | 7 |
-| 11952 | 327/1403 | 18 | 11 |
+## Selection and first seeds
 
-The unchanged first-M18 constructor uses exact generic maximum classes,
-specialized exact CVP representatives, lean bounded maps and cached finite
-admission. It stops at the first certified extra direction. All six search
-and geometry/map/point replays pass. Total search time is117.234seconds
-for133 point calls, with no point timeouts. Each search is bounded by
-1800seconds/2GiB; each map5seconds/1GiB; each point call10seconds at height125000.
+The [selector](../cas/select_fresh6_retained_r17_second_cohort.py) reuses the
+6,144 saved score rows and unchanged per-family score order. Its frozen
+exclusions include the first cohort reservation, rationally isomorphic curves
+and scheduled addresses. The 5,822 eligible addresses are snapshot-relative,
+not independent curves. Validation-band values and measured ranks do not
+enter selection; all six selected curves are pairwise rationally nonisomorphic.
 
-A separate pure-Python packet checker reconstructs the generic sections,
-rechecks finite independence and pairwise rational nonisomorphism. It passes
-in7.874seconds. The five M18 seeds are queued; amplification has not started.
-Full winning witnesses are retained, including unprocessed points after the
-first gain. No general seed success rate is inferred from this small cohort.
+Exact maximum-class seed construction made 133 point calls with no point
+timeouts. The limits were 1,800 seconds/2 GiB per search, 5 seconds/1 GiB per
+map, and 10 seconds per point call at height 125,000. Full geometry/map/point
+replays passed historically. Separate finite certificates establish five M18
+seeds and one M17 lower bound. A bounded seed miss gives no rank upper bound.
 
-- [Selector](../cas/select_fresh6_retained_r17_second_cohort.py).
-- [Generic17 packets](../../artifacts/generated-results/elliptic-curves/fresh6_second_generic17_v1/result.json).
-- [Exact seed packets](../../artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json).
-- [Independent packet checker](../cas/verify_fresh6_seed_packets.py).
-- [Five-seed queue](../../artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/amplification-queue.json).
-- [Reservation ledger](../../artifacts/generated-results/elliptic-curves/fresh6_second_reserved_results_v1.json).
+- [Generic M17 packets](../../artifacts/generated-results/elliptic-curves/fresh6_second_generic17_v1/result.json) · [six exact seed packets](../../artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/result.json).
+- [Original seed queue](../../artifacts/generated-results/elliptic-curves/fresh6_second_first_m18_v1/amplification-queue.json) · [reservation snapshot](../../artifacts/generated-results/elliptic-curves/fresh6_second_reserved_results_v1.json).
 
-Raw evidence: `artifacts/local/elliptic-curves/fresh6-second-selection-v1/`,
-`fresh6-second-generic-seeds-v1/` and `fresh6-second-seed-confirmation-v1/`.
-The [first cohort](FRESH6_RETAINED_SEED_COHORT_2026-09-09.md) and its unfinished
-suffixes remain preserved.
+## Certified amplification endpoints
 
-## First productive-parent amplification
+All five winning-parent passes completed. Four branches stayed at M18 after
+six calls each; 103b2 reached M20 in eighteen calls. All five complementary
+maximum-parent branches then completed. Their retained historical replays
+cover rational CVP, maps, points, gain provenance and complete-cloud audits.
 
-All five M18 seeds complete their winning-parent V3 policies and independent
-replays. The103b2 fibre at2815/1088 gains two certified directions:18→19 on
-its first chart, then19→20 after rebuilding and three more charts. Fourteen
-further charts complete its finite policy without a gain. Search takes35.845
-seconds; independent replay takes9.638seconds. Its subgroup lower bound is20.
-The other four each complete six charts and remain M18. No point or map
-timeouts occur. These finite-policy misses establish no rank upper bounds.
+| Endpoint | Calls in this pass | Primary evidence |
+|---|---:|---|
+| 103b2 M18 → M20 | 18 | [Winning-parent result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-fresh-002/result.json) |
+| 103b2 M20 → M22 → M23 | 10; reconciliation uses 0 new searches | [Full run](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-complement/result.json) · [M23 packet](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-complement/reconciled.json) |
+| 103b2 M23 → M26 | 100; gains at 31, 54, 97 | [M26 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/result.json) |
+| 11952 M18 → M22 | 100 | [M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json) |
+| 08234 M18 → M22 | 100 | [M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json) |
+| 074d9 M18 → M20 | 100 | [M20 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-complement/result.json) |
+| 07ca9 M18 → M20 | 100 | [M20 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json) |
 
-| Family | Final certified lower bound | Point calls |
-| --- | ---: | ---: |
-| 074d9 | 18 | 6 |
-| 07ca9 | 18 | 6 |
-| 08234 | 18 | 6 |
-| 103b2 | 20 | 18 |
-| 11952 | 18 | 6 |
+103b2's cloud audit stopped the first complementary pass at a retained M22
+basis. Replaying its saved points certified M23 without further searching.
+The subsequent rebuilt pass reached M26 after the earlier M25 progress
+snapshot; the sealed terminal determines its endpoint. These are subgroup
+lower bounds, with no exact rank or upper bound. No point or map timeouts
+occurred in these amplification passes.
 
-Each resulting basis now has a prepared16-parent complementary maximum-class
-bank, with all remaining generic minima checked by both exact solvers. The
-M20 basis is carried forward for103b2. These complementary searches have not
-started. No exact rank, public novelty or record is claimed.
+## Completed continuations and conductor limit
 
-- [M20 run evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-fresh-002/result.json).
-- [Five prepared complementary-parent branches](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json).
+Four cached 100-call M26 batches added no direction. Including the gaining
+M23 restart, that branch completed 500 calls. Its
+[latest retained result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/result.json)
+and [suffix](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/suffix-queue.json)
+record centre 201, `factor_free`, in the 689-centre M26 landscape; that centre's
+preconditioned box had already been searched. Earlier queues link to descendants.
 
-Next start the broader-parent pass from the new M20 state, then cover the
-remaining four branches with the same bounded protocol.
+A separate fixed 128-parity sample supplied sixteen norm10 parents, thirteen
+outside 103b2's maximum-class hyperplane. Its
+[100-call lower-shell pass](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/result.json)
+also stayed at M26, with a [separate suffix](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/suffix-queue.json).
+Generic parity coverage does not predict rational points or specialized gains.
+These bounded misses and completed prefixes must not be treated as unsearched
+work or rank upper bounds. The [five-branch ledger](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json)
+retains the other branch checkpoints as historical inputs, not a scheduled queue.
 
-## 103b2 complementary-parent amplification and M23 reconciliation
+The 103b2 conductor audit hit its 30-second/1 GiB cap with a 123-digit residual
+cofactor. Exact conductor remains UNKNOWN in that audit. Its local bounds and
+timeout are retained under `artifacts/local/elliptic-curves/second-fresh103b2-conductor-v1/`.
 
-At2815/1088, complementary-parent V3 raises M20→M21 after9 calls and
-M21→M22 on the next call. The complete cloud audit certifies23 directions,
-triggering `ADDITIONAL_FINITE_RANK_REQUIRES_RECONCILIATION`. Search takes
-31.348seconds; full independent geometry/map/point/cloud replay passes in
-25.974seconds. The frozen M22 terminal and its stop remain preserved.
+## Replay and history
 
-Arithmetic-only reconciliation of the saved charts extends the retained basis
-to **M23**. A standalone finite certificate proves independence. Construction
-and a second full reconciliation replay each take4.754seconds, with no
-additional point search. A fresh sealed M23 preparation retains the same
-complementary parents and is ready for rebuilding. No exact rank, public
-novelty or record is claimed. The four other complementary branches remain
-prepared but unsearched.
-
-- [Full bounded-run evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-complement/result.json).
-- [Reconciled M23 packet](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-complement/reconciled.json).
-- [Current continuation queue](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json).
-
-## Rebuilt103b2 continuation: M23 to M26
-
-At2815/1088, the fresh continuation from the reconciled M23 basis finds
-three further certified directions. Epochs23→24,24→25 and25→26 use31,
-23 and43 calls respectively. The third gain is on cumulative call97;
-after rebuilding, three more calls complete the100-call budget at M26.
-No point or map timeouts occur. Search takes235.402seconds; full independent
-rational-CVP, exact map/point, gain-provenance and complete-cloud replay
-passes in401.103seconds. The longer replay includes four successive bases.
-The earlier progress snapshot at M25 preceded the final gain; the sealed
-terminal and certificate establish the lower bound26.
-
-The terminal is `CHART_BUDGET_EXHAUSTED`. Its exact M26 continuation cursor
-is preserved, with no exact rank, upper bound, public novelty or record claim.
-The four other complementary-parent branches remain prepared and unsearched.
-
-- [Certified M26 continuation](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/result.json).
-- [Exact M26 suffix cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M23/suffix-queue.json).
-
-### Cached M26 continuation
-
-The first cached continuation adds100 point calls,200 cumulative from the
-reconciled M23 restart, without a new certified direction or point/map timeout.
-Search takes94.428seconds; independent cached replay takes11.014seconds.
-The lower bound remains26. The exact cursor is centre51, `factor_free`,
-so its preconditioned box is already tested and its factor-free box is next.
-The prior queue points to this verified descendant. No rank upper bound follows.
-
-- [Cached M26 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v1/result.json).
-- [Current M26 cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v1/suffix-queue.json).
-
-## 11952 complementary-parent amplification: M18 to M22
-
-At11952 parameter327/1403, the first complementary-parent pass finds four
-certified directions, raising the native M18 basis to M22 within100 calls.
-Every gain triggers immediate rebuilding. No point or map timeouts occur.
-Search takes136.255seconds; full independent rational-CVP, exact map/point,
-gain-provenance and complete-cloud replay passes in65.971seconds.
-The terminal is `CHART_BUDGET_EXHAUSTED`; its exact suffix is queued.
-No exact rank, rank upper bound, public novelty or record is claimed.
-
-- [Replayed M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/result.json).
-- [M22 continuation cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/11952-complement/suffix-queue.json).
-
-The second cohort currently has lower bounds18,18,18,17,26,22 in family
-order074d9,07ca9,08234,08f72,103b2,11952. The first three complementary
-branches are still prepared and unsearched.
-
-## 08234 complementary-parent amplification: M18 to M22
-
-At08234 parameter2570/2143, four exact rational point gains extend the
-native M18 basis to M22 within100 calls. Every gain triggers rebuilding.
-No point or map timeouts occur. Search takes133.421seconds; full independent
-rational-CVP, exact map/point, gain-provenance and complete-cloud replay
-passes in58.750seconds. The terminal is `CHART_BUDGET_EXHAUSTED`, with
-its exact suffix queued. No exact rank, upper bound, public novelty or record
-is claimed. The074d9 and07ca9 complementary branches remain unsearched.
-
-- [Replayed M22 result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/result.json).
-- [M22 continuation cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/08234-complement/suffix-queue.json).
-
-## Final first-pass branches:074d9 and07ca9 reach M20
-
-Both remaining complementary-parent branches complete100 point calls and
-independent replay, with two certified gains each and no point/map timeouts.
-At074d9 parameter88/2551, search takes108.725seconds and replay18.220seconds.
-At07ca9 parameter-2475/2848, search takes107.340seconds and replay19.647seconds.
-Both finish at M20 with `CHART_BUDGET_EXHAUSTED`; their suffixes are queued.
-The replay includes exact rational CVPs, maps, point witnesses, gain provenance
-and complete-cloud audits. No exact rank or record is claimed.
-
-- [074d9 M20 evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/074d9-complement/result.json).
-- [07ca9 M20 evidence](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/07ca9-complement/result.json).
-- [Current five-branch results and cursors](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/complement-queue.json).
-
-All five complementary-parent branches have now been tested. Current certified
-lower bounds are20,20,22,17,26,22 in family order074d9,07ca9,08234,08f72,
-103b2,11952. The08f72 seed miss remains unresolved. Rank26 is the strongest
-result in this cohort; the broader goal of a new high-rank or conductor record
-remains open. Bounded misses do not establish rank upper bounds.
-
-### Three further cached M26 batches
-
-Three sequential100-call batches complete with independent replay between
-batches and a stop-on-gain reassessment condition. No gains or point/map
-timeouts occur. The lower bound remains26 at500 cumulative calls from the
-reconciled M23 restart.
-
-| Cached version | Cumulative calls | Search seconds | Replay seconds |
-| --- | ---: | ---: | ---: |
-| 2 | 300 | 96.258 | 11.660 |
-| 3 | 400 | 95.432 | 12.748 |
-| 4 | 500 | 103.331 | 13.372 |
-
-The current cursor is centre201, `factor_free`, in the689-centre M26
-landscape. Its preconditioned box is already searched. Earlier queues point
-to their verified descendants; no completed prefix should be repeated.
-These bounded misses imply no rank upper bound or record.
-
-- [Latest cached result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/result.json).
-- [Current M26 cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-M26-cached-v4/suffix-queue.json).
-
-## Sampled lower-shell M26 pass
-
-A fixed128-parity sample outside the original productive span is evaluated
-with both exact CVP solvers. Sixteen norm10 parents are selected;13 lie outside
-the103b2 maximum-class span, as tested by its annihilator mask45903. Preparation
-takes4.071seconds without point search. This extends generic parity coverage;
-it is not a point-existence or rank prediction.
-
-The resulting M26 V3 pass completes100 calls without a gain or point/map timeout.
-Search takes132.014seconds; full independent replay passes in155.186seconds.
-The lower bound remains26 and the terminal is `CHART_BUDGET_EXHAUSTED`.
-The lower-shell suffix is kept separately from the maximum-class branch.
-No upper bound or record follows from the bounded miss.
-
-- [Lower-shell result](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/result.json).
-- [Lower-shell cursor](../../artifacts/generated-results/elliptic-curves/fresh6_second_amplification_v1/103b2-sampled-shell/suffix-queue.json).
-
-A30-second/1GiB conductor audit of the second103b2 M26 fibre reached its wall
-cap with a123-digit residual cofactor. Exact conductor remains unknown; bounds
-and the timeout receipt are retained in `artifacts/local/elliptic-curves/second-fresh103b2-conductor-v1/`.
-The [lower-height cohort](LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md) supplies
-five additional certified M18 seeds for the next amplification comparison.
+The [shared retained-rank replay](FRESH6_RETAINED_SEED_COHORT_2026-09-09.md#retained-rank-replay)
+checks all subgroup endpoints above without search. Its compact witness is
+separate from the original full protocol/map replays and conductor producer.
+Version checks and cached PASS receipts are not fresh full replays.
+The [review receipt](../../archive/repository-cleanup-2026-09-12/fresh6-source-review/REVIEW.json)
+preserves the original chronology, timings and obsolete “not started” statements.
+The [lower-height cohort](LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md) is a separate
+completed experiment.

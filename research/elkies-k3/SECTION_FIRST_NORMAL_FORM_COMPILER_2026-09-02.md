@@ -156,10 +156,10 @@ again with the required `c4` unit gates.  Both section identities, the
 over `GF(7)(t)`.
 
 This preserves the local arithmetic boundary: model 157 is a finite-field
-marked point with a formal `ZZ_7` branch, not a rational equation. The later
-split-Clifford/`X_0(37)` theorem proves that no rational point can carry the
-full `NS0031` marking, so this chart is now a local/geometric control rather
-than an open rational-source route.
+marked point with a formal `ZZ_7` branch, not a rational equation. Full
+rational `NS0031` marking remains `UNKNOWN` after the
+[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+This chart remains a local control, without a certified arithmetic source.
 
 ## Literature placement
 

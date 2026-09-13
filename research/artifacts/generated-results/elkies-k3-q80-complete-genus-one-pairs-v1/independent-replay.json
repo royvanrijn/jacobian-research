@@ -1,0 +1,36 @@
+{
+  "additional_embedding_certificates": 5,
+  "all_pencils_injective": true,
+  "distinct_classes_have_disjoint_rational_branch_images": true,
+  "elapsed_seconds": 27.758,
+  "goal_complete": false,
+  "inherited_dependencies": [
+    "published direct11952 MW17 equation and height lattice",
+    "complete retained63917 minimum-norm8 parity inventory"
+  ],
+  "pair_count": 2042659486,
+  "pencils": 63917,
+  "prime_stages": [
+    {
+      "pencils": 63917,
+      "prime": 521,
+      "projective_points": 33364674,
+      "remaining_pairs": 118251
+    },
+    {
+      "pencils": 61153,
+      "prime": 523,
+      "projective_points": 32044172,
+      "remaining_pairs": 9
+    },
+    {
+      "pencils": 18,
+      "prime": 541,
+      "projective_points": 9756,
+      "remaining_pairs": 0
+    }
+  ],
+  "scope": "No two rational members of distinct pencils, and no distinct members of one pencil, in this complete norm8/pole-order-zero layer share a projective branch quartic over the fixed parameter. Other carrier layers and arbitrary quadratic-twist sections are not excluded.",
+  "status": "PASS_COMPLETE_Q80_GENUS_ONE_PENCIL_INJECTIVITY",
+  "verified_trace_frames": 125093
+}

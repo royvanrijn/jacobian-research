@@ -1,154 +1,40 @@
-# Rank32: find the next independent point
+# Rank32 next-direction benchmark
 
-The active objective is an unconditional certified rank32 subgroup, or a search
-improvement that increases the chance of finding one. The next experiment measures
-CPU until one independently certified direction beyond a supplied subgroup
-`M_r`. A class-constructor transfer, parameter theorem or class-group upper bound
-is not a prerequisite. The
-[constructor pilot is closed after failed positive calibration](../rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md).
+The completed September 12 protocol, its inputs, worker history, commands, and
+failure records are preserved byte-for-byte in
+[the archive](../../archive/elliptic-curves/notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md.txt)
+(`sha256: d4632d18e48ac0d801e2b0a4d99ca29c693bd2cce5c3a2321d0dc156f782c76c`).
+It does not authorize a new search, a larger height box, or a controller restart.
 
-**Prepared, not launched.** The worker-time ceiling is awaiting the user's choice.
-No old constructor allowance is transferred to this experiment. The executable
-accepts a ceiling of at most eight worker-hours; that is a maximum, never a
-minimum spend. A failed calibration, verification or validation gate stops it.
+## Completed result
 
-## Frozen controls and comparison
+Within the retained centre banks, factor-free reduction at height 125,000 was
+the cheaper known-control representation: four development recoveries used
+151.019 CPU seconds versus 239.016 for dual-map V3, and the independent
+Curve302 M30 validation used 83.570 versus 168.420. These are fixed-bank arm
+costs, including preparation, map construction, search, and replay; they omit
+historical cold landscape construction and do not prove a general speed law.
 
-Reuse [the public28 recovery control](BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md),
-[Curve302's complete V3 ladder](ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) and
-[the alternative seeded ladder](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md).
-The local packet preserves all fourteen pre-acquisition Curve302 states M17
-through M30. The first comparison uses these four cases:
+The frozen follow-up made 2,164 completed point-search calls on three rank-27
+inputs (709, 729, and 726) with no new certified direction. Curve90 had all
+376 candidate maps in the sealed prior-exposure exclusion list, so it produced
+zero new coverage and is not a fourth failed exposure. Every completed call's
+map, point, and rank replay passed. This bounded no-gain result neither raises
+a rank lower bound nor supplies an upper bound or a dependence proof for every
+returned point.
 
-| Starting subgroup | Next-direction control | Centre bank |
-|---|---|---|
-| Curve302 M27 | 27→28 | First256 centres in the retained V3 order |
-| Curve302 M29 | 29→30 | First256 centres in the retained V3 order |
-| Curve302 M30 | 30→31 | First256 centres in the retained V3 order |
-| Public inventory188 M27 | 27→28 | Complete original49-centre bank |
+The [completion receipt](../../artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json),
+[preflight](../../artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/preflight.json),
+and [launch receipt](../../artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/launch.json)
+bind the terminal state, input seals, replays, and box accounting. The local
+packet named by the archive remains the full reproducibility record.
 
-The coordinator projects only the equation, the starting basis, certificate
-primes and centre coefficients. The worker reconstructs and certifies the
-starting subgroup before searching. Higher-rank point suffixes, winning chart
-indices and prior map receipts are not worker inputs. The original bank selection
-and the choice of controls are retrospective. This is a fixed-bank representation
-benchmark; it does not remeasure cold V3 landscape construction or prove a
-prospective centre-selection improvement.
+## Reuse boundary
 
-| Policy | Point search preparation and box |
-|---|---|
-| `v3_dual_125k` | Existing lean full minimization and factor-free reduction; height125000 |
-| `factor_free_125k` | Factor-free reduction alone; height125000 |
-| `v3_dual_500k` | Same two reductions; height500000 |
-| `factor_free_shears_125k` | Factor-free map followed by the fixed coordinate changes below; height125000 |
-
-The five changes are the identity, `u+1`, `u-1`, `u/(u+1)` and
-`u/(1-u)`. Binary quartics, quadratic ordinate terms and the complete map to the
-original equation are transported exactly. Infinity and poles are included.
-The existing projective-box key removes certified signed-permutation duplicates;
-arbitrary PGL2 changes are not assumed to preserve a finite height box.
-Translating a centre, alternate fibrations and new centre-selection policies
-remain possible later comparisons, not automatic additions to this run.
-
-Each development arm has300 wall seconds, including starting-rank checks,
-map construction and point search, followed by at most90 seconds for an exact
-fresh-process replay. Each map is separately limited to5 seconds and1GiB;
-each PARI point call to10 seconds. A failed map provides no point-box coverage.
-One CPU is pinned, numerical-library thread counts are one, and the worker tree
-has a3GiB RSS cap. Linux subreaping records descendant CPU separately from wall
-time, including failed and interrupted attempts. Snapshot creation and input
-certification are retained as shared preparation costs. Historical landscape
-costs remain separately identified; absent complete cold costs remain UNKNOWN.
-
-The score orders policies by the number of verified next-direction successes,
-then summed CPU with twice the arm-plus-replay allowance charged for every miss.
-Lane order rotates between cases. A gain stops that arm at the first certified
-new direction; a point already in the initial subgroup is not a success.
-Unknown finite-column admissions are not dependence proofs. Exact point maps,
-square identities and finite-group independence are replayed in a fresh process.
-This shares the maintained arithmetic implementation; it is not a claim of a
-second independent CAS implementation. Certificate comparison uses canonical
-JSON digests, retaining the tuple/list serialization regression exposed by the
-old pilot.
-
-At least two development successes are required. Freeze the provisional winner,
-then compare it with the baseline on the alternative recovered-strict03 M30
-subgroup, with450 seconds per arm plus90 for replay. Require a verified gain;
-a nonbaseline winner that is slower than a successful baseline stops at this
-validation gate. These are different subgroups on the same Curve302, not
-independent samples of curves. The winner and both seals are frozen before
-any production point call. A single timing comparison is conditional evidence,
-not a universal speed theorem.
-
-## Follow-up roster and exposure
-
-The strongest locally generated inputs available with certified prepared banks
-are rank27. Inventory188's rank28 includes reproduction of a known public point;
-it is a control, not a newly generated rank28 candidate. The first follow-up
-roster uses four existing rank27 candidates in stable inventory-ID order:
-
-| Inventory ID | Family | Parameter |
-|---|---|---|
-| new-20260906-40 | 074d9 | 2818/1535 |
-| new-20260906-48 | 11952 | 2828/2015 |
-| new-20260906-71 | 103b2 | 3726/881 |
-| new-20260906-90 | A1/MW16 | -1867/270 |
-
-These are follow-ups on previously searched curves, not rank-blind fresh-fibre
-selection. Subsequent public registrations do not by themselves establish prior
-public provenance. This roster makes no worldwide novelty claim. Other rank27
-rows, including41,72,186 and `r17-panel-103b2-low-02`, remain in the inventory;
-the selected four reuse existing exact prepared banks without new lattice work.
-
-The [retained exposure](HIGH_RANK_SHORT_PASS_ROSTER_2026-09-09.md) and
-[parent-span reassessment](PRODUCTIVE_PARENT_SPAN_REASSESSMENT_2026-09-09.md)
-contain substantial completed misses. In particular, earlier short passes and
-the curve48 complementary-parent continuations are not unspent budgets. The
-builder records completed same-basis coordinate boxes from every available
-sealed native pass and skips exact matches. A larger height or a distinct
-coordinate box is new bounded coverage, not a new curve or rank direction by
-itself. This deduplication is scoped to the bound local passes, not all historical
-exposure under every possible basis and isomorphism.
-
-Only the frozen winning policy is applied. Remaining allowance is divided
-equally between the four inputs with at most two hours per input, and a reserved
-replay allowance. Each stops after one verified new direction. There is no
-automatic continuation to a second point, new bank, parameter sweep, or larger
-campaign. Any gain must subsequently enter the inventory through its usual
-independent certificate and provenance review; a search receipt alone does not
-publish a new rank record.
-
-## Run and follow
-
-The immutable local packet is
-`research/artifacts/local/elliptic-curves/next-direction-benchmark-v1/`.
-Its `plan.json` binds source snapshots, projected inputs, starting-rank
-certificates, the complete control ladder and retained exposure. Workers have
-an application artifact-read restriction; no operating-system isolation is
-claimed. Source snapshots include the transitive Python packages and native
-sources, avoiding the old launch omissions.
-
-From the repository root, after choosing the ceiling:
-
-```sh
-# Example ceiling: eight worker-hours; launch detaches and returns immediately.
-python3 research/elliptic-curves/cas/run_next_direction_benchmark.py launch \
-  --folder research/artifacts/local/elliptic-curves/next-direction-benchmark-v1 --hours 8
-
-research/elliptic-curves/next-direction-status.sh
-watch -n 30 research/elliptic-curves/next-direction-status.sh
-research/elliptic-curves/next-direction-status.sh stop
-```
-
-Status reports actual controller liveness, the current arm, progress and log
-path. Every arm retains its maps, returned points, certificates and CPU/wall
-receipts. The supervisor kills owned descendants if the controller exits.
-Host sleep pauses local computation; the launcher does not change power settings.
-An interrupted run is retained without automatic restart or reset of its budget.
-
-Implementation: [input projection](../cas/prepare_next_direction_benchmark.py),
-[bounded worker and exact replay](../cas/next_direction_benchmark.py),
-[detached runner](../cas/run_next_direction_benchmark.py),
-[narrow transport regressions](../tests/test_next_direction_benchmark.py).
-The four transport, box-equivalence and finite-certificate regressions pass.
-No new next-direction result or rank32 certificate is asserted by this protocol.
+Use factor-free reduction only as a cheaper representation in a separately
+authorized, compatible experiment. Do not re-search these completed boxes or
+interpret the no-gain endpoint as an exclusion. A rank-32 attempt needs a
+declared coverage or admission gap beyond the completed banks; the current
+[programme map](../README.md) chooses any future work. The
+[centre-policy lesson](../../knowledge/ALGORITHMS.md#method-ec-centre-policy-keep-shallow-enumeration-deep-centres-and-adaptive-coverage-distinct)
+contains the reusable rule.

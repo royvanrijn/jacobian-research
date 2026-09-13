@@ -55,12 +55,12 @@ cost relative to this shorter search.
 - Raw search/replay: `artifacts/local/elliptic-curves/curve52-short-v3-discovery-v1/`,
   including frozen sources and a hash-bound `continuation-queue.json`.
 
-The continuation queue records the verified M26 basis, the current landscape,
-and the next coordinate policy to consider, including a partially visited
-centre. It does not launch or certify the remaining suffix. Any deeper run
-must preserve this exposure rather than repeating or silently dropping it.
-The reusable [queue recorder](../cas/queue_verified_short_pass.py) reproduces
-the same next step in `continuation-queue-v2.json`: centre13, factor-free map.
-It also distinguishes a gain at the cutoff, which requires a basis rebuild,
-from continuation of an unchanged basis. The original queue record is retained.
-The broader rank29–32 and conductor-record objectives remain open.
+The continuation queue is a dated stopping-state record. It preserves the
+verified M26 basis, current landscape, and partially visited centre; it neither
+launches nor certifies the remaining suffix. The reusable
+[queue recorder](../cas/queue_verified_short_pass.py) retains the historical
+candidate in `continuation-queue-v2.json`: centre13, factor-free map, and
+distinguishes a cutoff gain requiring a basis rebuild from an unchanged basis.
+It is not authority to resume the campaign. New work is selected by the
+programme map and must retain this exposure rather than silently repeating or
+dropping it. The broader rank29–32 and conductor-record objectives remain open.

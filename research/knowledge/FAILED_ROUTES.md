@@ -6,7 +6,7 @@ These are the claim ledger's existing exclusions and supersessions, not new proh
 
 ## OP-EC-RANK-CONDUCTOR: Exceptional elliptic rank with record conductor (closed disjunction)
 
-Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/README.md).
+Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/notes/ORIGINAL_RANK_CONDUCTOR_TARGET_CLOSED.md).
 
 Replaced by: `ECR30`, `EC-R21-ICARM`, `OP-EC-NEXT`.
 
@@ -14,7 +14,7 @@ Replaced by: `ECR30`, `EC-R21-ICARM`, `OP-EC-NEXT`.
 
 - **Promoting the certified independent-point lower bounds to exact ranks** Neither replay supplies an unconditional Mordell--Weil upper bound; exact-rank work belongs to the successor problem. Witnesses: [ECR30](../elliptic-curves/notes/ICARM_CURVE273_RANK30.md) (proved), [EC-R21-ICARM](../elliptic-curves/notes/ICARM_7FFF_ZIP_SEQUENCE.md) (proved).
 
-## OP-EC-NEXT: Parallel rank-jump experiments and rank-32 certification
+## OP-EC-NEXT: Select productive candidates toward a certified rank32 subgroup
 
 Recorded programme state: **open**. [Canonical scope](../elliptic-curves/README.md).
 
@@ -42,9 +42,11 @@ Replaced by: `EC-K3-NS0024-QQ-MARKING-OBSTRUCTION`, `OP-K3-DIFFERENT-NS-ARITHMET
 
 Recorded programme state: **open**. [Canonical scope](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
-- **Using NS0024 or NS0031 as a rational rank-19 marked source over QQ** Independent arithmetic marking obstructions exclude both lattices over QQ even though their geometric and formal corridors remain exact over larger fields or local bases. Witnesses: [EC-K3-NS0024-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved), [EC-K3-NS0031-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
+- **Using NS0024 as a rational rank-19 marked source over QQ** The retained NS0024 arithmetic marking obstruction excludes this lattice over QQ; its geometric corridor remains a control. Witnesses: [EC-K3-NS0024-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
 
-- **Promoting a modular point, p-adic lift, or formal branch without a rational rank-19 marking** The NS0031 formal branch and physical corridor coexist with a rational marking obstruction, so local or geometric existence does not supply the required arithmetic source. Witnesses: [EC-K3-NS0031-MARKED-FORMAL-BRANCH](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) (proved), [EC-K3-NS0031-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
+- **Promoting a modular point, p-adic lift, or formal branch without a rational rank-19 marking** The NS0031 formal branch and physical corridor prove local and geometric facts only. Its rational marking remains UNKNOWN after withdrawal of the previous period-map argument. Witnesses: [EC-K3-NS0031-MARKED-FORMAL-BRANCH](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) (proved), [EC-K3-NS0031-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (partial).
+
+- **Transferring a norm-one modular-curve exclusion to K3 markings without the full stable period group and rational map** NS0031 has a stable determinant-minus-one reflection whose projective spin representative has nonsquare determinant 37. The full orthogonal discriminant kernel need not lie in rational norm-one units; an empty norm-one cover does not decide its quotient. Witnesses: [EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
 
 - **Using the known determinant-720 rational 3A5 model as the determinant-720 source** Its rational Neron--Severi lattice saturates to determinant 20, and the exact stable curve X_0(60) has no rational noncuspidal point; determinant 720 remains a lattice and corridor control, not an arithmetic source certificate. Witnesses: [EC-K3-GOLAY-DET720-NS-SATURATION](../elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md) (proved), [EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION](../elkies-k3/GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
 
@@ -62,9 +64,15 @@ Recorded programme state: **open**. [Canonical scope](../elkies-k3/DIFFERENT_NS_
 
 - **Promoting the 2,134-row prescribed-root census to a complete or arithmetic source classification** The exact census covers only its thirteen-ambient, sixteen-anchor, bounded prescribed-root embedding domain and constructs no rational marking or equation. Its rows are not even deduplicated into integral-isometry or J2 classes. Witnesses: [EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS](../elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md) (proved).
 
+- **Reopening the two literal determinant500/750 rows through their coarse genus-zero curves** Their full stable marked curves X_H(50) and X_H(75) have only rational cusps; the retained group audit includes the non-spin cosets. This excludes the two specified rows over QQ, not other ternary genera or larger number fields. Witnesses: [EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS](../elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) (proved).
+
+- **Repeating the fixed regular-slope norm12 families against the complete smooth native rational V4 target atlas** All49 families M=M0+lambda*h^2 with constant projective lambda miss all4358409 rational intersection-one targets. This excludes those fixed regular families only. Full norm12 pencils also move their finite zero contact and were not covered by that screen; nonzero Tate classes, higher-height sections and other atlases also remain outside it. The separate rank-zero closure of seventeen selected product twists is unchanged. Witnesses: [EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION](../elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md) (proved).
+
+- **Seeking a third rational section at any height on the seventeen selected alternate11952 product twists** Twelve geometric rank-zero certificates and five regulator obstructions prove E^(d)(QQ(u))={O} for exactly this target set, including denominator and boundary charts. Their anti-invariant group, integral character glue and Tate quotient vanish. The five arithmetic cases still have geometric rank UNKNOWN in[0,2]; other products and full two-Selmer groups are outside this closure. Witnesses: [EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION](../elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) (proved), [EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO](../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md) (proved), [EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP](../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) (proved).
+
 ## OP-EC-CURVE302-CONSTRUCTION-RECOVERY: Completed: explicit alternative302 parent with full generic MW17 basis
 
-Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md).
+Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md).
 
 Replaced by: `EC-CURVE302-RECOVERED-MW17-PARENT`.
 
@@ -74,14 +82,38 @@ Replaced by: `EC-CURVE302-RECOVERED-MW17-PARENT`.
 
 - **Treating an alternative parent as the discoverers' original construction record** The explicit parent proves a mathematical realization through Curve302, not its historical generation procedure. Pre-upload provenance remains UNKNOWN and the no-outreach instruction remains in force. Witnesses: [EC-CURVE302-RECOVERED-MW17-PARENT](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) (proved).
 
-## OP-EC-RANK-JUMP-MECHANISM-20260910: Connect exceptional multisection ancestry to independent rank arithmetic and strict descent
+## OP-EC-RANK-JUMP-MECHANISM-20260910: Parked: explain rank jumps beyond the completed scoped obstructions
 
-Recorded programme state: **open**. [Canonical scope](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md).
+Recorded programme state: **parked**. [Canonical scope](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md).
 
 - **Treating the shared genus-one pencil as one shared quadratic cover explaining the rank contrast** The selected 14/11 branch quartics have disjoint supports and independent radicals, forcing selected common-cover degrees16384/2048. This applies to those emitted extensions only; other ancestries, rebasing and global minimum genus remain open. Witnesses: [EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) (proved).
 
 - **Repairing the 182 completed MW16-05 carrier misses by generic translations or pairings** Each normalized cover has no rational lift above3/17. Generic translation preserves that fibre, and a rational point on a paired cover would project to rational points on both factors. The incomplete shells, interrupted candidate and other carriers remain outside this exclusion. Witnesses: [EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912](../elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md) (proved).
 
-- **Using the frozen coefficientwise column-6 word as an infinite soluble or Selmer family** The fixed complete1676-atom continuation has only finitely many rational Selmer specializations: exact denominator/resultant guards force containment in finitely many genus5 twists. No effective parameter list follows. Adaptive constructors, new dependencies, column7 and other continuations are not excluded. Witnesses: [EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912](../elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) (proved).
+- **Using the frozen coefficientwise column-6 word as an infinite soluble or Selmer family** The fixed complete1676-atom continuation has only finitely many rational Selmer specializations, contained in finitely many genus5 twists; no effective parameter list follows. Its valuation obstruction also forbids repair on any rational or genus-one parameter cover. Adaptive constructors, new dependencies, column7 and other continuations are not excluded. Witnesses: [EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912](../elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) (proved), [EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912](../elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md) (proved).
 
 - **Promoting the sparse relation pilot's deficiency to the full class2-rank or a rank upper bound** The bounded skew extension adds no independent noncanonical relation beyond the original pilot and fails its frozen density gate. Deficiency concerns only the chosen factor-base image; generation and missing relations remain unresolved. A known-MW lower consequence is not an independent predictor. Witnesses: [EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) (proved).
+
+- **Restarting the closed fresh-constructor pilot merely with a larger bank or longer cap** The restricted cold adapter failed positive commissioning: 841 independent projected atom columns left no dependency, no lift and no fresh fibre. It omitted the successful reference relation warm-up, so this is not a general constructor obstruction. Reopening needs a new mathematical reason and separate scope. The rank22 V3 checkpoint also failed final verification and supplies no completed comparison. Witnesses: [EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912](../elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) (partial).
+
+- **Searching for integer solutions of the two already obstructed Curve302 seed norm equations** Nonzero Artin characters prove both relative ideals nonprincipal despite everywhere local integral solubility. The exhaustive inherited-correction list places the normalized first seed outside the inherited ideal image, even modulo2. Rational solutions remain valid; no full class group, exact Selmer rank or prospective seed-selection rule follows. Witnesses: [EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910](../elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md) (proved).
+
+- **Repairing the prescribed determinant4100 core bridge by changing its core identification** The retained embeddings25 and33 have incompatible order-two gluing classes, and Aut(K)={+I,-I} cannot repair them, even after adding U. This excludes that overlap only. The rational class1 realization remains valid with common core determinant13104; other embeddings are not excluded. Witnesses: [EC-CURVE302-CLASS1-PRESCRIBED-CORE-GLUE-OBSTRUCTION-20260910](../elliptic-curves/notes/CURVE302_CLASS1_BRIDGE_AND_SHARED_CARRIERS_2026-09-10.md) (proved).
+
+## OP-K3-CORRELATED-QUADRATIC-GAINS-20260912: Construct two independent new sections on one quadratic cover with infinitely many rational specializations
+
+Recorded programme state: **open**. [Canonical scope](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md).
+
+- **Re-running the 300 pairs of the frozen25 smooth genus-one pencils as an unsolved same-cover search** Every rational parameter pair has an exact projective good-prime exclusion; other pencils and singular normalizations remain outside the result. Witnesses: [EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) (proved).
+
+- **Presenting the existing V4 degree-four carrier as the requested quadratic cover of the original parameter line** The two known singleton directions have distinct characters over that line; passing to an intermediate genus-one quotient does not reduce the total degree over the original parameter field. Witnesses: [EC-K3-BISECT-BIQUADRATIC-R19](../elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md) (proved).
+
+- **Reopening the frozen 67 height-six regular chord nets against the frozen 25 height-eight pencils as a same-cover search** All 1,675 pairs have projective good-prime exclusions over every rational parameter and repeated-root position. Other carrier families remain outside the result. Witnesses: [EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912](../elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md) (proved).
+
+- **Trying larger rational auxiliary-function boxes in the same Mestre identity on published R17 to obtain an infinite rational base** Odd valuations at the irreducible degree8 A divisor and degree12 B divisor force at least20 branch points and genus at least9 for every rational auxiliary function, without a degree or height bound. Witnesses: [EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913](../elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md) (proved).
+
+- **Repeating one shared-ordinate cubic tangent on the same136 published generic basis pairs as an unresolved low-genus construction** All136 resulting covers have certified genus lower bound at least86. The scope excludes neither other generic words nor further tangent operations. Witnesses: [EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913](../elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md) (proved).
+
+- **Reopening pair collisions within the complete63917 minimum-norm8 genus-one pencils on the direct11952 alternate-Q80 parent** All2042659486 pairs and within-pencil parameter collisions are exactly excluded over rational parameters, including infinity. Higher-intersection carriers and arbitrary twists are outside this result. Witnesses: [EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913](../elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md) (proved).
+
+- **Repeating smooth genus-one bisection collisions on direct11952 alternate Q80, including moving-contact norm12 pencils** The combined63966 full pencils exhaust every smooth genus-one bisection modulo inherited section translation. All2045792595 pairs and within-pencil collisions are excluded over rational parameters. Singular images of higher arithmetic genus remain outside the theorem. Witnesses: [EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913](../elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md) (proved).

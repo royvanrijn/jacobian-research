@@ -21,6 +21,7 @@ from fractions import Fraction
 import hashlib
 import json
 from math import isqrt
+from pathlib import Path
 from typing import Any, Sequence
 
 import sympy as sp
@@ -41,6 +42,12 @@ SPECIALIZATION_U = Q(1)
 SPECIALIZATION_T = Q(14_405, 2)
 QUARTIC_SQUARE_CONTENT = 5_760_000
 QUARTIC_SQUARE_SCALE = 2_400
+RESEARCH_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUTPUT = (
+    RESEARCH_ROOT
+    / "artifacts/generated-results/elliptic-curves/"
+    "elliptic_mestre_rank13_02393128133175_certificate_v1.json"
+)
 
 
 # These are the six-section diagnostic inventory supplied by the exact linear-
@@ -527,8 +534,55 @@ def build_verification(*, full_polynomials: bool = False) -> dict[str, Any]:
     return result
 
 
+def build_artifact(*, full_polynomials: bool = False) -> dict[str, Any]:
+    """Return the portable certificate and bind its immediate exact sources."""
+
+    source_paths = (
+        Path(__file__).resolve(),
+        Path(formulas.__file__).resolve(),
+        RESEARCH_ROOT / "elliptic-curves/cas/mestre_root_tuples.py",
+        RESEARCH_ROOT / "elliptic-curves/cas/nagao_1994.py",
+        RESEARCH_ROOT / "elliptic-curves/cas/search_mestre_root_tuple_scale.py",
+        RESEARCH_ROOT
+        / "elliptic-curves/cas/search_mestre_root_tuple_scale_max200.py",
+    )
+    result = build_verification(full_polynomials=full_polynomials)
+    result.update(
+        {
+            "schema_version": 1,
+            "artifact_kind": "exact_generic_elliptic_curve_rank_lower_bound_certificate",
+            "reproduction": {
+                "command": (
+                    ".venv/bin/python "
+                    "research/elliptic-curves/cas/"
+                    "verify_mestre_rank13_02393128133175.py --check"
+                ),
+                "full_polynomials": full_polynomials,
+                "immediate_source_sha256": {
+                    str(path.relative_to(RESEARCH_ROOT)): hashlib.sha256(
+                        path.read_bytes()
+                    ).hexdigest()
+                    for path in source_paths
+                },
+            },
+        }
+    )
+    return result
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=DEFAULT_OUTPUT,
+        help="write the deterministic certificate here",
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="require --output to match a fresh exact reconstruction",
+    )
     parser.add_argument(
         "--full-polynomials",
         action="store_true",
@@ -539,13 +593,29 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> None:
     arguments = build_parser().parse_args()
-    print(
+    if arguments.full_polynomials and arguments.output == DEFAULT_OUTPUT:
+        raise SystemExit("--full-polynomials requires an explicit --output path")
+    rendered = (
         json.dumps(
-            build_verification(full_polynomials=arguments.full_polynomials),
+            build_artifact(full_polynomials=arguments.full_polynomials),
             indent=2,
             sort_keys=True,
         )
+        + "\n"
     )
+    if arguments.check:
+        if (
+            not arguments.output.is_file()
+            or arguments.output.read_text(encoding="utf-8") != rendered
+        ):
+            raise SystemExit(
+                "FAIL: the rank-at-least-13 certificate is absent or has changed"
+            )
+        print("PASS: rank-at-least-13 certificate is unchanged")
+        return
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(rendered, encoding="utf-8")
+    print(f"wrote {arguments.output}")
 
 
 if __name__ == "__main__":

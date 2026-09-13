@@ -1,0 +1,226 @@
+{
+  "mapper": "dual",
+  "rows": [
+    {
+      "address_index": null,
+      "cost": {
+        "name": "calibration/old-mw16-01/factor_free",
+        "outcome": "completed",
+        "process_tree_cpu_seconds": 23.808184176,
+        "returncode": 0,
+        "wall_seconds": 65.42293727694778
+      },
+      "family": "a1-fibration-01",
+      "job": "runtime/research/jobs/calibration/old-mw16-01/factor_free",
+      "mapper": "factor_free",
+      "name": "calibration/old-mw16-01/factor_free",
+      "parameter": "7/8",
+      "phase": "seed",
+      "result": {
+        "allowance": 32,
+        "binary_outcome_complete": true,
+        "boundary": "First gaining cloud is reconciled without further searches in stage one. No seed under exposure is not a rank upper bound. No automatic retry.",
+        "calls": 1,
+        "family": "a1-fibration-01",
+        "gain_timeline": [
+          {
+            "after": 17,
+            "before": 16,
+            "call": 1,
+            "phase": "online"
+          },
+          {
+            "after": 18,
+            "before": 17,
+            "call": 1,
+            "phase": "cloud-reconciliation"
+          }
+        ],
+        "initial_rank": 16,
+        "packet": "jobs/calibration/old-mw16-01/factor_free/packet.json",
+        "packet_sha256": "6bb7744c589431943032f1235211c077c703398e27758dea5db89f2099bd49dd",
+        "parameter": "7/8",
+        "phase": "seed",
+        "point_or_map_censoring": false,
+        "rank_lower_bound": 18,
+        "request_sha256": "05275a6f0679d0e2e4e4ef7f28805a9df93c0cc81bf1ce43978d898d79f0a163",
+        "segments": [
+          {
+            "after": 18,
+            "before": 16,
+            "calls": 1,
+            "map_timeouts": 0,
+            "point_timeouts": 0,
+            "search": "jobs/calibration/old-mw16-01/factor_free/search-00",
+            "stop": "ADDITIONAL_FINITE_RANK_REQUIRES_RECONCILIATION"
+          }
+        ],
+        "status": "PASS_CERTIFIED_EXPOSURE"
+      },
+      "valid": true
+    },
+    {
+      "address_index": null,
+      "cost": {
+        "name": "calibration/old-mw16-01/dual",
+        "outcome": "completed",
+        "process_tree_cpu_seconds": 19.180380192,
+        "returncode": 0,
+        "wall_seconds": 22.67662518203724
+      },
+      "family": "a1-fibration-01",
+      "job": "runtime/research/jobs/calibration/old-mw16-01/dual",
+      "mapper": "dual",
+      "name": "calibration/old-mw16-01/dual",
+      "parameter": "7/8",
+      "phase": "seed",
+      "result": {
+        "allowance": 32,
+        "binary_outcome_complete": true,
+        "boundary": "First gaining cloud is reconciled without further searches in stage one. No seed under exposure is not a rank upper bound. No automatic retry.",
+        "calls": 1,
+        "family": "a1-fibration-01",
+        "gain_timeline": [
+          {
+            "after": 17,
+            "before": 16,
+            "call": 1,
+            "phase": "online"
+          },
+          {
+            "after": 18,
+            "before": 17,
+            "call": 1,
+            "phase": "cloud-reconciliation"
+          }
+        ],
+        "initial_rank": 16,
+        "packet": "jobs/calibration/old-mw16-01/dual/packet.json",
+        "packet_sha256": "73e58e748917231606d164576ee45039e0f26a294bca1b3ef23ab52b95d013d9",
+        "parameter": "7/8",
+        "phase": "seed",
+        "point_or_map_censoring": false,
+        "rank_lower_bound": 18,
+        "request_sha256": "8177fb76c441aa349e788d25a104a1c3e98412c78d260846dd6c14c441af7989",
+        "segments": [
+          {
+            "after": 18,
+            "before": 16,
+            "calls": 1,
+            "map_timeouts": 0,
+            "point_timeouts": 0,
+            "search": "jobs/calibration/old-mw16-01/dual/search-00",
+            "stop": "ADDITIONAL_FINITE_RANK_REQUIRES_RECONCILIATION"
+          }
+        ],
+        "status": "PASS_CERTIFIED_EXPOSURE"
+      },
+      "valid": true
+    },
+    {
+      "address_index": null,
+      "cost": {
+        "name": "calibration/old-new-a1-00414/factor_free",
+        "outcome": "completed",
+        "process_tree_cpu_seconds": 23.225450545000005,
+        "returncode": 0,
+        "wall_seconds": 63.699420236982405
+      },
+      "family": "x948-11952-a1-00414",
+      "job": "runtime/research/jobs/calibration/old-new-a1-00414/factor_free",
+      "mapper": "factor_free",
+      "name": "calibration/old-new-a1-00414/factor_free",
+      "parameter": "1/8",
+      "phase": "seed",
+      "result": {
+        "allowance": 32,
+        "binary_outcome_complete": true,
+        "boundary": "First gaining cloud is reconciled without further searches in stage one. No seed under exposure is not a rank upper bound. No automatic retry.",
+        "calls": 2,
+        "family": "x948-11952-a1-00414",
+        "gain_timeline": [
+          {
+            "after": 17,
+            "before": 16,
+            "call": 2,
+            "phase": "online"
+          }
+        ],
+        "initial_rank": 16,
+        "packet": "jobs/calibration/old-new-a1-00414/factor_free/packet.json",
+        "packet_sha256": "9722e6afd65a3b955c52327ed186b3d2b6ea448ed76092c32c4bf38145e69a50",
+        "parameter": "1/8",
+        "phase": "seed",
+        "point_or_map_censoring": false,
+        "rank_lower_bound": 17,
+        "request_sha256": "fc3fd1a6d0fc8f0eeeee2c715a461e0e99024f594b75c0b7def9aaaf4924f4d0",
+        "segments": [
+          {
+            "after": 17,
+            "before": 16,
+            "calls": 2,
+            "map_timeouts": 0,
+            "point_timeouts": 0,
+            "search": "jobs/calibration/old-new-a1-00414/factor_free/search-00",
+            "stop": "TARGET_LOWER_BOUND_REACHED"
+          }
+        ],
+        "status": "PASS_CERTIFIED_EXPOSURE"
+      },
+      "valid": true
+    },
+    {
+      "address_index": null,
+      "cost": {
+        "name": "calibration/old-new-a1-00414/dual",
+        "outcome": "completed",
+        "process_tree_cpu_seconds": 18.628295557000005,
+        "returncode": 0,
+        "wall_seconds": 22.104742239927873
+      },
+      "family": "x948-11952-a1-00414",
+      "job": "runtime/research/jobs/calibration/old-new-a1-00414/dual",
+      "mapper": "dual",
+      "name": "calibration/old-new-a1-00414/dual",
+      "parameter": "1/8",
+      "phase": "seed",
+      "result": {
+        "allowance": 32,
+        "binary_outcome_complete": true,
+        "boundary": "First gaining cloud is reconciled without further searches in stage one. No seed under exposure is not a rank upper bound. No automatic retry.",
+        "calls": 1,
+        "family": "x948-11952-a1-00414",
+        "gain_timeline": [
+          {
+            "after": 17,
+            "before": 16,
+            "call": 1,
+            "phase": "online"
+          }
+        ],
+        "initial_rank": 16,
+        "packet": "jobs/calibration/old-new-a1-00414/dual/packet.json",
+        "packet_sha256": "565d12f10a3082e1f90962b2548116f2ba40e502d1a501b56eb64630a00ee331",
+        "parameter": "1/8",
+        "phase": "seed",
+        "point_or_map_censoring": false,
+        "rank_lower_bound": 17,
+        "request_sha256": "80d6585d86e85c6ef53aae0d628e252fa9e1a06b81a719e86705cf5978948ce1",
+        "segments": [
+          {
+            "after": 17,
+            "before": 16,
+            "calls": 1,
+            "map_timeouts": 0,
+            "point_timeouts": 0,
+            "search": "jobs/calibration/old-new-a1-00414/dual/search-00",
+            "stop": "TARGET_LOWER_BOUND_REACHED"
+          }
+        ],
+        "status": "PASS_CERTIFIED_EXPOSURE"
+      },
+      "valid": true
+    }
+  ],
+  "status": "PASS_POSITIVE_CALIBRATION"
+}

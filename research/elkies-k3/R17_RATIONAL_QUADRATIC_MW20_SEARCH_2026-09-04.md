@@ -137,17 +137,18 @@ fibration.  Their transport is therefore undefined without an additional
 explicit birational common-K3 transport; they are not silently substituted
 for the five requested controls.
 
-## Next theorem-directed step
+## Remaining theorem gate (unscheduled)
 
-The remaining native target is the full trace-zero denominator chart, most
-conveniently written on the short twist as
+If this paused route is later given explicit scope, its remaining native gate
+is the full trace-zero denominator chart, most conveniently written on the
+short twist as
 
 ```text
 Y^2 = X^3 + q^2*A*X + q^3*B,
 deg(q)=2, deg(X)<=6, deg(Y)<=9.
 ```
 
-It must be searched for repeated scalar-sensitive `q`, followed by exact
-characteristic-zero lifting and a height-pairing rank-three certificate.  A
+It requires repeated scalar-sensitive `q`, followed by exact
+characteristic-zero lifting and a height-pairing rank-three certificate. A
 bounded parameter search or another small-prime count cannot replace those
-gates.
+gates or authorize the search.

@@ -1,0 +1,92 @@
+{
+  "schema": "q80-complete-genus-one-execution-v1",
+  "date": "2026-09-13",
+  "input_sha256": "c3268d6b57a45b7ab675e715c0ce6f1d4cc2d3864fa2a8fcba2ad59935f966ca",
+  "frozen_pencils": 63917,
+  "pair_count": 2042659486,
+  "quarantine": "Generic equation, generic sections, generic height Gram and complete generic trace words only; no exceptional-point or specialization target inputs.",
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage prime --prime 509",
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage prime --prime 521",
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage prime --prime 523",
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage prime --prime 541",
+    "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage embeddings"
+  ],
+  "limits": {
+    "cpu_seconds_per_prime_soft": 240,
+    "cpu_seconds_per_prime_hard": 245,
+    "address_space_gib": 4,
+    "checkpoint_size": 512,
+    "embedding_supplement_cpu_seconds": 20
+  },
+  "prime_components": [
+    {
+      "prime": 521,
+      "cpu_seconds": 21.75591615,
+      "exit_code": 0
+    },
+    {
+      "prime": 523,
+      "cpu_seconds": 22.648108054,
+      "exit_code": 0
+    },
+    {
+      "prime": 541,
+      "cpu_seconds": 1.249078515,
+      "exit_code": 0
+    }
+  ],
+  "embedding_supplement": {
+    "count": 5,
+    "prime": 541,
+    "cpu_seconds": 0.07427634900000002,
+    "exit_code": 0
+  },
+  "initial_failures": [
+    {
+      "prime": 509,
+      "exit_code": 1,
+      "reason": "Model discriminant derivative gcd has degree3 modulo509. No pencil was constructed; this prime gives no exclusion."
+    },
+    {
+      "prime": 521,
+      "exit_code": 1,
+      "reason": "Coefficientwise conversion encountered a rational coefficient denominator divisible by521. The rational function was then normalized by scaling numerator and denominator together to primitive integral polynomials. The next attempt used the same frozen input and verified the full basis Gram before construction."
+    }
+  ],
+  "independent_replay": {
+    "command": "OPENBLAS_NUM_THREADS=1 python3 research/elkies-k3/scripts/verify_q80_complete_genus_one_pairs.py --progress --output research/artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/independent-replay-final.json",
+    "exit_code": 0,
+    "elapsed_seconds": 30.424,
+    "trace_frames": 125093,
+    "projective_images": 65418602,
+    "arithmetic": "Python fractions, integer polynomial arithmetic, finite elliptic-curve group operations and NumPy integer arrays; no Sage or constructor imports"
+  },
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s research/tests -p 'test_q80_complete_genus_one_pairs.py' -v",
+    "count": 8,
+    "exit_code": 0,
+    "reported_seconds": 0.212
+  },
+  "timing_scope": "Component timings exclude authoring and startup. They are not an end-to-end speed comparison.",
+  "source_hashes": {
+    "elkies-k3/scripts/compare_q80_complete_genus_one_pencils.sage": "be5946d08863f6b690a3a00038abb33605a25ad6f5ec1199815d7b1a01f001d5",
+    "elkies-k3/scripts/verify_q80_complete_genus_one_pairs.py": "8bc3f9dae7a5ab4a927e22970768c9703067ef538ac578c8b4de6af7415a2a93",
+    "tests/test_q80_complete_genus_one_pairs.py": "a07f4e971768c71b5f822aa8ade4b41f59b20ebbaac81276283cdeb1f7176084",
+    "elkies-k3/scripts/verify_r17_mestre_shared_twist.py": "f529b6034a39e8e9af3df0db3f2acd91979c476a9eb0d3f7942e40da73d4fd5a",
+    "elkies-k3/scripts/construct_elkies_2026_bisections.sage": "146c0fdeddb2b5de44989bb650b36e28e600a1d5a8ea61f54f05df09db65a3df",
+    "elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage": "483ece6190a420225ce7b590373ec15bfc057a9f9019b76fb9139bcf248987ce"
+  },
+  "artifact_hashes": {
+    "input.json.gz": "c3268d6b57a45b7ab675e715c0ce6f1d4cc2d3864fa2a8fcba2ad59935f966ca",
+    "prime-521.json.gz": "2242f2292b5ca8b3bfecb67fae110407a4ede2d3d8b797e6facbb5e9dcba3cd2",
+    "prime-523.json.gz": "3bf8377086f901fcc9b6e86b19a8f02088573a499fbbe152524d8a58747b303c",
+    "prime-541.json.gz": "37741865e6eccd476e6990683b7582f5264fac82b02654e764de582ad27b010c",
+    "embedding-input.json": "6e57815aa4e946ee4e8e39f27aa092b1a68614f4a218b12437755754462b5182",
+    "embedding-result.json.gz": "b17014fff177c5b739bd744216ca9fa39ab46c15ce1a5291ed395d558e60ef57",
+    "independent-replay-final.json": "e8bf8ba07fb4f28bfa974fe41410cd870e7989d1080cba73faf8ed9a57ce07a6",
+    "frame-manifest.json": "1a71b3a955324f7f54288bd66c8e88161498e223d4ee9915ec457d7e4717ee98"
+  },
+  "goal_complete": false
+}

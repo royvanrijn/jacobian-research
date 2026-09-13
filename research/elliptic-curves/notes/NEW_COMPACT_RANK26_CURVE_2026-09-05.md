@@ -1,5 +1,9 @@
 # A new compact rank-at-least-26 elliptic curve
 
+> **Historical fixed-experiment snapshot.** The inventory counts below belong
+> to their sealed evidence versions. Use the generated
+> [current inventory](../INVENTORY.md) for present totals.
+
 The compact R17 family `07ca9` at parameter `-2507/3068` gives the global
 minimal integral equation
 
@@ -114,10 +118,10 @@ The three additions with lower bound at least 22 are:
 
 The [batch certificate](../../artifacts/generated-results/elliptic-curves/compact_r17_wide_results_v1.json)
 retains all 24 measurements, known matches and earlier-equation matches.
-The [stable-ID inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v3.json)
-now contains 39 curves: one with certified lower bound 26, five with 25,
-eight with 24, eleven with 23 and fourteen with 22. These buckets count each
-curve once. All 39 were rechecked against the same 586-equation snapshot.
+At the [stable-ID inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v3.json)
+snapshot, there were 39 curves: one with certified lower bound 26, five with
+25, eight with 24, eleven with 23 and fourteen with 22. These buckets count
+each curve once. All 39 were rechecked against the same 586-equation snapshot.
 The [CSV](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v3.csv)
 provides their equations.
 

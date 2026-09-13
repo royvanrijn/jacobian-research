@@ -25,6 +25,9 @@ cannot produce a generic cubic norm-square class whose restriction is the
 actual RR branch class. Translating `Q` by any generic point does not repair
 it: the trace changes by twice that point.
 
+Primary evidence: [protocol](../../artifacts/generated-results/elliptic-curves/det1092_trace_parity_descent_v1/protocol.json)
+and [replay](../../artifacts/generated-results/elliptic-curves/det1092_trace_parity_descent_v1/replay.json).
+
 On the determinant1092 parent, the historical norm10 centre, the norm8
 first-seed carrier, and the orbit8044 conic all have nonzero trace parity.
 Their generic branch classes therefore do **not** descend, even though

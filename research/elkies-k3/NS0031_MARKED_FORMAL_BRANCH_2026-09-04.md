@@ -6,14 +6,13 @@ Status: **PROVED LOCAL THEOREM**.
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
 
-> **Arithmetic disposition.** The later exact Clifford/modular argument in
-> [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-> proves that this branch cannot contain a `QQ`-point with a full rational
-> `NS0031` marking. The local theorem below remains valid, but algebraizing or
-> extending its rational-coordinate scan is no longer a live arithmetic
-> source route.
+> **Arithmetic disposition, corrected September 12.** Full rational NS0031
+> marking is `UNKNOWN`. The [period-group review](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+> found an exact counter-witness to the containment used for the former
+> exclusion. The local theorem below remains valid; it supplies neither a
+> rational marking nor authorization to repeat the bounded coordinate scan.
 
 ## Statement
 
@@ -101,9 +100,10 @@ This theorem does **not** algebraize the formal branch, rationally
 parameterize it over `QQ`, or produce a `QQ`-rational point. It does not prove
 that any characteristic-zero member has geometric Picard rank 19, and it does
 not yet provide nineteen individually `QQ`-rational Neron--Severi classes.
-The later rational-marking obstruction proves that these conclusions cannot
-hold over `QQ` with exact `NS0031`. Thus this proof boundary is retained as the
-scope of the local theorem, not as an open invitation to extend the lift.
+The former rational-marking exclusion has been withdrawn. These conclusions
+remain unresolved over `QQ` with exact `NS0031`; the local theorem and the
+completed scan do not decide them. Determine the actual stable marked curve
+and its rational non-CM locus before further source construction.
 
 ## Bounded rational-coordinate scan
 

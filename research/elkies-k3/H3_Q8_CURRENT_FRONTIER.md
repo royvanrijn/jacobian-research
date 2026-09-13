@@ -1,12 +1,10 @@
 # Historical H3 q=8 frontier and repair
 
-> **Historical snapshot (2026-08-22).** This note records the q8 repair and is
-> still authoritative for that edge, but it is not the current programme
-> frontier. The equation route now passes q4/orbit164, q8/orbit376, and
-> q12/orbit5867 to the certified rootless `24I1/MW17` endpoint.  The current
-> programme frontier is residual 2-descent in the compact published `t`
-> chart; start from [`README.md`](README.md) and
-> [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md).
+> **Historical q8 repair.** The canonical edge proof is the
+> [re-audit](H3_Q8_REAUDIT_2026-08-22.md). The later route through
+> q4/orbit164, q8/orbit376 and q12/orbit5867 also reached the
+> [certified rootless endpoint](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+> Current priorities are in the [programme map](README.md).
 
 Status at snapshot: 2026-08-22, after the binary-quartic 2-cover and
 q-normalizer repairs.
@@ -36,10 +34,10 @@ The first command rebuilds the pinned 17 KB component-nef target and `cmp`
 checks it byte-for-byte. The q8 checker consumes the tracked fibration-data
 copy rather than an ignored `artifacts/local/` target prerequisite.  However,
 the final q8 command still requires the ignored q6 child-Jacobian, transported-
-zero, and E7-infinity JSON intermediates, none of which is retained in the
-current clean checkout.  Rebuild the `EC-K3-H3-Q6` artifact chain first.  This
-historical block therefore records the intended full-chain replay, not a
-standalone clean-checkout command.
+zero, and E7-infinity JSON intermediates. These ignored inputs are a named
+portability gap for `EC-K3-H3-Q6`; recover retained inputs before considering
+any separately scoped reconstruction. This historical full-chain command is
+not a standalone clean-checkout replay or authorization to rebuild it.
 
 with endpoint
 
@@ -157,9 +155,13 @@ Treat these as historical diagnostics only:
 - source `true1600 -> 18` pipeline as the final q8 pencil;
 - experimental `corrected1278 -> 14 -> 7` q6^8 pipeline and identity-component tests.
 
-## Next exact gate
+## Regression rules
 
-Continue from the exact `D13/MW4` child toward the rootless/high-rank target. Preserve two regression rules in every later compiler:
+The downstream rootless endpoint is also complete. Preserve these two rules
+when reusing the historical compilers:
 
 1. binary-quartic covariant point differences carry the 2-cover multiplier;
 2. derive base-pole residues from the fully cleared rational expression before CRT normalization—never drop section-coordinate denominators such as `Dx`.
+
+The [pre-cleanup frontier text](../archive/elkies-k3/H3_Q8_CURRENT_FRONTIER.before-2026-09-13.md.txt)
+is preserved byte for byte, including its superseded next-step instructions.

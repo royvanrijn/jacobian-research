@@ -69,9 +69,14 @@ def validate_certificate(certificate: dict) -> dict:
     }
 
 
-def coarse_label(row: dict) -> str | None:
+def coarse_curve(row: dict, classifier_row: dict | None) -> dict:
+    """Retain later exact coarse computations without promoting their scope."""
     base = row["arithmetic_source"]["base_curve"]
-    return base.get("label") or base.get("group")
+    if classifier_row is None:
+        return base
+    return classifier_row["full_discriminant_marking_curve"].get(
+        "coarse_norm_one_curve", base
+    )
 
 
 def full_curve_summary(classifier_row: dict | None) -> dict:
@@ -123,7 +128,7 @@ def full_curve_summary(classifier_row: dict | None) -> dict:
 
 def curve_priority(row: dict, classifier_row: dict | None) -> tuple:
     full = full_curve_summary(classifier_row)
-    coarse = row["arithmetic_source"]["base_curve"]
+    coarse = coarse_curve(row, classifier_row)
     coarse_genus = coarse.get("genus")
     normalization = row["similarity_normalization"]
     similarity_gap = int(normalization["literal_content"])
@@ -221,14 +226,7 @@ def build(
             if global_decision is not None
             else full_curve_summary(classifier_row)
         )
-        coarse = (
-            classifier_row["full_discriminant_marking_curve"].get(
-                "coarse_norm_one_curve",
-                row["arithmetic_source"]["base_curve"],
-            )
-            if classifier_row is not None
-            else row["arithmetic_source"]["base_curve"]
-        )
+        coarse = coarse_curve(row, classifier_row)
         normalization = row["similarity_normalization"]
         order = row["clifford"]["integral_even_clifford_order"]
         priority = curve_priority(row, classifier_row)
@@ -284,8 +282,7 @@ def build(
                 in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}
                 else (
                     classifier_row.get("next_arithmetic_gate")
-                    if phase_2_status is not None
-                    and classifier_row is not None
+                    if classifier_row is not None
                     and classifier_row.get("next_arithmetic_gate")
                     else "Compute the literal-lattice stable discriminant kernel, identify "
                     "a genus-0/1 (occasionally genus-2) quotient, and determine its "

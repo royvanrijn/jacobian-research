@@ -90,12 +90,8 @@ Raw evidence remains under
 records. Each seed retains its input/proof/protocol, chart transcripts,
 terminal record and `seeded-verified.json`.
 
-- [Original panel](../cas/run_curve302_seed_universality_panel.py).
-- [Original independent case replay](../cas/run_curve302_seeded_v3_amplifier.py).
-- [Parallel scheduler](../cas/run_curve302_seed_panel_parallel.py).
-
-From `research/`, read the completed status with:
-
-```sh
-python3 elliptic-curves/cas/run_curve302_seed_panel_parallel.py status
-```
+The [original panel](../cas/run_curve302_seed_universality_panel.py),
+[independent case replay](../cas/run_curve302_seeded_v3_amplifier.py), and
+[parallel scheduler](../cas/run_curve302_seed_panel_parallel.py) remain
+evidence implementations. Their terminal receipts are historical; none is a
+current controller or a continuation instruction.

@@ -1,0 +1,5 @@
+R17RETAINED|curve=12|stage=exact_replay|heights=NOT_RUN
+R17RETAINED|curve=12|status=PASS|elapsed=10.37
+R17RETAINED|curve=395|stage=exact_replay|heights=NOT_RUN
+R17RETAINED|curve=395|status=PASS|elapsed=10.876
+R17RETAINED|curve=363|stage=exact_replay|heights=NOT_RUN

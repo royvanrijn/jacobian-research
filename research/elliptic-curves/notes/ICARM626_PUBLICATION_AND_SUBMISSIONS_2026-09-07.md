@@ -1,12 +1,12 @@
-# ICARM #626 and further submission priorities
+# ICARM #626 historical publication and submission record
 
 **Later submissions:** local IDs90,186,71,40 are now ICARM627,628,629,630,
 respectively. See the [bad-prime and conductor supplement](SUBMITTED627_630_BAD_PRIMES_2026-09-07.md)
 for their exact arithmetic status. The earlier submission packets and snapshot
 counts below remain historical.
 
-The [current database view](CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md)
-now provides a complete local mirror and six separately certified recovery
+The [ICARM snapshot/control record](CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md)
+provides its retained local mirror and six separately certified recovery
 controls. This note retains publication history and the manual submission packets.
 
 Our curve `new-20260905-36`, family `a1-fibration-05` at `3/17`, is now
@@ -18,7 +18,7 @@ The unconditional statement remains rank at least 22. The separate
 [conditional upper-bound proof](SMALL_CONDUCTOR_CLASS_COMPLETION_PROOF_2026-09-06.md)
 gives exact rank 22 under its stated GRH assumption.
 
-## Current publication status
+## Dated publication status
 
 The database downloaded at `2026-09-07T08:08:39.902705+00:00` contains 626
 curves; raw SHA256 is

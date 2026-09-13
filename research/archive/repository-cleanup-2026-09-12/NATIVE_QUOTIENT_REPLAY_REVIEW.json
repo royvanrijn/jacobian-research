@@ -1,0 +1,222 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "claim": "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
+  "boundary": "Scoped maintenance replay; original theorem and assurance flags unchanged. The complete legacy321 checker list is not finished.",
+  "original_producer_sha256": "878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c",
+  "original_certificate_sha256": "582898590dcfdd8f36b7564d8df65dff951b0b304eddb6ae8825140eb1a92d9a",
+  "new_replayer_sha256": "bb9b37019e7d1d93d19a178de1d99602cf5b3c7ae1a6c37d24715e7486bcc326",
+  "software_sha256": {
+    "elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py": "bb9b37019e7d1d93d19a178de1d99602cf5b3c7ae1a6c37d24715e7486bcc326",
+    "tests/test_native_quotient_replay.py": "429e9f42b283b35f032f323f6964c7ec77a258aac8ce3ddf5e743edd32f9f216",
+    "tests/test_research_native_quotient_inputs.py": "54727c4786b993a3517d6661ced283072122de12d40a5e2cbf1f8e4a74353627",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+  },
+  "original_input_audit": {
+    "inputs": [
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-full-v1.json",
+        "sha256": "a57e22c5c9ad7852daf1016dc0302a7d03a896c89effcdc7b17d743f5a3c6e14",
+        "bytes": 498508117
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json",
+        "sha256": "faa98745f9bc8fb304493533ca93ecbb4b36606981ed2899282de381305fdeed",
+        "bytes": 296812933
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json",
+        "sha256": "fbf979bfe7d92528405c62330a80dbfd7742dc27c41a0426dcd4014f6865c8ce",
+        "bytes": 381366629
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json",
+        "sha256": "17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d",
+        "bytes": 10029
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json",
+        "sha256": "6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2",
+        "bytes": 3337015
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json",
+        "sha256": "58ce2906eed5535d613c5ab93f7ddbc04d501688d7162a6d2f1740495efc9ec4",
+        "bytes": 1131585
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json",
+        "sha256": "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa",
+        "bytes": 273501
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json",
+        "sha256": "5091c7fd2199692b538ecfd64b2bb3a2a208ac01ae28db082ca0dff6e21d1b90",
+        "bytes": 372571
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json",
+        "sha256": "3f676dd0ce76da7f3092b073519b11af964c6982bfbc7262057d0f5c66234b9f",
+        "bytes": 171509
+      },
+      {
+        "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "bytes": 266425
+      }
+    ],
+    "elapsed_seconds": 0.7685821380000561
+  },
+  "downstream_source_pins": [
+    {
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-highest-rank-transports-v1.json",
+      "sha256": "55aea9f4950580f0405e5631bc33abbd2e6c9f81c16c0e5a31c223efb3b09627",
+      "original_helper_sha256": "878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c"
+    },
+    {
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-refresh-priority-quotients-v1.json",
+      "sha256": "e0c0e62c4c357a0dffd4c55dcae0ec2b4993a47fcea0a0de9b055b78a6580081",
+      "original_helper_sha256": "878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c"
+    },
+    {
+      "path": "artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.json",
+      "sha256": "bab7869c2c44331a3093996e3166a37d02099096bf888836a061479cb68e2441",
+      "original_helper_sha256": "878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c"
+    }
+  ],
+  "prime_selection_mismatch": {
+    "curve_id": 378,
+    "exact_coordinate_relations": "PASS_BEFORE_PAYLOAD_COMPARISON",
+    "changed_component": "public_point_independence",
+    "current_selected_primes": [
+      19,
+      23,
+      29,
+      37,
+      43,
+      47,
+      53,
+      61,
+      73,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      137,
+      139,
+      149,
+      151,
+      157,
+      173
+    ],
+    "retained_primes": [
+      29,
+      37,
+      47,
+      53,
+      73,
+      101,
+      103,
+      113,
+      127,
+      137,
+      139,
+      149,
+      151,
+      157,
+      163,
+      167,
+      173,
+      191,
+      193,
+      239,
+      241
+    ],
+    "resolution": "Verify the original finite signatures and two-torsion witness directly; do not change the original certificate or its source pins."
+  },
+  "pilot": {
+    "command": "timeout --signal=TERM --kill-after=5s 30s sage -python elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py --transports-only --receipt artifacts/local/cleanup-2026-09-12/native-quotient-seven-transports.json",
+    "exit_code": 124,
+    "wall_cap_seconds": 30,
+    "status": "INCOMPLETE_TIMEOUT_AFTER_TWO_COMPLETED_FIBRES",
+    "completed_curve_ids": [
+      12,
+      395
+    ],
+    "unfinished_curve_at_timeout": 363,
+    "replayer_snapshot": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__replay_r17_norm12_native_icarm_quotient_audit.py.txt",
+    "replayer_sha256": "8cdab2c7276c825136655e6e502c120fa5ab5bb4409c06edc2e125112f428e2f",
+    "stdout_source": "Retained execution-tool output; the initial driver wrote no JSON receipt before full completion.",
+    "stdout_path": "archive/repository-cleanup-2026-09-12/NATIVE_QUOTIENT_TRANSPORT_PILOT.stdout.txt",
+    "completed_receipt_was_written": false
+  },
+  "remaining_run": {
+    "command": "timeout --signal=TERM --kill-after=5s 60s sage -python elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py --transports-only --curve 363 --curve 364 --curve 378 --curve 393 --curve 404 --receipt artifacts/local/cleanup-2026-09-12/native-quotient-remaining-transports.json",
+    "exit_code": 0,
+    "elapsed_seconds": 35.743,
+    "receipt_path": "archive/repository-cleanup-2026-09-12/NATIVE_QUOTIENT_TRANSPORT_REMAINING.receipt.json",
+    "receipt_sha256": "228ae3f3da7286720b894ab345cf37fa2d09a1f6ad4128817890f46802a61d1b"
+  },
+  "unchanged_proof_functions_across_checkpoint_update": [
+    "integer_matrix",
+    "coordinate_rows",
+    "verify_integer_relations",
+    "verify_retained_independence",
+    "replay_fibre"
+  ],
+  "completed_native_subset": {
+    "curve_ids": [
+      12,
+      395,
+      363,
+      364,
+      378,
+      393,
+      404
+    ],
+    "generic_relations_verified": 119,
+    "displayed_quotients": [
+      "Z^12",
+      "Z^11",
+      "Z^10",
+      "Z^11",
+      "Z^7",
+      "Z^9",
+      "Z^10"
+    ],
+    "public_independence_and_smith_quotients": "PASS",
+    "cover_inventories_evaluated": 0,
+    "heights_recomputed": false
+  },
+  "companion_replays": [
+    {
+      "command": "../.venv/bin/python elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check",
+      "status": "PASS",
+      "scope": "Offline frozen projection only:69 fibres,1545 point prefixes; Python3.12.3, no network refresh."
+    },
+    {
+      "command": "python3 elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check",
+      "status": "PASS",
+      "scope": "Exact JSON/TSV assembly from retained component certificates; no replay of their mathematics."
+    }
+  ],
+  "not_replayed": [
+    "native complete cover specialization/digests/visibility",
+    "all-69 local fingerprint arithmetic",
+    "curve12 norm8 incidence",
+    "four additional native norm8 incidence fibres",
+    "highest-rank transports",
+    "prospective cohort construction",
+    "upstream generic saturation and cover-construction proofs"
+  ],
+  "tests": {
+    "navigation_input_tests": 9,
+    "explicit_sage_relation_tests": 8
+  }
+}

@@ -125,6 +125,15 @@ def prepare(output):
         target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copyfile(p,target)
         sources[str(target.relative_to(output))] = sha(target)
+    # certify_compact_r17_candidates imports this sibling package even when only
+    # its standalone finite-rank routine is used. Preserve the transitive package.
+    for p in sorted((CAS.parent/'ecsearch').rglob('*.py')):
+        if '__pycache__' in p.parts:
+            continue
+        target = output/'runtime/elliptic-curves'/p.relative_to(CAS.parent)
+        target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copyfile(p,target)
+        sources[str(target.relative_to(output))] = sha(target)
     # Every packet and source is frozen before execution; no winning-point suffix is projected.
     plan = {'schema':'next-direction-benchmark.v1','status':'FROZEN_NOT_STARTED',
         'cases':sorted(cases,key=lambda c:(['development','validation','production'].index(c['role']),c['id'])),

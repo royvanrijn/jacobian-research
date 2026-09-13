@@ -9,8 +9,8 @@ Status: **ACTIVE, fail-closed infrastructure**.
 <!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
@@ -21,13 +21,14 @@ frame and enter the classifier.  The current exact decisions are
 
 ```text
 ARITHMETICALLY_POSSIBLE    1
-ARITHMETICALLY_EXCLUDED    5
-UNKNOWN                   60
+ARITHMETICALLY_EXCLUDED    4
+UNKNOWN                   61
 ```
 
 The positive row is the already-realized determinant-948 `NS0001` control.
 The excluded rows are determinants 500 and 750, determinant-720 Golay,
-determinant-950 `NS0024`, and determinant-1184 `NS0031`.
+and determinant-950 `NS0024`. NS0031 is `UNKNOWN` after the
+[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 Every other row remains `UNKNOWN`; no bounded search, coarse modular curve, or
 formal local branch is promoted. One of those rows, determinant 1236, now has
 the more precise Phase-2 certificate `UNRESOLVED_FOR_EXPLICIT_REASON`: its
@@ -60,7 +61,9 @@ replace a literal ternary form by a similar primitive integral quadratic
 form.  This preserves the rational orthogonal group and is enough to compute
 a coarse Clifford curve, but it can discard marking level.  Even when no
 rescaling occurs, the stable discriminant-kernel subgroup still has to be
-computed.  Thus a genus-zero `X_0(N)` row is not automatically an arithmetic
+computed, including determinant-minus-one isometries and normalizer cosets.
+NS0031 shows why restricting to norm-one units first can give a false
+exclusion. Thus a genus-zero `X_0(N)` row is not automatically an arithmetic
 source.
 
 The machine-readable outputs are
@@ -105,7 +108,7 @@ non-CM rational point on `X_0^+(475)`.  Momose's theorem excludes it, using
 the prime `19`.  The classifier imports the exact numerical certificate and
 keeps the theorem input explicit.
 
-### Determinant 1184: excluded
+### Determinant 1184: UNKNOWN after the period-group correction
 
 The split order gives the exact norm-one curve
 
@@ -116,7 +119,12 @@ X_ns(4) x_{X(1)} X_0(37),       genus 23.
 Forgetting level four maps to `X_0(37)`.  Vélu's rational-point
 classification leaves two noncuspidal points, and both have Frobenius pair
 `(trace,determinant)=(2,3) mod 4` at `19`, which is absent from the unramified
-non-split Cartan.  Neither point lifts, including after quadratic twist.
+non-split Cartan. Neither point lifts, including after quadratic twist.
+This remains a theorem about the norm-one curve. The asserted map from the
+full marked K3 period curve was invalid: a stable reflection has projective
+spin determinant 37 and is outside rational norm-one units. The full period
+group, its QQ model and its rational non-CM locus remain unresolved. See the
+[exact counter-witness](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
 ### Determinant 720: excluded
 
@@ -198,7 +206,8 @@ classification theorem.  Determinant `948` combines a clean Eichler order
 with a very low-genus Atkin--Lehner quotient and an actual non-CM rational
 lift.  The split-Clifford failures show that splitness itself is not
 favorable: their markings force rigid modular quotients where global
-rational-point theorems or a single Frobenius class rule out every lift.
+rational-point theorems can rule out every lift. The NS0031 Frobenius
+calculation only rules out its norm-one cover, not the full marked K3 curve.
 
 The useful predictor is therefore not determinant size or split versus
 division.  It is the tuple

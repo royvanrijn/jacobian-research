@@ -27,6 +27,10 @@ That theorem left transcendental surface classes at other primes open.
 The present theorem excludes every nonconstant class on this surface over Q,
 without constructing a Brauer algebra or enlarging the local-place panel.
 
+Primary evidence: [arithmetic lattice](../../artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/arithmetic-lattice.json),
+[reductions](../../artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/reductions.json),
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_surface_brauer_triviality_v1/independent-replay.json).
+
 ## 1. Existing evidence, not a new point-count campaign
 
 **Verified applications already completed.** The

@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 1.452,
+  "independent_no_root_polynomials": 1139,
+  "rational_fibre_bound": null,
+  "scope": "No finite rational smooth fibre has T=2Q for these 67 traces and 34 signed published basis sections. This does not exclude halves outside this fixed generic word bank, or other covers.",
+  "signed_generic_probes": 34,
+  "status": "PASS_NO_FINITE_RATIONAL_INHERITED_NODE_IN_FIXED_WORD_BANK",
+  "traces": 67,
+  "word_pairs": 2278
+}

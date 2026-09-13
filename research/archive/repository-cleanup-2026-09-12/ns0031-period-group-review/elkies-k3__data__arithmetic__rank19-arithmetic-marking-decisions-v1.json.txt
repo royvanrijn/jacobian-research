@@ -1,0 +1,591 @@
+{
+  "schema": "elkies-k3.rank19-arithmetic-marking-decisions.v1",
+  "policy": {
+    "ARITHMETICALLY_EXCLUDED": "A cited exact certificate, together with its explicitly named theorem inputs, proves that no characteristic-zero K3 over QQ has the requested full rational Neron-Severi marking.",
+    "ARITHMETICALLY_POSSIBLE": "An exact characteristic-zero witness proves that at least one K3 over QQ has geometric Picard rank 19 and all nineteen generators of the requested Neron-Severi lattice defined over QQ.",
+    "UNKNOWN": "Neither of the preceding proof standards has been met. Failure to find a point, a positive-density local screen, a coarse Clifford curve, or a formal p-adic branch does not change this status.",
+    "UNRESOLVED_FOR_EXPLICIT_REASON": "A Phase-1 certificate has identified the exact stable marked curve, but its rational non-CM locus is not yet decided. Such a row remains UNKNOWN in the three-way equation-dispatch classifier and must record the exact remaining rational-point or lift obstruction."
+  },
+  "records": [
+    {
+      "surface_id": "K3-8188cdcda8c57b2d",
+      "classification": "ARITHMETICALLY_POSSIBLE",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-h3-q12o5867-endpoint-certificate.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_EXACT_Q12O5867_SOURCE_IDENTITY_RHO19_FULL_MW_R17"
+            },
+            {
+              "path": "picard_rank.geometric_picard_rank_characteristic_zero",
+              "equals": 19
+            },
+            {
+              "path": "mordell_weil.full_geometric_mordell_weil_rank",
+              "equals": 17
+            },
+            {
+              "path": "mordell_weil.full_geometric_mordell_weil_determinant",
+              "equals": 948
+            },
+            {
+              "path": "mordell_weil.saturated",
+              "equals": true
+            },
+            {
+              "path": "mordell_weil.torsion",
+              "equals": "trivial"
+            }
+          ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-h3-q12o5867-elkies-2026-coordinate-match.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_EXACT_Q12O5867_IS_ELKIES_2026_PUBLISHED_MODEL"
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The explicit rationally marked K3 proves a QQ-point on the full marked period curve; this record does not identify that cover by an independent equation."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_H3_ATKIN_LEHNER_QUOTIENT",
+          "source": "X_0^6(79)",
+          "target": "X_0^6(79)/<w_474>",
+          "target_genus": 2,
+          "target_model": "u^2 = 16*t^6 - 19*t^4 + 88*t^2 - 48"
+        },
+        {
+          "status": "PASS_EXACT_H3_KUMAR_QUOTIENT",
+          "source": "X_0^6(79)/<w_474>",
+          "target": "P^1_t",
+          "target_genus": 0
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_EXACT_NONCM_QQ_POINT",
+          "method": "explicit source comparison",
+          "point": "(t,u)=(14/13, 64*251/13^3) on X_0^6(79)/<w_474>"
+        },
+        {
+          "status": "PASS_EXACT_FULL_RATIONAL_MARKING_WITNESS",
+          "method": "rootless QQ fibration with seventeen exact rational sections, rho=19, saturation, and trivial torsion"
+        }
+      ],
+      "decision": "The determinant-948 R17 surface is an existence witness for a fully rational rank-19 marking over QQ.",
+      "theorem_inputs": []
+    },
+    {
+      "surface_id": "K3-f43753fb154e3406",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_GOLAY_DET720_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "stable_discriminant_kernel.proper_discriminant_image_isomorphism_type",
+              "equals": "S3"
+            },
+            {
+              "path": "exact_marked_modular_curve.label",
+              "equals": "X_0(60)"
+            },
+            {
+              "path": "exact_marked_modular_curve.rational_points.noncuspidal_points",
+              "equals": 0
+            },
+            {
+              "path": "known_rational_3A5_control.saturated_NS_determinant",
+              "equals": 20
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": "X_0(60)",
+        "genus": 7,
+        "rational_points": "twelve rational cusps and no noncuspidal QQ-points"
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_FORGET_STABLE_MOD2_MARKING",
+          "source": "X_0(60)-model full marking curve",
+          "target": "X_0(15)",
+          "degree": 6,
+          "target_genus": 1,
+          "target_rational_noncuspidal_points": 4
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "Mazur--Kenku rational cyclic-isogeny classification",
+          "conclusion": "Degree 60 is absent, so X_0(60)(QQ) consists only of its twelve rational cusps."
+        },
+        {
+          "status": "PASS_EXACT_DETERMINANT20_OVERLATTICE_CONTROL",
+          "method": "rational 3-torsion, rational half-section, and maximal even-overlattice audit",
+          "conclusion": "The known rational 3A5 model saturates with index six to Neron--Severi determinant 20, not 720."
+        }
+      ],
+      "decision": "The exact full discriminant-marking curve is X_0(60), which has no noncuspidal rational point; the known rational 3A5 equation is independently the determinant-20 overlattice.",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard marked-K3 ternary-spin period correspondence",
+        "the complete rational-point determination of X_0(15)(QQ)"
+      ]
+    },
+    {
+      "surface_id": "K3-ebaf00b3723751ba",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_NS0024_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "ns_id",
+              "equals": "NS0024"
+            },
+            {
+              "path": "ns_determinant",
+              "equals": 950
+            },
+            {
+              "path": "inose_frame.isogeny_degree",
+              "equals": 475
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_FULL_MARKING_CURVE_WITH_CERTIFIED_FORGETFUL_QUOTIENT",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The no-go needs only the forced Inose/Fricke quotient; it does not identify every component of the full marked period cover."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_THEOREM_INOSE_FRICKE_FORGETFUL_MAP",
+          "source": "full NS0024 marking curve",
+          "target": "X_0^+(475)",
+          "target_genus": null,
+          "target_model": null
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "Momose composite-level theorem with witness prime 19",
+          "conclusion": "Every QQ-point of X_0^+(475) is cuspidal or CM, while the primitive rank-one Inose marking forces a noncuspidal non-CM point."
+        }
+      ],
+      "decision": "A full rational NS0024 marking would force a forbidden noncuspidal non-CM rational point on X_0^+(475).",
+      "theorem_inputs": [
+        "Momose's composite-level theorem for X_0^+(N)(QQ)",
+        "the standard Inose correspondence and descent from a full rational divisor marking"
+      ]
+    },
+    {
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_NS0031_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "ns_id",
+              "equals": "NS0031"
+            },
+            {
+              "path": "ns_determinant",
+              "equals": 1184
+            },
+            {
+              "path": "norm_one_modular_curve.genus",
+              "equals": 23
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_FULL_MARKING_COVER_OF_EXACT_NORM_ONE_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The stable marked curve maps to the exact norm-one fibre product; an equation for the full cover is not needed for the obstruction."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_SPLIT_CLIFFORD_NORM_ONE_CURVE",
+          "source": "full NS0031 marking curve",
+          "target": "X_ns(4) x_{X(1)} X_0(37)",
+          "target_genus": 23,
+          "target_model": null
+        },
+        {
+          "status": "PASS_EXACT_FORGET_LEVEL_4_MAP",
+          "source": "X_ns(4) x_{X(1)} X_0(37)",
+          "target": "X_0(37)",
+          "target_genus": 2,
+          "target_model": null
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_EXACT_FROBENIUS_LIFT_EXCLUSION",
+          "method": "Vélu classification followed by the mod-4 Frobenius test at 19",
+          "conclusion": "Both noncuspidal QQ-points of X_0(37) have (trace,determinant)=(2,3) modulo 4 and do not lift to the unramified non-split Cartan curve, even after quadratic twist."
+        }
+      ],
+      "decision": "The exact norm-one fibre product has no noncuspidal rational point, so the full rational NS0031 marking cannot exist.",
+      "theorem_inputs": [
+        "Vélu's determination of X_0(37)(QQ)",
+        "the standard marked-K3 ternary-spin period correspondence"
+      ]
+    },
+    {
+      "surface_id": "K3-04b86146cc6b284b",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_DET500_DET750_QQ_RATIONAL_MARKING_OBSTRUCTIONS"
+            },
+            {
+              "path": "cases_by_surface_id.K3-04b86146cc6b284b.determinant",
+              "equals": 500
+            },
+            {
+              "path": "cases_by_surface_id.K3-04b86146cc6b284b.classification",
+              "equals": "ARITHMETICALLY_EXCLUDED"
+            },
+            {
+              "path": "cases_by_surface_id.K3-04b86146cc6b284b.exact_marked_modular_curve.genus",
+              "equals": 4
+            },
+            {
+              "path": "cases_by_surface_id.K3-04b86146cc6b284b.exact_marked_modular_curve.rational_points.noncuspidal_points",
+              "equals": 0
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": "X_H(50), H={a in (Z/50Z)^*: a=+/-1 mod 5}",
+        "genus": 4,
+        "rational_points": "four rational cusps and no noncuspidal QQ-points"
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_FORGET_DIAMOND_MARKING",
+          "source": "full X_H(50) marking curve",
+          "target": "X_0(50)",
+          "degree": 2,
+          "target_genus": 2,
+          "target_rational_noncuspidal_points": 0
+        },
+        {
+          "status": "PASS_EXACT_FORGET_STABLE_MOD5_MARKING",
+          "source": "full X_H(50) marking curve",
+          "target": "X_0(2)",
+          "degree": 60,
+          "target_genus": 0
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "degree-two map to X_0(50) and the Mazur--Kenku rational cyclic-isogeny classification",
+          "conclusion": "Every QQ-point of X_H(50) is one of its four rational cusps."
+        },
+        {
+          "status": "PASS_EXACT_NO_FULL_CURVE_OVERLATTICE_POINT",
+          "method": "complete noncuspidal rational-point exclusion on the full stable curve",
+          "conclusion": "There is no rational CM, non-CM, or full-curve point to test for saturation; the infinitely many rational points on coarse X_0(2) are quotient-level data and have no noncuspidal rational lift."
+        }
+      ],
+      "decision": "The exact full marked curve is the genus-four X_H(50), and its degree-two X_0(50) quotient has no rational noncuspidal point; hence the determinant-500 rootless row has no full rational marking.",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ]
+    },
+    {
+      "surface_id": "K3-10a14a46c14b3150",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_DET500_DET750_QQ_RATIONAL_MARKING_OBSTRUCTIONS"
+            },
+            {
+              "path": "cases_by_surface_id.K3-10a14a46c14b3150.determinant",
+              "equals": 750
+            },
+            {
+              "path": "cases_by_surface_id.K3-10a14a46c14b3150.classification",
+              "equals": "ARITHMETICALLY_EXCLUDED"
+            },
+            {
+              "path": "cases_by_surface_id.K3-10a14a46c14b3150.exact_marked_modular_curve.genus",
+              "equals": 9
+            },
+            {
+              "path": "cases_by_surface_id.K3-10a14a46c14b3150.exact_marked_modular_curve.rational_points.noncuspidal_points",
+              "equals": 0
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": "X_H(75), H={a in (Z/75Z)^*: a=+/-1 mod 5}",
+        "genus": 9,
+        "rational_points": "four rational cusps and no noncuspidal QQ-points"
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_FORGET_DIAMOND_MARKING",
+          "source": "full X_H(75) marking curve",
+          "target": "X_0(75)",
+          "degree": 2,
+          "target_genus": 5,
+          "target_rational_noncuspidal_points": 0
+        },
+        {
+          "status": "PASS_EXACT_FORGET_STABLE_MOD5_MARKING",
+          "source": "full X_H(75) marking curve",
+          "target": "X_0(3)",
+          "degree": 60,
+          "target_genus": 0
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "degree-two map to X_0(75) and the Mazur--Kenku rational cyclic-isogeny classification",
+          "conclusion": "Every QQ-point of X_H(75) is one of its four rational cusps."
+        },
+        {
+          "status": "PASS_EXACT_NO_FULL_CURVE_OVERLATTICE_POINT",
+          "method": "complete noncuspidal rational-point exclusion on the full stable curve",
+          "conclusion": "There is no rational CM, non-CM, or full-curve point to test for saturation; the infinitely many rational points on coarse X_0(3) are quotient-level data and have no noncuspidal rational lift."
+        }
+      ],
+      "decision": "The exact full marked curve is the genus-nine X_H(75), and its degree-two X_0(75) quotient has no rational noncuspidal point; hence the determinant-750 rootless row has no full rational marking.",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ]
+    },
+    {
+      "surface_id": "K3-6d288cfad55e0d15",
+      "classification": "UNKNOWN",
+      "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "UNRESOLVED_FOR_EXPLICIT_REASON"
+            },
+            {
+              "path": "surface_id",
+              "equals": "K3-6d288cfad55e0d15"
+            },
+            {
+              "path": "exact_marked_period_curve.label",
+              "equals": "X_0^6(103)/<w_618>"
+            },
+            {
+              "path": "exact_marked_period_curve.signature.genus",
+              "equals": 6
+            },
+            {
+              "path": "exact_marked_period_curve.certified_rational_cm_points.marked_curve_rational_points",
+              "equals": 2
+            },
+            {
+              "path": "exact_marked_period_curve.certified_nonrational_cm_points.marked_curve_residue_degree_over_QQ",
+              "equals": 2
+            },
+            {
+              "path": "quotient_tower.genus_two_target.genus",
+              "equals": 2
+            },
+            {
+              "path": "genus_two_quotient.map_from_exact_marked_curve.branch_order_discriminant",
+              "equals": -1236
+            },
+            {
+              "path": "full_atkin_lehner_quotient.cremona_label",
+              "equals": "618f1"
+            },
+            {
+              "path": "jacquet_langlands_cover_precheck.status",
+              "equals": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING"
+            },
+            {
+              "path": "jacquet_langlands_cover_precheck.stable_curve_jacobian_rank",
+              "equals": 6
+            }
+          ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_DET1236_GENUS2_RATIONAL_POINTS"
+            },
+            {
+              "path": "curve.rational_points_complete",
+              "equals": true
+            },
+            {
+              "path": "curve.rational_point_count",
+              "equals": 14
+            },
+            {
+              "path": "mordell_weil_sieve.remaining_candidate_cosets",
+              "equals": 0
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_PROJECTIVE_STABLE_DISCRIMINANT_KERNEL_CURVE",
+        "abstract_group": "projective image of kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "label": "X_0^6(103)/<w_618>",
+        "genus": 6,
+        "degree_from_norm_one_curve": 2,
+        "coarse_norm_one_curve": {
+          "status": "PASS_EXACT_SHIMURA_CURVE",
+          "label": "X_0^6(103)",
+          "genus": 17,
+          "cusp_count": 0,
+          "elliptic_orbits_order_2": 0,
+          "elliptic_orbits_order_3": 4,
+          "mu": 208
+        },
+        "signature": {
+          "cusps": 0,
+          "elliptic_points_order_2": 12,
+          "elliptic_points_order_3": 2,
+          "orbifold_mu": 104
+        },
+        "marking_gap": {
+          "status": "CLOSED_EXACT_PROJECTIVE_STABLE_KERNEL",
+          "literal_content": 1,
+          "discriminant_group": "Z/1236Z",
+          "projectively_stable_atkin_lehner_subgroup": [
+            1,
+            618
+          ]
+        },
+        "rational_points": "two certified discriminant -3 CM points; one discriminant -24 quadratic closed point; the non-CM rational locus is unresolved"
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_ATKIN_LEHNER_QUOTIENT_MODEL_AND_RATIONAL_POINTS",
+          "source": "X_0^6(103)/<w_618>",
+          "target": "X_0^6(103)/<w_2,w_309>",
+          "degree": 2,
+          "target_genus": 2,
+          "target_model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
+          "verified_rational_points": [
+            "(0,+/-3)",
+            "(+/-1,+/-48)",
+            "(+/-1/3,+/-8/3)",
+            "(+/-1/5,+/-312/125)"
+          ],
+          "rational_points_complete": true,
+          "boundary": "No equation or descent class for the degree-two source cover is presently certified."
+        },
+        {
+          "status": "PASS_EXACT_FULL_ATKIN_LEHNER_QUOTIENT",
+          "source": "X_0^6(103)/<w_618>",
+          "target": "X_0^6(103)^* = 618f1",
+          "degree": 4,
+          "target_genus": 1,
+          "target_rank": 1,
+          "boundary": "Positive rank on the quotient does not imply a rational lift to the exact marked curve."
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_EXACT_TWO_RATIONAL_CM_POINTS_ONLY_AS_HIGHER_PICARD_CONTROLS",
+          "method": "Gonzalez--Rotger CM residue-field formula at order discriminant -3",
+          "conclusion": "The exact marked curve has two rational order-3 CM orbifold points, but each has geometric Picard rank 20 and does not realize the requested saturated rank-19 NS."
+        },
+        {
+          "status": "PASS_EXACT_DISCRIMINANT_MINUS_24_QUADRATIC_CM_FIBER",
+          "method": "Gonzalez--Rotger CM residue-field formula at order discriminant -24",
+          "conclusion": "The second w_3-fixed rational point on the genus-two quotient has a quadratic conjugate discriminant -24 CM fiber on the exact marked curve, so it supplies no rational marked point."
+        },
+        {
+          "status": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING",
+          "method": "Jacquet--Langlands plus exact level-618 modular-symbol and Atkin--Lehner eigenspace decomposition",
+          "conclusion": "Jac(C_1236) is isogenous to 618a1 through 618f1, Jac(B) to 618e1 x 618f1, and Prym(C_1236/B) to 618a1 x 618b1 x 618c1 x 618d1. All six factors have rank one, so classical Chabauty fails at rank=genus while the Neron--Severi-enhanced quadratic-Chabauty dimension screen passes."
+        },
+        {
+          "status": "PASS_EXACT_COMPLETE_GENUS_TWO_RATIONAL_POINTS",
+          "method": "bielliptic quadratic Chabauty at 7 and 11 plus an exact Mordell--Weil sieve on 618f1 x 618e1",
+          "conclusion": "The genus-two quotient has exactly fourteen rational points: the two fixed points (0,+/-3) and the twelve non-fixed points with x=+/-1, +/-1/3, +/-1/5. All 231760 mock coefficient cosets are eliminated by exact reductions, ending at prime 6599."
+        },
+        {
+          "status": "UNRESOLVED_EXACT_DEGREE_TWO_MARKING_LIFT",
+          "method": "degree-two map to the exact genus-two Atkin--Lehner quotient",
+          "conclusion": "The rational fibers above the displayed genus-two rational points have not been determined; no non-CM rational marked point is certified."
+        }
+      ],
+      "decision": "UNRESOLVED_FOR_EXPLICIT_REASON: the exact marked curve is the genus-six X_0^6(103)/<w_618>; decide the degree-two lift from its explicit genus-two quotient to find a non-CM rational point or prove that only its two rational discriminant -3 CM points occur.",
+      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
+      "theorem_inputs": [
+        "the local classification of squarefree-discriminant quaternion orders and the Eichler normalizer quotient",
+        "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
+        "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
+        "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Bianchi--Padurariu bielliptic quadratic Chabauty and the exact two-factor Mordell--Weil sieve certificate for B(QQ)",
+        "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ]
+    }
+  ]
+}

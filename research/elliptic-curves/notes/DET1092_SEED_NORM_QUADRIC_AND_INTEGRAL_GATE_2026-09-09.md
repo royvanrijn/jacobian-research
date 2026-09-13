@@ -22,6 +22,9 @@ elliptic point, rank gain or prospective302 selector is claimed. The
 remains the endpoint; this is an explicit reduction preserving that fork,
 not a replacement success criterion.
 
+Primary evidence: [summary](../../artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/summary.json)
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/independent-replay.json).
+
 ## 1. Audit of the two equations
 
 **Previously verified input.** For the302 cubic field `K`, two integral ideals
@@ -227,7 +230,7 @@ independently certified elliptic rational point, not from this norm-quadric
 calculation. Principality, unit squareclasses, point admissibility and
 elliptic Selmer/Sha membership remain separate questions.
 
-## 5. Certificates, replay and next step
+## 5. Certificates, replay and parked boundary
 
 The [immutable packet](../../artifacts/generated-results/elliptic-curves/det1092_seed_norm_quadric_v1/)
 contains a generic-only quadric, quadratic parametrization, cubic torus maps,
@@ -252,8 +255,9 @@ group, factorization, norm/point search, new parameter, later cascade input,
 production mutation or detached process was used. No formal verification
 or external review is claimed.
 
-The next unresolved requirement is still an integral solution of one of
+The unresolved mathematical requirement is an integral solution of one of
 (1), or a proof excluding both; equivalently, solve the exact gate (7).
-Even success there would classify the known seed's unit-versus-ideal origin,
-not yet produce a seed on a new parameter without its retrospective ideal
-input. The active seed-construction goal is not complete.
+It is a parked boundary, not a current run instruction. Even success would
+classify the known seed's unit-versus-ideal origin, not produce a new-parameter
+seed without retrospective ideal input. The active seed-construction goal is
+not complete.

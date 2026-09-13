@@ -134,6 +134,14 @@ It is nonnegative on every section exactly when its parity coset has no
 representative of norm below eight.  This proves (3) and the finite
 dictionary. QED.
 
+## Frozen certificate wording
+
+The v1 JSON's `dictionary.inverse_map` incorrectly places both `P` and `tau`
+in `E(QQ(u))`. The correct statement is `P in E(L)` and `tau in E(K)`, where
+`K=QQ(u)` and `L=K(sqrt(d))`, as in the proof above. This is descriptive text
+in the serialized payload, not an input to the comparison algorithm. The
+historical producer and certificate retain their pinned bytes for replay.
+
 ## 2. Complete norm-eight layer
 
 The alternate frame is enumerated in its deterministic LLL row basis and
@@ -268,24 +276,31 @@ Their anti-invariant and Tate groups are zero. The integral qualification
 remains essential for a new target, but these seventeen require no further
 saturation, descent or section search.
 
-## Replay
+## Replay modes and retained inputs
 
-```bash
-sage -python \
-  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage
+The input priority census is already complete and retained. Its ranker
+`--check` repeats the Fincke–Pohst enumeration; it is not a prerequisite for
+inspecting or using the inversion certificate.
 
-sage -python \
-  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
-  --check
+The inversion producer reads six pinned inputs: the direct equation/basis,
+priority JSON and TSV, V4 shortlist, base-rank screen and chord helper. The
+September13 record audit matched all six hashes, both output hashes, every
+class identity in the63917-row ledger, and all17 selected target quartics.
+The recorded good-prime counts are63915 at131 and2 at137. This verifies stored
+coverage and provenance; it does not repeat the modular exclusions.
 
-sage -python \
-  elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage
+`search_r17_norm12_11952_product_bisection_inversion.sage --check` reconstructs
+the exact model and synthetic control, then recomputes the full selected
+interval before comparing output bytes. The ledger stores class identities,
+good primes and surviving-target indices, not every modular branch matrix.
+There is no coefficient-only replay or checkpoint restart in this producer.
 
-sage -python \
-  elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage \
-  --check
-```
+For separately scoped bounded work, `--start` and `--limit` select an interval;
+use distinct `--output` and `--ledger-output` paths. These are fresh interval
+runs with setup costs and output only at completion. Their status is bounded,
+not complete coverage. No such run was performed during this review.
 
-The historical `msolve` exports and timeout manifests are retained as
-reproducibility evidence, but they are no longer the active product-character
-search route.
+The [original note and command sequence](../archive/elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION.before-2026-09-13.md.txt)
+remain byte-identical. The old `msolve` exports and timeouts are historical;
+the stronger seventeen-target rank-zero closures above retire that section
+search without independently replaying this older inversion.

@@ -1,11 +1,11 @@
 {
   "accounting": {
-    "arithmetic_research_queue": 820,
-    "arithmetically_excluded": 6,
+    "arithmetic_research_queue": 821,
+    "arithmetically_excluded": 5,
     "classifications": {
-      "ARITHMETICALLY_EXCLUDED": 6,
+      "ARITHMETICALLY_EXCLUDED": 5,
       "ARITHMETICALLY_POSSIBLE": 1,
-      "UNKNOWN": 60,
+      "UNKNOWN": 61,
       "UNSCREENED_NO_FULL_MARKING_DECISION": 760
     },
     "coarse_genus_at_most_two_diagnostics": 21,
@@ -395,7 +395,7 @@
         "reduced_discriminant": 6,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -455,7 +455,7 @@
         "reduced_discriminant": 2,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -515,7 +515,7 @@
         "reduced_discriminant": 3,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -575,7 +575,7 @@
         "reduced_discriminant": 4,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -1657,7 +1657,7 @@
         "reduced_discriminant": 6,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -1717,7 +1717,7 @@
         "reduced_discriminant": 2,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -1777,7 +1777,7 @@
         "reduced_discriminant": 3,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -1837,7 +1837,7 @@
         "reduced_discriminant": 4,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         2,
         1,
@@ -9660,7 +9660,7 @@
         "reduced_discriminant": 610,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -9720,7 +9720,7 @@
         "reduced_discriminant": 678,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -10620,7 +10620,7 @@
         "reduced_discriminant": 514,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -11700,7 +11700,7 @@
         "reduced_discriminant": 562,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -11920,6 +11920,83 @@
       ]
     },
     {
+      "arithmetic_classification": "UNKNOWN",
+      "certificate_replay": [
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+        },
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+          "sha256": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+        }
+      ],
+      "coarse_curve_diagnostic": {
+        "genus": 23,
+        "label": "X_ns(4) x_{X(1)} X_0(37)",
+        "status": "PASS_EXACT_NORM_ONE_CURVE_ONLY",
+        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
+      },
+      "decision": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
+      "determinant": 1184,
+      "full_marking_curve": {
+        "genus": null,
+        "label": null,
+        "rational_non_CM_point": null,
+        "stable_kernel_index_over_coarse": null,
+        "status": "UNKNOWN_FULL_STABLE_PERIOD_GROUP_AND_QQ_MODEL"
+      },
+      "integral_order": {
+        "local_level_index": 592,
+        "reduced_discriminant": 592,
+        "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
+      },
+      "next_gate": "Determine the full stable projective period group, its correct QQ model and rational non-CM points, or supply an independent arithmetic obstruction. Retain determinant-minus-one stable isometries; do not reconstruct the formal branch or launch equations from this correction.",
+      "phase_one_priority_key": [
+        5,
+        1,
+        23,
+        1,
+        1000000000,
+        1,
+        592,
+        0,
+        1184
+      ],
+      "quaternion_discriminant": 1,
+      "rational_isotropy": true,
+      "rootless_frame_data_used_in_priority": false,
+      "similarity_marking_gap": {
+        "full_stable_kernel_still_required": true,
+        "literal_content": 1,
+        "quadratic_integrality_scale": 1
+      },
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "theorem_inputs": [
+        "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
+        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice"
+      ],
+      "transcendental_gram": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          74,
+          1
+        ],
+        [
+          4,
+          1,
+          -2
+        ]
+      ]
+    },
+    {
       "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
       "coarse_curve_diagnostic": {
         "genus": 23,
@@ -12000,7 +12077,7 @@
         "reduced_discriminant": 566,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -12660,7 +12737,7 @@
         "reduced_discriminant": 570,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -13860,7 +13937,7 @@
         "reduced_discriminant": 658,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -13920,7 +13997,7 @@
         "reduced_discriminant": 561,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -15780,7 +15857,7 @@
         "reduced_discriminant": 710,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -16380,7 +16457,7 @@
         "reduced_discriminant": 669,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -16680,7 +16757,7 @@
         "reduced_discriminant": 630,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -17580,7 +17657,7 @@
         "reduced_discriminant": 528,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -17880,7 +17957,7 @@
         "reduced_discriminant": 861,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -18360,7 +18437,7 @@
         "reduced_discriminant": 509,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -18720,7 +18797,7 @@
         "reduced_discriminant": 534,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -19800,7 +19877,7 @@
         "reduced_discriminant": 587,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -19920,7 +19997,7 @@
         "reduced_discriminant": 721,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -19980,7 +20057,7 @@
         "reduced_discriminant": 619,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -20940,7 +21017,7 @@
         "reduced_discriminant": 691,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -21780,7 +21857,7 @@
         "reduced_discriminant": 769,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -22020,7 +22097,7 @@
         "reduced_discriminant": 787,
         "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Compute the full stable projective discriminant kernel and its relation to the exact Gamma_0(N) norm-one group; do not assume containment. Then identify a proved rational-point quotient.",
       "phase_one_priority_key": [
         5,
         1,
@@ -22740,7 +22817,7 @@
         "reduced_discriminant": 876,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -22920,7 +22997,7 @@
         "reduced_discriminant": 924,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -24000,7 +24077,7 @@
         "reduced_discriminant": 1092,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -25140,7 +25217,7 @@
         "reduced_discriminant": 1122,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -30540,7 +30617,7 @@
         "reduced_discriminant": 539,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -30660,7 +30737,7 @@
         "reduced_discriminant": 396,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -30960,7 +31037,7 @@
         "reduced_discriminant": 544,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -31320,7 +31397,7 @@
         "reduced_discriminant": 585,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -31680,7 +31757,7 @@
         "reduced_discriminant": 640,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -31740,7 +31817,7 @@
         "reduced_discriminant": 600,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -31800,7 +31877,7 @@
         "reduced_discriminant": 666,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -31860,7 +31937,7 @@
         "reduced_discriminant": 696,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -34980,7 +35057,7 @@
         "reduced_discriminant": 496,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -35700,7 +35777,7 @@
         "reduced_discriminant": 605,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -35880,7 +35957,7 @@
         "reduced_discriminant": 656,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -35940,7 +36017,7 @@
         "reduced_discriminant": 657,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -36120,7 +36197,7 @@
         "reduced_discriminant": 688,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -36420,7 +36497,7 @@
         "reduced_discriminant": 747,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -37020,7 +37097,7 @@
         "reduced_discriminant": 936,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -41580,7 +41657,7 @@
         "reduced_discriminant": 1120,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -42000,7 +42077,7 @@
         "reduced_discriminant": 1040,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -42360,7 +42437,7 @@
         "reduced_discriminant": 720,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -43200,7 +43277,7 @@
         "reduced_discriminant": 1104,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -45720,7 +45797,7 @@
         "reduced_discriminant": 432,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -45960,7 +46037,7 @@
         "reduced_discriminant": 448,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -46200,7 +46277,7 @@
         "reduced_discriminant": 480,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -47220,7 +47297,7 @@
         "reduced_discriminant": 688,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -47400,7 +47477,7 @@
         "reduced_discriminant": 736,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -47580,7 +47657,7 @@
         "reduced_discriminant": 1072,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -48600,7 +48677,7 @@
         "reduced_discriminant": 36,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -49080,7 +49157,7 @@
         "reduced_discriminant": 160,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
       "phase_one_priority_key": [
         5,
         1,
@@ -49200,7 +49277,7 @@
         "reduced_discriminant": 44,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -49260,7 +49337,7 @@
         "reduced_discriminant": 48,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -50280,7 +50357,7 @@
         "reduced_discriminant": 192,
         "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
       },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
+      "next_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
       "phase_one_priority_key": [
         5,
         1,
@@ -50577,29 +50654,6 @@
       "certificate_replay": [
         {
           "assertions_replayed": 4,
-          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
-          "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
-        }
-      ],
-      "decision": "The exact norm-one fibre product has no noncuspidal rational point, so the full rational NS0031 marking cannot exist.",
-      "determinant": 1184,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "PARTIAL_ABSTRACT_FULL_MARKING_COVER_OF_EXACT_NORM_ONE_CURVE"
-      },
-      "surface_id": "K3-d1b1381f87d69f1c",
-      "theorem_inputs": [
-        "V\u00e9lu's determination of X_0(37)(QQ)",
-        "the standard marked-K3 ternary-spin period correspondence"
-      ]
-    },
-    {
-      "certificate_replay": [
-        {
-          "assertions_replayed": 4,
           "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
           "sha256": "48f4a2130aad683b759022b0bd8b92e3c6f7a29c75d069ada04405c1e360ab36"
         }
@@ -50645,7 +50699,7 @@
     }
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
     "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },

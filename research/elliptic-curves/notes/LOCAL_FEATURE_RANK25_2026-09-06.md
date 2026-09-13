@@ -1,5 +1,9 @@
 # A new rank-at-least-25 curve from a model-scaling condition
 
+> **Historical fixed-experiment snapshot.** The V12 inventory and incidence
+> totals below describe this result's sealed evidence. Use the generated
+> [current inventory](../INVENTORY.md) for present counts and priorities.
+
 The compact `11952` family at `t = 102/1525` gives inventory curve
 `new-20260906-101`, with 25 exactly certified independent rational points.
 Its globally minimal integral equation is
@@ -18,13 +22,13 @@ loads the equation and all 25 points. No rational-isomorphism match occurs in
 the pinned 593-equation catalogue or the 472 earlier measured address-equations.
 This establishes catalogue absence, not universal novelty or exact rank.
 
-The [V12 inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v12.json)
-now contains 101 distinct curves: six lower bounds 27, eleven 26, twenty-two
-25, twenty-four 24, twenty 23 and eighteen 22. Every point proof and the CSV
-replay, with previous curve IDs preserved. The new curve has only its own
+At the [V12 inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v12.json)
+snapshot, there were 101 distinct curves: six lower bounds 27, eleven 26,
+twenty-two 25, twenty-four 24, twenty 23 and eighteen 22. Every point proof
+and the CSV replay retain previous curve IDs. The new curve has only its own
 rational preimage in the twelve recorded presentations. The
 [incidence aggregate](../../artifacts/generated-results/elliptic-curves/inventory101_incidence_v1.json)
-now covers 1,212 pairs: 1,090 exclusions and 122 certified preimages. The
+then covered 1,212 pairs: 1,090 exclusions and 122 certified preimages. The
 21 extra presentations remain the previously proved duplicate R17 subgroup.
 The strongest new lower bound is still 27; no new near-record is established.
 

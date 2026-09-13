@@ -75,7 +75,7 @@ def guard_artifacts(folder):
         if event != 'open' or not isinstance(args[0], (str, bytes)):
             return
         p = Path(args[0]).resolve()
-        code = Path(__file__).resolve().parent
+        code = Path(__file__).resolve().parents[1]
         if 'artifacts' in p.parts and not (p.is_relative_to(folder) or p.is_relative_to(code)):
             raise PermissionError('benchmark worker cannot read sibling/historical artifacts: '+str(p))
     sys.addaudithook(hook)

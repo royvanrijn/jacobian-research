@@ -1,0 +1,19 @@
+{
+  "address_space_gib": 4,
+  "cpu_seconds": 20,
+  "pairs": [
+    [
+      27,
+      3
+    ]
+  ],
+  "primes": [
+    127,
+    131,
+    137
+  ],
+  "prior_input_sha256": "c8e6cb2f0abe2f5e8639131295dcf059878e230a535c242c3a04900fe5265f74",
+  "prior_result_sha256": "5cb541d48cc82cf16257469d809b696acdb7e72cbaa89ec7663c3c8455aeed29",
+  "reason": "The sole surviving pair has only singular target quartics at the five original primes. A projective image miss at another good prime would exclude even those possible rational lifts; singular reduction alone is not an exclusion.",
+  "schema": "r17-one-node-pair-continuation-input-v1"
+}

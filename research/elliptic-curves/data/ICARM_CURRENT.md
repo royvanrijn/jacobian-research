@@ -1,8 +1,10 @@
-# Current ICARM data
+# ICARM/V22 publication snapshot data
 
-[`icarm_current.json`](icarm_current.json) selects the complete compressed
-public database and its current publication overlay on the frozen V22 inventory.
-The full raw snapshot preserves ICARM attribution, metadata and points.
+The compatibility-named [`icarm_current.json`](icarm_current.json) selects the
+complete compressed public snapshot and its publication overlay on the frozen
+V22 inventory. Its 201-row local view is historical evidence, not the current
+research census. The full raw snapshot preserves ICARM attribution, metadata
+and points.
 
 From Python with `elliptic-curves/cas` on the import path:
 
@@ -31,11 +33,13 @@ remain unchanged. Public rank and conductor fields are reported metadata unless
 separately certified. See the
 [audit and six recovery controls](../notes/CURRENT_ICARM_DATABASE_AND_CONTROLS_2026-09-07.md).
 
-Use this view for post-discovery deduplication and declared retrospective work.
+Use this snapshot view for post-discovery deduplication and declared
+retrospective work.
 Do not substitute it into frozen candidate selection or treat its public points
 as prospective discoveries.
 
-The current [research database export](research_curves/database.json) and
-[expanded inventory](../INVENTORY.md) contain all201 minimal equations, metrics
-and point sets, with129 exact conductors and72 unresolved values. Rebuild these
-views with `render_main_readme_curves.py` after selecting a new certified summary.
+The historical V22 database view held201 minimal equations, metrics and point
+sets, with129 exact conductors and72 unresolved values. The current
+[research database export](research_curves/database.json) and [expanded
+inventory](../INVENTORY.md) are generated repository views. Rebuild them with
+`render_main_readme_curves.py` after selecting a new certified summary.

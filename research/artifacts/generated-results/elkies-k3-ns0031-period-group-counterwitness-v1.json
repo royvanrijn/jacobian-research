@@ -1,0 +1,19 @@
+{
+  "schema": "elkies-k3.ns0031-period-group-counterwitness.v1",
+  "status": "PASS_STABLE_REFLECTION_OUTSIDE_RATIONAL_NORM_ONE_IMAGE",
+  "surface_id": "K3-d1b1381f87d69f1c",
+  "transcendental_gram": [[0, 0, 4], [0, 74, 1], [4, 1, -2]],
+  "negative_root": [0, 0, 1],
+  "reflection": [[1, 0, 0], [0, 1, 0], [4, 1, -1]],
+  "discriminant_kernel_integral_matrix": [[0, 0, 0], [0, 0, 0], [0, 0, 1]],
+  "fixed_positive_plane_basis": [[1, 0, 2], [0, 2, 1]],
+  "fixed_positive_plane_gram": [[8, 4], [4, 298]],
+  "trace_zero_clifford_images": [[[0, 8], [0, 0]], [[-74, 2], [0, 74]], [[0, -2], [74, 0]]],
+  "projective_spin_matrix": [[0, -1], [37, 0]],
+  "projective_spin_determinant": 37,
+  "order_conjugation_coordinates": [[1, 0, 4, 1], [0, 1, 0, 0], [0, 1, -1, 0], [0, -4, 0, -1]],
+  "boundary": "The reflection fixes the discriminant group and a positive oriented plane. Its projective action equals conjugation by the displayed determinant37 matrix, which has no rational determinant-one scalar representative. Thus the literal stable period group is not contained in the asserted rational norm-one image. This refutes that group-containment step, not the existence or nonexistence of a rational NS0031 K3 surface.",
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+  }
+}

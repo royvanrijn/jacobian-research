@@ -204,6 +204,13 @@ The durable positive result is:
 
 The simple fake-2 + generic-ratpoints route is frozen after corrected top-hole searches produced no rank gain.
 
-The next search direction is rational specialization `T=a/b`.  For every good prime `p`, a candidate is represented projectively by `(a:b)` and its local Nagao contribution depends only on `a/b mod p` (with the denominator-zero case represented by the point at infinity).  Therefore each prime admits a precomputed table of `p+1` local symbols, and billions of coprime rational parameters can be ranked using only table lookups and modular residue updates.
+Any future specialization search can use rational parameters `T=a/b`. For
+every good prime `p`, a candidate is represented projectively by `(a:b)` and
+its local Nagao contribution depends only on `a/b mod p` (with the
+denominator-zero case represented by the point at infinity). Therefore each
+prime admits a precomputed table of `p+1` local symbols, and billions of
+coprime rational parameters can be ranked using only table lookups and modular
+residue updates.
 
-A second track should benchmark the complete search pipeline on a known high-generic-rank family before using it to judge new constructions.
+A separately scoped validation would benchmark the complete search pipeline on
+a known high-generic-rank family before using it to judge new constructions.

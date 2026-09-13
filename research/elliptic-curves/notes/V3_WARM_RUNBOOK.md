@@ -1,17 +1,20 @@
 # Maintained warm-transfer runner
 
-This is the operational entry point for the already-authorized `11952` warm
-roster (41, 72, 186). The original generic-start control remains the independently
-replayed 17-to-17 finite no-gain experiment. No mathematical status is promoted
-by this repair, and finding a larger rank is not guaranteed.
+> **Historical warm-transfer record.** The `11952` roster (41, 72, 186) is
+> complete. Commands and controller details below preserve its recovery
+> interface; they do not authorize a new session, resume, or retry. The
+> [current elliptic-curve programme](../README.md) selects new work.
 
-## Run
+The original generic-start control remains the independently replayed 17-to-17
+finite no-gain experiment. No mathematical status was promoted by this repair.
+
+## Retained commands
 
 Completion update: cases **41, 72 and 186 all independently verified 27→27**,
 after 1508, 1608 and 1512 charts respectively. The roster is complete, not
 waiting on the historical startup repairs. See the
 [result summary and retained session](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md).
-Commands below remain operational reference, not a request to restart it.
+Commands below are forensic reference, not a request to restart it.
 
 From the repository root:
 

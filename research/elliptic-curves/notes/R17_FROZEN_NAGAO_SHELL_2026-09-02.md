@@ -1,10 +1,14 @@
-# Prospective frozen-Nagao R17 height shell
+# Dated prospective frozen-Nagao R17 height-shell record
 
 Date: 2026-09-02
 
+This completed shell is historical evidence. Its scoring rule and command
+interfaces do not authorize a continuation or a new parameter campaign;
+consult the elliptic-curve programme map before scoping new work.
+
 ## Outcome
 
-The current compact-R17 weakest-block rule was frozen completely and applied
+The then-current compact-R17 weakest-block rule was frozen completely and applied
 without a population presieve to the disjoint shell
 
 ```text

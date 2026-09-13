@@ -36,8 +36,8 @@ point witnesses, gain provenance, and whole-cloud certificates.
 
 The frozen limits remain height125000,10 seconds per invocation,4096 actual
 invocations, target32, at most eight epochs, one worker, and separate
-7200-second/3-GiB search and replay supervisors. The controller runs replay
-and export only after successful search completion.
+7200-second/3-GiB search and replay supervisors. The completed controller ran
+replay and export only after successful search completion.
 
 A post-discovery exact coordinate audit puts this point at height37261
 quartic-minimized and74522 factor-free at the winning centre. Both are within
@@ -45,7 +45,7 @@ quartic-minimized and74522 factor-free at the winning centre. Both are within
 require both policies for that point, while curve113 supplies a concrete case
 where factor-free coordinates alone place the gain within the chosen bound.
 
-## Evidence and continuation
+## Evidence and historical successor boundary
 
 - [Sealed result, full basis, certificates and completion records](../../artifacts/generated-results/elliptic-curves/curve116_productive_v3_v1/result.json).
 - [Bounded runner and independent replay](../cas/run_productive_seed_v3_v2.py).
@@ -62,12 +62,12 @@ root-number diagnostic only scheduled them; exact points and independence
 proofs establish the gains. These selected outcomes are not a general success
 rate or rank-parity theorem.
 
-The next bounded search starts from the already-known native M28 on inventory188
-/ ICARM619. Its17→27 history and retained27→28 recovery supply nine productive
-classes, prepared by [the native adapter](../cas/prepare_curve188_productive.py).
-The old28th direction is seed input, not discovery; only a certified extension
-beyond M28 meets that continuation's success threshold. This note reports no
-outcome of that separate search. Rank29–32 and conductor-record goals remain open.
+The then-proposed Curve188 successor started from an already-known native M28
+on inventory188 / ICARM619, with nine productive classes prepared by [the
+native adapter](../cas/prepare_curve188_productive.py). Its old 28th direction
+was seed input, not a discovery. No result from that separate proposal belongs
+to this note, and it is not a current queue. The [programme map](../README.md)
+selects current work; rank29–32 and conductor-record goals remain open.
 
 ## Fixed diagnostic of unadmitted cloud points
 

@@ -1,0 +1,73 @@
+{
+  "boundary_of_timings": "Component timings exclude startup and authoring. The continuation was frozen after reviewing the single surviving pair; the original certificate remains unchanged.",
+  "final_checker_revision": "Requires the final-pair completion certificate; the preserved initial partial replay is not accepted as a complete exclusion.",
+  "final_checker_sha256": "e85184938c44b6b7480cc34c259b2d4d974c6b98fbc0fdf856c63bd1d0a54b84",
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_one_node_complete_pairs.py",
+    "excluded_pairs": 1675,
+    "exit_code": 0,
+    "source_parameter_evaluations": 3820642,
+    "wall_seconds": 12.415
+  },
+  "initial_comparison": {
+    "address_space_gib": 4,
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_r17_one_node_complete_families.sage run",
+    "component_cpu_seconds": 26.026448271,
+    "cpu_limit_seconds": 120,
+    "excluded_pairs": 1674,
+    "exit_code": 0,
+    "primes": [
+      101,
+      103,
+      107,
+      109,
+      113
+    ],
+    "survivors": [
+      [
+        27,
+        3
+      ]
+    ]
+  },
+  "live_processes": false,
+  "regressions": {
+    "command": "python3 -m unittest discover -s research/tests -p 'test_r17_one_node_*.py' -q",
+    "exit_code": 0,
+    "tests_passed": 11,
+    "wall_seconds": 0.059
+  },
+  "schema": "r17-one-node-complete-pairs-execution-v1",
+  "separately_frozen_continuation": {
+    "additional_excluded_pairs": [
+      [
+        27,
+        3
+      ]
+    ],
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/continue_r17_one_node_survivor.sage run",
+    "component_cpu_seconds": 0.12392639700000008,
+    "cpu_limit_seconds": 20,
+    "exit_code": 0,
+    "primes_allowed": [
+      127,
+      131,
+      137
+    ],
+    "primes_used": [
+      127
+    ]
+  },
+  "sources": {
+    "elkies-k3/scripts/compare_r17_one_node_complete_families.sage": "9a4125aa2476b9b12cbab47dff0021abad381365f02be417a90d0b90419d0c22",
+    "elkies-k3/scripts/continue_r17_one_node_survivor.sage": "d860e81b5952525c2fbfe9bed7ec62aa5c34bb0299b163b28aee38751a0543a0",
+    "elkies-k3/scripts/diagnose_r17_one_node_survivor.sage": "a095571edd711c69aaf713ea58584e153c12a9c922fb136f3211f45068c634b8",
+    "elkies-k3/scripts/verify_r17_one_node_complete_pairs.py": "a58f208bff0ff7e265dbc08ebdf45ab95f6cda4e39f53fa489d8feb23cd76a74"
+  },
+  "survivor_diagnostic": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/diagnose_r17_one_node_survivor.sage",
+    "component_cpu_seconds": 0.6278807,
+    "exit_code": 0,
+    "scope": "Every retained match has a singular target quartic. This alone is not a rational exclusion."
+  }
+}

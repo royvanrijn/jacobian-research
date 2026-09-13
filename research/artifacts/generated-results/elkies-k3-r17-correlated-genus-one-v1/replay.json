@@ -1,0 +1,28 @@
+{
+  "elapsed_seconds": 0.123,
+  "exact_generic_sections": 17,
+  "exact_trace_and_branch_identities": 25,
+  "inputs": {
+    "input.json": "5f102f1791eecde19e9052d9c0c4d329286a14cdb71392b6829f25d226062b5e",
+    "pencils.json": "5de7d1732db142f4f39d00f94ebc96b262a857e33ddbc26e552f2d7778bef2d9",
+    "result.json": "d037d57316bf69f28d5c3afdc6ff76cb9d028e6f3deeb21d76e8351b06fad728"
+  },
+  "pairs": 300,
+  "pencils": 25,
+  "prime_witnesses": [
+    {
+      "prime": 101,
+      "rejected_pairs": 294
+    },
+    {
+      "prime": 103,
+      "rejected_pairs": 4
+    },
+    {
+      "prime": 107,
+      "rejected_pairs": 2
+    }
+  ],
+  "scope": "No two distinct pencils in this frozen bank share a rational projective binary quartic; no same-quadratic-cover two-gain construction is supplied.",
+  "status": "PASS_COMPLETE_25_PENCIL_PAIR_EXCLUSION"
+}

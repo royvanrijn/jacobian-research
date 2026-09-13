@@ -1,0 +1,48 @@
+import hashlib,json,sys
+from pathlib import Path
+R=Path('/home/royvanrijn/src/jacobian-research/research')
+sys.path.insert(0,str(R/'elliptic-curves/cas'))
+import verify_fresh6_retained_ranks as V
+claims=[c for c in json.loads((R/'MATH_STATUS.json').read_text())['entries'] if 'FRESH6' in c['id'] and c['state']=='proved' and 'CONDUCTOR' not in c['id']]
+assert len(claims)==17 and not V.WITNESS.exists()
+sources={};objects={};rows=[];original_blocks=0
+
+def read(path):
+ if path not in objects:
+  raw=(R/path).read_bytes();sources[path]=hashlib.sha256(raw).hexdigest();objects[path]=json.loads(raw)
+ return objects[path]
+
+def protocol(path):
+ obj=read(path);key,= [k for k in obj['records'] if k.endswith('/protocol.json')]
+ return ['records',key],obj['records'][key]
+
+def add(c,path,selector,identity_path,identity_selector,identity,cohort=None):
+ global original_blocks
+ raw=V.at_path(read(path),selector);rank=raw['rank_lower_bound']
+ proof={**raw['proof'],'signatures':V.select_signatures(raw['proof']['signatures'],rank)}
+ original_blocks+=len(raw['proof']['signatures'])
+ ident=(c['id'].removeprefix('EC-').removesuffix('-20260909')+'/'+identity['family']).lower()
+ row={'id':ident,'claims':[c['id']],'family':identity['family'],'parameter':identity['parameter'],'source_file':path,'source_selector':selector,'identity_file':identity_path,'identity_selector':identity_selector,'packet':{**{k:raw[k] for k in ('curve','points','rank_lower_bound')},'proof':proof}}
+ if cohort:row['seed_cohort']=cohort
+ rows.append(row)
+
+for c in claims:
+ paths=[p for p in c['software_lock'] if p.endswith('.json')]
+ if c['id']=='EC-LOWHEIGHT-FRESH6-07CA9-M24-20260909':paths=[p for p in paths if p.endswith('/reconciled.json')]
+ for path in paths:
+  obj=read(path)
+  if obj.get('schema')=='fresh6-first-M18-packets.v1':
+   cohort='lowheight' if 'LOWHEIGHT' in c['id'] else 'second' if 'SECOND' in c['id'] else 'first'
+   for i,identity in enumerate(obj['records']):add(c,path,['records',i,'packet'],path,['records',i],identity,cohort)
+  elif path.endswith('/reconciled.json'):
+   companion=str(Path(path).with_name('result.json'));sel,identity=protocol(companion)
+   add(c,path,[],companion,sel,identity)
+  else:
+   key,=[k for k in obj['records'] if k.endswith('/terminal.json')]
+   sel,identity=protocol(path);add(c,path,['records',key],path,sel,identity)
+assert len(rows)==37 and len({r['id'] for r in rows})==37
+w={'schema':V.SCHEMA,'boundary':'Exact rational points, native generic prefix and finite independence only; pairwise rational nonisomorphism within each six-seed cohort. No exact rank, saturation, point search, selection replay, map/visibility/timing replay, conductor computation or new independence algorithm. Original protocols and immutable exports remain separate evidence.','atlas_sha256':hashlib.sha256(V.ATLAS.read_bytes()).hexdigest(),'rank_claims':[c['id'] for c in claims],'source_inputs':sources,'rows':rows,'witness_selection':{'method':'Greedy rank-increasing blocks selected solely from retained binary matrices; each selected block is subsequently recomputed exactly. No new primes or points. No minimum-cardinality claim.','original_prime_blocks':original_blocks,'retained_prime_blocks':sum(len(r['packet']['proof']['signatures']) for r in rows)}}
+assert V.check_sources(w)==len(sources)
+raw=(json.dumps(w,indent=2)+'\n').encode();V.WITNESS.write_bytes(raw)
+script=Path(V.__file__);src=script.read_text();assert src.count('TO_BE_PINNED_AFTER_EXPORT')==1;script.write_text(src.replace('TO_BE_PINNED_AFTER_EXPORT',hashlib.sha256(raw).hexdigest()).replace('endpoints for17 claims','endpoints for 17 claims'))
+print(json.dumps({'packets':len(rows),'claims':len(claims),'source_files':len(sources),'witness_bytes':len(raw),'witness_sha256':hashlib.sha256(raw).hexdigest(),'original_bytes':sum((R/p).stat().st_size for p in sources),'blocks':w['witness_selection']},indent=2))

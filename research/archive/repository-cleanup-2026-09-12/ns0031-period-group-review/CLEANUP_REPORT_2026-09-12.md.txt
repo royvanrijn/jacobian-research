@@ -1,0 +1,108 @@
+# Elliptic-curve cleanup — 12 September 2026
+
+The other projects are archived. Active navigation, search, method memory and
+work lists focus on elliptic curves and their supporting K3 constructions.
+**The archival reorganization is complete; the full cleanup audit is not.**
+Twenty-seven inherited items in the active scope remain unfinished.
+
+This is a dated maintenance report. Current mathematical authority is
+[MATH_STATUS.json](MATH_STATUS.json), followed by its canonical sources.
+
+## Completed cleanup
+
+| Work | Evidence |
+|---|---|
+| Archived 2,319 files without changing their bytes; preserved 901 claims and their mathematical states | [Archived projects](archive/non-elliptic/README.md) |
+| Reviewed all 78 current EC/K3 partial results for the precise surviving obligation, later results, checker purpose and input boundary | [Source reviews](knowledge/PARTIAL_REVIEW.md) |
+| Made 65 active algorithmic lessons searchable, with failed approaches, implementation links and reopening conditions | [Method memory](knowledge/ALGORITHMS.md) |
+| Classified all 11 active entries without checkers: five written deductions and six research objectives | [Checker review](knowledge/CHECKER_REVIEW.md) |
+| Condensed the 4,394-line K3 script map, 592-line CAS map and 1,227-line obsolete foundry shortlist; preserved originals | [K3 scripts](elkies-k3/scripts/README.md) · [CAS map](elliptic-curves/cas/README.md) · [Foundry history](elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md) |
+| Reconciled the original audit baseline with the cleanup snapshot, preserving every inherited checkbox | [Claim comparison](archive/repository-cleanup-2026-09-12/EC_SCOPE_FINAL_RECONCILIATION.json) · [Checklist](knowledge/LEGACY_WORK_REVIEW.md) |
+
+The latest ledger has 617 EC/K3 entries: 515 proved, 78 partial, 2 open,
+4 parked, 16 mathematically archived and 2 falsified. These are recorded states;
+cleanup has not granted additional proof assurance. The earlier comparison
+snapshot preserves the counts before the separate rank-jump research pivot.
+
+## Results and methods to reuse
+
+- **Completed constructions:** Curve302's alternative MW17 parent and saturated
+  generic basis, Curve398's equivalent MW16 presentations, the q8/q12 endpoint
+  and the direct alternate11952 equation now have clear navigation. The legacy
+  Mestre/Fermigier rank13 entry point rejects execution and points to the
+  coherent-label rank11 result.
+- **Closed work queues:** Four product-twist notes now lead to the completed
+  [17-target arithmetic rank-zero closure](elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
+  The regulator and full integral Tate-quotient methods are preserved. Five
+  geometric rank questions and full Selmer groups retain their separate scope.
+- **Preserved failure boundaries:** The q323 candidate5887 lift exists and
+  gives the wrong child; determinant1236 retains its candidate cover with the
+  CM branch-orbit question open. The T-first planner uses `null` for unproved
+  rational-point existence. Completed CRT misses remain distinct from the
+  unrun 1,536-row commitment. These lessons and the saturation, cover-map,
+  Cassels–Tate and smooth-atlas boundaries are searchable in method memory.
+- **Portable finite witness:** The [NS0031 package](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#source-review-and-portable-arithmetic-replay--12-september-2026)
+  checks Clifford, coset and Frobenius arithmetic from 8,346 bytes of retained
+  inputs. Its precise arithmetic period-map justification still needs review.
+- **Replay before rediscovery:** The [native quotient replayer](elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026)
+  checks stored integer relations and original finite-prime witnesses without
+  repeating height recovery or prime selection. All seven displayed transports
+  passed, including 119 generic relations. The original producer, certificate
+  and three downstream source pins remain unchanged.
+- **Cheaper character replay:** A [10.3 MB polynomial witness](elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md#compact-independent-replay--12-september-2026)
+  verifies all 78,267 classes in the two original smooth atlases. Distinct
+  irreducible factors rule out internal relations without pair-product searches.
+  Upstream lattice completeness and section lifts retain their separate proofs.
+
+The native replay requires an explicit component choice and checkpoints each
+completed fibre. Its transport-only mode reads none of the 1.18 GB cover
+inventories. Full visibility and the remaining companion research checkers
+were not rerun. The [replay record](archive/repository-cleanup-2026-09-12/NATIVE_QUOTIENT_REPLAY_REVIEW.json)
+preserves the historical prime-selection mismatch, interrupted pilot and
+completed subsets; these must not become another rediscovery queue.
+
+The [constructor pilot](elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md)
+ended without fresh fibres and with a failed final V3 comparison. Its rank22
+checkpoint is not a completed benchmark result. Current
+[rank32 work](elliptic-curves/notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md)
+is separate research and is not counted as cleanup compute.
+
+## Remaining work
+
+Of 50 inherited items in the active scope, **23 have explicit completion
+records and 27 remain unfinished**. The other 27 inherited items belong to
+archived projects; archiving did not complete them. The
+[work ledger](knowledge/WORK_LEDGER.md) retains broader theorem, dependency and
+checker-purpose reviews, sufficient portable inputs, independent witnesses
+for higher-risk claims, and unscheduled long replays.
+
+Historical H3 intermediates and amended-runtime experiment chunks are still
+missing at some required paths. Source reviews name the inspected absences.
+Missing files do not authorize reconstruction. The native seven-fibre transport
+replay is a completed subset of the old multi-checker obligation, not its closure.
+The singular-normalization shards retain no discriminant polynomials: all
+127,842 records and both mergers were checked, but independent polynomial replay
+still needs additional witnesses. The [review receipt](archive/repository-cleanup-2026-09-12/CHARACTER_NORMALIZATION_REPLAY_REVIEW.json)
+separates that gap from the completed smooth-character component.
+
+## Validation and compute
+
+`make check` passed: 79 maintenance tests, strict source-review coverage,
+status, links, process ledger, inventory and compilation. Preservation checks
+passed for the archived programmes, pre-edit snapshots and all 871 historical
+replay command blocks. Eight explicit Sage group-law/corruption controls also
+passed; they are excluded from default navigation checks.
+
+The offline 69-fibre public projection and calibration-table assembly passed.
+All ten native input hashes matched, including the cover inventories; hashing
+those files did not replay their mathematics. The
+[V4 record audit](elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md#timeout-and-checker-review--12-september-2026)
+checks all 64 identities and the completed product closures while preserving
+two timed-out ranks as `UNKNOWN`.
+
+Cleanup arithmetic remained bounded: the small coherent-label control,
+NS0031 finite checks, smooth branch polynomials and retained native transports. The native pilot stopped
+at its 30-second cap after two completed fibres; only the remaining five were
+then verified, in 35.7 seconds. No large search, descent, neighbour enumeration
+or census was rerun by cleanup. Passing navigation checks does not certify
+all mathematics or every historical replay mode.

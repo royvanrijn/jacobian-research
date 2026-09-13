@@ -1,0 +1,76 @@
+{
+  "boundary": "Shared-producer exact replay of selected displayed-subgroup components; no full Mordell-Weil group, rank upper bound, new discovery or assurance upgrade.",
+  "elapsed_seconds": 35.743,
+  "fibres": [
+    {
+      "covers_evaluated": 0,
+      "curve_id": 363,
+      "displayed_quotient": "Z^10",
+      "elapsed_seconds": 2.861,
+      "generic_relations_verified": 17,
+      "split_relations_verified": 0
+    },
+    {
+      "covers_evaluated": 0,
+      "curve_id": 364,
+      "displayed_quotient": "Z^11",
+      "elapsed_seconds": 11.361,
+      "generic_relations_verified": 17,
+      "split_relations_verified": 0
+    },
+    {
+      "covers_evaluated": 0,
+      "curve_id": 378,
+      "displayed_quotient": "Z^7",
+      "elapsed_seconds": 2.007,
+      "generic_relations_verified": 17,
+      "split_relations_verified": 0
+    },
+    {
+      "covers_evaluated": 0,
+      "curve_id": 393,
+      "displayed_quotient": "Z^9",
+      "elapsed_seconds": 9.332,
+      "generic_relations_verified": 17,
+      "split_relations_verified": 0
+    },
+    {
+      "covers_evaluated": 0,
+      "curve_id": 404,
+      "displayed_quotient": "Z^10",
+      "elapsed_seconds": 9.727,
+      "generic_relations_verified": 17,
+      "split_relations_verified": 0
+    }
+  ],
+  "historical_metadata_not_remeasured": [
+    "180-bit height recovery and its 2^-100 rounding gate"
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json": "17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d",
+    "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json": "6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2",
+    "artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json": "58ce2906eed5535d613c5ab93f7ddbc04d501688d7162a6d2f1740495efc9ec4",
+    "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json": "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json": "582898590dcfdd8f36b7564d8df65dff951b0b304eddb6ae8825140eb1a92d9a",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json": "5091c7fd2199692b538ecfd64b2bb3a2a208ac01ae28db082ca0dff6e21d1b90",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json": "3f676dd0ce76da7f3092b073519b11af964c6982bfbc7262057d0f5c66234b9f",
+    "elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage": "878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c"
+  },
+  "mode": "transports-only",
+  "not_replayed": [
+    "other calibration checkers: public projection, local features, norm8 incidence, highest-rank transports, dataset and holdout",
+    "upstream proofs of the supplied saturated generic bases and complete cover inventories",
+    "all native cover inventories, their exhaustive split digests and visible spans"
+  ],
+  "replayer_sha256": "bb9b37019e7d1d93d19a178de1d99602cf5b3c7ae1a6c37d24715e7486bcc326",
+  "requested_curve_ids": [
+    363,
+    364,
+    378,
+    393,
+    404
+  ],
+  "sage_version": "10.9",
+  "schema": "elkies-k3.native-quotient-retained-replay.v1",
+  "status": "PASS_SELECTED_NATIVE_COMPONENTS"
+}

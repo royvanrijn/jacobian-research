@@ -1,0 +1,40 @@
+{
+  "claims": {
+    "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": {
+      "fingerprint": "4b9b09c3641c6ff0",
+      "state": "proved"
+    },
+    "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": {
+      "fingerprint": "021e351a236f3e06",
+      "state": "open"
+    }
+  },
+  "goal_completed": false,
+  "goal_state": "active",
+  "literature_candidate_not_yet_applied": {
+    "formal_identity_to_review": "For f(x)=x^3+A*x+B, v=u^2, x1=-(B/A)*(v^2+v+1)/(v+1), x2=x1/v, one has f(x1)=u^6*f(x2). Its squareclass can be represented by D=-A*B*(v+1)*(B^2*(v^2+v+1)^3+A^3*v^2*(v+1)^2).",
+    "location": "Theorem3.7; Remark2.12 distinguishes twist rank from covering genus",
+    "source": "https://www.maths.tcd.ie/EMIS/journals/EM/expmath/volumes/10/10.4/Rubin.pdf",
+    "unresolved": "On a moving high-rank parent, choosing u in Q(t) needs a new independence proof and a genus<=1 normalization with infinitely many rational points. The constant-parent theorem alone does not close this goal."
+  },
+  "live_workers": false,
+  "navigation": {
+    "initial_render_failure": "Unrelated EC-K3-CURVE302-SECTION-SATURATION reciprocal dependency was incomplete at the first attempt. No unrelated claim was changed by this task.",
+    "make_check_navigation": "PASS, including107 metadata tests; no research calculations",
+    "make_render_navigation": "PASS after the concurrent unrelated claim-graph repair"
+  },
+  "new_result": "All1675 pairs of the frozen67 height-six nets and25 height-eight pencils are excluded over their complete rational parameter spaces.",
+  "next_mathematical_gate": "Use a different carrier family or a two-section twist identity and prove its branch budget before another parameter campaign. The frozen smooth and one-node/smooth banks are closed.",
+  "progress_classification": "exact new carrier-family exclusion and constructive independence criterion; positive goal remains open",
+  "regression_tests": {
+    "passed": 11,
+    "seconds": 0.059
+  },
+  "replay": {
+    "file": "independent-replay-final.json",
+    "passed": true,
+    "sha256": "b0299c11a0dcddaca43400fd8b6403cf781db7a4075da81eb176c351581d8650",
+    "wall_seconds": 12.479
+  },
+  "schema": "r17-correlated-goal-continuation-audit-v1"
+}

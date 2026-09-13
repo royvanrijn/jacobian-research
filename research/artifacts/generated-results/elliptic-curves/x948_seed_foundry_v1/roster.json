@@ -1,0 +1,101 @@
+{
+  "boundary": "Inequivalent to the frozen eight old X948 A1 fibrations and one another. Marked integral embeddings retained; abstract U-orbit inequivalence not claimed.",
+  "parents": [
+    {
+      "admission": "constructions/00-01191/admission.json",
+      "admission_sha256": "9932de811f05ed21c50c9159c0b2a0cd302c12bfd5ae5480ac52588c59434290",
+      "baseline": false,
+      "coefficient_bits": 144,
+      "family": "x948-11952-a1-01191",
+      "invariant": "98c41f2848133a8d248150b5a9a0b5eb63f7d8350f6ce3e97c38fccf0dbe2edc",
+      "path": "parents/x948-11952-a1-01191.json",
+      "priority": 1191,
+      "sha256": "759d30e5d9b1f378e888ecc9f8abec8fdf139e34152aec669ff8fceb1e4292f5"
+    },
+    {
+      "admission": "constructions/01-01510/admission.json",
+      "admission_sha256": "1fd82acbe9dfa55d8c3181f8c8a1b326ff7f2463a659cb10c0a82d4882bcd025",
+      "baseline": false,
+      "coefficient_bits": 170,
+      "family": "x948-11952-a1-01510",
+      "invariant": "24182a04935de5e9868f6962eb4c90c644141b01ceb0b4ee5b3580ac0a1fe492",
+      "path": "parents/x948-11952-a1-01510.json",
+      "priority": 1510,
+      "sha256": "63b3b4eb23f2c9502d07a5c617be3ba0dc95d9be017782c2cf7b0b8ffd45cf86"
+    },
+    {
+      "admission": "constructions/02-01792/admission.json",
+      "admission_sha256": "144cac987f3467f35c872e6a4090625006794e9b78a777a7c92c675631fb7014",
+      "baseline": false,
+      "coefficient_bits": 143,
+      "family": "x948-11952-a1-01792",
+      "invariant": "96da6316dabfba1d147b95e3b41e4513373f8786c1542793eaa6adf60de813c0",
+      "path": "parents/x948-11952-a1-01792.json",
+      "priority": 1792,
+      "sha256": "a79ac3198dbba8c5b9099d09c6cbc1ffb23f0c40a8183c805e25e810e7d86c99"
+    },
+    {
+      "admission": "constructions/03-01615/admission.json",
+      "admission_sha256": "abf44c79f2c96aec983fc87f61acb02a8fb12a84c42c3de60865f182e3607df0",
+      "baseline": false,
+      "coefficient_bits": 145,
+      "family": "x948-11952-a1-01615",
+      "invariant": "8600f36b6a55d07d272d9b440f114e9f9f8555683ccfa1740b9ea36619d6f993",
+      "path": "parents/x948-11952-a1-01615.json",
+      "priority": 1615,
+      "sha256": "d257e5ff4682f0d0952cc9fe51cecf737ed6030c5137a752cc82cec82a7f9c00"
+    },
+    {
+      "admission": "constructions/04-01956/admission.json",
+      "admission_sha256": "e0d478804ee0466b9c3c86c43aace57e90babe550e4010a6ab3bde3dd5e52d01",
+      "baseline": false,
+      "coefficient_bits": 142,
+      "family": "x948-11952-a1-01956",
+      "invariant": "5a6470194dd975209013be261ea155be3c7bbec2cb8d9e1dffc1dea30440d6b1",
+      "path": "parents/x948-11952-a1-01956.json",
+      "priority": 1956,
+      "sha256": "17e89fce909e1e1aacd4a99763b4b80fe0c826a160ea3fc0db36fb270f9410b2"
+    },
+    {
+      "admission": "constructions/05-04380/admission.json",
+      "admission_sha256": "9d1adb4c55d8fb74c1f905e090e775b940896ccafd6e5d9a64891d21149db8cf",
+      "baseline": false,
+      "coefficient_bits": 150,
+      "family": "x948-11952-a1-04380",
+      "invariant": "b4200df5ac509ba6a1ef546578fd539174d62666dea6fe2259451e9462248de6",
+      "path": "parents/x948-11952-a1-04380.json",
+      "priority": 4380,
+      "sha256": "8503f63d3517837c2bdc8969b91282bd4c3d025a85cf90b2a2c20747d375094c"
+    },
+    {
+      "admission": "constructions/06-02021/admission.json",
+      "admission_sha256": "5a755eb7c181ed21c89beedca12276ba660f079b15338e432f2dbace328a7dce",
+      "baseline": false,
+      "coefficient_bits": 142,
+      "family": "x948-11952-a1-02021",
+      "invariant": "8900f2d9e879d0486e8ebd6bd9b5cba334ccff9c095f6c919f2b2e859c5b8d3c",
+      "path": "parents/x948-11952-a1-02021.json",
+      "priority": 2021,
+      "sha256": "29234562aec5d283dc58e3a12a2f3871bee087cd8b55e07381e83aaa3f7ee937"
+    },
+    {
+      "admission": "constructions/07-02330/admission.json",
+      "admission_sha256": "9178bcec09dc978ccd0c54eaaa94f9f7eae126951bdba4fb5d88e385107b9e52",
+      "baseline": false,
+      "coefficient_bits": 141,
+      "family": "x948-11952-a1-02330",
+      "invariant": "fbed99d3d509d93d4e3cd484efeffac91c1bd8e7f3a6d34747915851a2b4d12d",
+      "path": "parents/x948-11952-a1-02330.json",
+      "priority": 2330,
+      "sha256": "d54f4adeff736b863f6799c7d2e9420a82038a515743d728d1c1a3af0483231e"
+    },
+    {
+      "baseline": true,
+      "family": "a1-fibration-01",
+      "path": "parents/baseline.json",
+      "sha256": "dc1b50b85d0f169fab40006a5a9f1519836f00a023273140ac001257c1992b0f"
+    }
+  ],
+  "proposal_order_sha256": "f39875a305dd7ea2ba9f4965ad50ccb1db0f1bad420b19751a20b2f6eade3c43",
+  "status": "PASS_EIGHT_NEW_FIBRATIONS"
+}

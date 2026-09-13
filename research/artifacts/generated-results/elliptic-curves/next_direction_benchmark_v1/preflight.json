@@ -1,0 +1,131 @@
+{
+  "schema": "next-direction-benchmark-preflight.v1",
+  "status": "PREPARED_NOT_LAUNCHED",
+  "local_run": "artifacts/local/elliptic-curves/next-direction-benchmark-v1",
+  "plan_sha256": "3c3402ec113dbc5e16fb83aad3b5b6ab11b956e92956f37eace85820a4796369",
+  "starting_rank_checks": [
+    {
+      "case": "curve302-M27",
+      "role": "development",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "c36243f219759c0611f3fba05b2cb817f2c96b63fcacb8b516803523d30bde91",
+      "input_sha256": "62f6ceb17993927d3a603bafc5ba823613f4da5d3508d604035d43f8262774a7",
+      "centres": 256
+    },
+    {
+      "case": "curve302-M29",
+      "role": "development",
+      "rank_lower_bound": 29,
+      "certificate_sha256": "bb841ee135d77e2b9dfd98a57b54c8737229f1e7618df01229652e204f020c58",
+      "input_sha256": "d113f9f1021a29f0998dbb554596a5559e5ecad381b8e40188f4779d6e57fe74",
+      "centres": 256
+    },
+    {
+      "case": "curve302-M30",
+      "role": "development",
+      "rank_lower_bound": 30,
+      "certificate_sha256": "54105d8a7d28f20cc3ef5ff5ec18be5a3e3cad5d8a066a30cb5fbd6fae256db0",
+      "input_sha256": "e38fd172ca1fd7a8f21c1c116b9ff5a62dec8ea7e680ec806a2b811e9d5821b2",
+      "centres": 256
+    },
+    {
+      "case": "public188-M27",
+      "role": "development",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "d00bf8df87eb36eb81bf8c2480995cc1447faed3d0bf5beb6c5766df335e556c",
+      "input_sha256": "cf63bcdaa35f13ef4d9f01b027a914792d254356c2fc3691d3ec1102ecd64101",
+      "centres": 49
+    },
+    {
+      "case": "curve302-alternative-M30",
+      "role": "validation",
+      "rank_lower_bound": 30,
+      "certificate_sha256": "56bfc2220c0bcfe757de412d45b830bbab7f74a4a16a732c5078fcedd27b0439",
+      "input_sha256": "a7268b361a02cca50fe52c4b41a6ca656141964ae25b13d2b9274dc879c9649c",
+      "centres": 256
+    },
+    {
+      "case": "new-20260906-40",
+      "role": "production",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "d7853f0eb019711e6f65cc543e764f77cf30277fbd2b1b13e0a40b0517c6acc1",
+      "input_sha256": "70e2e0e9ef712490fe39194f4be12f8513acd4895780901049c1355be9a05381",
+      "centres": 759
+    },
+    {
+      "case": "new-20260906-48",
+      "role": "production",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "bb51a6974027e6a63899d6f3dd35b5174ba46d89feb91479c987fa55c9ca59a6",
+      "input_sha256": "3ff7738fcdede817dbb041ac79970dddacd33b0e5a812f48cb90f2c9f355bfda",
+      "centres": 779
+    },
+    {
+      "case": "new-20260906-71",
+      "role": "production",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "0f078fa130fcdab81b81b6e52f4c3f0f30a4df0b647ad9ebc1f8740de8e4a585",
+      "input_sha256": "11599a188af56d618d7f1c7cdf88857329537c15c681e0b00f28049724d02914",
+      "centres": 776
+    },
+    {
+      "case": "new-20260906-90",
+      "role": "production",
+      "rank_lower_bound": 27,
+      "certificate_sha256": "56667605dd4a8f81564f7015e3b33678e4975971e6325d23bce6dad4d40d7192",
+      "input_sha256": "f1682368f8ce42b4e58cf058c3e99c50c6104c4c3a3c30f4a190e390bffee53c",
+      "centres": 376
+    }
+  ],
+  "curve302_ladder_states": 14,
+  "policies": [
+    "factor_free_125k",
+    "factor_free_shears_125k",
+    "v3_dual_125k",
+    "v3_dual_500k"
+  ],
+  "point_search_calls_on_benchmark_or_production_inputs": 0,
+  "ceiling": "Pending user choice; at most8 worker-hours in the executable. No constructor allowance reused.",
+  "toy_interface": {
+    "status": "PASS_POINT_AND_RANK_REPLAY",
+    "rank_gain": "1->2 on a small rank2 software control; not high-rank calibration",
+    "worker_wall_seconds": 2.594078794005327,
+    "replay_wall_seconds": 0.7937955560046248,
+    "inputs": {
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/input.json": "a1eeea0b2ce885cc2542fcd8c4f3191fe3c649699d2c80eddcf2fb92ac2c0512",
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/result.json": "a6531f7d7b2116f0c308b7c0a1a53a4c8600f2917d847680bd24e03aea8f5157",
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/gain.json": "ff532fe5f32b89de77d2a8f57a5b7a75d8e1b11dde019d1cb793732a4d898a3d",
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/verified.json": "17061f34edd523f62ea99c1a9c77e51090f251205167114ff1c8b757785fb6ed",
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/worker-supervisor.json": "62380d64eeafb9704be91816a66f080d50215ef7e7e7209fa7dbbf54caf9cfaa",
+      "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v2/replay-supervisor.json": "1acb7fa512b704067b64267f30c4b626ae6dbc7a7a99512ff70c382efd2825f3"
+    }
+  },
+  "regression_tests": {
+    "script": "elliptic-curves/tests/test_next_direction_benchmark.py",
+    "sha256": "69daa665a4534be590ebddb5f8c9f2af19fa1179b54f6a5e01ca3f6e7e9a11d2",
+    "tests_passed": 4
+  },
+  "setup_failures": [
+    {
+      "path": "artifacts/local/elliptic-curves/next-direction-benchmark-failed-preparation-v1",
+      "reason": "Wrong existing curve90 input-directory name",
+      "timing": "UNKNOWN; no starting-rank or point arithmetic ran"
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/next-direction-benchmark-incomplete-snapshot-v1",
+      "reason": "Initial source snapshot omitted sibling ecsearch package",
+      "preparation_meter": {
+        "cpu_seconds": 3.5905164359999997,
+        "point_calls": 0,
+        "status": "PASS_INPUT_PROJECTION_AND_STARTING_RANKS",
+        "wall_seconds": 4.378867744002491
+      }
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/next-direction-benchmark-interface-check-v1",
+      "reason": "Smoke test detected ecsearch omission before arithmetic",
+      "wall_seconds": 0.17801093898015097
+    }
+  ],
+  "boundary": "Retained local inputs and snapshots are required for replay. Full cold setup time is not known because the first projection failure was not metered; do not treat it as zero. No benchmark gain, production gain, rank32 result or speed advantage is certified by preflight."
+}

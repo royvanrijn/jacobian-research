@@ -1,9 +1,12 @@
-# Current ICARM database and recovery controls
+# Dated ICARM/V22 database snapshot and recovery controls
 
-The [current database manifest](../data/icarm_current.json) now contains **630 curves**,
-including627–630. Exact checks pass630 discriminants and9,484 point memberships;
-194 of201 local equations remain unmatched. The latest conductor comparison is
-recorded in the [201-curve audit](../../artifacts/generated-results/elliptic-curves/inventory201_conductor_bounds_v1.json).
+This 630-entry ICARM/V22 snapshot is historical evidence. Its 201 local rows,
+publication overlay, and conductor counts do not describe the current research
+inventory. Use the generated [current inventory](../INVENTORY.md) for present
+repository totals. The retained [snapshot manifest](../data/icarm_current.json)
+contains **630 curves**, including627–630; exact checks pass630 discriminants
+and9,484 point memberships, with194 of the then-201 local equations unmatched.
+The recorded conductor comparison is the [201-curve audit](../../artifacts/generated-results/elliptic-curves/inventory201_conductor_bounds_v1.json).
 
 The recovery controls below retain their frozen
 [626-entry manifest](../data/icarm_snapshots/626_manifest.json). Its raw SHA256 is
@@ -30,7 +33,7 @@ point, rank certificate, rank bound or public-point provenance.
 
 Use `load_catalogue()` and `load_inventory()` from
 [`refresh_icarm_local_database.py`](../cas/refresh_icarm_local_database.py)
-for this current view. Frozen experiments continue to use their declared
+for this snapshot view. Frozen experiments continue to use their declared
 snapshots. The [publication history and submission packets](ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
 remain indexed separately.
 
@@ -86,13 +89,13 @@ holds withheld witnesses and full 28-point proofs. Workers must not read that
 file, the public proof files or the public database to construct their centres.
 These are retrospective controls, not target-free prospective inputs.
 
-The concrete next experiment is an equal-budget comparison of our current
-point-recovery method on these six fixed seeds. Freeze its algorithm, chart
-rule, height, time limits and scoring before running; record completion and
-runtime separately from success. Success requires an exactly independent 28th
-direction, not recovery of one particular representative. Report the genuine
-miss separately from the five deletions. No search was run by this update and
-no improvement in recovery rate has yet been demonstrated.
+The retained control design is an equal-budget comparison of point recovery on
+these six fixed seeds. It is not current work. A separately scoped experiment
+must freeze its algorithm, chart rule, height, time limits and scoring; record
+completion and runtime separately from success. Success requires an exactly
+independent 28th direction, not recovery of one particular representative.
+Report the genuine miss separately from the five deletions. No search was run
+by this update and no improvement in recovery rate has been demonstrated.
 
 The public commentary on #615–620 describes rescoring through `2^20` and an
 iterated 2-covering search over 3,000 cosets of the growing subgroup. It motivates

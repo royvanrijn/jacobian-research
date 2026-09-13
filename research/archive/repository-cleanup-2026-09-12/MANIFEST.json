@@ -404,6 +404,31 @@
       "original_path": "research/elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md",
       "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md.txt",
       "sha256": "2c6d255fa3549aba506e4a88dcb06217bfd4be63d6cc6838d73c076170052e93"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md.txt",
+      "sha256": "5622dfa422a6eec7d8fcf1b7e5288a1c073f4ffb3c04fff1f7e911dd47d1b0af"
+    },
+    {
+      "original_path": "research/elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__scripts__replay_r17_norm12_native_icarm_quotient_audit.py.txt",
+      "sha256": "8cdab2c7276c825136655e6e502c120fa5ab5bb4409c06edc2e125112f428e2f"
+    },
+    {
+      "original_path": "research/CLEANUP_REPORT_2026-09-12.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__CLEANUP_REPORT_2026-09-12.md.txt",
+      "sha256": "9547578aa9e6896d4728e4cbff4bbcdbe73504e4d39c94d417b5399a3a4e4035"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md.txt",
+      "sha256": "8c0e8c4cf762c806368b575a9a415179b328c3c2d80e984068c2794ca15ec75d"
+    },
+    {
+      "original_path": "research/elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/research__elkies-k3__R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md.txt",
+      "sha256": "1d22ee2b3a750d6a240ef983f6b6651bfc83c9c01ddf2300c552d8e159665050"
     }
   ],
   "previous_scope_sha256": "0604ee3c20c5ac794035042aa5d2e6a0e9206b724cfa4264cfa48b3b7f8d30d5",

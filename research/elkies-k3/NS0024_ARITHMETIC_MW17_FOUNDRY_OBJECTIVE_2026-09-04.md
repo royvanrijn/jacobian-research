@@ -24,6 +24,7 @@ arithmetic source programme for this milestone.
 The live objective has moved to
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md),
 where determinant-1184 `NS0031` was the next working class because it had the
-strongest exact source precursor. A later split-Clifford/`X_0(37)` theorem
-also excludes its full rational marking; the remaining frames now require
-arithmetic-first reranking.
+strongest exact source precursor. Its later split-Clifford/`X_0(37)` exclusion
+used an invalid period-group containment. NS0031 is `UNKNOWN` after the
+[September 12 correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md);
+the remaining frames require the full rational-marking gate.

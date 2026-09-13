@@ -1,4 +1,9 @@
-# Golay-octad design of a rank-17 frame — 2026-09-01
+# Golay-octad rank-17 frame — historical geometric design (2026-09-01)
+
+> **Current-boundary note (2026-09-13).** The determinant-720 route is a
+> retained lattice and regression record. Its rational-marking exclusion keeps
+> it outside the arithmetic MW17 queue; prospective work begins from the
+> [different-NS arithmetic gate](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-NS-SATURATION 306320cad1fd8e6e -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR 0868df67fe8c37ad -->
@@ -224,7 +229,7 @@ pairs.
 The deterministic certificate is
 [`../artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json`](../artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json).
 
-## Immediate source-first gate
+## Historical source-first gate
 
 The next required test was run on the same determinant-720 frame genus.  A
 deterministic eighteen-generation Kneser-neighbour beam visited 34,101 exact
@@ -289,10 +294,10 @@ The exact outputs are
 and
 [`../artifacts/generated-results/elkies-k3-golay-octad-det720-source-niemeier.json`](../artifacts/generated-results/elkies-k3-golay-octad-det720-source-niemeier.json).
 
-The correct next search, if this class is retained, is a direct full-Niemeier
-prescribed-support enumeration for a rank-15 two/three-support companion.  A
-longer undirected Kneser beam is lower-value: the present beam already shows
-that root rank grows readily to 13 but not to the preferred source band.
+The historical follow-up was a direct full-Niemeier prescribed-support
+enumeration for a rank-15 two/three-support companion. A longer undirected
+Kneser beam was lower-value: the present beam already shows that root rank
+grows readily to 13 but not to the preferred source band.
 
 ## Direct all-Niemeier source closeout — 2026-09-02
 

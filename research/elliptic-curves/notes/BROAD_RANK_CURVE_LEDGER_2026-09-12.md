@@ -6,10 +6,11 @@ The [completed broad campaign](BROAD_RANK_SEARCH_2026-09-10.md) contributes
 and one of 25. All 30 are pairwise nonisomorphic over Q and absent from the
 pinned 415-curve baseline.
 
-The [main README](../../../README.md#elliptic-curve-inventory) and
-[complete inventory](../INVENTORY.md) now contain **445 curves**, with
-**282 exact conductors and 163 unresolved**. The README displays 398 curves
-under its existing rank and structural-example selection rule.
+At this ledger's publication snapshot, the [main README](../../../README.md#elliptic-curve-inventory)
+and [complete inventory](../INVENTORY.md) contained **445 curves**, with
+**282 exact conductors and 163 unresolved**; the README displayed 398 under
+its then-current rank and structural-example selection rule. Current totals
+are generated in the linked inventory.
 
 The portable [curve snapshot](../../artifacts/generated-results/elliptic-curves/broad_rank_ledger_snapshot_v1.json)
 retains all selected point packets, normalized parents, final states, source
@@ -53,22 +54,10 @@ snapshot adds 15 exact conductors and preserves those earlier certificates.
 Minimal-model height and discriminant columns remain uncomputed for all 30 new
 rows. No conductor-record claim is made.
 
-From the repository root, replay the publications and check the generated views:
-
-```sh
-python3 research/elliptic-curves/cas/publish_broad_rank_results.py check
-~/.local/bin/sage -python research/elliptic-curves/cas/publish_broad_rank_conductors_v2.py check
-python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
-python3 research/scripts/render_status.py --check
-```
-
-The immutable snapshots are already frozen; do not rerun `freeze` over them.
-The two publishers' `index` commands bind the replayed snapshots to the proved
-entries in `research/MATH_STATUS.json`; the existing inventory renderer then
-regenerates the JSON, CSV, curve pages and README table.
-
-Inspect the completed queue with:
-
-```sh
-python3 research/elliptic-curves/cas/run_broad_rank_conductors.py status
-```
+The immutable snapshots are already frozen. The
+[rank publisher](../cas/publish_broad_rank_results.py),
+[conductor publisher](../cas/publish_broad_rank_conductors_v2.py),
+[inventory renderer](../cas/render_main_readme_curves.py), and
+[status renderer](../../scripts/render_status.py) are retained validation
+interfaces; they are not instructions to refreeze, rerun, or extend the
+completed queue.

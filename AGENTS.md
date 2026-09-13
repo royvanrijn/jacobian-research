@@ -66,6 +66,7 @@ to include other archived programmes. `show ID` can read any retained claim.
 - Archive or replace superseded handoffs with short navigation/tombstone records instead of maintaining parallel status narratives.
 - Keep README pages short and link to canonical proofs.
 - Prefer narrow, cheap checks. Run expensive whole-suite or research calculations only when mathematically necessary and explicitly in scope.
+- Keep cleanup small: use retained evidence for status, navigation and source corrections. Do not expand routine cleanup into new proof implementations, replay campaigns or test infrastructure; record unresolved verification gaps explicitly.
 - Do not rewrite unrelated active proof documents merely for stylistic consistency.
 
 ## Repository hygiene

@@ -224,8 +224,8 @@ python3 elliptic-curves/scripts/recover_conductor_parameter.py \
 
 Pinned input and output:
 
-- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json`
-- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json`
+- [public-point input](../../artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json)
+- [independence analysis](../../artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json)
 - `artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json`
 - `artifacts/generated-results/elliptic-curves/icarm_curve282_conductor_parameter_recovery_v1.json`
 

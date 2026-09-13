@@ -222,9 +222,9 @@ After removing the rational-prime labels, the multisets of bad-place block
 signatures for curves 356 and 385 are still unequal.  Together with the
 two-adic and fixed-common-good separations, this is a negative result for the
 proposed shared local fingerprint.  No congruence conditions are extracted,
-no CRT class is manufactured, and no inward search is run.  The operational
-next step is a direct, checkpointed family-wide parameter search with its own
-independent arithmetic gate.
+no CRT class is manufactured, and no inward search is run.  This certificate
+does not select a family-wide parameter search: any such work needs an
+independent mathematical gate and separately declared scope.
 
 ## Replay
 

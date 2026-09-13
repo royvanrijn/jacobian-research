@@ -875,11 +875,15 @@ python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py
 python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py --check
 ```
 
-## Next exact catalogue frontier
+## Remaining catalogue frontier (unscheduled)
 
-The next useful computation is not another mutation of the determinant-948
-H3 auxiliary. It is completion of the first orbit-complete backend/band shard, with the
-enumerator required to emit:
+No whole-backend or factory enumeration is current work. Any future effort
+must declare one bounded backend/band shard and retain the stated completeness
+certificate before it can extend this imported inventory.
+
+The first useful future computation is not another mutation of the
+determinant-948 H3 auxiliary. It is completion of one orbit-complete
+backend/band shard, with the enumerator required to emit:
 
 1. a proof that every primitive rank-seven embedding in the declared shard
    occurs;

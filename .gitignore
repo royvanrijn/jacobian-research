@@ -83,6 +83,16 @@ research/elkies-k3/results/**/*.sqlite
 /research/artifacts/generated-results
 !/research/artifacts/generated-results/
 /research/artifacts/generated-results/*
+!/research/artifacts/generated-results/elkies-k3-r17-correlated-genus-one-v1/
+!/research/artifacts/generated-results/elkies-k3-r17-one-node-correlated-v1/
+/research/artifacts/generated-results/elkies-k3-r17-one-node-correlated-v1/traces/
+!/research/artifacts/generated-results/elkies-k3-r17-inherited-halving-nodes-v1/
+/research/artifacts/generated-results/elkies-k3-r17-inherited-halving-nodes-v1/traces/
+!/research/artifacts/generated-results/elkies-k3-r17-one-node-complete-pairs-v1/
+!/research/artifacts/generated-results/elkies-k3-r17-mestre-shared-twist-v1/
+!/research/artifacts/generated-results/elkies-k3-r17-shared-ordinate-tangents-v1/
+!/research/artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/
+!/research/artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/
 !/research/artifacts/generated-results/elkies-k3-curve302-nine-direction-k3-v1.json
 !/research/artifacts/generated-results/elkies-k3-curve302-inverse-fibration-extension-full-v1.json
 !/research/artifacts/generated-results/elkies-k3-curve302-cubic-pencil-overlap-v1.json
@@ -367,3 +377,6 @@ research/elkies-k3/results/**/*.sqlite
 !/research/artifacts/generated-results/elkies-k3-r17-norm12-1183a-streaming-character-closure-v1.json
 !/research/artifacts/generated-results/elkies-k3-r17-norm12-098fc-streaming-character-closure-v1.json
 !/research/artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json
+!/research/artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz
+!/research/artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json
+!/research/artifacts/generated-results/elliptic-curves/fresh6_retained_rank_witnesses_v1.json

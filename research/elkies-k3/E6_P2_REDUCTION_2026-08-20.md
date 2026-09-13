@@ -1,6 +1,9 @@
-# E6 P2 reduction and corrected GF(31) search state — 2026-08-20
+# E6 P2 reduction — historical GF(31) search state (2026-08-20)
 
-This note records the current transition from the first explicit E6/P1 modular reconstruction to the search for a genuinely independent second Mordell-Weil section.
+This note records the former transition from the first explicit E6/P1 modular
+reconstruction to a search for a genuinely independent second Mordell--Weil
+section. The completed H3 route no longer uses this search state; it remains a
+finite-field regression and failure record, not a current construction queue.
 
 ## First reconstructed E6/P1 point: boundary correction
 
@@ -255,7 +258,7 @@ A point passing all six gates would be the modular seed needed to cut the
 three-dimensional P1 locus toward the one-dimensional rank-3 family.
 
 Complete rational-chart scans over `GF(5),GF(7),GF(11),GF(13),GF(17)` found
-69 sections passing gate 3 and none passing gate 4.  Therefore the next search
-must encode the missing intersection condition algebraically rather than
-continue the old scan over larger primes.  See
+69 sections passing gate 3 and none passing gate 4. The historical diagnosis
+was that any further study would need to encode the missing intersection
+condition algebraically rather than continue the old scan over larger primes. See
 [`E6_MW3_ATTACK.md`](E6_MW3_ATTACK.md) for the exact counts.

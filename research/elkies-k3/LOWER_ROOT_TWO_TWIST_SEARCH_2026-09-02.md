@@ -505,7 +505,7 @@ This is an obstruction only for the normalized `r=s=1` two-point Tate slice;
 it says that the next A4 chart must restore the more general Bezout data, not
 that a two-marked A4 surface is impossible.
 
-## Next experiment
+## Unscheduled remaining routes
 
 The two regular `p=11,13` low-section slices are now closed by exact
 nonrationality, the `p=7` point cannot lift even modulo `7^3`, and the two
@@ -520,7 +520,9 @@ afterward, and retain surface moduli in the simultaneous twist equations.
 
 For either route, quotient the obvious `S,-2S` and constant-section components
 before modular elimination.  Any lift must pass a twist-height determinant
-gate before it is counted as `2+2` or `3+2`.
+gate before it is counted as `2+2` or `3+2`.  These are mathematical
+requirements, not a current computation instruction; any new construction
+needs its own scope, budget and checkpointed certificate.
 
 ## Status boundary
 

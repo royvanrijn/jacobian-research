@@ -13,6 +13,22 @@ use [`MATH_STATUS.json`](../../MATH_STATUS.json) and the active
 
 ## Index
 
+The original [full11952 trial note](notes/FULL11952_NEW_RANK27_2026-09-06.before-2026-09-13.md.txt)
+and [201-curve inventory note](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.before-2026-09-13.md.txt)
+retain dated counts, timings and database-selection commands. Their canonical
+notes now link later conductor proofs and current inventory navigation.
+
+The original Fermigier [transport producer](analyze_fermigier_exceptional_transport.py.18e210c8f0a83f4c76609d777f261bc2acc2b2049e29ece592a15ddcf7277b22.txt)
+and [support-two producer](classify_fermigier_exceptional_quotient_ball.py.0c3df7c25765c02eec77e3bdbae7e8c848b3ca4bbff01edc6d911b0b2b57a026.txt)
+preserve the hashes in their certificates. The active copies only redirect
+their pinned rank22 input to its matching archived bytes; see the
+[replay boundary](../../elliptic-curves/notes/FERMIGIER_REPRODUCTION.md#search-and-evidence-boundary).
+
+The [V3 transfer handoff](notes/V3_TRANSFER_NEXT_STEP_2026-09-07.md.txt)
+preserves the completed roster's original launch instructions. Its byte hash
+is recorded in the [cleanup checklist](../../knowledge/legacy_work_review.json);
+use the [completed results](../../elliptic-curves/notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md).
+
 The [anonymous-candidate launcher](run_anonymous_candidate_v2.sh) is retained
 byte for byte as historical command provenance. It expects the repository
 root as its working directory and the former import layout; it is not an
@@ -24,7 +40,7 @@ indexes the retained PARI and MW16 search controls at revision
 `d30a742133f0658185c3bd4c99f0b0f815f2f74b`. Their original paths remain where
 certificate/source bundles depend on them; active searches use the shared API.
 
-[`MANIFEST.tsv`](MANIFEST.tsv) has one row per preserved item:
+[`MANIFEST.tsv`](MANIFEST.tsv) covers the original computational tranche:
 
 ```text
 original_path    archived_path    sha256    kind

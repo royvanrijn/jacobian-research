@@ -1,4 +1,8 @@
-# Exact q80 to rootless MW17 path
+# Historical generic q80-to-rootless MW17 path
+
+> **Current-boundary note (2026-09-13).** This exact lattice route is retained
+> as a construction and regression record. It is not the current equation
+> queue; use the [programme map](README.md) before proposing any reconstruction.
 
 ## Status
 
@@ -353,8 +357,9 @@ giving `D9+A3`.  On each marked rank-19 formal branch, the degree-eight
 collision factor vanishes and upgrades the finite `I4` to `I5`, recovering
 the lattice target `D9+A4`, MW rank four.  The new verifier certifies that
 collision through order four on both exact characteristic-zero branches.
-Thus the first geometric neighbor is explicit; the next construction step is
-to transport the marked sections and execute the second q4 pencil.
+Thus the first geometric neighbor is explicit. The historical uncompleted
+sequence would transport its marked sections and execute the second q4 pencil;
+it is not a current reconstruction instruction.
 
 ### Second q4 chamber
 

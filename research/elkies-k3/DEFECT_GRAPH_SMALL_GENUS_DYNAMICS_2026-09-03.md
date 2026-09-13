@@ -206,7 +206,7 @@ sage -python elkies-k3/scripts/analyze_small_genus_defect_graphs.sage --check
 The run is dependency-free beyond Sage/PARI and takes only a few seconds on
 the recorded workstation.  It performs no random sampling.
 
-## Boundary and next experiment
+## Boundary and unscheduled rank-15 application
 
 The exact computation proves fixed-prime traps, nontrivial directed distance,
 minimum sufficient sets inside the three declared prime lists, and
@@ -216,7 +216,7 @@ marked component containing a rootless state.  It gives no effective prime
 threshold, universal small-prime bound, scalar Lyapunov function, or complete
 rank-15 small-prime graph.
 
-The next rank-15 experiment should therefore be more targeted than a large
+Any future rank-15 application must be more targeted than a large
 unfiltered genus walk:
 
 1. attach the Q80 discriminant marking and bridge multiplier to the state;
@@ -230,4 +230,5 @@ unfiltered genus walk:
 
 The ternary controls say exactly what must be kept: the prime-labelled
 transition profile is already more informative than defect count, while the
-underlying unrestricted graph can hide directed traps completely.
+underlying unrestricted graph can hide directed traps completely. No rank-15
+enumeration is scheduled by this theorem.

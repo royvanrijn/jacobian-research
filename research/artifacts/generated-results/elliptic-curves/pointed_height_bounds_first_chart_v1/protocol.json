@@ -1,0 +1,18 @@
+{
+  "selection": "First centre in the first development case of the frozen next-direction benchmark; the two existing normalization maps. Retrospective commissioning, not an independent transfer test.",
+  "scope": "Bounds only; zero new point calls, no new minimization, no additional centres or automatic benchmark launch.",
+  "per_worker_seconds": 120,
+  "rss_bytes": 1073741824,
+  "workers": 1,
+  "threads": 1,
+  "inputs": {
+    "factor_free-input.json": "cbe5eac8c5b16d728f049d1a970ddb94e740ed6639b8eda83329f0fcc26bcc2d",
+    "preconditioned_full-input.json": "22011e663675ddab65057e6672151078565fb3e8c232418285e7c9e739589e5c"
+  },
+  "sources": {
+    "elliptic-curves/cas/pointed_height_bounds.py": "f4946dcdb2f9f573511b8de253dfb33ff9e86c6bab30adb59b27b8e02a2035fe",
+    "elliptic-curves/cas/verify_pointed_height_bounds.py": "f5f2495bfeef0ab1cc81767b88f192316597bdd979ac5332712add68f0a1c4b2"
+  },
+  "created_unix": 1789298761.8104815,
+  "prototype_boundary": "The initial exploratory calculations and one constant-polynomial interface failure are retained locally; this is not a prospective performance comparison."
+}

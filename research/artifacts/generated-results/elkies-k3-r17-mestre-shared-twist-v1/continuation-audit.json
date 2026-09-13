@@ -1,0 +1,47 @@
+{
+  "additional_closed_gate": "All136 single shared-ordinate cubic tangents from the published generic basis have normalized covering genus at least86; no independence or point search was attempted on these high-genus candidates.",
+  "canonical_sources": {
+    "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md": "7748d0094d6c705c27bc4816c2465098ce360cfe6201d5eb9adcf3d100111a6a",
+    "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md": "9d931080b594b4b1e1d3cec891fe1eb90f4507a24260a4c744cc670e267f8b3e",
+    "elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md": "d4120be8ccfc002c78a2eb2d3b4159d397cff8bb524117f73991c3420c60f211"
+  },
+  "claims": {
+    "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": {
+      "scope_fingerprint": "394a3224c4e6752c",
+      "state": "proved"
+    },
+    "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913": {
+      "scope_fingerprint": "e866998a9843404c",
+      "state": "proved"
+    },
+    "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": {
+      "scope_fingerprint": "14c9f0238c165cd5",
+      "state": "open"
+    }
+  },
+  "date": "2026-09-13",
+  "failed_required_condition": "The displayed base has genus21. Every rational auxiliary function in the same Mestre identity on this parent forces branch degree at least20 and genus at least9, so none supplies infinitely many rational points.",
+  "goal_complete": false,
+  "goal_status": "active",
+  "new_positive_result": "Two explicit anti-invariant sections on one quadratic cover of published R17, independent modulo the full inherited subgroup, Gram diag(24,24), rank lower bound19.",
+  "next_mathematical_gate": "Find untested generic trace parities in a family with an already proved genus-at-most-one branch condition, or derive another identity with at most4 branch points. The frozen25 pencils do not exhaust all norm8 parity classes. Read retained inventories before calculating; missing tables must not trigger reconstruction.",
+  "running_research_workers": [],
+  "schema": "r17-correlated-gains-continuation-audit-v1",
+  "scope_reminders": [
+    "Preserve degree2 over the original parameter field and independence modulo its inherited subgroup.",
+    "Do not relabel the existing V4 degree4 rank19 construction as the requested endpoint.",
+    "The complete alternate-Q80 product-bisection note records63917 minimum-norm8 parity classes, not63663; its target list consists of17 selected product quartics and its negative result is not a same-cover exclusion for arbitrary pencil pairs.",
+    "Do not repeat the frozen25 smooth-pencil pairs,67-by25 one-node bank, this rational-auxiliary Mestre family or these136 basis tangents as unresolved cases.",
+    "No theorem excludes other carrier families, generic words or arithmetic parents."
+  ],
+  "verification": {
+    "check_navigation": "PASS",
+    "git_diff_check": "PASS",
+    "mestre_independent_replay": "PASS",
+    "mestre_tests": 6,
+    "navigation_metadata_tests": 107,
+    "render_navigation": "PASS",
+    "tangent_independent_replay": "PASS",
+    "tangent_tests": 4
+  }
+}

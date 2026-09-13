@@ -173,7 +173,7 @@ contains the replay inputs; the
 records verification from a fresh extracted directory. Replay requires Sage
 with PARI 2.17.3 and the pinned `/usr/bin/gp` used for root numbers.
 
-## Authorized 512-box continuation
+## Completed 512-box batch
 
 The subsequent user-authorized batch freezes the same field and smoothness
 cutoff, and every coprime pair with `-512 <= m <= 512`, `1 <= n <= 512`.
@@ -252,7 +252,7 @@ the certificate or status entry.
 
 ## Targeting 64 previously untouched prime ideals
 
-The next user-authorized continuation targets missing factor-base directions
+The completed subsequent batch targets missing factor-base directions
 explicitly. After eliminating the canonical rational-prime rows, the existing
 296 norm relations have nonzero entries on 1,449 quotient columns. The target
 selector excludes these covered columns and the canonical pivots. It keeps
@@ -434,7 +434,7 @@ relation intersections from a fresh extracted directory.
 sage -python elliptic-curves/cas/certify_small_conductor_smaller_base_v2.sage --check
 ```
 
-## Continuation: 512 targets directly on the smaller base
+## Completed smaller-base 512-target batch
 
 The continuation keeps the certified cutoff at **37,638** and starts from
 the 33 exactly supported relations above. Its mathematical gate is to reduce

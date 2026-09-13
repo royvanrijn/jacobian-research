@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "id": "EC-CRT-BEAM-NONMONOTONE",
+      "canonical_source": "elliptic-curves/THEORY.md",
+      "source_sha256": "6c93222daf9767130cfa6caf0c050126d31f7f1b0e736b52d4d34aa3c0eadbdf",
+      "evidence_route": "written-regression",
+      "boundary": "The exhaustive 160-choice counterexample is fixed in test_crt_lattice.py; it is a regression example, not an output-producing protocol."
+    },
+    {
+      "id": "EC-M2S-GERM",
+      "canonical_source": "elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md",
+      "source_sha256": "05bbe89b161a3847e8697f5cfd4a65f12a35871f73568c180e25b83abad8243e",
+      "evidence_route": "written-proof-plus-fail-closed-checker",
+      "boundary": "The characteristic-zero local-scheme and leading-square proof is in the note. The displayed Mordell--Weil relation has only the stated modular fibres and rational controls because its characteristic-zero determinant was stopped. The Singular checker is an exact fail-closed regression and emits no portable output."
+    },
+    {
+      "id": "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912",
+      "canonical_source": "elliptic-curves/rank-jump/MARKED_TWO_CLASS_PROPAGATION_2026-09-12.md",
+      "source_sha256": "492fff6086b5b3473b88368737828b0471a253a4eb0e550792b90dd839cc43b7",
+      "evidence_route": "written-theorem-with-regressions",
+      "boundary": "The status row owns the written propagation theorem. Its checker covers eighteen regressions only; the separate frozen carrier experiment is not theorem evidence."
+    }
+  ]
+}

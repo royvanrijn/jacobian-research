@@ -465,15 +465,7 @@ group. The obstruction says that `C` has no rational half, not that its
 pointed genus-one covering is insoluble. Other branch divisors, higher-degree
 maps and other correspondences remain open.
 
-## Computation and next gate
-
-The subsequent [double-plane and Jacobian gate](DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md)
-identifies the elliptic fibres as lines through the branch node and the
-genus-two members as lines missing it. The source-selected member `B` has
-an absolutely simple Jacobian, witnessed by exact reduction at17. So does
-the geometric generic RR member: neither has an elliptic quotient of any
-degree. Special split-Jacobian loci and other correspondences remain open;
-this is not a genus-two Selmer or rational-solubility certificate.
+## Computation and parked boundary
 
 One universal RR sextic and one symbolic fixed-fibre bielliptic construction
 were checked. The bounded branch-divisor supplement ran198 small-prime
@@ -488,14 +480,13 @@ certificate was written. Correcting the multiplier to `-y+qy-m*(x-qx)`
 gave the exact identity and a passing replay. All supplement jobs finished
 in under one second each. No background job is running.
 
-The next necessary gate is an oracle-free specification connecting the
+The historical necessary gate was an oracle-free specification connecting the
 genus-two family and its marked rational points to each original control
-fibre. The universal equation above does not itself supply that selector or
-correspondence, and the one-RR-pair branch construction above cannot supply
-it over `Q` on the fixed panel. Until a suitable construction exists, there
-is no honest blinded panel called
-“the universal genus-two first-unlock curve C_t”. The updated goal remains
-open, not completed by these preflight results.
+fibre. The universal equation does not supply that selector, and the
+one-RR-pair construction cannot supply it over `Q` on the fixed panel. The
+constructor route is parked, so there is no active blinded panel called “the
+universal genus-two first-unlock curve C_t”. The logical gap remains open;
+these preflight results do not close it.
 
 ```sh
 sage -python research/elliptic-curves/cas/verify_det1092_universal_rr_descent_preflight.sage

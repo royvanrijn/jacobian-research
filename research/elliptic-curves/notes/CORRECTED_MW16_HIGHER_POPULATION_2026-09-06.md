@@ -11,6 +11,9 @@ aggregate certifies seventeen added directions across five curves, including
 one new rank-at-least-23 curve. All 182 standalone stages pass, as do its
 minimal-model proof, Sage export and the full 199-curve inventory replay.**
 
+The V19 counts below are historical snapshot data; use the generated
+[current inventory](../INVENTORY.md) for present totals.
+
 The completed [rank and equation certificate](../../artifacts/generated-results/elliptic-curves/corrected60_mw16_results_v1.json)
 and [experiment aggregate](../../artifacts/generated-results/elliptic-curves/corrected60_mw16_experiment_v1.json)
 report these five positive gains over the respective independent generic16
@@ -45,11 +48,11 @@ and [executable Sage equation/point export](../../artifacts/generated-results/el
 replay and execute successfully. No exact conductor is asserted.
 
 The [standalone replay](../../artifacts/generated-results/elliptic-curves/corrected60_mw16_point_portable_replay_v1.json)
-passes all 182 stages from a 57,269,213-byte archive. The
+passes all 182 stages from a 57,269,213-byte archive. At the
 [V19 inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v19.json)
-now contains 199 mutually nonisomorphic curves, preserving all prior IDs:
-eight with bound 27, eighteen with 26, thirty-seven with 25, fifty with 24,
-forty-six with 23 and forty with 22. All 199 independent-point certificates,
+snapshot, there were 199 mutually nonisomorphic curves, preserving all prior
+IDs: eight with bound 27, eighteen with 26, thirty-seven with 25, fifty with
+24, forty-six with 23 and forty with 22. All 199 independent-point certificates,
 catalogue exclusions, exact distinct j-invariants and the equation CSV pass
 [the inventory replay](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v19_memory_replay_v1.json).
 

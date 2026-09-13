@@ -140,9 +140,10 @@ def default_full_marking_curve(t_row, discriminant_invariants):
             "literal_T_as_rational_multiple_of_coarse_hessian": str(scale),
             "warning": (
                 "The projective norm-one curve of a similar primitive ternary "
-                "form is only a coarse orthogonal target. Full rational NS "
-                "marking requires the discriminant-kernel subgroup for the "
-                "literal integral T lattice."
+                "form is an arithmetic diagnostic. The direction of its map "
+                "to the literal stable period quotient is not automatic. Full "
+                "rational NS marking requires the full discriminant kernel, "
+                "including determinant-minus-one isometries."
             ),
         },
     }
@@ -201,8 +202,9 @@ def unknown_next_gate(t_row):
     source = t_row["arithmetic_source"]
     if source["status"] == "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE":
         return (
-            "Compute the stable discriminant-kernel subgroup inside the exact "
-            "Gamma_0(N) norm-one group, then identify its easiest rational-point quotient."
+            "Compute the full stable projective discriminant kernel and its "
+            "relation to the exact Gamma_0(N) norm-one group; do not assume "
+            "containment. Then identify a proved rational-point quotient."
         )
     if source["status"] == "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER":
         return (
@@ -393,8 +395,9 @@ def hospitality_comparison(by_id):
             "whose X_0(50) and X_0(75) quotients have only rational cusps. "
             "Determinant 720 has exact stable curve X_0(60), whose rational points "
             "are all cusps; determinant 950 is forced onto the rigid Fricke quotient "
-            "X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with "
-            "X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The "
+            "X_0^+(475). Determinant 1184 remains UNKNOWN: its norm-one Cartan "
+            "fibre product has no rational lift, but a stable reflection lies "
+            "outside that norm-one group, invalidating the claimed marking map. The "
             "observed hospitality of 948 is therefore explained by its unusually "
             "low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, "
             "not by determinant size or Clifford splitting alone."
@@ -442,9 +445,9 @@ def build(catalogue, t_arithmetic, decisions, paths):
     counts = Counter(row["classification"] for row in candidates)
     if counts != Counter(
         {
-            "ARITHMETICALLY_EXCLUDED": 5,
+            "ARITHMETICALLY_EXCLUDED": 4,
             "ARITHMETICALLY_POSSIBLE": 1,
-            "UNKNOWN": 60,
+            "UNKNOWN": 61,
         }
     ):
         raise AssertionError(f"classification count changed: {counts}")
@@ -462,7 +465,7 @@ def build(catalogue, t_arithmetic, decisions, paths):
     by_id = {row["surface_id"]: row for row in candidates}
     return {
         "schema": "elkies-k3.rank19-arithmetic-marking-classifier.v1",
-        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_5_EXCLUDED_60_UNKNOWN",
+        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_4_EXCLUDED_61_UNKNOWN",
         "policy": {
             **decisions["policy"],
             "equation_agent": (
@@ -479,11 +482,12 @@ def build(catalogue, t_arithmetic, decisions, paths):
             "proved": (
                 "All 66 exact rootless-MW17 candidate NS lattices are paired with "
                 "their catalogue primitive ternary complement and replayed even "
-                "Clifford data. The six terminal decisions and the determinant-1236 "
-                "exact-curve unresolved record are backed by registered certificates."
+                "Clifford data. The five terminal decisions, determinant-1236 "
+                "exact-curve unresolved record and NS0031 period-group correction "
+                "are backed by registered certificates."
             ),
             "not_proved": (
-                "The 60 UNKNOWN rows are not asserted to exist or not exist over QQ. "
+                "The 61 UNKNOWN rows are not asserted to exist or not exist over QQ. "
                 "For determinant 1236 the stable curve is exact and its non-CM rational "
                 "locus remains open; the other UNKNOWN stable curves remain unclassified."
             ),

@@ -10,7 +10,7 @@ check: check-navigation
 render-status:
 	$(SYSTEM_PYTHON) scripts/render_status.py
 
-# Metadata and documentation only: no CAS, certificate replay or inventory rebuild.
+# Navigation and small regression controls; no CAS, census or inventory rebuild.
 .PHONY: render-navigation check-navigation
 render-navigation:
 	$(SYSTEM_PYTHON) scripts/render_status.py
@@ -19,6 +19,8 @@ render-navigation:
 
 check-navigation:
 	$(SYSTEM_PYTHON) scripts/audit_status.py
+	$(SYSTEM_PYTHON) scripts/audit_software_locks.py
+	$(SYSTEM_PYTHON) scripts/audit_canonical_artifact_digests.py
 	$(SYSTEM_PYTHON) scripts/research.py check --require-partial-review
 	$(SYSTEM_PYTHON) scripts/check_markdown_links.py
 	$(SYSTEM_PYTHON) scripts/audit_repository_hygiene.py
@@ -34,6 +36,27 @@ check-navigation:
 verify-ns0031-arithmetic:
 	$(SYSTEM_PYTHON) elkies-k3/scripts/verify_ns0031_marking_arithmetic.py
 	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_ns0031_marking_replay.py' -q
+
+.PHONY: verify-ns0031-period-group
+verify-ns0031-period-group:
+	$(SYSTEM_PYTHON) elkies-k3/scripts/verify_ns0031_period_group.py
+	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_research_ns0031_period_group.py' -q
+
+# Small exact group-law controls only; no seven-fibre campaign or cover census.
+.PHONY: test-native-quotient-replay
+test-native-quotient-replay:
+	sage -python -m unittest discover -s tests -p 'test_native_quotient_replay.py' -q
+
+# Explicit retained-polynomial replay; no section or lattice reconstruction.
+.PHONY: verify-smooth-characters
+verify-smooth-characters:
+	$(SYSTEM_PYTHON) elkies-k3/scripts/verify_r17_smooth_character_witness.py
+	$(SYSTEM_PYTHON) -m unittest discover -s tests -p 'test_research_smooth_character_witness.py' -q
+
+# Explicit retained subgroup witnesses; no original search or CVP replay.
+.PHONY: verify-fresh6-retained-ranks
+verify-fresh6-retained-ranks:
+	$(SYSTEM_PYTHON) elliptic-curves/cas/verify_fresh6_retained_ranks.py
 
 # Explicit broad EC suite. Inspect its cost and prerequisites before invoking.
 verify-elliptic-curves:

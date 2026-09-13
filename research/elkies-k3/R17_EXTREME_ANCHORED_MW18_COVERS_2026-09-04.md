@@ -4,8 +4,10 @@
 
 ## Status
 
-The MW18 search lane is restarted around exact high-jump anchors.  The old
-first-cover Nagao run remains a regression, not the default search.
+This bounded MW18 campaign is complete and retained around exact high-jump
+anchors. The old first-cover Nagao run remains a regression. Neither it nor
+this campaign is a current search route; the elliptic-curve programme map
+sets current work.
 
 The complete smooth rootless rational-bisection frames on the native
 `norm12-orbit-07ca9` and `norm12-orbit-08234` charts were tested at eight
@@ -108,27 +110,16 @@ SHA-256
 The individual ledgers preserve every finalist and exact base parameter.
 
 This table is a search ordering only and proves no superiority of one cover
-beyond this bounded protocol.  The subsequent exact audit specialized all
-178 finalists and certified eighteen independent points on every fibre.  The
-residual-Selmer and point-search continuation is paused; see
-[`R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md`](R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md).
+beyond this bounded protocol. The subsequent exact audit specialized all 178
+finalists and certified eighteen independent points on every fibre. The
+residual-Selmer pilot and point-search continuation are historical and
+incomplete; see the
+[historical boundary](R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md).
 
-## Replay
+## Historical replay interfaces
 
-```bash
-sage -python elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage
-
-python3 elkies-k3/scripts/search_r17_extreme_anchored_mw18_nagao.py \
-  --curve-id 536 --cover-label 08234-orbit-19188 \
-  --numerator-bound 1000 --denominator-bound 1000 \
-  --height-bucket-width 100 --finalists 100 \
-  --output artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve536-orbit19188-h1000-v1.json
-
-python3 elkies-k3/scripts/summarize_r17_extreme_anchored_mw18_nagao.py --check
-sage -python elkies-k3/scripts/specialize_r17_extreme_anchored_mw18_finalists.sage --check --no-resume
-python3 -m unittest elliptic-curves/tests/test_r17_extreme_anchored_mw18.py
-```
-
-The full exact replay is checkpointed under `artifacts/local/` for speed, but
-the local cache is not a proof artifact.  `--check` on the exact compiler
-rebuilds without trusting that cache.
+The cover compiler, bounded Nagao sieve, summary checker, and specialization
+checker remain in `elkies-k3/scripts/` with their pinned generated artifacts.
+The full exact compiler rebuilds from raw inputs rather than trusting its
+local checkpoint cache. Those interfaces preserve reproducibility; they do
+not authorize a rerun, a census continuation, or a new point-search stage.

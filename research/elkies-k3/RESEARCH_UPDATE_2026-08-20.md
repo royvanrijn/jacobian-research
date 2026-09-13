@@ -1,12 +1,12 @@
-# Elkies rank-17 K3 reconstruction — research update (2026-08-20)
+# Elkies rank-17 K3 reconstruction — research update (2026-08-20, historical)
 
 > **Superseded source marking (2026-08-21).** The H2/`H8 cap H237` route
 > described below remains a valid downstream comparison, but it is not the
 > recovered source polarization.  The exact source is the third Kumar frame
 > `H3=[[21/2,3],[3,46]]`: its `H21 cap H92` component has been normalized over
 > `QQ` to the published level-474 genus-two curve.  The marked H3 corridor and
-> direct rootless endpoint gate are now complete; the current programme gate
-> is residual 2-descent in the compact published `t` chart.  See
+> direct rootless endpoint gate are now complete. Use the current programme
+> navigation in
 > [`README.md`](README.md) and
 > [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md).
 

@@ -52,6 +52,12 @@ The script stores the exact points, finite-reduction matrices, direct global
 data, prime sums, and the distinction between unconditional and conditional
 claims.
 
+The result file is byte-identical to the preserved 2026-08-24 snapshot. The
+raw `ratpoints` roots remain absent. Its `--check` path rebuilds the bounded
+search inputs and calls `ratpoints` before comparison, so it is not a portable
+or routine verification command. The two stated lower bounds and their
+conditional analytic diagnostics retain that boundary.
+
 ## Search scope
 
 Discovery used finite `ratpoints` boxes and exact post-search independence

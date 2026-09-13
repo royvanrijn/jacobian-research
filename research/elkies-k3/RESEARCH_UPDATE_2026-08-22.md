@@ -1,4 +1,11 @@
-# Research update — 2026-08-22
+# Research update — 2026-08-22 (historical)
+
+This is a point-in-time construction update.  Its q8 repair, CM24 corridor,
+and compiler lessons remain useful historical evidence, but its commands and
+worklist are not the current K3 queue.  For the completed H3 endpoint use the
+[endpoint certificate](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md);
+for the current alternate-Q80 equation use the
+[programme map](README.md).
 
 ## H3 q8 repaired exactly over QQ
 
@@ -83,7 +90,7 @@ MW rank 4 (rho=19).
 
 Therefore the q8 child is exactly `D13/MW4`.
 
-Reproduce with
+Historical reconstruction commands (not a current work request):
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage
@@ -158,8 +165,11 @@ data/fibrations/kumar_q80_cm24_equation_progress.tsv.
 7. D4 `(-1,0,-1,-1)` is the ramified-chart outer-complement row with residue `0`.
 8. The final A5 `(-1,0,-1,-1,0)` resolves to the `+/-4` quotient pair for the two horizontal signs.
 
-## Current execution order
+## Historical execution order — superseded
 
-1. **H3 primary:** continue from the exact `D13/MW4` child toward the rootless/high-rank target, keeping the 2-cover and full-residue regressions active.
-2. **Q80 secondary:** use the completed CM24 corridor to attack the generic characteristic-zero lift from orbit 1222 onward.
-3. Do not revive the historical H3 degree-46, `true1600`, or hand-built `corrected1278` q8 pipelines as canonical constructions.
+This was the worklist on 22 August.  The H3 corridor now has its certified
+rootless MW17 endpoint, and the direct 11952 chart is the current
+alternate-Q80 equation entry point.  Consult the linked current records above
+and the generated work ledger before proposing a new computation.  Do not
+revive the historical H3 degree-46, `true1600`, or hand-built `corrected1278`
+q8 pipelines as canonical constructions.

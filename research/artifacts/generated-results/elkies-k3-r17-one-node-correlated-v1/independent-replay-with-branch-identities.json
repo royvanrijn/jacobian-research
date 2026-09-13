@@ -1,0 +1,24 @@
+{
+  "boundary_exclusions": 70,
+  "cases": 91187,
+  "elapsed_seconds": 1.041,
+  "exact_regular_root_exclusions": 3205,
+  "finite_halving_rejections": 87911,
+  "projective_fibres": 1361,
+  "rational_root_witnesses": 3276,
+  "scope": "The frozen fibre panel supplies no nonsplit one-node genus-one cover for these 67 traces. This is not an exhaustion of rational node positions or of quadratic covers.",
+  "split_positive_control": [
+    {
+      "inherited_branches": [
+        "P1+P3",
+        "-P1-P16"
+      ],
+      "new_directions": 0,
+      "normalization": "split over Q(t)",
+      "r": "-21/4",
+      "trace": 54
+    }
+  ],
+  "status": "PASS_FIXED_ONE_NODE_PANEL_NO_NONSPLIT_CARRIER",
+  "traces": 67
+}

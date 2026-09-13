@@ -88,6 +88,8 @@ python3 research/scripts/research.py show ID
 | `EC-K3-H3-Q8-UNMARKED-E7-NODE-FRAMES` | partial | [Actual q8 local module frames on all five unmarked H92 E7 edge nodes](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION` | partial | [Exact unmarked first q4 collision on the rational Q80 coefficient curve](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-BISECT-BIQUADRATIC-R19` | proved | [Complete biquadratic rank-19 bisection-cover geometry and a rank-at-least-nine base](../elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md) |
+| `EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912` | proved | [Twenty-five prospective genus-one pencils have no shared rational branch quartic in any of their 300 pairs](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
+| `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `EC-K3-CURVE302-COMPLETE-P6-TRIANGLE-GATE` | proved | [Complete P6 height-six triangle class contains no MW14-or-higher parent of 302](../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md) |
 | `EC-K3-CURVE302-BRANCH-CARRIER-ARITHMETIC` | proved | [Curve302 genus-three branch Jacobian is Q-simple with torsion2^6; two finite point boxes replayed](../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md) |
 | `EC-K3-CURVE302-BRANCH-JACOBIAN-ENLARGEMENT` | proved | [Explicit nontorsion branch-Jacobian divisor, rational half and two-saturated rank-one subgroup](../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md) |
@@ -152,7 +154,8 @@ python3 research/scripts/research.py show ID
 | `EC-K3-NS0024-QQ-MARKING-OBSTRUCTION` | proved | [Full rational Neron--Severi marking obstruction for NS0024](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
 | `EC-K3-NS0031-MARKED-FORMAL-BRANCH` | proved | [One-parameter formally smooth marked NS0031 branch at model 157](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) |
 | `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` | partial | [Bounded rational-coordinate scan on the NS0031 model-157 formal branch](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) |
-| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` | proved | [NS0031 rational rank-19 marking obstruction](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
+| `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` | proved | [NS0031 stable reflection lies outside the rational norm-one period image](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
+| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` | partial | [NS0031 norm-one modular obstruction with unresolved rational K3 marking](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
 | `EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET` | partial | [Exact construction-compatible equation-side target for the H3 A11-to-2A5 q8 lift](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-A11-Q8-QQ-2A5` | proved | [Exact H3 A11/MW6 q8 orbit12 neighbour with component-9-zero 2A5/MW7 child](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE` | partial | [Exact minimum-pole target-coset bridge for the H3 A11-to-2A5 q8 lift](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
@@ -179,9 +182,11 @@ python3 research/scripts/research.py show ID
 | `EC-K3-ELKIES-2026-R17-SMALL-ISOGENY-EXCLUSIONS` | proved | [Small-prime cyclic-isogeny exclusions for rational published-R17 fibres](../elkies-k3/PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md) |
 | `EC-K3-H3-Q12O5867-POINT-FACTORY` | proved | [Exact q12/orbit5867 arbitrary-point map and five-control parent calibration](../elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md) |
 | `EC-K3-H3-Q12O5867-TWO-PRIMARY-BOUNDARY` | proved | [Closed exhaustive two-primary boundary for the q12/orbit5867 point-production route](../elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md) |
+| `EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913` | proved | [All smooth genus-one bisections on alternate Q80 have distinct branch images modulo section translation](../elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md) |
 | `EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS` | proved | [Exact generic quartic-square factorization in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
 | `EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR` | proved | [Exact generic cubic linear conductor factor in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
 | `EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS` | proved | [Exact specialized quartic-square factorization in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
+| `EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913` | proved | [All63917 complete norm-eight genus-one pencils on alternate Q80 have distinct rational branch images](../elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md) |
 | `EC-K3-R17-074D9-LATE-POINT-HOLDOUT` | proved | [Bounded exact low-degree holdout audit for repeated 074d9 late-point labels](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
 | `EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16` | proved | [Exact native-074d9 canonical and cheapest-16 norm-eight cross-fibre transfer matrices](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
 | `EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER` | proved | [Complete native-074d9 rigid cross-fibre bisection transfer census](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
@@ -208,6 +213,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-R17-NORM12-103B2-HARD-FIBRE-PRODUCT-H300000` | proved | [Bounded genus-three quotient search for the seven hard 0x103b2 partners](../elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md) |
 | `EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE` | proved | [Rank-17 subgroup and sparse Mordell-Weil lattice sieve for R17 norm-twelve 0x103b2](../elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md) |
 | `EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON` | proved | [Six-fibre generic-normalized Kummer class-group pressure theorem](../elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md) |
+| `EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913` | proved | [Two Mestre directions give rank at least19 on one genus21 cover of R17; every rational auxiliary function in this identity forces genus at least9](../elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md) |
 | `EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT` | proved | [Exact native alternate-Q80 quotient visibility audit and 69-fibre local calibration table](../elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md) |
 | `EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION` | proved | [Direct noncyclic 4A1/MW13 equation and target-free reverse hop from published R17](../elkies-k3/R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) |
 | `EC-K3-R17-NORM12-ALTERNATE-CHART-CHARACTER-SWEEP` | proved | [All-chart inherited and complete alternate-Q80 character exclusions](../elkies-k3/R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md) |
@@ -219,6 +225,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION` | proved | [Complete singular genus-one rational-normalization exclusion on alternate Q80 and hidden 103b2](../elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md) |
 | `EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS` | proved | [Complete 43-chart and 474-curve norm-twelve lineage sweep with native alternate-Q80 rank-29 control](../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) |
 | `EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200` | partial | [Exact bounded P.O=0 second-section exclusion on the top 200 alternate-Q80 singleton twists](../elkies-k3/R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md) |
+| `EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912` | proved | [All 1,675 frozen height-six one-node nets versus height-eight genus-one pencils have distinct quadratic covers](../elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md) |
 | `EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO` | proved | [Arithmetic rank zero for product target 19bad:083ad by incompatible regulator squareclasses](../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md) |
 | `EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP` | proved | [Arithmetic rank zero for all four remaining product twists by regulator obstructions](../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) |
 | `EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE` | proved | [Galois height gate and constructor priority for the five product survivors](../elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md) |
@@ -233,7 +240,8 @@ python3 research/scripts/research.py show ID
 | `EC-K3-R17-RANK28-GENUS1-MIXED-TRACE-SPLITTING-H10000` | proved | [Bounded mixed-trace splitting search across 77 target-fitted R17 genus-one quartics](../elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md) |
 | `EC-K3-R17-RANK28-GENUS1-SIMULTANEOUS-SPLITTING-H10000` | proved | [Bounded simultaneous-splitting search for the eleven frozen R17 genus-one quartics](../elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md) |
 | `EC-K3-R17-RANK28-INTEGRAL-CHARACTER-GLUE` | proved | [Common rank-two integral character glue for the eleven fitted rank-28 lifts](../elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md) |
-| `EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION` | proved | [Complete deep-trace character exclusion for every rational intersection-one alternate-Q80 V4 base](../elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md) |
+| `EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION` | proved | [Complete regular-family deep-trace exclusion for rational intersection-one alternate-Q80 V4 targets](../elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md) |
+| `EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913` | proved | [All136 shared-ordinate cubic tangents from the published generic R17 basis force covering genus at least86](../elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md) |
 | `EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION` | proved | [R17 visibility-complexity baseline separates rigid and post-hoc mechanisms](../elkies-k3/R17_VISIBILITY_COMPLEXITY_2026-09-03.md) |
 | `EC-K3-H3-D13-MW17-LATTICE-CHAIN` | proved | [Exact lossless reverse Neron--Severi transport from pinned R17 to H3](../elkies-k3/RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md) |
 | `EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER` | partial | [Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices](../elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) |
@@ -280,11 +288,11 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Elkies rank-17 K3: named construction and comparison routes](../elkies-k3/CONSTRUCTION_ROUTES.md)
 - [Small-genus defect-graph dynamics — 2026-09-03](../elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md)
 - [Dissection of the `E6+A1` Picard-rank-19 K3 — 2026-09-02](../elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md)
-- [E6 MW3 direct attack](../elkies-k3/E6_MW3_ATTACK.md)
+- [E6 MW3 direct attack (historical)](../elkies-k3/E6_MW3_ATTACK.md)
 - [E6 MW3 progress — 2026-08-20](../elkies-k3/E6_MW3_PROGRESS_2026-08-20.md)
 - [Exact neighbor chain from the rank-17 frame to E6/MW3](../elkies-k3/E6_NEIGHBOR_CHAIN.md)
 - [Frozen four-elimination sliced E6 P1 sampler](../elkies-k3/E6_P1_SLICED.md)
-- [E6 P2 reduction and corrected GF(31) search state — 2026-08-20](../elkies-k3/E6_P2_REDUCTION_2026-08-20.md)
+- [E6 P2 reduction — historical GF(31) search state (2026-08-20)](../elkies-k3/E6_P2_REDUCTION_2026-08-20.md)
 - [Reduced E6 P1 construction](../elkies-k3/E6_REDUCED_P1.md)
 - [Universal all-`I3` family for the `E8+A2^3` frame](../elkies-k3/E8_A2_ALL_I3_FAMILY.md)
 - [Parity obstruction to the all-IV `E8 + A2^3` lift](../elkies-k3/E8_A2_KODAIRA_CORRECTION.md)
@@ -293,21 +301,21 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Exact elliptic-neighbour compiler](../elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md)
 - [Reusable exact elliptic-neighbour lattice engine](../elkies-k3/EXACT_NEIGHBOR_ENGINE.md)
 - [H3 preferred construction path](../elkies-k3/H3_PREFERRED_PATH.md)
-- [H3 q24 effective-cluster frontier — 2026-08-23](../elkies-k3/H3_Q24_EFFECTIVE_CLUSTER_2026-08-23.md)
-- [H3 q24 resolved-component frontier — 2026-08-23](../elkies-k3/H3_Q24_FRONTIER_2026-08-23.md)
+- [H3 q24 effective-cluster preflight — 2026-08-23](../elkies-k3/H3_Q24_EFFECTIVE_CLUSTER_2026-08-23.md)
+- [H3 q24 frontier — completed](../elkies-k3/H3_Q24_FRONTIER_2026-08-23.md)
 - [H3 q24 equation-D13 -> pinned R17 closeout](../elkies-k3/H3_Q24_R17_CLOSEOUT_2026-08-23.md)
 - [Historical H3 q=8 frontier and repair](../elkies-k3/H3_Q8_CURRENT_FRONTIER.md)
-- [H3 q=8 module-intersection ledger — 2026-08-22](../elkies-k3/H3_Q8_MODULE_INTERSECTION_2026-08-22.md)
-- [H3 q=8 module-intersection continuation — 2026-08-22](../elkies-k3/H3_Q8_MODULE_INTERSECTION_CONTINUATION_2026-08-22.md)
-- [ICARM curve 302 rank-31 handoff to the Elkies K3 programme](../elkies-k3/ICARM_CURVE302_RANK31_HANDOFF_2026-08-23.md)
+- [H3 q8 module ledger — historical](../elkies-k3/H3_Q8_MODULE_INTERSECTION_2026-08-22.md)
+- [H3 q8 module continuation — superseded](../elkies-k3/H3_Q8_MODULE_INTERSECTION_CONTINUATION_2026-08-22.md)
+- [Curve302 handoff: superseded](../elkies-k3/ICARM_CURVE302_RANK31_HANDOFF_2026-08-23.md)
 - [Effective rank-15 inverse-ADE backend](../elkies-k3/INVERSE_ADE_ADAPTIVE_BACKEND_2026-09-03.md)
 - [Target-free inverse ADE by projective birth strata](../elkies-k3/INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md)
 - [Inverse-ADE target-planner benchmark](../elkies-k3/INVERSE_ADE_TARGET_PLANNER_2026-09-03.md)
 - [Correct upstream backtrack for the rank-17 K3](../elkies-k3/KUMAR_E7E8_BACKTRACK.md)
-- [Empirical source ranking from equation-construction attempts](../elkies-k3/LATTICE_FOUNDRY_EMPIRICAL_SOURCE_RANKING_2026-09-02.md)
+- [Empirical source ranking — historical scoring snapshot (2026-09-02)](../elkies-k3/LATTICE_FOUNDRY_EMPIRICAL_SOURCE_RANKING_2026-09-02.md)
 - [Lattice foundry report — 2026-09-01](../elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md)
 - [Literature and novelty map for target-directed fibration hopping](../elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md)
-- [Lower-q fibration path search (2026-08-20)](../elkies-k3/LOWER_Q_FIBRATION_PATH_SEARCH_2026-08-20.md)
+- [Lower-q fibration path search (2026-08-20, historical)](../elkies-k3/LOWER_Q_FIBRATION_PATH_SEARCH_2026-08-20.md)
 - [Marked-`U` realization planner (2026-09-03)](../elkies-k3/MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
 - [An MW1 fibration on the discriminant-948 generic lattice (2026-08-21)](../elkies-k3/MW1_OPTIMAL_FIBRATION_PATH_2026-08-21.md)
 - [An exact MW2 fibration path (2026-08-21)](../elkies-k3/MW2_FIBRATION_PATH_2026-08-21.md)
@@ -316,10 +324,10 @@ These documents are not canonical sources of a registered claim. They include wo
 - [MW3 component-label enumeration](../elkies-k3/MW3_COMPONENT_LABELS.md)
 - [MW3 explicit-construction scaffold](../elkies-k3/MW3_CONSTRUCTION.md)
 - [MW3 local-Tate construction](../elkies-k3/MW3_LOCAL_TATE.md)
-- [NS0024 edge-1 compiler preparation — 2026-09-01](../elkies-k3/NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md)
-- [NS0024 MW4 modular recovery frontier — 2026-09-01](../elkies-k3/NS0024_MW4_MODULAR_RECOVERY_2026-09-01.md)
-- [NS0024 new rootless frame: equation/source route](../elkies-k3/NS0024_NEW_ROOTLESS_SOURCE_ROUTE_2026-09-03.md)
-- [Other rank-17 fibration: Gate B audit — 2026-08-31](../elkies-k3/OTHER_RANK17_GATE_B_AUDIT_2026-08-31.md)
+- [NS0024 edge-1 compiler preparation — historical geometric regression (2026-09-01)](../elkies-k3/NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md)
+- [NS0024 MW4 modular recovery — historical geometric frontier (2026-09-01)](../elkies-k3/NS0024_MW4_MODULAR_RECOVERY_2026-09-01.md)
+- [NS0024 new rootless frame — historical geometric route (2026-09-03)](../elkies-k3/NS0024_NEW_ROOTLESS_SOURCE_ROUTE_2026-09-03.md)
+- [Other rank-17 fibration: historical Gate-B audit (2026-08-31)](../elkies-k3/OTHER_RANK17_GATE_B_AUDIT_2026-08-31.md)
 - [Optimal MW1 path on the discriminant-43 K3 (2026-08-21)](../elkies-k3/PICARD20_MW1_OPTIMAL_PATH_2026-08-21.md)
 - [Picard-rank-20 extension of the reconstructed K3 (2026-08-21)](../elkies-k3/PICARD20_NS_EXTENSION_2026-08-21.md)
 - [Exact Picard-20 q=8 chord fibration (2026-08-21)](../elkies-k3/PICARD20_Q8_CHORD_2026-08-21.md)
@@ -328,9 +336,9 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Q80 CM24 equation ledger — 2026-08-22 evening](../elkies-k3/Q80_CM24_EQUATION_LEDGER_2026-08-22.md)
 - [Q80 final q6 characteristic-zero closeout — 2026-08-23](../elkies-k3/Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md)
 - [Q80 low-q suffix provenance and backtracking map — 2026-08-23](../elkies-k3/Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md)
-- [Q80 low-q alternate corridor — 2026-08-22](../elkies-k3/Q80_LOW_Q_ALTERNATE_2026-08-22.md)
+- [Q80 low-q alternate corridor — 2026-08-22 (historical)](../elkies-k3/Q80_LOW_Q_ALTERNATE_2026-08-22.md)
 - [Q80 third-q12 exact-lift checkpoint](../elkies-k3/Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md)
-- [Exact q80 to rootless MW17 path](../elkies-k3/Q80_TO_ROOTLESS_PATH_2026-08-21.md)
+- [Historical generic q80-to-rootless MW17 path](../elkies-k3/Q80_TO_ROOTLESS_PATH_2026-08-21.md)
 - [Quadratic-twist rank census for the complete bisection batch](../elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md)
 - [Marked-`U` carrier-receptivity profile](../elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md)
 - [Exceptional specialization relations on the rank-25--28 R17 fibres](../elkies-k3/R17_EXCEPTIONAL_SPECIALIZATION_RELATIONS_2026-09-02.md)
@@ -344,9 +352,9 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Ignition-first rank-growth search](../elkies-k3/RANK_GROWTH_SEARCH.md)
 - [Rational-surface base changes behind the repeated-fibre sources](../elkies-k3/RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md)
 - [Elliptic K3 constructions and high-rank research](../elkies-k3/README.md)
-- [Elkies rank-17 K3 reconstruction progress](../elkies-k3/RECONSTRUCTION_PROGRESS.md)
-- [Elkies rank-17 K3 reconstruction — research update (2026-08-20)](../elkies-k3/RESEARCH_UPDATE_2026-08-20.md)
-- [Research update — 2026-08-22](../elkies-k3/RESEARCH_UPDATE_2026-08-22.md)
+- [Rank17 K3 reconstruction — completed](../elkies-k3/RECONSTRUCTION_PROGRESS.md)
+- [Elkies rank-17 K3 reconstruction — research update (2026-08-20, historical)](../elkies-k3/RESEARCH_UPDATE_2026-08-20.md)
+- [Research update — 2026-08-22 (historical)](../elkies-k3/RESEARCH_UPDATE_2026-08-22.md)
 - [Elkies K3 script route and failure ledger](../elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md)
 - [Section-first normal forms for MW1 and MW2 searches — 2026-09-02](../elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md)
 - [Exact profile audit of the semistable MW2 endpoints (2026-08-21)](../elkies-k3/SEMISTABLE_MW2_PROFILE_AUDIT_2026-08-21.md)

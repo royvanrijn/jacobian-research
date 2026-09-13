@@ -1,0 +1,39 @@
+{
+  "canonical_source": {
+    "path": "elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md",
+    "sha256": "682d3ee91d18cf7b7add26bdf0e2621b49da2fa3bfab1460a01a70a67dc250c3"
+  },
+  "completion_boundary": "This is a complete carrier-layer exclusion, not a construction satisfying the user objective. Two independent Mestre directions remain available only on a genus21 base. No qualifying infinite rational base with two new directions has been supplied.",
+  "date": "2026-09-13",
+  "goal_complete": false,
+  "goal_status": "active",
+  "new_evidence": "The complete63917 direct11952 alternate-Q80 minimum-norm8/pole-order-zero genus-one pencils have pairwise disjoint rational projective branch images, and each pencil is injective. All2042659486 pairs are excluded; the independent replay checks125093 trace frames and65418602 projective parameters.",
+  "next_geometry_gate": {
+    "arithmetic_requirement": "A shared rational projective branch point still requires the actual constant squareclass, exact section maps, independence modulo inherited MW17 and a positive-rank or rational covering base.",
+    "inverse_neighbor_control": "The retained direct11952 certificate has genus_one_model.q_coefficients_in_t_low_to_high and a distinguished point from the old zero. Reversing the two fibration roles is a possible exact control for the higher-intersection branch map. No reverse-map calculation has been run in this turn.",
+    "question": "Do the retained49 minimum-norm12 classes supply full genus-one pencils with a moving intersection with zero, beyond their fixed regular-slope constructions?",
+    "retained_sources_present": [
+      "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-tate-parity-v1.json",
+      "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-deep-trace-inversion-v1.json",
+      "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
+    ],
+    "source_boundary": "The old deep inversion uses M=M0+lambda*h^2 with degree(h)=4, generally producing degree8 branch polynomials; lambda=0 is its fixed regular genus-one control. Its selected17 product targets have independent rank-zero closures and must not be reopened as unresolved.",
+    "unproved_lead": "For a primitive nef isotropic class D with D.F=2 and D.O=1, the intersection with O parametrizes its elliptic pencil. Moving the base chart t=c+1/z before constructing the regular norm12 member may expose that full pencil. Derive and verify its divisor class, branch map and parameter transport before computation; this has not been carried out."
+  },
+  "previous_turn_classification": "progress",
+  "running_research_workers": [],
+  "schema": "q80-complete-pencils-continuation-audit-v1",
+  "scope_fingerprints": {
+    "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913": "c6033dabb5720a9e",
+    "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "48bb92d050afd768"
+  },
+  "verification": {
+    "check_navigation": "PASS",
+    "git_diff_check": "PASS",
+    "independent_replay": "PASS",
+    "navigation_metadata_tests": 107,
+    "regressions": 8,
+    "render_navigation": "PASS",
+    "source_and246_checkpoint_hashes": "PASS"
+  }
+}

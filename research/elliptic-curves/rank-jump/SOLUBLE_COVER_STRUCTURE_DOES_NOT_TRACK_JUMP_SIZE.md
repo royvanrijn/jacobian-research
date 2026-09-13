@@ -177,12 +177,12 @@ scheme over the parameter line. The earlier two successful relation examples
 were selected retrospectively. Their component counts cannot be copied into
 unrelated fibres or counted as a common pre-point feature.
 
-## Revised mechanism ranking and next experiment
+## Revised mechanism ranking and retired discriminator
 
-1. **Global rational relation or auxiliary-point synchronization remains the
-   strongest open mechanism.** It must predict that a rational product or
-   relation point reaches the zero affine class. Neither the present complete
-   local span nor a large Jacobian/Selmer group supplies this implication.
+1. **Global rational relation or auxiliary-point synchronization remains a
+   mathematical unknown.** The mechanism route is parked: neither the present
+   complete local span nor a large Jacobian/Selmer group supplies the missing
+   implication or authorizes further construction work.
 2. **Native cover splitting explains subblocks**, sometimes substantial ones,
    but the full published atlas misses most known directions on the +10/+11
    controls. Its number of split covers does not explain the ranking of gains.
@@ -191,15 +191,13 @@ unrelated fibres or counted as a common pre-point feature.
    more covers than the largest published-R17 controls. Carrier genus and
    simple triple/fourth counts add no independent evidence beyond n.
 
-The next discriminating experiment should fix a **family-wide finite
-relation dictionary using generic lattice data**, then count rational
-components and surviving fourth lifts across the same high/low panel.
-Selection must precede access to which components contain the high points.
-The degree bound and trace-word roster must be explicit; an unbounded count
-of “all low-degree relations” is not a defined feature. Coverage expansion
-for 11952 and a valid A1/MW16 dictionary are also needed before this negative
-result can be extended to the new MW16 +10/+11 and historic +12…+14 fibres.
-No candidate selector, worker limit, point budget, or rank status is changed.
+The formerly proposed family-wide relation discriminator is not an active
+experiment. It needs a new mathematical reason, a point-blind finite generic
+relation dictionary, an explicit degree and trace-word roster, complete
+coverage, and a separately authorized bounded protocol before reopening. The
+[parked mechanism record](../../knowledge/work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910)
+retains that decision. No candidate selector, worker limit, point budget, or
+rank status is changed.
 
 ## Replay
 

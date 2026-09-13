@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "finding": "Literal stable discriminant-kernel reflection is projectively represented by a determinant37 matrix, outside the asserted rational norm-one group. This corrects the implication, not a construction of a rational NS0031 surface.",
+  "before_files": {
+    "CLEANUP_REPORT_2026-09-12.md": {
+      "sha256": "ba8b9008684597d463a1093de725eaf4da29cd9f93752250f06d4d65b6a5e6ec",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/CLEANUP_REPORT_2026-09-12.md.txt"
+    },
+    "MATH_STATUS.json": {
+      "sha256": "dd21c4061ddc2a270468ee631964cbf4eea6a0fe7d289603c004aa86b42d50ba",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/MATH_STATUS.json.txt"
+    },
+    "README.md": {
+      "sha256": "3641ba3a9a0188b5b5b977182a2b6c16cb0824de2881fe66408b1dfd7ca8df4f",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/README.md.txt"
+    },
+    "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json": {
+      "sha256": "dfc27c0a37436c0066dae9f664ecd973eec6a1d0a1f4609a9dcb1a488bc7bee0",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-arithmetic-first-marked-t-foundry-v1.json.txt"
+    },
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": {
+      "sha256": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank19-arithmetic-marking-classifier-v1.json.txt"
+    },
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json": {
+      "sha256": "4301534a61c0828b308c9f0b6a9d1482f13095fb7800026357379ce0056d373d",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json.txt"
+    },
+    "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json": {
+      "sha256": "e87d5c67331845d50c6964744192b46bddbdb1c60786dd2b1d4757df53b420e9",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank7-determinant-aware-ranking-v1.json.txt"
+    },
+    "elkies-k3/AGENTS.md": {
+      "sha256": "1cd0f210687bdb09b18286054d11abac7cbee267bb801ce375ad44f59aaf1ef2",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__AGENTS.md.txt"
+    },
+    "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md": {
+      "sha256": "8f51ab35b88a83c219a2619da7f7ccf7082b7ba428204d3e9af4844bda68808d",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md.txt"
+    },
+    "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md": {
+      "sha256": "b2011d9bd50607fa4a1442c92da0c80f5a6f890aaf0293cd2586fa87a2573be7",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md.txt"
+    },
+    "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": {
+      "sha256": "fc46b84437bdf8986e9e886fa3bf527d4a1043791bac12866f11f6632b9fbde1",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md.txt"
+    },
+    "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md": {
+      "sha256": "d2fedaafcb7d3e70e4813e5c9c89bd0170e71ea97bf646215eb293a678e5e72f",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__ELKIES_K3_PROCESS_ATLAS.md.txt"
+    },
+    "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md": {
+      "sha256": "f2d62a222e0eae622c7e0296225b74e9c9935b0f22ed55b2b70bface78161c2b",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md.txt"
+    },
+    "elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md": {
+      "sha256": "d06db3ad50e4d235604972d527d94471945cfea499317f75cc28b04c03c0cd4f",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__LATTICE_FOUNDRY_REPORT_2026-09-01.md.txt"
+    },
+    "elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md": {
+      "sha256": "505023351cdaba5b4924f724c956dca882419efdcfe9c6dfdfb7b04bc605c27f",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md.txt"
+    },
+    "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": {
+      "sha256": "b03a49d9daf2ed1ba5615a3858cdd9975f1d7124da092cc9f017105b5d6c2b0d",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md.txt"
+    },
+    "elkies-k3/NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md": {
+      "sha256": "bf9c73d30b14ea02efc9ce1091b7a0b2bc85cc6af8f87ad3bf14dbe6d2bdf0ee",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md.txt"
+    },
+    "elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md": {
+      "sha256": "b019e726275a02f3fc38e4f3dea7fd43a32faa5db3963cdf983e9b17bd1e51a8",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md.txt"
+    },
+    "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md": {
+      "sha256": "ed7e28bd74bdd52165cc25ea74b686793f0be88f15ae022b73d43ac5014569f8",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md.txt"
+    },
+    "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": {
+      "sha256": "e6196934847acd91ade119712a10576d94cb65189a616db0cb8653b85a726918",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md.txt"
+    },
+    "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md": {
+      "sha256": "34b3871abb59fd58f546da0d0cb5d5c071c4c7e4d34c7bae47cfd9fac392f9b6",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md.txt"
+    },
+    "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md": {
+      "sha256": "8597ab4d43d472cca758373ca07df8ba1d69b3003c01d79f9934f5e333897ea3",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__RANK_MUTATION_AND_LIFT_THEOREMS.md.txt"
+    },
+    "elkies-k3/RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md": {
+      "sha256": "d8b796ababc52261618845711003ca997d4da929ab94f2f931cd3171b5e0ecfc",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md.txt"
+    },
+    "elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md": {
+      "sha256": "d98a7881e91539fdd63acfecee9583834b931021e18b172aef5e8f4baa86ec85",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md.txt"
+    },
+    "elkies-k3/README.md": {
+      "sha256": "d449e91f316457926851af4f4ffa494def2bf3c862a6f276ac3ac9290d50ef45",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__README.md.txt"
+    },
+    "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md": {
+      "sha256": "f496e04ac1fe8b38f6993679913a29a72cc1db7253bcd7b2f9981ccc6e159496",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__SAME_NS_COMPILER_ROUTES_2026-09-02.md.txt"
+    },
+    "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md": {
+      "sha256": "f28881935c2d02e2f712411187804001837cc4f82da82d3150cffe69d7033449",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__SCRIPT_ROUTE_AND_FAILURE_LEDGER.md.txt"
+    },
+    "elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md": {
+      "sha256": "bf1dbf2b0b1ecf98a21534b94afc923ddaf987809e7936be9c74e1b72ff61e93",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md.txt"
+    },
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": {
+      "sha256": "5105da036d6fa44e966173e7903e072999db804010c20e0296f5d38bfc06ddf1",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__data__arithmetic__rank19-arithmetic-marking-decisions-v1.json.txt"
+    },
+    "elkies-k3/scripts/README.md": {
+      "sha256": "c4f9e3a639f78ddf2816fc4ebdd9b0b4c72d294c59a4f9e323a23ef8d3fb9a51",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__README.md.txt"
+    },
+    "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py": {
+      "sha256": "a0b6187ebc51ad58e2ae49fd21a1976133c55440dc8882df1e497bcd1c5987fe",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_arithmetic_first_marked_t_foundry.py.txt"
+    },
+    "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage": {
+      "sha256": "bca1bf8568d591e5072e8ae3e3c9b15b04b68e1e47ad59847c1b8d4bb20003e6",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_rank19_arithmetic_marking_classifier.sage.txt"
+    },
+    "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py": {
+      "sha256": "55955d6b4e332fdae5d3ac2e6521b6662ca5f0ac59df2338130e24954658e73a",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_rank7_determinant_aware_ranking.py.txt"
+    },
+    "knowledge/legacy_work_review.json": {
+      "sha256": "210b9d33437eadd9743b66ffd5373aac16f1dc56dde2312dfdcc023043629a46",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/knowledge__legacy_work_review.json.txt"
+    },
+    "knowledge/lessons.json": {
+      "sha256": "9504cdf002391263057a01d4b5156cdd600c6da05eb8a81294ee9662ac059648",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/knowledge__lessons.json.txt"
+    },
+    "knowledge/partial_reviews.json": {
+      "sha256": "87a637fca8ff42d72be832a7256be6e507b6b68569384af784d6bd9e4e5df4d1",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/knowledge__partial_reviews.json.txt"
+    },
+    "knowledge/work_items.json": {
+      "sha256": "21cf176686af81c79d57e30ecd2d7ff55ee2815b22b5a16fa9813179f2a63cf2",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/knowledge__work_items.json.txt"
+    },
+    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": {
+      "sha256": "965030c3254c8731f6f5941346cc52b626653e65d08d81bc9fa156aaffcaa5fc",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__data__lattice-foundry__determinant-aware-ranking-evidence-v1.json.txt"
+    },
+    "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md": {
+      "sha256": "d1dbaa2ea642be48cf13ee7a0a354f12e493025a505506b491d096bdc169e700",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md.txt"
+    },
+    "artifacts/generated-results/README.md": {
+      "sha256": "1bf0e1d84e6c0a691602f8bdfa427e6a202101915c4e27d1c8f921dc49ba1332",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__README.md.txt"
+    },
+    "REPRODUCE.md": {
+      "sha256": "387c59bda88b0a8b6f870174a8f407d952cd8839ff3ebc28f4a5734df6512592",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REPRODUCE.md.txt"
+    },
+    "RESEARCH_TIMELINE.md": {
+      "sha256": "626fdb0244de17eb6d30b53095f59e7fdffb23f60e965d2ff95903daeef16de0",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/RESEARCH_TIMELINE.md.txt"
+    },
+    "Makefile": {
+      "sha256": "f5362ab5bd725e46d11590e0533e9b5a2180487f8114f4e00b509fa00212e1b2",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/Makefile.txt"
+    },
+    "elkies-k3/data/process/elkies_k3_process_ledger.json": {
+      "sha256": "e46b562915dffd74f30e743ecdabaf59b502f0656468f0c92ad212288fe12e80",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__data__process__elkies_k3_process_ledger.json.txt"
+    }
+  },
+  "sources_reviewed": [
+    {
+      "url": "https://arxiv.org/pdf/alg-geom/9502005v2",
+      "title": "Dolgachev, Mirror symmetry for lattice polarized K3 surfaces",
+      "version": "v2, 7 January 1996",
+      "location": "Section3, Proposition3.3 and following period quotient; Theorem7.1",
+      "relevance": "The group fixing the polarizing lattice is the full discriminant kernel in O(T)."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2510.11477v1",
+      "title": "Bragg, Brakkee and Varilly-Alvarado, Moduli of lattice-polarized K3 surfaces and boundedness of Brauer groups",
+      "version": "v1, 13 October 2025",
+      "location": "Theorem5.6 and Section6.3",
+      "relevance": "Complex primitive lattice-polarized moduli use the discriminant-kernel orthogonal group; real Spin identification does not identify the rational integral unit subgroup."
+    },
+    {
+      "url": "https://arxiv.org/pdf/0802.1301v1",
+      "title": "Elkies, Shimura curve computations via K3 surfaces of Neron-Severi rank at least19",
+      "version": "v1, 10 February 2008",
+      "location": "Section2, pp3-7",
+      "relevance": "Distinguishes norm-one units, normalizers, Fricke quotients and arithmetic twists."
+    },
+    {
+      "url": "https://www.numdam.org/article/MSMF_1974__37__169_0.pdf",
+      "title": "Velu, Les points rationnels de X_0(37)",
+      "version": "1974, Memoire37",
+      "location": "Theorem7 and following models, pp175-176",
+      "relevance": "The two noncuspidal rational points support the retained norm-one modular obstruction; the theorem does not identify the K3 period quotient."
+    }
+  ],
+  "corrected_prose_files": [
+    "REPRODUCE.md",
+    "RESEARCH_TIMELINE.md",
+    "artifacts/generated-results/README.md",
+    "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
+    "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
+    "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+    "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+    "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md",
+    "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
+    "elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md",
+    "elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md",
+    "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+    "elkies-k3/NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md",
+    "elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+    "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+    "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+    "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+    "elkies-k3/README.md",
+    "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md",
+    "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md",
+    "elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md"
+  ],
+  "affected_claims": {
+    "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": {
+      "before_state": "proved",
+      "after_state": "partial",
+      "before_entry_sha256": "53775db840b74998344699d359a92bf5ecb3791fed7c9c380b28e8bc361236ec",
+      "after_entry_sha256": "dcb6cb1124283db0104405b6f985f3e2f91630237f5ec4f524e36e4b1fc100fb"
+    },
+    "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": {
+      "before_state": null,
+      "after_state": "proved",
+      "before_entry_sha256": null,
+      "after_entry_sha256": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+    },
+    "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER": {
+      "before_state": "partial",
+      "after_state": "partial",
+      "before_entry_sha256": "d391d0cad3f1977474fbfd219723cf56a2c0ff00db51cac4b0683e21fee1f33d",
+      "after_entry_sha256": "f7c8c797175b184fcb404f79027e1ea4d80fbbfd27c818aa7b5c1df83aa8077a"
+    },
+    "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK": {
+      "before_state": "partial",
+      "after_state": "partial",
+      "before_entry_sha256": "5d118ddb3b090321363bf8c016a84477bdcf6ffae5469d70534e869541df7245",
+      "after_entry_sha256": "cbdb8fc31e6a72245508a47f38c4be8ba99293663491a3d6dbba8b53a7c3a780"
+    },
+    "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": {
+      "before_state": "partial",
+      "after_state": "partial",
+      "before_entry_sha256": "70c635844789157b1e766728367f0b79cdc5c61703ff9e6308bfbd294831c34d",
+      "after_entry_sha256": "50f925d3d5bb46eb97bb1940bf27b2894fd64e0548e3f3afc9da316719f33d43"
+    },
+    "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": {
+      "before_state": "open",
+      "after_state": "open",
+      "before_entry_sha256": "73dcd5f4658ee216958cc3d0364fefaf7dffe6ad79f1f7afe6b453f1fa94a3d6",
+      "after_entry_sha256": "6b0cf4fedda82afa76eac688c63bb9aef25a9e414d1cb769c0a46db5b3e87753"
+    }
+  },
+  "current_evidence_sha256": {
+    "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+    "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+    "tests/test_research_ns0031_period_group.py": "39861a86b77ab5ce5ab767e855ad6a67adf6e0de2dee648b8d0fa84521a7bf6e",
+    "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+    "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py": "ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
+    "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage": "c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+    "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae",
+    "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json": "f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e",
+    "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+    "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd",
+    "elkies-k3/data/process/elkies_k3_process_ledger.json": "f8abf67e51d9b342d6c6bacd3bf827547c1c0227a9471a46a8ae56d5628cd35d",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json": "0379500e30c3ac3dbc95528c94a3542dcc05eb81d1c4ad7ecb255d17090dfca8",
+    "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json": "5bc656c990804d16d66db69187b24aaced93ee25b07665cf9b5fc446c89b7be9",
+    "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json": "371dba10dfb40a1812baf7d79d0e1470e6edd2d67b46b75ad06a646481f0b965"
+  },
+  "proof_boundary": {
+    "proved": "The literal stable -2 reflection has projective spin determinant37, which cannot be rescaled to determinant1 over QQ. This refutes the original norm-one containment.",
+    "retained": "Exact Clifford order, index304, genus23 and two prime19 Cartan lift exclusions; original arithmetic producer and certificate unchanged.",
+    "unknown": "Full stable projective period group, its QQ descent, and existence of a rational non-CM NS0031 marking. No rational K3 is constructed.",
+    "assurance_flags": "No independent_replay, formal_verification or external_review flag was raised."
+  },
+  "bounded_checks": [
+    {
+      "command": "python3 elkies-k3/scripts/verify_ns0031_period_group.py",
+      "result": "PASS NS0031 stable reflection outside rational norm-one image; rational K3 existence remains UNKNOWN."
+    },
+    {
+      "command": "python3 -m unittest discover -s tests -p 'test_research_ns0031_period_group.py' -q",
+      "result": "12 tests passed: literal proof, six corruption controls, four propagation boundaries and byte-preserved before evidence."
+    },
+    {
+      "command": "timeout 45s /home/royvanrijn/.local/bin/sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "result": "PASS 66 candidates: 1 possible, 4 excluded, 61 UNKNOWN, zero new equation survivors.",
+      "mode": "Retained small lattice-invariant and assertion reassembly; repeated once after preserving the known coarse genus23 diagnostic. No lattice enumeration or source search."
+    },
+    {
+      "command": "python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
+      "result": "PASS 827 catalogue rows,66 theoretical survivors,62 candidates; existing948 control only in expensive queue."
+    },
+    {
+      "command": "python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "result": "PASS 827 T rows,5 retained exclusions,1 control,821 research rows,21 coarse-genus<=2 diagnostics; zero new handoff. NS0031 UNKNOWN, point existence null, coarse genus23 preserved."
+    },
+    {
+      "command": "make check",
+      "result": "Passed after the core correction:91 maintenance tests,79/79 active partial reviews,12/12 checker-absence reviews, status, links,85 original snapshots,2319 unchanged archived files,901 archived states and871 frozen replay blocks. Final navigation is regenerated again after report/checklist reconciliation."
+    }
+  ],
+  "history_policy": "Before snapshots are immutable. Original NS0031 producer/status labels and the earlier NS0031_REPLAY_REVIEW.json remain historical. Process events retain their original bytes; three reusable mechanisms and active prose now state the corrected group/marking boundary. Full repository counts may also change through separate concurrent research.",
+  "snapshot_verification": {
+    "files": 44,
+    "all_preserved_sha256_match": true
+  }
+}

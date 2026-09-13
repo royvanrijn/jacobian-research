@@ -1,7 +1,7 @@
 # Marked-`U` carrier-receptivity profile
 
 Date: 2026-09-04  
-Status: exact profile on 34 transported curve/chart cells; untransported coordinates remain `UNKNOWN`
+Status: frozen profile on 34 transported curve/chart cells, with the later seventeen-product closure noted below; untransported coordinates remain `UNKNOWN`
 
 ## Purpose
 
@@ -34,7 +34,7 @@ the canonical `norm12-orbit-*` marked-`U` labels.
 | marked `U` | curve: displayed quotient rank | rigid transfer rank | fitted norm-eight off-diagonal audit | low-genus base audit | marked minimum/Tate data | equation rank / support / input bits |
 |---|---|---|---|---|---|---|
 | `074d9` | `351:8, 356:12, 376:5, 377:6, 385:12` | `351:6, 356:2, 376:5, 377:5, 385:2` | 96 direction tests, all eight off-diagonal ranks `0` | complete rigid cross-fibre atlas | exact marked norm-eight/norm-ten counts only; Tate quotient `UNKNOWN` | `1 / 7 / 2544` |
-| `11952` | `12:12, 395:11` | `12:0, 395:2` | 23 direction tests, both off-diagonal ranks `0` | exact bounded 1,143-class laboratory | complete marked minimum histogram; conditional zero-Tate-class exclusion on 17 product characters; quotient otherwise `UNKNOWN` | `11 / 9 / 3482` |
+| `11952` | `12:12, 395:11` | `12:0, 395:2` | 23 direction tests, both off-diagonal ranks `0` | exact bounded 1,143-class laboratory | complete marked minimum histogram; later closure gives `A-=Gamma_d=H_d=0` on the 17 selected products; other quotients `UNKNOWN` | `11 / 9 / 3482` |
 | `08f72` | `363:10, 364:11, 378:7` | `363:2, 364:1, 378:6` | 56 direction tests, all six off-diagonal ranks `0` | `UNKNOWN` | exact marked norm-eight/norm-ten counts only; Tate quotient `UNKNOWN` | `15 / 10 / 3468` |
 | `103b2` | `393:9, 404:10` | `393:2, 404:1` | `UNKNOWN` | complete native rigid-cover atlas | complete marked minimum histogram; Tate quotient `UNKNOWN` | `30 / 14 / 4687` |
 
@@ -48,7 +48,9 @@ coordinates have marked data on `12/43` charts for complete rigid transfer
 ranks, `3/43` for fitted off-diagonal norm-eight ranks, `12/43` for at least
 one exact branch-character/incidence layer, `3/43` for low-genus base ranks,
 `12/43` for at least one marked minimum-class row, and `43/43` for equation
-complexity.  No chart has a complete Tate quotient.  The fifteen exact
+complexity. These coverage counts describe the frozen profile; the later
+closure computes complete Tate quotients for seventeen selected `11952`
+products, not for every product on that chart. The fifteen exact
 quotient-labelled curves occur in 112 curve/chart parameter matches across
 all 43 charts; 34 of those cells on fourteen charts now have saturated
 quotient transports, and 31 cells on twelve charts have complete fixed-cover
@@ -174,3 +176,6 @@ compiled.
 
 This profile is a middle-layer audit.  It changes no theorem status in
 `MATH_STATUS.json` and makes no inference from bounded search counts.
+The [earlier note](../archive/elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.before-2026-09-13.md.txt)
+and frozen JSON/TSV retain the pre-closure profile; use the linked rank-zero
+proofs for those seventeen products.

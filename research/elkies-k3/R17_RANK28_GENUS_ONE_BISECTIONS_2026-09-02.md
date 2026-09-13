@@ -248,10 +248,10 @@ independence are vacuous at this gate rather than silently assumed.
 
 ## Mixed-trace gate
 
-The next experiment replaces the single trace by the seven
-equation-cheapest distinct finite-pole norm-eight traces.  Each trace is fitted
+The completed mixed-trace expansion replaced the single trace by the seven
+equation-cheapest distinct finite-pole norm-eight traces. Each trace was fitted
 through all eleven targets, producing `77` exactly verified irreducible
-squarefree quartics.  A second complete scan of the same `121,589,943`
+squarefree quartics. A second complete scan of the same `121,589,943`
 primitive parameters keeps a candidate only while square conditions from at
 least two distinct trace pencils survive.
 
@@ -262,27 +262,24 @@ different selected traces.  This rules out a small mixed-trace collision in
 the declared box; it does not cover the remaining 63,918 norm-eight trace
 classes.
 
-## Interpretation and next gate
+## Interpretation and retired smooth-pencil expansion
 
 This supplies the requested first mechanism template, but not a rank-32
-specialization.  The eleven values of `lambda` were solved backward from the
+specialization. The eleven values of `lambda` were solved backward from the
 already known `Q_i`; that step explains the positive control and does not
-discover an unknown point.  The first non-tautological simultaneous-splitting
-experiment and the first seven-trace expansion have now been run and are
-negative in their declared regions.  A useful next expansion should change the
-arithmetic source of rational points instead of merely enlarging the compact
-box: certify additional independent generators on the pointed quartic
-Jacobians, move to the norm-twelve reciprocal chart, or begin the proposed
-barcode-targeted trisection fallback.  Any new simultaneous hit must still
-pass exact specialization and quotient independence before promotion.
+discover an unknown point. The first non-tautological simultaneous-splitting
+experiment and the first seven-trace expansion are negative in their declared
+regions.
 
-Alongside that arithmetic expansion, the equation experiment should be
-extended in two controlled directions:
-
-1. run a short prefix of distinct norm-eight trace classes and group them by
-   finite/infinite pole pattern and coefficient complexity;
-2. include the 43 norm-twelve deep genus-one classes using the reciprocal
-   chart where necessary.
+The proposed smooth-pencil expansions are superseded by the later complete
+smooth genus-one exclusions. The remaining correlated-gain route requires a
+singular bisection image of arithmetic genus at least two, or a different
+low-degree quadratic-cover identity, with its full divisor and normalization
+data before any bounded comparison; see the
+[correlated-quadratic-gains work gate](../knowledge/work/elkies-k3.md#work-k3-correlated-quadratic-gains).
+This pilot does not schedule another trace-pencils campaign. Any future
+simultaneous hit must still pass exact specialization and quotient independence
+before promotion.
 
 A rank-32 claim would still require at least fifteen independent directions
 beyond the generic rank seventeen at one rational specialization, exact point

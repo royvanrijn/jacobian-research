@@ -1,0 +1,21 @@
+{
+  "additional_excluded_pairs": [
+    [
+      27,
+      3
+    ]
+  ],
+  "continuation_input_sha256": "44c2a135573f6da264def16be103572bfa279d9443cc7918c7319e2fe8c616c9",
+  "cpu_seconds": 0.12392639700000008,
+  "records": [
+    {
+      "prime": 127,
+      "source_base_points": 0,
+      "source_parameters": 16257,
+      "source_parameters_meeting_target": 0,
+      "status": "EXCLUDED"
+    }
+  ],
+  "remaining_pairs": [],
+  "schema": "r17-one-node-pair-continuation-result-v1"
+}

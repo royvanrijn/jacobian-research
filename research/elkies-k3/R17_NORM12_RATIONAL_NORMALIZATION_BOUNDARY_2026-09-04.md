@@ -76,6 +76,30 @@ and
 The exact command lines and input hashes are stored in every shard and merged
 certificate.
 
+## Replay inputs and remaining independent check — 12 September 2026
+
+The cleanup review checked all 127,842 trace records across the 141 committed
+shards and matched every shard and priority-table hash. Both recorded merger
+commands passed with `--check`. The merger verifies unique class attachment,
+complete interval coverage, counts and the recorded even-part degree identity.
+It trusts the producer's factorization, irreducibility and root-count outcomes.
+
+None of those trace records retains the pencil/discriminant polynomial
+coefficients. The factorization rows retain factor degrees and multiplicities;
+the modular rows retain primes, degrees and root counts. Those summaries cannot
+independently replay the underlying polynomial calculations. The
+[review receipt](../archive/repository-cleanup-2026-09-12/CHARACTER_NORMALIZATION_REPLAY_REVIEW.json)
+records every observed field and the exact merger inputs.
+
+A portable independent replay still needs trace/chord data bound to each
+fixed-frame word and model, the discriminant with its odd/even decomposition,
+the distinct known split members, and checkable root or irreducibility witnesses.
+The full-degree and even-part identities are essential: taking only the
+polynomial squareclass could hide an even-multiplicity nonsplit singular member.
+Existing producers reconstruct traces and enumerate norm-eight vectors before
+processing a prefix; they must not be launched as a cheap input-repair step.
+The recorded theorem and its false independent-replay flag are unchanged.
+
 ## Two-node genus-two normalization screen
 
 The norm-six trace shells contain 26,645 classes on alternate Q80 and 26,672

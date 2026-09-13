@@ -132,7 +132,7 @@ there was no arithmetic rerun. Source review, launcher and report CPU are
 outside that timing. Every mathematical stage has a protocol, time/memory
 limits and retained output under the corresponding local `mestre-*` directory.
 
-## Consequence for the next search
+## Consequence for any separately scoped search
 
 On these explicit parents with certified full NS data, a visible-component
 upper bound is insufficient admission evidence for a desired generic rank.

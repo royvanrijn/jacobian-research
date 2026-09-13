@@ -1,0 +1,59 @@
+{
+  "canonical_source": {
+    "path": "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md",
+    "sha256": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b"
+  },
+  "completed_prime_stages": {
+    "521": {
+      "cross_pairs_remaining": 40,
+      "internal_pairs_remaining": 0
+    },
+    "523": {
+      "cross_pairs_remaining": 0,
+      "internal_pairs_remaining": 0
+    }
+  },
+  "completion_boundary": "No shared quadratic cover has two new independent directions and an infinite rational covering base. The Mestre pair remains on genus21. A genus-one-base solution on this Q80 parent must use at least one singular image of arithmetic genus at least2. The persistent user goal is not complete.",
+  "date": "2026-09-13",
+  "goal_complete": false,
+  "goal_status": "active",
+  "new_evidence": "The full49 norm12 moving-contact pencils extend the previous63917 norm8 theorem to all63966 smooth genus-one bisection pencils on direct11952 alternate Q80 modulo inherited section translation. All2045792595 pairs and all within-pencil collisions are excluded. The new comparison replays33436888 images and independently verifies98 norm12 frames plus one norm8 supplement.",
+  "next_geometry_gate": {
+    "candidate_lattice_layers": "For arithmetic genus2, D=(n,2,w) has w^2=4n-2. The inherited parity census has26645 minimum6 and39147 minimum10 classes. The norm6 class has D=O+tau+F and D.O=0; the norm10 class has D=O+tau and D.O=1. The full norm10 family may need moving contact, so a regular-slope net must not be assumed complete.",
+    "halving_curve_geometry_to_prove": "The quartic H has classical invariants I=-48*A and J=-1728*B, using Y^2=X^3+A*X+B. Determine its normalization and ramification, including trace poles. A connected degree4 halving cover with one transposition over each of the24 I1 fibres would have genus9; this has not been certified for a new carrier family in this turn.",
+    "halving_lead": "An ordinary rational node at a smooth old fibre t=r identifies the two conjugate lifts at Q, so2Q=tau(r). Its slope mu satisfies H(mu,r)=0 where H(m,t)=m^4-6*X(t)*m^2-8*Y(t)*m-3*X(t)^2-4*A(t). This gives a route through the halving curve [2]^{-1}(tau) rather than brute-force affine plane parameters.",
+    "independence_lead_to_prove": "For an image C of arithmetic genus p_a, D.O=n-2 and trace height4n-2p_a+2 suggest twist height2p_a+6 under the unramified irreducible-fibre hypotheses. A smooth genus-one image gives height8 and an arithmetic-genus-two image gives height10. Their ratio5/4 is not a rational square, which would force independence if they share the actual twist. Derive the height identity with all local contributions before using it.",
+    "norm6_local_formula_to_verify": "For m(t)=f(t)+(a+b*t)*h(t), f=M0/h, a regular halving slope mu at r has k=(mu-f(r))/h(r), target_derivative=-H_t(mu,r)/H_m(mu,r), b=(target_derivative-fprime(r)-k*hprime(r))/h(r), a=k-b*r. Verify exact q divisibility by(t-r)^2, nonzero branch quartic, the node/cusp cases, pole/infinity charts and the map back to the complete pencil.",
+    "prior_work_boundary": "The retained full genus2-normalization files concern two-node rational normalizations, not the one-node genus-one locus. Large p17/23/29/31/37 source files are present; do not reconstruct them or launch their producers merely to get words.",
+    "prior_work_to_read": [
+      "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md",
+      "elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md",
+      "elkies-k3/scripts/search_r17_norm12_direct_genus2_normalizations_modp.sage",
+      "elkies-k3/scripts/search_r17_one_node_correlated_covers.sage"
+    ],
+    "question": "Parametrize the one-node genus-one normalization locus of a primitive arithmetic-genus-two bisection family, with all projective and moving-contact boundaries.",
+    "required_before_compute": "Prove the full carrier and boundary charts, use retained generic data, freeze a finite motivated comparison and resource caps, and preserve all checkpoints. A rational singular point alone is not a rational point of the normalization.",
+    "selection_hint": "The49 norm12 smooth pencils have generic positive-height rational points on the covering family. They are a motivated first comparison target for a new singular carrier, but an isolated match still needs its actual rational constant squareclass and a nontorsion point on that specialized base.",
+    "status": "prospective derivation; no new enumeration or point campaign started"
+  },
+  "previous_turn_classification": "progress",
+  "running_research_workers": [],
+  "schema": "q80-norm12-moving-pencils-continuation-audit-v1",
+  "scope_correction": "The old complete-rational-V4 deep-trace claim is narrowed to its49 fixed regular-slope families M0+lambda*h^2. Its target atlas is complete, but those families omit finite moving zero contact. The original source is archived; no V4 computation was run and the17 separately closed rank-zero product twists are not reopened.",
+  "scope_fingerprints": {
+    "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17",
+    "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION": "ff8d6c796122fe34",
+    "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "0c66b50a6c5059fc"
+  },
+  "unused_frozen_prime": 541,
+  "verification": {
+    "check_navigation": "PASS",
+    "git_diff_check": "PASS",
+    "independent_replay": "PASS",
+    "navigation_metadata_tests": 107,
+    "own_source_and_result_hashes": "PASS",
+    "process_atlas_check": "PASS",
+    "regressions": 7,
+    "render_navigation": "PASS"
+  }
+}

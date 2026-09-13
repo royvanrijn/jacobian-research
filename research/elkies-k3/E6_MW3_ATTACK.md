@@ -1,4 +1,9 @@
-# E6 MW3 direct attack
+# E6 MW3 direct attack (historical)
+
+This record preserves the exact E6 frame transport, the rejected split-chart
+assumption, and finite-field diagnostics. It is not the current construction
+queue: use the [programme map](README.md) and [process atlas](ELKIES_K3_PROCESS_ATLAS.md)
+for current entry points and route decisions.
 
 Node:
 
@@ -52,7 +57,7 @@ claim boundary.
 This is an explicit Neron--Severi lattice transport, but not yet a
 Weierstrass transport.  In particular it does not determine the rational
 elliptic parameter, fiber fields of definition, or section formulas after the
-three geometric neighbor operations.  The current reconstruction failure
+three geometric neighbor operations. The recorded split-chart failure
 therefore does not invalidate the E6 neighbor.
 
 ## Component/section data
@@ -112,7 +117,7 @@ Several useful negative experiments clarified the correct representation:
 - Exact P1_0 parametrization exposed the dependency P1_2=P1_3=0 after P1_1 elimination.
 - Dense affine substitution of the three final slicing equations causes severe multinomial expansion in the high-degree fiber equations.
 - Coordinate slices are dramatically cheaper. Fixing r0,s0,x1 is especially effective, reducing the final 8x8 probe to about 570 monomials with maximum degree 11, although direct F4 solving still grows rapidly around degrees 14-16.
-- The best current method is not Groebner solving but a fast finite-field GCD scan for the symmetric lambda/mu fiber conditions after saturating the normalized-fiber and collision factors.
+- The best method in this historical chart is not Groebner solving but a fast finite-field GCD scan for the symmetric lambda/mu fiber conditions after saturating the normalized-fiber and collision factors.
 
 ## First GF(31) reconstruction and correction
 
@@ -194,7 +199,7 @@ with determinant `13/48`, versus target determinant `79/16`.  This is checked
 by
 [`scripts/verify_e6_mw3_wrong_rank3_gf11.sage`](scripts/verify_e6_mw3_wrong_rank3_gf11.sage).
 
-## Current reproducible pipeline
+## Historical reproducible pipeline (not a current work request)
 
 Build the unsliced four-elimination system:
 
@@ -219,13 +224,11 @@ For the now-known modular point, reconstruct the full eliminated chain and verif
     sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
       --meta artifacts/local/elkies-k3/e6-base.meta.txt
 
-The next step is no longer to scan more primes in the old system.  The exact
-lattice path is now pinned, and it shows what must be backtracked: execute the
-three neighbor operations geometrically from a genuine explicit model, track
-the fiber/component fields and sections, and derive the final Weierstrass
-chart rather than assuming the split normalization.  Then rebuild the P1/P2
-construction with `(P1+P2).O=1` imposed explicitly.  If that transported chart
-is empty, reject this E6 neighbor as an explicit route and apply the same gates
-to the A10 or A6/A4 neighbor.
+Do not scan more primes in the old system. If this historical chart is ever
+reopened for a new reason, first execute the three neighbor operations from a
+genuine explicit model, track the fibre/component fields and sections, and
+derive the Weierstrass chart rather than assuming the split normalization.
+Then impose `(P1+P2).O=1` before considering a P1/P2 construction. The
+completed H3 corridor does not require restarting this alternate route.
 
 See also `E6_MW3_PROGRESS_2026-08-20.md`.

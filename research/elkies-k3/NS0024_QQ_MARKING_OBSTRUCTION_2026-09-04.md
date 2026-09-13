@@ -105,9 +105,9 @@ shard-local identifier alone. The `A1+2A7/MW2` source has complete-basis pole
 profile `[0,1]`, two complete marked pairs in the normalized square-twist
 `GF(7)` chart, and a one-parameter formally smooth `ZZ_7` marked branch
 through model 157. The same lattice has an exact five-edge physical
-degree-two corridor to rootless `NS0031-F017`. The later exact
-split-Clifford/`X_0(37)` argument now excludes a full rational `NS0031`
-marking as well; see
+degree-two corridor to rootless `NS0031-F017`. Its full rational marking is
+`UNKNOWN`: the later split-Clifford/`X_0(37)` argument used a false
+period-group containment. See the correction in
 [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 The reranked live gate is recorded in
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).

@@ -327,23 +327,30 @@
       "id": "WORK-EC-NEXT",
       "kind": "research",
       "area": "elliptic-curves",
-      "title": "Design a prospective rank-jump test from completed evidence",
+      "title": "Test whether certified coordinate coverage improves CPU to the next direction",
       "target": "OP-EC-NEXT",
       "claims": [
         "OP-EC-NEXT",
-        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907"
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907",
+        "EC-X948-EIGHT-A1-ADMISSIONS-20260913",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913"
       ],
       "sources": [
         "elliptic-curves/README.md",
-        "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md"
+        "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md",
+        "elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md",
+        "elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md",
+        "elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md"
       ],
-      "next_step": "State a new arithmetic or coverage hypothesis, freeze the fresh-family roster and target quarantine, and specify a finite exposure and independent point-certificate plan.",
-      "done_when": "A predeclared prospective protocol and, only after separately scoped execution, exact independent-point evidence for any enlarged lower bound.",
-      "prerequisites": "Curve302 parent recovery and calibrated V3 amplification are complete; rank32 remains open. A new search needs an explicit finite budget, and a lower bound is not an exact rank. The frozen48-fibre record-scale campaign is complete at2352 certified boxes with zero gains; its11760 adaptive cap is not remaining work.",
+      "next_step": "The first-chart local height and minimal-model portfolio certificates pass. Freeze a model/box allocation rule before a new next-direction comparison on the retained control banks. Charge new model preparation, bounds, failed attempts, search and independent verification; include the existing cheaper factor-free arm. Require independently sourced cross-curve withheld directions before broad transfer claims. This benchmark is not launched by the bound calculation. Keep the X948 wave and targeted rank21 follow-up stopped; no automatic parameter or stalled-curve campaign.",
+      "done_when": "A declared candidate-generation route produces independently certified useful rank gains toward32. The completed history analysis and improved seed discrimination alone do not complete the rank32 goal.",
+      "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-EC-NEXT": "b86e37cc3775f627",
-        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971"
+        "OP-EC-NEXT": "f36c4d02969820a7",
+        "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971",
+        "EC-X948-EIGHT-A1-ADMISSIONS-20260913": "a66cb19255346318",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5"
       }
     },
     {
@@ -358,19 +365,19 @@
       "sources": [
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
       ],
-      "next_step": "Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate.",
+      "next_step": "Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate. For NS0031, determine the full stable projective period group and QQ model after the reflected determinant37 action invalidated the previous exclusion.",
       "done_when": "An exact marked rational source or obstruction; a positive handoff must include full rational NS, primitive nef rootless U and seventeen saturated rational sections.",
       "prerequisites": "Local splitting, a coarse arithmetic quotient or a formal branch does not imply a fully marked rational K3. The stronger carrier/pullback objective remains additional.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6a9cd04e00dcdaad"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6f5cc7d2daf2dfe2"
       }
     },
     {
       "id": "WORK-EC-RANK-JUMP-MECHANISM-20260910",
       "kind": "research",
       "area": "elliptic-curves",
-      "title": "Obtain one fresh independently certified dependency-to-point transfer",
+      "title": "Parked mechanism work; preserve the closed constructor calibration",
       "target": "OP-EC-RANK-JUMP-MECHANISM-20260910",
       "claims": [
         "OP-EC-RANK-JUMP-MECHANISM-20260910",
@@ -391,19 +398,19 @@
         "elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md",
         "elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md"
       ],
-      "next_step": "Let the detached independent V3 reference arm finish, preserve sealed outputs and stop without fresh fibres. Review the specific cold-start dependency bottleneck: the frozen bank produced841 independent projected parity rows and no dependency. Compare that policy with the successful reference relation warm-up before proposing any further bounded implementation change. No new bank, higher cap or fresh campaign starts automatically.",
-      "done_when": "At least one fresh fibre supplies an explicit new principal dependency, a fully verified strict class outside its generic16, an exact blind rational lift and an independent generic16-plus1 certificate. After both outputs seal, separately certify or leave UNKNOWN its complementarity to matched-endpoint V3. A bounded panel without such a witness retains every failure and leaves the transfer milestone UNKNOWN. An infinite parameter theorem and ordinary ideal-class increments are separate later endpoints.",
-      "prerequisites": "Principal28 and Curve302 degree-two carriers are certified, but their common pencil does not explain the jump. Selected radical composita do not determine minimum ancestry; the skew relation pilot supplied no new independent relation. The two fixed MW16-05 covers now lift without a point oracle, but generic-only V3 supplies both as well; a parameter criterion and full construction-cost advantage remain unresolved. The simultaneous-splitting theorem is now verified, including an effective finite-reduction neighbourhood refinement. The first full-frame norm10/14 traversal stops at2000000 nodes with both shells incomplete:182 exact genus-zero bisections all miss rational splitting at the control,73 residuals split generically, and candidate171 is UNKNOWN. Preserve the182 equations, exact nonsplitting progression, all failed receipts and original budgets; no pairing or fresh-fibre stage has passed its prerequisites. The final carrier diagnostic closes this branch: all182 extensions are distinct and remain nonsplit under every generic translation; pairing cannot repair a missing lift. A complete coefficientwise continuation of column6 has now been defined without exceptional points and independently checked. Its valuation pattern(2,1,1) above twelve geometric good parameters prevents a point-class interpretation over Q(t); any base making this particular word a point class has genus at least5. This does not justify a higher-genus search. Preserve the full1676/1572 atom words and do not carry specialized ideal columns across varying fields. The stronger closure is now proved: a uniform resultant-defined finite prime set confines all eligible locally soluble specializations of the fixed column6 word to finitely many genus5 twists. Faltings gives finiteness, with no effective list or useful bound. The proof packet includes the expanded definition, prior Bezout certificate,105 integer scalar guards,1693 exact resultant circuits and independent verification. The reusable object is the adaptive constructor; its output word is allowed to change. Column7 remains untested. The frozen eight-input preflight and128 equation identities are verified. Its3884 timing receipts total3202.922 wall seconds but omit some preparation and verification; the complete reference cost remains unknown. Do not call the historical subtotal or18.401-second recovery a complete constructor allowance. The staged spending rule is now authorized and executable. A snapshotted detached adapter has certified reference starting rank16 and cold field preparation, and begun collecting fresh relations. The initial import-package omission is preserved and charged within the same allowance. Full commissioning remains unproved; no fresh run starts without its certificate gate. Status is read from the live controller, not historical ledgers. Before handover the frozen cold class bank completed in321.67 elapsed seconds, collecting841 atoms from23244696 tested norm pairs. Replay of retained projected parity records has rank841 and kernel dimension0; strict extraction and lifting were not reached. This binary replay does not independently recertify all atom factorizations. The class commissioning gate therefore fails; only the already authorized independent V3 reference arm finishes, after which the controller stops without fresh fibres. No automatic bank enlargement follows, and this cold-start bank miss does not invalidate the earlier successful constructor with its longer relation warm-up.",
-      "compute": "new-compute",
+      "next_step": "No active computation. Preserve the terminal closure and prior work under archive/constructor-transfer-2026-09-12/. Reopen arithmetic-constructor experiments only after a new mathematical reason to expect success and new bounded authorization. Do not extend the carrier bank, continue column7, reuse fixed words or require a class-group upper bound.",
+      "done_when": "Operational closure is recorded; achieved. The unresolved general transfer and mechanism questions stay unresolved, not converted to mathematical impossibility. Future reopening must meet the new-reason gate.",
+      "prerequisites": "Both old reference arms have terminated, with543.228 charged wall seconds and zero fresh fibres. The restricted cold class bank supplied no dependency; final V3 verification failed. The archived prior work entry preserves the full experiment history, prior obligations and scoped positive and negative results. Direct next-point search is primary.",
+      "compute": "none",
       "reviewed_claims": {
-        "OP-EC-RANK-JUMP-MECHANISM-20260910": "f4004eb744c0042b",
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "70f88252807ef514",
         "EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912": "6cf30e028a790fb1",
         "EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912": "a170da1eccd83d2b",
         "EC-MW16-MARKED-BISECTION-PREFIX-MISS-20260912": "565b1e1c8d99e546",
         "EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912": "68ecb62b3fbba931",
         "EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912": "5b11f3aea3cb164f",
         "EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912": "23db051da77c1a47",
-        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "ea7816dd308d60c6"
+        "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912": "a1f01b866f75401b"
       }
     },
     {
@@ -418,7 +425,7 @@
         "scripts/audit_status.py",
         "knowledge/CHECKER_REVIEW.md"
       ],
-      "next_step": "Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the eleven checker-absence classifications unless their bound sources change.",
+      "next_step": "Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the existing checker-absence classifications unless their bound sources change.",
       "done_when": "Each reviewed claim has a sourced semantic outcome and any correction has propagated to its consumers. Metadata PASS alone does not complete this task.",
       "prerequisites": "Start from the existing retrospective completed subsets and current registry audit; do not assume a checker default mode covers all modes.",
       "compute": "none",
@@ -428,16 +435,16 @@
       "id": "WORK-PARTIAL-GATES",
       "kind": "maintenance",
       "area": "core",
-      "title": "Keep every partial result’s first missing gate current",
+      "title": "Keep every partial result\u2019s first missing gate current",
       "target": null,
       "claims": [],
       "sources": [
         "knowledge/partial_reviews.json",
         "MATH_STATUS.json"
       ],
-      "next_step": "The active EC/K3 partial-result source review is complete. After a partial claim or reviewed source changes, review its surviving obligation and later results, then update that specific review and regenerate navigation.",
-      "done_when": "Every active partial entry has a fresh source-level record with its exact first missing gate, input boundary and scoped evidence; check-navigation enforces coverage.",
-      "prerequisites": "A review records what remains unproved; it does not complete the theorem or authorize a missing calculation. Archived programme reviews remain historical.",
+      "next_step": "Every current partial result has a source review. After a partial claim or reviewed source changes, review its surviving obligation and later results, then update that specific review and regenerate navigation.",
+      "done_when": "Every partial entry, including archived history, has a fresh source-level record with its exact first missing gate, input boundary and scoped evidence; check-navigation enforces coverage.",
+      "prerequisites": "The original113-partial baseline was reconciled: all77 EC/K3 and36 archived-programme entries have source reviews, with no original ID lost. The current ledger has115 partial entries, all reviewed. Reuse these reviews unless their claims or sources change. A review records what remains unproved; it does not complete the theorem or authorize a missing calculation.",
       "compute": "none",
       "reviewed_claims": {}
     },
@@ -451,11 +458,12 @@
       "sources": [
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
         "REPRODUCE.md",
-        "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md"
+        "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md",
+        "knowledge/canonical_evidence_reviews.json"
       ],
       "next_step": "Audit elliptic-curve/K3 primary certificates and mutable external inputs for sufficient local projections, replay mode, source versus output hashes and documented digests.",
       "done_when": "Each selected claim can be replayed from its preserved sufficient inputs; missing projections remain explicit and hashes change only through the owning producer.",
-      "prerequisites": "Existing software-lock paths pass the current metadata audit. This does not establish semantic sufficiency or byte-for-byte reproducibility of every external input. MW17-jump-v2 retains historical raw chunks, while amended-runtime base chunks are absent; recovering compatible inputs requires identity review, not automatic regeneration.",
+      "prerequisites": "Existing software-lock paths pass the current metadata audit. The current EC artifact audit binds350 registered generated artifacts to their canonical notes and keeps three no-artifact source reviews current; each states its written-proof or finite-regression primary-evidence boundary. This does not establish semantic sufficiency or byte-for-byte reproducibility of every external input. MW17-jump-v2 retains historical raw chunks, while amended-runtime base chunks are absent; recovering compatible inputs requires identity review, not automatic regeneration.",
       "compute": "none",
       "reviewed_claims": {}
     },
@@ -522,9 +530,11 @@
       "claims": [],
       "sources": [
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
-        "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md"
+        "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md",
+        "elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026",
+        "elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md"
       ],
-      "next_step": "Compare the old seven-fibre, alternate-bisection, long lattice/glue, 63917-class and Niemeier replay items against current claims, modes and certificates before selecting any replay.",
+      "next_step": "Use the completed native quotient transports, offline projection/dataset checks and product-inversion source review. The latter validates retained coverage and inputs, not its modular proof; --check has no checkpoint restart. Review the remaining cover/local/norm8/highest-transport/holdout and long lattice/glue/Niemeier modes against later closures. Declare exact targets, independent coverage and a finite checkpointed proposal before any execution.",
       "done_when": "Each inherited replay has a current exact target, existing coverage evidence and either a supersession or a finite checkpointed proposal.",
       "prerequisites": "Old 08f72/1183a/098fc blocked-current labels describe September 4 snapshots. They do not authorize restarting or touching current workers.",
       "compute": "none",
@@ -560,9 +570,9 @@
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
         "elkies-k3/BISECTION_COLLISION_SEARCH.md"
       ],
-      "next_step": "Identify the three exact inputs consumed by derive_h92_q6_child_q8_corrected2cover_qq.sage and inspect whether a sufficient compact projection is already retained.",
+      "next_step": "The three exact checker inputs have been identified and are absent from the checkout, archive and git history: elkies-k3-h92-q6-child-jacobian.json, elkies-k3-h92-q6-child-zero-section.json and elkies-k3-h92-q6-child-e7-infinity-sections.json. The retained physical-root target is not a sufficient compact projection. Recover byte-identical inputs, or authorize the explicit producer-chain replay, before running the corrected checker.",
       "done_when": "A self-contained projection and independent replay reproduce the stated H3-Q6-to-q8 payload with unchanged proof meaning.",
-      "prerequisites": "The theorem remains at its recorded status. Rebuilding a missing intermediate chain is an explicitly scoped replay calculation, not a cleanup command.",
+      "prerequisites": "Static source audit on 2026-09-13: derive_h92_q6_child_q8_corrected2cover_qq.sage requires the three missing inputs with exact child-Jacobian, zero-section and E7-infinity-section statuses. Their producers are certify_h92_q6_child_jacobian.sage and derive_h92_q6_child_zero_section.sage; no self-contained retained projection was found. The theorem remains at its recorded status. Rebuilding the missing intermediate chain is an explicitly scoped replay calculation, not a cleanup command.",
       "compute": "bounded-replay",
       "reviewed_claims": {
         "EC-K3-H3-Q6": "177cd6e614c8b8e0"
@@ -572,22 +582,28 @@
       "id": "WORK-K3-MARKING-REVIEW",
       "kind": "review",
       "area": "elkies-k3",
-      "title": "Review external full-marking theorem inputs",
+      "title": "Retain the completed NS0031 theorem-input review and its correction",
       "target": null,
       "claims": [
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
       ],
       "sources": [
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
         "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
-        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json"
       ],
-      "next_step": "Inspect the exact X0(37) rational-point theorem and marked-K3 period/Clifford implication used for NS0031, retaining source versions and hypotheses.",
-      "done_when": "A scoped independent review documents both external inputs and the checker implication; any replay has a declared mode and budget.",
-      "prerequisites": "NS0024 and NS0031 stay outside the rational-source queue under the current obstructions; local and geometric controls remain useful.",
+      "next_step": "Completed at the September12 snapshot: retain the finite replay, the reviewed Velu/Dolgachev hypotheses and the stable-reflection counter-witness. Use WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17 for the separate unresolved full-period-curve and rational-marking mathematics; do not repeat this review as an unstarted task.",
+      "done_when": "The inherited review is complete with both external inputs inspected, the erroneous implication corrected in status and consumers, exact regression checks and preserved before evidence. Completion of review does not decide rational K3 existence.",
+      "prerequisites": "NS0031 returns as UNKNOWN; its local and geometric controls and valid norm-one arithmetic are retained. NS0024 retains its separate exclusion.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6a9cd04e00dcdaad"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6f5cc7d2daf2dfe2",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "cf8720d3d8c90dac",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "c318a7d819b28d32"
       }
     },
     {
@@ -601,9 +617,9 @@
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
         "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
       ],
-      "next_step": "Match the historical 54 untransported fibres against current exact transport records; propose a small remaining cohort only after identifying which dimensions are still unknown.",
+      "next_step": "The 69-fibre reconciliation is current: 15 exact displayed-subgroup transports and 54 literal nulls. The former rank-28 tranche (curves 11, 391 and 423) is complete. If a new bounded transport calculation is authorized, use only the declared rank-27 initial tranche, curves 67 and 416 on 08234; both require a saturated chart-specific generic transport, exact specialization relations, displayed-subgroup independence and a Smith proof. The other 52 null rows remain deferred.",
       "done_when": "Every reconciled fibre has a sourced saturated transport or an explicit unknown. Historical top-tranche completions are preserved.",
-      "prerequisites": "Do not turn the old count into a current census without comparison; displayed quotients are not full Mordell-Weil quotients.",
+      "prerequisites": "The carrier profile and calibration dataset bind the 69=15+54 partition, retain nulls rather than inferred dimensions, and select the two-row tranche solely by maximum rank lower bound. Displayed-subgroup quotients are not full Mordell--Weil quotients, and historical search exposure remains UNKNOWN. Do not reopen the former rank-28 trio or use public hit counts as a priority statistic.",
       "compute": "none",
       "reviewed_claims": {}
     },
@@ -618,25 +634,36 @@
         "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
         "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
         "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
-        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64"
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-R17-NORM12-ALTERNATE-CHART-CHARACTER-SWEEP",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION"
       ],
       "sources": [
         "archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt",
         "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
         "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md",
         "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md",
-        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md"
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md",
+        "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md",
+        "elkies-k3/R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md",
+        "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md"
       ],
-      "next_step": "Review which complete character and singular-normalization exclusions still need independent witnesses. The V4 timeout record review and genus-two boundary review are complete; the old17-product class/section worklist is closed by later rank-zero theorems.",
-      "done_when": "Each selected gate has a current scoped obligation or closure; independent character and singular-normalization replays are proposed only where still needed.",
-      "prerequisites": "The two base-Jacobian timeouts remain UNKNOWN. All17 selected product twists instead have arithmetic rank zero, so no full Selmer or involution-lattice reconstruction is needed for their Tate quotients. Use full integral groups and actual point-Kummer images if a new product target is proposed.",
+      "next_step": "The independent retained-polynomial replay for all 78,267 original smooth-atlas rows is complete. Review independent coverage of the remaining ten-chart/section components and locate compact singular-pencil polynomial witnesses. All 127,842 singular records and both mergers were checked, but their traces omit discriminant coefficients; no reconstruction is scheduled.",
+      "done_when": "The highest-risk complete-character and singular-normalization components have independent replays with sufficient exact inputs. A passed merger or a list of missing polynomial fields does not complete that obligation. The prior V4 timeout review, genus-two boundary review and old17-product closure remain complete subsets.",
+      "prerequisites": "The two base-Jacobian timeouts remain UNKNOWN. All17 selected product twists instead have arithmetic rank zero, so no full Selmer or involution-lattice reconstruction is needed for their Tate quotients. Use full integral groups and actual point-Kummer images if a new product target is proposed. For the original smooth charts use the compact packet instead of reconstructing sections. A singular replay needs trace/chord data bound to the model and word, discriminant/decomposition coefficients, known split members and root/irreducibility witnesses. Summary-only records cannot supply these; existing full producers are not cheap repair tools.",
       "compute": "none",
       "reviewed_claims": {
         "EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION": "9e1c09d47fcf0bde",
         "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION": "8aac526ec5ca3822",
         "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO": "fe572bd5979b5d2c",
         "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP": "f86dead53d55babe",
-        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64": "f706a4396a0b13af"
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64": "f706a4396a0b13af",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION": "6a83ca559fed9c2b",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION": "c79f496f7a669ae4",
+        "EC-K3-R17-NORM12-ALTERNATE-CHART-CHARACTER-SWEEP": "16c92ccfdeeb13df",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION": "bf05d9b06ccc1502"
       }
     },
     {
@@ -763,7 +790,7 @@
       "prerequisites": "Public hit counts and a later prospective roster cannot reconstruct the original discoverers' effort.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-EC-RANK-JUMP-MECHANISM-20260910": "f4004eb744c0042b"
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "70f88252807ef514"
       }
     },
     {
@@ -784,7 +811,44 @@
       "prerequisites": "The alternative MW17 parent and its primitive 17+14 displayed split are complete. Reconstructing them again cannot recover unpublished provenance; no outreach is authorized.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY": "f2b5fd05a821379e"
+        "OP-EC-CURVE302-CONSTRUCTION-RECOVERY": "c335f0bc6c7ae28a"
+      }
+    },
+    {
+      "id": "WORK-K3-CORRELATED-QUADRATIC-GAINS",
+      "kind": "research",
+      "area": "elkies-k3",
+      "title": "Construct two independent gains on one quadratic cover",
+      "target": "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912",
+      "claims": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912",
+        "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912",
+        "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912",
+        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913",
+        "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913",
+        "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913",
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913"
+      ],
+      "sources": [
+        "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
+        "elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md",
+        "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md",
+        "elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md",
+        "elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md",
+        "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md"
+      ],
+      "next_step": "Derive a complete genus-one normalization locus for a singular bisection image of arithmetic genus at least2, or a different low-degree quadratic-cover identity. On alternate Q80 the complete smooth genus-one layer is closed, including all49 moving-contact norm12 pencils. Read the retained genus-two systems and distinguish one-node genus-one normalizations from the previously tested two-node rational normalizations. Prove the full divisor family, node and projective parameter charts, actual squareclass and rational points on the normalization before a bounded comparison. Two independent directions and infinitely many rational base points remain required. No large campaign or reconstruction is scheduled.",
+      "done_when": "Two exact independent sections modulo the inherited subgroup on one quadratic cover of the original parameter field, constructed without desired exceptional-point fitting, with a rational covering base or a certified positive-rank genus-one covering base and valid specialization hypotheses. A finite miss does not complete the objective.",
+      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization.",
+      "compute": "none",
+      "reviewed_claims": {
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "0c66b50a6c5059fc",
+        "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912": "09d547bac445f45e",
+        "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": "4b9b09c3641c6ff0",
+        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c",
+        "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913": "e866998a9843404c",
+        "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913": "c6033dabb5720a9e",
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17"
       }
     }
   ]

@@ -16,14 +16,14 @@ is now complete. Lane labels do not define a current construction queue.
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK fd9549d1fcb2e9e7 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK e79dd42ecb04dd8f -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6f5cc7d2daf2dfe2 -->
 
 ## Milestone
 
@@ -185,10 +185,12 @@ rank-three T
 
 The generated `T`-first planner enforces this order on all 827 catalogue
 rows without using rootless-frame data in its arithmetic priority. It
-propagates six exact exclusions and the already-realized determinant-948
-positive control. The remaining arithmetic research queue has 820 rows: 60
+propagates five retained exact exclusions and the already-realized determinant-948
+positive control. The remaining arithmetic research queue has 821 rows: 61
 from the old rootless-MW17 subcatalogue and 760 not yet screened at the NS
-stage. The planner records an unproved rational non-CM point as `null`, a certified
+stage. This includes NS0031, whose former exclusion is withdrawn after the
+[stable-period-group counter-witness](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+The planner records an unproved rational non-CM point as `null`, a certified
 exclusion as `false`, and an exact positive witness as `true`.
 Twenty-one currently have coarse genus at most two. That coarse genus
 is a prioritization diagnostic only; it is not the genus of the stable
@@ -265,13 +267,23 @@ give generic rank 20 over the `V4` carrier.
 The current alternate-Q80 laboratory is a control, not this completion. It
 has two nontrivial rational characters, two exact half-sum glues of total
 index four, 64 rational genus-one `V4` bases, and seventeen base Jacobians of
-rank one. Complete zero-Tate-class product inversion and bounded deeper
-searches do not produce the third section. The nonzero product class, its
-section, and full `V4` lattice saturation remain `UNKNOWN`. The relevant
-boundaries are recorded in
+rank one. All seventeen selected product twists now have arithmetic rank
+zero: the [twelve geometric exclusions](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md)
+and [five regulator exclusions](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
+close every rational section height, including denominator and boundary
+charts. Their anti-invariant groups, integral character glue and Tate
+quotients vanish; the section-solving queue is empty. The five regulator
+cases retain geometric rank `UNKNOWN` in `[0,2]`, and full two-Selmer groups
+were not computed. Other product characters and the general integral `V4`
+target remain open. The reusable earlier reductions are in
 [`INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md`](INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md),
 [`R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md`](R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md), and
 [`R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md`](R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md).
+The last comparison covers every atlas target only for its fixed regular-slope
+families; the full norm-twelve pencils also allow a moving finite zero contact.
+
+The [earlier objective](../archive/elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.before-2026-09-13.md.txt)
+is preserved with its superseded product-section gate.
 
 ## Fail-closed boundaries
 
@@ -322,8 +334,10 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)
   — retained rootless-subcatalogue accounting after arithmetic rejection.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  and [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  — the other exact rational-marking exclusions.
+  — the determinant-950 rational-marking exclusion.
+- [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  — the withdrawn NS0031 application, retained modular arithmetic and exact
+  stable reflection showing why the rational-marking question is UNKNOWN.
 - [`MARKED_U_REALIZATION_PLANNER_2026-09-03.md`](MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
   and [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
   — downstream planner and compiler contracts, used only after arithmetic

@@ -1,0 +1,120 @@
+{
+  "schema": "x948-foundry.budget-stop.v1",
+  "status": "METERED_CEILING_STOP",
+  "snapshot_unix": 1789293891.6547358,
+  "state_sha256": "2a221f467f231935040aa1699fd155c86fcdb746852aa656e651953989839bdb",
+  "plan_sha256": "4ecbdd28eca85dbd48ba40363c795ba3e63071927388b5a88bfc70235bb141b0",
+  "terminal_slots": 554,
+  "planned_slots": 1152,
+  "unrun_slots": 598,
+  "charged_wall_seconds": 35724.150995036005,
+  "metered_process_tree_CPU_seconds": 14586.244859461012,
+  "stage1_complete": false,
+  "amplification_started": false,
+  "matched_prefix_per_fibration": 61,
+  "matched_prefix": [
+    {
+      "family": "x948-11952-a1-01191",
+      "slots": 61,
+      "seeds": 44,
+      "resolved": 55,
+      "unresolved": 6,
+      "CPU_seconds": 1613.7461965190005,
+      "CPU_per_seed": 36.67604992088638,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 0.8417693122791565
+    },
+    {
+      "family": "x948-11952-a1-01510",
+      "slots": 61,
+      "seeds": 44,
+      "resolved": 60,
+      "unresolved": 1,
+      "CPU_seconds": 1878.7348293150042,
+      "CPU_per_seed": 42.698518848068275,
+      "maximum_certified_rank": 21,
+      "CPU_seed_enrichment_over_baseline": 0.723040849001657
+    },
+    {
+      "family": "x948-11952-a1-01792",
+      "slots": 61,
+      "seeds": 49,
+      "resolved": 55,
+      "unresolved": 6,
+      "CPU_seconds": 1506.1853957310084,
+      "CPU_per_seed": 30.738477463898132,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 1.0043689820122073
+    },
+    {
+      "family": "x948-11952-a1-01615",
+      "slots": 61,
+      "seeds": 46,
+      "resolved": 56,
+      "unresolved": 5,
+      "CPU_seconds": 1614.6541527970007,
+      "CPU_per_seed": 35.101177234717404,
+      "maximum_certified_rank": 19,
+      "CPU_seed_enrichment_over_baseline": 0.8795366922476123
+    },
+    {
+      "family": "x948-11952-a1-01956",
+      "slots": 61,
+      "seeds": 39,
+      "resolved": 51,
+      "unresolved": 10,
+      "CPU_seconds": 1530.2060007100004,
+      "CPU_per_seed": 39.23605130025642,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 0.7868471035162189
+    },
+    {
+      "family": "x948-11952-a1-04380",
+      "slots": 61,
+      "seeds": 46,
+      "resolved": 57,
+      "unresolved": 4,
+      "CPU_seconds": 1736.2612560960083,
+      "CPU_per_seed": 37.74480991513062,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 0.8179342640336013
+    },
+    {
+      "family": "x948-11952-a1-02021",
+      "slots": 61,
+      "seeds": 49,
+      "resolved": 54,
+      "unresolved": 7,
+      "CPU_seconds": 1453.5574228119885,
+      "CPU_per_seed": 29.664437200244663,
+      "maximum_certified_rank": 19,
+      "CPU_seed_enrichment_over_baseline": 1.0407334921144538
+    },
+    {
+      "family": "x948-11952-a1-02330",
+      "slots": 61,
+      "seeds": 50,
+      "resolved": 56,
+      "unresolved": 5,
+      "CPU_seconds": 1494.150130355997,
+      "CPU_per_seed": 29.883002607119938,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 1.0331215281447246
+    },
+    {
+      "family": "a1-fibration-01",
+      "slots": 61,
+      "seeds": 49,
+      "resolved": 56,
+      "unresolved": 5,
+      "CPU_seconds": 1512.7658926320064,
+      "CPU_per_seed": 30.87277331902054,
+      "maximum_certified_rank": 20,
+      "CPU_seed_enrichment_over_baseline": 1.0
+    }
+  ],
+  "failure_class": "All49 unresolved exposures failed the starting generic rank certificate. They made no point-search calls and are not rank16 proofs. No point/map timeout occurs among the505 certified exposure outcomes.",
+  "best_prefix_CPU_enrichment": 1.0407334921144538,
+  "decision": "No restart or expansion. The first wave is incomplete and its full-panel decision gate is not evaluated. Within the matched61-address prefix, no new fibration reaches the predeclared1.5x seed/CPU threshold; amplification remains untested.",
+  "boundary": "Retained receipt and address accounting only, not a new independent arithmetic replay or statistical absence proof."
+}

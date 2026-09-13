@@ -1,5 +1,9 @@
 # Higher-parameter pilot: a new rank-at-least26 curve
 
+> **Historical fixed-experiment snapshot.** Its V11 inventory and incidence
+> counts are sealed evidence, not the current census. Use the generated
+> [current inventory](../INVENTORY.md) for present totals.
+
 The fixed higher-parameter R17 pilot supplies two new catalogue-unmatched
 inventory entries. The stronger one, `new-20260906-99`, is the `11952` fibre at
 `7460/32309`. Its initial49 charts certify25; a separate301-centre follow-up
@@ -22,12 +26,12 @@ the pinned593 catalogue equations and402 earlier measured equations. All24
 new attempts are mutually nonisomorphic and unmatched in those comparisons;
 only these two meet the inventory threshold22. No universal novelty is proved.
 
-The [V11 inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v11.json)
-now contains100 distinct curves: six lower bounds27, eleven26, twenty-one25,
-twenty-four24, twenty23 and eighteen22. Existing IDs are preserved.
-All100 proofs and theCSV replay. The two additions have only their own rational
-parameters in the twelve recorded presentations. The aggregate now accounts
-for1200 incidence pairs:1079 exclusions and121 rational preimages, including
+At the [V11 inventory](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v11.json)
+snapshot, there were100 distinct curves: six lower bounds27, eleven26,
+twenty-one25, twenty-four24, twenty23 and eighteen22. Existing IDs are
+preserved. All100 proofs and theCSV replay. The two additions have only their
+own rational parameters in the twelve recorded presentations. The aggregate
+then accounted for1200 incidence pairs:1079 exclusions and121 rational preimages, including
 the same21 duplicate presentations of the existing R17 subgroup.
 
 ## Population and point exposure

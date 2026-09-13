@@ -73,7 +73,7 @@ def short_introduction(database):
         +(f' · {counts["REPORTED"]} reported only' if counts.get('REPORTED') else '')+'.\n\n'
         '[Full inventory](INVENTORY.md) · [JSON](data/research_curves/database.json) · '
         '[CSV](data/research_curves/database.csv) · '
-        '[Methods and selection](notes/INVENTORY_REFRESH_2026-09-09.md)\n\n'
+        '[Snapshot evidence](notes/INVENTORY_REFRESH_2026-09-09.md)\n\n'
         'Ranks are certified lower bounds. Full equations, points, conductor bounds and '
         'provenance are retained in the linked inventory.\n\n')
 

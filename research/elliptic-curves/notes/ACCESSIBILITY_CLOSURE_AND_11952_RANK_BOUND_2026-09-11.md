@@ -1,6 +1,11 @@
 # Accessibility closure and the independent 11952 rank-bound target
 
-Current research direction and the first bounded results are in the
+> **Historical arithmetic-assessment note.** The closure theorem and rank-25
+> criterion below remain recorded evidence. Both bounded class-group probes
+> ended without a BNF result; no retry or one-shot class-group command is current.
+> The [elliptic-curve programme map](../README.md) selects new work.
+
+The September12 research direction and first bounded results are in the
 [2026-09-12 ancestry / arithmetic / strict-class comparison](RANK_TRIANGLE_ANCESTRY_AND_DESCENT_2026-09-12.md).
 The closure theorem and rank-25 criterion below remain valid. Its earlier
 single-route priority has been replaced by that three-lane investigation.
@@ -248,22 +253,10 @@ present attempt is stopped, not scheduled to resume; its incomplete internal
 BNF state is not a resumable arithmetic checkpoint. All logs and protocol
 evidence remain available, and the unrelated broad search is untouched.
 
-One-shot execution in a clean output location:
-
-```bash
-python3 research/elliptic-curves/cas/run_11952_class_quotient.py prepare
-python3 research/elliptic-curves/cas/run_11952_class_quotient.py provisional
-python3 research/elliptic-curves/cas/validate_11952_class_quotient.py
-# Only after status PROVISIONAL_GRH_SUFFICIENT:
-python3 research/elliptic-curves/cas/validate_11952_class_quotient.py --run-quotient
-```
-
-Cheap gate regression and retained-result replay:
-
-```bash
-python3 -m unittest discover -s research/elliptic-curves/tests -p test_11952_class_quotient.py
-python3 research/elliptic-curves/cas/validate_11952_class_quotient.py --check
-```
+The [runner](../cas/run_11952_class_quotient.py),
+[validator](../cas/validate_11952_class_quotient.py), and their regression
+tests retain the old protocol and result boundary. They do not authorize a
+new provisional run or quotient certificate from this note.
 
 ## Height-bounded benchmark: paused by the user
 
@@ -281,22 +274,11 @@ required before claiming complete canonical-height-ball coverage. That
 optional benchmark stays gated; it must not displace the equation-derived
 rank work. No rounded-metric substitute is represented as its completion.
 
-## Reproduction
+## Retained reproduction
 
-The original one-shot arithmetic attempt is retained and cannot be silently
-overwritten. In a clean output location, its preparation and execution are:
-
-```bash
-python3 research/elliptic-curves/cas/audit_11952_rank_bound.py prepare
-python3 research/elliptic-curves/cas/audit_11952_rank_bound.py field
-python3 research/elliptic-curves/cas/audit_11952_rank_bound.py class_group
-```
-
-The cheap certificate check is safe on the current repository:
-
-```bash
-python3 research/elliptic-curves/cas/verify_accessibility_rank_pivot.py --check
-```
+The original [arithmetic attempt](../cas/audit_11952_rank_bound.py) is retained
+and cannot be silently overwritten. The [certificate verifier](../cas/verify_accessibility_rank_pivot.py)
+checks the stored finite criterion; neither is a cleanup command.
 
 This check replays exact model changes, discriminants, the mod-23 test, bound
 arithmetic, source hashes, singleton domination and every original subset

@@ -1,6 +1,11 @@
 # Conductor bounds for the complete187-curve inventory
 
-Every curve in inventoryV14 now has an unconditional conductor upper bound.
+> **Historical fixed-inventory snapshot.** The V14 coverage and catalogue
+> counts below are retained evidence. Use the generated
+> [current inventory](../INVENTORY.md) for present coverage.
+
+Every curve in inventoryV14 had an unconditional conductor upper bound at its
+snapshot cutoff.
 The [complete audit](../../artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_v2.json)
 passes187 exact integral translations and1656 local Tate calculations.
 [Independent PARI replay](../../artifacts/generated-results/elliptic-curves/inventory187_conductor_bounds_pari_replay_v1.json)

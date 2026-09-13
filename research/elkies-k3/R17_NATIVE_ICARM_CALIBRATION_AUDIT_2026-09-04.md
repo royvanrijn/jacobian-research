@@ -127,7 +127,7 @@ different fibre.
 
 ## The 69-fibre feature table
 
-The current public projection contains enough displayed points for all 69
+This audit's frozen public projection contains enough displayed points for all 69
 recognized fibres (1,545 points total).  Exact local point counts, Frobenius
 traces, within-family incidences, and three predeclared Nagao blocks are stored
 for every row.  Fifteen rows now have exact displayed quotient dimensions:
@@ -173,6 +173,60 @@ The dataset marks search exposure as unknown rather than converting the
 
 ## Replay
 
+### Retained coordinates and primes — 12 September 2026
+
+Use [the retained-witness replayer](scripts/replay_r17_norm12_native_icarm_quotient_audit.py)
+to check an existing native quotient. It verifies the stored integer matrices
+by exact group addition, the original finite-quotient signatures at their
+recorded primes, the no-rational-2-torsion witness, and the Smith quotient.
+It does not repeat the 180-bit height solve or search for a new prime set.
+The recorded height separation is generation metadata, not a replay hypothesis.
+
+The component choice is mandatory. From `research/`:
+
+```sh
+# Exact displayed quotient only; --curve can be repeated.
+sage -python elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py \
+  --transports-only --curve 378 \
+  --receipt artifacts/local/native-curve378-transport.json
+
+# Also exhaust the selected chart's original complete cover inventory.
+sage -python elkies-k3/scripts/replay_r17_norm12_native_icarm_quotient_audit.py \
+  --with-covers --curve 378 \
+  --receipt artifacts/local/native-curve378-covers.json
+```
+
+Omitting `--curve` selects all seven. Receipts must be new local files; each
+completed fibre is checkpointed atomically. An interrupted checkpoint is
+`INCOMPLETE_CHECKPOINT`, not evidence that a process remains active. Select
+only its unfinished fibres for another explicitly scoped run. The cover mode
+retains exhaustive branch evaluation, split-order binding, both-branch trace
+identities, the complete split digest and visible-span checks. Across all three
+charts it reads 1,176,687,679 bytes of cover inputs. Transport-only mode reads
+none of those inventories and makes no fresh visibility claim.
+
+The original producer and certificate retain SHA-256 hashes
+`878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c` and
+`582898590dcfdd8f36b7564d8df65dff951b0b304eddb6ae8825140eb1a92d9a`.
+Three downstream certificates pin the original producer. Its numerical
+rediscovery path is preserved below. With the current finite-reduction runtime,
+greedy prime selection can change: the curve378 check already differed solely
+in its independence record after its coordinate relations passed. Replaying the
+retained prime witnesses avoids silently rewriting that historical certificate.
+
+This replayer covers the selected native component. It does not replace the
+norm-eight incidence, all-69 local-feature, projection, highest-rank transport,
+dataset or holdout checkers below. The supplied generic saturation and complete
+inventory construction retain their upstream proof dependencies.
+
+The cleanup replay passed all seven displayed transports (119 generic
+relations), the offline 69-fibre public projection and calibration-table
+assembly. Full cover visibility and the remaining companion checkers were not
+rerun. See the [scoped replay record](../archive/repository-cleanup-2026-09-12/NATIVE_QUOTIENT_REPLAY_REVIEW.json)
+for the interrupted first run, completed subsets and retained inputs.
+
+### Historical discovery and component commands
+
 ```text
 .venv/bin/python elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check
 .venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check
@@ -185,8 +239,8 @@ PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12
 ```
 
 The 08f72 equation, section basis, priority table, and complete 39,147-cover
-inventory are independently reconstructible in deterministic chunks.  The
-476 MB merged cover inventory remains a local generated replay input rather
+inventory are independently reconstructible in deterministic chunks. The
+498,508,117-byte merged cover inventory remains a local generated replay input rather
 than a navigation document.
 
 No result here proves that a displayed subgroup is the full Mordell--Weil

@@ -1,5 +1,9 @@
 # V4 selection checkpoint round-trip repair
 
+> **Historical repair record.** This zero-chart checkpoint fix preserves the
+> failed preparation and its source boundary. `repair-resume` is retained for
+> forensic recovery; it does not authorize resuming the old V4 campaign.
+
 The `saved V4 selection differs` startup failure is reproducible without a
 point search: `ExactParity.solve` returns `minima` as a list of tuples. JSON
 serializes both tuples and lists as arrays and reads them back as lists.
@@ -15,7 +19,7 @@ Genuine mismatches report the first differing field/index. The shared exact-CVP
 solver, roster, SHA domain, selector lanes, search bounds and proof checks are
 not modified. Preflight now includes the save/read/compare boundary.
 
-## Recover this zero-chart failure
+## Retained zero-chart recovery
 
 From the repository root, with the old controller stopped:
 

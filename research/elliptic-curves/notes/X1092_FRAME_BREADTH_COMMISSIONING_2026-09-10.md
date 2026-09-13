@@ -1,11 +1,13 @@
-# Bounded commissioning across nonisometric X1092 frames
+# Completed commissioning across nonisometric X1092 frames
 
-The user has replaced indefinite class1 parameter expansion with a fixed
+The user replaced indefinite class1 parameter expansion with a fixed
 commissioning endpoint: **64 score-selected fibres and16 independent controls**.
-The active65,536-address score table, scoring formula, point budgets, generic
-parent and control hash order are unchanged. At amendment,58 ranked fibres
-and8 controls had been dispatched. The original controller drained its two
-active batches and exited; the capped controller resumes their retained packets.
+The retained65,536-address score table, scoring formula, point budgets,
+generic parent and control hash order are unchanged. At amendment,58 ranked
+fibres and8 controls had been dispatched. The original controller drained its
+two active batches and exited; the capped controller resumed their retained
+packets. This note is historical evidence, not authorization to restart either
+commissioning route.
 
 Selection takes the first64 rows from the existing ranked stream and the
 first16 from the existing control stream. It retains their within-arm order.
@@ -31,7 +33,7 @@ The code is [run_frame_commissioning.py](../cas/run_frame_commissioning.py).
 Its immutable amendment binds the original plan, score table and queue. The
 frozen ordinary worker performs every search; no model calls occur.
 
-## Next frame and realization gate
+## Historical next-frame and realization gate
 
 The [retained prospective geometric ranking](../../artifacts/generated-results/elliptic-curves/det1092_frame_realization_priority_v1.json)
 places **class3** immediately after class1. It has the same estimated cost:
@@ -128,14 +130,16 @@ recomputes the section plan, coordinates, normalization and separate replay.
 Its new section plan has index1 and height determinant1092. Total construction
 CPU includes the failed attempt once, without charging reused stages twice.
 
-## Active class3 commissioning
+## Closed class3 commissioning
 
 Class3 passed [separate exact replay](X1092_CLASS3_RATIONAL_MW17_REALIZATION_2026-09-10.md)
-with17 saturated rational sections and height determinant1092. Its active panel
-is `research/artifacts/local/elliptic-curves/x1092-class3-commissioning-v1/`,
-capped at32 ranked and8 independent controls. Full-window scoring took3.720
-CPU seconds. The first two fibres each passed the specialized generic17 gate,
-completed24 point calls and passed full-cloud replay, remaining at lower bound17.
+with17 saturated rational sections and height determinant1092. Its capped panel
+at `research/artifacts/local/elliptic-curves/x1092-class3-commissioning-v1/`
+completed32 ranked and8 independent controls:960 calls, best certified lower
+bound17, and `NO_EVIDENCE_CURRENT_SEARCH_PRODUCTIVE`. Full-window scoring took
+3.720 CPU seconds. The retained transition receipt's startup label and PID are
+historical process data, not evidence of a live controller or permission to
+resume the panel.
 
 The first scoring intake stopped before constructing scores or dispatching
 fibres because the new compact equation had constant denominators3,9,27.

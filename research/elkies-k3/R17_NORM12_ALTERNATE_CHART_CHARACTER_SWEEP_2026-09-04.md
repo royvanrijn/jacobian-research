@@ -113,6 +113,15 @@ These exact halves remove the marking obstruction and make all four complete
 
 ## Replay
 
+These three commands have different roles. The first checks counts, status
+fields and input hashes in the retained certificates; it does not repeat their
+polynomial factorizations or section identities. The streaming checker
+recomputes character supports and rational scalar-square comparisons. The Sage
+saturator verifies equation-level rational halves and their lattice effect.
+`--check` on the latter two still performs that mathematics before comparing
+the stored output. The historical `.venv` command assumes the research runtime;
+the summary auditor itself needs only `python3`.
+
 ```bash
 .venv/bin/python \
   elkies-k3/scripts/audit_r17_norm12_alternate_chart_character_sweep.py \
@@ -133,6 +142,12 @@ sage -python \
 ```
 
 ## Boundary
+
+The [compact independent witness](R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md#compact-independent-replay--12-september-2026)
+now covers alternate11952 and hidden103b2. It is not a replay of all ten charts
+or their halving certificates. The September 12 cleanup replayed this sweep's
+summary audit and preserved its existing assurance flags; remaining independent
+coverage must be assessed component by component.
 
 The requested conclusions remain `UNKNOWN`.  This certificate closes the
 inherited layer on all ten alternate norm-twelve charts and the complete

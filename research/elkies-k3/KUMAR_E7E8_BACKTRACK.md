@@ -8,12 +8,16 @@ remain valid lattice computations.  What was not justified was treating the
 CM-derived `E8+A2^3` frame as the primary equation-level entrance.
 
 The primary construction instead supplies a canonical Dolgachev--Kumar
-fibration with root lattice `E7+E8` and Mordell--Weil rank two.  Run the exact
-finite classification with
+fibration with root lattice `E7+E8` and Mordell--Weil rank two. Its exact
+finite classification is retained in
 
 ```text
 sage elkies-k3/scripts/classify_kumar_e7e8_anchors.sage
 ```
+
+This is a reproducible proof input, not a standing request to repeat the
+classification; the completed H3 endpoint and current construction boundary
+are in [the K3 programme map](README.md).
 
 ## Source-level construction order
 
@@ -616,7 +620,7 @@ recorded in
 [`../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md)
 and
 [`../artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt`](../artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt).
-<!-- status-consumer: EC-K3-H3-PTS 8f0a27c947843b4a -->
+<!-- status-consumer: EC-K3-H3-PTS a98696b3defadd8f -->
 
 The section is also explicit, not merely an integral-lattice class.  Modular
 nonflex conversion of the pinned H21 entrance cubic, transported to the

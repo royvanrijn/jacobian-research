@@ -22,19 +22,12 @@ Therefore
 \boxed{\operatorname{rank} E_{83/6}(\mathbf Q)=14.}
 \]
 
-The exact-rank certificate is
+The [exact-rank certificate](../../artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_pari_exact_rank_v1.json)
+records the matching PARI bounds. The earlier
+[lower-bound certificate](../../artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_v1.json)
+remains separately pinned.
 
-```text
-artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_pari_exact_rank_v1.json
-```
-
-The earlier lower-bound certificate remains
-
-```text
-artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_v1.json
-```
-
-and the git-only replay driver is
+The git-only replay driver is
 
 ```text
 elliptic-curves/cas/newfamily/certify_rank_t83_6.py
@@ -103,8 +96,14 @@ held      = 3.650137875399
 
 The global minimal model has root number `+1` and a 169-bit absolute discriminant.
 
-## Current follow-up
+## Dated follow-up
 
-A deeper H16/H18/H20 search is being used as a control and neighborhood probe. Since the exact rank is now proved to be 14, no further rational point on this same curve can raise its rank. Further points lie in the rational span of the displayed subgroup modulo torsion, but may enlarge its finite index: full saturation is a separate claim.
+A deeper H16/H18/H20 control and neighborhood probe was retained with this
+exact-rank result. It is not a live search instruction. Since the exact rank is
+now proved to be 14, no further rational point on this same curve can raise its
+rank. Further points lie in the rational span of the displayed subgroup modulo
+torsion, but may enlarge its finite index: full saturation is a separate claim.
 
-The more promising next rank-search targets are the six specializations in `newfamily_exact_subgroup_rank_gain_batch_v1.json` with certified subgroup rank at least 13, especially those with small point sizes and many unused Schur hits.
+The six specializations in `newfamily_exact_subgroup_rank_gain_batch_v1.json`
+were a dated priority comparison, not a current work queue. The programme map
+selects any newly scoped rank search.

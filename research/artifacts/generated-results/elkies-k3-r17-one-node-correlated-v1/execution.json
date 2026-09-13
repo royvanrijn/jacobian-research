@@ -1,0 +1,38 @@
+{
+  "boundary": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/close_r17_one_node_boundary.sage",
+    "component_cpu_seconds": 0.12678036999999998,
+    "cpu_limit_seconds": 60,
+    "exit_code": 0
+  },
+  "boundary_of_timings": "Component timings exclude startup and authoring. No detached worker remains.",
+  "constructor": {
+    "address_space_gib": 4,
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/search_r17_one_node_correlated_covers.sage run",
+    "component_cpu_seconds": 0.6008565439999999,
+    "cpu_limit_seconds": 120,
+    "exit_code": 0
+  },
+  "first_prepare_attempt": {
+    "mathematical_selection_changed": false,
+    "outcome": "failed before writing the input packet",
+    "reason": "Python Fraction did not accept the Sage rational pole value directly. The successful prepare converts the exact value through its rational string."
+  },
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_one_node_correlated.py",
+    "exit_code": 0,
+    "identifies_both_split_branches": true,
+    "wall_seconds": 1.041
+  },
+  "live_processes": false,
+  "prepare": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/search_r17_one_node_correlated_covers.sage prepare",
+    "exit_code": 0
+  },
+  "schema": "r17-one-node-execution-v1",
+  "sources": {
+    "elkies-k3/scripts/close_r17_one_node_boundary.sage": "5ba84d623870c3456370a81a8a351ab7bbbbfc8aed843acd94b51421bc9b258f",
+    "elkies-k3/scripts/search_r17_one_node_correlated_covers.sage": "a2227aaf50a423e6e0331ba0667bcf1ba5cd88e37f552131cc80db3805468a54",
+    "elkies-k3/scripts/verify_r17_one_node_correlated.py": "cc50ec58f7d1d99be9eb444201fdac2fd3c9fac50ba48dc189b8f771e941c489"
+  }
+}

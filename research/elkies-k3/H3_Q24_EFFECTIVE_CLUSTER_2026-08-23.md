@@ -1,4 +1,9 @@
-# H3 q24 effective-cluster frontier — 2026-08-23
+# H3 q24 effective-cluster preflight — 2026-08-23
+
+> **Historical preflight.** The subsequent resolved q24 lift is complete over
+> `QQ`; use [the completion record](H3_Q24_FRONTIER_2026-08-23.md) and the
+> [current route map](H3_PREFERRED_PATH.md). This note preserves the physical
+> component diagnosis that ruled out the ordinary-jet shortcut.
 
 The q24 `D13/MW4 -> D12/MW5` equation route has now passed three increasingly geometric gates over `GF(100003)`:
 
@@ -30,19 +35,14 @@ C06 : +3
 for both spinor orientations. All other component lower bounds follow from the valuations already forced at earlier centres; the `C10a/C10b` asymmetry is dominated before the split and therefore does not create a branch condition at this stage.
 
 The exact derivation is implemented in
-
-```text
-scripts/derive_h92_q24_i9star_effective_cluster_modp.sage
-```
-
-and the next equation probe is
-
-```text
-scripts/probe_h92_q24_d12_resolved_cluster_rr_modp.sage
-```
-
-which applies the four orders successively in the actual strict-transform surface local rings and then compiles any resulting two-dimensional kernel by the binary-quartic route.
+[`scripts/derive_h92_q24_i9star_effective_cluster_modp.sage`](scripts/derive_h92_q24_i9star_effective_cluster_modp.sage).
+The former resolved-cluster probe is retained as historical diagnostic
+evidence; it is not a current equation task.
 
 ## Claim boundary
 
-Neither the dimension `10` nor the desired final dimension `2` is by itself a proof. Promotion to an exact modular q24 RR certificate requires the cluster probe to produce a codimension-eight kernel and a degree-three/four squarefree chord radicand with D12 fibre data. A later independent replay must then verify all redundant component valuations before characteristic-zero lifting.
+Neither the preflight dimension `10` nor a desired final dimension `2` was by
+itself a proof. The completed characteristic-zero result supplies the resolved
+valuation, quartic, fibre, and marking checks. This note remains evidence for
+the narrower lesson: ordinary coordinate jets cannot replace conditions along
+the resolved component cluster.

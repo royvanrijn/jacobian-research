@@ -117,7 +117,8 @@ t=-110627/84367,\qquad
 The integral specialization is global minimal.  Its shaped minimal-
 discriminant valuations are `(3,2,2)`, while all three conductor exponents are
 one; PARI reports trivial torsion and rank bounds `[3,3]`.  This is EC-CRT1,
-not a record candidate.
+not a record candidate.  The [pinned calibration artifact](../../artifacts/generated-results/elliptic-curves/crt_lattice_calibration_v1.json)
+contains the complete eight-class reconstruction.
 
 ## Local constraint optimization
 
@@ -165,9 +166,11 @@ The low-rank artifact reaches the full conductor-calibration level.  The first
 Fermigier-family seed reaches exact high-family local shaping but stops before
 factoring its uncontrolled 469-bit cofactor, computing a global conductor, or
 certifying specialized points.  Neither result establishes that prime-power
-shaping raises the probability of exceptional rank.  The next statistical
-experiment is a height-matched comparison against unshaped specializations,
-with good-prime scores and cofactor smoothness recorded separately.
+shaping raises the probability of exceptional rank. A
+[height-matched coordinate comparison](FIBRE_HEIGHT_POPULATION_2026-09-05.md)
+is complete: its fixed two-arm panel found no new directions, so it does not
+select a current search. Any future comparison must have a separately frozen
+population, endpoints, and cost accounting.
 
 Concretely, EC-FSEED1 uses the canonical adapter coordinate \(u=s/2\), lifts
 the two simple split roots of its primitive degree-20 discriminant factor at
@@ -181,4 +184,6 @@ u=673709/29965,\qquad M=2551312982089.
 The three exact factor valuations are two.  Residue classification and PARI's
 local Euler coefficients give split \(I_2\), Tamagawa number two, and conductor
 exponent one at each shaped prime.  Its stored uncontrolled cofactor has 469
-bits and is not factored, so the global conductor and rank remain open.
+bits and is not factored, so the global conductor and rank remain open.  The
+[seed artifact](../../artifacts/generated-results/elliptic-curves/fermigier_crt_seed_v1.json)
+records the eight tested CRT classes and this boundary.

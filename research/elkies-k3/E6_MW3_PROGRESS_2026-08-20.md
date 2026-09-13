@@ -3,8 +3,7 @@
 > **Historical snapshot.** This note records the 2026-08-20 frontier of the
 > alternate E6/MW3 attack.  The split chart below was rejected, and the
 > selected H3 equation corridor has since reached the certified rootless
-> `24I1/MW17` endpoint.  Use [`README.md`](README.md) for the current residual
-> 2-descent priority and the
+> `24I1/MW17` endpoint. Use [`README.md`](README.md) for current priorities and the
 > [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md) for chronology.
 
 ## Neighbor-chain correction
@@ -224,7 +223,11 @@ equation scheme, but the omitted exact-multiplicity open test places it on the
 `I5` boundary.  It is not a promoted point of the intended E6/P1 fiber
 configuration.
 
-## Current search/reconstruction strategy
+## Historical search/reconstruction strategy (not scheduled)
+
+This was an exploratory reconstruction plan. It remains useful when auditing
+the split-chart failure, but it does not authorize a new solve, lift, or
+finite-field search.
 
 1. Build the unsliced four-elimination E6/P1 system.
 2. Parametrize P1_0 exactly.
@@ -242,7 +245,7 @@ configuration.
     rational reconstruction, then impose P3 to cut toward the target
     one-dimensional rank-3 family.
 
-Recommended reconstruction command after generating the base metadata:
+Historical reconstruction command (not a current work request):
 
     sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
       --meta artifacts/local/elkies-k3/e6-base.meta.txt

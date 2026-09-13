@@ -1,4 +1,8 @@
-# Current conductor comparison for the201-curve inventory
+# Dated conductor comparison for the201-curve inventory
+
+This is the first 201-curve conductor-screen snapshot. Its counts and priority
+comparison are historical evidence; use the generated [current inventory](../INVENTORY.md)
+for present repository totals and conductor coverage.
 
 The630-entry ICARM snapshot contains seven exact Q-isomorphism matches to the
 201 local research curves. The194 unmatched curves were screened; **24 now have

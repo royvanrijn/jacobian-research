@@ -428,7 +428,7 @@ def main() -> int:
     resource.add_argument("--history", action="store_true")
     sub.add_parser("render", help="regenerate navigation only")
     check = sub.add_parser("check", help="check lesson references and generated navigation freshness")
-    check.add_argument("--require-partial-review", action="store_true", help="fail unless every current partial result has a fresh source-level review")
+    check.add_argument("--require-partial-review", action="store_true", help="fail unless every partial result, including archived history, has a fresh source-level review")
     args = parser.parse_args()
     entries, items = ledger()["entries"], lessons()
     validate_lessons(items, entries, check_reviews=args.command == "check")
@@ -460,12 +460,13 @@ def main() -> int:
         print(f"PASS research navigation: {len(entries)} claims, {len(items)} sourced lessons, "
               f"{len(work_data[0]['actions'])} proposed actions, {len(resource_rows)} structured records, "
               f"{len(outputs)} generated views; no calculations")
-        current_partial = {e['id'] for e in entries if is_active(e) and e['state'] == 'partial'}
-        recorded = current_partial & {r['id'] for r in partial_data['reviews']}
-        reviewed = current_partial & {r['id'] for r in partial_data['reviews']
-                                      if not research_partial_reviews.stale(r, entries, ROOT)}
-        print(f"Source-level partial review: {len(reviewed)}/{len(current_partial)}; "
-              f"{len(current_partial - recorded)} still unreviewed; "
+        all_partial = {e['id'] for e in entries if e['state'] == 'partial'}
+        active_partial = {e['id'] for e in entries if is_active(e) and e['state'] == 'partial'}
+        recorded = all_partial & {r['id'] for r in partial_data['reviews']}
+        reviewed = all_partial & {r['id'] for r in partial_data['reviews']
+                                  if not research_partial_reviews.stale(r, entries, ROOT)}
+        print(f"Source-level partial review: {len(reviewed)}/{len(all_partial)} total "
+              f"({len(active_partial)} active); {len(all_partial - recorded)} still unreviewed; "
               f"{len(recorded - reviewed)} need reconciliation")
         current_absent = {e['id'] for e in entries if is_active(e) and e['checker'] is None}
         reviewed_absent = current_absent & {r['id'] for r in partial_data.get('checker_absence_reviews', [])
@@ -478,8 +479,11 @@ def main() -> int:
               "source review is not a portable replay certificate")
         inherited = work_data[1]['items']
         completed = sum('resolution' in item for item in inherited)
+        legacy_counts = research_work.legacy_scope_counts(*work_data)
         print(f"Inherited checklist: {completed}/{len(inherited)} snapshot-specific completion records; "
-              f"{len(inherited) - completed} unfinished")
+              f"{legacy_counts['unfinished']} unfinished "
+              f"({legacy_counts['active_unfinished']} active EC/K3 review or provenance; "
+              f"{legacy_counts['archived_unfinished']} archived-programme research handoffs)")
         print(f"Programme scope: {sum(is_active(e) for e in entries)} active EC/K3 claims; "
               f"{sum(not is_active(e) for e in entries)} archived claims. "
               "Archiving is not mathematical or checklist completion.")

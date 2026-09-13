@@ -1,0 +1,62 @@
+[
+  {
+    "job": "factor_free-produce",
+    "outcome": "completed",
+    "wall_seconds": 1.8612986379885115,
+    "process_tree_cpu_seconds": 1.165644
+  },
+  {
+    "job": "factor_free-verify",
+    "outcome": "completed",
+    "wall_seconds": 0.556147355993744,
+    "process_tree_cpu_seconds": 0.429643
+  },
+  {
+    "job": "preconditioned_full-produce",
+    "outcome": "completed",
+    "wall_seconds": 0.7608493500156328,
+    "process_tree_cpu_seconds": 0.7150930000000004
+  },
+  {
+    "job": "preconditioned_full-verify",
+    "outcome": "completed",
+    "wall_seconds": 0.34457834099885076,
+    "process_tree_cpu_seconds": 0.304654
+  },
+  {
+    "job": "neighbour-construction-v2",
+    "outcome": "backend_failure",
+    "wall_seconds": 0.6585274370154366,
+    "process_tree_cpu_seconds": 0.6056699999999999
+  },
+  {
+    "job": "neighbour-construction-v3",
+    "outcome": "completed",
+    "wall_seconds": 0.6554074739688076,
+    "process_tree_cpu_seconds": 0.609137
+  },
+  {
+    "job": "neighbour-0-produce",
+    "outcome": "completed",
+    "wall_seconds": 0.8130730640259571,
+    "process_tree_cpu_seconds": 0.7025819999999998
+  },
+  {
+    "job": "neighbour-1-produce",
+    "outcome": "completed",
+    "wall_seconds": 0.8106012819916941,
+    "process_tree_cpu_seconds": 0.734262
+  },
+  {
+    "job": "neighbour-0-verify",
+    "outcome": "completed",
+    "wall_seconds": 0.3436225039768033,
+    "process_tree_cpu_seconds": 0.307289
+  },
+  {
+    "job": "neighbour-1-verify",
+    "outcome": "completed",
+    "wall_seconds": 0.34156965400325134,
+    "process_tree_cpu_seconds": 0.2978270000000003
+  }
+]

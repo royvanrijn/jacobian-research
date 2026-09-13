@@ -7,6 +7,8 @@ That source question does not require repeating the completed point searches.
 The raw discriminant scale is `607392`, already corrected in the family
 record; the earlier `202464` value must not be reused.
 
+Primary rank evidence: [Fermigier rank certificates](../../artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json).
+
 ## Source construction
 
 Fermigier fixes
@@ -269,8 +271,8 @@ other 79 components.  The replay is
 with artifact
 [`elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json).
 
-The 3,160 genuine pair covers were also searched directly, testing the two
-square conditions separately rather than using their product.  In the exact
+The implementation searches each of the 80 covers once, then intersects their
+parameter sets for all 3,160 pairs and checks both square roots separately. In the exact
 projective box \(T=a/b\), \(b>0\),
 \(\max(|a|,b)\le200000\), every simultaneous intersection contains only the
 two prescribed anchors.  Two isolated parameters occurred on one cover each,
@@ -341,7 +343,7 @@ rank-gain test is instead the anti-invariant summand. Over \(\mathbf Q\),
 
 where \(E^{(d)}\) is the quadratic twist. Thus a productive low-degree cover
 must create a genuinely new non-torsion point on the twist, not a half of a
-known section. The practical search order is: force low-height squareclass
+known section. The historical search order was: force low-height squareclass
 conditions to genus zero or one; parameterize/solve them; reject candidates
 whose good specialization lies in the old twelve-dimensional span; then
 certify survivors by exact finite reductions and score conductor geometry
@@ -350,8 +352,8 @@ before expensive point searches.
 This matches explicit high-rank constructions based on quadratic sections and
 conic conditions, and the elliptic-surface/K3 strategy of treating the
 Mordell--Weil/Neron--Severi lattice plus good specializations as primary search
-objects. For the present target, conductor should remain part of the search
-objective rather than a final filter.
+objects. That conductor objective is [closed](ORIGINAL_RANK_CONDUCTOR_TARGET_CLOSED.md).
+Use the [current programme](../README.md) for rank32 priorities.
 
 References: N. D. Elkies, *Three lectures on elliptic surfaces and curves of
 high rank*, arXiv:0709.2908; N. D. Elkies and M. Watkins, *Elliptic curves of
@@ -365,7 +367,26 @@ Z/2Z x Z/6Z* (quadratic-section construction in Sec. 1).
 specializations, the exact E22 model and conductor, and the literal
 `log(N)<182.72` cutoff.  `verify_family_data.py` cross-checks the stored family
 equation, discriminant, and thirteenth-point metadata.
-`verify_fermigier_rank_certificates.py` replays both independence certificates.
+`verify_fermigier_rank_certificates.py` rebuilds the bounded reduction-prime
+certificates before replaying their rows and independent GP equalities.
+
+The retained outputs above are the first stop for review. Command names do not
+imply a cheap check:
+
+| Entry point | Work performed on invocation |
+|---|---|
+| Generic-rank verifier (`EC-FG12`) | Recounts the surface over both finite fields; refuses an existing output. |
+| Transport/classification producers (`EC-FXPT1`–`EC-FXPT4`) | Repeat the polynomial classifications and write the output. Singular subprocess caps in the bidegree scripts are not a total-run timeout. |
+| Point-sieve producers (`EC-FXPT5`, `EC-FXPT6`) | Repeat the height200000 or height1024 search and write the output. |
+| Rank20 verifier (`EC-R20`) | Reuses retained abscissas, rebuilds independence, and repeats GP minimal-model/conductor arithmetic without a wall timeout. |
+
+The two transport producers now read the [original rank22 input](../../archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24/elliptic_fermigier_rank22_accidental_slices.json)
+matching their unchanged hash; the live copy has different bytes. Their original
+producer bytes are preserved in [the archive](../../archive/elliptic-curves/README.md).
+For `EC-FXPT5`, the frozen result binds the [original transport](../../archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24/elliptic_fermigier_exceptional_transport.json),
+while the current producer accepts its updated copy and rescans a mutable prior-parameter
+inventory. One of that inventory's 40 historical hashes no longer matches its
+recorded path; exact historical whole-manifest replay remains unresolved.
 
 These are separate proof layers. The benchmark's GP minimal-model and
 conductor subprocesses have no built-in wall timeout; its ordinary invocation
@@ -427,6 +448,5 @@ the declared `0.001` numerical allowance, is
 `21.0335328229846198389...<22`.  Since the exact root number is `+1`, GRH
 would force analytic rank at most 20; BSD together with GRH would therefore
 make the algebraic rank exactly 20.  This is a conditional fixed-fiber
-closure, not an unconditional rank upper bound.  It redirects the search to
-nearby parameters rather than promoting more bounded point searches on this
-one curve.
+closure, not an unconditional rank upper bound. It retired further bounded
+point searches on this fibre in that historical conductor programme.

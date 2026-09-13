@@ -81,38 +81,26 @@ equations, parameters, rank lower bounds, and target `j`-invariants do not
 enter the target-free A1/MW16 parameter experiment, which samples new
 parameters directly and measures exact specialization quotient gains.
 
-## Certificates and replay
+## Certificates and historical replay interfaces
 
 The root-stratum certificate is
 [`../artifacts/generated-results/elkies-k3-icarm-11952-norm8-low-root-strata-v1.json`](../artifacts/generated-results/elkies-k3-icarm-11952-norm8-low-root-strata-v1.json),
 and the target-by-stratum atlas is
 [`../artifacts/generated-results/elkies-k3-icarm-11952-norm8-low-root-atlas-v2.json`](../artifacts/generated-results/elkies-k3-icarm-11952-norm8-low-root-atlas-v2.json).
-The historical unstratified target ledger is preserved as a pinned input so
-the corrected theorem does not discard any exclusion or hit evidence.
+The historical unstratified target ledger is a pinned input, so the corrected
+theorem does not discard any exclusion or hit evidence. The retained
+root-stratum compiler streams the exact R17 shell through norm 12, verifies
+all 63,917 priority rows, split-member/even-discriminant histograms,
+degree-one sections, and one primitive-`U`/root frame in each stratum. The
+atlas builder then joins those strata to the modular witnesses, exact survivor
+factorizations, and compiled hits.
 
-```bash
-sage -python elkies-k3/scripts/certify_icarm_norm8_low_root_strata.sage
-python3 elkies-k3/scripts/build_icarm_norm8_low_root_atlas.py
-
-sage -python elkies-k3/scripts/certify_icarm_norm8_low_root_strata.sage --check
-python3 elkies-k3/scripts/build_icarm_norm8_low_root_atlas.py --check
-```
-
-The first command streams the exact R17 shell through norm 12.  It verifies
-all 63,917 priority rows, the complete split-member/even-discriminant
-histograms, degree-one sections for every class, and one primitive-`U`/root
-frame in each of the eight strata.  The second joins those strata to every
-modular witness, exact survivor factorization, and compiled hit.
-
-The original screen and independent fixed-corridor regression remain
-replayable with:
-
-```bash
-python3 elkies-k3/scripts/run_icarm_norm8_a1_atlas.py \
-  --curve-ids 302,273,542,548,399,400,403,401,402,10 --resume
-python3 elkies-k3/scripts/build_icarm_a1_mw16_atlas.py --check
-sage -python elkies-k3/scripts/screen_icarm_fixed_mw15_fibrations.sage --check
-```
+The root-stratum compiler, atlas builder, historical target screen, and
+fixed-corridor regression remain under `elkies-k3/scripts/`; their generated
+artifacts retain pinned inputs and original invocation metadata. They preserve
+the theorem and its regressions, but do not authorize a shell replay, a
+checkpoint resume, or a target search. Any new use needs a separate scope and
+the current programme map.
 
 ## Proof boundary
 

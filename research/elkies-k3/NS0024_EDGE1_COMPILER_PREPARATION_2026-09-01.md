@@ -1,4 +1,4 @@
-# NS0024 edge-1 compiler preparation — 2026-09-01
+# NS0024 edge-1 compiler preparation — historical geometric regression (2026-09-01)
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 
@@ -194,7 +194,7 @@ The compiler independently checks:
 The output is validated by
 [`../schemas/elkies_k3_lattice_foundry_ns0024_edge1_compilation.schema.json`](../schemas/elkies_k3_lattice_foundry_ns0024_edge1_compilation.schema.json).
 
-## Reproduce
+## Historical reproduction (not a current work request)
 
 Prepare or check the equation-independent handoff:
 
@@ -222,8 +222,9 @@ Compile an incoming certified family:
   --output artifacts/generated-results/<mw4-family>-edge1.json
 ```
 
-For a compact marked point emitted by the current residue-algebra recovery,
-first form the certified compiler input and then compile it:
+For a compact marked point emitted by the historical residue-algebra recovery,
+the recorded sequence first forms the certified compiler input and then
+compiles it:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -237,7 +238,7 @@ first form the certified compiler input and then compile it:
   --output artifacts/generated-results/<mw4-source>-edge1.json
 ```
 
-The same two stages can be dispatched in one fail-closed command:
+The same two historical stages can be dispatched in one fail-closed command:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -252,7 +253,7 @@ artifacts/generated-results/<mw3-seed>.txt`.  For an input already in the
 certified family schema, omit both `--seed` and `--source-output`.  Add
 `--check` to replay the complete handoff without rewriting either artifact.
 
-Then rerun the same command with `--check`.  Do not update
+The retained procedure reruns the same command with `--check`. Do not update
 `MATH_STATUS.json` merely because a modular family compiles: characteristic
 zero, source identity, Picard rank, and the equation-side effective child zero
 remain separate gates.

@@ -103,9 +103,12 @@ small class groups are used only as independent calibration oracles in
 `class_span_fixtures.py`. Large-field maximal-order initialization may still
 require factorization work; no fixed runtime is promised.
 
-## Commands and resource bounds
+## Scoped validation interfaces and resource bounds
 
-Run from the repository root with Sage on PATH:
+The fixture interface below reproduces a retained fixed input. It is not a
+cleanup task or a default rank-search launch; a production use needs audited
+relations, a declared bound, and the separate rank inputs described below.
+Run from the repository root with Sage on PATH only for that scoped use:
 
 ```bash
 python3 elliptic-curves/cas/verify_class_span_grh.py \
@@ -123,15 +126,12 @@ RSS, and retains a unique run directory with log and supervisor checkpoint.
 Existing certificates are preserved; `--check` recomputes and compares them.
 Timeout or invalid arithmetic cannot produce a success certificate.
 
-The fixed validation commands are:
-
-```bash
-sage -python elliptic-curves/cas/certify_class_span_machinery.sage launch-check
-sage -python elliptic-curves/cas/certify_class_span_machinery.sage launch-check-mw16
-```
-
-The second command additionally needs the frozen MW16 evidence. Both stages
-have fixed 600-second and 1536-MiB limits in the validation protocol.
+The fixed validation protocol remains in
+`elliptic-curves/cas/certify_class_span_machinery.sage`; its supervisor
+wrappers use `launch-*` stage names solely to enforce the retained resource
+envelope. The MW16 variant additionally needs frozen MW16 evidence. Both
+stages have fixed 600-second and 1536-MiB limits. They are not a routine
+cleanup replay or authorization to collect new relations.
 
 ## Validation and use in rank searches
 

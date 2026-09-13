@@ -1,92 +1,61 @@
-# Main README inventory and continuing conductor calculations
+# The201-curve model and conductor audit —7 September2026
 
-The [elliptic-curve inventory](../INVENTORY.md) contains all201
-research curves in an expandable ICARM-style table. The [full inventory page](../INVENTORY.md) shows the same generated table expanded. Each row links to a complete minimal
-equation, exact discriminant, transported rational points, rank provenance and
-the available conductor proof. [JSON](../data/research_curves/database.json)
-and [CSV](../data/research_curves/database.csv) exports retain full numbers.
+This is the frozen201-row audit. Its counts and table layout are historical.
+The [current inventory](../INVENTORY.md), [JSON](../data/research_curves/database.json)
+and [CSV](../data/research_curves/database.csv) select later certified additions;
+this note does not prescribe the current database selection or rendering.
 
-## Models, points and numerical columns
+## Exact models and numerical columns
 
 The [metric certificate](../../artifacts/generated-results/elliptic-curves/inventory201_table_metrics_v1.json)
-checks all201 global minimal models and4,796 exact point transports. Local
-minimality is independently checked at2,3 and all prime divisors of the invariant
-GCD, which is at most10^7. Outside that set, an invariant is a unit and a smaller
-integral model is impossible. Original rank certificates remain attached to the
-original models; exact isomorphisms transfer independence to the displayed models.
-The rank28 entry is a public-point reproduction, and seven rows match ICARM.
+checks201 global minimal models and4796 exact point transports. Local minimality
+is checked independently at2,3 and the prime divisors of the invariant gcd,
+which is at most10^7. Outside that set an invariant is a unit, excluding a
+smaller integral model. Exact isomorphisms transfer the original independence
+certificates to the displayed models; complete discriminant factorization is
+not required. The rank28 row reproduces public points, and seven rows match
+the pinned ICARM catalogue.
 
-Columns follow the [ICARM table](https://elliptic-rank.icarm.cloud/curves):
-a-invariants, certified rank lower bound, log conductor, naive height, Faltings
-height and log absolute minimal discriminant. All logarithms are natural.
-Naive height is `log max(abs(c4)^3,c6^2)` on the minimal model. The Faltings column
-uses ICARM's actual period-area formula, `-1/2 log(area)`, on that model. This
-matches Sage's `stable=False` convention; it must not silently be replaced by
-Sage's different stable-height option for additive curves. The numerical columns
-are approximations, checked at96 and160 bits and displayed to two decimal places.
-All seven existing public matches reproduce ICARM's minimal discriminant and
-height values within10^-9.
+The historical table uses natural logarithms. Naive height is
+`log max(abs(c4)^3,c6^2)` on the minimal model. Its period-area Faltings value
+is `-1/2 log(area)`, matching the ICARM convention and Sage `stable=False`;
+this differs from the stable-height option on additive curves. Numerical
+columns were checked at96 and160 bits, displayed to two decimals, and matched
+all seven public rows within10^-9. Full exact integers and transported points
+remain in the certificates. Conductor divisors and upper bounds occupy separate
+fields; an unresolved exact conductor stays null and a partial prime list is
+not a complete submission list.
 
-Coefficients are clipped after14 characters in the table, as on ICARM; linked
-curve pages and JSON retain every digit. Unknown exact conductors appear as a
-dash. Certified divisors, upper bounds and partial prime lists are kept on the
-curve pages and in separately named JSON fields. Partial lists are explicitly
-unsuitable as complete submission lists.
+## Completed conductor continuation
 
-## Continued factorization — complete bounded pass
+The [201-row supplement](../../artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/summary.json)
+contains129 exact conductors,100 more than the earlier29. The other72 remain
+UNKNOWN in this batch. Both public rows600 and619 gain local exact proofs.
+All129 exact values exceed their recorded rank-threshold benchmark; this pass
+proves no conductor record. Large upper bounds do not exclude the unresolved curves.
 
-The [201-row conductor certificates](../../artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/summary.json)
-now prove **129 exact conductors**, up from29: **100 additional completions**.
-The other72 remain UNKNOWN. Both previously public rows600 and619 now have
-local exact conductor proofs. All129 exact values exceed their recorded
-rank-threshold benchmark; there is no new conductor record from this pass.
-The current database, main README and expanded inventory select this supplement;
-previous snapshots and the original four submission certificates are preserved.
+The frozen protocol covers172 rows without a local exact proof, including two
+with previously reported public values. Each receives at most15 seconds of
+PARI partial factoring and30 seconds of deterministic ECM, with four workers
+and per-attempt checkpoints. A repository relocation interrupted the pass;
+retained checkpoints resumed without restarting completed curves. Prior factors
+were candidate inputs, checked by product. Exact prime certificates and
+independent Sage generic Tate/PARI local exponents were required for completion.
+No point search or rank change occurred. The [earlier24-curve screen](NEW_CURVE_CONDUCTOR_RECORD_SCREEN_2026-09-07.md)
+and the [four submission certificates](SUBMITTED627_630_BAD_PRIMES_2026-09-07.md)
+remain distinct evidence.
 
-The continuation pass is frozen in
+## Replay and historical commands
+
+`certify_inventory201_conductors_v2.sage --check` reuses saved factors and prime
+certificates but repeats primality-certificate validation and both local
+reduction implementations on all201 rows. Its summary also reads the retained
 `artifacts/local/elliptic-curves/conductor-inventory-continuation-v2/factor_protocol.json`.
-It covers all172 rows lacking a local exact-conductor proof after the earlier
-29 completions, including the two already-public rows whose conductor had not
-been proved locally. Each receives at most15 seconds of PARI partial factoring
-and30 seconds of deterministic ECM, with four workers and per-attempt checkpoints.
-Previous factors are imported as candidates and checked by product; exact prime
-certificates and two local conductor implementations are required before a value
-appears in the README's log N column. No point search or rank change is involved.
+It performs no factor search; missing inputs do not authorize reconstruction.
 
-The earlier [24-curve screen](NEW_CURVE_CONDUCTOR_RECORD_SCREEN_2026-09-07.md)
-and all its certificates remain reproducible as a historical snapshot.
-
-## Regeneration
-
-```sh
-cd research
-sage -python elliptic-curves/cas/build_inventory201_table_metrics.sage --check
-sage -python elliptic-curves/cas/certify_inventory201_conductors_v2.sage --check
-python3 elliptic-curves/cas/local_conductor_database.py
-python3 elliptic-curves/cas/render_main_readme_curves.py
-python3 elliptic-curves/cas/render_main_readme_curves.py --check
-```
-
-The main README wrapper copies the canonical inventory into an expandable marked section. The inventory renderer produces the full table and curve data.
-It preserves the research introduction, navigation and status-consumer markers.
-The downloadable data and201 individual pages are generated from the same
-certified sources as the table.
-
-During the pass, the repository was relocated under `research/`. The interrupted
-worker log and all completed checkpoints were retained, and the pass resumed
-without restarting completed curves. Certificate-relative paths still use the
-research root; the renderer locates the Git root and keeps the main table there.
-The duplicate generated table in `research/README.md` is replaced by a link.
-
-To select a later certified batch and regenerate both tables:
-
-```sh
-cd research
-python3 elliptic-curves/cas/local_conductor_database.py --index --summary artifacts/generated-results/elliptic-curves/inventory201_conductors_v2/summary.json
-python3 elliptic-curves/cas/render_main_readme_curves.py
-```
-
-Further factorization needs a new bounded protocol and versioned certificates;
-the completed pass preserves all partial factors and exhausted attempts. A
-compatibility symlink to the existing root `.python-version` preserves the
-research status ledger’s runtime lock after relocation.
+The [original note](../../archive/elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.before-2026-09-13.md.txt)
+preserves the old database-selection and README-rendering commands. Those
+commands can select the historical201-row batch; use the [current replay guide](../../REPRODUCE.md)
+for maintained entry points. Further factorization requires a new bounded
+protocol and versioned certificates; the completed pass retains partial factors
+and exhausted attempts.

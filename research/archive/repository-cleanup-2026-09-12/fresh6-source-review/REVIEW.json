@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "date": "2026-09-12",
+  "scope": "Source, checker-role and retained-input review of the three historical fresh-six cohorts. No discovery or full map/CVP/conductor rerun.",
+  "before_files": {
+    "MATH_STATUS.json": {
+      "sha256": "0efdd4f44a7e6b722ea9feb49f4ea2885b47688c279fd848a48da1acf331fbb2",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/MATH_STATUS.json.txt"
+    },
+    "knowledge/lessons.json": {
+      "sha256": "220622c441fcf8541071447e3f501e569bc35149db2a834eed7db83bcf0ef6e0",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/knowledge__lessons.json.txt"
+    },
+    "knowledge/partial_reviews.json": {
+      "sha256": "23d7d2e68df033c7ea6ed7e75c17c59c035dabcc186730215221d4e92b1cdd5b",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/knowledge__partial_reviews.json.txt"
+    },
+    "knowledge/legacy_work_review.json": {
+      "sha256": "23a5aadb0594f891183c4a2d96b76413ec5b8816323ca27b93169f064678a05d",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/knowledge__legacy_work_review.json.txt"
+    },
+    "CLEANUP_REPORT_2026-09-12.md": {
+      "sha256": "492ec1a8f4c7b4601ca4e285ce532261343218ec419ef4229a1fa73dd76f26ad",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/CLEANUP_REPORT_2026-09-12.md.txt"
+    },
+    "Makefile": {
+      "sha256": "ea5ff48ceb08fbc3bcb8ce9ef501f13ccd911cbe3198fcf3ff06553fe8e519e7",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/Makefile.txt"
+    },
+    "elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md": {
+      "sha256": "88047cbc2f4e825df61b575ab44160182e736536b6ebde6b4cc0bacca23f83dc",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/elliptic-curves__notes__FRESH6_RETAINED_SEED_COHORT_2026-09-09.md.txt"
+    },
+    "elliptic-curves/notes/SECOND_FRESH6_SEED_COHORT_2026-09-09.md": {
+      "sha256": "fe1c1b878309135716d276ab67510489348849f159787f31952b3df625c1cd98",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/elliptic-curves__notes__SECOND_FRESH6_SEED_COHORT_2026-09-09.md.txt"
+    },
+    "elliptic-curves/notes/LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md": {
+      "sha256": "9a1275d55e4a983af5ae29bedaaba592d01687bae49e697322bfce3f869c92c8",
+      "preserved_path": "archive/repository-cleanup-2026-09-12/fresh6-source-review/elliptic-curves__notes__LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md.txt"
+    }
+  },
+  "reviewed_claims": {
+    "EC-FRESH6-FIRST-M18-20260909": {
+      "before": "e42bc3df031a5c56b749843da9dfab4ee694455646a3a67540ffa0cd3cb8e587",
+      "after": "00c44db82c66eb681367e51ddb891c107699e4158bf946b52e23d8a260592df6",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-V3-M19-20260909": {
+      "before": "996a70fd811d718eae832704aec3c28b1dee0b4687137721718317b4ce55e4c9",
+      "after": "bbb06815fa96c9fc1026184711fd5e1ede60d3b644ef3b1fb210a5c4f04ed055",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-COMPLEMENT-M23-20260909": {
+      "before": "0494526cd63d359d3548785571580591b029f3fd075bded6c514303c119c691f",
+      "after": "a165000a7bdddb99727920623a7c61ada9126e7371f5245f57ce5b9483a0a23c",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-074D9-M24-20260909": {
+      "before": "29f4a5bc08fb625212feb6b6d43ca5c252bf9594802e97c7952b464c7a8d4ea1",
+      "after": "767c572780cf511d050f5daad292b3cee77267252294f847b62b172c47d975a0",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-08F72-M24-20260909": {
+      "before": "99343238a510b4454436161d5f7970b8db1f67894efe373d42b3b1f74dbb7bd9",
+      "after": "53fa511386f98b5ed6b6d8cf4150eefebfdfc91a8eb027014fa0bc9a7664534f",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-103B2-M25-20260909": {
+      "before": "f11eb410349a37fc574885df9485ff921b0275491532e9712a434a1e15295c85",
+      "after": "02eadcd20b305474f79dcaa822aa558971dcaad2c45f4d19a9e8b37682c751a1",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-FRESH6-08F72-CONDUCTOR-20260909": {
+      "before": "9215a855b537b4036e3edd6fd92e2626bc1597bc0bd73745774e235ab4bccd95",
+      "after": "9215a855b537b4036e3edd6fd92e2626bc1597bc0bd73745774e235ab4bccd95",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-FIRST-M18-20260909": {
+      "before": "1cc880ed86a37a97bc74f8ed772942faf61654bd1be35ce19e2b3597568b283d",
+      "after": "e1ecd27f8be460146d8c75ef71a4ae3f83c3b84a48d1222ccde9dd5d93e66e4d",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-103B2-M20-20260909": {
+      "before": "1af08c3cb1a356ed4a4de6ed54baa0ea0955aa28e4bf1ea8ea11e5b4ae406639",
+      "after": "d94c4cb5538e4cc642f1a16cab9b03cae275e7162997b6fe7b901205d064e9e1",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-103B2-M23-20260909": {
+      "before": "c00872eb7a2be04dd8e1d19a59fe0d9e09ed087a402a0e819c27b63082c564ac",
+      "after": "f456bc285fa65a2d6b2e72449ae397963ee2f70931219f3b1b796549dd499e55",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-103B2-M26-20260909": {
+      "before": "c46b8c0d8209ac376a64e8e3e8013bf6406fdbb5bab9072d78f9df1aea40523d",
+      "after": "fc79321c2c8135122e2cc9ca3527afa0565d7904898772de1049199dfa028fa4",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-11952-M22-20260909": {
+      "before": "bc839b75bb7a0feb4a7c2db6139c104b99af6ecbe5003de78f008f265afb5284",
+      "after": "8fca3a75f47eaac9927024eb750c22ba124aa2006a1b930d392cf0fca5208378",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-08234-M22-20260909": {
+      "before": "698940152ec8c4ca9d85c4b616f5fbeffc93b31338281374edeeebc0ebb43b52",
+      "after": "e44812801d46724c69f4d7a690e8734d7a4399e9b4dca907e30800eecb9888d1",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-SECOND-FRESH6-074D9-07CA9-M20-20260909": {
+      "before": "ac0e3c3931e8768c27ac9f4dc803dbc9e84bc2c20c839c751a8ea17adde540a0",
+      "after": "91398cf1aa2e6a1b85da0e5d5f5473d8ac838bf6645a7ade42c0630f4e06ca06",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-LOWHEIGHT-FRESH6-FIRST-M18-20260909": {
+      "before": "ad7c110589080d29423a3f25e4417c88dfeee4fee1cb36a9a7d7359d9c5c4b21",
+      "after": "5045bcc2dbec73132411d6798a9d8cdbbb7daab732d8e3966f17d5bd90a8be9a",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-LOWHEIGHT-FRESH6-AMPLIFICATION-20260909": {
+      "before": "cd0bcf46e91a612573b8996b78fbe5e1d0413a5d62d798925c4b0462dd1ab202",
+      "after": "5947c66ba4c9bbe33b1b969c44fa57a15c91d4ae1e165d1006f21ab92b98ad5e",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-LOWHEIGHT-FRESH6-103B2-M25-20260909": {
+      "before": "bcf53301805a1d5fb3d2d692238ebb54aed60a45afd2dcc51e2b918deb5cac8c",
+      "after": "7c29a60fb48e69ca7a835a0f329c571f3443980a9fcbaa9b1ad0761b57f6f0e2",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    },
+    "EC-LOWHEIGHT-FRESH6-07CA9-M24-20260909": {
+      "before": "39ce1e15776db0a63db4d5d38e954c0cd9b8f93d88ebb661a51a490146e9746e",
+      "after": "80994f08731381661e9ecd8038df3dc9dfa9319c3085da44932a469146791b9d",
+      "state": "proved",
+      "assurance_flags_unchanged": true,
+      "checker_hash_unchanged": true,
+      "scope_unchanged": true
+    }
+  },
+  "after_files": {
+    "elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md": "4cdbcccf84614a368d5c7f95235936e846eb5121ca70234130da5eb25b6be969",
+    "elliptic-curves/notes/LOWHEIGHT_FRESH6_SEED_COHORT_2026-09-09.md": "dc23cc757bfca3d53cc31e87a1a88ec8d6e6e672e696353478be886dcb93e177",
+    "elliptic-curves/notes/SECOND_FRESH6_SEED_COHORT_2026-09-09.md": "32852eccb3a025764894f2debea8d1f664f3e5e2b6a53afcffab1750175c4096",
+    "elliptic-curves/cas/verify_fresh6_retained_ranks.py": "8bca49ef4db5c88b2b4522c251d7001e360dbc5c729317267d22ab875dce8460",
+    "artifacts/generated-results/elliptic-curves/fresh6_retained_rank_witnesses_v1.json": "75a3829bc7e6040cc88577446dfbfed792b7929a13c662dd3176177ccac1a5a4",
+    "artifacts/generated-results/elliptic-curves/compact_six_r17_atlas_v1.json": "2f28c081c874adfaf738c1119e8f4e6e7ce70ea74277cd8cdb370a02bca34c5d",
+    "tests/test_research_fresh6_retained_ranks.py": "179c2e48496afd462c3fbf2d7990333deebe9703ae9e49194ff10e3f5b96bb11",
+    "archive/repository-cleanup-2026-09-12/fresh6-source-review/PROVENANCE.json": "0cba399a4f37574ca15fdf1bcd2b9e9ebe02d54b134bdf91acebe79e8d55dbb2",
+    "archive/repository-cleanup-2026-09-12/fresh6-source-review/export-rank-witness.py.txt": "bfeb4d21b74c69fec4523137129e61da90331152c721cfec63ba13b5396808db",
+    "archive/repository-cleanup-2026-09-12/fresh6-source-review/audit-provenance.py.txt": "af3306bc4cae16c4cfda271a14bb8c1a869fd5ecb3ff0d03e370218cf85c57f5",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/memory_store.py": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+  },
+  "source_condensation": {
+    "before_lines": 739,
+    "after_lines": 319,
+    "boundary": "Full earlier narratives and timings are preserved in before_files; no historical calculation evidence is deleted."
+  },
+  "executed_checks": [
+    {
+      "command": "python3 research/elliptic-curves/cas/verify_fresh6_retained_ranks.py",
+      "result": "PASS 37 retained subgroup endpoints for 17 claims; 626 small-prime blocks",
+      "wall_seconds": 2.87,
+      "peak_rss_kib": 26532,
+      "limit_seconds": 45,
+      "proof_scope": "Exact rational membership, native generic prefix, finite independence, torsion exclusion and pairwise rational nonisomorphism within each six-seed cohort. Uses the established finite-group implementation."
+    },
+    {
+      "command": "python3 research/elliptic-curves/cas/verify_fresh6_retained_ranks.py --check-sources",
+      "result": "PASS exact selected-field projection from 30 original exports; no arithmetic"
+    },
+    {
+      "command": "python3 -m unittest discover -s research/tests -p test_research_fresh6_retained_ranks.py -q",
+      "result": "PASS 16 small controls including corrupted point, group order, prime, header, missing inputs and rank-deficient matrices",
+      "test_seconds": 0.147
+    },
+    {
+      "command": "Retained audit-provenance.py.txt, executed as /tmp/ec-fresh6-provenance.py",
+      "result": "PASS 1295 bindings across 592 unique files; 19 historical amplification protocols consistent; referenced chart/epoch seed files present. Conductor factor-product/bound identities and retained second-execution equality pass; 43-mask parity audit passes."
+    }
+  ],
+  "remaining_boundaries": [
+    "No full selection/CVP/map/cloud/timing replay was repeated. The original full-mode drivers may return on an existing matching verified receipt; absent reference landscapes can trigger reconstruction.",
+    "Raw full-mode chart data are present locally but are not all distributed with a fresh checkout. The new rank-only witness does not require them.",
+    "No conductor local reduction or primality proving was repeated. The conductor producer has no read-only replay mode and performs proof-enabled factorization.",
+    "All 18 claims retain their mathematical scopes, states, original checker hashes and assurance flags. This subset review does not complete the repository-wide semantic, dependency or replay audit."
+  ]
+}

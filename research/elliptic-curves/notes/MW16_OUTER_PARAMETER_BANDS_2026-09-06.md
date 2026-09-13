@@ -1,4 +1,9 @@
-# New MW16 fibres beyond compact parameter height
+# Historical MW16 outer-parameter campaign
+
+> **Current-boundary note (2026-09-13).** This completed campaign retains its
+> certificates, deterministic population and selection controls. It is not a
+> current candidate queue; prospective work begins from the
+> [elliptic-curve programme map](../README.md).
 
 **Completed: two new curves with rank at least23. All2580 point boxes,
 local proofs and182 isolated replay stages pass.**
@@ -28,14 +33,14 @@ before its first logical proof stage; v1 evidence is preserved, and v2 fixes
 the path. The bundle does not rerun the broad scan or15360 scalar scores.
 
 One new23-point curve is504th of512 in its signed short-score list and1016th
-of1024 after the two signs merge. This motivates the
-[fresh deeper-retention trial](MW16_FRESH_OUTER_RETENTION_2026-09-06.md),
-which stays beyond4096 and uses disjoint denominator slices.
+of1024 after the two signs merge. This historically motivated the retained
+deeper-retention comparison, which uses disjoint denominator slices. Neither
+dated experiment authorizes a new parameter campaign.
 
 The five compact MW16 families have broad completed parameter scans through
 height4096. Their million-height follow-ups increase point-search height on
 already selected fibres; they do not enlarge this parameter population.
-The user requested priority for new parameter territory and new fibres.
+At the time, the priority was new parameter territory and new fibres.
 
 For primitive nonzero n/d with d positive, put H=max(abs(n),d).
 This campaign uses three disjoint bands:

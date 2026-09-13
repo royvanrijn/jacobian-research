@@ -1,0 +1,481 @@
+{
+  "cpu_seconds": 1.844131484,
+  "distinct_carriers": 0,
+  "genus_one_carriers": [],
+  "input_sha256": "7af686bcf1e70d16243c0666c4a40b65d198240adfc7487440ab9d304b1dd899",
+  "pairs": 2278,
+  "rational_root_incidence": 0,
+  "schema": "r17-inherited-halving-nodes-result-v1",
+  "scope": "Only rational finite intersections T=2Q for the frozen67-by34 word bank. This is not an exhaustion of rational node positions or quadratic covers.",
+  "trace_summaries": [
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 0
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 1
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 2
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 3
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 4
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 5
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 6
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 7
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 8
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 9
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 10
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 11
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 12
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 13
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 14
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 15
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 16
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 17
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 18
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 19
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 20
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 21
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 22
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 23
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 24
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 25
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 26
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 27
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 28
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 29
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 30
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 31
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 32
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 33
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 34
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 35
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 36
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 37
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 38
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 39
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 40
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 41
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 42
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 43
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 44
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 45
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 46
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 47
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 48
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 49
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 50
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 51
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 52
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 53
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 54
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 55
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 56
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 57
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 58
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 59
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 60
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 61
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 62
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 63
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 64
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 65
+    },
+    {
+      "distinct_carriers": 0,
+      "genus_one_carriers": 0,
+      "pairs": 34,
+      "rational_root_incidence": 0,
+      "trace_index": 66
+    }
+  ]
+}

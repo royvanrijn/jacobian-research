@@ -1,4 +1,4 @@
-# NS0024 MW4 modular recovery frontier — 2026-09-01
+# NS0024 MW4 modular recovery — historical geometric frontier (2026-09-01)
 
 <!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
@@ -15,7 +15,7 @@
 > and `65521` did not finish; that is a performance boundary, not evidence of
 > nonexistence.
 
-## Outcome
+## Historical modular-search boundary (not a QQ arithmetic route)
 
 The requested marked MW4 source is **not yet recovered**.  No
 characteristic-zero reconstruction was attempted, and the q4/orbit1 edge-1
@@ -152,11 +152,11 @@ past multiple gigabytes.
 
 ### Joint extension-defined MW3 formulation
 
-The rational-MW3 staging was useful for a bounded census but is structurally
-too restrictive for the next search.  The replacement resolved-depth13 ideal
-solves the surface, Q1, Q2, forced Q3, and Q4 jointly over `GF(p)`.  A closed
-point of degree `d` therefore places all four sections over one residue field
-`GF(p^d)`.
+The rational-MW3 staging was useful for a bounded census but was structurally
+too restrictive for the historical extension-field proposal. The replacement
+resolved-depth13 ideal solves the surface, Q1, Q2, forced Q3, and Q4 jointly
+over `GF(p)`. A closed point of degree `d` therefore places all four sections
+over one residue field `GF(p^d)`.
 
 The exporter also supports `--explicit-formal-centers`.  This retains the five
 `I5` and four `I4` formal-center jet coefficients as auxiliary variables with
@@ -252,28 +252,26 @@ Thus the following bounded negative is complete:
 This does not exclude an MW3 marking that is itself defined only over an
 extension field.
 
-## Remaining gap and next attack
+## Historical extension-field question (not scheduled)
 
-The immediate target is one exact marked source point, not a positive-dimensional
-family.  Any such point must be replayed through all four section identities,
-absolute component labels, and the full Gram matrix and then sent directly to
-the q4/orbit1 edge-1 compiler.  Only after that yes/no equation-side test should
-the containing family be recovered.
+The following recorded a possible geometric extension-field study, not a path
+to the rational MW17 target. Any future study needs separately declared scope
+and must first re-establish the four section identities, absolute component
+labels, and full Gram matrix for its proposed point.
 
-The cheapest source-point search not covered by the census is now a closed
-point of the joint resolved-depth13 ideal, rather than another P4 scan above
-rational MW3 points.  Two viable exact routes are:
+At the time, the cheapest source-point search not covered by the census was a
+closed point of the joint resolved-depth13 ideal, rather than another P4 scan
+above rational MW3 points. The two recorded exact routes were:
 
 1. eliminate a one-hyperplane joint MW4 slice and decode every irreducible
    eliminant factor as a Frobenius orbit over `GF(p^d)`;
 2. first recover the positive-dimensional MW3 ideal, then solve Q4 over its
    function/residue fields without specializing MW3 to a rational point.
 
-The first exact marked point should invoke
-`compile_lattice_foundry_ns0024_edge1_modp.sage` immediately.  A successful
-isolated-point compilation is still only a modular equation-side test; the
-one-dimensional marked component, a second-prime match, and characteristic-zero
-reconstruction remain later gates.
+A recovered marked point would require
+`compile_lattice_foundry_ns0024_edge1_modp.sage` as an equation-side test.
+Even then, the one-dimensional marked component, a second-prime match, and
+characteristic-zero reconstruction would remain separate gates.
 
 The arbitrary-degree extractor follows the prior Q80 common-producer method.
 With `--fixed-rur-anchor`, the joint exporter adds one fixed integral linear
@@ -286,7 +284,7 @@ joint source verifier and, on the first exact marking, automatically runs the
 adapter and edge-1 compiler.  It never guesses `d`, enumerates a whole
 `GF(p^d)`, or places unrelated factors in a common splitting field.
 
-## Reproduction entry points
+## Historical reproduction entry points (not a current work request)
 
 ```bash
 sage elkies-k3/scripts/certify_lattice_foundry_ns0024_mw4_basis.sage

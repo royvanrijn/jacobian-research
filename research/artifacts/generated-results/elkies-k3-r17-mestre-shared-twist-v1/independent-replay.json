@@ -1,0 +1,36 @@
+{
+  "elapsed_seconds": 0.028,
+  "forced_branch_degree": 20,
+  "generic_rank_lower_bound_with_inherited_parent": 19,
+  "goal_complete": false,
+  "height_matrix": [
+    [
+      24,
+      0
+    ],
+    [
+      0,
+      24
+    ]
+  ],
+  "new_independent_directions": 2,
+  "parent_rank_is_inherited_dependency": true,
+  "quadratic_cover_genus": 21,
+  "root_field_certificates": [
+    {
+      "degree": 8,
+      "degree_one_prime": 59,
+      "irreducibility_prime": 29,
+      "polynomial": "A"
+    },
+    {
+      "degree": 12,
+      "degree_one_prime": 107,
+      "irreducibility_prime": 59,
+      "polynomial": "B"
+    }
+  ],
+  "scope": "The displayed two sections are independent on one genus21 quadratic cover. Every rational auxiliary function in this Mestre identity forces genus at least9 on this fixed parent. The infinite-rational-base requirement remains unmet; other identities and parents are not excluded.",
+  "status": "PASS_TWO_CORRELATED_SECTIONS_AND_MESTRE_GENUS_GATE",
+  "unrestricted_rational_auxiliary_genus_lower_bound": 9
+}

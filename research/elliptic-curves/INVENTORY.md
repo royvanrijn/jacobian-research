@@ -10,7 +10,7 @@ ICARM #600 and #619 were independently rediscovered; #626–#630 are submissions
 
 Columns and height conventions follow [ICARM’s table](https://elliptic-rank.icarm.cloud/curves). Logs are natural and shown to two decimals. A dash means the value is uncomputed or uncertified; available conductor bounds and partial primes are on the linked curve page. Coefficients are clipped here; each page contains the complete equation and data.
 
-The original 201 curves have certified minimal models. Of the 290 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md), 289 retain source equations with uncomputed minimal-model metrics; separate metric replays cover 1. The [September 9 refresh](notes/INVENTORY_REFRESH_2026-09-09.md) includes the latest selected rank certificates and conductor audit. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
+The original 201 curves have certified minimal models. Of the 290 additional [certified seed curves](notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md), 289 retain source equations with uncomputed minimal-model metrics; separate metric replays cover 1. The [September 9–12 refresh snapshot](notes/INVENTORY_REFRESH_2026-09-09.md) preserves its dated selection and conductor audit; this generated inventory is the current selected census. Duplicate seed packets appear once. Infinite families are represented by their exported examples.
 
 [Download JSON](data/research_curves/database.json) · [Download CSV](data/research_curves/database.csv) · [Arithmetic and replay notes](notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md)
 

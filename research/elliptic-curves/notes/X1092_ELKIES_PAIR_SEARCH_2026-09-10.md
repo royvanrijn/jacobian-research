@@ -1,5 +1,10 @@
 # X1092: Elkies-style pair search and certified M19-to-V3 handoff
 
+> **Unrun bounded-protocol record.** This note retains an implementation and
+> finite proposed limits, not a completed X1092 result or current campaign.
+> Its commands do not authorize a launch or resume; the
+> [current elliptic-curve programme](../README.md) selects new work.
+
 **Implementation, not a claimed X1092 rank result.** The code is committed for
 execution with Sage/PARI. Eighteen local Python/SymPy regressions pass, including
 an independent nontorsion proof for Elkies's published X948 reference pair.
@@ -81,7 +86,7 @@ and two finite implementations. Carrier rank does not bypass the seed gate.
 A completed V3 result is accepted only with its model, request, prefix, packet
 and independent-replay hashes attached.
 
-## Run and resume
+## Retained protocol commands
 
 From the repository root, with Linux, Sage 10.9, NumPy and `/usr/bin/gp`:
 

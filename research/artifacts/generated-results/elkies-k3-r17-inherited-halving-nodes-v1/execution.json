@@ -1,0 +1,23 @@
+{
+  "boundary_of_timings": "Component timings exclude startup and authoring. No rational parameter bound enters the independent no-intersection proof.",
+  "constructor": {
+    "address_space_gib": 4,
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/construct_r17_inherited_halving_nodes.sage run",
+    "component_cpu_seconds": 1.844131484,
+    "cpu_limit_seconds": 120,
+    "exit_code": 0,
+    "pairs": 2278
+  },
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_inherited_halving_nodes.py",
+    "exit_code": 0,
+    "no_root_polynomials": 1139,
+    "wall_seconds": 1.452
+  },
+  "live_processes": false,
+  "schema": "r17-inherited-halving-execution-v1",
+  "sources": {
+    "elkies-k3/scripts/construct_r17_inherited_halving_nodes.sage": "b385709afc79af19af3648feffff40cd6df20a4afbb36f92fa5e4402cac9914b",
+    "elkies-k3/scripts/verify_r17_inherited_halving_nodes.py": "ab43613010b61c67ef7f56ea120ced41b6e912472504db9f832578228db88ccc"
+  }
+}

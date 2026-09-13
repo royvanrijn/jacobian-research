@@ -36,6 +36,9 @@ unconditionally.  No unconditional upper bound is known here.  A 55-second
 PARI `ellrank(E,0,points)` attempt returned no bound and was stopped; that
 timeout has no mathematical meaning.
 
+Primary evidence: [public-fibre atlas](../../artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json)
+and [record prime-factor proofs](../../artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json).
+
 This is not a new raw-rank record: curve 302 has rank at least 31.  It is a
 new public *size* record for rank at least 29.  At the retrieval time above,
 the complete ICARM database gave:

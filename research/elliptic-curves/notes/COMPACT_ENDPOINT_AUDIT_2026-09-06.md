@@ -13,6 +13,10 @@ has run, and no curve is added to the high-rank inventory. The
 [summary certificate](../../artifacts/generated-results/elliptic-curves/compact_endpoint_summary_v1.json)
 binds all transport and finite-independence checks.
 
+The shared [skew/endpoint evidence](../../artifacts/generated-results/elliptic-curves/skew_endpoint_evidence_v1.json)
+and [portable replay](../../artifacts/generated-results/elliptic-curves/skew_endpoint_portable_replay_v1.json)
+bind the combined isolated checks used by this audit.
+
 At zero, the short coefficients are `A(0),B(0)`. At infinity put `t=1/v`,
 `X=v^4 x`, `Y=v^6 y`, giving endpoint coefficients `A_8,B_12`. Rational
 section coordinates are evaluated by exact Laurent valuations and leading

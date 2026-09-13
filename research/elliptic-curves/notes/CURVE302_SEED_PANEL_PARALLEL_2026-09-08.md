@@ -52,23 +52,12 @@ The original status file advertises the live parallel controller, so the old
 launcher refuses a concurrent resume. A failed child stops dispatch and the
 remaining owned children; all finite search/checkpoint evidence is retained.
 
-## Commands
+## Terminal boundary
 
-The run is complete; no resume is needed. From `research/`, read its final status:
-
-```sh
-python3 elliptic-curves/cas/run_curve302_seed_panel_parallel.py status
-```
-
-Historical recovery reference: after reviewing an interrupted run, resume
-with the same manifest and concurrency:
-
-```sh
-python3 elliptic-curves/cas/run_curve302_seed_panel_parallel.py resume --workers 4
-```
-
-Do not use the old serial resume command while the parallel continuation is
-active. Its status tail still points at the historical serial log.
+The scheduler, its terminal status, and the 68-file manifest are retained as
+historical evidence. Neither the parallel nor serial controller is a current
+runbook. Any new panel would need its own frozen roster, resource allowance,
+and replay contract; it cannot resume this completed experiment.
 
 ## Validation
 

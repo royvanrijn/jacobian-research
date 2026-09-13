@@ -1,0 +1,50 @@
+{
+  "schema": "r17-shared-ordinate-tangent-execution-v1",
+  "date": "2026-09-13",
+  "input_sha256": "8443f02cb8a0561ca8b3d95e3f63d6c60f5b1eb05548c45e3413768980c63ec0",
+  "constructor": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/gate_r17_shared_ordinate_tangents.sage",
+    "exit_code": 0,
+    "cpu_seconds": 0.07982226199999998,
+    "limits": {
+      "cpu_seconds_soft": 40,
+      "cpu_seconds_hard": 45,
+      "address_space_gib": 4
+    },
+    "frozen_primes": [
+      1009,
+      1013,
+      1019
+    ],
+    "pair_count": 136,
+    "all_exclusions_at": 1009
+  },
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_shared_ordinate_tangents.py --output research/artifacts/generated-results/elkies-k3-r17-shared-ordinate-tangents-v1/independent-replay.json",
+    "exit_code": 0,
+    "elapsed_seconds": 0.989,
+    "arithmetic": "stdlib fractions and finite integer-polynomial arithmetic"
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s research/tests -p 'test_r17_shared_ordinate_tangents.py' -v",
+    "count": 4,
+    "exit_code": 0,
+    "reported_seconds": 0.044,
+    "initial_harness_failure": "Three rejection tests initially expected AssertionError; the checker correctly rejected all three cases with ValueError. The harness was corrected to its established exception type. No certificate or checker arithmetic changed."
+  },
+  "timing_scope": "Component timings exclude process startup and authoring; no end-to-end speed comparison is claimed.",
+  "source_hashes": {
+    "elkies-k3/scripts/verify_r17_shared_ordinate_tangents.py": "6c9cb1b10a3999297bf6b72cfc22bd39d8c93abccb9319553afaafa6081fcd6a",
+    "elkies-k3/scripts/gate_r17_shared_ordinate_tangents.sage": "81d13c46932b4a33203c4aef82100a00767b13846c3e83f00ae2cb766119e1e2",
+    "elkies-k3/scripts/verify_r17_mestre_shared_twist.py": "f529b6034a39e8e9af3df0db3f2acd91979c476a9eb0d3f7942e40da73d4fd5a",
+    "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py": "e2bb356dc9006893f682bbdd32758ca04b25f7a234ca8a4c3d55c5eef4d01435",
+    "tests/test_r17_shared_ordinate_tangents.py": "a355633ba5335faccab8cf9b039a93b2059295b9812113d690162bc8721acb26"
+  },
+  "artifact_hashes": {
+    "input.json": "8443f02cb8a0561ca8b3d95e3f63d6c60f5b1eb05548c45e3413768980c63ec0",
+    "result.json": "4cb71a985148c68f776a59deeb8ee96ae3de39064995c3f1a424b56d92acd780",
+    "independent-replay.json": "e48015fb6e6cf8fa3e2c40abf5a55835d4bd4e6250848a051f5c3e90be1c8c4a"
+  },
+  "goal_complete": false,
+  "scope": "One tangent for every pair of the 17 published generic basis sections; all136 have normalized covering genus at least86. Independence was not assessed."
+}

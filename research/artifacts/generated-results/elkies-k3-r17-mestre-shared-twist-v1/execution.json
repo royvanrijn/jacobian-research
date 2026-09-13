@@ -1,0 +1,66 @@
+{
+  "schema": "r17-mestre-execution-v1",
+  "date": "2026-09-13",
+  "input_sha256": "820c80729c704b407dd2810e8570db0a58cde1711e51c48c3715809696020fca",
+  "constructor": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/construct_r17_mestre_shared_twist.sage",
+    "exit_code": 0,
+    "cpu_seconds": 0.017767464000000066,
+    "limits": {
+      "cpu_seconds_soft": 30,
+      "cpu_seconds_hard": 35,
+      "address_space_gib": 4
+    }
+  },
+  "branch_certificate": {
+    "command": "OPENBLAS_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_r17_mestre_branch_gate.sage",
+    "exit_code": 0,
+    "cpu_seconds": 0.024527013000000042,
+    "limits": {
+      "cpu_seconds_soft": 20,
+      "cpu_seconds_hard": 25,
+      "address_space_gib": 4
+    },
+    "prime_range": [
+      5,
+      1000
+    ],
+    "prime_range_upper_exclusive": true
+  },
+  "independent_replay": {
+    "command": "python3 research/elkies-k3/scripts/verify_r17_mestre_shared_twist.py --output research/artifacts/generated-results/elkies-k3-r17-mestre-shared-twist-v1/independent-replay.json",
+    "exit_code": 0,
+    "elapsed_seconds": 0.028,
+    "arithmetic": "stdlib Fraction and finite integer-polynomial arithmetic"
+  },
+  "tests": {
+    "command": "python3 -m unittest discover -s research/tests -p 'test_r17_mestre_shared_twist.py' -v",
+    "count": 6,
+    "exit_code": 0,
+    "reported_seconds": 0.068,
+    "cases": [
+      "altered section rejected",
+      "composite modulus rejected",
+      "degree drop rejected",
+      "producer height hint ignored",
+      "reducible and inseparable polynomials rejected",
+      "wrong local root rejected"
+    ]
+  },
+  "timing_scope": "Component timings exclude process startup, source authoring and written proof; no end-to-end performance comparison is claimed.",
+  "source_files": {
+    "elkies-k3/scripts/verify_r17_mestre_shared_twist.py": "f529b6034a39e8e9af3df0db3f2acd91979c476a9eb0d3f7942e40da73d4fd5a",
+    "elkies-k3/scripts/construct_r17_mestre_shared_twist.sage": "4b553af31fcdae67ff3ee0f1d7e700f800f542081326b49b886b69b5b32ddc4b",
+    "elkies-k3/scripts/certify_r17_mestre_branch_gate.sage": "456fb8119c94ca0bfecc96525319373c073926f424363804231b09ed4a804089",
+    "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py": "e2bb356dc9006893f682bbdd32758ca04b25f7a234ca8a4c3d55c5eef4d01435",
+    "tests/test_r17_mestre_shared_twist.py": "32e46981d599129ca8b84fa9feed822457f113f55dd8ddec40163269abe206e6"
+  },
+  "artifact_hashes": {
+    "input.json": "820c80729c704b407dd2810e8570db0a58cde1711e51c48c3715809696020fca",
+    "result.json": "b4fb577bc2a5df836a630a6dc63e4c5069e1c858fda963c93d910458e00e319b",
+    "branch-gate.json": "ae72deb8d3c08aa06db45370d592ad793193bbd58e80a7f9b019f3975a69fef0",
+    "independent-replay.json": "953db17d3113faf3a6f4ec5d8d12a185d0c1c2fd4b53e7d627cc6f812739c54f"
+  },
+  "goal_complete": false,
+  "scope": "Two exact independent new sections over one genus21 quadratic cover; this Mestre identity has genus at least9 for every rational auxiliary function. The infinite-rational-base requirement remains open."
+}

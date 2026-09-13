@@ -244,8 +244,44 @@ complete smooth rational-bisection frame.  No `V4` curve, genus-one Jacobian,
 or rank computation is emitted because the required character triple does not
 exist.
 
-The next controlled search would have to enlarge the geometry, not repeat the
-same hashes: construct degree-two curves of positive arithmetic genus on the
-alternate equation, or produce an independently certified same-base twist
-character.  Only after such a character exists does a `V4` Jacobian and exact
-three-eigenspace height calculation become meaningful.
+The later [ten-chart sweep](R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md)
+has already closed the other alternate smooth atlases. The
+[singular genus-one result](R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md)
+also excludes rational normalizations in that row on these two direct charts.
+For this rational-normalization filtration, the first possible failure has
+arithmetic genus at least two; global genus-two injectivity remains unknown.
+A new `V4` height calculation needs an independently certified same-base
+character outside the completed exclusions.
+
+## Compact independent replay — 12 September 2026
+
+The [standard-library verifier](scripts/verify_r17_smooth_character_witness.py)
+checks the 39,147 alternate11952 and 39,120 hidden103b2 branch polynomials.
+It clears rational denominators and content, verifies each quadratic has
+nonsquare discriminant, and checks that the resulting primitive polynomials
+are distinct within each base. Each character therefore has its own irreducible
+polynomial valuation of odd parity. No nonempty product of distinct listed
+characters is a square; in particular there is no internal character triple.
+This shortcut needs neither integer factorization nor pair-product enumeration.
+Repeated support fails the shortcut and requires a full constant-squareclass
+comparison; it does not by itself imply an equal quadratic extension.
+
+The [10,328,199-byte input packet](../artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz)
+retains raw rational branch coefficients, denominators, labels, orbit masks and
+both sides of the fixed-frame attachment to the priority tables. Extraction
+verified the hashes and exact projections of all four original files (about
+692 MB). The original equation, collision and closure certificates are unchanged.
+
+From `research/`, `make verify-smooth-characters` reads the packet and runs small
+corruption controls. The default maintenance checks run only those controls.
+The verifier's optional `--check-source-projection` also reads the originals;
+`--export-inputs NEW_PATH` extracts a new packet and refuses replacement.
+Neither option reconstructs missing data. The
+[review receipt](../archive/repository-cleanup-2026-09-12/CHARACTER_NORMALIZATION_REPLAY_REVIEW.json)
+records the checked components and input identities.
+
+This independently replays polynomial-character injectivity, internal
+nonclosure and recorded frame attachment. Completeness of the upstream lattice
+enumeration, section-lift identities, the twelve older catalog comparisons,
+base-degree gates and singular-normalization exclusions remain separate proof
+components. The broader claims' assurance flags are unchanged.

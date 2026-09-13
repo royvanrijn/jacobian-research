@@ -88,10 +88,10 @@ these two labels.
 
 ## Natural stopping point
 
-There are only two certified positives in this family.  Additional supervised
+There are only two certified positives in this family. Additional supervised
 fitting would mostly encode those two parameters and would have no credible
-uncertainty estimate.  The useful next experiment must therefore be
-prospective: freeze one cumulative family-centred rule and its stage caps,
-apply it to a disjoint parameter block with no known labels, and open outcomes
-only after candidate selection.  Until such outcomes exist, further weight
-tuning on this corpus has sharply diminishing evidential value.
+uncertainty estimate. A future prospective test would freeze one cumulative
+family-centred rule and its stage caps, apply it to a disjoint parameter block
+with no known labels, and open outcomes only after candidate selection. Until
+such outcomes exist, further weight tuning on this corpus has sharply
+diminishing evidential value.

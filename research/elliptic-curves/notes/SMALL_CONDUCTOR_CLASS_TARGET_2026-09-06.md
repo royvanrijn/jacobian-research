@@ -46,7 +46,7 @@ ideal classes independent. Protected waves keep these anchors free during
 elimination and never target them. A purported relation supported only
 on the anchors causes an explicit failure.
 
-## Authorized relation continuation
+## Completed relation-collection protocol
 
 The user set the goal of reducing the quotient to 16. Each wave freezes a
 finite target list, candidate region, smoothness bound, one-worker time

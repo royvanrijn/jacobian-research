@@ -31,6 +31,9 @@ The five earlier UNKNOWN entries are now excluded by exact rational-root
 certificates. Neither the covers, the panel, nor the old prime pool was
 changed. The initial bounded records remain intact.
 
+Primary evidence: [signed-source summary](../../artifacts/generated-results/elliptic-curves/det1092_signed_source_orbits_v1/summary.json)
+and [independent replay](../../artifacts/generated-results/elliptic-curves/det1092_signed_source_orbits_v1/independent-replay.json).
+
 ## Why the signed-source obstruction holds
 
 **Established setup, reused.** The norm-eight elliptic pencil has parameter

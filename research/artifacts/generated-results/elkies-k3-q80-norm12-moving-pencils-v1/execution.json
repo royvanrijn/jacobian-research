@@ -1,0 +1,82 @@
+{
+  "construction_commands": [
+    "sage -python research/elkies-k3/scripts/compare_q80_norm12_moving_pencils.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_norm12_moving_pencils.sage prime --prime 521",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/compare_q80_norm12_moving_pencils.sage prime --prime 523"
+  ],
+  "date": "2026-09-13",
+  "failures": [
+    {
+      "before_any_new_trace_frame": true,
+      "frozen_input_changed": false,
+      "reason": "Under the4GiB address-space cap, the default numeric-library thread configuration failed to map a Sage finite-field extension module. Setting OPENBLAS_NUM_THREADS=1 and OMP_NUM_THREADS=1 resolved the startup failure.",
+      "stage": "initial521 startup"
+    }
+  ],
+  "goal_complete": false,
+  "limits": {
+    "address_space_gib": 4,
+    "checkpoint_size": 512,
+    "cpu_seconds_per_prime": 60,
+    "frozen_primes": [
+      521,
+      523,
+      541
+    ],
+    "unused_primes": [
+      541
+    ]
+  },
+  "proof_boundary": "The full49 moving-contact norm12 pencils extend the previous63917 norm8 theorem to all smooth genus-one bisections modulo inherited section translation. Singular higher-arithmetic-genus images and arbitrary twist sections remain outside the result. No qualifying two-gain construction is supplied.",
+  "replay_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elkies-k3/scripts/verify_q80_norm12_moving_pencils.py",
+  "schema": "q80-norm12-moving-pencils-execution-v1",
+  "scope_correction": {
+    "canonical_source": "elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md",
+    "canonical_source_sha256": "26bd1e913dba16ad578070c65175a778c360076367d9c008c49a40498be50ca0",
+    "claim": "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION",
+    "new_scope_fingerprint": "ff8d6c796122fe34",
+    "new_v4_calculation": false,
+    "previous_source": "archive/elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.before-moving-pencil-correction.md.txt",
+    "previous_source_sha256": "aa7bcd1d84b72a87a79e5aae63c7fea1bfc418c67466a2d79481d2f09068c6ec",
+    "seventeen_selected_rank_zero_targets_reopened": false
+  },
+  "sha256": {
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/frames-521.json.gz": "68faeb74115846538a89fb847b25cf9d1848f7d30ab2f9c3fb202eb3c2aed4e0",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/frames-523.json.gz": "9b81e2a686f13febc293508f52ed025fc493b6af29476cee603b3d2025e0b55f",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/independent-replay.json": "1ba379ef5d463507685d03a3368d62823f71623c19bdf9dabdbd2b45a91e4532",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/input.json.gz": "04c511f77aa441887438490df12bc87264ef2c6fc99e65a9a8247634c1e5d461",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/prime-521.json.gz": "1800184ee2e5e84e161186353713abb2f735da4921655dab69b893520f9c10d6",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/prime-523.json.gz": "3529e626f72c241ecefbf186559b2d2d9350fb905c23aa07e479e29b6e863597",
+    "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b",
+    "elkies-k3/scripts/compare_q80_norm12_moving_pencils.sage": "41c1cb3e799b497279faaf036c9de8c4cdcdb99e1a9d84b50611fb886e0573c4",
+    "elkies-k3/scripts/verify_q80_complete_genus_one_pairs.py": "8bc3f9dae7a5ab4a927e22970768c9703067ef538ac578c8b4de6af7415a2a93",
+    "elkies-k3/scripts/verify_q80_norm12_moving_pencils.py": "af3a516472059ad65b0e01f9fa502bd2bf8ad0d8a33564b394b5bf76280f5ec6",
+    "tests/test_q80_norm12_moving_pencils.py": "aa24f9b68d6ed10853f2d57c6ac433a4fdd787e168c67e6a750aa6afc2eceaad"
+  },
+  "software": {
+    "numeric_libraries": "NumPy integer arithmetic; finite Sage arithmetic only in producer",
+    "python_independent_replay": "3.12.3",
+    "sage": "10.9"
+  },
+  "test_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m unittest discover -s research/tests -p 'test_q80_norm12_moving_pencils.py' -q",
+  "timings": {
+    "independent_replay_wall_seconds": 8.166,
+    "producer_cpu_seconds": {
+      "521": 3.556648291,
+      "523": 0.7338978340000001
+    },
+    "seven_regressions_seconds": 0.068
+  },
+  "verification": {
+    "check_navigation": "PASS",
+    "git_diff_check": "PASS",
+    "independent_replay": "PASS",
+    "navigation_metadata_tests": 107,
+    "new_norm8_supplemental_frames": 1,
+    "process_atlas_check": "PASS",
+    "projective_parameters_replayed": 33436888,
+    "regressions": 7,
+    "render_navigation": "PASS",
+    "retained_new_trace_frames": 98
+  }
+}

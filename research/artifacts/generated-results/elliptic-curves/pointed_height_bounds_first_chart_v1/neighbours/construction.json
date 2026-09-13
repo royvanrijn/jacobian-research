@@ -1,0 +1,18 @@
+{
+  "attempts": [
+    {
+      "prime": 5,
+      "residue": 1,
+      "status": "RETAINED_DISTINCT_NEIGHBOUR"
+    },
+    {
+      "prime": 7,
+      "residue": 0,
+      "status": "RETAINED_DISTINCT_NEIGHBOUR"
+    }
+  ],
+  "cpu_seconds": 0.014001861999999976,
+  "input_sha256": "22011e663675ddab65057e6672151078565fb3e8c232418285e7c9e739589e5c",
+  "source_sha256": "674b15520d262db34d47c0d65a80066ccf669e9321d21df623d30e84de28004e",
+  "models": 2
+}

@@ -428,7 +428,7 @@ for the composite determinant-948 and determinant-950 genera.  See
 determinant*](https://arxiv.org/abs/2601.19780) and its
 [code/data companion](https://olitb.net/pro/uni29/).
 
-## 7. Proof boundary and next calculation
+## 7. Proof boundary and unscheduled implementation questions
 
 Proved here:
 
@@ -455,11 +455,11 @@ Not yet computed:
 - a generic implementation of the Chenevier--Taibi classifier for these
   composite discriminants.
 
-The next bounded task is to add exact integral local-embedding filters to the
-3,768-type list, starting with determinant 78 at `2,3,13`, and then compute
-the next ADE rows selected by the LP dual.  Determinant 78 remains the
-calibration target: a full local inversion must return `mu_0=0` before it is
-trusted on 948 or 950.  The rank-at-most-four LP is now known not to suffice.
+A future independently scoped implementation could add exact integral
+local-embedding filters to the 3,768-type list, beginning with determinant 78
+at `2,3,13`, then compute ADE rows selected by the LP dual. Determinant 78 is
+the calibration target: a full local inversion must return `mu_0=0` before it
+is trusted on 948 or 950. The rank-at-most-four LP is known not to suffice.
 
 The original first-moment replay artifact is
 [`elkies-k3-rootless-genus-first-moment-v1.json`](../artifacts/generated-results/elkies-k3-rootless-genus-first-moment-v1.json).

@@ -1,10 +1,17 @@
-# Q80 low-q alternate corridor — 2026-08-22
+# Q80 low-q alternate corridor — 2026-08-22 (historical)
+
+This dated corridor records exact generic lattice data, the completed CM24
+equation regression, and reusable compiler lessons. It is not the current
+construction queue. Use the [programme map](README.md) for the direct 11952
+alternate-Q80 equation and current work gates.
 
 ## Status
 
 The Q80 low-q alternate route is complete at the generic lattice level and reaches a new rootless `MW17` frame. Every retained new neighbour from `D7+D5/MW5` through rootless has chamber-reduced old-fibre degree two.
 
-The **CM24 equation corridor is also now complete through the final q6**. There is no remaining CM24 neighbour/module search. The remaining Q80 problem is the generic characteristic-zero lift.
+The **CM24 equation corridor is also now complete through the final q6**. There
+is no remaining CM24 neighbour/module search. The generic characteristic-zero
+lift is a separate unscheduled equation question.
 
 The generic and CM24 final endpoints differ:
 
@@ -198,11 +205,13 @@ The corridor also established:
 - exact node-constrained polynomial-section reconstruction;
 - cheap finite-specialization prefilters before expensive symbolic quartic classification.
 
-## 7. Next strategic problem
+## 7. Historical strategic follow-up (not scheduled)
 
-The Q80 CM24 corridor is closed. Do not resume broad Q80 shell or modular local-module search without a specific obstruction.
+The Q80 CM24 corridor is closed. Do not resume broad Q80 shell or modular
+local-module search without a specific obstruction.
 
-The next Q80 task is the **generic characteristic-zero lift from orbit 1222 onward**:
+The generic characteristic-zero lift from orbit 1222 onward remains a
+mathematical possibility, but is not scheduled by this record:
 
 1. recover the generic horizontal sections and fields of definition;
 2. lift the CM24 resolved quotient conditions to characteristic zero;
@@ -210,4 +219,4 @@ The next Q80 task is the **generic characteristic-zero lift from orbit 1222 onwa
 4. track fibre components, sections, and Galois fields through the chain;
 5. verify the final seventeen independent sections on the intended characteristic-zero specialization before any rank claim.
 
-The completed CM24 corridor is now the regression scaffold for that lift.
+The completed CM24 corridor remains a regression scaffold for such a lift.

@@ -98,9 +98,11 @@ only after exact equation transport and finite-quotient escape from the
 specialized MW17 subgroup.  A completed miss means only
 `BOUNDED_PROTOCOL_NO_GAIN_FOUND`; a timeout or backend failure is censored.
 
-The prospective denominator will therefore be the full scheduled cohort,
-with operational outcomes recorded for every row.  It does not retrospectively
-identify the unknown denominator behind the 69 public successes.  Whole-family
+The scheduled denominator is already fixed at1,536; all rows in the frozen
+packet remain `NOT_OPENED`, with null features and outcomes. Any later
+performance report must account for every scheduled row and distinguish
+completed misses from censoring and unopened rows. This does not recover the
+unknown denominator behind the69 public successes. Whole-family
 locking removes direct fibre-level family leakage, but it cannot erase feature
 ideas developed before this commitment; that residual limitation must remain
 visible in any later predictor report.

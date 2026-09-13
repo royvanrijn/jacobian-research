@@ -408,9 +408,12 @@ without importing the authors' unpublished fibration census.
 
 The result promotes curve 398 from a provenance target to the major
 cross-fibration calibration control.  A rank-32 campaign in this recovered
-family would still need sixteen independent quotient directions and all the
-same exact finite-reduction and residual-descent gates; the present bounded
-success is not evidence for a rank-32 theorem by itself.
+family would need sixteen independent quotient directions above a certified
+specialization of the generic MW16 subgroup. An exact independence certificate
+for all32 points proves the lower bound without a completed residual descent.
+Descent may supply further points or an upper bound; a matching unconditional
+upper bound is needed only for an exact-rank claim. The present bounded
+success does not establish rank32 or authorize another campaign.
 
 ## Reproduction
 

@@ -1,0 +1,39 @@
+{
+  "elapsed_seconds": 8.166,
+  "goal_complete": false,
+  "inherited_dependencies": [
+    "direct11952 rational MW17 model and saturated height lattice",
+    "complete M/2M minimum-norm inventory",
+    "prior complete norm8 branch-injectivity theorem and hashed trace frames"
+  ],
+  "new_pairs_excluded": 3133109,
+  "new_trace_frames_verified": 98,
+  "norm12_pencils": 49,
+  "norm8_pencils": 63917,
+  "prime_stages": [
+    {
+      "cross_pairs_remaining": 40,
+      "full_rank_norm12": 47,
+      "internal_pairs_remaining": 0,
+      "norm12_pencils": 49,
+      "norm8_pencils": 63917,
+      "prime": 521,
+      "projective_parameters": 33390252
+    },
+    {
+      "cross_pairs_remaining": 0,
+      "full_rank_norm12": 49,
+      "internal_pairs_remaining": 0,
+      "norm12_pencils": 49,
+      "norm8_pencils": 40,
+      "prime": 523,
+      "projective_parameters": 46636
+    }
+  ],
+  "projective_parameters_replayed": 33436888,
+  "scope": "The full norm12 pencils have disjoint rational projective branch images from each other and the full norm8 bank; all individual pencils are injective. The written nef/translation classification exhausts smooth genus-one bisections modulo inherited section translation. Singular higher-arithmetic-genus images remain outside this theorem.",
+  "status": "PASS_COMPLETE_Q80_SMOOTH_GENUS_ONE_BISECTION_INJECTIVITY",
+  "supplemental_norm8_frames_verified": 1,
+  "total_pairs_excluded_with_inherited_theorem": 2045792595,
+  "total_pencils": 63966
+}

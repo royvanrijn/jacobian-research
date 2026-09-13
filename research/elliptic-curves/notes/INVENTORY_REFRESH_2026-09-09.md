@@ -1,9 +1,15 @@
-# Curve inventory refresh — September 9
+# Curve-inventory refresh snapshot — September 9–12
 
-The [main README](../../../README.md#elliptic-curve-inventory) and
-[expanded inventory](../INVENTORY.md) now index **445 distinct curves**,
-with **282 exact conductors** and **163 unresolved conductors**, using the
-merged conductor snapshot plus the first and
+> **Historical snapshot.** This note preserves the 445-curve selection and
+> conductor evidence assembled during the September 9–12 refresh. It supports
+> the fixed snapshot claims below; it does not select the live curve census.
+> Use the generated [current inventory](../INVENTORY.md), its
+> [JSON export](../data/research_curves/database.json), and the
+> [elliptic-curve programme](../README.md) for current counts and priorities.
+
+At this snapshot cutoff, the published main README and inventory indexed
+**445 distinct curves**, with **282 exact conductors** and **163 unresolved
+conductors**, using the merged conductor snapshot plus the first and
 [second foundry additions](FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md), and the
 [30 broad-rank additions with 26 exact conductors](BROAD_RANK_CURVE_LEDGER_2026-09-12.md). Rank entries
 are certified lower bounds, not exact ranks.
@@ -38,16 +44,16 @@ on the exact change of variables; local minimal-discriminant valuations match
 the already published exact-conductor certificate. This completes one table
 row and makes no exact-rank, novelty, or conductor-record claim.
 
-## Main README curation
+## Snapshot display curation
 
-The main README highlights **398 of 445 curves**: all 394 with certified lower
+At this cutoff, the main README highlighted **398 of 445 curves**: all 394 with certified lower
 bound at least22, plus four structural examples below22. These are the
 orbit8044 seed factory's exported `000000` example, the uniform progression's
 `n0` example, the orbit47755 alternate-fibration seed, and the small
 equation-derived conic control. Their individual pages link to canonical proofs.
 Other exported members of a represented family need not all occupy the front page.
 
-The deterministic [display rule](../cas/render_main_readme_curves.py) also retains
+The snapshot's deterministic [display rule](../cas/render_main_readme_curves.py) also retains
 any below22 curve with an **exact** conductor at or below the smallest conductor
 reported at that rank or higher in the [pinned ICARM snapshot](../data/icarm_current.json).
 This is a conservative editorial benchmark, not a claim about current world records.
@@ -65,7 +71,7 @@ not compete. The main README recomputes minima after its row filter, so its
 below22 highlights can differ from the full inventory. These are within-table
 comparisons, not exact-rank or public-record assertions.
 
-## Bounded missing-conductor pass
+## Historical bounded missing-conductor pass
 
 The frozen [runner](../cas/run_inventory_conductor_pass.py) covers all161 conductors
 missing at launch, rank-descending, with four detached workers, a90-second build
@@ -150,11 +156,11 @@ and2GiB per-process caps. Completed V1 cases are not repeated. The published
 ledger includes all original V1/V2 results, the completed long continuation,
 and the30-curve foundry queue through the fourth immutable snapshot.
 
-```sh
-python3 research/elliptic-curves/cas/run_inventory_conductor_resume_v2.py status
-```
+## Historical replay reference
 
-## Reproduction
+The commands and campaign parameters below document this snapshot's evidence.
+They are not routine inventory maintenance and must not be used to select the
+current census.
 
 ### Longer bounded factorization pass
 
@@ -188,10 +194,6 @@ detached, preserving all V1/V2 sources, inputs, certificates and logs.
 Timeouts keep certified partial bounds and `UNKNOWN`; engineering or replay
 failures stop dispatch for review. No point search or rank change is involved.
 
-```sh
-python3 research/elliptic-curves/cas/run_inventory_conductor_long_v3.py status
-```
-
 ### Published snapshot replay
 
 The [refresh manifest](../data/research_curve_refresh.json) selects proved
@@ -203,15 +205,15 @@ for existing rows. It replays the saved finite reduction certificates and
 including matching independent replay evidence for exact results.
 
 ```sh
-python3 research/elliptic-curves/cas/render_main_readme_curves.py
-python3 research/elliptic-curves/cas/render_main_readme_curves.py --check
+# Cheap, presentation-only check against the already generated current inventory:
+python3 research/elliptic-curves/cas/render_main_readme_curves.py --check --from-inventory
+
+# Historical V4 snapshot audit; replays all 191 saved certificates:
 ~/.local/bin/sage -python research/elliptic-curves/cas/index_inventory_conductor_final_v4.py check
-python3 research/elliptic-curves/cas/run_inventory_conductor_long_v3.py status
 ```
 
-These commands synchronize the README, expanded inventory, JSON/CSV downloads,
-and individual curve pages. They perform no point searches, specialization
-sweeps, or conductor factorizations. Historical certificates remain preserved.
-Computation checkpoints are automatic; README publication is not. A new
-immutable snapshot must be replayed, registered in `MATH_STATUS.json`, indexed
-in the refresh manifest, and rendered before newly computed values appear.
+The presentation check does not rebuild arithmetic data. The unflagged renderer
+can regenerate pages, and the V4 audit is intentionally a full historical
+replay; neither belongs in routine cleanup. Historical certificates remain
+preserved. A new result belongs in a new immutable snapshot, with its own
+status entry, manifest selection and rendering review.

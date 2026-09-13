@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/next-direction-benchmark-v1/runtime/elliptic-curves/cas/run_next_direction_benchmark.py",
+    "controller",
+    "--folder",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/next-direction-benchmark-v1",
+    "--hours",
+    "2.0"
+  ],
+  "hours": 2.0,
+  "pid": 1993892,
+  "plan_sha256": "3c3402ec113dbc5e16fb83aad3b5b6ab11b956e92956f37eace85820a4796369",
+  "started_unix": 1789242485.642092,
+  "token": "29566635",
+  "launch_observation": {
+    "status": "RUNNING",
+    "active_arm": "runs/development/curve302-M27/factor_free_shears_125k",
+    "active_stage": "worker",
+    "cpu_affinity": 0
+  },
+  "interpretation": "Conservative bounded first comparison under the user-authorized direct point-search pivot. Larger optional overnight allowance remains undecided. No automatic cap increase. Dispatch/status observation is not a continuing liveness assertion."
+}

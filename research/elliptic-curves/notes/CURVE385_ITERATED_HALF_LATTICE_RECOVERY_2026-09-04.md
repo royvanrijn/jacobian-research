@@ -1,4 +1,9 @@
-# Curve 385 iterated half-lattice recovery (2026-09-04)
+# Curve 385 iterated half-lattice recovery — historical completed campaign (2026-09-04)
+
+> **Current-boundary note (2026-09-13).** The recorded M17-to-M29 recovery and
+> sparse rank-32 no-growth campaign are sealed evidence. They do not select a
+> further Curve385 search; prospective work starts from the
+> [elliptic-curve programme map](../README.md).
 
 ## Result
 
@@ -9,10 +14,10 @@ new independent directions. All ten nonbasis points from those charts are
 integral combinations of the resulting basis, so the discovered subgroup is
 exactly `M20`; its saturation index *inside the discovered group* is one.
 
-The next round searches the `43(2^3-1)=301` lifted parity classes involving a
-nonzero new quotient word. All 301 pointed quartics are freshly minimized and
-reduced and all bounded searches complete. The exact blind classifier finds
-nine further independent directions:
+The completed second round searched the `43(2^3-1)=301` lifted parity classes
+involving a nonzero new quotient word. All 301 pointed quartics were freshly
+minimized and reduced, and all bounded searches completed. The exact blind
+classifier found nine further independent directions:
 
 ```text
 M17  -- old deep 43 -->  M20  -- 301 quotient-bit lifts -->  M29.
@@ -75,14 +80,14 @@ The compact replay is
 `curve385_quotient_weight_profile_v1.json`, generated without loading the
 public rank-29 fixture.
 
-## Frozen sparse rank-32 protocol
+## Historical sparse rank-32 protocol (completed primary campaign)
 
-The next search is no longer the monolithic `43(2^12-1)=176085` round.  The
-separately frozen protocol starts each discovered lattice state with all 516
-natural weight-one charts and then the remaining 2,838 natural weight-two
-charts.  Any exact rank or finite-index enlargement causes the height lattice
-and quotient complement to be recomputed and the search to restart at weight
-one.  This restart is mandatory because any rank, finite-index, basis,
+The retained sparse protocol replaced the monolithic `43(2^12-1)=176085`
+round. It starts each discovered lattice state with all 516 natural weight-one
+charts and then the remaining 2,838 natural weight-two charts. Any exact rank
+or finite-index enlargement requires the height lattice and quotient complement
+to be recomputed and the historical search to restart at weight one. This
+restart is mandatory because any rank, finite-index, basis,
 height-form, or quotient-complement change invalidates the cached chart order.
 The new chart identities, representatives, scores, and order must be recomputed
 and fingerprinted before search resumes; earlier efficiency calibration does

@@ -188,13 +188,14 @@ the anti-invariant twist point gives that same class by the explicit square
 identity. Neither can recover the non-generic first elliptic Kummer class
 without more information.
 
-**Unresolved next step.** A prospective construction still needs a rational
-split branch with a certified independent image, or a different
-non-generic rational elliptic class. The universal RR curve and the
-calibrated first-seed covering are already available, but generic-input
-selection that reconstructs302 has not been found. This theorem rules out
-one class-transfer mechanism uniformly; it does not justify enlarging a
-search or claiming the broader goal complete.
+**Closed continuation boundary.** The historical construction would need a
+rational split branch with a certified independent image, or a different
+non-generic rational elliptic class. The constructor route is parked, so this
+is a theorem boundary rather than a work queue. The universal RR curve and the
+calibrated first-seed covering do not supply generic-input selection that
+reconstructs302. This theorem rules out one class-transfer mechanism
+uniformly; it neither justifies a search enlargement nor closes the broader
+goal.
 
 ## Independent verification and limits
 

@@ -110,7 +110,7 @@ For unimodular replacements the intrinsic half-lattice is unchanged. The finite 
 
 A post-run generic-data-only score, maximum retained Gram determinant, chooses `arm-14` with determinant 8237. It succeeds in 4.276s, cost rank 2 among successful arms. In this core the first recovered representative is exactly `P14-P16`; the missing P14 was not supplied to the producer. The determinant score can be computed from the retained data alone, and the orthogonal missing height is 1092/det(core), but this is a post-hoc observation, not prospective validation.
 
-The fastest successful frozen core was `arm-11`. Core determinants, selected centre heights and construction cost are available from generic data, but the observed success/cost comparison is post-run. No generic-only chooser has been validated, no selector was optimized on these outcomes and no additional reconstruction arms were run. Transferring a prespecified rule to a genuine MW16 parent is the next experiment, not a result of this calibration.
+The fastest successful frozen core was `arm-11`. Core determinants, selected centre heights and construction cost are available from generic data, but the observed success/cost comparison is post-run. No generic-only chooser has been validated, no selector was optimized on these outcomes and no additional reconstruction arms were run. Transferring a prespecified rule to a genuine MW16 parent would require separately scoped validation; it is not a result of this calibration.
 
 ## Claim boundary
 

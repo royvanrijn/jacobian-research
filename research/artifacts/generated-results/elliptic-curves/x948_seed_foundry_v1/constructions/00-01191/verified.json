@@ -1,0 +1,7 @@
+{
+  "generic_rank_lower_bound": 16,
+  "parent_sha256": "759d30e5d9b1f378e888ecc9f8abec8fdf139e34152aec669ff8fceb1e4292f5",
+  "scope": "Section identities, marked intersections, coefficient transport and separating invariant; reconstruction provenance retained.",
+  "section_identities": 16,
+  "status": "PASS_EXACT_PARENT_REPLAY"
+}

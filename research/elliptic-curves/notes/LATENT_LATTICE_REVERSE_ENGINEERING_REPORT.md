@@ -63,8 +63,8 @@ The calibrated pipeline has four results worth retaining.
   important limit on any claim that the component selector itself is already a
   universal four-fibre recovery algorithm.
 
-The detailed artifacts and exact/heuristic boundary are catalogued in
-[`LATENT_LATTICE_CALIBRATION.md`](LATENT_LATTICE_CALIBRATION.md).
+The active [calibration boundary](LATENT_LATTICE_CALIBRATION.md) links the
+complete historical artifact catalogue and command interfaces in the archive.
 
 ## Frozen target experiments
 
@@ -123,4 +123,3 @@ non-oracle rank-16 component of R17 before exact completion.  Evidence for an
 unknown family would require a new, independently frozen test set.  Until more
 record fibres become available, latent-lattice reverse engineering is retired
 rather than retuned on either failed target cluster.
-

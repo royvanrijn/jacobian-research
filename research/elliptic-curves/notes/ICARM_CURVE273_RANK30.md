@@ -135,10 +135,11 @@ and custom 2-Selmer work remains under `artifacts/local/elliptic-curves/` and
 must not be promoted until its scripts, parameters, outputs, and completeness
 claims are pinned.
 
-The principal research continuation is a certified residual 2-Selmer
-calculation in the cubic 2-division field. Exact smooth principal-ideal
-relations may either produce explicit residual 2-covers to search for a 31st
-point or give the missing upper bound needed for an exact-rank result.
+For the separate exact-rank question, a matching unconditional upper bound
+is still missing. A certified residual 2-Selmer calculation could supply that
+bound or explicit covers to search for a31st point. Completing descent is not
+a prerequisite for certifying another independent point. Current research
+priorities are in the [programme map](../README.md).
 
 The separate source and family investigation is maintained in
 [`ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md`](ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md).

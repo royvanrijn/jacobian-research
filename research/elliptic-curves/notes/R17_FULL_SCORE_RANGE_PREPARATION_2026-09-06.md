@@ -5,7 +5,9 @@ any parameter scan or point exposure by the latest user instruction. Their
 frozen protocols and waiting ledgers are preserved. The already-started cache
 construction, read-only replay and byte verification have finished successfully. The next priority is the
 [retained MW16 score-stratum comparison](RETAINED_MW16_SCORE_STRATA_2026-09-06.md),
-after the corrected MW16 experiment finishes unchanged.**
+whose finite result is retained as history. No subsequent fibre search follows
+from this note; the [current elliptic-curve programme](../README.md) selects
+new work.**
 
 The user requests broader initial populations while retaining the working
 selection stages. The [completed broader MW16 trial](BROAD_MW16_HIGHER_POPULATION_2026-09-06.md)

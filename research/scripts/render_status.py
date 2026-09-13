@@ -55,6 +55,7 @@ ACTIVE_OPEN = {
     "OP-HC4-D5",
     "OP-HC4-SCHUR",
     "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+    "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912",
     "OP-KCOMP",
     "OP-KMON",
     "OP-KDESC",
@@ -64,7 +65,6 @@ ACTIVE_OPEN = {
     "OP-SIC2-B33",
     "OP-SUSP",
     "OP-EC-NEXT",
-    "OP-EC-RANK-JUMP-MECHANISM-20260910",
 }
 def load_index() -> dict:
     return json.loads(INDEX_PATH.read_text())

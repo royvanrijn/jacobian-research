@@ -346,55 +346,24 @@ is
 A separate Sage-polynomial implementation also completed the three blind
 factor replays at `p=163,191,199`, two direct divisions by `Qhat`, and the full
 multiplication identity before entering an avoidable decimal-integer hashing
-bottleneck.  Its digest has been changed to canonical binary integer encoding
-and a persistent certificate replay is in progress.  The generic Jacobian,
-minimal model, and birational maps remain open.
+bottleneck.  A future replay must use canonical binary-integer encoding, but
+it is not current work.  The generic Jacobian, minimal model, and birational
+maps remain open for this historical transport only.
 
-## Next gates
+## Historical compiler boundary
 
-Retain the existing `omega` presentation for the current p-adic pipeline.
-The small rational-projective benefit from `delta` does not compensate for
-the worse raw coordinates or reduce the roughly 1.5-million-bit primitive
-height to a tractable scale.  General two-coordinate `K^*` scaling, nine
-projective coefficient charts, the `I6/I4` and `I2`-trace base gauges, and
-joint evaluation lattices have already failed the independent `p=199` replay;
-they should not simply be repeated in the `delta` basis.  Mere rational
-content extraction is closed by the 7--12-bit content calculation.
+The direct [norm12-orbit-11952 construction](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md)
+now supplies the characteristic-zero alternate-Q80 equation and saturated
+rank-17 basis.  It supersedes this third-q12 compiler as the endpoint route.
+The `omega`/`delta` comparison, failed scaling attempts, and exact quartic
+factors remain useful controls for this particular historical transport; they
+do not justify retrying its roughly 1.5-million-bit coefficient pipeline.
 
-The specialized and generic quartic factors are now certified.  The next
-justified compiler should recover the exact integral-basis corrections `A,B`
-in
+Any new use of this marking requires a fresh mathematical objective and a
+separately scoped input package.  It must not be presented as a specialization
+search or as evidence for a rank bound.
 
-```text
-e = (old_x^2 + A old_x + B)/(L Q),
-```
-
-using the same exact `V=0`-plus-tangent method and the existing trace,
-second-symmetric, and determinant divisibility identities.  This converts the
-normalization of the cubic cover from p-adic candidate data to exact
-characteristic-zero data.  It should then feed the invariant-first computation
-
-```text
-exact factored pencil -> j -> (c4^3,Delta) -> minimal Jacobian -> maps.
-```
-
-An implementation should operate on factored or lazy rational coefficients,
-not expand the 1.5-million-bit primitive coefficient vector, and must replay
-the resulting invariant at the untouched primes `163`, `191`, and `199`.
-
-After the exact third-q12 Jacobian is obtained, compile each remaining
-neighbour in order.  At every stage retain the source equation, zero,
-resolved fibre components, two-way maps, and NS marking.  The final rootless
-equation must have root rank zero and geometric Mordell--Weil rank 17 before
-section transport begins.
-
-The exact arithmetic generic rank 17 is already proved by the direct marking.
-Hypotheses H1--H5 about multisection visibility, quotient minima, rank-28
-exceptional directions, heuristic enrichment, and specialization tails are
-not yet testable.  They require the equation and saturated 17-section basis;
-no specialization-search conclusion is drawn here.
-
-## Replay
+## Historical replay interfaces
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \

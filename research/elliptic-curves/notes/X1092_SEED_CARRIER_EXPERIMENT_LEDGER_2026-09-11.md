@@ -83,9 +83,13 @@ A new experiment in this family should state which genuinely new axis it tests. 
 
 Merely finding another positive-rank genus-one M19 carrier is **not** by itself sufficient reason to restart the same amplification experiment.
 
-## Current operational interpretation
+## Operational interpretation at closure
 
-- Keep the broad production search independent and running according to its own frozen protocol.
+- The separate broad-production protocol is stopped and retained as historical
+  evidence; this ledger does not authorize its restart.
 - Treat the X1092 Elkies-pair M19 lane as **implemented, end-to-end validated, and currently bounded-negative for amplification**.
 - Preserve it as infrastructure and as a control lane, not as the default next search.
-- Theory work should now focus on what distinguishes the exceptional 302 closure from ordinary constructed M18/M19 seeds, rather than on acquiring the first or second generic extra direction again.
+- Future theory should focus on what distinguishes the exceptional 302 closure
+  from ordinary constructed M18/M19 seeds, rather than on acquiring the first
+  or second generic extra direction again. The current programme map selects
+  any newly scoped work.

@@ -14,8 +14,7 @@ python3 research/scripts/research.py show ID
 
 | ID | Recorded state | Result / canonical source |
 |---|---|---|
-| `OP-EC-NEXT` | open | [Parallel rank-jump experiments and rank-32 certification](../elliptic-curves/README.md) |
-| `OP-EC-RANK-CONDUCTOR` | parked; replaced by ECR30, EC-R21-ICARM, OP-EC-NEXT | [Exceptional elliptic rank with record conductor (closed disjunction)](../elliptic-curves/README.md) |
+| `OP-EC-NEXT` | open | [Select productive candidates toward a certified rank32 subgroup](../elliptic-curves/README.md) |
 | `EC-CRT-BEAM-NONMONOTONE` | proved | [Exact false negative for incremental CRT height-beam pruning](../elliptic-curves/THEORY.md) |
 | `ECG12` | proved | [Exact arithmetic generic rank of Nagao's section-7 K3 family](../elliptic-curves/THEORY.md) |
 | `ECR17` | proved | [Finite-reduction independence and certified Nagao rank-17 frontier](../elliptic-curves/THEORY.md) |
@@ -79,7 +78,6 @@ python3 research/scripts/research.py show ID
 | `EC-K3-CURVE302-FIXED-MW14-INVERSE` | proved | [No rational302 parameter on the certified fixed3A1/MW14 fibration](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) |
 | `EC-K3-CURVE302-FULL-MW9` | proved | [Full arithmetic MW9 basis and rank upper bound for the constructed curve-302 K3](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) |
 | `EC-K3-CURVE302-SECTION-SATURATION` | proved | [Complete source MW8 basis and saturated rank-nine subgroup on the constructed curve-302 K3](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) |
-| `OP-EC-CURVE302-CONSTRUCTION-RECOVERY` | parked; replaced by EC-CURVE302-RECOVERED-MW17-PARENT | [Completed: explicit alternative302 parent with full generic MW17 basis](../elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md) |
 | `EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910` | proved; replaced by EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910 | [Curve302 strict ten-dimensional Kummer block has zero unit kernel and ten independent ordinary and narrow half-ideal classes](../elliptic-curves/notes/CURVE302_DESCENT_ANATOMY_2026-09-10.md) |
 | `EC-CURVE302-DET1092-RECONSTRUCTION` | proved | [Unique determinant1092 quadratic reconstruction from302 passes a primitive K3-lattice embedding and identifies an arithmetic moduli lead](../elliptic-curves/notes/CURVE302_DET1092_RECONSTRUCTION_2026-09-07.md) |
 | `EC-CURVE302-EXACT-SHARED-CORE-20260911` | proved | [All fourteen retained Curve302 trajectories share an exact integral quotient core](../elliptic-curves/notes/CURVE302_EXACT_SHARED_CORE_2026-09-11.md) |
@@ -91,6 +89,7 @@ python3 research/scripts/research.py show ID
 | `EC-CURVE302-PARENT-GEOMETRIC-PICARD19` | proved | [Exact geometric Picard19 and full geometric MW17 for the recovered302 parent](../elliptic-curves/notes/CURVE302_PARENT_SEARCH_AND_GEOMETRY_2026-09-07.md) |
 | `EC-CURVE302-PARENT-QUADRATIC-DESCENT-GATE` | proved | [MW17 automorphisms exclude quadratic sources of arithmetic rank1 through16](../elliptic-curves/notes/CURVE302_PARENT_SEARCH_AND_GEOMETRY_2026-09-07.md) |
 | `EC-CURVE302-RECOVERED-MW17-PARENT` | proved | [Explicit alternative302 parent with full saturated arithmetic MW17 basis and determinant1092](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) |
+| `OP-EC-CURVE302-CONSTRUCTION-RECOVERY` | parked; replaced by EC-CURVE302-RECOVERED-MW17-PARENT | [Completed: explicit alternative302 parent with full generic MW17 basis](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) |
 | `EC-CURVE302-RECOVERY-CALIBRATION-20260907` | proved | [Generic17-only302 calibration recovers seven of fourteen exceptional directions](../elliptic-curves/notes/CURVE302_RECOVERED_SUBGROUP_CALIBRATION_2026-09-07.md) |
 | `EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910` | proved | [Curve302 strict ideal image is disjoint from all inherited ideals; the full quotient contributes12–14 ideal dimensions and both seed norm equations are obstructed](../elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md) |
 | `EC-RANK-JUMP-MATCHED-DESCENT-PANEL-20260910` | proved | [Seven of ten fixed same-fibration controls have exact strict/unramified point anatomy and complete Selmer localization images](../elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md) |
@@ -137,8 +136,6 @@ python3 research/scripts/research.py show ID
 | `EC-DET1092-RR-GENERIC-POINT-SPECIFICITY-20260908` | proved | [Nine controls give independent RR Jacobian classes while their marked elliptic points stay in MW17](../elliptic-curves/notes/DET1092_RR_GENERIC_POINT_SPECIFICITY_2026-09-08.md) |
 | `EC-DET1092-RR-NET-REDUCIBLE-LOCUS-20260908` | proved | [The first-centre RR net has exactly22 section-pair members and one reducible pencil](../elliptic-curves/notes/DET1092_RR_NET_REDUCIBLE_LOCUS_2026-09-08.md) |
 | `EC-DET1092-RR-NET-SINGULAR-HALVING-GATE-20260908` | proved | [The first-centre RR net has a genus-nine dense-open singular-member locus](../elliptic-curves/notes/DET1092_RR_NET_SINGULAR_MEMBER_GATE_2026-09-08.md) |
-| `EC-DET1092-FIRST-PENCIL-ELLIPTIC-INVOLUTION-20260908` | proved | [The entire rational first-witness RR pencil has no degree-two elliptic quotient](../elliptic-curves/notes/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md) |
-| `EC-DET1092-RR-PLANE-JACOBIAN-GATE-20260908` | proved | [Explicit nodal RR double plane and absolutely simple fixed and geometric generic genus-two Jacobians](../elliptic-curves/notes/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md) |
 | `EC-DET1092-RR-REAL-DYADIC-DESCENT-20260908` | proved | [Complete real RR Kummer images and exact2-adic inherited-class obstructions on ten frozen members](../elliptic-curves/notes/DET1092_RR_REAL_DYADIC_DESCENT_2026-09-08.md) |
 | `EC-DET1092-SAVED-UNIT-RELATION-OBSTRUCTION-20260909` | proved | [Arbitrary multiplicative words in the sealed567-reduction bank produce no nontrivial units](../elliptic-curves/notes/DET1092_SAVED_UNIT_RELATION_OBSTRUCTION_2026-09-09.md) |
 | `EC-DET1092-SEED-DENSITY-LIMITING-LATTICE-20260908` | proved | [Orbit8044 has thin seed incidence and one limiting normalized height lattice, with intrinsic seed Schur ratio3/8](../elliptic-curves/notes/DET1092_SEED_DENSITY_AND_LIMITING_LATTICE_2026-09-08.md) |
@@ -205,7 +202,7 @@ python3 research/scripts/research.py show ID
 | `EC-FRESH6-V3-M19-20260909` | proved | [Adaptive V3 raises fresh native07ca9 fibre from M18 to M19](../elliptic-curves/notes/FRESH6_RETAINED_SEED_COHORT_2026-09-09.md) |
 | `EC-FULL11952-LATE-BAND-NEW-RANK27-20260906` | proved | [Second-band selection supplies a new minimal27-point curve and a26-point curve](../elliptic-curves/notes/FULL11952_LATE_BAND_TRIAL_2026-09-06.md) |
 | `EC-FULL11952-MILLION-HEIGHT-EXPOSURE-20260906` | proved | [All49 larger boxes on the new27 curve complete without a rank gain](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
-| `EC-FULL11952-NEW-RANK27-20260906` | proved | [Full11952 retention supplies a new minimal27-point curve and a23-point curve](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
+| `EC-FULL11952-NEW-RANK27-20260906` | proved | [Full11952 retention supplies minimal27-point and23-point curves](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
 | `EC-FULL11952-SPECIALIZED-EXPOSURE-20260906` | proved | [The new full11952 rank27 curve completes49 specialized boxes without gain](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
 | `EC-INVENTORY187-CROSS-FAMILY-INCIDENCE-20260906` | proved | [All187 inventory curves have complete twelve-presentation incidence](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
 | `EC-LARGER-PARITY-FIXED-EXPOSURE-20260906` | proved | [Larger fixed parity samples recover the control but leave the own196-chart union at27](../elliptic-curves/notes/FULL11952_NEW_RANK27_2026-09-06.md) |
@@ -218,7 +215,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-R17-NORM12-ICARM-573-REFRESH` | proved | [Exact 573-curve norm-twelve atlas refresh, sixteen new specialization quotients, and curve-499 commensurability](../elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md) |
 | `EC-ICARM-CONSTRUCTION-FINGERPRINTS` | proved | [Bounded exact construction recognition for ICARM curves 273, 281--286, and 302](../elliptic-curves/notes/ICARM_7FFF_ZIP_SEQUENCE.md) |
 | `EC-R21-ICARM` | proved | [Exact rank-at-least-21 and conductor replay for two public low-conductor curves](../elliptic-curves/notes/ICARM_7FFF_ZIP_SEQUENCE.md) |
-| `EC-R20-IC245` | proved | [ICARM curve 245 has rank at least 20 and log conductor below 151](../elliptic-curves/notes/ICARM_CURVE245_RANK20.md) |
+| `EC-R20-IC245` | proved | [ICARM curve 245 has rank at least 20 and certified log conductor below 182.72](../elliptic-curves/notes/ICARM_CURVE245_RANK20.md) |
 | `EC-K3-H3-PTS` | proved | [All rational points on the level-474 H3 base](../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) |
 | `EC-K3-H3-SOURCE` | proved | [Exact level-474 H3 E7+E8/MW2 source family](../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) |
 | `ECR30` | proved | [Unconditional independent replay of the public rank-at-least-30 curve](../elliptic-curves/notes/ICARM_CURVE273_RANK30.md) |
@@ -240,7 +237,7 @@ python3 research/scripts/research.py show ID
 | `EC-INVENTORY188-KNOWN28-CHART-COVERAGE-20260907` | proved | [Known28 witness coverage does not improve under the fixed own27 chart policy](../elliptic-curves/notes/INVENTORY188_CHART_COVERAGE_2026-09-07.md) |
 | `EC-INVENTORY188-POINT-SEARCH-RECOVERY-20260907` | proved | [Existing own27 charts recover the public28 direction despite fixed representative misses](../elliptic-curves/notes/INVENTORY188_EXCEPTIONAL_DIRECTION_RECOVERY_2026-09-07.md) |
 | `EC-INVENTORY201-CONDUCTOR-CONTINUATION-V2-20260907` | proved | [129 exact conductors in the201-curve inventory after100 further completions](../elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md) |
-| `EC-INVENTORY201-README-METRICS-20260907` | proved | [ICARM-compatible201-curve README inventory with minimal models and verified point transports](../elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md) |
+| `EC-INVENTORY201-README-METRICS-20260907` | proved | [Minimal models and point transports for the frozen201-curve inventory](../elliptic-curves/notes/INVENTORY201_TABLE_AND_CONDUCTORS_2026-09-07.md) |
 | `EC-INVENTORY70-CROSS-FAMILY-INCIDENCE-20260906` | proved | [Exact840-pair incidence and duplicate-subgroup closure for70 new curves](../elliptic-curves/notes/INVENTORY70_CROSS_FAMILY_INCIDENCE_2026-09-06.md) |
 | `EC-INVENTORY291-CONDUCTOR-SNAPSHOT-20260909` | proved | [First 291-curve inventory conductor snapshot certifies seven exact conductors and five partial bounds](../elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) |
 | `EC-INVENTORY291-CONDUCTOR-SNAPSHOT2-20260909` | proved | [Second 291-curve conductor snapshot certifies54 exact conductors and74 partial bounds](../elliptic-curves/notes/INVENTORY_REFRESH_2026-09-09.md) |
@@ -311,13 +308,15 @@ python3 research/scripts/research.py show ID
 | `EC-SMALL-CONDUCTOR-TARGETED-STUDY-20260906` | proved | [MW16 at3/17: subgroup saturation at2,3,5 and bounded twelve-chart follow-up](../elliptic-curves/notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md) |
 | `EC-NEXT24-NEW-RANK27-20260906` | proved | [A third new rank-at-least-27 curve and a62-curve inventory](../elliptic-curves/notes/NEXT24_RANK27_DISCOVERY_2026-09-06.md) |
 | `EC-ORBIT8044-PARAMETRIZED-SEED-FACTORY-20260908` | proved | [A height-ordered orbit8044 conic factory certifies seven M18 specializations and six distinct V3 admissions](../elliptic-curves/notes/ORBIT8044_SEED_FACTORY_2026-09-08.md) |
+| `OP-EC-RANK-CONDUCTOR` | parked; replaced by ECR30, EC-R21-ICARM, OP-EC-NEXT | [Exceptional elliptic rank with record conductor (closed disjunction)](../elliptic-curves/notes/ORIGINAL_RANK_CONDUCTOR_TARGET_CLOSED.md) |
 | `EC-OUTER131072-POINT-EXPOSURE-20260906` | proved | [Fixed outer H131072 trial completes2160 boxes without a rank gain](../elliptic-curves/notes/OUTER131072_TRIAL_2026-09-06.md) |
 | `EC-PAIRED-PRODUCT-SCORE-AUDIT-20260906` | proved | [Paired product-score comparison yields no stronger bounded point result; generic visibility countercheck](../elliptic-curves/notes/PAIRED_PRODUCT_SCORE_2026-09-06.md) |
 | `EC-PARENT-PORTFOLIO-SIX-MESTRE-20260907` | proved | [Six Q-distinct Mestre parent inputs beyond the single-surface production portfolio](../elliptic-curves/notes/PARENT_PORTFOLIO_AND_SECTION_LABEL_AUDIT_2026-09-07.md) |
 | `EC-PARENT-FOUNDRY-NEW-A1-CONSTRUCTIONS-20260910` | proved | [Two newly constructed A1 fibrations on X948 and X1092 have exact generic MW16 and a certified rank18 specialization](../elliptic-curves/notes/PARENT_SEARCH_FOUNDRY_2026-09-10.md) |
+| `EC-POINTED-HEIGHT-PORTFOLIO-20260913` | proved | [Three minimal models of one V3 chart have replayed height bounds and a complementary two-model coverage guarantee](../elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) |
 | `EC-POINTED-QUARTIC-CENTRE-CLASSES-20260907` | proved | [Finite-certified new point parities give inequivalent degree-two pointed presentations](../elliptic-curves/notes/POINTED_QUARTIC_CENTRE_CLASSES_2026-09-07.md) |
 | `EC-PRINCIPAL28-EXCEPTIONAL-ANCESTRY-20260912` | proved | [The 14-versus11 exceptional rosters have genus-one bisections but independent selected quadratic covers](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) |
-| `OP-EC-RANK-JUMP-MECHANISM-20260910` | open | [Connect exceptional multisection ancestry to independent rank arithmetic and strict descent](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) |
+| `OP-EC-RANK-JUMP-MECHANISM-20260910` | parked | [Parked: explain rank jumps beyond the completed scoped obstructions](../elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md) |
 | `EC-PRODUCT-FIRST-RETENTION-AUDIT-20260906` | proved | [Product-first retention reaches4338 discarded addresses without a high-rank addition](../elliptic-curves/notes/PRODUCT_FIRST_RETENTION_2026-09-06.md) |
 | `EC-PROSPECTIVE-COMPACT-MW16-NEW-CURVES-20260905` | proved | [Ten additional prospective compact-MW16 curves of certified rank at least 22–25, including a second new rank-at-least-25 example](../elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md) |
 | `EC-PROSPECTIVE-COMPACT-MW16-WIDE-NEW-CURVE-20260905` | proved | [A third new rank-at-least-25 curve from the balanced compact-MW16 height-4096 extension](../elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md) |
@@ -362,11 +361,12 @@ python3 research/scripts/research.py show ID
 | `EC-WIDER-RETENTION-TWO-NEW-RANK27-20260906` | proved | [Two more globally minimal27-point curves and an89-curve inventory from wider retention](../elliptic-curves/notes/WIDER_RETENTION_DISCOVERIES_2026-09-06.md) |
 | `EC-X1092-CLASS1-RATIONAL-MW17-20260910` | proved | [X1092 rootless J2 class1 has an exact rational elliptic realization with saturated MW17](../elliptic-curves/notes/X1092_CLASS1_RATIONAL_MW17_REALIZATION_2026-09-10.md) |
 | `EC-X1092-CLASS3-RATIONAL-MW17-20260910` | proved | [X1092 rootless J2 class3 has an exact rational elliptic realization with saturated MW17](../elliptic-curves/notes/X1092_CLASS3_RATIONAL_MW17_REALIZATION_2026-09-10.md) |
+| `EC-X948-EIGHT-A1-ADMISSIONS-20260913` | proved | [Eight additional X948 A1 fibrations have saturated arithmetic MW16 and exact inequivalence witnesses](../elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md) |
 | `EC-CONSTRUCTED-STRICT-BLIND-RECOVERY-20260912` | proved | [Both constructed strict covers admit blind rational recovery after genus-one reduction, with a generic-only V3 comparison](../elliptic-curves/rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
 | `EC-MW16-FROZEN-DEPENDENCY-CONTINUATION-OBSTRUCTION-20260912` | proved | [The full frozen-coefficient column-6 continuation has an exact good-divisor obstruction and needs base genus at least five](../elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md) |
 | `EC-MW16-MARKED-CARRIER-INCIDENCE-CLOSURE-20260912` | proved | [The 182 completed carrier misses are distinct extensions and persist under every generic translation and pairing](../elliptic-curves/rank-jump/CARRIER_CLOSURE_AND_DEPENDENCY_CONTINUATION_2026-09-12.md) |
 | `EC-MW16-FIXED-WORD-FINITE-SELMER-SPECIALIZATIONS-20260912` | proved | [The fixed column-6 continuation has only finitely many rational Selmer specializations](../elliptic-curves/rank-jump/FIXED_WORD_HAS_FINITE_SELMER_SPECIALIZATIONS_2026-09-12.md) |
-| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` | partial | [Frozen cold class bank stops without new classes; detached V3 reference comparison finishes](../elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
+| `EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912` | partial | [Constructor preflight retained; restricted cold positive commissioning failed](../elliptic-curves/rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
 | `EC-INDEPENDENT-BLOCKS-OBSTRUCTION-REPLAY-20260906` | proved | [Direct quartet quotient sandwiches and 116 radical-partner checks](../elliptic-curves/rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md) |
 | `EC-INDEPENDENT-BLOCKS-RANK-OBSTRUCTIONS` | proved | [Independent block certificates and radical-partner rank obstructions](../elliptic-curves/rank-jump/INDEPENDENT_BLOCKS_AND_RANK_OBSTRUCTIONS.md) |
 | `EC-MARKED-TWO-CLASS-PROPAGATION-THEOREM-20260912` | proved | [Marked simultaneous splitting propagates two independent rational directions over an infinite common base](../elliptic-curves/rank-jump/MARKED_TWO_CLASS_PROPAGATION_2026-09-12.md) |
@@ -381,22 +381,23 @@ python3 research/scripts/research.py show ID
 These documents are not canonical sources of a registered claim. They include workflows, bounded reports and unregistered work; their presence does not establish a theorem or an active campaign.
 
 - [Elliptic-curve research instructions](../elliptic-curves/AGENTS.md)
+- [Elliptic-curve cleanup status — 13 September 2026](../elliptic-curves/CLEANUP_REPORT_2026-09-13.md)
 - [Elkies rank-18 source-recovery audit](../elliptic-curves/ELKIES_RANK18_SOURCE_RECOVERY_AUDIT.md)
 - [Reproducing the elliptic-curve programme](../elliptic-curves/REPRODUCE.md)
 - [Sources and provenance](../elliptic-curves/SOURCES.md)
 - [Elliptic-curve computation map](../elliptic-curves/cas/README.md)
 - [Six-root new-family workflow](../elliptic-curves/cas/newfamily/README.md)
 - [Shared research runtime](../elliptic-curves/cas/research_runtime/README.md)
-- [Current ICARM data](../elliptic-curves/data/ICARM_CURRENT.md)
+- [ICARM/V22 publication snapshot data](../elliptic-curves/data/ICARM_CURRENT.md)
 - [BNF-free residual 2-Selmer bookkeeping](../elliptic-curves/notes/BNF_FREE_RESIDUAL_2SELMER.md)
-- [Broad matched MW17 search](../elliptic-curves/notes/BROAD_MW17_MATCHED_SEARCH_2026-09-10.md)
-- [Broad rank search: runnable, finite and token-free between batches](../elliptic-curves/notes/BROAD_RANK_SEARCH_2026-09-10.md)
+- [Broad matched MW17 historical handoff](../elliptic-curves/notes/BROAD_MW17_MATCHED_SEARCH_2026-09-10.md)
+- [Broad rank search: completed historical record](../elliptic-curves/notes/BROAD_RANK_SEARCH_2026-09-10.md)
 - [Class1 ordinary prospective search](../elliptic-curves/notes/CLASS1_PROSPECTIVE_ORDINARY_SEARCH_2026-09-10.md)
 - [Local-conductor parameter recovery](../elliptic-curves/notes/CONDUCTOR_PARAMETER_RECOVERY.md)
 - [Conductor-directed native-seed first passes](../elliptic-curves/notes/CONDUCTOR_SHORT_PASS_ROSTER_2026-09-09.md)
-- [Curve302 historical chart-exposure controls](../elliptic-curves/notes/CURVE302_CHART_EXPOSURE_CONTROLS_2026-09-11.md)
+- [Curve302 historical chart-exposure control proposal](../elliptic-curves/notes/CURVE302_CHART_EXPOSURE_CONTROLS_2026-09-11.md)
 - [Curve302 historical chart replay adapter](../elliptic-curves/notes/CURVE302_CHART_REPLAY_ADAPTER_2026-09-11.md)
-- [Curve302: persistence, filtered subspaces, and held-out next moves](../elliptic-curves/notes/CURVE302_CLOSURE_FOLLOWUP_2026-09-11.md)
+- [Curve302 historical closure follow-up](../elliptic-curves/notes/CURVE302_CLOSURE_FOLLOWUP_2026-09-11.md)
 - [Curve302 closure-structure experiments](../elliptic-curves/notes/CURVE302_CLOSURE_STRUCTURE_EXPERIMENTS_2026-09-11.md)
 - [Curve302 closure transition graph and rank-29 control](../elliptic-curves/notes/CURVE302_CLOSURE_TRANSITION_GRAPH_2026-09-11.md)
 - [Curve302 decisive common-core bridge analysis](../elliptic-curves/notes/CURVE302_CORE_GROWTH_BRIDGES_2026-09-11.md)
@@ -409,25 +410,26 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Curve 302: preserved strict-residual bootstrap chain](../elliptic-curves/notes/CURVE302_RESIDUAL_STRICT_BOOTSTRAP_CHAIN_2026-09-07.md)
 - [Curve 302: retrospective residual visibility geometry](../elliptic-curves/notes/CURVE302_RESIDUAL_VISIBILITY_GEOMETRY_2026-09-07.md)
 - [Parallel scheduling of the frozen twelve-seed panel](../elliptic-curves/notes/CURVE302_SEED_PANEL_PARALLEL_2026-09-08.md)
-- [Curve302: index, nontrivial basins, and short-vector-only controls](../elliptic-curves/notes/CURVE302_SHORT_CORE_CONTROLS_2026-09-11.md)
+- [Curve302 historical short-core control proposal](../elliptic-curves/notes/CURVE302_SHORT_CORE_CONTROLS_2026-09-11.md)
 - [Curve 302 — target-free V2 active-subgroup beam policy](../elliptic-curves/notes/CURVE302_V2_ACTIVE_SUBGROUP_BEAM_2026-09-07.md)
 - [Curve302 V3 anatomy: exact chart geometry, finite-atlas cost, and limits of closure](../elliptic-curves/notes/CURVE302_V3_ANATOMY_AND_FINITE_ATLAS_2026-09-11.md)
-- [Curve 385 iterated half-lattice recovery (2026-09-04)](../elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md)
-- [Curve74: native M26 short-pass continuation](../elliptic-curves/notes/CURVE74_SHORT_V3_SEARCH_2026-09-09.md)
-- [Curve90: bounded productive-anchor discovery attempt](../elliptic-curves/notes/CURVE90_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
-- [Curve92 productive-anchor search: complete, no certified gain](../elliptic-curves/notes/CURVE92_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
+- [Curve 385 iterated half-lattice recovery — historical completed campaign (2026-09-04)](../elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md)
+- [Curve74: native M26 short-pass result](../elliptic-curves/notes/CURVE74_SHORT_V3_SEARCH_2026-09-09.md)
+- [Curve90 productive-anchor search: historical boundary](../elliptic-curves/notes/CURVE90_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
+- [Curve92 productive-anchor search: historical boundary](../elliptic-curves/notes/CURVE92_PRODUCTIVE_V3_SEARCH_2026-09-09.md)
 - [Curves 273 and 302: paired determinant-1092 and strict-local audit](../elliptic-curves/notes/CURVES273_302_PAIRED_PARENT_FINGERPRINTS_2026-09-07.md)
 - [Four MW17 bases through the curve302 adaptive cascade](../elliptic-curves/notes/DET1092_BASIS_CASCADE_2026-09-08.md)
 - [Determinant-1092 intrinsic low-shell cascade pilot](../elliptic-curves/notes/DET1092_LOW_SHELL_CASCADE_2026-09-07.md)
-- [Determinant1092: parameter intake, one seed, unchanged V3](../elliptic-curves/notes/DET1092_SEARCH_FUNNEL_2026-09-08.md)
+- [Archived plane/Jacobian gate](../elliptic-curves/notes/DET1092_RR_PLANE_AND_JACOBIAN_GATE_2026-09-08.md)
+- [Determinant1092 historical search funnel](../elliptic-curves/notes/DET1092_SEARCH_FUNNEL_2026-09-08.md)
 - [Same-parent V3 pilot: eight frozen determinant-1092 fibres](../elliptic-curves/notes/DET1092_V3_EIGHT_PILOT.md)
-- [V4 wide-bootstrap follow-up on the eight determinant-1092 fibres](../elliptic-curves/notes/DET1092_V4_WIDE_BOOTSTRAP.md)
-- [Relative 2-Selmer pipeline for the compact R17 family](../elliptic-curves/notes/ELKIES_R17_RELATIVE_2SELMER_PIPELINE.md)
+- [V4 wide-bootstrap historical panel](../elliptic-curves/notes/DET1092_V4_WIDE_BOOTSTRAP.md)
+- [Relative 2-Selmer pipeline — historical boundary](../elliptic-curves/notes/ELKIES_R17_RELATIVE_2SELMER_PIPELINE.md)
 - [Escape-from-R17 fingerprints at the high-rank and mechanism controls](../elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md)
-- [Elliptic-curve machinery audit and prospective results](../elliptic-curves/notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
-- [Split-first det1092 search: implementation and handoff](../elliptic-curves/notes/EUCLIDEAN_SEED_SEARCH_PIVOT_2026-09-10.md)
+- [Historical elliptic-curve machinery audit — 5 September 2026](../elliptic-curves/notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
+- [Split-first det1092 search: historical implementation handoff](../elliptic-curves/notes/EUCLIDEAN_SEED_SEARCH_PIVOT_2026-09-10.md)
 - [Extended-score retention and the11952 trace cache](../elliptic-curves/notes/EXTENDED_CACHE_RETENTION_GATE_2026-09-06.md)
-- [External mathematical and machinery audit — 2026-09-04](../elliptic-curves/notes/EXTERNAL_AUDIT_2026-09-04.md)
+- [Historical external mathematical and machinery audit — 4 September 2026](../elliptic-curves/notes/EXTERNAL_AUDIT_2026-09-04.md)
 - [Faster pointed searches and complete fixed-curve follow-ups](../elliptic-curves/notes/FAST_POINT_PIPELINE_AUDIT_2026-09-06.md)
 - [Fermigier corpus baseline evaluation](../elliptic-curves/notes/FERMIGIER_BASELINE_EVALUATION.md)
 - [Fermigier labelled-corpus protocol](../elliptic-curves/notes/FERMIGIER_LABELLED_CORPUS.md)
@@ -436,56 +438,58 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Fermigier rank-20 relative 2-descent experiment](../elliptic-curves/notes/FERMIGIER_RANK20_RELATIVE_DESCENT_EXPERIMENT.md)
 - [Fermigier rank-20 residual 2-Selmer / higher-descent experiment](../elliptic-curves/notes/FERMIGIER_RANK20_RESIDUAL_SELMER.md)
 - [Fermigier quotient fingerprints and frozen-score replay](../elliptic-curves/notes/FERMIGIER_RANK_JUMP_REPLAY.md)
-- [Changing the fibre population by arithmetic height](../elliptic-curves/notes/FIBRE_HEIGHT_POPULATION_2026-09-05.md)
-- [Half-lattice fake-descent replay (2026-09-04)](../elliptic-curves/notes/HALF_LATTICE_FAKE_DESCENT_REPLAY_2026-09-04.md)
+- [Historical fibre-height population experiment — 5 September 2026](../elliptic-curves/notes/FIBRE_HEIGHT_POPULATION_2026-09-05.md)
+- [Historical half-lattice chart calibration — 4 September 2026](../elliptic-curves/notes/HALF_LATTICE_FAKE_DESCENT_REPLAY_2026-09-04.md)
 - [Million-height follow-up on the new higher-parameter rank26 curve](../elliptic-curves/notes/HIGHER26_MILLION_HEIGHT_2026-09-06.md)
 - [Six higher-parameter masked controls recover their withheld directions](../elliptic-curves/notes/HIGHER_R17_MASKED_CONTROLS_2026-09-06.md)
 - [Completed new-direction follow-up on the higher-height rank26 curve](../elliptic-curves/notes/HIGHER_RANK26_FOLLOWUP_2026-09-06.md)
 - [High-rank construction and search: source map](../elliptic-curves/notes/HIGH_RANK_CONSTRUCTION_AND_SEARCH_LEDGER_2026-09-10.md)
 - [Autonomous high-rank search foundry](../elliptic-curves/notes/HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md)
-- [Further native M27 first passes](../elliptic-curves/notes/HIGH_RANK_SHORT_PASS_ROSTER_2026-09-09.md)
-- [ICARM #626 and further submission priorities](../elliptic-curves/notes/ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
+- [Further native M27 short passes: historical boundary](../elliptic-curves/notes/HIGH_RANK_SHORT_PASS_ROSTER_2026-09-09.md)
+- [ICARM #626 historical publication and submission record](../elliptic-curves/notes/ICARM626_PUBLICATION_AND_SUBMISSIONS_2026-09-07.md)
 - [ICARM curve 302: construction and H3/R17 provenance investigation](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md)
 - [Explicit seed supplement to the curve inventory](../elliptic-curves/notes/INVENTORY_SEED_SUPPLEMENT_2026-09-08.md)
 - [Algebra behind Kihara's rank-at-least-14 family](../elliptic-curves/notes/KIHARA_RANK14_IDENTITIES.md)
 - [Latent Mordell--Weil lattice calibration](../elliptic-curves/notes/LATENT_LATTICE_CALIBRATION.md)
 - [Finite-aware latent Mordell--Weil lattice recovery](../elliptic-curves/notes/LATENT_LATTICE_REVERSE_ENGINEERING_REPORT.md)
 - [Preparing longer-score selection in new MW16 territory](../elliptic-curves/notes/MW16_FULL_SCORE_OUTER_PREPARATION_2026-09-06.md)
-- [MW18 centre selection in the generic height geometry](../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
+- [MW18 deep-centre calibration — historical boundary](../elliptic-curves/notes/MW18_DEEP_CENTRE_CALIBRATION_2026-09-05.md)
 - [Nagao section-7 quotient fingerprint and score replay](../elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md)
 - [New-family hidden generic basis and half-lattice experiments](../elliptic-curves/notes/NEWFAMILY_HIDDEN_GENERIC_BASIS_AND_HALF_LATTICE.md)
 - [New six-root quartic construction and constant-section classification](../elliptic-curves/notes/NEWFAMILY_QUARTIC_ROOTS_AND_CONSTANT_SECTIONS.md)
-- [Newfamily replay checklist](../elliptic-curves/notes/NEWFAMILY_REPLAY_CHECKLIST.md)
+- [Newfamily historical replay checklist](../elliptic-curves/notes/NEWFAMILY_REPLAY_CHECKLIST.md)
 - [Seven-extra affine-linear family: exact displayed-subgroup rank 9](../elliptic-curves/notes/NEWFAMILY_SEVEN_EXTRA_RANK9.md)
+- [Rank32 next-direction benchmark](../elliptic-curves/notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md)
 - [Shared pointed-quartic search](../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md)
 - [Exact pointed-quartic slope sieve](../elliptic-curves/notes/POINTED_QUARTIC_SIEVE.md)
-- [Test parents outside the previously productive span](../elliptic-curves/notes/PRODUCTIVE_PARENT_SPAN_REASSESSMENT_2026-09-09.md)
+- [Parents outside the previously productive span](../elliptic-curves/notes/PRODUCTIVE_PARENT_SPAN_REASSESSMENT_2026-09-09.md)
 - [Specialization quotient geometry and the detector cutoff test](../elliptic-curves/notes/QUOTIENT_GEOMETRY_TABLE_2026-09-04.md)
-- [Prospective frozen-Nagao R17 height shell](../elliptic-curves/notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md)
-- [MW29-relative S-class retry for record fibres 356 and 385](../elliptic-curves/notes/R17_MW29_RELATIVE_SCLASS_RETRY_2026-09-04.md)
-- [Higher $2$-power Selmer programme for the R17 record pair](../elliptic-curves/notes/R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md)
-- [R17 small-field prospective class-quotient laboratory](../elliptic-curves/notes/R17_SMALL_FIELD_CLASS_QUOTIENT_LAB.md)
+- [Dated prospective frozen-Nagao R17 height-shell record](../elliptic-curves/notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md)
+- [MW29-relative S-class retry: historical stopping boundary](../elliptic-curves/notes/R17_MW29_RELATIVE_SCLASS_RETRY_2026-09-04.md)
+- [R17 higher-$2$-power Selmer boundary](../elliptic-curves/notes/R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md)
+- [R17 small-field class-quotient laboratory: frozen Phase 0](../elliptic-curves/notes/R17_SMALL_FIELD_CLASS_QUOTIENT_LAB.md)
 - [Visibility, selection and a point-supplied construction](../elliptic-curves/notes/RANK_JUMP_DIAGNOSTICS_2026-09-05.md)
 - [Rank-jump laboratory](../elliptic-curves/notes/RANK_JUMP_LABORATORY.md)
 - [Rank jumps: what the search is actually testing](../elliptic-curves/notes/RANK_JUMP_REASSESSMENT_2026-09-05.md)
 - [The first seventeen submitted points on record curves 273 and 302](../elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md)
 - [Record curves 28, 29, 273 and 302: comparative height-lattice audit](../elliptic-curves/notes/RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md)
 - [Completed follow-ups on the two wider-retention27-point curves](../elliptic-curves/notes/RETENTION_RANK27_FOLLOWUPS_2026-09-06.md)
+- [Seed production and amplification in retained search history](../elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md)
 - [Shared arithmetic and search runtime](../elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md)
 - [Bounded follow-up of the new small-conductor rank22 curve](../elliptic-curves/notes/SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md)
 - [Structural-search groundwork](../elliptic-curves/notes/STRUCTURAL_SEARCH_GROUNDWORK.md)
 - [Censoring audit and bounded cubic 2-class relation prototype](../elliptic-curves/notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md)
 - [Unattended norm12 search](../elliptic-curves/notes/UNATTENDED_NORM12_SEARCH_2026-09-09.md)
 - [V3 handoff — completed](../elliptic-curves/notes/V3_DETACHED_HANDOFF_2026-09-07.md)
-- [Performance gate for the next V3 transfer](../elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md)
-- [One-command V3 → transfer autorun](../elliptic-curves/notes/V3_TRANSFER_AUTORUN_2026-09-07.md)
-- [After 302: one controlled V3 transfer, then three warm rank-27 jobs](../elliptic-curves/notes/V3_TRANSFER_NEXT_STEP_2026-09-07.md)
+- [V3 implementation methods and historical benchmarks](../elliptic-curves/notes/V3_FUTURE_SEARCH_PERFORMANCE_2026-09-08.md)
+- [V3 transfer autorun — historical handoff](../elliptic-curves/notes/V3_TRANSFER_AUTORUN_2026-09-07.md)
+- [V3 transfer handoff — completed](../elliptic-curves/notes/V3_TRANSFER_NEXT_STEP_2026-09-07.md)
 - [Maintained warm-transfer runner](../elliptic-curves/notes/V3_WARM_RUNBOOK.md)
 - [V4 selection checkpoint round-trip repair](../elliptic-curves/notes/V4_SELECTION_CHECKPOINT_REPAIR_2026-09-08.md)
-- [Wide-search equation-only arithmetic profile](../elliptic-curves/notes/WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
+- [Wide arithmetic profile — historical boundary](../elliptic-curves/notes/WIDE_ARITHMETIC_PROFILE_2026-09-12.md)
 - [Frozen class-1 arithmetic intake](../elliptic-curves/notes/X1092_CLASS1_FROZEN_ARITHMETIC_GATE_2026-09-10.md)
 - [X1092: Elkies-style pair search and certified M19-to-V3 handoff](../elliptic-curves/notes/X1092_ELKIES_PAIR_SEARCH_2026-09-10.md)
-- [Bounded commissioning across nonisometric X1092 frames](../elliptic-curves/notes/X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md)
+- [Completed commissioning across nonisometric X1092 frames](../elliptic-curves/notes/X1092_FRAME_BREADTH_COMMISSIONING_2026-09-10.md)
 - [X1092 seed and carrier experiment ledger](../elliptic-curves/notes/X1092_SEED_CARRIER_EXPERIMENT_LEDGER_2026-09-11.md)
 - [The tested additive collision blocks have full private ramification](../elliptic-curves/rank-jump/ADDITIVE_COLLISION_BLOCKS_HAVE_FULL_PRIVATE_RAMIFICATION.md)
 - [Additive-component compatibility closes the arithmetic mixed ranks](../elliptic-curves/rank-jump/ADDITIVE_COMPONENT_KUMMER_COMPATIBILITY.md)

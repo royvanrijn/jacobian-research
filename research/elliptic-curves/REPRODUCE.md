@@ -1,5 +1,14 @@
 # Reproducing the elliptic-curve programme
 
+> **Command reference, not a work queue.** The commands below preserve bounded
+> certificate replays and historical experiment interfaces. They do not
+> authorize a launch, resume, scale-up, or reconstruction of missing inputs.
+> Before any calculation, read the [programme map](README.md),
+> [method memory](../KNOWLEDGE_BASE.md), and the selected canonical claim. The
+> [X948 seed-foundry note](notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md) is
+> the only source for its controller state; every other dated runbook is
+> historical unless newly scoped.
+
 ## Curve302: full MW17 alternative parent
 
 The [canonical proof](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
@@ -1953,18 +1962,18 @@ The first command is an exact transport classification; the separate bounded
 point searches retain their bounded label even though their enumeration is
 exact.
 
-## Current open computations
+## Retained research references
 
-- The curve-273 residual 2-Selmer pipeline is under `cas/` with `bnf_free`,
-  `residual_selmer`, and `curve273` in the filenames. Its intermediate local
-  artifacts remain ignored until a complete certificate exists.
-- The current low-conductor searches are the retained Fermigier rank-20,
-  denominator-offset, mixed-small-prime, and six-root drivers.
-- The H3/rootless-MW17 equation transport lives primarily in `elkies-k3/` and
-  has its own reproduction catalogue.
+- The curve-273 residual 2-Selmer pipeline remains under `cas/` with
+  `bnf_free`, `residual_selmer`, and `curve273` in the filenames. Its
+  intermediate local artifacts are incomplete evidence, not a resumable job.
+- The Fermigier rank-20, denominator-offset, mixed-small-prime, and six-root
+  drivers are retained historical search interfaces.
+- H3/rootless-MW17 equation transport remains in `elkies-k3/`; see its own
+  reproduction catalogue and current claim scope.
 
 No command in this section turns a partial Selmer calculation, timeout, score,
-or bounded negative search into a rank theorem.
+or bounded negative search into a rank theorem or a reason to restart it.
 
 ## Historical searches
 

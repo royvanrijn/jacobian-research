@@ -16,6 +16,11 @@ results omitted here.
 | 11 September | [Exact shared integral core](elliptic-curves/notes/CURVE302_EXACT_SHARED_CORE_2026-09-11.md); [short-vector analysis rejects equality of the whole core chain](elliptic-curves/notes/CURVE302_SHORT_VECTOR_CORE_EXPERIMENTS_2026-09-11.md). |
 | 12 September | [Completed broad ledger](elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md), [rank22 additions](elliptic-curves/notes/BROAD_RANK22_CURVE_LEDGER_2026-09-12.md), [censored arithmetic and sparse relation pilot](elliptic-curves/notes/TWO_CLASS_RELATION_PILOT_2026-09-12.md), and [principal28 exceptional ancestry](elliptic-curves/notes/PRINCIPAL28_EXCEPTIONAL_ANCESTRY_2026-09-12.md). No exact rank upper bound or general rank-jump mechanism follows. |
 
+On 12 September, source review found an exact stable reflection that invalidates
+the period-group containment used for the NS0031 exclusion. Its rational marking
+is `UNKNOWN`; the [correction](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+preserves the valid modular arithmetic and prevents repeating the faulty inference.
+
 The [earlier detailed chronology](archive/repository-cleanup-2026-09-12/research__RESEARCH_TIMELINE.md.txt)
 and [September4 retrospective](archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt)
 remain searchable with `research.py search --history`.

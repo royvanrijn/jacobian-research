@@ -1,0 +1,200 @@
+{
+  "inputs": [
+    "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json",
+    "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
+    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json",
+    "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+    "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage"
+  ],
+  "owners": [
+    "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json",
+    "artifacts/generated-results/elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json",
+    "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json",
+    "artifacts/generated-results/elliptic-curves/parent-foundry-v1/manifest.json",
+    "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/inputs/manifest.json",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/preflight/partial_source_copy/MATH_STATUS.json",
+    "artifacts/generated-results/elliptic-curves/det1092_blind_mw16_v1/frozen_sources/research/MATH_STATUS.json",
+    "artifacts/generated-results/elliptic-curves/parent-foundry-v2/manifest.json"
+  ],
+  "edges": [
+    {
+      "owner": "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json",
+      "input": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "pointer": "/inputs/artifacts~1generated-results~1elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "lock_class": "current",
+      "status": "match",
+      "expected_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "actual_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "status_entries": [
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY"
+      ],
+      "disposition": "current-input-matches"
+    },
+    {
+      "owner": "artifacts/generated-results/elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json",
+      "input": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "pointer": "/inputs/artifacts~1generated-results~1elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "lock_class": "current",
+      "status": "changed",
+      "expected_sha256": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
+      "actual_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "status_entries": [
+        "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP"
+      ],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank19-arithmetic-marking-classifier-v1.json.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "input": "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
+      "pointer": "/inputs/elkies-k3~1data~1arithmetic~1rank19-arithmetic-marking-decisions-v1.json",
+      "lock_class": "current",
+      "status": "match",
+      "expected_sha256": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+      "actual_sha256": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+      "status_entries": [
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER"
+      ],
+      "disposition": "current-input-matches"
+    },
+    {
+      "owner": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json",
+      "input": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "pointer": "/input/sha256",
+      "lock_class": "current",
+      "status": "match",
+      "expected_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "actual_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "status_entries": [
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER"
+      ],
+      "disposition": "current-input-matches"
+    },
+    {
+      "owner": "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json",
+      "input": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "pointer": "/inputs/artifacts~1generated-results~1elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "lock_class": "current",
+      "status": "match",
+      "expected_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "actual_sha256": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+      "status_entries": [
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK"
+      ],
+      "disposition": "current-input-matches"
+    },
+    {
+      "owner": "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json",
+      "input": "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json",
+      "pointer": "/inputs/elkies-k3~1data~1lattice-foundry~1determinant-aware-ranking-evidence-v1.json",
+      "lock_class": "current",
+      "status": "match",
+      "expected_sha256": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd",
+      "actual_sha256": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd",
+      "status_entries": [
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK"
+      ],
+      "disposition": "current-input-matches"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/parent-foundry-v1/manifest.json",
+      "input": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "pointer": "/files/elkies-k3~1scripts~1build_arithmetic_first_marked_t_foundry.py",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43",
+      "actual_sha256": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/elkies-k3/build_arithmetic_first_marked_t_foundry.8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43.py.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/parent-foundry-v1/manifest.json",
+      "input": "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "pointer": "/files/elkies-k3~1scripts~1build_rank19_arithmetic_marking_classifier.sage",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "bca1bf8568d591e5072e8ae3e3c9b15b04b68e1e47ad59847c1b8d4bb20003e6",
+      "actual_sha256": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_rank19_arithmetic_marking_classifier.sage.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/inputs/manifest.json",
+      "input": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "pointer": "/files/elkies-k3~1scripts~1build_arithmetic_first_marked_t_foundry.py",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43",
+      "actual_sha256": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/elkies-k3/build_arithmetic_first_marked_t_foundry.8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43.py.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/euclidean_split_admission_v2/inputs/manifest.json",
+      "input": "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "pointer": "/files/elkies-k3~1scripts~1build_rank19_arithmetic_marking_classifier.sage",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "bca1bf8568d591e5072e8ae3e3c9b15b04b68e1e47ad59847c1b8d4bb20003e6",
+      "actual_sha256": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_rank19_arithmetic_marking_classifier.sage.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/parent-foundry-v2/manifest.json",
+      "input": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "pointer": "/files/elkies-k3~1scripts~1build_arithmetic_first_marked_t_foundry.py",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43",
+      "actual_sha256": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/elkies-k3/build_arithmetic_first_marked_t_foundry.8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43.py.txt"
+    },
+    {
+      "owner": "artifacts/generated-results/elliptic-curves/parent-foundry-v2/manifest.json",
+      "input": "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "pointer": "/files/elkies-k3~1scripts~1build_rank19_arithmetic_marking_classifier.sage",
+      "lock_class": "historical/unclassified",
+      "status": "changed",
+      "expected_sha256": "bca1bf8568d591e5072e8ae3e3c9b15b04b68e1e47ad59847c1b8d4bb20003e6",
+      "actual_sha256": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+      "status_entries": [],
+      "disposition": "historical-executed-input",
+      "preserved_input": "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/elkies-k3__scripts__build_rank19_arithmetic_marking_classifier.sage.txt"
+    }
+  ],
+  "schema": 1,
+  "date": "2026-09-13",
+  "scope": "Eight changed K3 checker/input/output paths in the current cleanup diff, ten referencing generated JSON owners. This is a targeted propagation audit, not an all-repository semantic or arithmetic replay.",
+  "method": "Used the retained audit_generated_provenance.py edge extractor in memory with the current research root and active EC/K3 software locks; rg selected referencing generated JSON files. Only recognizable exact path/hash edges are counted.",
+  "finding": "Five current edges match. The sweep classifier pin and six frozen experiment-manifest source pins identify seven historical executed inputs; each now has an exact preserved source. The sweep scope incorrectly repeated the withdrawn NS0031 exclusion and is corrected to31 UNKNOWN plusNS0024.",
+  "recovered_source": {
+    "revision": "6ce86b8ba43d88c20aa22bd2d4e6b0aa486ef88d",
+    "git_path": "research/elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+    "preserved_path": "archive/elkies-k3/build_arithmetic_first_marked_t_foundry.8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43.py.txt",
+    "sha256": "8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43"
+  },
+  "arithmetic_replays_run": [],
+  "source_review": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
+  "source_sha256": "c089772870c4e2c2a2e1f368ddc0f7bbb0f61e8210641804dc9aa4b61ff39316",
+  "checker_sha256": "82048d8d1fc3aac0654f920c25cb7f44b236ee105a5faa73792a68b17a6ab134",
+  "certificate_sha256": "c60fc5b3a369bd058bbb4fcfb93e0a395280c5ea068d4ed20101a51d459d3ddd",
+  "frame_count": 136,
+  "eligible_ns_count": 32,
+  "current_arithmetic_counts": {
+    "UNKNOWN": 31,
+    "ARITHMETICALLY_EXCLUDED": 1
+  },
+  "census_replay_boundary": "--check computes pending frames and deletes its checkpoint after successful completion; the historical classifier hash is part of checkpoint identity. The17,825,792-class census was not repeated."
+}

@@ -1,0 +1,83 @@
+import hashlib,json,math
+from collections import Counter
+from pathlib import Path
+R=Path('/home/royvanrijn/src/jacobian-research/research')
+W=json.loads((R/'artifacts/generated-results/elliptic-curves/fresh6_retained_rank_witnesses_v1.json').read_text())
+OUT=R/'archive/repository-cleanup-2026-09-12/fresh6-source-review/PROVENANCE.json'
+assert not OUT.exists()
+cache={};checks=[];inputs={};missing=[];protocols=[]
+
+def binding(name,expected,role):
+ p=Path(name) if name.startswith('/') else R/name
+ name=str(p.relative_to(R)) if p.is_relative_to(R) else str(p)
+ if name not in cache:
+  cache[name]=hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else None
+ actual=cache[name];status='match' if actual==expected else 'missing' if actual is None else 'changed'
+ checks.append({'path':name,'expected_sha256':expected,'actual_sha256':actual,'role':role,'status':status})
+ return status
+
+for name,expected in W['source_inputs'].items():
+ assert binding(name,expected,'rank export')=='match'
+ obj=json.loads((R/name).read_text())
+ if isinstance(obj.get('records'),dict):
+  records=obj['records'];termkey,=[k for k in records if k.endswith('/terminal.json')];folder=Path(termkey).parent
+  terminal=records[termkey];protocol=records[str(folder/'protocol.json')];verified=records[str(folder/'verified.json')]
+  assert verified['status']=='PASS_INDEPENDENT_PRODUCTIVE_V3_REPLAY'
+  assert verified['terminal_sha256']==obj['bindings'][termkey]
+  assert verified['rank_lower_bound']==terminal['rank_lower_bound']
+  assert verified['charts']==terminal['charts']==sum(s['charts'] for s in terminal['stages'])
+  assert terminal['protocol_sha256']==obj['bindings'][str(folder/'protocol.json')]
+  for path,digest in obj['bindings'].items():
+   if binding(path,digest,'exported historical receipt')=='match':
+    assert json.loads((R/path).read_text())==records[path]
+  guard=[]
+  for category in ('sources','inputs'):
+   for path,digest in protocol[category].items():
+    guard.append(binding(path,digest,'protocol '+category))
+  guard.extend([binding('/usr/bin/gp',protocol['gp_sha256'],'GP executable'),binding(protocol['map_python'],protocol['map_python_sha256'],'map interpreter launcher')])
+  charts=[str(folder/f"epoch-{s['epoch']:02d}"/f'chart-{i:04d}.json') for s in terminal['stages'] for i in range(s['charts'])]
+  seeds=[str(folder/f"epoch-{s['epoch']:02d}"/'seed.json') for s in terminal['stages']]
+  absent=[p for p in charts+seeds if not (R/p).is_file()]
+  missing.extend(absent)
+  protocols.append({'source_export':name,'folder':str(folder),'family':protocol['family'],'parameter':protocol['parameter'],'initial_rank':terminal['initial_rank'] if 'initial_rank' in terminal else protocol['initial_rank'],'terminal_rank':terminal['rank_lower_bound'],'charts':terminal['charts'],'historical_verified_status':verified['status'],'guard_statuses':dict(Counter(guard)),'chart_and_epoch_seed_files_present':len(charts+seeds)-len(absent),'chart_and_epoch_seed_files_missing':absent,'full_replay_executed_now':False,'cached_verified_shortcut':True})
+ elif obj.get('status')=='PASS_REPLAYED_CLOUD_RECONCILIATION':
+  companion=json.loads((R/str(Path(name).with_name('result.json'))).read_text());termkey,=[k for k in companion['records'] if k.endswith('/terminal.json')];folder=Path(termkey).parent
+  for path,digest in obj['bindings'].items():binding(str(folder/path),digest,'reconciliation witness')
+  assert obj['point_searches']==0 and obj['rank_lower_bound']==obj['initial_rank']+len(obj['gains'])
+
+C='artifacts/generated-results/elliptic-curves/fresh6_conductor_audit_v1/result.json';a=json.loads((R/C).read_text());inputs[C]=hashlib.sha256((R/C).read_bytes()).hexdigest()
+assert binding('elliptic-curves/cas/audit_fresh6_conductors.sage',a['source_sha256'],'conductor producer')=='match'
+assert binding(a['database'],a['database_sha256'],'pinned conductor benchmark')=='match'
+assert binding(a['exact_replay']['path'],a['exact_replay']['sha256'],'historical conductor second execution')=='match'
+conductor=[]
+for row in a['rows']:
+ q=row['audit'];coef=list(map(int,q['curve']));assert coef[:3]==[0,0,0]
+ D=abs(-16*(4*coef[3]**3+27*coef[4]**2));remaining=int(q['unprocessed_cofactor'])
+ assert D==int(q['discriminant'])==remaining*math.prod(int(t['prime'])**t['raw_discriminant_valuation'] for t in q['local_data'])
+ N=math.prod(int(t['prime'])**t['conductor_valuation'] for t in q['local_data'])
+ assert N==int(q['conductor_lower_bound']) and N*remaining==int(q['conductor_upper_bound'])
+ assert binding(q['input'],q['input_sha256'],'conductor input subgroup')=='match'
+ if q.get('exact_conductor'):
+  assert remaining==1 and N==int(q['exact_conductor']) and N>int(row['pinned_benchmark']['conductor'])
+  replay=json.loads((R/a['exact_replay']['path']).read_text())
+  for key in ('curve','rank_lower_bound','discriminant','local_data','unprocessed_cofactor','exact_conductor'):assert q[key]==replay[key]
+ conductor.append({'family':row['family'],'status':q['status'],'unprocessed_digits':len(str(remaining)),'arithmetic_identities':'PASS','local_reduction_and_primality_recomputed_now':False})
+P='artifacts/generated-results/elliptic-curves/fresh6_amplification_v1/103b2_sampled_parent_span.json';s=json.loads((R/P).read_text());inputs[P]=hashlib.sha256((R/P).read_bytes()).hexdigest()
+def rank(masks):
+ piv={}
+ for n in masks:
+  while n:
+   p=n.bit_length()-1
+   if p in piv:n^=piv[p]
+   else:piv[p]=n;break
+ return len(piv)
+assert len(s['maximum_masks'])==43 and rank(s['maximum_masks'])==s['maximum_span_rank']==16
+assert all((n&s['annihilator_mask']).bit_count()%2==0 for n in s['maximum_masks'])
+assert [n for n in s['selected_sampled_masks'] if (n&s['annihilator_mask']).bit_count()%2]==s['sampled_outside_maximum_span']
+assert len(s['selected_sampled_masks'])==16 and len(s['sampled_outside_maximum_span'])==13
+for p,h in s['bindings'].items():binding(p,h,'generic parity certificate input')
+result={'schema':1,'reviewed_on':'2026-09-12','boundary':'Read-only provenance and arithmetic-identity audit. Exact retained rank replay is recorded separately. No full CVP/map/search/timing replay, conductor local-reduction recomputation, prime proving, factorization or generic-minimum search. Hash matches and historical PASS receipts do not execute their producers.','rank_witness_sha256':hashlib.sha256((R/'artifacts/generated-results/elliptic-curves/fresh6_retained_rank_witnesses_v1.json').read_bytes()).hexdigest(),'additional_input_hashes':inputs,'protocols':protocols,'bindings':checks,'binding_totals':dict(Counter(c['status'] for c in checks)),'missing_chart_and_seed_paths':missing,'conductor_identity_checks':conductor,'generic_parity_identity_check':{'status':'PASS','maximum_classes':43,'span_rank':16,'annihilator_mask':45903,'sampled_parents':16,'sampled_outside_span':13}}
+OUT.write_text(json.dumps(result,indent=2)+'\n')
+print('protocols',len(protocols),'binding totals',result['binding_totals'],'missing charts/seeds',len(missing))
+print('changed guard paths',sorted({x['path'] for x in checks if x['status']=='changed'}))
+print('conductor identities and retained second-execution comparison PASS; primality/local reductions not rerun')

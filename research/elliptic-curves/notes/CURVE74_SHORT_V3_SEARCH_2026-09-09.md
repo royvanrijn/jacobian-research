@@ -1,4 +1,4 @@
-# Curve74: native M26 short-pass continuation
+# Curve74: native M26 short-pass result
 
 The R17 family07ca9 fibre at `613/828`, inventory74, receives a frozen
 100-total-invocation first pass. Its existing M26 comes from
@@ -30,6 +30,10 @@ certificates are replayed. The terminal reason is `CHART_BUDGET_EXHAUSTED`;
 the untested suffix remains UNKNOWN.
 
 [The sealed result](../../artifacts/generated-results/elliptic-curves/curve74_short_v3_v1/result.json)
-retains the seed and completion records. `continuation-queue.json` preserves
-the next map/centre for a possible cached continuation. No new lower bound,
-rank28 direction or conductor improvement was found by this prefix.
+retains the seed and completion records. `continuation-queue.json` is a dated
+stopping-state record: it preserves the next unseen map/centre, certified M26
+basis and frozen landscape, but neither launches nor certifies the untested
+suffix. Any follow-up needs a separately scoped reason from the
+[programme map](../README.md) and must retain this completed exposure. No new
+lower bound, rank28 direction or conductor improvement was found by this
+prefix.

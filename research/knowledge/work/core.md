@@ -12,7 +12,7 @@ Proposals are unscheduled. Read the full claim scope before acting; supporting c
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the eleven checker-absence classifications unless their bound sources change.
+**Next step:** Reuse the completed active partial-result and checker-absence reviews. Continue with the remaining high-risk EC/K3 claims: exact title/scope, logical dependencies, checker purpose, replay inputs and assurance evidence. Record per-claim outcomes; do not repeat the existing checker-absence classifications unless their bound sources change.
 
 **Completion evidence:** Each reviewed claim has a sourced semantic outcome and any correction has propagated to its consumers. Metadata PASS alone does not complete this task.
 
@@ -28,11 +28,11 @@ Inherited checklist items: `LEGACY-20260904-241`, `LEGACY-20260904-243`, `LEGACY
 
 **Disposition:** proposed. **Kind:** maintenance. **Compute class:** none.
 
-**Next step:** The active EC/K3 partial-result source review is complete. After a partial claim or reviewed source changes, review its surviving obligation and later results, then update that specific review and regenerate navigation.
+**Next step:** Every current partial result has a source review. After a partial claim or reviewed source changes, review its surviving obligation and later results, then update that specific review and regenerate navigation.
 
-**Completion evidence:** Every active partial entry has a fresh source-level record with its exact first missing gate, input boundary and scoped evidence; check-navigation enforces coverage.
+**Completion evidence:** Every partial entry, including archived history, has a fresh source-level record with its exact first missing gate, input boundary and scoped evidence; check-navigation enforces coverage.
 
-**Prerequisites and boundary:** A review records what remains unproved; it does not complete the theorem or authorize a missing calculation. Archived programme reviews remain historical.
+**Prerequisites and boundary:** The original113-partial baseline was reconciled: all77 EC/K3 and36 archived-programme entries have source reviews, with no original ID lost. The current ledger has115 partial entries, all reviewed. Reuse these reviews unless their claims or sources change. A review records what remains unproved; it does not complete the theorem or authorize a missing calculation.
 
 Sources: [partial_reviews.json](../../knowledge/partial_reviews.json); [MATH_STATUS.json](../../MATH_STATUS.json).
 
@@ -48,9 +48,9 @@ Inherited checklist items: `LEGACY-20260904-266`, `LEGACY-20260904-1044`. Full w
 
 **Completion evidence:** Each selected claim can be replayed from its preserved sufficient inputs; missing projections remain explicit and hashes change only through the owning producer.
 
-**Prerequisites and boundary:** Existing software-lock paths pass the current metadata audit. This does not establish semantic sufficiency or byte-for-byte reproducibility of every external input. MW17-jump-v2 retains historical raw chunks, while amended-runtime base chunks are absent; recovering compatible inputs requires identity review, not automatic regeneration.
+**Prerequisites and boundary:** Existing software-lock paths pass the current metadata audit. The current EC artifact audit binds350 registered generated artifacts to their canonical notes and keeps three no-artifact source reviews current; each states its written-proof or finite-regression primary-evidence boundary. This does not establish semantic sufficiency or byte-for-byte reproducibility of every external input. MW17-jump-v2 retains historical raw chunks, while amended-runtime base chunks are absent; recovering compatible inputs requires identity review, not automatic regeneration.
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [REPRODUCE.md](../../REPRODUCE.md); [MW17_JUMP_V2_2026-09-04.md](../../elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md).
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [REPRODUCE.md](../../REPRODUCE.md); [MW17_JUMP_V2_2026-09-04.md](../../elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md); [canonical_evidence_reviews.json](../../knowledge/canonical_evidence_reviews.json).
 
 Inherited checklist items: `LEGACY-20260904-295`, `LEGACY-20260904-297`, `LEGACY-20260904-307`, `LEGACY-20260904-1046`, `LEGACY-20260904-1048`. Full wording: `research.py show LEGACY-ID`.
 

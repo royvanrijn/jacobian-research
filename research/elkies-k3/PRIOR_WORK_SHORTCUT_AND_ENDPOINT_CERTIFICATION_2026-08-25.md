@@ -1,4 +1,4 @@
-# Prior-work shortcut and endpoint-certification directive
+# H3 corridor endpoint certificate and historical record
 
 Date: 2026-08-25.
 
@@ -11,6 +11,30 @@ not a request to rebuild those equations. The optional q1599 child is not
 the stored q207 suffix frame; the q323 component-2 zero is already exact,
 and its surviving optional gate is the correctly marked outgoing q12 horizontal.
 Candidate 5887 was lifted and rejected as that target; see the retained outcome below.
+
+## Current navigation and replay boundary
+
+This is a closed construction record, not the current K3 work queue. The
+[route map](CONSTRUCTION_ROUTES.md) is the concise navigation surface; the
+[process atlas](ELKIES_K3_PROCESS_ATLAS.md) retains the dated route decisions;
+and the [elliptic-curve programme](../elliptic-curves/README.md) records the
+current rank32 objective. The completed H3 corridor is useful as a certified
+parent and regression, but it is not a reason to restart an equation route.
+
+| Route or branch | Current result | Remaining scope |
+|---|---|---|
+| q4/orbit1584 → q4/orbit164 → q8/orbit376 → q12/orbit5867 | Source-identified rootless K3 with geometric Picard rank19 and full saturated R17 of rank17 | Arithmetic specialization is separate. |
+| Optional q4/orbit1599 | Exact A3+2A2/MW10 edge | Its child is not the stored q207 suffix; no suffix transport is supplied. |
+| Optional q4/orbit323 | Exact A3+2A2/MW10 edge and component-2 zero | A correctly marked outgoing q12 horizontal with a5A1 child remains open. Candidate5887 has a6A1 child and is excluded from that role. |
+
+Read the retained certificates before running a command. The displayed endpoint
+and height-basis scripts are generators: they write their output paths and do
+not provide a read-only `--check` mode. The endpoint certificate is
+[`elkies-k3-h3-q12o5867-endpoint-certificate.json`](../artifacts/generated-results/elkies-k3-h3-q12o5867-endpoint-certificate.json).
+The basis and intermediate scripts also read ignored local inputs and may
+repeat finite shell, lifting, intersection or point-count arithmetic. They are
+not routine metadata checks. Missing local inputs do not authorize rebuilding
+the route.
 
 ## Historical construction rationale
 
@@ -142,6 +166,9 @@ This is preferable to a fresh unconstrained 17-section nonlinear solve and may
 be preferable to transporting seventeen sections through all remaining edges.
 
 ## Historical routing instruction — completed
+
+This section records the former routing decision and its evidence. It does not
+schedule a route continuation.
 
 The q4/orbit1584 and q4/orbit164 equation edges are now certified exactly as
 described below.  Preserve those results narrowly.  The intended construction
@@ -471,7 +498,7 @@ determinant-948 height Gram. The exact quartic pointing, two-prime
 van-Luijk/Artin--Tate calculation, and even-overlattice audit above close the
 source-identity, Picard-rank, and saturation gates.
 
-The exact equation replays are:
+The following are historical regeneration commands, not cheap checks:
 
 ```bash
 sage -python elkies-k3/scripts/certify_h92_q4o208_physical_q4o1584_rr_qq.sage

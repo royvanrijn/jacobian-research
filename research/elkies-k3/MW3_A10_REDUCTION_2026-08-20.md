@@ -1,7 +1,9 @@
 # A10/MW3 normalized reduction and two-section seed — 2026-08-20
 
-This note records the current exact finite-field frontier on the preferred
-semistable reconstruction branch
+This historical note retains the finite-field A10/MW3 reconstruction controls.
+The primary rank17 reconstruction is complete through the
+[certified H3 endpoint](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+The separate modular branch below targets
 
 ```text
 ADE = A10 + A2 + A1^2
@@ -9,9 +11,10 @@ fibers = I11 + I3 + I2 + I2 + 6 I1
 MW rank target = 3.
 ```
 
-All results in this note are computations over `GF(31)`.  They prove
-nonemptiness and smoothness of modular charts; they do not yet give a
-characteristic-zero K3 family or a high-rank elliptic curve over `Q`.
+The retained experiments use `GF(31)` and `GF(23)`. The latter realizes the
+target three-section height lattice and admits the recorded finite Hensel lift;
+this does not give a rational point or a characteristic-zero family on this
+branch. Its old continuation list is historical, not a scheduled campaign.
 
 ## Structural P1 reduction
 
@@ -285,7 +288,7 @@ sage elkies-k3/scripts/analyze_mw3_a10_target_lift_gf23.sage \
   --hensel-digits=20
 ```
 
-## Next frontier
+## Historical continuation gates
 
 1. Exhaust the 10,626 normalized `(rho,r1,lambda)` slices over `GF(23)` and
    recover all canonical target triples on this one-dimensional locus.

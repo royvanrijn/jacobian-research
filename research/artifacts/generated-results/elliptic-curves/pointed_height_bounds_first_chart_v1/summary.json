@@ -1,0 +1,87 @@
+{
+  "schema": "pointed-height-first-chart-summary.v1",
+  "status": "PASS_BOUNDS_MINIMAL_MODELS_AND_LOCAL_PORTFOLIO",
+  "rows": [
+    {
+      "model": "factor_free",
+      "bounds": {
+        "B1": -40.2304349537233,
+        "B2": -13.837767389480412,
+        "log_guaranteed_x_height_radius": 102.2953456230594,
+        "bezout_only_B2": 74.03245797216537
+      },
+      "producer_cpu_seconds": 0.19945783799999994,
+      "replay_cpu_seconds": 0.273066445,
+      "packet": "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/factor_free-bounds.json",
+      "packet_sha256": "1570ef77a7f885c4b892f0b367d7a374fb1dfa16063f31e72a7b5ee98007d452"
+    },
+    {
+      "model": "preconditioned_full",
+      "bounds": {
+        "B1": -39.15121739941154,
+        "B2": -15.384859566617058,
+        "log_guaranteed_x_height_radius": 108.48371433160598,
+        "bezout_only_B2": 71.5894860604147
+      },
+      "producer_cpu_seconds": 0.125787569,
+      "replay_cpu_seconds": 0.17900024599999997,
+      "packet": "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/preconditioned_full-bounds.json",
+      "packet_sha256": "47d5ead6c09009fbb41b7f1496878e87d205ace4d3417269aeeca9557f501e6c"
+    },
+    {
+      "model": "minimal-neighbour-p5-r1",
+      "bounds": {
+        "B1": -39.432117541611504,
+        "B2": -14.816585202127738,
+        "log_guaranteed_x_height_radius": 106.2106168736487,
+        "bezout_only_B2": 72.56011990301253
+      },
+      "producer_cpu_seconds": 0.13719376099999997,
+      "replay_cpu_seconds": 0.18385082400000002,
+      "packet": "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-0-bounds.json",
+      "packet_sha256": "e248f08206c2bb207e47d65ceb8881f16371993ce16b2096a2ba16ad1fec4a7d"
+    },
+    {
+      "model": "minimal-neighbour-p7-r0",
+      "bounds": {
+        "B1": -39.76887571460632,
+        "B2": -14.804171720734326,
+        "log_guaranteed_x_height_radius": 106.16096294807505,
+        "bezout_only_B2": 72.17017390629742
+      },
+      "producer_cpu_seconds": 0.168340219,
+      "replay_cpu_seconds": 0.17439122299999998,
+      "packet": "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-1-bounds.json",
+      "packet_sha256": "a9910d962b610681d655dd89fe8f2ac587797beaf59cc0dfbc071eb78d8684c1"
+    }
+  ],
+  "portfolio": {
+    "portfolio_B2": -15.777126795261983,
+    "parameter_height_factor_over_best_single": 1.4803332459982117,
+    "address_work_ratio_to_best_single": 0.9126641888456963
+  },
+  "new_point_calls": 0,
+  "new_minimization_calls": 0,
+  "new_reduction_calls": 2,
+  "boundary": "One retained Curve302 chart; certified geometric coverage, not CPU or rank improvement. Earlier engineering failures are retained; a whole-pilot cost comparison is unavailable.",
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/alternative-model-protocol.json": "4fffb1bf1c2a4265ef3c4262e78f7d3ad0ee53996386c47e76f4e72972acd158",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/factor_free-bounds.json": "1570ef77a7f885c4b892f0b367d7a374fb1dfa16063f31e72a7b5ee98007d452",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/factor_free-input.json": "cbe5eac8c5b16d728f049d1a970ddb94e740ed6639b8eda83329f0fcc26bcc2d",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/factor_free-verified.json": "7b05fc2d221a4ff1c762e3228dd72c5b3d3f79080f568c9ac462773b6513d55a",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/meter.json": "765a6eac5857d490de3d9f5a732257160f71f93dc99b4b7b3569ed55fa1e4f9f",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/construction.json": "76161d14590d1487b8d75a5baafb5e243487e1f3f7364a4c243d103b298ccdfe",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/minimality-verified.json": "8031abfc593152e4bdb2ff4de3c07e58f2ff460f124a227ea9a89394dd295e29",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-0-bounds.json": "e248f08206c2bb207e47d65ceb8881f16371993ce16b2096a2ba16ad1fec4a7d",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-0-input.json": "ec83f41a0425c2a1a59c42f1640000e3245d933965a81cb4f18c9e80e9f670f6",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-0-verified.json": "ceedddefa9e77a58ee72f9831183e3d979677270b50c27907ab5d643c4cb03f3",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-1-bounds.json": "a9910d962b610681d655dd89fe8f2ac587797beaf59cc0dfbc071eb78d8684c1",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-1-input.json": "ba4cfd88a2edee2b97966fae0ef06014d518692af0f049e85623b42635c6c7a2",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/neighbours/neighbour-1-verified.json": "e97421a1503acbf7fee27b7c9679db0a7fbf3b2ddedec9a3e57e87514a92bf69",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/portfolio-verified.json": "92b194067435a97b83d3cc5ef47478cd47c3d8735cbcae7e1e009b73e4bd5f38",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/preconditioned_full-bounds.json": "47d5ead6c09009fbb41b7f1496878e87d205ace4d3417269aeeca9557f501e6c",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/preconditioned_full-input.json": "22011e663675ddab65057e6672151078565fb3e8c232418285e7c9e739589e5c",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/preconditioned_full-verified.json": "3f4ccec8c4b692f39aa6217b8422487c73cb96ce8783cd8e7c4033e20b0c8c3e",
+    "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/protocol.json": "c64dca91043e28337e761394141e310d6b71e060d76f25a2c2bfdbc4b6c51acc"
+  }
+}

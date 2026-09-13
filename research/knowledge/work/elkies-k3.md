@@ -12,7 +12,7 @@ Proposals are unscheduled. Read the full claim scope before acting; supporting c
 
 **Disposition:** proposed. **Kind:** research. **Compute class:** none.
 
-**Next step:** Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate.
+**Next step:** Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate. For NS0031, determine the full stable projective period group and QQ model after the reflected determinant37 action invalidated the previous exclusion.
 
 **Completion evidence:** An exact marked rational source or obstruction; a positive handoff must include full rational NS, primitive nef rootless U and seventeen saturated rational sections.
 
@@ -28,13 +28,13 @@ Sources: [DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md](../../el
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Compare the old seven-fibre, alternate-bisection, long lattice/glue, 63917-class and Niemeier replay items against current claims, modes and certificates before selecting any replay.
+**Next step:** Use the completed native quotient transports, offline projection/dataset checks and product-inversion source review. The latter validates retained coverage and inputs, not its modular proof; --check has no checkpoint restart. Review the remaining cover/local/norm8/highest-transport/holdout and long lattice/glue/Niemeier modes against later closures. Declare exact targets, independent coverage and a finite checkpointed proposal before any execution.
 
 **Completion evidence:** Each inherited replay has a current exact target, existing coverage evidence and either a supersession or a finite checkpointed proposal.
 
 **Prerequisites and boundary:** Old 08f72/1183a/098fc blocked-current labels describe September 4 snapshots. They do not authorize restarting or touching current workers.
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [SCRIPT_ROUTE_AND_FAILURE_LEDGER.md](../../elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [SCRIPT_ROUTE_AND_FAILURE_LEDGER.md](../../elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md); [R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026](../../elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026); [R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md](../../elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md).
 
 Inherited checklist items: `LEGACY-20260904-264`, `LEGACY-20260904-321`, `LEGACY-20260904-342`, `LEGACY-20260904-360`, `LEGACY-20260904-472`. Full wording: `research.py show LEGACY-ID`.
 
@@ -44,11 +44,11 @@ Inherited checklist items: `LEGACY-20260904-264`, `LEGACY-20260904-321`, `LEGACY
 
 **Disposition:** proposed. **Kind:** replay. **Compute class:** bounded-replay.
 
-**Next step:** Identify the three exact inputs consumed by derive_h92_q6_child_q8_corrected2cover_qq.sage and inspect whether a sufficient compact projection is already retained.
+**Next step:** The three exact checker inputs have been identified and are absent from the checkout, archive and git history: elkies-k3-h92-q6-child-jacobian.json, elkies-k3-h92-q6-child-zero-section.json and elkies-k3-h92-q6-child-e7-infinity-sections.json. The retained physical-root target is not a sufficient compact projection. Recover byte-identical inputs, or authorize the explicit producer-chain replay, before running the corrected checker.
 
 **Completion evidence:** A self-contained projection and independent replay reproduce the stated H3-Q6-to-q8 payload with unchanged proof meaning.
 
-**Prerequisites and boundary:** The theorem remains at its recorded status. Rebuilding a missing intermediate chain is an explicitly scoped replay calculation, not a cleanup command.
+**Prerequisites and boundary:** Static source audit on 2026-09-13: derive_h92_q6_child_q8_corrected2cover_qq.sage requires the three missing inputs with exact child-Jacobian, zero-section and E7-infinity-section statuses. Their producers are certify_h92_q6_child_jacobian.sage and derive_h92_q6_child_zero_section.sage; no self-contained retained projection was found. The theorem remains at its recorded status. Rebuilding the missing intermediate chain is an explicitly scoped replay calculation, not a cleanup command.
 
 Authority: [EC-K3-H3-Q6](../../elkies-k3/BISECTION_COLLISION_SEARCH.md) (proved).
 
@@ -58,19 +58,19 @@ Inherited checklist items: `LEGACY-20260904-309`. Full wording: `research.py sho
 
 ## WORK-K3-MARKING-REVIEW
 
-**Review external full-marking theorem inputs**
+**Retain the completed NS0031 theorem-input review and its correction**
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Inspect the exact X0(37) rational-point theorem and marked-K3 period/Clifford implication used for NS0031, retaining source versions and hypotheses.
+**Next step:** Completed at the September12 snapshot: retain the finite replay, the reviewed Velu/Dolgachev hypotheses and the stable-reflection counter-witness. Use WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17 for the separate unresolved full-period-curve and rational-marking mathematics; do not repeat this review as an unstarted task.
 
-**Completion evidence:** A scoped independent review documents both external inputs and the checker implication; any replay has a declared mode and budget.
+**Completion evidence:** The inherited review is complete with both external inputs inspected, the erroneous implication corrected in status and consumers, exact regression checks and preserved before evidence. Completion of review does not decide rational K3 existence.
 
-**Prerequisites and boundary:** NS0024 and NS0031 stay outside the rational-source queue under the current obstructions; local and geometric controls remain useful.
+**Prerequisites and boundary:** NS0031 returns as UNKNOWN; its local and geometric controls and valid norm-one arithmetic are retained. NS0024 retains its separate exclusion.
 
-Authority: [OP-K3-DIFFERENT-NS-ARITHMETIC-MW17](../../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) (open).
+Authority: [OP-K3-DIFFERENT-NS-ARITHMETIC-MW17](../../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) (open); [EC-K3-NS0031-QQ-MARKING-OBSTRUCTION](../../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (partial); [EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS](../../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md](../../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md); [DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md](../../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md](../../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md); [DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md](../../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md); [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md](../../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md); [REVIEW.json](../../archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json).
 
 Inherited checklist items: `LEGACY-20260904-345`, `LEGACY-20260904-355`. Full wording: `research.py show LEGACY-ID`.
 
@@ -80,11 +80,11 @@ Inherited checklist items: `LEGACY-20260904-345`, `LEGACY-20260904-355`. Full wo
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Match the historical 54 untransported fibres against current exact transport records; propose a small remaining cohort only after identifying which dimensions are still unknown.
+**Next step:** The 69-fibre reconciliation is current: 15 exact displayed-subgroup transports and 54 literal nulls. The former rank-28 tranche (curves 11, 391 and 423) is complete. If a new bounded transport calculation is authorized, use only the declared rank-27 initial tranche, curves 67 and 416 on 08234; both require a saturated chart-specific generic transport, exact specialization relations, displayed-subgroup independence and a Smith proof. The other 52 null rows remain deferred.
 
 **Completion evidence:** Every reconciled fibre has a sourced saturated transport or an explicit unknown. Historical top-tranche completions are preserved.
 
-**Prerequisites and boundary:** Do not turn the old count into a current census without comparison; displayed quotients are not full Mordell-Weil quotients.
+**Prerequisites and boundary:** The carrier profile and calibration dataset bind the 69=15+54 partition, retain nulls rather than inferred dimensions, and select the two-row tranche solely by maximum rank lower bound. Displayed-subgroup quotients are not full Mordell--Weil quotients, and historical search exposure remains UNKNOWN. Do not reopen the former rank-28 trio or use public hit counts as a priority statistic.
 
 Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md](../../elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 
@@ -96,17 +96,33 @@ Inherited checklist items: `LEGACY-20260904-323`. Full wording: `research.py sho
 
 **Disposition:** proposed. **Kind:** review. **Compute class:** none.
 
-**Next step:** Review which complete character and singular-normalization exclusions still need independent witnesses. The V4 timeout record review and genus-two boundary review are complete; the old17-product class/section worklist is closed by later rank-zero theorems.
+**Next step:** The independent retained-polynomial replay for all 78,267 original smooth-atlas rows is complete. Review independent coverage of the remaining ten-chart/section components and locate compact singular-pencil polynomial witnesses. All 127,842 singular records and both mergers were checked, but their traces omit discriminant coefficients; no reconstruction is scheduled.
 
-**Completion evidence:** Each selected gate has a current scoped obligation or closure; independent character and singular-normalization replays are proposed only where still needed.
+**Completion evidence:** The highest-risk complete-character and singular-normalization components have independent replays with sufficient exact inputs. A passed merger or a list of missing polynomial fields does not complete that obligation. The prior V4 timeout review, genus-two boundary review and old17-product closure remain complete subsets.
 
-**Prerequisites and boundary:** The two base-Jacobian timeouts remain UNKNOWN. All17 selected product twists instead have arithmetic rank zero, so no full Selmer or involution-lattice reconstruction is needed for their Tate quotients. Use full integral groups and actual point-Kummer images if a new product target is proposed.
+**Prerequisites and boundary:** The two base-Jacobian timeouts remain UNKNOWN. All17 selected product twists instead have arithmetic rank zero, so no full Selmer or involution-lattice reconstruction is needed for their Tate quotients. Use full integral groups and actual point-Kummer images if a new product target is proposed. For the original smooth charts use the compact packet instead of reconstructing sections. A singular replay needs trace/chord data bound to the model and word, discriminant/decomposition coefficients, known split members and root/irreducibility witnesses. Summary-only records cannot supply these; existing full producers are not cheap repair tools.
 
-Authority: [EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md) (proved); [EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION](../../elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) (proved); [EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO](../../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md) (proved); [EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) (proved); [EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md) (proved).
+Authority: [EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md) (proved); [EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION](../../elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) (proved); [EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO](../../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md) (proved); [EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) (proved); [EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md) (proved); [EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION](../../elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md) (proved); [EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION](../../elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md) (proved); [EC-K3-R17-NORM12-ALTERNATE-CHART-CHARACTER-SWEEP](../../elkies-k3/R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md) (proved); [EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION](../../elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md) (proved).
 
-Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md](../../elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md); [R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md); [R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md); [R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
+Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md](../../elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md); [R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md](../../elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md); [R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md](../../elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md); [R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md); [R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md](../../elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md); [R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md](../../elkies-k3/R17_NORM12_ALTERNATE_CHART_CHARACTER_SWEEP_2026-09-04.md); [R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md](../../elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md).
 
 Inherited checklist items: `LEGACY-20260904-367`, `LEGACY-20260904-369`, `LEGACY-20260904-372`, `LEGACY-20260904-375`. Full wording: `research.py show LEGACY-ID`.
+
+## WORK-K3-CORRELATED-QUADRATIC-GAINS
+
+**Construct two independent gains on one quadratic cover**
+
+**Disposition:** proposed. **Kind:** research. **Compute class:** none.
+
+**Next step:** Derive a complete genus-one normalization locus for a singular bisection image of arithmetic genus at least2, or a different low-degree quadratic-cover identity. On alternate Q80 the complete smooth genus-one layer is closed, including all49 moving-contact norm12 pencils. Read the retained genus-two systems and distinguish one-node genus-one normalizations from the previously tested two-node rational normalizations. Prove the full divisor family, node and projective parameter charts, actual squareclass and rational points on the normalization before a bounded comparison. Two independent directions and infinitely many rational base points remain required. No large campaign or reconstruction is scheduled.
+
+**Completion evidence:** Two exact independent sections modulo the inherited subgroup on one quadratic cover of the original parameter field, constructed without desired exceptional-point fitting, with a rational covering base or a certified positive-rank genus-one covering base and valid specialization hypotheses. A finite miss does not complete the objective.
+
+**Prerequisites and boundary:** All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization.
+
+Authority: [OP-K3-CORRELATED-QUADRATIC-GAINS-20260912](../../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) (open); [EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912](../../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) (proved); [EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912](../../elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md) (proved); [EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913](../../elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md) (proved); [EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913](../../elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md) (proved); [EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913](../../elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md) (proved); [EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913](../../elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md) (proved).
+
+Sources: [CORRELATED_QUADRATIC_GAINS_2026-09-12.md](../../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md); [R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md](../../elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md); [R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md](../../elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md); [R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md](../../elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md); [Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md](../../elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md); [Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md](../../elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md).
 
 ## Partial-result register
 
@@ -173,6 +189,7 @@ These are literal authority records, not newly scheduled tasks. `research.py sho
 | `EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE` | [Residual 2-Selmer exclusion gate and separate production search budgets](../../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md) | — |
 | `EC-K3-NS0031-MARKED-SOURCE-PRECURSOR` | [Exact marked finite-field and finite-lift source precursor for NS0031](../../elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md) | — |
 | `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` | [Bounded rational-coordinate scan on the NS0031 model-157 formal branch](../../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) | — |
+| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` | [NS0031 norm-one modular obstruction with unresolved rational K3 marking](../../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) | — |
 | `EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET` | [Exact construction-compatible equation-side target for the H3 A11-to-2A5 q8 lift](../../elkies-k3/ORBIT42_EQUATION_LIFT.md) | — |
 | `EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE` | [Exact minimum-pole target-coset bridge for the H3 A11-to-2A5 q8 lift](../../elkies-k3/ORBIT42_EQUATION_LIFT.md) | — |
 | `EC-K3-H3-Q4O208-Q4O1599-QQ-A3-2A2` | [Exact QQ q4/orbit1599 replacement equation for A3+2A2](../../elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md) | — |

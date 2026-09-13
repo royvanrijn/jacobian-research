@@ -1,0 +1,36 @@
+{
+  "cpu_seconds": 26.026448271,
+  "excluded_pairs": 1674,
+  "input_sha256": "c8e6cb2f0abe2f5e8639131295dcf059878e230a535c242c3a04900fe5265f74",
+  "pairs": 1675,
+  "prime_certificates": [
+    {
+      "path": "prime-101.json",
+      "sha256": "64794cabcb7568f17520f467be85b38e381d23f5d5d814313c597d3172e1eea8"
+    },
+    {
+      "path": "prime-103.json",
+      "sha256": "db6af799ebe11057f427297023cc58d7dd83e12ebb8eae1ec9c686ccda4acadc"
+    },
+    {
+      "path": "prime-107.json",
+      "sha256": "7f7f02ab0b1e7759edca9a2d84d37696d14984307f63cd698758a533d8fb6a4f"
+    },
+    {
+      "path": "prime-109.json",
+      "sha256": "8fac82c27b9f4b41bdccac52affb020df6a154cbfe4dd317f6f2ada00b29febe"
+    },
+    {
+      "path": "prime-113.json",
+      "sha256": "0154930b0da703197b0b237749d0767fde107fb1a9c20ff3ccb6b34b71e1b802"
+    }
+  ],
+  "schema": "r17-one-node-complete-pair-result-v1",
+  "scope": "Exact projective branch-sextic exclusions for the frozen67-by25 family bank, including all rational parameters and repeated-root positions. Other trace classes and higher-pole carriers remain outside this result.",
+  "survivors": [
+    [
+      27,
+      3
+    ]
+  ]
+}

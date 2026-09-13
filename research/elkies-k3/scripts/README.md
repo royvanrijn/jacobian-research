@@ -11,6 +11,7 @@ establish that a worker is running or that another campaign is needed.
 | Load a completed rational MW17 equation | [Published/q12 endpoint](../PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md) · [direct alternate11952](../R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md) |
 | Reuse the Curve302 parent | [Full recovered equation and basis](../../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) |
 | Reuse Curve398 recovery and presentation deduplication | [Canonical recovery](../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) |
+| Certify the level-474 H3 rational base without Magma | [Sage quadratic-Chabauty certificate](certify_h3_level474_rational_points_qc.sage) · [canonical point note](../../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) |
 | Plan a marked fibration hop | [Rank/lift theorem contracts](../RANK_MUTATION_AND_LIFT_THEOREMS.md) · [marked-U planner](../MARKED_U_REALIZATION_PLANNER_2026-09-03.md) |
 | Understand route corrections | [Process atlas](../ELKIES_K3_PROCESS_ATLAS.md) · [historical H3 prefix](success-path/README.md) |
 | Compile the noncyclic4A1 bridge | [Exact equation and certificate](../R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) |
@@ -19,6 +20,9 @@ establish that a worker is running or that another campaign is needed.
 | Decide the determinant1236 next step | [Known candidate cover; open CM branch-orbit identification](../DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | Use rootless genus filters | [Genus theory and bounds](../ROOTLESS_GENUS_THEORY_2026-09-03.md) |
 | Interpret bisection/character searches | [Scoped failures](../../knowledge/FAILED_ROUTES.md) · [elliptic rank-jump programme](../../elliptic-curves/README.md) |
+| Replay the two original smooth character atlases | [Compact polynomial witness](../R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md#compact-independent-replay--12-september-2026); `make verify-smooth-characters` needs no CAS |
+| Assess singular-normalization replay inputs | [Complete merger checks and missing polynomial witnesses](../R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md#replay-inputs-and-remaining-independent-check--12-september-2026) |
+| Replay the seven native displayed quotients | [Retained integer relations and original prime witnesses](../R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026); select transport-only or complete covers explicitly |
 | Reproduce orbit1222 | [Its separate characteristic-zero pipeline](q80-orbit1222-char0/README.md) |
 
 <a id="fixed-corridor-reverse-lift-from-the-q12o5867-endpoint"></a>
@@ -73,18 +77,18 @@ remain available; consult current status before using them.
 <!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS aa704dc4685e4c9b -->
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
-<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 9dc0e4d23f677392 -->
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 582b0c9d781037fb -->
 <!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK fd9549d1fcb2e9e7 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK e79dd42ecb04dd8f -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 2f7b65d586e96394 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 <!-- status-consumer: EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER fd4b5d71c9497eaf -->

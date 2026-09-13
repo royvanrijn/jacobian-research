@@ -115,21 +115,16 @@ trace controls are from Cheng--Duncan--Harvey,
 [Umbral Moonshine and the Niemeier Lattices](https://arxiv.org/abs/1307.5793),
 especially Tables 2, 18, and 38--44.
 
-## Actionable next experiment
+## Historical follow-up; no scheduled enumeration
 
-The present data say where to broaden the experiment.  Enumerate auxiliary
-embedding orbits across all rooted Niemeier ambients, compute their full
-ambient stabilizer images, and prioritize images containing \(2B\), \(2C\),
-or \(4A\)-type component permutations rather than only scalar \(-I\).  Those
-actions can remain nontrivial modulo 2 and therefore can produce meaningful
-orbit-resolved bisection-coset characters.  For each such orbit, record the
-full fixed-point distribution on the rational subset of \(M/2M\) before using
-any total-count correlation as a search heuristic.
+This pilot does not justify a wider Niemeier enumeration. A future,
+independently scoped study would need auxiliary embedding orbits across rooted
+Niemeier ambients, full ambient stabilizer images, and fixed-point distributions
+on the rational subset of \(M/2M\), before using a total-count correlation as a
+heuristic. Only such a cross-\(X\), cross-orbit data set could test whether
+umbral orbit types predict richer complements. No such enumeration is active.
 
-Only that cross-\(X\), cross-orbit dataset can test the proposed claim that
-distinguished umbral orbit types systematically predict richer complements.
-
-## Reproduction
+## Historical reproduction
 
 Run:
 

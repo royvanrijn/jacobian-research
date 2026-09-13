@@ -1,30 +1,14 @@
-# One-command V3 → transfer autorun
+# V3 transfer autorun — historical handoff
 
-The detached controller in `elliptic-curves/cas/run_v3_transfer_autorun.py` chains the already-running V3 final verification into the fixed cross-parent transfer campaign.
+The original 2026-09-07 launch instructions are preserved
+[in the archive](../../archive/elliptic-curves/notes/V3_TRANSFER_AUTORUN_2026-09-07.md.txt).
 
-From `research/`, launch exactly once:
+The first two autorun receipts stopped for review. The final v3 receipt closed
+its positive control after a finite no-gain result, so it intentionally released
+none of the warm rank-27 jobs. This is a bounded transfer outcome, not a rank
+upper bound or a reason to rerun the controller.
 
-```sh
-python3 elliptic-curves/cas/run_v3_transfer_autorun.py launch
-```
-
-The command returns immediately. The detached controller then:
-
-1. waits for the existing V3 supervisor to publish `replay-M17.json`, `metric-replay-M17.json`, and the final V3 package;
-2. requires the independent replay to certify rank at least 31;
-3. prepares the frozen determinant-948/native11952 transfer roster once;
-4. runs the positive control and its independent replay;
-5. releases the three warm rank-27 jobs only if that control gains rank;
-6. executes each released case through the existing bounded `v3_transfer_campaign.sage next` supervisor;
-7. stops after the fixed four-case roster, after a closed positive-control gate, or on the first preserved method/resource failure.
-
-It never retunes V3, expands a parameter/family roster, retries failed budgets, or writes mathematical status. The existing V3 and transfer evidence remain authoritative.
-
-Inspect without disturbing it:
-
-```sh
-python3 elliptic-curves/cas/run_v3_transfer_autorun.py status
-tail -f artifacts/local/elliptic-curves/v3-transfer-autorun-v1/autorun.log
-```
-
-The controller has a fixed 12-hour wait for the upstream V3 final package. Expiry is an operational stop requiring review, not arithmetic evidence.
+The [completed V3 and transfer results](CURVE302_SEEDED_V3_RESULTS_2026-09-08.md)
+retain the evidence. The [current elliptic-curve programme](../README.md)
+selects new work. The archived commands are for forensic replay only and do not
+authorize a launch, resume, roster expansion, or budget retry.

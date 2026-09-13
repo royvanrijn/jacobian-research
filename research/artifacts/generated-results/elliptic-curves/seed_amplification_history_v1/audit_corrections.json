@@ -1,0 +1,21 @@
+{
+  "schema": "seed-amplification-history.data-audit-corrections.v1",
+  "original_protocol_sha256": "53d862067faaadffce47de59f7958355580ecc1b851c2b8b569202029fd18bd8",
+  "superseded_initial_summary_sha256": "84728704dc831891e4e978dc72506d2cbba9f232f9d6237b9d2b41e50072eb2c",
+  "changes": [
+    "Resolve two cohorts through existing ledger-bound discovery paths: their exports omit the discovery_witness field; no missing mathematics is rebuilt.",
+    "Resolve early family-nested population records and retain their frozen score fields.",
+    "Keep blindly selected catalogue rediscoveries in outcome denominators. Known-equation flags constrain novelty; excluding these rows would condition the predictive sample on a post-search comparison. No public point inputs are added.",
+    "Add the last inherited parent-foundry ledger as a separate descriptive stopped cohort.",
+    "Report ranked and control arms separately as an exposure/selection sensitivity; add one Holm correction across all reported model/fold tests."
+  ],
+  "unchanged": [
+    "Targets and acquiring-call definitions",
+    "Model families, features, hyperparameters and top-quarter rule",
+    "No outcome-dependent tuning or new point searches"
+  ],
+  "timing": "Data-audit corrections after the first diagnostic fits; this is disclosed retrospective analysis, not preregistration.",
+  "forward_check": "After within-cohort diagnostics, apply the unchanged compact192 models to the later r17-60 panel, excluding the test fibration from training. This is a disclosed forward-cohort sensitivity check on retained outcomes, not a newly preregistered trial.",
+  "feature_join_note": "Frozen selection files joined only by the original protocol hash; repeated field names at different prime cutoffs remain separate source_selection_record fields. No score cutoff or model hyperparameter was changed.",
+  "coverage_addendum": "The 48 completed X1092 record-scale attempts are included with their full frozen roster, as a separate zero-seed cohort."
+}

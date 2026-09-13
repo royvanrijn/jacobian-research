@@ -21,7 +21,8 @@ The following routes are now **historical/provenance only**. Some detailed notes
 - `Q80_TO_ROOTLESS_PATH_2026-08-21.md` — historical Q80 neighbour corridor.
 - `Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md` — expensive third-`q12` producer/reconstruction route.
 - `A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md` — earlier A11 equation-cost route handoff.
-- `RECONSTRUCTION_PROGRESS.md` — superseded reconstruction progress narrative.
+- [Reconstruction ledger](RECONSTRUCTION_PROGRESS.md.txt) — superseded missing-equation and missing-section worklists.
+- [q24 frontier](H3_Q24_FRONTIER_2026-08-23.md.txt) — pre-completion component and RR checkpoint.
 - `RESEARCH_UPDATE_2026-08-20.md` and `RESEARCH_UPDATE_2026-08-22.md` — historical point-in-time updates.
 
 Their pre-streamlining state is frozen immutably at commit `f47f1a1872881680d9296170f3f9619bcc943c29` using:
@@ -31,3 +32,10 @@ https://github.com/royvanrijn/jacobian-research/blob/f47f1a1872881680d9296170f3f
 ```
 
 Proof artifacts, exact certificates, replay scripts, and process-ledger evidence were intentionally **not** deleted. Archiving a route means it is no longer an operational starting point; it does not erase or relocate evidence that current certificates still depend on.
+
+The [q8 module ledger](H3_Q8_MODULE_INTERSECTION_2026-08-22.md.txt),
+[continuation](H3_Q8_MODULE_INTERSECTION_CONTINUATION_2026-08-22.md.txt)
+and [earlier frontier text](H3_Q8_CURRENT_FRONTIER.before-2026-09-13.md.txt)
+are also preserved byte for byte. Their obsolete pencil and rebuild worklists
+are superseded by the [corrected q8 proof](../../elkies-k3/H3_Q8_REAUDIT_2026-08-22.md);
+snapshot hashes are in the [cleanup checklist](../../knowledge/legacy_work_review.json).

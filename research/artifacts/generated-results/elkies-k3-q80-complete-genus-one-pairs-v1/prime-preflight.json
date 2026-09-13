@@ -1,0 +1,34 @@
+{
+  "schema": "q80-complete-pairs-prime-preflight-v1",
+  "rows": [
+    {
+      "prime": 509,
+      "degree": 24,
+      "derivative_gcd_degree": 3,
+      "usable": false
+    },
+    {
+      "prime": 521,
+      "degree": 24,
+      "derivative_gcd_degree": 0,
+      "usable": true
+    },
+    {
+      "prime": 523,
+      "degree": 24,
+      "derivative_gcd_degree": 0,
+      "usable": true
+    },
+    {
+      "prime": 541,
+      "degree": 24,
+      "derivative_gcd_degree": 0,
+      "usable": true
+    }
+  ],
+  "initial_attempt": {
+    "prime": 509,
+    "exit_code": 1,
+    "reason": "Bad model reduction detected before any pencil construction. No exclusion claimed; use only subsequent primes from the frozen panel."
+  }
+}

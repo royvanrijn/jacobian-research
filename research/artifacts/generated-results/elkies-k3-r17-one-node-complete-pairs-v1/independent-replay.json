@@ -1,0 +1,41 @@
+{
+  "elapsed_seconds": 12.585,
+  "excluded_pairs": 1674,
+  "pairs": 1675,
+  "prime_counts": [
+    {
+      "new_exclusions": 948,
+      "prime": 101,
+      "remaining": 727
+    },
+    {
+      "new_exclusions": 598,
+      "prime": 103,
+      "remaining": 129
+    },
+    {
+      "new_exclusions": 110,
+      "prime": 107,
+      "remaining": 19
+    },
+    {
+      "new_exclusions": 12,
+      "prime": 109,
+      "remaining": 7
+    },
+    {
+      "new_exclusions": 6,
+      "prime": 113,
+      "remaining": 1
+    }
+  ],
+  "scope": "Each excluded pair has no rational coefficient match anywhere on its P2-by-P1-by-P1 parameter space. Surviving pairs remain UNKNOWN; other families and quadratic covers are not excluded.",
+  "source_parameter_evaluations": 3804385,
+  "status": "PASS_EXACT_PROJECTIVE_FAMILY_EXCLUSIONS",
+  "survivors": [
+    [
+      27,
+      3
+    ]
+  ]
+}

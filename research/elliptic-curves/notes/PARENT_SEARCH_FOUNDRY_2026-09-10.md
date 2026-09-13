@@ -1,15 +1,18 @@
 # Autonomous search over constructed fibrations
 
 > Historical operational protocol. The bounded A1/MW16 continuation was
-> stopped after its first panels. The active successor is the
-> [generic-rank ceiling fibration pivot](GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md),
-> which requires complete rootless MW17 frame classification before another
-> fibration or specialization launch.
+> stopped after its first panels. The subsequent
+> [generic-rank ceiling pivot](GENERIC_RANK_CEILING_FIBRATION_PIVOT_2026-09-10.md)
+> is also historical. Current X948 diversification is the separately authorized
+> [eight-fibration seed foundry](X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md),
+> which reuses this compiler with new admission and matched-exposure gates.
+> Controller commands below are retained for forensic replay and do not
+> authorize a launch, resume, or allocation change.
 
 This protocol constructed elliptic fibrations on both X948 and X1092, then
 evaluated modest, fixed specialization panels. It replaced the stopped
 [parameter foundry](HIGH_RANK_SEARCH_FOUNDRY_2026-09-09.md). Operational counts
-are in the [live report](../../artifacts/generated-results/elliptic-curves/parent-foundry-v2/REPORT.md);
+are in the [stopped report](../../artifacts/generated-results/elliptic-curves/parent-foundry-v2/REPORT.md);
 this note records its mathematical gates and frozen protocol.
 
 Two cold-reconstructed commissioning examples establish that the new lane is

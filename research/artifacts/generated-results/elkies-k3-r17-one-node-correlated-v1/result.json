@@ -1,0 +1,552 @@
+{
+  "boundary": "Only the frozen finite fibre panel and67 traces are tested. Pole/infinity charts are deferred. No complete rational-point theorem for halving curves is claimed; no positive two-section result follows without the remaining common-cover, independence and rational-base gates.",
+  "cpu_seconds": 0.6008565439999999,
+  "finite_halving_tables_sha256": "b4ee8c20b48ed04f5243da951ddf678f6318618050299ce4985f190234b2cabe",
+  "input_sha256": "e4932bac38f5e7ee0853089c5004dbbc5ab815c86b19058aceeb6d180b46a51f",
+  "schema": "r17-one-node-correlated-result-v1",
+  "totals": {
+    "DEFERRED_TRACE_POLE_OR_INFINITY": 70,
+    "EXACT_NO_RATIONAL_HALF": 3205,
+    "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 87911,
+    "RATIONAL_HALF_FOUND": 1
+  },
+  "trace_summaries": [
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 30,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1330
+      },
+      "trace_index": 0
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 2,
+        "EXACT_NO_RATIONAL_HALF": 69,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1290
+      },
+      "trace_index": 1
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 36,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1324
+      },
+      "trace_index": 2
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 55,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1305
+      },
+      "trace_index": 3
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 53,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1307
+      },
+      "trace_index": 4
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 37,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1323
+      },
+      "trace_index": 5
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 2,
+        "EXACT_NO_RATIONAL_HALF": 49,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1310
+      },
+      "trace_index": 6
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 39,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1321
+      },
+      "trace_index": 7
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 34,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1326
+      },
+      "trace_index": 8
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 44,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1316
+      },
+      "trace_index": 9
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 47,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1313
+      },
+      "trace_index": 10
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 43,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1317
+      },
+      "trace_index": 11
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 32,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1328
+      },
+      "trace_index": 12
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 47,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1313
+      },
+      "trace_index": 13
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 42,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1318
+      },
+      "trace_index": 14
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 63,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1297
+      },
+      "trace_index": 15
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 62,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1298
+      },
+      "trace_index": 16
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 56,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1304
+      },
+      "trace_index": 17
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 62,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1298
+      },
+      "trace_index": 18
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 46,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1314
+      },
+      "trace_index": 19
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 55,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1305
+      },
+      "trace_index": 20
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 54,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1306
+      },
+      "trace_index": 21
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 43,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1317
+      },
+      "trace_index": 22
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 41,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1319
+      },
+      "trace_index": 23
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 51,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1309
+      },
+      "trace_index": 24
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 57,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1303
+      },
+      "trace_index": 25
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 51,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1309
+      },
+      "trace_index": 26
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 52,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1308
+      },
+      "trace_index": 27
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 33,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1327
+      },
+      "trace_index": 28
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 42,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1318
+      },
+      "trace_index": 29
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 33,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1327
+      },
+      "trace_index": 30
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 57,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1303
+      },
+      "trace_index": 31
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 62,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1298
+      },
+      "trace_index": 32
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 48,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1312
+      },
+      "trace_index": 33
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 40,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1320
+      },
+      "trace_index": 34
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 44,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1316
+      },
+      "trace_index": 35
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 43,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1317
+      },
+      "trace_index": 36
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 49,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1311
+      },
+      "trace_index": 37
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 53,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1307
+      },
+      "trace_index": 38
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 35,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1325
+      },
+      "trace_index": 39
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 39,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1321
+      },
+      "trace_index": 40
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 52,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1308
+      },
+      "trace_index": 41
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 47,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1313
+      },
+      "trace_index": 42
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 70,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1290
+      },
+      "trace_index": 43
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 49,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1311
+      },
+      "trace_index": 44
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 54,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1306
+      },
+      "trace_index": 45
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 45,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1315
+      },
+      "trace_index": 46
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 31,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1329
+      },
+      "trace_index": 47
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 56,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1304
+      },
+      "trace_index": 48
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 2,
+        "EXACT_NO_RATIONAL_HALF": 44,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1315
+      },
+      "trace_index": 49
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 61,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1299
+      },
+      "trace_index": 50
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 51,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1309
+      },
+      "trace_index": 51
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 56,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1304
+      },
+      "trace_index": 52
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 43,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1317
+      },
+      "trace_index": 53
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 50,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1309,
+        "RATIONAL_HALF_FOUND": 1
+      },
+      "trace_index": 54
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 44,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1316
+      },
+      "trace_index": 55
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 68,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1292
+      },
+      "trace_index": 56
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 41,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1319
+      },
+      "trace_index": 57
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 46,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1314
+      },
+      "trace_index": 58
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 39,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1321
+      },
+      "trace_index": 59
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 51,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1309
+      },
+      "trace_index": 60
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 46,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1314
+      },
+      "trace_index": 61
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 60,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1300
+      },
+      "trace_index": 62
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 32,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1328
+      },
+      "trace_index": 63
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 35,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1325
+      },
+      "trace_index": 64
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 56,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1304
+      },
+      "trace_index": 65
+    },
+    {
+      "counts": {
+        "DEFERRED_TRACE_POLE_OR_INFINITY": 1,
+        "EXACT_NO_RATIONAL_HALF": 50,
+        "NO_RATIONAL_HALF_BY_GOOD_REDUCTION": 1310
+      },
+      "trace_index": 66
+    }
+  ]
+}

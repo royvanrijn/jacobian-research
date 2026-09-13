@@ -1,0 +1,23 @@
+{
+  "acquiring_events": 5026,
+  "bindings": {
+    "audit_corrections.json": "6edd5a4c680ac0ba09de2c8402150537aae023585b824420a686194672117149",
+    "cohort_summary.csv": "960aa82575f6a18362f363b4d788984f84cd410e666c1bb3cbca626893b4ada5",
+    "extraction.json": "286726a233db8c54fe7c07eb47910fc0ac3591dbb827199a3976b073f8ae71b2",
+    "fibres.csv": "04fe9c9a22f576b812074ef8d27f62f90926840b0f5358fdd7be7e10c75515e3",
+    "fibres.jsonl": "4948f29740267eb749e4380aa14894f6a673794ac937be278a2dbd4cfadc39af",
+    "gain_events.csv": "24a38363c978c41bbd65ca977c6ff142ef6945dc4a03203593336525b2400a44",
+    "heldout_folds.json": "1a7e9a5c3af292c025649313e7996679f1e9deeeefff6c5e9f218e43ae6b760b",
+    "heldout_predictions.csv": "fb59ee813d00417c7e25b973a23f4f8b64bf4243706b7b0c6b1cbdbb395ea45e",
+    "lattices.json": "678d7239183b90225f1d6e409fd74bb1a79433f3333e908d735ab37568e16b3e",
+    "prime_features.jsonl": "2a4c60def09789045061290cafefd7893bdd2868809c8dbb3b26376cfd647d5a",
+    "protocol.json": "53d862067faaadffce47de59f7958355580ecc1b851c2b8b569202029fd18bd8",
+    "summary.json": "97ca051b130d64955ddff330ece8d214eace4d252675db8bac1d4939a3c31774"
+  },
+  "complete_trajectories_checked": 4338,
+  "prime_vectors_checked": 2080,
+  "rows": 4482,
+  "scope": "Separate CSV/JSON aggregation verifies event conservation, same-call merging, deep-event definition, score sums and exact counts. Tiny analytic model sanity checks pass. No point search or elliptic arithmetic replay; no statistical success theorem.",
+  "status": "PASS_RETAINED_DATA_ACCOUNTING",
+  "summary_groups_checked": 217
+}

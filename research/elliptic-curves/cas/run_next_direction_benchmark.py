@@ -162,7 +162,10 @@ def status(folder):
     alive = bool(launch and launch['token'] is not None and _start_token(launch['pid']) == launch['token'])
     state = read(folder/'state.json') if (folder/'state.json').exists() else {'status':'FROZEN_NOT_STARTED'}
     print(json.dumps({'status':state['status'],'controller_live':alive,
-        **{k:state[k] for k in ['active_arm','active_stage','charged_wall_seconds','worker_tree_cpu_seconds','error'] if k in state}},indent=2))
+        'elapsed_wall_since_launch_seconds':round(time.time()-launch['started_unix'],1) if launch and alive else None,
+        'completed_stage_cpu_seconds':state.get('worker_tree_cpu_seconds'),
+        'last_metered_wall_seconds':state.get('charged_wall_seconds'),
+        **{k:state[k] for k in ['active_arm','active_stage','error'] if k in state}},indent=2))
     if 'active_arm' in state:
         p=folder/state['active_arm']/'progress.json'
         if p.exists(): print(json.dumps(read(p),indent=2))

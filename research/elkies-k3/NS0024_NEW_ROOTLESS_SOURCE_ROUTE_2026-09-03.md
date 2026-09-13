@@ -1,4 +1,4 @@
-# NS0024 new rootless frame: equation/source route
+# NS0024 new rootless frame — historical geometric route (2026-09-03)
 
 Date: 2026-09-03.
 
@@ -163,7 +163,7 @@ an exact bounded negative result, not a proof that a higher-`q` route does not
 exist.  It does show that the canonical `2E8/MW1` fibration is a poor start for
 the usual low-pole neighbour compiler.
 
-## Route-specific continuation
+## Bounded geometric use (not a QQ arithmetic continuation)
 
 There is no `QQ`-arithmetic continuation for a full NS0024 marking. The
 semistable MW4 reconstruction, completed-core route, and quotient descents
@@ -171,7 +171,7 @@ may still be studied over larger fields or for geometric comparison, with
 their existing bounded and equation-level caveats. They must not be presented
 as routes to a saturated rational MW17 fibration over `QQ(t)`.
 
-## Replay
+## Historical replay
 
 ```bash
 sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \

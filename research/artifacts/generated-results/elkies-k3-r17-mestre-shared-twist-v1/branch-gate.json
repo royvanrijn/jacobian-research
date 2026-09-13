@@ -1,0 +1,30 @@
+{
+  "cpu_seconds": 0.024527013000000042,
+  "input_sha256": "820c80729c704b407dd2810e8570db0a58cde1711e51c48c3715809696020fca",
+  "prime_bound": 1000,
+  "proposed_general_conclusion": "For every rational u(t), the Mestre twist has odd valuation at the degree8 A divisor and degree12 B divisor, hence genus at least9. This requires the written valuation proof and independent finite-polynomial replay.",
+  "root_field_certificates": [
+    {
+      "degree": 8,
+      "degree_one_prime": {
+        "prime": 59,
+        "root": 51
+      },
+      "irreducible_reduction_prime": 29,
+      "polynomial": "A",
+      "status": "CERTIFICATE_READY"
+    },
+    {
+      "degree": 12,
+      "degree_one_prime": {
+        "prime": 107,
+        "root": 93
+      },
+      "irreducible_reduction_prime": 59,
+      "polynomial": "B",
+      "status": "CERTIFICATE_READY"
+    }
+  ],
+  "schema": "r17-mestre-branch-gate-v1",
+  "smooth_disjoint_branch_prime": 131
+}

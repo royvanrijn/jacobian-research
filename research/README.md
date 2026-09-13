@@ -11,7 +11,7 @@ remains the sole mathematical-status authority.
 | Supporting K3 constructions | [K3 map](elkies-k3/README.md) · [Process atlas](elkies-k3/ELKIES_K3_PROCESS_ATLAS.md) |
 | Prior methods and failed approaches | [Research memory](KNOWLEDGE_BASE.md) |
 | Remaining obligations and cleanup | [Work ledger](knowledge/WORK_LEDGER.md) · [Source reviews](knowledge/PARTIAL_REVIEW.md) |
-| What this cleanup completed | [Dated report and remaining audit work](CLEANUP_REPORT_2026-09-12.md) |
+| What this cleanup completed | [Current elliptic-curve report and remaining audit work](elliptic-curves/CLEANUP_REPORT_2026-09-13.md) |
 | Exact results and provenance | [Claim catalogue](index/README.md) · [Structured records](index/resources.md) |
 | Reproduction and discoveries | [Replay guide](REPRODUCE.md) · [Timeline](RESEARCH_TIMELINE.md) |
 
@@ -33,7 +33,7 @@ retained claim. Archiving preserves mathematical states and unfinished
 obligations. It does not mark them proved or completed.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT b86e37cc3775f627 -->
+<!-- status-consumer: OP-EC-NEXT f36c4d02969820a7 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
