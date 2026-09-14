@@ -1,0 +1,11 @@
+{
+  "census_cpu_limit": 30,
+  "census_cpu_seconds": 0.279173,
+  "input_sha256": "3084a79a2530ed367dfa3fc3ed2faf7c59e15dd2d00fad7af2e15f2f3b101a05",
+  "memory_limit_bytes": 4294967296,
+  "producer_cpu_limit": 40,
+  "result_sha256": "33ccf60e92e6d74a90502b81dd8d0707673e8f111752896e6baef8a35808be7f",
+  "sage_cpu_seconds": 0.158166841,
+  "status": "PASS",
+  "wall_seconds": 0.7558887099730782
+}

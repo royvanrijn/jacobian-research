@@ -1,0 +1,18 @@
+{
+  "any_mw16_or_mw17_fibration_on_either_control": "EXCLUDED",
+  "cpu_seconds": 0.009316,
+  "input_sha256": "4f1b0ff0378b9664b0bb8821c5f8ce0d8bdb43de8162903dfb36403b904acf2d",
+  "positive_mw17_target_complete": false,
+  "records": [
+    {
+      "path": "four-nodes-genus-one-checkpoint.json",
+      "sha256": "e126896beb4b06d6dd84c1a0a3017139277f3391f99749b74e73304b7e8b3f60"
+    },
+    {
+      "path": "five-nodes-genus-zero-checkpoint.json",
+      "sha256": "dcdd773324f6b0838ec3e79f6370f7d37bd3e6164fecbdf815c461b88d137c88"
+    }
+  ],
+  "schema": "common-quartic-control-rank-result-v1",
+  "status": "PASS"
+}

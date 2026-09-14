@@ -39,7 +39,8 @@ limits, checkpoints and a certificate plan.
 | Need | Source |
 |---|---|
 | NS0031 full rational rank-19 marking excluded | [Full stable group, genus-10 Q curve and exact arithmetic obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md) |
-| Two independent gains on one quadratic cover | [Open MW17 target](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Factor strata and the Q80 same-branch exclusion](COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md) |
+| Two independent gains on one quadratic cover | [Open MW17 target](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Q80 genus-one nodal boundary](Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md) |
+| Low-genus controls cannot supply an MW17 parent by changing fibrations | [Rational Picard bounds for both control surfaces](COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md) |
 | Rank balance, saturation, marking and equation-lift hypotheses | [Reusable theorem layer](RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | Historical corrections and route identities | [Process atlas](ELKIES_K3_PROCESS_ATLAS.md) |
 | Established algorithms and novelty boundaries | [Literature map](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) |

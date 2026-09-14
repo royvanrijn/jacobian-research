@@ -1,0 +1,29 @@
+{
+  "discriminant_factor_degrees": [
+    2,
+    3,
+    19
+  ],
+  "elapsed_seconds": 2.656584,
+  "etale_coefficient_exclusions": 131,
+  "independent_finite_replay": true,
+  "input_sha256": "3084a79a2530ed367dfa3fc3ed2faf7c59e15dd2d00fad7af2e15f2f3b101a05",
+  "nodal_coefficient_tuples": 2248091,
+  "nodal_points": 2,
+  "old_norm8_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "remaining_D_mod131": [
+    15,
+    39,
+    90,
+    124,
+    1
+  ],
+  "remaining_boundary": "UNKNOWN",
+  "remaining_quartic_I_mod131": 60,
+  "result_sha256": "33ccf60e92e6d74a90502b81dd8d0707673e8f111752896e6baef8a35808be7f",
+  "split_pair_lift_exclusions": 21,
+  "status": "PASS",
+  "valid_nodal_split_contacts": 0,
+  "written_stable_map_and_branch_classification_formally_verified": false
+}

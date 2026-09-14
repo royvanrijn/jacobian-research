@@ -1,0 +1,14 @@
+{
+  "bound": 4,
+  "checker_sha256": "c9b2c193612d39a1a811964ae0880458f73dcd01f897c810d1825b9f776175fe",
+  "cpu_limit_seconds": 40,
+  "finite_checker": "elkies-k3/scripts/verify_q80_genus_zero_collision_closure.py",
+  "finite_checker_sha256": "474b993c6687952a05e4500fe67613f06c314ccbaf71a8a9f95d41f15d54ec51",
+  "finite_input_sha256": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+  "memory_limit_bytes": 4294967296,
+  "rank": 17,
+  "schema": 1,
+  "scope": "Independent exact rational-LDL norm4 count plus the complete finite contact replay. No norm10 census or positive high-rank family.",
+  "source": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+  "source_sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66"
+}

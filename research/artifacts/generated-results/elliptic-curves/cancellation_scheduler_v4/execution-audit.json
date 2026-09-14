@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_ACCOUNTING",
+  "call_statuses": {
+    "bounded_search_complete": 1728,
+    "bounded_search_timeout": 1
+  },
+  "censored_calls": [
+    {
+      "case": "dc8c3096fb6653d89a7d",
+      "arm": "adaptive_local",
+      "file": "research/artifacts/local/elliptic-curves/cancellation-scheduler-v4/arms/dc8c3096fb6653d89a7d/adaptive_local/call-178.json",
+      "sha256": "b72180f3778677a75b764e42f0450a863df34317e30c5ee8af287ffd26c95af3",
+      "status": "bounded_search_timeout",
+      "timeout_seconds": 0.029308652999993967,
+      "call_cpu_seconds": 0.04087756899999562,
+      "terminal": "CPU_CAP"
+    }
+  ],
+  "boundary": "All censored calls are charged. No completed prefix or missing exposure is inferred from a timeout; independence proofs and final success outcomes remain checked."
+}

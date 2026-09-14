@@ -1,0 +1,26 @@
+{
+  "schema": "q80-rational-branch-torsion-execution-v1",
+  "status": "PASS",
+  "python_version": "3.12.3",
+  "date": "2026-09-14",
+  "input_sha256": "3daa3ec167412ce2dbae29ea02251bbe4c4a5b18a72c8502701545047742c06e",
+  "result_sha256": "2a96fb3c3b6d1ff165e2f882b0b2e5cfada6bf8f24161ed77622c19ee7ae7a49",
+  "independent_replay_sha256": "62bced35cfeddeb290d516faeede5a9cfa27bb0ab53a2b9cd764728edbc2a28b",
+  "resource_limits": {
+    "cpu_seconds_per_producer_mode": 120,
+    "address_space_bytes": 4294967296
+  },
+  "producer_cpu_seconds": 1.338445,
+  "independent_replay_wall_seconds": 1.714284,
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elkies-k3/scripts/certify_q80_rational_branch_torsion.py freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elkies-k3/scripts/certify_q80_rational_branch_torsion.py run",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elkies-k3/scripts/verify_q80_rational_branch_torsion.py --record research/artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/independent-replay.json",
+    "python3 -m unittest discover -s research/tests -p 'test_q80_rational_branch_torsion.py' -q"
+  ],
+  "tests_passed": 5,
+  "failed_attempts": [],
+  "literal_parent_a_b_match_direct11952_source": true,
+  "previous_turn_audit": "Progress: retained full49 norm12 discriminants and the genus0 k2,j1 descent. The new turn replayed those witnesses and closed the adjacent same-branch cases with a different arithmetic gate.",
+  "proof_boundary": "New finite arithmetic independently replayed. Section construction, complete lattice enumeration and the norm8 singular-row assurance gap remain inherited. No positive MW17 construction, exact twist rank or full-family genus bound."
+}

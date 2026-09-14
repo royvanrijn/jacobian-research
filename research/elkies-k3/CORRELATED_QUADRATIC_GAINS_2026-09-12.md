@@ -19,8 +19,14 @@ MW17 parents.
 The [common-quartic singularity analysis](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
 now gives explicit genus0 and positive-rank genus1 controls, each with two
 independent gains of height determinant48, on newly constructed K3 parents.
-Their inherited ranks are unknown. On all four retained MW17 equations,
-every constant abscissa has normalization genus at least4, so both abscissas
+Their exact inherited ranks are unknown, but
+[small-prime Picard bounds](COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md)
+limit every rational Jacobian fibration on the genus-one and genus-zero
+control surfaces to rank10 and8, respectively. Changing their fibrations
+cannot provide an MW17 parent;
+the same obstruction covers the respective coefficient residue classes
+modulo5 and7. On all four retained MW17 equations, every constant abscissa
+has normalization genus at least4, so both abscissas
 in a successful common-quartic solution must be nonconstant. The complete
 fixed-parent quartic chart, including repeated quartic factors, remains open.
 
@@ -29,8 +35,59 @@ now gives fifteen complete factor cases in nine coordinate patches. On Q80,
 the squarefree-quartic case in which both sections choose the same2-torsion
 point at every branch value is excluded by unramified descent and the smooth
 genus-one theorem. Every remaining genus-one solution there must split the
-parent cubic over at least one branch residue field. The other factor cases,
-other parents and the repeated-quartic genus-zero boundary remain open.
+parent cubic over at least one branch residue field.
+
+The [full genus-zero chart](Q80_GENUS_ZERO_SINGULAR_GATE_2026-09-14.md)
+allows quintic node factors without a common linear factor. Its Q80
+same-branch orthogonal case `(k,j)=(2,1)` is now excluded. The new discriminant
+certificates close all49 moving norm-twelve rational singular-member loci;
+together with the retained norm-eight theorem, no integral Q-defined
+bisection has arithmetic genus1 and normalization genus0. Descent would
+force just such an image in this stratum. The subsequent
+[branch-field theorem](Q80_RATIONAL_BISECTION_BRANCH_TORSION_2026-09-14.md)
+excludes the other two same-branch cases: all39,147 smooth rational-bisection
+branch fields have no nonzero2-torsion on their parent fibre, forcing
+anti-invariant minimum height12 on those covers. Thus all three `k=2`
+genus-zero cases are closed. The subsequent
+[Weil-reciprocity gate](Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md)
+excludes every one-disagreement case: all four genus-zero `k=1` cases and
+both genus-one `k=3` cases.
+
+The [coupled degree-two gate](Q80_DEGREE_TWO_RECIPROCITY_2026-09-14.md)
+now forces every remaining Q80 genus-zero branch pair to reduce to a
+double point at one of sixteen finite values modulo131. The complete
+quadratic-field character calculation includes nodal reductions and
+ramified branch fields. These collision residues satisfy the necessary norm
+tests locally. The subsequent
+[coefficient collision proof](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md)
+closes all five `k=0` allocations: stable-map specialization excludes
+coefficient denominators, the constant nonsquare twist has arithmetic rank
+at most one, and the complete 1,313-section norm-four census leaves no pair
+of repeated contacts selecting distinct roots. Every simple contact has
+only a split Hensel lift. Thus the full Q80 polynomial genus-zero chart is
+closed, retaining the earlier `k=2` norm-eight replay gap. Twelve genus-one
+`k=0,1,2` allocations remain with disagreement degree2,3 or4. Other parents
+and higher-height rational abscissas remain open.
+
+The [genus-one k2 gate](Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md)
+now forces all three two-disagreement cases into one nodal reduction at131:
+both branch quadratics reduce to `t^2+62*t+88`, and both abscissas have
+negative coefficient valuation. Every integral case is excluded by complete
+character tables,131 interpolants,21 inconsistent lifts modulo `131^2`, and
+a `131^3` nodal coefficient census. A rational base point also forces a
+locally square literal scalar and even negative abscissa valuations; the
+base Jacobian has `v_131(j)=-4*n<0`. The existing good-reduction genus-one
+control base cannot transfer into these k2 cases. This nodal denominator
+boundary remains open, so the twelve surviving allocations are not reduced
+to nine by this theorem.
+
+The [local splitting gate](COMMON_QUARTIC_LOCAL_SPLITTING_GATE_2026-09-14.md)
+certifies a fully split cubic fibre over each Q_p, for every prime from2
+through43, on all four retained parents. An empty local splitting curve at
+one of these primes cannot exclude the surviving branch divisors. Their
+global arithmetic and the remaining coefficient equations remain unresolved.
+The reciprocity gate uses additional squareclass conditions forced by the
+section identities, which those local splitting witnesses do not test.
 
 The first prospective calculation excludes all **300 pairs of 25 complete
 genus-one pencils** on published R17. The exclusion covers all rational pencil

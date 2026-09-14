@@ -1,0 +1,63 @@
+{
+  "arm_wall_seconds": 120,
+  "arms": [
+    "factor_free",
+    "adaptive_local"
+  ],
+  "boundary": "Development-selected successor evaluated on disjoint whole-j CPU controls. No retroactive promotion of V3, no larger CPU budget, and no universal non-predictiveness or rank32 claim.",
+  "cancellation_ablation": "adaptive_uniform builds the identical prime-neighbour bank and uses uniform P1 residue mass. adaptive_local replaces it with the training-calibrated q-only differential mass. No full gcd residue tree and no height-regression score.",
+  "candidate": "adaptive_local",
+  "cost": "Outer process CPU includes interpreter, all candidate models, policy scoring, failed calls, exact admission, transcript replay and independent Sage finite-quotient rank certification. Shared retained landscapes are the common input interface, not free cold construction. Offline fitting and corpus replay are retained separately and charged once in campaign-inclusive totals.",
+  "development_cap_stops": [
+    {
+      "case": "442fde72162147f3ec9d",
+      "result_sha256": "37aa67ff687ca576da130d11df1b72213f8bfd3ec3bb8144cf7c682d0a409b12",
+      "search_cpu_seconds": 12.446046881000001
+    },
+    {
+      "case": "2ee610e039ec279419f8",
+      "result_sha256": "6c743c4d8675cebce6b2e5d2a734f4391575a24667e3b242245ad74a07d272ff",
+      "search_cpu_seconds": 10.882069952
+    },
+    {
+      "case": "58bbcfce20ce86266ab9",
+      "result_sha256": "eb780b6f28bab5d94c9605255b657caf971055bbb413c3ff3c279f74d3e37ca4",
+      "search_cpu_seconds": 11.261915963999998
+    },
+    {
+      "case": "967c708460504a7bc591",
+      "result_sha256": "51988163b8035ee99b82da71a3eddde1064d0d59146466f0ec6a5170a586c47b",
+      "search_cpu_seconds": 10.193412395
+    },
+    {
+      "case": "999ff9321a72be7a9518",
+      "result_sha256": "c205a4bc12e3f9c38ecf51f014e0345c074d6ead640425c9993e49b39fbc677b",
+      "search_cpu_seconds": 11.175955406
+    },
+    {
+      "case": "8caed02cbed934c96d2f",
+      "result_sha256": "9024a34075098ba7c70be8af497442b8415b1fa8c41b3dc98f77880f2e28ca30",
+      "search_cpu_seconds": 10.441383245
+    }
+  ],
+  "development_relative_rate": 1.7832970423972672,
+  "fresh_gate": "A passing new withheld comparison permits a separately frozen high-rank transfer gate on retained M27/M29/M30 control banks. Fresh-fibre point search still requires that transfer gate plus generic-only new inputs, full cold-construction costs and a separate finite paired budget.",
+  "hard_process_cpu_seconds": 100,
+  "heights": [
+    8000,
+    32000,
+    125000
+  ],
+  "maximum_calls": 432,
+  "maximum_centres": 48,
+  "point_wall_seconds": 5,
+  "previous_summary_sha256": "67f6dec660b1ee4f2ab24cd49e8b5632b091a06d8f85a70fb8c5776d12c14221",
+  "primary_gate": "One preselected candidate versus factor-free V3: at least as many independently certified directions, at least 10 percent higher recoveries per complete CPU, and central 97.5 percent paired family bootstrap interval wholly above one. 10000 draws, seed 20260914. Success is a finite policy validation, not cancellation-specific attribution.",
+  "rationale": "V3 is preserved as a failed primary comparison. Its best observed recovery/CPU adaptive arm becomes the single development-selected candidate. Permit all 48 anchors times 3 models times 3 heights, instead of terminating at 144 calls below the CPU budget. Keep exactly the same 40-CPU-second search allowance and H125000 ceiling. Do not rerun any previous CPU curve.",
+  "scheduler": "Greedy estimated new union-of-boxes detection mass per complete CPU. Fit empirical radial thresholds from independent development witnesses. Joint categorical states at the same prime; product surrogate only across distinct primes. Update cost from completed calls and remove overlap after complete misses. Timeout removes no exposure. New anchors compete with prepared jobs. Baseline retains its order and H125000.",
+  "scope": "This tests a finite adaptive policy. It cannot prove universal non-predictiveness, rank32, a rank upper bound or saturation. Exact new points prove only independently certified lower bounds.",
+  "search_cpu_seconds": 40,
+  "selection": "24 previously untested shallow j groups, four per each of six families, from the retained eligibility audit in SHA256(cancellation-scheduler-v4/ + j) order; lexical first bank per j. Exclude all V1, V2 and V3 CPU curves and Curve302. Refit the identical mixture after excluding these 24 groups.",
+  "status": "SUCCESSOR_DESIGN_BEFORE_NEW_OUTCOMES",
+  "train": "V1 corpus trains one clipped mixture of uniform and differential root-ball probabilities; weight one per j group. V2 factor-free completed calls train radial detection thresholds and anchor hazards; all failures retained as censored at H125000. No new control j group may enter either fit. Fixed 32-point midpoint real quadrature and H levels. The full corpus already informed development."
+}

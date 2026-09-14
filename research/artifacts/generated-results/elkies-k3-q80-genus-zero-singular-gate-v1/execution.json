@@ -1,0 +1,53 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/independent-replay.json": "a2055d9d365ba93e2394d464160fb5df77deccbf51668bc349b4747228ee11c1",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/input.json": "0ec78b52b7364f312e27e847b12b53f215191d03860a565eb76247c6c3a755e6",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/preflight/input-before-helper-binding.json": "e844e79b2ec6abab93a8f75d1c3738c6b7b463f68db3fb257ce6157e235a0391",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/preflight/producer-before-helper-binding.sage": "ffdd352105cc7cf0466f8f033d765b6ff99005e477a0a85d4f98f20dd7a2f8c2",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/prime-521.json": "f94805dff613eb73b18d988b0a3da78d97eda9db0cf626d8ece04de8a3a60904",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/prime-523.json": "6c21c46f2b34a0b7818f82efcda0a75a6cc30130525db1a9c05e929ba35d34e4",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/result.json": "e47690dccca9b3ca7db59d8a1419da23e59f0d18520a3c5858908fb8a46daa40",
+    "elkies-k3/scripts/certify_q80_genus_zero_singular_gate.sage": "f2d854042ce5337945e472f2450561d9bdd431e0344fe1529c5abc4ec5c947b2",
+    "elkies-k3/scripts/verify_q80_genus_zero_singular_gate.py": "ea2083ef9fd01881aff7e0dc908b578ec9516c818295d5c53bf97a0cefc0f068",
+    "tests/test_q80_genus_zero_singular_gate.py": "df4a261b3206d68258cef0ed5e041baefe7d261f8da717f32ecc5d3d099b665a"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_q80_genus_zero_singular_gate.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_q80_genus_zero_singular_gate.sage run",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elkies-k3/scripts/verify_q80_genus_zero_singular_gate.py --record research/artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/independent-replay.json",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m unittest discover -s research/tests -p 'test_q80_genus_zero_singular_gate.py' -q"
+  ],
+  "date": "2026-09-14",
+  "independent_replay_seconds": 0.207542,
+  "inherited_norm8_independent_replay": false,
+  "new_discriminant_independent_replay": true,
+  "positive_target_complete": false,
+  "preliminary_events": [
+    {
+      "event": "read-only preview initially divided by a polynomial constant, producing a fraction-field element without degree()",
+      "resolution": "multiply by the finite-field inverse of27; no partial result was accepted"
+    },
+    {
+      "event": "initial frozen input omitted one transitive finite-polynomial helper binding",
+      "resolution": "preserved the original input and producer in preflight; added the binding and froze a new input before either prime calculation"
+    },
+    {
+      "event": "two negative regression tests initially expected AssertionError from the existing require helper",
+      "resolution": "changed the test expectations to its actual ValueError; checker and mathematical outputs were unchanged"
+    }
+  ],
+  "producer_cpu_seconds": 0.013299,
+  "regressions": {
+    "boundaries": [
+      "old-base infinity multiplicity",
+      "even and triple discriminant roots",
+      "identically zero discriminant",
+      "pencil parameter infinity"
+    ],
+    "status": "PASS",
+    "tests": 4
+  },
+  "schema": "q80-genus-zero-singular-gate-execution-v1",
+  "scope": "Discriminants of the49 retained full norm12 moving pencils and the written genus-zero k2,j1 descent gate. No new lattice/trace/point or pair campaign.",
+  "whole_family_genus_bound": "UNKNOWN"
+}

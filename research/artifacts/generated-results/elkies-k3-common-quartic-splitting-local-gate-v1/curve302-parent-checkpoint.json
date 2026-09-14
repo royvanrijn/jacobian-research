@@ -1,0 +1,341 @@
+{
+  "parent": "curve302-parent",
+  "rows": [
+    {
+      "balls": [
+        {
+          "centre": "220905963978",
+          "derivative_valuation": 0,
+          "f_valuation": 42
+        },
+        {
+          "centre": "428523157275",
+          "derivative_valuation": 12,
+          "f_valuation": 41
+        },
+        {
+          "centre": "450082506523",
+          "derivative_valuation": 12,
+          "f_valuation": 41
+        }
+      ],
+      "chart": "t",
+      "coordinate": 26,
+      "p": 2,
+      "parent": "curve302-parent",
+      "root_scale": -10
+    },
+    {
+      "balls": [
+        {
+          "centre": "2904186246859241273",
+          "derivative_valuation": 0,
+          "f_valuation": 41
+        },
+        {
+          "centre": "3150197167718417475",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "6103282044479270053",
+          "derivative_valuation": 0,
+          "f_valuation": 43
+        }
+      ],
+      "chart": "t",
+      "coordinate": 2,
+      "p": 3,
+      "parent": "curve302-parent",
+      "root_scale": -1
+    },
+    {
+      "balls": [
+        {
+          "centre": "3551726149746040509433412602",
+          "derivative_valuation": 5,
+          "f_valuation": 40
+        },
+        {
+          "centre": "5849038413812586782605868546",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "8789129471899937466261500102",
+          "derivative_valuation": 5,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 7,
+      "p": 5,
+      "parent": "curve302-parent",
+      "root_scale": -12
+    },
+    {
+      "balls": [
+        {
+          "centre": "182613560974278613051027111311715",
+          "derivative_valuation": 3,
+          "f_valuation": 40
+        },
+        {
+          "centre": "6256302754260396703870985548264924",
+          "derivative_valuation": 3,
+          "f_valuation": 40
+        },
+        {
+          "centre": "6294695206583380654560857618871363",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 14,
+      "p": 7,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "244667583837645993840987355782537030977726",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "279488393169566970092749278188502326183130",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "381029134356306072184050486726899052155946",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 11,
+      "p": 11,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "209623624922505183380003487195122615002237886",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "227086798611409668451605148656926793400295312",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "285666872635148040028233119430630904686102004",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 13,
+      "p": 13,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "4947185040979421051854789019903569950050711708219",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "12646272302862717776404137900817391641254563418854",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "15442496509718873177408674738342206466648179599329",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 597,
+      "p": 17,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "836012361808040891023744992926186641658831825758744",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "836919979223267904544479744627079546209929348978119",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "1153079868046710482117846264553648663747047701405539",
+          "derivative_valuation": 0,
+          "f_valuation": 41
+        }
+      ],
+      "chart": "t",
+      "coordinate": 6,
+      "p": 19,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "827086490651114159331885768122895418665159861200892275",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "922585526415383714279766598141169637128184493900005070",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "1195518820357207294263912331465255402448127471329933056",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 23,
+      "p": 23,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "19884640237525198546972781490446823944127855960744121439325",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "20663428966504479500555858057360855377108705719270882147456",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "22106090769792300784967237700142160171782272374213967294821",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 10,
+      "p": 29,
+      "parent": "curve302-parent",
+      "root_scale": -4
+    },
+    {
+      "balls": [
+        {
+          "centre": "9581521282853786394603466563392944401094717386454533637108",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "213091008283723001156918502736343368986805760705794391199321",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "228629985044445434568384122271457610462933676522239682926772",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 5,
+      "p": 31,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "205166976887523339606842618500068654624155931148995456751686437",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "387401023865383254396550972229972034271178165245354291509782420",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "476730501077117532543225716961853163545047891227551676462158345",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 37,
+      "p": 37,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "9214968947697725292412708567307935906551502162905499807691416275",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "27113954131214907404183421012932199990271051497006219566166166931",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "28591936951951367240642857783825535126879364884559060837124755996",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "v",
+      "coordinate": 41,
+      "p": 41,
+      "parent": "curve302-parent",
+      "root_scale": -4
+    },
+    {
+      "balls": [
+        {
+          "centre": "29299525321912796057793051222807842727631332705965955095662034722",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "59879934709933446385977089619777726027415740187110176986942787452",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "128962003827062627465845129370251441298257196404118982222774165827",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 1,
+      "p": 43,
+      "parent": "curve302-parent",
+      "root_scale": 0
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schema": "full-splitting-panel-completion-preflight-v1",
+  "source_sha256": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c",
+  "script_sha256": "16e97627ccc2ea8f3a2f439a070c84b2e0f76f1558a213b3697e14ece2065e09",
+  "rows": [
+    {
+      "parent": "published-r17",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 14,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 0,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 23,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 2673,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "roots_mod_p": [
+        0,
+        7,
+        22
+      ],
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 37,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 36,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 130359,
+      "via": "simple root and discriminant square",
+      "visits": 4
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 23,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 117,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 117,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 31,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 73,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 37,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 3,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 41,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 5,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 43,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 2,
+      "roots_mod_p": [
+        6,
+        17,
+        20
+      ],
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 14,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 13,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 13,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 597,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 23,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 23,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 10,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 31,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 5,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 37,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 37,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 43,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "roots_mod_p": [
+        11,
+        14,
+        18
+      ],
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 21,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 13,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 39,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 23,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 139,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 0,
+      "via": "simple root and discriminant square",
+      "visits": 3
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 31,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 96,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 37,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 76,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 43,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1942,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    }
+  ],
+  "cpu_seconds": 0.200956457,
+  "scope": "The unresolved cubic-splitting witnesses in the retained four-parent fourteen-prime discriminant panel. Same depth7/2000-node limits per cell stage. Discovery only, not a global point search."
+}

@@ -1,0 +1,39 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/input.json": "c2a33ecd702b591213c1074c9923275e306c1ac89c6e0c59dc88e35245c8a285",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/certify_q80_degree_two_reciprocity.sage": "f793b074e6c10c82e9e6d3da7f8aeca2837a003ad461b2db1f444fca5c12faf8",
+    "elkies-k3/scripts/verify_q80_degree_two_reciprocity.py": "36715a0505d65658bd1337270824ddfe5ed94a2d5cc23469f3f989b783d9fae9",
+    "elkies-k3/scripts/verify_q80_single_branch_reciprocity.py": "990d61f5bb06a302e0c6f4ec2f94dfc8c61bade8eff46c170a122473dd456897"
+  },
+  "cpu_seconds": 60,
+  "field_modulus_low_to_high": [
+    1,
+    0,
+    1
+  ],
+  "memory_bytes": 4294967296,
+  "prime": 131,
+  "schema": 1,
+  "scope": "Complete quadratic residue norm characters; collision boundary retained; no coefficient lift or positive MW17 endpoint.",
+  "section_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "source": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
+}

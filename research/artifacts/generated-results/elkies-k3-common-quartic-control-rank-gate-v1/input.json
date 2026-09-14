@@ -1,0 +1,73 @@
+{
+  "address_space_bytes": 4294967296,
+  "bound": "rho_Q <= floor((22*p + #X(Fp)-1-p^2)/(2*p)); every Q-Jacobian fibration has arithmetic MW rank <= rho_Q-2.",
+  "boundary": "Rational Picard-rank upper bounds, not exact or geometric ranks. The same bounds hold for every integral coefficient model with the identical good reduction.",
+  "checker_sha256": "48c684e00015254a17d3a6471753b97c1036783968e78f6709d43cd68ad3dffe",
+  "controls": [
+    {
+      "D": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "d": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "name": "four-nodes-genus-one",
+      "s": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "square_factor": [
+        1
+      ]
+    },
+    {
+      "D": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "d": [
+        1,
+        0,
+        1
+      ],
+      "name": "five-nodes-genus-zero",
+      "s": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "square_factor": [
+        0,
+        1
+      ]
+    }
+  ],
+  "cpu_seconds": 10,
+  "preview_sha256": "cb841c86718dd3d4c3ee095eccba44f20d5ba06ff4a3272d849952aea4c45981",
+  "primes": [
+    5,
+    7
+  ],
+  "producer_sha256": "3df8f5b179976a067b6df2d70529396f76adbd7f94c3524e903bfdeaa4f29ad6",
+  "sage_version": "10.9",
+  "schema": "common-quartic-control-rank-input-v1",
+  "selection": "First good primes for the two existing controls, discovered in the retained fixed-panel preview. This records that proof; it is not prospective model selection.",
+  "source": "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/input.json",
+  "source_sha256": "af2041145116d55542c5375eb15d84bc52117e4aed0ee1a61428afb9a559e01a"
+}

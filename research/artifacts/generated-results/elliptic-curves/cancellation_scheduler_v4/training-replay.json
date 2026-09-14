@@ -1,0 +1,13 @@
+{
+  "boundary": "Independently checked q partitions and exact rational differential weights; reconstructed mixture, withheld calibration and development witness radii. Uses the retained V2 independent rank replay, with exact endpoint membership checks; no point search.",
+  "certified_development_witnesses": 39,
+  "corpus_anchors": 3734,
+  "cpu_seconds": 9.010436989999999,
+  "development_calls": 545,
+  "fit_sha256": "bb681addb74b283030aa57bd08688d3df50a053495e92b7351855a23db2e792a",
+  "residue_leaves": 154130,
+  "source_sha256": "28888db44df7bbdb8cdbdbfacd43ccc0ab83adf3672589ce5ae17bd3775430d1",
+  "status": "PASS",
+  "training_j_groups": 1842,
+  "withheld_j_groups": 24
+}

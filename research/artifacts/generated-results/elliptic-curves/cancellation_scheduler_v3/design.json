@@ -1,0 +1,27 @@
+{
+  "arm_wall_seconds": 120,
+  "arms": [
+    "factor_free",
+    "adaptive_uniform",
+    "adaptive_local"
+  ],
+  "cancellation_ablation": "adaptive_uniform builds the identical prime-neighbour bank and uses uniform P1 residue mass. adaptive_local replaces it with the training-calibrated q-only differential mass. No full gcd residue tree and no height-regression score.",
+  "cost": "Outer process CPU includes interpreter, all candidate models, policy scoring, failed calls, exact admission, transcript replay and independent Sage finite-quotient rank certification. Shared retained landscapes are the common input interface, not free cold construction. Offline fitting and corpus replay are retained separately and charged once in campaign-inclusive totals.",
+  "fresh_gate": "Fresh-fibre work is conditional on BOTH primary comparisons passing with no infrastructure failure. Before any fresh execution freeze generic-only inputs, previously unsearched addresses, source hashes, common cold construction and a separate finite paired CPU budget. Failure does not trigger expansion.",
+  "hard_process_cpu_seconds": 100,
+  "heights": [
+    8000,
+    32000,
+    125000
+  ],
+  "maximum_calls": 144,
+  "maximum_centres": 48,
+  "point_wall_seconds": 5,
+  "primary_gate": "adaptive_local must recover at least as many directions as each comparator, have at least 10 percent higher recoveries per CPU, and a paired family/stratum bootstrap lower 97.5 percent bound above one against BOTH comparators. 10000 draws with seed 20260914. Each of the two comparisons uses the central 97.5 percent interval (Bonferroni two-comparison family). No post-outcome tuning/repeats. Zero reference gains make the gate UNKNOWN.",
+  "scheduler": "Greedy estimated new union-of-boxes detection mass per complete CPU. Fit empirical radial thresholds from independent development witnesses. Joint categorical states at the same prime; product surrogate only across distinct primes. Update cost from completed calls and remove overlap after complete misses. Timeout removes no exposure. New anchors compete with prepared jobs. Baseline retains its order and H125000.",
+  "scope": "This tests a finite adaptive policy. It cannot prove universal non-predictiveness, rank32, a rank upper bound or saturation. Exact new points prove only independently certified lower bounds.",
+  "search_cpu_seconds": 40,
+  "selection": "Reuse V2 eligible bank audit; exclude all 53 prior CPU curves and Curve302. All remaining deep j groups, at most six per family, then six shallow groups per family by SHA256(cancellation-scheduler-v3/ + j). Largest starting rank then lexical bank for deep; lexical bank for shallow. No new eligibility census or missing-artifact reconstruction.",
+  "status": "DESIGN_BEFORE_NEW_CONTROL_OUTCOMES",
+  "train": "V1 corpus trains one clipped mixture of uniform and differential root-ball probabilities; weight one per j group. V2 factor-free completed calls train radial detection thresholds and anchor hazards; all failures retained as censored at H125000. No new control j group may enter either fit. Fixed 32-point midpoint real quadrature and H levels. The full corpus already informed development."
+}

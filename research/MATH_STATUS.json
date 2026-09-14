@@ -42051,7 +42051,10 @@
         "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
         "EC-HEIGHT-PORTFOLIO-COST-20260914",
         "EC-FINITE-CANCELLATION-PREDICTOR-20260914",
-        "EC-FINITE-CANCELLATION-VALIDATION-20260914"
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914",
+        "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914",
+        "EC-CANCELLATION-CLOUD-SCHEDULER-20260914",
+        "EC-CANCELLATION-BASIS-REFRESH-20260914"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -57076,7 +57079,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Construct two independent new sections on one quadratic cover with infinitely many rational specializations",
-      "scope": "Construct two independent new sections over the same nonconstant quadratic extension of the original parameter field of a high-rank elliptic parent, without fitting desired exceptional points. Prove independence modulo the inherited subgroup and supply a covering base with infinitely many rational points, for example a rational parametrization or a genus-one base with a certified rational nontorsion point. For a generic MW17 parent the target lower bound is19 after this one quadratic cover. A degree-four compositum of separate quadratic covers, a relabelled intermediate quotient, fitted exceptional ancestry, another rootless frame or a bare MW17 equation does not satisfy this target. Existing ancestry degrees exclude only the selected emitted extensions; other carriers, exceptional rebasing and alternative arithmetic constructions remain possible. Different-NS candidates still require an exact rational marking and a demonstrated arithmetic advantage. The 25-pencil exclusion closes its 300 complete smooth genus-one pencil pairs. The subsequent projective comparison closes all 1,675 pairs of 67 frozen height-six regular chord nets with these 25 pencils, including every rational repeated-root position; it supplies no positive common cover. The subsequent generic-only Mestre construction supplies two new independent anti-invariant sections with height matrix diag(24,24) on one genus21 quadratic cover, hence rank at least19. Its entire rational-auxiliary-function family forces genus at least9 and cannot supply infinitely many rational base points. A separate shared-ordinate cubic tangent from each of the136 published generic basis pairs gives only covers of genus at least86. The complete direct11952 alternate-Q80 minimum-norm8 layer is now also closed: all63917 full genus-one pencils have disjoint rational branch images across all2042659486 pairs, and every pencil is itself injective. The subsequent full49 norm12 moving-contact pencils also have disjoint rational branch images from each other and the norm8 bank. These combined63966 pencils exhaust all smooth genus-one bisections modulo inherited section translation on this parent; all2045792595 pairs and all within-pencil collisions close. A solution with a genus-one quadratic base on this parent must therefore use a singular bisection image of arithmetic genus at least2 in at least one independent direction. Such singular images and other parents remain outside the exclusion. The requested positive construction with all conditions remains UNKNOWN; other carriers, generic words, identities and arithmetic parents are not excluded. The sharp coefficient-divisor criterion now extends the same Mestre genus-at-least9 obstruction to direct11952 alternate Q80, Curve302 MW17 and X1092 class1. The same u=2 pair remains independent on genus21 covers there. A different common-quartic polynomial system has a sufficient height8 independence proof and arithmetic-genus5 images, but no solution or positive rational base is constructed on these MW17 parents. The common-quartic singularity analysis now constructs exact genus0 and positive-rank genus1 controls with height determinant48 on new24I1 K3 parents; their inherited ranks are UNKNOWN, so they do not close the MW17 objective. On all four retained parents every algebraic constant abscissa gives normalization genus at least4. Both abscissas in a successful fixed-parent common-quartic solution must therefore be nonconstant. The complete quartic chart, including repeated quartic factors and infinity, and any whole-family genus lower bound on these fixed parents remain UNKNOWN. The subsequent common-quartic factor reduction gives15 exact degree/gcd strata in nine complete coordinate patches. Its squarefree-quartic height pairing is4-k-2*j. The entire k=4 genus-one stratum on Q80 is now excluded by everywhere-unramified Kummer descent and the complete smooth-image theorem. A remaining Q80 genus-one solution requires full cubic splitting over branch residue fields of total degree1 through4; if D is irreducible, its quartic residue field must split the cubic. The genus31 splitting curve has not been proved to lack such divisors. Repeated-quartic genus0 and all other strata remain open.",
+      "scope": "Construct two independent new sections over the same nonconstant quadratic extension of the original parameter field of a high-rank elliptic parent, without fitting desired exceptional points. Prove independence modulo the inherited subgroup and supply a covering base with infinitely many rational points, for example a rational parametrization or a genus-one base with a certified rational nontorsion point. For a generic MW17 parent the target lower bound is19 after this one quadratic cover. A degree-four compositum of separate quadratic covers, a relabelled intermediate quotient, fitted exceptional ancestry, another rootless frame or a bare MW17 equation does not satisfy this target. The positive endpoint remains unconstructed. The retained Mestre identity gives two independent directions of Gram diag(24,24), hence rank at least19, on a genus21 cover. Every rational auxiliary function in that identity forces genus at least9 on all four tested MW17 parents. Frozen smooth-pencil and one-node banks, and the136 fixed shared-ordinate tangent constructions, are separately excluded in their recorded scopes. On direct11952 alternate Q80, all63966 complete smooth genus-one pencils have pairwise disjoint rational branch images and are individually injective; a genus-one solution must include a singular bisection image of arithmetic genus at least2. The common-quartic programme gives exact genus0 and positive-rank genus1 controls with independent height8 gains on new K3 surfaces, but every rational Jacobian fibration on those two surfaces has arithmetic rank at most8 or10. Their respective good coefficient residue classes are also excluded as MW16/MW17 parents. Every algebraic constant abscissa on the four retained MW17 equations has normalization genus at least4, so a fixed-parent solution needs two nonconstant abscissas. The complete common-quartic factor presentation and full genus0 quintic-node chart retain infinity, literal scalars and repeated-quartic presentations. On Q80 all polynomial genus0 allocations are now closed: k2 by singular-pencil and branch-field descent, k1 by single-branch reciprocity, and k0 by degree2 reciprocity, stable-map integrality and the complete reduced norm4 contact census. The k0 theorem rules out all16 collision discs over Q_131, including coefficient denominators, scalar twists, higher contacts and unpointed conics. Its exact independent enumeration finds2626 signed norm4 vectors; all1313 polynomial sections and443 contacts replay, with439 simple contacts rigid to a split lift and four repeated contacts that never select two different roots in one fibre. The earlier k2 aggregate keeps its old norm8 singular-polynomial independent-replay gap; the new k0 proof does not depend on or upgrade it. Twelve Q80 genus1 allocations k0/1/2 remain open; their disagreement divisors have degrees4,3,2 and need coupled norm conditions together with actual coefficient equations. The three k2 allocations are now confined over Q_131 to both branch quadratics reducing to q0=t^2+62*t+88 and both abscissas having negative coefficient valuation. All integral reductions close by the complete character table,131 interpolants,21 inconsistent first lifts and the independent131^3 nodal coefficient census. The all-nodal denominator boundary is still UNKNOWN. A rational base point forces a locally square literal scalar and negative even abscissa valuations; its Jacobian has v_131(j)=-4*n<0. Thus the existing good-reduction genus1 control base cannot appear in these k2 cases. This is a necessary boundary, not an exclusion of the three allocations. The full fixed-parent chart on other actual MW17 parents remains open. The complete original fourteen-prime panel2 through43 has local fully split fibres on all four parents, so it gives no empty-local-set obstruction; necessary local branch data are not coefficient solutions. Other carrier identities, higher-height rational abscissas and additional height-at-least12 directions on the retained rational-bisection covers remain possible. Different-NS equation work still requires a rational marking and demonstrated arithmetic advantage. None of these scoped exclusions supplies the required actual MW17 parent, one quadratic cover of its original parameter field with infinitely many rational points and two certified independent new sections.",
       "dependencies": [
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912",
@@ -57089,7 +57092,15 @@
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
         "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914",
         "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
-        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914",
+        "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914",
+        "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
+        "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
+        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
+        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -57156,7 +57167,7 @@
         },
         {
           "attack": "Trying constant abscissas in the common-quartic construction on the four retained MW17 equations as an unresolved genus0/1 route",
-          "reason": "A degree33 critical-value norm is squarefree at a common good prime on all four equations. Every algebraic constant abscissa has at most one node and normalization genus at least4. Nonconstant quartic abscissas remain outside this theorem; the low-genus controls use new parents of unknown inherited rank.",
+          "reason": "A degree33 critical-value norm is squarefree at a common good prime on all four equations. Every algebraic constant abscissa has at most one node and normalization genus at least4. Nonconstant quartic abscissas remain outside this theorem; the low-genus controls use new parents whose exact inherited ranks remain unknown, with later all-fibration rank upper bounds10 and8.",
           "witnesses": [
             "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914"
           ]
@@ -57166,6 +57177,66 @@
           "reason": "The product Kummer class is everywhere unramified and inherited. Halves of the sum and difference then give two independent smooth genus-one images on the same cover, excluded by the complete Q80 theorem. This does not apply to partial branch agreement or repeated-quartic genus0.",
           "witnesses": [
             "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+          ]
+        },
+        {
+          "attack": "Reopening the full49 moving norm12 rational singular members or the Q80 genus-zero same-branch height-pairing-zero coefficient stratum",
+          "reason": "The full degree24 discriminants exclude every rational singular parameter in the49 pencils. Combined with the retained norm8 singular theorem, the k2,j1 descent gives an impossible arithmetic-genus1 image with genus0 normalization. The k2 cross-height+/-2 cases and partial branch agreement are outside this exclusion.",
+          "witnesses": [
+            "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914"
+          ]
+        },
+        {
+          "attack": "Reopening a same-branch genus0 Q80 common-quartic stratum or searching for height8 anti-invariant sections on the39147 retained smooth rational-bisection covers",
+          "reason": "The branch fibres have no nonzero2-torsion over their quadratic residue fields, forcing anti-invariant height at least12. The k2 cross-height+/-2 descent necessarily produces a smooth rational bisection from this atlas; the orthogonal case is already excluded by the complete singular-pencil row. Other branch fields, surviving strata and sections of height at least12 remain outside the obstruction.",
+          "witnesses": [
+            "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914",
+            "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914"
+          ]
+        },
+        {
+          "attack": "Trying to promote either fixed common-quartic control surface to an MW16/MW17 parent by changing fibrations, or by deforming coefficients within its certified residue class",
+          "reason": "Good-prime complete surface counts bound the rational Picard ranks by12 and10, hence every rational Jacobian fibration has arithmetic MW rank at most10 or8. Identical good reductions have the same bound. Other residue classes, other surfaces and further finite base changes remain outside the theorem.",
+          "witnesses": [
+            "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914"
+          ]
+        },
+        {
+          "attack": "Repeating the original primes2 through43 as an empty-splitting-curve or local-index obstruction on any of the four retained MW17 parents",
+          "reason": "Every one of the56 parent/prime pairs has three distinct cubic roots in its completion, independently certified by168 disjoint Hensel balls. Each local splitting curve therefore has a point. Other places and stronger local constraints from the full coefficient equations remain outside this theorem; finite local compatibility is not a global branch divisor.",
+          "witnesses": [
+            "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914"
+          ]
+        },
+        {
+          "attack": "Reopening Q80 k1 genus0, k3 genus1, or any anti-invariant pair that differs at exactly one geometric branch point on a cover branched only at smooth fibres",
+          "reason": "Weil reciprocity forces inherited-section evaluations at the unused cubic root to be squares. The full110-root character roster at131 contradicts this for every rational residue point, including infinity. Higher-degree disagreement divisors and other parents are outside the theorem.",
+          "witnesses": [
+            "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914"
+          ]
+        },
+        {
+          "attack": "Seeking a Q80 genus0 k0 solution with etale branch reduction at131, or treating finer inherited-character precision alone as an exclusion of all remaining collision discs",
+          "reason": "The degree2 norm gate forces a double branch reduction at one of16 rational full-splitting fibres. Close branch pairs still pass those necessary characters, so character precision alone cannot establish their impossibility. The separate coefficient-collision proof now excludes every polynomial genus0 allocation in those discs, including all scalars and coefficient denominators.",
+          "witnesses": [
+            "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914"
+          ]
+        },
+        {
+          "attack": "Reopening any Q80 polynomial genus0 common-quartic allocation, including a coefficient lift in one of the16 certified branch-collision discs",
+          "reason": "The remaining k0 chart is empty over Q_131 by stable-map integrality, the constant-twist rank bound and a complete norm4 contact/Hensel proof; k1 and k2 are separately excluded. The older k2 norm8 singular-row assurance remains unchanged. Genus1, other actual parents, higher-height rational abscissas and branch at bad characteristic-zero fibres lie outside this closure.",
+          "witnesses": [
+            "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
+            "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
+            "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914",
+            "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914"
+          ]
+        },
+        {
+          "attack": "Searching an integral Q80 genus1 k2 coefficient chart, any k2 branch reduction other than q0 squared at131, or transferring the existing good-reduction genus1 control base into k2",
+          "reason": "The complete character, interpolation, norm4-contact and nodal-census gates exclude all integral cases; the genus1 stable-map argument excludes denominator escapes except the all-nodal q0-squared reduction. Any surviving rational base must have v_131(j) a negative multiple of4. The nodal denominator boundary, k0/1 genus1 cases, other parents and the positive construction remain open.",
+          "witnesses": [
+            "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914"
           ]
         }
       ]
@@ -58055,6 +58126,634 @@
         "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/cpu-replay-manifest.json"
       ],
       "artifact_hash": "sha256:b765c156f1afa28e21b2a27776066ee4f88c335a8f1c8726948b00c97ce7c31f"
+    },
+    {
+      "id": "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Q80 has no rational-normalization arithmetic-genus-one bisection; the same-branch orthogonal genus-zero stratum is empty",
+      "scope": "On the fixed direct11952 alternate-Q80 MW17 parent, all49 full minimum-norm12 moving-contact pencils have no rational singular member. Their full homogeneous degree24 branch discriminants have no projective root at one certified integral prime per pencil:25 are excluded at521 and the remaining24 at523. Every rational projective parameter is covered, including infinity, arbitrary denominators, degree loss and coalescing reductions; no odd/even discriminant factor is discarded. A new independent integer-arithmetic replay verifies73 trace frames and discriminant polynomials and all38154 projective parameter values. Together with the retained63917 norm8 nonsplit singular-member exclusion and the irreducible square-zero parity classification, this excludes every geometrically integral Q-defined bisection with arithmetic genus1 and normalization genus0 on Q80. The norm8 theorem retains its existing false independent-replay flag and missing polynomial-witness gap. The full genus0 polynomial chart f(x_i)=q*s_i^2, deg x_i<=4, deg s_i<=5, squarefree binary q of degree2 coprime to Delta, has12 complete factor cases k=deg gcd(q,h) in0..2 and j=deg gcd(h/c/g,s1-s2) in0..4-k. It includes quintic node factors without a common linear factor. Seven of the previously verified good coordinate sites cover infinity and degree-drop cases. The height cross term is4-k-2*j. In case k2,j1 both branch roots agree and the cross height is zero; the inherited Q80 unramified Kummer theorem makes the product class inherited. Actual halves of the sum and difference after adding an inherited section have anti-trace height16 and images of arithmetic genus1 but normalization genus0, contradicting the completed singular-pencil row. Thus the entire k2,j1 rational coefficient stratum is empty, without an ordinary-node assumption or a rational point on the conic. For k2,j0 or2, the half-images instead have arithmetic genera0 and2; those cases are outside this singular-pencil proof and are closed separately by the subsequent rational-bisection branch-field theorem. For k<2 a degree2-k divisor on the genus31 splitting curve is necessary but not excluded. This certificate alone leaves eleven genus0 cases; the subsequent branch-field theorem closes two of them. The nine k0/1 genus0 cases, remaining genus1 cases, other parents, a whole-family genus lower bound and the positive MW17 endpoint remain UNKNOWN. The aggregate assurance flag stays false: new discriminant replay is independent, but inherited norm8 polynomial replay and formal verification of the written descent are not supplied.",
+      "canonical_source": "elkies-k3/Q80_GENUS_ZERO_SINGULAR_GATE_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "external: Shioda heights, Kummer exactness, adjunction and primitive nef isotropic K3 pencils"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_genus_zero_singular_gate.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ea2083ef9fd01881aff7e0dc908b578ec9516c818295d5c53bf97a0cefc0f068",
+      "software_lock": [
+        "elkies-k3/scripts/certify_q80_genus_zero_singular_gate.sage",
+        "elkies-k3/scripts/verify_q80_genus_zero_singular_gate.py",
+        "tests/test_q80_genus_zero_singular_gate.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/result.json",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/frames-521.json.gz",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/frames-523.json.gz",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/input.json.gz",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/prime-521.json.gz",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/prime-523.json.gz",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-tate-parity-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json",
+        "elkies-k3/scripts/verify_q80_complete_genus_one_pairs.py",
+        "elkies-k3/scripts/verify_q80_norm12_moving_pencils.py",
+        "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py",
+        "elkies-k3/scripts/verify_r17_mestre_shared_twist.py",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/preflight/input-before-helper-binding.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/preflight/producer-before-helper-binding.sage",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/prime-521.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/prime-523.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-singular-gate-v1/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Every Q80 rational-bisection branch field is 2-torsion-free; all same-branch genus-zero strata are excluded",
+      "scope": "On the fixed direct11952 alternate-Q80 MW17 equation, every one of the complete39147 smooth rational-bisection translation classes has an irreducible quadratic branch field K over which the smooth parent fibre has no nonzero rational2-torsion. For each retained branch quadratic, a simple finite reduction root at one parent-integral prime specializes the monic cubic to a root-free smooth cubic. The first40 of64 frozen primes,101 through313, give exact witnesses for all39147 fields; the remaining24 primes are unused. A root in K would be integral at this degree-one prime and reduce to a forbidden finite-field root. This excludes all roots in those fields without a coefficient or rational-height bound. The new Python checker independently replaces root enumeration by gcd(x^p-x,x^3+a*x+b), checks all finite fibre rosters, every witness, quadratic irreducibility, parent integrality and the complete orbit-mask/frame attachment. At the two ramification points, every Q(C)-rational anti-invariant section must specialize to O, so its height is at least12; the retained anti-trace realizes12 on every cover. No polynomial height8 common-quartic section can use any of these covers. For genus0 same-branch k2,j0 or2, unramified Kummer descent gives half-images with arithmetic genera0 and2. The arithmetic-genus0 image is a smooth rational bisection in this complete atlas, contradicting the original polynomial height8 section. Together with the previous k2,j1 singular-pencil theorem, all three k2 genus0 strata are excluded, including higher contacts, infinity, arbitrary denominators and unpointed conics. This branch-field component alone leaves nine k0/1 genus0 cases, requiring degree-two/one splitting-curve divisors; later reciprocity exclusions are recorded separately. Other genus1 strata, parents, additional sections of height at least12, exact twist ranks, a whole-family genus bound and the positive MW17 endpoint remain UNKNOWN. The finite branch-field arithmetic has an independent replay; the aggregate flag remains false because original section/lattice completeness and the previous norm8 singular-row polynomial replay are inherited and not independently recomputed. Written geometry and descent have no formal verification.",
+      "canonical_source": "elkies-k3/Q80_RATIONAL_BISECTION_BRANCH_TORSION_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "external: integral roots of monic polynomials, good reduction, Shioda heights, Kummer exactness and adjunction"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_rational_branch_torsion.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b50182b36ab8be748037cb663fdd0435646101efeea7d0d6554933eb5d2c0e35",
+      "software_lock": [
+        "elkies-k3/scripts/certify_q80_rational_branch_torsion.py",
+        "elkies-k3/scripts/verify_q80_rational_branch_torsion.py",
+        "tests/test_q80_rational_branch_torsion.py",
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-smooth-character-replay-inputs-v1.json.gz",
+        "elkies-k3/scripts/verify_r17_smooth_character_witness.py",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-101.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-103.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-107.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-109.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-113.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-127.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-131.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-137.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-139.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-149.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-151.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-157.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-163.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-167.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-173.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-179.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-181.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-191.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-193.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-197.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-199.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-211.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-223.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-227.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-229.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-233.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-239.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-241.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-251.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-257.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-263.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-269.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-271.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-277.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-281.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-283.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-293.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-307.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-311.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/prime-313.json",
+        "artifacts/generated-results/elkies-k3-q80-rational-branch-torsion-v1/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Both common-quartic control surfaces exclude every arithmetic MW16/MW17 fibration",
+      "scope": "For the two retained common-quartic controls s=t^4+1, A=D*(2*s+1)-1, B=D*s^2, the genus1 control D=t^4+t+1 has good reduction at5 with complete surface point count41 and H2 trace15; the genus0 control D=t^2*(t^2+1) has good reduction at7 with count49 and trace-1. Degree24 squarefree discriminants, including the weighted infinity fibre, certify smooth proper K3 reduction. Rational divisor classes contribute Frobenius eigenvalue p in dimension22, and all remaining eigenvalues have absolute value p. Thus rho_Q <= floor((22*p+trace)/(2*p)) gives rational Picard bounds12 and10, respectively. Every Q-defined Jacobian elliptic fibration on the respective surface has arithmetic MW rank at most10 or8. Neither surface can supply an MW16/MW17 parent through any change of fibration. The same bounds hold for every p-integral degree-(8,12) coefficient model with the identical good reduction, including all corresponding D,s residue classes modulo5 or7 in the reverse construction, without a coefficient-height bound. Exact inherited and geometric Picard ranks remain UNKNOWN. Both original two-gain and infinite-base controls remain valid, but the MW17 positive objective is unachieved. Further base-changed surfaces and other coefficient residues are outside this theorem. Independent integer arithmetic reconstructs the parent identities, squarefree discriminants and all affine fibre points including infinity; six rejection/control tests pass. The written cohomological argument is not formally verified and does not use the Tate conjecture or a full zeta polynomial.",
+      "canonical_source": "elkies-k3/COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914"
+      ],
+      "checker": "elkies-k3/scripts/verify_common_quartic_control_rank_gate.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:48c684e00015254a17d3a6471753b97c1036783968e78f6709d43cd68ad3dffe",
+      "software_lock": [
+        "elkies-k3/scripts/verify_common_quartic_control_rank_gate.py",
+        "elkies-k3/scripts/certify_common_quartic_control_rank_gate.sage",
+        "tests/test_common_quartic_control_rank_gate.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/five-nodes-genus-zero-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/four-nodes-genus-one-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/preflight/control_rank_preview.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/preview.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Full local cubic splitting on all four retained MW17 parents at fourteen small primes",
+      "scope": "For each of published R17, direct11952 alternate Q80, recovered Curve302 and X1092 class1, and every prime2,3,5,7,11,13,17,19,23,29,31,37,41,43, an explicit rational projective base value has a smooth parent cubic splitting into three distinct roots over Qp. The56 local fibres are independently certified by168 disjoint strong Hensel balls using exact rational arithmetic, including the weighted reciprocal chart and bad-reduction primes. Thus each genus31 cubic splitting curve has a Qp point at every tested prime; an empty local splitting curve or local-index obstruction at these places cannot exclude its required degree1 through4 global divisors. The strict Hensel inequalities persist on open base neighbourhoods. Elementary weak approximation by a common denominator and CRT consequently gives infinitely many rational parameter values satisfying the entire finite local splitting panel simultaneously for each parent. This asserts splitting in the specified completions, not splitting over Q. No global splitting-curve point or low-degree rational divisor, full common-quartic coefficient-system solution, all-place local solubility or positive MW17 two-gain cover is constructed. This local-point calculation alone supplies no coefficient-stratum exclusion; reciprocity constraints from the section identities are a separate gate. Six failure/control tests pass; the written Hensel and CRT deductions are not formally verified. Retained local discovery preceded the frozen witness packet and used no exceptional-point data.",
+      "canonical_source": "elkies-k3/COMMON_QUARTIC_LOCAL_SPLITTING_GATE_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+      ],
+      "checker": "elkies-k3/scripts/verify_common_quartic_local_splitting.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ff017b4e950d05ac7f7ca8db5afc50598f65cd2385672b45bc3b8b0490455f5a",
+      "software_lock": [
+        "elkies-k3/scripts/verify_common_quartic_local_splitting.py",
+        "elkies-k3/scripts/certify_common_quartic_local_splitting.sage",
+        "tests/test_common_quartic_local_splitting.py",
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/alternate-q80-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/cells-preview.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/curve302-parent-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/hensel-preview.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/panel-completion-preview.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/preflight/complete_local_splitting_panel.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/preflight/probe_local_full_splitting.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/preflight/probe_splitting_discriminants.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/preflight/probe_splitting_obstruction.py",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/preview.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/published-r17-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/result.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-splitting-local-gate-v1/x1092-class1-checkpoint.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914",
+      "kind": "example",
+      "state": "proved",
+      "title": "Adaptive residue-box scheduling passes new CPU holdouts and high-rank transfer; four fresh fibres certify lower bounds17–18",
+      "scope": "Target-blind q-only residue probabilities, the exact primitive adjugate height law, real orientation and overlap-aware box exposure schedule anchors, up to two prime neighbours and three heights by expected first-direction recovery per CPU. Same-prime states are mutually exclusive; unresolved residues and timeouts never exclude points. A 41-curve, three-arm comparison retains its failed primary gate: local35/41 in223.643844 CPU seconds versus V3 36/41 in410.218360 and uniform35/41 in258.556652. Local/uniform recovery-rate ratio1.15611 has paired central97.5-percent interval[1.03828,1.29015], but one missed V3 direction at the144-call cap prevents promotion. A separately frozen successor permits all432 declared jobs under the unchanged40-CPU-second andH125000 limits and refits after excluding24 different whole-j CPU controls. Both arms recover22/24; local costs204.298177 versus325.341976 CPU seconds, rate ratio1.59249 with interval[1.15894,2.36396]. All gates pass; charging all43.598278 offline seconds to the candidate still gives ratio1.31242. The full corpus informed development; these are disjoint CPU holdouts with final-fit exclusion, not an externally pristine corpus. A gated Curve302 M27/M29/M30 test uses all256 retained centres and recovers28/30/31 under both arms in42.815210 versus106.946935 total CPU seconds; M29 alone is3.42 percent slower. These are known controls, not new rank records. A separately frozen generic-only pilot selects four unused X948 parent/address pairs without target ranks, points or j values. Both arms cold-build identical specialized rank16 seeds and48-anchor banks; the adaptive policy finds a first direction on all four and independently certifies full-cloud lower bounds17,17,18,17. All four j groups are distinct and absent from the retained1961-group corpus after execution. Complete cold CPU is53.701504 versus56.085805 for V3, only4.25 percent lower; adaptive clouds add five directions across the four subgroups versus six for V3. Across all four stages185 arms and5991 point calls are retained, with one explicit timeout and164 independently certified first-direction extensions. All preparation, failed work, point calls, transcript replay and independent Sage finite-group rank proofs are inside each arm meter; historical corpus/parent construction is outside the stated interface. Four byte-checked bundles retain11569 files. This establishes a useful bounded first-recovery policy and fresh certified directions, not information beyond q, a universal speedup, superior deep amplification, exact rank, saturation, a new high-rank record or rank32. All original failed studies remain unchanged.",
+      "canonical_source": "elliptic-curves/notes/CANCELLATION_ADAPTIVE_SCHEDULER_2026-09-14.md",
+      "dependencies": [
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914",
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914",
+        "EC-X948-EIGHT-A1-ADMISSIONS-20260913"
+      ],
+      "checker": "elliptic-curves/cas/verify_cancellation_scheduler_programme.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4f5b1c2d675792e5b545118e0e21a6962c84f132184b5825321ea32667d8fa9a",
+      "software_lock": [
+        "elliptic-curves/cas/cancellation_scheduler.py",
+        "elliptic-curves/cas/cancellation_scheduler_prepare.py",
+        "elliptic-curves/cas/cancellation_scheduler_cpu.py",
+        "elliptic-curves/cas/verify_cancellation_scheduler.py",
+        "elliptic-curves/cas/verify_cancellation_scheduler_training.py",
+        "elliptic-curves/cas/run_cancellation_scheduler.py",
+        "elliptic-curves/cas/report_cancellation_scheduler.py",
+        "elliptic-curves/cas/pack_cancellation_scheduler.py",
+        "elliptic-curves/cas/cancellation_scheduler_round4.py",
+        "elliptic-curves/cas/cancellation_scheduler_transfer.py",
+        "elliptic-curves/cas/cancellation_scheduler_fresh.py",
+        "elliptic-curves/cas/verify_cancellation_scheduler_programme.py",
+        "elliptic-curves/tests/test_cancellation_scheduler.py",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/comparison.csv",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/dependency-audit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/design.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/environment.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/fit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/inputs.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/oracle.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/preflight.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/roster.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/summary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/supervision.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/training-replay.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/design.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/environment.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/execution-audit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/fit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/inputs.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/oracle.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/preflight.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/roster.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/summary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/supervision.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/training-replay.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/design.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/inputs.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/preflight.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/summary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/supervision.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/design.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/inputs.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/preflight.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/summary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/supervision.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_programme_v1/audit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_scheduler_programme_v1/policy.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Single-branch reciprocity excludes all k1 genus-zero and k3 genus-one strata on Q80",
+      "scope": "On the literal direct11952 alternate-Q80 MW17 parent, no rational function on the smooth cubic root curve has odd divisor exactly the two complementary cubic roots above one rational smooth base value; the same obstruction holds over Q_131. Each inherited alpha_T=X_T-theta has even divisor. The norm tame-symbol reciprocity law forces Norm_Z(alpha_T) to be a square when Z is the odd divisor of a putative beta. For a complementary degree-two fibre divisor, Norm_Z(alpha_T)=Y_T(b)^2/(X_T(b)-e), so every inherited X_T(b)-e must be a square. At131 the degree24 discriminant is squarefree and every one of132 projective parent fibres is smooth. Their complete cubic-root roster has110 points (62 single-root fibres and16 fully split fibres); each has an inherited section with finite coordinates, nonzero ordinate and nonsquare X_T-e. Nine of the original17 sections suffice for the selected witnesses. Independent integer/Fraction replay verifies all17 characteristic-zero section identities, good reduction, all projective fibres and all110 characters, including infinity. Reduction contradicts the required square for every rational b,e, with no denominator or height bound. For a quadratic cover branched only at smooth fibres, D*(x-theta) has odd valuations precisely at the complementary roots where an anti-invariant section specializes to nonzero2-torsion. A section cannot have exactly one such geometric branch point; two anti-invariant sections cannot disagree at exactly one branch point. Thus all four full genus0 cases k1,j0 through3 and both squarefree genus1 cases k3,j0/1 are excluded, including poles, higher contacts, infinity and unpointed conics. The same-branch exclusions remain separate dependencies with their previous assurance, including the old norm8 singular-row gap. This component leaves five genus0 k0 cases and twelve genus1 k0/1/2 cases outside its exclusion. The genus0 cases are closed by the separate later coefficient-collision theorem; the twelve genus1 cases, other parents and the positive MW17 two-gain construction remain UNKNOWN. Six failure/control tests pass. The written reciprocity and local parity arguments are not formally verified and require no Brauer or old singular-pencil calculation.",
+      "canonical_source": "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_single_branch_reciprocity.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:990d61f5bb06a302e0c6f4ec2f94dfc8c61bade8eff46c170a122473dd456897",
+      "software_lock": [
+        "elkies-k3/scripts/verify_q80_single_branch_reciprocity.py",
+        "elkies-k3/scripts/certify_q80_single_branch_reciprocity.sage",
+        "tests/test_q80_single_branch_reciprocity.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/finite-model.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/result.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/witnesses.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Coupled reciprocity confines Q80 genus-zero branch pairs to sixteen collision residues at131",
+      "scope": "On the literal direct11952 Q80 MW17 parent, every genus0 k0 common-quartic solution has primitive residual binary branch quadratic q congruent to c*(T-b*Z)^2 modulo131, with c nonzero and b one of2,9,12,27,32,35,38,46,48,63,74,75,103,105,107,115. Its leading coefficient is a131-unit and its discriminant is divisible by131. More generally this holds over Q_131 for two anti-invariant sections on a two-branch-point quadratic cover, branched at smooth characteristic-zero fibres, when both specialize to distinct nonzero2-torsion at both branch points. Coupled Weil reciprocity uses all17 inherited section characters. Regularized evaluations treat zero ordinates with3*e^2+A and poles with squareclass1. The complete132 rational projective base fibres and8515 nonrational quadratic base orbits over F_131[i], i^2=-1, are certified, including all roots with multiplicity and all17 characters. The96 ordered pairs of roots in16 rational full-splitting fibres have distinct ordered character-vector pairs. None of1456 smooth full-splitting quadratic base orbits has two zero norm-character vectors. The unique nodal quadratic orbit has vectors13412,13412,0 and likewise cannot receive two distinct selected roots with zero norm characters. All62 rational one-root fibres, including infinity, also fail the quadratic-residue two-zero condition. Split, unramified quadratic and ramified quadratic local branch algebras therefore force the stated double reduction, with no denominator bound. The arithmetic check independently reconstructs F_131[i], proves complete root rosters by factorization/discriminants/Frobenius gcds, verifies every character, and replays the earlier17 exact rational section identities. This norm-character component alone does not exclude the five genus0 coefficient allocations inside these collision residues; local branch pairs such as2 and133 satisfy the necessary norm conditions there, so increasing their131-adic precision alone cannot exclude the boundary. The separate later coefficient-collision theorem closes these polynomial genus0 allocations. Genus1 allocations, other parents, global splitting and the positive infinite rank-at-least19 endpoint remain UNKNOWN. This is bad reduction of the branch divisor in the fixed model, not of the abstract conic. Six failure/control tests pass. Written reciprocity and specialization arguments are not formally verified and do not use the old norm8 singular-pencil assurance.",
+      "canonical_source": "elkies-k3/Q80_DEGREE_TWO_RECIPROCITY_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_degree_two_reciprocity.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:36715a0505d65658bd1337270824ddfe5ed94a2d5cc23469f3f989b783d9fae9",
+      "software_lock": [
+        "elkies-k3/scripts/verify_q80_degree_two_reciprocity.py",
+        "elkies-k3/scripts/certify_q80_degree_two_reciprocity.sage",
+        "tests/test_q80_degree_two_reciprocity.py",
+        "elkies-k3/scripts/verify_q80_single_branch_reciprocity.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/preflight/probe_degree_two.sage",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/preflight.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/quadratic-fibres.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/rational-fibres.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CANCELLATION-CLOUD-SCHEDULER-20260914",
+      "kind": "example",
+      "state": "proved",
+      "title": "Full-cloud cancellation scheduling fails a new24-curve two-direction gate; exact subgroup blindness is exposed",
+      "scope": "The separate Gamma/Poisson cloud policy reuses exact adjugate box geometry and q-only residue probabilities, refits after excluding24 new whole-j CPU controls, and independently reconciles all545 retained V2 development calls. Their39 positive clouds contain41 independently certified directions, only two more than the first-witness fit. All24 new starting subgroups have rank20 and separately certified withheld endpoints at least two dimensions larger. Each fixed-subgroup arm has48 compatible anchors,40 search CPU seconds,H125000 and at most432 adaptive jobs; all returned points are classified before stopping at two added directions, with uncapped cloud gains retained. Factor-free V3 completes16/24 targets with40 directions in429.056284 complete CPU seconds and565 calls; the adaptive arm completes the same16 targets with39 directions in460.733865 seconds and2306 calls. Both also retain seven one-direction and one zero-direction outcomes; V3 alone has one three-direction cloud. The adaptive/V3 uncapped direction-rate ratio0.907964 has central97.5-percent paired family/stratum interval[0.800495,1.062687]; the frozen10-percent improvement gate fails and no fresh two-direction trial opens. Charging all128.774538 offline fit/preflight seconds to the candidate gives ratio0.709625. All48 arms and79 added independent directions pass independent arithmetic verification inside the CPU meters. There are2870 complete point calls, one timeout and zero preparation unknowns. A separate exact development witness independently certifies a rank18/19/20 chain: adjoining the first cloud point leaves E,Q,P, pointed forms, primitive height124499 and every local cancellation valuation unchanged, but changes that point from independent to an explicit known generator. Thus subgroup-blind cancellation features cannot classify independence correctly for every known subgroup. This is not a universal negative about average prediction or subgroup-aware policies. The radius fit is truncated at125000; exhausted surrogate mass is not proof of no further coordinate exposure. A byte-complete4650-file bundle preserves all calls, ranks, source locks and failed gates. The earlier first-direction policy remains validated at its own scope. No exact rank, later-amplification improvement, fresh high-rank record or rank32 is asserted.",
+      "canonical_source": "elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md",
+      "dependencies": [
+        "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914",
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914"
+      ],
+      "checker": "elliptic-curves/cas/verify_cancellation_cloud_programme.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:83b985b1a32416c753c7c6919810a12a70bf9ff02923be5563dcfb163d340ed4",
+      "software_lock": [
+        "elliptic-curves/cas/cancellation_cloud_policy.py",
+        "elliptic-curves/cas/cancellation_cloud_training.py",
+        "elliptic-curves/cas/cancellation_cloud_cpu.py",
+        "elliptic-curves/cas/cancellation_cloud_programme.py",
+        "elliptic-curves/cas/verify_cancellation_cloud.py",
+        "elliptic-curves/cas/verify_cancellation_cloud_programme.py",
+        "elliptic-curves/cas/verify_cancellation_subgroup_boundary.py",
+        "elliptic-curves/tests/test_cancellation_cloud_policy.py",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/cloud-fit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/cloud-training-replay.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/dependency-audit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/design.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/development-smoke.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/fit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/inputs.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/oracle.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/preflight.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/retained-audit.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/roster.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/subgroup-boundary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/summary.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/supervision.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_cloud_scheduler_v1/training-replay.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-CANCELLATION-BASIS-REFRESH-20260914",
+      "kind": "example",
+      "state": "proved",
+      "title": "A fresh rank18 subgroup gets an independently verified compatible bank in5.176 CPU seconds without point search",
+      "scope": "One separately frozen development/cost input is the highest already certified adaptive cloud in the four-fibre pilot, then case hash: X948 family01191 at-11/18 with a certified rank18 subgroup. The16 retained bank00 generic classes are extended through all four parity states. Integer CVP and the original exact rational solver produce byte-identical64-coset landscapes; independent Sage finite-group arithmetic certifies the input rank18 and native group operations check all77 selected anchors. The first48 are exported with the complete reconciled basis and input/selection hashes. Complete isolated CPU5.175586 includes production1.242915, reference replay1.953847 and all rank and anchor checks, below the predeclared10-second allowance under60 CPU/90 wall hard limits. No point-search calls occur. The CVP proof is for the recorded rounded positive numerical height metric and the retained16-row generic subset, not a certified canonical-height matrix or full generic shell bank. A240-file byte-checked bundle retains the producer, independent reference, exact input basis and receipts. This establishes one compatible and affordable basis-refresh path, not population cost, a later-gain advantage or a new rank direction. The failed fixed-bank full-cloud comparison remains failed; a new disjoint basis-aware control must precede any fresh continuation. Rank32 remains open.",
+      "canonical_source": "elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md",
+      "dependencies": [
+        "EC-CANCELLATION-CLOUD-SCHEDULER-20260914",
+        "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914"
+      ],
+      "checker": "elliptic-curves/cas/cancellation_basis_refresh.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b6d5c321872f825a1eb4cd64b9d30079970d164611a7b4d02c00043b3cec8b89",
+      "software_lock": [
+        "elliptic-curves/cas/cancellation_basis_refresh.py",
+        "elliptic-curves/cas/visibility_complement_subset.py",
+        "elliptic-curves/cas/run_complement_seed_v3.py",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/input.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/prepared-bank.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/replay-bundle.tar.gz",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/replay-manifest.json",
+        "artifacts/generated-results/elliptic-curves/cancellation_basis_refresh_v1/supervision.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Stable-map integrality and complete contact rigidity close all remaining Q80 polynomial genus-zero strata",
+      "scope": "On the literal direct11952 alternate-Q80 MW17 parent, all five full polynomial genus0 common-quartic allocations k0,j0 through4 are empty over Q_131. The chart is f(x_i)=d*q*s_i^2 with degree x_i at most4, degree s_i at most5, squarefree quadratic q, smooth branch fibres and distinct nonzero2-torsion choices at both branch values. The prior complete degree2 reciprocity gate forces monic integral q to reduce to (t-b)^2 at one of16 smooth split fibres. A negative Gauss valuation of any x_i would specialize its primitive divisor in |2O+4F| to2O plus vertical fibres, including the smooth elliptic F_b with positive multiplicity. Properness of genus0 stable maps and specialization of the actual image cycle forbid such a component. Thus coefficients are integral, with no denominator bound. Odd-valuation cover scalars force impossible rational2-torsion in the24I1 reduction. A nonsquare unit scalar gives two height4 points on a constant twist of arithmetic rank at most1, impossible with distinct branch-root choices. This rank bound uses the retained Frobenius polynomial (T-131)^19*(T+131)*(T^2+212*T+131^2); no old point count is rerun. For a square scalar, the complete reduced arithmetic MW lattice equals the inherited rank17 determinant948 lattice: the exact finite Gram, full17-bit Kummer rank, Frobenius rank upper bound and index-square divisibility prove saturation. A new exact rational-LDL enumeration independently counts all2626 signed norm4 vectors (1313 up to sign), visiting32104 nodes. All1313 polynomial sections and9191 finite group-law word identifications replay independently. Among443 ordinate-zero contacts at the16 sites,439 have invertible13-by13 coefficient Jacobians and only the split double-root Hensel lift. The four repeated contacts are indices274 and738 at b2/root58,496 at b27/root36,1230 at b105/root24; all have order2 and no single fibre has two different repeated root labels. A squarefree lift needs both points to have repeated zeros, contradicting k0. This includes infinity, higher contacts, repeated-quartic presentations and unpointed conics. Nine arithmetic/control tests pass and the complete replay is independent for the finite enumeration, point identities and Jacobians. The stable-map, scalar-twist and Hensel arguments remain written proofs, not formally verified. The k0 component uses no old norm8 singular-pencil replay. Combined with the separate k1 and k2 theorems the full Q80 polynomial genus0 chart over Q is closed, retaining the old k2 norm8 assurance gap. Twelve genus1 k0/1/2 allocations, other parents, rational abscissas outside this polynomial chart, branch at bad characteristic-zero fibres and the positive infinite rank-at-least19 construction remain UNKNOWN.",
+      "canonical_source": "elkies-k3/Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_genus_zero_closure.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c9b2c193612d39a1a811964ae0880458f73dcd01f897c810d1825b9f776175fe",
+      "software_lock": [
+        "artifacts/generated-results/elkies-k3-q80-alternate-rootless-bisection-orbits.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/rational-fibres.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-replay-input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/finite-lattice.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/norm4-sections.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/preflight-norm4.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/preflight/probe_norm4.sage",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/result.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_v1.json",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_verification_v1.json",
+        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json",
+        "elkies-k3/scripts/certify_q80_genus_zero_collision_closure.sage",
+        "elkies-k3/scripts/verify_q80_complete_genus_one_pairs.py",
+        "elkies-k3/scripts/verify_q80_degree_two_reciprocity.py",
+        "elkies-k3/scripts/verify_q80_genus_zero_closure.py",
+        "elkies-k3/scripts/verify_q80_genus_zero_collision_closure.py",
+        "elkies-k3/scripts/verify_q80_single_branch_reciprocity.py",
+        "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py",
+        "elkies-k3/scripts/verify_r17_mestre_shared_twist.py",
+        "elliptic-curves/rank-jump/THE_LAST_GLOBAL_CLASS_IS_ABSENT.md",
+        "tests/test_q80_genus_zero_collision_closure.py"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Every Q80 genus-one k2 solution requires the unique nodal denominator reduction at131",
+      "scope": "On the literal direct11952 alternate-Q80 MW17 parent, every full polynomial genus1 common-quartic solution with k2,j0/1/2 is forced over Q_131 to D=eta*g*d, with g,d monic quadratic and both reducing to q0=t^2+62*t+88. Both abscissas have negative Gauss coefficient valuation. All integral coefficient cases and every other branch reduction are excluded, without a height or denominator bound, retaining infinity, literal scalars and smooth characteristic-zero branch fibres. The remaining q0-squared nodal denominator boundary is UNKNOWN, so all three k2 allocations and all twelve surviving genus1 allocations remain open. A genus1 stable-map argument identifies the actual primitive image cycle2O+div(X_bar,h); two smooth elliptic fibres exceed the genus budget. The L_b-squared times q0 reduction has rational semistable components, and the L_b-fourth-power reduction would require four separate positive-degree O tails despite total O degree2. Hence only q0-squared permits denominators. The discriminant has independently checked irreducible factor degrees2,3,19. All110 rational inherited root characters are distinct and nonzero; the only quadratic zero-code orbit is the nodal row13412,13412,0. The only rational root-point pair of XOR13412 is((35,114),(75,11)); the only quadratic13412 entries are that nodal double root. These complete norm tables classify the integral reductions. On the split reduction, the full1313-point norm4 roster has exactly21 mixed agreement/disagreement pairs, including infinity; every26-by24 coefficient Jacobian has rank24 but augmented first-lift rank25 modulo131, using literal A,B modulo131^2. For the nodal-quadratic reduction, all131^3=2248091 abscissas with the simple nodal residue are enumerated; exactly two give a scalar times square, neither with the required fully split root contact. All131 coefficient interpolants for the sole etale quartic q0*(t-35)*(t-75) are excluded. Constant squareclasses are retained; the nonsquare constant twist rank-at-most-one bound and full finite MW lattice are reused from the previous norm4 proof. The independent checker reconstructs the characters, factors, all21 matrices and the complete nodal census from constant-term square roots, independently of the leading-term C++ producer. Seven failure/control tests pass. If the base has a Q_131 point, eta must be a local square; the two abscissa valuations are negative even integers and their primitive reductions are square scalars times q0^2. The base Jacobian has v_131(j)=-4*n for some n>=1, so the existing control base Y^2=X^3-4*X+1 with good reduction at131 cannot occur in these k2 cases. No rational coefficient lift, positive-rank base satisfying the full section system, infinite rank-at-least19 source, genus1 k0/1 exclusion or other-parent theorem is asserted. Stable-map, parity and local-base arguments are written proofs, not formally verified. The old norm8 singular-pencil replay gap is neither used nor upgraded.",
+      "canonical_source": "elkies-k3/Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
+        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+      ],
+      "checker": "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4e82ef74f0b2aa046c0c3467942e856dc8197d0a64248c1e71110372a6451576",
+      "software_lock": [
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/quadratic-fibres.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/rational-fibres.json",
+        "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/character-gate.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/character-preview.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/etale-coefficients.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/integral-preview.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/nodal-census-preview.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/nodal-census.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/nodal-independent-preview.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/inspect_branch_characters.py",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/nodal-census-input.txt",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_integral_residues.sage",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_integral_residues_crt_startup_failure.sage",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_nodal_quadratic.cpp",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_split_lifts.sage",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/replay_nodal_census.py",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/result.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/split-lift-preview.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/split-lifts.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-independent-replay.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-replay-input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/norm4-sections.json",
+        "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/result.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "elkies-k3/scripts/certify_q80_genus_one_k2_nodal_boundary.sage",
+        "elkies-k3/scripts/certify_q80_nodal_quadratic_census.cpp",
+        "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py",
+        "elkies-k3/scripts/verify_q80_genus_zero_closure.py",
+        "tests/test_q80_genus_one_k2_nodal_boundary.py"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

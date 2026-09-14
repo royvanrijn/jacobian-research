@@ -1,0 +1,238 @@
+{
+  "cpu_seconds": 0.047810715000000004,
+  "prime": 131,
+  "rows": [
+    {
+      "agree": 52,
+      "augmented_rank": 25,
+      "disagree": 27,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        906,
+        1233
+      ]
+    },
+    {
+      "agree": 101,
+      "augmented_rank": 25,
+      "disagree": 105,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        451,
+        479
+      ]
+    },
+    {
+      "agree": 129,
+      "augmented_rank": 25,
+      "disagree": 105,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        479,
+        791
+      ]
+    },
+    {
+      "agree": 46,
+      "augmented_rank": 25,
+      "disagree": 105,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        538,
+        1153
+      ]
+    },
+    {
+      "agree": 46,
+      "augmented_rank": 25,
+      "disagree": 75,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        109,
+        538
+      ]
+    },
+    {
+      "agree": 35,
+      "augmented_rank": 25,
+      "disagree": 46,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        164,
+        416
+      ]
+    },
+    {
+      "agree": 46,
+      "augmented_rank": 25,
+      "disagree": 103,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        472,
+        1287
+      ]
+    },
+    {
+      "agree": 75,
+      "augmented_rank": 25,
+      "disagree": 46,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        538,
+        658
+      ]
+    },
+    {
+      "agree": 5,
+      "augmented_rank": 25,
+      "disagree": 103,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        417,
+        729
+      ]
+    },
+    {
+      "agree": 75,
+      "augmented_rank": 25,
+      "disagree": 32,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        109,
+        1005
+      ]
+    },
+    {
+      "agree": 35,
+      "augmented_rank": 25,
+      "disagree": 75,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        517,
+        802
+      ]
+    },
+    {
+      "agree": 35,
+      "augmented_rank": 25,
+      "disagree": 75,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        517,
+        1220
+      ]
+    },
+    {
+      "agree": null,
+      "augmented_rank": 25,
+      "disagree": 107,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        233,
+        403
+      ]
+    },
+    {
+      "agree": 118,
+      "augmented_rank": 25,
+      "disagree": 107,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        370,
+        767
+      ]
+    },
+    {
+      "agree": 32,
+      "augmented_rank": 25,
+      "disagree": 107,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        862,
+        1012
+      ]
+    },
+    {
+      "agree": 9,
+      "augmented_rank": 25,
+      "disagree": 48,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        247,
+        1252
+      ]
+    },
+    {
+      "agree": 32,
+      "augmented_rank": 25,
+      "disagree": 9,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        205,
+        1250
+      ]
+    },
+    {
+      "agree": 85,
+      "augmented_rank": 25,
+      "disagree": 32,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        521,
+        825
+      ]
+    },
+    {
+      "agree": 96,
+      "augmented_rank": 25,
+      "disagree": 63,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        48,
+        262
+      ]
+    },
+    {
+      "agree": 117,
+      "augmented_rank": 25,
+      "disagree": 74,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        367,
+        779
+      ]
+    },
+    {
+      "agree": 120,
+      "augmented_rank": 25,
+      "disagree": 2,
+      "jacobian_rank": 24,
+      "lifts_mod_p2": false,
+      "pair": [
+        825,
+        880
+      ]
+    }
+  ],
+  "status": "PREVIEW_ONLY"
+}

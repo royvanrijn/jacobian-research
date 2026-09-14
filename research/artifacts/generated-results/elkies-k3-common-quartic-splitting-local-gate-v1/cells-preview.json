@@ -1,0 +1,161 @@
+{
+  "schema": "full-splitting-cell-preflight-v1",
+  "source_sha256": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c",
+  "script_sha256": "1f825b2f62d9a59327d88e478d9aa6bedcccb225e6bd3cafd0f429d5eab33aea",
+  "rows": [
+    {
+      "parent": "published-r17",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 14,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 0,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "roots_mod_p": [
+        0,
+        7,
+        22
+      ],
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 1,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 36,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 130359,
+      "via": "simple root and discriminant square",
+      "visits": 4
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 117,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 14,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 597,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 38,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 10,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 7,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 21,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 17,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 5,
+      "roots_mod_p": [
+        9,
+        12,
+        13
+      ],
+      "visits": 3
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 19,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 362,
+      "via": "simple root and discriminant square",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 29,
+      "status": "SPLITS",
+      "chart": "t",
+      "coordinate": 0,
+      "via": "simple root and discriminant square",
+      "visits": 3
+    }
+  ],
+  "cpu_seconds": 0.145803101,
+  "scope": "Four fixed parents; primes7,17,19,29; complete projective Qp base cells, depth7 and2000 nodes for each stage. Any DEFERRED remains unresolved. No global rational-point or coefficient search."
+}

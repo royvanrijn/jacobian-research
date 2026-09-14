@@ -38,6 +38,9 @@ python3 research/scripts/research.py show ID
 | `EC-BROAD-RANK-CONDUCTORS-V1-20260912` | proved | [First broad-rank conductor cutoff certifies 11 exact conductors](../elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md) |
 | `EC-BROAD-RANK-CONDUCTORS-V2-20260912` | proved | [Completed broad-rank conductor pass certifies 26 exact conductors and four partial bounds](../elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md) |
 | `EC-BROAD-RANK-LEDGER-20260912` | proved | [Completed broad search adds 30 distinct curves at certified lower bounds 23–25](../elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md) |
+| `EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914` | proved | [Adaptive residue-box scheduling passes new CPU holdouts and high-rank transfer; four fresh fibres certify lower bounds17–18](../elliptic-curves/notes/CANCELLATION_ADAPTIVE_SCHEDULER_2026-09-14.md) |
+| `EC-CANCELLATION-BASIS-REFRESH-20260914` | proved | [A fresh rank18 subgroup gets an independently verified compatible bank in5.176 CPU seconds without point search](../elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md) |
+| `EC-CANCELLATION-CLOUD-SCHEDULER-20260914` | proved | [Full-cloud cancellation scheduling fails a new24-curve two-direction gate; exact subgroup blindness is exposed](../elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md) |
 | `EC-CLASS-SPAN-GRH-MACHINERY-20260906` | proved | [Reusable class-group span verifier with GRH-conditional upper bounds](../elliptic-curves/notes/CLASS_SPAN_GRH_MACHINERY.md) |
 | `EC-COMPACT192-FIVE-RANK26-20260906` | proved | [Five compact192 curves have new catalogue-unmatched minimal rank26 models](../elliptic-curves/notes/COMPACT192_FIVE_RANK26_CURVES_2026-09-06.md) |
 | `EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906` | proved | [All five compact192 own26-point follow-ups complete245 boxes without gain](../elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md) |

@@ -1,0 +1,48 @@
+{
+  "schema": "q80-single-branch-reciprocity-execution-v1",
+  "status": "PASS",
+  "date": "2026-09-14",
+  "python_version": "3.12.3",
+  "sage_version": "10.9",
+  "input_sha256": "c2a33ecd702b591213c1074c9923275e306c1ac89c6e0c59dc88e35245c8a285",
+  "result_sha256": "860d96992a490f2f9c1a878e64019cb65bc2c32f00ecb2cd539080532da9b234",
+  "independent_replay_sha256": "915704a9cd1be9d6e51444b8fa409a20f1aea9cf9c0e76cb1954f836549c8041",
+  "previous_goal_turn_audit": "Progress: full local splitting at56 parent/prime pairs closed the empty-local-set shortcut. This turn tested the extra reciprocity constraints imposed by the actual section identities.",
+  "mathematical_motivation": "A norm-square class ramified only at the two complementary roots above a rational good fibre forces every inherited X_T-e to be a square by Weil reciprocity. A single good prime with a complete nonsquare character witness for every root residue excludes the entire one-disagreement stratum without coefficient elimination.",
+  "discovery_previews": [
+    {
+      "scope": "Four fixed parents at131,139,149,157, checking only polynomial good reduction and cubic residue rosters; no global parameter search.",
+      "result": "Alternate Q80 has no rational bad residue fibre at131 or157. Prime131 was reused from retained parent arithmetic."
+    },
+    {
+      "scope": "Q80 at131, original17 sections, all48 root points on16 fully split fibres.",
+      "uncovered_root_points": 0,
+      "cpu_seconds": 0.010784499999999975
+    },
+    {
+      "scope": "Q80 at131, all110 rational root points, including62 single-root fibres and infinity.",
+      "uncovered_root_points": 0,
+      "cpu_seconds": 0.011819183999999983
+    }
+  ],
+  "selection": "The proof was discovered before the frozen packet. The finite producer reconstructs every residue point and selected witness from the bound literal source; preliminary output is not accepted as a certificate.",
+  "resource_limits": {
+    "preview_cpu_seconds_soft": 20,
+    "preview_cpu_seconds_hard": 25,
+    "producer_cpu_seconds_soft": 40,
+    "producer_cpu_seconds_hard": 45,
+    "producer_address_space_bytes": 4294967296
+  },
+  "producer_cpu_seconds": 0.030817,
+  "independent_replay_wall_seconds": 0.153875,
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_q80_single_branch_reciprocity.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_q80_single_branch_reciprocity.sage run",
+    "python3 research/elkies-k3/scripts/verify_q80_single_branch_reciprocity.py --record research/artifacts/generated-results/elkies-k3-q80-single-branch-reciprocity-v1/independent-replay.json",
+    "python3 -m unittest discover -s research/tests -p 'test_q80_single_branch_reciprocity.py' -q"
+  ],
+  "tests_passed": 6,
+  "failed_mathematical_attempts": [],
+  "proof_boundary": "The independent checker verifies all17 characteristic-zero section identities, the proper good-reduction model,132 residue fibres and110 character witnesses. The tame-symbol argument, local parity at branch/good/I1/infinity places and reduction of rational spectral points are written proofs, not formal verification. The new exclusion does not depend on the old norm8 singular-row replay or Brauer computations. Prior same-branch exclusions keep their separate assurance. Remaining disagreement degree2/3/4, other parents and the positive MW17 construction are open.",
+  "positive_mw17_target_complete": false
+}

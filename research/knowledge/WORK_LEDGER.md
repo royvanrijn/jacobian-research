@@ -18,7 +18,7 @@ Start with the exact source and [method lessons](ALGORITHMS.md). The proposals s
 
 | Action | Remaining gate |
 |---|---|
-| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Choose a new recovery criterion after the cancellation-policy validation |
+| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Test subgroup-aware later epochs after the failed cloud-yield policy |
 | [WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17](work/elkies-k3.md#work-k3-different-ns-arithmetic-mw17) | Close an arithmetic marking gate before equation work |
 | [WORK-EC-RANK-JUMP-MECHANISM-20260910](work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910) | Parked mechanism work; preserve the closed constructor calibration |
 | [WORK-K3-CORRELATED-QUADRATIC-GAINS](work/elkies-k3.md#work-k3-correlated-quadratic-gains) | Construct two independent gains on one quadratic cover |

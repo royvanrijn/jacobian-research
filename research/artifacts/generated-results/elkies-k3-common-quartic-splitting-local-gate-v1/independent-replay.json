@@ -1,0 +1,29 @@
+{
+  "elapsed_seconds": 0.0123,
+  "global_splitting_divisor": "UNKNOWN",
+  "independent_exact_arithmetic": true,
+  "input_sha256": "f292dc64dfaba5f2cc791769ae59a17f4eb456b1d902daf8361caad36b32805b",
+  "parents": [
+    {
+      "certified_local_split_fibres": 14,
+      "parent": "published-r17"
+    },
+    {
+      "certified_local_split_fibres": 14,
+      "parent": "alternate-q80"
+    },
+    {
+      "certified_local_split_fibres": 14,
+      "parent": "curve302-parent"
+    },
+    {
+      "certified_local_split_fibres": 14,
+      "parent": "x1092-class1"
+    }
+  ],
+  "positive_mw17_target_complete": false,
+  "result_sha256": "f6397b35391a887e78ef551f2de6405fbefaab1723e2c02121b307f35a33afd5",
+  "root_balls_checked": 168,
+  "status": "PASS",
+  "witness_count": 56
+}

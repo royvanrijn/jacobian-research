@@ -1,0 +1,202 @@
+{
+  "after": "P belongs to the enlarged subgroup by its displayed generator list; the other certified cloud direction remains independent.",
+  "anchor": [
+    "16379750603435359890686997900740802821687542237047688966825650098491863390729011186124/16336802817681278506824185882357171696542250618472584878801",
+    "26470084262390435487059590629973431486371570640960585198863628779079434872034487710929762954411442207095116824550224947344186240/2088096670227227015240796326463246635450127271106276472503354872330328646339083993858201"
+  ],
+  "before": "P is independent of the certified starting subgroup, by the rank(n+1) certificate.",
+  "boundary": "For fixed E,Q,P, pointed forms, coordinates and all local cancellation valuations are unchanged when the known subgroup grows to contain P. Thus those features alone cannot determine whether P is a new direction for every subgroup. This is not a universal negative result about average predictive value or subgroup-aware policies.",
+  "case": "47ef87de0fefc02f297f",
+  "cpu_seconds": 0.32714714799999994,
+  "curve": [
+    "0",
+    "0",
+    "0",
+    "-3376697565308604040391396939275096216593207891567245232",
+    "2538364733692241251098914528599161834032144726848233990261602623921287482040898944"
+  ],
+  "extended_word": [
+    0,
+    -1,
+    2,
+    1,
+    -2,
+    2,
+    -1,
+    -1,
+    2,
+    0,
+    -1,
+    0,
+    2,
+    2,
+    -2,
+    0,
+    -4,
+    0,
+    0
+  ],
+  "features": {
+    "D": [
+      "56685716597191440922438720",
+      "-83074566945418069789132064",
+      "14664788011538710284825396",
+      "4328376980831188738456500",
+      "367811566469642505140473"
+    ],
+    "N": [
+      "94863682453948565836680468330744609545927149940638464",
+      "-72641173101448327929877145567478520000067687857788288",
+      "13614132393769423067538845549138359850338593037364592",
+      "6663855162684647565036932143682580867312141199454064",
+      "88111210460492173834542276530234897626096519037868"
+    ],
+    "coordinate": [
+      124499,
+      -30166
+    ],
+    "gcd_bits": 19,
+    "height": 124499,
+    "primitive_gcd": "275625",
+    "q": [
+      "226742866388765763689754880",
+      "-332298267781672279156528256",
+      "58659152046154841139301584",
+      "17313507923324754953826000",
+      "1471246265878570020561892"
+    ],
+    "sign": 1
+  },
+  "old_word": [
+    0,
+    -1,
+    2,
+    1,
+    -2,
+    2,
+    -1,
+    -1,
+    2,
+    0,
+    -1,
+    0,
+    2,
+    2,
+    -2,
+    0,
+    -4,
+    0
+  ],
+  "point": [
+    "17834620009614928692610069655750445057/22750593889",
+    "66278360547754808845725447359689857518763186333278298825/3431540328059537"
+  ],
+  "rank_chain": [
+    {
+      "no_two_torsion_prime": 47,
+      "primes_used": [
+        17,
+        19,
+        23,
+        29,
+        37,
+        41,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97,
+        101,
+        103,
+        107,
+        109,
+        113,
+        127,
+        131,
+        137,
+        139,
+        149
+      ],
+      "rank": 18
+    },
+    {
+      "no_two_torsion_prime": 47,
+      "primes_used": [
+        17,
+        19,
+        23,
+        29,
+        37,
+        41,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97,
+        101,
+        103,
+        107,
+        109,
+        113,
+        127,
+        131,
+        137,
+        139,
+        149
+      ],
+      "rank": 19
+    },
+    {
+      "no_two_torsion_prime": 47,
+      "primes_used": [
+        17,
+        19,
+        23,
+        29,
+        37,
+        41,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97,
+        101,
+        103,
+        107,
+        109,
+        113,
+        127,
+        131,
+        137,
+        139,
+        149
+      ],
+      "rank": 20
+    }
+  ],
+  "source_sha256": {
+    "artifacts/local/elliptic-curves/cancellation-cloud-scheduler-v1/training/47ef87de0fefc02f297f/cloud.json": "0520ba065c403675d7dda1e290e68eec3bd5ab051976e877036b6d5d71f30072",
+    "artifacts/local/elliptic-curves/finite-cancellation-validation-v2/arms/47ef87de0fefc02f297f/factor_free/chart-002.json": "ed13a0cd80d66970f0d481ae4926ba394c0a7c097551ffa2a062a96e791ad56b",
+    "artifacts/local/elliptic-curves/finite-cancellation-validation-v2/arms/47ef87de0fefc02f297f/factor_free/rank-input.json": "65968cac60d1f1629b50e15097ae3cb031a423c88d0f1b11962e15e7d9803a66",
+    "elliptic-curves/cas/verify_cancellation_subgroup_boundary.py": "6524252c0627f0483a15c42cf1f907c1ae3680b3728da41442817763a24cc414"
+  },
+  "status": "PASS_SAME_CANCELLATION_DIFFERENT_SUBGROUP_LABEL"
+}

@@ -1,0 +1,213 @@
+{
+  "branch_fields_excluded": 39147,
+  "elapsed_seconds": 1.714284,
+  "inherited_section_and_lattice_replay": false,
+  "input_sha256": "3daa3ec167412ce2dbae29ea02251bbe4c4a5b18a72c8502701545047742c06e",
+  "new_branch_field_replay_independent": true,
+  "positive_target_complete": false,
+  "remaining_indices": [],
+  "result_sha256": "2a96fb3c3b6d1ff165e2f882b0b2e5cfada6bf8f24161ed77622c19ee7ae7a49",
+  "stages": [
+    {
+      "excluded": 6650,
+      "prime": 101,
+      "remaining": 32497
+    },
+    {
+      "excluded": 7902,
+      "prime": 103,
+      "remaining": 24595
+    },
+    {
+      "excluded": 5639,
+      "prime": 107,
+      "remaining": 18956
+    },
+    {
+      "excluded": 2881,
+      "prime": 109,
+      "remaining": 16075
+    },
+    {
+      "excluded": 3831,
+      "prime": 113,
+      "remaining": 12244
+    },
+    {
+      "excluded": 2311,
+      "prime": 127,
+      "remaining": 9933
+    },
+    {
+      "excluded": 3252,
+      "prime": 131,
+      "remaining": 6681
+    },
+    {
+      "excluded": 1509,
+      "prime": 137,
+      "remaining": 5172
+    },
+    {
+      "excluded": 1386,
+      "prime": 139,
+      "remaining": 3786
+    },
+    {
+      "excluded": 1005,
+      "prime": 149,
+      "remaining": 2781
+    },
+    {
+      "excluded": 724,
+      "prime": 151,
+      "remaining": 2057
+    },
+    {
+      "excluded": 540,
+      "prime": 157,
+      "remaining": 1517
+    },
+    {
+      "excluded": 402,
+      "prime": 163,
+      "remaining": 1115
+    },
+    {
+      "excluded": 322,
+      "prime": 167,
+      "remaining": 793
+    },
+    {
+      "excluded": 191,
+      "prime": 173,
+      "remaining": 602
+    },
+    {
+      "excluded": 159,
+      "prime": 179,
+      "remaining": 443
+    },
+    {
+      "excluded": 98,
+      "prime": 181,
+      "remaining": 345
+    },
+    {
+      "excluded": 113,
+      "prime": 191,
+      "remaining": 232
+    },
+    {
+      "excluded": 68,
+      "prime": 193,
+      "remaining": 164
+    },
+    {
+      "excluded": 41,
+      "prime": 197,
+      "remaining": 123
+    },
+    {
+      "excluded": 31,
+      "prime": 199,
+      "remaining": 92
+    },
+    {
+      "excluded": 24,
+      "prime": 211,
+      "remaining": 68
+    },
+    {
+      "excluded": 15,
+      "prime": 223,
+      "remaining": 53
+    },
+    {
+      "excluded": 8,
+      "prime": 227,
+      "remaining": 45
+    },
+    {
+      "excluded": 13,
+      "prime": 229,
+      "remaining": 32
+    },
+    {
+      "excluded": 8,
+      "prime": 233,
+      "remaining": 24
+    },
+    {
+      "excluded": 3,
+      "prime": 239,
+      "remaining": 21
+    },
+    {
+      "excluded": 4,
+      "prime": 241,
+      "remaining": 17
+    },
+    {
+      "excluded": 4,
+      "prime": 251,
+      "remaining": 13
+    },
+    {
+      "excluded": 2,
+      "prime": 257,
+      "remaining": 11
+    },
+    {
+      "excluded": 1,
+      "prime": 263,
+      "remaining": 10
+    },
+    {
+      "excluded": 1,
+      "prime": 269,
+      "remaining": 9
+    },
+    {
+      "excluded": 3,
+      "prime": 271,
+      "remaining": 6
+    },
+    {
+      "excluded": 2,
+      "prime": 277,
+      "remaining": 4
+    },
+    {
+      "excluded": 1,
+      "prime": 281,
+      "remaining": 3
+    },
+    {
+      "excluded": 0,
+      "prime": 283,
+      "remaining": 3
+    },
+    {
+      "excluded": 2,
+      "prime": 293,
+      "remaining": 1
+    },
+    {
+      "excluded": 0,
+      "prime": 307,
+      "remaining": 1
+    },
+    {
+      "excluded": 0,
+      "prime": 311,
+      "remaining": 1
+    },
+    {
+      "excluded": 1,
+      "prime": 313,
+      "remaining": 0
+    }
+  ],
+  "status": "PASS"
+}

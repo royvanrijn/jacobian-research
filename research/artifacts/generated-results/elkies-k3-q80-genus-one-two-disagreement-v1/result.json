@@ -1,0 +1,22 @@
+{
+  "both_abscissas_require_negative_gauss_valuation": true,
+  "input_sha256": "3084a79a2530ed367dfa3fc3ed2faf7c59e15dd2d00fad7af2e15f2f3b101a05",
+  "integral_k2_solutions": "EXCLUDED over Q_131 by the written classification and finite gates",
+  "necessary_D_reduction": [
+    15,
+    39,
+    90,
+    124,
+    1
+  ],
+  "old_norm8_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "records": {
+    "character-gate.json": "44d19c306924d313287b3643cd58693381c020fe46562039b99c5f38f51b9c50",
+    "etale-coefficients.json": "2d599232d4e578179ff49489f3c17334949043d61aa54dd4cfe9818bb94fd3ef",
+    "nodal-census.json": "7aec3c1204ca91d41988f3b8427caebd4959a7203eb1d387f5dcc65f9a8f8102",
+    "split-lifts.json": "cfab7b43f81d7b44b7163e5d4ba63f5ebcc54ee73903c5882796630de54841a7"
+  },
+  "remaining_nodal_denominator_boundary": "UNKNOWN",
+  "status": "PASS"
+}

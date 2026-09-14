@@ -1,0 +1,16 @@
+{
+  "recipe_sha256": "df108f8b9309536d8955e9cd2f15d01c4674d6977da46c2c1eeb1bd75c1991fa",
+  "rows": [
+    {
+      "arm": "factor_free",
+      "directions": 2,
+      "result_sha256": "d779e09c2a95d8e2b25f286d12595743d2775e12b80790094cfa2521f501fa2b"
+    },
+    {
+      "arm": "adaptive_cloud",
+      "directions": 2,
+      "result_sha256": "35785d68dc4d1a9e3026a6f10a767d8d0eeb06870518aabd28e3234c7ceaa3b2"
+    }
+  ],
+  "status": "PASS_DEVELOPMENT_ONLY"
+}

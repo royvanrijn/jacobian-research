@@ -1,0 +1,41 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json": "a7f06092e93893168563b7230c1506a3295ad19c96b6900dbcae1e21b3030c27",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json": "236a1ca4af0460632c7530133573eaa6848468afc3b379c7b61263b471ed2099",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/quadratic-fibres.json": "e61e937b284c44b2a28009415a58c942d01f19e265aada704f925afbc7244496",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/rational-fibres.json": "cba56cbba3c4abfabcdf9f8a7ccdb85f2b1e64b59a032e437ca323b5653be4af",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json": "1871a300efc2c7fe98994c5ed04374c8b26d2a25f2a7c4c65dcc64b37d722b39",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-independent-replay.json": "7d5dae4ee7bd1df6769419e5cfa8d8fa005fd7f5a6f8da1088211d6a60480060",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-replay-input.json": "a5b1dec9e4b86220c43ab0251818c7ddc33d2d8e903d5d576a77e70604b866ed",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/input.json": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/norm4-sections.json": "8ab2ec6764f3efefc5faa15d8a64dcf48735cb087646525e361ed9e83b0f7df1",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/result.json": "32019a667f1655ba4bc5c98e4c80b7d3d7df1823fc6011dfa541c481e6749b8f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/certify_q80_genus_one_k2_nodal_boundary.sage": "0892ada97c398b315a43f48ade27025e0000aae5e8edaa602f5cf2196ff67ace",
+    "elkies-k3/scripts/certify_q80_nodal_quadratic_census.cpp": "a2eeb0d4186f39cc2a5016f0f7eb13513b3ce7ebfe21a223688230484d019dc2",
+    "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py": "4e82ef74f0b2aa046c0c3467942e856dc8197d0a64248c1e71110372a6451576",
+    "elkies-k3/scripts/verify_q80_genus_zero_closure.py": "c9b2c193612d39a1a811964ae0880458f73dcd01f897c810d1825b9f776175fe"
+  },
+  "cpu_seconds": 40,
+  "etale_coefficient_count": 131,
+  "memory_bytes": 4294967296,
+  "nodal_census_count": 2248091,
+  "preserved_preflight": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/character-preview.json": "1379427ba790b43c7facdf5005dece9e0384fde179091bfe3c9480cad5f4f8fb",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/integral-preview.json": "558ac871e28bdcfc509e2dbdfc2713a3b8b4b34877c81c3a2a78556567736b59",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/nodal-census-preview.json": "bf5f9e1aab7ca370d6f492635d21ee936a5a2d325d04e11dfd3a8958f3774ded",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/nodal-independent-preview.json": "dbf04cc52401b87e17185ad5c6584505e32232fcf9522e2be50d31e47ce44a68",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/inspect_branch_characters.py": "8a8257270765110c37fe3cac95f7c4f4a37d8149801279053b0c6652af9d7519",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/nodal-census-input.txt": "1f2aff7654e1e7a5c95b4ccc1cbd5f0a61b078acaf4e5184653c9754e1d08ba6",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_integral_residues.sage": "1adb90cc2a3cac809958d4ec490888411040884cc1c9be7ed5e8b13b96f1d281",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_integral_residues_crt_startup_failure.sage": "beffb9c234726e10750c27dac31543e4245d952be1d77889ff0c4099ec5c560e",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_nodal_quadratic.cpp": "2a15b0043e9efcc7864ef5faa7f1c90d21c670a222db4ab15f1145988b7bae25",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/probe_split_lifts.sage": "b41c2e5cdb0ff2a13f877f6400d2e59b4e53b202ab2dff2605c7bd143126251a",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/preflight/replay_nodal_census.py": "306a7cd1eca7164005e4878be5bfd9aadf2a0566972601a354c93ae0b81c7641",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/split-lift-preview.json": "67c3d487358b7a424c285fe3c87971dc1a63e03b86f3160e1a8715311faebcb9"
+  },
+  "prime": 131,
+  "schema": 1,
+  "scope": "Complete integral genus1 k2 exclusion and necessary nodal denominator reduction; no remaining-case emptiness or positive MW17 cover.",
+  "split_contact_pairs": 21
+}

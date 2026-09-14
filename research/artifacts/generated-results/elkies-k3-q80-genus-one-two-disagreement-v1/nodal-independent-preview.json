@@ -1,0 +1,54 @@
+{
+  "cpu_seconds": 0.391816473,
+  "method": "constant-term square-root reconstruction, independent of leading-term C++ producer",
+  "records": [
+    {
+      "constant_normalized_root": [
+        1,
+        86,
+        85,
+        52,
+        26,
+        121
+      ],
+      "constant_scalar": 51,
+      "x": [
+        61,
+        1,
+        98,
+        17,
+        97
+      ],
+      "z": [
+        113,
+        29,
+        97
+      ]
+    },
+    {
+      "constant_normalized_root": [
+        1,
+        98,
+        74,
+        55,
+        98,
+        44
+      ],
+      "constant_scalar": 30,
+      "x": [
+        123,
+        76,
+        86,
+        33,
+        105
+      ],
+      "z": [
+        75,
+        73,
+        105
+      ]
+    }
+  ],
+  "status": "PREVIEW_ONLY",
+  "tried": 2248091
+}

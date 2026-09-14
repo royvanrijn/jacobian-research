@@ -1,0 +1,341 @@
+{
+  "parent": "alternate-q80",
+  "rows": [
+    {
+      "balls": [
+        {
+          "centre": "243555790779",
+          "derivative_valuation": 10,
+          "f_valuation": 40
+        },
+        {
+          "centre": "299082644411",
+          "derivative_valuation": 10,
+          "f_valuation": 40
+        },
+        {
+          "centre": "556873192586",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 2,
+      "p": 2,
+      "parent": "alternate-q80",
+      "root_scale": 6
+    },
+    {
+      "balls": [
+        {
+          "centre": "3681189999516753538",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "9493790483527706890",
+          "derivative_valuation": 6,
+          "f_valuation": 40
+        },
+        {
+          "centre": "11140350435069397174",
+          "derivative_valuation": 6,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "v",
+      "coordinate": 0,
+      "p": 3,
+      "parent": "alternate-q80",
+      "root_scale": 9
+    },
+    {
+      "balls": [
+        {
+          "centre": "5205239534710654961865378238",
+          "derivative_valuation": 3,
+          "f_valuation": 40
+        },
+        {
+          "centre": "5717257047878698587278465613",
+          "derivative_valuation": 3,
+          "f_valuation": 40
+        },
+        {
+          "centre": "7267397452869211209156937399",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "v",
+      "coordinate": 80,
+      "p": 5,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "188056189959317796723446036256967",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "3066302372456489090175187493479438",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "3112447198493221098842801609487596",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 0,
+      "p": 7,
+      "parent": "alternate-q80",
+      "root_scale": 4
+    },
+    {
+      "balls": [
+        {
+          "centre": "77415404730924735927711952836213467629487",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "409239582476088531751211573813349602342471",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "418530124156505768438863594048375339344844",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "v",
+      "coordinate": 0,
+      "p": 11,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "164492868512672268222443103295598670886155399",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "264806859636099718411426951269701239648576047",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "293077568020290905225971700717380402553903756",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 6,
+      "p": 13,
+      "parent": "alternate-q80",
+      "root_scale": 2
+    },
+    {
+      "balls": [
+        {
+          "centre": "3094319641958796826919420584356446420267545997078",
+          "derivative_valuation": 1,
+          "f_valuation": 41
+        },
+        {
+          "centre": "3364958326235767059548293079631627946004423673353",
+          "derivative_valuation": 1,
+          "f_valuation": 41
+        },
+        {
+          "centre": "10058698958585942116366087165543509662704757692770",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 36,
+      "p": 17,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "226435959150789982464162128956038389254785357820719",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "470145271182914675259602287364331608911870920949897",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "716424874205304981119271084733087427641248159300585",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 130359,
+      "p": 19,
+      "parent": "alternate-q80",
+      "root_scale": 8
+    },
+    {
+      "balls": [
+        {
+          "centre": "1205090209649951109392888834819597000990264593867681725",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        },
+        {
+          "centre": "2133168656797919072770532123778253082882436680062685300",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "2552122808399540153587708436860790832610242378931293777",
+          "derivative_valuation": 2,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 117,
+      "p": 23,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "4242851644279962769669835207603203301924294492141100784193",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "10288159008667318823487570511109364784934839838016182823718",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "16796069333963707823090532905262351659650282696957201832890",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 117,
+      "p": 29,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "51315614798832750842921227447326945511700656840263822634462",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "105931161366880480891373748296989798145253434950143286913357",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "294055738445308990385611115826877180193880062824081498215382",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 73,
+      "p": 31,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "149764882001707610824600788697287660315677938468221373679450112",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "414926677604634362724063313310626622053027659301803482105353294",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "504606942223682152997955205683979570071676389851876568938823796",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 3,
+      "p": 37,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "8160803741639588811166984122459091958893683728615101883021081812",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "28233674305197055089930428328190044997761129780738794352977370162",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        },
+        {
+          "centre": "28526381984027356036141574913416534067047105035116883974983887228",
+          "derivative_valuation": 1,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 5,
+      "p": 41,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    },
+    {
+      "balls": [
+        {
+          "centre": "1709749773552881063737448961071748228413578624119545762311343894",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "15662596815238111098044005311343861630445747056148806716998396437",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        },
+        {
+          "centre": "200769117270117877747833815940421400194444943616926761826069247670",
+          "derivative_valuation": 0,
+          "f_valuation": 40
+        }
+      ],
+      "chart": "t",
+      "coordinate": 2,
+      "p": 43,
+      "parent": "alternate-q80",
+      "root_scale": 0
+    }
+  ]
+}

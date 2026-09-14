@@ -1,0 +1,333 @@
+{
+  "count": 39147,
+  "cpu_seconds": 1.338445,
+  "excluded": 39147,
+  "input_sha256": "3daa3ec167412ce2dbae29ea02251bbe4c4a5b18a72c8502701545047742c06e",
+  "positive_target_complete": false,
+  "remaining_indices": [],
+  "schema": "q80-rational-branch-torsion-result-v1",
+  "stages": [
+    {
+      "excluded": 6650,
+      "path": "prime-101.json",
+      "prime": 101,
+      "remaining": 32497,
+      "sha256": "15f9f72805b125f786c18ce88f064054e3791ccafcf14e6193242c7dd9f01e45",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 7902,
+      "path": "prime-103.json",
+      "prime": 103,
+      "remaining": 24595,
+      "sha256": "47bb6cf50cac584b987026d6d243f9962f314efd1283fd212c70e3724fde5b15",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 5639,
+      "path": "prime-107.json",
+      "prime": 107,
+      "remaining": 18956,
+      "sha256": "cf9b6f625a90d82616374da8c7861a856ea47f55286bd27a986bb9be8f7c96cf",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 2881,
+      "path": "prime-109.json",
+      "prime": 109,
+      "remaining": 16075,
+      "sha256": "63f227f322cae2802ac4bc68eaafd91d169fa286dd46675e44ad13223e09b5dc",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 3831,
+      "path": "prime-113.json",
+      "prime": 113,
+      "remaining": 12244,
+      "sha256": "d4d32922ee5cdc41984bd776882c04d40376153ef0b042d91f15ca2985918e22",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 2311,
+      "path": "prime-127.json",
+      "prime": 127,
+      "remaining": 9933,
+      "sha256": "c60322b08c21d51f573275f623f700cae433e8ad7bf93e93ba1b84ee4fc1a716",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 3252,
+      "path": "prime-131.json",
+      "prime": 131,
+      "remaining": 6681,
+      "sha256": "16a3570450884dcb13e70219275bffe48dc45904262b6f1b5bff110a6d46afe3",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1509,
+      "path": "prime-137.json",
+      "prime": 137,
+      "remaining": 5172,
+      "sha256": "e748ba264b1e981055c1a48faba3c560754e763595892c7847f6e9656f355314",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1386,
+      "path": "prime-139.json",
+      "prime": 139,
+      "remaining": 3786,
+      "sha256": "e603e096e0a72f360deabb29c3e834172eeea69e46b0056378712c4c6960533f",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1005,
+      "path": "prime-149.json",
+      "prime": 149,
+      "remaining": 2781,
+      "sha256": "b149487f17bc7245feaffd2ddc31e2ecab1f7a39576911140e44233396b9b8f9",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 724,
+      "path": "prime-151.json",
+      "prime": 151,
+      "remaining": 2057,
+      "sha256": "7db9936a9dbd673d084b947ca0bf083f13a04fc8c3251f055e9bdf825b0335ea",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 540,
+      "path": "prime-157.json",
+      "prime": 157,
+      "remaining": 1517,
+      "sha256": "6716bc5b0685027e9f3cfe92bd4ad1cf96cd1f0471324df313769454ab4fc5dc",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 402,
+      "path": "prime-163.json",
+      "prime": 163,
+      "remaining": 1115,
+      "sha256": "acaa97528324fd9b9d147ca2bc4e38698bde4fe386a5131548f56eddb80f0c07",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 322,
+      "path": "prime-167.json",
+      "prime": 167,
+      "remaining": 793,
+      "sha256": "1a4f0de555b7f81511f0c3f6ff57e64a9ad18d75aa8de923e6bcfcab4e735edc",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 191,
+      "path": "prime-173.json",
+      "prime": 173,
+      "remaining": 602,
+      "sha256": "e0839f9e81d4e1cf5f78877579deaf8f6973917a35732fb21b3933dffbfbbc9c",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 159,
+      "path": "prime-179.json",
+      "prime": 179,
+      "remaining": 443,
+      "sha256": "977b56f06050995a5971e0e771a2a7b6bc22946b799895eeef93c93216a7e61e",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 98,
+      "path": "prime-181.json",
+      "prime": 181,
+      "remaining": 345,
+      "sha256": "d606aa9ea70bb77158c3f48f7f3a6693491201be24cfe70ec6737b358725e0f5",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 113,
+      "path": "prime-191.json",
+      "prime": 191,
+      "remaining": 232,
+      "sha256": "ac24a2fd2020c4a88db0ee2637e365df0119b3b5656f248a89695a6adab31cf6",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 68,
+      "path": "prime-193.json",
+      "prime": 193,
+      "remaining": 164,
+      "sha256": "34c41dee51739d1f58619b36a4b9b63bf4c3e4ca1d3db7fabdfff667da5a4371",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 41,
+      "path": "prime-197.json",
+      "prime": 197,
+      "remaining": 123,
+      "sha256": "808b9c7546e2bb59181ccbeee1f7cae6c19f8d4cae4f207a0b93f904dd649300",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 31,
+      "path": "prime-199.json",
+      "prime": 199,
+      "remaining": 92,
+      "sha256": "18c5b34cf4edf3e368f4e5733cad6e1673df2169c1780553ed1643993763a0c6",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 24,
+      "path": "prime-211.json",
+      "prime": 211,
+      "remaining": 68,
+      "sha256": "bf2bbe9398a07e5326812ea96e996e65052c82667f1d348eefa9164247c9a903",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 15,
+      "path": "prime-223.json",
+      "prime": 223,
+      "remaining": 53,
+      "sha256": "ac49457573f5b3a8ec8efcda757977f52d38014f9a3aa59c924c5ed993c492c8",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 8,
+      "path": "prime-227.json",
+      "prime": 227,
+      "remaining": 45,
+      "sha256": "38d6808ab4a6a7364daec9b28c50e03bdf4bc248dd26547d9c11f895c17b75bd",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 13,
+      "path": "prime-229.json",
+      "prime": 229,
+      "remaining": 32,
+      "sha256": "5b869a83c142ddbe34f7bc7a36da434bcf90f10f068834d663239869e8687aa0",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 8,
+      "path": "prime-233.json",
+      "prime": 233,
+      "remaining": 24,
+      "sha256": "549f6ac2cdd21a86ff80c35a15ec66165d8823f9f6faffad6fc3fd34028863d5",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 3,
+      "path": "prime-239.json",
+      "prime": 239,
+      "remaining": 21,
+      "sha256": "015782577cc6754f8f317ed0b6fdec7b649df97d82e2f9fb0eac98022c67147b",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 4,
+      "path": "prime-241.json",
+      "prime": 241,
+      "remaining": 17,
+      "sha256": "c0b499bdb85dcac6f9881db196b6ee0e39e3838950bb06d007fa11dea7b5c20d",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 4,
+      "path": "prime-251.json",
+      "prime": 251,
+      "remaining": 13,
+      "sha256": "279dceaab667714462c8e9b41f477215b7928bb55425a7409ff3122f2e406e27",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 2,
+      "path": "prime-257.json",
+      "prime": 257,
+      "remaining": 11,
+      "sha256": "f5f4caea8c041d871614e93691fc8cc0f09bdbaa3e971d6e3b76cfdd5e1d83b9",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1,
+      "path": "prime-263.json",
+      "prime": 263,
+      "remaining": 10,
+      "sha256": "6717a8c9f160e5bd440fa689e28ab3603e36797be764d7378083e8100521c3aa",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1,
+      "path": "prime-269.json",
+      "prime": 269,
+      "remaining": 9,
+      "sha256": "afae778e7dc5715ac92cce915cc12fcecbbe5062e7ce99b7fa91fa8b45e40544",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 3,
+      "path": "prime-271.json",
+      "prime": 271,
+      "remaining": 6,
+      "sha256": "4c8f565bc705694a7fc2cda6a41c869591d16fa2042aee5d9c6d5ca0e6870c8e",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 2,
+      "path": "prime-277.json",
+      "prime": 277,
+      "remaining": 4,
+      "sha256": "fc5d7d8e18db1d7d8784445c37f4d7dc4c41ea04316fe0ab315105d7c77105db",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1,
+      "path": "prime-281.json",
+      "prime": 281,
+      "remaining": 3,
+      "sha256": "ffea7b3f2ca64b0e292a37b5b052e345d58bb50fe8c898f83e8d143c7a9f251c",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 0,
+      "path": "prime-283.json",
+      "prime": 283,
+      "remaining": 3,
+      "sha256": "1f3e69de14e4fc3bf5d2b4812d2cbf571807262ce10c1ad74238041aceaa5bf9",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 2,
+      "path": "prime-293.json",
+      "prime": 293,
+      "remaining": 1,
+      "sha256": "048f3ac7516e4d018016618ae539b3743c8a6cf25a59766f1123facc010d5b77",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 0,
+      "path": "prime-307.json",
+      "prime": 307,
+      "remaining": 1,
+      "sha256": "a05802e342657de0d3121be25790061228b899fff0550ca5978d255b465d89c3",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 0,
+      "path": "prime-311.json",
+      "prime": 311,
+      "remaining": 1,
+      "sha256": "6bf9e62f99f66e8a830a3a80437afd01edb1bb91242ffaa2cc1f80b946272210",
+      "status": "TESTED"
+    },
+    {
+      "excluded": 1,
+      "path": "prime-313.json",
+      "prime": 313,
+      "remaining": 0,
+      "sha256": "dcdb13763affba9b94eeafa579d8dc7bd3a545f4fe8e5534674cb3f40c556575",
+      "status": "TESTED"
+    }
+  ],
+  "status": "PASS",
+  "whole_family_genus_bound": "UNKNOWN"
+}

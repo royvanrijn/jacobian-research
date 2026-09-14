@@ -1,0 +1,41 @@
+{
+  "address_audit": [
+    {
+      "family": "x948-11952-a1-04380",
+      "parameter": "-11/18",
+      "prior_checkpoints": [],
+      "prior_exposures": 0
+    },
+    {
+      "family": "x948-11952-a1-02021",
+      "parameter": "-11/18",
+      "prior_checkpoints": [],
+      "prior_exposures": 0
+    },
+    {
+      "family": "x948-11952-a1-01191",
+      "parameter": "-11/18",
+      "prior_checkpoints": [],
+      "prior_exposures": 0
+    },
+    {
+      "family": "x948-11952-a1-01615",
+      "parameter": "-11/18",
+      "prior_checkpoints": [],
+      "prior_exposures": 0
+    }
+  ],
+  "historical_input_sha256": {
+    "artifacts/generated-results/elliptic-curves/x948_seed_foundry_v1/exposure-state.json": "2a221f467f231935040aa1699fd155c86fcdb746852aa656e651953989839bdb",
+    "artifacts/generated-results/elliptic-curves/x948_seed_foundry_v1/plan.json": "4ecbdd28eca85dbd48ba40363c795ba3e63071927388b5a88bfc70235bb141b0",
+    "artifacts/generated-results/elliptic-curves/x948_seed_foundry_v1/roster.json": "0c8bea57541be75631b52445fc970db949e87f0acb16c89161e8a3dc55a85c12"
+  },
+  "parent_sha256": {
+    "artifacts/local/elliptic-curves/x948-seed-foundry-v1/runtime/research/parents/x948-11952-a1-01191.json": "759d30e5d9b1f378e888ecc9f8abec8fdf139e34152aec669ff8fceb1e4292f5",
+    "artifacts/local/elliptic-curves/x948-seed-foundry-v1/runtime/research/parents/x948-11952-a1-01615.json": "d257e5ff4682f0d0952cc9fe51cecf737ed6030c5137a752cc82cec82a7f9c00",
+    "artifacts/local/elliptic-curves/x948-seed-foundry-v1/runtime/research/parents/x948-11952-a1-02021.json": "29234562aec5d283dc58e3a12a2f3871bee087cd8b55e07381e83aaa3f7ee937",
+    "artifacts/local/elliptic-curves/x948-seed-foundry-v1/runtime/research/parents/x948-11952-a1-04380.json": "8503f63d3517837c2bdc8969b91282bd4c3d025a85cf90b2a2c20747d375094c"
+  },
+  "prerequisite_summary_sha256": "d86b369e4839eca0f1d71d94e785fe34721937ef01824d91beeb28909164812e",
+  "status": "PASS_UNSEARCHED_RECIPE"
+}

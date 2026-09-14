@@ -1,0 +1,74 @@
+{
+  "bad_quadratic_fibres": [
+    {
+      "norm_codes": [
+        13412,
+        13412,
+        0
+      ],
+      "roots": [
+        5100,
+        5100,
+        7223
+      ],
+      "smooth": false,
+      "t": 4161
+    }
+  ],
+  "coefficient_lift_complete": false,
+  "collision_strata_excluded": false,
+  "genus0_branch_reduction": "double finite point in the sixteen full-splitting residues",
+  "input_sha256": "236a1ca4af0460632c7530133573eaa6848468afc3b379c7b61263b471ed2099",
+  "positive_mw17_target_complete": false,
+  "quadratic_base_orbits": 8515,
+  "quadratic_histogram": [
+    [
+      0,
+      true,
+      2820
+    ],
+    [
+      1,
+      true,
+      4238
+    ],
+    [
+      3,
+      false,
+      1
+    ],
+    [
+      3,
+      true,
+      1456
+    ]
+  ],
+  "quadratic_two_zero_code_triples": 0,
+  "rational_base_values": 132,
+  "rational_full_splitting_values": [
+    2,
+    9,
+    12,
+    27,
+    32,
+    35,
+    38,
+    46,
+    48,
+    63,
+    74,
+    75,
+    103,
+    105,
+    107,
+    115
+  ],
+  "rational_nonsplit_two_zero_code_triples": 0,
+  "rational_ordered_pair_codes": 96,
+  "rational_ordered_pair_collisions": 0,
+  "records": {
+    "quadratic-fibres.json": "e61e937b284c44b2a28009415a58c942d01f19e265aada704f925afbc7244496",
+    "rational-fibres.json": "cba56cbba3c4abfabcdf9f8a7ccdb85f2b1e64b59a032e437ca323b5653be4af"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "boundary": "One development integration/cost input. No efficacy or fresh-point claim. Failed limits do not exclude directions or trigger a rerun.",
+  "charged_cpu_seconds": 5.175586,
+  "cost_gate_passed": true,
+  "point_search_calls": 0,
+  "protocol_sha256": "2e523b3d79ef7af8a6294af659319c01e475ce6a192d4b1656691a1f98df953f",
+  "returncode": 0,
+  "status": "COMPLETE",
+  "timed_out": false,
+  "verification_sha256": "5f527109e3f730628749299a9846d553fc566b4db140dd96a44402b754c4ca05",
+  "wall_seconds": 6.579288729000837
+}

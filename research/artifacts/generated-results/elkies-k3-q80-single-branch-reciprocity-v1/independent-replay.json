@@ -1,0 +1,13 @@
+{
+  "character_witnesses": 110,
+  "elapsed_seconds": 0.153875,
+  "exact_rational_section_identities": 17,
+  "independent_arithmetic_replay": true,
+  "input_sha256": "c2a33ecd702b591213c1074c9923275e306c1ac89c6e0c59dc88e35245c8a285",
+  "positive_mw17_target_complete": false,
+  "projective_fibres": 132,
+  "result_sha256": "860d96992a490f2f9c1a878e64019cb65bc2c32f00ecb2cd539080532da9b234",
+  "root_points": 110,
+  "status": "PASS",
+  "written_reciprocity_formally_verified": false
+}

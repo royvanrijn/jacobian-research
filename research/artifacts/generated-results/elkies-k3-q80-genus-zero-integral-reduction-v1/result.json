@@ -1,0 +1,57 @@
+{
+  "collision_branch_incidences": 443,
+  "genus0_k0_all_five_allocations": "EXCLUDED over Q_131 by the written proof",
+  "genus1_allocations": "UNKNOWN",
+  "input_sha256": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+  "old_norm8_singular_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "records": {
+    "finite-lattice.json": "ff062a7bc1e15854f4534bb4220fe3ead55af5311cd26f9eb60e6d1ec39e56b3",
+    "norm4-sections.json": "8ab2ec6764f3efefc5faa15d8a64dcf48735cb087646525e361ed9e83b0f7df1"
+  },
+  "repeated_root_pairs_selecting_distinct_torsion": 0,
+  "repeated_root_records": [
+    {
+      "b": 2,
+      "index": 274,
+      "jacobian_determinant": 0,
+      "order": 2,
+      "root": 58
+    },
+    {
+      "b": 27,
+      "index": 496,
+      "jacobian_determinant": 0,
+      "order": 2,
+      "root": 36
+    },
+    {
+      "b": 2,
+      "index": 738,
+      "jacobian_determinant": 0,
+      "order": 2,
+      "root": 58
+    },
+    {
+      "b": 105,
+      "index": 1230,
+      "jacobian_determinant": 0,
+      "order": 2,
+      "root": 24
+    }
+  ],
+  "repeated_roots_by_fibre": {
+    "105": [
+      24
+    ],
+    "2": [
+      58
+    ],
+    "27": [
+      36
+    ]
+  },
+  "simple_root_hensel_exclusions": 439,
+  "status": "PASS",
+  "unoriented_norm4_sections": 1313
+}

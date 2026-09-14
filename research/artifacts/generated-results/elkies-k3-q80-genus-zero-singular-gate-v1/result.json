@@ -1,0 +1,310 @@
+{
+  "cpu_seconds": 0.013299,
+  "genus_zero_strata": [
+    {
+      "cross_height": 4,
+      "degree_bounds": [
+        0,
+        2,
+        0,
+        4,
+        5,
+        1,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 8,
+      "intersection": 0,
+      "j": 0,
+      "k": 0,
+      "sum_height": 24
+    },
+    {
+      "cross_height": 2,
+      "degree_bounds": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        2,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 12,
+      "intersection": 2,
+      "j": 1,
+      "k": 0,
+      "sum_height": 20
+    },
+    {
+      "cross_height": 0,
+      "degree_bounds": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 16,
+      "intersection": 4,
+      "j": 2,
+      "k": 0,
+      "sum_height": 16
+    },
+    {
+      "cross_height": -2,
+      "degree_bounds": [
+        0,
+        2,
+        3,
+        1,
+        2,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 20,
+      "intersection": 6,
+      "j": 3,
+      "k": 0,
+      "sum_height": 12
+    },
+    {
+      "cross_height": -4,
+      "degree_bounds": [
+        0,
+        2,
+        4,
+        0,
+        1,
+        5,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 24,
+      "intersection": 8,
+      "j": 4,
+      "k": 0,
+      "sum_height": 8
+    },
+    {
+      "cross_height": 3,
+      "degree_bounds": [
+        1,
+        1,
+        0,
+        3,
+        5,
+        2,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 10,
+      "intersection": 1,
+      "j": 0,
+      "k": 1,
+      "sum_height": 22
+    },
+    {
+      "cross_height": 1,
+      "degree_bounds": [
+        1,
+        1,
+        1,
+        2,
+        4,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 14,
+      "intersection": 3,
+      "j": 1,
+      "k": 1,
+      "sum_height": 18
+    },
+    {
+      "cross_height": -1,
+      "degree_bounds": [
+        1,
+        1,
+        2,
+        1,
+        3,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 18,
+      "intersection": 5,
+      "j": 2,
+      "k": 1,
+      "sum_height": 14
+    },
+    {
+      "cross_height": -3,
+      "degree_bounds": [
+        1,
+        1,
+        3,
+        0,
+        2,
+        5,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 22,
+      "intersection": 7,
+      "j": 3,
+      "k": 1,
+      "sum_height": 10
+    },
+    {
+      "cross_height": 2,
+      "degree_bounds": [
+        2,
+        0,
+        0,
+        2,
+        5,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 12,
+      "intersection": 2,
+      "j": 0,
+      "k": 2,
+      "sum_height": 20
+    },
+    {
+      "cross_height": 0,
+      "degree_bounds": [
+        2,
+        0,
+        1,
+        1,
+        4,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 16,
+      "intersection": 4,
+      "j": 1,
+      "k": 2,
+      "sum_height": 16
+    },
+    {
+      "cross_height": -2,
+      "degree_bounds": [
+        2,
+        0,
+        2,
+        0,
+        3,
+        5,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 20,
+      "intersection": 6,
+      "j": 2,
+      "k": 2,
+      "sum_height": 12
+    }
+  ],
+  "inherited_norm8_pencils": 63917,
+  "input_sha256": "0ec78b52b7364f312e27e847b12b53f215191d03860a565eb76247c6c3a755e6",
+  "norm12_pencils_excluded": 49,
+  "positive_target_complete": false,
+  "q80_genus_zero_k2_j1": "EXCLUDED by the written descent and arithmetic-genus-one classification",
+  "schema": "q80-genus-zero-singular-gate-result-v1",
+  "stages": [
+    {
+      "excluded": 25,
+      "path": "prime-521.json",
+      "prime": 521,
+      "remaining": 24,
+      "selected": 49,
+      "sha256": "f94805dff613eb73b18d988b0a3da78d97eda9db0cf626d8ece04de8a3a60904"
+    },
+    {
+      "excluded": 24,
+      "path": "prime-523.json",
+      "prime": 523,
+      "remaining": 0,
+      "selected": 24,
+      "sha256": "6c21c46f2b34a0b7818f82efcda0a75a6cc30130525db1a9c05e929ba35d34e4"
+    }
+  ],
+  "status": "PASS",
+  "whole_family_genus_bound": "UNKNOWN",
+  "witnesses": {
+    "0": 521,
+    "1": 521,
+    "10": 523,
+    "11": 521,
+    "12": 521,
+    "13": 523,
+    "14": 523,
+    "15": 523,
+    "16": 521,
+    "17": 523,
+    "18": 523,
+    "19": 523,
+    "2": 521,
+    "20": 521,
+    "21": 521,
+    "22": 521,
+    "23": 523,
+    "24": 521,
+    "25": 521,
+    "26": 523,
+    "27": 523,
+    "28": 523,
+    "29": 523,
+    "3": 521,
+    "30": 521,
+    "31": 521,
+    "32": 523,
+    "33": 521,
+    "34": 521,
+    "35": 523,
+    "36": 523,
+    "37": 521,
+    "38": 521,
+    "39": 523,
+    "4": 521,
+    "40": 521,
+    "41": 523,
+    "42": 523,
+    "43": 523,
+    "44": 523,
+    "45": 521,
+    "46": 521,
+    "47": 521,
+    "48": 523,
+    "5": 521,
+    "6": 523,
+    "7": 521,
+    "8": 523,
+    "9": 523
+  }
+}

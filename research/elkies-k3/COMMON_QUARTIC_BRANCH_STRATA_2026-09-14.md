@@ -5,7 +5,10 @@ have the two sections meet the **same nonzero 2-torsion point at all four
 branch values**. This excludes an entire nonconstant-abscissa stratum,
 without a coefficient-height bound or an ordinary-node assumption.
 
-The other strata are not excluded. The fixed-MW17 construction target and
+This component excludes only the same-branch genus-one stratum. The later
+[coefficient collision proof](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md)
+completes the Q80 polynomial genus-zero exclusions; twelve genus-one
+allocations remain open. The fixed-MW17 construction target and
 a genus-above-one bound for the full construction remain **OPEN**. In
 particular, the genus-zero repeated-quartic boundary is not closed here.
 The [previous singularity theorem](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
@@ -265,8 +268,10 @@ Riemann--Hurwitz gives `2g(Sigma)-2=-12+24*3`, hence **genus31**.
 The branch divisor outside g defines a Q-rational effective divisor of
 degree `4-k` on Sigma, with the same residue fields as its t-coordinates.
 
-For Q80, k=4 is excluded, so a remaining genus-one solution requires such
-a divisor of degree1,2,3 or4. If D is irreducible, the only remaining case
+The k=4 gate excludes degree zero. The later
+[reciprocity theorem](Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md)
+also excludes k=3 on Q80, so a remaining genus-one solution requires such
+a divisor of degree2,3 or4. If D is irreducible, the only remaining case
 is k=0: the entire quartic branch field must split the cubic. This is a
 necessary condition, not an assertion that Sigma has no low-degree points.
 Its genus31 does not imply absence of degree-four closed points. Nor does
@@ -278,6 +283,14 @@ The preliminary small-prime reductions did not establish that hypothesis:
 coordinate changes recover local points in the apparent obstructed charts.
 No global index is inferred. Enlarging that probe without a new local or
 global argument is not a completed exclusion strategy.
+
+The subsequent [local splitting gate](COMMON_QUARTIC_LOCAL_SPLITTING_GATE_2026-09-14.md)
+now supplies actual Q_p points on the full splitting curve for all four
+parents at every prime from2 through43. All56 fibres have three distinct
+local roots, certified by168 disjoint Hensel balls. Thus this entire prime
+panel cannot exclude the needed divisors by an empty local splitting curve.
+The global index, low-degree rational divisors and full coefficient incidence
+remain unknown; local solubility does not close those gates.
 
 The [checker](scripts/verify_common_quartic_branch_strata.sage) verifies
 the universal polynomial identities, all15 degree and height cases,
@@ -296,5 +309,6 @@ The [frozen packet and receipt](../artifacts/generated-results/elkies-k3-common-
 record a40-CPU-second/4GiB cap. No full coefficient elimination, genus31
 point search, new parent rank calculation or positive MW17 solution is
 claimed. The next unresolved equation problem is (3)--(5) on the fixed
-parents, with the k=4 genus-one Q80 case removed. Repeated D and every
-other stratum remain part of the target.
+parents. On Q80 only the twelve genus-one k=0,1,2 allocations remain in
+this chart, after the subsequent reciprocity and coefficient collision
+proofs. Repeated D on other parents remains part of the target.

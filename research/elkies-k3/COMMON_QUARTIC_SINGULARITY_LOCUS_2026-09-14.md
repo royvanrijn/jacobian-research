@@ -2,8 +2,11 @@
 
 The common-quartic equations admit explicit **genus-zero and positive-rank
 genus-one controls**, each with two independent new sections. These controls
-construct new `24I1` K3 parents. Their inherited ranks are **UNKNOWN**; they
-are not a solution on a retained MW17 parent and supply no rank19 claim.
+construct new `24I1` K3 parents. Their exact inherited ranks are **UNKNOWN**.
+The subsequent [parent-rank gate](COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md)
+bounds every rational Jacobian fibration on the genus-one and genus-zero
+control surfaces by rank10 and8, respectively. Neither surface can supply
+an MW17 parent by changing fibrations.
 
 On each of the four retained MW17 equations, there is also an exact negative
 result: **every algebraic constant abscissa gives normalization genus at
@@ -226,8 +229,10 @@ no point or parameter search enters these checks.
 The usual specialization theorem then supplies infinitely many rational
 base values where the two new directions remain independent together with
 any fixed independent inherited subgroup. The total inherited rank of
-either new parent has not been computed. These are constructive low-genus
-controls and a counterexample to a genus-above-one bound for the system
+either new parent has not been computed; the later
+[Picard upper bounds](COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md)
+exclude an MW16/MW17 fibration on either surface. These remain constructive
+low-genus controls and a counterexample to a genus-above-one bound for the system
 with **unrestricted moving parent coefficients**. They do not contradict
 or settle a bound restricted to the four fixed MW17 parents.
 

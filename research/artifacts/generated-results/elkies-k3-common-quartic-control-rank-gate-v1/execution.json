@@ -1,0 +1,41 @@
+{
+  "schema": "common-quartic-control-rank-execution-v1",
+  "status": "PASS",
+  "date": "2026-09-14",
+  "python_version": "3.12.3",
+  "sage_version": "10.9",
+  "input_sha256": "4f1b0ff0378b9664b0bb8821c5f8ce0d8bdb43de8162903dfb36403b904acf2d",
+  "result_sha256": "d911f7d7d89931e77bfac9d361fb0dca31fa9569ac5e016572b2a0f53d279630",
+  "independent_replay_sha256": "e98c2b983f33ad30abdbefab2b6a0cbc3c1a13f832c75ab6ccfc9368ee445313",
+  "preview_script": "artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/preflight/control_rank_preview.py",
+  "preview_script_sha256": "965950b9fc0195618cf8400243aaecb75850c325900988ecf2162986f4f6d69c",
+  "resource_limits": {
+    "preview_cpu_seconds_soft": 30,
+    "preview_cpu_seconds_hard": 35,
+    "producer_cpu_seconds_soft": 10,
+    "producer_cpu_seconds_hard": 15,
+    "producer_address_space_bytes": 4294967296
+  },
+  "producer_cpu_seconds": 0.009316,
+  "independent_replay_wall_seconds": 0.000422,
+  "commands": [
+    "sage -python /tmp/common_quartic_control_rank_preview.py",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_common_quartic_control_rank_gate.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_common_quartic_control_rank_gate.sage run",
+    "python3 research/elkies-k3/scripts/verify_common_quartic_control_rank_gate.py --record research/artifacts/generated-results/elkies-k3-common-quartic-control-rank-gate-v1/independent-replay.json",
+    "python3 -m unittest discover -s research/tests -p 'test_common_quartic_control_rank_gate.py' -q"
+  ],
+  "tests_passed": 6,
+  "failed_attempts": [
+    {
+      "stage": "preview startup",
+      "command": "python3 /tmp/common_quartic_control_rank_preview.py",
+      "result": "ModuleNotFoundError: sympy; no computation or witness emitted.",
+      "resolution": "The installed Sage Python ran the identical retained script successfully."
+    }
+  ],
+  "selection": "First good prime from the fixed panel on each of the two existing controls; discovery precedes the frozen producer and is not a prospective high-rank search.",
+  "proof_boundary": "Point counts and good-reduction polynomial witnesses independently replayed. Standard cycle-class injection, smooth proper base change, trace formula and Weil eigenvalue bounds remain written mathematical inputs. Only rational Picard and arithmetic MW upper bounds, not exact or geometric rank. Further base-changed surfaces and other coefficient residues are outside this exclusion.",
+  "previous_turn_audit": "Progress: the branch-field theorem closed all same-branch Q80 genus0 common-quartic cases. This continuation closes the fixed-control parent-rank feasibility gate by two finite surface counts.",
+  "positive_mw17_target_complete": false
+}

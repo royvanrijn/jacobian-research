@@ -1,0 +1,40 @@
+{
+  "scope": "Two fixed control parents only; first squarefree degree24 discriminant prime from5,7,11,13,17,19,23,29,31,37,41,43. CPU30 seconds, no rank or point search. This preview is retained separately from the subsequent frozen independent certificate.",
+  "rows": [
+    {
+      "control": "four-nodes-genus-one",
+      "p": 5,
+      "fibre_counts": [
+        7,
+        3,
+        8,
+        8,
+        8,
+        7
+      ],
+      "surface_count": 41,
+      "trace": 15,
+      "rational_picard_upper": 12,
+      "any_Q_fibration_rank_upper": 10
+    },
+    {
+      "control": "five-nodes-genus-zero",
+      "p": 7,
+      "fibre_counts": [
+        8,
+        5,
+        7,
+        6,
+        6,
+        7,
+        5,
+        5
+      ],
+      "surface_count": 49,
+      "trace": -1,
+      "rational_picard_upper": 10,
+      "any_Q_fibration_rank_upper": 8
+    }
+  ],
+  "cpu_seconds": 0.015356295999999992
+}

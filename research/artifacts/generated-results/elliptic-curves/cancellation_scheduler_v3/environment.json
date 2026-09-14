@@ -1,0 +1,15 @@
+{
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor",
+  "gp_version": "2.15.4",
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "launch": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 research/elliptic-curves/cas/run_cancellation_scheduler.py",
+  "boundary": "Captured at launch; timings are empirical on this host, not deterministic constants.",
+  "python": "3.14.7",
+  "sage": "10.9",
+  "numpy": "2.5.2",
+  "python_binary_sha256": "cef3ee7feffdb9e7e9db61ae86a829f82aad96a57aa7055374cdd8f06489a2fc"
+}

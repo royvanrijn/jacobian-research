@@ -1,0 +1,28 @@
+{
+  "cpu_seconds": 0.053111,
+  "global_splitting_divisor": "UNKNOWN",
+  "input_sha256": "f292dc64dfaba5f2cc791769ae59a17f4eb456b1d902daf8361caad36b32805b",
+  "local_splitting_at_all_tested_primes": true,
+  "positive_mw17_target_complete": false,
+  "records": [
+    {
+      "path": "published-r17-checkpoint.json",
+      "sha256": "8a107e01cc3c082472230ed259f81cb28e23aa5eb6bd59f1e5bd0e567f0741bd"
+    },
+    {
+      "path": "alternate-q80-checkpoint.json",
+      "sha256": "bb86907b455627f701a5d8f4fb6289d79c45a9c0fe3fdfa382425d055ff7260e"
+    },
+    {
+      "path": "curve302-parent-checkpoint.json",
+      "sha256": "5cfc8b645f9fa001b36b49bc11a0e1cd03ba2e01644b378d5f58ee1c11c73b96"
+    },
+    {
+      "path": "x1092-class1-checkpoint.json",
+      "sha256": "834b26e48acf71c188b9cb69fe13ed20503acdd0f4c83931cc8d1d148c73dc4f"
+    }
+  ],
+  "schema": "common-quartic-local-splitting-result-v1",
+  "status": "PASS",
+  "witness_count": 56
+}

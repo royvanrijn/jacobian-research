@@ -1,0 +1,44 @@
+{
+  "elapsed_seconds": 2.219181,
+  "finite_input_sha256": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+  "finite_replay": {
+    "basis_gram_replayed": true,
+    "contact_matrices": 443,
+    "elapsed_seconds": 1.74108,
+    "exact_fibrewise_word_identifications": 9191,
+    "finite_kummer_character_rank": 17,
+    "independent_finite_arithmetic_replay": true,
+    "input_sha256": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+    "nonsingular_contact_matrices": 439,
+    "norm4_sections": 1313,
+    "old_norm8_singular_replay_upgraded": false,
+    "positive_mw17_target_complete": false,
+    "repeated_contacts": 4,
+    "repeated_roots_by_fibre": {
+      "105": [
+        24
+      ],
+      "2": [
+        58
+      ],
+      "27": [
+        36
+      ]
+    },
+    "result_sha256": "32019a667f1655ba4bc5c98e4c80b7d3d7df1823fc6011dfa541c481e6749b8f",
+    "status": "PASS",
+    "written_integrality_and_hensel_proof_formally_verified": false
+  },
+  "finite_result_sha256": "32019a667f1655ba4bc5c98e4c80b7d3d7df1823fc6011dfa541c481e6749b8f",
+  "independent_exact_count": {
+    "signed_norm_histogram": {
+      "0": 1,
+      "4": 2626
+    },
+    "visited_nodes": 32104
+  },
+  "input_sha256": "a5b1dec9e4b86220c43ab0251818c7ddc33d2d8e903d5d576a77e70604b866ed",
+  "old_norm8_singular_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "status": "PASS"
+}

@@ -1,0 +1,28 @@
+{
+  "degree24_discriminants_verified": 73,
+  "elapsed_seconds": 0.207542,
+  "inherited_norm8_independent_replay": false,
+  "input_sha256": "0ec78b52b7364f312e27e847b12b53f215191d03860a565eb76247c6c3a755e6",
+  "new_discriminant_replay_independent": true,
+  "norm12_pencils_excluded": 49,
+  "positive_target_complete": false,
+  "projective_parameter_tests": 38154,
+  "result_sha256": "e47690dccca9b3ca7db59d8a1419da23e59f0d18520a3c5858908fb8a46daa40",
+  "stages": [
+    {
+      "excluded": 25,
+      "prime": 521,
+      "remaining": 24,
+      "selected": 49
+    },
+    {
+      "excluded": 24,
+      "prime": 523,
+      "remaining": 0,
+      "selected": 24
+    }
+  ],
+  "status": "PASS",
+  "trace_frames_reverified": 73,
+  "written_descent_formally_verified": false
+}

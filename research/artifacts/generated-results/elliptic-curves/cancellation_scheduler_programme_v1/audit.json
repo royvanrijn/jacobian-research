@@ -1,0 +1,123 @@
+{
+  "bindings_sha256": {
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/protocol.json": "7fd52a2be1f1cc5f8de563b35886074d9615c5d2def842aa1932a68a3e75053c",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/replay-manifest.json": "694583580372257e08e356d33461cfe8540dfe0d15d4eb52e96e8d35dddc98ab",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_fresh_v1/summary.json": "4a34eb334c2cb758dc45ca1a8cfa1fa6609e7b077f25926141257b8fc70d2137",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/protocol.json": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/replay-manifest.json": "6966880fb8fd86139d62a69b038262bf71ed66f49cf63a9c4692e0e8072c4ebb",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_transfer_v1/summary.json": "d86b369e4839eca0f1d71d94e785fe34721937ef01824d91beeb28909164812e",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/protocol.json": "8d40a83e0aef0240705f0bdd4549b50eefe60a2c96c08f2822d5c126bff6e786",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/replay-manifest.json": "c9bdbfbc53a80f2a0411a4268085bd2c5b470b4975f2f02a23dadc034c0eeb04",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v3/summary.json": "67f6dec660b1ee4f2ab24cd49e8b5632b091a06d8f85a70fb8c5776d12c14221",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/protocol.json": "c19f03b69ffcea14ecc31ac2d8ffa7f2de24106bf6c53d502cbf97ab7fb616c4",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/replay-manifest.json": "737c438a0493925bea4edc110762c3c63641f8936609bec94ded22b901f70aa3",
+    "artifacts/generated-results/elliptic-curves/cancellation_scheduler_v4/summary.json": "35bba96d833f59627df240fc927dbc171c7e21392501dc069d90ce9049fafebf"
+  },
+  "boundary": "Integrity and aggregate audit of already independently replayed arithmetic. Default execution makes no point calls or new arithmetic proof. Complete search CPU includes independent proofs inside each original arm. Optional --arithmetic reconstructs those proofs and cold banks without searching. Timing reproducibility means replayable protocol and receipts, not bit-identical runtimes.",
+  "checker_sha256": "4f5b1c2d675792e5b545118e0e21a6962c84f132184b5825321ea32667d8fa9a",
+  "cpu_seconds": 0.832518737,
+  "policy_sha256": "615fbd42dbcf77c287c3418d49f43495d9ccf5f4c571be66bf3eff9af8fc87aa",
+  "rank32": "UNKNOWN",
+  "stages": [
+    {
+      "arms": 123,
+      "certified_first_directions": 106,
+      "point_statuses": {
+        "bounded_search_complete": 3416
+      },
+      "stage": "cancellation_scheduler_v3",
+      "totals": {
+        "adaptive_local": {
+          "calls": 1356,
+          "cloud_directions": 0,
+          "cpu_seconds": 223.64384399999992,
+          "gains": 35
+        },
+        "adaptive_uniform": {
+          "calls": 1597,
+          "cloud_directions": 0,
+          "cpu_seconds": 258.556652,
+          "gains": 35
+        },
+        "factor_free": {
+          "calls": 463,
+          "cloud_directions": 0,
+          "cpu_seconds": 410.21836000000013,
+          "gains": 36
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "arms": 48,
+      "certified_first_directions": 44,
+      "point_statuses": {
+        "bounded_search_complete": 1728,
+        "bounded_search_timeout": 1
+      },
+      "stage": "cancellation_scheduler_v4",
+      "totals": {
+        "adaptive_local": {
+          "calls": 1317,
+          "cloud_directions": 0,
+          "cpu_seconds": 204.298177,
+          "gains": 22
+        },
+        "factor_free": {
+          "calls": 412,
+          "cloud_directions": 0,
+          "cpu_seconds": 325.34197599999993,
+          "gains": 22
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "arms": 6,
+      "certified_first_directions": 6,
+      "point_statuses": {
+        "bounded_search_complete": 792
+      },
+      "stage": "cancellation_scheduler_transfer_v1",
+      "totals": {
+        "adaptive_local": {
+          "calls": 649,
+          "cloud_directions": 0,
+          "cpu_seconds": 42.81520999999998,
+          "gains": 3
+        },
+        "factor_free": {
+          "calls": 143,
+          "cloud_directions": 0,
+          "cpu_seconds": 106.94693500000002,
+          "gains": 3
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "arms": 8,
+      "certified_first_directions": 8,
+      "point_statuses": {
+        "bounded_search_complete": 54
+      },
+      "stage": "cancellation_scheduler_fresh_v1",
+      "totals": {
+        "adaptive_local": {
+          "calls": 44,
+          "cloud_directions": 5,
+          "cpu_seconds": 53.70150400000001,
+          "gains": 4
+        },
+        "factor_free": {
+          "calls": 10,
+          "cloud_directions": 6,
+          "cpu_seconds": 56.085805,
+          "gains": 4
+        }
+      },
+      "unknowns": 0
+    }
+  ],
+  "status": "PASS_RETAINED_RECEIPTS_AND_BUNDLES"
+}

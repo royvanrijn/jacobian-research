@@ -1,0 +1,78 @@
+{
+  "boundary": "Three subgroups on one known curve. Exact lower-bound recoveries only; no new rank, no population inference, no automatic fresh-fibre input construction or larger allowance.",
+  "cpu_ratios": {
+    "curve302-M27": 0.14263639859535604,
+    "curve302-M29": 1.034188093821056,
+    "curve302-M30": 0.3002690013999035
+  },
+  "cpu_totals": {
+    "adaptive_local": 42.81520999999998,
+    "factor_free": 106.94693500000002
+  },
+  "fresh_fibre_gate": true,
+  "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+  "rank32": "UNKNOWN",
+  "rows": [
+    {
+      "arm": "factor_free",
+      "calls": 51,
+      "case": "curve302-M27",
+      "cpu_seconds": 38.208403000000004,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 28,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    },
+    {
+      "arm": "adaptive_local",
+      "calls": 65,
+      "case": "curve302-M27",
+      "cpu_seconds": 5.449908999999998,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 28,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    },
+    {
+      "arm": "adaptive_local",
+      "calls": 362,
+      "case": "curve302-M29",
+      "cpu_seconds": 23.568068000000004,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 30,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    },
+    {
+      "arm": "factor_free",
+      "calls": 29,
+      "case": "curve302-M29",
+      "cpu_seconds": 22.788956999999996,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 30,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    },
+    {
+      "arm": "factor_free",
+      "calls": 63,
+      "case": "curve302-M30",
+      "cpu_seconds": 45.949575000000024,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 31,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    },
+    {
+      "arm": "adaptive_local",
+      "calls": 222,
+      "case": "curve302-M30",
+      "cpu_seconds": 13.797232999999977,
+      "preparation_unknowns": 0,
+      "rank_lower_bound": 31,
+      "status": "CERTIFIED_NEXT_DIRECTION",
+      "success": true
+    }
+  ],
+  "status": "COMPLETE_KNOWN_HIGH_RANK_TRANSFER"
+}

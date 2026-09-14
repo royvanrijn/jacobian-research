@@ -1,0 +1,2060 @@
+{
+  "rows": [
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 0
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 1
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        97050,
+        71746,
+        25432
+      ],
+      "rational_roots": [
+        19,
+        54,
+        58
+      ],
+      "roots": [
+        19,
+        54,
+        58
+      ],
+      "smooth": true,
+      "t": 2
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 3
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 4
+    },
+    {
+      "norm_codes": [
+        0,
+        14751,
+        14751
+      ],
+      "rational_codes": [
+        14751
+      ],
+      "rational_roots": [
+        73
+      ],
+      "roots": [
+        73,
+        5400,
+        11819
+      ],
+      "smooth": true,
+      "t": 5
+    },
+    {
+      "norm_codes": [
+        0,
+        70372,
+        70372
+      ],
+      "rational_codes": [
+        70372
+      ],
+      "rational_roots": [
+        69
+      ],
+      "roots": [
+        69,
+        5533,
+        11690
+      ],
+      "smooth": true,
+      "t": 6
+    },
+    {
+      "norm_codes": [
+        0,
+        112857,
+        112857
+      ],
+      "rational_codes": [
+        112857
+      ],
+      "rational_roots": [
+        17
+      ],
+      "roots": [
+        17,
+        5035,
+        12240
+      ],
+      "smooth": true,
+      "t": 7
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 8
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        51008,
+        21242,
+        38330
+      ],
+      "rational_roots": [
+        41,
+        44,
+        46
+      ],
+      "roots": [
+        41,
+        44,
+        46
+      ],
+      "smooth": true,
+      "t": 9
+    },
+    {
+      "norm_codes": [
+        0,
+        92057,
+        92057
+      ],
+      "rational_codes": [
+        92057
+      ],
+      "rational_roots": [
+        82
+      ],
+      "roots": [
+        82,
+        2317,
+        15024
+      ],
+      "smooth": true,
+      "t": 10
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 11
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        90937,
+        8365,
+        82836
+      ],
+      "rational_roots": [
+        22,
+        110,
+        130
+      ],
+      "roots": [
+        22,
+        110,
+        130
+      ],
+      "smooth": true,
+      "t": 12
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 13
+    },
+    {
+      "norm_codes": [
+        0,
+        58529,
+        58529
+      ],
+      "rational_codes": [
+        58529
+      ],
+      "rational_roots": [
+        99
+      ],
+      "roots": [
+        99,
+        7221,
+        9972
+      ],
+      "smooth": true,
+      "t": 14
+    },
+    {
+      "norm_codes": [
+        0,
+        69783,
+        69783
+      ],
+      "rational_codes": [
+        69783
+      ],
+      "rational_roots": [
+        15
+      ],
+      "roots": [
+        15,
+        5036,
+        12241
+      ],
+      "smooth": true,
+      "t": 15
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 16
+    },
+    {
+      "norm_codes": [
+        0,
+        8575,
+        8575
+      ],
+      "rational_codes": [
+        8575
+      ],
+      "rational_roots": [
+        59
+      ],
+      "roots": [
+        59,
+        1084,
+        16149
+      ],
+      "smooth": true,
+      "t": 17
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 18
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 19
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 20
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 21
+    },
+    {
+      "norm_codes": [
+        0,
+        39441,
+        39441
+      ],
+      "rational_codes": [
+        39441
+      ],
+      "rational_roots": [
+        85
+      ],
+      "roots": [
+        85,
+        7752,
+        9455
+      ],
+      "smooth": true,
+      "t": 22
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 23
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 24
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 25
+    },
+    {
+      "norm_codes": [
+        0,
+        9371,
+        9371
+      ],
+      "rational_codes": [
+        9371
+      ],
+      "rational_roots": [
+        100
+      ],
+      "roots": [
+        100,
+        3487,
+        13836
+      ],
+      "smooth": true,
+      "t": 26
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        91616,
+        23381,
+        81589
+      ],
+      "rational_roots": [
+        7,
+        36,
+        88
+      ],
+      "roots": [
+        7,
+        36,
+        88
+      ],
+      "smooth": true,
+      "t": 27
+    },
+    {
+      "norm_codes": [
+        0,
+        26684,
+        26684
+      ],
+      "rational_codes": [
+        26684
+      ],
+      "rational_roots": [
+        98
+      ],
+      "roots": [
+        98,
+        4536,
+        12789
+      ],
+      "smooth": true,
+      "t": 28
+    },
+    {
+      "norm_codes": [
+        0,
+        58064,
+        58064
+      ],
+      "rational_codes": [
+        58064
+      ],
+      "rational_roots": [
+        46
+      ],
+      "roots": [
+        46,
+        4693,
+        12684
+      ],
+      "smooth": true,
+      "t": 29
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 30
+    },
+    {
+      "norm_codes": [
+        0,
+        80460,
+        80460
+      ],
+      "rational_codes": [
+        80460
+      ],
+      "rational_roots": [
+        30
+      ],
+      "roots": [
+        30,
+        5880,
+        11513
+      ],
+      "smooth": true,
+      "t": 31
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        61073,
+        46182,
+        23287
+      ],
+      "rational_roots": [
+        74,
+        82,
+        106
+      ],
+      "roots": [
+        74,
+        82,
+        106
+      ],
+      "smooth": true,
+      "t": 32
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 33
+    },
+    {
+      "norm_codes": [
+        0,
+        16519,
+        16519
+      ],
+      "rational_codes": [
+        16519
+      ],
+      "rational_roots": [
+        100
+      ],
+      "roots": [
+        100,
+        2701,
+        14622
+      ],
+      "smooth": true,
+      "t": 34
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        66092,
+        19656,
+        85732
+      ],
+      "rational_roots": [
+        40,
+        108,
+        114
+      ],
+      "roots": [
+        40,
+        108,
+        114
+      ],
+      "smooth": true,
+      "t": 35
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 36
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 37
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        15808,
+        18601,
+        30057
+      ],
+      "rational_roots": [
+        66,
+        96,
+        100
+      ],
+      "roots": [
+        66,
+        96,
+        100
+      ],
+      "smooth": true,
+      "t": 38
+    },
+    {
+      "norm_codes": [
+        0,
+        76749,
+        76749
+      ],
+      "rational_codes": [
+        76749
+      ],
+      "rational_roots": [
+        9
+      ],
+      "roots": [
+        9,
+        4646,
+        12637
+      ],
+      "smooth": true,
+      "t": 39
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 40
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 41
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 42
+    },
+    {
+      "norm_codes": [
+        0,
+        63962,
+        63962
+      ],
+      "rational_codes": [
+        63962
+      ],
+      "rational_roots": [
+        6
+      ],
+      "roots": [
+        6,
+        3010,
+        14407
+      ],
+      "smooth": true,
+      "t": 43
+    },
+    {
+      "norm_codes": [
+        0,
+        124638,
+        124638
+      ],
+      "rational_codes": [
+        124638
+      ],
+      "rational_roots": [
+        41
+      ],
+      "roots": [
+        41,
+        6595,
+        10656
+      ],
+      "smooth": true,
+      "t": 44
+    },
+    {
+      "norm_codes": [
+        0,
+        117308,
+        117308
+      ],
+      "rational_codes": [
+        117308
+      ],
+      "rational_roots": [
+        22
+      ],
+      "roots": [
+        22,
+        5491,
+        11910
+      ],
+      "smooth": true,
+      "t": 45
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        48609,
+        81643,
+        99082
+      ],
+      "rational_roots": [
+        11,
+        38,
+        82
+      ],
+      "roots": [
+        11,
+        38,
+        82
+      ],
+      "smooth": true,
+      "t": 46
+    },
+    {
+      "norm_codes": [
+        0,
+        29989,
+        29989
+      ],
+      "rational_codes": [
+        29989
+      ],
+      "rational_roots": [
+        33
+      ],
+      "roots": [
+        33,
+        7516,
+        9743
+      ],
+      "smooth": true,
+      "t": 47
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        23515,
+        67515,
+        89184
+      ],
+      "rational_roots": [
+        25,
+        26,
+        80
+      ],
+      "roots": [
+        25,
+        26,
+        80
+      ],
+      "smooth": true,
+      "t": 48
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 49
+    },
+    {
+      "norm_codes": [
+        0,
+        58624,
+        58624
+      ],
+      "rational_codes": [
+        58624
+      ],
+      "rational_roots": [
+        79
+      ],
+      "roots": [
+        79,
+        2384,
+        14829
+      ],
+      "smooth": true,
+      "t": 50
+    },
+    {
+      "norm_codes": [
+        0,
+        1133,
+        1133
+      ],
+      "rational_codes": [
+        1133
+      ],
+      "rational_roots": [
+        35
+      ],
+      "roots": [
+        35,
+        179,
+        17078
+      ],
+      "smooth": true,
+      "t": 51
+    },
+    {
+      "norm_codes": [
+        0,
+        28728,
+        28728
+      ],
+      "rational_codes": [
+        28728
+      ],
+      "rational_roots": [
+        109
+      ],
+      "roots": [
+        109,
+        2369,
+        14814
+      ],
+      "smooth": true,
+      "t": 52
+    },
+    {
+      "norm_codes": [
+        0,
+        26010,
+        26010
+      ],
+      "rational_codes": [
+        26010
+      ],
+      "rational_roots": [
+        114
+      ],
+      "roots": [
+        114,
+        4921,
+        12388
+      ],
+      "smooth": true,
+      "t": 53
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 54
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 55
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 56
+    },
+    {
+      "norm_codes": [
+        0,
+        120008,
+        120008
+      ],
+      "rational_codes": [
+        120008
+      ],
+      "rational_roots": [
+        49
+      ],
+      "roots": [
+        49,
+        4102,
+        13141
+      ],
+      "smooth": true,
+      "t": 57
+    },
+    {
+      "norm_codes": [
+        0,
+        16004,
+        16004
+      ],
+      "rational_codes": [
+        16004
+      ],
+      "rational_roots": [
+        46
+      ],
+      "roots": [
+        46,
+        4955,
+        12422
+      ],
+      "smooth": true,
+      "t": 58
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 59
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 60
+    },
+    {
+      "norm_codes": [
+        0,
+        68641,
+        68641
+      ],
+      "rational_codes": [
+        68641
+      ],
+      "rational_roots": [
+        58
+      ],
+      "roots": [
+        58,
+        5604,
+        11761
+      ],
+      "smooth": true,
+      "t": 61
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 62
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        25278,
+        50481,
+        42895
+      ],
+      "rational_roots": [
+        66,
+        78,
+        118
+      ],
+      "roots": [
+        66,
+        78,
+        118
+      ],
+      "smooth": true,
+      "t": 63
+    },
+    {
+      "norm_codes": [
+        0,
+        50502,
+        50502
+      ],
+      "rational_codes": [
+        50502
+      ],
+      "rational_roots": [
+        46
+      ],
+      "roots": [
+        46,
+        8361,
+        9016
+      ],
+      "smooth": true,
+      "t": 64
+    },
+    {
+      "norm_codes": [
+        0,
+        112141,
+        112141
+      ],
+      "rational_codes": [
+        112141
+      ],
+      "rational_roots": [
+        11
+      ],
+      "roots": [
+        11,
+        3073,
+        14208
+      ],
+      "smooth": true,
+      "t": 65
+    },
+    {
+      "norm_codes": [
+        0,
+        79199,
+        79199
+      ],
+      "rational_codes": [
+        79199
+      ],
+      "rational_roots": [
+        7
+      ],
+      "roots": [
+        7,
+        2158,
+        15127
+      ],
+      "smooth": true,
+      "t": 66
+    },
+    {
+      "norm_codes": [
+        0,
+        90533,
+        90533
+      ],
+      "rational_codes": [
+        90533
+      ],
+      "rational_roots": [
+        29
+      ],
+      "roots": [
+        29,
+        8566,
+        8697
+      ],
+      "smooth": true,
+      "t": 67
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 68
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 69
+    },
+    {
+      "norm_codes": [
+        0,
+        8321,
+        8321
+      ],
+      "rational_codes": [
+        8321
+      ],
+      "rational_roots": [
+        54
+      ],
+      "roots": [
+        54,
+        3510,
+        13859
+      ],
+      "smooth": true,
+      "t": 70
+    },
+    {
+      "norm_codes": [
+        0,
+        60674,
+        60674
+      ],
+      "rational_codes": [
+        60674
+      ],
+      "rational_roots": [
+        32
+      ],
+      "roots": [
+        32,
+        4569,
+        12822
+      ],
+      "smooth": true,
+      "t": 71
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 72
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 73
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        259,
+        17444,
+        17703
+      ],
+      "rational_roots": [
+        45,
+        93,
+        124
+      ],
+      "roots": [
+        45,
+        93,
+        124
+      ],
+      "smooth": true,
+      "t": 74
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        96896,
+        109849,
+        55193
+      ],
+      "rational_roots": [
+        11,
+        15,
+        105
+      ],
+      "roots": [
+        11,
+        15,
+        105
+      ],
+      "smooth": true,
+      "t": 75
+    },
+    {
+      "norm_codes": [
+        0,
+        50167,
+        50167
+      ],
+      "rational_codes": [
+        50167
+      ],
+      "rational_roots": [
+        3
+      ],
+      "roots": [
+        3,
+        4125,
+        13164
+      ],
+      "smooth": true,
+      "t": 76
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 77
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 78
+    },
+    {
+      "norm_codes": [
+        0,
+        27869,
+        27869
+      ],
+      "rational_codes": [
+        27869
+      ],
+      "rational_roots": [
+        87
+      ],
+      "roots": [
+        87,
+        3821,
+        13384
+      ],
+      "smooth": true,
+      "t": 79
+    },
+    {
+      "norm_codes": [
+        0,
+        15506,
+        15506
+      ],
+      "rational_codes": [
+        15506
+      ],
+      "rational_roots": [
+        71
+      ],
+      "roots": [
+        71,
+        8545,
+        8676
+      ],
+      "smooth": true,
+      "t": 80
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 81
+    },
+    {
+      "norm_codes": [
+        0,
+        39511,
+        39511
+      ],
+      "rational_codes": [
+        39511
+      ],
+      "rational_roots": [
+        18
+      ],
+      "roots": [
+        18,
+        6148,
+        11257
+      ],
+      "smooth": true,
+      "t": 82
+    },
+    {
+      "norm_codes": [
+        0,
+        118443,
+        118443
+      ],
+      "rational_codes": [
+        118443
+      ],
+      "rational_roots": [
+        100
+      ],
+      "roots": [
+        100,
+        4535,
+        12788
+      ],
+      "smooth": true,
+      "t": 83
+    },
+    {
+      "norm_codes": [
+        0,
+        104076,
+        104076
+      ],
+      "rational_codes": [
+        104076
+      ],
+      "rational_roots": [
+        100
+      ],
+      "roots": [
+        100,
+        7941,
+        9382
+      ],
+      "smooth": true,
+      "t": 84
+    },
+    {
+      "norm_codes": [
+        0,
+        106033,
+        106033
+      ],
+      "rational_codes": [
+        106033
+      ],
+      "rational_roots": [
+        129
+      ],
+      "roots": [
+        129,
+        4848,
+        12315
+      ],
+      "smooth": true,
+      "t": 85
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 86
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 87
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 88
+    },
+    {
+      "norm_codes": [
+        0,
+        18672,
+        18672
+      ],
+      "rational_codes": [
+        18672
+      ],
+      "rational_roots": [
+        107
+      ],
+      "roots": [
+        107,
+        6562,
+        10623
+      ],
+      "smooth": true,
+      "t": 89
+    },
+    {
+      "norm_codes": [
+        0,
+        41014,
+        41014
+      ],
+      "rational_codes": [
+        41014
+      ],
+      "rational_roots": [
+        28
+      ],
+      "roots": [
+        28,
+        2213,
+        15182
+      ],
+      "smooth": true,
+      "t": 90
+    },
+    {
+      "norm_codes": [
+        0,
+        15523,
+        15523
+      ],
+      "rational_codes": [
+        15523
+      ],
+      "rational_roots": [
+        51
+      ],
+      "roots": [
+        51,
+        5673,
+        11568
+      ],
+      "smooth": true,
+      "t": 91
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 92
+    },
+    {
+      "norm_codes": [
+        0,
+        109545,
+        109545
+      ],
+      "rational_codes": [
+        109545
+      ],
+      "rational_roots": [
+        17
+      ],
+      "roots": [
+        17,
+        8310,
+        8965
+      ],
+      "smooth": true,
+      "t": 93
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 94
+    },
+    {
+      "norm_codes": [
+        0,
+        46503,
+        46503
+      ],
+      "rational_codes": [
+        46503
+      ],
+      "rational_roots": [
+        37
+      ],
+      "roots": [
+        37,
+        8300,
+        8955
+      ],
+      "smooth": true,
+      "t": 95
+    },
+    {
+      "norm_codes": [
+        0,
+        23495,
+        23495
+      ],
+      "rational_codes": [
+        23495
+      ],
+      "rational_roots": [
+        92
+      ],
+      "roots": [
+        92,
+        5718,
+        11613
+      ],
+      "smooth": true,
+      "t": 96
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 97
+    },
+    {
+      "norm_codes": [
+        0,
+        74818,
+        74818
+      ],
+      "rational_codes": [
+        74818
+      ],
+      "rational_roots": [
+        64
+      ],
+      "roots": [
+        64,
+        4029,
+        13330
+      ],
+      "smooth": true,
+      "t": 98
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 99
+    },
+    {
+      "norm_codes": [
+        0,
+        21940,
+        21940
+      ],
+      "rational_codes": [
+        21940
+      ],
+      "rational_roots": [
+        80
+      ],
+      "roots": [
+        80,
+        2187,
+        15156
+      ],
+      "smooth": true,
+      "t": 100
+    },
+    {
+      "norm_codes": [
+        0,
+        118153,
+        118153
+      ],
+      "rational_codes": [
+        118153
+      ],
+      "rational_roots": [
+        10
+      ],
+      "roots": [
+        10,
+        6152,
+        11261
+      ],
+      "smooth": true,
+      "t": 101
+    },
+    {
+      "norm_codes": [
+        0,
+        128338,
+        128338
+      ],
+      "rational_codes": [
+        128338
+      ],
+      "rational_roots": [
+        16
+      ],
+      "roots": [
+        16,
+        8245,
+        9162
+      ],
+      "smooth": true,
+      "t": 102
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        121781,
+        55148,
+        68825
+      ],
+      "rational_roots": [
+        26,
+        38,
+        67
+      ],
+      "roots": [
+        26,
+        38,
+        67
+      ],
+      "smooth": true,
+      "t": 103
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 104
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        19687,
+        26984,
+        9615
+      ],
+      "rational_roots": [
+        8,
+        24,
+        99
+      ],
+      "roots": [
+        8,
+        24,
+        99
+      ],
+      "smooth": true,
+      "t": 105
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 106
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        41048,
+        16678,
+        57726
+      ],
+      "rational_roots": [
+        33,
+        112,
+        117
+      ],
+      "roots": [
+        33,
+        112,
+        117
+      ],
+      "smooth": true,
+      "t": 107
+    },
+    {
+      "norm_codes": [
+        0,
+        28490,
+        28490
+      ],
+      "rational_codes": [
+        28490
+      ],
+      "rational_roots": [
+        29
+      ],
+      "roots": [
+        29,
+        706,
+        16557
+      ],
+      "smooth": true,
+      "t": 108
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 109
+    },
+    {
+      "norm_codes": [
+        0,
+        119886,
+        119886
+      ],
+      "rational_codes": [
+        119886
+      ],
+      "rational_roots": [
+        23
+      ],
+      "roots": [
+        23,
+        1757,
+        15512
+      ],
+      "smooth": true,
+      "t": 110
+    },
+    {
+      "norm_codes": [
+        0,
+        53513,
+        53513
+      ],
+      "rational_codes": [
+        53513
+      ],
+      "rational_roots": [
+        58
+      ],
+      "roots": [
+        58,
+        6783,
+        10582
+      ],
+      "smooth": true,
+      "t": 111
+    },
+    {
+      "norm_codes": [
+        0,
+        21737,
+        21737
+      ],
+      "rational_codes": [
+        21737
+      ],
+      "rational_roots": [
+        30
+      ],
+      "roots": [
+        30,
+        1295,
+        16098
+      ],
+      "smooth": true,
+      "t": 112
+    },
+    {
+      "norm_codes": [
+        0,
+        37125,
+        37125
+      ],
+      "rational_codes": [
+        37125
+      ],
+      "rational_roots": [
+        126
+      ],
+      "roots": [
+        126,
+        5701,
+        11596
+      ],
+      "smooth": true,
+      "t": 113
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 114
+    },
+    {
+      "norm_codes": [
+        0,
+        0,
+        0
+      ],
+      "rational_codes": [
+        110689,
+        49354,
+        94379
+      ],
+      "rational_roots": [
+        4,
+        59,
+        68
+      ],
+      "roots": [
+        4,
+        59,
+        68
+      ],
+      "smooth": true,
+      "t": 115
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 116
+    },
+    {
+      "norm_codes": [
+        0,
+        36985,
+        36985
+      ],
+      "rational_codes": [
+        36985
+      ],
+      "rational_roots": [
+        48
+      ],
+      "roots": [
+        48,
+        7836,
+        9539
+      ],
+      "smooth": true,
+      "t": 117
+    },
+    {
+      "norm_codes": [
+        0,
+        120425,
+        120425
+      ],
+      "rational_codes": [
+        120425
+      ],
+      "rational_roots": [
+        23
+      ],
+      "roots": [
+        23,
+        4770,
+        12499
+      ],
+      "smooth": true,
+      "t": 118
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 119
+    },
+    {
+      "norm_codes": [
+        0,
+        120516,
+        120516
+      ],
+      "rational_codes": [
+        120516
+      ],
+      "rational_roots": [
+        122
+      ],
+      "roots": [
+        122,
+        5965,
+        11336
+      ],
+      "smooth": true,
+      "t": 120
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 121
+    },
+    {
+      "norm_codes": [
+        0,
+        72784,
+        72784
+      ],
+      "rational_codes": [
+        72784
+      ],
+      "rational_roots": [
+        74
+      ],
+      "roots": [
+        74,
+        1666,
+        15683
+      ],
+      "smooth": true,
+      "t": 122
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 123
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 124
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 125
+    },
+    {
+      "norm_codes": [
+        0,
+        97557,
+        97557
+      ],
+      "rational_codes": [
+        97557
+      ],
+      "rational_roots": [
+        94
+      ],
+      "roots": [
+        94,
+        5717,
+        11612
+      ],
+      "smooth": true,
+      "t": 126
+    },
+    {
+      "norm_codes": [],
+      "rational_codes": [],
+      "rational_roots": [],
+      "roots": [],
+      "smooth": true,
+      "t": 127
+    },
+    {
+      "norm_codes": [
+        0,
+        8409,
+        8409
+      ],
+      "rational_codes": [
+        8409
+      ],
+      "rational_roots": [
+        60
+      ],
+      "roots": [
+        60,
+        8354,
+        9009
+      ],
+      "smooth": true,
+      "t": 128
+    },
+    {
+      "norm_codes": [
+        0,
+        60510,
+        60510
+      ],
+      "rational_codes": [
+        60510
+      ],
+      "rational_roots": [
+        68
+      ],
+      "roots": [
+        68,
+        1407,
+        15948
+      ],
+      "smooth": true,
+      "t": 129
+    },
+    {
+      "norm_codes": [
+        0,
+        104217,
+        104217
+      ],
+      "rational_codes": [
+        104217
+      ],
+      "rational_roots": [
+        120
+      ],
+      "roots": [
+        120,
+        3870,
+        13433
+      ],
+      "smooth": true,
+      "t": 130
+    },
+    {
+      "norm_codes": [
+        0,
+        58730,
+        58730
+      ],
+      "rational_codes": [
+        58730
+      ],
+      "rational_roots": [
+        124
+      ],
+      "roots": [
+        124,
+        4654,
+        12645
+      ],
+      "smooth": true,
+      "t": null
+    }
+  ]
+}

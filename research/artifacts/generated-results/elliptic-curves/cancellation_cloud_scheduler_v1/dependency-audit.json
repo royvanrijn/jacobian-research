@@ -1,0 +1,8 @@
+{
+  "boundary": "These accounting and exact subgroup-boundary checkers were added after the sealed CPU comparison completed. They did not select or alter any search action. The original protocol and its pre-execution source closure remain unchanged.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/verify_cancellation_cloud_programme.py": "83b985b1a32416c753c7c6919810a12a70bf9ff02923be5563dcfb163d340ed4",
+    "elliptic-curves/cas/verify_cancellation_subgroup_boundary.py": "6524252c0627f0483a15c42cf1f907c1ae3680b3728da41442817763a24cc414"
+  },
+  "status": "SUPPLEMENTARY_POST_EXECUTION_CHECKERS"
+}

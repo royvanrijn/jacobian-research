@@ -1,0 +1,78 @@
+{
+  "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+  "records": [
+    {
+      "arm": "factor_free",
+      "case": "curve302-M27",
+      "charged_cpu_seconds": 38.208403000000004,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "884e628ab77efdeff64ebd996bb6ced339a40b6d048fb7d25f871de93fbf39b7",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 38.20966664800653
+    },
+    {
+      "arm": "adaptive_local",
+      "case": "curve302-M27",
+      "charged_cpu_seconds": 5.449908999999998,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "a84f4f5f153b20b62a8ce8a32f3681d7b583ae020bf0c4d1ad31441cef263c8b",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 5.3780847460147925
+    },
+    {
+      "arm": "adaptive_local",
+      "case": "curve302-M29",
+      "charged_cpu_seconds": 23.568068000000004,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "42a73b12a0070d5083a30d4f64014bff6a184b9d79e14180dd49da4b2ef7f258",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 23.174985119956546
+    },
+    {
+      "arm": "factor_free",
+      "case": "curve302-M29",
+      "charged_cpu_seconds": 22.788956999999996,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "307ad441dd8c26575077b1241b946593a9e5c50516d9f757d1cf80bd059b7bd5",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 22.82190693699522
+    },
+    {
+      "arm": "factor_free",
+      "case": "curve302-M30",
+      "charged_cpu_seconds": 45.949575000000024,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "3795aa15a28aab0738c0bd3f7011997bd39c574787ff0abd9b7c65fd47a50f9b",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 45.932011163036805
+    },
+    {
+      "arm": "adaptive_local",
+      "case": "curve302-M30",
+      "charged_cpu_seconds": 13.797232999999977,
+      "family": "Curve302-known-control",
+      "protocol_sha256": "b2b0dd8d2adf1763d153bf540a0344100c3c887ddf6cf1fed3a922e331c371db",
+      "result_sha256": "37ed69e06832a7e3e9b897a92dac9b678980ed9e05b4a12dd9812946efd34d91",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "stratum": "high_rank_transfer",
+      "wall_seconds": 13.49900027003605
+    }
+  ],
+  "status": "COMPLETE"
+}

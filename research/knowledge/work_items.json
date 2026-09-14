@@ -327,7 +327,7 @@
       "id": "WORK-EC-NEXT",
       "kind": "research",
       "area": "elliptic-curves",
-      "title": "Choose a new recovery criterion after the cancellation-policy validation",
+      "title": "Test subgroup-aware later epochs after the failed cloud-yield policy",
       "target": "OP-EC-NEXT",
       "claims": [
         "OP-EC-NEXT",
@@ -338,7 +338,10 @@
         "EC-HEIGHT-PORTFOLIO-COST-20260914",
         "EC-FINITE-CANCELLATION-PREDICTOR-20260914",
         "EC-POINTED-CANCELLATION-HESSIAN-20260914",
-        "EC-FINITE-CANCELLATION-VALIDATION-20260914"
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914",
+        "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914",
+        "EC-CANCELLATION-CLOUD-SCHEDULER-20260914",
+        "EC-CANCELLATION-BASIS-REFRESH-20260914"
       ],
       "sources": [
         "elliptic-curves/README.md",
@@ -349,11 +352,13 @@
         "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md",
         "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md",
         "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md",
-        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md"
+        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md",
+        "elliptic-curves/notes/CANCELLATION_ADAPTIVE_SCHEDULER_2026-09-14.md",
+        "elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md"
       ],
-      "next_step": "The clean 41-curve q-only/full-cancellation comparison is complete and fails every declared gate. Retain factor-free V3; do not promote either fitted successor or extend the completed controls. The Hessian/derivative identity and fixed gcd squareclass are reusable. Any next experiment needs a new target-blind objective tied to actual independent-direction recovery and separately frozen controls; the realized cancellation law does not supply new points. No C/L optimization or stopped production campaign is restarted.",
+      "next_step": "Preserve the validated V4 first-direction fit, factor-free reference and failed fixed-bank full-cloud policy. A new unscheduled gate should compare actual basis-aware epochs on disjoint whole-j controls: reconcile every complete cloud, independently certify the enlarged subgroup, build and rational-CVP-verify its compatible bank, reset obsolete exposure states, and charge all work to both arms. The one-fibre M18 rebuild passes its10-second development cost gate at5.175586 CPU seconds with zero point calls; it is not an efficacy holdout. State how unmeasured radius tails are treated. The cloud policy does not open a fresh continuation: it returned39 directions to V3 40 at higher complete CPU. Do not restart old campaigns or refit/retry the same controls to erase this failure.",
       "done_when": "A declared candidate-generation route produces independently certified useful rank gains toward32. The completed history analysis and improved seed discrimination alone do not complete the rank32 goal.",
-      "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21. The finite-cancellation study joins all491 registry endpoints, replays75272 signed model coordinates and7.6 million residue leaves, and independently verifies all19 CPU-control gains. Retain the original measured gate failure and post-primary attribution labels. The clean successor independently checks all 82 starting/endpoint subgroups, 114 output gains and 1605 point calls. Full cancellation has 13.57 percent fewer recoveries per CPU than V3 on the declared roster; both fitted arms are slower on all 17 M24-M25 controls in aggregate. All original results and gate failures remain retained.",
+      "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21. The finite-cancellation study joins all491 registry endpoints, replays75272 signed model coordinates and7.6 million residue leaves, and independently verifies all19 CPU-control gains. Retain the original measured gate failure and post-primary attribution labels. The clean successor independently checks all 82 starting/endpoint subgroups, 114 output gains and 1605 point calls. Full cancellation has 13.57 percent fewer recoveries per CPU than V3 on the declared roster; both fitted arms are slower on all 17 M24-M25 controls in aggregate. All original results and gate failures remain retained. The adaptive programme completes185 arms with all164 first-direction extensions independently certified inside the CPU meters. The original144-call gate remains failed. Its independent432-call successor passes at22/24 versus22/24 and37.20 percent lower CPU; all three high-rank controls pass with59.97 percent aggregate saving. Four previously unsearched generic-only X948 fibres yield adaptive lower bounds17,17,18,17 with fully charged cold construction and all point clouds independently certified. Rank32 and improved fresh deep amplification remain UNKNOWN. The subsequent24-curve two-direction comparison completes48 independently replayed arms and79 added directions, with2870 complete point calls and one timeout. Both arms reach16 two-gain targets; adaptive39/460.733865 directions/CPU loses to V3 40/429.056284 and fails its frozen gate. An exact subgroup witness changes independence without changing cancellation. The separate new-basis cost integration replays64 classes and77 anchors on a fresh rank18 output in5.175586 CPU seconds, without point search. This permits designing a new basis-aware control, not claiming later amplification.",
       "compute": "none",
       "reviewed_claims": {
         "OP-EC-NEXT": "f36c4d02969820a7",
@@ -364,7 +369,10 @@
         "EC-HEIGHT-PORTFOLIO-COST-20260914": "bab192a6e296a347",
         "EC-FINITE-CANCELLATION-PREDICTOR-20260914": "e09ffd3e81048fb2",
         "EC-POINTED-CANCELLATION-HESSIAN-20260914": "182b7126777106c4",
-        "EC-FINITE-CANCELLATION-VALIDATION-20260914": "60e311232626b5b2"
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914": "60e311232626b5b2",
+        "EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914": "3dbf43c3fdbae3c3",
+        "EC-CANCELLATION-CLOUD-SCHEDULER-20260914": "5fd0cf273f2d559d",
+        "EC-CANCELLATION-BASIS-REFRESH-20260914": "7498d09b7669a7c7"
       }
     },
     {
@@ -848,7 +856,16 @@
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
         "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914",
         "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
-        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+        "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION",
+        "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914",
+        "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
+        "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
+        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
+        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914"
       ],
       "sources": [
         "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
@@ -859,14 +876,22 @@
         "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md",
         "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md",
         "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
-        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md"
+        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ZERO_SINGULAR_GATE_2026-09-14.md",
+        "elkies-k3/Q80_RATIONAL_BISECTION_BRANCH_TORSION_2026-09-14.md",
+        "elkies-k3/COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md",
+        "elkies-k3/COMMON_QUARTIC_LOCAL_SPLITTING_GATE_2026-09-14.md",
+        "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md",
+        "elkies-k3/Q80_DEGREE_TWO_RECIPROCITY_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md"
       ],
-      "next_step": "Solve the explicit15 degree/gcd factor systems from the common-quartic branch-stratum theorem against the fixed MW17 coefficients, using the nine proved coordinate patches to retain infinity and degree-drop cases. On Q80 omit the already excluded k=4 genus-one stratum; other genus-one strata require full cubic splitting over the branch factors outside gcd(D,h). A genus31 splitting-curve reformulation is only a necessary low-degree-divisor condition, not an exclusion. Retain the repeated-quartic genus0 cases g*d=e^2*q and the literal scalar. The remaining coefficient systems are unsolved. A positive endpoint must certify two independent gains and infinitely many rational points on the same quadratic base; a negative endpoint must include every stratum and boundary. No large search is scheduled.",
-      "done_when": "Two exact independent sections modulo the inherited subgroup on one quadratic cover of the original parameter field, constructed without desired exceptional-point fitting, with a rational covering base or a certified positive-rank genus-one covering base and valid specialization hypotheses. A finite miss does not complete the objective.",
-      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization. The sharp Mestre cancellation gate now covers direct11952 Q80, Curve302 MW17 and X1092 class1 as well as R17. All four force twenty coefficient branch points for every rational auxiliary function. The genus-nine node-locus result is prior work, not a newly open rational parametrization problem. The different common-quartic chart and its height proof supply no actual cover yet. The common-quartic controls close all section, height and rational-base gates on two newly constructed K3 equations, but their inherited ranks are UNKNOWN. They are not a transfer to MW17. The constant-x resultant theorem closes every algebraic constant abscissa on the four fixed parents; the remaining problem requires two nonconstant x_i and includes repeated-quartic genus0 boundaries. The new factor theorem closes the entire same-branch k=4 Q80 genus-one case by arithmetic descent, including singular original images. Its reduction uses inherited131 finite-field arithmetic and the completed smooth-genus-one theorem. It does not exclude the other14 factor allocations or a genus0 boundary. The preliminary root-curve index route has no global obstruction certificate.",
+      "next_step": "Derive the characteristic-zero coefficient and branch-splitting equations near the sole Q80 genus1 k2 nodal denominator boundary: g and d both reduce to q0=t^2+62*t+88, both abscissas have negative even valuations for a rational base, and the literal cover scalar is locally square. Use a mathematically justified finite valuation/formal gate before any lifting campaign; the q0-squared congruence is not a solution. Alternatively investigate the nine surviving k0/1 genus1 allocations, another actual MW17 parent, or higher-height rational abscissas. The integral k2 chart, every other k2 residue, the old good-reduction genus1 control base in k2, and the full Q80 polynomial genus0 chart are closed. All twelve genus1 allocations remain mathematically open. No large campaign is scheduled; the endpoint still requires one actual MW17 parent, one quadratic cover with infinitely many rational points and two exact independent new sections.",
+      "done_when": "An actual arithmetic MW17 parent, one quadratic cover of its original parameter field, and two exact independent new sections modulo the inherited subgroup, constructed without desired exceptional-point fitting. The covering base must have a rational parametrization or a certified rational nontorsion point on a genus-one model, with valid specialization hypotheses yielding infinitely many rank-at-least19 fibres. A finite miss or scoped exclusion does not complete the objective.",
+      "prerequisites": "Preserve the exact done_when endpoint, original-parameter degree two, exceptional-point quarantine, literal scalar squareclasses and the distinction between a rational singular point and a rational normalization point. Reuse the complete frozen smooth/one-node pair exclusions and the all-smooth-genus1 Q80 theorem; any genus1 solution on Q80 requires a singular image of arithmetic genus at least2. The fixed Mestre identity forces genus at least9 on all four tested MW17 parents, and the136 frozen shared-ordinate tangent pairs force genus at least86. Both common-quartic controls have two independent gains and infinite rational bases, but Picard bounds exclude MW16/MW17 on either fixed surface and the certified good-reduction residue classes. Every constant abscissa on the four actual parents is excluded for genus0/1. The entire Q80 polynomial genus0 chart is now closed by the separate k0, k1 and k2 proofs. The k0 proof covers denominators, scalars, all16 branch collisions and the complete norm4 contact census; its enumeration and finite arithmetic independently replay. The older k2 norm8 singular-polynomial replay gap remains explicit and is not repaired or reconstructed. Twelve genus1 k0/1/2 cases survive and require actual coefficient solutions, not just necessary branch norms. The original fourteen-prime local splitting panel is nonempty on all four parents; higher character precision alone is not an exclusion of its compatible branch data. Higher-height rational abscissas, additional height-at-least12 sections on known rational-bisection covers and other actual MW17 parents remain separate routes. Different-NS work retains its rational marking prerequisite. The complete new k2 gate passes: character norms, all131 etale interpolants,21 full-rank but inconsistent modulo131^2 lifts and the complete131^3 nodal census exclude every integral case. The stable-map proof leaves only q0-squared with denominators in both abscissas, rather than asserting genus1 integrality everywhere. A rational base there requires a local square scalar, even negative abscissa valuations and v_131(j)=-4*n<0. Its actual coefficient lift and global branch splitting remain UNKNOWN. The prior norm8 gap remains unchanged; no positive source or allocation-count reduction is inferred.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "cd905f58a016fa4d",
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "6958275b6558fa2a",
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912": "09d547bac445f45e",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": "4b9b09c3641c6ff0",
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c",
@@ -875,7 +900,16 @@
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17",
         "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "e221270755762cdb",
         "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914": "e9acb2d9df07e242",
-        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914": "605d58c3c4f7ca85"
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914": "605d58c3c4f7ca85",
+        "EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914": "73313d72583569dc",
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION": "bf05d9b06ccc1502",
+        "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914": "8b1f9383097a518e",
+        "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914": "2c45929f96bd5c52",
+        "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914": "7892d93697c4a95c",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914": "6fd0461c286888d9",
+        "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914": "a6614ee067f52e58",
+        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914": "37ef8494ed26ba33",
+        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914": "b1b2c6c0bf8545fe"
       }
     },
     {

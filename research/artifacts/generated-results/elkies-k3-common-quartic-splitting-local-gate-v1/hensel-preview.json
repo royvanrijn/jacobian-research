@@ -1,0 +1,564 @@
+{
+  "schema": "splitting-hensel-preflight-v1",
+  "preview_sha256": "c1927d31ee998a108e8bb45569a60df2139ace59681ea3e7a363996c993dc496",
+  "script_sha256": "a9a8e36a631cf8b221e19430d809e4a431b1b2239990218bef440c2c50b5575f",
+  "rows": [
+    {
+      "parent": "published-r17",
+      "p": 2,
+      "chart": "v",
+      "coordinate": 2,
+      "status": "ROOT",
+      "root_scale": -2,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 3,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "ROOT",
+      "root_scale": 3,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 5,
+      "chart": "t",
+      "coordinate": 25,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 4,
+      "f_valuation": 2,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "published-r17",
+      "p": 7,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "NO_ROOT",
+      "visits": 9
+    },
+    {
+      "parent": "published-r17",
+      "p": 11,
+      "chart": "v",
+      "coordinate": 11,
+      "status": "ROOT",
+      "root_scale": -4,
+      "root_residue": 10,
+      "f_valuation": 2,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "published-r17",
+      "p": 13,
+      "chart": "t",
+      "coordinate": 4,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 5,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "published-r17",
+      "p": 17,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 19,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 23,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 29,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 31,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 2,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "published-r17",
+      "p": 37,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "published-r17",
+      "p": 41,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 10,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "published-r17",
+      "p": 43,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 1,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 2,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "ROOT",
+      "root_scale": 6,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 3,
+      "chart": "v",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 9,
+      "root_residue": 7,
+      "f_valuation": 5,
+      "derivative_valuation": 2,
+      "visits": 5
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 5,
+      "chart": "v",
+      "coordinate": 80,
+      "status": "ROOT",
+      "root_scale": -4,
+      "root_residue": 4,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 7,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 4,
+      "root_residue": 4,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 11,
+      "chart": "v",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 7,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 13,
+      "chart": "t",
+      "coordinate": 6,
+      "status": "ROOT",
+      "root_scale": 2,
+      "root_residue": 4,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 17,
+      "chart": "t",
+      "coordinate": 4,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 19,
+      "chart": "t",
+      "coordinate": 1121,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 23,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 29,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 31,
+      "chart": "t",
+      "coordinate": 3,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 37,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 41,
+      "chart": "t",
+      "coordinate": 4,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "alternate-q80",
+      "p": 43,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 2,
+      "chart": "t",
+      "coordinate": 26,
+      "status": "ROOT",
+      "root_scale": -10,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 3,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "ROOT",
+      "root_scale": -1,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 5,
+      "chart": "t",
+      "coordinate": 7,
+      "status": "ROOT",
+      "root_scale": -12,
+      "root_residue": 1,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 7,
+      "chart": "v",
+      "coordinate": 21,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 11,
+      "chart": "t",
+      "coordinate": 11,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 1,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 13,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 17,
+      "chart": "t",
+      "coordinate": 3,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 19,
+      "chart": "t",
+      "coordinate": 6,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 4,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 23,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 29,
+      "chart": "t",
+      "coordinate": 58,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 31,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 37,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 41,
+      "chart": "v",
+      "coordinate": 41,
+      "status": "ROOT",
+      "root_scale": -8,
+      "root_residue": 22,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "curve302-parent",
+      "p": 43,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 2,
+      "chart": "t",
+      "coordinate": 3,
+      "status": "ROOT",
+      "root_scale": 6,
+      "root_residue": 0,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 3,
+      "chart": "v",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 1,
+      "root_residue": 22,
+      "f_valuation": 6,
+      "derivative_valuation": 2,
+      "visits": 11
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 5,
+      "chart": "t",
+      "coordinate": 275,
+      "status": "ROOT",
+      "root_scale": 8,
+      "root_residue": 4,
+      "f_valuation": 2,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 7,
+      "chart": "v",
+      "coordinate": 14,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 11,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 9,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 13,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 17,
+      "chart": "t",
+      "coordinate": 5,
+      "status": "ROOT",
+      "root_scale": 1,
+      "root_residue": 9,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 19,
+      "chart": "t",
+      "coordinate": 2,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 4,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 2
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 23,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 29,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 31,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 37,
+      "chart": "t",
+      "coordinate": 0,
+      "status": "NO_ROOT",
+      "visits": 1
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 41,
+      "chart": "t",
+      "coordinate": 1,
+      "status": "ROOT",
+      "root_scale": 0,
+      "root_residue": 21,
+      "f_valuation": 1,
+      "derivative_valuation": 0,
+      "visits": 3
+    },
+    {
+      "parent": "x1092-class1",
+      "p": 43,
+      "chart": "t",
+      "coordinate": 3,
+      "status": "NO_ROOT",
+      "visits": 1
+    }
+  ],
+  "cpu_seconds": 0.008758990999999997
+}
