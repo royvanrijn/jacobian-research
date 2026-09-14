@@ -1,0 +1,28 @@
+{
+  "degrees": [
+    8,
+    12,
+    24,
+    44,
+    24
+  ],
+  "fields": {
+    "A": {
+      "irreducible_prime": 29,
+      "local_place": {
+        "prime": 59,
+        "root": 51
+      }
+    },
+    "B": {
+      "irreducible_prime": 59,
+      "local_place": {
+        "prime": 107,
+        "root": 83
+      }
+    }
+  },
+  "name": "published-r17",
+  "smooth_disjoint_prime": 131,
+  "status": "PASS"
+}

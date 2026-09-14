@@ -14,13 +14,23 @@ is explicit with a full saturated generic basis; construction recovery is comple
 [Calibrated V3](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) recovers31 from
 generic17 on that curve. These results do not prove exact rank31 or rank at least32.
 
-The current bounded work makes [coordinate visibility effective](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md).
+The retained bounds make [coordinate visibility effective](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md).
 Actual V3 charts now have independently replayed height bounds. On the first
 Curve302 benchmark chart, two minimal models give a stronger joint coverage
 guarantee than either alone; the roughly9% address-work improvement is a
 geometric estimate, with no CPU saving or new rank direction established.
-The next gate is a complete-cost next-direction comparison, followed by
-independently sourced cross-curve validation. No new search launched for this result.
+The subsequent [three-arm cold benchmark](notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md)
+has finished: factor-free V3 independently recovered the three control gains;
+all six bounded-model arms hit the discriminant-support preparation limit
+before search. Twelve exact target locations show that the best uniform bound
+selects a smallest actual coordinate in only one of these three cases, with
+finite-cancellation slack dominant. The intended runtime comparison remains
+incomplete. A [finite cost-aware allocation](notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md)
+now assigns unequal box heights to the same three first-chart models: it uses
+57.4% of the best single box's squared-height proxy at the same guaranteed
+elliptic-height range. This independently replayed optimum prices addresses
+equally and excludes preparation; it is not a runtime or recovery result.
+No benchmark restart or production search is scheduled.
 
 The preceding candidate-generation work explored parent/fibration diversity.
 The [completed history analysis](notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md)
@@ -55,9 +65,10 @@ their historical cohort counts.
 | Load the recovered302 family and basis | [Parent proof](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) · [loader](cas/load_curve302_recovered_parent.sage) |
 | Certify the level-474 H3 rational base | [Canonical source and proof boundary](notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) · [Sage certificate](../elkies-k3/scripts/certify_h3_level474_rational_points_qc.sage) |
 | Understand adaptive point recovery | [V3 rule and calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer results](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
-| Compare equivalent models by proved coordinate coverage | [Local height bounds and a complementary pair of minimal models](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) |
+| Compare equivalent models by proved coordinate coverage | [Local height bounds](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) · [cost-aware unequal boxes](notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md) |
 | Recover points from constructed strict classes | [Both fixed covers solved blindly; exact transport and V3 comparison](rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
 | Choose candidates toward32 | [Seed/amplification history, dataset and family holdouts](notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md) |
+| Compare RR global Selmer supply | [Two302 controls reach verified integral orders; global dimensions remain unknown](notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md#two-case-global-completion-attempt-september14) |
 | Follow new X948 fibration exposure | [Eight exact admissions, frozen two-stage protocol and status commands](notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md) |
 | Review the stopped next-direction pilot | [Cheaper controls, no production gain](notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md) |
 | Inspect the closed constructor pilot | [Failed positive calibration; no fresh fibres](rank-jump/FRESH_CONSTRUCTOR_TRANSFER_2026-09-12.md) |
@@ -133,3 +144,7 @@ is preserved as a dated navigation snapshot.
 <!-- status-consumer: EC-X948-EIGHT-A1-ADMISSIONS-20260913 a66cb19255346318 -->
 
 <!-- status-consumer: EC-POINTED-HEIGHT-PORTFOLIO-20260913 4699f2502d77d0e5 -->
+
+<!-- status-consumer: EC-HEIGHT-MODEL-ACCESSIBILITY-20260913 175492d551de96d4 -->
+
+<!-- status-consumer: EC-HEIGHT-PORTFOLIO-COST-20260914 bab192a6e296a347 -->

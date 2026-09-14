@@ -1,0 +1,140 @@
+{
+  "status": "COLD_BENCHMARK_SEALED_INDIVIDUAL_DIAGNOSTICS_COMPLETE",
+  "arms": [
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M27",
+      "cpu_seconds": 49.964725751,
+      "folder": "runs/curve302-M27/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 54.584137807018124
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M27",
+      "cpu_seconds": 32.68749039499999,
+      "folder": "runs/curve302-M27/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.833987792022526
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M27",
+      "cpu_seconds": 32.633694769999984,
+      "folder": "runs/curve302-M27/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.782173171057366
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M29",
+      "cpu_seconds": 32.78354433799999,
+      "folder": "runs/curve302-M29/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.000678546959534
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M29",
+      "cpu_seconds": 32.79549942099999,
+      "folder": "runs/curve302-M29/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.00728992302902
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M29",
+      "cpu_seconds": 30.587841732000015,
+      "folder": "runs/curve302-M29/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 33.18077799200546
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M30",
+      "cpu_seconds": 32.791427954999975,
+      "folder": "runs/curve302-M30/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.98272366600577
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M30",
+      "cpu_seconds": 59.033328971000046,
+      "folder": "runs/curve302-M30/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 64.51384442701237
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M30",
+      "cpu_seconds": 32.82909347899998,
+      "folder": "runs/curve302-M30/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.008570950012654
+    }
+  ],
+  "arm_cpu_seconds": 336.10664681199995,
+  "arm_wall_seconds": 355.8941842751228,
+  "diagnostic_cpu_seconds": 9.544712659000025,
+  "diagnostic_wall_seconds": 9.996749167039525,
+  "diagnostic_attempts": [
+    {
+      "folder": ".",
+      "mode": "diagnose",
+      "outcome": "backend_failure",
+      "process_tree_cpu_seconds": 1.8391948530000244,
+      "returncode": 1,
+      "wall_seconds": 2.0265395250171423
+    },
+    {
+      "status": "backend_failure",
+      "returncode": 1,
+      "wall_seconds": 3.3930408469750546,
+      "process_tree_cpu_seconds": 3.2559353339999997,
+      "remaining_original_diagnostic_allowance_seconds": 297.97346047498286,
+      "point_search_calls": 0
+    },
+    {
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 4.577168795047328,
+      "process_tree_cpu_seconds": 4.449582472,
+      "remaining_original_diagnostic_allowance_seconds": 294.5804196280078,
+      "point_search_calls": 0
+    }
+  ],
+  "preparation_cpu_seconds": 0.44094989700000004,
+  "preparation_wall_seconds": 0.544212001026608,
+  "cold_support_timeouts": 6,
+  "bounded_arm_point_calls": 0,
+  "baseline_point_calls": 143,
+  "boundary": "Preparation cap30 seconds within each300-second arm. All six bounded arms stopped before model construction/search. Three known-control baseline recoveries, no new rank record. Original unsupported-joint and successor path-binding diagnostic failures are retained and charged. No model-selector change or point-search retry."
+}

@@ -1,0 +1,30 @@
+{
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/gate_mestre_parent_branch_cancellation.sage freeze --output research/artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/gate_mestre_parent_branch_cancellation.sage run --output research/artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1",
+    "python3 research/elkies-k3/scripts/verify_mestre_parent_branch_cancellation.py --output research/artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/independent-replay.json",
+    "python3 -m unittest discover -s research/tests -p 'test_mestre_parent_branch_cancellation.py' -q"
+  ],
+  "date": "2026-09-14",
+  "gate_component_cpu_seconds": 0.156605,
+  "independent_replay_wall_seconds": 1.645627,
+  "retained_authoring_failure": {
+    "count": 5,
+    "reason": "Five rejection controls initially expected AssertionError; the existing require helper raises ValueError. The checker rejected every altered input as intended. Only test expectations were corrected; producer, frozen input and arithmetic result are unchanged.",
+    "stage": "initial unit-test invocation"
+  },
+  "schema": "mestre-parent-branch-execution-v1",
+  "scope": "Finite local proof witnesses for four fixed generic equations. No auxiliary-function, bisection, point, rank or specialization enumeration. Component timings exclude authoring and startup.",
+  "source_sha256": {
+    "elkies-k3/scripts/gate_mestre_parent_branch_cancellation.sage": "d2d39541e3822ac4b541d843e61be844b4e6b480195bb47062285c51d0298e1c",
+    "elkies-k3/scripts/verify_mestre_parent_branch_cancellation.py": "ac810c7cec97e17de782fd17d69a468c53f06a2ef5ed5bf3c95a851bab5a57fc",
+    "tests/test_mestre_parent_branch_cancellation.py": "a5fbbd6f2fc321db5320aeee583e0e2d543947676b24b1038ae84a88e0a7c6f1"
+  },
+  "startup_note": "Freeze emitted a Sage version() deprecation warning and completed successfully.",
+  "status": "PASS",
+  "tests": {
+    "count": 9,
+    "elapsed_seconds": 1.686,
+    "status": "PASS"
+  }
+}

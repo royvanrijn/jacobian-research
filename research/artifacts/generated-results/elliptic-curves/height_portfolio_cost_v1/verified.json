@@ -1,0 +1,25 @@
+{
+  "status": "PASS_INDEPENDENT_ASSIGNMENT_AND_BOUND_REPLAY",
+  "protocol_sha256": "c48231df59fc9606204038e6477642a7af81d0a3193349a365ffa2f6d897e55d",
+  "allocation_sha256": "b34c26cd117f2038e0b448439d58c64e9499fc4eb6e19b4d6cafab7088290844",
+  "state_count": 4,
+  "model_count": 3,
+  "box_allocations": 125,
+  "assignments_checked": 81,
+  "optimal_heights": [
+    21129,
+    37298,
+    84441
+  ],
+  "objective": "8967857926",
+  "boundaries": [
+    "Optimal only for the supplied sufficient-state table and supplied cost model.",
+    "The retained cost units are an address proxy; setup/search CPU is unmeasured.",
+    "No rational point, new direction, target accessibility or speedup is inferred."
+  ],
+  "meter": {
+    "cpu_seconds": 0.341567326,
+    "elapsed_seconds": 0.4327123839757405,
+    "scope": "independent allocation and retained bound replay; no search or cold preparation"
+  }
+}

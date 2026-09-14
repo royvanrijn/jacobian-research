@@ -1,0 +1,7 @@
+{"status": "PASS_INTEGRAL_ORDER", "order_discriminant_bits": 31229, "stage": "binary-order", "elapsed_seconds": 0.0009333780035376549}
+START polredbest_on_verified_order
+{"status": "PASS_EXACT_FIELD_ISOMORPHISM", "coefficient_bits": 18009, "stage": "reduced-generator", "elapsed_seconds": 0.3642221459886059}
+START nfinit_partial_order
+{"status": "PARTIAL_ORDER_REQUIRES_CERTIFICATION", "order_discriminant_bits": 26213, "stage": "order", "elapsed_seconds": 0.601453842013143}
+START nfcertify
+{"status": "UNRESOLVED_MAXIMAL_ORDER", "unresolved_cofactor_bits": [26191], "stage": "certification", "elapsed_seconds": 1.7200142070068978}

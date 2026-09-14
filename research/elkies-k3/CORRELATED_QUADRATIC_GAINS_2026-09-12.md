@@ -7,6 +7,14 @@ R17, with height matrix `diag(24,24)` and subgroup rank at least19. Its covering
 base has genus21. Every rational auxiliary function in that identity still
 forces genus at least9, so it cannot meet the infinite-rational-base requirement.
 
+The [branch-cancellation criterion](BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md)
+now extends this same-identity obstruction to alternate Q80, Curve302's MW17
+parent and X1092 class1. All retain twenty forced coefficient branch points
+for every rational auxiliary function. The new note gives the exact local
+removability criterion and a different common-quartic polynomial system whose
+solutions would have independent height-eight sections and singular
+arithmetic-genus-five images. That system remains unsolved.
+
 The first prospective calculation excludes all **300 pairs of 25 complete
 genus-one pencils** on published R17. The exclusion covers all rational pencil
 parameters, including infinity, for this fixed bank and supplies no new section.
@@ -176,8 +184,10 @@ identity supplies the required two directions, but its irreducible degree8
 and degree12 coefficient divisors remain in the branch locus for every rational
 auxiliary function. The [valuation proof](R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md)
 closes that identity for the required base condition without a degree or height
-bound. A further attempt needs a different carrier identity or arithmetic
-parent, with a proved low-genus branch condition before a parameter campaign.
+bound. The new branch criterion also closes that identity on the three further
+retained parents above. A further attempt needs a different carrier identity,
+or a parent that passes the coefficient-divisor gate, with a proved low-genus
+branch condition before a parameter campaign.
 No enlargement or heavy computation is scheduled by this note.
 
 The positive endpoint remains unverified: no shared quadratic cover with both

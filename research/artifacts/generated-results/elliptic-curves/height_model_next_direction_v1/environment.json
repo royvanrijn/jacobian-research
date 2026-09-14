@@ -1,0 +1,8 @@
+{
+  "recorded_unix": 1789318403.31189,
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "controller_python": "3.12.3",
+  "processor_line": "AMD Ryzen 9 9950X3D 16-Core Processor",
+  "timing_boundary": "Environment description collected after launch; not an arm-selection input."
+}

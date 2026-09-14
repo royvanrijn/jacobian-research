@@ -1,0 +1,24 @@
+{
+  "boundary": "Ring closure and trace discriminants certify an integral order, not maximality. Only a successful separate maximal-order test permits class/unit work.",
+  "cases": [
+    8,
+    9
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08-model.json": "72e9691a01649e79228b7b1bd152081cc9c1523d7c703810553ad71a7d061c87",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09-model.json": "8dceba4b46d8245e8d75a2a30db883ec265e36fb8435ff6356dc1090bfe0a259",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/protocol.json": "8e11c2efc0cb8c4bcd40eb8c406ddafba0905862e1f5fa7ea2dddae7fb817768"
+  },
+  "limits": {
+    "class_group_runs": 0,
+    "new_curves": 0,
+    "pari_stack_bytes": 536870912,
+    "polredbest_calls_per_case": 1,
+    "rss_bytes": 2147483648,
+    "trial_prime_bound": 1000,
+    "wall_seconds_per_case": 300
+  },
+  "purpose": "Remove the artificial index from making a nonmonic sextic monic before reattempting maximal-order certification on the same fields.",
+  "schema": "det1092.rr.binary-order-refinement.v1",
+  "source_sha256": "a18e087eb769fad37bd394b7f3ba7cbc78e84ed86bbd3e894400b4af5bbaf741"
+}

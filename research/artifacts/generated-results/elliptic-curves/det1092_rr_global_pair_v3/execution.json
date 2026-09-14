@@ -1,0 +1,227 @@
+{
+  "classification": "Retained execution outcomes; no Selmer computation completed.",
+  "runs": [
+    {
+      "case_index": 9,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v1/case-09.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
+          "--case",
+          "9"
+        ],
+        "failure_reason": "backend_failure",
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v1/case-09.log",
+        "log_sha256": "09f9ac887cedb253079c0b2dc749bd9d4ed38bd0d6c6be428de14bd8e4a99b93",
+        "outcome": "backend_failure",
+        "peak_observed_rss_bytes": 245473280,
+        "pid": 3468484,
+        "returncode": 1,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41866541",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 1.3656353930127807,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 1
+    },
+    {
+      "case_index": 8,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v1/case-08.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
+          "--case",
+          "8"
+        ],
+        "failure_reason": "backend_failure",
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v1/case-08.log",
+        "log_sha256": "6808e8f56278ae65a2f4879c085a91d005ee1134a865d347e836d773cbec1dcd",
+        "outcome": "backend_failure",
+        "peak_observed_rss_bytes": 247635968,
+        "pid": 3468520,
+        "returncode": 1,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41866679",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 1.5169189079897478,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 1
+    },
+    {
+      "case_index": 9,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
+          "--case",
+          "9"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v2/case-09.log",
+        "log_sha256": "48dec61bf61c8ff19984f9dc4b981f0e930dd80a477a8eba08d360f08b6296e0",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 249847808,
+        "pid": 3468735,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41871104",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 28.23155401798431,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 2
+    },
+    {
+      "case_index": 8,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
+          "--case",
+          "8"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v2/case-08.log",
+        "log_sha256": "65d1f47eefd77baa3b3a3f05a2eb24b7e198417e9da717e4fce88c917c76eec0",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 250167296,
+        "pid": 3468815,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41873929",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 42.834868035046384,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 2
+    },
+    {
+      "case_index": 9,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/refine_det1092_rr_pair_order.sage",
+          "--case",
+          "9"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v3/case-09.log",
+        "log_sha256": "58c8bc58470167346e1de8b934b4e07194a987ef19cbfeb20ed49673b74aca73",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 259796992,
+        "pid": 3469150,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41886971",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 2.44986680400325,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 3
+    },
+    {
+      "case_index": 8,
+      "retained_log": "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08.log",
+      "supervisor": {
+        "command": [
+          "sage",
+          "-python",
+          "research/elliptic-curves/cas/refine_det1092_rr_pair_order.sage",
+          "--case",
+          "8"
+        ],
+        "failure_reason": null,
+        "limits": {
+          "address_space_bytes": null,
+          "cgroup": null,
+          "pari_stack_bytes": 536870912,
+          "poll_seconds": 0.05,
+          "rss_bytes": 2147483648,
+          "terminate_grace_seconds": 1.0,
+          "wall_seconds": 300
+        },
+        "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/det1092-rr-global-pair-v3/case-08.log",
+        "log_sha256": "d9f54d2f22adc02510e2f17e207eb8c75b31f800ebd5eebb6f5520e306949f68",
+        "outcome": "completed",
+        "peak_observed_rss_bytes": 261218304,
+        "pid": 3469186,
+        "returncode": 0,
+        "rss_limit_bytes": 2147483648,
+        "start_token": "41887217",
+        "termination_signal": null,
+        "timeout_seconds": 300,
+        "wall_seconds": 36.256691649963614,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "version": 3
+    }
+  ]
+}

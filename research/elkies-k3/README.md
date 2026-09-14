@@ -39,7 +39,7 @@ limits, checkpoints and a certificate plan.
 | Need | Source |
 |---|---|
 | NS0031 exclusion withdrawn; rational marking UNKNOWN | [Exact period-group correction and retained modular arithmetic](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
-| Two independent gains on one quadratic cover | [Two directions constructed; infinite rational base remains open](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
+| Two independent gains on one quadratic cover | [Open construction](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Branch-cancellation criterion and parent gates](BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md) |
 | Rank balance, saturation, marking and equation-lift hypotheses | [Reusable theorem layer](RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | Historical corrections and route identities | [Process atlas](ELKIES_K3_PROCESS_ATLAS.md) |
 | Established algorithms and novelty boundaries | [Literature map](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) |

@@ -1,0 +1,81 @@
+{
+  "elapsed_seconds": 1.645627,
+  "parent_mw17_theorems": "inherited; no rank or basis reconstruction",
+  "parents": [
+    {
+      "fixed_u_cover_genus": 21,
+      "forced_branch_degree_for_every_rational_u": 20,
+      "genus_lower_bound_for_every_rational_u": 9,
+      "height_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          24
+        ]
+      ],
+      "name": "published-r17",
+      "rank_lower_bound_with_inherited_mw17": 19,
+      "status": "PASS"
+    },
+    {
+      "fixed_u_cover_genus": 21,
+      "forced_branch_degree_for_every_rational_u": 20,
+      "genus_lower_bound_for_every_rational_u": 9,
+      "height_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          24
+        ]
+      ],
+      "name": "alternate-q80",
+      "rank_lower_bound_with_inherited_mw17": 19,
+      "status": "PASS"
+    },
+    {
+      "fixed_u_cover_genus": 21,
+      "forced_branch_degree_for_every_rational_u": 20,
+      "genus_lower_bound_for_every_rational_u": 9,
+      "height_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          24
+        ]
+      ],
+      "name": "curve302-parent",
+      "rank_lower_bound_with_inherited_mw17": 19,
+      "status": "PASS"
+    },
+    {
+      "fixed_u_cover_genus": 21,
+      "forced_branch_degree_for_every_rational_u": 20,
+      "genus_lower_bound_for_every_rational_u": 9,
+      "height_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          24
+        ]
+      ],
+      "name": "x1092-class1",
+      "rank_lower_bound_with_inherited_mw17": 19,
+      "status": "PASS"
+    }
+  ],
+  "positive_endpoint_complete": false,
+  "proof_boundary": "Exact arithmetic replay plus the written valuation and height proofs; no formal verification or exclusion of other identities.",
+  "status": "PASS"
+}

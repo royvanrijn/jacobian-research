@@ -1,0 +1,8 @@
+{
+  "status": "PASS_FRACTION_AND_STURM_REPLAY",
+  "local_primes": 20,
+  "real_root_intervals": 6,
+  "finite_gcd_divisor": "227545355004811275487300044800",
+  "guaranteed_multiplicative_x_height_radius": "129268457838975634848436212780365074927319238575054733221074851858615875244140625/3406367589892384363582336",
+  "boundary": "Exact rational/logarithmic bound definitions verified. Decimal log displays and claimed optimality are not proof inputs. Retained certified primality is reused."
+}

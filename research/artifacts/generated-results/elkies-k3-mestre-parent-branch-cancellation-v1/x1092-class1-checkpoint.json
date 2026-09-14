@@ -1,0 +1,28 @@
+{
+  "degrees": [
+    8,
+    12,
+    24,
+    44,
+    24
+  ],
+  "fields": {
+    "A": {
+      "irreducible_prime": 71,
+      "local_place": {
+        "prime": 131,
+        "root": 100
+      }
+    },
+    "B": {
+      "irreducible_prime": 19,
+      "local_place": {
+        "prime": 127,
+        "root": 123
+      }
+    }
+  },
+  "name": "x1092-class1",
+  "smooth_disjoint_prime": 151,
+  "status": "PASS"
+}

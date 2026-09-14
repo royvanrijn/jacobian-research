@@ -13,6 +13,9 @@ Kummer images. Their Sha images are zero.
 **Open.** Full `Sel_2(J)` groups, their quotients by the known rational
 images, other Sha classes, and a predictive incidence discriminator are
 not computed. The elementary Jacobian signature already fails specificity.
+The September14 attempt on exactly the two302 controls reached verified
+integral orders, but neither maximal order was certified. It supplies no
+global Selmer dimension or null comparison; see the paired attempt below.
 The [torsion-module theorem](DET1092_MARKED_KUMMER_TRANSPORT_2026-09-08.md#broader-obstruction-irreducible-2-torsion)
 also excludes the ordinary elliptic-quotient and coefficient-induced
 Selmer-transfer routes on these members.
@@ -96,8 +99,108 @@ discriminant by a Sylvester determinant.
 
 These are **not certified field discriminants**, complete bad-prime lists,
 or lower bounds for the cost of every possible descent algorithm. No
-unfactored cofactor is assumed prime, squarefree, or irrelevant. No full
-factorization, maximal-order computation, class group or unit group was run.
+unfactored cofactor is assumed prime, squarefree, or irrelevant. The original
+preparation ran no full factorization, maximal-order computation, class group
+or unit group. The later paired order attempt has its separate boundary below.
+
+## Two-case global completion attempt, September14
+
+**Unfinished calculation.** The requested pair is fixed as prior case09,
+the historical first-unlock RR member, and prior case08, the source-only
+section0 RR member on the same Curve302 fibre. Their equation-only payloads
+are respectively `input-8938b5ceb026a2de3d47.json` and
+`input-a1238e39e035a9c53493.json` in the retained preparation directory.
+No other member was computed. This matching controls the elliptic fibre and
+varies the marked-point construction; it is not a comparison of two different
+elliptic fibres or a population test of extreme rank.
+
+Both have the already certified true rational Kummer dimension18, including
+the inherited dimension17. Write `s=dim Sel_2(J)`. The intended outputs are
+`s`, `s-17`, and `s-18`; **all three remain unknown for both cases**. Their
+known lower bounds are respectively18,1,0. Equal lower bounds are not equal
+Selmer groups and are not the informative null result sought by the experiment.
+
+**Verified application, exact algebra only.** The
+[pair protocol](../../artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/protocol.json)
+and [refinement protocol](../../artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/protocol.json)
+retain two bounded approaches to the missing global order. The first
+minimizes the integral curve models only at discriminant primes through1000,
+checks the rational curve maps, and uses `nfinit([f,1000],1)` followed by
+`nfcertify`. The second removes an avoidable monic-index cost before another
+attempt on the same fields.
+
+For the primitive integral sextic `f=sum a_i*T^i`, put
+`G(X)=a_6^5*f(X/a_6)` and `theta=X/a_6`. In `Q[X]/G` the six elements
+
+\[
+1,\quad b_k=\sum_{j=0}^{k-1}a_{6-j}\theta^{k-j}\quad(1\le k\le5)
+\]
+
+form an integral order. Exact multiplication tables prove closure and show
+that it contains1; its trace-pairing determinant is exactly `disc(f)`.
+The refinement uses this verified order for one `polredbest` generator
+reduction. Exact polynomial substitution and an invertible six-dimensional
+power matrix prove each field isomorphism. The new generator then goes to
+a separate `nfinit([f_new,1000])`; the supplied order is never asserted maximal.
+
+| Retained order data | Historical first unlock,09 | Source-only control,08 |
+|---|---:|---:|
+| First partial order, discriminant bits |96830|116063|
+| Binary-sextic order, discriminant bits |31229|37559|
+| Partial order after generator reduction, discriminant bits |26213|107833|
+| Unresolved `nfcertify` cofactor bits after refinement |26191|107830|
+| Certified global2-Selmer dimension |UNKNOWN|UNKNOWN|
+
+**Certificate boundary.** These are discriminants of explicitly verified
+orders, not certified field discriminants. Changing the generator and then
+rebuilding an order at only the trial primes can lose known integrality at
+other primes, as the control demonstrates. The sizes do not compare intrinsic
+arithmetic complexity or prove that another algorithm cannot finish.
+Both `nfcertify` calls in each successful pass returned nonempty unresolved
+cofactors. These are completed inconclusive calls, not timeouts. There is no
+certified maximal order, complete global support, class-group contribution,
+unit contribution or global supported squareclass space. No BNF or full
+Selmer routine was called on the uncertified data.
+
+**Implementation trust boundary.** PARI's
+[documented order certification](https://pari.math.u-bordeaux.fr/dochtml/html-stable/General_number_fields.html#nfcertify)
+must be used with the input contract of `nfinit`. A supplied basis is trusted:
+the [retained small example](../../artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/supplied-basis-caveat.json)
+gets `nfcertify=[]` from `nfinit([X^2-20,[1,X]])`, although that order has
+discriminant80 and is properly contained in the integral order with basis
+`1,(X+2)/4` and discriminant5. Thus wrapping an arbitrary verified order in
+`nfinit` would not close maximality. The RR order-certification calls use the
+prime-list input contract instead.
+
+**Independent replay and retained failures.** The
+[exact replay](../../artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/replay.json)
+checks both curve maps, field isomorphisms and all six integral orders.
+It reconstructs trace pairings by Newton sums, without PARI order construction,
+model reduction, factorization or class-group arithmetic. It reuses the79/83
+irreducibility places. Its PASS is explicitly limited to these algebraic facts.
+The unresolved certification results are retained execution receipts, not
+independent proofs of nonmaximality or infeasibility.
+
+The initial probe stopped at an incorrect cypari2 discriminant accessor.
+Its exact source, logs and partial outputs survive in
+`det1092_rr_global_pair_v1`; the corrected source and successor outputs usev2.
+The [execution record](../../artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/execution.json)
+retains all six invocations, each bounded by300seconds,2GiB RSS and512MiB PARI
+stack. The two successful passes took109.8seconds combined; the two initial
+implementation failures took2.9seconds. No process from this experiment remains
+running.
+
+```sh
+sage -python research/elliptic-curves/cas/verify_det1092_rr_global_pair.sage
+```
+
+The next mathematical gate is a certified maximal order and complete supported
+squareclass space on this fixed pair, followed by the necessary simultaneous
+local conditions and true/fake comparison. Repeating the completed real,
+dyadic or good-prime images cannot replace that gate. Even a future equality
+of the two residual dimensions would only show that this dimension fails to
+distinguish these two marked constructions; it would not identify their classes
+or establish a general cause of elliptic rank jumps.
 
 ## Exact good-prime descent without a licensed backend
 

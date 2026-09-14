@@ -327,22 +327,26 @@
       "id": "WORK-EC-NEXT",
       "kind": "research",
       "area": "elliptic-curves",
-      "title": "Test whether certified coordinate coverage improves CPU to the next direction",
+      "title": "Resolve measured preparation and height-bound slack before another model benchmark",
       "target": "OP-EC-NEXT",
       "claims": [
         "OP-EC-NEXT",
         "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907",
         "EC-X948-EIGHT-A1-ADMISSIONS-20260913",
-        "EC-POINTED-HEIGHT-PORTFOLIO-20260913"
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913",
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
+        "EC-HEIGHT-PORTFOLIO-COST-20260914"
       ],
       "sources": [
         "elliptic-curves/README.md",
         "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md",
         "elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md",
         "elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md",
-        "elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md"
+        "elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md",
+        "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md",
+        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md"
       ],
-      "next_step": "The first-chart local height and minimal-model portfolio certificates pass. Freeze a model/box allocation rule before a new next-direction comparison on the retained control banks. Charge new model preparation, bounds, failed attempts, search and independent verification; include the existing cheaper factor-free arm. Require independently sourced cross-curve withheld directions before broad transfer claims. This benchmark is not launched by the bound calculation. Keep the X948 wave and targeted rank21 follow-up stopped; no automatic parameter or stalled-curve campaign.",
+      "next_step": "The nine-arm cold comparison is sealed and stopped: three certified baseline gains and six support-preparation timeouts before search. Twelve post-seal target coordinates reveal dominant finite-cancellation slack. A finite postprocessor now optimizes unequal boxes on the already certified three-model first chart, with an independently replayed 0.573942907264 address-proxy ratio to its best single. This supplies no measured model prices or runtime result. Review the preparation policy and pointwise slack before freezing any changed implementation and target-blind cost calibration for another complete-cost comparison. The same-prime case remains outside the original joint formula. No benchmark restart, increased allowance, production search, class-constructor or ancestry lane is scheduled. Independently sourced cross-curve targets remain necessary before transfer claims.",
       "done_when": "A declared candidate-generation route produces independently certified useful rank gains toward32. The completed history analysis and improved seed discrimination alone do not complete the rank32 goal.",
       "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21.",
       "compute": "none",
@@ -350,7 +354,9 @@
         "OP-EC-NEXT": "f36c4d02969820a7",
         "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "b173bc90e2cc5971",
         "EC-X948-EIGHT-A1-ADMISSIONS-20260913": "a66cb19255346318",
-        "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5"
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5",
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913": "175492d551de96d4",
+        "EC-HEIGHT-PORTFOLIO-COST-20260914": "bab192a6e296a347"
       }
     },
     {
@@ -827,7 +833,8 @@
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913",
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913",
-        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913"
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
       ],
       "sources": [
         "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
@@ -835,20 +842,42 @@
         "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md",
         "elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md",
         "elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md",
-        "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md"
+        "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md",
+        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md"
       ],
-      "next_step": "Derive a complete genus-one normalization locus for a singular bisection image of arithmetic genus at least2, or a different low-degree quadratic-cover identity. On alternate Q80 the complete smooth genus-one layer is closed, including all49 moving-contact norm12 pencils. Read the retained genus-two systems and distinguish one-node genus-one normalizations from the previously tested two-node rational normalizations. Prove the full divisor family, node and projective parameter charts, actual squareclass and rational points on the normalization before a bounded comparison. Two independent directions and infinitely many rational base points remain required. No large campaign or reconstruction is scheduled.",
+      "next_step": "Solve a different shared-branch identity with the genus condition imposed coefficientwise. The new sufficient polynomial chart is x_i^3+A*x_i+B=d*r_i^2 for one squarefree quartic d, deg(x_i),deg(r_i)<=4, x_1!=x_2 and branch disjoint from the parent discriminant; any solution gives two independent height8 directions and arithmetic-genus5 images. It remains unsolved and is not a complete carrier family. Alternatively treat singular genus-two carriers through the retained genus-nine halving-locus theorems, including their exceptional charts and rational-normalization gates. Same-Mestre substitution on Q80, Curve302 MW17 and X1092 class1 is now closed for all rational u. Require an actual positive-rank genus-one base or rational parametrization before claiming the infinite family. No enumeration or rational-point campaign is scheduled.",
       "done_when": "Two exact independent sections modulo the inherited subgroup on one quadratic cover of the original parameter field, constructed without desired exceptional-point fitting, with a rational covering base or a certified positive-rank genus-one covering base and valid specialization hypotheses. A finite miss does not complete the objective.",
-      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization.",
+      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization. The sharp Mestre cancellation gate now covers direct11952 Q80, Curve302 MW17 and X1092 class1 as well as R17. All four force twenty coefficient branch points for every rational auxiliary function. The genus-nine node-locus result is prior work, not a newly open rational parametrization problem. The different common-quartic chart and its height proof supply no actual cover yet.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "0c66b50a6c5059fc",
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "7bb8a552af63846d",
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912": "09d547bac445f45e",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": "4b9b09c3641c6ff0",
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c",
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913": "e866998a9843404c",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913": "c6033dabb5720a9e",
-        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17"
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17",
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "e221270755762cdb"
+      }
+    },
+    {
+      "id": "WORK-EC-RR-TWO-CASE-GLOBAL-SELMER",
+      "kind": "research",
+      "area": "elliptic-curves",
+      "title": "Complete the global Selmer groups on the frozen RR control pair",
+      "target": null,
+      "claims": [
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908"
+      ],
+      "sources": [
+        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md"
+      ],
+      "next_step": "Start at the unresolved global order/support gate on exactly cases09 and08. Reuse the retained curve maps, verified integral orders and failed certification receipts; supply certified maximal orders and a complete supported squareclass space including class and unit contributions, then impose every required local condition and resolve the true/fake comparison. Do not repeat the closed local panels or call BNF on a merely supplied/partial order.",
+      "done_when": "Both unconditional true Sel_2 groups and maps are certified, with dimensions and quotients by the inherited17- and known rational18-dimensional images, all necessary place coverage, and independently replayable certificates. Unknown dimensions or identical lower bounds do not complete the comparison.",
+      "prerequisites": "The September14 two-case attempt remains incomplete: all four prime-list order certifications returned unresolved composites. These are not certified field discriminants or proofs of infeasibility. Preserve the exact pair and retrospective same-fibre selection boundary. A changed algorithm needs its own declared resource limits and certificate plan; this work item schedules no campaign.",
+      "compute": "new-compute",
+      "reviewed_claims": {
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "ef3e60a89e5b3033"
       }
     }
   ]

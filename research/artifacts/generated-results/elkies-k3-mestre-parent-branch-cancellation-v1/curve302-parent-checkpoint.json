@@ -1,0 +1,28 @@
+{
+  "degrees": [
+    8,
+    12,
+    24,
+    44,
+    24
+  ],
+  "fields": {
+    "A": {
+      "irreducible_prime": 47,
+      "local_place": {
+        "prime": 239,
+        "root": 167
+      }
+    },
+    "B": {
+      "irreducible_prime": 83,
+      "local_place": {
+        "prime": 79,
+        "root": 43
+      }
+    }
+  },
+  "name": "curve302-parent",
+  "smooth_disjoint_prime": 149,
+  "status": "PASS"
+}

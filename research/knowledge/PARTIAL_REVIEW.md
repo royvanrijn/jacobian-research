@@ -306,7 +306,7 @@ Where present, `missing_inputs` names inspected replay prerequisites, not expect
 
 | Claim | Disposition | Precise remaining obligation |
 |---|---|---|
-| `EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908` (partial) | open-obligation | Resolve83 failed reduction-test pairs and four anchor cases, identify every other required place, and construct a certified complete global supported squareclass space including unramified class contributions. No complete global Selmer algorithm or result is present. Larger Selmer dimension would not by itself identify Sha or an elliptic rank-jump mechanism. |
+| `EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908` (partial) | open-obligation | On the fixed cases09/08 pair, certify maximal orders and complete supported squareclasses including the global class/unit contributions, then cover all necessary local conditions and the true/fake comparison. Both full Selmer dimensions and residual dimensions remain unknown. The wider ten-member local panel still has83 reduction-test failures and four anchors; those old counts are not a prerequisite to completing only this pair. |
 
 ## FERMIGIER_REPRODUCTION
 

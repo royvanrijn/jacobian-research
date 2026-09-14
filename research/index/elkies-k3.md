@@ -88,6 +88,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-H3-Q8-UNMARKED-E7-NODE-FRAMES` | partial | [Actual q8 local module frames on all five unmarked H92 E7 edge nodes](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION` | partial | [Exact unmarked first q4 collision on the rational Q80 coefficient curve](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-BISECT-BIQUADRATIC-R19` | proved | [Complete biquadratic rank-19 bisection-cover geometry and a rank-at-least-nine base](../elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md) |
+| `EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914` | proved | [Sharp Mestre coefficient-divisor cancellation criterion; Q80 and two X1092 parents also force genus at least9](../elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md) |
 | `EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912` | proved | [Twenty-five prospective genus-one pencils have no shared rational branch quartic in any of their 300 pairs](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `EC-K3-CURVE302-COMPLETE-P6-TRIANGLE-GATE` | proved | [Complete P6 height-six triangle class contains no MW14-or-higher parent of 302](../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md) |

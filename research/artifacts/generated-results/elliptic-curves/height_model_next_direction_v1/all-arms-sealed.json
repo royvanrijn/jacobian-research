@@ -1,0 +1,115 @@
+{
+  "protocol_sha256": "2af0114d4de2ad4c30fd77487a6cd591f05c69440b3fe728a032ddc30d436df7",
+  "rows": [
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M27",
+      "cpu_seconds": 49.964725751,
+      "folder": "runs/curve302-M27/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 54.584137807018124
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M27",
+      "cpu_seconds": 32.68749039499999,
+      "folder": "runs/curve302-M27/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.833987792022526
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M27",
+      "cpu_seconds": 32.633694769999984,
+      "folder": "runs/curve302-M27/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.782173171057366
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M29",
+      "cpu_seconds": 32.78354433799999,
+      "folder": "runs/curve302-M29/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.000678546959534
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M29",
+      "cpu_seconds": 32.79549942099999,
+      "folder": "runs/curve302-M29/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.00728992302902
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M29",
+      "cpu_seconds": 30.587841732000015,
+      "folder": "runs/curve302-M29/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 33.18077799200546
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_pair",
+      "case": "curve302-M30",
+      "cpu_seconds": 32.791427954999975,
+      "folder": "runs/curve302-M30/bounded_pair",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 33.98272366600577
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "v3_factor_free",
+      "case": "curve302-M30",
+      "cpu_seconds": 59.033328971000046,
+      "folder": "runs/curve302-M30/v3_factor_free",
+      "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+      "success": true,
+      "verified": true,
+      "wall_seconds": 64.51384442701237
+    },
+    {
+      "allowance_seconds": 300,
+      "arm": "bounded_single",
+      "case": "curve302-M30",
+      "cpu_seconds": 32.82909347899998,
+      "folder": "runs/curve302-M30/bounded_single",
+      "status": "COLD_SUPPORT_UNRESOLVED",
+      "success": false,
+      "verified": true,
+      "wall_seconds": 34.008570950012654
+    }
+  ],
+  "seal_hashes": {
+    "runs/curve302-M27/bounded_pair": "de9cf2af780befdfc51ef72aa5100e28a27066d061ec6dd0c5e210e8c9e4543e",
+    "runs/curve302-M27/bounded_single": "4aa179e1316c254cf8a24981116ef734d5d60ae46d018cfaef033f8fecffa686",
+    "runs/curve302-M27/v3_factor_free": "a5f7f24e8d21f72fb6bb6ab1a1cda716d2a4d84ec23c15b997d5d56df55c1ea5",
+    "runs/curve302-M29/bounded_pair": "9cd94187faa296c9c2433e7c18594d88f62d4e96aa6738d15c8c3b5f0fc9372e",
+    "runs/curve302-M29/bounded_single": "f86c00dddf1c9598890252ef62724578ffebc0c660d365f27dfc359a69cd83f0",
+    "runs/curve302-M29/v3_factor_free": "fc7e004b5fb6789fdbdfa4a0b28a9182f312256aefa6e24398c25a6717808ffb",
+    "runs/curve302-M30/bounded_pair": "07b8e187dee60d3fae142d7ff2964ea83e74b7e28c7b93a146da58aff08329d3",
+    "runs/curve302-M30/bounded_single": "10563a7981380ea67ce10d5060f48c0d562e168c4f138871f8cdf53b181275ef",
+    "runs/curve302-M30/v3_factor_free": "337db8965a03d0c04a4b6587e70da6ddd9eb9dee144b355a074c987728908404"
+  }
+}

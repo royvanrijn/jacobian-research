@@ -1,0 +1,17 @@
+{
+  "boundary": "A basis supplied directly to nfinit is trusted input. Do not use nfcertify=[] to independently prove maximality of such a basis. The RR probes instead call nfinit with a list of primes, and nfcertify remains unresolved.",
+  "input": "nfinit([x^2-20,[1,x]])",
+  "larger_order_discriminant": "5",
+  "larger_order_index": 4,
+  "nfcertify_result": [],
+  "reason": "The second generator satisfies t^2-t-1=0. Thus the supplied order is not maximal despite nfcertify=[].",
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "strictly_larger_integral_order_basis": [
+    "1",
+    "(x+2)/4"
+  ],
+  "supplied_order_discriminant": "80"
+}

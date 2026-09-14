@@ -1,0 +1,121 @@
+{
+  "component_cpu_seconds": 0.156605,
+  "input_sha256": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c",
+  "parents": [
+    {
+      "degrees": [
+        8,
+        12,
+        24,
+        44,
+        24
+      ],
+      "fields": {
+        "A": {
+          "irreducible_prime": 29,
+          "local_place": {
+            "prime": 59,
+            "root": 51
+          }
+        },
+        "B": {
+          "irreducible_prime": 59,
+          "local_place": {
+            "prime": 107,
+            "root": 83
+          }
+        }
+      },
+      "name": "published-r17",
+      "smooth_disjoint_prime": 131,
+      "status": "PASS"
+    },
+    {
+      "degrees": [
+        8,
+        12,
+        24,
+        44,
+        24
+      ],
+      "fields": {
+        "A": {
+          "irreducible_prime": 107,
+          "local_place": {
+            "prime": 71,
+            "root": 36
+          }
+        },
+        "B": {
+          "irreducible_prime": 23,
+          "local_place": {
+            "prime": 127,
+            "root": 77
+          }
+        }
+      },
+      "name": "alternate-q80",
+      "smooth_disjoint_prime": 131,
+      "status": "PASS"
+    },
+    {
+      "degrees": [
+        8,
+        12,
+        24,
+        44,
+        24
+      ],
+      "fields": {
+        "A": {
+          "irreducible_prime": 47,
+          "local_place": {
+            "prime": 239,
+            "root": 167
+          }
+        },
+        "B": {
+          "irreducible_prime": 83,
+          "local_place": {
+            "prime": 79,
+            "root": 43
+          }
+        }
+      },
+      "name": "curve302-parent",
+      "smooth_disjoint_prime": 149,
+      "status": "PASS"
+    },
+    {
+      "degrees": [
+        8,
+        12,
+        24,
+        44,
+        24
+      ],
+      "fields": {
+        "A": {
+          "irreducible_prime": 71,
+          "local_place": {
+            "prime": 131,
+            "root": 100
+          }
+        },
+        "B": {
+          "irreducible_prime": 19,
+          "local_place": {
+            "prime": 127,
+            "root": 123
+          }
+        }
+      },
+      "name": "x1092-class1",
+      "smooth_disjoint_prime": 151,
+      "status": "PASS"
+    }
+  ],
+  "positive_low_genus_cover": false,
+  "schema": "mestre-parent-branch-result-v1",
+  "status": "PASS"
+}

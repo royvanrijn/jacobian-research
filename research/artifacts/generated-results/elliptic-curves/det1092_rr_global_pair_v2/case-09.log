@@ -1,0 +1,8 @@
+{"status": "PASS_EQUATION_INPUT", "coefficient_bits": 3294, "stage": "input", "elapsed_seconds": 0.0036282410146668553}
+START model_minimization_at_trial_primes
+{"status": "PASS_EXACT_MODEL_MAP", "coefficient_bits": 3307, "stage": "model", "elapsed_seconds": 0.010677604004740715}
+START partial_order_and_generator_reduction
+  ***   Warning: nonmonic polynomial. Result of the form [nf,c].
+{"status": "PARTIAL_ORDER_REQUIRES_CERTIFICATION", "order_discriminant_bits": 96830, "coefficient_bits": 19406, "stage": "order", "elapsed_seconds": 0.7635167700354941}
+START maximal_order_certification
+{"status": "UNRESOLVED_MAXIMAL_ORDER", "unresolved_cofactor_bits": [96808], "stage": "certification", "elapsed_seconds": 27.63790594600141}

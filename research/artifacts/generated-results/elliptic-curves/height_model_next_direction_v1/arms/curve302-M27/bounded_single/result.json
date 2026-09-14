@@ -1,0 +1,10 @@
+{
+  "arm": "bounded_single",
+  "initial_rank": 27,
+  "input_sha256": "62f6ceb17993927d3a603bafc5ba823613f4da5d3508d604035d43f8262774a7",
+  "returncode": -15,
+  "rows": [],
+  "status": "COLD_SUPPORT_UNRESOLVED",
+  "support_outcome": "strict_wall_timeout",
+  "worker_wall_seconds": 32.22285948501667
+}

@@ -1,0 +1,11 @@
+{
+  "allowance_seconds": 300,
+  "arm": "v3_factor_free",
+  "case": "curve302-M30",
+  "cpu_seconds": 59.033328971000046,
+  "folder": "runs/curve302-M30/v3_factor_free",
+  "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+  "success": true,
+  "verified": true,
+  "wall_seconds": 64.51384442701237
+}

@@ -1,0 +1,28 @@
+{
+  "degrees": [
+    8,
+    12,
+    24,
+    44,
+    24
+  ],
+  "fields": {
+    "A": {
+      "irreducible_prime": 107,
+      "local_place": {
+        "prime": 71,
+        "root": 36
+      }
+    },
+    "B": {
+      "irreducible_prime": 23,
+      "local_place": {
+        "prime": 127,
+        "root": 77
+      }
+    }
+  },
+  "name": "alternate-q80",
+  "smooth_disjoint_prime": 131,
+  "status": "PASS"
+}

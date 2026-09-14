@@ -1,0 +1,302 @@
+{
+  "thresholds": [
+    [
+      21129,
+      83399,
+      99912
+    ],
+    [
+      55902,
+      220653,
+      37763
+    ],
+    [
+      47246,
+      37298,
+      223409
+    ],
+    [
+      125000,
+      98679,
+      84441
+    ]
+  ],
+  "height_options": [
+    [
+      0,
+      21129,
+      47246,
+      55902,
+      125000
+    ],
+    [
+      0,
+      37298,
+      83399,
+      98679,
+      220653
+    ],
+    [
+      0,
+      37763,
+      84441,
+      99912,
+      223409
+    ]
+  ],
+  "enumeration_nodes": 125,
+  "feasible_allocations": 93,
+  "optimum": {
+    "heights": [
+      21129,
+      37298,
+      84441
+    ],
+    "active_models": [
+      0,
+      1,
+      2
+    ],
+    "state_covering_models": [
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "state_witness_models": [
+      0,
+      2,
+      1,
+      2
+    ],
+    "selected_cost": "8967857926",
+    "objective": "8967857926"
+  },
+  "best_by_maximum_model_count": {
+    "1": {
+      "heights": [
+        125000,
+        0,
+        0
+      ],
+      "active_models": [
+        0
+      ],
+      "state_covering_models": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "state_witness_models": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_cost": "15625000000",
+      "objective": "15625000000"
+    },
+    "2": {
+      "heights": [
+        47246,
+        0,
+        84441
+      ],
+      "active_models": [
+        0,
+        2
+      ],
+      "state_covering_models": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "state_witness_models": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "selected_cost": "9362466997",
+      "objective": "9362466997"
+    },
+    "3": {
+      "heights": [
+        21129,
+        37298,
+        84441
+      ],
+      "active_models": [
+        0,
+        1,
+        2
+      ],
+      "state_covering_models": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "state_witness_models": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "selected_cost": "8967857926",
+      "objective": "8967857926"
+    }
+  },
+  "best_uniform_by_exact_model_count": {
+    "1": {
+      "heights": [
+        125000,
+        0,
+        0
+      ],
+      "active_models": [
+        0
+      ],
+      "state_covering_models": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "state_witness_models": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "selected_cost": "15625000000",
+      "objective": "15625000000"
+    },
+    "2": {
+      "heights": [
+        0,
+        84441,
+        84441
+      ],
+      "active_models": [
+        1,
+        2
+      ],
+      "state_covering_models": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "state_witness_models": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "selected_cost": "14260564962",
+      "objective": "14260564962"
+    },
+    "3": {
+      "heights": [
+        84441,
+        84441,
+        84441
+      ],
+      "active_models": [
+        0,
+        1,
+        2
+      ],
+      "state_covering_models": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "state_witness_models": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "selected_cost": "21390847443",
+      "objective": "21390847443"
+    }
+  },
+  "status": "EXACT_COST_ALLOCATION_PRODUCED",
+  "x_height_limit": "55427036286975333721964439957200001290625463714680942426680902942693233489990234375/426425479690935333726967716604529792",
+  "model_order": [
+    "preconditioned_full",
+    "minimal-neighbour-p5-r1",
+    "minimal-neighbour-p7-r0"
+  ],
+  "protocol_sha256": "c48231df59fc9606204038e6477642a7af81d0a3193349a365ffa2f6d897e55d",
+  "boundary": "Optimal only over this certified sufficient-state table and supplied monotone cost model. The selected boxes guarantee coordinate coverage when completely enumerated; they need not contain the old boxes or a new independent point. The displayed costs exclude preparation and are not CPU or recovery probabilities. No change to the sealed three-arm benchmark.",
+  "meter": {
+    "cpu_seconds": 0.001405161000000002,
+    "elapsed_seconds": 0.0014220259618014097,
+    "scope": "postprocessor only; excludes input mathematics, preparation and search"
+  }
+}

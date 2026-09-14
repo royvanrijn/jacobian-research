@@ -1,0 +1,171 @@
+{
+  "independent_gain_verified": true,
+  "rank_lower_bound": 31,
+  "result_sha256": "036abbf0a45a68fc2868ecb855d58acf64e1dd5d4fbfd6d271718c0d1d0e9a2e",
+  "sage_enumeration": {
+    "exported_basis_rank": 31,
+    "groups": [
+      {
+        "double_subgroup_order": 13,
+        "order": 26,
+        "prime": 17,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 28,
+        "order": 56,
+        "prime": 47,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 33,
+        "order": 66,
+        "prime": 53,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 36,
+        "order": 72,
+        "prime": 61,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 41,
+        "order": 82,
+        "prime": 67,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 43,
+        "order": 86,
+        "prime": 71,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 47,
+        "order": 94,
+        "prime": 79,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 49,
+        "order": 98,
+        "prime": 83,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 51,
+        "order": 102,
+        "prime": 89,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 60,
+        "order": 120,
+        "prime": 101,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 63,
+        "order": 126,
+        "prime": 107,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 30,
+        "order": 120,
+        "prime": 113,
+        "quotient_dimension": 2
+      },
+      {
+        "double_subgroup_order": 73,
+        "order": 146,
+        "prime": 127,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 75,
+        "order": 150,
+        "prime": 137,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 85,
+        "order": 170,
+        "prime": 149,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 102,
+        "order": 204,
+        "prime": 179,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 106,
+        "order": 212,
+        "prime": 191,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 110,
+        "order": 220,
+        "prime": 197,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 117,
+        "order": 234,
+        "prime": 211,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 62,
+        "order": 248,
+        "prime": 229,
+        "quotient_dimension": 2
+      },
+      {
+        "double_subgroup_order": 131,
+        "order": 262,
+        "prime": 233,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 67,
+        "order": 268,
+        "prime": 241,
+        "quotient_dimension": 2
+      },
+      {
+        "double_subgroup_order": 73,
+        "order": 292,
+        "prime": 263,
+        "quotient_dimension": 2
+      },
+      {
+        "double_subgroup_order": 147,
+        "order": 294,
+        "prime": 269,
+        "quotient_dimension": 1
+      },
+      {
+        "double_subgroup_order": 73,
+        "order": 292,
+        "prime": 281,
+        "quotient_dimension": 2
+      },
+      {
+        "double_subgroup_order": 78,
+        "order": 312,
+        "prime": 283,
+        "quotient_dimension": 2
+      }
+    ],
+    "input": "independent-rank-input.json",
+    "no_two_torsion_prime": 31,
+    "point_count": 31,
+    "union_finite_rank": 31
+  },
+  "status": "PASS_POINT_MAP_AND_TWO_FINITE_IMPLEMENTATIONS"
+}

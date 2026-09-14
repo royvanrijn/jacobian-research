@@ -2811,7 +2811,7 @@
       ],
       "reviewed_claims": {
         "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908": "c82a1b160c0c4b6d",
-        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "b22e4c511e3fe2c3"
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "ef3e60a89e5b3033"
       }
     },
     {
@@ -2846,7 +2846,7 @@
         "Selmer completeness"
       ],
       "reviewed_claims": {
-        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "b22e4c511e3fe2c3",
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "ef3e60a89e5b3033",
         "EC-DET1092-RR-GOOD-LOCAL-IMAGES-20260908": "c82a1b160c0c4b6d",
         "EC-DET1092-RR-COMPLETE-DYADIC-IMAGES-20260908": "6fe536a0b8cd5aad"
       }
@@ -4044,20 +4044,26 @@
       "area": "elkies-k3",
       "title": "Prove the branch budget before varying a shared-twist auxiliary function",
       "when": "Applying a multi-section quadratic-twist identity to a moving high-rank elliptic parent whose coefficients have large irreducible divisors.",
-      "use": "Verify the exact section identities and calculate their heights on the pulled-back surface. Then examine valuations at coefficient divisors before a parameter search. Prove cyclotomic-residue exclusions with irreducible finite reductions and simple local degree-one places; this can force branch points for every rational auxiliary function, including arbitrary zeros and poles.",
+      "use": "Verify the exact section identities and calculate their heights on the pulled-back surface. Then examine valuations at coefficient divisors before a parameter search. Prove cyclotomic-residue exclusions with irreducible finite reductions and simple local degree-one places; this can force branch points for every rational auxiliary function, including arbitrary zeros and poles. Use the sharp local criterion: an A divisor is removable for some u precisely with i or a primitive cube root in its residue field; a B divisor requires i. Contact orders matter even when the residue is permitted. Impose the remaining global polynomial as a square times one literal squarefree branch polynomial, with infinity and constant squareclasses retained.",
       "avoid": "Transferring a constant-parent twist theorem's independence statement to a moving parent without a height proof, counting a genus-greater-than-one base as an infinite specialization source, or trying a larger auxiliary-function box after an unbounded valuation obstruction.",
-      "boundary": "For published R17, u=2 gives two new independent directions with Gram diag(24,24) over one genus21 cover. Every rational auxiliary function in this same Mestre identity retains the degree8 A divisor and degree12 B divisor in the branch locus, hence genus at least9. This does not exclude other identities or parents.",
-      "reopen_when": "A different carrier identity changes the forced branch divisor, or a different arithmetic parent has coefficient root fields and valuations that permit the required branch degree at most4.",
+      "boundary": "On published R17, alternate Q80 direct11952, Curve302 MW17 and X1092 class1, u=2 gives two independent directions with Gram diag(24,24) on genus21 covers. Every rational auxiliary function in this Mestre identity retains the degree8 A and degree12 B divisors, hence genus at least9. The three additional parent equations have independent portable local and height replays. A separate common-quartic polynomial system would give independent height8 sections with arithmetic-genus5 images if solved; no solution or positive rational base is known.",
+      "reopen_when": "A different carrier identity solves a shared-squarefactor equation with branch degree at most4, or an untested parent passes the coefficient-divisor criterion. Repeating the same Mestre auxiliary search on any of the four certified parents cannot meet the base condition. For genus-two nodes, reuse the existing genus-nine halving-locus theorems and preserve their exceptional-chart boundary.",
       "claims": [
-        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913"
+        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913",
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
       ],
       "sources": [
-        "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md"
+        "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md",
+        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md",
+        "elliptic-curves/notes/DET1092_RR_NET_SINGULAR_MEMBER_GATE_2026-09-08.md",
+        "elliptic-curves/notes/DET1092_TRACE_PARITY_DESCENT_2026-09-09.md"
       ],
       "implementation": [
         "elkies-k3/scripts/construct_r17_mestre_shared_twist.sage",
         "elkies-k3/scripts/certify_r17_mestre_branch_gate.sage",
-        "elkies-k3/scripts/verify_r17_mestre_shared_twist.py"
+        "elkies-k3/scripts/verify_r17_mestre_shared_twist.py",
+        "elkies-k3/scripts/gate_mestre_parent_branch_cancellation.sage",
+        "elkies-k3/scripts/verify_mestre_parent_branch_cancellation.py"
       ],
       "keywords": [
         "Mestre",
@@ -4066,10 +4072,16 @@
         "branch divisor",
         "height pairing",
         "residue field",
-        "genus obstruction"
+        "genus obstruction",
+        "branch cancellation",
+        "shared quartic",
+        "X1092",
+        "Curve302",
+        "singular genus five"
       ],
       "reviewed_claims": {
-        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c"
+        "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c",
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "e221270755762cdb"
       }
     },
     {
@@ -5241,6 +5253,111 @@
       "reviewed_claims": {
         "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5"
       }
+    },
+    {
+      "id": "METHOD-EC-HEIGHT-BOUND-TARGET-SLACK",
+      "area": "elliptic-curves",
+      "title": "Separate cold support, uniform coverage and actual target accessibility",
+      "when": "Benchmarking a certified height-based model selector at the supplied equation, subgroup and anchor interface.",
+      "use": "Freeze model vocabulary and exact pair-height allocation before search; charge required support discovery and verification. After all endpoints are sealed, transport each literal winning point into every model and verify its parameter height and exact slack decomposition log(C/g)/4 plus log(S/L)/4. Keep diagnostics separate from arm costs and target-informed selection.",
+      "avoid": "Treating cached discriminant factors as free cold preparation, hiding a preparation timeout as a point-search miss, assuming the smallest uniform bound gives the smallest coordinate for each point, or using a distinct-prime product partition for two neighbours at one prime.",
+      "boundary": "On three Curve302 controls the baseline recovers the next direction, while all six bounded arms hit a30-second support limit and make no point calls. Twelve individual-model coordinates replay; the best uniform bound selects a smallest actual coordinate only in the first row. Finite cancellation dominates the slack. This is a three-target conditional diagnostic, not a general performance or probability statement. The same-prime pair is UNKNOWN only for the frozen formula.",
+      "reopen_when": "A specifically revised, bounded preparation or model-selection policy addresses the measured bottleneck and receives a new complete-cost comparison; no automatic rerun or budget enlargement.",
+      "claims": [
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913"
+      ],
+      "sources": [
+        "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/height_model_benchmark.py",
+        "elliptic-curves/cas/run_height_model_benchmark.py",
+        "elliptic-curves/cas/height_model_accessibility.py",
+        "elliptic-curves/cas/verify_height_model_accessibility.py"
+      ],
+      "keywords": [
+        "height bounds",
+        "coordinate visibility",
+        "target accessibility",
+        "cold preparation",
+        "finite cancellation",
+        "benchmark"
+      ],
+      "reviewed_claims": {
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913": "175492d551de96d4",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5"
+      }
+    },
+    {
+      "id": "METHOD-EC-COSTED-HEIGHT-BOX-ALLOCATION",
+      "area": "elliptic-curves",
+      "title": "Optimize complete coverage with unequal box heights and explicit model costs",
+      "when": "A certified complete joint-state table for equivalent models of one marked chart is already available.",
+      "use": "At a declared elliptic-height range X, compute exact ceil((X D_i(s))^(1/4)) thresholds. Minimize a supplied monotone cost over boxes meeting at least one model threshold for every joint state. Charge activation separately from all-bank preparation, including discarded models. Check the finite optimum by independent state assignments; keep the statewise choice coupled across all places.",
+      "avoid": "Treating minimization of a shared coverage constant as the whole cost problem, dropping discarded-model preparation, calling an equal H-squared price a CPU calibration, or using uniform coverage as a probability model for the first independent point.",
+      "boundary": "The earlier equal-box selector already charged model count through |T|^2 D_T. On its unchanged three-model/four-state first chart, unequal heights yield an exact 0.573942907264 address-proxy ratio to the best single, or 0.599197887808 with at most two models. This does not resolve cold support timeouts or the observed targetwise finite-cancellation slack. No search was run or selector deployed into the sealed benchmark.",
+      "reopen_when": "A bounded preparation and independently calibrated pricing policy is frozen for a new complete-cost comparison. Transfer needs independently sourced cross-curve targets; proxy optimization alone does not authorize a campaign.",
+      "claims": [
+        "EC-HEIGHT-PORTFOLIO-COST-20260914",
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913"
+      ],
+      "sources": [
+        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md",
+        "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/height_portfolio_cost.py",
+        "elliptic-curves/cas/verify_height_portfolio_cost.py"
+      ],
+      "keywords": [
+        "height bounds",
+        "coordinate visibility",
+        "model selection",
+        "unequal boxes",
+        "coverage",
+        "search cost",
+        "state assignments"
+      ],
+      "reviewed_claims": {
+        "EC-HEIGHT-PORTFOLIO-COST-20260914": "bab192a6e296a347",
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913": "175492d551de96d4",
+        "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5"
+      }
+    },
+    {
+      "id": "METHOD-EC-RR-GLOBAL-ORDER-CERTIFICATION",
+      "title": "Verify integral orders and the backend input contract before global Selmer arithmetic",
+      "when": "Completing global descent on one of the two frozen large nonmonic RR sextics.",
+      "use": "Reuse the exact pair inputs and order checkpoints. A binary-sextic order removes an artificial monic index; certify ring closure and its trace discriminant before using it for generator reduction. Reconstructing a partial order after a generator change can lose integrality away from the trial primes. Keep complete supported squareclasses, class and unit contributions, local conditions and the true/fake comparison as separate obligations.",
+      "avoid": "Treating a nonempty nfcertify remainder as a field discriminant, treating known local or rational Kummer spans as a complete global space, or using nfcertify=[] on an arbitrary basis supplied to nfinit as an independent maximality proof. The supplied-basis example X^2-20 returns[] for the nonmaximal order of discriminant80.",
+      "boundary": "Cases09 and08 have verified model and field maps and integral orders, but no certified maximal order or global Selmer dimension. Both certification passes returned unresolved composites. The measured order sizes and failure receipts do not prove intrinsic infeasibility or equal residual dimensions. Same-fibre matching tests the marked construction, not a population rank effect.",
+      "reopen_when": "An exact maximal-order/support certificate or a different certified global upper-envelope method addresses the unresolved pair; reusing already completed local images alone is insufficient.",
+      "claims": [
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908"
+      ],
+      "sources": [
+        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
+        "elliptic-curves/cas/refine_det1092_rr_pair_order.sage",
+        "elliptic-curves/cas/verify_det1092_rr_global_pair.sage"
+      ],
+      "keywords": [
+        "RR",
+        "global Selmer",
+        "maximal order",
+        "binary sextic order",
+        "nfinit",
+        "nfcertify",
+        "supply versus visibility"
+      ],
+      "reviewed_claims": {
+        "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "ef3e60a89e5b3033"
+      },
+      "area": "elliptic-curves"
     }
   ]
 }

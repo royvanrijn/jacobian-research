@@ -212,6 +212,14 @@ clouds used to build these controls. Curve302's alternate subgroup is useful
 validation on that curve, not a broad transfer test. That benchmark has not
 been launched by this calculation; no parameter campaign is opened.
 
+The subsequently authorized [three-arm benchmark](HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md)
+has now completed its bounded run. Its six bounded-model arms timed out while
+rebuilding cold discriminant support and made no point calls. Post-seal exact
+target diagnostics reveal substantial finite-cancellation slack and a
+same-prime case outside the original joint formula. These are separately
+recorded implementation and pointwise-visibility boundaries; they do not
+alter this first-chart coverage certificate.
+
 ## Replay
 
 From the repository root, using an output path that does not already exist:

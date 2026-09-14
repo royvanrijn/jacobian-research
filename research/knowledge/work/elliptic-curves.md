@@ -8,19 +8,19 @@ Proposals are unscheduled. Read the full claim scope before acting; supporting c
 
 ## WORK-EC-NEXT
 
-**Test whether certified coordinate coverage improves CPU to the next direction**
+**Resolve measured preparation and height-bound slack before another model benchmark**
 
 **Disposition:** proposed. **Kind:** research. **Compute class:** none.
 
-**Next step:** The first-chart local height and minimal-model portfolio certificates pass. Freeze a model/box allocation rule before a new next-direction comparison on the retained control banks. Charge new model preparation, bounds, failed attempts, search and independent verification; include the existing cheaper factor-free arm. Require independently sourced cross-curve withheld directions before broad transfer claims. This benchmark is not launched by the bound calculation. Keep the X948 wave and targeted rank21 follow-up stopped; no automatic parameter or stalled-curve campaign.
+**Next step:** The nine-arm cold comparison is sealed and stopped: three certified baseline gains and six support-preparation timeouts before search. Twelve post-seal target coordinates reveal dominant finite-cancellation slack. A finite postprocessor now optimizes unequal boxes on the already certified three-model first chart, with an independently replayed 0.573942907264 address-proxy ratio to its best single. This supplies no measured model prices or runtime result. Review the preparation policy and pointwise slack before freezing any changed implementation and target-blind cost calibration for another complete-cost comparison. The same-prime case remains outside the original joint formula. No benchmark restart, increased allowance, production search, class-constructor or ancestry lane is scheduled. Independently sourced cross-curve targets remain necessary before transfer claims.
 
 **Completion evidence:** A declared candidate-generation route produces independently certified useful rank gains toward32. The completed history analysis and improved seed discrimination alone do not complete the rank32 goal.
 
 **Prerequisites and boundary:** The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21.
 
-Authority: [OP-EC-NEXT](../../elliptic-curves/README.md) (open); [EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907](../../elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md) (partial); [EC-X948-EIGHT-A1-ADMISSIONS-20260913](../../elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md) (proved); [EC-POINTED-HEIGHT-PORTFOLIO-20260913](../../elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) (proved).
+Authority: [OP-EC-NEXT](../../elliptic-curves/README.md) (open); [EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907](../../elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md) (partial); [EC-X948-EIGHT-A1-ADMISSIONS-20260913](../../elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md) (proved); [EC-POINTED-HEIGHT-PORTFOLIO-20260913](../../elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) (proved); [EC-HEIGHT-MODEL-ACCESSIBILITY-20260913](../../elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md) (proved); [EC-HEIGHT-PORTFOLIO-COST-20260914](../../elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md) (proved).
 
-Sources: [README.md](../../elliptic-curves/README.md); [DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md](../../elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md); [SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md](../../elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md); [X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md](../../elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md); [POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md](../../elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md).
+Sources: [README.md](../../elliptic-curves/README.md); [DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md](../../elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md); [SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md](../../elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md); [X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md](../../elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md); [POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md](../../elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md); [HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md](../../elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md); [COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md](../../elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md).
 
 Inherited checklist items: `LEGACY-20260904-556`. Full wording: `research.py show LEGACY-ID`.
 
@@ -78,6 +78,22 @@ Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archi
 
 Inherited checklist items: `LEGACY-20260904-556`. Full wording: `research.py show LEGACY-ID`.
 
+## WORK-EC-RR-TWO-CASE-GLOBAL-SELMER
+
+**Complete the global Selmer groups on the frozen RR control pair**
+
+**Disposition:** proposed. **Kind:** research. **Compute class:** new-compute.
+
+**Next step:** Start at the unresolved global order/support gate on exactly cases09 and08. Reuse the retained curve maps, verified integral orders and failed certification receipts; supply certified maximal orders and a complete supported squareclass space including class and unit contributions, then impose every required local condition and resolve the true/fake comparison. Do not repeat the closed local panels or call BNF on a merely supplied/partial order.
+
+**Completion evidence:** Both unconditional true Sel_2 groups and maps are certified, with dimensions and quotients by the inherited17- and known rational18-dimensional images, all necessary place coverage, and independently replayable certificates. Unknown dimensions or identical lower bounds do not complete the comparison.
+
+**Prerequisites and boundary:** The September14 two-case attempt remains incomplete: all four prime-list order certifications returned unresolved composites. These are not certified field discriminants or proofs of infeasibility. Preserve the exact pair and retrospective same-fibre selection boundary. A changed algorithm needs its own declared resource limits and certificate plan; this work item schedules no campaign.
+
+Authority: [EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908](../../elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md) (partial).
+
+Sources: [DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md](../../elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md).
+
 ## Partial-result register
 
 These are literal authority records, not newly scheduled tasks. `research.py show ID` returns the full current scope, evidence and dependencies.
@@ -85,7 +101,7 @@ These are literal authority records, not newly scheduled tasks. `research.py sho
 | ID | Result / canonical source | Recorded replacements |
 |---|---|---|
 | `EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907` | [Record-scale MW17 campaign complete:48 fibres,2352 certified boxes,zero gains](../../elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md) | — |
-| `EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908` | [RR residual Selmer comparison: exact inputs replayed, full descent not computed](../../elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md) | — |
+| `EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908` | [RR residual Selmer comparison: two-case integral orders replayed, global groups still uncomputed](../../elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md) | — |
 | `EC-FERM1` | [Fermigier--Mestre canonical family and E22 model reproduction](../../elliptic-curves/notes/FERMIGIER_REPRODUCTION.md) | — |
 | `EC-LOW-HEIGHT-MW-SUBLATTICES-20260906` | [Combination and common-cover MW sublattice searches fail the Fermigier recovery calibration](../../elliptic-curves/notes/LOW_HEIGHT_MW_SUBLATTICES_2026-09-06.md) | — |
 | `EC-MF2S13` | [Fermigier two-section component: coherent lower bound11; former rank13 certificate rejected](../../elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md) | — |

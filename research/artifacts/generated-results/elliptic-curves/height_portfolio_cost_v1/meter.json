@@ -1,0 +1,30 @@
+{
+  "scope": "Finite postprocessor and independent replay, including their process startup. Excludes development/tests and all historical model preparation. No point search.",
+  "stages": [
+    {
+      "stage": "allocation",
+      "command": [
+        "python3",
+        "research/elliptic-curves/cas/height_portfolio_cost.py",
+        "--output",
+        "research/artifacts/generated-results/elliptic-curves/height_portfolio_cost_v1/allocation.json"
+      ],
+      "exit_code": 0,
+      "process_tree_cpu_seconds": 0.025773,
+      "elapsed_seconds": 0.027440119010861963
+    },
+    {
+      "stage": "independent-replay",
+      "command": [
+        "sage",
+        "-python",
+        "research/elliptic-curves/cas/verify_height_portfolio_cost.py",
+        "--output",
+        "research/artifacts/generated-results/elliptic-curves/height_portfolio_cost_v1/verified.json"
+      ],
+      "exit_code": 0,
+      "process_tree_cpu_seconds": 0.409999,
+      "elapsed_seconds": 0.5013952410081401
+    }
+  ]
+}

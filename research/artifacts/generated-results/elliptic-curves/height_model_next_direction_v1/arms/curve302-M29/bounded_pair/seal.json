@@ -1,0 +1,11 @@
+{
+  "allowance_seconds": 300,
+  "arm": "bounded_pair",
+  "case": "curve302-M29",
+  "cpu_seconds": 32.79549942099999,
+  "folder": "runs/curve302-M29/bounded_pair",
+  "status": "COLD_SUPPORT_UNRESOLVED",
+  "success": false,
+  "verified": true,
+  "wall_seconds": 34.00728992302902
+}

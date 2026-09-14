@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/elliptic-curves/cas/lean_preconditioned_map_worker.py",
+    "--input",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/height-model-accessibility-v2/curve302-M30/map-0062-preconditioned_full/input.json",
+    "--output",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/height-model-accessibility-v2/curve302-M30/map-0062-preconditioned_full/result.json"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 1073741824,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 5
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/height-model-accessibility-v2/curve302-M30/map-0062-preconditioned_full/worker.log",
+  "log_sha256": "be0cf8a843e9d63eb05ccb3ab0f62b6b05d9635c6694ff0b4c7f748f7ed041a4",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 35971072,
+  "pid": 351609,
+  "returncode": 0,
+  "rss_limit_bytes": 1073741824,
+  "start_token": "37209868",
+  "termination_signal": null,
+  "timeout_seconds": 5,
+  "wall_seconds": 0.17848873900948092,
+  "worker_result": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/height-model-accessibility-v2/curve302-M30/map-0062-preconditioned_full/result.json",
+  "worker_result_sha256": "733e5e691bc9a6636f80db52433a93cfdcd50e989e94673511e1db179505a661"
+}

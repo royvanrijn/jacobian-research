@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-09-14T06:02:33.472696+00:00",
+  "scope": "Finite postprocessing of the already certified first Curve302 M27 chart. No new models, bounds, factorization, target coordinates or point searches.",
+  "state_table": {
+    "path": "artifacts/generated-results/elliptic-curves/pointed_height_bounds_first_chart_v1/portfolio-verified.json",
+    "sha256": "92b194067435a97b83d3cc5ef47478cd47c3d8735cbcae7e1e009b73e4bd5f38"
+  },
+  "model_order": [
+    "preconditioned_full",
+    "minimal-neighbour-p5-r1",
+    "minimal-neighbour-p7-r0"
+  ],
+  "height_target": {
+    "rule": "same certified range as best single at reference box",
+    "reference_height": 125000,
+    "selection": "Reuse the retained reference exposure; no target point sets the height limit."
+  },
+  "cost_model": {
+    "units": "H_squared_address_proxy",
+    "common": "0",
+    "activation": [
+      "0",
+      "0",
+      "0"
+    ],
+    "per_H_squared": [
+      "1",
+      "1",
+      "1"
+    ],
+    "calibration": null,
+    "meaning": "Equal address prices, zero added activation charge in this proxy. These zeros do not measure preparation cost. No complete-cost or CPU estimate is made."
+  },
+  "allocation_node_cap": 125,
+  "independent_assignment_cap": 125,
+  "tie_break": "objective, active model count, lexicographic height vector",
+  "source_lock": {
+    "elliptic-curves/cas/height_portfolio_cost.py": "1d428ec24916ba56925fa34255c019da9c733b45441e3a4368cbee4478e40b9c",
+    "elliptic-curves/cas/verify_height_portfolio_cost.py": "4c3e7d3df871803f37316b3de32f1c6610de5f1f26488c7718426e6b9b1800a1",
+    "elliptic-curves/tests/test_height_portfolio_cost.py": "2daeef2a9c3441349c08769daac939f0ad0016351a5331feb1d46c1937c839cd",
+    "elliptic-curves/cas/verify_pointed_height_portfolio.py": "fc82ec609c3262b21d144433bedef7e20af0e33f43a844951a55c37e480718a9",
+    "elliptic-curves/cas/verify_pointed_height_bounds.py": "f5f2495bfeef0ab1cc81767b88f192316597bdd979ac5332712add68f0a1c4b2",
+    "elliptic-curves/cas/verify_pointed_minimal_neighbours.py": "60f63758f18f65795d996fa6c94731aef910055691ea5f1474e92dc02baac2ef"
+  },
+  "boundary": "Optimal only over this certified sufficient-state table and supplied monotone cost model. The selected boxes guarantee coordinate coverage when completely enumerated; they need not contain the old boxes or a new independent point. The displayed costs exclude preparation and are not CPU or recovery probabilities. No change to the sealed three-arm benchmark."
+}

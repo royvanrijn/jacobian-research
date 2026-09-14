@@ -1,0 +1,13 @@
+{"status": "PASS_EQUATION_INPUT", "coefficient_bits": 3294, "stage": "input", "elapsed_seconds": 0.00354508199961856}
+START model_minimization_at_trial_primes
+{"status": "PASS_EXACT_MODEL_MAP", "coefficient_bits": 3307, "stage": "model", "elapsed_seconds": 0.010676245030481368}
+START partial_order_and_generator_reduction
+  ***   Warning: nonmonic polynomial. Result of the form [nf,c].
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage", line 179, in <module>
+    run_case(args.case)
+    ~~~~~~~~^^^^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/probe_det1092_rr_global_pair.sage", line 145, in run_case
+    order_disc = ZZ(nf.nf_get_disc())
+                    ^^^^^^^^^^^^^^
+AttributeError: 'cypari2.gen.Gen' object has no attribute 'nf_get_disc'

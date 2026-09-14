@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "arm": "GENERIC_SOURCE_ONLY_COHORT",
+      "case_index": 8,
+      "prepared_case": "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/case-08.json",
+      "prepared_case_sha256": "26f2d8bf608a2ea12e4b891957d13ba09111be3a67b9779173e78b18071b34bc",
+      "worker_input": "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/input-a1238e39e035a9c53493.json",
+      "worker_input_sha256": "8d06f8a7c277c349783c06fadd7c1b6162df211f8d888982cec7537aae834fa9"
+    },
+    {
+      "arm": "RETROSPECTIVE_CALIBRATION",
+      "case_index": 9,
+      "prepared_case": "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/case-09.json",
+      "prepared_case_sha256": "a7e0e505f80003c261e196580e549289e8f3f8cef280f41a678579fc9fcdf4e1",
+      "worker_input": "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/input-8938b5ceb026a2de3d47.json",
+      "worker_input_sha256": "498effc63f9fdda0d8e6cf4a6cb1b0726ca6b01dc925a68aea367afe5cafd639"
+    }
+  ],
+  "completion_gate": "Only nfcertify=[] certifies the maximal order. Full Selmer additionally requires complete supported squareclasses, certified class/unit contributions, all necessary local maps, and the true/fake comparison. This probe does not implement those later steps.",
+  "limits": {
+    "cases": 2,
+    "class_group_runs_in_this_probe": 0,
+    "pari_stack_bytes": 536870912,
+    "point_searches": 0,
+    "remote_arithmetic": 0,
+    "rss_bytes": 2147483648,
+    "trial_prime_bound": 1000,
+    "wall_seconds_per_case": 300
+  },
+  "question": "Compare complete global Sel_2(J), then quotient by the inherited rank17 and known rank18 rational images.",
+  "schema": "det1092.rr.global-pair-prerequisites.v1",
+  "selection": "Exactly the historical first-unlock calibration and the source-only section0 control on the same Curve302 fibre; prior cases09 and08. Selection is retrospective.",
+  "source_sha256": "2fe2f9da1e699e362ea70fc01a88dcc5ce930c14b9a54c7325158d94c44eed62",
+  "stages": [
+    "exact_equation_replay",
+    "model_minimization_at_trial_primes",
+    "partial_order_and_generator_reduction",
+    "maximal_order_certification"
+  ]
+}

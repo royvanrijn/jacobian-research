@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "wall_seconds": 4.577168795047328,
+  "process_tree_cpu_seconds": 4.449582472,
+  "remaining_original_diagnostic_allowance_seconds": 294.5804196280078,
+  "point_search_calls": 0
+}

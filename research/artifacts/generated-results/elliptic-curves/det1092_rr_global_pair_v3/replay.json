@@ -1,0 +1,83 @@
+{
+  "boundary": "No maximal-order, class-group, unit-completeness, full supported-squareclass or global Selmer certificate. Recorded backend failures do not prove infeasibility or equality of Selmer dimensions.",
+  "cases": [
+    {
+      "Selmer_dimension": null,
+      "arm": "GENERIC_SOURCE_ONLY_COHORT",
+      "case_index": 8,
+      "irreducibility_prime": 79,
+      "residual_mod_inherited_dimension": null,
+      "residual_mod_known_rational_dimension": null,
+      "retained_nfcertify_unresolved_bits": [
+        [
+          116060
+        ],
+        [
+          107830
+        ]
+      ],
+      "verified_order_discriminant_bits": [
+        116063,
+        37559,
+        107833
+      ]
+    },
+    {
+      "Selmer_dimension": null,
+      "arm": "RETROSPECTIVE_CALIBRATION",
+      "case_index": 9,
+      "irreducibility_prime": 83,
+      "residual_mod_inherited_dimension": null,
+      "residual_mod_known_rational_dimension": null,
+      "retained_nfcertify_unresolved_bits": [
+        [
+          96808
+        ],
+        [
+          26191
+        ]
+      ],
+      "verified_order_discriminant_bits": [
+        96830,
+        31229,
+        26213
+      ]
+    }
+  ],
+  "checker_sha256": "cc136a26fb8f10076a130a56595a541b4e3a442460142e6a6e55c4de3b3941c7",
+  "global_comparison_status": "NOT_COMPUTED",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/case-08.json": "26f2d8bf608a2ea12e4b891957d13ba09111be3a67b9779173e78b18071b34bc",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/case-09.json": "a7e0e505f80003c261e196580e549289e8f3f8cef280f41a678579fc9fcdf4e1",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/input-8938b5ceb026a2de3d47.json": "498effc63f9fdda0d8e6cf4a6cb1b0726ca6b01dc925a68aea367afe5cafd639",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_full_selmer_inputs_v1/input-a1238e39e035a9c53493.json": "8d06f8a7c277c349783c06fadd7c1b6162df211f8d888982cec7537aae834fa9",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v1/case-08.log": "6808e8f56278ae65a2f4879c085a91d005ee1134a865d347e836d773cbec1dcd",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v1/case-09.log": "09f9ac887cedb253079c0b2dc749bd9d4ed38bd0d6c6be428de14bd8e4a99b93",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08-certification.json": "d7c38ddd9bc2dbbebad7a45220c38d6f4746a7e0b8cd2c5b4acf942f5919b563",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08-input.json": "3243e655a807b03162f4b1256053393453f6b2bd00c9f6279cdd641d6edd3287",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08-model.json": "72e9691a01649e79228b7b1bd152081cc9c1523d7c703810553ad71a7d061c87",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08-order.json": "367edea632ac1ba6bca9b84cf5de65ac89b60fd85c7feab0e4f533a2fca21996",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-08.log": "65d1f47eefd77baa3b3a3f05a2eb24b7e198417e9da717e4fce88c917c76eec0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09-certification.json": "31dadc0f00a51026fd0a1a0121d904f5f641cad67974b43382d1914019eb2a09",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09-input.json": "cb2d2d929793a32666fd50287ed4bbdeb2d81cb2ca482e1e13a87daab0dee523",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09-model.json": "8dceba4b46d8245e8d75a2a30db883ec265e36fb8435ff6356dc1090bfe0a259",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09-order.json": "9383b78fe6b409244e262173e5e96520334df6f12d2343f8d32a7a3641ac3ba6",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/case-09.log": "48dec61bf61c8ff19984f9dc4b981f0e930dd80a477a8eba08d360f08b6296e0",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v2/protocol.json": "8e11c2efc0cb8c4bcd40eb8c406ddafba0905862e1f5fa7ea2dddae7fb817768",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08-binary-order.json": "48ae9ac55fed152f7d31f47aec9d2320c9fb14c440cec81676e197d3eac9e567",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08-certification.json": "92d72bdf6117203c93260270f9d8f3e21a2767fdb8c818ecb7b0bcf9e2f2912e",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08-order.json": "7ae03786eeaf8ea71d77ae341c09b74829dad6889d7d4d73d5b205546827399b",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08-reduced-generator.json": "b10e21db0ba2bf4c944c855dd703de48128f43588ebc96d7a157ec66c6b72528",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-08.log": "d9f54d2f22adc02510e2f17e207eb8c75b31f800ebd5eebb6f5520e306949f68",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09-binary-order.json": "9d57c4c3b90beae5d1282b22d72322b6e955f01ba4486b6e6b943953aa6eeb31",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09-certification.json": "592cbbdab830ae68d550abba207b26a74a043a891048a8236f6b5f16c7059bb8",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09-order.json": "54f8830c45aa8cbc2dccd95d6a8ba3748338429d09c519958b1bfda84f08f9eb",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09-reduced-generator.json": "da5f2a82c18adc74a7df5317b2067622748e33a0641e0418fba407203a605542",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/case-09.log": "58c8bc58470167346e1de8b934b4e07194a987ef19cbfeb20ed49673b74aca73",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/execution.json": "93ea511aa3702dfcc3f922ca5576ca536bbce576133e184aa91a914b0310382a",
+    "artifacts/generated-results/elliptic-curves/det1092_rr_global_pair_v3/protocol.json": "303d643b7377813ba7adb5fae12df72bd5fa3516c56c2727e8c0842a93819f0d",
+    "elliptic-curves/cas/probe_det1092_rr_global_pair.sage": "2fe2f9da1e699e362ea70fc01a88dcc5ce930c14b9a54c7325158d94c44eed62",
+    "elliptic-curves/cas/refine_det1092_rr_pair_order.sage": "a18e087eb769fad37bd394b7f3ba7cbc78e84ed86bbd3e894400b4af5bbaf741"
+  },
+  "status": "PASS_EXACT_MODELS_FIELDS_AND_INTEGRAL_ORDERS_ONLY"
+}

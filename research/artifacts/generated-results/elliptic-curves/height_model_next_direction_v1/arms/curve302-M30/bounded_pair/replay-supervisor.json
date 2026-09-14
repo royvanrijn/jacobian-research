@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/home/royvanrijn/.local/bin/sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runtime/elliptic-curves/cas/height_model_benchmark.py",
+    "replay",
+    "--folder",
+    "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runs/curve302-M30/bounded_pair"
+  ],
+  "failure_reason": null,
+  "limits": {
+    "address_space_bytes": null,
+    "cgroup": null,
+    "pari_stack_bytes": 256000000,
+    "poll_seconds": 0.05,
+    "rss_bytes": 3221225472,
+    "terminate_grace_seconds": 1.0,
+    "wall_seconds": 267.53688782895915
+  },
+  "log": "/home/royvanrijn/src/jacobian-research/research/artifacts/local/elliptic-curves/height-model-next-direction-v1/runs/curve302-M30/bounded_pair/replay.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "outcome": "completed",
+  "peak_observed_rss_bytes": 241733632,
+  "pid": 350560,
+  "returncode": 0,
+  "rss_limit_bytes": 3221225472,
+  "start_token": "37174410",
+  "termination_signal": null,
+  "timeout_seconds": 267.53688782895915,
+  "wall_seconds": 1.4882811669958755,
+  "worker_result": null,
+  "worker_result_sha256": null
+}

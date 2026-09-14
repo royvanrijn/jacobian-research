@@ -1,0 +1,8 @@
+{
+  "status": "backend_failure",
+  "returncode": 1,
+  "wall_seconds": 3.3930408469750546,
+  "process_tree_cpu_seconds": 3.2559353339999997,
+  "remaining_original_diagnostic_allowance_seconds": 297.97346047498286,
+  "point_search_calls": 0
+}

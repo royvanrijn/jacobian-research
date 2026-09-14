@@ -1,0 +1,620 @@
+{
+  "arm": "v3_factor_free",
+  "initial_rank": 30,
+  "input_sha256": "e38fd172ca1fd7a8f21c1c116b9ff5a62dec8ea7e680ec806a2b811e9d5821b2",
+  "rows": [
+    {
+      "admissions": {},
+      "centre": 0,
+      "chart": "chart-0000.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "1b9828efd49d7964f98ed126ee971450fe90767c9a28a9dcd50c125085d1c9ef",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 1,
+      "chart": "chart-0001.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "a1f751356814527b6e04ae3fd35ec386293599c8ed62ef7c075b00e01f29c760",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 8
+      },
+      "centre": 2,
+      "chart": "chart-0002.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "1ee40e381d6c36fe09389fd1cd5241c68b96d1cbf1797c6077c4e77c8be9f8b4",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 8
+      },
+      "centre": 3,
+      "chart": "chart-0003.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "7bf67feaa0fb56159d4a19cf98632836593695cbd1aa1b87ac30137a28a1a0b6",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 4,
+      "chart": "chart-0004.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "8693fe69210bc09b2041981e0831e9f626fccd2e725e4b40df95b429a765faaa",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 5,
+      "chart": "chart-0005.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "45f4059318ff778ce3dd2043f7872478d3efea164a5e4895e92ee58217cf372a",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 6,
+      "chart": "chart-0006.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "b77fec92646c337d6b3c7c8a870f29f737b87c2b5e42df8ffb72be2f1e5a2400",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 7,
+      "chart": "chart-0007.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "61fccbe21e7154e086dbfbdaa20e03737b652c1a61e01d2d0667bbc3db7a5e0d",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 8,
+      "chart": "chart-0008.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "55e056d074062552c2854ad5f557c749fa53bea5bccbe6820870fa0aa90a40c5",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 9,
+      "chart": "chart-0009.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "628740e1a62fdc36ea4eb56569b7b707ad098f1070bcdb957ee8077a77a4ff19",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 8
+      },
+      "centre": 10,
+      "chart": "chart-0010.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "113eea1ae621ff593873d0abb1e9bb079343917736b2d31c6ebcd8e58a448b27",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 11,
+      "chart": "chart-0011.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "b3a4514d4da5a797ca605ac8222811c375efe811470b0f124a61010910c536d3",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 12,
+      "chart": "chart-0012.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "5e2dd21982e2206fbe5b30d6b3c9355bc2619e01a07a487c58f2a0b60ed16a23",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 2
+      },
+      "centre": 13,
+      "chart": "chart-0013.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "0c62838cdaba1f902f94848e2f46c11aab5a609b0301c48f1182ed8ce4da95c5",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 2
+      },
+      "centre": 14,
+      "chart": "chart-0014.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "7c2a9cc1a63ebeb5323ef1323025d9d1d2953f59a5ab1f07b1f76e02f088df20",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 15,
+      "chart": "chart-0015.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "3779e92a0d830f99510f549797afad2eba9fa76c68928ebbc4cd142825fcbb7f",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 16,
+      "chart": "chart-0016.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "123da2c1229991f64f25101a322069e0bfb3c3273ddd95f7412b72bfc1e2905d",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 10
+      },
+      "centre": 17,
+      "chart": "chart-0017.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "c8ba4bc943162b94a6d735acaeaa904d158b444a3f3220b296a615065580319e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 18,
+      "chart": "chart-0018.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "e71181f5d766f9cd27071e733edb49cc3d9efdb1a969dd9fefa895ea4f913d6e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 19,
+      "chart": "chart-0019.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "325b174e3f8f6c4dc2facf8f75f751ba004d12a1261481f8c93255970348be59",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 20,
+      "chart": "chart-0020.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "d091043ccc98e5c4c242a9b2a1e8d0d248997314bfdb796ff18ffb196bc4e42d",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 21,
+      "chart": "chart-0021.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "1560cc7e2e48fc3c8fed70c9cd53246cef99fb9bc8c1f479839ae5eb060ad153",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 8
+      },
+      "centre": 22,
+      "chart": "chart-0022.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "3a736623a8cc07e06b10840b6818f6e86a5933a52cbc37eaf1860159361a4582",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 2
+      },
+      "centre": 23,
+      "chart": "chart-0023.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "552d3ef420d037716988a1c05b8fec07d73ffb305574ad8d6444d4489801254d",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 4
+      },
+      "centre": 24,
+      "chart": "chart-0024.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "5ce98d1921d5d46b22c9374da5c69666d83d31d4c385aaac0ce052ed2a533c36",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "UNKNOWN_FINITE_COLUMN_IN_SPAN": 6
+      },
+      "centre": 25,
+      "chart": "chart-0025.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "22f7a16fe0fe70a2911a70cd0ec6a5d3a0520395e0c017035a808614853edf61",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 26,
+      "chart": "chart-0026.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "11774d16f855741afb43b1292cd27c836310aff34cb1270050f83907efa10ff8",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 27,
+      "chart": "chart-0027.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "6c3709155716d3b79640944cb7d3daea6d1c858a850cd8deb5443efb2a45359c",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 28,
+      "chart": "chart-0028.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "24273cc02e22875d411c5ac40f256945da596cff89abf89c1917394cbb186649",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 29,
+      "chart": "chart-0029.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "d2f349fba6fd50d5a43eaeb102db3dd4346a9e0df84dc23bca287292fdef1e31",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 30,
+      "chart": "chart-0030.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "e7db1728adffbb212f27a6e792c3d01be145e08e96116a0392f1f551a5678945",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 31,
+      "chart": "chart-0031.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "ba9037266f24d70f3735e73e174d6a623c3d61e9384d4f0530e92d0fce8f526c",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 32,
+      "chart": "chart-0032.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "bbf4b5c2c9bd32d239de288b83e746686ad4f4a8d1e7182d2566d07a48013690",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 33,
+      "chart": "chart-0033.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "8617106392c9ce83d9aa238af9fa14198c11fc219af4e004d887ce9f4fd7e253",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 34,
+      "chart": "chart-0034.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "de0e92329b29cd1ccb0c3d7b14bfeb15aadb82f6d39f80ee3dcf93286fc924c8",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 35,
+      "chart": "chart-0035.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "dfce1b85d316f896ff4aeeb19ab6c6a68832f78bf425a37bdf99bbeb3f946896",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 36,
+      "chart": "chart-0036.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "4ae8132526f98a68fa489e58bbcc2b8c179c7a6c8c12fcde74203f1f8787860b",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 37,
+      "chart": "chart-0037.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "684917de8642249e8005314ad7074611f4a290a8ebfb55307e627272ffd585d5",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 38,
+      "chart": "chart-0038.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "b226e2fb0fc58178908d48271278882518a0fa913ca0416390eec7437c5c1e45",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 39,
+      "chart": "chart-0039.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "95e27010b481ba93af9a6b96b940a560ef6bf3e2a95d75e87a6366e26cbd6c06",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 40,
+      "chart": "chart-0040.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "0d6b10bd4509213a703fde289ea07975c66181879bd10de418a44d241ee6d70c",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 41,
+      "chart": "chart-0041.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "550c9a5f4dc3f6fd314820eb852638ea3ffa30d4816b7f63e7d89501e3b5e960",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 42,
+      "chart": "chart-0042.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "ad3373ca349ae9aaba14b1fc921615d1fb5b50a0d566503b00dce40c55e9b52e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 43,
+      "chart": "chart-0043.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "db6e408951874f9e5c2dae4822f65f1a65fd3fe15f2f649036a334c0fe06a6bd",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 44,
+      "chart": "chart-0044.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "c14663a139577de599d84a83ff1456115ef3e284a771ff857819da8c233aedb7",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 45,
+      "chart": "chart-0045.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "67dc116650ecbc0dad3f3eb9ff1ba6f255c9ab696c3ba14899941fbc8c6a9d08",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 46,
+      "chart": "chart-0046.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "b806e58376ef7f52350766268de1d114d8fcb950bfd4dba195b72f92b4efde61",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 47,
+      "chart": "chart-0047.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "19d2a0bec927236d6e1b2401e6dfee923f26792f12012b26edc94b71a0b5841e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 48,
+      "chart": "chart-0048.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "2f1a5c69eebf13afe41a32b120baf4fb699b74f98b7f83ea25f80f59bf73c04e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 49,
+      "chart": "chart-0049.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "62a770d397aad268293841f4e348bb8ec53e0b01f45942a64f74394c92c433ed",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 50,
+      "chart": "chart-0050.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "3e8b622e873b71675159fe37af42e8f4a21bd7a74df6ea72d4f91324e3397d81",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 51,
+      "chart": "chart-0051.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "864b72c80fc6af10786ddc2e7ac74a7f4e2e0fca818567e0ceb8136adac81059",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 52,
+      "chart": "chart-0052.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "25e4878723ff426cb282bad6459197ddcd7067e264a6ebed4db14bbd2de7176e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 53,
+      "chart": "chart-0053.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "dfe88db069ed9b1fdf3e8a86084cb3069db7615f80563e8a8aff2c901840b2d1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 54,
+      "chart": "chart-0054.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "c38fab9cf69393a535a0299727b20719329e3a53cf7b1f34fd4563dbad44621f",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 55,
+      "chart": "chart-0055.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "6afa37e59cb9ea7dc182e94ab989b97d99f3711f3eebbd55f2f46075c4ef2f9c",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 56,
+      "chart": "chart-0056.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "f15b0261bbe5c4e6a582bc2ad5e092b95597a1f4af3cc9c01007e3032234465b",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 57,
+      "chart": "chart-0057.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "ee2d860efd80af5bfa5267a5d73336959d82b1a9c10e8494527c09dfc5376f1e",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 58,
+      "chart": "chart-0058.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "e3eedd237a69a9ae5d03501da8fad3fd2613759cdee7ea48b9613168f8a61b4b",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 59,
+      "chart": "chart-0059.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "5929ae28039258c5ad01c607ef323218ee4764d4eaefd1247879176173411522",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 60,
+      "chart": "chart-0060.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "12407311cb42460c8702b07a4698ecd8e9bcef61417fafdeee2d14e944a90d09",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {},
+      "centre": 61,
+      "chart": "chart-0061.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "09a077e9b57439ae04589338ebc6fe7a554001f10acae47fd17a3d2371d42094",
+      "status": "bounded_search_complete"
+    },
+    {
+      "admissions": {
+        "INDEPENDENT_FINITE_COLUMN": 1
+      },
+      "centre": 62,
+      "chart": "chart-0062.json",
+      "height": 125000,
+      "model": "factor_free",
+      "sha256": "66e8ea2e3ea7ed629126311fd94170073683eedfacfff946182f657dd814fa02",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "status": "GAIN_PENDING_INDEPENDENT_REPLAY",
+  "worker_wall_seconds": 61.09153806098038
+}

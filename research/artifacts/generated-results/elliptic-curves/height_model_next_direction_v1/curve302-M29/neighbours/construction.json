@@ -1,0 +1,15 @@
+{
+  "attempts": [
+    {
+      "prime": 5,
+      "residue": 2,
+      "status": "RETAINED_DISTINCT_NEIGHBOUR"
+    },
+    {
+      "prime": 7,
+      "residue": 2,
+      "status": "RETAINED_DISTINCT_NEIGHBOUR"
+    }
+  ],
+  "cpu_seconds": 0.006839872999999663
+}

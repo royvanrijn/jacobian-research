@@ -1,0 +1,18 @@
+{
+  "status": "PASS_FRACTION_MINIMALITY_AND_TRANSPORT_REPLAY",
+  "models": [
+    {
+      "file": "neighbour-0-input.json",
+      "prime": 5,
+      "residue": 4,
+      "sha256": "b1ce9a21c569eb69a79ec7af74c64640c5e5fc8358c1780e1718d06044f06ee5"
+    },
+    {
+      "file": "neighbour-1-input.json",
+      "prime": 11,
+      "residue": 6,
+      "sha256": "004abe1da3f9e6f91acadb7d8338ae29eaf916a1e6a4ce1cc87043ef23c65ed2"
+    }
+  ],
+  "boundary": "Global minimality follows from integral equations with the same discriminant as the verified minimal elliptic model. Different signed-permutation box keys do not prove different global GL2(Z) orbits."
+}

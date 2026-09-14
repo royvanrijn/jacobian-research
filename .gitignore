@@ -90,6 +90,7 @@ research/elkies-k3/results/**/*.sqlite
 /research/artifacts/generated-results/elkies-k3-r17-inherited-halving-nodes-v1/traces/
 !/research/artifacts/generated-results/elkies-k3-r17-one-node-complete-pairs-v1/
 !/research/artifacts/generated-results/elkies-k3-r17-mestre-shared-twist-v1/
+!/research/artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/
 !/research/artifacts/generated-results/elkies-k3-r17-shared-ordinate-tangents-v1/
 !/research/artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/
 !/research/artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/
