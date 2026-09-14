@@ -1,0 +1,143 @@
+{
+  "A": [
+    "2",
+    "3",
+    "0",
+    "0",
+    "5",
+    "2",
+    "0",
+    "0",
+    "2"
+  ],
+  "B": [
+    "1",
+    "1",
+    "0",
+    "0",
+    "3",
+    "2",
+    "0",
+    "0",
+    "3",
+    "1",
+    "0",
+    "0",
+    "1"
+  ],
+  "D": [
+    "1",
+    "1",
+    "0",
+    "0",
+    "1"
+  ],
+  "branch_degree": 4,
+  "d": [
+    "1",
+    "1",
+    "0",
+    "0",
+    "1"
+  ],
+  "height_determinant": 48,
+  "height_matrix": [
+    [
+      8,
+      -4
+    ],
+    [
+      -4,
+      8
+    ]
+  ],
+  "image_arithmetic_genus": 5,
+  "inherited_parent_rank": "UNKNOWN",
+  "is_a_retained_mw17_parent": false,
+  "name": "four-nodes-genus-one",
+  "new_directions_modulo_full_inherited_group": 2,
+  "nodes_per_image": 4,
+  "normalization_genus": 1,
+  "points_and_sum": [
+    {
+      "x": [],
+      "y_over_w": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "x": [
+        "1"
+      ],
+      "y_over_w": [
+        "2",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "x": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "y_over_w": [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "-2"
+      ]
+    }
+  ],
+  "rational_base_certificate": {
+    "a_invariants": [
+      0,
+      0,
+      0,
+      -4,
+      1
+    ],
+    "forward": [
+      "X=2*(w+t^2)",
+      "Y=2*t*X+1"
+    ],
+    "inverse": [
+      "t=(Y-1)/(2*X)",
+      "w=X/2-t^2"
+    ],
+    "nontorsion_proof": "3P has a nonintegral x-coordinate on the integral short model; Lutz-Nagell.",
+    "point": [
+      "0",
+      "1"
+    ],
+    "three_times_point": [
+      "-7/4",
+      "13/8"
+    ],
+    "twice_point": [
+      "4",
+      "7"
+    ],
+    "type": "elliptic"
+  },
+  "s": [
+    "1",
+    "0",
+    "0",
+    "0",
+    "1"
+  ],
+  "smoothness_prime": 1009,
+  "square_factor": [
+    "1"
+  ]
+}

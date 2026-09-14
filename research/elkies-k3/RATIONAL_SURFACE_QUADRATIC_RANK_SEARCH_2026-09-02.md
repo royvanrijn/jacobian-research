@@ -78,9 +78,12 @@ A one-dimensional non-isotrivial K3 family cannot have generic Picard rank
 20.  Thus a generic MW-rank-17 K3 must be rootless with `rho=19`, as in the
 published R17/Golay target.  A rational-surface base-change presentation can
 instead store most of the same divisor budget in reducible fibres and display
-only one or two sections.  This is exactly the Golay/NS0031 source pattern:
+only one or two sections. This is the geometric Golay/NS0031 source pattern:
 the low-MW source fibration is a construction chart, while a same-surface
-neighbour can expose MW rank 17.
+neighbour can expose geometric MW rank 17. Rational realization requires a
+separate marking theorem; the
+[corrected full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+excludes a full rational rank-19 NS0031 marking.
 
 For a rational elliptic surface with root rank `R` and MW rank `8-R`, an
 unramified quadratic pullback has the visible lower bound
@@ -309,8 +312,9 @@ The prior exact audit is retained unchanged in
   surface under `u=t^2/(t-1)`.  One marked pair gives a nonzero invariant
   trace and a nonzero anti-invariant direction.  This trace calculation is
   finite-field; a later certificate proves a one-parameter formally smooth
-  `ZZ_7` marked branch, but no `QQ` source equation or full MW decomposition
-  is claimed here.
+  `ZZ_7` marked branch. These remain local controls after the corrected
+  full stable proof excluded full rational rank-19 NS0031 markings. No full
+  `GF(7)(t)` MW decomposition is claimed here.
 
 These controls validate the character split and repeated-fibre diagnostics.
 The new `E6+A1` family differs structurally: it is constructed over `QQ` from
@@ -361,3 +365,5 @@ global maximum for the rank sum, or prove that every rational `k`
 specialization has exact rank two.  Specializations must be minimized and
 their points and independence certified again before arithmetic rank claims
 are made.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

@@ -391,7 +391,7 @@ section directly.
 | Incremental CRT height makes a finite beam a completeness sieve | Shortest rational-representative height is nonmonotone: an exact four-prime width-one run keeps a height-1409 endpoint while a pruned branch completes to `48/53`, of height 53. | The exact EC regression and bounded q12/orbit5867 beam outputs remain valid candidate generators. | Label beam output heuristic, retain omitted states as untested, and require a full Cartesian product or proved lossless reduction for exhaustion. |
 | Maximum bridge minimum is a safe or useful hard sieve | The retrospective fixed-core rule retained only four of five rootless classes. On an untouched determinant-78 shell all 277 candidates received the same score, and computing it was slower than direct root classification. | The benchmark, held-out negative control, and fixed-core theta-convolution certificates remain exact. | Use bridge minimum only as descriptive data. Reject only with a proved monotone root-budget bound; use exact theta convolution only after the complete fixed-core bridge universe is known. |
 | A geometric NS0024 MW17 route can close the arithmetic `QQ` milestone | A full rational NS0024 marking would force a forbidden rational non-CM degree-475 Fricke-quotient point. | Exact geometric frames, modular source work, and physical corridors remain valid over algebraic closures or larger fields. | Park arithmetic NS0024 over `QQ`; require the Galois/rational-marking gate before equation compilation. |
-| A smooth modular point or long Hensel lift supplies a rational source | NS0031 model 157 has a formal `ZZ_7` branch, while its full rational marking remains UNKNOWN after correction of the former period-group argument. | The GF(7), finite-lift, formal-smoothness, and five-edge corridor certificates are retained as local/geometric controls. | Reuse the completed local controls; determine the full stable period group and rational marking before another source campaign. |
+| A smooth modular point or long Hensel lift supplies a rational source | NS0031 model 157 has a formal `ZZ_7` branch; the corrected full stable quotient proof separately excludes its full rational rank-19 marking. | The GF(7), finite-lift, formal-smoothness, and five-edge corridor certificates are retained as local/geometric controls. | Reuse the completed local controls and full stable arithmetic proof; the NS0031 rational source route is closed. |
 | The cheapest native bisection prefix can be used as an exhaustive sieve | The 1,024 native alternate-Q80 covers were selected by cost and do not represent all native classes. | Exact priority keys and the full inherited/smooth-character domains. | Keep ranked prefixes and complete enumerations separately typed; never discard outside-prefix candidates mathematically. |
 | Norm-eight inversion or a fixed regular norm-twelve family exhausts every zero-Tate-class carrier | Exact quotient analysis exposed 49 norm-twelve residual traces in addition to the 63,917 norm-eight minima; the full norm-twelve pencils also move their finite zero contact. | The original inversion and 833 regular-family comparisons remain valid within their stated charts. | Use the full Riemann--Roch pencil, including the moving pole, before claiming carrier exhaustion; see [the moving-pencil correction](Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md). |
 | Successful chunks or aggregate counts imply complete shard coverage | Independent chunks can omit intervals, exceptional traces, malformed outputs, or an entire named ambient while preserving plausible totals. | All raw singular-search chunks, prescribed-root shards, and exact exceptions are retained. | Require half-open ranges or an exact expected key set, current source hashes, gap/overlap checks, fail-closed parsing, and one merged coverage certificate. |
@@ -431,8 +431,8 @@ bound.
 
 The first new construction milestone is a planner-found arithmetic MW17
 fibration on a different NS.  Arithmetic NS0024 over `QQ` is closed
-negatively. NS0031 is `UNKNOWN` after the
-[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+negatively. NS0031 is excluded by the
+[corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 Rerank the remaining frames through the rational-marking
 arithmetic gate. Determinant `720` is the strongest lattice/corridor control,
 but its known rational `3A5` point saturates to determinant `20` and is not a
@@ -481,3 +481,5 @@ For every new attack, record in the script header and in this ledger:
 
 That prevents a useful negative result from becoming an unexplained filename and prevents
 a bounded search from being retold later as an obstruction theorem.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

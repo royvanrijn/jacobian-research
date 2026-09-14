@@ -1,0 +1,11 @@
+{
+  "anchors": 3816,
+  "cpu_seconds": 341.994149351,
+  "excluded_groups": 54,
+  "fit_sha256": "d4986b134677dfccf02ca786b0812f6b4f7a8e73ab0c41d47cbdf534197b2cc3",
+  "leaves": 14817426,
+  "models": 11417,
+  "source_sha256": "b765c156f1afa28e21b2a27776066ee4f88c335a8f1c8726948b00c97ce7c31f",
+  "status": "PASS_TRAINING_FEATURES_PARTITIONS_AND_EXCLUSION",
+  "training_rows": 35926
+}

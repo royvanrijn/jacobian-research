@@ -64,9 +64,9 @@ completed-core route remain valid geometric investigations, but neither can
 produce a full rational NS0024 marking over `QQ`. The live different-NS
 objective is in
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
-Its former replacement `NS0031` remains `UNKNOWN` over `QQ` after the
-period-group correction in
-[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+Its former replacement `NS0031` is now excluded over `QQ` by the
+[corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md),
+which includes the previously missing reflection.
 
 ## References
 
@@ -83,3 +83,5 @@ period-group correction in
 python3 elkies-k3/scripts/certify_ns0024_direct_qq_inose_obstruction.py
 python3 elkies-k3/scripts/certify_ns0024_direct_qq_inose_obstruction.py --check
 ```
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

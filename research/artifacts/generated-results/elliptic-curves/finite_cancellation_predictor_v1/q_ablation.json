@@ -1,0 +1,59 @@
+{
+  "boundary": "Added after the primary outcome to distinguish q information from explicit gcd-expectation information. No hyperparameter search, CPU-policy changes, new gate or new search. These are exploratory attribution results.",
+  "features": [
+    "real_logS",
+    "coefficient_bits",
+    "log_soluble_mass",
+    "unknown_mass_sum",
+    "missing_local_expectations"
+  ],
+  "primary_analysis_sha256": "66806d56cebaef1be5345f6c9f7033e867e81e824d09cb52bcb96f6e1b0c3d47",
+  "results": {
+    "five_j_folds": {
+      "full_finite_vs_real_plus_q": {
+        "ci95": [
+          0.9545342489323116,
+          0.9845217310914552
+        ],
+        "estimate": 0.9692230540273651,
+        "groups": 1960,
+        "scope": "Equal weight per j group;2000 deterministic cluster bootstrap replicates"
+      },
+      "identical_model_choices": 11221,
+      "real_plus_q_vs_factor_free": {
+        "ci95": [
+          0.1449588723792632,
+          0.15786727543949525
+        ],
+        "estimate": 0.15144187050790583,
+        "groups": 1960,
+        "scope": "Equal weight per j group;2000 deterministic cluster bootstrap replicates"
+      },
+      "units": 12542
+    },
+    "leave_family_out": {
+      "full_finite_vs_real_plus_q": {
+        "ci95": [
+          0.9519258590673414,
+          0.980837403339921
+        ],
+        "estimate": 0.9659992823737973,
+        "groups": 1960,
+        "scope": "Equal weight per j group;2000 deterministic cluster bootstrap replicates"
+      },
+      "identical_model_choices": 11198,
+      "real_plus_q_vs_factor_free": {
+        "ci95": [
+          0.14522562405199899,
+          0.15816336945661794
+        ],
+        "estimate": 0.15168967678668224,
+        "groups": 1960,
+        "scope": "Equal weight per j group;2000 deterministic cluster bootstrap replicates"
+      },
+      "units": 12542
+    }
+  },
+  "source_sha256": "b3463895dbf01cd3e30bba9367d6247d6f4493a86f9c4cb1b0134b7a7a5fa5f5",
+  "status": "POST_PRIMARY_ATTRIBUTION_ONLY"
+}

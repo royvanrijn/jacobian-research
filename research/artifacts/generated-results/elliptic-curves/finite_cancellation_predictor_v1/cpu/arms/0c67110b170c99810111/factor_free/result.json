@@ -1,0 +1,88 @@
+{
+  "arm": "factor_free",
+  "boundaries": "Known-curve control. Exact independence beyond input subgroup; no novelty or rank upper bound. Cached V3 centre bank reused, all per-worker costs charged.",
+  "case": "0c67110b170c99810111",
+  "charts": [
+    {
+      "cpu_after": 1.59789068,
+      "index": 0,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.282309446,
+      "index": 1,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.766423328,
+      "index": 2,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.311043785,
+      "index": 3,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.8385877619999995,
+      "index": 4,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.5198881239999995,
+      "index": 5,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.978253659999999,
+      "index": 6,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 5.604526226000001,
+      "index": 7,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 6.190479487999999,
+      "index": 8,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 6.75711161,
+      "index": 9,
+      "new_direction": true,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "cpu_seconds": 7.19604224,
+  "family": "08234",
+  "initial_rank": 18,
+  "map_and_feature_cpu_seconds": 0.06102034799999867,
+  "point_backend_cpu_seconds": 5.540853479,
+  "point_search_calls": 10,
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "rank_lower_bound": 19,
+  "status": "CERTIFIED_NEXT_DIRECTION",
+  "success": true,
+  "wall_seconds": 7.194170805043541
+}

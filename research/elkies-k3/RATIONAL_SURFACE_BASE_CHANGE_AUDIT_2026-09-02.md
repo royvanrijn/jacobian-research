@@ -168,7 +168,7 @@ is still `-20`, as already proved by the torsion and halving certificate.
 
 ## Marked NS0031 model over `GF(7)`
 
-The exact positive source precursor is model 157 in
+The exact finite-field source precursor is model 157 in
 [`../artifacts/generated-results/elkies-k3-lattice-foundry-ns0005-a1-2a7-source-ansatz-mod7-v1.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0005-a1-2a7-source-ansatz-mod7-v1.json),
 with its two marked MW2 pairs stored in
 [`../artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-a1-2a7-marking-mod7-v1.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-a1-2a7-marking-mod7-v1.json).
@@ -220,9 +220,12 @@ sigma(3P-2Q)=-(3P-2Q).
 
 Thus the pair already exposes a nonzero invariant trace and a nonzero
 anti-invariant direction.  This is the expected rational-surface/twist split
-behind an MW2 quadratic base change.  It is not yet a full MW decomposition:
-the complete `GF(7)(t)` MW group is not certified, and no characteristic-zero
-or rational NS0031 source equation has been constructed.
+behind an MW2 quadratic base change. The complete `GF(7)(t)` MW group is not
+certified here. The later
+[full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+excludes a K3 over `QQ` with full rational rank-19 NS0031 marking. This
+finite-field trace calculation and the separate formally smooth `ZZ_7`
+branch remain valid controls; neither supplies the excluded rational source.
 
 ## Complete normalized-chart census
 
@@ -280,3 +283,5 @@ change `MATH_STATUS.json`:
   [*F-theory models on K3 surfaces with various Mordell--Weil ranks*](https://arxiv.org/abs/1802.05195),
   for explicit K3 constructions by quadratic base change of rational elliptic
   surfaces and the injection of the rational-surface MW group after pullback.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

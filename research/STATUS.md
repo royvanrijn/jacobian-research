@@ -4,7 +4,7 @@
 
 [MATH_STATUS.json](MATH_STATUS.json) is the sole mathematical-status authority. This is a compact navigation view. Read a claim's full scope before using it; a proved bounded experiment does not become an unrestricted theorem.
 
-**628 claims:** 524 proved, 79 partial, 3 open, 4 parked, 16 archived, 2 falsified.
+**633 claims:** 530 proved, 78 partial, 3 open, 4 parked, 16 archived, 2 falsified.
 
 [Complete catalogue](index/README.md) · [Algorithmic lessons](knowledge/ALGORITHMS.md) · [Scoped failed routes](knowledge/FAILED_ROUTES.md) · [Replay guide](REPRODUCE.md)
 
@@ -46,8 +46,8 @@ The `artifact_hash` field pins checker source, not its generated output. Indepen
 
 | Area | Registered claims |
 |---|---:|
-| [Elliptic curves and rank jumps](index/elliptic-curves.md) | 363 |
-| [K3 constructions and lattice algorithms](index/elkies-k3.md) | 265 |
+| [Elliptic curves and rank jumps](index/elliptic-curves.md) | 366 |
+| [K3 constructions and lattice algorithms](index/elkies-k3.md) | 267 |
 
 ## Primary theorems
 

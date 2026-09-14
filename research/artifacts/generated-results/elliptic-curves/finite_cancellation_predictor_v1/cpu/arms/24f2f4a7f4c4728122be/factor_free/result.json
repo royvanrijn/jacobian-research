@@ -1,0 +1,354 @@
+{
+  "arm": "factor_free",
+  "boundaries": "Known-curve control. Exact independence beyond input subgroup; no novelty or rank upper bound. Cached V3 centre bank reused, all per-worker costs charged.",
+  "case": "24f2f4a7f4c4728122be",
+  "charts": [
+    {
+      "cpu_after": 2.063086946,
+      "index": 0,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.9327677420000002,
+      "index": 1,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.399262073,
+      "index": 2,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.153423371000001,
+      "index": 3,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.84110856,
+      "index": 4,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 5.520378043000001,
+      "index": 5,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 6.364767448,
+      "index": 6,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 7.055876678,
+      "index": 7,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 7.506380677000001,
+      "index": 8,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 8.102676176,
+      "index": 9,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 8.601710152999999,
+      "index": 10,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 9.186250471,
+      "index": 11,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 9.914106734,
+      "index": 12,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 10.868830317,
+      "index": 13,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 11.448178542,
+      "index": 14,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 12.046804046,
+      "index": 15,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 12.880618184000001,
+      "index": 16,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 13.225215255999998,
+      "index": 17,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 13.926721367999999,
+      "index": 18,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 14.324657404,
+      "index": 19,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 15.077275199999999,
+      "index": 20,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 15.418409731,
+      "index": 21,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 16.411987578,
+      "index": 22,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 17.338223868,
+      "index": 23,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 18.166121939000003,
+      "index": 24,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 18.999029203000003,
+      "index": 25,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 19.548016206,
+      "index": 26,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 20.319613611,
+      "index": 27,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 21.109559923,
+      "index": 28,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 21.819637548000003,
+      "index": 29,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 22.373900697,
+      "index": 30,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 23.24694516,
+      "index": 31,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 23.929123958,
+      "index": 32,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 24.806095304,
+      "index": 33,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 25.567404334,
+      "index": 34,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 25.967233699,
+      "index": 35,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 26.929653872,
+      "index": 36,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 27.630577181,
+      "index": 37,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 28.283670814000004,
+      "index": 38,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 29.254335583,
+      "index": 39,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 30.000309368000003,
+      "index": 40,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 30.303760252,
+      "index": 41,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 31.232337936,
+      "index": 42,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 32.230698055000005,
+      "index": 43,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 32.847796698,
+      "index": 44,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 33.74301353,
+      "index": 45,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 34.71795089,
+      "index": 46,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 35.37705499500001,
+      "index": 47,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "cpu_seconds": 35.377060275000005,
+  "family": "08f72",
+  "initial_rank": 18,
+  "map_and_feature_cpu_seconds": 0.28610169799999596,
+  "point_backend_cpu_seconds": 33.92585523900001,
+  "point_search_calls": 48,
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "rank_lower_bound": 18,
+  "status": "BANK_EXHAUSTED",
+  "success": false,
+  "wall_seconds": 35.3487928690156
+}

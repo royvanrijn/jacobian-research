@@ -5,7 +5,7 @@ The different-NS foundry now applies the
 before source or equation searches. This note preserves completed local and
 lattice comparisons. It is not a live shortlist or a campaign runbook.
 Determinants 500, 720, 750 and 950/NS0024 retain their marking exclusions.
-NS0031 is `UNKNOWN` after the [period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+NS0031 is excluded by the [corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 Completed local successes remain useful regression controls.
 
 The [original 1,227-line report](../archive/repository-cleanup-2026-09-12/research__elkies-k3__LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md.txt)
@@ -40,7 +40,7 @@ give 52 integer coordinates solving all 59 equations modulo
 | Complete finite-field marking | [Scanner](scripts/scan_lattice_foundry_ns0031_a1_2a7_marking_modp.sage) · [GF(7) certificate](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-a1-2a7-marking-mod7-v1.json) |
 | Jacobian and finite lift | [Checker](scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage) · [Coordinates and residuals](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json) |
 | Infinite compatible formal branch | [Separate formal proof](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) |
-| Rational marking UNKNOWN | [Corrected period-group argument](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
+| Full rational rank-19 marking excluded | [Full stable group and exact rational locus](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md) |
 
 A unit minor for an overdetermined system alone does not prove that its
 omitted equations vanish along an infinite lift. The later formal theorem
@@ -54,8 +54,8 @@ D=4 A^3+27 B^2, H=2 A X+3 B C^2, F=X^3+A X C^4+B C^6.
 The prescribed fibre/component orders make all eight omitted residual rows
 consequences of the retained 51 equations on the stated unit chart. Neither
 the finite lift nor the formal theorem gives a rational marking. The former
-global obstruction relied on an invalid period-group containment; a full
-rational NS0031 marking over QQ remains unresolved.
+global obstruction relied on an invalid period-group containment; the
+separate corrected proof now excludes a full rational rank-19 NS0031 marking.
 
 The completed bounded rational-coordinate scan fixed `m9=n/d`, with
 `|n|<=40`, `1<=d<=40`, coprime `n,d`, `7` not dividing `d`, and `n/d=1 mod 7`.
@@ -96,3 +96,5 @@ and [different-NS objective](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

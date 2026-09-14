@@ -1,0 +1,200 @@
+{
+  "arm": "finite_selector",
+  "boundaries": "Known-curve control. Exact independence beyond input subgroup; no novelty or rank upper bound. Cached V3 centre bank reused, all per-worker costs charged.",
+  "case": "3723852b09e27dcf20b7",
+  "charts": [
+    {
+      "cpu_after": 1.7162636679999999,
+      "index": 0,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.325639111,
+      "index": 1,
+      "new_direction": false,
+      "selection": "neighbour-p3-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.818570317,
+      "index": 2,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.581160044,
+      "index": 3,
+      "new_direction": false,
+      "selection": "neighbour-p3-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.195459081,
+      "index": 4,
+      "new_direction": false,
+      "selection": "neighbour-p5-r4",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 5.021524838,
+      "index": 5,
+      "new_direction": false,
+      "selection": "neighbour-p5-r3",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 5.544818458,
+      "index": 6,
+      "new_direction": false,
+      "selection": "neighbour-p5-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 6.250036055,
+      "index": 7,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 6.695087146,
+      "index": 8,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 7.3705040639999995,
+      "index": 9,
+      "new_direction": false,
+      "selection": "neighbour-p3-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 7.794855267,
+      "index": 10,
+      "new_direction": false,
+      "selection": "neighbour-p3-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 8.574928464,
+      "index": 11,
+      "new_direction": false,
+      "selection": "neighbour-p3-r1",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 9.577444766000001,
+      "index": 12,
+      "new_direction": false,
+      "selection": "factor_free",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 10.061717651,
+      "index": 13,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 10.858303082,
+      "index": 14,
+      "new_direction": false,
+      "selection": "neighbour-p5-r3",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 11.637061172,
+      "index": 15,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 12.281921137,
+      "index": 16,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 12.767609454999999,
+      "index": 17,
+      "new_direction": false,
+      "selection": "neighbour-p5-r3",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 13.531645965,
+      "index": 18,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 14.0764839,
+      "index": 19,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 14.646495822999999,
+      "index": 20,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 15.452780519,
+      "index": 21,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 16.073622857,
+      "index": 22,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 16.759621789999997,
+      "index": 23,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 17.49722708,
+      "index": 24,
+      "new_direction": false,
+      "selection": "neighbour-p5-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 18.180914961,
+      "index": 25,
+      "new_direction": true,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "cpu_seconds": 18.606532983,
+  "family": "07ca9",
+  "initial_rank": 18,
+  "map_and_feature_cpu_seconds": 1.3313201600000057,
+  "point_backend_cpu_seconds": 15.678016583999993,
+  "point_search_calls": 26,
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "rank_lower_bound": 19,
+  "status": "CERTIFIED_NEXT_DIRECTION",
+  "success": true,
+  "wall_seconds": 18.584540735988412
+}

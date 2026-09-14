@@ -16,20 +16,28 @@ its canonical sources remain the mathematical authority.
 
 ## A proof correction found during cleanup
 
-The former **NS0031 rational-marking exclusion is withdrawn**. An exact stable
+On September 12, the former **NS0031 rational-marking exclusion was withdrawn**. An exact stable
 lattice reflection lies outside the norm-one group used in that argument.
 The Clifford, modular-curve and Frobenius calculations remain valid, but their
 claimed application to K3 nonexistence does not follow. Full rational NS0031
-marking is **UNKNOWN**; no rational K3 has been constructed.
+marking was therefore **UNKNOWN at that review**.
 
-The [corrected proof note](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-contains the witness and precise remaining gate. Status, foundry decisions,
-ranking, source notes and reusable process lessons now agree. Twelve small
-checks protect the correction. The planner preserves the known genus-23
-norm-one computation and the specific remaining task instead of reverting
-to older unknown fields or generic instructions. No new equation handoff opens.
+The [correction note](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+retains the witness. Status, foundry decisions, ranking, source notes and
+reusable process lessons were reconciled with the reopened question. Twelve
+small checks protected the correction, and the planner preserved the known
+genus-23 norm-one computation alongside the full-group task.
 The [review receipt](archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json)
 preserves the earlier evidence and completes inherited review item 345.
+
+**Successor, September 14:** the separate
+[full stable proof](elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+includes the missing reflection and excludes full rational rank-19 NS0031
+markings. Its genus-10 curve has a genus-2 quotient whose twelve rational
+points all map to cusps or CM points. The original group containment remains
+false, and the local/formal and geometric controls remain valid. No new
+equation handoff opens; rational CM lifts and markings over larger fields
+are outside this theorem.
 
 ## Completed reorganization and review
 
@@ -65,7 +73,7 @@ was lost. The generated review coverage also includes later partial results.
   coherent-label rank11 correction and 17-target product-twist closure have
   current navigation. Their field, subgroup and bounded-domain conditions remain
   explicit in [method memory](knowledge/ALGORITHMS.md).
-- **Portable arithmetic:** The [NS0031 finite replay](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#replay-and-remaining-gate)
+- **Portable arithmetic:** The [NS0031 finite replay](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#retained-replays-and-completed-gate)
   reads 8,346 bytes of retained inputs. Its finite PASS does not prove the
   external period-map premise—the separate review exposed that premise's failure.
 - **Retained relations instead of rediscovery:** The [native quotient replayer](elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md#retained-coordinates-and-primes--12-september-2026)
@@ -107,3 +115,5 @@ stopped at its 30-second cap after two fibres; only the remaining five were
 then verified, in 35.7 seconds. No large search, descent, neighbour enumeration
 or census was rerun by cleanup. Passing these checks does not certify every
 historical proof or replay mode.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

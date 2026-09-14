@@ -1,0 +1,74 @@
+{
+  "controls": [
+    {
+      "genus": 1,
+      "height_matrix": [
+        [
+          8,
+          -4
+        ],
+        [
+          -4,
+          8
+        ]
+      ],
+      "infinite_rational_base": "elliptic model with certified rational nontorsion point",
+      "inherited_parent_rank": "UNKNOWN",
+      "name": "four-nodes-genus-one",
+      "new_independent_directions": 2,
+      "nodes_per_image": 4
+    },
+    {
+      "genus": 0,
+      "height_matrix": [
+        [
+          8,
+          -4
+        ],
+        [
+          -4,
+          8
+        ]
+      ],
+      "infinite_rational_base": "rational parametrization",
+      "inherited_parent_rank": "UNKNOWN",
+      "name": "five-nodes-genus-zero",
+      "new_independent_directions": 2,
+      "nodes_per_image": 5
+    }
+  ],
+  "elapsed_seconds": 0.010643,
+  "fixed_parent_full_quartic_chart": "UNKNOWN",
+  "input_hashes": {
+    "input.json": "af2041145116d55542c5375eb15d84bc52117e4aed0ee1a61428afb9a559e01a",
+    "result.json": "deda3275acfbcae8005d3943feb8146ce7b721afff404a618dc262ea94a0cc35"
+  },
+  "mw17_endpoint_complete": false,
+  "parents": [
+    {
+      "all_algebraic_constant_x_genus_at_least": 4,
+      "critical_values": 33,
+      "name": "published-r17",
+      "prime": 1009
+    },
+    {
+      "all_algebraic_constant_x_genus_at_least": 4,
+      "critical_values": 33,
+      "name": "alternate-q80",
+      "prime": 1009
+    },
+    {
+      "all_algebraic_constant_x_genus_at_least": 4,
+      "critical_values": 33,
+      "name": "curve302-parent",
+      "prime": 1009
+    },
+    {
+      "all_algebraic_constant_x_genus_at_least": 4,
+      "critical_values": 33,
+      "name": "x1092-class1",
+      "prime": 1009
+    }
+  ],
+  "status": "PASS_COMMON_QUARTIC_CONTROLS_AND_CONSTANT_X_EXCLUSIONS"
+}

@@ -4,7 +4,7 @@
 
 Mathematical states come from [MATH_STATUS.json](../MATH_STATUS.json). This ledger makes remaining obligations and suggested next steps discoverable. **All actions are unscheduled**; a work item does not authorize a search or replay.
 
-There are **3 open problems**, **79 partial results** and **4 parked problems** in elliptic curves and supporting K3 work. The 16 active work proposals include shared repository maintenance. The 22 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
+There are **3 open problems**, **78 partial results** and **4 parked problems** in elliptic curves and supporting K3 work. The 16 active work proposals include shared repository maintenance. The 22 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
 
 Start with the exact source and [method lessons](ALGORITHMS.md). The proposals summarize a useful next gate; they do not replace the full scope. Partial-result rows guarantee coverage, while the [source-level partial review](PARTIAL_REVIEW.md) records inspected obligations and explicitly lists the unreviewed remainder. A parked replacement can retire a route without proving its original statement.
 
@@ -12,13 +12,13 @@ Start with the exact source and [method lessons](ALGORITHMS.md). The proposals s
 |---|---:|---:|---:|---:|
 | [Keller core, cancellation and arithmetic](work/core.md) | 0 | 0 | 0 | 4 |
 | [Elliptic curves and rank jumps](work/elliptic-curves.md) | 1 | 7 | 3 | 5 |
-| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 2 | 72 | 1 | 7 |
+| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 2 | 71 | 1 | 7 |
 
 ## Suggested starting points
 
 | Action | Remaining gate |
 |---|---|
-| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Resolve measured preparation and height-bound slack before another model benchmark |
+| [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Choose a new recovery criterion after the cancellation-policy validation |
 | [WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17](work/elkies-k3.md#work-k3-different-ns-arithmetic-mw17) | Close an arithmetic marking gate before equation work |
 | [WORK-EC-RANK-JUMP-MECHANISM-20260910](work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910) | Parked mechanism work; preserve the closed constructor calibration |
 | [WORK-K3-CORRELATED-QUADRATIC-GAINS](work/elkies-k3.md#work-k3-correlated-quadratic-gains) | Construct two independent gains on one quadratic cover |

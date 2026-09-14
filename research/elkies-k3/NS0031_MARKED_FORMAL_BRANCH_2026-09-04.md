@@ -6,13 +6,13 @@ Status: **PROVED LOCAL THEOREM**.
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
 
-> **Arithmetic disposition, corrected September 12.** Full rational NS0031
-> marking is `UNKNOWN`. The [period-group review](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-> found an exact counter-witness to the containment used for the former
-> exclusion. The local theorem below remains valid; it supplies neither a
-> rational marking nor authorization to repeat the bounded coordinate scan.
+> **Arithmetic disposition, September 14.** A full rational rank-19 NS0031
+> marking is excluded by the [corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
+> It includes the missing reflection and determines a genus-two quotient's
+> complete rational locus. The local theorem below remains valid within its
+> formal scope and does not provide a rational source.
 
 ## Statement
 
@@ -100,10 +100,10 @@ This theorem does **not** algebraize the formal branch, rationally
 parameterize it over `QQ`, or produce a `QQ`-rational point. It does not prove
 that any characteristic-zero member has geometric Picard rank 19, and it does
 not yet provide nineteen individually `QQ`-rational Neron--Severi classes.
-The former rational-marking exclusion has been withdrawn. These conclusions
-remain unresolved over `QQ` with exact `NS0031`; the local theorem and the
-completed scan do not decide them. Determine the actual stable marked curve
-and its rational non-CM locus before further source construction.
+The former norm-one argument remains withdrawn. The separate
+[full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+now excludes a full rational rank-19 NS0031 marking. Its exact global
+argument is independent of this formal branch and the completed bounded scan.
 
 ## Bounded rational-coordinate scan
 

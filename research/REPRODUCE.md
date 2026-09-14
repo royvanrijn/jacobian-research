@@ -41,11 +41,28 @@ empty. The historical Magma output remains unavailable; the source-family
 replay still has its separately recorded input boundary.
 Do not replace those missing inputs by downloading a newer external copy.
 
-For NS0031, the [current proof note](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-withdraws the original K3 exclusion. `make verify-ns0031-arithmetic` checks only
-the retained modular arithmetic; `make verify-ns0031-period-group` checks the
-exact counter-witness to its former period-map argument. Neither decides
-rational K3 existence.
+For NS0031, the [current proof](elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+excludes full rational rank-19 markings using the full stable group, its canonical
+genus-10 curve over `Q`, and a complete rational-point calculation on a genus-2
+quotient. Its two replay commands run from the repository root:
+
+```sh
+sage -python research/elkies-k3/scripts/certify_ns0031_stable_marking.sage --check
+magma research/elkies-k3/scripts/certify_ns0031_genus2_rational_points.m
+```
+
+The Sage command recomputes the finite group, modular-symbol and Sturm checks
+and audits the retained Magma proof. The Magma command reruns the unconditional
+global descent and elliptic Chabauty; its recorded run used Magma 2.29-10.
+The [packet](artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/README.md)
+preserves the raw output and input/output hashes. The written normalizer proof,
+canonical period-map theorem and CM identification remain explicit theorem inputs.
+
+The [earlier note](elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+preserves the invalidated norm-one argument and its exact counter-witness.
+`make verify-ns0031-arithmetic` checks only the retained finite modular arithmetic;
+`make verify-ns0031-period-group` checks the missing reflection. Neither of those
+older checks alone proves the corrected rational-marking obstruction.
 
 For the three retained six-fibre cohorts, `make verify-fresh6-retained-ranks`
 checks 37 subgroup endpoints using saved points and sufficient reduction
@@ -85,3 +102,5 @@ Sage, PARI and native workers are needed only by their named replays.
 The active [Makefile](Makefile) exposes navigation checks and explicit EC replay.
 The full old [Makefile](archive/non-elliptic/Makefile) is preserved in the archive.
 Broad verification and research campaigns require their own scope and budget.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

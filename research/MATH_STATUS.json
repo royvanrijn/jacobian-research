@@ -1063,7 +1063,7 @@
       "kind": "example",
       "state": "proved",
       "title": "All retained points from the inventory188 M28 continuation belong to its seed subgroup",
-      "scope": "The900-invocation productive-parent continuation on inventory188 / ICARM619 completes and independently replays without a new direction. A separate exact halving-or-cycle classification treats all445 sign-normalized nonbasis points in the retained473-point cloud. All terminate in2\u20134 steps and yield multiplier1 integer relations in the28 seed points. A separate Fraction-arithmetic checker verifies all445 relations, reconstructs full point-set coverage from the retained clouds, and freshly checks the28-point finite independence certificate. Hence this retained subgroup has exact rank28 and the retained points add no generator to the seed subgroup. Classification526.371 seconds within600-second/1-GiB bounds. No upper bound for E(Q), point absence beyond the retained cloud, conductor record, or claim about the separate pairwise-parent follow-up.",
+      "scope": "The900-invocation productive-parent continuation on inventory188 / ICARM619 completes and independently replays without a new direction. A separate exact halving-or-cycle classification treats all445 sign-normalized nonbasis points in the retained473-point cloud. All terminate in2–4 steps and yield multiplier1 integer relations in the28 seed points. A separate Fraction-arithmetic checker verifies all445 relations, reconstructs full point-set coverage from the retained clouds, and freshly checks the28-point finite independence certificate. Hence this retained subgroup has exact rank28 and the retained points add no generator to the seed subgroup. Classification526.371 seconds within600-second/1-GiB bounds. No upper bound for E(Q), point absence beyond the retained cloud, conductor record, or claim about the separate pairwise-parent follow-up.",
       "canonical_source": "elliptic-curves/notes/CURVE188_PRODUCTIVE_V3_SEARCH_2026-09-09.md",
       "dependencies": [],
       "checker": "elliptic-curves/cas/verify_productive_full_cloud_span.py",
@@ -5408,7 +5408,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Keller generic-monodromy action spectrum",
-      "scope": "Over characteristic-zero fields, classify faithful transitive permutation actions (G,Omega) that occur as the generic monodromy action of a noninvertible polynomial Keller self-map of affine space. Keep separate the existential, smooth-affine chart, absolute affine-space, and field-versal spectra. Determine action-level invariants forced by the \u00e9tale locus and its affine completion, including regular-action exclusion, primitivity and block systems, inertia passports and quotient genera, boundary-unit lattices, Gassmann equivalence, essential dimension, and Hurwitz-space geometry. Symmetric actions occur abundantly; imprimitive actions arise from composition; nontrivial regular actions are impossible absolutely; AS1 and KAS1 give genuinely different relative Gassmann charts. KAS2 proves the primitive rank-ten two-projection boundary ledger and its free residual ranks, while KAS3 identifies the exchange modules and sharp first mask-support degrees. KAS4 adds normalization-module mask interpolation and a descended infinity-imbalance invariant; KAS5 gives the natural prime-triangle genus formula. The first primitive proper-simple test family is PSL2(F_q) on the projective line and on low-index subgroup cosets. No classification or absolute PSL2(F_q) realization is known.",
+      "scope": "Over characteristic-zero fields, classify faithful transitive permutation actions (G,Omega) that occur as the generic monodromy action of a noninvertible polynomial Keller self-map of affine space. Keep separate the existential, smooth-affine chart, absolute affine-space, and field-versal spectra. Determine action-level invariants forced by the étale locus and its affine completion, including regular-action exclusion, primitivity and block systems, inertia passports and quotient genera, boundary-unit lattices, Gassmann equivalence, essential dimension, and Hurwitz-space geometry. Symmetric actions occur abundantly; imprimitive actions arise from composition; nontrivial regular actions are impossible absolutely; AS1 and KAS1 give genuinely different relative Gassmann charts. KAS2 proves the primitive rank-ten two-projection boundary ledger and its free residual ranks, while KAS3 identifies the exchange modules and sharp first mask-support degrees. KAS4 adds normalization-module mask interpolation and a descended infinity-imbalance invariant; KAS5 gives the natural prime-triangle genus formula. The first primitive proper-simple test family is PSL2(F_q) on the projective line and on low-index subgroup cosets. No classification or absolute PSL2(F_q) realization is known.",
       "canonical_source": "archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
       "dependencies": [
         "KBB1",
@@ -7047,7 +7047,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Generic affine-mark faithfulness and marked normalization",
-      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite \u00e9tale of degree N-2.",
+      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite étale of degree N-2.",
       "canonical_source": "archive/non-elliptic/extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
       "dependencies": [
         "D1",
@@ -9587,8 +9587,8 @@
       "id": "KCA3",
       "kind": "reproduction",
       "state": "proved",
-      "title": "Universal locally free cubic K\u00e4hler-different/annihilator equality",
-      "scope": "For the universal Deligne--Faddeev cubic algebra over Q[a,b,c,d], with products w^2=-ac+bw-at, wt=-ad, and t^2=-bd+dw-ct, the relative differential module has the displayed 2-by-3 Jacobian presentation. Its zeroth Fitting ideal, the K\u00e4hler different, and its full annihilator both reduce to the same three-generator ideal. Consequently the canonical different and Ann(Omega) agree on the punctured base of the Koszul cubic construction, where the trace-free module is locally free. Combined with KDFC6, relative cotangent saturation across (x,y,z) implies equality globally and hence Fitt_6=(1), Fitt_5=(0) for the actual ramification-support Ext^2. This checker proves only the locally free equality; KCTS3 supplies the universal smooth-symbol cotangent saturation at the collision origin and makes the consequences unconditional there.",
+      "title": "Universal locally free cubic Kähler-different/annihilator equality",
+      "scope": "For the universal Deligne--Faddeev cubic algebra over Q[a,b,c,d], with products w^2=-ac+bw-at, wt=-ad, and t^2=-bd+dw-ct, the relative differential module has the displayed 2-by-3 Jacobian presentation. Its zeroth Fitting ideal, the Kähler different, and its full annihilator both reduce to the same three-generator ideal. Consequently the canonical different and Ann(Omega) agree on the punctured base of the Koszul cubic construction, where the trace-free module is locally free. Combined with KDFC6, relative cotangent saturation across (x,y,z) implies equality globally and hence Fitt_6=(1), Fitt_5=(0) for the actual ramification-support Ext^2. This checker proves only the locally free equality; KCTS3 supplies the universal smooth-symbol cotangent saturation at the collision origin and makes the consequences unconditional there.",
       "canonical_source": "archive/non-elliptic/cancellation/UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md",
       "dependencies": [
         "KDFC6",
@@ -18297,14 +18297,14 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Projected-scroll quotient obstruction and exposed-fiber terminality",
-      "scope": "The inclusion-minimal low-digit carry atoms do not by themselves connect every projected high-digit quotient fiber. Up to level reversal, the first failure is the color-homogeneous identity R_3*B_1*B_2=R_0*B_3^2: it has degree three, support five, is Graver-primitive, and on red support {0,3} and blue support {1,2,3} its two monomials are the only states with color counts (1,2) and total level six, so no support-at-most-four circuit joins them. Restoring R_2 gives the circuit path through R_2*B_2^2; restoring the reversed level B_0 gives the path through R_3*B_0*B_3. If both are absent and the reduced fiber has no additional state of the same radial profile, the coordinate-reversed companion is absent, so the radial digit spectrum exposes the two-state block and its ordinary-plus-ghost beta block is terminal. More generally, every whole factorial-compatibly exposed color-count/radial-profile scroll fiber is terminal: after removing its common radial factorial, the ordinary endpoint row is CT_z(z^(-w)*product_j C_j(z)^(d_j))^N, so the Duistermaat--van der Kallen theorem gives either a nonzero row or a one-dimensional split-symbol separator (with cancellation of a whole color giving support loss). The dominance-minimal non-universal-Groebner S(6) witness is one-color. On the projected support of the genuinely bichromatic S(5,4) witness R_0*R_4*B_0*B_4=R_1*R_5*B_1^2, the fiber has exactly four states and circuit-component sizes 1+3; its repeated-ray factorial partitions (2,2), (2,1,1), and (1,1,1,1) have Stirling bases 16, 4, and 1. Thus the minimal exceptional profiles are terminal after whole-profile exposure, and circuit-only quotient peeling is false in general. Petrovi\u0107's bounds make the projected Gr\u00f6bner hierarchy finite for every fixed support, while the Bogart--Hemmecke--Petrovi\u0107 classification identifies S(6) and S(5,4) as the first two-color visibility thresholds. This theorem does not prove factorial-compatible inheritance. GVC2FTS supplies component separation only after scale-compatible trace promotion; GVC2ALL records that route-local promotion problem, which GVC2ENV later bypasses.",
+      "scope": "The inclusion-minimal low-digit carry atoms do not by themselves connect every projected high-digit quotient fiber. Up to level reversal, the first failure is the color-homogeneous identity R_3*B_1*B_2=R_0*B_3^2: it has degree three, support five, is Graver-primitive, and on red support {0,3} and blue support {1,2,3} its two monomials are the only states with color counts (1,2) and total level six, so no support-at-most-four circuit joins them. Restoring R_2 gives the circuit path through R_2*B_2^2; restoring the reversed level B_0 gives the path through R_3*B_0*B_3. If both are absent and the reduced fiber has no additional state of the same radial profile, the coordinate-reversed companion is absent, so the radial digit spectrum exposes the two-state block and its ordinary-plus-ghost beta block is terminal. More generally, every whole factorial-compatibly exposed color-count/radial-profile scroll fiber is terminal: after removing its common radial factorial, the ordinary endpoint row is CT_z(z^(-w)*product_j C_j(z)^(d_j))^N, so the Duistermaat--van der Kallen theorem gives either a nonzero row or a one-dimensional split-symbol separator (with cancellation of a whole color giving support loss). The dominance-minimal non-universal-Groebner S(6) witness is one-color. On the projected support of the genuinely bichromatic S(5,4) witness R_0*R_4*B_0*B_4=R_1*R_5*B_1^2, the fiber has exactly four states and circuit-component sizes 1+3; its repeated-ray factorial partitions (2,2), (2,1,1), and (1,1,1,1) have Stirling bases 16, 4, and 1. Thus the minimal exceptional profiles are terminal after whole-profile exposure, and circuit-only quotient peeling is false in general. Petrović's bounds make the projected Gröbner hierarchy finite for every fixed support, while the Bogart--Hemmecke--Petrović classification identifies S(6) and S(5,4) as the first two-color visibility thresholds. This theorem does not prove factorial-compatible inheritance. GVC2FTS supplies component separation only after scale-compatible trace promotion; GVC2ALL records that route-local promotion problem, which GVC2ENV later bypasses.",
       "canonical_source": "archive/non-elliptic/extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2FCG",
         "GVC2GSD",
         "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials",
-        "external: Petrovi\u0107's rational-normal-scroll Graver and projected Gr\u00f6bner bounds",
-        "external: Bogart--Hemmecke--Petrovi\u0107 classification of Graver equals universal Gr\u00f6bner bases"
+        "external: Petrović's rational-normal-scroll Graver and projected Gröbner bounds",
+        "external: Bogart--Hemmecke--Petrović classification of Graver equals universal Gröbner bases"
       ],
       "checker": "archive/non-elliptic/scripts/research_binary_gvc_quotient_graver.py",
       "proof_type": "exact_symbolic",
@@ -28244,7 +28244,7 @@
         },
         {
           "attack": "No purely local cusp exclusion",
-          "reason": "The universal unibranch spectator family realizes a singular cusp packet with smooth integral source, finite freeness, and an \u00e9tale affine spectator; only the global Keller conditions fail.",
+          "reason": "The universal unibranch spectator family realizes a singular cusp packet with smooth integral source, finite freeness, and an étale affine spectator; only the global Keller conditions fail.",
           "witnesses": [
             "PUSC1"
           ]
@@ -42049,7 +42049,9 @@
         "EC-X948-EIGHT-A1-ADMISSIONS-20260913",
         "EC-POINTED-HEIGHT-PORTFOLIO-20260913",
         "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
-        "EC-HEIGHT-PORTFOLIO-COST-20260914"
+        "EC-HEIGHT-PORTFOLIO-COST-20260914",
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914",
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -46551,20 +46553,23 @@
     {
       "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
       "kind": "theorem",
-      "state": "partial",
-      "title": "NS0031 norm-one modular obstruction with unresolved rational K3 marking",
-      "scope": "For the literal NS0031 transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]], the retained split even Clifford order has norm-one curve Gamma_ns(4) intersect Gamma_0(37), of index 304 and genus 23. Its elliptic counts are (0,4) and cusp widths (4,4,148,148). Velu's rational-point classification of X_0(37), together with the exact prime-19 Frobenius pair (2,3) absent from the full nonsplit mod-4 Cartan, proves that this norm-one fibre product has no noncuspidal rational point, including after quadratic twist. The claimed application to full rational NS0031 K3 markings is withdrawn: EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS exhibits an integral stable reflection outside the rational norm-one image, refuting the recorded group containment and the period-induced map deduced from it. Existence of a K3 over QQ with the full rational NS0031 marking remains UNKNOWN. The formal ZZ_7 branch, finite-field precursor, bounded rational-coordinate scan and geometric F017 corridor retain only their respective local or geometric scopes. The remaining gate is the actual full stable projective period group, its model over QQ and its rational non-CM locus, or another exact arithmetic obstruction. The finite arithmetic checker proves neither this missing map nor the external global rational-point theorem.",
-      "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "state": "proved",
+      "title": "Corrected NS0031 full stable period curve and rational rank-19 marking obstruction",
+      "scope": "For the literal NS0031 transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]], the full stable projective period group is Gamma union W_37 Gamma, where Gamma=Gamma_ns(4) intersect Gamma_0(37) and W_37=[[0,-1],[37,0]]. Its stable representative is the determinant-minus-one reflection of EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS. The unique index-four even overlattice and complete local normalizer/discriminant calculation exclude further cosets. Including all determinant units identifies the canonical Q curve C_4=(X_ns(4) x_X(1) X_0(37))/<w_37 w_ns,4>, of genus ten. Reduction modulo two gives a degree-four Q map to C_2: v^2=u^6-4*u^4+4. Exact invariant modular symbols and a weight-12 Sturm check certify this model and its normalized degree-two map to X_0(37)^+: Y^2+Y=X^3-X. Unconditional full Mordell-Weil proofs and cubic-field elliptic Chabauty determine exactly twelve rational points on C_2, all mapping to its cusp or CM points of discriminants -3,-4,-7,-11,-27,-67. Thus C_4 has no rational noncuspidal non-CM point, and no K3 over Q has a full rational rank-19 NS0031 marking. The proof includes the previously missing reflection and does not transfer emptiness from the norm-one cover. It does not determine rational CM lifts to C_4, exclude Picard-rank-20 specializations containing NS0031, or exclude markings over larger fields. Formal Z_7 and geometric F017 controls retain their exact local/geometric scopes. The Sage checker recomputes the finite group/model calculations and audits retained Magma output; the separately retained Magma input replays the global proof. Canonical period descent and CM identification use the named written theorem inputs; independent replay and formal verification are not claimed.",
+      "canonical_source": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
       "dependencies": [
         "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
-        "external: J. Velu, Les points rationnels de X_0(37), Theorem 7 (1974), pp.175-176"
+        "external: I. Dolgachev, Mirror symmetry for lattice polarized K3 surfaces, Proposition 3.3",
+        "external: J. Rizov, Complex multiplication for K3 surfaces, arXiv:math/0508018, section 3.9 and Theorem 3.16",
+        "external: N. Elkies, Elliptic and modular curves over finite fields and related computational issues, Appendix level 37, equations 98-104",
+        "external: Magma 2.29-10 unconditional full Mordell-Weil and elliptic Chabauty procedures, retained exact input and raw output"
       ],
-      "checker": "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
+      "checker": "elkies-k3/scripts/certify_ns0031_stable_marking.sage",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
+      "artifact_hash": "sha256:33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
       "software_lock": [
         "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
         "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
@@ -46574,23 +46579,52 @@
         "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
         "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json",
         "elkies-k3/scripts/verify_ns0031_period_group.py",
-        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json"
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json"
       ],
       "supersedes_notes": [
-        "The September 4 full rational NS0031 marking exclusion is withdrawn; its norm-one modular arithmetic remains valid."
+        "The September 4 nonexistence argument was invalidated by the missing-reflection counter-witness; its norm-one modular arithmetic remains valid.",
+        "The September 12 reopened full-group/Q-model/non-CM gate is closed by the September 14 full stable quotient and exact genus-two descent; the original norm-one containment remains false."
       ],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [],
+      "narrows_problems": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
       "consumers": [
-        "replay/CATALOGUE.md",
+        "CLEANUP_REPORT_2026-09-12.md",
+        "REPRODUCE.md",
+        "RESEARCH_TIMELINE.md",
+        "artifacts/generated-results/README.md",
         "elkies-k3/AGENTS.md",
+        "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
+        "elkies-k3/DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
         "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md",
+        "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
+        "elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md",
+        "elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md",
+        "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
         "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
         "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md",
+        "elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md",
         "elkies-k3/README.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md",
+        "elkies-k3/SCRIPT_ROUTE_AND_FAILURE_LEDGER.md",
+        "elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md",
+        "elkies-k3/scripts/README.md",
+        "replay/CATALOGUE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -46601,7 +46635,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "NS0031 stable reflection lies outside the rational norm-one period image",
-      "scope": "For the literal NS0031 ternary Gram [[0,0,4],[0,74,1],[4,1,-2]], reflection in v=(0,0,1) is the integral isometry R=[[1,0,0],[0,1,0],[4,1,-1]], with determinant -1, trivial discriminant action and a pointwise fixed positive definite two-plane. It therefore belongs to O^+(T)^*. In the retained split even Clifford embedding, its projective period action is represented by A=[[0,-1],[37,0]], which normalizes the integral order and has determinant 37. The explicit trace-zero identification proves that any other rational matrix inducing the same action is a scalar multiple of A; no such matrix has determinant one. Thus the full stable period group is not contained in the projective image of rational norm-one units, contrary to the NS0031 September 4 proof. This is an exact counter-witness to that containment and its asserted period-induced map, not a rational K3 construction or a decision about rational marking existence, which remains UNKNOWN.",
+      "scope": "For the literal NS0031 ternary Gram [[0,0,4],[0,74,1],[4,1,-2]], reflection in v=(0,0,1) is the integral isometry R=[[1,0,0],[0,1,0],[4,1,-1]], with determinant -1, trivial discriminant action and a pointwise fixed positive definite two-plane. It therefore belongs to O^+(T)^*. In the retained split even Clifford embedding, its projective period action is represented by A=[[0,-1],[37,0]], which normalizes the integral order and has determinant 37. The explicit trace-zero identification proves that any other rational matrix inducing the same action is a scalar multiple of A; no such matrix has determinant one. Thus the full stable period group is not contained in the projective image of rational norm-one units, contrary to the NS0031 September 4 proof. This is an exact counter-witness to that containment and its asserted period-induced map, not by itself a rational K3 construction or a decision about rational marking existence. The separate full-stable quotient proof now closes the rank-19 marking problem while retaining this counter-witness.",
       "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
       "dependencies": [
         "external: I. Dolgachev, Mirror symmetry for lattice polarized K3 surfaces, arXiv:alg-geom/9502005v2, Proposition 3.3 and the following period quotient"
@@ -46611,7 +46645,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+      "artifact_hash": "sha256:beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
       "software_lock": [
         "elkies-k3/scripts/verify_ns0031_period_group.py",
         "tests/test_research_ns0031_period_group.py",
@@ -46625,6 +46659,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
         "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
@@ -46636,7 +46671,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
-      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024 as ARITHMETICALLY_EXCLUDED by the retained modular obstructions; and retain 61 rows as UNKNOWN, including NS0031 after its period-group containment was refuted. Within those 61, determinant 1236 has the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its genus-six X_0^6(103)/<w_618> curve, EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that its genus-two quotient has exactly fourteen rational points, EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, and EC-K3-DET1236-CANDIDATE-DOUBLE-COVER gives eight conditional non-fixed rational lifts which the complete CM locus forces all to be CM. Only the candidate cubic branch-orbit identification remains; it would convert the row to ARITHMETICALLY_EXCLUDED. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any other unknown marked curve.",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024 and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by exact obstructions; and retain 60 rows as UNKNOWN. NS0031 uses the corrected full stable genus-ten curve and its exact genus-two rational locus, including the previously missing reflection. Within those 60, determinant 1236 has the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its genus-six X_0^6(103)/<w_618> curve, EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that its genus-two quotient has exactly fourteen rational points, EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, and EC-K3-DET1236-CANDIDATE-DOUBLE-COVER gives eight conditional non-fixed rational lifts which the complete CM locus forces all to be CM. Only the candidate cubic branch-orbit identification remains; it would convert the row to ARITHMETICALLY_EXCLUDED. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any other unknown marked curve.",
       "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
@@ -46655,7 +46690,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+      "artifact_hash": "sha256:0bf92d0a5350fb58081edc7564209745185d071575e216656dc47aa13c45d5f4",
       "software_lock": [
         "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
         "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
@@ -46673,12 +46708,13 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "replay/CATALOGUE.md",
+        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
         "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
         "elkies-k3/README.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "replay/CATALOGUE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -46689,7 +46725,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Arithmetic-gated reranking of different-NS MW17 frames",
-      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, and 950 are then removed by their rational-marking obstruction certificates, leaving 62 arithmetic candidates including the already-realized determinant-948 control. NS0031 is again an UNKNOWN research row after correction of its period-group map; it is not ready for equation work. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-1236 row from EC-K3-DET1236-MARKED-SHIMURA-CURVE is retained fail-closed with an exact tier-one arithmetic coordinate: the full genus-six marked curve is known and its genus-two quotient has exactly fourteen rational points, the exact candidate cover evaluates all twelve non-fixed points and the complete ten-point rational CM locus makes every conditional lift CM. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; closing it would prove arithmetic exclusion. Equation scoring remains false. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
+      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, 950, and 1184 are then removed by their rational-marking obstruction certificates, leaving 61 arithmetic candidates including the already-realized determinant-948 control. NS0031 is excluded by the corrected full stable genus-ten curve and its genus-two quotient with twelve cuspidal/CM rational points. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-1236 row from EC-K3-DET1236-MARKED-SHIMURA-CURVE is retained fail-closed with an exact tier-one arithmetic coordinate: the full genus-six marked curve is known and its genus-two quotient has exactly fourteen rational points, the exact candidate cover evaluates all twelve non-fixed points and the complete ten-point rational CM locus makes every conditional lift CM. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; closing it would prove arithmetic exclusion. Equation scoring remains false. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
       "canonical_source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
       "dependencies": [
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
@@ -46716,7 +46752,7 @@
         "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json"
       ],
       "supersedes_notes": [
-        "The previous exclusion of NS0031 from the arithmetic research ranking is withdrawn; it returns as UNKNOWN without equation eligibility.",
+        "NS0031 was reopened on September12 after the norm-one containment failed; the separate September14 full-stable quotient proof now excludes it with the missing reflection included.",
         "the arithmetic foundry ranking does not have an explicit rejection state",
         "determinant 720 remains the first unresolved different-NS arithmetic gate"
       ],
@@ -46724,12 +46760,12 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "replay/CATALOGUE.md",
         "elkies-k3/AGENTS.md",
         "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/README.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "replay/CATALOGUE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -46740,7 +46776,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Global transcendental-first arithmetic queue for the different-NS foundry",
-      "scope": "The different-NS foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 821 rows, consisting of 61 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; NS0031 is UNKNOWN after withdrawal of its norm-one period-map argument. 21 have coarse genus at most two as a diagnostic only. Within that queue, EC-K3-DET1236-MARKED-SHIMURA-CURVE supplies determinant 1236's exact genus-six marked curve X_0^6(103)/<w_618>, Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON, a proof that its genus-two quotient has exactly fourteen rational points, an exact candidate cover with all twelve non-fixed fibre evaluations, and a complete ten-point rational CM locus. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; it would prove exclusion. For every unresolved or unscreened row, rational_non_CM_point is null; false requires an exact exclusion and true requires an exact positive witness. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions and the determinant-1236 exact curve, not by promoting any unresolved row.",
+      "scope": "The different-NS foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 820 rows, consisting of 60 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; NS0031 is excluded by its corrected full stable genus-ten curve and exact genus-two quotient, while the original norm-one containment remains false. 21 have coarse genus at most two as a diagnostic only. Within that queue, EC-K3-DET1236-MARKED-SHIMURA-CURVE supplies determinant 1236's exact genus-six marked curve X_0^6(103)/<w_618>, Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON, a proof that its genus-two quotient has exactly fourteen rational points, an exact candidate cover with all twelve non-fixed fibre evaluations, and a complete ten-point rational CM locus. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; it would prove exclusion. For every unresolved or unscreened row, rational_non_CM_point is null; false requires an exact exclusion and true requires an exact positive witness. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions and the determinant-1236 exact curve, not by promoting any unresolved row.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
@@ -46770,14 +46806,15 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "replay/CATALOGUE.md",
         "artifacts/generated-results/README.md",
         "elkies-k3/AGENTS.md",
+        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
         "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
         "elkies-k3/README.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "replay/CATALOGUE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -47179,7 +47216,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Blind multi-stratum adaptive half-lattice jump ladder and extreme-tail detector validation",
-      "scope": "On the sixteen quotient-eligible new hits in the hash-pinned 573-curve norm-twelve atlas refresh, a redacted input exposes only each short curve, the seventeen specialized generic MW17 points, their exact generic height Gram, curve id, and atlas class; it contains no public complement, displayed rank, or jump. Curve 499 is excluded before searching because its displayed quotient by MW17 is exactly undefined. The fixed v2 policy completely ranks MW17/2MW17 by exact generic norm, searches the first 43 classes, then\u2014when the exact initial recovered quotient is nonzero\u2014recomputes the full changed lattice state and searches a deterministic 301-chart adaptive pool. Every order is bound to the exact basis, height Gram, generic coordinates, quotient complement, universe, and chart identities. The per-chart bounds are height 100,000, 15 wall seconds, 1 GB PARI stack, and no retry. Fifteen fibres complete all 344 charts with no timeout or PARI failure; curve 544 has initial score zero and stops at the predeclared structural boundary after 43. Before the public complements are opened, the exact quotient-rank responses by curve id are 478:6, 498:6, 531:11, 532:3, 534:11, 535:10, 536:11, 537:10, 538:5, 539:6, 540:8, 541:8, 543:12, 544:0, 545:11, 546:8. Against the later-opened exact displayed jumps, the predeclared tied-margin Kendall test gives tau_b=0.7503122325921043 and exact one-sided p=60852/2421619200. The predeclared score-at-least-10 rule selects 7/8 of the +10/+11/+12 tail and 0/8 outside it, for risk difference 0.875 and one-sided Fisher p=1/1430. Both frozen endpoints pass. Post-freeze sensitivity analysis gives 6/7 score-at-least-10 among q>=11 and 1/9 below, with Fisher p=4/715. After conditioning on fibration, the block-restricted ordinal tau_b is 0.7163 with exact p=7082/25945920; after conditioning on rational-PGL2 j-map class it is 0.8804 with exact p=2/2520. Only class 08234 contains both tail and non-tail rows: its q>=10 table is 5/5 versus 0/2 with p=1/21, while its q>=11 table is 4/4 versus 1/3 with p=1/7. The three alternate-Q80 rows have q=3,6,8, so extreme-tail transfer to that fibration is unvalidated. Thus high score may participate one-sidedly in candidate scheduling inside the calibrated norm-twelve R17 setting, but low score may not veto: curve 544 is an explicit q=11, score-zero false negative. A changed fibration, j-class, lattice, or basis requires a new blinded high-q calibration. The completed v2 artifact is retained unchanged; its structural 43-versus-344 asymmetry is repaired prospectively in EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE rather than retroactively. The v1 protocol's false cross-class assertion that every determinant-948 MW17 lattice has exactly 43 maximum-norm classes stopped after curve 478 and before curve 498 searching; v2 transparently replaces it by the top 43 exact generic-depth classes, leaves curve 478's selected set and all endpoints unchanged, discloses its already known score 6, and reruns it exactly. Post-freeze opening puts fourteen blind bases integrally inside their displayed subgroups. Curve 478's blind basis has exact rank 23, improving its unconditional lower bound from 21 to rank at least 23; curve 539 has equal blind/displayed rank 23 but unresolved integral containment. No full Mordell-Weil rank, saturation, rank upper bound, miss inference, or population generalization is asserted. In production, a completed residual Selmer upper bound below 32 is an exclusion and incomplete descent is scheduling information; a finite point search may proceed independently and 32 certified independent points prove the lower-bound target. The fibration/j-class splits and q>=11 endpoint are post-freeze sensitivity analyses rather than confirmatory endpoints.",
+      "scope": "On the sixteen quotient-eligible new hits in the hash-pinned 573-curve norm-twelve atlas refresh, a redacted input exposes only each short curve, the seventeen specialized generic MW17 points, their exact generic height Gram, curve id, and atlas class; it contains no public complement, displayed rank, or jump. Curve 499 is excluded before searching because its displayed quotient by MW17 is exactly undefined. The fixed v2 policy completely ranks MW17/2MW17 by exact generic norm, searches the first 43 classes, then—when the exact initial recovered quotient is nonzero—recomputes the full changed lattice state and searches a deterministic 301-chart adaptive pool. Every order is bound to the exact basis, height Gram, generic coordinates, quotient complement, universe, and chart identities. The per-chart bounds are height 100,000, 15 wall seconds, 1 GB PARI stack, and no retry. Fifteen fibres complete all 344 charts with no timeout or PARI failure; curve 544 has initial score zero and stops at the predeclared structural boundary after 43. Before the public complements are opened, the exact quotient-rank responses by curve id are 478:6, 498:6, 531:11, 532:3, 534:11, 535:10, 536:11, 537:10, 538:5, 539:6, 540:8, 541:8, 543:12, 544:0, 545:11, 546:8. Against the later-opened exact displayed jumps, the predeclared tied-margin Kendall test gives tau_b=0.7503122325921043 and exact one-sided p=60852/2421619200. The predeclared score-at-least-10 rule selects 7/8 of the +10/+11/+12 tail and 0/8 outside it, for risk difference 0.875 and one-sided Fisher p=1/1430. Both frozen endpoints pass. Post-freeze sensitivity analysis gives 6/7 score-at-least-10 among q>=11 and 1/9 below, with Fisher p=4/715. After conditioning on fibration, the block-restricted ordinal tau_b is 0.7163 with exact p=7082/25945920; after conditioning on rational-PGL2 j-map class it is 0.8804 with exact p=2/2520. Only class 08234 contains both tail and non-tail rows: its q>=10 table is 5/5 versus 0/2 with p=1/21, while its q>=11 table is 4/4 versus 1/3 with p=1/7. The three alternate-Q80 rows have q=3,6,8, so extreme-tail transfer to that fibration is unvalidated. Thus high score may participate one-sidedly in candidate scheduling inside the calibrated norm-twelve R17 setting, but low score may not veto: curve 544 is an explicit q=11, score-zero false negative. A changed fibration, j-class, lattice, or basis requires a new blinded high-q calibration. The completed v2 artifact is retained unchanged; its structural 43-versus-344 asymmetry is repaired prospectively in EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE rather than retroactively. The v1 protocol's false cross-class assertion that every determinant-948 MW17 lattice has exactly 43 maximum-norm classes stopped after curve 478 and before curve 498 searching; v2 transparently replaces it by the top 43 exact generic-depth classes, leaves curve 478's selected set and all endpoints unchanged, discloses its already known score 6, and reruns it exactly. Post-freeze opening puts fourteen blind bases integrally inside their displayed subgroups. Curve 478's blind basis has exact rank 23, improving its unconditional lower bound from 21 to rank at least 23; curve 539 has equal blind/displayed rank 23 but unresolved integral containment. No full Mordell-Weil rank, saturation, rank upper bound, miss inference, or population generalization is asserted. In production, a completed residual Selmer upper bound below 32 is an exclusion and incomplete descent is scheduling information; a finite point search may proceed independently and 32 certified independent points prove the lower-bound target. The fibration/j-class splits and q>=11 endpoint are post-freeze sensitivity analyses rather than confirmatory endpoints.",
       "canonical_source": "elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-ICARM-573-REFRESH",
@@ -47857,12 +47894,13 @@
       "kind": "example",
       "state": "proved",
       "title": "Complete custom-NS rootless MW17 midpoint-hole sweep",
-      "scope": "For the repository's 47 custom Picard-rank-19 labels NS0002 through NS0048, exactly 32 have attached rootless MW17 frame Grams and 15 do not; the rooted frame Gram on those 15 is not substituted for a Mordell--Weil height lattice. Complete CVP enumeration visits all 2^17 parity classes on each of the 136 eligible frame classes, for 17,825,792 classes total. Every norm is recomputed integrally, and every deepest class plus a deterministic stride is repeated with 256-bit MPFR GSO arithmetic. Exactly 135 frames have max_c mu_2(c)=12. The determinant-1494 NS0021 frame K3-2cacfeb9277cda96-F006 uniquely has max_c mu_2(c)=14, attained by the single mask 116966, so Corollary S4 gives rho_2(M)^2=7/2 and rho(M)>=sqrt(7/2), strictly above the published R17 control's rho_2=sqrt(3). This is a discrete old-lattice midpoint-hole certificate and a conditional future chart schedule. It constructs no rational marking, equation, specialization, point, quotient gain, Selmer bound, or rank jump; current classification of the same32 eligible surface IDs gives31 UNKNOWN rows and the NS0024 exclusion. NS0031 is UNKNOWN after withdrawal of its period-map argument. The frozen sweep retains the original classifier as historical input; the lattice spectra are unchanged.",
+      "scope": "For the repository's 47 custom Picard-rank-19 labels NS0002 through NS0048, exactly 32 have attached rootless MW17 frame Grams and 15 do not; the rooted frame Gram on those 15 is not substituted for a Mordell--Weil height lattice. Complete CVP enumeration visits all 2^17 parity classes on each of the 136 eligible frame classes, for 17,825,792 classes total. Every norm is recomputed integrally, and every deepest class plus a deterministic stride is repeated with 256-bit MPFR GSO arithmetic. Exactly 135 frames have max_c mu_2(c)=12. The determinant-1494 NS0021 frame K3-2cacfeb9277cda96-F006 uniquely has max_c mu_2(c)=14, attained by the single mask 116966, so Corollary S4 gives rho_2(M)^2=7/2 and rho(M)>=sqrt(7/2), strictly above the published R17 control's rho_2=sqrt(3). This is a discrete old-lattice midpoint-hole certificate and a conditional future chart schedule. It constructs no rational marking, equation, specialization, point, quotient gain, Selmer bound, or rank jump; current classification of the same32 eligible surface IDs gives30 UNKNOWN rows and the NS0024/NS0031 exclusions. NS0031 uses the corrected full stable genus-ten curve and exact genus-two rational locus. The frozen sweep retains the original classifier as historical input; the lattice spectra are unchanged.",
       "canonical_source": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
       "dependencies": [
         "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS",
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ],
       "checker": "elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage",
       "proof_type": "hybrid",
@@ -47935,7 +47973,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
-      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, and 950, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. NS0031 remains UNKNOWN because EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS refutes the containment used for its previous marking exclusion. Determinant 1236 is now the strongest near-exclusion rootless target. EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and degree-two map to an explicit genus-two quotient; EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the quotient has exactly fourteen rational points; and EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, with multiplicities 2,4,4 for discriminants -3,-43,-67. EC-K3-DET1236-CANDIDATE-DOUBLE-COVER constructs an exact characteristic-zero cover candidate and evaluates all twelve non-fixed fibres: the displayed twist gives eight conditional rational lifts, all forced to be CM by the complete locus, while its -3 twist gives none and cannot be the actual descent after the branch divisor is identified. Only the characteristic-zero identification of the candidate's cubic branch orbit with the order-discriminant -1236 Shimura orbit remains unresolved; it would prove ARITHMETICALLY_EXCLUDED. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 821-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 61 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. The twelve geometric exclusions, single-target19bad:083ad proof and remaining-four regulator sweep now prove arithmetic rank zero for all seventeen selected product twists (EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP): A^-=Gamma_d=H_d=0 and every rational section height is excluded. Five retain geometric rank UNKNOWN in [0,2]; no full two-Selmer vanishing follows. Other products and the general integral V4 target remain open. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, and 950, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. NS0031 is now excluded by EC-K3-NS0031-QQ-MARKING-OBSTRUCTION: the corrected genus-ten stable curve includes the missing reflection and has a Q-defined genus-two quotient with twelve rational points, all cuspidal or CM. Determinant 1236 is now the strongest near-exclusion rootless target. EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and degree-two map to an explicit genus-two quotient; EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the quotient has exactly fourteen rational points; and EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, with multiplicities 2,4,4 for discriminants -3,-43,-67. EC-K3-DET1236-CANDIDATE-DOUBLE-COVER constructs an exact characteristic-zero cover candidate and evaluates all twelve non-fixed fibres: the displayed twist gives eight conditional rational lifts, all forced to be CM by the complete locus, while its -3 twist gives none and cannot be the actual descent after the branch divisor is identified. Only the characteristic-zero identification of the candidate's cubic branch orbit with the order-discriminant -1236 Shimura orbit remains unresolved; it would prove ARITHMETICALLY_EXCLUDED. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. The twelve geometric exclusions, single-target19bad:083ad proof and remaining-four regulator sweep now prove arithmetic rank zero for all seventeen selected product twists (EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP): A^-=Gamma_d=H_d=0 and every rational section height is excluded. Five retain geometric rank UNKNOWN in [0,2]; no full two-Selmer vanishing follows. Other products and the general integral V4 target remain open. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -48007,7 +48045,7 @@
         },
         {
           "attack": "Promoting a modular point, p-adic lift, or formal branch without a rational rank-19 marking",
-          "reason": "The NS0031 formal branch and physical corridor prove local and geometric facts only. Its rational marking remains UNKNOWN after withdrawal of the previous period-map argument.",
+          "reason": "The NS0031 formal branch and physical corridor prove local and geometric facts only. The separate corrected full stable quotient proof now excludes a full rational rank-19 marking.",
           "witnesses": [
             "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
             "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
@@ -48279,7 +48317,7 @@
       "id": "EC-COMPACT-R17-NEW-CURVES-20260905",
       "kind": "example",
       "state": "proved",
-      "title": "Fifteen prospective compact R17 curves of certified rank at least 22\u201324 absent from the pinned ICARM snapshot",
+      "title": "Fifteen prospective compact R17 curves of certified rank at least 22–24 absent from the pinned ICARM snapshot",
       "scope": "The published R17 specializations at 33/119, -695/97 and -2300/843 have unconditional rank at least 24; at 44/35, -1264/1047, 2291/2392, -3895/3749, -1193/1560, 1229/894 and 129/70, at least 23; and at -3/148, -70/61, 8/39, 1348/1431 and -7540/2317, at least 22. Exact point membership, specialized generic-section transport, full-rank finite mod-2 quotient columns and absence of rational 2-torsion are replayed by a separate Sage-free checker. The fifteen curves have distinct j-invariants and no Q-isomorphism match among the 584 equations in the ICARM snapshot with SHA256 7e80549befa11a07422a3960967f4cd80264d8675cb3e0a99f0c9c5afb340f72. These are lower bounds, not exact ranks; snapshot absence is not universal novelty. None meets the rank-at-least-28 near-record or rank-at-least-32 record target. Numerical scores and heights are discovery scheduling only.",
       "canonical_source": "elliptic-curves/notes/NEW_COMPACT_R17_CURVES_2026-09-05.md",
       "dependencies": [
@@ -48350,7 +48388,7 @@
       "id": "EC-COMPACT-ATLAS-NEW-CURVES-20260905",
       "kind": "example",
       "state": "proved",
-      "title": "Six additional prospective compact-atlas curves of certified rank at least 22\u201325 absent from the pinned comparison sets",
+      "title": "Six additional prospective compact-atlas curves of certified rank at least 22–25 absent from the pinned comparison sets",
       "scope": "In the new compact atlas coordinates, family 07ca9 at 505/794 has unconditional rank at least 25; 08f72 at -704/93 at least 24; 074d9 at -839/505 and 08234 at -506/9 at least 23; and 074d9 at 148/225 and 11952 at 744/5 at least 22. Separate Sage-free replay verifies all point memberships, full-rank finite mod-2 quotient columns, absence of rational 2-torsion and transports of the seventeen generic sections. The six j-invariants are distinct and also distinct from the fifteen earlier prospective curves. No Q-isomorphism matches the pinned 584-equation ICARM snapshot or those earlier fifteen curves. These are lower bounds, not exact ranks or conductor records; bounded catalogue absence is not universal novelty. No new rank-at-least-28 or rank-at-least-32 curve is claimed.",
       "canonical_source": "elliptic-curves/notes/NEW_COMPACT_ATLAS_CURVES_2026-09-05.md",
       "dependencies": [
@@ -48423,8 +48461,8 @@
       "id": "EC-PROSPECTIVE-COMPACT-MW16-NEW-CURVES-20260905",
       "kind": "example",
       "state": "proved",
-      "title": "Ten additional prospective compact-MW16 curves of certified rank at least 22\u201325, including a second new rank-at-least-25 example",
-      "scope": "The fixed target-free five-family H1024 pilot yields ten curves of unconditional rank at least 22\u201325 absent from the pinned 584-equation ICARM snapshot and 21 earlier certificates. Family a1-fibration-05 at compact parameter 307/206 has rank at least 25, a gain of nine beyond 16 generic sections. The ten new j-invariants are distinct and distinct from the earlier 21. All 20 retained lower-bound certificates passed Sage-free exact finite mod-2 quotient, no rational 2-torsion, membership, generic transport and post-batch catalogue replay; one other rank-24 result is known ICARM 548. All 853 chart/admission records passed replay, including one 36-chart worker stopped at its 300-second limit; 19 workers completed 43-chart plans, but no chart box was exhaustive. All 20 initial specializations certified all 16 generic points. No exact rank, conductor record, universal novelty, new rank-at-least 28 or rank-at-least 32 curve is claimed.",
+      "title": "Ten additional prospective compact-MW16 curves of certified rank at least 22–25, including a second new rank-at-least-25 example",
+      "scope": "The fixed target-free five-family H1024 pilot yields ten curves of unconditional rank at least 22–25 absent from the pinned 584-equation ICARM snapshot and 21 earlier certificates. Family a1-fibration-05 at compact parameter 307/206 has rank at least 25, a gain of nine beyond 16 generic sections. The ten new j-invariants are distinct and distinct from the earlier 21. All 20 retained lower-bound certificates passed Sage-free exact finite mod-2 quotient, no rational 2-torsion, membership, generic transport and post-batch catalogue replay; one other rank-24 result is known ICARM 548. All 853 chart/admission records passed replay, including one 36-chart worker stopped at its 300-second limit; 19 workers completed 43-chart plans, but no chart box was exhaustive. All 20 initial specializations certified all 16 generic points. No exact rank, conductor record, universal novelty, new rank-at-least 28 or rank-at-least 32 curve is claimed.",
       "canonical_source": "elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md",
       "dependencies": [
         "EC-COMPACT-FIVE-MW16-ATLAS-20260905"
@@ -48499,7 +48537,7 @@
       "kind": "example",
       "state": "proved",
       "title": "A blind search already recorded rank 26 on ICARM 542; prime 257 closes the admission gap",
-      "scope": "Exact re-certification of 202 hash-pinned retained compact/prospective transcripts checks 57,599 point occurrences up to sign within each transcript. Every standalone lower-bound certificate passed separate replay. Only the known ICARM 542 control improves, from 25 to 26, using original recorded points and no public oracle input. Its finite mod-2 cloud rank is 25 through prime 251 and 26 at 257. Separately, 86 oracle translations were replayed by exact rational group arithmetic: 38 visible and recorded, 48 outside the box. The 32 distinct new curves retain lower bounds 22\u201325; no exact rank, upper bound, new rank-28/32 curve, or universal novelty is claimed. Separately, the newest rank-25 curve completed its fixed 301-chart adaptive follow-up; all chart/admission records and its 3,739-point cloud passed replay, still at least rank 25. All 6,144 fixed specialized parity representatives passed exact norm/parity replay; no sample met its predeclared scheduling gate.",
+      "scope": "Exact re-certification of 202 hash-pinned retained compact/prospective transcripts checks 57,599 point occurrences up to sign within each transcript. Every standalone lower-bound certificate passed separate replay. Only the known ICARM 542 control improves, from 25 to 26, using original recorded points and no public oracle input. Its finite mod-2 cloud rank is 25 through prime 251 and 26 at 257. Separately, 86 oracle translations were replayed by exact rational group arithmetic: 38 visible and recorded, 48 outside the box. The 32 distinct new curves retain lower bounds 22–25; no exact rank, upper bound, new rank-28/32 curve, or universal novelty is claimed. Separately, the newest rank-25 curve completed its fixed 301-chart adaptive follow-up; all chart/admission records and its 3,739-point cloud passed replay, still at least rank 25. All 6,144 fixed specialized parity representatives passed exact norm/parity replay; no sample met its predeclared scheduling gate.",
       "canonical_source": "elliptic-curves/notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md",
       "dependencies": [
         "EC-PROSPECTIVE-COMPACT-MW16-WIDE-NEW-CURVE-20260905"
@@ -48571,8 +48609,8 @@
       "id": "EC-PROSPECTIVE-MW16-NEXT12-NEW-CURVES-20260905",
       "kind": "example",
       "state": "proved",
-      "title": "Four further new MW16 curves with certified lower bounds 22\u201324; 36-curve inventory",
-      "scope": "All twelve fixed follow-on addresses from positions 5\u201316 of compact family 05\u2019s retained height-1024 full-prime ranking received bounded point attempts. All 516 chart/admission records and twelve complete point clouds (5,940 point occurrences up to sign) passed independent exact replay. Four new curves have certified lower bounds 24, 23, 22, 22 and no Q-isomorphism match in the pinned 584-row catalogue or 263 earlier measured equations. The stable-ID inventory contains 36 distinct curves, including three with lower bound 25. A separate exact comparison against the refreshed 586-row catalogue finds no match for any of the 36. Catalogue absence is not universal novelty; these are not exact ranks or new rank-at-least-28/32 curves.",
+      "title": "Four further new MW16 curves with certified lower bounds 22–24; 36-curve inventory",
+      "scope": "All twelve fixed follow-on addresses from positions 5–16 of compact family 05’s retained height-1024 full-prime ranking received bounded point attempts. All 516 chart/admission records and twelve complete point clouds (5,940 point occurrences up to sign) passed independent exact replay. Four new curves have certified lower bounds 24, 23, 22, 22 and no Q-isomorphism match in the pinned 584-row catalogue or 263 earlier measured equations. The stable-ID inventory contains 36 distinct curves, including three with lower bound 25. A separate exact comparison against the refreshed 586-row catalogue finds no match for any of the 36. Catalogue absence is not universal novelty; these are not exact ranks or new rank-at-least-28/32 curves.",
       "canonical_source": "elliptic-curves/notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md",
       "dependencies": [
         "EC-COMPACT-FIVE-MW16-ATLAS-20260905"
@@ -52287,7 +52325,7 @@
         },
         {
           "attack": "Seeking generic rank above nine by changing fibrations on the completed MW9 control surface",
-          "reason": "The rational Neron\u2013Severi bound is eleven, so every Q-defined elliptic fibration on that particular K3 has arithmetic MW rank at most nine. The completed MW17 parent lies on a different surface.",
+          "reason": "The rational Neron–Severi bound is eleven, so every Q-defined elliptic fibration on that particular K3 has arithmetic MW rank at most nine. The completed MW17 parent lies on a different surface.",
           "witnesses": [
             "EC-K3-CURVE302-FULL-MW9",
             "EC-CURVE302-RECOVERED-MW17-PARENT"
@@ -52374,7 +52412,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Full arithmetic MW9 basis and rank upper bound for the constructed curve-302 K3",
-      "scope": "The pinned explicit 24-I1 K3 over Q(t) has generic arithmetic MW rank exactly nine, trivial torsion, and full basis C1,...,C7,Q,S of height determinant512. All nine rational-function Weierstrass coordinates are expanded and verified, and all specialize at t=1 to the retained independent curve302 subgroup with displayed public quotient Z^22 plus Z/3. Good reduction at47 is checked on every Newton face. Pinned ToricControlledReduction computes the degree20 primitive H2 polynomial (T-47)^9(T+47)F10(T); an exhaustive cyclotomic check finds no further normalized root-of-unity factors, and the exact Weil-circle and functional-equation checks pass. Independent PARI fibre counts over F47 and F47^2 reproduce primitive traces408,16816 and surface counts2712,4900916. The complete Frobenius computation replays, but has no independent second implementation. Good-reduction divisor specialization bounds rational NS rank by11, matching the fibre, zero and nine sections; the earlier saturation proof completes the full arithmetic basis without BSD, GRH or a Tate-conjecture converse. Geometric MW rank remains9..10 and geometric NS rank11..12. The quadratic source twist has arithmetic rank one. Every elliptic fibration over Q on this same K3 has arithmetic MW rank at most nine, so a generic-rank17\u201320 parent must use a different surface. This completes the literal constructed-surface/basis/specialization endpoint and narrows OP-EC-CURVE302-CONSTRUCTION-RECOVERY; the discoverers original parent and provenance remain UNKNOWN, as does an unconditional rank upper bound for E302. This is retained as a completed baseline; its curve302 fibre alone does not justify a major production search. The later EC-CURVE302-RECOVERED-MW17-PARENT completes the alternative-parent endpoint on a different determinant1092 surface. Original discoverer provenance remains UNKNOWN and outreach is prohibited; the historical MW9 construction does not schedule a fresh-fibre rank-search campaign.",
+      "scope": "The pinned explicit 24-I1 K3 over Q(t) has generic arithmetic MW rank exactly nine, trivial torsion, and full basis C1,...,C7,Q,S of height determinant512. All nine rational-function Weierstrass coordinates are expanded and verified, and all specialize at t=1 to the retained independent curve302 subgroup with displayed public quotient Z^22 plus Z/3. Good reduction at47 is checked on every Newton face. Pinned ToricControlledReduction computes the degree20 primitive H2 polynomial (T-47)^9(T+47)F10(T); an exhaustive cyclotomic check finds no further normalized root-of-unity factors, and the exact Weil-circle and functional-equation checks pass. Independent PARI fibre counts over F47 and F47^2 reproduce primitive traces408,16816 and surface counts2712,4900916. The complete Frobenius computation replays, but has no independent second implementation. Good-reduction divisor specialization bounds rational NS rank by11, matching the fibre, zero and nine sections; the earlier saturation proof completes the full arithmetic basis without BSD, GRH or a Tate-conjecture converse. Geometric MW rank remains9..10 and geometric NS rank11..12. The quadratic source twist has arithmetic rank one. Every elliptic fibration over Q on this same K3 has arithmetic MW rank at most nine, so a generic-rank17–20 parent must use a different surface. This completes the literal constructed-surface/basis/specialization endpoint and narrows OP-EC-CURVE302-CONSTRUCTION-RECOVERY; the discoverers original parent and provenance remain UNKNOWN, as does an unconditional rank upper bound for E302. This is retained as a completed baseline; its curve302 fibre alone does not justify a major production search. The later EC-CURVE302-RECOVERED-MW17-PARENT completes the alternative-parent endpoint on a different determinant1092 surface. Original discoverer provenance remains UNKNOWN and outreach is prohibited; the historical MW9 construction does not schedule a fresh-fibre rank-search campaign.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-K3-CURVE302-INVERSE-NINE-DIRECTIONS",
@@ -52741,8 +52779,8 @@
       "id": "EC-CURVE302-INVERSE-KIHARA",
       "kind": "theorem",
       "state": "proved",
-      "title": "Kihara rank14 control recovery, whole-line302 exclusion and rank14\u201316 subspace intake",
-      "scope": "The published Kihara arithmetic rank-at-least14 quartic is reconstructed symbolically and agrees with a separate rational implementation at five parameters. The existing rank14 control manifest replays. Exact inverse reconstruction recovers precisely t=+2,-2 and rational isomorphisms to that control. The cancelled j-map has degree432. The primitive homogeneous comparison with302 has no projective root modulo101, excluding all rational parameters of this one family without a height bound. Eleven retained primitive rank14\u201316 candidate subspaces are audited; five extend outside the earlier rank17 core (rank14 candidates32,58; rank15 candidate59; rank16 candidates60,86). These subspace ranks are not generic-rank certificates, and no alternative302 parent or universal MW14 exclusion is asserted.",
+      "title": "Kihara rank14 control recovery, whole-line302 exclusion and rank14–16 subspace intake",
+      "scope": "The published Kihara arithmetic rank-at-least14 quartic is reconstructed symbolically and agrees with a separate rational implementation at five parameters. The existing rank14 control manifest replays. Exact inverse reconstruction recovers precisely t=+2,-2 and rational isomorphisms to that control. The cancelled j-map has degree432. The primitive homogeneous comparison with302 has no projective root modulo101, excluding all rational parameters of this one family without a height bound. Eleven retained primitive rank14–16 candidate subspaces are audited; five extend outside the earlier rank17 core (rank14 candidates32,58; rank15 candidate59; rank16 candidates60,86). These subspace ranks are not generic-rank certificates, and no alternative302 parent or universal MW14 exclusion is asserted.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-KIH14",
@@ -52778,7 +52816,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "No rational302 parameter on the certified fixed3A1/MW14 fibration",
-      "scope": "On the single certified fixed3A1/MW14 model, reduce the exact degree8,12 Weierstrass coefficients modulo1009 and compare j with302 by the homogeneous degree24 polynomial A(t)^3*B302^2-A302^3*B(t)^2. Every finite residue and infinity give a nonzero value. Thus no rational parameter has j equal to302, including parameters with denominators divisible by1009. This excludes only the source-identified fibration, not other MW14\u201316 parents or all constructions.",
+      "scope": "On the single certified fixed3A1/MW14 model, reduce the exact degree8,12 Weierstrass coefficients modulo1009 and compare j with302 by the homogeneous degree24 polynomial A(t)^3*B302^2-A302^3*B(t)^2. Every finite residue and infinity give a nonzero value. Thus no rational parameter has j equal to302, including parameters with denominators divisible by1009. This excludes only the source-identified fibration, not other MW14–16 parents or all constructions.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-K3-H3-FIXED-REVERSE-3A1-QQ",
@@ -52811,7 +52849,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Exact old-degree-three A2+A1/MW14 rational pencil and302 inverse exclusion",
-      "scope": "On the11952 determinant948 K3, D=O+P4+P11 is a primitive nef isotropic divisor of old degree3 with section Z=P7. Its frame has determinant948 and exactly eight signed roots by both PARI and independent exact rational LDL enumeration. The primitive root lattice is A2+A1, so the arithmetic generic MW rank is14, torsion is trivial and the full abstract MW lattice has determinant158. Exact rational slope functions give the pencil s and a trigonal equation; restriction to Z is Mobius. Good reduction of that pencil is checked at1009,1013,1021. At each prime, exact genus-one normalization and Riemann\u2013Roch on52 fibres reconstruct the degree24 j-map from49 samples with three checks. The K3 degree bound and preservation of degree make these exact reduced j-maps. The homogeneous302 inverse has one residue at1009 but no projective root at1013 or1021. Hence this fibration has no rational302 parameter. Explicit characteristic-zero Weierstrass coordinates for the14 basis sections remain uncompiled. This is outside the old-degree-two mA1 frame census, not a new surface isomorphism class, recovered302 parent, or universal MW14 exclusion.",
+      "scope": "On the11952 determinant948 K3, D=O+P4+P11 is a primitive nef isotropic divisor of old degree3 with section Z=P7. Its frame has determinant948 and exactly eight signed roots by both PARI and independent exact rational LDL enumeration. The primitive root lattice is A2+A1, so the arithmetic generic MW rank is14, torsion is trivial and the full abstract MW lattice has determinant158. Exact rational slope functions give the pencil s and a trigonal equation; restriction to Z is Mobius. Good reduction of that pencil is checked at1009,1013,1021. At each prime, exact genus-one normalization and Riemann–Roch on52 fibres reconstruct the degree24 j-map from49 samples with three checks. The K3 degree bound and preservation of degree make these exact reduced j-maps. The homogeneous302 inverse has one residue at1009 but no projective root at1013 or1021. Hence this fibration has no rational302 parameter. Explicit characteristic-zero Weierstrass coordinates for the14 basis sections remain uncompiled. This is outside the old-degree-two mA1 frame census, not a new surface isomorphism class, recovered302 parent, or universal MW14 exclusion.",
       "canonical_source": "elkies-k3/CURVE302_TRIANGLE_MW14_2026-09-07.md",
       "dependencies": [
         "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
@@ -52885,7 +52923,7 @@
       "id": "EC-CURVE302-MW14-16-PACKETS",
       "kind": "theorem",
       "state": "proved",
-      "title": "Complete107114-packet Mestre-incidence exclusion in five302 rank14\u201316 candidate spaces",
+      "title": "Complete107114-packet Mestre-incidence exclusion in five302 rank14–16 candidate spaces",
       "scope": "The five retained primitive spaces outside the previous rank17 core are frozen at numerical height190, first13 rays per parity class, a4m-ray cap per space, four primes1019,1031,1033,1039 and at most32 rational packets per space. Preparation reproduces all4092 earlier245 control packets and rechecks its recovered family and12 transported images. Candidate32/rank14 supplies2002 packets;58/rank14 supplies6216;59/rank15 supplies18823;60/rank16 supplies49030;86/rank16 supplies31043. Exact finite tests exclude107094 packets. All20 final modular survivors are unresolved chart cases and fail rational reconstruction. Full replay verifies every exclusion from frozen integer words, primitive embeddings, parity classes and hashes. There are no hits or unresolved packets. Counts are per space and are not deduplicated across spaces. This does not exclude other point selections, classes without13 selected rays, entire candidate subspaces, other families, or all302 parents. Numerical selection is not an interval-certified complete canonical-height ball; candidate dimension is not generic rank. Replay shares detector/chart code.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
@@ -53068,8 +53106,8 @@
       "id": "EC-CURVE302-WIDE-PACKETS",
       "kind": "theorem",
       "state": "proved",
-      "title": "Complete263434-packet exclusion after enlarging six302 inputs to12\u201324 points",
-      "scope": "At the unchanged numerical height190 and4m-ray cap per space, freeze the first up to24 points in every class with at least12 on the five retained rank14\u201316 spaces and original rank17 core. Exact12-,13-,24-point rational controls recover245 with generic identity and section transport. Preparation verifies that all237820 old thirteen-point packets occur unchanged as prefixes, and adds25614 twelve-point classes. The six inputs contain3446,8959,23625,55559,40916,130929 packets, totaling263434. Exact finite tests at10007,10009,10037 exclude every packet. Three core patterns at the first prime fail the second; all other survivors are unresolved chart cases, and none remains after the third. Full replay from frozen integer arrays verifies every exclusion, primitive embedding, parity, length and hash. No rational target packet remains, no parent is found, and no point search at higher height runs. Counts are per space and not deduplicated across spaces. The finite selection does not certify a complete canonical-height ball or exclude other points, cap-truncated points, whole spaces, other constructions or all parents.",
+      "title": "Complete263434-packet exclusion after enlarging six302 inputs to12–24 points",
+      "scope": "At the unchanged numerical height190 and4m-ray cap per space, freeze the first up to24 points in every class with at least12 on the five retained rank14–16 spaces and original rank17 core. Exact12-,13-,24-point rational controls recover245 with generic identity and section transport. Preparation verifies that all237820 old thirteen-point packets occur unchanged as prefixes, and adds25614 twelve-point classes. The six inputs contain3446,8959,23625,55559,40916,130929 packets, totaling263434. Exact finite tests at10007,10009,10037 exclude every packet. Three core patterns at the first prime fail the second; all other survivors are unresolved chart cases, and none remains after the third. Full replay from frozen integer arrays verifies every exclusion, primitive embedding, parity, length and hash. No rational target packet remains, no parent is found, and no point search at higher height runs. Counts are per space and not deduplicated across spaces. The finite selection does not certify a complete canonical-height ball or exclude other points, cap-truncated points, whole spaces, other constructions or all parents.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-CURVE302-MW14-16-PACKETS",
@@ -53206,7 +53244,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Four smaller visible-signature candidates lie outside all six tested302 spaces",
-      "scope": "The twelve covariant images in a nondegenerate Mestre square-completion quartic satisfy a signed relation: div(y-G)=sum P_i-6D_infinity and Qi=2[P_i-O]-[D_infinity-2O] imply sum Qi=0 for coherent signs. Their span can therefore have rank11 inside a higher-rank parent. Exact matrix comparison audits all13 retained rank11\u201313 finalists against the six tested spaces. Nine have explicit integral inclusions; candidates130/rank11,104/rank11,105/rank12,106/rank13 are outside every tested space. The latter three are nested with104,105 contained in106, so the two maximal new spaces are130 and106. No new point packet, family, generic rank or negative construction certificate is produced by this intake. Containment of subspaces alone does not prove coverage by a truncated packet.",
+      "scope": "The twelve covariant images in a nondegenerate Mestre square-completion quartic satisfy a signed relation: div(y-G)=sum P_i-6D_infinity and Qi=2[P_i-O]-[D_infinity-2O] imply sum Qi=0 for coherent signs. Their span can therefore have rank11 inside a higher-rank parent. Exact matrix comparison audits all13 retained rank11–13 finalists against the six tested spaces. Nine have explicit integral inclusions; candidates130/rank11,104/rank11,105/rank12,106/rank13 are outside every tested space. The latter three are nested with104,105 contained in106, so the two maximal new spaces are130 and106. No new point packet, family, generic rank or negative construction certificate is produced by this intake. Containment of subspaces alone does not prove coverage by a truncated packet.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-CURVE302-WIDE-PACKETS",
@@ -53239,7 +53277,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete2771-packet exclusion in two smaller302 visible-signature spaces",
-      "scope": "The calibrated12\u201324-point engine is applied at numerical height190 to two frozen primitive spaces, candidate106/rank13 and130/rank11. Preparation verifies the existing rational12-,13-,24-point controls before target selection. The spaces contain86282 and18047 selected rays and2634 and137 eligible packets, respectively. All2771 packets are excluded:2632+137 at10007 and2 at10009. Every exclusion is replayed from frozen integer inputs and hashes; no packet is unresolved and none requires rational reconstruction. The wrapper finalizes against exactly two labels, despite a legacy six-space boundary string in the saved engine output. No complete numerical height-ball proof, whole-subspace exclusion, generic-rank exclusion or recovered parent is claimed. Replay shares the detector.",
+      "scope": "The calibrated12–24-point engine is applied at numerical height190 to two frozen primitive spaces, candidate106/rank13 and130/rank11. Preparation verifies the existing rational12-,13-,24-point controls before target selection. The spaces contain86282 and18047 selected rays and2634 and137 eligible packets, respectively. All2771 packets are excluded:2632+137 at10007 and2 at10009. Every exclusion is replayed from frozen integer inputs and hashes; no packet is unresolved and none requires rational reconstruction. The wrapper finalizes against exactly two labels, despite a legacy six-space boundary string in the saved engine output. No complete numerical height-ball proof, whole-subspace exclusion, generic-rank exclusion or recovered parent is claimed. Replay shares the detector.",
       "canonical_source": "elliptic-curves/notes/CURVE302_CONSTRUCTION_RECOVERY.md",
       "dependencies": [
         "EC-CURVE302-VISIBLE-SUBSPACE-INTAKE",
@@ -53276,7 +53314,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "All660951 within-pencil pairs of stored302 quadratic covers have genus-one fibre products",
-      "scope": "Exact replay reconstructs the branch discriminants of all6417 stored line covers from31 hash-pinned cubic-pencil checkpoints, verifies unramified rational lifts at the302 parameter, and proves all normalized branch quadratics irreducible using prime nonsquare witnesses. Each pencil has207 distinct monic irreducible quadratics, hence every distinct within-pencil pair has disjoint geometric branch sets. Its normalized V4 fibre product is geometrically connected of genus1 by Riemann\u2013Hurwitz. Therefore none of these660951 pairs admits a common rational cover of any degree. A separate exact degree-four parametrization verifies the positive genus-zero case for branch sets{0,1} and{0,4}. No comparison across different base pencils or exclusion of other lines, multisections or parents is claimed. The pinned local checkpoints can be regenerated by the original source script. Replay shares this checker.",
+      "scope": "Exact replay reconstructs the branch discriminants of all6417 stored line covers from31 hash-pinned cubic-pencil checkpoints, verifies unramified rational lifts at the302 parameter, and proves all normalized branch quadratics irreducible using prime nonsquare witnesses. Each pencil has207 distinct monic irreducible quadratics, hence every distinct within-pencil pair has disjoint geometric branch sets. Its normalized V4 fibre product is geometrically connected of genus1 by Riemann–Hurwitz. Therefore none of these660951 pairs admits a common rational cover of any degree. A separate exact degree-four parametrization verifies the positive genus-zero case for branch sets{0,1} and{0,4}. No comparison across different base pencils or exclusion of other lines, multisections or parents is claimed. The pinned local checkpoints can be regenerated by the original source script. Replay shares this checker.",
       "canonical_source": "elkies-k3/CURVE302_SHARED_BRANCH_GATE.md",
       "dependencies": [
         "EC-K3-CURVE302-INVERSE-NINE-DIRECTIONS"
@@ -53308,7 +53346,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Exact genus-three rational-branch gate and genus-nine incidence curve over302",
-      "scope": "For pencil0 and its first basepoint, the complete symbolic pointed-line restriction gives disc_u(disc_s(g0+u*g1))=16*Res_s(g0,g1)=16R8(m). R8 is squarefree of degree8 with exactly the eight other-basepoint slopes as rational roots. A rational branch pair requires Y\u00b2=R8; a rational residual302 point additionally requires H\u00b2=D4, a squarefree quartic coprime toR8, birational to302 by the supplied point map. Their normalized compositum has genus9 and double-covers302. Pullback and norm compose to[2], so ECR31 implies Jacobian rank at least31; ordinary Chabauty rank below genus cannot hold on this full Jacobian. Exact mod17 projective root exclusions handle da=0 andD4=0, and direct vertical-line computation excludes rational branch points there. Apart from the eight known degenerate slopes, all rational pointed-line candidates for this basepoint/pencil are represented by the simultaneous square equations. Exact coefficients and degenerate points are preserved. No rational-point search, genus-three Jacobian rank, new elliptic surface, generic basis or recovered parent is claimed. Replay shares the checker.",
+      "scope": "For pencil0 and its first basepoint, the complete symbolic pointed-line restriction gives disc_u(disc_s(g0+u*g1))=16*Res_s(g0,g1)=16R8(m). R8 is squarefree of degree8 with exactly the eight other-basepoint slopes as rational roots. A rational branch pair requires Y²=R8; a rational residual302 point additionally requires H²=D4, a squarefree quartic coprime toR8, birational to302 by the supplied point map. Their normalized compositum has genus9 and double-covers302. Pullback and norm compose to[2], so ECR31 implies Jacobian rank at least31; ordinary Chabauty rank below genus cannot hold on this full Jacobian. Exact mod17 projective root exclusions handle da=0 andD4=0, and direct vertical-line computation excludes rational branch points there. Apart from the eight known degenerate slopes, all rational pointed-line candidates for this basepoint/pencil are represented by the simultaneous square equations. Exact coefficients and degenerate points are preserved. No rational-point search, genus-three Jacobian rank, new elliptic surface, generic basis or recovered parent is claimed. Replay shares the checker.",
       "canonical_source": "elkies-k3/CURVE302_SHARED_BRANCH_GATE.md",
       "dependencies": [
         "EC-K3-CURVE302-SHARED-BRANCH-GATE",
@@ -53380,7 +53418,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Curve302 genus-three branch Jacobian is Q-simple with torsion2^6; two finite point boxes replayed",
-      "scope": "The genus-three branch carrier is square-scaled and all336 root-triple charts are compared. The best presentation of each of56 unordered triples is retained and the first two coefficient-height charts are frozen before target testing. Shared search/transport controls recover the known nondegenerate point on y\u00b2=40320*product(x-i,i=0..7). Each target chart tests319407 reduced rational values with inclusive numerator/denominator height512; only z=0,1 and the chart infinity are rational points in those boxes, all degenerate. PARI agrees with complete modular-sieved integer enumeration. Counts include cross-chart overlap and give no global rational-point exclusion. Independent direct curve counts over Fp,Fp\u00b2,Fp\u00b3 at47 and53 reproduce both Frobenius polynomials and Jacobian orders90176,147968, whose gcd64 combines with all64 rational two-torsion points to prove torsion(Z/2)^6. A Rabin/Bezout certificate proves the degree-six Frobenius polynomial at47 irreducible modulo3, hence the Jacobian is simple overQ and has no Q-defined elliptic quotient. No absolute simplicity or Mordell-Weil rank bound is asserted. If its rank were zero, rational points would all be Weierstrass by the unique hyperelliptic degree-two linear system. The subsequent EC-K3-CURVE302-BRANCH-JACOBIAN-ENLARGEMENT disproves the rank-zero premise by an explicit nontorsion divisor. Global nondegenerate rational points remain UNKNOWN; no new cover or parent is constructed here.",
+      "scope": "The genus-three branch carrier is square-scaled and all336 root-triple charts are compared. The best presentation of each of56 unordered triples is retained and the first two coefficient-height charts are frozen before target testing. Shared search/transport controls recover the known nondegenerate point on y²=40320*product(x-i,i=0..7). Each target chart tests319407 reduced rational values with inclusive numerator/denominator height512; only z=0,1 and the chart infinity are rational points in those boxes, all degenerate. PARI agrees with complete modular-sieved integer enumeration. Counts include cross-chart overlap and give no global rational-point exclusion. Independent direct curve counts over Fp,Fp²,Fp³ at47 and53 reproduce both Frobenius polynomials and Jacobian orders90176,147968, whose gcd64 combines with all64 rational two-torsion points to prove torsion(Z/2)^6. A Rabin/Bezout certificate proves the degree-six Frobenius polynomial at47 irreducible modulo3, hence the Jacobian is simple overQ and has no Q-defined elliptic quotient. No absolute simplicity or Mordell-Weil rank bound is asserted. If its rank were zero, rational points would all be Weierstrass by the unique hyperelliptic degree-two linear system. The subsequent EC-K3-CURVE302-BRANCH-JACOBIAN-ENLARGEMENT disproves the rank-zero premise by an explicit nontorsion divisor. Global nondegenerate rational points remain UNKNOWN; no new cover or parent is constructed here.",
       "canonical_source": "elkies-k3/CURVE302_SHARED_BRANCH_GATE.md",
       "dependencies": [
         "EC-K3-CURVE302-RATIONAL-BRANCH-CARRIER"
@@ -53850,7 +53888,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Six inequivalent exact MW15 triangle fibrations all exclude 302",
-      "scope": "Six fixed height-six words paired with P6 on the determinant-948 K3 give explicit rational triangle pencils with rational zero sections. Exact orthogonal frames have precisely six roots by PARI and independent rational LDL enumeration. The root lattice is primitive A2, proving exact arithmetic generic rank 15, trivial torsion and a full abstract MW lattice of determinant 316. Every rational pencil and degree-one zero map is reconstructed. The frozen three-prime screen excludes five pencils and retains one UNKNOWN. The remaining row 4 has an exact generic birational plane-cubic conversion over Q(s), explicit Jacobian coefficients and a degree-24 j-map. Its primitive integral comparison with j302 has no projective root modulo 97, completing the six all-rational exclusions. Six different degree-44 normalized branch discriminants at 1013 prove the fibrations pairwise inequivalent, even over Qbar. Eighteen separate fibre normalizations agree with the generic modular j-maps. The final replay rebuilds all six frames, pencils, modular maps, exact rational conversion, inverse obstruction and branch signatures. This is a finite roster on one K3 surface, not a classification of degree-three fibrations or all parents. No full Weierstrass-coordinate MW basis or specialization to 302 is constructed. The broad MW14\u201316 parent objective remains open.",
+      "scope": "Six fixed height-six words paired with P6 on the determinant-948 K3 give explicit rational triangle pencils with rational zero sections. Exact orthogonal frames have precisely six roots by PARI and independent rational LDL enumeration. The root lattice is primitive A2, proving exact arithmetic generic rank 15, trivial torsion and a full abstract MW lattice of determinant 316. Every rational pencil and degree-one zero map is reconstructed. The frozen three-prime screen excludes five pencils and retains one UNKNOWN. The remaining row 4 has an exact generic birational plane-cubic conversion over Q(s), explicit Jacobian coefficients and a degree-24 j-map. Its primitive integral comparison with j302 has no projective root modulo 97, completing the six all-rational exclusions. Six different degree-44 normalized branch discriminants at 1013 prove the fibrations pairwise inequivalent, even over Qbar. Eighteen separate fibre normalizations agree with the generic modular j-maps. The final replay rebuilds all six frames, pencils, modular maps, exact rational conversion, inverse obstruction and branch signatures. This is a finite roster on one K3 surface, not a classification of degree-three fibrations or all parents. No full Weierstrass-coordinate MW basis or specialization to 302 is constructed. The broad MW14–16 parent objective remains open.",
       "canonical_source": "elkies-k3/CURVE302_SIX_MW15_TRIANGLES_2026-09-07.md",
       "dependencies": [
         "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
@@ -53966,7 +54004,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Split I4 forces MW at most13 for all Mestre old-section triangles and at most15 at old degree3",
-      "scope": "On each of the six certified determinant468 Mestre surfaces, the four split I4 components are rational irreducible curves summing to the old fibre. Their exact affine A3 Gram matrices and all20 nonnegative degree3 intersection profiles are checked. A nef new fibre of old degree3 leaves a rational old component untouched, supplying a nonzero rational vertical root direction and giving arithmetic generic MW rank at most15. If the new fibre is a triangle of three old rational sections meeting pairwise once, the untouched component is orthogonal to the triangle and supplies A1 beside its A2, giving rank at most13. This covers every old-section triangle, without a height or word bound. A degree1 fibration leaves three independent old I4 components vertical, giving rank at most13; together with the existing complete degree2 bound, an MW16 constructor on these surfaces must have old degree at least4. Effectivity, rationality and full arithmetic Picard rank18 are inputs from the prior NS proof. Nontriangle degree3 MW14\u201315 fibrations and higher-degree constructions remain open. No302 inverse, new elliptic equation or full generic coordinate basis is constructed. The separate finite256-class and48-frame exploratory misses are not premises of this theorem.",
+      "scope": "On each of the six certified determinant468 Mestre surfaces, the four split I4 components are rational irreducible curves summing to the old fibre. Their exact affine A3 Gram matrices and all20 nonnegative degree3 intersection profiles are checked. A nef new fibre of old degree3 leaves a rational old component untouched, supplying a nonzero rational vertical root direction and giving arithmetic generic MW rank at most15. If the new fibre is a triangle of three old rational sections meeting pairwise once, the untouched component is orthogonal to the triangle and supplies A1 beside its A2, giving rank at most13. This covers every old-section triangle, without a height or word bound. A degree1 fibration leaves three independent old I4 components vertical, giving rank at most13; together with the existing complete degree2 bound, an MW16 constructor on these surfaces must have old degree at least4. Effectivity, rationality and full arithmetic Picard rank18 are inputs from the prior NS proof. Nontriangle degree3 MW14–15 fibrations and higher-degree constructions remain open. No302 inverse, new elliptic equation or full generic coordinate basis is constructed. The separate finite256-class and48-frame exploratory misses are not premises of this theorem.",
       "canonical_source": "elliptic-curves/notes/MESTRE_DEGREE3_COMPONENT_GATE_2026-09-07.md",
       "dependencies": [
         "EC-MESTRE-SIX-FULL-NS-GRAMS-20260907",
@@ -54702,7 +54740,7 @@
       "id": "EC-SUBMITTED627-630-EXACT-CONDUCTORS-20260907",
       "kind": "example",
       "state": "proved",
-      "title": "Exact complete bad-prime lists and conductors for all four ICARM627\u2013630",
+      "title": "Exact complete bad-prime lists and conductors for all four ICARM627–630",
       "scope": "Exact equation matches bind the four submissions to local90,186,71,40 respectively. Full minimal-discriminant factorizations and saved ECPP or deterministic primality certificates prove complete bad-prime support. Independent Sage generic Tate and PARI elllocalred agree on every conductor exponent and Kodaira type, and certify global minimality. Conductors have129,123,124,120 digits for627,628,629,630. The final88-digit composite for628 splits into primes1297327695885285412767490764778583 and7644533052528481157308027511138991115839138041559182477 with CADO-NFS in500.62 elapsed seconds under a3600-second budget. Earlier PARI, ECM and FLINT timeouts and the original three-exact/one-unknown index are retained and replayed as history. A versioned supplement closes628 and the current index selects four exact certificates. The renewed201-curve conductor comparison is separate. No point or rank change, universal record claim or external submission is made.",
       "canonical_source": "elliptic-curves/notes/SUBMITTED627_630_BAD_PRIMES_2026-09-07.md",
       "dependencies": [],
@@ -56025,7 +56063,7 @@
       "id": "EC-FOUNDRY-V3-LEDGER-CONDUCTORS-SNAPSHOT-20260910",
       "kind": "example",
       "state": "proved",
-      "title": "Second foundry snapshot adds94 distinct rank-22\u201326 curves and certifies6 exact conductors",
+      "title": "Second foundry snapshot adds94 distinct rank-22–26 curves and certifies6 exact conductors",
       "scope": "At a fixed cutoff of the still-running high-rank-foundry-v3 experiment,180 sealed rank-at-least22 endpoints reduce by exact Q-isomorphism and strongest-subgroup selection to94 curves absent from the321-curve baseline:39 lower bounds22,25 at23,23 at24,6 at25 and1 at26. Every selected packet passes fresh exact two-path finite-group replay, rational2-torsion exclusion, baseline nonisomorphism and pairwise nonisomorphism. Eight selected curves also had independently replayed conductor endpoints at the cutoff:6 exact conductors and2 partial UNKNOWN bounds, each freshly replayed with exact model transport, prime certificates and Sage generic Tate/PARI elllocalred agreement. The inventory therefore grows to415 curves with256 exact conductors and159 unresolved. Later live endpoints are excluded. No exact-rank, worldwide-novelty or conductor-record claim is made.",
       "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_V2_2026-09-10.md",
       "dependencies": [
@@ -56090,7 +56128,7 @@
       "id": "EC-FOUNDRY-CURVE-LEDGER-SNAPSHOT-20260909",
       "kind": "example",
       "state": "proved",
-      "title": "First foundry ledger snapshot adds30 distinct curves of certified lower bound22\u201326 and strengthens one to25",
+      "title": "First foundry ledger snapshot adds30 distinct curves of certified lower bound22–26 and strengthens one to25",
       "scope": "A fixed selection of sealed foundry commissioning/production exports supplies30 pairwise Q-nonisomorphic curves absent from the prior291-curve inventory: nine certified lower bounds22, fourteen23, two24, four25 and one26. The strongest is07ca9 at-1508/909. The existing08f72 fibre at1245/2519 strengthens from23 to25. All31 selected packets pass fresh native-MW17-prefix, exact finite-group reduction and rational2-torsion-exclusion replays through both existing verifier paths. Packet hashes and two-replay receipts agree. Exact Q-isomorphism tests distinguish equal-j twists and avoid recounting imported historical curves. The ledger grows to321 curves,274 highlighted under the existing display rule; conductors of the30 additions remain UNKNOWN. No exact ranks, worldwide novelty, conductor records, or new search execution are claimed.",
       "canonical_source": "elliptic-curves/notes/FOUNDRY_CURVE_LEDGER_2026-09-09.md",
       "dependencies": [
@@ -56215,7 +56253,7 @@
       "kind": "example",
       "state": "proved",
       "title": "Frozen sixty-fibre R17 panel certifies one M27, three M26 and four M25 subgroups",
-      "scope": "A prospectively frozen panel selects ten fresh-relative-to-pinned-ledgers candidates in each of six compact R17 fibrations, five of parameter height at most1024 and five of height1025\u20134096. All60 generic inputs and final packets verify; equations are pairwise nonisomorphic over Q. Bounded first-seed searches find48 seeds,26 on the first call. Full saved-cloud replay contributes85 directions beyond the respective M17 inputs; at most100 cumulative complementary calls per seeded fibre contribute153 more. All6090 point calls are uncensored, with no phase resource stops or deep suffixes. Final subgroup lower bounds are 12x17,7x18,4x19,5x20,5x21,4x22,6x23,9x24,4x25,3x26,1x27. The103b2 fibre at877/781 reaches27 using one seed call plus100 complementary calls, last gaining at67. Six other fibres gain at call75 or later. Lower-height candidates seed27/30 versus21/30 at higher height, a descriptive selected-panel comparison only. Full policy/evidence audit, fresh finite independence, portable certificate checks and analysis replay pass. No exact rank, rank28 or higher result, causal height effect, conductor record or public novelty is claimed.",
+      "scope": "A prospectively frozen panel selects ten fresh-relative-to-pinned-ledgers candidates in each of six compact R17 fibrations, five of parameter height at most1024 and five of height1025–4096. All60 generic inputs and final packets verify; equations are pairwise nonisomorphic over Q. Bounded first-seed searches find48 seeds,26 on the first call. Full saved-cloud replay contributes85 directions beyond the respective M17 inputs; at most100 cumulative complementary calls per seeded fibre contribute153 more. All6090 point calls are uncensored, with no phase resource stops or deep suffixes. Final subgroup lower bounds are 12x17,7x18,4x19,5x20,5x21,4x22,6x23,9x24,4x25,3x26,1x27. The103b2 fibre at877/781 reaches27 using one seed call plus100 complementary calls, last gaining at67. Six other fibres gain at call75 or later. Lower-height candidates seed27/30 versus21/30 at higher height, a descriptive selected-panel comparison only. Full policy/evidence audit, fresh finite independence, portable certificate checks and analysis replay pass. No exact rank, rank28 or higher result, causal height effect, conductor record or public novelty is claimed.",
       "canonical_source": "elliptic-curves/notes/R17_SIXTY_SEED_COMPLEMENT_PANEL_2026-09-09.md",
       "dependencies": [
         "EC-R17-EXACT-PARITY-MINIMA-20260906"
@@ -56350,8 +56388,8 @@
       "id": "EC-CURVE302-RELATIVE-IDEAL-ANATOMY-SEED-OBSTRUCTION-20260910",
       "kind": "theorem",
       "state": "proved",
-      "title": "Curve302 strict ideal image is disjoint from all inherited ideals; the full quotient contributes12\u201314 ideal dimensions and both seed norm equations are obstructed",
-      "scope": "Retrospective exact arithmetic on the certified public31 and recovered generic17 Kummer images W and G. Everywhere-even dimensions are22 and8; ordinary unramified character dimensions are20 and6. All20 known ordinary characters paired against the eight inherited and ten strict half ideals give ranks8,10,18, proving zero unit kernel on each block, disjoint ordinary ideal images even modulo2, and a split elementary18-dimensional factor. Four more exact half ideals complete W_even; the20x22 pairing has rank19, giving19 split elementary factors, while20 independent characters prove ordinary class two-rank at least20. Dirichlet bounds the norm-positive unit kernel by2, so the whole ideal image has dimension20\u201322 and its quotient by the exact inherited8-image has dimension12\u201314. The Artin kernel has dimension3; seven single reductions give no unit but settle no principality question. U_W/U_G maps isomorphically to W/G, representing all fourteen directions by ordinary unramified characters after generic correction. Evaluating the20 characters on the two historical seed relative norm ideals gives chi0(R0)=1 and chi2(R1)=1. Both integral norm equations have no integer solution despite their previously certified everywhere local solubility; the exhaustive correction list proves the first seed ideal lies outside the full inherited image, even modulo2, with augmented split rank9. Independent replay checks22 ideal squares by lattices,440 Artin entries and local repairs, then40 seed entries by independent Jacobi/Hilbert evaluation, and reruns the original correction/norm-form proof. Full class groups, exact Selmer/rank upper bounds, the remaining0\u20132 unit kernel, prospective prediction and propagation remain UNKNOWN.",
+      "title": "Curve302 strict ideal image is disjoint from all inherited ideals; the full quotient contributes12–14 ideal dimensions and both seed norm equations are obstructed",
+      "scope": "Retrospective exact arithmetic on the certified public31 and recovered generic17 Kummer images W and G. Everywhere-even dimensions are22 and8; ordinary unramified character dimensions are20 and6. All20 known ordinary characters paired against the eight inherited and ten strict half ideals give ranks8,10,18, proving zero unit kernel on each block, disjoint ordinary ideal images even modulo2, and a split elementary18-dimensional factor. Four more exact half ideals complete W_even; the20x22 pairing has rank19, giving19 split elementary factors, while20 independent characters prove ordinary class two-rank at least20. Dirichlet bounds the norm-positive unit kernel by2, so the whole ideal image has dimension20–22 and its quotient by the exact inherited8-image has dimension12–14. The Artin kernel has dimension3; seven single reductions give no unit but settle no principality question. U_W/U_G maps isomorphically to W/G, representing all fourteen directions by ordinary unramified characters after generic correction. Evaluating the20 characters on the two historical seed relative norm ideals gives chi0(R0)=1 and chi2(R1)=1. Both integral norm equations have no integer solution despite their previously certified everywhere local solubility; the exhaustive correction list proves the first seed ideal lies outside the full inherited image, even modulo2, with augmented split rank9. Independent replay checks22 ideal squares by lattices,440 Artin entries and local repairs, then40 seed entries by independent Jacobi/Hilbert evaluation, and reruns the original correction/norm-form proof. Full class groups, exact Selmer/rank upper bounds, the remaining0–2 unit kernel, prospective prediction and propagation remain UNKNOWN.",
       "canonical_source": "elliptic-curves/notes/CURVE302_RELATIVE_DESCENT_AND_MATCHED_FIBRES_2026-09-10.md",
       "dependencies": [
         "EC-CURVE302-EXACT-STRICT-DESCENT-ANATOMY-20260910",
@@ -56577,7 +56615,7 @@
       "id": "EC-BROAD-RANK-LEDGER-20260912",
       "kind": "example",
       "state": "proved",
-      "title": "Completed broad search adds 30 distinct curves at certified lower bounds 23\u201325",
+      "title": "Completed broad search adds 30 distinct curves at certified lower bounds 23–25",
       "scope": "The completed broad-rank-v1 campaign supplies 30 certified fibres above lower bound 22: 25 at 23, four at 24 and one at 25. Fresh replay of every retained point packet through both existing finite-group paths verifies point membership, independence and rational 2-torsion exclusion. Exact specialization matches the normalized parent equation and generic point prefix. Exact Q-isomorphism checks exclude duplicates within this cohort and relative to the pinned 415-curve baseline. The complete inventory grows to 445 curves, with 398 meeting the existing main README display rule. This proves subgroup lower bounds and baseline distinctness, not exact ranks, worldwide novelty, minimal-model metrics or conductors.",
       "canonical_source": "elliptic-curves/notes/BROAD_RANK_CURVE_LEDGER_2026-09-12.md",
       "dependencies": [
@@ -57038,7 +57076,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Construct two independent new sections on one quadratic cover with infinitely many rational specializations",
-      "scope": "Construct two independent new sections over the same nonconstant quadratic extension of the original parameter field of a high-rank elliptic parent, without fitting desired exceptional points. Prove independence modulo the inherited subgroup and supply a covering base with infinitely many rational points, for example a rational parametrization or a genus-one base with a certified rational nontorsion point. For a generic MW17 parent the target lower bound is19 after this one quadratic cover. A degree-four compositum of separate quadratic covers, a relabelled intermediate quotient, fitted exceptional ancestry, another rootless frame or a bare MW17 equation does not satisfy this target. Existing ancestry degrees exclude only the selected emitted extensions; other carriers, exceptional rebasing and alternative arithmetic constructions remain possible. Different-NS candidates still require an exact rational marking and a demonstrated arithmetic advantage. The 25-pencil exclusion closes its 300 complete smooth genus-one pencil pairs. The subsequent projective comparison closes all 1,675 pairs of 67 frozen height-six regular chord nets with these 25 pencils, including every rational repeated-root position; it supplies no positive common cover. The subsequent generic-only Mestre construction supplies two new independent anti-invariant sections with height matrix diag(24,24) on one genus21 quadratic cover, hence rank at least19. Its entire rational-auxiliary-function family forces genus at least9 and cannot supply infinitely many rational base points. A separate shared-ordinate cubic tangent from each of the136 published generic basis pairs gives only covers of genus at least86. The complete direct11952 alternate-Q80 minimum-norm8 layer is now also closed: all63917 full genus-one pencils have disjoint rational branch images across all2042659486 pairs, and every pencil is itself injective. The subsequent full49 norm12 moving-contact pencils also have disjoint rational branch images from each other and the norm8 bank. These combined63966 pencils exhaust all smooth genus-one bisections modulo inherited section translation on this parent; all2045792595 pairs and all within-pencil collisions close. A solution with a genus-one quadratic base on this parent must therefore use a singular bisection image of arithmetic genus at least2 in at least one independent direction. Such singular images and other parents remain outside the exclusion. The requested positive construction with all conditions remains UNKNOWN; other carriers, generic words, identities and arithmetic parents are not excluded. The sharp coefficient-divisor criterion now extends the same Mestre genus-at-least9 obstruction to direct11952 alternate Q80, Curve302 MW17 and X1092 class1. The same u=2 pair remains independent on genus21 covers there. A different common-quartic polynomial system has a sufficient height8 independence proof and arithmetic-genus5 images, but no solution or positive rational base is constructed.",
+      "scope": "Construct two independent new sections over the same nonconstant quadratic extension of the original parameter field of a high-rank elliptic parent, without fitting desired exceptional points. Prove independence modulo the inherited subgroup and supply a covering base with infinitely many rational points, for example a rational parametrization or a genus-one base with a certified rational nontorsion point. For a generic MW17 parent the target lower bound is19 after this one quadratic cover. A degree-four compositum of separate quadratic covers, a relabelled intermediate quotient, fitted exceptional ancestry, another rootless frame or a bare MW17 equation does not satisfy this target. Existing ancestry degrees exclude only the selected emitted extensions; other carriers, exceptional rebasing and alternative arithmetic constructions remain possible. Different-NS candidates still require an exact rational marking and a demonstrated arithmetic advantage. The 25-pencil exclusion closes its 300 complete smooth genus-one pencil pairs. The subsequent projective comparison closes all 1,675 pairs of 67 frozen height-six regular chord nets with these 25 pencils, including every rational repeated-root position; it supplies no positive common cover. The subsequent generic-only Mestre construction supplies two new independent anti-invariant sections with height matrix diag(24,24) on one genus21 quadratic cover, hence rank at least19. Its entire rational-auxiliary-function family forces genus at least9 and cannot supply infinitely many rational base points. A separate shared-ordinate cubic tangent from each of the136 published generic basis pairs gives only covers of genus at least86. The complete direct11952 alternate-Q80 minimum-norm8 layer is now also closed: all63917 full genus-one pencils have disjoint rational branch images across all2042659486 pairs, and every pencil is itself injective. The subsequent full49 norm12 moving-contact pencils also have disjoint rational branch images from each other and the norm8 bank. These combined63966 pencils exhaust all smooth genus-one bisections modulo inherited section translation on this parent; all2045792595 pairs and all within-pencil collisions close. A solution with a genus-one quadratic base on this parent must therefore use a singular bisection image of arithmetic genus at least2 in at least one independent direction. Such singular images and other parents remain outside the exclusion. The requested positive construction with all conditions remains UNKNOWN; other carriers, generic words, identities and arithmetic parents are not excluded. The sharp coefficient-divisor criterion now extends the same Mestre genus-at-least9 obstruction to direct11952 alternate Q80, Curve302 MW17 and X1092 class1. The same u=2 pair remains independent on genus21 covers there. A different common-quartic polynomial system has a sufficient height8 independence proof and arithmetic-genus5 images, but no solution or positive rational base is constructed on these MW17 parents. The common-quartic singularity analysis now constructs exact genus0 and positive-rank genus1 controls with height determinant48 on new24I1 K3 parents; their inherited ranks are UNKNOWN, so they do not close the MW17 objective. On all four retained parents every algebraic constant abscissa gives normalization genus at least4. Both abscissas in a successful fixed-parent common-quartic solution must therefore be nonconstant. The complete quartic chart, including repeated quartic factors and infinity, and any whole-family genus lower bound on these fixed parents remain UNKNOWN. The subsequent common-quartic factor reduction gives15 exact degree/gcd strata in nine complete coordinate patches. Its squarefree-quartic height pairing is4-k-2*j. The entire k=4 genus-one stratum on Q80 is now excluded by everywhere-unramified Kummer descent and the complete smooth-image theorem. A remaining Q80 genus-one solution requires full cubic splitting over branch residue fields of total degree1 through4; if D is irreducible, its quartic residue field must split the cubic. The genus31 splitting curve has not been proved to lack such divisors. Repeated-quartic genus0 and all other strata remain open.",
       "dependencies": [
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912",
@@ -57049,7 +57087,9 @@
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913",
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
-        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -57112,6 +57152,20 @@
           "reason": "The degree8 A and degree12 B root fields fail the necessary local cancellation conditions. Twenty branch points remain for every rational auxiliary function; other identities and untested parents remain outside the theorem.",
           "witnesses": [
             "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
+          ]
+        },
+        {
+          "attack": "Trying constant abscissas in the common-quartic construction on the four retained MW17 equations as an unresolved genus0/1 route",
+          "reason": "A degree33 critical-value norm is squarefree at a common good prime on all four equations. Every algebraic constant abscissa has at most one node and normalization genus at least4. Nonconstant quartic abscissas remain outside this theorem; the low-genus controls use new parents of unknown inherited rank.",
+          "witnesses": [
+            "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914"
+          ]
+        },
+        {
+          "attack": "Reopening the squarefree common-quartic Q80 stratum where both polynomial sections choose the same2-torsion point at all four branch values",
+          "reason": "The product Kummer class is everywhere unramified and inherited. Halves of the sum and difference then give two independent smooth genus-one images on the same cover, excluded by the complete Q80 theorem. This does not apply to partial branch agreement or repeated-quartic genus0.",
+          "witnesses": [
+            "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
           ]
         }
       ]
@@ -57755,6 +57809,252 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Common-quartic genus0/1 controls and a complete constant-abscissa exclusion on four MW17 parents",
+      "scope": "For the polynomial bisection class2O+4F on a24I1 K3, the local model y^2=z^m contributes delta=floor(m/2), with infinity included in the homogeneous degree12 branch section. A common quartic D may have one double or triple factor: after D=e^2*d, residual binary degree2 gives genus0 and degree4 gives genus1; square and constant-field boundaries are excluded. With branch disjoint from the parent discriminant, distinct polynomial abscissas of degree at most4 still give independent anti-invariant height8 sections modulo the full inherited group. Setting s=t^4+1, A=D*(2*s+1)-1 and B=D*s^2 constructs two explicit24I1 K3 controls: D=t^4+t+1 gives four nodes per image and a genus1 base birational to Y^2=X^3-4X+1 with a certified rational nontorsion point; D=t^2*(t^2+1) gives five nodes per image and a rational conic normalization. Both pairs have height Gram[[8,-4],[-4,8]], determinant48 and infinitely many rational base values. These are new parents with inherited rank UNKNOWN, not retained MW17 solutions or rank19 claims. Separately, for every algebraic constant c on published R17, direct11952 alternate Q80, recovered Curve302 and X1092 class1, c^3+A(t)*c+B(t) has at most one double root and no higher singularity. Degree33 critical-point and critical-value resultant certificates modulo1009 prove genus4 at33 distinct algebraic critical values and genus5 elsewhere. Any common-quartic solution on these fixed parents must therefore use two nonconstant abscissas. The full nonconstant quartic chart and a family-wide genus lower bound on the fixed parents remain UNKNOWN. Integer/Fraction replay checks all four norm certificates, both controls, sections, group laws, branch/node/infinity guards and rational base maps; eight controls pass.",
+      "canonical_source": "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
+      ],
+      "checker": "elkies-k3/scripts/verify_common_quartic_singularity_locus.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:87f2f8ae2b317f1e68d5a6dd075a367664df1da076162b4bbcf0491f942a6e18",
+      "software_lock": [
+        "elkies-k3/scripts/verify_common_quartic_singularity_locus.py",
+        "elkies-k3/scripts/certify_common_quartic_singularity_locus.sage",
+        "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py",
+        "elkies-k3/scripts/verify_r17_mestre_shared_twist.py",
+        "tests/test_common_quartic_singularity_locus.py",
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/alternate-q80-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/curve302-parent-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/five-nodes-genus-zero-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/four-nodes-genus-one-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/published-r17-checkpoint.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/result.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/x1092-class1-checkpoint.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-FINITE-CANCELLATION-PREDICTOR-20260914",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact finite-cancellation neighbour law and positive withheld-model signal; measured V3 control gain misses strict CPU gate",
+      "scope": "The retained endpoint census joins all491 current registry curves to documented generic subgroups and includes full-cohort gains below the registry cutoff plus four public record controls:6285 exceptional-point observations in1962 curve/generic-basis banks and1961 j groups. On3924 target-blind generic anchors,11741 models yield75272 exactly replayed signed point/model evaluations and7616068 verified residue leaves. For a jointly primitive degree4 pair N,D and integral T of determinant plus or minus p, its transformed content is p^e with0<=e<=4 and the primitive-coordinate gcd is p^delta with delta in{0,1}; hence g_new/g_old=p^(4delta-e). All7817 retained neighbours and50132 target comparisons verify equality of every other prime contribution. All30858 observed gcd values were fully factored retrospectively; no discriminant or C/L optimization enters features. Distinguished residue balls make the neighbour coordinate cheaper with measured j-weighted frequency0.9931 versus0.3337 outside. A q-differential residue prior removes most apparent excess cancellation. Fixed-penalty ridge with real and finite features improves the held-out H-squared proxy by11.25% beyond fitted real features, with consistent whole-family holdouts; a separately labelled post-primary q ablation leaves3.08% incremental improvement from gcd expectations. These are conditional representative-height statistics, not a probability theorem for rational points or complete quotient directions. A separately frozen12-curve V3 control on known M18-M20 subgroups excludes all test j groups from training: the selector recovers10 independent next directions and literal withheld points on9 cases, versus9 directions and7 literal-hit cases for factor-free; it uses237 versus290 point calls and180.488128 versus200.515316 process-tree CPU seconds. All24 arms and527 point calls complete; every selected feature/map, transcript and19 enlarged subgroups replay, including independent Sage finite-group arithmetic. The9.987859% saving is below the predeclared10% CPU threshold; an exploratory case-bootstrap CPU-ratio interval includes1. The strict CPU gate remains failed, the policy is opt-in, and no default replacement, population speedup, rank upper bound, new record or rank32 result is claimed. Two stale interim source bindings and the opaque timing-dependent CPU preparation hashes are preserved with explicit replay boundaries.",
+      "canonical_source": "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md",
+      "dependencies": [
+        "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913"
+      ],
+      "checker": "elliptic-curves/cas/verify_finite_cancellation.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6ad57e6be687d2f1ce0ba058cef313faf7837c93d55f18c9a8560cb95027bc28",
+      "software_lock": [
+        "elliptic-curves/cas/finite_cancellation_corpus.py",
+        "elliptic-curves/cas/finite_cancellation_features.py",
+        "elliptic-curves/cas/analyze_finite_cancellation.py",
+        "elliptic-curves/cas/verify_finite_cancellation.py",
+        "elliptic-curves/cas/decompose_finite_cancellation.py",
+        "elliptic-curves/cas/finite_cancellation_neighbour_states.py",
+        "elliptic-curves/cas/finite_cancellation_q_ablation.py",
+        "elliptic-curves/cas/finite_cancellation_cpu.py",
+        "elliptic-curves/cas/run_finite_cancellation_cpu_suite.py",
+        "elliptic-curves/cas/verify_finite_cancellation_cpu.sage",
+        "elliptic-curves/cas/report_finite_cancellation.py",
+        "elliptic-curves/cas/lean_finite_cancellation_pari_mapping.sage",
+        "elliptic-curves/cas/lean_preconditioned_map_worker.py",
+        "elliptic-curves/tests/test_finite_cancellation_features.py",
+        "elliptic-curves/data/finite_cancellation_policy_v1.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/summary.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/protocol.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/census.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/corpus.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/analysis.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/evaluation.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/replay.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/prime_decomposition.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/g_factorizations.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/neighbour_states.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/q_ablation.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/cpu/protocol.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/cpu/inputs.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/cpu/supervision.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/cpu/verified.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/cpu/comparison.csv"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Fifteen common-quartic factor strata and a complete same-branch genus-one exclusion on alternate Q80",
+      "scope": "For the fixed-parent polynomial system f(x_i)=D*r_i^2 with degree bounds4, distinct abscissas and D coprime to the24I1 discriminant, a complete gcd factorization gives15 cases indexed by k=deg gcd(D,x1-x2) and j=deg gcd((x1-x2)/g,r1-r2). Monic g,d,u,v and constants c,lambda give D=c*lambda*g*d, h=c*g*u*v, r1=(u*a+v*b)/2, r2=(v*b-u*a)/2 and explicit polynomial A,B. The degree and gcd conditions give22 fixed-parent coefficient equations in21 parameters before a one-dimensional rescaling, not an emptiness argument. Nine predetermined good rational coordinate patches cover all degree-drop and infinity cases on each of the four retained parents. The presentation includes repeated D through g*d=e^2*q, including the triple-root boundary, with literal scalar c*lambda retained. For squarefree D, the exact height pairing is4-k-2*j and the determinant is at least48. On direct11952 alternate Q80 the entire k=4 genus-one stratum is excluded: equal selected2-torsion roots make the product Kummer class everywhere unramified; the retained131 determinant948 arithmetic and the Kummer/Leray argument show this class is inherited. Halving both sum and difference after adding the same inherited T produces two independent bisections with arithmetic and normalization genus1, contradicting the complete smooth-genus-one Q80 theorem. This includes higher contacts and needs no rational point on the cover. Each remaining Q80 genus-one solution must split the cubic over branch residue fields of total degree4-k in1,...,4, giving an effective rational divisor on its genus31 degree-six splitting curve. Genus31 alone does not exclude these low-degree divisors. Repeated-quartic genus0 cases, every other stratum, other parents, a full-family genus lower bound and the positive MW17 endpoint remain UNKNOWN. A single exact Sage checker verifies universal identities,15 degree/height cases,36 good patch hypotheses with transformations, old controls through changed coordinates and the arithmetic of the source-bound131 proof. Prior counts, saturation and billions of pencil comparisons are reused, not rerun. There is no independent implementation of this new checker and no formal verification. Small-prime index probes supplied no global obstruction; no coefficient elimination or new point campaign ran.",
+      "canonical_source": "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md",
+      "dependencies": [
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
+        "EC-DET1092-ALL-DEGREE-UNRAMIFIED-KUMMER-OBSTRUCTION-20260909",
+        "EC-DET1092-GLOBAL-SURFACE-BRAUER-TRIVIALITY-20260909",
+        "external: Kummer exactness, Hochschild--Serre, smooth proper base change, Leray, Shioda heights and Riemann--Hurwitz"
+      ],
+      "checker": "elkies-k3/scripts/verify_common_quartic_branch_strata.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c2fe18932972c628b1d0e94c2510eba37c60b94a4b17ede04df17ed247c14f59",
+      "software_lock": [
+        "elkies-k3/scripts/verify_common_quartic_branch_strata.sage",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/independent-replay.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/result.json",
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+        "artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/independent-replay-final.json",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/independent-replay.json",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_v1.json",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_verification_v1.json",
+        "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md",
+        "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
+        "elliptic-curves/notes/DET1092_SURFACE_BRAUER_TRIVIALITY_2026-09-09.md",
+        "elliptic-curves/notes/DET1092_UNRAMIFIED_KUMMER_OBSTRUCTION_2026-09-09.md",
+        "elliptic-curves/rank-jump/THE_LAST_GLOBAL_CLASS_IS_ABSENT.md",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/execution.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/input.json",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/result.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "state": "proved",
+      "canonical_source": "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "supersedes": [],
+      "closes_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived",
+      "id": "EC-POINTED-CANCELLATION-HESSIAN-20260914",
+      "kind": "corollary",
+      "title": "Pointed cancellation is a Hessian/derivative condition with target-independent gcd squareclass",
+      "scope": "Application of the established pointed-quartic Hessian covering identity. For raw pointed forms N,D on E:y^2=x^3+A*x+B with anchor (a,b), Hess(D)=-144*N. If D composed with M equals rho*q, where rho is a positive rational square, put mu=rho/(144*det(M)^2)=alpha/beta in lowest terms; alpha and beta are positive squares. For h equal to the common coefficient content of (-alpha*Hess(q),beta*q), the jointly primitive transformed pair is exactly (-alpha*Hess(q),beta*q)/h. The affine identity Hess(q)=12*q*qsecond-9*qprime^2 gives v_p(g)=min(v_p(q),2*v_p(qprime))-v_p(h) for p not dividing 6*alpha*beta, in either integral projective chart. For rational points away from D=0 on an integral short model, h*g is a perfect square, since the rational elliptic x-coordinate has square denominator. Thus the gcd squareclass is fixed before knowing the target, but its magnitude and independent-point existence are not. A symbolic checker proves the identities and reconstructs all 11741 retained primitive pairs and all 75272 full target gcds, including exceptional/unprocessed primes; it verifies 677448 derivative valuations and all squareclass assertions. Here mu is 1/144 or 1/576 and 562 models have nonsquare h. The initial receipt is preserved separately; the successor adds full-gcd reconstruction. No C/L optimization, policy change, new point or rank claim.",
+      "dependencies": [
+        "EC-DET1092-RECIPROCAL-QUARTIC-COVER-CLASS-20260909",
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914"
+      ],
+      "narrows_problems": [],
+      "checker": "elliptic-curves/cas/verify_pointed_cancellation_hessian.sage",
+      "software_lock": [
+        "elliptic-curves/cas/verify_pointed_cancellation_hessian.sage",
+        "elliptic-curves/cas/finite_cancellation_corpus.py",
+        "elliptic-curves/cas/finite_cancellation_validation_audit.py",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/hessian-cancellation.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/hessian-cancellation-initial.json"
+      ],
+      "artifact_hash": "sha256:9fbe2a435e0068f50c946565969737b24d86ab71d335d8027bd3be18525b35c8"
+    },
+    {
+      "state": "proved",
+      "canonical_source": "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "supersedes": [],
+      "closes_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived",
+      "id": "EC-FINITE-CANCELLATION-VALIDATION-20260914",
+      "kind": "example",
+      "title": "Clean q-only/cancellation comparison fails recovery and CPU gates on 41 additional retained curves",
+      "scope": "Separately frozen three-policy retrospective validation on 41 distinct j groups, disjoint from the original twelve CPU controls and Curve302: 24 M18-M19 inputs and 17 M24-M25 inputs, each an explicit subset of a separately certified larger endpoint. All 82 input/endpoint checks pass. A q-only tree now depends solely on q; both fitted policies share identical real and q features, and only the full policy additionally refines soluble cells for gcd expectations and unresolved mass. The earlier V1 ablation omitted explicit gcd expectations but retained gcd-dependent tree refinement, so it was not a pure-q comparison. New fixed-penalty fits exclude all 54 development/test groups and use 35926 model rows on 3816 anchors; independent replay verifies 14817426 training leaves and reconstructs both fits. All 123 arms and 1605 point calls complete without timeout or worker failure. Factor-free V3 recovers 39 independent directions and literal withheld points on 35 cases in 401.197551 CPU seconds and 545 calls. Real plus q recovers 38 directions, 32 literal-hit cases, in 382.267687 seconds and 494 calls. Real plus q plus gcd recovers 37 directions, 31 literal-hit cases, in 440.388142 seconds and 566 calls. All 114 enlarged subgroups and all maps/transcripts independently replay, including complete Sage finite quotient arithmetic and 3213287 execution leaves. Overall recoveries/CPU ratios to V3 are 1.022609 for q-only, interval [0.882236,1.203966], and 0.864291 for full cancellation, interval [0.785037,0.938174]. All primary and original-style time gates fail. On all 17 deeper controls each policy recovers a direction, but q-only costs 10.21 percent more and full costs 15.08 percent more. This is a negative bounded policy/transfer result, not a universal failure of finite information or a test at M27+. Complete process-tree costs include preparation and final producer proof; offline costs are reported separately. All raw output evidence has a byte-checked 3148-file replay archive. Original V1 results and default factor-free policy remain unchanged; no new record, rank upper bound, rank32 claim, policy promotion or automatically expanded search.",
+      "dependencies": [
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914"
+      ],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "checker": "elliptic-curves/cas/verify_finite_cancellation_validation.sage",
+      "software_lock": [
+        "elliptic-curves/cas/finite_cancellation_validation_audit.py",
+        "elliptic-curves/cas/finite_cancellation_validation_features.py",
+        "elliptic-curves/cas/finite_cancellation_validation_prepare.py",
+        "elliptic-curves/cas/finite_cancellation_validation_cpu.py",
+        "elliptic-curves/cas/run_finite_cancellation_validation.py",
+        "elliptic-curves/cas/finite_cancellation_validation_replay.py",
+        "elliptic-curves/cas/verify_finite_cancellation_validation.sage",
+        "elliptic-curves/cas/report_finite_cancellation_validation.py",
+        "elliptic-curves/tests/test_finite_cancellation_validation.py",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/design.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/roster.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/eligible_banks.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/audit-gap-resolution.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/inputs.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/oracle.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/preflight.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/fit.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/training-features.json.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/training-verified.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/mapping-smoke.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/protocol.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/analysis-lock.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/supervision.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/verified.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/comparison.csv",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/summary.json",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/cpu-replay.tar.gz",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/cpu-replay-manifest.json"
+      ],
+      "artifact_hash": "sha256:b765c156f1afa28e21b2a27776066ee4f88c335a8f1c8726948b00c97ce7c31f"
     }
   ]
 }

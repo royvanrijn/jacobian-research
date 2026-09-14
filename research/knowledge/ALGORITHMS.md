@@ -1486,6 +1486,60 @@ Implementation: [probe_det1092_rr_global_pair.sage](../elliptic-curves/cas/probe
 
 Recorded claims: `EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908` (partial).
 
+### METHOD-EC-FINITE-CANCELLATION-RESIDUE-PREDICTION: Predict realized cancellation through q-conditioned residue states and test complete CPU cost
+
+**When:** Comparing equivalent pointed quartics as finite search boxes before a target point is known.
+
+**Use:** Normalize N,D jointly. Use H^4=Hx*g/S and the exact neighbour law g_new/g_old=p^(4delta-e). Compute residue masses and cancellation expectations using only N,D,q; compare uniform soluble and differential-weighted p^(v(q)/2) reference measures. Withhold whole j groups and families, isolate q-only attribution, then freeze real point-search controls with all model preparation charged. Keep a strict threshold exact when a measured result narrowly misses it.
+
+**Avoid repeating:** Rewarding absolute gcd size without the real factor, treating uniform soluble slopes as the local elliptic distribution, leaking winning centres or held-out points into selection, counting signs/anchors as independent curves, equating H-squared with CPU, or rounding9.987859 percent into a passed10 percent gate. Do not hash timing into the only reconstructible arithmetic witness.
+
+**Boundary:** 6285 retained exceptional-point observations and75272 exact model evaluations show a predictive signal. Full finite features give an11.25 percent held-out H-squared improvement beyond real features; post-primary q ablation leaves3.08 percent for gcd expectations. The12-curve control obtains10 versus9 next-direction recoveries in180.488 versus200.515 CPU seconds, but misses the strict10 percent gate. The default remains factor-free; no high-rank or population transfer is proved.
+
+**Revisit when:** An independently frozen validation on additional or deeper subgroups tests the unchanged candidate with complete costs; no automatic search expansion or outcome-based retuning.
+
+Sources: [FINITE_CANCELLATION_PREDICTOR_2026-09-14](../elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md).
+
+Implementation: [finite_cancellation_features.py](../elliptic-curves/cas/finite_cancellation_features.py); [finite_cancellation_neighbour_states.py](../elliptic-curves/cas/finite_cancellation_neighbour_states.py); [lean_finite_cancellation_pari_mapping.sage](../elliptic-curves/cas/lean_finite_cancellation_pari_mapping.sage); [verify_finite_cancellation_cpu.sage](../elliptic-curves/cas/verify_finite_cancellation_cpu.sage).
+
+Recorded claims: `EC-FINITE-CANCELLATION-PREDICTOR-20260914` (proved).
+
+### METHOD-EC-HESSIAN-CANCELLATION: Compute pointed cancellation through the quartic Hessian and derivative valuations
+
+**When:** Interpreting cancellation in jointly primitive pointed-quartic maps before a target is known.
+
+**Use:** Recover the scaled Hessian numerator and its common coefficient content h. At primes away from 6 alpha beta, use min(v_p(q),2 v_p(qprime))-v_p(h) in the appropriate projective chart. On integral short curves h*g has fixed squareclass at every rational point in the finite patch.
+
+**Avoid repeating:** Treating the gcd squareclass as new-point information, dropping the content correction or exceptional primes, or assuming a local multiple-root ball contains an independent rational point.
+
+**Boundary:** Universal algebra plus 11741 exact model reconstructions, 75272 full gcd and squareclass checks and 677448 derivative checks. No claim about magnitude, CPU speed or new rank.
+
+**Revisit when:** A separately justified derivative-based implementation or new-direction criterion needs these identities; no automatic policy replacement or search.
+
+Sources: [FINITE_CANCELLATION_VALIDATION_2026-09-14](../elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md).
+
+Implementation: [verify_pointed_cancellation_hessian.sage](../elliptic-curves/cas/verify_pointed_cancellation_hessian.sage).
+
+Recorded claims: `EC-POINTED-CANCELLATION-HESSIAN-20260914` (proved).
+
+### METHOD-EC-CLEAN-Q-CANCELLATION-VALIDATION: Separate q-only features from gcd-dependent refinement and validate actual recoveries
+
+**When:** Attributing a model-selector improvement to finite cancellation or transferring generic-anchor height gains to deeper subgroups.
+
+**Use:** Build a q-only tree with no N,D inputs, then refine soluble leaves separately for gcd information. Keep common features identical, exclude whole j groups from fitting, freeze CPU arms and count certified next directions with all preparation charged. Preserve misses and separately report literal representatives.
+
+**Avoid repeating:** Calling an ablation q-only when its censoring depends on gcd constancy, using literal H-squared as a substitute for recovery/CPU, or repairing a failed policy by timing repeats or larger allowances on the same controls.
+
+**Boundary:** The frozen 41-curve successor recovers 39/38/37 directions for V3/q-only/full in 401.20/382.27/440.39 CPU seconds. All gates fail; full cancellation has a conditional recovery/CPU interval below parity. All M24-M25 controls recover under all arms, with both fitted arms slower. The earlier V1 observation is preserved.
+
+**Revisit when:** A new target-blind objective addresses actual independent-direction recovery with independently frozen validation. Cheaper feature evaluation alone cannot repair the missed directions in these completed banks.
+
+Sources: [FINITE_CANCELLATION_VALIDATION_2026-09-14](../elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md).
+
+Implementation: [finite_cancellation_validation_audit.py](../elliptic-curves/cas/finite_cancellation_validation_audit.py); [finite_cancellation_validation_features.py](../elliptic-curves/cas/finite_cancellation_validation_features.py); [finite_cancellation_validation_prepare.py](../elliptic-curves/cas/finite_cancellation_validation_prepare.py); [finite_cancellation_validation_cpu.py](../elliptic-curves/cas/finite_cancellation_validation_cpu.py); [run_finite_cancellation_validation.py](../elliptic-curves/cas/run_finite_cancellation_validation.py); [finite_cancellation_validation_replay.py](../elliptic-curves/cas/finite_cancellation_validation_replay.py); [verify_finite_cancellation_validation.sage](../elliptic-curves/cas/verify_finite_cancellation_validation.sage); [report_finite_cancellation_validation.py](../elliptic-curves/cas/report_finite_cancellation_validation.py).
+
+Recorded claims: `EC-FINITE-CANCELLATION-VALIDATION-20260914` (proved).
+
 ## K3 constructions and lattice algorithms
 
 ### METHOD-K3-MARKING: Use full marked fibrations as identities
@@ -1546,15 +1600,15 @@ Recorded claims: `EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION` (proved).
 
 **Avoid repeating:** Treating a coarse norm-one point, geometric rank nineteen, modular solution or Hensel branch as a fully rational marking.
 
-**Boundary:** NS0031 is UNKNOWN after its claimed norm-one containment was refuted; its valid Frobenius calculation excludes only that cover. Keep other determinant-specific results and the unresolved determinant-1236 descent at their exact scope. No equation handoff follows from UNKNOWN.
+**Boundary:** NS0031 is excluded by the corrected full stable genus-ten curve and its genus-two quotient, with the missing reflection included. The original Frobenius test still excludes only the norm-one cover. Other determinant-specific results and the unresolved determinant-1236 descent retain their exact scope. No equation handoff follows from UNKNOWN.
 
 **Revisit when:** A certified rational non-CM point on the required full marking curve passes the gate.
 
-Sources: [DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md); [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+Sources: [DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md); [NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14](../elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md); [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
 Implementation: [build_arithmetic_first_marked_t_foundry.py](../elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py).
 
-Recorded claims: `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` (open); `EC-K3-DET1236-CANDIDATE-DOUBLE-COVER` (partial); `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` (partial); `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` (proved).
+Recorded claims: `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` (open); `EC-K3-DET1236-CANDIDATE-DOUBLE-COVER` (partial); `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` (partial); `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` (proved); `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved).
 
 ### METHOD-K3-INTERPOLATION: Exploit branch-value interpolation before nonlinear elimination
 
@@ -1844,15 +1898,15 @@ Recorded claims: `EC-K3-DET1236-MARKED-SHIMURA-CURVE` (partial); `EC-K3-DET1236-
 
 **Avoid repeating:** Treating tangent dimension one or a lift to7^8 as an infinite compatible branch, treating the branch as a QQ point, or identifying a displayed subgroup with its primitive closure.
 
-**Boundary:** NS0031 has a formal local branch but its full rational marking remains UNKNOWN after correction of the period-group argument. Determinant500/720 rational reconstructions saturate to the wrong determinant20 lattice.
+**Boundary:** NS0031 has a formal local branch but a full rational rank-19 marking is excluded by the separate corrected full stable quotient proof. Determinant500/720 rational reconstructions saturate to the wrong determinant20 lattice.
 
-**Revisit when:** An exact global rational marking passes the full stable marked-curve gate; extending the completed local box alone does not do so.
+**Revisit when:** A different candidate or field passes its exact global rational-marking gate. Extending the completed NS0031 local box cannot reopen the excluded full rational rank-19 source over Q.
 
-Sources: [LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02](../elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md); [NS0031_MARKED_FORMAL_BRANCH_2026-09-04](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md).
+Sources: [LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02](../elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md); [NS0031_MARKED_FORMAL_BRANCH_2026-09-04](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md); [NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14](../elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 
 Implementation: [certify_lattice_foundry_ns0031_marked_formal_smoothness.sage](../elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_formal_smoothness.sage).
 
-Recorded claims: `EC-K3-NS0031-MARKED-SOURCE-PRECURSOR` (partial); `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` (partial); `EC-K3-NS0031-MARKED-FORMAL-BRANCH` (proved).
+Recorded claims: `EC-K3-NS0031-MARKED-SOURCE-PRECURSOR` (partial); `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` (partial); `EC-K3-NS0031-MARKED-FORMAL-BRANCH` (proved); `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved).
 
 ### METHOD-K3-SMOOTH-ATLAS-LIMIT: Use the complete smooth-atlas obstruction before enlarging a bisection search
 
@@ -1878,15 +1932,15 @@ Recorded claims: `EC-DET1092-COMPLETE-SMOOTH-BISECTION-ATLAS-NONUNIVERSAL-202609
 
 **Avoid repeating:** Regenerating a missing catalogue to replay a small witness, accepting a projection with an ambiguous selector, or importing the original producer as the supposed independent implementation.
 
-**Boundary:** The projection preserves the selected data, not an independent proof of the source catalogue. The finite NS0031 replay does not prove the arithmetic K3 period map, global X0(37) rational-point classification, minimality or the rational37-isogenies. Optimized Python must fail before assertions can be skipped. The separate period-group review has now refuted the old containment; a finite arithmetic PASS cannot restore the K3 exclusion.
+**Boundary:** The projection preserves the selected data, not an independent proof of the source catalogue. The finite NS0031 replay does not prove the arithmetic K3 period map, global X0(37) rational-point classification, minimality or the rational37-isogenies. Optimized Python must fail before assertions can be skipped. The separate period-group review has now refuted the old containment; a finite arithmetic PASS cannot restore the K3 exclusion. The September14 exclusion instead uses a new full-stable group/model certificate and a separately retained unconditional Magma proof; the original finite PASS is not that proof.
 
-**Revisit when:** The claim, required fields or source identities change, or the separate arithmetic period-map input receives a precise proof.
+**Revisit when:** The finite claim, required fields or source identities change. A new arithmetic theorem needs its own proof and replay; repeating the old finite check cannot repair the invalid norm-one containment.
 
-Sources: [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#replay-and-remaining-gate).
+Sources: [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#retained-replays-and-completed-gate); [NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14](../elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 
 Implementation: [verify_ns0031_marking_arithmetic.py](../elkies-k3/scripts/verify_ns0031_marking_arithmetic.py); [test_ns0031_marking_replay.py](../tests/test_ns0031_marking_replay.py).
 
-Recorded claims: `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (partial).
+Recorded claims: `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved).
 
 ### METHOD-K3-RANK-SCREEN-RECORDS: Audit rank-screen identities and censoring before replaying calculations
 
@@ -2000,19 +2054,19 @@ Recorded claims: `EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912` (prov
 
 **When:** A K3 rational-marking exclusion is transferred from a split Clifford norm-one modular curve.
 
-**Use:** Start with the literal lattice, exhibit integral isometries and compute their discriminant action and positive-plane orientation. Check their projective Clifford representatives up to rational scalar. NS0031 has a -2 reflection with trivial discriminant action and determinant37 spin representative; preserving a full NS marking retains this action. Keep the surviving genus23 and Frobenius results in the planner as coarse diagnostics, with the exact remaining group/descent gate.
+**Use:** Start with the literal lattice and its unique even overlattice to bound the whole projective normalizer. Compute both discriminant signs and every determinant unit in the local GL level, then identify the canonical Q quotient, including the common minus sign from determinant-minus-one orthogonal isometries. For NS0031 this gives Gamma union W_37 Gamma and (X_ns(4) x_X(1) X_0(37))/<w_37 w_ns,4>, genus ten. Reduce Cartan level to obtain a genus-two quotient, certify its differentials and model by a Sturm bound, then determine rational points using full-MW elliptic Chabauty. Pin the elliptic target sign and cusp before applying CM coordinates.
 
 **Avoid repeating:** Dropping determinant-minus-one isometries, assuming a rational norm-one subgroup is the whole period group, or deducing that a quotient has no rational points because its cover has none. Also avoid replacing a later exact coarse result with an older UNKNOWN catalogue field when rebuilding a queue.
 
-**Boundary:** The counter-witness refutes the recorded containment and its induced map only. It neither constructs a rational NS0031 K3 nor decides its nonexistence by another proof. Other lattices require their own full-group audit.
+**Boundary:** The reflection alone refutes the old containment. The completed NS0031 argument separately proves an empty rational noncuspidal non-CM locus; it does not classify rational CM lifts, larger fields, or other lattices. Chabauty at prime5 alone left unresolved cosets; auxiliary primes closed both exact rank-one cases only after full Mordell-Weil groups and their index obligations were proved. Classical Chabauty at rank equal to genus and bounded point searches supply no substitute.
 
-**Revisit when:** The actual full stable projective group, its QQ descent and required rational non-CM locus are certified, or another exact obstruction is supplied.
+**Revisit when:** A different lattice, field or weaker marking changes the arithmetic problem, or a specific defect is found in the full normalizer, canonical descent, quotient identity or exact Chabauty certificate. The original norm-one-containment argument stays invalid.
 
-Sources: [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+Sources: [NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14](../elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md); [NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
-Implementation: [verify_ns0031_period_group.py](../elkies-k3/scripts/verify_ns0031_period_group.py); [test_research_ns0031_period_group.py](../tests/test_research_ns0031_period_group.py); [build_arithmetic_first_marked_t_foundry.py](../elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py).
+Implementation: [verify_ns0031_period_group.py](../elkies-k3/scripts/verify_ns0031_period_group.py); [test_research_ns0031_period_group.py](../tests/test_research_ns0031_period_group.py); [build_arithmetic_first_marked_t_foundry.py](../elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py); [certify_ns0031_stable_marking.sage](../elkies-k3/scripts/certify_ns0031_stable_marking.sage); [certify_ns0031_genus2_rational_points.m](../elkies-k3/scripts/certify_ns0031_genus2_rational_points.m).
 
-Recorded claims: `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` (proved); `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (partial); `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` (partial).
+Recorded claims: `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` (proved); `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` (proved); `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` (partial).
 
 ### METHOD-K3-ONE-NODE-PROJECTIVE-CORRESPONDENCE: Construct repeated-root carriers through trace halves and compare complete projective coefficient maps
 
@@ -2056,7 +2110,7 @@ Implementation: [build_mw3_a10_p1_normalized.sage](../elkies-k3/scripts/build_mw
 
 **Avoid repeating:** Transferring a constant-parent twist theorem's independence statement to a moving parent without a height proof, counting a genus-greater-than-one base as an infinite specialization source, or trying a larger auxiliary-function box after an unbounded valuation obstruction.
 
-**Boundary:** On published R17, alternate Q80 direct11952, Curve302 MW17 and X1092 class1, u=2 gives two independent directions with Gram diag(24,24) on genus21 covers. Every rational auxiliary function in this Mestre identity retains the degree8 A and degree12 B divisors, hence genus at least9. The three additional parent equations have independent portable local and height replays. A separate common-quartic polynomial system would give independent height8 sections with arithmetic-genus5 images if solved; no solution or positive rational base is known.
+**Boundary:** On published R17, alternate Q80 direct11952, Curve302 MW17 and X1092 class1, u=2 gives two independent directions with Gram diag(24,24) on genus21 covers. Every rational auxiliary function in this Mestre identity retains the degree8 A and degree12 B divisors, hence genus at least9. The three additional parent equations have independent portable local and height replays. A separate common-quartic polynomial system would give independent height8 sections with arithmetic-genus5 images if solved; no solution or positive rational base is known on those four MW17 parents.
 
 **Revisit when:** A different carrier identity solves a shared-squarefactor equation with branch degree at most4, or an untested parent passes the coefficient-divisor criterion. Repeating the same Mestre auxiliary search on any of the four certified parents cannot meet the base condition. For genus-two nodes, reuse the existing genus-nine halving-locus theorems and preserve their exceptional-chart boundary.
 
@@ -2137,3 +2191,21 @@ Sources: [R17_074D9_LOCAL_KUMMER_MEET_2026-09-04](../elkies-k3/R17_074D9_LOCAL_K
 Implementation: [certify_r17_074d9_local_kummer_meet.sage](../elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage).
 
 Recorded claims: `EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION` (proved); `EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION` (proved).
+
+### METHOD-K3-COMMON-QUARTIC-SINGULARITY-LOCUS: Count normalization delta with infinity and keep the high-rank parent fixed
+
+**When:** Forcing two polynomial trace-zero bisections of arithmetic genus5 to share a quadratic cover of genus0 or1.
+
+**Use:** Write F=x^3+A*x+B and its jet conditions. At a root of multiplicity m use delta=floor(m/2), and include the missing multiplicity at infinity in the degree12 binary form. Impose one literal D in both identities. Extract repeated factors D=e^2*d before deciding the genus: residual degree2 gives a possible genus0 boundary. Reuse the height8 independence criterion when the branch avoids the parent discriminant. For a fixed constant-abscissa line, the degree33 critical-point polynomial and critical-value norm can certify its entire singularity locus by exact interpolation and a good-prime squarefreeness witness. For the complete coefficient chart, factor the difference identity with g=gcd(D,h), u=gcd(h/g,r1-r2) and v=(h/g)/u after monic normalization. Keep all15 degree allocations and nine good coordinate patches; the squarefree height cross term is4-k-2*j. On Q80 use unramified Kummer descent to eliminate the complete k=4 genus-one case before any elimination.
+
+**Avoid repeating:** Treating a zero discriminant or a bounded coefficient miss as a four-node or full-family theorem; rejecting every repeated quartic as unusable; losing constant squareclasses or infinity; or solving for new A,B and claiming to have kept an inherited MW17 parent. Equal branch-root choices can force halving only after proving the everywhere-unramified class is inherited. An inherited mod2 class alone does not make the underlying point inherited. A high-genus splitting curve does not exclude its low-degree closed points. Initial bad-prime reductions without simple roots can acquire local points after base/x coordinate changes.
+
+**Boundary:** Two explicit new24I1 K3 controls have genus0/1 infinite rational bases and two independent anti-invariant directions with Gram[[8,-4],[-4,8]]. Their inherited ranks are UNKNOWN. On published R17, alternate Q80, recovered Curve302 and X1092 class1 every algebraic constant x has normalization genus at least4. This does not exclude nonconstant quartic x(t), all shared-branch constructions or a fixed-parent singular quartic boundary. The entire same-branch k=4 genus-one stratum is now excluded on Q80, including nonordinary image contacts. Other strata require explicit arithmetic work; repeated D does not have the same k-as-branch-count interpretation. The15-case coefficient presentation and nine-patch coverage are complete, but none of their remaining fixed-parent systems is declared empty.
+
+**Revisit when:** An admissible solution in a remaining factor stratum is certified on a fixed high-rank parent with an infinite rational base, or a full exclusion covers all surviving strata and the repeated-quartic boundary. Revisit an index obstruction only with a new local or global proof; a bad initial reduction is insufficient.
+
+Sources: [COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14](../elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md); [COMMON_QUARTIC_BRANCH_STRATA_2026-09-14](../elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md).
+
+Implementation: [certify_common_quartic_singularity_locus.sage](../elkies-k3/scripts/certify_common_quartic_singularity_locus.sage); [verify_common_quartic_singularity_locus.py](../elkies-k3/scripts/verify_common_quartic_singularity_locus.py); [test_common_quartic_singularity_locus.py](../tests/test_common_quartic_singularity_locus.py); [verify_common_quartic_branch_strata.sage](../elkies-k3/scripts/verify_common_quartic_branch_strata.sage).
+
+Recorded claims: `EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914` (proved); `EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914` (proved).

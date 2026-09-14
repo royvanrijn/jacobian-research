@@ -1,0 +1,101 @@
+{
+  "checker_sha256": "c2fe18932972c628b1d0e94c2510eba37c60b94a4b17ede04df17ed247c14f59",
+  "checker_status": "PASS",
+  "exploratory_index_route": {
+    "global_index": "UNKNOWN",
+    "initial_primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43
+    ],
+    "mathematical_test": "An index3 cubic root curve could have no Q-rational effective divisor of degree2 or4. A branch divisor from even one integral common-quartic section would contradict that index.",
+    "retained_failed_shortcuts": [
+      {
+        "coefficient_valuations_before_dividing27": [
+          1,
+          2,
+          3
+        ],
+        "conclusion": "Further scaling produces simple local roots; absence of a simple root in the original reduction is not an index obstruction.",
+        "parent": "published-r17",
+        "prime": 3,
+        "x_shift_after_scale3": "X=3*Z-(2*t^4+t^3+t+2)"
+      },
+      {
+        "conclusion": "The exceptional residues have rational roots, so uniform odd-valuation arguments require further charts. No discriminant-squareclass obstruction follows.",
+        "parent": "alternate-q80",
+        "prime": 19,
+        "scaled_A_factor_mod19": "16*(t+14)*(t+17)^7",
+        "scaled_A_mod19": "16*t^8+13*t^6+10*t^5+10*t^4+4*t^3+14*t^2+17*t+18",
+        "scaled_B_factor_mod19": "4*(t+17)^10*(t^2+18*t+3)",
+        "t_scaled_by": 19
+      },
+      {
+        "A_div_17_squared_factor_mod17": "12*(t+4)^7",
+        "B_div_17_squared_factor_mod17": "8*(t+12)^2*(t+4)^10",
+        "conclusion": "The apparent Eisenstein obstruction has an exceptional rational residue with local points.",
+        "parent": "x1092-class1",
+        "prime": 17,
+        "simple_local_chart": {
+          "divide_equation_by": "17^3",
+          "simple_roots_mod17": [
+            9,
+            12,
+            13
+          ],
+          "t": 5,
+          "x": "17*z"
+        }
+      },
+      {
+        "conclusion": "Scaling the base resolves the constant irreducible-cubic reduction seen in the initial chart.",
+        "parent": "x1092-class1",
+        "prime": 29,
+        "simple_local_chart": {
+          "divide_equation_by": "29^12",
+          "simple_root_mod29": 19,
+          "t": 58,
+          "x": "29^4*z"
+        }
+      }
+    ],
+    "scope": "Small-prime reductions only, with elementary weighted x scalings and local coordinate changes; no global index or all-place result.",
+    "used_in_positive_or_negative_theorem": false
+  },
+  "final_commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/verify_common_quartic_branch_strata.sage --freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/verify_common_quartic_branch_strata.sage --record"
+  ],
+  "full_coefficient_elimination": false,
+  "full_fixed_parent_genus_bound": "UNKNOWN",
+  "independent_replay": false,
+  "limits": {
+    "address_space_bytes": 4294967296,
+    "cpu_seconds": 40
+  },
+  "new_pencil_comparisons": false,
+  "new_point_counts": false,
+  "positive_mw17_endpoint": false,
+  "preview_events": [
+    {
+      "event": "Initial universal and degree identities passed, but the nine-patch good-prime test at0,...,8 failed for X1092 class1 at0 modulo1009. The final frozen patch list is1,...,9, all good on all four parents. This changed the coordinate cover, not the mathematical parent or a candidate solution."
+    },
+    {
+      "event": "A control inversion first returned a rational-function type after exact polynomial division. Explicit polynomial coercion repaired the monic/gcd operation before the input or result was frozen."
+    }
+  ],
+  "result_sha256": "397ed8e0abf607ac31005f936c86eec55ae7a8cd14c7ed41817f4d9e2018ba03",
+  "schema": "common-quartic-branch-strata-execution-v1",
+  "selection": "Continued the authorized symbolic common-quartic task on fixed MW17 parents; no Mestre auxiliary function was varied."
+}

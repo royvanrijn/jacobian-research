@@ -1,0 +1,14 @@
+{
+  "boundary": "The single JSON integer-size read failure was reread with Python integer conversion limit disabled. Its curve has no eligible larger endpoint in the declared family/corpus panel. No roster, frozen design or source receipt changed.",
+  "roster_sha256": "18248cb97fff230e3df6d0c664758ac383fe9d2bb7c57607944904918a9f8ef2",
+  "rows": [
+    {
+      "eligible_corpus_ids": [],
+      "initial_rank": 19,
+      "j_group": "0c67a02dc93e782dd65e6aa602039dd00d50640643bba817c9e9e9f37b31b978",
+      "landscape": "artifacts/local/elliptic-curves/x1092-elkies-pairs-v2/runtime/research/pair-results/cases/002/search-00/epoch-00/landscape/selection.json",
+      "seed_sha256": "c70629a32cf3222c0736d282d84d7a4599c929e6bc68e22ddf6b902754a39555"
+    }
+  ],
+  "status": "READ_LIMIT_RESOLVED_NO_ELIGIBLE_CANDIDATE"
+}

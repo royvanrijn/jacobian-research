@@ -1,0 +1,41 @@
+{
+  "arm_wall_seconds": 90,
+  "arms": [
+    "factor_free",
+    "real_q",
+    "real_q_g"
+  ],
+  "boundary": "New retrospective controls, not new curves. The whole corpus has already informed development. This is separation from fitting and from new CPU outcomes, not a pristine external population. Cached centre orders are common inputs; no optimality/CVP theorem is claimed.",
+  "families": [
+    "074d9",
+    "07ca9",
+    "08234",
+    "08f72",
+    "103b2",
+    "11952"
+  ],
+  "feature_change": "Both fitted arms share real features and a genuinely q-only residue tree. The full arm additionally computes the original two gcd expectations and their unresolved/missing masses. No outcome-driven tuning.",
+  "fit": "Fixed ridge penalty 10. Entire validation j groups, the original 12 CPU groups and Curve302 are excluded. No CPU outcomes or target heights select banks.",
+  "gate": "For each fitted arm vs factor-free, require at least as many certified successes, at least 10 percent better aggregate recoveries per CPU, and a stratified paired case-bootstrap 95 percent interval entirely above 1. A cancellation-specific gate compares real_q_g with real_q by the same rule. Zero-success denominators make the rate gate UNKNOWN. Report the original-style 10 percent aggregate-time gate separately.",
+  "hard_process_cpu_seconds": 60,
+  "height": 125000,
+  "maximum_cases": 48,
+  "maximum_centres": 48,
+  "per_family_per_stratum": 4,
+  "point_wall_seconds": 5,
+  "primary": "Certified next-direction recoveries divided by all charged process-tree CPU, including failed/unsuccessful arms. Literal withheld representatives counted separately.",
+  "search_cpu_seconds_per_arm": 40,
+  "selection": "All currently retained local */landscape/selection.json banks joined by exact j to the V1 corpus. Require a matching certified seed, at least 16 centres and a separately documented larger subgroup. Exclude all 12 V1 CPU curves and Curve302. For each j use the lexically first shallow bank; for deep use the highest starting rank then lexical bank. Select deep before shallow, lowest j hashes per family, at most four per family and stratum, with globally distinct j. Missing slots remain missing.",
+  "status": "DESIGN_BEFORE_BANK_AUDIT",
+  "strata": {
+    "deep": [
+      24,
+      27
+    ],
+    "shallow": [
+      18,
+      20
+    ]
+  },
+  "uncertainty": "10000 paired bootstrap samples, sampling cases within each observed stratum and family, seed 20260914. Fixed sample/caps; no retries to improve timing or extra cases after outcomes."
+}

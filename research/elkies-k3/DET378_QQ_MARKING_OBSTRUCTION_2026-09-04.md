@@ -186,9 +186,13 @@ catalogue row.
 
 ## Queue consequence
 
-The global arithmetic-first ledger now has four exact exclusions, one realized
-positive control, and `822` unresolved rows. The rootless-MW17 subcatalogue
-still has one positive, three exclusions, and `62` unknowns because this split
-determinant-378 row was not in that subcatalogue. The next exact-coarse
-experiments are determinant `256` with coarse `X_0(2)` and determinant `512`
-with coarse `X_0(4)`.
+This split determinant-378 row is excluded from the global arithmetic-first
+queue and was never in the rootless-MW17 subcatalogue. Current accounting is
+recorded in the [global T-first objective](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md)
+and [rootless classifier](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md).
+They include the later determinant-500/750 exclusions and the
+[corrected full stable NS0031 obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
+Determinants `256` and `512` remain early coarse `X_0(2)` and `X_0(4)`
+diagnostics; their full rational-marking gates remain unresolved.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

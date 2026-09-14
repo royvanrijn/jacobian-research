@@ -1,0 +1,153 @@
+{
+  "arm_wall_seconds": 90,
+  "arms": [
+    "factor_free",
+    "real_q",
+    "real_q_g"
+  ],
+  "boundary": "New retrospective controls, not new curves. The whole corpus has already informed development. This is separation from fitting and from new CPU outcomes, not a pristine external population. Cached centre orders are common inputs; no optimality/CVP theorem is claimed.",
+  "cases": 41,
+  "cost": "Each outer receipt charges interpreter, all map candidates and discarded features, point backend, admission and producer rank proof. Training and shared input verification are reported separately. Cached retained centre orders are common inputs.",
+  "families": [
+    "074d9",
+    "07ca9",
+    "08234",
+    "08f72",
+    "103b2",
+    "11952"
+  ],
+  "feature_change": "Both fitted arms share real features and a genuinely q-only residue tree. The full arm additionally computes the original two gcd expectations and their unresolved/missing masses. No outcome-driven tuning.",
+  "fit": "Fixed ridge penalty 10. Entire validation j groups, the original 12 CPU groups and Curve302 are excluded. No CPU outcomes or target heights select banks.",
+  "fits": {
+    "real_q": {
+      "coefficients": [
+        -0.7833049464946507,
+        0.02015086193337571,
+        0.6219067220644212,
+        -0.2263818921327335,
+        -0.004242842521761712,
+        0.0
+      ],
+      "features": [
+        "real_logS",
+        "coefficient_bits",
+        "q_log_soluble_mass",
+        "q_unknown_mass_sum",
+        "q_missing_local_expectations"
+      ],
+      "means": [
+        -2.908880371862884,
+        -3.459584297418147,
+        -0.06557272393851911,
+        -0.00042581767872644326,
+        0.0
+      ],
+      "scales": [
+        3.110165379657122,
+        2.7065085584739177,
+        0.4430845063137629,
+        0.0030149169066032255,
+        1.0
+      ]
+    },
+    "real_q_g": {
+      "coefficients": [
+        -0.7833049464946503,
+        0.008625866592933218,
+        0.6066852199153069,
+        -0.3443024386482905,
+        -0.0017177605755311983,
+        0.0,
+        -0.1949453759984679,
+        0.05518218930180936,
+        -0.0017177605761650983,
+        0.0
+      ],
+      "features": [
+        "real_logS",
+        "coefficient_bits",
+        "q_log_soluble_mass",
+        "q_unknown_mass_sum",
+        "q_missing_local_expectations",
+        "local_g_uniform",
+        "local_g_differential",
+        "g_unknown_mass_sum",
+        "g_missing_local_expectations"
+      ],
+      "means": [
+        -2.908880371862884,
+        -3.459584297418147,
+        -0.06557272393851911,
+        -0.00042581767872644326,
+        0.0,
+        0.09309696832064057,
+        -1.2637591732857216,
+        -0.00042581767872644326,
+        0.0
+      ],
+      "scales": [
+        3.110165379657122,
+        2.7065085584739177,
+        0.4430845063137629,
+        0.0030149169066032255,
+        1.0,
+        0.8058566138067018,
+        2.2969799562751763,
+        0.0030149169066032255,
+        1.0
+      ]
+    }
+  },
+  "gate": "For each fitted arm vs factor-free, require at least as many certified successes, at least 10 percent better aggregate recoveries per CPU, and a stratified paired case-bootstrap 95 percent interval entirely above 1. A cancellation-specific gate compares real_q_g with real_q by the same rule. Zero-success denominators make the rate gate UNKNOWN. Report the original-style 10 percent aggregate-time gate separately.",
+  "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+  "hard_process_cpu_seconds": 60,
+  "height": 125000,
+  "input_sha256": {
+    "design.json": "726c3cf44ee5ec1e33bc4551838121ea2519acca0f9bbc2965a908e303b4f100",
+    "fit.json": "d4986b134677dfccf02ca786b0812f6b4f7a8e73ab0c41d47cbdf534197b2cc3",
+    "inputs.json": "0e62bd90230cd8f55aadd763997a8a232a10d09633fd5d941315b05a9863967c",
+    "preflight.json": "e426c8650786e4a4e3092c741301d17f4b0cab07e81564c64e0fec8f5a5b05fb",
+    "roster.json": "18248cb97fff230e3df6d0c664758ac383fe9d2bb7c57607944904918a9f8ef2",
+    "training-features.json.gz": "3f53107312227bbc7f47a8497d86d364d3fc1b41b7d6db1b673cf0616b7f044e"
+  },
+  "maximum_cases": 48,
+  "maximum_centres": 48,
+  "order": "All six arm permutations cycle by case ordinal; one process at a time. No outcome-based timing repeats.",
+  "per_family_per_stratum": 4,
+  "point_wall_seconds": 5,
+  "primary": "Certified next-direction recoveries divided by all charged process-tree CPU, including failed/unsuccessful arms. Literal withheld representatives counted separately.",
+  "python": "3.14.7",
+  "q_feature_definition": "q square status alone determines the common q tree. Soluble q leaves are separately refined for gcd constancy only in the full arm. All q features and both real features agree exactly between fitted arms on the same model.",
+  "search_cpu_seconds_per_arm": 40,
+  "selection": "All currently retained local */landscape/selection.json banks joined by exact j to the V1 corpus. Require a matching certified seed, at least 16 centres and a separately documented larger subgroup. Exclude all 12 V1 CPU curves and Curve302. For each j use the lexically first shallow bank; for deep use the highest starting rank then lexical bank. Select deep before shallow, lowest j hashes per family, at most four per family and stratum, with globally distinct j. Missing slots remain missing.",
+  "source_sha256": {
+    "analyze_finite_cancellation.py": "5cbb799c44ffbbe094506b9681873e689eba844822ea32f76972415b858d2f2a",
+    "finite_cancellation_corpus.py": "4ec5da80e68eb5917f3272df4ee8199a413a7635508bfb24e903c50c9c2c3556",
+    "finite_cancellation_features.py": "1ca9551f12cf0c5648ea812419c53f81108413fc08f38e9e1d5acf79bbdfbafa",
+    "finite_cancellation_validation_audit.py": "9da4620787c14381cfab6674c815bc37186597e021f64df4fca92bffcfc4ad9e",
+    "finite_cancellation_validation_cpu.py": "380f1d000a10bd58674516d146f241a34a56db2bd986e6038a28ea11f68bd3e7",
+    "finite_cancellation_validation_features.py": "44a653ad9f70473b7beb35bb5cdeb7911089b4ddd9ef69b7e76415e1b30a1e0d",
+    "finite_cancellation_validation_prepare.py": "c11586d007d515a3977e18a54054a921f0c6cd3a46d264afbb4f319c9926b8b9",
+    "future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+    "half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+    "memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "run_finite_cancellation_validation.py": "d95fa96378fd8d4bba14da5a387844dd89f5d9f8ad1cde873beeb3b3d0d476e7",
+    "search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2"
+  },
+  "status": "FROZEN_BEFORE_VALIDATION_CPU",
+  "strata": {
+    "deep": [
+      24,
+      27
+    ],
+    "shallow": [
+      18,
+      20
+    ]
+  },
+  "uncertainty": "10000 paired bootstrap samples, sampling cases within each observed stratum and family, seed 20260914. Fixed sample/caps; no retries to improve timing or extra cases after outcomes."
+}

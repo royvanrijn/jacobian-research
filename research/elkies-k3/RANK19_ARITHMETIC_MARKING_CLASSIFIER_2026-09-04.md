@@ -9,8 +9,8 @@ Status: **ACTIVE, fail-closed infrastructure**.
 <!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER e99570e3cb1edca8 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
@@ -21,14 +21,14 @@ frame and enter the classifier.  The current exact decisions are
 
 ```text
 ARITHMETICALLY_POSSIBLE    1
-ARITHMETICALLY_EXCLUDED    4
-UNKNOWN                   61
+ARITHMETICALLY_EXCLUDED    5
+UNKNOWN                   60
 ```
 
 The positive row is the already-realized determinant-948 `NS0001` control.
 The excluded rows are determinants 500 and 750, determinant-720 Golay,
-and determinant-950 `NS0024`. NS0031 is `UNKNOWN` after the
-[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+determinant-950 `NS0024`, and determinant-1184 `NS0031`. The latter uses the
+[corrected full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 Every other row remains `UNKNOWN`; no bounded search, coarse modular curve, or
 formal local branch is promoted. One of those rows, determinant 1236, now has
 the more precise Phase-2 certificate `UNRESOLVED_FOR_EXPLICIT_REASON`: its
@@ -108,23 +108,21 @@ non-CM rational point on `X_0^+(475)`.  Momose's theorem excludes it, using
 the prime `19`.  The classifier imports the exact numerical certificate and
 keeps the theorem input explicit.
 
-### Determinant 1184: UNKNOWN after the period-group correction
+### Determinant 1184: excluded by the corrected full stable curve
 
-The split order gives the exact norm-one curve
+The full stable projective group is `Gamma union W_37 Gamma`, where
+`Gamma=Gamma_ns(4) intersect Gamma_0(37)`. It includes the stable reflection
+that refuted the original norm-one containment. Its canonical Q-curve is
+`(X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>`, of genus ten.
 
-```text
-X_ns(4) x_{X(1)} X_0(37),       genus 23.
-```
-
-Forgetting level four maps to `X_0(37)`.  Vélu's rational-point
-classification leaves two noncuspidal points, and both have Frobenius pair
-`(trace,determinant)=(2,3) mod 4` at `19`, which is absent from the unramified
-non-split Cartan. Neither point lifts, including after quadratic twist.
-This remains a theorem about the norm-one curve. The asserted map from the
-full marked K3 period curve was invalid: a stable reflection has projective
-spin determinant 37 and is outside rational norm-one units. The full period
-group, its QQ model and its rational non-CM locus remain unresolved. See the
-[exact counter-witness](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+Reduction modulo two gives a degree-four Q-map to `v^2=u^6-4*u^4+4`.
+Unconditional cubic-field elliptic Chabauty proves that this quotient has
+exactly twelve rational points. The cusp-normalized map to `X_0(37)^+`
+sends all twelve to the cusp or CM points. Hence the full curve has no
+rational noncuspidal non-CM point, excluding a full rational rank-19 NS0031
+marking. The genus-23 norm-one arithmetic and the missing-reflection witness
+remain valid but are not the new obstruction. See the
+[full proof and replay](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 
 ### Determinant 720: excluded
 
@@ -267,3 +265,5 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 The checkers do not reprove Momose, Vélu, Mazur--Kenku, the split-Eichler
 normalizer theorem, the Inose correspondence, or the rank-three period/spin correspondence. Those inputs
 remain named in the decision registry and canonical obstruction notes.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

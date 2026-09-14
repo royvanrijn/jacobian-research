@@ -1,0 +1,66 @@
+{
+  "cpu_protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "feature_sources": {
+    "finite_cancellation_features.py": "1ca9551f12cf0c5648ea812419c53f81108413fc08f38e9e1d5acf79bbdfbafa",
+    "half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+    "search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58"
+  },
+  "fit": {
+    "coefficients": [
+      -0.784457569532562,
+      0.010331835098065425,
+      0.6055972401296802,
+      -0.19692126606607713,
+      0.055298046958056506,
+      -0.348355371178288,
+      -0.0034603735557340483,
+      0.0
+    ],
+    "features": [
+      "real_logS",
+      "coefficient_bits",
+      "local_g_uniform",
+      "local_g_differential",
+      "log_soluble_mass",
+      "unknown_mass_sum",
+      "missing_local_expectations"
+    ],
+    "means": [
+      -2.9137616801674286,
+      -3.457737326485073,
+      0.09691768459693717,
+      -1.2599004888101055,
+      -0.06648219953779279,
+      -0.00040987826460021123,
+      0.0
+    ],
+    "scales": [
+      3.10116259440733,
+      2.7022170305305155,
+      0.8106808441832986,
+      2.29967330554117,
+      0.44408275647297607,
+      0.0030160237737485965,
+      1.0
+    ]
+  },
+  "schema": "finite-cancellation-mapping-policy.v1",
+  "scope": "Opt-in candidate.12 withheld-curve controls:10 versus9 gains,180.488128 versus200.515316 CPU seconds.9.987859 percent saving misses the strict10 percent CPU gate. No default replacement or rank32 inference.",
+  "status": "EXPERIMENTAL_STRICT_CPU_GATE_MISSED",
+  "training_excluded_j_groups": [
+    "009be228374e37ee82021a689605ff4ceac584bec15132e4e9ee93da76e8551c",
+    "017d577ee249b5e13b2576bf0f0fce586c5d8c27aaf9361c1e6e7db7f60810fd",
+    "03e963f7c4a99e34ce791ae0cbbc1358bc25a353c51cbf8058eb3ec67556c505",
+    "0433062016ddeddc7b5b7c83c042f98ceba5f270f89fea40da974ad3c980b977",
+    "0453056fea4fb205d77866ac16b60fe0b15e74c171d54dc26f4f6dd8f2c5960b",
+    "04f7de584f3fb059f6e2b46af0d04454c13e2ffbc785c5278636cecbfc546d59",
+    "0646bcc81d2393e5a510dcef45bd292b220829ecddf730c3f4de076a435d05cb",
+    "072f90c8b488573ed2332dd10f5c107acfb1214a45b4937e0d01f241fc927725",
+    "094fd3b5c73484b93f990bb67751c968ff031f2631b46ff51c191a32a3f81fe0",
+    "09e900aca7cd1ec16f30f49bbe6eb79da268b6ad96177b9891b221dbdadd5b42",
+    "0f9f91d3df417f76213493b115f0aa47c505cc3e0945f7a46365dbff7373c59d",
+    "13c955c2f9930c1084c316912c8c56a9efbe1401925cf1f74727a2c4176e7640"
+  ],
+  "training_rows": 37294
+}

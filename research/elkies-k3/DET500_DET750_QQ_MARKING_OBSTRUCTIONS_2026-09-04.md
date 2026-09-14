@@ -243,12 +243,18 @@ Najman, and Padurariu,
 
 ## Foundry consequence
 
-After the [NS0031 period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md),
-the rootless-MW17 classifier has one realized positive control, four retained
-exclusions and 61 `UNKNOWN` rows. The global arithmetic-first queue has five
-retained exclusions, one positive control and 821 unresolved rows. The
+After the [corrected full stable NS0031 proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md),
+the rootless-MW17 classifier has one realized positive control, five exact
+exclusions and 60 `UNKNOWN` rows. The global arithmetic-first queue has six
+exclusions, one positive control and 820 unresolved rows. The
 equation-agent handoff remains empty; the determinant-500/750 proofs above
 are unchanged by this accounting correction.
 
 No equation, carrier-receptivity, or record-search work is triggered: both
 selected candidates fail at the full rational-marking/period-curve gate.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
+
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER e99570e3cb1edca8 -->
+
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->

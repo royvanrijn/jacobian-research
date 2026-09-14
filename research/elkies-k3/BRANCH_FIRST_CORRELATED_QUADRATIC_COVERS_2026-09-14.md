@@ -13,6 +13,11 @@ existence criterion, not a sufficient condition for a globally low-genus cover.
 The last section gives a different, explicit system with a common quartic
 factor imposed from the start. That system has not been solved on these parents.
 
+The subsequent [singularity analysis](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
+constructs genus0/1 controls on different K3 parents and closes the entire
+constant-abscissa chart on these four equations. It also treats the repeated
+quartic boundary. The fixed MW17-parent system remains unsolved.
+
 ## 1. The exact global condition
 
 For a nonzero rational function `R=N/H`, with coprime polynomials `N,H`, the

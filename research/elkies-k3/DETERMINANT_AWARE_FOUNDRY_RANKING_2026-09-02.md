@@ -1,11 +1,11 @@
 # Determinant-aware re-ranking of the rank-seven foundry
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK e79dd42ecb04dd8f -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK c3fb941c5a24bc1f -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER e99570e3cb1edca8 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Result
@@ -172,31 +172,30 @@ geometric controls only.
 
 The arithmetic pre-screen now has an explicit rejection ledger. Of 827
 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters;
-determinants `500`, `720`, `750`, and `950`/`NS0024` are then removed by
-the retained rational-marking obstructions, leaving 62 arithmetic candidates. The determinant-948 control remains
+determinants `500`, `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031` are removed by
+the exact rational-marking obstructions, leaving 61 arithmetic candidates. The determinant-948 control remains
 the only fully ready row and is outside the different-NS milestone. There is
 therefore no unresolved rootless-frame row authorized for equation work.
 
 The upstream arithmetic-marking classifier types these as one
-`ARITHMETICALLY_POSSIBLE`, four `ARITHMETICALLY_EXCLUDED`, and 61 `UNKNOWN`.
+`ARITHMETICALLY_POSSIBLE`, five `ARITHMETICALLY_EXCLUDED`, and 60 `UNKNOWN`.
 Only the first type can enter expensive equation scoring; the determinant-948
 positive control is already realized, so the new different-NS equation-agent
 handoff is empty.
 
 The operational priority now comes from the global `T`-first planner. It
 orders all 827 transcendental rows before NS/rootless inspection and has an
-821-row arithmetic research queue. The split determinant-378 diagnostic is
+820-row arithmetic research queue. The split determinant-378 diagnostic is
 excluded by its exact stable `X_0(63)` curve. The next exact-coarse diagnostics
 are determinants `256` and `512`; their `X_0(2)` and `X_0(4)` labels do not
 replace the still-missing literal stable-kernel calculations.
 
 The determinant-1184 NS0031 surface has a formally smooth `Z_7` branch
-and a marking-level corridor. Its rational marking is `UNKNOWN`: the
-[September 12 correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-refutes the full period-group containment used for the former exclusion.
-The valid norm-one modular arithmetic does not decide the full marked curve.
-NS0031 returns to the research ranking, with equation scoring still closed
-until a full rational marking is certified.
+and a marking-level corridor. Its full rational rank-19 marking is excluded
+by the [September 14 full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
+The genus-ten Q-curve includes the missing reflection; its genus-two quotient
+has exactly twelve rational points, all cuspidal or CM. NS0031 is retained
+in the exact-rejection ledger with its local and geometric controls.
 
 For determinant1236 the [exact candidate cover](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md)
 and its twelve fibre evaluations are already available. Its only remaining

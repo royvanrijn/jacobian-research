@@ -93,12 +93,12 @@ theorems remain correctly gated:
 
 No custom row in this batch is currently authorized for equation-level work:
 the recorded geometric spectra do not certify rational markings. NS0024
-retains its exclusion; NS0031 is `UNKNOWN` after the
-[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+retains its exclusion; NS0031 is now excluded by the
+[corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 Use the current arithmetic classifier for dispositions, not the old sweep
 certificate's historical marking labels. Joining the 32 eligible surface IDs
-to that classifier gives 31 `UNKNOWN` rows and the NS0024 exclusion; only
-NS0031 changed disposition. No spectral census was repeated.
+to that classifier gives 30 `UNKNOWN` rows and the NS0024/NS0031 exclusions;
+only NS0031 changed disposition in this update. No spectral census was repeated.
 For `NS0021`, the next certified step is to embed its displayed split order
 in `M_2(QQ)`, derive the exact congruence conditions and signature, and
 compute the stable marking subgroup.  A rational noncuspidal non-CM lift is
@@ -139,4 +139,6 @@ does not prove a rank jump or turn a bounded search miss into point absence.
 The [earlier note](../archive/elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.before-2026-09-13.md.txt)
 is preserved alongside the original certificate and producer.
 
-<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 582b0c9d781037fb -->
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 06c6fe2e29815616 -->
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

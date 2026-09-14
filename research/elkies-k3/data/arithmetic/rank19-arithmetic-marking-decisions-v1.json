@@ -207,7 +207,7 @@
     },
     {
       "surface_id": "K3-d1b1381f87d69f1c",
-      "classification": "UNKNOWN",
+      "classification": "ARITHMETICALLY_EXCLUDED",
       "certificates": [
         {
           "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
@@ -266,13 +266,50 @@
               ]
             }
           ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_CORRECTED_FULL_STABLE_ARITHMETIC_OBSTRUCTION"
+            },
+            {
+              "path": "surface_id",
+              "equals": "K3-d1b1381f87d69f1c"
+            },
+            {
+              "path": "stable_group.full_genus",
+              "equals": 10
+            },
+            {
+              "path": "arithmetic_model.determinant_units_included",
+              "equals": true
+            },
+            {
+              "path": "genus_two_quotient.degree_from_full_curve",
+              "equals": 4
+            },
+            {
+              "path": "genus_two_quotient.rational_point_count",
+              "equals": 12
+            },
+            {
+              "path": "rational_non_CM_locus",
+              "equals": "EMPTY"
+            },
+            {
+              "path": "rational_NS0031_rank19_marking",
+              "equals": "EXCLUDED"
+            }
+          ]
         }
       ],
       "full_marking_curve": {
-        "status": "UNKNOWN_FULL_STABLE_PERIOD_GROUP_AND_QQ_MODEL",
+        "status": "PASS_EXACT_FULL_STABLE_GROUP_QQ_MODEL_AND_NONCM_EXCLUSION",
         "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T)), acting projectively",
-        "explicit_model": null,
-        "boundary": "The stable root reflection is projectively represented by a determinant37 normalizer element, outside rational norm-one units. The previously asserted period-induced map to the norm-one Cartan fibre product is invalid.",
+        "explicit_model": "Canonical Q quotient (X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>",
+        "boundary": "The full genus-10 curve includes the stable reflection. Its degree-four genus-two quotient has exactly twelve rational points, all cuspidal or CM. Rational CM lifts and larger fields are outside this rank-19 exclusion.",
         "coarse_norm_one_curve": {
           "status": "PASS_EXACT_NORM_ONE_CURVE_ONLY",
           "group": "Gamma_ns(4) intersect Gamma_0(37)",
@@ -287,9 +324,38 @@
             148
           ],
           "boundary": "Exact norm-one arithmetic; the full stable period group is not contained in this group."
+        },
+        "genus": 10,
+        "label": "(X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>",
+        "projective_group": "Gamma union W_37 Gamma; Gamma = Gamma_ns(4) intersect Gamma_0(37)",
+        "norm_one_cover_degree": 2,
+        "marking_gap": {
+          "status": "CLOSED_FULL_STABLE_GROUP_AND_ARITHMETIC_DESCENT",
+          "discriminant_group_invariants": [
+            1184
+          ]
         }
       },
-      "easy_quotient_maps": [],
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_QQ_MODULAR_QUOTIENT",
+          "source": "C_4",
+          "target": "C_2: v^2=u^6-4*u^4+4",
+          "target_genus": 2,
+          "degree": 4,
+          "field": "Q",
+          "boundary": "Reduction of Cartan level 4 to level 2, compatible with w_37 w_ns."
+        },
+        {
+          "status": "PASS_EXACT_QQ_MODULAR_QUOTIENT",
+          "source": "C_2",
+          "target": "X_0(37)^+: Y^2+Y=X^3-X",
+          "target_genus": 1,
+          "degree": 2,
+          "field": "Q",
+          "boundary": "Cusp and differential fix the sign and translation used for CM identification."
+        }
+      ],
       "arithmetic_tests": [
         {
           "status": "PASS_EXACT_FROBENIUS_LIFT_EXCLUSION",
@@ -299,15 +365,23 @@
         {
           "status": "PASS_STABLE_REFLECTION_OUTSIDE_RATIONAL_NORM_ONE_IMAGE",
           "method": "Exact integral reflection, discriminant action, positive-plane and Clifford adjoint identities",
-          "conclusion": "The old group-containment step is false. Rational NS0031 marking existence remains UNKNOWN."
+          "conclusion": "The old group containment is false. The separate full-stable certificate includes this reflection and supplies a corrected obstruction."
+        },
+        {
+          "status": "PASS_EXACT_FULL_STABLE_NONCM_EXCLUSION",
+          "method": "Canonical adelic level; genus-two quotient; unconditional cubic-field elliptic Chabauty with full MW groups; exact CM coordinate identification",
+          "conclusion": "The full genus-10 Q curve has no rational noncuspidal non-CM point; a full rational rank-19 NS0031 marking is excluded."
         }
       ],
-      "decision": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
+      "decision": "The corrected full stable marking curve has a Q-defined genus-two quotient v^2=u^6-4*u^4+4. Its twelve rational points map only to the cusp and CM points on X_0(37)^+. This proves the rank-19 marking exclusion with the missing determinant-minus-one reflection included.",
       "theorem_inputs": [
         "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
-        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice"
+        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice",
+        "Rizov, Complex multiplication for K3 surfaces, Theorem 3.16 and section 3.9: canonical arithmetic period map with auxiliary level",
+        "Elkies, Elliptic and modular curves over finite fields, Appendix level 37, equations 98-104: cusp/differential normalization and CM coordinates",
+        "Unconditional Magma 2.29-10 full Mordell-Weil and elliptic Chabauty proofs, exact input and raw output retained"
       ],
-      "next_arithmetic_gate": "Determine the full stable projective period group, its correct QQ model and rational non-CM points, or supply an independent arithmetic obstruction. Retain determinant-minus-one stable isometries; do not reconstruct the formal branch or launch equations from this correction."
+      "next_arithmetic_gate": null
     },
     {
       "surface_id": "K3-04b86146cc6b284b",

@@ -30,7 +30,15 @@ now assigns unequal box heights to the same three first-chart models: it uses
 57.4% of the best single box's squared-height proxy at the same guaranteed
 elliptic-height range. This independently replayed optimum prices addresses
 equally and excludes preparation; it is not a runtime or recovery result.
-No benchmark restart or production search is scheduled.
+The [finite-cancellation study](notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md)
+found a conditional height signal across 6,285 retained exceptional-point
+observations. Its [clean 41-curve validation](notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md)
+failed the recovery/CPU gates: V3 recovers 39 directions in 401.20 CPU seconds,
+q-only recovers 38 in 382.27, and full cancellation recovers 37 in 440.39.
+Both fitted policies also cost more on M24–M25 controls. Factor-free remains
+the default. The Hessian corollary reconstructs cancellation from q and its
+derivatives and fixes the gcd squareclass before the target is known; it
+supplies no new independent point. No further search is scheduled.
 
 The preceding candidate-generation work explored parent/fibration diversity.
 The [completed history analysis](notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md)
@@ -66,6 +74,7 @@ their historical cohort counts.
 | Certify the level-474 H3 rational base | [Canonical source and proof boundary](notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) · [Sage certificate](../elkies-k3/scripts/certify_h3_level474_rational_points_qc.sage) |
 | Understand adaptive point recovery | [V3 rule and calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer results](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
 | Compare equivalent models by proved coordinate coverage | [Local height bounds](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) · [cost-aware unequal boxes](notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md) |
+| Predict realized cancellation and model accessibility | [Local law, corpus, holdouts and CPU receipts](notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md) |
 | Recover points from constructed strict classes | [Both fixed covers solved blindly; exact transport and V3 comparison](rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
 | Choose candidates toward32 | [Seed/amplification history, dataset and family holdouts](notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md) |
 | Compare RR global Selmer supply | [Two302 controls reach verified integral orders; global dimensions remain unknown](notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md#two-case-global-completion-attempt-september14) |
@@ -148,3 +157,9 @@ is preserved as a dated navigation snapshot.
 <!-- status-consumer: EC-HEIGHT-MODEL-ACCESSIBILITY-20260913 175492d551de96d4 -->
 
 <!-- status-consumer: EC-HEIGHT-PORTFOLIO-COST-20260914 bab192a6e296a347 -->
+
+<!-- status-consumer: EC-FINITE-CANCELLATION-PREDICTOR-20260914 e09ffd3e81048fb2 -->
+
+<!-- status-consumer: EC-POINTED-CANCELLATION-HESSIAN-20260914 182b7126777106c4 -->
+
+<!-- status-consumer: EC-FINITE-CANCELLATION-VALIDATION-20260914 60e311232626b5b2 -->

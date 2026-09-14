@@ -182,6 +182,9 @@ python3 research/scripts/research.py show ID
 | `EC-FXPT5` | proved | [Bounded genuine Fermigier simultaneous-square pair-cover search](../elliptic-curves/notes/FERMIGIER_REPRODUCTION.md) |
 | `EC-FXPT6` | proved | [Bounded rational-point sieve on a Fermigier nonlinear transport component](../elliptic-curves/notes/FERMIGIER_REPRODUCTION.md) |
 | `EC-R20` | proved | [Low-conductor rank-at-least-20 Fermigier near miss](../elliptic-curves/notes/FERMIGIER_REPRODUCTION.md) |
+| `EC-FINITE-CANCELLATION-PREDICTOR-20260914` | proved | [Exact finite-cancellation neighbour law and positive withheld-model signal; measured V3 control gain misses strict CPU gate](../elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md) |
+| `EC-FINITE-CANCELLATION-VALIDATION-20260914` | proved | [Clean q-only/cancellation comparison fails recovery and CPU gates on 41 additional retained curves](../elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md) |
+| `EC-POINTED-CANCELLATION-HESSIAN-20260914` | proved | [Pointed cancellation is a Hessian/derivative condition with target-independent gcd squareclass](../elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md) |
 | `EC-FIXED-CUBIC-U-MINUS1-RANK1` | proved | [A certified rational point outside the inherited fixed-field Kummer span at u=-1](../elliptic-curves/notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md) |
 | `EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER` | proved | [Class-group-free fixed-cubic-field local Kummer intersections](../elliptic-curves/notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md) |
 | `EC-FIXED-CUBIC-CONIC-LONG-SEARCH` | proved | [Longer norm and local-reconstruction searches leave the first cubic conic point unconstructed](../elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md) |

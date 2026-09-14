@@ -349,7 +349,7 @@ local cache so it cannot become a competing mathematical-status authority.
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
 <!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
@@ -357,16 +357,16 @@ local cache so it cannot become a competing mathematical-status authority.
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
   coarse norm-one curves from full discriminant-marking curves, and reports
-  one `ARITHMETICALLY_POSSIBLE`, four `ARITHMETICALLY_EXCLUDED`, and 61
-  `UNKNOWN` rows, including NS0031 after its period-group correction. One of the unknown rows, determinant 1236, now carries the
+  one `ARITHMETICALLY_POSSIBLE`, five `ARITHMETICALLY_EXCLUDED`, and 60
+  `UNKNOWN` rows; NS0031 now has a corrected full stable obstruction. One of the unknown rows, determinant 1236, now carries the
   exact Phase-2 status `UNRESOLVED_FOR_EXPLICIT_REASON` rather than an
   unidentified-curve placeholder. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
   is the fail-closed new different-NS equation handoff; it is empty. Replay
   both with
   `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
   Their whole-file SHA-256 values are respectively
-  `43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a`
-  and `0379500e30c3ac3dbc95528c94a3542dcc05eb81d1c4ad7ecb255d17090dfca8`.
+  `aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227`
+  and `2e8f2abe797bfe345ccc133f0e6ea20b5d6afa8a44d516509ad85820a3e925a1`.
 
 - `elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json` is the complete
   Corollary-S4 parity-coset census for the 136 rootless MW17 frame classes
@@ -379,7 +379,7 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage --check`.
   Its whole-file SHA-256 is
   `c60fc5b3a369bd058bbb4fcfb93e0a395280c5ea068d4ed20101a51d459d3ddd`.
-<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 582b0c9d781037fb -->
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 06c6fe2e29815616 -->
 
 - `elkies-k3-det500-det750-qq-marking-obstructions-v1.json` reconstructs the
   literal and primitive Clifford orders for the two selected rootless rows,
@@ -482,12 +482,12 @@ local cache so it cannot become a competing mathematical-status authority.
 
 - `elkies-k3-arithmetic-first-marked-t-foundry-v1.json` is the global
   transcendental-first queue. It orders all 827 `T` rows without rootless
-  data, records 5 retained exclusions, 1 realized positive control, 821 arithmetic
+  data, records 6 exact exclusions, 1 realized positive control, 820 arithmetic
   research rows, 21 coarse genus-at-most-two diagnostics, and no new
   NS/rootless handoff. Replay it with
   `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
   Its whole-file SHA-256 is
-  `371dba10dfb40a1812baf7d79d0e1470e6edd2d67b46b75ad06a646481f0b965`.
+  `ceca4b3249f86407725cf995ba3c77842012e445f1bc0d2a9636d0b5d634093a`.
 
 - `elkies-k3-det378-qq-marking-obstruction-v1.json` records the exact
   `U(3)+<42>` discriminant form, primitive and literal Clifford orders, `A4`
@@ -498,14 +498,29 @@ local cache so it cannot become a competing mathematical-status authority.
   Its whole-file SHA-256 is
   `cde5b29f0a361cd0c8e81c0c38d8aedba08c155cd4359651d7c9c368d4a1b249`.
 
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
+
+- [elkies-k3-ns0031-stable-marking-v1](elkies-k3-ns0031-stable-marking-v1/README.md)
+  is the corrected proof packet: the full stable group includes the missing
+  reflection, its canonical curve over `Q` has genus 10, and a degree-four
+  map to `v^2=u^6-4*u^4+4` reduces the obstruction to twelve rational points,
+  all cuspidal or CM. It excludes full rational rank-19 NS0031 markings;
+  rational CM lifts and markings over larger fields are outside its scope.
+  The Sage group/model check audits retained Magma output; the separate
+  Magma input reruns the unconditional global descent and elliptic Chabauty.
+  See the [current replay guide](../../REPRODUCE.md). The certificate's
+  whole-file SHA-256 is
+  `2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb`.
 
 - `elkies-k3-ns0031-qq-marking-obstruction-v1.json` records the exact even
   Clifford order, the `Gamma_ns(4) intersect Gamma_0(37)` coset signature, the
   complete two-point noncuspidal `X_0(37)(QQ)` input, and the mod-4 Frobenius
   exclusion at 19. Its original K3-exclusion status label is historical:
   the [period-group correction](../../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  leaves rational marking UNKNOWN. Replay only its finite arithmetic with
+  invalidates the original implication. The separate
+  [full stable packet](elkies-k3-ns0031-stable-marking-v1/README.md) now
+  proves the rank-19 exclusion, including the missing reflection.
+  Replay only the original certificate's finite arithmetic with
   `make verify-ns0031-arithmetic`;
   its whole-file SHA-256 is
   `49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.

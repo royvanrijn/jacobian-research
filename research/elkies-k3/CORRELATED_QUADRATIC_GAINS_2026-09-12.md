@@ -13,7 +13,24 @@ parent and X1092 class1. All retain twenty forced coefficient branch points
 for every rational auxiliary function. The new note gives the exact local
 removability criterion and a different common-quartic polynomial system whose
 solutions would have independent height-eight sections and singular
-arithmetic-genus-five images. That system remains unsolved.
+arithmetic-genus-five images. That system remains unsolved on the retained
+MW17 parents.
+
+The [common-quartic singularity analysis](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
+now gives explicit genus0 and positive-rank genus1 controls, each with two
+independent gains of height determinant48, on newly constructed K3 parents.
+Their inherited ranks are unknown. On all four retained MW17 equations,
+every constant abscissa has normalization genus at least4, so both abscissas
+in a successful common-quartic solution must be nonconstant. The complete
+fixed-parent quartic chart, including repeated quartic factors, remains open.
+
+The [branch-stratum reduction](COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md)
+now gives fifteen complete factor cases in nine coordinate patches. On Q80,
+the squarefree-quartic case in which both sections choose the same2-torsion
+point at every branch value is excluded by unramified descent and the smooth
+genus-one theorem. Every remaining genus-one solution there must split the
+parent cubic over at least one branch residue field. The other factor cases,
+other parents and the repeated-quartic genus-zero boundary remain open.
 
 The first prospective calculation excludes all **300 pairs of 25 complete
 genus-one pencils** on published R17. The exclusion covers all rational pencil
@@ -190,6 +207,7 @@ or a parent that passes the coefficient-divisor gate, with a proved low-genus
 branch condition before a parameter campaign.
 No enlargement or heavy computation is scheduled by this note.
 
-The positive endpoint remains unverified: no shared quadratic cover with both
-two independent new sections and infinitely many rational base points has
-been constructed here.
+The positive MW17-parent endpoint remains unverified: no retained high-rank
+parent yet has a shared quadratic cover with both two independent new sections
+and infinitely many rational base points. The new-parent controls do not close
+this transfer gate.

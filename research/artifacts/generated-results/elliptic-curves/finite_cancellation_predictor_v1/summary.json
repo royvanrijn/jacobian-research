@@ -1,0 +1,55 @@
+{
+  "boundary": "Positive conditional predictive signal and a measured12-case recovery/CPU advantage;9.987859% CPU saving is below the frozen10% cutoff, and the exploratory case bootstrap includes1. Opt-in experimental policy, no default replacement or rank32 claim. No C/L optimization.",
+  "cpu_ratio": 0.9001214051898158,
+  "cpu_ratio_case_bootstrap_ci95_exploratory": [
+    0.6748152750380108,
+    1.0748432231894407
+  ],
+  "cpu_totals": {
+    "factor_free": {
+      "cases_with_literal_withheld_recovery": 7.0,
+      "cpu_seconds": 200.51531600000004,
+      "point_calls": 290.0,
+      "recoveries": 9.0
+    },
+    "finite_selector": {
+      "cases_with_literal_withheld_recovery": 9.0,
+      "cpu_seconds": 180.488128,
+      "point_calls": 237.0,
+      "recoveries": 10.0
+    }
+  },
+  "curve_generic_banks": 1962,
+  "exact_signed_model_evaluations": 75272,
+  "exceptional_point_observations": 6285,
+  "files_sha256": {
+    "analysis.json": "66806d56cebaef1be5345f6c9f7033e867e81e824d09cb52bcb96f6e1b0c3d47",
+    "census.json": "79236e636a8d1c2ff2a10bca9d4f655257a0271b77a49a95575c6b3827dd2a87",
+    "comparison.pdf": "3d1c85462e8a91c0931c4f7d48fd8a9f2866bfbc0bf41d94c91d5e26ca3768fd",
+    "comparison.png": "925121a493138b9a8a3731a6bc574b835934807c1f1e29dfca9541591f27ef07",
+    "corpus.json.gz": "f4b84a2a0089e3928d06519b0421ba97f9f767cc92500644ba70849536375b29",
+    "cpu/comparison.csv": "3cc7b0ebb5b131319de5e16141f98b02df45d6bbe50d88e60736b0d12163c90a",
+    "cpu/inputs.json": "97c1fa213efbf5701d47375722b116450fbb073b3cab268250b0b57d566d3b5a",
+    "cpu/protocol.json": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+    "cpu/supervision.json": "80081da6ba55b6e6e2d4f8b7fe80cda0516f236f6f084ef28c2b7f84ddabe51e",
+    "cpu/verified.json": "c74c332aacd0fcb67d443fb1058acf8e5a4b718b7ca6b5ddba81f9ec00164775",
+    "evaluation.json.gz": "a87b888965788ac0f7c1c20e65129a49828217a41ef824ed6c20233af34ea5eb",
+    "g_factorizations.json.gz": "570fe993103de564f91cfd8ebeb05a2a1f9b103cc9e76275adcc69190fc510fb",
+    "neighbour_states.json": "579cb006368bdae941d930bc24f4ae938699aa76bc7c95ead5aab3db968186f6",
+    "prime_decomposition.json": "a10364988d28b3821ef78672a34c313d8370f806965c95c10f915318772751f7",
+    "protocol.json": "e52048411d409ac472435cdf935e05fd9bbf471377a96eb54b6b31ca7d5e37e7",
+    "q_ablation.json": "f3ac2480bea0d856655507d2ecfbe53ce81c22e89f04fd7f711006d9fe1d6686",
+    "replay.json": "7c3b318e6bd6a5aff7311e5ce7ef9c3dc5cff92e601be9018c2006e61a5a4c8e"
+  },
+  "gain_per_cpu_ratio": 1.2344013870848924,
+  "j_groups": 1961,
+  "literal_withheld_point_case_rate_per_cpu_ratio": 1.4283787479125185,
+  "policy_sha256": "b86197acd76dc86b4cceb674a2b0df473bc0f3307cd947b508dd243a3785c8a7",
+  "primary_accessibility_gate_passed": [
+    "ridge_real_and_finite"
+  ],
+  "registry_endpoints_joined": 491,
+  "reporter_sha256": "c1d15e0628146dffb3c79b45470cd4e8c19ece12dabf815637d636b574f97cec",
+  "status": "COMPLETE_BOUNDED_PREDICTOR_STUDY_STRICT_CPU_GATE_MISSED",
+  "strict_cpu_gate_passed": false
+}

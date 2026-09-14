@@ -335,7 +335,7 @@
       "completed": "Two exact rational section cards have reduced length 28; the full graph calculation has multidegrees (1,12,28,4) only over F_32003. WQRS1/WQCA1/WQSM1 already complete the exact open-side, corner and packet-matching calculations.",
       "remaining": "Compute divisor classes and normal bundles for the existing center curves inside their exceptional surfaces, then perform one global conductor pushout. Determine alpha and beta in the explicitly unpromoted finite-model Hilbert-polynomial checkpoint and prove the global normalization/equinormalization or flat spread-out statement. Neither the two QQ cards nor local conductor colengths alone establish these assertions.",
       "disposition": "open-obligation",
-      "source_review": "Read the entire stable-moduli note through the two-coefficient checkpoint, including Sections 5.3\u20135.5 after the old graph calibration. Corrected the ledger next step and added current entry navigation so already completed local normalization is not rediscovered.",
+      "source_review": "Read the entire stable-moduli note through the two-coefficient checkpoint, including Sections 5.3–5.5 after the old graph calibration. Corrected the ledger next step and added current entry navigation so already completed local normalization is not rediscovered.",
       "input_review": "Read the graph checker, its two inline SectionCards, rational saturation and separate modular graph construction. Pinned the weighted model and explicit-seed helper. It has no stored input dependency but invokes Singular saturation and radical computations when run; those were not replayed. The alpha/beta formula is a documented exploratory checkpoint with no status promotion or independent certificate.",
       "dependency_review": "WMC1 supplies the weighted family. The later three local normalization results narrow the remaining work; retained them in the review and current scope rather than making the earlier calibration depend on downstream work. Section-card truth over Q is not a spread-out argument.",
       "evidence": [
@@ -502,7 +502,7 @@
       "evidence": [
         {
           "path": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-          "quote": "The base 54-column seed now has an exact generic-residue cover of all seven\nE7 components.  Actual Y-branch normalizations supply E7\u2081--E7\u2083, actual conic\ncoordinate rings supply E7\u2085--E7\u2086, and the normalized edge charts supply E7\u2084\nand E7\u2087.  The row counts are `(42,189,391,42,228,57,34)`, hence 983 in total.\nThis is not yet a global q8 pencil: node, marked-branch, overlap, and gluing\nconditions have not been folded into this certificate."
+          "quote": "The base 54-column seed now has an exact generic-residue cover of all seven\nE7 components.  Actual Y-branch normalizations supply E7₁--E7₃, actual conic\ncoordinate rings supply E7₅--E7₆, and the normalized edge charts supply E7₄\nand E7₇.  The row counts are `(42,189,391,42,228,57,34)`, hence 983 in total.\nThis is not yet a global q8 pencil: node, marked-branch, overlap, and gluing\nconditions have not been folded into this certificate."
         }
       ],
       "reviewed_claims": {
@@ -738,7 +738,7 @@
       "evidence": [
         {
           "path": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-          "quote": "The sixth `E7_2--E7_5` node passes the corresponding cancellation-sensitive\naudit: `x-x(P1)=Z^3U^2*unit` and `y-y(P1)=Z^3U^2Y*unit`, so its node module\nis likewise `t*R` and its q8 factor is `Z^6Y^5`. This does not conflate the\nnode with the separate marked smooth point `-P1` on E7\u2085."
+          "quote": "The sixth `E7_2--E7_5` node passes the corresponding cancellation-sensitive\naudit: `x-x(P1)=Z^3U^2*unit` and `y-y(P1)=Z^3U^2Y*unit`, so its node module\nis likewise `t*R` and its q8 factor is `Z^6Y^5`. This does not conflate the\nnode with the separate marked smooth point `-P1` on E7₅."
         }
       ],
       "reviewed_claims": {
@@ -828,7 +828,7 @@
       "evidence": [
         {
           "path": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-          "quote": "The E7\u2084\u2013E7\u2083 quotient is now reduced to its actual principal frame: after\nclearing only explicit node units, the 54-column seed requires common-numerator\nmembership in `t^17 R`. This is the structured finite-quotient input, rather\nthan the raw ten-generator singular-model power ideal."
+          "quote": "The E7₄–E7₃ quotient is now reduced to its actual principal frame: after\nclearing only explicit node units, the 54-column seed requires common-numerator\nmembership in `t^17 R`. This is the structured finite-quotient input, rather\nthan the raw ten-generator singular-model power ideal."
         }
       ],
       "reviewed_claims": {
@@ -949,7 +949,7 @@
       "evidence": [
         {
           "path": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-          "quote": "The actual conic components now have the same treatment. On `E7_5` and\n`E7_6`, set `Z=0`, clear the explicit t-and-chord denominator, and reduce in\nthe true coordinate ring `QQ(U,Y)/(F(0,U,Y))`. The seed calculation yields\n228 E7\u2085 rows and 57 E7\u2086 rows; the E7\u2085 chord keeps the audited P1 cancellation\ninstead of substituting a guessed normal form."
+          "quote": "The actual conic components now have the same treatment. On `E7_5` and\n`E7_6`, set `Z=0`, clear the explicit t-and-chord denominator, and reduce in\nthe true coordinate ring `QQ(U,Y)/(F(0,U,Y))`. The seed calculation yields\n228 E7₅ rows and 57 E7₆ rows; the E7₅ chord keeps the audited P1 cancellation\ninstead of substituting a guessed normal form."
         }
       ],
       "reviewed_claims": {
@@ -1582,7 +1582,7 @@
       "evidence": [
         {
           "path": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-          "quote": "The translation centre itself presents no additive-fibre obstruction: at both\ncusps the exact chord denominator is a unit, its translated cusp image has\nthe prescribed additive orders, and its tangent action is unipotent with\ndeterminant one.  The exact finite point `P0` therefore specializes regularly\nwith nonzero Weierstrass gradient at both the II* and IV* fibres, so\ntranslation by `-P0` extends on both N\u00e9ron smooth loci. This is a\nsingular-germ and tangent prerequisite only; it is not a resolved blow-up-chart\npullback and does not identify transported local quotient modules."
+          "quote": "The translation centre itself presents no additive-fibre obstruction: at both\ncusps the exact chord denominator is a unit, its translated cusp image has\nthe prescribed additive orders, and its tangent action is unipotent with\ndeterminant one.  The exact finite point `P0` therefore specializes regularly\nwith nonzero Weierstrass gradient at both the II* and IV* fibres, so\ntranslation by `-P0` extends on both Néron smooth loci. This is a\nsingular-germ and tangent prerequisite only; it is not a resolved blow-up-chart\npullback and does not identify transported local quotient modules."
         }
       ],
       "reviewed_claims": {
@@ -1924,7 +1924,7 @@
         },
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
-          "quote": "This gives a first contraction screen.  The residual orders differ among\nroot branches over the same \\(E_1,E_2\\), and \\(F\\).  Consequently they\ncannot be supplied by monomials pulled back from the resolved target.  A\npolynomial contraction would have to construct root-dependent principal\nCartier masks on the normalized incidence, prove that they glue across the\nfour charts, and only then test an affine contraction. Sections 6.5\u20136.8\nconstruct rational masks with these divisors; Section 6.9 closes their\ncorrected-selector route. The valuation table alone does not settle that\naffine-source requirement."
+          "quote": "This gives a first contraction screen.  The residual orders differ among\nroot branches over the same \\(E_1,E_2\\), and \\(F\\).  Consequently they\ncannot be supplied by monomials pulled back from the resolved target.  A\npolynomial contraction would have to construct root-dependent principal\nCartier masks on the normalized incidence, prove that they glue across the\nfour charts, and only then test an affine contraction. Sections 6.5–6.8\nconstruct rational masks with these divisors; Section 6.9 closes their\ncorrected-selector route. The valuation table alone does not settle that\naffine-source requirement."
         }
       ],
       "reviewed_claims": {
@@ -1956,7 +1956,7 @@
       "evidence": [
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
-          "quote": "This gives a first contraction screen.  The residual orders differ among\nroot branches over the same \\(E_1,E_2\\), and \\(F\\).  Consequently they\ncannot be supplied by monomials pulled back from the resolved target.  A\npolynomial contraction would have to construct root-dependent principal\nCartier masks on the normalized incidence, prove that they glue across the\nfour charts, and only then test an affine contraction. Sections 6.5\u20136.8\nconstruct rational masks with these divisors; Section 6.9 closes their\ncorrected-selector route. The valuation table alone does not settle that\naffine-source requirement."
+          "quote": "This gives a first contraction screen.  The residual orders differ among\nroot branches over the same \\(E_1,E_2\\), and \\(F\\).  Consequently they\ncannot be supplied by monomials pulled back from the resolved target.  A\npolynomial contraction would have to construct root-dependent principal\nCartier masks on the normalized incidence, prove that they glue across the\nfour charts, and only then test an affine contraction. Sections 6.5–6.8\nconstruct rational masks with these divisors; Section 6.9 closes their\ncorrected-selector route. The valuation table alone does not settle that\naffine-source requirement."
         },
         {
           "path": "archive/non-elliptic/extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
@@ -2329,7 +2329,7 @@
         },
         {
           "path": "archive/non-elliptic/extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
-          "quote": "For every fixed monomial support and degree bound, items 1--4 form a finite\nmixed-incidence Gr\u00f6bner problem in the conductor-adapted coordinates (6.2).\nWithout such a bound, the ordinary polynomial Keller factorization remains\nan open, unbounded search."
+          "quote": "For every fixed monomial support and degree bound, items 1--4 form a finite\nmixed-incidence Gröbner problem in the conductor-adapted coordinates (6.2).\nWithout such a bound, the ordinary polynomial Keller factorization remains\nan open, unbounded search."
         }
       ],
       "reviewed_claims": {
@@ -3338,7 +3338,7 @@
       "disposition": "bounded-only",
       "source_review": "Read the complete campaign note, terminal reporter and driver, and inspected the intake reporter/protocol helpers. Recovered the existing completed checkpoint result instead of trusting the stale active-campaign prose. Published the previously absent terminal report using its existing producer and updated the programme navigation. Reviewed the user-directed closure and direct next-point pivot: old processes are terminal, no fresh constructor fibre ran, and the new frozen comparison is not an executed search or rank theorem. No underlying proof assurance is upgraded.",
       "input_review": "The terminal reporter checks all48 roster rows, wave/proof counts and ranks, stopping reasons, protocol sources and384 report input/certificate bindings. Retained ledger/protocol, maps, results and cloud certificates are present. This is a byte/metadata audit of prior independent proofs, not a new point or finite-group replay. The million-parameter intake audit and all search stages were not rerun.",
-      "dependency_review": "The completed Curve302 calibration and determinant1092 parameter chart remain the frozen campaign prerequisites. OP-EC-NEXT remains open, but this cohort no longer appears as active work. Existing assurance flags remain unchanged; the primary checker now reports the terminal point result and the intake reporter remains a locked prerequisite. The2026-09-13 umbrella strategy changes future candidate selection and retires default stalled-curve escalation; it does not reopen or alter this completed cohort. The newly authorized X948 eight-fibration first wave changes future work only; it does not reopen the completed determinant1092 cohort. The X948 first wave subsequently stopped at its budget cap; this operational change does not reopen the completed determinant1092 cohort. The umbrella now consumes the separately verified first-chart height-portfolio example. This adds a coordinate-coverage result only; it does not change any retained campaign endpoint, prove a rank gain, or authorize restarting a completed search. Reviewed the added twelve-coordinate control example: certified heights and three known-curve rank recoveries, with six cold-preparation timeouts and no bounded-model search comparison. This does not reopen an old campaign or complete rank32. Reviewed the separate 2026-09-14 finite cost-allocation dependency: independent state-assignment replay of unequal boxes on the existing first-chart table, using an address proxy only. It changes no campaign endpoint or rank claim and does not resolve the cold-preparation gate.",
+      "dependency_review": "The completed Curve302 calibration and determinant1092 parameter chart remain the frozen campaign prerequisites. OP-EC-NEXT remains open, but this cohort no longer appears as active work. Existing assurance flags remain unchanged; the primary checker now reports the terminal point result and the intake reporter remains a locked prerequisite. The2026-09-13 umbrella strategy changes future candidate selection and retires default stalled-curve escalation; it does not reopen or alter this completed cohort. The newly authorized X948 eight-fibration first wave changes future work only; it does not reopen the completed determinant1092 cohort. The X948 first wave subsequently stopped at its budget cap; this operational change does not reopen the completed determinant1092 cohort. The umbrella now consumes the separately verified first-chart height-portfolio example. This adds a coordinate-coverage result only; it does not change any retained campaign endpoint, prove a rank gain, or authorize restarting a completed search. Reviewed the added twelve-coordinate control example: certified heights and three known-curve rank recoveries, with six cold-preparation timeouts and no bounded-model search comparison. This does not reopen an old campaign or complete rank32. Reviewed the separate 2026-09-14 finite cost-allocation dependency: independent state-assignment replay of unequal boxes on the existing first-chart table, using an address proxy only. It changes no campaign endpoint or rank claim and does not resolve the cold-preparation gate. Reviewed the2026-09-14 dependency addition to OP-EC-NEXT: the finite-cancellation control is a separate completed experiment with a narrowly failed CPU gate. It changes neither the frozen48-fibre no-gain result nor its stopping policy and supplies no authorization to restart it. Reviewed the added clean finite-cancellation validation dependency: it fails its bounded policy gates and reopens no previous campaign. Rank32 and global transfer remain open.",
       "evidence": [
         {
           "path": "elliptic-curves/notes/DET1092_RECORD_SCALE_CAMPAIGN_2026-09-07.md",
@@ -3353,7 +3353,7 @@
         "EC-DET1092-RECORD-SCALE-CAMPAIGN-20260907": "2be7f9412e2d9864caedaf5acc1650485adf910709b5942f31b707aa762b4fb5",
         "EC-CURVE302-RECOVERY-CALIBRATION-20260907": "ad2d0dd1bed10dfeb23782d7a51fdc383101352dbb01d10cc94b53755b1a524b",
         "EC-DET1092-REDUCED-PARAMETER-CHART-20260907": "4b9c3b8e0c6e116fa88b055ef2bf4cbdd8fd88138eea114572ca6844b7d07a09",
-        "OP-EC-NEXT": "5835a4278903376de1cf39acfcaad3976f2076c8edccdf479d4f8485f9229e01"
+        "OP-EC-NEXT": "df3d012f1017ae900e0ed33227811472a2b5b841f7362c25bc30c36d978723cc"
       },
       "reviewed_files": {
         ".python-version": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
@@ -3801,7 +3801,7 @@
         "artifacts/local/elliptic-curves/det1092-record-scale-selection-v1/protocol.json": "4eb4341cd96fa716206da6e25441a9645887b172e88c316cf763e446c49f74e7",
         "artifacts/local/elliptic-curves/det1092-record-scale-selection-v1/selection-result.json": "1dbce6d7bc287176afeae198a60fe9cae0cc8c1db9c42ffe97f71cdeaeb6b869"
       },
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-FERM1",
@@ -4332,30 +4332,36 @@
       "id": "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
       "source": "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
       "completed": "The source-qualified GF7 model157 has two marked pairs and a 52-variable/59-equation finite lift through7^8; the separate formal theorem closes the infinite compatible local branch.",
-      "remaining": "The exact finite/local result is complete within its declared domain. Full rational NS0031 marking remains UNKNOWN after withdrawal of the norm-one period-map argument. Neither the 247 failed rational reconstructions nor the formal branch decides the rational non-CM locus. Resolve the actual stable marked curve before another source campaign.",
+      "remaining": "The finite-field/finite-lift claim retains its local scope. The later formal theorem closes its infinite-lift question; the separate corrected full stable proof excludes a rational rank-19 NS0031 source. No new lift or parameter scan is a remaining task.",
       "disposition": "bounded-only",
-      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
-      "input_review": "The retained finite-field, Hensel and 247-coordinate outputs and their original input boundaries remain unchanged. No local lift or coordinate scan was rerun. The new standard-library period-group witness uses only literal matrices from the retained Clifford arithmetic certificate; the finite modular replay had already passed. Later metadata reassembly propagates UNKNOWN without a new equation handoff.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "The retained finite-field, Hensel and 247-coordinate outputs and their original input boundaries remain unchanged. No local lift or coordinate scan was rerun. The new standard-library period-group witness uses only literal matrices from the retained Clifford arithmetic certificate; the finite modular replay had already passed. The current metadata reassembly propagates the corrected full stable exclusion without a new equation handoff. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
-          "quote": "rational NS0031 marking over QQ remains unresolved."
+          "quote": "separate corrected proof now excludes a full rational rank-19 NS0031 marking."
         }
       ],
       "reviewed_claims": {
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR": "b45bdbdefec78f9a602b1af1ca67af22d1c3549e233c847de72541e474320f02",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "dcb6cb1124283db0104405b6f985f3e2f91630237f5ec4f524e36e4b1fc100fb",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "033f97c8e0552005bf1ddeb47d514ba80cea4ad135cec0f04386abeb468d44a6",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7"
       },
       "reviewed_files": {
-        "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md": "24928eecd0e5cbb3c61b0b66a8c978bc8378d5c6bce402c60e0080287344bf3b",
+        "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md": "85aaa016cacfde186743261f7fba23b01cb9cc6bce0831ffaeb33a56639476f0",
         "elkies-k3/scripts/scan_lattice_foundry_ns0031_a1_2a7_marking_modp.sage": "89670138eaef5fe5c6187d6df2c36466b9e1bd731a8b3bc26eeadbdaa6a5a85c",
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage": "fc70734cb98add64c45c1d36f20cf8ca09e48c2d25f196e1f523dc474cd0bb9f",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
-        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json": "a3975a15ff09770d1dff8f4ec17692e9a0effc04645561336a1205319b8f2aeb",
@@ -4364,17 +4370,17 @@
         "artifacts/generated-results/elkies-k3-lattice-foundry-ns0005-a1-2a7-source-ansatz-mod7-v1.json": "76039e21549b61ad3823c12e1052f4398c4f0c8e020bf406ef029b290e46010e"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN",
       "source": "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
       "completed": "All247 reduced rational coordinates in the frozen box lift through7^40 and return NO_FULL_RR.",
-      "remaining": "The exact finite/local result is complete within its declared domain. Full rational NS0031 marking remains UNKNOWN after withdrawal of the norm-one period-map argument. Neither the 247 failed rational reconstructions nor the formal branch decides the rational non-CM locus. Resolve the actual stable marked curve before another source campaign.",
+      "remaining": "The247-point box remains bounded negative evidence; individual 7-adic irrationality was not proved. The separate full stable proof now excludes a rational rank-19 NS0031 source, so extending this completed box is not an open task.",
       "disposition": "bounded-only",
-      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
-      "input_review": "The retained finite-field, Hensel and 247-coordinate outputs and their original input boundaries remain unchanged. No local lift or coordinate scan was rerun. The new standard-library period-group witness uses only literal matrices from the retained Clifford arithmetic certificate; the finite modular replay had already passed. Later metadata reassembly propagates UNKNOWN without a new equation handoff.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "The retained finite-field, Hensel and 247-coordinate outputs and their original input boundaries remain unchanged. No local lift or coordinate scan was rerun. The new standard-library period-group witness uses only literal matrices from the retained Clifford arithmetic certificate; the finite modular replay had already passed. The current metadata reassembly propagates the corrected full stable exclusion without a new equation handoff. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
@@ -4383,34 +4389,40 @@
       ],
       "reviewed_claims": {
         "EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN": "c75b6b8d7523d42ba808e039959422833de60d8710ce150013542855e7bdb90f",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "dcb6cb1124283db0104405b6f985f3e2f91630237f5ec4f524e36e4b1fc100fb",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "033f97c8e0552005bf1ddeb47d514ba80cea4ad135cec0f04386abeb468d44a6",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7"
       },
       "reviewed_files": {
-        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md": "cfa621537598ff83499fa1082601a4f78e624db55b6c76fae91f3f74eb1602a8",
+        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md": "69bd1f51a70e74cbc36245a51b8c6294a938ec34a5da947f5481f217baf03463",
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage": "fc70734cb98add64c45c1d36f20cf8ca09e48c2d25f196e1f523dc474cd0bb9f",
         "elkies-k3/scripts/scan_lattice_foundry_ns0031_rational_parameters.sage": "cbafe412e528e736c2dd0c87e196dd2cca0683593846c7485232e1c4937153e3",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
-        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json": "0187b44d46d41572961261be344a1bafd3ee204f98754d173f15438699863f55",
         "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-rational-parameter-scan-v1.json": "5bbef1cfcd14008dd985c790ed2f9f423f08962a05df8f95473949649d2abdf6"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
       "source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
-      "completed": "The66 rootless rows are separated into one realized948 control, four retained exclusions and61 UNKNOWN, including NS0031. Its genus23 norm-one diagnostic remains exact and the new equation handoff is empty.",
+      "completed": "The66 retained rootless rows now comprise one realized948 control, five exact exclusions and60 UNKNOWN rows. NS0031 uses the corrected full stable certificate; no new equation handoff exists.",
       "remaining": "Each UNKNOWN row needs its literal stable marking curve and exact rational non-CM/marking decision. For1236 only the identified candidate branch-orbit proof remains, and would exclude it. The classifier imports theorem assertions; it does not reprove them.",
       "disposition": "open-obligation",
-      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
-      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "Reassembled the 66-row classifier from retained lattice witnesses and exact certificate assertions, then rebuilt the ranking and all827 T-row views. The NS0031 genus23 norm-one diagnostic is retained separately from the corrected full marking genus10 and rational_non_CM_point=false. The compact reflection witness and twelve controls preserve the failure of the original argument. Rebuilding these views does not rerun the historical lattice, equation or local/formal computations. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
@@ -4418,36 +4430,43 @@
         }
       ],
       "reviewed_claims": {
-        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER": "f7c8c797175b184fcb404f79027e1ea4d80fbbfd27c818aa7b5c1df83aa8077a",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER": "f8069eafb319cb21f00b62b896f38eb576404a643818738b53ece35011e82394",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d"
       },
       "reviewed_files": {
-        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md": "b0f514b10e8216db091b2858167db2d97442e50045338518333f3793765285ac",
-        "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
-        "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md": "eb30609421491dfa154aa6f58875764622dcc8eb3a57c64ba3dccae9af175792",
+        "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage": "0bf92d0a5350fb58081edc7564209745185d071575e216656dc47aa13c45d5f4",
+        "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "5f41698ba704f1b268eb8143b2a2d8c532e6bb9f0aad88c46c81584e841bf07c",
         "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213",
-        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
-        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json": "0379500e30c3ac3dbc95528c94a3542dcc05eb81d1c4ad7ecb255d17090dfca8",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json": "2e8f2abe797bfe345ccc133f0e6ea20b5d6afa8a44d516509ad85820a3e925a1",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
         "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
-        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
       "source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
-      "completed": "The827-row catalogue retains66 exact rootless witnesses and removes four marking exclusions, leaving62 research candidates. The948 control is the only ready row. NS0031 returns without equation eligibility.",
+      "completed": "The66 lattice candidates have five exact arithmetic rejections, including the corrected NS0031 full stable obstruction;61 remain including the realized948 control. No new equation scoring is admitted.",
       "remaining": "A new row needs a certified rational full marking before expensive scoring. The catalogue and bounded source cuts are not complete classifications; determinant1236 remains outside dispatch pending its exact branch-orbit identification.",
       "disposition": "open-obligation",
-      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
-      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "Reassembled the 66-row classifier from retained lattice witnesses and exact certificate assertions, then rebuilt the ranking and all827 T-row views. The NS0031 genus23 norm-one diagnostic is retained separately from the corrected full marking genus10 and rational_non_CM_point=false. The compact reflection witness and twelve controls preserve the failure of the original argument. Rebuilding these views does not rerun the historical lattice, equation or local/formal computations. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
@@ -4455,35 +4474,42 @@
         }
       ],
       "reviewed_claims": {
-        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK": "cbdb8fc31e6a72245508a47f38c4be8ba99293663491a3d6dbba8b53a7c3a780",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK": "34f42955d27a2d70323fc3fa968f84efea81df64b10f09251c835b1c94c5d7f1",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d"
       },
       "reviewed_files": {
-        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md": "e4cea094b250012cb82c950f27bc226b278d7056c9ddc8465e03ec94ef0139b6",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md": "70d98642b626512af0679ce8e157d41ecb86ed874e9b0496945e4d7d97728d8e",
         "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py": "55955d6b4e332fdae5d3ac2e6521b6662ca5f0ac59df2338130e24954658e73a",
-        "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd",
-        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
-        "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json": "5bc656c990804d16d66db69187b24aaced93ee25b07665cf9b5fc446c89b7be9",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "588dae4967cc814dc7ab5cea9fb2d9daa3a9ebbeda7306c9f1aa557cb1756f95",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227",
+        "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json": "59ce2edd9756e9786bc003d6c982a77a135e91f04728742d56c1da33d9614595",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
         "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
-        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json": "a8c418e80683535a44b67b494ce6c4d516c898d3be57a0b014dceb508ebf1c61"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
       "source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
-      "completed": "All827 T rows are ordered before rootless inspection; five retained exclusions and one control leave821 research rows and no new handoff. NS0031 point existence is null; its already-proved norm-one genus23 and precise remaining group/descent gate survive metadata assembly.",
+      "completed": "All827 T rows are ordered before rootless inspection. Six exact exclusions and one control leave820 research rows. NS0031 has full marking genus10 and rational_non_CM_point=false from the corrected exact proof; no positive handoff exists.",
       "remaining": "For a new source prove the literal stable kernel, rational noncuspidal non-CM point and saturated rational marking before rootless or equation work. Coarse256/X0(2) and512/X0(4) labels remain diagnostics. The stronger carrier/new-section milestone is separate.",
       "disposition": "open-obligation",
-      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil source reconciliation: the two new sentences narrow only the cited historical V4 screen to its fixed regular-slope families, since the full norm12 pencil moves its finite zero contact. The arithmetic-first queue, all827 rows, marking prerequisites, unknown rational non-CM points and no-positive-handoff conclusion are unchanged. This review runs no classifier or research calculation.",
-      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil source reconciliation: the two new sentences narrow only the cited historical V4 screen to its fixed regular-slope families, since the full norm12 pencil moves its finite zero contact. The arithmetic-first queue, all827 rows, marking prerequisites, unknown rational non-CM points and no-positive-handoff conclusion are unchanged. This review runs no classifier or research calculation. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "Reassembled the 66-row classifier from retained lattice witnesses and exact certificate assertions, then rebuilt the ranking and all827 T-row views. The NS0031 genus23 norm-one diagnostic is retained separately from the corrected full marking genus10 and rational_non_CM_point=false. The compact reflection witness and twelve controls preserve the failure of the original argument. Rebuilding these views does not rerun the historical lattice, equation or local/formal computations. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
@@ -4491,26 +4517,33 @@
         }
       ],
       "reviewed_claims": {
-        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "50f925d3d5bb46eb97bb1940bf27b2894fd64e0548e3f3afc9da316719f33d43",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "ea76b33c4ebe1477c1db0859f92b98ab47b593674e81a8a397d59c0c6f8ed40f",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d"
       },
       "reviewed_files": {
-        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "226ea099016af41a512d268cf3efab2a75fdb58cd0f733d889c574cb32418719",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "0dc1e07a5ca02feb645ceca2f268f6daa81b26595ced57d80fc0764ddfca30a8",
         "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
         "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f",
-        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
-        "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json": "371dba10dfb40a1812baf7d79d0e1470e6edd2d67b46b75ad06a646481f0b965",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227",
+        "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json": "ceca4b3249f86407725cf995ba3c77842012e445f1bc0d2a9636d0b5d634093a",
         "tests/test_research_arithmetic_marking.py": "bee89481c6804605a7f8369c5fb0e3d6236135b66591a02ba6c918b48ea886c4",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
         "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
-        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "reviewed_local_files": {
         "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-13"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-MW16-FRESH-CONSTRUCTOR-TRANSFER-PREFLIGHT-20260912",
@@ -4575,38 +4608,44 @@
     },
     {
       "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
-      "source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
-      "disposition": "open-obligation",
-      "completed": "The finite Clifford, 304-coset and prime19 arithmetic has passed both original and independent replay. Velu Theorem7 and its two models were inspected. The literal marked-period implication was reviewed against Dolgachev Proposition3.3 and refuted by an exact stable -2 reflection outside the rational norm-one image; the old full K3 exclusion is withdrawn.",
-      "remaining": "Determine the actual full stable projective period group, its QQ model and rational non-CM locus, or another exact arithmetic obstruction. Full rational NS0031 K3 marking remains UNKNOWN. The empty norm-one cover and local formal branch decide neither existence nor nonexistence.",
-      "source_review": "Read the original 413-line producer, canonical argument and cited primary-source hypotheses. Dolgachev alg-geom/9502005v2 Proposition3.3 uses the full orthogonal discriminant kernel; Bragg-Brakkee-Varilly-Alvarado 2510.11477v1 Theorem5.6 provides the modern ample-cone formulation. The original norm-one containment is false for the literal Gram. The rewritten note supplies the reflection, fixed positive plane, Clifford identification, determinant37 obstruction and explicit normalizer action. These complex period statements do not establish a QQ model.",
-      "input_review": "The original mode reads three unchanged catalogues totaling67820578 bytes. The new read-only mode uses a2771-byte field projection and the5575-byte original certificate. Optional source-projection verification checks all three original hashes and unique selectors; absence never triggers regeneration. The explicit make target also runs five corruption tests and refuses optimized Python; default maintenance performs no arithmetic replay.",
-      "dependency_review": "Removed the historical formal-branch dependency and the unsupported blanket period-map premise from the modular arithmetic claim. The new counter-witness uses literal retained input bytes, not the withdrawn conclusion; there is no circular logical dependency. The former global claim is partial, the containment counter-witness is proved, and all assurance flags remain false.",
+      "source": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
+      "disposition": "historical-route",
+      "completed": "The full stable projective group, canonical genus-ten Q model, degree-four genus-two quotient and its complete twelve-point rational locus are proved. Every rational point maps to a cusp or CM point, excluding a full rational rank-19 NS0031 marking.",
+      "remaining": "No remaining obligation within the proved rational rank-19 marking exclusion. Rational CM lifts, larger fields and other lattices are outside its scope; the global different-NS foundry remains open.",
+      "source_review": "Reviewed the literal stable reflection and the separate full stable proof. The unique even overlattice bounds the projective normalizer; the discriminant calculation and all determinant units determine the genus-ten canonical Q quotient by w37*w_ns,4. The degree-four genus-two quotient, normalized elliptic map and complete rational-point proof give the corrected rank-19 exclusion. The opening theorem now states geometric Picard rank19 explicitly. The September12 reopened state and original norm-one error remain preserved in the archive.",
+      "input_review": "The Sage group/model check and the separate unconditional Magma2.29-10 descent were executed for the September14 proof. The two rank-one full Mordell-Weil groups are proved; elliptic Chabauty gives bound6 in each case, with empty residual-coset lists and discharged index conditions. The current Sage --check recomputes the finite group, modular-symbol and Sturm calculations and audits retained Magma output; rerunning Magma is a separate command. Original finite, local/formal and geometric certificates remain unchanged. This documentation reconciliation runs no new research calculation.",
+      "dependency_review": "The proved obstruction uses the full stable group, the canonical Q period-map theorem, the normalized modular quotient and its exact rational locus. It depends on the retained reflection counter-witness, not conversely. Dolgachev supplies the full complex period group, Rizov supplies canonical arithmetic descent, and the normalized Elkies level37 map supplies CM identification. These written theorem inputs are distinct from finite replay. Emptiness is not transferred from the norm-one cover. Rational CM lifts, Picard-rank-20 specializations containing NS0031 and larger fields remain outside scope; independent replay, formal verification and external review are not claimed.",
       "evidence": [
         {
-          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
-          "quote": "**Existence of a K3 over QQ with the full rational NS0031 marking is UNKNOWN.**"
+          "path": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
+          "quote": "No K3 surface over \\(\\mathbf Q\\) with geometric Picard rank 19 has its full\nNéron–Severi lattice equal to NS0031 and rationally marked."
         },
         {
-          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
-          "quote": "The fibre product has no noncuspidal rational point."
+          "path": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
+          "quote": "Both residual-coset lists are empty."
         }
       ],
       "reviewed_claims": {
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "dcb6cb1124283db0104405b6f985f3e2f91630237f5ec4f524e36e4b1fc100fb",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7"
       },
       "reviewed_files": {
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
         "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage": "c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
         "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py": "ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
         "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json": "f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e",
         "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
         "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
-        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
@@ -5867,15 +5906,15 @@
       "id": "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP",
       "source": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
       "disposition": "bounded-only",
-      "completed": "The retained136-frame spectrum and32 eligible surface IDs remain the completed finite lattice result. Joined those32 IDs to the current arithmetic classifier:31 UNKNOWN and onlyNS0024 excluded. NS0031 is the sole changed classification. Preserved and hash-verified the original classifier used by the frozen census; no CVP enumeration was rerun.",
+      "completed": "The retained136-frame spectrum and32 eligible surface IDs remain the completed finite lattice result. A fresh ID join to the corrected classifier gives30 UNKNOWN rows and the NS0024/NS0031 exclusions. Only NS0031 changed in this update. The frozen census and original classifier inputs remain unchanged; no CVP enumeration was rerun.",
       "remaining": "No rational marking, equation, specialization, exceptional point, rank jump or success probability follows from a deeper midpoint hole. Arithmetic admission remains required. Independent replay of the original17,825,792 parity classes was not performed in this source review.",
-      "source_review": "Read the full canonical note and inspected the producer summary join, checkpoint identity/load, main loop and final check/write branches. Corrected the stale NS0031 exclusion in the registry, clarified current32-row accounting and documented the historical input and full-census replay mode. The existing lattice spectrum, original producer and certificate bytes are unchanged.",
-      "input_review": "The frozen certificate pins three inputs: producer and catalogue still match; the classifier digest6c4e44e7 resolves to the preserved pre-correction snapshot. The software lock now names that actual replay input. Current classification is a separate registered dependency. --check launches every missing frame, keys checkpoints partly by classifier bytes, and unlinks a successful checkpoint; it is not a metadata-only check. The compact spectrum certificate does not replace the original arithmetic coverage calculation.",
-      "dependency_review": "The specialization-quotient theorem supplies the discrete midpoint-hole interpretation. The current classifier and NS0031 counter-witness supply the corrected arithmetic annotation; they are not inputs to the historical CVP computation. No arithmetic marking is inferred from a frame Gram.",
+      "source_review": "Read the full canonical note and inspected the producer summary join, checkpoint identity/load, main loop and final check/write branches. Reconciled the current32-row accounting with the corrected NS0031 full stable exclusion and documented the historical input and full-census replay mode. The existing lattice spectrum, original producer and certificate bytes are unchanged. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json. Reviewed the final narrow source-disposition updates: NS0031 is excluded by the separate full-stable proof, while these local, bounded or other-lattice statements are unchanged. The replay catalogue retains its immutable historical text and only consumer stamps change.",
+      "input_review": "The frozen certificate pins three inputs: producer and catalogue still match; the classifier digest6c4e44e7 resolves to the preserved pre-correction snapshot. The software lock now names that actual replay input. Current classification is a separate registered dependency. --check launches every missing frame, keys checkpoints partly by classifier bytes, and unlinks a successful checkpoint; it is not a metadata-only check. The compact spectrum certificate does not replace the original arithmetic coverage calculation. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "The specialization-quotient theorem supplies the discrete midpoint-hole interpretation. The current classifier and corrected NS0031 full stable proof supply the arithmetic annotation; they are not inputs to the historical CVP computation. No arithmetic marking is inferred from a frame Gram. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
-          "quote": "to that classifier gives 31 `UNKNOWN` rows and the NS0024 exclusion;"
+          "quote": "to that classifier gives 30 `UNKNOWN` rows and the NS0024/NS0031 exclusions;"
         },
         {
           "path": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
@@ -5887,20 +5926,27 @@
         }
       ],
       "reviewed_claims": {
-        "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP": "ac60a35f21cbacb093de9f7d11db001f396e244add914480af21a3f8dbec2a14"
+        "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP": "5c8631099162010041263f0a6fde8bdddf718ca96190a41e16292715f037ffe5",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d"
       },
       "reviewed_files": {
-        "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md": "c089772870c4e2c2a2e1f368ddc0f7bbb0f61e8210641804dc9aa4b61ff39316",
+        "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md": "cb7e6048e6c8977aeb58aaf6624499e1b971f3b3775179f216bd702ea914ef54",
         "archive/elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.before-2026-09-13.md.txt": "9f0cdc0c4f571cf5522d741d49cb5e17f8ca36dcf3ae8728a689fdefd1508526",
         "elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage": "82048d8d1fc3aac0654f920c25cb7f44b236ee105a5faa73792a68b17a6ab134",
         "artifacts/generated-results/elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json": "c60fc5b3a369bd058bbb4fcfb93e0a395280c5ea068d4ed20101a51d459d3ddd",
-        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227",
         "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/artifacts__generated-results__elkies-k3-rank19-arithmetic-marking-classifier-v1.json.txt": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
         "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
-        "archive/repository-cleanup-2026-09-12/K3_HASH_PROPAGATION_REVIEW_2026-09-13.json": "a4c372075b336f756cb7234d0cb020d2e02a2f0a175d06b3223459c4c2c29c49"
+        "archive/repository-cleanup-2026-09-12/K3_HASH_PROPAGATION_REVIEW_2026-09-13.json": "a4c372075b336f756cb7234d0cb020d2e02a2f0a175d06b3223459c4c2c29c49",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "missing_inputs": [],
-      "reviewed_on": "2026-09-13",
+      "reviewed_on": "2026-09-14",
       "external_sources": []
     },
     {
@@ -6115,7 +6161,7 @@
       "remaining": "No missing finite witness for this corollary. Effective constants, Curve302 incidence, singular rational curves and other cover constructions are outside its claim.",
       "source_review": "Read the complete note; Section 3 is the proof of this ID. The separate singular-member calculation in Section 2 has its own artifacts and checkers. Finite union, translation preserving the base, degree-height growth, and subtraction of a thin set supply the written implication. On 2026-09-13, Section 2 gained direct links to its already registered classification and replay artifacts; this does not alter the Section 3 written proof or its boundary.",
       "input_review": "Written implication of separately certified atlas and two-fibration results; no new census or analytic checker is required for this corollary.",
-      "dependency_review": "The complete 40917-orbit quotient and rational parametrizability are premises, not recomputed here. The parent hypothesis audit supplies the distinct fibration, reduced fibres and density required by Pasten\u2013Salgado. This review does not independently replay those computational premises.",
+      "dependency_review": "The complete 40917-orbit quotient and rational parametrizability are premises, not recomputed here. The parent hypothesis audit supplies the distinct fibration, reduced fibres and density required by Pasten–Salgado. This review does not independently replay those computational premises.",
       "evidence": [
         {
           "path": "elliptic-curves/notes/DET1092_NORM8_DEGENERATION_AND_SMOOTH_ATLAS_OBSTRUCTION_2026-09-09.md",
@@ -6133,7 +6179,7 @@
       },
       "external_sources": [
         {
-          "title": "Pasten\u2013Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
+          "title": "Pasten–Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
           "url": "https://www.math.rug.nl/algebra/uploads/Main/PastenSalgado_2024.pdf",
           "version": "Author PDF dated March 12, 2024; Theorem 1.1, printed page 2; inspected 2026-09-12.",
           "checked": "Over a number field, a non-isotrivial elliptic K3 with reduced fibres and a second elliptic fibration has non-thin rank jumps when its rational points are Zariski dense. The repository must supply each geometric hypothesis on the same rational surface. This theorem gives no effective search bound."
@@ -6148,7 +6194,7 @@
       "completed": "The written four-hypothesis audit proves non-thin rank-at-least18 smooth specializations of the published R17 fibration.",
       "remaining": "No missing executable witness for the implication. Individual exact ranks and effective height bounds remain outside this theorem.",
       "source_review": "Read the full note. The 24I1 fibres imply reducedness and nonconstant j; the H3 E7+E8/MW2 presentation is a distinct rational fibration on the same certified surface. Infinitely many rational section curves imply Zariski density.",
-      "input_review": "Written application of Pasten\u2013Salgado to four separately certified H3/R17 premises. The H3 source premise now has a separately registered Sage 10.9 successor artifact with its complete replay chain; the historical frozen artifact remains distinct. The existing equation checkers remain the computational evidence.",
+      "input_review": "Written application of Pasten–Salgado to four separately certified H3/R17 premises. The H3 source premise now has a separately registered Sage 10.9 successor artifact with its complete replay chain; the historical frozen artifact remains distinct. The existing equation checkers remain the computational evidence.",
       "dependency_review": "Rechecked the four internal dependencies and the primary external theorem after registering the H3 Sage 10.9 successor. The alternate candidate field of definition is irrelevant: H3 is the second fibration. No new independent replay of the endpoint chain is claimed.",
       "evidence": [
         {
@@ -6172,7 +6218,7 @@
       },
       "external_sources": [
         {
-          "title": "Pasten\u2013Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
+          "title": "Pasten–Salgado, Non-thin rank jumps for double elliptic K3 surfaces",
           "url": "https://www.math.rug.nl/algebra/uploads/Main/PastenSalgado_2024.pdf",
           "version": "Author PDF dated March 12, 2024; Theorem 1.1, printed page 2; inspected 2026-09-12.",
           "checked": "Over a number field, a non-isotrivial elliptic K3 with reduced fibres and a second elliptic fibration has non-thin rank jumps when its rational points are Zariski dense. The repository must supply each geometric hypothesis on the same rational surface. This theorem gives no effective search bound."
@@ -6207,7 +6253,7 @@
         {
           "title": "Chenevier, Statistics for Kneser p-neighbors",
           "url": "https://arxiv.org/pdf/2104.06846v2",
-          "version": "arXiv v2, May 2021; Theorem 5.9 and Remarks 5.10\u20135.11, printed pages 21\u201322; inspected 2026-09-12.",
+          "version": "arXiv v2, May 2021; Theorem 5.9 and Remarks 5.10–5.11, printed pages 21–22; inspected 2026-09-12.",
           "checked": "For definite rational quadratic spaces of dimension greater than two and compact open level, normalized neighbour counts have a positive mass main term and O(p^(-1/2)) error along compatible spinor displacements. Every displacement occurs on infinitely many primes, with density 1/|S1(K)|. No numerical threshold is supplied. Exact-vector or nef-chamber stabilizers need not be open."
         }
       ],
@@ -6217,11 +6263,11 @@
       "id": "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS",
       "source": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
       "disposition": "written-proof",
-      "completed": "S1\u2013S5 give the rank sandwich, real quotient height, midpoint decomposition, discrete depth bound, and everywhere-even Kummer ideal map with unit loss.",
+      "completed": "S1–S5 give the rank sandwich, real quotient height, midpoint decomposition, discrete depth bound, and everywhere-even Kummer ideal map with unit loss.",
       "remaining": "No missing numeric witness for these algebraic deductions. Applying them requires certified specialization rank, the declared subgroup, and the relevant complete Selmer or ideal hypotheses.",
       "source_review": "Read all seven sections. S1 uses A/(M+ell*A), so torsion/saturation can increase residual dimension. S2 is real orthogonal projection, not an integral closest-vector minimum. S3 uses the parallelogram law. S4 gives a restricted-parity lower bound on covering radius. S5 uses everywhere-even ideals and distinguishes unit loss and supported valuations from a full class-group computation.",
       "input_review": "Written group, height and ideal arguments. Application certificates belong to their individual claims; rerunning a point search cannot prove these general statements.",
-      "dependency_review": "Kummer injection, Neron\u2013Tate bilinearity and Dirichlet units are stated external inputs. Injective or rank-preserving specialization is a hypothesis, not a consequence of the observed quotient. No new rank upper bound or class-group predictor is inferred.",
+      "dependency_review": "Kummer injection, Neron–Tate bilinearity and Dirichlet units are stated external inputs. Injective or rank-preserving specialization is a hypothesis, not a consequence of the observed quotient. No new rank upper bound or class-group predictor is inferred.",
       "evidence": [
         {
           "path": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
@@ -6245,11 +6291,11 @@
       "id": "EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER",
       "source": "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
       "disposition": "written-proof",
-      "completed": "R1\u2013R8 identify the residual point space and saturation defect, the surviving 2Sha[4] radical, valid pairing bounds, actual two-covering maps and a witness-complexity filtration.",
+      "completed": "R1–R8 identify the residual point space and saturation defect, the surviving 2Sha[4] radical, valid pairing bounds, actual two-covering maps and a witness-complexity filtration.",
       "remaining": "No missing finite witness for the universal written deductions. Full Selmer complements and insoluble Selmer controls for the eleven-fibre panel remain uncomputed; the panel is a separate application.",
-      "source_review": "Read the full note. R1 retains epsilon_M; R2 uses the multiplication-by-two exact diagram. R3 distinguishes full and restricted matrices. R4 records both birational phi and degree-four covering 2phi-P; R5 gives the two quadrics under b!=0. R6 distinguishes new points from new parity labels. R7 includes model/transport cost, and R8 is only a height-to-coefficient bound. Corrected the external radical citation from Sections 2\u20133 to the actual Section 4 passage.",
+      "source_review": "Read the full note. R1 retains epsilon_M; R2 uses the multiplication-by-two exact diagram. R3 distinguishes full and restricted matrices. R4 records both birational phi and degree-four covering 2phi-P; R5 gives the two quadrics under b!=0. R6 distinguishes new points from new parity labels. R7 includes model/transport cost, and R8 is only a height-to-coefficient bound. Corrected the external radical citation from Sections 2–3 to the actual Section 4 passage.",
       "input_review": "Written algebraic and cohomological proofs with explicit symbolic formulas. The 110-cover application checker does not certify the unknown complementary Selmer classes.",
-      "dependency_review": "The specialization theorem supplies the subgroup conventions. The primary Fisher\u2013Schaefer\u2013Stoll text confirms the exact sequence, alternation and 4-Selmer radical; finiteness of Sha alone does not make the radical equal the point space. No assurance flag is upgraded.",
+      "dependency_review": "The specialization theorem supplies the subgroup conventions. The primary Fisher–Schaefer–Stoll text confirms the exact sequence, alternation and 4-Selmer radical; finiteness of Sha alone does not make the radical equal the point space. No assurance flag is upgraded.",
       "evidence": [
         {
           "path": "elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md",
@@ -6269,10 +6315,10 @@
       },
       "external_sources": [
         {
-          "title": "Fisher\u2013Schaefer\u2013Stoll, The yoga of the Cassels\u2013Tate pairing",
+          "title": "Fisher–Schaefer–Stoll, The yoga of the Cassels–Tate pairing",
           "url": "https://mathe2.uni-bayreuth.de/stoll/papers/yoga.pdf",
           "version": "Author PDF dated March 4, 2009; equation (2.1), start of Section 4, Theorem 6.3; inspected 2026-09-12.",
-          "checked": "The Kummer/Selmer/Sha sequence is exact. The 2-Selmer pairing is alternating; its radical is the image of 4-Selmer. The explicit Cassels pairing equals Cassels\u2013Tate. Passing to the quotient by known point classes does not remove divisible Sha classes. These statements do not require finiteness of the full Sha group."
+          "checked": "The Kummer/Selmer/Sha sequence is exact. The 2-Selmer pairing is alternating; its radical is the image of 4-Selmer. The explicit Cassels pairing equals Cassels–Tate. Passing to the quotient by known point classes does not remove divisible Sha classes. These statements do not require finiteness of the full Sha group."
         }
       ],
       "reviewed_on": "2026-09-12"
@@ -6310,23 +6356,34 @@
       "source": "elliptic-curves/README.md",
       "disposition": "research-objective",
       "completed": "Reviewed the4482-record retained-history export, all33 cohort denominators,4338 complete acquisition trajectories,5026 merged events and separate accounting audit. The broad2080 run has839 seeds,494 later-call amplifiers and five deep amplifiers. All model/fold outcomes are retained; unchanged forward-cohort deep predictions weaken to5/18 versus11/42 and6/18 versus10/42. These are empirical retained-data checks, not new elliptic arithmetic verification. The prior completed next-direction benchmark and its2164 no-gain production calls remain retained. The subsequent geometry-only X948 gate constructs eight exact, saturated and mutually inequivalent A1/MW16 inputs; the positive seed calibration passes before prospective exposure. Reviewed the X948 budget-stop receipt and common61-address accounting:554 terminal jobs,371 new seeds,49 baseline seeds,49 unresolved starting certificates, and no amplification. The rank21 packet binding matches its retained verification receipt; no fresh arithmetic replay was performed for this status audit.",
-      "remaining": "Rank32 remains open. The stopped cold model benchmark did not reach bounded-model point search; the support-preparation policy and observed finite-cancellation slack need a specific resolution before another proposed comparison. Prior X948 and stalled-curve campaigns remain stopped.",
-      "source_review": "Reviewed the current programme README, canonical seed/amplification report, frozen protocol, disclosed data-audit corrections, forward-cohort check and resulting accounting receipt. The report distinguishes seed clouds from acquiring calls, administrative censoring from complete exposure, known equations from novelty, and generic Grams from integral frames. It makes no all-repository completeness, causal surface-quality, exact-rank or calibrated universal probability claim. Reviewed the new fibration protocol and eight determinant-one NS admission packets. Symbolic construction uses shared implementation; the open rank32 objective is not thereby completed. The added H3 entry is a navigation link to a completed proof, not a change to this objective or authorization for a campaign. The new user-authorized short rank21 follow-up is operationally separate from the stopped matched wave; reviewed its frozen128-call/900-second search limits, unchanged worker snapshot, disjoint generic banks and fresh two-implementation input rank replay. No output gain is claimed at launch. Completion update: checked the separate targeted amplification state,128-call result, zero censoring, successful output-replay supervisor receipt and output packet hash against its seal. The lower bound remains21. This was retained-evidence accounting, not another CAS replay or a matched amplification-rate experiment. Reviewed the new first-chart height-bound and minimal-model portfolio example: exact coordinate coverage with independent local/real replay, not a next-direction or timing result. The latest README identifies the complete-cost comparison as a future gate; no search is launched by this certificate. Subsequent gate completed: reviewed nine sealed arm outcomes, all three independent Sage rank receipts, six cold-support timeout supervisors and the twelve-coordinate portable exact replay. The README now states that the intended search-runtime comparison remains incomplete; failed diagnostics are preserved and charged, and the same-prime joint case remains UNKNOWN. Read the new cost-allocation note and exact receipt; reviewed the README addition as finite coverage optimization only. The original nine arms remain stopped and the rank32 objective stays open. Reviewed the added RR navigation row: it points to the incomplete two-case global Selmer attempt and asserts no global upper bound or new rank.",
+      "remaining": "Rank32 remains open. The clean finite-cancellation validation is complete and negative for both declared fitted policies. A new objective tied to actual independent-direction recovery is needed before further controls or production work. The Hessian law supplies arithmetic structure, not new points. All earlier stopped campaigns remain stopped.",
+      "source_review": "Reviewed the current programme README, canonical seed/amplification report, frozen protocol, disclosed data-audit corrections, forward-cohort check and resulting accounting receipt. The report distinguishes seed clouds from acquiring calls, administrative censoring from complete exposure, known equations from novelty, and generic Grams from integral frames. It makes no all-repository completeness, causal surface-quality, exact-rank or calibrated universal probability claim. Reviewed the new fibration protocol and eight determinant-one NS admission packets. Symbolic construction uses shared implementation; the open rank32 objective is not thereby completed. The added H3 entry is a navigation link to a completed proof, not a change to this objective or authorization for a campaign. The new user-authorized short rank21 follow-up is operationally separate from the stopped matched wave; reviewed its frozen128-call/900-second search limits, unchanged worker snapshot, disjoint generic banks and fresh two-implementation input rank replay. No output gain is claimed at launch. Completion update: checked the separate targeted amplification state,128-call result, zero censoring, successful output-replay supervisor receipt and output packet hash against its seal. The lower bound remains21. This was retained-evidence accounting, not another CAS replay or a matched amplification-rate experiment. Reviewed the new first-chart height-bound and minimal-model portfolio example: exact coordinate coverage with independent local/real replay, not a next-direction or timing result. The latest README identifies the complete-cost comparison as a future gate; no search is launched by this certificate. Subsequent gate completed: reviewed nine sealed arm outcomes, all three independent Sage rank receipts, six cold-support timeout supervisors and the twelve-coordinate portable exact replay. The README now states that the intended search-runtime comparison remains incomplete; failed diagnostics are preserved and charged, and the same-prime joint case remains UNKNOWN. Read the new cost-allocation note and exact receipt; reviewed the README addition as finite coverage optimization only. The original nine arms remain stopped and the rank32 objective stays open. Reviewed the added RR navigation row: it points to the incomplete two-case global Selmer attempt and asserts no global upper bound or new rank. Reviewed the completed finite-cancellation study, its exact two-state law, full endpoint census, signed-coordinate/residue replay, separately frozen CPU control and independent Sage output proofs. The optional mapper retains a failed strict CPU gate:9.987859 percent saving is below10 percent, and the12-case exploratory CPU interval includes1. The README keeps factor-free as default and schedules no additional run. Read the clean q-only tree separation, all 41 seed/endpoint checks, frozen fits, complete 123-arm accounting and independent 114-gain replay. The full selector recovers fewer directions and uses more CPU; every gate fails. Read the Hessian/derivative and fixed-squareclass proof, including normalization, exceptional primes and finite-patch assumptions. The prior 3.08 percent attribution removes explicit expectations only; its old joint tree was not purely q-based. The default stays factor-free and no new run is scheduled.",
       "input_review": "Open umbrella objective; checkers belong to the narrower results and future completion certificates.",
-      "dependency_review": "The complete recovered-parent theorem is reusable. Generic saturation does not imply specialized saturation, local scores do not give Selmer upper bounds, and a finite atlas exclusion does not exclude all constructions. No complete semantic review of its 159 historical dependency entries is claimed. The umbrella now consumes the separately verified first-chart height-portfolio example. This adds a coordinate-coverage result only; it does not change any retained campaign endpoint, prove a rank gain, or authorize restarting a completed search. Reviewed the added twelve-coordinate control example: certified heights and three known-curve rank recoveries, with six cold-preparation timeouts and no bounded-model search comparison. This does not reopen an old campaign or complete rank32. Reviewed the separate 2026-09-14 finite cost-allocation dependency: independent state-assignment replay of unequal boxes on the existing first-chart table, using an address proxy only. It changes no campaign endpoint or rank claim and does not resolve the cold-preparation gate.",
+      "dependency_review": "The complete recovered-parent theorem is reusable. Generic saturation does not imply specialized saturation, local scores do not give Selmer upper bounds, and a finite atlas exclusion does not exclude all constructions. No complete semantic review of its 159 historical dependency entries is claimed. The umbrella now consumes the separately verified first-chart height-portfolio example. This adds a coordinate-coverage result only; it does not change any retained campaign endpoint, prove a rank gain, or authorize restarting a completed search. Reviewed the added twelve-coordinate control example: certified heights and three known-curve rank recoveries, with six cold-preparation timeouts and no bounded-model search comparison. This does not reopen an old campaign or complete rank32. Reviewed the separate 2026-09-14 finite cost-allocation dependency: independent state-assignment replay of unequal boxes on the existing first-chart table, using an address proxy only. It changes no campaign endpoint or rank claim and does not resolve the cold-preparation gate. Reviewed the new finite-cancellation dependency as a bounded conditional predictor example. It supplies no population runtime theorem, generic-rank change, rank upper bound or rank32 result; none of the earlier stopped campaigns is reopened. Reviewed the added clean finite-cancellation validation dependency: it fails its bounded policy gates and reopens no previous campaign. Rank32 and global transfer remain open.",
       "evidence": [
         {
           "path": "elliptic-curves/README.md",
           "quote": "These results do not prove exact rank31 or rank at least32."
+        },
+        {
+          "path": "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md",
+          "quote": "**9.987859% saving misses the predeclared 10% CPU gate**"
+        },
+        {
+          "path": "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md",
+          "quote": "**Both fitted policies fail the frozen 41-curve validation.**"
         }
       ],
       "reviewed_claims": {
-        "OP-EC-NEXT": "5835a4278903376de1cf39acfcaad3976f2076c8edccdf479d4f8485f9229e01",
+        "OP-EC-NEXT": "df3d012f1017ae900e0ed33227811472a2b5b841f7362c25bc30c36d978723cc",
         "EC-CURVE302-RECOVERED-MW17-PARENT": "1543e38ac3f31a2b86d4fed75d92853c524fe65e01a7dfd9dfc64eb26587d11c",
-        "OP-EC-RANK-JUMP-MECHANISM-20260910": "245e93815ca4a5276a196e9d60936a69b600bfc869e8d67d5e3ce0473f693522"
+        "OP-EC-RANK-JUMP-MECHANISM-20260910": "245e93815ca4a5276a196e9d60936a69b600bfc869e8d67d5e3ce0473f693522",
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914": "481b43f0522cbffbb0701e8a512865ae509c59c524467dd7a2439d6a0e78f261",
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914": "93d6c81d748ef65477f75358e737fa721bbfca6276cd98b851973d4729f038dd",
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914": "3d74e58ea24f55da6a399bd66a3075a5eefeb74ed6bba81dba59335e9d1e5a55"
       },
       "reviewed_files": {
-        "elliptic-curves/README.md": "6d77a42c6e53e2f86e75a6f8578518f3b0ba66b896da3c1037f86ea8f0559ada",
+        "elliptic-curves/README.md": "d1438299157ee89b60edbea9f0b81ae3d1fd1cecf11bd161e7031dbd15100bef",
         "elliptic-curves/notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md": "bae17d0f3059768845f74c16231e7078fa8710c9ff29fdfff586ed1f115344fb",
         "archive/elliptic-curves/notes/NEXT_DIRECTION_RANK32_BENCHMARK_2026-09-12.md.txt": "d4632d18e48ac0d801e2b0a4d99ca29c693bd2cce5c3a2321d0dc156f782c76c",
         "artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json": "7db69b144e13497dbb1c91306c0dd8497f65c30bda7c21077ab3b76b152ef81f",
@@ -6338,7 +6395,12 @@
         "artifacts/generated-results/elliptic-curves/x948_seed_foundry_v1/budget-stop.json": "efe2fe74feeeb573e1bbde053c320158508ffc10c3a8e5b5188e4fe78ac5785e",
         "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md": "d7ee9133c9f7b8679878f5c3698156c212201a598be5507aefcb66d772f737b7",
         "artifacts/generated-results/elliptic-curves/height_model_next_direction_v1/completion.json": "1bc7b98c4192f904f718373bee859cb7e3c34beeca17c8de159628eff5be8983",
-        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md": "5f0d2e644cd9dff2e161634fab8bf7924555863c0ed8653729243f928690fa7c"
+        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md": "5f0d2e644cd9dff2e161634fab8bf7924555863c0ed8653729243f928690fa7c",
+        "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md": "0316966e1e2fcd915f31b9187a7e6b18877e66426095ae4fcec5c3d7208ad9ad",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_predictor_v1/summary.json": "310bfa81d17941c36a0d501eb40892438fc53afad620b43690d77dd1c0695d64",
+        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md": "950a9744874af8b2684f01757c498ef5a7e96093a54cbc92b89933fd1d648a55",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/summary.json": "f4c873340e6052bd1270add9d4295e9927e076c999c17a10615044619381e53a",
+        "artifacts/generated-results/elliptic-curves/finite_cancellation_validation_v2/hessian-cancellation.json": "95888602617fd1acab2666b317d8c83fbbd066a821bcb60b1c25bc0a8398306a"
       },
       "external_sources": [],
       "reviewed_on": "2026-09-14"
@@ -6349,7 +6411,7 @@
       "disposition": "research-objective",
       "completed": "The determinant950 rational rank19 marking is excluded; the old NS0024 objective is parked and the broader foundry objective is separate.",
       "remaining": "No objective-level checker is missing. The negative theorem has its own replay; geometric or local NS0024 constructions do not reopen the rational endpoint.",
-      "source_review": "Read the full 29-line tombstone. It names the rational marking obstruction and its replacement, while preserving the geometric and larger-field meaning of the old artifacts. Read the corrected tombstone: only its stale NS0031 replacement disposition changed to UNKNOWN; the NS0024 theorem and parked objective remain unchanged.",
+      "source_review": "Reviewed the tombstone and its current replacement disposition. NS0024 remains excluded and its objective parked. The former NS0031 replacement is now also excluded as a full rational rank-19 marking by the corrected September14 full stable proof. Its local/formal and geometric controls and the broader different-NS objective retain their separate scopes.",
       "input_review": "Parked objective closed by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION; that claim owns the checker.",
       "dependency_review": "The Momose/X0+(475) argument is attributed to the separate obstruction proof. This classification does not independently review the external arithmetic marking theorem.",
       "evidence": [
@@ -6363,20 +6425,20 @@
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION": "879974f788fe9bfe02f1be5c2fcd2348699d230acd5ac045d1da0719fe5b8c22"
       },
       "reviewed_files": {
-        "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "757d1686acf089e500ce0cab85aea129627ec864c4b50f4bd81f51994a90fc19"
+        "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "f4f2802f6b759230241fb804f647d8899cd23b77d84bda2fb4ec1d15ee51ee6a"
       },
       "external_sources": [],
-      "reviewed_on": "2026-09-12"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
       "source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "disposition": "research-objective",
-      "completed": "The objective retains the stronger MW17-plus-carrier endpoint, five other marking exclusions and arithmetic-first admission. NS0031 is UNKNOWN after correction of its full-group containment; forbidden attacks now exclude that invalid inference rather than the unresolved source itself.",
-      "remaining": "A certified rational non-CM point on the full marked curve is required before NS, rootless and equation work; no new positive handoff exists. Determinant1236 still needs identification of its particular cubic CM branch orbit. NS0031 separately needs the full stable projective group, QQ model and rational non-CM locus, without assuming its empty norm-one cover is the period quotient.",
-      "source_review": "Read the full 330-line objective. Its bounded census, local formal branch, rational marking, equation, saturated basis and carrier endpoints are separate. The determinant1236 candidate fibres are already evaluated; only the branch identity remains. The general V4 stretch target remains open, but all seventeen selected product twists are arithmetically closed; none remains a section-search target. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved. Route review adds the two literal determinant500/750 exclusions and the complete smooth-atlas deep-coboundary boundary from their current source notes; neither is a global V4 or determinant-wide exclusion. No calculation was rerun. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil correction: read the explicit O+tau-F pencil and the retained V4 screen. The latter tests M0+lambda*h^2 with constant lambda, whereas the full pencil permits lambda=-c/(t-u). Narrowed the forbidden attack to that fixed family and corrected its source; full moving-contact coboundaries are outside the old screen. No V4 computation or new arithmetic target was started.",
-      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass. Verified that the retained target sets partition all17 as12 geometric+1 single-target+4 regulator closures and the section queue is empty. All27 reduction digests and50 of52 live input bindings match; the two historical producer bindings match the preserved source snapshots named by the existing compatibility audit. No Frobenius, descent or section calculation was rerun.",
-      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. Added the twelve-target, single-target and remaining-four closure chain for the now-explicit selected-product exclusion. Existing marking and broader carrier obligations are unchanged. The former complete deep-coboundary claim now certifies only its fixed regular families across every atlas target. The parity census and all seventeen selected-product rank-zero theorems are unaffected.",
+      "completed": "The stronger MW17-plus-carrier target remains open. Six marking exclusions are recorded, including the corrected NS0031 full stable proof, and the arithmetic-first admission gate is unchanged.",
+      "remaining": "A certified rational non-CM point and full rational marking on a different surviving lattice are required before NS/rootless/equation work. Determinant1236 still needs its exact cubic CM branch-orbit identification; the stronger carrier/new-section objective remains additional. NS0031 is closed negatively.",
+      "source_review": "Read the full 330-line objective. Its bounded census, local formal branch, rational marking, equation, saturated basis and carrier endpoints are separate. The determinant1236 candidate fibres are already evaluated; only the branch identity remains. The general V4 stretch target remains open, but all seventeen selected product twists are arithmetically closed; none remains a section-search target. The September12 stable-reflection review refuted the old norm-one containment and reopened NS0031; that superseded UNKNOWN state is preserved in the archive. The current exclusion uses the separate September14 full stable proof. Route review adds the two literal determinant500/750 exclusions and the complete smooth-atlas deep-coboundary boundary from their current source notes; neither is a global V4 or determinant-wide exclusion. No calculation was rerun. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil correction: read the explicit O+tau-F pencil and the retained V4 screen. The latter tests M0+lambda*h^2 with constant lambda, whereas the full pencil permits lambda=-c/(t-u). Narrowed the forbidden attack to that fixed family and corrected its source; full moving-contact coboundaries are outside the old screen. No V4 computation or new arithmetic target was started. September14 NS0031 reconciliation: read the new full stable proof and changed source dispositions. The unique-overlattice normalizer calculation includes the missing reflection; all GL determinant units pin the canonical Q quotient. The genus-two model, cusp/differential sign, complete Chabauty locus and CM images close the rank-19 marking problem. Other scope passages remain unchanged; the reopened state is preserved in archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json.",
+      "input_review": "Reassembled the 66-row classifier from retained lattice witnesses and exact certificate assertions, then rebuilt the ranking and all827 T-row views. The NS0031 genus23 norm-one diagnostic is retained separately from the corrected full marking genus10 and rational_non_CM_point=false. The compact reflection witness and twelve controls preserve the failure of the original argument. Rebuilding these views does not rerun the historical lattice, equation or local/formal computations. Verified that the retained target sets partition all17 as12 geometric+1 single-target+4 regulator closures and the section queue is empty. All27 reduction digests and50 of52 live input bindings match; the two historical producer bindings match the preserved source snapshots named by the existing compatibility audit. No Frobenius, descent or section calculation was rerun. The new Sage group/model replay and the unconditional Magma2.29-10 global descent were executed. Both rank-one full Mordell-Weil groups are proved; Chabauty gives bound6 in each case with no residual cosets and index conditions discharged. Rebuilt only the retained66-row classifier and cheap downstream planners. Original norm-one, finite/formal and geometric experiments were not reconstructed.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The original NS0031 norm-one argument remains invalid because its subgroup omits a stable reflection. The corrected full stable genus-ten curve and exact genus-two rational locus independently establish the rank-19 exclusion. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. Added the twelve-target, single-target and remaining-four closure chain for the now-explicit selected-product exclusion. Existing marking and broader carrier obligations are unchanged. The former complete deep-coboundary claim now certifies only its fixed regular families across every atlas target. The parity census and all seventeen selected-product rank-zero theorems are unaffected. The new obstruction depends on the retained counter-witness, not conversely. The empty norm-one cover is not used to infer emptiness of its quotient. Rational CM lifts and larger fields remain outside the theorem. No independent replay, formal verification or external review is claimed.",
       "evidence": [
         {
           "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
@@ -6388,23 +6450,24 @@
         }
       ],
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "014f9a4e7aa56c5f8d229bc1229ab9f8f52f31efd0c3cf01777dde51cc156a62",
-        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "50f925d3d5bb46eb97bb1940bf27b2894fd64e0548e3f3afc9da316719f33d43",
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "b1a745d62f502dc21d2108257a0b466c112876d7128fb7f7cf57c53f7783e701",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "ea76b33c4ebe1477c1db0859f92b98ab47b593674e81a8a397d59c0c6f8ed40f",
         "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": "978fb2e25ae7cfe816960dc6ba544a927d12a938355eb2847df351694c3f2fae",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "6f66bf63320dcfd53ebd8ed323c1d7d086581c76d0ad9c9d333410c294d0c7f7",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS": "83243ac7623aa51d8c307374b902b8e666d644f8323c1c21787b2aa9bd920413",
         "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION": "a358408b199ff2536221b77dbb47e6c015569f06d34f4b4d0cf8b2a691d2c0aa",
         "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION": "906f79978235787604f312c64623d079434ccd76b87af8f8da59f422aa8a2f0c",
         "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO": "75d45c248eaa66cd991bf667cbe1b01870ff340a4fa964edf727da89b8b2032a",
-        "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP": "c0665f9057abe77dd327cff5cc8f7729ae1c23b3aca78a7945bfafb3d4af6986"
+        "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP": "c0665f9057abe77dd327cff5cc8f7729ae1c23b3aca78a7945bfafb3d4af6986",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "28bc7c376b930a3cdf8739ac5e33936459bd78b23fb1ac278e5953e32290878d"
       },
       "reviewed_files": {
-        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "226ea099016af41a512d268cf3efab2a75fdb58cd0f733d889c574cb32418719",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
-        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "0dc1e07a5ca02feb645ceca2f268f6daa81b26595ced57d80fc0764ddfca30a8",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "9b91a796dbc918d7581559de35cd772c73dee0597e8c46a514de5000557738fa",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "beb34058370c43c47a1b588b3643b7f7388671813a55d1c6a734c4ac8c1af4f1",
         "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
         "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
-        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md": "75e0917c2682b445efc9437f283dbf626cd9e7817e1b9e64af6309e4968651ce",
+        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md": "2afbc8814c7b9cc665c6d1e0edd36c6f5581961d94efe519f60c0a5d255e4707",
         "elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md": "26bd1e913dba16ad578070c65175a778c360076367d9c008c49a40498be50ca0",
         "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md": "f1058aed68a8b18ed1a401184ca3b284d5c8cc06467a1e5dd37b894d44222389",
         "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md": "c56f6a9e253313db710627fd58d965b44e122d1b5cc38047e216cd109922a39e",
@@ -6419,10 +6482,16 @@
         "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43/certify_r17_product_19bad_083ad_rank_zero.sage": "ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
         "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2/certify_r17_product_regulator_sweep.sage": "ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2",
         "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b",
-        "archive/elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.before-moving-pencil-correction.md.txt": "aa7bcd1d84b72a87a79e5aae63c7fea1bfc418c67466a2d79481d2f09068c6ec"
+        "archive/elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.before-moving-pencil-correction.md.txt": "aa7bcd1d84b72a87a79e5aae63c7fea1bfc418c67466a2d79481d2f09068c6ec",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage": "33813449870cc23a19b0aab0574292a7020e1ad0bca60808791250fb1b8e5fa4",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-output.xml": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+        "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/magma-replay.json": "63ca2284ec6da703977eff5aa8fed6c0bee391abee20adc598206bbd9f69c72a"
       },
       "external_sources": [],
-      "reviewed_on": "2026-09-13"
+      "reviewed_on": "2026-09-14"
     },
     {
       "id": "OP-EC-CURVE302-CONSTRUCTION-RECOVERY",
@@ -6506,11 +6575,11 @@
       "id": "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912",
       "source": "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
       "disposition": "research-objective",
-      "completed": "The Mestre construction supplies two independent new directions with Gram diag(24,24) over a genus21 quadratic cover; every rational auxiliary function in that identity still forces genus at least9. Earlier results close300 smooth-pencil pairs,1675 one-node/smooth pairs and136 basis-pair tangent covers of genus at least86. The newly registered Q80 theorem adds49 complete moving-contact norm12 pencils to63917 norm8 pencils and excludes all2045792595 pairs, with within-pencil injectivity. The inherited parity census and section translations make this complete for smooth genus-one bisection images on that parent. The 14 September branch-first criterion gives necessary and sufficient local removability conditions at simple Mestre coefficient divisors. Fresh small prime gates and independent replay extend the forced degree20/genus9 obstruction to alternate Q80, Curve302 MW17 and X1092 class1; u=2 has the same genus21 and height Gram there.",
-      "remaining": "No shared quadratic cover carrying two independent new sections and infinitely many rational base points has been constructed. On alternate Q80, a solution with genus-one base must involve a singular bisection image of arithmetic genus at least2 in an independent direction. Such images, other parents and the required positive construction remain open; arbitrary twist ranks are not bounded. The common-quartic coefficient system with degree-four x and r has a written sufficient height8 independence proof but remains unsolved; no positive-rank covering quartic is supplied.",
-      "source_review": "Read the updated objective and complete all-smooth Q80 source. The moving-contact expression M=(v*t-u)*M0-v*c*h^2 supplies the full norm12 pencil, including its old regular member at infinity. Reviewed the stated primitive nef divisor D=O+tau-F, minimum-parity completeness argument, fixed-base proportional-branch exclusion, integral finite reduction and checked interpolation/23-fibre identification bounds. The norm12 family has a generic nontorsion section, but no shared second branch image. Earlier Mestre, tangent and one-node results retain their own scopes. This reconciles source-level knowledge with the newly registered theorem; no comparison, parity census or proof replay was executed here. The same moving-pole derivation narrows the older complete-atlas V4 screen to its fixed regular-slope family; its target enumeration and the independent seventeen-product rank-zero closures remain intact. Read the new branch-first note, including the n<0/n>0 valuation cases, unit-residue contact orders, tied leading terms and CRT sufficiency. The finite residue witnesses apply to entire irreducible degree8/12 root fields. The new polynomial chart has arithmetic genus5 by the class 2O+4F; its two conditional height8 sections are independent if their x-coordinates differ. These are new analytic and arithmetic gates, not a positive solution. Reused the existing determinant1092 genus9 halving-locus theorem with its dense-open and exceptional-member boundary.",
-      "input_review": "The generic-only packets, literal point and branch coefficients, finite-field witnesses, independent replay and six failure/control tests are present. The checker derives heights from exact pole inputs rather than accepting the producer matrix. The original Mestre packet uses no exceptional target fitting and has a genus21 base. The later norm12 family has a generic nontorsion section; its missing gate is a second shared branch image. The separate tangent packet, complete finite witnesses and independent replay are present; four failure/control tests pass. The full generic-only packet,246 compressed frame checkpoints, three complete prime stages, embedding supplement and final independent replay are retained. Eight new failure/control tests pass. Both startup failures occurred before construction and leave the frozen input unchanged. The new frozen49-class input, two complete prime stages,98 norm12 frames, one norm8 supplement, independent replay and seven failure tests are retained. The recorded norm12 replay recomputed all33436888 images in the extension; cleanup did not repeat it. A startup mapping failure under the memory cap was resolved with one numeric-library thread before any trace was emitted; no mathematical input changed. The new generic equation packet was frozen before a fixed prime panel below2000. All four equations have complete finite witnesses, source-bound coefficientwise section and sum identities, and a portable independent replay. Nine tests pass; the first test run expected the wrong exception type in five rejection controls, which was corrected without changing the arithmetic or frozen producer. No large enumeration or rational-point search was run.",
-      "dependency_review": "The published/generic rank17 and complete Q80 parity/trace certificates are inherited premises. The new norm12 result reuses the old norm8 frames by hash and adds one supplemental frame; it does not repeat the full census. The different-NS objective retains its rational-marking gate. The existing positive objective stays open, with no proof-assurance upgrade from this review. New parent ranks and basis saturation remain inherited from the alternate-Q80, recovered302 and class1 realization theorems. This review narrows the same Mestre identity on those exact parents and preserves all other identity and positive-base unknowns.",
+      "completed": "The Mestre construction supplies two independent new directions with Gram diag(24,24) over a genus21 quadratic cover; every rational auxiliary function in that identity still forces genus at least9. Earlier results close300 smooth-pencil pairs,1675 one-node/smooth pairs and136 basis-pair tangent covers of genus at least86. The newly registered Q80 theorem adds49 complete moving-contact norm12 pencils to63917 norm8 pencils and excludes all2045792595 pairs, with within-pencil injectivity. The inherited parity census and section translations make this complete for smooth genus-one bisection images on that parent. The 14 September branch-first criterion gives necessary and sufficient local removability conditions at simple Mestre coefficient divisors. Fresh small prime gates and independent replay extend the forced degree20/genus9 obstruction to alternate Q80, Curve302 MW17 and X1092 class1; u=2 has the same genus21 and height Gram there. The common-quartic singularity analysis now gives two exact24I1 K3 control parents with genus0/1 infinite rational bases, four/five nodes per image and independent height8 sections of Gram determinant48. A complete degree33 critical-value norm gate proves that every algebraic constant abscissa on all four retained MW17 parents has normalization genus at least4. The branch-stratum continuation gives a complete15-case gcd presentation in nine coordinate patches and exact squarefree height cross term4-k-2*j. On Q80 the entire k=4 genus-one stratum is excluded by an inherited unramified product class and two smooth genus-one half-images.",
+      "remaining": "The positive fixed-MW17 endpoint and a whole-family genus-above-one theorem remain UNKNOWN. Q80 genus-one solutions must occur outside k=4 and require full cubic splitting at some branch residue fields; the corresponding degree-at-most4 divisor problem on the genus31 splitting curve is not solved. All repeated-quartic genus0 cases, the other14 factor allocations and other parents remain unresolved. Each positive candidate still requires its actual rational base and two independent new directions.",
+      "source_review": "Read the updated objective and complete all-smooth Q80 source. The moving-contact expression M=(v*t-u)*M0-v*c*h^2 supplies the full norm12 pencil, including its old regular member at infinity. Reviewed the stated primitive nef divisor D=O+tau-F, minimum-parity completeness argument, fixed-base proportional-branch exclusion, integral finite reduction and checked interpolation/23-fibre identification bounds. The norm12 family has a generic nontorsion section, but no shared second branch image. Earlier Mestre, tangent and one-node results retain their own scopes. This reconciles source-level knowledge with the newly registered theorem; no comparison, parity census or proof replay was executed here. The same moving-pole derivation narrows the older complete-atlas V4 screen to its fixed regular-slope family; its target enumeration and the independent seventeen-product rank-zero closures remain intact. Read the new branch-first note, including the n<0/n>0 valuation cases, unit-residue contact orders, tied leading terms and CRT sufficiency. The finite residue witnesses apply to entire irreducible degree8/12 root fields. The new polynomial chart has arithmetic genus5 by the class 2O+4F; its two conditional height8 sections are independent if their x-coordinates differ. These are new analytic and arithmetic gates, not a positive solution. Reused the existing determinant1092 genus9 halving-locus theorem with its dense-open and exceptional-member boundary. Reviewed the full F,F_prime,F_second incidence, local delta=floor(m/2) and homogeneous degree12 infinity calculation. The repeated-quartic boundary normalizes to a conic when the residual binary branch degree is2. The reverse formulas for A,B permit the parent to move, so their controls cannot be promoted to a retained-MW17 construction. Reviewed the constant-abscissa proof: H has degree33, A_prime is a unit at its roots, its critical-value norm has33 distinct roots, and H_prime=-(A_prime)^2*(3*c^2+A)*F_c_second makes every critical image an ordinary node. Read the new complete gcd inversion, including shared u/v factors, gcd(v,a), literal constants, the nine-patch degree-eight root bound, repeated D and the exact local intersection orders. Reviewed the k=4 descent: the product class has no residual ramification at good, I1 or infinity places; arithmetic Kummer/Leray gives an inherited T, both half-points exist over the same quadratic field, their images have square0 and normalization genus1, and their independent quotient classes contradict the full Q80 smooth theorem. The splitting-curve genus31 conclusion is explicitly only a low-degree-divisor reduction.",
+      "input_review": "The generic-only packets, literal point and branch coefficients, finite-field witnesses, independent replay and six failure/control tests are present. The checker derives heights from exact pole inputs rather than accepting the producer matrix. The original Mestre packet uses no exceptional target fitting and has a genus21 base. The later norm12 family has a generic nontorsion section; its missing gate is a second shared branch image. The separate tangent packet, complete finite witnesses and independent replay are present; four failure/control tests pass. The full generic-only packet,246 compressed frame checkpoints, three complete prime stages, embedding supplement and final independent replay are retained. Eight new failure/control tests pass. Both startup failures occurred before construction and leave the frozen input unchanged. The new frozen49-class input, two complete prime stages,98 norm12 frames, one norm8 supplement, independent replay and seven failure tests are retained. The recorded norm12 replay recomputed all33436888 images in the extension; cleanup did not repeat it. A startup mapping failure under the memory cap was resolved with one numeric-library thread before any trace was emitted; no mathematical input changed. The new generic equation packet was frozen before a fixed prime panel below2000. All four equations have complete finite witnesses, source-bound coefficientwise section and sum identities, and a portable independent replay. Nine tests pass; the first test run expected the wrong exception type in five rejection controls, which was corrected without changing the arithmetic or frozen producer. No large enumeration or rational-point search was run. Read the new frozen generic-source binding, two explicit control inputs, all six checkpoints and independent integer/Fraction replay. The replay reconstructs the degree-bounded norm using34 exact evaluation residues and verifies both base maps, Lutz-Nagell point multiples, three section equations, the chord sum and height hypotheses. All8 regression tests pass. The initial prime101 reduction failed and was not used as evidence;1009 was selected after the recorded probes. One test expectation omitted a leading factor2 in a hand-computed resultant and was corrected to108 without changing the certificate or arithmetic. The new frozen packet binds generic parents, the retained131 producer and independent replay, Q80 comparison receipts and the old controls. The new single Sage checker verifies universal symbolic identities, all15 degree and height rows,36 good rational patch choices and their weighted transforms, both control inversions and exact Artin--Tate arithmetic. It passes in under one second. The source-bound point counts, saturation proofs and pencil comparisons were not repeated. Preview failures were a bad reduction of patch0 on class1 and a Sage polynomial/fraction-field coercion; both were resolved before freezing. No independent checker or formal verification is claimed.",
+      "dependency_review": "The published/generic rank17 and complete Q80 parity/trace certificates are inherited premises. The new norm12 result reuses the old norm8 frames by hash and adds one supplemental frame; it does not repeat the full census. The different-NS objective retains its rational-marking gate. The existing positive objective stays open, with no proof-assurance upgrade from this review. New parent ranks and basis saturation remain inherited from the alternate-Q80, recovered302 and class1 realization theorems. This review narrows the same Mestre identity on those exact parents and preserves all other identity and positive-base unknowns. The new theorem is an exact scoped deduction and control construction, not a completed high-rank objective. Parent17 statements remain inherited only for the four fixed equations; the controls have no asserted inherited rank. The full five-coefficient abscissa incidence is neither solved nor excluded. The new determinant948 Brauer2 deduction applies the already written cohomological argument at ell2,p131 using the retained full arithmetic Picard lattice and trivial finite-field Brauer group. Only the2-primary step is needed and asserted. The direct11952 same-Q-surface identification transfers it to Q80. The exact finite arithmetic and the existing complete smooth-image result are proof dependencies, not fresh computations.",
       "evidence": [
         {
           "path": "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
@@ -6518,7 +6587,7 @@
         },
         {
           "path": "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
-          "quote": "The positive endpoint remains unverified: no shared quadratic cover with both\ntwo independent new sections and infinitely many rational base points has\nbeen constructed here."
+          "quote": "The positive MW17-parent endpoint remains unverified: no retained high-rank\nparent yet has a shared quadratic cover with both two independent new sections\nand infinitely many rational base points."
         },
         {
           "path": "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md",
@@ -6535,33 +6604,70 @@
         {
           "path": "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md",
           "quote": "**No solution of (4), nor such a positive-rank quartic, is produced\nin this note.**"
+        },
+        {
+          "path": "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
+          "quote": "No lower bound above one for its whole fixed-parent quartic\nchart has been proved."
+        },
+        {
+          "path": "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md",
+          "quote": "The other strata are not excluded."
         }
       ],
       "reviewed_claims": {
-        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "dfddd4ad29e2abb3d063eb17f361554d7aab68df144fb92d7d5d703d189c3c8d",
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "ecbf13c94ff00323498916e296b813fd9aa491ad1c3adede34233ad3b5547aac",
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912": "727dae623b9612fe7040fb6c28a192220142cc6c298fbf875d4938db6585fde1",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": "8dbc1b719f6d33e5e295156b672462f5752a62a1c107be57ba532f312b69facd",
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "68b1514b0a39a9520ddfdc9a16e30eefb84c137b885a68622c49a5cec3a6af51",
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913": "11eb330428a89cf48a75d6a5c35b8582cb6e2facbbe8baa8c75efffeda23a016",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913": "7dd2998a0b612291f960e77d2e58d8ce58e4a039923a560e6359006d7563679a",
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "b0ff4c21a7be065b9f267688dff7f8c9cd256fa32ac9ff2808b0bdaf926580cd",
-        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "5e3c33473feb943422a301bc554f9c1a80f821414d39d437dc44660e481d3c96"
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "5e3c33473feb943422a301bc554f9c1a80f821414d39d437dc44660e481d3c96",
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914": "68f73ab7819fa73bb4f70b2b2af1e71e4eee1d1e27d6e8b4b7e09e75cfb7e597",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914": "85a8b2d7f2dfb6be8caa98e5f5ae0cc5296954688ac46b3c07e666f71742fff3"
       },
       "reviewed_files": {
-        "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md": "27dd172a94285a43b72527c24632cb66fc4811de349a59ea11f2641b35fc3116",
+        "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md": "ab8a406afd817743fdb0472d609018bf02b9d935eb87b48f07f43a000e9b0e09",
         "elkies-k3/R17_ONE_NODE_CORRELATED_COVER_GATE_2026-09-12.md": "dc57c1c9b2a45dd7397f40ff809ded97e8441fff5be5609af150ec3f08deb472",
         "elkies-k3/R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md": "9d931080b594b4b1e1d3cec891fe1eb90f4507a24260a4c744cc670e267f8b3e",
         "elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md": "d4120be8ccfc002c78a2eb2d3b4159d397cff8bb524117f73991c3420c60f211",
         "elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md": "682d3ee91d18cf7b7add26bdf0e2621b49da2fa3bfab1460a01a70a67dc250c3",
         "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b",
-        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md": "2ef0b2fb8b27e89a773bfa9db3482d96b9e2e0948ccd895b35e8da6ee476650e",
+        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md": "98a0a8c59313b31a6fdac6cd68125931933e3dfbf948cb39b0467822bc6f931b",
         "elkies-k3/scripts/verify_mestre_parent_branch_cancellation.py": "ac810c7cec97e17de782fd17d69a468c53f06a2ef5ed5bf3c95a851bab5a57fc",
         "elkies-k3/scripts/gate_mestre_parent_branch_cancellation.sage": "d2d39541e3822ac4b541d843e61be844b4e6b480195bb47062285c51d0298e1c",
         "tests/test_mestre_parent_branch_cancellation.py": "a5fbbd6f2fc321db5320aeee583e0e2d543947676b24b1038ae84a88e0a7c6f1",
         "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c",
         "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/result.json": "81a7bbd1f00534e1ce8c8597329012b8c485eb809c160d115161d694a9a7d240",
         "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/independent-replay.json": "88c0e0c146cd8cc6fcc1291db1c0b5916682b7fa2ba67e38337bb006ac38836c",
-        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/execution.json": "441da84f4f72bd9136b473aefab22135af87dc230e09c6aa6da7acaca071cdc0"
+        "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/execution.json": "441da84f4f72bd9136b473aefab22135af87dc230e09c6aa6da7acaca071cdc0",
+        "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md": "8fc274a3817089306b4e922134fb2b6a3fc17d8c8e916c07b427e3f01fb5a7a0",
+        "elkies-k3/scripts/certify_common_quartic_singularity_locus.sage": "61861fec4ba2f2687220cfbf6c7b0438ea8c11cf2882267ab453fccf968234ec",
+        "elkies-k3/scripts/verify_common_quartic_singularity_locus.py": "87f2f8ae2b317f1e68d5a6dd075a367664df1da076162b4bbcf0491f942a6e18",
+        "tests/test_common_quartic_singularity_locus.py": "f9b641bc3d1840d5810a725e2df6b94f196b9ad01e6769953d1218d7c1988c47",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/alternate-q80-checkpoint.json": "61e5aa14ce165094e7ec86fade683ad7548fd985564fe54f659116885a4f99d7",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/curve302-parent-checkpoint.json": "5f7b532a57e113cf35cc8446d12fdf2b11bf0c5801e335dd13d37b2cde4e86e2",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/execution.json": "07883d340c3d81f8603f29d257b41d1cac186cf6d3d961badafea7011cb0976c",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/five-nodes-genus-zero-checkpoint.json": "2fc86846ae2777a989a2cbdecf70b9c354c6f457fbb3770679289d4a5390d9d1",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/four-nodes-genus-one-checkpoint.json": "b9d156e0629c45e2770be4f2a5c6a64927b349b66caef35ad355ff7ef7385221",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/independent-replay.json": "b63dc943293fc819dc6d10e7b3c114ecdd9df6ee52c6526791d46ea412b65e57",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/input.json": "af2041145116d55542c5375eb15d84bc52117e4aed0ee1a61428afb9a559e01a",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/published-r17-checkpoint.json": "1b3427524a529d216f441be151c4aae295db56ac580813b018bd558423660331",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/result.json": "deda3275acfbcae8005d3943feb8146ce7b721afff404a618dc262ea94a0cc35",
+        "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/x1092-class1-checkpoint.json": "5e07630e3e24fa3f31b253d7a87e3999d07473f48b28ce7acdac08fcad7965fd",
+        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md": "598499adfba2bce6ba291a573872fae0a8f6f9eb286d41578f3fda142b5ea408",
+        "elkies-k3/scripts/verify_common_quartic_branch_strata.sage": "c2fe18932972c628b1d0e94c2510eba37c60b94a4b17ede04df17ed247c14f59",
+        "artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/independent-replay-final.json": "e8bf8ba07fb4f28bfa974fe41410cd870e7989d1080cba73faf8ed9a57ce07a6",
+        "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/independent-replay.json": "1ba379ef5d463507685d03a3368d62823f71623c19bdf9dabdbd2b45a91e4532",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_v1.json": "2f07599aaafe2ae17eedfaa58276a3463b7a8c3751ad480c01c32d689c366030",
+        "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_verification_v1.json": "a3fefee8aca5b6de7dcedfb0075b7722945902a84b7281d7e30ad916d9a70736",
+        "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md": "741f9a4991abd152fce20d0822aa5e90fe893fd3f9a3b176516a41870010cd02",
+        "elliptic-curves/notes/DET1092_SURFACE_BRAUER_TRIVIALITY_2026-09-09.md": "c25d4e761824f987d76bb92ab307a705f8722ede243203510a6820d1ffa8460d",
+        "elliptic-curves/notes/DET1092_UNRAMIFIED_KUMMER_OBSTRUCTION_2026-09-09.md": "043bf0f8a16a39cafca97590c3ea921dafede023ea3ec589d6dc479721944151",
+        "elliptic-curves/rank-jump/THE_LAST_GLOBAL_CLASS_IS_ABSENT.md": "da70392aa5a96a0a7bd6cc70349efb3f49ec17b26f6b2dbd361341e5be89bc1d",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/execution.json": "31a8862d14fa04ae7fc2cc29a4de895db0afa2658b347914c9356d1b399339b8",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/input.json": "5a8c50fe6a77a15f0391fbd5f7d992d6444c20216cfbd9edad98b4b9b9943b71",
+        "artifacts/generated-results/elkies-k3-common-quartic-branch-strata-v1/result.json": "397ed8e0abf607ac31005f936c86eec55ae7a8cd14c7ed41817f4d9e2018ba03"
       },
       "external_sources": [],
       "reviewed_on": "2026-09-14"

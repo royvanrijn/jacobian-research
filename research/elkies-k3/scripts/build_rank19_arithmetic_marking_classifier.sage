@@ -395,9 +395,9 @@ def hospitality_comparison(by_id):
             "whose X_0(50) and X_0(75) quotients have only rational cusps. "
             "Determinant 720 has exact stable curve X_0(60), whose rational points "
             "are all cusps; determinant 950 is forced onto the rigid Fricke quotient "
-            "X_0^+(475). Determinant 1184 remains UNKNOWN: its norm-one Cartan "
-            "fibre product has no rational lift, but a stable reflection lies "
-            "outside that norm-one group, invalidating the claimed marking map. The "
+            "X_0^+(475). Determinant 1184 has a corrected full stable genus-10 "
+            "curve, including the missing reflection; its Q-defined genus-two "
+            "quotient has exactly twelve rational points, all cuspidal or CM. The "
             "observed hospitality of 948 is therefore explained by its unusually "
             "low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, "
             "not by determinant size or Clifford splitting alone."
@@ -445,9 +445,9 @@ def build(catalogue, t_arithmetic, decisions, paths):
     counts = Counter(row["classification"] for row in candidates)
     if counts != Counter(
         {
-            "ARITHMETICALLY_EXCLUDED": 4,
+            "ARITHMETICALLY_EXCLUDED": 5,
             "ARITHMETICALLY_POSSIBLE": 1,
-            "UNKNOWN": 61,
+            "UNKNOWN": 60,
         }
     ):
         raise AssertionError(f"classification count changed: {counts}")

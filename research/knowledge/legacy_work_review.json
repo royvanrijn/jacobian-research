@@ -1314,7 +1314,7 @@
       "actions": [
         "WORK-K3-MARKING-REVIEW"
       ],
-      "rationale": "Completed the requested finite replay and both external-input reviews. Velu supports the modular arithmetic, but the literal Dolgachev discriminant-kernel review exposed a stable reflection outside the claimed rational norm-one image. The old K3 exclusion is withdrawn, NS0031 is UNKNOWN, and exact controls protect the corrected consumers. This completes the review, not the rational-marking problem.",
+      "rationale": "The September12 finite replay and external-input review exposed the missing stable reflection and correctly reopened NS0031; that dated completion receipt is preserved below. The separate September14 full stable group, canonical genus-ten Q curve and exact genus-two rational-locus proof now exclude full rational rank-19 NS0031 markings. Both the inherited review and its marking follow-up are complete. The original norm-one containment remains false.",
       "id": "LEGACY-20260904-345",
       "resolution": {
         "outcome": "completed-at-snapshot",
@@ -1330,7 +1330,11 @@
           "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
           "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
         }
-      }
+      },
+      "claims": [
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
+      ]
     },
     {
       "line": 355,
@@ -1339,7 +1343,7 @@
       "actions": [
         "WORK-K3-MARKING-REVIEW"
       ],
-      "rationale": "The old instruction assumed both lattices were excluded. That premise is corrected: NS0024 retains its exclusion; NS0031 is UNKNOWN and may re-enter the arithmetic research queue, but neither enters the rational-source equation handoff without a certified positive marking. Local/geometric evidence is preserved. The original completed-at-snapshot interpretation is preserved in the before ledger.",
+      "rationale": "NS0024 and NS0031 are both excluded as full rational rank-19 markings; NS0031 now uses the separate September14 full stable proof, including the reflection omitted in the original argument. Preserve their local/formal and geometric controls, and keep them outside the rational-source equation queue. The September12 completion receipt below records the intervening UNKNOWN state at that snapshot, not the current disposition. Rational CM lifts, Picard-rank-20 specializations containing NS0031 and larger fields remain outside the corrected theorem.",
       "id": "LEGACY-20260904-355",
       "resolution": {
         "outcome": "completed-at-snapshot",
@@ -1353,7 +1357,11 @@
           "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
           "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md": "b0f514b10e8216db091b2858167db2d97442e50045338518333f3793765285ac"
         }
-      }
+      },
+      "claims": [
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
+      ]
     },
     {
       "line": 360,

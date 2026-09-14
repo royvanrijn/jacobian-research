@@ -1,0 +1,46 @@
+{
+  "arm": "finite_selector",
+  "boundaries": "Known-curve control. Exact independence beyond input subgroup; no novelty or rank upper bound. Cached V3 centre bank reused, all per-worker costs charged.",
+  "case": "dc20c5383dac4f00ccee",
+  "charts": [
+    {
+      "cpu_after": 2.0244545149999995,
+      "index": 0,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.0136491280000004,
+      "index": 1,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 3.362153131,
+      "index": 2,
+      "new_direction": false,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 4.227334486,
+      "index": 3,
+      "new_direction": true,
+      "selection": "neighbour-p3-r0",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "cpu_seconds": 4.6826371810000005,
+  "family": "08f72",
+  "initial_rank": 19,
+  "map_and_feature_cpu_seconds": 0.22898173499999963,
+  "point_backend_cpu_seconds": 2.8421464739999998,
+  "point_search_calls": 4,
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "rank_lower_bound": 20,
+  "status": "CERTIFIED_NEXT_DIRECTION",
+  "success": true,
+  "wall_seconds": 4.678222815040499
+}

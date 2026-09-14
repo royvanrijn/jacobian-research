@@ -1,8 +1,8 @@
 {
   "accounting": {
-    "ARITHMETICALLY_EXCLUDED": 4,
+    "ARITHMETICALLY_EXCLUDED": 5,
     "ARITHMETICALLY_POSSIBLE": 1,
-    "UNKNOWN": 61,
+    "UNKNOWN": 60,
     "candidate_ns_lattices": 66,
     "catalogue_surfaces": 827,
     "coarse_curve_statuses": {
@@ -6099,9 +6099,14 @@
           "status": "PASS_EXACT_FROBENIUS_LIFT_EXCLUSION"
         },
         {
-          "conclusion": "The old group-containment step is false. Rational NS0031 marking existence remains UNKNOWN.",
+          "conclusion": "The old group containment is false. The separate full-stable certificate includes this reflection and supplies a corrected obstruction.",
           "method": "Exact integral reflection, discriminant action, positive-plane and Clifford adjoint identities",
           "status": "PASS_STABLE_REFLECTION_OUTSIDE_RATIONAL_NORM_ONE_IMAGE"
+        },
+        {
+          "conclusion": "The full genus-10 Q curve has no rational noncuspidal non-CM point; a full rational rank-19 NS0031 marking is excluded.",
+          "method": "Canonical adelic level; genus-two quotient; unconditional cubic-field elliptic Chabauty with full MW groups; exact CM coordinate identification",
+          "status": "PASS_EXACT_FULL_STABLE_NONCM_EXCLUSION"
         }
       ],
       "certificate_replay": [
@@ -6114,13 +6119,37 @@
           "assertions_replayed": 4,
           "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
           "sha256": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+        },
+        {
+          "assertions_replayed": 8,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+          "sha256": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb"
         }
       ],
-      "classification": "UNKNOWN",
-      "classification_decision": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "classification_decision": "The corrected full stable marking curve has a Q-defined genus-two quotient v^2=u^6-4*u^4+4. Its twelve rational points map only to the cusp and CM points on X_0(37)^+. This proves the rank-19 marking exclusion with the missing determinant-minus-one reflection included.",
       "determinant": 1184,
       "different_ns_foundry_equation_eligible": false,
-      "easy_quotient_maps": [],
+      "easy_quotient_maps": [
+        {
+          "boundary": "Reduction of Cartan level 4 to level 2, compatible with w_37 w_ns.",
+          "degree": 4,
+          "field": "Q",
+          "source": "C_4",
+          "status": "PASS_EXACT_QQ_MODULAR_QUOTIENT",
+          "target": "C_2: v^2=u^6-4*u^4+4",
+          "target_genus": 2
+        },
+        {
+          "boundary": "Cusp and differential fix the sign and translation used for CM identification.",
+          "degree": 2,
+          "field": "Q",
+          "source": "C_2",
+          "status": "PASS_EXACT_QQ_MODULAR_QUOTIENT",
+          "target": "X_0(37)^+: Y^2+Y=X^3-X",
+          "target_genus": 1
+        }
+      ],
       "equation_agent_eligible": false,
       "even_clifford_algebra_and_order": {
         "finite_ramified_primes": [],
@@ -6212,7 +6241,7 @@
       },
       "full_discriminant_marking_curve": {
         "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T)), acting projectively",
-        "boundary": "The stable root reflection is projectively represented by a determinant37 normalizer element, outside rational norm-one units. The previously asserted period-induced map to the norm-one Cartan fibre product is invalid.",
+        "boundary": "The full genus-10 curve includes the stable reflection. Its degree-four genus-two quotient has exactly twelve rational points, all cuspidal or CM. Rational CM lifts and larger fields are outside this rank-19 exclusion.",
         "coarse_norm_one_curve": {
           "boundary": "Exact norm-one arithmetic; the full stable period group is not contained in this group.",
           "cusp_widths": [
@@ -6228,22 +6257,23 @@
           "label": "X_ns(4) x_{X(1)} X_0(37)",
           "status": "PASS_EXACT_NORM_ONE_CURVE_ONLY"
         },
-        "explicit_model": null,
+        "explicit_model": "Canonical Q quotient (X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>",
+        "genus": 10,
+        "label": "(X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>",
         "marking_gap": {
-          "coarse_clifford_hessian_equals_literal_T": true,
           "discriminant_group_invariants": [
             1184
           ],
-          "literal_T_as_rational_multiple_of_coarse_hessian": "1",
-          "status": "OPEN_STABLE_ORTHOGONAL_DISCRIMINANT_KERNEL_NOT_COMPUTED",
-          "warning": "The projective norm-one curve of a similar primitive ternary form is an arithmetic diagnostic. The direction of its map to the literal stable period quotient is not automatic. Full rational NS marking requires the full discriminant kernel, including determinant-minus-one isometries."
+          "status": "CLOSED_FULL_STABLE_GROUP_AND_ARITHMETIC_DESCENT"
         },
-        "status": "UNKNOWN_FULL_STABLE_PERIOD_GROUP_AND_QQ_MODEL"
+        "norm_one_cover_degree": 2,
+        "projective_group": "Gamma union W_37 Gamma; Gamma = Gamma_ns(4) intersect Gamma_0(37)",
+        "status": "PASS_EXACT_FULL_STABLE_GROUP_QQ_MODEL_AND_NONCM_EXCLUSION"
       },
       "legacy_ns_ids": [
         "NS0031"
       ],
-      "next_arithmetic_gate": "Determine the full stable projective period group, its correct QQ model and rational non-CM points, or supply an independent arithmetic obstruction. Retain determinant-minus-one stable isometries; do not reconstruct the formal branch or launch equations from this correction.",
+      "next_arithmetic_gate": null,
       "ns_lattice": {
         "catalogue_boundary": "The catalogue constructs the primitive K3 complement by the opposite discriminant form; this replay checks rank, signature, determinant, and Smith invariants.",
         "discriminant_group_invariants": [
@@ -6431,7 +6461,10 @@
       "surface_id": "K3-d1b1381f87d69f1c",
       "theorem_inputs": [
         "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
-        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice"
+        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice",
+        "Rizov, Complex multiplication for K3 surfaces, Theorem 3.16 and section 3.9: canonical arithmetic period map with auxiliary level",
+        "Elkies, Elliptic and modular curves over finite fields, Appendix level 37, equations 98-104: cusp/differential normalization and CM coordinates",
+        "Unconditional Magma 2.29-10 full Mordell-Weil and elliptic Chabauty proofs, exact input and raw output retained"
       ],
       "transcendental_lattice": {
         "construction": "T = NS^perp in the K3 lattice",
@@ -15896,7 +15929,7 @@
     "policy": "ARITHMETICALLY_POSSIBLE only"
   },
   "hospitality_comparison": {
-    "contrast": "Determinants 500 and 750 have exact stable curves X_H(50) and X_H(75), whose X_0(50) and X_0(75) quotients have only rational cusps. Determinant 720 has exact stable curve X_0(60), whose rational points are all cusps; determinant 950 is forced onto the rigid Fricke quotient X_0^+(475). Determinant 1184 remains UNKNOWN: its norm-one Cartan fibre product has no rational lift, but a stable reflection lies outside that norm-one group, invalidating the claimed marking map. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
+    "contrast": "Determinants 500 and 750 have exact stable curves X_H(50) and X_H(75), whose X_0(50) and X_0(75) quotients have only rational cusps. Determinant 720 has exact stable curve X_0(60), whose rational points are all cusps; determinant 950 is forced onto the rigid Fricke quotient X_0^+(475). Determinant 1184 has a corrected full stable genus-10 curve, including the missing reflection; its Q-defined genus-two quotient has exactly twelve rational points, all cuspidal or CM. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
     "determinant_948_features": [
       "T has a division even-Clifford algebra with the clean coprime squarefree Eichler pair (D,N)=(6,79).",
       "The Atkin-Lehner quotient by w_474 has genus 2 and an explicit non-CM QQ-point.",
@@ -16008,8 +16041,8 @@
         "surface_id": "K3-ebaf00b3723751ba"
       },
       {
-        "arithmetic_reason": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
-        "classification": "UNKNOWN",
+        "arithmetic_reason": "The corrected full stable marking curve has a Q-defined genus-two quotient v^2=u^6-4*u^4+4. Its twelve rational points map only to the cusp and CM points on X_0(37)^+. This proves the rank-19 marking exclusion with the missing determinant-minus-one reflection included.",
+        "classification": "ARITHMETICALLY_EXCLUDED",
         "coarse_local_level_index": 592,
         "coarse_order_reduced_discriminant": 592,
         "determinant": 1184,
@@ -16089,7 +16122,7 @@
   "inputs": {
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
-    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "5f41698ba704f1b268eb8143b2a2d8c532e6bb9f0aad88c46c81584e841bf07c",
     "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213"
   },
   "policy": {

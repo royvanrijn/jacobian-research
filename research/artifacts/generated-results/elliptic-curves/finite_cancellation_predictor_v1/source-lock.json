@@ -1,0 +1,32 @@
+{
+  "python": "3.14.7 | packaged by conda-forge | (main, Aug 19 2026, 15:32:49) [GCC 15.3.0]",
+  "sage": "10.9",
+  "cypari2": "2.2.4",
+  "pari_mapping_version": "(2, 17, 3)",
+  "gp_version": "2.15.4",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "sources": {
+    "finite_cancellation_corpus.py": "4ec5da80e68eb5917f3272df4ee8199a413a7635508bfb24e903c50c9c2c3556",
+    "finite_cancellation_features.py": "1ca9551f12cf0c5648ea812419c53f81108413fc08f38e9e1d5acf79bbdfbafa",
+    "analyze_finite_cancellation.py": "5cbb799c44ffbbe094506b9681873e689eba844822ea32f76972415b858d2f2a",
+    "verify_finite_cancellation.py": "6ad57e6be687d2f1ce0ba058cef313faf7837c93d55f18c9a8560cb95027bc28",
+    "finite_cancellation_cpu.py": "f8915ecb19022143139f116c3f258e4d396aa1570794a5fec3b96fe56ceca790",
+    "run_finite_cancellation_cpu_suite.py": "0136cca1796e8ae6bd180baf19f43a7b9fd9be22f4983f4708e8e13bb4e1642f",
+    "verify_finite_cancellation_cpu.sage": "8c540c75968ca180b313783d95cf0388192ff9cc9febb1b53dc65a001b8e494f",
+    "finite_cancellation_q_ablation.py": "b3463895dbf01cd3e30bba9367d6247d6f4493a86f9c4cb1b0134b7a7a5fa5f5",
+    "finite_cancellation_neighbour_states.py": "003e193cd425bf9e99877993fcb58c2d04326ce721f86f1181a5faa8103808da",
+    "decompose_finite_cancellation.py": "7282c6d2099dbf2cb0d3e52acdc8a828293ceb34c3ad615abb6be4b79d8bfe2a",
+    "report_finite_cancellation.py": "c1d15e0628146dffb3c79b45470cd4e8c19ece12dabf815637d636b574f97cec",
+    "lean_finite_cancellation_pari_mapping.sage": "85285d489cf5d372f93a59a45b7ca92348c5e60c3ccd7ac539dafce27afe45ec",
+    "lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+    "half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "pointed_box_equivalence.py": "26c3f89b7a2e6adced75ac2c4959b8a0e0edf7ce9447fafb2bdaca00eb537e57",
+    "search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+    "pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+  },
+  "note": "Current source bytes retained after the completed run. Original per-case and CPU protocol hashes remain separate and are never retagged."
+}

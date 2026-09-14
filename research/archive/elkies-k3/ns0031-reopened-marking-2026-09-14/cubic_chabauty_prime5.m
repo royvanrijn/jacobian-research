@@ -1,0 +1,25 @@
+SetColumns(0); SetSeed(1); GetVersion();
+Q:=Rationals(); P<t>:=PolynomialRing(Q);
+K<a>:=NumberField(t^3-4*t+2);
+th:=a/2;
+R<u>:=PolynomialRing(K);
+for delta in [K!1,-th] do
+  C:=HyperellipticCurve((u^4+th*u^2+th^2-1)/delta);
+  pt:=delta eq 1 select C![1,th/(2*th-1),1] else C![0,1/(2*th),1];
+  E,mp:=EllipticCurve(C,pt);
+  print "DELTA",delta;
+  lo,hi:=RankBounds(E); print "RANK_BOUNDS",lo,hi;
+  A,mw,rank_proved,full_group_proved:=MordellWeilGroup(E);
+  print "MW",A,"RANK_PROVED",rank_proved,"FULL_GROUP_PROVED",full_group_proved;
+  invmp:=Inverse(mp);
+  pols:=DefiningPolynomials(invmp);
+  common:=GCD(pols[1],pols[3]);
+  cov:=map<E -> ProjectiveSpace(Q,1) | [pols[1] div common,pols[3] div common]>;
+  mwc:=map<A -> E | v :-> mw(v)>;
+  print "MAP",cov;
+  N,V,idx,cosets:=Chabauty(mwc,cov,5);
+  print "CHABAUTY_BOUND",N,"INDEX_PRIMES",idx,"RESIDUAL_COSETS",cosets;
+  print "FOUND_GROUP_ELEMENTS",V;
+  print "FOUND_RATIONAL_IMAGES",[cov(mw(v)):v in V];
+end for;
+print "DONE";

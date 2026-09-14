@@ -1,20 +1,22 @@
-# NS0031: valid modular arithmetic, unresolved rational marking
+# NS0031: retained norm-one arithmetic and the missing-reflection correction
 
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
 
-The September 4 nonexistence conclusion is withdrawn. Its finite Clifford,
+The September 4 nonexistence argument remains invalid. Its finite Clifford,
 coset and Frobenius calculations remain valid, but the asserted containment
 of the full marked period group in rational norm-one units is false.
-**Existence of a K3 over QQ with the full rational NS0031 marking is UNKNOWN.**
-The model-157 formal branch and F017 physical corridor retain their local and
-geometric meanings; neither supplies a rational source.
+The reopened problem is now closed by the separate
+[September 14 full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md):
+the corrected genus-10 curve has no rational noncuspidal non-CM point.
+This page retains the exact counter-witness and surviving historical arithmetic;
+the model-157 formal branch and F017 corridor retain their local and geometric meanings.
 
 The [preserved note and ledgers](../archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json)
 record the pre-correction claims. The original arithmetic producer and its
 certificate are unchanged. Their old K3-obstruction status label is historical,
 not a current arithmetic exclusion.
 
-<!-- status-consumer: EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS c318a7d819b28d32 -->
+<!-- status-consumer: EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS 1bf732bcc5b4f830 -->
 
 ## Exact counter-witness to the group containment
 
@@ -45,7 +47,7 @@ cone hypothesis, is [Bragg–Brakkee–Várilly-Alvarado, Theorem 5.6](https://a
 The discriminant-kernel condition extends `R` by the identity on NS across the
 unimodular K3 gluing. A full NS marking therefore does not justify discarding
 this determinant-minus-one isometry. These are complex period statements;
-the arithmetic descent of the corrected curve still requires justification.
+the arithmetic descent is supplied in the September 14 proof.
 
 In the original split Clifford embedding, multiplication by the central
 volume element identifies `T_Q` with the trace-zero matrices
@@ -95,12 +97,15 @@ that Cartan contains `+/-I`. Hence neither point lifts to the stated Cartan
 fibre product. The fibre product has no noncuspidal rational point.
 
 That valid modular-curve obstruction is conditional input for any application
-that separately proves the required rational lift. It no longer closes the
-NS0031 rational-marking question. [Elkies, Section 2](https://arxiv.org/pdf/0802.1301v1)
+that separately proves the required rational lift. It cannot by itself close
+the NS0031 rational-marking question; the September 14 proof uses a different
+quotient argument. [Elkies, Section 2](https://arxiv.org/pdf/0802.1301v1)
 already distinguishes norm-one groups, normalizer quotients and arithmetic
 twists; replacing one with another needs an explicit proof.
 
-## Replay and remaining gate
+<a id="replay-and-remaining-gate"></a>
+
+## Retained replays and completed gate
 
 The [counter-witness](../artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json)
 and [standard-library verifier](scripts/verify_ns0031_period_group.py) check
@@ -122,8 +127,10 @@ Original certificate SHA-256:
 Original projection SHA-256:
 `f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e`.
 
-The next proof gate is to determine the full stable projective period group,
-its correct model over QQ and its rational non-CM points, or supply another
-exact arithmetic obstruction. Neither an empty norm-one cover nor the known
-formal local branch decides this. NS0031 is an unresolved research row;
-no equation or foundry campaign is authorized by this correction.
+The former next gate is complete: the full group is the norm-one group
+extended by the displayed reflection, and the correct Q-curve has genus ten.
+Its degree-four map to `v^2=u^6-4*u^4+4`, together with a complete
+twelve-point rational-locus calculation, supplies the corrected exclusion.
+See the [canonical proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+and the [preserved reopened state](../archive/elkies-k3/ns0031-reopened-marking-2026-09-14/REVIEW.json).
+The original finite arithmetic replay alone still cannot decide a K3 marking.

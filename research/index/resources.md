@@ -6,7 +6,7 @@ These maintained JSON ledgers contain process lessons, support gates and curve e
 
 | Source | Records | SHA-256 |
 |---|---:|---|
-| [elkies_k3_process_ledger.json](../elkies-k3/data/process/elkies_k3_process_ledger.json) | 185 | `33ba236129d2d439fc4b14b7cfbeb90318b42f683fdb9abcbe7da89f74106826` |
+| [elkies_k3_process_ledger.json](../elkies-k3/data/process/elkies_k3_process_ledger.json) | 185 | `561fb2d74ab2274e0b060b503c39408d33d426c8a6ceee7c276dfa61534fbb27` |
 | [database.json](../elliptic-curves/data/research_curves/database.json) | 491 | `aad55254ca81ecd5676ef6906ee56f30a67a426e3597954ee6e64beb2804bd71` |
 
 Available records: 491 curve, 75 event, 7 literature, 24 mechanism, 42 stage, 37 transition.

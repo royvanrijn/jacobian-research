@@ -1,0 +1,5 @@
+{
+  "status": "FAILED_OPAQUE_PREPARATION_HASH_RECONSTRUCTION",
+  "reason": "The worker prepared_sha256 includes transient CPU timing. CPU chart receipts retain exact feature vectors and the selected mapping but not the complete timed preparation object. Replay must verify those retained arithmetic fields directly; the original hash is preserved and is not retagged.",
+  "source_sha256": "7520a373f97699cd1c411bb13bb87a7aacea452052197be25ce131c9731b9110"
+}

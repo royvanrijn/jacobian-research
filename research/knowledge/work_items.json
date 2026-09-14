@@ -327,7 +327,7 @@
       "id": "WORK-EC-NEXT",
       "kind": "research",
       "area": "elliptic-curves",
-      "title": "Resolve measured preparation and height-bound slack before another model benchmark",
+      "title": "Choose a new recovery criterion after the cancellation-policy validation",
       "target": "OP-EC-NEXT",
       "claims": [
         "OP-EC-NEXT",
@@ -335,7 +335,10 @@
         "EC-X948-EIGHT-A1-ADMISSIONS-20260913",
         "EC-POINTED-HEIGHT-PORTFOLIO-20260913",
         "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913",
-        "EC-HEIGHT-PORTFOLIO-COST-20260914"
+        "EC-HEIGHT-PORTFOLIO-COST-20260914",
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914",
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914",
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914"
       ],
       "sources": [
         "elliptic-curves/README.md",
@@ -344,11 +347,13 @@
         "elliptic-curves/notes/X948_FIBRATION_SEED_FOUNDRY_2026-09-13.md",
         "elliptic-curves/notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md",
         "elliptic-curves/notes/HEIGHT_MODEL_NEXT_DIRECTION_BENCHMARK_2026-09-13.md",
-        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md"
+        "elliptic-curves/notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md",
+        "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md",
+        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md"
       ],
-      "next_step": "The nine-arm cold comparison is sealed and stopped: three certified baseline gains and six support-preparation timeouts before search. Twelve post-seal target coordinates reveal dominant finite-cancellation slack. A finite postprocessor now optimizes unequal boxes on the already certified three-model first chart, with an independently replayed 0.573942907264 address-proxy ratio to its best single. This supplies no measured model prices or runtime result. Review the preparation policy and pointwise slack before freezing any changed implementation and target-blind cost calibration for another complete-cost comparison. The same-prime case remains outside the original joint formula. No benchmark restart, increased allowance, production search, class-constructor or ancestry lane is scheduled. Independently sourced cross-curve targets remain necessary before transfer claims.",
+      "next_step": "The clean 41-curve q-only/full-cancellation comparison is complete and fails every declared gate. Retain factor-free V3; do not promote either fitted successor or extend the completed controls. The Hessian/derivative identity and fixed gcd squareclass are reusable. Any next experiment needs a new target-blind objective tied to actual independent-direction recovery and separately frozen controls; the realized cancellation law does not supply new points. No C/L optimization or stopped production campaign is restarted.",
       "done_when": "A declared candidate-generation route produces independently certified useful rank gains toward32. The completed history analysis and improved seed discrimination alone do not complete the rank32 goal.",
-      "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21.",
+      "prerequisites": "The4482-record/33-cohort history export and independent data accounting pass. The completed broad run supplies839 seeds,494 later-call amplifiers and five deep amplifiers among2080 fibres. Smaller-model deep-gain associations in older R17 cohorts weaken in whole-family-held-out forward cohort transfer: logistic5/18 versus11/42, tree6/18 versus10/42. No tested deep-amplifier rule passes the declared gate. Source checks are retained-evidence accounting, not a new elliptic arithmetic replay. Preserve the completed next-direction benchmark:2164 new calls on three rank27 curves, no gain, and one duplicate-only input. Eight exact new saturated generic MW16 admissions and both generic-only positive seed controls now pass; the detector is frozen as dual maps. Every fresh starting subgroup still needs its own rank certificate. The stopped X948 run records371 seeds from493 new-fibration jobs and49 baseline seeds from61 jobs. Forty-nine combined starting-subgroup certificates remain unresolved; no point/map timeout occurs among505 certified exposure outcomes. The strongest new seed has certified lower bound21. The finite-cancellation study joins all491 registry endpoints, replays75272 signed model coordinates and7.6 million residue leaves, and independently verifies all19 CPU-control gains. Retain the original measured gate failure and post-primary attribution labels. The clean successor independently checks all 82 starting/endpoint subgroups, 114 output gains and 1605 point calls. Full cancellation has 13.57 percent fewer recoveries per CPU than V3 on the declared roster; both fitted arms are slower on all 17 M24-M25 controls in aggregate. All original results and gate failures remain retained.",
       "compute": "none",
       "reviewed_claims": {
         "OP-EC-NEXT": "f36c4d02969820a7",
@@ -356,7 +361,10 @@
         "EC-X948-EIGHT-A1-ADMISSIONS-20260913": "a66cb19255346318",
         "EC-POINTED-HEIGHT-PORTFOLIO-20260913": "4699f2502d77d0e5",
         "EC-HEIGHT-MODEL-ACCESSIBILITY-20260913": "175492d551de96d4",
-        "EC-HEIGHT-PORTFOLIO-COST-20260914": "bab192a6e296a347"
+        "EC-HEIGHT-PORTFOLIO-COST-20260914": "bab192a6e296a347",
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914": "e09ffd3e81048fb2",
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914": "182b7126777106c4",
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914": "60e311232626b5b2"
       }
     },
     {
@@ -366,17 +374,20 @@
       "title": "Close an arithmetic marking gate before equation work",
       "target": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
       "claims": [
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ],
       "sources": [
-        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md"
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ],
-      "next_step": "Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate. For NS0031, determine the full stable projective period group and QQ model after the reflected determinant37 action invalidated the previous exclusion.",
+      "next_step": "Prioritize the characteristic-zero identification of the determinant-1236 branch orbit with the required Shimura orbit, or an explicit rational-marking witness for an unscreened candidate. NS0031 is closed by the corrected full stable genus-ten curve and exact genus-two rational locus; retain its proof rather than restarting equations.",
       "done_when": "An exact marked rational source or obstruction; a positive handoff must include full rational NS, primitive nef rootless U and seventeen saturated rational sections.",
       "prerequisites": "Local splitting, a coarse arithmetic quotient or a formal branch does not imply a fully marked rational K3. The stronger carrier/pullback objective remains additional.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6f5cc7d2daf2dfe2"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "f2dcfada11e6b5f2",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b"
       }
     },
     {
@@ -441,7 +452,7 @@
       "id": "WORK-PARTIAL-GATES",
       "kind": "maintenance",
       "area": "core",
-      "title": "Keep every partial result\u2019s first missing gate current",
+      "title": "Keep every partial result’s first missing gate current",
       "target": null,
       "claims": [],
       "sources": [
@@ -588,7 +599,7 @@
       "id": "WORK-K3-MARKING-REVIEW",
       "kind": "review",
       "area": "elkies-k3",
-      "title": "Retain the completed NS0031 theorem-input review and its correction",
+      "title": "Retain the completed NS0031 review and corrected arithmetic obstruction",
       "target": null,
       "claims": [
         "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
@@ -600,16 +611,17 @@
         "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
-        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json"
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ],
-      "next_step": "Completed at the September12 snapshot: retain the finite replay, the reviewed Velu/Dolgachev hypotheses and the stable-reflection counter-witness. Use WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17 for the separate unresolved full-period-curve and rational-marking mathematics; do not repeat this review as an unstarted task.",
-      "done_when": "The inherited review is complete with both external inputs inspected, the erroneous implication corrected in status and consumers, exact regression checks and preserved before evidence. Completion of review does not decide rational K3 existence.",
-      "prerequisites": "NS0031 returns as UNKNOWN; its local and geometric controls and valid norm-one arithmetic are retained. NS0024 retains its separate exclusion.",
+      "next_step": "Completed: retain the September12 counter-witness and the September14 full stable group, canonical Q quotient, and unconditional genus-two rational-point proof. The original norm-one argument stays invalid. This inherited review and its NS0031 follow-up are not unstarted work.",
+      "done_when": "The corrected proof and replay packet close full rational rank-19 marking existence negatively; the old proof, reopened state, local branch and geometric corridor are preserved.",
+      "prerequisites": "NS0031 is now excluded by its corrected full stable curve. No rational CM-lift classification or larger-field exclusion follows; other candidates retain their own arithmetic gates.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6f5cc7d2daf2dfe2",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "cf8720d3d8c90dac",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "c318a7d819b28d32"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "f2dcfada11e6b5f2",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "1bf732bcc5b4f830"
       }
     },
     {
@@ -834,7 +846,9 @@
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913",
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913",
-        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914"
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
       ],
       "sources": [
         "elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md",
@@ -843,21 +857,25 @@
         "elkies-k3/R17_SHARED_ORDINATE_TANGENT_GENUS_GATE_2026-09-13.md",
         "elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md",
         "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md",
-        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md"
+        "elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md",
+        "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
+        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md"
       ],
-      "next_step": "Solve a different shared-branch identity with the genus condition imposed coefficientwise. The new sufficient polynomial chart is x_i^3+A*x_i+B=d*r_i^2 for one squarefree quartic d, deg(x_i),deg(r_i)<=4, x_1!=x_2 and branch disjoint from the parent discriminant; any solution gives two independent height8 directions and arithmetic-genus5 images. It remains unsolved and is not a complete carrier family. Alternatively treat singular genus-two carriers through the retained genus-nine halving-locus theorems, including their exceptional charts and rational-normalization gates. Same-Mestre substitution on Q80, Curve302 MW17 and X1092 class1 is now closed for all rational u. Require an actual positive-rank genus-one base or rational parametrization before claiming the infinite family. No enumeration or rational-point campaign is scheduled.",
+      "next_step": "Solve the explicit15 degree/gcd factor systems from the common-quartic branch-stratum theorem against the fixed MW17 coefficients, using the nine proved coordinate patches to retain infinity and degree-drop cases. On Q80 omit the already excluded k=4 genus-one stratum; other genus-one strata require full cubic splitting over the branch factors outside gcd(D,h). A genus31 splitting-curve reformulation is only a necessary low-degree-divisor condition, not an exclusion. Retain the repeated-quartic genus0 cases g*d=e^2*q and the literal scalar. The remaining coefficient systems are unsolved. A positive endpoint must certify two independent gains and infinitely many rational points on the same quadratic base; a negative endpoint must include every stratum and boundary. No large search is scheduled.",
       "done_when": "Two exact independent sections modulo the inherited subgroup on one quadratic cover of the original parameter field, constructed without desired exceptional-point fitting, with a rational covering base or a certified positive-rank genus-one covering base and valid specialization hypotheses. A finite miss does not complete the objective.",
-      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization. The sharp Mestre cancellation gate now covers direct11952 Q80, Curve302 MW17 and X1092 class1 as well as R17. All four force twenty coefficient branch points for every rational auxiliary function. The genus-nine node-locus result is prior work, not a newly open rational parametrization problem. The different common-quartic chart and its height proof supply no actual cover yet.",
+      "prerequisites": "All 300 frozen smooth-pencil pairs and all 1,675 frozen one-node/smooth pairs are excluded over their complete rational parameter spaces. The explicit Mestre pair has height matrix diag(24,24), but genus21; its entire rational auxiliary-function family has genus at least9. Preserve the original degree-two requirement, exceptional-point quarantine, constant squareclasses and the distinction between a rational singular point and a rational point of the normalization. Other carrier identities and arithmetic sources remain open; different-NS equation work still requires its rational marking gate. The136 fixed shared-ordinate tangent pairs also force genus at least86. The earlier published-R17 finite carrier banks do not exhaust that parent's trace parities. The complete63917 direct11952 alternate-Q80 norm8/pole-order-zero pencils now have pairwise disjoint rational branch images, with within-pencil injectivity also certified. Other parent/layer combinations retain their exact untested scopes. The full49 norm12 pencils now extend this to every smooth genus-one bisection on alternate Q80 modulo inherited translation. The written nef/translation classification and98 independently verified new frames close all3133109 additional pairs. A genus-one quadratic solution there must include at least one singular image of arithmetic genus at least2; a rational singular point alone is not a rational point of its normalization. The sharp Mestre cancellation gate now covers direct11952 Q80, Curve302 MW17 and X1092 class1 as well as R17. All four force twenty coefficient branch points for every rational auxiliary function. The genus-nine node-locus result is prior work, not a newly open rational parametrization problem. The different common-quartic chart and its height proof supply no actual cover yet. The common-quartic controls close all section, height and rational-base gates on two newly constructed K3 equations, but their inherited ranks are UNKNOWN. They are not a transfer to MW17. The constant-x resultant theorem closes every algebraic constant abscissa on the four fixed parents; the remaining problem requires two nonconstant x_i and includes repeated-quartic genus0 boundaries. The new factor theorem closes the entire same-branch k=4 Q80 genus-one case by arithmetic descent, including singular original images. Its reduction uses inherited131 finite-field arithmetic and the completed smooth-genus-one theorem. It does not exclude the other14 factor allocations or a genus0 boundary. The preliminary root-curve index route has no global obstruction certificate.",
       "compute": "none",
       "reviewed_claims": {
-        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "7bb8a552af63846d",
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "cd905f58a016fa4d",
         "EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912": "09d547bac445f45e",
         "EC-K3-R17-ONE-NODE-COMPLETE-PAIR-EXCLUSION-20260912": "4b9b09c3641c6ff0",
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913": "394a3224c4e6752c",
         "EC-K3-R17-SHARED-ORDINATE-TANGENT-GENUS-GATE-20260913": "e866998a9843404c",
         "EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913": "c6033dabb5720a9e",
         "EC-K3-Q80-ALL-SMOOTH-GENUS1-BISECTION-INJECTIVITY-20260913": "fc154a11f9eb7b17",
-        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "e221270755762cdb"
+        "EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914": "e221270755762cdb",
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914": "e9acb2d9df07e242",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914": "605d58c3c4f7ca85"
       }
     },
     {

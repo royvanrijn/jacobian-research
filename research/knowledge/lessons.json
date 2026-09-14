@@ -32,7 +32,7 @@
       "id": "METHOD-SATURATION",
       "area": "core",
       "title": "Saturate the intended geometric open before elimination",
-      "when": "Collision ideals, Fitting modules, boundary components or resolved Riemann\u2013Roch modules.",
+      "when": "Collision ideals, Fitting modules, boundary components or resolved Riemann–Roch modules.",
       "use": "Identify the boundary and wrong-thickness factors, saturate by the required open, and retain a certificate of the resulting ideal or module.",
       "avoid": "Counting degenerate collision factors or imposing independent rows on conditions with resolution-graph syzygies.",
       "boundary": "Saturation changes the geometric locus. Every excluded factor and its interpretation must be explicit.",
@@ -125,9 +125,9 @@
       "area": "geometry",
       "title": "Distinguish pure-moment vanishing from SIC failure",
       "when": "A semistable point has a long or all-order zero pure-moment sequence.",
-      "use": "Test a fixed multiplier and its mixed tail, using an all-order identity when claiming failure. Preserve the Rodrigues point as a negative control for moment\u2013nullcone equality.",
+      "use": "Test a fixed multiplier and its mixed tail, using an all-order identity when claiming failure. Preserve the Rodrigues point as a negative control for moment–nullcone equality.",
       "avoid": "Treating semistability plus pure-zero moments as a mixed-moment counterexample.",
-      "boundary": "The bidegree-(3,3) Rodrigues orbit is SIC-safe despite falsifying moment\u2013nullcone equality. Dense bidegree-(3,3) classification remains open.",
+      "boundary": "The bidegree-(3,3) Rodrigues orbit is SIC-safe despite falsifying moment–nullcone equality. Dense bidegree-(3,3) classification remains open.",
       "reopen_when": "A new multiplier has an exact infinite nonzero tail, or a new all-order safety theorem applies.",
       "claims": [
         "OP-SIC2-MN",
@@ -368,16 +368,18 @@
       "when": "Selecting a different-NS rootless MW17 source over Q.",
       "use": "Start with T and the stable discriminant-kernel marked curve, including its exact rational-point and CM conditions; only then proceed to NS, rootlessness and equations. Keep point-existence data three-valued: null for unresolved or unscreened, false only for exact exclusion, true for an exact positive witness. Determinant1236 already has candidate fibre evaluations; only its branch-orbit identity is missing. Compute the full orthogonal discriminant kernel, including determinant-minus-one and normalizer cosets, before transferring a norm-one curve obstruction.",
       "avoid": "Treating a coarse norm-one point, geometric rank nineteen, modular solution or Hensel branch as a fully rational marking.",
-      "boundary": "NS0031 is UNKNOWN after its claimed norm-one containment was refuted; its valid Frobenius calculation excludes only that cover. Keep other determinant-specific results and the unresolved determinant-1236 descent at their exact scope. No equation handoff follows from UNKNOWN.",
+      "boundary": "NS0031 is excluded by the corrected full stable genus-ten curve and its genus-two quotient, with the missing reflection included. The original Frobenius test still excludes only the norm-one cover. Other determinant-specific results and the unresolved determinant-1236 descent retain their exact scope. No equation handoff follows from UNKNOWN.",
       "reopen_when": "A certified rational non-CM point on the required full marking curve passes the gate.",
       "claims": [
         "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
         "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ],
       "sources": [
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
         "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
       ],
       "implementation": [
@@ -392,10 +394,11 @@
         "marked curve"
       ],
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "6f5cc7d2daf2dfe2",
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "f2dcfada11e6b5f2",
         "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": "fecec75b4ff1e8e1",
-        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "169e60feb544bb29",
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "c318a7d819b28d32"
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "a7ad7d57e7812f1d",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "1bf732bcc5b4f830",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b"
       }
     },
     {
@@ -468,8 +471,8 @@
       "id": "METHOD-EC-POINTED-FACTOR-FREE",
       "area": "elliptic-curves",
       "title": "Construct integral pointed quartics without denominator factorization",
-      "when": "Searching from Q=(a/d\u00b2,b/d\u00b3) on an integral short curve.",
-      "use": "Compute k=-b/a modulo d\u00b2 by extended gcd, apply t=d*s+k/d, check every exact division and quartic invariant, then use the shared pointed-quartic API.",
+      "when": "Searching from Q=(a/d²,b/d³) on an integral short curve.",
+      "use": "Compute k=-b/a modulo d² by extended gcd, apply t=d*s+k/d, check every exact division and quartic invariant, then use the shared pointed-quartic API.",
       "avoid": "Making full factorization or global minimalization a prerequisite for raw point exposure.",
       "boundary": "The safe rational clearing scale may retain large coefficients and does not prove minimality. Both ordinate signs and slope infinity need exact transport checks.",
       "reopen_when": "The requested arithmetic endpoint actually requires a certified minimal model or factor support.",
@@ -763,9 +766,9 @@
       "area": "elliptic-curves",
       "title": "Prove generic geometry before a fixed-cubic deformation sweep",
       "when": "Varying the elliptic equation while preserving its cubic two-division field.",
-      "use": "Compute generic rank and the labelled Kummer transport first; distinguish inherited local classes, restricted Cassels\u2013Tate radicals and actual soluble coverings.",
-      "avoid": "Assuming fixed E[2] preserves the Mordell\u2013Weil group, or treating the forced radical of an odd alternating space as a point.",
-      "boundary": "The theta+u*theta\u00b2 pencil has arithmetic generic rank zero for its nonsquare B. Low-genus full fixed-cubic transfer is also obstructed in the tested K3 families.",
+      "use": "Compute generic rank and the labelled Kummer transport first; distinguish inherited local classes, restricted Cassels–Tate radicals and actual soluble coverings.",
+      "avoid": "Assuming fixed E[2] preserves the Mordell–Weil group, or treating the forced radical of an odd alternating space as a point.",
+      "boundary": "The theta+u*theta² pencil has arithmetic generic rank zero for its nonsquare B. Low-genus full fixed-cubic transfer is also obstructed in the tested K3 families.",
       "reopen_when": "The new deformation has a proved generic subgroup or an exact global solubility witness.",
       "claims": [],
       "sources": [
@@ -980,7 +983,7 @@
       "id": "METHOD-MARKED-ROOT-COMPILER",
       "area": "core",
       "title": "Keep the root presentation separate from the intrinsic normalization",
-      "when": "Reusing the Keller incidence or finite-\u00e9tale fibre compiler.",
+      "when": "Reusing the Keller incidence or finite-étale fibre compiler.",
       "use": "Retain the finite normalization, affine reconstruction open and omitted boundary as separate objects. Check the exact inverse identities and scheme-theoretic fibre, then use the canonical boundary invariant for comparisons.",
       "avoid": "Treating the chosen primitive polynomial presentation as the invariant, or assuming a construction descends through every change of primitive generator.",
       "boundary": "The generic Tschirnhaus non-descent result concerns the named quadratic-gauge compiler; it does not supply a global minimum for every Keller construction.",
@@ -1013,7 +1016,7 @@
       "area": "core",
       "title": "Prove polynomiality and the determinant balance together",
       "when": "Constructing a boundary-cancelled or weighted suspension.",
-      "use": "Use an explicit source\u2013core\u2013target valuation ledger, record divisibility at each boundary and verify the complete determinant product.",
+      "use": "Use an explicit source–core–target valuation ledger, record divisibility at each boundary and verify the complete determinant product.",
       "avoid": "Treating formal pole cancellation or a rational coordinate identity as proof of a polynomial Keller map.",
       "boundary": "The chosen reconstruction open and divisor multiplicities are part of the construction. A relative or marked invariant is not automatically an unrestricted stable invariant.",
       "reopen_when": "A different ansatz supplies its own polynomiality and boundary-exhaustion certificates.",
@@ -1092,7 +1095,7 @@
       "when": "Proposing a runtime improvement or comparing two research runners.",
       "use": "Separate worker startup, map construction, landscape/CVP, admission, point search and replay. Use retained ordered receipts and compare like inputs and verification work.",
       "avoid": "Reporting a component speedup as a whole-run improvement, or calling inherited landscape verification equivalent work to rebuilding it.",
-      "boundary": "In the seven recorded future-V3 searches, point work accounts for roughly84\u201388% of wall time; eliminating all other work only yields the stated roughly1.14\u20131.18x ceiling with point time fixed. Curve52's bounded100-invocation pass took110.055 seconds while its independent full-landscape replay took117.552 seconds, so a shorter search is not necessarily cheaper to verify. These observations are not forecasts for other runs.",
+      "boundary": "In the seven recorded future-V3 searches, point work accounts for roughly84–88% of wall time; eliminating all other work only yields the stated roughly1.14–1.18x ceiling with point time fixed. Curve52's bounded100-invocation pass took110.055 seconds while its independent full-landscape replay took117.552 seconds, so a shorter search is not necessarily cheaper to verify. These observations are not forecasts for other runs.",
       "reopen_when": "A new profile identifies a different bottleneck or a controlled comparison measures a changed component.",
       "claims": [],
       "sources": [
@@ -1372,7 +1375,7 @@
       "when": "Clearing Laurent denominators in the invariant-affine principal LND families.",
       "use": "Pass to the associated graded ring for the relevant prime valuation. The lowest negative face carries the required power of the carrier. Apply pure vanishing at growing moment orders to force positive valuation, which eventually clears every fixed multiplier denominator.",
       "avoid": "Claiming carrier divisibility for every negative Laurent coefficient: u^2*y^3 contains the coefficient w^3/u in the rational-root chart, which is not divisible by q1-w.",
-      "boundary": "Theorems 6.8\u20136.16 use lowest faces and explicitly controlled denominator losses in the model LND. The stronger coefficientwise statement is false and cannot be used as a shortcut.",
+      "boundary": "Theorems 6.8–6.16 use lowest faces and explicitly controlled denominator losses in the model LND. The stronger coefficientwise statement is false and cannot be used as a shortcut.",
       "reopen_when": "A new carrier has a proved associated-graded divisibility statement and a compatible denominator bound.",
       "claims": [
         "LND-RRL",
@@ -1436,7 +1439,7 @@
       "area": "geometry",
       "title": "Reuse the finite Rees atlas and finish the surface ledger",
       "when": "Continuing the quartic weighted graph normalization or Hilbert-polynomial calculation.",
-      "use": "Start from the three completed side point bases, eight-cone corner atlas and exact side-to-corner packet matches. The next finite calculation records divisor classes, Rees multiplicities, polarization restrictions and normal-bundle degrees of the center curves; apply centerwise Riemann\u2013Roch and the existing endpoint conductor corrections before one global pushout.",
+      "use": "Start from the three completed side point bases, eight-cone corner atlas and exact side-to-corner packet matches. The next finite calculation records divisor classes, Rees multiplicities, polarization restrictions and normal-bundle degrees of the center curves; apply centerwise Riemann–Roch and the existing endpoint conductor corrections before one global pushout.",
       "avoid": "Repeating ambient normalI runs that produced no certificate, redoing the completed local principalizations, or equating matching conductor colengths with equality of quotient sheaves.",
       "boundary": "The modular graph multidegree and two unknown coefficients alpha/beta remain a calibration. Local normalization and a finite-model Euler-characteristic formula do not prove global normalization, flatness or equinormalization.",
       "reopen_when": "The actual missing surface-intersection or gluing data are supplied, or a changed model invalidates the existing atlas.",
@@ -3327,16 +3330,18 @@
       "when": "An overdetermined marked Weierstrass system has a unit maximal Jacobian minor.",
       "use": "Use the exact node/discriminant identity and prescribed jet orders to show all omitted residuals follow on the unit chart; then apply the formal implicit-function theorem. Preserve the source-shard identity and required mutual section intersections.",
       "avoid": "Treating tangent dimension one or a lift to7^8 as an infinite compatible branch, treating the branch as a QQ point, or identifying a displayed subgroup with its primitive closure.",
-      "boundary": "NS0031 has a formal local branch but its full rational marking remains UNKNOWN after correction of the period-group argument. Determinant500/720 rational reconstructions saturate to the wrong determinant20 lattice.",
-      "reopen_when": "An exact global rational marking passes the full stable marked-curve gate; extending the completed local box alone does not do so.",
+      "boundary": "NS0031 has a formal local branch but a full rational rank-19 marking is excluded by the separate corrected full stable quotient proof. Determinant500/720 rational reconstructions saturate to the wrong determinant20 lattice.",
+      "reopen_when": "A different candidate or field passes its exact global rational-marking gate. Extending the completed NS0031 local box cannot reopen the excluded full rational rank-19 source over Q.",
       "claims": [
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
         "EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN",
-        "EC-K3-NS0031-MARKED-FORMAL-BRANCH"
+        "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ],
       "sources": [
         "elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md",
-        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md"
+        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ],
       "implementation": [
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_formal_smoothness.sage"
@@ -3351,7 +3356,8 @@
       "reviewed_claims": {
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR": "2e115b35c30a8cea",
         "EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN": "ca678e520745dd3c",
-        "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "b31e99bce4edac0a"
+        "EC-K3-NS0031-MARKED-FORMAL-BRANCH": "b31e99bce4edac0a",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b"
       }
     },
     {
@@ -3446,10 +3452,10 @@
     {
       "id": "METHOD-EC-CASSELS-TATE-COMPLETENESS",
       "area": "elliptic-curves",
-      "title": "Use the full Cassels\u2013Tate ambient space before claiming a rank upper bound",
+      "title": "Use the full Cassels–Tate ambient space before claiming a rank upper bound",
       "when": "Interpreting a residual pairing matrix or selecting soluble and insoluble descent controls.",
-      "use": "Certify actual Selmer membership and the Cassels\u2013Tate construction, then distinguish the complete matrix from a restriction. A complete residual matrix of dimension s and rank 2a gives rank(E)<=r+s-2a-epsilon_M. A restricted matrix only constrains known points inside that subspace.",
-      "avoid": "Using arbitrary Hilbert-symbol tensors as Cassels\u2013Tate, treating a zero pairing or an isotropic subspace as a solubility certificate, or using a locally insoluble ambient squareclass as an insoluble Selmer control.",
+      "use": "Certify actual Selmer membership and the Cassels–Tate construction, then distinguish the complete matrix from a restriction. A complete residual matrix of dimension s and rank 2a gives rank(E)<=r+s-2a-epsilon_M. A restricted matrix only constrains known points inside that subspace.",
+      "avoid": "Using arbitrary Hilbert-symbol tensors as Cassels–Tate, treating a zero pairing or an isotropic subspace as a solubility certificate, or using a locally insoluble ambient squareclass as an insoluble Selmer control.",
       "boundary": "The residual radical modulo the full point space is 2Sha[4]; finiteness of Sha alone does not remove it. Known point classes pair to zero with all Selmer classes, so a point-only panel says nothing about the unknown complementary matrix.",
       "reopen_when": "An actual complete residual Selmer space, certified pairing entries or a new global covering witness is available.",
       "claims": [
@@ -3543,13 +3549,14 @@
       "when": "A finite arithmetic witness reads large historical catalogues or optional local caches.",
       "use": "Extract the actual fields read by the checker, retaining unique row selectors and hashes of the original inputs and primary certificate. Provide a read-only verifier with a separate optional provenance audit. NS0031 uses eleven fields in 2771 bytes plus its 5575-byte certificate for the Clifford, 304-coset and prime19 computations.",
       "avoid": "Regenerating a missing catalogue to replay a small witness, accepting a projection with an ambiguous selector, or importing the original producer as the supposed independent implementation.",
-      "boundary": "The projection preserves the selected data, not an independent proof of the source catalogue. The finite NS0031 replay does not prove the arithmetic K3 period map, global X0(37) rational-point classification, minimality or the rational37-isogenies. Optimized Python must fail before assertions can be skipped. The separate period-group review has now refuted the old containment; a finite arithmetic PASS cannot restore the K3 exclusion.",
-      "reopen_when": "The claim, required fields or source identities change, or the separate arithmetic period-map input receives a precise proof.",
+      "boundary": "The projection preserves the selected data, not an independent proof of the source catalogue. The finite NS0031 replay does not prove the arithmetic K3 period map, global X0(37) rational-point classification, minimality or the rational37-isogenies. Optimized Python must fail before assertions can be skipped. The separate period-group review has now refuted the old containment; a finite arithmetic PASS cannot restore the K3 exclusion. The September14 exclusion instead uses a new full-stable group/model certificate and a separately retained unconditional Magma proof; the original finite PASS is not that proof.",
+      "reopen_when": "The finite claim, required fields or source identities change. A new arithmetic theorem needs its own proof and replay; repeating the old finite check cannot repair the invalid norm-one containment.",
       "claims": [
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ],
       "sources": [
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#replay-and-remaining-gate"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md#retained-replays-and-completed-gate",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ],
       "implementation": [
         "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
@@ -3568,7 +3575,7 @@
         "assertions"
       ],
       "reviewed_claims": {
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "cf8720d3d8c90dac"
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b"
       }
     },
     {
@@ -3798,22 +3805,25 @@
       "area": "elkies-k3",
       "title": "Check every stable orthogonal component before using a norm-one obstruction",
       "when": "A K3 rational-marking exclusion is transferred from a split Clifford norm-one modular curve.",
-      "use": "Start with the literal lattice, exhibit integral isometries and compute their discriminant action and positive-plane orientation. Check their projective Clifford representatives up to rational scalar. NS0031 has a -2 reflection with trivial discriminant action and determinant37 spin representative; preserving a full NS marking retains this action. Keep the surviving genus23 and Frobenius results in the planner as coarse diagnostics, with the exact remaining group/descent gate.",
+      "use": "Start with the literal lattice and its unique even overlattice to bound the whole projective normalizer. Compute both discriminant signs and every determinant unit in the local GL level, then identify the canonical Q quotient, including the common minus sign from determinant-minus-one orthogonal isometries. For NS0031 this gives Gamma union W_37 Gamma and (X_ns(4) x_X(1) X_0(37))/<w_37 w_ns,4>, genus ten. Reduce Cartan level to obtain a genus-two quotient, certify its differentials and model by a Sturm bound, then determine rational points using full-MW elliptic Chabauty. Pin the elliptic target sign and cusp before applying CM coordinates.",
       "avoid": "Dropping determinant-minus-one isometries, assuming a rational norm-one subgroup is the whole period group, or deducing that a quotient has no rational points because its cover has none. Also avoid replacing a later exact coarse result with an older UNKNOWN catalogue field when rebuilding a queue.",
-      "boundary": "The counter-witness refutes the recorded containment and its induced map only. It neither constructs a rational NS0031 K3 nor decides its nonexistence by another proof. Other lattices require their own full-group audit.",
-      "reopen_when": "The actual full stable projective group, its QQ descent and required rational non-CM locus are certified, or another exact obstruction is supplied.",
+      "boundary": "The reflection alone refutes the old containment. The completed NS0031 argument separately proves an empty rational noncuspidal non-CM locus; it does not classify rational CM lifts, larger fields, or other lattices. Chabauty at prime5 alone left unresolved cosets; auxiliary primes closed both exact rank-one cases only after full Mordell-Weil groups and their index obligations were proved. Classical Chabauty at rank equal to genus and bounded point searches supply no substitute.",
+      "reopen_when": "A different lattice, field or weaker marking changes the arithmetic problem, or a specific defect is found in the full normalizer, canonical descent, quotient identity or exact Chabauty certificate. The original norm-one-containment argument stays invalid.",
       "claims": [
         "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY"
       ],
       "sources": [
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
         "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
       ],
       "implementation": [
         "elkies-k3/scripts/verify_ns0031_period_group.py",
         "tests/test_research_ns0031_period_group.py",
-        "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py"
+        "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+        "elkies-k3/scripts/certify_ns0031_stable_marking.sage",
+        "elkies-k3/scripts/certify_ns0031_genus2_rational_points.m"
       ],
       "keywords": [
         "NS0031",
@@ -3825,12 +3835,15 @@
         "norm one",
         "period map",
         "quotient",
-        "UNKNOWN"
+        "canonical model",
+        "elliptic Chabauty",
+        "determinant units",
+        "CM sign"
       ],
       "reviewed_claims": {
-        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "c318a7d819b28d32",
-        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "cf8720d3d8c90dac",
-        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "169e60feb544bb29"
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "1bf732bcc5b4f830",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "71290f86a475074b",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "a7ad7d57e7812f1d"
       }
     },
     {
@@ -4046,7 +4059,7 @@
       "when": "Applying a multi-section quadratic-twist identity to a moving high-rank elliptic parent whose coefficients have large irreducible divisors.",
       "use": "Verify the exact section identities and calculate their heights on the pulled-back surface. Then examine valuations at coefficient divisors before a parameter search. Prove cyclotomic-residue exclusions with irreducible finite reductions and simple local degree-one places; this can force branch points for every rational auxiliary function, including arbitrary zeros and poles. Use the sharp local criterion: an A divisor is removable for some u precisely with i or a primitive cube root in its residue field; a B divisor requires i. Contact orders matter even when the residue is permitted. Impose the remaining global polynomial as a square times one literal squarefree branch polynomial, with infinity and constant squareclasses retained.",
       "avoid": "Transferring a constant-parent twist theorem's independence statement to a moving parent without a height proof, counting a genus-greater-than-one base as an infinite specialization source, or trying a larger auxiliary-function box after an unbounded valuation obstruction.",
-      "boundary": "On published R17, alternate Q80 direct11952, Curve302 MW17 and X1092 class1, u=2 gives two independent directions with Gram diag(24,24) on genus21 covers. Every rational auxiliary function in this Mestre identity retains the degree8 A and degree12 B divisors, hence genus at least9. The three additional parent equations have independent portable local and height replays. A separate common-quartic polynomial system would give independent height8 sections with arithmetic-genus5 images if solved; no solution or positive rational base is known.",
+      "boundary": "On published R17, alternate Q80 direct11952, Curve302 MW17 and X1092 class1, u=2 gives two independent directions with Gram diag(24,24) on genus21 covers. Every rational auxiliary function in this Mestre identity retains the degree8 A and degree12 B divisors, hence genus at least9. The three additional parent equations have independent portable local and height replays. A separate common-quartic polynomial system would give independent height8 sections with arithmetic-genus5 images if solved; no solution or positive rational base is known on those four MW17 parents.",
       "reopen_when": "A different carrier identity solves a shared-squarefactor equation with branch degree at most4, or an untested parent passes the coefficient-divisor criterion. Repeating the same Mestre auxiliary search on any of the four certified parents cannot meet the base condition. For genus-two nodes, reuse the existing genus-nine halving-locus theorems and preserve their exceptional-chart boundary.",
       "claims": [
         "EC-K3-R17-MESTRE-TWO-GAINS-GENUS-OBSTRUCTION-20260913",
@@ -4144,7 +4157,7 @@
         "historical inputs"
       ],
       "reviewed_claims": {
-        "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP": "582b0c9d781037fb"
+        "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP": "06c6fe2e29815616"
       }
     },
     {
@@ -5358,6 +5371,149 @@
         "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908": "ef3e60a89e5b3033"
       },
       "area": "elliptic-curves"
+    },
+    {
+      "id": "METHOD-K3-COMMON-QUARTIC-SINGULARITY-LOCUS",
+      "area": "elkies-k3",
+      "title": "Count normalization delta with infinity and keep the high-rank parent fixed",
+      "when": "Forcing two polynomial trace-zero bisections of arithmetic genus5 to share a quadratic cover of genus0 or1.",
+      "use": "Write F=x^3+A*x+B and its jet conditions. At a root of multiplicity m use delta=floor(m/2), and include the missing multiplicity at infinity in the degree12 binary form. Impose one literal D in both identities. Extract repeated factors D=e^2*d before deciding the genus: residual degree2 gives a possible genus0 boundary. Reuse the height8 independence criterion when the branch avoids the parent discriminant. For a fixed constant-abscissa line, the degree33 critical-point polynomial and critical-value norm can certify its entire singularity locus by exact interpolation and a good-prime squarefreeness witness. For the complete coefficient chart, factor the difference identity with g=gcd(D,h), u=gcd(h/g,r1-r2) and v=(h/g)/u after monic normalization. Keep all15 degree allocations and nine good coordinate patches; the squarefree height cross term is4-k-2*j. On Q80 use unramified Kummer descent to eliminate the complete k=4 genus-one case before any elimination.",
+      "avoid": "Treating a zero discriminant or a bounded coefficient miss as a four-node or full-family theorem; rejecting every repeated quartic as unusable; losing constant squareclasses or infinity; or solving for new A,B and claiming to have kept an inherited MW17 parent. Equal branch-root choices can force halving only after proving the everywhere-unramified class is inherited. An inherited mod2 class alone does not make the underlying point inherited. A high-genus splitting curve does not exclude its low-degree closed points. Initial bad-prime reductions without simple roots can acquire local points after base/x coordinate changes.",
+      "boundary": "Two explicit new24I1 K3 controls have genus0/1 infinite rational bases and two independent anti-invariant directions with Gram[[8,-4],[-4,8]]. Their inherited ranks are UNKNOWN. On published R17, alternate Q80, recovered Curve302 and X1092 class1 every algebraic constant x has normalization genus at least4. This does not exclude nonconstant quartic x(t), all shared-branch constructions or a fixed-parent singular quartic boundary. The entire same-branch k=4 genus-one stratum is now excluded on Q80, including nonordinary image contacts. Other strata require explicit arithmetic work; repeated D does not have the same k-as-branch-count interpretation. The15-case coefficient presentation and nine-patch coverage are complete, but none of their remaining fixed-parent systems is declared empty.",
+      "reopen_when": "An admissible solution in a remaining factor stratum is certified on a fixed high-rank parent with an infinite rational base, or a full exclusion covers all surviving strata and the repeated-quartic boundary. Revisit an index obstruction only with a new local or global proof; a bad initial reduction is insufficient.",
+      "claims": [
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914"
+      ],
+      "sources": [
+        "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
+        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_common_quartic_singularity_locus.sage",
+        "elkies-k3/scripts/verify_common_quartic_singularity_locus.py",
+        "tests/test_common_quartic_singularity_locus.py",
+        "elkies-k3/scripts/verify_common_quartic_branch_strata.sage"
+      ],
+      "keywords": [
+        "common quartic",
+        "correlated gains",
+        "singularity locus",
+        "delta invariant",
+        "genus zero",
+        "genus one",
+        "critical value norm",
+        "constant abscissa",
+        "fixed parent",
+        "repeated branch factors",
+        "branch strata",
+        "unramified Kummer",
+        "same branch",
+        "genus31 splitting curve"
+      ],
+      "reviewed_claims": {
+        "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914": "e9acb2d9df07e242",
+        "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914": "605d58c3c4f7ca85"
+      }
+    },
+    {
+      "id": "METHOD-EC-FINITE-CANCELLATION-RESIDUE-PREDICTION",
+      "area": "elliptic-curves",
+      "title": "Predict realized cancellation through q-conditioned residue states and test complete CPU cost",
+      "when": "Comparing equivalent pointed quartics as finite search boxes before a target point is known.",
+      "use": "Normalize N,D jointly. Use H^4=Hx*g/S and the exact neighbour law g_new/g_old=p^(4delta-e). Compute residue masses and cancellation expectations using only N,D,q; compare uniform soluble and differential-weighted p^(v(q)/2) reference measures. Withhold whole j groups and families, isolate q-only attribution, then freeze real point-search controls with all model preparation charged. Keep a strict threshold exact when a measured result narrowly misses it.",
+      "avoid": "Rewarding absolute gcd size without the real factor, treating uniform soluble slopes as the local elliptic distribution, leaking winning centres or held-out points into selection, counting signs/anchors as independent curves, equating H-squared with CPU, or rounding9.987859 percent into a passed10 percent gate. Do not hash timing into the only reconstructible arithmetic witness.",
+      "boundary": "6285 retained exceptional-point observations and75272 exact model evaluations show a predictive signal. Full finite features give an11.25 percent held-out H-squared improvement beyond real features; post-primary q ablation leaves3.08 percent for gcd expectations. The12-curve control obtains10 versus9 next-direction recoveries in180.488 versus200.515 CPU seconds, but misses the strict10 percent gate. The default remains factor-free; no high-rank or population transfer is proved.",
+      "reopen_when": "An independently frozen validation on additional or deeper subgroups tests the unchanged candidate with complete costs; no automatic search expansion or outcome-based retuning.",
+      "claims": [
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914"
+      ],
+      "sources": [
+        "elliptic-curves/notes/FINITE_CANCELLATION_PREDICTOR_2026-09-14.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/finite_cancellation_features.py",
+        "elliptic-curves/cas/finite_cancellation_neighbour_states.py",
+        "elliptic-curves/cas/lean_finite_cancellation_pari_mapping.sage",
+        "elliptic-curves/cas/verify_finite_cancellation_cpu.sage"
+      ],
+      "keywords": [
+        "finite cancellation",
+        "residue balls",
+        "withheld points",
+        "model selection",
+        "factor-free V3",
+        "CPU benchmark"
+      ],
+      "reviewed_claims": {
+        "EC-FINITE-CANCELLATION-PREDICTOR-20260914": "e09ffd3e81048fb2"
+      }
+    },
+    {
+      "id": "METHOD-EC-HESSIAN-CANCELLATION",
+      "area": "elliptic-curves",
+      "title": "Compute pointed cancellation through the quartic Hessian and derivative valuations",
+      "when": "Interpreting cancellation in jointly primitive pointed-quartic maps before a target is known.",
+      "use": "Recover the scaled Hessian numerator and its common coefficient content h. At primes away from 6 alpha beta, use min(v_p(q),2 v_p(qprime))-v_p(h) in the appropriate projective chart. On integral short curves h*g has fixed squareclass at every rational point in the finite patch.",
+      "avoid": "Treating the gcd squareclass as new-point information, dropping the content correction or exceptional primes, or assuming a local multiple-root ball contains an independent rational point.",
+      "boundary": "Universal algebra plus 11741 exact model reconstructions, 75272 full gcd and squareclass checks and 677448 derivative checks. No claim about magnitude, CPU speed or new rank.",
+      "reopen_when": "A separately justified derivative-based implementation or new-direction criterion needs these identities; no automatic policy replacement or search.",
+      "claims": [
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914"
+      ],
+      "sources": [
+        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/verify_pointed_cancellation_hessian.sage"
+      ],
+      "keywords": [
+        "Hessian",
+        "finite cancellation",
+        "gcd squareclass",
+        "derivative",
+        "q-only"
+      ],
+      "reviewed_claims": {
+        "EC-POINTED-CANCELLATION-HESSIAN-20260914": "182b7126777106c4"
+      }
+    },
+    {
+      "id": "METHOD-EC-CLEAN-Q-CANCELLATION-VALIDATION",
+      "area": "elliptic-curves",
+      "title": "Separate q-only features from gcd-dependent refinement and validate actual recoveries",
+      "when": "Attributing a model-selector improvement to finite cancellation or transferring generic-anchor height gains to deeper subgroups.",
+      "use": "Build a q-only tree with no N,D inputs, then refine soluble leaves separately for gcd information. Keep common features identical, exclude whole j groups from fitting, freeze CPU arms and count certified next directions with all preparation charged. Preserve misses and separately report literal representatives.",
+      "avoid": "Calling an ablation q-only when its censoring depends on gcd constancy, using literal H-squared as a substitute for recovery/CPU, or repairing a failed policy by timing repeats or larger allowances on the same controls.",
+      "boundary": "The frozen 41-curve successor recovers 39/38/37 directions for V3/q-only/full in 401.20/382.27/440.39 CPU seconds. All gates fail; full cancellation has a conditional recovery/CPU interval below parity. All M24-M25 controls recover under all arms, with both fitted arms slower. The earlier V1 observation is preserved.",
+      "reopen_when": "A new target-blind objective addresses actual independent-direction recovery with independently frozen validation. Cheaper feature evaluation alone cannot repair the missed directions in these completed banks.",
+      "claims": [
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914"
+      ],
+      "sources": [
+        "elliptic-curves/notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md"
+      ],
+      "implementation": [
+        "elliptic-curves/cas/finite_cancellation_validation_audit.py",
+        "elliptic-curves/cas/finite_cancellation_validation_features.py",
+        "elliptic-curves/cas/finite_cancellation_validation_prepare.py",
+        "elliptic-curves/cas/finite_cancellation_validation_cpu.py",
+        "elliptic-curves/cas/run_finite_cancellation_validation.py",
+        "elliptic-curves/cas/finite_cancellation_validation_replay.py",
+        "elliptic-curves/cas/verify_finite_cancellation_validation.sage",
+        "elliptic-curves/cas/report_finite_cancellation_validation.py"
+      ],
+      "keywords": [
+        "q-only",
+        "finite cancellation",
+        "withheld curves",
+        "negative CPU result",
+        "M24",
+        "M25"
+      ],
+      "reviewed_claims": {
+        "EC-FINITE-CANCELLATION-VALIDATION-20260914": "60e311232626b5b2"
+      }
     }
   ]
 }

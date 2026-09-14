@@ -14,7 +14,8 @@ from research_runtime.store import checkpoint
 
 CAS = Path(__file__).resolve().parent
 MAPPERS = {'preconditioned_full': 'lean_preconditioned_full_pari_mapping.sage',
-           'factor_free': 'lean_factor_free_pari_mapping.sage'}
+           'factor_free': 'lean_factor_free_pari_mapping.sage',
+           'finite_cancellation': 'lean_finite_cancellation_pari_mapping.sage'}
 
 
 def run(input_path, output):

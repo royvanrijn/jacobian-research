@@ -25,6 +25,9 @@ The live objective has moved to
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md),
 where determinant-1184 `NS0031` was the next working class because it had the
 strongest exact source precursor. Its later split-Clifford/`X_0(37)` exclusion
-used an invalid period-group containment. NS0031 is `UNKNOWN` after the
-[September 12 correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md);
+used an invalid period-group containment. The separate
+[September 14 full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+now excludes a full rational rank-19 NS0031 marking;
 the remaining frames require the full rational-marking gate.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

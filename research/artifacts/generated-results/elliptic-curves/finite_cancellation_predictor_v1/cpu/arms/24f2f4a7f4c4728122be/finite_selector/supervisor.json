@@ -1,0 +1,22 @@
+{
+  "arm": "finite_selector",
+  "case": "24f2f4a7f4c4728122be",
+  "charged_cpu_seconds": 36.672279,
+  "command": [
+    "sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/finite_cancellation_cpu.py",
+    "run",
+    "--case",
+    "24f2f4a7f4c4728122be",
+    "--arm",
+    "finite_selector"
+  ],
+  "family": "08f72",
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "result_sha256": "2803d6fc83d44e49fa71e6217c53fbb805b428b7b523ab017c62f39db2e485a2",
+  "returncode": 0,
+  "status": "COMPLETE",
+  "supervisor_source_sha256": "0136cca1796e8ae6bd180baf19f43a7b9fd9be22f4983f4708e8e13bb4e1642f",
+  "wall_seconds": 36.656917951011565
+}

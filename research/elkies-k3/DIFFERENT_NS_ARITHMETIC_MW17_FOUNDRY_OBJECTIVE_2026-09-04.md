@@ -16,14 +16,14 @@ is now complete. Lane labels do not define a current construction queue.
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK e79dd42ecb04dd8f -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK c3fb941c5a24bc1f -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER e99570e3cb1edca8 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6f5cc7d2daf2dfe2 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 f2dcfada11e6b5f2 -->
 
 ## Milestone
 
@@ -185,11 +185,13 @@ rank-three T
 
 The generated `T`-first planner enforces this order on all 827 catalogue
 rows without using rootless-frame data in its arithmetic priority. It
-propagates five retained exact exclusions and the already-realized determinant-948
-positive control. The remaining arithmetic research queue has 821 rows: 61
+propagates six exact exclusions and the already-realized determinant-948
+positive control. The remaining arithmetic research queue has 820 rows: 60
 from the old rootless-MW17 subcatalogue and 760 not yet screened at the NS
-stage. This includes NS0031, whose former exclusion is withdrawn after the
-[stable-period-group counter-witness](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+stage. NS0031 is excluded by the
+[corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md),
+which includes the missing reflection and determines a genus-two quotient's
+complete rational locus.
 The planner records an unproved rational non-CM point as `null`, a certified
 exclusion as `false`, and an exact positive witness as `true`.
 Twenty-one currently have coarse genus at most two. That coarse genus
@@ -335,9 +337,10 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
   — retained rootless-subcatalogue accounting after arithmetic rejection.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
   — the determinant-950 rational-marking exclusion.
-- [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  — the withdrawn NS0031 application, retained modular arithmetic and exact
-  stable reflection showing why the rational-marking question is UNKNOWN.
+- [NS0031 full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
+  — the genus-ten Q-curve including the missing reflection and its genus-two
+  quotient with twelve cuspidal/CM rational points; full rational rank-19
+  marking is excluded. The earlier counter-witness remains retained.
 - [`MARKED_U_REALIZATION_PLANNER_2026-09-03.md`](MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
   and [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
   — downstream planner and compiler contracts, used only after arithmetic

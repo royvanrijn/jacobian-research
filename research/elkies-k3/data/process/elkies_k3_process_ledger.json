@@ -2101,13 +2101,15 @@
       "phase": "equation-first lattice foundry and physical-corridor controls",
       "behavior": "The determinant-720 Golay lattice was proved primitive with its exact discriminant form, and physical same-NS corridors were certified from its 3A5 source and the determinant-1184 NS0031 A1+2A7 source to MW17 frames.",
       "method": "Niemeier/glue construction, Smith and saturation checks, marked physical component transport, and lossless degree-two neighbor chains.",
-      "meaning": "A lattice and a physical corridor are exact source-selection and planner controls, but they do not supply a characteristic-zero rational source equation or an arithmetic MW17 endpoint.",
+      "meaning": "The lattice and physical corridors remain exact geometric planner controls. Later full rational-marking obstructions exclude both determinant720 and rank-19 NS0031 over QQ, so these corridors cannot supply an arithmetic MW17 source over that field.",
       "generalization": "Keep lattice existence, physical route, source equation, rational marking, and endpoint sections as separate foundry gates.",
-      "status": "proved determinant-720 and NS0031 physical route data; arithmetic realization open",
+      "status": "proved determinant720 and NS0031 physical route data; subsequent full rational rank-19 marking obstructions exclude both arithmetic sources over QQ",
       "evidence": [
         "EC-K3-GOLAY-DET720-NS-SATURATION",
         "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
-        "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR"
+        "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR",
+        "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ]
     },
     {
@@ -2310,17 +2312,18 @@
       "observed_at": "2026-09-04T01:42:00+02:00",
       "time_basis": "dated_note",
       "phase": "NS0024 arithmetic obstruction and NS0031 formal replacement",
-      "behavior": "The direct degree-475 Inose route and then every full rational NS0024 marking over QQ were excluded. The preferred determinant-1184 NS0031 replacement has an exact marked GF(7) precursor, a unit-Jacobian one-parameter formally smooth ZZ_7 branch at model 157, and a five-edge physical corridor.",
+      "behavior": "The direct degree-475 Inose route and then every full rational NS0024 marking over QQ were excluded. The then-preferred determinant-1184 NS0031 replacement had an exact marked GF(7) precursor, a unit-Jacobian one-parameter formally smooth ZZ_7 branch at model 157, and a five-edge physical corridor.",
       "method": "Inose height-to-isogeny identification, rational modular-curve quotient obstruction, exact finite-field marking equations, Hensel data, a unit 51-by-51 Jacobian minor, and localized formal implicit-function theory.",
-      "meaning": "NS0024 remains geometrically valid but cannot close the arithmetic QQ milestone; NS0031 passes the formal local gate but still lacks algebraization, a rational characteristic-zero point, and a full rational rank-19 marking.",
+      "meaning": "NS0024 remains geometrically valid but cannot close the arithmetic QQ milestone. NS0031 passes the formal local gate, but the September14 full stable proof now excludes its full rational rank-19 marking over QQ. The local branch remains valid; the broader different-NS foundry is open.",
       "generalization": "Audit the Galois field of every NS generator before equation work, and never promote a modular, finite p-adic, or formal branch to a rational algebraic source.",
-      "status": "proved full NS0024 QQ-marking obstruction and NS0031 formal branch; arithmetic NS0031 source open",
+      "status": "proved full NS0024 QQ-marking obstruction and NS0031 formal branch; NS0031 full rational rank-19 marking subsequently excluded by the corrected September14 proof",
       "evidence": [
         "EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ]
     },
     {
@@ -2362,15 +2365,16 @@
       "phase": "NS0031 rational-marking obstruction and arithmetic-first rerank",
       "behavior": "The dated NS0031 calculation established the split even-Clifford norm-one curve and its X_0(37) fibre-product exclusion. It was then applied to full rational NS0031 markings through a period-group containment that the later stable-reflection counter-witness refuted.",
       "method": "Exact Clifford embedding and integral-order congruences, coset signature enumeration, Velu's rational-point theorem for X_0(37), and a good-prime Frobenius trace-determinant exclusion at 19 stable under quadratic twist.",
-      "meaning": "The model-157 formal ZZ_7 branch and five-edge physical corridor remain valid local and geometric controls. The norm-one modular exclusion remains valid for the stated curve, but it does not decide full rational NS0031 marking existence: the required stable projective period group, QQ model and rational non-CM locus remain UNKNOWN.",
+      "meaning": "The model-157 formal Z_7 branch and five-edge corridor remain local/geometric controls. The norm-one exclusion does not decide its quotient. The September14 successor proves the full stable genus-ten Q curve and a genus-two quotient with twelve cuspidal/CM rational points, closing the rank-19 marking obstruction with the missing reflection included.",
       "generalization": "Before applying an arithmetic modular obstruction to a K3 marking, prove the map from the full stable projective period group. A subgroup exclusion, modular or formal local calculation must not close rational source existence without that map.",
-      "status": "proved finite norm-one modular calculation and later exact counter-witness; the asserted NS0031 rational-marking obstruction is withdrawn and rational marking remains UNKNOWN",
+      "status": "proved finite norm-one calculation; its original K3 implication remains invalid. A separate September14 full-stable proof now excludes a rational rank-19 NS0031 marking",
       "evidence": [
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
         "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ]
     },
     {
@@ -2378,17 +2382,18 @@
       "observed_at": "2026-09-04T03:20:14+02:00",
       "time_basis": "git_commit_time",
       "phase": "rank-19 arithmetic marking classifier",
-      "behavior": "The dated arithmetic classifier labelled NS0024 and NS0031 excluded after evaluating 66 rootless-MW17 candidate lattices. The later stable-reflection counter-witness invalidated only the NS0031 exclusion; that row is now UNKNOWN and remains outside equation handoff.",
+      "behavior": "The dated arithmetic classifier labelled NS0024 and NS0031 excluded after evaluating 66 rootless-MW17 candidate lattices. The later stable-reflection counter-witness invalidated only the NS0031 exclusion; that row was reopened. The separate September14 full-stable proof now excludes it, while equation handoff remains empty.",
       "method": "Exact NS and transcendental-lattice checks, even-Clifford and order import, comparison of the coarse norm-one curve with the stable discriminant-kernel marking curve, and hash-pinned per-row decisions.",
-      "meaning": "The classifier still separates exact arithmetic decisions from low genus and local data, but its current NS0031 row is unresolved rather than excluded. No coarse arithmetic quotient or formal branch supplies a full rational marking.",
+      "meaning": "The classifier separates exact full-marking decisions from low genus and local data. Its current NS0031 exclusion uses the corrected full stable group, canonical Q quotient and exact genus-two rational locus.",
       "generalization": "Classify the full marking moduli problem rather than its coarse arithmetic quotient; when a period-map premise fails, retract only the affected row and keep all unrelated exclusions and UNKNOWN rows explicit.",
-      "status": "dated classifier had 1 possible, 2 excluded and 63 unknown; the NS0031 exclusion was withdrawn, so its current row is UNKNOWN and no equation handoff follows",
+      "status": "historical classifier counts are retained in the original artifacts; current counts come from MATH_STATUS and the rebuilt classifier after the corrected full-stable exclusion; other unresolved marking rows remain UNKNOWN and the general foundry is open",
       "evidence": [
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
         "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
-        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
       ]
     },
     {
@@ -2641,7 +2646,7 @@
       "category": "arithmetic",
       "symptom": "A geometric Picard-rank-19 lattice and rootless MW17 frame appear to provide an arithmetic rank-17 fibration over QQ.",
       "resolution": "Compute the Galois action on the trivial lattice, MW lattice, and discriminant glue; require all nineteen named divisor classes and a saturated rational section basis over the base field.",
-      "meaning": "Geometric Shioda--Tate rank need not survive as rational Mordell--Weil rank, and a geometric same-NS corridor cannot repair a missing rational source marking. NS0031 is UNKNOWN after correction of its period-group argument; its former exclusion is not a current example of a proved arithmetic obstruction.",
+      "meaning": "Geometric Shioda-Tate rank need not survive as rational Mordell-Weil rank, and a same-NS corridor cannot repair a missing rational source marking. NS0031 now has a corrected full stable quotient obstruction including the missing reflection; the original norm-one containment remains false.",
       "generalization": "Make field-of-definition data part of every foundry state and fail before equation compilation when the full arithmetic marking is obstructed.",
       "evidence": [
         "EC-K3-ARITHMETIC-RANK-TRANSFER",
@@ -2656,12 +2661,13 @@
       "category": "proof boundary",
       "symptom": "A smooth modular point or long Hensel lift is treated as evidence that a rational characteristic-zero source equation exists.",
       "resolution": "For an overdetermined system, first prove that omitted equations follow on the stated unit chart, then use a unit Jacobian minor to certify the formal local branch. Require separate algebraization or rational parametrization, a QQ-point, Picard-rank control and the full rational NS marking.",
-      "meaning": "Formal smoothness guarantees compatible local deformations, not global algebraicity or rationality.",
+      "meaning": "Formal smoothness guarantees compatible local deformations, not global rationality. NS0031 retains its formal ZZ_7 branch even though the corrected full stable proof excludes a full rational rank-19 marking over QQ.",
       "generalization": "Type finite-field, finite p-adic, formal, algebraic, and rational stages separately and never infer a later stage from an earlier one.",
       "evidence": [
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
       ]
     },
     {
@@ -2709,7 +2715,7 @@
       "category": "arithmetic",
       "symptom": "A low-genus even-Clifford norm-one curve or one of its rational points is treated as sufficient evidence for a rational rank-19 Neron--Severi marking.",
       "resolution": "Compute the full orthogonal discriminant kernel, including determinant-minus-one and normalizer components, and prove the direction and QQ descent of any map relating it to the norm-one curve. Classify the lattice as possible, excluded or UNKNOWN from that full marking problem.",
-      "meaning": "The norm-one subgroup can omit stable symmetries as well as lose marking level through similarity. NS0031 has a stable reflection with projective determinant37 outside rational norm-one units. An empty rational cover does not imply its quotient has no rational points.",
+      "meaning": "The norm-one subgroup can omit stable symmetries as well as lose marking level through similarity. NS0031 has a stable reflection with projective determinant37 outside rational norm-one units. Its corrected genus-ten canonical Q curve is a quotient by the product w37*w_ns,4; an exact genus-two rational-locus proof excludes its noncuspidal non-CM points. Emptiness of the norm-one cover alone does not exclude its quotient.",
       "generalization": "Do not dispatch equation work from genus, coarse rationality, or missing obstruction data; require an exact full-marking pass and keep every unresolved row UNKNOWN.",
       "evidence": [
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",

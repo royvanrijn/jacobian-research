@@ -1,0 +1,40 @@
+{
+  "address_space_bytes": 4294967296,
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/independent-replay.json": "b63dc943293fc819dc6d10e7b3c114ecdd9df6ee52c6526791d46ea412b65e57",
+    "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/result.json": "deda3275acfbcae8005d3943feb8146ce7b721afff404a618dc262ea94a0cc35",
+    "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c",
+    "artifacts/generated-results/elkies-k3-q80-complete-genus-one-pairs-v1/independent-replay-final.json": "e8bf8ba07fb4f28bfa974fe41410cd870e7989d1080cba73faf8ed9a57ce07a6",
+    "artifacts/generated-results/elkies-k3-q80-norm12-moving-pencils-v1/independent-replay.json": "1ba379ef5d463507685d03a3368d62823f71623c19bdf9dabdbd2b45a91e4532",
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_v1.json": "2f07599aaafe2ae17eedfaa58276a3463b7a8c3751ad480c01c32d689c366030",
+    "artifacts/generated-results/elliptic-curves/rank_jump_residual_quartic_at_131_verification_v1.json": "a3fefee8aca5b6de7dcedfb0075b7722945902a84b7281d7e30ad916d9a70736",
+    "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b",
+    "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md": "741f9a4991abd152fce20d0822aa5e90fe893fd3f9a3b176516a41870010cd02",
+    "elliptic-curves/notes/DET1092_SURFACE_BRAUER_TRIVIALITY_2026-09-09.md": "c25d4e761824f987d76bb92ab307a705f8722ede243203510a6820d1ffa8460d",
+    "elliptic-curves/notes/DET1092_UNRAMIFIED_KUMMER_OBSTRUCTION_2026-09-09.md": "043bf0f8a16a39cafca97590c3ea921dafede023ea3ec589d6dc479721944151",
+    "elliptic-curves/rank-jump/THE_LAST_GLOBAL_CLASS_IS_ABSENT.md": "da70392aa5a96a0a7bd6cc70349efb3f49ec17b26f6b2dbd361341e5be89bc1d"
+  },
+  "checker_sha256": "c2fe18932972c628b1d0e94c2510eba37c60b94a4b17ede04df17ed247c14f59",
+  "cpu_seconds": 40,
+  "good_patch_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "good_prime": 1009,
+  "parents": [
+    "published-r17",
+    "alternate-q80",
+    "curve302-parent",
+    "x1092-class1"
+  ],
+  "sage_version": "10.9",
+  "schema": "common-quartic-branch-strata-input-v1",
+  "scope": "Universal factor identities and degrees; arithmetic hypotheses for a written Q80 same-branch genus-one exclusion. No complete coefficient elimination or point census."
+}

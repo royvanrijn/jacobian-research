@@ -1,11 +1,11 @@
 {
   "accounting": {
-    "arithmetic_research_queue": 821,
-    "arithmetically_excluded": 5,
+    "arithmetic_research_queue": 820,
+    "arithmetically_excluded": 6,
     "classifications": {
-      "ARITHMETICALLY_EXCLUDED": 5,
+      "ARITHMETICALLY_EXCLUDED": 6,
       "ARITHMETICALLY_POSSIBLE": 1,
-      "UNKNOWN": 61,
+      "UNKNOWN": 60,
       "UNSCREENED_NO_FULL_MARKING_DECISION": 760
     },
     "coarse_genus_at_most_two_diagnostics": 21,
@@ -11916,83 +11916,6 @@
           1,
           0,
           0
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "certificate_replay": [
-        {
-          "assertions_replayed": 4,
-          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
-          "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
-        },
-        {
-          "assertions_replayed": 4,
-          "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
-          "sha256": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
-        }
-      ],
-      "coarse_curve_diagnostic": {
-        "genus": 23,
-        "label": "X_ns(4) x_{X(1)} X_0(37)",
-        "status": "PASS_EXACT_NORM_ONE_CURVE_ONLY",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "decision": "The norm-one Cartan fibre product has no noncuspidal rational point, but the stable period group is not contained in its rational norm-one group. That exclusion does not decide the full rational NS0031 marking.",
-      "determinant": 1184,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": null,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_STABLE_PERIOD_GROUP_AND_QQ_MODEL"
-      },
-      "integral_order": {
-        "local_level_index": 592,
-        "reduced_discriminant": 592,
-        "source_status": "PARTIAL_EXACT_GENERAL_SPLIT_CLIFFORD_ORDER"
-      },
-      "next_gate": "Determine the full stable projective period group, its correct QQ model and rational non-CM points, or supply an independent arithmetic obstruction. Retain determinant-minus-one stable isometries; do not reconstruct the formal branch or launch equations from this correction.",
-      "phase_one_priority_key": [
-        5,
-        1,
-        23,
-        1,
-        1000000000,
-        1,
-        592,
-        0,
-        1184
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 1,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-d1b1381f87d69f1c",
-      "theorem_inputs": [
-        "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
-        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice"
-      ],
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          4
-        ],
-        [
-          0,
-          74,
-          1
-        ],
-        [
-          4,
-          1,
-          -2
         ]
       ]
     },
@@ -50654,6 +50577,42 @@
       "certificate_replay": [
         {
           "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+        },
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+          "sha256": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+        },
+        {
+          "assertions_replayed": 8,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+          "sha256": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb"
+        }
+      ],
+      "decision": "The corrected full stable marking curve has a Q-defined genus-two quotient v^2=u^6-4*u^4+4. Its twelve rational points map only to the cusp and CM points on X_0(37)^+. This proves the rank-19 marking exclusion with the missing determinant-minus-one reflection included.",
+      "determinant": 1184,
+      "full_marking_curve": {
+        "genus": 10,
+        "label": "(X_ns(4) x_X(1) X_0(37)) / <w_37 w_ns,4>",
+        "rational_non_CM_point": false,
+        "stable_kernel_index_over_coarse": null,
+        "status": "PASS_EXACT_FULL_STABLE_GROUP_QQ_MODEL_AND_NONCM_EXCLUSION"
+      },
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "theorem_inputs": [
+        "Velu's determination of X_0(37)(QQ), only for the retained norm-one curve obstruction",
+        "Dolgachev Proposition3.3: the full orthogonal discriminant kernel fixes the polarizing lattice",
+        "Rizov, Complex multiplication for K3 surfaces, Theorem 3.16 and section 3.9: canonical arithmetic period map with auxiliary level",
+        "Elkies, Elliptic and modular curves over finite fields, Appendix level 37, equations 98-104: cusp/differential normalization and CM coordinates",
+        "Unconditional Magma 2.29-10 full Mordell-Weil and elliptic Chabauty proofs, exact input and raw output retained"
+      ]
+    },
+    {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 4,
           "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
           "sha256": "48f4a2130aad683b759022b0bd8b92e3c6f7a29c75d069ada04405c1e360ab36"
         }
@@ -50699,7 +50658,7 @@
     }
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "aa085f1b0d8a7dfd7ea705c8cf9f983e4d532701c5b4f461a91bad95fbd87227",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
     "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },

@@ -1,0 +1,9 @@
+{
+  "case": "072b270b8069a6620745",
+  "development_control": true,
+  "leaves_checked": 6528,
+  "models_per_arm": 3,
+  "point_calls": 0,
+  "source_sha256": "44a653ad9f70473b7beb35bb5cdeb7911089b4ddd9ef69b7e76415e1b30a1e0d",
+  "status": "PASS_Q_G_PARTITIONS_AND_ALL_MAP_BACKEND_IDENTITIES"
+}

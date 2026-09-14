@@ -1,0 +1,634 @@
+{
+  "status": "HISTORICAL_REOPENED_PROBLEM_SUPERSEDED_BY_FULL_STABLE_OBSTRUCTION",
+  "successor": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
+  "before_files": {
+    "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": {
+      "preserved_path": "archive/elkies-k3/ns0031-reopened-marking-2026-09-14/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md.txt",
+      "sha256": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119"
+    },
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": {
+      "preserved_path": "archive/elkies-k3/ns0031-reopened-marking-2026-09-14/rank19-arithmetic-marking-decisions-v1.json.txt",
+      "sha256": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449"
+    },
+    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": {
+      "preserved_path": "archive/elkies-k3/ns0031-reopened-marking-2026-09-14/determinant-aware-ranking-evidence-v1.json.txt",
+      "sha256": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd"
+    }
+  },
+  "before_claims": [
+    {
+      "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "partial",
+      "title": "NS0031 norm-one modular obstruction with unresolved rational K3 marking",
+      "scope": "For the literal NS0031 transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]], the retained split even Clifford order has norm-one curve Gamma_ns(4) intersect Gamma_0(37), of index 304 and genus 23. Its elliptic counts are (0,4) and cusp widths (4,4,148,148). Velu's rational-point classification of X_0(37), together with the exact prime-19 Frobenius pair (2,3) absent from the full nonsplit mod-4 Cartan, proves that this norm-one fibre product has no noncuspidal rational point, including after quadratic twist. The claimed application to full rational NS0031 K3 markings is withdrawn: EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS exhibits an integral stable reflection outside the rational norm-one image, refuting the recorded group containment and the period-induced map deduced from it. Existence of a K3 over QQ with the full rational NS0031 marking remains UNKNOWN. The formal ZZ_7 branch, finite-field precursor, bounded rational-coordinate scan and geometric F017 corridor retain only their respective local or geometric scopes. The remaining gate is the actual full stable projective period group, its model over QQ and its rational non-CM locus, or another exact arithmetic obstruction. The finite arithmetic checker proves neither this missing map nor the external global rational-point theorem.",
+      "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+        "external: J. Velu, Les points rationnels de X_0(37), Theorem 7 (1974), pp.175-176"
+      ],
+      "checker": "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+        "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+        "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py",
+        "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json",
+        "elkies-k3/scripts/verify_ns0031_period_group.py",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json"
+      ],
+      "supersedes_notes": [
+        "The September 4 full rational NS0031 marking exclusion is withdrawn; its norm-one modular arithmetic remains valid."
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "NS0031 stable reflection lies outside the rational norm-one period image",
+      "scope": "For the literal NS0031 ternary Gram [[0,0,4],[0,74,1],[4,1,-2]], reflection in v=(0,0,1) is the integral isometry R=[[1,0,0],[0,1,0],[4,1,-1]], with determinant -1, trivial discriminant action and a pointwise fixed positive definite two-plane. It therefore belongs to O^+(T)^*. In the retained split even Clifford embedding, its projective period action is represented by A=[[0,-1],[37,0]], which normalizes the integral order and has determinant 37. The explicit trace-zero identification proves that any other rational matrix inducing the same action is a scalar multiple of A; no such matrix has determinant one. Thus the full stable period group is not contained in the projective image of rational norm-one units, contrary to the NS0031 September 4 proof. This is an exact counter-witness to that containment and its asserted period-induced map, not a rational K3 construction or a decision about rational marking existence, which remains UNKNOWN.",
+      "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "dependencies": [
+        "external: I. Dolgachev, Mirror symmetry for lattice polarized K3 surfaces, arXiv:alg-geom/9502005v2, Proposition 3.3 and the following period quotient"
+      ],
+      "checker": "elkies-k3/scripts/verify_ns0031_period_group.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+      "software_lock": [
+        "elkies-k3/scripts/verify_ns0031_period_group.py",
+        "tests/test_research_ns0031_period_group.py",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json"
+      ],
+      "supersedes_notes": [
+        "A full rational NS marking allows one to restrict its period group to rational norm-one units without checking all stable orthogonal components."
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024 as ARITHMETICALLY_EXCLUDED by the retained modular obstructions; and retain 61 rows as UNKNOWN, including NS0031 after its period-group containment was refuted. Within those 61, determinant 1236 has the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its genus-six X_0^6(103)/<w_618> curve, EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that its genus-two quotient has exactly fourteen rational points, EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, and EC-K3-DET1236-CANDIDATE-DOUBLE-COVER gives eight conditional non-fixed rational lifts which the complete CM locus forces all to be CM. Only the candidate cubic branch-orbit identification remains; it would convert the row to ARITHMETICALLY_EXCLUDED. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any other unknown marked curve.",
+      "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
+        "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
+      ],
+      "checker": "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+      "software_lock": [
+        "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+        "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
+        "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json"
+      ],
+      "supersedes_notes": [
+        "a coarse Clifford norm-one curve or genus-zero Gamma_0(N) row is enough to pass the rational-marking gate",
+        "UNKNOWN arithmetic-marking rows may be sent directly to an equation agent"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Arithmetic-gated reranking of different-NS MW17 frames",
+      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, and 950 are then removed by their rational-marking obstruction certificates, leaving 62 arithmetic candidates including the already-realized determinant-948 control. NS0031 is again an UNKNOWN research row after correction of its period-group map; it is not ready for equation work. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-1236 row from EC-K3-DET1236-MARKED-SHIMURA-CURVE is retained fail-closed with an exact tier-one arithmetic coordinate: the full genus-six marked curve is known and its genus-two quotient has exactly fourteen rational points, the exact candidate cover evaluates all twelve non-fixed points and the complete ten-point rational CM locus makes every conditional lift CM. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; closing it would prove arithmetic exclusion. Equation scoring remains false. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
+      "canonical_source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
+        "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION",
+        "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR"
+      ],
+      "checker": "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:55955d6b4e332fdae5d3ac2e6521b6662ca5f0ac59df2338130e24954658e73a",
+      "software_lock": [
+        "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
+        "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json"
+      ],
+      "supersedes_notes": [
+        "The previous exclusion of NS0031 from the arithmetic research ranking is withdrawn; it returns as UNKNOWN without equation eligibility.",
+        "the arithmetic foundry ranking does not have an explicit rejection state",
+        "determinant 720 remains the first unresolved different-NS arithmetic gate"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Global transcendental-first arithmetic queue for the different-NS foundry",
+      "scope": "The different-NS foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 821 rows, consisting of 61 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; NS0031 is UNKNOWN after withdrawal of its norm-one period-map argument. 21 have coarse genus at most two as a diagnostic only. Within that queue, EC-K3-DET1236-MARKED-SHIMURA-CURVE supplies determinant 1236's exact genus-six marked curve X_0^6(103)/<w_618>, Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON, a proof that its genus-two quotient has exactly fourteen rational points, an exact candidate cover with all twelve non-fixed fibre evaluations, and a complete ten-point rational CM locus. Only the characteristic-zero identification of the particular cubic CM branch orbit remains open; it would prove exclusion. For every unresolved or unscreened row, rational_non_CM_point is null; false requires an exact exclusion and true requires an exact positive witness. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions and the determinant-1236 exact curve, not by promoting any unresolved row.",
+      "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS"
+      ],
+      "checker": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+      "software_lock": [
+        "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+        "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json"
+      ],
+      "supersedes_notes": [
+        "rootless-frame scoring should precede rational marked-curve classification",
+        "the remaining 62 rootless-MW17 rows are the whole arithmetic foundry universe"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "replay/CATALOGUE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, and 950, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. NS0031 remains UNKNOWN because EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS refutes the containment used for its previous marking exclusion. Determinant 1236 is now the strongest near-exclusion rootless target. EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and degree-two map to an explicit genus-two quotient; EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the quotient has exactly fourteen rational points; and EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, with multiplicities 2,4,4 for discriminants -3,-43,-67. EC-K3-DET1236-CANDIDATE-DOUBLE-COVER constructs an exact characteristic-zero cover candidate and evaluates all twelve non-fixed fibres: the displayed twist gives eight conditional rational lifts, all forced to be CM by the complete locus, while its -3 twist gives none and cannot be the actual descent after the branch divisor is identified. Only the characteristic-zero identification of the candidate's cubic branch orbit with the order-discriminant -1236 Shimura orbit remains unresolved; it would prove ARITHMETICALLY_EXCLUDED. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 821-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 61 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. The twelve geometric exclusions, single-target19bad:083ad proof and remaining-four regulator sweep now prove arithmetic rank zero for all seventeen selected product twists (EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP): A^-=Gamma_d=H_d=0 and every rational section height is excluded. Five retain geometric rank UNKNOWN in [0,2]; no full two-Selmer vanishing follows. Other products and the general integral V4 target remain open. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
+        "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+        "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION",
+        "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
+        "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
+        "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+        "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
+        "EC-K3-ARITHMETIC-RANK-TRANSFER",
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK",
+        "EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION",
+        "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS",
+        "EC-K3-INTEGRAL-CHARACTER-GLUE",
+        "EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION",
+        "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION",
+        "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
+        "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
+        "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [
+        "OP-K3-NS0024-ARITHMETIC-MW17"
+      ],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md",
+        "elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary",
+      "forbidden_attack_classes": [
+        {
+          "attack": "Using NS0024 as a rational rank-19 marked source over QQ",
+          "reason": "The retained NS0024 arithmetic marking obstruction excludes this lattice over QQ; its geometric corridor remains a control.",
+          "witnesses": [
+            "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION"
+          ]
+        },
+        {
+          "attack": "Promoting a modular point, p-adic lift, or formal branch without a rational rank-19 marking",
+          "reason": "The NS0031 formal branch and physical corridor prove local and geometric facts only. Its rational marking remains UNKNOWN after withdrawal of the previous period-map argument.",
+          "witnesses": [
+            "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+            "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION"
+          ]
+        },
+        {
+          "attack": "Transferring a norm-one modular-curve exclusion to K3 markings without the full stable period group and rational map",
+          "reason": "NS0031 has a stable determinant-minus-one reflection whose projective spin representative has nonsquare determinant 37. The full orthogonal discriminant kernel need not lie in rational norm-one units; an empty norm-one cover does not decide its quotient.",
+          "witnesses": [
+            "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
+          ]
+        },
+        {
+          "attack": "Using the known determinant-720 rational 3A5 model as the determinant-720 source",
+          "reason": "Its rational Neron--Severi lattice saturates to determinant 20, and the exact stable curve X_0(60) has no rational noncuspidal point; determinant 720 remains a lattice and corridor control, not an arithmetic source certificate.",
+          "witnesses": [
+            "EC-K3-GOLAY-DET720-NS-SATURATION",
+            "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION"
+          ]
+        },
+        {
+          "attack": "Ranking rootless frames or launching equations before the full marked T curve passes",
+          "reason": "The arithmetic-first planner covers all 827 transcendental rows and deliberately withholds NS, rootless, and equation handoffs until an exact rational non-CM marked point is certified; coarse genus and lattice attractiveness do not supply that marking.",
+          "witnesses": [
+            "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY"
+          ]
+        },
+        {
+          "attack": "Promoting a rational point on the determinant-1236 genus-two quotient or one of its rational CM points to a rank-19 marking",
+          "reason": "The exact period curve is the unresolved degree-two cover X_0^6(103)/<w_618>; quotient points need not lift, and its complete set of ten rational CM points all have geometric Picard rank 20 rather than the requested saturated rank-19 marking.",
+          "witnesses": [
+            "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+            "EC-K3-DET1236-RATIONAL-CM-LOCUS"
+          ]
+        },
+        {
+          "attack": "Reopening the split determinant-378 X_0(7) row as a rational rank-19 source over QQ",
+          "reason": "The literal factor-three marking changes the coarse curve to the stable X_0(63) cover, whose rational points are all cusps; no downstream NS or equation gate opens.",
+          "witnesses": [
+            "EC-K3-DET378-QQ-MARKING-OBSTRUCTION"
+          ]
+        },
+        {
+          "attack": "Accepting an unsaturated section subgroup or a supplied target as the different-NS endpoint",
+          "reason": "Completion requires target-free primitive-nef selection and a saturated seventeen-section Shioda lattice with the new Neron--Severi determinant; the universal compiler and arithmetic reranking preserve those gates.",
+          "witnesses": [
+            "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+            "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER"
+          ]
+        },
+        {
+          "attack": "Using maximum bridge minimum as a hard candidate sieve",
+          "reason": "The retrospective fixed-core benchmark already drops one of five rootless classes, and the untouched determinant-78 shell gives the same score to all 277 candidates while direct root classification is faster. It is neither safe nor selective.",
+          "witnesses": [
+            "EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK",
+            "EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE"
+          ]
+        },
+        {
+          "attack": "Treating a common-core root-budget lower bound as an exact rootless-child classifier",
+          "reason": "The bound is safe only for rejecting declared excessive root budgets and can miss new glue-coset roots; exact theta convolution classifies rootlessness only on the complete fixed-core universes it enumerates.",
+          "witnesses": [
+            "EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK",
+            "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION"
+          ]
+        },
+        {
+          "attack": "Promoting the 2,134-row prescribed-root census to a complete or arithmetic source classification",
+          "reason": "The exact census covers only its thirteen-ambient, sixteen-anchor, bounded prescribed-root embedding domain and constructs no rational marking or equation. Its rows are not even deduplicated into integral-isometry or J2 classes.",
+          "witnesses": [
+            "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS"
+          ]
+        },
+        {
+          "attack": "Reopening the two literal determinant500/750 rows through their coarse genus-zero curves",
+          "reason": "Their full stable marked curves X_H(50) and X_H(75) have only rational cusps; the retained group audit includes the non-spin cosets. This excludes the two specified rows over QQ, not other ternary genera or larger number fields.",
+          "witnesses": [
+            "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS"
+          ]
+        },
+        {
+          "attack": "Repeating the fixed regular-slope norm12 families against the complete smooth native rational V4 target atlas",
+          "reason": "All49 families M=M0+lambda*h^2 with constant projective lambda miss all4358409 rational intersection-one targets. This excludes those fixed regular families only. Full norm12 pencils also move their finite zero contact and were not covered by that screen; nonzero Tate classes, higher-height sections and other atlases also remain outside it. The separate rank-zero closure of seventeen selected product twists is unchanged.",
+          "witnesses": [
+            "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION"
+          ]
+        },
+        {
+          "attack": "Seeking a third rational section at any height on the seventeen selected alternate11952 product twists",
+          "reason": "Twelve geometric rank-zero certificates and five regulator obstructions prove E^(d)(QQ(u))={O} for exactly this target set, including denominator and boundary charts. Their anti-invariant group, integral character glue and Tate quotient vanish. The five arithmetic cases still have geometric rank UNKNOWN in[0,2]; other products and full two-Selmer groups are outside this closure.",
+          "witnesses": [
+            "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
+            "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
+            "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP"
+          ]
+        }
+      ]
+    }
+  ],
+  "before_reviews": [
+    {
+      "id": "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+      "source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "completed": "The66 rootless rows are separated into one realized948 control, four retained exclusions and61 UNKNOWN, including NS0031. Its genus23 norm-one diagnostic remains exact and the new equation handoff is empty.",
+      "remaining": "Each UNKNOWN row needs its literal stable marking curve and exact rational non-CM/marking decision. For1236 only the identified candidate branch-orbit proof remains, and would exclude it. The classifier imports theorem assertions; it does not reprove them.",
+      "disposition": "open-obligation",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
+      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "evidence": [
+        {
+          "path": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+          "quote": "Its only next task is the modular-CM\nidentification of the exact cover candidate's branch orbit"
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER": "f7c8c797175b184fcb404f79027e1ea4d80fbbfd27c818aa7b5c1df83aa8077a",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+      },
+      "reviewed_files": {
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md": "b0f514b10e8216db091b2858167db2d97442e50045338518333f3793765285ac",
+        "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage": "72ec4636001937fb7caebf323fe0fe50c8730ccc3bd3a2c442e7a1c21973b746",
+        "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "dbbc3172c252b80aa31a9887bd485f5e455a10a306fe4b539d7b3bdcadf78449",
+        "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json": "0379500e30c3ac3dbc95528c94a3542dcc05eb81d1c4ad7ecb255d17090dfca8",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+      },
+      "reviewed_local_files": {
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
+      },
+      "missing_inputs": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+      "source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "completed": "The827-row catalogue retains66 exact rootless witnesses and removes four marking exclusions, leaving62 research candidates. The948 control is the only ready row. NS0031 returns without equation eligibility.",
+      "remaining": "A new row needs a certified rational full marking before expensive scoring. The catalogue and bounded source cuts are not complete classifications; determinant1236 remains outside dispatch pending its exact branch-orbit identification.",
+      "disposition": "open-obligation",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved.",
+      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "evidence": [
+        {
+          "path": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+          "quote": "therefore no unresolved rootless-frame row authorized for equation work."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK": "cbdb8fc31e6a72245508a47f38c4be8ba99293663491a3d6dbba8b53a7c3a780",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+      },
+      "reviewed_files": {
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md": "e4cea094b250012cb82c950f27bc226b278d7056c9ddc8465e03ec94ef0139b6",
+        "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py": "55955d6b4e332fdae5d3ac2e6521b6662ca5f0ac59df2338130e24954658e73a",
+        "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "06f08b1c82e9d82b3fa0d84aeaee4eefe9dd945f2fc229823d9446fae176a4cd",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+        "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json": "5bc656c990804d16d66db69187b24aaced93ee25b07665cf9b5fc446c89b7be9",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+      },
+      "reviewed_local_files": {
+        "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json": "a8c418e80683535a44b67b494ce6c4d516c898d3be57a0b014dceb508ebf1c61"
+      },
+      "missing_inputs": [],
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+      "source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "completed": "All827 T rows are ordered before rootless inspection; five retained exclusions and one control leave821 research rows and no new handoff. NS0031 point existence is null; its already-proved norm-one genus23 and precise remaining group/descent gate survive metadata assembly.",
+      "remaining": "For a new source prove the literal stable kernel, rational noncuspidal non-CM point and saturated rational marking before rootless or equation work. Coarse256/X0(2) and512/X0(4) labels remain diagnostics. The stronger carrier/new-section milestone is separate.",
+      "disposition": "open-obligation",
+      "source_review": "Read all six canonical foundry/marking notes, including the1227-line equation-first history. Reconciled local/formal precursors with later exact exclusions and conditional cover results. Replaced the obsolete equation shortlist with a concise source record and preserved the full historical bytes. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil source reconciliation: the two new sentences narrow only the cited historical V4 screen to its fixed regular-slope families, since the full norm12 pencil moves its finite zero contact. The arithmetic-first queue, all827 rows, marking prerequisites, unknown rational non-CM points and no-positive-handoff conclusion are unchanged. This review runs no classifier or research calculation.",
+      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff.",
+      "evidence": [
+        {
+          "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+          "quote": "Only a certified positive row may enter `NS=T^perp`, saturation, rootless,\nor equation work."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "50f925d3d5bb46eb97bb1940bf27b2894fd64e0548e3f3afc9da316719f33d43",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+      },
+      "reviewed_files": {
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "226ea099016af41a512d268cf3efab2a75fdb58cd0f733d889c574cb32418719",
+        "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py": "91ca42db968e921f66ee9e0e8973fadc2c09964481f534320c4a300aec49be76",
+        "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "43e984748467430253f8a80c53a33eca50aea84685ecf10b3c6c0bff4bf10c0a",
+        "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json": "371dba10dfb40a1812baf7d79d0e1470e6edd2d67b46b75ad06a646481f0b965",
+        "tests/test_research_arithmetic_marking.py": "bee89481c6804605a7f8369c5fb0e3d6236135b66591a02ba6c918b48ea886c4",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+      },
+      "reviewed_local_files": {
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
+      },
+      "missing_inputs": [],
+      "reviewed_on": "2026-09-13"
+    },
+    {
+      "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "disposition": "open-obligation",
+      "completed": "The finite Clifford, 304-coset and prime19 arithmetic has passed both original and independent replay. Velu Theorem7 and its two models were inspected. The literal marked-period implication was reviewed against Dolgachev Proposition3.3 and refuted by an exact stable -2 reflection outside the rational norm-one image; the old full K3 exclusion is withdrawn.",
+      "remaining": "Determine the actual full stable projective period group, its QQ model and rational non-CM locus, or another exact arithmetic obstruction. Full rational NS0031 K3 marking remains UNKNOWN. The empty norm-one cover and local formal branch decide neither existence nor nonexistence.",
+      "source_review": "Read the original 413-line producer, canonical argument and cited primary-source hypotheses. Dolgachev alg-geom/9502005v2 Proposition3.3 uses the full orthogonal discriminant kernel; Bragg-Brakkee-Varilly-Alvarado 2510.11477v1 Theorem5.6 provides the modern ample-cone formulation. The original norm-one containment is false for the literal Gram. The rewritten note supplies the reflection, fixed positive plane, Clifford identification, determinant37 obstruction and explicit normalizer action. These complex period statements do not establish a QQ model.",
+      "input_review": "The original mode reads three unchanged catalogues totaling67820578 bytes. The new read-only mode uses a2771-byte field projection and the5575-byte original certificate. Optional source-projection verification checks all three original hashes and unique selectors; absence never triggers regeneration. The explicit make target also runs five corruption tests and refuses optimized Python; default maintenance performs no arithmetic replay.",
+      "dependency_review": "Removed the historical formal-branch dependency and the unsupported blanket period-map premise from the modular arithmetic claim. The new counter-witness uses literal retained input bytes, not the withdrawn conclusion; there is no circular logical dependency. The former global claim is partial, the containment counter-witness is proved, and all assurance flags remain false.",
+      "evidence": [
+        {
+          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+          "quote": "**Existence of a K3 over QQ with the full rational NS0031 marking is UNKNOWN.**"
+        },
+        {
+          "path": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+          "quote": "The fibre product has no noncuspidal rational point."
+        }
+      ],
+      "reviewed_claims": {
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": "dcb6cb1124283db0104405b6f985f3e2f91630237f5ec4f524e36e4b1fc100fb",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77"
+      },
+      "reviewed_files": {
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage": "c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+        "elkies-k3/scripts/verify_ns0031_marking_arithmetic.py": "ebc999fd06c18bbb6e6dac0a3ef6244f4f320fb8ca980a9592ab914905c814ca",
+        "artifacts/generated-results/elkies-k3-ns0031-replay-inputs-v1.json": "f3aaaec35ee8a635d35ea295361ee5fd5439bf809b231cc74206d38ca4aeb80e",
+        "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b"
+      },
+      "reviewed_on": "2026-09-12"
+    },
+    {
+      "id": "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "disposition": "research-objective",
+      "completed": "The objective retains the stronger MW17-plus-carrier endpoint, five other marking exclusions and arithmetic-first admission. NS0031 is UNKNOWN after correction of its full-group containment; forbidden attacks now exclude that invalid inference rather than the unresolved source itself.",
+      "remaining": "A certified rational non-CM point on the full marked curve is required before NS, rootless and equation work; no new positive handoff exists. Determinant1236 still needs identification of its particular cubic CM branch orbit. NS0031 separately needs the full stable projective group, QQ model and rational non-CM locus, without assuming its empty norm-one cover is the period quotient.",
+      "source_review": "Read the full 330-line objective. Its bounded census, local formal branch, rational marking, equation, saturated basis and carrier endpoints are separate. The determinant1236 candidate fibres are already evaluated; only the branch identity remains. The general V4 stretch target remains open, but all seventeen selected product twists are arithmetically closed; none remains a section-search target. September12 follow-up: inspected the affected source dispositions after the exact NS0031 stable reflection refuted the previous norm-one containment. Current summaries now retain NS0031 as UNKNOWN and the earlier prose is preserved. Route review adds the two literal determinant500/750 exclusions and the complete smooth-atlas deep-coboundary boundary from their current source notes; neither is a global V4 or determinant-wide exclusion. No calculation was rerun. September13 product-closure reconciliation: the foundry target and profile summary now agree with the retained seventeen-product arithmetic rank-zero theorem. Changed only current routing/status prose and the dependent marker; original commands and arithmetic payloads remain unchanged. September13 moving-pencil correction: read the explicit O+tau-F pencil and the retained V4 screen. The latter tests M0+lambda*h^2 with constant lambda, whereas the full pencil permits lambda=-c/(t-u). Narrowed the forbidden attack to that fixed family and corrected its source; full moving-contact coboundaries are outside the old screen. No V4 computation or new arithmetic target was started.",
+      "input_review": "Reassembled the 66-row classifier using retained lattice witnesses and exact imported certificate assertions under a 45-second cap, then rebuilt the standard-library ranking and all827 T-row views. No lattice enumeration, equation reconstruction, descent or rational-point search was run. The NS0031 genus23 norm-one computation is preserved in coarse diagnostics and priority; full marking genus/existence remain null. Its specific remaining gate is carried through without requiring an unrelated Phase2 flag. The compact witness and twelve controls pass. Verified that the retained target sets partition all17 as12 geometric+1 single-target+4 regulator closures and the section queue is empty. All27 reduction digests and50 of52 live input bindings match; the two historical producer bindings match the preserved source snapshots named by the existing compatibility audit. No Frobenius, descent or section calculation was rerun.",
+      "dependency_review": "Local and formal controls do not supply a rational marking. The previous NS0031 exclusion is withdrawn because the literal full stable group is not contained in rational norm-one units. Other recorded determinant-specific theorems retain their own hypotheses; this correction does not reprove them. The classifier imports those assertions, preserves unknown existence as null and emits no new equation handoff. Added the twelve-target, single-target and remaining-four closure chain for the now-explicit selected-product exclusion. Existing marking and broader carrier obligations are unchanged. The former complete deep-coboundary claim now certifies only its fixed regular families across every atlas target. The parity census and all seventeen selected-product rank-zero theorems are unaffected.",
+      "evidence": [
+        {
+          "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+          "quote": "Only a certified positive row may enter `NS=T^perp`, saturation, rootless,\nor equation work."
+        },
+        {
+          "path": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+          "quote": "rank one. All seventeen selected product twists now have arithmetic rank\nzero:"
+        }
+      ],
+      "reviewed_claims": {
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "014f9a4e7aa56c5f8d229bc1229ab9f8f52f31efd0c3cf01777dde51cc156a62",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "50f925d3d5bb46eb97bb1940bf27b2894fd64e0548e3f3afc9da316719f33d43",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": "978fb2e25ae7cfe816960dc6ba544a927d12a938355eb2847df351694c3f2fae",
+        "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "ea16d013fe76dc00a71a6a1af04c7f911f90b856747b8a83654fde87fa133e77",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS": "83243ac7623aa51d8c307374b902b8e666d644f8323c1c21787b2aa9bd920413",
+        "EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION": "a358408b199ff2536221b77dbb47e6c015569f06d34f4b4d0cf8b2a691d2c0aa",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION": "906f79978235787604f312c64623d079434ccd76b87af8f8da59f422aa8a2f0c",
+        "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO": "75d45c248eaa66cd991bf667cbe1b01870ff340a4fa964edf727da89b8b2032a",
+        "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP": "c0665f9057abe77dd327cff5cc8f7729ae1c23b3aca78a7945bfafb3d4af6986"
+      },
+      "reviewed_files": {
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md": "226ea099016af41a512d268cf3efab2a75fdb58cd0f733d889c574cb32418719",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md": "667f119ec4f61990ca989eeecd6b686d71adbe4f9538e433d0044aa004d80119",
+        "elkies-k3/scripts/verify_ns0031_period_group.py": "01a485719e4ab2bdafac94c0830d10f884868d1c044971065221432c8d820b0f",
+        "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8",
+        "archive/repository-cleanup-2026-09-12/ns0031-period-group-review/REVIEW.json": "d6d6e504110ac7663fcd7e09859f274035b2b81fb3d669b0a3a5b9132db98b7b",
+        "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md": "75e0917c2682b445efc9437f283dbf626cd9e7817e1b9e64af6309e4968651ce",
+        "elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md": "26bd1e913dba16ad578070c65175a778c360076367d9c008c49a40498be50ca0",
+        "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md": "f1058aed68a8b18ed1a401184ca3b284d5c8cc06467a1e5dd37b894d44222389",
+        "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md": "c56f6a9e253313db710627fd58d965b44e122d1b5cc38047e216cd109922a39e",
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160",
+        "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json": "9b9467f6c1a754f41f9feeed6be0ae8c13d275e4203f9cd358df08705ef7318c",
+        "artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json": "8c02b033f4ae85ba3b490863756054328cca3ec35ebc9794ebe358e4058498f0",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+        "artifacts/generated-results/elliptic-curves/checker_source_compatibility_audit_v1.json": "7541adc5f2ed190620bbb7ed4130898833fc90be83e27fdbe6ce4095131e4be7",
+        "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage": "80783142c26ec5bac163ef99fb7e72767c4382e333d9602abef21229a76a4566",
+        "archive/elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.before-2026-09-13.md.txt": "68624c4cc48df9be39013804c0133bbec315b9bdc8cda0cfb50e7f01c7faffe1",
+        "archive/elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.before-2026-09-13.md.txt": "2d5ab40cc5ebe14accf46cb572d79d0cb060d1358979535f1d1ea8e57639142a",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43/certify_r17_product_19bad_083ad_rank_zero.sage": "ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
+        "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2/certify_r17_product_regulator_sweep.sage": "ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2",
+        "elkies-k3/Q80_ALL_SMOOTH_GENUS_ONE_BISECTIONS_2026-09-13.md": "692e7266a4accacb73ced08531b8a5475641b361f587a6d6f286dc803241ab1b",
+        "archive/elkies-k3/R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.before-moving-pencil-correction.md.txt": "aa7bcd1d84b72a87a79e5aae63c7fea1bfc418c67466a2d79481d2f09068c6ec"
+      },
+      "external_sources": [],
+      "reviewed_on": "2026-09-13"
+    }
+  ]
+}

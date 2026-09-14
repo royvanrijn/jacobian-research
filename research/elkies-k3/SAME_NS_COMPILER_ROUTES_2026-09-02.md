@@ -107,9 +107,11 @@ yet a compiled algebraic neighbour sequence from a rational source equation.
   not 720, so it cannot be the start of the certified Golay route.
 - NS0031 has exact marked finite-field evidence, a one-parameter formally
   smooth `ZZ_7` marked branch, and the finite lift as a regression. Full
-  rational marking is `UNKNOWN` after the
-  [period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+  rational rank-19 marking is excluded by the
+  [corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 
 Thus the same-NS fibration-graph middle is now explicit and auditable.  The
 routes remain geometric controls; arithmetic use requires a certified rational NS
 that first passes the rational-marking gate.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

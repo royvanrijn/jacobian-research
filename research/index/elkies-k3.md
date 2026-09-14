@@ -89,6 +89,8 @@ python3 research/scripts/research.py show ID
 | `EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION` | partial | [Exact unmarked first q4 collision on the rational Q80 coefficient curve](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-BISECT-BIQUADRATIC-R19` | proved | [Complete biquadratic rank-19 bisection-cover geometry and a rank-at-least-nine base](../elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md) |
 | `EC-K3-MESTRE-BRANCH-CANCELLATION-PARENT-GATE-20260914` | proved | [Sharp Mestre coefficient-divisor cancellation criterion; Q80 and two X1092 parents also force genus at least9](../elkies-k3/BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md) |
+| `EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914` | proved | [Fifteen common-quartic factor strata and a complete same-branch genus-one exclusion on alternate Q80](../elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md) |
+| `EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914` | proved | [Common-quartic genus0/1 controls and a complete constant-abscissa exclusion on four MW17 parents](../elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md) |
 | `EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912` | proved | [Twenty-five prospective genus-one pencils have no shared rational branch quartic in any of their 300 pairs](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `EC-K3-CURVE302-COMPLETE-P6-TRIANGLE-GATE` | proved | [Complete P6 height-six triangle class contains no MW14-or-higher parent of 302](../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md) |
@@ -153,10 +155,10 @@ python3 research/scripts/research.py show ID
 | `OP-K3-NS0024-ARITHMETIC-MW17` | parked; replaced by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 | [Former NS0024 arithmetic MW17 candidate](../elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
 | `EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION` | proved; replaced by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION | [Direct rational Inose-source obstruction for NS0024](../elkies-k3/NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md) |
 | `EC-K3-NS0024-QQ-MARKING-OBSTRUCTION` | proved | [Full rational Neron--Severi marking obstruction for NS0024](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
+| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` | proved | [Corrected NS0031 full stable period curve and rational rank-19 marking obstruction](../elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md) |
 | `EC-K3-NS0031-MARKED-FORMAL-BRANCH` | proved | [One-parameter formally smooth marked NS0031 branch at model 157](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) |
 | `EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN` | partial | [Bounded rational-coordinate scan on the NS0031 model-157 formal branch](../elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) |
 | `EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS` | proved | [NS0031 stable reflection lies outside the rational norm-one period image](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
-| `EC-K3-NS0031-QQ-MARKING-OBSTRUCTION` | partial | [NS0031 norm-one modular obstruction with unresolved rational K3 marking](../elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
 | `EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET` | partial | [Exact construction-compatible equation-side target for the H3 A11-to-2A5 q8 lift](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-A11-Q8-QQ-2A5` | proved | [Exact H3 A11/MW6 q8 orbit12 neighbour with component-9-zero 2A5/MW7 child](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE` | partial | [Exact minimum-pole target-coset bridge for the H3 A11-to-2A5 q8 lift](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |

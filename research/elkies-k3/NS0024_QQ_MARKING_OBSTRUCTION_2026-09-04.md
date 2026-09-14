@@ -105,10 +105,13 @@ shard-local identifier alone. The `A1+2A7/MW2` source has complete-basis pole
 profile `[0,1]`, two complete marked pairs in the normalized square-twist
 `GF(7)` chart, and a one-parameter formally smooth `ZZ_7` marked branch
 through model 157. The same lattice has an exact five-edge physical
-degree-two corridor to rootless `NS0031-F017`. Its full rational marking is
-`UNKNOWN`: the later split-Clifford/`X_0(37)` argument used a false
-period-group containment. See the correction in
-[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+degree-two corridor to rootless `NS0031-F017`. Its full rational rank-19
+marking is now excluded by the
+[September 14 full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
+The [earlier norm-one argument](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+still has a false period-group containment; the new proof includes the missing
+reflection and determines the rational locus through a genus-2 quotient.
+The local formal branch and geometric corridor remain valid controls.
 The reranked live gate is recorded in
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
@@ -120,3 +123,5 @@ The reranked live gate is recorded in
 - K. Utsumi,
   [*The Mordell--Weil lattice of an Inose surface arising from isogenous elliptic curves*](https://arxiv.org/abs/2209.02463),
   Proposition 3.1 and Theorems 5.1--5.2.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

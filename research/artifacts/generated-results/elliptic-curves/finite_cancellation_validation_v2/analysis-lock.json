@@ -1,0 +1,12 @@
+{
+  "boundary": "Analysis and independent arithmetic checks are frozen before new CPU outcomes. Fixes require a separately described successor; no outcome-based retuning.",
+  "mapping_smoke_sha256": "da6fe5bc9cda527de0d950cc5b5b34f0f122cce8e3443688d9fc5e372faeab0b",
+  "protocol_sha256": "5a2ea3accb581a490a246645d56dd9cda33fef3aed8a18e5863782b27ad0ff14",
+  "source_sha256": {
+    "finite_cancellation_validation_replay.py": "3eaa8f5d14e0c04ea385cdce9fec92e6d1469058ddc149e0be3c93cee96087a8",
+    "report_finite_cancellation_validation.py": "84afca3432a2ab8b5f1eb91810ade6be8f997ad52ddbc72cb34fc7fdbd94a33a",
+    "verify_finite_cancellation_validation.sage": "b765c156f1afa28e21b2a27776066ee4f88c335a8f1c8726948b00c97ce7c31f"
+  },
+  "status": "FROZEN_BEFORE_CPU_EXECUTION",
+  "training_verified_sha256": "2a5ca14b119b946dc6eea4a8f312f3ea34d66e3e675bcc92f68ed90063b452d7"
+}

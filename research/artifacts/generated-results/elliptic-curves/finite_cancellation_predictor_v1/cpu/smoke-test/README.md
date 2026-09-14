@@ -1,0 +1,1 @@
+First unchanged-policy worker smoke test. Retained separately because it lacked the outer process CPU receipt used by every official paired arm. No selector or search-policy changes followed this outcome.

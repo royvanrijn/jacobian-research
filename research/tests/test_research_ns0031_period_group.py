@@ -17,7 +17,7 @@ class PeriodGroupTests(unittest.TestCase):
         self.original = json.loads(replay.ORIGINAL.read_text())
 
     def test_literal_counterwitness(self):
-        self.assertIn('existence remains UNKNOWN', replay.verify(self.witness, self.original))
+        self.assertIn('makes no rational-K3 existence claim', replay.verify(self.witness, self.original))
 
     def test_changed_reflection_fails(self):
         self.witness['reflection'][2][0] = 3
@@ -59,38 +59,49 @@ class CorrectionPropagationTests(unittest.TestCase):
     def test_old_certificate_label_cannot_restore_exclusion(self):
         data = self.load('elkies-k3-rank19-arithmetic-marking-classifier-v1.json')
         row = next(r for r in data['candidates'] if r['surface_id'] == self.surface)
-        self.assertEqual(row['classification'], 'UNKNOWN')
+        self.assertEqual(row['classification'], 'ARITHMETICALLY_EXCLUDED')
         self.assertFalse(row['equation_agent_eligible'])
         self.assertFalse(row['different_ns_foundry_equation_eligible'])
-        self.assertEqual(row['easy_quotient_maps'], [])
+        self.assertEqual(row['easy_quotient_maps'][0]['degree'], 4)
+        self.assertEqual(row['easy_quotient_maps'][0]['target_genus'], 2)
         curve = row['full_discriminant_marking_curve']
-        self.assertIsNone(curve.get('genus'))
+        self.assertEqual(curve['genus'], 10)
         self.assertEqual(curve['coarse_norm_one_curve']['genus'], 23)
         self.assertTrue(any('counterwitness' in c['path'] for c in row['certificate_replay']))
+        proof_path = 'elkies-k3-ns0031-stable-marking-v1/certificate.json'
+        binding = next(c for c in row['certificate_replay'] if c['path'].endswith(proof_path))
+        self.assertEqual(binding['assertions_replayed'], 8)
+        proof = self.load(proof_path)
+        self.assertEqual(proof['status'], 'PASS_CORRECTED_FULL_STABLE_ARITHMETIC_OBSTRUCTION')
+        self.assertTrue(proof['arithmetic_model']['determinant_units_included'])
+        self.assertEqual(proof['genus_two_quotient']['rational_point_count'], 12)
+        for path, digest in proof['inputs'].items():
+            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(), digest)
 
-    def test_unknown_returns_to_research_but_not_equation_queue(self):
+    def test_corrected_obstruction_rejects_equation_work(self):
         data = self.load('elkies-k3-rank7-determinant-aware-ranking-v1.json')
-        self.assertTrue(any(r['surface_id'] == self.surface for r in data['candidates']))
-        self.assertFalse(any(r['surface_id'] == self.surface for r in data['arithmetic_marking_rejections']))
+        self.assertFalse(any(r['surface_id'] == self.surface for r in data['candidates']))
+        self.assertTrue(any(r['surface_id'] == self.surface for r in data['arithmetic_marking_rejections']))
         self.assertNotIn(self.surface, json.dumps(data['expensive_equation_scoring_queue']))
 
-    def test_research_queue_preserves_known_arithmetic_and_exact_remaining_gate(self):
+    def test_global_queue_uses_full_curve_exclusion(self):
         data = self.load('elkies-k3-arithmetic-first-marked-t-foundry-v1.json')
-        row = next(r for r in data['curve_identification_queue'] if r['surface_id'] == self.surface)
-        self.assertEqual(row['arithmetic_classification'], 'UNKNOWN')
-        self.assertIsNone(row['full_marking_curve']['rational_non_CM_point'])
-        self.assertIsNone(row['full_marking_curve']['genus'])
-        self.assertEqual(row['coarse_curve_diagnostic']['genus'], 23)
-        self.assertEqual(row['phase_one_priority_key'][2], 23)
-        self.assertIn('determinant-minus-one', row['next_gate'])
+        self.assertFalse(any(r['surface_id'] == self.surface for r in data['curve_identification_queue']))
+        row = next(r for r in data['excluded_before_NS_or_equation_work'] if r['surface_id'] == self.surface)
+        self.assertIs(row['full_marking_curve']['rational_non_CM_point'], False)
+        self.assertEqual(row['full_marking_curve']['genus'], 10)
+        self.assertIn('missing determinant-minus-one reflection included', row['decision'])
         self.assertEqual(data['new_positive_NS_rootless_handoff'], [])
 
     def test_new_witness_does_not_claim_rational_k3_nonexistence(self):
         entries = {e['id']: e for e in json.loads((ROOT/'MATH_STATUS.json').read_text())['entries']}
-        self.assertEqual(entries['EC-K3-NS0031-QQ-MARKING-OBSTRUCTION']['state'], 'partial')
+        full = entries['EC-K3-NS0031-QQ-MARKING-OBSTRUCTION']
+        self.assertEqual(full['state'], 'proved')
+        self.assertTrue(full['checker'].endswith('certify_ns0031_stable_marking.sage'))
+        self.assertNotEqual(full['canonical_source'], entries['EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS']['canonical_source'])
         counter = entries['EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS']
         self.assertEqual(counter['state'], 'proved')
-        self.assertIn('existence, which remains UNKNOWN', counter['scope'])
+        self.assertIn('not by itself', counter['scope'])
         self.assertNotIn('EC-K3-NS0031-QQ-MARKING-OBSTRUCTION', counter['dependencies'])
 
     def test_pre_correction_evidence_is_preserved_byte_for_byte(self):

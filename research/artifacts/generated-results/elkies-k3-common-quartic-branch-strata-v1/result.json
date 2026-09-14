@@ -1,0 +1,565 @@
+{
+  "arithmetic_input": {
+    "arithmetic_picard_determinant": 948,
+    "arithmetic_picard_rank": 19,
+    "counts_and_saturation": "inherited source-bound arithmetic proofs",
+    "finite_field_brauer_order": 1,
+    "new_global_deduction": "Br(X)[2] consists of constants on the determinant948 surface",
+    "prime": 131
+  },
+  "control_patches": [
+    {
+      "genus": 1,
+      "j": 4,
+      "k": 0,
+      "literal_cover_scalar": "3",
+      "name": "four-nodes-genus-one",
+      "patch": 1
+    },
+    {
+      "genus": 0,
+      "j": 4,
+      "k": 0,
+      "literal_cover_scalar": "2",
+      "name": "five-nodes-genus-zero",
+      "patch": 1
+    }
+  ],
+  "cpu_seconds": 0.01121,
+  "fixed_parent_full_family": "UNKNOWN",
+  "formal_verification": false,
+  "independent_replay": false,
+  "input_sha256": "5a8c50fe6a77a15f0391fbd5f7d992d6444c20216cfbd9edad98b4b9b9943b71",
+  "patches": [
+    {
+      "discriminant_residues": [
+        675,
+        709,
+        731,
+        285,
+        504,
+        814,
+        284,
+        767,
+        133
+      ],
+      "good_patch_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "published-r17",
+      "prime": 1009
+    },
+    {
+      "discriminant_residues": [
+        357,
+        109,
+        91,
+        6,
+        839,
+        29,
+        491,
+        143,
+        63
+      ],
+      "good_patch_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "alternate-q80",
+      "prime": 1009
+    },
+    {
+      "discriminant_residues": [
+        322,
+        999,
+        745,
+        496,
+        120,
+        188,
+        605,
+        27,
+        474
+      ],
+      "good_patch_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "curve302-parent",
+      "prime": 1009
+    },
+    {
+      "discriminant_residues": [
+        895,
+        906,
+        987,
+        175,
+        208,
+        920,
+        816,
+        876,
+        178
+      ],
+      "good_patch_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "x1092-class1",
+      "prime": 1009
+    }
+  ],
+  "positive_mw17_endpoint": false,
+  "q80_k4_genus_one": "EXCLUDED by the written descent and smooth-image proof",
+  "schema": "common-quartic-branch-strata-result-v1",
+  "status": "PASS",
+  "strata": [
+    {
+      "degrees": [
+        0,
+        4,
+        0,
+        4,
+        4,
+        0,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 8,
+      "height_matrix": [
+        [
+          8,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "intersection": 0,
+      "j": 0,
+      "k": 0,
+      "sum_height": 24
+    },
+    {
+      "degrees": [
+        0,
+        4,
+        1,
+        3,
+        3,
+        1,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 12,
+      "height_matrix": [
+        [
+          8,
+          2
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "intersection": 2,
+      "j": 1,
+      "k": 0,
+      "sum_height": 20
+    },
+    {
+      "degrees": [
+        0,
+        4,
+        2,
+        2,
+        2,
+        2,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 16,
+      "height_matrix": [
+        [
+          8,
+          0
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "intersection": 4,
+      "j": 2,
+      "k": 0,
+      "sum_height": 16
+    },
+    {
+      "degrees": [
+        0,
+        4,
+        3,
+        1,
+        1,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 20,
+      "height_matrix": [
+        [
+          8,
+          -2
+        ],
+        [
+          -2,
+          8
+        ]
+      ],
+      "intersection": 6,
+      "j": 3,
+      "k": 0,
+      "sum_height": 12
+    },
+    {
+      "degrees": [
+        0,
+        4,
+        4,
+        0,
+        0,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 24,
+      "height_matrix": [
+        [
+          8,
+          -4
+        ],
+        [
+          -4,
+          8
+        ]
+      ],
+      "intersection": 8,
+      "j": 4,
+      "k": 0,
+      "sum_height": 8
+    },
+    {
+      "degrees": [
+        1,
+        3,
+        0,
+        3,
+        4,
+        1,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 10,
+      "height_matrix": [
+        [
+          8,
+          3
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "intersection": 1,
+      "j": 0,
+      "k": 1,
+      "sum_height": 22
+    },
+    {
+      "degrees": [
+        1,
+        3,
+        1,
+        2,
+        3,
+        2,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 14,
+      "height_matrix": [
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "intersection": 3,
+      "j": 1,
+      "k": 1,
+      "sum_height": 18
+    },
+    {
+      "degrees": [
+        1,
+        3,
+        2,
+        1,
+        2,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 18,
+      "height_matrix": [
+        [
+          8,
+          -1
+        ],
+        [
+          -1,
+          8
+        ]
+      ],
+      "intersection": 5,
+      "j": 2,
+      "k": 1,
+      "sum_height": 14
+    },
+    {
+      "degrees": [
+        1,
+        3,
+        3,
+        0,
+        1,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 22,
+      "height_matrix": [
+        [
+          8,
+          -3
+        ],
+        [
+          -3,
+          8
+        ]
+      ],
+      "intersection": 7,
+      "j": 3,
+      "k": 1,
+      "sum_height": 10
+    },
+    {
+      "degrees": [
+        2,
+        2,
+        0,
+        2,
+        4,
+        2,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 12,
+      "height_matrix": [
+        [
+          8,
+          2
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "intersection": 2,
+      "j": 0,
+      "k": 2,
+      "sum_height": 20
+    },
+    {
+      "degrees": [
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 16,
+      "height_matrix": [
+        [
+          8,
+          0
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "intersection": 4,
+      "j": 1,
+      "k": 2,
+      "sum_height": 16
+    },
+    {
+      "degrees": [
+        2,
+        2,
+        2,
+        0,
+        2,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 20,
+      "height_matrix": [
+        [
+          8,
+          -2
+        ],
+        [
+          -2,
+          8
+        ]
+      ],
+      "intersection": 6,
+      "j": 2,
+      "k": 2,
+      "sum_height": 12
+    },
+    {
+      "degrees": [
+        3,
+        1,
+        0,
+        1,
+        4,
+        3,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 14,
+      "height_matrix": [
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "intersection": 3,
+      "j": 0,
+      "k": 3,
+      "sum_height": 18
+    },
+    {
+      "degrees": [
+        3,
+        1,
+        1,
+        0,
+        3,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 18,
+      "height_matrix": [
+        [
+          8,
+          -1
+        ],
+        [
+          -1,
+          8
+        ]
+      ],
+      "intersection": 5,
+      "j": 1,
+      "k": 3,
+      "sum_height": 14
+    },
+    {
+      "degrees": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        0,
+        0
+      ],
+      "difference_height": 16,
+      "height_matrix": [
+        [
+          8,
+          0
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      "intersection": 4,
+      "j": 0,
+      "k": 4,
+      "sum_height": 16
+    }
+  ]
+}

@@ -157,8 +157,8 @@ over `GF(7)(t)`.
 
 This preserves the local arithmetic boundary: model 157 is a finite-field
 marked point with a formal `ZZ_7` branch, not a rational equation. Full
-rational `NS0031` marking remains `UNKNOWN` after the
-[period-group correction](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+rational rank-19 `NS0031` marking is excluded by the
+[corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md).
 This chart remains a local control, without a certified arithmetic source.
 
 ## Literature placement
@@ -198,3 +198,5 @@ charts for a chosen source profile, eliminate `a2,a3` by the formulas above,
 and solve the discriminant jets.  Every surviving rational reconstruction
 must still pass torsion, divisibility, component, Picard, and NS-saturation
 gates before it is identified with a foundry lattice.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->

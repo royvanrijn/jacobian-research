@@ -1,0 +1,43 @@
+{
+  "authorization": "User requested symbolic discriminant/singularity work on the common-quartic construction, seeking a genus0/1 cover with two gains. No heavy campaign was dispatched.",
+  "boundary": "No solution on a retained MW17 parent, no full five-coefficient quartic elimination or genus lower bound, and no total-rank computation for the two new parents.",
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_common_quartic_singularity_locus.sage freeze",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 sage -python research/elkies-k3/scripts/certify_common_quartic_singularity_locus.sage run",
+    "python3 research/elkies-k3/scripts/verify_common_quartic_singularity_locus.py --output research/artifacts/generated-results/elkies-k3-common-quartic-singularities-v1/independent-replay.json",
+    "python3 -m unittest discover -s research/tests -p 'test_common_quartic_singularity_locus.py' -q"
+  ],
+  "date": "2026-09-14",
+  "discovery": [
+    {
+      "operation": "Factor the17 retained generic published-R17 ordinates over Q and check their136 pair gcds, looking for a shared quadratic split-cover boundary.",
+      "result": "All17 ordinates were irreducible sextics; all136 pair gcds were1. This is only the displayed basis boundary, not a full-MW or full-chart exclusion."
+    },
+    {
+      "operation": "Disc_t(B+c*A+c^3) modulo101 on the four frozen parents.",
+      "result": "First three reductions had repeated factors (gcd degrees8,9,7; third discriminant degree31). X1092 class1 had degenerate coefficient reduction; Sage raised a zero-polynomial Sylvester-matrix error. No exclusion was inferred."
+    },
+    {
+      "operation": "Repeat the same discriminant calculation modulo131,1009,10007 with coefficient-degree and gcd guards.",
+      "result": "All four discriminants have degree33 and are squarefree at1009 and10007. At131 only published-R17 and alternate-Q80 are squarefree; the other two have two double critical values. Chose1009 as the common exact witness, after discovery."
+    },
+    {
+      "operation": "Derive A=D*(2*s+1)-1,B=D*s^2 algebraically, with s=t^4+1. Check D=t^4+t+1 and D=t^2*(t^2+1).",
+      "result": "Both24I1 controls pass squarefreeness, branch and node coprimality. Two points and their sum give height matrix[[8,-4],[-4,8]]. Genus1 base maps to Y^2=X^3-4X+1; point(0,1) has3R=(-7/4,13/8). Genus0 base is w^2=t^2+1."
+    }
+  ],
+  "runs": [
+    {
+      "directory": "artifacts/local/common-quartic-symbolic-20260914/preview-v1",
+      "status": "producer and independent replay passed"
+    },
+    {
+      "component_cpu_seconds": 0.484833,
+      "directory": "artifacts/generated-results/elkies-k3-common-quartic-singularities-v1",
+      "status": "producer and independent replay passed"
+    }
+  ],
+  "schema": "common-quartic-singularities-execution-v1",
+  "test_correction": "The first test run had7 passes and1 failed hand-written expected resultant: Res(2(t-1)(t-2),3(t-4)) was incorrectly written54, omitting the leading factor2. Correct value108 follows from the root product. The arithmetic implementation and generated certificates were unchanged; all8 tests then passed.",
+  "timing_scope": "Component CPU and independent replay timings exclude authoring and environment startup; no performance comparison is claimed."
+}

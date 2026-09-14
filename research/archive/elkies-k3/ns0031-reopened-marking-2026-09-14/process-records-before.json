@@ -1,0 +1,53 @@
+[
+  {
+    "id": "EV73",
+    "observed_at": "2026-09-04T02:39:00+02:00",
+    "time_basis": "dated_note",
+    "phase": "NS0031 rational-marking obstruction and arithmetic-first rerank",
+    "behavior": "The dated NS0031 calculation established the split even-Clifford norm-one curve and its X_0(37) fibre-product exclusion. It was then applied to full rational NS0031 markings through a period-group containment that the later stable-reflection counter-witness refuted.",
+    "method": "Exact Clifford embedding and integral-order congruences, coset signature enumeration, Velu's rational-point theorem for X_0(37), and a good-prime Frobenius trace-determinant exclusion at 19 stable under quadratic twist.",
+    "meaning": "The model-157 formal ZZ_7 branch and five-edge physical corridor remain valid local and geometric controls. The norm-one modular exclusion remains valid for the stated curve, but it does not decide full rational NS0031 marking existence: the required stable projective period group, QQ model and rational non-CM locus remain UNKNOWN.",
+    "generalization": "Before applying an arithmetic modular obstruction to a K3 marking, prove the map from the full stable projective period group. A subgroup exclusion, modular or formal local calculation must not close rational source existence without that map.",
+    "status": "proved finite norm-one modular calculation and later exact counter-witness; the asserted NS0031 rational-marking obstruction is withdrawn and rational marking remains UNKNOWN",
+    "evidence": [
+      "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+      "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+      "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+      "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+    ]
+  },
+  {
+    "id": "EV74",
+    "observed_at": "2026-09-04T03:20:14+02:00",
+    "time_basis": "git_commit_time",
+    "phase": "rank-19 arithmetic marking classifier",
+    "behavior": "The dated arithmetic classifier labelled NS0024 and NS0031 excluded after evaluating 66 rootless-MW17 candidate lattices. The later stable-reflection counter-witness invalidated only the NS0031 exclusion; that row is now UNKNOWN and remains outside equation handoff.",
+    "method": "Exact NS and transcendental-lattice checks, even-Clifford and order import, comparison of the coarse norm-one curve with the stable discriminant-kernel marking curve, and hash-pinned per-row decisions.",
+    "meaning": "The classifier still separates exact arithmetic decisions from low genus and local data, but its current NS0031 row is unresolved rather than excluded. No coarse arithmetic quotient or formal branch supplies a full rational marking.",
+    "generalization": "Classify the full marking moduli problem rather than its coarse arithmetic quotient; when a period-map premise fails, retract only the affected row and keep all unrelated exclusions and UNKNOWN rows explicit.",
+    "status": "dated classifier had 1 possible, 2 excluded and 63 unknown; the NS0031 exclusion was withdrawn, so its current row is UNKNOWN and no equation handoff follows",
+    "evidence": [
+      "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+      "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+      "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS",
+      "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+    ]
+  },
+  {
+    "id": "MECH-19",
+    "name": "Arithmetic full-marking gate",
+    "category": "arithmetic",
+    "symptom": "A geometric Picard-rank-19 lattice and rootless MW17 frame appear to provide an arithmetic rank-17 fibration over QQ.",
+    "resolution": "Compute the Galois action on the trivial lattice, MW lattice, and discriminant glue; require all nineteen named divisor classes and a saturated rational section basis over the base field.",
+    "meaning": "Geometric Shioda--Tate rank need not survive as rational Mordell--Weil rank, and a geometric same-NS corridor cannot repair a missing rational source marking. NS0031 is UNKNOWN after correction of its period-group argument; its former exclusion is not a current example of a proved arithmetic obstruction.",
+    "generalization": "Make field-of-definition data part of every foundry state and fail before equation compilation when the full arithmetic marking is obstructed.",
+    "evidence": [
+      "EC-K3-ARITHMETIC-RANK-TRANSFER",
+      "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+      "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS"
+    ]
+  }
+]

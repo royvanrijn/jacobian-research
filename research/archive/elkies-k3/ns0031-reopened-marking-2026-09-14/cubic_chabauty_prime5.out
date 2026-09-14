@@ -1,0 +1,68 @@
+60
+50000
+3508285743
+2.29-10
+5.089
+32.09MB
+2 29 10
+DELTA 1
+RANK_BOUNDS 1 1
+MW
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+2*A.1 = 0
+RANK_PROVED true FULL_GROUP_PROVED true
+MAP Mapping from: CrvEll: E to Projective Space of dimension 1 over Rational Field
+Variables: $.1, $.2
+with equations :
+$.2
+2*$.1 + $.2
+CHABAUTY_BOUND 8 INDEX_PRIMES 1 RESIDUAL_COSETS <Mapping from: GrpAb: A to Abelian Group isomorphic to Z/2 + Z/15000
+Defined on 2 generators
+Relations:
+2*$.1 = 0
+15000*$.2 = 0, {
+7498*$.2,
+$.1 + 7498*$.2
+}>
+FOUND_GROUP_ELEMENTS {
+0,
+-4*A.2,
+A.1 - 2*A.2,
+A.1 - 4*A.2,
+A.1,
+-2*A.2
+}
+FOUND_RATIONAL_IMAGES [ (1 : 1), (-1 : 1), (1 : 0), (1 : 1), (-1 : 1), (1 : 0) ]
+DELTA -1/2*a
+RANK_BOUNDS 1 1
+MW
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+2*A.1 = 0
+RANK_PROVED true FULL_GROUP_PROVED true
+MAP Mapping from: CrvEll: E to Projective Space of dimension 1 over Rational Field
+Variables: $.1, $.2
+with equations :
+-2*$.1
+-$.2
+CHABAUTY_BOUND 8 INDEX_PRIMES 1 RESIDUAL_COSETS <Mapping from: GrpAb: A to Abelian Group isomorphic to Z/2 + Z/52500
+Defined on 2 generators
+Relations:
+2*$.1 = 0
+52500*$.2 = 0, {
+26250*$.2,
+$.1 + 26250*$.2
+}>
+FOUND_GROUP_ELEMENTS {
+0,
+A.1 - 2*A.2,
+2*A.2,
+A.1,
+A.1 + 2*A.2,
+-2*A.2
+}
+FOUND_RATIONAL_IMAGES [ (0 : 1), (1/2 : 1), (1/2 : 1), (0 : 1), (-1/2 : 1), (-1/2 : 1) ]
+DONE

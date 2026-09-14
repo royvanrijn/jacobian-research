@@ -1,0 +1,79 @@
+{
+  "arithmetic_helpers": {
+    "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py": "e2bb356dc9006893f682bbdd32758ca04b25f7a234ca8a4c3d55c5eef4d01435",
+    "elkies-k3/scripts/verify_r17_mestre_shared_twist.py": "f529b6034a39e8e9af3df0db3f2acd91979c476a9eb0d3f7942e40da73d4fd5a"
+  },
+  "controls": [
+    {
+      "D": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "d": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "name": "four-nodes-genus-one",
+      "s": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "square_factor": [
+        1
+      ]
+    },
+    {
+      "D": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "d": [
+        1,
+        0,
+        1
+      ],
+      "name": "five-nodes-genus-zero",
+      "s": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "square_factor": [
+        0,
+        1
+      ]
+    }
+  ],
+  "limits": {
+    "address_space_gib": 4,
+    "cpu_seconds": 40
+  },
+  "parents": [
+    "published-r17",
+    "alternate-q80",
+    "curve302-parent",
+    "x1092-class1"
+  ],
+  "prime": 1009,
+  "producer_sha256": "61861fec4ba2f2687220cfbf6c7b0438ea8c11cf2882267ab453fccf968234ec",
+  "sage_version": "10.9",
+  "schema": "common-quartic-singularities-input-v1",
+  "scope": "Symbolic identities, two explicitly constructed control parents, and four complete constant-x parameter lines. No fixed-parent quartic search, point search, descent, or Mestre auxiliary-function variation.",
+  "selection": "Controls are derived algebraically. Prime1009 was chosen after the documented modular probes; it is a proof witness, not a predeclared search sample.",
+  "source": "artifacts/generated-results/elkies-k3-mestre-parent-branch-cancellation-v1/input.json",
+  "source_sha256": "8aff5043dd7cfd535fecfcdb3cf6fc06e456c74dc112d2a830b4caa5e533824c"
+}

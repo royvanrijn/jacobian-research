@@ -1,0 +1,411 @@
+{
+  "arms": 123,
+  "boundary": "A separate clean ablation and retrospective validation. Historical V1 results and gate remain unchanged. Both fitted arms use identical pure-q and real features; only the full arm computes extra gcd features. Initial ranks M18-M19 and M24-M25, not M27+. Conditional successes and CPU costs are not a new rank record or population speedup theorem. Offline fitting/input audit/independent replay costs are shown separately from per-arm process-tree CPU.",
+  "cases": 41,
+  "files_sha256": {
+    "analysis-lock.json": "710a5fca931613c7ccedc660933860753ead2b42451f949e3ad9c1b84743c08d",
+    "audit-gap-resolution.json": "7a4861db5b2cdf5cd4cb6e8574ea4ac6103d8034519dc48b578f0d3da2eab941",
+    "comparison.csv": "000b24b3847242c334459a9a540c5e7f2acbdc61258eb8d37f7b339149786791",
+    "comparison.pdf": "12512a50cdd5918f911dc24f8dc270397355316faf5ecd946f0b4187a856e089",
+    "comparison.png": "c7056f1e3f0ea091a175998409edbc1586c301a4a36c59f081ef489fae0c4a79",
+    "cpu-replay-manifest.json": "03661f66d292bd2ecdadc8b06c8db00febb3deeff08358de45ee1243cc5ae37b",
+    "cpu-replay.tar.gz": "56182a63cb0ad33b5ca56c5e5b38ea1df9725c5486e9e42803ef386826e5ce22",
+    "design.json": "726c3cf44ee5ec1e33bc4551838121ea2519acca0f9bbc2965a908e303b4f100",
+    "eligible_banks.json.gz": "f2a832130901a9da77ce401d042d5fb265dbca9dfaa96962826f4899779f821c",
+    "fit.json": "d4986b134677dfccf02ca786b0812f6b4f7a8e73ab0c41d47cbdf534197b2cc3",
+    "hessian-cancellation-initial.json": "2725974d8b4219fae3eb6dc26f5ef0a06a4df096905d3b1ef1e69110b38dd250",
+    "hessian-cancellation.json": "95888602617fd1acab2666b317d8c83fbbd066a821bcb60b1c25bc0a8398306a",
+    "inputs.json": "0e62bd90230cd8f55aadd763997a8a232a10d09633fd5d941315b05a9863967c",
+    "mapping-smoke.json": "da6fe5bc9cda527de0d950cc5b5b34f0f122cce8e3443688d9fc5e372faeab0b",
+    "oracle.json.gz": "fb78ec96fdf574f6be16e73e7e3c60702bf854988f99b110001e8878b3510c21",
+    "preflight.json": "e426c8650786e4a4e3092c741301d17f4b0cab07e81564c64e0fec8f5a5b05fb",
+    "protocol.json": "5a2ea3accb581a490a246645d56dd9cda33fef3aed8a18e5863782b27ad0ff14",
+    "roster.json": "18248cb97fff230e3df6d0c664758ac383fe9d2bb7c57607944904918a9f8ef2",
+    "supervision.json": "3d701c25c6d7db6b8e53c4a8324df880be0984e2003a2f263f2224d01e484d70",
+    "training-features.json.gz": "3f53107312227bbc7f47a8497d86d364d3fc1b41b7d6db1b673cf0616b7f044e",
+    "training-verified.json": "2a5ca14b119b946dc6eea4a8f312f3ea34d66e3e675bcc92f68ed90063b452d7",
+    "verified.json": "203fe985eb9ba6be221a5fd176972719f521abba35d86bda53788cdde15e66b6"
+  },
+  "independent_gain_proofs": 114,
+  "offline_cpu_seconds": {
+    "fit.json": 106.314722975,
+    "preflight.json": 56.739329457000004,
+    "training-verified.json": 341.994149351,
+    "verified.json": 199.106389802
+  },
+  "point_calls": 1605,
+  "residue_leaves": 3213287,
+  "scopes": {
+    "all": {
+      "comparisons": {
+        "real_q_g_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 41,
+          "cases_faster": 5,
+          "cpu_ratio": 1.0976840234999348,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0541230181946166,
+            1.1485799462747366
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 2
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.7850366202065091,
+            0.9381739428580929
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.8642905685125926,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_g_vs_real_q": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 41,
+          "cases_faster": 4,
+          "cpu_ratio": 1.152041244856778,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0110808764726766,
+            1.3430552697799332
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 1
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.6935952793155545,
+            0.9890405662317987
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.8451817284088334,
+          "reference": "real_q",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q",
+          "cases": 41,
+          "cases_faster": 11,
+          "cpu_ratio": 0.9528166013156927,
+          "cpu_ratio_bootstrap_ci95": [
+            0.8207930157100998,
+            1.0816575222341749
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 1
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.8822359136411586,
+            1.2039659773630165
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 1.0226091495609282,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        }
+      },
+      "totals": {
+        "factor_free": {
+          "cases": 41,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.17636148599999824,
+            "initial_verification_cpu_seconds": 48.493965529,
+            "map_and_feature_cpu_seconds": 4.1246817149999995,
+            "point_backend_cpu_seconds": 328.045351465,
+            "rank_proof_cpu_seconds": 18.217486804000004
+          },
+          "cpu_seconds": 401.19755100000015,
+          "literal_hit_cases": 35,
+          "point_calls": 545,
+          "recoveries": 39,
+          "unknown_worker_arms": 0
+        },
+        "real_q": {
+          "cases": 41,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.2104736050000049,
+            "initial_verification_cpu_seconds": 48.578466116,
+            "map_and_feature_cpu_seconds": 17.46893220100002,
+            "point_backend_cpu_seconds": 296.08590394099997,
+            "rank_proof_cpu_seconds": 17.794306624999997
+          },
+          "cpu_seconds": 382.2676869999994,
+          "literal_hit_cases": 32,
+          "point_calls": 494,
+          "recoveries": 38,
+          "unknown_worker_arms": 0
+        },
+        "real_q_g": {
+          "cases": 41,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.3444073190000063,
+            "initial_verification_cpu_seconds": 48.520383557,
+            "map_and_feature_cpu_seconds": 29.073492136999963,
+            "point_backend_cpu_seconds": 342.93422079600003,
+            "rank_proof_cpu_seconds": 17.359431461
+          },
+          "cpu_seconds": 440.38814200000047,
+          "literal_hit_cases": 31,
+          "point_calls": 566,
+          "recoveries": 37,
+          "unknown_worker_arms": 0
+        }
+      }
+    },
+    "deep": {
+      "comparisons": {
+        "real_q_g_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 17,
+          "cases_faster": 1,
+          "cpu_ratio": 1.1507725124279693,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0595642797975582,
+            1.2990602165022023
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 0
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.7697872564368502,
+            0.9437841753172337
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.868981479137123,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_g_vs_real_q": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 17,
+          "cases_faster": 2,
+          "cpu_ratio": 1.0441633856455539,
+          "cpu_ratio_bootstrap_ci95": [
+            0.8972905293559755,
+            1.1998529984838207
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 0
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.8334354302379697,
+            1.1144662506760667
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.9577045256971448,
+          "reference": "real_q",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q",
+          "cases": 17,
+          "cases_faster": 2,
+          "cpu_ratio": 1.10210004320014,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0287285544137572,
+            1.2602995215044144
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 0
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.7934621754132701,
+            0.9720737270489399
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.9073586433190995,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        }
+      },
+      "totals": {
+        "factor_free": {
+          "cases": 17,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.038681905000004235,
+            "initial_verification_cpu_seconds": 21.244833995,
+            "map_and_feature_cpu_seconds": 1.2760005170000204,
+            "point_backend_cpu_seconds": 107.39662163799997,
+            "rank_proof_cpu_seconds": 8.684876047000001
+          },
+          "cpu_seconds": 139.51574900000006,
+          "literal_hit_cases": 14,
+          "point_calls": 171,
+          "recoveries": 17,
+          "unknown_worker_arms": 0
+        },
+        "real_q": {
+          "cases": 17,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.05657296399999634,
+            "initial_verification_cpu_seconds": 21.423379227999998,
+            "map_and_feature_cpu_seconds": 6.273371387999995,
+            "point_backend_cpu_seconds": 116.42696409500002,
+            "rank_proof_cpu_seconds": 8.699476917999998
+          },
+          "cpu_seconds": 153.76031299999994,
+          "literal_hit_cases": 13,
+          "point_calls": 183,
+          "recoveries": 17,
+          "unknown_worker_arms": 0
+        },
+        "real_q_g": {
+          "cases": 17,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.09264890100000156,
+            "initial_verification_cpu_seconds": 21.34801121,
+            "map_and_feature_cpu_seconds": 9.647632615999996,
+            "point_backend_cpu_seconds": 119.850527672,
+            "rank_proof_cpu_seconds": 8.724703579000003
+          },
+          "cpu_seconds": 160.550889,
+          "literal_hit_cases": 11,
+          "point_calls": 188,
+          "recoveries": 17,
+          "unknown_worker_arms": 0
+        }
+      }
+    },
+    "shallow": {
+      "comparisons": {
+        "real_q_g_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 24,
+          "cases_faster": 4,
+          "cpu_ratio": 1.069379876098531,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0243675302948363,
+            1.1139736264714761
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 2
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.7221228389642189,
+            0.9721938503828338
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.8501103577968835,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_g_vs_real_q": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q_g",
+          "cases": 24,
+          "cases_faster": 2,
+          "cpu_ratio": 1.2246311709835722,
+          "cpu_ratio_bootstrap_ci95": [
+            1.0246145457263542,
+            1.549321464156173
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 1
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.5626821559607893,
+            0.9759767750432754
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 0.7776879887975088,
+          "reference": "real_q",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        },
+        "real_q_vs_factor_free": {
+          "bootstrap_undefined_rate_samples": 0,
+          "candidate": "real_q",
+          "cases": 24,
+          "cases_faster": 9,
+          "cpu_ratio": 0.8732260793587754,
+          "cpu_ratio_bootstrap_ci95": [
+            0.6885906526174235,
+            1.0541938957631676
+          ],
+          "original_style_time_gate_passed": false,
+          "paired_disagreements": {
+            "candidate_only": 0,
+            "reference_only": 1
+          },
+          "paired_stratified_bootstrap_ci95": [
+            0.8599203683662416,
+            1.4314489600337228
+          ],
+          "primary_gate_passed": false,
+          "recovery_per_cpu_ratio": 1.0931252250807642,
+          "reference": "factor_free",
+          "scope": "Conditional on the retained family/stratum roster, 10000 paired case-bootstrap draws. No familywise correction or population-rank theorem."
+        }
+      },
+      "totals": {
+        "factor_free": {
+          "cases": 24,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.137679580999994,
+            "initial_verification_cpu_seconds": 27.249131534,
+            "map_and_feature_cpu_seconds": 2.848681197999979,
+            "point_backend_cpu_seconds": 220.64872982700004,
+            "rank_proof_cpu_seconds": 9.532610757
+          },
+          "cpu_seconds": 261.6818020000001,
+          "literal_hit_cases": 21,
+          "point_calls": 374,
+          "recoveries": 22,
+          "unknown_worker_arms": 0
+        },
+        "real_q": {
+          "cases": 24,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.15390064100000855,
+            "initial_verification_cpu_seconds": 27.155086888,
+            "map_and_feature_cpu_seconds": 11.195560813000025,
+            "point_backend_cpu_seconds": 179.65893984599995,
+            "rank_proof_cpu_seconds": 9.094829706999999
+          },
+          "cpu_seconds": 228.50737399999946,
+          "literal_hit_cases": 19,
+          "point_calls": 311,
+          "recoveries": 21,
+          "unknown_worker_arms": 0
+        },
+        "real_q_g": {
+          "cases": 24,
+          "cpu_components": {
+            "admission_cpu_seconds": 0.25175841800000476,
+            "initial_verification_cpu_seconds": 27.172372347,
+            "map_and_feature_cpu_seconds": 19.425859520999968,
+            "point_backend_cpu_seconds": 223.08369312400004,
+            "rank_proof_cpu_seconds": 8.634727881999996
+          },
+          "cpu_seconds": 279.83725300000043,
+          "literal_hit_cases": 20,
+          "point_calls": 378,
+          "recoveries": 20,
+          "unknown_worker_arms": 0
+        }
+      }
+    }
+  },
+  "source_sha256": "84afca3432a2ab8b5f1eb91810ade6be8f997ad52ddbc72cb34fc7fdbd94a33a",
+  "status": "COMPLETE_FROZEN_THREE_POLICY_VALIDATION"
+}

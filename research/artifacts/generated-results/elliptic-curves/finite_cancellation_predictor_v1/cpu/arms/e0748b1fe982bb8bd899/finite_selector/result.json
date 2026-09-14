@@ -1,0 +1,32 @@
+{
+  "arm": "finite_selector",
+  "boundaries": "Known-curve control. Exact independence beyond input subgroup; no novelty or rank upper bound. Cached V3 centre bank reused, all per-worker costs charged.",
+  "case": "e0748b1fe982bb8bd899",
+  "charts": [
+    {
+      "cpu_after": 1.7906899359999997,
+      "index": 0,
+      "new_direction": false,
+      "selection": "neighbour-p3-r2",
+      "status": "bounded_search_complete"
+    },
+    {
+      "cpu_after": 2.504605632,
+      "index": 1,
+      "new_direction": true,
+      "selection": "neighbour-p5-r2",
+      "status": "bounded_search_complete"
+    }
+  ],
+  "cpu_seconds": 2.975176098,
+  "family": "11952",
+  "initial_rank": 20,
+  "map_and_feature_cpu_seconds": 0.10274037000000003,
+  "point_backend_cpu_seconds": 1.2073982060000001,
+  "point_search_calls": 2,
+  "protocol_sha256": "41207a9a5b9d7ff39e729345f404e47bc4032fb76c136a0b7e4ff97624b8c2dd",
+  "rank_lower_bound": 21,
+  "status": "CERTIFIED_NEXT_DIRECTION",
+  "success": true,
+  "wall_seconds": 2.972713731986005
+}

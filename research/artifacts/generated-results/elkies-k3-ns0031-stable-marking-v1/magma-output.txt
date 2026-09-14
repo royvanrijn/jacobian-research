@@ -1,0 +1,42 @@
+60
+50000
+264432755
+2.29-10
+5.879
+85.16MB
+MAGMA_VERSION 2 29 10
+BASE_MW_Z_GENERATED_BY_0_0_PROVED
+Abelian Group isomorphic to Z/2 + Z + Z
+Defined on 3 generators
+Relations:
+2*$.1 = 0
+Mapping from: Abelian Group isomorphic to Z/2 + Z + Z
+Defined on 3 generators
+Relations:
+2*$.1 = 0 to RngOrd: OK
+CUBIC_FIELD_AND_CLASS_GROUP_PROVED
+CASE 0 RANK_BOUNDS 1 1 FULL_MW_GROUP_PROVED true
+ELLIPTIC_AINVS [
+2*a^2 + 4*a - 12,
+-18*a^2 - 24*a + 92,
+88*a^2 + 124*a - 456,
+-364*a^2 - 402*a + 1696,
+0
+]
+MW_GENERATORS [ (8*a^2 + 10*a - 40 : -8*a^2 - 10*a + 40 : 1), (7*a^2 + 12*a - 40 : -10*a^2 - 4*a + 36 : 1) ]
+CASE 0 CHABAUTY_EXACT_BOUND 6 INDEX_CONDITION 11 RESIDUAL_COSETS_EMPTY true
+RATIONAL_IMAGES [ (1 : 1), (-1 : 1), (1 : 0), (1 : 1), (-1 : 1), (1 : 0) ]
+CASE 0 PASS
+CASE 1 RANK_BOUNDS 1 1 FULL_MW_GROUP_PROVED true
+ELLIPTIC_AINVS [
+0,
+2*a^2,
+0,
+4*a^2 + 6*a,
+0
+]
+MW_GENERATORS [ (0 : 0 : 1), (-a^2 + 4 : -4*a^2 - 4*a + 12 : 1) ]
+CASE 1 CHABAUTY_EXACT_BOUND 6 INDEX_CONDITION 1 RESIDUAL_COSETS_EMPTY true
+RATIONAL_IMAGES [ (0 : 1), (1/2 : 1), (1/2 : 1), (0 : 1), (-1/2 : 1), (-1/2 : 1) ]
+CASE 1 PASS
+PASS_NS0031_GENUS2_RATIONAL_POINTS_EXACT_12

@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://magma.maths.usyd.edu.au/xml/calculator.xml",
+  "input_sha256": "41b59833be6ee3dd0ac8a032564fffe118e02f162b192646e0780a7b37313dc8",
+  "cpu_limit_seconds": 60,
+  "status": "PASS_UNCONDITIONAL_FULL_MW_AND_ELLIPTIC_CHABAUTY",
+  "seconds": 7.09709378995467,
+  "output_sha256": "1c567eebc6f86a58dd9b4e70ecf3f87b9f3f57435077454c6de6535d681c9d3b",
+  "magma_version": "2.29-10",
+  "date": "2026-09-14",
+  "verification": "Both rank-one full Mordell-Weil groups proved; exact Chabauty bound 6 in each case, index conditions discharged, no residual cosets; all asserted endpoints present."
+}

@@ -127,14 +127,14 @@
     {
       "surface_id": "K3-d1b1381f87d69f1c",
       "arithmetic_field_of_definition": {
-        "tier": 2,
-        "status": "UNKNOWN_NS0031_STABLE_PERIOD_GROUP_MAP_CORRECTED",
-        "candidate_eligible": true,
+        "tier": 0,
+        "status": "PASS_CORRECTED_FULL_STABLE_QQ_MARKING_OBSTRUCTION",
+        "candidate_eligible": false,
         "evidence": [
-          "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
-          "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+          "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+          "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md"
         ],
-        "boundary": "The norm-one obstruction does not extend to the full marking through the claimed map. Determine the full stable period curve and arithmetic descent; no positive marking or equation eligibility is inferred."
+        "boundary": "Exact rational rank-19 marking exclusion via the full genus-10 stable curve and its genus-two quotient; formal and geometric controls remain valid."
       },
       "source_equation_precursor": {
         "tier": 1,

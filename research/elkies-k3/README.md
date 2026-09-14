@@ -38,8 +38,8 @@ limits, checkpoints and a certificate plan.
 
 | Need | Source |
 |---|---|
-| NS0031 exclusion withdrawn; rational marking UNKNOWN | [Exact period-group correction and retained modular arithmetic](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
-| Two independent gains on one quadratic cover | [Open construction](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Branch-cancellation criterion and parent gates](BRANCH_FIRST_CORRELATED_QUADRATIC_COVERS_2026-09-14.md) |
+| NS0031 full rational rank-19 marking excluded | [Full stable group, genus-10 Q curve and exact arithmetic obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md) |
+| Two independent gains on one quadratic cover | [Open MW17 target](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Factor strata and the Q80 same-branch exclusion](COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md) |
 | Rank balance, saturation, marking and equation-lift hypotheses | [Reusable theorem layer](RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | Historical corrections and route identities | [Process atlas](ELKIES_K3_PROCESS_ATLAS.md) |
 | Established algorithms and novelty boundaries | [Literature map](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) |
@@ -93,23 +93,23 @@ is a dated snapshot.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION 8aac526ec5ca3822 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200 80ab545a98b4e2d7 -->
-<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 582b0c9d781037fb -->
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 06c6fe2e29815616 -->
 <!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
-<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION cf8720d3d8c90dac -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 71290f86a475074b -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK e79dd42ecb04dd8f -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 2a4b94e1a8eb061b -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK c3fb941c5a24bc1f -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER e99570e3cb1edca8 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 169e60feb544bb29 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 <!-- status-consumer: EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS e68a8f4b00720de3 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6f5cc7d2daf2dfe2 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 f2dcfada11e6b5f2 -->
 <!-- status-consumer: OP-EC-NEXT f36c4d02969820a7 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

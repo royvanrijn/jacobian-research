@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://magma.maths.usyd.edu.au/xml/calculator.xml",
+  "input_sha256": "0abcf9b71eea419dc697b27e04f1d7054f6649f1e70b0836509592fe203d5d61",
+  "cpu_limit_seconds": 60,
+  "status": "RESPONSE_RETAINED_NOT_AUTOMATICALLY_VERIFIED",
+  "seconds": 6.28363200702006,
+  "output_sha256": "3b3f5fea6a47ad9e6dea77c793b6bd13a8d044041be17ff2c1ec099ce716d97b"
+}

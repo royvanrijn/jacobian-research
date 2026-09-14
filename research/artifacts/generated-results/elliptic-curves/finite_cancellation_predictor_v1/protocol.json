@@ -1,0 +1,20 @@
+{
+  "schema": "finite-cancellation-predictor.v1",
+  "frozen_before_target_measurement": true,
+  "objective": "Test realized cancellation, not the worst-case C/L bound, as a target-blind predictor of model and residue accessibility.",
+  "population": "All retained full-cohort endpoint packets indexed by seed_amplification_history_v1, all 491 research-curve registry endpoints and their rank sources, and retained public exceptional controls. Preserve missing sources and uncertified generic-complement joins as gaps; never reconstruct missing evidence.",
+  "units": "A literal signed point is an observation, not a new independent direction. Deduplicate exact transported points up to sign within the same displayed model; keep rationally isomorphic curves/twists in one j holdout group. Different certified packets need not have mutually independent unions.",
+  "anchors": "First two points of the independently documented generic subgroup, in source order, fixed before target evaluation. No winning-chart selection. Separately retain the twelve original Curve302 winning-model diagnostics as development only.",
+  "models": "Existing factor-free V3 mapper, followed by at most the first two distinct integral degree-p neighbours in increasing prime/root order for odd primes at most31. Check exact invariant and coordinate identities. No global minimization or discriminant factorization.",
+  "prime_panel": [2,3,5,7,11,13,17,19,23,29,31],
+  "local_tree": {"odd_depth": 4, "two_depth": 8, "node_cap_per_prime": 4096, "censoring": "Retain unresolved residue mass; never label it soluble or insoluble. Model expectation features condition on resolved soluble mass only and retain the omitted mass as a feature."},
+  "local_features": "Uniform primitive projective residue mass, q-square feasibility, constant v_p(gcd(N,D)), v_p(q), soluble mass weighted by p^(v_p(q)/2), and cancellation expectation under each of the two measures. No target coordinates enter this computation.",
+  "real_feature": "Mean log2(max(abs(N),abs(D))/H^4) on the fixed boundary grid (i,32),(32,i), -32<=i<=32, with q>=0, removing projective duplicates. This is a feature, not a certified real bound.",
+  "predictors": ["factor_free", "real_only", "uniform_local_g_over_S", "differential_local_g_over_S", "ridge_real", "ridge_real_and_finite"],
+  "regression": "Predict log2(H_model/H_factor_free), using within-anchor feature differences, standardized on training groups, ridge penalty10 and an intercept. Five deterministic SHA256(j) folds plus leave-one-family-out sensitivity; no hyperparameter search. Both signs are measured; use the cheaper sign for a literal direction. Curve302 is development-only.",
+  "residue_test": "Compare target occupancy to the resolved q-soluble projective null and differential-weighted null. Test low- and high-cancellation halves with randomized fractional tie allocation. Cluster uncertainty by j, never by anchor, point sign, prime or model.",
+  "positive_gate": "A finite-feature model selector must improve geometric mean H^2 by at least10 percent against factor-free and the real-only ablation, with a j-cluster bootstrap95 percent upper ratio below1, before a CPU scheduler claim is attempted. Report all fixed predictors, signed effects and family sensitivity. Failure is scoped to this feature/model/anchor class, not a universal impossibility.",
+  "cpu_gate": "If the accessibility gate passes, freeze a separate target-blind CPU replay plan before timing. Charge every preparation attempt and compare completed target recoveries against factor-free V3 at matched CPU. H^2 alone is not CPU.",
+  "limits": {"map_wall_seconds_per_anchor": 10, "analysis_cpu_seconds_initial_cap": 1800, "checkpoint": "One immutable case JSON per curve/generic-anchor pair; errors and timeouts retained. No elliptic point search during the accessibility stage."},
+  "claim_boundary": "Known-point conditional prediction experiment. No new points, rank bound, genus statement, uniform coverage optimization, or claim that a known point samples all representatives of its quotient direction. Historic discovery and publication selection bias remain."
+}

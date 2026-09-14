@@ -1,0 +1,108 @@
+{
+  "arms": [
+    "factor_free",
+    "finite_selector"
+  ],
+  "blinding": "Worker reads inputs.json and this fit only. All12 j groups and Curve302 excluded from training. Legacy final endpoints establish withholding eligibility only. This is a newly scheduled retrospective control, not previously unknown curves.",
+  "cases": 12,
+  "cost": "Charge Python plus child-process CPU from worker entry, including initial finite tables, exact seed verification, all candidate maps/features, discarded models, point calls and output rank proof. Cached input landscapes are common to both arms. Offline training cost reported separately.",
+  "cpu_seconds_per_arm": 40,
+  "excluded_training_j_groups": [
+    "009be228374e37ee82021a689605ff4ceac584bec15132e4e9ee93da76e8551c",
+    "017d577ee249b5e13b2576bf0f0fce586c5d8c27aaf9361c1e6e7db7f60810fd",
+    "03e963f7c4a99e34ce791ae0cbbc1358bc25a353c51cbf8058eb3ec67556c505",
+    "0433062016ddeddc7b5b7c83c042f98ceba5f270f89fea40da974ad3c980b977",
+    "0453056fea4fb205d77866ac16b60fe0b15e74c171d54dc26f4f6dd8f2c5960b",
+    "04f7de584f3fb059f6e2b46af0d04454c13e2ffbc785c5278636cecbfc546d59",
+    "0646bcc81d2393e5a510dcef45bd292b220829ecddf730c3f4de076a435d05cb",
+    "072f90c8b488573ed2332dd10f5c107acfb1214a45b4937e0d01f241fc927725",
+    "094fd3b5c73484b93f990bb67751c968ff031f2631b46ff51c191a32a3f81fe0",
+    "09e900aca7cd1ec16f30f49bbe6eb79da268b6ad96177b9891b221dbdadd5b42",
+    "0f9f91d3df417f76213493b115f0aa47c505cc3e0945f7a46365dbff7373c59d",
+    "13c955c2f9930c1084c316912c8c56a9efbe1401925cf1f74727a2c4176e7640"
+  ],
+  "feature_protocol_sha256": "e52048411d409ac472435cdf935e05fd9bbf471377a96eb54b6b31ca7d5e37e7",
+  "fit": {
+    "coefficients": [
+      -0.784457569532562,
+      0.010331835098065425,
+      0.6055972401296802,
+      -0.19692126606607713,
+      0.055298046958056506,
+      -0.348355371178288,
+      -0.0034603735557340483,
+      0.0
+    ],
+    "features": [
+      "real_logS",
+      "coefficient_bits",
+      "local_g_uniform",
+      "local_g_differential",
+      "log_soluble_mass",
+      "unknown_mass_sum",
+      "missing_local_expectations"
+    ],
+    "means": [
+      -2.9137616801674286,
+      -3.457737326485073,
+      0.09691768459693717,
+      -1.2599004888101055,
+      -0.06648219953779279,
+      -0.00040987826460021123,
+      0.0
+    ],
+    "scales": [
+      3.10116259440733,
+      2.7022170305305155,
+      0.8106808441832986,
+      2.29967330554117,
+      0.44408275647297607,
+      0.0030160237737485965,
+      1.0
+    ]
+  },
+  "gp_sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+  "height": 125000,
+  "input_bindings": {
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-00afced4a28be454f129/batch-000/search-00/epoch-00/landscape/selection.json": "9e9cfba71fcc0c912000b767c57a80cb8f545ad4ddd8be12d3d15ac622ed9d55",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-00afced4a28be454f129/batch-000/search-00/seed.json": "828d1141b4f182734a1ebcc8b93de9ecb8c965727bc6097c32e4f5803a43da71",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-028da12e2b9b4daac78b/batch-000/search-00/epoch-00/landscape/selection.json": "1b085ccc57e8a277aaaeeb63ae4d9a83e9d598d4e2d68b0057744b7befcdf909",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-028da12e2b9b4daac78b/batch-000/search-00/seed.json": "7fdb54d3ee0d3ce21bc7ad42ef5dee3eb38c8ddcc280800171e1a81133cdf145",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-0b30de153a32fb76c632/batch-000/search-00/epoch-00/landscape/selection.json": "12428d6b01bd3dea7f280272aab7eb5bc47b0088d7abe31c8440a90892c68dbe",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-0b30de153a32fb76c632/batch-000/search-00/seed.json": "f2b2e2c14156d063947293b47510330b5de38a1ba694684fe26241980c0cbd07",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-26ad64ce10189bbabc5a/batch-000/search-00/epoch-00/landscape/selection.json": "b8b2222ca1c25aecbefbf407286a72601e6590b0314ca364197b11b1742810e7",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-26ad64ce10189bbabc5a/batch-000/search-00/seed.json": "53d00118ffe2139f8e5077306de533dd683c652668d673a5be3f6d8eef91c0b4",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-271564f26e12664556b4/batch-000/search-00/epoch-00/landscape/selection.json": "58f56f38e03c07a7c9731dd28b82a3219a4f005cf6d70f2d62d64504e65136c3",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-271564f26e12664556b4/batch-000/search-00/seed.json": "2f67b1f1aba6186be1fd61c6dcb69a14336a9a621e166270e27bf1b009e120d0",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-4202919fa1606c7dbfba/batch-000/search-00/epoch-00/landscape/selection.json": "fc25b3fd9dfe203f315b45d9be54fdcbe4641112f3fc1bdd702371f87d481721",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-4202919fa1606c7dbfba/batch-000/search-00/seed.json": "135771c3e203dac539a627c8419c6f4deaece793ffa92e8784770ab495c14ac1",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-67fe1ad9e96263a6a8bf/batch-000/search-00/epoch-00/landscape/selection.json": "a0a9847b77a0444e0c7226defff0c155b2a9a85d041dc4711e91c6e181fab5f8",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-67fe1ad9e96263a6a8bf/batch-000/search-00/seed.json": "b546d55b74a9ea3bae361ce367b2576a8dd2838379c648a1cc33e1bccda008f4",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-b6bd0a53802684158114/batch-000/search-00/epoch-00/landscape/selection.json": "98c425137f47b408c7685ad7b1fabc5eb8edfe05c136e46540d9317fe0e4c5b5",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-b6bd0a53802684158114/batch-000/search-00/seed.json": "dac6e4ce98d875c6bafd1f4a766574257b95a77208b8a38459df18b938e811bb",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-c1c61596468940fe47df/batch-000/search-00/epoch-00/landscape/selection.json": "657a0105d0a9a9d1a3b40ae452431dbf97192902c1c4a879bd6c56a9c6eaf28b",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-c1c61596468940fe47df/batch-000/search-00/seed.json": "3e9a2995c03f2a719999b949b9119250007b7c9cc27724c4322bee42f425b8df",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-caf37d8af29c6e8e74df/batch-000/search-00/epoch-00/landscape/selection.json": "fca68a877596ea5bef002194c46a2e839dcc68c2cd0c173c703047485986b68e",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-caf37d8af29c6e8e74df/batch-000/search-00/seed.json": "3b20a505fce3cc445c9699613c171be6c30e90929d7cca7d1f9ed41b106f8839",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-d7a579a32761774c596b/batch-000/search-00/epoch-00/landscape/selection.json": "0fa2bbed4101d0db119137bb5f38fdc9bcc1c2d7219e64256b0d3fec4f660208",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-d7a579a32761774c596b/batch-000/search-00/seed.json": "f73f78988ae88480c2316fdcec30d8154bcc49e6001596d2add74df332f7dd33",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-dea09f09762ca96b5be1/batch-000/search-00/epoch-00/landscape/selection.json": "f10987aeddae6364a77f3b3f975caef1c6228e877921f296678fa46440e4abf5",
+    "artifacts/local/elliptic-curves/broad-rank-v1/runtime/research/broad-cases/b-dea09f09762ca96b5be1/batch-000/search-00/seed.json": "89bbccabc559c36f9184123aad78872fec70a87c8d201a5598942e894d310f47"
+  },
+  "inputs_sha256": "97c1fa213efbf5701d47375722b116450fbb073b3cab268250b0b57d566d3b5a",
+  "maximum_centres": 48,
+  "order": "Alternate arm order by case ordinal; each arm in its own process.",
+  "point_wall_seconds": 5,
+  "selection": "Two lowest j hashes per six R17 families among retained broad next-direction banks with a separately certified larger endpoint and at least16 centres. No target coordinate or target accessibility used.",
+  "source_sha256": {
+    "finite_cancellation_cpu.py": "f8915ecb19022143139f116c3f258e4d396aa1570794a5fec3b96fe56ceca790",
+    "finite_cancellation_features.py": "1ca9551f12cf0c5648ea812419c53f81108413fc08f38e9e1d5acf79bbdfbafa",
+    "lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+    "pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de"
+  },
+  "status": "FROZEN_BEFORE_CPU_RUN",
+  "stop": "First independent finite column beyond the input subgroup, followed by standalone exact rank certificate; otherwise cap or bank exhaustion.",
+  "success_gate": "At least as many next-direction recoveries as factor-free at the identical per-case CPU cap, and at least10 percent less aggregate charged CPU to those terminal outcomes. Report paired disagreements; this small fixed control does not establish a population success probability.",
+  "training_cpu_seconds": 7.499811997000001,
+  "training_model_rows": 37294
+}

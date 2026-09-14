@@ -103,7 +103,7 @@ def verify(witness, original):
                 'order normalizer identity failed')
     require(mul(coordinates,coordinates) == [[int(i==j) for j in range(4)] for i in range(4)],
             'order transport is not an integral involution')
-    return 'PASS NS0031 stable reflection outside rational norm-one image; rational K3 existence remains UNKNOWN.'
+    return 'PASS NS0031 stable reflection outside rational norm-one image; this verifier makes no rational-K3 existence claim.'
 
 
 def main():
