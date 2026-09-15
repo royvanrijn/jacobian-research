@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_PREFLIGHT",
+  "source_sha256": "73654fc3f1edc7e6e154db9345ebad8465ee492b538881441fc147cb36067af2",
+  "reason": "The first-lift matrix is valid for every quadratic H, but the preview incorrectly required every retained contact quadratic to be irreducible. Some are split. Assertion stopped the run before any final certificate.",
+  "correction": "Remove only the irreducibility assertion. Retain the degree-two check and examine all 30 contact pairs."
+}

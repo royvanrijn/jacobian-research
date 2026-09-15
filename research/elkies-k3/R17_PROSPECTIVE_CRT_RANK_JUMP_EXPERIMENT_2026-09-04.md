@@ -147,10 +147,12 @@ upper bound remains `null`, never an inferred value.
 ## Phase 4: identical bounded search
 
 The manifest's original v1 backend was Sage/eclib at height 12.  A single
-predeclared canary spent its full 300 seconds inside
-`mwrank_EllipticCurve` initialization, never reached the search call, and
-returned no point.  This is recorded as an operational feasibility failure,
-not a bounded miss.
+predeclared canary exhausted its 300-second allowance during the combined
+eclib initialization phase, never reached the search call, and returned no
+point. The [runner](scripts/run_r17_prospective_crt_point_search.sage) places
+both `mwrank_EllipticCurve` and `mwrank_MordellWeil` between its two phase
+markers, so the retained log does not distinguish which initialization
+stalled. This is an operational feasibility failure, not a bounded miss.
 
 Before any point-search call completed or returned a point, a uniform v2
 amendment was frozen without changing candidates, cohorts, matching, features,

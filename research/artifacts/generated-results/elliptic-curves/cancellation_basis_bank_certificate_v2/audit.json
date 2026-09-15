@@ -1,0 +1,198 @@
+{
+  "boundary": "Independent byte, seed, native-rank receipt, minimum-packet, exact integer norm/parity, paired timing and bootstrap accounting. The primary workers performed full independent ellipsoid and native group checks. This accounting does not rerun ellipsoids, native rank proofs, maps or point searches; timing claims are finite execution observations.",
+  "certificate_bindings": [
+    {
+      "cvp_packets": 64,
+      "id": "fcf6ce8e6a518eb715d2-e01",
+      "selection_proof_sha256": "3849e83f995bf94444a8bb49b47d1923afce5482f4ccffb804329614d9d9a1fd"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "fcf6ce8e6a518eb715d2-e02",
+      "selection_proof_sha256": "78858e006e9091d0d81efa3e127834d9031d28fb2e008faa0baa9d5dd9d9d665"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "d8118d08f97701397827-e01",
+      "selection_proof_sha256": "13e8e358de2976e55b3503b040ff19cfb5c980251593c617afe951b8d77123e2"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "d8118d08f97701397827-e02",
+      "selection_proof_sha256": "2cf84364398503ae97a1b86d88d64d9a6d15467bc0c6890c5b2f2c8775614985"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "4eadec033b5416e7855d-e01",
+      "selection_proof_sha256": "52e7af8986c83563f8eb12a039c6fb8e4aeba717348f67ca6012f86ca6d3f2aa"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "4eadec033b5416e7855d-e02",
+      "selection_proof_sha256": "d97b8ba87744d46e1606b07994c5be8066fe6795592a7f0beb2e23658268ce44"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "a6752d6c85aa85d8fe24-e01",
+      "selection_proof_sha256": "febcf74dcd6bf8d34be282b2d43a09e0aadfb147d749f706d7a035ea03685c6c"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "a6752d6c85aa85d8fe24-e02",
+      "selection_proof_sha256": "bce7b4696870c2002d5df1a5a8142afb2d01cd331ca3d932d2fafd2ebab61d50"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "d33618f0b85ea3ff4912-e01",
+      "selection_proof_sha256": "29d2a1191f09925afa0964a06a227d11323ce2c2671390e453db7796c8442e01"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "d33618f0b85ea3ff4912-e02",
+      "selection_proof_sha256": "6b3a2f3dde2ab2a8e8bfb014001607700150ce8a813d8a7cba442a51cb20ca14"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "e5e6fd196dc41ae876b6-e01",
+      "selection_proof_sha256": "8b95b7c15c0867e4491f5c3b74089b836d06c396e550b80f5b93a258385d285a"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "e5e6fd196dc41ae876b6-e02",
+      "selection_proof_sha256": "2a81afdfb9d93279306b20be93a3f8adfe6ac1c5c13736665005f265401be2b7"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "7aefc0eeab0533699159-e01",
+      "selection_proof_sha256": "9663bed11ef4175cb7c9100b18b8218f9c7dd2cf4911b5963e3a40f2749f1417"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "7aefc0eeab0533699159-e02",
+      "selection_proof_sha256": "5e24a3de37ab4805db2e7764c07fcd1c4bfb44ac27495023a898573a3e061c3a"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "b719b7f68cfa87501099-e01",
+      "selection_proof_sha256": "437222b635f37a0d509828398be195188d445fc26fd5d872faa1b1edc40c80fa"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "b719b7f68cfa87501099-e02",
+      "selection_proof_sha256": "c30adc91798c022f3ac50044c9c27dd4bdf3e9dfac72deffeede390c8bdce195"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "b8fa92c40acb2c6edf66-e01",
+      "selection_proof_sha256": "eea8fe0cf45186d71b09b504af4114bb1d1cd667dd6962c3c1d4e389bd873e6c"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "b8fa92c40acb2c6edf66-e02",
+      "selection_proof_sha256": "cb2c9e586b1972daafa67eb4b82351fbcf6a0cb958e1668bf3fc80698c25e67f"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "6fd837e7455eee0e53e4-e01",
+      "selection_proof_sha256": "4d873fe768e76f325139a2f89b8e55135a1dcadcf1722190e57c2620441582df"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "6fd837e7455eee0e53e4-e02",
+      "selection_proof_sha256": "0c6ff4ceea483a319d0d34d252f4c1594ea499deabbfe26505d900f78a659f1a"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "d572443b6b5c9f96a1a8-e01",
+      "selection_proof_sha256": "964e335a6c8b8e4b584dec57d66903f6946aa1798085f7756a44eae3824d3e89"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "d572443b6b5c9f96a1a8-e02",
+      "selection_proof_sha256": "d5ec374f70380e65423d5a58d76591d3fae20cf692ec298bc814963b384f4bbd"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "d4f94f360b293a5093df-e01",
+      "selection_proof_sha256": "c98839a6221af09691199c2909317d11e0a606aa8982ef6d77858cc0f18cb13c"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "d4f94f360b293a5093df-e02",
+      "selection_proof_sha256": "15dcb09c81ee0b37ec75551dcdb420b08093d316c67975355e52486c078f7d80"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "716770c5430b7c9b2bfd-e01",
+      "selection_proof_sha256": "66c58197ca9385e99eb8052924301ee03aa40abf204c12611240562513b47143"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "716770c5430b7c9b2bfd-e02",
+      "selection_proof_sha256": "a8b24bf0fd881684af31750d9ef23e3dd7c9865519a8a65336b3e17600504901"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "81100911d8bbb905961f-e01",
+      "selection_proof_sha256": "66781f69c1f2663ab14b1dc444d68c4b0dab82d3ff4994eff440fea7b0ece62b"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "81100911d8bbb905961f-e02",
+      "selection_proof_sha256": "2c0e2b9e795c48047343b11a01011f8baf4fe7d97c55e3d778b307193c1360e9"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "0531f9a2aadea8f0dc7e-e01",
+      "selection_proof_sha256": "b5a745b23d6044451c119a411596963359db8c56d9c6cb3772359b61a98adce0"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "208dde8d631796bb6548-e01",
+      "selection_proof_sha256": "84e36c833dbd93879a29c0aa6a400059c345e39566484ac5c5d7690409ec3e78"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "97fd04d181c5d7fef317-e01",
+      "selection_proof_sha256": "c49f4fae14e887ed79c101dde59fbccd3f88cefaa2b717beb3f6b73c469b80f1"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "24ae4cca18d254c90520-e01",
+      "selection_proof_sha256": "8ddd39c42c00dab4af9e2e24e4f73986538ee3b150ce473bf8b53523ead57818"
+    },
+    {
+      "cvp_packets": 128,
+      "id": "24ae4cca18d254c90520-e02",
+      "selection_proof_sha256": "6580d9c9667ff67322a923054a0917c152937a98dc2ec7e442adbd68bb8bbd8c"
+    },
+    {
+      "cvp_packets": 64,
+      "id": "443b9e0c7fc39f223c79-e01",
+      "selection_proof_sha256": "7ccbfb4411b4f72e11aa732d4c0b86884b18cdef328e0d65cfc43df2ae32b936"
+    }
+  ],
+  "checker_sha256": "38792e47eed403eb9e0636b0c0350907bb5854fdc47341b1fa15827c9b5c3c71",
+  "counts": {
+    "independent_minimum_packets": 3264,
+    "map_recipes": 3264,
+    "native_word_checks": 7062,
+    "optimizer_nodes": 4020833,
+    "verification_nodes": 3666070
+  },
+  "cpu_seconds": 0.889686988,
+  "direct_integer_norm_checks": 6528,
+  "engineering_gate": true,
+  "fresh_native_subgroup_receipts": 68,
+  "full_child_cpu_seconds": {
+    "certificate_rebuild": 175.30070300000008,
+    "rational_rebuild": 251.0285729999999
+  },
+  "identical_bank_pairs": 34,
+  "minimum_vectors": 6528,
+  "point_search_calls": 0,
+  "protocol_sha256": "39b78c47a40bc3376b1eb2effe2647c093e3e18152636c07e2ad302b1892e4d8",
+  "status": "PASS_RETAINED_BANK_COST_ACCOUNTING",
+  "summary_sha256": "debeacfb6be5219ae7858d7cf5d5f8f5d5104fda6ad12df8f9aa2d7a744f5399",
+  "workers": 68
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "singular-bisection-geometry-v1",
+  "status": "PASS",
+  "anti_trace_height": "4*(arithmetic_genus+3)",
+  "quotient_candidates": [
+    {
+      "n": 0,
+      "required_k": "1/2",
+      "integral": false
+    },
+    {
+      "n": 1,
+      "required_k": "1",
+      "integral": true
+    },
+    {
+      "n": 2,
+      "required_k": "3/2",
+      "integral": false
+    }
+  ],
+  "plane_branch_degree": 6,
+  "branch_normalization_genus": 9,
+  "local_contact_delta": [
+    {
+      "contact_order": 1,
+      "delta": 0
+    },
+    {
+      "contact_order": 2,
+      "delta": 1
+    },
+    {
+      "contact_order": 3,
+      "delta": 1
+    },
+    {
+      "contact_order": 4,
+      "delta": 2
+    },
+    {
+      "contact_order": 5,
+      "delta": 2
+    },
+    {
+      "contact_order": 6,
+      "delta": 3
+    }
+  ],
+  "scope": "Symbolic height/intersection identities and finite ruled-surface cases only. Quotient extension, monodromy, tangent correspondence and Faltings finiteness are written arguments; no arithmetic point list or positive common cover is supplied."
+}

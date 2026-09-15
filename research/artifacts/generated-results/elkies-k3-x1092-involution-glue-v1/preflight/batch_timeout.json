@@ -1,0 +1,8 @@
+{
+  "status": "TIMEOUT",
+  "wall_seconds": 25,
+  "cpu_seconds_limit": 20,
+  "memory_bytes_limit": 1073741824,
+  "accepted_mathematical_output": false,
+  "reason": "Batched invocation exceeded its bound; no output was accepted. The cause was not diagnosed. Subsequent isolated small-group calls completed; the accepted packet is checked independently by exact matrix closure."
+}

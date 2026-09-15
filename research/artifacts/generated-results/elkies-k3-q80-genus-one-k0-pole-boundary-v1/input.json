@@ -1,0 +1,25 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/independent-replay.json": "358983a985afa43c903597578108058781c06894f11d4155a3b031a0796e5117",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/input.json": "0d40b5ad3c10ca4316898c5bbe95e813ef293e3d25b00126b7eb429e4ef1a69c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/quartic-comparison.json": "7ef1a62a87121df5752cf2b4e5bb452a980d250f94902ef2a42e71f5acf2bce9",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/quartic-input.json": "dbd2efd777b7b3e56143303ff47a0a48e3ec1669fd3030943217fe8a6cca07d0",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/quartic-producer.json": "87f02b543a5d7255b7a8aea73692ee7944eb6fb79d23cbf538d55fc75d58c9ef",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/quartic-replay.json": "3b78d585c48bc5c226e32da867074fe270541f2ab33cd9c4d8e9e891d5938d26",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/result.json": "cc992bc54a1b62a6a2b5c29108ced028a22f3568b6ec8737dc4109eb8dd8ef98",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/independent-replay.json": "a5239492d712613185d81814cc12661081375f14683714cd69eab1362173344c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/input.json": "c8fad1572156d4db60186e67e10dadd4fc68e445db29e4206608eea231409c30",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/nodal-hypotheses.json": "90e94a77d19cd51ee465bdd66803cad9ff8a93f39d4171ce3480e462ee33da4c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/result.json": "407ce9db938309fb4ecece09de5c8fea56f8926977cc6d967f46e64f5f55484f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md": "0241df6ad168f122379d253bd2bfd93a2a89f6a69ab7b28fe03347dc5eca8429",
+    "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md": "7fffda3810c34b30ba5e05a760a09c2e4b38a8e311ed23d7a3faecb3241f1c34",
+    "elkies-k3/scripts/verify_q80_genus_one_k2_orientation.py": "dc4842924d60fbebf7e99814cdc96787d39e066c6fd687c2d1577aeaf76bc55b",
+    "elkies-k3/scripts/verify_q80_k0_pole_boundary.py": "ccf626210cd2a897cca04ff8e7de7a0a9d2e13519dcd7632b4bdfc904a994f8c"
+  },
+  "cpu_seconds": 20,
+  "memory_bytes": 2147483648,
+  "prime": 131,
+  "schema": 1,
+  "scope": "Source hashes, exact nodal hypotheses and the finite height/pole-degree table only. Analytic, Gauss-reduction and divisor-descent arguments require the written proof."
+}

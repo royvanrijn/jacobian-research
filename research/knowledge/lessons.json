@@ -394,7 +394,7 @@
         "marked curve"
       ],
       "reviewed_claims": {
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "f2dcfada11e6b5f2",
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17": "354f87be7f576985",
         "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": "fecec75b4ff1e8e1",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY": "a7ad7d57e7812f1d",
         "EC-K3-NS0031-PERIOD-GROUP-COUNTERWITNESS": "1bf732bcc5b4f830",
@@ -2823,8 +2823,8 @@
       "title": "Reuse complete local images without collapsing the remaining global problem",
       "when": "A proposed RR incidence detector asks for classes outside the inherited image at an already certified place.",
       "use": "Reuse the553 complete good-prime images and all ten real and2-adic images: the inherited subgroup spans each. Preserve true/fake kernel data. A global comparison still needs simultaneous compatibility in a complete supported squareclass space, including unramified class contributions; the inherited combination can differ from place to place.",
-      "avoid": "Searching for an outside-inherited class at a place already proved fully spanned, identifying local proxies with the original global fields, or replacing global completeness with trial-prime support or known rational classes.",
-      "boundary": "The known rational Kummer dimension is18. A certified full Selmer dimension18 would give exact Jacobian rank18 and zero Sha[2]; a larger dimension is not automatically Sha. Prepared equation replay does not prove any local image or global Selmer group.",
+      "avoid": "Searching for an outside-inherited class at a place already proved fully spanned, identifying local proxies with the original global fields, or replacing global completeness with trial-prime support or known rational classes. Do not identify this inherited-subgroup membership obstruction with a Sha obstruction, or treat failed feature transfer as proof that cohomology explains amplification.",
+      "boundary": "The known rational Kummer dimension is18. A certified full Selmer dimension18 would give exact Jacobian rank18 and zero Sha[2]; a larger dimension is not automatically Sha. Prepared equation replay does not prove any local image or global Selmer group. Both frozen cases09/08 already have the simultaneous binary obstruction: individual blocks are soluble, but stacked inherited/augmented ranks are16/17. Both known true rational images have dimension18. Equal full Selmer dimensions alone would not establish differing realization; that inference also needs certified ranks. Subspace position requires specified arithmetic structure, and a full CT radical may contain divisible Sha.",
       "reopen_when": "A complete global algorithm or a new unresolved-place certificate supplies an obligation beyond the already closed local panels.",
       "claims": [
         "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908",
@@ -2833,12 +2833,14 @@
       ],
       "sources": [
         "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md",
-        "elliptic-curves/notes/DET1092_RR_COMPLETE_DYADIC_IMAGES_2026-09-08.md"
+        "elliptic-curves/notes/DET1092_RR_COMPLETE_DYADIC_IMAGES_2026-09-08.md",
+        "elliptic-curves/notes/SELMER_SUPPLY_VERSUS_REALIZATION_2026-09-14.md"
       ],
       "implementation": [
         "elliptic-curves/cas/verify_det1092_rr_full_selmer_inputs.sage",
         "elliptic-curves/cas/verify_det1092_rr_dyadic_image_panel.sage",
-        "elliptic-curves/cas/verify_det1092_rr_dyadic_images.sage"
+        "elliptic-curves/cas/verify_det1092_rr_dyadic_images.sage",
+        "elliptic-curves/cas/audit_rr_simultaneous_compatibility.py"
       ],
       "keywords": [
         "RR",
@@ -5348,20 +5350,26 @@
       "id": "METHOD-EC-RR-GLOBAL-ORDER-CERTIFICATION",
       "title": "Verify integral orders and the backend input contract before global Selmer arithmetic",
       "when": "Completing global descent on one of the two frozen large nonmonic RR sextics.",
-      "use": "Reuse the exact pair inputs and order checkpoints. A binary-sextic order removes an artificial monic index; certify ring closure and its trace discriminant before using it for generator reduction. Reconstructing a partial order after a generator change can lose integrality away from the trial primes. Keep complete supported squareclasses, class and unit contributions, local conditions and the true/fake comparison as separate obligations.",
+      "use": "Reuse the exact pair inputs and order checkpoints. A binary-sextic order removes an artificial monic index; certify ring closure and its trace discriminant before using it for generator reduction. Reconstructing a partial order after a generator change can lose integrality away from the trial primes. Keep complete supported squareclasses, class and unit contributions, local conditions and the true/fake comparison as separate obligations. Preserve both verified orders after a generator change by adjoining their pairwise basis products. In a commutative field their product lattice is already an order. The fixed RR join has independently checked containment, integral multiplication and Newton trace discriminants of22655/37378bits for cases09/08. The third retained order is contained in that join in both cases. Gcd-refining discriminant/index divisors and using the distinct coprime-list nfinit contract gives successor order discriminants22655/28881bits; exact support decomposition and containment replay independently.",
       "avoid": "Treating a nonempty nfcertify remainder as a field discriminant, treating known local or rational Kummer spans as a complete global space, or using nfcertify=[] on an arbitrary basis supplied to nfinit as an independent maximality proof. The supplied-basis example X^2-20 returns[] for the nonmaximal order of discriminant80.",
-      "boundary": "Cases09 and08 have verified model and field maps and integral orders, but no certified maximal order or global Selmer dimension. Both certification passes returned unresolved composites. The measured order sizes and failure receipts do not prove intrinsic infeasibility or equal residual dimensions. Same-fibre matching tests the marked construction, not a population rank effect.",
+      "boundary": "Cases09 and08 have verified model and field maps and integral orders, but no certified maximal order or global Selmer dimension. Both certification passes returned unresolved composites. The measured order sizes and failure receipts do not prove intrinsic infeasibility or equal residual dimensions. Same-fibre matching tests the marked construction, not a population rank effect. The joined orders improve the retained checkpoints but have no new maximality certificate; their size is not a field-complexity comparison. Both coprime-list nfcertify calls still return unresolved cofactors22633/28878bits, so global completeness remains open.",
       "reopen_when": "An exact maximal-order/support certificate or a different certified global upper-envelope method addresses the unresolved pair; reusing already completed local images alone is insufficient.",
       "claims": [
         "EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908"
       ],
       "sources": [
-        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md"
+        "elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md",
+        "elliptic-curves/notes/SELMER_SUPPLY_VERSUS_REALIZATION_2026-09-14.md"
       ],
       "implementation": [
         "elliptic-curves/cas/probe_det1092_rr_global_pair.sage",
         "elliptic-curves/cas/refine_det1092_rr_pair_order.sage",
-        "elliptic-curves/cas/verify_det1092_rr_global_pair.sage"
+        "elliptic-curves/cas/verify_det1092_rr_global_pair.sage",
+        "elliptic-curves/cas/combine_rr_pair_orders.sage",
+        "elliptic-curves/cas/verify_rr_pair_order_join.sage",
+        "elliptic-curves/cas/audit_rr_third_order.sage",
+        "elliptic-curves/cas/refine_rr_coprime_support.sage",
+        "elliptic-curves/cas/verify_rr_coprime_support.sage"
       ],
       "keywords": [
         "RR",
@@ -5382,10 +5390,10 @@
       "area": "elkies-k3",
       "title": "Count normalization delta with infinity and keep the high-rank parent fixed",
       "when": "Forcing two polynomial trace-zero bisections of arithmetic genus5 to share a quadratic cover of genus0 or1.",
-      "use": "Write F=x^3+A*x+B and its jet conditions. At a root of multiplicity m use delta=floor(m/2), and include the missing multiplicity at infinity in the degree12 binary form. Impose one literal D in both identities. Extract repeated factors D=e^2*d before deciding the genus: residual degree2 gives a possible genus0 boundary. Reuse the height8 independence criterion when the branch avoids the parent discriminant. For a fixed constant-abscissa line, the degree33 critical-point polynomial and critical-value norm can certify its entire singularity locus by exact interpolation and a good-prime squarefreeness witness. For the complete coefficient chart, factor the difference identity with g=gcd(D,h), u=gcd(h/g,r1-r2) and v=(h/g)/u after monic normalization. Keep all15 degree allocations and nine good coordinate patches; the squarefree height cross term is4-k-2*j. On Q80 use unramified Kummer descent to eliminate the complete k=4 genus-one case before any elimination. For genus0 pass to the full f(x_i)=q*s_i^2 chart with deg s_i<=5; repeated common-quartic models unnecessarily force a shared linear node factor. Keep all12 degree allocations. In the Q80 k2,j1 case use inherited unramified descent and the complete arithmetic-genus1 singular exclusion before coefficient elimination. After same-branch genus0 descent, the cross-height+/-2 cases have a smooth rational half-image. Reuse the complete branch atlas and exclude parent2-torsion over its residue fields with simple degree-one prime witnesses. Monic cubic integrality handles unbounded coordinates; specialization at ramification then forces anti-invariant height at least12. Before searching for a high-rank fibration on a new control surface, a complete good-prime surface count gives the cheap necessary bound rho_Q <= floor((22*p+#X(Fp)-1-p^2)/(2*p)). Subtract2 for any rational Jacobian fibration. Retain infinity and count a nodal cubic itself, not its normalization. Distinguish a cubic root from complete splitting and a square discriminant from a root. For a local full-splitting witness retain three distinct Hensel balls satisfying v(f)>2*v(f_prime) and pairwise disjoint error radii. Exact rational replay handles bad primes and weighted infinity without trusting approximate p-adic roots. Before coefficient elimination, pair the ramified norm-square class with inherited unramified alpha_T=X_T-theta by Weil reciprocity. Its odd divisor Z must satisfy Norm_Z(alpha_T) square for every T. For a single complementary fibre divisor this reduces to X_T(b)-e square. A complete good-prime root roster with one nonvanishing nonsquare character per point excludes that whole stratum. Recheck literal rational section identities and all infinity reductions; independence of the witness sections is unnecessary. For a degree2 branch divisor evaluate both selected-root norm-character vectors over the complete quadratic residue field. Use3*e^2+A when an inherited section meets the selected2-torsion root, and squareclass1 at a pole. Include roots with multiplicity at nodal quadratic residues. Distinguish rational branch pairs, unramified quadratic fields with rational or quadratic base residue, and ramified quadratic fields before deducing a coefficient congruence. After a genus0 branch collision is forced at a smooth fibre, first prove coefficient integrality using the flat divisor limit of the rational bisection and properness of genus0 stable maps. Treat the literal scalar valuation and constant nonsquare twist before enumerating reduced points. Recompute the finite basis Gram and use character rank and index-square divisibility to prove full saturation. Enumerate the complete norm4 lattice with exact rational LDL bounds, identify every polynomial point and test the full coefficient Jacobian, including homogeneous infinity. A simple ordinate zero has only its inherited split Hensel lift. Repeated contacts can support a nonsplit lift only if both required root labels survive at the same fibre. For genus1 k2, apply degree2 reciprocity to the unused root of P1-P2; this is only one norm condition. Use complete individual character codes and their pairwise XORs to classify both agreement and disagreement divisors. For a genus1 denominator limit, count positive-genus components and retain the actual zero-section multiplicity. A fourth-power smooth-fibre limit would require four unramified elliptic preimages and four separate nonconstant O tails, exceeding its O degree2. Keep the all-nodal case. With integral coefficients, compare complete reduced norm4 contact pairs and augment the full shared-quartic Jacobian by the first error from the literal coefficients modulo p^2. Use exact residue interpolation to cut a remaining polynomial search to p or p^3 tuples, including arbitrary scalar classes, and independently reconstruct square roots in the opposite coefficient direction. For a surviving nodal boundary, the anisotropic quadratic and quartic invariant give necessary local rational-point and j-valuation conditions.",
-      "avoid": "Treating a zero discriminant or a bounded coefficient miss as a four-node or full-family theorem; rejecting every repeated quartic as unusable; losing constant squareclasses or infinity; or solving for new A,B and claiming to have kept an inherited MW17 parent. Equal branch-root choices can force halving only after proving the everywhere-unramified class is inherited. An inherited mod2 class alone does not make the underlying point inherited. A high-genus splitting curve does not exclude its low-degree closed points. Initial bad-prime reductions without simple roots can acquire local points after base/x coordinate changes. A degree-one residue witness needs an integral parent and an etale branch reduction; leading-coefficient loss or a repeated branch root is a deferral. Testing the branch field does not bound the entire twist rank or the splitting curve outside that atlas. Do not infer a geometric Picard bound from rational Frobenius-p classes, promote an upper bound to an exact rank, omit the infinity fibre, or assume that a new fibration can evade a bound on the entire rational Neron-Severi group. Every retained parent now has a full local split fibre at each of the original fourteen primes2 through43. Do not rerun this panel to seek an empty local splitting curve, infer global divisors from local points or CRT compatibility, or infer local solubility of the full coefficient system from its necessary splitting condition. Full cubic splitting alone misses these reciprocity constraints. Do not turn a single-point contradiction into an exclusion of one closed point of degree2/3/4: the norm characters can cancel across its conjugates. In the single-point shortcut, a zero ordinate or pole requires another witness; the coupled calculation instead uses regularized squareclasses. A singular residue fibre cannot be silently omitted. Do not reject a quadratic branch divisor merely because its reduction is nonreduced, or confuse that branch-map degeneration with bad reduction of its abstract conic. Refining the same local characters cannot exclude discs where distinct close branch pairs already satisfy all norms. A degeneration argument must identify the actual flat image cycle, not merely its numerical divisor class. Do not assume integral coefficients from a finite-field miss, discard odd or nonsquare scalar classes, trust a partial section roster as the full reduced MW group, or declare a residue excluded just because a single Jacobian is singular. Do not import the genus0 two-character condition into genus1 k2: only the unused root is constrained on its degree2 disagreement divisor. A genus1 stable-map limit can contain one elliptic component, so the genus0 integrality proof alone does not apply. A full-rank Jacobian does not exclude a lift without its inconsistent error vector. A local denominator boundary is not a positive coefficient solution or a complete stratum exclusion.",
-      "boundary": "The two new24I1 K3 controls have genus0/1 infinite rational bases and independent height8 gains of Gram determinant48, but rational Picard bounds10/12 give arithmetic MW rank at most8/10 for every rational Jacobian fibration on their surfaces and on the certified coefficient residue classes. Their exact inherited ranks remain UNKNOWN. Every constant abscissa on the four actual MW17 parents has normalization genus at least4. The factor presentations are complete, and the Q80 squarefree genus1 k4 and k3 cases are excluded by unramified descent and single-branch reciprocity. Twelve genus1 k0/1/2 allocations remain open. The full Q80 polynomial genus0 chart is now excluded: k2 by the singular-pencil and branch-field theorems, k1 by reciprocity and k0 by coefficient collision rigidity. All39147 retained rational-bisection branch fields have no parent2-torsion and exact anti-invariant minimum12. The old norm8 singular-pencil independent-replay gap in the k2 aggregate is unchanged. The k0 component independently replays all2626 signed norm4 vectors,1313 polynomial sections,9191 word identities and443 contacts. The439 simple contacts force a split double-root lift; the four repeated contacts choose only one root at each affected fibre. Stable-map integrality and the scalar-twist argument remove denominator and scalar escapes. This is a Q_131 emptiness theorem for the stated polynomial chart, not a whole-family genus bound. The complete degree2 norm table and local branch pairs such as2,133 remain valid necessary-condition data, although no coefficient solution can realize them in this chart. The56 full-splitting witnesses at the original fourteen small primes cover all four retained parents and imply finite-panel compatibility, not global splitting divisors. Other actual parents, the twelve genus1 allocations, rational abscissas outside the polynomial chart, further height-at-least12 directions and the positive MW17 endpoint remain UNKNOWN. On Q80 the three genus1 k2 allocations now require D0 mod131=(t^2+62*t+88)^2 and two negative abscissa coefficient valuations. All integral cases are closed by110 distinct nonzero rational root codes, the unique nodal quadratic zero-code orbit,131 failed interpolants,21 inconsistent lifts modulo131^2 and a complete131^3 census with only two scalar-square points, neither having the required contact. The main theorem is over Q_131 with infinity and all scalars retained. The remaining all-nodal denominator case is UNKNOWN, so twelve genus1 allocations remain open. For a rational base its scalar is a local square, abscissa valuations are negative even integers and v_131(j)=-4*n<0; the existing good-reduction genus1 control cannot supply that k2 base. No old norm8 assurance is upgraded.",
-      "reopen_when": "Work on the all-nodal denominator boundary for the three Q80 genus1 k2 allocations, or on the nine k0/1 genus1 allocations and another actual high-rank parent. In k2 retain both branch quadratics near q0=t^2+62*t+88, negative even abscissa valuations for a rational base, a locally square literal scalar and the necessary negative-multiple-of4 j valuation. Integral k2 charts and the existing good-reduction genus1 base are closed. Use actual section identities and the relevant coupled norms; the nodal congruence alone supplies no solution. The Q80 polynomial genus0 chart is closed, including all16 collision discs; a new genus0 route must change the applicable hypotheses, for example higher-height rational abscissas or branch at bad characteristic-zero fibres. Additional height-at-least12 sections on retained rational-bisection covers are separate. A transfer from the controls needs a different surface outside the certified residue classes with an inherited-rank certificate; changing their fibrations cannot suffice. Revisit index obstructions only with a new global argument or a justified different place, preserving the nonempty original local panel. Completion still requires exact independent gains and a quadratic base with infinitely many rational points on an actual MW17 parent.",
+      "use": "Write F=x^3+A*x+B and its jet conditions. At a root of multiplicity m use delta=floor(m/2), and include the missing multiplicity at infinity in the degree12 binary form. Impose one literal D in both identities. Extract repeated factors D=e^2*d before deciding the genus: residual degree2 gives a possible genus0 boundary. Reuse the height8 independence criterion when the branch avoids the parent discriminant. For a fixed constant-abscissa line, the degree33 critical-point polynomial and critical-value norm can certify its entire singularity locus by exact interpolation and a good-prime squarefreeness witness. For the complete coefficient chart, factor the difference identity with g=gcd(D,h), u=gcd(h/g,r1-r2) and v=(h/g)/u after monic normalization. Keep all15 degree allocations and nine good coordinate patches; the squarefree height cross term is4-k-2*j. On Q80 use unramified Kummer descent to eliminate the complete k=4 genus-one case before any elimination. For genus0 pass to the full f(x_i)=q*s_i^2 chart with deg s_i<=5; repeated common-quartic models unnecessarily force a shared linear node factor. Keep all12 degree allocations. In the Q80 k2,j1 case use inherited unramified descent and the complete arithmetic-genus1 singular exclusion before coefficient elimination. After same-branch genus0 descent, the cross-height+/-2 cases have a smooth rational half-image. Reuse the complete branch atlas and exclude parent2-torsion over its residue fields with simple degree-one prime witnesses. Monic cubic integrality handles unbounded coordinates; specialization at ramification then forces anti-invariant height at least12. Before searching for a high-rank fibration on a new control surface, a complete good-prime surface count gives the cheap necessary bound rho_Q <= floor((22*p+#X(Fp)-1-p^2)/(2*p)). Subtract2 for any rational Jacobian fibration. Retain infinity and count a nodal cubic itself, not its normalization. Distinguish a cubic root from complete splitting and a square discriminant from a root. For a local full-splitting witness retain three distinct Hensel balls satisfying v(f)>2*v(f_prime) and pairwise disjoint error radii. Exact rational replay handles bad primes and weighted infinity without trusting approximate p-adic roots. Before coefficient elimination, pair the ramified norm-square class with inherited unramified alpha_T=X_T-theta by Weil reciprocity. Its odd divisor Z must satisfy Norm_Z(alpha_T) square for every T. For a single complementary fibre divisor this reduces to X_T(b)-e square. A complete good-prime root roster with one nonvanishing nonsquare character per point excludes that whole stratum. Recheck literal rational section identities and all infinity reductions; independence of the witness sections is unnecessary. For a degree2 branch divisor evaluate both selected-root norm-character vectors over the complete quadratic residue field. Use3*e^2+A when an inherited section meets the selected2-torsion root, and squareclass1 at a pole. Include roots with multiplicity at nodal quadratic residues. Distinguish rational branch pairs, unramified quadratic fields with rational or quadratic base residue, and ramified quadratic fields before deducing a coefficient congruence. After a genus0 branch collision is forced at a smooth fibre, first prove coefficient integrality using the flat divisor limit of the rational bisection and properness of genus0 stable maps. Treat the literal scalar valuation and constant nonsquare twist before enumerating reduced points. Recompute the finite basis Gram and use character rank and index-square divisibility to prove full saturation. Enumerate the complete norm4 lattice with exact rational LDL bounds, identify every polynomial point and test the full coefficient Jacobian, including homogeneous infinity. A simple ordinate zero has only its inherited split Hensel lift. Repeated contacts can support a nonsplit lift only if both required root labels survive at the same fibre. For genus1 k2, apply degree2 reciprocity to the unused root of P1-P2; this is only one norm condition. Use complete individual character codes and their pairwise XORs to classify both agreement and disagreement divisors. For a genus1 denominator limit, count positive-genus components and retain the actual zero-section multiplicity. A fourth-power smooth-fibre limit would require four unramified elliptic preimages and four separate nonconstant O tails, exceeding its O degree2. Keep the all-nodal case. With integral coefficients, compare complete reduced norm4 contact pairs and augment the full shared-quartic Jacobian by the first error from the literal coefficients modulo p^2. Use exact residue interpolation to cut a remaining polynomial search to p or p^3 tuples, including arbitrary scalar classes, and independently reconstruct square roots in the opposite coefficient direction. For a surviving nodal boundary, the anisotropic quadratic and quartic invariant give necessary local rational-point and j-valuation conditions. At an I1 denominator boundary, split off the analytic simple cubic root rho and prepare x-rho and r in the residue disc. Count their zeros with multiplicity before choosing a valuation scale. A double zero of x-rho uses one r zero; differentiating the remaining U^2-V contact determines the scale and its second derivative excludes higher contacts. Compare the abscissa difference quotient with the two analytic node-root labels on the common smaller branch disc. If each section must switch labels, partial branch agreement is impossible. Verify the implicit derivative of rho from the actual cubic coefficients, not from a polynomial representing only its residue value. Retain an exact local section control and distinguish split, unramified and ramified branch fields. A rational agreement branch at a good residue can force genus1 coefficient integrality. With one smooth and three nodal residues, a primitive simple abscissa zero produces three distinct simple zeros against the three analytic cubic-root functions, contradicting a single branch zero. Once integral, the agreement residue cannot collide with disagreement. Odd total multiplicity at a repeated cubic residue leaves a nonzero rational unused-root character. For squarefree degree3 disagreement, impose both its zero unused-root norm and its selected-root norm matching the rational agreement code. Reuse rational/quadratic tables and enumerate every nonrational cubic base orbit. A Frobenius splitting test avoids scanning all possible cubic roots; keep nodal root multiplicity and regularized zeros/poles. Replay using different extension-field and polynomial arithmetic, direct Q-power versus repeated p-Frobenius, and indexed joins instead of all composite tuples. For k0 impose both selected-root norms, hence zero for all three root divisors. Join complete signatures for every degree partition; exclude proper-subfield elements from a genuine degree4 census. A tower with i^2=-1,j^2=1+i permits fast exact Cardano tests, with monomial/Tonelli-Shanks replay and ten source-bound checkpoints. Stop each fibre only after an actual failing character. For square reductions enumerate every binary quadratic divisor of both ordinates, retaining multiplicity and infinity, and test the divided first-lift error rather than Jacobian rank alone. At a nodal disc write f=(x-rho)*(U^2-V), with V having a simple zero. If both branch selections are simple and x is bounded analytic with negative Gauss valuation and primitive order at least2, preparation makes U^2-V an analytic square up to an unramified constant extension. The product (U+Z)*(U-Z)=V then violates zero counts. Apply the height formula to the sum and difference, descend their O-intersection divisors away from ramification, and compare the pole degree with the residual degree of the nodal disc. A degree0 or1 pole divisor cannot reach an irreducible quadratic disc; a degree2 pole divisor can. In the mixed nodal case first solve the simple cubic root modulo q0 squared and enumerate its131 remaining quartic coefficients, including every constant twist. A unique ordinary seed can make the13-by14 coefficient Jacobian a formal one-parameter branch. Use a unit discriminant derivative and integral branch-centre coefficients to compare its smoothing valuation with the negative-section separation law; this can force, rather than assume, a denominator valuation. Evaluate the exact inherited word at the lifted nodal base value using the multiplicative or projective nodal group law, and compare the resulting necessary leading scalar with its required constant residue field. For a negative meromorphic abscissa with one double pole in a nodal disc and primitive numerator order4, prepare a square root Z of U squared-V after clearing the fourth-order pole. Choose the leading sign and count zeros minus poles of U+Z, not just its zeros. Degree2 forces U+Z=p^(-2L)*h*(t-xi) squared with h integral unit and xi different from the node. Its contacts with the analytic unit root of F squared-3rho F+V are two simple branch points at separation L. Count those forced contacts before considering any closer roots on the small analytic branch. Formal-group addition of original points with aligned leading terms preserves L and supplies a contradiction when their branch separation is greater.",
+      "avoid": "Treating a zero discriminant or a bounded coefficient miss as a four-node or full-family theorem; rejecting every repeated quartic as unusable; losing constant squareclasses or infinity; or solving for new A,B and claiming to have kept an inherited MW17 parent. Equal branch-root choices can force halving only after proving the everywhere-unramified class is inherited. An inherited mod2 class alone does not make the underlying point inherited. A high-genus splitting curve does not exclude its low-degree closed points. Initial bad-prime reductions without simple roots can acquire local points after base/x coordinate changes. A degree-one residue witness needs an integral parent and an etale branch reduction; leading-coefficient loss or a repeated branch root is a deferral. Testing the branch field does not bound the entire twist rank or the splitting curve outside that atlas. Do not infer a geometric Picard bound from rational Frobenius-p classes, promote an upper bound to an exact rank, omit the infinity fibre, or assume that a new fibration can evade a bound on the entire rational Neron-Severi group. Every retained parent now has a full local split fibre at each of the original fourteen primes2 through43. Do not rerun this panel to seek an empty local splitting curve, infer global divisors from local points or CRT compatibility, or infer local solubility of the full coefficient system from its necessary splitting condition. Full cubic splitting alone misses these reciprocity constraints. Do not turn a single-point contradiction into an exclusion of one closed point of degree2/3/4: the norm characters can cancel across its conjugates. In the single-point shortcut, a zero ordinate or pole requires another witness; the coupled calculation instead uses regularized squareclasses. A singular residue fibre cannot be silently omitted. Do not reject a quadratic branch divisor merely because its reduction is nonreduced, or confuse that branch-map degeneration with bad reduction of its abstract conic. Refining the same local characters cannot exclude discs where distinct close branch pairs already satisfy all norms. A degeneration argument must identify the actual flat image cycle, not merely its numerical divisor class. Do not assume integral coefficients from a finite-field miss, discard odd or nonsquare scalar classes, trust a partial section roster as the full reduced MW group, or declare a residue excluded just because a single Jacobian is singular. Do not import the genus0 two-character condition into genus1 k2: only the unused root is constrained on its degree2 disagreement divisor. A genus1 stable-map limit can contain one elliptic component, so the genus0 integrality proof alone does not apply. A full-rank Jacobian does not exclude a lift without its inconsistent error vector. A local denominator boundary is not a positive coefficient solution or a complete stratum exclusion. Do not use a bounded denominator sweep as the nodal orientation theorem, assume the residual simple-root representative has the correct derivative, or assume ordinary contacts before checking the dominant second-derivative term. Weierstrass preparation requires the primitive local series and its exact reduction order. Even contact valuation alone does not force splitting over Q_p. Finite derivative and toy-control replay does not formally verify the analytic proof. Do not infer a cubic disagreement solution from its unused-root norm alone: the other code must be one of the rational agreement characters. Ramified degree3 fields contribute the total local degree to the reduced norm. A squarefree base reduction can still lie over a nodal parent fibre and must be retained. A k0 quartic reducing to q0 squared need not factor as two quadratic fields over Q_p; the earlier k2 orientation proof requires that field hypothesis. Do not assume every surviving contact quadratic is irreducible: the30 actual k0 pairs include split quadratics. Do not include F_p-squared base elements in the genuine degree4 norm census; the extra even extension trivializes their characters. An empty finite norm census does not exclude nonreduced nodal reductions or prove both abscissas negative. Do not extend the pole-free zero-count contradiction across a meromorphic pole, confuse poles of the sum/difference with branch factors, assume the two pole divisors are disjoint, or infer that the branch quartic splits over the field of those poles. Reduction at the coefficient Gauss valuation must be justified on the good generic fibre. Checked finite premises and a height table do not independently or formally verify a new analytic proof. A high-precision p-adic contact is not exact evidence without a unit/error bound or independent modular replay. Evaluate at the actual discriminant lift, not just a residue representative. Do not infer a rational global family from a formal parameter, discard the nonsquare unit twist without testing it, or reuse the mixed-case seed/denominator bound when both original points reduce to O. Do not stop after showing both given branches must lie on the small analytic root: the unit-root equation still has two forced simple contacts and they must consume the same branch divisor. Do not infer the simple contact from residue counting alone; the derivative of F has negative valuation while the analytic unit-root derivative is integral. Keep the xi=alpha possibility in the divisor-degree check. The new lemma requires exactly one double pole in the disc; higher pole budgets are outside it.",
+      "boundary": "The two exact common-quartic control surfaces have genus0/1 infinite rational bases and independent height8 gains of Gram determinant48, but rational Picard bounds10/12 give arithmetic MW rank at most8/10 for every rational Jacobian fibration and the certified coefficient residue classes. Their exact inherited ranks remain UNKNOWN. Every constant abscissa on the four actual MW17 parents has normalization genus at least4. The complete Q80 polynomial genus0 chart is excluded by the retained k2 descent/branch-field, k1 reciprocity and k0 collision proofs. The old k2 norm8 singular-polynomial independent-replay gap remains unchanged. The k0 component independently reconstructs2626 signed norm4 vectors,1313 polynomial sections,9191 word identities and443 contacts; stable-map and scalar arguments remove denominator escapes. All39147 retained rational-bisection branch fields have no parent2-torsion and exact anti-invariant minimum12 in that atlas. The complete Q80 polynomial genus1 chart is now excluded over Q: all15 degree allocations, with branch quartic squarefree and avoiding singular parent fibres, arbitrary denominators/scalars, higher contacts, infinity and unpointed bases. Its k4/k3/k2/k1 exclusions are inherited. For k0, independent composite/cubic/quartic norm replay includes all73620690 genuine quartic orbits and no compatible tuple; all30 reduced norm4 contact pairs have inconsistent first lifts. The pole-degree proof excludes j0/1/3/4. The mixed theorem forces the unique square-scalar seed732 and exact forbidden scalar69+40theta outside F131. In the final two-negative j2 case, aligned leading terms make the height16 sum have valuation -2ell and one double pole per nodal disc. Complete meromorphic divisor accounting forces two simple unit-root contacts at separation ell, contradicting the original strict separation greater than ell. The sum alone closes this case, without assuming unramified branch roots, disjoint sum/difference poles, ell1 or a rational base point. Finite premises and fifteen-case coverage pass; the new analytic proof is written, with no independent analytic, formal or external verification. Old frozen UNKNOWN receipts retain their component scope. The original56 full-splitting witnesses at14 primes on4 parents remain necessary-condition data, not full coefficient solutions. Other actual MW17 parents, rational abscissas outside the polynomial chart, covers branching at singular fibres, further directions on known covers and the positive infinite rank-at-least19 endpoint remain open. The closure does not upgrade the old genus0 norm8 replay gap or give a whole-family genus bound.",
+      "reopen_when": "Advance the construction on an unexcluded carrier. Use the frozen published-R17, recovered-Curve302 and X1092-class1 equations and existing local evidence to choose one remaining full polynomial genus0/1 chart; first establish a parent-specific norm and denominator gate before any coefficient campaign. If retaining Q80, derive the actual height and pole budget for rational abscissas outside the excluded polynomial chart before searching. Reuse the new meromorphic lemma only when its single double pole, primitive numerator order4 and simple branch selections are proved. The endpoint still requires one actual MW17 parent, one quadratic cover of its original parameter field with infinitely many rational points and two new sections independent modulo the inherited subgroup. No large campaign is scheduled.",
       "claims": [
         "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914",
         "EC-K3-COMMON-QUARTIC-BRANCH-STRATA-20260914",
@@ -5396,7 +5404,13 @@
         "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914",
         "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914",
         "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914",
-        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914"
+        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914",
+        "EC-K3-Q80-GENUS1-K2-NODAL-ORIENTATION-20260914",
+        "EC-K3-Q80-GENUS1-K1-CUBIC-RECIPROCITY-20260914",
+        "EC-K3-Q80-GENUS1-K0-QUARTIC-GATE-20260914",
+        "EC-K3-Q80-GENUS1-K0-POLE-BOUNDARY-20260914",
+        "EC-K3-Q80-GENUS1-K0-MIXED-VALUATION-20260914",
+        "EC-K3-Q80-GENUS1-POLYNOMIAL-CLOSURE-20260914"
       ],
       "sources": [
         "elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md",
@@ -5408,7 +5422,13 @@
         "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md",
         "elkies-k3/Q80_DEGREE_TWO_RECIPROCITY_2026-09-14.md",
         "elkies-k3/Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md",
-        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md"
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_MIXED_VALUATION_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md"
       ],
       "implementation": [
         "elkies-k3/scripts/certify_common_quartic_singularity_locus.sage",
@@ -5440,7 +5460,27 @@
         "elkies-k3/scripts/certify_q80_genus_one_k2_nodal_boundary.sage",
         "elkies-k3/scripts/certify_q80_nodal_quadratic_census.cpp",
         "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py",
-        "tests/test_q80_genus_one_k2_nodal_boundary.py"
+        "tests/test_q80_genus_one_k2_nodal_boundary.py",
+        "elkies-k3/scripts/certify_q80_genus_one_k2_orientation.sage",
+        "elkies-k3/scripts/verify_q80_genus_one_k2_orientation.py",
+        "tests/test_q80_genus_one_k2_orientation.py",
+        "elkies-k3/scripts/certify_q80_genus_one_k1_reciprocity.sage",
+        "elkies-k3/scripts/certify_q80_cubic_norm_census.cpp",
+        "elkies-k3/scripts/replay_q80_cubic_norm_census.cpp",
+        "elkies-k3/scripts/verify_q80_genus_one_k1_reciprocity.py",
+        "tests/test_q80_genus_one_k1_reciprocity.py",
+        "elkies-k3/scripts/certify_q80_genus_one_k0_gate.sage",
+        "elkies-k3/scripts/verify_q80_genus_one_k0_gate.py",
+        "elkies-k3/scripts/certify_q80_quartic_norm_census.cpp",
+        "elkies-k3/scripts/replay_q80_quartic_norm_census.cpp",
+        "elkies-k3/scripts/run_q80_quartic_norm_census.py",
+        "elkies-k3/scripts/certify_q80_cubic_rational_norms.cpp",
+        "elkies-k3/scripts/replay_q80_cubic_rational_norms.cpp",
+        "tests/test_q80_genus_one_k0_gate.py",
+        "elkies-k3/scripts/verify_q80_k0_pole_boundary.py",
+        "elkies-k3/scripts/certify_q80_k0_mixed_exclusion.sage",
+        "elkies-k3/scripts/verify_q80_k0_mixed_exclusion.py",
+        "elkies-k3/scripts/verify_q80_genus_one_polynomial_closure.py"
       ],
       "keywords": [
         "common quartic",
@@ -5491,7 +5531,33 @@
         "unused root norm",
         "nodal quadratic",
         "augmented Hensel matrix",
-        "negative j valuation"
+        "negative j valuation",
+        "nodal branch orientation",
+        "Weierstrass preparation",
+        "implicit root derivative",
+        "all denominator valuations",
+        "degree-three norm",
+        "rational agreement point",
+        "cubic residue field",
+        "odd multiplicity norm",
+        "Frobenius splitting test",
+        "degree-four norm",
+        "quartic residue field",
+        "Cardano resolvent",
+        "Tonelli-Shanks",
+        "quadratic ordinate contact",
+        "ramified nodal branch field",
+        "orthogonal genus1 gains",
+        "pole degree",
+        "analytic square root",
+        "Gauss reduction",
+        "descended zero-section intersection",
+        "mixed abscissa valuation",
+        "formal smoothing parameter",
+        "nodal group law",
+        "projective coth addition",
+        "nonrational leading scalar",
+        "two-negative orthogonal case"
       ],
       "reviewed_claims": {
         "EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914": "e9acb2d9df07e242",
@@ -5500,10 +5566,16 @@
         "EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914": "8b1f9383097a518e",
         "EC-K3-COMMON-QUARTIC-CONTROL-PARENT-RANK-GATE-20260914": "2c45929f96bd5c52",
         "EC-K3-COMMON-QUARTIC-LOCAL-SPLITTING-PANEL-20260914": "7892d93697c4a95c",
-        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914": "6fd0461c286888d9",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914": "fb0972da7fddfe21",
         "EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914": "a6614ee067f52e58",
-        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914": "37ef8494ed26ba33",
-        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914": "b1b2c6c0bf8545fe"
+        "EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914": "0a0a52bad38ed157",
+        "EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914": "01e15957e1cc55cb",
+        "EC-K3-Q80-GENUS1-K2-NODAL-ORIENTATION-20260914": "3471f79395d5e8bf",
+        "EC-K3-Q80-GENUS1-K1-CUBIC-RECIPROCITY-20260914": "23060c38cd26fa97",
+        "EC-K3-Q80-GENUS1-K0-QUARTIC-GATE-20260914": "b1c65e08fcba84eb",
+        "EC-K3-Q80-GENUS1-K0-POLE-BOUNDARY-20260914": "063fd8d976f87b44",
+        "EC-K3-Q80-GENUS1-K0-MIXED-VALUATION-20260914": "38bf10bee8fd6f06",
+        "EC-K3-Q80-GENUS1-POLYNOMIAL-CLOSURE-20260914": "32d9841572ecbf1f"
       }
     },
     {
@@ -5653,18 +5725,28 @@
     {
       "id": "METHOD-EC-CLOUD-YIELD-AND-SUBGROUP-STATE",
       "area": "elliptic-curves",
-      "title": "Measure all cloud directions and replace the landscape when the certified subgroup grows",
+      "title": "Use verified subgroup refresh only at its demonstrated cost and visibility boundary",
       "when": "Extending a fast first-direction cancellation policy to later gains or a multi-direction stopping target.",
-      "use": "Reconcile every returned cloud, count uncapped independently certified gains, and keep partial target successes in complete-CPU totals. Condition later search on the actual certified subgroup. After enlargement, verify a compatible landscape and reset obsolete exposure states. Test a new whole-j cohort and charge production, rational-CVP replay, all point calls and independent rank certification. Keep fitted radius tails explicitly unmeasured.",
-      "avoid": "Assuming a Gamma/Poisson cloud-count surrogate makes fixed pointed cancellation subgroup-aware, stopping cloud classification at a convenient target count, treating zero fitted tail mass as no unsearched directions, carrying a bank across basis enlargement, or promoting a failed gate by increasing its allowance or testing the same controls again.",
-      "boundary": "The new24-rank20-control two-direction test fails: adaptive39 directions/460.733865 CPU seconds versus V3 40/429.056284, same16 target completions and rate ratio0.907964 with paired97.5-percent interval[0.800495,1.062687]. All79 output directions are independently certified. Exact rank18/19/20 witnesses show identical E,Q,P and cancellation before and after P becomes known; this forbids universally correct subgroup-blind independence labels, not useful average prediction. A separate fresh M18 basis integration check verifies all64 extension classes and77 anchors in5.175586 complete CPU seconds, with zero point searches. It is one development/cost result and does not establish later-gain efficacy.",
-      "reopen_when": "A separately frozen basis-aware epoch policy beats the paired factor-free/V3 baseline on new whole-j controls through uncapped gains and all cold/rebuild/certification CPU, before a fresh continuation. Previously tested cases are development data; retained failed policies and stopped campaigns remain retained.",
+      "use": "Reconcile every returned cloud and retain uncapped independent gains, including failed-target partial gains. Independently verify the complete enlarged subgroup and every new anchor; any CVP selection needs its own checked metric and selection evidence. Charge initial banks, rebuilds, failed preparation and final independent replay. Reuse an old map or metric block only through exact input bindings; changing the selected bank or order defines a new policy. Reset epoch-local scheduling while preserving exact completed-box identities. Measure actual added-generator calls and later gains, not just exported anchors. Preserve model-independent exploration beyond the fitted radius; a missing boundary probe remains UNKNOWN. After execution, bind the generator, pre-call subgroup, exact anchor word, square and point map. Compare the same finite representative dictionary on original, new and coefficient-deletion charts. Include small translations by admitted generators as a declared robustness check, and keep all missing points outside prospective selection. Real-span Schur reduction is not an integral-coset coordinate minimum. For the identical compatible bank, verify supplied exact fixed-radius minima and all ties instead of repeating optimization when a complete independent selection certificate is available. Bind the live producer through its declared JSON representation, verify actual saved bytes, and preserve full subgroup, word, map and ordering checks. Commission the live producer interface, not only previously serialized inputs. Audit package imports outside the direct CAS source directory before claiming an empty-root replay. Give both arms the same improved constructor before testing a basis-aware policy, and freeze disjoint whole-j controls and validation blocks before outcomes. Bind actual native rank receipt objects and read their nested rank explicitly; do not confuse a certificate object with its integer summary. Keep failed reporting adapters and source seals even when all arithmetic workers passed.",
+      "avoid": "Treating a cloud-count fit or a verified rebuild alone as evidence of amplification; dropping extra cloud points; carrying obsolete geometry across basis changes; equating zero fitted tail mass with arithmetic exclusion; allowing old-anchor order to consume the entire later budget; losing a certified point prefix when Sage AlarmInterrupt escapes a TimeoutError handler; repairing failure by changing its seal, retrying its searches or raising the same controls budget. Do not treat last_increment_corr=1 for a one-dimensional new block as empirical cascade evidence, normalize an already compatible point model without preserving its transport, or pass native Sage rationals directly through this Python Fraction adapter. A lower point-call count or point-call CPU component does not establish a complete-CPU advantage. Pointwise invisibility on old charts does not exclude other representatives of the quotient direction; preserve the finite dictionary boundary even when all translated witnesses survive. Do not compare native tuple-rich producer objects directly with JSON arrays, fabricate a reference landscape to fit an old receipt schema, or call post-protocol import bindings part of an earlier source seal. Archive/import checks must exercise the actual needed helper imports. Do not call every gain on a new-generator anchor a strict causal witness: deletion and translated-representative checks can fail. A combined backend initialization log does not identify which constructor stalled; source inspection of eclib shows its Curvedata minimalization flag already defaults off, while the Mordell-Weil object still constructs its reduction-dependent saturation helper.",
+      "boundary": "The fixed-bank cloud successor remains failed at39 directions/460.733865 CPU versus V3 40/429.056284. The5.175586-second rank18 rebuild is only a zero-search integration. The first basis ablation fails at12 later directions/783.018782 CPU versus13/706.898576; only7 of308 post-refresh calls reach its new anchors, with zero gains there. Its interrupted bank and certified prefix remain retained and charged. The subsequent exact audit gives four unused new-generator visibility witnesses, without hypothetical recoveries. The disjoint early-exposure control repairs that exposure failure:34 verified rebuilds export631 new anchors,324 of335 later calls use added generators, and all28 later gains on16 curves occur there. Every actual witness survives old-bank and single-generator-deletion checks, including47730 exact evaluations of both signs of P plus {-1,0,1} combinations of the one or two previously admitted generators. These are finite dictionary minima, not whole-coset minima. Both arms recover49 total/28 later directions and12 targets; candidate904.600762 CPU versus baseline779.756541 gives later-rate ratio0.861990 with paired97.5-percent interval[0.731502,1.020819]. Both fixed blocks fail strict rate improvement. The candidate saves128.148725 point-call seconds but spends228.572971 more on banks. All98 arm-level additions independently replay, with no primary preparation failure. Unfitted exploration preserves1054 beyond-training coordinate witness calls,1042 completed; these assert no point existence. Numerical Schur diagnostics, development failures, the larger post-protocol representative audit, full charges and14490-file bundle remain separately labelled. At that earlier stage, finite mechanism witnesses were verified while the charged repeatability gate remained failed. The34-transition engineering successor now preserves every complete selection and exported bank in68 fresh subgroup-certified workers while reducing full child CPU from251.028573 to175.300703:30.167 percent, with paired interval[1.406525,1.455576] for baseline/candidate CPU. The same3264 exact minimum packets are checked independently. Both rank strata improve and the frozen engineering gate passes. Recorded development and the retained serialization failure reduce the saving sensitivity to18.50 percent; early component receipts do not meter all startup. The11266-file repaired bundle passes an empty-root accounting check, with late import bindings explicit. This runs no point search and supplies no later-gain performance claim. The subsequent honest-schema transcript integration passes four workers and three updated-hash corruptions. A new160-source,24-pair two-block search then passes the later-gain gate with the same certificate constructor in both arms: refresh52 total/30 later directions and11 targets in871.850779 CPU versus fixed41/19 and7 in895.160624. Later-rate ratio1.621162 has paired97.5-percent interval[1.147288,2.681277]; both blocks improve. All30 later gains use added generators, but only26 are strict old-bank/deletion witnesses after36606 finite translated-coordinate checks,13 per block. All four exceptions remain retained. Thirty-six rebuilds and all48 primary replays pass, with zero preparation failures;1345 beyond-training coordinate witness calls include1327 completed searches. Charging all shared preflight and both arithmetic postmortems to refresh leaves ratio1.492387; adding recorded transcript development leaves1.408230. The9553-file primary and1715-file integration archives pass empty-root input/import checks. The frozen accounting reader has a retained nested-rank format failure and an explicitly post-protocol correction; no point or proof is rerun. This supports the tested M18 control policy, not entire-coset minima, higher-rank/cold transfer, external superiority or rank32.",
+      "reopen_when": "The declared24-pair comparison and both finite causal audits are complete; do not rerun them or subtract engineering savings from older results. Before additional performance testing, define a new population and a certified input interface for higher-rank or cold/fresh transfer. The retained eligibility file has no unused08234 whole-j controls after this roster, so another identical six-family holdout cannot silently refill or reuse tested groups. The current constructor was tested with M18 starts, generic17 parent anchors and at most two admitted generators before another search; extending that boundary requires compatible bank/rank/map evidence and bounded cost commissioning. An established external comparator needs separately metered curve/Mordell-Weil initialization, the actual linked library version, the same subgroup interface and complete charges. Preserve unfitted neighbour exploration and all previous failed gates.",
       "claims": [
         "EC-CANCELLATION-CLOUD-SCHEDULER-20260914",
-        "EC-CANCELLATION-BASIS-REFRESH-20260914"
+        "EC-CANCELLATION-BASIS-REFRESH-20260914",
+        "EC-CANCELLATION-BASIS-AMPLIFICATION-20260914",
+        "EC-CANCELLATION-SUBGROUP-ACCESSIBILITY-20260914",
+        "EC-CANCELLATION-EARLY-GENERATOR-20260914",
+        "EC-CANCELLATION-BANK-CERTIFICATES-20260915",
+        "EC-CANCELLATION-CERTIFIED-BANK-AMPLIFICATION-20260915"
       ],
       "sources": [
-        "elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md"
+        "elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md",
+        "elliptic-curves/notes/BASIS_AWARE_AMPLIFICATION_2026-09-14.md",
+        "elliptic-curves/notes/SUBGROUP_ACCESSIBILITY_CAUSAL_AUDIT_2026-09-14.md",
+        "elliptic-curves/notes/EARLY_GENERATOR_EXPOSURE_CONTROL_2026-09-14.md",
+        "elliptic-curves/notes/INDEPENDENT_BANK_CERTIFICATES_2026-09-15.md",
+        "elliptic-curves/notes/CERTIFIED_BANK_AMPLIFICATION_CONTROL_2026-09-15.md"
       ],
       "implementation": [
         "elliptic-curves/cas/cancellation_cloud_policy.py",
@@ -5674,7 +5756,52 @@
         "elliptic-curves/cas/verify_cancellation_cloud.py",
         "elliptic-curves/cas/verify_cancellation_cloud_programme.py",
         "elliptic-curves/cas/verify_cancellation_subgroup_boundary.py",
-        "elliptic-curves/cas/cancellation_basis_refresh.py"
+        "elliptic-curves/cas/cancellation_basis_refresh.py",
+        "elliptic-curves/cas/cancellation_basis_amplification.py",
+        "elliptic-curves/cas/cancellation_basis_epoch.py",
+        "elliptic-curves/cas/cancellation_basis_exploration.py",
+        "elliptic-curves/cas/cancellation_basis_finish.py",
+        "elliptic-curves/cas/verify_cancellation_basis_amplification.py",
+        "elliptic-curves/cas/audit_cancellation_basis_mechanism.py",
+        "elliptic-curves/cas/check_cancellation_basis_transitions.py",
+        "elliptic-curves/cas/cancellation_basis_accessibility.py",
+        "elliptic-curves/cas/cancellation_basis_accessibility_v2.py",
+        "elliptic-curves/cas/cancellation_basis_accessibility_v3.py",
+        "elliptic-curves/cas/verify_cancellation_basis_accessibility.py",
+        "elliptic-curves/cas/verify_cancellation_basis_accessibility_v2.py",
+        "elliptic-curves/cas/verify_cancellation_basis_accessibility_v3.py",
+        "elliptic-curves/cas/retain_cancellation_basis_accessibility.py",
+        "elliptic-curves/cas/pack_cancellation_basis_accessibility.py",
+        "elliptic-curves/cas/cancellation_basis_early.py",
+        "elliptic-curves/cas/cancellation_basis_early_epoch.py",
+        "elliptic-curves/cas/cancellation_basis_early_order.py",
+        "elliptic-curves/cas/verify_cancellation_basis_early.py",
+        "elliptic-curves/cas/check_cancellation_basis_early.py",
+        "elliptic-curves/cas/audit_cancellation_basis_early.py",
+        "elliptic-curves/cas/audit_cancellation_basis_representatives.py",
+        "elliptic-curves/cas/retain_cancellation_basis_early.py",
+        "elliptic-curves/cas/verify_parity_minimum.py",
+        "elliptic-curves/cas/verify_cancellation_basis_bank.py",
+        "elliptic-curves/cas/verify_cancellation_basis_bank_v2.py",
+        "elliptic-curves/cas/check_cancellation_basis_bank.py",
+        "elliptic-curves/cas/check_cancellation_basis_bank_bindings.py",
+        "elliptic-curves/cas/check_cancellation_basis_bank_adapter.py",
+        "elliptic-curves/cas/cancellation_basis_bank_cost.py",
+        "elliptic-curves/cas/cancellation_basis_bank_cost_v2.py",
+        "elliptic-curves/cas/verify_cancellation_basis_bank_cost.py",
+        "elliptic-curves/cas/retain_cancellation_basis_bank.py",
+        "elliptic-curves/cas/retain_cancellation_basis_bank_v2.py",
+        "elliptic-curves/cas/cancellation_basis_certificate_receipts.py",
+        "elliptic-curves/cas/cancellation_basis_certificate_epoch.py",
+        "elliptic-curves/cas/verify_cancellation_basis_certificate.py",
+        "elliptic-curves/cas/check_cancellation_basis_certificate.py",
+        "elliptic-curves/cas/retain_cancellation_basis_certificate.py",
+        "elliptic-curves/cas/cancellation_basis_certified.py",
+        "elliptic-curves/cas/audit_cancellation_basis_certified.py",
+        "elliptic-curves/cas/audit_cancellation_basis_certified_representatives.py",
+        "elliptic-curves/cas/retain_cancellation_basis_certified.py",
+        "elliptic-curves/cas/retain_cancellation_basis_certified_v2.py",
+        "elliptic-curves/cas/report_cancellation_basis_certified.py"
       ],
       "keywords": [
         "local cancellation",
@@ -5684,11 +5811,1020 @@
         "basis refresh",
         "certified CPU",
         "censored radial tail",
-        "rank32"
+        "rank32",
+        "new anchor exposure",
+        "basis ablation",
+        "AlarmInterrupt",
+        "unfitted exploration",
+        "coefficient deletion",
+        "exact accessibility",
+        "Schur complement",
+        "oracle quarantine",
+        "early generator exposure",
+        "bank construction cost",
+        "translated representative sensitivity",
+        "fixed-radius minimum certificate",
+        "JSON producer binding",
+        "complete bank cost",
+        "import closure",
+        "certified-bank amplification",
+        "nested native rank receipt",
+        "fixed validation blocks"
       ],
       "reviewed_claims": {
         "EC-CANCELLATION-CLOUD-SCHEDULER-20260914": "5fd0cf273f2d559d",
-        "EC-CANCELLATION-BASIS-REFRESH-20260914": "7498d09b7669a7c7"
+        "EC-CANCELLATION-BASIS-REFRESH-20260914": "7498d09b7669a7c7",
+        "EC-CANCELLATION-BASIS-AMPLIFICATION-20260914": "76f9d90b85768e81",
+        "EC-CANCELLATION-SUBGROUP-ACCESSIBILITY-20260914": "b2515177203c084e",
+        "EC-CANCELLATION-EARLY-GENERATOR-20260914": "f819fa62e31aab55",
+        "EC-CANCELLATION-BANK-CERTIFICATES-20260915": "9a2fd770711fdf71",
+        "EC-CANCELLATION-CERTIFIED-BANK-AMPLIFICATION-20260915": "47829dfbef9ee289"
+      }
+    },
+    {
+      "id": "METHOD-K3-CORRELATED-BRANCH-POLE-PRESENTATION",
+      "area": "elkies-k3",
+      "title": "Include zero-section values at branch points when extending the polynomial chart",
+      "when": "Deriving a rational-abscissa chart for two anti-invariant directions on one quadratic cover of a 24I1 K3, branched only over smooth fibres.",
+      "use": "Use the exploratory written derivation x=N/(e*H^2), y=w*R/(e^2*H^3), d=e*f and N^3+A*e^2*N*H^4+B*e^3*H^6=f*R^2. A branch pole has odd abscissa pole order on the original line. With no infinity intersection, height is 8+2*deg(e)+4*deg(H). Treat residue values O separately from nonzero two-torsion and verify the common literal d and height determinant. Branch-pole parity is already proved in the retained reciprocity note; reuse its exclusion of exactly one nonzero branch value or exactly one disagreement. The height table lists pole budgets before these arithmetic exclusions.",
+      "avoid": "Assuming all abscissa denominators are squares, extending polynomial cubic-splitting obstructions to sections meeting O at a branch, counting a point and its double as two directions, or calling the twist-rank reformulation a sufficient parent-side mechanism.",
+      "boundary": "Exploratory derivation with a reproducible exact doubling control; not a new registered theorem certificate or MW17 construction. Assumes a 24I1 parent and smooth branch fibres. Conditional on the existing Q80 genus-one polynomial closure, the second anti-invariant height minimum is at least10, and at least12 for an irreducible branch quartic. No new coefficient exclusion or point search ran; the objective remains open.",
+      "reopen_when": "A fully specified height10 or height12 chart supplies a new local/global coefficient gate, or branching at singular fibres is treated with the actual fibre corrections.",
+      "claims": [
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912",
+        "EC-K3-Q80-GENUS1-POLYNOMIAL-CLOSURE-20260914",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914"
+      ],
+      "sources": [
+        "elkies-k3/CORRELATED_GAIN_POLE_CRITERION_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md",
+        "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md"
+      ],
+      "implementation": [],
+      "keywords": [
+        "correlated gains",
+        "branch pole",
+        "odd denominator",
+        "anti-invariant",
+        "height10",
+        "height12",
+        "zero section",
+        "same quadratic character"
+      ],
+      "reviewed_claims": {
+        "OP-K3-CORRELATED-QUADRATIC-GAINS-20260912": "607dbd4b549ad5bd",
+        "EC-K3-Q80-GENUS1-POLYNOMIAL-CLOSURE-20260914": "32d9841572ecbf1f",
+        "EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914": "fb0972da7fddfe21"
+      }
+    },
+    {
+      "id": "METHOD-K3-REAL-MARKING-CONTENT",
+      "area": "elkies-k3",
+      "title": "Use complex conjugation before computing a marked modular curve",
+      "when": "A different-NS K3 is required over Q or another field with a real embedding, with its full geometric NS invariant.",
+      "use": "Compute the gcd of the literal integral T Gram entries first. A value greater than two is an exact real-place obstruction: -complex-conjugation is a stable nonidentity involution, so its primitive negative eigenvector forces the content to divide two.",
+      "avoid": "Starting stable modular-curve or equation calculations for scaled lattices already excluded over R; silently similarity-rescaling the actual transcendental lattice.",
+      "boundary": "Content one or two is only a necessary-condition pass. The theorem requires the full geometric NS and actual primitive complement; an unsaturated displayed subgroup or a field without real embeddings is outside its scope.",
+      "reopen_when": "A different actual lattice of content one or two, a non-full marking, or a field with no real embedding is specified.",
+      "claims": [
+        "EC-K3-REAL-MARKING-CONTENT-OBSTRUCTION-20260914"
+      ],
+      "sources": [
+        "elkies-k3/REAL_MARKING_CONTENT_OBSTRUCTION_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_real_marking_content.py"
+      ],
+      "keywords": [
+        "complex conjugation",
+        "real place",
+        "content",
+        "256",
+        "512",
+        "rational marking"
+      ],
+      "reviewed_claims": {
+        "EC-K3-REAL-MARKING-CONTENT-OBSTRUCTION-20260914": "7ebf7345ceb205ef"
+      }
+    },
+    {
+      "id": "METHOD-K3-REAL-RANK19-PERIOD",
+      "area": "elkies-k3",
+      "title": "Test the rank19 real period before Shimura curve work",
+      "when": "Full rational geometric NS of rank19 is required on a K3 over a field with a real embedding.",
+      "use": "The negative eigensublattice of -conjugation is even2-elementary of rank1 or2. Require a square2 integral vector or rational isotropy; anisotropic forms with all squares divisible by four are excluded without vector search.",
+      "avoid": "Treating content two as an arithmetic admission or computing marked curves for an already real-obstructed lattice.",
+      "boundary": "Rank19 and full geometric NS are essential; passing the necessary condition gives no real or rational marking.",
+      "reopen_when": "A form outside the anisotropic/four-divisible-square exclusion is specified.",
+      "claims": [
+        "EC-K3-REAL-RANK19-PERIOD-OBSTRUCTION-20260914"
+      ],
+      "sources": [
+        "elkies-k3/REAL_RANK19_PERIOD_OBSTRUCTION_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_real_rank19_period.py"
+      ],
+      "keywords": [
+        "real marking",
+        "full stable group",
+        "arithmetic K3",
+        "orientation"
+      ],
+      "reviewed_claims": {
+        "EC-K3-REAL-RANK19-PERIOD-OBSTRUCTION-20260914": "95be36fe7978b871"
+      }
+    },
+    {
+      "id": "METHOD-K3-MARKED-LOCAL-ORIENTATION",
+      "area": "elkies-k3",
+      "title": "Check determinant units and orientation in the literal local marking level",
+      "when": "Identifying the canonical Q-model of a full stable marked K3 period curve.",
+      "use": "Compute both signs and all Clifford-order normalizer cosets. Determine the local level including every determinant unit; rule out or track the single compatible orientation character before identifying the Q-curve.",
+      "avoid": "Using complex conjugacy of groups to choose an arithmetic twist; requiring global integrality from a matrix that is only a local unit.",
+      "boundary": "Determinant800 has full local2 coverage and no orientation ambiguity. This does not automatically extend to other lattices.",
+      "reopen_when": "A different literal lattice, local level, or unresolved normalizer coset is supplied.",
+      "claims": [
+        "EC-K3-DET800-FULL-MARKING-OBSTRUCTION-20260914"
+      ],
+      "sources": [
+        "elkies-k3/DET800_FULL_MARKING_OBSTRUCTION_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det800_marking.py"
+      ],
+      "keywords": [
+        "real marking",
+        "full stable group",
+        "arithmetic K3",
+        "orientation"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET800-FULL-MARKING-OBSTRUCTION-20260914": "657aa7a4615f86ff"
+      }
+    },
+    {
+      "id": "METHOD-K3-BRANCH-CODE-TRACE-NORMS",
+      "area": "elkies-k3",
+      "title": "Separate the branch character image from the realized inherited trace norms",
+      "when": "Seeking two correlated directions on a low-genus quadratic cover of Q80, especially after polynomial-chart exclusions.",
+      "use": "Include O in every branch2-torsion space and compute the kernel of the sum of inherited norm characters. Reuse completed field censuses, but add short-support and code-plane joins to include zero branch values. Under the retained unramified Kummer theorem, branch-zero anti-invariants are exactly actual anti-traces. Account for rank by r=dim(Tr E(L)/2E(K))+dim(branch image). Construct two independent trace parities through the explicit torsors H_T(m)=d*s^2 on one literal d; these certify independence without numerical height fitting.",
+      "avoid": "Inferring rank-at-most-one from a one-dimensional branch code, treating inherited trace classes as inherited new points, dividing a section formally without Kummer exactness, discarding zeros or root-free sites, extending a good-branch-reduction theorem to nodal or repeated residue branches, or calling local norm compatibility global torsor solubility.",
+      "boundary": "The complete good-reduction degree2/4 Q80 branch code has dimension0/at-most1. All seven residual degree partitions are covered with new independent finite joins and retained higher-degree arithmetic. The rank accounting and descent are written mathematics. This closes height8/10 only in that good quartic reduction scope, and confines height10/10 to equal branch values with half-image genera(2,2) or(1,3). No MW17 points, soluble norm torsors, or infinite rank19 base are constructed.",
+      "reopen_when": "An actual common low-genus d yields two independent realized inherited trace parities, or one plus a nonzero branch class; alternatively a justified analysis treats bad branch reduction or a different MW17 parent.",
+      "claims": [
+        "EC-K3-Q80-GOOD-BRANCH-CODE-TRACE-NORM-20260914"
+      ],
+      "sources": [
+        "elkies-k3/Q80_GOOD_BRANCH_CODE_AND_TRACE_NORMS_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_q80_rational_branch_code.py",
+        "elkies-k3/scripts/audit_q80_good_branch_code.py",
+        "elkies-k3/scripts/verify_q80_good_branch_code.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "trace norm torsor",
+        "branch code",
+        "Tate cohomology",
+        "anti-trace",
+        "height10",
+        "same quadratic character"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-GOOD-BRANCH-CODE-TRACE-NORM-20260914": "7c38b37710599bec"
+      }
+    },
+    {
+      "id": "METHOD-K3-STRUCTURAL-MARKING-GATES",
+      "area": "elkies-k3",
+      "title": "Use integral split transports and real square-two requirements before new period curves",
+      "when": "Selecting a rationally fully marked rank19 K3 from literal ternary lattice data.",
+      "use": "For an even primitive half-lattice with a divisibility-one isotropic vector, construct and check a unimodular U basis. If T=2(U+<2N>) withN>=5, the full Q-marked curve X0(4N) excludes it. For anisotropic T, an exhaustive square2 congruence obstruction plus exact local anisotropy excludes the real marking.",
+      "avoid": "Treating equal determinants or rational similarities as integral split witnesses; treating successful residue tests as an integral vector or rational marking; extrapolating an arithmetic model from finite controls alone.",
+      "boundary": "The84 split transports and36 local obstructions cover the stated retained inputs. The uniform theorem includes the full normalizer and compatible orientation. SmallN, untransported rows and congruence survivors remain outside the exclusions.",
+      "reopen_when": "A different actual lattice, a smallN arithmetic source, or an unexcluded full rational marking is supplied.",
+      "claims": [
+        "EC-K3-RATIONAL-MARKING-STRUCTURAL-GATES-20260914"
+      ],
+      "sources": [
+        "elkies-k3/RATIONAL_MARKING_STRUCTURAL_GATES_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_marking_structural_gates.py"
+      ],
+      "keywords": [
+        "scaled split",
+        "X0(4N)",
+        "complex conjugation",
+        "square two",
+        "integral transport"
+      ],
+      "reviewed_claims": {
+        "EC-K3-RATIONAL-MARKING-STRUCTURAL-GATES-20260914": "45803c6fef53b000"
+      }
+    },
+    {
+      "id": "METHOD-K3-BRANCH-SPECIALIZATION-TRACE-GATE",
+      "area": "elkies-k3",
+      "title": "Require the same generic halving parity at every branch fibre",
+      "when": "A prospective low-genus quadratic cover passes branch-character conditions but still needs global trace-norm points.",
+      "use": "Bound the realized trace-parity space by the intersection of specialization kernels M/2M -> E_b(k(b))/2E_b(k(b)). At rational branch values, stack exact finite elliptic-group quotients to certify injectivity or bound that kernel. Coefficient valuation margins extend fixed-value witnesses to certified rational congruence neighbourhoods. Test actual residue-field2-torsion separately from roots modulo one prime. Combine these two bounds with the retained unramified Kummer theorem and exact rank formula. Over a quadratic branch field, use good degree-one residue places and retain the actual section-basis coordinates; lattice-frame coordinates can differ.",
+      "avoid": "Treating different local halving defects as a common generic parity, overlooking specialization relations, confusing local cubic roots with residue-field2-torsion, or promoting an infinite base and a compatible branch pattern to a new direction. Do not interpret a trace-parity injection as an upper bound on specialized rational fibre rank.",
+      "boundary": "Q80 K_0 is zero, with an independent complete finite-group certificate and a fourteen-prime rational neighbourhood. The explicit infinite elliptic base t(t-2)(t-76)(t-103) gives exact generic rank17 and zero gain. All-height exclusion uses the established global unramified theorem and smooth characteristic-zero branch fibres. Other branch divisors and common-kernel global lifting remain unresolved. The fixed known-gain cover alternate-orbit-11ae6 has exact one-dimensional kernel and exact rank18 at every height; other atlas members are not closed by this one-cover check.",
+      "reopen_when": "A branch divisor has the required common nonzero halving kernel and exact rational-function solutions on the same trace torsors, or another parent changes the arithmetic prerequisites.",
+      "claims": [
+        "EC-K3-Q80-BRANCH-TRACE-SPECIALIZATION-20260914",
+        "EC-K3-Q80-ONE-COVER-HALVING-CONTROL-20260914"
+      ],
+      "sources": [
+        "elkies-k3/Q80_BRANCH_TRACE_SPECIALIZATION_GATE_2026-09-14.md",
+        "elkies-k3/Q80_ONE_COVER_HALVING_CONTROL_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_q80_branch_trace_specialization.py",
+        "elkies-k3/scripts/verify_q80_branch_trace_specialization.py",
+        "elkies-k3/scripts/verify_q80_one_cover_halving_control.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "branch specialization",
+        "trace norm",
+        "halving defect",
+        "finite quotient",
+        "zero rank gain",
+        "positive rank base"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-BRANCH-TRACE-SPECIALIZATION-20260914": "fbd5820c6912fc9d",
+        "EC-K3-Q80-ONE-COVER-HALVING-CONTROL-20260914": "710eeb4e9ec85a3a"
+      }
+    },
+    {
+      "id": "METHOD-K3-DET388-FULL-MARKING-DESCENT",
+      "area": "elkies-k3",
+      "title": "Separate full period admission, effective K3 descent and divisor descent",
+      "when": "A rank19 stable orthogonal quotient has a rational point and the full canonical arithmetic level has been identified.",
+      "use": "Certify non-CM by a ring-class-field obstruction, glue the literal NS and T primitively, exclude marked automorphisms, then discharge invariant-line-bundle descent. For388 a lift field ramified at7411 proves non-CM; two square-minus-two classes meeting once give a degree-one zero-cycle and full divisor descent.",
+      "avoid": "Treating a rational coarse point alone as a marked K3; treating Galois-invariant Picard classes automatically as rational line bundles; treating one rootful frame as an exhaustive absence of MW17. In the retained rootless preflight, PARI qfminim with maxvec=0 returned no stored vectors despite a nonzero count; that false-hit packet is explicitly withdrawn. Always check the total against stored representatives and a known-root control.",
+      "boundary": "This proves an abstract full rational marking, without an equation. The later global root-energy theorem excludes MW17 on this NS; it does not retract the descent result.",
+      "reopen_when": "A new marking changes the local level, has residual automorphisms, or lacks a divisor-descent argument.",
+      "claims": [
+        "EC-K3-DET388-RATIONAL-MARKING-SOURCE-20260914"
+      ],
+      "sources": [
+        "elkies-k3/DET388_RATIONAL_MARKING_SOURCE_2026-09-14.md",
+        "artifacts/generated-results/elkies-k3-det388-rootless-probe-v1/failure.json"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det388_marking.py",
+        "artifacts/generated-results/elkies-k3-det388-rootless-probe-v1/probe.py"
+      ],
+      "keywords": [
+        "rational marking",
+        "effective descent",
+        "Brauer obstruction",
+        "non-CM",
+        "determinant388"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET388-RATIONAL-MARKING-SOURCE-20260914": "dae3ec26a85f45c0"
+      }
+    },
+    {
+      "id": "METHOD-K3-PARITY-NORM8-NEIGHBOR-OBSTRUCTION",
+      "area": "elkies-k3",
+      "title": "Exclude rootless2-neighbours with a complete parity cover and norm-eight witnesses",
+      "when": "An even positive frame has displayed roots that every rootless2-neighbour must remove.",
+      "use": "Enumerate v modulo2F with even quadratic value and odd pairing with every old root. For each class, an explicit same-parity norm-eight vector halves to a root in its even neighbour. Check mod2 radical lifts separately at determinant-dividing prime2. Replay needs only these finite witnesses, not a complete short-vector census.",
+      "avoid": "Assuming2 is a good prime; ignoring radical-line neighbours; mistaking a bounded neighbour miss or one-frame obstruction for a genus-wide rootlessness exclusion.",
+      "boundary": "The pinned388 index106 frame has a rootful entire even2-neighbour shell. The subsequent global root-energy theorem separately excludes all frames of this NS; the local method alone has only its one-frame scope.",
+      "reopen_when": "The parent frame changes, the neighbour degree changes, or a global genus argument becomes available.",
+      "claims": [
+        "EC-K3-DET388-ONE-FRAME-TWO-NEIGHBOR-OBSTRUCTION-20260914"
+      ],
+      "sources": [
+        "elkies-k3/DET388_TWO_NEIGHBOR_GATE_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/check_det388_two_neighbor_gate.py",
+        "artifacts/generated-results/elkies-k3-det388-two-neighbor-gate-v1/gate.py"
+      ],
+      "keywords": [
+        "Kneser neighbours",
+        "norm eight",
+        "parity cover",
+        "bad prime",
+        "rootless"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET388-ONE-FRAME-TWO-NEIGHBOR-OBSTRUCTION-20260914": "b73e6ac756e87181"
+      }
+    },
+    {
+      "id": "METHOD-K3-JOINT-HALVING-INCIDENCE",
+      "area": "elkies-k3",
+      "title": "Seek low-degree points on the simultaneous branch-incidence curves",
+      "when": "A24-I1 elliptic K3 with its full geometric MW group rational is being tested for two trace directions on one low-genus quadratic cover.",
+      "use": "Two independent trace parities require residue-field lifts of every branch to the degree16 genus57 joint-half curve. A nonzero trace plus an actual nonzero branch2-torsion value requires a lift to the degree12 genus49 mixed incidence curve. Primitive forgetful maps and Castelnuovo-Severi exclude degree-at-most4 maps to genus0 or1; Kadets-Vogt then gives a finite low-degree-point locus. Use an actual low-degree incidence point as the next arithmetic gate before solving global trace torsors.",
+      "avoid": "Assuming that high genus alone excludes low-degree points, applying Riemann-Hurwitz to a disconnected fibre product, confusing a local modular point with a residue-field point, or treating noneffective finiteness as an empty set or a construction.",
+      "boundary": "Full geometric parity independence,24-I1 fibres and a fixed number field are essential. The two-trace locus gives finite branch divisors and constant characters. The mixed locus restricts only its marked branch. Q80 gain conclusions retain the good131 branch-image bounds; other branch-reduction scopes and the positive endpoint remain open.",
+      "reopen_when": "A genuine degree-at-most4 incidence point is obtained, with an exact common trace-torsor lift and the required rational or infinite elliptic base; or a different parent changes the monodromy/fibre hypotheses.",
+      "claims": [
+        "EC-K3-JOINT-HALVING-EXCEPTIONAL-BRANCH-LOCUS-20260914"
+      ],
+      "sources": [
+        "elkies-k3/JOINT_HALVING_EXCEPTIONAL_BRANCH_LOCUS_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_joint_halving_incidence.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "simultaneous halving",
+        "genus57",
+        "genus49",
+        "low-degree points",
+        "finite branch locus"
+      ],
+      "reviewed_claims": {
+        "EC-K3-JOINT-HALVING-EXCEPTIONAL-BRANCH-LOCUS-20260914": "36cb2148df51a216"
+      }
+    },
+    {
+      "id": "METHOD-K3-TWO-VECTOR-NIEMEIER-ROOT-ENERGY",
+      "area": "elkies-k3",
+      "title": "Use a root-rich auxiliary and Weyl-support norm bounds before rank17 genus enumeration",
+      "when": "An admitted NS has a positive rank7 opposite-discriminant auxiliary containing a rank5 root system.",
+      "use": "Find a convenient explicit auxiliary in its much smaller genus, verify its discriminant anti-isometry, and compute the projected Gram of the two remaining generators. For each complete Niemeier anchor, bound simultaneous root avoidance by minimizing 1_S^t C^-1 1_S + 1_Z^t C_Z^-1 1_Z over Dynkin supports; add bounds across orthogonal components. If every required norm sum exceeds the available trace, all frame complements are rootful.",
+      "avoid": "Replacing the actual finite discriminant form by determinant equality; the attractive rank6 auxiliaries tried for388 have the wrong form. Do not infer global nonexistence from local neighbour misses or from the auxiliary mass search alone.",
+      "boundary": "For388 every case fails strictly. For852 energy bounds alone leave2A7+2D5; the subsequent exhaustive two-vector/glue calculation excludes that final case. The energy reduction alone is not the global exclusion, and auxiliary genus completeness is discovery only.",
+      "reopen_when": "Another NS discriminant form, a new arithmetic marking, or an auxiliary whose projected norms pass the bound is supplied.",
+      "claims": [
+        "EC-K3-DET388-GLOBAL-ROOT-OBSTRUCTION-20260914",
+        "EC-K3-DET852-ONE-NIEMEIER-ANCHOR-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md",
+        "elkies-k3/DET852_ONE_ANCHOR_REDUCTION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det388_global_root_obstruction.py",
+        "artifacts/generated-results/elkies-k3-det388-global-root-gate-v1/classify_aux.py",
+        "elkies-k3/scripts/certify_det852_one_anchor_reduction.py"
+      ],
+      "keywords": [
+        "Niemeier",
+        "Weyl chamber",
+        "root energy",
+        "discriminant gluing",
+        "global root obstruction"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET388-GLOBAL-ROOT-OBSTRUCTION-20260914": "4a5e4b736411e35d",
+        "EC-K3-DET852-ONE-NIEMEIER-ANCHOR-20260915": "b32b9d189a6ee087"
+      }
+    },
+    {
+      "id": "METHOD-K3-EXPLICIT-BRANCH-RELATION-GATE",
+      "area": "elkies-k3",
+      "title": "Certify elementary branch relations before searching for additional halves",
+      "when": "Trying to populate the low-degree joint-halving or mixed incidence loci from a retained generic MW basis.",
+      "use": "Form cancelled pole and signed abscissa-equality loci and the correct long-Weierstrass torsion ordinate2y+a1*x+a3. A pair of independent zero relations supplies explicit halves O; one relation with nonzero torsion supplies mixed incidence. Use monic polynomials integral at the chosen reduction prime, followed by exact rational gcd on every modular survivor. At known pole fields, bound the full specialization kernel with finite elliptic-group quotients and retain the visible generic parity as a lower bound.",
+      "avoid": "Using a fixed prime without checking monic integrality or degree preservation, treating y=0 as the2-torsion condition on a long model, conflating an ordinary relation with two independent parity relations, or extending a basis-only miss to all MW combinations.",
+      "boundary": "The four retained basis-derived lists have no simultaneous elementary incidence, including infinity. All12 Q80 basis pole fields have exactly one kernel direction and no nonzero residue-field2-torsion. The initial fixed131 prototype was unaccepted and is preserved; only the rerun with integral monic reduction supports the exclusions.",
+      "reopen_when": "A distinct exact generic combination provides an additional residue-field half, or an actual low-degree incidence point outside these fixed elementary lists is constructed. A larger unmotivated coefficient box is not a new gate.",
+      "claims": [
+        "EC-K3-BASIS-BRANCH-INCIDENCE-GATE-20260914"
+      ],
+      "sources": [
+        "elkies-k3/BASIS_BRANCH_INCIDENCE_GATE_2026-09-14.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/audit_basis_branch_incidence.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "branch incidence",
+        "specialization kernel",
+        "polynomial gcd",
+        "leading coefficient",
+        "generic basis"
+      ],
+      "reviewed_claims": {
+        "EC-K3-BASIS-BRANCH-INCIDENCE-GATE-20260914": "ce7f37a8c142c7ca"
+      }
+    },
+    {
+      "id": "METHOD-K3-J-MONODROMY-SYMMETRY-GATE",
+      "area": "elkies-k3",
+      "title": "Check j-monodromy before trying to duplicate sections by a cover symmetry",
+      "when": "A proposed correlated-gain mechanism uses an automorphism or isogeny to turn one known new direction into another.",
+      "use": "For a degree24 K3 j-map, certify simple c4,c6,D divisors and18 distinct additional simple critical values. Compute critical images as multiplication by j in the degree18 critical algebra and verify its squarefree characteristic polynomial. The3^8,2^12 and18 transposition branch cycles force S24 by the normal-closure argument, so a distinct equal-j generic parameter costs degree23. This controls extra automorphisms even on covers where descent to the original parameter was not assumed.",
+      "avoid": "Assuming no parent base symmetry automatically rules out cover symmetries, overlooking collisions among critical values, confusing generic equal-j rigidity with a ban on specialized j coincidences, or using an already independent new translation as its own construction.",
+      "boundary": "All four retained actual MW17 parents pass the S24 gate. Every quadratic-cover j-symmetry is identity or deck, and origin-preserving symmetries act by signs on an anti-invariant direction. The24-I1 full mod-ell theorem also excludes nontrivial isogeny transport over a quadratic field. Neither statement bounds arbitrary twist rank or excludes fibration-changing surface automorphisms.",
+      "reopen_when": "A different actual arithmetic MW17 parent has a certified suitable symmetry and an invariant low-genus cover with an independent section orbit. Critical-value collisions alone are insufficient, and a new parent still requires the rational marking and full arithmetic rank evidence.",
+      "claims": [
+        "EC-K3-MW17-J-MONODROMY-SYMMETRY-BARRIER-20260915"
+      ],
+      "sources": [
+        "elkies-k3/MW17_J_MONODROMY_AND_SYMMETRY_BARRIER_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_mw17_j_monodromy.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "S24",
+        "j-map monodromy",
+        "cover symmetry",
+        "degree23",
+        "isogeny"
+      ],
+      "reviewed_claims": {
+        "EC-K3-MW17-J-MONODROMY-SYMMETRY-BARRIER-20260915": "52c8b0b8574eaeb3"
+      }
+    },
+    {
+      "id": "METHOD-K3-INOSE-RANKONE-RATIONALIZING-TWIST",
+      "area": "elkies-k3",
+      "title": "Rationalize the full rank-one Inose Mordell-Weil group by its constant sign character",
+      "when": "A rational Inose model comes from a non-CM isogenous pair and has two rational II* fibres with torsion-free geometric MW rank1.",
+      "use": "Write the Inose equation using rational symmetric j invariants, without demanding rational cube or square roots. The two affineE8 graphs force every trivial-lattice divisor rational. The full geometric MW generator transforms by a continuous sign character; the matching constant quadratic twist fixes it and yields full saturated rational NS.",
+      "avoid": "Calling the untwisted model fully marked before computing its character; treating rational roots of normalized invariants as necessary; using a coarse period point alone instead of surface/divisor descent. Unneeded large coefficient factorization in the preflight was stopped and is not a prerequisite.",
+      "boundary": "The level311 source has NS determinant622 and a rationalizing twist exists; its squareclass and section remain uncomputed. The later global root obstruction excludes MW17 on this NS, so explicit twist calculation is not needed for this goal. Higher MW rank can have Galois action that a single twist cannot trivialize.",
+      "reopen_when": "The character is computed, a different isogenous pair supplies a source, or the geometric MW rank or fibre Galois action differs.",
+      "claims": [
+        "EC-K3-DET622-INOSE-RATIONAL-MARKING-SOURCE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET622_INOSE_RATIONAL_MARKING_SOURCE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det622_inose_source.py"
+      ],
+      "keywords": [
+        "Inose",
+        "quadratic Q-curve",
+        "constant twist",
+        "rational marking",
+        "determinant622"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET622-INOSE-RATIONAL-MARKING-SOURCE-20260915": "1206effe4a4c81b0"
+      }
+    },
+    {
+      "id": "METHOD-K3-SHARP-A7-ROOT-ENERGY-EQUALITY",
+      "area": "elkies-k3",
+      "title": "Resolve borderline Niemeier energy cases with centered integer pairs and equality constraints",
+      "when": "A two-vector auxiliary trace equals the sharp residual root-avoidance lower bound instead of violating it strictly.",
+      "use": "For A_n encode two integral-pairing vectors as n+1 distinct integer pairs centered at their mean. Enumerate centroid residues modulo integers and nearest-point distances, certify equality sets and their separate coordinate norms. Equality in a total energy bound then constrains each projected norm. On the residual D5, short dual vectors leave D4 roots whose regular-vector norm requirement can contradict the remaining budget.",
+      "avoid": "Declaring a rootless frame from a non-strict support bound, or treating the trace alone as the full Gram constraint. Retain the auxiliary discovery and all finite equality witnesses.",
+      "boundary": "For622, A7 has sharp bound39/4 with each equality coordinate norm39/8. Two copies plus D5 meet trace51/2, but leave D5 norms<=1 and<=5, incompatible with the D4 regular-vector bound14. All16 Niemeier cases are thereby excluded in this NS genus.",
+      "reopen_when": "Another admitted NS or auxiliary has different discriminant form, projected Gram or residual root systems; an equality-compatible case still requires actual primitive embedding and arithmetic fibration work.",
+      "claims": [
+        "EC-K3-DET622-GLOBAL-ROOT-OBSTRUCTION-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det622_global_root_obstruction.py"
+      ],
+      "keywords": [
+        "A7",
+        "integer pairs",
+        "Niemeier",
+        "equality case",
+        "determinant622",
+        "root obstruction"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET622-GLOBAL-ROOT-OBSTRUCTION-20260915": "8cf4a576ffed9b4b"
+      }
+    },
+    {
+      "id": "METHOD-K3-ORDER-FOUR-LIFT-PAIRING",
+      "area": "elkies-k3",
+      "title": "An order-four lift makes one new direction an orthogonal pair",
+      "when": "A prospective parent has an origin-preserving base involution and a symmetry-based two-gain construction is being considered.",
+      "use": "Require a rational lift alpha with alpha^2 equal to the quadratic deck involution. The anti-invariant group then has Q(i)-module structure, even rank and an orthogonal orbit P,alpha(P). For a rational conic over Q the intermediate base involution must have fixed-point field Q(i); normalize it to -1/t and use w^2=t^2+1. Before equivariant lattice searches, test fields of known involution-fixed points: any fixed point over a field not containing i excludes this lift on every equivariant rational fibration. Before frame or involution searches on a fully rational Picard19 K3, test the actual T for rational isotropy. If it is anisotropic, real topology excludes every base-fixed-point-free pointed involution and hence the order-four conic mechanism. For a proposed rational Fricke source at composite level N, first forget to divisors d|N whose modular curves have a complete degree-at-most-two point classification. A non-CM rational Fricke point would induce a non-CM point of degree at most2 at each such lower level; an empty lower-level locus closes the source without building its fibre.",
+      "avoid": "Assuming an order-two parent symmetry already forces two gains, overlooking the square of its lift, substituting a low-rank control for MW17, or treating a geometric9+8 eigenspace split as an arithmetic conic lift.",
+      "boundary": "The explicit control realizes diag(8,8) on a rational conic but has parent rank at most10. The four retained MW17 parents fail the prior S24 symmetry gate. The canonical determinant622 Inose reversal and its Q-conjugates fail the fixed-point-field gate on every constant twist; the independent global determinant622 root obstruction now excludes every MW17 frame on that surface. The complete X1092 frame gate also excludes the required pointed base involutions on all nineteen rootless frames. A genus1 base over Q cannot have the required order-four lift because its differential eigenvalue would square to-1. The retained determinant1020 rootless frame also fails: its complete PARI isometry group is {I,-I}, so no trace1 involution exists. This is one frame, not a classification of that NS. Require a success marker when running PARI: stack changes discard remaining expressions on the same line, and default parallel worker stacks can exceed a fixed memory cap. Complete determinant948 rootless J2 coverage gives involution traces -17 and {-17,-3,3}; absence of1 excludes every MW17 fibration on that NS, independently of J1 orbit enumeration, and also excludes the rational-surface8+9 symmetric-parent setup there. This global real-place gate excludes the mechanism for948,1092 and1020 without a complete1020 frame census. Isotropic T is only necessary. Other Picard ranks, incomplete rational markings and nonsymmetry constructions are not excluded. A new star510 point is an explicit exploratory input for an isotropic Inose source, but its degree-eight Fricke lift is now excluded by the complete level51 quadratic-point classification. The existing determinant1020 rootless frame has the wrong discriminant form modulo5 for the isotropic NS. Author point logs and canonical HNF model files use different bases; bind coordinates to cached forms and verify the relation through its Sturm bound before using them.",
+      "reopen_when": "An actual arithmetic MW17 parent has a verified suitable involution with the Q(i) fixed-base field, and one nontorsion anti-invariant section is constructed on the distinguished rational conic. All parent, cover and point evidence must be explicit.",
+      "claims": [
+        "EC-K3-ORDER-FOUR-LIFT-CORRELATED-GAIN-20260915",
+        "EC-K3-DET948-ALL-FRAME-SYMMETRY-GATE-20260915",
+        "EC-K3-REAL-C4-ANISOTROPY-OBSTRUCTION-20260915",
+        "EC-K3-STAR510-FRICKE-LIFT-EXCLUSION-20260915"
+      ],
+      "sources": [
+        "elkies-k3/ORDER_FOUR_LIFT_CORRELATED_GAIN_MECHANISM_2026-09-15.md",
+        "elkies-k3/DET1020_FRAME_SYMMETRY_GATE_2026-09-15.md",
+        "elkies-k3/DET948_ALL_FRAME_SYMMETRY_GATE_2026-09-15.md",
+        "elkies-k3/REAL_LOCUS_C4_ANISOTROPY_OBSTRUCTION_2026-09-15.md",
+        "elkies-k3/STAR510_ISOTROPIC_PARENT_DESCENT_GATE_2026-09-15.md",
+        "elkies-k3/STAR510_FRICKE_LIFT_EXCLUSION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_order_four_gain_mechanism.py",
+        "elkies-k3/scripts/verify_det1020_frame_symmetry_gate.py",
+        "elkies-k3/scripts/verify_det948_all_frame_symmetry.py",
+        "elkies-k3/scripts/verify_real_c4_anisotropy_gate.py",
+        "elkies-k3/scripts/verify_star510_fricke_input.py",
+        "elkies-k3/scripts/verify_star510_fricke_exclusion.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "order-four lift",
+        "orthogonal sections",
+        "Q(i)",
+        "Nikulin fixed points",
+        "rational conic"
+      ],
+      "reviewed_claims": {
+        "EC-K3-ORDER-FOUR-LIFT-CORRELATED-GAIN-20260915": "218724359e3cfd2e",
+        "EC-K3-DET948-ALL-FRAME-SYMMETRY-GATE-20260915": "30248e93f3db69ce",
+        "EC-K3-REAL-C4-ANISOTROPY-OBSTRUCTION-20260915": "fbb81843ac0d9fb6",
+        "EC-K3-STAR510-FRICKE-LIFT-EXCLUSION-20260915": "db4e1c5fbc9ef8e4"
+      }
+    },
+    {
+      "id": "METHOD-K3-FULL-FRICKE-POSITIVE-ELLIPTIC-SOURCE",
+      "area": "elkies-k3",
+      "title": "Match published positive-rank Shimura quotients only after full stable-kernel verification",
+      "when": "A content-one ternary lattice has a squarefree reduced Clifford discriminant and a candidate full-Fricke Shimura quotient in rational-point tables.",
+      "use": "Match literal quaternion/order data first, then prove integral normalizers exhaust the discriminant actions and all local order units are stable. Verify the canonical arithmetic level. Separate published rational-point existence from Jacobian isomorphism; verify a non-torsion point directly on the model.",
+      "avoid": "Using a coarse quotient or a positive-rank Jacobian as a rational marked source; labelling an infinite-order elliptic point non-CM without identifying its moduli interpretation.",
+      "boundary": "The852 full curve, intrinsic rational non-CM point, primitive NS and actual divisor descent are proved. The subsequent complete final-anchor obstruction excludes MW17 in this NS. Its arithmetic marking survives;600 other rows remain unadmitted.",
+      "reopen_when": "A non-CM point with moduli interpretation and full descent is certified, or another literal stable curve passes these tests.",
+      "claims": [
+        "EC-K3-DET852-FULL-MARKED-ELLIPTIC-CURVE-20260915",
+        "EC-K3-DET852-RATIONAL-CM-LOCUS-20260915",
+        "EC-K3-DET852-INTRINSIC-NONCM-POINT-20260915",
+        "EC-K3-DET852-RATIONAL-MARKING-SOURCE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET852_FULL_MARKED_CURVE_2026-09-15.md",
+        "elkies-k3/DET852_RATIONAL_CM_LOCUS_2026-09-15.md",
+        "elkies-k3/DET852_INTRINSIC_NONCM_POINT_2026-09-15.md",
+        "elkies-k3/DET852_RATIONAL_MARKING_SOURCE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det852_marked_curve.py",
+        "artifacts/generated-results/elkies-k3-shimura-positive-source-preflight-v1/match.py",
+        "elkies-k3/scripts/certify_det852_rational_cm_locus.py"
+      ],
+      "keywords": [
+        "Shimura",
+        "full Fricke",
+        "determinant852",
+        "rational marking",
+        "positive rank"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET852-FULL-MARKED-ELLIPTIC-CURVE-20260915": "cfe1fc9eb5a7e9c1",
+        "EC-K3-DET852-RATIONAL-CM-LOCUS-20260915": "c0f27c9f0841442e",
+        "EC-K3-DET852-INTRINSIC-NONCM-POINT-20260915": "53d34aac2815d500",
+        "EC-K3-DET852-RATIONAL-MARKING-SOURCE-20260915": "c4347ddc1c7ab61b"
+      }
+    },
+    {
+      "id": "METHOD-K3-INVOLUTION-DISCRIMINANT-GLUE",
+      "area": "elkies-k3",
+      "title": "A nine-plus-eight MW split must also satisfy discriminant gluing",
+      "when": "Considering a pointed involution on a Picard19 rootless MW17 frame for correlated quadratic gains.",
+      "use": "Inspect the complete frame automorphism group for trace-one involutions and require (g-I)H^(-1) integral. A symplectic involution fixes the transcendental lattice, so the NS discriminant action must be trivial. Apply this cheap exact test before equation reconstruction.",
+      "avoid": "Treating a rational eigenspace split as sufficient for a K3 involution, or reconstructing another X1092 frame to revive the order-four mechanism.",
+      "boundary": "All nineteen X1092 rootless J2 types are covered using inherited census completeness and group orders. Five trace-one candidates fail gluing. The theorem excludes pointed base involutions but not arbitrary correlated gains or fibration-changing automorphisms. The batched PARI timeout is preserved as an engineering failure; isolated generators and exact matrix closure supply accepted evidence.",
+      "reopen_when": "A different NS with actual arithmetic marking has a compatible lattice involution, geometric realization, the Q(i) fixed-base condition and a new anti-invariant direction.",
+      "claims": [
+        "EC-K3-X1092-ROOTLESS-INVOLUTION-GLUE-GATE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/X1092_ROOTLESS_INVOLUTION_GLUE_GATE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_x1092_involution_glue.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "symplectic involution",
+        "discriminant group",
+        "X1092",
+        "rootless frame"
+      ],
+      "reviewed_claims": {
+        "EC-K3-X1092-ROOTLESS-INVOLUTION-GLUE-GATE-20260915": "5eae4a6aa6cb550a"
+      }
+    },
+    {
+      "id": "METHOD-K3-HALVING-RESIDUE-FIELD-PENCIL",
+      "area": "elkies-k3",
+      "title": "Halving points must have the same residue field as their branch value",
+      "when": "Using low-degree points on a primitive halving curve to construct a quadratic rank-gain cover.",
+      "use": "Require k(P)=k(t(P)). For the trace of a smooth rational bisection, use the F1 quotient and its adjoint fixed divisor to prove uniqueness of the original rational degree-four pencil. Points obtained by varying rational t lie over larger residue fields and are not usable branch halves.",
+      "avoid": "Treating a quartic half above rational t as a half over the branch field, confusing field equality with a number field having no subfields, or claiming finiteness from uniqueness of a rational pencil.",
+      "boundary": "Applies to the primitive trace of an embedded smooth rational bisection on a24-I1 K3, including Q80 parity65538. Its usable degree2..4 points are P1-isolated, but elliptic quotients and isolated arithmetic points remain uncomputed. The checker verifies embedding premises and intersection arithmetic; the quotient and complete-linear-system argument is written.",
+      "reopen_when": "An exact half with residue field equal to its base-value field is supplied outside the original rational pencil, together with the additional independent incidence and global trace lifting needed for two gains.",
+      "claims": [
+        "EC-K3-Q80-HALVING-PENCIL-UNIQUENESS-20260915"
+      ],
+      "sources": [
+        "elkies-k3/Q80_HALVING_PENCIL_GEOMETRY_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_q80_halving_pencil_geometry.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "halving curve",
+        "residue field",
+        "tetragonal",
+        "Hirzebruch surface",
+        "rational bisection"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-HALVING-PENCIL-UNIQUENESS-20260915": "dfa59811f391de2b"
+      }
+    },
+    {
+      "id": "METHOD-K3-RESIDUAL-WEYL-TWO-VECTOR-COMPLETION",
+      "area": "elkies-k3",
+      "title": "Finish an energy-surviving Niemeier anchor with exact dual-root labels and both D5 orientations",
+      "when": "A primitive opposite-form auxiliary contains D5 and energy bounds leave a small number of Niemeier anchors.",
+      "use": "Check both D5 outer diagram orientations unless an ambient extension is certified. Move the sixth vector into a residual Weyl chamber; enumerate nonnegative integral labels with its exact projected norm, regular seventh-vector lower bounds and actual Niemeier glue. Use its zero-node Weyl stabilizer to make the seventh labels positive there; exhaust dual-root vectors under exact component bounds and match both norm and pairing.",
+      "avoid": "Treating one D5 diagram orientation as all embeddings, or substituting root-lattice coordinates for the Niemeier glue. Verify stored-vector counts equal full enumeration counts. A passed trace bound alone is neither a witness nor an obstruction.",
+      "boundary": "For852,52 sixth label combinations per orientation reduce to13 integral vectors; all26 cases have zero seventh norm/pairing matches. This closes the last anchor and the actual NS genus, with no determinant-wide or lower maximum-rank claim.",
+      "reopen_when": "A different admitted NS or auxiliary survives these exact constraints; a surviving vector pair still requires primitive embedding, rootless complement and arithmetic equation certificates.",
+      "claims": [
+        "EC-K3-DET852-GLOBAL-ROOT-OBSTRUCTION-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det852_global_root_obstruction.py"
+      ],
+      "keywords": [
+        "Niemeier",
+        "D5",
+        "Weyl stabilizer",
+        "dual root lattice",
+        "determinant852"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET852-GLOBAL-ROOT-OBSTRUCTION-20260915": "8b8d9b8d4d280543"
+      }
+    },
+    {
+      "id": "METHOD-K3-SINGULAR-BISECTION-TANGENT-CURVE",
+      "area": "elkies-k3",
+      "title": "Use rational tangent points for the first singular elliptic-bisection layer",
+      "when": "Seeking genus-one quadratic covers beyond smooth bisection pencils on a24-I1 elliptic K3.",
+      "use": "For arithmetic-genus2 images, normalize trace modulo twice the inherited MW group and pass to the quotient by T-P. Its F1 branch curve has genus9. A genuine genus-one normalization comes from a rational tangent point with exactly one contact of order2 or3; test its tangent line, integral pullback, residual quartic and rational base. For any smooth-branch cover, use h(anti-trace)=4*(p_a+3) to certify independence from a nonsquare genus ratio once the literal cover is identical. For an inherited rational contact in this layer, require h(T-2R)>=14 before interpolation. Recover a retained height-four word over Q by seven exact fibre evaluations, verify its polynomial equation, and use the intersection bound to attach it to the word; finite-field coordinates alone are insufficient. For arithmetic genus4, use a degree-three contact divisor on the F1 halving curve. Construct its Hermite lift modulo f^2 and test the three-by-two high-coefficient matrix before solving the full six jets. Rank1, homogeneous coprimality, actual incidence and a squarefree residual quartic are separate required checks. Infinite arithmetic supply would force a degree-three elliptic quotient; a contact-parameter elliptic curve is not the covering base. At equality in Castelnuovo-Severi, compare the same intrinsic adjoint line bundle on the forced smooth product model and on the ruled quotient. On F1, restriction of |2C0+F| retains C0.R as a fixed divisor; on a (3,4) curve in P1 times an elliptic curve, three explicit chart-glued adjoint sections have no common zero. Apply this obstruction before a cubic elliptic-map or Jacobian campaign.",
+      "avoid": "Searching an unbounded two-parameter net as if rational one-node members formed a free rational family, mistaking rational singular points of the plane or dual curve for rational points of the normalization, or treating finiteness as an effective enumeration.",
+      "boundary": "Finiteness is for arithmetic genus2 and normalization genus1 modulo inherited translations over a fixed number field. It does not exclude all such members or higher arithmetic genus. The height identity requires smooth parent branch fibres. A square height ratio proves neither dependence nor independence. Symbolic premises are checked but the geometric and Faltings arguments are written. For Q80 trace P3, the complete retained height-four shell at distance h(P3-2R)=14 has 230 oriented sections and no rational contact, including poles and infinity. Exact degree-five/degree-thirteen factors have modular no-root witnesses. This is a bounded experiment, not an all-height or all-trace exclusion. The cubic-contact constructor supplies no actual halving point. Although the genus9 Castelnuovo-Severi bound reaches equality for a degree-three elliptic quotient, its smooth product model makes |K_R-2L| basepoint-free, contradicting the fixed length-two divisor on F1. That quotient is now geometrically excluded and the arithmetic-genus4 layer is finite modulo translations. Exceptional contacts remain unenumerated; larger-degree elliptic maps and higher image genera are outside the result.",
+      "reopen_when": "An actual eligible rational tangent point yields a literal quartic matching another independent bisection cover, with an infinite rational covering base, or a new construction addresses higher arithmetic-genus images.",
+      "claims": [
+        "EC-K3-SINGULAR-GENUS1-TANGENT-FINITENESS-20260915",
+        "EC-K3-CUBIC-CONTACT-TRIELLIPTIC-GATE-20260915",
+        "EC-K3-F1-TRIELLIPTIC-ADJOINT-OBSTRUCTION-20260915"
+      ],
+      "sources": [
+        "elkies-k3/SINGULAR_BISECTION_TRACE_GEOMETRY_2026-09-15.md",
+        "elkies-k3/Q80_MINIMAL_INHERITED_CONTACT_2026-09-15.md",
+        "elkies-k3/CUBIC_CONTACT_AND_TRIELLIPTIC_GATE_2026-09-15.md",
+        "elkies-k3/F1_TRIELLIPTIC_ADJOINT_OBSTRUCTION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_singular_bisection_geometry.py",
+        "elkies-k3/scripts/verify_q80_minimal_inherited_contact.py",
+        "elkies-k3/scripts/verify_cubic_contact_interpolation.py",
+        "elkies-k3/scripts/verify_f1_trielliptic_obstruction.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "singular bisection",
+        "tangent line",
+        "halving curve",
+        "Faltings",
+        "arithmetic genus",
+        "anti-trace height"
+      ],
+      "reviewed_claims": {
+        "EC-K3-SINGULAR-GENUS1-TANGENT-FINITENESS-20260915": "78c91f97129c7bf4",
+        "EC-K3-CUBIC-CONTACT-TRIELLIPTIC-GATE-20260915": "37c8aa4b8cd27260",
+        "EC-K3-F1-TRIELLIPTIC-ADJOINT-OBSTRUCTION-20260915": "0131f5e5b965dafb"
+      }
+    },
+    {
+      "id": "METHOD-K3-CM-TORSION-ORBIT-DOUBLING",
+      "area": "elkies-k3",
+      "title": "Use a torsion CM orbit and one non-torsion CM orbit to specify a non-CM period intrinsically",
+      "when": "A fully marked elliptic Shimura curve has rational torsionE[2], a four-point CM locus fixed by an inversion, and a second eight-point CM locus under residual translations and inversion.",
+      "use": "Choose a point O in the first CM locus as origin. The first locus is exactlyE[2]; any point R in the second is non-torsion and that locus is +/-R+E[2]. Then2R is in neither locus, since2R=+/-R+T would make R or3R torsion. This gives a particular rational non-CM period without numerical CM coordinates.",
+      "avoid": "Equating positive rank on a Jacobian with rational points on its torsor; applying the orbit argument before proving the complete CM locus and full marked group. Intrinsic coordinates are not a K3 equation certificate.",
+      "boundary": "For1020 the full curve is510d2, CM discriminants are-3 and-163, and primitive embedding plus divisor descent prove full rational NS. A separate subsequent determinant1020 existence proof supplies the rootless frame and arithmetic MW17; this orbit method itself supplies neither equation nor frame. The source is outside the catalogue;600 historical rows remain separate.",
+      "reopen_when": "Another full marked elliptic curve has the stated orbit and torsion data, or an explicit equation requires recovery of the intrinsic period coordinates.",
+      "claims": [
+        "EC-K3-DET1020-RATIONAL-MARKING-SOURCE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_RATIONAL_MARKING_SOURCE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_rational_marking.py"
+      ],
+      "keywords": [
+        "CM",
+        "doubling",
+        "Atkin-Lehner",
+        "determinant1020",
+        "full rational marking"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-RATIONAL-MARKING-SOURCE-20260915": "7613f8a3522078fc"
+      }
+    },
+    {
+      "id": "METHOD-K3-QUADRATIC-CONTACT-JETS",
+      "area": "elkies-k3",
+      "title": "Construct the second singular elliptic-bisection layer from actual quadratic contact jets",
+      "when": "Seeking an arithmetic-genus3 bisection with genus1 normalization on a24-I1 K3.",
+      "use": "Choose an actual degree-two contact divisor on the primitive halving curve. In F0 require the norm of its tangent slope to equal the squared secant coefficient; in F2 require slope trace twice that coefficient. Solve the four linear jet conditions, require a rank3 kernel giving an integral section, and verify the exact residual quartic and scalar. Fixed contact data determine at most one integral section by the intersection bound.",
+      "avoid": "Replacing an actual halving-curve point by arbitrary quadratic coordinates, treating determinant zero as sufficient despite a reducible kernel, omitting diagonal contacts or infinity, or declaring an infinite rational base from a rational singular point.",
+      "boundary": "The complete arithmetic-genus3 genus-one layer is finite over a fixed number field modulo inherited translations, not enumerated or empty. Higher image genus remains open. The exact interpolation controls are not K3 points. A matching cover of image genus1 or2 would give independent anti-traces by heights24 versus16 or20, but no match is supplied.",
+      "reopen_when": "An actual halving-curve contact divisor passes the jet, irreducibility and residual quartic checks and matches a second verified cover with an infinite rational base.",
+      "claims": [
+        "EC-K3-QUADRATIC-CONTACT-INTERPOLATION-20260915"
+      ],
+      "sources": [
+        "elkies-k3/QUADRATIC_CONTACT_INTERPOLATION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_quadratic_contact_interpolation.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "quadratic contact",
+        "jet interpolation",
+        "halving curve",
+        "norm equation",
+        "singular bisection"
+      ],
+      "reviewed_claims": {
+        "EC-K3-QUADRATIC-CONTACT-INTERPOLATION-20260915": "ad2f6b584a48bd56"
+      }
+    },
+    {
+      "id": "METHOD-K3-INHERITED-CONTACT-HEIGHT-GAP",
+      "area": "elkies-k3",
+      "title": "A genuine inherited half can still force reducible contact interpolation",
+      "when": "Using two conjugate quadratic halving points supplied by a fixed inherited section to construct an arithmetic-genus3 genus-one bisection.",
+      "use": "Compute h(T-2R) first. The candidate quotient section intersects the inherited image in h(T-2R)/4-1; two common tangencies require at least4, hence height at least20. For exact equality fields, keep both ordinate signs. Factor a rational x-equality numerator only as needed and certify each higher-degree factor separately by a monic-integral finite-field gcd witness; verify the entire product.",
+      "avoid": "Promoting a true halving point or a zero norm determinant to an integral carrier, dropping the sign T=+/-2R, claiming a whole-polynomial modular miss excludes factors, or applying the two-distinct-contact height bound to a diagonal point without its higher jet.",
+      "boundary": "The fixed P1/P2 Q80 traces and O plus signed source basis supply exactly two nonpole quadratic half fields, both T=2P6 with height8 and reducible interpolation. Higher MW words, other traces, noninherited halves and diagonal contacts are not excluded. Initial26 unresolved whole-polynomial cases were resolved by factor-specific exact witnesses, not treated as positive points.",
+      "reopen_when": "A new actual quadratic half outside the frozen bank has sufficient inherited distance height and passes integral jet interpolation, residual quartic, literal-character matching and rational-base checks.",
+      "claims": [
+        "EC-K3-Q80-INHERITED-QUADRATIC-CONTACT-GATE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/INHERITED_QUADRATIC_CONTACT_GATE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_inherited_quadratic_contacts.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "inherited half",
+        "quadratic contact",
+        "height gap",
+        "jet degeneracy",
+        "finite polynomial witness"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-INHERITED-QUADRATIC-CONTACT-GATE-20260915": "f58b140e2904e8b3"
+      }
+    },
+    {
+      "id": "METHOD-K3-ROOT-SPLIT-AND-POSITIVE-WITNESS",
+      "area": "elkies-k3",
+      "title": "Use root splitting for large-vector comparisons and stop genus work once a positive primitive witness suffices",
+      "when": "A positive auxiliary has a large vector outside a high-rank root lattice and generic PARI automorphism or isometry enumeration overflows.",
+      "use": "Split into the root lattice and its rational orthogonal complement, normalize the root Gram to Cartan, enumerate diagram actions and the small complementary automorphisms/isometries, then test integrality on the actual glued lattice. Weyl factors recover automorphism orders. For1020 a separate exact E6+<340> genus match led directly to a primitive4E6 rootless witness; finite-form comparison then identifies the admitted NS without completing the auxiliary genus.",
+      "avoid": "Raising stack limits repeatedly or treating a bounded class list as a complete genus. Root rank and count need not uniquely specify the root type; require the exact Cartan isometry. A source-basis lattice transport or equation is not supplied by indefinite uniqueness.",
+      "boundary": "Retained1020 exploration stopped at118 classes and100000 evaluations, with mass18329/7680 short of123721/51840. The structural helper supports only explicitly recognized Cartan cases and fails closed otherwise. The positive17-frame proof uses pinned primitive matrices, exact norm2 absence and discriminant isometry, not that partial list.",
+      "reopen_when": "Another bounded calculation requires root-split comparisons, or an explicit source equation enables physical transport of the certified frame.",
+      "claims": [
+        "EC-K3-DET1020-ARITHMETIC-MW17-EXISTENCE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_rootless_frame.py",
+        "artifacts/generated-results/elkies-k3-det1020-root-gate-v1/root_split_auto.py"
+      ],
+      "keywords": [
+        "rootless",
+        "root splitting",
+        "determinant1020",
+        "arithmetic MW17",
+        "Niemeier"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-ARITHMETIC-MW17-EXISTENCE-20260915": "c693307837a9081d"
+      }
+    },
+    {
+      "id": "METHOD-K3-BRANCH-SATURATION-VERSUS-RELATION",
+      "area": "elkies-k3",
+      "title": "Distinguish a genuine branch divisibility defect from a vanishing generic relation",
+      "when": "A low-degree branch half is available and its mechanism relative to the full inherited MW group is unclear.",
+      "use": "Certify integral specialization injectivity with full-rank finite quotient matrices modulo an auxiliary prime ell and an independent no-ell-torsion reduction. A half of a primitive generic trace then lies outside every inherited integer combination. Combine with the modulo2 specialization kernel and absence of2-torsion to identify the first halving enlargement, without claiming a new rational vector-space rank.",
+      "avoid": "Confusing a noninherited half with an extra number-field rank direction, inferring full2-saturation from its first step, or using a true F1 half as an F0/F2 contact input. For exact polynomial assertions use is_zero rather than coefficient-domain-sensitive equality of zero polynomials.",
+      "boundary": "The known Q80 rank18 cover has an injective rank17 branch specialization and exactly one first-halving class, generated by its branch point. No second branch class, matching cover or new gain is constructed. The finite quotient and field calculations are replayed; the integral descent is written. A separate bounded height-six P3 contact attempt finds no nonpole or infinity rational half supplied by the signed source basis; its half-O contact is degenerate. For arithmetic genus2 an inherited tangent contact requires distance height at least14 by local intersection2. Higher inherited words and noninherited rational halves are not excluded.",
+      "reopen_when": "A different branch incidence has enough independent first-halving defects or the required mixed branch class, with compatible global trace lifts and an infinite rational covering base.",
+      "claims": [
+        "EC-K3-Q80-BRANCH-SATURATION-DEFECT-20260915"
+      ],
+      "sources": [
+        "elkies-k3/Q80_BRANCH_SATURATION_DEFECT_2026-09-15.md",
+        "elkies-k3/Q80_RATIONAL_CONTACT_P3_ATTEMPT_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_q80_branch_saturation_defect.py",
+        "elkies-k3/scripts/verify_q80_rational_contact_p3.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "specialization injectivity",
+        "saturation defect",
+        "noninherited half",
+        "modulo3",
+        "branch arithmetic"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-BRANCH-SATURATION-DEFECT-20260915": "6d205309e731a497"
+      }
+    },
+    {
+      "id": "METHOD-K3-RANK1-SOURCE-FRAME-BEFORE-HUMBERT",
+      "area": "elkies-k3",
+      "title": "Find a low-pole rank1 source presentation before solving large Humbert conditions",
+      "when": "Arithmetic admission and a rootless frame are known but no explicit K3 equation is available.",
+      "use": "Scan a bounded set of root-rank16 ADE lattices and generator component classes. Require the exact determinant and finite quadratic form, root saturation, and height-derived P.O. At1020 the primitive A2+2A3+A8 frame has height85/36 and P.O=0. This gives a polynomial-section chart; a nodal cubic parametrization eliminates the high I9 condition symbolically before solving the residual fiber equations. For additional multiplicative fibers, use a rational nodal root and local critical-value jets instead of expanding the full discriminant. Reduce the cubic jet modulo the quadratic jet only on the explicit nonzero-H chart.",
+      "avoid": "Treating an ADE label as a physical nef marking, assuming A2 means I3 rather than IV, or accepting a modular/formal point as a rational source. A pairwise sum of dual basis vectors need not generate a cyclic discriminant group; use Smith transport and reduce the resulting dual vector modulo the lattice. The unsaturated nodal system includes additive and wrong-component degenerations. Two bounded eliminations, including one with an inverse-product open condition, returned no basis; a timeout gives no dimension or emptiness statement.",
+      "boundary": "Discovery tested34517 component combinations in the declared <=4-factor, height(2,8], P.O<=2, torsion-free window. It is not a full fibration classification. The source frame is proved; the symbolic chart remains unsolved and elimination-denominator branches are retained. The F7 chart and fixed a1=0 F11 slice have no retained admissible finite-field point; this is not a Q-point obstruction. Both60-second Groebner pilots are terminal and unresolved.",
+      "reopen_when": "A structural parameter reduction, a different source chart, or a proved elimination strategy gives a reason for new computation; then obtain a rational parameter with exact fibers, splitting, saturation and Picard19. Do not rerun the same time-bounded elimination merely with a larger limit.",
+      "claims": [
+        "EC-K3-DET1020-LOW-POLE-SOURCE-FRAME-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_LOW_POLE_SOURCE_FRAME_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_rank1_source_frame.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/scan_rank1_frames.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/build_i9_normal_form.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/certify_nodal_jets.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/build_nodal_system_saturated.py"
+      ],
+      "keywords": [
+        "determinant1020",
+        "MW1",
+        "source equation",
+        "I9",
+        "finite discriminant form"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-LOW-POLE-SOURCE-FRAME-20260915": "7ebef78395c7ac2f"
+      }
+    },
+    {
+      "id": "METHOD-K3-PENCIL-RANK-CONGRUENCE-CERTIFICATE",
+      "area": "elkies-k3",
+      "title": "Extend a branch-rank certificate to a congruence class of pencil parameters",
+      "when": "A known one-gain genus-one pencil member could hide another direction at an unbounded height.",
+      "use": "Compute the full generic basis modulo doubles at simple branch roots, exclude branch-field2-torsion independently, and apply the retained global trace theorem. Freeze enough coefficient congruences to preserve branch irreducibility, the residue places and the quotient matrix throughout a parameter progression.",
+      "avoid": "Interpreting a small matrix kernel as a height-bounded point search, claiming a second gain from kernel deficiency, or treating an exact-rank genus-one function field as a proof of infinitely many rational base points.",
+      "boundary": "The Q80 trace-P1 pencil has exact rank18 for lambda in 175361103335727332945*Z. Other parameters and two-gain constructions remain unresolved.",
+      "reopen_when": "A prospective parameter outside this progression has adequate branch divisibility and actual compatible global trace lifts on an infinite rational base.",
+      "claims": [
+        "EC-K3-Q80-GENUS1-SINGLE-TRACE-CONTROL-20260915"
+      ],
+      "sources": [
+        "elkies-k3/Q80_GENUS1_SINGLE_TRACE_CONTROL_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/verify_q80_genus1_single_trace_control.py"
+      ],
+      "keywords": [
+        "correlated rank gain",
+        "genus-one pencil",
+        "branch specialization",
+        "congruence",
+        "exact rank18"
+      ],
+      "reviewed_claims": {
+        "EC-K3-Q80-GENUS1-SINGLE-TRACE-CONTROL-20260915": "e62e3fa7dfaa0df2"
+      }
+    },
+    {
+      "id": "METHOD-K3-CENTRAL-COMPONENT-CHART",
+      "area": "elkies-k3",
+      "title": "Compare component contact orders as well as section poles when choosing a source equation",
+      "when": "A disjoint-section presentation requires a large cancellation system despite small P.O.",
+      "use": "The central component5 of I10 permits t^5 divisibility of both B and C in a pointed cubic, making the large fiber automatic. For1020, account for P.O=1 with polynomial section degrees6 and9 in a minimal K3 model. High-degree cancellations at infinity and the nonidentity I3 conditions are all linear eliminations, yielding a rational six-parameter chart. Retain e=0 as the split-IV branch.",
+      "avoid": "Ranking equation cost by P.O alone; forcing the unique pole to coincide with an arbitrarily chosen singular fiber; discarding e=0 without testing its Kodaira type. A rational partial-family example is not the determinant1020 surface.",
+      "boundary": "The exact chart builds I10 and one I3/IV only. The additional identity I3/IV and I4 remain unsolved. F7/F11 smooth-pole and selected F7 boundary windows miss; none excludes rational points. The original I9 system and terminal elimination failures are preserved.",
+      "reopen_when": "The residual-fiber curve is structurally reduced or a rational point is certified with splitting, saturation and Picard19.",
+      "claims": [
+        "EC-K3-DET1020-CENTER-COMPONENT-SOURCE-CHART-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_CENTER_COMPONENT_SOURCE_CHART_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_center_source_chart.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/build_center_chart.py"
+      ],
+      "keywords": [
+        "determinant1020",
+        "central component",
+        "I10",
+        "split IV",
+        "rational chart"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-CENTER-COMPONENT-SOURCE-CHART-20260915": "b5894b6c281c5de9"
+      }
+    },
+    {
+      "id": "METHOD-K3-COARSE-NORMALIZATION-RESTORED-MARKING",
+      "area": "elkies-k3",
+      "title": "Normalize a coarse coefficient curve, then restore every arithmetic marking cover",
+      "when": "Direct split-fiber windows miss while a lower-marking quotient can have rational parameters.",
+      "use": "Temporarily omit tangent orientations to locate a smooth finite-field branch, retain formal and p-adic reconstruction inputs, and verify reconstructed functions exactly over a rational function field. Then restore every missing tangent square condition. For1020 the conditions become u^2+2x^2=306 and w^2+2x^2=50, producing exact rational sources. Certify Picard19 and integral saturation separately; two reduction discriminant squareclasses close this source.",
+      "avoid": "Treating a nonsplit coarse point, a smooth formal branch or a held-out series fit as a rational marked K3. Increasing failed full-split windows without changing the arithmetic quotient. Assuming the first split rational candidate is non-CM.",
+      "boundary": "The coarse/formal stages are discovery evidence only. Exact equation substitution, all four split tangents, section height, no even overlattice and41/59 counts admit the second source. The first candidate22/13 has no certified characteristic-zero Picard bound. No physical MW17 equation has been compiled.",
+      "reopen_when": "For other source charts, when the omitted marking covers and a useful normalization can be made exact. For1020 proceed to physical transport, not another coefficient search.",
+      "claims": [
+        "EC-K3-DET1020-EXPLICIT-RATIONAL-SOURCE-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_EXPLICIT_RATIONAL_SOURCE_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_explicit_source.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/verify_rational_coarse_family.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/specialize_split_family.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/count_split_sources_python.py"
+      ],
+      "keywords": [
+        "determinant1020",
+        "coarse quotient",
+        "rational marking",
+        "Picard bound",
+        "formal reconstruction"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-EXPLICIT-RATIONAL-SOURCE-20260915": "235c544dc78bd0ad"
+      }
+    },
+    {
+      "id": "METHOD-K3-AMPLE-BOUNDED-NEF-ELLIPSOID",
+      "area": "elkies-k3",
+      "title": "Use an ample divisor to turn a complete nef check into finite closest-vector enumeration",
+      "when": "A physical primitive rootless U is known, but testing supplied components and sections does not certify the chamber.",
+      "use": "Construct an explicit ample H with H.C>=c*(old_fiber.C) for every irreducible horizontal curve except separately checked curves. A negative root wall has H.C<H.D, hence bounded old degree. For D=(a,b,w), degree-d negative roots are exactly the integral roots with (v-d*w/b)^2_F<2; enumerate them through the positive18-dimensional augmented form. Reflect and repeat. At1020 this detects degree4 and22 walls missed by all source components and81 source sections, then checks507 final degrees.",
+      "avoid": "Promoting nonnegativity on a finite wall list to full nefness. Treating raw low root count or a rootless transport as an equation. Increasing undirected candidate bounds after a miss without a new structural filter.",
+      "boundary": "The earlier degree183 certificate and its507-degree sweep are retained. A capped, incomplete degree12 window supplies an A1 parent; a512-candidate masked2-neighbor cost pilot produces a degree20 rootless fiber. Coordinate descent minimizes old-source incidence within parity cosets heuristically. A full45-degree sweep certifies the new fiber. No minimal-incidence theorem is claimed; rational functions and section coordinates remain open.",
+      "reopen_when": "For a new physical candidate, reuse the complete ample criterion and exact ellipsoid check; for1020 now compute the pencil or establish a cheaper certified incidence.",
+      "claims": [
+        "EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915"
+      ],
+      "sources": [
+        "elkies-k3/DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15.md"
+      ],
+      "implementation": [
+        "elkies-k3/scripts/certify_det1020_physical_mw17.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/reduce_source_rootless_nef.py",
+        "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/source_u_masked_pilot.py"
+      ],
+      "keywords": [
+        "determinant1020",
+        "nef chamber",
+        "ample divisor",
+        "closest vector",
+        "rootless U",
+        "multisection"
+      ],
+      "reviewed_claims": {
+        "EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915": "1041568447e5b57f"
       }
     }
   ]

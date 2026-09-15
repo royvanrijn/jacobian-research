@@ -1,0 +1,5 @@
+{
+  "status": "FAILED_BEFORE_FREEZE_OR_CALCULATION",
+  "failure": "The ad hoc SourceFileLoader harness passed a relative script path; the producer's absolute source-binding construction rejected it.",
+  "resolution": "Use the absolute resolved script path in the preview harness. No producer source change and no frozen input resulted from this failure."
+}

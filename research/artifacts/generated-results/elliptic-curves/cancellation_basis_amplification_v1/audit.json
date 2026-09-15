@@ -1,0 +1,10 @@
+{
+  "arms": 48,
+  "completion_sha256": "e24725b22af1d7609860d60ff6b2eb34aa31f8bcd8694275744db9004df792e4",
+  "interrupted_primary_arms": 1,
+  "new_directions": 67,
+  "point_search_calls_added": 0,
+  "status": "PASS_CERTIFIED_OUTCOMES_WITH_RETAINED_INTERRUPTION",
+  "summary_sha256": "ac74f5d4781e16ae6e0bb9b24b3c0f5973256d4ef7a26ce543d25e45dd308139",
+  "supplementary_source_sha256": "a6f3068c38e94348766c16eb6bf8c82bf6be885db70e8963984a4434d1f23887"
+}

@@ -1,0 +1,12 @@
+{
+  "census_cpu_limit": 90,
+  "census_cpu_seconds": 1.76798,
+  "census_memory_bytes": 536870912,
+  "driver_cpu_limit": 30,
+  "driver_memory_bytes": 2147483648,
+  "input_sha256": "3ad90eb4c7b1d6a6252ac95486a48609f152499ff1b8dab4cd87c5f92941e0b6",
+  "result_sha256": "289cc8ffd7e89e07db77dea0bea81ca279c3d14d918e7f2b7c9a0f0dde739979",
+  "sage_cpu_seconds": 0.27960804100000003,
+  "status": "PASS",
+  "wall_seconds": 2.7728900740039535
+}

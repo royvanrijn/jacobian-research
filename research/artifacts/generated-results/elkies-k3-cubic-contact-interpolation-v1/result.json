@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "checker_sha256": "91e7bd230dd1a7bd6c9b0b4cd06804cd3064ddca000be4f873ee6162a52168b2",
+  "contact_matrix_minors": [
+    "c3*z4*z5 - c4*z3*z5 - z2*z4 + z3**2",
+    "c3*z5**2 - c5*z3*z5 - z2*z5 + z3*z4",
+    "c4*z5**2 - c5*z4*z5 - z3*z5 + z4**2"
+  ],
+  "controls": [
+    {
+      "u": "3*t**2/7 + t/7 + 2/7",
+      "v": "-33*t**2/49 + 45*t/49 + 34/49",
+      "Hermite_lift": "-3*t**5/49 + 6*t**4/49 - 6*t**3/49 + 18*t**2/49 + 10*t/49 + 23/49",
+      "matrix": [
+        [
+          "-6/49",
+          "12/49"
+        ],
+        [
+          "6/49",
+          "-12/49"
+        ],
+        [
+          "-3/49",
+          "6/49"
+        ]
+      ],
+      "matrix_rank": 1,
+      "full_jet_rank": 4,
+      "numerator": "t**2 + t + 1",
+      "denominator": "t + 2"
+    },
+    {
+      "u": "3*t**2/7 + t/7 + 2/7",
+      "v": "-33*t**2/49 + 45*t/49 + 83/49",
+      "Hermite_lift": "-363*t**5/1127 + 579*t**4/1127 + 352*t**3/1127 + 267*t**2/1127 - 407*t/1127 + 333/1127",
+      "matrix": [
+        [
+          "352/1127",
+          "-459/1127"
+        ],
+        [
+          "579/1127",
+          "-374/1127"
+        ],
+        [
+          "-363/1127",
+          "579/1127"
+        ]
+      ],
+      "matrix_rank": 2,
+      "full_jet_rank": 5
+    },
+    {
+      "u": "t + 1",
+      "v": "1",
+      "Hermite_lift": "t + 1",
+      "matrix": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "matrix_rank": 0,
+      "full_jet_rank": 3
+    },
+    {
+      "u": "t**2 + t + 3",
+      "v": "2*t + 1",
+      "Hermite_lift": "t**2 + t + 3",
+      "matrix": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "matrix_rank": 1,
+      "full_jet_rank": 4,
+      "numerator": "t**2 + t + 3",
+      "denominator": "1"
+    }
+  ],
+  "arithmetic_genus": 4,
+  "quotient": "F1",
+  "section_self_intersection": 3,
+  "branch_intersection": 10,
+  "contact_degree": 3,
+  "residual_branch_degree": 4,
+  "anti_trace_height": 28,
+  "CS_genus0_bound": 6,
+  "CS_genus1_bound": 9,
+  "actual_halving_point_constructed": false,
+  "trielliptic_map_constructed": false,
+  "correlated_target_complete": false
+}

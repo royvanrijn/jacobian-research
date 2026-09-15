@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_sha256": "2ec13d98baf296b683d67bd6b1ad591f1d9b1d6458ae35a53e69faabe1d3e21d",
+  "checker_sha256": "98ac67a9303ddc871d916efc3680181484eb53548777e905b3c91d4b283954a0",
+  "pari_version": "2.15.4",
+  "rank": 17,
+  "frame_determinant": 1020,
+  "automorphism_order": 2,
+  "generator": "-I_17",
+  "involution_traces": [
+    -17
+  ],
+  "required_pointed_symplectic_involution_trace": 1,
+  "compatible_involutions": 0,
+  "independent_implementation": false,
+  "scope": "Only the frame in the retained4E6 determinant1020 witness; other frames and nonsymmetry correlated-gain constructions are not excluded.",
+  "elapsed_seconds": 0.051498443994205445
+}

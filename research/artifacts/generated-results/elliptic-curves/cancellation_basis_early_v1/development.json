@@ -1,0 +1,9 @@
+{
+  "boundary": "One previously tested whole-j case6f5afe31891f7dc1938b checks actual early-generator bank transitions and complete final replay with target3 at the same limits. This is a software integration control selected from the completed accessibility audit, not a new validation result. Its original failed-comparison arm remains unchanged. Development timing is outside per-arm performance meters and reported separately.",
+  "cpu_seconds": 42.246007475999996,
+  "directions": 2,
+  "epochs": 2,
+  "result_sha256": "86ea29e303fd773858ef984ba07b7f60cf3b4054f00cda8549939661fce8b7ae",
+  "status": "PASS_DEVELOPMENT_ONLY",
+  "verification_sha256": "c05bd82aafb665189d4fbf3fbeb2088b46b99e1f89090e5a419a4a6792d31665"
+}

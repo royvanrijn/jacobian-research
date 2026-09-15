@@ -1,0 +1,79 @@
+{
+  "boundary": "All24 initial banks match. Twenty-two complete first-cloud prefixes match exactly. The two unequal whole prefixes use identical common queries and certify zero gains in both arms, but their last common call differs in completion/timeout and returned clouds near the CPU cap. Final call counts also differ. This does not identify all returned points as dependent; no new arithmetic replay or query is executed.",
+  "inspection_correction": "An initial scratch assertion that all common returned clouds also matched failed before writing a record. The actual differing statuses and cloud counts are retained here; no result or prior input is modified.",
+  "point_search_calls": 0,
+  "protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "rows": [
+    {
+      "calls": {
+        "basis_refresh": 54,
+        "fixed_bank": 53
+      },
+      "case": "76b1b6a0e11817542c3d",
+      "differences": [
+        {
+          "basis_refresh_status": "bounded_search_complete",
+          "call": "call-052.json",
+          "call_sha256": {
+            "basis_refresh": "365d0361690fa3647ab8e0fe81a2d571946e52a7fcb2374bbcb0eacb745fac38",
+            "fixed_bank": "d3e2c91fce6ef4d638074976975a0555cab677b130bf02b670a15cdcfde21873"
+          },
+          "fixed_bank_status": "bounded_search_timeout",
+          "gain": {
+            "basis_refresh": 0,
+            "fixed_bank": 0
+          },
+          "returned_point_counts": {
+            "basis_refresh": 14,
+            "fixed_bank": 0
+          }
+        }
+      ],
+      "directions": {
+        "basis_refresh": 0,
+        "fixed_bank": 0
+      },
+      "same_common_queries": true,
+      "states": {
+        "basis_refresh": "CPU_CAP",
+        "fixed_bank": "CPU_CAP"
+      }
+    },
+    {
+      "calls": {
+        "basis_refresh": 55,
+        "fixed_bank": 57
+      },
+      "case": "fcaa89f845c4165eaf41",
+      "differences": [
+        {
+          "basis_refresh_status": "bounded_search_timeout",
+          "call": "call-054.json",
+          "call_sha256": {
+            "basis_refresh": "458a37bb880632c50199700148c81156ba8a7c19b10fd35908657a8fd7f7721f",
+            "fixed_bank": "ca260fd9f22d5d0ad382d2cb93dceb01978a196ce3ae29ef09d1dea55b7f368e"
+          },
+          "fixed_bank_status": "bounded_search_complete",
+          "gain": {
+            "basis_refresh": 0,
+            "fixed_bank": 0
+          },
+          "returned_point_counts": {
+            "basis_refresh": 0,
+            "fixed_bank": 2
+          }
+        }
+      ],
+      "directions": {
+        "basis_refresh": 0,
+        "fixed_bank": 0
+      },
+      "same_common_queries": true,
+      "states": {
+        "basis_refresh": "CPU_CAP",
+        "fixed_bank": "CPU_CAP"
+      }
+    }
+  ],
+  "status": "PASS_ZERO_GAIN_QUERY_PREFIX_BOUNDARY"
+}

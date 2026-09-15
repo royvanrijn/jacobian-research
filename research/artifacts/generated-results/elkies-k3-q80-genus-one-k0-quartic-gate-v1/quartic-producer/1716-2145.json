@@ -1,0 +1,35 @@
+{
+  "input_sha256": "dbd2efd777b7b3e56143303ff47a0a48e3ec1669fd3030943217fe8a6cca07d0",
+  "result": {
+    "candidate_rows": [],
+    "cpu_seconds": 4.52358,
+    "first_failed_character": [
+      920607,
+      230241,
+      57405,
+      14129,
+      3602,
+      953,
+      228,
+      61,
+      14,
+      4,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "orbits": 7362069,
+    "pair_begin": 1716,
+    "pair_end": 2145,
+    "smooth_split": 1227246,
+    "split_character_checksum": "8666616168728797537",
+    "status": "COMPLETE_RANGE"
+  },
+  "source_sha256": "cf7ad2e88a90260ec63ed7a474af2d1f2201be75a0cffcfd788b0bade10fcd66",
+  "wall_seconds": 4.527630758006126
+}

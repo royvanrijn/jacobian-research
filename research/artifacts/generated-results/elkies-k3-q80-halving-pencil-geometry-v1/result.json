@@ -1,0 +1,18 @@
+{
+  "schema": "q80-halving-pencil-geometry-v1",
+  "status": "PASS",
+  "label": "alternate-orbit-11ae6",
+  "source_sha256": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+  "prior_control_sha256": "945207719944f714601511325e5f670aa2fb96af7e2dbcb2e079f5bf03a0f704",
+  "finite_premises": {
+    "x1_y1_gcd_degree": 0,
+    "x1_degree": 3,
+    "y1_degree": 5,
+    "branch_degree": 2,
+    "trace_parity": 65538,
+    "branch_curve_genus": 9,
+    "fixed_divisor_degree": 2,
+    "adjoint_space_dimension": 3
+  },
+  "boundary": "Checks smoothness premises for the retained bisection image and ruled-surface intersection arithmetic. The quotient geometry, completeness of adjoint sections and uniqueness of the degree-four pencil are written arguments, not formally checked. No new branch point or new section is constructed."
+}

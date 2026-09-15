@@ -1,0 +1,33 @@
+{
+  "actual_later_gain_cases": 16,
+  "additional_diagnostic_complete_child_cpu_seconds": 47.690211000000005,
+  "arm_level_certified_added_directions": 98,
+  "boundary": "All 48 primary attempts are retained once and independently replayed inside the CPU meters. Both postmortems add exact finite checks, not searches. The translated dictionary is a post-protocol sensitivity and changes no primary gate. Packaging and unmetered development overhead are not complete-programme timing claims. No full coset minimum, new rank discovery, upper bound, external implementation advantage, or rank32 result.",
+  "bundle_sha256": "ce46b023edc15b05571b19e9a2e20176bd0a9bf43c398619c015e480a44733f8",
+  "development": {
+    "boundary": "One previously tested whole-j case6f5afe31891f7dc1938b checks actual early-generator bank transitions and complete final replay with target3 at the same limits. This is a software integration control selected from the completed accessibility audit, not a new validation result. Its original failed-comparison arm remains unchanged. Development timing is outside per-arm performance meters and reported separately.",
+    "cpu_seconds": 42.246007475999996,
+    "directions": 2,
+    "epochs": 2,
+    "result_sha256": "86ea29e303fd773858ef984ba07b7f60cf3b4054f00cda8549939661fce8b7ae",
+    "status": "PASS_DEVELOPMENT_ONLY",
+    "verification_sha256": "c05bd82aafb665189d4fbf3fbeb2088b46b99e1f89090e5a419a4a6792d31665"
+  },
+  "exposure_audit_sha256": "41a62128f9c691a55aafc1b22db50f24720fa32226acef9cf4f782e5eb02017e",
+  "fresh_fibres_run": 0,
+  "mechanism_sha256": "c6b28eb659b43537c8a8c2fc63a811026a5fb0759c4a7c53aee7aad10b6633e3",
+  "order_regression_cpu_seconds": 8.169123997000002,
+  "portable_check_sha256": "2762faab2417528f3cb2fd64745dadda8d81adddd1276c2fc7a5a225aba31924",
+  "post_primary_point_search_calls": 0,
+  "predeclared_finite_mechanism_gate": true,
+  "primary_arm_cpu_seconds": 1684.3573029999998,
+  "primary_performance_gate": false,
+  "promotion_gate": false,
+  "protocol_sha256": "4d42c491807a0eef8d32d3f73d4d110e87b86e10138cc1e68d488d52b73e36e5",
+  "ratio_with_all_diagnostic_and_shared_preflight_cpu_charged_to_candidate": 0.7950840179958835,
+  "repeatability_gate": false,
+  "replay_manifest_sha256": "5984468696987e09099bb737e9ac75667e0ef74afb0fa5899aae326fc3002a9c",
+  "representative_audit_sha256": "592ad538fe72a52798155d06668a455277964200506512c56e2b0153b4daaa42",
+  "status": "RETAINED_FAILED_PERFORMANCE_WITH_ACTUAL_FINITE_ACCESSIBILITY",
+  "summary_sha256": "80f40e37b905de22a76f4b3915d8f97a05121c7a56ac5a1950cf546f9e24ac94"
+}

@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "26647e92a1791f4bf683d112214da94131f60ba06670430d28c6b8d1744a0538",
+  "boundary": "All24 disjoint paired controls and both fixed validation blocks pass the declared later-gain and finite causal gates. All160 primary source hashes remain unchanged; the post-protocol nested-rank reader/report correction is explicit and preserves its failure. The9553-file archive passes empty-root byte/import/source/input checks without repeating point search or full arithmetic. This proves no universal transfer, entire-coset minimum, new rank record, external superiority or rank32.",
+  "complete_primary_child_cpu_seconds": 1767.011403,
+  "postmortem_point_search_calls": 0,
+  "primary_point_search_calls": 2085,
+  "primary_workers": 48,
+  "promotion_gate": true,
+  "protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "result_sha256": {
+    "dependency-audit-reader-only.json": "290e04d6a7503882201a42bf73e6624432a5987e4bf3075929014e6438d008a4",
+    "dependency-audit.json": "da446acf6d5acc0a814ec3ceffca299181d9bd1f407a0eca5a79b93f8c3ae984",
+    "exposure-audit.json": "ca099608c31eedddac39dbebffc1b1af5f705788cca7bc4167e128832c1a4c37",
+    "external-source-review.json": "10436c1a21d7704dee0ca6f7cd698e91a498825913e686f0f4ed8c132b55380c",
+    "mechanism-process.json": "93e9751a2ad7ce58cb0fafa960a7b32e17192d6f509a74bd1cc50aea7d8b1ecd",
+    "mechanism.json": "1c3446804558210a5e3f3121fe96651e2800fed6db50f6755716d06c5cbbbdf6",
+    "paired-prefix-boundary.json": "1c4a9d1a5d01bc342c5d56960f28e322f31cd322308c39b96baa9378fa1af30e",
+    "portable-check.json": "6aacebc6274a3e4343a78120400d9b5e4add929136c31c0aa96bbc68c85306e9",
+    "reader-failure.json": "d03efb2f5d8e4b747055736068bc99b721ca8ca9998f7e3b44f50002cc040774",
+    "replay-manifest.json": "c463e0fb44f0e5fad7965ae6ba11739740cc6b202276e2aff0be2c54b825f6f9",
+    "representative-audit.json": "52e55ef73d4a153444cad3b27beb05a8c20edfdc73002f06100185bb19cbdf4a",
+    "representative-process.json": "f30b88b337b468339549565316b789a3e246dac5f3ec5350fd1af776b00e072d",
+    "summary.json": "c2fceeb1ea6bc4c023a7bef150bc1b82ae81ba58b29d7e85c142b154f22f8f49",
+    "supervision.json": "683d8f7f3de1bca51d04150b64c1a3a7e9d8231dd4721b9297711b149e412de6"
+  },
+  "status": "RETAINED_COMPLETE_CERTIFIED_BANK_AMPLIFICATION_CONTROL"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS_GCD_BOUNDARY_CHECK",
+  "inputs": {
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-08-input.json": "fb88413090d8d53bedc8067ac0a0c56a52ed698c483e1e384c75b05405535fde",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-08-order.json": "f65967c510873f96729205fb1543d37fc1ee114092778deed7cf14defce5d9ac",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-08-certification.json": "4907b0e807ffa8768b2d9d4f16d10ef65a48348cc2b68e8f02b8232ab51ea873",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_order_join_v1/case-08.json": "1b950dcdb28cb8116d7cd69569b2a0f7483ccd55bd8369e67b61e76523bd2a1c",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-09-input.json": "6fa64a4a9f7838dfcace040018cde414591f43f8e9923ccc079cb4d5872dfc07",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-09-order.json": "3433aa1a7bf7804df091fb3d5341f9986e46e015cf2fd286e403166588032aff",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_coprime_support_v1/case-09-certification.json": "46bc44e17b138dcf4ee9f57e65f6df961d2607c0c69d5d52d0ccc5e8a9dc10c6",
+    "research/artifacts/generated-results/elliptic-curves/det1092_rr_order_join_v1/case-09.json": "5ad578d253842954ea7e76be06ee00c1bc97fd57a3a317ba5585d6cad2a10bae"
+  },
+  "cases": [
+    {
+      "case_index": 8,
+      "index_bits": 4249,
+      "unresolved_bits": [
+        28878
+      ],
+      "no_split_from_new_index_or_saved_support": true
+    },
+    {
+      "case_index": 9,
+      "index_bits": 1,
+      "unresolved_bits": [
+        22633
+      ],
+      "no_split_from_new_index_or_saved_support": true
+    }
+  ],
+  "boundary": "Only the saved gcd refinements are exhausted. No squarefreeness, maximality, Selmer dimension, or universal algorithmic impossibility is proved.",
+  "replay": "For each case set d=abs(order_discriminant), D=abs(previous joined order_discriminant), index=isqrt(D//d); check D=d*index^2. For each unresolved n check n divides d, gcd(n,index)=gcd(n,d/n)=1, and gcd(n,c) is 1 or n for every saved coprime support divisor c."
+}

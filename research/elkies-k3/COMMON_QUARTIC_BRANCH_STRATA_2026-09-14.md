@@ -7,8 +7,10 @@ without a coefficient-height bound or an ordinary-node assumption.
 
 This component excludes only the same-branch genus-one stratum. The later
 [coefficient collision proof](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md)
-completes the Q80 polynomial genus-zero exclusions; twelve genus-one
-allocations remain open. The fixed-MW17 construction target and
+completes the Q80 polynomial genus-zero exclusions. After the separate
+[k2 orientation](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) and
+[k1 cubic reciprocity](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md) proofs,
+five genus-one allocations remain open. The fixed-MW17 construction target and
 a genus-above-one bound for the full construction remain **OPEN**. In
 particular, the genus-zero repeated-quartic boundary is not closed here.
 The [previous singularity theorem](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
@@ -309,6 +311,7 @@ The [frozen packet and receipt](../artifacts/generated-results/elkies-k3-common-
 record a40-CPU-second/4GiB cap. No full coefficient elimination, genus31
 point search, new parent rank calculation or positive MW17 solution is
 claimed. The next unresolved equation problem is (3)--(5) on the fixed
-parents. On Q80 only the twelve genus-one k=0,1,2 allocations remain in
-this chart, after the subsequent reciprocity and coefficient collision
-proofs. Repeated D on other parents remains part of the target.
+parents. On Q80 only the five genus-one k=0 allocations remain in
+this chart, after the subsequent reciprocity, coefficient collision,
+nodal orientation and cubic reciprocity proofs. Repeated D on other parents
+remains part of the target.

@@ -27,10 +27,15 @@ requires the cubic to split completely at every branch value where the two
 abscissas select different roots. The subsequent
 [reciprocity gate](Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md) eliminates
 the degree-one disagreement cases on Q80 by using squareclass conditions
-from the actual section identities. Five genus-zero cases now require a
-degree-two divisor; twelve genus-one cases require degree2,3 or4. Their
-global existence remains unknown. This does not change any local split
-fibre certified here.
+from the actual section identities. Subsequent
+[coefficient collision](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md) and
+[nodal orientation](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) proofs
+close the remaining genus-zero and the genus-one k2 cases. The later
+[cubic reciprocity proof](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md)
+also closes k1. The five remaining genus-one allocations require
+disagreement divisors of degree4; their
+global existence is unknown. This does not change any local split fibre
+certified here.
 
 A cubic root by itself does not imply complete splitting. A square
 discriminant by itself does not imply a cubic root: a cyclic irreducible

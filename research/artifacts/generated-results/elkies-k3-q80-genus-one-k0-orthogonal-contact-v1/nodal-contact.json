@@ -1,0 +1,125 @@
+{
+  "T_u_mod_p2": [
+    524,
+    16768
+  ],
+  "T_x_minus_simple_valuation": 2,
+  "T_y_mod_p2": [
+    8253,
+    786
+  ],
+  "T_y_over_p_mod_q0": [
+    63,
+    6
+  ],
+  "T_y_valuation": 1,
+  "T_yprime_mod_q0": [
+    21,
+    32
+  ],
+  "alpha_mod_p2": [
+    12314,
+    15983
+  ],
+  "basis_rows": [
+    {
+      "index": 1,
+      "word": 1,
+      "x_mod_p2": [
+        2402,
+        1573
+      ],
+      "y_mod_p2": [
+        10077,
+        1953
+      ]
+    },
+    {
+      "index": 2,
+      "word": 1,
+      "x_mod_p2": [
+        2049,
+        7273
+      ],
+      "y_mod_p2": [
+        10660,
+        2662
+      ]
+    },
+    {
+      "index": 3,
+      "word": -1,
+      "x_mod_p2": [
+        3258,
+        7724
+      ],
+      "y_mod_p2": [
+        9006,
+        11676
+      ]
+    },
+    {
+      "index": 6,
+      "word": -1,
+      "x_mod_p2": [
+        16300,
+        14960
+      ],
+      "y_mod_p2": [
+        3019,
+        10434
+      ]
+    },
+    {
+      "index": 7,
+      "word": 1,
+      "x_mod_p2": [
+        12613,
+        11305
+      ],
+      "y_mod_p2": [
+        7248,
+        8595
+      ]
+    },
+    {
+      "index": 9,
+      "word": -1,
+      "x_mod_p2": [
+        14658,
+        9356
+      ],
+      "y_mod_p2": [
+        2956,
+        15556
+      ]
+    },
+    {
+      "index": 14,
+      "word": -1,
+      "x_mod_p2": [
+        8500,
+        2582
+      ],
+      "y_mod_p2": [
+        5285,
+        8412
+      ]
+    }
+  ],
+  "contact_shift_over_p": [
+    91,
+    113
+  ],
+  "necessary_negative_abscissa_valuation": -2,
+  "node_mod_p2": [
+    3435,
+    16503
+  ],
+  "precision": 20,
+  "required_primitive_scalar": [
+    69,
+    40
+  ],
+  "required_scalar_in_F131": false
+}

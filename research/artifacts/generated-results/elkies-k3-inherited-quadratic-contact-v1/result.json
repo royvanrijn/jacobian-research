@@ -1,0 +1,382 @@
+{
+  "schema": "inherited-quadratic-contact-v1",
+  "status": "PASS",
+  "source_sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+  "input_sha256": "68f9166be4f6aff9b035eb66a5684163f1f0b36e8d04abc147da46a137698a69",
+  "traces": [
+    1,
+    2
+  ],
+  "signed_cases": 68,
+  "below_height_cutoff": 32,
+  "at_or_above_cutoff": 36,
+  "cases": [
+    {
+      "trace": 1,
+      "basis_section": 0,
+      "signed_distance_heights": [
+        16,
+        32
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 1,
+      "signed_distance_heights": [
+        8,
+        72
+      ],
+      "nonpole_degree": 32,
+      "common_pole_degree": 4
+    },
+    {
+      "trace": 1,
+      "basis_section": 10,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 11,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 12,
+      "signed_distance_heights": [
+        12,
+        36
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 13,
+      "signed_distance_heights": [
+        12,
+        36
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 14,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 15,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 16,
+      "signed_distance_heights": [
+        20,
+        28
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 2,
+      "signed_distance_heights": [
+        16,
+        64
+      ],
+      "nonpole_degree": 36,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 3,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 4,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 5,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 6,
+      "signed_distance_heights": [
+        8,
+        40
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 7,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 8,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 1,
+      "basis_section": 9,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 0,
+      "signed_distance_heights": [
+        16,
+        32
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 1,
+      "signed_distance_heights": [
+        16,
+        64
+      ],
+      "nonpole_degree": 36,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 10,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 11,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 12,
+      "signed_distance_heights": [
+        12,
+        36
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 13,
+      "signed_distance_heights": [
+        12,
+        36
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 14,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 15,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 16,
+      "signed_distance_heights": [
+        20,
+        28
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 2,
+      "signed_distance_heights": [
+        8,
+        72
+      ],
+      "nonpole_degree": 32,
+      "common_pole_degree": 4
+    },
+    {
+      "trace": 2,
+      "basis_section": 3,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 4,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 5,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 6,
+      "signed_distance_heights": [
+        8,
+        40
+      ],
+      "nonpole_degree": 20,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 7,
+      "signed_distance_heights": [
+        16,
+        48
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 8,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    },
+    {
+      "trace": 2,
+      "basis_section": 9,
+      "signed_distance_heights": [
+        12,
+        52
+      ],
+      "nonpole_degree": 28,
+      "common_pole_degree": 0
+    }
+  ],
+  "actual_quadratic_halves": [
+    {
+      "trace": 1,
+      "inherited_section": 6,
+      "sign": 1,
+      "quadratic": [
+        "267127405946075878806222281610025522450828491696804729953/49798441725982109834472761347245752292560943290118759760",
+        "70114129930275017326180596555487071413299835848182172685/14939532517794632950341828404173725687768282987035627928",
+        "1"
+      ],
+      "distance_height": 8,
+      "outcome": "Exact half, but contact intersection forces reducibility"
+    },
+    {
+      "trace": 2,
+      "inherited_section": 6,
+      "sign": 1,
+      "quadratic": [
+        "442864597984622010770679523559496838832423747875316582469/94294306288534865251585901758801558023828701959186405360",
+        "1048492732552684995784555571700541611396025659743719298181/235735765721337163128964754397003895059571754897966013400",
+        "1"
+      ],
+      "distance_height": 8,
+      "outcome": "Exact half, but contact intersection forces reducibility"
+    }
+  ],
+  "boundary": "Only quadratic closed contact points on these two trace-halving curves, with halves supplied by O or one signed member of the retained17-section basis. Diagonal contacts, higher MW combinations, other trace parities and other image genera are not excluded. Intersection interpretation is written; finite algebra is replayed. No new rank-gain cover is constructed."
+}

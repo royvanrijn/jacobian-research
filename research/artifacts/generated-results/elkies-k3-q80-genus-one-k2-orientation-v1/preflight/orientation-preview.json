@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "symbolic_identity": true,
+  "controls": [
+    {
+      "z": 38,
+      "a": 1,
+      "s": "219032",
+      "beta": "2076481",
+      "gamma": "-6246735",
+      "Q_disc_valuation": 3,
+      "rational_branch_roots": 0
+    },
+    {
+      "z": 13793,
+      "a": 2,
+      "s": "10496298987512",
+      "beta": "36193862412947716",
+      "gamma": "-108581589521805300",
+      "Q_disc_valuation": 6,
+      "rational_branch_roots": 0
+    },
+    {
+      "z": 30954,
+      "a": 2,
+      "s": "118634314391208",
+      "beta": "918051639041912769",
+      "gamma": "-2754154928623539663",
+      "Q_disc_valuation": 6,
+      "rational_branch_roots": 2,
+      "valuations": {
+        "beta": 4,
+        "gamma": 2,
+        "branch1": 2,
+        "branch2": 2,
+        "branch_separation": 3,
+        "x_difference": 1,
+        "node_offsets_sum": 2,
+        "node_offset1": 1
+      }
+    }
+  ],
+  "cpu_seconds": 0.011287680999999994
+}

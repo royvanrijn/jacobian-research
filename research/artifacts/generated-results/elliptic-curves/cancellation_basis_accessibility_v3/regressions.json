@@ -1,0 +1,19 @@
+{
+  "boundary": "Original positive case already independently checked. Temporary corruptions bypass only the outer map hash, so the arithmetic/finite-dictionary checks must reject them.",
+  "cpu_seconds": 4.2843284619999995,
+  "point_search_calls": 0,
+  "rows": [
+    {
+      "control": "removed_new_generator",
+      "reason": "anchor word differs",
+      "status": "REJECTED"
+    },
+    {
+      "control": "changed_minimum_coordinate",
+      "reason": "independent full finite minima differ",
+      "status": "REJECTED"
+    }
+  ],
+  "source_sha256": "8e5325214cff0e9730802b95699098eeec361098abab9acc104525334871a403",
+  "status": "PASS_NEGATIVE_REPLAYS"
+}

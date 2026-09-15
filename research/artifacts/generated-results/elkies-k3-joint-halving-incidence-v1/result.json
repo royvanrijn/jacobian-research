@@ -1,0 +1,164 @@
+{
+  "CS_bounds_d1_to_d4_target_genus1": {
+    "half_and_nonzero_two_torsion": [
+      28,
+      31,
+      34,
+      37
+    ],
+    "two_independent_halves": [
+      37,
+      41,
+      45,
+      49
+    ]
+  },
+  "Kadets_Vogt_1_3_genus_bounds": {
+    "1": 1,
+    "2": 2,
+    "3": 4,
+    "4": 7
+  },
+  "cocycles": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      3,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      3,
+      1,
+      3,
+      0
+    ]
+  ],
+  "curves": {
+    "half_and_nonzero_two_torsion": {
+      "degree": 12,
+      "genus": 49,
+      "inertia_cycle_lengths": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "ramification_per_I1": 5
+    },
+    "nonzero_two_torsion": {
+      "degree": 3,
+      "genus": 10,
+      "inertia_cycle_lengths": [
+        1,
+        2
+      ],
+      "ramification_per_I1": 1
+    },
+    "single_half": {
+      "degree": 4,
+      "genus": 9,
+      "inertia_cycle_lengths": [
+        1,
+        1,
+        2
+      ],
+      "ramification_per_I1": 1
+    },
+    "two_independent_halves": {
+      "degree": 16,
+      "genus": 57,
+      "inertia_cycle_lengths": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "ramification_per_I1": 6
+    }
+  },
+  "elapsed_seconds": 0.003544178034644574,
+  "invariant_subspaces": [
+    [
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      4,
+      8,
+      12
+    ],
+    [
+      0,
+      5,
+      10,
+      15
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  ],
+  "joint_affine_group_order": 96,
+  "joint_stabilizer_order": 6,
+  "limits": {
+    "cpu_seconds": 10,
+    "memory_bytes": 536870912
+  },
+  "linear_group_order": 6,
+  "proof_boundary": "Finite group and integer premises only. Connectedness, local geometry, curve inequalities, published low-degree-point theorems and finiteness deduction require the written proof. No exceptional point enumeration or new rank gain.",
+  "schema": "joint-halving-incidence-v1",
+  "script_sha256": "86c18083f78de4fd23ad260a724a46caab34da679584620d180e7831411f4c5a",
+  "single_affine_group_order": 24,
+  "single_half_stabilizer_maximal": true,
+  "single_half_stabilizer_order": 24,
+  "status": "FINITE_PREMISES_VERIFIED"
+}

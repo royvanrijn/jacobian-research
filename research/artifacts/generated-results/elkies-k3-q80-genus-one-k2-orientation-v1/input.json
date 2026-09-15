@@ -1,0 +1,42 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json": "a7f06092e93893168563b7230c1506a3295ad19c96b6900dbcae1e21b3030c27",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json": "236a1ca4af0460632c7530133573eaa6848468afc3b379c7b61263b471ed2099",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/quadratic-fibres.json": "e61e937b284c44b2a28009415a58c942d01f19e265aada704f925afbc7244496",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json": "1871a300efc2c7fe98994c5ed04374c8b26d2a25f2a7c4c65dcc64b37d722b39",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/character-gate.json": "44d19c306924d313287b3643cd58693381c020fe46562039b99c5f38f51b9c50",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/independent-replay.json": "487ca1dddb048b51bbc2127209d3b1afbf9cf9e33af8acbd5fdc7f1b01517e0d",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/input.json": "3084a79a2530ed367dfa3fc3ed2faf7c59e15dd2d00fad7af2e15f2f3b101a05",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/result.json": "33ccf60e92e6d74a90502b81dd8d0707673e8f111752896e6baef8a35808be7f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/certify_q80_genus_one_k2_orientation.sage": "e5644783181b6580454b3108ef191a6ebab7ea0151674118009a311697f5b79d",
+    "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py": "4e82ef74f0b2aa046c0c3467942e856dc8197d0a64248c1e71110372a6451576",
+    "elkies-k3/scripts/verify_q80_genus_one_k2_orientation.py": "dc4842924d60fbebf7e99814cdc96787d39e066c6fd687c2d1577aeaf76bc55b",
+    "tests/test_q80_genus_one_k2_orientation.py": "2a6636eea55fac009a189d8e6ba36e24c559a53ee556610547a9e462d7b072e8"
+  },
+  "control_z": [
+    38,
+    13793,
+    30954
+  ],
+  "cpu_seconds": 20,
+  "hensel_unit_digits": 16,
+  "memory_bytes": 2147483648,
+  "preserved_preflight": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/orientation-preview.json": "2ce33747e88afb9b62c95f668918cbb96a0674357b889e5e0e393f01d522fee8",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/preview-independent-replay.json": "92ec7a6ba46f9b40f5b1d12a783b07a90d8168f3a22a54bb80fb9350b5b9d4c8",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/preview-loader-failure.json": "233b476de1b602a7ef5413c9391d3ae3bd1b2db1df185df8a4f641a722e9aee0",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/probe_orientation.sage": "d5f0f326941f7a855f4d1982e72e749cd143fe1eec5b958f4180dd93f2d1655b",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/probe_orientation_startup_failure.sage": "87d00fb13a411a94016ec5d3dcb336317123e17527da6fe7b7635f00c78e0b9a",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/execution.json": "14b01998d8d13dd9c901b19b245eb308e460b0a50cf83090e64ef2ebc6e2ff50",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/input.json": "a56529ac2b32766fb0cf749f1137b9a08e0dc32ff075a5213d7f9872df2c7356",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/local-controls.json": "ec02540c8464455e7151cfcbeb2f845e788d6a36e5c8d440c675181b982427ba",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/nodal-hypotheses.json": "90e94a77d19cd51ee465bdd66803cad9ff8a93f39d4171ce3480e462ee33da4c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/result.json": "5247c3857373802646af3e6a6538c7bceb82d5f9b34bf375eb384a53fbe6beef",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/producer-preview/symbolic-identities.json": "26a95ddb7b55dc643a7c2dffc49b0097109a80a438fb0b9c5c8a332754b40c4d",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/preflight/startup-failure.json": "260ecb63e8e800985ce0353f97211a4353dfff61c0c2c578c5d5e2a514d5968f"
+  },
+  "prime": 131,
+  "schema": 1,
+  "scope": "Finite nodal hypotheses and local controls only; the all-denominator Q80 genus1 k2 exclusion is the written analytic proof."
+}

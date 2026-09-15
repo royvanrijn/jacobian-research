@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case_index": 8,
+      "order_discriminant_bits": 37378,
+      "certificate_sha256": "1b950dcdb28cb8116d7cd69569b2a0f7483ccd55bd8369e67b61e76523bd2a1c"
+    },
+    {
+      "case_index": 9,
+      "order_discriminant_bits": 22655,
+      "certificate_sha256": "5ad578d253842954ea7e76be06ee00c1bc97fd57a3a317ba5585d6cad2a10bae"
+    }
+  ],
+  "boundary": "Integral ring closure, Newton trace discriminants and containment only; no maximality or Selmer completeness.",
+  "source_sha256": "23b2399482e95b87ad7590cb318e2c16d654f76f738ef0326bf20b0ad935dff2",
+  "dependency_sha256": "cc136a26fb8f10076a130a56595a541b4e3a442460142e6a6e55c4de3b3941c7"
+}

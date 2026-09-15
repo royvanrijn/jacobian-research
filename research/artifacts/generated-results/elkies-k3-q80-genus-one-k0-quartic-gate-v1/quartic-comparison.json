@@ -1,0 +1,14 @@
+{
+  "full_characters_tested_only_until_first_failure": true,
+  "input_sha256": "dbd2efd777b7b3e56143303ff47a0a48e3ec1669fd3030943217fe8a6cca07d0",
+  "nodal_denominator_boundary_excluded": false,
+  "norm_candidates": 0,
+  "orbits": 73620690,
+  "positive_mw17_target_complete": false,
+  "producer_cpu_seconds": 45.18691,
+  "producer_sha256": "87f02b543a5d7255b7a8aea73692ee7944eb6fb79d23cbf538d55fc75d58c9ef",
+  "replay_cpu_seconds": 69.05172,
+  "replay_sha256": "3b78d585c48bc5c226e32da867074fe270541f2ab33cd9c4d8e9e891d5938d26",
+  "smooth_split": 12267623,
+  "status": "PASS"
+}

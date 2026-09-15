@@ -1,0 +1,18 @@
+{
+  "scope": "Two fixed cases08/09; join two retained orders by 36 products each. No factorization or class-group computation.",
+  "failures": [
+    {
+      "command": "bundled sage -python combine_rr_pair_orders.sage 8",
+      "result": "Argument parser rejected -python before arithmetic; bundled Python used instead."
+    },
+    {
+      "command": "bundled python combine_rr_pair_orders.sage 8 with 2GiB address-space limit",
+      "result": "ImportError mapping Sage matrix action shared object. No certificate written. Source retained in preflight/address_space_limit_failure.sage; address-space cap increased to8GiB, per-case wall cap unchanged at60seconds."
+    }
+  ],
+  "successful_cases": [
+    8,
+    9
+  ],
+  "boundary": "Execution receipt only; outputs and independent replay carry the algebraic checks."
+}

@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "cff7fa60a6dea2cd06f91ffafe2b8222e750ef6a84ec1ddd8aa5f31c7811e341",
+  "boundary": "Software and arithmetic integration on known retained transcripts; no new point search or search-performance observation. Complete minimum exhaustion occurs before bank use, and final replay rechecks its bound direct witnesses. All prior protocols, failure records and timing results remain unchanged.",
+  "point_search_calls": 0,
+  "protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747",
+  "result_sha256": {
+    "dependency-audit.json": "cde1122005fb5f2a64fa85760e2c597c1fa766d33175a9cd52b790e4baa686b9",
+    "negative-checks.json": "8d7b79c7fb3cbe4a44b0e24faba7a069ff1fdde605edd1015d464a43e53d00e5",
+    "portable-check.json": "0a42cf8d9a4da03ab6fd79d8b30760aba2762a4cb65b4bb6bd632f1740db2aa7",
+    "replay-manifest.json": "0bf4099bd9dece02a6b277cf4eeb264424e1453120271dc4576afe740a51bd51",
+    "retention-audit.json": "13c159931aa7ecacd287617150420ee43b3fe0332d1f519d0dfa5a05c0ad17b3",
+    "summary.json": "ccca91e6414c77ab6834dd53a590d427f6b30ad218f21a8a874a2f323636b035",
+    "supervision.json": "1c32611758f0d9ff44ee4dada1f4b1ca91d95710f0b8703d12371e0d4e5ed159"
+  },
+  "status": "RETAINED_COMPLETE_CERTIFICATE_ENGINE_INTEGRATION"
+}

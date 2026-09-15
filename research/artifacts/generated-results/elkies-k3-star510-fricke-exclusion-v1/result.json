@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "checker_sha256": "d9c4b5332b3cba2aa4a8ffa7913c9a2967d4d2005d5ca87795bb07f870bb9e8c",
+  "external_quadratic_classification": "Ozman-Siksek arXiv:1806.08192v3, Main Theorem and Table8.6",
+  "table_representatives": [
+    {
+      "quadratic_radicand": -2,
+      "j": "8000",
+      "reported_CM_discriminant": -8
+    },
+    {
+      "quadratic_radicand": -2,
+      "j": "8000",
+      "reported_CM_discriminant": -8
+    },
+    {
+      "quadratic_radicand": 17,
+      "j": "-671956992*t-2770550784",
+      "reported_CM_discriminant": -51
+    }
+  ],
+  "rational_isogeny_degrees": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    21,
+    25,
+    27,
+    37,
+    43,
+    67,
+    163
+  ],
+  "lower_level": 51,
+  "target_level": 510,
+  "cyclic_subgroup_order": 51,
+  "quadratic_nonCM_points_on_X0_51": 0,
+  "rational_nonCM_points_on_X0_51": 0,
+  "nonCM_rational_Fricke_lifts_at_level510": 0,
+  "star510_candidate_status": "EXCLUDED for the rational Fricke lift route",
+  "classification_recomputed": false,
+  "positive_correlated_target_complete": false
+}

@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "checker_sha256": "be35d6d2c84ffc3818730b2b31a6fc26421ae78ab616fa87aea2823c7b7dd1d8",
+  "cases": [
+    {
+      "determinant": 948,
+      "T": [
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          0,
+          118
+        ]
+      ],
+      "source": "elkies-k3/SURFACE_FIBRATION_CHARACTER_GRAPH_2026-09-04.md",
+      "source_sha256": "6444169bd9787011dd76015b276934d57dbe0e761221e33805ddcb406894010c",
+      "modulus": 9,
+      "primitive_at_3_vectors_checked": 702,
+      "isotropic_residues": 0
+    },
+    {
+      "determinant": 1092,
+      "T": [
+        [
+          -2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          220
+        ]
+      ],
+      "source": "elliptic-curves/notes/DET1092_MARKING_AND_CM_GATE_2026-09-07.md",
+      "source_sha256": "e2576c3b0a8c9eb5f86685f4e0c2a8e5656956376245f459decec215cec538ea",
+      "modulus": 9,
+      "primitive_at_3_vectors_checked": 702,
+      "isotropic_residues": 0
+    },
+    {
+      "determinant": 1020,
+      "T": [
+        [
+          -2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          204
+        ]
+      ],
+      "source": "elkies-k3/DET1020_RATIONAL_MARKING_SOURCE_2026-09-15.md",
+      "source_sha256": "043a2df16219f8ebbe4f057cf235f84e5003a5dd0d6b48d969622ab2e50daa68",
+      "modulus": 9,
+      "primitive_at_3_vectors_checked": 702,
+      "isotropic_residues": 0
+    }
+  ],
+  "rank2_invariant_lattice_possible_absolute_determinants": [
+    1,
+    4
+  ],
+  "anisotropic_full_marking_real_euler_characteristic": -18,
+  "hypothetical_free_orientable_quotient_euler_characteristic": -9,
+  "isotropic_control_T": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      622
+    ]
+  ],
+  "geometric_argument_formally_verified": false,
+  "positive_correlated_target_complete": false
+}

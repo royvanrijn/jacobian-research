@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checker_sha256": "77e31325b8a6ce381a5044aec2173a4a3b78e9381b1690aaef59b5eb24fd8e13",
+  "finite_sections": [
+    "a1 + a2*t + a3*t**2",
+    "a2 + a3*t",
+    "a3"
+  ],
+  "infinity_sections": [
+    "-a0",
+    "-a0*s - a1",
+    "-a0*s**2 - a1*s - a2"
+  ],
+  "gluing_identities": "t^i*(t*q_i-r_i)=F for i=0,1,2",
+  "finite_coefficient_matrix_determinant": "1",
+  "infinity_coefficient_matrix_determinant": "1",
+  "halving_genus": 9,
+  "F1_adjoint_h0": 3,
+  "fixed_divisor_degree": 2,
+  "product_arithmetic_genus": 9,
+  "geometric_argument_formally_verified": false,
+  "cubic_points_enumerated": false,
+  "correlated_target_complete": false
+}

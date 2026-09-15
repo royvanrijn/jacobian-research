@@ -1,0 +1,86 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/certify_q80_quartic_norm_census.cpp": "cf7ad2e88a90260ec63ed7a474af2d1f2201be75a0cffcfd788b0bade10fcd66",
+    "elkies-k3/scripts/replay_q80_quartic_norm_census.cpp": "b3042772abf4cfac0c29467eb1b8583225427a13246dcc259f74c1783c149398",
+    "elkies-k3/scripts/run_q80_quartic_norm_census.py": "e2b91eef6dc9b961ccb1920c40ab0aa1965626b9f5cdd6b65b217aa1d75cc918",
+    "elkies-k3/scripts/verify_q80_genus_one_k1_reciprocity.py": "22a05ceb64d826e741f1d3274b9116e62c98c0be12473541e4a51ac55c01f8d4"
+  },
+  "coefficient_input_sha256": "8776e6caca1051663968eb75f10190087e1d8236ca88c183275050bce67e1657",
+  "cpu_seconds_per_range": 90,
+  "driver_cpu_seconds": 30,
+  "driver_memory_bytes": 2147483648,
+  "memory_bytes_per_range": 536870912,
+  "monomial_modulus": [
+    2,
+    0,
+    -2,
+    0,
+    1
+  ],
+  "orbits": 73620690,
+  "orbits_per_pair": 17161,
+  "pair_ranges": [
+    [
+      0,
+      429
+    ],
+    [
+      429,
+      858
+    ],
+    [
+      858,
+      1287
+    ],
+    [
+      1287,
+      1716
+    ],
+    [
+      1716,
+      2145
+    ],
+    [
+      2145,
+      2574
+    ],
+    [
+      2574,
+      3003
+    ],
+    [
+      3003,
+      3432
+    ],
+    [
+      3432,
+      3861
+    ],
+    [
+      3861,
+      4290
+    ]
+  ],
+  "preserved_preflight": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/composite-quartics-preview.json": "1f25b9cfd66c0738892fe6307650043f42abcde35a692c68a5622aaaab9b2798",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/cubic-plus-rational-input.txt": "5f7c1bfe42c955a9abfed4286557ee03d6a9be5676e5033a2a992b063a20d5ed",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/cubic-plus-rational-preview.json": "56bdf644af368a907997591a69213993d533e79bc12dbcb871f6d3c48546563f",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_composite_quartics.py": "b38777e52516abf586ae837de37d7e79839107222744c9b2ae51fc689a04a848",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_cubic_plus_rational.cpp": "195a66b7e5a8f4e8e1bd217d5007f6c44f61174c93dcded142653f1c77ab1c4e",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_quartic_norms.cpp": "e03b3b5b633365e5a67d82a502606504e4dc6fa22ff5b140fddd8b0b6e2953bc",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_square_branch_pairs.sage": "de23c74e833b01e4520ad96a0b583c972e26cfebc089e96cdaaae5f7d55ff8cc",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_square_lifts.sage": "82b53c5683f5ccf891c1b7196b30435e081cb2020b1ff7c28de4a9c417e0ec0b",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/probe_square_lifts_irreducibility_assumption_failure.sage": "73654fc3f1edc7e6e154db9345ebad8465ee492b538881441fc147cb36067af2",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/quartic-independent-one-pair-preview.json": "c2b4f873918f6538ebfbf0fa480bf7490952eec4ed43de44b4f7d0b4050d7b06",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/quartic-one-pair-preview.json": "b1f61eadeab6ed9d2272fe246d5c4d7348589fa3a9dc956143a9ef5b319ff936",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/square-branch-pairs-preview.json": "383acbcde9b7f457cff2b1cd37966f694602ddc9e0d3c7e541ebe5bffa8240f3",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/square-lifts-assumption-failure.json": "c88a83893f937fd880cd690eddfc634c3aabef8e0e0aef9cb1de53d3683216ea",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-quartic-gate-v1/preflight/square-lifts-preview.json": "9eea596e2873f0f713aff9a93f4d42eb4bde9cbd363cd9463b257702f715e9f5"
+  },
+  "prime": 131,
+  "process_wall_timeout": 95,
+  "schema": 1,
+  "scope": "All genuine degree-four base orbits at p=131 with fully split cubic and all three inherited-root norm characters zero; finite necessary gate only.",
+  "tower": "i^2=-1, j^2=1+i"
+}

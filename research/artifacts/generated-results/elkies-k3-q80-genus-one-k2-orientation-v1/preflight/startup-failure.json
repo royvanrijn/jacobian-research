@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_BEFORE_CONTROLS",
+  "source": "probe_orientation_startup_failure.sage",
+  "completed": "Symbolic quartic factorization passed.",
+  "failure": "Sage's nested polynomial discriminant used PARI with incompatible variable ordering; its matrix fallback could not load within the memory cap with unconstrained BLAS threads.",
+  "resolution": "Compute the quadratic discriminant as b^2-4ac and constrain BLAS threads before Sage startup. Preserve this source and receipt; no frozen certificate exists yet."
+}

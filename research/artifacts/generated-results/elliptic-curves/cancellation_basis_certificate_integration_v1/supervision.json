@@ -1,0 +1,43 @@
+{
+  "point_search_calls": 0,
+  "protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747",
+  "records": [
+    {
+      "full_child_cpu_seconds": 18.847816,
+      "integration_sha256": "f1208a5c0bbe7ca9974575409896086fb36892f463d376792a9afea416420a88",
+      "job": "single_refresh",
+      "log_sha256": "017a7b1f2784ce91b4677252db988be7d64fc89d8048fb802dfda9754d94472c",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "wall_seconds": 19.86183664400596
+    },
+    {
+      "full_child_cpu_seconds": 9.331491,
+      "integration_sha256": "36b3d278eaa5e576aa8b11fee84d77622c68a54e730abe2f78f0ff3205efed19",
+      "job": "single_fixed",
+      "log_sha256": "9c4eeff15599171d8b75290e8f255b85e91f0549f434a242e52eee75c1d8a228",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "wall_seconds": 9.686448052001651
+    },
+    {
+      "full_child_cpu_seconds": 14.436398999999996,
+      "integration_sha256": "02c934e3a6934088bd0eb0685a8936f8c44be8a041702938ba835b2fa4729250",
+      "job": "double_refresh",
+      "log_sha256": "4def83bc3d53b166d4d3b140978fe6e238f53b5e259c2415df48445f2cfaffe0",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "wall_seconds": 15.100902045029216
+    },
+    {
+      "full_child_cpu_seconds": 9.035753000000005,
+      "integration_sha256": "13569af127b197f039745a576eb6c95ddac732732b2360d5596d07506b0d9d26",
+      "job": "bank_alarm",
+      "log_sha256": "6c124bccc86f463e3b2014c05e123bfb4353317b5b3d068d0ba8f4e1c3274689",
+      "returncode": 0,
+      "status": "COMPLETE",
+      "wall_seconds": 9.686498766997829
+    }
+  ],
+  "status": "COMPLETE"
+}

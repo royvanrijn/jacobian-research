@@ -183,11 +183,11 @@ replay. It passes its predeclared 10-second gate, one quarter of the existing
 This establishes one affordable implementation path for changing the search
 basis; it gives no multi-curve cost or later-gain advantage.
 
-The next unscheduled test must compare actual basis-aware epochs on new
-whole-j controls: reconcile the entire cloud, certify its enlarged subgroup,
-build and verify its compatible bank, reset obsolete exposure states, and
-charge all of that work to both arms. A held-out improvement must precede a
-fresh continuation. The original fixed-bank cloud failure remains retained.
+The subsequent [basis-aware control](BASIS_AWARE_AMPLIFICATION_2026-09-14.md)
+tests actual enlarged subgroups on new whole-j controls, with complete-cloud
+certification, compatible bank replay, reset epoch state and all costs charged.
+Its separately recorded failure does not change this integration result.
+The original fixed-bank cloud failure remains retained.
 
 ## Implementation and replay
 

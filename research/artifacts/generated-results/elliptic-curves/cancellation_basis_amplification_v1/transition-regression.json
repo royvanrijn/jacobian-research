@@ -1,0 +1,56 @@
+{
+  "boundary": "Supplementary verifier regressions after the fixed trial, on temporary copies. No experimental input, source seal, or outcome was altered.",
+  "case": "af401f31ecb4126b4050",
+  "checks": [
+    {
+      "reason": "search continued on obsolete basis after gain",
+      "status": "REJECTED_EXPECTED_INVARIANT",
+      "test": "missing_rebuild"
+    },
+    {
+      "reason": "bank does not use complete cloud",
+      "status": "REJECTED_EXPECTED_INVARIANT",
+      "test": "discarded_cloud"
+    }
+  ],
+  "cpu_seconds": 6.007090167,
+  "original_result_sha256": "2abaa12db1a8f9544bd33d962aeee1d7f646e0334eab9da601e1685bd83eae3d",
+  "point_search_calls": 0,
+  "positive_rank": {
+    "no_two_torsion_prime": 19,
+    "primes_used": [
+      5,
+      11,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      47,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137,
+      139
+    ],
+    "rank": 20
+  },
+  "protocol_sha256": "ec5a5f84038166af87e075b03c7c5cb1defbce26bfe06d0393f1c1316807089a",
+  "source_sha256": "10da25393a310ebc95c9909c55121b18d4aa04c0f7f4c3c9f29476fb2f4c94c1",
+  "status": "PASS_POSITIVE_AND_TWO_NEGATIVE_TRANSITION_REPLAYS"
+}

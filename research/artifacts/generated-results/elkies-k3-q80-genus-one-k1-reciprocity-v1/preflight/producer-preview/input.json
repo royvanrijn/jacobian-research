@@ -1,0 +1,35 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/independent-replay.json": "a7f06092e93893168563b7230c1506a3295ad19c96b6900dbcae1e21b3030c27",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/input.json": "236a1ca4af0460632c7530133573eaa6848468afc3b379c7b61263b471ed2099",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/quadratic-fibres.json": "e61e937b284c44b2a28009415a58c942d01f19e265aada704f925afbc7244496",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/rational-fibres.json": "cba56cbba3c4abfabcdf9f8a7ccdb85f2b1e64b59a032e437ca323b5653be4af",
+    "artifacts/generated-results/elkies-k3-q80-degree-two-reciprocity-v1/result.json": "1871a300efc2c7fe98994c5ed04374c8b26d2a25f2a7c4c65dcc64b37d722b39",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/character-gate.json": "44d19c306924d313287b3643cd58693381c020fe46562039b99c5f38f51b9c50",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/independent-replay.json": "487ca1dddb048b51bbc2127209d3b1afbf9cf9e33af8acbd5fdc7f1b01517e0d",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/input.json": "3084a79a2530ed367dfa3fc3ed2faf7c59e15dd2d00fad7af2e15f2f3b101a05",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-two-disagreement-v1/result.json": "33ccf60e92e6d74a90502b81dd8d0707673e8f111752896e6baef8a35808be7f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/certify_q80_cubic_norm_census.cpp": "16c5396a568d366ce63973d3ab034f99c552658be749e82a33fd6ba3c7736e26",
+    "elkies-k3/scripts/certify_q80_genus_one_k1_reciprocity.sage": "07206f1b163a21f372947df514e47d902ad30195ed220cf6ce0c1f936ad53aed",
+    "elkies-k3/scripts/replay_q80_cubic_norm_census.cpp": "89847cb1d2da681d4969f380781f89e0c59005b9bae58a926340edc247094485",
+    "elkies-k3/scripts/verify_q80_genus_one_k1_reciprocity.py": "22a05ceb64d826e741f1d3274b9116e62c98c0be12473541e4a51ac55c01f8d4",
+    "tests/test_q80_genus_one_k1_reciprocity.py": "b1dc554ab51958c3728e7fbce623a4a39ab1eb45871687b060b7c28e0bd2ac1a"
+  },
+  "census_cpu_seconds": 90,
+  "census_memory_bytes": 536870912,
+  "cubic_modulus_low_to_high": [
+    3,
+    1,
+    0,
+    1
+  ],
+  "cubic_orbits": 749320,
+  "driver_cpu_seconds": 30,
+  "driver_memory_bytes": 2147483648,
+  "factorization_trial_limit": 64,
+  "preserved_preflight": {},
+  "prime": 131,
+  "schema": 1,
+  "scope": "Complete rational/quadratic/cubic norm gate; polynomial k1 integrality and the unbounded exclusion are written arguments."
+}

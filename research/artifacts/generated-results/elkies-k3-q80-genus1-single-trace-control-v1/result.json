@@ -1,0 +1,198 @@
+{
+  "base_rational_points_certified": false,
+  "branch_degree": 4,
+  "branch_field_2_torsion": false,
+  "branch_halving_kernel_basis": [
+    2
+  ],
+  "checker_sha256": "f2a4940ff308cba775bc503028459ec398f5b1ec127344061861f4063e8c4353",
+  "congruence_balls": [
+    {
+      "exponent": 1,
+      "prime": 5
+    },
+    {
+      "exponent": 1,
+      "prime": 23
+    },
+    {
+      "exponent": 1,
+      "prime": 53
+    },
+    {
+      "exponent": 1,
+      "prime": 73
+    },
+    {
+      "exponent": 1,
+      "prime": 101
+    },
+    {
+      "exponent": 1,
+      "prime": 109
+    },
+    {
+      "exponent": 1,
+      "prime": 113
+    },
+    {
+      "exponent": 1,
+      "prime": 127
+    },
+    {
+      "exponent": 1,
+      "prime": 131
+    },
+    {
+      "exponent": 1,
+      "prime": 137
+    },
+    {
+      "exponent": 1,
+      "prime": 139
+    }
+  ],
+  "cover_genus": 1,
+  "elapsed_seconds": 0.07143444597022608,
+  "exact_branch_half": true,
+  "exact_lift_identity": true,
+  "finite_quotient_helper_sha256": "ec58f6a7dea866b994a364974d4024b204fa2985d340b621718c56b6c9216596",
+  "formal_verification": false,
+  "function_field_rank": 18,
+  "groups": [
+    {
+      "double_order": 32,
+      "order": 64,
+      "prime": 53,
+      "rows": [
+        54096
+      ],
+      "t": 23
+    },
+    {
+      "double_order": 41,
+      "order": 82,
+      "prime": 73,
+      "rows": [
+        64489
+      ],
+      "t": 33
+    },
+    {
+      "double_order": 54,
+      "order": 108,
+      "prime": 101,
+      "rows": [
+        103181
+      ],
+      "t": 0
+    },
+    {
+      "double_order": 60,
+      "order": 120,
+      "prime": 109,
+      "rows": [
+        47481
+      ],
+      "t": 62
+    },
+    {
+      "double_order": 65,
+      "order": 130,
+      "prime": 113,
+      "rows": [
+        672
+      ],
+      "t": 106
+    },
+    {
+      "double_order": 67,
+      "order": 134,
+      "prime": 127,
+      "rows": [
+        17421
+      ],
+      "t": 14
+    },
+    {
+      "double_order": 36,
+      "order": 144,
+      "prime": 127,
+      "rows": [
+        19632,
+        127697
+      ],
+      "t": 60
+    },
+    {
+      "double_order": 32,
+      "order": 128,
+      "prime": 127,
+      "rows": [
+        120133,
+        62905
+      ],
+      "t": 77
+    },
+    {
+      "double_order": 74,
+      "order": 148,
+      "prime": 127,
+      "rows": [
+        116929
+      ],
+      "t": 119
+    },
+    {
+      "double_order": 35,
+      "order": 140,
+      "prime": 131,
+      "rows": [
+        19656,
+        66092
+      ],
+      "t": 35
+    },
+    {
+      "double_order": 69,
+      "order": 138,
+      "prime": 137,
+      "rows": [
+        26144
+      ],
+      "t": 86
+    },
+    {
+      "double_order": 40,
+      "order": 160,
+      "prime": 139,
+      "rows": [
+        24033,
+        2185
+      ],
+      "t": 71
+    },
+    {
+      "double_order": 33,
+      "order": 33,
+      "prime": 23,
+      "rows": [],
+      "t": 0
+    }
+  ],
+  "input_sha256": "8152e97ea94ddd65bb3ff7d2c0e1e5bad8576416b62f4bcaf84631915369b344",
+  "irreducibility_prime": 5,
+  "matrix_rank": 16,
+  "parameter": 0,
+  "parameter_progression_modulus": "175361103335727332945",
+  "positive_correlated_target_complete": false,
+  "rank_gain": 1,
+  "section_coefficient_degrees": [
+    4,
+    2,
+    6,
+    3
+  ],
+  "status": "PASS",
+  "trace_index": 1
+}

@@ -1,0 +1,13 @@
+{
+  "alarm_injections": 1,
+  "boundary": "Retained point transcripts are exact replay inputs. The injected Sage exception keeps the whole independently certified cloud, marks the bank UNKNOWN and finalizes without a search retry.",
+  "cpu_seconds": 8.169123997000002,
+  "order_cases": 4,
+  "point_search_calls": 0,
+  "rank_lower_bound_preserved": 19,
+  "result_sha256": "bc3efe8f7af880f26631b0eb316ab37052025cac9d71344341081b305110586f",
+  "retained_calls_replayed": 10,
+  "source_sha256": "6b92479e4f9120530484d26ec71c5e84edf512c376bd2809df943afeed729332",
+  "status": "PASS",
+  "verification_sha256": "deffcad830123c176e890b8a9833d34e97b14a861e1f1f5c6b3faf9ba4d6a566"
+}

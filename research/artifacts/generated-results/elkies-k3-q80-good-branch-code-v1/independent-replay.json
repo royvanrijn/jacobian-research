@@ -1,0 +1,14 @@
+{
+  "checker_sha256": "bc32a81fc7057efb8cc0474dcad5cdb382ccb472e80db0f06870338c6c0ad142",
+  "elapsed_seconds": 0.055193166015669703,
+  "higher_degree_censuses_recomputed": false,
+  "independent_new_linear_algebra": true,
+  "positive_target_complete": false,
+  "quadratic_planes": 1456,
+  "rational_pair_planes": 11786,
+  "rational_short_words": 44,
+  "result_sha256": "cd75b511a58e9b329d9b3cbaf2123473d4ddbe4233b313961ce5ba830744bcb8",
+  "status": "PASS",
+  "synthetic_rank_two_control": true,
+  "written_descent_formally_verified": false
+}

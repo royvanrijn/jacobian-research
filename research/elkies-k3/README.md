@@ -27,8 +27,12 @@ the stronger carrier/independent-pullback targets remain separate questions.
   [Curve398's equivalent MW16 survivor presentations](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
 - **Arithmetic-first foundry:** follow the
   [different-NS objective and exact marked-curve gates](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
-  The determinant-specific exclusions and unresolved1236 descent belong to
-  that canonical note and `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17`.
+  [Determinant1020](DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md) now has
+  arithmetic MW17 existence; its explicit equation and sections are next.
+  [388](DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md),
+  [622](DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) and
+  [852](DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) remain globally rootful.
+  The objective retains600 other unadmitted candidates.
 
 Generic rank and demonstrated specialization jumps are separate selection axes.
 Rank at least32 remains open. A new campaign needs an explicit mathematical gate,
@@ -39,7 +43,9 @@ limits, checkpoints and a certificate plan.
 | Need | Source |
 |---|---|
 | NS0031 full rational rank-19 marking excluded | [Full stable group, genus-10 Q curve and exact arithmetic obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md) |
-| Two independent gains on one quadratic cover | [Open MW17 target](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Q80 genus-one nodal boundary](Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md) |
+| Two independent gains on one quadratic cover | [Open MW17 target](CORRELATED_QUADRATIC_GAINS_2026-09-12.md) · [Q80 polynomial genus-one exclusion](Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md) |
+| Branch compatibility versus actual rank gain | [Q80 good-reduction branch bound and trace-norm criterion](Q80_GOOD_BRANCH_CODE_AND_TRACE_NORMS_2026-09-14.md) |
+| Necessary common halving at the branch fibres | [Specialization gate and infinite-base zero-gain control](Q80_BRANCH_TRACE_SPECIALIZATION_GATE_2026-09-14.md) |
 | Low-genus controls cannot supply an MW17 parent by changing fibrations | [Rational Picard bounds for both control surfaces](COMMON_QUARTIC_CONTROL_PARENT_RANK_GATE_2026-09-14.md) |
 | Rank balance, saturation, marking and equation-lift hypotheses | [Reusable theorem layer](RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | Historical corrections and route identities | [Process atlas](ELKIES_K3_PROCESS_ATLAS.md) |
@@ -110,7 +116,7 @@ is a dated snapshot.
 <!-- status-consumer: EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS e68a8f4b00720de3 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 f2dcfada11e6b5f2 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
 <!-- status-consumer: OP-EC-NEXT f36c4d02969820a7 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

@@ -1,0 +1,515 @@
+{
+  "checker_sha256": "ec58f6a7dea866b994a364974d4024b204fa2985d340b621718c56b6c9216596",
+  "congruence_balls": [
+    {
+      "exponent": 1,
+      "prime": 17
+    },
+    {
+      "exponent": 1,
+      "prime": 43
+    },
+    {
+      "exponent": 1,
+      "prime": 53
+    },
+    {
+      "exponent": 1,
+      "prime": 59
+    },
+    {
+      "exponent": 1,
+      "prime": 71
+    },
+    {
+      "exponent": 1,
+      "prime": 73
+    },
+    {
+      "exponent": 1,
+      "prime": 83
+    },
+    {
+      "exponent": 1,
+      "prime": 89
+    },
+    {
+      "exponent": 1,
+      "prime": 101
+    },
+    {
+      "exponent": 1,
+      "prime": 109
+    },
+    {
+      "exponent": 1,
+      "prime": 113
+    },
+    {
+      "exponent": 1,
+      "prime": 127
+    },
+    {
+      "exponent": 1,
+      "prime": 139
+    },
+    {
+      "exponent": 1,
+      "prime": 157
+    }
+  ],
+  "control_base_cubic": {
+    "a2": 8186,
+    "a4": 2833736,
+    "a6": 245110336,
+    "point": [
+      0,
+      -15656
+    ]
+  },
+  "control_branch_parameters": [
+    0,
+    2,
+    76,
+    103
+  ],
+  "control_doubled_point": [
+    "17/4",
+    "128325/8"
+  ],
+  "control_rank_gain": 0,
+  "control_root_free_witnesses": [
+    {
+      "A": 3,
+      "B": 22,
+      "branch": 0,
+      "prime": 23
+    },
+    {
+      "A": 2,
+      "B": 13,
+      "branch": 2,
+      "prime": 29
+    },
+    {
+      "A": 25,
+      "B": 17,
+      "branch": 76,
+      "prime": 37
+    },
+    {
+      "A": 0,
+      "B": 24,
+      "branch": 103,
+      "prime": 31
+    }
+  ],
+  "control_short_doubled_x": "98385/4",
+  "elapsed_seconds": 0.04144654097035527,
+  "groups": [
+    {
+      "double_subgroup_order": 13,
+      "group_order": 26,
+      "point_labels": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prime": 17,
+      "quotient_dimension": 1,
+      "rows": [
+        126969
+      ]
+    },
+    {
+      "double_subgroup_order": 24,
+      "group_order": 48,
+      "point_labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "prime": 43,
+      "quotient_dimension": 1,
+      "rows": [
+        17132
+      ]
+    },
+    {
+      "double_subgroup_order": 16,
+      "group_order": 64,
+      "point_labels": [
+        0,
+        3,
+        1,
+        1,
+        0,
+        2,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "prime": 53,
+      "quotient_dimension": 2,
+      "rows": [
+        53070,
+        69474
+      ]
+    },
+    {
+      "double_subgroup_order": 18,
+      "group_order": 72,
+      "point_labels": [
+        0,
+        3,
+        2,
+        3,
+        1,
+        3,
+        1,
+        2,
+        3,
+        1,
+        2,
+        1,
+        1,
+        3,
+        2,
+        0,
+        1
+      ],
+      "prime": 59,
+      "quotient_dimension": 2,
+      "rows": [
+        80762,
+        26030
+      ]
+    },
+    {
+      "double_subgroup_order": 42,
+      "group_order": 84,
+      "point_labels": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "prime": 71,
+      "quotient_dimension": 1,
+      "rows": [
+        95982
+      ]
+    },
+    {
+      "double_subgroup_order": 22,
+      "group_order": 88,
+      "point_labels": [
+        3,
+        0,
+        3,
+        1,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3,
+        0,
+        1,
+        2,
+        0,
+        1,
+        1,
+        3
+      ],
+      "prime": 73,
+      "quotient_dimension": 2,
+      "rows": [
+        117677,
+        70533
+      ]
+    },
+    {
+      "double_subgroup_order": 51,
+      "group_order": 102,
+      "point_labels": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prime": 83,
+      "quotient_dimension": 1,
+      "rows": [
+        43242
+      ]
+    },
+    {
+      "double_subgroup_order": 52,
+      "group_order": 104,
+      "point_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prime": 89,
+      "quotient_dimension": 1,
+      "rows": [
+        47072
+      ]
+    },
+    {
+      "double_subgroup_order": 54,
+      "group_order": 108,
+      "point_labels": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "prime": 101,
+      "quotient_dimension": 1,
+      "rows": [
+        103181
+      ]
+    },
+    {
+      "double_subgroup_order": 61,
+      "group_order": 122,
+      "point_labels": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "prime": 109,
+      "quotient_dimension": 1,
+      "rows": [
+        85301
+      ]
+    },
+    {
+      "double_subgroup_order": 63,
+      "group_order": 126,
+      "point_labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "prime": 113,
+      "quotient_dimension": 1,
+      "rows": [
+        43363
+      ]
+    },
+    {
+      "double_subgroup_order": 73,
+      "group_order": 146,
+      "point_labels": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "prime": 127,
+      "quotient_dimension": 1,
+      "rows": [
+        54765
+      ]
+    },
+    {
+      "double_subgroup_order": 39,
+      "group_order": 156,
+      "point_labels": [
+        3,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        3,
+        2,
+        0,
+        0
+      ],
+      "prime": 139,
+      "quotient_dimension": 2,
+      "rows": [
+        15225,
+        25501
+      ]
+    },
+    {
+      "double_subgroup_order": 40,
+      "group_order": 160,
+      "point_labels": [
+        0,
+        1,
+        1,
+        3,
+        1,
+        3,
+        2,
+        0,
+        0,
+        3,
+        2,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prime": 157,
+      "quotient_dimension": 2,
+      "rows": [
+        27198,
+        5736
+      ]
+    }
+  ],
+  "independent_complete_finite_group_quotients": true,
+  "integer_progression_modulus": "301744286059269190181732689",
+  "positive_correlated_target_complete": false,
+  "rank": 17,
+  "result_sha256": "0d70a6945b5183f89dc617d384ac11bfabd796d2e0163dab4e819ff871e098fb",
+  "status": "PASS",
+  "written_descent_formally_verified": false
+}

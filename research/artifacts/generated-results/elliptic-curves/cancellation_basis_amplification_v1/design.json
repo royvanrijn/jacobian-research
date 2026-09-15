@@ -1,0 +1,34 @@
+{
+  "ablation": "Both arms build the same initial bank from the same16 retained generic anchors and rank18 seed, charge production plus rational-CVP replay, and use the same factor-free/prime-neighbour box order. fixed_bank keeps that search basis while accumulating certified output. basis_refresh rebuilds immediately after a positive cloud unless its two-direction target or CPU cap has been reached. There is no residue-weight, radial, hazard or cloud-yield fit.",
+  "arm_wall_seconds": 150,
+  "arms": [
+    "fixed_bank",
+    "basis_refresh"
+  ],
+  "bank_policy": {
+    "anchors_per_shell": 16,
+    "canonical_per_shell": 25,
+    "exact_cvp_node_limit": 2000000
+  },
+  "bank_wall_seconds": 30,
+  "boundary": "Masked retained-corpus controls, not externally pristine population data, new rank discoveries, exact ranks, saturation, or rank32. Initial rank18 limits extension cost near the one-case integration evidence. The prior rank20 fixed-bank cloud failure is unchanged.",
+  "cases": 24,
+  "continuation": "Only this fixed new control is authorized. No fresh-fibre continuation, repeat of failed controls, enlarged allowance, or automatic campaign follows. A passed gate would support proposing a separately frozen transfer experiment.",
+  "cost": "40 CPU seconds per arm for interpreter, imports, initial bank, every rebuild, producer, rational reference, anchor identities, all maps, point calls, complete-cloud classification and each independent rank certificate. Atomic operations can overrun this launch cap. Final transcript/policy/rank replay is mandatory, separately measured, and charged in complete isolated child-process CPU. Both arms share the same100 CPU/150 wall hard limits. Retained seed/parent construction is the common input interface. Shared input preflight CPU is reported separately and charged to the candidate in conservative sensitivity. No elapsed-time proxy, free rebuild, or outcome-dependent retry.",
+  "exploration": "For each anchor execute factor-free H125000 then every distinct retained neighbour (at most2) at H125000 before opening another anchor. A zero empirical radius mass never skips a job. Only exactly equivalent completed boxes on the same actual anchor are skipped, including infinity. A finite exact boundary probe records coordinates beyond old H125000 and outside completed same-anchor boxes; failure to find a probe witness remains UNKNOWN and never prunes. No optimality or exhaustive-neighbour claim.",
+  "hard_process_cpu_seconds": 100,
+  "height": 125000,
+  "hypothesis": "After a complete cloud is reconciled and its full admitted basis independently certified, replacing the actual search subgroup and verifying new compatible anchors improves later-direction yield per complete CPU.",
+  "initial_rank": 18,
+  "maximum_calls": 288,
+  "maximum_centres": 48,
+  "maximum_extension_dimension": 4,
+  "point_wall_seconds": 5,
+  "primary_gate": "Candidate must match or exceed baseline two-direction target completions and uncapped total directions. Later-cloud directions (all gains after the first positive full cloud) per COMPLETE CPU must improve by at least10 percent, with central97.5-percent paired family bootstrap interval wholly above1;10000 draws, seed20260914. Include zero-gain and censored cases in all denominators. Zero baseline later yield or any undefined bootstrap sample makes the gate UNKNOWN. Any infrastructure or preparation unknown blocks promotion. Report uncapped all-direction rate separately.",
+  "prime_bound": 500,
+  "selection": "Four new whole-j CPU groups from each of six retained R17 families. Exclude every preceding scheduler/control j group using the cloud roster. Require retained rank18 seed and endpoint at least20. Select lexical first compatible landscape per j, then SHA256(cancellation-basis-amplification-v1/ + j) within family. Endpoint eligibility constructs known-direction controls only. No outcomes choose the roster, no replacement.",
+  "status": "DESIGN_BEFORE_BASIS_AMPLIFICATION_OUTCOMES",
+  "subgroup": "Consider every returned point with the same finite places through500 and independently Sage-certify every enlarged basis before reuse. Finite columns in the span stay UNKNOWN. Rebuild using the complete admitted cloud, never just enough points for the stopping target. Reset all epoch-local anchors/maps/job indices; retain only exact completed-box identities across epochs.",
+  "target_directions": 2,
+  "working_cpu_seconds": 40
+}

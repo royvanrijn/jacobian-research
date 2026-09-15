@@ -1,0 +1,27 @@
+{
+  "boundary": "Post-protocol source inspection only. It neither changes the sealed primary comparison nor repeats the old canary, proves arithmetic exclusion or supplies an external performance comparator.",
+  "curve_initializations_run": 0,
+  "date": "2026-09-15",
+  "findings": [
+    "The retained eclib_init_start/eclib_init_done interval surrounds both mwrank_EllipticCurve and mwrank_MordellWeil; the historical timeout alone cannot distinguish them.",
+    "Installed Sage _Curvedata already defaults to min_on_init=0. The corresponding eclib v20250627 integer constructor leaves discriminant factorization lazy. Disabling that already-disabled flag is not a new workaround.",
+    "The eclib mw constructor always constructs its saturation helper; installed saturate.h eagerly obtains torsion, CurveRed/Tamagawa data and bad primes. Setting the point-processing flag pp=0 does not skip that constructor. This locates a source-level preparation requirement, not the measured location of the old timeout.",
+    "A future comparison must record constructor phases separately, bind the actual eclib library version rather than the unrelated mwrank executable version, give both algorithms the same subgroup interface, and charge model transport, initialization, point import and independent output certification. No external search performance is measured here."
+  ],
+  "local_source_sha256": {
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/conda-meta/eclib-20250627-h163b5c9_2.json": "bb07483562ea12f8e5af31921d932aa7da636d1eb9d0db7319b2a06151e3e3b9",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/include/eclib/curve.h": "3ef98ca532f34a7cb3150d49ade7348dacc504935c12c8f1905bd0c50c644ffa",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/include/eclib/saturate.h": "0e122b26d644146321af548a85b5594833ab50831b3202834113f64f69eb2608",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/libs/eclib/interface.py": "b5099a1f8f377b6197f5240f27506b737397969c89508af1cf22dedf51dcdeff",
+    "/home/royvanrijn/.local/share/jacobian-sage-10.9/lib/python3.14/site-packages/sage/libs/eclib/mwrank.pyx": "b1476df3d932ec07f7e2ec12e919a55c6b4cec48fbdb7548df765f18d11914fe",
+    "/home/royvanrijn/src/jacobian-research/research/elkies-k3/scripts/run_r17_prospective_crt_point_search.sage": "95345dce21943db0a41fa40a6006ee8082c3760c63e00561420ee18eb9d16d05"
+  },
+  "point_search_calls": 0,
+  "primary_protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "primary_sources": [
+    "https://doc.sagemath.org/html/en/reference/libs/sage/libs/eclib/interface.html",
+    "https://raw.githubusercontent.com/JohnCremona/eclib/v20250627/libsrc/curvedata.cc",
+    "https://raw.githubusercontent.com/JohnCremona/eclib/v20250627/libsrc/mwprocs.cc"
+  ],
+  "status": "READ_ONLY_EXTERNAL_ADAPTER_SOURCE_REVIEW"
+}

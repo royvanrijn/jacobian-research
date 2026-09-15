@@ -1,0 +1,10 @@
+{
+  "complete_child_cpu_seconds": 24.293446000000003,
+  "log_sha256": "69fc819f8d75db3d0090e9fb73d80d29c34a0bf11eb84c048c54e820d1707ec0",
+  "mechanism_sha256": "c6b28eb659b43537c8a8c2fc63a811026a5fb0759c4a7c53aee7aad10b6633e3",
+  "point_search_calls": 0,
+  "returncode": 0,
+  "start_sha256": "7c9bd402ef2a4a06ab5de4f4d6d2db0de53849d0c69e0bb84e6c77737a34497a",
+  "status": "COMPLETE",
+  "wall_seconds": 133.94318204000592
+}

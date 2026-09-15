@@ -1,0 +1,16 @@
+{
+  "candidate_workers": 0,
+  "charged_child_cpu_seconds": 4.834009,
+  "classification": "Live Python CVP minimum tuples compare unequal to stored JSON arrays. The baseline completed independent reconstruction and wrote byte-identical bank JSON; the harness rejected only its in-memory-versus-JSON equality. The predecessor stays failed and is never resumed. No arithmetic source, bank policy, inputs or point search are changed by the successor.",
+  "equivalent_exported_bank_bytes": true,
+  "input_sha256": {
+    "artifacts/generated-results/elliptic-curves/cancellation_basis_bank_certificate_v1/protocol.json": "26c8ca3f3431f342498769c2c27e963f87652805259d1769bc03943f5fa0fcb8",
+    "artifacts/generated-results/elliptic-curves/cancellation_basis_bank_certificate_v1/supervision.json": "904501291ee8bbc7676ad0d4e76a85974c7ebbf111efc3dacf8435f4a4eafe7e",
+    "artifacts/local/elliptic-curves/cancellation-basis-bank-certificate-v1/arms/fcf6ce8e6a518eb715d2-e01/rational_rebuild/bank/bank.json": "f99e10cb984c447fe204c466b7444c9dfe1bc4efb44b1358828251e444494cc8",
+    "artifacts/local/elliptic-curves/cancellation-basis-bank-certificate-v1/arms/fcf6ce8e6a518eb715d2-e01/rational_rebuild/failure.json": "390296792737c945030d6d7ebd6b1df62a4fb21dcc34c66d07103fdd61c1d8ba",
+    "artifacts/local/elliptic-curves/cancellation-basis-early-v1/arms/fcf6ce8e6a518eb715d2/basis_refresh/epoch-01/bank.json": "f99e10cb984c447fe204c466b7444c9dfe1bc4efb44b1358828251e444494cc8"
+  },
+  "protocol_sha256": "26c8ca3f3431f342498769c2c27e963f87652805259d1769bc03943f5fa0fcb8",
+  "status": "RETAINED_SERIALIZATION_COMPARISON_FAILURE",
+  "workers": 1
+}

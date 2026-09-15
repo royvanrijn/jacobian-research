@@ -1,0 +1,34 @@
+{
+  "checked_as_polynomial_identities": true,
+  "cubic_factorization": true,
+  "nodal_discriminant_identity": true,
+  "toy_Q_coefficients": [
+    [
+      "81",
+      "0",
+      "-540",
+      "0",
+      "1062",
+      "0",
+      "-540",
+      "0",
+      "81"
+    ],
+    [
+      "-18",
+      "0",
+      "-36",
+      "0",
+      "14"
+    ],
+    [
+      "1"
+    ]
+  ],
+  "toy_discriminant_identity": true,
+  "toy_factorization": true,
+  "variable_order": [
+    "t",
+    "z"
+  ]
+}

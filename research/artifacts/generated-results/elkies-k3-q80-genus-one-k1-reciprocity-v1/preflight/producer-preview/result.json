@@ -1,0 +1,23 @@
+{
+  "excluded_allocations": [
+    "k1,j0",
+    "k1,j1",
+    "k1,j2",
+    "k1,j3"
+  ],
+  "finite_candidate_count": 0,
+  "formal_verification": false,
+  "genus1_allocations_remaining": 5,
+  "input_sha256": "00f39c23a5441783ba15367bca00949470feb3f75a5dafe8377e6db6563355d9",
+  "old_norm8_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "records": {
+    "composite-norms.json": "f86bb8d74b01d8572422efb2cb6365d659471e076cad74c77c576b521792b283",
+    "cubic-census.json": "be8fa08dd44831b1bd52b6c256699fb2992ec7a1b7af525a72dc98db1ff59e20",
+    "cubic-input.txt": "2f07a3b41f726a9575c460e883a819282aa149544436fe87a76f92c79b4e2ac7",
+    "cubic-row-checks.json": "2f2215f9ac778c3218f3c5c7925bc6eddc957579c428008c9d20aae65f82574c",
+    "fibre-hypotheses.json": "2e3cf17ebdf89c3c839884e86c3762e89a0098d2a733ee7d922cb146e667a26a"
+  },
+  "status": "PASS",
+  "written_integrality_argument_required": true
+}

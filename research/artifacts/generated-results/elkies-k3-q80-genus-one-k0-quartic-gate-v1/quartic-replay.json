@@ -1,0 +1,42 @@
+{
+  "candidate_rows": [],
+  "checkpoints": {
+    "quartic-replay/0000-0429.json": "64fb2b1a3688bdb897fe0c0a7731baac9e08164d75b4de44cdb7b2a1826d83a6",
+    "quartic-replay/0429-0858.json": "f48f57e50d58bf0a62b07afa76195b6c414c54a75011de4ee26be36a7d534e14",
+    "quartic-replay/0858-1287.json": "230620cdceecc7dc629d7fe455e03a4108b8d0704da17caa9dcc2aae0cfb8b81",
+    "quartic-replay/1287-1716.json": "887d6b433625960a48915d17fca8b8f992244d6ba164f1c591a3272e0c773b75",
+    "quartic-replay/1716-2145.json": "90c87de9e2abf2782a3dcabbde2ae26582bdf63727818db696aac8e3b7002698",
+    "quartic-replay/2145-2574.json": "cfe4f04877c18ed50b194dc76a10ee9ddb8defb00fbfc5679e9913575fef113f",
+    "quartic-replay/2574-3003.json": "b64ec380cb4e8e3cde2f65f35376cb05b97e58f58ff23078ebdac9911cab589d",
+    "quartic-replay/3003-3432.json": "e66c654e1f632e6692a4a73398293d5b4b8a22c8f5cee929bdfab1e251432f69",
+    "quartic-replay/3432-3861.json": "0ee7d00b43c4b7084c5978f07c3e7ad7fe7cd5ba90c09a7ad2043fb220d8e6ff",
+    "quartic-replay/3861-4290.json": "2948275cd449810377fb9f1be7f986cde6168bb75c826d7c07347a3b453c26e0"
+  },
+  "cpu_seconds": 69.05172,
+  "first_failed_character": [
+    9201540,
+    2299578,
+    574929,
+    143902,
+    35609,
+    9116,
+    2196,
+    563,
+    141,
+    34,
+    7,
+    3,
+    4,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "input_sha256": "dbd2efd777b7b3e56143303ff47a0a48e3ec1669fd3030943217fe8a6cca07d0",
+  "orbits": 73620690,
+  "session_wall_seconds": 69.70503233099589,
+  "smooth_split": 12267623,
+  "source_sha256": "b3042772abf4cfac0c29467eb1b8583225427a13246dcc259f74c1783c149398",
+  "status": "COMPLETE"
+}

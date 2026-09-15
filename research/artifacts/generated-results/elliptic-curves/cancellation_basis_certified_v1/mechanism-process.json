@@ -1,0 +1,16 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "/home/royvanrijn/src/jacobian-research/research/elliptic-curves/cas/audit_cancellation_basis_certified.py"
+  ],
+  "full_child_cpu_seconds": 28.079631,
+  "log_sha256": "6516e0dc64e3f19b59631c70a1ccf4869ac104f58e0f87cf138f2b39880fd589",
+  "point_search_calls": 0,
+  "protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "result_sha256": "1c3446804558210a5e3f3121fe96651e2800fed6db50f6755716d06c5cbbbdf6",
+  "returncode": 0,
+  "status": "COMPLETE",
+  "supervisor_sha256": "fd5074789dc8144a1fb24a59721e2b6932c2db4aea53869773bad63f7eb366d9",
+  "wall_seconds": 164.92838327097706
+}

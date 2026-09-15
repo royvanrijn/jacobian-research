@@ -1,0 +1,27 @@
+{
+  "agreement_points": 110,
+  "candidate_rows": [],
+  "counts": {
+    "rational_quadratic_choices": 838944,
+    "rational_quadratic_unused_zero": 12,
+    "rational_triple_choices": 120960
+  },
+  "full_split_rational_sites": [
+    2,
+    9,
+    12,
+    27,
+    32,
+    35,
+    38,
+    46,
+    48,
+    63,
+    74,
+    75,
+    103,
+    105,
+    107,
+    115
+  ]
+}

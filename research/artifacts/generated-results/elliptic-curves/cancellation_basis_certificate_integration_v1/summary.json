@@ -1,0 +1,74 @@
+{
+  "boundary": "Software and arithmetic integration on known retained transcripts; no new point search or search-performance observation. Complete minimum exhaustion occurs before bank use, and final replay rechecks its bound direct witnesses. All prior protocols, failure records and timing results remain unchanged.",
+  "full_child_cpu_seconds": 51.651459,
+  "jobs": [
+    {
+      "alarm_injections": 0,
+      "bank_ranks": [
+        18,
+        19,
+        20
+      ],
+      "job": "single_refresh",
+      "later_directions": 2,
+      "new_directions": 3,
+      "point_search_calls": 0,
+      "result_sha256": "2a0d8ef891e4de3a6276d586f3234699f699234807e52e583420aa984b87d3fe",
+      "retained_calls": 26,
+      "status": "PASS_TRANSCRIPT_INTEGRATION",
+      "tail_witness_calls": 16,
+      "verification_sha256": "8ea6ae4bbf857ef9009100ed174a3d5cbc015f53daf66d266c8edd34e28c5025"
+    },
+    {
+      "alarm_injections": 0,
+      "bank_ranks": [
+        18
+      ],
+      "job": "single_fixed",
+      "later_directions": 2,
+      "new_directions": 3,
+      "point_search_calls": 0,
+      "result_sha256": "e8dcd4f1b950a8a8a785b5b4c28a6cb27d791f5929b12b92960fa110574e569a",
+      "retained_calls": 25,
+      "status": "PASS_TRANSCRIPT_INTEGRATION",
+      "tail_witness_calls": 16,
+      "verification_sha256": "ea2818e26c19cc3696dceda76f0259235fa04fe11b3e7edfae9a2cac627acff9"
+    },
+    {
+      "alarm_injections": 0,
+      "bank_ranks": [
+        18,
+        20
+      ],
+      "job": "double_refresh",
+      "later_directions": 2,
+      "new_directions": 4,
+      "point_search_calls": 0,
+      "result_sha256": "98f4a2e3fc312d4422d47b827285975e9f5987f92c6a5d8dcba091a01e6f74f2",
+      "retained_calls": 2,
+      "status": "PASS_TRANSCRIPT_INTEGRATION",
+      "tail_witness_calls": 0,
+      "verification_sha256": "a4503c753db408ca83256e18a496a184df78a80a9d915ba004b9a9f15ba6b85f"
+    },
+    {
+      "alarm_injections": 1,
+      "bank_ranks": [
+        18
+      ],
+      "job": "bank_alarm",
+      "later_directions": 0,
+      "new_directions": 1,
+      "point_search_calls": 0,
+      "result_sha256": "c82444810055d6b4d76b8e995d3a4155ff9c064971c48d88228729dcea28c7c7",
+      "retained_calls": 8,
+      "status": "PASS_TRANSCRIPT_INTEGRATION",
+      "tail_witness_calls": 5,
+      "verification_sha256": "2726ddacea5a0d612749d5f5c2104a31712810898f2ead82f647019bfd023140"
+    }
+  ],
+  "negative_check_component_cpu_seconds": 4.946885862,
+  "negative_checks_sha256": "8d7b79c7fb3cbe4a44b0e24faba7a069ff1fdde605edd1015d464a43e53d00e5",
+  "point_search_calls": 0,
+  "protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747",
+  "status": "PASS_COMPLETE_CERTIFICATE_ENGINE_INTEGRATION"
+}

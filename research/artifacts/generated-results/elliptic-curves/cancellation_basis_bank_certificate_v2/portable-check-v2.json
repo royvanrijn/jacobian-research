@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "cf81d523dc0f48feb0a48d4dd7210b5b0ad39b7ac955e9edba95c2d7facb8f9d",
+  "boundary": "All bytes checked in an empty root, followed by source/input guards and independent retained-output integer-norm, parity, timing and bootstrap accounting. No new CVP, native rank, map or point-search replay.",
+  "checker_sha256": "38792e47eed403eb9e0636b0c0350907bb5854fdc47341b1fa15827c9b5c3c71",
+  "files": 11266,
+  "full_child_cpu_seconds": 1.109343,
+  "log_sha256": "2073a7e804f66e1843c03deac1a06ba72e03867df97503bce7a9f92f5b746648",
+  "manifest_sha256": "1e0a418eaccd2d8bd578e4e1c8981af6adaf77c362ba9ce47ee34a50f79384d6",
+  "packaging_check_cpu_seconds": 2.075808404,
+  "returncode": 0,
+  "status": "PASS_EMPTY_ROOT_BANK_COST_CHECK"
+}

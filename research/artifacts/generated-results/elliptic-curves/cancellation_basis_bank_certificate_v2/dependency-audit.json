@@ -1,0 +1,9 @@
+{
+  "boundary": "Additional accounting and packaging only; no primary arithmetic, output, gate or source seal changes.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/retain_cancellation_basis_bank.py": "a5e1d776667ccaad8c9454c3ab64791411027b17772fb30e3b170cbfe28ec8b2",
+    "elliptic-curves/cas/verify_cancellation_basis_bank_cost.py": "38792e47eed403eb9e0636b0c0350907bb5854fdc47341b1fa15827c9b5c3c71"
+  },
+  "primary_protocol_sha256": "39b78c47a40bc3376b1eb2effe2647c093e3e18152636c07e2ad302b1892e4d8",
+  "status": "BOUND_POST_PROTOCOL_ACCOUNTING_AND_RETENTION"
+}

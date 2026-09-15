@@ -41,8 +41,29 @@ yield certified adaptive lower bounds **17,17,18,17**; cold CPU saving is only
 candidate for first recovery. Its [two-direction successor](notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md)
 fails on 24 new controls: **39 directions in 460.7 CPU seconds**, versus
 V3's **40 in 429.1**. Rebuilding and independently verifying one enlarged
-rank18 bank costs 5.18 CPU seconds, with no point search. Improved later
-amplification and rank32 remain unproved. The
+rank18 bank costs 5.18 CPU seconds, with no point search. The
+[initial basis-aware control](notes/BASIS_AWARE_AMPLIFICATION_2026-09-14.md)
+rarely searches its new anchors; a subsequent
+[exact audit](notes/SUBGROUP_ACCESSIBILITY_CAUSAL_AUDIT_2026-09-14.md) finds four
+unused generator-dependent visibility witnesses. The completed
+[early-exposure control](notes/EARLY_GENERATOR_EXPOSURE_CONTROL_2026-09-14.md)
+now obtains **28 actual later gains through added-generator anchors**, with all
+28 finite visibility changes surviving coefficient deletion and small translated-
+representative checks. Both arms recover **49 total and 28 later directions**,
+but rebuilding takes **904.6 CPU seconds versus 779.8**; both fixed validation
+blocks fail their rate gate. Neighbour exploration reaches 1054 boxes with
+coordinate witnesses beyond the old fitted range. An
+[independent bank certificate](notes/INDEPENDENT_BANK_CERTIFICATES_2026-09-15.md)
+now reproduces all 34 rebuilt banks with **30.17% less complete CPU**, preserving
+every selection and anchor check. With that constructor used in both arms, a
+[disjoint two-block control](notes/CERTIFIED_BANK_AMPLIFICATION_CONTROL_2026-09-15.md)
+now passes: refresh recovers **30 later directions versus 19**, using **871.85
+CPU seconds versus 895.16**. The later-rate ratio is **1.62**, with paired97.5%
+interval **[1.15,2.68]**; both fixed blocks improve. Twenty-six strict finite
+visibility witnesses survive small translations,13 per block, while1,345
+coordinate-witness calls preserve exploration beyond the fitted range. This is
+a validated finite control policy; fresh transfer, external comparison and
+rank32 remain open. The
 [earlier failed gates](notes/FINITE_CANCELLATION_VALIDATION_2026-09-14.md)
 and factor-free reference remain intact. No additional campaign is scheduled.
 
@@ -81,6 +102,8 @@ their historical cohort counts.
 | Understand adaptive point recovery | [V3 rule and calibration](notes/ADAPTIVE_HALF_LATTICE_V3_2026-09-07.md) · [seed and transfer results](notes/CURVE302_SEEDED_V3_RESULTS_2026-09-08.md) |
 | Compare equivalent models by proved coordinate coverage | [Local height bounds](notes/POINTED_CHART_HEIGHT_BOUNDS_2026-09-13.md) · [cost-aware unequal boxes](notes/COST_AWARE_HEIGHT_PORTFOLIO_2026-09-14.md) |
 | Schedule next directions from local cancellation | [Exact height law, adaptive policy, independent controls and fresh fibres](notes/CANCELLATION_ADAPTIVE_SCHEDULER_2026-09-14.md) |
+| Trace actual subgroup-dependent later gains | [Early exposure: 28 finite witnesses and a failed CPU gate](notes/EARLY_GENERATOR_EXPOSURE_CONTROL_2026-09-14.md) |
+| Reduce verified bank rebuilding cost | [Identical banks, independent minimum certificates and a 30.17% CPU saving](notes/INDEPENDENT_BANK_CERTIFICATES_2026-09-15.md) |
 | Recover points from constructed strict classes | [Both fixed covers solved blindly; exact transport and V3 comparison](rank-jump/BLIND_CONSTRUCTED_CLASS_RECOVERY_2026-09-12.md) |
 | Choose candidates toward32 | [Seed/amplification history, dataset and family holdouts](notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md) |
 | Compare RR global Selmer supply | [Two302 controls reach verified integral orders; global dimensions remain unknown](notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md#two-case-global-completion-attempt-september14) |
@@ -175,3 +198,13 @@ is preserved as a dated navigation snapshot.
 <!-- status-consumer: EC-CANCELLATION-CLOUD-SCHEDULER-20260914 5fd0cf273f2d559d -->
 
 <!-- status-consumer: EC-CANCELLATION-BASIS-REFRESH-20260914 7498d09b7669a7c7 -->
+
+<!-- status-consumer: EC-CANCELLATION-BASIS-AMPLIFICATION-20260914 76f9d90b85768e81 -->
+
+<!-- status-consumer: EC-CANCELLATION-SUBGROUP-ACCESSIBILITY-20260914 b2515177203c084e -->
+
+<!-- status-consumer: EC-CANCELLATION-EARLY-GENERATOR-20260914 f819fa62e31aab55 -->
+
+<!-- status-consumer: EC-CANCELLATION-BANK-CERTIFICATES-20260915 9a2fd770711fdf71 -->
+
+<!-- status-consumer: EC-CANCELLATION-CERTIFIED-BANK-AMPLIFICATION-20260915 47829dfbef9ee289 -->

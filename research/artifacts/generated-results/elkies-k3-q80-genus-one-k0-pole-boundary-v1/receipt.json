@@ -1,0 +1,100 @@
+{
+  "checker_sha256": "ccf626210cd2a897cca04ff8e7de7a0a9d2e13519dcd7632b4bdfc904a994f8c",
+  "complete_quartic_or_contact_censuses_rerun": false,
+  "cpu_seconds": 0.009402095999999999,
+  "excluded_k0_j_by_written_proof": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "height_pole_table": [
+    {
+      "cross_height": 4,
+      "height_minus": 8,
+      "height_plus": 24,
+      "j": 0,
+      "pole_degree_minus": 0,
+      "pole_degree_plus": 4,
+      "smaller_pole_degree": 0
+    },
+    {
+      "cross_height": 2,
+      "height_minus": 12,
+      "height_plus": 20,
+      "j": 1,
+      "pole_degree_minus": 1,
+      "pole_degree_plus": 3,
+      "smaller_pole_degree": 1
+    },
+    {
+      "cross_height": 0,
+      "height_minus": 16,
+      "height_plus": 16,
+      "j": 2,
+      "pole_degree_minus": 2,
+      "pole_degree_plus": 2,
+      "smaller_pole_degree": 2
+    },
+    {
+      "cross_height": -2,
+      "height_minus": 20,
+      "height_plus": 12,
+      "j": 3,
+      "pole_degree_minus": 3,
+      "pole_degree_plus": 1,
+      "smaller_pole_degree": 1
+    },
+    {
+      "cross_height": -4,
+      "height_minus": 24,
+      "height_plus": 8,
+      "j": 4,
+      "pole_degree_minus": 4,
+      "pole_degree_plus": 0,
+      "smaller_pole_degree": 0
+    }
+  ],
+  "input_sha256": "0b3d4cdc21364c5dbe1143c0ba36b330107335c8cc39a69ca104a7ad49274869",
+  "new_analytic_proof_independently_replayed": false,
+  "nodal_premise_replay": {
+    "checker_sha256": "dc4842924d60fbebf7e99814cdc96787d39e066c6fd687c2d1577aeaf76bc55b",
+    "cpu_limit": 20,
+    "cpu_seconds": 0.0034962439999999956,
+    "earlier_complete_censuses_rerun": false,
+    "finite_checks": {
+      "branch_fields": [
+        "ramified_quadratic",
+        "unramified_quadratic",
+        "split"
+      ],
+      "controls": 3,
+      "nodal_norm_codes": [
+        13412,
+        0
+      ],
+      "symbolic_identities": 4
+    },
+    "input_sha256": "c8fad1572156d4db60186e67e10dadd4fc68e445db29e4206608eea231409c30",
+    "memory_limit_bytes": 2147483648,
+    "result_sha256": "407ce9db938309fb4ecece09de5c8fea56f8926977cc6d967f46e64f5f55484f",
+    "status": "PASS",
+    "wall_seconds": 0.005733722005970776,
+    "written_analytic_proof_required": true
+  },
+  "positive_mw17_target_complete": false,
+  "remaining_boundary": "UNKNOWN",
+  "remaining_k0_j": [
+    2
+  ],
+  "remaining_pole_quadratic_reduction": [
+    88,
+    62,
+    1
+  ],
+  "scope": "Finite premises only; the exclusions and pole condition use the written proof.",
+  "status": "PASS",
+  "written_proof_sha256": "7fffda3810c34b30ba5e05a760a09c2e4b38a8e311ed23d7a3faecb3241f1c34"
+}

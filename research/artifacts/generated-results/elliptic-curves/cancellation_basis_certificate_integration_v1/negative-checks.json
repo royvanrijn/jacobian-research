@@ -1,0 +1,26 @@
+{
+  "cpu_seconds": 4.9463287,
+  "point_search_calls": 0,
+  "protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747",
+  "rows": [
+    {
+      "error": "bank does not use complete current subgroup",
+      "result_sha256": "db63f13ec12059371e190192a761fe3a860c3ef8fc1d8b2be99f59a7bb1eb855",
+      "status": "REJECTED_AS_REQUIRED",
+      "test": "obsolete_seed"
+    },
+    {
+      "error": "cloud certificate drops or changes points",
+      "result_sha256": "05ff6d571882d33cd9170b0ed205590aeddc79a0d33539a35a1fbc149b72adda",
+      "status": "REJECTED_AS_REQUIRED",
+      "test": "omitted_cloud_point"
+    },
+    {
+      "error": "minimum witness packet differs",
+      "result_sha256": "6678685622af55148ef7b587cadf57e32638ee0795ed66a3d1e6594ac61ad366",
+      "status": "REJECTED_AS_REQUIRED",
+      "test": "changed_minimum_packet"
+    }
+  ],
+  "status": "PASS_UPDATED_HASH_CORRUPTION_CHECKS"
+}

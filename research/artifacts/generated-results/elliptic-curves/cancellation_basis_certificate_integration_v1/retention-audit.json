@@ -1,0 +1,26 @@
+{
+  "jobs": [
+    {
+      "calls": 26,
+      "directions": 3,
+      "job": "single_refresh"
+    },
+    {
+      "calls": 25,
+      "directions": 3,
+      "job": "single_fixed"
+    },
+    {
+      "calls": 2,
+      "directions": 4,
+      "job": "double_refresh"
+    },
+    {
+      "calls": 8,
+      "directions": 1,
+      "job": "bank_alarm"
+    }
+  ],
+  "point_search_calls": 0,
+  "status": "PASS_RETAINED_INTEGRATION_BINDINGS"
+}

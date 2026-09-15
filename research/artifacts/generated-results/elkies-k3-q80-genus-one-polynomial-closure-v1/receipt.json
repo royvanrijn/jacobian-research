@@ -1,0 +1,185 @@
+{
+  "analytic_proof_independently_verified": false,
+  "checker_sha256": "2767a4154d3965e8781bc4523410b2db8ee23bba3a0fd1baf4b5251ef6c73287",
+  "cpu_seconds": 0.012351754999999999,
+  "denominator_sweep_run": false,
+  "divisor_cases": [
+    {
+      "alpha_zero_factor": "F",
+      "degree_F": -1,
+      "pole_factor": "F"
+    },
+    {
+      "alpha_zero_factor": "G",
+      "degree_F": -2,
+      "pole_factor": "F"
+    },
+    {
+      "alpha_zero_factor": "F",
+      "degree_F": 3,
+      "pole_factor": "G"
+    },
+    {
+      "alpha_zero_factor": "G",
+      "degree_F": 2,
+      "pole_factor": "G"
+    }
+  ],
+  "external_review": false,
+  "forced_divisor_case": {
+    "alpha_zero_factor": "G",
+    "degree_F": 2,
+    "pole_factor": "G"
+  },
+  "formal_verification": false,
+  "genus1_polynomial_chart_excluded_over_Q_by_written_proof": true,
+  "input_sha256": "fbb07a7482753cac8593caff7bce675551f4027f0fb1c1e487df293be24f6f36",
+  "large_censuses_rerun": false,
+  "new_two_negative_case_excluded_over_Q131_by_written_proof": true,
+  "nodal_premise_replay": {
+    "checker_sha256": "dc4842924d60fbebf7e99814cdc96787d39e066c6fd687c2d1577aeaf76bc55b",
+    "cpu_limit": 20,
+    "cpu_seconds": 0.0048920790000000006,
+    "earlier_complete_censuses_rerun": false,
+    "finite_checks": {
+      "branch_fields": [
+        "ramified_quadratic",
+        "unramified_quadratic",
+        "split"
+      ],
+      "controls": 3,
+      "nodal_norm_codes": [
+        13412,
+        0
+      ],
+      "symbolic_identities": 4
+    },
+    "input_sha256": "c8fad1572156d4db60186e67e10dadd4fc68e445db29e4206608eea231409c30",
+    "memory_limit_bytes": 2147483648,
+    "result_sha256": "407ce9db938309fb4ecece09de5c8fea56f8926977cc6d967f46e64f5f55484f",
+    "status": "PASS",
+    "wall_seconds": 0.004949660040438175,
+    "written_analytic_proof_required": true
+  },
+  "old_norm8_singular_replay_gap_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "retained_mixed_replay_sha256": "081549f7790b5b385fb150ad2d0025e3bfcc87e6c76357b30772deb984e79808",
+  "retained_pole_receipt_sha256": "6def82948eeff2fe9f9a7a83eab384ad76aa3dd2362158842acf45d645e8bab0",
+  "scope": "Finite nodal premises, old exact receipts, divisor-degree arithmetic and fifteen source-linked allocations. The local analytic closure requires the written proof.",
+  "status": "PASS",
+  "written_allocation_coverage": [
+    {
+      "j": 0,
+      "k": 0,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 1,
+      "k": 0,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 2,
+      "k": 0,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_MIXED_VALUATION_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 0,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 4,
+      "k": 0,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md",
+        "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 0,
+      "k": 1,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 1,
+      "k": 1,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 2,
+      "k": 1,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 1,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 0,
+      "k": 2,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 1,
+      "k": 2,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 2,
+      "k": 2,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 0,
+      "k": 3,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 1,
+      "k": 3,
+      "written_exclusion_sources": [
+        "elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md"
+      ]
+    },
+    {
+      "j": 0,
+      "k": 4,
+      "written_exclusion_sources": [
+        "elkies-k3/COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md"
+      ]
+    }
+  ],
+  "written_proof_sha256": "33de3eee7a9ef5cf017ae36c94686fe25c39169d7e0508169e67c21bc6a5687e"
+}

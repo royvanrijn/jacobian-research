@@ -1,0 +1,131 @@
+{
+  "candidate_rows": [],
+  "cpu_seconds": 1.76581,
+  "max_factor_trials": 8,
+  "nodal": 1,
+  "orbits": 749320,
+  "smooth_split": 125595,
+  "status": "COMPLETE",
+  "zero_norm_rows": [
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        0,
+        89988,
+        89988
+      ],
+      "roots": [
+        928825,
+        1635063,
+        1949586
+      ],
+      "smooth": true,
+      "t": 235367
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        0,
+        65341,
+        65341
+      ],
+      "roots": [
+        404257,
+        928390,
+        932867
+      ],
+      "smooth": true,
+      "t": 295766
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        76440,
+        76440,
+        0
+      ],
+      "roots": [
+        193239,
+        384505,
+        1687639
+      ],
+      "smooth": true,
+      "t": 374594
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        87669,
+        0,
+        87669
+      ],
+      "roots": [
+        42364,
+        367416,
+        1855734
+      ],
+      "smooth": true,
+      "t": 484763
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        51968,
+        51968,
+        0
+      ],
+      "roots": [
+        273806,
+        831550,
+        1177188
+      ],
+      "smooth": true,
+      "t": 532125
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        68381,
+        68381,
+        0
+      ],
+      "roots": [
+        1602108,
+        1602108,
+        1309389
+      ],
+      "smooth": false,
+      "t": 1050615
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        108754,
+        108754,
+        0
+      ],
+      "roots": [
+        500683,
+        1882472,
+        2130319
+      ],
+      "smooth": true,
+      "t": 1154864
+    },
+    {
+      "agreement_code": -1,
+      "norm_codes": [
+        123639,
+        123639,
+        0
+      ],
+      "roots": [
+        408911,
+        462376,
+        1411388
+      ],
+      "smooth": true,
+      "t": 1236534
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "branch_quadratic": [
+    98872578977556376101742883789238871426743106890776868117310060729,
+    80148528835876681718319913092201091573928018290138078125694109004,
+    16124196532885861882702787740901506922195833708883364381645924036
+  ],
+  "branch_torsion_witness": {
+    "A": 3,
+    "B": 22,
+    "character_rows": [],
+    "doubles": 33,
+    "order": 33,
+    "p": 23,
+    "rows": [],
+    "t": 0
+  },
+  "cpu_limit_seconds": 20,
+  "exact_lift_identity": true,
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/audit_q80_branch_trace_specialization.py": "a9e5263b2175b4b12756705c438f7e9eb23cdea9fa03ccc32784d7f3792423fc",
+    "elkies-k3/scripts/verify_q80_branch_trace_specialization.py": "ec58f6a7dea866b994a364974d4024b204fa2985d340b621718c56b6c9216596",
+    "elkies-k3/scripts/verify_q80_one_cover_halving_control.py": "6c693c5a623334613d394852b05c5be7b8f4c346d5ab6dbfa93e73578145e497"
+  },
+  "kernel": [
+    0,
+    65538
+  ],
+  "label": "alternate-orbit-11ae6",
+  "memory_limit_bytes": 1073741824,
+  "noninvariant_x": true,
+  "prime_pool": [
+    5,
+    997
+  ],
+  "proof_boundary": "Exact rank18 uses the retained Q80 saturated rank17 and unramified Kummer theorem; no second gain constructed.",
+  "rank": 16,
+  "rational_base_point": {
+    "t": "-12337448790062995864850901599440357963/4545177023617899664908420377871822626",
+    "w": "1914989085675604622671431856119564731185186821148974119486313803144/174814500908380756342631552995070101"
+  },
+  "records": [
+    {
+      "A": 3,
+      "B": 22,
+      "character_rows": [],
+      "doubles": 33,
+      "order": 33,
+      "p": 23,
+      "rows": [],
+      "t": 0
+    },
+    {
+      "A": 26,
+      "B": 13,
+      "character_rows": [
+        101854
+      ],
+      "doubles": 22,
+      "order": 44,
+      "p": 43,
+      "rows": [
+        101854
+      ],
+      "t": 27
+    },
+    {
+      "A": 20,
+      "B": 18,
+      "character_rows": [
+        120950
+      ],
+      "doubles": 51,
+      "order": 102,
+      "p": 89,
+      "rows": [
+        120950
+      ],
+      "t": 18
+    },
+    {
+      "A": 50,
+      "B": 21,
+      "character_rows": [],
+      "doubles": 105,
+      "order": 105,
+      "p": 89,
+      "rows": [],
+      "t": 47
+    },
+    {
+      "A": 56,
+      "B": 37,
+      "character_rows": [],
+      "doubles": 119,
+      "order": 119,
+      "p": 101,
+      "rows": [],
+      "t": 71
+    },
+    {
+      "A": 4,
+      "B": 22,
+      "character_rows": [
+        73247
+      ],
+      "doubles": 56,
+      "order": 112,
+      "p": 101,
+      "rows": [
+        73247
+      ],
+      "t": 79
+    },
+    {
+      "A": 72,
+      "B": 77,
+      "character_rows": [
+        4481
+      ],
+      "doubles": 60,
+      "order": 120,
+      "p": 103,
+      "rows": [
+        4481
+      ],
+      "t": 78
+    },
+    {
+      "A": 29,
+      "B": 65,
+      "character_rows": [
+        89446
+      ],
+      "doubles": 68,
+      "order": 136,
+      "p": 127,
+      "rows": [
+        89446
+      ],
+      "t": 67
+    },
+    {
+      "A": 48,
+      "B": 44,
+      "character_rows": [
+        82078,
+        127630,
+        45584
+      ],
+      "doubles": 36,
+      "order": 144,
+      "p": 127,
+      "rows": [
+        127630,
+        82078
+      ],
+      "t": 74
+    },
+    {
+      "A": 17,
+      "B": 103,
+      "character_rows": [],
+      "doubles": 131,
+      "order": 131,
+      "p": 131,
+      "rows": [],
+      "t": 25
+    },
+    {
+      "A": 103,
+      "B": 52,
+      "character_rows": [
+        18672
+      ],
+      "doubles": 75,
+      "order": 150,
+      "p": 131,
+      "rows": [
+        18672
+      ],
+      "t": 89
+    },
+    {
+      "A": 56,
+      "B": 64,
+      "character_rows": [
+        116438
+      ],
+      "doubles": 80,
+      "order": 160,
+      "p": 139,
+      "rows": [
+        116438
+      ],
+      "t": 97
+    },
+    {
+      "A": 24,
+      "B": 7,
+      "character_rows": [
+        68946
+      ],
+      "doubles": 77,
+      "order": 154,
+      "p": 139,
+      "rows": [
+        68946
+      ],
+      "t": 115
+    },
+    {
+      "A": 132,
+      "B": 89,
+      "character_rows": [
+        80094,
+        3504,
+        79214
+      ],
+      "doubles": 42,
+      "order": 168,
+      "p": 157,
+      "rows": [
+        79214,
+        3504
+      ],
+      "t": 121
+    },
+    {
+      "A": 144,
+      "B": 29,
+      "character_rows": [
+        53588
+      ],
+      "doubles": 90,
+      "order": 180,
+      "p": 157,
+      "rows": [
+        53588
+      ],
+      "t": 145
+    },
+    {
+      "A": 30,
+      "B": 105,
+      "character_rows": [
+        112075
+      ],
+      "doubles": 95,
+      "order": 190,
+      "p": 167,
+      "rows": [
+        112075
+      ],
+      "t": 141
+    },
+    {
+      "A": 82,
+      "B": 187,
+      "character_rows": [
+        6121
+      ],
+      "doubles": 105,
+      "order": 210,
+      "p": 191,
+      "rows": [
+        6121
+      ],
+      "t": 56
+    },
+    {
+      "A": 19,
+      "B": 155,
+      "character_rows": [
+        55417
+      ],
+      "doubles": 108,
+      "order": 216,
+      "p": 191,
+      "rows": [
+        55417
+      ],
+      "t": 73
+    },
+    {
+      "A": 20,
+      "B": 28,
+      "character_rows": [
+        16717,
+        10728,
+        26789
+      ],
+      "doubles": 50,
+      "order": 200,
+      "p": 197,
+      "rows": [
+        10728,
+        16717
+      ],
+      "t": 185
+    }
+  ],
+  "schema": "q80-one-cover-halving-control-v1"
+}

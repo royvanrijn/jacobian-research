@@ -1,0 +1,189 @@
+{
+  "cpu_seconds": 6.149584024999999,
+  "point_search_calls": 0,
+  "recipe_sha256": "74d5533cea28fba8dd60c73940f621c2f491f2d20f0d0bcf1710b63bbddc88a1",
+  "rows": [
+    {
+      "certificate": {
+        "boundary": "Complete closed parity ellipsoid in the supplied exact positive metric. No canonical-height or optimizer-node-count assertion.",
+        "minima": [
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "norm": 2,
+        "status": "PASS_EXACT_PARITY_MINIMUM",
+        "verification_nodes": 5
+      },
+      "gram": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "name": "tiny_complete_parity_0",
+      "parity": [
+        1,
+        1
+      ],
+      "status": "PASS_EXACT_PARITY_MINIMUM"
+    },
+    {
+      "certificate": {
+        "boundary": "Complete closed parity ellipsoid in the supplied exact positive metric. No canonical-height or optimizer-node-count assertion.",
+        "minima": [
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "norm": 2,
+        "status": "PASS_EXACT_PARITY_MINIMUM",
+        "verification_nodes": 4
+      },
+      "gram": [
+        [
+          2,
+          -3
+        ],
+        [
+          -3,
+          8
+        ]
+      ],
+      "name": "tiny_complete_parity_1",
+      "parity": [
+        1,
+        0
+      ],
+      "status": "PASS_EXACT_PARITY_MINIMUM"
+    },
+    {
+      "certificate": {
+        "boundary": "Complete closed parity ellipsoid in the supplied exact positive metric. No canonical-height or optimizer-node-count assertion.",
+        "minima": [
+          [
+            0
+          ]
+        ],
+        "norm": 0,
+        "status": "PASS_EXACT_PARITY_MINIMUM",
+        "verification_nodes": 2
+      },
+      "gram": [
+        [
+          1
+        ]
+      ],
+      "name": "tiny_complete_parity_2",
+      "parity": [
+        0
+      ],
+      "status": "PASS_EXACT_PARITY_MINIMUM"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "a strictly shorter parity vector exists",
+      "name": "strictly_shorter_vector",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "the complete minimum set differs",
+      "name": "missing_sign_tie",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "empty or duplicate minimum list",
+      "name": "duplicate_minimum",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "claimed point is outside the parity sphere",
+      "name": "wrong_parity",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "'float' object cannot be interpreted as an integer",
+      "name": "noninteger_radius",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "verification node limit; no minimum certified",
+      "name": "node_cap",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "asymmetric metric",
+      "name": "asymmetric_metric",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.0,
+      "error": "metric is not positive definite",
+      "name": "nonpositive_metric",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 1.288529078,
+      "error": "the complete minimum set differs",
+      "name": "omitted_minimum_tie",
+      "selection_sha256": "2edaea78c6e44a0766da234388745323a315b91755ff110d66fecf95291fc282",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.9038114859999999,
+      "error": "shortlist omitted or added a coset",
+      "name": "omitted_selected_coset",
+      "selection_sha256": "a28c8ed01f5028fa1c2f17734dc57acc849989ad8413f68998edaca1cd85fc40",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.7704655899999997,
+      "error": "refined word, profile or multiplicity differs",
+      "name": "wrong_anchor_word",
+      "selection_sha256": "d8836f49f2f8e812a80ab3c572caee92d16008be75531456256a58829a6557ef",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.7379097099999998,
+      "error": "prescribed map recipe differs",
+      "name": "changed_map_recipe_with_updated_hash",
+      "selection_sha256": "384048dcc4d332c8cdd1010a9b67b2175412f91567bfb6cf12703284e653800c",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 0.6550867060000005,
+      "error": "full score array differs",
+      "name": "changed_full_census_with_updated_hash",
+      "selection_sha256": "900ffc341cc6f3747562b46ee7eeea0dd19774d387d8bbfc9f5e99aea338d64c",
+      "status": "REJECTED_AS_REQUIRED"
+    },
+    {
+      "cpu_seconds": 1.2936264199999998,
+      "error": "complete exported centre order differs",
+      "name": "changed_complete_centre_order",
+      "selection_sha256": "bc2aa6862d7ea93a32da74fe20dfb920f1f3765e44ef5f190ad3b4f2ea3f9a74",
+      "status": "REJECTED_AS_REQUIRED"
+    }
+  ],
+  "status": "PASS_POSITIVE_AND_CORRUPTION_CHECKS"
+}

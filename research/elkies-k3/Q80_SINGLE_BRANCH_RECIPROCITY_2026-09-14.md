@@ -10,7 +10,11 @@ All four genus-zero cases `k=1,j=0,...,3` and both genus-one cases
 `k=3,j=0,1` are therefore empty. This component and the earlier same-branch
 gates leave the following cases; the genus-zero row is now closed by the
 separate [coefficient collision proof](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md).
-**Twelve genus-one cases remain open** on Q80:
+The later [nodal orientation proof](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md)
+also closes the genus-one k2 row. Subsequent
+[cubic reciprocity](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md) closes k1.
+**Five genus-one cases remain open** on Q80.
+The table records the allocations outside this component:
 
 | Base genus | Allocations outside this component | Branch degree outside agreement |
 |---:|---|---:|

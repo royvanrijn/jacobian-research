@@ -1,0 +1,25 @@
+{
+  "initial_whole_polynomial_prime_panel": [
+    181,
+    191,
+    193,
+    197,
+    199,
+    211,
+    223,
+    227,
+    229
+  ],
+  "whole_polynomial_witnesses": 8,
+  "initial_unresolved": 26,
+  "continuation": "Factor remaining exact rational polynomials, verify their product, and test each factor at ascending primes5..997. Two degree-two factors are retained for exact ordinate-sign classification.",
+  "bounds_per_producer": {
+    "CPU_seconds": 30,
+    "memory_bytes": 1073741824
+  },
+  "restart_of_research_campaign": false,
+  "bounds_apply_to": [
+    "signed_basis_probe.py",
+    "factor_witness_probe.py"
+  ]
+}

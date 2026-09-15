@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "boundary": "Binary replay of retained matrices only; no re-evaluation of divisors, global Selmer completeness, or new independence theorem.",
+  "script_sha256": "f602834df79d55891b359f18370951f8aed5bee6a4ec7528ecd62d8f1d9ddf18",
+  "cases": {
+    "historical09": {
+      "input": "artifacts/generated-results/elliptic-curves/det1092_rr_full_inherited_jacobian_v1.json",
+      "sha256": "4b6d735aa1cdfdf5e69601ad75aedc8554c70260c2ebfb186bed7adf8b2fcb18",
+      "rows": 67,
+      "prime_blocks": 40,
+      "every_individual_block_consistent": true,
+      "stacked_inherited_rank": 16,
+      "stacked_augmented_rank": 17,
+      "saved_separator_prime_support": [
+        107,
+        163,
+        227,
+        239,
+        263,
+        271,
+        313,
+        337
+      ],
+      "separator_product": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "control08": {
+      "input": "artifacts/generated-results/elliptic-curves/det1092_rr_generic_point_controls_v2/case-08.json",
+      "sha256": "e8ffa578da9472e3b967969f5deefe599cb5fee0170a20b92f104c08056bae0c",
+      "rows": 58,
+      "prime_blocks": 38,
+      "every_individual_block_consistent": true,
+      "stacked_inherited_rank": 16,
+      "stacked_augmented_rank": 17,
+      "saved_separator_prime_support": [
+        53,
+        73,
+        149,
+        151,
+        317
+      ],
+      "separator_product": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  }
+}

@@ -1,0 +1,1811 @@
+{
+  "boundary": "Retrospective finite accessibility diagnostic on already executed controls. No discovery, performance advantage, optimal representation, arithmetic exclusion, fitting, or prospective selection validation. A positive witness motivates a separately frozen exposure test; it cannot pass that test. Interrupted or missing calculations remain UNKNOWN. Original experiment and all costs stay unchanged.",
+  "cases": [
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-001.json",
+          "sha256": "b07cb8ce86cbf0c4a5cec7ae1a0e5a6758e335a9ff887e562868815dee01b0ba"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-002.json",
+          "sha256": "48cc0e962052244b9d15fbbc54a8f7ccfddad7bd00ed667d66686c5ccf01b87e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-003.json",
+          "sha256": "efcd4985cac3e40a2688f3fc28df8d7e1ddafc0a42acba58c061e0ef4ea242b2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-004.json",
+          "sha256": "89a73eacf4309b91a112fc7c4461f369c14c6def88c7beaad7f503c756bc2541"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-005.json",
+          "sha256": "03d8bb1eb0a343e0e19627b1a5ffb55043732ecffb1557521565c11d553f6756"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-006.json",
+          "sha256": "1a06095cb4a30f174088302db8736be56a504a4f04c6b1dfc761a5f1a12ce5d1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-007.json",
+          "sha256": "d9dd80e73067648d7e762bdf91b862bb7c33d6f8c51c9c6ed30e2ab5fcc3ecdf"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-008.json",
+          "sha256": "2a74b12fcd35c23ff8fa4af25e1f881ea4895b7bbddc628c5e709f521f10869e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-009.json",
+          "sha256": "6318c9d52c6d0c99bf7773dbef29e5c12b97b4e8794cd56ed9a2e6d0ef1cb454"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-010.json",
+          "sha256": "cd2998f12965b6e3c17bd485dddc620a760716313a0a581caf6613e09e914f41"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-011.json",
+          "sha256": "f8f8365478326564cdcc84d3d0f787ef3bfce59e41f432f3a083b7f49b6eb13b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-012.json",
+          "sha256": "867a0b977b336f7e30f61d54397e6b01ee13113e886e4ca00cce11bb6c64ce5a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-013.json",
+          "sha256": "7ab538cff17e85a510a5c6981a0c2b1fee7c4befbbe6173f65dbd6b139ec9cd3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-014.json",
+          "sha256": "6238b96087aed8b226c11dd97ffbc0e5b1aa1a6de3775a33193db646f251675b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-015.json",
+          "sha256": "a9835be56ec9dbc888dc64e7e7b17acd1cfb670d734d6699ffc8a1840c651d77"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-016.json",
+          "sha256": "af9c8e9bba3db0aefe7a1b66e288d1ebae8a4795d748830254dde211d0fcc4ab"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-017.json",
+          "sha256": "10b1c9d0b21382516f4c198bd33e53259471800c106e9ec2efc073bf37ece27a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-018.json",
+          "sha256": "e9e6c1efcfc47dacdd80e4d46debac8968a81fc186bf25ccaed5a7358c56703d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-019.json",
+          "sha256": "82b86b38086b16140d2ee714e6cf7dc44640c760536239cb4531404a81d8f42b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-020.json",
+          "sha256": "62721c28b578a88688e9d567b2ab73420955f8f9081ffd82f5e6a81e640fc5e4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-021.json",
+          "sha256": "aa8549bd49762294d42f4b1a45c53e48f2bfd44f8eca020eb3156eb0aa586e6a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-022.json",
+          "sha256": "133f1886ac6b5160147b83f91b0fabb5c58d945015542055785f95af012b9155"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-023.json",
+          "sha256": "ba23cbcd3efeb9f0879c74daab033e6dd28537e51978205a83f93a3654ba327c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-024.json",
+          "sha256": "5be392100a4934a93f3e6468c7983cfdbea63d6c2844620cbc320dfa5d5ac3df"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-025.json",
+          "sha256": "76198ce7d54c03a9853aaf1236fd3ce1d08a09ee4e22d66f083ae1cee6717e13"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-026.json",
+          "sha256": "149bf1db6e33abcf2aa97b8542fa2372da4d75006cd65a5be658a1b4704a298c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-027.json",
+          "sha256": "322c0567a6539133aa5d180a70060e2769849748db8b836340e4d1cbbebd86e0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-028.json",
+          "sha256": "0c9905576640c55b2531a95abbbb8231977c4a0e52310caa67d6591250154034"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/call-029.json",
+          "sha256": "763616841896ea5145033102fa7b91b856496a2039452920874d5432342afde1"
+        }
+      ],
+      "family": "074d9",
+      "id": "af401f31ecb4126b4050",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/epoch-01/verification.json",
+          "sha256": "63387db683f4cccab7079f5f247e6533e73d170ae0978cece8a813e214f20d79"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/epoch-00/bank.json",
+          "sha256": "be51a46b35f1b06e2089e56db55af5fd3c8f30e2bb3ff897c2bf9fa1ddfb6a25"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/epoch-01/bank.json",
+          "sha256": "bdda355c0d8eff740f204735760cc3d8244a0f2bafeade5cdd60800f58091980"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/af401f31ecb4126b4050/basis_refresh/result.json",
+          "sha256": "2abaa12db1a8f9544bd33d962aeee1d7f646e0334eab9da601e1685bd83eae3d"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/call-004.json",
+          "sha256": "5e2b39ef2d0e867be82265481d36e31cf30bab481cb8eb014e3473eb660569ce"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/call-005.json",
+          "sha256": "cdc8c53aba1f1702524dadd0ef26fc4f22462b23e49910454883fc236259189e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/call-006.json",
+          "sha256": "347059be16f6e181b5c256a25a3b1b034f20bb6ee8a2fc7a0788757fcd5c78a5"
+        }
+      ],
+      "family": "074d9",
+      "id": "927e9b643630fe66af77",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/epoch-01/verification.json",
+          "sha256": "a306a190e57ed3d1c9f50cad8b9e7baf0cc24af607dc01e58185ced318f3a8d9"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/epoch-00/bank.json",
+          "sha256": "3b905ed84b2bc7e16d433740bee9efb9c944f066a8b0d7d0959684b04cfddb4e"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/epoch-01/bank.json",
+          "sha256": "0bdf1818da2fd229160926610345b51ece5976017568e202b8f139c8b1b01e53"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/927e9b643630fe66af77/basis_refresh/result.json",
+          "sha256": "0d34677a6782b66039a3744d398522e7e40e8debe7a345227c3f7dd8ecb5c932"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-004.json",
+          "sha256": "be9e27c7531912681ad83c5ea987376c9288cb9f85b9c0d9b60778a26ff566ae"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-005.json",
+          "sha256": "17a7481757113baadcc70d9fc8482518a25ddcb1b2e74ac51c05ac630e667e0e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-006.json",
+          "sha256": "e5a8ab79fbee7bffb77d544bf745e6bb8e07885f379fc3adbf689e3afeb58cd9"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-007.json",
+          "sha256": "4bdccf1d521ae6355adffa687d9a98cb40be42097cd3db2b5ac563bf86104199"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-008.json",
+          "sha256": "b8a80ebd9dff98e56d7997ad82c9df6fdffa310fb1ff5bad22502a8776092d85"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/call-009.json",
+          "sha256": "ca24dd67ebcba2e6cccd7d5a2e3e7ae025067045a475ff4c7387f96334546300"
+        }
+      ],
+      "family": "074d9",
+      "id": "2208aa5d21f008fddacd",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/epoch-01/verification.json",
+          "sha256": "6f2e6a28f8cf1b00215515a75792a5a1b973a0dcec90e03b1eeb0bc6ad974a96"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/epoch-00/bank.json",
+          "sha256": "469996954f4effaceb069c885c486b521f40bc111affdbf56effa5daa7cb03c4"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/epoch-01/bank.json",
+          "sha256": "296de87feec6dee49cb465e57b26c7396c564e183887f90f3a412f2cd1001da1"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2208aa5d21f008fddacd/basis_refresh/result.json",
+          "sha256": "688f60b0c14467a2e8012bdf85475d440593dc68280b24d14852b6489526540a"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/195a0c93f0558de2a0c1/basis_refresh/call-004.json",
+          "sha256": "7e6dfe92bc48892f99f68007379633d9c555740d34aae2ba2b63263e16d711c0"
+        }
+      ],
+      "family": "07ca9",
+      "id": "195a0c93f0558de2a0c1",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/195a0c93f0558de2a0c1/basis_refresh/epoch-01/verification.json",
+          "sha256": "cbb65804966189ea99083b8d10f7ab9d4220ad376973239ca18ba1a04eadb2ed"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/195a0c93f0558de2a0c1/basis_refresh/epoch-00/bank.json",
+          "sha256": "65afafabd7c4db9c8d356288278157a94b817cc0c7110effc60a605eed7811f0"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/195a0c93f0558de2a0c1/basis_refresh/epoch-01/bank.json",
+          "sha256": "30cc2d6681e857fff6adf954137fb79973171d44cc8df91c22c4f33d91f58eae"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/195a0c93f0558de2a0c1/basis_refresh/result.json",
+          "sha256": "82ccba9b3e1004fd9dde018c20bc0e3560a1809aab35ce8b79201e2d5f57e39f"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-007.json",
+          "sha256": "bad4c64ddbb712abd329e3a738de3aac63a2b6d4bb3464421d8dc8ad836c7a31"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-008.json",
+          "sha256": "7f6162a783a316674d8f18b094d74275b554434da517bf19201fdefe939637e8"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-009.json",
+          "sha256": "fcbee829a76fae386db6593bb83ac8f8e4b15e4c6e29f7fff507152721810a9a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-010.json",
+          "sha256": "d1ac0fd7d58e86ce9a0240491d576b745743aadd6d6381f4ec094b0ac355e2f0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-011.json",
+          "sha256": "e40065b8e95c7e37959a381413ee112e7de293ba3ff97381966019dad10cbb57"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-012.json",
+          "sha256": "d3689ddf0a678cabc39bf361f9a265dcacd2abc609eaf73799d5b55c6f4e0bd5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-013.json",
+          "sha256": "caa8a5241d2a164b6adb0282fe2f003cee9196243c27bdd6ff18013f8b5b5ad4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-014.json",
+          "sha256": "2fba7a5f10b7a35a8f482f2da190eb7735be1def635bb389c743a95934136c09"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-015.json",
+          "sha256": "1e2eb5ebdfd59a8608f570503ddba64d5bba3ce72762fa658dc00ba666243735"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-016.json",
+          "sha256": "0efa40f15587df5fa946b22ef9f46004567d96215e70d8bfa876aecb3ebf9fff"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-017.json",
+          "sha256": "e8a0bcfd68ceb842bb5cf80956b0c013d304df37edc66b4f2d5d20e0a402642e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/call-018.json",
+          "sha256": "502c920ebd6a610f5fed71f4f1068a3ee39788553ae2cc53dd4af8a67efd73fc"
+        }
+      ],
+      "family": "07ca9",
+      "id": "7ea0c8aa858668d85596",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/epoch-01/verification.json",
+          "sha256": "dababfa099a86eeb1329d3c99bd1444917efce2ed7cbb165467b9c2600923700"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/epoch-00/bank.json",
+          "sha256": "6c4796120fd633fa1df5f7df00dec01d27ef0fcfda01c96c0c7f7c5a4e5b702b"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/epoch-01/bank.json",
+          "sha256": "6588fa5b790c62e6a14206f89a26bca89fd4f37aff922f264d97e9f471d1d02f"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/7ea0c8aa858668d85596/basis_refresh/result.json",
+          "sha256": "5ffe2075a4c35ad7a5242a5be5874b542440f50f4c03000120282c2d79e1d3be"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-004.json",
+          "sha256": "e7d62c267f3dfa87f5b346fc3525a1a2c1c88a3effa385ab926efb9855b57018"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-005.json",
+          "sha256": "c91894d6cc7fcc2c6ad088226d472c99f427d0f9ccb1d94459ccb902ddf799ed"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-006.json",
+          "sha256": "5e724a9b05428f1775edaa461054b7487650b7fa2d36f36ab6304be25a56d868"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-007.json",
+          "sha256": "94fa7d4d99070e40668876eb3a55c0717e46aad0f337ff8f15ba389f1407088d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-008.json",
+          "sha256": "4be92111d62e4746d3f1bb08b16bc2c1518081803a8fc1983bad1dcb31ee8163"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/call-009.json",
+          "sha256": "f1b48ddf6b3af3ef20af951c4badb25c11740823ffba4129401856d8e1dd4890"
+        }
+      ],
+      "family": "07ca9",
+      "id": "9a7287102d5dc305a8bc",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/epoch-01/verification.json",
+          "sha256": "c2b565afeb440ef154c8bb59229b4dbbd1f187d1065ebaf49ce71a2f8ac6ef2e"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/epoch-00/bank.json",
+          "sha256": "ce82e87bdb73517af2761bdd55b46b9ad1b396c33b87fff8c951da6b1d7dd304"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/epoch-01/bank.json",
+          "sha256": "8fecb0b9f9c6ae916d41deb98be52e862e8709413f54b0d723f19945dfdb9c52"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/9a7287102d5dc305a8bc/basis_refresh/result.json",
+          "sha256": "fa30c811de9e2aa7b044fe52f63435aefbcd8d100207c80c53aa5bedadcedce5"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-001.json",
+          "sha256": "fad79b3a09e3985de7b445b8882b06d769706d276d68bb60103058ec0c7cc76f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-002.json",
+          "sha256": "9eb9c4a488116fcd375e72cc65cecbcf370bef64e75615b7a8c6777bfc2fafd1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-003.json",
+          "sha256": "0353f9171dd3c4eeca41590d719b7f0dabf4388d46ce8faaa8185d0b68486805"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-004.json",
+          "sha256": "7ba5eb66332d2e3e432e042ebdb7f3b6099f82056bc41ff57a533dea7e2e2b6d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-005.json",
+          "sha256": "6ab3c93df76a32097e78c3021f2d05ff78814e3beb225a1507c6a1e1162ccc62"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-006.json",
+          "sha256": "a6afca10accf408691c77fe099f195249257af1628205af7d4d8bfb9722153f5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-007.json",
+          "sha256": "5027c93ac69dedfec60922df6b065fba802d7f7b3d481d5a40b21e0da3bf1e77"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-008.json",
+          "sha256": "c09d2d00f7d9b0d881ef937ec06ac82a0292103a7d4246fbc566bb6d75303c96"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-009.json",
+          "sha256": "75f8c13d76d8b2f494411606f4fe204b90c2a0083fac123c0f49d01c7fb7b019"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-010.json",
+          "sha256": "adaacbce16d7392dd3a269a671364e228492a15e14b159301fbe8c07d81801ec"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-011.json",
+          "sha256": "cea2710fce3e8675d06a25abbf52d5dd88fc69b5120d199dc9d9e6d4f8717c3a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/call-012.json",
+          "sha256": "ac5f9989b9493def1ebf15f7373c82cdf163774a475f420f8951f423af88ea33"
+        }
+      ],
+      "family": "07ca9",
+      "id": "22634d2ddbc7e8dea0f4",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/epoch-01/verification.json",
+          "sha256": "fb59d77240568f450759bd35983566bba15ac895d841cce93583ad1a9589425a"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/epoch-00/bank.json",
+          "sha256": "2d95c16d95a77c533b2cb468728d02785408bf1d67819a352e3f8f5286284f70"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/epoch-01/bank.json",
+          "sha256": "4bf9ad02d1e64853c35e75782b2a001d40b78fb0c15b260c27c668b240109e20"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/22634d2ddbc7e8dea0f4/basis_refresh/result.json",
+          "sha256": "ea3aef8a0ba33e6df1a3ca51a745990d15d18120d11903fb16fd04503e62b9e7"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-010.json",
+          "sha256": "b88bd22ff3a7b5dd76a3e02faeb4e2263d6b9289ad73f0c0f5723edcd0d94b7a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-011.json",
+          "sha256": "467f43e81b20268a7c302badc96dc6162947e84b23bf23dbf6eb6ce243670f6c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-012.json",
+          "sha256": "b78ff74d5aa9088789a35e1b3744f458a00cc9a6a7b99e7fd8bbf3a58a8547fa"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-013.json",
+          "sha256": "d58398b5bb3f2e85322bb9172651be352d76ca4dc2eedc023369028f4757b75f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-014.json",
+          "sha256": "3092c810b3eda49b4d740cb0a4e1107ce679a6aeaec8852e79c4cbd5ce387b30"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-015.json",
+          "sha256": "e0f11c15a6f178d64f480c11cf33dae022b7b260c9c4303697ec9fed9ba26e7c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-016.json",
+          "sha256": "cf0843b7b8a2353fb7e923d27f6c9ef4c8fd1f55ddb4624d10685f08db125db2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-017.json",
+          "sha256": "0e5206623b3a255b1d05f8bec92340fc297c3bc9fa4fc62ff894aea355fe43a3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-018.json",
+          "sha256": "73a038168a407c870aeff109c68fc88beaadd42617896ab7ebd2421f72b8a4fe"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-019.json",
+          "sha256": "945201028f3049aae9e7c0d401bfe7ea1b16b51f23892698f2bf8c174594fb4d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-020.json",
+          "sha256": "7b952571eaaee22331a3196d61af6d0facd784a08c3b6ec6607584c1fb50280c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-021.json",
+          "sha256": "4d4eb786fb11b3b6c96b33c766cbeaf1ae1161dd6463e9c0a122996fcf04b36c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-022.json",
+          "sha256": "07a5f11a25365bdb97bde2c02df28dc09ce7c077a8de83efeea219a86d61a1cd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-023.json",
+          "sha256": "92d17e44b76ebbacfa838c67093f09c774000c3a9cbab6ebc6f41cbe2be26f6c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-024.json",
+          "sha256": "eda34145a6832cbbdd434a05d5f0fd9362fb5e0fbc190a5dcc8dd1cfaa6513e2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-025.json",
+          "sha256": "2243c7d1316d1929d827b7105feb291451ae85a6d7a71af689acd4c3251a050d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-026.json",
+          "sha256": "7c3319da24795df5c4ccc15455bc4c8944cfe85ee6826d0945e0cbff1a10363e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-027.json",
+          "sha256": "cf7d9d677fc04ec76f7524e99d54affc6f96f32bf522916073e5e20121176372"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-028.json",
+          "sha256": "802e33ae77ab894055294c5aef3af60af4afc08dd49ab49e1cae240047ca650b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-029.json",
+          "sha256": "1202cd0a7b0ed514896726293aefd4bf743285ba5c02892345db394005825b8a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-030.json",
+          "sha256": "c528432fd27cd384aaf33198f3dc7d788c8989aac381a155918d58be01cd0b47"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-031.json",
+          "sha256": "7c0514a9adf052cdb04ec37a5ceae0a346db8e8c56bb58921ad1621faedbedb1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-032.json",
+          "sha256": "a0f742a9615365e9c35740bfd0af3c5e05aa2ac1345bb551bd599b44a604d3f0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-033.json",
+          "sha256": "ffbfd96a0a8c34162dbbe5de8f6eaab6c81729447dd8f6889cbd40e74f627fde"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-034.json",
+          "sha256": "10da7aaaf196c5322a96b878df2f4d89b041c29edeef38835ce0b56ff054d667"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-035.json",
+          "sha256": "717d34ac8ff592a5fc77a1ab75bbb11e82b6d6b26e1ca476d14d3593ba93d7c2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-036.json",
+          "sha256": "baabd6716b63997067798aa3bb30be924820e5499dab00cd499fb4653d30261b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-037.json",
+          "sha256": "ae3752d4ae14ae94a35241e3079d255b27f57feba0d8aa7197a2a701d0b59aa4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/call-038.json",
+          "sha256": "52fecdaf4d4370df0ebdb48c9ea65429977114b6849ad2e23d8c9b0951e08945"
+        }
+      ],
+      "family": "08234",
+      "id": "6f5afe31891f7dc1938b",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/epoch-01/verification.json",
+          "sha256": "4bb1b37178bf4d9e0db01ffc4feee77a400f6fcc5ade31521a339dd494051af8"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/epoch-00/bank.json",
+          "sha256": "ed3a7e07169d489e28d452fce8ebdb05ca3210577c287c293f985c73047a5078"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/epoch-01/bank.json",
+          "sha256": "514ae128643b2c98f8474f2fa455fdbba231efc4333eaf9668162b721914e31b"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/6f5afe31891f7dc1938b/basis_refresh/result.json",
+          "sha256": "3702f561b3caafce5308290aeadf2314ff67290fede2c410ee509846daa737f7"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-025.json",
+          "sha256": "4186fe45acd988d40fcd229baff78ec056035bd107e64f8385f0690f6df8fe68"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-026.json",
+          "sha256": "dd5f4929ccbd12378d11ec6422fe381f8668a936566cf4706f6b3d044d90fac3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-027.json",
+          "sha256": "ccb6ce56421b0612a3763ddbf406070cfcb29324b420669c388abc3cdaf14c37"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-028.json",
+          "sha256": "7645db9cc7833e57280d741e7ea58e99f2cfb1c37c5a0c2294ca8493eecc6597"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-029.json",
+          "sha256": "32bb763ce8c41c066746a0b9380c38ca82644cc863b10093cf4dc3bf6db592d5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-030.json",
+          "sha256": "200a701416dc8dec7b80338bb265894830369695149763b8282c32611700ee7c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-031.json",
+          "sha256": "3b60b672d1c3e298eb7020bc88446562079b2f6d1d7b2f6db6df862aa047b21b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-032.json",
+          "sha256": "797ec091bedaff3554d5eaadd37dcc3f912e79d4f2ad9578891502b444817222"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-033.json",
+          "sha256": "7c91bcf4ec83ed14b0d6b328421965b3b85ff60334040ccee4818e3c5c7e2d6f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-034.json",
+          "sha256": "36b5cc80202787a6d9d17da681dbeb7590019b13a8988bc748cde2585eb39a60"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-035.json",
+          "sha256": "96fda2854f783822f017e7e6ae4c06c596a0802ec2344ebc4e26440b2c0cff91"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-036.json",
+          "sha256": "47fe50764fec8c63c598fca3a2cc01378c6b987576d9717aa1a930283ca629a6"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-037.json",
+          "sha256": "a0a7b5d6bd606ce57756613969557f0250f0b28e4c6d99cb9dddbc86e5b5c6ba"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-038.json",
+          "sha256": "c7308a515f961ea95c766256f8c902daa15ae81878071e4a89a14e4edb18b0d0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-039.json",
+          "sha256": "95fa032156d158494310415b7075e11769655e84b37811af94bcad6f614776f9"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-040.json",
+          "sha256": "db963da73bba1021b0a75a4f5978826019bf8c8e5cb8ccb732da157c37d6f571"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-041.json",
+          "sha256": "85348fa35b64f6b367b57a534a7afef2c9a5332e2e23ad0a0f20f4c073257dba"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-042.json",
+          "sha256": "f1e73e015a2d073b35f4155c3950ef68f602f1ebe0055b9e30e778454e34a108"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-043.json",
+          "sha256": "d3db1f5d9035f3aa1dae8a3fc717a90a7d98526bcd1853058458a73a4708302a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-044.json",
+          "sha256": "c9a048181b9dc32a2ecc0a6684cfaf48d1fe14574c7c8ff97920c1eebb4f0f76"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-045.json",
+          "sha256": "528ab4a799f0279485c461eb1c8f26a4d9555ecab67d16382ea6f0a56ec51e96"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-046.json",
+          "sha256": "554e0eb037aa0fe1668cb21248e63997e92a43dddee11185de3911f3db7c06b5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-047.json",
+          "sha256": "a14769891382950804de973a3760b7373473ab931aa98d9726ca13f6d7b2011b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/call-048.json",
+          "sha256": "b2555e1bc7f4b1183f95f3a6aff4ec4b7cc0b997a644638a2e66af14ac8897bf"
+        }
+      ],
+      "family": "08234",
+      "id": "1f344a0d9056734f634c",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/epoch-01/verification.json",
+          "sha256": "bfc0f560231ca553ccd9cda8e49426895e91ead5e33414557afbeb6a22647362"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/epoch-00/bank.json",
+          "sha256": "6be729250e83b771b0c40b37aa859e3b9691a6a00a921e009cccaa5ba48e2412"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/epoch-01/bank.json",
+          "sha256": "c8577013d5a4f47bf392ec538aaaf286689cd4e89fbbb5215878ef5400ee288e"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1f344a0d9056734f634c/basis_refresh/result.json",
+          "sha256": "3a642ea910fe5a81be52a90640b590570500e70375483a4ab9483e9d41c978ec"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-019.json",
+          "sha256": "bb7ef43e9a3652fdd30dd7b79ee971096a744c7fa5f5099426666b95218557bd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-020.json",
+          "sha256": "1b79e5a400087367815ca80ef7b2b0dda528cbc253eddfdaed1d01bb1898df0c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-021.json",
+          "sha256": "04e29265f3c734edaf7cec4de9b76eac1be2dd90c2995e13edb72d14f70eacc0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-022.json",
+          "sha256": "4748612f375b68eaa700a0266dbfdbffb81204bcc0171204af465df21b2ad5fc"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-023.json",
+          "sha256": "68b950901f0bdf5d6ed04340e74cd0c3ca1c5a2d92511279188d053bc308c4de"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-024.json",
+          "sha256": "4fca06df3505165e3080931597b7ac48abf7f9984fbdb3066e228b62a388d1d5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-025.json",
+          "sha256": "fedbdcd618513c1d8083eac349cae52a6ebf13ba3452a40da0ddc0ed06e092e3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-026.json",
+          "sha256": "3a21f65cd114c563589272ae0782dbd2363213c10039efe029629b2c9902f6c0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-027.json",
+          "sha256": "f731dd57b8e3f4f9e8a940926296853349f8df75a392c0c006422bea3f428ea7"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-028.json",
+          "sha256": "b2a9f3cda37aaff0ff5e27fdf336fc1deddb82010de4fe49b40fd5e2514c0645"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-029.json",
+          "sha256": "a2b99e0287a66f12f0a67e8b83dabc1126367ddcabf623da92bd928a0cf63bb4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-030.json",
+          "sha256": "1bc8a1d709f88ae4e405ce0570e36ee0394429baca408e8197b9433fb4f9bfc6"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-031.json",
+          "sha256": "8ffb6d61d5e6816bfa72e02a65ff8446d1bbcb912dd1efdff9c6822fe7d14fc7"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-032.json",
+          "sha256": "be137448d77ff5f2e5b7eb8b77c6414b51f954770ea53044e73e0e31e8b12b7d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-033.json",
+          "sha256": "24d3f0de86eaf29c311022d61777e4638a89fe7a9df29271e4decaaeed2ad345"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-034.json",
+          "sha256": "023b22d1e22f79abf20972243009379d162931a75f544933fab34dbc5f8f2509"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-035.json",
+          "sha256": "b6d900894add26ddef56a9442e2eef9d3bfd05d6ce35b8db1a88e6f458882942"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-036.json",
+          "sha256": "b804a897dfdef7ef3d4947be325677379cafeff23b06c655ca8b05682c695acf"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-037.json",
+          "sha256": "840c37b93d00941bc93a38994006fb410712ffb6d550bb63900c4c42d2ab1fe4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-038.json",
+          "sha256": "0300a84feebf761a45f78b328a140035519df1ea7e4b12898f47de81f48a08fc"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-039.json",
+          "sha256": "dfd98d2a1c68b131154563694362f3aa222652872c2ff93b758c867f121cf792"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-040.json",
+          "sha256": "d0f1b0a3a291a98495eb2e6ad8f096045e1c93a02990cfe750c44e54c3e3038f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-041.json",
+          "sha256": "958d2077c61c686d2ad61be4b3d1924ef4d86506ee3f57773feb2137091f3ab7"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-042.json",
+          "sha256": "cffff7103cbbca0dc0f21675dcff695b07ad3535d14762cf41f44706f8887739"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-043.json",
+          "sha256": "23ea244c1ffcd2e59b6165a54dc607e73d636a84b990d6bc8e05de81638cbd3b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-044.json",
+          "sha256": "1ff102573d1d55b79cfd03bbd3817e6dab7f3f25e4fc872e8f610f35734ea405"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/call-045.json",
+          "sha256": "13716f0ee84628e6b5b2afebaafdd532383bf862154791ee7410e818271967e7"
+        }
+      ],
+      "family": "08f72",
+      "id": "308b67770bb6db5f6ca5",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/epoch-01/verification.json",
+          "sha256": "640f3e55e1f4d1c499dec3872338fd81bb738bfd58d031ec669faf2966567b45"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/epoch-00/bank.json",
+          "sha256": "478f268342e9214465eba7c4e33506a3689c70a64efda779cd823926f3f3af0b"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/epoch-01/bank.json",
+          "sha256": "fbb9354b7eda116837f6d7960e7ec5ae13a3e1b857bf27d79fd05522018e28b5"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/308b67770bb6db5f6ca5/basis_refresh/result.json",
+          "sha256": "bf08abdad61dfae3b42cfc7fcf778de3569eb2f962f5c7b634b6998851af54e3"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2e606aea9439342ecbc9/basis_refresh/call-004.json",
+          "sha256": "8a60b8f8c8da0762e06033726adb141116652be4c0178b4513c0ad18c1a55066"
+        }
+      ],
+      "family": "08f72",
+      "id": "2e606aea9439342ecbc9",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2e606aea9439342ecbc9/basis_refresh/epoch-01/verification.json",
+          "sha256": "1325e001393f9d25d59dcde4e20c4273f9b58c560d74682b9ad1400578b5a11f"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2e606aea9439342ecbc9/basis_refresh/epoch-00/bank.json",
+          "sha256": "6cd4a57ff1ef3bc1f45de8f4e170796c6da905defab27e620e1177086ccdb34b"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2e606aea9439342ecbc9/basis_refresh/epoch-01/bank.json",
+          "sha256": "8d95e43e284705f62528969959ef058c3eae9d5a1f4789eaa31c6eda13194471"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/2e606aea9439342ecbc9/basis_refresh/result.json",
+          "sha256": "a9883dc40471981787aeae0ce20121131346b330bf5cba5a458c916bf82a9e0e"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-010.json",
+          "sha256": "2379cbebcd9f8f12f7b2a1215bffc1732263f1279e7b006018c7140fa24152fd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-011.json",
+          "sha256": "29f2aa827879a32bd2a9f8aab9a46fafd5d03ad69ec535c1c54b91703cdab43e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-012.json",
+          "sha256": "8e937ec14103ab552dc2e5191212d2d77d6b4d04e9433bf1e816c1d62af15ac3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-013.json",
+          "sha256": "f03708aed46a6db533f5f2f58580bacabd37916f39199a09b74295dcac201eed"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-014.json",
+          "sha256": "c261ee7008c8e07078cf89bb55730168ae46aec62b4f973c6c33f7bcfee68fee"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-015.json",
+          "sha256": "7dfd3dcb57b329add6db9ebbf0ff6e3116c037a2cd348d2f98342947fb859695"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-016.json",
+          "sha256": "971c371f21b4f3ce91392676d8335864ad788cf667a073248c5e2344b51ec9cf"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-017.json",
+          "sha256": "4b6253c11058e3df54c628b972d4bdd0158f49af6acbd951961df6865f0d51ec"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-018.json",
+          "sha256": "7a907a62fce023c00760984575523e2ab41ad666d174b73abd1b3153498c6b5c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-019.json",
+          "sha256": "745d9ecef9ad113b83ce126d9a568f7e42031d91c53c8511f152cd9d1f15619e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-020.json",
+          "sha256": "44ae99aa0d6bea44501dceabb9d772e6458c67367b2396b7c34d2266ae921a67"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-021.json",
+          "sha256": "c9c218a503a10c342d78aa32f4050cbf00a46f512cd980321a907128460490c3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-022.json",
+          "sha256": "a1d48233946b7a7190b9e602b86baeed3a10de9e56fe5c7719095278cde6bfe0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-023.json",
+          "sha256": "152d928d8661dc048162b0a3a1d75c0bce8867def652784cbbf219080333f968"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-024.json",
+          "sha256": "4e61e2c247dd12d56761df00d0e28547deb9ae434ca5c040be73801ce3e5331d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-025.json",
+          "sha256": "efde0b5340ce6b5794236460219f98dd1125d063a36e321c569f066777cdea77"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-026.json",
+          "sha256": "36e3c7b1a6a7d8cbbf9cfdfac289e583cd9efe4cd9cc020225068d05a2742c43"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-027.json",
+          "sha256": "26c95e9682c66b9a79a692b53771d495302eaf0a2b676a4a260ecdee7ddfdc7f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-028.json",
+          "sha256": "bb6cc04063dc55fb115ad9c93c7873aea82950575933d2cbbe9bb48a1e069f84"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-029.json",
+          "sha256": "66ac141d2672bafbb74f186c48e2638d079004d0ee31fa73aa8e92a12ca42c51"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-030.json",
+          "sha256": "a9cb14cbd10cb010a67ea3649329132059ac3c859ba7106ba5338fc2915c04e0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-031.json",
+          "sha256": "08709c6f71e3cb0901debda365cd7e25bac27b0bf9dab32287148ca45c42ce85"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-032.json",
+          "sha256": "b6e85aebe5f4051db4071e0ccad234c15d5bca8de2551f4e9e469c5b5f2c7329"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-033.json",
+          "sha256": "e1c3011c7fe87ffe6433581c8391db9ba482f946bc2c94c2bba0775905b62b88"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-034.json",
+          "sha256": "cc23faa90a9f3cebfaddba1f6bcc48797a9b5c0a8ba8a16be11570ee65d812ca"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-035.json",
+          "sha256": "9554be2d6aca5a48e56b5ef12abdc9fcc35630df367ea086e6aad46463f7d6a3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-036.json",
+          "sha256": "d6c84a7418f6fc87758542b76008b54cb07acabe422ed59b6137db9ec6932ff6"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-037.json",
+          "sha256": "9ee96cef607eead11b38b32642c97bf271ebfcde6721b531477e9872808fafde"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-038.json",
+          "sha256": "66b7b947d984f104c682020381380bc8c627ca67f4c8685cce2817fa75738249"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-039.json",
+          "sha256": "e65d45adcd70602636f46ee1a10bffff06925acc9d0fdf2feedc1205cde316f9"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-040.json",
+          "sha256": "d46dc2f12c2d6131d6ad1a216d9a21bf95a4d5a229d22cf51c1ce2df9536eb35"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/call-041.json",
+          "sha256": "252930911c295f737209f84a069023d6ce814bc347658d31d23cd9b01d144f0d"
+        }
+      ],
+      "family": "08f72",
+      "id": "4574098bee7eb653d5af",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/epoch-01/verification.json",
+          "sha256": "f3b7c21cc86398b2fdcd5b9ff042345f7f476c0383a67cc842245b8fc75c7c92"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/epoch-00/bank.json",
+          "sha256": "c7dbcc46c33fae9f4496d2cb94bb8fb4b6ef79dfa806c3144db4d0aa79674312"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/epoch-01/bank.json",
+          "sha256": "a66b7cca2833f270306b5df4d953d61b74b1b23feadfcf273a25c8594f312fe5"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/4574098bee7eb653d5af/basis_refresh/result.json",
+          "sha256": "1fa60d7a6286577ec1f5d95e51ee44fb64aba0294985fd1c0de8eaf11baa775b"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/call-001.json",
+          "sha256": "e18d8aeb05591b3f58b913eb3134f4f0887c0c374727a6a0d847661e348b3d1a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/call-002.json",
+          "sha256": "2ef6200a3840a6975ec8205571e1bb26464e6c0226bd41b1c2ea5c2b25422c08"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/call-003.json",
+          "sha256": "4dbd535c779c59f8fa4a99560e5b2f04da24f2bf75298760af7d7196eba75f94"
+        }
+      ],
+      "family": "103b2",
+      "id": "0003156b20eeddda4f6c",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/epoch-01/verification.json",
+          "sha256": "c429be5c7e1441c344c5ebb1f36f4a0173704a03e2318e27803f134d69830833"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/epoch-00/bank.json",
+          "sha256": "86a6413141c1c98d4fd800e7d28d0dded6f093413ef09e155d0dc62a16ceaab7"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/epoch-01/bank.json",
+          "sha256": "d17909444b203a8d8a2a51b6bce171394833dd212a2dd5fd733683e3490fca42"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/0003156b20eeddda4f6c/basis_refresh/result.json",
+          "sha256": "f2947838fd50a0def31d85fe467b3ccb985a394b667ed55068553539537a7833"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-037.json",
+          "sha256": "65b20448bb59682d8e643ce59c26308ab56129c08a5e3f6624872333c5b2562e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-038.json",
+          "sha256": "8cbd4354ffd7df42ebd8c74358bc6b2f4372e31b0a8fe52229e9fde344e9a667"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-039.json",
+          "sha256": "15b1f6a14ed2eee52f47a3b6b0ad5521a3a11d39f9c899a563852dd80e26b536"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-040.json",
+          "sha256": "3e6f4b0678f99ebd57653098bfbe7e063b1a80123b1d741de8687a5316c65f06"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-041.json",
+          "sha256": "7de13c92447c2678c953d7431506dd7eb5a125183117a141ce9f64f27d922e89"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-042.json",
+          "sha256": "7368aacf6a98be1a2a18bccdff2ac559db82a743ce26aff5baa08eb4d1e8fe26"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-043.json",
+          "sha256": "c5e61aa49956d3550603fe17e4279b52cdd642223cc61bc3d42efb4a58033080"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-044.json",
+          "sha256": "fc1a0799ffcab0648d2d2adca4e25366ae6bff2a4ffa926aa0ebc12f53a93c60"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-045.json",
+          "sha256": "e58a8a994b33037a9b00b64386f0792f2e855dc62fc3ca28980d601d78a16f53"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-046.json",
+          "sha256": "f08475a1788c99c05d53ab96116dcdc6c48464213c94b9d4248b3a835c8d2aa0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-047.json",
+          "sha256": "0278e2f4cc31541f2f224c2ccade283fbbeb2e8d3da92d190563336a17bf0420"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-048.json",
+          "sha256": "e5eb4e264e01c64306f3b60729f1b37dc16840588b22b7c9fad8916adf507aad"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-049.json",
+          "sha256": "06adb724ea7b9c596fab4dca307429cdc3f2e083d0e12702e2ee13c9f5c8c4cc"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-050.json",
+          "sha256": "9b3cd22f9dccb2bdc3b43072d37128432cf5cf483ac03d76e5d67f5361e87390"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-051.json",
+          "sha256": "45b5b0bc51dc5d113d802a581aa47844bb4f69c3560f14ded45aa6e6b479dd5e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-052.json",
+          "sha256": "ded8625592479c215698a9102c34926d7e80132765cbfae0d468f5bb505f3dc2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-053.json",
+          "sha256": "a92ab2e3abdfee6a41b4dcf969c8b263c8fed859eb25a275a1ed432f703773e1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-054.json",
+          "sha256": "ff56bdf099b71219aba5cdbe6636352216755bc5f965baf36d70752a0bb3ed40"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-055.json",
+          "sha256": "93c449904f133aa5139c072fa3cec36c0f5074a1369cb6ccf918834bc728ae27"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-056.json",
+          "sha256": "74618729ff37c18be6f2d846358fe62a4c6e27872b5101302a0d8fb65d5a42f5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-057.json",
+          "sha256": "f63bf13a29e3cafec10c19a9e895a5b6960ef620fc3e256f3216df0e78be2342"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-058.json",
+          "sha256": "f1838974c5123785f58ad61549b4917806f96f195839835cf6d22aa57d2b91b3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-059.json",
+          "sha256": "c3382470d0f13402021210c70ab9e4dd9a16c677c453f78ce394aeb567885aad"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-060.json",
+          "sha256": "c99a7ba3172dacf17d8311a32aa40198d4075ac4a736c446bfb62be889919e5b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-061.json",
+          "sha256": "211e008ab5bcb3a9d22530fadc201641b3e3c187147df0823a4f22e1c1e5542b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-062.json",
+          "sha256": "4a550628ef114e90e930c9892a5f466554f18da9b4bb5ae15be53035a2fb48a5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/call-063.json",
+          "sha256": "6bf804a98f98ff3127c9eb4049e1f0f09fc35459801de893e8da77fc96a2eb72"
+        }
+      ],
+      "family": "103b2",
+      "id": "259d0615516598ba9cdc",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/epoch-01/verification.json",
+          "sha256": "f1d3b5df479c666cb23fe273c2d46845caaeedfc2305fbb33d9ee7e89deef4c2"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/epoch-00/bank.json",
+          "sha256": "6fbd04ecdb2dec776689c880d974703141dffd8c60b38b7b4f7454e50e3b8dc3"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/epoch-01/bank.json",
+          "sha256": "dbe909fd3ae2d081b4dc027d2e49d9003eb2e58600dc355966686a09d1bc4671"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/259d0615516598ba9cdc/basis_refresh/result.json",
+          "sha256": "6d02b5a8ea7818b01fbf51b852bda8d363fce9d3c243c9dc10e88458e657a6a1"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-012.json",
+          "sha256": "f7791c4b3057362ebcad35d8ceb0c3131e97876372fff60bea82e524f7d70d7a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-013.json",
+          "sha256": "9172ff7880db52d01d7ffcb09e55045b9fd88232049f162ed6f74e5ea772042d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-014.json",
+          "sha256": "2db31283bf909309dbed0d6f717eac49f145cc88d1434e87ea7b485cdbf0de32"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-015.json",
+          "sha256": "76d4b1ad2d24a0199b37a91378704c0b5c16d6e0d704c7d596328467e0a62aee"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-016.json",
+          "sha256": "6dc8e63e0f3e1ecc82f334975ac3f8b613d2b449af6a2effc008247b2af8428e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-017.json",
+          "sha256": "50970d792f534f2d202f718b16a618d38eec4c90bccb8fa9925efc13a15d2c92"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-018.json",
+          "sha256": "1b04c0bcc4c4a31696855d8d586d60ecb42d8d9484941d0e6667fa06fbb4a4a2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-019.json",
+          "sha256": "311530f9410378a37f68cc8c338fb900d65ed778078eba31d1bcfd95be504806"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-020.json",
+          "sha256": "a340894febda18a85308d4ec3b9d434c72f2db5dd2144ef82ef59ce8e5774a46"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-021.json",
+          "sha256": "4d780e029d898757669bddf3b52598c0ff3962549eb9cd370ec097a79e8cd577"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-022.json",
+          "sha256": "0125839fdcc7a3708e369b96314efb8b196f9ce82d2a0243993332a949abc91c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-023.json",
+          "sha256": "5a98573e3c6e7934d1d5a046f682c23f40df4911b67e18fd4ef9f6381ef7975b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-024.json",
+          "sha256": "f2649634c2d9f58fb913110bd7f36c3a3d5e4b4e10e070194a0d545b5cfd3a17"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-025.json",
+          "sha256": "86d47500163fed68fb6c834f1e98b2e04e8864d532168c27c11eafbba7c007b2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-026.json",
+          "sha256": "4651987af4567c1463b797330b5e9ce062c630a8bbcddda6e261d461cb520032"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-027.json",
+          "sha256": "e7885bfac7e9007db4dbc86a6b05673c028fd6e4ee461a3b8083123cd8fc6fc1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-028.json",
+          "sha256": "3fa3c98e3373ade7320cc6bdaded05c5aba474a8f6ffade09a78d5d87d9a9a88"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-029.json",
+          "sha256": "f52565c3a264801706aa6dba7b7da440c5ffb453a26f5a46c3bb8f42ce2ac19d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-030.json",
+          "sha256": "157b9a3a39a3f347f33ba88ffcce5a3b481aedad711267b8adc23da24865ba3b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-031.json",
+          "sha256": "4a4b75276a62a12d3cf9b78229cd523269f51e44298643f9d036fe3ff58bd617"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-032.json",
+          "sha256": "5034b51dabb4114c3bd29adc32fe9dfca873922eac0524117d0bde3c7b6762e3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/call-033.json",
+          "sha256": "4d74d0f33f7d4b12c32be86e1a813ae121f0f9050366e34fcb56db52e71279a5"
+        }
+      ],
+      "family": "11952",
+      "id": "f95179c80c2c0bfd4d2d",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/epoch-01/verification.json",
+          "sha256": "1ed8033c9b1894e4d5c6ce317b1e31e2f305dc86631a0f23733dffbcf87f60a7"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/epoch-00/bank.json",
+          "sha256": "d760d36383f1b1261568496828557f2c4d740b37156ba10957fef5be6780cffc"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/epoch-01/bank.json",
+          "sha256": "a0442885c7c10c0055e3c50d2da3885b81c393b42b89fc24df69babf688958fc"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/f95179c80c2c0bfd4d2d/basis_refresh/result.json",
+          "sha256": "1f4491025884a95153e53dabf2fc784113dce4583e9a662779be2f5fc6a3d47c"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-013.json",
+          "sha256": "8e4973a8f8d98c4547c5f2a6cab0eed6ca180db4fffe878e37609c2776a69571"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-014.json",
+          "sha256": "ea880d2c49da599b63aca9f12c8eb2403bcf66074d86aeac64234b333d97afea"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-015.json",
+          "sha256": "1c807762dfc765b0b13394c32a7e3b7943b2e7cbf366ac31a2f3f190d77fc04d"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-016.json",
+          "sha256": "03df5463fad9ae3ba570c3f546a86c5c7c616bb18dfd4138016cece8cd4429c1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-017.json",
+          "sha256": "80025c82e7ee4e5a5c121b3ae01f4c0830ba5a765b1005aecf2773b6a3ee7977"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-018.json",
+          "sha256": "c056ef0c77603ae086345a1d0f4ccdb43823219db2296042ddc599df9d62bf19"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-019.json",
+          "sha256": "4aa7b2f8105c1f45e66d2324ff680f42a3a24922fec81d3d11cf552a718719b9"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-020.json",
+          "sha256": "515b07a60594c0caad192ee9feeb3ee847a2ab2593ca2284f2a019dde52edc8a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-021.json",
+          "sha256": "17d264ad2d13ec0a6a171e184c1111443128de561746cce23e271458b2bbfe1e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-022.json",
+          "sha256": "5e5e75bf6e600a27a4cb40ef2bbd2eec766e52a191f2791e8c8afab0e561250b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-023.json",
+          "sha256": "823e21a2a402f2c73a7e747cb85e6916edc80be4b4e7b594613b86ecf4f8df22"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-024.json",
+          "sha256": "c609d74bdc87c99b7157f0e8b119ea7f5bd107e9c3959b97809ce0fc6aea89ca"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-025.json",
+          "sha256": "04afd94411d11997690bcf1958236ac266771f5c12c4227cc9bf0f5fd17bcbe3"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-026.json",
+          "sha256": "4f0dc25ba8224f8ea0371639a934cd3b9bc54d32b52cb58eb350f2fc1efce1e2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-027.json",
+          "sha256": "89a476c2977481ef51dc43566ca173c92d033b496ec6ba2c8a2156bcbea5eac1"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-028.json",
+          "sha256": "6ef61c05a10c25a59cc19d353b34c40040747bcb2d708a89454861cfc34528e4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-029.json",
+          "sha256": "d503a74419171e89559c44d5e0009492aef523beee84e141bbb06f7842ebb193"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-030.json",
+          "sha256": "7598722473da7223e450ef3b8b54e852b3ac60fa75aa0f71313df21f9f2a47ff"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-031.json",
+          "sha256": "f78f1d64de9642cf331ec4b22bfdccaaf99cca00f533d76e27f5929e147a8536"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-032.json",
+          "sha256": "f93671e19b07da114d1102461edd551c3b4dee995b0bc1d0391fdc5e8f28ab12"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-033.json",
+          "sha256": "0103e71d17acdb0af9376ccc96d59a8ca6bbe24c446c0a5c904cc5b69e3f5963"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-034.json",
+          "sha256": "01f26125cb88e6981779434c8a8e19ab0838d2c15aee17de265daa50b7339eaa"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-035.json",
+          "sha256": "a74fd318e76f7e667542f11d99d3538e2b5a7e08c834a5e399f39cbc289493cc"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-036.json",
+          "sha256": "4792bda0519b02a618fb806b9ed5d8a52b274aa636aafbea1c81bb66afbe21b0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-037.json",
+          "sha256": "1fbfadc61e28029e26127ee9b56987a5701ff9f87e51fce5ae28d54bb21432c0"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-038.json",
+          "sha256": "e8ff730fd95ccfadc08b85f292d3f4ce23be8e4739e21eb7c5887e04fb8f547e"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-039.json",
+          "sha256": "61b572fd2f7aa0e07fc98d07dac83302ec1d85a1fc907d2dec7f3889b5cbd3b2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-040.json",
+          "sha256": "21fdcb0c567c93acb35cacac679311b2d0613b323641d026c1f0e7058aa59ff9"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-041.json",
+          "sha256": "e248686ee8c0b2594fbb8aa6e76b53ff0ecb903b9983aebdfc090b05ead2c166"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-042.json",
+          "sha256": "eda6827d62f1073522e50bb12a737d1490119c15d0949927bac230f4bb6c59bb"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-043.json",
+          "sha256": "16c51eb30306c9ddd023a17bc08190b0204be7d022d5a4b8fe56d355fbb8932c"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/call-044.json",
+          "sha256": "343eec768a5012b37ea005967b6a1585b8eb3d5d29645a73d00bcc971a5fe511"
+        }
+      ],
+      "family": "11952",
+      "id": "13daad0080bcf56248ce",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/epoch-01/verification.json",
+          "sha256": "539b14c1507fc51a4aa3fd4e301926cf1fda761beb80fe2dcea954797cb62828"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/epoch-00/bank.json",
+          "sha256": "d391ddfe74a174c66857745bb43b49c5178ff50fd54acb51cd96e047469a10a8"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/epoch-01/bank.json",
+          "sha256": "9bf7001f6fea087cab3982d449374e0d14112493d4abfe80ae79f39d873ae71b"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/13daad0080bcf56248ce/basis_refresh/result.json",
+          "sha256": "74ee414fff787830fc37e5aa58e86842d949bd4e6fb868afb10ec408bce2a1a6"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-034.json",
+          "sha256": "f0239b7076612cb097efad73c57ec6d81a6911dfb537d15e8028c7df03c6dccb"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-035.json",
+          "sha256": "d605f02bc39b9eea553a69a90de5db65e94b868f93214450c7297f54b1eca1d6"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-036.json",
+          "sha256": "ba1ade0e28b9831137717451fcf2675e2b266c19522d0ebe1f806606bfa0baff"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-037.json",
+          "sha256": "ca98079143cd8db21e62c2633b377d9009716b81aa07c50dd4ab21edb1e506b6"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-038.json",
+          "sha256": "25815636f23fdfdbc81aa1df65d50945e4a4c608c98fceb7f9edde7514e52581"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-039.json",
+          "sha256": "2e31c0ec1e96ce407b0f317618416ab57399a75b73e071e2059006cd62be35f5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-040.json",
+          "sha256": "a1c9cf386a4d174d337fbce6badc52140ea9abce51dd9ff282dbb0bdb497764b"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-041.json",
+          "sha256": "ca54badc558ea6773618a8d8af8ad7b52b5eecada0c26b547eac9d0f59cb4752"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-042.json",
+          "sha256": "c9b2513b49105493d25445af4f30f85e12ca719a97cefb8fb9bad5a11985d33f"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/call-043.json",
+          "sha256": "78acdc9e469389e2047b54ebddffe43eb5d9f033df0161be3b5a09670844c7b2"
+        }
+      ],
+      "family": "11952",
+      "id": "640b3ac051697efdc69f",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/epoch-01/verification.json",
+          "sha256": "1cfd797a51e60661fa4243c5abfc7bc7c0981dbc2dec65a0e4c6909ace84eef5"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/epoch-00/bank.json",
+          "sha256": "3260b0aa16e4328703bdae147b7a1bed3e3c2760e5cc35c37c89f6f6b28dc5b8"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/epoch-01/bank.json",
+          "sha256": "069ebf95d62d99b794aeba91e6ad03d795984ba713a6ca04d8ca29e67bf5110e"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/640b3ac051697efdc69f/basis_refresh/result.json",
+          "sha256": "9c546201ac1d03ee9e7fc0f380298c7df83eb28fe9bfb199039243d036d289da"
+        }
+      }
+    },
+    {
+      "executed_calls": [
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-019.json",
+          "sha256": "a225a76a3e3496b5bfdceeb994d5ec91c99de94a159c657d1092be266553f4b2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-020.json",
+          "sha256": "66d68c57e9a8228e9b85149033d0e86baae129dd5ed2a2668875e5b0be2a95fd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-021.json",
+          "sha256": "ffb38f5713691ac2a277c4b298dfd211ad8079c6c60109c77138ebd21504660a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-022.json",
+          "sha256": "1b8352bc75b10295d6abe34752facf168c282bb1e56d242ed92a5935200e2009"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-023.json",
+          "sha256": "5d2d515df2981a2985e483dde11bdba25ef9b0f77e303fa078ab90d3d1be5f3a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-024.json",
+          "sha256": "5c2668d5a860e484765ed75857d73731d5d60a3f269be01468e6c628d564be78"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-025.json",
+          "sha256": "c881b25d7ea0433382caa9aadf18682c118199a2e482513b05ed9b8812916dd4"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-026.json",
+          "sha256": "5d7a7cd362737905f8e8e67cceaae2a9e4f977c6eb13ff383b649f03ddc18a35"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-027.json",
+          "sha256": "37be0c5b4bf12136fdcd8dd3d7d6d2a2d49fbf0ebf62200bb9e3c1a7a0ba5030"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-028.json",
+          "sha256": "a0cfaefdd36c09ec55f9d00681439ff2fb4aa51aab1146c8ab63f0c0d1aab638"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-029.json",
+          "sha256": "f02d253b5d40b66210bc9b426ca71929f9ab435f91a9d19aa58ddffa641d48db"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-030.json",
+          "sha256": "33593ac8818d6f6c09b83d070259f3c264995678cfc522304a889d277f542fd2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-031.json",
+          "sha256": "5ec42343a2207a7d02d7738b9e040700b0bca2758e675498f1d9222f0009381a"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-032.json",
+          "sha256": "197c01ff5691e316abebdb769f84e92cdb18e75f0bbdf796fae6959227e7cacc"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-033.json",
+          "sha256": "0c56b59413a6b46399554ae6de003983d4706d13fb64cadb97d92eae052b0ebd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-034.json",
+          "sha256": "d08669e2bd2283aa8b3f150c722af75af8528973aad213ae4d99e8cfaa9acc81"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-035.json",
+          "sha256": "a804616fc708eef907851c03b8efd30cb155494118e92ac211ffc77655be9743"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-036.json",
+          "sha256": "a371ea2359192dffe782dc95951a126e0cf59a5b5706184522a5ebbf38540e10"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-037.json",
+          "sha256": "bb781677ab003d632906e657cbca256ad974ec4a62af17d0b25e5238142af435"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-038.json",
+          "sha256": "dcc2aab2d308284cf979f705a59de59ead5391a9a39c0fce0c5902e6c3c5af87"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-039.json",
+          "sha256": "d105a53dd5556fc765105d3b99e2b92593a117759ed90b6b05b7438ae9168443"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-040.json",
+          "sha256": "38b0bf56bbc451111b01cf98142bbcb1dab0eb54674911b71d20f04fee1e40f5"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-041.json",
+          "sha256": "74463a91a6dc0ba0f7470f98f5326c2700c184dd790e40200aec2cee476c92a2"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-042.json",
+          "sha256": "f8847cb7d8563a7a791611a77cec462f2b165dd49593da4545547a01f87a1453"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-043.json",
+          "sha256": "b52da043fe9fa1e2cc1f7bcab23b5a88d965a41e9dfaf7dcc2d9e31a075c8552"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-044.json",
+          "sha256": "81ca4b30484ebda24e1e0af353a1713f60d9cf1ea46ad66d77fe5f9eea0ef020"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-045.json",
+          "sha256": "4379ab64931c88e3e1a1d99dedf0dc9037bbac76b8ae9fdffaf0966252c24b45"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-046.json",
+          "sha256": "3a3c493c33bddce21042f6de27c9169127b3909ea1845ce344b963d984262891"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-047.json",
+          "sha256": "1f2b8c1a696e783083d187803019035b04ad7ced21d82443d875277e0d3148dd"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-048.json",
+          "sha256": "846fcc63e8dd8edc3fb47f6375e41679261d8968c45c24ed3f08553d192fd377"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-049.json",
+          "sha256": "166f05c0c5f5ec8d95c3f9612ddaa9f777d650a0abbb4665af562f4762c6a1f7"
+        },
+        {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/call-050.json",
+          "sha256": "7eb7934427905e7c7444445b606bbd98761cec1633bbfd585497fa33b5a74b8a"
+        }
+      ],
+      "family": "11952",
+      "id": "1486579d041d5937ddbb",
+      "inputs": {
+        "bank_verification": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/epoch-01/verification.json",
+          "sha256": "550c80882fafc896c7e1b78f48ed3ead64736830308a456184511c41f71b600c"
+        },
+        "initial_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/epoch-00/bank.json",
+          "sha256": "64da204f44ead1d9fb66900503c4d408d7eab21c7b5005d367fff0568b1638dc"
+        },
+        "new_bank": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/epoch-01/bank.json",
+          "sha256": "4cd5655c76de623603dfc3a2ce50853e5299496d084397de552defebc5c6d9b1"
+        },
+        "result": {
+          "path": "artifacts/local/elliptic-curves/cancellation-basis-amplification-v1/arms/1486579d041d5937ddbb/basis_refresh/result.json",
+          "sha256": "1f16ebed5fc554971d50aa228bcf91e77d7254f1d148270f3ceeead33e787d3b"
+        }
+      }
+    }
+  ],
+  "endpoint_packets_sha256": "315d3e0f415bddb0dec829016d4e8ae77ab4b398dfdf7295d852288f2cc4eeaf",
+  "explanation": "Report exact minima within the finite chart/representative dictionary, square and point-map witnesses, the new generator and anchor word, and the coefficient-deletion counterfactual. Distinguish exported potential visibility from actually executed coverage and actual gained directions. Existing rank_growth.py supplies numerical Schur/cascade diagnostics only; no numerical score proves rank or visibility.",
+  "hard_cpu_seconds_per_case": 90,
+  "height": 125000,
+  "oracle": "After maps are sealed, require the retained certified endpoint equation to equal the search model and preserve its exact coordinates. Classify each separately above the complete M19 seed at the same finite places. UNKNOWN is not dependence. For every independently certified extra point P, evaluate both signs of P+kG for k=-1,0,1, identically on old and new charts. These six representatives do not exhaust a rational coset.",
+  "point_search_calls": 0,
+  "predecessor": {
+    "boundary": "One retained model-normalization failure after map preparation and before target evaluation. No point searches or outcome-driven roster change.",
+    "charged_cpu_seconds": 3.32814,
+    "protocol_sha256": "18152e189300fb5f735a8cd8a3f3ed78049fa9a64f3b033b113d6eb6cb3d4cc0",
+    "supervision_sha256": "8322add25b88c0d1b480265b3c7f9c1b744a5387b93518c8eb18e4690d9990c6"
+  },
+  "prime_bound": 500,
+  "prior_protocol_sha256": "ec5a5f84038166af87e075b03c7c5cb1defbce26bfe06d0393f1c1316807089a",
+  "selection": "All eighteen successfully verified M18 to M19 rebuilds of the sealed ablation, without replacement. All exported initial anchors; all exported refreshed anchors with nonzero coefficient in the new generator; and each such anchor after setting that coefficient to zero. Factor-free plus the same at-most-two retained prime-neighbour maps. All maps are prepared and byte-sealed before opening endpoint points in each case. No CVP rebuild or point search.",
+  "signs": [
+    1,
+    -1
+  ],
+  "source_sha256": {
+    "elkies-k3/scripts/rank_growth.py": "1849e815c184d8821930d6a2a1e9f0156b54126bf3e3ea338cc7e4fe54726a1c",
+    "elliptic-curves/cas/adaptive_visibility_cascade.sage": "016f9e721f3ad35158cf281c7a1fe5b19fd7ea3acbc19661685e229a39b96e0d",
+    "elliptic-curves/cas/adaptive_visibility_cascade_v2.sage": "ab8e4035664bb915468e92c45ac94fec4e1e404a28033c9134b1502952e27cf6",
+    "elliptic-curves/cas/adaptive_visibility_cascade_v3.sage": "9d4687ab2771ddb236a46239c3961ceb399f6d0bbee12da9d5b03334dac0006e",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/analyze_seed_amplification_history.py": "617f9c24a62187a991625d3a70ffe796a015fd5ad4a3750e7c5414f150911b3a",
+    "elliptic-curves/cas/audit_compact_r17_ambiguous.py": "2fcef5457ab8efd67fa6dd473949823653901b533c3862d3ba4d83fd4cd2fb01",
+    "elliptic-curves/cas/audit_recorded_point_mod2_rank_v3.py": "5f63d2a929a1b10c3413189b3d7e7ac6be0216dfd80a0da1cc8bc52d934af93f",
+    "elliptic-curves/cas/audit_retained_cloud_modl.py": "9922a557d96f692f01d8a7c834826212928b515eaf66b13507c50cd9a59d3206",
+    "elliptic-curves/cas/benchmark_mw16_extended_prime_traces.py": "c9f5b629e0921cadc7271d891fabc23fe837a3c7266d13c2653679e23f342023",
+    "elliptic-curves/cas/benchmark_r17_extended_prime_traces.py": "0239593edaa2e1dd19a5ac0fe18652cd0ccb7cddeb9046c40fa3da7f9e97d47d",
+    "elliptic-curves/cas/cancellation_basis_accessibility.py": "643e9b0a84f91b95405a0c5d30d0f8841dc183ad904246ebd00bd6dfbf979d22",
+    "elliptic-curves/cas/cancellation_basis_accessibility_v2.py": "acfff219bcc85f9fcf11215026e8e9e7999db1d4ae245e66a11bd5ea85172f1f",
+    "elliptic-curves/cas/cancellation_basis_amplification.py": "94a2facc5593b1e9f4a0c96dfc9e96753d3fe0dbd4657d482099f0dfd84e3f37",
+    "elliptic-curves/cas/cancellation_basis_epoch.py": "fc443980611d7d40febcf066d67ed638e0085319c19666aad58f082e4d1ffb8e",
+    "elliptic-curves/cas/cancellation_basis_exploration.py": "7e8389681bee60584af4464b1855fad2f5bedd64bc889b6adc8fe5b54e48b979",
+    "elliptic-curves/cas/cancellation_cloud_cpu.py": "2ea6444afab7cba85e00046d46359ade47580ca8e1eaa35cfcdd595dc4112fea",
+    "elliptic-curves/cas/cancellation_cloud_policy.py": "87a2e79451ed43579f833a1ee27cbc306b63a819eef7444a00d20b55ca02ea7f",
+    "elliptic-curves/cas/cancellation_cloud_programme.py": "23ba329afff53dc8c7bae309e69c5e95aff23c9bc7a0f12fc2933912d972d0eb",
+    "elliptic-curves/cas/cancellation_cloud_training.py": "691a0535f2e3b31987cd08ba196b1061693f842b81d3f2011c21f2161c1bb63e",
+    "elliptic-curves/cas/cancellation_scheduler.py": "9979313df0e8e839e5a0ccc173d975ad7b115759aa910358c3a49adb81f429f5",
+    "elliptic-curves/cas/cancellation_scheduler_cpu.py": "dfd5c2a2edbe0912cea2858be711c9b5de3d841add3b6d07b8f9ff8ee257a6c8",
+    "elliptic-curves/cas/cancellation_scheduler_fresh.py": "b95826a5ee31c04fbc1d1ebc51928feba2998db5e5c426a8f14a4cabca0cc9c2",
+    "elliptic-curves/cas/cancellation_scheduler_prepare.py": "1775a2a20e9d7504a2f9af1cfe9c35f004b7a3e943079e65d06c822acefa3634",
+    "elliptic-curves/cas/cancellation_scheduler_round4.py": "a56d81bacd45b73eb14b4ca0bfdca7c2ddc6fd3e28ee92f1d7eaa9f9a95b0ae2",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9",
+    "elliptic-curves/cas/check_visibility_cascade_v3.sage": "a3e2703b6a71d4667af83320cd5a06eb262e7ed6dcbb9870c169b021f0f418eb",
+    "elliptic-curves/cas/check_visibility_metric_v3.sage": "045e4e9797b6af834b7737b3a0360c29b80005c1836a52a8acd11b41b6bfc841",
+    "elliptic-curves/cas/compact_atlas_specialization.py": "ea68110968e86cb0502a74a995c26054ff8e4a0da90c49bb2bdf0b753a759b14",
+    "elliptic-curves/cas/compact_mw16_specialization.py": "f6aeab97b980bc6e9a5db71675d4f47fbf3ac15cac5f35f2ea310a77e2a8a7c0",
+    "elliptic-curves/cas/elkies_klagsbrun_rank29.py": "ace003bbe2ad31057329b9fb3f84fb52a306560acde1c184bb05fc2af968d198",
+    "elliptic-curves/cas/elliptic_candidate_record.py": "5b9f6f843d48e705253404a5583ef53966c72c7f229c68ef17c6b848f5e94af3",
+    "elliptic-curves/cas/extend_mw16_retained_prime_scores.py": "4e5137609badde68832a7f1041f0eaec1cbaea59e5297c0156439ad1a30d27cc",
+    "elliptic-curves/cas/extend_retained_r17_prime_scores.py": "c7b1262544a9791f842b5a06b2524d9bf57e0983f2a6d867eda216b14eb33767",
+    "elliptic-curves/cas/extended20_mw16_pari_batch.py": "e53d1bd7280df022e43ec0241fd976ae877667b6575928e844dce113c635a8c6",
+    "elliptic-curves/cas/factor_free_pari_mapping.sage": "dba526e16844dc61a37be74cf562404cfe819d22b84e454c9522638fb487d7d7",
+    "elliptic-curves/cas/finite_cancellation_corpus.py": "4ec5da80e68eb5917f3272df4ee8199a413a7635508bfb24e903c50c9c2c3556",
+    "elliptic-curves/cas/finite_cancellation_features.py": "1ca9551f12cf0c5648ea812419c53f81108413fc08f38e9e1d5acf79bbdfbafa",
+    "elliptic-curves/cas/finite_cancellation_validation_audit.py": "9da4620787c14381cfab6674c815bc37186597e021f64df4fca92bffcfc4ad9e",
+    "elliptic-curves/cas/finite_cancellation_validation_features.py": "44a653ad9f70473b7beb35bb5cdeb7911089b4ddd9ef69b7e76415e1b30a1e0d",
+    "elliptic-curves/cas/finite_cancellation_validation_replay.py": "3eaa8f5d14e0c04ea385cdce9fec92e6d1469058ddc149e0be3c93cee96087a8",
+    "elliptic-curves/cas/future_point_admission.py": "bd7ee9e0a5dbd576a8eb03dad63981f0bd749be24403113b0e410e3061e36af7",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/height_model_benchmark.py": "64775cbeaa2a042297285fcfca5b71c24920180df7896b19df55d4d8672f88c2",
+    "elliptic-curves/cas/high_rank_foundry_certificate.py": "52521b9e35a98f7762eaa5771dc5d753675bd0a900f292a410dcc25df8f5f9df",
+    "elliptic-curves/cas/high_rank_foundry_point_calls.py": "5ab89242759f3aa972d45e1ba6faf844d782c800d86c6b3e982996fdfe08c0eb",
+    "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "elliptic-curves/cas/icarm_curve356.py": "40a95adf316ca95fbd36ac44007620c77f79d9881a1cd57b584b9271de11c557",
+    "elliptic-curves/cas/lean_factor_free_pari_mapping.sage": "373caf6fd26c71d4a3526ba16e04a8ad4794b0eb2b99c606069b4f6ac39d857e",
+    "elliptic-curves/cas/lean_finite_cancellation_pari_mapping.sage": "85285d489cf5d372f93a59a45b7ca92348c5e60c3ccd7ac539dafce27afe45ec",
+    "elliptic-curves/cas/lean_preconditioned_full_pari_mapping.sage": "775e8ab274f46f8f8c72032f3a9bd41ff534e8109a4d5d9da7d6a58e27a6e3d3",
+    "elliptic-curves/cas/lean_preconditioned_map_receipts.py": "5ce29100b7a3f907a4d65c1591790d247d4afa63de79c4ec160a73d78c273d6b",
+    "elliptic-curves/cas/lean_preconditioned_map_worker.py": "61e748a63e41f06f50c281058147872523764fe2fd893a01cb57b034a2cee365",
+    "elliptic-curves/cas/memory_rank_certificate.py": "ffc777cc507b926022086b9c3c65754c084fb8be44c735760a60726e0d9f0fc6",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "c5963952d1a9089416479671b788b6437dbba26591d796646022f4e9dddd0c70",
+    "elliptic-curves/cas/mod_l_reduction_independence.py": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0",
+    "elliptic-curves/cas/pack_cancellation_scheduler.py": "e37ec8eb2c10b59fce5f334657c2d90a4e8a3822899ba9f7b408ecb6039e6436",
+    "elliptic-curves/cas/parent_foundry_seed.py": "c4a4de67f93410222f6421e9a00f9999ab9a90eb95b19bc3cf453526d25f1bba",
+    "elliptic-curves/cas/parent_foundry_worker.py": "585ad80b6b8cf217227f0c172132aed56f0da2718c8a3e7d219eb36bfcdb7f6d",
+    "elliptic-curves/cas/pari_pointed_backend.py": "895c0f3c14eefc2537ef1aca4354719e47ce2a7cd09fcf2e83f2c44cc60733de",
+    "elliptic-curves/cas/pointed_box_equivalence.py": "26c3f89b7a2e6adced75ac2c4959b8a0e0edf7ce9447fafb2bdaca00eb537e57",
+    "elliptic-curves/cas/pointed_height_bounds.py": "f4946dcdb2f9f573511b8de253dfb33ff9e86c6bab30adb59b27b8e02a2035fe",
+    "elliptic-curves/cas/pointed_minimal_neighbours.py": "674b15520d262db34d47c0d65a80066ccf669e9321d21df623d30e84de28004e",
+    "elliptic-curves/cas/pointed_quartic_search.py": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/prepare_extended20_mw16_pari_batch.sage": "7b00823cfce7c2092960f0a9ef82dd16b7a9a05de0762c7feeb6d3601359fb77",
+    "elliptic-curves/cas/prospective_half_lattice_v2.sage": "4d06eef3eb078116989b4df7df0afe8333da78d0d2e9ce010f1e0da8fc7a41bb",
+    "elliptic-curves/cas/prospective_half_lattice_v3.sage": "aefcbe5dd6eadbd97446bcc19ae3876d4469b7fb206a3366b6e1fa0401cecf91",
+    "elliptic-curves/cas/reconcile_verified_v3_cloud.py": "d6832518e368c18919e420955505819b5cb2cf44e241575bdddede76cc430a92",
+    "elliptic-curves/cas/report_cancellation_scheduler.py": "566f159417f131a61ad4f1d97d5e5d182ce27d67ade0ae4206442e7b501400b8",
+    "elliptic-curves/cas/research_runtime/__init__.py": "fcf27db31ec58866898e7e014861f8a566dd5f65c276f205e99ff64bd793a45e",
+    "elliptic-curves/cas/research_runtime/arithmetic.py": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b",
+    "elliptic-curves/cas/research_runtime/binary.py": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99",
+    "elliptic-curves/cas/research_runtime/cached_observation_state.py": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/floating_norm_check.py": "b6e29495b3232c1b4467e59ff7aab1cefdc4851b66052c241708b2613a47a1b8",
+    "elliptic-curves/cas/research_runtime/memory_store.py": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/pointed_orbit_compression.py": "23f69a9b9aedc040c0a2d97e2b1f722c00a97a1a26702b04a94fba8d1ed3914c",
+    "elliptic-curves/cas/research_runtime/pointed_worker.py": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf",
+    "elliptic-curves/cas/research_runtime/preloaded_prime_state.py": "584b340f730b12a6f4cd8f6b6e7f248c7bce5acfafb3b4d89ff4b43f737102ed",
+    "elliptic-curves/cas/research_runtime/quotient_only_reduction.py": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a",
+    "elliptic-curves/cas/research_runtime/rotated_observation_state.py": "3568529c9513db8fe56d8622ec7c7eae9dbedef4a160836a8db63aba58f2c9ab",
+    "elliptic-curves/cas/research_runtime/search_state.py": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c",
+    "elliptic-curves/cas/research_runtime/store.py": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965",
+    "elliptic-curves/cas/research_runtime/supervisor.py": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233",
+    "elliptic-curves/cas/research_runtime/witnesses.py": "e6ea79fabb7d16e179d5ea347a2006e19193f910a3c6d56940c73ff8dbce2619",
+    "elliptic-curves/cas/run_cancellation_scheduler.py": "fd68a167904f6ede7e9c8267cbdcd11ba087d34df395ec7628c1f8abd80e87a3",
+    "elliptic-curves/cas/run_complement_seed_v3.py": "0441925a041f72ee7130c3cad8327cdc99d15351113fe123b2327146f21c602e",
+    "elliptic-curves/cas/run_v3_warm_start_overnight.py": "c19a3f9a21fb561e4a79d9f504bf0525da89a77d34b32634ad3ff8c7377d348b",
+    "elliptic-curves/cas/search_observability.py": "b6189a0cee9805336609f413b2dd8ccb38263c2d594131aabf3b0555a9c04b58",
+    "elliptic-curves/cas/v3_transfer_contract.py": "651eadb42134a365b6c191d5fd204c428761d94a55d5567eacec8cb3ab45df07",
+    "elliptic-curves/cas/v3_warm_engine.py": "1c9f4a86403048b8e163eafe9a09f7918811df5d1ddc152ab14db0b9f7f2fbb2",
+    "elliptic-curves/cas/v3_warm_replay.py": "3dae0537af0c5b2c10adc4c380abd45c9bcda5a6ffa1662d7837adff848a8020",
+    "elliptic-curves/cas/v3_warm_support.py": "b66f67b227fc79e8a688f350c6a1d2cd06eb050e2d9c7b8f03bf22a59ca62e71",
+    "elliptic-curves/cas/verify_cancellation_basis_accessibility.py": "4f1194b37eef3a9186decca837a17ef6646e03eb3e02edd025f6df0288781880",
+    "elliptic-curves/cas/verify_cancellation_basis_accessibility_v2.py": "b057154599eebb21d4bf5da0996fd8dc481bc2c8995220e51f2644fcb006ab18",
+    "elliptic-curves/cas/verify_cancellation_basis_amplification.py": "b4e0f60a277e363d4c64a3ace42e69b752d6c645fe102f487c9d6e47c9358122",
+    "elliptic-curves/cas/verify_cancellation_cloud.py": "33874b6c78786a09b66b7e40b66fad04b0c97d87f928eb7981e8be80deace7c6",
+    "elliptic-curves/cas/verify_cancellation_scheduler.py": "952e3990acafe51ecdf8b2f34ab993ded8ff35b61f29519d079a3a5f35346ef1",
+    "elliptic-curves/cas/verify_cancellation_scheduler_training.py": "28888db44df7bbdb8cdbdbfacd43ccc0ab83adf3672589ce5ae17bd3775430d1",
+    "elliptic-curves/cas/verify_factor_free_rank.sage": "fd95c46b9b79c89deeeed14afa2e46088590459ce1a144ebb1cd61e8713309db",
+    "elliptic-curves/cas/verify_finite_cancellation.py": "6ad57e6be687d2f1ce0ba058cef313faf7837c93d55f18c9a8560cb95027bc28",
+    "elliptic-curves/cas/verify_finite_cancellation_cpu.sage": "8c540c75968ca180b313783d95cf0388192ff9cc9febb1b53dc65a001b8e494f",
+    "elliptic-curves/cas/verify_height_model_accessibility.py": "4525f51bfc51b864162e2c2febbb086ec46701f2c9367f3f0967dc9d730bb148",
+    "elliptic-curves/cas/verify_pointed_height_bounds.py": "f5f2495bfeef0ab1cc81767b88f192316597bdd979ac5332712add68f0a1c4b2",
+    "elliptic-curves/cas/verify_pointed_height_portfolio.py": "fc82ec609c3262b21d144433bedef7e20af0e33f43a844951a55c37e480718a9",
+    "elliptic-curves/cas/verify_pointed_minimal_neighbours.py": "60f63758f18f65795d996fa6c94731aef910055691ea5f1474e92dc02baac2ef",
+    "elliptic-curves/cas/visibility_complement_subset.py": "e30e9fd901c5942e08c0f534faca0d68cdc4db2a1326a9a69c48b5672d0a70b8",
+    "elliptic-curves/cas/visibility_lattice_fast.py": "43c7095f0a1a20a06e4a74718329d45aea42cc58e2894fcee39b4312d090e7ba",
+    "elliptic-curves/cas/visibility_lattice_v2.py": "b287cad1bd128ebda2e726197e781463442eb2670437f51f162475bb21fbcce1",
+    "elliptic-curves/cas/visibility_selection_v3.py": "7a04867be884b72e628703f94b798f940c47b89aadd5acf7f09c237137fb744e",
+    "elliptic-curves/tests/test_cancellation_basis_exploration.py": "1fa38ec02893f1ae0828b45a5451f5a15a3f04e68a5deb506df2942cab64c876",
+    "elliptic-curves/tests/test_r17_prime_extension.py": "e40e49107ab234d90d86ce1a1673d995d206c4f17ba03e2841de5737aba93c61"
+  },
+  "status": "FROZEN_POST_EXECUTION_DIAGNOSTIC",
+  "translations_in_new_generator": [
+    -1,
+    0,
+    1
+  ],
+  "wall_seconds_per_case": 120
+}

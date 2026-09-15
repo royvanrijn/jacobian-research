@@ -1,0 +1,8 @@
+{
+  "archive_sha256": "e734b970edae4eb7ed3ef2297d21d256de3a2a8afcdbdbbcd95ebd9bddd37ab7",
+  "compressed_bytes": 27000934,
+  "files": 11247,
+  "manifest_sha256": "06c08d6580be8b47c124aa378e026f133d61b57b6a25c359a94eb2c691cff644",
+  "protocol_sha256": "39b78c47a40bc3376b1eb2effe2647c093e3e18152636c07e2ad302b1892e4d8",
+  "status": "PASS_REPLAY_PACKAGING"
+}

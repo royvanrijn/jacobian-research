@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "cff7fa60a6dea2cd06f91ffafe2b8222e750ef6a84ec1ddd8aa5f31c7811e341",
+  "boundary": "Empty-root archive bytes, indirect runtime imports, original transcript/source guards and all integration output bindings. Exact arithmetic is evidenced by the original metered integrations, not repeated here.",
+  "files": 1715,
+  "full_child_cpu_seconds": 0.128876,
+  "log_sha256": "23eec2808816316589189e3a6d4a7100419135e4034541bcf92c65a8df19a340",
+  "manifest_sha256": "0bf4099bd9dece02a6b277cf4eeb264424e1453120271dc4576afe740a51bd51",
+  "packaging_check_component_cpu_seconds": 0.325023687,
+  "point_search_calls": 0,
+  "returncode": 0,
+  "status": "PASS_EMPTY_ROOT_INTEGRATION_BINDINGS"
+}

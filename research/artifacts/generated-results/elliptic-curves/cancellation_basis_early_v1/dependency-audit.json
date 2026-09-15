@@ -1,0 +1,9 @@
+{
+  "boundary": "Post-protocol retention plus finite representative sensitivity. The preceding dependency record is preserved verbatim; no primary source seal or decision gate changes.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/audit_cancellation_basis_representatives.py": "c32876b5e0bbe8eda3b794c3b09115d6472d9cf2f5e9d42095caf6c43e0dfc0f",
+    "elliptic-curves/cas/retain_cancellation_basis_early.py": "bfc1a49ce1409342fc12eb3a441f5875ec389f08ad4cdabe2503f05d06570dbe"
+  },
+  "previous_dependency_audit_sha256": "b2aab9b13c75af082626b1d816550728276aa59633692e8c59a46e6791b82288",
+  "representative_protocol_sha256": "45d7121e96b8f0a20f64f04039928d3fa546ecbb1843f280415b759a4b8c8c39"
+}

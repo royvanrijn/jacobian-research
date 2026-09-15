@@ -1,0 +1,7 @@
+{
+  "boundary": "One previously tested group; two directions in its first positive cloud. A prior development recipe omitted the GP hash and failed before any point call; corrected recipe retained separately. Neither attempt enters holdout outcomes.",
+  "result_sha256": "a9b71ac977aa0eeca95cc6e9672ece5578d68db57b8075a6c4b6378f4cc82c08",
+  "retained_configuration_failure_sha256": "9088992923c85dcc26f60f96f0c5c78ac6e7966a1f41ad252ec6ce6b2ec4ddde",
+  "status": "PASS_DEVELOPMENT_WORKER_ONLY",
+  "verification_sha256": "022409d2c3172f1f89881069fe833cf7e12b3008e1db24fc4a531f878ced26b5"
+}

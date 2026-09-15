@@ -1,0 +1,31 @@
+{
+  "checker_sha256": "9643ff832e98cfcc9d42445851c6c54fbf9acdaed1aab789753b9c98aab636eb",
+  "cpu_seconds": 4.866130601,
+  "point_search_calls": 0,
+  "recipe_sha256": "31507ff524f34c83f413b621077ef37155dfe2289d7e2c83ac7c2377ddfe7b94",
+  "rows": [
+    {
+      "cpu_seconds": 1.5424622289999999,
+      "epoch": 1,
+      "rank": 19,
+      "status": "PASS_INDEPENDENT_BANK_SELECTION_CERTIFICATE"
+    },
+    {
+      "epoch": 1,
+      "error": "selection object differs from bound file",
+      "status": "REJECTED_UNBOUND_SELECTION"
+    },
+    {
+      "cpu_seconds": 2.2007147880000004,
+      "epoch": 2,
+      "rank": 20,
+      "status": "PASS_INDEPENDENT_BANK_SELECTION_CERTIFICATE"
+    },
+    {
+      "epoch": 2,
+      "error": "selection object differs from bound file",
+      "status": "REJECTED_UNBOUND_SELECTION"
+    }
+  ],
+  "status": "PASS_BOUND_SELECTION_SUCCESSOR"
+}

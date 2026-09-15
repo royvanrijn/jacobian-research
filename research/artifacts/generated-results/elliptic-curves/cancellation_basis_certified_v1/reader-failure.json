@@ -1,0 +1,16 @@
+{
+  "arm": "fixed_bank",
+  "case": "dac3caca604d57e674cc",
+  "cause": "The receipt field verification['rank'] is a native certificate object containing rank and finite-prime evidence. The frozen accounting reader compared that object directly with result['rank_lower_bound'], an integer, instead of reading verification['rank']['rank'].",
+  "changed_sources": [
+    "elliptic-curves/cas/retain_cancellation_basis_certified_v2.py",
+    "elliptic-curves/cas/report_cancellation_basis_certified.py"
+  ],
+  "effect": "One post-execution byte/accounting read failed before producing an audit or report. All48 primary workers and both arithmetic postmortems already passed. No point, rank, bank, map, policy, statistic, gate or prior source seal changes; no search or arithmetic replay is repeated.",
+  "error": "ArithmeticError: unverified arm",
+  "failed_source_sha256": "7d23bb09f03a8e2283eccf99fd42551406a42e72a4bb0714097176cf4dc1afe6",
+  "point_search_calls": 0,
+  "primary_protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "status": "RETAINED_POST_PROTOCOL_READER_FAILURE",
+  "timing": "The initial failed accounting invocation has no separate CPU meter. It is not a primary worker or an arithmetic proof operation. Do not call complete development or reporting cost fully metered."
+}

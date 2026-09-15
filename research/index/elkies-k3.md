@@ -20,6 +20,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE` | partial | [Exact abstract q6/orbit1307 lattice path with withdrawn component-10 continuation](../elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md) |
 | `EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE` | proved | [Exact lattice-certified D13 changed-zero planning candidate via q4 orbit11](../elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md) |
 | `EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE` | proved | [Exact lattice-certified first-H3-q8 changed-zero planning candidate via q4 orbit11](../elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md) |
+| `EC-K3-BASIS-BRANCH-INCIDENCE-GATE-20260914` | proved | [Four retained generic bases have no simultaneous elementary branch incidence; Q80 pole kernels are exactly one-dimensional](../elkies-k3/BASIS_BRANCH_INCIDENCE_GATE_2026-09-14.md) |
 | `EC-K3-ALT-BISECT-ORBIT` | partial; replaced by EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION | [Exact alternate-rootless MW17 lattice bisection-orbit enumeration](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-BISECT-DISJOINT-FRONTIER` | partial; replaced by EC-K3-BISECT-EQUATION-BATCH | [Exact disjoint-pair frontier among rootless rational-bisection translation orbits](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
 | `EC-K3-BISECT-EQUATION-BATCH` | proved | [Complete equation-level injectivity of the published rootless R17 bisection map](../elkies-k3/BISECTION_COLLISION_SEARCH.md) |
@@ -95,6 +96,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-COMMON-QUARTIC-SINGULARITY-GATE-20260914` | proved | [Common-quartic genus0/1 controls and a complete constant-abscissa exclusion on four MW17 parents](../elkies-k3/COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md) |
 | `EC-K3-R17-25-GENUS1-PENCIL-COLLISION-EXCLUSION-20260912` | proved | [Twenty-five prospective genus-one pencils have no shared rational branch quartic in any of their 300 pairs](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
 | `OP-K3-CORRELATED-QUADRATIC-GAINS-20260912` | open | [Construct two independent new sections on one quadratic cover with infinitely many rational specializations](../elkies-k3/CORRELATED_QUADRATIC_GAINS_2026-09-12.md) |
+| `EC-K3-CUBIC-CONTACT-TRIELLIPTIC-GATE-20260915` | proved | [Cubic contact interpolation and the trielliptic gate for arithmetic-genus-four bisections](../elkies-k3/CUBIC_CONTACT_AND_TRIELLIPTIC_GATE_2026-09-15.md) |
 | `EC-K3-CURVE302-COMPLETE-P6-TRIANGLE-GATE` | proved | [Complete P6 height-six triangle class contains no MW14-or-higher parent of 302](../elkies-k3/CURVE302_COMPLETE_P6_TRIANGLE_GATE_2026-09-07.md) |
 | `EC-K3-CURVE302-BRANCH-CARRIER-ARITHMETIC` | proved | [Curve302 genus-three branch Jacobian is Q-simple with torsion2^6; two finite point boxes replayed](../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md) |
 | `EC-K3-CURVE302-BRANCH-JACOBIAN-ENLARGEMENT` | proved | [Explicit nontorsion branch-Jacobian divisor, rational half and two-saturated rank-one subgroup](../elkies-k3/CURVE302_SHARED_BRANCH_GATE.md) |
@@ -106,13 +108,32 @@ python3 research/scripts/research.py show ID
 | `EC-K3-CURVE302-TRIANGLE-BRANCH-SEPARATION` | proved | [Branch discriminants distinguish the two MW14 triangle fibrations even over Qbar](../elkies-k3/CURVE302_TRIANGLE_MW14_2026-09-07.md) |
 | `EC-K3-CURVE302-TRIANGLE-MW14` | proved | [Exact old-degree-three A2+A1/MW14 rational pencil and302 inverse exclusion](../elkies-k3/CURVE302_TRIANGLE_MW14_2026-09-07.md) |
 | `EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP` | proved | [Complete custom-NS rootless MW17 midpoint-hole sweep](../elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md) |
+| `EC-K3-DET1020-ARITHMETIC-MW17-EXISTENCE-20260915` | proved | [The admitted determinant1020 K3 admits arithmetic MW17 with rootless height lattice of minimum4](../elkies-k3/DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md) |
+| `EC-K3-DET1020-CENTER-COMPONENT-SOURCE-CHART-20260915` | proved | [A central-I10 source frame gives a rational six-parameter partial K3 chart for determinant1020 construction](../elkies-k3/DET1020_CENTER_COMPONENT_SOURCE_CHART_2026-09-15.md) |
+| `EC-K3-DET1020-EXPLICIT-RATIONAL-SOURCE-20260915` | proved | [An explicit K3 over Q has full rational NS of determinant1020 and certified geometric Picard rank19](../elkies-k3/DET1020_EXPLICIT_RATIONAL_SOURCE_2026-09-15.md) |
+| `EC-K3-DET1020-LOW-POLE-SOURCE-FRAME-20260915` | proved | [The determinant1020 NS admits a saturated MW1 source frame with a disjoint generator](../elkies-k3/DET1020_LOW_POLE_SOURCE_FRAME_2026-09-15.md) |
+| `EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915` | proved | [The explicit determinant1020 K3 has a certified physical nef MW17 pencil and seventeen saturated rational section classes](../elkies-k3/DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15.md) |
+| `EC-K3-DET1020-RATIONAL-MARKING-SOURCE-20260915` | proved | [Determinant1020 admits full saturated rational NS through the maximal510 marked elliptic curve](../elkies-k3/DET1020_RATIONAL_MARKING_SOURCE_2026-09-15.md) |
 | `EC-K3-DET1236-CANDIDATE-DOUBLE-COVER` | partial | [Exact candidate for the determinant-1236 marked double cover](../elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | `EC-K3-DET1236-GENUS2-RATIONAL-POINTS` | proved | [Complete rational points on the determinant-1236 genus-two quotient](../elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | `EC-K3-DET1236-MARKED-SHIMURA-CURVE` | partial | [Exact determinant-1236 marked Shimura curve and rational-lift gate](../elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | `EC-K3-DET1236-RATIONAL-CM-LOCUS` | proved | [Complete rational CM locus on the determinant-1236 marked curve](../elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | `EC-K3-DET1236-V4-LOCAL-CONSISTENCY` | proved | [Corrected local-unit consistency for the determinant-1236 V4 reconstruction](../elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |
 | `EC-K3-DET378-QQ-MARKING-OBSTRUCTION` | proved | [Stable X_0(63) obstruction for the split determinant-378 transcendental row](../elkies-k3/DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
+| `EC-K3-DET388-GLOBAL-ROOT-OBSTRUCTION-20260914` | proved | [The admitted determinant388 NS is globally rootful and cannot carry MW17](../elkies-k3/DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md) |
+| `EC-K3-DET388-RATIONAL-MARKING-SOURCE-20260914` | proved | [Determinant388 admits a full rational rank19 K3 marking at an exact non-CM period](../elkies-k3/DET388_RATIONAL_MARKING_SOURCE_2026-09-14.md) |
+| `EC-K3-DET388-ONE-FRAME-TWO-NEIGHBOR-OBSTRUCTION-20260914` | proved | [Every even2-neighbour of the pinned determinant388 five-A1 frame contains a root](../elkies-k3/DET388_TWO_NEIGHBOR_GATE_2026-09-14.md) |
 | `EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS` | proved | [Stable X_H(50) and X_H(75) obstructions for two rootless MW17 candidates](../elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) |
+| `EC-K3-DET622-GLOBAL-ROOT-OBSTRUCTION-20260915` | proved | [The level311 Inose NS of determinant622 is globally rootful and cannot carry MW17](../elkies-k3/DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) |
+| `EC-K3-DET622-INOSE-RATIONAL-MARKING-SOURCE-20260915` | proved | [A constant quadratic twist of the explicit level311 Inose surface has full rational NS of determinant622](../elkies-k3/DET622_INOSE_RATIONAL_MARKING_SOURCE_2026-09-15.md) |
+| `EC-K3-DET800-FULL-MARKING-OBSTRUCTION-20260914` | proved | [Determinant800 full stable marking curve is X_0(200) over Q and has no rational noncuspidal point](../elkies-k3/DET800_FULL_MARKING_OBSTRUCTION_2026-09-14.md) |
+| `EC-K3-DET852-FULL-MARKED-ELLIPTIC-CURVE-20260915` | proved | [The determinant852 full stable marked curve is the rank-one elliptic curve426b1](../elkies-k3/DET852_FULL_MARKED_CURVE_2026-09-15.md) |
+| `EC-K3-DET852-GLOBAL-ROOT-OBSTRUCTION-20260915` | proved | [The admitted determinant852 NS is globally rootful and cannot carry MW17](../elkies-k3/DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) |
+| `EC-K3-DET852-INTRINSIC-NONCM-POINT-20260915` | proved | [CM-orbit doubling specifies a rational non-CM period on the determinant852 full curve](../elkies-k3/DET852_INTRINSIC_NONCM_POINT_2026-09-15.md) |
+| `EC-K3-DET852-ONE-NIEMEIER-ANCHOR-20260915` | proved | [Every rootless frame of the admitted852 NS must come from the unique2A7+2D5 D5 anchor](../elkies-k3/DET852_ONE_ANCHOR_REDUCTION_2026-09-15.md) |
+| `EC-K3-DET852-RATIONAL-CM-LOCUS-20260915` | proved | [The determinant852 full marked curve has exactly eight rational CM points](../elkies-k3/DET852_RATIONAL_CM_LOCUS_2026-09-15.md) |
+| `EC-K3-DET852-RATIONAL-MARKING-SOURCE-20260915` | proved | [Determinant852 admits a projective K3 overQ with full saturated rational NS marking](../elkies-k3/DET852_RATIONAL_MARKING_SOURCE_2026-09-15.md) |
+| `EC-K3-DET948-ALL-FRAME-SYMMETRY-GATE-20260915` | proved | [All MW17 fibrations on the pinned determinant948 NS fail the pointed involution criterion](../elkies-k3/DET948_ALL_FRAME_SYMMETRY_GATE_2026-09-15.md) |
 | `EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK` | partial | [Arithmetic-gated reranking of different-NS MW17 frames](../elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md) |
 | `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` | partial | [Global transcendental-first arithmetic queue for the different-NS foundry](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
 | `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` | open | [Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
@@ -137,6 +158,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS` | proved | [Eleven explicit residual-Selmer cover controls at the Elkies rank-28 fibre](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md) |
 | `EC-K3-ELKIES-2026-R28-S-CLASS-PILOT` | partial | [Factor-supplied S-class diagnostics for the published Elkies rank-28 fibre](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md) |
 | `EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE` | partial | [Residual 2-Selmer exclusion gate and separate production search budgets](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md) |
+| `EC-K3-F1-TRIELLIPTIC-ADJOINT-OBSTRUCTION-20260915` | proved | [The F1 adjoint system excludes trielliptic maps and makes the arithmetic-genus-four contact layer finite](../elkies-k3/F1_TRIELLIPTIC_ADJOINT_OBSTRUCTION_2026-09-15.md) |
 | `EC-K3-H3-FIXED-REVERSE-3A1-QQ` | proved | [Exact reverse equation lift of the fixed 3A1 stage](../elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md) |
 | `EC-K3-H3-FIXED-REVERSE-4A1-QQ` | proved | [Exact physical reverse equation lift of the fixed 4A1 stage](../elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md) |
 | `EC-K3-H3-FIXED-REVERSE-A1-2A1-QQ` | proved | [Exact reverse equation lift of the final A1 and 2A1 fixed-corridor stages](../elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md) |
@@ -146,14 +168,17 @@ python3 research/scripts/research.py show ID
 | `EC-K3-H3-D12-Q80-CROSSOVER-AUDIT` | proved | [Exact H3 D12 to retained-Q80 crossover cost audit](../elkies-k3/H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md) |
 | `EC-K3-H3-Q8-QQ-D13` | proved | [Exact corrected H3 q8 neighbour over QQ with D13/MW4 child](../elkies-k3/H3_Q8_REAUDIT_2026-08-22.md) |
 | `EC-K3-ICARM-A1-MW16-ATLAS` | proved | [Complete 11952 norm-eight low-root atlas for eleven priority ICARM targets](../elkies-k3/ICARM_A1_MW16_ATLAS_2026-09-04.md) |
+| `EC-K3-Q80-INHERITED-QUADRATIC-CONTACT-GATE-20260915` | proved | [Two actual Q80 quadratic halves fail integral contact interpolation; the fixed signed-basis bank is closed](../elkies-k3/INHERITED_QUADRATIC_CONTACT_GATE_2026-09-15.md) |
 | `EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE` | proved | [Blind determinant-78 prospective bridge-minimum negative control](../elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md) |
 | `EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK` | proved | [Retrospective bridge-split root-budget predictor benchmark](../elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md) |
 | `EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY` | proved | [Minimal elliptic incidence distance two between the two determinant-948 rootless J2 classes](../elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md) |
+| `EC-K3-JOINT-HALVING-EXCEPTIONAL-BRANCH-LOCUS-20260914` | proved | [Two simultaneous branch conditions lie on genus57 or49 curves with finitely many degree-at-most4 points](../elkies-k3/JOINT_HALVING_EXCEPTIONAL_BRANCH_LOCUS_2026-09-14.md) |
 | `EC-K3-NS0031-MARKED-SOURCE-PRECURSOR` | partial | [Exact marked finite-field and finite-lift source precursor for NS0031](../elkies-k3/LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md) |
 | `EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS` | proved | [Complete declared thirteen-ambient prescribed-root MW1 source census](../elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md) |
 | `EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION` | proved | [Exact dependence or extra-fibre obstruction in the normalized two-point A4 Tate slice](../elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md) |
 | `EC-K3-RES-D5-TWO-MARKED-LOW-SLICE-ELIMINANTS` | proved | [Exact D5 low-section eliminants and nonrationality of the p=11,13 lifts](../elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md) |
 | `EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL` | proved | [Exact two-marked D5 seed and complete GF(11) polynomial two-twist census](../elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md) |
+| `EC-K3-MW17-J-MONODROMY-SYMMETRY-BARRIER-20260915` | proved | [All four retained MW17 j-maps have S24 monodromy and no extra symmetry on any quadratic cover](../elkies-k3/MW17_J_MONODROMY_AND_SYMMETRY_BARRIER_2026-09-15.md) |
 | `OP-K3-NS0024-ARITHMETIC-MW17` | parked; replaced by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 | [Former NS0024 arithmetic MW17 candidate](../elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
 | `EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION` | proved; replaced by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION | [Direct rational Inose-source obstruction for NS0024](../elkies-k3/NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md) |
 | `EC-K3-NS0024-QQ-MARKING-OBSTRUCTION` | proved | [Full rational Neron--Severi marking obstruction for NS0024](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) |
@@ -170,6 +195,7 @@ python3 research/scripts/research.py show ID
 | `EC-K3-H3-Q24-O42-SECTION-CANDIDATES` | proved | [Four exact orbit42 section candidates with pinned modular marking](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE` | proved | [Exact spinor-class zero-pole sections on the H3 q24 D12 parent](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
 | `EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT` | proved | [Exact rational zero-pole boundary audit on the H3 q24 D12 parent](../elkies-k3/ORBIT42_EQUATION_LIFT.md) |
+| `EC-K3-ORDER-FOUR-LIFT-CORRELATED-GAIN-20260915` | proved | [An order-four lift forces an orthogonal two-gain orbit; a rational conic control and Inose fixed-field gate are exact](../elkies-k3/ORDER_FOUR_LIFT_CORRELATED_GAIN_MECHANISM_2026-09-15.md) |
 | `EC-K3-H3-OTHER-R17-J2-CANDIDATE` | proved | [Second rootless rank-17 J2 frame class in the pinned H3 Neron--Severi lattice](../elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md) |
 | `EC-K3-R17-NONTHIN-RANK-JUMPS` | proved | [Non-thin rank-at-least-18 specializations of the published R17 K3 fibration](../elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md) |
 | `EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ` | proved | [First exact characteristic-zero q12/orbit5867 compiler section](../elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md) |
@@ -191,13 +217,26 @@ python3 research/scripts/research.py show ID
 | `EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS` | proved | [Exact generic quartic-square factorization in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
 | `EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR` | proved | [Exact generic cubic linear conductor factor in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
 | `EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS` | proved | [Exact specialized quartic-square factorization in the Q80 third-q12 discriminant](../elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md) |
+| `EC-K3-Q80-BRANCH-SATURATION-DEFECT-20260915` | proved | [A Q80 branch half lies outside the full inherited image while all seventeen generic directions specialize injectively](../elkies-k3/Q80_BRANCH_SATURATION_DEFECT_2026-09-15.md) |
+| `EC-K3-Q80-BRANCH-TRACE-SPECIALIZATION-20260914` | proved | [Branch specialization obstructs Q80 trace norms; an infinite elliptic-base control has zero gain](../elkies-k3/Q80_BRANCH_TRACE_SPECIALIZATION_GATE_2026-09-14.md) |
 | `EC-K3-Q80-COMPLETE-GENUS1-PENCIL-INJECTIVITY-20260913` | proved | [All63917 complete norm-eight genus-one pencils on alternate Q80 have distinct rational branch images](../elkies-k3/Q80_COMPLETE_GENUS_ONE_BRANCH_INJECTIVITY_2026-09-13.md) |
 | `EC-K3-Q80-DEGREE-TWO-RECIPROCITY-20260914` | proved | [Coupled reciprocity confines Q80 genus-zero branch pairs to sixteen collision residues at131](../elkies-k3/Q80_DEGREE_TWO_RECIPROCITY_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-SINGLE-TRACE-CONTROL-20260915` | proved | [Exact rank18 throughout an arithmetic progression of genus-one Q80 pencil parameters](../elkies-k3/Q80_GENUS1_SINGLE_TRACE_CONTROL_2026-09-15.md) |
+| `EC-K3-Q80-GENUS1-K0-MIXED-VALUATION-20260914` | proved | [Mixed abscissa valuations are impossible on the remaining Q80 genus-one chart](../elkies-k3/Q80_GENUS_ONE_K0_MIXED_VALUATION_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-K0-POLE-BOUNDARY-20260914` | proved | [Nodal pole degrees exclude four Q80 genus-one k0 allocations; only j2 remains](../elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-K0-QUARTIC-GATE-20260914` | proved | [Quartic norms and first lifts force Q80 genus-one k0 into nodal denominators](../elkies-k3/Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-K1-CUBIC-RECIPROCITY-20260914` | proved | [Cubic reciprocity excludes every Q80 genus-one k1 allocation](../elkies-k3/Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md) |
 | `EC-K3-Q80-GENUS1-K2-NODAL-BOUNDARY-20260914` | proved | [Every Q80 genus-one k2 solution requires the unique nodal denominator reduction at131](../elkies-k3/Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-K2-NODAL-ORIENTATION-20260914` | proved | [Nodal branch orientation excludes every Q80 genus-one k2 allocation](../elkies-k3/Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) |
+| `EC-K3-Q80-GENUS1-POLYNOMIAL-CLOSURE-20260914` | proved | [The complete Q80 polynomial genus-one common-quartic chart is empty](../elkies-k3/Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md) |
 | `EC-K3-Q80-GENUS0-COLLISION-CLOSURE-20260914` | proved | [Stable-map integrality and complete contact rigidity close all remaining Q80 polynomial genus-zero strata](../elkies-k3/Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md) |
 | `EC-K3-Q80-GENUS0-SAME-BRANCH-ORTHOGONAL-20260914` | proved | [Q80 has no rational-normalization arithmetic-genus-one bisection; the same-branch orthogonal genus-zero stratum is empty](../elkies-k3/Q80_GENUS_ZERO_SINGULAR_GATE_2026-09-14.md) |
+| `EC-K3-Q80-GOOD-BRANCH-CODE-TRACE-NORM-20260914` | proved | [Good branch reduction bounds Q80 branch patterns and separates rank gain into trace norms](../elkies-k3/Q80_GOOD_BRANCH_CODE_AND_TRACE_NORMS_2026-09-14.md) |
+| `EC-K3-Q80-HALVING-PENCIL-UNIQUENESS-20260915` | proved | [A smooth rational bisection forces a unique rational degree-four pencil on its genus-nine halving curve](../elkies-k3/Q80_HALVING_PENCIL_GEOMETRY_2026-09-15.md) |
+| `EC-K3-Q80-ONE-COVER-HALVING-CONTROL-20260914` | proved | [A retained Q80 rational cover realizes exactly one trace parity and exact rank18](../elkies-k3/Q80_ONE_COVER_HALVING_CONTROL_2026-09-14.md) |
 | `EC-K3-Q80-RATIONAL-BISECTION-BRANCH-TORSION-20260914` | proved | [Every Q80 rational-bisection branch field is 2-torsion-free; all same-branch genus-zero strata are excluded](../elkies-k3/Q80_RATIONAL_BISECTION_BRANCH_TORSION_2026-09-14.md) |
 | `EC-K3-Q80-SINGLE-BRANCH-RECIPROCITY-20260914` | proved | [Single-branch reciprocity excludes all k1 genus-zero and k3 genus-one strata on Q80](../elkies-k3/Q80_SINGLE_BRANCH_RECIPROCITY_2026-09-14.md) |
+| `EC-K3-QUADRATIC-CONTACT-INTERPOLATION-20260915` | proved | [Quadratic contact interpolation constructs the finite arithmetic-genus-three elliptic-bisection layer](../elkies-k3/QUADRATIC_CONTACT_INTERPOLATION_2026-09-15.md) |
 | `EC-K3-R17-074D9-LATE-POINT-HOLDOUT` | proved | [Bounded exact low-degree holdout audit for repeated 074d9 late-point labels](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
 | `EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16` | proved | [Exact native-074d9 canonical and cheapest-16 norm-eight cross-fibre transfer matrices](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
 | `EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER` | proved | [Complete native-074d9 rigid cross-fibre bisection transfer census](../elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) |
@@ -281,14 +320,21 @@ python3 research/scripts/research.py show ID
 | `EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE` | proved | [Integral character glue for the R17 norm-twelve 0x103b2 cover](../elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | `EC-K3-RELATIVE-U-BRIDGE-LIFTING` | proved | [Relative-U bridge lifting and bounded marked-fibration completeness](../elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md) |
 | `EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER` | proved | [Universal marked degree-two chord compiler for elliptic K3 fibrations](../elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md) |
+| `EC-K3-RATIONAL-MARKING-STRUCTURAL-GATES-20260914` | proved | [Scaled-split full marking is X0(4N); integral transports and square-two local obstructions exclude119 further rows](../elkies-k3/RATIONAL_MARKING_STRUCTURAL_GATES_2026-09-14.md) |
 | `EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL` | proved | [Eleven exceptional fibres with 110 certified soluble residual 2-cover classes](../elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md) |
 | `EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER` | proved | [Global residual Selmer subspaces, Cassels-Tate radical, and covering complexity](../elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md) |
 | `EC-K3-RES-QBC-E6A1-RHO19` | proved | [One-modulus rational E6+A1 quadratic base changes of generic Picard rank 19](../elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md) |
+| `EC-K3-REAL-C4-ANISOTROPY-OBSTRUCTION-20260915` | proved | [Real topology forces isotropic T for the order-four mechanism on fully rational Picard19 K3 surfaces](../elkies-k3/REAL_LOCUS_C4_ANISOTROPY_OBSTRUCTION_2026-09-15.md) |
+| `EC-K3-REAL-MARKING-CONTENT-OBSTRUCTION-20260914` | proved | [Full rational K3 marking forces transcendental content to divide two; 67 further catalogue rows excluded](../elkies-k3/REAL_MARKING_CONTENT_OBSTRUCTION_2026-09-14.md) |
+| `EC-K3-REAL-RANK19-PERIOD-OBSTRUCTION-20260914` | proved | [Rank-19 full real marking requires rational isotropy or an integral square-two vector;31 further rows excluded](../elkies-k3/REAL_RANK19_PERIOD_OBSTRUCTION_2026-09-14.md) |
 | `EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION` | proved | [Bounded relative-U obstruction for the first completed NS0024 edge](../elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md) |
 | `EC-K3-ROOTLESS-GENUS-MASS` | proved | [Local ADE masses as asymptotic Kneser-neighbour root-system frequencies](../elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md) |
 | `EC-K3-H3-ROOTLESS-J2-COMPLETE` | proved | [Complete rootless rank-17 J2 frame classification by Niemeier-first enumeration](../elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md) |
 | `EC-K3-NS0031-F017-PHYSICAL-CORRIDOR` | proved | [Five-edge physical corridor from the NS0031 A1+2A7 marking to F017/MW17](../elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md) |
+| `EC-K3-SINGULAR-GENUS1-TANGENT-FINITENESS-20260915` | proved | [The complete arithmetic-genus-two elliptic-bisection layer is finite modulo inherited translations](../elkies-k3/SINGULAR_BISECTION_TRACE_GEOMETRY_2026-09-15.md) |
 | `EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS` | proved | [Specialization quotient, rank-jump sandwich, and midpoint/class-group structure](../elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md) |
+| `EC-K3-STAR510-FRICKE-LIFT-EXCLUSION-20260915` | proved | [The level51 quadratic-point classification excludes the star510 rational Fricke lift](../elkies-k3/STAR510_FRICKE_LIFT_EXCLUSION_2026-09-15.md) |
+| `EC-K3-X1092-ROOTLESS-INVOLUTION-GLUE-GATE-20260915` | proved | [All nineteen X1092 rootless frames fail the symplectic involution discriminant-gluing gate](../elkies-k3/X1092_ROOTLESS_INVOLUTION_GLUE_GATE_2026-09-15.md) |
 
 ## Other source notes and navigation
 
@@ -297,7 +343,9 @@ These documents are not canonical sources of a registered claim. They include wo
 - [K3 and high-rank research instructions](../elkies-k3/AGENTS.md)
 - [Galois-equivariant Shioda--Tate balance and arithmetic marking gate (2026-09-03)](../elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md)
 - [Elkies rank-17 K3: named construction and comparison routes](../elkies-k3/CONSTRUCTION_ROUTES.md)
+- [Correlated gains: branch values, poles and the next height gate](../elkies-k3/CORRELATED_GAIN_POLE_CRITERION_2026-09-14.md)
 - [Small-genus defect-graph dynamics — 2026-09-03](../elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md)
+- [The retained determinant1020 frame does not support the order-four mechanism](../elkies-k3/DET1020_FRAME_SYMMETRY_GATE_2026-09-15.md)
 - [Dissection of the `E6+A1` Picard-rank-19 K3 — 2026-09-02](../elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md)
 - [E6 MW3 direct attack (historical)](../elkies-k3/E6_MW3_ATTACK.md)
 - [E6 MW3 progress — 2026-08-20](../elkies-k3/E6_MW3_PROGRESS_2026-08-20.md)
@@ -348,6 +396,8 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Q80 final q6 characteristic-zero closeout — 2026-08-23](../elkies-k3/Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md)
 - [Q80 low-q suffix provenance and backtracking map — 2026-08-23](../elkies-k3/Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md)
 - [Q80 low-q alternate corridor — 2026-08-22 (historical)](../elkies-k3/Q80_LOW_Q_ALTERNATE_2026-08-22.md)
+- [The minimum-distance inherited contact layer for trace P3](../elkies-k3/Q80_MINIMAL_INHERITED_CONTACT_2026-09-15.md)
+- [First height-six Q80 trace: a bounded rational-contact attempt](../elkies-k3/Q80_RATIONAL_CONTACT_P3_ATTEMPT_2026-09-15.md)
 - [Q80 third-q12 exact-lift checkpoint](../elkies-k3/Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md)
 - [Historical generic q80-to-rootless MW17 path](../elkies-k3/Q80_TO_ROOTLESS_PATH_2026-08-21.md)
 - [Quadratic-twist rank census for the complete bisection batch](../elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md)
@@ -370,6 +420,7 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Section-first normal forms for MW1 and MW2 searches — 2026-09-02](../elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md)
 - [Exact profile audit of the semistable MW2 endpoints (2026-08-21)](../elkies-k3/SEMISTABLE_MW2_PROFILE_AUDIT_2026-08-21.md)
 - [One planner-ready foundry route: exact H3 A1 to published R17](../elkies-k3/SINGLE_PLANNER_READY_FOUNDRY_ROUTE_2026-09-03.md)
+- [A concrete star510 point for the isotropic-parent descent gate](../elkies-k3/STAR510_ISOTROPIC_PARENT_DESCENT_GATE_2026-09-15.md)
 - [Surface--fibration--character identity graph](../elkies-k3/SURFACE_FIBRATION_CHARACTER_GRAPH_2026-09-04.md)
 - [Three MW3 reconstruction branches](../elkies-k3/THREE_MW3_BRANCHES.md)
 - [Umbral complement-orbit pilot (2026-09-02)](../elkies-k3/UMBRAL_COMPLEMENT_ORBIT_PILOT_2026-09-02.md)

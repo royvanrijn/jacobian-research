@@ -28,8 +28,10 @@ it does not assert bad reduction of the abstract genus-zero curve.
 **This norm-character gate alone leaves all five coefficient allocations
 inside the collision residues.** The subsequent
 [coefficient proof](Q80_GENUS_ZERO_COLLISION_CLOSURE_2026-09-14.md) closes them.
-The twelve genus-one allocations and other parents are not
-excluded by this theorem. No positive [MW17 two-gain cover](CORRELATED_QUADRATIC_GAINS_2026-09-12.md)
+Genus-one allocations and other parents are outside this theorem. The later
+[nodal orientation](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) and
+[cubic reciprocity](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md) proofs
+leave five genus-one allocations open. No positive [MW17 two-gain cover](CORRELATED_QUADRATIC_GAINS_2026-09-12.md)
 is constructed. The earlier same-branch proofs keep their own assurance;
 this component does not use their norm-eight singular-pencil replay.
 

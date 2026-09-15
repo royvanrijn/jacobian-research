@@ -1,0 +1,26 @@
+{
+  "schema": "quadratic-contact-interpolation-v1",
+  "status": "PASS",
+  "F0_determinant": "-T**2*V*v + 2*T*V*t*v + U**2 - 2*U*u - V*t**2*v + u**2",
+  "F2_determinant": "(-T + t)*(-T*V - T*v + 2*U + V*t + t*v - 2*u)",
+  "quadratic_F0_condition": "c^2+c*d*s+d^2*p=b^2",
+  "quadratic_F2_condition": "c=b-s*d/2",
+  "controls": {
+    "F0_rank": 3,
+    "F0_kernel": [
+      -1,
+      -1,
+      2,
+      1
+    ],
+    "F2_rank": 3,
+    "F2_kernel": [
+      -3,
+      -1,
+      -1,
+      1
+    ],
+    "ruling_degeneracy_rank": 2
+  },
+  "boundary": "Jet identities and linear algebra controls only. No control is asserted to lie on an actual halving curve. The primitive monodromy, quadratic-point finiteness and contact rigidity are written/inherited mathematics. No positive MW17 correlated-gain cover is supplied."
+}

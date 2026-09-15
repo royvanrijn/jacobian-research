@@ -1,0 +1,43 @@
+{
+  "bank_verification_sha256": "b3b8f62d5ee515932a1c511d2216ae44ae430f02f20d7292de42158f494be946",
+  "boundary": "Previously tested development cloud, independent full-rank reconciliation and new compatible bank; no performance outcome.",
+  "cloud_directions": 2,
+  "cpu_seconds": 10.724915671000002,
+  "enlarged_rank": 20,
+  "independent_rank": {
+    "no_two_torsion_prime": 47,
+    "primes_used": [
+      17,
+      19,
+      23,
+      29,
+      37,
+      41,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137,
+      139,
+      149
+    ],
+    "rank": 20
+  },
+  "initial_rank": 18,
+  "point_search_calls": 0,
+  "status": "PASS_COMPLETE_CLOUD_REBUILD"
+}

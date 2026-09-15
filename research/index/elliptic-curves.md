@@ -27,6 +27,7 @@ python3 research/scripts/research.py show ID
 | `EC-ADAPTIVE-HALF-LATTICE-CASCADE-20260907` | proved | [Generic-only adaptive low-shell policy reaches rank28 on302; ten matched siblings remain17](../elliptic-curves/notes/ADAPTIVE_HALF_LATTICE_VISIBILITY_2026-09-07.md) |
 | `EC-E29` | proved | [Exact public rank-at-least-29 record replay](../elliptic-curves/notes/BASELINES_AND_LITERATURE.md) |
 | `EC-KIH14` | proved | [Exact Kihara arithmetic rank-at-least-14 family replay](../elliptic-curves/notes/BASELINES_AND_LITERATURE.md) |
+| `EC-CANCELLATION-BASIS-AMPLIFICATION-20260914` | proved | [A 24-curve basis-refresh ablation fails its charged later-direction gate; new anchors are rarely exposed](../elliptic-curves/notes/BASIS_AWARE_AMPLIFICATION_2026-09-14.md) |
 | `EC-BLIND-FACTOR-FREE-28-20260907` | proved | [Full49 factor-free blind regression recovers an independent28th direction from original27](../elliptic-curves/notes/BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md) |
 | `EC-DET1092-PROSPECTIVE-POINT-PILOT-20260907` | proved | [Two fixed non-anchor MW17 fibres complete98 factor-free boxes and remain17](../elliptic-curves/notes/BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md) |
 | `EC-PROSPECTIVE-FACTOR-FREE-PORTFOLIO-20260907` | proved | [Blind-control-gated539-box point portfolio completes with no added direction](../elliptic-curves/notes/BLIND_FACTOR_FREE_CONTROL_AND_PROSPECTIVE_EXPOSURE_2026-09-07.md) |
@@ -41,6 +42,7 @@ python3 research/scripts/research.py show ID
 | `EC-CANCELLATION-ADAPTIVE-SCHEDULER-20260914` | proved | [Adaptive residue-box scheduling passes new CPU holdouts and high-rank transfer; four fresh fibres certify lower bounds17–18](../elliptic-curves/notes/CANCELLATION_ADAPTIVE_SCHEDULER_2026-09-14.md) |
 | `EC-CANCELLATION-BASIS-REFRESH-20260914` | proved | [A fresh rank18 subgroup gets an independently verified compatible bank in5.176 CPU seconds without point search](../elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md) |
 | `EC-CANCELLATION-CLOUD-SCHEDULER-20260914` | proved | [Full-cloud cancellation scheduling fails a new24-curve two-direction gate; exact subgroup blindness is exposed](../elliptic-curves/notes/CANCELLATION_CLOUD_SCHEDULER_2026-09-14.md) |
+| `EC-CANCELLATION-CERTIFIED-BANK-AMPLIFICATION-20260915` | proved | [Certified-bank refresh passes both charged later-gain validation blocks](../elliptic-curves/notes/CERTIFIED_BANK_AMPLIFICATION_CONTROL_2026-09-15.md) |
 | `EC-CLASS-SPAN-GRH-MACHINERY-20260906` | proved | [Reusable class-group span verifier with GRH-conditional upper bounds](../elliptic-curves/notes/CLASS_SPAN_GRH_MACHINERY.md) |
 | `EC-COMPACT192-FIVE-RANK26-20260906` | proved | [Five compact192 curves have new catalogue-unmatched minimal rank26 models](../elliptic-curves/notes/COMPACT192_FIVE_RANK26_CURVES_2026-09-06.md) |
 | `EC-COMPACT192-SPECIALIZED-EXPOSURE-20260906` | proved | [All five compact192 own26-point follow-ups complete245 boxes without gain](../elliptic-curves/notes/COMPACT192_SPECIALIZED_FOLLOWUP_2026-09-06.md) |
@@ -166,6 +168,7 @@ python3 research/scripts/research.py show ID
 | `EC-DET1092-RR-INHERITED-POINT-20260908` | proved | [Every smooth rational member of the historical RR net has an explicit inherited rational point](../elliptic-curves/notes/DET1092_UNIVERSAL_RR_DESCENT_PREFLIGHT_2026-09-08.md) |
 | `EC-DET1092-UNIVERSAL-RR-DESCENT-PREFLIGHT-20260908` | proved | [Explicit universal RR genus-two family, pointed-quartic solubility gate, and non-strict first gain](../elliptic-curves/notes/DET1092_UNIVERSAL_RR_DESCENT_PREFLIGHT_2026-09-08.md) |
 | `EC-DET1092-ALL-DEGREE-UNRAMIFIED-KUMMER-OBSTRUCTION-20260909` | proved | [Every everywhere-unramified norm-square class on the determinant1092 cubic spectral curve is inherited from generic MW17](../elliptic-curves/notes/DET1092_UNRAMIFIED_KUMMER_OBSTRUCTION_2026-09-09.md) |
+| `EC-CANCELLATION-EARLY-GENERATOR-20260914` | proved | [Early generator exposure produces 28 finite accessibility witnesses but fails both charged validation blocks](../elliptic-curves/notes/EARLY_GENERATOR_EXPOSURE_CONTROL_2026-09-14.md) |
 | `EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS` | proved | [Complete bisection specialization census at five certified high-rank fibres](../elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md) |
 | `EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES` | proved | [Complete bisection visibility boundary and exact published-R17 fibre exclusions](../elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md) |
 | `EC-ENDPOINT-POINT-EXPOSURE-20260906` | proved | [All21 omitted endpoint point trials complete252 boxes without high-rank inventory gain](../elliptic-curves/notes/ENDPOINT_POINT_TRIAL_2026-09-06.md) |
@@ -240,6 +243,7 @@ python3 research/scripts/research.py show ID
 | `EC-ICARM-WGXLI-R17-BOUNDED-REBASING` | proved | [Bounded signed-permutation and one-shear rejection for the five-fibre wgxli target](../elliptic-curves/notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md) |
 | `EC-ICARM-WGXLI-R17-FIRST-JET` | proved | [Complete projective mod-17, mod-53 and mod-67 first-jet obstructions for literal five-fibre wgxli interpolation](../elliptic-curves/notes/ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md) |
 | `EC-ICARM-WGXLI-R17-LINEAGE` | proved | [Five-fibre public fingerprint for the labelled wgxli rank-17 lineage](../elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md) |
+| `EC-CANCELLATION-BANK-CERTIFICATES-20260915` | proved | [Independent certificates preserve 34 banks and reduce complete rebuilding CPU by 30.17 percent](../elliptic-curves/notes/INDEPENDENT_BANK_CERTIFICATES_2026-09-15.md) |
 | `EC-INVENTORY185-CROSS-FAMILY-INCIDENCE-20260906` | proved | [All185 inventory curves have complete twelve-presentation incidence](../elliptic-curves/notes/INVENTORY185_INCIDENCE_2026-09-06.md) |
 | `EC-INVENTORY187-CONDUCTOR-BOUNDS-20260906` | proved | [All187 inventory conductor bounds and independent local Tate replay](../elliptic-curves/notes/INVENTORY187_CONDUCTOR_BOUNDS_2026-09-06.md) |
 | `EC-INVENTORY188-KNOWN28-CHART-COVERAGE-20260907` | proved | [Known28 witness coverage does not improve under the fixed own27 chart policy](../elliptic-curves/notes/INVENTORY188_CHART_COVERAGE_2026-09-07.md) |
@@ -363,6 +367,7 @@ python3 research/scripts/research.py show ID
 | `EC-SOLUBLE-PAIR-CARRIER-HEIGHT-GATE-20260906` | proved | [Actual soluble carrier produces19-point images but no new small model in twelve words](../elliptic-curves/notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md) |
 | `EC-SOLUBLE-PAIR-INVARIANT-HEIGHT-GATE-20260906` | proved | [The seven fixed carrier images fail360 bits after any integral normalization](../elliptic-curves/notes/SOLUBLE_PAIR_CARRIER_HEIGHT_GATE_2026-09-06.md) |
 | `EC-SPECIALIZED-PARITY-CONTROL-20260906` | proved | [Specialized parity sample recovers known29 at125000; all six new27 curves remain27](../elliptic-curves/notes/SPECIALIZED_PARITY_CONTROL_2026-09-06.md) |
+| `EC-CANCELLATION-SUBGROUP-ACCESSIBILITY-20260914` | proved | [Four unused rebuilt charts give exact new-generator-dependent visibility witnesses](../elliptic-curves/notes/SUBGROUP_ACCESSIBILITY_CAUSAL_AUDIT_2026-09-14.md) |
 | `EC-SUBMITTED627-630-EXACT-CONDUCTORS-20260907` | proved | [Exact complete bad-prime lists and conductors for all four ICARM627–630](../elliptic-curves/notes/SUBMITTED627_630_BAD_PRIMES_2026-09-07.md) |
 | `EC-DISCARDED-SHARD-NEW-CURVES-20260906` | proved | [Eight more certified curves and a70-curve inventory from saved sign-shard finalists](../elliptic-curves/notes/TRANSLATED_HEIGHT_AND_DISCARDED_SHARDS_2026-09-06.md) |
 | `EC-NATIVE29-TRANSLATED-HEIGHT-20260906` | proved | [Exact translated visibility and a generic17-only27-to28 height control](../elliptic-curves/notes/TRANSLATED_HEIGHT_AND_DISCARDED_SHARDS_2026-09-06.md) |
@@ -483,6 +488,7 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Record curves 28, 29, 273 and 302: comparative height-lattice audit](../elliptic-curves/notes/RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md)
 - [Completed follow-ups on the two wider-retention27-point curves](../elliptic-curves/notes/RETENTION_RANK27_FOLLOWUPS_2026-09-06.md)
 - [Seed production and amplification in retained search history](../elliptic-curves/notes/SEED_AND_AMPLIFICATION_HISTORY_2026-09-13.md)
+- [Selmer supply versus visible Mordell–Weil gain](../elliptic-curves/notes/SELMER_SUPPLY_VERSUS_REALIZATION_2026-09-14.md)
 - [Shared arithmetic and search runtime](../elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md)
 - [Bounded follow-up of the new small-conductor rank22 curve](../elliptic-curves/notes/SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md)
 - [Structural-search groundwork](../elliptic-curves/notes/STRUCTURAL_SEARCH_GROUNDWORK.md)

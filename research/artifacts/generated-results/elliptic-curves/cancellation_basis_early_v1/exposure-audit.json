@@ -1,0 +1,761 @@
+{
+  "boundary": "Post-protocol receipt accounting and input-binding inspection. Arithmetic replays are the separately retained independently checked worker results. Tail witnesses assert coordinates, not rational points. This supplement changes no selection policy or promotion rule.",
+  "paired_initial_exposure": [
+    {
+      "case": "fcf6ce8e6a518eb715d2",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "d8118d08f97701397827",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "8fbeacf575f33ec16357",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "4eadec033b5416e7855d",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "a6752d6c85aa85d8fe24",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "d33618f0b85ea3ff4912",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "e5e6fd196dc41ae876b6",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "e67479193d7033a541d3",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "7aefc0eeab0533699159",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "b719b7f68cfa87501099",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "b8fa92c40acb2c6edf66",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "6fd837e7455eee0e53e4",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "4523c54d951c995e467d",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": false
+    },
+    {
+      "case": "d572443b6b5c9f96a1a8",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "d4f94f360b293a5093df",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "716770c5430b7c9b2bfd",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "81100911d8bbb905961f",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "fc08e3733b24f1ae6679",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "0531f9a2aadea8f0dc7e",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "208dde8d631796bb6548",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "97fd04d181c5d7fef317",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "24ae4cca18d254c90520",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "443b9e0c7fc39f223c79",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    },
+    {
+      "case": "b82a34c98dc8a1faf006",
+      "same_initial_bank": true,
+      "same_pre_first_gain_point_clouds": true
+    }
+  ],
+  "point_call_statuses": {
+    "point_call_bounded_search_complete": 1618,
+    "point_call_bounded_search_timeout": 23
+  },
+  "point_search_calls": 0,
+  "protocol_sha256": "4d42c491807a0eef8d32d3f73d4d110e87b86e10138cc1e68d488d52b73e36e5",
+  "rows": [
+    {
+      "arm": "fixed_bank",
+      "case": "fcf6ce8e6a518eb715d2",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 16,
+        "tail_coordinate_witness_complete_calls": 16,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "fcf6ce8e6a518eb715d2",
+      "counts": {
+        "exported_anchors_using_added_generator": 42,
+        "exported_new_anchors": 42,
+        "post_refresh_calls": 18,
+        "post_refresh_calls_using_added_generator": 18,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 16,
+        "tail_coordinate_witness_complete_calls": 16,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "d8118d08f97701397827",
+      "counts": {
+        "exported_anchors_using_added_generator": 47,
+        "exported_new_anchors": 47,
+        "post_refresh_calls": 26,
+        "post_refresh_calls_using_added_generator": 26,
+        "post_refresh_directions": 1,
+        "post_refresh_directions_using_added_generator": 1,
+        "tail_coordinate_witness_calls": 22,
+        "tail_coordinate_witness_complete_calls": 22,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "d8118d08f97701397827",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 35,
+        "tail_coordinate_witness_complete_calls": 34,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "8fbeacf575f33ec16357",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 32,
+        "tail_coordinate_witness_complete_calls": 32,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "8fbeacf575f33ec16357",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 32,
+        "tail_coordinate_witness_complete_calls": 32,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "4eadec033b5416e7855d",
+      "counts": {
+        "exported_anchors_using_added_generator": 35,
+        "exported_new_anchors": 35,
+        "post_refresh_calls": 4,
+        "post_refresh_calls_using_added_generator": 4,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 7,
+        "tail_coordinate_witness_complete_calls": 7,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "4eadec033b5416e7855d",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 12,
+        "tail_coordinate_witness_complete_calls": 12,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "a6752d6c85aa85d8fe24",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 32,
+        "tail_coordinate_witness_complete_calls": 32,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "a6752d6c85aa85d8fe24",
+      "counts": {
+        "exported_anchors_using_added_generator": 31,
+        "exported_new_anchors": 31,
+        "post_refresh_calls": 21,
+        "post_refresh_calls_using_added_generator": 21,
+        "post_refresh_directions": 1,
+        "post_refresh_directions_using_added_generator": 1,
+        "tail_coordinate_witness_calls": 17,
+        "tail_coordinate_witness_complete_calls": 16,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "d33618f0b85ea3ff4912",
+      "counts": {
+        "exported_anchors_using_added_generator": 33,
+        "exported_new_anchors": 33,
+        "post_refresh_calls": 30,
+        "post_refresh_calls_using_added_generator": 30,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 21,
+        "tail_coordinate_witness_complete_calls": 21,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "d33618f0b85ea3ff4912",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 4,
+        "tail_coordinate_witness_complete_calls": 4,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "e5e6fd196dc41ae876b6",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 22,
+        "tail_coordinate_witness_complete_calls": 22,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "e5e6fd196dc41ae876b6",
+      "counts": {
+        "exported_anchors_using_added_generator": 43,
+        "exported_new_anchors": 43,
+        "post_refresh_calls": 6,
+        "post_refresh_calls_using_added_generator": 6,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 11,
+        "tail_coordinate_witness_complete_calls": 11,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "e67479193d7033a541d3",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 38,
+        "tail_coordinate_witness_complete_calls": 37,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "e67479193d7033a541d3",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 38,
+        "tail_coordinate_witness_complete_calls": 37,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "7aefc0eeab0533699159",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 21,
+        "tail_coordinate_witness_complete_calls": 21,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "7aefc0eeab0533699159",
+      "counts": {
+        "exported_anchors_using_added_generator": 34,
+        "exported_new_anchors": 34,
+        "post_refresh_calls": 14,
+        "post_refresh_calls_using_added_generator": 14,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 8,
+        "tail_coordinate_witness_complete_calls": 8,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "b719b7f68cfa87501099",
+      "counts": {
+        "exported_anchors_using_added_generator": 34,
+        "exported_new_anchors": 34,
+        "post_refresh_calls": 6,
+        "post_refresh_calls_using_added_generator": 6,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 5,
+        "tail_coordinate_witness_complete_calls": 5,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "b719b7f68cfa87501099",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 8,
+        "tail_coordinate_witness_complete_calls": 8,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "b8fa92c40acb2c6edf66",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 44,
+        "tail_coordinate_witness_complete_calls": 44,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "b8fa92c40acb2c6edf66",
+      "counts": {
+        "exported_anchors_using_added_generator": 37,
+        "exported_new_anchors": 37,
+        "post_refresh_calls": 6,
+        "post_refresh_calls_using_added_generator": 6,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 14,
+        "tail_coordinate_witness_complete_calls": 14,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "6fd837e7455eee0e53e4",
+      "counts": {
+        "exported_anchors_using_added_generator": 32,
+        "exported_new_anchors": 32,
+        "post_refresh_calls": 17,
+        "post_refresh_calls_using_added_generator": 17,
+        "post_refresh_directions": 1,
+        "post_refresh_directions_using_added_generator": 1,
+        "tail_coordinate_witness_calls": 19,
+        "tail_coordinate_witness_complete_calls": 18,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "6fd837e7455eee0e53e4",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 34,
+        "tail_coordinate_witness_complete_calls": 34,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "4523c54d951c995e467d",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 30,
+        "tail_coordinate_witness_complete_calls": 30,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "4523c54d951c995e467d",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 30,
+        "tail_coordinate_witness_complete_calls": 29,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "d572443b6b5c9f96a1a8",
+      "counts": {
+        "exported_anchors_using_added_generator": 45,
+        "exported_new_anchors": 45,
+        "post_refresh_calls": 11,
+        "post_refresh_calls_using_added_generator": 11,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 6,
+        "tail_coordinate_witness_complete_calls": 6,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "d572443b6b5c9f96a1a8",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 10,
+        "tail_coordinate_witness_complete_calls": 10,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "d4f94f360b293a5093df",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 12,
+        "tail_coordinate_witness_complete_calls": 12,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "d4f94f360b293a5093df",
+      "counts": {
+        "exported_anchors_using_added_generator": 32,
+        "exported_new_anchors": 32,
+        "post_refresh_calls": 6,
+        "post_refresh_calls_using_added_generator": 6,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 5,
+        "tail_coordinate_witness_complete_calls": 5,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "716770c5430b7c9b2bfd",
+      "counts": {
+        "exported_anchors_using_added_generator": 43,
+        "exported_new_anchors": 43,
+        "post_refresh_calls": 11,
+        "post_refresh_calls_using_added_generator": 11,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 6,
+        "tail_coordinate_witness_complete_calls": 6,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "716770c5430b7c9b2bfd",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 2,
+        "tail_coordinate_witness_complete_calls": 2,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "81100911d8bbb905961f",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 30,
+        "tail_coordinate_witness_complete_calls": 30,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "81100911d8bbb905961f",
+      "counts": {
+        "exported_anchors_using_added_generator": 41,
+        "exported_new_anchors": 41,
+        "post_refresh_calls": 11,
+        "post_refresh_calls_using_added_generator": 11,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "tail_coordinate_witness_calls": 8,
+        "tail_coordinate_witness_complete_calls": 8,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "fc08e3733b24f1ae6679",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 33,
+        "tail_coordinate_witness_complete_calls": 33,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "fc08e3733b24f1ae6679",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 33,
+        "tail_coordinate_witness_complete_calls": 33,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "0531f9a2aadea8f0dc7e",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 40,
+        "tail_coordinate_witness_complete_calls": 39,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "0531f9a2aadea8f0dc7e",
+      "counts": {
+        "exact_completed_duplicates_skipped": 12,
+        "exported_anchors_using_added_generator": 10,
+        "exported_new_anchors": 10,
+        "post_refresh_calls": 39,
+        "post_refresh_calls_using_added_generator": 30,
+        "post_refresh_directions": 0,
+        "post_refresh_directions_using_added_generator": 0,
+        "tail_coordinate_witness_calls": 34,
+        "tail_coordinate_witness_complete_calls": 33,
+        "verified_rebuilds": 1
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "208dde8d631796bb6548",
+      "counts": {
+        "exported_anchors_using_added_generator": 22,
+        "exported_new_anchors": 22,
+        "post_refresh_calls": 1,
+        "post_refresh_calls_using_added_generator": 1,
+        "post_refresh_directions": 2,
+        "post_refresh_directions_using_added_generator": 2,
+        "verified_rebuilds": 1
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "208dde8d631796bb6548",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 4,
+        "tail_coordinate_witness_complete_calls": 4,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "97fd04d181c5d7fef317",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 38,
+        "tail_coordinate_witness_complete_calls": 37,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "97fd04d181c5d7fef317",
+      "counts": {
+        "exported_anchors_using_added_generator": 20,
+        "exported_new_anchors": 20,
+        "post_refresh_calls": 45,
+        "post_refresh_calls_using_added_generator": 45,
+        "post_refresh_directions": 0,
+        "post_refresh_directions_using_added_generator": 0,
+        "tail_coordinate_witness_calls": 30,
+        "tail_coordinate_witness_complete_calls": 29,
+        "verified_rebuilds": 1
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "24ae4cca18d254c90520",
+      "counts": {
+        "exported_anchors_using_added_generator": 38,
+        "exported_new_anchors": 38,
+        "post_refresh_calls": 25,
+        "post_refresh_calls_using_added_generator": 25,
+        "post_refresh_directions": 1,
+        "post_refresh_directions_using_added_generator": 1,
+        "tail_coordinate_witness_calls": 20,
+        "tail_coordinate_witness_complete_calls": 20,
+        "verified_rebuilds": 2
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "24ae4cca18d254c90520",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 34,
+        "tail_coordinate_witness_complete_calls": 34,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "443b9e0c7fc39f223c79",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 38,
+        "tail_coordinate_witness_complete_calls": 37,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "443b9e0c7fc39f223c79",
+      "counts": {
+        "exact_completed_duplicates_skipped": 9,
+        "exported_anchors_using_added_generator": 12,
+        "exported_new_anchors": 12,
+        "post_refresh_calls": 38,
+        "post_refresh_calls_using_added_generator": 36,
+        "post_refresh_directions": 0,
+        "post_refresh_directions_using_added_generator": 0,
+        "tail_coordinate_witness_calls": 31,
+        "tail_coordinate_witness_complete_calls": 30,
+        "verified_rebuilds": 1
+      }
+    },
+    {
+      "arm": "basis_refresh",
+      "case": "b82a34c98dc8a1faf006",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 36,
+        "tail_coordinate_witness_complete_calls": 36,
+        "verified_rebuilds": 0
+      }
+    },
+    {
+      "arm": "fixed_bank",
+      "case": "b82a34c98dc8a1faf006",
+      "counts": {
+        "exported_anchors_using_added_generator": 0,
+        "exported_new_anchors": 0,
+        "tail_coordinate_witness_calls": 36,
+        "tail_coordinate_witness_complete_calls": 36,
+        "verified_rebuilds": 0
+      }
+    }
+  ],
+  "source_sha256": "bfc1a49ce1409342fc12eb3a441f5875ec389f08ad4cdabe2503f05d06570dbe",
+  "status": "PASS_RETAINED_BYTES_AND_INPUT_BINDINGS",
+  "supervision_sha256": "ce671fe0a77d78e0ce9c22d252448904b2b1157ed06e36f937b77a9b1300d807",
+  "totals": {
+    "basis_refresh": {
+      "exact_completed_duplicates_skipped": 21,
+      "exported_anchors_using_added_generator": 631,
+      "exported_new_anchors": 631,
+      "post_refresh_calls": 335,
+      "post_refresh_calls_using_added_generator": 324,
+      "post_refresh_directions": 28,
+      "post_refresh_directions_using_added_generator": 28,
+      "tail_coordinate_witness_calls": 449,
+      "tail_coordinate_witness_complete_calls": 442,
+      "verified_rebuilds": 34
+    },
+    "fixed_bank": {
+      "exported_anchors_using_added_generator": 0,
+      "exported_new_anchors": 0,
+      "tail_coordinate_witness_calls": 605,
+      "tail_coordinate_witness_complete_calls": 600,
+      "verified_rebuilds": 0
+    }
+  }
+}

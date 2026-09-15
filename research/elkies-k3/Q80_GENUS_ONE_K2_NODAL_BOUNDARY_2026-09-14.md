@@ -15,9 +15,12 @@ Here g is the agreement branch factor and d the disagreement factor.
 Thus every integral coefficient solution, and every other branch reduction,
 is excluded over Q_131, with no coefficient-height or denominator bound.
 
-**The nodal denominator boundary (1) remains UNKNOWN.** No k2 allocation
-is declared empty. All twelve previously surviving genus-one allocations
-remain open; this result sharply restricts three of them. The positive
+**This component leaves the nodal denominator boundary (1) unresolved.**
+The later [nodal orientation proof](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md)
+closes it and all three k2 allocations. The subsequent
+[cubic reciprocity proof](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md)
+closes k1; five k0 genus-one allocations remain open. The frozen result here
+retains its narrower UNKNOWN boundary. The positive
 [MW17 parent with two gains and an infinite quadratic base](CORRELATED_QUADRATIC_GAINS_2026-09-12.md)
 remains unconstructed. The earlier genus-zero norm-eight replay gap is
 neither used nor upgraded here.
@@ -339,10 +342,12 @@ resolved the startup issue before freezing. No frozen run failed and no
 frozen source was retagged. The written stable-map, parity and local-base
 arguments are not formally verified. No older norm-eight assurance changes.
 
-The next k2 gate is the actual characteristic-zero coefficient system near
-(1), with the valuation pattern (11), the literal scalar and smooth generic
-branch fibres retained. Higher coefficient denominators cannot be discarded
-as a bounded-search failure. The other nine genus-one allocations and other
-actual MW17 parents remain separate construction routes. No rational
+The characteristic-zero coefficient system near (1), with the valuation
+pattern (11), literal scalar and smooth generic branch fibres, was the next
+gate left by this component. The separate
+[orientation theorem](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) now
+excludes it for all denominator sizes. After the subsequent cubic reciprocity
+proof, the five k0 genus-one allocations and other actual MW17 parents
+remain construction routes. No rational
 coefficient lift, positive-rank base satisfying the full section system, or
 infinite rank-at-least19 source is supplied by this theorem.

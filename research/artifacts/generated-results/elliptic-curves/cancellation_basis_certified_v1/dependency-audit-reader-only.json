@@ -1,0 +1,6 @@
+{
+  "boundary": "Predeclared retention and replay entry points. Any extra source would be explicitly reported here, without retagging the primary seal.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/retain_cancellation_basis_certified_v2.py": "3489ea62d96c3d52a9a250e8b23b9a7daf5e338bf8932d59b775b4ada43576b9"
+  }
+}

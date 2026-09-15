@@ -1,0 +1,72 @@
+{
+  "boundary": "Conditional even-rank/orthogonal-orbit theorem and explicit low-rank K3 control. No arithmetic MW17 positive endpoint. Geometry, height and Weil bounds remain written proof dependencies.",
+  "control": {
+    "A": "-t**6 + 5*t**4 - t**2",
+    "B": "t**12 + t**10 + 3*t**7 - 3*t**5 + t**2 + 1",
+    "H2_trace": 30,
+    "P": [
+      "t",
+      "w*(t^5+1)"
+    ],
+    "Q": [
+      "-t^3",
+      "w*(1-t^5)"
+    ],
+    "arithmetic_MW_upper": 10,
+    "cover": "w^2=t^2+1",
+    "fibre_counts": [
+      12,
+      14,
+      10,
+      17,
+      17,
+      12,
+      10,
+      19,
+      12,
+      16,
+      16,
+      19,
+      14,
+      12
+    ],
+    "genus": 0,
+    "good_prime": 13,
+    "height_boundary": "Written pole/intersection proof; polynomial support checks retained.",
+    "height_gram": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "point_and_action_identities": true,
+    "rational_NS_upper": 12,
+    "surface_count": 200
+  },
+  "elapsed_seconds": 0.04811587400035933,
+  "inose": {
+    "I": "-32365780205044858729198815090937316771094110240537887368179093959945665925648762523253477816171315200000000",
+    "J": "-32365780205044858729198815090937316771094110240537887404341343490539729271703144228182401113801641215999999",
+    "fixed_fibres_smooth": true,
+    "fixed_point_field": "Q(sqrt(J)), imaginary quadratic and not Q(i)",
+    "k": "-35516519731375621620714808663509544218512499837783809086736569937357452089638464205531621764414090893194232883029375105154856798301310928428756443501493462890252720929093984277036632113324132072184885206557182947812692895206005862327120928072406281038950207745383283870630723327785689893325627726249141051513569057715688819441076753882752543038516774014627211952373036627603436323884117466842288583673749254553237661926672895565788549289253971234245383187645006646213360601204645740169040696129728002449076038622248960000000000000000",
+    "negative_J_floor_sqrt": "179904919902277432767400455041494636400820657648700771",
+    "negative_J_is_square": false,
+    "scope": "Canonical Inose reversal and its Q-conjugates, on every equivariant rational fibration and every constant twist; other involutions are not excluded.",
+    "source": "artifacts/generated-results/elkies-k3-det622-inose-source-v1/certificate.json",
+    "source_sha256": "94b2c6400e03597a4930b8ec9e792725d78f2d52585da6a0ec535d8f2854ef33"
+  },
+  "limits": {
+    "cpu_seconds": 20,
+    "memory_bytes": 1073741824
+  },
+  "schema": "order-four-gain-mechanism-v1",
+  "script_sha256": "e61f5bce09217078a1ebcf27c982248da9aca5896cfaa04c7f70afc81e131f19",
+  "software": {
+    "sympy": "1.14.0"
+  }
+}

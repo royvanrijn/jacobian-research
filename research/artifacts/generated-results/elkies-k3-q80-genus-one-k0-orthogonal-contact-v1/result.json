@@ -1,0 +1,22 @@
+{
+  "constant_twist_contacts": 1,
+  "external_review": false,
+  "formal_verification": false,
+  "input_sha256": "849aeb2249f5005a2e23b511d6183fae201a724379d2733ce9e79dd11e89658d",
+  "mixed_valuation_excluded_by_written_proof": true,
+  "new_analytic_argument_independently_verified": false,
+  "nonsquare_contacts": 0,
+  "positive_mw17_target_complete": false,
+  "records": {
+    "constant-contacts.json": "d043f89ed8961a6d5dbbbfcd48f0dd3c239551972cf6cd093704c9cd30fa1eda",
+    "formal-deformation.json": "eef173f26382ee10e59da9f981d569573468b7cd67d7e3098e857c5b14c42931",
+    "nodal-contact.json": "315da33b75f525a2a09ee13793cbe2a1af80fbf6f85625ca86ec94be1ffc5fca"
+  },
+  "remaining_boundary": "UNKNOWN",
+  "remaining_genus1_k0_j": [
+    2
+  ],
+  "remaining_valuation_pattern": "both negative",
+  "status": "PASS",
+  "written_deformation_and_valuation_argument_required": true
+}

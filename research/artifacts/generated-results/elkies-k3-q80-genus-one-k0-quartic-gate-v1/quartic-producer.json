@@ -1,0 +1,42 @@
+{
+  "candidate_rows": [],
+  "checkpoints": {
+    "quartic-producer/0000-0429.json": "b9c177cec19203ef228139cca592773ab64459ecce2403c0fb40b92e165bf514",
+    "quartic-producer/0429-0858.json": "10a89ca195b0deeb4acf4c867fa6768d4f9954512c77232b68f7f4343c214539",
+    "quartic-producer/0858-1287.json": "f4c9b4a2c1c5fafeceb58c82b30ef034849630387eef5d8325cc63775b2be23d",
+    "quartic-producer/1287-1716.json": "aaa3725aa6836ad66896cd2611e2a7dbcbcaf5157f35cdbe7828c51cdf005afd",
+    "quartic-producer/1716-2145.json": "58aaaa68447fbffffcb03f1a8a6b52ec80dcc5607c094d19a83b2e4648f321fa",
+    "quartic-producer/2145-2574.json": "c25494d478a5e25b04bea9481b6d95f45eb635615a71fe6e4ad4d6fae325cb84",
+    "quartic-producer/2574-3003.json": "ea916b06794f20efab96665f85ae55e08c6df7ab2dbb23304e2900c6de461c5a",
+    "quartic-producer/3003-3432.json": "88a62e522c476fd7922cf4b2c37048958567278b2a3d1eab1a593ee7fb81075e",
+    "quartic-producer/3432-3861.json": "b397d752fc51afa9db2c6c39aecfa5c89969f5e986ed21358a8d3dded21d177b",
+    "quartic-producer/3861-4290.json": "c7aa27ccc6b0df133a7cfa308320cddc1195af2afafcb9aacd1fff78bf862e29"
+  },
+  "cpu_seconds": 45.18691,
+  "first_failed_character": [
+    9201540,
+    2299578,
+    574929,
+    143902,
+    35609,
+    9116,
+    2196,
+    563,
+    141,
+    34,
+    7,
+    3,
+    4,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "input_sha256": "dbd2efd777b7b3e56143303ff47a0a48e3ec1669fd3030943217fe8a6cca07d0",
+  "orbits": 73620690,
+  "session_wall_seconds": 45.79219948494574,
+  "smooth_split": 12267623,
+  "source_sha256": "cf7ad2e88a90260ec63ed7a474af2d1f2201be75a0cffcfd788b0bade10fcd66",
+  "status": "COMPLETE"
+}

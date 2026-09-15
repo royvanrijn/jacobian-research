@@ -1,5 +1,12 @@
 # Two independent gains on one quadratic cover
 
+The [complete Q80 polynomial genus-one exclusion](Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md)
+now closes all fifteen squarefree-quartic allocations, including the final
+two-negative orthogonal case. The earlier genus-zero exclusion retains
+its separate norm-eight independent-replay gap. Other actual MW17 parents
+and higher-height rational abscissas remain available for the construction
+target. The component results below retain their original scope.
+
 The construction target remains **OPEN**. The
 [Mestre construction](R17_MESTRE_CORRELATED_SECTIONS_AND_GENUS_GATE_2026-09-13.md)
 now supplies two independent new sections on one quadratic cover of published
@@ -13,8 +20,8 @@ parent and X1092 class1. All retain twenty forced coefficient branch points
 for every rational auxiliary function. The new note gives the exact local
 removability criterion and a different common-quartic polynomial system whose
 solutions would have independent height-eight sections and singular
-arithmetic-genus-five images. That system remains unsolved on the retained
-MW17 parents.
+arithmetic-genus-five images. That system remains unsolved on the other
+three retained MW17 parents.
 
 The [common-quartic singularity analysis](COMMON_QUARTIC_SINGULARITY_LOCUS_2026-09-14.md)
 now gives explicit genus0 and positive-rank genus1 controls, each with two
@@ -28,7 +35,7 @@ the same obstruction covers the respective coefficient residue classes
 modulo5 and7. On all four retained MW17 equations, every constant abscissa
 has normalization genus at least4, so both abscissas
 in a successful common-quartic solution must be nonconstant. The complete
-fixed-parent quartic chart, including repeated quartic factors, remains open.
+fixed-parent quartic chart on those other parents remains open.
 
 The [branch-stratum reduction](COMMON_QUARTIC_BRANCH_STRATA_2026-09-14.md)
 now gives fifteen complete factor cases in nine coordinate patches. On Q80,
@@ -65,8 +72,9 @@ coefficient denominators, the constant nonsquare twist has arithmetic rank
 at most one, and the complete 1,313-section norm-four census leaves no pair
 of repeated contacts selecting distinct roots. Every simple contact has
 only a split Hensel lift. Thus the full Q80 polynomial genus-zero chart is
-closed, retaining the earlier `k=2` norm-eight replay gap. Twelve genus-one
-`k=0,1,2` allocations remain with disagreement degree2,3 or4. Other parents
+closed, retaining the earlier `k=2` norm-eight replay gap. The genus-one
+`k=2` and `k=1` cases are also closed by the separate proofs below. Five
+genus-one `k=0` allocations remain with disagreement degree4. Other parents
 and higher-height rational abscissas remain open.
 
 The [genus-one k2 gate](Q80_GENUS_ONE_K2_NODAL_BOUNDARY_2026-09-14.md)
@@ -77,9 +85,84 @@ character tables,131 interpolants,21 inconsistent lifts modulo `131^2`, and
 a `131^3` nodal coefficient census. A rational base point also forces a
 locally square literal scalar and even negative abscissa valuations; the
 base Jacobian has `v_131(j)=-4*n<0`. The existing good-reduction genus-one
-control base cannot transfer into these k2 cases. This nodal denominator
-boundary remains open, so the twelve surviving allocations are not reduced
-to nine by this theorem.
+control base cannot transfer into these k2 cases.
+
+The subsequent [nodal orientation proof](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md)
+closes this last boundary and all three genus-one `k=2` allocations over
+Q_131, without a denominator bound or a rational-point assumption. In
+either nodal residue disc, Weierstrass preparation forces a double contact
+with the simple cubic-root branch and exactly one double nodal contact.
+The two actual branch points must occupy the other local cluster, where
+their abscissa difference forces each section to switch node-root labels.
+Agreement at the first branch therefore forces agreement at the second,
+contradicting `k=2`. Exact nodal derivatives, four symbolic identities and
+three local controls replay independently; the analytic proof is written
+mathematics.
+
+The [cubic reciprocity proof](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md)
+now closes all four `k=1` genus-one allocations over Q_131. The rational
+agreement point forces coefficient integrality: the only new denominator
+reduction would put three simple cubic-root contacts over a single branch
+point. Agreement and disagreement then have disjoint residues, and the
+unused-root norm excludes repeated cubic reductions. Complete norm tests
+for partitions `1+1+1`, `1+2` and `3` leave no solution. Independent
+implementations agree on all749,320 cubic residue orbits, including the
+nodal orbit. Eight pass the unused-root test; none supplies the rational
+agreement character. Five genus-one `k=0,j=0,...,4` cases remain. If an
+abscissa there has negative coefficient valuation, the same denominator
+argument confines the branch reduction to `q_0^2`; that k0 boundary remains
+open and need not have the two-quadratic branch fields used in k2.
+The positive MW17 endpoint remains open.
+
+The [quartic norm and contact gate](Q80_GENUS_ONE_K0_QUARTIC_GATE_2026-09-14.md)
+now excludes every k0 pair with both abscissas integral at131. All five
+squarefree residue partitions fail the coupled norms. Two independent
+implementations check all73,620,690 genuine quartic base orbits, agreeing
+on12,267,623 full-splitting fibres and zero compatible root tuples. The
+complete square-reduction contact census leaves30 pairs, each with an
+inconsistent first lift modulo131^2. Every remaining k0 pair must therefore
+have branch reduction `q_0^2` and at least one negative abscissa valuation.
+That component left mixed integral/negative and two-negative pairs UNKNOWN
+in all five k0 allocations; it supplies no new section or infinite rational
+base.
+
+The subsequent [pole-degree proof](Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md)
+excludes `k=0,j=0,1,3,4`, leaving only the orthogonal case `k=0,j=2`.
+In a nodal residue disc, an analytic negative abscissa cannot choose the
+simple root at both branches: preparing a square root of the other cubic
+factor would force at least two zeros in a factor of V, which has only one.
+Every original negative section therefore chooses node roots. In the four
+excluded allocations, the sum or difference has height8 or12 and at most
+one rational pole, so it cannot place a pole in the quadratic nodal discs.
+The local root choices contradict this in both valuation patterns. In the
+remaining case both sums have height16, and each quadratic pole divisor
+must reduce to `q_0`. The branch field may still be ramified; both valuation
+patterns were left open by that component. Its analytic and height argument
+is a written proof with checked finite premises.
+
+The [mixed-valuation proof](Q80_GENUS_ONE_K0_MIXED_VALUATION_2026-09-14.md)
+now rules out an integral original abscissa in the remaining orthogonal
+case. A complete131-coefficient contact test forces a square scalar and
+one inherited norm-four seed. Its rank13 coefficient Jacobian supplies
+the unique local deformation. Comparing branch separation with the negative
+section forces denominator valuation two, whose leading coefficient would
+have to be `69+40*theta`, outside F_131. Exact arithmetic modulo131^2
+independently verifies the seed's nodal contact and this contradiction.
+That component left `k=0,j=2` with both abscissas negative. They have the same
+even negative valuation and identical primitive abscissa reductions;
+their primitive ordinate reductions can be aligned by a sign.
+
+The subsequent [meromorphic pole proof](Q80_GENUS_ONE_POLYNOMIAL_CLOSURE_2026-09-14.md)
+excludes this last case without a denominator bound. The sum has height16,
+one double pole in each nodal residue disc, and primitive abscissa
+`(Lambda/4)*q_0^2` at valuation `-2*ell`. Preparing a square root of
+`U^2-V` and retaining its poles forces `U+Z` to be a unit times
+`p^(-2*ell)*(t-xi)^2`. Its two contacts with the analytic unit root are
+simple branch points separated at valuation ell. Either original section
+requires a strictly greater separation, a contradiction. The finite
+premises and fifteen-case coverage pass; the analytic argument is a
+written proof. All Q80 polynomial genus-one cases are now excluded over Q,
+while the infinite rank-at-least19 target remains open.
 
 The [local splitting gate](COMMON_QUARTIC_LOCAL_SPLITTING_GATE_2026-09-14.md)
 certifies a fully split cubic fibre over each Q_p, for every prime from2

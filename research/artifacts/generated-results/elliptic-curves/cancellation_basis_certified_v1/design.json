@@ -1,0 +1,53 @@
+{
+  "ablation": "Both arms use the same independently certified bank constructor, complete-cloud admission, native rank checks, exploration and final replay. Both reconstruct the same initial M18 bank from16 parent anchors and export at most48 centres. fixed_bank retains its initial search subgroup and bank while retaining all admitted points. basis_refresh reconstructs from every admitted point after each positive cloud below target3, then visits latest-generator anchors first. No missing point, radius fit, residue fit or Schur diagnostic enters selection. The common initial-bank engineering saving cannot be credited as subgroup amplification.",
+  "arm_wall_seconds": 150,
+  "arms": [
+    "fixed_bank",
+    "basis_refresh"
+  ],
+  "bank_certificate_sources": {
+    "elliptic-curves/cas/verify_cancellation_basis_bank.py": "9643ff832e98cfcc9d42445851c6c54fbf9acdaed1aab789753b9c98aab636eb",
+    "elliptic-curves/cas/verify_cancellation_basis_bank_v2.py": "28f718b8502e1ba3cb086ecac66a14f05115fc5f851014a8116ec9e0c9b5df1d",
+    "elliptic-curves/cas/verify_parity_minimum.py": "542041f81d7dbdada56799ca76f1e7259ccd474c2d7ca4b1864e46a424593f8a"
+  },
+  "bank_cost_protocol_sha256": "39b78c47a40bc3376b1eb2effe2647c093e3e18152636c07e2ad302b1892e4d8",
+  "bank_policy": {
+    "anchors_per_shell": 16,
+    "canonical_per_shell": 25,
+    "exact_cvp_node_limit": 2000000
+  },
+  "bank_wall_seconds": 30,
+  "boundary": "Development-designed policy on disjoint retained-corpus known controls, in two fixed blocks. No externally pristine population claim, new rank discovery, exact rank, rank32 or state-of-the-art comparison. First-recovery gains cannot pass the later-gain gate. Numerical diagnostics and bounded misses prove no arithmetic exclusion.",
+  "cases": 24,
+  "cases_per_block": 12,
+  "continuation": "Exactly48 sequential arms, two fixed12-pair blocks, maximum4800 hard child CPU and7200 nominal worker wall seconds. All started failures and prefixes retained; no failed arm retried. Then one bounded mechanism audit and one bounded finite representative audit. No automatic fresh-fibre search or larger cap follows.",
+  "cost": "The unchanged40 working CPU allowance includes interpreter/imports, initial bank, every rebuild, all exact minimum and selection certificates, native arithmetic, maps, point calls and complete-cloud rank certificates. Atomic operations may overrun the launch allowance. Mandatory final replay is also charged in complete isolated child-process CPU. Both arms have100 CPU/150 wall hard limits. Seed/parent packets are the shared input interface. Shared eligibility preflight, transcript-only development and postmortem processes are reported separately, with conservative candidate-only charge sensitivities. No retrospective timing substitution or retry.",
+  "early_order": "At epoch0 use the original exported order. At each later epoch, fresh_start is the rank of the preceding search bank. Stable partition the new exported bank into nonzero coefficients at indices fresh_start onward; otherwise nonzero coefficients at indices18 onward; otherwise zero at indices18 onward. Execute every selected anchor factor-free then at-most-two retained neighbours, subject to the same gain/CPU stops. The stored bank itself is unchanged.",
+  "exploration": "For each anchor execute factor-free H125000 then every distinct retained neighbour (at most2) at H125000 before opening another anchor. A zero empirical radius mass never skips a job. Only exactly equivalent completed boxes on the same actual anchor are skipped, including infinity. A finite exact boundary probe records coordinates beyond old H125000 and outside completed same-anchor boxes; failure to find a probe witness remains UNKNOWN and never prunes. No optimality or exhaustive-neighbour claim.",
+  "hard_process_cpu_seconds": 100,
+  "height": 125000,
+  "hypothesis": "After equalizing the bank constructor, complete-cloud subgroup enlargement and latest-generator-first compatible anchors yield a repeatable increase in later directions per complete CPU sufficient to repay every rebuild.",
+  "initial_rank": 18,
+  "integration_protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747",
+  "maximum_calls": 288,
+  "maximum_centres": 48,
+  "maximum_extension_dimension": 4,
+  "mechanism_gate": "After both blocks finish, audit all actual later candidate gains using new generators. Independently bind native subgroup/anchor identities and square maps. Prepare old-bank and coefficient-deletion maps without targets. Evaluate both P and -P, then both signs of P + sum k_i G_i for all generators admitted above M18 before the call, each k_i in {-1,0,1}; at most18 representatives. Promotion requires at least one old-dictionary-exclusive, strict coefficient-deletion witness in each block surviving this larger finite dictionary. Numerical rank_growth diagnostics are retrospective only. No full-coset exclusion.",
+  "point_wall_seconds": 5,
+  "postmortem": {
+    "mechanism_cpu_limit": 300,
+    "point_search_calls": 0,
+    "representative_cpu_limit": 90,
+    "selection": "Every qualifying actual later gain in both fixed blocks, including target overshoots; never a selected winning subset.",
+    "wall_seconds": 420
+  },
+  "primary_gate": "Across all24 pairs, later-cloud directions per complete CPU must improve at least10 percent with central97.5-percent paired family bootstrap lower bound above1,10000 draws seed20260914. Candidate must also match or exceed uncapped total directions and three-direction target completions. Both separately frozen12-pair blocks must have later-direction/CPU ratio strictly above1 and at least one actual later gain on an anchor requiring a newly admitted generator. Undefined reference yield or bootstrap samples, any preparation/infrastructure unknown, or any absent independent proof blocks promotion. Report both blocks even if the first fails; never change policy or select the second after outcomes.",
+  "prime_bound": 500,
+  "prior_protocol_sha256": "4d42c491807a0eef8d32d3f73d4d110e87b86e10138cc1e68d488d52b73e36e5",
+  "selection": "Exclude every whole-j group in the completed early-exposure roster exclusion set. Keep retained M18 seeds with certified endpoints at least21; lexical first compatible source landscape per j. Start each family allocation at min(4,2*floor(eligible_count/2)); redistribute two slots at a time to the family with most unused eligible groups, ties by fixed family order, until24. All allocations are even. Within each family order by SHA256(cancellation-basis-certified-v1/ + j); first half assigned block0, second half block1. Both twelve-pair blocks fixed before outcomes. No replacement, interim tuning or reuse of prior controls.",
+  "status": "DESIGN_BEFORE_CERTIFIED_BANK_SEARCH_OUTCOMES",
+  "subgroup": "Consider every returned point with the same finite places through500 and independently Sage-certify every enlarged basis before reuse. Finite columns in the span stay UNKNOWN. Rebuild using the complete admitted cloud, never just enough points for the stopping target. Reset all epoch-local anchors/maps/job indices; retain only exact completed-box identities across epochs.",
+  "target_directions": 3,
+  "validation_blocks": 2,
+  "working_cpu_seconds": 40
+}

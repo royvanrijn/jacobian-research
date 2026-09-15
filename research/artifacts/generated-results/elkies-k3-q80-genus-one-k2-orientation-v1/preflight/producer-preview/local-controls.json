@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "Q": [
+        "350547471205569",
+        "29139902",
+        "1"
+      ],
+      "branch_field_over_Qp": "ramified_quadratic",
+      "contact_valuation": 1,
+      "disc_unit_mod_p": 58,
+      "disc_unit_square_mod_p": true,
+      "disc_valuation": 3,
+      "z": 38
+    },
+    {
+      "Q": [
+        "106109652760410416175946055759247504",
+        "506714082913116632",
+        "1"
+      ],
+      "branch_field_over_Qp": "unramified_quadratic",
+      "contact_valuation": 2,
+      "disc_unit_mod_p": 32,
+      "disc_unit_square_mod_p": false,
+      "disc_valuation": 6,
+      "z": 13793
+    },
+    {
+      "Q": [
+        "68268324147751656195716112871475722689",
+        "12852722992577984190",
+        "1"
+      ],
+      "branch_centers": [
+        "3582678641948713569303236153963656486992",
+        "-3582678641948713569316088876956234471182"
+      ],
+      "branch_error_valuation_lower_bound": 19,
+      "branch_field_over_Qp": "split",
+      "contact_valuation": 2,
+      "disc_unit_mod_p": 35,
+      "disc_unit_square_mod_p": true,
+      "disc_valuation": 6,
+      "sqrt_unit_mod_p_digits": "3187307490620898859796745341233914",
+      "sqrt_unit_seed": 64,
+      "valuations": {
+        "beta": 4,
+        "branch1": 2,
+        "branch2": 2,
+        "branch_separation": 3,
+        "gamma": 2,
+        "node_offset1": 1,
+        "node_offsets_sum": 2,
+        "x_difference": 1
+      },
+      "x_error_valuation_lower_bound": 17,
+      "z": 30954
+    }
+  ]
+}

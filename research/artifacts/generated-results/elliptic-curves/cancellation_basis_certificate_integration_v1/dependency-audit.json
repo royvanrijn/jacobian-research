@@ -1,0 +1,7 @@
+{
+  "boundary": "Post-integration byte-retention entry point only; no change to the155-source execution seal.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/retain_cancellation_basis_certificate.py": "4091bd5cb27f048f52ff5fdd7ae1372eb6c068ddbb1bd41d006c4326c55d86ae"
+  },
+  "primary_protocol_sha256": "b1ad418afcfc055dc2f049291469a6547a0d002ad98deb2f6fd329654fada747"
+}

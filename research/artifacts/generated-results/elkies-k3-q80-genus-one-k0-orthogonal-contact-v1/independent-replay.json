@@ -1,0 +1,33 @@
+{
+  "analytic_proof_independently_verified": false,
+  "checker_sha256": "58282f92d2f4b250437768d5e2928d4c6dca30d326045704ebad029442871e26",
+  "constant_contact_coefficients_checked": 131,
+  "constant_contacts": 1,
+  "cpu_seconds": 0.008506978999999998,
+  "exact_unramified_modulus": 17161,
+  "formal_jacobian_rank": 13,
+  "independent_finite_replay": true,
+  "independent_nodal_word": {
+    "contact_shift": [
+      91,
+      113
+    ],
+    "required_scalar": [
+      69,
+      40
+    ],
+    "u_over_p": [
+      4,
+      128
+    ],
+    "y_over_p": [
+      63,
+      6
+    ]
+  },
+  "input_sha256": "849aeb2249f5005a2e23b511d6183fae201a724379d2733ce9e79dd11e89658d",
+  "nonsquare_contacts": 0,
+  "positive_mw17_target_complete": false,
+  "result_sha256": "6ba2f403af4376918cdba023c420972591c17a1c00eca9da1f7a66b369a2c250",
+  "status": "PASS"
+}

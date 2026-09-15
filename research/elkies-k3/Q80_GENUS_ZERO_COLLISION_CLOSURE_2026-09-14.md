@@ -10,7 +10,10 @@ Together with the earlier `k=1` and `k=2` exclusions, this closes the full
 polynomial genus-zero common-quartic chart over Q on this parent. The earlier
 `k=2` aggregate retains its explicit norm-eight singular-pencil replay gap;
 the present `k=0` component neither uses nor repairs that calculation.
-**Twelve genus-one allocations remain open.** Other parents, sections with
+**Five genus-one allocations remain open**, after the separate
+[k2 orientation](Q80_GENUS_ONE_K2_NODAL_ORIENTATION_2026-09-14.md) and
+[k1 cubic reciprocity](Q80_GENUS_ONE_K1_CUBIC_RECIPROCITY_2026-09-14.md) proofs.
+Other parents, sections with
 rational abscissas outside this polynomial chart, and covers ramified at bad
 characteristic-zero fibres remain outside this result. The positive
 [MW17 plus two-gain construction](CORRELATED_QUADRATIC_GAINS_2026-09-12.md)

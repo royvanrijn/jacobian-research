@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "case": "af401f31ecb4126b4050",
+      "charged_cpu_seconds": 4.903002999999999,
+      "files": {
+        "maps.json": "406dbfba0747a511d964c9eeb521d9d7b5af1ea0223e79d24be63f8ee1d0b332",
+        "scan.json": "d390d368a9deee02773eba10e8f6d84cce0f0adad5e9b4d11639d9e76ee0e7d7",
+        "start.json": "453f3a82a4e76e08050bffc327b1e4108b4aeb388260bcde95803fe9a0572750",
+        "worker.log": "9cde8c4f01f4e35bf0c8d075d5008e6123888101cdc9679a074adbd7b0a1c9e1"
+      },
+      "returncode": 1,
+      "status": "WORKER_FAILURE",
+      "wall_seconds": 3.576127296022605
+    }
+  ],
+  "status": "STOPPED_RETAINED_FAILURE"
+}

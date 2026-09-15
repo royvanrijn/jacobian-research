@@ -1,0 +1,8 @@
+{
+  "boundary": "Post-protocol descriptive receipt checker, not retroactively included in the pre-execution source seal.",
+  "extra_source_sha256": {
+    "elliptic-curves/cas/audit_cancellation_basis_mechanism.py": "85399e15090c05237a3d39892776053fc0eabb3e02b8835de5f8f4d267041778",
+    "elliptic-curves/cas/cancellation_basis_finish.py": "a6f3068c38e94348766c16eb6bf8c82bf6be885db70e8963984a4434d1f23887",
+    "elliptic-curves/cas/check_cancellation_basis_transitions.py": "10da25393a310ebc95c9909c55121b18d4aa04c0f7f4c3c9f29476fb2f4c94c1"
+  }
+}

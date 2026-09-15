@@ -1,0 +1,27 @@
+{
+  "at_least_one_negative_abscissa_required": true,
+  "formal_verification": false,
+  "genus1_k0_allocations_remaining": 5,
+  "input_sha256": "0d40b5ad3c10ca4316898c5bbe95e813ef293e3d25b00126b7eb429e4ef1a69c",
+  "integral_pair_candidates": 0,
+  "necessary_D_mod131": [
+    15,
+    39,
+    90,
+    124,
+    1
+  ],
+  "old_norm8_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "quartic_modulus_irreducible": true,
+  "records": {
+    "composite-norms.json": "876c4cf2c53e8e170309dddc08ccd2b0c77d058b482fed4a18c12bc938d34691",
+    "cubic-census.json": "8fd111dee43a395ad20e2d434ad53f83dfa99a7b86cd49bc7db9eb1409e9f4be",
+    "cubic-input.txt": "5f7c1bfe42c955a9abfed4286557ee03d6a9be5676e5033a2a992b063a20d5ed",
+    "square-contacts.json": "a9c7894655a673f895b77fe325cbf0f5caffb193c85ce79bf16835e6ced4d12b",
+    "square-lifts.json": "93f147c3cbf3419d16d99937b2a3dbb584f56a853d485bb3fd2959ee64ab56f5"
+  },
+  "remaining_nodal_denominator_boundary": "UNKNOWN",
+  "status": "PASS",
+  "written_integrality_and_norm_specialization_required": true
+}

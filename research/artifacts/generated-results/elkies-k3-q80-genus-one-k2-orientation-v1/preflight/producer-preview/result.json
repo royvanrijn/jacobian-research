@@ -1,0 +1,15 @@
+{
+  "finite_replay_scope": "Nodal units/derivatives, two inherited norm codes, four symbolic identities, three exact local controls.",
+  "formal_verification": false,
+  "genus1_allocations_remaining": 9,
+  "input_sha256": "a56529ac2b32766fb0cf749f1137b9a08e0dc32ff075a5213d7f9872df2c7356",
+  "old_norm8_replay_upgraded": false,
+  "positive_mw17_target_complete": false,
+  "records": {
+    "local-controls.json": "ec02540c8464455e7151cfcbeb2f845e788d6a36e5c8d440c675181b982427ba",
+    "nodal-hypotheses.json": "90e94a77d19cd51ee465bdd66803cad9ff8a93f39d4171ce3480e462ee33da4c",
+    "symbolic-identities.json": "26a95ddb7b55dc643a7c2dffc49b0097109a80a438fb0b9c5c8a332754b40c4d"
+  },
+  "status": "PASS",
+  "written_theorem": "All three polynomial Q80 genus1 k2 allocations excluded over Q_131; analytic proof required."
+}

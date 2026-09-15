@@ -1,0 +1,10 @@
+{
+  "boundary": "All archive bytes, source seals, imports, 48 primary-arm input bindings and 24 extracted endpoint proof bindings checked in an empty root. No primary search or full arithmetic replay is repeated.",
+  "bundle_sha256": "26647e92a1791f4bf683d112214da94131f60ba06670430d28c6b8d1744a0538",
+  "files": 9553,
+  "manifest_sha256": "c463e0fb44f0e5fad7965ae6ba11739740cc6b202276e2aff0be2c54b825f6f9",
+  "point_search_calls": 0,
+  "preflight": "PASS_RETAINED_BYTES_AND_INPUT_BINDINGS 48",
+  "source_sha256": "3489ea62d96c3d52a9a250e8b23b9a7daf5e338bf8932d59b775b4ada43576b9",
+  "status": "PASS_EMPTY_ROOT_BYTE_IMPORT_AND_INPUT_PREFLIGHT"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "input_sha256": "d260f6c398c786c0d3d0833a019164c0cc6aef24de5010decac345034e21d7e4",
+  "checker_sha256": "e3d449df9c0257dc1cc6a039f82b7122b5b7037637c4e5ef6dcc4476bfbadf93",
+  "upstream_commit": "65c90892f05458396f7c0e649737e612b1f7a331",
+  "curve": "2*x**3*z - 2*x**2*y**2 - 14*x**2*z**2 + x*y**3 + 25*x*y**2*z - 17*x*y*z**2 - x*z**3 - 12*y**4 + 16*y**3*z - 4*y**2*z**2",
+  "point": [
+    8,
+    3,
+    1
+  ],
+  "gradient": [
+    72,
+    -376,
+    552
+  ],
+  "smoothness_prime": 7,
+  "geometric_smoothness_via_unit_jacobian_ideals": true,
+  "weight8_sturm_bound": 864,
+  "q_expansion_identity": true,
+  "modularity_and_nonCM_status": "inherited from authors, not independently rederived",
+  "fricke_to_star_degree": 8,
+  "rational_fricke_lift": "UNKNOWN",
+  "isotropic_Inose_MW17_parent": "UNKNOWN",
+  "existing_det1020_frame_source_sha256": "2ec13d98baf296b683d67bd6b1ad591f1d9b1d6458ae35a53e69faabe1d3e21d",
+  "existing_det1020_frame_wrong_discriminant_form_modulus": 5,
+  "positive_correlated_target_complete": false
+}

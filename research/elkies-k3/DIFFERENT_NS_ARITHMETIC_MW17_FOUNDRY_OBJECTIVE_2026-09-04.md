@@ -4,6 +4,45 @@ Date: 2026-09-04.
 
 Status: **OPEN**.
 
+Current September15 frontier: [determinant1020 admits arithmetic MW17](DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md).
+The full rational marking and a primitive rootless frame now prove an
+elliptic K3/Q with saturated MW group Z^17 over Q(t), height determinant1020
+and minimum4. This is a different NS from948 and1092. The equation,
+physical nef marking and section coordinates remain uncomputed; the
+explicit foundry objective remains OPEN.
+The [explicit determinant1020 source](DET1020_EXPLICIT_RATIONAL_SOURCE_2026-09-15.md)
+now has all four split fibers, a full saturated rational marking and
+geometric Picard19 certified by reductions at41 and59. Its source
+fibration has MW rank1. The [physical nef MW17 pencil](DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15.md)
+now has an explicit integral transport, complete nef certificate and17
+saturated rational section divisor classes. Pencil functions, the MW17
+equation and section coordinates remain to compile. Earlier charts and
+failed windows are retained.
+
+The admitted sources [388](DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md),
+[622](DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) and
+[852](DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) remain globally rootful.
+The600 other historical rows remain unadmitted. Earlier counts and
+negative statements below retain their historical boundaries.
+
+Latest September 14 gate: the [rank-19 real-period theorem](REAL_RANK19_PERIOD_OBSTRUCTION_2026-09-14.md)
+excludes 31 more rows after the content filter, including 736 and 480.
+The [full determinant-800 curve](DET800_FULL_MARKING_OBSTRUCTION_2026-09-14.md)
+is X_0(200) over Q and has no rational noncuspidal point. All 21 historical
+coarse-low-genus diagnostic rows are now excluded. There are 721 unresolved
+rows in the retained queue. Continue with a full marking gate beyond that
+shortlist; these exclusions do not close the positive MW17 objective.
+
+September 14 real-place gate: the [content obstruction](REAL_MARKING_CONTENT_OBSTRUCTION_2026-09-14.md)
+now excludes 67 additional rows of the retained 820-row planner snapshot.
+The actual integral transcendental Gram content must divide two for a full
+rational marking. In particular, determinants 256 and 512 are excluded.
+There are 753 unresolved snapshot rows; the surviving low-genus diagnostics
+are 800, 736, and 480. Apply this filter before the historical priorities
+below. No new positive surface has been certified. The user's current
+milestone is the new arithmetic MW17 surface itself; the carrier and V4
+targets below are separate, stronger extensions.
+
 This different-NS objective was historically called Lane B, then Lane C.
 Curve302's [alternative MW17 parent](../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
 is now complete. Lane labels do not define a current construction queue.
@@ -23,7 +62,7 @@ is now complete. Lane labels do not define a current construction queue.
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 f2dcfada11e6b5f2 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
 
 ## Milestone
 

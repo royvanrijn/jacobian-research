@@ -1,0 +1,569 @@
+{
+  "status": "PASS",
+  "trace_index": 3,
+  "source_sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+  "checker_sha256": "f7d09df0e52b587992ed934a79086ee03f9c55bda7a353d80c5c9c0be48ec546",
+  "cases": [
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 73
+        },
+        {
+          "degree": 13,
+          "multiplicity": 1,
+          "no_rational_root_prime": 137
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 0,
+      "degree": 18,
+      "heights": [
+        14,
+        30
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 131
+        },
+        {
+          "degree": 27,
+          "multiplicity": 1,
+          "no_rational_root_prime": 131
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 1,
+      "degree": 34,
+      "heights": [
+        18,
+        58
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 79
+        },
+        {
+          "degree": 27,
+          "multiplicity": 1,
+          "no_rational_root_prime": 151
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 2,
+      "degree": 34,
+      "heights": [
+        18,
+        58
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 24,
+          "multiplicity": 1,
+          "no_rational_root_prime": 127
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 3,
+      "degree": 24,
+      "heights": [
+        6,
+        54
+      ],
+      "factors": [
+        [
+          24,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 61
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 61
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 4,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 89
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 89
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 5,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 83
+        },
+        {
+          "degree": 13,
+          "multiplicity": 1,
+          "no_rational_root_prime": 131
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 6,
+      "degree": 18,
+      "heights": [
+        14,
+        30
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 101
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 103
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 7,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 53
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 103
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 8,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 149
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 157
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 9,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 151
+        },
+        {
+          "degree": 19,
+          "multiplicity": 1,
+          "no_rational_root_prime": 131
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 10,
+      "degree": 26,
+      "heights": [
+        18,
+        42
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 43
+        },
+        {
+          "degree": 21,
+          "multiplicity": 1,
+          "no_rational_root_prime": 131
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 11,
+      "degree": 26,
+      "heights": [
+        14,
+        46
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          21,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 3,
+          "multiplicity": 1,
+          "no_rational_root_prime": 53
+        },
+        {
+          "degree": 15,
+          "multiplicity": 1,
+          "no_rational_root_prime": 61
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 12,
+      "degree": 18,
+      "heights": [
+        10,
+        34
+      ],
+      "factors": [
+        [
+          3,
+          1
+        ],
+        [
+          15,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 5,
+          "multiplicity": 1,
+          "no_rational_root_prime": 73
+        },
+        {
+          "degree": 13,
+          "multiplicity": 1,
+          "no_rational_root_prime": 137
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 13,
+      "degree": 18,
+      "heights": [
+        14,
+        30
+      ],
+      "factors": [
+        [
+          5,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 151
+        },
+        {
+          "degree": 19,
+          "multiplicity": 1,
+          "no_rational_root_prime": 199
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 14,
+      "degree": 26,
+      "heights": [
+        18,
+        42
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 83
+        },
+        {
+          "degree": 19,
+          "multiplicity": 1,
+          "no_rational_root_prime": 157
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 15,
+      "degree": 26,
+      "heights": [
+        18,
+        42
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    },
+    {
+      "factor_witnesses": [
+        {
+          "degree": 7,
+          "multiplicity": 1,
+          "no_rational_root_prime": 107
+        },
+        {
+          "degree": 11,
+          "multiplicity": 1,
+          "no_rational_root_prime": 137
+        }
+      ],
+      "infinity_x_equality": false,
+      "basis": 16,
+      "degree": 18,
+      "heights": [
+        18,
+        26
+      ],
+      "factors": [
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "rational_roots": [],
+      "common_pole_factors": []
+    }
+  ],
+  "nonpole_rational_contacts": 0,
+  "infinity_contacts": 0,
+  "only_common_pole": "P3=O at its unique rational pole",
+  "positive_correlated_target_complete": false
+}

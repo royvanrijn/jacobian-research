@@ -1,0 +1,13 @@
+{
+  "bundle_sha256": "a1d310314e1e425711a93c9350c7368f7f44127ac3d96368097317278e8358d6",
+  "cost_boundary": "Every isolated audit worker includes interpreter/imports and independent verification. Supplemental/manual smoke interpreter costs and packaging are outside these diagnostic component meters; no complete development-programme cost or performance advantage is claimed.",
+  "manifest_sha256": "a6eb23cb2ee2b98d10065c0cccda2dbb736468e91b21b32a463407d061fabf39",
+  "metered_successor_worker_cpu_seconds": 123.20276599999998,
+  "point_search_calls": 0,
+  "regression_internal_cpu_seconds": 4.2843284619999995,
+  "regressions_sha256": "886a181c0b6f5a61601bb352bdebe4993d349ea75b13a3a746988c085a0b0f3f",
+  "retained_failed_worker_cpu_seconds": 8.231143,
+  "status": "RETAINED_FINITE_CAUSAL_AUDIT",
+  "summary_sha256": "a8a4fcc9322d59f523174f8b1d59ae537f37f01041d15c58f085a1ab74eeb560",
+  "supplement_internal_cpu_seconds": 5.007608649
+}

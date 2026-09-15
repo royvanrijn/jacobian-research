@@ -1,0 +1,23 @@
+{
+  "charged_child_cpu_seconds": 4.834009,
+  "protocol_sha256": "26c8ca3f3431f342498769c2c27e963f87652805259d1769bc03943f5fa0fcb8",
+  "records": [
+    {
+      "arm": "rational_rebuild",
+      "case": "fcf6ce8e6a518eb715d2",
+      "charged_cpu_seconds": 4.834009,
+      "epoch": 1,
+      "failure_sha256": "390296792737c945030d6d7ebd6b1df62a4fb21dcc34c66d07103fdd61c1d8ba",
+      "family": "074d9",
+      "id": "fcf6ce8e6a518eb715d2-e01",
+      "protocol_sha256": "26c8ca3f3431f342498769c2c27e963f87652805259d1769bc03943f5fa0fcb8",
+      "rank": 19,
+      "returncode": 1,
+      "status": "WORKER_FAILURE",
+      "wall_seconds": 5.527233608008828,
+      "worker_log_sha256": "8f1b359acfe4709bb038f4e721981d8a9fd5da56b6f8b9992d6efaabd79fd9a8"
+    }
+  ],
+  "status": "STOPPED_FAILURE",
+  "supervisor_cpu_seconds": 0.006692588999999999
+}

@@ -1,0 +1,12 @@
+{
+  "boundary": "The160-source search seal and all48 primary workers are unchanged. The one-shot wrapper meters the two predeclared arithmetic audits. The corrected reader extracts the integer from its native rank receipt; the report adapter changes only that reader import. These are post-protocol support sources, not additions to the primary seal.",
+  "extra_source_sha256": {
+    "artifacts/local/elliptic-curves/cancellation-basis-certified-v1/postmortem-supervisor.py": "fd5074789dc8144a1fb24a59721e2b6932c2db4aea53869773bad63f7eb366d9",
+    "elliptic-curves/cas/report_cancellation_basis_certified.py": "61bda593103d12273a88143a58bd56c18ca3e79e2022ad18cbdfea08c8c315e2",
+    "elliptic-curves/cas/retain_cancellation_basis_certified_v2.py": "3489ea62d96c3d52a9a250e8b23b9a7daf5e338bf8932d59b775b4ada43576b9"
+  },
+  "previous_dependency_sha256": "290e04d6a7503882201a42bf73e6624432a5987e4bf3075929014e6438d008a4",
+  "primary_protocol_sha256": "839340d7e621f95340b6a7f76eb0c2ae156f342e6731e0dafd4a059985390e49",
+  "reader_failure_sha256": "d03efb2f5d8e4b747055736068bc99b721ca8ca9998f7e3b44f50002cc040774",
+  "status": "BOUND_POST_PROTOCOL_READER_AND_REPORT_REPAIR"
+}

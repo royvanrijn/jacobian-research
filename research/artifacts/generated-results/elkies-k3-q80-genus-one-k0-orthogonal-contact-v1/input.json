@@ -1,0 +1,32 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-pole-boundary-v1/input.json": "0b3d4cdc21364c5dbe1143c0ba36b330107335c8cc39a69ca104a7ad49274869",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-pole-boundary-v1/receipt.json": "6def82948eeff2fe9f9a7a83eab384ad76aa3dd2362158842acf45d645e8bab0",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/independent-replay.json": "a5239492d712613185d81814cc12661081375f14683714cd69eab1362173344c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/input.json": "c8fad1572156d4db60186e67e10dadd4fc68e445db29e4206608eea231409c30",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/nodal-hypotheses.json": "90e94a77d19cd51ee465bdd66803cad9ff8a93f39d4171ce3480e462ee33da4c",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k2-orientation-v1/result.json": "407ce9db938309fb4ecece09de5c8fea56f8926977cc6d967f46e64f5f55484f",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-independent-replay.json": "7d5dae4ee7bd1df6769419e5cfa8d8fa005fd7f5a6f8da1088211d6a60480060",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/complete-replay-input.json": "a5b1dec9e4b86220c43ab0251818c7ddc33d2d8e903d5d576a77e70604b866ed",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/input.json": "5236f1b1a1e2da0beb1aa32401fc5f78510c5118584006c625c5610237125f32",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/norm4-sections.json": "8ab2ec6764f3efefc5faa15d8a64dcf48735cb087646525e361ed9e83b0f7df1",
+    "artifacts/generated-results/elkies-k3-q80-genus-zero-integral-reduction-v1/result.json": "32019a667f1655ba4bc5c98e4c80b7d3d7df1823fc6011dfa541c481e6749b8f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/Q80_GENUS_ONE_K0_POLE_BOUNDARY_2026-09-14.md": "7fffda3810c34b30ba5e05a760a09c2e4b38a8e311ed23d7a3faecb3241f1c34",
+    "elkies-k3/scripts/certify_q80_k0_mixed_exclusion.sage": "8f817fdc42c335246023a7c5c3229b6af0d9cc3025bcc0795f787ca00854d4bc",
+    "elkies-k3/scripts/verify_q80_genus_one_k2_nodal_boundary.py": "4e82ef74f0b2aa046c0c3467942e856dc8197d0a64248c1e71110372a6451576",
+    "elkies-k3/scripts/verify_q80_k0_mixed_exclusion.py": "58282f92d2f4b250437768d5e2928d4c6dca30d326045704ebad029442871e26"
+  },
+  "cpu_seconds": 30,
+  "memory_bytes": 2147483648,
+  "preserved_preflight": {
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-orthogonal-contact-v1/preflight/constant-twist-contacts-preview.json": "1dbd9474479cf4e712615a737ea2e4b4231d3abc64ea31739cb94292f8c60796",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-orthogonal-contact-v1/preflight/integral-contact-preview.json": "9d8939ad918fb168c3e520fa8ee6a5ec65acd540109878935a249871e656fe61",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-orthogonal-contact-v1/preflight/probe_constant_twist_contacts.sage": "9609dd6130d81a37a010c70790a0f2fee35585610c9d0a38f6a6adb505e4f187",
+    "artifacts/generated-results/elkies-k3-q80-genus-one-k0-orthogonal-contact-v1/preflight/probe_integral_contact.sage": "73c680ecde4383633be41ff1b823d7c24f8e911cb5974ddab2625d589e1044ed"
+  },
+  "prime": 131,
+  "producer_padic_precision": 20,
+  "schema": 1,
+  "scope": "All131 constant-twist contact interpolants; a rank13 formal-deformation Jacobian; the exact norm4 word at the lifted nodal fibre modulo131 squared; a nonrational necessary leading scalar. The exclusion needs the written analytic deformation proof."
+}

@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "e734b970edae4eb7ed3ef2297d21d256de3a2a8afcdbdbbcd95ebd9bddd37ab7",
+  "boundary": "All bytes checked in an empty root, followed by source/input guards and independent retained-output integer-norm, parity, timing and bootstrap accounting. No new CVP, native rank, map or point-search replay.",
+  "checker_sha256": "38792e47eed403eb9e0636b0c0350907bb5854fdc47341b1fa15827c9b5c3c71",
+  "files": 11247,
+  "full_child_cpu_seconds": 0.155296,
+  "log_sha256": "c0f8c42a0d255d774d149dfc734b7cf751b6890e75869a404de8738fe315b581",
+  "manifest_sha256": "06c08d6580be8b47c124aa378e026f133d61b57b6a25c359a94eb2c691cff644",
+  "packaging_check_cpu_seconds": 2.099902953,
+  "returncode": 1,
+  "status": "RETAINED_PORTABLE_FAILURE"
+}

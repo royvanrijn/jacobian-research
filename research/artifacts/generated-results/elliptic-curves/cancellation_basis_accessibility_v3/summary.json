@@ -1,0 +1,815 @@
+{
+  "boundary": "Retrospective finite accessibility diagnostic on already executed controls. No discovery, performance advantage, optimal representation, arithmetic exclusion, fitting, or prospective selection validation. A positive witness motivates a separately frozen exposure test; it cannot pass that test. Interrupted or missing calculations remain UNKNOWN. Original experiment and all costs stay unchanged.",
+  "cases": 18,
+  "charged_cpu_seconds": 123.20276599999998,
+  "counts": {
+    "drop_anchors": 271,
+    "endpoint_classification_unknowns": 3,
+    "exact_coordinate_square_checks": 60606,
+    "exact_maps": 4164,
+    "independent_target_rank_packets": 44,
+    "new_anchors": 271,
+    "new_visible_anchor_target_pairs": 4,
+    "new_visible_pairs_executed_complete": 0,
+    "new_visible_pairs_executed_incomplete_only": 0,
+    "new_visible_pairs_unexecuted": 4,
+    "new_visible_targets": 4,
+    "old_anchors": 859,
+    "old_visible_anchor_target_pairs": 17,
+    "old_visible_targets": 17,
+    "strict_coefficient_deletion_targets": 4,
+    "strict_new_bank_visibility_targets": 4,
+    "targets": 44
+  },
+  "point_search_calls": 0,
+  "protocol_sha256": "83a5640f33e26f7a94342550d3f82a4864b1c4a66746f7cb63e1b5a1fce4ca6d",
+  "rows": [
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "220559811221061529243915507000565918524074323971351513862727431662708858032186930863925496669225574727133760192390486699879",
+      "case": "af401f31ecb4126b4050",
+      "endpoint_index": 19,
+      "family": "074d9",
+      "new_minimum_height": "1038295120418050867893227728476038851188053445701706697",
+      "old_minimum_height": "40967",
+      "orthogonal_height_after": 11.299892843408088,
+      "orthogonal_height_before": 12.291419418979274,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "2082138199192936009129911513481634580116190668975304476807090172182715300303303660262706317341002637465120240303470227228545688984105682189086",
+      "case": "927e9b643630fe66af77",
+      "endpoint_index": 18,
+      "family": "074d9",
+      "new_minimum_height": "1727453853453260709068177791983093510826380227598307476407354235937076417159741229778946224844794788372683811928622395829446961",
+      "old_minimum_height": "245960",
+      "orthogonal_height_after": 13.23452017712441,
+      "orthogonal_height_before": 14.581491451441366,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "183142720953550506782887813309249676918077717685740313631137109223367888336787040737153483321736549369",
+      "case": "927e9b643630fe66af77",
+      "endpoint_index": 20,
+      "family": "074d9",
+      "new_minimum_height": "6719667966833055661421913632760862507039911669440126065593903761991676560783923172497163035414684296467054",
+      "old_minimum_height": "35649",
+      "orthogonal_height_after": 15.952016705308438,
+      "orthogonal_height_before": 16.469783269949346,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "1211818273171200810764979090701434481796202891845448566290234215351007098058930958880498435445",
+      "case": "927e9b643630fe66af77",
+      "endpoint_index": 21,
+      "family": "074d9",
+      "new_minimum_height": "8702549465104970961804542069241694298310563121248688322764974",
+      "old_minimum_height": "181880",
+      "orthogonal_height_after": 18.57308291352055,
+      "orthogonal_height_before": 18.591600157683615,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "85343224311556805097871329191874091239116644284739107977263381872363572878656251863688612221",
+      "case": "2208aa5d21f008fddacd",
+      "endpoint_index": 19,
+      "family": "074d9",
+      "new_minimum_height": "4664143439642135163521998246726956587512615717080358786934367194188827850197729990830186054",
+      "old_minimum_height": "101",
+      "orthogonal_height_after": 9.753594896200923,
+      "orthogonal_height_before": 10.130548639405959,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "25020839407064477384492909356939791376978754138637855078192255616557001924",
+      "case": "2208aa5d21f008fddacd",
+      "endpoint_index": 20,
+      "family": "074d9",
+      "new_minimum_height": "520359724940974822537944050611112526719433384102536991315952535708034384711",
+      "old_minimum_height": "26915",
+      "orthogonal_height_after": 12.591723858145485,
+      "orthogonal_height_before": 12.839592954895352,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "54923728940717099300824271747612452123661526445712398455995",
+      "case": "2208aa5d21f008fddacd",
+      "endpoint_index": 21,
+      "family": "074d9",
+      "new_minimum_height": "748422284270912079468572821688988802638189129185521736845707",
+      "old_minimum_height": "19468",
+      "orthogonal_height_after": 10.538940928727072,
+      "orthogonal_height_before": 12.77101619748629,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "2674976864130872138564693353453901745711815",
+      "case": "2208aa5d21f008fddacd",
+      "endpoint_index": 22,
+      "family": "074d9",
+      "new_minimum_height": "90225885973",
+      "old_minimum_height": "84595221883",
+      "orthogonal_height_after": 14.050260467228888,
+      "orthogonal_height_before": 16.040162207439877,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "365233894480696751",
+      "case": "195a0c93f0558de2a0c1",
+      "endpoint_index": 19,
+      "family": "07ca9",
+      "new_minimum_height": "395337999065",
+      "old_minimum_height": "14211",
+      "orthogonal_height_after": 10.275453973599518,
+      "orthogonal_height_before": 12.35085165737668,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "28361005755460751354638886",
+      "case": "7ea0c8aa858668d85596",
+      "endpoint_index": 19,
+      "family": "07ca9",
+      "new_minimum_height": "7779886555250229447275",
+      "old_minimum_height": "9781",
+      "orthogonal_height_after": 14.967669753452284,
+      "orthogonal_height_before": 15.750125035060151,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "82636545480598515201",
+      "case": "7ea0c8aa858668d85596",
+      "endpoint_index": 20,
+      "family": "07ca9",
+      "new_minimum_height": "31935015128543",
+      "old_minimum_height": "31991",
+      "orthogonal_height_after": 13.924574272161905,
+      "orthogonal_height_before": 17.154628334540156,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "725343317454869622470797235",
+      "case": "7ea0c8aa858668d85596",
+      "endpoint_index": 21,
+      "family": "07ca9",
+      "new_minimum_height": "123469202502556772615",
+      "old_minimum_height": "21938786465404734087405117",
+      "orthogonal_height_after": 36.03009802966226,
+      "orthogonal_height_before": 38.24940479140342,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "782010432433985873",
+      "case": "7ea0c8aa858668d85596",
+      "endpoint_index": 22,
+      "family": "07ca9",
+      "new_minimum_height": "11065600215204",
+      "old_minimum_height": "2248101707413937",
+      "orthogonal_height_after": 15.41855231781009,
+      "orthogonal_height_before": 23.86922274914651,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "48817012958595353236966559202",
+      "case": "7ea0c8aa858668d85596",
+      "endpoint_index": 23,
+      "family": "07ca9",
+      "new_minimum_height": "16285265032725368208",
+      "old_minimum_height": "54849320835326",
+      "orthogonal_height_after": 26.514338001519818,
+      "orthogonal_height_before": 28.526318141741793,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "4869446809",
+      "case": "9a7287102d5dc305a8bc",
+      "endpoint_index": 19,
+      "family": "07ca9",
+      "new_minimum_height": "5186118500798",
+      "old_minimum_height": "1869",
+      "orthogonal_height_after": 10.906632224716333,
+      "orthogonal_height_before": 10.935052282156931,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "146085642906",
+      "case": "9a7287102d5dc305a8bc",
+      "endpoint_index": 20,
+      "family": "07ca9",
+      "new_minimum_height": "32435",
+      "old_minimum_height": "193300803059524",
+      "orthogonal_height_after": 16.925963071113934,
+      "orthogonal_height_before": 21.042188546713575,
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "1734533392659092924449053",
+      "case": "9a7287102d5dc305a8bc",
+      "endpoint_index": 21,
+      "family": "07ca9",
+      "new_minimum_height": "47880278862672599",
+      "old_minimum_height": "4336780027933253",
+      "orthogonal_height_after": 18.044276182534304,
+      "orthogonal_height_before": 18.643391069146098,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "285957964893003049",
+      "case": "22634d2ddbc7e8dea0f4",
+      "endpoint_index": 19,
+      "family": "07ca9",
+      "new_minimum_height": "123120740484920",
+      "old_minimum_height": "2231",
+      "orthogonal_height_after": 10.649363548787527,
+      "orthogonal_height_before": 14.753121727169585,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "184968399634609174030083",
+      "case": "22634d2ddbc7e8dea0f4",
+      "endpoint_index": 20,
+      "family": "07ca9",
+      "new_minimum_height": "60848786704675541891",
+      "old_minimum_height": "159081",
+      "orthogonal_height_after": 9.469053740266418,
+      "orthogonal_height_before": 12.790877166891732,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "406840411",
+      "case": "6f5afe31891f7dc1938b",
+      "endpoint_index": 19,
+      "family": "08234",
+      "new_minimum_height": "1542",
+      "old_minimum_height": "597032192702056",
+      "orthogonal_height_after": 14.693180754622027,
+      "orthogonal_height_before": 21.119721396843303,
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "418728887891",
+      "case": "1f344a0d9056734f634c",
+      "endpoint_index": 19,
+      "family": "08234",
+      "new_minimum_height": "4287",
+      "old_minimum_height": "440492405376957",
+      "orthogonal_height_after": 15.22245217514375,
+      "orthogonal_height_before": 16.731503865914462,
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "101523889746187649",
+      "case": "1f344a0d9056734f634c",
+      "endpoint_index": 20,
+      "family": "08234",
+      "new_minimum_height": "13083679432847",
+      "old_minimum_height": "4863051453279600759",
+      "orthogonal_height_after": 15.16204319860536,
+      "orthogonal_height_before": 17.078462449140652,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "29877078211201405934617167",
+      "case": "308b67770bb6db5f6ca5",
+      "endpoint_index": 19,
+      "family": "08f72",
+      "new_minimum_height": "562590654953172356143",
+      "old_minimum_height": "355751",
+      "orthogonal_height_after": 13.169523648274406,
+      "orthogonal_height_before": 14.945123839356228,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "86913490136273679",
+      "case": "308b67770bb6db5f6ca5",
+      "endpoint_index": 20,
+      "family": "08f72",
+      "new_minimum_height": "147614763235975",
+      "old_minimum_height": "86461",
+      "orthogonal_height_after": 15.787752428123333,
+      "orthogonal_height_before": 17.06186655480436,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "400673069275560032557501474401214",
+      "case": "308b67770bb6db5f6ca5",
+      "endpoint_index": 21,
+      "family": "08f72",
+      "new_minimum_height": "7272079463131066920303638",
+      "old_minimum_height": "11470326299074611183",
+      "orthogonal_height_after": 24.764802250659592,
+      "orthogonal_height_before": 28.996887333426045,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "174934729873924156637560844042857029",
+      "case": "308b67770bb6db5f6ca5",
+      "endpoint_index": 22,
+      "family": "08f72",
+      "new_minimum_height": "32084111383255799812233570",
+      "old_minimum_height": "2955819074409829167",
+      "orthogonal_height_after": 32.294647854057004,
+      "orthogonal_height_before": 32.42635134188719,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "225153139",
+      "case": "2e606aea9439342ecbc9",
+      "endpoint_index": 18,
+      "family": "08f72",
+      "new_minimum_height": "22226792253",
+      "old_minimum_height": "48979",
+      "orthogonal_height_after": 15.249539491285837,
+      "orthogonal_height_before": 15.500567393992519,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "41111045355605437093971",
+      "case": "2e606aea9439342ecbc9",
+      "endpoint_index": 20,
+      "family": "08f72",
+      "new_minimum_height": "58388949217247960",
+      "old_minimum_height": "48911",
+      "orthogonal_height_after": 15.622373532982714,
+      "orthogonal_height_before": 18.44480351335889,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "5817114126723162256",
+      "case": "2e606aea9439342ecbc9",
+      "endpoint_index": 21,
+      "family": "08f72",
+      "new_minimum_height": "340810626680049",
+      "old_minimum_height": "18930096844665771",
+      "orthogonal_height_after": 13.792140238448994,
+      "orthogonal_height_before": 19.48698093639908,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "238672497760348391747256795636",
+      "case": "4574098bee7eb653d5af",
+      "endpoint_index": 19,
+      "family": "08f72",
+      "new_minimum_height": "201143631103473867182576689",
+      "old_minimum_height": "150133188721620618",
+      "orthogonal_height_after": 14.544145810619298,
+      "orthogonal_height_before": 14.544226155568879,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "214672182103262931",
+      "case": "0003156b20eeddda4f6c",
+      "endpoint_index": 19,
+      "family": "103b2",
+      "new_minimum_height": "23658122695941387273",
+      "old_minimum_height": "94557",
+      "orthogonal_height_after": 8.96849101603975,
+      "orthogonal_height_before": 10.016116899071356,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "129311453985302815",
+      "case": "0003156b20eeddda4f6c",
+      "endpoint_index": 20,
+      "family": "103b2",
+      "new_minimum_height": "283626925355749",
+      "old_minimum_height": "5111",
+      "orthogonal_height_after": 10.39271168575312,
+      "orthogonal_height_before": 10.870126383283392,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "97249789033",
+      "case": "259d0615516598ba9cdc",
+      "endpoint_index": 19,
+      "family": "103b2",
+      "new_minimum_height": "93915",
+      "old_minimum_height": "2954213075",
+      "orthogonal_height_after": 14.70668357276032,
+      "orthogonal_height_before": 17.93156968244935,
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "91833954749161569692194433",
+      "case": "259d0615516598ba9cdc",
+      "endpoint_index": 20,
+      "family": "103b2",
+      "new_minimum_height": "102160640070528659321413242",
+      "old_minimum_height": "79702993657373451456133286",
+      "orthogonal_height_after": 14.5419015698063,
+      "orthogonal_height_before": 19.832226259389785,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "12216000546155901900567238065721543",
+      "case": "f95179c80c2c0bfd4d2d",
+      "endpoint_index": 19,
+      "family": "11952",
+      "new_minimum_height": "2385619761289002202140653100",
+      "old_minimum_height": "13581",
+      "orthogonal_height_after": 15.861020518004239,
+      "orthogonal_height_before": 16.06358391899795,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "106265205614271082396288",
+      "case": "f95179c80c2c0bfd4d2d",
+      "endpoint_index": 20,
+      "family": "11952",
+      "new_minimum_height": "43690953468559260581",
+      "old_minimum_height": "22712",
+      "orthogonal_height_after": 15.83345083876928,
+      "orthogonal_height_before": 18.348341612515988,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "15026875053923588920",
+      "case": "f95179c80c2c0bfd4d2d",
+      "endpoint_index": 21,
+      "family": "11952",
+      "new_minimum_height": "24673622726988341",
+      "old_minimum_height": "1516681",
+      "orthogonal_height_after": 17.98624082116033,
+      "orthogonal_height_before": 18.33984452180198,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "14941779349603218686499026",
+      "case": "f95179c80c2c0bfd4d2d",
+      "endpoint_index": 22,
+      "family": "11952",
+      "new_minimum_height": "133699591430144217074986",
+      "old_minimum_height": "27979329543121654",
+      "orthogonal_height_after": 18.1222161914027,
+      "orthogonal_height_before": 21.20432646789257,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "712873413752500007189968788",
+      "case": "13daad0080bcf56248ce",
+      "endpoint_index": 19,
+      "family": "11952",
+      "new_minimum_height": "840266416896040299826",
+      "old_minimum_height": "2858330141963186997154803",
+      "orthogonal_height_after": 15.662298390117613,
+      "orthogonal_height_before": 15.871461716970245,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "305831868501236663724",
+      "case": "13daad0080bcf56248ce",
+      "endpoint_index": 20,
+      "family": "11952",
+      "new_minimum_height": "13734654261949799",
+      "old_minimum_height": "24561679992508",
+      "orthogonal_height_after": 16.571121179288006,
+      "orthogonal_height_before": 16.59961271710602,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "7199574950694647",
+      "case": "640b3ac051697efdc69f",
+      "endpoint_index": 19,
+      "family": "11952",
+      "new_minimum_height": "2669884607743049",
+      "old_minimum_height": "3629844570249",
+      "orthogonal_height_after": 16.39918782633429,
+      "orthogonal_height_before": 16.400272572196478,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "79148316999083003134665061057",
+      "case": "640b3ac051697efdc69f",
+      "endpoint_index": 20,
+      "family": "11952",
+      "new_minimum_height": "240330738671998215314498",
+      "old_minimum_height": "638178357740238196",
+      "orthogonal_height_after": 18.57759345527893,
+      "orthogonal_height_before": 29.756130997289404,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "19896255808968124936965995166936825",
+      "case": "1486579d041d5937ddbb",
+      "endpoint_index": 19,
+      "family": "11952",
+      "new_minimum_height": "838831095162254367482965954",
+      "old_minimum_height": "542938924028256991",
+      "orthogonal_height_after": 16.455049171513522,
+      "orthogonal_height_before": 16.532496455459878,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    },
+    {
+      "best_new_anchor_deleted_coefficient_minimum_height": "62987765028865237546907627",
+      "case": "1486579d041d5937ddbb",
+      "endpoint_index": 20,
+      "family": "11952",
+      "new_minimum_height": "1225785280098399752921",
+      "old_minimum_height": "54254751809159527",
+      "orthogonal_height_after": 23.297604338033963,
+      "orthogonal_height_before": 23.497494810895475,
+      "strict_coefficient_deletion_visibility": false,
+      "strict_new_bank_visibility": false
+    }
+  ],
+  "status": "PASS_FINITE_POST_EXECUTION_ACCESSIBILITY_AUDIT",
+  "visible_examples": [
+    {
+      "anchor": [
+        "27018149134791282637682774148322048448130310981076419158/6126807720828123614886223907761",
+        "82296497289206431491783742801227291683700151852342040190603940194025744733619603270/15165312938011309950320371264757476169997164009"
+      ],
+      "anchor_word": [
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        -1,
+        -2,
+        -2,
+        -1,
+        2,
+        -2,
+        1,
+        3,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "best_new": {
+        "coordinate": [
+          "-32435",
+          "21013"
+        ],
+        "entry": "new-031",
+        "height": "32435",
+        "model": 2,
+        "representative": 2
+      },
+      "best_new_anchor_deleted_coefficient_minimum_height": "146085642906",
+      "case": "9a7287102d5dc305a8bc",
+      "endpoint_index": 20,
+      "family": "07ca9",
+      "new_generator": [
+        "3683958283933625236158155490361066830254418/2257607967390754801",
+        "9274898270474948922488274910981984630087027468952328075046672110/3392132388776697298161759049"
+      ],
+      "new_minimum_height": "32435",
+      "old_minimum_height": "193300803059524",
+      "orthogonal_height_after": 16.925963071113934,
+      "orthogonal_height_before": 21.042188546713575,
+      "representative": {
+        "k": 0,
+        "point": [
+          "261467749698336900119095105374252/49378729",
+          "2969071279968345288413764498116545491551810875250/346984328683"
+        ],
+        "sign": 1
+      },
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true,
+      "target": [
+        "261467749698336900119095105374252/49378729",
+        "2969071279968345288413764498116545491551810875250/346984328683"
+      ],
+      "verification_path": "artifacts/local/elliptic-curves/cancellation-basis-accessibility-v3/9a7287102d5dc305a8bc/verification.json"
+    },
+    {
+      "anchor": [
+        "313393143626641674527897920631487416170550568146700/188702552717496488652512281",
+        "5437333468032809982518280655481833169718584765293168064932982169147293960640/2592188996930731015161231983124883549571"
+      ],
+      "anchor_word": [
+        1,
+        -5,
+        1,
+        -5,
+        6,
+        2,
+        5,
+        3,
+        -2,
+        -5,
+        1,
+        2,
+        2,
+        -3,
+        -4,
+        -2,
+        4,
+        0,
+        -1
+      ],
+      "best_new": {
+        "coordinate": [
+          "169",
+          "1542"
+        ],
+        "entry": "new-032",
+        "height": "1542",
+        "model": 1,
+        "representative": 2
+      },
+      "best_new_anchor_deleted_coefficient_minimum_height": "406840411",
+      "case": "6f5afe31891f7dc1938b",
+      "endpoint_index": 19,
+      "family": "08234",
+      "new_generator": [
+        "5552287018582949234060245778204541301644/17754520766780281",
+        "228785374867391546105160044499878766083147677267599030123072/2365720489751795099131571"
+      ],
+      "new_minimum_height": "1542",
+      "old_minimum_height": "597032192702056",
+      "orthogonal_height_after": 14.693180754622027,
+      "orthogonal_height_before": 21.119721396843303,
+      "representative": {
+        "k": 0,
+        "point": [
+          "-1856927228718174298045832266182900/13848347041",
+          "278824543796286759939187081365378516888034459338240/1629659631437839"
+        ],
+        "sign": 1
+      },
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true,
+      "target": [
+        "-1856927228718174298045832266182900/13848347041",
+        "278824543796286759939187081365378516888034459338240/1629659631437839"
+      ],
+      "verification_path": "artifacts/local/elliptic-curves/cancellation-basis-accessibility-v3/6f5afe31891f7dc1938b/verification.json"
+    },
+    {
+      "anchor": [
+        "662641827871999865941878852963508389099190515505380529038920172/23725039566395284696608539493974692321",
+        "7811072508036023233627650710507145067719848088156665651185467489913229400109098972444606336000/115560767633807491554544964021435556435196610573814412369"
+      ],
+      "anchor_word": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "best_new": {
+        "coordinate": [
+          "-3226",
+          "4287"
+        ],
+        "entry": "new-016",
+        "height": "4287",
+        "model": 1,
+        "representative": 2
+      },
+      "best_new_anchor_deleted_coefficient_minimum_height": "418728887891",
+      "case": "1f344a0d9056734f634c",
+      "endpoint_index": 19,
+      "family": "08234",
+      "new_generator": [
+        "32339794208070113668639901914433188089190092/893968247432121481",
+        "29235876957051715393117746250224900382661629533678815966458060800/845246031234696829668851621"
+      ],
+      "new_minimum_height": "4287",
+      "old_minimum_height": "440492405376957",
+      "orthogonal_height_after": 15.22245217514375,
+      "orthogonal_height_before": 16.731503865914462,
+      "representative": {
+        "k": 0,
+        "point": [
+          "302390626735437790898566991278186092/8582354881",
+          "23829841322138077656687944836189087217788598512896000/795077938530721"
+        ],
+        "sign": 1
+      },
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true,
+      "target": [
+        "302390626735437790898566991278186092/8582354881",
+        "23829841322138077656687944836189087217788598512896000/795077938530721"
+      ],
+      "verification_path": "artifacts/local/elliptic-curves/cancellation-basis-accessibility-v3/1f344a0d9056734f634c/verification.json"
+    },
+    {
+      "anchor": [
+        "-1083907912588788075006142862868398479193401963987132688/154691906164592113707531850809",
+        "1511979358497580182302370231789632188172130865503422363252210410022205046372898750/60841706470236847320873951545209744870064877"
+      ],
+      "anchor_word": [
+        -1,
+        2,
+        0,
+        -2,
+        -1,
+        2,
+        2,
+        0,
+        -2,
+        2,
+        -1,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "best_new": {
+        "coordinate": [
+          "-16837",
+          "93915"
+        ],
+        "entry": "new-044",
+        "height": "93915",
+        "model": 0,
+        "representative": 2
+      },
+      "best_new_anchor_deleted_coefficient_minimum_height": "97249789033",
+      "case": "259d0615516598ba9cdc",
+      "endpoint_index": 19,
+      "family": "103b2",
+      "new_generator": [
+        "32787796570104511166808205053990/38056561",
+        "3559622710559804914254933228098507594521806985002/234770924809"
+      ],
+      "new_minimum_height": "93915",
+      "old_minimum_height": "2954213075",
+      "orthogonal_height_after": 14.70668357276032,
+      "orthogonal_height_before": 17.93156968244935,
+      "representative": {
+        "k": 0,
+        "point": [
+          "-539012109497955620983332518/49",
+          "505277825030220063583433495263814840150/343"
+        ],
+        "sign": 1
+      },
+      "strict_coefficient_deletion_visibility": true,
+      "strict_new_bank_visibility": true,
+      "target": [
+        "-539012109497955620983332518/49",
+        "505277825030220063583433495263814840150/343"
+      ],
+      "verification_path": "artifacts/local/elliptic-curves/cancellation-basis-accessibility-v3/259d0615516598ba9cdc/verification.json"
+    }
+  ]
+}

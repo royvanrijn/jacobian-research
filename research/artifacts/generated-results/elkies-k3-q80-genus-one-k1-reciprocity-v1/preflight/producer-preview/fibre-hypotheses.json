@@ -1,0 +1,48 @@
+{
+  "all_projective_rational_fibres_smooth": true,
+  "cubic_modulus_irreducible": true,
+  "discriminant_factors": [
+    [
+      [
+        88,
+        62,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        64,
+        81,
+        6,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        121,
+        25,
+        3,
+        119,
+        103,
+        21,
+        95,
+        101,
+        34,
+        25,
+        0,
+        15,
+        97,
+        110,
+        5,
+        120,
+        93,
+        36,
+        54,
+        1
+      ],
+      1
+    ]
+  ]
+}
