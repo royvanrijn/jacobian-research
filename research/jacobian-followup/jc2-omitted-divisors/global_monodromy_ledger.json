@@ -1,0 +1,377 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT8",
+  "hypotheses": "PF2OMIT6 residual immersed-r7 degree6 rows; full affine ramification counted",
+  "residual_rows": [
+    {
+      "row": "A_distinct",
+      "monodromy": "S6",
+      "Galois_closure_degree": 720,
+      "source_stabilizer": "S5",
+      "source_extension_degree": 6,
+      "proper_intermediate_source_fields": [],
+      "source_cover_Galois": false,
+      "generic_target_ledger": [
+        {
+          "image": "C",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "R"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "B",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "S"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "H",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 1,
+              "f": 1,
+              "ramifies": false,
+              "omitted": true,
+              "prime": "D"
+            }
+          ],
+          "omitted_generic_length": 1,
+          "retained_generic_degree": 5,
+          "individual_retained_residue_degrees": null
+        }
+      ],
+      "sign_cover_branch_images": [
+        "C",
+        "B"
+      ],
+      "sign_quadratic_field_inside_source_field": false,
+      "maximal_Galois_quotient_with_trivial_generic_B_inertia_degree": 1,
+      "actual_global_representation_constructed": false
+    },
+    {
+      "row": "A_H=C",
+      "monodromy": "S6",
+      "Galois_closure_degree": 720,
+      "source_stabilizer": "S5",
+      "source_extension_degree": 6,
+      "proper_intermediate_source_fields": [],
+      "source_cover_Galois": false,
+      "generic_target_ledger": [
+        {
+          "image": "C",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "R"
+            },
+            {
+              "e": 1,
+              "f": 1,
+              "ramifies": false,
+              "omitted": true,
+              "prime": "D"
+            }
+          ],
+          "omitted_generic_length": 3,
+          "retained_generic_degree": 3,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "B",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "S"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        }
+      ],
+      "sign_cover_branch_images": [
+        "C",
+        "B"
+      ],
+      "sign_quadratic_field_inside_source_field": false,
+      "maximal_Galois_quotient_with_trivial_generic_B_inertia_degree": 1,
+      "actual_global_representation_constructed": false
+    },
+    {
+      "row": "A_H=B",
+      "monodromy": "S6",
+      "Galois_closure_degree": 720,
+      "source_stabilizer": "S5",
+      "source_extension_degree": 6,
+      "proper_intermediate_source_fields": [],
+      "source_cover_Galois": false,
+      "generic_target_ledger": [
+        {
+          "image": "C",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "R"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "B",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "S"
+            },
+            {
+              "e": 1,
+              "f": 1,
+              "ramifies": false,
+              "omitted": true,
+              "prime": "D"
+            }
+          ],
+          "omitted_generic_length": 3,
+          "retained_generic_degree": 3,
+          "individual_retained_residue_degrees": null
+        }
+      ],
+      "sign_cover_branch_images": [
+        "C",
+        "B"
+      ],
+      "sign_quadratic_field_inside_source_field": false,
+      "maximal_Galois_quotient_with_trivial_generic_B_inertia_degree": 1,
+      "actual_global_representation_constructed": false
+    },
+    {
+      "row": "B",
+      "monodromy": "S6",
+      "Galois_closure_degree": 720,
+      "source_stabilizer": "S5",
+      "source_extension_degree": 6,
+      "proper_intermediate_source_fields": [],
+      "source_cover_Galois": false,
+      "generic_target_ledger": [
+        {
+          "image": "C",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "R"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "B",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "S"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        }
+      ],
+      "sign_cover_branch_images": [
+        "C",
+        "B"
+      ],
+      "sign_quadratic_field_inside_source_field": false,
+      "maximal_Galois_quotient_with_trivial_generic_B_inertia_degree": 1,
+      "actual_global_representation_constructed": false
+    },
+    {
+      "row": "C",
+      "monodromy": "S6",
+      "Galois_closure_degree": 720,
+      "source_stabilizer": "S5",
+      "source_extension_degree": 6,
+      "proper_intermediate_source_fields": [],
+      "source_cover_Galois": false,
+      "generic_target_ledger": [
+        {
+          "image": "C",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 2,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "R"
+            }
+          ],
+          "omitted_generic_length": 2,
+          "retained_generic_degree": 4,
+          "individual_retained_residue_degrees": null
+        },
+        {
+          "image": "B",
+          "image_equation": null,
+          "geometric_inertia_cycle_lengths": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "omitted_primes": [
+            {
+              "e": 3,
+              "f": 1,
+              "ramifies": true,
+              "omitted": true,
+              "prime": "S"
+            }
+          ],
+          "omitted_generic_length": 3,
+          "retained_generic_degree": 3,
+          "individual_retained_residue_degrees": null
+        }
+      ],
+      "sign_cover_branch_images": [
+        "C"
+      ],
+      "sign_quadratic_field_inside_source_field": false,
+      "maximal_Galois_quotient_with_trivial_generic_B_inertia_degree": 2,
+      "actual_global_representation_constructed": false
+    }
+  ],
+  "group_controls": {
+    "S6_order": 720,
+    "A6_order": 360,
+    "S5_order": 120,
+    "imprimitive_single4_order": 8,
+    "imprimitive_double3_order": 24,
+    "controls_are_geometric_realizations": false
+  },
+  "topology_step": "Actual complement meridians normally generate because ambient C2 is simply connected; finite N cover is connected",
+  "actual_affine_image_equations": null,
+  "actual_exceptional_values": null,
+  "full_global_Keller_normalization_constructed": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

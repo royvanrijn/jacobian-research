@@ -1,0 +1,29 @@
+{
+  "whole_theorem_independently_reproved": false,
+  "as_of": "2026-11-14",
+  "geometric_base_field": "C",
+  "recognition_theorem_imported": true,
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2608.27341v2",
+      "file": "2608.27341v2.html",
+      "use": "Corrected Theorem 3.1, preceding boundary sequence, Lemmas 2.2/2.4, Corollary 2.7, Appendix A",
+      "sha256": "662548eba5e9a3e2feb9c9c76ab46b2bc6928f7169df4fd1ef87367908f1d73d",
+      "bytes": 386684
+    },
+    {
+      "url": "https://arxiv.org/html/2608.27341v1",
+      "file": "2608.27341v1.html",
+      "use": "Version comparison only: superseded torsion-length-one condition",
+      "sha256": "82a76020b8333b680b1e3db5894add8b55bc99c8556080f8de04e18803ac9001",
+      "bytes": 446583
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.27341v2",
+      "file": "2608.27341v2-abstract.html",
+      "use": "Version date 14 September 2026 and correction notice",
+      "sha256": "0e1dc28f37e8c984210419da492084f99acab252e90353e7af4241a223168762",
+      "bytes": 39060
+    }
+  ]
+}

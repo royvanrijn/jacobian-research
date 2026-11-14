@@ -1,0 +1,1408 @@
+{
+  "results": [
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-53ef19650c7208a8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-98f5b5ef3dabc08d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-324b1c97f88761ac",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-acb772dc1c1078c8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b32a8469b29793bf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-77e1a768274203a7",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-ec5cbbba6ab29226",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-18ad8cee78eabfe5",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c61cd4bbd0a2fda9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-91be2649cc3b8d6a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-4cab27c6644e6fd0",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-8987eb04ab846fe9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-a8b8864a97b6110e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-2817a1e8ecb361e7",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c3ecc4d2e8fc2f97",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-5d9f0a715ddae86d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-cf03e257094996eb",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-ea7e0f3a2beab405",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-be0c382a803ec08a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-9b7c19897fb5cf79",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-5bef0fafcf726936",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c8913ae16b294d3c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-f669f8ab6fc8fe73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b95f53403964ee51",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-1872de312082e65b",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c09aa0a4b5ec5ac6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-3ae5fb9166a123d6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-dd7bf019311aa60c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-91daad25e7d0260f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-61debd094110d96e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-59d7a41d6d82369a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-fe0aba76f4c7dc67",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b021269b3f9b4007",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-91fd36a6b9275ecc",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-3d1d5099059232cf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-865bdab1d40903a6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-13668ee75766e251",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b4abdb87d1757a41",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c7fb81f878886c3a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-9352aaaea6487d55",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-4fa3015d068f7a6f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-34383f6485d9ae55",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-f6c1bd040ade9287",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b806868fe2374e25",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-54d1ba5ec6f377e9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-7e7739955515af67",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-86733169f9b723a4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-2721f0ba6a38b446",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b675b05604f7caa5",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-b70fb4f48093064c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-9cedb2f409a28ea4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-a83b07e944105534",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-102f21ee106888ae",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-7b8d2ea34a4e0e9b",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-cfac48b7d56fb369",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-d695be7c9f4c9645",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-f45286d2048ac9bf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-619902fcad51e0ae",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-3ed5aae106de37ad",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-4d9708d9aa7eda73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-cb4a3c8c277bf759",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-3365ee12c4123e75",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-c55c2702432357cf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-27d49026dfe2f689",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-8ab88b327563c7b0",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-297d26a01e66442c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-d3d8848ef7d5fc11",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-10b2f88bc3168b8d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-98904c3de1487521",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-ae85437edcbb6f46",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-06cc3e16ce5b6cb4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-3426c5b8fd320e3f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-103bcecb3f111cf9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-7e2751a46abfa454",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-61f6a0ff40cb5fb4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-08151114571a23ca",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-f4238735ec092d73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-a1f6a13237c1a192",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-7b2866ab21dcf11c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-d0ebb3ef4b206651",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-e7c104cdc23cf499",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-fc2447971c34278a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-78cca72ba19dca1f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-122fa5d2b5717b5c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-2488641f0545e62e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-003a342efec050f4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-e18527e8e906d042",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-ce25cb0152a88202",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-f6a67447e86c3d46",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-2fcafda69fd87493",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-8bd67bdcc3890ad6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-887f807d9c4e26f8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-fe50e83d19d8a7e2",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-eebbcbce0ab3df99",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-e602c62987396fd4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-a5447efc234e7373",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-784d089cdeae2cbc",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-93bacec057331b17",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-37333474cc6de99f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "dimension": null,
+      "field": "QQ",
+      "support_id": "s-cd61854105d8c3b5",
+      "unit_ideal": true
+    }
+  ],
+  "support_ids": [
+    "s-53ef19650c7208a8",
+    "s-98f5b5ef3dabc08d",
+    "s-324b1c97f88761ac",
+    "s-acb772dc1c1078c8",
+    "s-b32a8469b29793bf",
+    "s-77e1a768274203a7",
+    "s-ec5cbbba6ab29226",
+    "s-18ad8cee78eabfe5",
+    "s-c61cd4bbd0a2fda9",
+    "s-91be2649cc3b8d6a",
+    "s-4cab27c6644e6fd0",
+    "s-8987eb04ab846fe9",
+    "s-a8b8864a97b6110e",
+    "s-2817a1e8ecb361e7",
+    "s-c3ecc4d2e8fc2f97",
+    "s-5d9f0a715ddae86d",
+    "s-cf03e257094996eb",
+    "s-ea7e0f3a2beab405",
+    "s-be0c382a803ec08a",
+    "s-9b7c19897fb5cf79",
+    "s-5bef0fafcf726936",
+    "s-c8913ae16b294d3c",
+    "s-f669f8ab6fc8fe73",
+    "s-b95f53403964ee51",
+    "s-1872de312082e65b",
+    "s-c09aa0a4b5ec5ac6",
+    "s-3ae5fb9166a123d6",
+    "s-dd7bf019311aa60c",
+    "s-91daad25e7d0260f",
+    "s-61debd094110d96e",
+    "s-59d7a41d6d82369a",
+    "s-fe0aba76f4c7dc67",
+    "s-b021269b3f9b4007",
+    "s-91fd36a6b9275ecc",
+    "s-3d1d5099059232cf",
+    "s-865bdab1d40903a6",
+    "s-13668ee75766e251",
+    "s-b4abdb87d1757a41",
+    "s-c7fb81f878886c3a",
+    "s-9352aaaea6487d55",
+    "s-4fa3015d068f7a6f",
+    "s-34383f6485d9ae55",
+    "s-f6c1bd040ade9287",
+    "s-b806868fe2374e25",
+    "s-54d1ba5ec6f377e9",
+    "s-7e7739955515af67",
+    "s-86733169f9b723a4",
+    "s-2721f0ba6a38b446",
+    "s-b675b05604f7caa5",
+    "s-b70fb4f48093064c",
+    "s-9cedb2f409a28ea4",
+    "s-a83b07e944105534",
+    "s-102f21ee106888ae",
+    "s-7b8d2ea34a4e0e9b",
+    "s-cfac48b7d56fb369",
+    "s-d695be7c9f4c9645",
+    "s-f45286d2048ac9bf",
+    "s-619902fcad51e0ae",
+    "s-3ed5aae106de37ad",
+    "s-4d9708d9aa7eda73",
+    "s-cb4a3c8c277bf759",
+    "s-3365ee12c4123e75",
+    "s-c55c2702432357cf",
+    "s-27d49026dfe2f689",
+    "s-8ab88b327563c7b0",
+    "s-297d26a01e66442c",
+    "s-d3d8848ef7d5fc11",
+    "s-10b2f88bc3168b8d",
+    "s-98904c3de1487521",
+    "s-ae85437edcbb6f46",
+    "s-06cc3e16ce5b6cb4",
+    "s-3426c5b8fd320e3f",
+    "s-103bcecb3f111cf9",
+    "s-7e2751a46abfa454",
+    "s-61f6a0ff40cb5fb4",
+    "s-08151114571a23ca",
+    "s-f4238735ec092d73",
+    "s-a1f6a13237c1a192",
+    "s-7b2866ab21dcf11c",
+    "s-d0ebb3ef4b206651",
+    "s-e7c104cdc23cf499",
+    "s-fc2447971c34278a",
+    "s-78cca72ba19dca1f",
+    "s-122fa5d2b5717b5c",
+    "s-2488641f0545e62e",
+    "s-003a342efec050f4",
+    "s-e18527e8e906d042",
+    "s-ce25cb0152a88202",
+    "s-f6a67447e86c3d46",
+    "s-2fcafda69fd87493",
+    "s-8bd67bdcc3890ad6",
+    "s-887f807d9c4e26f8",
+    "s-fe50e83d19d8a7e2",
+    "s-eebbcbce0ab3df99",
+    "s-e602c62987396fd4",
+    "s-a5447efc234e7373",
+    "s-784d089cdeae2cbc",
+    "s-93bacec057331b17",
+    "s-37333474cc6de99f",
+    "s-cd61854105d8c3b5"
+  ],
+  "sympy_results": [
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-53ef19650c7208a8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-98f5b5ef3dabc08d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-324b1c97f88761ac",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-acb772dc1c1078c8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b32a8469b29793bf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-77e1a768274203a7",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-ec5cbbba6ab29226",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-18ad8cee78eabfe5",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c61cd4bbd0a2fda9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-91be2649cc3b8d6a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-4cab27c6644e6fd0",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-8987eb04ab846fe9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-a8b8864a97b6110e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-2817a1e8ecb361e7",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c3ecc4d2e8fc2f97",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-5d9f0a715ddae86d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-cf03e257094996eb",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-ea7e0f3a2beab405",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-be0c382a803ec08a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-9b7c19897fb5cf79",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-5bef0fafcf726936",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c8913ae16b294d3c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-f669f8ab6fc8fe73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b95f53403964ee51",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-1872de312082e65b",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c09aa0a4b5ec5ac6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-3ae5fb9166a123d6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-dd7bf019311aa60c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-91daad25e7d0260f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-61debd094110d96e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-59d7a41d6d82369a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-fe0aba76f4c7dc67",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b021269b3f9b4007",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-91fd36a6b9275ecc",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-3d1d5099059232cf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-865bdab1d40903a6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-13668ee75766e251",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b4abdb87d1757a41",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c7fb81f878886c3a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-9352aaaea6487d55",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-4fa3015d068f7a6f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-34383f6485d9ae55",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-f6c1bd040ade9287",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b806868fe2374e25",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-54d1ba5ec6f377e9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-7e7739955515af67",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-86733169f9b723a4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-2721f0ba6a38b446",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b675b05604f7caa5",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-b70fb4f48093064c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-9cedb2f409a28ea4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-a83b07e944105534",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-102f21ee106888ae",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-7b8d2ea34a4e0e9b",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-cfac48b7d56fb369",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-d695be7c9f4c9645",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-f45286d2048ac9bf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-619902fcad51e0ae",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-3ed5aae106de37ad",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-4d9708d9aa7eda73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-cb4a3c8c277bf759",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-3365ee12c4123e75",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-c55c2702432357cf",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-27d49026dfe2f689",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-8ab88b327563c7b0",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-297d26a01e66442c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-d3d8848ef7d5fc11",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-10b2f88bc3168b8d",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-98904c3de1487521",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-ae85437edcbb6f46",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-06cc3e16ce5b6cb4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-3426c5b8fd320e3f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-103bcecb3f111cf9",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-7e2751a46abfa454",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-61f6a0ff40cb5fb4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-08151114571a23ca",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-f4238735ec092d73",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-a1f6a13237c1a192",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-7b2866ab21dcf11c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-d0ebb3ef4b206651",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-e7c104cdc23cf499",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-fc2447971c34278a",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-78cca72ba19dca1f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-122fa5d2b5717b5c",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-2488641f0545e62e",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-003a342efec050f4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-e18527e8e906d042",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-ce25cb0152a88202",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-f6a67447e86c3d46",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-2fcafda69fd87493",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-8bd67bdcc3890ad6",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-887f807d9c4e26f8",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-fe50e83d19d8a7e2",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-eebbcbce0ab3df99",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-e602c62987396fd4",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-a5447efc234e7373",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-784d089cdeae2cbc",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-93bacec057331b17",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-37333474cc6de99f",
+      "unit_ideal": true
+    },
+    {
+      "basis_length": 1,
+      "field": "QQ",
+      "support_id": "s-cd61854105d8c3b5",
+      "unit_ideal": true
+    }
+  ]
+}

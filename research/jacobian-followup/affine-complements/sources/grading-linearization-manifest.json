@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-11-14",
+  "source": {
+    "url": "https://arxiv.org/html/math/0406239v2",
+    "file": "math-0406239v2.html",
+    "bytes": 350687,
+    "sha256": "9b3cb412f7ab3182592e663441e0f102eb34ec7b498eba67d4f5d14dc42a3584"
+  },
+  "authors": [
+    "Hubert Flenner",
+    "Mikhail Zaidenberg"
+  ],
+  "title": "On the uniqueness of C*-actions on affine surfaces",
+  "version": "arXiv:math/0406239v2, 14 June 2004",
+  "imported_result": "Corollary4.6 (Gutwirth): every algebraic C* action on the complex affine plane is linearizable",
+  "use": "only the corollary excluding a grading-invariant polynomial Keller target subalgebra",
+  "homogeneous_mate_obstruction_uses_linearization": false,
+  "external_theorem_independently_reproved": false
+}

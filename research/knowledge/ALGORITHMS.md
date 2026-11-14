@@ -1576,6 +1576,42 @@ Implementation: [cancellation_cloud_policy.py](../elliptic-curves/cas/cancellati
 
 Recorded claims: `EC-CANCELLATION-CLOUD-SCHEDULER-20260914` (proved); `EC-CANCELLATION-BASIS-REFRESH-20260914` (proved); `EC-CANCELLATION-BASIS-AMPLIFICATION-20260914` (proved); `EC-CANCELLATION-SUBGROUP-ACCESSIBILITY-20260914` (proved); `EC-CANCELLATION-EARLY-GENERATOR-20260914` (proved); `EC-CANCELLATION-BANK-CERTIFICATES-20260915` (proved); `EC-CANCELLATION-CERTIFIED-BANK-AMPLIFICATION-20260915` (proved).
 
+### METHOD-EC-COMPLETE-SELMER-LOCALIZATION: A formal-direction exclusion needs a complete global bound
+
+**When:** Trying quotient-first rational-point or incidence-curve methods on a new EC/K3 object.
+
+**Use:** Separate a complete global Selmer upper space, injective localization, the forced formal line and local/global isogeny-kernel equality. Replay finite matrices independently before implementing geometry. Apply finite-point arguments to higher-genus incidence or marking curves, not an intentionally positive-rank genus-one parameter base.
+
+**Avoid repeating:** Promoting a known-class subspace or sampled local images to a complete Selmer bound; inferring a saturated elliptic quotient basis from a point search; adding good finite primes to a genus-one local-existence sieve as if survival promised global points.
+
+**Boundary:** The14 Xns121 matrix checks do not prove the global Selmer hypotheses or full rational-point theorem. The initial15-pair local gate supplied no global conclusion. Pair[0,1] is later resolved by complete PARI descent plus independently certified all-place local solubility; the other14 paired bases remain globally UNKNOWN.
+
+**Revisit when:** A certified complete covering/Selmer space, quotient index, suitable isogeny or formal-direction theorem supplies the missing arithmetic premise.
+
+Sources: [XNS121_METHOD_TRANSFER_2026-11-13](../elliptic-curves/notes/XNS121_METHOD_TRANSFER_2026-11-13.md); [X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14](../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md).
+
+Implementation: [verify_xns121_localization.py](../elliptic-curves/cas/verify_xns121_localization.py); [pilot_hill1152_transfer.py](../elkies-k3/scripts/pilot_hill1152_transfer.py).
+
+Recorded claims: `EC-XNS121-LOCALIZATION-REPLAY-20261113` (proved); `EC-HILL1152-TRANSFER-PILOT-20261113` (proved); `EC-HILL1152-FIRST-PAIR-LOCAL-20261114` (proved); `EC-HILL1152-FIRST-PAIR-GLOBAL-MW19-20261114` (proved).
+
+### METHOD-EC-PULLBACK-SCALE-DIRECT-CENTRES: Remove redundant pullback scales and distinguish CVP stops from point-search exposure
+
+**When:** Commissioning specialized high-rank cover inputs with large polynomial-model coefficients.
+
+**Use:** Transport the full labelled subgroup exactly to the original-parent model before constructing raw pointed charts when the pullback introduces a known square/cube scale. If a frozen CVP budget yields no centre, record zero point exposure; a new direct-centre protocol must be frozen separately.
+
+**Avoid repeating:** Counting a CVP budget stop or reporting adapter error as a searched negative; enlarging the old allowance silently; factoring/minimizing just to remove a known exact coordinate scale.
+
+**Boundary:** The Hill1152 N^4,N^6 rescaling and eight-fibre direct-chart commissioning are exact. They do not prove an end-to-end speed ratio, universal centre policy, higher rank or family productivity.
+
+**Revisit when:** A new mathematical candidate/cover condition or a separately defined representation question changes the experiment.
+
+Sources: [RECENT_PAPERS_X1152_TRANSFER_2026-11-13](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md).
+
+Implementation: [commission_hill1152_direct_charts.py](../elkies-k3/scripts/commission_hill1152_direct_charts.py); [verify_hill1152_specialization_panel.py](../elkies-k3/scripts/verify_hill1152_specialization_panel.py).
+
+Recorded claims: `EC-HILL1152-SPECIALIZATION-COMMISSION-20261114` (proved).
+
 ## K3 constructions and lattice algorithms
 
 ### METHOD-K3-MARKING: Use full marked fibrations as identities
@@ -1632,7 +1668,7 @@ Recorded claims: `EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION` (proved).
 
 **When:** Selecting a different-NS rootless MW17 source over Q.
 
-**Use:** Start with T and the stable discriminant-kernel marked curve, including its exact rational-point and CM conditions; only then proceed to NS, rootlessness and equations. Keep point-existence data three-valued: null for unresolved or unscreened, false only for exact exclusion, true for an exact positive witness. Determinant1236 already has candidate fibre evaluations; only its branch-orbit identity is missing. Compute the full orthogonal discriminant kernel, including determinant-minus-one and normalizer cosets, before transferring a norm-one curve obstruction.
+**Use:** Start with T and the stable discriminant-kernel marked curve, including its exact rational-point and CM conditions; only then proceed to NS, rootlessness and equations. Keep point-existence data three-valued: null for unresolved or unscreened, false only for exact exclusion, true for an exact positive witness. Determinant1236 already has candidate fibre evaluations; only its branch-orbit identity is missing. Compute the full orthogonal discriminant kernel, including determinant-minus-one and normalizer cosets, before transferring a norm-one curve obstruction. The classification experiment may join existing rootless witnesses and necessary arithmetic exclusions without starting new geometry; arithmetic admission remains a prerequisite for new construction.
 
 **Avoid repeating:** Treating a coarse norm-one point, geometric rank nineteen, modular solution or Hensel branch as a fully rational marking.
 
@@ -2801,3 +2837,165 @@ Sources: [DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15](../elkies-k3/DET1020_PHYSI
 Implementation: [certify_det1020_physical_mw17.py](../elkies-k3/scripts/certify_det1020_physical_mw17.py); [reduce_source_rootless_nef.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/reduce_source_rootless_nef.py); [source_u_masked_pilot.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/source_u_masked_pilot.py).
 
 Recorded claims: `EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915` (proved).
+
+### METHOD-K3-CLASSIFICATION-COHORTS: Classify retained NS and frame evidence with fixed denominators and exact failure gates
+
+**When:** Comparing arithmetic realization of geometric MW17 lattices, or aggregating different-NS foundry failures.
+
+**Use:** Freeze the actual T/NS and frame population before counting. Join hash-pinned certificates through live claim scopes, preserve all overlapping obstructions and specify a primary-cause order. Separate NS counts from frame counts and outside controls. Record geometric, full marked-period, effective divisor-descent, rational-fibration and MW gates independently; use theorem consequences when rootless U and full rational divisors suffice.
+
+**Avoid repeating:** Counting determinants or embedding presentations as distinct NS classes; promoting an UNKNOWN or a bounded miss to a failure; extrapolating a rootful frame to its genus; treating equation size or uncomputed coordinates as an arithmetic obstruction; mixing outside positive controls into the frozen denominator.
+
+**Boundary:** The first join covers827 retained NS classes and1840 frames. Among66 geometric MW17 NS classes,19 are excluded, one control passes and46 are unknown. No exhaustive lattice classification, statistical prevalence, new arithmetic obstruction or independent proof replay follows.
+
+**Revisit when:** A new exact candidate decision, corrected claim or changed cohort is supplied with reviewed identity, scope and certificate bytes; use a successor version for added lattices.
+
+Sources: [DIFFERENT_NS_CLASSIFICATION_2026-09-15](../elkies-k3/DIFFERENT_NS_CLASSIFICATION_2026-09-15.md).
+
+Implementation: [classify_different_ns_mw17.py](../elkies-k3/scripts/classify_different_ns_mw17.py).
+
+Recorded claims: `EC-K3-DIFFERENT-NS-CLASSIFICATION-BASELINE-20260915` (proved); `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` (open).
+
+### METHOD-K3-RR-UNIT-PIVOT-LIFT: Lift a fixed Riemann–Roch kernel through unit pivots and retain every component checkpoint
+
+**When:** A certified divisor has an exact local-constraint presentation and a good-prime kernel, but rational coefficients are large.
+
+**Use:** Apply each new component matrix only to the retained kernel. Choose unit pivot blocks modulo a good prime, lift their inverses by Newton iteration using integer matrix multiplication, and verify all residuals modulo the full prime power. Save each component kernel and resume terminal runs from it. Reconstruct coefficients only after the complete lift, then verify the rational functions exactly. Normalize by leading coefficients of the pole term and reconstruct the actual numerator polynomials after all linear cancellations. At1024 digits this succeeded completely where the auxiliary basis had344 failures, or17 after changing normalization. Verify pole support, weighted infinity degree, horizontal cancellation and every component exactly overQQ.
+
+**Avoid repeating:** Treating the dimension11 replay at59 as a rational obstruction; using61 despite its zero nodal f; claiming a rational pencil from the dimension2 result at67 or from32/64-digit lifts. Repeating slow generic large-residue matrix operations or restarting saved components after a time cap.
+
+**Boundary:** The exact rational degree20 pencil and the four-dimensional H=D+O_source system are proved by exact QQ checks. Their cubic/Weierstrass model and four section coordinates are now explicit; full17 basis coordinates and the old-source inverse remain open. Do not restart either closed lift. The subsequent complete1020 certificate supplies all17 physically marked coordinates and the old-source inverse; those earlier remaining gates are closed.
+
+**Revisit when:** For another exact RR presentation with a poorly conditioned auxiliary basis; the1020 pencil and trisection spaces are now complete.
+
+Sources: [rr-compiler-progress](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/rr-compiler-progress.md); [degree20-pencil-preflight](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/degree20-pencil-preflight.md); [DET1020_EXACT_RATIONAL_PENCIL_2026-09-15](../elkies-k3/DET1020_EXACT_RATIONAL_PENCIL_2026-09-15.md); [DET1020_COMPLETE_MW17_EQUATION_2026-09-15](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md).
+
+Implementation: [rr_degree20_modp.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/rr_degree20_modp.py); [rr_degree20_residue_fast.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/rr_degree20_residue_fast.py); [reconstruct_rr_kernel.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/reconstruct_rr_kernel.py).
+
+Recorded claims: `EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915` (proved); `EC-K3-DET1020-EXACT-RATIONAL-PENCIL-20260915` (proved); `EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915` (proved).
+
+### METHOD-K3-POINTED-PLANE-LOCAL-NORMALIZATION: Use physical component residue fields when a pointed genus-one plane resists general normalization
+
+**When:** A fixed exact pencil has a rational component origin and a high-degree singular plane presentation, with physical split nodal charts already certified.
+
+**Use:** Restrict the pencil to every component above the old parameter value of the origin; certify the residue degrees by NS intersections and their sum by the covering degree. Hensel-lift the origin with the derivative checked as a unit and extract the relative differential from the source two-form. Use these exact local data as input to global Riemann-Roch, keeping global regularity obligations explicit.
+
+**Avoid repeating:** Equating a local branch or a finite series with a global Weierstrass coordinate; assuming installed integralBasis accepts parameter coefficient fields; treating general-normalization timeouts as mathematical obstructions.
+
+**Boundary:** For determinant1020 the exact origin jet modulo s^4, relative differential modulo s^3, and residue degrees5,1,3,11 are computed. Singular integralBasis rejects a QQ(u) control; normal succeeds on that control but target67(u) and67,u=0 probes timed out at60seconds. No global pole2/pole3 functions or Weierstrass model follow from these tests. Subsequent fixed1020 work bypassed global normalization by computing H=D+O_source in461 ambient functions, yielding the complete cubic and Weierstrass model.
+
+**Revisit when:** Use on another fixed pointed plane when component charts help. For1020 do not pursue general normalization or global L(2Z), L(3Z): the trisection cubic and exact Weierstrass maps are already closed.
+
+Sources: [rr-weierstrass-local-progress](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/rr-weierstrass-local-progress.md).
+
+Implementation: [compile_origin_jet.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/compile_origin_jet.py); [compile_mu_residue_algebra.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/compile_mu_residue_algebra.py); [probe_plane_normalization.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/probe_plane_normalization.py).
+
+Recorded claims: `EC-K3-DET1020-EXACT-RATIONAL-PENCIL-20260915` (proved).
+
+### METHOD-K3-TRISECTION-CUBIC-COMPILER: Compile a fixed genus-one pencil through a small rational trisection linear system
+
+**When:** A certified pencil D has a known rational source curve O with D.O=3, and L(D+O) has nearly the same ambient presentation as the completed L(D).
+
+**Use:** Check H=D+O is nef and big, compute and verify its complete four-dimensional space, retain the original two pencil functions, and restrict to the complete degree3 system on each fiber. Find the exact quartic relation, substitute the fixed pencil ratio and remove its known line to obtain a cubic. Center complementary forms at the known rational origin. Use universal pointed-quartic forward/inverse identities with exact invariant scaling to avoid huge expanded rational intermediate maps.
+
+**Avoid repeating:** Trying only L(2Z), L(3Z) at a costly origin; assuming a high-degree plane needs full generic normalization; treating the modular dimension or lifted coefficients as a rational proof; expanding the general Cremona map when exact compositional polynomial identities suffice.
+
+**Boundary:** For1020 the old zero has D.O=3 and H^2=4. Ambient461 gives exact h0(H)=4, a cubic and polynomial Weierstrass model of degrees8,12, exact cubic maps and four independent section pairs. Full17 marked coordinates and old-source inverse remain open. The subsequent complete1020 certificate supplies all17 physically marked coordinates and the old-source inverse; those earlier remaining gates are closed.
+
+**Revisit when:** For a fixed genus-one pencil with an accessible degree3 divisor and a verified small ambient extension.
+
+Sources: [DET1020_CUBIC_WEIERSTRASS_2026-09-15](../elkies-k3/DET1020_CUBIC_WEIERSTRASS_2026-09-15.md); [DET1020_COMPLETE_MW17_EQUATION_2026-09-15](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md).
+
+Implementation: [rr_trisection_encoded.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/rr_trisection_encoded.py); [reconstruct_trisection_numerators.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/reconstruct_trisection_numerators.py); [verify_trisection_numerators.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/verify_trisection_numerators.py); [build_trisection_quartic.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/build_trisection_quartic.py); [convert_pointed_quartic_exact.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/convert_pointed_quartic_exact.py).
+
+Recorded claims: `EC-K3-DET1020-CUBIC-WEIERSTRASS-20260915` (proved); `EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915` (proved).
+
+### METHOD-K3-MARKED-TRACE-GOOD-REDUCTION: Identify interpolated elliptic sections by divisor traces and good-reduction rigidity
+
+**When:** A rational K3 model has a full physical marking, height-bounded sections and accessible rational multisections.
+
+**Use:** Use an exact integral divisor-trace transition, reconstruct degree-bounded candidates, then prove their curve identities and full heights overQQ. To prove the specific labels, use enough exact finite-field trace values with unit guards and Vandermonde determinant, good K3 reduction, and injectivity of NS specialization.
+
+**Avoid repeating:** Treating a p-adic lift, matching height Gram or a few residue values without degree/integrality and NS-injectivity arguments as proof of physical identity.
+
+**Boundary:** For1020 all17 height4 sections are polynomial of degrees4,6; seven exact values at1013 identify their reductions and hence their divisor classes. The67 trace pilot failed unit guards and is retained as a route failure, not an arithmetic obstruction.
+
+**Revisit when:** For another fixed marked K3 where the full hypotheses, especially good reduction and degree bounds, can be verified.
+
+Sources: [DET1020_COMPLETE_MW17_EQUATION_2026-09-15](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md).
+
+Implementation: [compile_trace_components.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/compile_trace_components.py); [build_trace_basis_transport.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/build_trace_basis_transport.py); [verify_marked_sections.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/verify_marked_sections.py); [verify_marked_section_reduction.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/verify_marked_section_reduction.py).
+
+Recorded claims: `EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915` (proved).
+
+### METHOD-K3-DETERMINANTAL-SOURCE-INVERSE: Recover source coordinates by fiber-divisor interpolation and pinned minors
+
+**When:** A known birational elliptic construction has unwieldy expanded inverse coefficients but explicit old-fiber multisections.
+
+**Use:** Recover a ratio of old fiber functions from its zero/pole divisors, fix its scalar by an exact origin expansion, and write coefficients using fixed Cramer minors. Recover remaining source coordinates by a polynomial kernel and Sylvester cofactors. A defined nonzero reduction proves a generic minor is nonzero; exact source identities and divisors prove characteristic-zero composition.
+
+**Avoid repeating:** Inferring rational inversion from modular composition samples or expanding enormous generic rational functions before testing a finite determinant representation.
+
+**Boundary:** For1020 two39x39 systems with pinned38x38 minors recover t,x, and the certified plane relation recovers y. Three fixed GF(1013) controls establish nonvanishing and check composition; they do not replace the written rational proof.
+
+**Revisit when:** For a different fixed birational map with explicit fiber divisors and exact source polynomial identities.
+
+Sources: [DET1020_COMPLETE_MW17_EQUATION_2026-09-15](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md).
+
+Implementation: [prepare_inverse_divisors.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/prepare_inverse_divisors.py); [determinantal_source_inverse.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/determinantal_source_inverse.py); [check_source_inverse.py](../artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/check_source_inverse.py).
+
+Recorded claims: `EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915` (proved).
+
+### METHOD-EC-X1152-EXACT-TRANSFER: Transfer equation-level methods before enlarging a new-parent search
+
+**When:** Importing a new MW17 parent or constructing residual-chord covers.
+
+**Use:** Pin equation and basis identities, replay section/height claims, freeze generic-only words and retain degenerate residuals explicitly. Use complete projective branch images and exact root-field gates. The Hill1152 transfer certifies four rank18 loaders but excludes all595 selected smooth-pencil pairs and the same Mestre low-genus route.
+
+**Avoid repeating:** Treating determinant1152 as a fibration/surface identity; treating same quartic roots up to projective scalar as the same rational squareclass; silently dropping repeated-root residuals or applying the Q80 whole-bank theorem to a different parent.
+
+**Boundary:** A selected35-pencil exclusion is not a universal bisection obstruction. Four generic rank18 lower bounds do not certify specialized ranks or saturation.
+
+**Revisit when:** A new exact equation map, a new trace bank or singular-image mechanism, or an independently certified specialization provides a different gate.
+
+Sources: [RECENT_PAPERS_X1152_TRANSFER_2026-11-13](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md).
+
+Implementation: [pilot_hill1152_transfer.py](../elkies-k3/scripts/pilot_hill1152_transfer.py); [verify_hill1152_transfer.py](../elkies-k3/scripts/verify_hill1152_transfer.py); [verify_hill1152_four_covers.py](../elkies-k3/scripts/verify_hill1152_four_covers.py).
+
+Recorded claims: `EC-HILL1152-TRANSFER-PILOT-20261113` (proved); `EC-HILL1152-FOUR-MW18-COVERS-20261113` (proved).
+
+### METHOD-EC-INTRINSIC-J-CRITICAL-VALUES: Distinguish fibrations by intrinsic non-special j-critical values
+
+**When:** Comparing exact elliptic K3 equations with equal coarse lattice determinants.
+
+**Use:** Remove the0,1728,infinity critical strata using exact degree, squarefree and coprimality gates. Compare the trace or characteristic polynomial of j in the remaining critical algebra at a good prime. Unequal traces obstruct every geometric PGL2 base reparametrization.
+
+**Avoid repeating:** Fitting increasingly large rational Mobius maps without an invariant gate; identifying surfaces from equal determinant or one equal point count.
+
+**Boundary:** This distinguishes elliptic fibrations, not underlying K3 surfaces, and requires correct treatment of infinity and critical multiplicities.
+
+**Revisit when:** A different fibration on the same surface is allowed; a surface comparison needs stronger marked geometric or cohomological evidence.
+
+Sources: [X1152_JMAP_FIBRATION_DISTINCTION_2026-11-14](../elkies-k3/X1152_JMAP_FIBRATION_DISTINCTION_2026-11-14.md).
+
+Implementation: [verify_1152_fibration_distinction.py](../elkies-k3/scripts/verify_1152_fibration_distinction.py).
+
+Recorded claims: `EC-X1152-GEOMETRIC-FIBRATION-DISTINCTION-20261114` (proved).
+
+### METHOD-EC-GENUS-ONE-SELMER-SHA: Resolve a locally soluble period2 base through its complete Jacobian descent
+
+**When:** A smooth paired quadratic base has a rational degree2 divisor but no explicit point.
+
+**Use:** Construct a twist-sensitive Q-Jacobian and rational2-isogeny, remove square contents without changing squareclasses, certify all bad local places and use a complete2-Selmer/rank computation. If dimSel2=rank+dimE[2], Sha[2] vanishes and the locally soluble period2 torsor is trivial. Positive Jacobian rank then gives infinitely many rational base points.
+
+**Avoid repeating:** Treating finite local survival as global solubility; comparing only j while missing a twist; calling exported cover-map identities an independent complete Selmer proof; requiring a point search to succeed before recognizing a proved existence result.
+
+**Boundary:** The first pair uses complete PARI arithmetic as a trusted CAS dependency. Independent checks cover local witnesses, primality, normalization, points, maps and height identities only. An explicit paired-base point and Jacobian-to-base map are still absent.
+
+**Revisit when:** Extract a rational paired-base point through the2-isogeny or quartic equivalence; only then commission explicit specializations. Other pairs require their own complete bounds.
+
+Sources: [X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14](../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md).
+
+Implementation: [certify_1152_first_pair_descent.py](../elkies-k3/scripts/certify_1152_first_pair_descent.py); [verify_1152_first_pair_arithmetic.py](../elkies-k3/scripts/verify_1152_first_pair_arithmetic.py).
+
+Recorded claims: `EC-HILL1152-PAIRED-JACOBIANS-20261114` (proved); `EC-HILL1152-FIRST-PAIR-LOCAL-20261114` (proved); `EC-HILL1152-FIRST-PAIR-GLOBAL-MW19-20261114` (proved).

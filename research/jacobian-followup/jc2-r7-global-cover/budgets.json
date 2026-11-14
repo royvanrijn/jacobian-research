@@ -1,0 +1,338 @@
+{
+  "schema": "r7-global-cover-nori-v1",
+  "infinity_resolution": [
+    {
+      "infinity_contact": 20,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "B_self_intersection": 15,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 7
+    },
+    {
+      "infinity_contact": 22,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 14,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 6
+    },
+    {
+      "infinity_contact": 24,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 13,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 5
+    },
+    {
+      "infinity_contact": 26,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 12,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 4
+    },
+    {
+      "infinity_contact": 28,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 11,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 3
+    },
+    {
+      "infinity_contact": 30,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 10,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 2
+    },
+    {
+      "infinity_contact": 32,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 9,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": true,
+      "minimum_finite_tangency_sum": 1
+    },
+    {
+      "infinity_contact": 34,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 8,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": false,
+      "minimum_finite_tangency_sum": 0
+    },
+    {
+      "infinity_contact": 38,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 6,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": false,
+      "minimum_finite_tangency_sum": 0
+    },
+    {
+      "infinity_contact": 40,
+      "actual_degree35_contact": true,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 5,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": false,
+      "minimum_finite_tangency_sum": 0
+    },
+    {
+      "infinity_contact": 36,
+      "actual_degree35_contact": false,
+      "B_multiplicities": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_self_intersection": 7,
+      "node_threshold": 8,
+      "Nori_excludes_transverse_pair": false,
+      "minimum_finite_tangency_sum": 0
+    }
+  ],
+  "normal_inertia_obstructions": [
+    {
+      "inertia": "transposition",
+      "element": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "conjugate": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        5
+      ],
+      "commutator": [
+        2,
+        0,
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "inertia": "three_cycle",
+      "element": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5
+      ],
+      "conjugate": [
+        1,
+        3,
+        2,
+        0,
+        4,
+        5
+      ],
+      "commutator": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "necessary_inequality": "I_infinity(C,B)+2*sum_finite_tangencies(I_y(C,B)) >=34",
+  "scope": "B is a nodal degree(3,5) polynomial image; finite C/B singular loci are mutually avoided. C is a complete gap21 image and the finite normalization has S6 monodromy with a single2/3-cycle over B.",
+  "transverse_excluded_contacts": [
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32
+  ],
+  "general_line_budgets": [
+    {
+      "second_index": 2,
+      "affine_ramification_degree": 15,
+      "rows": [
+        {
+          "residue_degree_sum": 1,
+          "general_line_genus": 5,
+          "K_dot_H": 2,
+          "rho_Hodge_min": 10,
+          "rho_Q_big_max": 29
+        },
+        {
+          "residue_degree_sum": 3,
+          "general_line_genus": 4,
+          "K_dot_H": 0,
+          "rho_Hodge_min": 10,
+          "rho_Q_big_max": 23
+        },
+        {
+          "residue_degree_sum": 5,
+          "general_line_genus": 3,
+          "K_dot_H": -2,
+          "rho_Hodge_min": 10,
+          "rho_Q_big_max": 17
+        }
+      ]
+    },
+    {
+      "second_index": 3,
+      "affine_ramification_degree": 20,
+      "rows": [
+        {
+          "residue_degree_sum": 2,
+          "general_line_genus": 7,
+          "K_dot_H": 6,
+          "rho_Hodge_min": 4,
+          "rho_Q_big_max": 41
+        },
+        {
+          "residue_degree_sum": 4,
+          "general_line_genus": 6,
+          "K_dot_H": 4,
+          "rho_Hodge_min": 8,
+          "rho_Q_big_max": 35
+        },
+        {
+          "residue_degree_sum": 6,
+          "general_line_genus": 5,
+          "K_dot_H": 2,
+          "rho_Hodge_min": 10,
+          "rho_Q_big_max": 29
+        }
+      ]
+    }
+  ],
+  "assurance": "Authored blowup/kernel and Hurwitz interpretation with imported Nori Proposition3.27; algebra checker does not prove the topology theorem. No formalization or independent external review."
+}

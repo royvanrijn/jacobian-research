@@ -1,0 +1,24 @@
+{
+  "schema": "r7-quintic-incidence-validation-v1",
+  "checks": [
+    "new claims and index schema/source/dependency checks; unrelated consumer/narrowing checks and listed hashes excluded in memory only",
+    "new lesson schema, sources and reviewed scope fingerprints",
+    "both affected work items have unique live sources/claims and current scope fingerprints; full oriented/local ledgers retained",
+    "58 exact checks and every input/output hash current in jc2-r7-quintic-incidence",
+    "42 exact checks and every input/output hash current in jc2-r7-quintic-normalizations",
+    "all four new Python modules compile",
+    "all11 discovery artifacts preserved with hashes; two bounded halt outputs excluded as evidence",
+    "new Markdown whitespace and local links",
+    "all26 generated status/navigation files regenerated from current authority"
+  ],
+  "known_global_failures": [
+    "full mathematical index: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "full work ledger: duplicate primary work target"
+  ],
+  "assurance": "Author-side proof/metadata checks; no formalization or independent external review.",
+  "unrelated_hash_mismatches_excluded_in_memory": [],
+  "receipt_sha256": "85065364abd9e01b469331b6951df3fc8c33bfc26d4abdf03c8e19f361431cfa",
+  "passed": true,
+  "rendered_navigation_files": 26,
+  "subsequent_recheck": "README linked the42-check complete cusp-locus refinement;58 incidence checks replayed and all input/output hashes verified."
+}

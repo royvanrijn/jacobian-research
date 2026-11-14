@@ -1,0 +1,20 @@
+{
+  "import": "Classical Rentschler Hamiltonian criterion, as explicitly stated in Furter Lemma 4.2",
+  "author": "Jean-Philippe Furter",
+  "title": "Plane Polynomial Automorphisms of Fixed Multidegree",
+  "source_url": "https://www.math.u-bordeaux.fr/~jpfurter/planePolynomialAutomorphismsOfFixedMultidegree.pdf",
+  "retained_file": "furter-fixed-multidegree.pdf",
+  "sha256": "e31927d9a413ac87119523154c0c5e2739674683b7534e588854569d3db7185a",
+  "reviewed": "2026-11-14",
+  "location": "Section 4.1, definition of U and Lemma 4.2",
+  "used_implication": "For complex polynomials a in two variables, local nilpotence of the Hamiltonian derivation Jac(a,-) implies a=H(z) for a polynomial H and a polynomial coordinate z.",
+  "original_attribution": "Rudolf Rentschler, Operations du groupe additif sur le plan affine, C. R. Acad. Sci. Paris 267 (1968), 384-387",
+  "original_article_downloaded": false,
+  "supporting_primary_research_url": "https://doi.org/10.1017/S0027763000014094",
+  "not_imported": [
+    "Furter Lemma 4.3 and its finite nilpotence bound",
+    "an assertion that a limit or leading member of coordinates is itself a coordinate",
+    "a proof of Rentschler by finite symbolic regression"
+  ],
+  "assurance": "Reviewed published mathematical statement and attribution. The retained PDF is byte-pinned. No new formalization or independent proof of Rentschler is asserted."
+}

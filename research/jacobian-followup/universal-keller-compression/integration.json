@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "new_claims": [
+    "UACOMP1",
+    "UAFAM1",
+    "UAPOS1",
+    "UAQUOT1"
+  ],
+  "changed_existing_claims": [
+    "OP-KCOMP"
+  ],
+  "existing_entries_preserved": 1779,
+  "new_lesson": "METHOD-UNIVERSAL-KELLER-COMPRESSION",
+  "reviewed_existing_lesson": "METHOD-MARKED-ROOT-COMPILER",
+  "updated_work": "WORK-KCOMP",
+  "new_scope_fingerprints": {
+    "UACOMP1": "f50a9b03a7a8664a",
+    "UAFAM1": "975fb080a8bc5d80",
+    "UAPOS1": "f7703dfefb4821c6",
+    "UAQUOT1": "f0feffd19ca7e82b",
+    "OP-KCOMP": "caae232640b5c92a"
+  },
+  "status": "focused validation passed; full navigation blocked by pre-existing KDSQ6 missing artifact"
+}

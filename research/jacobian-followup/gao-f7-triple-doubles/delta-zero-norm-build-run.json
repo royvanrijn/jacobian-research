@@ -1,0 +1,18 @@
+{
+  "cap_seconds": 60,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 50,
+  "theorem_exclusion": false,
+  "motivation": "Eliminate one variable through a constant-leading cubic and four quadratic norms. This is a new four-variable certificate target, not a restart of the capped five-variable rational lift.",
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 0.3153892529953737,
+  "delta-zero-norm-input.json": {
+    "bytes": 1145131,
+    "sha256": "3a8a29aa703fce6d8f7df67a3e145eeb1b9128bcf67b00dafb6e622758430976"
+  },
+  "delta-zero-norm-checkpoint.json": {
+    "bytes": 1144038,
+    "sha256": "260ce2aa5dab41d04276858f42c933f259e96d05d81b3a5a06e0cc748f30d0a1"
+  }
+}

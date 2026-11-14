@@ -1,0 +1,16 @@
+{
+  "job": "binary",
+  "source": "source-2611.00161/anc/verify_hc4_binary.py",
+  "source_sha256": "91eec00b18d9be62d8c128e89efb8c294dd5b01c10c0ddcd3d64b70fb72cf5c4",
+  "cap_seconds": 180,
+  "elapsed_seconds": 41.817,
+  "terminal": "completed",
+  "exit_code": 0,
+  "expected_checks": 148,
+  "passed_checks": 148,
+  "failed_checks": 0,
+  "outcome": "PASS",
+  "independent_implementation": false,
+  "full_case_exhaustiveness_verified": false,
+  "log_sha256": "de81062e44c868a0e789be29601434728972d14d11fd3fefcc8e00032f62ff17"
+}

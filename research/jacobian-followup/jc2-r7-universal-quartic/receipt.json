@@ -1,0 +1,103 @@
+{
+  "schema": "universal-r7-quartic-v1",
+  "passed": true,
+  "check_count": 35,
+  "checks": [
+    "column grading reconstructed",
+    "doubled-quartic remainder grading",
+    "gap parity excludes the b0,d-nonzero chart",
+    "u cubic coefficient universally forced zero",
+    "complete leading parameter split",
+    "L-nonzero branch forces v",
+    "L-nonzero branch forces c",
+    "L-nonzero branch contradicts rho1",
+    "remaining R split",
+    "rho1 E coefficient is a unit",
+    "E elimination exact",
+    "R D coefficient is a unit",
+    "R elimination exact",
+    "additional minor forces w2/3",
+    "two complete final branches",
+    "both final branches frozen exactly once",
+    "K_zero generator count",
+    "K_zero exact generator 0",
+    "K_zero exact generator 1",
+    "K_zero exact generator 2",
+    "K_zero exact generator 3",
+    "K_zero exact generator 4",
+    "K_zero exact generator 5",
+    "K_zero independent sparse Fraction unit",
+    "K_zero mutated unit rejected",
+    "K_nonzero generator count",
+    "K_nonzero exact generator 0",
+    "K_nonzero exact generator 1",
+    "K_nonzero exact generator 2",
+    "K_nonzero exact generator 3",
+    "K_nonzero exact generator 4",
+    "K_nonzero independent sparse Fraction unit",
+    "K_nonzero mutated unit rejected",
+    "class1 full-matrix specialization control",
+    "class2 full-matrix specialization control"
+  ],
+  "elapsed_seconds": 1.346,
+  "input_sha256": {
+    "jacobian-followup/jc2-r7-universal-quartic/PROOF.md": "bc957f707603381684dee080221609755da4c082a97cdb9e1d3c179b0fdbcca9",
+    "jacobian-followup/jc2-r7-universal-quartic/README.md": "76aaa5434a2444742fb67f3a2c4a8ba4084b739549b936dd8c2e6b03aa99c314",
+    "jacobian-followup/jc2-r7-universal-quartic/REVIEW.md": "80bd0fa656c0825fe53d194b5555cb7e8e351f3a1fcb94431f878ab6ad6a09c3",
+    "jacobian-followup/jc2-r7-universal-quartic/certificates.json": "9ac61839ec16118b8731b8ed444b951bf7e7c09d6914c4754c2416bf19fd33aa",
+    "jacobian-followup/jc2-r7-universal-quartic/weighted_contact.py": "f278a1f26137e56e209954830f6384b0636b82607510353945b92170f2e3fffb",
+    "jacobian-followup/jc2-r7-universal-quartic/verify.py": "30f2edeb6b5395e95613f5cc4fcb61578be40c8f668a19d8155782882d9207e1",
+    "archive/non-elliptic/scripts/verify_f2_degree_6_10_gap.py": "a6de21ad37e59a6bab8c751dfd94fb72bdf21784bcf2f10322b11da6b77c25fe",
+    "jacobian-followup/jc2-r7-quartic-contact/contact.py": "8697b8ff4839e6c7578b40762d2d3753871f691693858404ac4794e2d8c1cabf",
+    "jacobian-followup/jc2-r7-quartic-contact/PROOF.md": "a5efecd63cfb100c7d647263266dc0114607042e3ea0f575bb95280a946f07d5",
+    "jacobian-followup/jc2-normal-r7/classification.json": "8efd66a04d1c1d3045b16a80ea1b5f59284cb82f0b5453ef179bf4486998cf8c"
+  },
+  "units": [
+    {
+      "branch": "K_zero",
+      "variables": [
+        "D",
+        "c",
+        "d",
+        "a"
+      ],
+      "generator_count": 6,
+      "multiplier_terms": [
+        96,
+        144,
+        95,
+        82,
+        4,
+        2
+      ],
+      "unit_identity": true
+    },
+    {
+      "branch": "K_nonzero",
+      "variables": [
+        "B",
+        "c",
+        "d",
+        "a"
+      ],
+      "generator_count": 5,
+      "multiplier_terms": [
+        95,
+        170,
+        111,
+        95,
+        6
+      ],
+      "unit_identity": true
+    }
+  ],
+  "universal_parameter_forcing": {
+    "b": 1,
+    "u": 0,
+    "v": "2*a/3+7*B/10",
+    "w": "2/3"
+  },
+  "universal_quartic_contact": "EXCLUDED for every birational degree(6,10) gap21 pair",
+  "remaining_single_ramified_row_case": "reciprocal cubic with a finite multiple root of p_prime",
+  "assurance": "Exact universal identities and separate Fraction units. Weighted-filter justification and inherited geometry are written proofs; no formalization or external review. Capped cofactor/basis attempts are not proof inputs."
+}

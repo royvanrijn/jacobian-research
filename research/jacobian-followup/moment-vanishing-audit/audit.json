@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-14",
+  "new_claim_ids": [
+    "GQFINITE20261114",
+    "GQINPUT20261114",
+    "GQ3NORMAL20261114",
+    "LONGCOMPACT20261114",
+    "OP-GMC3-CUBIC",
+    "GCOMPACTALL20261114",
+    "G3AFFINEW20261114",
+    "G3AFFINEWCUBIC20261114",
+    "G3SHEARCUTOFF20261114",
+    "G3AFFINEWFINITE20261114"
+  ],
+  "new_lessons_checked": 3,
+  "new_work_fingerprints": "current",
+  "local_links_checked": 75,
+  "generated_views_refreshed_via_existing_renderer_functions": [
+    "index/geometry.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "knowledge/work/geometry.md",
+    "knowledge/WORK_LEDGER.md",
+    "STATUS.md"
+  ],
+  "whole_repository_validation": "FAIL: normal render CLI is blocked by KDSQ6 missing consumer artifacts/generated-results/README.md; research search/check is blocked by METHOD-EC-CENTRE-POLICY missing next_direction_benchmark_v1/completion.json. Existing broken Markdown links are outside this follow-up.",
+  "retained_digit_separation_regression": "PASS: mod-5 one/two-variable digit rows; equal trace; Newton endpoints 2,3,5 components.",
+  "new_checker_sha256": "d543ed356a45a6f51c8fd9ddd5a8fd235853127dffd665641326e41c68c6dc67",
+  "external_quadratic_archive_sha256": "196fed360a70d9150709bf981af4304644021294783a525b2eafef246d23be2f",
+  "proof_assurance": "Internal written proofs and bounded exact regressions; no external review or formal verification.",
+  "whole_repository_check_navigation": "FAIL on latest attempt: KDSQ6 missing document consumer artifacts/generated-results/README.md. The earlier PF2RULED24 hash failure is a historical observation, not the current first blocker.",
+  "followup_note_local_links_checked_final": 15,
+  "scoped_metadata_final": "PASS: ten scoped entries, checker hashes, reciprocal narrowing dependencies, acyclic new dependency edges, three lessons, work fingerprints, source links and generated-view equality.",
+  "continuation_progress": {
+    "previous_goal_turn": "progress: current sources and registry confirm prior proof/ledger changes",
+    "current_turn": "progress: complete all-degree affine-W classification, finite gate, quartic locus and narrowed cubic problem",
+    "new_claim_ids_this_turn": [
+      "G3AFFINEW20261114",
+      "G3AFFINEWCUBIC20261114",
+      "G3SHEARCUTOFF20261114",
+      "G3AFFINEWFINITE20261114"
+    ],
+    "checker_sha256": "a86ec524ee7ca785f9c5489f0e3ecfa6d9095135c1334db39d27f1e17f7cc52a",
+    "direct_Wick_vs_series_cases": 5,
+    "orders_per_case": 8,
+    "repaired_failure_cases": 2,
+    "sharp_safe_cases": 8,
+    "boundary": "Internal written all-order proofs and bounded exact arithmetic. Global dense ternary cubics, external review and formalization remain open.",
+    "metadata_reconciliation": "An external rewrite removed the first finite-gate registry update. Scoped entries were reconciled against current files and re-read; unrelated rows preserved.",
+    "unrelated_dependency_observation": "A proposed broader dependency acyclicity check encountered an existing EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL cycle. Only new scoped dependency edges were certified acyclic; no new global validation requirement was imposed."
+  }
+}

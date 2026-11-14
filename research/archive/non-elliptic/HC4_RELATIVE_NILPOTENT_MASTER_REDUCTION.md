@@ -1,5 +1,12 @@
 # HC4 relative-nilpotent master reduction
 
+> **13 November 2026 update:** the separate external structural
+> reproduction `HCTANG2` and [recognition corollary `HCTANG3`](../../jacobian-followup/tang-hc4-audit/APPLICATIONS.md)
+> now supply a constant rank-one determinant-preserving direction for
+> every nonautomorphic HC4 potential. The relative-pencil proof below
+> retains its original auxiliary scope; the new import supplies the
+> recognition step discussed here. Neither HC4 nor JC2 is resolved.
+
 ## Purpose
 
 This note consolidates the relative-nilpotent Hessian-pencil reductions.

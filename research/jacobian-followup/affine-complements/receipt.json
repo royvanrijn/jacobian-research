@@ -1,0 +1,303 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 58,
+  "checks": [
+    "source integrity 2608.27341v2.html",
+    "source integrity 2608.27341v1.html",
+    "source integrity 2608.27341v2-abstract.html",
+    "F1_contact_four",
+    "product_surface_contact_three",
+    "rank_three_contact_two",
+    "two_support_points",
+    "no_coincidence_adjacent",
+    "one_point_nonadjacent",
+    "homogeneous test retains the point outside s=1 chart",
+    "identical divisor rejected",
+    "nonsaturated column rejected",
+    "wrong twist rejected",
+    "contact is exactly four in a regular local chart",
+    "B square",
+    "E square",
+    "B E",
+    "adjunction B",
+    "adjunction E",
+    "canonical class after quotient by B",
+    "canonical and different imply B E=2(delta+1)",
+    "negative adjacency forces empty coincidence",
+    "positive adjacency gives contact four",
+    "F1 canonical identity K=E-3B, f coefficient",
+    "F1 canonical identity h coefficient",
+    "complete normalized-section candidates",
+    "affineness removes the disjoint negative section",
+    "two omitted primes plus infinity exceed boundary rank",
+    "stratified class identity rank 2",
+    "stratified class identity rank 3",
+    "stratified class identity rank 4",
+    "stratified class identity rank 5",
+    "stratified class identity rank 6",
+    "stratified class identity rank 7",
+    "stratified class identity rank 8",
+    "leading differential coefficient 1,1",
+    "leading differential coefficient 1,2",
+    "leading differential coefficient 1,3",
+    "leading differential coefficient 1,4",
+    "leading differential coefficient 2,1",
+    "leading differential coefficient 2,2",
+    "leading differential coefficient 2,3",
+    "leading differential coefficient 2,4",
+    "leading differential coefficient 3,1",
+    "leading differential coefficient 3,2",
+    "leading differential coefficient 3,3",
+    "leading differential coefficient 3,4",
+    "leading differential coefficient 4,1",
+    "leading differential coefficient 4,2",
+    "leading differential coefficient 4,3",
+    "leading differential coefficient 4,4",
+    "noncancelled pole three forces both pole orders one",
+    "two pole-one coordinate divisors cannot give quartic degree",
+    "no rational basepoint-free extension degree four",
+    "complete m2 arithmetic patterns",
+    "proper maximal base multiplicity gives forbidden form pole 0",
+    "proper maximal base multiplicity gives forbidden form pole 1",
+    "m2 geometric refinement leaves only eight simple centers"
+  ],
+  "controls": {
+    "F1_contact_four": {
+      "splitting": [
+        0,
+        1
+      ],
+      "degrees": [
+        1,
+        2
+      ],
+      "columns": [
+        [
+          "s",
+          "t**2"
+        ],
+        [
+          "s*t",
+          "s**3 + t**3"
+        ]
+      ],
+      "minors": [
+        "s**4"
+      ],
+      "homogeneous_gcd": "s**4",
+      "coincidence_length": 4,
+      "geometric_support_points": 1,
+      "adjacent_classes": true,
+      "affine_space_by_imported_criterion": true
+    },
+    "product_surface_contact_three": {
+      "splitting": [
+        0,
+        0
+      ],
+      "degrees": [
+        1,
+        2
+      ],
+      "columns": [
+        [
+          "s",
+          "t"
+        ],
+        [
+          "s**2 + t**2",
+          "s*t"
+        ]
+      ],
+      "minors": [
+        "-t**3"
+      ],
+      "homogeneous_gcd": "t**3",
+      "coincidence_length": 3,
+      "geometric_support_points": 1,
+      "adjacent_classes": true,
+      "affine_space_by_imported_criterion": true
+    },
+    "rank_three_contact_two": {
+      "splitting": [
+        0,
+        0,
+        0
+      ],
+      "degrees": [
+        1,
+        2
+      ],
+      "columns": [
+        [
+          "s",
+          "t",
+          "0"
+        ],
+        [
+          "s**2",
+          "s*t",
+          "t**2"
+        ]
+      ],
+      "minors": [
+        "0",
+        "s*t**2",
+        "t**3"
+      ],
+      "homogeneous_gcd": "t**2",
+      "coincidence_length": 2,
+      "geometric_support_points": 1,
+      "adjacent_classes": true,
+      "affine_space_by_imported_criterion": true
+    },
+    "two_support_points": {
+      "splitting": [
+        0,
+        0
+      ],
+      "degrees": [
+        1,
+        2
+      ],
+      "columns": [
+        [
+          "s",
+          "t"
+        ],
+        [
+          "s**2",
+          "s*t + t**2"
+        ]
+      ],
+      "minors": [
+        "s*t**2"
+      ],
+      "homogeneous_gcd": "s*t**2",
+      "coincidence_length": 3,
+      "geometric_support_points": 2,
+      "adjacent_classes": true,
+      "affine_space_by_imported_criterion": false
+    },
+    "no_coincidence_adjacent": {
+      "splitting": [
+        0,
+        0,
+        0
+      ],
+      "degrees": [
+        0,
+        1
+      ],
+      "columns": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "s",
+          "t"
+        ]
+      ],
+      "minors": [
+        "s",
+        "t",
+        "0"
+      ],
+      "homogeneous_gcd": "1",
+      "coincidence_length": 0,
+      "geometric_support_points": 0,
+      "adjacent_classes": true,
+      "affine_space_by_imported_criterion": false
+    },
+    "one_point_nonadjacent": {
+      "splitting": [
+        0,
+        0
+      ],
+      "degrees": [
+        0,
+        2
+      ],
+      "columns": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "s**2",
+          "t**2"
+        ]
+      ],
+      "minors": [
+        "t**2"
+      ],
+      "homogeneous_gcd": "t**2",
+      "coincidence_length": 2,
+      "geometric_support_points": 1,
+      "adjacent_classes": false,
+      "affine_space_by_imported_criterion": false
+    }
+  },
+  "rejected_inputs": {
+    "same_divisor": "identical columns: coincidence is not finite",
+    "vertical_component": "column has a projective zero",
+    "wrong_degree": "incorrect homogeneous entry degree"
+  },
+  "ruled_candidates_before_affineness": [
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "ruled_candidates_after_affineness": [
+    [
+      1,
+      1
+    ]
+  ],
+  "m2_basepoint_patterns": [
+    {
+      "multiplicity_two_count": 0,
+      "multiplicity_one_count": 8,
+      "on_strict_B_multiplicity_two": 0,
+      "on_strict_B_multiplicity_one": 6
+    },
+    {
+      "multiplicity_two_count": 1,
+      "multiplicity_one_count": 4,
+      "on_strict_B_multiplicity_two": 1,
+      "on_strict_B_multiplicity_one": 4
+    }
+  ],
+  "m2_patterns_after_proper_multiplicity_obstruction": [
+    {
+      "multiplicity_two_count": 0,
+      "multiplicity_one_count": 8,
+      "on_strict_B_multiplicity_two": 0,
+      "on_strict_B_multiplicity_one": 6
+    }
+  ],
+  "assurance": {
+    "recognition_theorem": "external import, not proved by checker",
+    "geometry": "written argument",
+    "hypothetical_finite_map_constructed": false,
+    "actual_normalization_ruled_compatibility_proved": false,
+    "quartic_packet_exclusion": false,
+    "formal_verification": false,
+    "independent_full_reproof": false
+  },
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "31822ec4363aaf469c00d74ff9bec38c622a5f941e156daaea5785ef022cedc9",
+  "elapsed_seconds": 0.048531
+}

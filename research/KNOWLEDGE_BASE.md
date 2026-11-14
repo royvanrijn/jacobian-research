@@ -5,6 +5,8 @@ Use the [algorithmic lessons](knowledge/ALGORITHMS.md) and
 Both link back to evidence. Mathematical status comes only from
 [MATH_STATUS.json](MATH_STATUS.json).
 
+[Moment and vanishing review, 14 November 2026](jacobian-followup/moment-vanishing-audit/README.md) records the quadratic Gaussian gate, full compact Lie group classification, complete affine-W cubic chart and surviving exact questions.
+
 ## Find the prior result
 
 Run from either checkout directory using the appropriate script path:

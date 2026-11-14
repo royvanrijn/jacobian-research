@@ -1,0 +1,750 @@
+{
+  "as_of": "2026-11-14",
+  "degree8_slice": "n4 marked-root lambda2=0; not a plane Keller map",
+  "target_polynomial": "-b + q*t**4 + r*t**3 + t",
+  "marking_elimination": "-4*T**2*q*t**5 - 3*T**2*r*t**4 - T**2*t**2 + 8*T*q*t**4 + 6*T*r*t**3 + 2*T*t + 16*q**2*t**6 + 24*q*r*t**5 - 8*q*t**5 + 4*q*t**3 + 9*r**2*t**4 - 6*r*t**4 + 3*r*t**2 + t**4 - 2*t**2",
+  "raw_content": "b*q**2",
+  "inverse_polynomial": "T**8*(-256*b**4*q**3 - 192*b**3*q**2*r - 27*b**3*r**4 + 6*b**2*q*r**2 - 27*b*q**2 - 4*b*r**3) + T**7*(512*b**3*q**3 + 384*b**2*q**2*r + 54*b**2*r**4 - 12*b*q*r**2 + 54*q**2 + 8*r**3) + T**6*(2048*b**4*q**3*r - 2048*b**4*q**3 + 1536*b**3*q**2*r**2 - 1536*b**3*q**2*r + 216*b**3*r**5 - 216*b**3*r**4 - 48*b**2*q*r**3 + 48*b**2*q*r**2 + 216*b*q**2*r - 216*b*q**2 + 32*b*r**4 - 32*b*r**3) + T**5*(8192*b**4*q**4 + 5632*b**3*q**3*r + 3072*b**3*q**3 + 864*b**3*q*r**4 - 576*b**2*q**2*r**2 + 2304*b**2*q**2*r - 54*b**2*r**5 + 324*b**2*r**4 + 864*b*q**3 + 140*b*q*r**3 - 72*b*q*r**2 - 54*q**2*r + 324*q**2 - 8*r**4 + 48*r**3) + T**4*(-4608*b**4*q**3*r**2 + 12288*b**4*q**3*r - 5120*b**4*q**3 - 8192*b**3*q**4 - 3456*b**3*q**2*r**3 + 9216*b**3*q**2*r**2 - 3840*b**3*q**2*r - 486*b**3*r**6 + 1296*b**3*r**5 - 540*b**3*r**4 + 18*b**3*r**2 - 6144*b**2*q**3*r - 756*b**2*q*r**4 - 288*b**2*q*r**3 + 120*b**2*q*r**2 - 6*b**2*q - 294*b*q**2*r**2 + 1296*b*q**2*r - 540*b*q**2 - 72*b*r**5 + 192*b*r**4 - 80*b*r**3 + 3*b*r - 864*q**3 - 128*q*r**3) + T**3*(-24576*b**4*q**4*r + 32768*b**4*q**4 - 14848*b**3*q**3*r**2 + 18432*b**3*q**3*r + 6144*b**3*q**3 - 2592*b**3*q*r**5 + 3456*b**3*q*r**4 - 96*b**3*q*r + 3264*b**2*q**2*r**3 - 5376*b**2*q**2*r**2 + 4608*b**2*q**2*r + 378*b**2*r**6 - 648*b**2*r**5 + 648*b**2*r**4 - 42*b**2*r**2 - 2592*b*q**3*r + 3456*b*q**3 - 468*b*q*r**4 + 656*b*q*r**3 - 144*b*q*r**2 - 6*b*q + 378*q**2*r**2 - 648*q**2*r + 648*q**2 + 56*r**5 - 96*r**4 + 96*r**3 - 6*r) + T**2*(-49152*b**4*q**5 - 18432*b**4*q**3*r**2 + 18432*b**4*q**3*r - 4096*b**4*q**3 - 32768*b**3*q**4*r - 24576*b**3*q**4 - 5184*b**3*q**2*r**4 - 13824*b**3*q**2*r**3 + 13824*b**3*q**2*r**2 - 3072*b**3*q**2*r + 320*b**3*q**2 - 1944*b**3*r**6 + 1944*b**3*r**5 - 432*b**3*r**4 - 144*b**3*r**3 + 72*b**3*r**2 - 8*b**3*r + 4224*b**2*q**3*r**2 - 18432*b**2*q**3*r + 432*b**2*q*r**5 - 2160*b**2*q*r**4 - 432*b**2*q*r**3 + 96*b**2*q*r**2 + 280*b**2*q*r - 24*b**2*q - 5184*b*q**4 - 864*b*q**2*r**3 - 1368*b*q**2*r**2 + 1944*b*q**2*r - 432*b*q**2 - 288*b*r**5 + 288*b*r**4 - 64*b*r**3 - 22*b*r**2 + 12*b*r - b + 432*q**3*r - 2592*q**3 + 64*q*r**4 - 384*q*r**3 + 36*q) + T*(-49152*b**4*q**4*r + 24576*b**4*q**4 + 32768*b**3*q**5 + 4608*b**3*q**3*r**3 - 33792*b**3*q**3*r**2 + 14336*b**3*q**3*r - 5184*b**3*q*r**5 + 2592*b**3*q*r**4 + 192*b**3*q*r**2 - 192*b**3*q*r + 32*b**3*q + 24576*b**2*q**4*r + 6912*b**2*q**2*r**4 + 3456*b**2*q**2*r**3 - 3648*b**2*q**2*r**2 + 32*b**2*q**2 + 486*b**2*r**7 + 324*b**2*r**6 - 432*b**2*r**5 + 174*b**2*r**3 - 84*b**2*r**2 + 12*b**2*r - 768*b*q**3*r**2 - 5184*b*q**3*r + 2592*b*q**3 - 108*b*q*r**5 - 840*b*q*r**4 + 480*b*q*r**3 - 14*b*q*r - 12*b*q + 3456*q**4 + 998*q**2*r**3 + 324*q**2*r**2 - 432*q**2*r + 72*r**6 + 48*r**5 - 64*r**4 + 26*r**2 - 12*r + 2) + 65536*b**5*q**6 + 98304*b**4*q**5*r - 32768*b**4*q**5 + 13824*b**4*q**3*r**4 - 9216*b**4*q**3*r**2 + 4096*b**4*q**3*r - 512*b**4*q**3 + 35328*b**3*q**4*r**2 - 24576*b**3*q**4*r + 10368*b**3*q**2*r**5 - 3456*b**3*q**2*r**4 - 6912*b**3*q**2*r**3 + 3072*b**3*q**2*r**2 + 128*b**3*q**2*r - 128*b**3*q**2 + 729*b**3*r**8 - 972*b**3*r**6 + 432*b**3*r**5 + 270*b**3*r**4 - 288*b**3*r**3 + 100*b**3*r**2 - 16*b**3*r + b**3 + 6912*b**2*q**5 - 128*b**2*q**3*r**3 + 768*b**2*q**3*r**2 - 162*b**2*q*r**6 + 216*b**2*q*r**4 - 96*b**2*q*r**3 - 50*b**2*q*r**2 + 80*b**2*q*r - 20*b**2*q + 5184*b*q**4*r - 3456*b*q**4 + 1497*b*q**2*r**4 - 512*b*q**2*r**3 - 972*b*q**2*r**2 + 432*b*q**2*r + 108*b*r**7 - 144*b*r**5 + 64*b*r**4 + 39*b*r**3 - 44*b*r**2 + 15*b*r - 2*b",
+  "coefficients_low_to_high": [
+    "65536*b**5*q**6 + 98304*b**4*q**5*r - 32768*b**4*q**5 + 13824*b**4*q**3*r**4 - 9216*b**4*q**3*r**2 + 4096*b**4*q**3*r - 512*b**4*q**3 + 35328*b**3*q**4*r**2 - 24576*b**3*q**4*r + 10368*b**3*q**2*r**5 - 3456*b**3*q**2*r**4 - 6912*b**3*q**2*r**3 + 3072*b**3*q**2*r**2 + 128*b**3*q**2*r - 128*b**3*q**2 + 729*b**3*r**8 - 972*b**3*r**6 + 432*b**3*r**5 + 270*b**3*r**4 - 288*b**3*r**3 + 100*b**3*r**2 - 16*b**3*r + b**3 + 6912*b**2*q**5 - 128*b**2*q**3*r**3 + 768*b**2*q**3*r**2 - 162*b**2*q*r**6 + 216*b**2*q*r**4 - 96*b**2*q*r**3 - 50*b**2*q*r**2 + 80*b**2*q*r - 20*b**2*q + 5184*b*q**4*r - 3456*b*q**4 + 1497*b*q**2*r**4 - 512*b*q**2*r**3 - 972*b*q**2*r**2 + 432*b*q**2*r + 108*b*r**7 - 144*b*r**5 + 64*b*r**4 + 39*b*r**3 - 44*b*r**2 + 15*b*r - 2*b",
+    "-49152*b**4*q**4*r + 24576*b**4*q**4 + 32768*b**3*q**5 + 4608*b**3*q**3*r**3 - 33792*b**3*q**3*r**2 + 14336*b**3*q**3*r - 5184*b**3*q*r**5 + 2592*b**3*q*r**4 + 192*b**3*q*r**2 - 192*b**3*q*r + 32*b**3*q + 24576*b**2*q**4*r + 6912*b**2*q**2*r**4 + 3456*b**2*q**2*r**3 - 3648*b**2*q**2*r**2 + 32*b**2*q**2 + 486*b**2*r**7 + 324*b**2*r**6 - 432*b**2*r**5 + 174*b**2*r**3 - 84*b**2*r**2 + 12*b**2*r - 768*b*q**3*r**2 - 5184*b*q**3*r + 2592*b*q**3 - 108*b*q*r**5 - 840*b*q*r**4 + 480*b*q*r**3 - 14*b*q*r - 12*b*q + 3456*q**4 + 998*q**2*r**3 + 324*q**2*r**2 - 432*q**2*r + 72*r**6 + 48*r**5 - 64*r**4 + 26*r**2 - 12*r + 2",
+    "-49152*b**4*q**5 - 18432*b**4*q**3*r**2 + 18432*b**4*q**3*r - 4096*b**4*q**3 - 32768*b**3*q**4*r - 24576*b**3*q**4 - 5184*b**3*q**2*r**4 - 13824*b**3*q**2*r**3 + 13824*b**3*q**2*r**2 - 3072*b**3*q**2*r + 320*b**3*q**2 - 1944*b**3*r**6 + 1944*b**3*r**5 - 432*b**3*r**4 - 144*b**3*r**3 + 72*b**3*r**2 - 8*b**3*r + 4224*b**2*q**3*r**2 - 18432*b**2*q**3*r + 432*b**2*q*r**5 - 2160*b**2*q*r**4 - 432*b**2*q*r**3 + 96*b**2*q*r**2 + 280*b**2*q*r - 24*b**2*q - 5184*b*q**4 - 864*b*q**2*r**3 - 1368*b*q**2*r**2 + 1944*b*q**2*r - 432*b*q**2 - 288*b*r**5 + 288*b*r**4 - 64*b*r**3 - 22*b*r**2 + 12*b*r - b + 432*q**3*r - 2592*q**3 + 64*q*r**4 - 384*q*r**3 + 36*q",
+    "-24576*b**4*q**4*r + 32768*b**4*q**4 - 14848*b**3*q**3*r**2 + 18432*b**3*q**3*r + 6144*b**3*q**3 - 2592*b**3*q*r**5 + 3456*b**3*q*r**4 - 96*b**3*q*r + 3264*b**2*q**2*r**3 - 5376*b**2*q**2*r**2 + 4608*b**2*q**2*r + 378*b**2*r**6 - 648*b**2*r**5 + 648*b**2*r**4 - 42*b**2*r**2 - 2592*b*q**3*r + 3456*b*q**3 - 468*b*q*r**4 + 656*b*q*r**3 - 144*b*q*r**2 - 6*b*q + 378*q**2*r**2 - 648*q**2*r + 648*q**2 + 56*r**5 - 96*r**4 + 96*r**3 - 6*r",
+    "-4608*b**4*q**3*r**2 + 12288*b**4*q**3*r - 5120*b**4*q**3 - 8192*b**3*q**4 - 3456*b**3*q**2*r**3 + 9216*b**3*q**2*r**2 - 3840*b**3*q**2*r - 486*b**3*r**6 + 1296*b**3*r**5 - 540*b**3*r**4 + 18*b**3*r**2 - 6144*b**2*q**3*r - 756*b**2*q*r**4 - 288*b**2*q*r**3 + 120*b**2*q*r**2 - 6*b**2*q - 294*b*q**2*r**2 + 1296*b*q**2*r - 540*b*q**2 - 72*b*r**5 + 192*b*r**4 - 80*b*r**3 + 3*b*r - 864*q**3 - 128*q*r**3",
+    "8192*b**4*q**4 + 5632*b**3*q**3*r + 3072*b**3*q**3 + 864*b**3*q*r**4 - 576*b**2*q**2*r**2 + 2304*b**2*q**2*r - 54*b**2*r**5 + 324*b**2*r**4 + 864*b*q**3 + 140*b*q*r**3 - 72*b*q*r**2 - 54*q**2*r + 324*q**2 - 8*r**4 + 48*r**3",
+    "2048*b**4*q**3*r - 2048*b**4*q**3 + 1536*b**3*q**2*r**2 - 1536*b**3*q**2*r + 216*b**3*r**5 - 216*b**3*r**4 - 48*b**2*q*r**3 + 48*b**2*q*r**2 + 216*b*q**2*r - 216*b*q**2 + 32*b*r**4 - 32*b*r**3",
+    "512*b**3*q**3 + 384*b**2*q**2*r + 54*b**2*r**4 - 12*b*q*r**2 + 54*q**2 + 8*r**3",
+    "-256*b**4*q**3 - 192*b**3*q**2*r - 27*b**3*r**4 + 6*b**2*q*r**2 - 27*b*q**2 - 4*b*r**3"
+  ],
+  "leading_coefficient": "-b*(256*b**3*q**3 + 192*b**2*q**2*r + 27*b**2*r**4 - 6*b*q*r**2 + 27*q**2 + 4*r**3)",
+  "binary_discriminant": "-256*b**3*q**3 - 192*b**2*q**2*r - 27*b**2*r**4 + 6*b*q*r**2 - 27*q**2 - 4*r**3",
+  "coefficient_ideal_basis": [
+    "1"
+  ],
+  "newton_polygons": {
+    "zero hyperplane": {
+      "coefficient_valuations": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "vertices": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "edges": [
+        {
+          "start": [
+            0,
+            1
+          ],
+          "end": [
+            1,
+            0
+          ],
+          "width": 1,
+          "slope": "-1",
+          "escaping": false
+        },
+        {
+          "start": [
+            1,
+            0
+          ],
+          "end": [
+            7,
+            0
+          ],
+          "width": 6,
+          "slope": "0",
+          "escaping": false
+        },
+        {
+          "start": [
+            7,
+            0
+          ],
+          "end": [
+            8,
+            1
+          ],
+          "width": 1,
+          "slope": "1",
+          "escaping": true
+        }
+      ]
+    },
+    "binary discriminant": {
+      "coefficient_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "edges": [
+        {
+          "start": [
+            0,
+            0
+          ],
+          "end": [
+            4,
+            0
+          ],
+          "width": 4,
+          "slope": "0",
+          "escaping": false
+        },
+        {
+          "start": [
+            4,
+            0
+          ],
+          "end": [
+            8,
+            1
+          ],
+          "width": 4,
+          "slope": "1/4",
+          "escaping": true
+        }
+      ]
+    }
+  },
+  "exceptional_targets": [
+    {
+      "label": "generic quartic",
+      "target": {
+        "q": "1",
+        "r": "0",
+        "b": "1"
+      },
+      "inverse_polynomial": "-283*T**8 + 566*T**7 - 2264*T**6 + 12452*T**5 - 14722*T**4 + 43010*T**3 - 85701*T**2 + 63446*T + 35563",
+      "retained_length": 8,
+      "omitted_local_lengths": [],
+      "total_length": 8
+    },
+    {
+      "label": "zero root simple",
+      "target": {
+        "q": "1",
+        "r": "0",
+        "b": "0"
+      },
+      "inverse_polynomial": "2*T*(3*T**2 - 9*T + 7)*(3*T**2 + 3*T + 13)*(3*T**2 + 6*T + 19)",
+      "retained_length": 7,
+      "omitted_local_lengths": [
+        1
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "simple infinity",
+      "target": {
+        "q": "0",
+        "r": "1",
+        "b": "1"
+      },
+      "inverse_polynomial": "-(T**2 + 4)*(31*T**6 - 62*T**5 - 124*T**4 - 62*T**3 + 165*T**2 - 138*T - 73)",
+      "retained_length": 8,
+      "omitted_local_lengths": [],
+      "total_length": 8
+    },
+    {
+      "label": "double finite with simple infinity",
+      "target": {
+        "q": "0",
+        "r": "-1/3",
+        "b": "2/3"
+      },
+      "inverse_polynomial": "-2*(3*T**2 - 4)*(3*T**2 + 3*T + 13)/243",
+      "retained_length": 4,
+      "omitted_local_lengths": [
+        4
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "triple infinity",
+      "target": {
+        "q": "0",
+        "r": "0",
+        "b": "2"
+      },
+      "inverse_polynomial": "-2*(T - 2)*(T + 1)",
+      "retained_length": 2,
+      "omitted_local_lengths": [
+        6
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "singleton zero",
+      "target": {
+        "q": "0",
+        "r": "0",
+        "b": "0"
+      },
+      "inverse_polynomial": "2*T",
+      "retained_length": 1,
+      "omitted_local_lengths": [
+        1,
+        6
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "double root plus zero",
+      "target": {
+        "q": "2",
+        "r": "-3",
+        "b": "0"
+      },
+      "inverse_polynomial": "2*T*(9*T**2 + 36*T + 136)",
+      "retained_length": 3,
+      "omitted_local_lengths": [
+        1,
+        4
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "triple finite root",
+      "target": {
+        "q": "1/2",
+        "r": "-1",
+        "b": "1/2"
+      },
+      "inverse_polynomial": "(4*T**2 + 8*T + 29)/8",
+      "retained_length": 2,
+      "omitted_local_lengths": [
+        6
+      ],
+      "total_length": 8
+    },
+    {
+      "label": "two double finite roots",
+      "target": {
+        "q": "1",
+        "r": "-2",
+        "b": "-1/4"
+      },
+      "inverse_polynomial": "-1/64",
+      "retained_length": 0,
+      "omitted_local_lengths": [
+        4,
+        4
+      ],
+      "total_length": 8
+    }
+  ],
+  "degree8_occurring_cardinalities": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    8
+  ],
+  "degree8_all_fibre_degree_strata": "Retained length j iff a_8=...=a_(j+1)=0 and a_j!=0; omitted length 8-j",
+  "nonKeller_plane_controls": [
+    {
+      "a": 1,
+      "inverse": "T**2*u - T - v",
+      "leading_coefficient": "u",
+      "omitted_prime": {
+        "image": "u=0",
+        "ramifies": false,
+        "omitted": true,
+        "e": 1,
+        "f": 1,
+        "pole_order": 1
+      },
+      "retained_ramification": {
+        "image": "4*u*v + 1",
+        "ramifies": true,
+        "omitted": false,
+        "e": 2,
+        "f": 1
+      },
+      "origin_lengths": [
+        1,
+        1
+      ],
+      "retained_ramified_fibre_length": 2,
+      "Keller": false,
+      "newton": {
+        "coefficient_valuations": [
+          0,
+          0,
+          1
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "edges": [
+          {
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1,
+              0
+            ],
+            "width": 1,
+            "slope": "0",
+            "escaping": false
+          },
+          {
+            "start": [
+              1,
+              0
+            ],
+            "end": [
+              2,
+              1
+            ],
+            "width": 1,
+            "slope": "1",
+            "escaping": true
+          }
+        ]
+      },
+      "source_coordinate_fibration": {
+        "finite_T_fibre": "A1",
+        "infinity_fibre": "a*D",
+        "multiplicity": 1,
+        "distinct_from_target_radial_pencil": true
+      },
+      "inadmissible_primitive": {
+        "function": "x^a*y",
+        "equation": "W**2 - W - u*v",
+        "source_finite": false,
+        "value_on_omitted_prime": 1,
+        "leading_coefficient": 1
+      },
+      "complete_target_strata": [
+        {
+          "condition": "u!=0 and discriminant!=0",
+          "retained_lengths": [
+            1,
+            1
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "discriminant=0",
+          "retained_lengths": [
+            2
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "u=0",
+          "retained_lengths": [
+            1
+          ],
+          "omitted_lengths": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "inverse": "T**2*u**2 - T - v",
+      "leading_coefficient": "u**2",
+      "omitted_prime": {
+        "image": "u=0",
+        "ramifies": false,
+        "omitted": true,
+        "e": 1,
+        "f": 1,
+        "pole_order": 2
+      },
+      "retained_ramification": {
+        "image": "4*u**2*v + 1",
+        "ramifies": true,
+        "omitted": false,
+        "e": 2,
+        "f": 1
+      },
+      "origin_lengths": [
+        1,
+        1
+      ],
+      "retained_ramified_fibre_length": 2,
+      "Keller": false,
+      "newton": {
+        "coefficient_valuations": [
+          0,
+          0,
+          2
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          {
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1,
+              0
+            ],
+            "width": 1,
+            "slope": "0",
+            "escaping": false
+          },
+          {
+            "start": [
+              1,
+              0
+            ],
+            "end": [
+              2,
+              2
+            ],
+            "width": 1,
+            "slope": "2",
+            "escaping": true
+          }
+        ]
+      },
+      "source_coordinate_fibration": {
+        "finite_T_fibre": "A1",
+        "infinity_fibre": "a*D",
+        "multiplicity": 2,
+        "distinct_from_target_radial_pencil": true
+      },
+      "inadmissible_primitive": {
+        "function": "x^a*y",
+        "equation": "W**2 - W - u**2*v",
+        "source_finite": false,
+        "value_on_omitted_prime": 1,
+        "leading_coefficient": 1
+      },
+      "complete_target_strata": [
+        {
+          "condition": "u!=0 and discriminant!=0",
+          "retained_lengths": [
+            1,
+            1
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "discriminant=0",
+          "retained_lengths": [
+            2
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "u=0",
+          "retained_lengths": [
+            1
+          ],
+          "omitted_lengths": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "inverse": "T**2*u**3 - T - v",
+      "leading_coefficient": "u**3",
+      "omitted_prime": {
+        "image": "u=0",
+        "ramifies": false,
+        "omitted": true,
+        "e": 1,
+        "f": 1,
+        "pole_order": 3
+      },
+      "retained_ramification": {
+        "image": "4*u**3*v + 1",
+        "ramifies": true,
+        "omitted": false,
+        "e": 2,
+        "f": 1
+      },
+      "origin_lengths": [
+        1,
+        1
+      ],
+      "retained_ramified_fibre_length": 2,
+      "Keller": false,
+      "newton": {
+        "coefficient_valuations": [
+          0,
+          0,
+          3
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "edges": [
+          {
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1,
+              0
+            ],
+            "width": 1,
+            "slope": "0",
+            "escaping": false
+          },
+          {
+            "start": [
+              1,
+              0
+            ],
+            "end": [
+              2,
+              3
+            ],
+            "width": 1,
+            "slope": "3",
+            "escaping": true
+          }
+        ]
+      },
+      "source_coordinate_fibration": {
+        "finite_T_fibre": "A1",
+        "infinity_fibre": "a*D",
+        "multiplicity": 3,
+        "distinct_from_target_radial_pencil": true
+      },
+      "inadmissible_primitive": {
+        "function": "x^a*y",
+        "equation": "W**2 - W - u**3*v",
+        "source_finite": false,
+        "value_on_omitted_prime": 1,
+        "leading_coefficient": 1
+      },
+      "complete_target_strata": [
+        {
+          "condition": "u!=0 and discriminant!=0",
+          "retained_lengths": [
+            1,
+            1
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "discriminant=0",
+          "retained_lengths": [
+            2
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "u=0",
+          "retained_lengths": [
+            1
+          ],
+          "omitted_lengths": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "inverse": "T**2*u**4 - T - v",
+      "leading_coefficient": "u**4",
+      "omitted_prime": {
+        "image": "u=0",
+        "ramifies": false,
+        "omitted": true,
+        "e": 1,
+        "f": 1,
+        "pole_order": 4
+      },
+      "retained_ramification": {
+        "image": "4*u**4*v + 1",
+        "ramifies": true,
+        "omitted": false,
+        "e": 2,
+        "f": 1
+      },
+      "origin_lengths": [
+        1,
+        1
+      ],
+      "retained_ramified_fibre_length": 2,
+      "Keller": false,
+      "newton": {
+        "coefficient_valuations": [
+          0,
+          0,
+          4
+        ],
+        "vertices": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "edges": [
+          {
+            "start": [
+              0,
+              0
+            ],
+            "end": [
+              1,
+              0
+            ],
+            "width": 1,
+            "slope": "0",
+            "escaping": false
+          },
+          {
+            "start": [
+              1,
+              0
+            ],
+            "end": [
+              2,
+              4
+            ],
+            "width": 1,
+            "slope": "4",
+            "escaping": true
+          }
+        ]
+      },
+      "source_coordinate_fibration": {
+        "finite_T_fibre": "A1",
+        "infinity_fibre": "a*D",
+        "multiplicity": 4,
+        "distinct_from_target_radial_pencil": true
+      },
+      "inadmissible_primitive": {
+        "function": "x^a*y",
+        "equation": "W**2 - W - u**4*v",
+        "source_finite": false,
+        "value_on_omitted_prime": 1,
+        "leading_coefficient": 1
+      },
+      "complete_target_strata": [
+        {
+          "condition": "u!=0 and discriminant!=0",
+          "retained_lengths": [
+            1,
+            1
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "discriminant=0",
+          "retained_lengths": [
+            2
+          ],
+          "omitted_lengths": []
+        },
+        {
+          "condition": "u=0",
+          "retained_lengths": [
+            1
+          ],
+          "omitted_lengths": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "actual_r7_inverse_polynomial": null,
+  "actual_singleton_Keller_inverse_polynomial": null
+}

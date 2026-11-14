@@ -1,0 +1,13 @@
+{
+  "samples": 100,
+  "timings": {
+    "native": 0.015358070930233225,
+    "plain": 0.09688667804584838
+  },
+  "total_seconds": 0.11662659799912944,
+  "extrapolated_43036_seconds": {
+    "native": 6.609499405535171,
+    "plain": 41.69615076381131
+  },
+  "theorem": false
+}

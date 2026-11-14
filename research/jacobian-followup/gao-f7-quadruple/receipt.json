@@ -1,0 +1,102 @@
+{
+  "result": "PASS",
+  "claim_id": "GAOF7FOUR1",
+  "checks": 1535,
+  "scope": "For Gao v2 F7 on c!=0, quadruple-root incidence has finite fibres over every marked root parameter s, with at most16 points on D0=s*(3s^3-2)!=0 and exactly6 at each D0=0 value. It has generic degree8 and all generic normalized targets have one quadruple root and eight other simple roots, hence8 source points. Its nonordinary normalized-target locus is finite; in particular the still-undecided4+3+2 three-point stratum is finite. The full D0=0 locus is exactly24 normalized targets: one known fivefold origin with7 source points and23 quadruple targets with8 source points. No global4+3+2 exclusion or finite exceptional count is claimed. The3+2+2+2 case, global three-point existence, full strata,F5 and JC2 remain open.",
+  "generic_degree": 8,
+  "all_marked_parameter_fibres_finite": true,
+  "nonordinary_normalized_locus": "FINITE; explicit complete list not computed",
+  "uniform_fibre_bound_on_D0_nonzero": 16,
+  "pole_chart_target_count": 24,
+  "pole_chart_fibre_counts": {
+    "7": 1,
+    "8": 23
+  },
+  "good_sample_s": 1,
+  "good_sample_target_count": 8,
+  "coefficient_coprimality_shape": [
+    54,
+    54
+  ],
+  "coefficient_coprimality_det_mod": 779574954,
+  "integer_resultant_evaluation_points": 25,
+  "integer_cofactor_evaluation_points": 19,
+  "integer_determinant_engines": [
+    "FLINT",
+    "plain Python Bareiss"
+  ],
+  "finite_free_norms": [
+    {
+      "name": "s_denominator",
+      "dimension": 24,
+      "det_mod": 167006305
+    },
+    {
+      "name": "projection_squarefree",
+      "dimension": 24,
+      "det_mod": 932964196
+    },
+    {
+      "name": "b_denominator",
+      "dimension": 24,
+      "det_mod": 400935167
+    },
+    {
+      "name": "residual_squarefree",
+      "dimension": 24,
+      "det_mod": 121642958
+    },
+    {
+      "name": "marked_root_nonorigin",
+      "dimension": 23,
+      "det_mod": 358538936
+    },
+    {
+      "name": "sample_curve_squarefree",
+      "dimension": 8,
+      "det_mod": 338024181
+    },
+    {
+      "name": "sample_b_denominator",
+      "dimension": 8,
+      "det_mod": 777603188
+    },
+    {
+      "name": "sample_residual_squarefree",
+      "dimension": 8,
+      "det_mod": 731948363
+    },
+    {
+      "name": "sample_marked_root",
+      "dimension": 8,
+      "det_mod": 133730184
+    }
+  ],
+  "pole_resultant_degree_bound": 345,
+  "pole_resultant_evaluation_points": 346,
+  "sample_resultant_degree_bound": 105,
+  "sample_resultant_evaluation_points": 106,
+  "finite_determinant_engines": [
+    "FLINT",
+    "plain Python Gaussian"
+  ],
+  "finite_source_engines": [
+    "FLINT univariate polynomials",
+    "plain Python coefficient lists"
+  ],
+  "positive_coverage": "Exact homogeneous identities on the pole chart; exact generic quadratic-linear source identities with unit denominators and squarefree specialized degree8 presentation.",
+  "slope_chart": "Exact derivative coordinate and all five transformed generic equations replayed, with only s and3s^3-2 factors removed. No generic triple-root exclusion.",
+  "checker_sha256": "ac019de08776edc4e16988bdbd847df4f5a1f2216b517ff17cf0fe004f7cfb1b",
+  "certificate_sha256": "c3e3b5945cf4aa813ffdfdc4385ed8aa9dc23bbda03c84bad451cec1813109d9",
+  "generic_certificate_sha256": "3f2ed6248b4ebbc231f1ee0b7f980fab60f414ab37fc09069bcf9d62d1b4ae1c",
+  "source_sha256": "fba7ec6541db431da1643488c7ebf5d308e42e1a3b504ca79c28086b4de3be79",
+  "exceptional_source_sha256": "d287717235f01e57e2a51d2df3409d536830c0ec1305f503387fb475826f367f",
+  "raw_triple_sha256": "f8b070b23001594349b61e3b3576e720a94958580606067c46a99c7fd8f29178",
+  "slope_triple_sha256": "015a7aa0f73996b83685100ce667ff1e00a9a24753f4f5b16332943a5b25d24f",
+  "generic_curve_source_sha256": "52215b03ef6a396216bcb63144a7cff3b8ec518f89e692c4aefde0effa578448",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "seconds": 10.305107450025389,
+  "assurance": "Exact arithmetic replay plus written source, adjugate, finite-free unit and generic-specialization arguments. A good specialization proves generic nonvanishing, not a global unit at every s. No independent end-to-end review, formal verification, external review or novelty priority."
+}

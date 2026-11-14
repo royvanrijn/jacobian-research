@@ -1,5 +1,9 @@
 # Determinant1020: an explicit nef MW17 divisor marking
 
+**Completed compilation:** the [full equation, seventeen marked points and source inverse](DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md)
+are now explicit. Uncomputed-function statements below describe the original
+divisor-class certificate, retained as a proof dependency.
+
 The [explicit rational K3 source](DET1020_EXPLICIT_RATIONAL_SOURCE_2026-09-15.md)
 now has an exact primitive rootless U in its physical Néron–Severi basis,
 with a full nef certificate. Its fiber, zero and seventeen saturated

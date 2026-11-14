@@ -1,0 +1,16 @@
+{
+  "checked": "2026-11-14",
+  "sources": [
+    {
+      "path": "groebner-interface.html",
+      "url": "https://sumiya11.github.io/Groebner.jl/interface/",
+      "sha256": "00a8affdaa2cdad4042d2e19c7eff6dc9f7d0a57dedbb7bc61712e1bb308dd89"
+    },
+    {
+      "path": "demin-2607.06372v3-abs.html",
+      "url": "https://arxiv.org/abs/2607.06372v3",
+      "sha256": "e1e81d04d68a2df7195a96d53a20891a9f505ee1bb47a78a3adeea4d3f8227cd"
+    }
+  ],
+  "scope": "Computational-method provenance only; no external F7 theorem is imported."
+}

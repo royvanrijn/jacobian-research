@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "EXACT_PERIOD_IDENTITIES_COMPUTED",
+  "cases": [
+    {
+      "name": "contact_at_marked",
+      "cocycle_exponent": 1,
+      "transition": {
+        "x": "1/u",
+        "y": "u**3*v + u"
+      },
+      "local_volume_f0": "a*x + b - x**4*y + x**3",
+      "local_volume_f1": "-a - b*u + v",
+      "local_antiderivative_F0": "-x**4*y**2/2 + y*(a*x + b + x**3)",
+      "local_primitive_on_u_chart": "-v**2/2 + v*(a + b*u)",
+      "primitive_difference": "a/u**2 + b/u + 1/(2*u**4)",
+      "period": "b"
+    },
+    {
+      "name": "contact_away_marked",
+      "cocycle_exponent": 2,
+      "transition": {
+        "x": "1/u",
+        "y": "u**3*v + u**2"
+      },
+      "local_volume_f0": "a*x + b + x**4*y - x**2",
+      "local_volume_f1": "-a - b*u - v",
+      "local_antiderivative_F0": "x**4*y**2/2 + y*(a*x + b - x**2)",
+      "local_primitive_on_u_chart": "v**2/2 + v*(a + b*u)",
+      "primitive_difference": "a/u + b - 1/(2*u**2)",
+      "period": "a"
+    }
+  ],
+  "remaining_family": {
+    "a": 0,
+    "b": "nonzero",
+    "global_primitive_x_coefficient": "-b*y - x**4*y**2/2 + x**2*y - 1/2",
+    "global_primitive_u_coefficient": "b*u*v + b + v**2/2"
+  },
+  "assurance": {
+    "all_height_obstruction": "written exactness argument",
+    "finite_map_on_remaining_family_constructed": false,
+    "remaining_family_excluded": false
+  },
+  "source_sha256": "a712a11dc115c716526ed897aca8793669383feeeefc7bee3dbaa7a3cbccba7a"
+}

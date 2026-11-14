@@ -4,24 +4,27 @@
 
 Mathematical states come from [MATH_STATUS.json](../MATH_STATUS.json). This ledger makes remaining obligations and suggested next steps discoverable. **All actions are unscheduled**; a work item does not authorize a search or replay.
 
-There are **3 open problems**, **78 partial results** and **4 parked problems** in elliptic curves and supporting K3 work. The 16 active work proposals include shared repository maintenance. The 22 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
+There are **3 open problems**, **78 partial results** and **5 parked problems** in elliptic curves and supporting K3 work. The 19 active work proposals include shared repository maintenance. The 32 proposals for other programmes are archived. All 77 inherited checklist records remain preserved; archiving is not completion.
 
 Start with the exact source and [method lessons](ALGORITHMS.md). The proposals summarize a useful next gate; they do not replace the full scope. Partial-result rows guarantee coverage, while the [source-level partial review](PARTIAL_REVIEW.md) records inspected obligations and explicitly lists the unreviewed remainder. A parked replacement can retire a route without proving its original statement.
 
 | Area | Open | Partial | Parked | Proposals |
 |---|---:|---:|---:|---:|
 | [Keller core, cancellation and arithmetic](work/core.md) | 0 | 0 | 0 | 4 |
-| [Elliptic curves and rank jumps](work/elliptic-curves.md) | 1 | 7 | 3 | 5 |
-| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 2 | 71 | 1 | 7 |
+| [Elliptic curves and rank jumps](work/elliptic-curves.md) | 1 | 7 | 3 | 7 |
+| [K3 constructions and lattice algorithms](work/elkies-k3.md) | 2 | 71 | 2 | 8 |
 
 ## Suggested starting points
 
 | Action | Remaining gate |
 |---|---|
 | [WORK-EC-NEXT](work/elliptic-curves.md#work-ec-next) | Transfer the validated later-gain policy beyond retained M18 controls |
-| [WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17](work/elkies-k3.md#work-k3-different-ns-arithmetic-mw17) | Make the proved determinant1020 arithmetic MW17 surface explicit |
+| [WORK-K3-DIFFERENT-NS-ARITHMETIC-MW17](work/elkies-k3.md#work-k3-different-ns-arithmetic-mw17) | Classify arithmetic obstructions in the retained geometric MW17 cohort |
 | [WORK-EC-RANK-JUMP-MECHANISM-20260910](work/elliptic-curves.md#work-ec-rank-jump-mechanism-20260910) | Parked mechanism work; preserve the closed constructor calibration |
 | [WORK-K3-CORRELATED-QUADRATIC-GAINS](work/elkies-k3.md#work-k3-correlated-quadratic-gains) | Construct two independent gains on one quadratic cover |
+| [WORK-X1152-PARENT-IDENTITY](work/elkies-k3.md#work-x1152-parent-identity) | Compare underlying1152 K3 surfaces and import the record generic basis |
+| [WORK-X1152-MW18-SPECIALIZATION](work/elliptic-curves.md#work-x1152-mw18-specialization) | Use completed MW18 commissioning behind a new mathematical selection gate |
+| [WORK-XNS121-THIRD-COVER-GLOBAL-BOUND](work/elliptic-curves.md#work-xns121-third-cover-global-bound) | Extract an explicit point from the completed first-pair descent before third-cover work |
 
 ## Retrieve the details
 

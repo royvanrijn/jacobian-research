@@ -1,0 +1,80 @@
+{
+  "result": "PASS",
+  "claim_id": "GAOF7MULT1",
+  "checks": 2426,
+  "scope": "Every Gao v2 F7 eliminant root has multiplicity at most5, on all root and target values. This is sharp at Y=0, where R=t^5*(t^7-2t^4+2t-1), with seven other simple roots. No leading-coefficient exceptional locus discarded. Combined with GAOF7CUBE1, four three-point nonsimple lists remain.",
+  "source_transport": "Fresh root-incidence reconstruction and critical-derivative coverage, followed by exact derivative2..5 reconstruction.",
+  "resultant_degrees": [
+    309,
+    341,
+    345
+  ],
+  "resultant_degree_bounds": [
+    364,
+    405,
+    385
+  ],
+  "exact_integer_evaluation_counts": [
+    365,
+    406,
+    386
+  ],
+  "resultant_engines": [
+    "FLINT integer determinant",
+    "plain Python Bareiss"
+  ],
+  "coprimality_sylvester_shape": [
+    623,
+    623
+  ],
+  "coprimality_det_mod": 919631120,
+  "prime": 1000000007,
+  "coprimality_engines": [
+    "FLINT modular determinant",
+    "plain Python integer Gaussian elimination"
+  ],
+  "exceptional_multiplier_terms": [
+    34,
+    355
+  ],
+  "exceptional_engines": [
+    "FLINT integer convolution",
+    "plain Python integer convolution"
+  ],
+  "additional_excluded_three_point_types": [
+    [
+      7,
+      2
+    ]
+  ],
+  "remaining_three_point_types": [
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2
+    ]
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "checker_sha256": "3273bc75616c95de92b8e50325be8637497976dfcb7929e1f96170ab6c26278c",
+  "certificate_sha256": "f9ddb02e030654ae3ee83425c1307367f77c294c3453e23a65509974c73c0155",
+  "input_sha256": "52215b03ef6a396216bcb63144a7cff3b8ec518f89e692c4aefde0effa578448",
+  "seconds": 29.12788670399459,
+  "assurance": "Exact certificate replay and written resultant/coverage argument. No formal verification, independent end-to-end review, external review or novelty priority. F7 three-point existence and JC2 remain open."
+}

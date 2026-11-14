@@ -356,7 +356,6 @@ python3 research/scripts/research.py show ID
 | `KAS3` | archived programme; proved | [PSL2(11) residual mask symmetry and factor-rich support](../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) |
 | `KAS4` | archived programme; proved | [PSL2(11) exact normalization-module mask interpolation](../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) |
 | `KAS5` | archived programme; proved | [Natural PSL2(p) modular-triangle genus formula](../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) |
-| `OP-KMON` | archived programme; open | [Keller generic-monodromy action spectrum](../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) |
 | `OP-PF` | archived programme; parked | [Factorization-slice product and flexibility](../archive/non-elliptic/extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
 | `PF1` | archived programme; proved | [Normalized quadratic--cubic factorization slice](../archive/non-elliptic/extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
 | `PF2` | archived programme; proved | [Exact additive invariant kernels on the normalized quadratic--cubic slice](../archive/non-elliptic/extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
@@ -526,3 +525,19 @@ python3 research/scripts/research.py show ID
 | `WG2` | archived programme; proved | [Finite and optimal Gaussian mixed-moment fingerprints](../archive/non-elliptic/extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md) |
 | `WI1` | archived programme; proved | [Weighted invariant-coordinate Jacobian reduction](../archive/non-elliptic/extended-geometry/WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | `WT1` | archived programme; proved | [Weighted tangent suspension and Poisson-square reduction](../archive/non-elliptic/extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md) |
+| `LONGCOMPACT20261114` | archived programme; proved | [Long compact connected group Mathieu classification audit](../jacobian-followup/moment-vanishing-audit/COMPACT_GROUPS.md) |
+| `G3AFFINEW20261114` | archived programme; proved | [All-degree affine-W ternary Gaussian pure-moment classification](../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) |
+| `G3AFFINEWCUBIC20261114` | archived programme; proved | [Complete twelve-coefficient cubic Gaussian chart and sufficient twelve-moment gate](../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) |
+| `G3AFFINEWFINITE20261114` | archived programme; proved | [Effective finite pure-moment gate and complete quartic affine-W locus](../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) |
+| `G3SHEARCUTOFF20261114` | archived programme; proved | [Sharp mixed Gaussian cutoff for all polynomial triangular shears](../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) |
+| `OP-GMC3-CUBIC` | archived programme; open | [Existence of a dense cubic Gaussian-moment failure in three variables](../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) |
+| `GCOMPACTALL20261114` | archived programme; proved | [Mathieu property for all compact Lie groups via component trace separation](../jacobian-followup/moment-vanishing-audit/DISCONNECTED_COMPACT_GROUPS.md) |
+| `GQ3NORMAL20261114` | archived programme; proved | [Complete ternary quadratic Gaussian moment-null normal form](../jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md) |
+| `GQFINITE20261114` | archived programme; proved | [Finite quadratic Gaussian classification and sharp mixed cutoff](../jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md) |
+| `GQINPUT20261114` | archived programme; proved | [Input-sensitive quadratic Gaussian mixed cutoff](../jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md) |
+
+## Other source notes and navigation
+
+These documents are not canonical sources of a registered claim. They include workflows, bounded reports and unregistered work; their presence does not establish a theorem or an active campaign.
+
+- [Moment and vanishing review](../jacobian-followup/moment-vanishing-audit/README.md)

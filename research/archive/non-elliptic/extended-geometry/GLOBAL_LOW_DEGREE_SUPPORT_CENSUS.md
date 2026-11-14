@@ -2,6 +2,8 @@
 
 ## Status and exact result
 
+The [14 November 2026 eight-term follow-up](../../../jacobian-followup/sparse-eight/PROOF.md), GLDC3, completely excludes support eight and raises the normalized raw-degree-at-most-seven lower bound to **nine**. GLDC2 preserves the seven-term exclusion. The six-term census below is preserved as their historical predecessor; its former seven-term attainment question is closed.
+
 This note introduces a support-first, valuation-aware pipeline for polynomial
 Keller collisions in dimension three.  It makes no weighted, equivariant, or
 linearity-in-one-variable assumption.

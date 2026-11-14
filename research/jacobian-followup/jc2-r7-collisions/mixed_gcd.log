@@ -1,0 +1,22 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 3: `/19683 - 8*d*v^4/19683 + 71*d*v/531441 - v^6/19683 + 29*v^3/531441 - 2/177147;`
+   ? expected poly-expression. type 'help poly;'
+   ? can not convert $INVALID$(g) -> matrix
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected matrix-expression. type 'help matrix;'
+   ? `G` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'
+   ? `M` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'
+   ? `M` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/mixed_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'

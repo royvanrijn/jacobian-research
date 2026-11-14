@@ -110,6 +110,10 @@ python3 research/scripts/research.py show ID
 | `EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP` | proved | [Complete custom-NS rootless MW17 midpoint-hole sweep](../elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md) |
 | `EC-K3-DET1020-ARITHMETIC-MW17-EXISTENCE-20260915` | proved | [The admitted determinant1020 K3 admits arithmetic MW17 with rootless height lattice of minimum4](../elkies-k3/DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md) |
 | `EC-K3-DET1020-CENTER-COMPONENT-SOURCE-CHART-20260915` | proved | [A central-I10 source frame gives a rational six-parameter partial K3 chart for determinant1020 construction](../elkies-k3/DET1020_CENTER_COMPONENT_SOURCE_CHART_2026-09-15.md) |
+| `EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915` | proved | [Complete fixed determinant1020 MW17 equation with seventeen physically marked saturated sections and explicit source inverse](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md) |
+| `OP-K3-DET1020-EXPLICIT-MW17-EQUATION` | parked; replaced by EC-K3-DET1020-COMPLETE-MW17-EQUATION-20260915 | [Completed fixed determinant1020 MW17 equation compilation](../elkies-k3/DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md) |
+| `EC-K3-DET1020-CUBIC-WEIERSTRASS-20260915` | proved | [The fixed determinant1020 pencil has an exact MW17 Weierstrass model, cubic birational maps and four explicit independent sections](../elkies-k3/DET1020_CUBIC_WEIERSTRASS_2026-09-15.md) |
+| `EC-K3-DET1020-EXACT-RATIONAL-PENCIL-20260915` | proved | [The fixed determinant1020 degree20 fibration has an exact rational pencil and genus-one plane presentation](../elkies-k3/DET1020_EXACT_RATIONAL_PENCIL_2026-09-15.md) |
 | `EC-K3-DET1020-EXPLICIT-RATIONAL-SOURCE-20260915` | proved | [An explicit K3 over Q has full rational NS of determinant1020 and certified geometric Picard rank19](../elkies-k3/DET1020_EXPLICIT_RATIONAL_SOURCE_2026-09-15.md) |
 | `EC-K3-DET1020-LOW-POLE-SOURCE-FRAME-20260915` | proved | [The determinant1020 NS admits a saturated MW1 source frame with a disjoint generator](../elkies-k3/DET1020_LOW_POLE_SOURCE_FRAME_2026-09-15.md) |
 | `EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915` | proved | [The explicit determinant1020 K3 has a certified physical nef MW17 pencil and seventeen saturated rational section classes](../elkies-k3/DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15.md) |
@@ -136,7 +140,8 @@ python3 research/scripts/research.py show ID
 | `EC-K3-DET948-ALL-FRAME-SYMMETRY-GATE-20260915` | proved | [All MW17 fibrations on the pinned determinant948 NS fail the pointed involution criterion](../elkies-k3/DET948_ALL_FRAME_SYMMETRY_GATE_2026-09-15.md) |
 | `EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK` | partial | [Arithmetic-gated reranking of different-NS MW17 frames](../elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md) |
 | `EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY` | partial | [Global transcendental-first arithmetic queue for the different-NS foundry](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
-| `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` | open | [Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
+| `OP-K3-DIFFERENT-NS-ARITHMETIC-MW17` | open | [Classify arithmetic realization of different-NS geometric MW17 lattices](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) |
+| `EC-K3-DIFFERENT-NS-CLASSIFICATION-BASELINE-20260915` | proved | [Retained MW17 classification baseline:19 arithmetic exclusions among66 geometric NS classes](../elkies-k3/DIFFERENT_NS_CLASSIFICATION_2026-09-15.md) |
 | `EC-K3-E6A1-RHO19-ORBIT103-SPECIALIZATION-RANK7` | proved | [Seven exact orbit-103 specializations of rank at least seven](../elkies-k3/E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md) |
 | `EC-K3-E6A1-RHO19-GENUINE-Q2-MW3` | proved | [Complete genuine quadratic-neighbour shell with eighteen Mordell--Weil-rank-three frames](../elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md) |
 | `EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2` | proved | [Orbit-103 arithmetic rank two and comparison with the physical orbit-96 A7+D7 model](../elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md) |
@@ -327,6 +332,12 @@ python3 research/scripts/research.py show ID
 | `EC-K3-REAL-C4-ANISOTROPY-OBSTRUCTION-20260915` | proved | [Real topology forces isotropic T for the order-four mechanism on fully rational Picard19 K3 surfaces](../elkies-k3/REAL_LOCUS_C4_ANISOTROPY_OBSTRUCTION_2026-09-15.md) |
 | `EC-K3-REAL-MARKING-CONTENT-OBSTRUCTION-20260914` | proved | [Full rational K3 marking forces transcendental content to divide two; 67 further catalogue rows excluded](../elkies-k3/REAL_MARKING_CONTENT_OBSTRUCTION_2026-09-14.md) |
 | `EC-K3-REAL-RANK19-PERIOD-OBSTRUCTION-20260914` | proved | [Rank-19 full real marking requires rational isotropy or an integral square-two vector;31 further rows excluded](../elkies-k3/REAL_RANK19_PERIOD_OBSTRUCTION_2026-09-14.md) |
+| `EC-HILL1152-FOUR-MW18-COVERS-20261113` | proved | [Four exact rational rank-at-least18 covers from the Hill1152 transfer bank](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
+| `EC-HILL1152-PUBLISHED-REPLAY-20261113` | proved | [Exact rerun of Hill1152 published generic rank18 and paired rank19 constructions](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
+| `EC-HILL1152-SPECIALIZATION-COMMISSION-20261114` | proved | [Eight certified rank18 specializations and16 completely replayed direct charts on Hill1152 covers](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
+| `EC-HILL1152-TRANSFER-PILOT-20261113` | proved | [Independent exact35-pencil exclusion and Mestre genus gate on Hill1152](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
+| `EC-ICARM4239-R32-20261113` | proved | [Independent unconditional finite-quotient replay of the public rank-at-least32 curve](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
+| `EC-ICARM4239-X1152-PARENT-20261113` | proved | [Exact public1152 parent import and retrospective rank32 fibre transport](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) |
 | `EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION` | proved | [Bounded relative-U obstruction for the first completed NS0024 edge](../elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md) |
 | `EC-K3-ROOTLESS-GENUS-MASS` | proved | [Local ADE masses as asymptotic Kneser-neighbour root-system frequencies](../elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md) |
 | `EC-K3-H3-ROOTLESS-J2-COMPLETE` | proved | [Complete rootless rank-17 J2 frame classification by Niemeier-first enumeration](../elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md) |
@@ -335,6 +346,10 @@ python3 research/scripts/research.py show ID
 | `EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS` | proved | [Specialization quotient, rank-jump sandwich, and midpoint/class-group structure](../elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md) |
 | `EC-K3-STAR510-FRICKE-LIFT-EXCLUSION-20260915` | proved | [The level51 quadratic-point classification excludes the star510 rational Fricke lift](../elkies-k3/STAR510_FRICKE_LIFT_EXCLUSION_2026-09-15.md) |
 | `EC-K3-X1092-ROOTLESS-INVOLUTION-GLUE-GATE-20260915` | proved | [All nineteen X1092 rootless frames fail the symplectic involution discriminant-gluing gate](../elkies-k3/X1092_ROOTLESS_INVOLUTION_GLUE_GATE_2026-09-15.md) |
+| `EC-X1152-GEOMETRIC-FIBRATION-DISTINCTION-20261114` | proved | [Intrinsic j-critical values distinguish the two1152 geometric elliptic fibrations](../elkies-k3/X1152_JMAP_FIBRATION_DISTINCTION_2026-11-14.md) |
+| `EC-HILL1152-FIRST-PAIR-GLOBAL-MW19-20261114` | proved | [Complete CAS2-descent proves an infinite paired genus-one rank-at-least19 family](../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) |
+| `EC-HILL1152-FIRST-PAIR-LOCAL-20261114` | proved | [First paired base is everywhere locally soluble with independently certified arithmetic](../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) |
+| `EC-HILL1152-PAIRED-JACOBIANS-20261114` | proved | [Fifteen twist-sensitive paired-base Jacobians and explicit rational2-isogenies](../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) |
 
 ## Other source notes and navigation
 

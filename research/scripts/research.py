@@ -49,6 +49,12 @@ def area(path: str) -> str:
         return 'elliptic-curves'  # Two retained EC canonical derivations share this catalogue.
     parts = Path(path).parts
     first = parts[0] if parts else ""
+    if first == "jacobian-followup" and len(parts) > 1 and parts[1] == "moment-vanishing-audit":
+        return "geometry"
+    if first == "jacobian-followup" and len(parts) > 1 and parts[1].startswith("jc2-"):
+        return "plane-jc"
+    if first == "jacobian-followup" and len(parts) > 1 and parts[1].startswith(("tang-hc4-", "hc4-")):
+        return "hessian"
     if first == "archive" and len(parts) > 1:
         return area("/".join(parts[1:]))
     if first in AREAS:

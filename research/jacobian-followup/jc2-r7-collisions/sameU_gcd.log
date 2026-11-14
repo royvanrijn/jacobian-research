@@ -1,0 +1,26 @@
+   ? `number` ^ `number` failed
+   ? expected `number` ^ `int`
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 2: `poly f=7*d^4/162 - 5*d*u^2/6 - d*u - 7*d/27;`
+   ? expected poly-expression. type 'help poly;'
+   ? `number` ^ `number` failed
+   ? expected `number` ^ `int`
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 3: `poly g=-19*d^3*u/54 - 16*d^3/81 + u^3 + 5*u^2/3 + 7*u/9 + 7/81;`
+   ? expected poly-expression. type 'help poly;'
+   ? can not convert $INVALID$(f) -> matrix
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? expected matrix-expression. type 'help matrix;'
+   ? `G` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'
+   ? `M` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'
+   ? `M` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-collisions/sameU_gcd.sing line 4: `(G[1])); print("LIFT0 "+string(M[1,1])); print("LIFT1 "+string(M[2,1])); quit;`
+   ? wrong type declaration. type 'help string;'

@@ -1,0 +1,20 @@
+{
+  "name": "primitive-remainder-pilot",
+  "cap_seconds": 120,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 100,
+  "script_sha256": "9da66bc7f99dadfa002cce635834b52cc5905cf3590a683967bd3134ff09796c",
+  "input_sha256": "36c79a09db0f0c7f213fed832302b718d21fac7f24cce031087627ec8e32ef5e",
+  "theorem_exclusion": false,
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 7.0355889439815655,
+  "primitive-remainder-candidate.json": {
+    "bytes": 3634174,
+    "sha256": "0830dbf0daa7fb0a6a2ac95220f513a2ece608fddc707f18cab33ad4494f4971"
+  },
+  "primitive-remainder-checkpoint.json": {
+    "bytes": 5192744,
+    "sha256": "e78b5b07cc6b19d6270dd55450f79784c552bf0263c74924af9685ba2bfd267a"
+  }
+}

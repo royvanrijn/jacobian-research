@@ -1,0 +1,18 @@
+{
+  "full_index": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "new_claims_scoped_index": "PASS; unrelated consumers/narrowing edges omitted in memory only",
+  "affected_lessons": "PASS",
+  "full_work": "duplicate primary work target",
+  "affected_work_scopes_and_sources": "PASS",
+  "receipt_hashes": "PASS",
+  "exact_checker": {
+    "passed": true,
+    "check_count": 35,
+    "elapsed_seconds": 1.325
+  },
+  "python_compilation": "PASS",
+  "geometry": "Written proof inherited from PF2R7QBASE1; author-side audit only, no formal verification or independent external review.",
+  "algebra": "Universal exact identities and two separate sparse Fraction unit replays; no capped basis/cofactor/trace output is a proof premise.",
+  "remaining": "Only the immersed reciprocal cubic with an exact double p_prime root, under the still-explicit entire single ramified e2,f1 hypothesis. Other ramification patterns, r5, nonnormal slices and JC2 remain open.",
+  "local_markdown_links_and_whitespace": "PASS"
+}

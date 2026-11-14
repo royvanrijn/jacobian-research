@@ -1,0 +1,13 @@
+{
+  "axis_admissible_labelled": 22,
+  "bound": 7,
+  "degree": 3,
+  "labelled_matched": 22,
+  "original_balanced": 83,
+  "original_statistics": {
+    "cached_bucket_compilations": 5549,
+    "visited_partial_supports": 5549
+  },
+  "resume_verified": true,
+  "status": "pass"
+}

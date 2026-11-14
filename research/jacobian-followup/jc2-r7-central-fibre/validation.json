@@ -1,0 +1,21 @@
+{
+  "schema": "r7-central-fibre-validation-v1",
+  "passed": true,
+  "checks": [
+    "new theorem schema, source/dependency/checker hashes and narrowing reciprocity in scoped index",
+    "new lesson schema and current reviewed fingerprints",
+    "both affected work items current, unique and live; prior omitted-prime and elliptic/key-model results preserved",
+    "all72 exact checks, every input/output SHA256, and the full imported69-check elliptic-contact receipt current",
+    "both new Python sources compile; both primary PDFs match manifest byte counts and SHA256",
+    "new Markdown links and whitespace; scoped git diff whitespace check",
+    "all26 generated status/navigation files regenerated from current authority"
+  ],
+  "known_global_failures": [
+    "full mathematical index: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "full work ledger: duplicate primary work target"
+  ],
+  "unrelated_checker_hash_mismatches_excluded_in_memory": [],
+  "receipt_sha256": "a764a70c3647fbbe91afef93a9ab737ff7223bcf59a969d45cf846c9bb799e49",
+  "assurance": "Author-side geometry/source/metadata audit with exact controls; no formalization or independent external review.",
+  "rendered_navigation_files": 26
+}

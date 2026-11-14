@@ -94,6 +94,38 @@ Authority: [EC-DET1092-RR-FULL-SELMER-COMPARISON-20260908](../../elliptic-curves
 
 Sources: [DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md](../../elliptic-curves/notes/DET1092_RR_FULL_SELMER_COMPARISON_2026-09-08.md); [SELMER_SUPPLY_VERSUS_REALIZATION_2026-09-14.md](../../elliptic-curves/notes/SELMER_SUPPLY_VERSUS_REALIZATION_2026-09-14.md).
 
+## WORK-X1152-MW18-SPECIALIZATION
+
+**Use completed MW18 commissioning behind a new mathematical selection gate**
+
+**Disposition:** proposed. **Kind:** research. **Compute class:** new-compute.
+
+**Next step:** Reuse the eight certified rank18 specialized subgroups and16 fully replayed bounded charts. Before further search, identify a new cover/Selmer/candidate-selection advantage or a controlled representation question; freeze a new protocol rather than repeating or enlarging this completed panel.
+
+**Completion evidence:** A new mathematical gate produces separately selected candidates or a proved arithmetic obstruction, with exact source transport and admission evidence.
+
+**Prerequisites and boundary:** Both initial diagnostic and direct-chart successor are complete/stopped. All16 direct searches were bounded complete and all eight lower bounds are18; no extra direction or productivity advantage was established.
+
+Authority: [OP-EC-NEXT](../../elliptic-curves/README.md) (open); [EC-HILL1152-FOUR-MW18-COVERS-20261113](../../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) (proved); [EC-HILL1152-SPECIALIZATION-COMMISSION-20261114](../../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) (proved).
+
+Sources: [RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md](../../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md).
+
+## WORK-XNS121-THIRD-COVER-GLOBAL-BOUND
+
+**Extract an explicit point from the completed first-pair descent before third-cover work**
+
+**Disposition:** proposed. **Kind:** research. **Compute class:** new-compute.
+
+**Next step:** Reuse the exact fifteen Jacobians and first-pair rank2/Sha[2]=0 certificate. Extract a rational point on paired base[0,1] and an exact map from its Jacobian using the2-isogeny or binary-quartic equivalence. Then formulate a bounded third-cover incidence problem with explicit global quotient information.
+
+**Completion evidence:** An explicit checked paired-base point and map, followed by a separately specified complete third-cover global/local gate; the first-pair existence theorem is already complete with its stated CAS dependency.
+
+**Prerequisites and boundary:** Pair[0,1] is everywhere locally soluble and has infinitely many rational points by complete PARI descent; no explicit point has been extracted. Other14 pairs and all third-cover finite-point conclusions remain unresolved. Xns121 finite matrices alone do not certify global completeness.
+
+Authority: [OP-EC-NEXT](../../elliptic-curves/README.md) (open); [EC-XNS121-LOCALIZATION-REPLAY-20261113](../../elliptic-curves/notes/XNS121_METHOD_TRANSFER_2026-11-13.md) (proved); [EC-HILL1152-TRANSFER-PILOT-20261113](../../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) (proved); [EC-HILL1152-PAIRED-JACOBIANS-20261114](../../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) (proved); [EC-HILL1152-FIRST-PAIR-LOCAL-20261114](../../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) (proved); [EC-HILL1152-FIRST-PAIR-GLOBAL-MW19-20261114](../../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) (proved).
+
+Sources: [XNS121_METHOD_TRANSFER_2026-11-13.md](../../elliptic-curves/notes/XNS121_METHOD_TRANSFER_2026-11-13.md); [X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md](../../elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md).
+
 ## Partial-result register
 
 These are literal authority records, not newly scheduled tasks. `research.py show ID` returns the full current scope, evidence and dependencies.

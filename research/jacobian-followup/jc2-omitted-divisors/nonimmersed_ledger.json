@@ -1,0 +1,319 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT13",
+  "hypotheses": "Exactly PF2R7RAM2 global degree6/index2/gap21 class and named geometry; no claim deriving those hypotheses for every terminal passport",
+  "exact_cusp_descriptions": [
+    {
+      "chart": "L",
+      "coefficient_class": "I",
+      "parameter": "d",
+      "parameter_equation": "3*d**3 + 2",
+      "critical_parameter": "-3*d**2/2",
+      "target_U": "-1/4",
+      "target_V": "-49*d**2/5832",
+      "jet_determinant": "6048*d",
+      "residual_resultants": {
+        "derivative": "-917504*d/19683",
+        "fibre": "-2401*d/21422803359744"
+      },
+      "parametrization_fibre_scheme_length": 2,
+      "normalization_point_count": 1,
+      "original_R_ambient_length": 3,
+      "original_R_e": 2,
+      "original_R_f": 1,
+      "actual_original_target_coordinate_change": null
+    },
+    {
+      "chart": "K",
+      "coefficient_class": "I",
+      "parameter": "x",
+      "parameter_equation": "3*x**3 + 2",
+      "critical_parameter": "-3*x**2/2",
+      "target_U": "-1/4",
+      "target_V": "-49*x**2/5832",
+      "jet_determinant": "6048*x",
+      "residual_resultants": {
+        "derivative": "-917504*x/19683",
+        "fibre": "-2401*x/21422803359744"
+      },
+      "parametrization_fibre_scheme_length": 2,
+      "normalization_point_count": 1,
+      "original_R_ambient_length": 3,
+      "original_R_e": 2,
+      "original_R_f": 1,
+      "actual_original_target_coordinate_change": null
+    },
+    {
+      "chart": "K",
+      "coefficient_class": "II",
+      "parameter": "x",
+      "parameter_equation": "15*x**3 - 4",
+      "critical_parameter": "-15*x**2/4",
+      "target_U": "1/48",
+      "target_V": "686963*x**2/58320",
+      "jet_determinant": "-6300*x",
+      "residual_resultants": {
+        "derivative": "-4587520*x/19683",
+        "fibre": "1229779063441*x/33473130249600000"
+      },
+      "parametrization_fibre_scheme_length": 2,
+      "normalization_point_count": 1,
+      "original_R_ambient_length": 3,
+      "original_R_e": 2,
+      "original_R_f": 1,
+      "actual_original_target_coordinate_change": null
+    }
+  ],
+  "distinct_nonimmersed_classes": 2,
+  "full_first_prime_formula": {
+    "matrix_corank": "m=6-rank(M)",
+    "epsilon": "1 at the listed cusp for a nonimmersed coefficient point,0 elsewhere",
+    "normalization_point_count": "m-epsilon",
+    "total_omitted_ambient_length": "2*m-epsilon",
+    "first_prime": {
+      "e": 2,
+      "f": 1,
+      "omitted": true,
+      "ramifies": true
+    }
+  },
+  "complete_oriented_rows": [
+    {
+      "row": "A",
+      "R": {
+        "image": "C",
+        "e": 2,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "S": {
+        "image": "B",
+        "e": 2,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "unramified_omitted_count": 1,
+      "nonimmersive_image": null,
+      "original_affine_normalization_smooth": true,
+      "D": {
+        "image": "H",
+        "e": 1,
+        "f": 1,
+        "E": 0,
+        "ramifies": false,
+        "omitted": true,
+        "may_share_image_with": [
+          "C",
+          "B"
+        ]
+      }
+    },
+    {
+      "row": "B",
+      "R": {
+        "image": "C",
+        "e": 2,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "S": {
+        "image": "B",
+        "e": 2,
+        "f": 1,
+        "E": 1,
+        "ramifies": true,
+        "omitted": true
+      },
+      "unramified_omitted_count": 0,
+      "nonimmersive_image": "B",
+      "original_affine_normalization_smooth": true
+    },
+    {
+      "row": "C",
+      "R": {
+        "image": "C",
+        "e": 2,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "S": {
+        "image": "B",
+        "e": 3,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "unramified_omitted_count": 0,
+      "nonimmersive_image": null,
+      "original_affine_normalization_smooth": true
+    },
+    {
+      "row": "N",
+      "R": {
+        "image": "C",
+        "e": 2,
+        "f": 1,
+        "E": 1,
+        "ramifies": true,
+        "omitted": true
+      },
+      "S": {
+        "image": "B",
+        "e": 2,
+        "f": 1,
+        "E": 0,
+        "ramifies": true,
+        "omitted": true
+      },
+      "unramified_omitted_count": 0,
+      "nonimmersive_image": "C",
+      "original_affine_normalization_smooth": true
+    }
+  ],
+  "new_N_row_exceptional_value_table": [
+    {
+      "location": "off_C",
+      "C_branches": 0,
+      "epsilon": 0,
+      "necessary_completions": [
+        {
+          "B_branches": 0,
+          "retained_length": 6,
+          "omitted_local_lengths": []
+        },
+        {
+          "B_branches": 1,
+          "retained_length": 4,
+          "omitted_local_lengths": [
+            2
+          ]
+        },
+        {
+          "B_branches": 2,
+          "retained_length": 2,
+          "omitted_local_lengths": [
+            2,
+            2
+          ]
+        },
+        {
+          "B_branches": 3,
+          "retained_length": 0,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "location": "smooth_C",
+      "C_branches": 1,
+      "epsilon": 0,
+      "necessary_completions": [
+        {
+          "B_branches": 0,
+          "retained_length": 4,
+          "omitted_local_lengths": [
+            2
+          ]
+        },
+        {
+          "B_branches": 1,
+          "retained_length": 2,
+          "omitted_local_lengths": [
+            2,
+            2
+          ]
+        },
+        {
+          "B_branches": 2,
+          "retained_length": 0,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "location": "double_C",
+      "C_branches": 2,
+      "epsilon": 0,
+      "necessary_completions": [
+        {
+          "B_branches": 0,
+          "retained_length": 2,
+          "omitted_local_lengths": [
+            2,
+            2
+          ]
+        },
+        {
+          "B_branches": 1,
+          "retained_length": 0,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "location": "cusp_C",
+      "C_branches": 1,
+      "epsilon": 1,
+      "necessary_completions": [
+        {
+          "B_branches": 0,
+          "retained_length": 3,
+          "omitted_local_lengths": [
+            3
+          ]
+        },
+        {
+          "B_branches": 1,
+          "retained_length": 1,
+          "omitted_local_lengths": [
+            3,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "new_N_singleton_iff": "B contains the listed unique cusp point, with one smooth branch there",
+  "new_N_off_cusp_source_fibres_even": true,
+  "new_N_monodromy": "S6",
+  "new_N_source_field_has_proper_intermediate_field": false,
+  "new_N_inverse_leading_coefficient": "constant*H_C^p_R*H_B^p_S",
+  "new_N_raw_discriminant": "constant*H_C*H_B*J^2",
+  "new_N_cusp_with_B_absent": {
+    "retained_length": 3,
+    "reciprocal_weights": "2*p_R/3 three times",
+    "coefficient_orders_a4_a5_a6_minimum": [
+      1,
+      2,
+      2
+    ],
+    "leading_order": "2*p_R",
+    "raw_discriminant_order_at_least": "4*p_R",
+    "index_order_at_least": "2*p_R-1"
+  },
+  "actual_second_image_equation": null,
+  "actual_optional_unramified_image_in_other_rows": null,
+  "actual_global_source_realization": false,
+  "full_goal_complete": false
+}

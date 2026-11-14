@@ -1,0 +1,16 @@
+{
+  "outcome": "PASS",
+  "cap_seconds": 60,
+  "exit_code": 0,
+  "elapsed_seconds": 32.773,
+  "hashes": {
+    "independent_zquad.py": "d349dae16658d601edca5649bda401f0c383be6355fc673ad5ec0afeae81ac3e",
+    "zquad-input.json": "b2f9d0d0ba3d4c373de570bc7a13b7808e30ba4dc934d28970ed3f8d605c8e6a",
+    "zquad-result.json": "6f6fa133a3c54d61a64beb2756950671cf29b798cdae18b2e7c12c72d38ab38a",
+    "zquad.log": "773014e4f544bbca24ec95bd38626e884015297bdab344ca4052daed9d00c21c"
+  },
+  "runtime": "Sage10.9 / Python3.14.7 / python-flint0.9.0",
+  "coefficient_construction_independent_of_author_source": true,
+  "independent_second_implementation_of_Groebner_basis": false,
+  "proof": "Complete coefficient-system unit ideal, not a bounded parameter search"
+}

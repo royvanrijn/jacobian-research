@@ -1,0 +1,370 @@
+                           The four-dimensional Hessian conjecture
+                                for potentials of degree at most five
+
+                                                 David Niedbala Giraudin∗
+
+                                                       6 November 2026
+
+
+
+
+                                                             Abstract
+            The Hessian conjecture HCn  asserts that iff∈C[x              1, . . . , xn] has det Hess(f)∈C             ×,  then
+       ∇fis a polynomial automorphism.  It is known forn≤3, false forn≥5, and open forn= 4,
+       where it implies the plane Jacobian conjecture.  Ni proved HC4 for potentials of degree at most
+       four,  and  the  author  treated  degree  five  when  the  top  form  depends  on  exactly  three  linear
+       forms.  We prove HC4 for every potential of degree at most five.  The remaining top forms are
+       a binary form or a fifth power of a linear form.  Both cases are reduced, by weighted layers of
+       the Hessian determinant and exact computer algebra overQ, to four elementary mechanisms:
+       a Schur complement in one variable (which reduces to HC3), a partial Legendre transform in
+       two variables (which reduces to HC2),  a “dead direction” lemma (which reduces to HC2  and
+       the plane Jacobian conjecture in degrees at most (3,4), known by Moh), and explicit triangular
+       inverses.   Five  self-contained  verifiers  are  supplied  as  ancillary  files.   The  paper  has  not  been
+       refereed.
+
+1    Introduction
+
+Forf∈C[x] =C[x                            1, . . . , xn] write Hess(f) = (∂               i∂jf).  The Hessian conjecture HC  n [9] states that
+if det Hess(f)∈C             ×,  then∇f:C                n →C     n  is a polynomial automorphism.   It holds forn= 2 [5]
+andn= 3 [2], and fails for everyn≥5 [10].  Forn= 4 it is open and implies the plane Jacobian
+conjecture  through  Φ(x, y)  =y         TF(x),  det Hess Φ  =  (detJF)                     2  [10,  14].   Ni  [14]  proved  HC4  for
+degf≤4; the author [12] proved it for degf= 5 when the top form depends on exactly three linear
+forms.  Liu [8] proved HC4 for real potentials of degree at most five whose Hessian has Lorentzian
+signature.  Partial reductions for a degree-five branch are recorded in [6].
+
+Theorem  1.Letf∈C[x                    1, x2, x3, x4] withdegf≤5anddet Hess(f)∈C                                     ×.   Then∇fis  a
+polynomial automorphism ofC    4.
+
+Status.Statements marked[C, . . . ] are certified by exact computation overQ(polynomial iden-
+tities with symbolic coefficients, Gr¨obner bases, minimal associated primes, and the Rabinowitsch
+criterion 1∈I+(1−Tg)⇔g∈                 √I).  Each label is the label printed by one of the ancillary verifiers
+(Section 6); all 247 checks pass.  Where a hypothesis “φnon-degenerate” is used, it is imposed by
+running the test once for each coefficient of det Hessφdeclared nonzero.  The paper has not been
+refereed.
+
+   ∗ORCID 0009-0009-1526-1178.  Computations and writing assisted by Claude (Anthropic).
+
+
+
+
+                                                                  1
+
+2    Tools
+
+Affine changes of coordinates preserve the hypothesis and the conclusion, and terms of degree≤1
+may be discarded.  We use:  (GN) a form inn≤4 variables with vanishing Hessian determinant
+depends on at mostn−1 linear forms [7, 3]; (HC                  2, HC3) [5, 2], with transfer to characteristic-zero
+fields  and  descent  of  inverses  [14,  Lemmas  2.6,  2.7];  (dBvdE)  over  a  field  of  characteristic  zero,
+a bivariate polynomial without terms of degree≤1 and with vanishing Hessian determinant is a
+polynomial in one linear form [4, Thm. 3.1]; (Moh) the plane Jacobian conjecture holds for maps
+of degree at most 100 [11]; (BBR) an injective polynomial self-map ofC    n is bijective [1]; a bijective
+polynomial  self-map  ofC    n  is  birational  and,  by  Zariski’s  Main  Theorem,  an  automorphism  [13,
+Ch. 4].  We refer to this combination as (BBR).
+Lemma 2(Schur complement).If, in some linear coordinates(y, w)∈C                                    3 ×C,f=aw                2 +w g(y) +
+h(y)witha∈C                × anddet Hessf∈C            ×, then∇fis an automorphism.
+Proof.This is [14, Prop. 6.1, brancha̸= 0], whose proof does not use the degree ofg; see also [12,
+Lemma 3].  Putk=h−g                      2/(4a) andw            ′ =w+g/(2a); thenf                            w = 2aw  ′ andf       y =∇k+w          ′∇g, and
+substitutingw=τ−g/(2a) shows det Hess(k+τg) = det Hessf/(2a) for everyτ.  OverC(τ), HC                                                                                                        3
+and descent give a polynomial inverse of∇(k+τg), whence the inverse of∇f.
+
+Lemma 3(partial Legendre transform).Letf=                                     12zTA(X)z+b(X)                    Tz+c(X)withX, z∈C                                2 and
+detA∈C         ×.  Ifdet Hessf∈C             ×, then∇fis an automorphism.
+Proof.For a target (Y       X, Yz) the equationf                 z  =Y    z  givesz(X)  =A           −1  (Y  z −b),  polynomial inX.
+With Φ(X) =f(X, z(X))−Y                           Tz  z(X) one has∇Φ =f                      X(X, z(X)) Differentiatingf                       z(X, z(X)) =Y             z
+gives∂z/∂X=−A           −1  fzX,  hence  Hess Φ  =f    XX −f    XzA−1  fzX  is  the  Schur  complement  ofAin
+Hessfalongz=z(X), and det Hessf= detA·det Hess Φ there (an instance is checked in[C, A4]).
+Hence det Hess Φ∈C     ×, and by HC2 the equation∇Φ(X) =Y                                  X has exactly one solution.  So∇fis
+injective, and (BBR) concludes.
+
+Lemma 4(dead direction). Letf=P(u                                          1, u2, w) +sR(u                1, u2)in linear coordinates(u                    1, u2, w, s),
+withdegf≤5anddet Hessf=c∈C                                     ×.  Then∇fis an automorphism.
+Proof.One has the identity[C, A3]
+
+    det Hessf=−P                   ww(Q  0 +sQ    1) + (R  1P2w  −R    2P1w  )2,       Q1 =R    22R11 −2R       1R2R12 +R    21R22.
+
+Ris  not  constant,  since  otherwise  det Hessf=  0.   IfP                  ww ̸=  0,  thenQ          1  =  0.   WhereR  2 ̸=  0,
+the  derivative  ofR    1/R2  along  the  field  (R  2,−R     1),  which  is  tangent  to  the  level  curves,  equals
+Q1/R22 = 0 (similarly whereR             1 ̸= 0).  Hence on the open set where∇R̸= 0 each level curve has
+constant normal direction, so it is an open piece of a line; taking Zariski closures, every irreducible
+component of a general fibre{R=t}is a line.  Lines in distinct fibres are disjoint, hence parallel,
+soRis  constant  along  a  fixed  direction  andR=g(l)  for  a  linear  forml;  takel =u                                                   1.   Then
+det Hessf=−g              ′2 (P  22Pww −P     22w  ), sog   ′ ∈C  ×,R=αu         1 +β, andP(u                     1,·,·) has constant nonzero
+Hessian determinant in (u  2, w) for eachu       1.  Nowf   s givesu    1; HC2 applied fibrewise (with descent)
+gives (u  2, w) from (f     u2, fw); finallyf            u1 =P    1 +αsgivess.  This is a polynomial inverse.
+     IfP   ww = 0, thenP=P          0 +wP    1, and det Hessf=J(R, P                      1)2, so (R, P  1) is a plane Keller map of
+degree at most 4, hence an automorphism by (Moh).  Then (u  1, u2) is determined by (f  s, fw).  The
+remaining equations are linear in (w, s) with matrix [∇P          1 ∇R], whose determinant is±J(R, P                     1).
+
+Lemma 5.Letf=w g(y) +h(y)withy∈C                                                   3,degg≤2,degf≤5anddet Hessf∈C                                        ×.  Then
+∇fis an automorphism.
+
+                                                                          2
+
+Proof.Writegwith constant HessianBand∇g=By+β.  The coefficient ofw                                                              2 in det Hessfis
+−∇g      T adj(B)∇g, so it vanishes.  If rkB= 3, its top part is−detB·y                                     TBy̸= 0, which is impossible.
+If rkB= 2,  then adjB=λvv                 T  withBv= 0,  sov·β= 0.  If rkB≤1,  choosev∈kerBwith
+v·β= 0.  In every case∂              vg= 0, and Lemma 4 applies withs=wandR=g.  (This is also the
+brancha= 0 of [14, Prop. 6.1].)
+
+3    The top form
+
+Let det Hessf=c̸= 0 and degf= 5 (degree≤4 is [14]). The top degree layer gives det Hessf                                                            5 = 0,
+so by (GN)f            5 depends on at most three linear forms.  The ternary case is [12].  Two cases remain:
+thebinarycasef                               5 =φ(x         1, x2) with det Hessφ̸≡0, and theunarycasef                                           5 =x    51 (a binary form with
+vanishing Hessian is a fifth power).
+
+4    The binary case
+
+WriteX= (x              1, x2),z= (x        3, s) withs=x                   4, andf=φ+f                      4 +f    3 +f    2.
+
+Proposition  6.After  a  linear  change  of  coordinates,f=P(x                      ′) +sR(x        ′) +s    2L(x    ′) +e s    3  with
+x′ = (x  1, x2, x3),Laffine, the cubic part ofRa binary formB                          3(X), the quintic part ofPequal to
+φ, andA            4(X, x  3)the quartic part ofP.  Moreover:
+
+    1.  ife̸= 0, then∂                  23A4 = 0;
+
+    2.  ife= 0, the coefficient ofs            2x3 vanishes; if moreoverLis not constant, then after normalising
+         toL=x            1,∂  23A4 = 0.
+
+Proof.The degree-10 layer of det Hessfequals det Hessφ·det Hess                              z(f  4), so det Hessz f4 = 0.  By
+(dBvdE) overK=C(X),f                          4 =G(X, µ(X)·z) + (linear inz).  Takeµprimitive inC[X]                                                   2 (Gauss’s
+lemma), homogeneous of degreed. A termg                         k(X)(µ·z)               k withk≥2 has degree degg                      k +k(d+1) = 4,
+so either no such term exists, ord= 0, ord= 1,k= 2 andg                              2 is constant. This gives two possibilities.
+Eitherµis constant (B1:f                           4 =A    4(X, x  3) +sB    3(X)), orµis linear with independent entries (B2:
+f4 =c(x        1x3 +x    2s)  2 +. . .,c̸= 0).  In case B2, with weights (1,1,                   32, 32) the top part isφ+cq           2 with
+q=x      1x3 +x    2s, and det Hess(φ+cq                2) =−16c             3q2(10φ−3cq                 2)̸= 0[C, P1], which is impossible.  In
+case B1 thes-degree offis at most 3, which gives the stated form.  With weights (1,1,1,2) the
+layer of weight 10 equals det HessX(φ+sB         3)·(6es ∂        23A4 + 12es     2l11 −4s       2l210)[C, P2], wherel                       10, l11
+are the coefficients ofs    2x3 andsx        23.  Its first factor equals det Hessφ̸= 0 ats= 0, which gives (1)
+and the first part of (2).  The second part of (2) is the weight-9 layer[C, P3].
+
+Notation.InRwe writem                                             0, m1, m2, m3, m4, m5 for the coefficients ofx    23, x2x3, x22, x1x3, x1x2, x21
+andn        0, n1, n2 for those ofx    3, x2, x1;Qis the quadratic part ofR. InPwe writec                                 3 for the coefficient
+ofx    31x3,q 0, q4 for those ofx    33, x1x23, andr        0, r3, r4 for those ofx    23, x1x3, x1x2.  The verifiers use the
+same names for all coefficients.
+
+4.1    The branche̸= 0
+Normalisee= 1.  The substitutions7→s−L/3 givesf=P+sR+s                                                                                                     3 [C, A1], withA                  4 still linear
+inx    3.  Expanding ins,
+
+                                det Hessf= 6sdet(H                        P +sH    R)− ∇R     T adj(H        P +sH    R)∇R,
+
+
+                                                                               3
+
+so the coefficients ofs    4, s3, s2, s,1 give five systems.  We split by the type ofB        3 underGL             2, then
+by  normal  forms  of  the  quadratic  partQofR.   The  normal  forms  use  only  translations,x                                                  3 7→
+αx3+λ(X),GL                 2(X) preserving the currentB        3, and scalings. The outcomes are listed in Table 1. All
+incoherence, implication and identity statements are certified (part B ofverify                                                         hc4    binary.py).
+
+B3                       case                                                          outcome
+3 distinct roots    (m  2 =m    5 = 0 by translation)                 s  4, s3: Plinear inx         3;s 2: findependent ofx        3; impossible
+x21x2                    x1x3 ∈Q                                               incoherent
+                           Q=x        22                                                     one family,n 20 =−12, explicit triangular inverse (below)
+                           Q= 0                                                       incoherent
+x31                        detH      Q = 0,m    21 = 4m   0m2 forced
+                           Q=x        23,  x22                                              φdegenerate (unary)
+                           Q=x        1x3,  x1x2,  x23 +x    1x2,  x22 +x    1x3    incoherent
+                           R=x        31 +x    2                                              triangular inverse
+                           R=x        31 +x    3                                             φ=x       51 (unary; argument below)
+                           R=x        31 +n    2x1                                          incoherent
+0                          rkQ= 3                                                   excluded bys           4
+                           Rwithout linear part                        ∇R(0) = 0:  rowsof Hessfvanishes at 0
+                           R=x        1                                                     fibrewise HC2 (below)
+                           R=x        21 +x    2                                              triangular inverse
+                           other normal forms                                   incoherent orφdegenerate
+
+                                                Table 1:  Branche̸= 0,f=P+sR+s                                  3.
+
+
+The family forB       3 =x    21x2.  Hereω            2 =−3 andn                0 =±2ω.  The coefficients obey thirteen linear
+relations, leaving seven free parameters[C, B2b], and det Hessf= 4κ                                                   2 withκ=n                 2 −ωr    4 ̸= 0.  In
+the coordinates (x  1,  z=x      2 +ωs,  x    3,  s) one has
+
+                              f= 2mx     3 +G(x          1, z) +s(κx           1 −m    2 −n    1m),       m=z+                   12x21.
+
+Sof     x3 = 2mandf              s determinemandx                                   1, hencez.  The remaining two equations are affine in (x                 3, s)
+with determinant 2κ[C, B2b].  The signn                         0 =−2ωis the Galois conjugate.
+
+R=x        31 +x    3.  Thes           2 coefficient gives adj11(H  P ) =P    22P33 −P     223 = 0, and thescoefficient gives
+detH      P  =x    1P22  [C, B3].   IfP           22 ̸=  0,  the  identityP   22 detH      P  =−adj        213  (valid  when  adj11  =  0,
+[C, A2]) givesx            1P 222 =−adj        213, which is impossible by comparingx                        1-adic valuations.  HenceP              22 =
+P23 = 0,P=a(x                1, x3) +x    2b(x    1), and det Hessf=−(6s a                         33 −1)b      ′2  [C, P5].  Sob         ′ is constant, the
+coefficient ofx    41x2 vanishes, andφis a fifth power.
+
+R=x        1.  Here det Hessf= 6sdetH                P −adj    11(H  P ), so detH  P  = 0 andP        22P33 −P     223 =−c.  The
+map Ψ = (x  1, P2, P3) is, for each fixedx           1, the gradient of a plane potential with constant nonzero
+Hessian  determinant.   By  HC2  it  is  bijective  on  each  fibre,  so  Ψ  is  bijective  and,  by  (BBR),  an
+automorphism. Sincedx            1, dP2, dP3 are independent and detH      P  = 0,dP    1 lies in the span ofdP    2, dP3,
+soP     1 ◦Ψ  −1   = Θ(v, w) does not depend on the first coordinate.  Then∇f= (P                      1 +s, P    2, P3, x1 +3s   2)
+is inverted by Θ,s=Y            1 −Θ(Y          2, Y3),x   1 =Y    4 −3s       2, and Ψ−1  .
+
+4.2    The branche= 0
+IfL=a̸= 0 is constant, thenf                   ss = 2aand Lemma 2 applies.
+
+                                                                                  4
+
+Lnon-constant. NormaliseL=x                                      1 byGL   2(X) and a translation; thenA                4 is linear inx    3 (Propo-
+sition 6).  The steps below are taken in order;  each assumes the vanishings established before it
+(part C of the verifier).
+
+  C1  Ifm   0 ̸= 0:  normalisem                      0 = 1 andm        1 =m    3 = 0 (shift ofx    3); thenm          2 =b    0 =b    1 =b    2 = 0 and
+        p0 =···=p         4 = 0, soφis degenerate.
+
+  C2  Som     0 = 0, which forcesm    1 = 0; the substitutions7→s+λx                                         3 removessx    1x3, som     3 = 0.  If
+        q0 ̸= 0:  normaliseq                      0 = 1,q    1 =q    4 =r    0 = 0 (shifts ofx    3); thenφ= 0.
+
+  C3  Soq     0 = 0, which forcesq    1 = 0.  Ifq   4 ̸= 0 (normalised to 1):  incoherent.
+
+  C4  Soq     4 = 0, which forcesc    0 =c    1 =c    2 = 0.  Ifr   0 ̸= 0 (normalised to 1):φis degenerate.
+                                                                                                                               0   n   0
+  C5  Sor     0  = 0;  nowPis linear inx           3  andfis quadratic in (x             3, s) withf           zz  =           n0   2x   1    ,  and
+        c3b0  =c    3b1  = 0 is forced.  Ifn   0 ̸= 0, Lemma 3 applies.  Ifn   0  = 0 andc   3 ̸= 0:  incoherent.
+        Ifn   0  =c    3  = 0:  on every component withφnon-degenerate, f             x3  =r    3x1  withr          3 ̸= 0,  and
+        Ris  affine  inx        2  [C, C5].   Thenx                    1  =Y    3/r3;  the  pair  (f  x2, fs)  is  affine  in  (x  2, s),  and  its
+        matrix has determinant equal to−det Hessf/r                   23, a nonzero constant, so (x  2, s) follows; finally
+        fx1 =r    3x3 + (. . .) givesx        3.
+
+L= 0.  Heref=P+sR, withA                                                 4 arbitrary.  Thes         2 coefficient−∇R        T adj(H        R)∇Rdepends only
+onR.
+     •B   3 with distinct roots:  it forcesRto be independent ofx             3  [C, D1]. B          3 =x    21x2:  it forcesQ
+        to be independent ofx    3 [C, D2], and after normalising, the remaining termn                   0x3 is incoherent
+        [C, P4].  In both cases Lemma 4 applies.
+
+     •B   3 =x    31: it forcesm             21 = 4m   0m2,m 0 = 0⇒m        1 = 0, andm        0 = 1⇒m        2 = 0.  All normal forms
+        withx          3 inQare incoherent, andR=x                         31 +Q(X) +x                  3 forcesφdegenerate[C, P4].  Otherwise
+        Ris independent ofx        3 (Lemma 4).
+
+     •B   3  = 0:  it forces detQ= 0 andn              T adj(Q)n= 0[C, D4], so kerQmeetsn                                 ⊥  and Lemma 4
+        applies (R≡0 is impossible).
+
+5    The unary case
+
+Letf=x              51 +f    4 +f    3 +f    2, with the termx           41 removed by translatingx                        1.  Writeu= (x             2, x3, x4) and
+f4 =A    4(u)+x         1A3(u)+x         21A2(u)+x         31A1(u). The admissible coordinate changes areu7→Mu+νx                           1+µ
+and translations ofx    1.
+     The degree-9 layer gives det HessA          4 = 0, soA     4 is a cone.  WhenA             4 = 0, the same layers force
+det HessA          3 = 0[C, W0]; when moreoverA                3 = 0 they force detA       2 = 0[C, W3]; whenA                        2 = 0 as
+well, they force det HessB         u = 0 for the cubicu-partB                   u off[C, W4], and, ifB                 u = 0, detQ= 0 for
+the coefficientQ(u) ofx               1.  By (GN) each of these forms is a cone.  Each normal formGL           2(x  3, x4)
+used below is applied when all previously normalised (x  3, x4)-dependent forms vanish, so it does
+not disturb them.  The analysis then proceeds by normal forms, as summarised in Table 2.  At each
+node, the perfect-square or perfect-cube conditions that justify the next normal form are certified
+to lie in the radical of the relevant layers.  The verifiersverify                             hc4    unary      *.pyrun a deterministic
+procedure:  they  solve  linear  equations  and  force  variables  to  zero  by  Rabinowitsch  tests  on  the
+equations with few unknowns.  Every leaf is of one of three kinds.
+
+                                                                          5
+
+   (I)  Incoherent.
+
+ (D)x        4 is a dead direction:  all monomials withx          4-degree≥2 other thanx                              24 vanish, and so do all
+        monomials containingx                4  once whose total degree is at least 4.  Thenf            44 = 2c   0  is constant,
+        and the coefficient ofx    4  has degree≤2.  Ifc                      0 ̸= 0, Lemma 2 applies;  ifc   0  = 0, Lemma 5
+        applies.
+
+  (Z)fis quadratic inz= (x                  3, x4) withf         zz =A    0 +x    1A1 for constant symmetric matricesA                   0, A1,
+        and the rank-2 normal form ofA    1 is incoherent.  In the remaining cases:
+
+            –A   1 = diag(0,1) and (A        0)33 ̸= 0:f    33 is constant and Lemma 2 applies.
+            –A   1 = diag(0,1) and (A        0)33 = 0:  detf      zz  =−(A          0)234, so Lemma 3 applies if (A  0)34 ̸= 0;
+                otherwisefis linear inx                            3  with a coefficient depending on (x  1, x2) only, and Lemma 4
+                applies.
+            –A   1 = 0:  Lemma 3 applies if detA       0 ̸= 0, Lemma 2 if rkA     0 = 1, and Lemma 4 ifA   0 = 0.
+
+
+node                                                         leaves
+A4 binary, det Hess2 ̸= 0 (4 root types) A    1 ∋x   31x4:  (I); otherwise (D)
+A4 =x    42                                                    normal forms ofx    1C(x      3, x4),x   1x2Q,x     1x22l,x   21Q,x     21x2l,
+                                                           the cubic in (x  3, x4) andx        2Q(x      3, x4):  leaves (D), (I), one (Z)
+A4 = 0,A    3 binary                                    (I)/(D)
+A4 = 0,A    3 =x    32                                       as forx      42:  (D), one (Z)
+A4 =A    3 = 0, rkA     2 = 2                            (I)/(D)
+A4 =A    3 = 0,A    2 =x    22                              (D), (I), one (Z)
+A4 =A    3 =A    2 = 0,A    1 = 0                       cone types of the cubicu-partB                      u:  (D);B        u = 0:fquadratic inu,
+                                                           rank of thex       1-coefficientQ:  2 (I); 1:flinear in (x              3, x4), Lemma 4; 0 (D)
+A4 =A    3 =A    2 = 0,A    1 =x    31x2                 Bu depends on≤2 forms; if their span andx                 2 span allu-forms:  (I);
+                                                           otherwise coordinates withB         u ∈C[x        2, x3]:x   4 dead, or (Z)
+
+                                                         Table 2:  The unary tree.
+
+
+6    Certificates
+
+The  ancillary  files  run  withpython3and  no  arguments.    They  use  the  free  Python  packages
+passagemath-singular, python-flintandsympy.   Each  prints  a  line[OK]or[ECHEC]for  ev-
+ery check.
+
+                                                file                                     checks    time
+                                                verify     hc4   prelim.py19     12 s
+                                                verify     hc4   binary.py148     91 s
+                                                verify     hc4   unary     1.py   12       8 s
+                                                verify     hc4   unary     2.py   21       8 s
+                                                verify     hc4   unary     3.py   47     12 s
+
+The three unary verifiers load the common fileunary                                core.py.  The ternary case is certified by the
+verifier of [12].
+
+
+
+
+                                                                           6
+
+References
+
+ [1]  A. Bia lynicki-Birula and M. Rosenlicht, Injective morphisms of real algebraic varieties, Proc.
+     Amer. Math. Soc. 13 (1962), 200–203.
+
+ [2]  M.  de  Bondt,  Polynomials  with  constant  Hessian  determinants  in  dimension  three,  J.  Pure
+     Appl. Algebra 219 (2015), no. 9, 3743–3754.
+
+ [3]  M. de Bondt, Quasi-translations and singular Hessians, Colloq. Math. 152 (2018), no. 2, 175–
+     198.
+
+ [4]  M. de Bondt and A. van den Essen, Singular Hessians, J. Algebra 282 (2004), no. 1, 195–204.
+
+ [5]  F. Dillen, Polynomials with constant Hessian determinant, J. Pure Appl. Algebra 71 (1991),
+     no. 1, 13–18.
+
+ [6]  Anonymous,  Structural reductions toward the quartic Hessian conjecture in dimension four,
+     v0.1.0-candidate, Zenodo, doi:10.5281/zenodo.22216400 (2026).
+
+ [7]  P.  Gordan  and  M.  N¨other,  ¨Uber  die  algebraischen  Formen,  deren  Hesse’sche  Determinante
+     identisch verschwindet, Math. Ann. 10 (1876), 547–568.
+
+ [8]  H. Liu, On the Hessian conjecture in Lorentzian signature: constant pivots and Hesse systems,
+     arXiv:2608.19112 (2026).
+
+ [9]  G.  Meng,  Legendre  transform,  Hessian  conjecture  and  tree  formula,  Appl.  Math.  Lett.  19
+     (2006), no. 6, 503–510.
+
+[10]  G.  Meng  and  L.  Yang,  A  five-variable  counterexample  to  the  Hessian  conjecture,  and  the
+     low-dimensional status of the Jacobian and Hessian conjectures, arXiv:2607.22198 (2026).
+
+[11]  T. T. Moh, On the Jacobian conjecture and the configurations of roots, J. Reine Angew. Math.
+     340 (1983), 140–212.
+
+[12]  D. Niedbala Giraudin, The four-dimensional Hessian conjecture for quintic potentials with a
+     ternary cone top, Hexagon, hexagon:2611.00134 (2026).
+
+[13]  A. van den Essen, Polynomial Automorphisms and the Jacobian Conjecture, Progr. Math. 190,
+     Birkh¨auser, 2000.
+
+[14]  Z. Ni, The quartic Hessian conjecture in dimension four, arXiv:2608.14217 (2026).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            7

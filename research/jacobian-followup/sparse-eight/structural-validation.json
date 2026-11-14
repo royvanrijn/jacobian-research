@@ -1,0 +1,2662 @@
+{
+  "counts": [
+    {
+      "count": 450,
+      "gate": "univariate-coordinate",
+      "size": 6
+    },
+    {
+      "count": 1,
+      "gate": "elementary-shear-coordinate",
+      "size": 7
+    },
+    {
+      "count": 1875,
+      "gate": "univariate-coordinate",
+      "size": 7
+    },
+    {
+      "count": 46,
+      "gate": "elementary-shear-coordinate",
+      "size": 8
+    },
+    {
+      "count": 1,
+      "gate": "hyperplane-normal-factor",
+      "size": 8
+    },
+    {
+      "count": 17435,
+      "gate": "univariate-coordinate",
+      "size": 8
+    }
+  ],
+  "external_dependency": "Moh plane Keller injectivity through maximum component degree 100",
+  "rare_supports": [
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-46c2a3e7c69968c9"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-961665cc8c5a6ef8"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 3,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-f90747ffbb95ceb0"
+    },
+    {
+      "coordinate": 1,
+      "gate": "hyperplane-normal-factor",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-9d1f96df702aeb4c"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-bad3433f53bf71f4"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-22890d2c833259ac"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-0a9d8f3eaa6891ae"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-e24b4a1da4c4610c"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-ab5cb5b32711f3ad"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-f43bae9f85001402"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 7,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-74b68d130d8650f5"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-9c5f3a021f5267b2"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-28eb1e3f963438fd"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 6,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-d58afa2604dbaca5"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 7,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-26d4fc9e517daf76"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 12,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-dda2b466dace00e5"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-472fe98c87632c4c"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 24,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-98b4ecd00355c0df"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 30,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-e796b5d58201b389"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-e4c47039189e0fd0"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            7
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-c01db38d7433049b"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 12,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-1fc4ad0d7836c09d"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-735cbc030086ef4f"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 24,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-1f5ff4386b1ba846"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 30,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-95ea0b4aa421ab3b"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-d020d4d2f5da1202"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-f7363d714d1f0994"
+    },
+    {
+      "coordinate": 2,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-f845bcfb13bf4054"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-655189021ce9cb25"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 24,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-c9860a08590f2ff3"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 30,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-9ad6202f991fe471"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-683bdd2d6ef9ca34"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-6fcdf611400a3770"
+    },
+    {
+      "coordinate": 2,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-9594bf36ab43845a"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 24,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-b29bd44157c9d9d2"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 30,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-8997d25398114720"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-785248e605d57d03"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-cdaba428ec3e8178"
+    },
+    {
+      "coordinate": 2,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            3,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-56e7ab290e8d7dbf"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 30,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-a8be2dd1ae5441d0"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-5a1886b41380fb74"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-6b2848d43f387a98"
+    },
+    {
+      "coordinate": 2,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-8161941315da3cd8"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 36,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            5,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-691b551f1ac9e3c5"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            5,
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-8bdf43344b0db5e6"
+    },
+    {
+      "coordinate": 2,
+      "fiber_plane_degree_bound": 18,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            5,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-6a82af13ba38b108"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 49,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            6,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-4bc404934bc5075e"
+    },
+    {
+      "coordinate": 1,
+      "fiber_plane_degree_bound": 7,
+      "gate": "elementary-shear-coordinate",
+      "size": 8,
+      "support": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            0
+          ]
+        ],
+        [],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "support_id": "s-abf25148ef4a8ddb"
+    }
+  ],
+  "rational_algebra_dependency": false,
+  "schema": "sparse-eight-coordinate-gates.v1",
+  "scope": "Complete retained raw-degree-at-most-seven support cover through eight nonlinear occurrences.",
+  "source_sha256": "657eed93b6a9ead4f76a7393463f9bdc1e4aaaed1685723fdb2d863b667227db",
+  "status": "pass",
+  "supports_sha256": "122a30f35e14505c81cf063d086dfae5de3b69df843457242bf892ac036c6ee9"
+}

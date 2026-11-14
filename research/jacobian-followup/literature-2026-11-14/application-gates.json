@@ -1,0 +1,184 @@
+{
+  "as_of": "2026-11-14",
+  "purpose": "Exact elementary application dictionaries for literature screening; no external theorem imported",
+  "wang_yan_census": {
+    "source": "https://arxiv.org/html/2610.36495v1",
+    "assumption": "Theorem1.1 invertibility proof is accepted after its own local audit",
+    "total_invariant_profiles": 74,
+    "current_dense_local_exclusions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "conditional_total_exclusions": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        4
+      ]
+    ],
+    "conditional_additional_exclusions": 16,
+    "conditional_profiles_remaining": 54,
+    "basis_argument": "An affine target change selecting a degree-adapted basis preserves the constant nonzero Jacobian. Flag maximum<=4 then gives a displayed total-degree<=4 map. A normalized collision cannot occur for an automorphism.",
+    "does_not_change": "GLDC1, OP-GLDC, the support-seven bound or degree-five-through-seven statuses"
+  },
+  "wright_f10_dictionary": {
+    "source": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/APPROACHES.md",
+    "substitution": {
+      "U": "-Y",
+      "V": "X"
+    },
+    "source_jacobian": 1,
+    "upstream_generators": [
+      "U",
+      "U*V",
+      "U*V**2",
+      "U*V**3 - V"
+    ],
+    "images": [
+      "-Y",
+      "-X*Y",
+      "-X**2*Y",
+      "-X**3*Y - X"
+    ],
+    "local_generators": [
+      "Y",
+      "X*Y",
+      "X**2*Y",
+      "X**3*Y + X"
+    ],
+    "generator_signs": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "verified": "Literal equality of embedded generator rings and preservation of source Jacobian",
+    "does_not_establish": "Finiteness of any target pair, F10 hypothesis coverage, pole-valuation comparison for arbitrary completions or a new Keller exclusion"
+  },
+  "latest_quartic_next_gate": {
+    "claim": "PF2RULED22",
+    "boundary_parameters": 46,
+    "second_coefficient_controls": 34,
+    "higher_order_invisible_directions": 36,
+    "immutable_high_coefficients": 8,
+    "remaining_matrix_rows": 45,
+    "remaining_matrix_columns": 34,
+    "remaining_matrix_rank_on_clean_open": 34,
+    "membership_consistency_conditions": 11,
+    "total_at_most_rational_conditions": 19,
+    "scope": "On nonzero-minor charts of the clean open only; no independence, solution or higher-order realization asserted"
+  }
+}

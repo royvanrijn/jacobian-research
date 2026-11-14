@@ -1,0 +1,39 @@
+{
+  "completed": [
+    "two-class critical scheme with both ideal inclusions",
+    "critical-zero unit identity",
+    "vertical common-tangent triple unit identity",
+    "one fixed sharp witness: six certified braids and no transitive S6 transposition assignment"
+  ],
+  "incomplete": [
+    {
+      "worker": "full b=1 critical-scheme lift",
+      "cap_seconds": 30,
+      "result": "interrupted; superseded by normalized critical=1 certificate"
+    },
+    {
+      "worker": "cusp0 SIROCCO",
+      "caps_seconds": [
+        60,
+        120
+      ],
+      "result": "no completed braid certificate"
+    },
+    {
+      "worker": "cusp1 SIROCCO",
+      "cap_seconds": 120,
+      "result": "no completed braid certificate"
+    },
+    {
+      "worker": "finite-slope common-tangent ideal",
+      "cap_seconds": 30,
+      "result": "halt 1; no completed basis; inputs retained"
+    }
+  ],
+  "large_certificate": {
+    "generation_cap_seconds": 30,
+    "bytes": 496667014,
+    "subsequent_literal_checks": "six workers under30 seconds each, all passed"
+  },
+  "next_gate": "Determine the complete missing-boundary ledger; ramification data alone do not classify deleted unramified companions."
+}

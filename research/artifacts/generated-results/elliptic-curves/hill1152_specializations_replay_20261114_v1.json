@@ -1,0 +1,94 @@
+{
+  "boundary": "Eight independently admitted specialized subgroups and exact searched-map/point replay. No exact fibre rank, saturation, new global record, novelty, or population productivity conclusion.",
+  "bundle_sha256": "bdd44080b159a3549fd7750e0c9057dc85c0637274530e776da46f0aed688bb8",
+  "complete_bounded_charts": 16,
+  "discovery_wall_seconds": 70.638954,
+  "fibres": 8,
+  "new_certified_directions": 0,
+  "rank_lower_bounds": [
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18,
+    18
+  ],
+  "results": [
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 0,
+      "initial_rank": 18,
+      "parameter": "0",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 0,
+      "initial_rank": 18,
+      "parameter": "1",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 1,
+      "initial_rank": 18,
+      "parameter": "0",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 1,
+      "initial_rank": 18,
+      "parameter": "1",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 2,
+      "initial_rank": 18,
+      "parameter": "0",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 2,
+      "initial_rank": 18,
+      "parameter": "1",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 4,
+      "initial_rank": 18,
+      "parameter": "0",
+      "replay": "PASS"
+    },
+    {
+      "charts": 2,
+      "final_rank": 18,
+      "gain": 0,
+      "index": 4,
+      "initial_rank": 18,
+      "parameter": "1",
+      "replay": "PASS"
+    }
+  ],
+  "schema": "hill1152-specialization-panel-replay-v1",
+  "status": "PASS"
+}

@@ -1,0 +1,218 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Hess}{\operatorname{Hess}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\HC}{\mathrm{HC}}
+\newcommand{\JC}{\mathrm{JC}}
+\newcommand{\cert}[1]{\emph{[C,\,#1]}}
+
+\title{The four-dimensional Hessian conjecture\\ for potentials of degree at most five}
+\author{David Niedbala Giraudin\thanks{ORCID 0009-0009-1526-1178. Computations and writing assisted by Claude (Anthropic).}}
+\date{6 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Hessian conjecture $\HC_n$ asserts that if $f\in\C[x_1,\dots,x_n]$ has $\det\Hess(f)\in\C^\times$, then $\nabla f$ is a polynomial automorphism. It is known for $n\le3$, false for $n\ge5$, and open for $n=4$, where it implies the plane Jacobian conjecture. Ni proved $\HC_4$ for potentials of degree at most four, and the author treated degree five when the top form depends on exactly three linear forms. We prove $\HC_4$ for every potential of degree at most five. The remaining top forms are a binary form or a fifth power of a linear form. Both cases are reduced, by weighted layers of the Hessian determinant and exact computer algebra over $\Q$, to four elementary mechanisms: a Schur complement in one variable (which reduces to $\HC_3$), a partial Legendre transform in two variables (which reduces to $\HC_2$), a ``dead direction'' lemma (which reduces to $\HC_2$ and the plane Jacobian conjecture in degrees at most $(3,4)$, known by Moh), and explicit triangular inverses. Five self-contained verifiers are supplied as ancillary files. The paper has not been refereed.
+\end{abstract}
+
+\section{Introduction}
+For $f\in\C[x]=\C[x_1,\dots,x_n]$ write $\Hess(f)=(\partial_i\partial_jf)$. The Hessian conjecture $\HC_n$ \cite{Meng06} states that if $\det\Hess(f)\in\C^\times$, then $\nabla f\colon\C^n\to\C^n$ is a polynomial automorphism. It holds for $n=2$ \cite{Dillen} and $n=3$ \cite{deBondt3}, and fails for every $n\ge5$ \cite{MengYang}. For $n=4$ it is open and implies the plane Jacobian conjecture through $\Phi(x,y)=y^{\mathsf T}F(x)$, $\det\Hess\Phi=(\det JF)^2$ \cite{MengYang,Ni}. Ni \cite{Ni} proved $\HC_4$ for $\deg f\le4$; the author \cite{NGtern} proved it for $\deg f=5$ when the top form depends on exactly three linear forms. Liu \cite{Liu} proved $\HC_4$ for real potentials of degree at most five whose Hessian has Lorentzian signature. Partial reductions for a degree-five branch are recorded in \cite{EP}.
+
+\begin{theorem}\label{thm:main}
+Let $f\in\C[x_1,x_2,x_3,x_4]$ with $\deg f\le5$ and $\det\Hess(f)\in\C^\times$. Then $\nabla f$ is a polynomial automorphism of $\C^4$.
+\end{theorem}
+
+\paragraph{Status.} Statements marked \cert{\dots} are certified by exact computation over $\Q$ (polynomial identities with symbolic coefficients, Gr\"obner bases, minimal associated primes, and the Rabinowitsch criterion $1\in I+(1-Tg)\Leftrightarrow g\in\sqrt I$). Each label is the label printed by one of the ancillary verifiers (Section~\ref{sec:cert}); all 247 checks pass. Where a hypothesis ``$\varphi$ non-degenerate'' is used, it is imposed by running the test once for each coefficient of $\det\Hess\varphi$ declared nonzero. The paper has not been refereed.
+
+\section{Tools}\label{sec:tools}
+Affine changes of coordinates preserve the hypothesis and the conclusion, and terms of degree $\le1$ may be discarded. We use:
+(GN) a form in $n\le4$ variables with vanishing Hessian determinant depends on at most $n-1$ linear forms \cite{GN,deBondtQT};
+($\HC_2$, $\HC_3$) \cite{Dillen,deBondt3}, with transfer to characteristic-zero fields and descent of inverses \cite[Lemmas~2.6, 2.7]{Ni};
+(dBvdE) over a field of characteristic zero, a bivariate polynomial without terms of degree $\le1$ and with vanishing Hessian determinant is a polynomial in one linear form \cite[Thm.~3.1]{dBvdE};
+(Moh) the plane Jacobian conjecture holds for maps of degree at most $100$ \cite{Moh};
+(BBR) an injective polynomial self-map of $\C^n$ is bijective \cite{BBR}; a bijective polynomial self-map of $\C^n$ is birational and, by Zariski's Main Theorem, an automorphism \cite[Ch.~4]{vdE}. We refer to this combination as (BBR).
+
+\begin{lemma}[Schur complement]\label{lem:A}
+If, in some linear coordinates $(y,w)\in\C^3\times\C$, $f=aw^2+w\,g(y)+h(y)$ with $a\in\C^\times$ and $\det\Hess f\in\C^\times$, then $\nabla f$ is an automorphism.
+\end{lemma}
+\begin{proof}
+This is \cite[Prop.~6.1, branch $a\ne0$]{Ni}, whose proof does not use the degree of $g$; see also \cite[Lemma~3]{NGtern}. Put $k=h-g^2/(4a)$ and $w'=w+g/(2a)$; then $f_w=2aw'$ and $f_y=\nabla k+w'\nabla g$, and substituting $w=\tau-g/(2a)$ shows $\det\Hess(k+\tau g)=\det\Hess f/(2a)$ for every $\tau$. Over $\C(\tau)$, $\HC_3$ and descent give a polynomial inverse of $\nabla(k+\tau g)$, whence the inverse of $\nabla f$.
+\end{proof}
+
+\begin{lemma}[partial Legendre transform]\label{lem:Leg}
+Let $f=\frac12 z^{\mathsf T}A(X)z+b(X)^{\mathsf T}z+c(X)$ with $X,z\in\C^2$ and $\det A\in\C^\times$. If $\det\Hess f\in\C^\times$, then $\nabla f$ is an automorphism.
+\end{lemma}
+\begin{proof}
+For a target $(Y_X,Y_z)$ the equation $f_z=Y_z$ gives $z(X)=A^{-1}(Y_z-b)$, polynomial in $X$. With $\Phi(X)=f(X,z(X))-Y_z^{\mathsf T}z(X)$ one has $\nabla\Phi=f_X(X,z(X))$ Differentiating $f_z(X,z(X))=Y_z$ gives $\partial z/\partial X=-A^{-1}f_{zX}$, hence $\Hess\Phi=f_{XX}-f_{Xz}A^{-1}f_{zX}$ is the Schur complement of $A$ in $\Hess f$ along $z=z(X)$, and $\det\Hess f=\det A\cdot\det\Hess\Phi$ there (an instance is checked in \cert{A4}). Hence $\det\Hess\Phi\in\C^\times$, and by $\HC_2$ the equation $\nabla\Phi(X)=Y_X$ has exactly one solution. So $\nabla f$ is injective, and (BBR) concludes.
+\end{proof}
+
+\begin{lemma}[dead direction]\label{lem:K}
+Let $f=P(u_1,u_2,w)+sR(u_1,u_2)$ in linear coordinates $(u_1,u_2,w,s)$, with $\deg f\le5$ and $\det\Hess f=c\in\C^\times$. Then $\nabla f$ is an automorphism.
+\end{lemma}
+\begin{proof}
+One has the identity \cert{A3}
+\[\det\Hess f=-P_{ww}(Q_0+sQ_1)+(R_1P_{2w}-R_2P_{1w})^2,\qquad Q_1=R_2^2R_{11}-2R_1R_2R_{12}+R_1^2R_{22}.\]
+$R$ is not constant, since otherwise $\det\Hess f=0$. If $P_{ww}\ne0$, then $Q_1=0$. Where $R_2\ne0$, the derivative of $R_1/R_2$ along the field $(R_2,-R_1)$, which is tangent to the level curves, equals $Q_1/R_2^2=0$ (similarly where $R_1\ne0$). Hence on the open set where $\nabla R\ne0$ each level curve has constant normal direction, so it is an open piece of a line; taking Zariski closures, every irreducible component of a general fibre $\{R=t\}$ is a line. Lines in distinct fibres are disjoint, hence parallel, so $R$ is constant along a fixed direction and $R=g(l)$ for a linear form $l$; take $l=u_1$. Then $\det\Hess f=-g'^2(P_{22}P_{ww}-P_{2w}^2)$, so $g'\in\C^\times$, $R=\alpha u_1+\beta$, and $P(u_1,\cdot,\cdot)$ has constant nonzero Hessian determinant in $(u_2,w)$ for each $u_1$. Now $f_s$ gives $u_1$; $\HC_2$ applied fibrewise (with descent) gives $(u_2,w)$ from $(f_{u_2},f_w)$; finally $f_{u_1}=P_1+\alpha s$ gives $s$. This is a polynomial inverse.
+
+If $P_{ww}=0$, then $P=P_0+wP_1$, and $\det\Hess f=J(R,P_1)^2$, so $(R,P_1)$ is a plane Keller map of degree at most $4$, hence an automorphism by (Moh). Then $(u_1,u_2)$ is determined by $(f_s,f_w)$. The remaining equations are linear in $(w,s)$ with matrix $[\nabla P_1\ \nabla R]$, whose determinant is $\pm J(R,P_1)$.
+\end{proof}
+
+\begin{lemma}\label{lem:L}
+Let $f=w\,g(y)+h(y)$ with $y\in\C^3$, $\deg g\le2$, $\deg f\le5$ and $\det\Hess f\in\C^\times$. Then $\nabla f$ is an automorphism.
+\end{lemma}
+\begin{proof}
+Write $g$ with constant Hessian $B$ and $\nabla g=By+\beta$. The coefficient of $w^2$ in $\det\Hess f$ is $-\nabla g^{\mathsf T}\adj(B)\nabla g$, so it vanishes. If $\operatorname{rk}B=3$, its top part is $-\det B\cdot y^{\mathsf T}By\ne0$, which is impossible. If $\operatorname{rk}B=2$, then $\adj B=\lambda vv^{\mathsf T}$ with $Bv=0$, so $v\cdot\beta=0$. If $\operatorname{rk}B\le1$, choose $v\in\ker B$ with $v\cdot\beta=0$. In every case $\partial_vg=0$, and Lemma~\ref{lem:K} applies with $s=w$ and $R=g$. (This is also the branch $a=0$ of \cite[Prop.~6.1]{Ni}.)
+\end{proof}
+
+\section{The top form}
+Let $\det\Hess f=c\ne0$ and $\deg f=5$ (degree $\le4$ is \cite{Ni}). The top degree layer gives $\det\Hess f_5=0$, so by (GN) $f_5$ depends on at most three linear forms. The ternary case is \cite{NGtern}. Two cases remain: the \emph{binary} case $f_5=\varphi(x_1,x_2)$ with $\det\Hess\varphi\not\equiv0$, and the \emph{unary} case $f_5=x_1^5$ (a binary form with vanishing Hessian is a fifth power).
+
+\section{The binary case}\label{sec:bin}
+Write $X=(x_1,x_2)$, $z=(x_3,s)$ with $s=x_4$, and $f=\varphi+f_4+f_3+f_2$.
+
+\begin{proposition}\label{prop:B}
+After a linear change of coordinates, $f=P(x')+sR(x')+s^2L(x')+e\,s^3$ with $x'=(x_1,x_2,x_3)$, $L$ affine, the cubic part of $R$ a binary form $B_3(X)$, the quintic part of $P$ equal to $\varphi$, and $A_4(X,x_3)$ the quartic part of $P$. Moreover:
+\begin{enumerate}
+\item if $e\ne0$, then $\partial_3^2A_4=0$;
+\item if $e=0$, the coefficient of $s^2x_3$ vanishes; if moreover $L$ is not constant, then after normalising to $L=x_1$, $\partial_3^2A_4=0$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+The degree-10 layer of $\det\Hess f$ equals $\det\Hess\varphi\cdot\det\Hess_z(f_4)$, so $\det\Hess_zf_4=0$. By (dBvdE) over $K=\C(X)$, $f_4=G(X,\mu(X)\cdot z)+(\text{linear in }z)$. Take $\mu$ primitive in $\C[X]^2$ (Gauss's lemma), homogeneous of degree $d$. A term $g_k(X)(\mu\cdot z)^k$ with $k\ge2$ has degree $\deg g_k+k(d+1)=4$, so either no such term exists, or $d=0$, or $d=1$, $k=2$ and $g_2$ is constant. This gives two possibilities. Either $\mu$ is constant (B1: $f_4=A_4(X,x_3)+sB_3(X)$), or $\mu$ is linear with independent entries (B2: $f_4=c\,(x_1x_3+x_2s)^2+\dots$, $c\ne0$). In case B2, with weights $(1,1,\tfrac32,\tfrac32)$ the top part is $\varphi+cq^2$ with $q=x_1x_3+x_2s$, and $\det\Hess(\varphi+cq^2)=-16c^3q^2(10\varphi-3cq^2)\ne0$ \cert{P1}, which is impossible. In case B1 the $s$-degree of $f$ is at most $3$, which gives the stated form. With weights $(1,1,1,2)$ the layer of weight $10$ equals $\det\Hess_X(\varphi+sB_3)\cdot(6es\,\partial_3^2A_4+12es^2l_{11}-4s^2l_{10}^2)$ \cert{P2}, where $l_{10},l_{11}$ are the coefficients of $s^2x_3$ and $sx_3^2$. Its first factor equals $\det\Hess\varphi\ne0$ at $s=0$, which gives (1) and the first part of (2). The second part of (2) is the weight-9 layer \cert{P3}.
+\end{proof}
+
+\paragraph{Notation.} In $R$ we write $m_0,m_1,m_2,m_3,m_4,m_5$ for the coefficients of $x_3^2,x_2x_3,x_2^2,x_1x_3,x_1x_2,x_1^2$ and $n_0,n_1,n_2$ for those of $x_3,x_2,x_1$; $Q$ is the quadratic part of $R$. In $P$ we write $c_3$ for the coefficient of $x_1^3x_3$, $q_0,q_4$ for those of $x_3^3,x_1x_3^2$, and $r_0,r_3,r_4$ for those of $x_3^2,x_1x_3,x_1x_2$. The verifiers use the same names for all coefficients.
+
+\subsection{The branch $e\ne0$}
+Normalise $e=1$. The substitution $s\mapsto s-L/3$ gives $f=P+sR+s^3$ \cert{A1}, with $A_4$ still linear in $x_3$. Expanding in $s$,
+\[\det\Hess f=6s\det(H_P+sH_R)-\nabla R^{\mathsf T}\adj(H_P+sH_R)\nabla R,\]
+so the coefficients of $s^4,s^3,s^2,s,1$ give five systems. We split by the type of $B_3$ under $GL_2$, then by normal forms of the quadratic part $Q$ of $R$. The normal forms use only translations, $x_3\mapsto\alpha x_3+\lambda(X)$, $GL_2(X)$ preserving the current $B_3$, and scalings. The outcomes are listed in Table~\ref{tab:e1}. All incoherence, implication and identity statements are certified (part B of \texttt{verify\_hc4\_binary.py}).
+
+\begin{table}[h]\centering\small
+\begin{tabular}{@{}lll@{}}\toprule
+$B_3$ & case & outcome\\\midrule
+3 distinct roots & ($m_2=m_5=0$ by translation) & $s^4,s^3$: $P$ linear in $x_3$; $s^2$: $f$ independent of $x_3$; impossible\\
+$x_1^2x_2$ & $x_1x_3\in Q$ & incoherent\\
+ & $Q=x_2^2$ & one family, $n_0^2=-12$, explicit triangular inverse (below)\\
+ & $Q=0$ & incoherent\\
+$x_1^3$ & $\det H_Q=0$, $m_1^2=4m_0m_2$ forced & \\
+ & $Q=x_3^2,\ x_2^2$ & $\varphi$ degenerate (unary)\\
+ & $Q=x_1x_3,\ x_1x_2,\ x_3^2+x_1x_2,\ x_2^2+x_1x_3$ & incoherent\\
+ & $R=x_1^3+x_2$ & triangular inverse\\
+ & $R=x_1^3+x_3$ & $\varphi=x_1^5$ (unary; argument below)\\
+ & $R=x_1^3+n_2x_1$ & incoherent\\
+$0$ & $\operatorname{rk}Q=3$ & excluded by $s^4$\\
+ & $R$ without linear part & $\nabla R(0)=0$: row $s$ of $\Hess f$ vanishes at $0$\\
+ & $R=x_1$ & fibrewise $\HC_2$ (below)\\
+ & $R=x_1^2+x_2$ & triangular inverse\\
+ & other normal forms & incoherent or $\varphi$ degenerate\\\bottomrule
+\end{tabular}
+\caption{Branch $e\ne0$, $f=P+sR+s^3$.}\label{tab:e1}
+\end{table}
+
+\paragraph{The family for $B_3=x_1^2x_2$.} Here $\omega^2=-3$ and $n_0=\pm2\omega$. The coefficients obey thirteen linear relations, leaving seven free parameters \cert{B2b}, and $\det\Hess f=4\kappa^2$ with $\kappa=n_2-\omega r_4\ne0$. In the coordinates $(x_1,\ z=x_2+\omega s,\ x_3,\ s)$ one has
+\[f=2mx_3+G(x_1,z)+s\,(\kappa x_1-m^2-n_1m),\qquad m=z+\tfrac12x_1^2.\]
+So $f_{x_3}=2m$ and $f_s$ determine $m$ and $x_1$, hence $z$. The remaining two equations are affine in $(x_3,s)$ with determinant $2\kappa$ \cert{B2b}. The sign $n_0=-2\omega$ is the Galois conjugate.
+
+\paragraph{$R=x_1^3+x_3$.} The $s^2$ coefficient gives $\adj_{11}(H_P)=P_{22}P_{33}-P_{23}^2=0$, and the $s$ coefficient gives $\det H_P=x_1P_{22}$ \cert{B3}. If $P_{22}\ne0$, the identity $P_{22}\det H_P=-\adj_{13}^2$ (valid when $\adj_{11}=0$, \cert{A2}) gives $x_1P_{22}^2=-\adj_{13}^2$, which is impossible by comparing $x_1$-adic valuations. Hence $P_{22}=P_{23}=0$, $P=a(x_1,x_3)+x_2b(x_1)$, and $\det\Hess f=-(6s\,a_{33}-1)b'^2$ \cert{P5}. So $b'$ is constant, the coefficient of $x_1^4x_2$ vanishes, and $\varphi$ is a fifth power.
+
+\paragraph{$R=x_1$.} Here $\det\Hess f=6s\det H_P-\adj_{11}(H_P)$, so $\det H_P=0$ and $P_{22}P_{33}-P_{23}^2=-c$. The map $\Psi=(x_1,P_2,P_3)$ is, for each fixed $x_1$, the gradient of a plane potential with constant nonzero Hessian determinant. By $\HC_2$ it is bijective on each fibre, so $\Psi$ is bijective and, by (BBR), an automorphism. Since $dx_1,dP_2,dP_3$ are independent and $\det H_P=0$, $dP_1$ lies in the span of $dP_2,dP_3$, so $P_1\circ\Psi^{-1}=\Theta(v,w)$ does not depend on the first coordinate. Then $\nabla f=(P_1+s,P_2,P_3,x_1+3s^2)$ is inverted by $\Theta$, $s=Y_1-\Theta(Y_2,Y_3)$, $x_1=Y_4-3s^2$, and $\Psi^{-1}$.
+
+\subsection{The branch $e=0$}
+If $L=a\ne0$ is constant, then $f_{ss}=2a$ and Lemma~\ref{lem:A} applies.
+
+\paragraph{$L$ non-constant.} Normalise $L=x_1$ by $GL_2(X)$ and a translation; then $A_4$ is linear in $x_3$ (Proposition~\ref{prop:B}). The steps below are taken in order; each assumes the vanishings established before it (part C of the verifier).
+\begin{enumerate}
+\item[C1] If $m_0\ne0$: normalise $m_0=1$ and $m_1=m_3=0$ (shift of $x_3$); then $m_2=b_0=b_1=b_2=0$ and $p_0=\dots=p_4=0$, so $\varphi$ is degenerate.
+\item[C2] So $m_0=0$, which forces $m_1=0$; the substitution $s\mapsto s+\lambda x_3$ removes $sx_1x_3$, so $m_3=0$. If $q_0\ne0$: normalise $q_0=1$, $q_1=q_4=r_0=0$ (shifts of $x_3$); then $\varphi=0$.
+\item[C3] So $q_0=0$, which forces $q_1=0$. If $q_4\ne0$ (normalised to $1$): incoherent.
+\item[C4] So $q_4=0$, which forces $c_0=c_1=c_2=0$. If $r_0\ne0$ (normalised to $1$): $\varphi$ is degenerate.
+\item[C5] So $r_0=0$; now $P$ is linear in $x_3$ and $f$ is quadratic in $(x_3,s)$ with $f_{zz}=\begin{pmatrix}0&n_0\\ n_0&2x_1\end{pmatrix}$, and $c_3b_0=c_3b_1=0$ is forced. If $n_0\ne0$, Lemma~\ref{lem:Leg} applies. If $n_0=0$ and $c_3\ne0$: incoherent. If $n_0=c_3=0$: on every component with $\varphi$ non-degenerate, $f_{x_3}=r_3x_1$ with $r_3\ne0$, and $R$ is affine in $x_2$ \cert{C5}. Then $x_1=Y_3/r_3$; the pair $(f_{x_2},f_s)$ is affine in $(x_2,s)$, and its matrix has determinant equal to $-\det\Hess f/r_3^2$, a nonzero constant, so $(x_2,s)$ follows; finally $f_{x_1}=r_3x_3+(\dots)$ gives $x_3$.
+\end{enumerate}
+
+\paragraph{$L=0$.} Here $f=P+sR$, with $A_4$ arbitrary. The $s^2$ coefficient $-\nabla R^{\mathsf T}\adj(H_R)\nabla R$ depends only on $R$.
+\begin{itemize}
+\item $B_3$ with distinct roots: it forces $R$ to be independent of $x_3$ \cert{D1}. $B_3=x_1^2x_2$: it forces $Q$ to be independent of $x_3$ \cert{D2}, and after normalising, the remaining term $n_0x_3$ is incoherent \cert{P4}. In both cases Lemma~\ref{lem:K} applies.
+\item $B_3=x_1^3$: it forces $m_1^2=4m_0m_2$, $m_0=0\Rightarrow m_1=0$, and $m_0=1\Rightarrow m_2=0$. All normal forms with $x_3$ in $Q$ are incoherent, and $R=x_1^3+Q(X)+x_3$ forces $\varphi$ degenerate \cert{P4}. Otherwise $R$ is independent of $x_3$ (Lemma~\ref{lem:K}).
+\item $B_3=0$: it forces $\det Q=0$ and $n^{\mathsf T}\adj(Q)n=0$ \cert{D4}, so $\ker Q$ meets $n^\perp$ and Lemma~\ref{lem:K} applies ($R\equiv0$ is impossible).
+\end{itemize}
+
+\section{The unary case}\label{sec:un}
+Let $f=x_1^5+f_4+f_3+f_2$, with the term $x_1^4$ removed by translating $x_1$. Write $u=(x_2,x_3,x_4)$ and $f_4=A_4(u)+x_1A_3(u)+x_1^2A_2(u)+x_1^3A_1(u)$. The admissible coordinate changes are $u\mapsto Mu+\nu x_1+\mu$ and translations of $x_1$.
+
+The degree-9 layer gives $\det\Hess A_4=0$, so $A_4$ is a cone. When $A_4=0$, the same layers force $\det\Hess A_3=0$ \cert{W0}; when moreover $A_3=0$ they force $\det A_2=0$ \cert{W3}; when $A_2=0$ as well, they force $\det\Hess B_u=0$ for the cubic $u$-part $B_u$ of $f$ \cert{W4}, and, if $B_u=0$, $\det Q=0$ for the coefficient $Q(u)$ of $x_1$. By (GN) each of these forms is a cone. Each normal form $GL_2(x_3,x_4)$ used below is applied when all previously normalised $(x_3,x_4)$-dependent forms vanish, so it does not disturb them. The analysis then proceeds by normal forms, as summarised in Table~\ref{tab:un}. At each node, the perfect-square or perfect-cube conditions that justify the next normal form are certified to lie in the radical of the relevant layers. The verifiers \texttt{verify\_hc4\_unary\_*.py} run a deterministic procedure: they solve linear equations and force variables to zero by Rabinowitsch tests on the equations with few unknowns. Every leaf is of one of three kinds.
+
+\begin{itemize}
+\item[(I)] Incoherent.
+\item[(D)] $x_4$ is a dead direction: all monomials with $x_4$-degree $\ge2$ other than $x_4^2$ vanish, and so do all monomials containing $x_4$ once whose total degree is at least $4$. Then $f_{44}=2c_0$ is constant, and the coefficient of $x_4$ has degree $\le2$. If $c_0\ne0$, Lemma~\ref{lem:A} applies; if $c_0=0$, Lemma~\ref{lem:L} applies.
+\item[(Z)] $f$ is quadratic in $z=(x_3,x_4)$ with $f_{zz}=A_0+x_1A_1$ for constant symmetric matrices $A_0,A_1$, and the rank-2 normal form of $A_1$ is incoherent. In the remaining cases:
+ \begin{itemize}
+ \item $A_1=\operatorname{diag}(0,1)$ and $(A_0)_{33}\ne0$: $f_{33}$ is constant and Lemma~\ref{lem:A} applies.
+ \item $A_1=\operatorname{diag}(0,1)$ and $(A_0)_{33}=0$: $\det f_{zz}=-(A_0)_{34}^2$, so Lemma~\ref{lem:Leg} applies if $(A_0)_{34}\ne0$; otherwise $f$ is linear in $x_3$ with a coefficient depending on $(x_1,x_2)$ only, and Lemma~\ref{lem:K} applies.
+ \item $A_1=0$: Lemma~\ref{lem:Leg} applies if $\det A_0\ne0$, Lemma~\ref{lem:A} if $\operatorname{rk}A_0=1$, and Lemma~\ref{lem:K} if $A_0=0$.
+ \end{itemize}
+\end{itemize}
+
+\begin{table}[h]\centering\small
+\begin{tabular}{@{}ll@{}}\toprule
+node & leaves\\\midrule
+$A_4$ binary, $\det\Hess_2\ne0$ (4 root types) & $A_1\ni x_1^3x_4$: (I); otherwise (D)\\
+$A_4=x_2^4$ & normal forms of $x_1C(x_3,x_4)$, $x_1x_2Q$, $x_1x_2^2l$, $x_1^2Q$, $x_1^2x_2l$, \\
+ & the cubic in $(x_3,x_4)$ and $x_2Q(x_3,x_4)$: leaves (D), (I), one (Z)\\
+$A_4=0$, $A_3$ binary & (I)/(D)\\
+$A_4=0$, $A_3=x_2^3$ & as for $x_2^4$: (D), one (Z)\\
+$A_4=A_3=0$, $\operatorname{rk}A_2=2$ & (I)/(D)\\
+$A_4=A_3=0$, $A_2=x_2^2$ & (D), (I), one (Z)\\
+$A_4=A_3=A_2=0$, $A_1=0$ & cone types of the cubic $u$-part $B_u$: (D); $B_u=0$: $f$ quadratic in $u$, \\
+ & rank of the $x_1$-coefficient $Q$: 2 (I); 1: $f$ linear in $(x_3,x_4)$, Lemma~\ref{lem:K}; 0 (D)\\
+$A_4=A_3=A_2=0$, $A_1=x_1^3x_2$ & $B_u$ depends on $\le2$ forms; if their span and $x_2$ span all $u$-forms: (I);\\
+ & otherwise coordinates with $B_u\in\C[x_2,x_3]$: $x_4$ dead, or (Z)\\\bottomrule
+\end{tabular}
+\caption{The unary tree.}\label{tab:un}
+\end{table}
+
+\section{Certificates}\label{sec:cert}
+The ancillary files run with \texttt{python3} and no arguments. They use the free Python packages \texttt{passagemath-singular}, \texttt{python-flint} and \texttt{sympy}. Each prints a line \texttt{[OK]} or \texttt{[ECHEC]} for every check.
+
+\begin{center}\small
+\begin{tabular}{@{}lrr@{}}\toprule
+file & checks & time\\\midrule
+\texttt{verify\_hc4\_prelim.py} & 19 & 12 s\\
+\texttt{verify\_hc4\_binary.py} & 148 & 91 s\\
+\texttt{verify\_hc4\_unary\_1.py} & 12 & 8 s\\
+\texttt{verify\_hc4\_unary\_2.py} & 21 & 8 s\\
+\texttt{verify\_hc4\_unary\_3.py} & 47 & 12 s\\\bottomrule
+\end{tabular}
+\end{center}
+The three unary verifiers load the common file \texttt{unary\_core.py}. The ternary case is certified by the verifier of \cite{NGtern}.
+
+\begin{thebibliography}{99}
+\bibitem{BBR} A.~Bia\l{}ynicki-Birula and M.~Rosenlicht, Injective morphisms of real algebraic varieties, Proc.\ Amer.\ Math.\ Soc.\ 13 (1962), 200--203.
+\bibitem{deBondt3} M.~de~Bondt, Polynomials with constant Hessian determinants in dimension three, J.~Pure Appl.\ Algebra 219 (2015), no.~9, 3743--3754.
+\bibitem{deBondtQT} M.~de~Bondt, Quasi-translations and singular Hessians, Colloq.\ Math.\ 152 (2018), no.~2, 175--198.
+\bibitem{dBvdE} M.~de~Bondt and A.~van~den~Essen, Singular Hessians, J.~Algebra 282 (2004), no.~1, 195--204.
+\bibitem{Dillen} F.~Dillen, Polynomials with constant Hessian determinant, J.~Pure Appl.\ Algebra 71 (1991), no.~1, 13--18.
+\bibitem{EP} Anonymous, Structural reductions toward the quartic Hessian conjecture in dimension four, v0.1.0-candidate, Zenodo, doi:10.5281/zenodo.22216400 (2026).
+\bibitem{GN} P.~Gordan and M.~N\"other, \"Uber die algebraischen Formen, deren Hesse'sche Determinante identisch verschwindet, Math.\ Ann.\ 10 (1876), 547--568.
+\bibitem{Liu} H.~Liu, On the Hessian conjecture in Lorentzian signature: constant pivots and Hesse systems, arXiv:2608.19112 (2026).
+\bibitem{Meng06} G.~Meng, Legendre transform, Hessian conjecture and tree formula, Appl.\ Math.\ Lett.\ 19 (2006), no.~6, 503--510.
+\bibitem{MengYang} G.~Meng and L.~Yang, A five-variable counterexample to the Hessian conjecture, and the low-dimensional status of the Jacobian and Hessian conjectures, arXiv:2607.22198 (2026).
+\bibitem{Moh} T.~T.~Moh, On the Jacobian conjecture and the configurations of roots, J.~Reine Angew.\ Math.\ 340 (1983), 140--212.
+\bibitem{NGtern} D.~Niedbala Giraudin, The four-dimensional Hessian conjecture for quintic potentials with a ternary cone top, Hexagon, hexagon:2611.00134 (2026).
+\bibitem{vdE} A.~van~den~Essen, Polynomial Automorphisms and the Jacobian Conjecture, Progr.\ Math.\ 190, Birkh\"auser, 2000.
+\bibitem{Ni} Z.~Ni, The quartic Hessian conjecture in dimension four, arXiv:2608.14217 (2026).
+\end{thebibliography}
+\end{document}

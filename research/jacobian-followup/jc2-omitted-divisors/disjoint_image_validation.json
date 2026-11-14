@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped pole module, catalogue Milnor charges, exact critical trace witnesses, metadata and renderer readback",
+  "claim": "PF2OMIT16",
+  "check_count": 114,
+  "previous_goal_turn": "Progress: odd-k affine intersection lower bound and mandatory singleton packets in three groupings",
+  "current_goal_turn": "Progress: full affine pole module and all-degree disjoint-image gate reduce possible disconnected supports to two nodal degree10 fibres; exact trace witnesses restrict the remaining case to a finite uncomputed nodal set",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-R7-IMAGE-NORM-MATCHING",
+    "METHOD-DISJOINT-POLYNOMIAL-IMAGES"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113"
+  ],
+  "local_links_checked": 73,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Disjoint-curve lemma, module codimension, shifted infinity branch, global Milnor dimension24, ideal dimension comparison and openness are written arguments. Exact pins, semigroup arithmetic, catalogue Milnor charges, Buchberger pairs, gradient containment and two full rational trace matrices are replayed. No generic solver printout, incomplete symbolic trace or converse to the complex moment is assumed.",
+  "requirements_audit": {
+    "ramifies": "Image tangency, local Milnor number and ramification index remain separate",
+    "omitted": "Connectedness reduction concerns all distinct image supports; shared A still counts unramified omitted length1 separately",
+    "target_images_and_residue_degrees": "All-degree intersection/translation gate and support connectedness reduced; actual B/H equations, finite nodal trace-zero set and source normalization remain unknown",
+    "exceptional_fibre_lengths": "Shared A and cyclic C have mandatory singleton loci when disjointness is excluded; packets2+2+1 and2+3 retained without counting tangency as additional points"
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "full_navigation_check": {
+    "outcome": "FAIL repository-wide checks; scoped result validation passes",
+    "command_results": [
+      {
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "command": [
+          "python3",
+          "research/scripts/research.py",
+          "check"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 561, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 438, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 128, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      }
+    ],
+    "historical_artifacts_reconstructed": false,
+    "unrelated_authoritative_checker_hashes_refreshed": false
+  },
+  "current_artifact_sha256": {
+    "DISJOINT_IMAGE_GATE.md": "ae577553608952902acece74b15df4d71cab48cb9f225b5e8c3fd0d7dabf1d09",
+    "verify_disjoint_images.py": "e9fe116251a67ae9829d4457c9f9d64049808f664ce100bba6c783b7ec02132c",
+    "disjoint_image_ledger.json": "6e10d2a64da4dbe312f73c3f102786485d4770a0aad46b883814935e1a4cbec0",
+    "disjoint_image_receipt.json": "f310469c57673767f5b0b9553c054e39857803dc5a698460a578c9d23c96873e",
+    "fetch_disjoint_image_sources.py": "bf137c22d55fe93d1904d36deb933bf87588cd0a7f7d11737b61687a89ededcf",
+    "sources/disjoint_image_manifest.json": "4ec1243fefe36906e1c324ad033f4b878e086ce28b5704702a307a16a46f75bd",
+    "sources/jelonek-2011.03472v3.html": "976068fa81837498fcb77bb91e6c4d28b4a6bc74ed940340d9771e807a5be249",
+    "sources/jelonek-2011.03472-version-audit.html": "2f4847f7c2fd691a92e2710b52752aa741cb519adce30afbb3a0247e1d0f8460",
+    "README.md": "645f5bb81a77adc702bda9dee16185a1a25ea51a69794442289a3f8d5acc59b6",
+    "INPUT_GATE.md": "73d956905f2b7c96e7a037c4361745a766e86c0271d4d6eb3673a49f7fbae639"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json",
+    "singleton_valuation_validation.json",
+    "image_norm_validation.json",
+    "four_branch_validation.json",
+    "nonimmersed_validation.json",
+    "generic_line_validation.json",
+    "odd_intersection_validation.json"
+  ]
+}

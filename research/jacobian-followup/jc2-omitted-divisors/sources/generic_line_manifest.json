@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-11-14",
+  "sources": [
+    {
+      "path": "chau-0711.3894v1.html",
+      "url": "https://arxiv.org/html/0711.3894v1",
+      "sha256": "6ab76d5d56da3973427c39ea4862879d231bf94cea2d7085249f9fce1646539b",
+      "bytes": 97102,
+      "imported_result": "Theorem3: every nonproper image component of a complex plane Keller map has a polynomial parametrization with coordinate-degree ratio degP/degQ",
+      "excluded_imports": "No simple-polynomial hypothesis or inverse conclusion from Theorem2 is applied"
+    }
+  ]
+}

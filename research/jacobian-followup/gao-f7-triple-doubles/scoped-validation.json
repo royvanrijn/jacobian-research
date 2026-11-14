@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "All18 Gao metadata claims,12 Gao methods,18 Gao work fingerprints, new theorem source/certificate and exact presentation coupling, syntax and local links. Repository-wide audits are separate.",
+  "claim_id": "GAOF7TRP1",
+  "Gao_claims": 18,
+  "Gao_methods": 12,
+  "work_claims": 18,
+  "checks": 12884,
+  "replay_seconds": 45.281336070998805,
+  "normalized_counts": {
+    "7": 288,
+    "8": 23,
+    "nonordinary_total": 311,
+    "9": "infinite ordinary open on each of four rational curves"
+  },
+  "remaining_three_point_gate": "3+2+2+2 with every marked triple root satisfying D0!=0",
+  "integer_norm_points": 1510,
+  "byte_identical_regeneration": "PASS",
+  "generated_views": 26,
+  "markdown_links_checked": 18,
+  "checker_and_input_hashes": "PASS",
+  "proof_sha256": "046f300aecd3164d90ebed70fef65b94de445b40ed94c30c9cc3ff17f9e0b6f8",
+  "scoped_git_diff_check": "PASS",
+  "dependency_receipt_all_eight_hashes_match": true,
+  "full_audits": [
+    {
+      "check": "navigation",
+      "returncode": 2,
+      "log": "full-navigation-check.log",
+      "outside_scope_failure": "KDSQ6 missing artifacts/generated-results/README.md"
+    },
+    {
+      "check": "partial-review",
+      "returncode": 1,
+      "log": "full-partial-review-check.log",
+      "outside_scope_failure": "METHOD-EC-CENTRE-POLICY missing artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+    }
+  ]
+}

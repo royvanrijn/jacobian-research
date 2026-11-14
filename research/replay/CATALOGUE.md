@@ -13807,7 +13807,7 @@ generic split contracted local packet are checked by:
 
 The geometric-degree-six terminal cubic classification, the exact
 conic/line/constant high-contact factorization, the complete `r=6` cusp
-surface, the four-point `r=8` cusp field, and the `r=10` SNC exclusion are
+surface, the four-point `r=8` cusp field, and the conditional `r=10` SNC budget are
 checked symbolically by:
 
 ```bash
@@ -13826,10 +13826,11 @@ sage -python scripts/verify_f2_r8_cusp_braid.sage
 The first Sage command checks the generic `A_2` point and both exceptional
 `E_6` scale classes.  The second checks all four complex embeddings of the
 exact `r=8` quartic field.  Each row has seven equal/disjoint assignments and
-no transitive assignment.  These commands exclude all three normal even
-terminal rows; the odd normal and nonnormal conductor regimes remain.
+no transitive assignment in those checked cusp strata. The necessary-locus
+exhaustion and the historical whole-even-row exclusion are partial because
+omitted e=1 rows were not enumerated. The current [scope audit](../jacobian-followup/jc2-omitted-divisors/STEIN_SCOPE_AUDIT.md) retains these certificates without a whole-family claim.
 
-<!-- status-consumer: PF2D6E1 e09ee4ea4a2ece0d -->
+<!-- status-consumer: PF2D6E1 caa17bfedd209524 -->
 <!-- status-consumer: PF2D6O1 810993dd0ad65b40 -->
 
 The sharp polynomial parametrization gap bound excludes normal `r=9`.

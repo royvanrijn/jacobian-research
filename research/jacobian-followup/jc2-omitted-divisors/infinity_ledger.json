@@ -1,0 +1,156 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT5",
+  "rows": [
+    {
+      "case": "generic infinity",
+      "normalization_rows": [
+        {
+          "e": 1,
+          "f": 1,
+          "ramifies": false,
+          "omitted_from_affine_N": true
+        },
+        {
+          "e": 5,
+          "f": 1,
+          "ramifies": true,
+          "omitted_from_affine_N": true
+        }
+      ],
+      "pencil_root_cluster_lengths": [
+        1,
+        5
+      ],
+      "index_not_inferred_from_cluster_lengths": true
+    },
+    {
+      "case": "quartic escape",
+      "fixed_root_order": 5,
+      "moving_root_order": 1,
+      "ramified_projection_degree": 4,
+      "quadratic_incidence_orders": [
+        8,
+        4,
+        12,
+        8,
+        4
+      ],
+      "forced_linear_orders": {
+        "l": 2,
+        "m": 3,
+        "n": 1
+      },
+      "contradiction": "All conic coefficients have factor z",
+      "realized": false
+    },
+    {
+      "case": "reciprocal finite profile",
+      "fixed_root_order": 5,
+      "moving_root_order": 1,
+      "additional_finite_E_point": true,
+      "line_jacobian": "(-b0*d1 + b1*d0)/b0**2",
+      "contradiction": "The finite point forces a ramified line image, distinct from the degree10 branch curve",
+      "realized": false
+    },
+    {
+      "case": "reciprocal infinite constant profile",
+      "possible_parameter_degree": 5,
+      "required_parameter_degree": 6,
+      "contradiction": "Field degree",
+      "realized": false
+    },
+    {
+      "case": "reciprocal infinite linear profile",
+      "trial_root_clusters": [
+        4,
+        1,
+        1
+      ],
+      "trial_normalization_prime_count_minimum": 3,
+      "required_normalization_prime_count": 2,
+      "ramification_indices_not_assigned_to_nonnormal_trial_clusters": true,
+      "contradiction": "Complete generic infinity prime census",
+      "realized": false
+    }
+  ],
+  "scope": "degree6 plane Keller map; entire unique affine ramified prime e2,f1; birational degree(6,10) gap21 image",
+  "stratum_excluded": true,
+  "uses_source_finality": false,
+  "uses_any_Theorem3_8_conclusion": false,
+  "all_omitted_unramified_primes_allowed": true,
+  "entire_single_ramification_hypothesis_derived_from_terminal_passport": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "residual_immersed_r7_ledger": [
+    {
+      "other_ramified_e": 2,
+      "other_ramified_f": null,
+      "other_ramified_image": null,
+      "other_ramified_image_differs_from_C": true,
+      "other_ramified_excess": 0,
+      "unramified_omitted_primes": 1,
+      "other_ramified_generic_ambient_length": 2,
+      "exceptional_points": []
+    },
+    {
+      "other_ramified_e": 2,
+      "other_ramified_f": null,
+      "other_ramified_image": null,
+      "other_ramified_image_differs_from_C": true,
+      "other_ramified_excess": 1,
+      "unramified_omitted_primes": 0,
+      "other_ramified_generic_ambient_length": 2,
+      "exceptional_points": [
+        {
+          "ambient_length": 3,
+          "point": null,
+          "target": null
+        }
+      ]
+    },
+    {
+      "other_ramified_e": 3,
+      "other_ramified_f": null,
+      "other_ramified_image": null,
+      "other_ramified_image_differs_from_C": true,
+      "other_ramified_excess": 0,
+      "unramified_omitted_primes": 0,
+      "other_ramified_generic_ambient_length": 3,
+      "exceptional_points": []
+    }
+  ],
+  "residual_hypothesis": "degree6 with an immersed e2,f1 gap21 prime; additional ramification is allowed",
+  "residual_off_branch_singleton": {
+    "ramified_indices": [
+      2,
+      2
+    ],
+    "ramified_excesses": [
+      0,
+      0
+    ],
+    "second_ramified_f": null,
+    "unramified_omitted_prime_count": 1,
+    "unramified_e": 1,
+    "unramified_f": 1,
+    "branches_of_its_image_at_zero": 5,
+    "omitted_local_lengths_at_zero": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "source_length_at_zero": 1,
+    "distinct_nonproper_target_components": 3,
+    "unramified_image_delta_at_zero_minimum": 10,
+    "actual_image_equation": null,
+    "five_branch_control": [
+      "t**5 - t",
+      "t*(t**5 - t)"
+    ],
+    "control_is_global_Keller_realization": false
+  },
+  "controls_not_Keller_realizations": true
+}

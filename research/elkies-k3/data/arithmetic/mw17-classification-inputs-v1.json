@@ -1,0 +1,233 @@
+{
+  "boundary": "Frozen imported population, not an exhaustive lattice classification. Curated current claims interpret historical packets. No input reconstruction or automatic repinning.",
+  "claims": {
+    "EC-K3-DET1020-ARITHMETIC-MW17-EXISTENCE-20260915": {
+      "canonical_source": "elkies-k3/DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md",
+      "canonical_source_sha256": "8eaff2a88965788d819fd0eb539803311464ce32c9cc9df3223c9b884ee31d4d",
+      "scope_fingerprint": "c693307837a9081d",
+      "state": "proved"
+    },
+    "EC-K3-DET1020-PHYSICAL-NEF-MW17-20260915": {
+      "canonical_source": "elkies-k3/DET1020_PHYSICAL_MW17_FIBRATION_2026-09-15.md",
+      "canonical_source_sha256": "5e00eaa77da2593416b453c11a272378ddb2aac5a64a322bba0b5851ae3a9554",
+      "scope_fingerprint": "1041568447e5b57f",
+      "state": "proved"
+    },
+    "EC-K3-DET1020-RATIONAL-MARKING-SOURCE-20260915": {
+      "canonical_source": "elkies-k3/DET1020_RATIONAL_MARKING_SOURCE_2026-09-15.md",
+      "canonical_source_sha256": "043a2df16219f8ebbe4f057cf235f84e5003a5dd0d6b48d969622ab2e50daa68",
+      "scope_fingerprint": "7613f8a3522078fc",
+      "state": "proved"
+    },
+    "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER": {
+      "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "canonical_source_sha256": "b0dc1767c30b56b4d57083492e52e9d0163f8a93ec570d06ff68e63af5707333",
+      "scope_fingerprint": "fecec75b4ff1e8e1",
+      "state": "partial"
+    },
+    "EC-K3-DET378-QQ-MARKING-OBSTRUCTION": {
+      "canonical_source": "elkies-k3/DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "canonical_source_sha256": "f06f6b5c8506573fe5cc06970667bc66831e8f7492a0614779bd0f8acd0e6b55",
+      "scope_fingerprint": "1e910f72f54ac228",
+      "state": "proved"
+    },
+    "EC-K3-DET388-GLOBAL-ROOT-OBSTRUCTION-20260914": {
+      "canonical_source": "elkies-k3/DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md",
+      "canonical_source_sha256": "27d6be2f1b1fcdc7cb7d35ad3c998525f9936e008f54ee697324a50cdf422a71",
+      "scope_fingerprint": "4a5e4b736411e35d",
+      "state": "proved"
+    },
+    "EC-K3-DET388-RATIONAL-MARKING-SOURCE-20260914": {
+      "canonical_source": "elkies-k3/DET388_RATIONAL_MARKING_SOURCE_2026-09-14.md",
+      "canonical_source_sha256": "cbf2fded7f9077368eb101ca0e1ea495ff2e17e44261671c9b57e1ea2d0ac57f",
+      "scope_fingerprint": "dae3ec26a85f45c0",
+      "state": "proved"
+    },
+    "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS": {
+      "canonical_source": "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
+      "canonical_source_sha256": "2afbc8814c7b9cc665c6d1e0edd36c6f5581961d94efe519f60c0a5d255e4707",
+      "scope_fingerprint": "14498ad134ffa60e",
+      "state": "proved"
+    },
+    "EC-K3-DET622-GLOBAL-ROOT-OBSTRUCTION-20260915": {
+      "canonical_source": "elkies-k3/DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md",
+      "canonical_source_sha256": "e6acfee6bbd8f02fd0afbbf3b661c86c9b6843108924c9ee1b18ac947de13d52",
+      "scope_fingerprint": "8cf4a576ffed9b4b",
+      "state": "proved"
+    },
+    "EC-K3-DET622-INOSE-RATIONAL-MARKING-SOURCE-20260915": {
+      "canonical_source": "elkies-k3/DET622_INOSE_RATIONAL_MARKING_SOURCE_2026-09-15.md",
+      "canonical_source_sha256": "992aea3b060565e33052f3e7f10f55262622c0dc4ab6ce78218bf9cb1cccd022",
+      "scope_fingerprint": "1206effe4a4c81b0",
+      "state": "proved"
+    },
+    "EC-K3-DET800-FULL-MARKING-OBSTRUCTION-20260914": {
+      "canonical_source": "elkies-k3/DET800_FULL_MARKING_OBSTRUCTION_2026-09-14.md",
+      "canonical_source_sha256": "aae5c3049ac6d7fff3564c4979a3a6d0700540ea25e916236ac65d11a006f41b",
+      "scope_fingerprint": "657aa7a4615f86ff",
+      "state": "proved"
+    },
+    "EC-K3-DET852-GLOBAL-ROOT-OBSTRUCTION-20260915": {
+      "canonical_source": "elkies-k3/DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md",
+      "canonical_source_sha256": "55da4bf8272d3fd16d7470771f1ce1b7cfd8ec37c848809b84c6fe93c676242b",
+      "scope_fingerprint": "8b8d9b8d4d280543",
+      "state": "proved"
+    },
+    "EC-K3-DET852-RATIONAL-MARKING-SOURCE-20260915": {
+      "canonical_source": "elkies-k3/DET852_RATIONAL_MARKING_SOURCE_2026-09-15.md",
+      "canonical_source_sha256": "a588568dfae4ce0dc0fddd0ae9620f39e4794b0dbf09fd292168266e0099284c",
+      "scope_fingerprint": "c4347ddc1c7ab61b",
+      "state": "proved"
+    },
+    "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION": {
+      "canonical_source": "elkies-k3/GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "canonical_source_sha256": "6570055afe5df107d768ef1e3135dbfce7e908f0acf1fe1e31dd71e7fed1a32f",
+      "scope_fingerprint": "972f591d2885f9ba",
+      "state": "proved"
+    },
+    "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION": {
+      "canonical_source": "elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "canonical_source_sha256": "d8197b5086636e480200e1c74419bc38c5cb17cae9adecaf0f09ceb5c9aacf2f",
+      "scope_fingerprint": "b7f0cf002c0411fe",
+      "state": "proved"
+    },
+    "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION": {
+      "canonical_source": "elkies-k3/NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md",
+      "canonical_source_sha256": "c85973964651b378a85379d757aff9b2c4467aaea29a9e4dcff5c4f37986812f",
+      "scope_fingerprint": "71290f86a475074b",
+      "state": "proved"
+    },
+    "EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17": {
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md",
+      "canonical_source_sha256": "216e1f639d66765796511ddc91e7e085881eaee645835ace0c17295d5ae0800a",
+      "scope_fingerprint": "a304934727bb3f87",
+      "state": "proved"
+    },
+    "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER": {
+      "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "canonical_source_sha256": "eb30609421491dfa154aa6f58875764622dcc8eb3a57c64ba3dccae9af175792",
+      "scope_fingerprint": "e99570e3cb1edca8",
+      "state": "partial"
+    },
+    "EC-K3-RATIONAL-MARKING-STRUCTURAL-GATES-20260914": {
+      "canonical_source": "elkies-k3/RATIONAL_MARKING_STRUCTURAL_GATES_2026-09-14.md",
+      "canonical_source_sha256": "773f1b76c7014481daae3db3d9d073a9d34b49fb84624fd9973753b8497e9660",
+      "scope_fingerprint": "45803c6fef53b000",
+      "state": "proved"
+    },
+    "EC-K3-REAL-MARKING-CONTENT-OBSTRUCTION-20260914": {
+      "canonical_source": "elkies-k3/REAL_MARKING_CONTENT_OBSTRUCTION_2026-09-14.md",
+      "canonical_source_sha256": "13783d41c4dbb967392ae7e6f943d355023a80c83a08aac6e8b42695107082fc",
+      "scope_fingerprint": "7ebf7345ceb205ef",
+      "state": "proved"
+    },
+    "EC-K3-REAL-RANK19-PERIOD-OBSTRUCTION-20260914": {
+      "canonical_source": "elkies-k3/REAL_RANK19_PERIOD_OBSTRUCTION_2026-09-14.md",
+      "canonical_source_sha256": "1c2a46e449119ebf3cd76d50e6724a3b0a4d2b8ceca8d25f472922a2c522b53d",
+      "scope_fingerprint": "95be36fe7978b871",
+      "state": "proved"
+    }
+  },
+  "date": "2026-09-15",
+  "inputs": {
+    "admit1020": {
+      "path": "artifacts/generated-results/elkies-k3-det1020-marking-gate-v1/certificate.json",
+      "sha256": "7cbca96e435fe05d2605b0f8751939c66c3e1b46ead8cd2f533cee4908865f7b"
+    },
+    "admit388": {
+      "path": "artifacts/generated-results/elkies-k3-det388-marking-v1/certificate.json",
+      "sha256": "27bd149b347302800eed819edceb9fd2fae0c8e4eefcab639bd5fdb7ca15d0d6"
+    },
+    "admit622": {
+      "path": "artifacts/generated-results/elkies-k3-det622-inose-source-v1/certificate.json",
+      "sha256": "94b2c6400e03597a4930b8ec9e792725d78f2d52585da6a0ec535d8f2854ef33"
+    },
+    "admit852": {
+      "path": "artifacts/generated-results/elkies-k3-det852-marking-v1/certificate.json",
+      "sha256": "cdf1e24c1f0dafbb5e44f75ddaefa5ce874c5af25e8986afc6e222cf591d0f64"
+    },
+    "arithmetic": {
+      "path": "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+      "sha256": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
+    },
+    "catalogue": {
+      "path": "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+      "sha256": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8"
+    },
+    "content": {
+      "path": "artifacts/generated-results/elkies-k3-real-marking-content-v1.json",
+      "sha256": "cdf73e6e7772a49d36091fdeb38a1f9d42891872b8d39a0c880887e91d7a1297"
+    },
+    "det800": {
+      "path": "artifacts/generated-results/elkies-k3-det800-full-marking-v1.json",
+      "sha256": "3b28b77ba1dfe0727ba179669bc19a2970986ecfcf01b0a752bffdac5352c939"
+    },
+    "period": {
+      "path": "artifacts/generated-results/elkies-k3-real-rank19-period-v1.json",
+      "sha256": "ca5f418176420c8b0bb5d708cb66ff52ec8e08fdb82a5870a4bc801ebe902a03"
+    },
+    "physical1020": {
+      "path": "artifacts/generated-results/elkies-k3-det1020-equation-preflight-v1/physical-mw17-certificate.json",
+      "sha256": "a902e6a3bf87b45533f11310ceafa5e9bc0c3de9877ce6cdf4e03544521747cc"
+    },
+    "planner": {
+      "path": "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json",
+      "sha256": "ceca4b3249f86407725cf995ba3c77842012e445f1bc0d2a9636d0b5d634093a"
+    },
+    "root1020": {
+      "path": "artifacts/generated-results/elkies-k3-det1020-root-gate-v1/certificate.json",
+      "sha256": "2ec13d98baf296b683d67bd6b1ad591f1d9b1d6458ae35a53e69faabe1d3e21d"
+    },
+    "root388": {
+      "path": "artifacts/generated-results/elkies-k3-det388-global-root-gate-v1/certificate.json",
+      "sha256": "b2a17a409abcb69db414ae333826cae459e265cab9d1a0887e6e4ade3107cfff"
+    },
+    "root622": {
+      "path": "artifacts/generated-results/elkies-k3-det622-root-gate-v1/certificate.json",
+      "sha256": "f73039cf1f5c08ef3f1178501f1c7516b5cc0f090ffae0dcea692ddc4d427604"
+    },
+    "root852": {
+      "path": "artifacts/generated-results/elkies-k3-det852-final-anchor-v1/certificate.json",
+      "sha256": "59a6c643ddb4981631777318f1a21746f04fae0fb68579a128c8603e0d85007c"
+    },
+    "specific_evidence_0": {
+      "path": "artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json",
+      "sha256": "cde5b29f0a361cd0c8e81c0c38d8aedba08c155cd4359651d7c9c368d4a1b249"
+    },
+    "specific_evidence_1": {
+      "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+      "sha256": "e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de"
+    },
+    "specific_evidence_2": {
+      "path": "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+      "sha256": "bdec587989f4ea872310bb8373d5b9c414504c88f610bf27b46732c646c5e1a6"
+    },
+    "specific_evidence_3": {
+      "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
+      "sha256": "48f4a2130aad683b759022b0bd8b92e3c6f7a29c75d069ada04405c1e360ab36"
+    },
+    "specific_evidence_4": {
+      "path": "artifacts/generated-results/elkies-k3-ns0031-period-group-counterwitness-v1.json",
+      "sha256": "0ccb935e919af75679cca872c86c1f2a901f3db0b96b78a5607d9188ab13cab8"
+    },
+    "specific_evidence_5": {
+      "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+      "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+    },
+    "specific_evidence_6": {
+      "path": "artifacts/generated-results/elkies-k3-ns0031-stable-marking-v1/certificate.json",
+      "sha256": "2a0bc44c4bef54be14e00f6e22b605e4b0914149ea5f7bf1a28e71787095bffb"
+    },
+    "structural": {
+      "path": "artifacts/generated-results/elkies-k3-marking-structural-gates-v1.json",
+      "sha256": "cb0c57e6abd38055748ad43dc169df04c68846cdd4e5918d309ae66481128f0d"
+    }
+  },
+  "population": {
+    "NS_classes": 827,
+    "frames": 1840,
+    "rootless_NS_classes": 66,
+    "rootless_frames": 171
+  },
+  "schema": "elkies-k3.mw17-classification-inputs.v1"
+}

@@ -1,0 +1,86 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT18",
+  "outcome": "PASS scoped image-pencil groups, universal RH/Euler, metadata and renderer readback",
+  "check_count": 40,
+  "previous_goal_turn": "Progress: universal disjoint-image exclusion closes both complete coefficient charts",
+  "current_goal_turn": "Progress: exact nonlinear-pencil algebraic constants and geometric S6/A6 groups prove source generic fibres integral; degree6 RH and all omitted-point charges are separate from general-line data",
+  "status_validation": "Copied schema/dependencies/new hash checked; unrelated historical consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-OMITTED-GENERIC-LINE",
+    "METHOD-IMAGE-PENCIL-CONSTANTS"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113"
+  ],
+  "local_links_checked": 77,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Inertia fixes the algebraic pencil constants, regular-field base change and sign-field intersection are written field arguments. Exact S6/A6 closures, stabilizers, blocks, all infinity partitions, symbolic RH/Euler identities and unramified-deletion controls are replayed. No actual curve cover, infinity realization, source identification or central-fibre calculation is claimed.",
+  "requirements_audit": {
+    "ramifies": "Only S ramifies on the generic nonzero H_C level; its e_S controls finite different and geometric group",
+    "omitted": "All b+u missing points counted, including identity-inertia unramified points; vertical C and H=C are reserved for the central fibre",
+    "target_images_and_residue_degrees": "Generic pencil constants and groups fixed; original omitted f1 and geometric infinity count remain separate. Actual B/H and b/u absent",
+    "exceptional_fibre_lengths": "Generic level lost sheets e_S*b+u, removed points b+u and different(e_S-1)b distinguished; central/exceptional h-values still need their actual normalized factors"
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "full_navigation_check": {
+    "outcome": "FAIL repository-wide checks; scoped validation passes",
+    "command_results": [
+      {
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 360, in validate_index\n    assert consumer_path.is_file(), (\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: KDSQ6: missing document consumer artifacts/generated-results/README.md\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "command": [
+          "python3",
+          "research/scripts/research.py",
+          "check"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 561, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 438, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 128, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      }
+    ],
+    "historical_artifacts_reconstructed": false,
+    "unrelated_authoritative_checker_hashes_refreshed": false
+  },
+  "current_artifact_sha256": {
+    "IMAGE_PENCIL_MONODROMY.md": "5f1513e43eb831941a1c9a85faac7e6b28ee4a48db347faba1239a31492bf0c7",
+    "verify_image_pencil.py": "a4cfb407b4b298cac363afc27bd53e8ef0392cd5a6c2e90752e994c65b4c1a86",
+    "image_pencil_ledger.json": "89c6c91bb6fc3686b47020f9ef30aaccc3483e28b2f394da6b3c31dba29a9eec",
+    "image_pencil_receipt.json": "1db60391b949bd5ec5b3709d630aeb583c916a8954e06459f5820388bb4187ac",
+    "README.md": "3769c2171d626672c4bc634642a00036f7d71e50b91fd478e19ccf73582cad05",
+    "INPUT_GATE.md": "48b97531d92997a5435bce6c558e9a889969f198473690bc067d92fd638bc162"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json",
+    "singleton_valuation_validation.json",
+    "image_norm_validation.json",
+    "four_branch_validation.json",
+    "nonimmersed_validation.json",
+    "generic_line_validation.json",
+    "odd_intersection_validation.json",
+    "disjoint_image_validation.json",
+    "critical_trace_validation.json"
+  ]
+}

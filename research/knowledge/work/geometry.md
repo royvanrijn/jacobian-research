@@ -26,19 +26,19 @@ Inherited checklist items: `LEGACY-20260904-667`. Full wording: `research.py sho
 
 ## WORK-KMON
 
-**Separate the first proper-simple action obstruction**
+**Complete an admissible proper-simple Keller action on affine space**
 
 **Disposition:** archived-programme. **Kind:** research. **Compute class:** none.
 
-**Next step:** Fix one low-index PSL2 action and compare boundary, inertia, genus, units and exact action masks under each realization category.
+**Next step:** For the natural degree-twelve PSL2(11) action, use the explicit rational F11 cover and its derivative/boundary ledger in a coupled polynomial completion; prove the full constant Jacobian, the exact generic extension, and ordinary affine source and target spaces. First retain the quadratic constant-field distinction. Alternatively prove an action-level obstruction; do not reopen nilpotent or even-dihedral searches.
 
-**Completion evidence:** An exact realization or exclusion for the named faithful transitive action and category.
+**Completion evidence:** An explicit polynomial Keller self-map of affine space realizes the named proper-simple action with exact generic-group proof, or a general obstruction excludes that action. A chart or permissible passport alone is insufficient.
 
-**Prerequisites and boundary:** Keep existential, smooth-affine, absolute and field-versal spectra separate. Relative Gassmann examples do not settle absolute realization.
+**Prerequisites and boundary:** KMFI1--4 are available. F11 removes the modular input's elliptic-source obstruction over an extension, but has nonconstant boundary units and arithmetic PGL2(11) over its displayed coefficient field. General action-spectrum classification remains open.
 
-Authority: [OP-KMON](../../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) (open).
+Authority: [OP-KMON](../../jacobian-followup/monodromy-theory/THEORY.md) (open); [KMFI1](../../jacobian-followup/monodromy-theory/THEORY.md) (proved); [KMFI2](../../jacobian-followup/monodromy-theory/THEORY.md) (proved); [KMFI3](../../jacobian-followup/monodromy-theory/THEORY.md) (proved); [KMFI4](../../jacobian-followup/monodromy-theory/F11.md) (proved).
 
-Sources: [PSL2_11_KELLER_ACTION_SPECTRUM.md](../../archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md).
+Sources: [THEORY.md](../../jacobian-followup/monodromy-theory/THEORY.md); [F11.md](../../jacobian-followup/monodromy-theory/F11.md).
 
 ## WORK-SIC2-B33
 
@@ -112,19 +112,19 @@ Sources: [JELONEK_COEFFICIENT_COMPONENTS.md](../../archive/non-elliptic/extended
 
 ## WORK-GLDC
 
-**Reduce seven-term support candidates before enumeration**
+**Find a nine-term Keller collision after the coordinate obstructions**
 
 **Disposition:** archived-programme. **Kind:** research. **Compute class:** none.
 
-**Next step:** Use support and leading-torus obstructions to define a small exact shard above the six-term exclusions; include gauge compactification and boundary coverage.
+**Next step:** GLDC3 closes eight terms. Seek a normalized size-nine collision in raw degree at most seven, first imposing the univariate, hyperplane-normal and constant-Jacobian-pairing gates of KPAIR1 on completed supports. Preserve every possible repair of partial supports, exact coefficient-torus coverage and actual boundary conditions.
 
-**Completion evidence:** A certified seven-term witness or a complete exclusion of the explicitly defined new shard.
+**Completion evidence:** A certified nine-term witness, or a complete next exclusion with independent set-level coverage and full coefficient input verification.
 
-**Prerequisites and boundary:** The lower bound is seven, not an attained minimum. All 74 degree-two support profiles are closed; the huge raw coefficient count is not an executable plan.
+**Prerequisites and boundary:** The normalized lower bound is nine, with attainment unknown. Exactly four dense quadratic profiles are closed. Constant nonzero Jacobian pairings are excluded in three variables through degree ten; dimension four is attained in that bounded special class by the stabilized degree-seven map. These results do not settle arbitrary dense low-degree or unrestricted special-form minima.
 
-Authority: [OP-GLDC](../../archive/non-elliptic/extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md) (open).
+Authority: [OP-GLDC](../../archive/non-elliptic/extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md) (open); [GLDC2](../../jacobian-followup/sparse-seven/PROOF.md) (proved); [GLDC3](../../jacobian-followup/sparse-eight/PROOF.md) (proved); [KPAIR1](../../jacobian-followup/sparse-eight/COORDINATE_GATES.md) (proved).
 
-Sources: [GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md](../../archive/non-elliptic/extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md).
+Sources: [GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md](../../archive/non-elliptic/extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md); [PROOF.md](../../jacobian-followup/sparse-seven/PROOF.md); [PROOF.md](../../jacobian-followup/sparse-eight/PROOF.md); [COORDINATE_GATES.md](../../jacobian-followup/sparse-eight/COORDINATE_GATES.md).
 
 ## WORK-LR-NE
 
@@ -225,6 +225,38 @@ Authority: [OP-CCDM](../../archive/non-elliptic/extended-geometry/JELONEK_COEFFI
 Sources: [research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt](../../archive/repository-cleanup-2026-09-12/research__DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md.txt); [JELONEK_COEFFICIENT_COMPONENTS.md](../../archive/non-elliptic/extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md); [HESSIAN_RITT_DEFORMATION_COMPLEX.md](../../archive/non-elliptic/extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md).
 
 Inherited checklist items: `LEGACY-20260904-725`, `LEGACY-20260904-727`. Full wording: `research.py show LEGACY-ID`.
+
+## WORK-GMC3-CUBIC
+
+**Resolve the dense ternary cubic Gaussian degree gap**
+
+**Disposition:** archived-programme. **Kind:** research. **Compute class:** none.
+
+**Next step:** Move beyond the completed all-degree affine-W/univariate-coefficient architecture. In a fixed circular frame, address at least one genuinely omitted cubic monomial W^2,W^3,W^2Z,W^2T,WT,WZT,WT^2,T^3, or prove that the relevant orbit has a representative in the completed chart. Keep coefficient saturation, both h(0) charts, support boundaries and frame assumptions explicit. Do not reclassify the safe cubic shear or the closed twelve-coefficient chart.
+
+**Completion evidence:** An exact all-order cubic counterexample, or an exhaustive characteristic-zero exclusion of every cubic chart; a single excluded chart only narrows the target.
+
+**Prerequisites and boundary:** The quadratic layer, sparse Pareto exclusions and complete twelve-coefficient cubic architecture are closed. All-degree affine-W failures have a forced nonzero Z^2*T^2 term and degree at least four. No global frame-normalization theorem is supplied. Finite twelve-moment sufficiency applies only to the stated cubic architecture.
+
+Authority: [OP-GMC3-CUBIC](../../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) (open); [GQ3NORMAL20261114](../../jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md) (proved); [G3M](../../archive/non-elliptic/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md) (proved); [G3AFFINEWCUBIC20261114](../../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) (proved); [G3AFFINEW20261114](../../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) (proved); [G3AFFINEWFINITE20261114](../../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md) (proved).
+
+Sources: [README.md](../../jacobian-followup/moment-vanishing-audit/README.md); [QUADRATIC_GAUSSIAN.md](../../jacobian-followup/moment-vanishing-audit/QUADRATIC_GAUSSIAN.md); [THREE_REAL_GMC_MINIMAL_FAILURES.md](../../archive/non-elliptic/extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md); [CUBIC_AFFINE_W_CLASSIFICATION.md](../../jacobian-followup/moment-vanishing-audit/CUBIC_AFFINE_W_CLASSIFICATION.md).
+
+## WORK-DC2-COCYCLE-TRANSPORT
+
+**Find a strong cocycle after combining transported and native correction spaces**
+
+**Disposition:** archived-programme. **Kind:** research. **Compute class:** new-compute.
+
+**Next step:** QRT1 completes the exact polynomial-shear transport and identifies the native correction X^12 Q^6 Z with period -1296 lambda. Compute a dual cocycle for the sum of the transported and native current correction spaces and the genuine compatible lower-lift scheme. The single added source direction does not repair the selected lower lift; do not infer a full lift from scalar cancellation.
+
+**Completion evidence:** An exact nonzero strong cocycle for the combined category, or a genuine enlarged-space lift satisfying every relevant equation with precise subsequent continuation scope.
+
+**Prerequisites and boundary:** Use QRT1 and its preserved exact input packet. Keep the affine higher-order shifts; no large campaign or missing-artifact reconstruction follows from this record.
+
+Authority: [QRT1](../../jacobian-followup/dixmier-residue-transport/PROOF.md) (proved); [QRF2](../../archive/non-elliptic/extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md) (proved); [DC2QB1](../../archive/non-elliptic/extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md) (proved).
+
+Sources: [PROOF.md](../../jacobian-followup/dixmier-residue-transport/PROOF.md); [RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md](../../archive/non-elliptic/extended-geometry/RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md).
 
 ## Partial-result register
 

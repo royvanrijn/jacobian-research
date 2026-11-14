@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "EXACT_MARKED_RING_IDENTITIES_COMPUTED",
+  "normalized_boundary": {
+    "B": [
+      "t",
+      "s**2"
+    ],
+    "E": [
+      "t**2-s**2",
+      "s**2*t"
+    ]
+  },
+  "old_generators": [
+    "(-Y + (-X**2*Y - 1)*(X**2*Y + 1))*(X**2*(X**2*Y + 1) + 1)**2",
+    "X*(-Y + (-X**2*Y - 1)*(X**2*Y + 1))*(X**2*(X**2*Y + 1) + 1)",
+    "(X**2*Y + 1)*(X**2*(X**2*Y + 1) + 1)",
+    "X*(X**2*Y + 1)"
+  ],
+  "old_generators_in_wright": [
+    "-2*A*D - B*D**2 - Y - (B + D**2 + 1)**2",
+    "-A - 2*B*D - D**3 - D",
+    "B + D**2 + 1",
+    "D"
+  ],
+  "wright_generators_in_old": [
+    "-F0 - F2**2 - F3**2*(F2 - F3**2 - 1) - F3*(-2*F1 - 2*F3**3 - 2*F3*(2*F2 - 2*F3**2 - 2) - 2*F3)",
+    "-F1 - F3**3 - F3*(2*F2 - 2*F3**2 - 2) - F3",
+    "F2 - F3**2 - 1",
+    "F3"
+  ],
+  "kernel_generators": [
+    "A**2 - B*Y",
+    "A*(B + 1) - D*Y",
+    "-A*D + B*(B + 1)"
+  ],
+  "kernel_groebner_basis": [
+    "A*D - B**2 - B",
+    "-A*B - A + D*Y",
+    "-A**2 + B*Y"
+  ],
+  "omitted_prime_generators": [
+    "Y",
+    "A",
+    "B+1"
+  ],
+  "wright_overlap": {
+    "X": "1/u",
+    "Y": "u**3*v-u**2",
+    "A": "u**2*v-u",
+    "B": "u*v-1",
+    "D": "v"
+  },
+  "omitted_valuations": {
+    "X": -1,
+    "Y": 2,
+    "A": 1,
+    "B": 0,
+    "D": 0
+  },
+  "assurance": {
+    "ring_identities_preserve_source_inclusion": true,
+    "source_boundary_reduced": true,
+    "finite_map_constructed": false,
+    "remaining_wright_problem_excluded": false
+  },
+  "source_sha256": "a712a11dc115c716526ed897aca8793669383feeeefc7bee3dbaa7a3cbccba7a"
+}

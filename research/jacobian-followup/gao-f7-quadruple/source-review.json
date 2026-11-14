@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-11-14",
+  "scope": "Primary arXiv version checks plus a restricted recent-literature search for Jacobian, Gao, tangent-sweep and fibre-classification developments. No exhaustive novelty or priority review.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.00222",
+      "latest_version": "v2",
+      "date": "2026-11-04",
+      "local_source": "../gao-f4-fibres/sources/source-tangent_sweeps_v3.tex",
+      "role": "F7 eliminant and simple-root reconstruction; known origin seven-point fibre."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.24889",
+      "latest_version": "v1",
+      "date": "2026-10-17",
+      "role": "Original user paper; no new theorem imported into this exceptional-chart calculation."
+    }
+  ],
+  "searches_2026_11_14": [
+    "Jacobian conjecture Gao Alpoge Gallagher Speyer November2026 fiber classification",
+    "site:arxiv.org/abs/2611 Jacobian conjecture",
+    "site:arxiv.org/abs/2610 Jacobian conjecture fibers"
+  ],
+  "additional_primary_source_checked": {
+    "url": "https://arxiv.org/abs/2609.05746",
+    "latest_version": "v1",
+    "date": "2026-09-04",
+    "authors": "Alexander Borisov, Ofer Gabber, Adrian Vasiu",
+    "transfer": "No theorem imported into this characteristic-zero F7 calculation."
+  },
+  "conclusion": "No newer imported result for the quadruple-root calculation was identified; the advances here use the retained exact F7 eliminant and a certified discriminant norm."
+}

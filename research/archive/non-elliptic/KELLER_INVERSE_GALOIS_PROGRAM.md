@@ -1,5 +1,14 @@
 # A Keller inverse-Galois program
 
+The [current symmetry theory](../../jacobian-followup/monodromy-theory/THEORY.md)
+adds fixed-sheet affine inertia, normal generation by point stabilizers,
+and absolute exclusions for all nontrivial nilpotent groups and even-degree
+natural dihedral actions. The [F11 audit](../../jacobian-followup/monodromy-theory/F11.md)
+gives a known rational natural PSL2(11) cover with admissible finite inertia,
+an explicit chart, and a separate arithmetic constant-field enlargement.
+The complete action spectrum and absolute proper-simple realization remain open.
+
+
 ## 1. The stretch beyond fiber transfer
 
 The
@@ -307,7 +316,7 @@ The systematic queue is:
 
 | stage | groups or actions | first model to audit | current repository state |
 |---:|---|---|---|
-| 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go; uniform dihedral ledger; canonical one-normal completion excluded in every degree |
+| 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | all nontrivial nilpotent and even-degree natural dihedral actions excluded absolutely by KMFI2; odd dihedral chart/completion frontier retained |
 | 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
 | 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart, a complete finite exceptional-color audit, and a rational connected \(q\)-conductor cover; the complete packet closure compresses to \(3D_d+D_q+D_r=\operatorname{div}(P_X)\), while the natural incidence algebra and its finite normalization fail the value-one gate; thirteen controlled-transform chart types supply primitive exceptional variables for every positive exceptional color and verify literal local \((3,1,1)\) cancellation; seven bivariate corner charts close the exceptional cusp and \(q\)-\(r\) intersections, and weighted Taylor--Cox charts now attach cusp \(E_4\) to strict \(r\), triple \(E_2\) to strict \(d\), and the \(q\)-\(r\) \(A\)-packet to strict \(q\); the \(q\)-node incidence is proved conductor-degenerate, the apparent positive triple \(E_1\)-\(E_2\) edge is deleted by root-center separation, and a compact residue product passes on the punctured conductor; the remaining strict-\(r\)/conductor attachments, global Cox ring, affine completion, and absolute descent remain open |
 | 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | natural projective-line and low-index subgroup torsors | the natural prime-triangle genus is explicit and gives \(0,1,0\) at \(q=7,11,13\); at \(q=11\), the degree-12 quotient is \(X_0(11)\), the two exceptional degree-11 \(A_5\)-coset actions form a Gassmann pair with Shabat and determinant-one chart outputs, their degree-5/6 correspondences normalize to genus 1/2, all residual masks are explicit in the normalization algebras, and a descended infinity imbalance obstructs uniform poles on three genus-two classes; boundary audits at \(7,13\), ambient polynomial assembly, and absolute descent are open |
@@ -325,7 +334,7 @@ The current concrete checkpoints are:
    actions.**](extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md)
    Every faithful transitive cyclic action is regular, so the Galois-case
    theorem excludes nontrivial cyclic absolute inverse monodromy altogether.
-   The natural degree-\(n\) dihedral action is nonregular.  Its Dickson
+   The natural degree-\(n\) dihedral action is nonregular; KMFI2 nevertheless excludes every even n.  Its Dickson
    incidence gives polynomial invariant rings, an exact discriminant and
    boundary-unit ledger, and a derivative-unit determinant-one chart.  The
    odd orientation cover has an \(A_{n-1}\) class-group obstruction, while

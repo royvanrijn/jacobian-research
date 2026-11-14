@@ -1,0 +1,212 @@
+{
+  "as_of": "2026-11-14",
+  "whole_generic_germ_unibranch_required": true,
+  "conjugate_formula": "I=sum (e_previous-e_next)*j",
+  "characteristic_exponent_bound": 33,
+  "exhaustive_degree8_polar33_chains": [
+    [
+      [
+        2,
+        2
+      ],
+      [
+        21,
+        1
+      ]
+    ]
+  ],
+  "forced_original_w_order": 2,
+  "critical_value_identity": "partial_c K=-phi_c^m",
+  "polar_identity": "I=N+l-2",
+  "unibranch_bound": "I<=(m/2+1)*l-2",
+  "local_companion_bound": "nu<=(3-m/2)*l-2-I(F,E)",
+  "all_height_exclusion_m_minimum": 6,
+  "polar33_required_N": 27,
+  "polar33_flow_order": 24,
+  "polar33_bound": 30,
+  "special33_control": {
+    "A": "-w**27 + (-w**4 + z)**2",
+    "special_parameterization": [
+      "t^2",
+      "t^8+t^27"
+    ],
+    "special_polar_order": 33,
+    "generic_total_polar": 30,
+    "generic_branch_polar_orders": [
+      15,
+      15
+    ],
+    "critical_value_first_c_terms": "-w^27-c*w^24",
+    "finite_map": false
+  },
+  "common_multiplicity4_Q_pole_lower_bound": 2,
+  "lower_bound_sharpness_proved": false,
+  "noncontact_partition_costs": [
+    {
+      "partition": [
+        7,
+        2
+      ],
+      "minimum_Q_pole_degree": 3,
+      "excluded": false
+    },
+    {
+      "partition": [
+        5,
+        4
+      ],
+      "minimum_Q_pole_degree": 3,
+      "excluded": false
+    },
+    {
+      "partition": [
+        4,
+        3,
+        2
+      ],
+      "minimum_Q_pole_degree": 5,
+      "excluded": true
+    }
+  ],
+  "excluded_noncontact_partitions": [
+    [
+      4,
+      3,
+      2
+    ]
+  ],
+  "excluded_contact3_away_type": [
+    4,
+    2
+  ],
+  "current_contact3_away_types": [
+    [
+      6
+    ]
+  ],
+  "remaining_noncontact_partitions": [
+    [
+      7,
+      2
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "current_contact_root_forms": [
+    {
+      "contact": 3,
+      "away_multiplicities": [
+        6
+      ],
+      "cube": true
+    },
+    {
+      "contact": 4,
+      "away_multiplicities": [
+        5
+      ],
+      "cube": false
+    },
+    {
+      "contact": 5,
+      "away_multiplicities": [
+        4
+      ],
+      "cube": false
+    },
+    {
+      "contact": 6,
+      "away_multiplicities": [
+        3
+      ],
+      "cube": true
+    },
+    {
+      "contact": 7,
+      "away_multiplicities": [
+        2
+      ],
+      "cube": false
+    },
+    {
+      "contact": 9,
+      "away_multiplicities": [],
+      "cube": true
+    }
+  ],
+  "current_pole69_frontier": [
+    {
+      "contacts": [
+        0
+      ],
+      "ordinary_degrees": [
+        96,
+        144
+      ]
+    },
+    {
+      "contacts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        80,
+        128
+      ]
+    },
+    {
+      "contacts": [
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        48,
+        128
+      ]
+    }
+  ],
+  "marked_two_root_leading_candidates_retained": 16,
+  "auxiliary_rational_parametrizations": [
+    {
+      "k": 2,
+      "u": -1,
+      "v": 2,
+      "base": "x=T^3",
+      "cover": "theta=T^2",
+      "field": "C(T)"
+    },
+    {
+      "k": 4,
+      "u": -1,
+      "v": 1,
+      "base": "x=T^3",
+      "cover": "theta=T^4",
+      "field": "C(T)"
+    },
+    {
+      "k": 5,
+      "u": -3,
+      "v": 2,
+      "base": "x=T^3",
+      "cover": "theta=T^5",
+      "field": "C(T)"
+    },
+    {
+      "k": 7,
+      "u": -2,
+      "v": 1,
+      "base": "x=T^3",
+      "cover": "theta=T^7",
+      "field": "C(T)"
+    }
+  ],
+  "all_current_auxiliary_components_rational": true,
+  "all_current_root_forms_pass_leading_period": true,
+  "actual_PQ_constructed": false
+}

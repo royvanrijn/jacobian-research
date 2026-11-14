@@ -1,0 +1,13 @@
+{
+  "branch": "delta-zero",
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 7.936072795011569,
+  "cap_seconds": 20,
+  "address_cap_GiB": 2,
+  "per_file_cap_MiB": 20,
+  "script_sha256": "a69bdc1e6f1920acb3ff9461b71a4b93cbf182b5e654ad9ba6202b3caebe59de",
+  "source_sha256": "26ed980c2c1756626a2bec3064a773a0d4d8e224e0eef691206713925b5b2ac8",
+  "theorem_exclusion": false,
+  "boundary": "Finite-field triage only. Both source branches retained. No rational identity or global theorem follows without literal characteristic-zero replay. No automatic prime or cap escalation follows this pilot."
+}

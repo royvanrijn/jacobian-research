@@ -1,0 +1,35 @@
+{
+  "status": "HENSEL_SEED_CANDIDATE",
+  "prime": 17,
+  "variables": [
+    "s",
+    "a",
+    "b"
+  ],
+  "point": [
+    0,
+    0,
+    0
+  ],
+  "jacobian_mod": 16,
+  "target_mod": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "quotient_coefficients_ascending_mod": [
+    16,
+    2,
+    0,
+    0,
+    15,
+    0,
+    0,
+    1
+  ],
+  "tested_points": 1,
+  "vanishing_candidates": 1,
+  "seconds": 0.5790245319949463,
+  "boundary": "Only a seed. Separate exact source, Jacobian, quotient and squarefreeness replay plus the written Hensel/algebraicity argument establish a characteristic-zero occurrence."
+}

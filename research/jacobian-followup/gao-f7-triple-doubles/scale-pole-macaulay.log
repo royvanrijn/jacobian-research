@@ -1,0 +1,14 @@
+{"bound": 12, "rows": 306, "columns": 118, "seconds": 0.019563067005947232}
+{"bound": 12, "rows": 306, "columns": 118, "seconds": 0.019563067005947232, "modular_rank": 118, "outcome": "no_identity_at_bound_mod_prime"}
+{"bound": 14, "rows": 501, "columns": 268, "seconds": 0.02860360700287856}
+{"bound": 14, "rows": 501, "columns": 268, "seconds": 0.02860360700287856, "modular_rank": 264, "outcome": "no_identity_at_bound_mod_prime"}
+{"bound": 16, "rows": 774, "columns": 540, "seconds": 0.05493843700969592}
+{"bound": 16, "rows": 774, "columns": 540, "seconds": 0.05493843700969592, "modular_rank": 518, "outcome": "no_identity_at_bound_mod_prime"}
+{"bound": 18, "rows": 1138, "columns": 991, "seconds": 0.1273859380162321}
+{"bound": 18, "rows": 1138, "columns": 991, "seconds": 0.1273859380162321, "modular_rank": 912, "outcome": "no_identity_at_bound_mod_prime"}
+{"bound": 20, "rows": 1614, "columns": 1681, "seconds": 0.32439213400357403}
+{"bound": 20, "rows": 1614, "columns": 1681, "seconds": 0.32439213400357403, "modular_rank": 1463, "outcome": "no_identity_at_bound_mod_prime"}
+{"bound": 22, "rows": 2226, "columns": 2691, "seconds": 0.8578003490110859}
+{"bound": 22, "rows": 2226, "columns": 2691, "seconds": 0.8578003490110859, "modular_rank": 2114, "support": 2003}
+{"stage": "exact_solve", "dimension": 2003, "seconds": 2.9325917420210317}
+{"bound": 22, "rows": 2226, "columns": 2691, "seconds": 0.8578003490110859, "modular_rank": 2114, "support": 2003, "outcome": "EXACT_LITERAL_IDENTITY_PASS", "multiplier_terms": 2003}

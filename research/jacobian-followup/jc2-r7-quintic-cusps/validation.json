@@ -1,0 +1,23 @@
+{
+  "schema": "r7-quintic-cusps-validation-v1",
+  "checks": [
+    "new claims and index schema/source/dependency checks; unrelated consumers/narrowing edges and listed checker mismatches excluded in memory only",
+    "both affected lessons: schema, sources and reviewed scope fingerprints",
+    "both affected work items: current fingerprints, unique claims/live sources and all previous omitted-prime constraints retained",
+    "42 exact checks and every input/output hash current in jc2-r7-quintic-cusps",
+    "58 exact checks and every input/output hash current in jc2-r7-quintic-incidence",
+    "both new Python modules compile",
+    "discovery outputs preserved with hashes; inconclusive101 reduction retained without deleting parameter roots",
+    "new Markdown whitespace and local links",
+    "all26 generated status/navigation files regenerated from current authority"
+  ],
+  "known_global_failures": [
+    "full mathematical index: KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "full work ledger: duplicate primary work target"
+  ],
+  "assurance": "Author-side complete-locus/metadata checks; no formalization or independent external review.",
+  "unrelated_hash_mismatches_excluded_in_memory": [],
+  "receipt_sha256": "7e3fb91fbf0823d8e9220b79525310d6a5a76c2f6477c97f0cfe5a5678623309",
+  "passed": true,
+  "rendered_navigation_files": 26
+}

@@ -1,0 +1,444 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT4",
+  "complete_marked_root_line": [
+    {
+      "condition": "b*Delta*C3*C24 != 0",
+      "value_count": "open",
+      "normal_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "omitted_lengths": [],
+      "raw_discriminant_order": 0,
+      "normalized_different_order": 0,
+      "order_index": 0,
+      "leading_order": 0,
+      "distinct_finite_T_values": 8,
+      "ramifies": false,
+      "omitted": false
+    },
+    {
+      "condition": "b=0",
+      "value_count": 1,
+      "normal_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "omitted_lengths": [
+        1
+      ],
+      "raw_discriminant_order": 0,
+      "normalized_different_order": 0,
+      "order_index": 0,
+      "leading_order": 1,
+      "omitted_rows": [
+        {
+          "e": 1,
+          "f": 1,
+          "pole_order": 1,
+          "ramifies": false
+        }
+      ],
+      "distinct_finite_T_values": 7,
+      "ramifies": false,
+      "omitted": true
+    },
+    {
+      "condition": "Delta=0",
+      "value_count": 3,
+      "normal_lengths": [
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_lengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "omitted_lengths": [
+        4
+      ],
+      "raw_discriminant_order": 3,
+      "normalized_different_order": 3,
+      "order_index": 0,
+      "leading_order": 1,
+      "omitted_rows": [
+        {
+          "e": 4,
+          "f": 1,
+          "pole_order": 1,
+          "ramifies": true
+        }
+      ],
+      "distinct_finite_T_values": 4,
+      "ramifies": true,
+      "omitted": true
+    },
+    {
+      "condition": "C3*C24=0",
+      "value_count": 27,
+      "normal_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "omitted_lengths": [],
+      "raw_discriminant_order": 2,
+      "normalized_different_order": 0,
+      "order_index": 1,
+      "leading_order": 0,
+      "conductor_exponents": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "distinct_finite_T_values": 7,
+      "ramifies": false,
+      "omitted": false
+    }
+  ],
+  "line_Euler": {
+    "normal": -1,
+    "source": -5,
+    "ramification_only_wrong_source": -4,
+    "pure_index_values": 27,
+    "pure_index_source_deficit": 0
+  },
+  "r7_hypotheses": "degree6, entire single ramified prime e2,f1, immersed (6,10) gap21 image C",
+  "r7_generic_image_groupings": [
+    {
+      "unramified_primes_over_C": 0,
+      "other_image_groups": [
+        3
+      ],
+      "ramified_prime": {
+        "e": 2,
+        "f": 1,
+        "omitted": true
+      },
+      "unramified_prime_count": 3,
+      "unramified_prime_e": 1,
+      "unramified_prime_f": 1,
+      "degree_mod_C": 4,
+      "degree_mod_other_images": [
+        3
+      ],
+      "generic_omitted_length_C": 2,
+      "generic_omitted_lengths_other_images": [
+        3
+      ],
+      "raw_discriminant_min_C": 1,
+      "raw_discriminant_min_other_images": [
+        6
+      ],
+      "inverse_order_index_min_C": 0,
+      "inverse_order_index_min_other_images": [
+        3
+      ],
+      "leading_min_C": 1,
+      "leading_min_other_images": [
+        3
+      ],
+      "off_branch_singleton_branch_counts": [],
+      "off_branch_singleton_integer_compatible": false,
+      "nonproper_target_component_count": 2
+    },
+    {
+      "unramified_primes_over_C": 0,
+      "other_image_groups": [
+        2,
+        1
+      ],
+      "ramified_prime": {
+        "e": 2,
+        "f": 1,
+        "omitted": true
+      },
+      "unramified_prime_count": 3,
+      "unramified_prime_e": 1,
+      "unramified_prime_f": 1,
+      "degree_mod_C": 4,
+      "degree_mod_other_images": [
+        4,
+        5
+      ],
+      "generic_omitted_length_C": 2,
+      "generic_omitted_lengths_other_images": [
+        2,
+        1
+      ],
+      "raw_discriminant_min_C": 1,
+      "raw_discriminant_min_other_images": [
+        2,
+        0
+      ],
+      "inverse_order_index_min_C": 0,
+      "inverse_order_index_min_other_images": [
+        1,
+        0
+      ],
+      "leading_min_C": 1,
+      "leading_min_other_images": [
+        2,
+        1
+      ],
+      "off_branch_singleton_branch_counts": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "off_branch_singleton_integer_compatible": true,
+      "nonproper_target_component_count": 3
+    },
+    {
+      "unramified_primes_over_C": 0,
+      "other_image_groups": [
+        1,
+        1,
+        1
+      ],
+      "ramified_prime": {
+        "e": 2,
+        "f": 1,
+        "omitted": true
+      },
+      "unramified_prime_count": 3,
+      "unramified_prime_e": 1,
+      "unramified_prime_f": 1,
+      "degree_mod_C": 4,
+      "degree_mod_other_images": [
+        5,
+        5,
+        5
+      ],
+      "generic_omitted_length_C": 2,
+      "generic_omitted_lengths_other_images": [
+        1,
+        1,
+        1
+      ],
+      "raw_discriminant_min_C": 1,
+      "raw_discriminant_min_other_images": [
+        0,
+        0,
+        0
+      ],
+      "inverse_order_index_min_C": 0,
+      "inverse_order_index_min_other_images": [
+        0,
+        0,
+        0
+      ],
+      "leading_min_C": 1,
+      "leading_min_other_images": [
+        1,
+        1,
+        1
+      ],
+      "off_branch_singleton_branch_counts": [
+        [
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "off_branch_singleton_integer_compatible": true,
+      "nonproper_target_component_count": 4
+    },
+    {
+      "unramified_primes_over_C": 1,
+      "other_image_groups": [
+        2
+      ],
+      "ramified_prime": {
+        "e": 2,
+        "f": 1,
+        "omitted": true
+      },
+      "unramified_prime_count": 3,
+      "unramified_prime_e": 1,
+      "unramified_prime_f": 1,
+      "degree_mod_C": 3,
+      "degree_mod_other_images": [
+        4
+      ],
+      "generic_omitted_length_C": 3,
+      "generic_omitted_lengths_other_images": [
+        2
+      ],
+      "raw_discriminant_min_C": 3,
+      "raw_discriminant_min_other_images": [
+        2
+      ],
+      "inverse_order_index_min_C": 1,
+      "inverse_order_index_min_other_images": [
+        1
+      ],
+      "leading_min_C": 2,
+      "leading_min_other_images": [
+        2
+      ],
+      "off_branch_singleton_branch_counts": [],
+      "off_branch_singleton_integer_compatible": false,
+      "nonproper_target_component_count": 2
+    },
+    {
+      "unramified_primes_over_C": 1,
+      "other_image_groups": [
+        1,
+        1
+      ],
+      "ramified_prime": {
+        "e": 2,
+        "f": 1,
+        "omitted": true
+      },
+      "unramified_prime_count": 3,
+      "unramified_prime_e": 1,
+      "unramified_prime_f": 1,
+      "degree_mod_C": 3,
+      "degree_mod_other_images": [
+        5,
+        5
+      ],
+      "generic_omitted_length_C": 3,
+      "generic_omitted_lengths_other_images": [
+        1,
+        1
+      ],
+      "raw_discriminant_min_C": 3,
+      "raw_discriminant_min_other_images": [
+        0,
+        0
+      ],
+      "inverse_order_index_min_C": 1,
+      "inverse_order_index_min_other_images": [
+        0,
+        0
+      ],
+      "leading_min_C": 2,
+      "leading_min_other_images": [
+        1,
+        1
+      ],
+      "off_branch_singleton_branch_counts": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "off_branch_singleton_integer_compatible": true,
+      "nonproper_target_component_count": 3
+    }
+  ],
+  "singleton_refinement_requires": "a reduced singleton source fibre at zero and finite normalization etale over zero; in the single-ramification case zero outside C",
+  "singleton_degree6_jets": {
+    "coefficient_min_orders_a2_to_a6": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "raw_discriminant_min_order": 20,
+    "normalized_discriminant_unit": true,
+    "polynomial_index_factor_min_order_under_single_e2f1_hypothesis": 10
+  },
+  "global_images_determined": false,
+  "individual_exceptional_Keller_algebras_determined": false,
+  "singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

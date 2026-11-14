@@ -1,0 +1,256 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 85,
+  "checks": [
+    "first truncated-power exterior identity",
+    "pole-seven integration with arbitrary symbols",
+    "G5 exterior coefficient (T, X)",
+    "G5 exterior coefficient (T, Y)",
+    "G5 exterior coefficient (X, Y)",
+    "G4 exterior coefficient (T, X)",
+    "G4 exterior coefficient (T, Y)",
+    "G4 exterior coefficient (X, Y)",
+    "pole-six integration with arbitrary symbols",
+    "proportional-branch pole-five integration",
+    "local Weierstrass degree triple_h1_j0",
+    "generic discriminant pole degree triple_h1_j0",
+    "local Weierstrass degree triple_h1_j1",
+    "generic discriminant pole degree triple_h1_j1",
+    "local Weierstrass degree triple_h1_j2",
+    "generic discriminant pole degree triple_h1_j2",
+    "local Weierstrass degree triple_h1_j3",
+    "generic discriminant pole degree triple_h1_j3",
+    "local Weierstrass degree triple_h2_j0",
+    "generic discriminant pole degree triple_h2_j0",
+    "local Weierstrass degree triple_h2_j1",
+    "generic discriminant pole degree triple_h2_j1",
+    "local Weierstrass degree triple_h2_j2",
+    "generic discriminant pole degree triple_h2_j2",
+    "local Weierstrass degree triple_h2_j3",
+    "generic discriminant pole degree triple_h2_j3",
+    "local Weierstrass degree triple_h2_j4",
+    "generic discriminant pole degree triple_h2_j4",
+    "local Weierstrass degree triple_h2_j1_coalescent_gap1",
+    "generic discriminant pole degree triple_h2_j1_coalescent_gap1",
+    "local Weierstrass degree triple_h2_j1_coalescent_gap2",
+    "generic discriminant pole degree triple_h2_j1_coalescent_gap2",
+    "local Weierstrass degree triple_h2_j1_coalescent_gap3",
+    "generic discriminant pole degree triple_h2_j1_coalescent_gap3",
+    "local Weierstrass degree proportional_mixed_double",
+    "generic discriminant pole degree proportional_mixed_double",
+    "local Weierstrass degree proportional_simple",
+    "generic discriminant pole degree proportional_simple",
+    "local Weierstrass degree proportional_triple",
+    "generic discriminant pole degree proportional_triple",
+    "local Weierstrass degree mixed_double_nondegenerate",
+    "generic discriminant pole degree mixed_double_nondegenerate",
+    "local Weierstrass degree mixed_simple_b_unit",
+    "generic discriminant pole degree mixed_simple_b_unit",
+    "local Weierstrass degree mixed_simple_b_zero",
+    "generic discriminant pole degree mixed_simple_b_zero",
+    "local Weierstrass degree exceptional_a2_triple_b_unit",
+    "generic discriminant pole degree exceptional_a2_triple_b_unit",
+    "local Weierstrass degree exceptional_a2_triple_b_zero",
+    "generic discriminant pole degree exceptional_a2_triple_b_zero",
+    "contact pole bound exceptional_double",
+    "contact pole bound exceptional_triple",
+    "contact pole bound triple_h1",
+    "contact pole bound triple_h2_j0",
+    "contact pole bound triple_h2_j1_low",
+    "contact pole bound triple_h2_jge2",
+    "contact pole bound mixed_double",
+    "contact pole bound mixed_simple_unit",
+    "contact pole bound mixed_simple_zero",
+    "contact pole bound proportional_mixed_low",
+    "contact pole bound proportional_simple",
+    "proportional triple contact leaves degree three",
+    "mixed away degree exceeds four",
+    "coalescent triple lower bound exceeds four",
+    "meromorphic derivative residue",
+    "literal separation identity",
+    "quadratic coefficient is nonzero on f",
+    "collision value is not a root",
+    "producer source hash",
+    "all three marked charts retained",
+    "pole six cancels double_at_marked",
+    "full F5 table independently reproduced double_at_marked",
+    "marked-chart functional double_at_marked",
+    "stored functional double_at_marked",
+    "localized collision exclusion double_at_marked",
+    "pole six cancels simple_at_marked",
+    "full F5 table independently reproduced simple_at_marked",
+    "marked-chart functional simple_at_marked",
+    "stored functional simple_at_marked",
+    "localized collision exclusion simple_at_marked",
+    "pole six cancels neither_at_marked",
+    "full F5 table independently reproduced neither_at_marked",
+    "marked-chart functional neither_at_marked",
+    "stored functional neither_at_marked",
+    "localized collision exclusion neither_at_marked"
+  ],
+  "local_discriminant_models": [
+    {
+      "name": "triple_h1_j0",
+      "discriminant_order": 8,
+      "local_degree": 2,
+      "pole_total": 6
+    },
+    {
+      "name": "triple_h1_j1",
+      "discriminant_order": 10,
+      "local_degree": 3,
+      "pole_total": 7
+    },
+    {
+      "name": "triple_h1_j2",
+      "discriminant_order": 12,
+      "local_degree": 3,
+      "pole_total": 9
+    },
+    {
+      "name": "triple_h1_j3",
+      "discriminant_order": 12,
+      "local_degree": 3,
+      "pole_total": 9
+    },
+    {
+      "name": "triple_h2_j0",
+      "discriminant_order": 9,
+      "local_degree": 2,
+      "pole_total": 7
+    },
+    {
+      "name": "triple_h2_j1",
+      "discriminant_order": 12,
+      "local_degree": 3,
+      "pole_total": 9
+    },
+    {
+      "name": "triple_h2_j2",
+      "discriminant_order": 14,
+      "local_degree": 3,
+      "pole_total": 11
+    },
+    {
+      "name": "triple_h2_j3",
+      "discriminant_order": 15,
+      "local_degree": 3,
+      "pole_total": 12
+    },
+    {
+      "name": "triple_h2_j4",
+      "discriminant_order": 15,
+      "local_degree": 3,
+      "pole_total": 12
+    },
+    {
+      "name": "triple_h2_j1_coalescent_gap1",
+      "discriminant_order": 13,
+      "local_degree": 3,
+      "pole_total": 10
+    },
+    {
+      "name": "triple_h2_j1_coalescent_gap2",
+      "discriminant_order": 14,
+      "local_degree": 3,
+      "pole_total": 11
+    },
+    {
+      "name": "triple_h2_j1_coalescent_gap3",
+      "discriminant_order": 15,
+      "local_degree": 3,
+      "pole_total": 12
+    },
+    {
+      "name": "proportional_mixed_double",
+      "discriminant_order": 9,
+      "local_degree": 3,
+      "pole_total": 6
+    },
+    {
+      "name": "proportional_simple",
+      "discriminant_order": 6,
+      "local_degree": 3,
+      "pole_total": 3
+    },
+    {
+      "name": "proportional_triple",
+      "discriminant_order": 15,
+      "local_degree": 3,
+      "pole_total": 12
+    },
+    {
+      "name": "mixed_double_nondegenerate",
+      "discriminant_order": 6,
+      "local_degree": 2,
+      "pole_total": 4
+    },
+    {
+      "name": "mixed_simple_b_unit",
+      "discriminant_order": 3,
+      "local_degree": 2,
+      "pole_total": 1
+    },
+    {
+      "name": "mixed_simple_b_zero",
+      "discriminant_order": 6,
+      "local_degree": 3,
+      "pole_total": 3
+    },
+    {
+      "name": "exceptional_a2_triple_b_unit",
+      "discriminant_order": 4,
+      "local_degree": 2,
+      "pole_total": 2
+    },
+    {
+      "name": "exceptional_a2_triple_b_zero",
+      "discriminant_order": 6,
+      "local_degree": 3,
+      "pole_total": 3
+    }
+  ],
+  "mixed_chart_count": 3,
+  "necessary_mixed_relation": "3*delta**2 - 3*delta + 1",
+  "collision_value": "3/4",
+  "collision_relation_value": "7/16",
+  "written_result": "Complete compatible quartic pole-(3,5) exclusion",
+  "first_open_height_five_pairs": [],
+  "subsequent_height_seven_exclusion": "PF2RULED7 (external degree input; separate proof and receipt)",
+  "subsequent_all_height_pole_three_exclusion": "PF2RULED8 (separate intrinsic proof and receipt)",
+  "frontier_superseded_by": "PF2RULED16",
+  "frontier_handoff_scope": "historical pre-PF2RULED16; this receipt does not prove the current frontier",
+  "first_open_reduced_pairs": [
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "frontier_adoption": "PF2RULED12; subsequent handoff, outside this checker intrinsic proof coverage",
+  "assurance": {
+    "full_pole_three_five_exclusion": "written proof plus exact controls",
+    "complete_pole_height_five_excluded": false,
+    "assurance_scope": "this checker covers (3,5); full heights<=7 use PF2RULED7 and its separate external input",
+    "actual_ruled_compatibility_proved": false,
+    "quartic_packets_excluded": false,
+    "higher_poles_excluded": false,
+    "generic_fibre_geometry_formally_certified": false,
+    "independent_full_reproof": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "source_sha256": {
+    "verify_pole35.py": "a80c03c57ef32d47c6f2354c4355dab37fa7b345f4b48db3d819be7330ad06c1",
+    "POLE_THREE_FIVE_EXCLUSION.md": "acc0b1c51d6170ab687889fe1b5d3fa9a810818fe3b0cae6b45beec388d2c490",
+    "explore_pole35_repeated_root.py": "b1dd01f4600f740b4c11b321040af32e083c9351cdfef804ed9653170b44063c",
+    "pole35_repeated_root_equations.json": "593a2a34c4c47d7983e29f890b5a773a34e503063340236a63469f6d9452b39b"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 2.429172
+}

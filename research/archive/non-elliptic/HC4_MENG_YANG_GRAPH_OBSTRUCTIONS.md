@@ -1,5 +1,43 @@
 # Affine and polynomial-graph obstructions for the Meng--Yang `HC(5)` family
 
+> **13 November 2026 update:** the [all-degree polynomial-graph theorem](../../jacobian-followup/hc4-polynomial-graphs/README.md)
+> (`HC4MYGAP1`, `HC4MYGALL1`) closes the complete standard graph
+> collision route in every degree. A fixed-slice and polynomial-degree
+> obstruction excludes every cotangent plane; the reproduced Tang theorem
+> then makes every unit-Hessian graph gradient invertible. The stronger
+> unmarked bounded-degree determinant exclusions below remain preserved.
+> Unmarked unit-Hessian graph existence, arbitrary nonlinear parameterizations,
+> other graph charts and mixed/coisotropic reductions are separate.
+>
+> The [dual-substitution extension](../../jacobian-followup/hc4-triangular-graphs/README.md)
+> (`HC4MYGT1`, `HC4MYGT2`) also closes one triangular dual change in
+> either order with arbitrary base-dependent coefficients, and every
+> base-independent plane Keller dual substitution. Longer base-dependent
+> alternating words and nonlinear base changes require a new argument.
+>
+> **14 November 2026:** the [two-divisor extension](../../jacobian-followup/hc4-triangular-graphs/TWO_DIVISOR_EXTENSION.md)
+> (`HC4MYGD1`, `HC4MYGD2`) closes arbitrary corrections divisible by
+> \(x(1+xy)\) to any base-independent plane Keller substitution, including
+> arbitrarily long base-dependent alternating shears preserving both traces.
+> Unrestricted words must pass its explicit second-trace square equation;
+> a necessary boundary survivor does not establish a full affine fibre plane.
+>
+> The later [first-slice theorem](../../jacobian-followup/hc4-triangular-graphs/FIRST_SLICE_INVERTIBILITY.md)
+> (`HC4MYGF1/2`) removes the second-trace condition for gradient invertibility:
+> arbitrary corrections divisible by x are covered whenever the first dual
+> trace is a base-independent Keller pair. A surviving plane is triangular.
+> With a y-dependent Keller first trace, arbitrary polynomial substitutions
+> already encode every plane Keller cotangent lift (`HC4MYGF3`); that encoding
+> has nonconstant full dual Jacobian and does not close the genuine
+> dual-automorphism or embedded-graph mechanisms.
+>
+> The [automorphic-trace theorem](../../jacobian-followup/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md)
+> (`HC4MYGV0/1/2`) now closes **every** base-preserving polynomial dual
+> automorphism, including genuinely y-dependent traces and arbitrary words.
+> Its plane classification combines the generic-coordinate trace with a
+> Hamiltonian pencil and the classical Rentschler criterion. Nonlinear base
+> changes, other graph charts and uncovered embeddings remain separate.
+
 ## Status
 
 No `HC(4)` counterexample is constructed here.  This note proves the

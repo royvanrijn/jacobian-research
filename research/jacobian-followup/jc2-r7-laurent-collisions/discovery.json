@@ -1,0 +1,362 @@
+{
+  "scope": "Optional preserved discovery traces; default replay depends only on the manifest certificates and canonical code.",
+  "records": [
+    {
+      "original": "triple_exception_zminus_third.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exception_zminus_third.sing",
+      "bytes": 1340,
+      "sha256": "af01ebbac25be172c11c351a1d713c28787a4022cda5376628065c40b58a1b14",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_lex.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_lex.log",
+      "bytes": 23953,
+      "sha256": "d0d16388426c1f2d8bb5fe6bc4a9ccf3d36c72d3ef4309283d7dd627a13ac586",
+      "proof_premise": false
+    },
+    {
+      "original": "tangent_gcd.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/tangent_gcd.log",
+      "bytes": 1063975,
+      "sha256": "6ee2d39cfb27b960aaf743731d8d0a83a3f335914e8504e066b40bcb8df1e879",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_clear_weighted_unit.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_clear_weighted_unit.log",
+      "bytes": 3388969,
+      "sha256": "1d1c5f62a032377cad86ae4b3e6e103337e6476dc5feb8484daaa5785a41c198",
+      "proof_premise": false
+    },
+    {
+      "original": "scaled_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/scaled_discovery.json",
+      "bytes": 5449,
+      "sha256": "f97672cb12e23346fd74484bce935a271b48c4ac381d6fb69f824a79ff17f426",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_exceptional_membership.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exceptional_membership.sing",
+      "bytes": 148700,
+      "sha256": "6f0e47cf428185a15f109caeb8bfddd5f105619dfb18d22df6b4850368457079",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_generic_unit.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_generic_unit.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "proof_premise": false
+    },
+    {
+      "original": "necessary_reduced_certificate.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/necessary_reduced_certificate.json",
+      "bytes": 3655949,
+      "sha256": "16c76abd3b1f3bfdff0538913284377c1e3522ad2490ca87b213d0b2ffd89363",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_generic_field.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_generic_field.sing",
+      "bytes": 3213,
+      "sha256": "ee7f6f0010bcaa281e322f8c1ee5a9c77a2937dafcd4b2c4dc9bb3d41e34b6f2",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_S0_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_S0_discovery.json",
+      "bytes": 992,
+      "sha256": "4103308dcf955b85c3079e5600da0563152071804eb8d99cf5d284001ff066d4",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_weighted_unit.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_weighted_unit.log",
+      "bytes": 6419970,
+      "sha256": "cf9b1f74a81da0397c585996044377cead08523d5dc3217aa5f69a900d57933b",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_irreducibility_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_irreducibility_discovery.json",
+      "bytes": 8268,
+      "sha256": "eeb6b55f6724e25c405056d8903890918a2412efdadb2570b2e5abb95a6e8991",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_clear_factors.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_clear_factors.json",
+      "bytes": 71317,
+      "sha256": "280cad8841926aa06ddd03e1d8e025dd115875f5adb35f46f937b009608f2d40",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_weighted_factors.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_weighted_factors.json",
+      "bytes": 39433,
+      "sha256": "5ae27ac58868588c621ee0d14d8150d8e96c3afdbbaa1b388b127258f3e33b38",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_necessary_power.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_necessary_power.log",
+      "bytes": 18,
+      "sha256": "3a4350db0623ff377373431929090ee4819a15ece5a06ddabe14b51cb797d3d6",
+      "proof_premise": false
+    },
+    {
+      "original": "projection_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/projection_discovery.json",
+      "bytes": 3647,
+      "sha256": "7cc5550953101903d85fad38a7e791c19b6f32cccb897a385af3f2dd0eb8b36f",
+      "proof_premise": false
+    },
+    {
+      "original": "necessary_weighted_certificate.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/necessary_weighted_certificate.json",
+      "bytes": 3850815,
+      "sha256": "285ac2a020b65103f25b4e6bb51fe979ba84ee352e83519b6aee5b1f6ca593e3",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_exception_zminus_third.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exception_zminus_third.log",
+      "bytes": 30758,
+      "sha256": "d9b0dd48629c242404869ae8e35d955f3814b50ac898d7fe0a7d140dc1335bec",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_reduced.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_reduced.sing",
+      "bytes": 4987,
+      "sha256": "735acaa968c2f8b7304a0acd91f62481d1511a0fff6b9910571a55e3e9411b21",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_necessary_power.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_necessary_power.sing",
+      "bytes": 6968,
+      "sha256": "233d34dcd728ec33bfeb777fda1664fd53d972f38d04ba429c03761855676416",
+      "proof_premise": false
+    },
+    {
+      "original": "projection_gcd.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/projection_gcd.sing",
+      "bytes": 2306,
+      "sha256": "338e1c3392544bae2c1d7880a3675d45ba6b8f8e9e1175f9e99001ee070cbf3c",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_generic_unit.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_generic_unit.sing",
+      "bytes": 3228,
+      "sha256": "a320e6b89d0ba57b96d98e65bed4dbc06d2d1b32d51bfbf37fbfafcb2c7ed43d",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_exceptional_membership.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exceptional_membership.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_integral_input.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_integral_input.json",
+      "bytes": 5520,
+      "sha256": "947f6916da233def486fc2a769ade06deec3d9818b49c0f7ce5d114b2352a6aa",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_immersed.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_immersed.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "proof_premise": false
+    },
+    {
+      "original": "tangent_gcd.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/tangent_gcd.sing",
+      "bytes": 2337,
+      "sha256": "f4df61fd4ca3edf37501f454360ef4a53893277e1c6c49fb699437eb01a1ba26",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_lex.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_lex.sing",
+      "bytes": 40665,
+      "sha256": "ef6735b2774343c6dab5d597c89337af4dd8641ed87906f62c6a4229fe0251ff",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_clear_unit.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_clear_unit.log",
+      "bytes": 3191885,
+      "sha256": "cc5754e38148246f8629796b561a3c9c62bb8888f0d37784595d88699c85f36f",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_generic_field.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_generic_field.log",
+      "bytes": 14,
+      "sha256": "97d4cba622e1384e4cc7a15faaa58d2a08ebf536733b62d2aed9a076e17ce6dc",
+      "proof_premise": false
+    },
+    {
+      "original": "zero_sum_gcd.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/zero_sum_gcd.log",
+      "bytes": 4584,
+      "sha256": "726856a050151f62587849a9fed4cae32df777ef9ca4ebe8383dd38849e2d9cc",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_complete.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_complete.log",
+      "bytes": 38564,
+      "sha256": "fa6c7d9e56ca1ed5438134b2d3eca89c9b41a662a991bc26b89a7810e2797cae",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_reduced_field_unit.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_reduced_field_unit.log",
+      "bytes": 4792210,
+      "sha256": "ce32c223bce8f1191fed68757a8e1f8c28d4da2dff9cbd4bdd77ca06d8afdd42",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_input.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_input.json",
+      "bytes": 3394,
+      "sha256": "e628c5123367220ef01cf09acfd7cc58e44939fff77ddda3fe9051d3e0da68d8",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_reduced_input.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_reduced_input.json",
+      "bytes": 5690,
+      "sha256": "010dbab9e6fc8736df62fbb92e04d71841ad17d11ee8be38212664cb9e99bfdb",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_membership_probe.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_membership_probe.log",
+      "bytes": 7731,
+      "sha256": "1be3dab58ab09288bd51a131af22e2722e3b5a0d37e3049e57fd482bfb5bd7e6",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_membership_probe.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_membership_probe.sing",
+      "bytes": 5363,
+      "sha256": "29278ccd0e82e7544e4577327834d175b586959bc7f4d99521d09938c3888e8d",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_integral.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_integral.sing",
+      "bytes": 5259,
+      "sha256": "36eae3e7749bb4260917c0709c7e3e99f603e7714d8a8d3366bcc4db10f932ee",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_exceptional_field.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exceptional_field.sing",
+      "bytes": 4839,
+      "sha256": "c854cd3f9e7ed3d8567276bf9f659c7f616d18236317c2815cd76eb6141b525c",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_clear_weighted_unit.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_clear_weighted_unit.sing",
+      "bytes": 6420197,
+      "sha256": "4291f176de40de65450fb059ec59f812d99bf9cfe97ccce19ce0135592fbf2b7",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_clear_unit.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_clear_unit.sing",
+      "bytes": 4792407,
+      "sha256": "b8b4585ee93442cc46316f671035f93eb0986e2b697e0d9a33313a66231f9e22",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_weighted_unit.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_weighted_unit.sing",
+      "bytes": 3235,
+      "sha256": "aad1a6dd2eff52cc3444746d90d127b5349934395af8479298c571206e207897",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_complete.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_complete.sing",
+      "bytes": 5329,
+      "sha256": "d81aaf645e8d9b8c0aea220ed1d53b26f1c8f0d198303d382ba1821a71cbb69e",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_immersed.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_immersed.sing",
+      "bytes": 3266,
+      "sha256": "3c3503f9b8c4c14bbb1453f3f45f90ac7af957d7cdfdb70b5e428256ae1f93c0",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_reduced.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_reduced.log",
+      "bytes": 1164,
+      "sha256": "fd356673c7eff2a1e792608f7d192e66c831430dbaf78340e5a98a91fc1271f5",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_exceptional_field.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_exceptional_field.log",
+      "bytes": 399860,
+      "sha256": "a5b5621734535b232c73b9816e489c5ec79fc8c7dd26170bb1812762ee41b91d",
+      "proof_premise": false
+    },
+    {
+      "original": "projection_gcd.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/projection_gcd.log",
+      "bytes": 741176,
+      "sha256": "4e66e08427d737ed3912c9aee52a280405d78b0f5975ea2a42368c5676d8a6ab",
+      "proof_premise": false
+    },
+    {
+      "original": "zero_sum_gcd.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/zero_sum_gcd.sing",
+      "bytes": 1150,
+      "sha256": "726f568bf45505b00b1db97b2fc8f01406a418aee12a1b4faca0d23a217ddbf6",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_lex_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_lex_discovery.json",
+      "bytes": 84009,
+      "sha256": "6397eebf7b60af56b26907393cfc83205f9d9690724ef1feff78a36d5845f7f0",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_reduced_field_unit.sing",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_reduced_field_unit.sing",
+      "bytes": 5324,
+      "sha256": "13e8596ef2f0564e65c36d7c903ca844a2de09f7667ee59f9bfcd245a3bfd53d",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_rank_discovery.json",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_rank_discovery.json",
+      "bytes": 42402,
+      "sha256": "fbae6bcfde9f66c17da823568ce837a54bb2f520f08204a3fc563ccbe4b508b9",
+      "proof_premise": false
+    },
+    {
+      "original": "triple_integral.log",
+      "retained": "artifacts/local/jc2-r7-laurent-collisions-discovery/triple_integral.log",
+      "bytes": 1785,
+      "sha256": "70b3a062f139ec78c36a8090dc66b4c74ba15d6e3c8f18b2f277deafa188b8e8",
+      "proof_premise": false
+    }
+  ]
+}

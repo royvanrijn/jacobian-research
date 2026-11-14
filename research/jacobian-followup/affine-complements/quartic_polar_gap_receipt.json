@@ -1,0 +1,186 @@
+{
+  "higher_polar_profiles_superseded_by": "PF2RULED21",
+  "noncontact_partition_frontier_superseded_by": "PF2RULED21",
+  "profile_scope": "PF2RULED20 necessary data before PF2RULED21",
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 76,
+  "checks": [
+    "universal right-normalization first-order step",
+    "right-normalization error is at least quadratic",
+    "all-order z-adic error margin",
+    "complete c coefficient 0",
+    "complete c coefficient 1",
+    "complete c coefficient 2",
+    "complete c coefficient 3",
+    "generic discriminant upper order18 coefficient is fixed",
+    "c1 bracket after c2 constraint",
+    "p1 q1: p*q2 is uniquely leading in c1 bracket",
+    "p1 q1 cannot meet c1 order11",
+    "p1 q>=2: p4 is uniquely leading in c1 bracket",
+    "p1 q2 cannot meet c1 order11",
+    "p2 q1: p*q2 is uniquely leading in c1 bracket",
+    "p2 q2: p*q2 is uniquely leading in c1 bracket",
+    "p2 q1 cannot meet c1 order11",
+    "p2 q>=4: p4 is uniquely leading in c1 bracket",
+    "p2 q4 cannot meet c1 order11",
+    "order-two cancellation has exact nonzero constant-coefficient certificate",
+    "order-two certificate is nonzero on its required unit locus",
+    "q low order uniquely leads D0 1",
+    "q low order uniquely leads D0 2",
+    "q low order uniquely leads D0 3",
+    "r order5 uniquely leads D0 after q>=4",
+    "q order4 uniquely leads D0 after r>=6",
+    "complete forced-cone monomial bound (4, 0, 1, 0, 0)",
+    "complete forced-cone monomial bound (4, 0, 0, 6, 1)",
+    "complete forced-cone monomial bound (3, 2, 0, 0, 0)",
+    "complete forced-cone monomial bound (2, 0, 2, 0, 0)",
+    "complete forced-cone monomial bound (2, 0, 1, 6, 1)",
+    "complete forced-cone monomial bound (2, 0, 0, 12, 2)",
+    "complete forced-cone monomial bound (1, 2, 1, 0, 0)",
+    "complete forced-cone monomial bound (1, 2, 0, 6, 1)",
+    "complete forced-cone monomial bound (0, 4, 0, 0, 0)",
+    "complete forced-cone monomial bound (0, 0, 3, 0, 0)",
+    "complete forced-cone monomial bound (0, 0, 2, 6, 1)",
+    "complete forced-cone monomial bound (0, 0, 1, 12, 2)",
+    "complete forced-cone monomial bound (0, 0, 0, 18, 3)",
+    "generic leading discriminant under forced cone",
+    "leading discriminant never vanishes identically in c",
+    "weighted initial polynomial after degree12 division",
+    "two-square-root generic initial discriminant",
+    "polar leading branch coefficient",
+    "two branches each have a simple Q pole",
+    "finite local pole sum exactly2",
+    "exact control balanced two-cusp control",
+    "exact control nongeneric-jump generic fibre",
+    "exact control nongeneric-jump special c1",
+    "exact control order-two near-cancellation",
+    "special polar17 curve parameterization",
+    "special fibre has actual polar17",
+    "generic14 countercontrol full scaled equation",
+    "generic14 countercontrol simple root equation",
+    "generic14 countercontrol branch polar order7",
+    "generic14 countercontrol two local branches",
+    "previous polar/cusp input passed",
+    "previous polar/cusp seal verify_polar_cusp_sectors.py",
+    "previous polar/cusp seal POLAR_CUSP_LEADING_SECTORS.md",
+    "previous polar/cusp seal polar_cusp_sector_certificates.json",
+    "previous polar/cusp seal verify_contact_filtration.py",
+    "previous polar/cusp seal CUBIC_COVER_BOUNDARY_PERIOD.md",
+    "previous polar/cusp seal cubic_cover_period_receipt.json",
+    "previous polar/cusp seal GLOBAL_CUSP_LEADING_OBSTRUCTION.md",
+    "previous polar/cusp seal SOURCE_COORDINATES.md",
+    "previous polar/cusp seal WRIGHT_MARKED_MODEL.md",
+    "previous polar/cusp seal POLE_FIVE_EIGHT_EXCLUSION.md",
+    "previous polar/cusp seal ../jc2-omitted-divisors/WRIGHT_IMAGE_RESTRICTION.md",
+    "exact two noncontact sectors excluded",
+    "three remaining noncontact sectors",
+    "elliptic contact3 violates quartic degree",
+    "old elliptic polar17 profile contradicts the generic gap",
+    "historical noncontact432 spends exactly4 poles",
+    "noncontact432 polar33",
+    "noncontact432 polar25",
+    "historical contact42 spends exactly4 poles",
+    "remaining contact42 polar29"
+  ],
+  "written_result": "Generic quartic polar order17 is impossible; finite pole6/leading-root4 forces two cusp branches with simple Q poles, closing elliptic contact3 and two noncontact nonic partitions",
+  "generic_quartic_polar17_excluded": true,
+  "forced_generic_polar_order": 18,
+  "forced_quartic_orders": {
+    "p": 3,
+    "q": 5,
+    "r": 6
+  },
+  "finite_local_branch_count": 2,
+  "finite_local_Q_poles": [
+    1,
+    1
+  ],
+  "elliptic_contact3_pole69_excluded": true,
+  "excluded_noncontact_nonic_partitions": [
+    [
+      5,
+      2,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2
+    ]
+  ],
+  "remaining_noncontact_nonic_partitions": [
+    [
+      7,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      4,
+      3,
+      2
+    ]
+  ],
+  "current_contact3_away_types": [
+    [
+      6
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "marked_two_root_leading_candidates_retained": 16,
+  "first_open_reduced_pairs": [
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "minimum_compatible_quartic_pole_height": 9,
+  "assurance": {
+    "formal_normal_form_and_valuation_coverage": "written proof",
+    "higher_terms_truncated_in_proof": false,
+    "normal_form_coordinate_change_depends_on_c": false,
+    "claims_no_polar17_for_all_special_fibres": false,
+    "local_generic_cone_constructs_global_finite_map": false,
+    "noncontact432_profile_excluded": false,
+    "contact42_profile_excluded": false,
+    "all_pole69_excluded": false,
+    "actual_ruled_compatibility_proved": false,
+    "quartic_packets_excluded": false,
+    "conditional_2026_degree125_upgrade_used": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false
+  },
+  "source_sha256": {
+    "verify_quartic_polar_gap.py": "bdd644dd9c1ac14e357a3299941712f2b278781d4f7d4d908bb2eb98d0242bc4",
+    "QUARTIC_GENERIC_POLAR_GAP.md": "a7c5caa55e836edf54c8b49bcfacd0da1acaf245f93319aefaa40d994fef5d7f",
+    "quartic_polar_gap_certificates.json": "56b41af19ed8aea8322ecc37f601143bc4daa236611f1adb9f2f26b6bcaff6bd",
+    "POLAR_CUSP_LEADING_SECTORS.md": "44be963a650982b91e9dc5a77cb7325a8621171ca98783714918f21217f1e8aa",
+    "polar_cusp_sector_certificates.json": "88f852818fc6d92a3633c537d224121e0f9a0e987bd63fb8779560c2da5c5820",
+    "polar_cusp_sector_receipt.json": "60a51064d6d3733ffacebabd7cdf9eed95cfaa64ba46653867b80089e9ab7674",
+    "CUBIC_COVER_BOUNDARY_PERIOD.md": "d827211a0f1f3b028ebb914a22ce42dd045ae0320bd573e089c1f2a7ea4ddf68",
+    "WRIGHT_MARKED_MODEL.md": "311172c056b00d93db70a4066823af0271b3017bfea9cb5c539e0273bc3fee71"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.064923
+}

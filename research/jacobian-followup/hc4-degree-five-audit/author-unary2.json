@@ -1,0 +1,16 @@
+{
+  "job": "unary2",
+  "source": "source-2611.00161/anc/verify_hc4_unary_2.py",
+  "source_sha256": "cb081f4cbcc2caafae47158748cf0b0313787ad1344301a81fcfecea8555e328",
+  "cap_seconds": 180,
+  "elapsed_seconds": 4.527,
+  "terminal": "completed",
+  "exit_code": 0,
+  "expected_checks": 21,
+  "passed_checks": 21,
+  "failed_checks": 0,
+  "outcome": "PASS",
+  "independent_implementation": false,
+  "full_case_exhaustiveness_verified": false,
+  "log_sha256": "e72f58d057eab3bc6471b6b1b88370dcd5423d498668a8d8048832de624d3194"
+}

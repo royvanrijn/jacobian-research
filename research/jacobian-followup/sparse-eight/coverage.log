@@ -1,0 +1,6 @@
+{"stage": "compiled", "buckets": 1329}
+{"stage": "enumerating", "visited": 365208, "pending": 208, "balanced": 4566}
+{"stage": "enumerating", "visited": 727824, "pending": 493, "balanced": 8483}
+{"stage": "enumerating", "visited": 1125194, "pending": 201, "balanced": 13246}
+{"stage": "enumerating", "visited": 1722813, "pending": 121, "balanced": 19880}
+{"status": "pass", "degree": 7, "bound": 8, "source_sha256": "26b0edc4f1ceebe271760bae3b95c5f91b17ba3da76e197564a8c13da709b86e", "manifest_sha256": "899a4c1550e5e755af20f1cdcb61f9c2f0d8915bc4af8ac1629c9c24390aa67c", "visited": 1947529, "balanced": 23183, "counts_by_size": {"6": 450, "7": 1876, "8": 20857}, "elapsed_seconds": 85.34768849200918, "coverage": "Exact equality with all 90 production shards; independent universe, determinant expansion and global traversal."}

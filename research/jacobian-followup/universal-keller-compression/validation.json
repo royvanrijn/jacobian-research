@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "result": "focused validation passed; full navigation blocked",
+  "new_claims": [
+    "UACOMP1",
+    "UAFAM1",
+    "UAPOS1",
+    "UAQUOT1"
+  ],
+  "changed_existing_claim": "OP-KCOMP",
+  "schema_dependencies_sources_hashes_and_reciprocal_edges": "pass",
+  "affected_lesson_and_work_scope_fingerprints": "pass",
+  "exact_controls": 84,
+  "complete_fibre_controls": 13,
+  "characteristic_zero_fibre_degrees": [
+    5,
+    6,
+    7
+  ],
+  "finite_field_controls": "All seven rank-five splitting types over F11",
+  "local_links_checked": 11,
+  "predecessor_proof_hashes": "pass",
+  "existing_ledger_entries_preserved_at_integration": 1779,
+  "open_problems_closed": [],
+  "navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 consumer artifacts/generated-results/README.md is absent."
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "reason": "Same pre-existing KDSQ6 missing consumer."
+    }
+  ],
+  "assurance": "All-rank arguments are written proofs, with representative exact controls. No formalization, independent whole-proof implementation, external review or literature-priority certification.",
+  "links": [
+    {
+      "source": "jacobian-followup/universal-keller-compression/README.md",
+      "target": "jacobian-followup/universal-keller-compression/PROOF.md"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/README.md",
+      "target": "jacobian-followup/universal-keller-compression/verify.py"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/README.md",
+      "target": "jacobian-followup/universal-keller-compression/receipt.json"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/README.md",
+      "target": "jacobian-followup/universal-keller-compression/sources.json"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/README.md",
+      "target": "MATH_STATUS.json"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/PROOF.md",
+      "target": "archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/PROOF.md",
+      "target": "archive/non-elliptic/verified/PRIMITIVE_MONODROMY_ATOMICITY.md"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/PROOF.md",
+      "target": "jacobian-followup/universal-keller-compression/sources.json"
+    },
+    {
+      "source": "jacobian-followup/universal-keller-compression/PROOF.md",
+      "target": "archive/non-elliptic/verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md"
+    },
+    {
+      "source": "jacobian-followup/README.md",
+      "target": "jacobian-followup/universal-keller-compression/README.md"
+    },
+    {
+      "source": "archive/non-elliptic/verified/README.md",
+      "target": "jacobian-followup/universal-keller-compression/README.md"
+    }
+  ]
+}

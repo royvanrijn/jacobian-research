@@ -1,0 +1,8 @@
+{
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "ijson": "3.6.0",
+  "json_backend": "yajl2_c",
+  "certificate_format": "gzip JSON, streamed one node at a time; no F4, CRT or exact matrix solving in the verifier"
+}

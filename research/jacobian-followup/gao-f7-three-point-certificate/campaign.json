@@ -1,0 +1,24 @@
+{
+  "objective": "Prove or fail to prove the cubic-cube coefficient ideal is the unit ideal over Q, using local identity DAGs.",
+  "mathematical_motivation": "The six-equation modular contradiction was fast, while expanded lifts stalled. Local identities have independently replayed modulo a prime, and rational replay advanced31,59,109,218 nodes at8,16,32,64 primes.",
+  "current_gate": "COMPLETED:734 exact predecessor nodes and the full402x402 integer coefficient-space determinant passed the separate checker. See receipt-integer.json and PROOF.md.",
+  "absolute_ceiling_primes": 256,
+  "generation_batch_time_cap_seconds": 120,
+  "reconstruction_batch_time_cap_seconds": 240,
+  "checkpoints": [
+    "reconstruction-state.pkl",
+    "partial-rational-dag.json.gz",
+    "reconstruction-progress.json",
+    "reconstruction-history.jsonl"
+  ],
+  "proof_acceptance": "Every predecessor identity must replay exactly from the rederived source equations, followed by either an explicit rational unit identity or a nonzero determinant of the full square integer coefficient matrix containing every actual monomial including1. A modular unit ideal or partial DAG is insufficient.",
+  "numeric_workers_max": 8,
+  "numeric_process_address_cap_GB": "Earlier runs4GiB; current streamed runner uses the separate parent/worker limits above.",
+  "source_transport_checks": 14,
+  "mathematical_status": "GAOF7CUBE1: proved by761-check full replay; three-point fibres remain open with five types.",
+  "numeric_parent_address_cap_GiB": 8,
+  "numeric_worker_aggregate_address_cap_GiB": 40,
+  "numeric_worker_max_address_cap_GiB": 8,
+  "historical_plan": "campaign-generation-plan.json",
+  "complete_replay_receipt": "receipt-integer.json"
+}

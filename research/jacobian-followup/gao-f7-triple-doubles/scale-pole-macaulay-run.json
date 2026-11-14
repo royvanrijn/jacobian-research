@@ -1,0 +1,33 @@
+{
+  "cap_seconds": 120,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 50,
+  "matrix_entry_cap": 15000000,
+  "exact_dimension_cap": 2500,
+  "weighted_bounds": [
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24
+  ],
+  "theorem_exclusion": false,
+  "motivation": "Replace the timed-out rational Groebner lift with a finite weighted Macaulay support solve for x^3; dimensions are preflighted and exact acceptance is a full identity.",
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 6.8837968969892245,
+  "scale-pole-identity-candidate.json": {
+    "bytes": 3525529,
+    "sha256": "631cd6aa2cc7a574e57f8f6819b28ce29bed42355a5ca45129140292b214e256"
+  },
+  "scale-pole-macaulay-checkpoint.json": {
+    "bytes": 118954,
+    "sha256": "d256a480a358500b0180b1b1e703b964d17a2b6d078cf421ad45d38cb7ad0676"
+  },
+  "scale-pole-macaulay-search.json": {
+    "bytes": 1523,
+    "sha256": "9e63b2872315ab7431dcc3a84b1465c5d241314e6601d138a2e7bf3961a33c50"
+  }
+}

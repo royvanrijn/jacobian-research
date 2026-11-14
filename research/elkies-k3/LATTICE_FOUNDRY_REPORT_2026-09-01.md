@@ -1,7 +1,7 @@
 # Lattice foundry report — 2026-09-01
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 0c8e0400965a58de -->
 
 > **Current programme directive (2026-09-04).** This report records the first
 > target-first foundry run and its then-preferred determinant-950 `NS0024`
@@ -9,9 +9,9 @@
 > rational NS0024 marking required over `QQ`. Later split-Clifford arguments
 > also exclude determinant `720`. NS0031 is excluded by the
 > [corrected full stable proof](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md). The live
-> programme begins with the global `T`-first arithmetic queue and targets
-> arithmetic MW17 plus a certified carrier, with integral `V4` rank 20 as the
-> stretch objective. See
+> programme now classifies the retained NS/frame population by arithmetic
+> obstruction. Carrier and integral `V4` constructions remain separate
+> extensions. See
 > [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 > The source rankings below remain exact records of their declared searches,
 > not the current cross-NS work queue.

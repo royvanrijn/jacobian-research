@@ -1,0 +1,11 @@
+SIZE 4
+DIM 0
+G[1]=3*B-5*a
+G[2]=9*D-2
+G[3]=27*E-4*a
+G[4]=a^2
+   ? 2nd module does not lie in the first
+   ? error occurred in or before research/jacobian-followup/jc2-r7-reciprocal/double_zero.sing line 15: `matrix L=lift(I,T);`
+   ? expected matrix-expression. type 'help matrix;'
+   ? `L` is not defined
+   ? error occurred in or before research/jacobian-followup/jc2-r7-reciprocal/double_zero.sing line 15: `forif (!(j<=ncols(L))) break;`

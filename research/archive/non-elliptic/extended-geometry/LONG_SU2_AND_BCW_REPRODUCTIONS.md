@@ -1,5 +1,10 @@
 # Complete local reproductions: `SU(2)`, `SO(3)`, the BCW 79-variable route, and a 21-variable optimization
 
+> 14 November 2026 update: the higher-rank compact connected group existence
+> programme below is superseded by [Longs all-group classification and local audit](../../../jacobian-followup/moment-vanishing-audit/COMPACT_GROUPS.md).
+> Its historical subgroup-extension gap is resolved by radial pushforward and
+> central descent. The original SU(2), SO(3), BCW and dimension calculations remain preserved.
+
 This note extends the first external-consequences audit with four distinct
 outcomes.
 

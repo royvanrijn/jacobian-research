@@ -1,0 +1,4 @@
+{
+  "outcome": "serialization_failure",
+  "reason": "Native exponent sum was fmpz; fixed explicit integer conversion. No branch input had been written."
+}

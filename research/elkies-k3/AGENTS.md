@@ -18,6 +18,13 @@ is complete. Current foundry exclusions and unresolved marking gates live in
 the [different-NS objective](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md),
 not in duplicated candidate counts.
 
+The current different-NS priority is the
+[classification experiment](DIFFERENT_NS_CLASSIFICATION_2026-09-15.md).
+Join retained evidence by actual NS and frame identity, keep UNKNOWN distinct
+from exclusion, and preserve the frozen cohort denominators. The determinant1020
+[equation compilation is complete](DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md);
+reuse its loader and exact certificates rather than restarting compilation.
+
 ## Construction and compute discipline
 
 - Large neighbour, equation, specialization, point or descent campaigns need
@@ -57,4 +64,4 @@ not in duplicated candidate counts.
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY a7ad7d57e7812f1d -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 0c8e0400965a58de -->

@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped complete rational power identity, claim metadata and renderer readback",
+  "claim": "PF2OMIT12",
+  "check_count": 17,
+  "rational_term_products": 40579,
+  "previous_goal_turn": "Progress: two complete first-image norm equations and singular-value matching restrictions",
+  "current_goal_turn": "Progress: exact cofactor certificate closes the entire forbidden Laurent rank<=2 locus, including repeated common factors and nonimmersed parameters",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [
+    "PF2FACTOR1",
+    "PF2RULED4",
+    "PF2RULED5",
+    "PF2RULED6",
+    "PF2COORD1",
+    "PF2RULED7",
+    "PF2PERIOD1",
+    "PF2WRIGHT1",
+    "PF2GRADE1",
+    "PF2TRACE1",
+    "PF2RULED8",
+    "PF2RULED9",
+    "PF2RULED10",
+    "PF2RULED11"
+  ],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-R7-IMAGE-NORM-MATCHING"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113"
+  ],
+  "local_links_checked": 61,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Original quartic-divisor equations reconstructed; all40579 rational term products replayed independently of Singular. Cofactor necessity and imported family/collision completeness remain written arguments. No global cover or additional image is constructed.",
+  "requirements_audit": {
+    "ramifies": "Original immersed first prime remains e2,f1; normalization parameter fibre length is kept separate from ambient ramification",
+    "omitted": "Immersed first-prime lost lengths are0,2,4,6; all additional omitted primes remain mandatory",
+    "target_images_and_residue_degrees": "Explicit first-image norm charts retained; their rank<=2 locus proved empty, but actual additional images still absent",
+    "exceptional_fibre_lengths": "No normalization parametrization fibre scheme exceeds3 in either chart; nonimmersed length is not treated as branch count"
+  },
+  "full_navigation_check": {
+    "outcome": "FAIL repository-wide checks; scoped result validation passes",
+    "command_results": [
+      {
+        "command": [
+          "make",
+          "check-navigation"
+        ],
+        "exit_code": 2,
+        "output": "make -C research PYTHON=\"/home/royvanrijn/src/jacobian-research/.venv/bin/python\" SYSTEM_PYTHON=\"python3\" \"check-navigation\"\nmake[1]: Entering directory '/home/royvanrijn/src/jacobian-research/research'\npython3 scripts/audit_status.py\nmake[1]: Leaving directory '/home/royvanrijn/src/jacobian-research/research'\nTraceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/audit_status.py\", line 8, in <module>\n    validate_index(index)\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/render_status.py\", line 283, in validate_index\n    assert not hash_mismatches, \"\\n\" + \"\\n\".join(hash_mismatches)\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError: \nPF2FACTOR1: stale checker-source hash for jacobian-followup/affine-complements/verify_pole4_exclusion.py; recorded sha256:c9446fc83b82028798f4919e5f5e416bc779646d7969a447f1bd9b28c8c67885, actual sha256:46a764edabed376292f3e952cf4817a561fad5116fd27e080ade71be9f150524\nPF2RULED4: stale checker-source hash for jacobian-followup/affine-complements/verify_pole4_exclusion.py; recorded sha256:c9446fc83b82028798f4919e5f5e416bc779646d7969a447f1bd9b28c8c67885, actual sha256:46a764edabed376292f3e952cf4817a561fad5116fd27e080ade71be9f150524\nPF2RULED5: stale checker-source hash for jacobian-followup/affine-complements/verify_low_coordinate.py; recorded sha256:21cfe92db3d8be38037d22b0547c000bd57a34a7598c2cdf5250e8e12067bb97, actual sha256:58b9bd86c9b51e9da5801b84b4ade575d9d0a305aae5e5846ed46022d9ee6943\nPF2RULED6: stale checker-source hash for jacobian-followup/affine-complements/verify_pole35.py; recorded sha256:268cd6b0b5ca67e6d0c03cbc65f846a45cced099786c78d50ec6fc438759e669, actual sha256:f74fc94296d62f57b1603972e8fc2142a8e2d1ecfc3ff96e9f5074a530587429\nPF2COORD1: stale checker-source hash for jacobian-followup/affine-complements/verify_source_coordinates.py; recorded sha256:5e3f45ae985e16482e3311369b4fba4bf7f9e4525c82164c082edae7edc78875, actual sha256:a348a9dcb921c88f2e6af06c3445d2e547ec390194cca076b9f8ed3d4dc79536\nPF2RULED7: stale checker-source hash for jacobian-followup/affine-complements/verify_source_coordinates.py; recorded sha256:5e3f45ae985e16482e3311369b4fba4bf7f9e4525c82164c082edae7edc78875, actual sha256:a348a9dcb921c88f2e6af06c3445d2e547ec390194cca076b9f8ed3d4dc79536\nPF2PERIOD1: stale checker-source hash for jacobian-followup/affine-complements/verify_volume_period.py; recorded sha256:717a35544535d5223c855d686444b41be3a0dede5fec079bfc90d90771a935d8, actual sha256:5234405af34417e3c48788dc229ad8a741d3ff22e051734e1d021b3d346fc0d7\nPF2WRIGHT1: stale checker-source hash for jacobian-followup/affine-complements/verify_volume_period.py; recorded sha256:717a35544535d5223c855d686444b41be3a0dede5fec079bfc90d90771a935d8, actual sha256:5234405af34417e3c48788dc229ad8a741d3ff22e051734e1d021b3d346fc0d7\nPF2GRADE1: stale checker-source hash for jacobian-followup/affine-complements/verify_wright_grading.py; recorded sha256:240b8564148601ed622ee60564c690b61a590209be6adb8abffe5cb5bf0f2186, actual sha256:d57a5d2ad74c5af613001ea59996f10bdfb57fe2c21cea81e76a500a59b220f7\nPF2TRACE1: stale checker-source hash for jacobian-followup/affine-complements/verify_wright_grading.py; recorded sha256:240b8564148601ed622ee60564c690b61a590209be6adb8abffe5cb5bf0f2186, actual sha256:d57a5d2ad74c5af613001ea59996f10bdfb57fe2c21cea81e76a500a59b220f7\nPF2RULED8: stale checker-source hash for jacobian-followup/affine-complements/verify_pole_three_all_heights.py; recorded sha256:e0e32a14bfb2435834f5489599f48a0647f0b9e504b549687cda60c395151eba, actual sha256:0eb4c9f47033b3bb25404b829a0ee6c86314452808de0ab5ead4611cfaf8e136\nPF2RULED9: stale checker-source hash for jacobian-followup/affine-complements/verify_pole_four_companions.py; recorded sha256:0ab335df8950118e1e789a34d0144a055ea9ddc6e55991afbfe007688394a21b, actual sha256:f70b88342949d2eb2a4f2f3603a4b73ef9fd4be4c2d45899af01b4745cc55e82\nPF2RULED10: stale checker-source hash for jacobian-followup/affine-complements/verify_pole_four_nonsquare.py; recorded sha256:28e26bb0e8ef520b7702ec94b079711630506614dd56f0ec6c4317bb36689f50, actual sha256:b71c148e586b3be3c6b0d770b6b118c9dc459d24ffd3074770eaf77bab9ca8cc\nPF2RULED11: stale checker-source hash for jacobian-followup/affine-complements/verify_boundary_leading_period.py; recorded sha256:60e4d9d09f2f2bd33fe6d4cb0376b83df3975119ed9817a4f39053c12106031f, actual sha256:09dc8a508f2ad0b308cb73acfd476a5c8402ce3b30a785dea1ade73dc5934155\nmake[1]: *** [Makefile:21: check-navigation] Error 1\nmake: *** [Makefile:17: check-navigation] Error 2\n"
+      },
+      {
+        "command": [
+          "python3",
+          "research/scripts/research.py",
+          "check"
+        ],
+        "exit_code": 1,
+        "output": "Traceback (most recent call last):\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 561, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 438, in main\n    validate_lessons(items, entries, check_reviews=args.command == \"check\")\n  File \"/home/royvanrijn/src/jacobian-research/research/scripts/research.py\", line 128, in validate_lessons\n    assert (ROOT / p).is_file(), f\"{item['id']}: missing source {p}\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json\n"
+      }
+    ],
+    "historical_artifacts_reconstructed": false,
+    "unrelated_authoritative_checker_hashes_refreshed": false
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "current_artifact_sha256": {
+    "NO_FOUR_BRANCHES.md": "f8e01e6ae7cc8f31c4297ae74f8304debba57ac35ef3842558f65ed15d6fe48d",
+    "verify_no_four_branches.py": "21d968ab237631432481f4f6eddb278dcda3368e5e32cc6eede349f714415ab9",
+    "four_branch_certificate.json": "735dec120807255117f34b9c9512178082fe0d78948e98c6cd43a18efe3e0f56",
+    "four_branch_ledger.json": "9d619495940a86a5bf23973a012739f899dc9a141b44dbe3a280637e25447347",
+    "four_branch_receipt.json": "195192135090362fb3bf100c229d5519e948abca93a7b75dad01c71c7c945677",
+    "IMAGE_NORM_LEDGER.md": "e4e81311cef66162ff3d95c0b245eb70583af4f8cb08b45ebf884a61756efa19",
+    "image_norm_receipt.json": "f9da6082fa6f56a86e05f61ed40ccb8287891cdb76b05deffe0d09ce99b4431d",
+    "README.md": "c698bd7f40387e53520613cbd7f9ed0b039384786da6b427fa14b8ba1bf2a7d1",
+    "INPUT_GATE.md": "57b4eafc7c6abbfc735f2ad9e681097a1a238301d6f7c24004b1deb23de71781"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json",
+    "singleton_valuation_validation.json",
+    "image_norm_validation.json"
+  ]
+}

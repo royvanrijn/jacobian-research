@@ -1,0 +1,282 @@
+"""Fail-closed replay for the F7 fivefold-root residual-septic theorem.
+
+No Groebner basis, symbolic resultant, rational reconstruction or factorizer
+is run. Modular unit tests are confined to specified finite FREE algebras,
+whose defining leading coefficients are checked invertible at the prime.
+"""
+from pathlib import Path
+from fractions import Fraction
+import hashlib,json,math,platform,time
+import sympy as S
+import flint
+from flint import fmpz_mpoly_ctx,fmpz_poly,fmpz_mat,nmod_poly,nmod_mat
+if not __debug__:raise RuntimeError('Run without -O')
+HERE=Path(__file__).resolve().parent;START=time.monotonic();checks=[]
+def yes(name,condition):
+ assert condition,name
+ checks.append(name)
+def announce(stage,**extra):print(json.dumps({'stage':stage,'seconds':time.monotonic()-START,**extra}),flush=True)
+cert=json.loads((HERE/'certificate.json').read_text());finite=json.loads((HERE/'finite-witness.json').read_text());source=json.loads((HERE/'quintuple-input.json').read_text())
+s,a,b=S.symbols('s a b');V=[s,a,b]
+ctx=fmpz_mpoly_ctx.get(['x','s','a','b','xi']);x,ss,aa,bb,xi=ctx.gens()
+def native(expression):return ctx.from_dict({(0,)+ex+(0,):int(c) for ex,c in S.Poly(expression,*V,domain=S.ZZ).terms()})
+G2=a*a+a+s*b+s**3;G3=2*s*G2+a+s**3+s*s*b;G4=3*s*s*G2+b+s**4
+X1=S.expand(-S.det(S.Matrix([G2,G3,G4]).jacobian(V)))
+G2n,G3n,G4n,X1n=map(native,[G2,G3,G4,X1]);T=ss+x
+
+def eliminant(Y):
+ Y1,Y2,Y3,Y4=Y;bt=Y4-3*Y2*T*T+2*Y1*T**3-T**4
+ at=Y3-2*Y2*T+Y1*T*T-T**3-T*T*bt
+ return at*at+at+T*bt+T**3+Y1*T-Y2,at,bt
+full=[xi,G2n+ss*xi,G3n+ss*ss*xi,G4n+ss**3*xi]
+Rfull,afull,bfull=eliminant(full)
+def x_coefficient(poly,j):return ctx.from_dict({(0,)+ex[1:]:int(c) for ex,c in poly.to_dict().items() if ex[0]==j})
+yes('root a reconstruction',x_coefficient(afull,0)==aa)
+yes('root b reconstruction',x_coefficient(bfull,0)==bb)
+yes('root equation reconstruction',x_coefficient(Rfull,0)==0)
+yes('all multiple roots covered without localization',x_coefficient(Rfull,1)==xi-X1n)
+X=[X1n,G2n+ss*X1n,G3n+ss*ss*X1n,G4n+ss**3*X1n];R,_,_=eliminant(X)
+yes('critical source constant and linear coefficients',x_coefficient(R,0)==x_coefficient(R,1)==0)
+yes('source variable order',source['variables']==['s','a','b'])
+yes('three necessary derivative equations',[r['derivative'] for r in source['equations']]==[2,3,4])
+f=[];fexpr=[]
+for j,row in enumerate(source['equations'],2):
+ expression=S.sympify(row['polynomial']);F=native(expression);C=x_coefficient(R,j);terms=F.to_dict();ex=next(iter(terms));ratio=Fraction(int(C.to_dict().get(ex,0)),int(terms[ex]))
+ yes('fresh necessary derivative '+str(j),ratio!=0 and ratio.denominator*C==ratio.numerator*F)
+ f.append(F);fexpr.append(expression)
+Q=ctx.constant(0)
+yes('all eight residual quotient coefficients',[r['coefficient'] for r in source['quotient_coefficients']]==list(range(8)))
+for row in source['quotient_coefficients']:Q+=native(S.sympify(row['polynomial']))*T**row['coefficient']
+yes('residual quotient monic',native(S.sympify(source['quotient_coefficients'][7]['polynomial']))==1)
+remainder=R-x**5*Q
+yes('literal source quotient transport',remainder==sum((x_coefficient(R,j)*x**j for j in [2,3,4]),ctx.constant(0)))
+# The necessary bivariate equations are rederived from these source polynomials.
+old=json.loads((HERE.parent/'gao-f7-linear-cube/high-root-bivariate-input.json').read_text());fb=[S.Poly(q,b) for q in fexpr];A,B,C=[fb[0].nth(j) for j in [2,1,0]]
+yes('quadratic leading coefficient',S.expand(A-4*s*s*(3*s**3-2)**2)==0)
+linear=[]
+for j,content in zip([1,2],[4*s*(3*s**3-2),4]):
+ L=S.Poly(S.sympify(old['linear_equations'][j-1]),b)
+ yes('linearized source degree '+str(j),L.degree()==1)
+ yes('exact quadratic cancellation '+str(j),native(content)*native(L.as_expr())==native(A)*f[j]-native(fb[j].nth(2))*f[0]);linear.append(L)
+expressions={0:S.expand(linear[0].nth(1)*linear[1].nth(0)-linear[1].nth(1)*linear[0].nth(0))}
+for k,i in [(3,0),(4,1)]:
+ P,Q0=linear[i].nth(1),linear[i].nth(0);expressions[k]=S.expand(A*Q0*Q0-B*P*Q0+C*P*P)
+ yes('quadratic necessity identity '+str(k),native(expressions[k])==native(P*P)*f[0]+native(linear[i].as_expr())*native(A*Q0-A*P*b-B*P))
+for k,expression in expressions.items():
+ row=old['equations'][k];factor=S.Integer(1)
+ for term in row['removed_exception_factors']:
+  yes('only declared exceptional factors '+str(k),term in ['s','3*s**3 - 2']);factor*=S.sympify(term)
+ ratio=S.cancel(expression/(S.sympify(row['polynomial'])*factor));yes('bivariate normalization '+str(k),ratio.is_Rational and ratio!=0)
+announce('source and bivariate transport passed')
+# Integer polynomial determinant replay for U2 and the two adjugate entries.
+def trim(q):
+ q=list(q)
+ while q and q[-1]==0:q.pop()
+ return q
+def peval(q,value,mod=None):
+ out=0
+ for c in reversed(q):out=out*value+c;out=out%mod if mod else out
+ return out
+def integer_bareiss(matrix):
+ work=[r[:] for r in matrix];N=len(work);sign=1;previous=1
+ for k in range(N-1):
+  pivot=next((i for i in range(k,N) if work[i][k]),None)
+  if pivot is None:return 0
+  if pivot!=k:work[k],work[pivot]=work[pivot],work[k];sign=-sign
+  value=work[k][k]
+  for i in range(k+1,N):
+   left=work[i][k]
+   for j in range(k+1,N):
+    numerator=work[i][j]*value-left*work[k][j];assert numerator%previous==0
+    work[i][j]=numerator//previous
+   work[i][k]=0
+  previous=value
+ return sign*work[-1][-1]
+def sylvester(f,g):
+ m,n=len(f)-1,len(g)-1;N=m+n;M=[[0]*N for _ in range(N)]
+ for i in range(n):
+  for j,c in enumerate(reversed(f)):M[i][i+j]=c
+ for i in range(m):
+  for j,c in enumerate(reversed(g)):M[n+i][i+j]=c
+ return M
+fpoly=S.Poly(S.sympify(old['equations'][0]['polynomial']),a,s,domain=S.ZZ);gpoly=S.Poly(S.sympify(old['equations'][3]['polynomial']),a,s,domain=S.ZZ)
+def ac_coefficients(poly):
+ rows=[[0]*(poly.degree(s)+1) for _ in range(poly.degree(a)+1)]
+ for (i,j),c in poly.terms():rows[i][j]=int(c)
+ return rows
+fc,gc=map(ac_coefficients,[fpoly,gpoly]);m,n=len(fc)-1,len(gc)-1;N=m+n
+yes('nominal Sylvester size',N==15)
+record=cert['source_resultant'];yes('specified source resultant',record['pair']==[0,3]);U=fmpz_poly(record['resultant_coefficients']);p=fmpz_poly(record['primitive_reduced_coefficients'])
+co=cert['cofactor'];yes('specified adjugate column',co['row']==0)
+num=fmpz_poly(co['a_cofactor']);den=fmpz_poly(co['constant_cofactor']);common=fmpz_poly(co['removed_common_factor'])
+ca,cc=common*num,common*den
+bound=n*fpoly.degree(s)+m*gpoly.degree(s);co_bound=(N-1)*max(fpoly.degree(s),gpoly.degree(s));yes('verified determinant degree bounds',bound==405 and co_bound==378)
+yes('stored integer polynomial degrees',U.degree()<=bound and ca.degree()<=co_bound and cc.degree()<=co_bound)
+for value in range(-bound//2,-bound//2+bound+1):
+ matrix=sylvester([peval(q,value) for q in fc],[peval(q,value) for q in gc]);expected=int(U(value))
+ yes('FLINT integer resultant '+str(value),int(fmpz_mat(matrix).det())==expected)
+ yes('plain integer resultant '+str(value),integer_bareiss(matrix)==expected)
+for value in range(-co_bound//2,-co_bound//2+co_bound+1):
+ matrix=sylvester([peval(q,value) for q in fc],[peval(q,value) for q in gc])
+ for column,polynomial in [(N-2,ca),(N-1,cc)]:
+  minor=[[c for j,c in enumerate(row) if j!=column] for i,row in enumerate(matrix) if i!=0];sign=(-1)**column;expected=int(polynomial(value))
+  yes('FLINT cofactor '+str([value,column]),sign*int(fmpz_mat(minor).det())==expected)
+  yes('plain integer cofactor '+str([value,column]),sign*integer_bareiss(minor)==expected)
+factors=record['removed_factors'];yes('resultant exceptional factor exponents',factors=={'s':14,'3s^3-2':9})
+product=fmpz_poly([0,1])**14*fmpz_poly([-2,0,0,3])**9*p
+k=next(i for i,c in enumerate(product.coeffs()) if c);ratio=Fraction(int(U[k]),int(product[k]));yes('literal primitive resultant normalization',ratio!=0 and ratio.denominator*U==ratio.numerator*product)
+sf=fmpz_poly(cert['squarefree_projection']);cover=fmpz_poly(cert['projection_cover_quotient']);bad=fmpz_poly(cert['cofactor_exception']);good=fmpz_poly(cert['generic_initial']);ret=fmpz_poly(cert['generic_retained']);out=fmpz_poly(cert['generic_out'])
+yes('every projected root retained',sf*sf==p*cover)
+yes('all projection factors retained',sf==bad*good and good==ret*out)
+yes('cofactor exceptional locus',bad==fmpz_poly([-1,0,0,0,0,0,9]))
+yes('characteristic-zero finite dimensions',[good.degree(),ret.degree(),out.degree()]==[204,117,87])
+announce('integer resultant and cofactor replay passed',integer_determinants=2*(406+2*379))
+# Independent modular polynomial arithmetic. h is always made monic only
+# after its ACTUAL integer leading coefficient is proved nonzero mod prime.
+prime=cert['prime'];yes('fixed common prime',prime==finite['prime']==1000000007)
+yes('prime by complete trial division',all(prime%d for d in range(2,math.isqrt(prime)+1)))
+def add(f,g):
+ out=[0]*max(len(f),len(g))
+ for i,c in enumerate(f):out[i]+=c
+ for i,c in enumerate(g):out[i]+=c
+ return trim([c%prime for c in out])
+def mul(f,g):
+ if not f or not g:return []
+ out=[0]*(len(f)+len(g)-1)
+ for i,c in enumerate(f):
+  for j,d in enumerate(g):out[i+j]+=c*d
+ return trim([c%prime for c in out])
+def rem(f,h):
+ work=trim([c%prime for c in f]);assert h[-1]==1
+ while len(work)>=len(h):
+  shift=len(work)-len(h);value=work[-1]
+  if value:
+   for j,c in enumerate(h):work[shift+j]=(work[shift+j]-value*c)%prime
+  work=trim(work)
+ return work
+def npoly(f):return nmod_poly([int(c)%prime for c in f],prime)
+def field(h):
+ degree=h.degree();coeff=list(map(int,h.coeffs()));yes('finite presentation leading coefficient '+str(degree),degree>0 and coeff[-1]%prime!=0)
+ inverse=pow(coeff[-1]%prime,-1,prime);monic=[c*inverse%prime for c in coeff];assert len(monic)==degree+1
+ return npoly(coeff),monic
+def inverse(f,h,monic):
+ g,u,v=f.xgcd(h);yes('modular inverse exists',g.degree()==0 and int(g[0])!=0)
+ value=u*pow(int(g[0]),-1,prime)%h;plain=list(map(int,value.coeffs()))
+ yes('plain polynomial inverse replay',rem(mul(list(map(int,f.coeffs())),plain),monic)==[1])
+ return value
+def det_mod_plain(M):
+ work=[row[:] for row in M];N=len(work);det=1
+ for k in range(N):
+  pivot=next((i for i in range(k,N) if work[i][k]),None)
+  if pivot is None:return 0
+  if pivot!=k:work[k],work[pivot]=work[pivot],work[k];det=-det
+  value=work[k][k];det=det*value%prime;inverse=pow(value,-1,prime);pivotrow=work[k]
+  for i in range(k+1,N):
+   row=work[i]
+   if not row[k]:continue
+   multiplier=row[k]*inverse%prime;row[k]=0
+   for j in range(k+1,N):row[j]=(row[j]-multiplier*pivotrow[j])%prime
+ return det%prime
+norm_records={row['name']:row for row in finite['norms']}
+yes('six finite free unit witnesses',set(norm_records)=={'cofactor_common','a_denominator','excluded_projection','b_denominator','residual_squarefree','marked_root'})
+verified_norms=[]
+def unit_norm(name,h,monic,value):
+ d=h.degree();current=value%h;columns=[];X=npoly([0,1])
+ for _ in range(d):columns.append(list(map(int,current.coeffs())));current=current*X%h
+ matrix=[[columns[j][i] if i<len(columns[j]) else 0 for j in range(d)] for i in range(d)]
+ plain=[];current=rem(list(map(int,value.coeffs())),monic)
+ for _ in range(d):plain.append(current+[0]*(d-len(current)));current=rem([0]+current,monic)
+ yes('plain finite multiplication matrix '+name,matrix==[list(row) for row in zip(*plain)])
+ native=int(nmod_mat(matrix,prime).det());other=det_mod_plain(matrix);expected=norm_records[name]
+ yes('nonzero FLINT finite free norm '+name,native!=0 and native==expected['det_mod'] and expected['dimension']==d)
+ yes('plain finite free norm '+name,other==native);verified_norms.append({'name':name,'dimension':d,'det_mod':native})
+# Horner evaluation of source expressions, independently in FLINT and lists.
+def evaluate(expression,h,monic,values):
+ variables=[s,a] if len(values)==2 else V
+ terms={ex:int(c)%prime for ex,c in S.Poly(expression,*variables,domain=S.ZZ).terms()}
+ def recurse(data,level,native):
+  if not data:return npoly([]) if native else []
+  if level==0:
+   degree=max(ex[0] for ex in data);coeff=[0]*(degree+1)
+   for ex,c in data.items():coeff[ex[0]]=c
+   return npoly(coeff)%h if native else rem(coeff,monic)
+  degree=max(ex[level] for ex in data);answer=npoly([]) if native else [];value=values[level] if native else list(map(int,values[level].coeffs()))
+  for j in range(degree,-1,-1):
+   sub={ex[:level]:c for ex,c in data.items() if ex[level]==j};q=recurse(sub,level-1,native)
+   answer=(answer*value+q)%h if native else rem(add(mul(answer,value),q),monic)
+  return answer
+ native=recurse(terms,len(values)-1,True);plain=recurse(terms,len(values)-1,False)
+ yes('plain source evaluation in finite algebra',list(map(int,native.coeffs()))==plain)
+ return native
+hg,mg=field(good);unit_norm('cofactor_common',hg,mg,npoly(common.coeffs()));unit_norm('a_denominator',hg,mg,npoly(den.coeffs()))
+ho,mo=field(out);Ao=npoly(num.coeffs())*inverse(npoly(den.coeffs()),ho,mo)%ho
+E2=evaluate(S.sympify(old['equations'][4]['polynomial']),ho,mo,[npoly([0,1]),Ao]);unit_norm('excluded_projection',ho,mo,E2)
+hr,mr=field(ret);Ar=npoly(num.coeffs())*inverse(npoly(den.coeffs()),hr,mr)%hr;Sr=npoly([0,1]);L=linear[0]
+Pr=evaluate(L.nth(1),hr,mr,[Sr,Ar]);Qr=evaluate(L.nth(0),hr,mr,[Sr,Ar]);unit_norm('b_denominator',hr,mr,Pr);Br=-Qr*inverse(Pr,hr,mr)%hr
+quotient=[]
+for row in source['quotient_coefficients']:quotient.append(evaluate(S.sympify(row['polynomial']),hr,mr,[Sr,Ar,Br]))
+yes('finite residual coefficients match witness',[list(map(int,q.coeffs())) for q in quotient]==finite['quotient_coefficients_mod'])
+yes('monic finite residual septic',quotient[7]==1)
+# Verify the modular resultant as a finite-field polynomial identity, with
+# enough DISTINCT points for its degree bound. This verifies the computation
+# in the finite free algebra; the good-reduction unit lemma lifts the norm.
+qc=[list(map(int,q.coeffs())) for q in quotient];dqc=[[((j+1)*c)%prime for c in qc[j+1]] for j in range(7)]
+actual_max=max((len(q)-1 for q in qc),default=0);finite_bound=13*actual_max
+delta=finite['quotient_resultant_mod'];yes('finite resultant degree bound',delta==trim(delta) and 0<len(delta)<=finite_bound+1)
+yes('distinct finite interpolation points',finite_bound+1<prime)
+for value in range(finite_bound+1):
+ matrix=sylvester([peval(q,value,prime) for q in qc],[peval(q,value,prime) for q in dqc]);assert len(matrix)==13
+ expected=peval(delta,value,prime)
+ yes('FLINT finite resultant '+str(value),int(nmod_mat(matrix,prime).det())==expected)
+ yes('plain finite resultant '+str(value),det_mod_plain(matrix)==expected)
+unit_norm('residual_squarefree',hr,mr,npoly(delta))
+marked=npoly([])
+for q in reversed(quotient):marked=(marked*Sr+q)%hr
+unit_norm('marked_root',hr,mr,marked)
+announce('finite free algebra norms passed',norms=verified_norms,finite_resultant_points=finite_bound+1)
+# Every exceptional source is independently reconstructed and every rational
+# identity replayed after clearing constant denominators in TWO engines.
+expected_names=['quintuple-szero','quintuple-cubic-two','quintuple-cubic-plus','quintuple-cubic-minus']
+yes('all four exceptional cases',[e['name'] for e in cert['exceptions']]==expected_names);exception_terms=[]
+for index,identity in enumerate(cert['exceptions']):
+ name=expected_names[index];case=json.loads((HERE/(name+'-input.json')).read_text());W=[a,b] if index==0 else [a,b,s]
+ yes('exception variables '+name,case['variables']==list(map(str,W)))
+ carrier=None if index==0 else [3*s**3-2,3*s**3-1,3*s**3+1][index-1]
+ expressions=[q.subs(s,0) for q in fexpr] if index==0 else [S.rem(S.Poly(q,s),S.Poly(carrier,s)).as_expr() for q in fexpr]+[carrier]
+ yes('exception equation count '+name,len(case['equations'])==len(expressions))
+ originals=[]
+ for j,(row,expected) in enumerate(zip(case['equations'],expressions)):
+  polynomial=S.sympify(row['polynomial']);ratio=S.cancel(expected/polynomial);yes('exception source transport '+str([name,j]),ratio.is_Rational and ratio!=0)
+  originals.append({ex:int(c) for ex,c in S.Poly(polynomial,*W,domain=S.ZZ).terms()})
+ targets=[a,b] if index==0 else [S.Integer(1)]
+ yes('specified exceptional targets '+name,identity['targets']==list(map(str,targets)) and len(identity['identities'])==len(targets))
+ terms_count=[]
+ for target,multipliers in zip(targets,identity['identities']):
+  yes('one multiplier for each source '+name,len(multipliers)==len(originals))
+  denominator=1;parsed=[]
+  for rows in multipliers:
+   q={}
+   for term in rows:
+    ex=tuple(term['exponents']);assert len(ex)==len(W) and all(type(k) is int and k>=0 for k in ex) and ex not in q
+    value=Fraction(term['coefficient']);assert value!=0;q[ex]=value;denominator=math.lcm(denominator,value.denominator)
+   parsed.append(q)
+  ctxe=fmpz_mpoly_ctx.get(list(map(str,W)));native_sum=ctxe.constant(0);plain_sum={}
+  for q,original in zip(parsed,originals):
+   integer={ex:value.numerator*(denominator//value.denominator) for ex,value in q.items()};native_sum+=ctxe.from_dict(integer)*ctxe.from_dict(original)
+   for ex,c in integer.items():
+    for ey,d in original.items():
+     ez=tuple(u+v for u,v in zip(ex,ey));plain_sum[ez]=plain_sum.get(ez,0)+c*d
+  expected={ex:int(c)*denominator for ex,c in S.Poly(target,*W).terms()}
+  yes('FLINT exceptional identity '+str([name,str(target)]),native_sum==ctxe.from_dict(expected))
+  yes('plain exceptional identity '+str([name,str(target)]),{ex:c for ex,c in plain_sum.items() if c}==expected)
+  terms_count.append(sum(map(len,parsed)))
+ exception_terms.append({'name':name,'multiplier_terms':terms_count})
+# At the only retained exceptional point s=a=b=0, the known exact witness
+# supplies squarefreeness and disjointness from the marked root.
+t=S.symbols('t');H=t**7-2*t**4+2*t-1
+qzero=sum(S.sympify(row['polynomial']).subs({s:0,a:0,b:0})*t**row['coefficient'] for row in source['quotient_coefficients'])
+yes('exact zero exceptional residual',S.expand(qzero-H)==0)
+yes('zero exceptional residual squarefree',S.discriminant(H,t)==713)
+yes('zero exceptional marked root disjoint',H.subs(t,0)==-1)
+receipt={'result':'PASS','claim_id':'GAOF7FIVE1','checks':len(checks),'scope':'Every F7 eliminant with a root of multiplicity at least5 has exactly one fivefold root and seven other simple roots. Its F7 fibre has exactly7 points. Three-point types5+4 and5+2+2 are excluded; combined with prior results only4+3+2 and3+2+2+2 remain open.','source_transport':'Fresh exact critical-root coverage, necessary derivative coefficients and monic residual-septic division.','integer_resultant_points':406,'integer_cofactor_points':379,'integer_determinant_engines':['FLINT','plain Python Bareiss'],'finite_free_norms':verified_norms,'finite_resultant_degree_bound':finite_bound,'finite_resultant_points':finite_bound+1,'finite_determinant_engines':['FLINT','plain Python Gaussian'],'finite_source_evaluation_engines':['FLINT univariate polynomials','plain Python coefficient lists'],'exceptional_identities':exception_terms,'python':platform.python_version(),'sympy':S.__version__,'python_flint':flint.__version__,'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'certificate_sha256':hashlib.sha256((HERE/'certificate.json').read_bytes()).hexdigest(),'finite_witness_sha256':hashlib.sha256((HERE/'finite-witness.json').read_bytes()).hexdigest(),'input_sha256':hashlib.sha256((HERE/'quintuple-input.json').read_bytes()).hexdigest(),'seconds':time.monotonic()-START,'assurance':'Exact arithmetic replay plus written coverage, adjugate and finite-free good-reduction unit arguments. No formal verification, independent end-to-end review, external review or novelty priority. F7 three-point existence, full strata, F5 and JC2 remain open.'}
+(HERE/'receipt.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt),flush=True)

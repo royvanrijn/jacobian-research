@@ -1,0 +1,13 @@
+{
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 0.008423321996815503,
+  "cap_seconds": 20,
+  "memory_cap_MiB": 1536,
+  "output_cap_MiB": 10,
+  "source_sha256": "20b92e6eaf476b9bd92f0fc8fb6fae5f4430e340536e58e0a9964278c994a3f2",
+  "log_sha256": "1b4936b8e46092c2d05b9d3eca427e1f7805669f38b024a92f0963f6de8836bc",
+  "log_bytes": 858,
+  "theorem_exclusion": false,
+  "boundary": "Finite-field unit output is triage only. Even characteristic-zero output requires an exported identity and separate literal replay."
+}

@@ -1,0 +1,244 @@
+{
+  "as_of": "2026-11-14",
+  "generic_polar_formula": "sum nu=I(F,A_w)-(m-2)*l-I(F,E)<=2*l-m-I(F,E)",
+  "support_bound": 4,
+  "common_symbol_root_rule": "2*k>d at every root of common section in L^d",
+  "polar_controls": [
+    {
+      "numerator": "-c*z**6 + w**2",
+      "polar_intersection": 6,
+      "Q_pole_sum_if_finite": -2,
+      "finite_map": false
+    },
+    {
+      "numerator": "-c*z**6 + w**4",
+      "polar_intersection": 18,
+      "Q_pole_sum_if_finite": 2,
+      "finite_map": false
+    },
+    {
+      "numerator": "-c*z**6 + w**6",
+      "polar_intersection": 30,
+      "Q_pole_sum_if_finite": 6,
+      "finite_map": false
+    },
+    {
+      "numerator": "w^6+z^5-c*z^6",
+      "polar_intersection": 25,
+      "upper_bound": 30,
+      "Q_pole_sum_if_finite": 1,
+      "finite_map": false
+    }
+  ],
+  "noncontact_nonic_partitions": [
+    [
+      7,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2
+    ]
+  ],
+  "current_pole69_frontier": [
+    {
+      "contacts": [
+        0
+      ],
+      "ordinary_degrees": [
+        96,
+        144
+      ]
+    },
+    {
+      "contacts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        80,
+        128
+      ]
+    },
+    {
+      "contacts": [
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        48,
+        128
+      ]
+    }
+  ],
+  "excluded_contacts": [
+    1,
+    2,
+    8
+  ],
+  "excluded_pole69_ordinary_pairs": [
+    [
+      88,
+      132
+    ],
+    [
+      72,
+      108
+    ]
+  ],
+  "elliptic_contact3_necessary_profile": {
+    "contact": 3,
+    "common_noncontact_multiplicities": [
+      2,
+      2,
+      2
+    ],
+    "P_pole": 6,
+    "P_restriction_degree": 20,
+    "number_of_missing_points": 4,
+    "Q_poles": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "away_polar_intersections": [
+      17,
+      17,
+      17
+    ],
+    "contact_polar_intersection": 29,
+    "global_PQ_constructed": false,
+    "profile_excluded": false,
+    "profile_stage": "PF2RULED19 necessary data before PF2RULED20"
+  },
+  "complete_section_jet_counts": {
+    "6": 70,
+    "9": 145
+  },
+  "noncontact_marked_cusp": {
+    "delta": "-a/48",
+    "cusp_parameter": "(-11*a**2 + 24*b + 72)/(12*a)",
+    "required_nonzero": "a",
+    "E": "a**2*b + 11*a**2 + 3*a*cc - 4*b**2 - 24*b - 36",
+    "F": "a**3*b + 16*a**3 + 5*a**2*cc - 4*a*b**2 - 30*a*b + 4*a*dd - 66*a - 6*b*cc - 18*cc"
+  },
+  "two_root_marked_sectors": [
+    {
+      "multiplicities": [
+        2,
+        7
+      ],
+      "H": "(w-x)^2*(w-y)^7",
+      "E": "14*x**3*y - 28*x**2*y**2 + 20*x**2 + 14*x*y**3 - 28*x*y + 35*y**2 - 36",
+      "F": "-42*x**4*y - 98*x**3*y**2 - 68*x**3 + 322*x**2*y**3 - 168*x**2*y - 182*x*y**4 + 252*x*y**2 + 132*x - 448*y**3 + 462*y",
+      "resultant": "4536*y*(21*y**2 - 4)*(1225*y**8 - 1568*y**6 + 5600*y**4 - 13440*y**2 + 8192)",
+      "discarded_quadratic": "21*y**2 - 4",
+      "discarded_quadratic_Groebner_basis": [
+        "2*x + 7*y",
+        "21*y**2 - 4"
+      ],
+      "y0_Bezout_coefficients": [
+        "85*x**2/432 - 1/36",
+        "25*x/432"
+      ],
+      "P8": "1225*y**8 - 1568*y**6 + 5600*y**4 - 13440*y**2 + 8192",
+      "x_as_polynomial_in_y": "-y*(37975*y**6 + 4592*y**4 + 217504*y**2 - 253824)/123904",
+      "linear_subresultant": "168*y*(1715*x*y**6 - 5824*x*y**4 + 8064*x*y**2 - 2560*x - 1715*y**7 + 4018*y**5 + 2688*y**3 - 4928*y)",
+      "units": {
+        "a": {
+          "guard": "37975*y**7/61952 + 287*y**5/3872 + 6797*y**3/1936 - 5371*y/484",
+          "guard_coefficient": "21217*y**7/3717120 - 35371*y**5/1452000 + 70567*y**3/2904000 - 109213*y/726000",
+          "polynomial_coefficient": "-657727*y**6/230283018240 + 982093*y**4/119939072000 - 630853*y**2/179908608000 + 1/8192"
+        },
+        "root_separation": {
+          "guard": "-37975*y**7/123904 - 287*y**5/7744 - 6797*y**3/3872 + 1015*y/968",
+          "guard_coefficient": "126175*y**7/371712 - 2597*y**5/11616 + 15589*y**3/11616 - 6979*y/2904",
+          "polynomial_coefficient": "3911425*y**6/46056603648 + 60487*y**4/959512576 + 730975*y**2/1439268864 + 1/8192"
+        },
+        "y": {
+          "guard": "y",
+          "guard_coefficient": "-1225*y**7/8192 + 49*y**5/256 - 175*y**3/256 + 105*y/64",
+          "polynomial_coefficient": "1/8192"
+        },
+        "x": {
+          "guard": "-37975*y**7/123904 - 287*y**5/7744 - 6797*y**3/3872 + 1983*y/968",
+          "guard_coefficient": "1142925*y**7/123904 - 10367*y**5/3872 + 152327*y**3/3872 - 60041*y/968",
+          "polynomial_coefficient": "35430675*y**6/15352201216 + 2459471*y**4/959512576 + 7537413*y**2/479756288 + 1/8192"
+        }
+      },
+      "distinct_marked_coefficient_points": 8,
+      "complete_leading_period_and_high_jet_sector": true,
+      "global_finite_map": false
+    },
+    {
+      "multiplicities": [
+        4,
+        5
+      ],
+      "H": "(w-x)^4*(w-y)^5",
+      "E": "20*x**3*y - 40*x**2*y**2 + 32*x**2 + 20*x*y**3 - 40*x*y + 35*y**2 - 36",
+      "F": "-140*x**4*y + 100*x**3*y**2 - 232*x**3 + 220*x**2*y**3 - 180*x*y**4 + 120*x*y**2 + 264*x - 320*y**3 + 330*y",
+      "resultant": "-25920*y*(15*y**2 - 8)*(25*y**8 + 2800*y**6 - 4480*y**4 + 1920*y**2 - 256)",
+      "discarded_quadratic": "15*y**2 - 8",
+      "discarded_quadratic_Groebner_basis": [
+        "4*x + 5*y",
+        "15*y**2 - 8"
+      ],
+      "y0_Bezout_coefficients": [
+        "58*x**2/27 - 1/36",
+        "8*x/27"
+      ],
+      "P8": "25*y**8 + 2800*y**6 - 4480*y**4 + 1920*y**2 - 256",
+      "x_as_polynomial_in_y": "-y*(65*y**6 + 7180*y**4 - 22864*y**2 + 15936)/5888",
+      "linear_subresultant": "-960*y*(125*x*y**6 - 2920*x*y**4 + 1680*x*y**2 + 512*x - 125*y**7 + 1000*y**5 - 3000*y**3 + 2080*y)",
+      "units": {
+        "a": {
+          "guard": "65*y**7/1472 + 1795*y**5/368 - 1429*y**3/92 + 134*y/23",
+          "guard_coefficient": "-535*y**7/4416 - 60185*y**5/4416 + 16519*y**3/1104 - 415*y/276",
+          "polynomial_coefficient": "1391*y**6/6500352 + 51447*y**4/2166784 - 25805*y**2/406272 - 1/256"
+        },
+        "root_separation": {
+          "guard": "-65*y**7/5888 - 1795*y**5/1472 + 1429*y**3/368 - 341*y/92",
+          "guard_coefficient": "-125*y**7/4416 - 3505*y**5/1104 + 2515*y**3/552 - 319*y/138",
+          "polynomial_coefficient": "-325*y**6/26001408 - 749*y**4/541696 + 13559*y**2/3250176 - 1/256"
+        },
+        "y": {
+          "guard": "y",
+          "guard_coefficient": "25*y**7/256 + 175*y**5/16 - 35*y**3/2 + 15*y/2",
+          "polynomial_coefficient": "-1/256"
+        },
+        "x": {
+          "guard": "-65*y**7/5888 - 1795*y**5/1472 + 1429*y**3/368 - 249*y/92",
+          "guard_coefficient": "-105*y**7/368 - 11855*y**5/368 + 4039*y**3/184 - 265*y/46",
+          "polynomial_coefficient": "-273*y**6/2166784 - 30403*y**4/2166784 + 34245*y**2/1083392 - 1/256"
+        }
+      },
+      "distinct_marked_coefficient_points": 8,
+      "complete_leading_period_and_high_jet_sector": true,
+      "global_finite_map": false
+    }
+  ],
+  "total_distinct_marked_two_root_points": 16,
+  "finite_map_constructed": false
+}

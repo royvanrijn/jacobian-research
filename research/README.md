@@ -5,6 +5,8 @@ produce high-rank families. Start with the [current status](STATUS.md) and the
 canonical source for the claim you need. [MATH_STATUS.json](MATH_STATUS.json)
 remains the sole mathematical-status authority.
 
+[Recent papers and1152 transfer](elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) · [Rational-point method adoption](elliptic-curves/notes/XNS121_METHOD_TRANSFER_2026-11-13.md).
+
 | Need | Entry point |
 |---|---|
 | Elliptic curves and rank jumps | [Programme map](elliptic-curves/README.md) · [Curve inventory](elliptic-curves/INVENTORY.md) |
@@ -32,8 +34,12 @@ Search and work lists default to this programme. `--history` includes the
 retained claim. Archiving preserves mathematical states and unfinished
 obligations. It does not mark them proved or completed.
 
+The explicitly requested [Jacobian follow-ups](jacobian-followup/README.md)
+record the de Bondt audit and the normal-r7 affine cusp reduction separately
+from the historical work queue.
+
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT f36c4d02969820a7 -->
+<!-- status-consumer: OP-EC-NEXT bc6dee6b0252f174 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

@@ -1,0 +1,15 @@
+{
+  "name": "primitive-discriminant-pilot",
+  "cap_seconds": 120,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 100,
+  "source_sha256": "c75ac26c420716d89968c721c5241ce73b0846082a34d02c5bf8090c724b3a74",
+  "script_sha256": "b96975b1cba7c52a83b3b8adf096578a52e58cb077f3a0af5d49f8c7918a731e",
+  "theorem_exclusion": false,
+  "motivation": "Compute degree8 residual discriminant before primitive a-remainder reduction on the degree8 plane curve; a different finite-norm representation from retained global lifts.",
+  "outcome": "completed",
+  "returncode": 0,
+  "seconds": 37.658388545998605,
+  "artifact_bytes": 2351316,
+  "artifact_sha256": "36c79a09db0f0c7f213fed832302b718d21fac7f24cce031087627ec8e32ef5e"
+}

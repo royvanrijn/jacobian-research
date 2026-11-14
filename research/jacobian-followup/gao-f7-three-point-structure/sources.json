@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "path": "../gao-f7-three-point/elliptic-cusp-input.json",
+      "sha256": "3155825ee6ddacd1528fc44c7e123050a04e888112f0823096c3ca5c02f21f7c"
+    },
+    {
+      "path": "../gao-f7-three-point/verify.py",
+      "sha256": "efdabe7ba7b732e7b19d0ab6e3e5ca85ba265bf694cf79c954cfdfd1a3718f9a"
+    },
+    {
+      "path": "../gao-f7-three-point/sources/schuett-shioda-0907.0298.pdf",
+      "sha256": "eeac47d53b52e96a1d2457a131dcce474332dd6b226e4dcd944575e995aa44b1"
+    },
+    {
+      "path": "../gao-f7-three-point/sources/fisher-binary-quartics.pdf",
+      "sha256": "9c4ed5bf1c5f39a5552a51317c627bba78993fd92cc2a5d09c6208bb906da72f"
+    }
+  ],
+  "scope": "Inherited GAOF7CUSP1 model and primary sources. Height formula: Schuett-Shioda Section11.8, Theorem11.5 and Table4."
+}

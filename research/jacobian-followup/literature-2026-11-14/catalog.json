@@ -1,0 +1,326 @@
+{
+  "as_of": "2026-11-14",
+  "scope": "Targeted supplement to literature-2026-11-13/catalog.json; not a replacement for its historical 48-record snapshot",
+  "record_count": 20,
+  "new_to_previous_catalog_count": 10,
+  "external_theorems_newly_imported": 0,
+  "mathematical_status_authority": "../../MATH_STATUS.json",
+  "limitations": [
+    "Targeted primary-source review, not bibliographic exhaustiveness or an independent proof audit",
+    "AI provenance does not establish validity or novelty",
+    "GitHub directory dates are labels, not independently established publication dates",
+    "No Lean development was compiled and no research campaign was launched",
+    "Campaign labels distinguish manual cross-model review, producer checking and unpromoted public-artifact status; none is silently equated with refereeing."
+  ],
+  "records": [
+    {
+      "id": "tang-hc4-jc2",
+      "title": "Equivalence of the Four-Variable Hessian and Planar Jacobian Conjectures",
+      "authors": [
+        "Qiyue Tang"
+      ],
+      "version": "Hexagon 2611.00156v1",
+      "published": "2026-11-06",
+      "url": "https://hexagonmath.org/2611.00156v1",
+      "review_depth": "Current primary page and provenance rechecked; existing local structural audit inspected",
+      "relevance": "Already incorporated as HCTANG2/HCTANG3; audit coverage before extending arbitrary-degree HC4 work",
+      "gate": "Written reproduction is not independent external review",
+      "local_source": "../tang-hc4-audit/README.md",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "giraudin-hc4-five",
+      "title": "The four-dimensional Hessian conjecture for potentials of degree at most five",
+      "authors": [
+        "David Niedbala Giraudin"
+      ],
+      "version": "Hexagon 2611.00161v1",
+      "published": "2026-11-06",
+      "url": "https://hexagonmath.org/2611.00161v1",
+      "review_depth": "Current primary page, methods, unrefereed statement and provenance inspected; local audit inspected",
+      "relevance": "OP-HC4-D5 already closed locally by reproduction",
+      "gate": "Potential degree differs from parameterization degree",
+      "local_source": "../hc4-degree-five-audit/README.md",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "fonollosa-normalization",
+      "title": "Coordinate descents, monodromy, and finite normalization of marked-root maps",
+      "authors": [
+        "José A. R. Fonollosa"
+      ],
+      "version": "arXiv:2609.33491v1",
+      "published": "2026-09-27",
+      "url": "https://arxiv.org/abs/2609.33491v1",
+      "review_depth": "Current abstract/version and existing local normalization adoption inspected",
+      "relevance": "Full omitted-prime ledger including unramified loss",
+      "gate": "Higher-dimensional examples do not supply a plane normalization",
+      "local_source": "../jc2-omitted-divisors/INPUT_GATE.md",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "suciu-twisted-quartics",
+      "title": "Twisted pencils of quartics, braid monodromy factorizations, and non-Hopfian Hurwitz curves",
+      "authors": [
+        "Alexander I. Suciu"
+      ],
+      "version": "arXiv:2611.11092v1",
+      "published": "2026-11-08",
+      "url": "https://arxiv.org/html/2611.11092v1",
+      "review_depth": "Introduction, centrality, factorization conventions, Alexander/characteristic-variety arguments, finite Hurwitz-orbit example and AI acknowledgment inspected; no full proof audit",
+      "relevance": "Additional joint C/B/H braid and algebraicity obstruction methods",
+      "gate": "Must prove the relevant Hurwitz/full-twist hypotheses and retain marked infinity; no r7 exclusion imported",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "sage-zariski-vankampen",
+      "title": "Zariski-Van Kampen method implementation",
+      "authors": [
+        "SageMath contributors"
+      ],
+      "version": "Online reference manual 10.10 inspected",
+      "published": null,
+      "url": "https://doc.sagemath.org/html/en/reference/curves/sage/schemes/curves/zariski_vankampen.html",
+      "review_depth": "API, field hypotheses, SIROCCO dependency and component-labelled arrangement interface inspected",
+      "relevance": "Certified relation generation for finite S6 representation tests",
+      "gate": "No runtime or research computation performed; specialization transport remains mathematical work",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "la-moka",
+      "title": "LA-MOKA: A Combinatorial Discretization Algorithm for the Braid Monodromy of Line Arrangements",
+      "authors": [
+        "Benoît Guerville-Ballé"
+      ],
+      "version": "arXiv:2607.29333v1",
+      "published": "2026-07-31",
+      "url": "https://arxiv.org/abs/2607.29333v1",
+      "review_depth": "Primary abstract and version inspected",
+      "relevance": "Certified discretization strategy",
+      "gate": "The stated algorithm covers line arrangements, not the nonlinear r7 images",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "openai-cancellation",
+      "title": "An explicit failure of complex affine-space cancellation",
+      "authors": [
+        "Unnamed internal OpenAI model; repository attribution"
+      ],
+      "version": "Directory dated September 23 2026, current main inspected",
+      "published": null,
+      "url": "https://github.com/openai/math/tree/main/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026",
+      "review_depth": "Full introduction and rigidity section source inspected; intermediate global argument and Lean files not audited",
+      "relevance": "Exact valuation degeneration, principalizing line-bundle lift, polynomial abc and homogeneous locally nilpotent derivations",
+      "gate": "Need a valid derivation-extension/filtration theorem for the actual Wright inclusion; normalization itself need not be A2",
+      "new_to_48_record_catalog": true,
+      "source_blobs": [
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/01-introduction.tex",
+          "git_blob_sha": "24aa86555e317b8c7e1e60893475e95ae3b65473"
+        },
+        {
+          "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/build/sections/06-rigidity.tex",
+          "git_blob_sha": "438a1699cec9f501e558c46cdb4dbf234f4ab9a5"
+        }
+      ]
+    },
+    {
+      "id": "openai-log-additivity",
+      "title": "The reverse logarithmic Kodaira inequality and additivity",
+      "authors": [
+        "Unnamed internal OpenAI model; repository attribution"
+      ],
+      "version": "Directory dated September 26 2026, current main inspected",
+      "published": null,
+      "url": "https://github.com/openai/math/tree/main/preprints/The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026",
+      "review_depth": "Introduction and precise main theorem hypotheses inspected; remaining proof and Lean development not audited",
+      "relevance": "Possible organization of compactified image pencils and bifurcation boundaries",
+      "gate": "Projective reduced-SNC pair, connected fibres and smooth boundary strata over the open base required; deleting fibres changes logarithmic Kodaira dimension",
+      "new_to_48_record_catalog": true,
+      "source_blobs": [
+        {
+          "path": "preprints/The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026/build/sections/introduction.tex",
+          "git_blob_sha": "c944b5f536b3bacab98bc997f91d37e1d28a58c3"
+        }
+      ]
+    },
+    {
+      "id": "adamus-hajto-legendre",
+      "title": "The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture",
+      "authors": [
+        "Elżbieta Adamus",
+        "Zbigniew Hajto"
+      ],
+      "version": "arXiv:2610.36736v1",
+      "published": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.36736v1",
+      "review_depth": "Current primary abstract and full-text access checked; exact criteria and cautions inspected",
+      "relevance": "Concrete gradient-subring membership and derivative termination certificate",
+      "gate": "Must establish membership or termination; doubling gives no independent conditions",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "jelonek-bounded-components",
+      "title": "On mappings with Jacobian one",
+      "authors": [
+        "Zbigniew Jelonek"
+      ],
+      "version": "arXiv:2607.20597v2",
+      "published": "2026-07-22",
+      "updated": "2026-10-25",
+      "url": "https://arxiv.org/abs/2607.20597v2",
+      "review_depth": "Current primary abstract/version inspected",
+      "relevance": "Closed automorphism locus in bounded-degree map schemes",
+      "gate": "Boundary-image coefficient families are not automatically actual Keller-map schemes",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "kanel-belov-fedorov",
+      "title": "The generalized Dixmier conjecture and the two-dimensional Jacobian conjecture",
+      "authors": [
+        "Alexey Kanel-Belov",
+        "Timofey Fedorov"
+      ],
+      "version": "arXiv:2610.33919v1",
+      "published": "2026-10-24",
+      "url": "https://arxiv.org/abs/2610.33919v1",
+      "review_depth": "Current primary abstract/version and converse prerequisites inspected",
+      "relevance": "Graph-module lift or uniform Berest-Wilson boundedness route",
+      "gate": "Uniqueness does not supply existence of characteristic-zero lifts",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "de-bondt-economic",
+      "title": "Alpöge's counterexample to the JC, Economic Stabilization, and Zhao's Vanishing Conjecture",
+      "authors": [
+        "Michiel de Bondt"
+      ],
+      "version": "arXiv:2610.24889v1",
+      "published": "2026-10-17",
+      "url": "https://arxiv.org/abs/2610.24889v1",
+      "review_depth": "Current primary abstract/version and local follow-up inspected",
+      "relevance": "Smaller higher-dimensional witnesses and economic stabilization",
+      "gate": "No plane descent",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "demin-groebner-tracing",
+      "title": "Groebner.jl: Fast Gröbner Tracing in Julia",
+      "authors": [
+        "Alexander Demin"
+      ],
+      "version": "arXiv:2607.06372v3",
+      "published": "2026-07-07",
+      "updated": "2026-08-01",
+      "url": "https://arxiv.org/abs/2607.06372v3",
+      "review_depth": "Current primary abstract/version inspected; prior local F7 adoption identified",
+      "relevance": "Reusable F4 traces for repeated modular/evaluation computations",
+      "gate": "Exploration output still needs characteristic-zero certificates and exceptional-chart coverage",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "wang-yan-quartic-three",
+      "title": "Quartic Keller Maps and Tameness in Three Variables",
+      "authors": [
+        "Jie Wang",
+        "Dan Yan"
+      ],
+      "version": "arXiv:2610.36495v1",
+      "published": "2026-10-27",
+      "url": "https://arxiv.org/html/2610.36495v1",
+      "review_depth": "Theorem1.1, scope, leading-form reduction and selected residue/cubic-component proof sections inspected; no full independent reproduction",
+      "relevance": "Conditional dense exclusion of 20 of 74 invariant flags in OP-GLDC, 16 beyond the four local quadratic exclusions",
+      "gate": "Accept the full invertibility proof before changing GLDC1 or OP-GLDC; ordinary degree at most four differs from geometric degree four",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "van-dobben-complements",
+      "title": "Divisors in projective bundles over the projective line whose complement is affine space",
+      "authors": [
+        "Remy van Dobben de Bruyn"
+      ],
+      "version": "arXiv:2608.27341v2",
+      "published": "2026-08-27",
+      "updated": "2026-09-14",
+      "url": "https://arxiv.org/html/2608.27341v2",
+      "review_depth": "Current version, corrected theorem hypotheses and local adoption inspected",
+      "relevance": "Already used by compatible ruled-completion direction",
+      "gate": "Actual projective-bundle and fibre-hyperplane hypotheses must be established for the normalization",
+      "new_to_48_record_catalog": false
+    },
+    {
+      "id": "jc2-nonzero-dual",
+      "title": "Nonzero target-linear dual criterion: independent FIRST and binding integration",
+      "authors": [
+        "swarmHQ contributors to dcposch/jc2"
+      ],
+      "version": "Git commit db01d6034600ce8e85ed706db2d4e8fa4359f4fe",
+      "published": "2026-09-23",
+      "url": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/nonzero-dual-first-integration-swarmHQ-root-20260923T155000Z.md",
+      "review_depth": "Full elementary proof, exclusions and review-status limitations inspected",
+      "relevance": "Specific properness endpoint Hom_A(C[x,y],A) nonzero, with no normalized or multiplicative functional requirement",
+      "gate": "One multiplier must work for every source polynomial; no existence supplied and no theorem registered locally",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "jc2-three-double-primitivity",
+      "title": "Three double-fiber values: independent FIRST and integration",
+      "authors": [
+        "swarmHQ contributors to dcposch/jc2"
+      ],
+      "version": "Git commit db01d6034600ce8e85ed706db2d4e8fa4359f4fe",
+      "published": "2026-10-20",
+      "url": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/three-double-fiber-review-swarmHQ-sol56-root-20261020T172346Z.md",
+      "review_depth": "Full statement, elementary Riemann-Hurwitz proof and multiplicity/primitivity gates inspected",
+      "relevance": "Conditional test for a supplied primitive image pencil",
+      "gate": "At most three nonreduced affine fibre divisors and every component multiplicity at most two; existence of an image pencil is insufficient",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "jc2-divisorial-projectivity",
+      "title": "Projectivity of the actual divisorial compactification",
+      "authors": [
+        "swarmHQ contributors to dcposch/jc2"
+      ],
+      "version": "Git commit db01d6034600ce8e85ed706db2d4e8fa4359f4fe",
+      "published": "2026-10-25",
+      "url": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/divisorial-projectivity-swarmHQ-root-astra-20261025.md",
+      "review_depth": "Full source fetched; actual-divisorial hypotheses, projectivity argument, finite-iterate and index limitations inspected",
+      "relevance": "Conditional algebraization of a specified boundary compactification",
+      "gate": "Actual divisorial package required; no uniform index bound; source header retains PRODUCER-CHECKED / UNPROMOTED pending public-artifact review",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "jc2-wright-carrier-controls",
+      "title": "Finite-moment countercontrol and full F10 normalization carrier",
+      "authors": [
+        "swarmHQ contributors to dcposch/jc2"
+      ],
+      "version": "Git commit db01d6034600ce8e85ed706db2d4e8fa4359f4fe",
+      "published": "2026-10-16",
+      "url": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/finite-moment-review-integration-swarmHQ-sol56-root-20261016T010647Z.md",
+      "related_urls": [
+        "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/APPROACHES.md",
+        "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/f10-full-normalization-integration-swarmHQ-root-20261015T223201Z.md"
+      ],
+      "review_depth": "Full moment countercontrol, F10 normalization integration and research-map carrier excerpt inspected",
+      "relevance": "Embedded ring C[U,UV,UV^2,UV^3-V] is literally our Wright ring under U=-Y,V=X; all-moment non-Keller control prevents a proposed shortcut",
+      "gate": "F10 finiteness is conditional on complete guarded input; no arbitrary pair, quartic realization or completion-valuation identification follows",
+      "new_to_48_record_catalog": true
+    },
+    {
+      "id": "jc2-carrier-pencil",
+      "title": "Review of the carrier pencil obstruction",
+      "authors": [
+        "swarmHQ contributors to dcposch/jc2"
+      ],
+      "version": "Git commit db01d6034600ce8e85ed706db2d4e8fa4359f4fe",
+      "published": "2026-10-16",
+      "url": "https://github.com/dcposch/jc2/blob/db01d6034600ce8e85ed706db2d4e8fa4359f4fe/xmodel/carrier-pencil-review-integration-swarmHQ-sol56-root-20261016T063000Z.md",
+      "review_depth": "Full binding statement and polynomial-mate proof inspected; stronger rational argument read",
+      "relevance": "Existing all-degree obstruction for constant-direction repairs of one finite map on the identical embedded Wright ring",
+      "gate": "Does not exclude arbitrary dependent increments, general pairs or every deformation; manual campaign cross-review is not formal or external human verification",
+      "new_to_48_record_catalog": true
+    }
+  ]
+}

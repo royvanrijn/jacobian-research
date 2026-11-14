@@ -1,0 +1,137 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "EXACT_COORDINATES_COMPUTED",
+  "parameter_domain": "Q[a,b,b^-1], b!=0; every complex specialization with b!=0",
+  "cases": [
+    {
+      "name": "contact_at_marked",
+      "boundary_columns": {
+        "B": [
+          "s",
+          "t**2"
+        ],
+        "E": [
+          "s*(a*s + b*t)",
+          "s**3 + t**2*(a*s + b*t)"
+        ]
+      },
+      "cox_equations": {
+        "B": "alpha*s + beta*t**2",
+        "E": "alpha*s*(a*s + b*t) + beta*(s**3 + t**2*(a*s + b*t))"
+      },
+      "forward": {
+        "s": "x",
+        "t": "-a*x/b - b*x**3 - x**4*y/b + 1/b",
+        "alpha": "-a**2*x - a**2*x**2*y/b**2 - 2*a*b**2*x**3 - 4*a*x**4*y + 2*a - 2*a*x**5*y**2/b**2 + 2*a*x*y/b**2 - b**4*x**5 - 3*b**2*x**6*y + 2*b**2*x**2 - 3*x**7*y**2 + 4*x**3*y - x**8*y**3/b**2 + 2*x**4*y**2/b**2 - y/b**2",
+        "beta": "b**2 + x*y"
+      },
+      "inverse_y": "-a**2*beta*s - 2*a*beta**2*s**3 + 2*a*beta - alpha*b**2 - beta**3*s**5 + 2*beta**2*s**2",
+      "eliminated_t": "(-a*s - beta*s**3 + 1)/b",
+      "single_relation": "a**2*beta*s**2 + 2*a*beta**2*s**4 - 2*a*beta*s + alpha*b**2*s - b**2 + beta**3*s**6 - 2*beta**2*s**3 + beta",
+      "reverse_identity_multipliers": {
+        "alpha": "(a**4*beta**2*s**9 + 4*a**3*beta**3*s**11 - 4*a**3*beta**2*s**8 - 2*a**3*beta*s**5 + 2*a**2*alpha*b**2*beta*s**8 - 2*a**2*b**2*beta*s**7 + 6*a**2*beta**4*s**13 - 12*a**2*beta**3*s**10 - a**2*beta**2*s**7 + 6*a**2*beta*s**4 + a**2*s + 4*a*alpha*b**2*beta**2*s**10 - 4*a*alpha*b**2*beta*s**7 - 2*a*alpha*b**2*s**4 - 4*a*b**2*beta**2*s**9 + 4*a*b**2*beta*s**6 + 2*a*b**2*s**3 + 4*a*beta**5*s**15 - 12*a*beta**4*s**12 + 4*a*beta**3*s**9 + 10*a*beta**2*s**6 - 2*a*beta*s**3 - 2*a + alpha**2*b**4*s**7 - 2*alpha*b**4*s**6 + 2*alpha*b**2*beta**3*s**12 - 4*alpha*b**2*beta**2*s**9 - alpha*b**2*beta*s**6 + 2*alpha*b**2*s**3 + b**4*s**5 - 2*b**2*beta**3*s**11 + 4*b**2*beta**2*s**8 + b**2*beta*s**5 - 2*b**2*s**2 + beta**6*s**17 - 4*beta**5*s**14 + 3*beta**4*s**11 + 4*beta**3*s**8 - 3*beta**2*s**5 - 2*beta*s**2)/b**2",
+        "beta": "-1",
+        "t": "s**3/b"
+      },
+      "ordered_section_basis": [
+        "alpha*t",
+        "beta*t**2",
+        "beta*s*t",
+        "beta*s**2"
+      ],
+      "source_sections": [
+        "a**3*x**2/b + a**3*x**3*y/b**3 + 3*a**2*b*x**4 + 6*a**2*x**5*y/b - 3*a**2*x/b + 3*a**2*x**6*y**2/b**3 - 3*a**2*x**2*y/b**3 + 3*a*b**3*x**6 + 9*a*b*x**7*y - 6*a*b*x**3 + 9*a*x**8*y**2/b - 12*a*x**4*y/b + 2*a/b + 3*a*x**9*y**3/b**3 - 6*a*x**5*y**2/b**3 + 3*a*x*y/b**3 + b**5*x**8 + 4*b**3*x**9*y - 3*b**3*x**5 + 6*b*x**10*y**2 - 9*b*x**6*y + 2*b*x**2 + 4*x**11*y**3/b - 9*x**7*y**2/b + 5*x**3*y/b + x**12*y**4/b**3 - 3*x**8*y**3/b**3 + 3*x**4*y**2/b**3 - y/b**3",
+        "a**2*x**2 + a**2*x**3*y/b**2 + 2*a*b**2*x**4 + 4*a*x**5*y - 2*a*x + 2*a*x**6*y**2/b**2 - 2*a*x**2*y/b**2 + b**4*x**6 + 3*b**2*x**7*y - 2*b**2*x**3 + 3*x**8*y**2 - 4*x**4*y + 1 + x**9*y**3/b**2 - 2*x**5*y**2/b**2 + x*y/b**2",
+        "-a*b*x**2 - a*x**3*y/b - b**3*x**4 - 2*b*x**5*y + b*x - x**6*y**2/b + x**2*y/b",
+        "b**2*x**2 + x**3*y"
+      ],
+      "section_degrees": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "section_top_forms": [
+        "x**12*y**4/b**3",
+        "x**9*y**3/b**2",
+        "-x**6*y**2/b",
+        "x**3*y"
+      ],
+      "section_vanishing_orders_at_contact": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "contact_away_marked",
+      "boundary_columns": {
+        "B": [
+          "t",
+          "s**2"
+        ],
+        "E": [
+          "-s**2 + t*(a*s + b*t)",
+          "s**2*(a*s + b*t)"
+        ]
+      },
+      "cox_equations": {
+        "B": "alpha*t + beta*s**2",
+        "E": "alpha*(-s**2 + t*(a*s + b*t)) + beta*s**2*(a*s + b*t)"
+      },
+      "forward": {
+        "s": "x",
+        "t": "a*x**3 - a*x/b + x**2 + x**4*y/b + 1/b",
+        "alpha": "a*b*x + b + x**2*y",
+        "beta": "-a**2*b*x**2 + a**2 - 2*a*b*x - 2*a*x**3*y + a*x*y/b - b - 2*x**2*y - x**4*y**2/b - y/b"
+      },
+      "inverse_y": "a**2*alpha - a*alpha**2*s - a*b*beta*s - alpha**2 - b*beta",
+      "eliminated_t": "(-a*s + alpha*s**2 + 1)/b",
+      "single_relation": "-a*alpha*s + alpha**2*s**2 + alpha + b*beta*s**2 - b",
+      "reverse_identity_multipliers": {
+        "alpha": "-a*s - 1",
+        "beta": "(a**3*alpha*s**3 - a**2*alpha**2*s**4 + a**2*alpha*s**2 - a**2*b*beta*s**4 + a**2*b*s**2 - a**2 - 2*a*alpha**2*s**3 + a*alpha*s - 2*a*b*beta*s**3 + 2*a*b*s - alpha**2*s**2 + alpha - b*beta*s**2 + b)/b",
+        "t": "(-a*s**3 - s**2)/b"
+      },
+      "ordered_section_basis": [
+        "beta*t**2",
+        "beta*s*t",
+        "alpha*t",
+        "alpha*s"
+      ],
+      "source_sections": [
+        "-a**4*b*x**8 + 3*a**4*x**6 - 3*a**4*x**4/b + a**4*x**2/b**2 - 4*a**3*b*x**7 - 4*a**3*x**9*y + 6*a**3*x**5 + 9*a**3*x**7*y/b - 6*a**3*x**5*y/b**2 - 2*a**3*x/b**2 + a**3*x**3*y/b**3 - 6*a**2*b*x**6 - 12*a**2*x**8*y + a**2*x**4 - 6*a**2*x**10*y**2/b + 9*a**2*x**6*y/b + 4*a**2*x**2/b + 9*a**2*x**8*y**2/b**2 + 6*a**2*x**4*y/b**2 + a**2/b**2 - 3*a**2*x**6*y**2/b**3 - 3*a**2*x**2*y/b**3 - 4*a*b*x**5 - 12*a*x**7*y - 4*a*x**3 - 12*a*x**9*y**2/b - 7*a*x**5*y/b - 4*a*x**11*y**3/b**2 + 4*a*x**3*y/b**2 + 3*a*x**9*y**3/b**3 + 6*a*x**5*y**2/b**3 + 3*a*x*y/b**3 - b*x**4 - 4*x**6*y - 2*x**2 - 6*x**8*y**2/b - 7*x**4*y/b - 1/b - 4*x**10*y**3/b**2 - 8*x**6*y**2/b**2 - 4*x**2*y/b**2 - x**12*y**4/b**3 - 3*x**8*y**3/b**3 - 3*x**4*y**2/b**3 - y/b**3",
+        "-a**3*b*x**6 + 2*a**3*x**4 - a**3*x**2/b - 3*a**2*b*x**5 - 3*a**2*x**7*y + 2*a**2*x**3 + 4*a**2*x**5*y/b + a**2*x/b - a**2*x**3*y/b**2 - 3*a*b*x**4 - 6*a*x**6*y - a*x**2 - 3*a*x**8*y**2/b + 2*a*x**6*y**2/b**2 + 2*a*x**2*y/b**2 - b*x**3 - 3*x**5*y - x - 3*x**7*y**2/b - 3*x**3*y/b - x**9*y**3/b**2 - 2*x**5*y**2/b**2 - x*y/b**2",
+        "a**2*b*x**4 - a**2*x**2 + 2*a*b*x**3 + 2*a*x**5*y - a*x**3*y/b + b*x**2 + 2*x**4*y + 1 + x**6*y**2/b + x**2*y/b",
+        "a*b*x**2 + b*x + x**3*y"
+      ],
+      "section_degrees": [
+        16,
+        12,
+        8,
+        4
+      ],
+      "section_top_forms": [
+        "-x**12*y**4/b**3",
+        "-x**9*y**3/b**2",
+        "x**6*y**2/b",
+        "x**3*y"
+      ],
+      "section_vanishing_orders_at_contact": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "source_sha256": "3b36980e0a2ddc42ead8dabfa041127df1c387912b21be7467c1cf00d1f4b3ee",
+  "assurance": {
+    "normal_form_coverage": "written proof",
+    "cox_slice_interpretation": "written proof",
+    "all_height_section_generation": "written monomial-factorization proof",
+    "imported_degree_theorem_independently_reproved": false
+  },
+  "elapsed_seconds": 0.376781
+}

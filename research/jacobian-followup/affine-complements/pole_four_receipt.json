@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 17,
+  "checks": [
+    "normal-form exterior coefficient (T, A)",
+    "normal-form exterior coefficient (T, H)",
+    "normal-form exterior coefficient (T, C)",
+    "normal-form exterior coefficient (A, H)",
+    "normal-form exterior coefficient (A, C)",
+    "normal-form exterior coefficient (H, C)",
+    "first residual normalization core",
+    "first residual normalization dT dD",
+    "pole-six integrating identity",
+    "pole-five cubic integrating identity",
+    "base-point-free cubic leading relation",
+    "cubic leading data have no common zero",
+    "independent exterior reconstruction of all lift parameters",
+    "unavoidable pole-four coefficient is four",
+    "control producer hash",
+    "saved control coefficient matches independent reconstruction",
+    "exact unit certificate for the full six-parameter control family"
+  ],
+  "written_result": "Every reduced (3,4) candidate has a four-V1-section normal form; the specified six-parameter cubic-symbol lift family is excluded",
+  "remaining_scalar_parameter_count": 21,
+  "scope": "PF2RULED3 normal form and one control; complete pole-four exclusion is PF2RULED4",
+  "excluded_control_unit_certificate": {
+    "equation_index": 3,
+    "multiplier": "1/4"
+  },
+  "assurance": {
+    "full_pole_four_layer_excluded": false,
+    "finite_map_constructed": false,
+    "actual_ruled_compatibility_proved": false,
+    "formal_verification": false,
+    "independent_full_reproof": false
+  },
+  "source_sha256": {
+    "verify_pole_four.py": "caea5f1249b88ca8ab09735b5a0ae13ff9ad32fa3575a8d485fc295b818c3113",
+    "POLE_FOUR_FRONTIER.md": "8c624bbec2d67b815d57c2070ad5f7ef28ce1c43fca0cef6220acaa98e5fd447",
+    "explore_pole4_cubic_control.py": "37469ed7b279a7d715db12db177d33c3e178f5ddc2155ec650bf1e1f76f3889b"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.197021
+}

@@ -1,0 +1,11 @@
+{"stage": "compiled", "buckets": 1329}
+{"stage": "independent", "status": "incomplete", "visited": 348920, "pending": 213, "retained": 0, "elapsed_seconds": 25.000409736006986}
+{"stage": "independent", "status": "incomplete", "visited": 711058, "pending": 244, "retained": 0, "elapsed_seconds": 50.13653030298883}
+{"stage": "independent", "status": "incomplete", "visited": 1082360, "pending": 182, "retained": 0, "elapsed_seconds": 75.41642702798708}
+{"stage": "independent", "status": "incomplete", "visited": 1456440, "pending": 324, "retained": 0, "elapsed_seconds": 100.84968680000748}
+{"stage": "independent", "status": "incomplete", "visited": 1827653, "pending": 92, "retained": 0, "elapsed_seconds": 126.43586950498866}
+{"stage": "independent", "status": "incomplete", "visited": 2183865, "pending": 349, "retained": 0, "elapsed_seconds": 152.2146916849888}
+{"stage": "independent", "status": "incomplete", "visited": 2552097, "pending": 355, "retained": 0, "elapsed_seconds": 178.10813924801187}
+{"stage": "independent", "status": "incomplete", "visited": 2930674, "pending": 188, "retained": 0, "elapsed_seconds": 204.15229131298838}
+{"stage": "independent", "status": "incomplete", "visited": 3271208, "pending": 156, "retained": 0, "elapsed_seconds": 230.31744028400863}
+{"stage": "independent", "status": "incomplete", "visited": 3391790, "pending": 80, "retained": 0, "elapsed_seconds": 240.00013513100566}

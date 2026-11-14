@@ -1,0 +1,69 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "AlpogeStabilizationVC.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section1.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section2a.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section2b.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section2c.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section2d.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section3a.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section3b.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section3c.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section3d.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section3e.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section4a.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section4b.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section4c.mac"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "anc/section4d.mac"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

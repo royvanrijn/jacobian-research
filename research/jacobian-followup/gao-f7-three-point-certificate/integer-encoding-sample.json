@@ -1,0 +1,10 @@
+{
+  "node": 593,
+  "relation_terms": 275,
+  "rational_coefficient_characters": 1542214,
+  "integer_coefficient_characters": 2009212,
+  "divisor_digits": 5588,
+  "max_integer_digits": 7569,
+  "seconds": 1.475081759999739,
+  "identity": "G_i=(sum(N_ij*monomial*G_j))/D_i, where G_j=d_j*g_j and d_j clears all polynomial coefficient denominators."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "schuett-shioda-0907.0298.pdf",
+    "url": "https://arxiv.org/pdf/0907.0298",
+    "sha256": "eeac47d53b52e96a1d2457a131dcce474332dd6b226e4dcd944575e995aa44b1",
+    "bytes": 919673
+  },
+  {
+    "file": "fisher-binary-quartics.pdf",
+    "url": "https://www.dpmms.cam.ac.uk/~taf1000/papers/bq-ctp.pdf",
+    "sha256": "9c4ed5bf1c5f39a5552a51317c627bba78993fd92cc2a5d09c6208bb906da72f",
+    "bytes": 336691
+  }
+]

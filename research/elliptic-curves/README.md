@@ -8,6 +8,8 @@
 
 ## Current milestone
 
+[November adoption](../elkies-k3/RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md) independently replays the public rank-at-least32 curve and imports1152 cover families. [Xns121 method transfer](notes/XNS121_METHOD_TRANSFER_2026-11-13.md) records14 checked finite localization conditions and the unverified global prerequisites. The programme still seeks its own new rank32 curve.
+
 Curve302 has a certified rank lower bound31. Its
 [alternative determinant1092 MW17 parent](notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md)
 is explicit with a full saturated generic basis; construction recovery is complete.

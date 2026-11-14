@@ -1,0 +1,64 @@
+[AUDIT_RUNTIME] {"python": "3.14.7", "sage": "10.9", "flint": "0.9.0", "sympy": "1.14.0", "compatibility_shim": "sage.all__sagemath_singular -> sage.all"}
+determinant du cone unaire : 579 composantes (3 s)
+========================================================================
+Cone unaire, partie 3 : A4 = 0
+========================================================================
+  [OK]    W0 det Hess A3 = 0 (A3 cubique ternaire : cone)  (3 s)
+
+[W1] A3 binaire en (x2, x3)
+  [OK]    W1 A3 = x2**3 + x3**3 : peel coherent  (3 s)
+  [OK]    W1 A3 = x2**3 + x3**3, a31 = 1 : incoherent  (3 s)
+  [OK]    W1 A3 = x2**3 + x3**3, a31 = 0 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W1 A3 = x2**2 x3 : peel coherent  (3 s)
+  [OK]    W1 A3 = x2**2 x3, a31 = 1 : incoherent  (3 s)
+  [OK]    W1 A3 = x2**2 x3, a31 = 0 : x4 direction morte (lemme A ou L)  (3 s)
+
+[W2] A3 = x2**3
+  [OK]    W2 x1**2 Q(x3,x4) carre parfait  (3 s)
+  [OK]    W2 a27 = 1 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W2 a29 = 1 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W2 cubique en (x3,x4) cube parfait : -b1^2 + 3*b0*b2  (3 s)
+  [OK]    W2 cubique en (x3,x4) cube parfait : b1*b2 - 9*b0*b3  (3 s)
+  [OK]    W2 cubique en (x3,x4) cube parfait : -b2^2 + 3*b1*b3  (3 s)
+  [OK]    W2 b3 = 1 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W2 x2 Q(x3,x4) carre parfait  (3 s)
+  [OK]    W2 b6 = 1 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W2 b6 = 0 : f quadratique en (x3,x4), f_zz = A0 + x1 A1  (3 s)
+  [OK]    W2 b6 = 0 : A1 de rang 2 incoherent  (3 s)
+
+[W3] A3 = 0
+  [OK]    W3 det A2 = 0 (forme quadratique de x1**2 A2)  (3 s)
+  [OK]    W3 A2 = x2 x3, a31 = 1 : incoherent  (3 s)
+  [OK]    W3 A2 = x2 x3, a31 = 0 : x4 direction morte (lemme A ou L)  (3 s)
+  [OK]    W3 A2 = x2**2 : cubique en (x3,x4) cube parfait : -b1^2 + 3*b0*b2  (3 s)
+  [OK]    W3 A2 = x2**2 : cubique en (x3,x4) cube parfait : b1*b2 - 9*b0*b3  (3 s)
+  [OK]    W3 A2 = x2**2 : cubique en (x3,x4) cube parfait : -b2^2 + 3*b1*b3  (3 s)
+  [OK]    W3 A2 = x2**2, b3 = 1, a31 = 0 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W3 A2 = x2**2, b3 = 1, a31 = 1 : incoherent  (4 s)
+  [OK]    W3 A2 = x2**2 : x2 Q(x3,x4) carre parfait  (4 s)
+  [OK]    W3 A2 = x2**2, b6 = 1, a31 = 0 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W3 A2 = x2**2, b6 = 1, a31 = 1 : incoherent  (4 s)
+  [OK]    W3 A2 = x2**2, b6 = 0 : f quadratique en (x3,x4), f_zz = A0 + x1 A1  (4 s)
+  [OK]    W3 A2 = x2**2, b6 = 0 : A1 de rang 2 incoherent  (4 s)
+
+[W4] A2 = 0 : f4 = x1**3 l(u), l normalisee a x2 ou 0
+  [OK]    W4 a33 = 0 : det Hess B_u = 0 (B_u cubique ternaire : cone)  (4 s)
+  [OK]    W4 a33 = 1 : det Hess B_u = 0 (B_u cubique ternaire : cone)  (4 s)
+  [OK]    W4 a33 = 0, B_u = x2**3 + x3**3 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W4 a33 = 0, B_u = x2**2 x3 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W4 a33 = 0, B_u = x2**3 : x1 Q(x3,x4) carre parfait  (4 s)
+  [OK]    W4 a33 = 0, B_u = x2**3, b12 = 1 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W4 a33 = 0, B_u = x2**3, b12 = 0 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W4 a33 = 0, B_u = 0 : det Q = 0 (Q = coefficient de x1 dans f, quadratique en u)  (4 s)
+  [OK]    W4 a33 = 0, B_u = 0, Q de rang 2 : incoherent  (4 s)
+  [OK]    W4 a33 = 0, B_u = 0, Q = x2**2 : c0 = c1 = c2 = 0 (f lineaire en (x3,x4))  (4 s)
+  [OK]    W4 a33 = 0, B_u = 0, Q = 0 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W5 a33 = 1, B_u = x3**3 + x4**3 : incoherent  (4 s)
+  [OK]    W5 a33 = 1, B_u = x3**2 x4 : incoherent  (4 s)
+  [OK]    W6 a33 = 1, B_u en (x2,x3), b10 = 0 : x4 direction morte (lemme A ou L)  (4 s)
+  [OK]    W6 a33 = 1, B_u en (x2,x3), b10 = 1 : f quadratique en (x3,x4), f_zz = A0 + x1 A1  (4 s)
+  [OK]    W6 a33 = 1, B_u en (x2,x3), b10 = 1 : A1 de rang 2 incoherent  (4 s)
+
+========================================================================
+BILAN : 47 verifications passees, 0 echecs  (4 s)
+========================================================================

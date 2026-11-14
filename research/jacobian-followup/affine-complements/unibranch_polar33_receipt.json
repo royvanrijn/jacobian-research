@@ -1,0 +1,185 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 64,
+  "checks": [
+    "complete characteristic gcd-chain census",
+    "conjugate counts sum to seven",
+    "exact conjugate-difference polar sum",
+    "no earlier positive exponent divisible by8",
+    "differentiated branch valuation",
+    "critical-value companion pole bound",
+    "all m>=6 coefficient nonpositive",
+    "all m>=6 constant bound strictly negative",
+    "polar33 would force critical value order27",
+    "critical curve order4 forced by N>l",
+    "parameter flow has lower critical value order24",
+    "generic single-branch polar bound at l8 is30",
+    "universal original-coordinate critical-flow chain rule",
+    "chain rule modulo critical equation",
+    "special polar33 exact parameterization",
+    "special polar order33",
+    "special transverse derivative order27",
+    "special branch primitive exponents",
+    "generic countercontrol full scaled equation",
+    "generic countercontrol initial equation",
+    "generic countercontrol simple-root discriminant",
+    "generic branch polar order15",
+    "generic total polar30 is below33",
+    "generic countercontrol fails finite local pole positivity",
+    "critical curve through c order 0",
+    "critical curve through c order 1",
+    "critical value constant coefficient",
+    "critical value first coefficient is minus phi0 sixth",
+    "quartic-gap predecessor passed",
+    "quartic-gap old profiles explicitly historical",
+    "predecessor seal verify_quartic_polar_gap.py",
+    "predecessor seal QUARTIC_GENERIC_POLAR_GAP.md",
+    "predecessor seal quartic_polar_gap_certificates.json",
+    "predecessor seal POLAR_CUSP_LEADING_SECTORS.md",
+    "predecessor seal polar_cusp_sector_certificates.json",
+    "predecessor seal polar_cusp_sector_receipt.json",
+    "predecessor seal CUBIC_COVER_BOUNDARY_PERIOD.md",
+    "predecessor seal WRIGHT_MARKED_MODEL.md",
+    "new noncontact exclusion is432",
+    "current noncontact types are exactly72 and54",
+    "contact3 away42 costs at least5",
+    "contact3 cube6 remains necessary",
+    "local common quadruple root cannot cost1",
+    "pole2 cost is exact predecessor result",
+    "three source degree groups unchanged",
+    "current contact multiplicities unchanged",
+    "sixteen marked leading points retained",
+    "contact3 only has away cube6",
+    "all current forms have support at most2",
+    "Bezout monomial cover k2",
+    "T cubed equals x k2",
+    "theta equals T power k2",
+    "Bezout monomial cover k4",
+    "T cubed equals x k4",
+    "theta equals T power k4",
+    "Bezout monomial cover k5",
+    "T cubed equals x k5",
+    "theta equals T power k5",
+    "Bezout monomial cover k7",
+    "T cubed equals x k7",
+    "theta equals T power k7",
+    "cube root forms have three rational components",
+    "noncube contact has a single finite root",
+    "period polynomial criterion retained"
+  ],
+  "generic_unibranch_degree8_polar33_excluded": true,
+  "all_height_whole_unibranch_w_order2_excluded_for_poles_at_least6": true,
+  "noncontact432_excluded": true,
+  "contact3_away42_excluded": true,
+  "remaining_noncontact_nonic_partitions": [
+    [
+      7,
+      2
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "current_contact3_away_types": [
+    [
+      6
+    ]
+  ],
+  "current_pole69_frontier": [
+    {
+      "contacts": [
+        0
+      ],
+      "ordinary_degrees": [
+        96,
+        144
+      ]
+    },
+    {
+      "contacts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        80,
+        128
+      ]
+    },
+    {
+      "contacts": [
+        7,
+        9
+      ],
+      "ordinary_degrees": [
+        48,
+        128
+      ]
+    }
+  ],
+  "marked_two_root_leading_candidates_retained": 16,
+  "all_current_pole69_common_nonic_support_at_most2": true,
+  "all_current_auxiliary_components_rational": true,
+  "all_current_root_forms_pass_leading_period": true,
+  "first_open_reduced_pairs": [
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "minimum_compatible_quartic_pole_height": 9,
+  "assurance": {
+    "all_series_coverage": "written proof; exact identities and derived finite gcd-chain census replayed",
+    "whole_generic_germ_unibranch_required": true,
+    "uses_parameter_dependent_ambient_change_before_flow": false,
+    "claims_no_selected_fibre_polar33": false,
+    "claims_all_multibranch_generic_polar33_impossible": false,
+    "claims_exact_two_branches_at_common_multiplicity4": false,
+    "local_lower_bound_sharpness_proved": false,
+    "auxiliary_cover_is_target_intermediate_field": false,
+    "auxiliary_Mobius_change_is_marked_source_automorphism": false,
+    "sixteen_points_construct_actual_maps": false,
+    "all_degree9_period_loci_classified": false,
+    "all_pole69_excluded": false,
+    "actual_ruled_compatibility_proved": false,
+    "quartic_packets_excluded": false,
+    "conditional_2026_degree125_upgrade_used": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false,
+    "research_goal_completed": false
+  },
+  "source_sha256": {
+    "verify_unibranch_polar33.py": "840e4de746a328d97e03a3a3f3061303a332246c0f7d39c92a178ada1c947463",
+    "UNIBRANCH_POLAR33_OBSTRUCTION.md": "c348fd897d3e877ddb1b7079a1425a12e51fe09ca77e93b8e94d8e4426bf9a9e",
+    "unibranch_polar33_certificates.json": "e4a8e215fe9d1e8fd7e526320b1dfa6c754d0804e3799f446d4c94c42c31414e",
+    "QUARTIC_GENERIC_POLAR_GAP.md": "a7c5caa55e836edf54c8b49bcfacd0da1acaf245f93319aefaa40d994fef5d7f",
+    "quartic_polar_gap_certificates.json": "56b41af19ed8aea8322ecc37f601143bc4daa236611f1adb9f2f26b6bcaff6bd",
+    "quartic_polar_gap_receipt.json": "da3bbf0b6ed97292968f66c85ef19d17d88250456d31b97df62d15931d17298c",
+    "POLAR_CUSP_LEADING_SECTORS.md": "44be963a650982b91e9dc5a77cb7325a8621171ca98783714918f21217f1e8aa",
+    "polar_cusp_sector_certificates.json": "88f852818fc6d92a3633c537d224121e0f9a0e987bd63fb8779560c2da5c5820",
+    "polar_cusp_sector_receipt.json": "60a51064d6d3733ffacebabd7cdf9eed95cfaa64ba46653867b80089e9ab7674",
+    "CUBIC_COVER_BOUNDARY_PERIOD.md": "d827211a0f1f3b028ebb914a22ce42dd045ae0320bd573e089c1f2a7ea4ddf68",
+    "cubic_cover_period_certificates.json": "46470a76d6c2542f22ee9118274ea011f43d82935a0f32f59767a692dd4eda7b"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.090688
+}

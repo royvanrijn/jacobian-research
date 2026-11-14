@@ -1,5 +1,13 @@
 # Absolute inverse-Galois Keller maps: cyclic and dihedral audit
 
+**14 November 2026 follow-up.** The [affine inertia theorem](../../../jacobian-followup/monodromy-theory/THEORY.md)
+supersedes the even-degree absolute search below: every natural D_n action
+with even n is impossible in every affine dimension. Nontrivial nilpotent
+groups, including V4, are excluded in every faithful transitive action.
+Odd-degree Dickson chart and completion calculations remain relevant.
+D3=S3 has absolute group realizations in the retained symmetric family.
+
+
 ## 1. Status and scope
 
 This is the first group-by-group audit for
@@ -19,7 +27,7 @@ There are two conclusions.
    monodromy is impossible in every degree.  This is an unconditional
    consequence of the Galois case of the Jacobian theorem, not a failure of a
    particular chart.
-2. The natural degree-\(n\) dihedral action survives this obstruction.  Its
+2. The natural degree-\(n\) dihedral action survives the regular-action obstruction, but the later KMFI2 theorem excludes every even n.  Its
    root-incidence cover is an explicit map of affine planes, and a
    derivative-unit suspension gives a determinant-minus-one morphism of
    smooth affine threefold charts.  The remaining absolute problem is exactly
@@ -428,8 +436,8 @@ alternative blowdowns remain open in the canonical all-degree programme.
 | group/action | incidence polynomial | discriminant | source unit rank | orientation class group | absolute status |
 |---|---|---|---:|---:|---|
 | \(C_n\), regular degree \(n\) | \(T^n-q\) | \(\sim q^{n-1}\) | \(1\) | \(0\) | impossible |
-| \(D_3=S_3\), degree \(3\) | \(A^3-3uA-v\) | \(27(4u^3-v^2)\) | \(2\) | \(\mathbb Z/3\) | open |
-| \(D_4\), degree \(4\) | \(A^4-4uA^2+2u^2-v\) | \(256(2u^2-v)(2u^2+v)^2\) | \(3\) | \(0\) | open |
+| \(D_3=S_3\), degree \(3\) | \(A^3-3uA-v\) | \(27(4u^3-v^2)\) | \(2\) | \(\mathbb Z/3\) | group realized; this completion not asserted |
+| \(D_4\), degree \(4\) | \(A^4-4uA^2+2u^2-v\) | \(256(2u^2-v)(2u^2+v)^2\) | \(3\) | \(0\) | excluded by KMFI2 |
 | geometric \(D_5\), degree \(5\) | \(A^5-5uA^3+5u^2A-v\) | \(5^5(4u^5-v^2)^2\) | \(3\) | \(0\) | open over a split base |
 
 The \(D_5\) row is deliberately labeled geometric.  Over \(\mathbb Q(u,v)\)
@@ -437,7 +445,7 @@ its displayed discriminant is not a square, whereas the natural \(D_5\)
 action lies in \(A_5\).  Exact arithmetic monodromy therefore requires a
 cosine-field model or a different rational generic polynomial.
 
-## 11. Next computations
+## 11. Retained odd-degree computations
 
 1. Search the all-\(n\) canonical two-mask problem only with two genuinely
    coupled normal directions.  Every one-normal chart—nonresonant,
@@ -451,5 +459,4 @@ cosine-field model or a different rational generic polynomial.
 5. For the odd \(A_{n-1}\) orientation surface, compute the Cox pullback of
    every ramification color and test whether the class
    \([J_n]\) becomes a primitive character.
-6. Treat \(V_4\) next as an imprimitive degree-four action, not as a regular
-   cyclic-style cover; the action choice is decisive.
+6. The old V4 proposal is closed: every faithful transitive action of an abelian group is regular, and KMFI2 excludes every nontrivial nilpotent group.

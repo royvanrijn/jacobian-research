@@ -1,0 +1,41 @@
+[AUDIT_RUNTIME] {"python": "3.14.7", "sage": "10.9", "flint": "0.9.0", "sympy": "1.14.0", "compatibility_shim": "sage.all__sagemath_singular -> sage.all"}
+PASS S1a [det Hess f]_12 = 0 for a cone top phi(x1,x2,x3)
+PASS S1b [det Hess f]_11 = detHess3(phi) * d44 f4
+PASS S1c [det]_10 = detA * d44 f3 - grad(h)**T adj(A) grad(h)
+   (S1 12s)
+PASS S2  weight-10 part of det Hess f = det Hess psi, psi = phi + s h + s**2 m (general symbolic lower terms)
+   (S2 2s)
+PASS S3a m=0: s**3, s**4 coefficients vanish
+PASS S3b m=0: s**2 coefficient = -(3/2) h detHess3(h)
+PASS S3c m=0, h=x1**2 x2 : detHess3(phi) vanishes on every solution (branch excluded)
+PASS S3c m=0, h=x1**3+x2**3 : detHess3(phi) vanishes on every solution (branch excluded)
+PASS S3d m=0, h=x1**3 : det Hess psi = -9 x1**4 detHess_(x2,x3)(phi)
+   (S3 0s)
+PASS S4a m=x1 : s**4 coefficient = -4 detHess_(x2,x3)(h)
+PASS S4 m=x1, a=1 (I) : detHess3(phi) vanishes on every solution (branch excluded)
+PASS S4 m=x1, a=0, b=1, c=0 (II) : detHess3(phi) vanishes on every solution (branch excluded)
+PASS S4 m=x1, h=x1**2 x2 (III.1) : the only component with detHess3(phi) != 0 is phi = x1**3 x2**2/4 + p18 x1**4 x3 + p19 x1**4 x2 + p20 x1**5
+PASS S4 m=x1, h=e x1**3 (III.2) : detHess3(phi) vanishes on every solution (branch excluded)
+   (S4 6s)
+PASS S5  top (F): the constant term of det Hess f vanishes on every solution
+   (S5 9s)
+PASS S6a Lemma A (any Q): det Hess(P+uQ+a u**2) = 2a det Hess_x(R + zQ) at z = u + Q/(2a)
+PASS S6b u**2 coefficient = 0  =>  (dR/dx2, dR/dx3) proportional (R depends on x1 and one form in x2,x3)
+PASS S6c u-coefficient = -P_33 * bracket(R) for R = R(x1,x2)
+PASS S6d bracket = 0 for R = x1**3 + (deg<=2 in x1,w)  =>  R = g(x1)
+PASS S6e R = g(x1): det Hess = -g'**2 detHess_(x2,x3)(P)
+PASS S6f P = P0(x1,x2) + x3 P1(x1,x2), R = R(x1,x2): det Hess = J(P1,R)**2
+   (S6 11s)
+PASS S7a rank 2: det Hess(al + x3 be + u x1 x2) = (x1 be_1 - x2 be_2)**2
+PASS S7b rank 1: det Hess(al + x2 be + u(x1 + mu x3**2/2)) = (be_3 - mu x3 be_1)**2
+PASS S7c rank 0: det Hess(P + u x3) = -detHess_(x1,x2)(P)
+   (S7 0s)
+PASS S8a III.1 by Rabinowitsch: off the family phi = x1**3 x2**2/4 + p18 x1**4 x3 + p19 x1**4 x2 + p20 x1**5, det A = 0
+PASS S8b det Hess3 of the III.1 family = -8 p18**2 x1**9
+PASS S8c det Hess3(Q(x1,x2) + alpha x1**4 x3) = -16 alpha**2 x1**6 Q_22
+PASS S8d (F) normalisation: x3 <- (x3 - p19 x2 - p20 x1)/p18, x2 -> 2 x2 gives x1 (u + x1 x2)**2 + x1**4 x3
+PASS S8e d_v**2 (Q(x1,x2) + x1**4 x3) = v2**2 Q_22 for v = (0,v2,v3)
+   (S8 70s)
+============================================================
+SUMMARY: 29 checks, 0 failed, total 110s
+ALL CHECKS PASSED

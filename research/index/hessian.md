@@ -116,7 +116,6 @@ python3 research/scripts/research.py show ID
 | `HC4PPG7` | archived programme; proved | [Smooth rank-three quintic vertex-colength obstruction](../archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md) |
 | `HC4PPG8` | archived programme; proved | [Codimension-three quintic gradient-stratum sieve](../archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md) |
 | `HC4PPG9` | archived programme; proved | [Binary root-partition Segre sieve](../archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md) |
-| `OP-HC4-D5` | archived programme; open | [Direct degree-five HC4 collision classification](../archive/non-elliptic/HC4_PROJECTIVE_POLAR_GEOMETRY.md) |
 | `HC4RSD8` | archived programme; proved | [Quadratic-pivot rank obstruction for reverse HC4 descent](../archive/non-elliptic/HC4_QUADRATIC_PIVOT_RANK_OBSTRUCTION.md) |
 | `HC4RSD10` | archived programme; proved | [Rank-one quadratic-pivot classification for reverse HC4 descent](../archive/non-elliptic/HC4_QUADRATIC_RANK_ONE_PIVOTS.md) |
 | `HC4RSD9` | archived programme; proved | [Rank-two quadratic-pivot classification for reverse HC4 descent](../archive/non-elliptic/HC4_QUADRATIC_RANK_TWO_PIVOTS.md) |
@@ -172,3 +171,39 @@ python3 research/scripts/research.py show ID
 | `PGS3` | archived programme; proved | [All-dimensional singular-gradient stratum and DVR-torsion law](../archive/non-elliptic/PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md) |
 | `SDX1` | archived programme; proved | [Exact Schur remainder and simultaneous source-block descent](../archive/non-elliptic/SCHUR_DESCENT_CONTINUATIONS.md) |
 | `SDX2` | archived programme; proved | [Codimension-one block-affine Keller automorphism theorem](../archive/non-elliptic/SCHUR_DESCENT_CONTINUATIONS.md) |
+| `HC4D5EXT1` | archived programme; proved | [Degree-at-most-five HC4 theorem: version-pinned reproduction and normalization review](../jacobian-followup/hc4-degree-five-audit/README.md) |
+| `HC4D5Z1` | archived programme; proved | [Complete rank-two quadratic-passive unary quintic block exclusion](../jacobian-followup/hc4-degree-five-audit/README.md) |
+| `OP-HC4-D5` | archived programme; parked; replaced by HC4D5EXT1 | [Direct degree-five HC4 collision classification (closed)](../jacobian-followup/hc4-degree-five-audit/README.md) |
+| `HC4MYPP1` | archived programme; proved | [Pointed Keller pencil, complete radial divisor budget and Euler deficit identity](../jacobian-followup/hc4-pointed-pencil/PROOF.md) |
+| `HC4MYPP2` | archived programme; proved | [Fixed zero ideal and full Jacobian polynomial with arbitrarily large pencil genus in the oriented row orbit](../jacobian-followup/hc4-pointed-pencil/PROOF.md) |
+| `HC4MYGALL1` | archived programme; proved | [Complete all-degree standard polynomial-graph collision exclusion](../jacobian-followup/hc4-polynomial-graphs/PROOF.md) |
+| `HC4MYGAP1` | archived programme; proved | [All-degree polynomial-graph affine-plane obstruction and nonrational formal model](../jacobian-followup/hc4-polynomial-graphs/PROOF.md) |
+| `HC4MYRB1` | archived programme; proved | [Pointwise radial intersection and canonical gates; all-length sole-degree-one chain exclusion](../jacobian-followup/hc4-radial-intersection/PROOF.md) |
+| `HC4MYRB2` | archived programme; proved | [Tame-node radial principalization in every degree and the odd-degree extra-blowup control](../jacobian-followup/hc4-radial-intersection/PROOF.md) |
+| `HC4MYOR1` | archived programme; proved | [Complete oriented-generator orbit and polynomial stabilizer of the relative cotangent row](../jacobian-followup/hc4-relative-row-orbit/PROOF.md) |
+| `HC4MYOR2` | archived programme; proved | [Relative-linear singleton-zero Keller gate, normalized degree99 region and missing-normalization length](../jacobian-followup/hc4-relative-row-orbit/PROOF.md) |
+| `HC4MYGV0` | archived programme; proved | [Hamiltonian coordinate-pencil specialization with a constant-Jacobian mate](../jacobian-followup/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md) |
+| `HC4MYGV1` | archived programme; proved | [Complete affine-plane classification for generic-coordinate traces with a nonlinear square specialization](../jacobian-followup/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md) |
+| `HC4MYGV2` | archived programme; proved | [All-degree gradient invertibility after every base-preserving polynomial dual automorphism](../jacobian-followup/hc4-triangular-graphs/AUTOMORPHIC_TRACE.md) |
+| `HC4MYGF1` | archived programme; proved | [First-slice affine-plane rigidity and the explicit triangular gradient inverse](../jacobian-followup/hc4-triangular-graphs/FIRST_SLICE_INVERTIBILITY.md) |
+| `HC4MYGF2` | archived programme; proved | [All-degree gradient invertibility for arbitrary first-trace-preserving substitutions](../jacobian-followup/hc4-triangular-graphs/FIRST_SLICE_INVERTIBILITY.md) |
+| `HC4MYGF3` | archived programme; proved | [Universal plane-Keller encoding at the y-dependent first-trace boundary](../jacobian-followup/hc4-triangular-graphs/FIRST_SLICE_INVERTIBILITY.md) |
+| `HC4MYGT1` | archived programme; proved | [All-degree affine-plane obstruction for triangular and base-independent Keller dual substitutions](../jacobian-followup/hc4-triangular-graphs/PROOF.md) |
+| `HC4MYGT2` | archived programme; proved | [All-degree gradient invertibility after triangular or base-independent Keller dual substitution](../jacobian-followup/hc4-triangular-graphs/PROOF.md) |
+| `HC4MYGD1` | archived programme; proved | [All-degree no-plane obstruction for dual substitutions with matching traces on two divisors](../jacobian-followup/hc4-triangular-graphs/TWO_DIVISOR_EXTENSION.md) |
+| `HC4MYGD2` | archived programme; proved | [All-degree gradient invertibility for the matching-two-divisor graph class](../jacobian-followup/hc4-triangular-graphs/TWO_DIVISOR_EXTENSION.md) |
+| `HCTANG3` | archived programme; proved | [HC4 degree-101 bound, proper-power endpoint and degree-48 marked-graph exclusion](../jacobian-followup/tang-hc4-audit/APPLICATIONS.md) |
+| `HCTANG1` | archived programme; proved | [Sharp denominator bound for rational singular-Hessian transport and polynomial-metric boundary](../jacobian-followup/tang-hc4-audit/README.md) |
+| `HCTANG2` | archived programme; proved | [Tang four-variable singular-Hessian apex and full cotangent alternative: written reproduction](../jacobian-followup/tang-hc4-audit/STRUCTURAL_REVIEW.md) |
+
+## Other source notes and navigation
+
+These documents are not canonical sources of a registered claim. They include workflows, bounded reports and unregistered work; their presence does not establish a theorem or an active campaign.
+
+- [Normalization coverage and the degree five closure](../jacobian-followup/hc4-degree-five-audit/NORMALIZATION_REVIEW.md)
+- [Pointed Keller pencils: weighted boundary budgets and a genus control](../jacobian-followup/hc4-pointed-pencil/README.md)
+- [All-degree Meng--Yang polynomial-graph exclusion](../jacobian-followup/hc4-polynomial-graphs/README.md)
+- [Missing radial blocks: intersection equations and a chain exclusion](../jacobian-followup/hc4-radial-intersection/README.md)
+- [The complete relative-linear row orbit and its missing-boundary gate](../jacobian-followup/hc4-relative-row-orbit/README.md)
+- [All-degree HC4 graph obstructions under dual automorphisms](../jacobian-followup/hc4-triangular-graphs/README.md)
+- [Primary import snapshots](../jacobian-followup/tang-hc4-audit/structural-sources/README.md)

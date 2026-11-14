@@ -9,6 +9,7 @@ establish that a worker is running or that another campaign is needed.
 | Task | Current source or implementation |
 |---|---|
 | Load a completed rational MW17 equation | [Published/q12 endpoint](../PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md) · [direct alternate11952](../R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md) |
+| Load the determinant1020 equation and full17 marked basis | [Proof and replay](../DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md) · [Sage loader and source maps](load_det1020_weierstrass.py) |
 | Reuse the Curve302 parent | [Full recovered equation and basis](../../elliptic-curves/notes/CURVE302_RECOVERED_MW17_PARENT_2026-09-07.md) |
 | Reuse Curve398 recovery and presentation deduplication | [Canonical recovery](../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) |
 | Certify the level-474 H3 rational base without Magma | [Sage quadratic-Chabauty certificate](certify_h3_level474_rational_points_qc.sage) · [canonical point note](../../elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md) |
@@ -16,6 +17,7 @@ establish that a worker is running or that another campaign is needed.
 | Understand route corrections | [Process atlas](../ELKIES_K3_PROCESS_ATLAS.md) · [historical H3 prefix](success-path/README.md) |
 | Compile the noncyclic4A1 bridge | [Exact equation and certificate](../R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) |
 | Screen a different NS lattice | [Full marked-curve gate](../DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) · [classifier](../RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) |
+| Classify every retained NS/frame without a new search | [Arithmetic obstruction census](../DIFFERENT_NS_CLASSIFICATION_2026-09-15.md) · [retained-evidence checker](classify_different_ns_mw17.py) |
 | Reuse finite-field and formal foundry experiments | [Retained outcomes and exact NS0031 precursor](../LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md) |
 | Replay the corrected NS0031 obstruction | [Full stable group and exact genus-2 rational locus](../NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md#replay-and-evidence-boundary) |
 | Decide the determinant1236 next step | [Known candidate cover; open CM branch-orbit identification](../DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) |

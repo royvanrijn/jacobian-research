@@ -1,5 +1,11 @@
 # Quintic graph and relative-linear Schur frontiers
 
+> **13 November 2026 update:** [HC4MYOR1/HC4MYOR2](../../jacobian-followup/hc4-relative-row-orbit/README.md)
+> classify the complete relative-linear output-row orbit and its stabilizer,
+> starting from the degree-ten normalizer retained here. The normalized
+> degree-99 sufficient gate extends the old matrix box; the unrestricted
+> singleton-zero plane Keller/properness question remains open.
+
 ## Status
 
 No `HC(4)` counterexample is constructed here. Starting with the explicit

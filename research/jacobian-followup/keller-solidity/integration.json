@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "new_claim_ids": [
+    "FINSOL1",
+    "FINSOL2",
+    "WRIGHTSOL1"
+  ],
+  "new_lesson_id": "METHOD-KELLER-SOLIDITY",
+  "new_work_id": "WORK-KELLER-GLOBAL-FUNCTIONAL",
+  "preexisting_ledger_entries_preserved": 1750,
+  "scope_fingerprints": {
+    "FINSOL1": "3f55c2aa1d8388f1",
+    "FINSOL2": "39fcbf5b0b596c05",
+    "WRIGHTSOL1": "b37fb7076b6835a7"
+  },
+  "status": "focused validation passed; generated navigation blocked by pre-existing missing artifacts"
+}

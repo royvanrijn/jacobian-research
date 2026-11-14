@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta name="theme-color" content="#d9d8d1">
+
+<title>Section 54.1 (0ADX): Introduction&mdash;The Stacks project</title>
+
+<meta name="description" content="an open source textbook and reference work on algebraic geometry">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/print.css">
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ['tex2jax.js'],
+    jax: ['input/TeX','output/HTML-CSS'],
+    TeX: {
+      extensions: ['AMSmath.js', 'AMSsymbols.js', '/static/XyJax/extensions/TeX/xypic.js'],
+      Macros: {
+        linebreak: ["", 1, ""],
+        },
+      TagSide: 'left'
+    },
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    },
+    'HTML-CSS': {
+    	scale: 100,
+	availableFonts: [],
+    }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha384-cd07Jx5KAMCf7qM+DveFKIzHXeCSYUrai+VWCPIXbYL7JraHMFL/IXaCKbLtsxyB" crossorigin="anonymous"></script>
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/static/stacks.ico">
+
+
+  <script type="text/javascript" src="/static/js/toggle.js"></script>
+  <script type="text/javascript" src="/static/js/comments.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/easymde@2.0.1/dist/easymde.min.css" integrity="sha384-IRbzB9px0sfIx90vkN+geaX3F4LVcg/M+k5vmVkfjs5TnRX3MIhGS8Ma06ALKVYp" crossorigin="anonymous">
+  <script src="https://unpkg.com/easymde@2.0.1/dist/easymde.min.js" integrity="sha384-v06sb0t0ToY1YRtVlfD/GCGpIZ/QHYyeH2Gzjvr0ZJI62/50DIzT8XRgQ6JvptVu" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.css" integrity="sha384-8xTxM5sJRAUB0ckdBghB5am+aw+0kC5FfSUzMI+KI+UD8uBCNeSkdi8I1J4+Wjwu" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-bonsai@2.1.3/jquery.bonsai.js" integrity="sha384-gE5xOW4MVOjJL1A2SbxwvQw/qet6h8Vdv06j3JQGhBW4d1H5hXYB12WsrUBgU439" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="container-fluid bounded">
+  <div id="first-bar" class="row topbar inner-top top">
+    <header class="col">
+      <h1><a href="/">The Stacks project</a></h1>
+    </header>
+
+    <nav id="header">
+      <ul id="quicklinks">
+        <li><a href="/bibliography">bibliography</a>
+        <li><a href="https://www.math.columbia.edu/~dejong/wordpress/">blog</a>
+      </ul>
+
+      <form id="quicksearch" action="/search">
+        <span id="search-icon"><img src="/static/images/search.svg"></span>
+        <input type="search" name="query" size="16" placeholder="keywords or a tag" value="">
+      </form>
+    </nav>
+  </div>
+
+  <nav id="second-bar" class="row topbar sticky-top">
+    
+      <ul class="col-11 col-sm-11 col-md-11 col-lg-12 col-xl-12" id="crumbs">
+        <li><a href="/browse">Table of contents</a></li>
+        
+  
+  
+    <li>Part <a href="/tag/0ELV" data-tag="0ELV">3</a>: Topics in Scheme Theory
+    
+  
+    <li>Chapter <a href="/tag/0ADW" data-tag="0ADW">54</a>: Resolution of Surfaces
+    
+  
+    <li class="active">Section <a href="/tag/0ADX" data-tag="0ADX">54.1</a>: Introduction
+    <span id="citation">(<a href="/tag/0ADX/cite">cite</a>)</span>
+  
+
+
+      </ul>
+    
+
+    
+      <div class="col-1 col-sm-1 col-md-1" id="burger">
+        <input type="checkbox" id="burger-input"></input>
+
+        <label id="burger-icon" for="burger-input">
+          <span id="top-bun"></span>
+          <span id="meat"></span>
+          <span id="bottom-bun"></span>
+        </label>
+
+        <div id="burger-content">
+          
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+  
+    <li class="right"><a href="/tag/0ADY">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  
+
+
+        </div>
+      </div>
+    
+
+    
+  </nav>
+
+  <div class="row" id="content">
+    <section id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      
+<div class="html" id="tag">
+  
+
+  
+
+  
+
+  <h2 id="resolve-section-introduction" class="tex-section"><span data-tag="0ADX">54.1</span> Introduction</h2>
+
+<p>
+This chapter discusses resolution of singularities of surfaces following Lipman <span class="cite">[<a href="/bibliography/Lipman">Lipman</a>]</span> and mostly following the exposition of Artin in <span class="cite">[<a href="/bibliography/Artin-Lipman">Artin-Lipman</a>]</span>. The main result (Theorem <a href="/tag/0BGP" data-tag="0BGP">54.14.5</a>) tells us that a Noetherian $2$-dimensional scheme $Y$ has a resolution of singularities when it has a finite normalization $Y^\nu \to Y$ with finitely many singular points $y_ i \in Y^\nu $ and for each $i$ the completion $\mathcal{O}_{Y^\nu , y_ i}^\wedge $ is normal. 
+</p>
+<p>
+To be sure, if $Y$ is a $2$-dimensional scheme of finite type over a quasi-excellent base ring $R$ (for example a field or a Dedekind domain with fraction field of characteristic $0$ such as $\mathbf{Z}$) then the normalization of $Y$ is finite, has finitely many singular points, and the completions of the local rings are normal. See the discussion in More on Algebra, Sections <a href="/tag/07P6" data-tag="07P6">15.48</a>, <a href="/tag/07GG" data-tag="07GG">15.51</a>, and <a href="/tag/07QS" data-tag="07QS">15.53</a> and More on Algebra, Lemma <a href="/tag/0BFK" data-tag="0BFK">15.43.2</a>. Thus such a $Y$ has a resolution of singularities. 
+</p>
+<p>
+A rough outline of the proof is as follows. Let $A$ be a Noetherian local domain of dimension $2$. The steps of the proof are as follows 
+</p>
+<ol>
+  <li class="custom-item" data-marker="N"><p>
+replace $A$ by its normalization, 
+</p>
+</li><li class="custom-item" data-marker="V"><p>
+prove Grauert-Riemenschneider, 
+</p>
+</li><li class="custom-item" data-marker="B"><p>
+show there is a maximum $g$ of the lengths of $H^1(X, \mathcal{O}_ X)$ over all normal modifications $X \to \mathop{\mathrm{Spec}}(A)$ and reduce to the case $g = 0$, 
+</p>
+</li><li class="custom-item" data-marker="R"><p>
+we say $A$ defines a rational singularity if $g = 0$ and in this case after a finite number of blowups we may assume $A$ is Gorenstein and $g = 0$, 
+</p>
+</li><li class="custom-item" data-marker="D"><p>
+we say $A$ defines a rational double point if $g = 0$ and $A$ is Gorenstein and in this case we explicitly resolve singularities. 
+</p>
+</li>
+</ol>
+<p>
+ Each of these steps needs assumptions on the ring $A$. We will discuss each of these in turn. 
+</p>
+<p>
+Ad N: Here we need to assume that $A$ has a finite normalization (this is not automatic). Throughout most of the chapter we will assume that our scheme is Nagata if we need to know some normalization is finite. However, being Nagata is a slightly stronger condition than is given to us in the statement of the theorem. A solution to this (slight) problem would have been to use that our ring $A$ is formally unramified (i.e., its completion is reduced) and to use Lemma <a href="/tag/0BG8" data-tag="0BG8">54.11.5</a>. However, the way our proof works, it turns out it is easier to use Lemma <a href="/tag/0BG9" data-tag="0BG9">54.11.6</a> to lift finiteness of the normalization over the completion to finiteness of the normalization over $A$. 
+</p>
+<p>
+Ad V: This is Proposition <a href="/tag/0AXD" data-tag="0AXD">54.7.8</a> and it roughly states that for a normal modification $f : X \to \mathop{\mathrm{Spec}}(A)$ one has $R^1f_*\omega _ X = 0$ where $\omega _ X$ is the dualizing module of $X/A$ (Remark <a href="/tag/0B4R" data-tag="0B4R">54.7.7</a>). In fact, by duality the result is equivalent to a statement (Lemma <a href="/tag/0AXC" data-tag="0AXC">54.7.6</a>) about the object $Rf_*\mathcal{O}_ X$ in the <em>derived category</em> $D(A)$. Having said this, the proof uses the standard fact that components of the special fibre have positive conormal sheaves (Lemma <a href="/tag/0AXA" data-tag="0AXA">54.7.4</a>). 
+</p>
+<p>
+Ad B: This is in some sense the most subtle part of the proof. In the end we only need to use the output of this step when $A$ is a complete Noetherian local ring, although the writeup is a bit more general. The terminology is set in Definition <a href="/tag/0B4N" data-tag="0B4N">54.8.3</a>. If $g$ (as defined above) is bounded, then a straightforward argument shows that we can find a normal modification $X \to \mathop{\mathrm{Spec}}(A)$ such that all singular points of $X$ are rational singularities, see Lemma <a href="/tag/0B4P" data-tag="0B4P">54.8.5</a>. We show that given a finite extension $A \subset B$, then $g$ is bounded for $B$ if it is bounded for $A$ in the following two cases: (1) if the fraction field extension is separable, see Lemma <a href="/tag/0B4P" data-tag="0B4P">54.8.5</a> and (2) if the fraction field extension has degree $p$, the characteristic is $p$, and $A$ is regular and complete, see Lemma <a href="/tag/0B4U" data-tag="0B4U">54.8.10</a>. 
+</p>
+<p>
+Ad R: Here we reduce the case $g = 0$ to the Gorenstein case. A marvellous fact, which makes everything work, is that the blowing up of a rational surface singularity is normal, see Lemma <a href="/tag/0B4Z" data-tag="0B4Z">54.9.4</a>. 
+</p>
+<p>
+Ad D: The resolution of rational double points proceeds more or less by hand, see Section <a href="/tag/0BGB" data-tag="0BGB">54.12</a>. A rational double point is a hypersurface singularity (this is true but we don't prove it as we don't need it). The local equation looks like 
+</p>
+<div class="equation">
+  \[  a_{11} x_1^2 + a_{12} x_1x_2 + a_{13}x_1x_3 + a_{22} x_2^2 + a_{23} x_2x_3 + a_{33} x_3^2 = \sum a_{ijk} x_ ix_ jx_ k  \]
+</div>
+<p>
+ Using that the quadratic part cannot be zero because the multiplicity is $2$ and remains $2$ after any blowup and the fact that every blowup is normal one quickly achieves a resolution. One twist is that we do not have an invariant which decreases every blowup, but we rely on the material on formal arcs from Section <a href="/tag/0BG1" data-tag="0BG1">54.10</a> to demonstrate that the process stops. 
+</p>
+<p>
+To put everything together some additional work has to be done. The main kink is that we want to lift a resolution of the completion $A^\wedge $ to a resolution of $\mathop{\mathrm{Spec}}(A)$. In order to do this we first show that if a resolution exists, then there is a resolution by normalized blowups (Lemma <a href="/tag/0BGM" data-tag="0BGM">54.14.3</a>). A sequence of normalized blowups can be lifted from the completion by Lemma <a href="/tag/0BGA" data-tag="0BGA">54.11.7</a>. We then use this even in the proof of resolution of complete local rings $A$ because our strategy works by induction on the degree of a finite inclusion $A_0 \subset A$ with $A_0$ regular, see Lemma <a href="/tag/0BGN" data-tag="0BGN">54.14.4</a>. With a stronger result in B (such as is proved in Lipman's paper) this step could be avoided. 
+</p>
+
+
+  <script type="text/javascript">
+$(document).ready(function() {
+  // move extras from parent element to after environment name and number
+  $("article a[data-toggle]").each(function(index, element) {
+    $(element).insertAfter(($(element).parent().find("a.environment-identifier")));
+  });
+
+  $('article a[data-toggle="popover"]').popover()
+
+  // render mathematics in popovers
+  $("[data-toggle=popover]").on('shown.bs.popover', function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, $("div.popover-body").html()]);
+  });
+});
+  </script>
+
+  
+
+  
+</div>
+
+
+<hr>
+
+<section id="comments">
+  <h2>Comments (0)</h2>
+
+  
+
+  
+</section>
+
+<hr>
+
+<section id="post-comment">
+  <h2>Post a comment</h2>
+  <p>Your email address will not be published. Required fields are marked.
+  <p>In your comment you can use <a href="/markdown">Markdown</a> and LaTeX style mathematics (enclose it like <code>$\pi$</code>). A preview option is available if you wish to see how it works out (just click on the eye in the toolbar).
+  <noscript><p>Unfortunately JavaScript is disabled in your browser, so the comment preview function will not work.</p></noscript>
+
+  <p>All contributions are licensed under the <a href="https://github.com/stacks/stacks-project/blob/master/COPYING">GNU Free Documentation License</a>.
+
+  <form name="comment" id="comment-form" action="/post-comment" method="post">
+    <label for="name">Name<sup>*</sup>:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="mail">E-mail<sup>*</sup>:</label>
+    <input type="email" name="mail" id="mail" required><br>
+
+    <label for="site">Site:</label>
+    <input type="url" name="site" id="site"><br>
+
+    <label>Comment:</label>
+    <textarea name="comment" id="comment-textarea" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <script type="text/javascript">
+var easymde = new EasyMDE({
+  autosave: {
+    enabled: true,
+    delay: 1000,
+    uniqueId: "comment-0ADX",
+  },
+  element: $("#comment")[0],
+  forceSync: true,
+  insertTexts: { link: ["\\ref{", "}"], table: ["$", "$"], image: ["\\begin{equation}\n", "\n\\end{equation}\n"] }, // we hack into these insertion methods, I couldn't figure out how to write your own...
+  placeholder: "You can type your comment here, use the preview option to see what it will look like. If your comment is on a lemma, please leave your comment on the page of the lemma. Same with remarks, propositions, theorems, etc.",
+  previewRender: function(plaintext, preview) {
+    // deal with references
+    plaintext = plaintext.replace(/\\ref\{([0-9A-Z]{4})\}/g, "<span class=\"tag\">[$1](/tag/$1)</span>");
+    // deal with \[\] getting replaced to []
+    plaintext = plaintext.replace(/\\\[/g, "\\begin{equation}");
+    plaintext = plaintext.replace(/\\\]/g, "\\end{equation}");
+
+    output = this.parent.markdown(plaintext);
+
+    setTimeout(function() {
+      preview.innerHTML = output;
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }, 0);
+
+    return "";
+  },
+  spellChecker: false,
+  status: false,
+  toolbar: [
+    "link", {name: "inline", action: EasyMDE.drawTable, className: "fa fa-usd"}, {name: "block", action: EasyMDE.drawImage, className: "fa fa-square"}, "|",
+    "bold", "italic", "|",
+    "ordered-list", "unordered-list", "|",
+    "preview"
+  ],
+});
+
+// make sure to show tags, not numbers
+var tagToggleHappened = false; // only do this once to not annoy the user too much
+easymde.codemirror.on("change", function() {
+  // if data-tag elements do not have tag attribute we need to make tags visible
+  if (!$("*[data-tag]").hasClass("tag") && !tagToggleHappened)
+    $("section#meta input.toggle").bootstrapToggle("toggle");
+  tagToggleHappened = true;
+});
+
+// prevent form submit when the captcha isn't correct
+// it's a bit silly to use HTML5 validation for this, as bots can figure that out
+// also save the author information to localStorage
+easymde.element.form.addEventListener("submit", function(event) {
+  if ($("#check").val() != $("#hidden-tag").val()) {
+    // explain captcha
+    $("#captcha-message").toggle();
+
+    // stop submit
+    event.preventDefault();
+    return false;
+  }
+
+  // save author information
+  localStorage.setItem("name", $("input#name").val());
+  localStorage.setItem("mail", $("input#mail").val());
+  localStorage.setItem("site", $("input#site").val());
+});
+    </script>
+
+    <p>In order to prevent bots from posting comments, we would like you to prove that you are human. You can do this by <em>filling in the name of the current tag</em> in the following input field. As a reminder, this is tag <span class="tag">0ADX</span>. Beware of the difference between the letter&nbsp;'<span class="tag">O</span>' and the digit&nbsp;'<span class="tag">0</span>'.</p>
+    <!--<p>This <abbr title="Completely Automated Public Turing test to tell Computers and Humans Apart">captcha</abbr> seems more appropriate than the usual illegible gibberish, right?<br>-->
+    <label for="check">Tag:</label>
+    <input type="text" name="check" id="check" required autocomplete="off">
+    <button type="submit" class="btn btn-primary">Post comment</button>
+    <input type="hidden" name="tag" id="hidden-tag" value="0ADX"><br>
+
+    <p id="captcha-message" style="display: none" class="alert alert-warning" role="alert">The tag you filled in for the captcha is wrong. You need to write <span class="tag">0ADX</span>, in case you are confused.</p>
+
+    <script type="text/javascript">
+// enter in captcha fields causes \ref to appear (?!)
+$("input#check").on("keypress", function(e) {
+  if (e.which == 13) {
+    // always stop the event
+    e.preventDefault();
+
+    // perform clientside check as for actual submit
+    if ($("#check").val() != $("#hidden-tag").val()) {
+      // explain captcha
+      $("#captcha-message").toggle();
+    }
+    else {
+      $("form#comment-form").submit();
+    }
+  }
+});
+    </script>
+  </form>
+</section>
+
+
+
+
+    </section>
+	  <div class="col-lg-4 col-xl-4">
+	    <section id="meta" class="row topbar sticky-top">
+        
+  
+  <div class="interaction">
+    
+  
+
+  <ul class="neighbours">
+  
+  
+    <li class="right"><a href="/tag/0ADY">next section</a>
+  
+  </ul>
+  <br style="clear:both">
+
+  </div>
+
+  <hr>
+  
+    <a href="https://stacks.math.columbia.edu/download/resolve.pdf#nameddest=0ADX">View Section <span data-tag="0ADX">54.1</span> as pdf</a>
+  
+
+  
+
+
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

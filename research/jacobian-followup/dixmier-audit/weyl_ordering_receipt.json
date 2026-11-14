@@ -1,0 +1,205 @@
+{
+  "date": "2026-11-14",
+  "status": "PASS",
+  "method": "complete Moyal commutator; Pi^n/(2^(n-1)*n!) for odd n",
+  "script_sha256": "f2e889f9eeb9a349575d9ebbff97a7fa9569be1c4b418c3703bf6eb254682ed3",
+  "source_sha256": "266cfed8261bdec371bd26e2bb3a46cab9f588030adcc92c4e75dbd6b150bca2",
+  "compact_RT_h3": "-3*x^8*(3*q*x-2)*(3*q*x-1)/2",
+  "relations": [
+    {
+      "pair": [
+        "R",
+        "T"
+      ],
+      "momentum_bound": 3,
+      "layers": [
+        {
+          "h_order": 3,
+          "terms": 3,
+          "sha256": "9a86bbbba2b808f2b982578cb73f641bf74cde02a6dd9fd2c08344e5dc3876b1",
+          "witness": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            "-3"
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        "R",
+        "D"
+      ],
+      "momentum_bound": 5,
+      "layers": [
+        {
+          "h_order": 3,
+          "terms": 30,
+          "sha256": "84c253298e7b9ddd7ca93c036f68e5af90aa70241930d0184eb1430252112e66",
+          "witness": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            "27/2"
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        "R",
+        "S"
+      ],
+      "momentum_bound": 2,
+      "layers": []
+    },
+    {
+      "pair": [
+        "T",
+        "D"
+      ],
+      "momentum_bound": 8,
+      "layers": [
+        {
+          "h_order": 3,
+          "terms": 168,
+          "sha256": "82e73def80eb2d67230b252cf14807b80883df19b4810a59dfcc5b32c619cac4",
+          "witness": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            "7"
+          ]
+        },
+        {
+          "h_order": 5,
+          "terms": 60,
+          "sha256": "bf0a8448b141f5bc084cbfc6a8967f1b52a3d222d7b48d0a9963db0fb78c258b",
+          "witness": [
+            [
+              9,
+              0,
+              0,
+              0
+            ],
+            "-24635/8"
+          ]
+        },
+        {
+          "h_order": 7,
+          "terms": 12,
+          "sha256": "1c251afa198b6abd0951b7b7333a1bd6d0d5adf5af8f6ef73c0dd383aef4fc9b",
+          "witness": [
+            [
+              15,
+              0,
+              0,
+              0
+            ],
+            "1205577/4"
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        "T",
+        "S"
+      ],
+      "momentum_bound": 5,
+      "layers": [
+        {
+          "h_order": 3,
+          "terms": 30,
+          "sha256": "30e2bc9852707202b8e08ab66a5d641e5c060eee00c5b411640ecc16fd12d1fb",
+          "witness": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            "-199/2"
+          ]
+        },
+        {
+          "h_order": 5,
+          "terms": 3,
+          "sha256": "171d8dbf2fea7033efd9013e12e4e94343f975877015d6b183d9ec4a384eb3ac",
+          "witness": [
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            "7173"
+          ]
+        }
+      ]
+    },
+    {
+      "pair": [
+        "D",
+        "S"
+      ],
+      "momentum_bound": 7,
+      "layers": [
+        {
+          "h_order": 3,
+          "terms": 105,
+          "sha256": "e548480fed8eeb5c186dc8c97e43dddc4a7fc6f542c18023a8321cd91e3800bd",
+          "witness": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            "93"
+          ]
+        },
+        {
+          "h_order": 5,
+          "terms": 30,
+          "sha256": "2a214112aea2157947d66a03af54bf1a4cd94d927eb89d4c7199b0b6a3dcb276",
+          "witness": [
+            [
+              10,
+              0,
+              0,
+              0
+            ],
+            "-37047/2"
+          ]
+        },
+        {
+          "h_order": 7,
+          "terms": 3,
+          "sha256": "786073c27de3445c7371371a624e17280ecfc13c8a05d4ba13996d5ffd3bd49d",
+          "witness": [
+            [
+              16,
+              0,
+              0,
+              0
+            ],
+            "92367"
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.2314,
+  "boundary": "Only the literal symmetric Weyl quantizations are tested; corrections and other images remain open."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "r7-global-cover-discovery-v1",
+  "retained": [
+    {
+      "file": "key-polynomial-discovery.json",
+      "sha256": "e1b07395bcb48bcd2ca8cfc978c3c0ac17689857f13d36f7afdd8ff1e9e1ca8d",
+      "status": "Exact exploratory polynomial identities; not a premise of the Nori or line-genus claims.",
+      "boundary": "A composition on an image curve is not an intermediate field in the primitive degree6 source extension."
+    }
+  ],
+  "rejected_shortcuts": [
+    {
+      "approach": "Transfer the old genus2 adjoint pencil to the two-prime rows",
+      "reason": "The extra ramified image adds5 or10 affine branch units to a general target line."
+    },
+    {
+      "approach": "Infer abelian complement from affine nodes and fixed infinity data",
+      "reason": "The2026 affine Zariski-pair paper supplies a counterexample to that general inference."
+    },
+    {
+      "approach": "Use Orevkov negativity directly on the gap21 image",
+      "reason": "Opposite Puiseux branches have a nonzero difference tending to0 in every affine linear projection."
+    }
+  ],
+  "primary_import": "Nori Proposition3.27, not the withdrawn Jacobian reduction in the Orevkov PDF.",
+  "process_status": "All local symbolic calculations completed; no ongoing computation asserted."
+}

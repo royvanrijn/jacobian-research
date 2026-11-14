@@ -1,0 +1,42 @@
+{
+  "schema": "r7-laurent-collision-certificates-v1",
+  "certificates": [
+    {
+      "file": "necessary_reduced_certificate.json.gz",
+      "sha256": "bc7cec008eb307f9c16c3e57600aace0899adc246c53086f2cdd82412d048540"
+    },
+    {
+      "file": "necessary_weighted_certificate.json.gz",
+      "sha256": "fae50bf430a02140863dba7049ac4f95552262a6aa3810b6d8aab414d12d0de7"
+    },
+    {
+      "file": "exception_unit_certificate.json",
+      "sha256": "f22a5faac14a2f6ced92bbe2dbf17c4fdb7bfb2b2f1b79489578fa6b013a36f5"
+    },
+    {
+      "file": "projection_gcd_certificate.json.gz",
+      "sha256": "c8b761af233fded5f7f38c547c6e5899da2a30379284feeeda58f8973b0534f5"
+    },
+    {
+      "file": "zero_sum_gcd_certificate.json",
+      "sha256": "7b51c17bcb0929b436a1a4e8d5c70963be8b322f8a44c0f97ef88ac819508527"
+    },
+    {
+      "file": "triple_point_certificate.json",
+      "sha256": "b2d0ddf602e0a1bc597f359f8a9697234e10d777de97ce99240a6d6b74627147"
+    },
+    {
+      "file": "triple_rank_certificate.json",
+      "sha256": "fbae6bcfde9f66c17da823568ce837a54bb2f520f08204a3fc563ccbe4b508b9"
+    },
+    {
+      "file": "irreducibility_certificate.json",
+      "sha256": "71bb10e4119afe3921c8e06981b5b40f63865fa4ee42a2957f9bb96188e5ff98"
+    },
+    {
+      "file": "exceptional_moduli.json",
+      "sha256": "356a1b3a7dc09b8b613b10bdae417f5c609fd2647107d595ea708733a3e8a4b2"
+    }
+  ],
+  "assurance": "Literal integer identities, exact modular polynomial identities, a characteristic-zero point over the degree50 field, finite-field irreducibility and rank witnesses. No discovery basis or capped run is a proof premise."
+}

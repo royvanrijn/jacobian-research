@@ -1,0 +1,5 @@
+{
+  "query": "all:\"Generalized Vanishing Conjecture\"",
+  "url": "https://export.arxiv.org/api/query?search_query=all%3A%22Generalized+Vanishing+Conjecture%22&max_results=100&sortBy=lastUpdatedDate&sortOrder=descending",
+  "results": 7
+}

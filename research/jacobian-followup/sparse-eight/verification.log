@@ -1,0 +1,20 @@
+{"stage": "independent-inputs", "done": 2000, "total": 19808}
+{"stage": "independent-inputs", "done": 4000, "total": 19808}
+{"stage": "independent-inputs", "done": 6000, "total": 19808}
+{"stage": "independent-inputs", "done": 8000, "total": 19808}
+{"stage": "independent-inputs", "done": 10000, "total": 19808}
+{"stage": "independent-inputs", "done": 12000, "total": 19808}
+{"stage": "independent-inputs", "done": 14000, "total": 19808}
+{"stage": "independent-inputs", "done": 16000, "total": 19808}
+{"stage": "independent-inputs", "done": 18000, "total": 19808}
+{"stage": "rational-replay", "done": 2000, "total": 19808}
+{"stage": "rational-replay", "done": 4000, "total": 19808}
+{"stage": "rational-replay", "done": 6000, "total": 19808}
+{"stage": "rational-replay", "done": 8000, "total": 19808}
+{"stage": "rational-replay", "done": 10000, "total": 19808}
+{"stage": "rational-replay", "done": 12000, "total": 19808}
+{"stage": "rational-replay", "done": 14000, "total": 19808}
+{"stage": "rational-replay", "done": 16000, "total": 19808}
+{"stage": "rational-replay", "done": 18000, "total": 19808}
+{"status": "pass", "schema": "sparse-eight-coordinate-gates.v1", "source_sha256": "657eed93b6a9ead4f76a7393463f9bdc1e4aaaed1685723fdb2d863b667227db", "supports_sha256": "122a30f35e14505c81cf063d086dfae5de3b69df843457242bf892ac036c6ee9", "counts": [{"size": 6, "gate": "univariate-coordinate", "count": 450}, {"size": 7, "gate": "elementary-shear-coordinate", "count": 1}, {"size": 7, "gate": "univariate-coordinate", "count": 1875}, {"size": 8, "gate": "elementary-shear-coordinate", "count": 46}, {"size": 8, "gate": "hyperplane-normal-factor", "count": 1}, {"size": 8, "gate": "univariate-coordinate", "count": 17435}], "rational_algebra_dependency": false, "external_dependency": "Moh plane Keller injectivity through maximum component degree 100", "scope": "Complete retained raw-degree-at-most-seven support cover through eight nonlinear occurrences."}
+{"status": "pass", "claim": "GLDC3", "source_sha256": "ee76970dff704ac2424f5a94f78f7246140b2cf6d6e91117d66a854db153f236", "manifest_sha256": "899a4c1550e5e755af20f1cdcb61f9c2f0d8915bc4af8ac1629c9c24390aa67c", "coverage_sha256": "8a582cbae779c36ce06b009fbe0bee4216c3f7e3998c8fd5c3626d70ae3ac0fc", "independent_input_compiler_sha256": "6cca45c7cc499166be7762dd2807917642c05a5d0c6a6bf8f6d93931e6fa0d96", "structural_sha256": "e4119acdb6397f0f11325159ee9bf86b653a9dd9ff453900cd93829e361e37e7", "verified_coefficient_ideals": 19808, "eight_term_orbits": 17482, "smaller_regression_orbits": 2326, "independent_coverage": true, "independent_coefficient_compilation": true, "algebra_rerun": true, "coverage_rerun": false, "structural_replay": true, "elapsed_seconds": 69.75976031800383, "scope": "No normalized three-variable Keller collision in raw degree <=7 with <=8 nonlinear occurrences.", "versions": {"python": "3.12.3", "sympy": "1.14.0", "singular": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00"}}

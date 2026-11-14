@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-11-14",
+  "scope": "Version checks for the three immediately relevant retained papers; not an exhaustive priority search.",
+  "records": [
+    {
+      "url": "https://arxiv.org/abs/2608.00222",
+      "version": "v2",
+      "version_date": "2026-11-04",
+      "role": "F7 eliminant and research question; local source pin at ../gao-f4-fibres/sources/gao-2608.00222v2-source.tar"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.24889",
+      "version": "v1",
+      "version_date": "2026-10-17",
+      "role": "Original user paper; no additional theorem imported here."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.06372",
+      "version": "v3",
+      "version_date": "2026-08-01",
+      "role": "Retained computational context; the new verifier runs no Groebner or multivariate resultant backend."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-11-14",
+  "claim_ids": [
+    "GAOF6FIB1",
+    "GAOF6NP1"
+  ],
+  "mathematical_checker": {
+    "result": "PASS",
+    "exact_checks": 118,
+    "receipt": "receipt.json"
+  },
+  "index_validation": "PASS scoped: all consumer checks and other claims narrow-edge backlink checks explicitly omitted. The live ledger was not changed to suppress these checks.",
+  "new_and_affected_gao_methods": "PASS:2",
+  "gao_work_claim_fingerprints_and_sources": "PASS",
+  "checker_hashes_software_locks_and_archive_flags": "PASS",
+  "new_links_whitespace_and_compilation": "PASS",
+  "navigation": "26 generated views refreshed from the current snapshot; concurrent edits can make a later rerender necessary",
+  "f4_proof_audit": "Same-agent written review; independent review remains false",
+  "existing_ledger_repair": "Added the missing reciprocal OP-PLANE dependency/scope mention for already registered JC2CFF2 and refreshed six reviewed fingerprints. Further planar claims appeared during validation (including JC2POS1), so their in-progress backlinks were preserved without further repair. No JC2CFF mathematical scope or state changed.",
+  "full_repository_validation": [
+    {
+      "command": "make -C research check-navigation",
+      "result": "FAIL: existing missing artifact",
+      "error": "KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": ".venv/bin/python research/scripts/research.py check --require-partial-review",
+      "result": "FAIL: existing missing artifact",
+      "error": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+    }
+  ],
+  "git_diff_whitespace": "PASS for changed research metadata, follow-up files and generated views"
+}

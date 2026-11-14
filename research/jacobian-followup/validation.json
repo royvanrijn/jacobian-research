@@ -1,0 +1,23 @@
+{
+  "new_scoped_claims": [
+    "BCRDB1",
+    "BCRDBGRAPH1",
+    "PF2R7CUSP1"
+  ],
+  "scoped_mathematical_checks": "PASS",
+  "new_metadata_and_method_references": "PASS",
+  "python_compilation": "PASS",
+  "diff_whitespace_checks": "PASS",
+  "navigation_rendering": "26 generated views refreshed through repository renderer APIs; validation failures below were not suppressed or marked passed",
+  "preexisting_failures": [
+    {
+      "command": "make -C research check-navigation",
+      "error": "KDSQ6: missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "python3 research/scripts/research.py check --require-partial-review",
+      "error": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json"
+    }
+  ],
+  "missing_evidence_reconstructed": false
+}

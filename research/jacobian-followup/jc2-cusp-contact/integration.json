@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-11-14",
+  "claims": [
+    "JC2CFR1",
+    "JC2CFF1",
+    "JC2CFF2",
+    "JC2CFW1",
+    "JC2CFQ1",
+    "JC2CFC1",
+    "JC2CFN1",
+    "JC2CFMV1",
+    "JC2CFJ1",
+    "JC2CFGA1",
+    "JC2CF7F1",
+    "JC2CFSB1"
+  ],
+  "previous_entries": 1646,
+  "previous_snapshot_sha256": "30ba7557d9df5d278bb88af683bfb40a13d604ae027569b24ed0559aa104657c",
+  "previous_entries_preserved_at_initial_integration": true,
+  "source_gate": "Eight highest actual contact cases, five affine normal forms, and a selected actual contact507 source-band obstruction; finite flat degree7 conditional quintic interface.",
+  "next_gate": "Project deeper nonlinear forcing; no whole leading-stratum or global attachment closure.",
+  "missing_historical_artifacts_reconstructed": false
+}

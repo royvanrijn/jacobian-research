@@ -1,0 +1,33 @@
+{
+  "identity": "K(Tx)=T J(x); J is section 4.5, not the five-cubic section 4.6 map",
+  "T_permutation_1_based": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    5,
+    10,
+    8,
+    11,
+    12,
+    9,
+    7
+  ],
+  "T_scales": [
+    "1",
+    "2",
+    "2",
+    "4",
+    "4",
+    "2",
+    "4",
+    "2",
+    "12",
+    "4",
+    "2",
+    "-1/2"
+  ],
+  "T_determinant": "-49152",
+  "polynomial_identities": 12
+}

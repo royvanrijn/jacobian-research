@@ -1,0 +1,463 @@
+/* [wxMaxima: input   start ] */
+v: (1+2*x1*x2);
+F: [x1 - 3*x1^2*x2 - x1^3*x3, 3*v^2*x1*x3 + (9*v^2-6*v-2)*x2,  v^3*x3 + (6*v^2+2*v)*x2^2, 
+    x4 + x1^2*x3 + 3*x1*x2, x5 + x2^3, x6 + x1^2, x7 + x1*x3, x8 + x2^2, 
+    x9 + x1*x5, x10 + x1*x8, x11 + x1*x9, x12 + x1*x2 + x1*x10];
+P: [[0,1,-8,0,-1,0,0,-1,0,0,0,0], 
+    [-1,1,4,-1,-1,-1,4,-1,-1,-1,-1,0]];
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+E: [y1 + y6*y7, y2 + 12*y1*y8 + 12*y4*y10 - 12*y7*y12, 
+    y3 + 8*y1*y5 - 12*y4*y8 + 8*y4*y9 + 12*y7*y10 - 8*y7*y11,
+    y4,y5,y6,y7,y8,y9,y10,y11,y12];
+Fcub: expand(subst(makelist(concat(y,i)=F[i],i,1,12),E));
+makelist(subst(makelist(concat(x,i)=P[j][i],i,1,12),Fcub),j,1,2);
+expand(determinant(jacobian(Fcub,[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12])));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(hipow(subst(makelist(concat(x,i)=t*concat(x,i),i,1,12),Fcub[j]),t),j,1,12);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+makelist(length(Fcub[j]),j,1,12); sum(length(Fcub[j]),j,1,12);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+id_x(n) := makelist(concat(x,i), i, 1, n);
+subst_mulpow_t(F,n,d) := block(s, s: id_x(n), expand(subst(makelist(s[i]=t^d*s[i],i,1,n),F)));
+deg_xt(f,n) := hipow(subst_mulpow_t(f,n,1),t);
+hmg_part_xt(f,n,d) :=  ratsimp(t^d*subst_mulpow_t(coeff(subst_mulpow_t(f,n,1),t,d),n,-1));
+subst_x(P,F) := makelist(subst(makelist(concat(x,i)=P[j][i],i,1,length(P[j])),F),j,1,length(P));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* reduce the degree of a polynomial f with a new component */
+/* the leading homogeneous part of f must be divisible by t ^ (deg(f) - d) */
+reduce_degree(f, n, d) := block([degf, g, h],    
+    /* degree of f in x1, x2, ..., xn, t */
+    degf: deg_xt(f,n),
+    
+    /* if f has already degree ≤ d, then there is nothing to do */
+    if degf <= d then return([f, 0]),
+
+    /* for new component, take leading homogeneous part, */
+    /* divide by t^(d-degf) and add new variable */
+    h: ratsimp(hmg_part_xt(f, n, degf) / t^(degf - d)) + concat(x, n+1),
+    
+    /* reduce degree of f with h */
+    g: expand(f - h *  t^(degf - d)),
+
+    /* return reduced polynomial and new component */
+    [g, h]
+  );
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* Make all components of F of degree at most d */
+reduce_map(F, d) := block([n, G, m, res],
+    n : length(F),
+    m : n,
+    
+    /* substitute x = t^(d-2) * x in F / t^(d-2) */
+    G: subst_mulpow_t(F / t^(d-2), n, d-2),
+
+    /* iterate over the current components of G */
+    for i : 1 thru n do (
+        /* repeat reducing the degree until G[i] has the right degree */
+        res: reduce_degree(G[i], m, d),
+        while res[2] # 0 do (
+            G[i] : res[1],
+            G : endcons(res[2], G),
+            m: m + 1,
+            res: reduce_degree(G[i], m, d)
+        )
+    ),
+
+    /* return reduced map */
+    G
+);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* Make an unipotent map from F of degree deg(F) with n + sum_i max(deg(F_i) - 2, 0) components */
+/* Make a unipotent homogeneous map from F of degree deg(F) with n + sum_i max(deg(F_i) - 2, 0) + 1 components */
+make_unipotent(F, P, hmg) := block([n, d, G, m, Q, q, i, j],    
+    n: length(F),
+    /* Test if linear part is the identity map */
+    if not ratsimp(subst(t=0, subst_mulpow_t(F / t, n, 1))) = id_x(n) then
+        error("Linear part is not the identity map!"),
+    
+    /* perform unipotent reduction */
+    d: apply(max, makelist(deg_xt(F[i], n), i, 1, n)),
+    G: reduce_map(F, d),
+    m: length(G),    
+    
+    /* Compute points */
+    Q: [],
+    for j: 1 thru length(P) do (
+        q: P[j]/t^(d-2),
+        for i: n+1 thru m do
+            q: append(q, subst_x([q], [concat(x,i)-G[i]])[1]),
+        q: subst(t=t^(-1/(d-1)),q/t),
+        if hmg then q: endcons(1, q),
+        Q: endcons(q,Q)
+    ),
+    
+    /* return unipotent map */
+    if hmg then
+        [subst(t=concat(x,length(G) + 1), endcons(t,G)), Q]
+    else
+        [subst(t=1, G), Q]
+  
+);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+res: make_unipotent(Fcub,P,false)$ G: res[1]; Q: res[2]; 
+subst_x(Q, id_x(17) + t^(-1)*(G - id_x(17)));
+/*expand(determinant(jacobian(G,id_x(17))));*/
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+res: make_unipotent(Fcub,P,true)$ G_h: res[1]; Q_h: res[2]; 
+subst_x(Q_h, id_x(18) + t^(-1)*(G_h - id_x(18)));
+/*expand(determinant(jacobian(G_h,id_x(18))));*/
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+find_poly_idx(p, L) := block([i, ret],
+        ret: false,
+        for i:1 thru length(L) do
+            if expand(L[i] - p) = 0 then ret: i 
+            else if expand(L[i] + p) = 0 then ret: -i,
+        ret)$
+
+/* --- 1. HULPFUNCTIE: VOEG UNIEKE MACHT TOE --- */
+add_poly(expr, L) := if find_poly_idx(expr, L) = false then (L: endcons(expr, L), L) else L$
+
+/* --- 2. AUTOMATISCHE GENERATOR --- */
+generate_druz_powers(G) := block(
+    [n_rows, i, poly, terms, j, mon, vars, k, x_val, y_val, z_val, ret],
+    
+    /* Start met een volledig lege globale lijst */
+    ret: [],
+    n_rows: length(G),
+    
+    for i: 1 thru n_rows do (
+        /* Bereken poly exact zoals jij aangaf door het lineaire x_i deel af te trekken */
+        poly: expand(G[i] - concat(x, i)),
+        
+        /* Veilig opsplitsen in losse termen, ook als poly maar 1 term is */
+        if atom(poly) or op(poly) # "+" then (
+            terms: [poly]
+        ) else (
+            terms: args(poly)
+        ),
+        
+        for j: 1 thru length(terms) do (
+            mon: terms[j],
+            if mon # 0 then (
+                vars: listofvars(mon),
+                
+                /* Categorie 1: Pure derdemachten (x^3) */
+                if length(vars) = 1 then (
+                    ret: add_poly(vars[1]^3, ret)
+                ),
+                
+                /* Categorie 2: Kwadratische kruistermen (x^2 * y) */
+                if length(vars) = 2 then (
+                    if hipow(mon, vars[1]) = 2 then (
+                        x_val: vars[1], y_val: vars[2]
+                    ) else (
+                        x_val: vars[2], y_val: vars[1]
+                    ),
+                    ret: add_poly(y_val^3, ret),
+                    ret: add_poly((x_val + y_val)^3, ret),
+                    ret: add_poly((x_val - y_val)^3, ret)
+                ),
+                
+                /* Categorie 3: Pure gemengde termen (x * y * z) */
+                if length(vars) = 3 then (
+                    x_val: vars[1], y_val: vars[2], z_val: vars[3],
+                    vars_y: subst(makelist(concat(x,k)=0,k,1,length(G)),vars),
+                    if true then (                        
+                        ret: add_poly(x_val^3, ret),
+                        ret: add_poly(y_val^3, ret),
+                        ret: add_poly(z_val^3, ret),
+                        ret: add_poly((x_val + y_val)^3, ret),
+                        ret: add_poly((y_val + z_val)^3, ret),
+                        ret: add_poly((x_val + z_val)^3, ret),
+                        ret: add_poly((x_val + y_val + z_val)^3, ret)
+                    ) else (
+                        ret: add_poly((x_val + y_val + z_val)^3, ret),
+                        ret: add_poly((x_val - y_val - z_val)^3, ret),
+                        ret: add_poly((x_val + y_val - z_val)^3, ret),
+                        ret: add_poly((x_val - y_val + z_val)^3, ret)
+                    )                    
+                )
+            )
+        )
+    ),
+    print("Aantal automatisch gegenereerde unieke machten: ", length(ret)),
+    return(ret)
+)$
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+G_druz: expand(G_h)$
+G_druz[18]: G_druz[18] + x18^3$
+G_druz_y: copy(G_druz)$
+
+y_list: [2*x9-3*x8, 3*x10-2*x11, 3*x2-x7, x2+x10, 3*x2+6*x10-4*x11];
+length(G_druz_y[3]);
+G_druz_y[3]:  4*y1*x4*x18 + expand(G_druz_y[3] - 4*y_list[1]*x4*x18);
+length(G_druz_y[3]);
+G_druz_y[3]: 4*y2*x7*x18 + expand(G_druz_y[3] - 4*y_list[2]*x7*x18);
+length(G_druz_y[3]);
+length(G_druz_y[12]);
+G_druz_y[12]: y4*x1*x18 + expand(G_druz_y[12] - y_list[4]*x1*x18);
+length(G_druz_y[12]);
+length(G_druz_y[13]);
+G_druz_y[13]: -y3*x1^2 + expand(G_druz_y[13] + y_list[3]*x1^2);
+length(G_druz_y[13]);
+length(G_druz_y[14]);
+G_druz_y[14]: 12*y3*y4*x1 + expand(G_druz_y[14] - 12*y_list[3]*y_list[4]*x1);
+length(G_druz_y[14]);
+length(G_druz_y[15]);
+G_druz_y[15]:  2*y5*x1*x3 + expand(G_druz_y[15] - 2*y_list[5]*x1*x3);
+length(G_druz_y[15]);
+G_druz_y[15]: 4*y1*y3*x1 + expand(G_druz_y[15] - 4*y_list[1]*y_list[3]*x1);
+length(G_druz_y[15]);
+
+length(G_druz_y[2]);
+G_druz_y[2]: 12*y4*x4*x18 +  expand(G_druz_y[2] - 12*y_list[4]*x4*x18);
+length(G_druz_y[2]);
+length(G_druz_y[11]);
+G_druz_y[11]: 1/2*y1*x1*x18 + expand(G_druz_y[11] - 1/2*y_list[1]*x1*x18);
+length(G_druz_y[11]);
+
+y_subst: makelist(concat(y,i)=y_list[i],i,1,length(y_list))$
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+druz_power_list: generate_druz_powers(G_druz);
+druz_y_power_list: generate_druz_powers(G_druz_y);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* De Hoofdscanfunctie */
+fill_druz_matrix(G, L) := block([n_rows, n_cols, B, i, poly, terms, j, mon, co, vars, x_val, y_val, z_val, idx, idx2, idx3, idx4],    
+    n_rows: length(G),
+    n_cols: length(L),
+    
+    /* Maak een lege nulmatrix van 18 x C */
+    B: genmatrix(lambda([r, c], 0), n_rows, n_cols),
+    
+    for i: 1 thru n_rows do (
+        poly: expand(G[i] - concat(x, i)),
+        
+        if atom(poly) or op(poly) # "+" then (
+            terms: [poly]
+        ) else (
+            terms: args(poly)
+        ),
+        
+        for j: 1 thru length(terms) do (
+            mon: terms[j],
+            if mon # 0 then (
+                co_x: subst(makelist(concat(x,k)=1,k,1,length(G)),mon),
+                co: subst(makelist(concat(y,k)=1,k,1,100),co_x),
+                vars: listofvars(mon),
+                
+                /* Categorie 1: Pure derdemachten */
+                if length(vars) = 1 then (                    
+                    idx: find_poly_idx(vars[1]^3, L),
+                    if idx # false then (
+                        B[i, abs(idx)]: B[i, abs(idx)] + signum(idx) * co 
+                    )
+                ),
+                
+                /* Categorie 2: Kwadratische kruistermen (x^2 * y) */
+                if length(vars) = 2 then (                    
+                    if hipow(mon, vars[1]) = 2 then (
+                        x_val: vars[1], y_val: vars[2]
+                    ) else (
+                        x_val: vars[2], y_val: vars[1]
+                    ),
+                    idx: find_poly_idx((x_val + y_val)^3, L),
+                    idx2: find_poly_idx((x_val - y_val)^3, L),
+                    idx3: find_poly_idx(y_val^3, L),
+                    
+                    if idx # false then B[i, abs(idx)]: B[i, abs(idx)] + signum(idx) * co / 6,
+                    if idx2 # false then B[i, abs(idx2)]: B[i, abs(idx2)] - signum(idx2) * co / 6,
+                    if idx3 # false then B[i, abs(idx3)]: B[i, abs(idx3)] - signum(idx3) * co / 3
+                ),
+                
+               /* Categorie 3: Pure gemengde termen (x * y * z) */
+                if length(vars) = 3 then (
+                    x_val: vars[1], y_val: vars[2], z_val: vars[3],
+                    idx: find_poly_idx((x_val + y_val + z_val)^3, L),
+                    idx2: find_poly_idx((x_val + y_val)^3, L),
+                    idx3: find_poly_idx((y_val + z_val)^3, L),
+                    idx4: find_poly_idx((x_val + z_val)^3, L),
+                    
+                    if idx # false then B[i, abs(idx)]: B[i, abs(idx)] + signum(idx) * co / 6,
+                    if idx2 # false then B[i, abs(idx2)]: B[i, abs(idx2)] - signum(idx2) * co / 6,
+                    if idx3 # false then B[i, abs(idx3)]: B[i, abs(idx3)] - signum(idx3) * co / 6,
+                    if idx4 # false then B[i, abs(idx4)]: B[i, abs(idx4)] - signum(idx4) * co / 6,
+                    
+                    idx5: find_poly_idx(x_val^3, L), if idx5 # false then B[i, abs(idx5)]: B[i, abs(idx5)] + signum(idx5) * co / 6,
+                    idx6: find_poly_idx(y_val^3, L), if idx6 # false then B[i, abs(idx6)]: B[i, abs(idx6)] + signum(idx6) * co / 6,
+                    idx7: find_poly_idx(z_val^3, L), if idx7 # false then B[i, abs(idx7)]: B[i, abs(idx7)] + signum(idx7) * co / 6
+                )
+            )
+        )
+    ),
+    return(B)
+)$
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+B: fill_druz_matrix(G_druz, druz_power_list);
+rank(B);
+B_y: fill_druz_matrix(G_druz_y, druz_y_power_list);
+rank(B_y);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+test_druz(G, L, B) := block([reconstruction, G_cubic, diff_list, i],
+    /* 1. Bereken de reconstructie: Matrix maal de kolomvector van machten */
+    reconstruction: matrix(subst(y_subst, L)) . transpose(B),
+    
+    /* 2. Isoleer het pure kubische deel van de oorspronkelijke G_d */
+    G_cubic: makelist(expand(G[i] - concat(x, i)), i, 1, 18),
+    
+    /* 3. Bereken het exacte verschil tussen de reconstructie en het origineel */
+    /* We zetten de reconstructievector om naar een gewone lijst voor de vergelijking */
+    diff_list: expand(reconstruction[1] - G_cubic),
+    
+    /* 4. De definitieve check: is het verschil overal exact nul? */
+    if diff_list = makelist(0, i, 1, 18) then (
+        print("HOERA: De verificatie is 100% geslaagd! M * L is exact gelijk aan G_cubic.")
+    ) else (
+        print("ATTENTIE: Er zit een algebraïsch verschil in de volgende rijen:"),
+        for i:1 thru 18 do (
+            if diff_list[i] # 0 then print("Rij ", i, " verschil: ", diff_list[i], " van ", G_cubic[i])
+        )
+    )
+);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+test_druz(G_druz, druz_power_list, B)$
+test_druz(G_druz, druz_y_power_list, B_y)$
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+/* --- 2. AUTOMATISCHE GENERATOR --- */
+generate_druz_monomials(G) := block([n_rows, i, poly, terms, j, mon, vars, k, x_val, y_val, z_val, ret],
+    
+    /* Start met een volledig lege globale lijst */
+    ret: [],
+    n_rows: length(G),
+    
+    for i: 1 thru n_rows do (
+        /* Bereken poly exact zoals jij aangaf door het lineaire x_i deel af te trekken */
+        poly: expand(G[i] - concat(x, i)),
+        
+        /* Veilig opsplitsen in losse termen, ook als poly maar 1 term is */
+        if atom(poly) or op(poly) # "+" then (
+            terms: [poly]
+        ) else (
+            terms: args(poly)
+        ),
+        
+        for j: 1 thru length(terms) do (
+            mon: terms[j],
+            if mon # 0 then (
+                vars: listofvars(mon),
+                
+                /* Categorie 1: Pure derdemachten (x^3) */
+                if length(vars) = 1 then (
+                    ret: add_poly(vars[1]^3, ret)
+                ),
+                
+                /* Categorie 2: Kwadratische kruistermen (x^2 * y) */
+                if length(vars) >= 2 then (
+                    x_val: vars[1], y_val: vars[2],
+                    ret: add_poly(x_val^3, ret),
+                    ret: add_poly(x_val^2 * y_val, ret),
+                    ret: add_poly(x_val * y_val^2, ret),
+                    ret: add_poly(y_val^3, ret),
+                    
+                    /* Categorie 3: Pure gemengde termen (x * y * z) */
+                    if length(vars) = 3 then (
+                        z_val: vars[3],
+                        ret: add_poly(x_val^2 * z_val, ret),
+                        ret: add_poly(x_val * z_val^2, ret),
+                        ret: add_poly(z_val^3, ret),
+                        ret: add_poly(y_val^2 * z_val, ret),
+                        ret: add_poly(y_val * z_val^2, ret),
+                        ret: add_poly(x_val * y_val * z_val, ret)
+                    )                    
+                )
+            )
+        )
+    ),
+    print("Aantal automatisch gegenereerde unieke monomen: ", length(ret)),
+    return(ret)
+)$
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+_G_h: G_h+ endcons(x2*x4*x18,makelist(0,17))$
+druz_monomial_list: generate_druz_monomials(_G_h);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+divide_by_monomial(poly, mon) := block([q, vars, r],
+    q: expand(poly),
+    vars: listofvars(mon),
+    
+    for i: 1 thru length(vars) do
+        q: quotient(q, vars[i]^hipow(mon, vars[i])),
+    
+    r: expand(poly - mon*q),
+    [q, r]
+);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+M: genmatrix(lambda([i,j], divide_by_monomial(druz_power_list[i], druz_monomial_list[j])[1]),
+            length(druz_power_list), length(druz_monomial_list));
+rank(M);
+druz_x_power_list: subst(y_subst, druz_y_power_list)$
+M_y: genmatrix(lambda([i,j], divide_by_monomial(druz_x_power_list[i], druz_monomial_list[j])[1]),
+            length(druz_x_power_list), length(druz_monomial_list));
+rank(M_y);
+/* [wxMaxima: input   end   ] */
+
+
+

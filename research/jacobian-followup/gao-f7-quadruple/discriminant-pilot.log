@@ -1,0 +1,2 @@
+{"stage": "input", "degrees": [8, 7, 27], "terms": 1175, "seconds": 2.87443831100245}
+{"stage": "discriminant_saved", "degrees": [0, 94, 305], "terms": 25674, "coefficient_bits": 310, "seconds": 37.54714238300221}

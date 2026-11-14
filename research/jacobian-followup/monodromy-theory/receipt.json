@@ -1,0 +1,499 @@
+{
+  "result": "pass",
+  "check_count": 197,
+  "checks": [
+    "D_3 natural faithful group order",
+    "D_3 point stabilizer normal-closure parity",
+    "D_3 fixed-sheet-generated subgroup",
+    "D_4 natural faithful group order",
+    "D_4 point stabilizer normal-closure parity",
+    "D_4 fixed-sheet-generated subgroup",
+    "D_4 other reflection class",
+    "D_5 natural faithful group order",
+    "D_5 point stabilizer normal-closure parity",
+    "D_5 fixed-sheet-generated subgroup",
+    "D_6 natural faithful group order",
+    "D_6 point stabilizer normal-closure parity",
+    "D_6 fixed-sheet-generated subgroup",
+    "D_6 other reflection class",
+    "D_7 natural faithful group order",
+    "D_7 point stabilizer normal-closure parity",
+    "D_7 fixed-sheet-generated subgroup",
+    "D_8 natural faithful group order",
+    "D_8 point stabilizer normal-closure parity",
+    "D_8 fixed-sheet-generated subgroup",
+    "D_8 other reflection class",
+    "D_9 natural faithful group order",
+    "D_9 point stabilizer normal-closure parity",
+    "D_9 fixed-sheet-generated subgroup",
+    "D_10 natural faithful group order",
+    "D_10 point stabilizer normal-closure parity",
+    "D_10 fixed-sheet-generated subgroup",
+    "D_10 other reflection class",
+    "D_11 natural faithful group order",
+    "D_11 point stabilizer normal-closure parity",
+    "D_11 fixed-sheet-generated subgroup",
+    "D_12 natural faithful group order",
+    "D_12 point stabilizer normal-closure parity",
+    "D_12 fixed-sheet-generated subgroup",
+    "D_12 other reflection class",
+    "D_13 natural faithful group order",
+    "D_13 point stabilizer normal-closure parity",
+    "D_13 fixed-sheet-generated subgroup",
+    "D_14 natural faithful group order",
+    "D_14 point stabilizer normal-closure parity",
+    "D_14 fixed-sheet-generated subgroup",
+    "D_14 other reflection class",
+    "D_15 natural faithful group order",
+    "D_15 point stabilizer normal-closure parity",
+    "D_15 fixed-sheet-generated subgroup",
+    "D_16 natural faithful group order",
+    "D_16 point stabilizer normal-closure parity",
+    "D_16 fixed-sheet-generated subgroup",
+    "D_16 other reflection class",
+    "D_17 natural faithful group order",
+    "D_17 point stabilizer normal-closure parity",
+    "D_17 fixed-sheet-generated subgroup",
+    "D_18 natural faithful group order",
+    "D_18 point stabilizer normal-closure parity",
+    "D_18 fixed-sheet-generated subgroup",
+    "D_18 other reflection class",
+    "D_19 natural faithful group order",
+    "D_19 point stabilizer normal-closure parity",
+    "D_19 fixed-sheet-generated subgroup",
+    "D_20 natural faithful group order",
+    "D_20 point stabilizer normal-closure parity",
+    "D_20 fixed-sheet-generated subgroup",
+    "D_20 other reflection class",
+    "D_21 natural faithful group order",
+    "D_21 point stabilizer normal-closure parity",
+    "D_21 fixed-sheet-generated subgroup",
+    "D_22 natural faithful group order",
+    "D_22 point stabilizer normal-closure parity",
+    "D_22 fixed-sheet-generated subgroup",
+    "D_22 other reflection class",
+    "D_23 natural faithful group order",
+    "D_23 point stabilizer normal-closure parity",
+    "D_23 fixed-sheet-generated subgroup",
+    "D_24 natural faithful group order",
+    "D_24 point stabilizer normal-closure parity",
+    "D_24 fixed-sheet-generated subgroup",
+    "D_24 other reflection class",
+    "D_25 natural faithful group order",
+    "D_25 point stabilizer normal-closure parity",
+    "D_25 fixed-sheet-generated subgroup",
+    "D_26 natural faithful group order",
+    "D_26 point stabilizer normal-closure parity",
+    "D_26 fixed-sheet-generated subgroup",
+    "D_26 other reflection class",
+    "D_27 natural faithful group order",
+    "D_27 point stabilizer normal-closure parity",
+    "D_27 fixed-sheet-generated subgroup",
+    "D_28 natural faithful group order",
+    "D_28 point stabilizer normal-closure parity",
+    "D_28 fixed-sheet-generated subgroup",
+    "D_28 other reflection class",
+    "D_29 natural faithful group order",
+    "D_29 point stabilizer normal-closure parity",
+    "D_29 fixed-sheet-generated subgroup",
+    "D_30 natural faithful group order",
+    "D_30 point stabilizer normal-closure parity",
+    "D_30 fixed-sheet-generated subgroup",
+    "D_30 other reflection class",
+    "D_31 natural faithful group order",
+    "D_31 point stabilizer normal-closure parity",
+    "D_31 fixed-sheet-generated subgroup",
+    "D_32 natural faithful group order",
+    "D_32 point stabilizer normal-closure parity",
+    "D_32 fixed-sheet-generated subgroup",
+    "D_32 other reflection class",
+    "regular C_2 has no nonidentity fixed-sheet elements",
+    "regular C_3 has no nonidentity fixed-sheet elements",
+    "regular C_4 has no nonidentity fixed-sheet elements",
+    "regular C_5 has no nonidentity fixed-sheet elements",
+    "regular C_6 has no nonidentity fixed-sheet elements",
+    "regular C_7 has no nonidentity fixed-sheet elements",
+    "regular C_8 has no nonidentity fixed-sheet elements",
+    "regular C_9 has no nonidentity fixed-sheet elements",
+    "A4 stabilizer normally generates",
+    "A4 control order",
+    "F20 stabilizer normally generates",
+    "F20 control order",
+    "PSL2(11) order 1 census",
+    "PSL2(11) order 1 natural cycles",
+    "PSL2(11) order 2 census",
+    "PSL2(11) order 2 natural cycles",
+    "PSL2(11) order 3 census",
+    "PSL2(11) order 3 natural cycles",
+    "PSL2(11) order 5 census",
+    "PSL2(11) order 5 natural cycles",
+    "PSL2(11) order 6 census",
+    "PSL2(11) order 6 natural cycles",
+    "PSL2(11) order 11 census",
+    "PSL2(11) order 11 natural cycles",
+    "PSL2(11) natural Borel size",
+    "Borel generators",
+    "Borel normally generates PSL2(11)",
+    "5,5,2 witness orders",
+    "5,5,2 witness product one",
+    "5,5,2 witness generates full group",
+    "5,5,2 quotient genus zero",
+    "complete genus-zero fixed-inertia passport sieve",
+    "order-five class 5 generating-pair count",
+    "order-five class 9 generating-pair count",
+    "exceptional degree-eleven order 1 cycles",
+    "exceptional degree-eleven order 2 cycles",
+    "exceptional degree-eleven order 3 cycles",
+    "exceptional degree-eleven order 5 cycles",
+    "exceptional degree-eleven order 6 cycles",
+    "exceptional degree-eleven order 11 cycles",
+    "two primary-source F11 dessins retained",
+    "F11 dessin 1 group order",
+    "F11 dessin 1 explicitly conjugate to natural projective action",
+    "F11 dessin 2 group order",
+    "F11 dessin 2 explicitly conjugate to natural projective action",
+    "PGL2(11) control order",
+    "PGL outer generator odd",
+    "PGL normalizes PSL",
+    "cyclotomic coefficient polynomial",
+    "F11 degree and projective infinity orders",
+    "F11 numerator denominator coprime",
+    "F11 order-two pole fiber",
+    "exact pole square",
+    "boundary part 0 reduced",
+    "boundary part 1 reduced",
+    "boundary parts 0,1 disjoint",
+    "boundary part 2 reduced",
+    "boundary parts 0,2 disjoint",
+    "boundary parts 1,2 disjoint",
+    "boundary part 3 reduced",
+    "boundary parts 0,3 disjoint",
+    "boundary parts 1,3 disjoint",
+    "boundary parts 2,3 disjoint",
+    "boundary part 4 reduced",
+    "boundary parts 0,4 disjoint",
+    "boundary parts 1,4 disjoint",
+    "boundary parts 2,4 disjoint",
+    "boundary parts 3,4 disjoint",
+    "coefficient-field factor degrees A",
+    "coefficient-field factor degrees B",
+    "coefficient-field factor degrees C",
+    "coefficient-field factor degrees E",
+    "coefficient-field factor degrees R",
+    "exact derivative factorization",
+    "derivative has only removed zeros and poles",
+    "F11 target-unit rank",
+    "F11 derivative outside target-unit image",
+    "primitive unit lattice base",
+    "primitive unit lattice base and derivative",
+    "geometric puncture and unit ranks",
+    "discriminant resultant control at 2",
+    "discriminant resultant control at 3",
+    "discriminant resultant control at -1",
+    "F11 arithmetic discriminant constant is nonsquare",
+    "Artin-Schreier etale derivative control",
+    "Artin-Schreier distinct translates control",
+    "punctured Kummer retains a nonconstant unit",
+    "primary-source snapshot hash BelyiMaps.txt",
+    "primary-source snapshot hash Sorted_by_Name.txt",
+    "primary-source snapshot hash Dessins_and_ModuliFields.txt",
+    "primary-source snapshot hash stacks-purity-0BMB.html",
+    "primary-source snapshot hash gap-aut-psl2-11.html"
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "runtime_seconds": 0.195,
+  "proof_boundary": "Universal inertia, normal-generation, nilpotent and all-even-dihedral exclusions have written proofs. Finite controls do not formally verify them. Formula-to-dessin identification and the automorphism-group upper bound are attributed external inputs.",
+  "dihedral_controls": [
+    {
+      "n": 3,
+      "group_order": 6,
+      "normal_closure_order": 6,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 4,
+      "group_order": 8,
+      "normal_closure_order": 4,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 5,
+      "group_order": 10,
+      "normal_closure_order": 10,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 6,
+      "group_order": 12,
+      "normal_closure_order": 6,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 7,
+      "group_order": 14,
+      "normal_closure_order": 14,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 8,
+      "group_order": 16,
+      "normal_closure_order": 8,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 9,
+      "group_order": 18,
+      "normal_closure_order": 18,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 10,
+      "group_order": 20,
+      "normal_closure_order": 10,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 11,
+      "group_order": 22,
+      "normal_closure_order": 22,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 12,
+      "group_order": 24,
+      "normal_closure_order": 12,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 13,
+      "group_order": 26,
+      "normal_closure_order": 26,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 14,
+      "group_order": 28,
+      "normal_closure_order": 14,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 15,
+      "group_order": 30,
+      "normal_closure_order": 30,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 16,
+      "group_order": 32,
+      "normal_closure_order": 16,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 17,
+      "group_order": 34,
+      "normal_closure_order": 34,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 18,
+      "group_order": 36,
+      "normal_closure_order": 18,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 19,
+      "group_order": 38,
+      "normal_closure_order": 38,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 20,
+      "group_order": 40,
+      "normal_closure_order": 20,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 21,
+      "group_order": 42,
+      "normal_closure_order": 42,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 22,
+      "group_order": 44,
+      "normal_closure_order": 22,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 23,
+      "group_order": 46,
+      "normal_closure_order": 46,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 24,
+      "group_order": 48,
+      "normal_closure_order": 24,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 25,
+      "group_order": 50,
+      "normal_closure_order": 50,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 26,
+      "group_order": 52,
+      "normal_closure_order": 26,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 27,
+      "group_order": 54,
+      "normal_closure_order": 54,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 28,
+      "group_order": 56,
+      "normal_closure_order": 28,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 29,
+      "group_order": 58,
+      "normal_closure_order": 58,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 30,
+      "group_order": 60,
+      "normal_closure_order": 30,
+      "excluded_by_KMFI1": true
+    },
+    {
+      "n": 31,
+      "group_order": 62,
+      "normal_closure_order": 62,
+      "excluded_by_KMFI1": false
+    },
+    {
+      "n": 32,
+      "group_order": 64,
+      "normal_closure_order": 32,
+      "excluded_by_KMFI1": true
+    }
+  ],
+  "genus_zero_sieve": [
+    [
+      2,
+      0,
+      6
+    ]
+  ],
+  "triangle_matrices": [
+    [
+      0,
+      1,
+      10,
+      3
+    ],
+    [
+      0,
+      1,
+      10,
+      8
+    ],
+    [
+      1,
+      3,
+      3,
+      10
+    ]
+  ],
+  "triangle_indices": [
+    8,
+    8,
+    6
+  ],
+  "order5_pair_counts": {
+    "5": {
+      "(9, 60)": 10,
+      "(5, 660)": 10
+    },
+    "9": {
+      "(9, 660)": 10,
+      "(5, 60)": 10
+    }
+  },
+  "dessin_conjugacies": [
+    {
+      "order5": [
+        0,
+        1,
+        10,
+        3
+      ],
+      "order2": [
+        0,
+        2,
+        5,
+        0
+      ],
+      "relabel": [
+        7,
+        8,
+        2,
+        1,
+        6,
+        5,
+        9,
+        3,
+        11,
+        0,
+        4,
+        10
+      ]
+    },
+    {
+      "order5": [
+        0,
+        1,
+        10,
+        4
+      ],
+      "order2": [
+        0,
+        3,
+        7,
+        0
+      ],
+      "relabel": [
+        7,
+        5,
+        10,
+        9,
+        2,
+        6,
+        1,
+        4,
+        11,
+        0,
+        3,
+        8
+      ]
+    }
+  ],
+  "sha256": {
+    "THEORY.md": "17a356449d16e7c5e7f07c3b832fa95f53c56b2b8a74e64fb2ddb78ff6afa16a",
+    "F11.md": "8ba90d2b3f8e5fdd591b29fa0e457f12d838cd6b263ad27497844ac1a52fdd17",
+    "model.py": "bfbfd7014166a76b3056a530c59513123b55e2988ec753abab6c7cf87b6bd9c9",
+    "verify.py": "f6538a84c4cb04c532be93647e808e978a165bc6dd90efef0024586ebbc80c47",
+    "model.json": "31bf8fa41fbe4a8cf2f215a1bd29170bca3dd38c85d60f1ec569e49449f8299a",
+    "sources/manifest.json": "cc91f6da89c54e825c4aa7265ec3ad2dc59b2daa641c4228e562781e7928b532"
+  },
+  "full_action_spectrum_classified": false,
+  "absolute_PSL2_11_realized": false
+}

@@ -1,0 +1,8 @@
+{"stage": "matrix", "chart": "s-zero", "last_column": 12, "matrix_size": 13, "degree_bound": 90, "seconds": 0.038211257982766256}
+{"stage": "matrix", "chart": "s-zero", "last_column": 13, "matrix_size": 13, "degree_bound": 92, "seconds": 0.06724170697270893}
+{"stage": "matrix", "chart": "s-zero", "last_column": 14, "matrix_size": 13, "degree_bound": 91, "seconds": 0.09465657698456198}
+{"stage": "chart_saved", "name": "s-zero", "gcd_degree": 0, "degrees": [60, 62, 61], "seconds": 0.10281406197464094}
+{"stage": "matrix", "chart": "s-cubic", "last_column": 12, "matrix_size": 39, "degree_bound": 276, "seconds": 0.12449109999579377}
+{"stage": "matrix", "chart": "s-cubic", "last_column": 13, "matrix_size": 39, "degree_bound": 276, "seconds": 0.6222529169754125}
+{"stage": "matrix", "chart": "s-cubic", "last_column": 14, "matrix_size": 39, "degree_bound": 276, "seconds": 1.1219172989949584}
+{"stage": "chart_saved", "name": "s-cubic", "gcd_degree": 0, "degrees": [186, 186, 186], "seconds": 1.5988773769931868}

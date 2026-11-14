@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-11-13",
+  "sources": [
+    {
+      "file": "borisov-stein-author.pdf",
+      "url": "https://people.math.binghamton.edu/borisov/documents/papers/ampleramification.pdf",
+      "use": "Theorem3.4 and Proposition3.3 imported boundary structure; Theorem3.1 existence quantifier retained",
+      "sha256": "dc63edc476dcd8f2b9b35329bc3bbb415bfb15496fb8fa384ff22cfae24271f4",
+      "bytes": 320134
+    },
+    {
+      "file": "borisov-publisher.html",
+      "url": "https://link.springer.com/article/10.1007/s13366-014-0208-4",
+      "use": "Published metadata: online7June2014, volume56(2015),299-312; publisher full text not accessed",
+      "sha256": "36a44479dff0dc529183c9ebb370e0a4e4eac8c47fd41c3660518de119289d56",
+      "bytes": 269663
+    },
+    {
+      "file": "stacks-purity-0BMB.html",
+      "url": "https://stacks.math.columbia.edu/tag/0BMB",
+      "use": "Purity of branch locus at points on an unramified omitted divisor",
+      "sha256": "37a491b9ddf1fed9ccbc333dfd635731e6394e64c0d1d5a27a323a63b65e8585",
+      "bytes": 18578
+    }
+  ],
+  "geometric_imports_are_external": true,
+  "whole_Borisov_theorem_independently_reproved": false,
+  "prior_sources_research_relative": [
+    "jacobian-followup/hc4-pointed-pencil/sources/manifest.json",
+    "jacobian-followup/jc2-normal-r7/classification.json",
+    "jacobian-followup/hc4-radial-intersection/PROOF.md"
+  ]
+}

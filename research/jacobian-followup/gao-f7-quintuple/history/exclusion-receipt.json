@@ -1,0 +1,91 @@
+{
+  "result": "PASS",
+  "claim_id": "GAOF7FIVE1",
+  "checks": 5479,
+  "scope": "Every F7 eliminant with a root of multiplicity at least5 has exactly one fivefold root and seven other simple roots. Its F7 fibre has exactly7 points. Three-point types5+4 and5+2+2 are excluded; combined with prior results only4+3+2 and3+2+2+2 remain open.",
+  "source_transport": "Fresh exact critical-root coverage, necessary derivative coefficients and monic residual-septic division.",
+  "integer_resultant_points": 406,
+  "integer_cofactor_points": 379,
+  "integer_determinant_engines": [
+    "FLINT",
+    "plain Python Bareiss"
+  ],
+  "finite_free_norms": [
+    {
+      "name": "cofactor_common",
+      "dimension": 204,
+      "det_mod": 959718345
+    },
+    {
+      "name": "a_denominator",
+      "dimension": 204,
+      "det_mod": 480911749
+    },
+    {
+      "name": "excluded_projection",
+      "dimension": 87,
+      "det_mod": 100160574
+    },
+    {
+      "name": "b_denominator",
+      "dimension": 117,
+      "det_mod": 487226214
+    },
+    {
+      "name": "residual_squarefree",
+      "dimension": 117,
+      "det_mod": 782152754
+    },
+    {
+      "name": "marked_root",
+      "dimension": 117,
+      "det_mod": 76753123
+    }
+  ],
+  "finite_resultant_degree_bound": 1508,
+  "finite_resultant_points": 1509,
+  "finite_determinant_engines": [
+    "FLINT",
+    "plain Python Gaussian"
+  ],
+  "finite_source_evaluation_engines": [
+    "FLINT univariate polynomials",
+    "plain Python coefficient lists"
+  ],
+  "exceptional_identities": [
+    {
+      "name": "quintuple-szero",
+      "multiplier_terms": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "quintuple-cubic-two",
+      "multiplier_terms": [
+        399
+      ]
+    },
+    {
+      "name": "quintuple-cubic-plus",
+      "multiplier_terms": [
+        301
+      ]
+    },
+    {
+      "name": "quintuple-cubic-minus",
+      "multiplier_terms": [
+        452
+      ]
+    }
+  ],
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "checker_sha256": "818067c3e6f219ae9d92dc01ba1444ed1e733cdc04fa5ab2d2cbf914301c5a9b",
+  "certificate_sha256": "458f2f3bb6cb357d56a4cd5b49a0e737fea84098634a4bc9ceb984d3073c21a7",
+  "finite_witness_sha256": "1cecaf9accea186aa2d87f2f1ef3a35e649c59d2b0bc8f6995505815efbbd645",
+  "input_sha256": "ee46ec7177476362b3549b06df3824f0cd082fec6651eadb372be2c0fa36c1c8",
+  "seconds": 9.637554677989101,
+  "assurance": "Exact arithmetic replay plus written coverage, adjugate and finite-free good-reduction unit arguments. No formal verification, independent end-to-end review, external review or novelty priority. F7 three-point existence, full strata, F5 and JC2 remain open."
+}

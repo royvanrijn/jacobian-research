@@ -1,5 +1,10 @@
 # Projective polar geometry of \(\mathrm{HC}_4\)
 
+> **13 November 2026 update:** `OP-HC4-D5` is closed by the
+> [degree-five theorem reproduction](../../jacobian-followup/hc4-degree-five-audit/README.md)
+> (`HC4D5EXT1`). The calculations below are preserved historical reductions.
+> Higher-degree HC4 and the Meng--Yang graph problem remain separate.
+
 ## Status and outcome
 
 This is a first exact intersection-theoretic experiment, not a proof of

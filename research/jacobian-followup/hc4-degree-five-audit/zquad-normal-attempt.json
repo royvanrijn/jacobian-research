@@ -1,0 +1,11 @@
+{
+  "outcome": "INCOMPLETE",
+  "declared_cap_seconds": 60,
+  "observed_exit_code": 1,
+  "normalized_input_retained": "zquad-normal-input.json",
+  "result_file_present": false,
+  "log_bytes": 0,
+  "live_worker_after_terminal": false,
+  "cause": "Not established from the empty log; no certificate inferred",
+  "used_in_proof": false
+}

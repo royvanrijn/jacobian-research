@@ -1,0 +1,43 @@
+{
+  "scoped_checks": "PASS",
+  "previous_goal_turn_classification": "progress: the current two-divisor proof and its 51-check replay were revalidated",
+  "python_compilation": "PASS",
+  "affected_tracked_diff_whitespace": "PASS",
+  "original_triangular_checker_replay": "PASS",
+  "full_repository_navigation_failures_rechecked_after_final_edits": true,
+  "checks": [
+    "HC4MYGF1 schema, exact source hash, dependencies, retained inputs and assurance",
+    "HC4MYGF2 schema, exact source hash, dependencies, retained inputs and assurance",
+    "HC4MYGF3 schema, exact source hash, dependencies, retained inputs and assurance",
+    "original mixed/coisotropic problem remains open and consumes the new claims",
+    "all affected method references and reviewed scope fingerprints",
+    "WORK-HC4-SCHUR reviewed source references and retired obsolete continuation",
+    "WORK-HC4-RESIDUAL-AUDIT reviewed source references and retired obsolete continuation",
+    "receipt-first-slice.json matches current canonical proof and checker",
+    "receipt-two-divisor.json matches current canonical proof and checker",
+    "all local links in the three maintained entry and proof notes"
+  ],
+  "first_slice_exact_check_count": 52,
+  "retained_two_divisor_exact_check_count": 51,
+  "written_proof_obligations": [
+    "all-direction plane exhaustion",
+    "polynomial degree and constant-flow uniqueness",
+    "arbitrary word lengths",
+    "plane-map product equivalence",
+    "characteristic-zero descent"
+  ],
+  "global_invertibility_import": "HCTANG2, separately reproduced external structural theorem",
+  "generated_navigation": "Existing repository renderer APIs; no global validation success asserted",
+  "generated_views_refreshed": [
+    "index/core.md",
+    "index/README.md",
+    "index/documents.tsv",
+    "STATUS.md"
+  ],
+  "full_registry_validation_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "known_research_navigation_failure": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+  "missing_artifacts_reconstructed": false,
+  "full_dual_automorphism_condition_preserved_in_encoding": false,
+  "general_HC4_resolved": false,
+  "original_goal_complete": false
+}

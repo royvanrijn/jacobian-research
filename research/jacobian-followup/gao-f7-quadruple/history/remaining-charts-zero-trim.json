@@ -1,0 +1,4 @@
+{
+  "outcome": "stopped",
+  "reason": "Tuple-valued zero was truthy in polynomial trim; fixed comparison to explicit coefficient-ring zero. No witness exported."
+}

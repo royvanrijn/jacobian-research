@@ -8,6 +8,7 @@ High-rank elliptic curves, K3 constructions, exact certificates and reusable alg
 - [Elliptic-curve cleanup status](research/elliptic-curves/CLEANUP_REPORT_2026-09-13.md) — current boundaries, preserved evidence and remaining audits.
 - [Replay guide](research/REPRODUCE.md) · [Discovery timeline](research/RESEARCH_TIMELINE.md).
 - [Archived projects](research/archive/non-elliptic/README.md) — plane Jacobian, Hessian, Keller, GVC and related work.
+- [Scoped Jacobian follow-ups](research/jacobian-followup/README.md) — the requested de Bondt audit and new normal-r7 partial result.
 
 Find the retained method before computing:
 

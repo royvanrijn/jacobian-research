@@ -1,0 +1,12 @@
+{
+  "name": "exact-norm-projector-pilot",
+  "cap_seconds": 120,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 100,
+  "script_sha256": "228cc246087603d7518e349f8afe6b21bdfb83ee869c492f4c02101a40652cb7",
+  "input_sha256": "0830dbf0daa7fb0a6a2ac95220f513a2ece608fddc707f18cab33ad4494f4971",
+  "theorem_exclusion": false,
+  "outcome": "timeout",
+  "returncode": null,
+  "seconds": 120.01434119301848
+}

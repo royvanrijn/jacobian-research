@@ -1,0 +1,20 @@
+{
+  "full_index": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "new_claims_scoped_index": "PASS; unrelated consumers/narrowing edges omitted in memory only",
+  "affected_lessons": "PASS",
+  "full_work": "duplicate primary work target",
+  "affected_work_scopes_and_sources": "PASS",
+  "receipt_hashes": "PASS",
+  "exact_checker": {
+    "passed": true,
+    "check_count": 80,
+    "elapsed_seconds": 5.362
+  },
+  "python_compilation": "PASS",
+  "geometry": "Authored written proof with inherited boundary/positivity/primitive-field inputs. No formal verification or independent external review.",
+  "algebra": "Four literal endpoint certificates after generator and minor reconstruction; separate sparse Fraction replays. Capped discovery and rejected radical membership are not premises.",
+  "relationship_to_existing_work": "Additional contact-certificate proof of the scoped exclusion and residual gate already registered as PF2OMIT5. Retains the stronger PF2OMIT6/PF2OMIT7 residue and local-boundary resolutions.",
+  "remaining": "Actual global additional-image equations and infinity attachments; complete original terminal ramification data; other r7 patterns, r5, nonnormal slices and JC2 remain open.",
+  "local_markdown_links_and_whitespace": "PASS",
+  "scoped_git_diff_check": "PASS"
+}

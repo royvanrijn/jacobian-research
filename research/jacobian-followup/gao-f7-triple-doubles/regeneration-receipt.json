@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "scope": "Byte-identical exact pole source, all lower-order norm coefficients, and both five-variable global working inputs",
+  "files": {
+    "pole-source-candidate.json": "e7cc780a52ea07e298ae0cf4e1029e7074314379410accd91af69070cfcc782b",
+    "lower-order-norms-candidate.json": "9703ddf91b6d7613250471bd630d43c550c87bd4c817c2f70af9835794609e4b",
+    "delta-zero-fivevar-input.json": "26ed980c2c1756626a2bec3064a773a0d4d8e224e0eef691206713925b5b2ac8",
+    "delta-nonzero-fivevar-input.json": "f0fce607f1c3b1c957a1509800af28d23d5a217a983fe66498c2e15b69ca9bd8"
+  },
+  "seconds": 9.068640490004327
+}

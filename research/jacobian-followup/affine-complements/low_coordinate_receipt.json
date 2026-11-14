@@ -1,0 +1,251 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 69,
+  "checks": [
+    "binomial principal-part differential n=3",
+    "principal coefficient is nonzero n=3",
+    "binomial principal-part differential n=5",
+    "principal coefficient is nonzero n=5",
+    "every smaller odd correction has lower differential pole n=5",
+    "binomial principal-part differential n=7",
+    "principal coefficient is nonzero n=7",
+    "every smaller odd correction has lower differential pole n=7",
+    "binomial principal-part differential n=9",
+    "principal coefficient is nonzero n=9",
+    "every smaller odd correction has lower differential pole n=9",
+    "binomial principal-part differential n=11",
+    "principal coefficient is nonzero n=11",
+    "every smaller odd correction has lower differential pole n=11",
+    "binomial principal-part differential n=13",
+    "principal coefficient is nonzero n=13",
+    "every smaller odd correction has lower differential pole n=13",
+    "binomial principal-part differential n=15",
+    "principal coefficient is nonzero n=15",
+    "every smaller odd correction has lower differential pole n=15",
+    "binomial principal-part differential n=17",
+    "principal coefficient is nonzero n=17",
+    "every smaller odd correction has lower differential pole n=17",
+    "uniform principal-part integrating identity",
+    "uniform polar-centralizer derivative identity",
+    "exact Newton model 2,1,branch0",
+    "Newton branch order 2,1,0",
+    "first-coordinate normal derivative 2,1,0",
+    "away pole 2,1,0",
+    "exact Newton model 2,1,branch1",
+    "Newton branch order 2,1,1",
+    "first-coordinate normal derivative 2,1,1",
+    "away pole 2,1,1",
+    "exact Newton model 3,1,branch0",
+    "Newton branch order 3,1,0",
+    "first-coordinate normal derivative 3,1,0",
+    "away pole 3,1,0",
+    "exact Newton model 3,1,branch1",
+    "Newton branch order 3,1,1",
+    "first-coordinate normal derivative 3,1,1",
+    "away pole 3,1,1",
+    "exact Newton model 3,2,branch0",
+    "Newton branch order 3,2,0",
+    "first-coordinate normal derivative 3,2,0",
+    "away pole 3,2,0",
+    "exact Newton model 3,2,branch1",
+    "Newton branch order 3,2,1",
+    "first-coordinate normal derivative 3,2,1",
+    "away pole 3,2,1",
+    "mixed multiple-root contact has a forbidden residue",
+    "triple h1 contact has a forbidden residue",
+    "triple h2 generic contact gives two simple poles",
+    "simple-root generic fibre equation 1",
+    "simple-root normal derivative 1",
+    "simple-root away pole 1",
+    "simple-root contact residue 1",
+    "simple-root generic fibre equation -1/2",
+    "simple-root normal derivative -1/2",
+    "simple-root away pole -1/2",
+    "simple-root contact residue -1/2",
+    "cancelled contact order may rise to six",
+    "cancelled contact has no pole of Q",
+    "contact order five is explicitly retained",
+    "contact order five is a forbidden derivative residue",
+    "meromorphic derivatives have zero simple-pole coefficient",
+    "quartic degree contradiction double_plus_simple",
+    "quartic degree contradiction triple_h1",
+    "quartic degree contradiction triple_h2_away",
+    "contact quartic degree contradiction"
+  ],
+  "binomial_controls": [
+    {
+      "n": 3,
+      "principal_coefficient": "3/2",
+      "first_rational_coefficient": "3/8"
+    },
+    {
+      "n": 5,
+      "principal_coefficient": "15/8",
+      "first_rational_coefficient": "5/16"
+    },
+    {
+      "n": 7,
+      "principal_coefficient": "35/16",
+      "first_rational_coefficient": "35/128"
+    },
+    {
+      "n": 9,
+      "principal_coefficient": "315/128",
+      "first_rational_coefficient": "63/256"
+    },
+    {
+      "n": 11,
+      "principal_coefficient": "693/256",
+      "first_rational_coefficient": "231/1024"
+    },
+    {
+      "n": 13,
+      "principal_coefficient": "3003/1024",
+      "first_rational_coefficient": "429/2048"
+    },
+    {
+      "n": 15,
+      "principal_coefficient": "6435/2048",
+      "first_rational_coefficient": "6435/32768"
+    },
+    {
+      "n": 17,
+      "principal_coefficient": "109395/32768",
+      "first_rational_coefficient": "12155/65536"
+    }
+  ],
+  "local_branch_controls": [
+    {
+      "k": 2,
+      "h": 1,
+      "branches": [
+        {
+          "branch": 0,
+          "e": 3,
+          "pz_order": -5,
+          "away_q_pole": 3,
+          "contact_q_derivative_order": -1
+        },
+        {
+          "branch": 1,
+          "e": 1,
+          "pz_order": -1,
+          "away_q_pole": 1,
+          "contact_q_derivative_order": -1
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "h": 1,
+      "branches": [
+        {
+          "branch": 0,
+          "e": 5,
+          "pz_order": -9,
+          "away_q_pole": 5,
+          "contact_q_derivative_order": -2
+        },
+        {
+          "branch": 1,
+          "e": 1,
+          "pz_order": -1,
+          "away_q_pole": 1,
+          "contact_q_derivative_order": -1
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "h": 2,
+      "branches": [
+        {
+          "branch": 0,
+          "e": 4,
+          "pz_order": -6,
+          "away_q_pole": 5,
+          "contact_q_derivative_order": -2
+        },
+        {
+          "branch": 1,
+          "e": 2,
+          "pz_order": -2,
+          "away_q_pole": 3,
+          "contact_q_derivative_order": -2
+        }
+      ]
+    }
+  ],
+  "degree_controls": [
+    {
+      "configuration": "double_plus_simple",
+      "poles": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "degree": 6
+    },
+    {
+      "configuration": "triple_h1",
+      "poles": [
+        5,
+        1
+      ],
+      "degree": 6
+    },
+    {
+      "configuration": "triple_h2_away",
+      "poles": [
+        5,
+        3
+      ],
+      "degree": 8
+    },
+    {
+      "configuration": "triple_h2_contact",
+      "poles_upper_bounds": [
+        1,
+        1
+      ],
+      "degree_upper_bound": 2
+    }
+  ],
+  "written_result": "Every compatible quartic target coordinate has pole at least three, independently of the other coordinate's height",
+  "first_open_height_five_pairs": [],
+  "subsequent_height_seven_exclusion": "PF2RULED7 (external degree input; separate proof and receipt)",
+  "subsequent_all_height_pole_three_exclusion": "PF2RULED8 (separate intrinsic proof and receipt)",
+  "frontier_superseded_by": "PF2RULED16",
+  "frontier_handoff_scope": "historical pre-PF2RULED16; this receipt does not prove the current frontier",
+  "first_open_reduced_pairs": [
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "frontier_adoption": "PF2RULED12; subsequent handoff, outside this checker intrinsic proof coverage",
+  "subsequent_pair_exclusion": "PF2RULED6 (separate proof and receipt)",
+  "assurance": {
+    "all_heights": "written induction and generic-fibre proof",
+    "complete_generic_fibre_geometry_formally_certified": false,
+    "actual_ruled_compatibility_proved": false,
+    "higher_pairs_excluded": false,
+    "quartic_packets_excluded": false,
+    "independent_full_reproof": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "source_sha256": {
+    "verify_low_coordinate.py": "b0552f11239815faee0e29cb4f259bcd147f6a8daec2c31c8b283aed6101206b",
+    "LOW_COORDINATE_POLE.md": "27a8fdb1c9b8eb2098fded23772471ce7958bc5f9d20d2a08adaf354454af0f8"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.592982
+}

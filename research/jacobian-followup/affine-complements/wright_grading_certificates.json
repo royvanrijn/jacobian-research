@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "EXACT_GRADING_IDENTITIES_COMPUTED",
+  "grading_weights": {
+    "X": -1,
+    "Y": 2
+  },
+  "weight_modules": {
+    "zero": "C[B]",
+    "negative": "A_-n=D^n*C[B] for n>=1",
+    "even_positive": "A_2m=Y^m*C[B] for m>=0",
+    "odd_positive": "A_(2m+1)=A*Y^m*C[B] for m>=0"
+  },
+  "homogeneous_jacobian_formula": "B^(l-1)*(n*l*f*g+n*B*f*gprime+(n+1)*B*fprime*g)",
+  "pole_generator_derivatives": [
+    "2*f0+2*f2**2-4*f1*f3",
+    "f1-2*f3+4*f2*f3",
+    "-2*f3**2",
+    "-f3"
+  ],
+  "trace_countercontrol": {
+    "source": "A2_(x,w), not the Wright normalization or a Keller counterexample",
+    "P": "w + x**3 + x",
+    "Q": "-w*x - 3*x**4/4 - x**2/2",
+    "jacobian": "w",
+    "normalized_grading": "(-x*d_dx+2*w*d_dw)/3",
+    "monic_quartic": "-4*p*x - 4*q + x**4 + 2*x**2",
+    "multiplication_matrix_x": [
+      [
+        "0",
+        "0",
+        "0",
+        "4*q"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "4*p"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "-2"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    "power_traces": {
+      "0": "4",
+      "1": "0",
+      "2": "-4",
+      "3": "12*p",
+      "4": "16*q + 8"
+    },
+    "target_trace_P": "-52*p/3",
+    "target_trace_Q": "64*q/3 + 8",
+    "target_divergence": "4",
+    "branch_parameterization": [
+      "t**3 + t",
+      "-3*t**4/4 - t**2/2"
+    ],
+    "branch_rational_inverse": "p*(1 - 12*q)/(9*p**2 + 4*q + 1)",
+    "branch_transversality": "4*(3*t**2 + 1)*(25*t**4 + 21*t**2 - 6)/3",
+    "branch_transversality_at_zero": "-8",
+    "discriminant": "-256*(27*p**4 + 72*p**2*q + 2*p**2 + 64*q**3 + 32*q**2 + 4*q)",
+    "trace_derivative_of_discriminant_at_zero": "-8192"
+  },
+  "source_sha256": "1165e86348a3b810e840012904f13d173d19e6765ef015a03dc383885d2d9972",
+  "assurance": {
+    "unrestricted_wright_pairs_excluded": false,
+    "trace_tangency_to_actual_wright_branch_proved": false,
+    "any_keller_counterexample_constructed": false,
+    "homogeneous_obstruction": "written all-height proof"
+  }
+}

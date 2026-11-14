@@ -1,0 +1,15 @@
+{
+  "outcome": "completed",
+  "returncode": -25,
+  "prime": 1000000007,
+  "seconds": 7.872154396987753,
+  "cap_seconds": 90,
+  "address_cap_GiB": 4,
+  "per_file_output_cap_MiB": 30,
+  "artifact_bytes": 31457280,
+  "nodes": 669,
+  "polynomial_terms": 1212944,
+  "relation_terms": 312737,
+  "theorem_exclusion": false,
+  "boundary": "Untrusted modular DAG only. Full characteristic-zero identities and a separate checker are required. No automatic prime campaign follows this pilot."
+}

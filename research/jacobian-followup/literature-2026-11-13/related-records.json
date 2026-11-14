@@ -1,0 +1,78 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2609.17272v3",
+    "title": "Functions on Nilpotent Orbit Covers and Birational Geometry",
+    "published": "2026-09-15T14:49:56Z",
+    "updated": "2026-10-06T14:30:25Z",
+    "abstract": "We use an analogue of the Springer resolution to describe the $G$-module structure on the ring of regular functions on the universal cover $\\widetilde{\\mathcal{O}}$ of any nilpotent orbit for $G = SL_n$. Building on previous work on the extended Springer resolution, we construct a variety $\\widetilde{\\mathcal{M}}$ that is finite over the cotangent bundle of a partial flag variety $G/P$, and proper and birational over the affinization $\\mathcal{M}$ of $\\widetilde{\\mathcal{O}}$. We use techniques in birational geometry to show that $\\widetilde{\\mathcal{M}}$ has rational singularities, which provides the cohomology vanishing needed to describe the ring of functions on $\\widetilde{\\mathcal{O}}$ as an induced representation from a Levi subgroup of $G$. Our results also yield a description of the structure of $R(\\widetilde{\\mathcal{O}})$ as a graded $G$-module. We describe the minimal embedding of $\\mathcal{M}$, study the lifting of characters of the component group of $\\widetilde{\\mathcal{O}}$ to parabolics and Levi subgroups, and make a more general vanishing conjecture.",
+    "authors": [
+      "William Graham",
+      "Scott Joseph Larson",
+      "Alberto San Miguel Malaney"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2609.11377v1",
+    "title": "Generic vanishing conjecture for divisors",
+    "published": "2026-09-10T11:12:36Z",
+    "updated": "2026-09-10T11:12:36Z",
+    "abstract": "Generic vanishing conjecture proposed by Pareschi and Popa is about the relationship between the existence of subvarieties of codimension $>1$ of principally polarized abelian varieties representing minimal cohomology class and the positivity of their ideal sheaves twisted by the principal polarization. Inspired by their formulation, we prove a codimension $1$ analog of generic vanishing conjecture.",
+    "authors": [
+      "Fanjun Meng"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2608.07338v1",
+    "title": "An Explicit Five-Variable Counterexample to the Generalized Vanishing Conjecture",
+    "published": "2026-08-07T15:33:13Z",
+    "updated": "2026-08-07T15:33:13Z",
+    "abstract": "We give an explicit counterexample in five variables to the Generalized Vanishing Conjecture. The construction is motivated by the recent counterexample to the Mathieu conjecture for SU(2). In the polynomial ring C[a,b,c,d,t], set P = (t+c)(ad+bt), Q = c, and let Λ = d/dt (d/da d/dd - d/db d/dc). We prove that Λ^m(P^m) = 0 for every m >= 1, whereas for every m >= 2, Λ^m(QP^m) = (-1)^m (m!)^2 (m+1)! t, which is nonzero. Thus the Generalized Vanishing Conjecture fails in dimension 5.",
+    "authors": [
+      "Alexander Dvorsky"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.10160v1",
+    "title": "The effective Chen ranks conjecture",
+    "published": "2025-12-10T23:39:29Z",
+    "updated": "2025-12-10T23:39:29Z",
+    "abstract": "Koszul modules and their associated resonance schemes are objects appearing in a variety of contexts in algebraic geometry, topology, and combinatorics. We present a proof of an effective version of the Chen ranks conjecture describing the Hilbert function of any Koszul module verifying natural conditions inspired by geometry. We give applications to hyperplane arrangements, describing in a uniform effective manner the Chen ranks of the fundamental group of the complement of every arrangement whose projective resonance is reduced. Finally, we formulate a sharp generic vanishing conjecture for Koszul modules and present a parallel between this statement and the Prym--Green Conjecture on syzygies of general Prym canonical curves.",
+    "authors": [
+      "Marian Aprodu",
+      "Gavril Farkas",
+      "Claudiu Raicu",
+      "Alexander I. Suciu"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1801.04563v1",
+    "title": "A case of the generalized vanishing conjecture",
+    "published": "2018-01-14T14:29:42Z",
+    "updated": "2018-01-14T14:29:42Z",
+    "abstract": "In this paper, we show that the GVC (generalized vanishing conjecture) holds for the differential operator $Λ=(\\partial_x-Φ(\\partial_y))\\partial_y$ and all polynomials $P(x,y)$, where $Φ(t)$ is any polynomial over the base field. The GVC arose from the study of the Jacobian conjecture.",
+    "authors": [
+      "Zhenzhen Feng",
+      "Xiaosong Sun"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1206.2836v2",
+    "title": "A few remarks on the Generalized Vanishing Conjecture",
+    "published": "2012-06-13T15:04:30Z",
+    "updated": "2013-02-06T17:39:17Z",
+    "abstract": "We show that the Generalized Vanishing Conjecture $$\\forall_{m \\ge 1} [\\Lam^m f^m = 0] \\Longrightarrow \\forall_{m \\gg 0} [\\Lam^m (g f^m) = 0]$$ for a fixed differential operator $\\Lam \\in k[\\partial]$ follows from a special case of it, namely that the additional factor $g$ is a power of the radical polynomial $f$. Next we show that in order to prove the Generalized Vanishing Conjecture (up to some bound on the degree of $\\Lam$), we may assume that $\\Lam$ is a linear combination of powers of distinct partial derivatives. At last, we show that the Generalized Vanishing Conjecture holds for products of linear forms in $\\partial$, in particular homogeneous differential operators $Λ\\in k[\\partial_1,\\partial_2]$.",
+    "authors": [
+      "Michiel de Bondt"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1006.5801v1",
+    "title": "The Amazing Image Conjecture",
+    "published": "2010-06-30T08:33:13Z",
+    "updated": "2010-06-30T08:33:13Z",
+    "abstract": "In this paper we discuss a general framework in which we present a new conjecture, due to Wenhua Zhao, the Image Conjecture. This conjecture implies the Generalized Vanishing Conjecture and hence the Jacobian Conjecture. Crucial ingredient is the notion of a Mathieu space: let $k$ be a field and $R$ a commutative $k$-algebra. A $k$-linear subspace $M$ of $R$ is called a Mathieu subspace of $R$, if the following holds: let $f\\in R$ be such that $f^m\\in M$, for all $m\\geq 1$, then for every $g\\in R$ also $gf^m\\in M$, for almost all $m$, i.e. only finitely many exceptions. Let $A$ be the polynomial ring in $ζ=ζ_1, ...,ζ_n$ and $z_1, ...,z_n$ over $\\mathbb C$. The Image Conjecture (IC) asserts that $\\sum_i(\\partial_{z_i}-ζ_i)A$ is a Mathieu subspace of $A$. We prove this conjecture for $n=1$. Also we relate (IC) to the following Integral Conjecture: if $B$ is an open subset of $\\mathbb R^n$ and $σ$ a positive measure, such that the integral over $B$ of each polynomial in $z$ over $\\mathbb C$ is finite, then the set of polynomials, whose integral over $B$ is zero, is a Mathieu subspace of $\\mathbb C[z]$. It turns out that Laguerre polynomials play a special role in the study of the Jacobian Conjecture.",
+    "authors": [
+      "Arno van den Essen"
+    ]
+  }
+]

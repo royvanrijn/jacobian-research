@@ -1,0 +1,406 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS",
+  "check_count": 114,
+  "checks": [
+    "universal formal leading equation",
+    "triple-root square-class parity 0",
+    "triple-root square-class parity 1",
+    "normal orders through one require cancellation",
+    "order two is the first unforced formal remainder",
+    "small-root positive scale (1, 0)",
+    "small-root square criterion at r5 (1, 0)",
+    "small-root lower Laurent term never dominates (1, 0)",
+    "small-root positive scale (2, 0)",
+    "small-root square criterion at r5 (2, 0)",
+    "small-root lower Laurent term never dominates (2, 0)",
+    "small-root positive scale (2, 1)",
+    "small-root square criterion at r5 (2, 1)",
+    "small-root lower Laurent term never dominates (2, 1)",
+    "small-root positive scale (3, 0)",
+    "small-root square criterion at r5 (3, 0)",
+    "small-root lower Laurent term never dominates (3, 0)",
+    "small-root positive scale (3, 1)",
+    "small-root square criterion at r5 (3, 1)",
+    "small-root lower Laurent term never dominates (3, 1)",
+    "small-root positive scale (3, 2)",
+    "small-root square criterion at r5 (3, 2)",
+    "small-root lower Laurent term never dominates (3, 2)",
+    "complete beta-unit splitting exception list",
+    "small-root nonsquare quadratic discriminant",
+    "small-root cusp has regular Q derivative 2",
+    "small-root cusp has regular Q derivative 3",
+    "small-root smooth branches have residue obstruction or regular Q",
+    "global second square completion",
+    "generic discriminant order (1, 1)",
+    "generic discriminant leading coefficient (1, 1)",
+    "Weierstrass degree4 (1, 1)",
+    "constant-term order6 (1, 1)",
+    "away-root local pole sum exceeds quartic degree (1, 1)",
+    "generic fibre parameter cannot annihilate discriminant identically (1, 1)",
+    "generic discriminant order (1, 2)",
+    "generic discriminant leading coefficient (1, 2)",
+    "Weierstrass degree4 (1, 2)",
+    "constant-term order6 (1, 2)",
+    "away-root local pole sum exceeds quartic degree (1, 2)",
+    "generic fibre parameter cannot annihilate discriminant identically (1, 2)",
+    "generic discriminant order (2, 1)",
+    "generic discriminant leading coefficient (2, 1)",
+    "Weierstrass degree4 (2, 1)",
+    "constant-term order6 (2, 1)",
+    "away-root local pole sum exceeds quartic degree (2, 1)",
+    "generic fibre parameter cannot annihilate discriminant identically (2, 1)",
+    "generic discriminant order (2, 2)",
+    "generic discriminant leading coefficient (2, 2)",
+    "Weierstrass degree4 (2, 2)",
+    "constant-term order6 (2, 2)",
+    "away-root local pole sum exceeds quartic degree (2, 2)",
+    "generic fibre parameter cannot annihilate discriminant identically (2, 2)",
+    "universal coefficient valuation gap",
+    "uniform positive higher-binomial gap d1",
+    "uniform positive regular numerator gap d1",
+    "uniform negative top coefficient valuation d1",
+    "uniform positive higher-binomial gap d2",
+    "uniform positive regular numerator gap d2",
+    "uniform negative top coefficient valuation d2",
+    "all higher numerator normal orders have positive cost d1",
+    "all higher numerator normal orders have positive cost d2",
+    "generic higher numerator cost formula",
+    "generic higher denominator cost formula",
+    "all denominator normal orders at least two have positive cost",
+    "nonzero half-binomial leading coefficient l0",
+    "finite exact coefficient has predicted pole (0, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (0, 1)",
+    "finite exact coefficient has predicted pole (0, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (0, 2)",
+    "nonzero half-binomial leading coefficient l1",
+    "finite exact coefficient has predicted pole (1, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (1, 1)",
+    "finite exact coefficient has predicted pole (1, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (1, 2)",
+    "nonzero half-binomial leading coefficient l2",
+    "finite exact coefficient has predicted pole (2, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (2, 1)",
+    "finite exact coefficient has predicted pole (2, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (2, 2)",
+    "nonzero half-binomial leading coefficient l3",
+    "finite exact coefficient has predicted pole (3, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (3, 1)",
+    "finite exact coefficient has predicted pole (3, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (3, 2)",
+    "nonzero half-binomial leading coefficient l4",
+    "finite exact coefficient has predicted pole (4, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (4, 1)",
+    "finite exact coefficient has predicted pole (4, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (4, 2)",
+    "nonzero half-binomial leading coefficient l5",
+    "finite exact coefficient has predicted pole (5, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (5, 1)",
+    "finite exact coefficient has predicted pole (5, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (5, 2)",
+    "nonzero half-binomial leading coefficient l6",
+    "finite exact coefficient has predicted pole (6, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (6, 1)",
+    "finite exact coefficient has predicted pole (6, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (6, 2)",
+    "nonzero half-binomial leading coefficient l7",
+    "finite exact coefficient has predicted pole (7, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (7, 1)",
+    "finite exact coefficient has predicted pole (7, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (7, 2)",
+    "nonzero half-binomial leading coefficient l8",
+    "finite exact coefficient has predicted pole (8, 1)",
+    "finite exact coefficient has unique nonzero leading contribution (8, 1)",
+    "finite exact coefficient has predicted pole (8, 2)",
+    "finite exact coefficient has unique nonzero leading contribution (8, 2)",
+    "n10 bridge highest coefficient cancels",
+    "n10 bridge next coefficient at tau zero",
+    "remaining sextic partitions are exactly cubic squares",
+    "pole-four coordinate layer remains open"
+  ],
+  "small_multiplicity_atlas": [
+    {
+      "k": 1,
+      "h": 0,
+      "w_weight": 2,
+      "z_weight": 2,
+      "c": 2,
+      "lhs_at_r5": 12,
+      "rhs": 0
+    },
+    {
+      "k": 2,
+      "h": 0,
+      "w_weight": 2,
+      "z_weight": 4,
+      "c": 4,
+      "lhs_at_r5": 24,
+      "rhs": 2
+    },
+    {
+      "k": 2,
+      "h": 1,
+      "w_weight": 2,
+      "z_weight": 3,
+      "c": 2,
+      "lhs_at_r5": 12,
+      "rhs": 2
+    },
+    {
+      "k": 3,
+      "h": 0,
+      "w_weight": 2,
+      "z_weight": 6,
+      "c": 6,
+      "lhs_at_r5": 36,
+      "rhs": 4
+    },
+    {
+      "k": 3,
+      "h": 1,
+      "w_weight": 2,
+      "z_weight": 5,
+      "c": 4,
+      "lhs_at_r5": 24,
+      "rhs": 4
+    },
+    {
+      "k": 3,
+      "h": 2,
+      "w_weight": 2,
+      "z_weight": 4,
+      "c": 2,
+      "lhs_at_r5": 12,
+      "rhs": 4
+    }
+  ],
+  "away_root_quartic_models": [
+    {
+      "beta_order_case": "1",
+      "v_order": 1,
+      "local_degree": 4,
+      "constant_term_order": 6,
+      "discriminant_order": 15,
+      "leading_discriminant": "-4*V*a**3*(-V**2 - 4*V*a*g + 4*a**2*xi)",
+      "away_signed_Q_pole_total": 5
+    },
+    {
+      "beta_order_case": "1",
+      "v_order": 2,
+      "local_degree": 4,
+      "constant_term_order": 6,
+      "discriminant_order": 16,
+      "leading_discriminant": "-16*a**4*xi*(V*a - xi)",
+      "away_signed_Q_pole_total": 6
+    },
+    {
+      "beta_order_case": "at least2",
+      "v_order": 1,
+      "local_degree": 4,
+      "constant_term_order": 6,
+      "discriminant_order": 16,
+      "leading_discriminant": "-27*V**4",
+      "away_signed_Q_pole_total": 6
+    },
+    {
+      "beta_order_case": "at least2",
+      "v_order": 2,
+      "local_degree": 4,
+      "constant_term_order": 6,
+      "discriminant_order": 18,
+      "leading_discriminant": "256*xi**2*(g**2 + xi)",
+      "away_signed_Q_pole_total": 8
+    }
+  ],
+  "z1_coefficient_controls": [
+    {
+      "l": 0,
+      "v_order": 1,
+      "z1_w_order": -2,
+      "leading_coefficient": "1/2",
+      "term_count": 1
+    },
+    {
+      "l": 0,
+      "v_order": 2,
+      "z1_w_order": -1,
+      "leading_coefficient": "1/2",
+      "term_count": 1
+    },
+    {
+      "l": 1,
+      "v_order": 1,
+      "z1_w_order": -4,
+      "leading_coefficient": "-3/8",
+      "term_count": 2
+    },
+    {
+      "l": 1,
+      "v_order": 2,
+      "z1_w_order": -2,
+      "leading_coefficient": "-3/8",
+      "term_count": 2
+    },
+    {
+      "l": 2,
+      "v_order": 1,
+      "z1_w_order": -6,
+      "leading_coefficient": "5/16",
+      "term_count": 4
+    },
+    {
+      "l": 2,
+      "v_order": 2,
+      "z1_w_order": -3,
+      "leading_coefficient": "5/16",
+      "term_count": 4
+    },
+    {
+      "l": 3,
+      "v_order": 1,
+      "z1_w_order": -8,
+      "leading_coefficient": "-35/128",
+      "term_count": 7
+    },
+    {
+      "l": 3,
+      "v_order": 2,
+      "z1_w_order": -4,
+      "leading_coefficient": "-35/128",
+      "term_count": 7
+    },
+    {
+      "l": 4,
+      "v_order": 1,
+      "z1_w_order": -10,
+      "leading_coefficient": "63/256",
+      "term_count": 11
+    },
+    {
+      "l": 4,
+      "v_order": 2,
+      "z1_w_order": -5,
+      "leading_coefficient": "63/256",
+      "term_count": 11
+    },
+    {
+      "l": 5,
+      "v_order": 1,
+      "z1_w_order": -12,
+      "leading_coefficient": "-231/1024",
+      "term_count": 16
+    },
+    {
+      "l": 5,
+      "v_order": 2,
+      "z1_w_order": -6,
+      "leading_coefficient": "-231/1024",
+      "term_count": 16
+    },
+    {
+      "l": 6,
+      "v_order": 1,
+      "z1_w_order": -14,
+      "leading_coefficient": "429/2048",
+      "term_count": 23
+    },
+    {
+      "l": 6,
+      "v_order": 2,
+      "z1_w_order": -7,
+      "leading_coefficient": "429/2048",
+      "term_count": 23
+    },
+    {
+      "l": 7,
+      "v_order": 1,
+      "z1_w_order": -16,
+      "leading_coefficient": "-6435/32768",
+      "term_count": 31
+    },
+    {
+      "l": 7,
+      "v_order": 2,
+      "z1_w_order": -8,
+      "leading_coefficient": "-6435/32768",
+      "term_count": 31
+    },
+    {
+      "l": 8,
+      "v_order": 1,
+      "z1_w_order": -18,
+      "leading_coefficient": "12155/65536",
+      "term_count": 41
+    },
+    {
+      "l": 8,
+      "v_order": 2,
+      "z1_w_order": -9,
+      "leading_coefficient": "12155/65536",
+      "term_count": 41
+    }
+  ],
+  "written_result": "The entire nonsquare sextic(3,3) pole-four companion layer is excluded at all heights; every remaining common sextic is a cubic square",
+  "excluded_sextic_root_partitions": [
+    [
+      3,
+      3
+    ]
+  ],
+  "remaining_sextic_root_partitions": [
+    [
+      6
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      2,
+      2,
+      2
+    ]
+  ],
+  "remaining_pole_four_companion_residue": {
+    "modulus": 4,
+    "residue": 2,
+    "minimum": 10
+  },
+  "square_free_cubic_case_additional_form": "P=S^2+H, S in V2, H in V1",
+  "minimum_target_coordinate_pole": 4,
+  "frontier_superseded_by": "PF2RULED16",
+  "frontier_handoff_scope": "historical pre-PF2RULED16; this receipt does not prove the current frontier",
+  "first_open_reduced_pairs": [
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "frontier_adoption": "PF2RULED12; subsequent handoff, outside this checker intrinsic proof coverage",
+  "assurance": {
+    "formal_centralizer_and_uniform_jet_coverage": "written proof",
+    "discriminant_geometric_coverage_and_finiteness": "written proof",
+    "finite_z1_controls_are_not_the_all_height_proof": true,
+    "remaining_partitions_are_PF2RULED10_handoff_before_PF2RULED11": true,
+    "all_n_ge_10_nonsquare_step_uses_external_degree_theorem": false,
+    "height_seven_base_inherited_from_PF2RULED9": true,
+    "remaining_cubic_square_cases_excluded": false,
+    "all_pole_four_coordinates_excluded": false,
+    "actual_ruled_compatibility_proved": false,
+    "quartic_packets_excluded": false,
+    "formal_verification": false,
+    "independent_full_reproof": false,
+    "external_review": false
+  },
+  "source_sha256": {
+    "verify_pole_four_nonsquare.py": "9c9558c3ff069b501064a50233698c8c2e68681aee441838f9e26a28e53eab00",
+    "POLE_FOUR_NONSQUARE_EXCLUSION.md": "686af273bc6126a0dd1537115b4079daee3b46626c0fef9ac74c66089946edd5"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "elapsed_seconds": 0.132762
+}

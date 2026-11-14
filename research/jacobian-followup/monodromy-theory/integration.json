@@ -1,0 +1,29 @@
+{
+  "new_claim_ids": [
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4"
+  ],
+  "changed_claim_ids": [
+    "OP-KMON",
+    "CDIG1",
+    "DNACO1"
+  ],
+  "preexisting_entries_preserved_without_change": 1764,
+  "preexisting_entry_count": 1767,
+  "new_lesson_id": "METHOD-KELLER-AFFINE-INERTIA",
+  "updated_work_id": "WORK-KMON",
+  "scope_fingerprints": {
+    "OP-KMON": "27797df240cf14a9",
+    "CDIG1": "09f5b3b374f04eee",
+    "DNACO1": "29740d4f85f4cc59",
+    "KMFI1": "936c2b61483e16e3",
+    "KMFI2": "3948c9d73865d183",
+    "KMFI3": "22b6ea93b6809db1",
+    "KMFI4": "5517533e68803a46"
+  },
+  "classification_complete": false,
+  "absolute_PSL2_11_realization": false,
+  "previous_turn_classification": "No previous goal-turn evidence was supplied; this turn makes authoritative proof, computation and ledger progress."
+}

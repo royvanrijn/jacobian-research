@@ -1,0 +1,18 @@
+{
+  "wright_original": {
+    "full_text_read": false,
+    "doi": "10.1215/ijm/1256068982",
+    "reason": "Publisher service check; no original theorem adopted"
+  },
+  "as_of": "2026-11-14",
+  "adopted_as_theorem": false,
+  "sources": [
+    {
+      "file": "2403.02219v2.html",
+      "sha256": "1d0b7ea84f38cf0d94c38d6f352da42cf027fabe9ecc51fe181ce276d0d29c11",
+      "use": "Literature lead only: Theorem3.5, Proposition3.6, Wright-ring discussion, universal quantifier in Theorem3.12",
+      "bytes": 327370,
+      "url": "https://arxiv.org/html/2403.02219v2"
+    }
+  ]
+}

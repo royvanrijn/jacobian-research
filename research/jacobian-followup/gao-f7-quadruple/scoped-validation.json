@@ -1,0 +1,6 @@
+{
+  "scope": "Current complete quadruple-root result is GAOF7FOUR2",
+  "status": "PASS",
+  "current_validation": "complete-scoped-validation.json",
+  "prior_GAOF7FOUR1_validation": "history/scoped-validation-FOUR1.json"
+}

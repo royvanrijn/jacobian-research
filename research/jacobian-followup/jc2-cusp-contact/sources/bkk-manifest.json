@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-11-14",
+  "title": "A refinement of the Bernstein-Kushnirenko estimate",
+  "authors": [
+    "Patrice Philippon",
+    "Martin Sombra"
+  ],
+  "url": "https://www.maia.ub.edu/~sombra/publications/bk/bk_main.pdf",
+  "author_pdf_date": "2008-02-19",
+  "original_theorem": {
+    "author": "D. N. Bernshtein",
+    "year": 1975,
+    "doi": "10.1007/BF01075595"
+  },
+  "file": "philippon-sombra-bkk.pdf",
+  "sha256": "ca35d04a64828a372c5373414944ceca87e0df84484832f40501fd96ef09f82a",
+  "imported_scope": "The classical mixed-volume upper bound for isolated torus roots and standard toric intersection interpretation. Upper bound does not require coefficient genericity. No independent full proof audit of the external theorem."
+}

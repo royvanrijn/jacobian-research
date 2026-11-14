@@ -1,0 +1,75 @@
+{
+  "jet": {
+    "equations": 18,
+    "variables": 28,
+    "rank": 17,
+    "certificate_nonzero_weights": {
+      "d1 trace": "-1/3",
+      "d1 skew(HN) 13": "-1/3",
+      "d2 trace-square/2": "2/3",
+      "d2 skew(HN) 12": "1/3",
+      "d3 trace-cube/3": "-1/3"
+    }
+  },
+  "rational_family": {
+    "metric_determinant": "-1/y^4",
+    "nilpotence": "N^2=0",
+    "generic_degree": 2,
+    "source": "Spec Q[x,y,z,y^-1]",
+    "target": "Spec Q[X,Y,Z,(Y^2-2X)^-1]",
+    "collision": [
+      [
+        0,
+        1,
+        "0"
+      ],
+      [
+        -2,
+        -1,
+        "-8/3"
+      ]
+    ],
+    "universal_family": "V=(t^2/2,t,K(t)), f=t+(z-y*K_prime(t))^2/2, t=x/y; deg K>=3",
+    "nonplanarity": "Independence of 1,t,t^2,K(t); concrete coefficient determinant checked",
+    "scope": "Rational metric and punctured affine source; not a polynomial HC4 or JC2 counterexample"
+  },
+  "denominator": {
+    "transport": "det(A)=det(Hess_X h(X-w*v,w))*det(I-w*Dv)",
+    "denominator_bound": "det(I-w*Dv) divides Q(X-w*v,w)^3 over K(X)[w] for h=P/Q in four variables",
+    "general_bound": "In n transverse variables the exponent is n, and is sharp",
+    "intermediate_hessian_denominator_bound": "2*n+1; support plus degree(D)<=n improves this to exponent n",
+    "rational_failure": {
+      "potential": "(x^2+y^2+z^2)/(2*(1+w))",
+      "slice_metric": "I3",
+      "normal_field": "v=-X",
+      "characteristic_determinant": "(1+w)^3",
+      "nilpotent": false,
+      "gradient_relation": "U1^2+U2^2+U3^2+2*U4=0; no nonzero translation direction"
+    },
+    "proof_boundary": "The universal divisibility implication is proved in README; exact matrix identity and rational example are replayed here"
+  },
+  "phase_minors": {
+    "three_phase_cofactors": "PASS for symbolic phase and first derivative",
+    "two_phase_affine_partner_kernel_and_adjugate": "PASS",
+    "wall_exhaustion_and_termination_verified": false
+  },
+  "control": {
+    "V": [
+      "-x**2 + y",
+      "2*x*(-x**2 + y) + z",
+      "(-x**2 + y)*(x**2 - y)"
+    ],
+    "nilpotence": "N^3=0",
+    "image_annihilator": [
+      "-2*x**2 + 2*y",
+      "0",
+      "1"
+    ],
+    "frobenius_coefficient": "-2",
+    "consequence": "No generically nonsingular Hessian metric, even rational, can symmetrize DV"
+  },
+  "full_Tang_normal_form_independently_verified": false,
+  "HC4_or_JC2_resolved": false,
+  "novelty_priority_claimed": false,
+  "independent_jet_check": "FROBENIUS_LITERAL_CERTIFICATE_PASS"
+}

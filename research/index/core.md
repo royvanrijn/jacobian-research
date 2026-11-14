@@ -161,6 +161,80 @@ python3 research/scripts/research.py show ID
 | `URKC1` | archived programme; proved | [Universal relative Keller compiler and normalized presentation atlas](../archive/non-elliptic/verified/UNIVERSAL_RELATIVE_KELLER_MAP.md) |
 | `UM1` | archived programme; proved | [Universal symmetric monodromy](../archive/non-elliptic/verified/UNIVERSAL_SYMMETRIC_MONODROMY.md) |
 | `WPSM1` | archived programme; proved | [Whole-plane and cyclotomic stable multiplicity](../archive/non-elliptic/verified/WHOLE_PLANE_STABLE_MULTIPLICITY.md) |
+| `PF2RULED11` | archived programme; proved | [An intrinsic leading boundary period restricts all gcd-one/two symbols, excludes squarefree pole-four cubics and sharpens height eight](../jacobian-followup/affine-complements/BOUNDARY_LEADING_PERIOD.md) |
+| `PF2RULED15` | archived programme; proved; replaced by PF2RULED16 | [Complete source/pole filtration and cusp jets leave three contact strata at quartic height eight](../jacobian-followup/affine-complements/CONTACT_SOURCE_FILTRATION.md) |
+| `PF2RULED18` | archived programme; proved | [Cubic-cover boundary exactness gives a finite nonic period test and excludes contact2 in pole(6,9)](../jacobian-followup/affine-complements/CUBIC_COVER_BOUNDARY_PERIOD.md) |
+| `PF2RULED23` | archived programme; proved | [The highest next-Jacobian block retains all sixteen marked noncontact cusp candidates, leaving eleven lower membership conditions](../jacobian-followup/affine-complements/CUSP_HIGH_JACOBIAN_REDUCTION.md) |
+| `PF2RULED22` | archived programme; proved | [All sixteen noncontact pole(6,9) candidates lift through the full first cusp jet, leaving an explicit next Jacobian gate](../jacobian-followup/affine-complements/FULL_CUSP_FIRST_JET_LIFTS.md) |
+| `PF2RULED24` | archived programme; proved | [All sixteen marked noncontact candidates lift through the full next-normal equation, with a finite remaining source-Jacobian gate](../jacobian-followup/affine-complements/FULL_NEXT_NORMAL_LIFTS.md) |
+| `PF2RULED14` | archived programme; proved | [Global quartic cusp jets exclude every one-root noncontact leading symbol at every pole height, including noncoordinate target elements](../jacobian-followup/affine-complements/GLOBAL_CUSP_LEADING_OBSTRUCTION.md) |
+| `PF2RULED17` | archived programme; proved | [Complete height-nine gcd-one filtrations leave a degree128 branch and a retained72,108 chart resonance](../jacobian-followup/affine-complements/HEIGHT_NINE_RESONANT_FRONTIER.md) |
+| `PF2RULED5` | archived programme; proved | [All-height generic-fibre pole census excludes every compatible quartic target coordinate of pole two](../jacobian-followup/affine-complements/LOW_COORDINATE_POLE.md) |
+| `PF2RULED19` | archived programme; proved | [Generic polar and marked cusp constraints leave three pole(6,9) source groups and sixteen two-root leading candidates](../jacobian-followup/affine-complements/POLAR_CUSP_LEADING_SECTORS.md) |
+| `PF2RULED12` | archived programme; proved | [A first-Newton-edge pole budget excludes the full compatible quartic pair(5,8) and the noncontact branch of(7,8)](../jacobian-followup/affine-complements/POLE_FIVE_EIGHT_EXCLUSION.md) |
+| `PF2RULED9` | archived programme; proved | [Pole-four odd companions are excluded at all heights; remaining even companions have square-completed form and no simple sextic roots](../jacobian-followup/affine-complements/POLE_FOUR_COMPANIONS.md) |
+| `PF2RULED4` | archived programme; proved | [Complete marked cubic atlas excludes every compatible quartic pole presentation of height at most four](../jacobian-followup/affine-complements/POLE_FOUR_EXCLUSION.md) |
+| `PF2RULED3` | archived programme; proved | [The reduced quartic pole pair (3,4) has a four-section normal form and an exact cubic-lift obstruction](../jacobian-followup/affine-complements/POLE_FOUR_FRONTIER.md) |
+| `PF2RULED10` | archived programme; proved | [Formal square-root jets and quartic fibre degrees exclude the entire nonsquare sextic pole-four layer at all heights](../jacobian-followup/affine-complements/POLE_FOUR_NONSQUARE_EXCLUSION.md) |
+| `PF2RULED16` | archived programme; proved | [A primitive chart-leading form excludes the entire compatible quartic pole-height-eight layer](../jacobian-followup/affine-complements/POLE_HEIGHT_EIGHT_EXCLUSION.md) |
+| `PF2RULED2` | archived programme; proved | [Compatible quartic maps have no target pole presentation of height at most three](../jacobian-followup/affine-complements/POLE_REDUCTION.md) |
+| `PF2RULED7` | archived programme; proved | [Explicit source-coordinate degree transfer excludes every compatible quartic pole presentation of height at most seven](../jacobian-followup/affine-complements/POLE_SEVEN_EXCLUSION.md) |
+| `PF2RULED13` | archived programme; proved; replaced by PF2RULED14 | [Noncontact quartic pole pair(6,8) requires a cubic completion and one of three exact necessary Weierstrass profiles](../jacobian-followup/affine-complements/POLE_SIX_EIGHT_CUBE_REDUCTION.md) |
+| `PF2RULED8` | archived programme; proved | [Intrinsic weighted local initials exclude every compatible quartic pole-three coordinate at all companion heights](../jacobian-followup/affine-complements/POLE_THREE_ALL_HEIGHTS.md) |
+| `PF2RULED6` | archived programme; proved | [Global pole equations and a complete generic-fibre census exclude the compatible quartic pair(3,5)](../jacobian-followup/affine-complements/POLE_THREE_FIVE_EXCLUSION.md) |
+| `PF2FACTOR1` | archived programme; proved | [Reduced prime ramification forbids any strict intermediate polynomial plane in either quartic normalization](../jacobian-followup/affine-complements/PRIME_RAMIFICATION_FACTORIZATION.md) |
+| `PF2PRIM1` | archived programme; proved | [Both quartic normalization fields are primitive with S4 Galois closure](../jacobian-followup/affine-complements/PRIMITIVE_QUARTIC_FIELD.md) |
+| `PF2RULED1` | archived programme; proved | [Compatible quartic ruled completions force F1 and a fourth order boundary contact](../jacobian-followup/affine-complements/PROOF.md) |
+| `PF2RULED20` | archived programme; proved | [A generic quartic polar gap excludes the elliptic pole(6,9) profile and two noncontact sectors](../jacobian-followup/affine-complements/QUARTIC_GENERIC_POLAR_GAP.md) |
+| `PF2RULED25` | archived programme; proved | [A global second-normal determinant excludes generic first coordinates at all sixteen marked candidates, with variable Jacobian constant](../jacobian-followup/affine-complements/SECOND_NORMAL_DETERMINANT_OBSTRUCTION.md) |
+| `PF2COORD1` | archived programme; proved | [Explicit coordinates on every forced F1 complement transfer B-poles to ordinary source degree with contact-sensitive bounds](../jacobian-followup/affine-complements/SOURCE_COORDINATES.md) |
+| `PF2TRACE1` | archived programme; proved | [Finite-cover trace preserves polynomial divergence but does not automatically give a branch-preserving Euler field](../jacobian-followup/affine-complements/TRACE_GRADING_BOUNDARY.md) |
+| `PF2RULED21` | archived programme; proved | [A generic single-branch critical-value obstruction reduces pole(6,9) to two-root rational auxiliary covers](../jacobian-followup/affine-complements/UNIBRANCH_POLAR33_OBSTRUCTION.md) |
+| `PF2PERIOD1` | archived programme; proved | [All-height volume exactness excludes the marked-contact family and leaves one complex boundary-pair orbit](../jacobian-followup/affine-complements/VOLUME_PERIOD_OBSTRUCTION.md) |
+| `PF2GRADE1` | archived programme; proved | [All-height Wright grading obstruction forbids homogeneous target coordinates and grading-invariant Keller target algebras](../jacobian-followup/affine-complements/WRIGHT_GRADING_OBSTRUCTION.md) |
+| `PF2WRIGHT1` | archived programme; proved | [The sole zero-period compatible model is Wright index three as an actual subring with its omitted valuation](../jacobian-followup/affine-complements/WRIGHT_MARKED_MODEL.md) |
+| `BCRDB1` | archived programme; proved | [Exact de Bondt 12/18/90 replay, monomial K12 conjugacy and direct integer cubic-linear certificate](../jacobian-followup/de-bondt-2610.24889/README.md) |
+| `BCRDBGRAPH1` | archived programme; proved | [Nine exact literal graph-deletion obstructions for the de Bondt five-cubic map](../jacobian-followup/de-bondt-2610.24889/README.md) |
+| `QRT1` | archived programme; proved | [Strong quantum residue transport and explicit native-support failure](../jacobian-followup/dixmier-residue-transport/PROOF.md) |
+| `GAOF4ELL1` | archived programme; proved | [The two-double-root F4 stratum is an elliptic curve minus thirteen points](../jacobian-followup/gao-f4-fibres/PROOF.md) |
+| `GAOF4FIB1` | archived programme; proved | [Complete complex fibre classification of Gao F4, including both target-boundary pieces](../jacobian-followup/gao-f4-fibres/PROOF.md) |
+| `GAOF4NP1` | archived programme; proved | [Two-component nonproper locus and rational normalization of the F4 discriminant](../jacobian-followup/gao-f4-fibres/PROOF.md) |
+| `GAOF6FIB1` | archived programme; proved | [Complete complex fibre classification of Gao F6 with rational multiplicity curves](../jacobian-followup/gao-f6-fibres/PROOF.md) |
+| `GAOF6NP1` | archived programme; proved | [The F6 nonproper locus has two components and a rational coefficient-discriminant normalization](../jacobian-followup/gao-f6-fibres/PROOF.md) |
+| `GAOF7BND1` | archived programme; proved | [Complete F7 boundary fibres: one point on the second-coordinate zero locus and two elsewhere](../jacobian-followup/gao-f7-fibres/PROOF.md) |
+| `GAOF7CARD1` | archived programme; proved | [Ten F7 fibre cardinalities occur: exact lifting and square exclusions](../jacobian-followup/gao-f7-fibres/PROOF.md) |
+| `GAOF7NP1` | archived programme; proved | [F7 nonproper locus: two irreducible components, A3 discriminant normalization and fifth-order boundary intersection](../jacobian-followup/gao-f7-fibres/PROOF.md) |
+| `GAOF7MULT1` | archived programme; proved | [Gao F7 has sharp maximum root multiplicity five](../jacobian-followup/gao-f7-linear-cube/HIGH_ROOT_PROOF.md) |
+| `GAOF7FOUR2` | archived programme; proved | [Complete F7 quadruple-root strata:912 six-point targets,118 seven-point targets and exclusion of4+3+2](../jacobian-followup/gao-f7-quadruple/COMPLETE_PROOF.md) |
+| `GAOF7FOUR1` | archived programme; proved | [F7 quadruple-root incidence has generic degree eight and finite nonordinary locus; all24 pole targets classified](../jacobian-followup/gao-f7-quadruple/PROOF.md) |
+| `GAOF7FIVE1` | archived programme; proved | [Complete F7 fivefold-root locus:118 normalized targets, all with seven-point fibres](../jacobian-followup/gao-f7-quintuple/PROOF.md) |
+| `GAOF7SURJ1` | archived programme; proved | [Gao F7 is surjective by exact cube/square coefficient obstructions](../jacobian-followup/gao-f7-surjectivity/PROOF.md) |
+| `GAOF7CUBE1` | archived programme; proved | [Gao F7 has no cubed cubic divisor: global cubic-root-block bound and three excluded three-point types](../jacobian-followup/gao-f7-three-point-certificate/PROOF.md) |
+| `GAOF7MW1` | archived programme; proved | [F7 triple-root incidence has a primitive section of height58/3 and dense rational points](../jacobian-followup/gao-f7-three-point-structure/PROOF.md) |
+| `GAOF7CUSP1` | archived programme; proved | [F7 auxiliary triple-root incidence is a nonrational elliptic surface with chi seven](../jacobian-followup/gao-f7-three-point/PROOF.md) |
+| `GAOF7THREE1` | archived programme; proved | [F7 three-point types reduce to two factorizations; the Delta-zero cubic-cube slice is impossible](../jacobian-followup/gao-f7-three-point/PROOF.md) |
+| `GAOF7TRP1` | archived programme; proved | [F7 triple-root pole locus: four disjoint Gm curves and complete7/8/9-point strata](../jacobian-followup/gao-f7-triple-doubles/PROOF.md) |
+| `FINSOL1` | archived programme; proved | [Classical solidity gives a characteristic-free global-functional finiteness criterion](../jacobian-followup/keller-solidity/PROOF.md) |
+| `FINSOL2` | archived programme; proved | [Finite torsion-free targets and finite-order differential operators cannot evade the global finiteness gate](../jacobian-followup/keller-solidity/PROOF.md) |
+| `WRIGHTSOL1` | archived programme; proved | [Every proper birational extension of a normal Noetherian base has zero finite-target dual and finite-order differential maps](../jacobian-followup/keller-solidity/PROOF.md) |
+| `JC2POS1` | archived programme; proved | [Minimal-resolution ramification positivity with a direct ruled-surface exclusion](../jacobian-followup/minimal-resolution-positivity/PROOF.md) |
+| `JC2POS2` | archived programme; proved | [General target-line genus at least two and exact smooth boundary minimalization](../jacobian-followup/minimal-resolution-positivity/PROOF.md) |
+| `JC2POS3` | archived programme; proved | [Normal-r7 single-ramified-row attachment forces genus two, Picard rank8--11 and four infinity types](../jacobian-followup/minimal-resolution-positivity/R7_WINDOW.md) |
+| `KMFI4` | archived programme; proved | [Van Hoeij--Vidunas F11 rational Keller chart with exact arithmetic and boundary ledger](../jacobian-followup/monodromy-theory/F11.md) |
+| `KMFI1` | archived programme; proved | [Affine Keller inertia fixes a sheet and point stabilizers normally generate](../jacobian-followup/monodromy-theory/THEORY.md) |
+| `KMFI2` | archived programme; proved | [All nilpotent and even dihedral monodromy actions are excluded absolutely](../jacobian-followup/monodromy-theory/THEORY.md) |
+| `KMFI3` | archived programme; proved | [Natural PSL2(11) affine-inertia sieve and the unique genus-zero passport](../jacobian-followup/monodromy-theory/THEORY.md) |
+| `OP-KMON` | archived programme; open | [Keller generic-monodromy action spectrum](../jacobian-followup/monodromy-theory/THEORY.md) |
+| `PF2R7ADJ1` | archived programme; proved | [The single-ramified-row r7 cover has a rank-eight rational adjoint pencil and no two-sheet cusp alternative](../jacobian-followup/r7-adjoint-exclusion/PROOF.md) |
+| `PF2R7EX1` | archived programme; proved | [Scoped exclusion of both nonimmersed normal-r7 classes under the single-ramified-affine-row hypothesis](../jacobian-followup/r7-adjoint-exclusion/PROOF.md) |
+| `PF2R7PAR1` | archived programme; proved | [Exact parabola-degree and Mobius involution obstructions for both nonimmersed r7 parametrizations](../jacobian-followup/r7-adjoint-exclusion/PROOF.md) |
+| `KPAIR1` | archived programme; proved | [Degree-ten constant Jacobian pairing exclusion and sharp dimension four](../jacobian-followup/sparse-eight/COORDINATE_GATES.md) |
+| `GLDC3` | archived programme; proved | [Complete eight-term degree-seven Keller collision exclusion](../jacobian-followup/sparse-eight/PROOF.md) |
+| `GLDC2` | archived programme; proved | [Complete seven-term degree-seven Keller collision exclusion](../jacobian-followup/sparse-seven/PROOF.md) |
+| `UACOMP1` | archived programme; proved | [Universal absolutely stably atomic Keller maps in dimension N-1 for every N at least five](../jacobian-followup/universal-keller-compression/PROOF.md) |
+| `UAFAM1` | archived programme; proved | [Every finite etale family over a Q-scheme is locally a complete fibre of the compressed universal Keller map](../jacobian-followup/universal-keller-compression/PROOF.md) |
+| `UAPOS1` | archived programme; proved | [The compressed universal map extends to characteristic p greater than N and sufficiently large finite fields](../jacobian-followup/universal-keller-compression/PROOF.md) |
+| `UAQUOT1` | archived programme; proved | [A root-free clean scaling quotient preserves the intrinsic Tschirnhaus non-descent obstruction](../jacobian-followup/universal-keller-compression/PROOF.md) |
 
 ## Other source notes and navigation
 
@@ -173,3 +247,40 @@ These documents are not canonical sources of a registered claim. They include wo
 - [Reproducing the results](../REPRODUCE.md)
 - [Elliptic-curve discovery timeline](../RESEARCH_TIMELINE.md)
 - [September4 research-value review — historical assessment](../RESEARCH_VALUE_REVIEW_2026-09-04.md)
+- [Keller maps JC2 and HC4 research priorities](../jacobian-followup/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md)
+- [Scoped Jacobian follow-ups](../jacobian-followup/README.md)
+- [Recent Jacobian research and its relevance to this repository](../jacobian-followup/RECENT_DEVELOPMENTS_2026-11-13.md)
+- [Affine complement recognition for the quartic boundary programme](../jacobian-followup/affine-complements/README.md)
+- [The quartic ruled completion research goal](../jacobian-followup/affine-complements/RESEARCH_GOAL.md)
+- [The Wright connection and the multiple fibre gate](../jacobian-followup/affine-complements/WRIGHT_CONNECTION.md)
+- [Dixmier experiments connected to our recent research](../jacobian-followup/dixmier-audit/NEXT_EXPERIMENTS.md)
+- [Dixmier conjecture bounds and research connections](../jacobian-followup/dixmier-audit/README.md)
+- [Strong quantum residue under polynomial Weyl shears](../jacobian-followup/dixmier-residue-transport/README.md)
+- [Same-agent proof audit, 14 November 2026](../jacobian-followup/gao-f4-fibres/AUDIT_2026-11-14.md)
+- [Gao F4: complete complex fibres and an elliptic stratum](../jacobian-followup/gao-f4-fibres/README.md)
+- [Gao F6: complete fibres and the nonproper locus](../jacobian-followup/gao-f6-fibres/README.md)
+- [Gao F7: all boundary fibres and one remaining cardinality question](../jacobian-followup/gao-f7-fibres/README.md)
+- [F7: the sharp root-multiplicity bound five](../jacobian-followup/gao-f7-linear-cube/README.md)
+- [F7 quadruple-root pole chart:24 targets, with fibres seven and eight](../jacobian-followup/gao-f7-quadruple/EXCEPTIONAL_PROOF.md)
+- [F7: complete quadruple-root strata](../jacobian-followup/gao-f7-quadruple/README.md)
+- [F7: all 118 fivefold-root targets and their seven-point fibres](../jacobian-followup/gao-f7-quintuple/README.md)
+- [Gao F7 is surjective](../jacobian-followup/gao-f7-surjectivity/README.md)
+- [F7 three-point follow-up](../jacobian-followup/gao-f7-three-point/README.md)
+- [Superseded draft](../jacobian-followup/gao-f7-three-point-certificate/PROOF_DRAFT.md)
+- [F7 cubic-cube coefficient obstruction](../jacobian-followup/gao-f7-three-point-certificate/README.md)
+- [F7 incidence: primitive section and rational-point density](../jacobian-followup/gao-f7-three-point-structure/README.md)
+- [F7 triple-root pole chart: complete7/8/9-point classification](../jacobian-followup/gao-f7-triple-doubles/README.md)
+- [Solidity and global regularization obstructions](../jacobian-followup/keller-solidity/README.md)
+- [Minimal-resolution positivity and the r7 Picard-rank window](../jacobian-followup/minimal-resolution-positivity/README.md)
+- [GENUSREVIEW1205: independent review of actual ramification nefness and bigness](../jacobian-followup/minimal-resolution-positivity/sources/actual-ramification-nef-big-review-sol56-20261107T1205Z.md)
+- [Ramification arithmetic genus on the actual minimal resolution](../jacobian-followup/minimal-resolution-positivity/sources/minimal-resolution-ramification-genus-swarmHQ-root-sol56-20261107T0755Z.md)
+- [Positivity of ramification on the actual minimal resolution](../jacobian-followup/minimal-resolution-positivity/sources/minimal-resolution-ramification-positivity-swarmHQ-root-sol56-20261107T122700Z.md)
+- [Arithmetic genus of ramification in a smooth finite projective completion](../jacobian-followup/minimal-resolution-positivity/sources/projective-ramification-genus-swarmHQ-root-sol56-20261107T0715Z.md)
+- [Symmetry groups of Keller maps](../jacobian-followup/monodromy-theory/README.md)
+- [Objective: close the two nonimmersed normal-r7 rows](../jacobian-followup/r7-adjoint-exclusion/OBJECTIVE.md)
+- [Scoped exclusion of both nonimmersed normal-r7 classes](../jacobian-followup/r7-adjoint-exclusion/README.md)
+- [Proof-obligation audit](../jacobian-followup/r7-adjoint-exclusion/REVIEW.md)
+- [External geometry and the exact source-model bridge](../jacobian-followup/r7-adjoint-exclusion/SOURCE_AUDIT.md)
+- [Eight term Keller collision exclusion](../jacobian-followup/sparse-eight/README.md)
+- [Seven term Keller collision exclusion](../jacobian-followup/sparse-seven/README.md)
+- [Universal Keller maps in one fewer dimension](../jacobian-followup/universal-keller-compression/README.md)

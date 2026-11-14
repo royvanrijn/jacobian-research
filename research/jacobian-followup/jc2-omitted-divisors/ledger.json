@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "as_of": "2026-11-14",
+  "authority": "../../MATH_STATUS.json",
+  "purpose": "Separate ramification, omitted primes, images, residue degrees and exceptional ambient fibre lengths. Null is unknown, not absent.",
+  "row_fields": ["prime", "ramifies", "omitted", "target_image", "ramification_index", "residue_degree", "reconstruction_pole", "exceptional_ambient_lengths", "evidence"],
+  "controls": {
+    "fonollosa": {
+      "hypotheses": ["n>=4", "m=n-2", "original marked-root map or successive coefficient descent", "coefficient of T equals 1"],
+      "generic_degree": "n*m",
+      "complete_omission_list": true,
+      "exceptional_lengths_complete": true,
+      "rows": [
+        {"prime": "Ecrit", "ramifies": true, "omitted": true, "target_image": "reduced degree-n binary discriminant", "ramification_index": "2*m", "residue_degree": 1, "reconstruction_pole": "v_Ecrit(x)=-1 for x=1/v", "exceptional_ambient_lengths": "m*k at each projective root of multiplicity k>=2", "evidence": "Fonollosa Sections5.2-5.4; PROOF.md Section3"},
+        {"prime": "E_zeta, one for each zeta in mu_m except 1", "ramifies": false, "omitted": true, "target_image": "b=0", "ramification_index": 1, "residue_degree": 1, "reconstruction_pole": "v_E_zeta(y)=-1 for y=(1-a)/t", "exceptional_ambient_lengths": "one at every point, including intersections of target images", "evidence": "Fonollosa Sections5.3-5.4; PROOF.md Section3"},
+        {"prime": "D_1", "ramifies": false, "omitted": false, "target_image": "b=0", "ramification_index": 1, "residue_degree": 1, "reconstruction_pole": "none: (a-1)/t regular on a=1 branch", "exceptional_ambient_lengths": "one at every point", "evidence": "Fonollosa Section5.3"}
+      ],
+      "generic_discriminant_omitted_length": "2*m",
+      "generic_zero_hyperplane_omitted_length": "m-1",
+      "singleton_zero_target": {"polynomial": "P(T)=T", "retained_length": 1, "ramified_omitted_points": 1, "ramified_omitted_length": "m*(n-1)", "unramified_omitted_points": "m-1", "unramified_omitted_length": "m-1", "n4_lengths": [1, 6, 1], "explicit_n4_escaping_source_path": ["-b", "2/b", "12/b^2", "-8/b^3"], "source_dimension": "n, or3 after the cited zero-coefficient descent; not2"},
+      "fibre_formula": "source=m*s-(m-1)*indicator(P(0)=0); omitted=m*sum(k for multiple projective roots)+(m-1)*indicator(P(0)=0)",
+      "infinity_rule": "Use Q(u)=u^n*P(1/u). Simple infinity root retained; multiplicity k>=2 omitted with ambient length m*k.",
+      "not_the_normal_r7_parameter": true
+    }
+  },
+  "applications": {
+    "normal_r7_nonimmersed": {
+      "hypotheses": ["plane Keller map of generic degree6", "entire reduced ramification divisor is one prime R with e2 f1", "image is one of PF2R7CUSP1's two nonimmersed classes", "PF2BATT1 and PF2R7BND1 written imports"],
+      "generic_degree": 6,
+      "complete_omission_list": false,
+      "exceptional_lengths_complete": false,
+      "rows": [
+        {"prime": "R", "ramifies": true, "omitted": true, "target_image": "classified curve C: A2+A5+8A1 or A2+11A1", "ramification_index": 2, "residue_degree": 1, "reconstruction_pole": null, "exceptional_ambient_lengths": {"smooth": [2], "two_branch": [2, 2], "cusp_epsilon0": [2], "cusp_epsilon1": [3]}, "evidence": "PF2R7CUSP1, PF2BATT1, PF2R7BND1"},
+        {"prime": "D_j for j=1,...,3-epsilon", "ramifies": false, "omitted": true, "target_image": null, "image_constraints": "immersed polynomial normalization; differs from C; images may coincide across primes", "ramification_index": 1, "residue_degree": 1, "reconstruction_pole": null, "exceptional_ambient_lengths": "one per point; b_j(y) points at y, possibly more than one on a single prime", "evidence": "PF2BATT1, PF2R7BND1; PROOF.md Section4"}
+      ],
+      "strata": [
+        {"name": "outside C", "ramified_omitted_lengths": [], "source_length_before_unramified_omission": 6, "max_unramified_branches": 6, "unramified_branches_for_singleton": 5},
+        {"name": "smooth C", "ramified_omitted_lengths": [2], "source_length_before_unramified_omission": 4, "max_unramified_branches": 4, "unramified_branches_for_singleton": 3},
+        {"name": "two-branch C value", "ramified_omitted_lengths": [2, 2], "source_length_before_unramified_omission": 2, "max_unramified_branches": 2, "unramified_branches_for_singleton": 1},
+        {"name": "cusp epsilon0", "ramified_omitted_lengths": [2], "source_length_before_unramified_omission": 4, "max_unramified_branches": 4, "unramified_branches_for_singleton": 3},
+        {"name": "cusp epsilon1", "ramified_omitted_lengths": [3], "source_length_before_unramified_omission": 3, "max_unramified_branches": 3, "unramified_branches_for_singleton": 2}
+      ],
+      "unramified_branch_sum": "B(y)=sum_j number_of_normalization_points_of_C_j_over_y",
+      "pointwise_identity": "source_length=6-sum(ramified_omitted_lengths)-B(y)",
+      "unknowns": ["actual extra prime equations in the global normal algebra", "images C_j and all intersection parameters", "source-coordinate negative valuations", "infinity and carrier compatibility", "choice of cusp epsilon"],
+      "immersed_r7_family_covered": false,
+      "normal_r7_closed": false
+    },
+    "singleton_zero": {
+      "hypotheses": ["plane Keller map G with (G1,G2)=(x,y)", "PF2BATT1 written import for the split by boundary primes"],
+      "generic_degree": null,
+      "generic_degree_symbol": "d",
+      "complete_omission_list": false,
+      "exceptional_lengths_complete": false,
+      "retained_zero_length": 1,
+      "required_omitted_zero_length": "d-1",
+      "rows": [
+        {"prime": "each omitted prime D with e_D>1", "ramifies": true, "omitted": true, "target_image": null, "ramification_index": null, "residue_degree": null, "reconstruction_pole": null, "exceptional_ambient_lengths": null, "evidence": "must be supplied from finite normal algebra and reconstruction ideal"},
+        {"prime": "each omitted prime D with e_D=1", "ramifies": false, "omitted": true, "target_image": null, "ramification_index": 1, "residue_degree": 1, "reconstruction_pole": null, "exceptional_ambient_lengths": "one per point; b_D(0) points above zero", "evidence": "PF2BATT1; PROOF.md Section5"}
+      ],
+      "pointwise_identity": "sum(ell_q(0) for ramified omitted points)+sum(b_D(0) for unramified omitted primes)=d-1",
+      "unknowns": ["d", "normal algebra", "complete reconstruction-pole primes", "their images and incidences with zero", "local ramified fibre algebras"],
+      "properness_at_zero_proved": false
+    }
+  },
+  "completion_gates": ["finite normal algebra and inverse identities certified", "height-one primes of product(B:x_i) completely enumerated", "ramification flag, omission flag, target image and e,f for every prime", "exceptional ambient local Artin algebras and branch incidences", "generic DVR degree identities with retained primes included", "all pointwise lengths sum to finite fibre length", "global source A2 and infinity attachments justified"],
+  "full_research_goal_complete": false
+}

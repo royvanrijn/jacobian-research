@@ -1,5 +1,7 @@
 # F2 geometric-degree-six Stein and cubic-germ reduction
 
+> **14 November 2026 scope correction.** PF2D6E1 is partial. The whole-even-row exclusion below assumes a complete dicritical ledger that the ramification classification does not establish. Terminal localization is proved for ramified branch germs; omitted e=1 images require separate reconstruction and target-blowup transport. The retained r10 nodal packet can numerically carry one further unramified omitted prime. See the [current audit](../../../jacobian-followup/jc2-omitted-divisors/STEIN_SCOPE_AUDIT.md). Historical calculations and restricted braid certificates below are preserved; their whole-family conclusions are conditional on the missing completeness step.
+
 > **Status.**  This note proves an unconditional localization theorem at
 > geometric degree six and a complete classification under the additional
 > hypothesis that the terminal Cartier slice in the local degree-three Stein

@@ -1,5 +1,13 @@
 # All-degree dihedral affine-completion obstructions
 
+**14 November 2026 follow-up.** [KMFI2](../../../jacobian-followup/monodromy-theory/THEORY.md)
+now excludes every even-degree natural dihedral action absolutely, in all
+dimensions and without an architectural restriction. The calculations below
+remain valid; their unrestricted even-degree continuation is superseded.
+Odd degrees at least five remain open. D3=S3 has known absolute group
+realizations, without a claimed solution to this particular completion.
+
+
 ## 1. Outcome
 
 Let \(k\) have characteristic zero and contain the required dihedral

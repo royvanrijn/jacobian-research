@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT2",
+  "authority": "../../MATH_STATUS.json",
+  "hypotheses": ["complex plane Keller map", "finite flat normal surface in the source function field", "PF2BATT1 complete disjoint unibranch boundary with A1 normalizations"],
+  "global_identity": "d-1=sum_D(e_D)+sum_D E_D; E_D=sum_q(ambient_local_length_q-e_D)>=0",
+  "unramified_prime_count": "t=d-1-sum_ramified(e_i+E_i)",
+  "residue_degrees_are_separate": true,
+  "applications": {
+    "normal_r7_immersed": {
+      "additional_hypotheses": ["d=6", "entire reduced ramification one e2,f1 prime R", "image C is an immersed birational degree-(6,10) gap21 polynomial curve"],
+      "complete_omission_equations_known": false,
+      "ramified_rows": [{"prime": "R", "ramifies": true, "omitted": true, "target_image": "C", "e": 2, "f": 1, "finite_excess": 0, "finite_local_lengths": "two at each of b_C(y) points", "reconstruction_poles": null}],
+      "unramified_rows": [{"prime": "D_j, j=1,2,3", "ramifies": false, "omitted": true, "target_image": null, "image_constraints": "immersed polynomial curve; at least two prime images differ from C; images may coincide", "e": 1, "f": 1, "finite_excess": 0, "finite_local_lengths": "one at each normalization branch over y", "reconstruction_poles": null}],
+      "unramified_prime_count": 3,
+      "max_primes_with_image_C": 1,
+      "min_primes_with_image_different_from_C": 2,
+      "source_length": "6-2*b_C(y)-sum_j b_j(y)",
+      "strata": [
+        {"ramification_image_branches": 0, "ramified_local_lengths": [], "max_unramified_points": 6, "unramified_points_for_singleton": 5},
+        {"ramification_image_branches": 1, "ramified_local_lengths": [2], "max_unramified_points": 4, "unramified_points_for_singleton": 3},
+        {"ramification_image_branches": 2, "ramified_local_lengths": [2,2], "max_unramified_points": 2, "unramified_points_for_singleton": 1},
+        {"ramification_image_branches": 3, "ramified_local_lengths": [2,2,2], "max_unramified_points": 0, "unramified_points_for_singleton": null}
+      ],
+      "unknowns": ["actual D_j and image equations", "source reconstruction pole valuations", "target blowup transport and carrier compatibility", "actual image intersections"],
+      "global_r7_exclusion": false
+    },
+    "singleton_zero_off_branch": {
+      "additional_hypotheses": ["one reduced affine source point over zero", "zero outside finite-normalization branch locus", "d>1"],
+      "complete_omission_equations_known": false,
+      "ramified_omitted_points_over_zero": 0,
+      "unramified_local_length": 1,
+      "unramified_omitted_points_over_zero": "d-1",
+      "branch_surplus_identity": "sum_unram_D max(b_D(0)-1,0)=sum_ram_R(e_R+E_R)+number_unram_D_avoiding_zero",
+      "minimum_branch_surplus": 2,
+      "all_unramified_image_germs_smooth_at_zero_excluded": true,
+      "single_node_on_only_one_prime_with_all_other_germs_smooth_excluded": true,
+      "ramified_image_immersion_not_required": true,
+      "unknowns": ["global normal algebra", "actual omitted image equations and branches at zero", "ramified exceptional excess away from zero"],
+      "general_singleton_zero_properness_proved": false
+    },
+    "historical_r10_budget_audit": {
+      "additional_hypotheses": ["d=6", "entire reduced ramification consists of two e2,f1 primes", "their images are the retained disjoint four-node quintics"],
+      "ramified_rows": [{"prime": "R_1", "ramifies": true, "omitted": true, "target_image": "C_1, first four-node quintic", "e": 2, "f": 1, "finite_excess": 0, "finite_local_lengths": "two at every normalization point", "reconstruction_poles": null}, {"prime": "R_2", "ramifies": true, "omitted": true, "target_image": "C_2, disjoint second four-node quintic", "e": 2, "f": 1, "finite_excess": 0, "finite_local_lengths": "two at every normalization point", "reconstruction_poles": null}],
+      "unramified_rows": [{"prime": "D", "ramifies": false, "omitted": true, "target_image": null, "e": 1, "f": 1, "finite_excess": 0, "finite_local_lengths": "one per normalization branch over each value", "reconstruction_poles": null}],
+      "required_unramified_rows": 1,
+      "unramified_image": null,
+      "unramified_image_may_equal_ramified_image": true,
+      "node_if_image_shared_omitted_lengths": [2,2,1,1],
+      "node_if_image_shared_retained_length": 0,
+      "complete_omission_equations_known": false,
+      "historical_whole_even_exclusion_verified": false,
+      "realization_proved": false,
+      "unknowns": ["global omitted row", "its image and pole valuations", "all-row necessary-locus classification for even r6/r8"]
+    }
+  },
+  "remaining_global_gates": ["all ramified rows and their locations must be established separately from omission", "actual prime and image equations", "reconstruction-pole completeness", "transport through target blowups", "a global A2 source realization or obstruction"],
+  "goal_complete": false
+}

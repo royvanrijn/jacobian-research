@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "claim": "PF2R7CUSP1",
+  "literal_reverse_ideal_columns_replayed": 6,
+  "normalization_classes": 2,
+  "class_II_excess_test": "conditional on a complete single-(2,1)-row affine dicritical ledger",
+  "complete_global_missing_boundary_ledger_verified": false,
+  "whole_r7_exclusion": false,
+  "large_local_certificate": {
+    "artifact": "artifacts/local/jc2-normal-r7-20261113/r7-critical-one-lift.log",
+    "bytes": 496667014,
+    "sha256": "334b52837abb2c679cfe2ce1dba6290d00d34c37e068f1165c35dd159cc6a731",
+    "scope": "Singular lift matrix for the normalized critical scheme; produced under 30-second cap; not independently replayed and not a default worker input"
+  },
+  "sha256": {
+    "verify_r7.py": "4957ed4cca5036f5da4cfca0d46394c1e32c202bbe3376d52d29057848d95ff1",
+    "check_lift_column.py": "824cd91563be64e8a38173fdfcd34c89ecc38ac645df4cc793b17b3e202f8b11",
+    "run_lift_checks.py": "e7386068809920e1cfab08e882351ce153daa189640e1184176e044609d060b0",
+    "local_excess.py": "4229cf0b1bdc72fa6564350b56a1400e9bf93eeabed09af0bfc29b793eaceb52",
+    "check_monodromy.py": "82a35ee6ae1ec9e698e1fe576b72102d4ad3cdc971863fbb8925bf55e9e33a37",
+    "critical-zero-elimination.json": "a014344d709438b724fc01e1e88054663547863f37857ba9325b5ec91a6a41c3",
+    "critical-zero-reduced.log": "a1632d0567e63dc0d1baa21bf331318201b8b695d6697e730f77039c5989111e",
+    "critical_one_elimination.json": "c9b5d8e61a89e92bc224c9c63035da058bc7d33c48c4515113f42303be677e66",
+    "r7-critical-one.log": "79483eb8dcfedad4052e54c13bd774c4da54a134bf59b2ff6fa213a8f277a8b2",
+    "r7-critical-one-lift.sing": "83a949f3fee5e3a2b84806c6fc00bd3672fd8e8ea82d94c3be0fd261622ebabd",
+    "vertical-triple-input.json": "5b594d53ae05c956c0e969fbebc7aa1c260f9c2c54720a11ed82106c2a27c867",
+    "vertical-triple-lift.log": "b7c5adcb5b2779c27a4584134770bea5ba4ab5f4416b47d3885c8f036db9bd60",
+    "lift_receipt.json": "7f210a92f0afeb2e01241ad9d0c5830f6f794172b79cc86ce34d5cfa2317a83b",
+    "classification.json": "8efd66a04d1c1d3045b16a80ea1b5f59284cb82f0b5453ef179bf4486998cf8c",
+    "local-excess.json": "cf182c164f5792163aefa4a70a91fedbf35c356fc1dfc21d0533b04503d59a31",
+    "monodromy.json": "e8ef507ef7e1b6998da31dd877a246a8d645530458b97c93406eb232a6cecadf",
+    "braids-generic.json": "4df908e91d567ac5e7ba73b70e9212d6209ddd3a0d7466bf2a0e21e5473827e9",
+    "lift-checked-1.json": "21a09d1e9d9b174eee2c37e2f9955d141c80153e9672897564a5bf96f26df0d9",
+    "lift-checked-2.json": "c3b694e234daea9ccd8ad9c99cc75e1cd83a11f0626512d3f260f363d97c5ebd",
+    "lift-checked-3.json": "69efbdfff3dee03c60411421eb06a8e013b31e1cffe2501033315edd6555e40b",
+    "lift-checked-4.json": "b278ebc0ff4e97a63383e4f81deb188a3a89256e85f8d8bee135c287228b366f",
+    "lift-checked-5.json": "8fb95a704be5e1b2007c7dc3f2047227db842edb1b127fdda54b33251141ae7b",
+    "lift-checked-6.json": "09f2323d2632ce1fb56b82a45f7dcfc69c2d1d48711a6f4c66eec01e1fd24186"
+  }
+}

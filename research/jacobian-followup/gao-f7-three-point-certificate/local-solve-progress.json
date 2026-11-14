@@ -1,0 +1,1440 @@
+{
+  "proved_nodes": 482,
+  "needed_nodes": 735,
+  "seconds": 235.86834113000077,
+  "journal": "local-proof-journal-1794620645837884118.jsonl",
+  "reports": [
+    {
+      "node": 374,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7895984030037653
+    },
+    {
+      "node": 375,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.691725190001307
+    },
+    {
+      "node": 376,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7002544120041421
+    },
+    {
+      "node": 377,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.6861177789978683
+    },
+    {
+      "node": 378,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.6960507559997495
+    },
+    {
+      "node": 379,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.6985064409964252
+    },
+    {
+      "node": 380,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7034045390028041
+    },
+    {
+      "node": 381,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7056969920085976
+    },
+    {
+      "node": 382,
+      "rows": 390,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7051900689984905
+    },
+    {
+      "node": 383,
+      "rows": 388,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7154705720022321
+    },
+    {
+      "node": 384,
+      "rows": 390,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7150843760027783
+    },
+    {
+      "node": 385,
+      "rows": 388,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7188631149911089
+    },
+    {
+      "node": 386,
+      "rows": 388,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7242519999999786
+    },
+    {
+      "node": 387,
+      "rows": 390,
+      "columns": 284,
+      "exact_dimension": 284,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7334608730016043
+    },
+    {
+      "node": 388,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7389353300095536
+    },
+    {
+      "node": 389,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7403533780016005
+    },
+    {
+      "node": 390,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7435608760133618
+    },
+    {
+      "node": 391,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7511748510005418
+    },
+    {
+      "node": 392,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7467161340027815
+    },
+    {
+      "node": 393,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.751880343988887
+    },
+    {
+      "node": 394,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7551316729950486
+    },
+    {
+      "node": 395,
+      "rows": 327,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7482249430031516
+    },
+    {
+      "node": 396,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7422538950049784
+    },
+    {
+      "node": 397,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7489813650026917
+    },
+    {
+      "node": 398,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8735355639946647
+    },
+    {
+      "node": 399,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8442903459945228
+    },
+    {
+      "node": 400,
+      "rows": 361,
+      "columns": 285,
+      "exact_dimension": 285,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.7380926570040174
+    },
+    {
+      "node": 401,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8619323470047675
+    },
+    {
+      "node": 402,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8628041070041945
+    },
+    {
+      "node": 403,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8710635989991715
+    },
+    {
+      "node": 404,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8807455950009171
+    },
+    {
+      "node": 405,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8731139660085319
+    },
+    {
+      "node": 406,
+      "rows": 368,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8712116969982162
+    },
+    {
+      "node": 407,
+      "rows": 369,
+      "columns": 305,
+      "exact_dimension": 305,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8775553650048096
+    },
+    {
+      "node": 410,
+      "rows": 775,
+      "columns": 269,
+      "exact_dimension": 269,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.5104513580008643
+    },
+    {
+      "node": 411,
+      "rows": 782,
+      "columns": 269,
+      "exact_dimension": 269,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.4091365670028608
+    },
+    {
+      "node": 412,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.8171064850030234
+    },
+    {
+      "node": 413,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.829512775002513
+    },
+    {
+      "node": 414,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1090498410048895
+    },
+    {
+      "node": 415,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9611471719981637
+    },
+    {
+      "node": 416,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.8434971590031637
+    },
+    {
+      "node": 417,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.88715866599523
+    },
+    {
+      "node": 418,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.982080699002836
+    },
+    {
+      "node": 419,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.933976102998713
+    },
+    {
+      "node": 420,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9509539459977532
+    },
+    {
+      "node": 421,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9148676930053625
+    },
+    {
+      "node": 422,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0607153340097284
+    },
+    {
+      "node": 423,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9214911220042268
+    },
+    {
+      "node": 424,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9221994549880037
+    },
+    {
+      "node": 425,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.994548193004448
+    },
+    {
+      "node": 426,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.042410555004608
+    },
+    {
+      "node": 427,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.973946600992349
+    },
+    {
+      "node": 428,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9408993709948845
+    },
+    {
+      "node": 429,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9733066969929496
+    },
+    {
+      "node": 430,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.059926955989795
+    },
+    {
+      "node": 431,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.9587095320021035
+    },
+    {
+      "node": 432,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0395062409952516
+    },
+    {
+      "node": 433,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.036024171000463
+    },
+    {
+      "node": 434,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1310998140106676
+    },
+    {
+      "node": 435,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1198748229944613
+    },
+    {
+      "node": 436,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.083573175012134
+    },
+    {
+      "node": 437,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0709010220016353
+    },
+    {
+      "node": 438,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.14061691101233
+    },
+    {
+      "node": 439,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.086802517005708
+    },
+    {
+      "node": 440,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0616035080020083
+    },
+    {
+      "node": 441,
+      "rows": 421,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.035050124002737
+    },
+    {
+      "node": 442,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.079773739009397
+    },
+    {
+      "node": 443,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0299692930129822
+    },
+    {
+      "node": 444,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1114988709887257
+    },
+    {
+      "node": 445,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.09113423198869
+    },
+    {
+      "node": 446,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1304691240075044
+    },
+    {
+      "node": 447,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.104589536989806
+    },
+    {
+      "node": 448,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.053354050993221
+    },
+    {
+      "node": 449,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.0533411460055504
+    },
+    {
+      "node": 450,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1468205739947734
+    },
+    {
+      "node": 451,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.064547401998425
+    },
+    {
+      "node": 452,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1357740399980685
+    },
+    {
+      "node": 453,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.1416740989952814
+    },
+    {
+      "node": 454,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.111894935995224
+    },
+    {
+      "node": 455,
+      "rows": 421,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.057255168998381
+    },
+    {
+      "node": 456,
+      "rows": 424,
+      "columns": 357,
+      "exact_dimension": 357,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.254529633006314
+    },
+    {
+      "node": 496,
+      "rows": 35,
+      "columns": 17,
+      "exact_dimension": 17,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.038272309000603855
+    },
+    {
+      "node": 497,
+      "rows": 35,
+      "columns": 17,
+      "exact_dimension": 17,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.009538954007439315
+    },
+    {
+      "node": 498,
+      "rows": 32,
+      "columns": 17,
+      "exact_dimension": 17,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.08228548101033084
+    },
+    {
+      "node": 499,
+      "rows": 35,
+      "columns": 17,
+      "exact_dimension": 17,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.0098786369926529
+    },
+    {
+      "node": 500,
+      "rows": 45,
+      "columns": 24,
+      "exact_dimension": 24,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.014680195003165863
+    },
+    {
+      "node": 501,
+      "rows": 58,
+      "columns": 37,
+      "exact_dimension": 37,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.024760941989370622
+    },
+    {
+      "node": 502,
+      "rows": 45,
+      "columns": 30,
+      "exact_dimension": 30,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.02709514499292709
+    },
+    {
+      "node": 503,
+      "rows": 57,
+      "columns": 50,
+      "exact_dimension": 50,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.33479367700056173
+    },
+    {
+      "node": 504,
+      "rows": 57,
+      "columns": 50,
+      "exact_dimension": 50,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.30669507100537885
+    },
+    {
+      "node": 505,
+      "rows": 324,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.0668246029963484
+    },
+    {
+      "node": 506,
+      "rows": 324,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.06516353301412892
+    },
+    {
+      "node": 507,
+      "rows": 324,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.06588791700778529
+    },
+    {
+      "node": 508,
+      "rows": 324,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.0652490029897308
+    },
+    {
+      "node": 509,
+      "rows": 324,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.06420968800375704
+    },
+    {
+      "node": 510,
+      "rows": 296,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.11011508101364598
+    },
+    {
+      "node": 511,
+      "rows": 285,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.11133947801135946
+    },
+    {
+      "node": 512,
+      "rows": 285,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.10923409600218292
+    },
+    {
+      "node": 513,
+      "rows": 295,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.11100500600878149
+    },
+    {
+      "node": 514,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5784062820021063
+    },
+    {
+      "node": 515,
+      "rows": 285,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.11838477800483815
+    },
+    {
+      "node": 516,
+      "rows": 296,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.1116408189991489
+    },
+    {
+      "node": 517,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5709545189893106
+    },
+    {
+      "node": 518,
+      "rows": 314,
+      "columns": 39,
+      "exact_dimension": 39,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.07068814500235021
+    },
+    {
+      "node": 519,
+      "rows": 296,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.1142259680054849
+    },
+    {
+      "node": 520,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5940222859935602
+    },
+    {
+      "node": 521,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.586354016995756
+    },
+    {
+      "node": 522,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5977518019935815
+    },
+    {
+      "node": 523,
+      "rows": 285,
+      "columns": 67,
+      "exact_dimension": 67,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.11953215399989858
+    },
+    {
+      "node": 524,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5917787020007381
+    },
+    {
+      "node": 525,
+      "rows": 129,
+      "columns": 118,
+      "exact_dimension": 118,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5974060610024026
+    },
+    {
+      "node": 526,
+      "rows": 311,
+      "columns": 75,
+      "exact_dimension": 75,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.13096109899925068
+    },
+    {
+      "node": 527,
+      "rows": 313,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5169443500053603
+    },
+    {
+      "node": 528,
+      "rows": 314,
+      "columns": 75,
+      "exact_dimension": 75,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.12795221198757645
+    },
+    {
+      "node": 529,
+      "rows": 312,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5233852520032087
+    },
+    {
+      "node": 530,
+      "rows": 301,
+      "columns": 75,
+      "exact_dimension": 75,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.12085805200331379
+    },
+    {
+      "node": 531,
+      "rows": 311,
+      "columns": 75,
+      "exact_dimension": 75,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.12280815400299616
+    },
+    {
+      "node": 532,
+      "rows": 313,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5194936339976266
+    },
+    {
+      "node": 533,
+      "rows": 314,
+      "columns": 75,
+      "exact_dimension": 75,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.13015102199278772
+    },
+    {
+      "node": 534,
+      "rows": 298,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5108648949972121
+    },
+    {
+      "node": 535,
+      "rows": 300,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5244194620026974
+    },
+    {
+      "node": 536,
+      "rows": 300,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5201575880055316
+    },
+    {
+      "node": 537,
+      "rows": 296,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5098269689915469
+    },
+    {
+      "node": 538,
+      "rows": 312,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5210063419945072
+    },
+    {
+      "node": 539,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8062738110020291
+    },
+    {
+      "node": 540,
+      "rows": 307,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5135115900047822
+    },
+    {
+      "node": 541,
+      "rows": 199,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.0164039039955242
+    },
+    {
+      "node": 542,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8025759949960047
+    },
+    {
+      "node": 543,
+      "rows": 296,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5115710490063066
+    },
+    {
+      "node": 544,
+      "rows": 182,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.1585857339960057
+    },
+    {
+      "node": 545,
+      "rows": 182,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.162703246998717
+    },
+    {
+      "node": 546,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8033473569958005
+    },
+    {
+      "node": 547,
+      "rows": 200,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.0280393910070416
+    },
+    {
+      "node": 548,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8409089550114004
+    },
+    {
+      "node": 549,
+      "rows": 200,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.035065231990302
+    },
+    {
+      "node": 550,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.826516328001162
+    },
+    {
+      "node": 551,
+      "rows": 307,
+      "columns": 121,
+      "exact_dimension": 121,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.5365804150060285
+    },
+    {
+      "node": 552,
+      "rows": 182,
+      "columns": 176,
+      "exact_dimension": 176,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.1795241009967867
+    },
+    {
+      "node": 553,
+      "rows": 215,
+      "columns": 157,
+      "exact_dimension": 157,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 0.8221991030004574
+    },
+    {
+      "node": 554,
+      "rows": 325,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.2419419289944926
+    },
+    {
+      "node": 555,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.333798576000845
+    },
+    {
+      "node": 556,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.3236589990119683
+    },
+    {
+      "node": 557,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.3404267540026922
+    },
+    {
+      "node": 558,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.336811013010447
+    },
+    {
+      "node": 559,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.345130258006975
+    },
+    {
+      "node": 560,
+      "rows": 326,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.2726261539937695
+    },
+    {
+      "node": 561,
+      "rows": 324,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.322498085006373
+    },
+    {
+      "node": 562,
+      "rows": 350,
+      "columns": 146,
+      "exact_dimension": 146,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.4066485320072388
+    },
+    {
+      "node": 563,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6636027570057195
+    },
+    {
+      "node": 564,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.710744528012583
+    },
+    {
+      "node": 565,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6364533769956324
+    },
+    {
+      "node": 566,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6268519519944675
+    },
+    {
+      "node": 567,
+      "rows": 290,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.7094322399934754
+    },
+    {
+      "node": 568,
+      "rows": 290,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6392106109997258
+    },
+    {
+      "node": 569,
+      "rows": 286,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6537932850042125
+    },
+    {
+      "node": 570,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.035765787004493
+    },
+    {
+      "node": 571,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.850274319993332
+    },
+    {
+      "node": 572,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.9176941879995866
+    },
+    {
+      "node": 573,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6745400119980332
+    },
+    {
+      "node": 574,
+      "rows": 267,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.57882158299617
+    },
+    {
+      "node": 575,
+      "rows": 283,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6110159710078733
+    },
+    {
+      "node": 576,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6702518019883428
+    },
+    {
+      "node": 577,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.963901386989164
+    },
+    {
+      "node": 578,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6473352439934388
+    },
+    {
+      "node": 579,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.1230893379979534
+    },
+    {
+      "node": 580,
+      "rows": 293,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.64662889399915
+    },
+    {
+      "node": 581,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.1046467459964333
+    },
+    {
+      "node": 582,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.031856258996413
+    },
+    {
+      "node": 583,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.0685153309896123
+    },
+    {
+      "node": 584,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 2.951431548994151
+    },
+    {
+      "node": 585,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.001348184989183
+    },
+    {
+      "node": 586,
+      "rows": 294,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6861782649939414
+    },
+    {
+      "node": 587,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.115060911004548
+    },
+    {
+      "node": 588,
+      "rows": 289,
+      "columns": 175,
+      "exact_dimension": 175,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 1.6365250919916434
+    },
+    {
+      "node": 589,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.204360973992152
+    },
+    {
+      "node": 590,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.0198156599944923
+    },
+    {
+      "node": 591,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.0340791560010985
+    },
+    {
+      "node": 592,
+      "rows": 247,
+      "columns": 227,
+      "exact_dimension": 227,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 3.0849176939955214
+    },
+    {
+      "node": 593,
+      "rows": 306,
+      "columns": 275,
+      "exact_dimension": 275,
+      "outcome": "EXACT LOCAL IDENTITY PASS",
+      "seconds": 8.124480623999261
+    }
+  ]
+}

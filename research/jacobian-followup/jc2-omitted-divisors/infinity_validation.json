@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS for scoped infinity completion, algebra, metadata, links and renderer readback",
+  "claim": "PF2OMIT5",
+  "check_count": 46,
+  "previous_goal_turn": "progress: PF2OMIT4 trace/index ledger and singleton jet constraints registered",
+  "current_goal_turn": "progress: complete infinity cluster census closes all remaining degree6 single-prime r7 escapes without finality",
+  "status_validation": "Copied schema/dependencies/new hash pass; unrelated consumers, narrowing reciprocity and hash freshness are omitted, without modifying authority. New OP-PLANE reciprocal dependency checked explicitly.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-PLANE-GLOBAL-GATE",
+    "METHOD-F2-VALUATION-AND-TRANSVERSE-POLES",
+    "METHOD-PLANE-BORISOV-ATTACHMENT-20261113",
+    "METHOD-JC2-ALL-PRIME-EULER",
+    "METHOD-JC2-SOURCE-FINITE-INVERSE",
+    "METHOD-JC2-NORMALIZED-DISCRIMINANT",
+    "METHOD-JC2-INFINITY-ROOT-CENSUS"
+  ],
+  "affected_work": [
+    "WORK-HC4-SCHUR",
+    "WORK-PLANE-GLOBAL-GATES",
+    "WORK-HC4-RESIDUAL-AUDIT",
+    "WORK-PLANE-R7-20261113",
+    "WORK-JC2-CUSP-CONTACT-20261114",
+    "WORK-PLANE-EVEN-OMISSION-20261114"
+  ],
+  "local_links_checked": 29,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json"
+  ],
+  "requirements_audit": {
+    "which_divisors_ramify": "Complete generic infinity rows e1,f1 and e5,f1; the declared entire unique affine e2,f1 row plus gap21 is now excluded. With additional ramification and an immersed r7 prime, exactly one more ramified prime remains, with(e,E,t)=(2,0,1),(2,1,0),(3,0,0). Entire ramification for a general terminal passport is not certified.",
+    "which_divisors_are_omitted": "All unramified omitted primes remain allowed during the exclusion. Prior reconstruction/inverse criteria remain proved; no omitted-image equations are fabricated for the now empty conditional stratum.",
+    "target_images_and_residue_degrees": "Full infinity target image and f1 rows are recorded; finite and moving pencil root supports kept separate. The residual ramified image differs from C but its f and equation are null. An off-branch singleton forces exactly three distinct nonproper target components and one unramified e1,f1 prime with a five-branch image. Actual image equations remain unavailable.",
+    "exceptional_fibre_lengths": "Five-plus-one root cluster lengths are justified by normalized flat-rank transport, independent of inverse-order index. The reciprocal special fibre is exactly a smooth line with constant projection Jacobian. General singleton-zero individual ambient Artin algebras remain unavailable."
+  },
+  "complete_r7_single_prime_gap21_exclusion": true,
+  "whole_normal_r7_terminal_hypothesis_certified": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "uses_source_finality": false,
+  "uses_any_Theorem3_8_conclusion": false,
+  "formal_verification": false,
+  "external_review": false,
+  "proof_boundary": "New written graph, local-line and henselian-cluster arguments inherit the explicitly named surface/pencil theorems; exact controls do not formalize or independently reprove them.",
+  "source_and_evidence_sha256": {
+    "R7_INFINITY_COMPLETION.md": "a17fcb01d384a0a7756fea644eb4652e2eeaeb20123ca0ef49735a9a2c71cc45",
+    "verify_infinity_completion.py": "e668a281ed2e8b4cd7d9d119fdf2af99455897ae5435162728c05c632070b1e4",
+    "infinity_ledger.json": "34faa92ad7bc5ff3a6c60ca37717fcbc538b3e4f36feb69c07b59edef3325496",
+    "infinity_receipt.json": "3cd913c2ed344d2815125d682136c7b7aa284f503e39efe81f678a8c441d3030",
+    "README.md": "6421fe79730f9baec881529368f3d200a52f8aea3d680f09fb0ede2b3bd97ba9"
+  },
+  "current_entry_sha256": "4d4ff293be98f8cd216cfb5847f187441c3f10bcbf2e8fa33b20ec07dc52e076",
+  "full_navigation_check": {
+    "command": "make check-navigation",
+    "exit_code": 2,
+    "status": "FAIL: historical missing document consumer",
+    "first_failure": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "absent_artifacts_reconstructed": false
+  },
+  "full_research_check": {
+    "command": "python3 research/scripts/research.py check",
+    "exit_code": 1,
+    "status": "FAIL: historical missing lesson source",
+    "first_failure": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+    "absent_artifacts_reconstructed": false
+  }
+}

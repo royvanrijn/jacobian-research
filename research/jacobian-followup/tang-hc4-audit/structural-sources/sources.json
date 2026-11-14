@@ -1,0 +1,30 @@
+[
+  {
+    "file": "de-poi-0407339v1.pdf",
+    "url": "https://arxiv.org/pdf/math/0407339v1",
+    "bytes": 224336,
+    "sha256": "6b29c14c4d6ec3f4aab25e1fb091d0db231639ca382c068b6a15211d1389b94d",
+    "outcome": "downloaded"
+  },
+  {
+    "file": "de-bondt-1609.03904v2.html",
+    "url": "https://arxiv.org/html/1609.03904v2",
+    "bytes": 1932984,
+    "sha256": "4ea252d18fc9b4bccf640f4bf963c09661de8dc8c2c8b637d27b4026d9ba45bf",
+    "outcome": "downloaded"
+  },
+  {
+    "file": "de-poi-0407339v1.html",
+    "url": "https://arxiv.org/html/math/0407339v1",
+    "bytes": 176918,
+    "sha256": "4eac19e6249ebffad8f9568ae4a0c60945148eb4c27841187c47a11e4b283080",
+    "outcome": "downloaded"
+  },
+  {
+    "file": "moh-degree100.html",
+    "url": "https://www.math.purdue.edu/~ttm/jacobian",
+    "bytes": 6360,
+    "sha256": "29591bbc082ec140b2dd85b9a34c891af021f336a9ac4cb7d84fc81690c01ed3",
+    "outcome": "downloaded"
+  }
+]

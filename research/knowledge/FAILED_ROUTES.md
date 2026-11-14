@@ -38,7 +38,7 @@ Replaced by: `EC-K3-NS0024-QQ-MARKING-OBSTRUCTION`, `OP-K3-DIFFERENT-NS-ARITHMET
 
 - **Resuming NS0024 as a rational rank-19 marked source over QQ** The rational marking obstruction proves that no K3 over QQ with geometric NS equal to NS0024 has all nineteen divisor classes rational; the geometric and modular artifacts remain controls only. Witnesses: [EC-K3-NS0024-QQ-MARKING-OBSTRUCTION](../elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) (proved).
 
-## OP-K3-DIFFERENT-NS-ARITHMETIC-MW17: Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20
+## OP-K3-DIFFERENT-NS-ARITHMETIC-MW17: Classify arithmetic realization of different-NS geometric MW17 lattices
 
 Recorded programme state: **open**. [Canonical scope](../elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 

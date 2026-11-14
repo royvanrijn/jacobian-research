@@ -1,0 +1,11 @@
+   ? `poly` ^ `number` failed
+   ? expected `poly` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-linear-cube/high-root-cubic-exception.sing line 3: ` + 30104*a^2/27 - 488*a*b + 16772*a/27 - 176*b + 3752/27) + 3535/81,3*s^3 - 2;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-linear-cube/high-root-cubic-exception.sing line 4: `matrix L=lift(I,ideal(1));`
+   ? expected matrix-expression. type 'help matrix;'
+BEGIN_MULTIPLIERS
+   ? `L` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-linear-cube/high-root-cubic-exception.sing line 6: `forif (!(j<=nrows(L))) break;`
+END_MULTIPLIERS

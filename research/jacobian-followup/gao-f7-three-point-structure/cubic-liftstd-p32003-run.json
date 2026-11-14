@@ -1,0 +1,13 @@
+{
+  "name": "cubic-liftstd-p32003",
+  "outcome": "timeout",
+  "returncode": null,
+  "seconds": 30.024446893003187,
+  "cap_seconds": 30,
+  "memory_cap_MB": 1536,
+  "output_cap_MB": 5,
+  "source_sha256": "98f1e26f419caeba5418179b95393ee83952f08377b4faa1da32535e719d6c29",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "log_bytes": 0,
+  "boundary": "A modular lift is support information only; no characteristic-zero inference without literal rational identity replay."
+}

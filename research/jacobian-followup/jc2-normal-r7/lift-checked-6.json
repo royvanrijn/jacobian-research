@@ -1,0 +1,8 @@
+{
+  "column": 6,
+  "literal_identity": true,
+  "matrix_sha256": "334b52837abb2c679cfe2ce1dba6290d00d34c37e068f1165c35dd159cc6a731",
+  "generators_sha256": "c9b5d8e61a89e92bc224c9c63035da058bc7d33c48c4515113f42303be677e66",
+  "targets_sha256": "79483eb8dcfedad4052e54c13bd774c4da54a134bf59b2ff6fa213a8f277a8b2",
+  "method": "exact FLINT rational multivariate multiplication and addition, no Groebner membership decision"
+}

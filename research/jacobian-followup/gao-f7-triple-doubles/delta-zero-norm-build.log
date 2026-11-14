@@ -1,0 +1,8 @@
+{"stage": "quadratic", "coefficient": 1, "terms": 231, "degrees": [8, 5, 4, 8, 2], "seconds": 0.01859525198233314}
+{"stage": "norm", "coefficient": 1, "terms": 11969, "degrees": [30, 15, 12, 24, 0], "seconds": 0.0832679029845167}
+{"stage": "quadratic", "coefficient": 2, "terms": 366, "degrees": [10, 7, 5, 10, 2], "seconds": 0.08714596397476271}
+{"stage": "norm", "coefficient": 2, "terms": 13080, "degrees": [30, 20, 15, 30, 0], "seconds": 0.1994493340025656}
+{"stage": "quadratic", "coefficient": 4, "terms": 181, "degrees": [8, 6, 4, 8, 2], "seconds": 0.20789189997594804}
+{"stage": "norm", "coefficient": 4, "terms": 5574, "degrees": [24, 17, 12, 24, 0], "seconds": 0.23464750999119133}
+{"stage": "quadratic", "coefficient": 5, "terms": 116, "degrees": [7, 5, 3, 7, 2], "seconds": 0.24384510499658063}
+{"stage": "norm", "coefficient": 5, "terms": 3302, "degrees": [21, 15, 9, 21, 0], "seconds": 0.26310577397816814}

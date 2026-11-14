@@ -8,6 +8,8 @@
 
 ## Current certified position
 
+[November paper adoption and1152 transfer](RECENT_PAPERS_X1152_TRANSFER_2026-11-13.md): published constructions replayed, four additional certified rank18 cover loaders, scoped branch obstructions and an independently replayed public rank32 control. The [geometric fibrations are distinct](X1152_JMAP_FIBRATION_DISTINCTION_2026-11-14.md); their underlying surfaces remain unresolved. [Fifteen paired Jacobians and a first complete descent](X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md) prove an infinite paired rank19 base, with no explicit paired-base point yet extracted.
+
 Published R17 and alternate Q80 are explicit rational rootless MW17 fibrations
 on the pinned determinant948 surface. The preferred alternate-chart source is
 the [direct degree-two11952 hop](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
@@ -25,17 +27,15 @@ the stronger carrier/independent-pullback targets remain separate questions.
   use the [elliptic programme](../elliptic-curves/README.md).
 - **Recovered constructions:** Curve302's completed parent and
   [Curve398's equivalent MW16 survivor presentations](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
-- **Arithmetic-first foundry:** follow the
-  [different-NS objective and exact marked-curve gates](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
-  [Determinant1020](DET1020_ARITHMETIC_MW17_EXISTENCE_2026-09-15.md) now has
-  arithmetic MW17 existence; its explicit equation and sections are next.
-  [388](DET388_GLOBAL_ROOT_OBSTRUCTION_2026-09-14.md),
-  [622](DET622_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) and
-  [852](DET852_GLOBAL_ROOT_OBSTRUCTION_2026-09-15.md) remain globally rootful.
-  The objective retains600 other unadmitted candidates.
+- **Different-NS classification:** use the
+  [arithmetic obstruction census and gate protocol](DIFFERENT_NS_CLASSIFICATION_2026-09-15.md)
+  to inspect every retained NS and frame, including exact failures and unknowns.
+  The [objective](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md)
+  preserves the determinant1020 success and links its
+  [completed degree20 equation, full17 basis and source inverse](DET1020_COMPLETE_MW17_EQUATION_2026-09-15.md).
 
 Generic rank and demonstrated specialization jumps are separate selection axes.
-Rank at least32 remains open. A new campaign needs an explicit mathematical gate,
+A new rank-at-least32 discovery from this programme remains open; the public rank32 curve is independently replayed. A new campaign needs an explicit mathematical gate,
 limits, checkpoints and a certificate plan.
 
 ## Canonical current notes
@@ -116,7 +116,7 @@ is a dated snapshot.
 <!-- status-consumer: EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS e68a8f4b00720de3 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 0c8e0400965a58de -->
 <!-- status-consumer: OP-EC-NEXT f36c4d02969820a7 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
@@ -132,3 +132,5 @@ is a dated snapshot.
 <!-- status-consumer: EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER 431d915185bf3de9 -->
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
 <!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->
+
+<!-- status-consumer: EC-K3-DIFFERENT-NS-CLASSIFICATION-BASELINE-20260915 7de9b16860a4bb0f -->

@@ -1,0 +1,8 @@
+{
+  "outcome": "FAIL",
+  "exit_code": 1,
+  "phase": "JSON serialization",
+  "error": "TypeError: Object of type fmpz is not JSON serializable",
+  "correction": "Convert retained coefficient degrees to Python int before JSON encoding",
+  "mathematical_certificate_from_this_attempt": false
+}

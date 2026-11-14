@@ -1,0 +1,1049 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT6",
+  "hypotheses": "degree6 plane Keller map with an immersed e2,f1 birational degree(6,10) gap21 prime; additional ramification allowed",
+  "residue_formula": "E_D=e_D*(f_D-1)+sum eta_q; eta_q=ell_q-e_D*q_D(q)>=0",
+  "all_omitted_residue_degrees_known": true,
+  "rows": [
+    {
+      "row": "A",
+      "ramified_primes": [
+        {
+          "name": "R",
+          "e": 2,
+          "f": 1,
+          "image": "C",
+          "image_equation": null,
+          "excess": 0,
+          "immersive": true
+        },
+        {
+          "name": "S",
+          "e": 2,
+          "f": 1,
+          "image": "B",
+          "image_equation": null,
+          "excess": 0,
+          "immersive_everywhere": true,
+          "nonimmersion_parameter_count": 0,
+          "generic_ambient_length": 2,
+          "exceptional_points": []
+        }
+      ],
+      "omitted_unramified_primes": [
+        {
+          "name": "D",
+          "e": 1,
+          "f": 1,
+          "image": "H",
+          "image_equation": null,
+          "immersive": true,
+          "all_ambient_lengths": 1,
+          "may_share_image_with": [
+            "C",
+            "B"
+          ]
+        }
+      ],
+      "ramified_images_distinct": true,
+      "normalized_discriminant_weights_C_B": [
+        1,
+        1
+      ],
+      "raw_discriminant_odd_part": [
+        "C",
+        "B"
+      ],
+      "singleton_branch_patterns": [
+        {
+          "c": 0,
+          "b": 0,
+          "h": 5,
+          "at_exceptional_value": false
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 3,
+          "at_exceptional_value": false
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": 1,
+          "at_exceptional_value": false
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 3,
+          "at_exceptional_value": false
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": 1,
+          "at_exceptional_value": false
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": 1,
+          "at_exceptional_value": false
+        }
+      ],
+      "all_degree_bounded_numeric_target_rows": [
+        {
+          "c": 0,
+          "b": 0,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [],
+          "source_length": 6
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1
+          ],
+          "source_length": 5
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1,
+            1
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 3,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1,
+            1,
+            1
+          ],
+          "source_length": 3
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 4,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 5,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 0,
+          "b": 0,
+          "h": 6,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1
+          ],
+          "source_length": 3
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 3,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": 4,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 0,
+          "b": 3,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1
+          ],
+          "source_length": 3
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 3,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": 4,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 1,
+          "b": 2,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": 1,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": 2,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 2,
+          "b": 1,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 3,
+          "b": 0,
+          "h": 0,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        }
+      ],
+      "numeric_rows_are_realizations": false,
+      "affine_N_smooth_everywhere": true
+    },
+    {
+      "row": "B",
+      "ramified_primes": [
+        {
+          "name": "R",
+          "e": 2,
+          "f": 1,
+          "image": "C",
+          "image_equation": null,
+          "excess": 0,
+          "immersive": true
+        },
+        {
+          "name": "S",
+          "e": 2,
+          "f": 1,
+          "image": "B",
+          "image_equation": null,
+          "excess": 1,
+          "immersive_everywhere": false,
+          "nonimmersion_parameter_count": 1,
+          "generic_ambient_length": 2,
+          "exceptional_points": [
+            {
+              "point": null,
+              "target": null,
+              "ambient_length": 3,
+              "Artin_algebra_type": null,
+              "regular_source_forces": "C[s]/(s^3)"
+            }
+          ]
+        }
+      ],
+      "omitted_unramified_primes": [],
+      "ramified_images_distinct": true,
+      "normalized_discriminant_weights_C_B": [
+        1,
+        1
+      ],
+      "raw_discriminant_odd_part": [
+        "C",
+        "B"
+      ],
+      "singleton_branch_patterns": [
+        {
+          "c": 0,
+          "b": 2,
+          "h": null,
+          "at_exceptional_value": true
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": true
+        }
+      ],
+      "all_degree_bounded_numeric_target_rows": [
+        {
+          "c": 0,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [],
+          "source_length": 6
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": true,
+          "omitted_local_lengths": [
+            3
+          ],
+          "source_length": 3
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": null,
+          "at_exceptional_value": true,
+          "omitted_local_lengths": [
+            3,
+            2
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 0,
+          "b": 3,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": true,
+          "omitted_local_lengths": [
+            2,
+            3
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 1,
+          "b": 2,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 2,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 3,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        }
+      ],
+      "numeric_rows_are_realizations": false,
+      "affine_N_smooth_everywhere": false
+    },
+    {
+      "row": "C",
+      "ramified_primes": [
+        {
+          "name": "R",
+          "e": 2,
+          "f": 1,
+          "image": "C",
+          "image_equation": null,
+          "excess": 0,
+          "immersive": true
+        },
+        {
+          "name": "S",
+          "e": 3,
+          "f": 1,
+          "image": "B",
+          "image_equation": null,
+          "excess": 0,
+          "immersive_everywhere": true,
+          "nonimmersion_parameter_count": 0,
+          "generic_ambient_length": 3,
+          "exceptional_points": []
+        }
+      ],
+      "omitted_unramified_primes": [],
+      "ramified_images_distinct": true,
+      "normalized_discriminant_weights_C_B": [
+        1,
+        2
+      ],
+      "raw_discriminant_odd_part": [
+        "C"
+      ],
+      "singleton_branch_patterns": [
+        {
+          "c": 1,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false
+        }
+      ],
+      "all_degree_bounded_numeric_target_rows": [
+        {
+          "c": 0,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [],
+          "source_length": 6
+        },
+        {
+          "c": 0,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            3
+          ],
+          "source_length": 3
+        },
+        {
+          "c": 0,
+          "b": 2,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            3,
+            3
+          ],
+          "source_length": 0
+        },
+        {
+          "c": 1,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2
+          ],
+          "source_length": 4
+        },
+        {
+          "c": 1,
+          "b": 1,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            3
+          ],
+          "source_length": 1
+        },
+        {
+          "c": 2,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2
+          ],
+          "source_length": 2
+        },
+        {
+          "c": 3,
+          "b": 0,
+          "h": null,
+          "at_exceptional_value": false,
+          "omitted_local_lengths": [
+            2,
+            2,
+            2
+          ],
+          "source_length": 0
+        }
+      ],
+      "numeric_rows_are_realizations": false,
+      "affine_N_smooth_everywhere": true
+    }
+  ],
+  "residue_controls": [
+    {
+      "map": [
+        "s^1",
+        "t^1"
+      ],
+      "boundary": "s=0",
+      "e": 1,
+      "f": 1,
+      "residue_local_degree": 1,
+      "ambient_origin_length": 1,
+      "ambient_excess": 0,
+      "residue_cost": 0,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^1",
+        "t^2"
+      ],
+      "boundary": "s=0",
+      "e": 1,
+      "f": 2,
+      "residue_local_degree": 2,
+      "ambient_origin_length": 2,
+      "ambient_excess": 1,
+      "residue_cost": 1,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^1",
+        "t^3"
+      ],
+      "boundary": "s=0",
+      "e": 1,
+      "f": 3,
+      "residue_local_degree": 3,
+      "ambient_origin_length": 3,
+      "ambient_excess": 2,
+      "residue_cost": 2,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^1",
+        "t^4"
+      ],
+      "boundary": "s=0",
+      "e": 1,
+      "f": 4,
+      "residue_local_degree": 4,
+      "ambient_origin_length": 4,
+      "ambient_excess": 3,
+      "residue_cost": 3,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^2",
+        "t^1"
+      ],
+      "boundary": "s=0",
+      "e": 2,
+      "f": 1,
+      "residue_local_degree": 1,
+      "ambient_origin_length": 2,
+      "ambient_excess": 0,
+      "residue_cost": 0,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^2",
+        "t^2"
+      ],
+      "boundary": "s=0",
+      "e": 2,
+      "f": 2,
+      "residue_local_degree": 2,
+      "ambient_origin_length": 4,
+      "ambient_excess": 2,
+      "residue_cost": 2,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^2",
+        "t^3"
+      ],
+      "boundary": "s=0",
+      "e": 2,
+      "f": 3,
+      "residue_local_degree": 3,
+      "ambient_origin_length": 6,
+      "ambient_excess": 4,
+      "residue_cost": 4,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^2",
+        "t^4"
+      ],
+      "boundary": "s=0",
+      "e": 2,
+      "f": 4,
+      "residue_local_degree": 4,
+      "ambient_origin_length": 8,
+      "ambient_excess": 6,
+      "residue_cost": 6,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^3",
+        "t^1"
+      ],
+      "boundary": "s=0",
+      "e": 3,
+      "f": 1,
+      "residue_local_degree": 1,
+      "ambient_origin_length": 3,
+      "ambient_excess": 0,
+      "residue_cost": 0,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^3",
+        "t^2"
+      ],
+      "boundary": "s=0",
+      "e": 3,
+      "f": 2,
+      "residue_local_degree": 2,
+      "ambient_origin_length": 6,
+      "ambient_excess": 3,
+      "residue_cost": 3,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^3",
+        "t^3"
+      ],
+      "boundary": "s=0",
+      "e": 3,
+      "f": 3,
+      "residue_local_degree": 3,
+      "ambient_origin_length": 9,
+      "ambient_excess": 6,
+      "residue_cost": 6,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    },
+    {
+      "map": [
+        "s^3",
+        "t^4"
+      ],
+      "boundary": "s=0",
+      "e": 3,
+      "f": 4,
+      "residue_local_degree": 4,
+      "ambient_origin_length": 12,
+      "ambient_excess": 9,
+      "residue_cost": 9,
+      "residual_eta": 0,
+      "global_Keller_boundary": false
+    }
+  ],
+  "cubic_cusp_control_global_Keller": false,
+  "abstract_double_cusp_control_global_Keller_boundary": false,
+  "off_branch_singleton": {
+    "row": "A",
+    "ramified_rows": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "unramified_rows": [
+      [
+        1,
+        1
+      ]
+    ],
+    "distinct_target_components": 3,
+    "omitted_lengths": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unramified_image_branches_at_zero": 5,
+    "pole_order": null,
+    "exact_leading_coefficient_order": "5*p",
+    "raw_discriminant_min_order": "20*p",
+    "polynomial_index_min_order": "10*p",
+    "weighted_controls": [
+      {
+        "pole_order": 1,
+        "coefficient_orders": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "discriminant_order": 20,
+        "polynomial_index_order": 10,
+        "formal_split_only": true,
+        "global_Keller_realization": false
+      },
+      {
+        "pole_order": 2,
+        "coefficient_orders": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "discriminant_order": 40,
+        "polynomial_index_order": 20,
+        "formal_split_only": true,
+        "global_Keller_realization": false
+      },
+      {
+        "pole_order": 3,
+        "coefficient_orders": [
+          3,
+          6,
+          9,
+          12,
+          15
+        ],
+        "discriminant_order": 60,
+        "polynomial_index_order": 30,
+        "formal_split_only": true,
+        "global_Keller_realization": false
+      }
+    ]
+  },
+  "actual_ramified_image_B_equation": null,
+  "actual_unramified_image_H_equation": null,
+  "actual_exceptional_value": null,
+  "actual_Keller_inverse": null,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

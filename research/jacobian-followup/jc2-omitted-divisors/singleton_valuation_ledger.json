@@ -1,0 +1,709 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT10",
+  "hypotheses": "PF2OMIT7 complete residual r7 singleton packets with admissible primitive source T; marked quartic refinement imports PF2OMIT9",
+  "reciprocal_unit_times_boundary_power": true,
+  "reciprocal_block_valuations": {
+    "unramified": {
+      "ambient_length": 1,
+      "reciprocal_valuation": "1*p/1",
+      "original_generic_e": 1,
+      "original_residue_f": 1,
+      "omitted": true,
+      "ramifies": false,
+      "actual_original_affine_image_equation": null
+    },
+    "fold": {
+      "ambient_length": 2,
+      "reciprocal_valuation": "1*p/2",
+      "original_generic_e": 2,
+      "original_residue_f": 1,
+      "omitted": true,
+      "ramifies": true,
+      "actual_original_affine_image_equation": null
+    },
+    "cyclic3": {
+      "ambient_length": 3,
+      "reciprocal_valuation": "1*p/3",
+      "original_generic_e": 3,
+      "original_residue_f": 1,
+      "omitted": true,
+      "ramifies": true,
+      "actual_original_affine_image_equation": null
+    },
+    "cusp3": {
+      "ambient_length": 3,
+      "reciprocal_valuation": "2*p/3",
+      "original_generic_e": 2,
+      "original_residue_f": 1,
+      "omitted": true,
+      "ramifies": true,
+      "actual_original_affine_image_equation": null
+    }
+  },
+  "packet_rows": [
+    {
+      "packet": "A0",
+      "blocks": [
+        "unramified",
+        "unramified",
+        "unramified",
+        "unramified",
+        "unramified"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "normalized_discriminant_order": 0,
+      "raw_discriminant_order_lower_bound": 20,
+      "index_order_lower_bound": 10,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    },
+    {
+      "packet": "A1",
+      "blocks": [
+        "fold",
+        "unramified",
+        "unramified",
+        "unramified"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "1/2",
+        "1/2",
+        "1",
+        "1",
+        "1"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "normalized_discriminant_order": 1,
+      "raw_discriminant_order_lower_bound": 13,
+      "index_order_lower_bound": 6,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    },
+    {
+      "packet": "A2",
+      "blocks": [
+        "fold",
+        "fold",
+        "unramified"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "normalized_discriminant_order": 2,
+      "raw_discriminant_order_lower_bound": 10,
+      "index_order_lower_bound": 4,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    },
+    {
+      "packet": "B",
+      "blocks": [
+        "cusp3",
+        "fold"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "1/2",
+        "1/2",
+        "2/3",
+        "2/3",
+        "2/3"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "normalized_discriminant_order": 3,
+      "raw_discriminant_order_lower_bound": 11,
+      "index_order_lower_bound": 4,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    },
+    {
+      "packet": "C",
+      "blocks": [
+        "cyclic3",
+        "fold"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "1/2",
+        "1/2"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "normalized_discriminant_order": 3,
+      "raw_discriminant_order_lower_bound": 7,
+      "index_order_lower_bound": 2,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    },
+    {
+      "packet": "Wright_quartic",
+      "blocks": [
+        "cusp3"
+      ],
+      "minimum_pole_reciprocal_valuations": [
+        "2/3",
+        "2/3",
+        "2/3"
+      ],
+      "coefficient_order_lower_bounds": [
+        1,
+        2,
+        2
+      ],
+      "normalized_discriminant_order": 2,
+      "raw_discriminant_order_lower_bound": 4,
+      "index_order_lower_bound": 1,
+      "actual_original_prime_pole_orders": null,
+      "actual_affine_images": null,
+      "actual_singleton_target_value": null
+    }
+  ],
+  "local_one_parameter_controls": [
+    {
+      "label": "A0_p1",
+      "poles": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "-120*epsilon**5 + 274*epsilon**4*z - 225*epsilon**3*z**2 + 85*epsilon**2*z**3 - 15*epsilon*z**4 + z**5",
+      "normal_trace_discriminant": "1",
+      "normalization_inclusion_determinant": "288*epsilon**10",
+      "raw_discriminant_order": 20,
+      "index_order": 10,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A0_p2",
+      "poles": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "120*epsilon**15 + 600*epsilon**14 + 1200*epsilon**13 - 274*epsilon**12*z + 1200*epsilon**12 - 1096*epsilon**11*z + 600*epsilon**11 - 1644*epsilon**10*z + 120*epsilon**10 + 225*epsilon**9*z**2 - 1096*epsilon**9*z + 675*epsilon**8*z**2 - 274*epsilon**8*z + 675*epsilon**7*z**2 - 85*epsilon**6*z**3 + 225*epsilon**6*z**2 - 170*epsilon**5*z**3 - 85*epsilon**4*z**3 + 15*epsilon**3*z**4 + 15*epsilon**2*z**4 - z**5",
+      "normal_trace_discriminant": "1",
+      "normalization_inclusion_determinant": "288*epsilon**30 + 2880*epsilon**29 + 12960*epsilon**28 + 34560*epsilon**27 + 60480*epsilon**26 + 72576*epsilon**25 + 60480*epsilon**24 + 34560*epsilon**23 + 12960*epsilon**22 + 2880*epsilon**21 + 288*epsilon**20",
+      "raw_discriminant_order": 40,
+      "index_order": 20,
+      "inverse_coefficient_orders": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A0_p3",
+      "poles": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-120*epsilon**20 - 600*epsilon**19 - 1200*epsilon**18 - 1200*epsilon**17 + 274*epsilon**16*z - 600*epsilon**16 + 1096*epsilon**15*z - 120*epsilon**15 + 1644*epsilon**14*z + 1096*epsilon**13*z - 225*epsilon**12*z**2 + 274*epsilon**12*z - 675*epsilon**11*z**2 - 675*epsilon**10*z**2 - 225*epsilon**9*z**2 + 85*epsilon**8*z**3 + 170*epsilon**7*z**3 + 85*epsilon**6*z**3 - 15*epsilon**4*z**4 - 15*epsilon**3*z**4 + z**5",
+      "normal_trace_discriminant": "1",
+      "normalization_inclusion_determinant": "288*epsilon**40 + 2880*epsilon**39 + 12960*epsilon**38 + 34560*epsilon**37 + 60480*epsilon**36 + 72576*epsilon**35 + 60480*epsilon**34 + 34560*epsilon**33 + 12960*epsilon**32 + 2880*epsilon**31 + 288*epsilon**30",
+      "raw_discriminant_order": 60,
+      "index_order": 30,
+      "inverse_coefficient_orders": [
+        3,
+        6,
+        9,
+        12,
+        15
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A1_p1",
+      "poles": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "24*epsilon**4 - 24*epsilon**3*z**2 - 26*epsilon**3*z + 26*epsilon**2*z**3 + 9*epsilon**2*z**2 - 9*epsilon*z**4 - epsilon*z**3 + z**5",
+      "normal_trace_discriminant": "4*epsilon",
+      "normalization_inclusion_determinant": "1152*epsilon**9 - 488*epsilon**8 + 58*epsilon**7 - 2*epsilon**6",
+      "raw_discriminant_order": 13,
+      "index_order": 6,
+      "inverse_coefficient_orders": [
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A1_p2",
+      "poles": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-24*epsilon**12 - 48*epsilon**11 - 48*epsilon**10*z + 24*epsilon**9*z**2 - 118*epsilon**9*z + 48*epsilon**9 + 72*epsilon**8*z**2 - 118*epsilon**8*z + 24*epsilon**8 + 124*epsilon**7*z**2 - 74*epsilon**7*z - 26*epsilon**6*z**3 + 119*epsilon**6*z**2 - 26*epsilon**6*z - 52*epsilon**5*z**3 + 52*epsilon**5*z**2 - 44*epsilon**4*z**3 + 9*epsilon**4*z**2 + 9*epsilon**3*z**4 - 17*epsilon**3*z**3 + 9*epsilon**2*z**4 - epsilon**2*z**3 + 2*epsilon*z**4 - z**5",
+      "normal_trace_discriminant": "4*epsilon",
+      "normalization_inclusion_determinant": "1152*epsilon**28 + 10368*epsilon**27 + 38976*epsilon**26 + 76312*epsilon**25 + 74064*epsilon**24 + 11288*epsilon**23 - 45582*epsilon**22 - 34330*epsilon**21 + 4462*epsilon**20 + 11980*epsilon**19 + 682*epsilon**18 - 2080*epsilon**17 + 10*epsilon**16 + 188*epsilon**15 - 36*epsilon**14 + 2*epsilon**13",
+      "raw_discriminant_order": 27,
+      "index_order": 13,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A1_p3",
+      "poles": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-24*epsilon**16 - 48*epsilon**15 + 48*epsilon**14*z + 144*epsilon**13*z + 48*epsilon**13 - 24*epsilon**12*z**2 + 170*epsilon**12*z + 24*epsilon**12 - 72*epsilon**11*z**2 + 74*epsilon**11*z - 124*epsilon**10*z**2 - 26*epsilon**10*z - 128*epsilon**9*z**2 - 26*epsilon**9*z + 26*epsilon**8*z**3 - 61*epsilon**8*z**2 + 52*epsilon**7*z**3 + 44*epsilon**6*z**3 + 9*epsilon**6*z**2 + 18*epsilon**5*z**3 - 9*epsilon**4*z**4 + epsilon**4*z**3 - 9*epsilon**3*z**4 - epsilon**3*z**3 - 2*epsilon**2*z**4 + z**5",
+      "normal_trace_discriminant": "4*epsilon",
+      "normalization_inclusion_determinant": "1152*epsilon**37 + 10368*epsilon**36 + 38976*epsilon**35 + 76800*epsilon**34 + 77480*epsilon**33 + 20400*epsilon**32 - 35864*epsilon**31 - 36536*epsilon**30 - 10366*epsilon**29 + 726*epsilon**28 + 1310*epsilon**27 + 1966*epsilon**26 + 1076*epsilon**25 + 18*epsilon**24 - 4*epsilon**23 - 14*epsilon**22 - 30*epsilon**21 - 2*epsilon**19",
+      "raw_discriminant_order": 39,
+      "index_order": 19,
+      "inverse_coefficient_orders": [
+        2,
+        3,
+        6,
+        9,
+        12
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A2_p1",
+      "poles": [
+        1,
+        1,
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "-12*epsilon**3 + 15*epsilon**2*z**2 + 4*epsilon**2*z - 3*epsilon*z**4 - 5*epsilon*z**3 + z**5",
+      "normal_trace_discriminant": "16*epsilon**2",
+      "normalization_inclusion_determinant": "1458*epsilon**6 - 810*epsilon**5 + 72*epsilon**4",
+      "raw_discriminant_order": 10,
+      "index_order": 4,
+      "inverse_coefficient_orders": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A2_p2",
+      "poles": [
+        2,
+        2,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "12*epsilon**9 - 12*epsilon**8 + 36*epsilon**7*z - 12*epsilon**7 - 15*epsilon**6*z**2 - 4*epsilon**6*z + 12*epsilon**6 + 24*epsilon**5*z**2 - 28*epsilon**5*z - 18*epsilon**4*z**3 + 27*epsilon**4*z**2 - 4*epsilon**4*z + 3*epsilon**3*z**4 - 13*epsilon**3*z**3 + 12*epsilon**3*z**2 + 3*epsilon**2*z**4 - 13*epsilon**2*z**3 + 6*epsilon*z**4 - z**5",
+      "normal_trace_discriminant": "16*epsilon**2",
+      "normalization_inclusion_determinant": "1458*epsilon**20 + 4212*epsilon**19 - 486*epsilon**18 - 9558*epsilon**17 - 2016*epsilon**16 + 8280*epsilon**15 + 162*epsilon**14 - 3086*epsilon**13 + 1194*epsilon**12 - 168*epsilon**11 + 8*epsilon**10",
+      "raw_discriminant_order": 22,
+      "index_order": 10,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "A2_p3",
+      "poles": [
+        3,
+        3,
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-12*epsilon**12 + 12*epsilon**11 + 36*epsilon**10*z + 12*epsilon**10 - 12*epsilon**9 - 39*epsilon**8*z**2 - 32*epsilon**8*z - 24*epsilon**7*z**2 - 8*epsilon**7*z + 18*epsilon**6*z**3 + 3*epsilon**6*z**2 + 4*epsilon**6*z + 18*epsilon**5*z**3 + 12*epsilon**5*z**2 - 3*epsilon**4*z**4 + 13*epsilon**4*z**3 - 3*epsilon**3*z**4 - 5*epsilon**3*z**3 - 6*epsilon**2*z**4 + z**5",
+      "normal_trace_discriminant": "16*epsilon**2",
+      "normalization_inclusion_determinant": "162*epsilon**26 - 972*epsilon**25 - 4374*epsilon**24 - 972*epsilon**23 + 8496*epsilon**22 + 2898*epsilon**21 - 5742*epsilon**20 + 576*epsilon**19 + 818*epsilon**18 - 1626*epsilon**17 + 888*epsilon**16 - 224*epsilon**15 + 72*epsilon**14",
+      "raw_discriminant_order": 30,
+      "index_order": 14,
+      "inverse_coefficient_orders": [
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "B_p1",
+      "poles": [
+        1,
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "4*epsilon**3 - epsilon**2*z**2 - 4*epsilon*z**3 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "-2*epsilon**5 + 128*epsilon**4",
+      "raw_discriminant_order": 11,
+      "index_order": 4,
+      "inverse_coefficient_orders": [
+        null,
+        1,
+        2,
+        null,
+        3
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "B_p2",
+      "poles": [
+        2,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-4*epsilon**8 - 16*epsilon**6*z + 4*epsilon**6 + epsilon**5*z**2 + 8*epsilon**5*z - 11*epsilon**4*z**2 + 7*epsilon**3*z**3 - 4*epsilon**2*z**3 + 4*epsilon*z**4 - z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "-2*epsilon**15 + 78*epsilon**14 - 430*epsilon**13 + 962*epsilon**12 - 736*epsilon**11 + 128*epsilon**10",
+      "raw_discriminant_order": 23,
+      "index_order": 10,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "B_p3",
+      "poles": [
+        3,
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "4*epsilon**11 - 4*epsilon**9*z - 4*epsilon**9 - 16*epsilon**8*z + epsilon**7*z**2 + 12*epsilon**7*z + 25*epsilon**6*z**2 - 12*epsilon**5*z**2 - 19*epsilon**4*z**3 + 4*epsilon**3*z**3 + 7*epsilon**2*z**4 - z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "2*epsilon**21 - 4*epsilon**20 - 46*epsilon**19 - 24*epsilon**18 + 96*epsilon**17 - 128*epsilon**16",
+      "raw_discriminant_order": 35,
+      "index_order": 16,
+      "inverse_coefficient_orders": [
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "C_p1",
+      "poles": [
+        1,
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "4*epsilon**2 - 4*epsilon*z**3 - epsilon*z**2 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "-128*epsilon**3 + 2*epsilon**2",
+      "raw_discriminant_order": 7,
+      "index_order": 2,
+      "inverse_coefficient_orders": [
+        null,
+        1,
+        1,
+        null,
+        2
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "C_p2",
+      "poles": [
+        2,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "4*epsilon**6 - 12*epsilon**5*z + 12*epsilon**4*z**2 + 16*epsilon**4*z - 4*epsilon**4 - 4*epsilon**3*z**3 - 25*epsilon**3*z**2 + 4*epsilon**3*z + 19*epsilon**2*z**3 - epsilon**2*z**2 - 7*epsilon*z**4 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "128*epsilon**11 - 96*epsilon**10 + 24*epsilon**9 + 46*epsilon**8 + 4*epsilon**7 - 2*epsilon**6",
+      "raw_discriminant_order": 15,
+      "index_order": 6,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "C_p3",
+      "poles": [
+        3,
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-4*epsilon**8 + 16*epsilon**6*z + 4*epsilon**6 - 12*epsilon**5*z**2 - 8*epsilon**5*z + 4*epsilon**4*z**3 - epsilon**4*z**2 + 8*epsilon**3*z**3 - epsilon**3*z**2 - 4*epsilon**2*z**4 + 3*epsilon**2*z**3 - 3*epsilon*z**4 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "128*epsilon**16 - 768*epsilon**15 + 1600*epsilon**14 - 1456*epsilon**13 + 434*epsilon**12 - 44*epsilon**11 + 2*epsilon**10",
+      "raw_discriminant_order": 23,
+      "index_order": 10,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "Wright_quartic_p1",
+      "poles": [
+        1
+      ],
+      "extra_unit_1_plus_w": false,
+      "reciprocal_polynomial": "-epsilon**2 + z**3",
+      "normal_trace_discriminant": "-27*epsilon**2",
+      "normalization_inclusion_determinant": "-epsilon",
+      "raw_discriminant_order": 4,
+      "index_order": 1,
+      "inverse_coefficient_orders": [
+        null,
+        null,
+        2
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "Wright_quartic_p2",
+      "poles": [
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "epsilon**5 + epsilon**4 + 3*epsilon**3*z - z**3",
+      "normal_trace_discriminant": "-27*epsilon**2",
+      "normalization_inclusion_determinant": "-epsilon**4 + epsilon**3",
+      "raw_discriminant_order": 8,
+      "index_order": 3,
+      "inverse_coefficient_orders": [
+        null,
+        3,
+        4
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "Wright_quartic_p3",
+      "poles": [
+        3
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "epsilon**7 + epsilon**6 - 3*epsilon**4*z + 3*epsilon**2*z**2 - z**3",
+      "normal_trace_discriminant": "-27*epsilon**2",
+      "normalization_inclusion_determinant": "epsilon**6",
+      "raw_discriminant_order": 14,
+      "index_order": 6,
+      "inverse_coefficient_orders": [
+        2,
+        4,
+        6
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "B_mixed_12",
+      "poles": [
+        1,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "4*epsilon**6 - 12*epsilon**5*z + 12*epsilon**4*z**2 + 16*epsilon**4*z - 4*epsilon**4 - 4*epsilon**3*z**3 - 25*epsilon**3*z**2 + 4*epsilon**3*z + 19*epsilon**2*z**3 - epsilon**2*z**2 - 7*epsilon*z**4 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "128*epsilon**11 - 96*epsilon**10 + 24*epsilon**9 + 46*epsilon**8 + 4*epsilon**7 - 2*epsilon**6",
+      "raw_discriminant_order": 15,
+      "index_order": 6,
+      "inverse_coefficient_orders": [
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "B_mixed_21",
+      "poles": [
+        2,
+        1
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "4*epsilon**7 - 4*epsilon**6*z + epsilon**5*z**2 + 8*epsilon**5*z - 4*epsilon**5 - 11*epsilon**4*z**2 - 12*epsilon**4*z + 3*epsilon**3*z**3 - 4*epsilon**2*z**3 + 4*epsilon*z**4 + 4*epsilon*z**3 - z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "-2*epsilon**14 - 26*epsilon**13 - 38*epsilon**12 + 458*epsilon**11 - 424*epsilon**10 + 224*epsilon**9 - 576*epsilon**8 + 512*epsilon**7 - 128*epsilon**6",
+      "raw_discriminant_order": 15,
+      "index_order": 6,
+      "inverse_coefficient_orders": [
+        1,
+        1,
+        4,
+        4,
+        5
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "C_mixed_12",
+      "poles": [
+        1,
+        2
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "4*epsilon**5 + 12*epsilon**4*z - 4*epsilon**3*z**3 - 8*epsilon**3*z - 4*epsilon**3 + 4*epsilon**2*z**3 + 11*epsilon**2*z**2 + 4*epsilon**2*z - 4*epsilon*z**4 - 3*epsilon*z**3 - epsilon*z**2 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "128*epsilon**11 - 512*epsilon**10 + 576*epsilon**9 - 224*epsilon**8 + 424*epsilon**7 - 458*epsilon**6 + 38*epsilon**5 + 26*epsilon**4 + 2*epsilon**3",
+      "raw_discriminant_order": 9,
+      "index_order": 3,
+      "inverse_coefficient_orders": [
+        1,
+        1,
+        1,
+        2,
+        3
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    },
+    {
+      "label": "C_mixed_21",
+      "poles": [
+        2,
+        1
+      ],
+      "extra_unit_1_plus_w": true,
+      "reciprocal_polynomial": "-4*epsilon**5 + 16*epsilon**4*z - 25*epsilon**3*z**2 - 8*epsilon**3*z + 4*epsilon**3 + 19*epsilon**2*z**3 + 11*epsilon**2*z**2 - 7*epsilon*z**4 - 4*epsilon*z**3 + z**5",
+      "normal_trace_discriminant": "-108*epsilon**3",
+      "normalization_inclusion_determinant": "-2*epsilon**7 + 28*epsilon**6 - 50*epsilon**5 + 128*epsilon**4",
+      "raw_discriminant_order": 11,
+      "index_order": 4,
+      "inverse_coefficient_orders": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "zero_coefficient_order_encoding": "null means coefficient identically zero, hence infinite order",
+      "is_global_Keller_realization": false
+    }
+  ],
+  "minimum_raw_and_index_bounds_attained_by_controls_only": true,
+  "global_prime_pole_identification_rule": "Use one common p_D for all points of the same original omitted prime; do not assign them independent orders",
+  "actual_global_inverse": null,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,13 @@
+   ? `ring` ^ `int` failed
+   ? expected `int` ^ `int`
+   ? expected `bigint` ^ `int`
+   ? expected `number` ^ `int`
+   ? expected `poly` ^ `int`
+   ? expected `ideal` ^ `int`
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-three-point/linear_cube_cubic_square-input.sing line 6: `0*u*z + 384*v^2*z + 768*v*w + 144*v*z^3 + 256*v + 384*w*z^2 - 3*z^5 + 352*z^2;`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `I` is not defined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-three-point/linear_cube_cubic_square-input.sing line 7: `ideal J=std(I);`
+   ? expected ideal-expression. type 'help ideal;'
+   ? `J` is undefined
+   ? error occurred in or before /home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-three-point/linear_cube_cubic_square-input.sing line 8: `J;`

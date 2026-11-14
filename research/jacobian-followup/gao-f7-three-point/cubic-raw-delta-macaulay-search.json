@@ -1,0 +1,22 @@
+{
+  "prime": 32003,
+  "weights": [
+    1,
+    2,
+    3,
+    1,
+    2
+  ],
+  "rounds": [
+    {
+      "weighted_bound": 18,
+      "rows": 4330,
+      "columns": 3240,
+      "seconds_at_start": 0.13630035800451878,
+      "outcome": "no identity at this bound modulo prime"
+    }
+  ],
+  "seconds": 4.634493691002717,
+  "source_sha256": "6fd91e59de092963107a84afd61e4cbd6ce55fdc5a27590f8c9b9688d7d0fa59",
+  "boundary": "Only the exported exact rational polynomial identity is a characteristic-zero certificate; all failed finite bounds remain inconclusive."
+}

@@ -1,0 +1,16 @@
+{
+  "job": "prelim",
+  "source": "source-2611.00161/anc/verify_hc4_prelim.py",
+  "source_sha256": "6b5dd3d4c609f24bb98fc530380fb31950cabf510cf0a651d40c1aebdcb5a73e",
+  "cap_seconds": 180,
+  "elapsed_seconds": 5.329,
+  "terminal": "completed",
+  "exit_code": 0,
+  "expected_checks": 19,
+  "passed_checks": 19,
+  "failed_checks": 0,
+  "outcome": "PASS",
+  "independent_implementation": false,
+  "full_case_exhaustiveness_verified": false,
+  "log_sha256": "868368b0485f80b081486d843e4f8c33e1839dbab17eaf17941c36bb0cffcf06"
+}

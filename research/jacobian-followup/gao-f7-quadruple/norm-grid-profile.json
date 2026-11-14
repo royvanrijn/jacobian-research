@@ -1,0 +1,20 @@
+{
+  "seconds": 0.48008031101198867,
+  "root": "/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c",
+  "blas": "/home/royvanrijn/.julia/artifacts/296d14cc59b11df01fd4134f4c368d9b47fb8f42/lib",
+  "compiler_command": [
+    "/usr/bin/cc",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-I/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/include",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/verify_norm_modular.c",
+    "-L/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/lib",
+    "-Wl,-rpath,/home/royvanrijn/.julia/artifacts/953e853635c2e3ec3a7208ba2931717022f0051c/lib",
+    "-Wl,-rpath-link,/home/royvanrijn/.julia/artifacts/296d14cc59b11df01fd4134f4c368d9b47fb8f42/lib",
+    "-lflint",
+    "-o",
+    "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/verify_norm_modular"
+  ],
+  "output": "{\"stage\":\"norm_grid\",\"primes\":1,\"points_per_prime\":11670,\"comparisons\":23340,\"cpu_seconds\":0.149}\n{\"result\":\"PASS\",\"primes\":1,\"complete\":false,\"comparisons\":23340,\"flint_version\":\"3.3.1\",\"cpu_seconds\":0.149}\n"
+}

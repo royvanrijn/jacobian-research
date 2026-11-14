@@ -1,0 +1,86 @@
+{
+  "schema": "r7-quintic-incidence-discovery-v1",
+  "files": [
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/B-singC-K.sing",
+      "sha256": "543cac2253f14dd7d78f0f5130991d5350d3bf92d344dfed69cdda288bc55049",
+      "bytes": 3639
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/B-singC-L.sing",
+      "sha256": "960bdef131e502e2634ae411894fefd105b2d87680d00b593c170c4c67fb1889",
+      "bytes": 3192
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/C-singB-K.sing",
+      "sha256": "a8ddf5bf54120acb911e562c492298d9c2feca36bed694b06b09a1b852262efb",
+      "bytes": 1354
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/C-singB-L.sing",
+      "sha256": "68f3c500ed595b4c57e922217ecedfc84398a273b4b80669f7059c2a324fe045",
+      "bytes": 1314
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/nonimmersion-norm-K.json",
+      "sha256": "fd9f314f30425cc8d51593b7b1163d0f72e9418ff1339e56a087f4deba83a2ec",
+      "bytes": 21003
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/nonimmersion-norm-L.json",
+      "sha256": "aa5e383c8d1ef81ae22a3c4c1d83fd0d17a1f516b9cf0a3a1e148160ead1d5ee",
+      "bytes": 5232
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/probe.py",
+      "sha256": "570adfa10fd4d49aed3d899ad051e8fa565a01979b0cbd34847e675068de402d",
+      "bytes": 3007
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/ranks-K.json",
+      "sha256": "b5278d1b767a09837deae214ab0e9db21df12887060990102053e4ae07f2fe97",
+      "bytes": 1089
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/ranks-L.json",
+      "sha256": "1af2b54532fa2e3cf27bb90fc43f0b6282983899b226f2ac402825e849231760",
+      "bytes": 1089
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/witness-K.json",
+      "sha256": "7e4e007db92814bf97f8f217ade9194bf58a2e778e86565c7eaadf02d7805da7",
+      "bytes": 4472
+    },
+    {
+      "file": "artifacts/local/jc2-r7-quintic-incidence-discovery/witness-L.json",
+      "sha256": "9ed3ec6be8a210afc9688ff1e1602505332119373b271b1cc7f9af23b829dfd0",
+      "bytes": 4174
+    }
+  ],
+  "attempts": [
+    {
+      "family": "L",
+      "direction": "C through Sing(B)",
+      "command": "timeout 45 Singular -q C-singB-L.sing",
+      "terminal_tool_exit": 1,
+      "terminal_output": "halt 1",
+      "status": "BOUNDED_RUN_WITHOUT_COMPLETED_BASIS",
+      "interpretation": "No incidence conclusion; replaced by the monic finite-free168-dimensional rank witness."
+    },
+    {
+      "family": "K",
+      "direction": "C through Sing(B)",
+      "command": "timeout 45 Singular -q C-singB-K.sing",
+      "terminal_tool_exit": 1,
+      "terminal_output": "halt 1",
+      "status": "BOUNDED_RUN_WITHOUT_COMPLETED_BASIS",
+      "interpretation": "No incidence conclusion; replaced by the monic finite-free168-dimensional rank witness."
+    }
+  ],
+  "remaining": [
+    "Actual B is not forced into degrees(3,5) or high contact.",
+    "Finite160-parameter ordinary-cusp/incidence classification.",
+    "Actual joint complement representation and source realization."
+  ],
+  "process_status": "Both observed solver handles returned terminal exit; no ongoing process is asserted."
+}

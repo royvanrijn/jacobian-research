@@ -1,0 +1,12 @@
+{
+  "retrieved_utc": "2026-11-14T10:32:14.690646+00:00",
+  "sources": [
+    {
+      "path": "closed-polynomials-0608157v2.html",
+      "url": "https://arxiv.org/html/math/0608157v2",
+      "sha256": "8042645504f3535bae9ce6d656a68015b893dbf259888ca4708e69722d658cc9",
+      "bytes": 394667,
+      "use": "Theorem 1 and Lemma 3: noncomposition, closed polynomial and relative algebraic closedness; elementary Keller application is reproved."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "independent_engine": "stdlib Fraction sparse polynomials; no SymPy",
+  "determinant12": 1,
+  "determinant_memo_states": 438,
+  "cube_identity_rows": 18,
+  "cube_power_rank": 90,
+  "B_rank": 18,
+  "integer_matrix90": true,
+  "rational_collision90": true,
+  "projection_to_sheared_companion": true,
+  "matrix_power_ranks": [
+    18,
+    2,
+    1,
+    0
+  ],
+  "assurance": "exact identity replay plus written determinant proof; no formal verification or external review"
+}

@@ -1,12 +1,23 @@
 # Plane Jacobian programme
 
+[Current open problems and literature review](../../../jacobian-followup/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md)
+reconciles this archive with the14 November follow-ups. The normal-r7
+single-ramified-prime stratum is excluded under its stated hypotheses;
+additional-image configurations, the full F2 coefficient system and
+quartic compatible-normalization realization remain open. See the
+[omitted-divisor ledger](../../../jacobian-followup/jc2-omitted-divisors/README.md),
+[current contact gate](../../../jacobian-followup/jc2-cusp-contact/README.md)
+and [quartic frontier](../../../jacobian-followup/affine-complements/README.md).
+
+The [omitted-divisor audit](../../../jacobian-followup/jc2-omitted-divisors/STEIN_SCOPE_AUDIT.md) makes PF2D6E1 partial: its exact even-row algebra and restricted braid certificates survive, while omission-complete whole-family exclusion remains unproved.
+
 The degree-frontier and finite-normalization programmes retain exact scoped
 results. Their continuation entries `OP-PLANE` and `OP-PLANE-NORM` are
-**parked** in [MATH_STATUS.json](../MATH_STATUS.json); no proof of JC(2) is claimed.
+**parked** in [MATH_STATUS.json](../../../MATH_STATUS.json); no proof of JC(2) is claimed.
 
-[Every plane-JC claim](../index/plane-jc.md) ·
-[Scoped failed routes](../knowledge/FAILED_ROUTES.md) ·
-[Short replay guide](../REPRODUCE.md).
+[Every plane-JC claim](../../../index/plane-jc.md) ·
+[Scoped failed routes](../../../knowledge/FAILED_ROUTES.md) ·
+[Short replay guide](../../../REPRODUCE.md).
 
 | Question | Canonical source |
 |---|---|
@@ -17,14 +28,14 @@ results. Their continuation entries `OP-PLANE` and `OP-PLANE-NORM` are
 | Which global compatibility gate remains? | [Quartic Cox packet programme](JC2_GLOBAL_COX_PACKET_ATTACK.md) |
 | Which local saturation and conductor statements are exact? | [Complete-chain boundary saturation](UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md) · [conductor degree shift](LOG_CONDUCTOR_DEGREE_SHIFT.md) |
 | Where do global logarithmic budgets enter? | [Logarithmic ch2 identity](LOGARITHMIC_CH2_BUDGET.md) |
-| How are the computations reproduced? | [CAS reference](cas/README.md) · [full command catalogue](../replay/CATALOGUE.md) |
+| How are the computations reproduced? | [CAS reference](cas/README.md) · [full command catalogue](../../../replay/CATALOGUE.md) |
 
 Local packet data and bounded pole or support lists do not by themselves supply
 a global branch carrier or Keller compactification. Read the full parked
 scope and its witness-backed exclusions before another enumeration.
 
-[Closed branches](../archive/plane-jc-closed-branches/README.md) retain their
-evidence. The [previous long README](../archive/repository-cleanup-2026-09-12/research__plane-jc__README.md.txt)
+[Closed branches](../../../archive/plane-jc-closed-branches/README.md) retain their
+evidence. The [previous long README](../../../archive/repository-cleanup-2026-09-12/research__plane-jc__README.md.txt)
 is a dated navigation snapshot.
 
 <!-- status-consumer: SST1 12c5cb15e8b6de26 -->
@@ -62,7 +73,7 @@ is a dated navigation snapshot.
 <!-- status-consumer: PF2K1E8O1 4251750ed4e43c89 -->
 <!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
 <!-- status-consumer: PF2GRB1 aa3a0efd2e0ff277 -->
-<!-- status-consumer: PF2D6E1 e09ee4ea4a2ece0d -->
+<!-- status-consumer: PF2D6E1 caa17bfedd209524 -->
 <!-- status-consumer: PF2D6O1 810993dd0ad65b40 -->
 <!-- status-consumer: LCDSC1 07dcd994b4faf092 -->
 <!-- status-consumer: LCSP1 8658eebeb1d65671 -->

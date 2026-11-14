@@ -1,0 +1,34 @@
+{
+  "scope": "Gao metadata, full cubic-cube certificate and necessary-equation seven-two follow-up only",
+  "status": "PASS",
+  "registered_Gao_claims": 13,
+  "Gao_methods": 7,
+  "work_claims": 13,
+  "new_theorem_registered": "GAOF7CUBE1",
+  "source_transport_checks": 14,
+  "complete_certificate_replay": "PASS",
+  "replay_checks": 761,
+  "predecessor_nodes": 734,
+  "terminal_matrix_shape": [
+    402,
+    402
+  ],
+  "terminal_det_mod": 401892858,
+  "replay_seconds": 724.7689572499949,
+  "all_certificate_hashes_match": true,
+  "syntax_checks": "PASS",
+  "local_markdown_links_checked": 112,
+  "generated_views": 26,
+  "scoped_git_diff_check": "PASS",
+  "full_checks": [
+    {
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "KDSQ6: artifacts/generated-results/README.md missing"
+    },
+    {
+      "status": "FAIL_EXISTING_MISSING_ARTIFACT",
+      "reason": "METHOD-EC-CENTRE-POLICY: next_direction_benchmark_v1/completion.json missing"
+    }
+  ],
+  "seven_two_scope": "Necessary equations and modular triage only; rational lift timed out without identity. No further exclusion."
+}

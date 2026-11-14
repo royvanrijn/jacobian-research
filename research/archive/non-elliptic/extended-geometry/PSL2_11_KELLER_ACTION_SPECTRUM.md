@@ -1,5 +1,14 @@
 # The Keller monodromy action spectrum: the \(\operatorname{PSL}_2(11)\) benchmark
 
+**14 November 2026 follow-up.** The [affine inertia theorem and synthesis](../../../jacobian-followup/monodromy-theory/THEORY.md)
+requires every affine-divisor inertia to fix a sheet and the point stabilizer
+to normally generate the group. The [F11 audit](../../../jacobian-followup/monodromy-theory/F11.md)
+gives a known genus-zero natural degree-twelve alternative to the modular
+cover, with admissible finite (5,5) inertia and an exact arithmetic-group
+distinction. The genus-one obstruction below remains specific to the
+(2,3,11) presentation. Neither note constructs an absolute PSL2(11) Keller map.
+
+
 ## 1. Outcome and status
 
 The inverse-Galois programme should be graded by permutation actions and by

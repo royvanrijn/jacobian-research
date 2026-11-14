@@ -1,0 +1,5 @@
+ring R=0,(v0,v1,v2,w0,w1,w2),dp;
+ideal I=v2*w2,3*v2*w1,3*v1*w2,6*v1*w1,-v0*w2/2,3*v2*w0,12*v2*w1,9*v1*w0,27*v1*w1 + 3*v2*w2,6*v2*w1,6*v1*w2,-3*v0*w0/2 + 6*v1*w1,-3*v0*w1/2,6*v2*w0,18*v1*w0,6*v2*w0,21*v2*w1,12*v1*w0,-3*v0*w0 + 24*v1*w1 + 3*v2*w2,3*v2*w1,3*v1*w2,7*v2*w0,12*v1*w0,3*v2*w0,8*v2*w1,3*v1*w0,v0*w0 + v1*w1 + v2*w2 - 1;
+ideal B=std(I);
+print("UNIT|"+string(reduce(1,B)==0));
+exit;

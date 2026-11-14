@@ -1,0 +1,2621 @@
+ A1: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,5]  1:[1,1,2,2]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   A5.  GAP transitive group ID = 6T12.  Order = 60
+
+ A2: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[2,2,4,4]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  S42(deg 2) 1/(1-S32)(deg 6) 
+     Galois group:   S5.  GAP transitive group ID = 12T74.  Order = 120
+
+ A3: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[1,1,2^8]  infty:[2,2,7,7]
+     Decomposition:  S11(deg 2) 
+     Galois group:   GAP transitive group ID = 18T802.  Order = 129024
+
+ A4: ModuliField:    Q(sqrt(-1)).       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4,4]  1:[2^6]  infty:[2,5,5]
+     Decomposition:  S42(deg 2) 
+     Galois group:   GAP transitive group ID = 12T270.  Order = 7680
+
+ A5: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,2,4,8,8]
+     Decomposition:  S2(deg 2) S43(deg 4)(see #1) 1/S34(deg 8)(see #1,2) 
+     Galois group:   (((C4 x C2) : C4) : C3) : C2.  GAP transitive group ID = 24T428.  Order = 192
+     [Felikson, Figure 17 (2,3,8), Entry #4]
+
+ A6: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,3,3,9]
+     Decomposition:  S47(deg 4) 
+     Galois group:   GAP transitive group ID = 16T1877.  Order = 82944
+     [Felikson, Figure 16 (2,3,9), Entry #8]
+
+ A7: ModuliField:    Q(sqrt(-3)).       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3^4]  1:[2^8]  infty:[2,7,7]
+     Decomposition:  S18(deg 2) 
+     Galois group:   GAP transitive group ID = 16T1844.  Order = 43008
+
+ A8: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[1,3^3]  infty:[1,1,4,4]
+     Decomposition:  none
+     Galois group:   A6.  GAP transitive group ID = 10T26.  Order = 360
+
+ A9: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[2,2,8,8]
+     Decomposition:  S7(deg 2) 1-S32(deg 10) 
+     Galois group:   A6 : C2.  GAP transitive group ID = 20T146.  Order = 720
+
+A10: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,3^10]  1:[2^16]  infty:[1,3,7^4]
+     Decomposition:  S18(deg 4) 
+     Galois group:   Order = 72236924928
+
+A11: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[2,4,7,7]
+     Decomposition:  S8(deg 2) 
+     Galois group:   GAP transitive group ID = 20T1105.  Order = 1857945600
+     [Felikson, Figure 18 (2,3,7), Entry #4]
+
+A12: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[2,2,3^4]  1:[2^8]  infty:[1,1,7,7]
+     Decomposition:  S18(deg 2) 
+     Galois group:   GAP transitive group ID = 16T1803.  Order = 21504
+
+A13: ModuliField:    Q(sqrt(-2)).       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[1,1,2,8,8]
+     Decomposition:  S7(deg 2) 
+     Galois group:   GAP transitive group ID = 20T947.  Order = 737280
+
+A14: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[1,1,4,7,7]
+     Decomposition:  S8(deg 2) 
+     Galois group:   GAP transitive group ID = 20T1110.  Order = 3715891200
+     [Felikson, Figure 18 (2,3,7), Entry #6]
+
+A15: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[2^3,7,7]
+     Decomposition:  S8(deg 2) 
+     Galois group:   GAP transitive group ID = 20T1110.  Order = 3715891200
+     [Felikson, Figure 18 (2,3,7), Entry #3]
+
+A16: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1^4,4]  1:[2^4]  infty:[8]
+     Decomposition:  S35(deg 2) 1-S32(deg 4)(see #1) 
+     Galois group:   (C4 x C4) : C2.  GAP transitive group ID = 8T17.  Order = 32
+
+A17: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[3^4]  infty:[1^4,4,4]
+     Decomposition:  1/S28(deg 2) 1/(1-S33)(deg 4)(see #1) 
+     Galois group:   (C4 x C4) : C3.  GAP transitive group ID = 12T31.  Order = 48
+     [Felikson, Figure 10, Entry #11]
+
+A18: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[2^4,8,8]
+     Decomposition:  S2(deg 2) C1(deg 2) C1(deg 2) S2(deg 2) S5(deg 2) S43(deg 4)(see #1,4,5) S27(deg 4)(see #2,3,5) 1/S49(deg 4)(see #5) 1/S34(deg 8)(see #5,8) 1/S34(deg 8)(see #1,2,3,4,5,6,7,8) 1/S34(deg 8)(see #5,8) 1-S32(deg 12)(see #5,8) 
+     Galois group:   ((C4 x C4) : C3) : C2.  GAP transitive group ID = 24T194.  Order = 96
+     [Felikson, Figure 17 (2,3,8), Entry #2]
+
+A19: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[1,1,5,5]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  A1(deg 2) 
+     Galois group:   A5.  GAP transitive group ID = 12T33.  Order = 60
+     [Felikson, Figure 12, Entry #2]
+
+A20: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[4^6]  1:[2^12]  infty:[1^4,5^4]
+     Decomposition:  A2(deg 2) S42(deg 4)(see #1) 1/(1-S32)(deg 12)(see #1) 
+     Galois group:   S5.  GAP transitive group ID = 24T202.  Order = 120
+     [Felikson, Figure 13 (2,4,5), Entry #19]
+
+A21: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^16]  1:[2^24]  infty:[1,1,2,2,7^6]
+     Decomposition:  S50(deg 2) S18(deg 6)(see #1) 
+     Galois group:   Order = 11010048
+     [Felikson, Figure 18 (2,3,7), Entry #7]
+
+A22: ModuliField:    Q(sqrt(-7)).       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1,1,2,4,7^4]
+     Decomposition:  S51(deg 2) S11(deg 4)(see #1) 
+     Galois group:   Order = 33822867456
+
+A23: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[2^4,7^4]
+     Decomposition:  S51(deg 2) A3(deg 2) S51(deg 2) S11(deg 4)(see #1,2,3) 
+     Galois group:   Order = 66060288
+
+A24: ModuliField:    Q.       j-invariant = 2^6*3^3
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,2,2,9,9]
+     Decomposition:  S1(deg 2) S47(deg 6)(see #1) 
+     Galois group:   GAP transitive group ID = 24T16559.  Order = 82944
+
+ B1: ModuliField:    Q.       j-invariant = 2^4*13^3*3^(-2)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,2,3,4,8]
+     Decomposition:  S43(deg 3) 1/S34(deg 6)(see #1) 
+     Galois group:   GAP transitive group ID = 18T762.  Order = 69984
+     [Felikson, Figure 17 (2,3,8), Entry #1]
+
+ B2: ModuliField:    Q(sqrt(-7)).       j-invariant = 2^4*13^3*3^(-2)
+     Obstruction:    none
+     Branch type:    0:[3^9]  1:[1,2^13]  infty:[1,2,3,7^3]
+     Decomposition:  S11(deg 3) 
+     Galois group:   GAP transitive group ID = 27T2358.  Order = 5079158784
+
+ B3: ModuliField:    Q.       j-invariant = 2^4*13^3*3^(-2)
+     Obstruction:    none
+     Branch type:    0:[1,1,4]  1:[3,3]  infty:[1,1,4]
+     Decomposition:  1-1/S34(deg 2) 
+     Galois group:   S4.  GAP transitive group ID = 6T8.  Order = 24
+     [Felikson, Figure 10, Entry #6]
+
+ B4: ModuliField:    Q.       j-invariant = 2^4*13^3*3^(-2)
+     Obstruction:    none
+     Branch type:    0:[1^4,4,4]  1:[2^6]  infty:[6,6]
+     Decomposition:  1-S39(deg 2) 1/S43(deg 2) D25(deg 2) S34(deg 4)(see #1,2,3) 1-S32(deg 6)(see #1) 
+     Galois group:   C2 x S4.  GAP transitive group ID = 12T24.  Order = 48
+     [Felikson, Figure 12, Entry #4]
+
+ B5: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[2^6]  infty:[1,1,2,2,6]
+     Decomposition:  1/S25(deg 2) 1/S35(deg 3) 1/(1-S32)(deg 6)(see #1,2) 
+     Galois group:   (S3 x S3) : C2.  GAP transitive group ID = 12T36.  Order = 72
+     [Felikson, Figure 12, Entry #3]
+
+ B6: ModuliField:    Q(sqrt(-3)).       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,2,3^7]  1:[2^12]  infty:[1,2,7^3]
+     Decomposition:  S18(deg 3) 
+     Galois group:   GAP transitive group ID = 24T24688.  Order = 282175488
+
+ B7: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[1,2,9]
+     Decomposition:  S47(deg 3) 
+     Galois group:   GAP transitive group ID = 12T280.  Order = 15552
+     [Felikson, Figure 16 (2,3,9), Entry #2]
+
+ B8: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[1,4,5]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+     [Felikson, Figure 13 (2,4,5), Entry #11]
+
+ B9: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[1,1,8]
+     Decomposition:  none
+     Galois group:   A6 : C2.  GAP transitive group ID = 10T30.  Order = 720
+
+B10: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1,1,2,2,8^3]
+     Decomposition:  S7(deg 3) 1/S34(deg 10) 
+     Galois group:   (C3 x A6) : C2.  GAP transitive group ID = 30T368.  Order = 2160
+
+B11: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,2,2,12]
+     Decomposition:  S12(deg 2) S43(deg 3) 1/S34(deg 6)(see #1,2) 
+     Galois group:   ((C6 x C6) : C3) : C2.  GAP transitive group ID = 18T97.  Order = 216
+     [Felikson, Figure 15 (2,3,>=10), Entry #7]
+
+B12: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    Primes: [infinity, 7], Conic: 7*X^2+Y^2+Z^2 = 0
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1,1,3,3,7^4]
+     Decomposition:  S11(deg 4) 
+     Galois group:   Order = 866843099136
+
+B13: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1,2,2,4,7^3]
+     Decomposition:  S8(deg 3) 
+     Galois group:   GAP transitive group ID = 30T5655.  Order = 109709829734400
+     [Felikson, Figure 18 (2,3,7), Entry #42]
+
+B14: ModuliField:    Q.       j-invariant = 2^2*73^3*3^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,3,3,8,8]
+     Decomposition:  D9(deg 2) S43(deg 4) 1/S34(deg 8)(see #1,2) 
+     Galois group:   GAP transitive group ID = 24T14598.  Order = 41472
+     [Felikson, Figure 17 (2,3,8), Entry #3]
+
+B15: ModuliField:    Q.       j-invariant = 6481^3*3^(-8)*5^(-2)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[2,2,3,8]
+     Decomposition:  1/S34(deg 5) 
+     Galois group:   GAP transitive group ID = 15T100.  Order = 5184000
+     [Felikson, Figure 17 (2,3,8), Entry #14]
+
+B16: ModuliField:    Q.       j-invariant = 2^6*7^3*97^3*3^(-6)*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^9]  1:[2^14]  infty:[1,2,4,7^3]
+     Decomposition:  none
+     Galois group:   A28.  Order = 28!/2
+     [Felikson, Figure 18 (2,3,7), Entry #53]
+
+B17: ModuliField:    Q.       j-invariant = 2^6*7^3*97^3*3^(-6)*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,3,5,7]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+     [Felikson, Figure 18 (2,3,7), Entry #17]
+
+B18: ModuliField:    Q.       j-invariant = 7^3*127^3*2^(-2)*3^(-6)*5^(-2)
+     Obstruction:    none
+     Branch type:    0:[1,1,3]  1:[1,1,3]  infty:[5]
+     Decomposition:  none
+     Galois group:   A5.  Order = 5!/2
+
+B19: ModuliField:    Q.       j-invariant = 7^3*127^3*2^(-2)*3^(-6)*5^(-2)
+     Obstruction:    none
+     Branch type:    0:[1^4,3,3]  1:[2^5]  infty:[10]
+     Decomposition:  1-S37(deg 2) 1-S32(deg 5) 
+     Galois group:   C2 x A5.  GAP transitive group ID = 10T11.  Order = 120
+
+B20: ModuliField:    Q.       j-invariant = 7^3*2287^3*2^(-6)*3^(-2)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[2,3,7]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+     [Felikson, Figure 18 (2,3,7), Entry #16]
+
+B21: ModuliField:    Q.       j-invariant = 7^3*2287^3*2^(-6)*3^(-2)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[1,1,4]  1:[3,3]  infty:[1,1,4]
+     Decomposition:  none
+     Galois group:   S5.  GAP transitive group ID = 6T14.  Order = 120
+
+B22: ModuliField:    Q.       j-invariant = 7^3*2287^3*2^(-6)*3^(-2)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[1^4,4,4]  1:[2^6]  infty:[6,6]
+     Decomposition:  C24(deg 2) 1-S32(deg 6) 
+     Galois group:   C2 x S5.  GAP transitive group ID = 12T123.  Order = 240
+
+B23: ModuliField:    Q.       j-invariant = 7^3*2287^3*2^(-6)*3^(-2)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[2^6]  infty:[1,1,2,3,5]
+     Decomposition:  1/(1-S32)(deg 6) 
+     Galois group:   GAP transitive group ID = 12T299.  Order = 12!/462
+     [Felikson, Figure 13 (2,4,5), Entry #5]
+
+B24: ModuliField:    Q.       j-invariant = 7^3*2287^3*2^(-6)*3^(-2)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,2,2,3,10]
+     Decomposition:  1/S34(deg 6) 
+     Galois group:   GAP transitive group ID = 18T970.  Order = 279936000
+     [Felikson, Figure 15 (2,3,>=10), Entry #5]
+
+B25: ModuliField:    Q.       j-invariant = 2^6*7^3*31^3*271^3*3^(-10)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[1,4,7]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+     [Felikson, Figure 18 (2,3,7), Entry #18]
+
+B26: ModuliField:    Q.       j-invariant = 4993^3*2^(-2)*3^(-8)*7^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3,4]  1:[2^4]  infty:[1,2,5]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+     [Felikson, Figure 13 (2,4,5), Entry #1]
+
+B27: ModuliField:    Q.       j-invariant = 4993^3*2^(-2)*3^(-8)*7^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,6]  1:[2^4]  infty:[1,1,6]
+     Decomposition:  none
+     Galois group:   PSL(3,2) : C2.  GAP transitive group ID = 8T43.  Order = 336
+
+B28: ModuliField:    Q.       j-invariant = 4993^3*2^(-2)*3^(-8)*7^(-4)
+     Obstruction:    none
+     Branch type:    0:[4^4]  1:[2^8]  infty:[1^4,6,6]
+     Decomposition:  C3(deg 2) 1/(1-S32)(deg 8) 
+     Galois group:   C2 x (PSL(3,2) : C2).  GAP transitive group ID = 16T1035.  Order = 672
+
+B29: ModuliField:    Q.       j-invariant = 2^4*3^3*7^6*103^3*5^(-6)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,2,3,8]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 17 (2,3,8), Entry #13]
+
+B30: ModuliField:    Q.       j-invariant = 2^4*181^3*2521^3*3^(-6)*5^(-4)*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,2,5,8]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+     [Felikson, Figure 17 (2,3,8), Entry #16]
+
+B31: ModuliField:    Q.       j-invariant = 73^3*193^3*409^3*2^(-2)*3^(-2)*5^(-4)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,2,3,5,7]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+     [Felikson, Figure 18 (2,3,7), Entry #31]
+
+B32: ModuliField:    Q.       j-invariant = 49201^3*2^(-8)*3^(-6)*5^(-2)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[1,1,4,7,7]
+     Decomposition:  none
+     Galois group:   S20.  Order = 20!
+     [Felikson, Figure 18 (2,3,7), Entry #30]
+
+B33: ModuliField:    Q.       j-invariant = 2^4*106791301^3*3^(-14)*5^(-2)*7^(-8)*11^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,3,4,7]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+     [Felikson, Figure 18 (2,3,7), Entry #13]
+
+B34: ModuliField:    Q.       j-invariant = 829^3*30469^3*3^(-6)*5^(-6)*7^(-8)*19^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[1,2,5,7,7]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+     [Felikson, Figure 18 (2,3,7), Entry #32]
+
+ C1: ModuliField:    Q.       j-invariant = 2^3*3^3*11^3
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[2,2,8]
+     Decomposition:  S27(deg 2) 1/S34(deg 4)(see #1) 
+     Galois group:   ((C4 x C4) : C3) : C2.  GAP transitive group ID = 12T64.  Order = 96
+     [Felikson, Figure 17 (2,3,8), Entry #5]
+
+ C2: ModuliField:    Q.       j-invariant = 5^3*11^3*31^3*2^(-3)*7^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1^4,14]
+     Decomposition:  S11(deg 2) 
+     Galois group:   GAP transitive group ID = 18T855.  Order = 258048
+
+ C3: ModuliField:    Q.       j-invariant = 73^3*601^3*2^(-1)*3^(-4)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[4,4]  1:[1,1,2^3]  infty:[1,1,6]
+     Decomposition:  none
+     Galois group:   PSL(3,2) : C2.  GAP transitive group ID = 8T43.  Order = 336
+
+ C4: ModuliField:    Q.       j-invariant = 73^3*601^3*2^(-1)*3^(-4)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,3,6,7]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+     [Felikson, Figure 18 (2,3,7), Entry #24]
+
+ C5: ModuliField:    Q.       j-invariant = 2^2*193^3*3^(-1)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[2,2,3,3,8]
+     Decomposition:  S14(deg 2) 1/S34(deg 6)(see #1) 
+     Galois group:   GAP transitive group ID = 18T721.  Order = 41472
+     [Felikson, Figure 17 (2,3,8), Entry #19]
+
+ C6: ModuliField:    Q.       j-invariant = 2^7*53^3*3^(-3)
+     Obstruction:    Primes: [infinity, 2], Conic: X^2+Y^2+Z^2 = 0
+     Branch type:    0:[1,1,3^10]  1:[2^16]  infty:[2,2,7^4]
+     Decomposition:  S18(deg 4) 
+     Galois group:   Order = 11010048
+
+ C7: ModuliField:    Q.       j-invariant = 2^7*53^3*3^(-3)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[2,2,3,9]
+     Decomposition:  S47(deg 4) 
+     Galois group:   GAP transitive group ID = 16T1877.  Order = 82944
+     [Felikson, Figure 16 (2,3,9), Entry #4]
+
+ C8: ModuliField:    Q.       j-invariant = 3^3*5^3*157^3*2^(-2)*11^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,3,3,8]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+     [Felikson, Figure 17 (2,3,8), Entry #17]
+
+ C9: ModuliField:    Q.       j-invariant = 13^3*541^3*3^(-3)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,2,2,9]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 16 (2,3,9), Entry #5]
+
+C10: ModuliField:    Q.       j-invariant = 109^3*9133^3*2^(-4)*3^(-5)*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,4^3]  1:[2^7]  infty:[1,3,5,5]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 13 (2,4,5), Entry #15]
+
+C11: ModuliField:    Q.       j-invariant = 109^3*9133^3*2^(-4)*3^(-5)*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,4^3]  1:[2^7]  infty:[1,1,6,6]
+     Decomposition:  none
+     Galois group:   PSL(2,13) : C2.  GAP transitive group ID = 14T39.  Order = 2184
+
+C12: ModuliField:    Q.       j-invariant = 3^3*37^3*192637^3*11^(-6)*17^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^8]  1:[2^13]  infty:[1,1,3,7^3]
+     Decomposition:  none
+     Galois group:   S26.  Order = 26!
+     [Felikson, Figure 18 (2,3,7), Entry #51]
+
+C13: ModuliField:    Q.       j-invariant = 2^7*5^3*1301^3*43889^3*3^(-17)*11^(-10)*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,2,2,11]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+     [Felikson, Figure 15 (2,3,>=10), Entry #6]
+
+C14: ModuliField:    Q.       j-invariant = 2^11
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[1,1,2^4]  infty:[5,5]
+     Decomposition:  S45(deg 2) 
+     Galois group:   ((C2 x C2 x C2 x C2) : C5) : C2.  GAP transitive group ID = 10T15.  Order = 160
+     [Felikson, Figure 13 (2,4,5), Entry #10]
+
+C15: ModuliField:    Q.       j-invariant = 2^4*17^3
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,2,2,10]
+     Decomposition:  1/S34(deg 5) 
+     Galois group:   ((C5 x C5) : C3) : C2.  GAP transitive group ID = 15T14.  Order = 150
+     [Felikson, Figure 15 (2,3,>=10), Entry #3]
+
+C16: ModuliField:    Q.       j-invariant = 2^4*17^3
+     Obstruction:    none
+     Branch type:    0:[2,4,4]  1:[2^5]  infty:[1,2,2,5]
+     Decomposition:  1/(1-S32)(deg 5) 
+     Galois group:   (D10 x D10) : C2.  GAP transitive group ID = 10T21.  Order = 200
+     [Felikson, Figure 13 (2,4,5), Entry #4]
+
+C17: ModuliField:    Q.       j-invariant = 2^4*17^3
+     Obstruction:    none
+     Branch type:    0:[1^4,4^4]  1:[2^10]  infty:[5^4]
+     Decomposition:  F13(deg 2) C14(deg 2) F13(deg 2) S45(deg 4)(see #1,2,3) 
+     Galois group:   ((C2 x C2 x C2 x C2) : C5) : C2.  GAP transitive group ID = 20T45.  Order = 160
+     [Felikson, Figure 13 (2,4,5), Entry #18]
+
+C18: ModuliField:    Q.       j-invariant = 103681^3*3^(-4)*5^(-1)
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1,2,3,3,7^3]
+     Decomposition:  none
+     Galois group:   S30.  Order = 30!
+     [Felikson, Figure 18 (2,3,7), Entry #54]
+
+C19: ModuliField:    Q.       j-invariant = 2^6*971^3*3^(-5)
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4]  1:[2^4]  infty:[3,5]
+     Decomposition:  none
+     Galois group:   A8.  Order = 8!/2
+     [Felikson, Figure 13 (2,4,5), Entry #3]
+
+C20: ModuliField:    Q.       j-invariant = 2^6*19^3*467^3*3^(-7)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[1,2,3]  1:[3,3]  infty:[1,1,4]
+     Decomposition:  none
+     Galois group:   S6.  Order = 6!
+     [Felikson, Figure 10, Entry #7]
+
+C21: ModuliField:    Q.       j-invariant = 2^6*19^3*467^3*3^(-7)*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[2,2,8]
+     Decomposition:  1-S32(deg 6) 
+     Galois group:   GAP transitive group ID = 12T299.  Order = 12!/462
+     [Felikson, Figure 17 (2,3,8), Entry #10]
+
+C22: ModuliField:    Q.       j-invariant = 11^3*1259^3*2^(-1)*3^(-3)*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^8]  1:[2^13]  infty:[1,1,8^3]
+     Decomposition:  none
+     Galois group:   PSL(2,25) : C2.  GAP transitive group ID = 26T55.  Order = 15600
+
+C23: ModuliField:    Q.       j-invariant = 11^3*1259^3*2^(-1)*3^(-3)*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,2,5,9]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+     [Felikson, Figure 16 (2,3,9), Entry #9]
+
+C24: ModuliField:    Q.       j-invariant = 11^3*1979^3*2^(-3)*3^(-1)*5^(-12)
+     Obstruction:    none
+     Branch type:    0:[1,1,4]  1:[1,1,2,2]  infty:[6]
+     Decomposition:  none
+     Galois group:   S5.  GAP transitive group ID = 6T14.  Order = 120
+
+C25: ModuliField:    Q.       j-invariant = 11^3*1979^3*2^(-3)*3^(-1)*5^(-12)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,3,3,10]
+     Decomposition:  S13(deg 2) 
+     Galois group:   GAP transitive group ID = 18T966.  Order = 92897280
+     [Felikson, Figure 15 (2,3,>=10), Entry #4]
+
+C26: ModuliField:    Q.       j-invariant = 3^3*5^3*17^3
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[2,2,3,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 18 (2,3,7), Entry #21]
+
+C27: ModuliField:    Q.       j-invariant = 2^4*37^3*271^3*3^(-6)*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,1,5,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 18 (2,3,7), Entry #23]
+
+C28: ModuliField:    Q.       j-invariant = 2^2*11^3*107^3*3^(-12)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[3,3,8]
+     Decomposition:  S23(deg 2) 
+     Galois group:   GAP transitive group ID = 14T54.  Order = 322560
+     [Felikson, Figure 17 (2,3,8), Entry #12]
+
+C29: ModuliField:    Q.       j-invariant = 2^7*5^6*1607^3*3^(-16)*7^(-5)
+     Obstruction:    none
+     Branch type:    0:[1,2,2,3]  1:[2^4]  infty:[1,7]
+     Decomposition:  none
+     Galois group:   A8.  Order = 8!/2
+     [Felikson, Figure 18 (2,3,7), Entry #8]
+
+C30: ModuliField:    Q.       j-invariant = 7949^3*2^(-5)*3^(-10)
+     Obstruction:    Primes: [infinity, 5], Conic: 5*X^2+2*Y^2+Z^2 = 0
+     Branch type:    0:[1,1,4,4]  1:[1,1,2^4]  infty:[5,5]
+     Decomposition:  none
+     Galois group:   A6.  GAP transitive group ID = 10T26.  Order = 360
+
+C31: ModuliField:    Q.       j-invariant = 7949^3*2^(-5)*3^(-10)
+     Obstruction:    none
+     Branch type:    0:[5,5]  1:[2^5]  infty:[1^4,6]
+     Decomposition:  1/(1-S37)(deg 2) 
+     Galois group:   C2 x ((C2 x C2 x C2 x C2) : A5).  GAP transitive group ID = 10T36.  Order = 1920
+
+C32: ModuliField:    Q.       j-invariant = 11^3*13^3*23^3*2^(-1)*3^(-12)*5^(-1)
+     Obstruction:    none
+     Branch type:    0:[2,2,3,3]  1:[2^5]  infty:[1,1,8]
+     Decomposition:  S29(deg 2) 
+     Galois group:   C2 x (((C2 x C2 x C2 x C2) : A5) : C2).  GAP transitive group ID = 10T39.  Order = 3840
+     [Felikson, Figure 17 (2,3,8), Entry #8]
+
+C33: ModuliField:    Q.       j-invariant = 112297^3*2^(-4)*3^(-20)*13^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[3,3,7]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+     [Felikson, Figure 18 (2,3,7), Entry #20]
+
+C34: ModuliField:    Q.       j-invariant = 3^3*127^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,3,3,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 18 (2,3,7), Entry #1]
+
+C35: ModuliField:    Q.       j-invariant = 3^3*1367^3*2^(-4)*5^(-2)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[2,3,3,7]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+     [Felikson, Figure 18 (2,3,7), Entry #22]
+
+C36: ModuliField:    Q.       j-invariant = 757^3*11827^3*2^(-4)*3^(-7)*17^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[1,3,3,7,7]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+     [Felikson, Figure 18 (2,3,7), Entry #38]
+
+C37: ModuliField:    Q.       j-invariant = 37^3*5653^3*2^(-2)*3^(-3)*5^(-12)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1,3,3]  infty:[1,1,5]
+     Decomposition:  none
+     Galois group:   A7.  Order = 7!/2
+     [Felikson, Figure 10, Entry #8]
+
+C38: ModuliField:    Q.       j-invariant = 37^3*5653^3*2^(-2)*3^(-3)*5^(-12)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[2,2,10]
+     Decomposition:  S22(deg 2) 1-S32(deg 7) 
+     Galois group:   S7.  GAP transitive group ID = 14T46.  Order = 5040
+     [Felikson, Figure 15 (2,3,>=10), Entry #1]
+
+C39: ModuliField:    Q.       j-invariant = 2^4*3^6*8681^3*5^(-7)
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[2,2,3,7,7]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+     [Felikson, Figure 18 (2,3,7), Entry #34]
+
+C40: ModuliField:    Q.       j-invariant = 3^3*27329^3*2^(-14)*5^(-1)*7^(-5)
+     Obstruction:    none
+     Branch type:    0:[2,2,3,3]  1:[2^5]  infty:[1,2,7]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+     [Felikson, Figure 18 (2,3,7), Entry #14]
+
+C41: ModuliField:    Q.       j-invariant = 5^3*349^3*8516873^3*2^(-30)*3^(-3)*7^(-9)*11^(-6)*13^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[2,2,9]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+     [Felikson, Figure 16 (2,3,9), Entry #3]
+
+C42: ModuliField:    Q.       j-invariant = 3^3*289189^3*2^(-18)*5^(-7)*11^(-1)
+     Obstruction:    none
+     Branch type:    0:[2,3^3]  1:[1,2^5]  infty:[2,2,7]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+     [Felikson, Figure 18 (2,3,7), Entry #10]
+
+ D1: ModuliField:    Q.       j-invariant = 2^2*3^3*13^3*5^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,2,2,5,8]
+     Decomposition:  1/S34(deg 6) 
+     Galois group:   GAP transitive group ID = 18T954.  Order = 5184000
+
+ D2: ModuliField:    Q.       j-invariant = -2^4*109^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,1,3,9]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+ D3: ModuliField:    Q.       j-invariant = -2^4*109^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[2^6]  infty:[1^3,4,5]
+     Decomposition:  1/(1-S32)(deg 6) 
+     Galois group:   (S5 x S5) : C2.  GAP transitive group ID = 12T288.  Order = 28800
+
+ D4: ModuliField:    Q.       j-invariant = -2^4*109^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,2,4,10]
+     Decomposition:  1/S34(deg 6) 
+     Galois group:   GAP transitive group ID = 18T935.  Order = 1296000
+
+ D5: ModuliField:    Q.       j-invariant = -2^4*109^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1,1,2,5,7^3]
+     Decomposition:  none
+     Galois group:   S30.  Order = 30!
+
+ D6: ModuliField:    Q.       j-invariant = -2^4*109^3*5^(-6)
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1^4,10,10]
+     Decomposition:  G7(deg 2) G7(deg 2) S4(deg 2) S26(deg 4)(see #1,2,3) 
+     Galois group:   ((C2 x C2 x C2 x C2 x C2) : A5) : C2.  GAP transitive group ID = 24T7252.  Order = 3840
+
+ D7: ModuliField:    Q.       j-invariant = -2^5*19^3*3^(-6)
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[1,1,3,3]  infty:[4,4]
+     Decomposition:  1/(1-S47)(deg 2) 
+     Galois group:   SL(2,3).  GAP transitive group ID = 8T12.  Order = 24
+
+ D8: ModuliField:    Q.       j-invariant = -2^5*19^3*3^(-6)
+     Obstruction:    none
+     Branch type:    0:[1^4,3^4]  1:[2^8]  infty:[8,8]
+     Decomposition:  G13(deg 2) G13(deg 2) S20(deg 2) S36(deg 4)(see #1,2,3) 1-S32(deg 8)(see #3) 
+     Galois group:   GL(2,3).  GAP transitive group ID = 16T66.  Order = 48
+
+ D9: ModuliField:    Q.       j-invariant = 2^1*47^3*3^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,3,8]
+     Decomposition:  1/S34(deg 4) 
+     Galois group:   GAP transitive group ID = 12T291.  Order = 41472
+
+D10: ModuliField:    Q.       j-invariant = 2^1*47^3*3^(-8)
+     Obstruction:    none
+     Branch type:    0:[1,1,6]  1:[2^4]  infty:[1,1,6]
+     Decomposition:  S47(deg 2) 
+     Galois group:   (((C2 x D8) : C2) : C3) : C2.  GAP transitive group ID = 8T38.  Order = 192
+
+D11: ModuliField:    Q.       j-invariant = 2^1*47^3*3^(-8)
+     Obstruction:    none
+     Branch type:    0:[4^4]  1:[2^8]  infty:[1^4,6,6]
+     Decomposition:  G11(deg 2) G11(deg 2) 1/S20(deg 2) 1/S36(deg 4)(see #1,2,3) 1/(1-S32)(deg 8)(see #3) 
+     Galois group:   ((((C2 x D8) : C2) : C3) : C2) : C2.  GAP transitive group ID = 16T752.  Order = 384
+
+D12: ModuliField:    Q.       j-invariant = -2^6*239^3*3^(-10)
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4]  1:[2^4]  infty:[2,6]
+     Decomposition:  1-S32(deg 4) 
+     Galois group:   (((C2 x C2 x C2 x C2) : C3) : C2) : C2.  GAP transitive group ID = 8T41.  Order = 192
+
+D13: ModuliField:    Q.       j-invariant = -2^6*239^3*3^(-10)
+     Obstruction:    none
+     Branch type:    0:[1^3,2,3]  1:[2^4]  infty:[8]
+     Decomposition:  1-S32(deg 4) 
+     Galois group:   (S4 x S4) : C2.  GAP transitive group ID = 8T47.  Order = 1152
+
+D14: ModuliField:    Q.       j-invariant = -2^6*239^3*3^(-10)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,2,12]
+     Decomposition:  S47(deg 4) 
+     Galois group:   GAP transitive group ID = 16T1790.  Order = 18432
+
+D15: ModuliField:    Q.       j-invariant = -482641^3*2^(-1)*3^(-2)*11^(-10)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,2,3,11]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+D16: ModuliField:    Q.       j-invariant = -254977^3*2^(-5)*3^(-12)*19^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[1,3,8,8]
+     Decomposition:  none
+     Galois group:   A20.  Order = 20!/2
+
+D17: ModuliField:    Q.       j-invariant = 7607^3*1753^3*2^(-7)*3^(-20)*5^(-4)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^11]  1:[2^17]  infty:[1,1,4,7^4]
+     Decomposition:  none
+     Galois group:   S34.  Order = 34!
+
+D18: ModuliField:    Q.       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[2^6]  infty:[1^3,3,6]
+     Decomposition:  1/S35(deg 3) 1/(1-S32)(deg 6)(see #1) 
+     Galois group:   (C3 x S3 x S3) : C2.  GAP transitive group ID = 12T116.  Order = 216
+
+D19: ModuliField:    Q.       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[1^3,3^3]  1:[2^6]  infty:[3,9]
+     Decomposition:  S47(deg 3) 
+     Galois group:   ((C3 x ((C3 x C3) : C2)) : C2) : C3.  GAP transitive group ID = 12T133.  Order = 324
+
+D20: ModuliField:    Q(sqrt(-3)).       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[1^3,3^7]  1:[2^12]  infty:[3,7^3]
+     Decomposition:  S18(deg 3) 
+     Galois group:   GAP transitive group ID = 24T21448.  Order = 1102248
+
+D21: ModuliField:    Q.       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1^3,3,12]
+     Decomposition:  S43(deg 3) 1/S34(deg 6)(see #1) 
+     Galois group:   C3 x ((((C3 x ((C3 x C3) : C2)) : C2) : C3) : C2).  GAP transitive group ID = 18T346.  Order = 1944
+
+D22: ModuliField:    Q.       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1^3,6,7^3]
+     Decomposition:  S8(deg 3) 
+     Galois group:   GAP transitive group ID = 30T5405.  Order = 214277011200
+
+D23: ModuliField:    Q.       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[2^3,3,7^3]
+     Decomposition:  S8(deg 3) 
+     Galois group:   GAP transitive group ID = 30T5405.  Order = 214277011200
+
+D24: ModuliField:    Q(sqrt(-2)).       j-invariant = 0
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1^3,3,8^3]
+     Decomposition:  S7(deg 3) 
+     Galois group:   GAP transitive group ID = 30T3837.  Order = 42515280
+
+D25: ModuliField:    Q.       j-invariant = 2^11*3^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,4]  1:[1,1,2,2]  infty:[6]
+     Decomposition:  S34(deg 2) 
+     Galois group:   C2 x S4.  GAP transitive group ID = 6T11.  Order = 48
+
+D26: ModuliField:    Q.       j-invariant = -2^17*3^3*7^3*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,6,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+D27: ModuliField:    Q.       j-invariant = -23^3*71^3*3^(-1)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[1,4,4]  1:[1,2^4]  infty:[2,2,5]
+     Decomposition:  none
+     Galois group:   A9.  Order = 9!/2
+
+D28: ModuliField:    Q.       j-invariant = -23^3*71^3*3^(-1)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^18]  1:[2^27]  infty:[1^3,2,7^7]
+     Decomposition:  none
+     Galois group:   S54.  Order = 54!
+
+D29: ModuliField:    Q.       j-invariant = -23^3*71^3*3^(-1)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,3,3,4,7]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+D30: ModuliField:    Q.       j-invariant = -5281^3*3^(-16)*5^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3,3]  1:[2^5]  infty:[3,7]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+D31: ModuliField:    Q.       j-invariant = -5281^3*3^(-16)*5^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,4]  1:[1,1,3]  infty:[1,4]
+     Decomposition:  none
+     Galois group:   S5.  Order = 5!
+
+D32: ModuliField:    Q.       j-invariant = -5281^3*3^(-16)*5^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[2,2,6]
+     Decomposition:  1/S29(deg 2) 1-S32(deg 5) 
+     Galois group:   C2 x S5.  GAP transitive group ID = 10T22.  Order = 240
+
+D33: ModuliField:    Q.       j-invariant = 2^7*91423^3*3^(-6)*5^(-7)*7^(-8)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[2,2,5,7]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+D34: ModuliField:    Q.       j-invariant = -11^3*88811^3*2^(-6)*3^(-4)*5^(-1)*7^(-12)
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[1,2,7]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+D35: ModuliField:    Q.       j-invariant = -11^3*23830621091^3*2^(-8)*3^(-20)*5^(-3)*7^(-8)*43^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,3^17]  1:[2^26]  infty:[1^3,7^7]
+     Decomposition:  none
+     Galois group:   A52.  Order = 52!/2
+
+D36: ModuliField:    Q.       j-invariant = -2^3*6359^3*2999^3*3^(-7)*5^(-16)*7^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,2,5]  1:[2^4]  infty:[1,1,6]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+
+D37: ModuliField:    Q.       j-invariant = -5^3*1637^3*2^(-18)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,5]  1:[1,2^3]  infty:[2,5]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+D38: ModuliField:    Q.       j-invariant = -5^3*1637^3*2^(-18)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[2,4^3]  1:[2^7]  infty:[1,1,2,5,5]
+     Decomposition:  1/(1-S32)(deg 7) 
+     Galois group:   GAP transitive group ID = 14T61.  Order = 14!/1716
+
+D39: ModuliField:    Q.       j-invariant = -5^3*1637^3*2^(-18)*7^(-1)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[2,3,9]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+D40: ModuliField:    Q.       j-invariant = -5^3*37^3*167^3*2^(-8)*3^(-4)*11^(-4)
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1,1,2,4,7^4]
+     Decomposition:  none
+     Galois group:   A36.  Order = 36!/2
+
+D41: ModuliField:    Q.       j-invariant = -2^6*5^3*14411^3*3^(-6)*7^(-3)*11^(-10)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,3,11]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+D42: ModuliField:    Q.       j-invariant = -2^5*199287631^3*3^(-26)*5^(-6)*7^(-3)
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,4,10]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+D43: ModuliField:    Q.       j-invariant = -269^3*2^(-10)*3^(-5)
+     Obstruction:    none
+     Branch type:    0:[2,4,4]  1:[2^5]  infty:[1,1,3,5]
+     Decomposition:  1/(1-S32)(deg 5) 
+     Galois group:   (A5 x A5) : C2.  GAP transitive group ID = 10T40.  Order = 7200
+
+D44: ModuliField:    Q.       j-invariant = -269^3*2^(-10)*3^(-5)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,3,10]
+     Decomposition:  1/S34(deg 5) 
+     Galois group:   GAP transitive group ID = 15T96.  Order = 1296000
+
+D45: ModuliField:    Q.       j-invariant = -269^3*2^(-10)*3^(-5)
+     Obstruction:    Primes: [infinity, 5], Conic: 5*X^2+2*Y^2+Z^2 = 0
+     Branch type:    0:[1^4,4^4]  1:[2^10]  infty:[5^4]
+     Decomposition:  C30(deg 2) 
+     Galois group:   C2 x A6.  GAP transitive group ID = 20T152.  Order = 720
+
+D46: ModuliField:    Q.       j-invariant = -11^3*59^3*2^(-12)*3^(-1)*5^(-3)
+     Obstruction:    none
+     Branch type:    0:[3^9]  1:[1,2^13]  infty:[1,1,4,7^3]
+     Decomposition:  none
+     Galois group:   S27.  Order = 27!
+
+D47: ModuliField:    Q.       j-invariant = -3^3*335089^3*2^(-14)*5^(-7)*23^(-4)
+     Obstruction:    none
+     Branch type:    0:[2,3^8]  1:[2^13]  infty:[1,2,2,7^3]
+     Decomposition:  none
+     Galois group:   S26.  Order = 26!
+
+D48: ModuliField:    Q.       j-invariant = 1685104151^3*2^(-6)*3^(-32)*5^(-7)*7^(-1)*13^(-4)
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,3,10]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+D49: ModuliField:    Q.       j-invariant = -17^3*29^3*5197^3*2^(-30)*3^(-3)*5^(-2)*13^(-3)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,4,9]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+D50: ModuliField:    Q.       j-invariant = -17^3*179^3*1223^3*2861^3*2^(-10)*3^(-5)*5^(-12)*11^(-6)*13^(-3)
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,3,10]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+ E1: ModuliField:    Q.       j-invariant = -2^6*3^3*23^3
+     Obstruction:    none
+     Branch type:    0:[3,3]  1:[1^3,3]  infty:[2,4]
+     Decomposition:  none
+     Galois group:   A6.  Order = 6!/2
+
+ E2: ModuliField:    Q.       j-invariant = -2^6*3^3*23^3
+     Obstruction:    none
+     Branch type:    0:[1^3,3^3]  1:[2^6]  infty:[4,8]
+     Decomposition:  1-S32(deg 6) 
+     Galois group:   A6 : C2.  GAP transitive group ID = 12T182.  Order = 720
+
+ E3: ModuliField:    Q.       j-invariant = -3^3*17^3*2^(-1)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1^3,6,9]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+ E4: ModuliField:    Q.       j-invariant = -3^3*5^3*383^3*2^(-7)
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1^3,3,3]  infty:[1,4,4]
+     Decomposition:  none
+     Galois group:   ((C3 x C3) : Q8) : C3.  GAP transitive group ID = 9T23.  Order = 216
+
+ E5: ModuliField:    Q.       j-invariant = -3^3*5^3*383^3*2^(-7)
+     Obstruction:    none
+     Branch type:    0:[1^3,3^5]  1:[2^9]  infty:[2,8,8]
+     Decomposition:  1-S32(deg 9) 
+     Galois group:   (((C3 x C3 x C3 x C3) : Q8) : C3) : C2.  GAP transitive group ID = 18T451.  Order = 3888
+
+ E6: ModuliField:    Q.       j-invariant = -3^3*5^3*383^3*2^(-7)
+     Obstruction:    none
+     Branch type:    0:[1^3,3^5]  1:[2^9]  infty:[4,7,7]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+ E7: ModuliField:    Q.       j-invariant = -5^2*241^3*2^(-3)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1^3,5,10]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+ E8: ModuliField:    Q.       j-invariant = -5^2*241^3*2^(-3)
+     Obstruction:    none
+     Branch type:    0:[5,5]  1:[2^5]  infty:[1^3,2,5]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+ E9: ModuliField:    Q.       j-invariant = -5^2*241^3*2^(-3)
+     Obstruction:    none
+     Branch type:    0:[4^5]  1:[2^10]  infty:[1^3,2,5^3]
+     Decomposition:  1/(1-S32)(deg 10) 
+     Galois group:   GAP transitive group ID = 20T1115.  Order = 20!/92378
+
+E10: ModuliField:    Q.       j-invariant = 5^1*211^3*2^(-15)
+     Obstruction:    none
+     Branch type:    0:[1,4]  1:[1^3,2]  infty:[5]
+     Decomposition:  none
+     Galois group:   S5.  Order = 5!
+
+E11: ModuliField:    Q.       j-invariant = 5^1*211^3*2^(-15)
+     Obstruction:    none
+     Branch type:    0:[1^4,4^4]  1:[2^10]  infty:[5^4]
+     Decomposition:  H17(deg 2) H17(deg 2) H17(deg 2) E10(deg 4)(see #1,2,3) 
+     Galois group:   GAP transitive group ID = 20T567.  Order = 30720
+
+E12: ModuliField:    Q.       j-invariant = -2^8*3^3*61^3*5^(-7)
+     Obstruction:    none
+     Branch type:    0:[3,3]  1:[1^3,3]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   A6.  Order = 6!/2
+
+E13: ModuliField:    Q.       j-invariant = -2^8*3^3*61^3*5^(-7)
+     Obstruction:    none
+     Branch type:    0:[1^3,3^3]  1:[2^6]  infty:[2,10]
+     Decomposition:  1-S32(deg 6) 
+     Galois group:   A6 : C2.  GAP transitive group ID = 12T182.  Order = 720
+
+E14: ModuliField:    Q.       j-invariant = -2^8*3^3*61^3*5^(-7)
+     Obstruction:    none
+     Branch type:    0:[1^3,3^3]  1:[2^6]  infty:[5,7]
+     Decomposition:  none
+     Galois group:   A12.  Order = 12!/2
+
+E15: ModuliField:    Q.       j-invariant = -2^4*11^2*13^3*3^(-6)
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1^3,11]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+E16: ModuliField:    Q.       j-invariant = -3^3*41^3*83^3*2^(-1)*13^(-7)
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1^3,2,13]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+E17: ModuliField:    Q.       j-invariant = -2^9*5^4*11^3*3^(-5)
+     Obstruction:    none
+     Branch type:    0:[1^3,5]  1:[2^4]  infty:[3,5]
+     Decomposition:  none
+     Galois group:   A8.  Order = 8!/2
+
+E18: ModuliField:    Q.       j-invariant = -2^9*5^4*11^3*3^(-5)
+     Obstruction:    none
+     Branch type:    0:[4^4]  1:[2^8]  infty:[1^3,3,5,5]
+     Decomposition:  1/(1-S32)(deg 8) 
+     Galois group:   GAP transitive group ID = 16T1949.  Order = 16!/25740
+
+E19: ModuliField:    Q.       j-invariant = -2^12*7^1*17^3*23^3*3^(-13)
+     Obstruction:    none
+     Branch type:    0:[1^3,2,3^3]  1:[2^7]  infty:[7,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+E20: ModuliField:    Q.       j-invariant = -2^1*3^3*7^2
+     Obstruction:    none
+     Branch type:    0:[3,3,4]  1:[2^5]  infty:[1^3,7]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+E21: ModuliField:    Q.       j-invariant = -3^1*223^3*2^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1^3,2^3]  infty:[2,7]
+     Decomposition:  none
+     Galois group:   S9.  Order = 9!
+
+E22: ModuliField:    Q.       j-invariant = -3^1*223^3*2^(-8)
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[2^4,7^4]
+     Decomposition:  H37(deg 2) H37(deg 2) H37(deg 2) E21(deg 4)(see #1,2,3) 
+     Galois group:   Order = 23781703680
+
+E23: ModuliField:    Q.       j-invariant = 2^9*3^3*3739^3*5^(-11)*7^(-5)
+     Obstruction:    none
+     Branch type:    0:[1^3,5]  1:[2^4]  infty:[1,7]
+     Decomposition:  none
+     Galois group:   A8.  Order = 8!/2
+
+E24: ModuliField:    Q.       j-invariant = 3^3*7^1*2099^3*2^(-14)*5^(-7)
+     Obstruction:    none
+     Branch type:    0:[1^3,4]  1:[1,2^3]  infty:[7]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+E25: ModuliField:    Q.       j-invariant = -5^1*3410909^3*2^(-20)*3^(-10)*13^(-5)
+     Obstruction:    none
+     Branch type:    0:[1^3,4^3]  1:[1,2^7]  infty:[5^3]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+ F1: ModuliField:    Q(sqrt(2)).
+     Obstruction:    Primes: [infinity, 3], Conic: (1-2^(1/2))*X^2+3*Y^2+Z^2 = 0
+     Branch type:    0:[1,1,3,3]  1:[1,1,3,3]  infty:[4,4]
+     Decomposition:  none
+     Galois group:   PSL(3,2).  GAP transitive group ID = 8T37.  Order = 168
+
+ F2: ModuliField:    Q(sqrt(2)).
+     Obstruction:    none
+     Branch type:    0:[1^4,3^4]  1:[2^8]  infty:[8,8]
+     Decomposition:  F5(deg 2) 1-S32(deg 8) 
+     Galois group:   PSL(3,2) : C2.  GAP transitive group ID = 16T713.  Order = 336
+
+ F3: ModuliField:    Q(sqrt(2)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[2,3,4,7]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+     [Felikson, Figure 18 (2,3,7), Entries #2, #26]
+
+ F4: ModuliField:    Q(sqrt(2)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+Z^2 = 0
+     Branch type:    0:[3^6]  1:[1,1,2^8]  infty:[1,1,8,8]
+     Decomposition:  none
+     Galois group:   PSL(2,17).  GAP transitive group ID = 18T377.  Order = 2448
+
+ F5: ModuliField:    Q(sqrt(2)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[1,1,2^3]  infty:[8]
+     Decomposition:  none
+     Galois group:   PSL(3,2) : C2.  GAP transitive group ID = 8T43.  Order = 336
+
+ F6: ModuliField:    Q(sqrt(2)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+Z^2 = 0
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1^4,8^4]
+     Decomposition:  F4(deg 2) 
+     Galois group:   C2 x PSL(2,17).  Order = 4896
+
+ F7: ModuliField:    Q(x^4-2*x^3-x^2-4*x-2) = Q( sqrt(2), sqrt(3+6*sqrt(2)) ).  Note: j in Q(sqrt(2)).
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1,3,3]  infty:[1,2,4]
+     Decomposition:  none
+     Galois group:   PSL(3,2).  GAP transitive group ID = 7T5.  Order = 168
+     [Felikson, Figure 10, Entry #9]
+
+ F8: ModuliField:    Q(sqrt(2)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[2,4,8]
+     Decomposition:  1-S32(deg 7) 
+     Galois group:   PSL(3,2) : C2.  GAP transitive group ID = 14T16.  Order = 336
+     [Felikson, Figure 17 (2,3,8), Entry #15]
+
+ F9: ModuliField:    Q(sqrt(3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,1,12]
+     Decomposition:  none
+     Galois group:   PSL(2,13) : C2.  GAP transitive group ID = 14T39.  Order = 2184
+
+F10: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,1,10]
+     Decomposition:  none
+     Galois group:   PSL(2,11) : C2.  GAP transitive group ID = 12T218.  Order = 1320
+
+F11: ModuliField:    Q(sqrt(5)).
+     Obstruction:    Primes: [infinity, 5], Conic: (2+5^(1/2))*X^2+5^(1/2)*Y^2+Z^2 = 0
+     Branch type:    0:[1,1,5,5]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  none
+     Galois group:   PSL(2,11).  GAP transitive group ID = 12T179.  Order = 660
+
+F12: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[4^6]  1:[2^12]  infty:[1^4,5^4]
+     Decomposition:  F16(deg 2) 1/(1-S32)(deg 12) 
+     Galois group:   PSL(2,11) : C2.  GAP transitive group ID = 24T2949.  Order = 1320
+
+F13: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,2,4]  1:[2^5]  infty:[5,5]
+     Decomposition:  S45(deg 2) 
+     Galois group:   ((C2 x C2 x C2 x C2) : C5) : C2.  GAP transitive group ID = 10T16.  Order = 160
+     [Felikson, Figure 13 (2,4,5), Entry #9]
+
+F14: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,1,2,10]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+     [Felikson, Figure 15 (2,3,>=10), Entry #2]
+
+F15: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[1,3,4,4]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  none
+     Galois group:   A12.  Order = 12!/2
+     [Felikson, Figure 13 (2,4,5), Entry #14]
+
+F16: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[1,1,2^5]  infty:[1,1,5,5]
+     Decomposition:  none
+     Galois group:   PSL(2,11) : C2.  GAP transitive group ID = 12T218.  Order = 1320
+
+F17: ModuliField:    Q(sqrt(5)).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1^4,10,10]
+     Decomposition:  F10(deg 2) 
+     Galois group:   GAP transitive group ID = 24T22755.  Order = 2703360
+
+F18: ModuliField:    Q(sqrt(6)).
+     Obstruction:    none
+     Branch type:    0:[2,3]  1:[1,1,3]  infty:[1,4]
+     Decomposition:  none
+     Galois group:   S5.  Order = 5!
+     [Felikson, Figure 10, Entry #5]
+
+F19: ModuliField:    Q(sqrt(6)).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3,3]  1:[2^5]  infty:[2,8]
+     Decomposition:  1-S32(deg 5) 
+     Galois group:   GAP transitive group ID = 10T43.  Order = 10!/126
+     [Felikson, Figure 17 (2,3,8), Entry #9]
+
+F20: ModuliField:    Q(sqrt(7)).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[2,2,3,3,7,7]
+     Decomposition:  F22(deg 2) 
+     Galois group:   GAP transitive group ID = 24T24970.  Order = 980995276800
+     [Felikson, Figure 18 (2,3,7), Entries #35, #41]
+
+F21: ModuliField:    Q(sqrt(7)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^10]  1:[2^16]  infty:[1,3,7^4]
+     Decomposition:  none
+     Galois group:   A32.  Order = 32!/2
+     [Felikson, Figure 18 (2,3,7), Entry #58]
+
+F22: ModuliField:    Q(sqrt(7)).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[2,3,7]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+     [Felikson, Figure 18 (2,3,7), Entry #11]
+
+F23: ModuliField:    Q(sqrt(21)).
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[1,2,3,7,7]
+     Decomposition:  none
+     Galois group:   S20.  Order = 20!
+     [Felikson, Figure 18 (2,3,7), Entries #33, #37]
+
+F24: ModuliField:    Q(sqrt(21)).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,3,5,7,7]
+     Decomposition:  none
+     Galois group:   A24.  Order = 24!/2
+     [Felikson, Figure 18 (2,3,7), Entry #40]
+
+F25: ModuliField:    Q(sqrt(22)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^3]  1:[1,2^5]  infty:[3,8]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+
+ G1: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,2,4,8]
+     Decomposition:  1/S34(deg 5) 
+     Galois group:   (((C5 x ((C5 x C5) : C4)) : C4) : C3) : C2.  GAP transitive group ID = 15T65.  Order = 12000
+
+ G2: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,2,3,10]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+ G3: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[2,3^6]  1:[2^10]  infty:[1,1,2,8,8]
+     Decomposition:  none
+     Galois group:   S20.  Order = 20!
+
+ G4: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[1,1,8]
+     Decomposition:  S44(deg 2) 
+     Galois group:   C2 x (((C2 x C2 x C2 x C2) : C5) : C4).  GAP transitive group ID = 10T29.  Order = 640
+
+ G5: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[2^15]  infty:[1,1,2,2,8^3]
+     Decomposition:  G1(deg 2) 1/S34(deg 10)(see #1) 
+     Galois group:   GAP transitive group ID = 30T4037.  Order = 49152000
+
+ G6: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[3^9]  1:[1,2^13]  infty:[1^3,8^3]
+     Decomposition:  none
+     Galois group:   S27.  Order = 27!
+
+ G7: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,1,10]
+     Decomposition:  S26(deg 2) 
+     Galois group:   ((C2 x C2 x C2 x C2 x C2) : A5) : C2.  GAP transitive group ID = 12T255.  Order = 3840
+
+ G8: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[1,3^9]  1:[2^14]  infty:[1,1,2,8^3]
+     Decomposition:  none
+     Galois group:   A28.  Order = 28!/2
+
+ G9: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,5,8]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+G10: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[1,3,8]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+
+G11: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[4,4]  1:[1,1,2^3]  infty:[1,1,6]
+     Decomposition:  1/S36(deg 2) 
+     Galois group:   ((((C2 x D8) : C2) : C3) : C2) : C2.  GAP transitive group ID = 8T44.  Order = 384
+
+G12: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^5]  1:[2^9]  infty:[1,1,8,8]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+G13: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[1,1,2^3]  infty:[8]
+     Decomposition:  S36(deg 2) 
+     Galois group:   GL(2,3).  GAP transitive group ID = 8T23.  Order = 48
+
+G14: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,3,8]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+
+G15: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,3,3,8,8]
+     Decomposition:  G14(deg 2) 
+     Galois group:   GAP transitive group ID = 24T24970.  Order = 980995276800
+
+G16: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[1,1,3,8,8]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+
+G17: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1^3,2^3]  infty:[1,8]
+     Decomposition:  none
+     Galois group:   (((C3 x C3) : Q8) : C3) : C2.  GAP transitive group ID = 9T26.  Order = 432
+
+G18: ModuliField:    Q(sqrt(-2)).
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1^4,8^4]
+     Decomposition:  J1(deg 2) J1(deg 2) J1(deg 2) G17(deg 4)(see #1,2,3) 
+     Galois group:   Order = 28311552
+
+G19: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,2,6,7]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+G20: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3,4]  1:[2^4]  infty:[1,1,6]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+
+G21: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,4,9]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+G22: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,6,8]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+G23: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,1,12]
+     Decomposition:  S21(deg 2) 
+     Galois group:   (((C2 x C2 x C2 x C2 x C2 x C2) : C7) : C3) : C2.  GAP transitive group ID = 14T40.  Order = 2688
+
+G24: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,2,12]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+G25: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,6,7]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+G26: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1^3,3,3]  1:[1,2^4]  infty:[9]
+     Decomposition:  none
+     Galois group:   PSL(2,8) : C3.  GAP transitive group ID = 9T32.  Order = 1512
+
+G27: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1^3,12]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+G28: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1^3,13]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+G29: ModuliField:    Q(sqrt(-5)).
+     Obstruction:    none
+     Branch type:    0:[3,4]  1:[1,2^3]  infty:[1,1,5]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+G30: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[1,2,4,7,7]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+
+G31: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[2,3^4]  1:[2^7]  infty:[1,2,4,7]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+G32: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[2,3^10]  1:[2^16]  infty:[1,1,2,7^4]
+     Decomposition:  none
+     Galois group:   S32.  Order = 32!
+
+G33: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^14]  1:[2^21]  infty:[1^3,4,7^5]
+     Decomposition:  none
+     Galois group:   S42.  Order = 42!
+
+G34: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1,3^13]  1:[2^20]  infty:[1,2,2,7^5]
+     Decomposition:  none
+     Galois group:   A40.  Order = 40!/2
+
+G35: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1^3,2,2]  infty:[7]
+     Decomposition:  none
+     Galois group:   PSL(3,2).  GAP transitive group ID = 7T5.  Order = 168
+
+G36: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1^4,3^8]  1:[2^14]  infty:[7^4]
+     Decomposition:  I3(deg 2) G39(deg 2) I3(deg 2) G35(deg 4)(see #1,2,3) 
+     Galois group:   (C2 x C2 x C2) . PSL(3,2).  GAP transitive group ID = 28T152.  Order = 1344
+
+G37: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4]  1:[2^4]  infty:[1,7]
+     Decomposition:  none
+     Galois group:   (C2 x C2 x C2) : PSL(3,2).  GAP transitive group ID = 8T48.  Order = 8!/30
+
+G38: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,4,7]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+
+G39: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[1,1,2^6]  infty:[7,7]
+     Decomposition:  G35(deg 2) 
+     Galois group:   PSL(3,2).  GAP transitive group ID = 14T10.  Order = 168
+
+G40: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,4,4,7,7]
+     Decomposition:  G38(deg 2) 
+     Galois group:   GAP transitive group ID = 24T24970.  Order = 980995276800
+
+G41: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^11]  1:[1,2^16]  infty:[1,2,2,7^4]
+     Decomposition:  none
+     Galois group:   A33.  Order = 33!/2
+
+G42: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[2,2,4,7,7]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+
+G43: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^13]  1:[1,2^19]  infty:[1,1,2,7^5]
+     Decomposition:  none
+     Galois group:   S39.  Order = 39!
+
+G44: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^15]  1:[1,2^22]  infty:[1^3,7^6]
+     Decomposition:  none
+     Galois group:   A45.  Order = 45!/2
+
+G45: ModuliField:    Q(sqrt(-11)).
+     Obstruction:    none
+     Branch type:    0:[1^3,3^3]  1:[2^6]  infty:[1,11]
+     Decomposition:  none
+     Galois group:   M12.  GAP transitive group ID = 12T295.  Order = 95040
+
+G46: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[2,4]  1:[1,1,2,2]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   A6.  Order = 6!/2
+
+G47: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[1,1,5,5]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  G49(deg 2) 
+     Galois group:   (C2 x C2 x C2 x C2 x C2) : A6.  GAP transitive group ID = 12T277.  Order = 11520
+
+G48: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[4^6]  1:[2^12]  infty:[1^4,5^4]
+     Decomposition:  I11(deg 2) G50(deg 2) I11(deg 2) G46(deg 4)(see #1,2,3) 1/(1-S32)(deg 12)(see #2) 
+     Galois group:   GAP transitive group ID = 24T12619.  Order = 23040
+
+G49: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[1,5]  1:[1,1,2,2]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   A6.  Order = 6!/2
+
+G50: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[2,2,4,4]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  G46(deg 2) 1/(1-S32)(deg 6) 
+     Galois group:   C2 x A6.  GAP transitive group ID = 12T180.  Order = 720
+
+G51: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[1,1,4^4]  1:[2^9]  infty:[1,2,5^3]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+
+G52: ModuliField:    Q(sqrt(-15)).
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[1^3,9,9]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+
+ H1: ModuliField:    Q(x^3-3*x-1) = Q(Re(zeta_9)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2-RootOf(x^3-3*x-1)*Z^2 = 0
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[1,1,9,9]
+     Decomposition:  none
+     Galois group:   PSL(2,19).  GAP transitive group ID = 20T272.  Order = 3420
+
+ H2: ModuliField:    Q(x^3-3) = Q(3^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[1,2,9]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+     [Felikson, Figure 16 (2,3,9), Entry #1]
+
+ H3: ModuliField:    Q(x^3-3) = Q(3^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3,3]  1:[2^5]  infty:[1,9]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+ H4: ModuliField:    Q(x^3-2) = Q(2^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,2,3,9]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+     [Felikson, Figure 16 (2,3,9), Entry #6]
+
+ H5: ModuliField:    Q(x^3-2) = Q(2^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[2^5]  infty:[1,3,6]
+     Decomposition:  none
+     Galois group:   (A6 : C2) : C2.  GAP transitive group ID = 10T35.  Order = 1440
+
+ H6: ModuliField:    Q(x^3+3*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,2,4,9]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+     [Felikson, Figure 16 (2,3,9), Entry #7]
+
+ H7: ModuliField:    Q(x^3-3*x-4).
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[1,1,2^5]  infty:[1,2,9]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+
+ H8: ModuliField:    Q(x^3-3*x-4).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1,1,2,2,9,9]
+     Decomposition:  H7(deg 2) 
+     Galois group:   GAP transitive group ID = 24T24970.  Order = 980995276800
+     [Felikson, Figure 16 (2,3,9), Entry #10]
+
+ H9: ModuliField:    Q(x^3-3*x-4).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[1,1,2,9,9]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+
+H10: ModuliField:    Q(x^3-x^2-2*x+1) = Q(Re(zeta_7)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+RootOf(x^3-x^2-2*x+1)*Z^2 = 0
+     Branch type:    0:[3^10]  1:[1,1,2^14]  infty:[1,1,7^4]
+     Decomposition:  none
+     Galois group:   PSL(2,29).  GAP transitive group ID = 30T808.  Order = 12180
+
+H11: ModuliField:    Q(x^3-x^2-2*x+1) = Q(Re(zeta_7)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+RootOf(x^3-x^2-2*x+1)*Z^2 = 0
+     Branch type:    0:[1,1,3^14]  1:[2^22]  infty:[1,1,7^6]
+     Decomposition:  none
+     Galois group:   PSL(2,43).  Order = 39732
+
+H12: ModuliField:    Q(x^3-x^2-2*x+1) = Q(Re(zeta_7)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+RootOf(x^3-x^2-2*x+1)*Z^2 = 0
+     Branch type:    0:[1,1,3^4]  1:[1,1,2^6]  infty:[7,7]
+     Decomposition:  none
+     Galois group:   PSL(2,13).  GAP transitive group ID = 14T30.  Order = 1092
+
+H13: ModuliField:    Q(x^3-x^2-2*x+1) = Q(Re(zeta_7)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+RootOf(x^3-x^2-2*x+1)*Z^2 = 0
+     Branch type:    0:[1^4,3^8]  1:[2^14]  infty:[7^4]
+     Decomposition:  H12(deg 2) 
+     Galois group:   PSL(2,13).  GAP transitive group ID = 28T120.  Order = 1092
+
+H14: ModuliField:    Q(x^3-x^2-2*x+1) = Q(Re(zeta_7)).
+     Obstruction:    Primes: [infinity, infinity], Conic: X^2+Y^2+RootOf(x^3-x^2-2*x+1)*Z^2 = 0
+     Branch type:    0:[3^20]  1:[2^30]  infty:[1^4,7^8]
+     Decomposition:  H10(deg 2) 
+     Galois group:   PSL(2,29).  Order = 12180
+
+H15: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,2,5]  1:[2^4]  infty:[1,2,5]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+     [Felikson, Figure 12, Entry #1]
+
+H16: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[4^4]  1:[2^8]  infty:[1,1,2,2,5,5]
+     Decomposition:  H19(deg 2) 1/(1-S32)(deg 8) 
+     Galois group:   GAP transitive group ID = 16T1873.  Order = 80640
+     [Felikson, Figure 13 (2,4,5), Entry #6]
+
+H17: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,4,4]  1:[1,1,2^4]  infty:[5,5]
+     Decomposition:  E10(deg 2) 
+     Galois group:   ((C2 x C2 x C2 x C2) : A5) : C2.  GAP transitive group ID = 10T37.  Order = 1920
+     [Felikson, Figure 13 (2,4,5), Entry #8]
+
+H18: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4^3]  1:[2^8]  infty:[1,5^3]
+     Decomposition:  none
+     Galois group:   ((C2 x C2 x C2 x C2) : A5) : C2.  GAP transitive group ID = 16T1328.  Order = 1920
+     [Felikson, Figure 13 (2,4,5), Entry #17]
+
+H19: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[4,4]  1:[1,1,2^3]  infty:[1,2,5]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+
+H20: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[1,1,2^4]  infty:[2,8]
+     Decomposition:  none
+     Galois group:   A10.  Order = 10!/2
+
+H21: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[1,3^3]  infty:[1,1,4,4]
+     Decomposition:  none
+     Galois group:   A10.  Order = 10!/2
+     [Felikson, Figure 10, Entry #10]
+
+H22: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[2,2,8,8]
+     Decomposition:  H20(deg 2) 1-S32(deg 10) 
+     Galois group:   GAP transitive group ID = 20T1006.  Order = 3628800
+     [Felikson, Figure 17 (2,3,8), Entry #18]
+
+H23: ModuliField:    Q(x^3-x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,5,8]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+H24: ModuliField:    Q(x^3+3*x-1).
+     Obstruction:    none
+     Branch type:    0:[1,1,5]  1:[1,2^3]  infty:[1,6]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+H25: ModuliField:    Q(x^3+3*x-1).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[2^8]  infty:[1,1,5,9]
+     Decomposition:  none
+     Galois group:   A16.  Order = 16!/2
+
+H26: ModuliField:    Q(x^3-x^2+x+1).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,1,2,11]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+H27: ModuliField:    Q(x^3-x^2+x+1).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^3]  1:[1,2^5]  infty:[4,7]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+
+H28: ModuliField:    Q(x^3-x^2+x+1).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[2^7]  infty:[1,2,11]
+     Decomposition:  none
+     Galois group:   S14.  Order = 14!
+
+H29: ModuliField:    Q(x^3-x-2).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[2,3,8]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+     [Felikson, Figure 17 (2,3,8), Entry #11]
+
+H30: ModuliField:    Q(x^3-x^2-3*x-3) = Q(10^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^3]  1:[2^6]  infty:[1,1,10]
+     Decomposition:  none
+     Galois group:   S12.  Order = 12!
+
+H31: ModuliField:    Q(x^3-3*x-8).
+     Obstruction:    none
+     Branch type:    0:[2,3^3]  1:[1,2^5]  infty:[1,1,9]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+
+H32: ModuliField:    Q(x^3+6*x-1).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^3]  1:[1,2^5]  infty:[2,9]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+
+H33: ModuliField:    Q(x^3-x^2+2*x-3).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[3,3,7,7]
+     Decomposition:  H34(deg 2) 
+     Galois group:   GAP transitive group ID = 20T1100.  Order = 928972800
+     [Felikson, Figure 18 (2,3,7), Entry #5]
+
+H34: ModuliField:    Q(x^3-x^2+2*x-3).
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[1,1,2^4]  infty:[3,7]
+     Decomposition:  none
+     Galois group:   A10.  Order = 10!/2
+
+H35: ModuliField:    Q(x^3-x^2+5*x+1) = Q(28^(1/3)).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3]  1:[1,2^3]  infty:[7]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+H36: ModuliField:    Q(x^3-6*x-12).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[1,1,6,7,7]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+     [Felikson, Figure 18 (2,3,7), Entry #50]
+
+H37: ModuliField:    Q(x^3-6*x-12).
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[1,1,2^8]  infty:[2,2,7,7]
+     Decomposition:  E21(deg 2) 
+     Galois group:   GAP transitive group ID = 18T964.  Order = 92897280
+     [Felikson, Figure 18 (2,3,7), Entry #29]
+
+H38: ModuliField:    Q(x^3-x^2-2*x-6).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3^4]  1:[2^8]  infty:[2,7,7]
+     Decomposition:  none
+     Galois group:   S16.  Order = 16!
+
+H39: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,2,4]  1:[1,2^3]  infty:[2,5]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+     [Felikson, Figure 13 (2,4,5), Entry #2]
+
+H40: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1,2^7]  infty:[1,2,5,7]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+     [Felikson, Figure 18 (2,3,7), Entry #27]
+
+H41: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,4^3]  1:[2^7]  infty:[2,2,5,5]
+     Decomposition:  H39(deg 2) 
+     Galois group:   GAP transitive group ID = 14T57.  Order = 645120
+     [Felikson, Figure 13 (2,4,5), Entry #12]
+
+H42: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[1,5,7,7]
+     Decomposition:  none
+     Galois group:   A20.  Order = 20!/2
+
+H43: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,3^8]  1:[1,2^12]  infty:[2,2,7^3]
+     Decomposition:  none
+     Galois group:   A25.  Order = 25!/2
+
+H44: ModuliField:    Q(x^3+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[3^7]  1:[1,2^10]  infty:[1,1,5,7,7]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+     [Felikson, Figure 18 (2,3,7), Entry #46]
+
+H45: ModuliField:    Q(x^3-x^2+5*x-13).
+     Obstruction:    none
+     Branch type:    0:[3^5]  1:[1^3,2^6]  infty:[1,7,7]
+     Decomposition:  none
+     Galois group:   A15.  Order = 15!/2
+
+H46: ModuliField:    Q(x^3-x^2+5*x-13).
+     Obstruction:    none
+     Branch type:    0:[3^20]  1:[2^30]  infty:[1^4,7^8]
+     Decomposition:  J19(deg 2) J19(deg 2) J19(deg 2) H45(deg 4)(see #1,2,3) 
+     Galois group:   Order = 175513082636795904000
+
+H47: ModuliField:    Q(x^3-x^2+5*x+15).
+     Obstruction:    none
+     Branch type:    0:[2,3,3]  1:[1,1,2^3]  infty:[1,7]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+
+H48: ModuliField:    Q(x^3-x^2+5*x+15).
+     Obstruction:    none
+     Branch type:    0:[2,2,3^4]  1:[2^8]  infty:[1,1,7,7]
+     Decomposition:  H47(deg 2) 
+     Galois group:   GAP transitive group ID = 16T1945.  Order = 5160960
+     [Felikson, Figure 18 (2,3,7), Entry #25]
+
+H49: ModuliField:    Q(x^3-x^2+6*x+5).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^5]  1:[1,2^8]  infty:[3,7,7]
+     Decomposition:  none
+     Galois group:   A17.  Order = 17!/2
+
+H50: ModuliField:    Q(x^3+4*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[2,4,7]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+     [Felikson, Figure 18 (2,3,7), Entry #19]
+
+H51: ModuliField:    Q(x^3+4*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^8]  1:[2^13]  infty:[2,3,7^3]
+     Decomposition:  none
+     Galois group:   S26.  Order = 26!
+
+H52: ModuliField:    Q(x^3-x^2+3).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[1,3,4,7,7]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+     [Felikson, Figure 18 (2,3,7), Entry #39]
+
+H53: ModuliField:    Q(x^3-x^2+12*x-6).
+     Obstruction:    none
+     Branch type:    0:[2,3^3]  1:[1,2^5]  infty:[1,3,7]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+     [Felikson, Figure 18 (2,3,7), Entry #15]
+
+ I1: ModuliField:    Q(x^4-2*x^3+6*x^2-4*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,4,4]  1:[1,2^4]  infty:[1,2,6]
+     Decomposition:  none
+     Galois group:   A9.  Order = 9!/2
+
+ I2: ModuliField:    Q(x^4-x^3+3*x^2-4*x+2) = Q( (-7)^1/4) ).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^7]  1:[2^12]  infty:[1,2,7^3]
+     Decomposition:  none
+     Galois group:   S24.  Order = 24!
+
+ I3: ModuliField:    Q(x^4-x^3+3*x^2-4*x+2) = Q( (-7)^1/4) ).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^4]  1:[1,1,2^6]  infty:[7,7]
+     Decomposition:  G35(deg 2) 
+     Galois group:   (C2 x C2 x C2) . PSL(3,2).  GAP transitive group ID = 14T33.  Order = 1344
+
+ I4: ModuliField:    Q(x^4-x^3+3*x^2+3*x+2) = Q( sqrt(-7), sqrt(sqrt(-7)-7) ).
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[1,1,2^11]  infty:[1,2,7^3]
+     Decomposition:  none
+     Galois group:   S24.  Order = 24!
+
+ I5: ModuliField:    Q(x^4-x^3+3*x^2+3*x+2) = Q( sqrt(-7), sqrt(sqrt(-7)-7) ).
+     Obstruction:    none
+     Branch type:    0:[3^16]  1:[2^24]  infty:[1,1,2,2,7^6]
+     Decomposition:  I4(deg 2) 
+     Galois group:   Order = 5204698426366666226930810880000
+
+ I6: ModuliField:    Q(x^4-x^3+3*x^2+3*x+2) = Q( sqrt(-7), sqrt(sqrt(-7)-7) ).
+     Obstruction:    none
+     Branch type:    0:[2,3^12]  1:[2^19]  infty:[1^3,7^5]
+     Decomposition:  none
+     Galois group:   S38.  Order = 38!
+
+ I7: ModuliField:    Q(x^4-2*x^3+2*x^2+2).
+     Obstruction:    none
+     Branch type:    0:[1,4,4]  1:[1,2^4]  infty:[1,1,7]
+     Decomposition:  none
+     Galois group:   A9.  Order = 9!/2
+
+ I8: ModuliField:    Q(x^4-x^3+2*x+1) = Q( sqrt(-3), sqrt(3-2*sqrt(-3)) ).
+     Obstruction:    none
+     Branch type:    0:[1,3^9]  1:[2^14]  infty:[1,1,5,7^3]
+     Decomposition:  none
+     Galois group:   A28.  Order = 28!/2
+
+ I9: ModuliField:    Q(x^4-x^3+2*x+1) = Q( sqrt(-3), sqrt(3-2*sqrt(-3)) ).
+     Obstruction:    none
+     Branch type:    0:[1^3,3^6]  1:[1,2^10]  infty:[7^3]
+     Decomposition:  none
+     Galois group:   A21.  Order = 21!/2
+
+I10: ModuliField:    Q(x^4-2*x^2-4*x-1).
+     Obstruction:    none
+     Branch type:    0:[2,3^3]  1:[1,2^5]  infty:[1,2,8]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+     [Felikson, Figure 17 (2,3,8), Entries #6, #7]
+
+I11: ModuliField:    Q(x^4-3*x^2+6) = Q( sqrt(-15), sqrt(6+2*sqrt(-15)) ).
+     Obstruction:    none
+     Branch type:    0:[4^3]  1:[1,1,2^5]  infty:[1,1,5,5]
+     Decomposition:  G46(deg 2) 
+     Galois group:   GAP transitive group ID = 12T286.  Order = 23040
+
+I12: ModuliField:    Q(x^4-2*x^3+3).
+     Obstruction:    none
+     Branch type:    0:[1,2,4]  1:[1,2^3]  infty:[1,6]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+I13: ModuliField:    Q(x^4-2*x^3+3).
+     Obstruction:    none
+     Branch type:    0:[1,1,4^3]  1:[2^7]  infty:[1,1,6,6]
+     Decomposition:  I12(deg 2) 
+     Galois group:   GAP transitive group ID = 14T57.  Order = 645120
+
+I14: ModuliField:    Q(x^4-14*x+21).
+     Obstruction:    none
+     Branch type:    0:[1^3,3^11]  1:[2^18]  infty:[1,7^5]
+     Decomposition:  none
+     Galois group:   A36.  Order = 36!/2
+
+I15: ModuliField:    Q(x^4-x^3+16*x-4).
+     Obstruction:    none
+     Branch type:    0:[1,2,3,3]  1:[1,2^4]  infty:[2,7]
+     Decomposition:  none
+     Galois group:   S9.  Order = 9!
+     [Felikson, Figure 18 (2,3,7), Entries #9, #12]
+
+I16: ModuliField:    Q(x^4-2*x^3+x^2+2) = Q( sqrt(-2), sqrt(1+4*sqrt(-2)) ).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[2^11]  infty:[1,2,3,8,8]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+
+I17: ModuliField:    Q(x^4-x^3+3*x^2+x+2).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[1,3,9]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+
+I18: ModuliField:    Q(x^4-3*x^2-2*x+6).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[1,4,8]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+
+I19: ModuliField:    Q(x^4-3*x^2-2*x+6).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^8]  1:[2^13]  infty:[1,1,8^3]
+     Decomposition:  I18(deg 2) 
+     Galois group:   GAP transitive group ID = 26T89.  Order = 25505877196800
+
+I20: ModuliField:    Q(x^4+3*x^2-7*x+4).
+     Obstruction:    none
+     Branch type:    0:[1,3^6]  1:[1,2^9]  infty:[2,3,7,7]
+     Decomposition:  none
+     Galois group:   S19.  Order = 19!
+
+I21: ModuliField:    Q(x^4-x^3+9*x^2+5*x+4).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[1,5,7]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+
+I22: ModuliField:    Q(x^5-2*x^3-4*x^2-5*x-4).
+     Obstruction:    none
+     Branch type:    0:[1,3^5]  1:[1,1,2^7]  infty:[2,7,7]
+     Decomposition:  none
+     Galois group:   S16.  Order = 16!
+
+I23: ModuliField:    Q(x^5-2*x^3-4*x^2-5*x-4).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^10]  1:[2^16]  infty:[2,2,7^4]
+     Decomposition:  I22(deg 2) 
+     Galois group:   Order = 685597979049984000
+     [Felikson, Figure 18 (2,3,7), Entry #43]
+
+I24: ModuliField:    Q(x^5-2*x^3-4*x^2-6*x-4).
+     Obstruction:    none
+     Branch type:    0:[1,4,4]  1:[1,2^4]  infty:[1,3,5]
+     Decomposition:  none
+     Galois group:   A9.  Order = 9!/2
+     [Felikson, Figure 13 (2,4,5), Entry #7]
+
+I25: ModuliField:    Q(x^5-x^4+2*x^3-2*x^2-x-1).
+     Obstruction:    none
+     Branch type:    0:[3^9]  1:[1,2^13]  infty:[1,2,3,7^3]
+     Decomposition:  none
+     Galois group:   S27.  Order = 27!
+     [Felikson, Figure 18 (2,3,7), Entry #47]
+
+I26: ModuliField:    Q(x^5-x^4-2*x^3+5*x^2-2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^5]  1:[2^9]  infty:[1,3,7,7]
+     Decomposition:  none
+     Galois group:   S18.  Order = 18!
+     [Felikson, Figure 18 (2,3,7), Entry #36]
+
+I27: ModuliField:    Q(x^5-2*x^4+2*x^3-3*x^2+3).
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[1,1,2^8]  infty:[1,3,7,7]
+     Decomposition:  none
+     Galois group:   A18.  Order = 18!/2
+
+I28: ModuliField:    Q(x^5-2*x^4+2*x^3-3*x^2+3).
+     Obstruction:    none
+     Branch type:    0:[3^12]  1:[2^18]  infty:[1,1,3,3,7^4]
+     Decomposition:  I27(deg 2) 
+     Galois group:   Order = 419585963178590208000
+     [Felikson, Figure 18 (2,3,7), Entry #57]
+
+I29: ModuliField:    Q(x^5-2*x^4+2*x^3-4*x^2+x+8).
+     Obstruction:    none
+     Branch type:    0:[1,2,4,4]  1:[1,2^5]  infty:[1,5,5]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+     [Felikson, Figure 13 (2,4,5), Entry #13]
+
+I30: ModuliField:    Q(x^5-2*x^4+2*x^3-4*x^2+x+8).
+     Obstruction:    none
+     Branch type:    0:[1,1,4^5]  1:[2^11]  infty:[1,1,5^4]
+     Decomposition:  I29(deg 2) 
+     Galois group:   GAP transitive group ID = 22T50.  Order = 40874803200
+     [Felikson, Figure 13 (2,4,5), Entry #20]
+
+I31: ModuliField:    Q(x^5-x^4-6*x^3+10*x^2-5*x+5).
+     Obstruction:    none
+     Branch type:    0:[1,4^3]  1:[1,2^6]  infty:[1,2,5,5]
+     Decomposition:  none
+     Galois group:   S13.  Order = 13!
+     [Felikson, Figure 13 (2,4,5), Entry #16]
+
+I32: ModuliField:    Q(x^5-2*x^4+2*x^3-4*x^2-2*x-2).
+     Obstruction:    none
+     Branch type:    0:[3^11]  1:[1,2^16]  infty:[1,1,3,7^4]
+     Decomposition:  none
+     Galois group:   A33.  Order = 33!/2
+
+I33: ModuliField:    Q(x^5-2*x^4+2*x^2-3*x-6).
+     Obstruction:    none
+     Branch type:    0:[2,3^5]  1:[1,2^8]  infty:[1,2,7,7]
+     Decomposition:  none
+     Galois group:   S17.  Order = 17!
+     [Felikson, Figure 18 (2,3,7), Entry #28]
+
+ J1: ModuliField:    Q(x^6-2*x^5-x^4+2*x^2+4*x+2) = Q( sqrt(-2), x^3-x^2-2*x-sqrt(-2)*(x^2-x-1) ).
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[1,1,2^8]  infty:[1,1,8,8]
+     Decomposition:  G17(deg 2) 
+     Galois group:   GAP transitive group ID = 18T801.  Order = 110592
+
+ J2: ModuliField:    Q(x^6-8*x^3+9*x^2+18).
+     Obstruction:    none
+     Branch type:    0:[1,2,3,3]  1:[1,2^4]  infty:[1,8]
+     Decomposition:  none
+     Galois group:   S9.  Order = 9!
+
+ J3: ModuliField:    Q(x^6-3*x^5+6*x^4-3*x^3+3*x^2-3*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^6]  1:[2^10]  infty:[1,1,9,9]
+     Decomposition:  J4(deg 2) 
+     Galois group:   GAP transitive group ID = 20T1100.  Order = 928972800
+
+ J4: ModuliField:    Q(x^6-3*x^5+6*x^4-3*x^3+3*x^2-3*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[1,1,2^4]  infty:[1,9]
+     Decomposition:  none
+     Galois group:   A10.  Order = 10!/2
+
+ J5: ModuliField:    Q(x^6-2*x^5+5*x^2+5).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[1,2,10]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+
+ J6: ModuliField:    Q(x^6-x^5+7*x^4-5*x^3+14*x^2-2*x+6) = Q(sqrt(-8-28^(1/3))).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^9]  1:[2^15]  infty:[1,1,7^4]
+     Decomposition:  none
+     Galois group:   S30.  Order = 30!
+
+ J7: ModuliField:    Q(x^6-x^5+3*x^4-3*x^3-2*x^2+4*x+2) = Q( sqrt(-7), 2*x^3-x^2+x+1+sqrt(-7)*(x^2-x-1) ).
+     Obstruction:    none
+     Branch type:    0:[1,3^15]  1:[2^23]  infty:[1,1,2,7^6]
+     Decomposition:  none
+     Galois group:   S46.  Order = 46!
+
+ J8: ModuliField:    Q(x^6-3*x^5+5*x^4-5*x^3+x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^3]  1:[1,2^5]  infty:[1,10]
+     Decomposition:  none
+     Galois group:   S11.  Order = 11!
+
+ J9: ModuliField:    Q(x^6-3*x^5+9*x^4-11*x^3+30*x^2-18*x+46).
+     Obstruction:    none
+     Branch type:    0:[1,3^4]  1:[1,2^6]  infty:[1,1,11]
+     Decomposition:  none
+     Galois group:   A13.  Order = 13!/2
+
+J10: ModuliField:    Q(x^6+x^4-3*x^3+6*x^2-4*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,3^11]  1:[2^17]  infty:[1,2,3,7^4]
+     Decomposition:  none
+     Galois group:   S34.  Order = 34!
+
+J11: ModuliField:    Q(x^6-3*x^5-6*x^4+4*x^3+45*x^2+27*x+4).
+     Obstruction:    none
+     Branch type:    0:[1,3^6]  1:[1,2^9]  infty:[1,4,7,7]
+     Decomposition:  none
+     Galois group:   S19.  Order = 19!
+     [Felikson, Figure 18 (2,3,7), Entries #44, #45]
+
+J12: ModuliField:    Q(x^6-2*x^5+3*x^4+x^2+4*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^8]  1:[2^13]  infty:[1,4,7^3]
+     Decomposition:  none
+     Galois group:   S26.  Order = 26!
+
+J13: ModuliField:    Q(x^7-x^6-2*x^4-x^3+2*x^2+2*x+2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^12]  1:[2^19]  infty:[1,2,7^5]
+     Decomposition:  none
+     Galois group:   S38.  Order = 38!
+
+J14: ModuliField:    Q(x^7-x^6-x^5+5*x^4+5*x^3-4*x^2-6*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^7]  1:[1,2^11]  infty:[2,7^3]
+     Decomposition:  none
+     Galois group:   S23.  Order = 23!
+
+J15: ModuliField:    Q(x^7-2*x^6-4*x^5-3*x^4+5*x^3-4*x^2+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,2,3^6]  1:[2^11]  infty:[1,7^3]
+     Decomposition:  none
+     Galois group:   S22.  Order = 22!
+
+J16: ModuliField:    Q(x^7-x^6+x^5+5*x^4+x^3+6*x^2+9*x+3).
+     Obstruction:    none
+     Branch type:    0:[1,3^13]  1:[2^20]  infty:[1,1,3,7^5]
+     Decomposition:  none
+     Galois group:   A40.  Order = 40!/2
+
+J17: ModuliField:    Q(x^7-3*x^6+2*x^5+6*x^4-6*x^3-4*x^2+4*x+4).
+     Obstruction:    none
+     Branch type:    0:[2,3^7]  1:[1,2^11]  infty:[1,1,7^3]
+     Decomposition:  none
+     Galois group:   S23.  Order = 23!
+     [Felikson, Figure 18 (2,3,7), Entry #55]
+
+J18: ModuliField:    Q(x^8-2*x^7+6*x^6-8*x^5+18*x^4-20*x^3+16*x^2-20*x+10) = Q(I, sqrt(1+2*I), sqrt(3-I-(2+I)*sqrt(1+2*I)) ).
+     Obstruction:    none
+     Branch type:    0:[1,4^4]  1:[1,2^8]  infty:[1,1,5^3]
+     Decomposition:  none
+     Galois group:   A17.  Order = 17!/2
+
+J19: ModuliField:    Q(x^9-2*x^8+13*x^7-30*x^6+81*x^5-118*x^4+171*x^3-114*x^2+70*x-8) = Q(a, x^3+(a*(a-3)/2-3)*(x^2+1)+a*x+2) where a^3-7*a-14 = 0.
+     Obstruction:    none
+     Branch type:    0:[3^10]  1:[1,1,2^14]  infty:[1,1,7^4]
+     Decomposition:  H45(deg 2) 
+     Galois group:   GAP transitive group ID = 30T5688.  Order = 10712468422656000
+     [Felikson, Figure 18 (2,3,7), Entry #49]
+
+J20: ModuliField:    Q(x^9-x^8-4*x^6+4*x^4+8*x^3+8*x^2+2*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^5]  1:[1,2^8]  infty:[1,8,8]
+     Decomposition:  none
+     Galois group:   A17.  Order = 17!/2
+
+J21: ModuliField:    Q(x^10-4*x^9+4*x^8+8*x^7-12*x^6-32*x^5+80*x^4-16*x^3-60*x^2+16*x+16).
+     Obstruction:    none
+     Branch type:    0:[1,3^6]  1:[1,2^9]  infty:[1,2,8,8]
+     Decomposition:  none
+     Galois group:   S19.  Order = 19!
+
+J22: ModuliField:    Q(x^10-3*x^9+14*x^8-39*x^7+110*x^6-217*x^5+381*x^4-478*x^3+518*x^2-370*x+200).
+     Obstruction:    none
+     Branch type:    0:[1,2,3^4]  1:[1,2^7]  infty:[1,7,7]
+     Decomposition:  none
+     Galois group:   S15.  Order = 15!
+
+J23: ModuliField:    Q(x^11-x^10-6*x^9+11*x^8+2*x^7-28*x^6+26*x^5+44*x^4-104*x^3+112*x^2-64*x+32).
+     Obstruction:    none
+     Branch type:    0:[1,3^8]  1:[1,2^12]  infty:[1,3,7^3]
+     Decomposition:  none
+     Galois group:   A25.  Order = 25!/2
+     [Felikson, Figure 18 (2,3,7), Entry #52]
+
+J24: ModuliField:    Q(x^13-2*x^12-6*x^11+2*x^10+37*x^9-4*x^8-50*x^7-46*x^6+6*x^5+54*x^4+70*x^3+40*x^2+8*x-2).
+     Obstruction:    none
+     Branch type:    0:[1,3^10]  1:[1,2^15]  infty:[1,2,7^4]
+     Decomposition:  none
+     Galois group:   S31.  Order = 31!
+     [Felikson, Figure 18 (2,3,7), Entry #48]
+
+J25: ModuliField:    Q(x^13-3*x^12+8*x^11-6*x^10+6*x^9-8*x^8+14*x^7+8*x^6+8*x^5-6*x^4+6*x^3+7*x^2+7*x+14).
+     Obstruction:    none
+     Branch type:    0:[1,3^7]  1:[1,1,2^10]  infty:[1,7^3]
+     Decomposition:  none
+     Galois group:   A22.  Order = 22!/2
+
+J26: ModuliField:    Q(x^13-3*x^12+8*x^11-6*x^10+6*x^9-8*x^8+14*x^7+8*x^6+8*x^5-6*x^4+6*x^3+7*x^2+7*x+14).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^14]  1:[2^22]  infty:[1,1,7^6]
+     Decomposition:  J25(deg 2) 
+     Galois group:   Order = 1178600187130132750663680000
+     [Felikson, Figure 18 (2,3,7), Entry #56]
+
+J27: ModuliField:    Q(x^14-x^13-4*x^12-3*x^11+8*x^10+41*x^9-30*x^8-88*x^7+78*x^6+8*x^5-8*x^4-36*x^3+64*x^2-4*x+4).
+     Obstruction:    none
+     Branch type:    0:[1,1,3^9]  1:[1,2^14]  infty:[1,7^4]
+     Decomposition:  none
+     Galois group:   A29.  Order = 29!/2
+
+J28: ModuliField:    Q(x^15-5*x^14+15*x^13-21*x^12+19*x^11+17*x^10-31*x^9-3*x^8+411*x^7-1027*x^6+1661*x^5-1515*x^4+1137*x^3-553*x^2+307*x-29).
+     Obstruction:    none
+     Branch type:    0:[1,3^12]  1:[1,2^18]  infty:[1,1,7^5]
+     Decomposition:  none
+     Galois group:   A37.  Order = 37!/2
+
+ S1: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[1^3,9]
+     Decomposition:  S47(deg 3) 
+     Galois group:   ((C3 x ((C3 x C3) : C2)) : C2) : C3.  GAP transitive group ID = 12T132.  Order = 324
+
+ S2: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[1,1,2,8]
+     Decomposition:  S43(deg 2) 1/S34(deg 4)(see #1) 
+     Galois group:   ((C4 x C4) : C3) : C2.  GAP transitive group ID = 12T65.  Order = 96
+
+ S3: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[1,2,3,6]
+     Decomposition:  S47(deg 3) 1/S34(deg 4) 
+     Galois group:   A4 x S3.  GAP transitive group ID = 12T43.  Order = 72
+
+ S4: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[1,1,5,5]
+     Decomposition:  S26(deg 2) 
+     Galois group:   A5.  GAP transitive group ID = 12T33.  Order = 60
+
+ S5: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[2,2,4,4]
+     Decomposition:  S43(deg 2) S27(deg 2) 1/S49(deg 2) 1/S34(deg 4)(see #3) 1/S34(deg 4)(see #1,2,3) 1/S34(deg 4)(see #3) 1-S32(deg 6)(see #3) 
+     Galois group:   S4.  GAP transitive group ID = 12T9.  Order = 24
+
+ S6: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^4]  1:[2^6]  infty:[3^4]
+     Decomposition:  1-S28(deg 2) 1-S28(deg 2) 1-S28(deg 2) S47(deg 3) S47(deg 3) S47(deg 3) S47(deg 3) S33(deg 4)(see #1,2,3) 
+     Galois group:   A4.  GAP transitive group ID = 12T4.  Order = 12
+
+ S7: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[2^5]  infty:[1,1,8]
+     Decomposition:  none
+     Galois group:   A6 : C2.  GAP transitive group ID = 10T30.  Order = 720
+
+ S8: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[2^5]  infty:[1,2,7]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+ S9: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[2^5]  infty:[1,4,5]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+S10: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3^3]  1:[2^5]  infty:[2,3,5]
+     Decomposition:  none
+     Galois group:   S10.  Order = 10!
+
+S11: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1,2^4]  infty:[1,1,7]
+     Decomposition:  none
+     Galois group:   PSL(2,8).  GAP transitive group ID = 9T27.  Order = 504
+
+S12: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1,2^4]  infty:[1,2,6]
+     Decomposition:  1/S34(deg 3) 
+     Galois group:   ((C3 x C3) : C3) : C2.  GAP transitive group ID = 9T11.  Order = 54
+
+S13: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1,2^4]  infty:[1,3,5]
+     Decomposition:  none
+     Galois group:   A9.  Order = 9!/2
+
+S14: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^3]  1:[1,2^4]  infty:[2,3,4]
+     Decomposition:  1/S34(deg 3) 
+     Galois group:   (((C3 x ((C3 x C3) : C2)) : C2) : C3) : C2.  GAP transitive group ID = 9T30.  Order = 648
+
+S15: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,3,3]  1:[2^4]  infty:[1,1,6]
+     Decomposition:  S47(deg 2) 
+     Galois group:   (((C2 x D8) : C2) : C3) : C2.  GAP transitive group ID = 8T38.  Order = 192
+
+S16: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,3,3]  1:[2^4]  infty:[1,2,5]
+     Decomposition:  none
+     Galois group:   S8.  Order = 8!
+
+S17: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,3,3]  1:[2^4]  infty:[2,3,3]
+     Decomposition:  S47(deg 2) 
+     Galois group:   (((C2 x D8) : C2) : C3) : C2.  GAP transitive group ID = 8T38.  Order = 192
+
+S18: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[2^4]  infty:[1,7]
+     Decomposition:  none
+     Galois group:   PSL(3,2).  GAP transitive group ID = 8T37.  Order = 168
+
+S19: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[2^4]  infty:[2,6]
+     Decomposition:  S47(deg 2) 1-S32(deg 4) 
+     Galois group:   C2 x A4.  GAP transitive group ID = 8T13.  Order = 24
+
+S20: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,3,3]  1:[2^4]  infty:[4,4]
+     Decomposition:  S36(deg 2) 1-S32(deg 4) 
+     Galois group:   S4.  GAP transitive group ID = 8T14.  Order = 24
+
+S21: ModuliField:    Q(sqrt(-3)).
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1,2^3]  infty:[1,6]
+     Decomposition:  none
+     Galois group:   (C7 : C3) : C2.  GAP transitive group ID = 7T4.  Order = 42
+
+S22: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1,2^3]  infty:[2,5]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+S23: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3,3]  1:[1,2^3]  infty:[3,4]
+     Decomposition:  none
+     Galois group:   S7.  Order = 7!
+
+S24: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,2,3]  1:[2^3]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   S6.  Order = 6!
+
+S25: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,2,3]  1:[2^3]  infty:[2,4]
+     Decomposition:  1-S32(deg 3) 
+     Galois group:   (S3 x S3) : C2.  GAP transitive group ID = 6T13.  Order = 72
+
+S26: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3,3]  1:[1,1,2,2]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   A5.  GAP transitive group ID = 6T12.  Order = 60
+
+S27: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3,3]  1:[1,1,2,2]  infty:[2,4]
+     Decomposition:  1/S34(deg 2) 
+     Galois group:   S4.  GAP transitive group ID = 6T7.  Order = 24
+
+S28: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,2,2]  1:[3,3]  infty:[3,3]
+     Decomposition:  1-S33(deg 2) 
+     Galois group:   A4.  GAP transitive group ID = 6T4.  Order = 12
+
+S29: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,3]  1:[1,2,2]  infty:[1,4]
+     Decomposition:  none
+     Galois group:   S5.  Order = 5!
+
+S30: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,3]  1:[1,2,2]  infty:[2,3]
+     Decomposition:  none
+     Galois group:   S5.  Order = 5!
+
+S31: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2,2]  1:[2,2]  infty:[2,2]
+     Decomposition:  1-S32(deg 2) S32(deg 2) 1/(1-S32)(deg 2) 
+     Galois group:   C2 x C2.  GAP transitive group ID = 4T2.  Order = 4
+
+S32: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2]  1:[1,1]  infty:[2]
+     Decomposition:  none
+     Galois group:   C2.  Order = 2
+
+S33: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3]  1:[1^3]  infty:[3]
+     Decomposition:  none
+     Galois group:   C3.  Order = 3
+
+S34: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,2]  1:[1,2]  infty:[3]
+     Decomposition:  none
+     Galois group:   S3.  Order = 3!
+
+S35: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,2]  1:[2,2]  infty:[4]
+     Decomposition:  1-S32(deg 2) 
+     Galois group:   D8.  GAP transitive group ID = 4T3.  Order = 8
+
+S36: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3]  1:[1,1,2]  infty:[4]
+     Decomposition:  none
+     Galois group:   S4.  Order = 4!
+
+S37: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,2,2]  1:[1,1,3]  infty:[5]
+     Decomposition:  none
+     Galois group:   A5.  Order = 5!/2
+
+S38: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1^3,3]  1:[2^3]  infty:[6]
+     Decomposition:  1-S32(deg 3) 
+     Galois group:   C3 x S3.  GAP transitive group ID = 6T5.  Order = 18
+
+S39: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2^3]  1:[1,1,2,2]  infty:[6]
+     Decomposition:  S34(deg 2) S32(deg 3) 
+     Galois group:   D12.  GAP transitive group ID = 6T3.  Order = 12
+
+S40: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,2,4]  1:[2^4]  infty:[4,4]
+     Decomposition:  S35(deg 2) 1-S32(deg 4)(see #1) 
+     Galois group:   ((C4 x C2) : C2) : C2.  GAP transitive group ID = 8T19.  Order = 32
+
+S41: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2^4]  1:[2^4]  infty:[4,4]
+     Decomposition:  S35(deg 2) 1-S35(deg 2) 1-S35(deg 2) S35(deg 2) S31(deg 2) 1-S32(deg 4)(see #1,4,5) S32(deg 4)(see #2,3,5) 1/(1-S32)(deg 4)(see #5) 
+     Galois group:   D8.  GAP transitive group ID = 8T4.  Order = 8
+
+S42: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,1,4]  1:[2^3]  infty:[1,5]
+     Decomposition:  none
+     Galois group:   S5.  GAP transitive group ID = 6T14.  Order = 120
+
+S43: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3,3]  1:[2^3]  infty:[1,1,4]
+     Decomposition:  1/S34(deg 2) 
+     Galois group:   S4.  GAP transitive group ID = 6T8.  Order = 24
+
+S44: ModuliField:    Q(sqrt(-1)).
+     Obstruction:    none
+     Branch type:    0:[1,4]  1:[1,2,2]  infty:[1,4]
+     Decomposition:  none
+     Galois group:   C5 : C4.  GAP transitive group ID = 5T3.  Order = 20
+
+S45: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,2,2]  1:[1,2,2]  infty:[5]
+     Decomposition:  none
+     Galois group:   D10.  GAP transitive group ID = 5T2.  Order = 10
+
+S46: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3]  1:[1,3]  infty:[1,3]
+     Decomposition:  none
+     Galois group:   A4.  Order = 4!/2
+
+S47: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[1,3]  1:[2,2]  infty:[1,3]
+     Decomposition:  none
+     Galois group:   A4.  Order = 4!/2
+
+S48: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[4]  1:[1^4]  infty:[4]
+     Decomposition:  S32(deg 2) 
+     Galois group:   C4.  GAP transitive group ID = 4T1.  Order = 4
+
+S49: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[2^3]  1:[2^3]  infty:[3,3]
+     Decomposition:  S34(deg 2) S34(deg 2) S34(deg 2) 1/(1-S32)(deg 3) 
+     Galois group:   S3.  GAP transitive group ID = 6T2.  Order = 6
+
+S50: ModuliField:    Q.
+     Obstruction:    none
+     Branch type:    0:[3^8]  1:[2^12]  infty:[1^3,7^3]
+     Decomposition:  S18(deg 3) 
+     Galois group:   PSL(3,2).  GAP transitive group ID = 24T284.  Order = 168
+
+S51: ModuliField:    Q(sqrt(-7)).
+     Obstruction:    none
+     Branch type:    0:[3^6]  1:[2^9]  infty:[1,1,2,7,7]
+     Decomposition:  S11(deg 2) 
+     Galois group:   GAP transitive group ID = 18T855.  Order = 258048
+

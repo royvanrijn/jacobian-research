@@ -1,0 +1,63 @@
+{
+  "outcome": "PASS",
+  "checks": [
+    "Tang source version hash",
+    "import source hash: de-poi-0407339v1.pdf",
+    "import source hash: de-bondt-1609.03904v2.html",
+    "import source hash: de-poi-0407339v1.html",
+    "import source hash: moh-degree100.html",
+    "universal symmetric 4x4 rank-one determinant update",
+    "finite-endpoint trace numerator",
+    "finite-endpoint second characteristic coefficient",
+    "infinite-endpoint compatibility leaves q_second*b_s",
+    "infinite-endpoint covector annihilates W_s",
+    "infinite-endpoint covector annihilates W_t",
+    "one-phase determinant weight",
+    "three-phase slope",
+    "two-phase plus partner slope",
+    "binary-common fibre-raise slope",
+    "three-affine-partner slope",
+    "negative-active path determinant weight",
+    "negative-active first-wall lower bound",
+    "lower-weight pure-power determinant weight",
+    "ordered first two crossings",
+    "rank-one initial endpoint",
+    "rank-two second-wall lower bound",
+    "complete Meng-Yang support base degrees by r power",
+    "middle support degree is arithmetic mean",
+    "general degree-seven polynomial pullback bound",
+    "degree-47 potential bound is 100",
+    "degree-48 endpoint potential bound",
+    "unique degree-48 highest part is a square",
+    "degree-48 next weighted layer is strictly lower",
+    "degree-49 first uncovered degree after proper-power refinement",
+    "marked v2 gradient at point 0",
+    "marked v2 gradient at point 1",
+    "collision transfer independent of all graph first derivatives"
+  ],
+  "check_count": 33,
+  "applications": {
+    "base_degree_by_r_power": {
+      "0": 14,
+      "1": 10,
+      "2": 6
+    },
+    "all_graph_degrees_potential_bound": "max(14,2*d+6)",
+    "plane_degree_import": 100,
+    "potential_degree_consequence": 101,
+    "proper_power_top_potential_degree_consequence": 102,
+    "marked_collision_graph_degree_excluded": 48,
+    "unmarked_graphs_excluded": false,
+    "general_pullback_degree_excluded_with_collision_jet_match": 7
+  },
+  "elapsed_seconds": 0.137,
+  "runtime": {
+    "python": "3.12.3",
+    "sympy": "1.14.0",
+    "flint": "0.9.0"
+  },
+  "geometric_classification": "imported De Poi Theorem0.1; written hypothesis review",
+  "full_structural_coverage": "written in STRUCTURAL_REVIEW.md, not certified by this finite checker",
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,742 @@
+{
+  "as_of": "2026-11-13",
+  "purpose": "Literature triage before further Jacobian calculations",
+  "mathematical_status_authority": "../../MATH_STATUS.json",
+  "independent_audit_note": "The initial literature triage promoted no new external theorem. Follow-up reproduction HC4D5EXT1 closes OP-HC4-D5, and the complete written Tang audit registers HCTANG2/HCTANG3. Geometric coverage is written, bulk Giraudin algorithms are not independently reimplemented, and no formal or external review is claimed. Earlier de Bondt and Tang scoped additions are linked separately.",
+  "records": [
+    {
+      "id": "hexagon:2611.00156v1",
+      "title": "Equivalence of the Four-Variable Hessian and Planar Jacobian Conjectures",
+      "authors": [
+        "Qiyue Tang"
+      ],
+      "published": "2026-11-06",
+      "source": "https://hexagonmath.org/pdf/2611.00156v1",
+      "priority": "reproduced structural theorem",
+      "review_depth": "Full written proof review of Theorems2.1/2.3, De Poi import, Lemmas3.2-3.8 and Proposition4.1; exact supporting algebra replayed",
+      "repository_relevance": "HCTANG2 reproduces the constant-linear cotangent alternative and HC4-JC2 equivalence. HCTANG3 gives potential degree101, marked-collision Meng-Yang graph degree48, degree7 polynomial pullbacks with collision jet match, and a finite constant-covector certificate. HCTANG1 separately adds sharp rational pole bounds. The later local HC4MYGALL1 corollary excludes the entire standard polynomial-graph collision chart in every degree via the elementary HC4MYGAP1 obstruction, without a plane degree import. HC4MYGT2 additionally excludes both arbitrary-degree triangular dual orders with base-dependent coefficients and every base-independent plane Keller dual substitution, using the elementary HC4MYGT1 theorem. Neither conjecture is settled; no formal verification or external review.",
+      "independent_proof_audit_in_this_pass": false,
+      "followup_audit": "../tang-hc4-audit/STRUCTURAL_REVIEW.md",
+      "followup_status": "Written structural reproduction HCTANG2 and quantitative corollary HCTANG3; geometric coverage is not certified by the finite checker"
+    },
+    {
+      "id": "hexagon:2611.00161v1",
+      "title": "The four-dimensional Hessian conjecture for potentials of degree at most five",
+      "authors": [
+        "David Niedbala Giraudin"
+      ],
+      "published": "2026-11-06",
+      "source": "https://hexagonmath.org/pdf/2611.00161v1",
+      "priority": "reproduced follow-up",
+      "review_depth": "Full manuscript and source inspected; 247 main checks replayed, normalization and stabilizer coverage reviewed after initial literature triage",
+      "repository_relevance": "HC4D5EXT1 closes OP-HC4-D5 by reproduction, together with 29 dependency checks. HC4D5Z1 adds an independently constructed complete 35-coefficient unit ideal. Explicitly unrefereed; no full independent reimplementation, formal verification or external review. Not arbitrary-degree HC4 or JC2.",
+      "independent_proof_audit_in_this_pass": false,
+      "followup_audit": "../hc4-degree-five-audit/README.md",
+      "followup_status": "Reproduced with written coverage review; HC4D5EXT1 closes OP-HC4-D5"
+    },
+    {
+      "id": "hexagon:2611.00134v1",
+      "title": "The four-dimensional Hessian conjecture for quintic potentials with a ternary cone top",
+      "authors": [
+        "David Niedbala Giraudin"
+      ],
+      "published": "2026-11-05",
+      "source": "https://hexagonmath.org/pdf/2611.00134v1",
+      "priority": "reproduced dependency",
+      "review_depth": "Full manuscript and source inspected; all 29 checks replayed and written ternary normalizations reviewed after initial triage",
+      "repository_relevance": "Ternary quintic-top dependency used by HC4D5EXT1. The next-day paper supplies binary and unary cases. These are dependent parts of one reproduction, not independent complete proofs.",
+      "independent_proof_audit_in_this_pass": false,
+      "followup_audit": "../hc4-degree-five-audit/README.md",
+      "followup_status": "Reproduced with written coverage review; HC4D5EXT1 closes OP-HC4-D5"
+    },
+    {
+      "id": "http://arxiv.org/abs/2611.07106v1",
+      "title": "PIT and Reconstruction for Sums of Powers",
+      "published": "2026-11-04T20:20:24Z",
+      "updated": "2026-11-04T20:20:24Z",
+      "authors": [
+        "Nimrod Kaplan",
+        "Amir Shpilka",
+        "Yann Tal"
+      ],
+      "abstract": "We study deterministic black-box polynomial identity testing (PIT) and reconstruction for polynomials of the form \\[ f(x)=\\sum_{i=1}^r α_i f_i(x)^d, \\] where each $f_i$ belongs to some underlying polynomial class $\\mathcal{C}$. This representation generalizes Waring decomposition, several natural small-depth circuit models, and polynomial decompositions arising in moment-based learning problems. Our main results are three lifting theorems showing that, when the outer power is sufficiently large, PIT and reconstruction for the inner class can be lifted to sums of powers. When the power degree is small, we can perform these tasks directly in some of the cases using closure properties of the underlying models. In particular we obtain the following results: \\begin{itemize} \\item When the inner polynomials have bounded-individual-degrees and are sparse, we obtain deterministic reconstruction for every d: the original power-sum decomposition is recovered at high degree, while at low degree the polynomial is reconstructed nonproperly by sparse interpolation. \\item For sums of powers of same-order and any-order read-once oblivious algebraic branching programs, the same proper/nonproper dichotomy gives deterministic reconstruction for every powering degree. \\item Explicit quasipolynomial-size hitting sets for every powering degree for several depth-5 and depth-6 circuit families, as well for the models mentioned above. Our results for high powering degree rely on the polynomial ABC theorem, which to the best of our knowledge is the first application of this theorem in the context of PIT.",
+      "source": "https://arxiv.org/abs/2611.07106v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.00222v2",
+      "title": "Counterexamples to the Jacobian conjecture in dimensions greater than two",
+      "published": "2026-07-31T19:08:59Z",
+      "updated": "2026-11-04T20:13:48Z",
+      "authors": [
+        "Shuhong Gao"
+      ],
+      "abstract": "The Jacobian conjecture, open since 1939, asks whether every polynomial map of $\\C^n$ whose Jacobian determinant is a nonzero constant must have a polynomial inverse. It was refuted in dimension three by Alpöge on July 19, 2026, with an infinite family by Gallagher (July 20) and a geometric explanation by Speyer (July 23): the counterexample sweeps the tangent lines of a plane curve. We give a self-contained account of this tangent-sweep mechanism and generalize it from plane curves to direction fields on hypersurfaces. The resulting construction, including stabilization of the three-dimensional family, produces counterexamples in every dimension greater than two and, in each dimension, of arbitrarily large geometric degree (the number of preimages of a typical point). We work it out in five explicit maps: one three-dimensional of degree four, two four-dimensional of degrees five and ten, and two five-dimensional of degrees six and twelve. We show that our explicit examples in dimensions $n\\ge4$ are not polynomially left-right equivalent to the counterexamples of Alpöge and Gallagher when these are embedded in $\\C^n$ by adjoining identity coordinates. The counterexamples provide explicit examples of étale morphisms $\\C^n\\to\\C^n$ that are not proper: they are everywhere unramified, and fail to be injective only through points escaping to infinity. All identities were verified in exact rational arithmetic. Part~\\ref{part:equivalence} proves the higher-dimensional inequivalence results, and Appendix A determines exact fiber structures for the three-dimensional examples. A complete classification of the fibers of $F_4,F_5,F_6,F_7$ remains open.",
+      "source": "https://arxiv.org/abs/2608.00222v2",
+      "review_depth": "abstract and organization; follow-up inspection of sections5.5,5.6 and11.1",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Revised4 November, still v2. Finite-cover one-point support and local fibre length differ from fibres of the original etale source. Complete F4-F7 fibre stratifications remain open. Relevant to the singleton-zero/properness distinction in the local HC4MYOR2 application; no full external proof replay is claimed."
+    },
+    {
+      "id": "http://arxiv.org/abs/2611.03572v1",
+      "title": "Counterexamples to the Jacobian Conjecture from the viewpoint of lineability",
+      "published": "2026-11-02T18:26:32Z",
+      "updated": "2026-11-02T18:26:32Z",
+      "authors": [
+        "L. Bernal-González",
+        "M. C. Calderón-Moreno",
+        "J. A. Prado-Bassas"
+      ],
+      "abstract": "Algebraic genericity in the family of polynomial counterexamples to the recently solved Jacobian Conjecture for $N\\ge3$ is investigated. The notion of affine-coneability is introduced and it is shown that this family is affine-coneable and 1-lineable, but not 2-lineable. Semigroupability is further studied with respect to coordinatewise multiplication and composition.",
+      "source": "https://arxiv.org/abs/2611.03572v1",
+      "review_depth": "metadata and abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Families of higher-dimensional counterexamples; no plane invertibility theorem."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.36736v1",
+      "title": "The Legendre potential and the gradient case of the differential Galois criterion for the Jacobian Conjecture",
+      "published": "2026-10-27T06:53:24Z",
+      "updated": "2026-10-27T06:53:24Z",
+      "authors": [
+        "Elżbieta Adamus",
+        "Zbigniew Hajto"
+      ],
+      "abstract": "Let $h\\in\\C[X_1,\\dots,X_n]$ have constant nonzero Hessian determinant, let $h^{*}$ be its formal Legendre transform and $g=\\vv{X,\\grad h}-h$. The Nambu derivations of $\\grad h$ satisfy $δ_i(g)=X_i$ and $δ^α(g)=(\\partial^αh^{*})\\circ\\grad h$. Consequently, in the gradient case the differential Galois criterion of \\cite{ACH19}, consisting of $n$ membership conditions, reduces to a single membership condition. Equivalently, $\\grad h$ is a polynomial automorphism if and only if $g\\in\\C[\\partial_1h,\\dots,\\partial_nh]$. Moreover, $\\grad h$ is a polynomial automorphism if and only if $δ^α(g)=0$ for $|α|=(°h-1)^{n-1}+2$, and then the coefficients $δ^α(g)(x_0)/α!$ of $h^{*}$ at $\\grad h(x_0)$ determine the inverse. If the Hessian determinant of $h$ is merely a nonzero polynomial, then $g$ is still a primitive element of $\\C(X)$ over $\\C(\\partial_1h,\\dots,\\partial_nh)$. For the Nambu-tower criterion, doubling a Keller map yields no independent conditions. After an affine change of coordinates putting $\\grad h$ in the normal form $X+H$, the formal Legendre transform is the sum of the formal Pascal difference series of $g$, and the termination of this series implies polynomial invertibility. In at most three variables the normal form of every gradient Keller map has strongly nilpotent Jacobian part and is therefore Pascal finite, by a theorem of de Bondt, and an explicit gradient automorphism in four variables has a normal form which is not Pascal finite. The five-variable counterexample of Meng and Yang shows that the properties used here do not imply the Hessian conjecture. The results do not settle the open cases $\\JC_2$ and $\\HC_4$.",
+      "source": "https://arxiv.org/abs/2610.36736v1",
+      "review_depth": "abstract and stated criteria",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "Single Legendre-potential membership / finite derivative criterion. Doubling supplies no independent Nambu conditions; a criterion is not a termination proof."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.36495v1",
+      "title": "Quartic Keller Maps and Tameness in Three Variables",
+      "published": "2026-10-27T01:53:47Z",
+      "updated": "2026-10-27T01:53:47Z",
+      "authors": [
+        "Jie Wang",
+        "Dan Yan"
+      ],
+      "abstract": "We study invertibility and tameness for polynomial maps of affine three-space of total degree at most four. We prove that every complex Keller map in this degree range is a polynomial automorphism and, independently, that every complex polynomial automorphism of total degree at most four is tame. The invertibility argument combines homogeneous factorization of the leading part, invariant rings of conic pencils, and residue obstructions on cubic fibers. The tameness argument uses a criterion based on a constant second directional derivative, low-degree coordinate classifications, and local tameness of plane polynomial automorphisms over a polynomial parameter ring. The invertibility conclusion extends to every field of characteristic zero.",
+      "source": "https://arxiv.org/abs/2610.36495v1",
+      "review_depth": "main theorem and proof outline",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "Claims ordinary total degree at most four for three-variable Keller maps. Not a bound on geometric degree; degree-five and degree-six cases remain proposed questions."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.02961v2",
+      "title": "Some arithmetical aspects of the two dimensional Jacobian Conjecture",
+      "published": "2026-10-02T07:58:38Z",
+      "updated": "2026-10-26T08:05:54Z",
+      "authors": [
+        "Ronen Peretz"
+      ],
+      "abstract": "We prove that any counter-example to the two dimensional Jacobian Conjecture with integral coefficients and determinant of its Jacobian matrix equals one, has only paths of asymptotic values that can contain only finitely many points of the planar integral lattice. The second part of our paper gives some nontrivial applications of the theory of certain Theta functions to the two dimensional Jacobian Conjecture over the real field, and over the complex field.",
+      "source": "https://arxiv.org/abs/2610.02961v2",
+      "review_depth": "abstract and arithmetic setup, sections 2 and 3 opening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Integral coefficients and Jacobian one are material assumptions. Integral-point conditions do not exclude complex r7 curves without an arithmetic bridge."
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.20597v2",
+      "title": "On mappings with Jacobian one",
+      "published": "2026-07-22T17:42:48Z",
+      "updated": "2026-10-25T20:15:09Z",
+      "authors": [
+        "Zbigniew Jelonek"
+      ],
+      "abstract": "We show that the set $A(n, d)$ of polynomial automorphisms $F : \\Bbb C^n \\to \\Bbb C^n$ of degree at most $d$ and with $Jac(F ) = 1$ is Zariski closed. In particular every irreducible component of the set $A(n,d)$ of polynomial mappings with Jacobian $1$ is either composed with polynomial automorphisms or (generically) with counterexamples to the Jacobian Conjecture. Moreover every such component has dimension at least $n^2-1.$ In particular if the set $X(n,d)$ is irreducible, and $n\\ge 3, d\\ge 7$, then a generic element of this set is a counterexample to the Jacobian Conjecture.",
+      "source": "https://arxiv.org/abs/2607.20597v2",
+      "review_depth": "main closedness argument and component conclusion",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Parameter-family arguments require irreducible-component control. Does not transport the single r7 braid witness to the entire polynomial-gap family."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.33919v1",
+      "title": "The generalized Dixmier conjecture and the two-dimensional Jacobian conjecture",
+      "published": "2026-10-24T21:17:44Z",
+      "updated": "2026-10-24T21:17:44Z",
+      "authors": [
+        "Alexey Kanel-Belov",
+        "Timofey Fedorov"
+      ],
+      "abstract": "We prove that the two-dimensional Jacobian conjecture $\\mathrm{JC}_2$ implies the generalized Dixmier conjecture $\\mathrm{DC}'_1$ for the first Weyl algebra $A_1$, which states, in one of several equivalent formulations, that every endomorphism of the two-by-two matrix ring $\\operatorname{Mat}_2(A_1)$ is invertible. For the converse, an endomorphism of $\\mathbb A^2_{\\mathbb C}$ with Jacobian one gives rise to a family of holonomic $A_2$-modules over finite fields. One needs to lift this family to an $A_2$-module in characteristic zero with the prescribed arithmetic support. The existence of such a lift is a special case of Kontsevich's conjecture on holonomic $\\mathcal D$-modules with prescribed arithmetic support. We prove that in this special situation such a lift is unique whenever it exists. If these lifts exists for every endomorphism with Jacobian one, then $\\mathrm{DC}'_1$ implies $\\mathrm{JC}_2$. For every $n\\ge 3$, we construct a Lagrangian subvariety of $T^*\\mathbb{A}^n$ that provides a counterexample to Kontsevich's conjecture. The counterexamples arise from the graph of a noninvertible symplectic endomorphism of $\\mathbb A^4$ constructed by Long. We also present a different strategy for lifting $\\mathcal D$-modules associated with a Jacobian-one endomorphism of $\\mathbb A^2_{\\mathbb C}$ to characteristic zero via ultraproducts and show that the existence of a characteristic-zero lift in this setting is equivalent to the uniform boundedness of the Berest--Wilson invariants of these $A_2$-modules, regarded as left $A_1$-modules. Finally, we study two other conjectures of Kontsevich on arithmetic support, giving a counterexample to one and partial results on the other.",
+      "source": "https://arxiv.org/abs/2610.33919v1",
+      "review_depth": "abstract and introductory main implications and hypotheses",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "JC2 implies generalized DC1. Converse needs characteristic-zero graph-module existence, equivalently the specified uniform BW boundedness condition. Ordinary DC1 alone does not close this route."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.32391v1",
+      "title": "Global injectivity and real Jacobian conjecture in $\\mathbb{R}^n$",
+      "published": "2026-10-23T09:17:00Z",
+      "updated": "2026-10-23T09:17:00Z",
+      "authors": [
+        "Xinhao Hu",
+        "Jaume Llibre",
+        "Yilei Tang"
+      ],
+      "abstract": "In this paper, we study the global injectivity of local diffeomorphisms in $\\mathbb{R}^n$, extending the criterions of Braun and Llibre in [{\\it Pacific J. Math.} {\\bf 333} (2024) 1--15] from the planar radial case to arbitrary dimension. Then we extend the results of Llibre and Mello in [{\\it Bull. Sci. Math.} {\\bf 213} (2026) 103889] to arbitrary dimension, obtaining two necessary and sufficient conditions for the real Jacobian conjecture in $\\mathbb{R}^n$ by qualitative theory of differential equations. Finally, using weighted Poincaré compactification in $\\mathbb{R}^n$, we provide a sufficient condition for the real Jacobian conjecture.",
+      "source": "https://arxiv.org/abs/2610.32391v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/1203.1691v40",
+      "title": "On Open Embeddings of Affine Spaces in Affine Varieties and the Jacobian Conjecture $(JC_2)$",
+      "published": "2012-03-08T05:14:53Z",
+      "updated": "2026-10-18T07:17:52Z",
+      "authors": [
+        "Susumu Oda"
+      ],
+      "abstract": "Let $k$ be a field of \\uline{characteristic $0$}. Our final goal is the following faded problem~: {\\sf The Jacobian Conjecture $(JC_2)$~:} {\\it If $f_1, f_2$ are elements in a polynomial ring $k[X_1, X_2]$ over $k$ such that $ \\det(\\partial f_i/ \\partial X_j) $ is a nonzero constant, then $k[f_1, f_2] = k[X_1, X_2]$. } For this purpose, we consider the following Result~: \\noindent {\\sf Open Embeddings of Affine Spaces in Affine Varieties.} {\\it Let $X$ be a normal $k$-affine variety of dimension $2$ and let $U$ be an open $k$-subvariety of $X$ which is isomorphic to $\\mathbb{A}^2_k$. Then $X = U$.} This is effective for a more general result than our original objective $(JC_2)$. \\noindent {\\sf The Generalized Jacobian Conjecture $(GJC_2)$.} {\\it Let $\\varphi : X \\rightarrow Y$ be an unramified morphism of normal $k$-affine varieties of dimension $2$. If both $X$ and $Y$ are simply connected, then $\\varphi$ is an isomorphism.} These results derived by $\\mathbb{C}$-topological-method hold for $\\mathbb{C}$ instead of $k$ by ``Lefschetz-principle''.",
+      "source": "https://arxiv.org/abs/1203.1691v40",
+      "review_depth": "updated abstract and version history",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "claim requiring audit",
+      "repository_relevance": "Claims JC2 through an affine open-embedding theorem. Not accepted as input: the generalized simply-connected assertion requires particular care in light of Kulikov-type surfaces."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.24889v1",
+      "title": "Alpöge's counterexample to the JC, Economic Stabilization, and Zhao's Vanishing Conjecture",
+      "published": "2026-10-17T22:11:46Z",
+      "updated": "2026-10-17T22:11:46Z",
+      "authors": [
+        "Michiel de Bondt"
+      ],
+      "abstract": "In this paper, we apply stabilization techniques which are economic in the number of added dimensions to a slightly tweaked version of Alpöge's counterexample to JC(3) and JC(3,7). The first idea which lead to more economic stabilization is to bypass the degree 3 reduction of Bass, Connell and Wright in the construction of a counterexample to HJC(n). We construct counterexamples to HJC(15), VC(28), and HVC(30). On the other hand, we will perform degree 3 reduction after all to obtain counterexamples of low degree. We construct counterexamples to JC(12,3), HJC(18,3), VC(34,4), and HVC(36,4). As an encore, we construct a cubic-linear counterexample to the Jacobian Conjecture in dimension 90. All presented counterexamples to the Jacobian Conjecture (Vanishing Conjecture) are over the (Gaussian) integers.",
+      "source": "https://arxiv.org/abs/2610.24889v1",
+      "review_depth": "full concrete-map audit in the sibling de-bondt directory; broader operator statements only partly inspected",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "BCRDB1 / BCRDBGRAPH1: 12/18/90 construction, economic stabilization, and VC witnesses; not JC2 descent."
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.19360v1",
+      "title": "Poincaré compactifications of pullbacks of parallel vector fields under counterexamples to the real Jacobian conjecture",
+      "published": "2026-10-14T01:01:17Z",
+      "updated": "2026-10-14T01:01:17Z",
+      "authors": [
+        "Francisco Braun",
+        "Paulo Machado"
+      ],
+      "abstract": "Let $F: \\mathbb{R}^2 \\to \\mathbb{R}^2$ be a polynomial map with nowhere zero Jacobian determinant. It is known that the global invertibility of $F$ is equivalent to the pullback of a parallel vector field being parallel. In this paper, we construct the phase portraits on the Poincaré disc of the pullbacks of the canonical annular, radial, and strip vector fields under non-injective maps $F$ that have recently appeared in the literature. Our arguments use local and global properties of vector fields as well as local and global properties of functions, thereby connecting techniques from dynamical systems and singularity theory.",
+      "source": "https://arxiv.org/abs/2610.19360v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.33491v1",
+      "title": "Coordinate descents, monodromy, and finite normalization of marked-root maps",
+      "published": "2026-09-27T11:59:37Z",
+      "updated": "2026-09-27T11:59:37Z",
+      "authors": [
+        "José A. R. Fonollosa"
+      ],
+      "abstract": "We study the dimension-indexed marked-root polynomial maps introduced by Harish. For every $n\\geq 4$, their lower coefficient block extends to a polynomial coordinate system, giving three-dimensional Keller maps of geometric degree $n(n-2)$ for every choice of the fixed coefficients. We determine the generic monodromy of the original maps and all successive coordinate descents: it is the cyclic wreath product for odd $n$, and an explicit subgroup of index two for even $n$. Its order is $(n-2)^n n!/\\gcd(2,n-2)$. We construct the smooth finite normalization and identify its complement of the affine source as $n-2$ disjoint affine divisors. One is ramified; the others record unramified loss of inverse sheets. The normalization has Picard group $\\mathbb{Z}^{n-2}$ and the homotopy type of a wedge of $n-2$ two-spheres. Its rational deck group is cyclic, while the polynomial deck group of the source map is trivial. By base change, the normalization describes the preimage of any subvariety of the target; when the target polynomial factors, a component with only constant units is an open subset of a Kummer cover of the simple roots of one factor. Finally, the monodromy separates these maps, for $n\\geq 4$, from single weighted lifts under stable polynomial left-right equivalence.",
+      "source": "https://arxiv.org/abs/2609.33491v1",
+      "review_depth": "main results and sections 5.1 through 5.4",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "PF2R7CUSP1 / OP-PLANE: complete missing-divisor ledger includes unramified components in dimension at least three; no plane descent follows."
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.17795v1",
+      "title": "An elementary way to find a counterexample to the Jacobian Conjecture",
+      "published": "2026-09-15T20:03:03Z",
+      "updated": "2026-09-15T20:03:03Z",
+      "authors": [
+        "Arno van den Essen"
+      ],
+      "abstract": "We show how a counterexample to the Jacobian Conjecture can be found by elementary mathematics. The example we find is, apart from linear coordinate changes the example found by Levent Alpöge.",
+      "source": "https://arxiv.org/abs/2609.17795v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.12543v3",
+      "title": "Collision-Generated Compression for Homogeneous Keller Maps",
+      "published": "2026-08-12T19:28:55Z",
+      "updated": "2026-09-15T15:46:05Z",
+      "authors": [
+        "Thomas Prellberg"
+      ],
+      "abstract": "We associate to a collision $p\\ne q$ of a homogeneous Keller map $F=\\operatorname{id}+h$ the polarization subalgebra generated by $p$ and $q$. This collision hull is the smallest invariant linear subspace containing the collision; the restricted map remains a noninjective Keller map, and its dimension controls that of the standard symmetric lift. The construction is compatible with scalar extension and equivariant under linear conjugacy, so it gives a canonical linear carrier for a marked failure of injectivity. We compute this carrier exactly in two recent cubic-homogeneous reductions of the three-variable Jacobian counterexample. For Thompson's 24-variable map, the growth $2,4,11,20,20$ recovers MacFarlane's 20-dimensional invariant subspace. For the 19-variable homogenization of Van Rijn's 12-variable degree-three map, the growth $2,4,11,19,19$ fills the whole space. Hence no invariant linear restriction retaining the displayed collision can improve the corresponding 38-variable symmetric lift. We give the resulting 340-monomial homogeneous quartic explicitly: it is Hessian-nilpotent, violates Zhao's Vanishing Conjecture, and its gradient Keller map has an exact collision over $\\mathbb{Q}(i)$. The analogous 20-variable application gives the previously studied 40-variable, 350-monomial quartic. All finite calculations are checked by exact companion code.",
+      "source": "https://arxiv.org/abs/2608.12543v3",
+      "review_depth": "main theorem, sections 5 and 6, source attribution",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "Directly credits Roy van Rijn. The displayed collision fills the 19-dimensional polarization algebra, excluding only invariant linear compression preserving that collision, before the unchanged symmetric lift."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.27341v2",
+      "title": "Divisors in projective bundles over the projective line whose complement is affine space",
+      "published": "2026-08-27T16:41:51Z",
+      "updated": "2026-09-14T18:00:21Z",
+      "authors": [
+        "Remy van Dobben de Bruyn"
+      ],
+      "abstract": "Given a smooth projective variety $X$ of dimension $n$ and a closed subscheme $Z \\subseteq X$, it is in general a difficult problem to determine whether $X \\setminus Z$ is isomorphic to $\\mathbf A^n$. In the case where $X$ is a projective bundle over $\\mathbf P^1$ and the restriction of every irreducible component of $Z$ to every fibre is a hyperplane, we give a complete geometric characterisation in terms of the irreducible components of $Z$ and their intersections. In the appendix, we use this to obtain a coordinate-free explanation for the recent first counterexample to the Jacobian conjecture.",
+      "source": "https://arxiv.org/abs/2608.27341v2",
+      "review_depth": "main theorem and introductory proof strategy",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "Global affine-space recognition requires a projective bundle over P1 and hyperplane boundary on every fibre. Version 2 corrects the main theorem. Resolved plane boundaries need not have this form."
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.10180v1",
+      "title": "Keller maps and holonomic $D$-modules",
+      "published": "2026-09-09T13:51:15Z",
+      "updated": "2026-09-09T13:51:15Z",
+      "authors": [
+        "Wenliang Zhang"
+      ],
+      "abstract": "Let $\\kk$ be a field of characteristic $p$ and $R=\\kk[x_1,\\dots,x_n]$. Let $D$ denote the ring of $\\kk$-linear differential operators on $R$. Let $\\varphi:R\\to R$ be a $\\kk$-algebra endomorphism whose Jacobian is a unit in $R$. We show that there is a unique $\\kk$-algebra endomorphism $Φ:D\\to D$ such that $Φ|_R=\\varphi$ and that the restriction of scalar via $Φ$ preserves holonomicity. We also construct an example of a $\\kk$-algebra endomorphism of $D$ that does not preserve holonomicity.",
+      "source": "https://arxiv.org/abs/2609.10180v1",
+      "review_depth": "abstract and characteristic-p setup",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Differential-operator extension preserving holonomicity in positive characteristic is distinct from the missing characteristic-zero lifting theorem."
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.05746v1",
+      "title": "On endomorphisms of affine spaces and the Jacobian problem",
+      "published": "2026-09-04T21:53:24Z",
+      "updated": "2026-09-04T21:53:24Z",
+      "authors": [
+        "Alexander Borisov",
+        "Ofer Gabber",
+        "Adrian Vasiu"
+      ],
+      "abstract": "Let $p$ be a prime. We provide examples which show that étale endomorphisms of affine planes over an algebraically closed field $k$ of characteristic $p$ can have fibers of arbitrary finite cardinal. Let $(l,m)\\in\\mathbb N\\times\\mathbb N^{\\ast}$. We provide examples of such étale endomorphisms whose images have complements of cardinality $l$ and whose geometric degrees are $pm$. Several conjectures are disproved, and in particular we provide an analog over $k$ of Kulikov's counterexample to the `Generalized Jacobian Conjecture' of Bass for surfaces. Surjective (resp.\\ surjective and non-surjective) counterexamples to Adjamagbo's Jacobian Conjecture over each $k$ are included in dimension $2$ (resp.\\ in all dimensions at least $3$); for instance, if $p=2$, then we show for each $m$ there exist surjective étale endomorphisms of the affine spaces over $k$ of dimension at least $3$ of geometric degree $m$. If $e:X\\rightarrow X$ is an endomorphism of a variety over an algebraically closed field $K$, then we show that there exists $n\\in\\mathbb N$ such that $\\Imm(e^n)=\\Imm(e^{n+1})$ provided either (i) $e$ is quasi-finite or (ii) $\\dim(X)\\le 2$ and $X\\setminus\\Imm(e)$ is finite. We provide examples of endomorphisms of affine planes of dimensions at least $3$ over $K$ whose images have complements of cardinality $l$ and for all $n\\in\\mathbb N$ we have $\\Imm(e^n)\\neq\\Imm(e^{n+1})$. We prove that all affine moduli schemes of étale endomorphisms of affine spaces with Jacobian matrices of determinant 1 over $K$ are connected and classify all those that are smooth. We prove that the Jacobian Conjecture over $\\mathbb C$ and Adjamagbo's analog of it over $k$ hold for étale endomorphisms of affine spaces that are composites $g\\circ f$, where $f$ is quasi-finite and a locally closed embedding in codimension $1$ outside a specific finite subset and $g$ is a projection that omits one coordinate.",
+      "source": "https://arxiv.org/abs/2609.05746v1",
+      "review_depth": "abstract and introduction; not the full 175-page proof",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Positive-characteristic counterexamples, moduli, and special projection-factorization results; do not assert unrestricted JC2 in characteristic zero."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.19112v2",
+      "title": "On the Hessian Conjecture in Lorentzian Signature: Constant Pivots and Hesse Systems",
+      "published": "2026-08-19T17:05:34Z",
+      "updated": "2026-09-02T02:45:38Z",
+      "authors": [
+        "Hanwen Liu"
+      ],
+      "abstract": "As a close relative of the Jacobian conjecture, the Hessian conjecture in dimension $n$ states that the local Legendre transform of a polynomial solution to the Monge--Ampère equation $\\det(\\operatorname{Hess}(φ))=\\pm1$ is also a polynomial solution. The general Hessian conjecture is false for $n\\geq5$, while in Riemannian signature it follows from the Jörgens--Calabi--Pogorelov theorem. We study the four-dimensional Hessian conjecture in Lorentzian signature. For a polynomial potential $φ$ in four real variables whose Hessian matrix has index $1$ and determinant $-1$, we define a constant pivot for $φ$ to be a nonzero constant vector $ξ$ such that the second directional derivative $D_ξ^2φ$ is constant. We then prove that the gradient mapping of every potential admitting a pivot is a polynomial automorphism, and that a pivot always exists when $φ$ decomposes into homogeneous pieces as $φ=φ_d+φ_{d-1}+φ_2+φ_1+φ_0$ with $d\\geq4$. More generally, we prove the same conclusion when $$φ=φ_d+\\cdots+φ_{d-k}+φ_2+φ_1+φ_0,$$ where $k\\geq0$ and $d\\geq4k+3$. Then, we associate with each potential a linear system of quadrics, called the Hesse system, and a canonical homomorphism $μ_φ$. We prove that the existence of a pivot is equivalent to $\\operatorname{rank}(μ_φ)\\leq55$. As an application, we prove that the gradient mapping is a polynomial automorphism whenever the Hesse system has complex dimension at most 4. We also show that if ${\\det(\\operatorname{Hess}(φ-φ_2))\\equiv0}$, then the potential $φ$ admits a pivot. After that, we then give an analytic degeneracy criterion for $\\operatorname{Hess}(φ-φ_2)$. Finally, we prove the Hessian conjecture in this setting for every polynomial potential of degree at most five.",
+      "source": "https://arxiv.org/abs/2608.19112v2",
+      "review_depth": "abstract and signature hypotheses",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Degree-five HC4 and pivot criteria under real Lorentzian index-one hypotheses; not all complex potentials."
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.21572v3",
+      "title": "Generic degrees of real polynomial Keller maps with non-dense image",
+      "published": "2026-07-23T17:51:04Z",
+      "updated": "2026-08-27T11:39:58Z",
+      "authors": [
+        "Piotr Migus"
+      ],
+      "abstract": "We determine the possible generic degrees of real polynomial Keller maps with non-dense image, where density is understood in the Euclidean topology. For every dimension $n\\geq3$, these degrees are exactly the even integers $d\\geq4$. They are realized in dimension three by an explicit family $G_d\\colon\\mathbb{R}^{3}\\to\\mathbb{R}^{3}$, and hence in every higher dimension by stabilization. In dimension two, any such degree is an even integer at least six, and no such maps exist if the planar Jacobian conjecture holds; in dimension one, none exist. For the family $G_d$, we describe the image exactly and show that no $G_d$ omits a half-space. We also show that the maximal cardinality of a real fibre is not determined by the generic degree and is not uniformly bounded in this class.",
+      "source": "https://arxiv.org/abs/2607.21572v3",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.19069v1",
+      "title": "On the Density of Polynomial Mappings Satisfying the Jacobian Conjecture",
+      "published": "2026-08-19T16:10:41Z",
+      "updated": "2026-08-19T16:10:41Z",
+      "authors": [
+        "João Vítor Pissolato"
+      ],
+      "abstract": "The Jacobian Conjecture is a known unsolved problem and it is the problem number 16 of the list ''Mathematical Problems for the Next Century'', made by Stephen Smale, in 1998. The problem asks whether or not the Jacobian matrix of a polynomial mapping $F:\\mathbb{C}^n\\to\\mathbb{C}^n$ at every point being invertible implies that $F$ is an automorphism. The case $n = 1$ is trivially true, while the case $n\\geq 3$ has been recently proven to be false by a counter-example provided by Levent Alpöge, and the case $n = 2$ is still an open problem. In this paper, we show that, for all $n \\geq 1$, there exists a non-empty Zariski dense open set $U$ such that, for all $F \\in U$, if the Jacobian matrix of $F$ is invertible, then $F$ is an automorpshim.",
+      "source": "https://arxiv.org/abs/2608.19069v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.14217v1",
+      "title": "The Quartic Hessian Conjecture in Dimension Four",
+      "published": "2026-08-14T11:48:06Z",
+      "updated": "2026-08-14T11:48:06Z",
+      "authors": [
+        "Zixiang Ni"
+      ],
+      "abstract": "The Hessian conjecture asks whether a polynomial with nonzero constant Hessian determinant has a polynomial gradient inverse. It is known in dimensions at most three, false in dimensions at least five, and open in dimension four. We prove its four-variable quartic case. The top homogeneous part has zero Hessian determinant and, by the four-dimensional homogeneous Hesse theorem, is a cone. We divide its cone representative into three exhaustive types: a genuinely ternary quartic with nonzero ternary Hessian, a genuinely binary quartic, and a fourth power of a linear form. In the first type, the degree-seven determinant equation forces the cubic part to be affine-linear in the cone direction. In the binary type, the degree-six equation gives a constant null direction in a two-variable Hessian of the cubic part. In the unary type, the degree-five equation and a constant-direction lemma give the same conclusion. Every type therefore reduces to \\[ f=P(x_1,x_2,x_3)+x_4Q(x_1,x_2,x_3)+a x_4^2, \\qquad °Q\\leq2. \\] We prove, independently of the degree or top part of \\(P\\), that every constant-Hessian polynomial of this form has a polynomial gradient inverse. The branch \\(a\\ne0\\) descends from the known three-dimensional Hessian conjecture after a Schur complement. When \\(a=0\\), an isotropic-cone rank analysis eliminates rank two, solves the rank-one exception by an explicit triangular inverse, and reduces rank zero to the two-dimensional Hessian conjecture. The coupled degree-six identity is retained throughout; no component with respect to a fixed quadratic form is separated.",
+      "source": "https://arxiv.org/abs/2608.14217v1",
+      "review_depth": "Theorem 1.2, structural proposition 6.1, scope discussion",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "high",
+      "repository_relevance": "Independent quartic HC4 claim overlaps HC4CQ1. Arbitrary-degree P is allowed in a special constant-direction form with degree Q at most two."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.12294v1",
+      "title": "A note on the real Jacobian conjecture in degree 7",
+      "published": "2026-08-12T17:36:19Z",
+      "updated": "2026-08-12T17:36:19Z",
+      "authors": [
+        "Tomasz Kowalczyk"
+      ],
+      "abstract": "Let $(p,q)$ be a Jacobian pair. We show that the real Jacobian conjecture holds if the degree of $p$ is 7 and the highest degree homogenous part is of the form $αx^7 + βx^6y$ for $α^2+β^2 \\neq 0$. We then show that there are no atypical Jacobian pairs such that $\\mathrm{deg} \\, p =7$ and $\\mathrm{deg}\\, q$ is even and coprime with 7.",
+      "source": "https://arxiv.org/abs/2608.12294v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.07338v1",
+      "title": "An Explicit Five-Variable Counterexample to the Generalized Vanishing Conjecture",
+      "published": "2026-08-07T15:33:13Z",
+      "updated": "2026-08-07T15:33:13Z",
+      "abstract": "We give an explicit counterexample in five variables to the Generalized Vanishing Conjecture. The construction is motivated by the recent counterexample to the Mathieu conjecture for SU(2). In the polynomial ring C[a,b,c,d,t], set P = (t+c)(ad+bt), Q = c, and let Λ = d/dt (d/da d/dd - d/db d/dc). We prove that Λ^m(P^m) = 0 for every m >= 1, whereas for every m >= 2, Λ^m(QP^m) = (-1)^m (m!)^2 (m+1)! t, which is nonzero. Thus the Generalized Vanishing Conjecture fails in dimension 5.",
+      "authors": [
+        "Alexander Dvorsky"
+      ],
+      "source": "https://arxiv.org/abs/2608.07338v1",
+      "review_depth": "metadata and explicit identity in abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Generalized VC counterexample uses a third-order operator and an auxiliary multiplier. It is not a five-variable quartic Laplacian VC witness."
+    },
+    {
+      "id": "http://arxiv.org/abs/2304.14675v5",
+      "title": "Integral curves and Jacobian Conjecture",
+      "published": "2023-04-28T08:06:35Z",
+      "updated": "2026-08-06T09:41:47Z",
+      "authors": [
+        "Jean-Yves Charbonnel"
+      ],
+      "abstract": "In this note, we are interested in the Jacobian Conjecture. Following the results of L.M.~Dru$\\dot{\\rm z}$kowski, we consider some vector fields depending on a certain étale polynomial map. From results of semialgebraic geometry with the consideration of some integral curves of these vector fields, we deduce that an étale polynomial endomorphism is a polynomial automorphism.",
+      "source": "https://arxiv.org/abs/2304.14675v5",
+      "review_depth": "updated abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "incompatible with verified higher-dimensional examples",
+      "repository_relevance": "Claims all-dimensional JC; cannot be imported alongside the explicit noninjective Keller maps verified in this repository."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.05392v1",
+      "title": "The weak Markus--Yamabe conjecture fails in dimension 14",
+      "published": "2026-08-05T20:19:03Z",
+      "updated": "2026-08-05T20:19:03Z",
+      "authors": [
+        "Álvaro Castañeda",
+        "Gerardo Honorato",
+        "Francisco Valenzuela-Henríquez"
+      ],
+      "abstract": "We show that the weak Markus--Yamabe conjecture fails in every dimension $n\\geq14$. We first prove a chain realization theorem: every polynomial Keller map $F=\\I+H$ of $\\R^n$ with component degrees $d_1,\\ldots,d_n$ yields an explicit polynomial vector field on $\\R^N$, with $N=\\sum_i\\max(d_i,2)-n$, whose Jacobian matrix has spectrum $\\{-1\\}$ at every point and whose singularities are in bijection with any prescribed fiber of $F$. Applied to the recent counterexample to the Jacobian conjecture, this gives a Hurwitz vector field of degree seven on $\\R^{14}$ with three rational singularities. A rank-reduced dehomogenization of the associated cubic stabilization gives, independently, a Hurwitz field of degree three on $\\R^{18}$. The dimensions $3\\leq n\\leq13$ remain open.",
+      "source": "https://arxiv.org/abs/2608.05392v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.02863v1",
+      "title": "Orbits and Fields of Definition for Graded Keller Maps",
+      "published": "2026-08-03T20:32:05Z",
+      "updated": "2026-08-03T20:32:05Z",
+      "authors": [
+        "Kyle Kistner",
+        "Tanush Shaska"
+      ],
+      "abstract": "We classify graded Keller maps by the signature of their weight vectors and address which hyperbolic weights support counterexamples and how the nonempty loci are stratified. We construct two families. Cyclic cones populate \\(K(3,(1,-1,-1))\\) at every composite generic fibre degree \\(N\\geq 6\\), including a six-sheeted member over \\(\\mathbb{Q}(\\sqrt{-15})\\) and a 33-sheeted member over \\(\\mathbb{Q}\\). A diagonal family gives \\(K(3,(1,-p,-p))\\neq\\varnothing\\) for every \\(p\\geq2\\), with \\(\\det JF_p=-p\\) and generic fibre degree \\(2p-1\\). The geometric monodromy of every member of both families is alternating or symmetric of full degree; hence the solvable case occurs only in generic degree three. At generic degree twelve, normalized quartic cyclic seeds form a smooth plane cubic over \\(\\mathbb{Q}\\), whose points yield pairwise distinct graded-equivalence orbits. Thus the relevant orbit space contains a nonconstant algebraic family, establishing genuine moduli rather than isolated examples.\"",
+      "source": "https://arxiv.org/abs/2608.02863v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2609.16178v1",
+      "title": "The Mathieu Property for Compact Connected Lie Groups",
+      "published": "2026-07-31T06:31:31Z",
+      "updated": "2026-07-31T06:31:31Z",
+      "authors": [
+        "Christopher D. Long"
+      ],
+      "abstract": "Let $G$ be a compact connected Lie group, let $\\mathcal R(G)$ denote its algebra of representative functions, and let $\\mathcal I_G(f)=\\int_G f(g)\\,\\mathrm d g$ be normalized Haar integration. We prove that $\\ker \\mathcal I_G$ is a Mathieu--Zhao subspace of $\\mathcal R(G)$ if and only if $G$ is a torus. More strongly, for every nonabelian compact connected Lie group $G$ we construct $A,P,Q\\in\\mathcal R(G)$, with $A\\geq 0$ and $A\\not\\equiv 0$, such that all pure moments of $P$ vanish and the marked moments satisfy an exact Pascal-row identity $$ \\mathcal I_G(Q^sP^m) =c_m\\binom{m-1}{s-1}\\mathcal I_G(A^{4m+s})>0 \\qquad (1\\leq s\\leq m), $$ where $c_m=4^m(m!)^2/(2m+1)!$; the same moments vanish for $s>m$. The construction begins with a homogeneous, phase-balanced polynomial pair on $\\mathbb C^2$. An exact coefficient identity on the Hopf sphere $S^3$ is transferred by orbit averaging to every compactly supported $SU(2)$-invariant measure on $\\mathbb C^2$. A highest-weight representation and a visible simple-root doublet produce such a measure on every compact simple Lie group. Phase balance gives descent through every central quotient, and pullback from an adjoint simple quotient handles arbitrary nonabelian compact connected groups. The proof is direct and independent of the implication from the Mathieu conjecture to the Jacobian conjecture. The torus direction is the theorem of Duistermaat and van der Kallen.",
+      "source": "https://arxiv.org/abs/2609.16178v1",
+      "review_depth": "metadata and abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Mathieu property classified by torus condition; published 31 July despite September identifier. Moment constructions may be more economical than Keller reductions."
+    },
+    {
+      "id": "http://arxiv.org/abs/2608.02634v1",
+      "title": "A Dimension-Two Counterexample to the Separable Jacobian Conjecture in Characteristic Two",
+      "published": "2026-07-29T22:27:52Z",
+      "updated": "2026-07-29T22:27:52Z",
+      "authors": [
+        "Romy Mondello"
+      ],
+      "abstract": "Let k be the algebraic closure of F_2. We study the polynomial endomorphism F=(P,Q) of the affine plane, where P=x+x^2 y+x^4+x^6 y^2 and Q=y+x^5+x^6 y+x^7 y^2+x^8 y^3. Its Jacobian determinant is 1, while the three distinct points (0,1), (1,0), and (1,1) have the same image. We prove that [k(x,y):k(P,Q)]=3 and that the extension is separable. Thus the generic degree is prime to the characteristic although F is not an automorphism, giving a dimension-two counterexample to the separable Jacobian conjecture in characteristic two. The proof uses explicit recovery from a hidden cubic, irreducibility over the actual target field, and a bridge between function-field embeddings and the geometric generic fiber. We also give an explicit graph presentation proving that F is etale and derive the map from a coordinate-permuted form of a three-variable map of Irit Huq-Kuruvilla. An appendix records the precise scope and evidence boundaries of a Lean formalization and an independent Harmonic Aristotle replay.",
+      "source": "https://arxiv.org/abs/2608.02634v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.22198v2",
+      "title": "A five-variable counterexample to the Hessian conjecture, and the low-dimensional status of the Jacobian and Hessian conjectures",
+      "published": "2026-07-24T11:13:37Z",
+      "updated": "2026-07-27T08:17:57Z",
+      "authors": [
+        "Guowu Meng",
+        "Liang Yang"
+      ],
+      "abstract": "We exhibit an explicit integer polynomial in five variables, of total degree $14$ and with constant Hessian determinant $128$, whose gradient is not injective. Consequently its formal Legendre transform is not a polynomial, and the Hessian conjecture $\\HC_5$ is false. The counterexample is obtained from the six-variable doubling of Alpöge's 2026 Jacobian counterexample by a one-variable \\emph{Schur descent}---a partial Legendre transform in a single variable. Combined with de~Bondt's theorem that $\\HC_n$ holds for $n\\le3$, with the elementary doubling and stabilization bridges relating the Jacobian conjectures $\\JC_n$ to the Hessian conjectures $\\HC_n$, and with Alpöge's refutation of $\\JC_3$, this decides the Hessian conjecture in every dimension except $n=4$: $\\HC_n$ is true for $n\\le3$, false for $n\\ge5$, and open only at $n=4$. Exactly two statements of the two families remain unsettled, $\\JC_2$ and $\\HC_4$, linked by $\\HC_4 \\Rightarrow \\JC_2$. Along the way we record, as a warm-up, an explicit six-variable counterexample to $\\HC_6$ with constant Hessian determinant $-4$ and non-injective gradient. This note adds the five-variable counterexample to, and updates the status recorded in, the first author's earlier educational preprint \\cite{MengRG2026}.",
+      "source": "https://arxiv.org/abs/2607.22198v2",
+      "review_depth": "metadata and abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Five-variable HC counterexample; distinguish constant-Hessian potentials from homogeneous Hessian-nilpotent VC quartics."
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.20210v2",
+      "title": "Graded Keller maps and the Jacobian Conjecture",
+      "published": "2026-07-22T14:30:28Z",
+      "updated": "2026-07-25T13:48:40Z",
+      "authors": [
+        "T. Shaska"
+      ],
+      "abstract": "Rational points on weighted projective spaces are sparse: a point of $\\mathbb{P}^n(\\mathbb{Q})$ lifts along the Veronese morphism only when a Kummer condition holds at every prime (arXiv:2509.02319). We ask what this viewpoint says about the Jacobian Conjecture. The map recently announced as a counterexample is equivariant for the grading $\\mathrm{wt}(x,y,z)=(1,-1,-2)$, and we show that the sign pattern of such a grading decides everything. If the weights are all positive, the setting of weighted projective spaces, an equivariant Keller map is always an automorphism, so no counterexample can be graded that way. In dimension two the same holds for every sign pattern. The Keller condition itself descends to the quotient, where it says that the Jacobian of the quotient map vanishes to order two along the contracted locus. Over $\\mathbb{Q}$ the image of the counterexample is a thin set. But along the line where the group action has stabilizer $μ_2$, the two preimages on the contracted locus are rational exactly when $-a$ is a square, so the Kummer condition of the positive-weight theory reappears on the stacky stratum. We propose a classification of equivariant polynomial maps by the signature of the weights, with weighted projective geometry as the positive case.",
+      "source": "https://arxiv.org/abs/2607.20210v2",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.20968v1",
+      "title": "An Explicit Characteristic-$2$ Counterexample to the Separable Jacobian Conjecture",
+      "published": "2026-07-23T06:44:58Z",
+      "updated": "2026-07-23T06:44:58Z",
+      "authors": [
+        "Irit Huq-Kuruvilla"
+      ],
+      "abstract": "Let $k$ be a field of characteristic $2$. We exhibit an explicit polynomial endomorphism $F: \\mathbb{A}_k^3\\to\\mathbb{A}_k^3$ whose Jacobian determinant is identically $1$, whose induced extension of rational function fields has degree $3$, and which is nevertheless noninjective. Since $2\\neq 3$, this gives a counterexample to the usual Adjamagbo, or separable, formulation of the Jacobian conjecture in characteristic $2$. Stabilization yields analogous counterexamples in every dimension $n\\geq 3$",
+      "source": "https://arxiv.org/abs/2607.20968v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "zenodo:21479814",
+      "title": "Exact Computer-Assisted Exclusion of the (72,108) Frontier in the Two-Dimensional Jacobian Problem",
+      "authors": [
+        "Billel Helali"
+      ],
+      "published": "2026-07-21",
+      "source": "https://doi.org/10.5281/zenodo.21479814",
+      "priority": "retained baseline",
+      "review_depth": "existing pinned repository provenance and fresh discovery search; live Zenodo unavailable",
+      "repository_relevance": "Local exact replay and transcription audit already retained in plane-jc/PROVENANCE.md. External record scopes its degree-125 consequence to the imported GGHV reduction. No higher frontier established by this scan.",
+      "independent_proof_audit_in_this_pass": false
+    },
+    {
+      "id": "http://arxiv.org/abs/2607.18186v1",
+      "title": "Small Counterexamples to the Gaussian Moments Conjecture",
+      "published": "2026-07-20T17:24:43Z",
+      "updated": "2026-07-20T17:24:43Z",
+      "authors": [
+        "Christopher D. Long"
+      ],
+      "abstract": "We give explicit complex polynomials $P,Q$ in three independent standard real Gaussian variables such that \\[ {\\mathbb E}(P^m)=0,\\qquad {\\mathbb E}(QP^m)=m!\\neq0 \\] for every $m\\geq1$. In natural complex linear coordinates, $P$ has five terms and total degree $4$. Hence the Gaussian Moments Conjecture is false in every dimension $n\\geq3$. We also give a six-term cubic example in four variables, which was found first and already proves failure for every $n\\geq4$. Both examples follow from the same coefficient identity. The search was prompted by Levent Alpöge's public announcement of an explicit three-dimensional counterexample to the Jacobian Conjecture. Although the main theorem of Derksen, van den Essen, and Zhao is stated globally in dimension, its proof has fixed-dimensional content: a noninvertible cubic-homogeneous Keller map in $r$ variables forces the failure of ${\\mathrm GMC}(2r)$. Tracking a standard Bass--Connell--Wright reduction of the announced map gives a conservative cubic-homogeneous counterexample in $79$ variables, and hence a route-based failure of ${\\mathrm GMC}(158)$. That route is nonconstructive at the final Gaussian step and does not furnish explicit polynomials $P,Q$. The much smaller explicit failures in dimensions $4$ and $3$ below were not derived from the announced Jacobian map.",
+      "source": "https://arxiv.org/abs/2607.18186v1",
+      "review_depth": "metadata and abstract",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "medium",
+      "repository_relevance": "Explicit Gaussian moment witnesses in dimension three are not derived through the much larger standard Keller-reduction chain."
+    },
+    {
+      "id": "http://arxiv.org/abs/2606.22041v1",
+      "title": "An organizing principle in the study of the Jacobian Conjecture",
+      "published": "2026-06-20T13:43:19Z",
+      "updated": "2026-06-20T13:43:19Z",
+      "authors": [
+        "Frederico Xavier"
+      ],
+      "abstract": "Let $Ω$ be an irreducible component of the locus of polynomial maps $ F:\\mathbb C^n \\to \\mathbb C^n$ satisfying $\\text{\\rm deg} F\\leq k$ and $\\text{det}DF=1$. It is shown that either $Ω\\subset \\text{\\rm Aut} (\\mathbb C^n)$, as claimed by the Jacobian Conjecture, or the {\\em general} $F\\in Ω$ is not an automorphism.",
+      "source": "https://arxiv.org/abs/2606.22041v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2606.10806v1",
+      "title": "Moonshine: An Autonomous Mathematical Research Agent Centered on Conjecture Generation",
+      "published": "2026-06-09T12:50:56Z",
+      "updated": "2026-06-09T12:50:56Z",
+      "authors": [
+        "Xiaoyang Chen",
+        "Xiang Jiang"
+      ],
+      "abstract": "Moonshine is an autonomous agent whose central objective is to generate mathematical conjectures. Its core capability is to extract structure from classical problems, distill new concepts, and formulate conjectures of mathematical significance. Rather than treating the solution of a single proposition as its endpoint, Moonshine builds an extensible theoretical framework through conjecture generation, bridge building, and obstacle identification. This article uses Moonshine's exploration of the Jacobian conjecture as an example. It shows how the central logic of whether local nondegeneracy can force global injectivity is transferred to one-hidden-layer affine-ridge sigmoid networks. This leads to the formulation of the \\emph{Neural Jacobian Conjecture} (NJC): if such a network has strictly positive Jacobian determinant on the whole space, then it must be globally injective. By invoking GPT-5.5-pro and DeepSeek-V4-pro separately, Moonshine obtained independent complete proofs for the case \\(N=n+1\\). In addition, with the assistance of ChatGPT through interactive use of its web interface with GPT-5.5-pro, a geometric-topological proof was developed. These results provide preliminary evidence for the plausibility of the conjecture. The general higher-width case \\(N\\ge n+2\\), however, remains unresolved and is left for further investigation. This work illustrates Moonshine's ability to autonomously generate meaningful mathematical problems and make rigorous progress on them.",
+      "source": "https://arxiv.org/abs/2606.10806v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2605.12302v2",
+      "title": "A sharp degree bound in the real Jacobian conjecture",
+      "published": "2026-05-12T15:53:52Z",
+      "updated": "2026-05-24T04:08:14Z",
+      "authors": [
+        "F. Braun",
+        "J. Gwoździewicz",
+        "F. Fernandes",
+        "B. Oréfice-Okamoto"
+      ],
+      "abstract": "Let $F=(p,q):\\mathbb R^2\\to \\mathbb R^2$ be a polynomial map with nowhere zero Jacobian determinant. A long-standing problem is to determine the largest integer $k$ such that the condition $°p\\le k$ guarantees the global injectivity of $F$. Although several partial results have been obtained over the past $30$ years, the sharp degree bound has remained unknown. In this paper, we prove that $F$ is injective whenever $°p=6$. On the other hand, we construct a non-injective polynomial map with nowhere vanishing Jacobian determinant for which $°p=7$. Combined with the previously known injectivity results for $°p\\le 5$, our results completely settle the problem and establish the optimal degree bound. More precisely, we show that $7$ is the minimal degree for which non-injective examples can occur.",
+      "source": "https://arxiv.org/abs/2605.12302v2",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2605.24835v1",
+      "title": "Poisson fields of two variables",
+      "published": "2026-05-24T03:00:14Z",
+      "updated": "2026-05-24T03:00:14Z",
+      "authors": [
+        "Ken Goodearl",
+        "James J. Zhang"
+      ],
+      "abstract": "We study invariants and structures of Poisson fields of rational functions in two variables. For four particular families, we classify the members, establish criteria for isomorphisms and, with the exception of the Weyl Poisson field, describe the automorphism groups. Embeddings are also investigated, along with an analog of the Dixmier Conjecture: For which Poisson fields is every Poisson endomorphism an automorphism? The answer is negative for the first family, but positive answers are obtained for several subclasses of the other families. Finally, we exhibit a Poisson field which is not isomorphic to any Poisson field $\\Bbbk(x,y)$ for which $\\{x,y\\}$ is a polynomial in $\\Bbbk[x,y]$.",
+      "source": "https://arxiv.org/abs/2605.24835v1",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2502.04051v3",
+      "title": "The higher-order hom-associative Weyl algebras",
+      "published": "2025-02-06T13:09:40Z",
+      "updated": "2026-04-09T17:47:37Z",
+      "authors": [
+        "Per Bäck"
+      ],
+      "abstract": "We show that the higher-order Weyl algebras over a field of characteristic zero, which are formally rigid as associative algebras, can be formally deformed in a nontrivial way as hom-associative algebras. We also show that these hom-associative Weyl algebras arise naturally as hom-associative iterated differential polynomial rings, that they contain no zero divisors, are power-associative only when associative, and that they are simple. We then determine their commuters, nuclei, centers, and derivations. Last, we classify all hom-associative Weyl algebras up to isomorphism and conjecture that all nonzero homomorphisms between any two isomorphic hom-associative Weyl algebras are isomorphisms. The latter conjecture turns out to be stably equivalent to the Dixmier Conjecture, and hence also to the Jacobian Conjecture.",
+      "source": "https://arxiv.org/abs/2502.04051v3",
+      "review_depth": "metadata and abstract screening",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "adjacent",
+      "repository_relevance": "Screened as adjacent background; no result imported into the mathematical-status ledger."
+    },
+    {
+      "id": "http://arxiv.org/abs/2410.06959v5",
+      "title": "The Conjecture of Dixmier for the first Weyl algebra is true",
+      "published": "2024-10-09T14:56:50Z",
+      "updated": "2026-01-19T20:55:06Z",
+      "authors": [
+        "Alexander Zheglov"
+      ],
+      "abstract": "Let $K$ be a field of characteristic zero, let $A_1=K[x][\\partial ]$ be the first Weyl algebra. In this paper we prove that the Dixmier conjecture for the first Weyl algebra is true, i.e. each algebra endomorphism of the algebra $A_1$ is an automorphism.",
+      "source": "https://arxiv.org/abs/2410.06959v5",
+      "review_depth": "abstract and comparison with Kanel-Belov--Fedorov introduction",
+      "independent_proof_audit_in_this_pass": false,
+      "priority": "claim requiring audit",
+      "repository_relevance": "Ordinary first-Weyl Dixmier proof claim. The October paper says its authors could not fully understand the proof; no generalized DC1 or JC2 consequence is imported."
+    },
+    {
+      "id": "orevkov-germs-2026",
+      "title": "On germs of mappings C2 to C2",
+      "authors": [
+        "S. Yu. Orevkov"
+      ],
+      "published": "2026",
+      "source": "https://www.math.univ-toulouse.fr/~orevkov/k-en.pdf",
+      "priority": "high",
+      "review_depth": "section 1 hypotheses and author publication record",
+      "repository_relevance": "Published Sbornik Math. 217(2026), 572-582. Requires a smooth analytic source germ and bijectivity on every component over the branch curve. Does not identify which unramified components are deleted from an affine source.",
+      "independent_proof_audit_in_this_pass": false
+    },
+    {
+      "id": "doi:10.2989/16073606.2026.2701437",
+      "title": "The lower side of the Newton polygon of hypothetical counterexamples to the plane Jacobian conjecture",
+      "authors": [
+        "Jorge A. Guccione",
+        "Juan J. Guccione",
+        "Christian Valqui"
+      ],
+      "published": "2026",
+      "source": "https://cris.pucp.edu.pe/entities/publication/4ac4fae4-49ed-421c-a246-4d9534888bd6",
+      "priority": "medium",
+      "review_depth": "institutional bibliographic record and abstract; manuscript not audited",
+      "repository_relevance": "2026 journal appearance of Newton-polygon restrictions related to the older 1605.09430 work. Publication year alone does not establish a new degree frontier or an unchanged text.",
+      "independent_proof_audit_in_this_pass": false
+    },
+    {
+      "id": "2503.07099v1",
+      "title": "On irreducible germs of generic morphisms",
+      "authors": [
+        "Vik. S. Kulikov"
+      ],
+      "published": "2025-03-10",
+      "source": "https://arxiv.org/abs/2503.07099v1",
+      "priority": "supporting prior work",
+      "review_depth": "metadata and abstract",
+      "repository_relevance": "Local branch-germ classification underlying the 2026 Orevkov addendum; not a complete global boundary theorem.",
+      "independent_proof_audit_in_this_pass": false
+    },
+    {
+      "id": "2407.13795v1",
+      "title": "There are no Keller maps having prime degree field extensions",
+      "authors": [
+        "Vered Moskowicz"
+      ],
+      "published": "2024-07-16",
+      "source": "https://arxiv.org/abs/2407.13795v1",
+      "priority": "claim requiring audit",
+      "review_depth": "metadata and abstract; no newer revision listed",
+      "repository_relevance": "Prime extension-degree exclusion is a preprint claim, not an independently audited theorem in this pass; not a new 2026 result.",
+      "independent_proof_audit_in_this_pass": false
+    },
+    {
+      "id": "2204.14178",
+      "title": "Increasing the degree of a possible counterexample to the Jacobian Conjecture from 100 to 108",
+      "authors": [
+        "Jorge Alberto Guccione",
+        "Juan Jose Guccione",
+        "Rodrigo Horruitiner",
+        "Christian Valqui"
+      ],
+      "published": "2022",
+      "source": "https://arxiv.org/abs/2204.14178",
+      "priority": "retained baseline",
+      "review_depth": "repository pinned provenance; not freshly re-audited",
+      "repository_relevance": "External reduction behind the retained (72,108) exclusions. Keep its exact hypotheses when comparing bounds.",
+      "independent_proof_audit_in_this_pass": false
+    }
+  ]
+}

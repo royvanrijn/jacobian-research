@@ -1,0 +1,33 @@
+{"stage": "bound", "coefficient_bound_bits": 10308, "degree_bound": 11669, "max_primes": 512, "seconds": 0.2506752269982826}
+{"stage": "checkpoint", "primes": 16, "modulus_bits": 479, "seconds": 2.548863052012166}
+{"stage": "checkpoint", "primes": 32, "modulus_bits": 957, "seconds": 4.8813129299960565}
+{"stage": "checkpoint", "primes": 48, "modulus_bits": 1436, "seconds": 7.283403523993911}
+{"stage": "checkpoint", "primes": 64, "modulus_bits": 1914, "seconds": 9.643904107011622}
+{"stage": "checkpoint", "primes": 80, "modulus_bits": 2392, "seconds": 11.989716470998246}
+{"stage": "checkpoint", "primes": 96, "modulus_bits": 2871, "seconds": 14.369291101989802}
+{"stage": "checkpoint", "primes": 112, "modulus_bits": 3349, "seconds": 16.77351192300557}
+{"stage": "checkpoint", "primes": 128, "modulus_bits": 3827, "seconds": 19.212045908003347}
+{"stage": "checkpoint", "primes": 144, "modulus_bits": 4306, "seconds": 21.739817065012176}
+{"stage": "checkpoint", "primes": 160, "modulus_bits": 4784, "seconds": 24.32170467299875}
+{"stage": "checkpoint", "primes": 176, "modulus_bits": 5262, "seconds": 27.27933057100745}
+{"stage": "checkpoint", "primes": 192, "modulus_bits": 5741, "seconds": 29.898925029992824}
+{"stage": "checkpoint", "primes": 208, "modulus_bits": 6219, "seconds": 32.57217202099855}
+{"stage": "checkpoint", "primes": 224, "modulus_bits": 6698, "seconds": 35.284876413003076}
+{"stage": "checkpoint", "primes": 240, "modulus_bits": 7176, "seconds": 38.0578405430133}
+{"stage": "checkpoint", "primes": 256, "modulus_bits": 7654, "seconds": 40.993250619998435}
+{"stage": "checkpoint", "primes": 272, "modulus_bits": 8133, "seconds": 43.94063051699777}
+{"stage": "checkpoint", "primes": 288, "modulus_bits": 8611, "seconds": 46.91978255700087}
+{"stage": "checkpoint", "primes": 304, "modulus_bits": 9089, "seconds": 49.94305585298571}
+{"stage": "checkpoint", "primes": 320, "modulus_bits": 9568, "seconds": 52.99770673198509}
+{"stage": "checkpoint", "primes": 336, "modulus_bits": 10046, "seconds": 56.19077232098789}
+{"stage": "saved", "degree": 11167, "primes": 345, "coefficient_bits": 10035, "seconds": 58.13663712798734}
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/crt_norm_projector.py", line 54, in <module>
+    if '--worker' in sys.argv:worker()
+                              ^^^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/jacobian-followup/gao-f7-quadruple/crt_norm_projector.py", line 46, in worker
+    pole=json.loads((HERE/'coordinate-pole-resultant-candidate.json').read_text());B=fmpz_poly(next(r['coefficients'] for r in pole['factors'] if len(r['coefficients'])==88));power=0
+                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "flint/types/fmpz_poly.pyx", line 93, in flint.types.fmpz_poly.fmpz_poly.__init__
+  File "flint/types/fmpz_poly.pyx", line 63, in flint.types.fmpz_poly.fmpz_poly_set_list
+TypeError: unsupported coefficient in list

@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped symbolic controls, claim metadata and renderer readback",
+  "claim": "PF2OMIT9",
+  "check_count": 50,
+  "previous_goal_turn": "No mathematical progress: missing-input contract clarified; actual images remained unknown",
+  "current_goal_turn": "Progress: use the actual marked Wright normalization to derive all-height target restrictions, all conditional quartic fibre rows and a compulsory cusp normalization-index zero",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-WRIGHT-BOUNDARY-IMAGE-JETS"
+  ],
+  "affected_work": [
+    "WORK-QUARTIC-RULED-COMPATIBILITY"
+  ],
+  "local_links_checked": 41,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Exact Taylor/jet identities and finite local cusp-index control. Global finiteness, Euler and imported simple-boundary theorem are written proof steps; no global pair is constructed.",
+  "requirements_audit": {
+    "ramifies": "The marked-model sole omitted R has e2; radial cusp prime after target blowup has e3",
+    "omitted": "Exactly R on the specified original marked normalization; original source open imported explicitly",
+    "target_images_and_residue_degrees": "f1 proved; image restriction formula explicit but actual P,Q and implicit equation absent",
+    "exceptional_fibre_lengths": "Conditional quartic table complete; actual cusp value and double-image values depend on missing P,Q"
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "full_navigation_check": {
+    "outcome": "BLOCKED by pre-existing missing historical artifacts; scoped validation passes",
+    "make_check_navigation": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+    "historical_artifacts_reconstructed": false
+  },
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "current_artifact_sha256": {
+    "WRIGHT_IMAGE_RESTRICTION.md": "a8a138f939484ab5a5a66914af9850102d67fa9ed77994b2b6f81c997ac2f301",
+    "verify_wright_image.py": "82aabb7ba170bba24d87af2db4bda351361dea3bcf843c1001c6380dfb968c94",
+    "wright_image_ledger.json": "615e09f11921874f867800327b134546f36e40e455a2f54984f5e9d1d9c5344b",
+    "wright_image_receipt.json": "1d3640209c37bc442a4b3408073e8a8d26820fc69102d94ed6f7c49068263ef9",
+    "README.md": "9cb85b369935cd8dc025ab329f1680c49e9601991b6bb571c5ad239c57615c5c",
+    "INPUT_GATE.md": "8fb0d103d908d2b2e9d8189795413436bc0cceaee9571e75cc3c420d9f8c6d25"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json"
+  ]
+}

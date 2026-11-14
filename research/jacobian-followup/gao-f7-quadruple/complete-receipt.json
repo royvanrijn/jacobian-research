@@ -1,0 +1,76 @@
+{
+  "result": "PASS",
+  "claim_id": "GAOF7FOUR2",
+  "scope": "Complete normalized F7 quadruple-or-higher strata over C on c!=0: exactly912 targets of multiplicity type4+2+1^6 (six source points), exactly118 of type5+1^7 (seven points), all others type4+1^8 (eight points). Hence exactly1030 nonordinary normalized quadruple targets. No4+3+2 type occurs. Combined with prior exclusions, only3+2+2+2 remains for a three-point F7 fibre.",
+  "normalized_counts": {
+    "4+2+1^6": 912,
+    "5+1^7": 118,
+    "nonordinary_total": 1030
+  },
+  "remaining_three_point_types": [
+    "3+2+2+2"
+  ],
+  "components": [
+    {
+      "name": "maximum_multiplicity",
+      "checker": "gao-f7-linear-cube/verify_high_root.py",
+      "checker_sha256": "3273bc75616c95de92b8e50325be8637497976dfcb7929e1f96170ab6c26278c",
+      "receipt": "gao-f7-linear-cube/high-root-receipt.json",
+      "receipt_sha256": "ad6fcc75568a5788395ba0fa3a54e9432bf606453c6c8a9b1ec926a88cd06dca",
+      "checks": 2426,
+      "seconds": 29.12788670399459
+    },
+    {
+      "name": "fivefold",
+      "checker": "gao-f7-quintuple/verify.py",
+      "checker_sha256": "8c9731dc5521dfcf6385db69b3aef3e3434f77ccbce7c5fcbd1d492933165bcf",
+      "receipt": "gao-f7-quintuple/receipt.json",
+      "receipt_sha256": "95ae6ffe25c731655c0ac79bd71577e4659e3946adf5d892c2bf4b5822c7ce47",
+      "checks": 5490,
+      "seconds": 9.968060304992832
+    },
+    {
+      "name": "quadruple_source",
+      "checker": "gao-f7-quadruple/verify.py",
+      "checker_sha256": "ac019de08776edc4e16988bdbd847df4f5a1f2216b517ff17cf0fe004f7cfb1b",
+      "receipt": "gao-f7-quadruple/receipt.json",
+      "receipt_sha256": "184d76fdf1a2b8fc1d06bce71e7b7d2d35ddbe21c47c52ef9f64c0e3a0d79956",
+      "checks": 1535,
+      "seconds": 10.305107450025389
+    },
+    {
+      "name": "integer_norm",
+      "checker": "gao-f7-quadruple/replay_norm.py",
+      "checker_sha256": "7ce1b7790a8203df9220e6d8a0091a500604a7b6ddc5cb62aab309950a6f8930",
+      "receipt": "gao-f7-quadruple/norm-grid-receipt.json",
+      "receipt_sha256": "5ad28f8f343219851da41341f1a9fbab98518d9a62bc2898fc7a7ffceba9c29e",
+      "checks": null,
+      "seconds": 52.261763488990255
+    },
+    {
+      "name": "source_discriminant",
+      "checker": "gao-f7-quadruple/verify_discriminant.py",
+      "checker_sha256": "5f42ea4051110e6e0fe3060a65149458116c0d9a25c21007caae5864334105f2",
+      "receipt": "gao-f7-quadruple/discriminant-receipt.json",
+      "receipt_sha256": "36cad9b37fd8921192982bbfd0b72b4e791e463eb5b5d8b8054e7074bc0b63b4",
+      "checks": 129496,
+      "seconds": 75.11161258298671
+    },
+    {
+      "name": "remaining_charts",
+      "checker": "gao-f7-quadruple/verify_remaining_charts.py",
+      "checker_sha256": "92260d7b69fb7cad07f8db61d472c159041b5848c36808377441550c3e46dce7",
+      "receipt": "gao-f7-quadruple/remaining-charts-receipt.json",
+      "receipt_sha256": "145c74d412e7a86cfe7bbac65b4593356fd661c364e0b8c1c87f296c59e35e8d",
+      "checks": 969,
+      "seconds": 2.539321995980572
+    }
+  ],
+  "mathematical_argument": "COMPLETE_PROOF.md: discriminant singularity implies norm multiplicity >=2; squarefree degree912 residual and all-pole finite-free coverage give complete strata and counting.",
+  "checker_sha256": "3f036a59a73c5e351c720b3801d25f430b1751a2b4afbea48d79beb0b7659437",
+  "proof_sha256": "7270a48f9a0e1b0267e8feaf37ab9d99779b0dc253bb8c70f6a367c48c6687e1",
+  "source_input_sha256": "fba7ec6541db431da1643488c7ebf5d308e42e1a3b504ca79c28086b4de3be79",
+  "python": "3.12.3",
+  "seconds": 180.87040237800102,
+  "assurance": "Self-replay with two determinant/ring arithmetic engines and explicit written norm/counting argument. No independent end-to-end, formal or external review, author endorsement or novelty priority."
+}

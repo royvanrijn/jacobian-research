@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT9",
+  "hypotheses": "Actual marked PF2WRIGHT1 ring and source open; finite target pair in the ring with constant nonzero source Jacobian. Quartic conclusions additionally require degree4.",
+  "omitted_prime": {
+    "ideal": [
+      "Y",
+      "A1",
+      "B1+1"
+    ],
+    "normalization": "A1_v",
+    "e": 2,
+    "f": 1,
+    "ramifies": true,
+    "omitted": true,
+    "image_parametrization": [
+      "P(0,0,-1,v)",
+      "Q(0,0,-1,v)"
+    ]
+  },
+  "degree_identity": "d=3+deg gcd(p0_prime,q0_prime)",
+  "quartic": {
+    "derivative_gcd": "v-v_star",
+    "exceptional_value": "(p0(v_star),q0(v_star))",
+    "exceptional_type": "ordinary (2,3) cusp; no companion image branch",
+    "fibre_rows": [
+      {
+        "value_type": "off_image",
+        "branches": 0,
+        "retained_length": 4,
+        "omitted_local_lengths": []
+      },
+      {
+        "value_type": "immersed",
+        "branches": 1,
+        "retained_length": 2,
+        "omitted_local_lengths": [
+          2
+        ]
+      },
+      {
+        "value_type": "double_image",
+        "branches": 2,
+        "retained_length": 0,
+        "omitted_local_lengths": [
+          2,
+          2
+        ]
+      },
+      {
+        "value_type": "cusp",
+        "branches": 1,
+        "retained_length": 1,
+        "omitted_local_lengths": [
+          3
+        ]
+      }
+    ],
+    "leading_coefficient": "constant*H_C",
+    "generic_omitted_Newton_width": 2,
+    "generic_omitted_Newton_slope": "1/2",
+    "raw_discriminant": "constant*H_C*J^2",
+    "index_vanishes_at_cusp": true,
+    "cusp_raw_discriminant_order_at_least": 4,
+    "singleton_omitted_radial": {
+      "e": 3,
+      "f": 1,
+      "length": 3,
+      "canonical_vector": [
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  "local_control": {
+    "normal_equation": "-3*U*w + 3*V + w**3",
+    "root_equation": "-4*U**3 + 3*U*z**2 + 9*V**2 + z**3",
+    "inclusion_determinant": "-3*V",
+    "is_global_Wright_map": false
+  },
+  "actual_target_pair": null,
+  "actual_image_equation": null,
+  "actual_exceptional_value": null,
+  "actual_compatible_completion_supplied": false,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

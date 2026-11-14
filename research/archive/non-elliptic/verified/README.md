@@ -1,7 +1,18 @@
 # Verified Keller core
 
-The [typed claim ledger](../MATH_STATUS.json) records the exact scope and
-assurance of each result. [All core, cancellation and arithmetic claims](../index/core.md)
+[Current open problems and literature review](../../../jacobian-followup/OPEN_PROBLEMS_AND_LITERATURE_2026-11-14.md)
+connects this archived construction programme to the later JC2 and HC4
+follow-ups. Presentation-independent descent, the ambient stable-map
+moduli and global complexity minima remain open; new families alone
+do not close them.
+
+The [universal compression follow-up](../../../jacobian-followup/universal-keller-compression/README.md)
+reduces the universal map from N to N-1 coordinates for N>=5, retaining
+complete fibres and stable atomicity. Its scaling section does not resolve
+primitive-presentation descent or global dimension minima.
+
+The [typed claim ledger](../../../MATH_STATUS.json) records the exact scope and
+assurance of each result. [All core, cancellation and arithmetic claims](../../../index/core.md)
 are indexed together; this page gives a short reading path.
 
 | Read for | Canonical source |
@@ -15,12 +26,12 @@ are indexed together; this page gives a short reading path.
 | Presentation-free descent boundary | [Generic Tschirnhaus non-descent](GENERIC_TSCHIRNHAUS_NON_DESCENT.md) |
 | Characteristic-two distinctions | [Huq–Kuruvilla and Mondello audit](HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md) · [Witt-lift obstructions](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md) |
 
-Use the [catalogue](../index/core.md) for the full theorem chain, later
+Use the [catalogue](../../../index/core.md) for the full theorem chain, later
 refinements and exact proof/replay boundaries. The
-[conceptual synthesis](../UNIFYING_THESIS.md), [algorithmic lessons](../knowledge/ALGORITHMS.md)
-and [replay guide](../REPRODUCE.md) connect the constructions to reusable methods.
+[conceptual synthesis](../UNIFYING_THESIS.md), [algorithmic lessons](../../../knowledge/ALGORITHMS.md)
+and [replay guide](../../../REPRODUCE.md) connect the constructions to reusable methods.
 
-The [previous expanded index](../archive/repository-cleanup-2026-09-12/research__verified__README.md.txt)
+The [previous expanded index](../../../archive/repository-cleanup-2026-09-12/research__verified__README.md.txt)
 is preserved as history.
 
 <!-- status-consumer: HKM2W1 904c57385ac0b0dd -->

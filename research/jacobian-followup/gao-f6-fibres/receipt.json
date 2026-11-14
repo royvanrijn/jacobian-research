@@ -1,0 +1,291 @@
+{
+  "result": "PASS",
+  "claim_ids": [
+    "GAOF6FIB1",
+    "GAOF6NP1"
+  ],
+  "checks": 118,
+  "check_names": [
+    "sweep first coordinate",
+    "E1 polynomial",
+    "E2 polynomial",
+    "E3 polynomial",
+    "E4 polynomial",
+    "gamma-zero stage 1",
+    "gamma-zero stage 2",
+    "gamma-zero stage 3",
+    "gamma-zero stage 4",
+    "no source weight 0 below output weight 1",
+    "boundary x-zero output 1",
+    "no source weight 0 below output weight 2",
+    "no source weight 1 below output weight 2",
+    "boundary x-zero output 2",
+    "no source weight 0 below output weight 3",
+    "no source weight 1 below output weight 3",
+    "no source weight 2 below output weight 3",
+    "boundary x-zero output 3",
+    "no source weight 0 below output weight 4",
+    "no source weight 1 below output weight 4",
+    "no source weight 2 below output weight 4",
+    "no source weight 3 below output weight 4",
+    "boundary x-zero output 4",
+    "boundary triangular diagonal",
+    "stage automorphism determinant",
+    "stage inverse 0",
+    "stage inverse 1",
+    "stage inverse 2",
+    "stage inverse 3",
+    "sweep Jacobian",
+    "gamma-zero target reconstruction 0",
+    "gamma-zero target reconstruction 1",
+    "gamma-zero target reconstruction 2",
+    "gamma-zero target reconstruction 3",
+    "Gao lifting derivative identity",
+    "sweep lifting residual 0",
+    "sweep lifting residual 1",
+    "sweep lifting residual 2",
+    "sweep lifting residual 3",
+    "monic coefficient family",
+    "coefficient coordinate inverse A0",
+    "coefficient coordinate inverse B0",
+    "coefficient coordinate inverse C0",
+    "forced square coefficient 5",
+    "forced square coefficient 4",
+    "forced square coefficient 3",
+    "forced cubic has three distinct roots",
+    "two-triple obstruction",
+    "five-one first constraints",
+    "five-one third constraint 0",
+    "five-one third constraint 1/3",
+    "sixfold root impossible",
+    "triple family coefficient 5",
+    "triple family coefficient 4",
+    "triple family coefficient 3",
+    "quadruple root condition",
+    "triple-double condition",
+    "three quadruple points",
+    "six triple-double points",
+    "triple degenerations disjoint",
+    "two-double family coefficient 5",
+    "two-double family coefficient 4",
+    "two-double family coefficient 3",
+    "double roots collide",
+    "residual roots collide",
+    "double meets simple root",
+    "two-double quadruple divisor squarefree",
+    "two-double three-double divisor squarefree",
+    "two-double triple-double divisor squarefree",
+    "two-double punctures disjoint 1,0",
+    "two-double punctures disjoint 2,0",
+    "two-double punctures disjoint 2,1",
+    "two-double punctures disjoint 3,0",
+    "two-double punctures disjoint 3,1",
+    "two-double punctures disjoint 3,2",
+    "partition simple-root count [1, 1, 1, 1, 1, 1]",
+    "partition simple-root count [2, 1, 1, 1, 1]",
+    "partition simple-root count [2, 2, 1, 1]",
+    "partition simple-root count [2, 2, 2]",
+    "partition simple-root count [3, 1, 1, 1]",
+    "partition simple-root count [3, 2, 1]",
+    "partition simple-root count [3, 3]",
+    "partition simple-root count [4, 1, 1]",
+    "partition simple-root count [4, 2]",
+    "partition simple-root count [5, 1]",
+    "partition simple-root count [6]",
+    "witness six coefficient 5",
+    "witness six coefficient 4",
+    "witness six coefficient 3",
+    "witness count six",
+    "witness four coefficient 5",
+    "witness four coefficient 4",
+    "witness four coefficient 3",
+    "witness count four",
+    "witness three coefficient 5",
+    "witness three coefficient 4",
+    "witness three coefficient 3",
+    "witness count three",
+    "witness two coefficient 5",
+    "witness two coefficient 4",
+    "witness two coefficient 3",
+    "witness count two",
+    "witness zero coefficient 5",
+    "witness zero coefficient 4",
+    "witness zero coefficient 3",
+    "witness count zero",
+    "discriminant c-valuation two",
+    "boundary discriminant only quadratic",
+    "boundary discriminant nonzero",
+    "double incidence equation",
+    "double incidence derivative",
+    "discriminant reduced",
+    "boundary escape roots simple",
+    "boundary escape roots not one",
+    "source hash jacobian-followup/gao-f4-fibres/sources/source-tangent_sweeps_v3.tex",
+    "source hash jacobian-followup/gao-f4-fibres/sources/gao-2608.00222v2-source.tar",
+    "source hash jacobian-followup/gao-f4-fibres/sources/ideosphere-keller-fibers-v1.pdf",
+    "source hash jacobian-followup/gao-f6-fibres/sources/gao-latest-abs.html"
+  ],
+  "checker_sha256": "c07acfbf5c37af14f87568fc1b2df18269edfd1fc1372c282d2543e4f6ba2b43",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "partition_table": [
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "gcd_degrees": [
+        0,
+        0
+      ],
+      "fibre_points": 6,
+      "occurs": true
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "gcd_degrees": [
+        1,
+        0
+      ],
+      "fibre_points": 4,
+      "occurs": true
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "gcd_degrees": [
+        2,
+        0
+      ],
+      "fibre_points": 2,
+      "occurs": true
+    },
+    {
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "gcd_degrees": [
+        3,
+        0
+      ],
+      "fibre_points": 0,
+      "occurs": true
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "gcd_degrees": [
+        2,
+        1
+      ],
+      "fibre_points": 3,
+      "occurs": true
+    },
+    {
+      "partition": [
+        3,
+        2,
+        1
+      ],
+      "gcd_degrees": [
+        3,
+        1
+      ],
+      "fibre_points": 1,
+      "occurs": true
+    },
+    {
+      "partition": [
+        3,
+        3
+      ],
+      "gcd_degrees": [
+        4,
+        2
+      ],
+      "fibre_points": 0,
+      "occurs": false
+    },
+    {
+      "partition": [
+        4,
+        1,
+        1
+      ],
+      "gcd_degrees": [
+        3,
+        2
+      ],
+      "fibre_points": 2,
+      "occurs": true
+    },
+    {
+      "partition": [
+        4,
+        2
+      ],
+      "gcd_degrees": [
+        4,
+        2
+      ],
+      "fibre_points": 0,
+      "occurs": false
+    },
+    {
+      "partition": [
+        5,
+        1
+      ],
+      "gcd_degrees": [
+        4,
+        3
+      ],
+      "fibre_points": 1,
+      "occurs": false
+    },
+    {
+      "partition": [
+        6
+      ],
+      "gcd_degrees": [
+        5,
+        4
+      ],
+      "fibre_points": 0,
+      "occurs": false
+    }
+  ],
+  "cardinalities": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "boundary_original_discriminant": "A^2+4*B",
+  "boundary_transformed_discriminant": "A^2-4*k",
+  "saturated_discriminant_boundary": "27*(-A**2 + 4*k)/256",
+  "source_manifest_sha256": "d99f58dc0584ea1e720684e6e1b0719f7b2df480ad7c5e4f3e86c09992860dce",
+  "assurance": "Exact identities plus written geometry, not formal verification, external review or novelty priority."
+}

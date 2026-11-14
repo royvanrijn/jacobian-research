@@ -10,6 +10,11 @@ For current status use:
 
 ## Early experiments
 
+The [pre-classification different-NS objective](DIFFERENT_NS_BEFORE_CLASSIFICATION_2026-09-15.md.txt)
+preserves the September15 equation-compilation handoff and earlier gate chronology.
+The [classification experiment](../../elkies-k3/DIFFERENT_NS_CLASSIFICATION_2026-09-15.md)
+is the current entry point; the retained handoff is deferred.
+
 [`early-experiments/`](early-experiments/) contains the physically moved early tranche: bounded neighbour searches, guessed charts, CM probes, rejected systems, and pre-certification route work. Scripts may remain active as regressions even when the narrative that motivated them is archived.
 
 ## September 2026 superseded route tranche

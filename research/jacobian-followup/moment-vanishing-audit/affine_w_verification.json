@@ -1,0 +1,179 @@
+{
+  "scope": "Exact bounded checks for all-degree written classification, not an exhaustive cubic search.",
+  "formula_vs_direct_Wick_rows": [
+    {
+      "h": [
+        "2",
+        "3",
+        "1"
+      ],
+      "moments_through_8": [
+        "3",
+        "37",
+        "527",
+        "10959",
+        "294509",
+        "9878167",
+        "394883733",
+        "18168906193"
+      ]
+    },
+    {
+      "h": [
+        "0",
+        "2",
+        "1"
+      ],
+      "moments_through_8": [
+        "2",
+        "19",
+        "176",
+        "2251",
+        "34034",
+        "601693",
+        "12111476",
+        "273160249"
+      ]
+    },
+    {
+      "h": [
+        "0",
+        "0",
+        "2"
+      ],
+      "moments_through_8": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "h": [
+        "1",
+        "0",
+        "0",
+        "2"
+      ],
+      "moments_through_8": [
+        "1",
+        "11",
+        "99",
+        "837",
+        "11085",
+        "172815",
+        "2314095",
+        "43330665"
+      ]
+    },
+    {
+      "h": [
+        "2"
+      ],
+      "moments_through_8": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "repaired_failure_rows": [
+    {
+      "a": "1",
+      "b": "2",
+      "repair_degree": 0,
+      "Z_marked_moments": [
+        "1",
+        "4",
+        "24",
+        "192",
+        "1920",
+        "23040"
+      ]
+    },
+    {
+      "a": "2",
+      "b": "-1",
+      "repair_degree": 1,
+      "Z_marked_moments": [
+        "2",
+        "-4",
+        "12",
+        "-48",
+        "240",
+        "-1440"
+      ]
+    }
+  ],
+  "sharp_safe_rows": [
+    {
+      "a": "1",
+      "deg_u": 1,
+      "deg_Q": 1,
+      "last_nonzero_m": 3,
+      "moment": "-3"
+    },
+    {
+      "a": "1",
+      "deg_u": 1,
+      "deg_Q": 2,
+      "last_nonzero_m": 6,
+      "moment": "180"
+    },
+    {
+      "a": "1",
+      "deg_u": 1,
+      "deg_Q": 3,
+      "last_nonzero_m": 9,
+      "moment": "-45360"
+    },
+    {
+      "a": "2",
+      "deg_u": 1,
+      "deg_Q": 1,
+      "last_nonzero_m": 3,
+      "moment": "-54"
+    },
+    {
+      "a": "2",
+      "deg_u": 1,
+      "deg_Q": 2,
+      "last_nonzero_m": 6,
+      "moment": "58320"
+    },
+    {
+      "a": "2",
+      "deg_u": 1,
+      "deg_Q": 3,
+      "last_nonzero_m": 9,
+      "moment": "-264539520"
+    },
+    {
+      "a": "1",
+      "deg_u": 2,
+      "deg_Q": 1,
+      "last_nonzero_m": 5,
+      "moment": "-60"
+    },
+    {
+      "a": "1",
+      "deg_u": 2,
+      "deg_Q": 2,
+      "last_nonzero_m": 10,
+      "moment": "907200"
+    }
+  ],
+  "linear_branch_polynomial_identity_at_a2_bminus3": "PASS",
+  "finite_gate": "Written numerator degree <=5D-4 gives 5D-3 sufficient pure moments for total degree D>=2. Cubics:12; quartics:17. The h(0)=0 numerator has degree <=3. No optimality claim.",
+  "checker_sha256": "a86ec524ee7ca785f9c5489f0e3ecfa6d9095135c1334db39d27f1e17f7cc52a",
+  "arithmetic_helper_sha256": "d543ed356a45a6f51c8fd9ddd5a8fd235853127dffd665641326e41c68c6dc67"
+}

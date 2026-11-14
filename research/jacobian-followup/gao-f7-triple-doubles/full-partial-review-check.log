@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/royvanrijn/src/jacobian-research/research/scripts/research.py", line 561, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/royvanrijn/src/jacobian-research/research/scripts/research.py", line 438, in main
+    validate_lessons(items, entries, check_reviews=args.command == "check")
+  File "/home/royvanrijn/src/jacobian-research/research/scripts/research.py", line 128, in validate_lessons
+    assert (ROOT / p).is_file(), f"{item['id']}: missing source {p}"
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json

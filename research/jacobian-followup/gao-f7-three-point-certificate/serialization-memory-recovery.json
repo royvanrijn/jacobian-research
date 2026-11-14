@@ -1,0 +1,9 @@
+{
+  "failure": "The4GB parent address-space limit was reached while building a JSON checkpoint string.703 complete nodes remain journaled; the failed next node was not counted.",
+  "retained_nodes": 703,
+  "correction": "Stream each JSON object, raise the parent cap to8GiB, and bound numerical-worker aggregate address space to40GiB with at most8GiB per worker.",
+  "worker_budget_GiB": 40,
+  "parent_cap_GiB": 8,
+  "script": "solve_local_parallel_streamed.py",
+  "boundary": "No unit certificate or new exclusion follows from this verified prefix."
+}

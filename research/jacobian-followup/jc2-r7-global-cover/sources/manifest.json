@@ -1,0 +1,46 @@
+{
+  "schema": "r7-global-cover-primary-sources-v1",
+  "sources": [
+    {
+      "file": "nori-1983.pdf",
+      "url": "https://www.numdam.org/article/ASENS_1983_4_16_2_305_0.pdf",
+      "bytes": 4546575,
+      "sha256": "1b848c19dcaaa016ff8070a7843cfd89db70cbbec3ce13cd9de080074739cc45"
+    },
+    {
+      "file": "orevkov-fg.pdf",
+      "url": "https://www.math.univ-toulouse.fr/~orevkov/fg.pdf",
+      "bytes": 169335,
+      "sha256": "aabb51f9d3c9b06f0e3d31457a62f7457f9cb048e960e0052a8f45044ff7cac6"
+    },
+    {
+      "existing_file": "jacobian-followup/jc2-r7-complement/sources/campillo-greuel-lossen-0511407v2.pdf",
+      "url": "https://arxiv.org/pdf/math/0511407v2",
+      "bytes": 384264,
+      "sha256": "adecaaab85f1643b5558259aa079d873224f4d1605d1aaa6e29d4fe1f7811354"
+    }
+  ],
+  "imports": [
+    {
+      "source": "nori-1983.pdf",
+      "location": "Proposition3.27, journal page331, PDF page28 (index27)",
+      "use": "Abelian kernel after filling a nodal divisor with strict self-intersection positivity and transverse boundary."
+    },
+    {
+      "source": "orevkov-fg.pdf",
+      "location": "Section1 PDF page2; added2003 correction on the same page",
+      "use": "Audit of negativity condition only. No use of the withdrawn claimed Jacobian reduction."
+    }
+  ],
+  "recent_primary": {
+    "title": "On the topology of fiber-type curves: an affine Zariski pair of nodal curves",
+    "authors": [
+      "Jose I. Cogolludo-Agustin",
+      "Eva Elduque"
+    ],
+    "published": "2026-04-08",
+    "url": "https://link.springer.com/article/10.1007/s13398-026-01853-1",
+    "doi": "10.1007/s13398-026-01853-1",
+    "use": "Literature context: equal local nodal/infinity data need not determine an affine complement group. Not a premise of the numerical inequality."
+  }
+}

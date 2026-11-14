@@ -1,0 +1,141 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "NECESSARY_EQUATIONS_GENERATED",
+  "cases": [
+    {
+      "name": "double_at_marked",
+      "leading_sections": [
+        "s**2*t",
+        "n1*s*t**2",
+        "delta*n1**2*t**3 + s*(d0*s**2 + d1*s*t + d2*t**2)"
+      ],
+      "W": "n1**3*w**3/z**2",
+      "coefficient_equations": [
+        [
+          13,
+          "30*d0**2"
+        ],
+        [
+          12,
+          "-3*(c4 - 10*d0*d1)"
+        ],
+        [
+          10,
+          "3*(c2 - 10*d0*delta*n1**2 + 5*d0*n1**2 - 10*d1*d2 - 4*d1*k*n1 - 2*lam*n1)"
+        ],
+        [
+          9,
+          "2*(3*c1 - 30*d1*delta*n1**2 + 15*d1*n1**2 - 15*d2**2 - 12*d2*k*n1 - 5*n1**3 + 15*n1**2*x0)"
+        ],
+        [
+          8,
+          "-3*n1**2*(30*d2*delta - 15*d2 + 12*delta*k*n1 - 4*k*n1 + 5*n1*t0)"
+        ],
+        [
+          7,
+          "-20*n1**4*(3*delta**2 - 3*delta + 1)"
+        ]
+      ],
+      "functional": "coefficient_w7",
+      "functional_value": "-20*n1**4*(3*delta**2 - 3*delta + 1)"
+    },
+    {
+      "name": "simple_at_marked",
+      "leading_sections": [
+        "s*t**2",
+        "n1*s**2*t",
+        "delta*n1**2*s**3 + t*(d0*s**2 + d1*s*t + d2*t**2)"
+      ],
+      "W": "(n1**2*w**3/z + n1**2*w)*(n1*w**4/z + 2*n1*w**2 + n1*z)",
+      "coefficient_equations": [
+        [
+          11,
+          "20*n1**4*(3*delta**2 - 3*delta + 1)"
+        ],
+        [
+          10,
+          "3*n1**2*(30*d0*delta - 15*d0 + 12*delta*k*n1 - 4*k*n1 + 5*n1*t0)"
+        ],
+        [
+          9,
+          "-6*(c4 - 5*d0**2 - 4*d0*k*n1 - 10*d1*delta*n1**2 + 5*d1*n1**2 + 5*n1**2*x0)"
+        ],
+        [
+          8,
+          "-3*(c3 - 10*d0*d1 - 4*d1*k*n1 - 10*d2*delta*n1**2 + 5*d2*n1**2 - 2*lam*n1)"
+        ],
+        [
+          6,
+          "3*(c1 - 10*d1*d2)"
+        ],
+        [
+          5,
+          "-30*d2**2"
+        ]
+      ],
+      "functional": "coefficient_w11",
+      "functional_value": "20*n1**4*(3*delta**2 - 3*delta + 1)"
+    },
+    {
+      "name": "neither_at_marked",
+      "leading_sections": [
+        "t*(s - t)**2",
+        "n1*t**2*(s - t)",
+        "delta*n1**2*t**3 + (s - t)*(d0*s**2 + d1*s*t + d2*t**2)"
+      ],
+      "W": "n1*w**2*(n1**2*w - n1**2)/z**2",
+      "coefficient_equations": [
+        [
+          13,
+          "30*d0**2"
+        ],
+        [
+          12,
+          "-3*(c4 + 70*d0**2 - 10*d0*d1)"
+        ],
+        [
+          11,
+          "24*(c4 + 25*d0**2 - 10*d0*d1)"
+        ],
+        [
+          10,
+          "3*(c2 + 2*c3 - 25*c4 - 300*d0**2 + 250*d0*d1 - 20*d0*d2 - 10*d0*delta*n1**2 - 8*d0*k*n1 + 5*d0*n1**2 - 10*d1**2 - 10*d1*d2 - 4*d1*k*n1 - 2*lam*n1)"
+        ],
+        [
+          9,
+          "2*(3*c1 - 6*c2 - 15*c3 + 60*c4 + 375*d0**2 - 600*d0*d1 + 150*d0*d2 + 30*d0*delta*n1**2 + 60*d0*k*n1 - 15*d0*n1**2 + 75*d1**2 + 60*d1*d2 - 30*d1*delta*n1**2 + 24*d1*k*n1 + 15*d1*n1**2 - 15*d2**2 - 12*d2*k*n1 + 18*lam*n1 - 5*n1**3 + 15*n1**2*x0)"
+        ],
+        [
+          8,
+          "-30*c1 + 15*c2 + 60*c3 - 105*c4 - 330*d0**2 + 1050*d0*d1 - 600*d0*d2 + 60*d0*delta*n1**2 - 240*d0*k*n1 - 30*d0*n1**2 - 300*d1**2 - 150*d1*d2 + 210*d1*delta*n1**2 - 60*d1*k*n1 - 105*d1*n1**2 + 150*d2**2 - 90*d2*delta*n1**2 + 120*d2*k*n1 + 45*d2*n1**2 - 36*delta*k*n1**3 + 12*k*n1**3 - 90*lam*n1 - 15*n1**3*t0 + 35*n1**3 - 150*n1**2*x0"
+        ],
+        [
+          7,
+          "4*(15*c1 - 15*c3 + 12*c4 + 15*d0**2 - 120*d0*d1 + 150*d0*d2 - 60*d0*delta*n1**2 + 60*d0*k*n1 + 30*d0*n1**2 + 75*d1**2 - 60*d1*delta*n1**2 + 30*d1*n1**2 - 75*d2**2 + 90*d2*delta*n1**2 - 60*d2*k*n1 - 45*d2*n1**2 - 15*delta**2*n1**4 + 36*delta*k*n1**3 + 15*delta*n1**4 - 12*k*n1**3 + 30*lam*n1 - 5*n1**4 + 15*n1**3*t0 - 10*n1**3 + 75*n1**2*x0)"
+        ],
+        [
+          6,
+          "-60*c1 - 15*c2 + 30*c3 - 9*c4 + 90*d0*d1 - 300*d0*d2 + 210*d0*delta*n1**2 - 120*d0*k*n1 - 105*d0*n1**2 - 150*d1**2 + 150*d1*d2 + 60*d1*delta*n1**2 + 60*d1*k*n1 - 30*d1*n1**2 + 300*d2**2 - 540*d2*delta*n1**2 + 240*d2*k*n1 + 270*d2*n1**2 + 180*delta**2*n1**4 - 216*delta*k*n1**3 - 180*delta*n1**4 + 72*k*n1**3 - 90*lam*n1 + 60*n1**4 - 90*n1**3*t0 + 10*n1**3 - 300*n1**2*x0"
+        ],
+        [
+          5,
+          "2*(15*c1 + 6*c2 - 3*c3 + 30*d0*d2 - 30*d0*delta*n1**2 + 12*d0*k*n1 + 15*d0*n1**2 + 15*d1**2 - 60*d1*d2 + 30*d1*delta*n1**2 - 24*d1*k*n1 - 15*d1*n1**2 - 75*d2**2 + 180*d2*delta*n1**2 - 60*d2*k*n1 - 90*d2*n1**2 - 90*delta**2*n1**4 + 72*delta*k*n1**3 + 90*delta*n1**4 - 24*k*n1**3 + 18*lam*n1 - 30*n1**4 + 30*n1**3*t0 + 5*n1**3 + 75*n1**2*x0)"
+        ],
+        [
+          4,
+          "-6*c1 - 3*c2 + 30*d1*d2 - 30*d1*delta*n1**2 + 12*d1*k*n1 + 15*d1*n1**2 + 30*d2**2 - 90*d2*delta*n1**2 + 24*d2*k*n1 + 45*d2*n1**2 + 60*delta**2*n1**4 - 36*delta*k*n1**3 - 60*delta*n1**4 + 12*k*n1**3 - 6*lam*n1 + 20*n1**4 - 15*n1**3*t0 - 5*n1**3 - 30*n1**2*x0"
+        ]
+      ],
+      "functional": "derivative_3_at_1",
+      "functional_value": "-120*n1**4*(3*delta**2 - 3*delta + 1)"
+    }
+  ],
+  "nonproportionality_open": "n1 != 0",
+  "assurance": {
+    "coverage_formally_verified": false,
+    "layer_excluded": false,
+    "finite_map_constructed": false
+  },
+  "source_sha256": "b1dd01f4600f740b4c11b321040af32e083c9351cdfef804ed9653170b44063c",
+  "elapsed_seconds": 1.757831
+}

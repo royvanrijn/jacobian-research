@@ -1,0 +1,104 @@
+{
+  "boundary": "The first-pair global theorem trusts complete PARI descent. Independent arithmetic replay proves local/point/map/height facts, not Selmer completeness. Goal was cleared by user; no further research scheduled.",
+  "current_total_ledger_entries": 1664,
+  "fresh_complete_CAS_replay": "PASS identical mathematical outputs",
+  "global_evidence_validation_waived": false,
+  "global_navigation_status": "FAILED_PRE_EXISTING_MISSING_CONSUMER",
+  "independent_replays": {
+    "critical": {
+      "boundary": "Intrinsic j-critical divisor invariant only. No full rank17 record basis, surface isomorphism/nonisomorphism or Picard proof.",
+      "critical_value_traces": [
+        56,
+        188
+      ],
+      "geometric_marked_fibrations_distinct": true,
+      "prime": 197,
+      "schema": "x1152-critical-value-independent-replay-v2",
+      "status": "PASS",
+      "surface_Fp_points": [
+        42381,
+        42381
+      ],
+      "underlying_surface_identity": "UNKNOWN"
+    },
+    "local": {
+      "CAS_premise": "PARI ellrank=[2,2,0,...] and ell2cover dimension3 must be replayed separately.",
+      "all_places_locally_soluble": true,
+      "anti_invariant_heights_on_paired_base": [
+        "24",
+        "24"
+      ],
+      "anti_invariant_heights_on_quadratic_bases": [
+        "12",
+        "12"
+      ],
+      "bad_primes_checked": 22,
+      "boundary": "All local places and exported arithmetic independently verified. Global existence and infinitude additionally use the complete PARI descent; no explicit paired-base point extracted.",
+      "independent_exact_rank": false,
+      "independent_nontorsion_points_at_least": 1,
+      "independent_selmer_completeness": false,
+      "pair": [
+        0,
+        1
+      ],
+      "quartic_maps_checked": 3,
+      "rational_2torsion_dimension": 1,
+      "recursive_prime_certificates": 46,
+      "schema": "hill1152-first-pair-arithmetic-replay-v2",
+      "source_height_certificate_sha256": "11d71b2a10780265505177c19e93d40587bec73163f8231b5b8910b1749e90d2",
+      "status": "PASS"
+    },
+    "paired": {
+      "Jacobian_Q_models": 15,
+      "boundary": "All polynomial identities and Q-isomorphism scales checked. Classical binary-quartic Jacobian theorem assumed. No global Selmer completeness, torsor solubility, rank or new rational point follows.",
+      "complete_selmer_spaces": 0,
+      "explicit_degree2_isogenies": 15,
+      "new_torsor_points": 0,
+      "paired_genus_one_bases": 15,
+      "schema": "hill1152-paired-jacobians-independent-replay-v1",
+      "status": "PASS"
+    }
+  },
+  "lesson_and_work_fingerprints": "PASS",
+  "navigation_views_rendered": 25,
+  "new_claims": [
+    "EC-X1152-GEOMETRIC-FIBRATION-DISTINCTION-20261114",
+    "EC-HILL1152-PAIRED-JACOBIANS-20261114",
+    "EC-HILL1152-FIRST-PAIR-LOCAL-20261114",
+    "EC-HILL1152-FIRST-PAIR-GLOBAL-MW19-20261114"
+  ],
+  "new_note_links": "PASS",
+  "new_source_and_lock_hashes": {
+    "artifacts/generated-results/hill1152-transfer-20261113-v2/four-generic-covers.json": "11d71b2a10780265505177c19e93d40587bec73163f8231b5b8910b1749e90d2",
+    "artifacts/generated-results/hill1152-transfer-20261113-v2/result.json": "928fa5bf06101028daa08f195bb24d1a1cc04e7d96bf19f342935cde19e1947f",
+    "artifacts/generated-results/x1152-fibration-distinction-20261114-v1.json": "a9e79ba56529fac8a04425af3ae9067ad693852eb4c126382a1b410e292bf648",
+    "artifacts/generated-results/x1152-fibration-distinction-independent-20261114-v2.json": "8248f117aff64f7fd8bfbe35c7e55e1e17bb8c7d63745a313a8999e2cf7bb22f",
+    "artifacts/generated-results/x1152-first-pair-arithmetic-20261114-v2.json": "23363ebf53f7e44e065a1993c86236d764fff06410715a58a7400645e226a752",
+    "artifacts/generated-results/x1152-first-pair-descent-20261114-v1.json": "dd3f88a910cd403ab04624724a878135af951788a58bfff965d7f3474b947256",
+    "artifacts/generated-results/x1152-first-pair-descent-20261114-v2-replay.json": "247201fed180395a940a86d6f118ea632c486cb06f46cf2497d146bb4d5ec597",
+    "artifacts/generated-results/x1152-pair-jacobians-20261114-v1.json": "bbf7c67d61b7531d27aabe804722203ac851ad240b3c6c1179f3703f558e5b03",
+    "artifacts/generated-results/x1152-pair-jacobians-independent-20261114-v1.json": "49842b8b11a0148d5a20e84055a1020a62c277e52b8c8d74592eef07ce05da80",
+    "elkies-k3/X1152_JMAP_FIBRATION_DISTINCTION_2026-11-14.md": "bc8dd2751192dd886480dc2dcc77a6e9c8e585628077894da2fa039203e21067",
+    "elkies-k3/X1152_PAIRED_JACOBIANS_AND_FIRST_DESCENT_2026-11-14.md": "866f2caef250975348c817b3a7a166a5a992664ee503d257e3ce462c075a9356",
+    "elkies-k3/data/external/hill2026/data/cover-36773.json": "7b4246abbaf6bb846a0445518272f924ffc71f85dfb9aad7271feb21709baff5",
+    "elkies-k3/data/external/hill2026/data/cover-4339.json": "dcdd3403e0ed5b07c1a5cc00ffd068e7de0b272bf96d198cc73cea7eed134dc8",
+    "elkies-k3/data/external/hill2026/data/parent-rank17.json": "18d5ef159dd44621a520a5095ffc4ea27e5ea2cc0a97d7e0bb7e7dc100ea7db3",
+    "elkies-k3/data/fibrations/icarm4239_x1152_generic_parent.json": "026a2030238c78380b87e2074e7dd20f8ca8aa69b64cb5aa2d1074871d9d301f",
+    "elkies-k3/scripts/certify_1152_fibration_distinction.py": "fa5d9a4b14d3cc77a2afab47981cbe65509556163687408873bd93e536921e81",
+    "elkies-k3/scripts/certify_1152_first_pair_descent.py": "58d11a3c2038b065a2ab0aebbff3f68de39776084967bb4bda09f866b4708a53",
+    "elkies-k3/scripts/construct_1152_pair_jacobians.py": "4a5940fe9b64be2d87c065014918968e75ce311078296a5e2f86d544e95f6d70",
+    "elkies-k3/scripts/verify_1152_fibration_distinction.py": "643c6aa3da6a19e9161a518940ef1fca0b44aa2d5624fe49f5dbb0dad469c4cb",
+    "elkies-k3/scripts/verify_1152_first_pair_arithmetic.py": "70634b34528627a491b3e3054212b50edea610f91c0d23cc179f30b59423d006",
+    "elkies-k3/scripts/verify_1152_pair_jacobians.py": "ffd607ac4965c5834f47535dd2b9464af8b4b5a36d389164f15cc9c0cc98285d",
+    "elkies-k3/scripts/verify_r17_correlated_genus_one_pencils.py": "e2bb356dc9006893f682bbdd32758ca04b25f7a234ca8a4c3d55c5eef4d01435"
+  },
+  "observed_global_failure": "make check-navigation: KDSQ6 missing artifacts/generated-results/README.md",
+  "schema": "x1152-global-transfer-scoped-validation-v1",
+  "status": "PASS_SCOPED_NEW_WORK",
+  "status_rendered": true,
+  "tests": {
+    "command": "python3 -m unittest research.tests.test_1152_global_transfer_certificates research.tests.test_recent_paper_certificates",
+    "new_controls": 9,
+    "passed": 15
+  }
+}

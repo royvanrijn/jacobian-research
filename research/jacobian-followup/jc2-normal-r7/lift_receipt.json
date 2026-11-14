@@ -1,0 +1,6 @@
+{
+  "artifact": "artifacts/local/jc2-normal-r7-20261113/r7-critical-one-lift.log",
+  "bytes": 496667014,
+  "sha256": "334b52837abb2c679cfe2ce1dba6290d00d34c37e068f1165c35dd159cc6a731",
+  "scope": "Singular lift matrix for the normalized critical scheme; produced under 30-second cap; not independently replayed and not a default worker input"
+}

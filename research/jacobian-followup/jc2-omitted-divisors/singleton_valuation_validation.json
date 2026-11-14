@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-11-14",
+  "outcome": "PASS scoped exact normal/root algebras, claim metadata and renderer readback",
+  "claim": "PF2OMIT10",
+  "check_count": 221,
+  "control_count": 22,
+  "previous_goal_turn": "Progress: marked Wright target restrictions, quartic exceptional lengths and compulsory cusp index zero",
+  "current_goal_turn": "Progress: complete singleton packet coefficient, raw-discriminant and index bounds derived from original poles and verified by22 full finite-algebra comparisons",
+  "status_validation": "Copied schema, dependencies and new hash pass. Historical unrelated consumers, narrowing reciprocity and hash freshness omitted without editing authority.",
+  "unrelated_checker_hash_drift_observed": [],
+  "other_review_staleness_observed": {},
+  "affected_lessons": [
+    "METHOD-SINGLETON-RECIPROCAL-VALUATIONS"
+  ],
+  "affected_work": [
+    "WORK-PLANE-R7-20261113",
+    "WORK-QUARTIC-RULED-COMPATIBILITY"
+  ],
+  "local_links_checked": 44,
+  "python_AST": "PASS",
+  "source_whitespace": "PASS",
+  "scoped_git_diff": "PASS",
+  "generated_views": 26,
+  "generated_readback": "PASS standard renderer functions",
+  "proof_boundary": "Exact whole finite-algebra inclusion determinants and trace discriminants for local one-parameter controls. Universal pole, generic-line and root-product arguments are written proofs; controls are not global Keller realizations.",
+  "requirements_audit": {
+    "ramifies": "Original e1,2,3 flags are separate from cusp ambient length3 and radial index3",
+    "omitted": "All five residual singleton packets imported from the original complete omitted-boundary ledger",
+    "target_images_and_residue_degrees": "Original f1 and local maps imported; actual image polynomials and pole orders still absent",
+    "exceptional_fibre_lengths": "All singleton local lengths preserved; new coefficient and normalization-index bounds do not alter conserved degree"
+  },
+  "formal_verification": false,
+  "external_review": false,
+  "full_navigation_check": {
+    "outcome": "BLOCKED by pre-existing missing historical artifacts; scoped validation passes",
+    "make_check_navigation": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+    "research_check": "METHOD-EC-CENTRE-POLICY: missing source artifacts/generated-results/elliptic-curves/next_direction_benchmark_v1/completion.json",
+    "historical_artifacts_reconstructed": false
+  },
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false,
+  "current_artifact_sha256": {
+    "SINGLETON_INVERSE_VALUATIONS.md": "988a70dee363baea5d4f560ed2df6a0648ffe6e3cc53604d7cfc0bca6cde9208",
+    "verify_singleton_valuations.py": "1d19c8b787e36c8cbdb60a50602496f81681292e7cd810f0c23ba3aa77923cab",
+    "singleton_valuation_ledger.json": "09994d1ee3661f1d8f846e1d1141c987a2c01788956520d2b0b5ed460a881132",
+    "singleton_valuation_receipt.json": "8463bab5837fbd927bca35a49087fbb22cfab1ee33f07242fe055149ae70ea07",
+    "README.md": "596cc64f867febf0c8a361da54dfb7c0cd4fae8b3eda6adfb865e65a8f84afec",
+    "INPUT_GATE.md": "2cb00f6e14858adf3e3c7aea4378c7263bc7b5f30f03e073693c3769514a071a"
+  },
+  "supersedes_navigation_validation_of": [
+    "validation.json",
+    "global_validation.json",
+    "inverse_validation.json",
+    "discriminant_validation.json",
+    "infinity_validation.json",
+    "residue_validation.json",
+    "simple_radial_validation.json",
+    "global_monodromy_validation.json",
+    "wright_image_validation.json"
+  ]
+}

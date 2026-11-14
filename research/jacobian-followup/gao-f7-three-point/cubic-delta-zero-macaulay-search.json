@@ -1,0 +1,24 @@
+{
+  "prime": 32003,
+  "weights": [
+    1,
+    2,
+    1,
+    3
+  ],
+  "rounds": [
+    {
+      "weighted_bound": 18,
+      "rows": 1568,
+      "columns": 1643,
+      "seconds_at_start": 0.036020409999764524,
+      "modular_rank": 1449,
+      "support_columns": 1397,
+      "outcome": "EXACT IDENTITY PASS",
+      "multiplier_terms": 1397
+    }
+  ],
+  "seconds": 2.611553285008995,
+  "source_sha256": "70274a9b0fda6350c2708aaaa604d0ee041493c7c5f8b9c3c21804a9b76bbda6",
+  "boundary": "Only the exported exact rational polynomial identity is a characteristic-zero certificate; all failed finite bounds remain inconclusive."
+}

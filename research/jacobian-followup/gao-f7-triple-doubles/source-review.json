@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-11-14",
+  "scope": "Immediate primary version checks; no exhaustive novelty or priority search.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.00222",
+      "latest_version": "v2",
+      "date": "2026-11-04",
+      "role": "F7 eliminant, critical-root incidence, weighted normalization and simple-root lifting."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.24889",
+      "latest_version": "v1",
+      "date": "2026-10-17",
+      "role": "Original user paper; no additional theorem imported into this pole calculation."
+    }
+  ],
+  "conclusion": "Both versions unchanged from the preceding turn. This result uses the retained exact F7 source and determinant/rank arguments."
+}

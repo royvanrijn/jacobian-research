@@ -1,0 +1,132 @@
+{
+  "result": "focused integration passes; full navigation blocked by pre-existing missing consumer",
+  "new_claims": [
+    "KMFI1",
+    "KMFI2",
+    "KMFI3",
+    "KMFI4"
+  ],
+  "claim_schema_paths_dependencies_and_checker_hashes": "pass",
+  "new_claim_dependency_graph_acyclic": true,
+  "new_lesson_schema_paths_and_scope_reviews": "pass",
+  "updated_work_scope_reviews_paths_and_required_text": "pass",
+  "all_claim_lesson_work_ids_unique": true,
+  "python_sources_parse": true,
+  "local_file_links_checked": 24,
+  "links": [
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/F11.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/verify.py"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/model.py"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/receipt.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "jacobian-followup/monodromy-theory/sources/manifest.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/README.md",
+      "target": "MATH_STATUS.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "MATH_STATUS.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "archive/non-elliptic/verified/UNIVERSAL_SYMMETRIC_MONODROMY.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "jacobian-followup/monodromy-theory/F11.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "archive/non-elliptic/verified/PRIMITIVE_MONODROMY_ATOMICITY.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "archive/non-elliptic/verified/KELLER_RITT_PRODUCT_THEOREM.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/THEORY.md",
+      "target": "archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/F11.md",
+      "target": "jacobian-followup/monodromy-theory/sources/manifest.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/F11.md",
+      "target": "jacobian-followup/monodromy-theory/model.py"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/F11.md",
+      "target": "jacobian-followup/monodromy-theory/model.json"
+    },
+    {
+      "source": "jacobian-followup/monodromy-theory/F11.md",
+      "target": "jacobian-followup/monodromy-theory/receipt.json"
+    },
+    {
+      "source": "jacobian-followup/README.md",
+      "target": "jacobian-followup/monodromy-theory/README.md"
+    },
+    {
+      "source": "archive/non-elliptic/KELLER_INVERSE_GALOIS_PROGRAM.md",
+      "target": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "source": "archive/non-elliptic/KELLER_INVERSE_GALOIS_PROGRAM.md",
+      "target": "jacobian-followup/monodromy-theory/F11.md"
+    },
+    {
+      "source": "archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
+      "target": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "source": "archive/non-elliptic/extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
+      "target": "jacobian-followup/monodromy-theory/F11.md"
+    },
+    {
+      "source": "archive/non-elliptic/extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md",
+      "target": "jacobian-followup/monodromy-theory/THEORY.md"
+    },
+    {
+      "source": "archive/non-elliptic/extended-geometry/DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md",
+      "target": "jacobian-followup/monodromy-theory/THEORY.md"
+    }
+  ],
+  "exact_control_count": 197,
+  "receipt_source_hashes": "pass",
+  "full_navigation": [
+    {
+      "command": "make render-navigation",
+      "result": "blocked",
+      "reason": "Pre-existing KDSQ6 missing document consumer artifacts/generated-results/README.md"
+    },
+    {
+      "command": "make check-navigation",
+      "result": "blocked",
+      "reason": "Same pre-existing KDSQ6 missing document consumer"
+    }
+  ],
+  "proof_assurance": "Written universal proofs and finite exact controls; not formal verification or independent whole-proof review.",
+  "full_action_spectrum_complete": false,
+  "absolute_PSL2_11_realized": false,
+  "goal_status": "active"
+}

@@ -1,0 +1,700 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT7",
+  "generic_index_two": {
+    "all_finite_points_N_regular": true,
+    "residue_f": 1,
+    "exceptional_length_formula": "ell=2+ord gcd(p_prime,q_prime)",
+    "source_is_global_Keller_normalization_required": true
+  },
+  "degree_at_most_six_all_omitted_residue_degrees": 1,
+  "residual_row_B": {
+    "source_N_regular": true,
+    "exceptional_branch": "ordinary (2,3) cusp",
+    "exceptional_fibre_algebra": "C[w]/(w^3)",
+    "square_zero_algebra_excluded": true,
+    "actual_exceptional_value": null
+  },
+  "all_residual_r7_affine_N_smooth": true,
+  "local_blocks": {
+    "unramified": {
+      "original_generic_e": 1,
+      "original_residue_f": 1,
+      "original_ambient_length": 1,
+      "original_fibre_algebra": "C[w]/(w^1)",
+      "source_N_regular": true,
+      "radial_prime": {
+        "e": 1,
+        "f": 1,
+        "image": "target exceptional P1",
+        "omitted": true,
+        "ramifies": false
+      },
+      "principalization": {
+        "intersection_matrix": [
+          [
+            -1
+          ]
+        ],
+        "e": [
+          1
+        ],
+        "f": [
+          1
+        ],
+        "canonical_orders": [
+          1
+        ]
+      },
+      "strict_old_ramification_attachment_component": null,
+      "strict_old_ramification_canonical_coefficient": 0,
+      "actual_special_direction": null,
+      "special_direction_in_model": 0,
+      "special_direction_ambient_length": 1,
+      "special_direction_count_point_once": true,
+      "incident_old_and_radial_generic_indices": [
+        1,
+        1
+      ]
+    },
+    "fold": {
+      "original_generic_e": 2,
+      "original_residue_f": 1,
+      "original_ambient_length": 2,
+      "original_fibre_algebra": "C[w]/(w^2)",
+      "source_N_regular": true,
+      "radial_prime": {
+        "e": 2,
+        "f": 1,
+        "image": "target exceptional P1",
+        "omitted": true,
+        "ramifies": true
+      },
+      "principalization": {
+        "intersection_matrix": [
+          [
+            -2,
+            1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        "e": [
+          1,
+          2
+        ],
+        "f": [
+          0,
+          1
+        ],
+        "canonical_orders": [
+          2,
+          3
+        ]
+      },
+      "strict_old_ramification_attachment_component": 1,
+      "strict_old_ramification_canonical_coefficient": 1,
+      "actual_special_direction": null,
+      "special_direction_in_model": 0,
+      "special_direction_ambient_length": 2,
+      "special_direction_count_point_once": true,
+      "incident_old_and_radial_generic_indices": [
+        2,
+        2
+      ]
+    },
+    "cyclic3": {
+      "original_generic_e": 3,
+      "original_residue_f": 1,
+      "original_ambient_length": 3,
+      "original_fibre_algebra": "C[w]/(w^3)",
+      "source_N_regular": true,
+      "radial_prime": {
+        "e": 3,
+        "f": 1,
+        "image": "target exceptional P1",
+        "omitted": true,
+        "ramifies": true
+      },
+      "principalization": {
+        "intersection_matrix": [
+          [
+            -2,
+            1,
+            0
+          ],
+          [
+            1,
+            -2,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "e": [
+          1,
+          2,
+          3
+        ],
+        "f": [
+          0,
+          0,
+          1
+        ],
+        "canonical_orders": [
+          3,
+          4,
+          5
+        ]
+      },
+      "strict_old_ramification_attachment_component": 1,
+      "strict_old_ramification_canonical_coefficient": 2,
+      "actual_special_direction": null,
+      "special_direction_in_model": 0,
+      "special_direction_ambient_length": 3,
+      "special_direction_count_point_once": true,
+      "incident_old_and_radial_generic_indices": [
+        3,
+        3
+      ]
+    },
+    "cusp3": {
+      "original_generic_e": 2,
+      "original_residue_f": 1,
+      "original_ambient_length": 3,
+      "original_fibre_algebra": "C[w]/(w^3)",
+      "source_N_regular": true,
+      "radial_prime": {
+        "e": 3,
+        "f": 1,
+        "image": "target exceptional P1",
+        "omitted": true,
+        "ramifies": true
+      },
+      "principalization": {
+        "intersection_matrix": [
+          [
+            -2,
+            1,
+            0
+          ],
+          [
+            1,
+            -2,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ]
+        ],
+        "e": [
+          1,
+          2,
+          3
+        ],
+        "f": [
+          0,
+          0,
+          1
+        ],
+        "canonical_orders": [
+          2,
+          4,
+          5
+        ]
+      },
+      "strict_old_ramification_attachment_component": 2,
+      "strict_old_ramification_canonical_coefficient": 1,
+      "actual_special_direction": null,
+      "special_direction_in_model": 0,
+      "special_direction_ambient_length": 3,
+      "special_direction_count_point_once": true,
+      "incident_old_and_radial_generic_indices": [
+        2,
+        3
+      ]
+    }
+  },
+  "corank_one_controls": [
+    {
+      "m": 1,
+      "map": [
+        "u",
+        "u*w + w**2"
+      ],
+      "image": [
+        "-2*t",
+        "-t**2"
+      ],
+      "generic_e": 2,
+      "residue_f": 1,
+      "ambient_origin_length": 2,
+      "derivative_gcd_degree": 0,
+      "global_Keller_realization": false
+    },
+    {
+      "m": 2,
+      "map": [
+        "u",
+        "u*w + w**3"
+      ],
+      "image": [
+        "-3*t**2",
+        "-2*t**3"
+      ],
+      "generic_e": 2,
+      "residue_f": 1,
+      "ambient_origin_length": 3,
+      "derivative_gcd_degree": 1,
+      "global_Keller_realization": false
+    },
+    {
+      "m": 3,
+      "map": [
+        "u",
+        "u*w + w**4"
+      ],
+      "image": [
+        "-4*t**3",
+        "-3*t**4"
+      ],
+      "generic_e": 2,
+      "residue_f": 1,
+      "ambient_origin_length": 4,
+      "derivative_gcd_degree": 2,
+      "global_Keller_realization": false
+    },
+    {
+      "m": 4,
+      "map": [
+        "u",
+        "u*w + w**5"
+      ],
+      "image": [
+        "-5*t**4",
+        "-4*t**5"
+      ],
+      "generic_e": 2,
+      "residue_f": 1,
+      "ambient_origin_length": 5,
+      "derivative_gcd_degree": 3,
+      "global_Keller_realization": false
+    }
+  ],
+  "quotient_jet_controls": [
+    {
+      "r": 2,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 3,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 3,
+      "weight": 2,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 4,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 4,
+      "weight": 3,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 5,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 5,
+      "weight": 2,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 5,
+      "weight": 3,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 5,
+      "weight": 4,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 6,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 6,
+      "weight": 5,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 2,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 3,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 4,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 5,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 7,
+      "weight": 6,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 8,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 8,
+      "weight": 3,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 8,
+      "weight": 5,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 8,
+      "weight": 7,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 1,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 2,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 4,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 5,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 7,
+      "invariant_linear_forms": []
+    },
+    {
+      "r": 9,
+      "weight": 8,
+      "invariant_linear_forms": []
+    }
+  ],
+  "singleton_radial_ledger": [
+    {
+      "type": "A0",
+      "omitted_blocks": [
+        "unramified",
+        "unramified",
+        "unramified",
+        "unramified",
+        "unramified"
+      ],
+      "omitted_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "omitted_radial_rows": [
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        }
+      ],
+      "retained_radial_row": {
+        "e": 1,
+        "f": 1,
+        "omitted": false,
+        "ramifies": false,
+        "image": "target exceptional P1"
+      },
+      "every_exceptional_direction_normalization_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "directions_of_special_incidence": null,
+      "point_labels_remain_distinct_when_directions_coincide": true
+    },
+    {
+      "type": "A1",
+      "omitted_blocks": [
+        "fold",
+        "unramified",
+        "unramified",
+        "unramified"
+      ],
+      "omitted_lengths": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "omitted_radial_rows": [
+        {
+          "e": 2,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        }
+      ],
+      "retained_radial_row": {
+        "e": 1,
+        "f": 1,
+        "omitted": false,
+        "ramifies": false,
+        "image": "target exceptional P1"
+      },
+      "every_exceptional_direction_normalization_lengths": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "directions_of_special_incidence": null,
+      "point_labels_remain_distinct_when_directions_coincide": true
+    },
+    {
+      "type": "A2",
+      "omitted_blocks": [
+        "fold",
+        "fold",
+        "unramified"
+      ],
+      "omitted_lengths": [
+        2,
+        2,
+        1
+      ],
+      "omitted_radial_rows": [
+        {
+          "e": 2,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        },
+        {
+          "e": 2,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        },
+        {
+          "e": 1,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": false
+        }
+      ],
+      "retained_radial_row": {
+        "e": 1,
+        "f": 1,
+        "omitted": false,
+        "ramifies": false,
+        "image": "target exceptional P1"
+      },
+      "every_exceptional_direction_normalization_lengths": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "directions_of_special_incidence": null,
+      "point_labels_remain_distinct_when_directions_coincide": true
+    },
+    {
+      "type": "B",
+      "omitted_blocks": [
+        "cusp3",
+        "fold"
+      ],
+      "omitted_lengths": [
+        3,
+        2
+      ],
+      "omitted_radial_rows": [
+        {
+          "e": 3,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        },
+        {
+          "e": 2,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        }
+      ],
+      "retained_radial_row": {
+        "e": 1,
+        "f": 1,
+        "omitted": false,
+        "ramifies": false,
+        "image": "target exceptional P1"
+      },
+      "every_exceptional_direction_normalization_lengths": [
+        3,
+        2,
+        1
+      ],
+      "directions_of_special_incidence": null,
+      "point_labels_remain_distinct_when_directions_coincide": true
+    },
+    {
+      "type": "C",
+      "omitted_blocks": [
+        "cyclic3",
+        "fold"
+      ],
+      "omitted_lengths": [
+        3,
+        2
+      ],
+      "omitted_radial_rows": [
+        {
+          "e": 3,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        },
+        {
+          "e": 2,
+          "f": 1,
+          "image": "target exceptional P1",
+          "omitted": true,
+          "ramifies": true
+        }
+      ],
+      "retained_radial_row": {
+        "e": 1,
+        "f": 1,
+        "omitted": false,
+        "ramifies": false,
+        "image": "target exceptional P1"
+      },
+      "every_exceptional_direction_normalization_lengths": [
+        3,
+        2,
+        1
+      ],
+      "directions_of_special_incidence": null,
+      "point_labels_remain_distinct_when_directions_coincide": true
+    }
+  ],
+  "special_radial_chart_scope": "After target blowup only; no transport of original fixed-target disjoint-boundary prohibition",
+  "actual_affine_image_equations": null,
+  "actual_Keller_inverse": null,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

@@ -1,0 +1,1026 @@
+{
+  "algebra_backend_count": 0,
+  "algebra_batches": [],
+  "algebra_status": "complete",
+  "all_unit": true,
+  "bound": 9,
+  "counts_by_size": {},
+  "degree": 7,
+  "elapsed_seconds": 363.5101483990147,
+  "enumeration_status": "complete",
+  "gate_dependency": "KPAIR1; degree <=10; coordinate and hyperplane proofs",
+  "gate_visits": {
+    "cross-0": 4575,
+    "cut-3": 27,
+    "determinant-or-collision": 2515388,
+    "normal-2": 1,
+    "own-1": 496,
+    "own-2": 496,
+    "repair-lower-bound": 3519784
+  },
+  "legacy_sha256": "fbcb2de0ad0faa71b6004a98e5f26d5db480f51545efff69ac004845d011e592",
+  "nonunit_ids": [],
+  "orbit_count": 0,
+  "oriented_retained": 0,
+  "predecessor_sha256": "1b783687bf0d9c4f69c3471f2ebef0057db3b1760974c4363cfd6226b222f660",
+  "runner_sha256": "c8c0de88b4fcc3435c0ff382a7ef626d59475c710e53915ccf27f7c28b46727b",
+  "schema": "coordinate-gated-keller-cover.v1",
+  "scope": "All hypothetical normalized Keller collisions in raw degree <=7 and support <=9, after the proved necessary coordinate gates; not a count of every raw balanced support.",
+  "shard_count": 90,
+  "shards": [
+    {
+      "path": "p2-q2-r3.json",
+      "seed": [
+        2,
+        2,
+        3
+      ],
+      "sha256": "5d279ceabd76156997585d9145a12005675b16a20835b48916c77cb29ffdb7b0",
+      "status": "complete",
+      "visited": 51410
+    },
+    {
+      "path": "p2-q2-r4.json",
+      "seed": [
+        2,
+        2,
+        4
+      ],
+      "sha256": "67cc93b83919557b98fec85f2ca4f92b4060ff20a472aa6f11a7e1fc1b26fc09",
+      "status": "complete",
+      "visited": 46581
+    },
+    {
+      "path": "p2-q2-r5.json",
+      "seed": [
+        2,
+        2,
+        5
+      ],
+      "sha256": "e1ad541edd2a13ea71cedc2ab695dbac8cfd3fc25a5a0bafe7c892e150e46b4a",
+      "status": "complete",
+      "visited": 43000
+    },
+    {
+      "path": "p2-q2-r6.json",
+      "seed": [
+        2,
+        2,
+        6
+      ],
+      "sha256": "49ae7ffb7368ca305f171319491ef292849900a7cc7a20e69a7c4a26753c6da0",
+      "status": "complete",
+      "visited": 39021
+    },
+    {
+      "path": "p2-q2-r7.json",
+      "seed": [
+        2,
+        2,
+        7
+      ],
+      "sha256": "6445d226750f151e86ab8a9ed80999ff9288b9d1489fa2f9da84ab5318c71386",
+      "status": "complete",
+      "visited": 34842
+    },
+    {
+      "path": "p2-q3-r4.json",
+      "seed": [
+        2,
+        3,
+        4
+      ],
+      "sha256": "2b62c21b961d12ae23c29676fd53bf080cbe13661742ee85881ad969c418e2cb",
+      "status": "complete",
+      "visited": 40528
+    },
+    {
+      "path": "p2-q3-r5.json",
+      "seed": [
+        2,
+        3,
+        5
+      ],
+      "sha256": "e7cdde85d07bf913e80c3b6dc16191c6fdb61d1294a2744b7004b53328e68d5b",
+      "status": "complete",
+      "visited": 37457
+    },
+    {
+      "path": "p2-q3-r6.json",
+      "seed": [
+        2,
+        3,
+        6
+      ],
+      "sha256": "db633f61fb45afe7ea1b86d730b2de6d4bdf07636fc23aed907fe9618bafbdc8",
+      "status": "complete",
+      "visited": 34571
+    },
+    {
+      "path": "p2-q3-r7.json",
+      "seed": [
+        2,
+        3,
+        7
+      ],
+      "sha256": "edce4f57aae89d9c587c4dc5737b2b93c76d67bec0657f1526161c1e6a59b7f9",
+      "status": "complete",
+      "visited": 32067
+    },
+    {
+      "path": "p2-q4-r5.json",
+      "seed": [
+        2,
+        4,
+        5
+      ],
+      "sha256": "457e4e87872b5a6372f70e332350f2599b67cb8b67b945c35db85ce862457f03",
+      "status": "complete",
+      "visited": 34040
+    },
+    {
+      "path": "p2-q4-r6.json",
+      "seed": [
+        2,
+        4,
+        6
+      ],
+      "sha256": "20ad50ca8f0e7192a7207eb2410effd2c56280681c34cddb31c5503d174a5d79",
+      "status": "complete",
+      "visited": 31814
+    },
+    {
+      "path": "p2-q4-r7.json",
+      "seed": [
+        2,
+        4,
+        7
+      ],
+      "sha256": "41ea6cf6866f8624cb1f0db3a49a5f8ced5f8c62c6e767a2f1a67b54207b71ad",
+      "status": "complete",
+      "visited": 29961
+    },
+    {
+      "path": "p2-q5-r6.json",
+      "seed": [
+        2,
+        5,
+        6
+      ],
+      "sha256": "6f9709c29d715748595801597d089dd7fb7fda2d8f9f5cdd9a5793e8fb2c0048",
+      "status": "complete",
+      "visited": 29628
+    },
+    {
+      "path": "p2-q5-r7.json",
+      "seed": [
+        2,
+        5,
+        7
+      ],
+      "sha256": "7e8c043b64b3e620011d2e34d4db4752a113ed440b35ada97dfd11d9aaebf0f7",
+      "status": "complete",
+      "visited": 28246
+    },
+    {
+      "path": "p2-q6-r7.json",
+      "seed": [
+        2,
+        6,
+        7
+      ],
+      "sha256": "9ebc50f4e9b2e8a36428e133271c555811b71de139a461a5e433a2341a1437cf",
+      "status": "complete",
+      "visited": 26730
+    },
+    {
+      "path": "p3-q2-r3.json",
+      "seed": [
+        3,
+        2,
+        3
+      ],
+      "sha256": "638ee493c72f84f7ce449d1aa6aa396043fede1cdbc1af9e1714d4db53c295dc",
+      "status": "complete",
+      "visited": 111713
+    },
+    {
+      "path": "p3-q2-r4.json",
+      "seed": [
+        3,
+        2,
+        4
+      ],
+      "sha256": "07d757cf6b121c360963e1e77fefa35bca6298474b0434fc1820163de0707332",
+      "status": "complete",
+      "visited": 96608
+    },
+    {
+      "path": "p3-q2-r5.json",
+      "seed": [
+        3,
+        2,
+        5
+      ],
+      "sha256": "e64e58138d6b782780e137cd048e8a13002e08ef4a49230e4819baecc82606fe",
+      "status": "complete",
+      "visited": 92442
+    },
+    {
+      "path": "p3-q2-r6.json",
+      "seed": [
+        3,
+        2,
+        6
+      ],
+      "sha256": "0a4b84cc6b8c0565dece96bf51a658b1d9d7e36845c0f5150a486585000d2c15",
+      "status": "complete",
+      "visited": 81805
+    },
+    {
+      "path": "p3-q2-r7.json",
+      "seed": [
+        3,
+        2,
+        7
+      ],
+      "sha256": "17c171ed44ab214bf3c2d6ea96008b93b3247a7c7c7d2672b2585a615ee1923b",
+      "status": "complete",
+      "visited": 75848
+    },
+    {
+      "path": "p3-q3-r4.json",
+      "seed": [
+        3,
+        3,
+        4
+      ],
+      "sha256": "f05b1d8c8f3750a80741e3eca6efb750615c01dbc9beb1ae853d3975926d2974",
+      "status": "complete",
+      "visited": 93511
+    },
+    {
+      "path": "p3-q3-r5.json",
+      "seed": [
+        3,
+        3,
+        5
+      ],
+      "sha256": "e0eeb97f731164dcafba5a57bf1e67a6d21433a9c6d394427800273aa3a263e3",
+      "status": "complete",
+      "visited": 83116
+    },
+    {
+      "path": "p3-q3-r6.json",
+      "seed": [
+        3,
+        3,
+        6
+      ],
+      "sha256": "75e1c59e8d13677be6d5ae9eab805568ec00f8555e5dddd9ad59771b82703e24",
+      "status": "complete",
+      "visited": 79421
+    },
+    {
+      "path": "p3-q3-r7.json",
+      "seed": [
+        3,
+        3,
+        7
+      ],
+      "sha256": "adbeab8e9264edad2c4e1602ae6be478e70109d9ba669d2df523b6d96228184c",
+      "status": "complete",
+      "visited": 71451
+    },
+    {
+      "path": "p3-q4-r5.json",
+      "seed": [
+        3,
+        4,
+        5
+      ],
+      "sha256": "f3fb359603fb949d619638d0ce3c050606c3edc436990f5289964c5fe4279e41",
+      "status": "complete",
+      "visited": 80983
+    },
+    {
+      "path": "p3-q4-r6.json",
+      "seed": [
+        3,
+        4,
+        6
+      ],
+      "sha256": "be02b0690d178fcfbe2f8e39301c0208b2c1a58c15211ab6b6aa037f5cc7f170",
+      "status": "complete",
+      "visited": 72306
+    },
+    {
+      "path": "p3-q4-r7.json",
+      "seed": [
+        3,
+        4,
+        7
+      ],
+      "sha256": "f0633250b858bae7532e56efd56dbd7a19520d7d57f050c8108549ebc397dfea",
+      "status": "complete",
+      "visited": 69681
+    },
+    {
+      "path": "p3-q5-r6.json",
+      "seed": [
+        3,
+        5,
+        6
+      ],
+      "sha256": "4914b1e230bacec891f8a15e7da12b8a27f20e089f3d2f0aad861613e265d60e",
+      "status": "complete",
+      "visited": 72820
+    },
+    {
+      "path": "p3-q5-r7.json",
+      "seed": [
+        3,
+        5,
+        7
+      ],
+      "sha256": "b79cb5853a91da8f025236d04377c52ff6380dca3b4b8a5c8d4c3327d09c5eed",
+      "status": "complete",
+      "visited": 66537
+    },
+    {
+      "path": "p3-q6-r7.json",
+      "seed": [
+        3,
+        6,
+        7
+      ],
+      "sha256": "5c4e0615d365e167ef85acf6010832f707b8d3271663f4ebe7fb96653d5d1b4b",
+      "status": "complete",
+      "visited": 66724
+    },
+    {
+      "path": "p4-q2-r3.json",
+      "seed": [
+        4,
+        2,
+        3
+      ],
+      "sha256": "75d06a8ff4c1426766b02a3d1bc7824aa589891215b74256b0719e77c636a3aa",
+      "status": "complete",
+      "visited": 110221
+    },
+    {
+      "path": "p4-q2-r4.json",
+      "seed": [
+        4,
+        2,
+        4
+      ],
+      "sha256": "6eb9efbbad9042394d210c97c126b6bb5ab59ccc8a70055de597463297a45d57",
+      "status": "complete",
+      "visited": 104161
+    },
+    {
+      "path": "p4-q2-r5.json",
+      "seed": [
+        4,
+        2,
+        5
+      ],
+      "sha256": "5badf4a4c227086219141d42f498840bea1468f1b40ca7f7ffc79924039c9442",
+      "status": "complete",
+      "visited": 94253
+    },
+    {
+      "path": "p4-q2-r6.json",
+      "seed": [
+        4,
+        2,
+        6
+      ],
+      "sha256": "74a362d7e9764a8eb802697348bb27dbda110b68b3aedb247c2befbc4412ac3e",
+      "status": "complete",
+      "visited": 85455
+    },
+    {
+      "path": "p4-q2-r7.json",
+      "seed": [
+        4,
+        2,
+        7
+      ],
+      "sha256": "ed07c891676b0955738f99a02612511e24285e1ffdfe668284c4704779ef0ade",
+      "status": "complete",
+      "visited": 78947
+    },
+    {
+      "path": "p4-q3-r4.json",
+      "seed": [
+        4,
+        3,
+        4
+      ],
+      "sha256": "675b333b5c753f9db2240a3c2aad86360dc6965f1a91d9f8ae9bf8c16a7b4726",
+      "status": "complete",
+      "visited": 90161
+    },
+    {
+      "path": "p4-q3-r5.json",
+      "seed": [
+        4,
+        3,
+        5
+      ],
+      "sha256": "00458a12e4630927bdb067d9c4c0a67cb4388e9a2eab92b58073f3c254b3cc70",
+      "status": "complete",
+      "visited": 82271
+    },
+    {
+      "path": "p4-q3-r6.json",
+      "seed": [
+        4,
+        3,
+        6
+      ],
+      "sha256": "4ad5d2c75e73bda28bdab5963f808323482323e39df3d578836b9d09fb339fc0",
+      "status": "complete",
+      "visited": 72992
+    },
+    {
+      "path": "p4-q3-r7.json",
+      "seed": [
+        4,
+        3,
+        7
+      ],
+      "sha256": "90f5bd475f368bd2e8ca314d365619b32a7855827f3b8e49028d53b5c1ffbf03",
+      "status": "complete",
+      "visited": 69773
+    },
+    {
+      "path": "p4-q4-r5.json",
+      "seed": [
+        4,
+        4,
+        5
+      ],
+      "sha256": "2fe41c0f999531e4503d491c390ec254f7de09959a1aee003467f476d517abe4",
+      "status": "complete",
+      "visited": 80277
+    },
+    {
+      "path": "p4-q4-r6.json",
+      "seed": [
+        4,
+        4,
+        6
+      ],
+      "sha256": "5228be23d1f68c848484d18371cdcc590c4e860db6167ee86fd0cd06bb37a036",
+      "status": "complete",
+      "visited": 74160
+    },
+    {
+      "path": "p4-q4-r7.json",
+      "seed": [
+        4,
+        4,
+        7
+      ],
+      "sha256": "4ec89d324f119476e1cea31c5b6b97f6eecae5fa21045eec3822a7227e44565d",
+      "status": "complete",
+      "visited": 66383
+    },
+    {
+      "path": "p4-q5-r6.json",
+      "seed": [
+        4,
+        5,
+        6
+      ],
+      "sha256": "42d55a2f0d5acaa5576efee2827e253bd6814242fc4a10a069d27b257b89e86a",
+      "status": "complete",
+      "visited": 72358
+    },
+    {
+      "path": "p4-q5-r7.json",
+      "seed": [
+        4,
+        5,
+        7
+      ],
+      "sha256": "36f7dae83d413d05c4a41f68ef1f156922d9774887f2ec58772f724e38e8b328",
+      "status": "complete",
+      "visited": 68045
+    },
+    {
+      "path": "p4-q6-r7.json",
+      "seed": [
+        4,
+        6,
+        7
+      ],
+      "sha256": "922c7398224dba43822893de3809d36c4af21b03acde478d2fb8333187c88bf9",
+      "status": "complete",
+      "visited": 65413
+    },
+    {
+      "path": "p5-q2-r3.json",
+      "seed": [
+        5,
+        2,
+        3
+      ],
+      "sha256": "a0806d05f4d733b470506f2af2f21971d35c420144cd00edf39e6b6b822c570b",
+      "status": "complete",
+      "visited": 99581
+    },
+    {
+      "path": "p5-q2-r4.json",
+      "seed": [
+        5,
+        2,
+        4
+      ],
+      "sha256": "d70b08facadcaa381370e79f47493c173732730be1e4147291781564f8d0c60f",
+      "status": "complete",
+      "visited": 87972
+    },
+    {
+      "path": "p5-q2-r5.json",
+      "seed": [
+        5,
+        2,
+        5
+      ],
+      "sha256": "359da2077d4e77788548f90c751112f587671c04ca3cc22e473ef831fa85277e",
+      "status": "complete",
+      "visited": 79620
+    },
+    {
+      "path": "p5-q2-r6.json",
+      "seed": [
+        5,
+        2,
+        6
+      ],
+      "sha256": "1eaa6521971bd71745e2b9ecdcd52367e00d12e4f9396b25b7af1beedc4b2b96",
+      "status": "complete",
+      "visited": 71421
+    },
+    {
+      "path": "p5-q2-r7.json",
+      "seed": [
+        5,
+        2,
+        7
+      ],
+      "sha256": "1abd0535a62e472216a80c823e28cae65cbbe1a09e73fa8758c362a731f6e0c8",
+      "status": "complete",
+      "visited": 68086
+    },
+    {
+      "path": "p5-q3-r4.json",
+      "seed": [
+        5,
+        3,
+        4
+      ],
+      "sha256": "c8e8f0cbf32d455a693f65797558ceb17de4086c94e4d29a59b42d74bf50893e",
+      "status": "complete",
+      "visited": 84351
+    },
+    {
+      "path": "p5-q3-r5.json",
+      "seed": [
+        5,
+        3,
+        5
+      ],
+      "sha256": "6e2bdf49b042e5d87efc8adf2493f96658d9fa8a803af6a7af8e52e601086436",
+      "status": "complete",
+      "visited": 78379
+    },
+    {
+      "path": "p5-q3-r6.json",
+      "seed": [
+        5,
+        3,
+        6
+      ],
+      "sha256": "5b1ea8db9188deb0b0e8804035a00aafac0fbfee6e2f58f4429fcf1bc96e1559",
+      "status": "complete",
+      "visited": 70637
+    },
+    {
+      "path": "p5-q3-r7.json",
+      "seed": [
+        5,
+        3,
+        7
+      ],
+      "sha256": "567f3b3aaaba59b66882cd2154c00b5fa9ad52d05cd509f227ba4587d84e9dc2",
+      "status": "complete",
+      "visited": 63694
+    },
+    {
+      "path": "p5-q4-r5.json",
+      "seed": [
+        5,
+        4,
+        5
+      ],
+      "sha256": "bb2de84017ff3da314c0c8a3a2fabaefb28e389db28dd9b0073962723616bc57",
+      "status": "complete",
+      "visited": 70812
+    },
+    {
+      "path": "p5-q4-r6.json",
+      "seed": [
+        5,
+        4,
+        6
+      ],
+      "sha256": "2b6537269162b07f8a2d1b5b66b2e83add5a6b2741ca4e7c0addd1a9c08ad4b4",
+      "status": "complete",
+      "visited": 64902
+    },
+    {
+      "path": "p5-q4-r7.json",
+      "seed": [
+        5,
+        4,
+        7
+      ],
+      "sha256": "b7565d63b1c2343df70c7b08b5b116247663993e4f5edb0afca4f5d7a0a7fb47",
+      "status": "complete",
+      "visited": 60790
+    },
+    {
+      "path": "p5-q5-r6.json",
+      "seed": [
+        5,
+        5,
+        6
+      ],
+      "sha256": "09c5b15c9842c56cba3bd672ec10ce3e9435961d0a4a4d36a0dde4e48783f212",
+      "status": "complete",
+      "visited": 62227
+    },
+    {
+      "path": "p5-q5-r7.json",
+      "seed": [
+        5,
+        5,
+        7
+      ],
+      "sha256": "239a5d3494ff45aa8e92d398b3d62b8cddb02213323b229a4d7655178bbd7377",
+      "status": "complete",
+      "visited": 58821
+    },
+    {
+      "path": "p5-q6-r7.json",
+      "seed": [
+        5,
+        6,
+        7
+      ],
+      "sha256": "799321e1e735249412510ed0c2797cdebf2ba7c0c54e6311469ccaafc911cb47",
+      "status": "complete",
+      "visited": 58008
+    },
+    {
+      "path": "p6-q2-r3.json",
+      "seed": [
+        6,
+        2,
+        3
+      ],
+      "sha256": "64c975e1bfa8f6a5b8f1bd054706bceba12fff089e83036a22415f97ea347305",
+      "status": "complete",
+      "visited": 87874
+    },
+    {
+      "path": "p6-q2-r4.json",
+      "seed": [
+        6,
+        2,
+        4
+      ],
+      "sha256": "b3fa1fe118b34a40800e8f1ac90f383e9e0a7ae6c4c96d5cc31251ae4d1f60c4",
+      "status": "complete",
+      "visited": 76905
+    },
+    {
+      "path": "p6-q2-r5.json",
+      "seed": [
+        6,
+        2,
+        5
+      ],
+      "sha256": "15eb803819a60ee328827884c019d6880423ce139328354ffcf5b6984ce76214",
+      "status": "complete",
+      "visited": 72734
+    },
+    {
+      "path": "p6-q2-r6.json",
+      "seed": [
+        6,
+        2,
+        6
+      ],
+      "sha256": "3170f747f277f870421d7b0cc667950353849e90d9828d503f6b03a0714c0802",
+      "status": "complete",
+      "visited": 72778
+    },
+    {
+      "path": "p6-q2-r7.json",
+      "seed": [
+        6,
+        2,
+        7
+      ],
+      "sha256": "62175c279ff68cd85b17fa9f09b59e62efc93d0aabce24e711ed899c162420ce",
+      "status": "complete",
+      "visited": 66955
+    },
+    {
+      "path": "p6-q3-r4.json",
+      "seed": [
+        6,
+        3,
+        4
+      ],
+      "sha256": "23838bc1b409ca28a021e1cdea31603c081f6f17f4b10027fe109c12af17e6b5",
+      "status": "complete",
+      "visited": 73401
+    },
+    {
+      "path": "p6-q3-r5.json",
+      "seed": [
+        6,
+        3,
+        5
+      ],
+      "sha256": "3e7bae196e32b9fa92a46d5dd1bc86230a2eb24ed8787bb6e97a2cb60cf5d1e9",
+      "status": "complete",
+      "visited": 67871
+    },
+    {
+      "path": "p6-q3-r6.json",
+      "seed": [
+        6,
+        3,
+        6
+      ],
+      "sha256": "22359c2c55f47d1e9616103de48fa2d680ba9b300c0db7bb972d254e4f265ec7",
+      "status": "complete",
+      "visited": 66089
+    },
+    {
+      "path": "p6-q3-r7.json",
+      "seed": [
+        6,
+        3,
+        7
+      ],
+      "sha256": "26230ce3f60812a13dcca2a655cddfabd1d7827a75903bfbbf438a951a2bc968",
+      "status": "complete",
+      "visited": 62693
+    },
+    {
+      "path": "p6-q4-r5.json",
+      "seed": [
+        6,
+        4,
+        5
+      ],
+      "sha256": "9b1476d0667daec01fe8a3198d1727a30a8b2d362ce51511acd517d63d78a3a1",
+      "status": "complete",
+      "visited": 66562
+    },
+    {
+      "path": "p6-q4-r6.json",
+      "seed": [
+        6,
+        4,
+        6
+      ],
+      "sha256": "8288ac7ee89cab6129216fd13f178985a0939bf99a0ebbfb7d8178940e008cff",
+      "status": "complete",
+      "visited": 61895
+    },
+    {
+      "path": "p6-q4-r7.json",
+      "seed": [
+        6,
+        4,
+        7
+      ],
+      "sha256": "3e72daea4ed394f333104c991becfd471486759d8df948683f14b281f31a66dd",
+      "status": "complete",
+      "visited": 58784
+    },
+    {
+      "path": "p6-q5-r6.json",
+      "seed": [
+        6,
+        5,
+        6
+      ],
+      "sha256": "bce40e5a2fbaf840154213a58e5ea61e702e76ca27a70a76eab690af3e9c97e7",
+      "status": "complete",
+      "visited": 65085
+    },
+    {
+      "path": "p6-q5-r7.json",
+      "seed": [
+        6,
+        5,
+        7
+      ],
+      "sha256": "8974f842b4817576b4a7655bc8705f6ae511ea1c520e28723c1c9a157cfe7e6e",
+      "status": "complete",
+      "visited": 59536
+    },
+    {
+      "path": "p6-q6-r7.json",
+      "seed": [
+        6,
+        6,
+        7
+      ],
+      "sha256": "b93afca024761bc535092be36196229426d0b6c34a0cf5de5a90d2a82d44bba9",
+      "status": "complete",
+      "visited": 59217
+    },
+    {
+      "path": "p7-q2-r3.json",
+      "seed": [
+        7,
+        2,
+        3
+      ],
+      "sha256": "d2cc032ac41090fc802c9be8c1bd1cd682612edc6d7d66c8e468aee5d111737c",
+      "status": "complete",
+      "visited": 82767
+    },
+    {
+      "path": "p7-q2-r4.json",
+      "seed": [
+        7,
+        2,
+        4
+      ],
+      "sha256": "920f57768044b343f118dfb58993b32f04cd6f97afbee9c8d82ee4e803367a4f",
+      "status": "complete",
+      "visited": 74677
+    },
+    {
+      "path": "p7-q2-r5.json",
+      "seed": [
+        7,
+        2,
+        5
+      ],
+      "sha256": "42aa6866cc8426fb9a5d0e4565a5f446d437b8d7053d7731da3aa26580e9d980",
+      "status": "complete",
+      "visited": 71221
+    },
+    {
+      "path": "p7-q2-r6.json",
+      "seed": [
+        7,
+        2,
+        6
+      ],
+      "sha256": "68a93e9e719fb359f4cf2d6b92325134b88311744ecbc5f6decfc19624ea7a9d",
+      "status": "complete",
+      "visited": 65887
+    },
+    {
+      "path": "p7-q2-r7.json",
+      "seed": [
+        7,
+        2,
+        7
+      ],
+      "sha256": "18d3b9bed7909bed7c132acbc5787801112a6a79ba5cb4831b72e63fe09f3b12",
+      "status": "complete",
+      "visited": 69612
+    },
+    {
+      "path": "p7-q3-r4.json",
+      "seed": [
+        7,
+        3,
+        4
+      ],
+      "sha256": "a8dcdd1086a5469068e001fa6ca1e18a93408d8b4fdbf3e271779706c446a5ae",
+      "status": "complete",
+      "visited": 69007
+    },
+    {
+      "path": "p7-q3-r5.json",
+      "seed": [
+        7,
+        3,
+        5
+      ],
+      "sha256": "4e7191fce4f50fa9a75ef2457018bf6cf28c9243ce60e030811aa04e4a918b21",
+      "status": "complete",
+      "visited": 64301
+    },
+    {
+      "path": "p7-q3-r6.json",
+      "seed": [
+        7,
+        3,
+        6
+      ],
+      "sha256": "a1f36f268bd9b8c15feeb2bf335b11a38cb25f5e4d7b233ad05396b8eee01676",
+      "status": "complete",
+      "visited": 59426
+    },
+    {
+      "path": "p7-q3-r7.json",
+      "seed": [
+        7,
+        3,
+        7
+      ],
+      "sha256": "9479e108394b27c70f2e257d5070ee3f9318e4409807118ee860fa7aaa6cb8fd",
+      "status": "complete",
+      "visited": 62671
+    },
+    {
+      "path": "p7-q4-r5.json",
+      "seed": [
+        7,
+        4,
+        5
+      ],
+      "sha256": "fe64afe59e32242e721ab858e6537ce71269b1b45af0860bc2e3478fc96d69e3",
+      "status": "complete",
+      "visited": 60927
+    },
+    {
+      "path": "p7-q4-r6.json",
+      "seed": [
+        7,
+        4,
+        6
+      ],
+      "sha256": "8f37c5b1e6e45dfaf30996b04451d2ef40881909b4902f01a67adc80f0dd25ef",
+      "status": "complete",
+      "visited": 57370
+    },
+    {
+      "path": "p7-q4-r7.json",
+      "seed": [
+        7,
+        4,
+        7
+      ],
+      "sha256": "9256675067e58a5556a8224fd32da9cd649e6686d19faf49c94ed6720888e364",
+      "status": "complete",
+      "visited": 59945
+    },
+    {
+      "path": "p7-q5-r6.json",
+      "seed": [
+        7,
+        5,
+        6
+      ],
+      "sha256": "5c0f60f01e1ff6e7968040c51cd6d409d608184c6caad5f47cc8d90f772cc454",
+      "status": "complete",
+      "visited": 56550
+    },
+    {
+      "path": "p7-q5-r7.json",
+      "seed": [
+        7,
+        5,
+        7
+      ],
+      "sha256": "7082c4ca77cd444ee959e435e862df1058d6498a15e0eac93a2d9653aadee66c",
+      "status": "complete",
+      "visited": 59518
+    },
+    {
+      "path": "p7-q6-r7.json",
+      "seed": [
+        7,
+        6,
+        7
+      ],
+      "sha256": "29f40902047a7de6b655fb3728dbaf973fe2bcbef2b92ab1f7fb0a99d08318b3",
+      "status": "complete",
+      "visited": 59476
+    }
+  ],
+  "source_sha256": "d139904aab473acb3fa4b99cc3eb36c402b53804840c44268265f5efc67d7ae4",
+  "status": "complete",
+  "supports_sha256": "0e0ced268f950de1fd7d5c51d1567524fb210c03c8148e40ec6e09fd1bd8f98a",
+  "visited": 6040767
+}

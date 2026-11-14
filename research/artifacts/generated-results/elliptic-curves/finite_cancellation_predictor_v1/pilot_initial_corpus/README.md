@@ -1,1 +1,0 @@
-Four implementation-pilot cases produced before the census schema joins were finalized. Not used in analysis or claimed as independently replayable census outputs; the complete corpus is remeasured under its final input hash. The frozen feature protocol was unchanged.

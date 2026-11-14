@@ -1,0 +1,10 @@
+{
+  "identity": "For each parent polynomial g_j=G_j/d_j, solve sum(mu_j*m_j*G_j)=rhs over Q with integer matrix columns; export lambda_j=d_j*mu_j. This is an invertible nonzero constant column scaling and leaves the ideal identity unchanged.",
+  "motivation": "Direct rational matrices can form large row denominator LCMs across many differently normalized parent polynomials. Clear denominators columnwise before the multi-RHS solve.",
+  "terminated_owned_dixon_pids": [
+    2584005
+  ],
+  "previous_script": "solve_local_batched_dixon.py",
+  "new_script": "solve_local_batched_integral.py",
+  "proof_checks": "All individual rational polynomial identities and terminal constant are still replayed exactly."
+}

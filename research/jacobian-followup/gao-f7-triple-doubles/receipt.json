@@ -1,0 +1,129 @@
+{
+  "result": "PASS",
+  "claim_id": "GAOF7TRP1",
+  "scope": "For normalized F7 over C with a marked triple-or-higher eliminant root s satisfying D0=s*(3s^3-2)=0, the complete locus is four rational curves parametrized by a!= -1/2. The residual Q9 and its derivative have gcd degree at most1 at EVERY point. Exactly288 normalized targets have seven-point fibres (72 at each carrier root), exactly23 have eight-point fibres, all others have nine-point fibres. The seven-point set contains the known fivefold origin and287 triple-plus-double targets. The eight-point set is the23 ordinary quadruple targets from GAOF7FOUR1. All311 nonordinary targets are explicitly projected by the degree72/216 discriminant polynomials and the old pole parameterization. Every point has a unique triple-or-higher root, so no target is counted twice. In particular no3+2+2+2 case lies on D0=0. The generic D0!=0 case and JC2 remain open.",
+  "checks": 12884,
+  "integer_norm_evaluation_points": 1510,
+  "integer_determinant_engines": [
+    "FLINT",
+    "separate Python Bareiss"
+  ],
+  "modular_determinant_engines": [
+    "FLINT",
+    "separate Python Gaussian"
+  ],
+  "forbidden_coordinate_sylvester_determinant": -2098783467,
+  "norms": [
+    {
+      "chart": "s-zero",
+      "order": 1,
+      "last_column": 14,
+      "matrix_size": 15,
+      "degree_bound": 120,
+      "degree": 75,
+      "points": 121,
+      "denominator_power": 15,
+      "stripped_degree": 60
+    },
+    {
+      "chart": "s-zero",
+      "order": 1,
+      "last_column": 15,
+      "matrix_size": 15,
+      "degree_bound": 120,
+      "degree": 74,
+      "points": 121,
+      "denominator_power": 16,
+      "stripped_degree": 58
+    },
+    {
+      "chart": "s-cubic",
+      "order": 1,
+      "last_column": 14,
+      "matrix_size": 45,
+      "degree_bound": 360,
+      "degree": 225,
+      "points": 361,
+      "denominator_power": 45,
+      "stripped_degree": 180
+    },
+    {
+      "chart": "s-cubic",
+      "order": 1,
+      "last_column": 15,
+      "matrix_size": 45,
+      "degree_bound": 360,
+      "degree": 225,
+      "points": 361,
+      "denominator_power": 45,
+      "stripped_degree": 180
+    },
+    {
+      "chart": "s-zero",
+      "order": 0,
+      "last_column": 16,
+      "matrix_size": 17,
+      "degree_bound": 136,
+      "degree": 88,
+      "points": 137,
+      "denominator_power": 16,
+      "stripped_degree": 72
+    },
+    {
+      "chart": "s-cubic",
+      "order": 0,
+      "last_column": 16,
+      "matrix_size": 51,
+      "degree_bound": 408,
+      "degree": 264,
+      "points": 409,
+      "denominator_power": 48,
+      "stripped_degree": 216
+    }
+  ],
+  "coprimality_and_squarefree": [
+    {
+      "name": "s-zero",
+      "test": "order1_coprimality",
+      "shape": 118,
+      "det_mod": 861345170
+    },
+    {
+      "name": "s-zero",
+      "test": "projection_squarefree",
+      "shape": 143,
+      "det_mod": 460917130
+    },
+    {
+      "name": "s-cubic",
+      "test": "order1_coprimality",
+      "shape": 360,
+      "det_mod": 932400796
+    },
+    {
+      "name": "s-cubic",
+      "test": "projection_squarefree",
+      "shape": 431,
+      "det_mod": 592069571
+    }
+  ],
+  "normalized_counts": {
+    "7": 288,
+    "8": 23,
+    "nonordinary_total": 311,
+    "9": "infinite ordinary open on each of four rational curves"
+  },
+  "remaining_three_point_gate": "3+2+2+2 with every marked triple root satisfying D0!=0",
+  "checker_sha256": "e0d633e3c08e7639182e53412a89fdcb4cea1934e9532e42e88565c5779d9920",
+  "hashes": {
+    "pole-source-candidate.json": "e7cc780a52ea07e298ae0cf4e1029e7074314379410accd91af69070cfcc782b",
+    "lower-order-norms-candidate.json": "9703ddf91b6d7613250471bd630d43c550c87bd4c817c2f70af9835794609e4b"
+  },
+  "source_sha256": "fba7ec6541db431da1643488c7ebf5d308e42e1a3b504ca79c28086b4de3be79",
+  "base_checker_sha256": "ac019de08776edc4e16988bdbd847df4f5a1f2216b517ff17cf0fe004f7cfb1b",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "seconds": 45.281336070998805,
+  "assurance": "Exact coefficient identities, complete integer norm interpolation, full actual-degree integer Sylvester nonvanishing and written source/rank/norm/counting arguments. No independent end-to-end, formal, external or novelty review."
+}

@@ -3,18 +3,18 @@
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 354f87be7f576985 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 0c8e0400965a58de -->
 
 > **Programme update (2026-09-14).**  The candidate-ranking and finite-field
 > queue below are retained as exact, dated subcampaign records.  They no
 > longer define the programme-level “next equation” target. The active
-> foundry starts from the global rank-three `T` queue before constructing NS
-> or inspecting rootless frames. Determinant `720` and determinant-950
+> foundry classifies the retained NS/frame population by arithmetic gates;
+> new construction still requires full rational marking first. Determinant `720` and determinant-950
 > `NS0024` retain their arithmetic exclusions. Determinant-1184 `NS0031` now
 > has a [corrected full stable obstruction](NS0031_FULL_STABLE_MARKING_OBSTRUCTION_2026-09-14.md)
 > to a full rational rank-19 marking. Its marked model-157 germ remains a
-> formally smooth `ZZ_7` control. The live target is arithmetic MW17 plus a certified carrier,
-> with integral `V4` character ranks `17+1+1+1` as the stretch objective.
+> formally smooth `ZZ_7` control. The live target is the classification experiment;
+> carrier and integral `V4` character ranks `17+1+1+1` remain separate extensions.
 > See
 > [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 

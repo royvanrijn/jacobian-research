@@ -1,0 +1,86 @@
+/* [wxMaxima: input   start ] */
+id_x(n) := makelist(concat(x,i), i, 1, n);
+id_y(n) := makelist(concat(y,i), i, 1, n);
+id_xy(n) := append(id_x(n),id_y(n));
+grad(f,n) := append(makelist(diff(f,concat(x,i)),i,1,n),makelist(diff(f,concat(y,i)),i,1,n));
+subst_xy(P,a,b,F) := makelist(factor(subst(
+        append(makelist(concat(x,i)=a*P[j][i],i,1,length(P[j])),makelist(concat(y,i)=b*P[j][i],i,1,length(P[j]))),
+        F)),j,1,length(P));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+F: expand((t-1)*id_x(16) + 
+    [x1-x10,12·x4·x8+12·x1·x6+3·x1·x3+x2-x12,
+        8·x4·x7-12·x4·x6+8·x1·x5+x3+8·x2^2-x14,
+        x4+3·x1·x3-x15,x5-x16,x6+x2^2,x7+x1·x5,
+        x8+x1·x6,x9-x1^3·x3,-x9-3·x1^2·x2+x10,
+        12·x1^2·x3·x8+(36·x1^2·x3-36·x1^2·x2)·x6+12·x1^2·x2·x3+x11,
+        36·x1·x3·x8+12·x1·x4·x6+36·x1·x2^2+x12-x11,
+        8·x1^2·x3·x7-12·x1^2·x3·x6+(24·x1^2·x3-24·x1^2·x2)·x5-36·x1·x2^2·x3+36·x1·x2^3+x13,
+        24·x1·x3·x7-36·x1·x3·x6+8·x1·x4·x5-12·x2^2·x4+6·x1·x2·x3+x14-x13,
+        x1^2·x3+x15,x2^3+x16]);
+P: [[0,t,-(8·t),0,-t,-t,0,0,0,0,0,0,0,0,0,-t^2],
+    [-t,t,4·t,8·t,-t,-t,-t,-t,-4·t^3,-t^2,108·t^3,-96·t^2,
+        -52·t^3,52·t^2,-4·t^2,-t^2]];
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+g: sum((concat(x,j)-%i*concat(y,j))*subst(makelist(concat(x,i)=concat(x,i)+%i*concat(y,i),i,1,length(F)),F[j]),j,1,length(F));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+G: grad(g,length(F))$ subst_xy(P,1/2,-%i/2,G);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+h: sum((concat(x,j)-%i*concat(y,j))*subst(makelist(concat(x,i)=concat(x,i)+%i*concat(y,i),i,1,length(F)),F[j]-concat(x,j)),j,1,length(F));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+expand(g - h - lsum(j^2,j,id_xy(length(F))));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+F_h: expand((t-1)*id_x(17) + 
+    [x1-x10·x17^3,12·x17^2·x4·x8+12·x1·x17^2·x6+3·x1·x17^2·x3+x2-x12·x17^3,
+        8·x17^2·x4·x7-12·x17^2·x4·x6+8·x1·x17^2·x5+x3+8·x17^2·x2^2-x14·x17^3,
+        x4+3·x1·x17^2·x3-x15·x17^3,x5-x16·x17^3,x6+x17^2·x2^2,x7+x1·x17^2·x5,
+        x8+x1·x17^2·x6,x9-x1^3·x3,-(x17^3·x9)-3·x1^2·x17·x2+x10,
+        12·x1^2·x3·x8+(36·x1^2·x3-36·x1^2·x2)·x6+12·x1^2·x2·x3+x11,
+        36·x1·x17·x3·x8+12·x1·x17·x4·x6+36·x1·x17·x2^2-x11·x17^3+x12,
+        8·x1^2·x3·x7-12·x1^2·x3·x6+(24·x1^2·x3-24·x1^2·x2)·x5-36·x1·x2^2·x3+36·x1·x2^3+x13,
+        24·x1·x17·x3·x7-36·x1·x17·x3·x6+8·x1·x17·x4·x5-12·x17·x2^2·x4+6·x1·x17·x2·x3-x13·x17^3+x14,
+        x1^2·x17·x3+x15,x17·x2^3+x16,x17]);
+P_h: [[0,t,-(8·t),0,-t,-t,0,0,0,0,0,0,0,0,0,-t^2,1],
+    [-t,t,4·t,8·t,-t,-t,-t,-t,-4·t^3,-t^2,108·t^3,-96·t^2,
+        -52·t^3,52·t^2,-4·t^2,-t^2,1]];
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+g_h: sum((concat(x,j)-%i*concat(y,j))*subst(makelist(concat(x,i)=concat(x,i)+%i*concat(y,i),i,1,length(F_h)),F_h[j]),j,1,length(F_h));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+G_h: grad(g_h,length(F_h))$ subst_xy(P_h,1/2,-%i/2,G_h);
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+h_h: sum((concat(x,j)-%i*concat(y,j))*subst(makelist(concat(x,i)=concat(x,i)+%i*concat(y,i),i,1,length(F_h)),F_h[j]-concat(x,j)),j,1,length(F_h));
+/* [wxMaxima: input   end   ] */
+
+
+/* [wxMaxima: input   start ] */
+expand(g_h - h_h - lsum(j^2,j,id_xy(length(F_h))));
+/* [wxMaxima: input   end   ] */
+
+
+

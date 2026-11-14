@@ -1,0 +1,279 @@
+{
+  "as_of": "2026-11-14",
+  "claim": "PF2OMIT18",
+  "hypotheses": "Four oriented PF2OMIT13 degree6/index2/gap21 rows, actual full ramification and source field; no degree/contact restriction on B/H",
+  "target_pencil": "h=H_C",
+  "generic_compact_target_genus": 12,
+  "generic_affine_target_Euler": -23,
+  "all_source_generic_fibres_geometrically_integral": true,
+  "rows": [
+    {
+      "row": "A_distinct",
+      "e_S": 2,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "deg h|H>=6",
+      "geometric_generic_monodromy": "S6",
+      "Galois_closure_constant_field": "C(h)",
+      "Galois_closure_geometric_component_count": 1,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "S5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    },
+    {
+      "row": "A_H=C",
+      "e_S": 2,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "0",
+      "geometric_generic_monodromy": "S6",
+      "Galois_closure_constant_field": "C(h)",
+      "Galois_closure_geometric_component_count": 1,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "S5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    },
+    {
+      "row": "A_H=B",
+      "e_S": 2,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "b",
+      "geometric_generic_monodromy": "S6",
+      "Galois_closure_constant_field": "C(h)",
+      "Galois_closure_geometric_component_count": 1,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "S5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    },
+    {
+      "row": "B",
+      "e_S": 2,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "0",
+      "geometric_generic_monodromy": "S6",
+      "Galois_closure_constant_field": "C(h)",
+      "Galois_closure_geometric_component_count": 1,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "S5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    },
+    {
+      "row": "N",
+      "e_S": 2,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "0",
+      "geometric_generic_monodromy": "S6",
+      "Galois_closure_constant_field": "C(h)",
+      "Galois_closure_geometric_component_count": 1,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "S5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    },
+    {
+      "row": "C",
+      "e_S": 3,
+      "B_intersection_degree": "b>=6",
+      "unramified_omitted_count_on_generic_level": "0",
+      "geometric_generic_monodromy": "A6",
+      "Galois_closure_constant_field": "C(h)(sqrt(h))",
+      "Galois_closure_geometric_component_count": 2,
+      "source_constant_field": "C(h)",
+      "source_geometric_component_count": 1,
+      "geometric_curve_stabilizer": "A5",
+      "proper_intermediate_generic_curve_fields": [],
+      "compact_source_genus_formula": "2g=140+(e_S-1)*b-n_h",
+      "source_punctures_formula": "n_h+b+u",
+      "source_Euler_formula": "-138-e_S*b-u",
+      "actual_b": null,
+      "actual_u": null,
+      "actual_infinity_partition": null,
+      "actual_generic_curve_cover": null
+    }
+  ],
+  "infinity_geometric_cycle_options": [
+    {
+      "cycles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "geometric_point_count": 6,
+      "different": 0,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "geometric_point_count": 5,
+      "different": 1,
+      "sign": -1,
+      "allowed_in_A6": false,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "geometric_point_count": 4,
+      "different": 2,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "geometric_point_count": 4,
+      "different": 2,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        1,
+        4
+      ],
+      "geometric_point_count": 3,
+      "different": 3,
+      "sign": -1,
+      "allowed_in_A6": false,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        2,
+        3
+      ],
+      "geometric_point_count": 3,
+      "different": 3,
+      "sign": -1,
+      "allowed_in_A6": false,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        1,
+        5
+      ],
+      "geometric_point_count": 2,
+      "different": 4,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        2,
+        2,
+        2
+      ],
+      "geometric_point_count": 3,
+      "different": 3,
+      "sign": -1,
+      "allowed_in_A6": false,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        2,
+        4
+      ],
+      "geometric_point_count": 2,
+      "different": 4,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        3,
+        3
+      ],
+      "geometric_point_count": 2,
+      "different": 4,
+      "sign": 1,
+      "allowed_in_A6": true,
+      "geometric_realization_claimed": false
+    },
+    {
+      "cycles": [
+        6
+      ],
+      "geometric_point_count": 1,
+      "different": 5,
+      "sign": -1,
+      "allowed_in_A6": false,
+      "geometric_realization_claimed": false
+    }
+  ],
+  "infinity_count_is_general_target_line_count": false,
+  "normal_closure_constant_quadratic_field_is_inside_source": false,
+  "minimum_compact_source_genus_e2": 70,
+  "minimum_compact_source_genus_e3": 73,
+  "numeric_controls_are_global_Keller_realizations": false,
+  "central_h_zero_fibre_accounted_by_generic_formulas": false,
+  "actual_B_equation": null,
+  "actual_H_equation": null,
+  "actual_global_cover": null,
+  "actual_source_realization": null,
+  "unrestricted_singleton_zero_properness_proved": false,
+  "full_goal_complete": false
+}

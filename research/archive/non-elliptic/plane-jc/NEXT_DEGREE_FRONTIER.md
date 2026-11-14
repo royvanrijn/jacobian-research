@@ -1,5 +1,7 @@
 # Candidate frontier from 125 through 150
 
+> **14 November 2026 omission audit.** The whole normal-even exclusion PF2D6E1 is partial. A ramification census does not enumerate omitted e=1 rows. The [global ledger](../../../jacobian-followup/jc2-omitted-divisors/GLOBAL_LEDGER.md) extends the r7 additional-image obligation to immersed curves and leaves actual image equations and infinity transport open.
+
 > **Bounded computational regression.**  The full complete-chain algorithm is
 > published as pseudocode in Guccione--Guccione--Horruitiner--Valqui,
 > arXiv:1708.07936.  No author-supplied implementation or source repository was

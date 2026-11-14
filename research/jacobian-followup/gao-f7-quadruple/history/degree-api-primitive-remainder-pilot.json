@@ -1,0 +1,12 @@
+{
+  "name": "primitive-remainder-pilot",
+  "cap_seconds": 120,
+  "address_cap_GiB": 4,
+  "per_file_cap_MiB": 100,
+  "script_sha256": "83796c14ab65326701cac7aeeba5140596e8b4ae9a6628c3fe6e0eb92b1052c7",
+  "input_sha256": "36c79a09db0f0c7f213fed832302b718d21fac7f24cce031087627ec8e32ef5e",
+  "theorem_exclusion": false,
+  "outcome": "completed",
+  "returncode": 1,
+  "seconds": 0.36738260998390615
+}

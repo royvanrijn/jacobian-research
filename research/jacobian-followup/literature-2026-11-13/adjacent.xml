@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/D+Cydn7dEH3xyOr12w+/fSkh35o</id>
+  <title>arXiv Query: search_query=(all:"Druzkowski" OR all:"Drużkowski" OR (all:"nonproperness" AND all:"polynomial") OR (all:"etale" AND all:"endomorphisms") OR (all:"vanishing conjecture" AND all:"Zhao") ) AND submittedDate:"202601010000 TO 202611132359"&amp;id_list=&amp;start=0&amp;max_results=300</title>
+  <updated>2026-11-13T18:24:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(all:%22Druzkowski%22+OR+(all:%22Dru%C5%BCkowski%22+OR+((all:%22nonproperness%22+AND+all:%22polynomial%22)+OR+((all:%22etale%22+AND+all:%22endomorphisms%22)+OR+(all:%22vanishing+conjecture%22+AND+all:%22Zhao%22)))))+AND+submittedDate:%22202601010000+TO+202611132359%22&amp;start=0&amp;max_results=300&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>300</opensearch:itemsPerPage>
+  <opensearch:totalResults>5</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.07106v1</id>
+    <title>PIT and Reconstruction for Sums of Powers</title>
+    <updated>2026-11-04T20:20:24Z</updated>
+    <link href="https://arxiv.org/abs/2611.07106v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.07106v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study deterministic black-box polynomial identity testing (PIT) and reconstruction for polynomials of the form \[
+  f(x)=\sum_{i=1}^r α_i f_i(x)^d, \] where each $f_i$ belongs to some underlying polynomial class $\mathcal{C}$. This representation generalizes Waring decomposition, several natural small-depth circuit models, and polynomial decompositions arising in moment-based learning problems.
+  Our main results are three lifting theorems showing that, when the outer power is sufficiently large, PIT and reconstruction for the inner class can be lifted to sums of powers. When the power degree is small, we can perform these tasks directly in some of the cases using closure properties of the underlying models. In particular we obtain the following results:
+  \begin{itemize}
+  \item When the inner polynomials have bounded-individual-degrees and are sparse, we obtain deterministic reconstruction for every d: the original power-sum decomposition is recovered at high degree, while at low degree the polynomial is reconstructed nonproperly by sparse interpolation.
+  \item For sums of powers of same-order and any-order read-once oblivious algebraic branching programs, the same proper/nonproper dichotomy gives deterministic reconstruction for every powering degree.
+  \item Explicit quasipolynomial-size hitting sets for every powering degree for several depth-5 and depth-6 circuit families, as well for the models mentioned above.
+  Our results for high powering degree rely on the polynomial ABC theorem, which to the best of our knowledge is the first application of this theorem in the context of PIT.</summary>
+    <category term="cs.CC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-04T20:20:24Z</published>
+    <arxiv:primary_category term="cs.CC"/>
+    <author>
+      <name>Nimrod Kaplan</name>
+    </author>
+    <author>
+      <name>Amir Shpilka</name>
+    </author>
+    <author>
+      <name>Yann Tal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.25831v1</id>
+    <title>The global structure of bi-rotational self-shrinkers</title>
+    <updated>2026-10-19T05:45:55Z</updated>
+    <link href="https://arxiv.org/abs/2610.25831v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.25831v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We describe the global structure of the self-shrinkers of the mean curvature flow in $\mathbb{R}^{p+q+2}$ invariant under $O(p+1)\times O(q+1)$, without assuming properness or embeddedness. The main tool is a pair of piecewise monotone quantities along the profile curves, in the spirit of Hsiang's analysis of constant mean curvature hypersurfaces. We prove that every such self-shrinker other than the two invariant cylinders intersects both of them transversely, and all of them except the Clifford minimal cone are complete. Apart from those of the cylinders, each end is either asymptotic to a cone or meets both cylinders infinitely many times. Consequently, a complete noncompact example is proper if and only if all its ends are asymptotically conical, and this is equivalent to polynomial volume growth, to finite entropy, and to finitely many intersections with the cylinders. The reduced flow preserves a finite measure, and for almost every initial condition the profile curve is either closed or generates a complete nonproper self-shrinker of infinite entropy. We also bound the winding of the profile curve by its number of cylinder crossings and localize its self-intersections.</summary>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-19T05:45:55Z</published>
+    <arxiv:comment>69 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="math.DG"/>
+    <author>
+      <name>Gregório Silva Neto</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.24889v1</id>
+    <title>Alpöge's counterexample to the JC, Economic Stabilization, and Zhao's Vanishing Conjecture</title>
+    <updated>2026-10-17T22:11:46Z</updated>
+    <link href="https://arxiv.org/abs/2610.24889v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.24889v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we apply stabilization techniques which are economic in the number of added dimensions to a slightly tweaked version of Alpöge's counterexample to JC(3) and JC(3,7). The first idea which lead to more economic stabilization is to bypass the degree 3 reduction of Bass, Connell and Wright in the construction of a counterexample to HJC(n). We construct counterexamples to HJC(15), VC(28), and HVC(30). On the other hand, we will perform degree 3 reduction after all to obtain counterexamples of low degree. We construct counterexamples to JC(12,3), HJC(18,3), VC(34,4), and HVC(36,4). As an encore, we construct a cubic-linear counterexample to the Jacobian Conjecture in dimension 90. All presented counterexamples to the Jacobian Conjecture (Vanishing Conjecture) are over the (Gaussian) integers.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-17T22:11:46Z</published>
+    <arxiv:comment>38 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Michiel de Bondt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.12543v3</id>
+    <title>Collision-Generated Compression for Homogeneous Keller Maps</title>
+    <updated>2026-09-15T15:46:05Z</updated>
+    <link href="https://arxiv.org/abs/2608.12543v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.12543v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We associate to a collision $p\ne q$ of a homogeneous Keller map $F=\operatorname{id}+h$ the polarization subalgebra generated by $p$ and $q$. This collision hull is the smallest invariant linear subspace containing the collision; the restricted map remains a noninjective Keller map, and its dimension controls that of the standard symmetric lift. The construction is compatible with scalar extension and equivariant under linear conjugacy, so it gives a canonical linear carrier for a marked failure of injectivity. We compute this carrier exactly in two recent cubic-homogeneous reductions of the three-variable Jacobian counterexample. For Thompson's 24-variable map, the growth $2,4,11,20,20$ recovers MacFarlane's 20-dimensional invariant subspace. For the 19-variable homogenization of Van Rijn's 12-variable degree-three map, the growth $2,4,11,19,19$ fills the whole space. Hence no invariant linear restriction retaining the displayed collision can improve the corresponding 38-variable symmetric lift. We give the resulting 340-monomial homogeneous quartic explicitly: it is Hessian-nilpotent, violates Zhao's Vanishing Conjecture, and its gradient Keller map has an exact collision over $\mathbb{Q}(i)$. The analogous 20-variable application gives the previously studied 40-variable, 350-monomial quartic. All finite calculations are checked by exact companion code.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-12T19:28:55Z</published>
+    <arxiv:comment>13 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Thomas Prellberg</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.02634v1</id>
+    <title>A Dimension-Two Counterexample to the Separable Jacobian Conjecture in Characteristic Two</title>
+    <updated>2026-07-29T22:27:52Z</updated>
+    <link href="https://arxiv.org/abs/2608.02634v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.02634v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let k be the algebraic closure of F_2. We study the polynomial endomorphism F=(P,Q) of the affine plane, where P=x+x^2 y+x^4+x^6 y^2 and Q=y+x^5+x^6 y+x^7 y^2+x^8 y^3. Its Jacobian determinant is 1, while the three distinct points (0,1), (1,0), and (1,1) have the same image. We prove that [k(x,y):k(P,Q)]=3 and that the extension is separable. Thus the generic degree is prime to the characteristic although F is not an automorphism, giving a dimension-two counterexample to the separable Jacobian conjecture in characteristic two. The proof uses explicit recovery from a hidden cubic, irreducibility over the actual target field, and a bridge between function-field embeddings and the geometric generic fiber. We also give an explicit graph presentation proving that F is etale and derive the map from a coordinate-permuted form of a three-variable map of Irit Huq-Kuruvilla. An appendix records the precise scope and evidence boundaries of a Lean formalization and an independent Harmonic Aristotle replay.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.AC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T22:27:52Z</published>
+    <arxiv:comment>10 pages. Includes a Lean 4 formalization appendix and reproducibility receipts. No external figures</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Romy Mondello</name>
+    </author>
+  </entry>
+</feed>

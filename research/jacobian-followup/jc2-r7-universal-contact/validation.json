@@ -1,0 +1,21 @@
+{
+  "full_index": "KDSQ6: missing document consumer artifacts/generated-results/README.md",
+  "new_claims_scoped_index": "PASS; unrelated consumers/narrowing edges omitted in memory only",
+  "affected_lessons": "PASS",
+  "full_work": "duplicate primary work target",
+  "affected_work_scopes_and_sources": "PASS",
+  "python_compilation": "PASS",
+  "local_markdown_links_and_whitespace": "PASS",
+  "receipt_hashes": "PASS",
+  "exact_checker": {
+    "passed": true,
+    "check_count": 69,
+    "elapsed_seconds": 0.319
+  },
+  "remaining_projection_degrees": [
+    3,
+    4,
+    3
+  ],
+  "assurance": "Written geometry and exact algebra; no formalization or external review. Main reduction uses no Theorem3.8 conclusion; its stronger closure corollary explicitly adds source finality."
+}

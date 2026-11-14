@@ -51,7 +51,6 @@ python3 research/scripts/research.py show ID
 | `PF2BH1` | archived programme; proved | [F2 common-edge contact classification and failed contact surrogate](../archive/non-elliptic/plane-jc/F2_BOUNDARY_HANDOFF.md) |
 | `PF2CLP1` | archived programme; proved | [F2 carrier logarithmic node-profile theorem](../archive/non-elliptic/plane-jc/F2_CARRIER_LOG_NODE_PROFILE.md) |
 | `PF2D6O1` | archived programme; proved | [Sharp degree-(6,10) polynomial gap and F2 normal r=9 exclusion](../archive/non-elliptic/plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md) |
-| `PF2D6E1` | archived programme; proved | [F2 normal degree-six even-terminal exclusion](../archive/non-elliptic/plane-jc/F2_GEOMETRIC_DEGREE_SIX_STEIN_REDUCTION.md) |
 | `PF2KO1` | archived programme; proved | [F2 Kummer-orbit transfer and principal-chain reduction](../archive/non-elliptic/plane-jc/F2_KUMMER_ORBIT_TRANSFER.md) |
 | `PF2LNP1` | archived programme; proved | [F2 terminal logarithmic node-profile theorem](../archive/non-elliptic/plane-jc/F2_LOG_NODE_PROFILE.md) |
 | `PF2MCB1` | archived programme; partial | [F2 modified-chart source projection and top-gap obstruction](../archive/non-elliptic/plane-jc/F2_MODIFIED_CHART_BRIDGE.md) |
@@ -99,3 +98,110 @@ python3 research/scripts/research.py show ID
 | `SGMPF1` | archived programme; proved | [Exact scalar Picard--Fuchs extraction from superelliptic Gauss--Manin data](../archive/non-elliptic/plane-jc/SUPERELLIPTIC_DERHAM_ENGINE.md) |
 | `PUSC1` | archived programme; proved | [Universal unibranch spectator countermodels to local finite-flat exclusion](../archive/non-elliptic/plane-jc/UNIBRANCH_SPECTATOR_COUNTERMODELS.md) |
 | `UCBS1` | archived programme; proved | [Universal logarithmic boundary purity and matching-cokernel no-go](../archive/non-elliptic/plane-jc/UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md) |
+| `PF2BATT1` | archived programme; proved | [Global plane boundary attachment excludes collided tame nodes and forces immersed images for unramified omitted primes](../jacobian-followup/jc2-boundary-attachment/PROOF.md) |
+| `PF2R7BND1` | archived programme; proved | [Normal-r7 nonimmersion rows force two or three unramified omitted primes with additional immersed target images](../jacobian-followup/jc2-boundary-attachment/PROOF.md) |
+| `JC2CFJ1` | archived programme; proved | [Zero seven-carrier-jet transport is scheme-theoretically equivalent to adapted-quintic Euler eligibility](../jacobian-followup/jc2-cusp-contact/BRANCH507.md) |
+| `JC2CFMV1` | archived programme; proved | [F2 mixed-volume and mandatory boundary intersections bound geometric degree by2019, or1347 on contact507](../jacobian-followup/jc2-cusp-contact/BRANCH507.md) |
+| `JC2CF7F1` | archived programme; proved | [The rational-quintic carrier quotient is finite free of degree seven with immersion-controlled ramification](../jacobian-followup/jc2-cusp-contact/CARRIER_QUOTIENT.md) |
+| `JC2CFGA1` | archived programme; proved | [Global affine carrier gauge reduces the eight F2 contact cases to five normal forms](../jacobian-followup/jc2-cusp-contact/CARRIER_QUOTIENT.md) |
+| `JC2CFC1` | archived programme; proved | [Exact five-step commuting contact ideal and the limit of early F2 resonant freedom](../jacobian-followup/jc2-cusp-contact/PROOF.md) |
+| `JC2CFN1` | archived programme; proved | [Complete two-face F2 cusp-contact spectrum and the forced degree507 carrier coefficient](../jacobian-followup/jc2-cusp-contact/PROOF.md) |
+| `JC2CFQ1` | archived programme; proved | [Complete Euler eligibility for adapted quintic filtrations and the length-seven E8 endpoint scheme](../jacobian-followup/jc2-cusp-contact/PROOF.md) |
+| `JC2CFW1` | archived programme; proved | [F2 source-cusp Wronskian excludes contact456, sharpens centered jets and forces a degree325 image](../jacobian-followup/jc2-cusp-contact/PROOF.md) |
+| `JC2CFSB1` | archived programme; proved | [Actual contact507 source equations kill the first two squarefree bands; both first parameters survive their quadratic returns](../jacobian-followup/jc2-cusp-contact/SOURCE_BANDS.md) |
+| `JC2CFF1` | archived programme; proved | [Sharp cusp-Jacobian defect bound and finite recognition across two binomial cusp filtrations](../jacobian-followup/jc2-cusp-filtration-rigidity/PROOF.md) |
+| `JC2CFF2` | archived programme; proved | [F2 auxiliary cusp-contact gate: the normalized binomial difference has degree at least456](../jacobian-followup/jc2-cusp-filtration-rigidity/PROOF.md) |
+| `JC2CFR1` | archived programme; proved | [Coprime cusp-filtration Euler and Poisson rigidity: written reproduction](../jacobian-followup/jc2-cusp-filtration-rigidity/PROOF.md) |
+| `PF2R7CUSP1` | archived programme; proved | [Two normal-r7 affine nonimmersion classes, a conditional excess gate and a vertical triple-tangent obstruction](../jacobian-followup/jc2-normal-r7/README.md) |
+| `PF2OMIT3` | archived programme; proved | [Source finite plane inverse equations give complete omission images and exceptional aggregate fibre lengths](../jacobian-followup/jc2-omitted-divisors/ADMISSIBLE_INVERSE.md) |
+| `PF2OMIT19` | archived programme; proved | [Central image-fibre Euler and Milnor accounting forces an infinity jump at least46 and constrains retained residue covers](../jacobian-followup/jc2-omitted-divisors/CENTRAL_IMAGE_FIBRE.md) |
+| `PF2OMIT4` | archived programme; proved | [Normalized inverse discriminants separate ramification omitted sheets and presentation collisions](../jacobian-followup/jc2-omitted-divisors/DISCRIMINANT_LEDGER.md) |
+| `PF2OMIT16` | archived programme; proved | [Affine pole-module and critical-value budgets reduce disjoint omitted images to a finite nodal two-fibre gate](../jacobian-followup/jc2-omitted-divisors/DISJOINT_IMAGE_GATE.md) |
+| `PF2OMIT14` | archived programme; proved | [Residual r7 target-line genus, punctures and Euler jumps retain unramified omission and complete both first-image catalogues](../jacobian-followup/jc2-omitted-divisors/GENERIC_LINE_ACCOUNTING.md) |
+| `PF2OMIT2` | archived programme; proved | [All-prime Euler ledger extends immersed r7 and forces branch surplus for off-branch singleton fibres](../jacobian-followup/jc2-omitted-divisors/GLOBAL_LEDGER.md) |
+| `PF2OMIT8` | archived programme; proved | [The complete residual r7 inertia ledger forces S6 monodromy and a primitive degree-six source field](../jacobian-followup/jc2-omitted-divisors/GLOBAL_MONODROMY.md) |
+| `PF2OMIT11` | archived programme; proved | [Explicit norm equations complete the first r7 image row and force singular-value matching restrictions](../jacobian-followup/jc2-omitted-divisors/IMAGE_NORM_LEDGER.md) |
+| `PF2OMIT18` | archived programme; proved | [Nonlinear image-pencil constants force S6 or A6 geometric monodromy, integral source fibres and complete generic omission charges](../jacobian-followup/jc2-omitted-divisors/IMAGE_PENCIL_MONODROMY.md) |
+| `PF2OMIT13` | archived programme; proved | [Exact cusp coordinates correct the full r7 first-image corank ledger and fix the nonimmersed residual row](../jacobian-followup/jc2-omitted-divisors/NONIMMERSED_LEDGER.md) |
+| `PF2OMIT12` | archived programme; proved | [Every gap21 image parametrization fibre has length at most three; the forbidden Laurent four-branch locus is empty](../jacobian-followup/jc2-omitted-divisors/NO_FOUR_BRANCHES.md) |
+| `PF2OMIT15` | archived programme; proved | [Odd-degree additional images force affine intersections and singleton packets in the shared-image and cyclic rows](../jacobian-followup/jc2-omitted-divisors/ODD_IMAGE_INTERSECTIONS.md) |
+| `PF2OMIT1` | archived programme; proved | [Reconstruction-pole completeness criterion and conditional pointwise omitted-length ledgers for r7 and singleton-zero](../jacobian-followup/jc2-omitted-divisors/PROOF.md) |
+| `PF2OMIT5` | archived programme; proved | [Complete infinity root accounting excludes the entire single-ramified-prime r7 stratum without source finality](../jacobian-followup/jc2-omitted-divisors/R7_INFINITY_COMPLETION.md) |
+| `PF2OMIT6` | archived programme; proved | [Residue-aware ambient lengths fix every residual immersed-r7 residue degree and pointwise singleton pattern](../jacobian-followup/jc2-omitted-divisors/RESIDUE_LEDGER.md) |
+| `PF2OMIT7` | archived programme; proved | [Simple omitted ramification forces smooth affine points and complete residual singleton radial packets](../jacobian-followup/jc2-omitted-divisors/SIMPLE_RAMIFICATION_AND_RADIAL.md) |
+| `PF2OMIT10` | archived programme; proved | [All residual singleton pole packets force explicit inverse coefficient and normalization-index orders](../jacobian-followup/jc2-omitted-divisors/SINGLETON_INVERSE_VALUATIONS.md) |
+| `PF2D6E1` | archived programme; partial | [F2 normal even-terminal algebra and restricted braid exclusions with unresolved omitted rows](../jacobian-followup/jc2-omitted-divisors/STEIN_SCOPE_AUDIT.md) |
+| `PF2OMIT17` | archived programme; proved | [Every additional polynomial image meets the complete gap21 first image; all residual supports connected and shared/cyclic rows force singletons](../jacobian-followup/jc2-omitted-divisors/UNIVERSAL_IMAGE_INTERSECTION.md) |
+| `PF2OMIT9` | archived programme; proved | [Marked Wright boundary jets locate the conditional quartic cusp and force an inverse normalization-index zero](../jacobian-followup/jc2-omitted-divisors/WRIGHT_IMAGE_RESTRICTION.md) |
+| `PF2R7CENT1` | archived programme; proved | [Central residue covers force high-genus source fibres and a complete infinity-bifurcation ledger](../jacobian-followup/jc2-r7-central-fibre/PROOF.md) |
+| `PF2R7COLL1` | archived programme; proved | [Complete affine singularity stratification of the polynomial gap21 family: exactly34 nonnodal parameters](../jacobian-followup/jc2-r7-collisions/PROOF.md) |
+| `PF2R7COLL2` | archived programme; proved | [Triple-point values exhaust degree-six omitted fibres and the old sharp braid sample is exceptional](../jacobian-followup/jc2-r7-collisions/PROOF.md) |
+| `PF2R7B5CONTACT1` | archived programme; proved | [Conditional degree(3,5) second-image contact bound and an explicit closest quintic pencil](../jacobian-followup/jc2-r7-complement/PROOF.md) |
+| `PF2R7TOP1` | archived programme; proved | [Proper comparison on both nodal gap21 opens and at most92 marked first-image complement types](../jacobian-followup/jc2-r7-complement/PROOF.md) |
+| `PF2R7G1` | archived programme; proved | [Reciprocal r7 conics force a finite multiple derivative root and three exact coefficient profiles](../jacobian-followup/jc2-r7-cubic-cover/PROOF.md) |
+| `PF2R7V1` | archived programme; proved | [Degree-six conic coefficients exclude the varying-direction cubic r7 infinity escape](../jacobian-followup/jc2-r7-cubic-cover/PROOF.md) |
+| `PF2R7ELL1` | archived programme; proved | [The complete contact34 quintic coefficient curve is elliptic, with degree7 contact and rank8 critical schemes](../jacobian-followup/jc2-r7-elliptic-contact/PROOF.md) |
+| `PF2R7KEY1` | archived programme; proved | [Exact first-image key models give a cubic compression and a length6 partial-normalization defect](../jacobian-followup/jc2-r7-elliptic-contact/PROOF.md) |
+| `PF2R7LINE1` | archived programme; proved | [Correct general-line genus and Picard windows for the two-ramified-image degree6 ledger](../jacobian-followup/jc2-r7-global-cover/PROOF.md) |
+| `PF2R7NORI1` | archived programme; proved | [Nori normal-subgroup obstruction forces I_infinity+2T>=34 for nodal quintic second images](../jacobian-followup/jc2-r7-global-cover/PROOF.md) |
+| `PF2R7FAM1` | archived programme; proved | [Complete gap21 coefficient family: a polynomial A1 component and an explicit Laurent Gm component](../jacobian-followup/jc2-r7-image-family/PROOF.md) |
+| `PF2R7FAM2` | archived programme; proved | [Exact immersion loci and nonzero gap on both complete r7 coefficient charts](../jacobian-followup/jc2-r7-image-family/PROOF.md) |
+| `PF2R7KCOLL1` | archived programme; proved | [Complete affine singularity stratification of the Laurent gap21 family:237 nonnodal parameters](../jacobian-followup/jc2-r7-laurent-collisions/PROOF.md) |
+| `PF2R7KCOLL2` | archived programme; proved | [Complete two-family affine exception set and163 exclusions for a shared unramified image](../jacobian-followup/jc2-r7-laurent-collisions/PROOF.md) |
+| `PF2R7EX2` | archived programme; proved | [Both nonimmersed single-ramified-row r7 classes excluded without the Borisov source-finality input](../jacobian-followup/jc2-r7-quartic-contact/PROOF.md) |
+| `PF2R7Q1` | archived programme; proved | [Neither exact nonimmersed r7 pair admits four conic contacts over any quartic polynomial parameter](../jacobian-followup/jc2-r7-quartic-contact/PROOF.md) |
+| `PF2R7QBASE1` | archived programme; proved | [Every single-ramified-row r7 quartic infinity escape has an inverted polynomial parameter of degree four](../jacobian-followup/jc2-r7-quartic-contact/PROOF.md) |
+| `PF2R7B5B1` | archived programme; proved | [No singleton in the immersed excess-one row with a high-contact degree(3,5) second image](../jacobian-followup/jc2-r7-quintic-cusps/PROOF.md) |
+| `PF2R7B5CUSP2` | archived programme; proved | [Complete161 high-contact quintic cusp pairs: clean ordinary cusps off the first image](../jacobian-followup/jc2-r7-quintic-cusps/PROOF.md) |
+| `PF2R7B5CUSP1` | archived programme; proved | [Exact160-point first-image gate for a nonimmersive high-contact quintic](../jacobian-followup/jc2-r7-quintic-incidence/PROOF.md) |
+| `PF2R7B5GEN1` | archived programme; proved | [Generic seven high-contact quintic pairs pass all local node and intersection ledgers](../jacobian-followup/jc2-r7-quintic-incidence/PROOF.md) |
+| `PF2R7B5N1` | archived programme; proved | [No singleton in the nonimmersed oriented row with a degree(3,5) high-contact second image](../jacobian-followup/jc2-r7-quintic-incidence/PROOF.md) |
+| `PF2R7B5RAT1` | archived programme; proved | [No polynomially normalized degree(3,5) image in the closest quintic pencil; finite intersection at least10](../jacobian-followup/jc2-r7-quintic-normalizations/PROOF.md) |
+| `PF2R7B5REC1` | archived programme; proved | [Seven high-contact polynomial quintic candidates over every complete gap21 first-image parameter](../jacobian-followup/jc2-r7-quintic-normalizations/PROOF.md) |
+| `PF2R7C3ALL1` | archived programme; proved | [Universal marked reciprocal-cubic contact exclusion for the full degree(6,10) gap family](../jacobian-followup/jc2-r7-reciprocal/PROOF.md) |
+| `PF2R7RAM2` | archived programme; proved | [Alternative second-ramified-image obstruction and complete three-row Euler budget](../jacobian-followup/jc2-r7-reciprocal/PROOF.md) |
+| `PF2R7ROW1` | archived programme; proved | [An additional contact-certificate proof excluding the entire single-ramified-prime r7 stratum](../jacobian-followup/jc2-r7-reciprocal/PROOF.md) |
+| `PF2R7INF1` | archived programme; proved | [Entire single-ramified-row r7 family: rank-eight pencil, balanced-infinity exclusion and three finality-free escapes](../jacobian-followup/jc2-r7-universal-contact/PROOF.md) |
+| `PF2R7PAR2` | archived programme; proved | [Universal gap21 polynomial contact obstruction, including all immersed degree(6,10) pairs](../jacobian-followup/jc2-r7-universal-contact/PROOF.md) |
+| `PF2R7QALL1` | archived programme; proved | [Universal quartic conic-contact exclusion for every birational degree(6,10) gap21 pair](../jacobian-followup/jc2-r7-universal-quartic/PROOF.md) |
+| `PF2R7QEX1` | archived programme; proved | [The entire single-ramified-row r7 quartic escape is excluded, leaving only an immersed reciprocal cubic with a double derivative root](../jacobian-followup/jc2-r7-universal-quartic/PROOF.md) |
+
+## Other source notes and navigation
+
+These documents are not canonical sources of a registered claim. They include workflows, bounded reports and unregistered work; their presence does not establish a theorem or an active campaign.
+
+- [Global boundary attachment: tame-node exclusion and the r7 missing-image gate](../jacobian-followup/jc2-boundary-attachment/README.md)
+- [F2 cusp contact and adapted-quintic filtration](../jacobian-followup/jc2-cusp-contact/README.md)
+- [Cusp-filtration rigidity adopted into the planar programme](../jacobian-followup/jc2-cusp-filtration-rigidity/README.md)
+- [Uniform rigidity for coprime cusp filtrations](../jacobian-followup/jc2-cusp-filtration-rigidity/sources/uniform-cusp-filtration.md)
+- [Draft: central inverse conductor accounting](../jacobian-followup/jc2-omitted-divisors/CENTRAL_INVERSE_CONDUCTOR.md)
+- [Remaining global input for omitted-divisor accounting](../jacobian-followup/jc2-omitted-divisors/INPUT_GATE.md)
+- [Complete omitted-divisor accounting](../jacobian-followup/jc2-omitted-divisors/README.md)
+- [Primary sources used at the central-fibre gate](../jacobian-followup/jc2-r7-central-fibre/LITERATURE.md)
+- [Central source fibres and forced infinity bifurcations](../jacobian-followup/jc2-r7-central-fibre/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-central-fibre/REVIEW.md)
+- [All affine singularity strata of the polynomial gap-21 family](../jacobian-followup/jc2-r7-collisions/README.md)
+- [At most92 first-image complement types and an explicit quintic contact pencil](../jacobian-followup/jc2-r7-complement/README.md)
+- [Author-side audit of the proper comparison and quintic gate](../jacobian-followup/jc2-r7-complement/REVIEW.md)
+- [Cubic conic-cover gates: one exclusion and one multiple-root restriction](../jacobian-followup/jc2-r7-cubic-cover/README.md)
+- [Elliptic contact34 families and explicit first-image models](../jacobian-followup/jc2-r7-elliptic-contact/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-elliptic-contact/REVIEW.md)
+- [Global Nori contact bound and corrected two-image genus budgets](../jacobian-followup/jc2-r7-global-cover/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-global-cover/REVIEW.md)
+- [The complete gap-21 image family has two rational coefficient components](../jacobian-followup/jc2-r7-image-family/README.md)
+- [Author-side proof obligations](../jacobian-followup/jc2-r7-image-family/REVIEW.md)
+- [The Laurent family completes the affine collision stratification](../jacobian-followup/jc2-r7-laurent-collisions/README.md)
+- [Author-side obligation audit](../jacobian-followup/jc2-r7-laurent-collisions/REVIEW.md)
+- [Both nonimmersed r7 classes excluded without source finality](../jacobian-followup/jc2-r7-quartic-contact/README.md)
+- [Author-side obligation audit](../jacobian-followup/jc2-r7-quartic-contact/REVIEW.md)
+- [Complete quintic cusp locus and the excess-one singleton exclusion](../jacobian-followup/jc2-r7-quintic-cusps/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-quintic-cusps/REVIEW.md)
+- [Quintic incidence: a finite cusp gate and a nonimmersed singleton exclusion](../jacobian-followup/jc2-r7-quintic-incidence/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-quintic-incidence/REVIEW.md)
+- [Seven high-contact polynomial quintics and exclusion of contact41](../jacobian-followup/jc2-r7-quintic-normalizations/README.md)
+- [Author-side audit](../jacobian-followup/jc2-r7-quintic-normalizations/REVIEW.md)
+- [The remaining reciprocal cubic case is excluded](../jacobian-followup/jc2-r7-reciprocal/README.md)
+- [Author-side obligation audit](../jacobian-followup/jc2-r7-reciprocal/REVIEW.md)
+- [The entire gap-21 family: contact obstruction and three infinity escapes](../jacobian-followup/jc2-r7-universal-contact/README.md)
+- [The entire r7 quartic-contact family is excluded](../jacobian-followup/jc2-r7-universal-quartic/README.md)
+- [Author-side audit of the universal quartic exclusion](../jacobian-followup/jc2-r7-universal-quartic/REVIEW.md)
