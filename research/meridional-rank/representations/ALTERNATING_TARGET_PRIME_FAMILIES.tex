@@ -1,0 +1,402 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\br}{\operatorname{br}}
+\newcommand{\bi}{\operatorname{bi}}
+\title{Prime braid families with sharp alternating-group meridional bounds}
+\author{Written proofs and exact literal certificates}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+For every integer $b\ge5$ we give infinitely many distinct prime knots
+with meridional rank, bridge number and braid index all equal to $b$.
+Their groups map onto $A_{2b}$, with meridians mapping to double
+transpositions. This target has ordinary generating rank two, whereas
+its specified meridian class has generating rank $b$. The construction
+uses explicit braid words, a uniform group-generation argument and the
+visual primeness theorem for homogeneous braids. The genus and minimal
+crossing number are computed exactly.
+
+\section{The knots and the conclusions}
+
+Put
+\begin{equation}\label{eq:beta}
+ \beta=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+        \sigma_2\sigma_1^2\sigma_2^3\sigma_3^{-1}\sigma_2^3\in B_4,
+\end{equation}
+and, for $b\ge5$, put
+\[
+ W_b=\beta\,\sigma_4^3\sigma_5^3\cdots\sigma_{b-1}^3\in B_b,
+ \qquad K_{b,n}=\widehat{W_b^n}.
+\]
+The braid convention is fixed by the signed literal PD certificate in
+Section~\ref{sec:literal}. Reversing the crossing convention gives the
+mirror, with the same stated invariants. Write $\br(K)$ for bridge
+number, $\bi(K)$ for braid index, and $c(K)$ for minimal crossing number.
+
+\begin{theorem}\label{thm:family}
+Let $b\ge5$, $n\ge2$ and $\gcd(n,b)=1$. Then $K_{b,n}$ is a prime knot and
+\[
+ \mr(K_{b,n})=\br(K_{b,n})=\bi(K_{b,n})=b,
+\]
+\[
+ g(K_{b,n})=\frac{n(3b+5)-b+1}{2},\qquad
+ c(K_{b,n})=n(3b+5).
+\]
+There is an epimorphism
+$\pi_1(S^3\setminus K_{b,n})\twoheadrightarrow A_{2b}$ taking every
+meridian to a double transposition. For each fixed $b$ these formulas
+give infinitely many distinct prime knots.
+\end{theorem}
+
+This theorem makes no assertion about the augmentation rank of these
+powers, or about absence of other kinds of quotients. It does not require
+a uniform hyperbolicity claim. The argument below also proves the
+four-strand variant and a separate connected-sum statement.
+
+\section{Ordinary rank and meridian-class rank}
+
+Permutations act on $\{0,\ldots,N-1\}$ and $pq$ means $p\circ q$.
+For a conjugacy class $C$ in a finite group $G$, its class generating rank
+is the least number of elements of $C$ that generate $G$.
+
+\begin{lemma}\label{lem:ordinary}
+For even $N\ge4$ the two permutations
+\[
+ a_N=(0\,1\,\cdots\,N-2),\qquad b_N=(0\,1\,N-1)
+\]
+generate $A_N$. Thus its ordinary generating rank is two.
+\end{lemma}
+\begin{proof}
+Both permutations are even. The conjugates of $b_N$ by powers of $a_N$
+are the three-cycles $(k\,k+1\,N-1)$, with the first two entries read
+cyclically among $0,\ldots,N-2$.
+For any connected graph on vertices other than a fixed vertex $u$, the
+three-cycles $(u\,i\,j)$ associated with its edges generate $A_N$.
+Indeed, conjugating $(u\,y\,z)$ by $(u\,x\,y)$ gives $(u\,z\,x)$.
+Edge completion along paths therefore gives all $(u\,i\,j)$. Moreover,
+\[
+ (u\,a\,b)(u\,b\,c)=(a\,b\,c),
+\]
+so the subgroup contains every three-cycle. Every even permutation is
+a product of three-cycles. This proves generation; the nonabelian group
+$A_N$ is not cyclic.
+\end{proof}
+
+Consider the following double transpositions on $2b$ points:
+\begin{equation}\label{eq:generators}
+\begin{aligned}
+ x_0&=(0\,1)(2\,3),& x_1&=(1\,4)(2\,3),\\
+ x_2&=(0\,5)(1\,6),& x_3&=(1\,2)(6\,7),\\
+ x_j&=(1\,2j)(6\,2j+1)&& (4\le j\le b-1).
+\end{aligned}
+\end{equation}
+
+\begin{theorem}\label{thm:targets}
+For every $b\ge4$ the tuple $(x_0,\ldots,x_{b-1})$ generates $A_{2b}$.
+The double transpositions form one $A_{2b}$ conjugacy class, of size
+$3\binom{2b}{4}$ and class generating rank exactly $b$.
+\end{theorem}
+\begin{proof}
+The base case has short directly checkable identities:
+\begin{align*}
+ x_3x_0x_1x_3x_0x_2x_0x_1x_2&=(0\,1\,2\,3\,4\,5\,6),\\
+ x_0x_3x_1x_2x_3x_1x_3x_2x_1x_3&=(0\,1\,7).
+\end{align*}
+Lemma~\ref{lem:ordinary} gives $A_8$.
+
+Here is the induction without enumerating any large group. Suppose the
+subgroup already contains $A_m$ on the old points, where $m\ge8$, and
+adjoin $z=(a\,u)(c\,v)$, with $a,c$ distinct old points and $u,v$ new.
+Conjugation by an even permutation of the old points fixing $c$ and
+sending $a$ to a different old point $d$ gives
+$z'=(d\,u)(c\,v)$. Then
+\[
+                         zz'=(a\,u\,d).
+\]
+Conjugating by $A_m$, which is transitive on ordered pairs of distinct
+old points, gives all three-cycles containing $u$ and two old points.
+Together with $A_m$ these generate $A_{m+1}$ on the old points and $u$.
+Now conjugate $z$ by an even permutation fixing $a,u$ and sending $c$
+to a different old point $e$. This gives $z''=(a\,u)(e\,v)$, and
+\[
+                         zz''=(c\,v\,e).
+\]
+The same argument gives $A_{m+2}$. All generators are even, so the group
+is exactly $A_{m+2}$. Taking $a=1,c=6,u=2j,v=2j+1$ proves the induction
+for~\eqref{eq:generators}. The required conjugators can, for example, be
+chosen as $(1\,0\,2)$ and $(6\,0\,2)$ respectively.
+
+There are $3\binom{2b}{4}$ double transpositions in $S_{2b}$. They are
+conjugate in $A_{2b}$ too: multiplying any odd conjugator by one
+transposition factor centralizing its source makes the conjugator even.
+For a family of $r$ double transpositions, draw their two transposition
+edges per generator. Each generator preserves every component of this
+graph. A transitive subgroup on $2b$ points therefore requires a
+connected graph, so $2r\ge2b-1$ and $r\ge b$. The displayed generating
+tuple realizes equality.
+\end{proof}
+
+The distinction between ordinary rank and class generating rank is a
+property of the finite target. Ordinary rank two of $A_{2b}$ is not a
+claim about the ordinary rank of the knot group.
+
+\section{The quotient and the sharp bridge bound}
+
+For involutions $u,v$, the braid coloring convention is
+\begin{equation}\label{eq:hurwitz}
+ \sigma_i:(u,v)\longmapsto(v,vuv),\qquad
+ \sigma_i^{-1}:(u,v)\longmapsto(uvu,u)
+\end{equation}
+on the two affected strands. These are inverse operations. They are
+exactly the two Wirtinger crossing rules for involutory images.
+
+\begin{lemma}\label{lem:closure}
+For every $b\ge4$, the braid $W_b$ returns the tuple
+$(x_0,\ldots,x_{b-1})$ to itself, with $W_4=\beta$. Its strand
+permutation is a $b$-cycle.
+\end{lemma}
+\begin{proof}
+Applying the seventeen signed letters of~\eqref{eq:beta} using
+\eqref{eq:hurwitz} returns the first four entries exactly. This is a
+finite identity of permutations on eight points; the supplement checks
+all seventeen steps, independently of topology software.
+For $j\ge4$, the product $x_{j-1}x_j$ is a product of two disjoint
+three-cycles. This is immediate for $x_3=(1\,2)(6\,7)$ and
+$x_4=(1\,8)(6\,9)$, and for the later pairs from their common factors
+at the points $1$ and $6$. Thus $(x_{j-1}x_j)^3=1$.
+For involutions $u,v$ with $(uv)^3=1$, the braid relation $uvu=vuv$
+shows directly that three applications of~\eqref{eq:hurwitz} return
+$(u,v)$. Consequently every appended $\sigma_j^3$ returns its affected
+pair, so $W_b$ returns the entire tuple.
+
+Ignoring signs, the seventeen letters of $\beta$ give a four-cycle on
+the strands. Appending $\sigma_j^3$ composes with the adjacent
+transposition inserting the new strand $j+1$ in that cycle. Induction
+gives a $b$-cycle. Its $n$th power has $\gcd(n,b)$ cycles, which count
+the components of the braid closure.
+\end{proof}
+
+\begin{proof}[Meridional and bridge assertions of Theorem~\ref{thm:family}]
+The returned tuple supplies consistent arc images for the closure of
+$W_b^n$. A braid crossing enforces a Wirtinger relation, and the return
+condition enforces every closing relation. Hence it defines a
+homomorphism of the actual knot group. Its image contains all $x_j$,
+so Theorem~\ref{thm:targets} proves surjectivity onto $A_{2b}$.
+All meridians map into the double-transposition class, including after
+inversion, since its elements are involutions. A meridional generating
+family must therefore have at least $b$ elements by that theorem.
+
+A closed $b$-braid has a bridge presentation with at most $b$ bridges:
+place one maximum on each closing arc and make the braid strands
+monotone between them and the corresponding minima. The elementary
+bridge presentation of the group is generated by these bridge
+meridians. Thus
+\[
+ b\le\mr(K_{b,n})\le\br(K_{b,n})\le\bi(K_{b,n})\le b.
+\]
+This proves all three equalities without inferring bridge number merely
+from a meridional generating set.
+\end{proof}
+
+\section{Primeness, genus and minimal crossings}
+
+A braid word is homogeneous if each generator occurs with only one
+sign. In our words $\sigma_1,\sigma_2$ are positive, $\sigma_3$ is
+negative, and every later generator is positive.
+For $2\le i\le b-1$, project a word to the letters
+$\sigma_{i-1}^{\pm1},\sigma_i^{\pm1}$. Its seesaw number $g_i$ is the
+number of maximal nonempty consecutive blocks with the same generator
+index. This is the \emph{linear} word definition in
+\cite[Section~5.2, printed p.~20]{flo}; the last and first blocks are not
+identified.
+
+\begin{lemma}\label{lem:seesaws}
+For $b\ge5$, $n\ge1$, the seesaw numbers of $W_b^n$ are
+\[
+ g_2=4n,\qquad g_3=6n+1,\qquad g_i=2n\quad(4\le i\le b-1).
+\]
+For $b=4$ the first two formulas hold.
+\end{lemma}
+\begin{proof}
+The projection of one copy to the indices $1,2$ is
+$\sigma_1\sigma_2^3\sigma_1^2\sigma_2^6$. Its four runs do not merge
+across copies. The projection to the indices $2,3$ is
+\[
+ \sigma_2\sigma_3^{-2}\sigma_2\sigma_3^{-2}
+ \sigma_2^4\sigma_3^{-1}\sigma_2^3.
+\]
+It has seven runs and both ends have index $2$, so exactly one run is
+lost at each of the $n-1$ joins. The indices $3,4$ give
+$\sigma_3^{-5}\sigma_4^3$; every later adjacent pair gives
+$\sigma_{i-1}^3\sigma_i^3$. These have two runs, with no merges across
+copies.
+\end{proof}
+
+\begin{proof}[Primeness assertion of Theorem~\ref{thm:family}]
+The closure is a knot by Lemma~\ref{lem:closure}. Feller--Lewark--Orbegozo
+Rodriguez prove that if the closure of a homogeneous braid is not prime,
+its displayed diagram has a decomposition circle giving a decomposition
+sphere \cite[Theorem~1.1, printed p.~1]{flo}.
+Their Lemma~5.1(i), printed p.~20, says that the braid diagram has a
+decomposition circle if and only if some seesaw number belongs to
+$\{2,3\}$. By Lemma~\ref{lem:seesaws} and $n\ge2$, all the seesaw
+numbers here are at least four. There is no decomposition circle, hence
+the knot is prime. Its positive genus below also excludes the unknot.
+\end{proof}
+
+\begin{proof}[Genus and crossing assertions of Theorem~\ref{thm:family}]
+The word $W_b^n$ has $n[17+3(b-4)]=n(3b+5)$ crossings. Its oriented
+smoothing has $b$ Seifert circles. Its canonical Seifert surface is
+connected, since every adjacent braid generator occurs. Its genus is
+therefore
+\[
+                  \frac{n(3b+5)-b+1}{2}.
+\]
+For a homogeneous braid closing to a knot, its diagram is homogeneous
+\cite[Lemma~2.2, printed p.~5]{abe}. Cromwell's minimal-genus theorem
+for homogeneous diagrams, stated in \cite[Theorem~2.3, same page]{abe},
+says that this canonical surface realizes the knot genus.
+
+Yamada's theorem \cite[Theorem~3, printed p.~347]{yamada} identifies the
+minimum number of Seifert circles over all diagrams with the braid
+index, already proved to be $b$. Any diagram $D$ of this knot has
+$g_D\ge g(K_{b,n})$ and at least $b$ Seifert circles. The Seifert
+algorithm identity consequently gives
+\[
+ c(D)=2g_D+s(D)-1\ge2g(K_{b,n})+b-1=n(3b+5).
+\]
+The displayed diagram attains equality. For fixed $b$, take
+$n=kb+1$ with $k\ge1$; the resulting crossing numbers strictly increase,
+so these are infinitely many distinct knots.
+\end{proof}
+
+\begin{corollary}\label{cor:four}
+For every odd positive $n$, the closure of $\beta^n$ is prime, with
+\[
+ \mr=\br=\bi=4,\qquad g=\frac{17n-3}{2},\qquad c=17n.
+\]
+It has the same meridian-class epimorphism onto $A_8$.
+\end{corollary}
+\begin{proof}
+The braid permutation is a four-cycle, so odd $n$ gives a knot. The
+group and genus arguments above apply unchanged. The only seesaw
+numbers are $4n$ and $6n+1$, both at least four even when $n=1$.
+The same visual-primeness argument applies.
+\end{proof}
+
+\section{A connected-sum corollary with simple targets}
+
+Let $K_*=\widehat\beta$ and let $3_1$ denote a trefoil of the chirality
+represented by the positive two-braid $\sigma_1^3$.
+
+\begin{corollary}\label{cor:sums}
+Let $K$ be any knot with a bridge presentation using at most four bridges
+and an epimorphism onto $A_8$ taking meridians to double transpositions.
+For every $s\ge0$, the knot $J_s=K\mathbin{\#}(\mathbin{\#}^{s}3_1)$
+has a meridian-class epimorphism onto $A_{8+2s}$ and
+\[
+                        \mr(J_s)=\br(J_s)=4+s.
+\]
+The target has ordinary generating rank two and double-transposition
+class generating rank $4+s$. In particular, this holds for $K=K_*$.
+\end{corollary}
+\begin{proof}
+Embed the given target as $A_8$ on the first eight points. Since its
+double transpositions form one conjugacy class, conjugate the
+homomorphism so that a selected meridian maps to $x_3$.
+A trefoil group has a two-meridian presentation
+$\langle a,b\mid aba=bab\rangle$. For two involutions $u,v$, the
+condition $(uv)^3=1$ implies $uvu=vuv$. Glue the meridian $a$ to the
+last chosen meridian of the preceding summand and map
+$(a,b)$ to $(x_{j-1},x_j)$, for $j=4,\ldots,3+s$.
+The connected-sum group is the amalgam over these meridians; the
+compatible homomorphisms therefore define a homomorphism to $A_{8+2s}$.
+The images generate that whole group by Theorem~\ref{thm:targets}.
+The class-rank bound gives $\mr(J_s)\ge4+s$. Joining bridge positions
+with at most four bridges for $K$ and two for each trefoil removes one bridge
+per join, giving $\br(J_s)\le4+s$. The elementary inequality
+$\mr\le\br$ proves equality. No statement about branched covers is a
+premise of this argument.
+\end{proof}
+
+The same braid gluing identifies $\widehat{W_b}$ with
+$K_*\mathbin{\#}(\mathbin{\#}^{b-4}3_1)$. Thus the power restriction
+$n\ge2$ in Theorem~\ref{thm:family} has content: at $n=1$ the later
+seesaws are two and the diagrams display these connected sums.
+
+\section{Literal control, replay and scope}\label{sec:literal}
+
+The supplement
+\path{alternating_target_prime_families_inputs.json} contains the signed
+literal braid, all forty PD rows and all forty arc permutations for
+$K_{5,2}$. It retains the five seed arcs and thirty-five successive
+Wirtinger coloring moves. Arcs are the components obtained by joining
+the two overpassing ports in each PD row, ordered lexicographically by
+their edge-label sets. For a PD row $(a,b,c,d)$ the overarc contains
+$b,d$, and the underarcs contain $a,c$. The signed relation is
+\[
+ p_c=p_b^{\epsilon}p_a p_b^{-\epsilon},\qquad\epsilon\in\{1,-1\};
+\]
+all recorded images are involutions, so both signs are checked by the
+same exact permutation identity. The signs and braid port wiring are
+retained separately to bind this certificate to the literal oriented
+braid, rather than only to an abstract tuple.
+
+The standard-library checker
+\path{verify_alternating_target_prime_families.py} verifies the two
+short base identities, every base braid step, the induction identities,
+the full signed PD and closure wiring, every Wirtinger relation, the
+five-seed trace, and exact adjacent-generator seesaws in finite controls.
+It checks the spherical rotation system and the one-component condition
+of the literal diagram. An optional topology replay reconstructs the
+forty-row PD directly from the five-braid using Spherogram. Corrupted
+base words, arc colors, PD wiring and extension generators are rejected,
+as are invalid theorem parameters. The replay hashes the three primary
+source PDFs cited below. These finite controls supplement the written
+proof of the uniform assertions; they are not a search over all $b,n$.
+
+There is a useful positive comparison control at $(b,n)=(5,2)$.
+On six points the transposition tuple
+\[
+ ((0\,1),(0\,2),(0\,3),(2\,4),(0\,5))
+\]
+also returns under $W_5^2$. Its edges form a connected tree, so it
+generates $S_6$. The checker screens all $216$ simultaneous-conjugacy
+orbits of transitive five-transposition tuples on six points; five
+orbits return. This establishes a symmetric quotient for this member,
+and supplies no absence claim for arbitrary Coxeter targets. Neither
+augmentation-rank values nor exclusions from every previously studied
+knot family are conclusions of this paper.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}
+\bibitem{flo}
+P.~Feller, L.~Lewark and M.~Orbegozo Rodriguez,
+\emph{Homogeneous braids are visually prime},
+Journal of Topology \textbf{18} (2025), e70040,
+\href{https://doi.org/10.1112/topo.70040}{doi:10.1112/topo.70040};
+\href{https://arxiv.org/abs/2408.15730}{arXiv:2408.15730v2},
+30 September 2025, Theorem~1.1 and Lemma~5.1(i).
+\bibitem{abe}
+T.~Abe, \emph{The Rasmussen invariant of a homogeneous knot},
+Proceedings of the American Mathematical Society \textbf{139} (2011),
+2647--2656; \href{https://arxiv.org/abs/1003.5392}{arXiv:1003.5392v1},
+Lemma~2.2 and Theorem~2.3 (Cromwell's minimal-genus theorem).
+\bibitem{yamada}
+S.~Yamada, \emph{The minimal number of Seifert circles equals the braid
+index of a link}, Inventiones Mathematicae \textbf{89} (1987), 347--356,
+\href{https://doi.org/10.1007/BF01389082}{doi:10.1007/BF01389082},
+Theorem~3.
+\end{thebibliography}
+\end{document}

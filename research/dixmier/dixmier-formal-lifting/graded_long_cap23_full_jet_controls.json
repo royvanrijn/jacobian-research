@@ -1,0 +1,222 @@
+{
+  "claim": "No graded canonical Long full scalar Weyl jet of spatial degree23 through commutator h5, with arbitrary parity",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Exact Fraction identities, bare modular minors, rational functionals and separate normal-PBW positive control"
+  },
+  "cap": 23,
+  "parity": "unrestricted",
+  "source_weights": [
+    -1,
+    1,
+    4,
+    2
+  ],
+  "h_weight": 3,
+  "h4": {
+    "unknown_counts": [
+      34,
+      54,
+      71,
+      47
+    ],
+    "unknowns": 206,
+    "rows": 1563,
+    "rank_Q": 205,
+    "minor_det_modp": 351788,
+    "functional_support": 196,
+    "necessary_relation": "a=544*c/27",
+    "complete_F3_particulars": 5,
+    "particular_nonzero_coefficients": 146,
+    "homogeneous": "w*K_R6",
+    "R3_S3_forced_zero": true
+  },
+  "h5": {
+    "unknown_counts": [
+      20,
+      34,
+      47,
+      29
+    ],
+    "unknowns": 130,
+    "rows": 1207,
+    "rank_Q": 130,
+    "minor_det_modp": 406976,
+    "functional_support": 103,
+    "all130columns_annihilated": true,
+    "parameter_order": [
+      "b",
+      "c",
+      "u",
+      "v",
+      "w"
+    ],
+    "rhs_monomials": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "constant_evaluation": "1",
+    "all_nonconstant_evaluations": "0",
+    "u_w_cancel_without_normalization": true,
+    "contradiction": "0=1 for every parameter point",
+    "Pi3_F1_F1_included": true
+  },
+  "coefficient_formula": "sum_{a+b+ell=N,ell odd} Pi^ell(Fa_i,Fb_j)/(2^(ell-1)*ell!)",
+  "rhs_indices_h4": [
+    [
+      1,
+      2,
+      1,
+      "1"
+    ],
+    [
+      2,
+      1,
+      1,
+      "1"
+    ],
+    [
+      0,
+      1,
+      3,
+      "1/24"
+    ],
+    [
+      1,
+      0,
+      3,
+      "1/24"
+    ]
+  ],
+  "rhs_indices_h5": [
+    [
+      1,
+      3,
+      1,
+      "1"
+    ],
+    [
+      2,
+      2,
+      1,
+      "1"
+    ],
+    [
+      3,
+      1,
+      1,
+      "1"
+    ],
+    [
+      0,
+      2,
+      3,
+      "1/24"
+    ],
+    [
+      1,
+      1,
+      3,
+      "1/24"
+    ],
+    [
+      2,
+      0,
+      3,
+      "1/24"
+    ],
+    [
+      0,
+      0,
+      5,
+      "1/1920"
+    ]
+  ],
+  "PBW_positive_control": {
+    "parameters_b_c_u_v_w": [
+      "-2",
+      "1",
+      "3",
+      "-1",
+      "2"
+    ],
+    "all_six_relations_through_h4": true,
+    "normal_operator_terms": [
+      2,
+      112,
+      373,
+      43
+    ],
+    "scope": "A finite convention/family control, not a universal certificate"
+  },
+  "invalid_controls": {
+    "corrupted_F3_particular_rejected": true,
+    "corrupted_h5_functional_rejected": true
+  },
+  "hashes": {
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "GRADED_LONG_CAP23_FULL_JET_OBSTRUCTION.md": "c727e33d745a7b8e5d8970a547ffed1b603d1b3b94b908365806fbc272d6cc45",
+    "graded_long_cap23_full_jet_witness.json": "34397ee118d48ed1c4e63f30595aad42dd695503c070e6dd47b803a89a4e4d02",
+    "ODD_GRADED_LONG_FIRST_JETS_AND_NORMALIZATION_GAP.md": "8d26c986131dc82105427470ee702acc24064a871cf518d0cc9e51382b0885e4",
+    "check_odd_graded_long_first_jets.py": "db92161213f733b12cdb125bf1489f7bd9e03818baa926e780b6e310c486b418",
+    "odd_graded_long_first_jets_witness.json": "3da41bf880cb502214e61551ac0764cce3fe93d0da719db47402faa84de131bb",
+    "GRADED_LONG_TAIL_RIGIDITY.md": "6d18ac748134b38fbdfe532e9cb95cbfb972c517c9b756bb49376253558a829a",
+    "check_graded_long_tail_rigidity.py": "1ec72653644e73ee43b6642de5f3a7bac34092992885ab58fd279a1d94fa20e6",
+    "graded_long_tail_rigidity_witness.json": "2bbc52f91d81823b5878f3cedd5f7b8671e890d0f730d024e001e33e4903f488",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete graded cap23 finite coefficient family with both parities, using the pinned complete odd h3 classification and homogeneous tail theorem. Exact h4 reduction and full F3 family, then universal h5 contradiction with all five parameters retained. No nongraded normalization, cap24 full-parity exclusion or DC1/DC2 theorem is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

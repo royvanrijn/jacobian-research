@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "scope": {
+    "exact_coupled_stage_all_indices": true,
+    "closed_eight_offset_window": true,
+    "integral_finite_difference_lattice": true,
+    "primitive_first_layer_obstruction": true,
+    "conditional_affine_saturation_criterion": true,
+    "uniform_saturation_certificate": false,
+    "all_index_gap_six_SFC": false,
+    "independent_section_vanishing": false,
+    "all_binomial_SFC": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "integral_inverse_Artin_Hasse_coefficients": 63,
+    "exact_residue_section_coefficient_identities": 2835,
+    "actual_descended_unit_seed_controls": 315,
+    "corrupted_affine_shift_rejected": 1,
+    "complete_offset_residue_window_states": 392,
+    "complete_physical_section_table_rows": 7,
+    "non_splitting_orbit_controls": 4,
+    "exact_finite_difference_lattice_coefficient_controls": 425,
+    "physical_binomial_first_digit_controls": 50,
+    "primitive_first_lattice_zero_controls": 8,
+    "corrupted_first_layer_relation_rejected": 1,
+    "formal_Laurent_divided_difference_identities": 15,
+    "affine_Laurent_unit_disk_controls": 5,
+    "nonaffine_false_injectivity_rejected": 1,
+    "pointwise_unit_column_operation_identity": 1,
+    "literal_actual_moment_bridge_coefficients": 84
+  },
+  "total_controls": 4207,
+  "physical_section_table": {
+    "0": [
+      0,
+      6
+    ],
+    "1": [
+      1
+    ],
+    "2": [
+      2
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      4
+    ],
+    "5": [
+      5
+    ],
+    "6": []
+  },
+  "source_sha256": {
+    "GAP_SIX_BOUNDARY_COUPLED_FROBENIUS.tex": "435c7a7ead7dc51a90a5c84c241ed8053c963d3fca0305c750944a3c8b09257c",
+    "gap_six_boundary_coupled_frobenius.py": "d59b5c21adf99c30548794ff2bf7fa6cadc0d530374513770e19852a4538f804",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c"
+  },
+  "exact_imports": {
+    "Artin_Hasse_closed_class": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex lem:artin-hasse-closure",
+    "all_conjugate_boundary_radius": "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex thm:radius",
+    "critical_rank_identity": "gap_three_hurwitz_structure.tex lem:critical-ideal; rational polynomial transfer"
+  },
+  "python": "3.12.3",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_boundary_coupled_frobenius.py"
+}

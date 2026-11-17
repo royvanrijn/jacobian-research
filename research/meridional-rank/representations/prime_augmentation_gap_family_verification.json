@@ -1,0 +1,507 @@
+{
+  "status": "PASS exact uniform prime augmentation-gap family certificates",
+  "family": {
+    "representatives": [
+      {
+        "n": 0,
+        "crossings": 17,
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "seesaws": [
+          4,
+          7
+        ]
+      },
+      {
+        "n": 1,
+        "crossings": 23,
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "seesaws": [
+          4,
+          7
+        ]
+      },
+      {
+        "n": 2,
+        "crossings": 29,
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "seesaws": [
+          4,
+          7
+        ]
+      },
+      {
+        "n": 3,
+        "crossings": 35,
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "seesaws": [
+          4,
+          7
+        ]
+      },
+      {
+        "n": 7,
+        "crossings": 59,
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "seesaws": [
+          4,
+          7
+        ]
+      }
+    ],
+    "uniform_step_even": true,
+    "terminal_run_unchanged": true
+  },
+  "A8": {
+    "full_image_order": 20160,
+    "meridian_cycle_type": "2^2 1^4",
+    "pair_product_order": 6,
+    "proper_periods_rejected": [
+      1,
+      2,
+      3
+    ],
+    "class_generating_rank": 4,
+    "uniform_return": "H^6 fixes prefix pair, so T^(3+6n)=T^3 there"
+  },
+  "H3": {
+    "uniform_prefix_pair_period": 3,
+    "added_step_multiple_of_period": true,
+    "positive_seed_replay": {
+      "literal_signed_relations": 17,
+      "root_norm": 4,
+      "seed_root_minor": "-4",
+      "connected_nonorthogonality_graph": true,
+      "complex_irreducible_dimension": 3,
+      "meridian_parameter": -1,
+      "explicit_signed_root_system_size": 30,
+      "faithful_signed_root_action": true,
+      "finite_image_order": 120,
+      "meridian_reflection_class_size": 15,
+      "attaining_class_generators": 3,
+      "class_pairs_checked": 105,
+      "largest_two_reflection_subgroup": 10,
+      "class_generating_rank": 3,
+      "ordinary_KCH_witness_only": true
+    }
+  },
+  "Alexander": {
+    "rank_one_power_identity": "N^2=-(1+t)N",
+    "cofactor_affine_in_s": true,
+    "B_equals_t_Pstar": true,
+    "t2_times_1_plus_t_A_plus_B_equals_P": true,
+    "uniform_formula": "Delta_n=(P+t^(6n+6)*Pstar)/(1+t)",
+    "universal_degree": "14+6n",
+    "universal_determinant": "117+366n",
+    "representatives": [
+      {
+        "n": 0,
+        "degree": 14,
+        "determinant": 117,
+        "coefficient_t4": 0
+      },
+      {
+        "n": 1,
+        "degree": 20,
+        "determinant": 483,
+        "coefficient_t4": 0
+      },
+      {
+        "n": 2,
+        "degree": 26,
+        "determinant": 849,
+        "coefficient_t4": 0
+      },
+      {
+        "n": 3,
+        "degree": 32,
+        "determinant": 1215,
+        "coefficient_t4": 0
+      },
+      {
+        "n": 7,
+        "degree": 56,
+        "determinant": 2679,
+        "coefficient_t4": 0
+      }
+    ]
+  },
+  "generic": {
+    "prefix_signed_label_tracking": [
+      1,
+      6,
+      16,
+      13
+    ],
+    "first_two_folds_exact_Laurent_replay": {
+      "first_fold_normalized_pair_coefficients": true,
+      "first_fold_rankone_identity_X_equals_A": true,
+      "arc11_group_braid_consequence": true,
+      "negative_Hurwitz_three_raw_pair_formulas": true,
+      "second_fold_outer_products_mod_xy_plus_mu": true,
+      "third_fold_group_product_identities": 3,
+      "allowed_formal_units": [
+        "mu",
+        "lambda",
+        "k"
+      ],
+      "inverse_one_minus_mu": false,
+      "evaluation_matrix_inverted": false,
+      "nonzero_and_independence_deductions": "Written lem:folds; not inferred from finite sampling."
+    },
+    "core_transfer": {
+      "fold_sources_bound_to_actual_signed_crossings": 9,
+      "necessary_new_core_rows": 8,
+      "old392_signed_core_bijection": true,
+      "global_sign": 1,
+      "old_standard_seed_arcs": [
+        0,
+        6,
+        12
+      ],
+      "old_seed_generation_steps": 5,
+      "root_and_covector_basis_transfer": "Both three-seed systems generate all8 pairs; separate span-dimension argument in lem:coretransfer.",
+      "imported_written_premise": {
+        "file": "GENERIC_KCH_EXTENSIONS.tex",
+        "label": "lem:cores",
+        "subcase": "392"
+      }
+    },
+    "all_tail_lengths": "product preservation gives DY=DB, hence Y=B",
+    "universal_quantifier": "Written induction, not representative sampling"
+  },
+  "Gram_lift": {
+    "symbolic_8D_form_inverse": true,
+    "form": "[[G,I],[I,0]]",
+    "inverse": "[[0,I],[I,-G]]",
+    "scope": "Normalized symmetric reflections, characteristic !=2; root-line signs and lifting Wirtinger relations are proved in text."
+  },
+  "trefoil_control": {
+    "meridian_parameter": -1,
+    "dimension": 2,
+    "braid_relation": true,
+    "generated_matrix_algebra_rank": 4
+  },
+  "corruptions_rejected": [
+    "tail_period_step",
+    "A8_meridian",
+    "Alexander_coefficient",
+    "seesaw_count",
+    "prefix_signed_label",
+    "positive_root"
+  ],
+  "optional_topology": {
+    "spherogram": "2.4.1",
+    "literal_braids": [
+      {
+        "n": 0,
+        "components": 1,
+        "crossings": 17,
+        "PD_sha256": "3a28b708a65cae4265aaaede8165df5bd6cc0171e267592026c721642d7233e9",
+        "DT": [
+          [
+            16,
+            -22,
+            -2,
+            28,
+            18,
+            24,
+            26,
+            34,
+            6,
+            30,
+            10,
+            -4,
+            12,
+            32,
+            8,
+            20,
+            14
+          ]
+        ]
+      },
+      {
+        "n": 1,
+        "components": 1,
+        "crossings": 23,
+        "PD_sha256": "1fd806a309ce7d0b853c176cc5193cd1b0194a1374d4d20e1921af70c604aeab",
+        "DT": [
+          [
+            22,
+            -28,
+            -2,
+            34,
+            24,
+            30,
+            32,
+            40,
+            42,
+            44,
+            46,
+            6,
+            36,
+            10,
+            -4,
+            12,
+            38,
+            8,
+            26,
+            14,
+            16,
+            18,
+            20
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "components": 1,
+        "crossings": 29,
+        "PD_sha256": "8daff4663bfd4a03549c7c80ecc2d8796662e000c86503629b38e3dd7f8d52f3",
+        "DT": [
+          [
+            28,
+            -34,
+            -2,
+            40,
+            30,
+            36,
+            38,
+            46,
+            48,
+            50,
+            52,
+            54,
+            56,
+            58,
+            6,
+            42,
+            10,
+            -4,
+            12,
+            44,
+            8,
+            32,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "components": 1,
+        "crossings": 35,
+        "PD_sha256": "b8c974f7817636c76ca24c29c58e8bc5693e05e2bc3e1badaf7ebbcdef47dc03",
+        "DT": [
+          [
+            34,
+            -40,
+            -2,
+            46,
+            36,
+            42,
+            44,
+            52,
+            54,
+            56,
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            6,
+            48,
+            10,
+            -4,
+            12,
+            50,
+            8,
+            38,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32
+          ]
+        ]
+      },
+      {
+        "n": 7,
+        "components": 1,
+        "crossings": 59,
+        "PD_sha256": "403a002fa4bbbd720f5e7b7ed15f0113df27fa202788bd99934de15570dfbc2c",
+        "DT": [
+          [
+            58,
+            -64,
+            -2,
+            70,
+            60,
+            66,
+            68,
+            76,
+            78,
+            80,
+            82,
+            84,
+            86,
+            88,
+            90,
+            92,
+            94,
+            96,
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112,
+            114,
+            116,
+            118,
+            6,
+            72,
+            10,
+            -4,
+            12,
+            74,
+            8,
+            62,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48,
+            50,
+            52,
+            54,
+            56
+          ]
+        ]
+      }
+    ]
+  },
+  "scope": {
+    "parameters": "all integers n>=0 by written induction and exact universal identities",
+    "mr_bridge": "4",
+    "genus": "7+3n",
+    "crossing": "17+6n",
+    "prime": true,
+    "complex_augmentation_rank": 3,
+    "finite_complex_reflection_class_maximum": 3,
+    "all_finite_or_infinite_Coxeter_class_bound_upper": 3,
+    "all_hyperbolic_claim": false,
+    "all_double_covers_nonGraph_claim": false
+  },
+  "input_sha256": {
+    "GENERIC_KCH_EXTENSIONS.tex": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+    "generic_kch_extensions_inputs.json": "b17c840534a1fcba4ed52d1b032fda942903f891c65fc7a070e3f29dcdcae0de",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+    "NEW_SEVENTEEN_GENERIC_KCH.tex": "ea2bb03438844ff8bcba129a616e1bd4bc8b7f258e2e60f65295b64093ca1e45",
+    "verify_new17_generic_kch.py": "75eeaf06e21543fde985173f152027cd0df2cf8f2c4197f85eb44cf29f142170",
+    "new17_generic_kch_inputs.json": "fc2e28c362974e6b2729272e44d3e36b9e8bef795a3956bf1d1e88249c7799a2",
+    "FINITE_COMPLEX_AUGMENTATION_DOMINATION.tex": "90fa27aadb04c9d3602a28702574358cf05c320499c3a5a35b7d1ee77a39801f",
+    "GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex": "4674c03f6d490396fe50fd8563c7b1777e619096c0f4d8b44ea0b61535358269",
+    "sources/feller-lewark-orbegozo-homogeneous-2408.15730v2.pdf": "ad1b9cc8817c848456008c560c9d2045ca95af11b736bced9aac5bb12a3504ff",
+    "sources/yamada-seifert-braid-1987.pdf": "2b1619367fa7ef93b316413d01c67f52c6c9f39095369809e3fa2383f54bbcc3",
+    "sources/davis-coxeter-groups-second-edition-2025.pdf": "617be601db21b79aa50f6ce551ea20f4409ec274817b86757168bc93f6554669",
+    "prime_augmentation_gap_family_inputs.json": "99531b9d7672d5a73bd00957449a0d9b9a2cebebd7c525082a451fc28734e60c",
+    "verify_prime_augmentation_gap_family.py": "26850bc6f936adcfbe062eff60a94dfb00c46c27eb205a7ec77985ce36030f34",
+    "PRIME_AUGMENTATION_GAP_FAMILY.tex": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed"
+  },
+  "python_version": "3.12.3",
+  "elapsed_seconds": 0.293,
+  "assurance": {
+    "formal_verification": false,
+    "external_specialist_review": false,
+    "internal_exact_replay": true,
+    "universal_proof": "Written pair-period induction, affine Laurent cofactor, product cancellation, and normalized symmetric Gram lift; source theorem imports retained separately."
+  },
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "contextual author-agent /root/prime_family_search",
+      "reviewed_note_sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "reviewed_pdf_sha256": "4214c214ae973ffa2f3863c84af0fdf079ef8876a78bda26c6b9b9894eb9c428",
+      "pages": 9,
+      "result": "Contextual proof and layout pass: all nine pages rendered and visually inspected; zero LaTeX warnings or overfull/underfull boxes. Formal Laurent identities and optional literal topology replay pass. This is not an isolated blind review.",
+      "blind_review": false,
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "isolated internal PDF-only agent prime_gap_family_pdf_review",
+      "reviewed_note_sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "reviewed_pdf_sha256": "4214c214ae973ffa2f3863c84af0fdf079ef8876a78bda26c6b9b9894eb9c428",
+      "pdf_path": "research/meridional-rank/representations/PRIME_AUGMENTATION_GAP_FAMILY.pdf",
+      "pages": 9,
+      "result": "Conditional no internal gap found. All9 pages read and visually reviewed; A8 generation and periods, exact affine Alexander cofactor identities, literal Fox T/H convention, all-field fold formulas without division by1-mu, all-tail product cancellation, finite30-root120-image/class15 positive, singular Gram lift/Coxeter scope, trefoil braid matrices and full2x2 algebra checked from printed literals.",
+      "blind_review": true,
+      "external_review": false,
+      "formal_verification": false,
+      "limits": "Only frozen PDF accessed. Cited392 core, FLO/Yamada, Cornwell, cover inequality, finite complex domination and Davis imports held conditional; external inputs/checker/source audits not accessed."
+    }
+  ],
+  "root_final_replay": {
+    "mode": "--topology",
+    "status": "PASS",
+    "parameters": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ],
+    "scope": "Same final frozen edition; exact universal identities and finite controls plus fresh Spherogram braid reconstructions. No whole-proof assurance inferred."
+  }
+}

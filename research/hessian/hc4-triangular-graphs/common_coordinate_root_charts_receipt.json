@@ -1,0 +1,1226 @@
+{
+  "claim": "COMMON-COORDINATE-WHOLE-ROOT-CHARTS",
+  "outcome": "PASS",
+  "check_count": 291,
+  "checks": [
+    {
+      "name": "raw cyclic cover equation at cusp r2",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r2 varu",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r2 varv",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r2 varz",
+      "passed": true
+    },
+    {
+      "name": "unit-root normalized derivative at chosen lift r2",
+      "passed": true
+    },
+    {
+      "name": "normalized equation eliminates regular base coordinate r2",
+      "passed": true
+    },
+    {
+      "name": "normalized chart maps into the RAW cover r2",
+      "passed": true
+    },
+    {
+      "name": "generic normalized root is z/f r2",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve can still be cuspidal r2",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve v derivative still vanishes r2",
+      "passed": true
+    },
+    {
+      "name": "unit-root fibre is reduced r2",
+      "passed": true
+    },
+    {
+      "name": "source simple branch raw equation is already smooth r2",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover equation at cusp r3",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r3 varu",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r3 varv",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r3 varz",
+      "passed": true
+    },
+    {
+      "name": "unit-root normalized derivative at chosen lift r3",
+      "passed": true
+    },
+    {
+      "name": "normalized equation eliminates regular base coordinate r3",
+      "passed": true
+    },
+    {
+      "name": "normalized chart maps into the RAW cover r3",
+      "passed": true
+    },
+    {
+      "name": "generic normalized root is z/f r3",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve can still be cuspidal r3",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve v derivative still vanishes r3",
+      "passed": true
+    },
+    {
+      "name": "unit-root fibre is reduced r3",
+      "passed": true
+    },
+    {
+      "name": "source simple branch raw equation is already smooth r3",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover equation at cusp r4",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r4 varu",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r4 varv",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r4 varz",
+      "passed": true
+    },
+    {
+      "name": "unit-root normalized derivative at chosen lift r4",
+      "passed": true
+    },
+    {
+      "name": "normalized equation eliminates regular base coordinate r4",
+      "passed": true
+    },
+    {
+      "name": "normalized chart maps into the RAW cover r4",
+      "passed": true
+    },
+    {
+      "name": "generic normalized root is z/f r4",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve can still be cuspidal r4",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve v derivative still vanishes r4",
+      "passed": true
+    },
+    {
+      "name": "unit-root fibre is reduced r4",
+      "passed": true
+    },
+    {
+      "name": "source simple branch raw equation is already smooth r4",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover equation at cusp r5",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r5 varu",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r5 varv",
+      "passed": true
+    },
+    {
+      "name": "raw cyclic cover is singular before normalization r5 varz",
+      "passed": true
+    },
+    {
+      "name": "unit-root normalized derivative at chosen lift r5",
+      "passed": true
+    },
+    {
+      "name": "normalized equation eliminates regular base coordinate r5",
+      "passed": true
+    },
+    {
+      "name": "normalized chart maps into the RAW cover r5",
+      "passed": true
+    },
+    {
+      "name": "generic normalized root is z/f r5",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve can still be cuspidal r5",
+      "passed": true
+    },
+    {
+      "name": "copied Cartier curve v derivative still vanishes r5",
+      "passed": true
+    },
+    {
+      "name": "unit-root fibre is reduced r5",
+      "passed": true
+    },
+    {
+      "name": "source simple branch raw equation is already smooth r5",
+      "passed": true
+    },
+    {
+      "name": "Cartier-complement localization z",
+      "passed": true
+    },
+    {
+      "name": "Cartier-complement localization z*(z - 1)",
+      "passed": true
+    },
+    {
+      "name": "Cartier-complement localization u*v",
+      "passed": true
+    },
+    {
+      "name": "Cartier-complement localization u*v*(u - v)",
+      "passed": true
+    },
+    {
+      "name": "one boundary copy remains r1",
+      "passed": true
+    },
+    {
+      "name": "whole source zero line separately removed r1",
+      "passed": true
+    },
+    {
+      "name": "one boundary copy remains r2",
+      "passed": true
+    },
+    {
+      "name": "whole source zero line separately removed r2",
+      "passed": true
+    },
+    {
+      "name": "one boundary copy remains r3",
+      "passed": true
+    },
+    {
+      "name": "whole source zero line separately removed r3",
+      "passed": true
+    },
+    {
+      "name": "one boundary copy remains r5",
+      "passed": true
+    },
+    {
+      "name": "whole source zero line separately removed r5",
+      "passed": true
+    },
+    {
+      "name": "root chart has constant pulled-back volume r1",
+      "passed": true
+    },
+    {
+      "name": "original lifted source translation on x r1",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian on source x r1",
+      "passed": true
+    },
+    {
+      "name": "source translation preserves y r1",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian contraction equals r dz r1",
+      "passed": true
+    },
+    {
+      "name": "whole original source translation action r1",
+      "passed": true
+    },
+    {
+      "name": "whole divided field action r1",
+      "passed": true
+    },
+    {
+      "name": "threshold shear is polynomial in whole chart r1",
+      "passed": true
+    },
+    {
+      "name": "threshold shear preserves the global slice r1",
+      "passed": true
+    },
+    {
+      "name": "threshold shear removes exactly high Laurent terms r1",
+      "passed": true
+    },
+    {
+      "name": "exact-volume principal part lacks logarithmic coefficient r1",
+      "passed": true
+    },
+    {
+      "name": "remaining principal part is nonzero r1",
+      "passed": true
+    },
+    {
+      "name": "remaining largest pole exceeds r r1",
+      "passed": true
+    },
+    {
+      "name": "zero-principal-part source zero curve agrees on punctured overlap r1",
+      "passed": true
+    },
+    {
+      "name": "root chart has constant pulled-back volume r2",
+      "passed": true
+    },
+    {
+      "name": "original lifted source translation on x r2",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian on source x r2",
+      "passed": true
+    },
+    {
+      "name": "source translation preserves y r2",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian contraction equals r dz r2",
+      "passed": true
+    },
+    {
+      "name": "whole original source translation action r2",
+      "passed": true
+    },
+    {
+      "name": "whole divided field action r2",
+      "passed": true
+    },
+    {
+      "name": "threshold shear is polynomial in whole chart r2",
+      "passed": true
+    },
+    {
+      "name": "threshold shear preserves the global slice r2",
+      "passed": true
+    },
+    {
+      "name": "threshold shear removes exactly high Laurent terms r2",
+      "passed": true
+    },
+    {
+      "name": "exact-volume principal part lacks logarithmic coefficient r2",
+      "passed": true
+    },
+    {
+      "name": "remaining principal part is nonzero r2",
+      "passed": true
+    },
+    {
+      "name": "remaining largest pole exceeds r r2",
+      "passed": true
+    },
+    {
+      "name": "zero-principal-part source zero curve agrees on punctured overlap r2",
+      "passed": true
+    },
+    {
+      "name": "root chart has constant pulled-back volume r3",
+      "passed": true
+    },
+    {
+      "name": "original lifted source translation on x r3",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian on source x r3",
+      "passed": true
+    },
+    {
+      "name": "source translation preserves y r3",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian contraction equals r dz r3",
+      "passed": true
+    },
+    {
+      "name": "whole original source translation action r3",
+      "passed": true
+    },
+    {
+      "name": "whole divided field action r3",
+      "passed": true
+    },
+    {
+      "name": "threshold shear is polynomial in whole chart r3",
+      "passed": true
+    },
+    {
+      "name": "threshold shear preserves the global slice r3",
+      "passed": true
+    },
+    {
+      "name": "threshold shear removes exactly high Laurent terms r3",
+      "passed": true
+    },
+    {
+      "name": "exact-volume principal part lacks logarithmic coefficient r3",
+      "passed": true
+    },
+    {
+      "name": "remaining principal part is nonzero r3",
+      "passed": true
+    },
+    {
+      "name": "remaining largest pole exceeds r r3",
+      "passed": true
+    },
+    {
+      "name": "zero-principal-part source zero curve agrees on punctured overlap r3",
+      "passed": true
+    },
+    {
+      "name": "root chart has constant pulled-back volume r4",
+      "passed": true
+    },
+    {
+      "name": "original lifted source translation on x r4",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian on source x r4",
+      "passed": true
+    },
+    {
+      "name": "source translation preserves y r4",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian contraction equals r dz r4",
+      "passed": true
+    },
+    {
+      "name": "whole original source translation action r4",
+      "passed": true
+    },
+    {
+      "name": "whole divided field action r4",
+      "passed": true
+    },
+    {
+      "name": "threshold shear is polynomial in whole chart r4",
+      "passed": true
+    },
+    {
+      "name": "threshold shear preserves the global slice r4",
+      "passed": true
+    },
+    {
+      "name": "threshold shear removes exactly high Laurent terms r4",
+      "passed": true
+    },
+    {
+      "name": "exact-volume principal part lacks logarithmic coefficient r4",
+      "passed": true
+    },
+    {
+      "name": "remaining principal part is nonzero r4",
+      "passed": true
+    },
+    {
+      "name": "remaining largest pole exceeds r r4",
+      "passed": true
+    },
+    {
+      "name": "zero-principal-part source zero curve agrees on punctured overlap r4",
+      "passed": true
+    },
+    {
+      "name": "root chart has constant pulled-back volume r5",
+      "passed": true
+    },
+    {
+      "name": "original lifted source translation on x r5",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian on source x r5",
+      "passed": true
+    },
+    {
+      "name": "source translation preserves y r5",
+      "passed": true
+    },
+    {
+      "name": "divided Hamiltonian contraction equals r dz r5",
+      "passed": true
+    },
+    {
+      "name": "whole original source translation action r5",
+      "passed": true
+    },
+    {
+      "name": "whole divided field action r5",
+      "passed": true
+    },
+    {
+      "name": "threshold shear is polynomial in whole chart r5",
+      "passed": true
+    },
+    {
+      "name": "threshold shear preserves the global slice r5",
+      "passed": true
+    },
+    {
+      "name": "threshold shear removes exactly high Laurent terms r5",
+      "passed": true
+    },
+    {
+      "name": "exact-volume principal part lacks logarithmic coefficient r5",
+      "passed": true
+    },
+    {
+      "name": "remaining principal part is nonzero r5",
+      "passed": true
+    },
+    {
+      "name": "remaining largest pole exceeds r r5",
+      "passed": true
+    },
+    {
+      "name": "zero-principal-part source zero curve agrees on punctured overlap r5",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r1 log0",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r1 log0",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r1 log0",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r1 log7",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r1 log7",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r1 log7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j-3",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j-2",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j-1",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j0",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j0",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r1 j2",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r2 log0",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r2 log0",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r2 log0",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r2 log7",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r2 log7",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r2 log7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j-4",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j-3",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j-2",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j-1",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j0",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r2 j2",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r3 log0",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r3 log0",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r3 log0",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r3 log7",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r3 log7",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r3 log7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j-5",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j-4",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j-3",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j-2",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j0",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r3 j2",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r5 log0",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r5 log0",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r5 log0",
+      "passed": true
+    },
+    {
+      "name": "two-form exactness on overlap r5 log7",
+      "passed": true
+    },
+    {
+      "name": "derivative of pulled-back polynomial has zero residue r5 log7",
+      "passed": true
+    },
+    {
+      "name": "shared primitive obstruction is precisely r*h_minus_r r5 log7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j-7",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j-6",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j-5",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j-4",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j0",
+      "passed": true
+    },
+    {
+      "name": "logarithmic exponent uniquely detected r5 j2",
+      "passed": true
+    },
+    {
+      "name": "last nonzero derivative is a scalar degree2",
+      "passed": true
+    },
+    {
+      "name": "curve slice derivative one degree2",
+      "passed": true
+    },
+    {
+      "name": "curve slice recovers parameter degree2",
+      "passed": true
+    },
+    {
+      "name": "finite Taylor gives whole polynomial curve ring degree2",
+      "passed": true
+    },
+    {
+      "name": "last nonzero derivative is a scalar degree3",
+      "passed": true
+    },
+    {
+      "name": "curve slice derivative one degree3",
+      "passed": true
+    },
+    {
+      "name": "curve slice recovers parameter degree3",
+      "passed": true
+    },
+    {
+      "name": "finite Taylor gives whole polynomial curve ring degree3",
+      "passed": true
+    },
+    {
+      "name": "last nonzero derivative is a scalar degree4",
+      "passed": true
+    },
+    {
+      "name": "curve slice derivative one degree4",
+      "passed": true
+    },
+    {
+      "name": "curve slice recovers parameter degree4",
+      "passed": true
+    },
+    {
+      "name": "finite Taylor gives whole polynomial curve ring degree4",
+      "passed": true
+    },
+    {
+      "name": "last nonzero derivative is a scalar degree6",
+      "passed": true
+    },
+    {
+      "name": "curve slice derivative one degree6",
+      "passed": true
+    },
+    {
+      "name": "curve slice recovers parameter degree6",
+      "passed": true
+    },
+    {
+      "name": "finite Taylor gives whole polynomial curve ring degree6",
+      "passed": true
+    },
+    {
+      "name": "a cusp subring is not stable under a nonzero normalization translation",
+      "passed": true
+    },
+    {
+      "name": "translation differentiates a cusp generator outside its cusp subring",
+      "passed": true
+    },
+    {
+      "name": "action-map inverse recovers group parameter",
+      "passed": true
+    },
+    {
+      "name": "action-map inverse recovers point coordinate",
+      "passed": true
+    },
+    {
+      "name": "inverse action-map recovers first point",
+      "passed": true
+    },
+    {
+      "name": "inverse action-map preserves base z",
+      "passed": true
+    },
+    {
+      "name": "action map has nonzero relative tangent",
+      "passed": true
+    },
+    {
+      "name": "whole chart action has additive group law",
+      "passed": true
+    },
+    {
+      "name": "whole affine control source satisfies equation p1",
+      "passed": true
+    },
+    {
+      "name": "source inverse on y-open p1",
+      "passed": true
+    },
+    {
+      "name": "source inverse on bminus1-open p1",
+      "passed": true
+    },
+    {
+      "name": "whole affine control is smooth p1",
+      "passed": true
+    },
+    {
+      "name": "whole boundary retained with free a p1",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart satisfies equation p1",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on b-open p1",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on y-open p1",
+      "passed": true
+    },
+    {
+      "name": "source/rootchart transition finite principal part p1",
+      "passed": true
+    },
+    {
+      "name": "unit volume in source coordinates p1",
+      "passed": true
+    },
+    {
+      "name": "unit volume in whole boundary chart p1",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian preserves equation p1",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian is nonzero on whole boundary p1",
+      "passed": true
+    },
+    {
+      "name": "rootchart source action is translation p1",
+      "passed": true
+    },
+    {
+      "name": "p1 shared primitive has forbidden logarithmic residue",
+      "passed": true
+    },
+    {
+      "name": "whole affine control source satisfies equation p2",
+      "passed": true
+    },
+    {
+      "name": "source inverse on y-open p2",
+      "passed": true
+    },
+    {
+      "name": "source inverse on bminus1-open p2",
+      "passed": true
+    },
+    {
+      "name": "whole affine control is smooth p2",
+      "passed": true
+    },
+    {
+      "name": "whole boundary retained with free a p2",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart satisfies equation p2",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on b-open p2",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on y-open p2",
+      "passed": true
+    },
+    {
+      "name": "source/rootchart transition finite principal part p2",
+      "passed": true
+    },
+    {
+      "name": "unit volume in source coordinates p2",
+      "passed": true
+    },
+    {
+      "name": "unit volume in whole boundary chart p2",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian preserves equation p2",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian is nonzero on whole boundary p2",
+      "passed": true
+    },
+    {
+      "name": "rootchart source action is translation p2",
+      "passed": true
+    },
+    {
+      "name": "exact primitive is polynomial in entire boundary chart p2",
+      "passed": true
+    },
+    {
+      "name": "exact primitive differentiates to unit volume p2",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula t coefficient p2",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula y coefficient p2",
+      "passed": true
+    },
+    {
+      "name": "nonlogarithmic principal part residue vanishes p2",
+      "passed": true
+    },
+    {
+      "name": "whole affine control source satisfies equation p3",
+      "passed": true
+    },
+    {
+      "name": "source inverse on y-open p3",
+      "passed": true
+    },
+    {
+      "name": "source inverse on bminus1-open p3",
+      "passed": true
+    },
+    {
+      "name": "whole affine control is smooth p3",
+      "passed": true
+    },
+    {
+      "name": "whole boundary retained with free a p3",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart satisfies equation p3",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on b-open p3",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on y-open p3",
+      "passed": true
+    },
+    {
+      "name": "source/rootchart transition finite principal part p3",
+      "passed": true
+    },
+    {
+      "name": "unit volume in source coordinates p3",
+      "passed": true
+    },
+    {
+      "name": "unit volume in whole boundary chart p3",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian preserves equation p3",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian is nonzero on whole boundary p3",
+      "passed": true
+    },
+    {
+      "name": "rootchart source action is translation p3",
+      "passed": true
+    },
+    {
+      "name": "exact primitive is polynomial in entire boundary chart p3",
+      "passed": true
+    },
+    {
+      "name": "exact primitive differentiates to unit volume p3",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula t coefficient p3",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula y coefficient p3",
+      "passed": true
+    },
+    {
+      "name": "nonlogarithmic principal part residue vanishes p3",
+      "passed": true
+    },
+    {
+      "name": "whole affine control source satisfies equation p5",
+      "passed": true
+    },
+    {
+      "name": "source inverse on y-open p5",
+      "passed": true
+    },
+    {
+      "name": "source inverse on bminus1-open p5",
+      "passed": true
+    },
+    {
+      "name": "whole affine control is smooth p5",
+      "passed": true
+    },
+    {
+      "name": "whole boundary retained with free a p5",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart satisfies equation p5",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on b-open p5",
+      "passed": true
+    },
+    {
+      "name": "whole boundary chart inverse on y-open p5",
+      "passed": true
+    },
+    {
+      "name": "source/rootchart transition finite principal part p5",
+      "passed": true
+    },
+    {
+      "name": "unit volume in source coordinates p5",
+      "passed": true
+    },
+    {
+      "name": "unit volume in whole boundary chart p5",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian preserves equation p5",
+      "passed": true
+    },
+    {
+      "name": "control Hamiltonian is nonzero on whole boundary p5",
+      "passed": true
+    },
+    {
+      "name": "rootchart source action is translation p5",
+      "passed": true
+    },
+    {
+      "name": "exact primitive is polynomial in entire boundary chart p5",
+      "passed": true
+    },
+    {
+      "name": "exact primitive differentiates to unit volume p5",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula t coefficient p5",
+      "passed": true
+    },
+    {
+      "name": "exact primitive chart formula y coefficient p5",
+      "passed": true
+    },
+    {
+      "name": "nonlogarithmic principal part residue vanishes p5",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: Existence of that coordinate",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: Normalize the finite cyclic cover",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: The RAW equation",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: restricted map W_j->M is etale EVERYWHERE",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: nonzero LND on ANY irreducible",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: stronger than freeness alone",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: H^1_fppf(A1,Ga)=H^1(A1,O)=0",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: coefficient at z^-r is then not forced",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: h_low is NONZERO",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: does not impose an upper",
+      "passed": true
+    },
+    {
+      "name": "written conditional proof retains: independently obtained coordinates",
+      "passed": true
+    },
+    {
+      "name": "cached primary exact pin sources/stacks-03DW-quasicoherent-fppf-comparison.html",
+      "passed": true
+    },
+    {
+      "name": "primary cached identity 03DW",
+      "passed": true
+    },
+    {
+      "name": "cached primary exact pin sources/stacks-01XB-affine-cohomology-vanishing.html",
+      "passed": true
+    },
+    {
+      "name": "primary cached identity 01XB",
+      "passed": true
+    },
+    {
+      "name": "primary comparison explicitly includes fppf",
+      "passed": true
+    },
+    {
+      "name": "primary vanishing is for quasi-coherent modules",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.3036161130294204,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6",
+  "checker_sha256": "d4551464ed9a83a313ac113a3273583340bde9aeece15af70346cd6c686c66f2",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8"
+    },
+    {
+      "path": "HAMILTONIAN_COMMON_COORDINATE_AND_ADDITIVE_COMPLETION.md",
+      "sha256": "35363abb607ed4ff1c268d0b0ccda05e2f6097f44f7a85669610ea6c248b55a6"
+    },
+    {
+      "path": "sources/common-coordinate-root-charts-source-audit.json",
+      "sha256": "ef7722eebb6d470e61a5511a3b6850995884f364968d92e58fd2457415053946"
+    }
+  ],
+  "primary_inputs": [
+    {
+      "path": "sources/stacks-03DW-quasicoherent-fppf-comparison.html",
+      "sha256": "8864b24543bf1df3829c69c0d9b7ee4df67451e9ab7fa5ea13f2e3dd54ad546a",
+      "url": "https://stacks.math.columbia.edu/tag/03DW",
+      "locator": "Displayed statement and proof, specifically comparison for the fppf topology and a quasi-coherent structure sheaf."
+    },
+    {
+      "path": "sources/stacks-01XB-affine-cohomology-vanishing.html",
+      "sha256": "34d0d805ea9f654c3fc7042c298232841e9e2afd8c57bb76d05e3adc8ed560a5",
+      "url": "https://stacks.math.columbia.edu/tag/01XB",
+      "locator": "Displayed statement and proof."
+    }
+  ],
+  "proved_scope": {
+    "GIVEN_regular_polynomial_source_coordinate_on_component_open": true,
+    "actual_canonical_entire_component_open_and_topology_used": true,
+    "coordinate_existence_proved": false,
+    "global_alignment_proved": false,
+    "normalized_cyclic_cover_smooth": true,
+    "raw_cyclic_cover_assumed_smooth": false,
+    "whole_boundary_algebraic_A1_forced": true,
+    "whole_affine_plane_root_charts": true,
+    "divided_field_regular_by_unit_Hamiltonian": true,
+    "single_orbit_smooth_fibres_prove_torsor": true,
+    "Laurent_shift_finite": true,
+    "same_component_volume_primitive_implies_h_minus_r_zero": true,
+    "post_shear_principal_part_nonzero": true,
+    "primitive_case_pole_order": "p>=r+1",
+    "any_upper_pole_or_target_degree_bound_proved": false,
+    "target_Ga_descent_or_unique_kernel_or_cyclic_deck_proved": false,
+    "HC4_or_JC2_proved": false
+  },
+  "assurance": "Internal conditional written proof and exact controls; no formal verification or external human review."
+}

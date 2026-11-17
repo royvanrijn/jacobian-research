@@ -1,0 +1,406 @@
+{
+  "base_short_word_multiplications_checked": 19,
+  "base_braid_letters_checked": 17,
+  "base_A8_generation": "two explicit words yield the ordinary generators in the written lemma",
+  "induction_identity_controls": [
+    {
+      "old_degree": 8,
+      "new_degree": 10,
+      "two_three_cycle_identities": true
+    },
+    {
+      "old_degree": 10,
+      "new_degree": 12,
+      "two_three_cycle_identities": true
+    },
+    {
+      "old_degree": 12,
+      "new_degree": 14,
+      "two_three_cycle_identities": true
+    },
+    {
+      "old_degree": 14,
+      "new_degree": 16,
+      "two_three_cycle_identities": true
+    }
+  ],
+  "finite_parameter_controls": [
+    {
+      "b": 4,
+      "n": 1,
+      "word_length": 17,
+      "linear_seesaws": [
+        4,
+        7
+      ],
+      "genus_from_written_homogeneous_theorem": 7,
+      "meridional_rank_from_written_proof": 4
+    },
+    {
+      "b": 4,
+      "n": 3,
+      "word_length": 51,
+      "linear_seesaws": [
+        12,
+        19
+      ],
+      "genus_from_written_homogeneous_theorem": 24,
+      "meridional_rank_from_written_proof": 4
+    },
+    {
+      "b": 5,
+      "n": 2,
+      "word_length": 40,
+      "linear_seesaws": [
+        8,
+        13,
+        4
+      ],
+      "genus_from_written_homogeneous_theorem": 18,
+      "meridional_rank_from_written_proof": 5
+    },
+    {
+      "b": 5,
+      "n": 3,
+      "word_length": 60,
+      "linear_seesaws": [
+        12,
+        19,
+        6
+      ],
+      "genus_from_written_homogeneous_theorem": 28,
+      "meridional_rank_from_written_proof": 5
+    },
+    {
+      "b": 6,
+      "n": 5,
+      "word_length": 115,
+      "linear_seesaws": [
+        20,
+        31,
+        10,
+        10
+      ],
+      "genus_from_written_homogeneous_theorem": 55,
+      "meridional_rank_from_written_proof": 6
+    },
+    {
+      "b": 7,
+      "n": 2,
+      "word_length": 52,
+      "linear_seesaws": [
+        8,
+        13,
+        4,
+        4,
+        4
+      ],
+      "genus_from_written_homogeneous_theorem": 23,
+      "meridional_rank_from_written_proof": 7
+    },
+    {
+      "b": 8,
+      "n": 3,
+      "word_length": 87,
+      "linear_seesaws": [
+        12,
+        19,
+        6,
+        6,
+        6,
+        6
+      ],
+      "genus_from_written_homogeneous_theorem": 40,
+      "meridional_rank_from_written_proof": 8
+    },
+    {
+      "b": 9,
+      "n": 2,
+      "word_length": 64,
+      "linear_seesaws": [
+        8,
+        13,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "genus_from_written_homogeneous_theorem": 28,
+      "meridional_rank_from_written_proof": 9
+    }
+  ],
+  "uniform_assertions_justification": "written group induction, braid insertion, seesaw formulas, and imported source theorems; finite controls are supporting checks",
+  "literal_b5_n2": {
+    "b": 5,
+    "n": 2,
+    "crossings": 40,
+    "pd_faces": 42,
+    "pd_euler_characteristic": 2,
+    "components": 1,
+    "signed_wirtinger_relations_checked": 40,
+    "arc_permutations_checked": 40,
+    "seed_arcs": [
+      5,
+      24,
+      32,
+      0,
+      19
+    ],
+    "seed_moves_checked": 35,
+    "full_alternating_target_order_from_written_generation_theorem": 1814400,
+    "target_order_not_obtained_by_large_group_enumeration": true
+  },
+  "finite_S6_control": {
+    "scope": "all transitive ordered five-transposition tuples on six points modulo simultaneous conjugacy",
+    "normalized_first_transposition_tuples": 10368,
+    "full_conjugacy_orbits": 216,
+    "returning_conjugacy_orbits": 5,
+    "returning_representatives": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "positive_witness": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "arbitrary_Coxeter_absence_claim": false
+  },
+  "negative_controls": [
+    {
+      "name": "corrupted short base generation word",
+      "rejected": true
+    },
+    {
+      "name": "corrupted literal PD edge multiplicity",
+      "rejected": true
+    },
+    {
+      "name": "single corrupted literal arc permutation",
+      "rejected": true
+    },
+    {
+      "name": "extension generator violating cubic return",
+      "rejected": true
+    },
+    {
+      "name": "extra unmatched signed base crossing",
+      "rejected": true
+    },
+    {
+      "name": "n=1 outside b>=5 prime-family domain",
+      "rejected": true
+    },
+    {
+      "name": "noncoprime power is not a knot",
+      "rejected": true
+    },
+    {
+      "name": "even four-braid power is not a knot",
+      "rejected": true
+    }
+  ],
+  "primary_sources": {
+    "flo2025": {
+      "path": "sources/feller-lewark-orbegozo-homogeneous-2408.15730v2.pdf",
+      "sha256": "ad1b9cc8817c848456008c560c9d2045ca95af11b736bced9aac5bb12a3504ff",
+      "scope": "Theorem 1.1 printed p.1; definition and Lemma 5.1(i) printed p.20; arXiv v2 30 September 2025",
+      "bytes": 731859
+    },
+    "abe2011": {
+      "path": "sources/abe-homogeneous-1003.5392v1.pdf",
+      "sha256": "4e050a66869555f91de8e6dbaa93c4c71d1cea93d346279b7b3f23fc0d934363",
+      "scope": "Lemma 2.2 and Theorem 2.3 printed p.5, crediting Cromwell",
+      "bytes": 267027
+    },
+    "yamada1987": {
+      "path": "sources/yamada-seifert-braid-1987.pdf",
+      "sha256": "2b1619367fa7ef93b316413d01c67f52c6c9f39095369809e3fa2383f54bbcc3",
+      "scope": "Theorem 3 printed p.347; proof printed p.355",
+      "bytes": 313750
+    }
+  },
+  "schema": "alternating-target-prime-families-verification-v1",
+  "status": "PASS",
+  "checked_at_utc": "2026-11-17T22:28:57.392558+00:00",
+  "review_boundaries": {
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "topology_replay": {
+    "status": "PASS",
+    "backend": "Spherogram",
+    "version": "2.4.1",
+    "fresh_literal_PD_and_DT_match": true,
+    "components": 1,
+    "named_census_lookup_used": false
+  },
+  "artifacts": {
+    "alternating_target_prime_families_inputs.json": {
+      "sha256": "26124b3261d4966e2d885d083272fbc39318dace82f1ddba29e29bf5beff4d0c",
+      "bytes": 21217
+    },
+    "verify_alternating_target_prime_families.py": {
+      "sha256": "cc79499e30b203eccfdd6453197071853a107dc5b2d4a159a2d94c4b45b63682",
+      "bytes": 18226
+    },
+    "ALTERNATING_TARGET_PRIME_FAMILIES.tex": {
+      "sha256": "76f6c14ef5decd9fdd799fa0dc7ce657412ae87dc17ba07d9e14685734c676e0",
+      "bytes": 17839
+    }
+  },
+  "pdf_artifact": {
+    "path": "/home/royvanrijn/src/jacobian-research/.scratch/mrc-a10/canonical-build/ALTERNATING_TARGET_PRIME_FAMILIES.pdf",
+    "sha256": "aa6be1bc5918f7c5b342c4e1f7d3cf609f3e97d211e5e4123418007abab23c6d",
+    "bytes": 204856
+  },
+  "internal_pdf_reviews": [
+    {
+      "kind": "author visual inspection of all rendered pages",
+      "independent": false,
+      "pdf_sha256": "aa6be1bc5918f7c5b342c4e1f7d3cf609f3e97d211e5e4123418007abab23c6d",
+      "pages": 6,
+      "render": "Poppler pdftoppm, 110 dpi PNG; every page inspected",
+      "result": "PASS: equations, margins, citations and attribution readable; no clipping, overfull boxes, missing references or blank pages",
+      "checked_at_utc": "2026-11-17T22:29:03.788293+00:00"
+    },
+    {
+      "reviewer": "isolated internal PDF-only agent alternating_family_pdf_review",
+      "reviewed_note_sha256": "76f6c14ef5decd9fdd799fa0dc7ce657412ae87dc17ba07d9e14685734c676e0",
+      "reviewed_pdf_sha256": "aa6be1bc5918f7c5b342c4e1f7d3cf609f3e97d211e5e4123418007abab23c6d",
+      "pages": 6,
+      "result": "No internal mathematical gap conditional on the three quoted primary theorems. All6 pages textually and visually read. Both base words,17 Hurwitz steps, induction identities, connected graph class bound, linear seesaws, domain/genus/crossing, and generalized sums checked from printed literals. Independent memory-only S6 enumeration confirmed216 orbits and5 returns.",
+      "blind_review": true,
+      "external_review": false,
+      "formal_verification": false,
+      "limits": "Only frozen PDF accessed. Quoted sources and external JSON/checker/PD artifacts not consulted; internal AI review is not external specialist or formal verification."
+    }
+  ]
+}

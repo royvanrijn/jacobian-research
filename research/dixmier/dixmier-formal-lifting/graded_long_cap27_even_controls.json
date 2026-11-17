@@ -1,0 +1,243 @@
+{
+  "claim": "No even graded canonical Long scalar full Weyl jet of common degree27 through h7",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction polynomial identities, bare modular determinants and separate normal PBW controls"
+  },
+  "cap": 27,
+  "parity": "even",
+  "h3": {
+    "unknowns": 488,
+    "rank_Q": 480,
+    "exact_independent_kernels": 8,
+    "minor_det_modp": 386834,
+    "compact_basis_transition_det_Q": "2371865841730356480",
+    "first_R2_deformations_included": true
+  },
+  "h5": {
+    "unknowns": 236,
+    "rank_Q": 235,
+    "minor_det_modp": 673174,
+    "rows": 1722,
+    "all_eight_first_parameters_retained": true,
+    "RHS_coefficients": 36,
+    "necessity_functional_supports": {
+      "k5_square": 196,
+      "k6_square": 43,
+      "k7_square": 195,
+      "linear": 195
+    },
+    "reduced_product_support": 180,
+    "field_classification": "k5=k6=k7=0;k2=-10*k4/3;k3*k4=0",
+    "scope": "Field-valued points, not an asserted nonreduced ideal equality",
+    "both_entire_F4_families_verified": true,
+    "full_kernel": "K_R9"
+  },
+  "h7": {
+    "unknowns": 91,
+    "component_counts": [
+      13,
+      24,
+      34,
+      20
+    ],
+    "rank_Q": 91,
+    "minor_det_modp": 604791,
+    "branches": {
+      "A": {
+        "F4_monomials": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "F4_nonzero_coefficients": 191,
+        "all_R4_components_zero": true,
+        "all_h5_coefficients_verified": true,
+        "h7_functional_support": 73,
+        "h7_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            0
+          ]
+        ],
+        "all_91_F6_columns_annihilated": true,
+        "h7_constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0",
+        "u_w_cancel_without_normalization": true,
+        "normal_PBW_positive_h5_point": {
+          "parameters_u_v_t_w": [
+            "2",
+            "-1",
+            "1",
+            "3"
+          ],
+          "all_six_relations": true,
+          "operator_terms": [
+            2,
+            119,
+            456,
+            44
+          ]
+        }
+      },
+      "B": {
+        "F4_monomials": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "F4_nonzero_coefficients": 109,
+        "all_R4_components_zero": true,
+        "all_h5_coefficients_verified": true,
+        "h7_functional_support": 73,
+        "h7_RHS_monomials": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "all_91_F6_columns_annihilated": true,
+        "h7_constant_evaluation": "1",
+        "all_nonconstant_evaluations": "0",
+        "u_w_cancel_without_normalization": true,
+        "normal_PBW_positive_h5_point": {
+          "parameters_u_v_t_w": [
+            "2",
+            "-1",
+            "1",
+            "3"
+          ],
+          "all_six_relations": true,
+          "operator_terms": [
+            2,
+            98,
+            455,
+            39
+          ]
+        }
+      }
+    },
+    "common_functional_support": 74,
+    "conclusion": "0=1 on both complete components for all retained parameters"
+  },
+  "invalid_controls": {
+    "corrupted_F4_particular_rejected": true,
+    "corrupted_branch_h7_functionals_rejected": true
+  },
+  "prime": 1000003,
+  "hashes": {
+    "GRADED_LONG_CAP27_EVEN_JET_OBSTRUCTION.md": "51865f25a266600e1e86701f727573394b5a3dbbb7f0c9e55bcef465c5c22490",
+    "check_graded_long_cap27_even.py": "b5163885cd3dca60d7e227fb7d50fa2aee8889e5383197671cfd9c913fca1295",
+    "graded_long_cap27_even_witness.json": "f160a221ef1f94eb7609e9ca0f7352bf4c3d613601b5567f5910d923cdf636e6",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete even graded scalar cap27 jet through h7; both field-valued h5 components and all later parameters retained; all first-image coefficients allowed. Positive h5 point included. No odd/nongraded/cap28/universal bounded-lift/DC1/DC2 theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

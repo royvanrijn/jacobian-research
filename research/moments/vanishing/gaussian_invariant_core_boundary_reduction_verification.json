@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "one_radial_phases": 4,
+  "original_marker_count": 7,
+  "one_radial_time_orders": [
+    0,
+    4
+  ],
+  "exact_boundary_controls": 140,
+  "strict_remainder_controls": 25,
+  "parameter_commutators": 4,
+  "two_radial_controls": 16,
+  "two_radial_time_orders": [
+    0,
+    3
+  ],
+  "scope": "Finite exact original-Wick and operator controls; unrestricted identities and finite-image consequences are the written proofs.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_INVARIANT_CORE_BOUNDARY_REDUCTION.md": "af83621c99fec04b27c48ee1e76d184052ea01ba8b79fb160c2aa1996f68174a",
+    "GAUSSIAN_RADIAL_ONE_SIDED_FINITE_IMAGES.md": "67d70bbf6bb2230d172eb5340ea3ab783cb16ac00afa9d1cc7e9c842d12ac178",
+    "GAUSSIAN_AFFINE_RADIAL_INVARIANT_CORE_FINITE_IMAGES.md": "80f51332276c2361b224a501ec595e8a592b05bf460a1bd5b5667c575571654b",
+    "GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "GAUSSIAN_W_AFFINE_ARBITRARY_FIBRE_FINITE_IMAGES.md": "1bf8077114c6453744cf2d318f4a45156873995223f02037b739799784394385",
+    "GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "verify_gaussian_invariant_core_boundary_reduction.py": "c4a98441d6b3c73001a23cbf5ebbe93fb35e4ab8aa018bdccbfe8c38e50443b2"
+  }
+}

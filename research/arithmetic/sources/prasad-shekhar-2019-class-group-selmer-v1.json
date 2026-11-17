@@ -1,0 +1,38 @@
+{
+  "title": "Relating Tate-Shafarevich group of an elliptic curve with class group",
+  "authors": "Dipendra Prasad and Sudhanshu Shekhar",
+  "version": "arXiv:1912.12928v1, submitted December 30, 2019; internal manuscript date January 1, 2020. This retained version is not the later Pacific Journal of Mathematics 312 (2021), 203-218 publication.",
+  "primary_url": "https://arxiv.org/pdf/1912.12928v1",
+  "pdf_pages": 13,
+  "used_locators": [
+    {
+      "locator": "Equation (3.1), Lemma 3.2 and Lemma 3.3",
+      "printed_pages": "6",
+      "pdf_pages": "6",
+      "scope": "Ordinary local representation and vanishing of group cohomology under a nontrivial central scalar. The new note proves the central-minus-identity case directly."
+    },
+    {
+      "locator": "Section 4, proof of Theorem 4.1, good-residue-prime inertia calculation",
+      "printed_pages": "11",
+      "pdf_pages": "11",
+      "scope": "H^1 of the good-residue-prime inertia image with E[p] coefficients vanishes. The new note gives the ordinary finite-group calculation and uses the stated supersingular prime-to-p inertia input; it does not import the full theorem or its other hypotheses."
+    },
+    {
+      "locator": "Section 4, Lemma 4.1 proof",
+      "printed_pages": "9",
+      "pdf_pages": "9",
+      "scope": "Local unramified cohomology at the residue prime; the new note uses its own nonanomalous argument and does not import the whole lemma with altered hypotheses."
+    }
+  ],
+  "rendered_pages_visually_inspected": [
+    6,
+    9,
+    11
+  ],
+  "role": "Precisely scoped primary local-representation/cohomology interface; no quoted class-group upper bound or statistical theorem is imported.",
+  "retained_pdf": "prasad-shekhar-2019-class-group-selmer-v1.pdf",
+  "sha256": "6b10da6a414b74fcea0557f847da508eb3a9be6b20a6e8f581f5d8c5faf9af42",
+  "bytes": 198005,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true
+}

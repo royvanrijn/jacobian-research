@@ -1,0 +1,96 @@
+{
+  "purpose": "Scoped primary-source audit of a claimed DC1 proof; retain the root-count and conditional Laurent lemmas and a precise one-root normalization countercontrol without adopting or refuting the main theorem.",
+  "primary_source": {
+    "author": "Alexander Zheglov",
+    "title": "The Conjecture of Dixmier for the first Weyl algebra is true",
+    "arxiv": "2410.06959v5",
+    "version_date": "2026-01-19",
+    "primary_html": "https://arxiv.org/html/2410.06959v5",
+    "primary_pdf": "https://arxiv.org/pdf/2410.06959v5",
+    "retrieved_utc_date": "2026-11-17",
+    "cached_file": "sources/zheglov-2410.06959v5.pdf",
+    "bytes": 958288,
+    "pages": 78,
+    "sha256": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3",
+    "exact_locations": [
+      "Theorem 4.1, printed page 30: head-chopping termination and order alignment.",
+      "Lemma 4.3, statement printed page 35 and proof pages 36-37: necessary polynomial-ODE degree condition.",
+      "Theorem 4.2, printed pages 44-49: subrectangular shape under head chopping.",
+      "Theorem 5.1, printed page 54 and following: tail cutting and rank-one commuting differential operators.",
+      "Section 6.2, printed page 69 and following: auxiliary-N coefficient comparison.",
+      "Lemma 6.3, printed pages 70-71: claimed N-independence and displayed coefficient indices.",
+      "Lemma 6.4 and final Step 7, printed pages 74-75: direct calculation and final N-dependence.",
+      "Theorem4.2 Case2b printed46/49 and Lemma6.1 printed64: one-root homogeneous branch and simultaneous centering."
+    ],
+    "inspection": "Internal AI-assisted primary HTML reading and local pypdf extraction of the cached exact PDF. This is not an independent whole-proof verification.",
+    "adoption_status": "Main DC1 theorem unverified and not adopted as a dependency.",
+    "actual_import": [],
+    "remaining_audit_dependencies": [
+      "All-stage Newton-shape and order-alignment arguments in Theorems 4.1 and 4.2.",
+      "Generalized-normal-form to ordinary-differential-operator correspondence in Theorem 5.1 and its invoked Schur/Sato results.",
+      "Supply the explicit shared-head, final-order, trace and exceptional missing-head hypotheses of the independent conditional Laurent-invariance lemma for every hypothetical DC pair. Its gap dichotomy follows from those order/integrality hypotheses.",
+      "Existence and compatibility of the required Schur/auxiliary conjugations and rank-one commuting curve with the asserted Puiseux branches.",
+      "Prove that an additional condition of the actual simultaneous Weyl pair/normal forms eliminates C, or repair the induction and terminal-edge transport while retaining it."
+    ],
+    "indexing_resolution": "With D=d2*N+l2, the consistent compressed formula is c[n,D*j]=c[d2*j], or raw formula c[n,(D/d2)*i]=c[i] on the relevant divisible indices. Thresholds use the same convention. An independent conditional Laurent proof bypasses the ambiguous displayed source formula; no fatal gap or whole-proof verification is claimed.",
+    "conditional_step_verified": "All prefix distinguished coefficients are independent of N under the exact head, final-order, trace and exceptional normalization hypotheses stated in CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md. The gap dichotomy follows from integrality; the complete exceptional resonance is proved. Earlier constructions supplying those hypotheses remain unverified."
+  },
+  "later_primary_assessment": {
+    "authors": [
+      "Alexey Kanel-Belov",
+      "Timofey Fedorov"
+    ],
+    "title": "The generalized Dixmier conjecture and the two-dimensional Jacobian conjecture",
+    "arxiv": "2610.33919v1",
+    "version_date": "2026-10-24",
+    "primary_url": "https://arxiv.org/html/2610.33919v1",
+    "exact_location": "Section 1.1, paragraph listing the remaining JC2/DC1/DC2 questions.",
+    "scope": "The authors say they have not been able to fully understand Zheglov's proof. This is their assessment, not a mathematical refutation or an external review of this audit."
+  },
+  "proof": {
+    "file": "ZHEGLOV_DC1_PRIMARY_SOURCE_AUDIT.md",
+    "sha256": "ccf1ff4d27c0ba8d2be3bea25c5eea5eeae6efc03150c0313c2940dbab157a5c"
+  },
+  "independent_result": {
+    "statement": "For c*g^A=g*H'-(A-1+1/d)*g'*H with c nonzero, characteristic zero, and g of degree ell with s>=2 distinct roots, g^(A-1)*rad(g) divides H, deg(H)=(A-1+1/d)*ell, d divides ell, and ell/d>=s.",
+    "evidence": "Complete written root-valuation and infinity-degree proof, independent of the paper's formal normal-form framework.",
+    "sharp_control": "For d>=2 and A>=1, g=x^(d+1)*(x-1)^(d-1), H=d*g^(A-1)*x*(x-1), c=1 satisfy the equation and ell/d=s=2.",
+    "finite_controls": "Exact symbolic substitution checked for d=2,3,4 and A=1,2,3; the written substitution proves the entire displayed control family.",
+    "scope": "Necessary polynomial-ODE condition only; no DC1, finite Weyl mate, or global lifting conclusion."
+  },
+  "conditional_invariance_result": {
+    "file": "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md",
+    "sha256": "a70ef55803377e55d7172cf94281f7eb1a9a4f9d49164fd90f6d573cef9a33a0",
+    "statement": "For a fixed pth-power chopping chain with all intermediate heads on a common D-lattice, zero trace coefficient, prescribed final order and the exceptional missing-head normalization when applicable, every prefix distinguished Laurent coefficient is independent of N. The last gap is automatically>N+1 except for C=1,d0=2,l0=1, when it is N; boundaryN+1 is impossible.",
+    "proof": "Compressed backward binomial head root; exact derivative coefficient; nonlinear-order induction; complete exceptional quadratic-term cancellation; separate cyclic-vector trace, filtered tail and Puiseux trace lemmas with explicit assumptions.",
+    "nonresonant_control": "p=4,q0=6,q1=22,d0=2,l0=1 gives final distinguished coefficient -231/512 and prefix -231/2048 for N=3,5,9.",
+    "resonant_control": "p=4,q0=6,q1=16 gives final head-minus-one16v and distinguished192v; v=0 removes the dangerous term. Nonzero v are deliberate controls violating the normalization hypothesis.",
+    "scope": "Conditional scalar commutative Laurent lemma. No assertion that earlier primary constructions supply all hypotheses; no DC-pair existence, integer-polynomial dependence or main DC1 adoption."
+  },
+  "checker": {
+    "file": "check_conditional_laurent_invariance.py",
+    "sha256": "70abeb7ddd9d1d8d2d8750ef57d6bc691b95a2e4333cb8da5ae108e83a20cc8d",
+    "receipt": "conditional_laurent_invariance_controls.json",
+    "receipt_sha256": "23ddf69589c917420f45e555aecddd19cf4db663ee3872b390351ff830ace19f"
+  },
+  "checker_scope": "Independent Fraction Laurent finite controls and cyclic-vector sums. The all-N claim follows from the written proof, not finite extrapolation. The local polynomial-ODE lemma has a complete written proof and sharp symbolic family.",
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_priority_claim": false,
+  "one_root_branch_control": {
+    "file": "ONE_ROOT_CHOPPING_ODE_HOMOGENEOUS_BRANCH.md",
+    "sha256": "6bbd38c80bc7ae4a390990efabd59de064b67f0388da0cbcedc046c0e8b05b04",
+    "checker": "check_one_root_chopping_ode.py",
+    "checker_sha256": "cd9771a576d52409b279a9c83c02548b70966b93f562f37cd04cda4d57bdebdd",
+    "receipt": "one_root_chopping_ode_controls.json",
+    "receipt_sha256": "f833ffd3718a8a22a8652d29af407cbb3e617bdefcb17d94bad24f4512dccf43",
+    "source_locations": [
+      "Theorem4.2, printed44-49",
+      "Lemma6.1, printed64"
+    ],
+    "proved_local_statement": "The complete one-root polynomial ODE solution includes C*u^(d*beta+d/l) when l divides d. An exact two-stage coefficient recursion and both ODEs retain C and fit the displayed numerical order/gcd/distance data. For the l2,d4 example the simultaneous-centering difference is 3/(92*C), nonzero for C!=0.",
+    "remaining_obligation": "Prove that an additional condition of the actual simultaneous Weyl pair/normal forms eliminates C, or repair the induction and terminal-edge transport while retaining it.",
+    "boundary": "No initial simultaneous Weyl pair or first chop is realized by these local controls; no theorem or main-proof refutation is asserted."
+  }
+}

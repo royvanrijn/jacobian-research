@@ -1,0 +1,1299 @@
+{
+  "claim": "Intermediate source algebra and given-replica fibre coverage",
+  "outcome": "PASS",
+  "check_count": 312,
+  "checks": [
+    {
+      "name": "descent cocycle degree2 power0",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power1",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power6",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power7",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power8",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power9",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power10",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power11",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power12",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power13",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree2 power14",
+      "passed": true
+    },
+    {
+      "name": "normalization finite generator polynomial degree2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power0",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power1",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power6",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power7",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power8",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power9",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power10",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power11",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power12",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power13",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree3 power14",
+      "passed": true
+    },
+    {
+      "name": "normalization finite generator polynomial degree3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power0",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power1",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power6",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power7",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power8",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power9",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power10",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power11",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power12",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power13",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree4 power14",
+      "passed": true
+    },
+    {
+      "name": "normalization finite generator polynomial degree4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power0",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power1",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power6",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power7",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power8",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power9",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power10",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power11",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power12",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power13",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree5 power14",
+      "passed": true
+    },
+    {
+      "name": "normalization finite generator polynomial degree5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power0",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power1",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power2",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power3",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power4",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power5",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power6",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power7",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power8",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power9",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power10",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power11",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power12",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power13",
+      "passed": true
+    },
+    {
+      "name": "descent cocycle degree6 power14",
+      "passed": true
+    },
+    {
+      "name": "normalization finite generator polynomial degree6",
+      "passed": true
+    },
+    {
+      "name": "point gap has codimension two",
+      "passed": true
+    },
+    {
+      "name": "curve gap is height one and must be removed first",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-2j-2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-2j-1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-2j0",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-2j1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-2j2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-1j-2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-1j-1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-1j0",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-1j1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i-1j2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i0j-2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i0j-1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i0j0",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i0j1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i0j2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i1j-2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i1j-1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i1j0",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i1j1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i1j2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i2j-2",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i2j-1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i2j0",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i2j1",
+      "passed": true
+    },
+    {
+      "name": "punctured-plane Laurent intersection i2j2",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement equation for x",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement equation for x*y",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement equation for x**2 + y**2 + 1",
+      "passed": true
+    },
+    {
+      "name": "given source replica admits rational slice",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree5",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at5",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree4",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at4",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree3",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at3",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree2",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at2",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree1",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at1",
+      "passed": true
+    },
+    {
+      "name": "slice coefficient invariant degree0",
+      "passed": true
+    },
+    {
+      "name": "slice degree decreases at0",
+      "passed": true
+    },
+    {
+      "name": "slice finite reconstruction",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree1 exponent1",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree1 exponent1",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree1 exponent2",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree1 exponent2",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree1 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree1 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree2 exponent2",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree2 exponent2",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree2 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree2 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree2 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree2 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree3 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree3 exponent3",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree3 exponent4",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree3 exponent4",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree3 exponent7",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree3 exponent7",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree4 exponent4",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree4 exponent4",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree4 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree4 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree4 exponent9",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree4 exponent9",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree5 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree5 exponent5",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree5 exponent6",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree5 exponent6",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree5 exponent11",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree5 exponent11",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree6 exponent6",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree6 exponent6",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree6 exponent7",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree6 exponent7",
+      "passed": true
+    },
+    {
+      "name": "finite line-module remainder degree6 exponent13",
+      "passed": true
+    },
+    {
+      "name": "finite line-module evaluation degree6 exponent13",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree1",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree2",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree3",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree4",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree5",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree6",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus1 degree7",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree1",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree2",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree3",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree4",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree5",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree6",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus2 degree7",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree1",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree2",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree3",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree4",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree5",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree6",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus3 degree7",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree1",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree2",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree3",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree4",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree5",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree6",
+      "passed": true
+    },
+    {
+      "name": "RH excludes positive genus4 degree7",
+      "passed": true
+    },
+    {
+      "name": "finite normalization of affine curve leaves exactly one infinity",
+      "passed": true
+    },
+    {
+      "name": "quadratic source model lies on hypersurface",
+      "passed": true
+    },
+    {
+      "name": "quadratic model smooth at the only possible u0 w0 candidate",
+      "passed": true
+    },
+    {
+      "name": "model has invariant polynomial h=y squared",
+      "passed": true
+    },
+    {
+      "name": "replica preserves u",
+      "passed": true
+    },
+    {
+      "name": "replica preserves w with invariant coefficient",
+      "passed": true
+    },
+    {
+      "name": "replica preserves z",
+      "passed": true
+    },
+    {
+      "name": "coordinate-ring replica respects relation",
+      "passed": true
+    },
+    {
+      "name": "localized intermediate slice is genuine",
+      "passed": true
+    },
+    {
+      "name": "source map full rank away from y0",
+      "passed": true
+    },
+    {
+      "name": "source map full rank on y0",
+      "passed": true
+    },
+    {
+      "name": "central line maps isomorphically",
+      "passed": true
+    },
+    {
+      "name": "noncentral source line isomorphism inverse",
+      "passed": true
+    },
+    {
+      "name": "noncentral image reaches arbitrary fibre point",
+      "passed": true
+    },
+    {
+      "name": "central transverse multiplicity identity",
+      "passed": true
+    },
+    {
+      "name": "central unit does not vanish",
+      "passed": true
+    },
+    {
+      "name": "central multiplicity ledger",
+      "passed": true
+    },
+    {
+      "name": "noncentral multiplicity ledger",
+      "passed": true
+    },
+    {
+      "name": "central original scheme fibre is nonreduced",
+      "passed": true
+    },
+    {
+      "name": "central fibre ideal is exactly u,w squared",
+      "passed": true
+    },
+    {
+      "name": "central reduction has no relation in affine parameter z",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree1 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree2 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree3 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree4 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree5 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree6 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree7 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree8 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree9 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree10 chi4",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi-3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi-2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi-1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi0",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi1",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi2",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi3",
+      "passed": true
+    },
+    {
+      "name": "finite etale line Euler degree11 chi4",
+      "passed": true
+    },
+    {
+      "name": "root multiplicity sum for y**2",
+      "passed": true
+    },
+    {
+      "name": "root multiplicity sum for (y - 1)**3",
+      "passed": true
+    },
+    {
+      "name": "root multiplicity sum for (y**2 - 1)**2",
+      "passed": true
+    },
+    {
+      "name": "root multiplicity sum for (y - 1)**2*(y + 2)**3",
+      "passed": true
+    },
+    {
+      "name": "root multiplicity sum for y**3 - y",
+      "passed": true
+    },
+    {
+      "name": "etale transverse multiplicity e1",
+      "passed": true
+    },
+    {
+      "name": "etale transverse multiplicity e2",
+      "passed": true
+    },
+    {
+      "name": "etale transverse multiplicity e3",
+      "passed": true
+    },
+    {
+      "name": "etale transverse multiplicity e4",
+      "passed": true
+    },
+    {
+      "name": "etale transverse multiplicity e5",
+      "passed": true
+    },
+    {
+      "name": "branched line map derivative",
+      "passed": true
+    },
+    {
+      "name": "branched quadratic line map fails etaleness at origin",
+      "passed": true
+    },
+    {
+      "name": "nonstable quadratic subfield guard",
+      "passed": true
+    },
+    {
+      "name": "cached primary exists stacks-023Q-fpqc-effective-epimorphism.html",
+      "passed": true
+    },
+    {
+      "name": "cached primary exists stacks-0C1B-riemann-hurwitz.html",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof": "INTERMEDIATE_SOURCE_ALGEBRA_AND_REPLICA_FIBRE_COVERAGE.md",
+  "proof_sha256": "4a6624598c55c19d5b49d11cb21e48310267093f3b2f40513d790eba879b0387",
+  "checker": "verify_intermediate_source_algebra.py",
+  "checker_sha256": "a6c275232d654207dcbf28c45dadbaa179caeb64d2ceb0fdce4e71ebfb16ce9c",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
+      "sha256": "afd954e519a8d78b80ce20abc391a060f17609d5ded25e4c94871187ccc6d824",
+      "locator": "KU0/1 Sections1 and3 only; no KU2/KQ0/LA0/PF46/PF50"
+    }
+  ],
+  "primary_inputs": [
+    {
+      "path": "sources/stacks-023Q-fpqc-effective-epimorphism.html",
+      "url": "https://stacks.math.columbia.edu/tag/023Q",
+      "locator": "Lemma35.13.7, second proof and displayed equalizer",
+      "sha256": "01fefdd7726f56f14ffac2c6ec7d2bf9e77b39abdd039ee2e29c2f8d63cb90dd"
+    },
+    {
+      "path": "sources/stacks-0C1B-riemann-hurwitz.html",
+      "url": "https://stacks.math.columbia.edu/tag/0C1B",
+      "locator": "Section53.12, characteristic-zero formula and Lemma53.12.2",
+      "sha256": "616e526d775d71ae3dd706bccfdc38115a846c7eafac1e7080d53691bc2249a3"
+    }
+  ],
+  "scope": {
+    "every_embedded_intermediate_E": true,
+    "R_intersect_E_smooth_affine_etale": true,
+    "source_image_only_finite_point_gaps_without_stability": true,
+    "given_polynomial_replica_stability_required_for_gap_filling": true,
+    "replica_kernel_C_h_y": true,
+    "replica_source_surjective": true,
+    "reduced_fibres_disjoint_smooth_A1": true,
+    "whole_source_lines_map_isomorphically_to_components": true,
+    "scheme_fibres_may_be_nonreduced": true,
+    "arbitrary_LND_classification_used": false,
+    "common_pencil_LA0_or_whole_root_charts_used": false,
+    "first_velocity_integrality_or_inverse_proved": false
+  },
+  "assurance": "Internal exact controls; written argument proves unrestricted scope. Classical faithfully-flat descent, RH and canonical KU0/1 are adopted foundations. No formal verification or external review."
+}

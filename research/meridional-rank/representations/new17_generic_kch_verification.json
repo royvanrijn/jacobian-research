@@ -85,7 +85,32 @@
     "generic_kch_extensions_inputs.json": "b17c840534a1fcba4ed52d1b032fda942903f891c65fc7a070e3f29dcdcae0de",
     "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd"
   },
-  "elapsed_seconds": 0.146,
+  "elapsed_seconds": 0.157,
   "python_version": "3.12.3",
-  "assurance": "Exact internal stdlib local Laurent/group identities, actual signed PD and core/basis transfer, and Q(phi) positive matrices. Nonzero cancellations, arbitrary-ambient span reasoning, old392 contradiction, irreducibility and published augmentation/sum correspondences remain written premises. No reflective-cord assertion, formal verification, external specialist review or worldwide priority claim."
+  "assurance": "Exact internal stdlib local Laurent/group identities, actual signed PD and core/basis transfer, and Q(phi) positive matrices. Nonzero cancellations, arbitrary-ambient span reasoning, old392 contradiction, irreducibility and published augmentation/sum correspondences remain written premises. No reflective-cord assertion, formal verification, external specialist review or worldwide priority claim.",
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal agent /root/new17_generic_pdf_review",
+      "reviewed_note_sha256": "ea2bb03438844ff8bcba129a616e1bd4bc8b7f258e2e60f65295b64093ca1e45",
+      "reviewed_pdf_sha256": "ea3243b24585b72cd23bd9617b5e4f8787c9ab14f237255ecd43cf9527082769",
+      "pages": 7,
+      "result": "No substantive internal mathematical error. Independently verified all three generic folds without1-mu division or nonsingular evaluation assumption; exact signed392 transfer/basis generation; form/semisimple consequences; all17Q(phi) matrices/norms,det-4,pairings,andfinite30vectoraction with image order120; trefoil matrices and determinant3. Augmentation and sum consequences valid conditionalonprecisely stated imports. All7pages visually inspected, legible without clipping/overlap.",
+      "remaining_dependencies": [
+        "Source392 paired-span contradiction",
+        "Low-rank finite complex reflection theorem",
+        "PrimaryCOR17 correspondence,rank andsum statements",
+        "Independent mr/bridge certificates and retained binding/control receipts"
+      ],
+      "external_review": false,
+      "formal_verification": false
+    },
+    {
+      "reviewer": "root actual default and fresh-topology replay",
+      "reviewed_note_sha256": "ea2bb03438844ff8bcba129a616e1bd4bc8b7f258e2e60f65295b64093ca1e45",
+      "reviewed_pdf_sha256": "ea3243b24585b72cd23bd9617b5e4f8787c9ab14f237255ecd43cf9527082769",
+      "result": "Both modes actuallyPASS on finaledition. Checked exact fold equations, reciprocal scalar cancellations and392-only premise; retained fullrank positive andallfiniteaction controls. Original primary392/COR17/lowrank imports remain separately represented.",
+      "external_review": false,
+      "formal_verification": false
+    }
+  ]
 }

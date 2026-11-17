@@ -1,0 +1,30 @@
+{
+  "title": "Arithmetic Duality Theorems",
+  "authors": "J. S. Milne",
+  "version": "Second edition, 2006; electronic version July 1, 2006, viii+339 pages.",
+  "primary_url": "https://www.jmilne.org/math/Books/ADTnot.pdf",
+  "pdf_pages": 347,
+  "used_locators": [
+    {
+      "locator": "Chapter I, Theorem 0.3 and Example 0.7",
+      "printed_pages": "5,7",
+      "pdf_pages": "13,15",
+      "scope": "Hochschild-Serre spectral sequence and its low-degree inflation-restriction sequence."
+    },
+    {
+      "locator": "Chapter I, Theorem 3.2 and Corollary 3.4",
+      "printed_pages": "41,43",
+      "pdf_pages": "49,51",
+      "scope": "Local Tate duality for abelian varieties in characteristic zero. With elliptic selfduality it identifies H^1(Q_ell,E)[p] with the dual of E(Q_ell)/p."
+    }
+  ],
+  "rendered_pages_visually_inspected": [
+    51
+  ],
+  "role": "Primary global-cohomology spectral-sequence and local Tate-duality interfaces.",
+  "retained_pdf": "milne-arithmetic-duality-2006.pdf",
+  "sha256": "2c6195ec76a974f3f336c77cb71cc3845b018aad2d43136716b3477a3bc5fb31",
+  "bytes": 2136045,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true
+}

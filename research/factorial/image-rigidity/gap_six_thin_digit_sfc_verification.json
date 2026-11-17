@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scope": "All-r proof identities and explicit affine scalar minor; literal profiles only verify normalization.",
+  "uniform_terminal_family": "N=7^r+1 for every integer r>=0",
+  "all_index_gap_six_SFC_claimed": false,
+  "controls": {
+    "universal_difference_degree_and_hyperplane_controls": 15,
+    "universal_pencil_difference_identities": 25,
+    "universal_main_minor_polynomial_identity": 1,
+    "universal_explicit_affine_minor_coefficient_identities": 3,
+    "complete_finite_field_kernel_states": 15,
+    "corrupted_kernel_rejected": 1,
+    "literal_all_small_digit_sum_Lucas_difference_controls": 655,
+    "literal_complete_universal_boundary_row_identities": 75,
+    "literal_complete_saturated_row_zero_identities": 15,
+    "r_zero_quadratic_variance_control": 1,
+    "literal_Gamma_disk_complete_boundary_coefficient_controls": 320,
+    "literal_Gamma_Vandermonde_valuation_controls": 58,
+    "literal_Gamma_scaled_moment_congruences": 58,
+    "ramified_Gamma_disk_boundary_coefficient_controls": 55,
+    "literal_correct_Gamma_upper_bridge_coefficients": 9,
+    "incorrect_ordinary_bridge_in_Gamma_rejected": 1
+  },
+  "literal_profiles": [
+    {
+      "r": 1,
+      "terminal": 8,
+      "all_column_coefficients_checked": 55
+    },
+    {
+      "r": 2,
+      "terminal": 50,
+      "all_column_coefficients_checked": 265
+    },
+    {
+      "r": 3,
+      "terminal": 344,
+      "all_column_coefficients_checked": 1735
+    }
+  ],
+  "Gamma_disk_profiles": [
+    {
+      "r": 1,
+      "terminal": 8,
+      "beta": 344
+    },
+    {
+      "r": 2,
+      "terminal": 50,
+      "beta": 2402
+    }
+  ],
+  "Gamma_disk_scope": "positive real algebraic beta at one embedding with v7(beta-1)>=r+2,r>=1",
+  "source_sha256": {
+    "GAP_SIX_THIN_DIGIT_SFC.tex": "c008b95285ed6c4cec7e89b922adc26a2ec3901f87bc636a165dffdf873ec4cf",
+    "gap_six_thin_digit_sfc.py": "5d60f88ae192d9531d0f84ce5ba5bc568449476dd9abce826b8d5d6ded50749b",
+    "PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex": "42c5fc615400a49dd3ae4f19a9a832381607e69ce4f6ff6d255b57ca4cfd156f",
+    "gap_three_hurwitz_structure.tex": "22c690a45976c9b72b210ff76bbcd3a7084ddba0aae4af0c7f40ce2b109f705c",
+    "ORDINARY_DEGREE_SEVEN_GAP_SIX_FRONTIER.tex": "7c7cb34e91f148f746eb06391f913c53e3deefaede1029f35a727bf6e6c4ba95"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/gap_six_thin_digit_sfc.py"
+}

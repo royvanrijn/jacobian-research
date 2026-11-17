@@ -1,0 +1,37 @@
+{
+  "title": "Ideal class groups of division fields of elliptic curves and everywhere unramified rational points",
+  "authors": "Naoto Dainobu",
+  "version": "arXiv:2304.05035v3, June 16, 2024; Journal of Number Theory 264 (2024), 211–232; DOI 10.1016/j.jnt.2024.05.007",
+  "primary_url": "https://arxiv.org/pdf/2304.05035v3",
+  "retained_pdf": "dainobu-2024-unramified-rational-points.pdf",
+  "sha256": "7c65b5ad8f5a745836e15782179ed6734c3ae384c517c0be0256c27f7322b787",
+  "bytes": 286767,
+  "pdf_pages": 20,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Definition 1.3 and Proposition 2.1",
+      "printed_pages": "3,6–7",
+      "pdf_pages": "3,6–7",
+      "scope": "Everywhere unramified rational points and their Kummer maps into class-group homomorphisms."
+    },
+    {
+      "locator": "Theorem 4.1 and Corollary 4.3",
+      "printed_pages": "13–15",
+      "pdf_pages": "13–15",
+      "scope": "Class-number and E[p]-component lower bounds under the stated cohomology and irreducibility hypotheses; comparison context, not an unverified imported specialization."
+    },
+    {
+      "locator": "Proposition 4.5",
+      "printed_pages": "16",
+      "pdf_pages": "16",
+      "scope": "Under its Tamagawa condition, everywhere-unramified divisibility is detected at the residue prime. Comparison context."
+    }
+  ],
+  "rendered_pages_visually_inspected": [
+    13,
+    16
+  ],
+  "role": "Primary external theorem interface or explicitly scoped comparison context."
+}

@@ -3,7 +3,7 @@
   "python": "3.12.3",
   "sympy": "1.14.0",
   "checker_sha256": "4367f9ef1578ee01a6191f2326f5be72120f2b671e15730270083b0b79113b86",
-  "proof_sha256": "0ffd0c8d32076333a206d26b31f110acda0d70f8535de6830c77dc2b205715e0",
+  "proof_sha256": "53396574258ed371670d7bc4d4bdc2c2b9baad129a1847a7e28bfdae01df4eb7",
   "primary_sources": {
     "zywina-quantitative-hit.pdf": "747448eb7e431066b9d0008486ac7032aaccc0aef88e643efb687befbb466d19",
     "buggenhout-et-al-thin-projective-2506.13471v2.pdf": "b17dcc202fbacce051db03367f413003f8dbffbea1de3baa6b4a07e1147e6b77"

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "exact_controls": 22,
+  "checks": [
+    "unrestricted duplication polynomial identity",
+    "literal monic integral transform",
+    "scaled variable coefficient identity",
+    "exact reduction modulo eleven",
+    "all 132 monic linear and quadratic divisors excluded",
+    "squarefree reduction eleven",
+    "complete factor product thirteen",
+    "all thirteen cubic roots excluded",
+    "squarefree reduction thirteen",
+    "every odd permutation normally generates S4",
+    "complete GL2F3 matrix enumeration",
+    "all twenty four projective permutations occur",
+    "projective action kernel is exactly plus minus identity",
+    "determinant equals projective sign for every matrix",
+    "only determinant one nonidentity involution is minus identity",
+    "determinant minus one matrix count",
+    "no fixed nonzero vector matrix count",
+    "fixed vector complement count",
+    "reflection centralizer order",
+    "reflection complement consists exactly of involutions",
+    "exact joint-density matrix factor",
+    "curve good at three"
+  ],
+  "finite_polynomial_primes": [
+    11,
+    13
+  ],
+  "monic_linear_quadratic_divisors_checked": 132,
+  "GL2_matrices": 48,
+  "projective_permutations": 24,
+  "sigma3_matrices": 12,
+  "python": "3.12.3",
+  "arithmetic": "standard-library exact integers and finite fields",
+  "finite_controls_certify_imported_theorems": false,
+  "formal_verification": false,
+  "external_review": false,
+  "independent_replay": false,
+  "input_sha256": {
+    "ELLIPTIC_EXCEPTION_THREE_TORSION_DISJOINTNESS.md": "976fbf5e915b592a5500c9828815911f79374848b041803529b2a84e8e7e2bd9",
+    "verify_elliptic_exception_three_torsion.py": "14a2cdfa197d6b13e332f728ef6aff1f7c316a262374fb28bec4b97d34e6a62d"
+  }
+}

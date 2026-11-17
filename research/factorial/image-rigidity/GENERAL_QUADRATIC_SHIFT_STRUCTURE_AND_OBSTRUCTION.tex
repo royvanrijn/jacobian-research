@@ -1,0 +1,214 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{proposition}{Proposition}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{The general quadratic-gap shift and a limitation of quadrant Pick positivity}
+\author{}\date{}\maketitle
+We give an exact recurrence for every lower exponent
+$h$ at gap two.  It also disproves a proposed sufficient condition:
+the actual shift quotient is not Pick on the right half-plane for any
+$h\ge6$.  This is not a counterexample to consecutive coprimality or SFC.
+
+Fix $n\ge1$ and $\gamma>0$, set $M=\gamma+2n$, and put
+\[
+T_{n,\gamma}(t)=\sum_{j=0}^n\binom nj(\gamma)_{2j}t^j,\quad
+R(z)=z^{2n}T_{n,\gamma}(-z^{-2}),\quad E=M-zD_z,\quad u=z^2.
+\]
+Write $K_j=(E)_jR$.  The lower equation is
+\[
+EK_1=K_2-K_1,\qquad EK_2=MK_2+uK_1-\gamma uR.       \tag{1}
+\]
+Consequently the action of $E$ on a coefficient vector $(a,b,c)$
+in the ordered basis $(R,K_1,K_2)$ is
+\[
+E(a,b,c)=(-2ua'-\gamma uc,\ a-b-2ub'+uc,\ b+Mc-2uc').
+                                                               \tag{2}
+\]
+Derivatives here are formal derivatives in $u$.
+
+\begin{lemma}[An exact exponent recurrence]\label{lem:shift-recurrence}
+For every $h\ge0$ define polynomials $r_h,W_h,U_h$ by
+\[
+[u(E)_h-(E)_{h+2}]R=r_hR-W_hK_1-U_hK_2.
+\]
+One may choose them with the initial values $(r_0,W_0,U_0)=(u,0,1)$
+and, for every $h\ge0$,
+\[
+\begin{split}
+r_{h+1}&=(h+2)r_h-2ur_h'+(M-2n)uU_h,\\
+W_{h+1}&=-r_h+(h+1)W_h-2uW_h'+uU_h,\\
+U_{h+1}&=W_h+(M+h+2)U_h-2uU_h'.
+\end{split} \tag{3}
+\]
+Their coefficient ring is $\mathbb Z[M,n,u]$.
+For $h\ge1$ and $\gamma>0$, every common root $t$ of
+$T_{n,\gamma}$ and $T_{n+1,\gamma+h}$ gives $u=-1/t\ne0$ and
+\[
+U_h(u)C_i(u)+W_h(u)B_i(u)=0,\quad i=0,1,             \tag{4}
+\]
+where $B=B_{n,\gamma}$, $C=B_{n+1,\gamma}$ and $B_i,C_i$
+are their even--odd sections.
+\end{lemma}
+\begin{proof}
+Let $Q_h=u(E)_h-(E)_{h+2}$.
+Since $(E+h+2)u=u(E+h)$, one has
+$Q_{h+1}=(E+h+2)Q_h$.  Equation (2) now proves (3), including
+all parameter shifts and signs.
+The exact Gamma-shift/Pascal identity is
+\[
+(\gamma)_h z^{2(n+1)}T_{n+1,\gamma+h}(-z^{-2})=Q_hR.
+\]
+At a common root $R=0$, this gives $W_hK_1+U_hK_2=0$.
+The full concomitant of
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}
+{Theorem \texttt{thm:mixed}, proof equation(3), at $d=2$},
+gives $B(\pm z)K_2-C(\pm z)K_1=0$.
+The full cubic jet at $z\ne0$ is nonzero; hence at $R=0$,
+$(K_1,K_2)\ne(0,0)$.
+Its determinant with the upper relation gives
+$U_hC(\pm z)+W_hB(\pm z)=0$.  Even--odd inversion proves (4).
+No division by $U_h$, $B$, or $R'$ was made.
+\end{proof}
+
+\begin{lemma}[A subtraction-free coefficient recurrence]\label{lem:positive-coefficients}
+Put $s=2(n+1)$ and $V_h=uU_h-r_h$.  Then
+\[
+\begin{split}
+U_{h+1}&=(M+h+2-2uD_u)U_h+W_h,\\
+W_{h+1}&=(h+1-2uD_u)W_h+V_h,\\
+V_{h+1}&=(h+2-2uD_u)V_h+uW_h+suU_h.
+\end{split} \tag{7}
+\]
+For all $h\ge0$, $U_h,W_h,V_h$ belong to
+$\mathbb Z_{\ge0}[M,s,u]$.
+More precisely, $U_0=1$, $W_0=V_0=0$, and for $h\ge1$
+\[
+\deg_u U_h\le\left\lfloor\frac{h-1}{2}\right\rfloor,\quad
+\deg_u W_h\le\left\lfloor\frac h2\right\rfloor,\quad
+\deg_u V_h\le\left\lfloor\frac{h+1}{2}\right\rfloor,                 \tag{8}
+\]
+with the zero polynomial allowed in these bounds.
+\end{lemma}
+\begin{proof}
+Substitute $r_h=uU_h-V_h$ into (3).  In the third equation,
+differentiating $uU_h$ supplies the extra $2uU_h$;
+the coefficient becomes $M-\gamma+2=s$, proving (7).
+For $h=0$ the first step is
+$(U_1,W_1,V_1)=(M+2,0,su)$, giving (8).
+Induction on (7) proves the degree bounds.
+At degree $u^j$ the diagonal multipliers are, respectively,
+$M+h+2-2j$, $h+1-2j$, and $h+2-2j$.
+Their integer parts are nonnegative wherever the corresponding
+previous-row coefficient is permitted by (8).
+All other terms in (7) are additions or multiplication by $u$ or $su$.
+Thus coefficient nonnegativity follows by induction.
+
+Equivalently, use a layered directed graph with vertices $(h,j,\tau)$,
+$\tau\in\{U,W,V\}$.  The diagonal edges have the three displayed
+weights; the other edges are $W\to U$, $V\to W$, $W\to V$
+with the last one raising $j$ by one, and $U\to V$ raising $j$
+with weight $s$.  Start at $(0,0,U)$.
+The path sums are exactly the coefficients in (7).
+This is a positive path-sum construction; no planarity or
+total-positivity assertion is being made.
+\end{proof}
+
+For example, with $s=2(n+1)$,
+\[
+\begin{array}{c|c|c}
+h&U_h&W_h\\ \hline
+2&(M+2)_2&su\\
+3&(M+2)_3+su&s(M+4)u\\
+4&(M+2)_4+s(2M+7)u&su((M+4)_2+u)\\
+5&(M+2)_5+3s(M+4)^2u+su^2&
+su((M+4)_3+(M+2n+8)u).
+\end{array}
+\]
+For the physical phase $X^h(A+BX^2)$ one substitutes
+$\gamma=hn+\beta$, thus $M=(h+2)n+\beta$, $\beta>0$.
+When $n\ge2$ and $\gamma>2n-2$, the exact quotient $C_1/B_1$ is strictly
+Pick at nonreal points, by the general Pick lemma in the
+\href{LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex}
+{lower-five sector note}.  Therefore (4), if $U_h\ne0$,
+forces $\Im(W_h/U_h)/\Im u<0$.  It is tempting to exclude this
+through right-half-plane Pick positivity; the following proposition
+shows that this particular sufficient condition is false.
+
+\begin{proposition}[An obstruction for every $h\ge6$]\label{prop:quadrant-obstruction}
+Fix any integers $h\ge6$ and $n\ge1$.  For all sufficiently large
+positive $\beta$ there is a nonreal $u$ with $\Re u>0$ such that,
+at $M=(h+2)n+\beta$,
+\[
+U_h(u)\ne0,\qquad
+\frac{\Im(W_h/U_h)(u)}{\Im u}<0.                     \tag{5}
+\]
+Thus full quadrant Pick positivity fails inside the physical
+positive-Gamma family at every lower exponent $h\ge6$.
+\end{proposition}
+\begin{proof}
+Let $\varepsilon=1/M$ and set
+\[
+\mathsf U_h=\varepsilon^hU_h(M^2v),\quad
+\mathsf W_h=\varepsilon^hW_h(M^2v),\quad
+\mathsf r_h=\varepsilon^{h+2}r_h(M^2v).
+\]
+For fixed $h,n$ these are polynomials in $\varepsilon,v$:
+the only possible negative power in the transformed recurrence is
+\[
+\mathsf W_{h+1}
+ =\varepsilon^{-1}(v\mathsf U_h-\mathsf r_h)
+   +\varepsilon((h+1)\mathsf W_h-2v\partial_v\mathsf W_h).
+\]
+Inductively $\mathsf U_h(0,v)=1$ and $\mathsf r_h(0,v)=v$, so
+the numerator is divisible by $\varepsilon$.
+The other transformed recurrences are
+\[
+\begin{split}
+\mathsf U_{h+1}
+ &=\mathsf U_h+\varepsilon((h+2)\mathsf U_h
+                -2v\partial_v\mathsf U_h+\mathsf W_h),\\
+\mathsf r_{h+1}
+ &=(1-2n\varepsilon)v\mathsf U_h+
+        \varepsilon((h+2)\mathsf r_h-2v\partial_v\mathsf r_h).
+\end{split}
+\]
+Write $a_h=[\varepsilon]\mathsf U_h$,
+$b_h=[\varepsilon]\mathsf r_h$,
+$w_h=\mathsf W_h(0,v)$.  The initial values vanish and
+\[
+a_{h+1}=a_h+h+2+w_h,\quad
+b_{h+1}=va_h+(h-2n)v,\quad w_{h+1}=va_h-b_h.
+\]
+Hence $w_0=w_1=0$ and
+$w_{h+1}=sv+vw_{h-1}$ for $h\ge1$.  In particular
+\[
+\lim_{M\to+\infty}\frac{W_h(M^2v)}{U_h(M^2v)}
+ =s\sum_{j=1}^{\lfloor h/2\rfloor}v^j.              \tag{6}
+\]
+The denominator is nonzero for sufficiently large $M$, since
+$\mathsf U_h\to1$.
+
+Put $m=\lfloor h/2\rfloor\ge3$, $\theta=5\pi/(4m)$, and
+$v=4e^{i\theta}$.  Then $0<\theta<\pi/2$ and
+\[
+\Im\sum_{j=1}^mv^j
+ \le-\frac{4^m}{\sqrt2}+\sum_{j=1}^{m-1}4^j
+ <-\frac{4^m}{\sqrt2}+\frac{4^m}{3}<0.
+\]
+By (6), $u=M^2v$ has the properties in (5) for all sufficiently
+large $M$.  Such $M$ corresponds to $\beta>0$.
+\end{proof}
+
+The offending $u$ need not be a lower moment root.  This obstruction
+leaves open a restriction of the quotient inequality to actual roots,
+a sharper coupled condition using both cyclic rows, and other
+all-exponent SFC arguments.  It also leaves open every unrestricted
+binomial assertion. The exact controls accompanying this note check formulas
+and a literal admissible quotient counterexample. The written induction
+and limiting argument supply the unrestricted exponent quantifiers.
+Internal execution is distinct from independent mathematical replay,
+formal verification, external review and priority.
+\end{document}

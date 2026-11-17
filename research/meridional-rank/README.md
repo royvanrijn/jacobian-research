@@ -4,7 +4,7 @@
 
 Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Authored assessment:** Alongside 121 named thirteen-crossing certificates with mr=b=4, an explicit prime hyperbolic knot has crossing number 17, genus seven and mr=b=4. Its actual double cover is not a graph manifold. Its trefoil sums have mr=b=4+s, while every Coxeter reflection-class bound is at most 3+s. All sixteen alternating GL3/A6 examples have complex augmentation rank three and stronger paired-span and invariant-form bounds. Worldwide priority and full MRC remain open.
+**Authored assessment:** An infinite prime four-bridge family has augmentation rank3 below mr=bridge4, exact genus7+3n/crossing17+6n, and nongraph-type double covers for all but finitely many parameters. Alternating targets also give prime sharp families at every bridge number>=5 and independent simple-target sums. The16 older generic seeds attain finite complex capacity3. The121 named certificates remain retained; full MRC and worldwide priority remain open.
 
 | Current result | Evidence / publication | Graph status | Main source |
 |---|---|---|---|
@@ -42,6 +42,12 @@ Knot-group representations, branched-cover bounds and explicit sharp families.
 | An explicit prime hyperbolic 17-crossing knot and sharp trefoil-sum family | Internal result | proved | [Source](representations/NEW_SEVENTEEN_CROSSING_KNOT.tex) |
 | Coxeter bounds fall short on the 17-crossing knot and its trefoil sums | Internal result | proved | [Source](representations/UNIVERSAL_17_REFLECTION_OBSTRUCTION.tex) |
 | Audited family exclusions and Rasmussen invariant six | Internal result | proved | [Source](representations/NEW_SEVENTEEN_FAMILY_COMPARISON.tex) |
+| An unrestricted augmentation gap for the 17-crossing knot and its trefoil sums | Internal result | proved | [Source](representations/NEW_SEVENTEEN_GENERIC_KCH.tex) |
+| Finite complex reflection-class bounds are bounded by augmentation rank | Internal result | proved | [Source](representations/FINITE_COMPLEX_AUGMENTATION_DOMINATION.tex) |
+| Finite three-dimensional lifts attain the sixteen finite capacities | Internal result | proved | [Source](representations/FINITE_THREE_DIMENSIONAL_LIFTS.tex) |
+| An infinite prime four-bridge family beyond augmentation and Coxeter bounds | Internal result | proved | [Source](representations/PRIME_AUGMENTATION_GAP_FAMILY.tex) |
+| Prime sharp families at every bridge number from alternating targets | Internal result | proved | [Source](representations/ALTERNATING_TARGET_PRIME_FAMILIES.tex) |
+| Cofinitely many prime augmentation-gap knots have nongraph double covers | Internal result | proved | [Source](representations/COFINITE_PRIME_FAMILY_NONGRAPH.tex) |
 
 **Computed obligations:** 4 unresolved; 1 resolved within their exact scope.
 
@@ -63,9 +69,15 @@ Scope limits:
 - The additional knot K_* is the literal four-braid in NEW_SEVENTEEN_CROSSING_KNOT.tex. Its exact crossing number 17 distinguishes it from all 121 named cases. Its exterior is interval-certified hyperbolic, and its actual double branched cover is non-graph by nonzero closed representation volume. Closed-cover hyperbolicity is not asserted.
 - For every s>=0, K_*#^s trefoil has mr=b=4+s. Its eight-sheet action gives h_F3=h0+2s and a normalized score at least 7/2+s without computing h0. Independently, all Coxeter reflection-class bounds are at most 3+s.
 - The bounded primary-source audit proves K_* nonalternating with Rasmussen invariant six. It excludes positive and negative presentations, both strongly quasipositive chiralities, and the audited graph-cover, Coxeter-producing and symmetric-maximal-braid construction theorems.
-- Worldwide priority, unrestricted augmentation rank for K_*, remaining binary family comparisons, arbitrary nonsplit rank-one methods, universal finite-target detection and full MRC remain open.
+- The 17-crossing knot also has an all-field, all-nonzero-parameter paired-span upper through three folds and the independent 392 core. Its explicit three-dimensional Q(phi) representation gives ar_C=3<mr=b=4; its trefoil sums have ar=s+3<mr=b=s+4. Its maximum finite complex reflection-class bound is exactly three.
+- Globally, the best single finite complex rank-one-meridian class bound equals the maximum irreducible finite-image KCH dimension and is at most ordinary complex augmentation rank. The constructive group-capacity lemma uses no augmentation theory. Higher-displacement targets and positive characteristic remain outside this comparison.
+- Worldwide priority, remaining binary family comparisons, arbitrary nonsplit rank-one methods, universal finite-target detection and full MRC remain open.
+- For every n>=0 the explicit prime twist knot K_n has ar_C=3<mr=bridge4 and best finite complex rank-one class bound3. Singular Gram extension bounds all finite or infinite Coxeter reflection class quotients by3. No uniform hyperbolicity or nongraph double-cover conclusion.
+- For every b>=5,n>=2 with gcd(n,b)=1, W_b^n gives a prime knot with mr=bridge=braidindexb and exact genus/crossing formulas. The simple target A_(2b) has ordinary rank2 and double-transposition class rankb. No augmentation-gap claim for these powers.
+- All48 retained full involutory GL3(F2)/A6 quotient knots have finite G24/G27 rank-three KCH positives. Exactly the16 generic seeds have finite capacities and complex augmentation rank3; no upper bound for the other32.
+- For all but finitely many n>=0, the prime twist knot K_n has double branched cover outside graph type, including graph prime sums. One fixed rational-tangle cover has pairwise slopes distance6|n-m|, and the actual n0 nonzero representation volume plus restricted later BC2004 filling analysis gives cofinite persistence. No explicit cutoff, empty-exception claim or closed-cover hyperbolicity result.
 
-**Verification:** Current-edition replays pass for the new knot finite/Fox/mod-two/HNF certificates, actual topology and Sage interval modes. The independent reflection identity clears to the integer constant 16. Isolated internal PDF mathematical reviews retain their own edition hashes. Earlier named certificates, all sixteen generic augmentation gaps, and paired-span/form bounds remain retained. Original theorem and software imports, formal verification and external specialist review are separate. [Replay record](representations/new_seventeen_crossing_knot_verification.json).
+**Verification:** Current exact replays include both modes of the new generic-fold/Q(phi) package; the independent symmetric unit-16 certificate; the main finite, topology and Sage interval modes; and earlier named/generic packages. Isolated internal PDF reviews retain exact edition hashes. Original theorem/software imports, formal verification and external specialist review remain separate. [Replay record](representations/new17_generic_kch_verification.json).
 
 Tracked obligations (computed states):
 

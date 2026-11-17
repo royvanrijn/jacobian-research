@@ -21,11 +21,18 @@
       "printed_pages": "44",
       "pdf_pages": "44",
       "scope": "Multiplication by n is finite etale on an abelian scheme when n is invertible; division-point extensions are unramified at such good primes."
+    },
+    {
+      "locator": "Section 16 opening",
+      "printed_pages": "29",
+      "pdf_pages": "29",
+      "scope": "Nondegenerate Galois-equivariant torsion pairing; with canonical elliptic selfduality gives mu_m contained in Q(E[m]). Used only for illustrative splitting/obstruction examples in EKX4, not its essential proof."
     }
   ],
   "role": "External theorem interface; not claimed to be reproved by finite checks.",
   "rendered_pages_visually_inspected": [
     19,
+    29,
     44
   ]
 }

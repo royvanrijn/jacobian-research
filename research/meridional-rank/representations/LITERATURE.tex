@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 64 sources,
+this search. The catalogue \texttt{sources.json} records 69 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -75,8 +75,22 @@ Its scoped Coxeter, graph-double-cover and symmetric-maximal-augmentation
 comparisons exclude the corresponding audited construction theorems.
 An independent cable obstruction uses the satellite bridge inequality
 and the Alexander formula \cite{schultens,lm}.
-No unrestricted augmentation-rank value or worldwide priority theorem
-is inferred from this bounded comparison.
+The new companion \path{NEW_SEVENTEEN_GENERIC_KCH.tex} now proves
+\[
+ \operatorname{ar}(K_*,\mathbb C)=3<4=\mr(K_*)=b(K_*).
+\]
+Its three root--covector folds reduce the actual signed diagram to the
+previously certified $392$ core. This gives $r,q\le4$,
+$\min(r,q)\le3$ and $r+q\le7$ over every field and every nonzero
+meridian determinant, including unipotent meridians. An explicit
+three-dimensional $\mathbb Q(\sqrt5)$ witness attains augmentation
+rank three at $\mu=-1$. Its finite image has meridian-class rank three;
+the bound for all finite complex rank-one-meridian images is exactly
+three. Thus the $A_8$ class bound four is stronger on this knot.
+The same-parameter connected-sum construction further gives
+$\operatorname{ar}(K_*\#^s3_1,\mathbb C)=s+3$ for every $s\ge0$.
+These statements have their own proof and source dependencies;
+worldwide priority remains unestablished.
 The same eight-sheet action, extended abelianly across each trefoil,
 has branched-cover first Betti number $h_s=h_0+2s$ over $\mathbb F_3$.
 The general cover inequality therefore gives the additional sharp family
@@ -102,6 +116,89 @@ bilinear or involution-sesquilinear form identifies the two spans and
 gives $r=q\le3$, without semisimplicity. A degenerate ambient form is
 outside that corollary; a singular root--covector evaluation matrix
 is allowed throughout the paired-span argument.
+
+The written \path{FINITE_COMPLEX_AUGMENTATION_DOMINATION.tex}
+now gives a global method comparison. Every single finite complex image
+with rank-one meridian displacement has meridian-class generating rank
+at most ordinary complex augmentation rank. More precisely, its best
+class bound equals the largest dimension of an irreducible finite-image
+complex KCH representation. That common value can still be smaller
+than unrestricted augmentation rank.
+The proof reduces the complete Shephard--Todd exception list \cite{st54}
+using determinant orders, a determinant-twisted three-dimensional
+adjoint for primitive rank-two involutory groups, and the existing
+$G_{31}$ quotient. Its pure-group representation-capacity lemma uses
+no augmentation correspondence. Consequently every such finite complex
+class bound is at most $s+3$ on each of the sixteen earlier gap families
+and on $K_*\#^s3_1$, below their sharp meridional value $s+4$.
+Higher-displacement product targets and positive characteristic are
+outside this theorem.
+
+The finite ceiling is now explicitly attained on all sixteen earlier
+alternating GL3/A6 gap seeds. The written
+\path{FINITE_THREE_DIMENSIONAL_LIFTS.tex} lifts every full involutory
+$GL_3(\mathbb F_2)$ or $A_6$ knot quotient to the determinant-one
+cover, then twists by meridian parity. Uniqueness of the involutory
+lift in the odd central kernel proves every Wirtinger relation.
+The resulting images are the full irreducible groups $G_{24}$ and
+$G_{27}$, respectively, with reflection-class rank three.
+The precise projective identifications use Shephard--Todd,
+Boalch's primary Klein-group statement \cite{boalch04}, and the official
+ATLAS \cite{atlasgl}. Thus all $48$ retained GL3/A6 quotient knots
+have finite-image KCH and finite-class capacity at least three.
+For precisely the sixteen with generic upper bounds, both capacities
+and ordinary complex augmentation rank are exactly three. No upper
+bound for the other $32$ follows from this lift.
+
+The construction now extends from the single knot $K_*$ to an
+infinite family of prime knots. Replace the final $\sigma_2^3$ by
+$\sigma_2^{3+6N}$, $N\ge0$, and call the closure $K_N$.
+The proof \path{PRIME_AUGMENTATION_GAP_FAMILY.tex} gives
+\[
+ \operatorname{ar}_{\mathbb C}(K_N)=3<\operatorname{mr}(K_N)
+ =b(K_N)=4,\qquad g(K_N)=7+3N,\quad c(K_N)=17+6N.
+\]
+The $A_8$ and finite three-dimensional positive witnesses return
+under each extra six Hurwitz moves. A uniform three-fold diagram
+reduction retains the same generic $392$ core, without extrapolating
+from sampled parameters. Linear seesaw numbers $(4,7)$ and the
+2025 homogeneous-braid primeness theorem \cite{flo25} prove that
+every member is prime. The different genera distinguish the members.
+The finite complex class ceiling is exactly three throughout.
+A written nondegenerate Gram extension also excludes every sharp-four
+finite or infinite Coxeter reflection quotient, including singular
+canonical Gram forms. The companion \path{COFINITE_PRIME_FAMILY_NONGRAPH.tex} now proves
+that all but finitely many $\Sigma_2(K_N)$ lie outside graph type,
+including connected sums of graph prime factors. The terminal rational
+tangle gives one fixed torus-boundary cover and pairwise distinct affine
+filling slopes \cite[Lemma12,p.7]{mz23}. Sphere additivity extends graph
+representation-volume vanishing to prime sums, so the existing nonzero
+$N=0$ certificate excludes graph type. The reduced-JSJ filling analysis
+\cite[pp.50--51]{bc04}, applied only to nongraph one-boundary primes,
+then retains a hyperbolic piece outside finitely many slopes.
+The product/cable exceptions are explicitly excluded in that domain.
+This supplies infinitely many prime augmentation-gap knots outside
+all graph-double-cover hypotheses. It gives no explicit exceptional
+set, no claim for every $N$, and no whole-cover hyperbolicity theorem.
+
+The companion \path{ALTERNATING_TARGET_PRIME_FAMILIES.tex} gives
+unbounded prime sharp equalities using larger simple targets.
+Let $W_b=\beta_{17}\sigma_4^3\cdots\sigma_{b-1}^3$ for $b\ge5$.
+For every $n\ge2$ coprime to $b$, the closure of $W_b^n$ is prime and
+\[
+ \operatorname{mr}=b,\qquad g=\frac{n(3b+5)-b+1}{2},
+ \qquad c=n(3b+5).
+\]
+An explicit $b$-tuple of double transpositions generates $A_{2b}$;
+its class needs exactly $b$ generators although the group has ordinary
+rank two. The quotient, one-component permutation, homogeneous genus
+and seesaw formulas are proved uniformly in both parameters.
+These powers receive no augmentation-gap assertion: the literal
+$(b,n)=(5,2)$ control in fact admits a full rank-five $S_6$ reflection
+quotient. The same alternating generators also supply independent
+simple-group lower bounds on $K_*\#^s3_1$, with target $A_{8+2s}$.
+Worldwide priority and comparisons with all known construction
+families remain unestablished.
 
 The candidate higher-rank complex-reflection route through $G_{31}$
 is now resolved negatively as a method comparison.
@@ -2045,6 +2142,27 @@ These are stronger group-bound consequences, with their global
 priority and remaining family comparisons explicit.
 
 \begin{thebibliography}{99}
+\bibitem{bc04} M. Boileau and D. Cooper,
+On three-manifolds with bounded geometry,
+Bol.Soc.Mat.Mexicana(3)10,SpecialIssue(2004),43--53.
+\url{https://web.math.ucsb.edu/~cooper/40.pdf}.
+Graph convention p.45; Lemmas2.2--2.3 and proofs pp.50--51.
+\bibitem{mz23} D. McCoy and R. Zentner,
+The Montesinos trick for proper rational tangle replacement,
+Proc.Amer.Math.Soc.151(4)(2023),1811--1822.
+\url{https://doi.org/10.1090/proc/16246}.
+Retained author copy, Lemma12 and proof p.7:
+\url{https://zentner.app.uni-regensburg.de/proper_tangle_replace.pdf}.
+
+\bibitem{flo25} P. Feller, L. Lewark and M. Orbegozo Rodriguez,
+Homogeneous braids are visually prime, Journal of Topology18(2025),e70040.
+\url{https://doi.org/10.1112/topo.70040}.
+Retained \url{https://arxiv.org/abs/2408.15730v2}, Theorem1.1,p.1;
+seesaw definition and Lemma5.1(i),p.20.
+\bibitem{boalch04} P. Boalch,
+From Klein to Painlev\'e via Fourier, Laplace and Jimbo,
+\url{https://arxiv.org/abs/math/0308221v3} (20May2004),p.1.
+
 \bibitem{yamada} S. Yamada,
 The minimal number of Seifert circles equals the braid index of a link,
 Invent.Math.89(1987),347--356, Theorem3,p.347.

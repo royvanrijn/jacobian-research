@@ -35,6 +35,8 @@ The conclusions proved below are:
 * U is a smooth connected affine surface, and the given X is an open subset.
 * D is empty or is a pure reduced curve. Its irreducible components are
   pairwise disjoint; each normalization is A1 and is a homeomorphism.
+* Each added unramified curve is its entire closure in the full affine Z.
+  Every component open M_i=X union D_i is a smooth affine open of Z.
 * pi1_top(U)=1, H^2(U,Z)=Z^b0 and chi(U)=1+b0.
 * A*=C*, Pic(U)=Cl(U)=Z^b0, with the actual boundary divisors as free basis.
 * Omega=c^-1 dP wedge dQ is a regular exact nowhere-zero two-form on U,
@@ -77,9 +79,10 @@ would be an isomorphism, contradicting the presence of p. Thus no isolated
 boundary component exists. Since D is proper closed in an integral
 surface, it is empty or a pure curve.
 
-This does not assert that the closure of an omitted prime in Z lies
-entirely in U: finitely many points of that closure can remain outside U.
-The theorem concerns the complete closed boundary D inside the actual U.
+Purity alone does not control the omitted curves at points outside U.
+The normalization argument in Section4 will in fact show that the full
+closure in Z of every added unramified prime already lies in U. No such
+claim is made for the ramified omitted primes, which stay outside U.
 
 ## 3. Simple connectivity and the vanishing used for the boundary
 
@@ -178,6 +181,38 @@ normalization(D_i)=A1.                                  (6)
 No rationality theorem for a resolution or for target nonproperness curves
 was used.
 
+There is also complete coverage of each added unramified prime in the
+**original full affine normalization Z**. Let barD_i be its closure in Z.
+It lies in Z minus X, because that complement is closed and contains its
+generic point; hence D_i=barD_i intersect U. Normalize barD_i to the smooth
+affine curve C_i. Normalization commutes with open restriction, so the
+inverse image of D_i is its normalization A1. A smooth affine curve
+containing an open A1 must equal that A1: its smooth projective completion
+is P1, and its nonempty set of deleted points is contained in the single
+point deleted for the given A1. Therefore C_i has no point above
+barD_i minus D_i. Surjectivity of normalization proves
+```
+barD_i=D_i subset U.                                     (6a)
+```
+Thus an unramified added prime cannot have exceptional nonetale points
+of its closure missing from U. Its possible intrinsic cusp singularities
+remain a separate issue.
+
+For each i, the actual component open
+```
+M_i=X union D_i = U minus union_(j!=i) D_j               (6b)
+```
+is smooth and affine and is an open subset of the full Z containing the
+WHOLE D_i. To see affineness, each D_j is an effective Cartier divisor
+on smooth U. Their finite sum is again an effective Cartier divisor.
+Its complement immersion into U is affine: on any affine open cover
+trivializing its invertible ideal the preimage is a principal affine
+open. Affineness of a morphism is local on the target, and U is affine.
+For b0=1 this simply says M_i=U. These component opens therefore need no
+whole-root-chart theorem for their affineness or their finite-point
+coverage. Their boundary still has only the algebraic normalization A1
+proved in(6), rather than a proved smooth A1 structure.
+
 This argument allows an algebraic cusp. For example the normalization
 t |-> (t^2,t^3) of the affine cusp is a finite bijective homeomorphism from
 A1, but its derivative vanishes at0 and the cusp is not a smooth curve.
@@ -273,8 +308,10 @@ D_i is needed or made.
 
 The complete canonical construction and Sections2--6 supply smooth
 affineness of U, simple connectivity, a pure disjoint topological-A1
-boundary, the exact Euler count, the boundary divisor basis, the regular
-free generic deck action and its Euler divisibility.
+boundary, whole closure coverage of every added unramified prime, smooth
+affine component opens X union D_i, the exact Euler count, the boundary
+divisor basis, the regular free generic deck action and its Euler
+divisibility.
 
 They do not establish any of the following:
 
@@ -282,13 +319,11 @@ They do not establish any of the following:
 * whole-component polynomial root charts, including all finite points;
 * a common **source coordinate** y with nonnegative value at every
   omitted U-divisor, or extension of its source translation;
-* completeness of an omitted prime in Z after finitely many nonetale
-  points have been removed;
 * triviality of the deck group, trace-dual multiplication regularity,
   or inversion of the actual Keller map.
 
-The first two are stronger algebraic geometry than the topological
-statement(6). A common-coordinate or Hamiltonian extension argument must
+The first two are stronger algebraic geometry than(6), even after the
+complete finite-point coverage in(6a)--(6b). A common-coordinate or Hamiltonian extension argument must
 prove its own hypotheses; the exact coframe alone does not supply them.
 Thus this note narrows the LA0 input and independently validates the
 Euler/free-deck consequences. It does not adopt the unproduced full LA0,
@@ -325,7 +360,8 @@ theorem is imported.
 
 The exact checker tests the closed/open degree ledger, the normalization
 branch-summation maps, genus/puncture formulas, Picard-basis relations,
-the cusp sharpness control, deck Euler divisibility and source/coframe
+the cusp sharpness control, maximal affine-A1 curve coverage, Cartier
+component-open affine charts, deck Euler divisibility and source/coframe
 identities. Its finite controls do not prove the unrestricted statements;
 the written argument does. Source/checker/input hashes are recorded in
 the receipt. No external review, formal verification or independent

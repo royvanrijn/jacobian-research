@@ -1,0 +1,2349 @@
+{
+  "claim": "Ramified fold valuations and common-source-coordinate poles",
+  "outcome": "PASS",
+  "check_count": 503,
+  "checks": [
+    {
+      "name": "all ancestral local recurrence controls",
+      "passed": true
+    },
+    {
+      "name": "fold controls include both surviving pole inequalities",
+      "passed": true
+    },
+    {
+      "name": "formal equal-value and terminal monomial negative controls occur",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p1",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p1",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p1",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p1",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p2",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p2",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p2",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p2",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p3",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p3",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p3",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p3",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p4",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p4",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p4",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p4",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p5",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p5",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p5",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p5",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p6",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p6",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p6",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p6",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p7",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p7",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p7",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p7",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p8",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p8",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p8",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p8",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p9",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p9",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p9",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p9",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p10",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p10",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p10",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p10",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p11",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p11",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p11",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p11",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p12",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p12",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p12",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p12",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p13",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p13",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p13",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p13",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p14",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p14",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p14",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p14",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p15",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p15",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p15",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p15",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p16",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p16",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p16",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p16",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p17",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p17",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p17",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p17",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p18",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p18",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p18",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p18",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p19",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p19",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p19",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p19",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p20",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p20",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p20",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p20",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p21",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p21",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p21",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p21",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p22",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p22",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p22",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p22",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p23",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p23",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p23",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p23",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p24",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p24",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p24",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p24",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p25",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p25",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p25",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p25",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p26",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p26",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p26",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p26",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p27",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p27",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p27",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p27",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p28",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p28",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p28",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p28",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p29",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p29",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p29",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p29",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p30",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p30",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p30",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p30",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p31",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p31",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p31",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p31",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p32",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p32",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p32",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p32",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p33",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p33",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p33",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p33",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p34",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p34",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p34",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p34",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p35",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p35",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p35",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p35",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p36",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p36",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p36",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p36",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p37",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p37",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p37",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p37",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p38",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p38",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p38",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p38",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p39",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p39",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p39",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p39",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p40",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p40",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p40",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p40",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p41",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p41",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p41",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p41",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p42",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p42",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p42",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p42",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p43",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p43",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p43",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p43",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p44",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p44",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p44",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p44",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p45",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p45",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p45",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p45",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p46",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p46",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p46",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p46",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p47",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p47",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p47",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p47",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p48",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p48",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p48",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p48",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p49",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p49",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p49",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p49",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p50",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p50",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p50",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p50",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p51",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p51",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p51",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p51",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p52",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p52",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p52",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p52",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p53",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p53",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p53",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p53",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p54",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p54",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p54",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p54",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p55",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p55",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p55",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p55",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p56",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p56",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p56",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p56",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p57",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p57",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p57",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p57",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p58",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p58",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p58",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p58",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p59",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p59",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p59",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p59",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p60",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p60",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p60",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p60",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p61",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p61",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p61",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p61",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p62",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p62",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p62",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p62",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p63",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p63",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p63",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p63",
+      "passed": true
+    },
+    {
+      "name": "complete Euclidean identities for p64",
+      "passed": true
+    },
+    {
+      "name": "universal coarse fold bound p64",
+      "passed": true
+    },
+    {
+      "name": "degree-two-or-higher common coordinate contradiction p64",
+      "passed": true
+    },
+    {
+      "name": "nonpolar coordinate norm threshold p64",
+      "passed": true
+    },
+    {
+      "name": "anchor determinant deficit decomposition",
+      "passed": true
+    },
+    {
+      "name": "fold greater-value algebraic reduction",
+      "passed": true
+    },
+    {
+      "name": "coarse strict bound algebra",
+      "passed": true
+    },
+    {
+      "name": "exceptional p2g rg tail norm upper bound",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g1",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g1",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g2",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g2",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g3",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g3",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g4",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g4",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g5",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g5",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g6",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g6",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g7",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g7",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g8",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g8",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g9",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g9",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g10",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g10",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g11",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g11",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g12",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g12",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g13",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g13",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g14",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g14",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g15",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g15",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g16",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g16",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g17",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g17",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g18",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g18",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g19",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g19",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g20",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g20",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g21",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g21",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g22",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g22",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g23",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g23",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g24",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g24",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g25",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g25",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g26",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g26",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g27",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g27",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g28",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g28",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g29",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g29",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g30",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g30",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g31",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g31",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g32",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g32",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g33",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g33",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g34",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g34",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g35",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g35",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g36",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g36",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g37",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g37",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g38",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g38",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g39",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g39",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g40",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g40",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g41",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g41",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g42",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g42",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g43",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g43",
+      "passed": true
+    },
+    {
+      "name": "all nonexceptional coprime greater patterns excluded g44",
+      "passed": true
+    },
+    {
+      "name": "smaller-value nonnegative tail classification g44",
+      "passed": true
+    },
+    {
+      "name": "one-parent label2 determinant formula",
+      "passed": true
+    },
+    {
+      "name": "two-parent label2 determinant formula",
+      "passed": true
+    },
+    {
+      "name": "only negative first-pattern Case2 label2 value",
+      "passed": true
+    },
+    {
+      "name": "all admissible two-parent label2 cases positive",
+      "passed": true
+    },
+    {
+      "name": "small norm excludes nonpolar source coordinate",
+      "passed": true
+    },
+    {
+      "name": "index2 Case2 cannot meet common-coordinate anchor",
+      "passed": true
+    },
+    {
+      "name": "independent inverse intersection Gram 0",
+      "passed": true
+    },
+    {
+      "name": "independent inverse intersection Gram 1",
+      "passed": true
+    },
+    {
+      "name": "independent inverse intersection Gram 2",
+      "passed": true
+    },
+    {
+      "name": "independent inverse intersection Gram 3",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r1i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r1i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r1i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r1i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r1i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r2",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r2i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r2i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r2i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r2i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r2i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r3i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r3i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r3i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r3i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r3i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r4",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r4i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r4i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r4i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r4i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r4i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r5",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r5i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r5i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r5i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r5i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r5i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r6",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r6i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r6i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r6i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r6i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r6i4j1",
+      "passed": true
+    },
+    {
+      "name": "equal-value nonzero primitive residue r7",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r7i1j0",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r7i0j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r7i1j1",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r7i2j3",
+      "passed": true
+    },
+    {
+      "name": "Laurent exact derivative has zero residue r7i4j1",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p1",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p1",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p3",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p3",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p5",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p5",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p7",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p7",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p9",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p9",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p11",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p11",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p13",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p13",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p15",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p15",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p17",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p17",
+      "passed": true
+    },
+    {
+      "name": "terminal fold primitive ray p19",
+      "passed": true
+    },
+    {
+      "name": "terminal fold monomials contract b0 p19",
+      "passed": true
+    },
+    {
+      "name": "constant-on-line target pair has Jacobian factor b",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p1",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p1",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p1",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p2",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p2",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p2",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p3",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p3",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p3",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p4",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p4",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p4",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p5",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p5",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p5",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p6",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p6",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p6",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p7",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p7",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p7",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p8",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p8",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p8",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p9",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p9",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p9",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p10",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p10",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p10",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p11",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p11",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p11",
+      "passed": true
+    },
+    {
+      "name": "survivor volume order1 p12",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive regular p12",
+      "passed": true
+    },
+    {
+      "name": "survivor primitive explicit p12",
+      "passed": true
+    },
+    {
+      "name": "exceptional survivor volume",
+      "passed": true
+    },
+    {
+      "name": "exceptional survivor primitive dz",
+      "passed": true
+    },
+    {
+      "name": "exceptional survivor primitive dT",
+      "passed": true
+    },
+    {
+      "name": "affine survivor source equation 0",
+      "passed": true
+    },
+    {
+      "name": "affine survivor boundary chart equation 0",
+      "passed": true
+    },
+    {
+      "name": "affine survivor source equation 1",
+      "passed": true
+    },
+    {
+      "name": "affine survivor boundary chart equation 1",
+      "passed": true
+    },
+    {
+      "name": "affine survivor source equation 2",
+      "passed": true
+    },
+    {
+      "name": "affine survivor boundary chart equation 2",
+      "passed": true
+    },
+    {
+      "name": "localized D(c) inverse a",
+      "passed": true
+    },
+    {
+      "name": "localized D(c) inverse b",
+      "passed": true
+    },
+    {
+      "name": "localized D(c) inverse c",
+      "passed": true
+    },
+    {
+      "name": "localized D(c) inverse d",
+      "passed": true
+    },
+    {
+      "name": "localized D(c+1) inverse a",
+      "passed": true
+    },
+    {
+      "name": "localized D(c+1) inverse b",
+      "passed": true
+    },
+    {
+      "name": "localized D(c+1) inverse c",
+      "passed": true
+    },
+    {
+      "name": "localized D(c+1) inverse d",
+      "passed": true
+    },
+    {
+      "name": "two smooth localization domains cover",
+      "passed": true
+    },
+    {
+      "name": "whole source opens cover",
+      "passed": true
+    },
+    {
+      "name": "boundary quotient is exactly affine line",
+      "passed": true
+    },
+    {
+      "name": "affine survivor actual source volume",
+      "passed": true
+    },
+    {
+      "name": "affine survivor regular primitive du",
+      "passed": true
+    },
+    {
+      "name": "affine survivor primitive dT",
+      "passed": true
+    },
+    {
+      "name": "affine survivor has retained norm3",
+      "passed": true
+    },
+    {
+      "name": "written scope retains v_E(b)>=0  implies  n_E>=e+1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains sum_j m_j=2p+e-1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains D^vee . E^vee=p_D*a",
+      "passed": true
+    },
+    {
+      "name": "written scope retains n_E > a^2",
+      "passed": true
+    },
+    {
+      "name": "written scope retains m=c=0 and d_2=-1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains n_E<=p*(2p+1)<4p^2",
+      "passed": true
+    },
+    {
+      "name": "written scope retains (p,r,n_E)=(2,1,5)",
+      "passed": true
+    },
+    {
+      "name": "written scope retains r=p+1,       n_E=p^2+p+1",
+      "passed": true
+    },
+    {
+      "name": "written scope retains last TWO",
+      "passed": true
+    },
+    {
+      "name": "written scope retains theta=a db+dF",
+      "passed": true
+    },
+    {
+      "name": "written scope retains C[u,t,(1+u*t)^-1]",
+      "passed": true
+    },
+    {
+      "name": "written scope retains No formal verification",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists INDIVIDUAL_SOURCE_COORDINATES_AND_UNCONDITIONAL_BOUNDARY_CHARTS.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "passed": true
+    },
+    {
+      "name": "local proof link exists sources/borisov-divisorial-valuations-2013.pdf",
+      "passed": true
+    },
+    {
+      "name": "primary PDF identity retained",
+      "passed": true
+    }
+  ],
+  "controls": {
+    "depth": 10,
+    "ancestral_trees": 10945,
+    "fold_valuations": 138,
+    "greater_polar_controls": 1,
+    "smaller_polar_controls": 16,
+    "equal_value_controls": 15,
+    "terminal_monomial_controls": 8,
+    "representative_multiplicities": {
+      "(1, 1, 3)": [
+        1,
+        1,
+        1
+      ],
+      "(1, 2, 3)": [
+        1,
+        1,
+        1
+      ],
+      "(1, 3, 3)": [
+        1,
+        1,
+        1
+      ],
+      "(2, 1, 5)": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(2, 2, 7)": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "(2, 3, 7)": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "(3, 3, 13)": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(3, 3, 15)": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "(3, 4, 13)": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(3, 5, 15)": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "(4, 4, 21)": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(4, 5, 21)": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(5, 5, 31)": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(5, 5, 35)": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(5, 6, 31)": [
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(5, 7, 35)": [
+        5,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(6, 6, 43)": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(6, 7, 43)": [
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(7, 7, 57)": [
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(7, 7, 63)": [
+        7,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(7, 8, 57)": [
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(7, 9, 63)": [
+        7,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(8, 8, 73)": [
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(8, 9, 73)": [
+        8,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "(9, 9, 99)": [
+        9,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(9, 11, 99)": [
+        9,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(11, 11, 143)": [
+        11,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(11, 13, 143)": [
+        11,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(13, 13, 195)": [
+        13,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(13, 15, 195)": [
+        13,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(15, 15, 255)": [
+        15,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "(15, 17, 255)": [
+        15,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  "proof_sha256": "87119ad21a318e5d50c43563b76065f8dc32248ced230db2d4a9cc174bd1c0e2",
+  "checker_sha256": "4d9aaeddc5e333637296fff98142cbfb5f8b582192497ad3e2887d11f72636fb",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "sha256": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8"
+    },
+    {
+      "path": "EXACT_VOLUME_BOUNDARY_MULTIPLICITIES_AND_COMMON_SOURCE_PENCIL.md",
+      "sha256": "1a9a234f84871ecfef48bfe0644c7b5e068a382b739959ec3b4753580b77e5d7"
+    },
+    {
+      "path": "INDIVIDUAL_SOURCE_COORDINATES_AND_UNCONDITIONAL_BOUNDARY_CHARTS.md",
+      "sha256": "0ad465244a3f8637d3968195c63dc956ac8341654ea3e7c8102ac4f25389f4e8"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6"
+    },
+    {
+      "path": "sources/individual-source-coordinates-source-audit.json",
+      "sha256": "bccdc3ba5da390c48a45b6c3ba096bbd09ce310ced4e20f0201a4930e63da241"
+    },
+    {
+      "path": "sources/borisov-divisorial-valuations-2013.pdf",
+      "sha256": "b4c0c4511079a3429bc859b0ff9b67d98b750ef502decd036e25dbcf194016d8"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "general_small_norm_source_coordinate_polarity": true,
+    "polar_prime_anchor_requires_nonempty_unramified_boundary": true,
+    "index_two_minimal_case2_excluded_with_anchor": true,
+    "polar_case1_fold_transverse_degree_one": true,
+    "refined_two_necessary_fold_multiplicity_types": true,
+    "genuine_affine_exact_volume_survivor_control": true,
+    "ramified_whole_chart_assumed": false,
+    "all_ramified_primes_excluded": false,
+    "common_coordinate_integrality_proved": false,
+    "Keller_counterexample_or_inverse_claimed": false
+  },
+  "assurance": "Internal written proof with exact controls; no formal verification, external review or novelty claim."
+}

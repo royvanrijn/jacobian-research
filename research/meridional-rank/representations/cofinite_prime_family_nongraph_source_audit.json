@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "artifact": "COFINITE_PRIME_FAMILY_NONGRAPH.tex",
+  "status": "Written qualitative theorem and inspected-primary source audit; not a numerical checker",
+  "claims": {
+    "main": "There is a finite E subset positive integers such that Sigma2(K_n) is outside graph type for n>=0 not in E.",
+    "graph_type": "All prime factors graph, including S2xS1; connected-sum-closed Boileau--Cooper convention.",
+    "exact_tangle_binding": "Fixed outside two-string tangle cover M, one torus boundary, alpha_n=lambda+(3+6n)mu, distance6|n-m|.",
+    "seed_premise": "Actual closed branched cover of K0 admits PSL2C representation with volume in(10.37,10.39), from retained seed certificate.",
+    "consequences": "Cofinitely many pairwise distinct prime knots with mr=bridge4,complexaugmentation3,g7+3n,c17+6n and non-graph-type double covers; exclusion persists under trefoil sum.",
+    "not_claimed": [
+      "Explicit cutoff or exceptional-set enumeration",
+      "The exceptional set is empty",
+      "Hyperbolicity of every closed branched cover",
+      "Any computed parent triangulation is a theorem premise",
+      "New numerical certificate or formal verification"
+    ]
+  },
+  "new_primary_sources": [
+    {
+      "path": "sources/boileau-cooper-bounded-geometry-2004.pdf",
+      "sha256": "e1f7c775ebe2d7908e4b9212d02c5f6ee15f5f84f24d36a7021738854333205e",
+      "title": "On three-manifolds with bounded geometry",
+      "authors": [
+        "Michel Boileau",
+        "Daryl Cooper"
+      ],
+      "published": "Bol.Soc.Mat.Mexicana(3)10 SpecialIssue(2004),43-53",
+      "url": "https://web.math.ucsb.edu/~cooper/40.pdf",
+      "edition": "Author-hosted published journal copy",
+      "read_locators": [
+        "Graph convention printedp45/PDFp3",
+        "Lemma2.2 and proof printedp50/PDFp8",
+        "Reduced JSJ, Lemma2.3 and proof printedp51/PDFp9"
+      ],
+      "support": "Adopted indispensable finite-bad-slope premise: BC2004 Lemma2.3 applied ONLY to compact connected orientable irreducible boundary-incompressible nongraph P with ONE torus boundary. Hyperbolic-core persistence read from proof2.2/2.3, not merely geometrizability. Each cable contains an original boundary, hence at most one here. Fiber slopeDelta0 excluded explicitly.",
+      "scope_correction": "Printed Lemma2.3 omits productT2xI in full generality. This note does not invoke that unrestricted form: P is one-boundary nongraph; reduced graph boundary block is neither a cable nor a product by explicit minimality proof. BC finite-bad-slope conclusion is the adopted later published premise; original CGLS statement is context only."
+    },
+    {
+      "path": "sources/mccoy-zentner-proper-tangle-author-copy.pdf",
+      "sha256": "6bf3b501d2af6c7c59de19114cbed55379afb1d4824c60b2630da0c85f067421",
+      "title": "The Montesinos trick for proper rational tangle replacement",
+      "authors": [
+        "Duncan McCoy",
+        "Raphael Zentner"
+      ],
+      "published": "Proc.Amer.Math.Soc.151(2023),no4,1811-1822",
+      "doi": "10.1090/proc/16246",
+      "url": "https://zentner.app.uni-regensburg.de/proper_tangle_replace.pdf",
+      "edition": "Author-hosted copy; byte identity with arXiv2110.15106v1 is not asserted",
+      "read_locators": [
+        "Figure5,p6",
+        "Lemma12 and proof,p7"
+      ],
+      "support": "Fixed outside branched cover, rational tangle solid-torus meridian a*mu+b*lambda, determinant distance. Same outside tangle fixes one parent and basis for all n.",
+      "scope_correction": "Alpha/beta names in lemma statement and proof are reversed; manuscript uses its own consistent alpha_n and relies on rational parameter formula/distance."
+    },
+    {
+      "path": "sources/culler-gordon-luecke-shalen-dehn-surgery-1987.pdf",
+      "sha256": "f3f1abe38d62665f7697f235976efc4241fdaf05fc3464e49c3296dc51443c78",
+      "title": "Dehn surgery on knots",
+      "authors": [
+        "Marc Culler",
+        "C.McA.Gordon",
+        "John Luecke",
+        "PeterB.Shalen"
+      ],
+      "published": "Ann.ofMath.(2)125(1987),237-300",
+      "url": "https://marc-culler.info/static/home/papers/CyclicSurgery.pdf",
+      "edition": "Author-hosted scan of published original",
+      "read_locators": [
+        "Section2.4 setup,printedpp274-275",
+        "Theorem2.4.4,printedp276/PDFp41"
+      ],
+      "support": "Context only: original Theorem2.4.4 explicitly displays cable and product exceptions in boundary compression. An alternate derivation from that original statement would give at most3 interface-compressing slopes; this alternate is not an indispensable premise.",
+      "correction_check": "1988 Annals127(3)p663 DOI10.2307/2007009 text unavailable after primary source routes; impact on original Theorem2.4.4 remains unreviewed. No correction-cleared assertion is made. Main proof instead adopts BC2004 later primary restricted one-boundary nongraph finite-bad-slope statement."
+    }
+  ],
+  "existing_imports": [
+    {
+      "path": "sources/luo-tillmann-yang-gluing-1004.2992v1.pdf",
+      "sha256": "bc19e070ffc10d5d32ac33e6e0f631f5d9bf94fac03de0265939c5ee551a9800",
+      "locators": [
+        "Section4.6,p11 closed volume integral/independence",
+        "Lemma4.10,p11 graph volume vanishing"
+      ],
+      "new_written_argument": "Sphere additivity proved by constant equivariant collar maps/capping punctured summands, then cyclic S2xS1 zero volume."
+    },
+    {
+      "path": "NEW_SEVENTEEN_CROSSING_KNOT.tex",
+      "sha256": "0a02aebc1669df9c0d49e4eb916ecf58badca61a1d8093c347161b8a3314bf86",
+      "locator": "thm:nongraph and proof",
+      "premise": "Nonzero actual closed-cover representation volume, not only irreducible nongraph terminology."
+    },
+    {
+      "path": "new_seventeen_crossing_knot_inputs.json",
+      "sha256": "5196a788147e14deeaa7d4c819f11540db3b848406282491bcdb7f87619ee182",
+      "role": "Existing literal cover, primitive filling, full-equation and analytic interval certificate inputs; no new analytic claim."
+    },
+    {
+      "path": "PRIME_AUGMENTATION_GAP_FAMILY.tex",
+      "sha256": "88c50e979202a901d4a356ff7559816a8319e166ed66b181359967d74cadabed",
+      "locators": [
+        "thm:main",
+        "cor:sums"
+      ],
+      "role": "Definition, primeness, exact ranks/genus/crossings and trefoil rank consequences; not a new proof here."
+    },
+    {
+      "path": "sources/afw-3manifold-groups-final-author-2015.pdf",
+      "sha256": "31551e1a7cb6ce01026ba33e56806bfecf2c3e4d3afbec4dbf6c6bf0b7ef28ae",
+      "locator": "Theorem1.7.6,printedp19/PDFp23",
+      "role": "Explicit standard Geometrization premise for the in-particular statement that a closed nongraph prime factor contains a hyperbolic JSJ piece. Core graph-type exclusion does not require recognizing a computed parent. Exact statement independently read; original Perelman/Thurston proof is imported."
+    }
+  ],
+  "written_proof_chain": [
+    "lem:tangle fixed parent, primitive affine slopes",
+    "lem:sumvolume additivity and broad graph-type exclusion atn0",
+    "lem:persistence reduced boundary-block cases, BC2004 restricted one-boundary nongraph finite bad slopes and cable core persistence; original CGLS not a separate premise",
+    "thm:onefilling reducible/boundary-compressible reductions",
+    "thm:cofinite injective slope sequence intersects finite set finitely"
+  ],
+  "assurance": {
+    "new_numeric_checker": false,
+    "new_analytic_computation_as_premise": false,
+    "formal_verification": false,
+    "external_specialist_review": false,
+    "worldwide_priority_claim": false,
+    "internal_contextual_proof_review": true,
+    "isolated_pdf_review_performed": true,
+    "CGLS_1988_correction_text_reviewed": false
+  },
+  "internal_source_reviews": [
+    {
+      "reviewer": "contextual author-agent /root/prime_family_search",
+      "scope": "Read exact BC graph convention and pp50-51 proof; MZ Lem12p7; CGLS setup and Thm2.4.4p276; LTYSec4.6+Lem4.10p11. Visually inspected relevant rendered mathematical pages.",
+      "external_review": false
+    },
+    {
+      "reviewer": "parallel contextual agent /root/prime_family_search/twist_cover_model",
+      "scope": "Earlier contextual edition: fixed tangle/common basis, sphere volume and graph-interface persistence mechanisms found sound. This reviewer did not clear CGLS correction. Main current edition instead adopts the later BC2004 restricted finite-bad-slope premise.",
+      "external_review": false
+    }
+  ],
+  "artifact_sha256": {
+    "COFINITE_PRIME_FAMILY_NONGRAPH.tex": "2a91f171f4ca20c4b199a4e1d7ad4388203704ede87d212b03c207d51e0e79de",
+    "COFINITE_PRIME_FAMILY_NONGRAPH.pdf": "50bf76cc8f8c65974989c902d6898d63fd11c55c21242be8e19fcc4dcf165dea"
+  },
+  "build": {
+    "command": "pdflatex -interaction=nonstopmode -halt-on-error COFINITE_PRIME_FAMILY_NONGRAPH.tex (two passes)",
+    "pages": 6,
+    "warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "render_location": ".scratch/mrc-prime-family/cofinite-render/cofinite-01.png through cofinite-06.png"
+  },
+  "internal_pdf_reviews": [
+    {
+      "reviewer": "isolated internal PDF-only agent cofinite_cover_pdf_review",
+      "note_sha256": "2a91f171f4ca20c4b199a4e1d7ad4388203704ede87d212b03c207d51e0e79de",
+      "pdf_sha256": "50bf76cc8f8c65974989c902d6898d63fd11c55c21242be8e19fcc4dcf165dea",
+      "pages": 6,
+      "result": "Conditional no substantive internal gap. Fixed common cover/basis, primitive distinct slopes, sphere volume additivity and graph-type convention, reduced block/cable/product exclusions, precise later BC import, reducible and boundary-compressible reductions, cofinite quantifiers and sum consequences all checked as printed. Every page read and rendered.",
+      "limits": "Only frozen PDF consulted. Primary theorems and old interval/family premises were treated conditionally; no cited sources, repository, TeX or checkers accessed. No formal verification or external specialist review."
+    }
+  ],
+  "root_primary_review": {
+    "scope": "BC printedp45 andpp50-51, MZpp6-7, CGLS setup pp274-276 and LTYSection4.6p11 independently read; relevant source pages rendered and visually checked. Root read full final proof. Restricted later BC route adopted exactly as written; original CGLS correction scope remains unreviewed context only.",
+    "whole_proof_assurance": false
+  }
+}

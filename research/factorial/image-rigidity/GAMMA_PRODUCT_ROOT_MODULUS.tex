@@ -1,0 +1,246 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\begin{document}\setlength{\emergencystretch}{1em}
+\title{Root modulus bounds for every Gamma-power moment polynomial}
+\author{}\date{}\maketitle
+For $d,n\ge1$ and $\gamma>0$ define
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k.
+\]
+We bound the modulus of every reciprocal root, uniformly in the gap,
+shape and index.  A positive comparison vector for the Hermitian
+parts of the Gamma matrix gives a disk bound.  Exact-degree circular
+polarization then multiplies the bounds for the $d$ Gamma factors.
+They give shape-separated coprimality and a linear criterion for
+pairwise separation through a fixed moment order. They do not assert
+simplicity or unrestricted all-index Strong Factorial.
+
+\begin{lemma}[The Gamma matrix disk]\label{lem:gamma-disk}
+For $\alpha>0$ and $n\ge1$, every zero $-\delta$ of the monic polynomial
+\[
+G_{n,\alpha}(z)=\sum_{k=0}^n\binom nk(\alpha)_kz^{n-k}
+\]
+satisfies
+\[
+ |\delta|\le\alpha+n-1,\qquad \Re\delta\ge\alpha-n+1.             \tag{1}
+\]
+Both inequalities are strict if $n\ge2$.
+\end{lemma}
+\begin{proof}
+Put $N=\alpha+n$.  The exact matrix representation in
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}
+{Lemma \texttt{lem:gamma} of the cubic adjoint note} is
+$G_{n,\alpha}(z)=\det(zI+J)$, where $J=D+iK$,
+\[
+D_{jj}=N+1-2j,\qquad
+K_{j,j+1}=K_{j+1,j}=\sqrt{j(N-j)},\quad 1\le j<n,
+\]
+and the other entries of $K$ vanish.
+Thus the real-part bound follows from the smallest diagonal
+entry of $D$.  Equality for $n\ge2$ would force an eigenvector
+supported in the last coordinate, contrary to the nonzero last
+off-diagonal entry.
+
+We prove that the whole numerical range of $J$ is in the disk
+$|w|\le N-1$.  For $0<\theta<\pi$, put
+\[
+ H_\theta=(\cos\theta)D+(\sin\theta)K,\qquad
+ q=\tan(\theta/2),\qquad
+ v_j=\sqrt{\binom{N-1}{j-1}}q^{j-1}>0 .
+\]
+All generalized binomial factors used here are positive, since
+$N-n=\alpha>0$.  The adjacent ratios give
+\[
+ \frac{(H_\theta v)_j}{v_j}=N-1\quad(j<n),\qquad
+ \frac{(H_\theta v)_n}{v_n}
+     =N-1-\alpha(1-\cos\theta).                              \tag{2}
+\]
+Indeed the full adjacent-row expression is
+\[
+ (N+1-2j)\cos\theta+
+ \sin\theta\left(\frac{j-1}{q}+(N-j)q\right)=N-1;
+\]
+in the last row the absent upper entry has value
+$\alpha\sin\theta\,q=\alpha(1-\cos\theta)$.
+
+A real symmetric matrix $H$ with nonnegative off-diagonal entries
+and a positive vector $v$ satisfying $Hv\le rv$ has
+$\lambda_{\max}(H)\le r$.  An elementary justification is the identity
+\[
+ r\|x\|^2-x^*Hx=
+ \sum_j\left(r-\frac{(Hv)_j}{v_j}\right)|x_j|^2
+ +\sum_{j<k}H_{jk}v_jv_k
+       \left|\frac{x_j}{v_j}-\frac{x_k}{v_k}\right|^2.
+\]
+For $H_\theta$, equality is impossible: the positive last-row
+deficit forces $x_n=0$, and the connected off-diagonal chain
+then forces all coordinates to vanish.
+Thus $\lambda_{\max}(H_\theta)<N-1$ on $0<\theta<\pi$.
+The endpoint bounds follow by continuity.
+For negative sine, conjugation by $\operatorname{diag}(1,-1,1,-1,\ldots)$
+replaces $K$ by $-K$ without changing $D$.
+It follows that
+$\Re(e^{-i\theta}x^*Jx)\le(N-1)\|x\|^2$ for every real $\theta$.
+Applying this to an eigenvector proves the modulus bound in (1).
+When $n\ge2$, equality cannot occur in the remaining endpoint
+directions either: an eigenvector attaining the extreme diagonal
+entry would have only its first or last coordinate nonzero.
+\end{proof}
+
+We use the full circular-domain Grace--Walsh--Szego theorem:
+if $f$ has exact degree $n$, its symmetric multiaffine polarization
+is nonvanishing when all $n$ arguments lie in any open circular
+region on which $f$ is nonvanishing.  Exterior disks are allowed
+here because the degree is exactly $n$; no convexity is assumed.
+The precise input is Wagner, \emph{Multivariate stable polynomials:
+theory and applications}, Theorem4.1, PDF page11, in the
+\href{sources/wagner-multivariate-stable-polynomials-2011.pdf}
+{cached proof source}.  We also use its convex interior-disk case.
+
+\begin{theorem}[Every gap and shape]\label{thm:product-annulus}
+For all integers $d,n\ge1$, real $\gamma>0$ and every root $t$ of
+$T_{n,\gamma,d}$,
+\[
+ \left|\frac1t\right|\le(\gamma+d(n-1))_d.                      \tag{3}
+\]
+If $\gamma>d(n-1)$, then also
+\[
+ (\gamma-d(n-1))_d\le\left|\frac1t\right|.                      \tag{4}
+\]
+For $n=1$ both bounds are equalities; for $n\ge2$ every applicable
+inequality is strict.
+\end{theorem}
+\begin{proof}
+Let $\alpha_j=(\gamma+j)/d>0$, $0\le j<d$, and define the monic
+degree-$n$ polynomials
+\[
+ C_r(z)=\sum_{k=0}^n\binom nk
+             \left(\prod_{j=0}^{r-1}(\alpha_j)_k\right)z^{n-k},
+ \qquad 1\le r\le d.
+\]
+They have nonzero constant terms.
+If $C_{r-1}(z)=\prod_{\ell=1}^n(z+\delta_\ell)$ and $F_r$
+is the symmetric multiaffine polarization of $G_{n,\alpha_{r-1}}$,
+coefficient comparison gives
+\[
+ C_r(z)=\left(\prod_{\ell=1}^n\delta_\ell\right)
+          F_r(z/\delta_1,\ldots,z/\delta_n).                  \tag{5}
+\]
+This identity fixes the monic orientation and normalization.
+
+Suppose every root of $C_{r-1}$ has modulus at most $B$, and
+every root of $G_{n,\alpha_{r-1}}$ has modulus at most $A$.
+For $|z|>AB$ all arguments in (5) lie in the exterior disk $|w|>A$.
+The exact-degree circular theorem makes $C_r(z)\ne0$.
+Induction and Lemma~\ref{lem:gamma-disk} give
+\[
+ |z|\le\prod_{j=0}^{d-1}(\alpha_j+n-1)
+             \quad\hbox{at every zero of }C_d.               \tag{6}
+\]
+If all the individual bounds are strict, choose slightly smaller
+radii before applying the same argument; the product bound is strict.
+
+When $\gamma>d(n-1)$, every $\alpha_j>n-1$, and (1) gives
+$|\delta|\ge\alpha_j-n+1>0$ for each individual Gamma root.
+If the preceding product has lower root-modulus bound $B>0$ and
+the next factor has lower bound $A>0$, then $|z|<AB$ puts all
+arguments in (5) in the zero-free interior disk $|w|<A$.
+Circular polarization therefore gives the product lower bound.
+Strict individual bounds again give a strict product bound.
+
+Finally, factor the rising factorial into residue classes:
+\[
+ (\gamma)_{dk}=d^{dk}\prod_{j=0}^{d-1}(\alpha_j)_k,\qquad
+ T_{n,\gamma,d}(t)=(d^dt)^nC_d(1/(d^dt)).
+\]
+Consequently $|1/t|=d^d|z|$ at corresponding roots.
+Multiplying (6), or the lower product bound, by $d^d$ gives
+(3)--(4).  For $n=1$, $T=1+(\gamma)_dt$ directly.
+\end{proof}
+
+\begin{corollary}[The quadratic annulus]\label{cor:quadratic-annulus}
+Let $n\ge1$, $\gamma>2n-2$, $M=\gamma+2n$, and let $t$ be a root
+of $T_{n,\gamma,2}$.  For $u=-1/t$,
+\[
+ (\gamma-2n+2)(\gamma-2n+3)
+ \le |u|\le(M-2)(M-1)<M^2.                                  \tag{7}
+\]
+The first two inequalities are strict for $n\ge2$.
+\end{corollary}
+\begin{proof}
+Take $d=2$ in Theorem~\ref{thm:product-annulus}.
+The final comparison uses $M>2$.
+\end{proof}
+
+\begin{corollary}[General shape-shift separation]\label{cor:shape-shift-separation}
+Let $d\ge1$, $1\le r<s$, $\gamma>0$ and
+$\Delta\ge d(r+s-2)$, with real shapes and shift.
+Then $T_{r,\gamma,d}$ and $T_{s,\gamma+\Delta,d}$
+are coprime over $\mathbb C$.
+Equality in the shift threshold is allowed.
+\end{corollary}
+\begin{proof}
+Every reciprocal root of the first polynomial has modulus at most
+$A=(\gamma+d(r-1))_d$ by Theorem~\ref{thm:product-annulus}.
+The assumptions give
+$\gamma+\Delta>d(s-1)$, so the same theorem gives every
+reciprocal root of the second polynomial modulus strictly greater than
+$B=(\gamma+\Delta-d(s-1))_d$.
+The lower bound is strict since $s\ge2$.
+The rising factorial is increasing on positive arguments, and
+$\Delta\ge d(r+s-2)$ gives $B\ge A$.  The two reciprocal
+root-modulus intervals are disjoint, including at equality.
+\end{proof}
+
+\begin{corollary}[A linear lower-exponent criterion]\label{cor:linear-lower-exponent}
+Let $a\ge0$ and $d\ge1$ be integers and $\beta>0$.  Put
+$P_j=T_{j,aj+\beta,d}$.
+For any $1\le r<s$, the condition
+\[
+ a(s-r)\ge d(r+s-2)                                      \tag{8}
+\]
+implies that $P_r,P_s$ are coprime over $\mathbb C$.
+In particular, for $N\ge2$,
+\[
+ a\ge d(2N-3)\quad\Longrightarrow\quad
+             P_1,\ldots,P_N\ \hbox{are pairwise coprime}.       \tag{9}
+\]
+Thus any nonzero complex phase $X^a(A+BX^d)$ satisfying (9)
+cannot have two zero Gamma-$\beta$ moments among orders $1,\ldots,N$.
+All inequalities allow equality at the threshold.
+The bound depends on $N$; no all-index conclusion for a fixed
+lower exponent $a$ is inferred.
+\end{corollary}
+\begin{proof}
+In Corollary~\ref{cor:shape-shift-separation} use
+$\gamma=ar+\beta$ and $\Delta=a(s-r)$ to obtain the first assertion.
+For $1\le r<s\le N$ one has
+\[
+ \frac{r+s-2}{s-r}
+ =1+\frac{2(r-1)}{s-r}\le2N-3,
+\]
+so (9) implies (8) for every pair.
+When $AB\ne0$ the exact moment identity is
+\[
+ \mathcal L_\beta\bigl((X^a(A+BX^d))^j\bigr)
+       =A^j(\beta)_{aj}P_j(B/A).
+\]
+The factors outside $P_j$ are nonzero. If one coefficient
+vanishes, the nonzero phase is a monomial and every positive
+moment is nonzero.
+\end{proof}
+
+The exterior-circle application is an exact-degree input stronger
+than its half-plane restriction.  The written comparison and
+polarization proofs supply every gap, shape and index quantifier.
+Exact controls check the displayed identities and normalizations;
+they do not certify an unrestricted statement by a finite prefix.
+The separation criteria require their stated shape or lower-exponent
+inequalities. They close no unrestricted all-index FC/SFC goal.  Internal replay and audit remain
+distinct from independent whole-proof replay, formal verification,
+external review and priority.
+\end{document}

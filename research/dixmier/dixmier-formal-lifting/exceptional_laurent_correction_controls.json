@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "claim": "Exceptional final Laurent coefficient has exact AB correction and optional trace correction",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Fraction Laurent polynomials in t,rho,a,b,tau"
+  },
+  "formula": "C_N-lambda_I*tau_N-(p-1)/(p*epsilon_last^p)*A_N*B_N=-lambda_I*[z^(-p/2)]W",
+  "controls": [
+    {
+      "p": 2,
+      "epsilon0": "1",
+      "N": 3,
+      "D": 7,
+      "final_order": 11,
+      "distinguished_exponent": 7,
+      "last_gap": 3,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 2,
+      "epsilon0": "1",
+      "N": 5,
+      "D": 11,
+      "final_order": 17,
+      "distinguished_exponent": 11,
+      "last_gap": 5,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 2,
+      "epsilon0": "1",
+      "N": 9,
+      "D": 19,
+      "final_order": 29,
+      "distinguished_exponent": 19,
+      "last_gap": 9,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 2,
+      "epsilon0": "2",
+      "N": 3,
+      "D": 7,
+      "final_order": 11,
+      "distinguished_exponent": 7,
+      "last_gap": 3,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 2,
+      "epsilon0": "2",
+      "N": 5,
+      "D": 11,
+      "final_order": 17,
+      "distinguished_exponent": 11,
+      "last_gap": 5,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 2,
+      "epsilon0": "2",
+      "N": 9,
+      "D": 19,
+      "final_order": 29,
+      "distinguished_exponent": 19,
+      "last_gap": 9,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": true,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "1",
+      "N": 3,
+      "D": 7,
+      "final_order": 221,
+      "distinguished_exponent": 217,
+      "last_gap": 3,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "1",
+      "N": 5,
+      "D": 11,
+      "final_order": 347,
+      "distinguished_exponent": 341,
+      "last_gap": 5,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "1",
+      "N": 9,
+      "D": 19,
+      "final_order": 599,
+      "distinguished_exponent": 589,
+      "last_gap": 9,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "2",
+      "N": 3,
+      "D": 7,
+      "final_order": 221,
+      "distinguished_exponent": 217,
+      "last_gap": 3,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "2",
+      "N": 5,
+      "D": 11,
+      "final_order": 347,
+      "distinguished_exponent": 341,
+      "last_gap": 5,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    },
+    {
+      "p": 4,
+      "epsilon0": "2",
+      "N": 9,
+      "D": 19,
+      "final_order": 599,
+      "distinguished_exponent": 589,
+      "last_gap": 9,
+      "indeterminate_parameters": [
+        "rho!=0",
+        "a!=0",
+        "b",
+        "tau"
+      ],
+      "baseline_nonzero": false,
+      "nonzero_B_retained": true,
+      "AB_and_trace_identity": true
+    }
+  ],
+  "scope": "All-N conditional theorem is written; finite scalar Laurent controls are not operator/DC-pair realizations.",
+  "hashes": {
+    "EXCEPTIONAL_LAURENT_CORRECTION.md": "1c7fc7739cc39c0b42968837cf640d9787c5972d25a893437994e28d475e255a",
+    "check_exceptional_laurent_correction.py": "374b3de760b8f53dc05431f8ffaae8d45993d224790d39b86ea59e878c9d40e3",
+    "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md": "a70ef55803377e55d7172cf94281f7eb1a9a4f9d49164fd90f6d573cef9a33a0",
+    "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
+  },
+  "formal_verification": false,
+  "external_review": false
+}

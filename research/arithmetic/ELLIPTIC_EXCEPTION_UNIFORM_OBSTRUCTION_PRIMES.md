@@ -4,11 +4,12 @@ The nonrational numerator branch contributes a third independent
 point over a fixed quadratic field. A rank-three collision argument
 therefore gives a stronger estimate at primes where a numerator
 branch is actually supported. It also yields a finite, computable
-set containing every new prime that can kill any smaller-prime
-prefix of a prescribed positive mass, uniformly over all such
-prefixes and all four classes. Neither result establishes an
-all-primes tail or rules out finite obstructions of arbitrarily
-small mass.
+set containing every new prime that can kill a smaller-prime prefix
+with any of the four fixed core tests and a prescribed positive mass,
+uniformly over these prefixes and all four classes. Common numerator
+returns for two independent Haar vectors also have a quantitative
+all-primes tail. This does not control the Hasse tail for one vector
+or rule out finite obstructions with arbitrarily small prefix mass.
 
 ## 1. A rational height bound for three independent directions
 
@@ -247,24 +248,37 @@ any event cannot increase its absolute mass. As in ESR2, the
 exceptional set has density zero among rational primes, using the
 elementary prime-count lower bound proved there. \(\square\)
 
-## 4. Uniform finite candidates for killing any prefix of a given mass
+## 4. Effective uniform candidates with the explicit four-prime core
 
-Fix the triangular cutoff `p_*` of ETP1. For `0<eta<=1/4` put
+Use the fixed test core
+
+\[
+ C_0=\{2,3,5,1889\}
+\]
+
+of EDC1--EDC2 in
+[the dependency-core note](ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md).
+For `0<eta<=1/4` put
 
 \[
  z_\eta=1+2/\eta,\qquad
- \mathcal C_\eta=\{p\text{ prime}:p\le p_*\}
-                             \cup\{p:p\mid J_{z_\eta}\}.      \tag{4.1}
+ \mathcal C_\eta=C_0\cup\{p:p\mid J_{z_\eta}\}.                \tag{4.1}
 \]
 
-When `eta` is a supplied positive rational number, (2.1) is an
-explicit finite integer computation and its prime divisors can be
-found by integer factorization. One may use any supplied rational
-lower bound on a positive prefix coefficient.
+For supplied rational `eta`, this is an explicit finite computation:
+(2.1) uses rational group arithmetic and denominators, followed by
+integer factorization. One may use any supplied rational lower bound
+on a positive prefix coefficient. No unspecified numerical cutoff
+or full Mordell--Weil basis is an input.
 
-**Theorem EUP3 (candidate set uniform in the prefix).** For every
-class `a`, every finite set `S` consisting of primes smaller than
-`p`, and every prime `p`,
+**Theorem EUP3 (effective candidates uniform in the prefix).** For
+every class `a`, prime `p`, and finite prime set satisfying
+
+\[
+ S\subseteq C_0\cup\{q\text{ prime}:q<p\},
+\]
+
+one has
 
 \[
  \boxed{\mu_{S,a}\ge\eta,\qquad
@@ -272,7 +286,7 @@ class `a`, every finite set `S` consisting of primes smaller than
           \quad\Longrightarrow\quad p\in\mathcal C_\eta.}    \tag{4.2}
 \]
 
-The set is independent of `S,a` and satisfies
+The candidate set is independent of `S,a` and satisfies
 
 \[
  \sum_{p\in\mathcal C_\eta}\log p\ll_E\eta^{-5/3},\qquad
@@ -280,46 +294,152 @@ The set is independent of `S,a` and satisfies
                      \frac{\eta^{-5/3}}{\log(2/\eta)}.        \tag{4.3}
 \]
 
-**Proof.** Primes at most `p_*` are included by definition. A larger
-prime that kills a positive smaller-prime prefix must be good and
-active. EFO3 in
-[the finite-obstruction note](ELLIPTIC_EXCEPTION_FINITE_OBSTRUCTION_CERTIFICATES.md)
-then forces all the positive prefix support at `p` onto the finite
-zero residues: every other supported residue has positive
-conditional local survival for the fresh `p`-primary coordinate.
-Uniform reduction Haar measure on `R_p` gives
+**Proof.** Every finite-place set is already feasible in classes
+`1,10q_0`, by ECO1 and the certified-class theorem. Thus neither
+class can satisfy the killing hypothesis. For either remaining
+class `2,5q_0`, primes one modulo three and the bad prime `q_0`
+are automatic, by EDC1. The four core primes are included in
+`C_eta`. It remains to consider a good active prime `p>=11`,
+`p!=1889,q_0`.
+
+The actual prefix is measurable in the non-`p` primary factors.
+Indeed the core dependencies are only `2,3,5,7,1889`, and none
+of them equals this `p`. At a remaining smaller good prime `q`,
+the reduction order has all prime divisors smaller than `q`, and
+its formal coordinate is `q`-primary. EDC2 therefore supplies the
+same fresh formal `p`-coordinate and exact residue-hazard kernel.
+This applies to any subset of the core tests: we do not impose
+missing core conditions or reduce the given prefix mass.
+
+In particular, a larger core place such as 1889 may already be in
+`S` when `p<1889`. It causes no problem after conditioning on all
+non-`p` factors: its finite reduction quotient has order
+`1890=2*3^3*5*7`, and its formal factor is pro-1889. This is the
+core-adjusted conditioning of EDC2, rather than the original
+numerically lower-prime filtration with an unspecified cutoff.
+
+If the new test kills this positive prefix, all its reduction
+support must lie on the finite zero residues. Every other supported
+residue has positive conditional local survival. Uniform reduction
+Haar measure on `R_p` then gives
 
 \[
  \eta\le\mu_{S,a}\le\frac2{r_p}.                 \tag{4.4}
 \]
 
 At least one zero is supported, so `p` splits in `L` and (3.1)
-holds. Hence
+holds. Consequently
 
 \[
  t_p\le r_p\le2/\eta<z_\eta.
 \]
 
-EUP1 makes `p` divide the explicit integer `J_(z_eta)`, proving
-(4.2). The entire divisor set, including any irrelevant extra
-primes, satisfies (2.2)--(2.3), and the fixed initial prime set
-only changes the constant. Since `z_eta` is comparable to
-`1/eta` for `0<eta<=1/4`, this proves (4.3). \(\square\)
+EUP1 makes `p` divide `J_(z_eta)`, proving (4.2). The entire
+divisor set, including any irrelevant extra primes, satisfies
+(2.2)--(2.3). Adding the fixed four primes changes only the
+curve-dependent constant. Since `z_eta` is comparable to
+`1/eta` on the indicated range, this proves (4.3). \(\square\)
 
-The smaller-prime hypothesis is essential: it preserves the fresh
-formal coordinate used in ETP1 and EFO3. This theorem improves the
-coset-dependent finite exceptional set of EOP2 to one set uniform
-over all prefixes with a common mass lower bound. Membership in
-`C_eta` is only a necessary condition; no candidate is asserted to
-kill a prefix or to be a minimal obstruction. As `eta` decreases,
-the set can grow; the theorem gives no mass-independent finite set
-covering every possible finite obstruction and does not prove
+The permitted prefix may include a numerically larger core prime.
+Every other nonautomatic prime must be smaller than the new one;
+arbitrary later tests can constrain its primary factor, so this
+hypothesis is essential. The theorem replaces a coset-dependent
+exceptional set by one effective set uniform over all permitted
+prefixes with a common mass lower bound. Membership in `C_eta` is
+only necessary: no candidate is asserted to kill a prefix or form
+a minimal obstruction. As `eta` decreases the set can grow, so
+there is no mass-independent finite candidate set or proof of
 all-finite-set positivity in either unresolved class.
 
-The written proof uses rational heights on the two fixed rational
-curves, the exact addition identity (1.5), a finite product of
-integer denominators, and the already proved terminal-support
-criterion. No extrapolation from finite prime experiments, new
-moving family, full Mordell--Weil basis or artificial checker is
-used. The prime-distribution and all-primes moment questions remain
-separate.
+The proof uses rational heights on the two fixed rational curves,
+the exact addition identity (1.5), an explicit product of integer
+denominators, and the dependency-core terminal-support argument.
+It needs no finite-prime extrapolation, new moving family, full
+Mordell--Weil basis or artificial checker.
+## 5. Square-summable numerator marginals over all primes
+
+Away from the fixed finite set of bad-reduction and branch constants,
+let `A_p` be the supported finite-zero reduction event in the intrinsic
+rational closure, and put `n_p=nu_infinity(A_p)`. Set `n_p=0`
+when the finite zeros are not rational or are unsupported. Reduction
+is uniform on `R_p`, and support of one zero implies support of its
+negative, so
+
+\[
+ n_p=\begin{cases}2/r_p,&\bar R\in R_p,\\
+                  0,&\text{otherwise}.
+       \end{cases}                                             \tag{5.1}
+\]
+
+This definition may include all good primes, not just primes two
+modulo three. The finitely many omitted primes do not affect the
+following conclusions. At the other primes, `A_p` and the event
+of positive valuation `F` differ at most on the measure-zero base
+points.
+
+**Corollary EUP4 (all-primes numerator summability).** For `0<t<=1`,
+
+\[
+ \#\{p:n_p>t\}\ll_E
+                       \frac{t^{-5/3}}{\log(2/t)}.             \tag{5.2}
+\]
+
+Consequently
+
+\[
+ \sum_p n_p^s<\infty\quad\text{for every }s>5/3,
+ \qquad\boxed{\sum_p n_p^2<\infty.}             \tag{5.3}
+\]
+
+More quantitatively, for sufficiently large `Y`,
+
+\[
+ \boxed{\sum_{p>Y}n_p^2\ll_E
+                 \frac{1}{(\log Y)^{1/5}\log\log Y}.}         \tag{5.4}
+\]
+
+Two independent intrinsic-Haar vectors therefore have simultaneous
+numerator returns at only finitely many primes, almost surely. The
+probability of any such common return above `Y` is at most the
+right-hand side of (5.4), with its fixed implicit constant.
+
+**Proof.** If `n_p>t`, the branch is supported and
+`t_p<=r_p<2/t`. EUP1 with `z=2/t` proves (5.2); its logarithm
+is comparable to `log(2/t)` throughout the indicated range.
+For `s>5/3`, nonnegative integration, first for finite prime sets
+and then by monotone limits, gives
+
+\[
+ \sum_p n_p^s
+   =s\int_0^1 t^{s-1}\#\{p:n_p>t\}\,dt<\infty.
+\]
+
+For the quantitative tail, if `n_p>0`, use EUP1 with `z=t_p+1`
+to obtain `log p<=log J_z<<_E(t_p+1)^(5/3)`. Since `t_p>=1`
+and `n_p<=2/t_p`, this implies
+`n_p<<_E(log p)^(-3/5)`. Also, for small positive `t`,
+
+\[
+ \sum_{p:n_p\le t}n_p^2
+  \le 2\int_0^t u\,\#\{p:n_p>u\}\,du
+  \ll_E\frac{t^{1/3}}{\log(2/t)},
+\]
+
+by (5.2). All primes exceeding `Y` have
+`n_p<=C_E(log Y)^(-3/5)`. Substituting this value of `t` in
+the last estimate gives (5.4).
+
+For independent vectors `omega_1,omega_2`, the probability of a
+common return at `p` is `n_p^2`. The probability of a common
+return at any prime exceeding `Y` is at most
+`sum_(p>Y)n_p^2`, which tends to zero. Thus infinitely many
+common returns have probability zero. No independence between
+different primes is used. \(\square\)
+
+This controls overlap between two independent Haar vectors. It
+neither gives a bound on same-vector correlations across distinct
+primes nor asserts convergence of `sum_p n_p`. Its uniform all-prime
+pair tail is not a single-vector Hasse tail. In particular it
+supplies no all-primes numerator-survival measure or asymptotic
+for rational-target pairs. The critical exponent `s=5/3` is not
+covered by this proof.

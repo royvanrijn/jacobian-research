@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-11-17",
+  "scope": "Conditional whole-root-chart repair given a regular polynomial source coordinate on a canonical component open; coordinate existence and global alignment unproved.",
+  "primary_sources": [
+    {
+      "path": "sources/stacks-03DW-quasicoherent-fppf-comparison.html",
+      "url": "https://stacks.math.columbia.edu/tag/03DW",
+      "identity": "Stacks Project, Proposition35.9.3, tag03DW.",
+      "locator": "Displayed statement and proof, specifically comparison for the fppf topology and a quasi-coherent structure sheaf.",
+      "inspection": "Primary statement and full displayed proof read. It identifies ordinary quasi-coherent cohomology with the corresponding fppf sheaf cohomology.",
+      "application": "The already-established Ga torsor on A1 has class in H1_fppf(A1,Ga)=H1(A1,O).",
+      "sha256": "8864b24543bf1df3829c69c0d9b7ee4df67451e9ab7fa5ea13f2e3dd54ad546a"
+    },
+    {
+      "path": "sources/stacks-01XB-affine-cohomology-vanishing.html",
+      "url": "https://stacks.math.columbia.edu/tag/01XB",
+      "identity": "Stacks Project, Lemma30.2.2, tag01XB.",
+      "locator": "Displayed statement and proof.",
+      "inspection": "Primary statement and full displayed proof read. Higher quasi-coherent cohomology vanishes on affine opens.",
+      "application": "H1(A1,O)=0 trivializes the torsor.",
+      "sha256": "34d0d805ea9f654c3fc7042c298232841e9e2afd8c57bb76d05e3adc8ed560a5"
+    }
+  ],
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "locator": "Sections2\u20134 for smooth affine whole component open M_i, disjoint closed source line, normalizationA1/topologicalC boundary, and finite-point coverage; Section5 for actual exact unit source volume."
+    },
+    {
+      "path": "HAMILTONIAN_COMMON_COORDINATE_AND_ADDITIVE_COMPLETION.md",
+      "locator": "Sections2\u20134 for regular source coordinate, unit-volume Hamiltonian extension, local nilpotence and whole-source preservation."
+    }
+  ],
+  "checked_hypotheses": [
+    "Begin on the actual component open M_i=X union D_i; no normalized-cover smoothness assertion is made on all of U with unrelated boundary multiplicities.",
+    "Normalize z^r=y-lambda before asserting smoothness; locally at D_i the normal algebra is w^r=u, z=f*w.",
+    "Remove the whole source line and all but one copied boundary component; effective Cartier complements are affine.",
+    "The restricted normalized cover is etale, so its pulled-back volume is unit and defines the divided Hamiltonian directly.",
+    "A nonzero LND on an irreducible curve gives a slice and proves algebraic A1 without normality assumptions.",
+    "The torsor claim uses smooth surjectivity, one free orbit per fibre and the action-map isomorphism; freeness alone is not substituted.",
+    "Exactness uses a primitive on the SAME original component open, not only separately exact forms on two plane charts.",
+    "Separatedness of the same normalized cover forces the residual principal part to be nonzero."
+  ],
+  "adopted_foundations": [
+    "Finite normalization of affine complex algebras, regularity of finite etale algebras and normality of regular schemes.",
+    "Finite etale unit-root covers are topological covers on complex points; a cover of the given topologicalC boundary splits.",
+    "Affineness local on the target for effective Cartier complements.",
+    "Algebraic Ga actions from LNDs, standard torsor classification by H1, and etale universally bijective morphisms being isomorphisms."
+  ],
+  "not_claimed": [
+    "Existence of any regular source coordinate or one common across all components.",
+    "Global alignment of source coordinates, cyclic root choices, slices or Laurent principal parts.",
+    "Any global Xie/intersection bound or target-degree/companion-degree cutoff.",
+    "A genuine Keller target pair for the explicit affine control surfaces.",
+    "Formal verification, external human review or HC4/JC2 resolution."
+  ]
+}

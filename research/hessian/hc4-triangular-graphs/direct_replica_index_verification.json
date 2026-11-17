@@ -1,13 +1,13 @@
 {
   "claim": "Direct given-polynomial-replica index divisibility",
   "outcome": "PASS",
-  "check_count": 185,
+  "check_count": 227,
   "python": "3.12.3",
   "sympy": "1.14.0",
   "source": "DIRECT_REPLICA_INDEX_FROM_A_DESCENDED_DIFFERENTIAL.md",
-  "source_sha256": "2952c484cec7f1c98e2d3994073b301a09f186502182564154008089a2cc3ea4",
+  "source_sha256": "57e96760cbb12f8fa6a7bb6e163260c7463c52ced35a174c93dc198db1e66c09",
   "checker": "verify_direct_replica_index.py",
-  "checker_sha256": "4f483b990f419436d1a554eb8db178e04c82e207b96ffe8ba6a2a9fe490bcef2",
+  "checker_sha256": "3c5f3d22cea7795126163361e42e7e93eb57e9c5106d587570a6f98dd35af287",
   "scope": "Internal exact formula controls. The written proof gives the unrestricted theorem for a given delta=p(y)partial_x and a delta-stable intermediate field of an actual plane Keller map. Nontrivial rational field controls are outside the whole-plane polynomial target hypotheses. No LND classification, first-velocity integrality, external review or formal verification.",
   "checks": [
     {
@@ -428,6 +428,174 @@
     },
     {
       "name": "tower through C(y^7) with relative degree3",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m1 N1",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m1 N1",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m1 N1",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m1 N1",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m1 N1",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m1 N1",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m2 N2",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m2 N2",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m2 N2",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m2 N2",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m2 N2",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m2 N2",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m2 N6",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m2 N6",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m2 N6",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m2 N6",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m2 N6",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m2 N6",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m3 N6",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m3 N6",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m3 N6",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m3 N6",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m3 N6",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m3 N6",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m4 N12",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m4 N12",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m4 N12",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m4 N12",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m4 N12",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m4 N12",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m5 N10",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m5 N10",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m5 N10",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m5 N10",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m5 N10",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m5 N10",
+      "passed": true
+    },
+    {
+      "name": "monomial slice rescaling m7 N21",
+      "passed": true
+    },
+    {
+      "name": "monomial multiplier belongs to invariant field m7 N21",
+      "passed": true
+    },
+    {
+      "name": "rescaled monomial delta coefficient m7 N21",
+      "passed": true
+    },
+    {
+      "name": "rational deck formula fixes new slice m7 N21",
+      "passed": true
+    },
+    {
+      "name": "deck character commutes with monomial replica m7 N21",
+      "passed": true
+    },
+    {
+      "name": "cyclic primitive polynomial m7 N21",
       "passed": true
     },
     {

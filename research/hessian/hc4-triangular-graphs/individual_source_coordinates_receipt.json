@@ -1,0 +1,1092 @@
+{
+  "claim": "INDIVIDUAL-SOURCE-COORDINATES-AND-WHOLE-CHARTS",
+  "outcome": "PASS",
+  "check_count": 259,
+  "checks": [
+    {
+      "name": "case1 blowup intersection congruence step1",
+      "passed": true
+    },
+    {
+      "name": "case1 graph determinant preserved step1",
+      "passed": true
+    },
+    {
+      "name": "case1 total minus determinant is minus one step1",
+      "passed": true
+    },
+    {
+      "name": "case1 free vertex determinant recurrence step1",
+      "passed": true
+    },
+    {
+      "name": "case1 augmented labels satisfy adjunction step1",
+      "passed": true
+    },
+    {
+      "name": "case1 blowup intersection congruence step2",
+      "passed": true
+    },
+    {
+      "name": "case1 graph determinant preserved step2",
+      "passed": true
+    },
+    {
+      "name": "case1 total minus determinant is minus one step2",
+      "passed": true
+    },
+    {
+      "name": "case1 free vertex determinant recurrence step2",
+      "passed": true
+    },
+    {
+      "name": "case1 augmented labels satisfy adjunction step2",
+      "passed": true
+    },
+    {
+      "name": "case1 blowup intersection congruence step3",
+      "passed": true
+    },
+    {
+      "name": "case1 graph determinant preserved step3",
+      "passed": true
+    },
+    {
+      "name": "case1 total minus determinant is minus one step3",
+      "passed": true
+    },
+    {
+      "name": "case1 free vertex determinant recurrence step3",
+      "passed": true
+    },
+    {
+      "name": "case1 augmented labels satisfy adjunction step3",
+      "passed": true
+    },
+    {
+      "name": "Case1 first label is minus one",
+      "passed": true
+    },
+    {
+      "name": "Case1 second label is zero",
+      "passed": true
+    },
+    {
+      "name": "Case1 third free label is one",
+      "passed": true
+    },
+    {
+      "name": "Case1 third determinant is negative",
+      "passed": true
+    },
+    {
+      "name": "case1 boundary det sign",
+      "passed": true
+    },
+    {
+      "name": "case1 dual boundary intersections j0",
+      "passed": true
+    },
+    {
+      "name": "case1 unnormalized cofactor equals dual self j0",
+      "passed": true
+    },
+    {
+      "name": "case1 dual boundary intersections j1",
+      "passed": true
+    },
+    {
+      "name": "case1 unnormalized cofactor equals dual self j1",
+      "passed": true
+    },
+    {
+      "name": "case1 dual boundary intersections j2",
+      "passed": true
+    },
+    {
+      "name": "case1 unnormalized cofactor equals dual self j2",
+      "passed": true
+    },
+    {
+      "name": "case1 dual boundary intersections j3",
+      "passed": true
+    },
+    {
+      "name": "case1 unnormalized cofactor equals dual self j3",
+      "passed": true
+    },
+    {
+      "name": "positive class has zero retained-divisor coefficient",
+      "passed": true
+    },
+    {
+      "name": "positive class lies in other-boundary span",
+      "passed": true
+    },
+    {
+      "name": "other-boundary minus determinant is strictly negative",
+      "passed": true
+    },
+    {
+      "name": "positive-vector orthogonal split leaves negative complement n1",
+      "passed": true
+    },
+    {
+      "name": "positive-vector orthogonal split leaves negative complement n2",
+      "passed": true
+    },
+    {
+      "name": "positive-vector orthogonal split leaves negative complement n4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 edge exists before step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 edge vertex determinant recurrence step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 new edge determinant recurrence step2 p0",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 new edge determinant recurrence step2 p1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step2",
+      "passed": true
+    },
+    {
+      "name": "right-edge initial label n2",
+      "passed": true
+    },
+    {
+      "name": "right-edge initial determinant n2",
+      "passed": true
+    },
+    {
+      "name": "right-edge chain has unique older left neighbour n2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 edge exists before step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 edge vertex determinant recurrence step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 new edge determinant recurrence step3 p0",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 new edge determinant recurrence step3 p2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step3",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry label n2",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry determinant n2",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry content n2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 blowup intersection congruence step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 graph determinant preserved step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 total minus determinant is minus one step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 free vertex determinant recurrence step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 augmented labels satisfy adjunction step9",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive label is one n2",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive determinant n2",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive determinant nonnegative n2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 boundary det sign",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j0",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j0",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j1",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j2",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j3",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j4",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j5",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j6",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j7",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j8",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 dual boundary intersections j9",
+      "passed": true
+    },
+    {
+      "name": "case2-n2 unnormalized cofactor equals dual self j9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge exists before step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge vertex determinant recurrence step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step2 p0",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step2 p1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge exists before step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge vertex determinant recurrence step3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step3 p2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step3 p1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step3",
+      "passed": true
+    },
+    {
+      "name": "right-edge initial label n3",
+      "passed": true
+    },
+    {
+      "name": "right-edge initial determinant n3",
+      "passed": true
+    },
+    {
+      "name": "right-edge chain has unique older left neighbour n3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge exists before step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 edge vertex determinant recurrence step4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step4 p2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 new edge determinant recurrence step4 p3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step4",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry label n3",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry determinant n3",
+      "passed": true
+    },
+    {
+      "name": "Case2 left-entry content n3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 blowup intersection congruence step12",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 graph determinant preserved step12",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 total minus determinant is minus one step12",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 free vertex determinant recurrence step12",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 augmented labels satisfy adjunction step12",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive label is one n3",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive determinant n3",
+      "passed": true
+    },
+    {
+      "name": "Case2 first positive determinant nonnegative n3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 boundary det sign",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j0",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j0",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j1",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j2",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j3",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j4",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j5",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j6",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j7",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j8",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j9",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j10",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j11",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 dual boundary intersections j12",
+      "passed": true
+    },
+    {
+      "name": "case2-n3 unnormalized cofactor equals dual self j12",
+      "passed": true
+    },
+    {
+      "name": "label1 determinant closed form has correct initial value",
+      "passed": true
+    },
+    {
+      "name": "label1 edge closed form has correct initial value",
+      "passed": true
+    },
+    {
+      "name": "label1 edge recurrence holds identically",
+      "passed": true
+    },
+    {
+      "name": "label1 vertex recurrence holds identically",
+      "passed": true
+    },
+    {
+      "name": "label1 determinant polynomial has nonnegative coefficients",
+      "passed": true
+    },
+    {
+      "name": "first-positive determinant lower bound is nonnegative for n>=2",
+      "passed": true
+    },
+    {
+      "name": "first blowup finite coordinate recovers source b",
+      "passed": true
+    },
+    {
+      "name": "second free center source a inverse",
+      "passed": true
+    },
+    {
+      "name": "second free center source b positive equation",
+      "passed": true
+    },
+    {
+      "name": "second free divisor volume order minus one",
+      "passed": true
+    },
+    {
+      "name": "second blowup other chart coordinate remains regular",
+      "passed": true
+    },
+    {
+      "name": "second blowup charts represent same source b",
+      "passed": true
+    },
+    {
+      "name": "second blowup charts represent same source a",
+      "passed": true
+    },
+    {
+      "name": "free descendant pulls vanishing to positive exceptional factor",
+      "passed": true
+    },
+    {
+      "name": "intersection descendant first chart vanishing remains positive",
+      "passed": true
+    },
+    {
+      "name": "intersection descendant second chart vanishing remains positive",
+      "passed": true
+    },
+    {
+      "name": "next free divisor can have volume order zero",
+      "passed": true
+    },
+    {
+      "name": "free3 coordinate prototype has a logarithmic source primitive obstruction",
+      "passed": true
+    },
+    {
+      "name": "first valuation has a positive source coordinate",
+      "passed": true
+    },
+    {
+      "name": "second valuation has a positive source coordinate",
+      "passed": true
+    },
+    {
+      "name": "first valuation excludes the other's coordinate",
+      "passed": true
+    },
+    {
+      "name": "second valuation excludes the other's coordinate",
+      "passed": true
+    },
+    {
+      "name": "simultaneous ring presentation relation",
+      "passed": true
+    },
+    {
+      "name": "simultaneous ring still has source fraction field x",
+      "passed": true
+    },
+    {
+      "name": "simultaneous ring still has source fraction field y",
+      "passed": true
+    },
+    {
+      "name": "comparison control every polynomial pair has source-axis Jacobian factor",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: coordinate can depend on the component",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: does not adopt Xie's full",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: trdeg_C(R intersect O_v)=2",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: specialized imported proof consequence",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: the first TWO centers are free",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: ENTIRE second exceptional curve",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: does not prove that b_i and b_j",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: No common-pencil",
+      "passed": true
+    },
+    {
+      "name": "Borisov primary exact source pin",
+      "passed": true
+    },
+    {
+      "name": "Borisov audit identifies the minimum-ancestor import",
+      "passed": true
+    },
+    {
+      "name": "Xie full theorem is not silently adopted",
+      "passed": true
+    },
+    {
+      "name": "source audit records complete primary proof inspection",
+      "passed": true
+    },
+    {
+      "name": "source audit records visual primary diagrams inspection",
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 0.062488221970852464,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "0ad465244a3f8637d3968195c63dc956ac8341654ea3e7c8102ac4f25389f4e8",
+  "checker_sha256": "a43392a9d7ce44b3262860f1cb11e27f53f56d47f045239b8e71f3d5a62f1e77",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6"
+    },
+    {
+      "path": "VALUATION_MATRIX_AND_CONTRACTED_SOURCE_AXES_CONTROL.md",
+      "sha256": "53272289464f26fb8b1221190ff0ea6bacfd11073d78b43e4f7f305dd751de46"
+    },
+    {
+      "path": "sources/individual-source-coordinates-source-audit.json",
+      "sha256": "bccdc3ba5da390c48a45b6c3ba096bbd09ce310ced4e20f0201a4930e63da241"
+    }
+  ],
+  "primary_inputs": [
+    {
+      "path": "sources/borisov-divisorial-valuations-2013.pdf",
+      "sha256": "b4c0c4511079a3429bc859b0ff9b67d98b750ef502decd036e25dbcf194016d8",
+      "url": "https://people.math.binghamton.edu/borisov/documents/papers/divisorialvaluations.pdf",
+      "locator": "Theorem4.3 proof printed12\u201315, especially Case1/2 and Lemmas4.3\u20134.4; conventions printed3\u20136 and9\u201310."
+    }
+  ],
+  "proved_scope": {
+    "every_actual_complex_polynomial_plane_Keller_degree": true,
+    "all_original_added_unramified_primes_retained": true,
+    "individual_polynomial_source_coordinate_exists": true,
+    "individual_coordinate_regular_on_entire_Mi": true,
+    "boundary_smooth_algebraic_A1_unconditionally": true,
+    "whole_normalized_plane_root_charts_unconditionally": true,
+    "direct_surface_proof_of_needed_negative_determinant": true,
+    "Xie_full_theorem_adopted": false,
+    "Borisov_specialized_minimality_proof_consequence_adopted": true,
+    "common_alignment_or_common_source_coordinate_proved": false,
+    "effective_degree_or_ancestor_cutoff_proved": false,
+    "target_Ga_descent_or_Keller_inverse_proved": false,
+    "HC4_or_JC2_proved": false
+  },
+  "assurance": "Internal written proof with precisely inspected classical import and exact controls; no formal verification or external human review."
+}

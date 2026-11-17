@@ -1,0 +1,1077 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Author" CONTENT="R.A.Wilson, R.A.Parker and J.N.Bray">
+<META NAME="Description" CONTENT="ATLAS of Group Representations: L2(7), L3(2)">
+<META NAME="Keywords" CONTENT="Group, Representation, Presentation, Maximal subgroup, Conjugacy class">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../at2.css">
+<TITLE>ATLAS: Linear group L2(7) = L3(2)</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<H1>A<SMALL>TLAS</SMALL>: Linear group L<SUB>2</SUB>(7),
+Linear group L<SUB>3</SUB>(2)</H1>
+
+Order = 168 = 2<SUP>3</SUP>.3.7.<BR>
+Mult = 2.<BR>
+Out = 2.
+<HR>
+
+See also the A<SMALL>TLAS</SMALL> of Finite Groups, page 3.<BR>
+The page for the group 2<SUP>3</SUP>.L<SUB>3</SUB>(2) (non­split extension)
+is available <A HREF="../../misc/23L32">here</A>
+[but beware of incompatibilities with this page].
+
+<HR>
+
+<P>
+The following information is available for L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2):
+<UL>
+<LI> <A HREF="#sgens">Standard generators</A>.
+<LI> <A HREF="#auts">Automorphisms</A>.
+<LI> <A HREF="#bbox">Black box algorithms</A>.
+<LI> <A HREF="#pres">Presentations</A>.
+<LI> <A HREF="#reps">Representations</A>.
+<LI> <A HREF="#maxs">Maximal subgroups</A>.
+<LI> <A HREF="#ccls">Conjugacy classes</A>.
+</UL>
+
+<HR>
+
+<H3><A NAME="sgens">Standard generators</A></H3>
+
+Standard generators of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) are
+<B>a</B> and <B>b</B> where
+<B>a</B> has order 2, <B>b</B> has order 3
+and <B>ab</B> has order 7.
+<BR>
+Standard generators of the double cover 2.L<SUB>2</SUB>(7)
+= SL<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2) are preimages
+<B>A</B> and <B>B</B> where
+<B>B</B> has order 3 and <B>AB</B> has order 7.
+<P>
+Standard generators of L<SUB>2</SUB>(7):2 = PGL<SUB>2</SUB>(7) = L<SUB>3</SUB>(2):2 are
+<B>c</B> and <B>d</B> where
+<B>c</B> is in class 2B, <B>d</B> has order 3,
+<B>cd</B> has order 8 and <B>cdcdd</B> has order 4. These conditions imply that <B>cd</B> is in class 8A.
+<BR>
+Standard generators of either of the double covers 2.PGL<SUB>2</SUB>(7) are
+preimages <B>C</B> and <B>D</B> where
+<B>D</B> has order 3.
+
+<HR>
+
+
+
+<H3><A NAME="auts">Automorphisms</A></H3>
+
+
+An outer automorphism, <B>u</B> say, of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) of order 2 may be obtained by mapping <B>(a, b)</B> to <B>(a, b<SUP>-1</SUP>)</B>.
+<BR>
+The lift of <B>u</B> to an automorphism, <B>U</B> say, of SL<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2) maps <B>(A, B)</B> to <B>(A<SUP>-1</SUP>, B<SUP>-1</SUP>)</B>.
+<P>
+To obtain our standard generators for L<SUB>2</SUB>(7):2 = L<SUB>3</SUB>(2):2 we may take 
+<A HREF="words/L27d2G2-G1W2"><B>c = u</B> and <B>d = b<SUP>ababb</SUP></B></A>.
+<BR>
+This forces <A HREF="words/L27d2G1-max1W2"><B>a = [c, d]<SUP>2</SUP> = (cddcd)<SUP>2</SUP> = (ddcdc)<SUP>2</SUP></B> and <B>b = (dc)<SUP>3</SUP>(ddc)<SUP>3</SUP></B></A> (and <B>u = c</B>).
+<P>
+Alternatively, we can take 
+<A HREF="words/L27d2G2-G1W1"><B>c = u<SUP>babbab</SUP></B> and <B>d = b</B></A>, in which case we force 
+<A HREF="words/L27d2G1-max1W1"><B>a = ((cd)<SUP>4</SUP>)<SUP>dcdc</SUP></B> and <B>b = d</B></A> (and <B>u = c<SUP>dcd</SUP>cc<SUP>dcd</SUP></B>).
+
+
+<HR>
+
+<H3><A NAME="bbox">Black box algorithms</A></H3>
+
+To find standard generators for L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2):
+<UL>
+<LI> Find an element of order 2 or 4. This powers up to <i>x</i> in class 2A.<BR>
+[The probability of success at each attempt is 3 in 8 (about 1 in 3).]
+<LI> Find an element <i>y</i> of order 3.<BR>
+[The probability of success at each attempt is 1 in 3.]
+<LI> Find conjugates <i>a</i> of <i>x</i> and <i>b</i> of <i>y</i> such that <i>ab</i> has order 7.<BR>
+[The probability of success at each attempt is 2 in 7 (about 1 in 4).]
+</UL>
+
+To find standard generators for L<SUB>2</SUB>(7).2 = L<SUB>3</SUB>(2).2:
+<UL>
+<LI> Find an element of order 6. This cubes to <i>x</i> in class 2B.<BR>
+[The probability of success at each attempt is 1 in 6 (or 1 in 3 if you look through outer elements only).]
+<LI> Find an element of order 3 or 6. This powers up to <i>y</i> of order 3.<BR>
+[The probability of success at each attempt is 1 in 3.]
+<LI> Find conjugates <i>a</i> of <i>x</i> and <i>b</i> of <i>y</i> such that <i>ab</i> has order 8 and <i>ababb</i> has order 4.<BR>
+[The probability of success at each attempt is 3 in 14 (about 1 in 5).]
+</UL>
+
+
+
+<HR>
+
+<H3><A NAME="pres">Presentations</A></H3>
+
+Presentations for L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) and L<SUB>2</SUB>(7):2 = L<SUB>3</SUB>(2):2 in terms of their standard generators are given below.
+
+<P>
+&lt; <i>a</i>, <i>b</i> | <i>a</i><SUP>2</SUP> = <i>b</i><SUP>3</SUP> = (<i>ab</i>)<SUP>7</SUP> = [<i>a</i>, <i>b</i>]<SUP>4</SUP> = 1 &gt;.
+
+<P>
+&lt; <i>c</i>, <i>d</i> | <i>c</i><SUP>2</SUP> = <i>d</i><SUP>3</SUP> = (<i>cd</i>)<SUP>8</SUP> = [<i>c</i>, <i>d</i>]<SUP>4</SUP> = 1 &gt;.
+<P>
+These presentations, and those of the covering groups, are available in Magma format as follows:<BR>
+<A HREF="mag/L27G1-P1.M">L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) on <B>a</B> and <B>b</B></A>;
+<A HREF="mag/2L27G1-P1.M">SL<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2) on <B>A</B> and <B>B</B></A>;
+<A HREF="mag/L27d2G1-P1.M">PGL<SUB>2</SUB>(7) = L<SUB>3</SUB>(2):2 on <B>c</B> and <B>d</B></A>;
+<!--
+<A HREF="mag/2L27d2G1-P1.M">2.PGL<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2).2 (+) on <B>C</B> and <B>D</B></A>;
+<A HREF="mag/2L27d2G1-P1.M">2.PGL<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2):2 (-) on <B>C</B> and <B>D</B></A>.
+-->
+
+
+<HR>
+
+<H3><A NAME="reps">Representations</A></H3>
+
+
+Representations are available for the following decorations of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2).
+<UL>
+<LI> <A HREF="#L27">L2(7) = L3(2)</A>.
+<LI> <A HREF="#2L27">SL2(7) = 2.L3(2)</A>.
+<LI> <A HREF="#L27d2">PGL2(7) = L2(7):2 = L3(2):2</A>.
+<LI> <A HREF="#2L27d2">2.PGL2(7) = 2.L2(7).2 = 2.L3(2).2</A> (plus type, the version in the A<SMALL>TLAS</SMALL>).
+<LI> <A HREF="#2L27d2i">2.PGL2(7) = 2.L2(7):2 = 2.L3(2):2</A> (minus type, the <EM>not</EM> version in the A<SMALL>TLAS</SMALL>).
+<BR>
+NB: The naming of the last two groups has been swapped with respect to Version 1.
+</UL>
+
+
+<A NAME="L27">
+The representations of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) available are:
+</A>
+
+
+<UL>
+<LI> All faithful transitive permutation representations.
+<UL>
+<LI>
+Permutations on 7a points:
+<A HREF="mtx/L27G1-p7aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p7aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p7aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p7aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p7aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p7aB0.g2"><B> b </B></A> (GAP).
+- the action on points; primitive.
+<LI>
+Permutations on 7b points:
+<A HREF="mtx/L27G1-p7bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p7bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p7bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p7bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p7bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p7bB0.g2"><B> b </B></A> (GAP).
+- the action on lines; primitive.
+<LI>
+Permutations on 8 points:
+<A HREF="mtx/L27G1-p8B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p8B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p8B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p8B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p8B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p8B0.g2"><B> b </B></A> (GAP).
+- primitive.
+<LI>
+Permutations on 14a points:
+<A HREF="mtx/L27G1-p14aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p14aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p14aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p14aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p14aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p14aB0.g2"><B> b </B></A> (GAP).
+- on the cosets of A4 fixing a point.
+<LI>
+Permutations on 14b points:
+<A HREF="mtx/L27G1-p14bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p14bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p14bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p14bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p14bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p14bB0.g2"><B> b </B></A> (GAP).
+- on the cosets of A4 fixing a line.
+<LI>
+Permutations on 21 points:
+<A HREF="mtx/L27G1-p21B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p21B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p21B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p21B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p21B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p21B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 24 points:
+<A HREF="mtx/L27G1-p24B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p24B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p24B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p24B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p24B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p24B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 28 points:
+<A HREF="mtx/L27G1-p28B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p28B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p28B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p28B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p28B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p28B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 42a points:
+<A HREF="mtx/L27G1-p42aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p42aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p42aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p42aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p42aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p42aB0.g2"><B> b </B></A> (GAP).
+- on the cosets of O2(point stab).
+<LI>
+Permutations on 42b points:
+<A HREF="mtx/L27G1-p42bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p42bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p42bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p42bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p42bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p42bB0.g2"><B> b </B></A> (GAP).
+- on the cosets of O2(line stab).
+<LI>
+Permutations on 42c points:
+<A HREF="mtx/L27G1-p42cB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p42cB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p42cB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p42cB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p42cB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p42cB0.g2"><B> b </B></A> (GAP).
+- on the cosets of C4.
+<LI>
+Permutations on 56 points:
+<A HREF="mtx/L27G1-p56B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p56B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p56B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p56B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p56B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p56B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 84 points:
+<A HREF="mtx/L27G1-p84B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p84B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p84B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p84B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p84B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p84B0.g2"><B> b </B></A> (GAP).
+<LI>
+Permutations on 168 points:
+<A HREF="mtx/L27G1-p168B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-p168B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-p168B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-p168B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-p168B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-p168B0.g2"><B> b </B></A> (GAP).
+- regular.
+</UL>
+
+<LI> All faithful irreducibles in characteristic 2.
+<UL>
+<LI>
+Dimension 3a over GF(2):
+<A HREF="mtx/L27G1-f2r3aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f2r3aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f2r3aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f2r3aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f2r3aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f2r3aB0.g2"><B> b </B></A> (GAP).
+- the natural representation as L3(2).
+<LI>
+Dimension 3b over GF(2):
+<A HREF="mtx/L27G1-f2r3bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f2r3bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f2r3bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f2r3bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f2r3bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f2r3bB0.g2"><B> b </B></A> (GAP).
+- the dual of the above.
+<LI>
+Dimension 8 over GF(2):
+<A HREF="mtx/L27G1-f2r8B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f2r8B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f2r8B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f2r8B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f2r8B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f2r8B0.g2"><B> b </B></A> (GAP).
+- the Steinberg representation for <!--the group considered as--> L3(2).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 3.
+<UL>
+<LI>
+Dimension 3a over GF(9):
+<A HREF="mtx/L27G1-f9r3aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f9r3aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f9r3aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f9r3aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f9r3aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f9r3aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 3b over GF(9):
+<A HREF="mtx/L27G1-f9r3bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f9r3bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f9r3bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f9r3bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f9r3bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f9r3bB0.g2"><B> b </B></A> (GAP).
+- the dual of the above.
+<LI>
+Dimension 6b over GF(3):
+<A HREF="mtx/L27G1-f3r6bB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f3r6bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f3r6bB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f3r6bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f3r6bB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f3r6bB0.g2"><B> b </B></A> (GAP).
+- reducible over GF(9).
+<LI>
+Dimension 6a over GF(3):
+<A HREF="mtx/L27G1-f3r6aB0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f3r6aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f3r6aB0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f3r6aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f3r6aB0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f3r6aB0.g2"><B> b </B></A> (GAP).
+- the deleted (7 point) permutation representation.
+<LI>
+Dimension 7 over GF(3):
+<A HREF="mtx/L27G1-f3r7B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f3r7B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f3r7B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f3r7B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f3r7B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f3r7B0.g2"><B> b </B></A> (GAP).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 7.
+<UL>
+<LI>
+Dimension 3 over GF(7):
+<A HREF="mtx/L27G1-f7r3B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f7r3B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f7r3B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f7r3B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f7r3B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f7r3B0.g2"><B> b </B></A> (GAP).
+- the natural representation as O3(7).
+<LI>
+Dimension 5 over GF(7):
+<A HREF="mtx/L27G1-f7r5B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f7r5B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f7r5B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f7r5B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f7r5B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f7r5B0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 7 over GF(7):
+<A HREF="mtx/L27G1-f7r7B0.m1"><B> a </B></A> and
+<A HREF="mtx/L27G1-f7r7B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/L27G1-f7r7B0.b1"><B> a </B></A> and
+<A HREF="bin/L27G1-f7r7B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/L27G1-f7r7B0.g1"><B> a </B></A> and
+<A HREF="gap/L27G1-f7r7B0.g2"><B> b </B></A> (GAP).
+- the Steinberg representation for <!--the group considered as--> L2(7).
+</UL>
+
+<LI> All faithful irreducibles in characteristic 0.
+<UL>
+<LI>  <A HREF="../atlasreps/L27Ar3a.m"><B> a </B> and  
+<B> b </B></A> as 3 &#215; 3 matrices over <B>Z</B>[b7].
+<LI>  <A HREF="../atlasreps/L27Ar3b.m"><B> a </B> and  
+<B> b </B></A> as 3 &#215; 3 matrices over <B>Z</B>[b7] - the dual of the above.
+<LI>  <A HREF="../atlasreps/L27Zr3ab.m"><B> a </B> and  
+<B> b </B></A> as 6 &#215; 6 matrices over <B>Z</B> - reducible over <B>Q</B>(b7).
+<LI>  <A HREF="../atlasreps/L27Zr6.m"><B> a </B> and  
+<B> b </B></A> as 6 &#215; 6 matrices over <B>Z</B> - the deleted permutation representation.
+<LI>  <A HREF="../atlasreps/L27Zr7.m"><B> a </B> and  
+<B> b </B></A> as 7 &#215; 7 monomial matrices over <B>Z</B>.
+<LI>  <A HREF="../atlasreps/L27Zr8.m"><B> a </B> and  
+<B> b </B></A> as 8 &#215; 8 matrices over <B>Z</B>.
+</UL>
+</UL>
+
+
+<A NAME="2L27">
+The representations of SL<SUB>2</SUB>(7) = 2.L<SUB>2</SUB>(7) = 2.L<SUB>3</SUB>(2) available are:
+</A>
+
+<UL>
+<LI> All faithful transitive permutation representations.
+<UL>
+<LI>
+Permutations on 16 points:
+<A HREF="mtx/2L27G1-p16B0.m1"><B> A </B></A> and
+<A HREF="mtx/2L27G1-p16B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2L27G1-p16B0.b1"><B> A </B></A> and
+<A HREF="bin/2L27G1-p16B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-p16B0.g1"><B> A </B></A> and
+<A HREF="gap/2L27G1-p16B0.g2"><B> B </B></A> (GAP).
+- pseudoprimitive.
+<LI>
+Permutations on 48 points:
+<A HREF="mtx/2L27G1-p48B0.m1"><B> A </B></A> and
+<A HREF="mtx/2L27G1-p48B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2L27G1-p48B0.b1"><B> A </B></A> and
+<A HREF="bin/2L27G1-p48B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-p48B0.g1"><B> A </B></A> and
+<A HREF="gap/2L27G1-p48B0.g2"><B> B </B></A> (GAP).
+<LI>
+Permutations on 112 points:
+<A HREF="mtx/2L27G1-p112B0.m1"><B> A </B></A> and
+<A HREF="mtx/2L27G1-p112B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2L27G1-p112B0.b1"><B> A </B></A> and
+<A HREF="bin/2L27G1-p112B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-p112B0.g1"><B> A </B></A> and
+<A HREF="gap/2L27G1-p112B0.g2"><B> B </B></A> (GAP).
+<LI>
+Permutations on 336 points:
+<A HREF="mtx/2L27G1-p336B0.m1"><B> A </B></A> and
+<A HREF="mtx/2L27G1-p336B0.m2"><B> B </B></A> (Meataxe),
+<A HREF="bin/2L27G1-p336B0.b1"><B> A </B></A> and
+<A HREF="bin/2L27G1-p336B0.b2"><B> B </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-p336B0.g1"><B> A </B></A> and
+<A HREF="gap/2L27G1-p336B0.g2"><B> B </B></A> (GAP).
+- regular.
+</UL>
+
+<LI> All faithful irreducibles in characteristic 3.
+<UL>
+<LI>
+Dimension 4a over GF(9):
+<A HREF="mtx/2L27G1-f9r4aB0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f9r4aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f9r4aB0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f9r4aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f9r4aB0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f9r4aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 4b over GF(9):
+<A HREF="mtx/2L27G1-f9r4bB0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f9r4bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f9r4bB0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f9r4bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f9r4bB0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f9r4bB0.g2"><B> b </B></A> (GAP).
+- the dual of the above.
+<LI>
+Dimension 6a over GF(9):
+<A HREF="mtx/2L27G1-f9r6aB0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f9r6aB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f9r6aB0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f9r6aB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f9r6aB0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f9r6aB0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 6b over GF(9):
+<A HREF="mtx/2L27G1-f9r6bB0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f9r6bB0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f9r6bB0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f9r6bB0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f9r6bB0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f9r6bB0.g2"><B> b </B></A> (GAP).
+- the dual of the above.
+<LI>
+Dimension 8 over GF(3):
+<A HREF="mtx/2L27G1-f3r8B0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f3r8B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f3r8B0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f3r8B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f3r8B0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f3r8B0.g2"><B> b </B></A> (GAP).
+ - reducible over GF(9).
+<LI>
+Dimension 12 over GF(3):
+<A HREF="mtx/2L27G1-f3r12B0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f3r12B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f3r12B0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f3r12B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f3r12B0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f3r12B0.g2"><B> b </B></A> (GAP).
+ - reducible over GF(9).
+</UL>
+
+
+<LI> All faithful irreducibles in characteristic 7.
+<UL>
+<LI>
+Dimension 2 over GF(7):
+<A HREF="mtx/2L27G1-f7r2B0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f7r2B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f7r2B0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f7r2B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f7r2B0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f7r2B0.g2"><B> b </B></A> (GAP).
+- the natural representation as SL2(7).
+<LI>
+Dimension 4 over GF(7):
+<A HREF="mtx/2L27G1-f7r4B0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f7r4B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f7r4B0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f7r4B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f7r4B0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f7r4B0.g2"><B> b </B></A> (GAP).
+<LI>
+Dimension 6 over GF(7):
+<A HREF="mtx/2L27G1-f7r6B0.m1"><B> a </B></A> and
+<A HREF="mtx/2L27G1-f7r6B0.m2"><B> b </B></A> (Meataxe),
+<A HREF="bin/2L27G1-f7r6B0.b1"><B> a </B></A> and
+<A HREF="bin/2L27G1-f7r6B0.b2"><B> b </B></A> (Meataxe binary),
+<A HREF="gap/2L27G1-f7r6B0.g1"><B> a </B></A> and
+<A HREF="gap/2L27G1-f7r6B0.g2"><B> b </B></A> (GAP).
+</UL>
+
+
+
+<LI> Faithful irreducibles in characteristic 0.
+<UL>
+<LI>  <A HREF="../atlasreps/2L27Ar4a.m"><B> A </B> and  
+<B> B </B></A> as 4 &#215; 4 matrices over <B>Z</B>[b7].
+<LI>  <A HREF="../atlasreps/2L27Ar4b.m"><B> A </B> and  
+<B> B </B></A> as 4 &#215; 4 matrices over <B>Z</B>[b7] - the dual of the above.
+
+<LI>  <A HREF="../atlasreps/2L27Zr8.m"><B> A </B> and  
+<B> B </B></A> as 8 &#215; 8 monomial matrices over <B>Z</B> - reducible over <B>Q</B>(b7).
+
+</UL>
+
+<LI>  <A HREF="../atlasreps/2L27f2.1"><B> A </B></A> and  
+<A HREF="../atlasreps/2L27f2.2"><B> B </B></A> as 
+5 &#215; 5 matrices over GF(2).
+<LI>  <A HREF="../atlasreps/2L27f2b.1"><B> A </B></A> and  
+<A HREF="../atlasreps/2L27f2b.2"><B> B </B></A> as 
+5 &#215; 5 matrices over GF(2).
+
+</UL>
+
+
+
+
+
+<A NAME="L27d2">
+The representations of PGL<SUB>2</SUB>(7) = L<SUB>2</SUB>(7):2 = L<SUB>3</SUB>(2):2 available are:
+</A>
+
+<UL>
+<LI> All faithful transitive permutation representations.
+<UL>
+<LI>
+Permutations on 8 points:
+<A HREF="mtx/L27d2G1-p8B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p8B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p8B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p8B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p8B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p8B0.g2"><B> d </B></A> (GAP).
+- primitive.
+<LI>
+Permutations on 14 points:
+<A HREF="mtx/L27d2G1-p14B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p14B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p14B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p14B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p14B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p14B0.g2"><B> d </B></A> (GAP).
+- pseudoprimitive.
+<LI>
+Permutations on 16 points:
+<A HREF="mtx/L27d2G1-p16B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p16B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p16B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p16B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p16B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p16B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 21 points:
+<A HREF="mtx/L27d2G1-p21B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p21B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p21B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p21B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p21B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p21B0.g2"><B> d </B></A> (GAP).
+- primitive.
+<LI>
+Permutations on 24 points:
+<A HREF="mtx/L27d2G1-p24B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p24B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p24B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p24B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p24B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p24B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 28 points:
+<A HREF="mtx/L27d2G1-p28B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p28B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p28B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p28B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p28B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p28B0.g2"><B> d </B></A> (GAP).
+- on the cosets of D12; primitive.
+<LI>
+Permutations on 28b points:
+<A HREF="mtx/L27d2G1-p28bB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p28bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p28bB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p28bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p28bB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p28bB0.g2"><B> d </B></A> (GAP).
+- on the cosets of A4.
+<LI>
+Permutations on 42a points:
+<A HREF="mtx/L27d2G1-p42aB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p42aB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p42aB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p42aB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p42aB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p42aB0.g2"><B> d </B></A> (GAP).
+- on the cosets of inner D8.
+<LI>
+Permutations on 42b points:
+<A HREF="mtx/L27d2G1-p42bB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p42bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p42bB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p42bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p42bB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p42bB0.g2"><B> d </B></A> (GAP).
+- on the cosets of outer D8.
+<LI>
+Permutations on 42c points:
+<A HREF="mtx/L27d2G1-p42cB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p42cB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p42cB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p42cB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p42cB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p42cB0.g2"><B> d </B></A> (GAP).
+- on the cosets of C8.
+<LI>
+Permutations on 48 points:
+<A HREF="mtx/L27d2G1-p48B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p48B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p48B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p48B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p48B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p48B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 56a points:
+<A HREF="mtx/L27d2G1-p56aB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p56aB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p56aB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p56aB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p56aB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p56aB0.g2"><B> d </B></A> (GAP).
+- on the cosets of inner D6.
+<LI>
+Permutations on 56b points:
+<A HREF="mtx/L27d2G1-p56bB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p56bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p56bB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p56bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p56bB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p56bB0.g2"><B> d </B></A> (GAP).
+- on the cosets of outer D6.
+<LI>
+Permutations on 56c points:
+<A HREF="mtx/L27d2G1-p56cB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p56cB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p56cB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p56cB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p56cB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p56cB0.g2"><B> d </B></A> (GAP).
+- on the cosets of C6.
+<LI>
+Permutations on 84a points:
+<A HREF="mtx/L27d2G1-p84aB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p84aB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p84aB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p84aB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p84aB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p84aB0.g2"><B> d </B></A> (GAP).
+- on the cosets of inner 2^2.
+<LI>
+Permutations on 84b points:
+<A HREF="mtx/L27d2G1-p84bB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p84bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p84bB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p84bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p84bB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p84bB0.g2"><B> d </B></A> (GAP).
+- on the cosets of outer 2^2.
+<LI>
+Permutations on 84c points:
+<A HREF="mtx/L27d2G1-p84cB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p84cB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p84cB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p84cB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p84cB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p84cB0.g2"><B> d </B></A> (GAP).
+- on the cosets of C4.
+<LI>
+Permutations on 112 points:
+<A HREF="mtx/L27d2G1-p112B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p112B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p112B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p112B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p112B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p112B0.g2"><B> d </B></A> (GAP).
+<LI>
+Permutations on 168a points:
+<A HREF="mtx/L27d2G1-p168aB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p168aB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p168aB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p168aB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p168aB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p168aB0.g2"><B> d </B></A> (GAP).
+- on the cosets of inner C2.
+<LI>
+Permutations on 168b points:
+<A HREF="mtx/L27d2G1-p168bB0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p168bB0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p168bB0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p168bB0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p168bB0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p168bB0.g2"><B> d </B></A> (GAP).
+- on the cosets of outer C2.
+<LI>
+Permutations on 336 points:
+<A HREF="mtx/L27d2G1-p336B0.m1"><B> c </B></A> and
+<A HREF="mtx/L27d2G1-p336B0.m2"><B> d </B></A> (Meataxe),
+<A HREF="bin/L27d2G1-p336B0.b1"><B> c </B></A> and
+<A HREF="bin/L27d2G1-p336B0.b2"><B> d </B></A> (Meataxe binary),
+<A HREF="gap/L27d2G1-p336B0.g1"><B> c </B></A> and
+<A HREF="gap/L27d2G1-p336B0.g2"><B> d </B></A> (GAP).
+- regular.
+</UL>
+
+<LI> Both faithful irreducibles in characteristic 2.
+<UL>
+<LI>  <A HREF="../atlasreps/L27d2f2.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f2.2"><B> d </B></A> as 
+6 &#215; 6 matrices over GF(2).
+<LI>  <A HREF="../atlasreps/L27d2f2r8.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f2r8.2"><B> d </B></A> as 
+8 &#215; 8 matrices over GF(2).
+</UL>
+
+<LI> Faithful irreducibles in characteristic 3.
+<UL>
+<LI>  <A HREF="../atlasreps/L27d2f3.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f3.2"><B> d </B></A> as 
+6 &#215; 6 matrices over GF(3).
+<LI>  <A HREF="../atlasreps/L27d2f9.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f9.2"><B> d </B></A> as 
+6 &#215; 6 matrices over GF(9).
+<LI>  <A HREF="../atlasreps/L27d2f3r12.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f3r12.2"><B> d </B></A> as 
+12 &#215; 12 matrices over GF(3) - reducible over GF(9).
+<LI>  <A HREF="../atlasreps/L27d2f3r7.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f3r7.2"><B> d </B></A> as 
+7 &#215; 7 matrices over GF(3).
+</UL>
+
+<!--
+<LI> Faithful irreducibles in characteristic 7.
+<UL>
+<LI>  <A HREF="../atlasreps/L27d2f7.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f7.2"><B> d </B></A> as 
+3 &#215; 3 matrices over GF(7).
+<LI>  <A HREF="../atlasreps/L27d2f7r5.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f7r5.2"><B> d </B></A> as 
+5 &#215; 5 matrices over GF(7).
+<LI>  <A HREF="../atlasreps/L27d2f7r7.1"><B> c </B></A> and  
+<A HREF="../atlasreps/L27d2f7r7.2"><B> d </B></A> as 
+7 &#215; 7 matrices over GF(7).
+</UL>
+-->
+
+<LI> Faithful irreducibles in characteristic 0.
+<UL>
+<LI>  <A HREF="../atlasreps/L27d2Zr6.m"><B> c </B> and 
+<B> d </B></A> as 6 &#215; 6 matrices over <B>Z</B>.
+<LI>  <A HREF="../atlasreps/L27d2Ar6.m"><B> c </B> and 
+<B> d </B></A> as 6 &#215; 6 matrices over <B>Z</B>[r2].
+<LI>  <A HREF="../atlasreps/L27d2Zr12.m"><B> c </B> and  
+<B> d </B></A> as 12 &#215; 12 matrices over <B>Z</B> - reducible over <B>Q</B>(r2).
+<LI>  <A HREF="../atlasreps/L27d2Zr7.m"><B> c </B> and 
+<B> d </B></A> as 7 &#215; 7 matrices over <B>Z</B>.
+<LI>  <A HREF="../atlasreps/L27d2Zr8.m"><B> c </B> and 
+<B> d </B></A> as 8 &#215; 8 matrices over <B>Z</B>.
+</UL>
+
+
+</UL>
+
+<A NAME="2L27d2">
+The representations of 2.L<SUB>2</SUB>(7).2 (plus type, A<SMALL>TLAS</SMALL> version) available are:
+</A>
+<UL>
+<LI> All faithful transitive permutation representations.
+<UL>
+<LI>
+Permutations on 32 points:
+<A HREF="mtx/2L27d2G1-p32B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2G1-p32B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2G1-p32B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2G1-p32B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2G1-p32B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2G1-p32B0.g2"><B> D </B></A> (GAP).
+- pseudoprimitive.
+<LI>
+Permutations on 96 points:
+<A HREF="mtx/2L27d2G1-p96B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2G1-p96B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2G1-p96B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2G1-p96B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2G1-p96B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2G1-p96B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 224 points:
+<A HREF="mtx/2L27d2G1-p224B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2G1-p224B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2G1-p224B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2G1-p224B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2G1-p224B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2G1-p224B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 672 points:
+<A HREF="mtx/2L27d2G1-p672B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2G1-p672B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2G1-p672B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2G1-p672B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2G1-p672B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2G1-p672B0.g2"><B> D </B></A> (GAP).
+- regular.
+</UL>
+</UL>
+
+
+<A NAME="2L27d2i">
+The representations of 2.L<SUB>2</SUB>(7):2 (minus type, non-A<SMALL>TLAS</SMALL> version) available are:
+</A>
+<UL>
+<LI> All faithful transitive permutation representations.
+<UL>
+<LI>
+Permutations on 16a points:
+<A HREF="mtx/2L27d2iG1-p16aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p16aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p16aB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p16aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p16aB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p16aB0.g2"><B> D </B></A> (GAP).
+- pseudoprimitive.
+<LI>
+Permutations on 16b points:
+<A HREF="mtx/2L27d2iG1-p16bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p16bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p16bB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p16bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p16bB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p16bB0.g2"><B> D </B></A> (GAP).
+- pseudoprimitive.
+<LI>
+Permutations on 32 points:
+<A HREF="mtx/2L27d2iG1-p32B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p32B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p32B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p32B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p32B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p32B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 48a points:
+<A HREF="mtx/2L27d2iG1-p48aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p48aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p48aB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p48aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p48aB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p48aB0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 48b points:
+<A HREF="mtx/2L27d2iG1-p48bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p48bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p48bB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p48bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p48bB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p48bB0.g2"><B> D </B></A> (GAP).
+<!--
+Degree 48a point stabiliser subset of [conjugate of] 16a point stabiliser.
+Degree 48b point stabiliser subset of [conjugate of] 16b point stabiliser.
+-->
+<LI>
+Permutations on 96 points:
+<A HREF="mtx/2L27d2iG1-p96B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p96B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p96B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p96B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p96B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p96B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 112a points:
+<A HREF="mtx/2L27d2iG1-p112aB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p112aB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p112aB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p112aB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p112aB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p112aB0.g2"><B> D </B></A> (GAP).
+- on the cosets of D6; pseudoprimitive.
+<LI>
+Permutations on 112b points:
+<A HREF="mtx/2L27d2iG1-p112bB0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p112bB0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p112bB0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p112bB0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p112bB0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p112bB0.g2"><B> D </B></A> (GAP).
+- on the cosets of C6; not pseudoprimitive.
+<LI>
+Permutations on 224 points:
+<A HREF="mtx/2L27d2iG1-p224B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p224B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p224B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p224B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p224B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p224B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 336 points:
+<A HREF="mtx/2L27d2iG1-p336B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p336B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p336B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p336B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p336B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p336B0.g2"><B> D </B></A> (GAP).
+<LI>
+Permutations on 672 points:
+<A HREF="mtx/2L27d2iG1-p672B0.m1"><B> C </B></A> and
+<A HREF="mtx/2L27d2iG1-p672B0.m2"><B> D </B></A> (Meataxe),
+<A HREF="bin/2L27d2iG1-p672B0.b1"><B> C </B></A> and
+<A HREF="bin/2L27d2iG1-p672B0.b2"><B> D </B></A> (Meataxe binary),
+<A HREF="gap/2L27d2iG1-p672B0.g1"><B> C </B></A> and
+<A HREF="gap/2L27d2iG1-p672B0.g2"><B> D </B></A> (GAP).
+- regular.
+</UL>
+</UL>
+
+
+<!--
+<P>
+NB: The words point (in some contexts) and line (always) refer to the natural representation of L3(2).
+-->
+
+
+
+<HR>
+
+<H3><A NAME="maxs">Maximal subgroups</A></H3>
+
+The maximal subgroups of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2) are as follows.
+<UL>
+<LI>
+S<SUB>4</SUB>, with [standard?] generators
+<A HREF="words/L27G1-max1W3">abbaba, b</A>; or
+<A HREF="words/L27G1-max1W1">a<SUP>ba</SUP>, b</A>; or
+<A HREF="words/L27G1-max1W2">a, b<SUP>abb</SUP></A>.
+- the point stabiliser.
+<LI>
+S<SUB>4</SUB>, with [standard?] generators
+<A HREF="words/L27G1-max2W3">ababba, b</A>; or
+<A HREF="words/L27G1-max2W1">a<SUP>bba</SUP>, b</A>; or
+<A HREF="words/L27G1-max2W2">a, b<SUP>ab</SUP></A>.
+ - the line stabiliser.
+<LI>
+7:3 = F<SUB>21</SUB>, with generators
+<A HREF="words/L27G1-max3W3">abababba, b</A>; or
+<A HREF="words/L27G1-max3W1">b<SUP>abba</SUP>, b</A>; or
+<A HREF="words/L27G1-max3W2">b<SUP>aba</SUP>, b</A>.
+</UL>
+NB: Word programs in same line give conjugate subgroups, not necessarily
+identical subgroups.
+<P>
+
+The maximal subgroups of L<SUB>2</SUB>(7):2 = L<SUB>3</SUB>(2):2 are as follows.
+<UL>
+<LI>
+L<SUB>2</SUB>(7), with standard generators
+<A HREF="words/L27d2G1-max1W1">((cd)<SUP>4</SUP>)<SUP>dcdc</SUP>, d</A>.
+<LI>
+7:6 = F<SUB>42</SUB>, with generators
+<A HREF="words/L27d2G1-max2W1">c, d<SUP>2</SUP>cdcd</A>.
+<LI>
+D<SUB>16</SUB>, with generators
+<A HREF="words/L27d2G1-max3W1">c, (dcdcd)<SUP>2</SUP></A>.
+<LI>
+D<SUB>12</SUB>, with generators
+<A HREF="words/L27d2G1-max4W1">c, (cd)<SUP>4</SUP></A>.
+</UL>
+
+
+<HR>
+
+<H3><A NAME="ccls">Conjugacy classes</A></H3>
+
+The following are conjugacy class representatives of L<SUB>2</SUB>(7) = L<SUB>3</SUB>(2).
+<UL>
+<LI> 1A: identity.
+<LI> 2A: <B>a</B>.
+<LI> 3A: <B>b</B>; <B>B</B> is class +3A.
+<LI> 4A: <B>ababb</B> or <B>[a, b]</B>; <B>ABABB</B> is class +4A.
+<LI> 7A: <B>ab</B>; <B>AB</B> is class +7A.
+<LI> 7B: <B>abb</B>; <B>ABB</B> is class -7B.
+</UL>
+
+The following are conjugacy class representatives of L<SUB>2</SUB>(7):2 = L<SUB>3</SUB>(2):2.
+<UL>
+<LI> 1A: identity.
+<LI> 2A: <B>cdcdcdcd</B> = <B>(cd)^4</B>.
+<LI> 3A: <B>d</B>.
+<LI> 4A: <B>cdcd</B> = <B>(cd)^2</B> or <B>[c, d]</B>.
+<LI> 7AB: <B>cdcdcddcdd</B> or <B>[c, dcd]</B>.
+<LI> 2B: <B>c</B>.
+<LI> 6A: <B>cdcdcdd</B>.
+<LI> 8A: <B>cd</B>.
+<LI> 8B: <B>cdcdcd</B> = <B>(cd)^3</B>.
+</UL>
+
+<HR>
+<A HREF="../../">
+<IMG SRC="../../icons/atlas.gif" HEIGHT=30 WIDTH=30 ALT="Main ATLAS page">
+Go to main A<SMALL>TLAS</SMALL> (version 2.0) page</A>.
+<BR>
+<A HREF="../">
+<IMG SRC="../../icons/lin.gif" HEIGHT=30 WIDTH=30 ALT="Linear groups page">
+Go to linear groups page</A>.
+<BR>
+<A HREF="/atlas/html/L27.html">
+<IMG SRC="../../icons/old.gif" HEIGHT=30 WIDTH=30 ALT="Old L2(7) = L3(2) page">
+Go to old L2(7) = L3(2) page - A<SMALL>TLAS</SMALL> version 1</A>.
+<BR>
+<A HREF="../../info/ftp.html">
+<IMG SRC="../../icons/ftp.gif" HEIGHT=30 WIDTH=30 ALT="ftp access"></A>
+Anonymous ftp access is also available.
+<A HREF="../../info/ftp.html">See here</A> for details.
+<BR>
+
+
+<P></P>
+<ADDRESS> 
+Version 2.0 created on 14th September 2004, from a version 1 file last updated on 11th February 1998.<BR>
+Last updated 16.09.04 by JNB.<BR>
+<!--
+Information checked to 
+<A HREF="../../info/Lev0.html">Level 0</A> on 25.05.00 by JNB.<BR>
+-->
+R.A.Wilson, R.A.Parker and J.N.Bray.
+</ADDRESS>
+</BODY>
+</HTML>

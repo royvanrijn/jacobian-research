@@ -1,0 +1,31 @@
+{
+  "title": "Class Field Theory",
+  "authors": "J. S. Milne",
+  "version": "Version 4.03, August 6, 2020",
+  "primary_url": "https://www.jmilne.org/math/CourseNotes/CFT.pdf",
+  "retained_pdf": "milne-cft403.pdf",
+  "sha256": "50d79af78250a9f1117ad9d337e0b231704a533fc707966ed1bfa52e13d498f5",
+  "bytes": 2072714,
+  "pdf_pages": 296,
+  "accessed_utc_date": "2026-11-17",
+  "direct_read": true,
+  "used_locators": [
+    {
+      "locator": "Theorem 0.4 and following Hilbert class field paragraph",
+      "printed_pages": "4",
+      "pdf_pages": "13",
+      "scope": "Finite everywhere-unramified abelian extensions are ideal-class-group quotients; the maximal one has Galois group canonically isomorphic to the ideal class group."
+    },
+    {
+      "locator": "Theorem 0.8",
+      "printed_pages": "9",
+      "pdf_pages": "18",
+      "scope": "Canonical prime-ideal-to-Frobenius Artin map and ray-class factorization with ramified support. Empty ramification gives the ordinary class-group surjection, with conjugation compatibility on prime ideals."
+    }
+  ],
+  "rendered_pages_visually_inspected": [
+    13,
+    18
+  ],
+  "role": "Primary external theorem interface or explicitly scoped comparison context."
+}

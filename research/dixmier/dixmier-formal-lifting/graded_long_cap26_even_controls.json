@@ -1,0 +1,106 @@
+{
+  "claim": "No even graded canonical Long scalar full Weyl jet of common spatial degree26 through h5",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction polynomial identities, bare modular determinants and polynomial Bezout identity"
+  },
+  "cap": 26,
+  "parity": "even",
+  "image_order": [
+    "R",
+    "T",
+    "D",
+    "S"
+  ],
+  "h3": {
+    "unknowns": 437,
+    "component_counts": [
+      80,
+      114,
+      141,
+      102
+    ],
+    "rank_Q": 431,
+    "minor_det_modp": 181171,
+    "independent_exact_kernels": 6,
+    "polynomial_Hamiltonians_verified": true,
+    "compact_basis": [
+      "R^3",
+      "R^4*S",
+      "X^3",
+      "R^3*(Y+2)",
+      "X^4*Q",
+      "R^3*J4"
+    ],
+    "compact_basis_transition_det_Q": "-1084529420087040",
+    "all_R2_corrections_zero_as_consequence": true,
+    "first_particular_nonzero_coefficients": 59
+  },
+  "h5": {
+    "unknowns": 206,
+    "component_counts": [
+      34,
+      54,
+      71,
+      47
+    ],
+    "rows": 1590,
+    "rank_Q": 205,
+    "minor_det_modp": 732211,
+    "exact_kernel": "K_R9",
+    "all_first_parameters_retained": [
+      "k0",
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5"
+    ],
+    "RHS_parameter_coefficients": 20,
+    "functional_supports": [
+      168,
+      167
+    ],
+    "identities": [
+      "ell0*A=0; ell0*B=1-32*k3*k4/3969",
+      "ell1*A=0; ell1*B=k4^2"
+    ],
+    "Bezout": "1=(1+32*k3*k4/3969)*p0+(32/3969)^2*k3^2*p1",
+    "unit_ideal_verified_as_polynomial_identity": true,
+    "all_206_columns_and_all_20_RHS_coefficients_verified": true
+  },
+  "positive_control_beyond_bound": {
+    "construction": "Weighted de Rham homotopy of the closed h5 defect, with all first parameters zero",
+    "F4_degrees": [
+      19,
+      31,
+      39,
+      27
+    ],
+    "all_six_equations_verified": true,
+    "truncated_h7_defect_nonzero": true,
+    "truncated_h7_defect_terms": 434,
+    "truncated_h7_defect_max_degree": 48,
+    "scope": "Actual finite polynomial even jet through h5, common cap39; no all-order or bounded-lift conclusion"
+  },
+  "invalid_controls": {
+    "corrupted_first_particular_rejected": true,
+    "corrupted_obstruction_functional_rejected": true
+  },
+  "prime": 1000003,
+  "hashes": {
+    "check_graded_long_cap26_even.py": "3c27175e8b97dc6f9ad73e440ddfda4d15914bea49d98426947faf5d6569f9b7",
+    "GRADED_LONG_CAP26_EVEN_JET_OBSTRUCTION.md": "84219ac29c8cb358f7572a8c13dae5940525578d45b09621cbad4853bbd07942",
+    "graded_long_cap26_even_witness.json": "c72b14e49e6e512eefa22c3abf075ee636f3dc892d7df25ef4c41f9d004b5ba2",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete EVEN graded cap26 family through h5; no kernel or parameter omitted, no gauge normalization used, all complex solutions excluded by the unit ideal. No odd-jet, nongraded, cap27, universal bounded-lift or DC1/DC2 conclusion.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

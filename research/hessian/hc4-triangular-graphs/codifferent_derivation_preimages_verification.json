@@ -1,0 +1,4356 @@
+{
+  "claim": "Codifferent preimages under target derivations",
+  "outcome": "PASS",
+  "check_count": 1075,
+  "checks": [
+    {
+      "name": "transverse derivative exact pole e1 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e1 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e1 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e1 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e1 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e1 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e1 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e1 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e1 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e1 n2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e1 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e2 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e2 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e2 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e2 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e2 n2",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e2 n3",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e2 n4",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e2 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e3 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e3 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n2",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n3",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n4",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n5",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e3 n6",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e3 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e4 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e4 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n2",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n3",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n4",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n5",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n7",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e4 n8",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e4 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e5 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e5 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n2",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n3",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n4",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n5",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n7",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n8",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n9",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e5 n10",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e5 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q1",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q2",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q3",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q4",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q5",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative exact pole e6 q6",
+      "passed": true
+    },
+    {
+      "name": "transverse derivative leading unit e6 q6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n0",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n1",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n2",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n3",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n4",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n5",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n6",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n7",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n8",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n9",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n10",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n11",
+      "passed": true
+    },
+    {
+      "name": "regular normal function derivative in codifferent e6 n12",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-3 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n-1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n0 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n1 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n2 j3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j-3",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j-2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j-1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j0",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j1",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j2",
+      "passed": true
+    },
+    {
+      "name": "two derivative preimage e6 n3 j3",
+      "passed": true
+    },
+    {
+      "name": "one-derivative full-field countercontrol",
+      "passed": true
+    },
+    {
+      "name": "full-field control is not integral polynomial",
+      "passed": true
+    },
+    {
+      "name": "second coordinate derivative detects that pole",
+      "passed": true
+    },
+    {
+      "name": "second derivative is not in identity codifferent",
+      "passed": true
+    },
+    {
+      "name": "at most one tested constant tangent direction curve0",
+      "passed": true
+    },
+    {
+      "name": "at most one tested constant tangent direction curve1",
+      "passed": true
+    },
+    {
+      "name": "at most one tested constant tangent direction curve2",
+      "passed": true
+    },
+    {
+      "name": "at most one tested constant tangent direction curve3",
+      "passed": true
+    },
+    {
+      "name": "at most one tested constant tangent direction curve4",
+      "passed": true
+    },
+    {
+      "name": "one chosen direction transverse across finite image family0",
+      "passed": true
+    },
+    {
+      "name": "one chosen direction transverse across finite image family1",
+      "passed": true
+    },
+    {
+      "name": "one chosen direction transverse across finite image family2",
+      "passed": true
+    },
+    {
+      "name": "one chosen direction transverse across finite image family3",
+      "passed": true
+    },
+    {
+      "name": "one chosen direction transverse across finite image family4",
+      "passed": true
+    },
+    {
+      "name": "actual source control constant nonzero Jacobian0",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target P control0",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target Q control0",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target P control0",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target Q control0",
+      "passed": true
+    },
+    {
+      "name": "one velocity is target derivative of transverse coordinate0",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dx coefficient0",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dy coefficient0",
+      "passed": true
+    },
+    {
+      "name": "actual source control constant nonzero Jacobian1",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target P control1",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target Q control1",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target P control1",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target Q control1",
+      "passed": true
+    },
+    {
+      "name": "one velocity is target derivative of transverse coordinate1",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dx coefficient1",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dy coefficient1",
+      "passed": true
+    },
+    {
+      "name": "actual source control constant nonzero Jacobian2",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target P control2",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target Q control2",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target P control2",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target Q control2",
+      "passed": true
+    },
+    {
+      "name": "one velocity is target derivative of transverse coordinate2",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dx coefficient2",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dy coefficient2",
+      "passed": true
+    },
+    {
+      "name": "actual source control constant nonzero Jacobian3",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target P control3",
+      "passed": true
+    },
+    {
+      "name": "target derivation P on target Q control3",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target P control3",
+      "passed": true
+    },
+    {
+      "name": "target derivation Q on target Q control3",
+      "passed": true
+    },
+    {
+      "name": "one velocity is target derivative of transverse coordinate3",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dx coefficient3",
+      "passed": true
+    },
+    {
+      "name": "coframe transverse identity dy coefficient3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q1 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q2 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q2 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q3 n5",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q4 n6",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q5 n7",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q6 n8",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q7 n9",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q8 n10",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e1 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e1 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e1 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n10",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e1 q9 n11",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q2 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q3 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q4 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q4 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q5 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q5 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q6 n5",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q7 n5",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q8 n6",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e2 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e2 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e2 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e2 q9 n6",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q3 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q4 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q5 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q6 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q7 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q8 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e3 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e3 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e3 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e3 q9 n5",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q4 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q5 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q8 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e4 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e4 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e4 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e4 q9 n4",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q5 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e5 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e5 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e5 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e5 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q6 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e6 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e6 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e6 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e6 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q1",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q1",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q1 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q1 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q1 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q2",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q2",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q2 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q2 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q2 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q3",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q3",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q3",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q3 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q3 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q3 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q4",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q4",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q4",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q4 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q4 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q4 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q5",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q5",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q5",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q5 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q5 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q5 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q6",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q6",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q6",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q6 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q6 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q6 n2",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q7",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q7",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q7",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q7 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q7 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q7 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q7 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q8",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q8",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q8",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q8 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q8 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q8 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q8 n3",
+      "passed": true
+    },
+    {
+      "name": "split marker formula e7 q9",
+      "passed": true
+    },
+    {
+      "name": "all other marker traces vanish e7 q9",
+      "passed": true
+    },
+    {
+      "name": "clearing exponent identity e7 q9",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q9 n0",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q9 n1",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q9 n2",
+      "passed": true
+    },
+    {
+      "name": "exact full marked-trace clearing e7 q9 n3",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet0 n0",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet0 n1",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet0 n2",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet0 n3",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet1 n0",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet1 n1",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet1 n2",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet1 n3",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet1 n4",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet2 n0",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet2 n1",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet2 n2",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet2 n3",
+      "passed": true
+    },
+    {
+      "name": "coincident-image maximum exponent packet2 n4",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e2 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e2 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e2 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e2 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e3 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e3 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e3 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e3 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e3 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e3 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e3 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e3 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e4 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e4 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e4 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e4 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e4 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e4 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e4 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e4 i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e4 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e4 i3",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e4 i3",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e4 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e5",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e5 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e5 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e5 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e5 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e5 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e5 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e5 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e5 i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e5 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e5 i3",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e5 i3",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e5 i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e5 i4",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e5 i4",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e5 i4",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e5 i4",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e6",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e6 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e6 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e6 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e6 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e6 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e6 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e6 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e6 i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e6 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e6 i3",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e6 i3",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e6 i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e6 i4",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e6 i4",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e6 i4",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e6 i4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e6 i5",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e6 i5",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e6 i5",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e6 i5",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e7",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i3",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i3",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i4",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i4",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i4",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i5",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i5",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i5",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i5",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e7 i6",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e7 i6",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e7 i6",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e7 i6",
+      "passed": true
+    },
+    {
+      "name": "derivative defect map injective rank e8",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i1",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i1",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i1",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i1",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i2",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i2",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i2",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i2",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i3",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i3",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i3",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i3",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i4",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i4",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i4",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i4",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i5",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i5",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i5",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i5",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i6",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i6",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i6",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i6",
+      "passed": true
+    },
+    {
+      "name": "codifferent mode is allowed e8 i7",
+      "passed": true
+    },
+    {
+      "name": "derivative leaves codifferent e8 i7",
+      "passed": true
+    },
+    {
+      "name": "reduced branch kills derivative class e8 i7",
+      "passed": true
+    },
+    {
+      "name": "Leibniz correction lies in original dual mode e8 i7",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree1",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree2",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree3",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree4",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree5",
+      "passed": true
+    },
+    {
+      "name": "constant source-leading coefficient degree6",
+      "passed": true
+    },
+    {
+      "name": "unramified pole derivative has exact q+1 growth",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof": "CODIFFERENT_PREIMAGES_UNDER_TARGET_DERIVATIONS.md",
+  "proof_sha256": "da98e9b38b2958bc5bf810776122fd58138b6bfed4bbe1d6d205a1f19f2fcdf8",
+  "checker": "verify_codifferent_derivation_preimages.py",
+  "checker_sha256": "927d247094272fdfdf359130652502a2d79a551cb56313190ab4a28a2a4dad0d",
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_BOUNDARY_AND_STABLE_COMPLETE_INTERSECTION_OBSTRUCTION.md",
+      "sha256": "9284117aeb73df6331b0b7235a4bd9a713a9542666c45d44561c89739e77f1c8",
+      "locator": "Full source open immersion, tame canonical order; no torsion inference"
+    },
+    {
+      "path": "CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
+      "sha256": "afd954e519a8d78b80ce20abc391a060f17609d5ded25e4c94871187ccc6d824",
+      "locator": "KU0/1 only; ordinary trace dual embedding and canonical etale open"
+    },
+    {
+      "path": "REPLICA_DEGREE_AND_SOURCE_DERIVATIVE_FIELD_RECONSTRUCTION.md",
+      "sha256": "0f50496f3cc09d92450b20df66d98f39ca01d28b5831557b0b4e0b1a00333113",
+      "locator": "Section6.1 source-finite frames and integral coordinate recovery"
+    },
+    {
+      "path": "REDUCED_BRANCH_PAIRING_AND_SIXTH_MOMENT_DEFECT.md",
+      "sha256": "9a0826fe9b75ea7d7f202230a4740b0b016b8fe1a2c88e1f01f1a295b34c6051",
+      "locator": "Reduced branch annihilator for the retained trace-defect module"
+    },
+    {
+      "path": "BERGMAN_TRACE_DUAL_AND_MULTIPLIER_DOMAIN_RIGIDITY.md",
+      "sha256": "1f5527567df39fd944fb0104e2925db9369b3c62935a98abae44a0faedbfbb62",
+      "locator": "Optional ordinary L2 restatement only; not needed for algebraic proof"
+    }
+  ],
+  "scope": {
+    "finite_normal_surface_two_derivative_preimage": true,
+    "actual_Keller_one_generic_D_uniform_for_all_source_polynomials": true,
+    "ordinary_codifferent_not_unidentified_moment_lattice": true,
+    "exact_codifferent_clearing_ideal": true,
+    "generic_target_one_velocity_detects_transverse_integrality": true,
+    "source_finite_frame_required_for_one_velocity_inverse": true,
+    "canonical_etale_completion_preimage_analogue": true,
+    "trace_defect_injects_B_linearly_into_R_mod_Lambda": true,
+    "Chau_common_pencil_KQ0_or_LND_classification_used": false,
+    "automatic_velocity_membership_proved": false,
+    "trace_perfection_or_JC2_proved": false
+  },
+  "assurance": "Written unrestricted algebraic proof and internal exact controls. Local branched/Laurent models are not actual whole-plane Keller counterexamples; no formal verification or external review."
+}

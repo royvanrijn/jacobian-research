@@ -12,6 +12,8 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Gaussian dimension-degree boundary | Unpublished; independent review pending | open | [Source](../../unpublished/gaussian-boundary/README.md) |
 | Complete reductive Mathieu classification | Published preprints | proved | [Source](../../results/README.md) |
 | All-degree Gaussian structure and safety gap | Internal result | open | [Source](vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) |
+| Exact multibase Gaussian generic marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md) |
+| Angular-core reduction and exact original marked images | Internal result | proved | [Source](vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md) |
 | Complete quadratic-W Gaussian finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_QUADRATIC_W_FINITE_IMAGE_CLASSIFICATION.md) |
 | Gaussian H(2,1): affine charts, radial phases and obstructions | Internal result | proved | [Source](vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) |
 | Bidegree-(4,4) two-pair Image/Mathieu counterexample | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
@@ -20,6 +22,9 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Affine-multiplier quintic Image obstruction | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Complete cubic two-pair Image positivity and sharp balanced degree four | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) |
 | Mixed-cutoff moment jets and certified infinite tails | Internal result | proved | [Source](vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md) |
+| Parity-invariant Gaussian scalar and finite-image classification | Internal result | proved | [Source](vanishing/GAUSSIAN_PARITY_INVARIANT_CORE_FINITE_IMAGES.md) |
+| Exact axial cubic Gaussian moment scheme | Internal result | proved | [Source](vanishing/GAUSSIAN_AXIAL_CUBIC_MOMENT_IDEAL.md) |
+| Invariant quadratic fibres and complete quartic finite images | Internal result | proved | [Source](vanishing/GAUSSIAN_VARIABLE_RADIAL_QUADRATIC_FIBRE_FINITE_IMAGES.md) |
 
 **Computed obligations:** 38 unresolved; 1 resolved within their exact scope.
 

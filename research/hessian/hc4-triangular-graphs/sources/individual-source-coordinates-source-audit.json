@@ -1,0 +1,54 @@
+{
+  "review_date": "2026-11-17",
+  "scope": "Every actual unramified boundary valuation has an INDIVIDUAL regular polynomial source coordinate on its whole affine component open; unconditional smoothA1/whole root charts follow componentwise, with no simultaneous alignment claim.",
+  "primary_source": {
+    "path": "sources/borisov-divisorial-valuations-2013.pdf",
+    "url": "https://people.math.binghamton.edu/borisov/documents/papers/divisorialvaluations.pdf",
+    "sha256": "b4c0c4511079a3429bc859b0ff9b67d98b750ef502decd036e25dbcf194016d8",
+    "identity": "Alexander Borisov, On two invariants of divisorial valuations at infinity; primary author PDF with metadata13February2013. Published Journal of Algebraic Combinatorics39(2014),691\u2013710, DOI10.1007/s10801-013-0462-9.",
+    "locators": [
+      "Augmented canonical/determinant definitions and polynomial-automorphism invariance: printed3\u20136.",
+      "Proposition2.1 canonical blowup labels, printed5; Proposition2.2 positive/zero adjacency, printed5.",
+      "Lemma3.7 determinant blowup recurrences and complete proof: printed9\u201310.",
+      "End of Theorem4.2 replacement-P2 minimality move: printed11\u201312.",
+      "Theorem4.3 complete proof: printed12\u201315, PDF zero-based11\u201314; Case1/Case2, Case2a/minimality and repeated-right-edge discussion printed12\u201313.",
+      "Lemma4.3 non-positive branch and first-positive-label discussion, plus Lemma4.4 label1 determinant formula: printed14.",
+      "Later labels\u22652 cannot return to1: positive/zero adjacency and printed15 discussion."
+    ],
+    "inspection": "Complete Theorem4.3 text read, and all four relevant pages rendered to PNG and visually read. Definitions, sign conventions and determinant recurrence proof also checked. Only the minimal-coordinate Case2 label1 nonnegativity consequence is imported; the bounded-family statement alone is not used as a substitute.",
+    "exact_import": "In a polynomial-coordinate P2 compactification minimizing the ancestor count, a valuation of augmented label1 and negative determinant cannot lie in Case2. There the first positive label1 determinant c\u22650 and the remaining label1 chain has d=(m+1)^2c+m\u00b2+m\u22650; reaching label\u22652 cannot return to1. Hence extraction begins with two FREE centers.",
+    "adopted_foundations": "The primary's polynomial-source-automorphism/minimality blowdown argument uses classical contraction and rational-surface facts; these are adopted, not independently reproved in full."
+  },
+  "xie_scope": {
+    "cache": "sources/xie-valuation-intersections-2015.pdf",
+    "inspection": "Definitions and Theorem1.2 read for comparison only.",
+    "full_theorem_adopted": false,
+    "replacement": "The exact needed singleton direction trdeg(R\u2229Ov)=2\u21d2d(v)<0 is proved directly by resolution of [p:q:1], positive pullback of target line\u221e, and Lorentz signature."
+  },
+  "retained_inputs": [
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "locator": "Entire canonical U, source inclusion, all original primes, whole smooth affine component opens, boundary normalization/topologicalA1, unit exact source volume."
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "locator": "Conditional theorem applied only AFTER the individual coordinate is proved regular on the whole component open."
+    },
+    {
+      "path": "VALUATION_MATRIX_AND_CONTRACTED_SOURCE_AXES_CONTROL.md",
+      "locator": "Negative-definite/exact local-volume comparison with individual coordinates but no simultaneous source coordinate; not an actual Keller example."
+    }
+  ],
+  "independently_written_steps": [
+    "Boundary intersection form determinant convention C_v\u00b2=d(v).",
+    "Direct positive-pullback/sign proof of d(v)<0, avoiding Xie's full theorem.",
+    "Case1 two-free-center geometric extraction of an actual polynomial source coordinate with positive value.",
+    "Normality extension on the actual one-boundary component open and unconditional application of the retained conditional chart theorem."
+  ],
+  "not_claimed": [
+    "No simultaneous alignment or global common-coordinate theorem.",
+    "No existence of a target integral coordinate or descent of source translations to target.",
+    "No effective ancestor bound from finite controls.",
+    "No formal verification, external human review or JC2/HC4 solution."
+  ]
+}

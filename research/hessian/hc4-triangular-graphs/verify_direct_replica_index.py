@@ -159,6 +159,44 @@ def run() -> None:
         check(f"tower through C(y^{cover_degree}) with relative degree{relative_degree}",
               S.degree(HH,y) == cover_degree*relative_degree)
 
+
+    # Monomial stable fields: the primitive gives a cyclic subextension.
+    # Rational target coordinates here are controls, not polynomial Keller maps.
+    zz, TT = S.symbols("zz TT")
+    for cover_degree, primitive_degree in [
+        (1,1),(2,2),(2,6),(3,6),(4,12),(5,10),(7,21),
+    ]:
+        kk = primitive_degree-1
+        cc = S.Integer(2)
+        bbeta = 1/(y+2)+y*y
+        old_slice = x/(cc*y**kk)+bbeta
+        multiplier = cc*y**(primitive_degree-cover_degree)
+        bb = S.cancel(multiplier*bbeta)
+        new_slice = S.cancel(multiplier*old_slice)
+        equal(f"monomial slice rescaling m{cover_degree} N{primitive_degree}",
+              new_slice, x/y**(cover_degree-1)+bb)
+        check(f"monomial multiplier belongs to invariant field m{cover_degree} N{primitive_degree}",
+              primitive_degree>=cover_degree
+              and (primitive_degree-cover_degree) % cover_degree == 0)
+        equal(f"rescaled monomial delta coefficient m{cover_degree} N{primitive_degree}",
+              cc*y**kk*S.diff(new_slice,x), multiplier)
+        sigmax = S.cancel(
+            (zz*y)**(cover_degree-1)
+            *(new_slice-bb.subs(y,zz*y))
+        )
+        equal(f"rational deck formula fixes new slice m{cover_degree} N{primitive_degree}",
+              sigmax/(zz*y)**(cover_degree-1)+bb.subs(y,zz*y),
+              new_slice)
+        equal(f"deck character commutes with monomial replica m{cover_degree} N{primitive_degree}",
+              S.rem(zz**kk-zz**(cover_degree-1),
+                    zz**cover_degree-1,zz), 0)
+        mat = S.zeros(cover_degree)
+        for col in range(cover_degree-1):
+            mat[col+1,col] = 1
+        mat[0,cover_degree-1] = u
+        equal(f"cyclic primitive polynomial m{cover_degree} N{primitive_degree}",
+              mat.charpoly(TT).as_expr(), TT**cover_degree-u)
+
     # Direct local pullback computations with a varying unit retain ramification.
     for e in range(1,6):
         local_u = v**e*(1+2*v)

@@ -158,6 +158,14 @@ classifies these as the only rational affine planes with a generic
 rational section; every other fixed plane contributes `O_P(B^2)` globally
 soluble targets. This fixed-plane statement does not justify summing over
 all planes to obtain an ambient leading constant.
+The extension [PLC1--PLC2](FIXED_MAP_PLANE_LOCAL_COUNTS.md) applies
+the same projective theorem to the quadratic-factor cover on each
+nonsection plane: its integral components have degree five or ten.
+It follows that every fixed plane has `A_P(B)=O_P(B^2)`, and every
+plane other than the two sections also has `L_P(B)=O_P(B^2)`.
+Thus the two section planes are exactly the fixed rational affine
+planes with order `B^3` locally soluble counts. These bounds still
+have no constant uniform over moving planes.
 The original-line Hasse count supplies (5) for `A` in exactly the same
 height. Repeating the primitive count with three signed numerator
 coordinates gives `8B^4/zeta(4)+O(B^3)`, proving the density statements.

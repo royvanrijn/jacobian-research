@@ -234,6 +234,17 @@ the active primes of ETP4. ECM1 gives exactly
 
 Equation (3.4) is not the conditional formula for a class or prefix.
 
+[EVO1](ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md) gives an
+arithmetic obstruction to using (3.4) for a small-relative-variance
+argument: its variance is at least `m_Y^2/7` for every nonnegative
+pole sum. EVO4 supplies positive-density even-image prime sets
+inside each origin subgroup as well. These statements do not
+rule out the conditional criterion (3.1) for the actual nonzero
+class prefix; affine compatibility can create negative covariances.
+The independent-vector numerator tail of
+[EUP4](ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md) likewise
+does not bound the same-vector covariance sum in (3.3).
+
 ## 4. What a bounded second moment does and does not imply
 
 A weaker estimate `E(T_Y^2|C_0)<=K m_Y^2` with `m_Y->infinity`
@@ -277,10 +288,15 @@ elliptic curve.
 
 For the depth-one ETP3 route, a positive-density set of primes with
 `e_p=1` does not by itself supply (3.1). One would still need
-conditional return means and their correlations. A fixed-prefix
-lower bound of order `1/p` on a positive-density prime set, together
-with a variance negligible compared with the squared accumulated
-mean, would satisfy ECM3. Alternatively a lower bound of order
+conditional return means on that depth-one set and their correlations.
+[EAM2--EAM3](ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md)
+now prove a lower bound of order `1/p` for unweighted pole returns
+on a positive-density prime set for every fixed feasible prefix.
+In particular their expected count is `>> log log Y`. This selected
+prime set has no proved formal-depth restriction. Conditional EAM4
+shows that density zero of the primes with `3|e_p` would supply
+the same lower order for weighted hazard means. The required
+variance estimate remains open. Alternatively a lower bound of order
 `1/p` for the returns conditioned on the *growing* soluble prefix
 would feed ETP2 and EFA4 directly. These are different obligations.
 

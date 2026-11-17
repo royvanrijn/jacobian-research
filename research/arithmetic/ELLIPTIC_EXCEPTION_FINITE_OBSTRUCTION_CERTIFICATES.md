@@ -257,6 +257,16 @@ cannot occur, that there are only finitely many simultaneous
 elliptic-Wieferich primes, or that all sufficiently large primes
 have `e_p=1`.
 
+[The explicit dependency core](ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md)
+sharpens this reduction for classes two and `5q_0`: start at the
+feasible core `2,3,5,1889`, erase automatic primes, and the first
+killing prime must satisfy the fatal-branch criterion without an
+unspecified cutoff. The effective candidate theorem EUP3 in
+[the rank-three note](ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md)
+then gives one finite prime set for every permitted prefix with a
+common positive mass lower bound. The input to the finite cover
+criterion EFO2 remains the certified full joint quotient and weights.
+
 ## 4. Exact evidence and remaining question
 
 The [baseline certificate](elliptic_exception_finite_obstruction_baseline.json)

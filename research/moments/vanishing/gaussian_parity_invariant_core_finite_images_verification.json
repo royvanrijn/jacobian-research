@@ -1,0 +1,265 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "research/moments/vanishing/verify_gaussian_parity_invariant_core_finite_images.py": "0dcbd1d9fa56132f34633f244f4304d89dcf98d7a985a558ec108efbce61b7ff",
+    "research/moments/vanishing/GAUSSIAN_PARITY_INVARIANT_CORE_FINITE_IMAGES.md": "c1f925664ecae9c0fb6bd9ce8d8b7c059212ff8d6065bb962b484cc6d3d0b980",
+    "research/moments/vanishing/GAUSSIAN_ANGULAR_CORE_FULL_IMAGE_INVARIANCE.md": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+    "research/moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md": "650c2f422f8db94d963c00ac1ef30cc46a1efee4fb8fc9298bb10b21b5eb7cbd",
+    "research/moments/vanishing/GAUSSIAN_SAFE_RECOMPOSITION_CLASSIFICATION.md": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
+    "research/moments/vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
+    "research/factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex": "d9fc9b65eb3ffb8dc4f995abc110cabf9d377a6f32842b35dac29611f81aee47",
+    "research/factorial/image-rigidity/source_ledger.json": "fbe39e9249b88219bbf204bb9fdbf2e2bbe7030d140b1f183145985a8b443377",
+    "research/factorial/image-rigidity/long_source_audit.json": "9072b637b0735dff5ef4d0a35201a3ff1d5ddc77f2f3bc2d3408fee9eb7f231a",
+    "research/factorial/image-rigidity/sources/long-fc2.tex": "e0341bf6319ec2b6c369ff6b491976462b56c2de0b5414e8cc303f080523bad8",
+    "research/factorial/image-rigidity/sources/long-eit-pinned.tex": "65567be47d72340210a99932fbcd989fd5e690ffa081b668d0a09c0dde3a902d",
+    "research/factorial/image-rigidity/sources/pakovich-muzychuk-07104085v2.html": "58fc3e3215ef679f3e462a96057587fe1be63acebcb10f42f5eb9f5763666ccb",
+    "research/factorial/image-rigidity/sources/beukers-math0405549.html": "ba2dd1c8e8d274496c8abc877a8c2647944ef627192dd5ee0d5d34ffd9cb6291"
+  },
+  "checks": {
+    "kernel": {
+      "status": "passed",
+      "coefficient_field": "QQ",
+      "incomplete_Laplace_m_indices": [
+        0,
+        10
+      ],
+      "entire_remainder_coefficient_orders": [
+        0,
+        8
+      ],
+      "angular_recurrence_m_indices": [
+        2,
+        10
+      ],
+      "root_filter_trace_degrees": [
+        1,
+        8
+      ],
+      "normalization_n_indices": [
+        0,
+        6
+      ],
+      "normalization_radial_degrees": [
+        1,
+        5
+      ],
+      "scope": "Finite exact identities only; global continuation is the written all-m convergence argument."
+    },
+    "literal_original": {
+      "even_Gamma_original_angular_fixtures": [
+        {
+          "f": "S + 2*T + 1",
+          "radial_degree": 1,
+          "angular_top": "x**2 + 1",
+          "angular_degree": 2,
+          "raw_moments_0_to_4": [
+            "1",
+            "3",
+            "12",
+            "64",
+            "444"
+          ]
+        },
+        {
+          "f": "S**2 + S*T + S + T**2 - 2*T + 1",
+          "radial_degree": 2,
+          "angular_top": "x**4 - x**2 + 1",
+          "angular_degree": 4,
+          "raw_moments_0_to_4": [
+            "1",
+            "17/4",
+            "901/16",
+            "112717/64",
+            "25828841/256"
+          ]
+        },
+        {
+          "f": "3*S + T + (S + T)**2 + 1",
+          "radial_degree": 2,
+          "angular_top": "1",
+          "angular_degree": 0,
+          "raw_moments_0_to_4": [
+            "1",
+            "33/4",
+            "2521/16",
+            "387817/64",
+            "102696657/256"
+          ]
+        },
+        {
+          "f": "S**3 + T**2 + 1",
+          "radial_degree": 3,
+          "angular_top": "-x**6 + 3*x**4 - 3*x**2 + 1",
+          "angular_degree": 6,
+          "raw_moments_0_to_4": [
+            "1",
+            "31/4",
+            "12001/16",
+            "23488543/64",
+            "123288056257/256"
+          ]
+        }
+      ],
+      "even_fixture_orders": [
+        0,
+        4
+      ],
+      "odd_squared_original_fixtures": [
+        {
+          "b": "S + T + 1",
+          "Q": "2*S**2*T + 4*S*T**2 + 4*S*T + 2*T**3 + 4*T**2 + 2*T",
+          "Q_degree": 3,
+          "nonflat_angular_top": "2*x**2",
+          "Q_raw_moments_0_to_3": [
+            "1",
+            "59/4",
+            "48915/16",
+            "173452605/64"
+          ]
+        },
+        {
+          "b": "S + T**2 - T",
+          "Q": "2*S**2*T + 4*S*T**3 - 4*S*T**2 + 2*T**5 - 4*T**4 + 2*T**3",
+          "Q_degree": 5,
+          "nonflat_angular_top": "2*x**10",
+          "Q_raw_moments_0_to_3": [
+            "1",
+            "689/16",
+            "446362947/256",
+            "4186213032329775/4096"
+          ]
+        }
+      ],
+      "odd_even_moment_orders": [
+        0,
+        6
+      ],
+      "odd_odd_moment_orders": [
+        1,
+        7
+      ],
+      "finite_original_branches": [
+        {
+          "constant_core": 0,
+          "linear_Y_core": 0,
+          "R": "Z^5 W^3 Y^4+Z^2",
+          "gamma": 2,
+          "original_moment_orders": [
+            0,
+            6
+          ],
+          "markers": [
+            {
+              "marker": "1",
+              "normalized_exact_formula": "1",
+              "sufficient_degree_bound": 0
+            },
+            {
+              "marker": "W**2",
+              "normalized_exact_formula": "362*t",
+              "sufficient_degree_bound": 1
+            },
+            {
+              "marker": "W**2*Y",
+              "normalized_exact_formula": "0",
+              "sufficient_degree_bound": 1
+            },
+            {
+              "marker": "W**4",
+              "normalized_exact_formula": "190527132*t**2",
+              "sufficient_degree_bound": 2
+            }
+          ]
+        },
+        {
+          "constant_core": 3,
+          "linear_Y_core": 0,
+          "R": "Z^5 W^3 Y^4+Z^2",
+          "gamma": 2,
+          "original_moment_orders": [
+            0,
+            6
+          ],
+          "markers": [
+            {
+              "marker": "1",
+              "normalized_exact_formula": "1",
+              "sufficient_degree_bound": 0
+            },
+            {
+              "marker": "W**2",
+              "normalized_exact_formula": "362*t",
+              "sufficient_degree_bound": 1
+            },
+            {
+              "marker": "W**2*Y",
+              "normalized_exact_formula": "0",
+              "sufficient_degree_bound": 1
+            },
+            {
+              "marker": "W**4",
+              "normalized_exact_formula": "190527132*t**2",
+              "sufficient_degree_bound": 2
+            }
+          ]
+        },
+        {
+          "constant_core": 3,
+          "linear_Y_core": 2,
+          "R": "Z^5 W^3 Y^4+Z^2",
+          "gamma": 2,
+          "original_moment_orders": [
+            0,
+            6
+          ],
+          "markers": [
+            {
+              "marker": "1",
+              "normalized_exact_formula": "1",
+              "sufficient_degree_bound": 0
+            },
+            {
+              "marker": "W**2",
+              "normalized_exact_formula": "1920*t**5 + 2880*t**3 + 362*t",
+              "sufficient_degree_bound": 7
+            },
+            {
+              "marker": "W**2*Y",
+              "normalized_exact_formula": "3840*t**6 + 9600*t**4 + 3604*t**2",
+              "sufficient_degree_bound": 8
+            },
+            {
+              "marker": "W**4",
+              "normalized_exact_formula": "464486400*t**10 + 3251404800*t**8 + 6096464640*t**6 + 3048312960*t**4 + 190527132*t**2",
+              "sufficient_degree_bound": 14
+            }
+          ]
+        }
+      ],
+      "nonfinite_core_vacuum_invariance_orders": [
+        0,
+        3
+      ],
+      "scope": "Bounded exact identities only; the all-degree continuation and classification are written proofs."
+    },
+    "primary_mirror_ledger_consistency": {
+      "status": "passed",
+      "files": [
+        "sources/long-fc2.tex",
+        "sources/long-eit-pinned.tex",
+        "sources/pakovich-muzychuk-07104085v2.html",
+        "sources/beukers-math0405549.html"
+      ]
+    }
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "unrestricted_result_from_finite_prefix": false,
+  "scope": "Bounded exact kernel, Gamma/Gaussian and finite-branch controls. The unrestricted result is the written proof with pinned unrefereed primary manuscripts, retained audits and published transitive inputs; no external or formal assurance upgrade."
+}

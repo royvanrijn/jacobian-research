@@ -282,10 +282,11 @@ from above gives
         =\nu_\infty(\mathscr U_\infty),\qquad
                      0\le\mu_\infty\le\tfrac18.}      \tag{4.3}
 \]
-The sharper upper bound uses
-[J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md): the fixed-class
-coefficient at the finite set `2,3,17` is `1/8`, and all larger
-prime sets impose additional conditions.
+The upper bound is retained by
+[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md): the
+fixed-class coefficient at `2,3,5,11,17` is `1/8`, already its value
+at `2,3,17` in [J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md).
+Larger prime sets impose additional conditions.
 Every finite \(\mu_Y\) is positive by EFA2. This does not show that
 \(\mu_\infty\) is positive.
 
@@ -386,11 +387,13 @@ the four classes, replace \(A_{K_0}(B)\) by the total Hasse count
 \(A_E(B)\), and replace \(\mu_Y\) by
 \(\mu_Y^{\rm tot}=\sum_{a\in A}\mu_{S_Y,a}\).
 The same proof gives (4.3)--(4.6) with
-\(0\le\mu_\infty^{\rm tot}\le2300089/10392564\), using
-[J235173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md) at the finite
-set `2,3,5,17`. This uses the total normalization
-throughout; it does not mix a fixed-class numerator with a
-total-class coefficient.
+\(0\le\mu_\infty^{\rm tot}\le116302241/531619620\), using
+[J23511173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md) at the
+finite set `2,3,5,11,17`. The earlier four-prime set `2,3,5,17`
+has its own exact coefficient `2300089/10392564` by
+[J235173](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md). The new bound
+uses the total normalization throughout; it does not mix a
+fixed-class numerator with a total-class coefficient.
 
 ## 5. The meaning of the constant
 

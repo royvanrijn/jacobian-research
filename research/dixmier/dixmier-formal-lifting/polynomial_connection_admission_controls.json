@@ -1,0 +1,192 @@
+{
+  "claim": "Polynomial position-flat connections reflect uniform PBW boundedness; global XQ Airy source datum",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction, independent normal PBW multiplication"
+  },
+  "source_order": [
+    "X",
+    "Q",
+    "P",
+    "Z"
+  ],
+  "brackets": "[P,X]=[Z,Q]=h",
+  "datum": "M(t)=[[0,1],[t,0]],t=XQ;M_X=Q*M(t),M_Q=X*M(t)",
+  "actual_global_source_images": [
+    {
+      "0,0": [
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "1,1": [
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "0,0": [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "1,1": [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "0,0": [
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "0,1": [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "1,0": [
+        [
+          [
+            1,
+            2,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "1,1": [
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "1"
+        ]
+      ]
+    },
+    {
+      "0,0": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "1"
+        ]
+      ],
+      "0,1": [
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "1,0": [
+        [
+          [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "1"
+        ]
+      ],
+      "1,1": [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "1"
+        ]
+      ]
+    }
+  ],
+  "all_six_source_relations_verified_exactly": true,
+  "position_flatness_verified_exactly": true,
+  "image_PBW_degrees": [
+    1,
+    1,
+    3,
+    3
+  ],
+  "L": 3,
+  "weighted_generator_bounds_verified": true,
+  "nontrivial_filtered_polynomial_control": "P^2+Z+X^2Q has image weighted degree6 and the prescribed scalar residue",
+  "wrong_relative_sign_rejected": true,
+  "universal_theorem_proof": "Written filteredness and parameter-order induction, not finite controls",
+  "irreducibility_scope": "Written rational Riccati infinity argument over position field k(X,Q) only",
+  "composition_scope": "Only compositional images under polynomial position-flat source representations; arbitrary finite noncompositional graph actions remain open",
+  "hashes": {
+    "POLYNOMIAL_CONNECTION_BOUNDEDNESS_REFLECTION.md": "ce7fd32cbb69fe60aa276b72bb0105c5de5276168d86b8be55e4c440e90d8576",
+    "check_polynomial_connection_admission.py": "7338370cb16411c531beda9551816dee11462d2fe0b95da58ad47eedcebc7fca"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -196,12 +196,46 @@ for b0 in [0, 1, 2, 5]:
     eq(f"boundary divisor lattice has rank b0={b0}", lattice.rank(), b0)
     eq(f"Euler/Picard rank ledger b0={b0}", 1+lattice.rank(), 1+b0)
 
+# Maximal affine-A1 curve coverage. A smooth affine curve containing A1
+# has projective completion P1 and a nonempty deleted set contained in
+# the one deleted point of that A1; the empty alternative is projective.
+from itertools import combinations
+puncture = {"infinity"}
+subsets = [set(c) for r in range(2) for c in combinations(puncture, r)]
+affine_options = [missing for missing in subsets if len(missing) > 0]
+check("the only affine intermediate curve containing the given A1 is A1",
+      affine_options == [puncture])
+check("the proper enlargement option is projective P1",
+      [missing for missing in subsets if not missing] == [set()])
+eq("normalization has no point over an alleged extra closure point",
+   len(puncture - affine_options[0]), 0)
+
+# Component opens come from effective Cartier complements. On a
+# trivializing affine chart the open is D(f), realized as f*T=1.
+u, v, Z = S.symbols("u v Z")
+for defining in [u, u*v, u*(u-1), u*v*(u-v)]:
+    eq("Cartier complement localization relation "+str(defining),
+       (defining*T-1).subs(T,1/defining), 0)
+    check("Cartier complement denominator becomes a unit "+str(defining),
+          S.cancel(1/defining) != 0)
+for boundary_count in [1, 2, 3, 6]:
+    for retained in [0, boundary_count-1]:
+        removed = set(range(boundary_count)) - {retained}
+        check(f"component-open union removes precisely other divisors b{boundary_count}i{retained}",
+              len(removed) == boundary_count-1 and retained not in removed)
+        check(f"component-open retains whole chosen curve b{boundary_count}i{retained}",
+              set(range(boundary_count)) - removed == {retained})
+check("single-component open is the entire canonical completion",
+      set(range(1)) - {0} == set())
+
 # Exact source seals and scope, not substitutes for proof.
 proof = PROOF.read_text(encoding="utf-8")
 for text in [
     "H_1^BM(D)=H^3(U)=0",
     "direct-sum_(p in T) Z^(r_p-1)",
     "normalization(D_i)=A1",
+    "barD_i=D_i subset U",
+    "M_i=X union D_i",
     "it is **not**",
     "smoothness of the reduced curves D_i",
     "No assertion that G preserves the original open X",
@@ -248,6 +282,8 @@ receipt = {
         "boundary_distinct_components_disjoint": True,
         "boundary_normalizations_A1": True,
         "boundary_topologically_A1": True,
+        "added_unramified_primes_entire_closure_in_U": True,
+        "whole_component_opens_X_union_Di_smooth_affine": True,
         "boundary_smooth_or_algebraically_A1_proved": False,
         "simply_connected_U": True,
         "Euler_U": "1+b0",

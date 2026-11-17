@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "original_Wick_control": {
+    "a_range": [
+      0,
+      6
+    ],
+    "b_range": [
+      0,
+      4
+    ],
+    "time_orders": [
+      0,
+      12
+    ],
+    "marker_count": 35
+  },
+  "exact_negative_Laurent_projection_bounds": true,
+  "exact_triangular_q_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "exact_Bezout_orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "exact_time_amplitude": "Phi[1-2tZ]=1",
+  "reverse_lattice_sample": {
+    "f_coordinate": "(32*t**7 - 13*t**5 - 47*t**4 + 2*t**3 + 24*t**2 - 3)/(t**4*(2*t - 1)**2*(2*t + 1)**2)",
+    "description": "(1+3t)Delta^-2*f plus 2q1-3q4 and 1+t^3"
+  },
+  "degree_preserving_monomial_reductions": 36,
+  "exact_tangent_kernel_controls": "delta applied to every monomial of degree<=4",
+  "filtered_basis_controls": [
+    {
+      "degree": 1,
+      "normal_form_basis_count": 3
+    },
+    {
+      "degree": 2,
+      "normal_form_basis_count": 6
+    },
+    {
+      "degree": 3,
+      "normal_form_basis_count": 9
+    },
+    {
+      "degree": 4,
+      "normal_form_basis_count": 12
+    },
+    {
+      "degree": 5,
+      "normal_form_basis_count": 15
+    },
+    {
+      "degree": 6,
+      "normal_form_basis_count": 18
+    },
+    {
+      "degree": 7,
+      "normal_form_basis_count": 21
+    }
+  ],
+  "exact_two_pole_independence_orders": [
+    1,
+    7
+  ],
+  "nonrational_f_control": "Delta has simple zeros at \u00b11/2",
+  "rejected_naive_ring_element": "f^2=Delta^-1; rational nonpolynomial, outside M",
+  "scope": "Bounded exact controls only. The all-degree source, kernel independence and global lattice equality are proved in the companion note. Two active Witt variables only; no inert ordinary-marker kernel is asserted.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_QUADRATIC_ROOT_EXACT_GLOBAL_IMAGE.md": "8e531bb7e82383a8df8d709edde5d3efb959351e40f402784547cad9e2d6988e",
+    "verify_gaussian_quadratic_root_exact_global_image.py": "e34f9b08b5961a325169641a930b14266909fcaed0104d1079595707037125c0",
+    "GAUSSIAN_W_AFFINE_C_ZERO_GENERIC_IMAGE.md": "5378c337c29c2e56e391b0ed33481bdaa8c0836a65ae4774972aa7f273902fa1",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md": "3d10c2c80147b8c9e91eef6a77202f5fb27c0134fc9af583d5d37fdfa5dd1736"
+  }
+}

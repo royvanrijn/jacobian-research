@@ -1,0 +1,367 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}[lemma]{Proposition}
+\title{An exact coupled Frobenius descent at the gap-six boundary}
+\author{}\date{}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+Normalize $v_7(7)=1$ in a complete algebraically closed extension $K$
+of $\mathbb Q_7$, with valuation ring $\mathcal O$, maximal ideal $\mathfrak m$, and residue field $k$.
+The rising-product length $n$ is a nonnegative integer, and an empty
+product is one. Physical terminal orders below satisfy $n\ge2$.
+For $q=6$ put
+\[
+ \Pi_{n,6}(t)=\prod_{\ell=0}^{n-1}(t+6\ell),\qquad
+ {\cal C}_6(f;u)_r=\sum_{\ell\ge0}[z^{6\ell+r}]f(z)\,u^\ell .
+\]
+All operators act on whole convergent series before evaluation.
+No Euler action on a fixed nonzero quotient is used.
+Consider the closed operator/seed class
+\[
+ A=c-\theta_z+F(z),\quad
+ F(z)=z+\sum_{a\ge1}\alpha_a z^{7^a},\quad
+ \alpha_a\in7\mathbb Z_7,\quad c\in\mathbb Z,
+ \qquad h\in\mathcal O[[z]],\quad\bar h=\bar h(0)\ne0.
+\]
+For the original physical problem $c=n+5$, $F=z$ and $h=1$.
+Let $P\in K[t]$ be any polynomial; it may depend on an outer
+evaluated parameter, but its coefficients are scalars for inner Euler
+operations. Critical rank relations use $\deg P\le4$.
+
+Let $\mathcal E(z)=\exp(\sum_{a\ge0}z^{7^a}/7^a)$.
+Put $b=\alpha_1-1\in\mathbb Z_7^\times$.
+The required integral unit-gauge property is imported in the proof
+of the following stage.
+
+\begin{proposition}[Coupled exact stage]\label{prop:stage}
+Write $n=7m+r$, $0\le r<7$. For $0\le j<7$ put
+\[
+ e_j=(c-j)\bmod7\in\{0,\ldots,6\},\quad
+ m_j=m+\boldsymbol1_{\{e_j<r\}},\quad
+ c_j=\frac{c-j+6e_j}{7}.
+\]
+Define
+\[
+ A_j=c_j-\theta_w+F_*(w),\quad
+ F_*(w)=w+\sum_{a\ge1}
+ \frac{(\alpha_{a+1}-1)7^{7^a-1}}{b^{7^a}}w^{7^a}.       \tag{1}
+\]
+Every higher coefficient of $F_*$ belongs to $7\mathbb Z_7$.
+Writing
+\[
+ {\cal E}(z)^{-1}h(z)=\sum_{j=0}^6z^j h_j(z^7),
+\]
+put $h_j^*(w)=h_j(7w/b)$ and
+\[
+ \widehat h_j=
+ \prod_{\substack{0\le\ell<n\\\ell\not\equiv e_j\ (7)}}
+       [\,7A_j+6(\ell-e_j)\,]\,h_j^*(w).                 \tag{2}
+\]
+These are actual integral seeds with nonzero constant reduction.
+Let $u=7v$ with $v\in\mathcal O^\times$, and put
+\[
+ u_*=b^6u^7/7^6=7b^6v^7,\qquad w=bz^7/7 .
+\]
+The single cyclic condition
+$\mathcal C_6(\Pi_{n,6}(A)P(A)h;u)=0$
+is equivalent to the single COUPLED condition
+\[
+ {\cal C}_6\left(
+ \sum_{j=0}^6(bv)^{-j}w^j7^{m_j}
+       \Pi_{m_j,6}(A_j)
+       P(7A_j-6e_j)\widehat h_j;\ u_*\right)=0.           \tag{3}
+\]
+Thus $v_7(u_*)=1$, and all new rising-product lengths are
+$\lfloor n/7\rfloor$ or $\lceil n/7\rceil$.
+\end{proposition}
+\begin{proof}
+The Artin--Hasse series and its inverse are integral and are units
+at positive valuation by
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}
+{Lemma \texttt{lem:artin-hasse-closure}}.
+The unit gauge gives
+\[
+ {\cal E}^{-1}A{\cal E}
+       =c-\theta_z+\sum_{a\ge1}(\alpha_a-1)z^{7^a}.
+\]
+On the $z^j$ residue section, with $y=z^7$, this is
+$c-j-7\theta_y+\sum_{a\ge1}(\alpha_a-1)y^{7^{a-1}}$.
+The substitution $w=by/7$ makes it exactly $7A_j-6e_j$.
+For $\ell=e_j+7a$ the rising factor is
+$7A_j-6e_j+6\ell=7(A_j+6a)$.
+There are exactly $m_j$ such factors, and the others are (2).
+They commute as polynomials in one inner operator.
+
+Through degree six, $\mathcal E^{-1}$ agrees with $e^{-z}$.
+Thus $\overline{h_j^*}=\overline{h(0)}(-1)^j/j!\ne0$,
+and its higher coefficients are divisible by7.
+Each factor in (2) reduces to the nonzero constant
+$6(\ell-e_j)$, proving the seed assertion.
+Formula (1) proves closure of the multiplication part.
+
+On $z^6=u$, one has $z^7=uz$, hence $w=bvz$ and
+$z^j=(bv)^{-j}w^j$. This bijects the six-point orbit with
+$w^6=u_*$.
+Multiplication by the convergent unit $\mathcal E$ preserves orbit
+vanishing. Fourier inversion with unit denominator6 proves (3).
+All series and finitely many Euler derivatives converge uniformly
+on these positive-valuation orbits. No extracted section is
+set to zero separately.
+\end{proof}
+
+\begin{lemma}[A closed eight-offset window]\label{lem:window}
+Suppose $c=n+\eta+5$ with $-6\le\eta\le1$ an integer.
+Define the formal descended Gamma constant $\gamma'_j=c_j-5$
+(not assumed positive). Then
+\[
+                     -6\le\gamma'_j-m_j\le1.             \tag{4}
+\]
+For initial physical offset $\eta=0$, equality $\gamma'_j=m_j$
+occurs exactly at
+\[
+ \begin{array}{c|c}
+ r=n\bmod7&\text{physical sections }j\\ \hline
+ 0&0,\ 6\\
+ 1,2,3,4,5&r\\
+ 6&\text{none}.
+ \end{array}
+\]
+\end{lemma}
+\begin{proof}
+Put $x=r+\eta+5-j=e_j+7d_j$ and
+$\delta_j=\boldsymbol1_{\{e_j<r\}}$.
+Then $\gamma'_j-m_j=e_j+d_j-5-\delta_j$.
+Since $-7\le x\le12$, $d_j\in\{-1,0,1\}$.
+For $d_j=0$ the bound is immediate.
+For $d_j=-1,e_j>0$ the lower bound is at least$-6$.
+For $d_j=-1,e_j=0$, $x=-7$ forces$r=0$, so
+$\delta_j=0$ and the value is$-6$.
+For $d_j=1$, $x\le r+6$ gives $e_j<r$, and $x\le12$
+gives$e_j\le5$; the value is then$e_j-5$.
+These prove (4). Direct substitution at $\eta=0$ gives the table.
+\end{proof}
+
+
+\begin{lemma}[An integral finite-difference lattice]\label{lem:mahler}
+For actual physical data $c=n+5,F=z,h=1$ and $P\in\mathcal O[t]$,
+put
+\[
+ G(X)=\binom{X/6+n-1}{n}P(X),\qquad
+ d_j=\sum_{\ell=0}^j(-1)^\ell\binom j\ell G(c-\ell).
+\]
+Every $d_j$ is integral, and $d_j=0$ for $j>n+\deg P$.
+For $0\le a<6$ define the finite polynomial
+\[
+ V_a(v)=\sum_{\ell\ge0}
+          \frac{7^\ell a!}{(a+6\ell)!}\,d_{a+6\ell}v^\ell.
+                                                               \tag{5}
+\]
+Then $V_a\in\mathcal O[v]$, and the original cyclic relation
+at $u=7v$ is equivalent to $V_0(v)=\cdots=V_5(v)=0$.
+In reduction, only indices $j=a+6\ell$ with $s_7(j)=a$
+contribute to (5), where $s_7$ is the base-seven digit sum.
+For $a=0$ only $j=0$ contributes, so $\overline V_0=\overline d_0$.
+\end{lemma}
+\begin{proof}
+The binomial polynomial $\binom{x}{n}$ is integral for $x\in
+\mathbb Z_7$, by continuity from nonnegative integers.
+Since6 is a unit and $c-\ell\in\mathbb Z_7$, $G(c-\ell)$
+and its finite differences are integral. Termination follows
+from its polynomial degree.
+The purely formal conjugacy
+$A=e^z(c-\theta)e^{-z}$ gives the FINITE identity
+\[
+ \frac{\Pi_{n,6}(A)P(A)1}{6^n n!}
+       =\sum_{j=0}^{n+\deg P}\frac{d_j}{j!}z^j .
+\]
+No exponential is evaluated at the boundary.
+Taking cyclic components and multiplying component $a$ by $a!$
+proves (5) and its vanishing equivalence.
+For $j=a+6\ell$, Legendre's formula gives
+\[
+ v_7\left(\frac{7^\ell a!}{j!}\right)
+       =\frac{s_7(j)-a}{6}\ge0 .
+\]
+The digit sum is congruent to$a$ modulo6. For $1\le a\le5$
+it is at least$a$; for $a=0$ it is positive for$j>0$.
+This proves both integrality and the reduction statement.
+
+The constant normalized binomial is
+\[
+ \binom{c/6+n-1}{n}=\binom{(7n-1)/6}{n},\qquad
+ (7n-1)/6=1+7(n-1)/6.
+\]
+Its top argument therefore has first base-seven digit1 at
+every physical index.
+\end{proof}
+
+\begin{proposition}[A primitive first-layer obstruction]
+\label{prop:first-layer-obstruction}
+At physical terminal $n=3$ the primitive polynomial
+\[
+ P(X)=(X-3)(X-4)(X-5)(X-6)
+\]
+has $\overline{V_a(P;v)}=0$ identically for all $0\le a<6$.
+Consequently the unsaturated six-by-five matrix with columns
+$V_a(X^j;v)$, $0\le j\le4$, has rank at most four over
+$\mathbb F_7(v)$. This is a first-layer relation, not a
+characteristic-zero rank-drop point.
+\end{proposition}
+\begin{proof}
+Here $c=8$ and
+$\Pi_{3,6}(X)P(X)\equiv X^7-X\pmod7$.
+On $\mathbb F_7[z]/(z^7)$ the operator $A=1-\theta_z+z$ is
+bidiagonal with the seven distinct diagonal entries of $\mathbb F_7$.
+Its characteristic polynomial is $X^7-X$.
+Thus $(A^7-A)1$ is divisible by $z^7$; its degree is seven and
+its leading coefficient is one, so it equals $z^7$.
+The normalization $6^3\,3!$ is a seven-adic unit.
+Every lower coefficient is therefore divisible by seven, and the
+remaining $z^7$ term acquires a factor seven after $z^6=7v$.
+This proves the reductions of all normalized rows.
+The coefficient of $X^4$ in $P$ is one, so its reduced coefficient
+vector is nonzero and gives the asserted kernel.
+\end{proof}
+
+For physical terminal $n\ge2$ define the integral polynomial matrix
+\[
+ \mathsf M_n(v)=\bigl(V_a(X^j;v)\bigr)_
+                    {0\le a<6,\ 0\le j\le4}\in
+                         \mathbb Z_7[v]^{6\times5}.       \tag{6}
+\]
+This matrix retains the actual constant seed and the actual
+order-dependent raising constant $c=n+5$.
+
+\begin{proposition}[A conditional affine saturation criterion]
+\label{prop:affine-saturation-criterion}
+Fix $n\ge2$. Starting with $\mathsf M_n$, permit finitely many
+integral Laurent row and column operations that are invertible
+over $\mathcal O$ at every $v\in\mathcal O^\times$, and divisions by seven of
+globally seven-divisible rows or columns.
+For example, square row or column multiplier matrices whose
+determinants reduce to nonzero Laurent monomials are permitted.
+Suppose the resulting matrix $\mathsf N_n$ is integral Laurent
+and some finite integral Laurent combination of its six maximal
+minors is a Laurent polynomial $g\in\mathbb Z_7[v,v^{-1}]$ with
+\[
+ \bar g=a+bv\ne0,\qquad a,b\in\mathbb F_7.                  \tag{7}
+\]
+Then $T_{n,n,6}$ is squarefree. In particular every nonzero ordinary
+phase $X(A_0+B_0X^6)$ has a nonzero moment at orders $n-1,n$.
+More generally, the same conclusions follow if $\mathsf M_n$
+has at most one distinct rank-drop point on $\mathcal O^\times$.
+These are conditional criteria; no uniform saturation certificate
+is asserted.
+\end{proposition}
+\begin{proof}
+Every permitted operation preserves characteristic-zero rank at
+all unit parameters. Global divisibility ensures that a row or
+column divided by seven remains integral; the scalar seven is
+nonzero in characteristic zero. Thus every original rank-drop
+point annihilates all maximal minors of $\mathsf N_n$ and hence $g$.
+
+If $b=0$, then $a\ne0$ and $g(v)$ is a unit at every unit parameter.
+If $b\ne0$, take distinct units $x,y\in\mathcal O^\times$.
+For each integer exponent $j$, the divided difference
+$(x^j-y^j)/(x-y)$ is integral. For $j=-m<0$, explicitly it is
+\[
+ -\frac{\sum_{\ell=0}^{m-1}x^{m-1-\ell}y^\ell}{x^my^m}.
+\]
+Every coefficient of $g$ except its constant and linear
+coefficients is seven-divisible. Consequently
+\[
+ \frac{g(x)-g(y)}{x-y}\equiv b\pmod{\mathfrak m}
+\]
+is a unit. There is at most one unit zero of $g$, and hence
+at most one unit rank-drop point of $\mathsf M_n$.
+
+We explain why this last rank condition suffices for the conclusion.
+Put $T=T_{n,n,6}$ and $S(u)=u^nT(-1/u)$.
+By \href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}
+{Theorem \texttt{thm:radius}}, every hypothetical multiple root
+$t$ of $T$, at every algebraic embedding into $K$, has
+$u=-1/t=7v$ with $v\in\mathcal O^\times$.
+The \href{gap_three_hurwitz_structure.tex}
+{all-gap Lemma \texttt{lem:critical-ideal}} identifies the corresponding
+critical point of $S$ with a rank drop of the cyclic matrix
+$B_n,\ldots,B_{n+4}$. Its statement over $\mathbb C$ transfers
+here by rational polynomial vanishing: the squarefree part of
+$\gcd(S,S')$ divides every cyclic maximal minor over $\mathbb Q$,
+as is seen after embedding into $\mathbb C$.
+No exponential gauge is evaluated at the seven-adic boundary.
+
+The exact identities
+\[
+ B_{n+j}=\Pi_{n,6}(A)\prod_{\ell=n}^{n+j-1}(A+6\ell)1
+\]
+give a unit triangular change to the columns
+$\Pi_{n,6}(A)A^j1$, $0\le j\le4$.
+Lemma~\ref{lem:mahler} changes these to $\mathsf M_n$ by
+nonzero constant row normalizations.
+All algebraic conjugates of a hypothetical multiple root therefore
+give unit rank-drop points of this same matrix.
+An irreducible factor of $\gcd(T,T')$ is separable over $\mathbb Q$.
+At most one distinct conjugate forces that factor to have degree
+one, hence a rational real root.
+
+There is no repeated real root. For even $n$,
+\[
+ T(t)=\frac1{\Gamma(n)}
+       \int_0^\infty x^{n-1}e^{-x}(1+tx^6)^n\,dx>0
+       \quad(t\in\mathbb R).
+\]
+For odd $n$, its derivative is strictly positive on $\mathbb R$:
+the derivative integrand is
+$n x^{n+5}e^{-x}(1+tx^6)^{n-1}$.
+Both strict assertions hold because the integrand is nonnegative
+and positive on an interval.
+This proves squarefreeness.
+
+For completeness set $P_j=T_{j,j+1,6}$.
+Coefficient comparison gives
+\[
+ P_{n-1}=T-\frac tnT',\qquad
+ P_n=T+\frac{6t}{n}T'.
+\]
+The coefficient determinant is $7/n\ne0$ and $T(0)=1$.
+Thus a common zero would be a multiple root of $T$.
+For $A_0B_0\ne0$, the ordinary phase moments are
+$A_0^j j!P_j(B_0/A_0)$; if one coefficient vanishes,
+the nonzero phase is a monomial with no zero positive moment.
+\end{proof}
+
+\section*{The remaining coupled obligation}
+The actual starting data are $c=n+5,F=z,h=1$, so $b=-1$ and
+$w=-z^7/7$. The critical-ideal and physical-radius inputs in
+Proposition~\ref{prop:affine-saturation-criterion} supply a primitive
+$\deg P\le4$ with the original cyclic vector zero if a multiple
+root exists. A finite coefficient vector is made primitive by
+division by a coefficient of minimum valuation.
+
+Equation (3) reduces every individual rising-product index, preserves
+the boundary radius, retains all actual seeds, and keeps the
+integer offset in (4). It does not prove noncollision.
+Most sections are not physical moment data; the seed (2) is
+generally nonconstant. No constant-seed theorem is transferred.
+
+The elementary identity $z^6-u=0$ illustrates the failure of
+independent section vanishing. Its residue-seven sections $j=0,6$
+are the two nonzero constants $-u,1$.
+For $b=-1$ their recombination is
+$-7v+v^{-6}w^6=0$.
+Positive boundary valuation therefore does not justify seven
+independent vanishing conditions on six points.
+
+The remaining obligation is a coupled invariant for (3), or a
+uniform certificate meeting Proposition~\ref{prop:affine-saturation-criterion},
+for the
+actual recursively generated seeds and primitive $\deg P\le4$,
+excluding a zero six-vector. The identities above hold at every
+index; bounded replay checks only their normalization and the
+complete finite offset-residue table. No uniform certificate or all-index gap-six SFC conclusion
+is drawn. The conditional criterion and the first-layer obstruction
+retain their separate exact scopes. Internal replay and audit do not
+constitute independent whole-proof replay, formal verification,
+external review or a priority claim.
+\end{document}

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "named_controls": 19,
+  "checks": [
+    "inclusive bound",
+    "literal curve",
+    "integral model translation",
+    "literal points",
+    "exact rational curve point P",
+    "exact rational curve point Q",
+    "complete independent rational addition domain",
+    "all six modular chart branches exercised",
+    "complete prime sieve count",
+    "active-prime domain count",
+    "branch-split domain count",
+    "eligible-union domain count",
+    "literal row schema",
+    "complete selected-prime coverage",
+    "common witness label",
+    "complete point-count and formal-row replay",
+    "P higher-depth row list",
+    "401 P/Q contrast",
+    "all rows witnessed without a generator basis"
+  ],
+  "bound_inclusive": 100000,
+  "primes_in_domain": 9592,
+  "active_good_noncore_primes": 4804,
+  "branch_split_primes": 2336,
+  "eligible_union_primes": 1722,
+  "complete_point_counts": 1722,
+  "affine_x_values_counted": 80015802,
+  "modular_scalar_multiplications": 3444,
+  "Q_depth_one_witnesses": 1722,
+  "P_higher_depth_rows": [
+    401
+  ],
+  "exact_rational_addition_controls": 7623,
+  "addition_chart_case_counts": {
+    "formal plus formal": 383,
+    "affine plus formal": 1412,
+    "same non-two-torsion reduction": 414,
+    "unit x difference": 4880,
+    "opposite non-two-torsion reductions": 414,
+    "two-torsion reduction": 120
+  },
+  "no_simultaneous_higher_depth_rows_in_domain": true,
+  "full_Mordell_Weil_basis_assumed": false,
+  "claim_beyond_bound": false,
+  "new_all_places_Hasse_seed_claimed": false,
+  "finite_checks_prove_unbounded_depth_claim": false,
+  "formal_verification": false,
+  "external_review": false,
+  "independent_replay": false,
+  "python": "3.12.3",
+  "arithmetic": "standard-library exact integers and fractions",
+  "input_sha256": {
+    "ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md": "87e0d274ae1ffc550b78d7f2f9ee2fb3076c979c2f795de6824ab10dc0fa8609",
+    "elliptic_exception_bounded_fatal_prime_certificate.json": "5d5ea75e3174e628e91edffe8d2b9fc84852899ef0b653fd0118f317238574eb",
+    "verify_elliptic_exception_bounded_fatal_primes.py": "f071c88730dcab7614b0fa50f83f3507a05005ada283fdd1adccae67294514ca"
+  }
+}

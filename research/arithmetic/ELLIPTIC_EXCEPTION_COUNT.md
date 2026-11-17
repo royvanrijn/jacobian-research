@@ -172,7 +172,7 @@ On the matching-resolvent slice, globally soluble targets form a finite
 set. Its Hasse-target count `A_E(B)` satisfies, for all sufficiently large `B`,
 
 \[
- 1\le A_E(B)\le \frac{2300089}{10392564}C_E\log B
+ 1\le A_E(B)\le \frac{116302241}{531619620}C_E\log B
                          +O_E(\sqrt{\log B}).       \tag{9}
 \]
 
@@ -187,12 +187,17 @@ For the certified quadratic field `K0=Q(sqrt(-81275190))`, one also has
                          +O_E(\sqrt{\log B}).       \tag{10}
 \]
 
-The [complete joint prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md),
-J235173, gives (9)--(10), using the square-root error theorem ESQ3.
-Adding five multiplies only the class-one coefficient by `16/31`,
-giving `820/866047`; the other three coefficients of J2174 are
-unchanged. The direct finite-quotient certificate J2172 still gives
-the valid, weaker coefficient `1687/6936` without the logarithm input.
+The [complete five-prime prefix at two, three, five, eleven and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md),
+J23511173, gives (9)--(10), using the square-root error theorem ESQ3.
+Write `q_0=2709173`. Eleven multiplies the class-one and class-`5q_0` coefficients by
+`533/665`, giving `6724/8860327` and `533/55860`; the other two
+coefficients remain unchanged. The earlier
+[four-prime prefix at two, three, five and seventeen](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md),
+J235173, retains its exact coefficient `2300089/10392564` for that
+specified set. Its class-one coefficient is `820/866047`, obtained
+by multiplying the three-prime coefficient by `16/31`. The direct
+finite-quotient certificate J2172 still gives the valid, weaker
+coefficient `1687/6936` without the logarithm input.
 
 For comparison, the [complete three-adic classification](ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md)
 gives coefficient `55/156` for solubility at three alone. The
@@ -270,6 +275,73 @@ height-bounded difference points proves the exceptional-prime bound.
 This does not bound relative losses for shrinking prefixes or the
 conditional covariances in ECM3.
 
+[The finite dependency core](ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md)
+removes the unspecified initial cutoff from feasibility in the two
+remaining classes. The core is exactly `2,3,5,1889`, with concrete
+full-field witnesses. A fixed permitted prime pool of density
+`13/16+delta_Kum` has the following property: every finite subset
+retains a positive rational logarithmic target coefficient in all
+four quadratic fields. Each remaining class separately has a pool
+of density `7/8+delta_Kum`. There is no coefficient lower bound
+uniform in the finite subset.
+
+[The rank-three branch estimate](ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md)
+improves numerator-return masses to `2(log p)^A/p^(3/5)` on a set
+of prime density one, for every fixed `A>0`. It gives an effective
+finite candidate set for any new prime killing a permitted prefix
+of mass at least `eta`, with weighted size `O_E(eta^(-5/3))`.
+The numerator marginals are square summable over all primes, with
+an explicit logarithmically decaying tail. That tail concerns two
+independent Haar vectors; it does not give the single-vector tail
+or a rational-pair counting asymptotic.
+
+[The pole variance obstruction](ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md)
+shows why unconditional decorrelation cannot replace the actual
+prefix estimates: every nonnegative unconditional pole sum has
+variance at least one seventh of its squared mean. Affine-prefix
+criteria retain their compatibility signs and remain conditional.
+
+[The complete bounded depth certificate](ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md)
+proves that every finite local set supported on primes at most
+`100000` has a positive coefficient in all four classes. The point
+`Q` gives formal depth one at every one of the 1722 potentially
+fatal eligible primes in that range; this is not an unbounded
+depth theorem.
+
+[Affine-coset pole means](ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md)
+prove that every fixed feasible finite-place prefix has expected
+unweighted pole returns at least a positive constant times
+`log log Y`, where `Y` is the prime cutoff. This does not bound
+the target-height counting error, the growing-prefix loss or the
+conditional variance. Its construction uses the exact
+[three-torsion disjointness](ELLIPTIC_EXCEPTION_THREE_TORSION_DISJOINTNESS.md).
+The [class-group bridge](ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md)
+turns deep formal images into specific equivariant unramified
+division-field class-group quotients; no distribution estimate for
+those quotients is asserted.
+
+Under its stated good-prime and bad-local exclusions and the image
+hypothesis `Gal(Q(E[p])/Q)=GL_2(F_p)`, the
+[strict Selmer converse](ELLIPTIC_EXCEPTION_CLASS_GROUP_SELMER_CONVERSE.md)
+identifies the level-one class-group maps with Selmer classes whose
+localization at `p` is zero. A second `E[p]` quotient copy occurs
+exactly when `e_p>1` or `Sha(E/Q)[p]!=0`. No finiteness or density
+claim for `Sha` is assumed or proved.
+
+[Finite-primary separation](ELLIPTIC_EXCEPTION_FINITE_PRIMARY_SEPARATION.md)
+removes any prescribed finite set of primary correlations after
+refining a congruence cell and selecting a positive-density prime
+set. Its abstract countermodel shows that this separation and
+divergent fixed-cell means still do not prove recurrence: large
+common-quotient clustering remains uncontrolled.
+
+Beyond this slice, [the fixed-plane local count](FIXED_MAP_PLANE_LOCAL_COUNTS.md)
+gives `O_P(B^2)` Hasse targets on every fixed rational affine plane.
+The two section planes `u=0,c=0` are exactly those with order `B^3`
+locally soluble targets. The constants depend on the plane, so this
+does not supply a uniform sum over moving planes or an ambient
+Hasse asymptotic.
+
 The [ambient Haar calculation](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md)
 gives measure zero both to the all-soluble set and to the rational
 closure in the full ambient product. The intrinsic all-primes
@@ -283,7 +355,8 @@ targets. Partition the locally soluble targets into the globally soluble
 ones and the Hasse failures. The
 [explicit certified Hasse target](ELLIPTIC_EXCEPTION_HASSE_EXAMPLE.md)
 gives the lower bound once `B` exceeds its height. The upper bounds are
-J235173, using J2173--J2174, the exact five-adic refinement and ESQ3.
+J23511173, using the four-prime prefix, the exact joint five- and
+eleven-primary refinement and ESQ3.
 The rational local images are proved from two-descent,
 finite reductions at `41,53`, and formal-depth witnesses. Their
 correlations are retained; no full Mordell--Weil basis is assumed.

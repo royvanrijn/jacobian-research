@@ -1,7 +1,7 @@
 {
   "claim": "CANONICAL-ETALE-COMPLETION-TOPOLOGY",
   "outcome": "PASS",
-  "check_count": 242,
+  "check_count": 272,
   "checks": [
     {
       "name": "BM(D)->BM(U) is isolated by zero source terms in degree1",
@@ -920,6 +920,118 @@
       "passed": true
     },
     {
+      "name": "the only affine intermediate curve containing the given A1 is A1",
+      "passed": true
+    },
+    {
+      "name": "the proper enlargement option is projective P1",
+      "passed": true
+    },
+    {
+      "name": "normalization has no point over an alleged extra closure point",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement localization relation u",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement denominator becomes a unit u",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement localization relation u*v",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement denominator becomes a unit u*v",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement localization relation u*(u - 1)",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement denominator becomes a unit u*(u - 1)",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement localization relation u*v*(u - v)",
+      "passed": true
+    },
+    {
+      "name": "Cartier complement denominator becomes a unit u*v*(u - v)",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b1i0",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b1i0",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b1i0",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b1i0",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b2i0",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b2i0",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b2i1",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b2i1",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b3i0",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b3i0",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b3i2",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b3i2",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b6i0",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b6i0",
+      "passed": true
+    },
+    {
+      "name": "component-open union removes precisely other divisors b6i5",
+      "passed": true
+    },
+    {
+      "name": "component-open retains whole chosen curve b6i5",
+      "passed": true
+    },
+    {
+      "name": "single-component open is the entire canonical completion",
+      "passed": true
+    },
+    {
       "name": "written proof retains scope: H_1^BM(D)=H^3(U)=0",
       "passed": true
     },
@@ -929,6 +1041,14 @@
     },
     {
       "name": "written proof retains scope: normalization(D_i)=A1",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: barD_i=D_i subset U",
+      "passed": true
+    },
+    {
+      "name": "written proof retains scope: M_i=X union D_i",
       "passed": true
     },
     {
@@ -972,13 +1092,13 @@
       "passed": true
     }
   ],
-  "elapsed_seconds": 0.0638103989767842,
+  "elapsed_seconds": 0.07102450198726729,
   "environment": {
     "python": "3.12.3",
     "sympy": "1.14.0"
   },
-  "proof_sha256": "3d629a2719366658d0e274097dae65d06caaab583e9367c4e9ff8fcc790ef68a",
-  "checker_sha256": "ed9b703c584c94d8fd1cdcc01a1e2992e5946a82f3d18d87a65ee8a530868c37",
+  "proof_sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8",
+  "checker_sha256": "b540c62d06d5537a0bac6ffc82087b40d080757e51af63d7a9f61aa71c1062d5",
   "retained_inputs": [
     {
       "path": "CANONICAL_TRACE_DUAL_ETALE_RECONSTRUCTION.md",
@@ -987,7 +1107,7 @@
     },
     {
       "path": "sources/canonical-etale-completion-topology-source-audit.json",
-      "sha256": "45087483662a33651d50e4e1b20efe478d782964e69fd038e4f7c72d9d9b1b71"
+      "sha256": "91d59262b1100546e97c1ebc1587f90ba3c044e4086804fb4a46cffae484eede"
     }
   ],
   "primary_inputs": [
@@ -1020,6 +1140,8 @@
     "boundary_distinct_components_disjoint": true,
     "boundary_normalizations_A1": true,
     "boundary_topologically_A1": true,
+    "added_unramified_primes_entire_closure_in_U": true,
+    "whole_component_opens_X_union_Di_smooth_affine": true,
     "boundary_smooth_or_algebraically_A1_proved": false,
     "simply_connected_U": true,
     "Euler_U": "1+b0",

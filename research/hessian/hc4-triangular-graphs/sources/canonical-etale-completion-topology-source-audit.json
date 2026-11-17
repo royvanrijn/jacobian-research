@@ -1,6 +1,6 @@
 {
   "review_date": "2026-11-17",
-  "claim_scope": "Actual canonical entire Keller etale completion: direct smooth affine/open-source, pure disjoint topological-A1 boundary, simple connectivity, Euler/Pic and free-deck consequences; algebraic boundary smoothness remains unproved.",
+  "claim_scope": "Actual canonical entire Keller etale completion: direct smooth affine/open-source, pure disjoint topological-A1 boundary, whole unramified closure coverage and smooth affine component opens, simple connectivity, Euler/Pic and free-deck consequences; algebraic boundary smoothness remains unproved.",
   "primary_sources": [
     {
       "path": "sources/milnor-morse-theory-1969.pdf",
@@ -43,7 +43,7 @@
       "Finite-type curve normalization and genus/puncture topology.",
       "Finite-cover Euler multiplicativity."
     ],
-    "explicit_argument": "The finite-normalization branch-summation diagram and its exact kernel sequence are proved in Section4; this is not merely a citation to a surface classification theorem.",
+    "explicit_argument": "The finite-normalization branch-summation diagram and its exact kernel sequence are proved in Section4; this is not merely a citation to a surface classification theorem. Normalization commutes with open restriction; a smooth affine curve containing A1 openly equals that A1. Thus all unramified closure points are covered. Cartier divisor complements are affine locally on the affine target U, giving whole component opens.",
     "not_claimed": [
       "No new independent proof of all foundational topology.",
       "No original Borel\u2013Moore article inspection claimed.",

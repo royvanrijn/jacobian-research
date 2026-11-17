@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Sector separation for support $\{4,6\}$ at every positive Gamma shape}
+\author{}\date{}\maketitle
+For $\beta>0$ let $\mathcal L_\beta(X^j)=(\beta)_j$.  Put
+\[
+ T_{n,\gamma}(t)=\sum_{j=0}^n\binom nj(\gamma)_{2j}t^j,\qquad
+ P_n(t)=T_{n,4n+\beta}(t).
+\]
+We prove that $P_n$ and $P_{n+1}$ have no common complex root for
+every positive integer $n$, without an arithmetic condition on $\beta$.
+
+The proof combines an exact shape-shift-four adjoint with a strict
+Pick quotient and a Gamma-product zero-free sector.  Each imported
+statement is used below within its exact domain.
+
+In a fixed pair set $\gamma=4n+\beta$, $M=\gamma+2n=6n+\beta$,
+$s=2(n+1)$, and
+\[
+ B=B_{n,\gamma},\quad C=B_{n+1,\gamma},\quad
+ B=B_0(u)+zB_1(u),\quad C=C_0(u)+zC_1(u),\quad u=z^2.
+\]
+Here the auxiliary recurrence is
+\[
+ B_{0,\gamma}=1,\qquad
+ B_{j+1,\gamma}=(z+2j+\gamma+1)B_{j,\gamma}-zB_{j,\gamma}'.
+\]
+Write
+\[
+ A=(M+2)(M+3)(M+4)(M+5),\quad
+ k=(M+4)(M+5),\quad b=s(2M+7),
+\]
+\[
+ U(u)=A+bu,\qquad W(u)=su(k+u).
+\]
+The exact shape-shift condition used below is that every common
+root $t$ gives $u=-1/t\ne0$ with
+\[
+ U(u)C_i(u)+W(u)B_i(u)=0,\qquad i=0,1.                 \tag{1}
+\]
+
+\begin{lemma}[A necessary angle]\label{lem:four-sector-angle}
+For $n\ge2$, a nonreal common root $t$ satisfies $\Re t>0$ and
+\[
+ \cos^2(\arg t)>Q_n(M),\qquad
+ Q_n(M)=\frac{2(n+1)(2M+7)}{(M+2)(M+3)}.              \tag{2}
+\]
+The function $Q_n(M)$ is strictly decreasing on $M>0$.
+\end{lemma}
+\begin{proof}
+Since $\gamma>0$ and $\gamma\ge n-2$, the
+\href{LOWER_FOUR_QUADRATIC_GAP_SFC.tex}
+{general shift-four Lemma \texttt{lem:offset-four-transform}}
+gives (1).  Here $\gamma=4n+\beta>2n-2$, so
+\href{LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex}
+{Lemma \texttt{lem:pick-general}} applies.
+In particular $B_1$ has only negative real zeros, and
+\[
+ \frac{\Im(C_1/B_1)(u)}{\Im u}>0
+\]
+for every nonreal $u$.  The nonreal point $u=-1/t$ is not a zero
+of $B_1$ or $U$: the only zero of $U$ is the negative real point
+$-A/b$.  Thus (1) gives $C_1/B_1=-W/U$ there.
+
+For $u=x+iy$, an exact expansion gives
+\[
+ \frac{\Im(W(u)\overline{U(u)})}{y}
+       =s\{Ak+2Ax+b(x^2+y^2)\}.
+\]
+The expression in braces is strictly negative at a common root.
+Substituting $u=-1/t$ and multiplying by $|t|^2$ yields
+\[
+ Ak|t|^2-2A\Re t+b<0.                                \tag{3}
+\]
+All three constants are positive.  Hence $\Re t>0$.
+Regard (3) as a quadratic inequality in $|t|$, with
+$\Re t=|t|\cos(\arg t)$.  Its discriminant must be positive,
+so $\cos^2(\arg t)>bk/A=Q_n(M)$.
+
+Differentiation gives
+\[
+ Q_n'(M)=
+ -\frac{2(n+1)(2M^2+14M+23)}{(M+2)^2(M+3)^2}<0.
+\]
+\end{proof}
+
+\begin{lemma}[Four exact sector comparisons]\label{lem:four-sector-bounds}
+Let $n\ge2$ and $\beta>0$.  Every point satisfying (2) lies in a
+zero-free sector of $T_{n,4n+\beta}$.
+\end{lemma}
+\begin{proof}
+Put
+\[
+ \mathcal R_n(a)=\frac{4(n-1)(a+1)}{(a-n+1)^2},
+ \qquad a=\gamma/2.
+\]
+It is strictly decreasing for $a>n-1$.  By
+Lemma~\ref{lem:four-sector-angle}, $Q_n$ is strictly decreasing in $M$.
+The Gamma-product sector
+\href{LOWER_FIVE_QUADRATIC_SECTOR_SFC.tex}
+{Lemma \texttt{lem:moment-sector}} says that, for any
+$q>\mathcal R_n(a)$, the lower polynomial
+has no zero in
+\[
+ |\arg t|<\Omega(q),\qquad
+ \Omega(q)=\pi-2\arctan\sqrt q.
+\]
+All applications have $\gamma>2n-2$.  The following exact margins
+give the four useful choices:
+\[
+\begin{aligned}
+ 8-\mathcal R_n(2n)
+   &=\frac{4(5n+3)}{(n+1)^2}>0,\\
+ \frac{144}{25}-\mathcal R_n(9n/4)
+   &=\frac{16(485n+244)}{25(5n+4)^2}>0,\\
+ 3-\mathcal R_n(3n)
+   &=\frac{20n+7}{(2n+1)^2}>0,\\
+ 1-\mathcal R_n(6n)
+   &=\frac{n^2+30n+5}{(5n+1)^2}>0.
+\end{aligned}                                                     \tag{4}
+\]
+Let $N=2(n+1)(2M+7)$ and $D=(M+2)(M+3)$.  Direct expansion gives
+\[
+\begin{aligned}
+ \bigl[N-\tfrac8{13}D\bigr]_{M=13n/2}&=\frac{2(130n+67)}{13}>0,\\
+ \bigl[N-\tfrac12D\bigr]_{M=8n}&=26n+11>0,\\
+ \bigl[N-\tfrac27D\bigr]_{M=14n}&=\frac{2(175n+43)}7>0.
+\end{aligned}                                                     \tag{5}
+\]
+Use the decreasing functions $Q_n$ and $\mathcal R_n$ as follows.
+
+If $0<\beta\le n/2$, then $M\le13n/2$ and $a\ge2n$.
+Consequently $Q_n(M)>8/13$ and $q=8$ is permitted.
+Since
+\[
+ \cos\Omega(8)=\frac79,\qquad
+ \frac8{13}-\left(\frac79\right)^2=\frac{11}{1053}>0,
+\]
+(2), together with $\Re t>0$, forces $|\arg t|<\Omega(8)$.
+
+If $n/2\le\beta\le2n$, then $M\le8n$, $a\ge9n/4$,
+$Q_n(M)>1/2$, and $q=144/25$ is permitted.  Here
+\[
+ \cos\Omega(144/25)=\frac{119}{169},\qquad
+ \frac12-\left(\frac{119}{169}\right)^2
+                    =\frac{239}{57122}>0.
+\]
+Again the necessary angle lies in the zero-free sector.
+
+If $2n\le\beta\le8n$, then $M\le14n$, $a\ge3n$,
+$Q_n(M)>2/7>1/4$, and $q=3$ gives
+$\Omega(3)=\pi/3$.  The same implication follows.
+
+Finally, if $\beta\ge8n$, then $a\ge6n$ and $q=1$ gives
+the zero-free open right half-plane.  This contains every point
+allowed by Lemma~\ref{lem:four-sector-angle}.
+The four ranges cover all positive real $\beta$.
+\end{proof}
+
+\begin{theorem}\label{thm:gamma-lower-four-quadratic}
+For every positive real $\beta$ and every integer $n\ge1$,
+$T_{n,4n+\beta}$ and $T_{n+1,4(n+1)+\beta}$ are coprime over
+$\mathbb C$.  Every nonzero complex phase $X^4(A_0+B_0X^2)$
+satisfies Gamma-$\beta$ Strong Factorial at every consecutive
+positive pair.
+\end{theorem}
+\begin{proof}
+There is no real common root: the even-index member has the
+strictly positive integral
+\[
+ T_{j,4j+\beta}(t)=\frac1{\Gamma(4j+\beta)}
+    \int_0^\infty x^{4j+\beta-1}(1+tx^2)^j e^{-x}\,dx
+       >0\qquad(j\ {\rm even},\ t\in\mathbb R).
+\]
+For $n=1$, the lower polynomial is linear with a real root,
+so this suffices.  For $n\ge2$, a nonreal common root would satisfy
+Lemma~\ref{lem:four-sector-angle}, contradicting
+Lemma~\ref{lem:four-sector-bounds}.
+
+If $A_0B_0\ne0$, the exact moment normalization is
+\[
+ \mathcal L_\beta\bigl((X^4(A_0+B_0X^2))^j\bigr)
+ = A_0^j(\beta)_{4j}T_{j,4j+\beta}(B_0/A_0).
+\]
+The omitted factors are nonzero.  If one coefficient vanishes,
+the phase is a nonzero monomial, whose positive moments are nonzero.
+\end{proof}
+
+\paragraph{Scope and evidence.}
+This proof covers all positive real shapes, including
+transcendental shapes.  It asserts no unrestricted binomial SFC
+theorem or half-plane stability of the lower moment polynomial.
+The written sector argument supplies every index and shape
+quantifier.  Symbolic controls check the identities, angular margins
+and normalizations; finite checks are not used as an index theorem.
+Internal mathematical audit does not constitute independent
+whole-proof replay, formal verification or external review.
+\end{document}

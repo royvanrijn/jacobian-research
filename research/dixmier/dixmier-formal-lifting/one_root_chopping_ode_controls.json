@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "claim": "Local one-root ODE homogeneous branch and next chopping/order/axis-face countercontrol",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Python integers/Fraction polynomials in x,y,C; C indeterminate"
+  },
+  "primary_source": {
+    "url": "https://arxiv.org/html/2410.06959v5",
+    "version_date": "2026-01-19",
+    "printed_locations": [
+      "Theorem4.2 prelude p44",
+      "equation4.13 p45",
+      "Case2b p46",
+      "equation4.14 p47",
+      "induction caseb p49",
+      "Lemma6.1 p64"
+    ]
+  },
+  "parameters": {
+    "l": 2,
+    "d": 4,
+    "n": 2,
+    "m": 3,
+    "beta": 1,
+    "u": "1+y",
+    "C": "indeterminate; order statements require C nonzero"
+  },
+  "identities": [
+    "-2H'g+3Hg'=g^2",
+    "H1=H^4-C^4g^6",
+    "-2H1'g+12H1g'=4H^3g^2"
+  ],
+  "H": "u^5/2+C*u^6",
+  "H1": "u^20/16+C*u^21/2+3*C^2*u^22/2+2*C^3*u^23",
+  "orders": [
+    8,
+    12,
+    6,
+    23
+  ],
+  "chopping_exponents": [
+    2,
+    4
+  ],
+  "M_values": [
+    20,
+    2,
+    1
+  ],
+  "distances": [
+    18,
+    1
+  ],
+  "total_distance": 19,
+  "sequential_gcds": [
+    4,
+    2,
+    1
+  ],
+  "axis_faces_and_bold_order": true,
+  "simultaneous_centering_difference": "3/(92*C), nonzero for C!=0; invariant under common translations",
+  "second_local_chop_polynomial_identity": true,
+  "initial_chop_not_realized": "Qstar^2-Pstar^3=0 differs from nonzeroUstar",
+  "hashes": {
+    "ONE_ROOT_CHOPPING_ODE_HOMOGENEOUS_BRANCH.md": "6bbd38c80bc7ae4a390990efabd59de064b67f0388da0cbcedc046c0e8b05b04",
+    "check_one_root_chopping_ode.py": "cd9771a576d52409b279a9c83c02548b70966b93f562f37cd04cda4d57bdebdd",
+    "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
+  },
+  "scope": "Countercontrol to deriving a pure-power polynomial from the displayed local one-root ODE and next ODE/order/face constraints. Not a simultaneous Weyl pair, not a counterexample to Theorem4.2 under all global hypotheses, and not a main-proof or DC1 refutation.",
+  "remaining_obligation": "Show an additional actual-pair/normal-form condition forces C=0, or repair the all-stage induction/terminal-edge claim while retaining C.",
+  "formal_verification": false,
+  "external_review": false
+}

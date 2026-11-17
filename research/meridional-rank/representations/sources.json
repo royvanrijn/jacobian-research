@@ -12,7 +12,16 @@
       "snapshot": "sources/atlas-l32.html",
       "location": "Order, automorphisms, representations, maximal subgroups and conjugacy classes",
       "audit": "Primary complete legacy page read, retained and hashed. Q has order168 and outer automorphism group2; characteristic2 faithful simple models are natural3, dual3 and Steinberg8, all overF2. Independent full matrix-algebra spans9/64 prove absolute simplicity; four independently counted2-regular classes prove completeness with the imported Brauer class-count theorem and trivial module. Group catalogue/orbits and new knot cocycle counts independently replayed, not taken from ATLAS.",
-      "scope": "Imported finite-group representation background for the characteristic2 all-module exclusion through the191 retained epimorphisms to GL3(F2). Supplies no MRC theorem, no proper-image exclusion on all293 targets and no all-characteristic result. The split affine control AGL3(F2) is distinct from the page's linked nonsplit2^3.L3(2)."
+      "scope": "Imported finite-group representation background for the characteristic2 all-module exclusion through the191 retained epimorphisms to GL3(F2). Supplies no MRC theorem, no proper-image exclusion on all293 targets and no all-characteristic result. The split affine control AGL3(F2) is distinct from the page's linked nonsplit2^3.L3(2).",
+      "additional_snapshots": [
+        {
+          "snapshot": "sources/atlas-l32-2026-11-17.html",
+          "sha256": "1df061049290b684d90227a4f1e5c3fa67214e6d8914d3450f369cf955e4ce16",
+          "retrieved": "2026-11-17",
+          "location": "Page title and opening equality PSL2(7)=PSL3(2)",
+          "scope": "Only the exact abstract-group identification is imported in FINITE_THREE_DIMENSIONAL_LIFTS.tex. The elementary equality PSL3(2)=GL3(F2) is separately explained there."
+        }
+      ]
     },
     {
       "id": "ATLAS-A5",
@@ -115,7 +124,7 @@
       "publication": "Journal of Symplectic Geometry 15(4) (2017), 983-1017",
       "location": "Section2.2 braid action and Chain Rule; Theorem1.10 proof p18; symmetric quotient p19; rank-raising Theorem5.4 p20 and proof p23; arbitrary-field KCH/augmentation correspondence Theorem1.2 (p1,proofpp12-13), Definition1.8(p3), Proposition2.12(p9), Lemma3.14(p13); connected-sum Theorem1.9 p3/proof Section4.2 pp15-17; existing rank-gap Corollary1.12 p3 and Theorem5.3 p19",
       "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph gives rank-n augmentations for all but finitely many meridian eigenvalues. Section2.2 braid formulas and exact Theorem5.4 symmetry/size/parity hypotheses read. A separate written free-Gram transport proves that symmetric maximal-braid augmentations would give independent orthogonal reflection directions, even at singular Gram forms; all local formulas are checked by a stdlib replay. That transport is a comparison proved here, not attributed to the paper. The full representation/augmentation correspondence and rank-raising theorem proof remain imports, not independently re-established. The exact arbitrary-field correspondence, meridian/longitude identification and rank convention were additionally read directly for the involutory nonsymmetric obstruction. The original correspondence proof remains an imported theorem, not formally or independently re-established. Theorem1.9 and its full Section4.2 proof were read for the signed 13a373 extension: the constructed lower augmentation requires a common meridian parameter different from one and preserves it, whereas the final argument bounds an arbitrary augmentation of the sum above by the sum of the two augmentation ranks minus one. The application uses mu=-1 for both the rank3 seed and rank2 trefoil. Corollary1.12 and Theorem5.3 were checked directly: augmentation gaps 2<3 for 8_16,8_17,10_91,10_94 already occur in this paper. No first-gap or worldwide-priority assertion is made.",
-      "scope": "KCH/augmentation correspondence, maximal-braid peripheral curve lambda=(-mu)^(-w), and specified higher-braid rank-raising families with symmetric cord values. The signed GENERIC_KCH_OBSTRUCTION and GENERIC_KCH_EXTENSIONS prove augmentation rank at most three over every field for all sixteen alternating GL3/A6 knots and every allowed meridian parameter mu!=1, with arbitrary nonzero longitude. Old and new rank-three positives give ar_C=3<mr=b=4 on all sixteen. Theorem1.9 and the common parameter -1 give ar_C(K#^s trefoil)=s+3 on these sixteen seeds, while independent retained cover sums give mr=b=s+4. The correspondence and connected-sum theorem are imported at their precise source scopes; the signed obstruction and lower matrices are separate current proofs. Existing symmetric maximal-braid and GGLW comparison scopes are retained."
+      "scope": "KCH/augmentation correspondence, maximal-braid peripheral curve lambda=(-mu)^(-w), and specified higher-braid rank-raising families with symmetric cord values. The signed GENERIC_KCH_OBSTRUCTION and GENERIC_KCH_EXTENSIONS prove augmentation rank at most three over every field for all sixteen alternating GL3/A6 knots and every allowed meridian parameter mu!=1, with arbitrary nonzero longitude. Old and new rank-three positives give ar_C=3<mr=b=4 on all sixteen. Theorem1.9 and the common parameter -1 give ar_C(K#^s trefoil)=s+3 on these sixteen seeds, while independent retained cover sums give mr=b=s+4. The correspondence and connected-sum theorem are imported at their precise source scopes; the signed obstruction and lower matrices are separate current proofs. Existing symmetric maximal-braid and GGLW comparison scopes are retained. The explicit prime hyperbolic seventeen-crossing knot now has exact complex augmentation rank three, from an independent generic directed-core upper and explicit Q(sqrt5) irreducible three-dimensional positive. Proposition2.12 supplies the representation-to-augmentation direction; Theorem1.2 supplies the converse for the upper. Theorem1.9 gives the trefoil-sum value s+3 at the shared parameter -1; independent cover arguments give mr=b=s+4."
     },
     {
       "id": "CH16",
@@ -538,7 +547,7 @@
       "comparison_snapshot": "sources/afw-3manifold-groups-author-v3.pdf",
       "comparison_url": "https://friedl.app.uni-regensburg.de/papers/3-manifold-groups-v3.pdf",
       "location": "Final author book184pp, printedpp29-31/PDF33-35, Theorems2.1.1-2.1.3 and Section2.2 boundary warning; compared earlier149pp author-v3 Theorems2.1-2.3, printedpp21-22. EMS publisher metadata gives20Aug2015, DOI10.4171/154,230printed pages.",
-      "audit": "Read the prime closed rigidity theorem and full arbitrary-closed classification statement with lens/orientation exceptions and nearby attribution to geometrization, Mostow, Waldhausen and Scott. Read the Kneser converse and boundary-peripheral warning. Compared only these scopes across the two retained author versions. Full184/149page manuscripts, constituent rigidity proofs and full published-version comparison not audited; imported classical results.",
+      "audit": "Read the prime closed rigidity theorem and full arbitrary-closed classification statement with lens/orientation exceptions and nearby attribution to geometrization, Mostow, Waldhausen and Scott. Read the Kneser converse and boundary-peripheral warning. Compared only these scopes across the two retained author versions. Full184/149page manuscripts, constituent rigidity proofs and full published-version comparison not audited; imported classical results. Additionally, Theorem1.7.6 printedp19/PDFp23 was directly read for the cofinite note: every compact orientable irreducible manifold with empty or toroidal boundary decomposes into hyperbolic or Seifert pieces. Full Geometrization proof remains imported.",
       "scope": "Closed orientable3manifolds with isomorphic groups differ only by orientations of prime factors and lens-space ambiguity. A closed orientable prime irreducible infinite-group graph-manifold model therefore determines any closed orientable manifold with its group up to homeomorphism and orientation; no boundary-manifold or finite lens-group rigidity shortcut."
     },
     {
@@ -692,9 +701,9 @@
       "snapshot": "sources/shephard-todd-finite-unitary-1954.pdf",
       "snapshot_sha256": "883ae3bd07e7c10d85755b49891fe39fef7bb2668b1e5f95a439b1cd5b422c21",
       "publication": "Canadian Journal of Mathematics 6 (1954), 274-304",
-      "location": "Sections2-4 pp276-280; TableVII and reflection-generator exception footnote p301",
-      "audit": "Original primary facsimile directly read and visually checked. Section4 states primitive rank-two groups need two or three reflections. TableVII gives primitive rank-three groups23-27, all three-reflection generated by its exception footnote. Mixed imprimitive rank-three groups needing four are explicitly excluded only after the separate one-hyperplane-orbit argument. Classification itself is imported, not replayed.",
-      "scope": "Exact low-rank classification and reflection-generation bounds imported in FINITE_COMPLEX_REFLECTION_BOUNDARY. The orbit-character, full-order and power-replacement proofs are supplied separately there. For all sixteen listed knots, the generic semisimple dimension bound then excludes sharp-four finite complex reflection-class certificates in any ambient dimension. This excludes neither modular nor other finite-group conjugacy-class methods."
+      "location": "Sections2-4 pp276-282; TablesI-III pp281-282; TableVII and complete generator-exception footnote p301",
+      "audit": "Original primary facsimile directly read and visually checked. Section4 states primitive rank-two groups need two or three reflections. TableVII gives primitive rank-three groups23-27, all three-reflection generated by its exception footnote. Mixed imprimitive rank-three groups needing four are explicitly excluded only after the separate one-hyperplane-orbit argument. Classification itself is imported, not replayed. The global exception list and exact reflection-order counts were additionally read and visually checked on pp280-282/301: mixed-order exceptions7/11/15/19 lack reflections of their determinant-LCM orders6/12/6/30; primitive12/13/22 have only involutory reflections. The classification and generation theorems remain imported.",
+      "scope": "Exact low-rank classification and reflection-generation bounds imported in FINITE_COMPLEX_REFLECTION_BOUNDARY. The orbit-character, full-order and power-replacement proofs are supplied separately there. For all sixteen listed knots, the generic semisimple dimension bound then excludes sharp-four finite complex reflection-class certificates in any ambient dimension. This excludes neither modular nor other finite-group conjugacy-class methods. The new global comparison uses the complete generator-exception list, mixed imprimitive hyperplane types, primitive rank-two generation by at most three, and the exact exceptional reflection orders. Written determinant and twisted-adjoint arguments plus the independently certified G31 quotient then compare every single finite complex rank-one-meridian class bound with augmentation rank. This is not a result about higher-displacement or positive-characteristic finite targets."
     },
     {
       "id": "KM25",
@@ -787,6 +796,84 @@
       "audit": "Author-hosted published paper retained and hashed; theorem/corollary page visually read. Original Seifert attribution preserved.",
       "scope": "Satellite Alexander matrices and polynomials split as pattern factor times companion with t replaced by t^w. Combined with the satellite bridge inequality, determinant117 and breadth14 exclude genuine cables independently of the hyperbolic-exterior certificate.",
       "sha256": "d045314f7c3af26696f382cfda15bda9dfdfa095ab9f5414c4ff05dbdbf6422d"
+    },
+    {
+      "id": "FLO25",
+      "title": "Homogeneous braids are visually prime",
+      "authors": "Peter Feller, Lukas Lewark and Miguel Orbegozo Rodriguez",
+      "year": 2025,
+      "doi": "10.1112/topo.70040",
+      "url": "https://doi.org/10.1112/topo.70040",
+      "snapshot_url": "https://arxiv.org/pdf/2408.15730v2",
+      "snapshot": "sources/feller-lewark-orbegozo-homogeneous-2408.15730v2.pdf",
+      "publication": "Journal of Topology18(2025),e70040",
+      "version_dates": "Published11September2025; retained arXiv2408.15730v2,30September2025",
+      "location": "Theorem1.1 printedp1; Section5.1 definitions printedp19; Section5.2 seesaw definition and Lemma5.1(i) printedp20",
+      "audit": "Exact primary statement, decomposition-circle definitions and linear seesaw-run criterion read independently by root and family agents. The geometric theorem remains an explicit external import; no complete Murasugi-sum proof audit claimed.",
+      "scope": "A nonprime homogeneous braid closure has a decomposition circle in that literal braid diagram. Such a circle exists exactly when an internal seesaw number is2or3. Separately written run counts prove primeness of every beta_N and of W_b^n for b>=5,n>=2,gcd(n,b)=1. This is a2025 theorem, not the older homogeneous-genus theorem.",
+      "sha256": "ad1b9cc8817c848456008c560c9d2045ca95af11b736bced9aac5bb12a3504ff"
+    },
+    {
+      "id": "BOALCH04",
+      "title": "From Klein to Painleve via Fourier, Laplace and Jimbo",
+      "authors": "Philip Boalch",
+      "year": 2004,
+      "url": "https://arxiv.org/abs/math/0308221v3",
+      "snapshot_url": "https://arxiv.org/pdf/math/0308221v3",
+      "snapshot": "sources/boalch-klein-painleve-math0308221v3.pdf",
+      "version_dates": "Exact retained arXivmath/0308221v3,20May2004",
+      "location": "Printedp1, Introduction immediately after the displayed Klein quartic",
+      "audit": "Exact first page independently read from retained primary PDF by root and source-audit agent. Klein projective identity and three involutory reflection generators are explicitly stated; not inferred solely from order.",
+      "scope": "The Klein subgroup of PGL3(C) is isomorphic to PSL2(7), and its order336 twofold GL3(C) reflection cover has three involutory reflection generators. ST identifies the natural cover as G24; the official ATLAS supplies PSL2(7)=PSL3(2). The resulting knot-group lift is separately proved, not imported from Boalch.",
+      "sha256": "8a9ea644ba771ec6c976e698dd46290a84c474ba3c94c35ca6a310f409f1dc3c"
+    },
+    {
+      "id": "BC04",
+      "title": "On three-manifolds with bounded geometry",
+      "authors": "Michel Boileau and Daryl Cooper",
+      "year": 2004,
+      "url": "https://web.math.ucsb.edu/~cooper/40.pdf",
+      "snapshot": "sources/boileau-cooper-bounded-geometry-2004.pdf",
+      "publication": "Bol.Soc.Mat.Mexicana(3)10,SpecialIssue(2004),43-53",
+      "location": "Graph convention printedp45; Lemma2.2/proof p50; reduced JSJ and Lemma2.3/proof p51",
+      "audit": "Exact graph convention, hyperbolic-core cable filling proof, reduced JSJ property and finite-bad-slope statement independently textually and visually read by root and source-audit agents. Lemma2.3 is adopted only for a nongraph one-torus-boundary prime. Its unrestricted printed statement omits T2xI; the actual domain and its reduced graph block explicitly exclude both product and cable exceptions. Complete CGLS and Thurston proofs remain imported.",
+      "scope": "For the restricted nongraph one-boundary prime, finitely many bad slopes leave a hyperbolic prime JSJ piece. COFINITE_PRIME_FAMILY_NONGRAPH supplies the closed graph-type/sphere-volume argument, reductions and fixed-tangle application; the paper does not supply an explicit family cutoff or whole closed-cover hyperbolicity.",
+      "sha256": "e1f7c775ebe2d7908e4b9212d02c5f6ee15f5f84f24d36a7021738854333205e"
+    },
+    {
+      "id": "MZ23",
+      "title": "The Montesinos trick for proper rational tangle replacement",
+      "authors": "Duncan McCoy and Raphael Zentner",
+      "year": 2023,
+      "doi": "10.1090/proc/16246",
+      "url": "https://zentner.app.uni-regensburg.de/proper_tangle_replace.pdf",
+      "arxiv": "2110.15106",
+      "snapshot": "sources/mccoy-zentner-proper-tangle-author-copy.pdf",
+      "publication": "Proc.Amer.Math.Soc.151(4)(2023),1811-1822",
+      "version_dates": "Retained unversioned author copy; byte identity with a numbered arXiv edition is not asserted",
+      "location": "Figure5 printedp6; Lemma12 and proof printedp7",
+      "audit": "Exact marked rational-tangle meridian formula, common outside-cover construction and distance formula read and visually checked independently. Lemma12 has a harmless alpha/beta naming reversal between statement and proof; the application uses its own consistent rational parameters and one fixed basis.",
+      "scope": "Replacing the terminal two-strand integer tangle fixes one connected orientable torus-boundary double cover. Its actual fillings have affine primitive slopes lambda+(3+6n)mu and pairwise distance6|n-m|. The known n0 volume and later filling-persistence argument are separate premises.",
+      "sha256": "6bf3b501d2af6c7c59de19114cbed55379afb1d4824c60b2630da0c85f067421"
+    },
+    {
+      "id": "CGLS87",
+      "title": "Dehn surgery on knots",
+      "authors": "Marc Culler, C.McA.Gordon, John Luecke and Peter B.Shalen",
+      "year": 1987,
+      "doi": "10.2307/1971311",
+      "url": "https://marc-culler.info/static/home/papers/CyclicSurgery.pdf",
+      "snapshot": "sources/culler-gordon-luecke-shalen-dehn-surgery-1987.pdf",
+      "publication": "Ann.ofMath.(2)125(2)(1987),237-300",
+      "location": "Section2.4 setup printedpp274-275; Theorem2.4.4 p276/PDFp41",
+      "audit": "Original primary setup and statement textually/visually checked: fixed remaining incompressible torus compressions occur at pairwise slope distance<=1 except cable or T2xI. A1988 correction exists (DOI10.2307/2007009,Annals127p663); its text could not be retrieved from primary author/publisher routes, so its impact is unresolved and no correction-cleared assertion is made.",
+      "scope": "Context and explanation of the cable/product exceptions only in the cofinite note. The main adopted finite-bad-slope premise there is the later BC2004 statement restricted to one-boundary nongraph primes, not an independently audited proof of the original CGLS theorem.",
+      "related_correction": {
+        "doi": "10.2307/2007009",
+        "url": "https://annals.math.princeton.edu/1988/127-3/p07",
+        "status": "Publisher metadata checked; correction text unread; impact unresolved"
+      },
+      "sha256": "f3f1abe38d62665f7697f235976efc4241fdaf05fc3464e49c3296dc51443c78"
     }
   ],
   "unresolved_scope_extractions": [

@@ -1,0 +1,132 @@
+{
+  "checks_passed": 29,
+  "class_signs": {
+    "1": 1,
+    "2": -1,
+    "13545865": 1,
+    "27091730": -1
+  },
+  "coefficients": {
+    "1": "6724/8860327",
+    "13545865": "533/55860",
+    "2": "205/2456",
+    "27091730": "1/8"
+  },
+  "command": ".venv/bin/python research/arithmetic/verify_elliptic_exception_joint_2_3_5_11_17.py --write-receipt",
+  "exact_controls": [
+    "all_exact_points_on_curve",
+    "eleven_is_good_and_inert_mod_three",
+    "complete_reduction_has_ten_points",
+    "R_and_S_same_reduction_generator",
+    "exact_order_five_chain",
+    "torsion_translation_fills_group",
+    "complete_group_closure",
+    "complete_local_character_kernel",
+    "complete_character_homomorphism",
+    "four_global_class_signs",
+    "zero_branch_squareclass_nonsquare",
+    "no_finite_zero_branch",
+    "exact_eightfold_on_curve_R",
+    "five_projection_depth_one_R",
+    "five_projection_first_digit_R",
+    "exact_eightfold_on_curve_S",
+    "five_projection_depth_one_S",
+    "five_projection_first_digit_S",
+    "first_digit_determinant_one",
+    "complete_joint_first_digit_image",
+    "exact_tenfold_on_curve",
+    "tenfold_P_reduces_to_O",
+    "eleven_formal_depth_one",
+    "eleven_first_digit_ten",
+    "exact_formal_annulus_mass",
+    "class_dependent_retention_factor",
+    "all_four_exact_new_coefficients",
+    "new_total",
+    "strict_improvement"
+  ],
+  "external_review": false,
+  "first_digit_matrix": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "formal_verification": false,
+  "full_joint_image_and_counting_proofs_not_finite_controls": true,
+  "input_sha256": {
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "7ee7d83f46de89349c9c7623bdb16e47cd3d3119b62adf512679b0bb3105ec56",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md": "65dd0d0f4b4c26ff3a0a2ba9cbe018458f2c14d0be8f2637e1db73add2e112ab",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md": "6c58df79c977de80b8da5c338d3725684f2f443d5d58e92237a219aedf86d435",
+    "ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md": "4a104c26ac12be060a16f95b830c9a293e038fe18438568e205a4d436d3db90b",
+    "sources/milne-elliptic-curves-2006.pdf": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486",
+    "verify_elliptic_exception_joint_2_3_5_11_17.py": "bb361338a186614d3c03f62c13b5dac4781c04f2f9eea02b9112fe3bfa6fdbd0",
+    "verify_elliptic_exception_joint_2_3_5_17.py": "53a611c15ab25f35a4123fe8094a8fdb194d679b1ebb8375eaca65140d3568ed",
+    "verify_elliptic_exception_one_prime_positivity.py": "6ce01583aae8236a0966be423f38d342f6f3c0be15b9f93251c7014e839930d4"
+  },
+  "new_total": "116302241/531619620",
+  "order_five_chain": [
+    null,
+    [
+      9,
+      5
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      9,
+      6
+    ]
+  ],
+  "python_version": "3.12.3",
+  "reduction_points": [
+    null,
+    [
+      0,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      5
+    ],
+    [
+      9,
+      6
+    ]
+  ],
+  "status": "pass"
+}

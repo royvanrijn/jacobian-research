@@ -265,8 +265,9 @@ class RetainedDependencyTests(unittest.TestCase):
         for conclusion in ("MRC-FINITE-COMPLEX-LEM-CLASS", "MRC-GENERIC-KCH-EXT-THM-ALL16",
                            "MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
-        for conclusion in ("MRC-FINITE-COMPLEX-THM-LOWRANK", "MRC-FINITE-COMPLEX-COR-KNOTS"):
-            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-COMPLEX-THM-LOWRANK"]["state"], "stale")
+        # The new global capacity proof is a second route to the knot bound.
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-COMPLEX-COR-KNOTS"]["state"], "proved")
 
     def test_reduced_core_is_a_separate_premise_of_both_generic_proofs(self):
         scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-373": "stale"})
@@ -285,7 +286,10 @@ class RetainedDependencyTests(unittest.TestCase):
 
     def test_finite_complex_knot_application_is_separate_from_class_theorem(self):
         scenario = self.graph.simulate({"MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE": "stale"})
-        self.assertEqual(scenario["nodes"]["MRC-FINITE-COMPLEX-COR-KNOTS"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-COMPLEX-COR-KNOTS"]["state"], "proved")
+        both = self.graph.simulate({"MRC-GENERIC-KCH-EXT-COR-SEMISIMPLE": "stale",
+                                    "MRC-COMPLEX-DOMINATION-LEM-CAPACITY": "stale"})
+        self.assertEqual(both["nodes"]["MRC-FINITE-COMPLEX-COR-KNOTS"]["state"], "stale")
         for conclusion in ("MRC-FINITE-COMPLEX-THM-LOWRANK", "MRC-GENERIC-KCH-EXT-THM-ALL16",
                            "MRC-A6-RANK-THREE-COR-AUGMENTATION"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
@@ -396,6 +400,104 @@ class RetainedDependencyTests(unittest.TestCase):
                            "MRC-NEW17-THM-SHARP"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
+    def test_new17_generic_upper_uses_only_the_independent_392_core(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-373": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-GENERIC-KCH-EXT-LEM-CORES"]["state"], "stale")
+        for conclusion in ("MRC-GENERIC-KCH-CORE-392", "MRC-NEW17-GENERIC-THM-PAIREDSPANS",
+                           "MRC-NEW17-GENERIC-COR-AUGMENTATION", "MRC-NEW17-GENERIC-EXACT-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_392_revocation_preserves_independent_positive_and_symmetric_proofs(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-392": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-THM-PAIREDSPANS", "MRC-NEW17-GENERIC-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-GENERIC-THM-ATTAINMENT", "MRC-NEW17-GENERIC-POSITIVE-CLASS",
+                           "MRC-NEW17-REFLECTION-COR-COXETER", "MRC-NEW17-THM-SHARP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_new17_augmentation_import_is_not_a_representation_or_finite_class_premise(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-THM-PAIREDSPANS", "MRC-NEW17-GENERIC-COR-FORMS",
+                           "MRC-NEW17-GENERIC-COR-FINITECLASS", "MRC-NEW17-GENERIC-THM-ATTAINMENT",
+                           "MRC-NEW17-GENERIC-COR-FINITEATTAINMENT", "MRC-NEW17-COR-TREFOILS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-NEW17-GENERIC-COR-AUGMENTATION", "MRC-NEW17-GENERIC-EXACT-AUGMENTATION",
+                           "MRC-NEW17-GENERIC-COR-GAP", "MRC-NEW17-GENERIC-AUGMENTATION-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_new17_generic_upper_does_not_require_positive_attainment(self):
+        scenario = self.graph.simulate({"MRC-NEW17-GENERIC-THM-ATTAINMENT": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-THM-PAIREDSPANS", "MRC-NEW17-GENERIC-COR-AUGMENTATION",
+                           "MRC-NEW17-GENERIC-COR-FINITECLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-NEW17-GENERIC-EXACT-AUGMENTATION", "MRC-NEW17-GENERIC-COR-GAP",
+                           "MRC-NEW17-GENERIC-AUGMENTATION-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_new17_augmentation_sum_is_separate_from_meridional_cover_sums(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-AUGMENTATION-SUM": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-GENERIC-AUGMENTATION-SUMS"]["state"], "stale")
+        for conclusion in ("MRC-NEW17-GENERIC-EXACT-AUGMENTATION", "MRC-NEW17-COR-TREFOILS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        scenario = self.graph.simulate({"MRC-NEW17-THM-SHARP": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-EXACT-AUGMENTATION", "MRC-NEW17-GENERIC-AUGMENTATION-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-NEW17-GENERIC-COR-SUMS"]["state"], "stale")
+
+    def test_new17_finite_class_attainment_is_separate_from_the_classification_upper(self):
+        scenario = self.graph.simulate({"MRC-FINITE-COMPLEX-THM-LOWRANK": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-COR-FINITECLASS", "MRC-NEW17-GENERIC-COR-FINITEATTAINMENT"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        scenario = self.graph.simulate({"MRC-FINITE-COMPLEX-THM-LOWRANK": "stale",
+                                       "MRC-COMPLEX-DOMINATION-LEM-CAPACITY": "stale"})
+        for conclusion in ("MRC-NEW17-GENERIC-COR-FINITECLASS", "MRC-NEW17-GENERIC-COR-FINITEATTAINMENT"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-NEW17-GENERIC-POSITIVE-CLASS", "MRC-NEW17-GENERIC-THM-ATTAINMENT",
+                           "MRC-NEW17-GENERIC-EXACT-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_global_complex_capacity_is_separate_from_augmentation_conversion(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-COMPLEX-DOMINATION-LEM-CAPACITY", "MRC-COMPLEX-DOMINATION-COR-FINITECAPACITY",
+                           "MRC-COMPLEX-DOMINATION-LEM-ADJOINT"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-COMPLEX-DOMINATION-THM-DOMINATION", "MRC-COMPLEX-DOMINATION-COR-KNOTS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_global_complex_theorem_has_no_specific_new17_premise(self):
+        scenario = self.graph.simulate({"MRC-NEW17-GENERIC-EXACT-AUGMENTATION": "stale"})
+        for conclusion in ("MRC-COMPLEX-DOMINATION-LEM-CAPACITY", "MRC-COMPLEX-DOMINATION-THM-DOMINATION",
+                           "MRC-COMPLEX-DOMINATION-COR-FINITECAPACITY"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-COMPLEX-DOMINATION-COR-KNOTS"]["state"], "stale")
+
+    def test_global_complex_classification_import_does_not_underwrite_adjoint_algebra(self):
+        scenario = self.graph.simulate({"EXT-ST54-GLOBAL-GENERATION": "stale"})
+        for conclusion in ("MRC-COMPLEX-DOMINATION-LEM-ACTIVE", "MRC-COMPLEX-DOMINATION-LEM-DETERMINANT",
+                           "MRC-COMPLEX-DOMINATION-LEM-ADJOINT", "MRC-NEW17-GENERIC-POSITIVE-CLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-COMPLEX-DOMINATION-LEM-CAPACITY"]["state"], "stale")
+
+    def test_global_complex_capacity_needs_the_exceptional_group_quotient(self):
+        scenario = self.graph.simulate({"MRC-G31-THM-QUOTIENT": "stale"})
+        for conclusion in ("MRC-COMPLEX-DOMINATION-LEM-CAPACITY", "MRC-COMPLEX-DOMINATION-THM-DOMINATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-COMPLEX-DOMINATION-LEM-ADJOINT", "MRC-NEW17-GENERIC-COR-FINITECLASS",
+                           "MRC-NEW17-THM-SHARP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_global_capacity_and_lowrank_routes_fail_independently(self):
+        scenario = self.graph.simulate({"MRC-FINITE-COMPLEX-THM-LOWRANK": "stale"})
+        for conclusion in ("MRC-FINITE-COMPLEX-COR-KNOTS", "MRC-NEW17-GENERIC-COR-FINITECLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        scenario = self.graph.simulate({"MRC-COMPLEX-DOMINATION-LEM-CAPACITY": "stale"})
+        for conclusion in ("MRC-FINITE-COMPLEX-COR-KNOTS", "MRC-NEW17-GENERIC-COR-FINITECLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        scenario = self.graph.simulate({"MRC-COMPLEX-DOMINATION-LEM-CAPACITY": "stale",
+                                       "MRC-FINITE-COMPLEX-THM-LOWRANK": "stale"})
+        for conclusion in ("MRC-FINITE-COMPLEX-COR-KNOTS", "MRC-NEW17-GENERIC-COR-FINITECLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
     def test_rank_one_quotient_reduction_is_independent_of_the_finite_panel(self):
         scenario = self.graph.simulate({"SRC-MRC-RANKONE-BINARY-CERTIFICATES": "stale"})
         self.assertEqual(scenario["nodes"]["MRC-RANKONE-BINARY-LEM-REDUCTION"]["state"], "proved")
@@ -407,6 +509,121 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(scenario["nodes"]["MRC-SL3-PROJECTIVE-THM-EQUALITIES"]["state"], "stale")
         for conclusion in ("MRC-SL3-PROJECTIVE-THM-GRAPH", "MRC-SL3-PROJECTIVE-COR-KNOWN",
                            "MRC-A7-BINARY-EXAMPLES", "MRC-INVOLUTORY-KCH-THM-SIXTEEN"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_finite_lifts_are_separate_from_augmentation_conversion(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-FINITE-LIFTS-LEM-UNIQUE", "MRC-FINITE-LIFTS-LEM-CLASS",
+                           "MRC-FINITE-LIFTS-THM-LIFTS", "MRC-FINITE-LIFTS-FORTY-EIGHT-POSITIVE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-LIFTS-COR-SIXTEEN"]["state"], "stale")
+
+    def test_finite_lift_lower_bounds_do_not_require_generic_upper(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-EXT-THM-ALL16": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-LIFTS-FORTY-EIGHT-POSITIVE"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-FINITE-LIFTS-COR-SIXTEEN"]["state"], "stale")
+
+    def test_prime_family_visual_primeness_is_separate_from_sharp_group_bound(self):
+        scenario = self.graph.simulate({"EXT-FLO-HOMOGENEOUS-VISUAL-PRIMENESS": "stale"})
+        for conclusion in ("MRC-PRIME-GAP-PRIMENESS", "MRC-ALT-PRIME-PRIMENESS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-THM-PAIRED",
+                           "MRC-PRIME-GAP-AUGMENTATION", "MRC-ALT-PRIME-SHARP",
+                           "MRC-ALT-PRIME-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_family_crossing_minimality_is_separate_from_mr_and_primeness(self):
+        scenario = self.graph.simulate({"EXT-YAMADA-SEIFERT-BRAID": "stale"})
+        for conclusion in ("MRC-PRIME-GAP-CROSSING", "MRC-ALT-PRIME-CROSSING"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-PRIMENESS",
+                           "MRC-PRIME-GAP-LEM-ALEXANDER", "MRC-ALT-PRIME-SHARP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_prime_gap_uses_only_the_independent_392_core(self):
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-373": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-GAP-THM-PAIRED"]["state"], "proved")
+        scenario = self.graph.simulate({"MRC-GENERIC-KCH-CORE-392": "stale"})
+        for conclusion in ("MRC-PRIME-GAP-THM-PAIRED", "MRC-PRIME-GAP-AUGMENTATION",
+                           "MRC-PRIME-GAP-COR-COXETER", "MRC-PRIME-GAP-FINITECLASS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-SHARP", "MRC-PRIME-GAP-POSITIVE",
+                           "MRC-PRIME-GAP-LEM-LIFT", "MRC-ALT-PRIME-THM-FAMILY"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_singular_gram_extension_is_an_essential_separate_coxeter_premise(self):
+        scenario = self.graph.simulate({"MRC-PRIME-GAP-LEM-LIFT": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-GAP-COR-COXETER"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-AUGMENTATION", "MRC-PRIME-GAP-FINITECLASS",
+                           "MRC-PRIME-GAP-SHARP", "MRC-NEW17-REFLECTION-COR-COXETER"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_prime_family_finite_class_bound_has_a_pure_group_capacity_route(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-GAP-AUGMENTATION"]["state"], "stale")
+        for conclusion in ("MRC-PRIME-GAP-FINITECLASS", "MRC-PRIME-GAP-COR-COXETER",
+                           "MRC-PRIME-GAP-POSITIVE", "MRC-ALT-PRIME-THM-FAMILY"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_prime_sum_numeric_equality_has_an_independent_simple_target_route(self):
+        scenario = self.graph.simulate({"MRC-GENERAL-COVER-THM-GENERAL": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-PRIME-GAP-SUM-MERIDIONAL"]["state"], "stale")
+        for conclusion in ("MRC-ALT-PRIME-UNIFORM-TWIST-SUMS", "MRC-PRIME-GAP-COR-SUMS",
+                           "MRC-ALT-PRIME-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_general_a8_seed_sum_method_does_not_require_prime_or_genus_imports(self):
+        scenario = self.graph.simulate({"EXT-FLO-HOMOGENEOUS-VISUAL-PRIMENESS": "stale",
+                                       "EXT-CROMWELL-HOMOGENEOUS-GENUS": "stale",
+                                       "EXT-YAMADA-SEIFERT-BRAID": "stale"})
+        for conclusion in ("MRC-ALT-PRIME-COR-SUMS", "MRC-ALT-PRIME-THM-TARGETS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-ALT-PRIME-THM-FAMILY"]["state"], "stale")
+
+    def test_alternating_target_written_ordinary_argument_is_separate_from_literal_controls(self):
+        scenario = self.graph.simulate({"SRC-MRC-ALT-PRIME-CERTIFICATES": "stale"})
+        for conclusion in ("MRC-ALT-PRIME-LEM-ORDINARY", "MRC-ALT-PRIME-LEM-SEESAWS",
+                           "MRC-PRIME-GAP-SHARP"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-ALT-PRIME-THM-TARGETS", "MRC-ALT-PRIME-LEM-CLOSURE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_cofinite_topology_requires_filling_persistence_but_not_rank_conversion(self):
+        scenario = self.graph.simulate({"EXT-BC-ONE-BOUNDARY-NONGRAPH-FILLING": "stale"})
+        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-COFINITE-LEM-TANGLE", "MRC-COFINITE-SPHERE-VOLUME-ADDITIVITY",
+                           "MRC-COFINITE-LEM-SUMVOLUME", "MRC-PRIME-GAP-THM-MAIN"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_cofinite_initial_volume_is_not_a_general_topology_lemma_premise(self):
+        scenario = self.graph.simulate({"MRC-NEW17-CLOSED-REPRESENTATION-VOLUME": "stale"})
+        for conclusion in ("MRC-COFINITE-LEM-SUMVOLUME", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-COFINITE-GRAPH-TYPE-VOLUME-ZERO", "MRC-PRIME-GAP-THM-MAIN"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_cofinite_topology_is_separate_from_augmentation_gap_consequences(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        for conclusion in ("MRC-COFINITE-THM-COFINITE", "MRC-COFINITE-TREFOIL-TOPOLOGY"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-COFINITE-PRIME-GAP-KNOTS", "MRC-COFINITE-GAP-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_original_cgls_context_is_not_an_indispensable_cofinite_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-CGLS-ORIGINAL-CONTEXT": "stale"})
+        for conclusion in ("MRC-COFINITE-LEM-PERSISTENCE", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-COFINITE-THM-COFINITE", "MRC-COFINITE-PRIME-GAP-KNOTS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_fixed_rational_tangle_binding_is_essential_only_for_family_application(self):
+        scenario = self.graph.simulate({"EXT-MZ-RATIONAL-TANGLE-FILLINGS": "stale"})
+        for conclusion in ("MRC-COFINITE-LEM-TANGLE", "MRC-COFINITE-THM-COFINITE"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        for conclusion in ("MRC-COFINITE-LEM-SUMVOLUME", "MRC-COFINITE-THM-ONEFILLING",
+                           "MRC-PRIME-GAP-THM-MAIN"):
             self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
 
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):

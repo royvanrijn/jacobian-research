@@ -22,7 +22,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | DIX-QPH1 | proved | h-coefficient-momentum-order | specific positive scalar branch of quintic phase Long lift, coefficient h^n for n>=2 | exact: n |  |
 | JAC-PF153 | proved | ideal-nilpotence-exponent | 30-generator cone ideal in actual fixed-parent degree5 first-jet trace quotient | upper: 4096 |  |
 | JAC-PF156 | proved | ideal-nilpotence-exponent | residual obstruction(c) in actual fixed-parent degree5 first-second-jet quotient | exact: 3 |  |
-| JAC-PF157 | open | reduced-ruling-degree | actual complex plane Keller target in order-g nontrivial generic cyclic-deck rational pole atlas | lower: 2*g |  |
+| JAC-PF157 | proved | reduced-ruling-degree | actual complex plane Keller target in order-g nontrivial generic cyclic-deck rational pole atlas | lower: 2*g |  |
 | JAC-CUBIC12 | proved | nonlinear-monomial-occurrences | integral cubic Keller collision with fixed dimension12; {"dimension": 12} | upper: 36 |  |
 | JAC-CUBICLINEAR89 | proved | dimension | integral cubic-linear Keller map with rational collision | upper: 89 |  |
 | JAC-CANONICAL-FILTER | proved | source-bundle-rank | canonical invariant-filter receiver for rankN finite etale algebra | exact: 3*N+3 |  |
@@ -115,13 +115,13 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | DIX-QPN2 | proved | closed-cone p-power coefficient valuation | QPN2 closed support, unit anchors g,mu and regular coefficients at good prime p>2n+1, eta=t^e*u; {"e": ">=1", "g,mu,u": "units", "n": ">=2"} | exact: ord_t([v^(-2p)*a^((n-1)p-(2n+1))]S^p)=e*(p+1) |  |
 | DIX-QPN2 | proved | closed Newton support finite-mate exclusion | Regular finite scalar deformations in L(v)[a;eta v^-1 partial_v], unit anchors a^n and v, n>=2; {"k,j": ">=0", "n": ">=2"} | criterion: even v^(2k): j-k<=n; odd v^(2k+1): j<=k; eta of positive parameter order |  |
 | DIX-QER1-TRACE | proved | normalized trace of identity | Every scalar weighted Euler level for A3 weights(1,-1,-2), characteristic-zero K, h!=0; {"lambda": "arbitrary scalar"} | exact: 1 |  |
-| JAC-PF164 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 16 |  |
-| JAC-PF164 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor | lower: 48 |  |
-| JAC-PF164 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/2)-5 |  |
-| JAC-PF164 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/4)-4 |  |
-| JAC-PF164 | open | u-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 2 |  |
-| JAC-PF164 | open | t-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 1 |  |
-| JAC-PF164 | open | original-source-points-over-t-infinity | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 6 |  |
+| JAC-PF164 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 16 |  |
+| JAC-PF164 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor | lower: 48 |  |
+| JAC-PF164 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/2)-5 |  |
+| JAC-PF164 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with no A-type pole divisor; {"D": "deg_u b3", "m": "deg M>=2"} | upper: floor(D/4)-4 |  |
+| JAC-PF164 | proved | u-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 2 |  |
+| JAC-PF164 | proved | t-projection-infinity-ramification-index | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 1 |  |
+| JAC-PF164 | proved | original-source-points-over-t-infinity | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | exact: 6 |  |
 | MRC-TREE-COXETER-THM-DET | proved | prime factor count of knot determinant with multiplicity | A classical knot admitting a reflection epimorphism onto a Coxeter group with finite-relation graph a tree on r vertices and all edge labels at least2; {"rank": "r"} | lower: r-1 |  |
 | MRC-TWISTED-CROSSCAP-PROP-CROSSCAP | proved | crosscap number | A standard BBK21 twisted knot with even bridge number b; {"bridge": "b", "parity": "even"} | upper: b-1 |  |
 | MRC-FINITE-COXETER-THM-FINITE | proved | maximum finite Coxeter reflection rank | The24 exact seven-sheet sharp-four knots in FINITE_COXETER_EXCLUSION | upper: 3 |  |
@@ -141,23 +141,23 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-RATIONAL-PLANE-SECTION-CLASSIFICATION | proved | globally soluble targets on one other fixed rational affine plane | Fixed Phi over Q; H([1:u:b:c])<=B; B tending to infinity. | upper: O_P(B^2) |  |
 | ARITH-TWO-PLANE-COUNT-LOWER | proved | ambient rational globally and locally soluble targets | Fixed Phi over Q; H([1:u:b:c])<=B; B tending to infinity. | lower: G(B),L(B)>=8 B^3/zeta(3)+O(B^2) |  |
 | MRC-RATIONAL-REPLACEMENT-THM-CLASS | proved | number of hyperbolic JSJ pieces | Irreducible nonhyperbolic double branched covers of knots obtained by arbitrary rational replacements on connected simple four-vertex plane medial bases R4 | exact: 0 |  |
-| JAC-PF165 | open | reduced-polynomial-companion-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 9 |  |
-| JAC-PF166 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 22 |  |
-| JAC-PF166 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 5 |  |
-| JAC-PF166 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 10 |  |
-| JAC-PF166 | open | sum-infinity-index-times-image-residue-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class above any fixed infinity image | upper: 2 |  |
-| JAC-PF166 | open | closed-intermediate-infinity-prime-count | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
-| JAC-PF166 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 42 |  |
-| JAC-PF166 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 15 |  |
+| JAC-PF165 | proved | reduced-polynomial-companion-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 9 |  |
+| JAC-PF166 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 22 |  |
+| JAC-PF166 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 5 |  |
+| JAC-PF166 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 10 |  |
+| JAC-PF166 | proved | sum-infinity-index-times-image-residue-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class above any fixed infinity image | upper: 2 |  |
+| JAC-PF166 | proved | closed-intermediate-infinity-prime-count | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
+| JAC-PF166 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 42 |  |
+| JAC-PF166 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with an infinity image of total alpha*f weight2 | lower: 15 |  |
 | MRC-UNIVERSAL-REFLECTION-THM-ALTERNATING8 | proved | normal-direction span of four retained meridian seeds | 13a373/375/391/392/3264/3266/3275/3276; common symmetric form, every field of characteristic different from2 | upper: 3 |  |
 | MRC-HERMITIAN-REFLECTION-COR-FINITE | proved | essential dimension of finite complex order-two pseudo-reflection image | K=13a373/375/391/392, meridians nonidentity with rank(rho(m)-I)=1 and rho(m)^2=I | upper: 3 |  |
-| JAC-PF169 | open | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
+| JAC-PF169 | proved | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | upper: 3 |  |
 | ARITH-CUBIC-DISCRIMINANT-ROOT-TEST | proved | cubic local-root congruence precision | Exact field, fixed parameters and height domain of node scope. | upper: floor(vpDisc(H)/2)+1 |  |
 | ARITH-FIXED-INCIDENCE-SLICE-HEIGHT | proved | all factorized targets on a fixed noncentered curve | Exact field, fixed parameters and height domain of node scope. | range: Theta_pi,ell(B^(2/3)) |  |
 | ARITH-FIXED-RESOLVENT-SLICE-FINITENESS | proved | Hasse targets on one fixed smooth resolvent slice | Exact field, fixed parameters and height domain of node scope. | upper: O_pi,ell(1) |  |
 | DIX-QQL1-SPECTRUM | proved | scalar adjoint eigenvalue set | ad_J in the actual scalar Weyl division ring, kappa=c_v*v^5/F_s(H), J=c*R(kappa)*H, R=-(kappa-3)(kappa-2)/kappa^2; {"F_s": "arbitrary nonzero rational function of H", "c": "nonzero scalar", "h": "nonzero scalar"} | exact: 5*c*h*Z |  |
 | MRC-RANK3-LEM-UPPER | proved | ordinary knot-group rank | The32 knots in S32 of RANK_THREE_KNOT_GROUP_UPPERS | upper: 3 |  |
-| JAC-PF171 | open | regular-square-completion-remainder-ruling-degree | source remainder R2 for an actual complex whole-plane Keller target of ruling six in the complete marked quadratic source-image class; no target-field landing or target-integrality conclusion | upper: 2 |  |
+| JAC-PF171 | proved | regular-square-completion-remainder-ruling-degree | source remainder R2 for an actual complex whole-plane Keller target of ruling six in the complete marked quadratic source-image class; no target-field landing or target-integrality conclusion | upper: 2 |  |
 | HESSIAN-NODAL-ACTION | proved | minimum-target-reduced-source-directional-output-degree | actual noninvertible complex plane Keller map with P monic in the source direction and global coordinate-conductor directional degree2 | lower: 4 |  |
 | MRC-REFLECTIVE-AUGMENTATION-THM-UPPER | proved | reflective augmentation rank | 13a373/375/391/392/3264/3266/3275/3276; complex reflective augmentations, or symmetric cord matrices over any field of characteristic different from2 | upper: 3 |  |
 | MRC-REFLECTIVE-AUGMENTATION-THM-POSITIVE | proved | reflective augmentation rank | 13a373/375/391/392/3264/3266/3275/3276; complex reflective augmentations in the exact positive-diagonal2 cord convention | exact: 3 |  |
@@ -166,10 +166,10 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-TERNARY-AFFINE-THM-GROUP | proved | conjugacy-class generating rank | Q=(sum-zero F3^7) semidirect GL3(F2), C=affine conjugacy class of a nonidentity GL3(F2) involution | exact: 4 |  |
 | ARITH-ELLIPTIC-EXCEPTION-MATCHING-COUNT | proved | matching field-product targets on one fixed elliptic slice | Fixed Phi overQ; fixed(pi,ell)=(128/25,9/10), admissible matching target family, actual H([1:y])<=B. | exact: C_E logB+O(sqrt(logB)) |  |
 | ARITH-ELLIPTIC-QUADRATIC-FIELD-EQUIDISTRIBUTION | proved | targets with one specified quadratic field on that slice | Fixed Phi overQ; fixed(pi,ell)=(128/25,9/10), admissible matching target family, actual H([1:y])<=B. | exact: (C_E/4)logB+O(sqrt(logB)) |  |
-| ARITH-ELLIPTIC-LOCAL-GLOBAL-COUNT-BOUNDS | proved | Hasse targets on the fixed elliptic slice | FixedPhi and exceptional elliptic slice overQ, actual targetheightB. | range: 1<=A_E(B)<=(2300089/10392564) C_ElogB+O_E(sqrtlogB); G_E=O(1) |  |
-| JAC-PF172 | open | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 1 |  |
-| JAC-PF173 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 24 |  |
-| JAC-PF174 | open | quadratic-remainder-coefficient-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with nonzero coefficient d of z; {"S": "sum of slopes of distinct actual A-supporting base values, S>=5"} | lower: S |  |
+| ARITH-ELLIPTIC-LOCAL-GLOBAL-COUNT-BOUNDS | proved | Hasse targets on the fixed elliptic slice | FixedPhi and exceptional elliptic slice overQ, actual targetheightB. | range: 1<=A_E(B)<=(116302241/531619620)C_ElogB+O_E(sqrtlogB); G_E=O(1) |  |
+| JAC-PF172 | proved | regular-square-completion-remainder-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 1 |  |
+| JAC-PF173 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 24 |  |
+| JAC-PF174 | proved | quadratic-remainder-coefficient-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with nonzero coefficient d of z; {"S": "sum of slopes of distinct actual A-supporting base values, S>=5"} | lower: S |  |
 | HESSIAN-QUARTIC-NODAL-ACTION | proved | minimum-target-reduced-source-directional-output-degree | actual noninvertible complex plane Keller map with P monic in the source direction and global coordinate-conductor directional degree2 | lower: 6 |  |
 | MRC-A6-AFFINE-THM-SHARP | proved | meridional rank | The24 new A6 knots in A6_AFFINE_SHARP_FOUR theorem sharp | exact: 4 |  |
 | MRC-A6-AFFINE-THM-SHARP | proved | bridge number | The24 new A6 knots in A6_AFFINE_SHARP_FOUR theorem sharp | exact: 4 |  |
@@ -201,13 +201,13 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-RANKONE-BINARY-COR-BOUNDARY | proved | binary rank-one fixed-space codimension | The293 retained named knots, every finite ambient F2 dimension | upper: 3 |  |
 | MRC-RANKONE-BINARY-COR-DUAL | proved | binary rank-one displacement span dimension | The293 retained named knots, every finite ambient F2 dimension | upper: 3 |  |
 | MRC-ONE-HUNDRED-TWENTY-ONE-NAMED-EQUALITIES | proved | retained named sharp-four certificates | Disjoint original20/GL3_24/A6_24/A7_3/SL3_50 collections | exact: 121 |  |
-| JAC-PF180 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 30 |  |
-| JAC-PF180 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 6 |  |
-| JAC-PF180 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 12 |  |
+| JAC-PF180 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 30 |  |
+| JAC-PF180 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 6 |  |
+| JAC-PF180 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 12 |  |
 | HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION | proved | global-directional-coordinate-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 6 |  |
-| JAC-PF181 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 36 |  |
-| JAC-PF181 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 7 |  |
-| JAC-PF181 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 14 |  |
+| JAC-PF181 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 36 |  |
+| JAC-PF181 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 7 |  |
+| JAC-PF181 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with EVERY actual A support noncritical | lower: 14 |  |
 | ARITH-ELLIPTIC-EXACT-Q3-LOCAL-COUNT | proved | targets soluble at3 alone | Fixed Phi overQ; fixed exceptional elliptic slice; actual projective target heightB; prescribed finite local set only. | exact: (55/156) C_E logB+o(logB) |  |
 | ARITH-ELLIPTIC-EXACT-Q2-LOCAL-COUNT | proved | targets soluble at2 alone | Fixed Phi overQ; fixed exceptional elliptic slice; actual projective target heightB; prescribed finite local set only. | exact: (4/7) C_E logB+o(logB) |  |
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-LOCAL-COUNT | proved | targets soluble at2and3 | Fixed Phi overQ; fixed exceptional elliptic slice; actual projective target heightB; prescribed finite local set only. | exact: (289/1092) C_E logB+o(logB) |  |
@@ -221,10 +221,10 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-GENERIC-KCH-COR-SUMS | proved | meridional rank and bridge number | 13a373 connected summed with s trefoils; {"s": "nonnegative integer"} | exact: s+4 |  |
 | DIX-SHIFTED-EULER-LOCAL-FINITE-MODEL | proved | differential order of S and T | beta=1 shifted 5x5 matrix tuple after the specified diagonal gauge over the rational (r,kappa) source chart only | upper: 1 |  |
 | DIX-SHIFTED-EULER-LOCAL-FINITE-MODEL | proved | total differential order of D | same localized rational (r,kappa) matrix chart; no original-source/global/scalar bound | upper: 2 |  |
-| JAC-PF183 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | lower: 6 |  |
-| JAC-PF183 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | upper: 8 |  |
-| JAC-PF183 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | lower: 12 |  |
-| JAC-PF183 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | upper: 16 |  |
+| JAC-PF183 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | lower: 6 |  |
+| JAC-PF183 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | upper: 8 |  |
+| JAC-PF183 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | lower: 12 |  |
+| JAC-PF183 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | upper: 16 |  |
 | ARITH-ELLIPTIC-FIXED-FIELD-LOCAL-COEFFICIENTS | proved | targets soluble at2,3,17 by quadratic field | Fixed Phi overQ; existing exceptional elliptic slice; actual projective target height B; Haar normalized on the whole joint closure. | exact: (-3,-40637595,-6,-81275190): (205/111748,1/84,205/2456,1/8) C_E logB+o(logB) |  |
 | ELLIPTIC-FINITE-LOCAL-TARGET-ASYMPTOTIC | proved | fixed finite-place, fixed-quadratic-field targets | Fixed Phi overQ; existing exceptional elliptic slice; actual projective target height B; Haar normalized on the whole joint closure. | exact: N_(S,a)=mu_(S,a) C_E logB+o_(E,S)(logB); 0<mu_(S,K0)<=1/4 |  |
 | MRC-A6-RANK-THREE-THM-ATTAINMENT | proved | complex U=1 cord augmentation rank | The eight alternating A6 knots | lower: 3 |  |
@@ -249,16 +249,16 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-ELLIPTIC-CLASS-ONE-FINITE-LOCAL-POSITIVITY | proved | finite-place targets with quadratic field Qsqrt(-3) | FixedPhi overQ; fixed exceptional elliptic slice; actual projective target heightB; each local setS fixed beforeB grows. | exact: N_(S,1)=mu_(S,1) C_E logB+O_(E,S)(sqrtlogB); 0<mu rational<=1/4 |  |
 | HESSIAN-COORDINATE-CONDUCTOR-BASE | proved | source-coordinate-generator-count-over-full-target-normalization | actual complex plane Keller map in a generic monic source direction | upper: 1 |  |
 | HESSIAN-COORDINATE-CONDUCTOR-BASE | proved | source-line-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 2 |  |
-| JAC-PF184 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 8 |  |
-| JAC-PF184 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 16 |  |
-| JAC-PF185 | open | reduced-companion-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 27 |  |
+| JAC-PF184 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 8 |  |
+| JAC-PF184 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 16 |  |
+| JAC-PF185 | proved | reduced-companion-ruling-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class with D=30 | exact: 27 |  |
 | HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION | proved | global-directional-coordinate-conductor-degree | actual noninvertible complex plane Keller map with P monic in the longitudinal source coordinate | lower: 8 |  |
 | MRC-A8-THM-GROUP | proved | ordinary group generating rank | A8natural double-transposition model | exact: 2 |  |
 | MRC-A8-THM-GROUP | proved | meridian-class generating rank | A8natural double-transposition model | exact: 4 |  |
 | MRC-A8-THM-GROUP | proved | group order | A8natural double-transposition model | exact: 20160 |  |
-| JAC-PF186 | open | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 33 |  |
-| JAC-PF186 | open | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 7 |  |
-| JAC-PF186 | open | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 14 |  |
+| JAC-PF186 | proved | degree-of-even-ruling-leading-coefficient | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 33 |  |
+| JAC-PF186 | proved | intermediate-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 7 |  |
+| JAC-PF186 | proved | original-generic-map-degree | actual complex whole-plane Keller target of ruling6 in complete marked quadratic source-image class | lower: 14 |  |
 | MRC-G31-COR-CLASSRANK | proved | reflection-class generating rank | Explicit complex reflection group G31 | exact: 5 |  |
 | ARITH-ELLIPTIC-EXACT-Q2-Q3-Q5-Q17-LOCAL-COUNT | proved | targets soluble at2,3,5,17 and Hasse upper bound | FixedPhi, fixed exceptional elliptic slice overQ; actual projective target heightB; whole-slice coefficient. | exact: M_(2,3,5,17)=(2300089/10392564) C_ElogB+O_E(sqrtlogB); A_E no larger; class1coefficient820/866047 |  |
 | ARITH-ELLIPTIC-REDUCTION-IMAGE-LOGARITHMIC-GROWTH | proved | rational Mordell-Weil image in E(Fp) | FixedE/Q, sufficientlylarge goodprimep; subgroupimage notwholefinitefieldgroup. | lower: abs(R_p)>=c_E logp |  |
@@ -273,10 +273,40 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | MRC-NEW17-FAMILY-PROP-RASMUSSEN | proved | Rasmussen invariant | Explicit knotK_* | exact: 6 |  |
 | ARITH-ELLIPTIC-SMALL-REDUCTION-IMAGE-PRIME-BOUND | proved | good primes with small actual rational reduction image | Fixed E/Q and independent P,Q on the rank-two exceptional slice; every real z>=2; all good rational primes. | upper: sum_(p good, abs(R_p)<z) logp=O_E(z^2); count=O_E(z^2/logz) |  |
 | ARITH-ELLIPTIC-DENSITY-ONE-POLYNOMIAL-LOCAL-LOSS | proved | absolute finite-local coefficient loss at a density-one prime set | Fixed E/Q; each fixed A>0; all finite S and four classes a; sufficiently large primes outside O_(E,A)(X/(logX)^(2A+1)) exceptions up to X. | upper: 0<=mu_(S,a)-mu_(S unionp,a)<=3(logp)^A/sqrt(p) |  |
+| MRC-NEW17-GENERIC-THM-PAIREDSPANS | proved | minimum of displacement span and common-fixed codimension | K_*; arbitrary finite-dimensional rank-one-meridian representations over every field | upper: 3 |  |
+| MRC-NEW17-GENERIC-THM-PAIREDSPANS | proved | sum of displacement span and common-fixed codimension | Same arbitrary representations | upper: 7 |  |
+| MRC-NEW17-GENERIC-COR-IRREDUCIBLE | proved | irreducible rank-one-meridian dimension | Explicit knot K_* at the stated field/parameter hypotheses | upper: 3 |  |
+| MRC-NEW17-GENERIC-COR-FINITECLASS | proved | finite complex meridian-class generating rank | Explicit knot K_* at the stated field/parameter hypotheses | upper: 3 |  |
+| MRC-NEW17-GENERIC-COR-AUGMENTATION | proved | augmentation rank | Explicit knot K_* at the stated field/parameter hypotheses | upper: 3 |  |
+| MRC-NEW17-GENERIC-COR-FINITEATTAINMENT | proved | maximum finite complex reflection-class bound | Explicit knot K_* | exact: 3 |  |
+| MRC-NEW17-GENERIC-POSITIVE-CLASS | proved | meridian-class generating rank of the positive finite image | Explicit knot K_* | exact: 3 |  |
+| MRC-NEW17-GENERIC-EXACT-AUGMENTATION | proved | complex U=1 augmentation rank | Explicit knot K_* | exact: 3 |  |
+| MRC-NEW17-GENERIC-AUGMENTATION-SUMS | proved | complex U=1 augmentation rank | K_*#^s trefoil; {"s": "nonnegative integer"} | exact: s+3 |  |
+| ARITH-ELLIPTIC-EXACT-DENSITY-SAFE-POOLS | proved | density of a fixed prime pool allowing every finite subset in all four classes | Fixed exceptional E/Q; one fixed EKX prime set of natural density delta_Kum>0; prime densities among all rational primes, not target densities. | exact: dens(T)=13/16+delta_Kum; dens(T_a)=7/8+delta_Kum for a=2,5q0 |  |
+| ARITH-ELLIPTIC-NUMERATOR-THREE-FIFTHS-LOSS | proved | absolute numerator-only local-return mass at density-one primes | Fixed exceptional slice; each A>0; outside O_(E,A)(X/(logX)^(1+5A/3)) prime exceptions<=X; excludes pole contribution. | upper: nu(V_p)<=2(logp)^A/p^(3/5) |  |
+| ARITH-ELLIPTIC-MASS-UNIFORM-OBSTRUCTION-CANDIDATES | proved | mass-uniform effective candidate primes for finite infeasibility | Rational0<eta<=1/4; fixedcore{2,3,5,1889}; S subset core union primes<p; allfourclasses; no suppliedcutoffinput. | upper: sum_(p in C_eta) logp=O_E(eta^(-5/3)); abs(C_eta)=O_E(eta^(-5/3)/log(2/eta)) |  |
+| ARITH-ELLIPTIC-INDEPENDENT-PAIR-NUMERATOR-TAIL | proved | all-prime numerator overlap tail for two independent Haar vectors | Two independent vectors in intrinsic rational closure of fixedE; large primecutoffY; excludes a fixedfinitebadset; not one-vectorHasse or rationalheightcount tail. | upper: sum_(p>Y)n_p^2=O_E((logY)^(-1/5)/(loglogY)) |  |
+| ARITH-ELLIPTIC-POLE-VARIANCE-FLOOR | proved | unconditional nonnegative pole-return variance | Actual rank2 rationalGamma with torsionC2; finite goododdprime sets; nonnegativeweights; wholeHaar measure, no class/prefix conditioning. | lower: Var(S)>=E(S)^2/7 |  |
+| MRC-COMPLEX-DOMINATION-COR-KNOTS | proved | single finite complex reflection-class generating rank | K_*#^s trefoil; {"s": "nonnegative integer"} | upper: s+3 |  |
+| ARITH-ELLIPTIC-COMPATIBLE-THREE-TORSION-PRIME-DENSITY | proved | joint prime density for fixed unramified-at-three data and non-three-divisible active reductions | FixedE/Q; finiteGaloisC/Q unramified3; conjugacy-stableOmega; omitfinitebad/ramifiedprimes. | exact: dens=abs(Omega)/(4[C:Q]) |  |
+| ARITH-ELLIPTIC-FIXED-PREFIX-UNWEIGHTED-POLE-MEANS | proved | unweighted conditional expected pole returns through a prime cutoff | Each fixed positive finite-place class event of the exceptional elliptic slice; largeprimecutoffY; constantsdependonprefix. | lower: E(sum_(p<=Y)1_(redp=O) \| C0)>=c_(S,a)loglogY |  |
+| ARITH-ELLIPTIC-MIXED-LEVEL-CLASS-GROUP-QUOTIENT | proved | division-field class-number valuation from actual rational formal depth | FixedE/Q; p outsidefixedfiniteexceptions, allr>=1; K=Q(E[p^r]); no prime-density assertion. | lower: vp h(K)>=2r+2min(r,e_p-1) |  |
+| ARITH-FIXED-PLANE-LOCAL-HASSE-COUNTS | proved | local and Hasse targets on a fixed rational affine plane | Each fixedP and actual projective targetheightB; constantsdependonP. | range: A_P=O_P(B^2); L_P=O_P(B^2) exceptu0,c0; onsections L_P=G_P=4B^3/zeta3+O(B^2), A_P=0 |  |
+| ARITH-ELLIPTIC-EXACT-Q2-Q3-Q5-Q11-Q17-LOCAL-COUNT | proved | fiveprime local targets and Hasse upper count | Fixedellipticslice, fixedprefix{2,3,5,11,17}, actualtargetheightB. | exact: M_S=(116302241/531619620)C_ElogB+O_E(sqrtlogB); A_E<=same |  |
 
 ## Comparable improvements
 
 - HESSIAN-UNRESTRICTED-NODAL-ACTION: 4 -> 8 via HESSIAN-COORDINATE-CONDUCTOR, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION; structural consumers: HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION, HESSIAN-COORDINATE-CONDUCTOR.
 - HESSIAN-GLOBAL-DEGREE-FOUR-CONDUCTOR-EXCLUSION: 6 -> 8 via HESSIAN-COORDINATE-CONDUCTOR, HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION; structural consumers: HESSIAN-GLOBAL-SEXTIC-CONDUCTOR-EXCLUSION, HESSIAN-COORDINATE-CONDUCTOR.
 - FACTORIAL-ORDINARY-INITIAL-FOUR: 4 -> 5 via BINOMIAL-INITIAL-BOUNDARY, FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH; structural consumers: none.
+- JAC-PF164: 16 -> 33 via JAC-PF186; structural consumers: JAC-PF165, JAC-PF166, JAC-PF167, JAC-PF168, JAC-PF169, JAC-PF170, JAC-PF171, JAC-PF172, JAC-PF173, JAC-PF174, JAC-PF175, JAC-PF176, JAC-PF177, JAC-PF178, JAC-PF179, JAC-PF180, JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF166: 22 -> 33 via JAC-PF186; structural consumers: JAC-PF173, JAC-PF175, JAC-PF176, JAC-PF177, JAC-PF178, JAC-PF179, JAC-PF180, JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF173: 24 -> 33 via JAC-PF186; structural consumers: JAC-PF175, JAC-PF176, JAC-PF177, JAC-PF178, JAC-PF179, JAC-PF180, JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF180: 30 -> 33 via JAC-PF186; structural consumers: JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF166: 5 -> 7 via JAC-PF186; structural consumers: JAC-PF173, JAC-PF175, JAC-PF176, JAC-PF177, JAC-PF178, JAC-PF179, JAC-PF180, JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF180: 6 -> 7 via JAC-PF186; structural consumers: JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF166: 10 -> 14 via JAC-PF186; structural consumers: JAC-PF173, JAC-PF175, JAC-PF176, JAC-PF177, JAC-PF178, JAC-PF179, JAC-PF180, JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF180: 12 -> 14 via JAC-PF186; structural consumers: JAC-PF181, JAC-PF182, JAC-PF183, JAC-PF187, JAC-PF184, JAC-PF188, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
 - HESSIAN-NODAL-ACTION: 4 -> 6 via HESSIAN-QUARTIC-NODAL-ACTION; structural consumers: HESSIAN-QUARTIC-NODAL-ACTION.
+- JAC-PF183: 6 -> 8 via JAC-PF184; structural consumers: JAC-PF184, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.
+- JAC-PF183: 12 -> 16 via JAC-PF184; structural consumers: JAC-PF184, JAC-PF185, JAC-PF186, JACOBIAN-QUADRATIC-BOUNDARY.

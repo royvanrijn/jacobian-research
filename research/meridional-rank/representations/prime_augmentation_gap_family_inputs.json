@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "family": {
+    "parameter": "integer n >= 0",
+    "prefix": [
+      1,
+      2,
+      -3,
+      -3,
+      2,
+      -3,
+      -3,
+      2,
+      1,
+      1,
+      2,
+      2,
+      2,
+      -3
+    ],
+    "tail_generator": 2,
+    "tail_initial": 3,
+    "tail_step": 6,
+    "representative_parameters": [
+      0,
+      1,
+      2,
+      3,
+      7
+    ]
+  },
+  "A8": {
+    "top_generators": [
+      [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        0,
+        4,
+        3,
+        2,
+        1,
+        5,
+        6,
+        7
+      ],
+      [
+        5,
+        6,
+        2,
+        3,
+        4,
+        0,
+        1,
+        7
+      ],
+      [
+        0,
+        2,
+        1,
+        3,
+        4,
+        5,
+        7,
+        6
+      ]
+    ],
+    "prefix_middle_product_order": 6,
+    "expected_group_order": 20160,
+    "class_size": 210,
+    "class_rank": 4
+  },
+  "H3": {
+    "top_roots": [
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ]
+      ]
+    ],
+    "prefix_middle_product_order": 3,
+    "image_order": 120,
+    "class_rank": 3
+  },
+  "alexander": {
+    "P_ascending": [
+      1,
+      -3,
+      4,
+      0,
+      -8,
+      18,
+      -21,
+      15,
+      -6,
+      1
+    ],
+    "shift_initial": 6,
+    "shift_step": 6,
+    "denominator_ascending": [
+      1,
+      1
+    ],
+    "degree_initial": 14,
+    "degree_step": 6,
+    "determinant_initial": 117,
+    "determinant_step": 366
+  },
+  "seesaws": {
+    "2": 4,
+    "3": 7
+  },
+  "generic_uniformity": {
+    "prefix_labels": [
+      1,
+      6,
+      16,
+      13
+    ],
+    "outer_closure_labels": [
+      1,
+      13
+    ],
+    "after_first_two_folds_middle": [
+      "D",
+      "Y"
+    ],
+    "required_final_middle": [
+      "D",
+      "B"
+    ],
+    "tail_product_invariant": "(a,b) -> (b,b^-1 a b) preserves ab",
+    "core_import": "GENERIC_KCH_EXTENSIONS.tex lem:cores, 392 subcase only",
+    "core_rows": [
+      [
+        8,
+        2,
+        3,
+        -1
+      ],
+      [
+        3,
+        13,
+        14,
+        1
+      ],
+      [
+        14,
+        3,
+        4,
+        1
+      ],
+      [
+        4,
+        8,
+        9,
+        -1
+      ],
+      [
+        9,
+        14,
+        15,
+        1
+      ],
+      [
+        15,
+        9,
+        2,
+        1
+      ],
+      [
+        2,
+        4,
+        13,
+        -1
+      ],
+      [
+        13,
+        15,
+        8,
+        1
+      ]
+    ],
+    "new_to_old": {
+      "2": 11,
+      "3": 10,
+      "4": 9,
+      "8": 0,
+      "9": 12,
+      "13": 8,
+      "14": 6,
+      "15": 5
+    }
+  },
+  "published_imports": {
+    "primeness": "Feller--Lewark--Orbegozo Rodriguez 2408.15730v2 Theorem 1.1 printed p1 and Lemma5.1(i) printed p20; linear seesaws definition pp19-20",
+    "braid_index": "Yamada1987 Theorem3 printed p347",
+    "augmentation": "Cornwell1310.7526v3 Theorem1.2 Definition1.8 Theorem1.9",
+    "coxeter": "Davis2025 Section6.12 equations(6.32)-(6.33), Lemma6.12.3 and Corollary6.12.4, printedpp108-109/PDF127-128: canonical model existence and simple-root basis, singular forms allowed; no faithfulness used. Odd-edge conjugacy is proved directly."
+  },
+  "source_sha256": {
+    "GENERIC_KCH_EXTENSIONS.tex": "978cb91afcff56b4b187d2332c2b268dd2dedec182dea6eea5fca7b5517d9e6b",
+    "generic_kch_extensions_inputs.json": "b17c840534a1fcba4ed52d1b032fda942903f891c65fc7a070e3f29dcdcae0de",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+    "NEW_SEVENTEEN_GENERIC_KCH.tex": "ea2bb03438844ff8bcba129a616e1bd4bc8b7f258e2e60f65295b64093ca1e45",
+    "verify_new17_generic_kch.py": "75eeaf06e21543fde985173f152027cd0df2cf8f2c4197f85eb44cf29f142170",
+    "new17_generic_kch_inputs.json": "fc2e28c362974e6b2729272e44d3e36b9e8bef795a3956bf1d1e88249c7799a2",
+    "FINITE_COMPLEX_AUGMENTATION_DOMINATION.tex": "90fa27aadb04c9d3602a28702574358cf05c320499c3a5a35b7d1ee77a39801f",
+    "GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex": "4674c03f6d490396fe50fd8563c7b1777e619096c0f4d8b44ea0b61535358269",
+    "sources/feller-lewark-orbegozo-homogeneous-2408.15730v2.pdf": "ad1b9cc8817c848456008c560c9d2045ca95af11b736bced9aac5bb12a3504ff",
+    "sources/yamada-seifert-braid-1987.pdf": "2b1619367fa7ef93b316413d01c67f52c6c9f39095369809e3fa2383f54bbcc3",
+    "sources/davis-coxeter-groups-second-edition-2025.pdf": "617be601db21b79aa50f6ce551ea20f4409ec274817b86757168bc93f6554669"
+  },
+  "assurance": {
+    "formal_verification": false,
+    "external_specialist_review": false,
+    "worldwide_priority_claim": false,
+    "uniform_proof": "Written period, affine cofactor, generic product cancellation and Gram-lift arguments; representative replay is not universal proof"
+  }
+}

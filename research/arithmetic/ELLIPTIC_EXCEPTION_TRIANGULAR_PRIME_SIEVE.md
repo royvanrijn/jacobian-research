@@ -18,6 +18,30 @@ coefficient loss `O((log p)^A/sqrt(p))` on a set of prime density one
 for every fixed `A>0`. This marginal estimate does not bound the
 conditional returns or correlations needed for divergent hazard.
 
+[EDC1--EDC4](ELLIPTIC_EXCEPTION_DEPENDENCY_CLOSED_CORE.md)
+replace the unspecified cutoff by an explicit core for feasibility
+in classes two and `5q_0`, and give fixed safe pools admitting every
+finite subset. [EUP1--EUP4](ELLIPTIC_EXCEPTION_UNIFORM_OBSTRUCTION_PRIMES.md)
+give stronger rank-three numerator bounds, effective uniform
+candidate primes for terminal obstructions, and a uniform all-prime
+tail for two independent Haar vectors. The pole sums retain the
+compulsory quadratic correlations proved in
+[EVO1--EVO4](ELLIPTIC_EXCEPTION_POLE_VARIANCE_OBSTRUCTION.md).
+The conditioned single-vector recurrence and tail remain open.
+
+[EAM1--EAM3](ELLIPTIC_EXCEPTION_AFFINE_COSET_POLE_MEANS.md)
+establish divergent unweighted pole means, with lower order
+`log log Y`, in every fixed feasible prefix and every contained
+affine congruence coset. They use the full mod-three image and
+unramified-field disjointness of
+[ETD1--ETD3](ELLIPTIC_EXCEPTION_THREE_TORSION_DISJOINTNESS.md).
+Conditional EAM4 isolates the additional depth-density input for
+weighted first moments. The
+[class-group restriction](ELLIPTIC_EXCEPTION_WIEFERICH_CLASS_GROUP_BRIDGE.md)
+gives a global necessary condition for deep formal images, while
+[the bounded certificate](ELLIPTIC_EXCEPTION_BOUNDED_FATAL_PRIME_CERTIFICATE.md)
+excludes every potentially fatal depth through `100000`.
+
 For sufficiently large good primes, the new formal \(p\)-coordinate
 is independent of every earlier local test. The reduction modulo
 \(p\) retains its correlations with those tests. This gives an exact

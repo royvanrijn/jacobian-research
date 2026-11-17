@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "suspension_marker_count": 96,
+  "suspension_time_orders": [
+    0,
+    4
+  ],
+  "Stein_lift_marker_count": 11,
+  "nonlinear_null_elimination_controls": 144,
+  "nonlinear_time_orders": [
+    0,
+    3
+  ],
+  "filtered_formal_map": [
+    {
+      "marker_degree": 0,
+      "formal_old_marker_time_pairs": 1
+    },
+    {
+      "marker_degree": 1,
+      "formal_old_marker_time_pairs": 5
+    },
+    {
+      "marker_degree": 2,
+      "formal_old_marker_time_pairs": 15
+    },
+    {
+      "marker_degree": 3,
+      "formal_old_marker_time_pairs": 35
+    },
+    {
+      "marker_degree": 4,
+      "formal_old_marker_time_pairs": 70
+    },
+    {
+      "marker_degree": 5,
+      "formal_old_marker_time_pairs": 126
+    },
+    {
+      "marker_degree": 6,
+      "formal_old_marker_time_pairs": 210
+    },
+    {
+      "marker_degree": 7,
+      "formal_old_marker_time_pairs": 330
+    },
+    {
+      "marker_degree": 8,
+      "formal_old_marker_time_pairs": 495
+    }
+  ],
+  "scalar_seed_boundary": "partial_A P=1, f=1-t; the full imported image is nonfinite",
+  "scope": "Bounded exact original contractions and formal filtered-map controls; unrestricted conclusions use the written proof.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "e947da56aaf7e3a28c2b229e96e0edde27fab41357a99e98ea3c08d7cfae394a",
+  "angular_core_import_sha256": "816deaaa4d2fa056b06f38cf6d9a33caa0319acfc2c50c5a704e7c4c72c5d242",
+  "submersion_import_sha256": "43da9e7762391bc08ef10e2b11de45cc75395dd951a730f3aeda0c0248aa54e7",
+  "seed_import_sha256": "d20b0b552ae3522d7c5ba08cbbdc4d34f74992ff8d6895ac01032f0949fe843d",
+  "safe_recomposition_import_sha256": "079ee136e56674507a7d775815ba71dcd9ced518dc3fa61964e5f4a0d1748285",
+  "vacuum_construction_import_sha256": "341b69c9053ae156da6cd522c961adeb654838b02ab3178bec6b8f1efdccba5a",
+  "checker_sha256": "66928c69fedd755418c1cbaa998c7cdf855a9e95ed0366efcc90ac2fd8ff9f20"
+}

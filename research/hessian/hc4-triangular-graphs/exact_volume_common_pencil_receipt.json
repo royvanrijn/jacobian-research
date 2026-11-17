@@ -1,0 +1,2192 @@
+{
+  "claim": "Exact volume boundary multiplicities and common source pencil",
+  "outcome": "PASS",
+  "check_count": 462,
+  "checks": [
+    {
+      "name": "Euclidean block sum p2r1",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p2r1",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p2r1",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p3r1",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p3r1",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p3r1",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p3r2",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p3r2",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p3r2",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p4r2",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p4r2",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p4r2",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p6r4",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p6r4",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p6r4",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p12r8",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p12r8",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p12r8",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p15r10",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p15r10",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p15r10",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p21r14",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p21r14",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p21r14",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block sum p29r28",
+      "passed": true
+    },
+    {
+      "name": "Euclidean block squares p29r28",
+      "passed": true
+    },
+    {
+      "name": "strict gcd numerical bound p29r28",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p2",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p2",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p3",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p3",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p4",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p4",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p5",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p5",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p6",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p6",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p7",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p7",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p8",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p8",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p9",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p9",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p10",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p10",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p11",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p11",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p12",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p12",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p13",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p13",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p14",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p14",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p15",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p15",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p16",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p16",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p17",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p17",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p18",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p18",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p19",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p19",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p20",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p20",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p21",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p21",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p22",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p22",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p23",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p23",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p24",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p24",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p25",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p25",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p26",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p26",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p27",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p27",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p28",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p28",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p29",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p29",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p30",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p30",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p31",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p31",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p32",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p32",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p33",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p33",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p34",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p34",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p35",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p35",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p36",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p36",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p37",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p37",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p38",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p38",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p39",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p39",
+      "passed": true
+    },
+    {
+      "name": "all Euclidean sums and squares p40",
+      "passed": true
+    },
+    {
+      "name": "all strict gcd bounds p40",
+      "passed": true
+    },
+    {
+      "name": "all ancestral free/satellite tree controls",
+      "passed": true
+    },
+    {
+      "name": "tree enumeration includes genuine unit-volume strict-pole cases",
+      "passed": true
+    },
+    {
+      "name": "p<=r control actually violates desired diagonal bound",
+      "passed": true
+    },
+    {
+      "name": "coprime exact-volume equality occurs at p2 r1",
+      "passed": true
+    },
+    {
+      "name": "independent exceptional inverse equals total-pullback Gram [[], [0], [1], [2]]",
+      "passed": true
+    },
+    {
+      "name": "independent exceptional inverse equals total-pullback Gram [[], [0], [0, 1]]",
+      "passed": true
+    },
+    {
+      "name": "independent exceptional inverse equals total-pullback Gram [[], [0], [0, 1], [2], [3]]",
+      "passed": true
+    },
+    {
+      "name": "whole root volume r1",
+      "passed": true
+    },
+    {
+      "name": "nonzero exact principal part r1",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r1c0",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r1c7",
+      "passed": true
+    },
+    {
+      "name": "whole root volume r2",
+      "passed": true
+    },
+    {
+      "name": "nonzero exact principal part r2",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r2c0",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r2c7",
+      "passed": true
+    },
+    {
+      "name": "whole root volume r3",
+      "passed": true
+    },
+    {
+      "name": "nonzero exact principal part r3",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r3c0",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r3c7",
+      "passed": true
+    },
+    {
+      "name": "whole root volume r5",
+      "passed": true
+    },
+    {
+      "name": "nonzero exact principal part r5",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r5c0",
+      "passed": true
+    },
+    {
+      "name": "primitive residue r5c7",
+      "passed": true
+    },
+    {
+      "name": "malformed coordinate-word negative control rejected",
+      "passed": true
+    },
+    {
+      "name": "every retained tame pair has an explicit inverse",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k0",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k0",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k0",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k0",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k1",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k1",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k1",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k1",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k2",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k2",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k2",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k2",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k3",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k3",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k3",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k3",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k4",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k4",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k4",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k4",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left x k5",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse left y k5",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right U k5",
+      "passed": true
+    },
+    {
+      "name": "coordinate inverse right V k5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k0j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k0j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k0j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k0j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k1j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k1j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k1j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k1j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k2j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k2j1",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j1p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j1p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k2j1p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k3j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k3j1",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j1p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j1p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k3j1p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k4j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k4j1",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j1p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j1p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k4j1p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k5j0",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j0p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j0p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j0p5",
+      "passed": true
+    },
+    {
+      "name": "actual source coordinate monic up constant k5j1",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j1p2",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j1p3",
+      "passed": true
+    },
+    {
+      "name": "unique dominant pole k5j1p5",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k2p2q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k2p3q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k2p5q3",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k3p2q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k3p3q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k3p5q3",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k4p2q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k4p3q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k4p5q3",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k5p2q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k5p3q2",
+      "passed": true
+    },
+    {
+      "name": "exact first-centre cross pairing k5p5q3",
+      "passed": true
+    },
+    {
+      "name": "cross pairing exercises both common and different first centres",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p2q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p3q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p4q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p5q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p6q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p7q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p8q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p9q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p10q9m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q2m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q2m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q2m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q3m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q3m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q3m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q4m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q4m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q4m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q5m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q5m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q5m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q6m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q6m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q6m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q7m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q7m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q7m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q8m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q8m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q8m5",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q9m1",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q9m2",
+      "passed": true
+    },
+    {
+      "name": "full extremal two-pencil determinant p11q9m5",
+      "passed": true
+    },
+    {
+      "name": "parallel distinct fibres permit negative definite diagonal matrix",
+      "passed": true
+    },
+    {
+      "name": "positive signature is indispensable for the orthogonal-complement step",
+      "passed": true
+    },
+    {
+      "name": "positive pullback orthogonal Gram negative definite (2, [1, 1])",
+      "passed": true
+    },
+    {
+      "name": "positive pullback orthogonal Gram negative definite (3, [2, 1])",
+      "passed": true
+    },
+    {
+      "name": "positive pullback orthogonal Gram negative definite (5, [2, 3, 1])",
+      "passed": true
+    },
+    {
+      "name": "contracted-source axes control fails strict rootchart pole hypothesis",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains p_i>=r_i+1",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains sum_j m_j=2p",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains p+r-d",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains n<=p*r+d*(p-r+d)<=p^2",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains g-c=constant*(y-lambda)",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains c_12=m*p_1*p_2",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains No bound on the extraction length",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains omitted RAMIFIED primes",
+      "passed": true
+    },
+    {
+      "name": "written theorem retains No formal verification",
+      "passed": true
+    }
+  ],
+  "controls": {
+    "ancestral_trees": 1596,
+    "eligible_unit_volume_trees": 36,
+    "representative_strict_cases": {
+      "invalid-p<=r": [
+        1,
+        1,
+        2,
+        [
+          1,
+          1
+        ]
+      ],
+      "(2, 1)": [
+        4,
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(4, 2)": [
+        14,
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(6, 3)": [
+        30,
+        [
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(8, 4)": [
+        52,
+        [
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(10, 5)": [
+        80,
+        [
+          5,
+          5,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(12, 6)": [
+        102,
+        [
+          6,
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(3, 2)": [
+        8,
+        [
+          2,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(6, 4)": [
+        30,
+        [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(9, 6)": [
+        66,
+        [
+          6,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(12, 8)": [
+        116,
+        [
+          8,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(5, 3)": [
+        18,
+        [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(10, 6)": [
+        70,
+        [
+          6,
+          4,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(4, 3)": [
+        14,
+        [
+          3,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(8, 6)": [
+        54,
+        [
+          6,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(12, 9)": [
+        120,
+        [
+          9,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(5, 4)": [
+        22,
+        [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(10, 8)": [
+        86,
+        [
+          8,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(6, 5)": [
+        32,
+        [
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(7, 5)": [
+        38,
+        [
+          5,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(3, 1)": [
+        6,
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(6, 2)": [
+        22,
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "(9, 3)": [
+        48,
+        [
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(5, 2)": [
+        14,
+        [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "(4, 1)": [
+        8,
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "proof_sha256": "1a9a234f84871ecfef48bfe0644c7b5e068a382b739959ec3b4753580b77e5d7",
+  "checker_sha256": "0f0bf4b6ffb2ce130d765084d7e1bc1aa9f5b08a4b663802d4bd62f944e772f1",
+  "retained_inputs": [
+    {
+      "path": "INDIVIDUAL_SOURCE_COORDINATES_AND_UNCONDITIONAL_BOUNDARY_CHARTS.md",
+      "sha256": "0ad465244a3f8637d3968195c63dc956ac8341654ea3e7c8102ac4f25389f4e8"
+    },
+    {
+      "path": "COMMON_COORDINATE_FORCES_SMOOTH_BOUNDARY_AND_WHOLE_ROOT_CHARTS.md",
+      "sha256": "7eb2e4439847c2a0383eca058786c1a3b5ea775749934203f5d7052c7e4e0af6"
+    },
+    {
+      "path": "CANONICAL_ETALE_COMPLETION_BOUNDARY_TOPOLOGY_AND_FREE_DECK_ACTION.md",
+      "sha256": "71f4782d0c7b32dd78194a4bac125f29d72045a1e07a50c0ac1fda9cabb06fa8"
+    },
+    {
+      "path": "HAMILTONIAN_COMMON_COORDINATE_AND_ADDITIVE_COMPLETION.md",
+      "sha256": "35363abb607ed4ff1c268d0b0ccda05e2f6097f44f7a85669610ea6c248b55a6"
+    }
+  ],
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "all_boundary_components_and_all_blowup_lengths": true,
+    "individual_coordinate_and_whole_chart_inputs_explicit": true,
+    "common_source_coordinate_proved": true,
+    "exact_shared_volume_primitive_required": true,
+    "Xie_theorem_used": false,
+    "arbitrary_LND_classification_used": false,
+    "automatic_velocity_integrality_or_inverse_proved": false
+  },
+  "assurance": "Internal written proof and exact controls only; no formal verification, independent whole-proof replay, external review or novelty claim."
+}

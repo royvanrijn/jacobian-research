@@ -1,13 +1,36 @@
 # Two summands with both prime restrictions
 
+The general framework is developed in
+[Binary sums with prescribed prime factors](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md).
+This case study retains the norm-specific proofs and certificates for modulus 12.
+The main quantitative research target is now the
+[uniform binary lower bound FBS-U](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture);
+S12 below is its weaker macroscopic existence consequence.
+
 The every-target assertion S12 is **open in this work**. Unconditional results
-include positive-proportion balanced coverage, a uniform local sieve margin,
+include positive-proportion coverage in every fixed power-sized balance window,
+fixed-fraction balanced coverage, a uniform local sieve margin,
 a large-prime tail bound, averaged coordinate counts before and after the full
-sieve, and an exact finite search. The positive-proportion statement is a
-corollary of Loughran--Matthiesen's correlation theorem; the averaged statements
+sieve, and an exact finite search. The fixed-fraction positive-proportion
+statement is a corollary of Loughran--Matthiesen's correlation theorem; the averaged statements
 are consequences of established ideal-counting estimates.
 The local calculation includes singular lifts and primes dividing the target.
 None of these statements supplies the missing pointwise global input for S12.
+
+The general theorem FBS1 gives, for every fixed \(0<\theta<1\), at least
+\(c_2X\) targets \(X<N\leq2X\), \(N\equiv2\pmod {12}\), with
+\(\gg_\theta X^\theta/(\log X)^{3/2}\) pairs from \(C_{12}\) satisfying
+\(|a-b|\leq X^\theta\). Its proof uses a block first moment and Henriot's
+corrected upper bound, without a short-interval asymptotic. These are unweighted
+pairs; this result does not extend the exact weighted average A12G to shrinking
+windows. The general note also records the known density-one range H12 for
+\(\theta>2/3\), using prime summands, and its distinct pair-count scale.
+For \(2/3<\theta<1\), the linked
+[ternary corollary Tq](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#an-every-target-ternary-baseline)
+also represents every sufficiently large \(N\equiv3\pmod {12}\) by three
+primes \(1\pmod {12}\), each within \(N^\theta\) of \(N/3\). These are
+established baselines; the remaining programme seeks binary estimates using
+the whole semigroup at its larger representation-count scale.
 
 ## The target
 
@@ -600,21 +623,20 @@ is internal computational evidence; no external review or formal proof is claime
 
 ## The longer-term fixed-modulus question
 
-For a fixed \(m\geq3\), put
-\(A_m=\{a\geq1:p\mid a\Rightarrow p\equiv1\pmod m\}\).
-The proposed broader conjecture is
-
+The central family statement is
+[FBS-U](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-central-binary-conjecture).
+At modulus 12 it conjectures, for every fixed \(0<\theta<1\) and every
+sufficiently large \(N\equiv2\pmod {12}\),
 \[
-N\equiv2\pmod {\operatorname{lcm}(2,m)}
-\quad\Longrightarrow\quad N\in A_m+A_m
-\qquad\text{for all sufficiently large }N.
+r_{12,N^\theta}(N)\gg_\theta
+\frac{N^\theta}{(\log N)^{3/2}},
 \]
-
-The threshold may depend on \(m\); no uniformity as \(m\) grows is asserted.
-The congruence is necessary because every member of \(A_m\) is odd and
-\(1\pmod m\). The two quadratic characters give a specific model for
-\(m=12\); the local proof and conditional reduction here do not supply the
-corresponding inputs for arbitrary moduli.
+where the count is unweighted and the two values differ by at most
+\(N^\theta\). This remains open. It implies the weaker
+[macroscopic family goal FBS-G](BINARY_SUMS_WITH_PRESCRIBED_PRIME_FACTORS.md#the-two-binary-research-campaigns),
+whose modulus-12 instance is S12. The two quadratic characters give a specific
+norm model here; the local proof and conditional reduction do not supply the
+shrinking-window quantitative estimates or the inputs for arbitrary moduli.
 
 ## Literature and the remaining obligation
 
@@ -669,5 +691,8 @@ and the summed bad-prime estimate (H2), or find another argument for the
 positivity of (7). The local margin, sharper large-prime tail, and averaged
 counts before and after the full sieve have complete arguments with the stated
 ideal-counting input. Positive-proportion unweighted coverage follows from the
-stated Frobenian correlation theorem. The required every-target estimates, an
-effective cutoff, and the general fixed-modulus conjecture remain open here.
+stated Frobenian correlation theorem; the linked general theory gives the
+power-window extension. The required every-target binary estimates, an effective
+cutoff, and the uniform semigroup-scale family conjecture remain open here. Exceptional-set
+targets must specify the window: the known result H12 already gives density one
+for power exponents above \(2/3\), with a logarithmic exceptional bound.

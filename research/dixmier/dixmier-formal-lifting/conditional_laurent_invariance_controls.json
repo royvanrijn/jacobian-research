@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "claim": "Exact finite controls for an independently written conditional Laurent-coefficient invariance lemma",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Python integers and Fraction; no algebra or nullspace solver"
+  },
+  "primary_version": "arXiv:2410.06959v5, 19 January 2026",
+  "nonresonant_data": {
+    "p": 4,
+    "q0": 6,
+    "q1": 22,
+    "d0": 2,
+    "l0": 1,
+    "original_final_order": 81
+  },
+  "nonresonant_controls": [
+    {
+      "N": 3,
+      "D": 7,
+      "p_N": 14,
+      "C": 4,
+      "last_gap": 24,
+      "final_head": 284,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "prefix_distinguished": "-231/2048",
+      "final_distinguished": "-231/512",
+      "compressed_index_value": "1/4",
+      "literal_raw_index_countercontrol": "0 != 1/4"
+    },
+    {
+      "N": 5,
+      "D": 11,
+      "p_N": 22,
+      "C": 4,
+      "last_gap": 38,
+      "final_head": 446,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "prefix_distinguished": "-231/2048",
+      "final_distinguished": "-231/512",
+      "compressed_index_value": "1/4",
+      "literal_raw_index_countercontrol": "0 != 1/4"
+    },
+    {
+      "N": 9,
+      "D": 19,
+      "p_N": 38,
+      "C": 4,
+      "last_gap": 66,
+      "final_head": 770,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "prefix_distinguished": "-231/2048",
+      "final_distinguished": "-231/512",
+      "compressed_index_value": "1/4",
+      "literal_raw_index_countercontrol": "0 != 1/4"
+    }
+  ],
+  "resonant_data": {
+    "p": 4,
+    "q0": 6,
+    "q1": 16,
+    "d0": 2,
+    "l0": 1,
+    "original_final_order": 63
+  },
+  "resonant_controls": [
+    {
+      "N": 3,
+      "D": 7,
+      "v": "0",
+      "C": 1,
+      "last_gap": 3,
+      "final_head": 221,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "final_distinguished": "0",
+      "satisfies_required_missing_head": true
+    },
+    {
+      "N": 3,
+      "D": 7,
+      "v": "1",
+      "C": 1,
+      "last_gap": 3,
+      "final_head": 221,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "16",
+      "final_distinguished": "192",
+      "satisfies_required_missing_head": false
+    },
+    {
+      "N": 3,
+      "D": 7,
+      "v": "-2",
+      "C": 1,
+      "last_gap": 3,
+      "final_head": 221,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "-32",
+      "final_distinguished": "-384",
+      "satisfies_required_missing_head": false
+    },
+    {
+      "N": 5,
+      "D": 11,
+      "v": "0",
+      "C": 1,
+      "last_gap": 5,
+      "final_head": 347,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "final_distinguished": "0",
+      "satisfies_required_missing_head": true
+    },
+    {
+      "N": 5,
+      "D": 11,
+      "v": "1",
+      "C": 1,
+      "last_gap": 5,
+      "final_head": 347,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "16",
+      "final_distinguished": "192",
+      "satisfies_required_missing_head": false
+    },
+    {
+      "N": 5,
+      "D": 11,
+      "v": "-2",
+      "C": 1,
+      "last_gap": 5,
+      "final_head": 347,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "-32",
+      "final_distinguished": "-384",
+      "satisfies_required_missing_head": false
+    },
+    {
+      "N": 9,
+      "D": 19,
+      "v": "0",
+      "C": 1,
+      "last_gap": 9,
+      "final_head": 599,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "0",
+      "final_distinguished": "0",
+      "satisfies_required_missing_head": true
+    },
+    {
+      "N": 9,
+      "D": 19,
+      "v": "1",
+      "C": 1,
+      "last_gap": 9,
+      "final_head": 599,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "16",
+      "final_distinguished": "192",
+      "satisfies_required_missing_head": false
+    },
+    {
+      "N": 9,
+      "D": 19,
+      "v": "-2",
+      "C": 1,
+      "last_gap": 9,
+      "final_head": 599,
+      "final_leading_coefficient": "16",
+      "trace_coefficient": "0",
+      "head_minus_one": "-32",
+      "final_distinguished": "-384",
+      "satisfies_required_missing_head": false
+    }
+  ],
+  "written_gap_dichotomy": "delta_N=D*C-N-1 with integral C>=1; only C=1,d0=2,l0=1 gives delta_N=N, and every other case gives delta_N>N+1. No separate gap assumption or N+1 boundary remains.",
+  "cyclic_trace_controls": [
+    {
+      "components": 2,
+      "tested_q": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "components": 3,
+      "tested_q": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "components": 5,
+      "tested_q": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "hashes": {
+    "CONDITIONAL_LAURENT_COEFFICIENT_INVARIANCE.md": "a70ef55803377e55d7172cf94281f7eb1a9a4f9d49164fd90f6d573cef9a33a0",
+    "check_conditional_laurent_invariance.py": "70abeb7ddd9d1d8d2d8750ef57d6bc691b95a2e4333cb8da5ae108e83a20cc8d",
+    "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
+  },
+  "coverage_boundary": "Finite commutative Laurent controls only. The all-N lemma is proved in the note under explicit head, final-order, trace and exceptional normalization hypotheses; its gap dichotomy follows from integrality. No DC-pair, differential-operator realization, earlier-source theorem, integer-polynomial coefficient assertion or main DC1 theorem is certified.",
+  "formal_verification": false,
+  "external_review": false
+}

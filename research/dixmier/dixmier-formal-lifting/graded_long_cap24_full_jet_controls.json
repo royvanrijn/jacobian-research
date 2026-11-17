@@ -1,0 +1,194 @@
+{
+  "claim": "No graded canonical Long full scalar Weyl jet of degree24 through h5, arbitrary parity and both complex h3 branches",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Fraction coefficient-pair field identities, rational functionals, bare modular minors and normal PBW control"
+  },
+  "cap": 24,
+  "parity": "unrestricted",
+  "field": "omega^2=-2",
+  "complex_h3_inputs_verified_coefficientwise": true,
+  "field_h4": {
+    "unknowns": 236,
+    "rows": 1673,
+    "functional_support": 187,
+    "identity": "ellA=0; ellB=z^3+omega*0",
+    "both_Galois_signs_verified": true,
+    "no_separate_real_imag_parameter_constraints": true
+  },
+  "z0_h4": {
+    "functional_support": 180,
+    "identity": "ellB=(c-27a/544)^3",
+    "field_conclusion": "a=544c/27",
+    "rank_F3_Q": 235,
+    "minor_det_modp": 43500,
+    "particular_tuples": 7,
+    "particular_nonzero_coefficients": 253,
+    "full_F3_family": "retained particular+w*K_R6"
+  },
+  "h5": {
+    "unknowns": 152,
+    "component_counts": [
+      24,
+      40,
+      54,
+      34
+    ],
+    "rows": 1289,
+    "rank_F4_Q": 151,
+    "minor_det_modp": 765461,
+    "functional_support": 119,
+    "all152columns_annihilated": true,
+    "parameters": [
+      "b",
+      "c",
+      "u",
+      "v",
+      "gamma",
+      "w"
+    ],
+    "rhs_monomials": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "constant_evaluation": "1",
+    "all_nonconstant_evaluations": "0",
+    "u_w_cancel_without_normalization": true,
+    "contradiction": "0=1 for every parameter point",
+    "Pi3_F1_F1_included": true
+  },
+  "normal_PBW_positive_control": {
+    "parameters_b_c_u_v_gamma_w": [
+      "-2",
+      "1",
+      "3",
+      "-1",
+      "2",
+      "2"
+    ],
+    "all_six_relations_through_h4": true,
+    "operator_terms": [
+      2,
+      134,
+      423,
+      52
+    ],
+    "scope": "Finite convention/family control only"
+  },
+  "invalid_controls": {
+    "corrupted_field_functional_rejected": true,
+    "corrupted_F3_particular_rejected": true,
+    "corrupted_h5_functional_rejected": true
+  },
+  "hashes": {
+    "check_graded_long_cap24_full_jet.py": "be8e78c0521e2cf87a45a987a728e3ceea9cee323c483386b009562821ab39df",
+    "GRADED_LONG_CAP24_FULL_JET_OBSTRUCTION.md": "1831dc4650fe1fc99409c4951272383153d6281ba816704be780d9e6cede1935",
+    "graded_long_cap24_full_jet_witness.json": "a5489d0b684fc75ca43a5cf8b402fd7c7f80a7a6abecc764314cd74b6fa5cc2b",
+    "GRADED_LONG_CAP24_COMPLEX_FIRST_JET_FAMILY.md": "9fafbbc6ba32c5c2709c938847ba6be96a63fdaa13272e93d4eec7bb008b1ad8",
+    "check_graded_long_cap24_complex_family.py": "b9e9c398ff38512c280bdc9b2218cb5467cd723be252bf56b901a2c3ec974428",
+    "graded_long_cap24_complex_witness.json": "bd52afed86db0af1f0af1605cb1ad56fcf1ee1ff93e5800c3cb9d055c6f4e535",
+    "check_graded_long_cap23_full_jet.py": "0069e11af58e2b3a928ce1d77aaa0d7866e86cbcf028fdbbe63b884529d4d867",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Complete graded cap24 finite coefficient family, arbitrary parity, both actual quadratic-field h3 branches retained until exact h4 z^3 identity; then full rational F3 family and h5 contradiction with allsix parameters. No real/imag separation, nongraded normalization, cap25 full-parity conclusion or DC1/DC2 theorem.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

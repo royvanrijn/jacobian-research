@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "claim": "Exact tame-shear first components, head-N versus head-1 distinction, and conditional corrected Step7 comparison",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Independent Fraction normal-PBW multiplication and seven-variable polynomial identity"
+  },
+  "PBW_controls": [
+    {
+      "a": 2,
+      "b": 1,
+      "N": 2,
+      "gap": 2,
+      "head_minus_N": "-4",
+      "raw_adjacent_constant": "17/5"
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "N": 3,
+      "gap": 3,
+      "head_minus_N": "-4",
+      "raw_adjacent_constant": "22/5"
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "N": 5,
+      "gap": 5,
+      "head_minus_N": "-4",
+      "raw_adjacent_constant": "32/5"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "N": 2,
+      "gap": 2,
+      "head_minus_N": "-6",
+      "raw_adjacent_constant": "37/5"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "N": 3,
+      "gap": 3,
+      "head_minus_N": "-6",
+      "raw_adjacent_constant": "52/5"
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "N": 5,
+      "gap": 5,
+      "head_minus_N": "-6",
+      "raw_adjacent_constant": "82/5"
+    },
+    {
+      "a": 8,
+      "b": 4,
+      "N": 2,
+      "gap": 2,
+      "head_minus_N": "-16",
+      "raw_adjacent_constant": "287/5"
+    },
+    {
+      "a": 8,
+      "b": 4,
+      "N": 3,
+      "gap": 3,
+      "head_minus_N": "-16",
+      "raw_adjacent_constant": "427/5"
+    },
+    {
+      "a": 8,
+      "b": 4,
+      "N": 5,
+      "gap": 5,
+      "head_minus_N": "-16",
+      "raw_adjacent_constant": "707/5"
+    },
+    {
+      "a": 23,
+      "b": 12,
+      "N": 2,
+      "gap": 2,
+      "head_minus_N": "-46",
+      "raw_adjacent_constant": "2537/5"
+    },
+    {
+      "a": 23,
+      "b": 12,
+      "N": 3,
+      "gap": 3,
+      "head_minus_N": "-46",
+      "raw_adjacent_constant": "3802/5"
+    },
+    {
+      "a": 23,
+      "b": 12,
+      "N": 5,
+      "gap": 5,
+      "head_minus_N": "-46",
+      "raw_adjacent_constant": "6332/5"
+    }
+  ],
+  "symbolic_final_identity": true,
+  "residual": "(a-b)*(a*b-2*A_source)/(2*a*(a*N+b))",
+  "vanishing_condition": "A_source=a*b/2 for a>b>0",
+  "centroid_scope": "Unequal edge centroids affect head-N; monomial-face gap gives head-1 zero for N>1",
+  "Schur_comparisons": [
+    {
+      "A_source": "16",
+      "values": [
+        "-5963/42",
+        "-5963/42",
+        "-5963/42"
+      ]
+    },
+    {
+      "A_source": "17",
+      "values": [
+        "-12169/84",
+        "-133853/924",
+        "-231193/1596"
+      ]
+    }
+  ],
+  "hashes": {
+    "PBW_TRANSPORT_AND_FINAL_COEFFICIENT_COMPARISON.md": "00d1e2e3fc17b467de2b8247f9ad29017c470087d487615552485854148eeabb",
+    "check_pbw_transport_final_coefficient.py": "7df305958ac4bd030f0577eb851d9a6a7e417304434641dac54fb840c8a20e07",
+    "EXCEPTIONAL_LAURENT_CORRECTION.md": "1c7fc7739cc39c0b42968837cf640d9787c5972d25a893437994e28d475e255a",
+    "sources/zheglov-2410.06959v5.pdf": "897913ef95e011332e86e348803c6c9da5dbd196db17a04f8f951110e9b095e3"
+  },
+  "scope": "First-component and Schur algebra plus conditional use of source body/tail/averaging formula; no actual-pair construction, full theorem refutation or DC1 conclusion.",
+  "formal_verification": false,
+  "external_review": false
+}

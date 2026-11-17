@@ -1,0 +1,401 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Sig}{\Sigma_2}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\title{Nongraph double covers of a cofinite prime twist family}
+\author{}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For an explicit family of prime four-bridge knots with meridional rank
+four and complex augmentation rank three, we prove that all but finitely
+many double branched covers are not graph manifolds. The terminal twist
+block gives fillings of one fixed torus-boundary manifold along pairwise
+distinct slopes. A previously certified nonzero representation volume
+for one filling excludes even connected sums of graph manifolds.
+The reduced JSJ filling analysis of Boileau and Cooper then excludes
+graph type for all but finitely many slopes. This gives
+a qualitative cofinite conclusion, without an explicit cutoff or a
+hyperbolicity assertion for the closed covers.
+\end{abstract}
+
+For $n\ge0$, let $K_n$ be the closure of the four-braid
+\begin{equation}\label{eq:braid}
+ \beta_n=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2
+ \sigma_3^{-2}\sigma_2\sigma_1^2\sigma_2^3
+ \sigma_3^{-1}\sigma_2^{3+6n}.
+\end{equation}
+The independent family theorem \cite[Theorem \texttt{thm:main}]{family}
+proves, for every $n\ge0$, that $K_n$ is prime and
+\begin{equation}\label{eq:family}
+ \mr(K_n)=b(K_n)=4,\qquad \ar(K_n,\mathbb C)=3,\qquad
+ g(K_n)=7+3n,\qquad c(K_n)=17+6n.
+\end{equation}
+Here augmentation rank means ordinary complex $U=1$ augmentation
+rank with meridian value different from one. This note concerns the
+additional topology of their actual double branched covers.
+
+We must distinguish irreducibility from graph structure. Call a compact
+orientable manifold \emph{of graph type} when all its prime factors
+are graph manifolds, allowing the $S^2\times S^1$ factors.
+This is the connected-sum-closed graph convention used by Boileau and
+Cooper \cite[printed p.~45]{bc}. For an irreducible manifold it is the
+usual graph-manifold condition. Excluding graph type is stronger than
+merely excluding irreducible graph manifolds.
+
+\begin{theorem}\label{thm:cofinite}
+There is a finite set $E\subset\mathbb Z_{\ge1}$ such that, for every
+$n\ge0$ with $n\notin E$, the closed orientable manifold $\Sig(K_n)$
+is not of graph type.
+\end{theorem}
+
+The point is that one nonzero representation-volume certificate can
+control infinitely many different branch sets. Removing their common
+terminal twist ball fixes a one-torus-boundary cover. If a hyperbolic
+piece is separated from the boundary by graph pieces, good fillings
+leave that piece intact. If the boundary reaches a hyperbolic piece
+through a cable space, the cable filling either stays incompressible
+or induces a Dehn filling on the hyperbolic piece. The exceptional
+slopes in either case form a finite set.
+The argument below is a consequence of the primary filling analysis
+in \cite[Section~2]{bc}, with the graph-type and reducible cases made
+explicit. It does not compute $E$, assert the conclusion for every
+$n$, or establish hyperbolicity of the whole closed cover.
+
+\section{One fixed tangle cover}
+
+\begin{lemma}\label{lem:tangle}
+There is a fixed compact, connected, orientable manifold $M$ with one
+torus boundary and a basis $\lambda,\mu$ of $H_1(\partial M;\mathbb Z)$
+such that
+\[
+ \Sig(K_n)\cong M(\alpha_n),\qquad
+ \alpha_n=\lambda+(3+6n)\mu.
+\]
+In particular the unoriented primitive slopes $\alpha_n$ are pairwise
+distinct, with
+\[
+                    \Delta(\alpha_n,\alpha_m)=6|n-m|.
+\]
+\end{lemma}
+\begin{proof}
+Choose a ball $B$ around the entire terminal two-strand twist block in
+\eqref{eq:braid}, retaining its four marked boundary points.
+Stretching the braid block inside $B$ accommodates every exponent
+$3+6n$ without changing the complement tangle. The branch set in
+$S^3\setminus\operatorname{int}B$ consists of two properly embedded
+arcs: the knot has been cut at four points, and there are no remaining
+closed components. Let $M$ be its double branched cover.
+The character on the complement of the arcs sending a small meridian
+of either arc to $1\in\mathbb Z/2$ is onto. The unbranched part of the
+cover, and hence the branched cover, is connected. It is orientable.
+Its boundary is the connected double cover of a sphere branched at
+four points, so its Euler characteristic is $2\cdot2-4=0$ and it is
+one torus.
+
+The double cover of a rational two-string tangle is a solid torus.
+For the trivial tangle this is the product of an annulus, the double
+cover of a disk branched at two points, with an interval. Rational
+tangles are obtained from it by marked-boundary homeomorphisms.
+Gluing that solid torus to $M$ is Dehn filling. The rational-tangle
+meridian formula and the distance formula are precisely those proved
+in McCoy--Zentner \cite[Lemma~12 and its proof, p.~7]{mz}.
+Their construction uses the cover of the fixed outside tangle, so the
+same $M$ works simultaneously for the whole family, rather than a
+potentially different parent for each pair of knots.
+
+Choose $\lambda$ to be the disk slope of the zero-twist tangle.
+The lift of one positive half-twist is a Dehn twist of the covering
+annulus. Choose the sign of the primitive transverse class $\mu$
+so that it sends $\lambda$ to $\lambda+\mu$; these two classes form
+a basis. Equivalently, in the rational-tangle convention of
+\cite[Figure~5 and Lemma~12]{mz}, integer twist tangles have rational
+meridians affine in their integer parameter. Thus the block with $k$
+positive half-twists has disk slope $\lambda+k\mu$. Applying this
+with $k=3+6n$ proves the displayed slope formula.
+
+The boundary gluing of the tangle pairs lifts to the boundary tori;
+its two possible lifts differ by the covering involution and give the
+same unoriented filled slope. The resulting double cover of $S^3$
+is branched over the literal closure \eqref{eq:braid}. Uniqueness of
+the double cover defined by the nontrivial meridional character
+identifies it with $\Sig(K_n)$.
+Finally the determinant of the coefficient vectors $(1,3+6n)$ and
+$(1,3+6m)$ has absolute value $6|n-m|$. This proves distinctness
+without choosing any software peripheral basis.
+\end{proof}
+
+\section{Nonzero volume and graph prime sums}
+
+The stronger hypothesis needed from the initial knot is supplied by
+its actual-cover certificate, not by a naming convention:
+\begin{equation}\label{eq:seedvolume}
+ \rho_0:\pi_1(\Sig(K_0))\longrightarrow\mathrm{PSL}_2(\mathbb C),
+ \qquad 10.37<\Vol(\rho_0)<10.39.
+\end{equation}
+This is the closed representation constructed and certified in
+\cite[Theorem \texttt{thm:nongraph} and its proof]{seed}; its filling
+slope is tracked from the actual meridional double cover. We import
+that nonzero-volume conclusion and do not replace it by a numerical
+shape observation.
+
+\begin{lemma}\label{lem:sumvolume}
+Every $\mathrm{PSL}_2(\mathbb C)$ representation of a closed orientable
+manifold of graph type has volume zero. Consequently $\Sig(K_0)$ is
+not of graph type.
+\end{lemma}
+\begin{proof}
+For a closed oriented manifold $Y$ and a representation $\rho$, its
+volume is the integral over $Y$ of the pullback of the hyperbolic
+volume form by any piecewise smooth equivariant map from its
+universal cover to $\mathbb H^3$. The integral is independent of the
+map \cite[Section~4.6, p.~11]{lty}.
+
+If $Y=Y_1\#Y_2$, then $\pi_1Y=\pi_1Y_1*\pi_1Y_2$.
+Let $\rho_i$ be the restrictions. Arrange an equivariant map to be
+constant on each lift of the separating sphere collar. This is
+possible because every lifted collar has trivial stabilizer, and
+$\mathbb H^3$ is contractible; perform the modifications on orbit
+representatives and translate equivariantly. On each punctured
+summand cap its constant boundary sphere with a ball mapped
+constantly. The integral over each collar and cap is zero. The
+integral over the remaining pieces is exactly the sum of the
+integrals defining the restricted volumes, so
+\[
+                 \Vol_Y(\rho)=\Vol_{Y_1}(\rho_1)+\Vol_{Y_2}(\rho_2).
+\]
+Iterate across a prime decomposition. On each irreducible graph
+prime, every such volume vanishes by
+\cite[Lemma~4.10, p.~11]{lty}. For $S^2\times S^1$, an equivariant
+map may be chosen to factor through the lifted circle, so its
+three-form integral is zero. Hence all terms vanish for graph type.
+Equation~\eqref{eq:seedvolume} proves the final assertion.
+\end{proof}
+
+\section{Persistence under all but finitely many fillings}
+
+We give the restricted consequence of Boileau--Cooper that is needed
+here. In their terminology a \emph{hyperbolicabled} manifold is a
+finite-volume hyperbolic core with disjoint cable spaces attached to
+some boundary tori; each cable space has a free outer boundary torus.
+Their reduced JSJ decomposition has blocks that are graph manifolds
+or hyperbolicabled manifolds, with every cable subspace containing
+an original boundary component of the whole manifold
+\cite[pp.~50--51]{bc}.
+
+\begin{lemma}\label{lem:persistence}
+Let $P$ be a compact, connected, orientable, irreducible and
+boundary-incompressible manifold with one torus boundary. If $P$ is
+not a graph manifold, then $P(\alpha)$ is not of graph type for all
+but finitely many slopes $\alpha$.
+\end{lemma}
+\begin{proof}
+Take the reduced JSJ family of \cite[pp.~50--51]{bc}, and let $W$ be
+the block incident to $\partial P$. Since $P$ is nongraph, some block
+has a hyperbolic core. We explain why at least one such core survives
+outside a finite set of slopes.
+
+First suppose $W$ is a graph block. It cannot be a cable space:
+the unique original boundary of $P$ belongs to $W$, so an adjacent
+hyperbolicabled block has no cable subspace and is actually
+hyperbolic. A single-cable $W$ could be absorbed into that neighbor.
+A cable adjacent to a graph block could instead be combined with it.
+Both operations contradict minimality. This is the argument in
+\cite[proof of Lemma~2.3, p.~51]{bc}.
+Nor can $W$ be $T^2\times I$. Its other boundary torus would either
+be a second boundary component of $P$, impossible here, or would be
+an interface which can be deleted by absorbing the product collar
+into its neighbor, again contradicting minimality.
+Apply Boileau--Cooper's Lemma~2.3 to $P$, not as an unrestricted
+assertion about every graph block. Its hypotheses hold: $P$ is
+compact, connected, orientable, irreducible and boundary-incompressible;
+its boundary is one torus, and $P$ is not a cable space because it is
+nongraph. The product $T^2\times I$ cannot be $P$ either.
+The lemma gives a finite set of bad slopes on the sole boundary.
+By its definition of a bad slope \cite[printed p.~51]{bc}, outside
+this set the graph block $W(\alpha)$ has incompressible remaining
+boundary tori. Only this incompressibility conclusion is needed here.
+The preceding minimality argument explicitly excludes both the cable
+and product forms for the reduced boundary block as well.
+
+Outside this finite set, these interfaces remain incompressible after
+filling and after attaching the unchanged blocks beyond $W$.
+The subsequent argument does not require an irreducibility claim
+for the filled graph block. Prime spheres can
+be chosen disjoint from the incompressible interfaces by the usual
+innermost-disk surgeries on their intersection circles. An unchanged
+hyperbolic core beyond $W$ therefore survives in a prime factor,
+separated by incompressible tori. Reducing the torus decomposition
+can merge graph pieces or remove product collars, but cannot remove
+this hyperbolic core. The filling is not of graph type.
+
+Now suppose $W$ is hyperbolicabled, with hyperbolic core $H$.
+There is at most one attached cable space, since every cable must
+contain the unique original boundary component of $P$. All remaining
+interfaces are therefore direct boundary tori of $H$.
+We use the proof of \cite[Lemma~2.2, p.~50]{bc}, which retains the
+hyperbolic core and gives more than just geometrizability.
+If $\partial P$ is directly a boundary torus of $H$, the hyperbolic
+Dehn-filling theorem used there excludes only finitely many slopes
+and leaves a hyperbolic core, with all other cusps unfilled.
+Otherwise $\partial P$ lies on a cable space $C$ attached to $H$.
+Let $f$ be its regular fiber slope and let $s\ge2$ be its exceptional
+fiber order. Explicitly exclude the single slope $f$, for which
+$\Delta(\alpha,f)=0$.
+If $\Delta(\alpha,f)\ge2$, then $C(\alpha)$ is Seifert fibered over a
+disk with two exceptional fibers and incompressible boundary. Thus
+$H$ remains separated by incompressible tori and is unchanged.
+If $\Delta(\alpha,f)=1$, then $C(\alpha)$ is a solid torus inducing a
+slope $\gamma(\alpha)$ on the adjacent boundary of $H$. The cable
+calculation in \cite[proof of Lemma~2.2, p.~50]{bc} gives
+\[
+ \Delta\bigl(\gamma(\alpha),\gamma(\alpha')\bigr)
+       =s^2\Delta(\alpha,\alpha').
+\]
+Hence this map of slopes is injective. Only finitely many $\alpha$
+can induce one of the finitely many exceptional hyperbolic filling
+slopes of $H$. For every remaining slope, $H$ either stays unchanged
+or undergoes a hyperbolic filling. The incompressible remaining
+interfaces preserve a hyperbolic JSJ piece in $P(\alpha)$.
+This proves the lemma.
+\end{proof}
+
+The wording of Lemma~\ref{lem:persistence} is deliberately restricted.
+The conclusion is read from the hyperbolic-core argument in the
+proofs of Boileau--Cooper's Lemmas~2.2--2.3, not from the word
+``geometrizable'' alone. Also the product block $T^2\times I$ was
+excluded explicitly. The indispensable finite-bad-slope import is the restricted
+one-boundary nongraph application of Boileau--Cooper just made.
+The original boundary-compression theorem of Culler--Gordon--Luecke--Shalen
+\cite[Theorem~2.4.4, printed p.~276]{cgls} explicitly displays cable
+and product exceptions and explains the need for this distinction.
+That original statement is context, not a separate premise of the
+proof here. No all-good-filling irreducibility claim is needed in the
+graph-block case.
+
+\begin{theorem}\label{thm:onefilling}
+Let $M$ be any compact, connected, orientable manifold with one torus
+boundary. If one Dehn filling of $M$ is not of graph type, then all
+but finitely many slopes give fillings not of graph type.
+\end{theorem}
+\begin{proof}
+Use a prime decomposition with the boundary in the factor $P$:
+\[
+                     M=P\#Q_1\#\cdots\#Q_r,
+\]
+where the $Q_i$ are closed prime factors. For every slope $\alpha$,
+\[
+                 M(\alpha)=P(\alpha)\#Q_1\#\cdots\#Q_r.
+\]
+If any $Q_i$ is not a graph prime, it survives every filling, so the
+conclusion holds for every slope. Assume otherwise that all $Q_i$
+are graph primes. A graph manifold remains of graph type after
+solid-torus filling. Indeed, one can append the solid torus to its
+Seifert-piece gluing description; the gluing tori need not be
+incompressible. Equivalently this is graph-filling closure in the
+connected-sum convention of \cite[printed pp.~45 and~51]{bc}.
+Thus if $P$ were graph, every filling of $M$ would be of graph type,
+contrary to the hypothesis.
+
+The prime factor $P$ has nonempty torus boundary, so it is
+irreducible: the exceptional orientable prime $S^2\times S^1$ is
+closed. It is also boundary-incompressible. An irreducible manifold
+with compressible torus boundary is a solid torus, which would be
+graph. Therefore Lemma~\ref{lem:persistence} applies to $P$.
+For every slope outside its finite exceptional set, $P(\alpha)$ has
+a hyperbolic JSJ piece. Adding the fixed graph prime factors does
+not remove that piece, proving the theorem.
+\end{proof}
+
+\section{Application to the prime knots}
+
+\begin{proof}[Proof of Theorem~\ref{thm:cofinite}]
+By Lemma~\ref{lem:tangle}, all actual branched covers are fillings of
+one $M$ along the distinct slopes $\alpha_n$.
+Lemma~\ref{lem:sumvolume} and the imported nonzero volume
+\eqref{eq:seedvolume} show that $M(\alpha_0)$ is not of graph type.
+Theorem~\ref{thm:onefilling} leaves only finitely many slopes which
+could give graph type. Their intersection with the injective sequence
+$\{\alpha_n:n\ge0\}$ has finitely many indices. Removing $0$, whose
+cover is already excluded, yields the required finite set $E$.
+\end{proof}
+
+Combining this with \eqref{eq:family} gives infinitely many pairwise
+distinct prime knots with $\ar(K_n,\mathbb C)=3<4=\mr(K_n)=b(K_n)$
+whose actual double branched covers are outside graph type. This
+excludes any equality-family hypothesis requiring a graph double
+cover for these cofinite members. It is not an exclusion of every
+previously known meridional-rank equality theorem.
+
+The same cover exclusion persists after adding trefoils. The double
+branched cover of a connected sum is the connected sum of the covers:
+the sum sphere meets the branch knot twice, so its lift is a sphere.
+Thus, for $n\notin E$ and every $s\ge0$,
+\[
+ \Sig\bigl(K_n\#(\#^s3_1)\bigr)
+       \cong\Sig(K_n)\#\bigl(\#^s\Sig(3_1)\bigr)
+\]
+still has a nongraph prime factor. The rank conclusions already
+proved in \cite[Corollary \texttt{cor:sums}]{family} remain
+$\ar=3+s$ and $\mr=b=4+s$; no rank additivity is inferred merely
+from this topological connected-sum observation.
+
+\paragraph{Dependencies and scope.}
+The new argument is qualitative and topological. It imports the
+literal twist-family definition and its independently proved rank,
+primeness and size results, the initial actual-cover nonzero-volume
+certificate, the rational-tangle filling construction, graph-prime
+representation-volume vanishing, and the restricted reduced-JSJ
+filling analysis. No new triangulation or sampled parameter value is
+needed as a premise. The source audit retains exact editions and
+locators; it is a source and proof record, not a claimed numerical
+or formal verification. There is no explicit bound on $E$, no claim
+that $E$ is empty, and no assertion that all these closed covers are
+hyperbolic.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}\small\raggedright
+\bibitem{bc} M.~Boileau and D.~Cooper,
+\emph{On three-manifolds with bounded geometry},
+Bol.~Soc.~Mat.~Mexicana (3) 10, Special Issue (2004), 43--53.
+Published author-hosted copy,
+\url{https://web.math.ucsb.edu/~cooper/40.pdf}.
+Graph convention p.~45; Lemma~2.2 and proof p.~50;
+reduced JSJ family, Lemma~2.3 and proof p.~51.
+\bibitem{cgls} M.~Culler, C.~McA.~Gordon, J.~Luecke and P.~B.~Shalen,
+\emph{Dehn surgery on knots}, Ann.~of Math.~(2) 125 (1987), 237--300.
+Section~2.4 setup, printed pp.~274--275, and Theorem~2.4.4,
+printed p.~276 (PDF p.~41),
+\url{https://marc-culler.info/static/home/papers/CyclicSurgery.pdf}.
+\bibitem{mz} D.~McCoy and R.~Zentner,
+\emph{The Montesinos trick for proper rational tangle replacement},
+Proc.~Amer.~Math.~Soc.~151 (2023), no.~4, 1811--1822,
+\href{https://doi.org/10.1090/proc/16246}{doi:10.1090/proc/16246}.
+Retained author copy, Figure~5 p.~6, Lemma~12 and proof p.~7,
+\url{https://zentner.app.uni-regensburg.de/proper_tangle_replace.pdf}.
+\bibitem{lty} F.~Luo, S.~Tillmann and T.~Yang,
+\emph{Thurston's spinning construction and solutions to the hyperbolic
+gluing equations for closed hyperbolic 3-manifolds},
+retained arXiv:1004.2992v1. Section~4.6 and Lemma~4.10, p.~11.
+\bibitem{seed} \emph{An explicit seventeen-crossing four-bridge knot},
+companion \path{NEW_SEVENTEEN_CROSSING_KNOT.tex},
+Theorem \texttt{thm:nongraph} and its proof: actual closed-cover
+representation with volume in $(10.37,10.39)$.
+\bibitem{family} \emph{Prime four-bridge knots with augmentation rank
+three}, companion \path{PRIME_AUGMENTATION_GAP_FAMILY.tex},
+Theorem \texttt{thm:main}, Corollary \texttt{cor:sums}.
+\end{thebibliography}
+\end{document}

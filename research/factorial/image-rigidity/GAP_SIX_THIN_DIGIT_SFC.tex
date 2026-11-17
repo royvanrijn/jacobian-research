@@ -1,0 +1,389 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\title{A thin-digit terminal family for ordinary gap six}
+\author{Internal proof; no priority or external-review claim}\date{17 November 2026}
+\begin{document}\setlength{\emergencystretch}{1em}\maketitle
+Fix $r\ge1$, $L=7^r$, $N=L+1$, and $c=N+5=L+6$.
+Here $N$ is the terminal order.
+Put $A=c-zD_z+z$ and
+$\Pi_N(X)=\prod_{\ell=0}^{N-1}(X+6\ell)$.
+Work over a complete algebraically closed extension of $\mathbb Q_7$,
+with valuation ring $\mathcal O$ and residue field $k$.
+For $Q\in\mathcal O[X]$, $\deg Q\le4$, define
+\[
+ G_Q(X)=\binom{X/6+N-1}{N}Q(X),\quad
+ d_j(Q)=\sum_{\ell=0}^j(-1)^\ell\binom j\ell G_Q(c-\ell).
+\]
+Every $d_j$ is integral and $d_j=0$ for $j>N+4$.
+Finite formal conjugacy, with no exponential evaluated, gives
+\[
+ \frac{\Pi_N(A)Q(A)1}{6^N N!}
+       =\sum_{j=0}^{N+4}\frac{d_j(Q)}{j!}z^j.             \tag{1}
+\]
+For $u=z^6=7v$, define
+\[
+ V_a(Q;v)=\sum_{\ell\ge0}
+     \frac{7^\ell a!}{(a+6\ell)!}\,d_{a+6\ell}(Q)v^\ell,
+ \qquad0\le a<6.                                       \tag{2}
+\]
+These six polynomials are integral, since
+$v_7(7^\ell a!/(a+6\ell)!)=(s_7(a+6\ell)-a)/6\ge0$.
+Their simultaneous vanishing is equivalent to the cyclic zero
+of $\Pi_N(A)Q(A)1$ at $u=7v$.
+
+\begin{lemma}[Lucas differences with at most six digits]\label{lem:digit}
+For $\bar Q\in k[X]$ put
+\[
+ f(x)=(x+1)\bar Q(6-x),\qquad
+ D_a=\sum_{\ell=0}^a(-1)^\ell\binom a\ell f(\ell).
+\]
+Let $j\le L+5$ and $s_7(j)=a\le6$.
+The only possibly nonzero reduced differences are
+\[
+ \begin{split}
+ \bar d_a&=a(D_a-D_{a-1})\quad(1\le a\le6),\\
+ \bar d_{a-1+7^i}&=-D_{a-1}\quad(1\le i\le r,\ 1\le a\le6).
+ \end{split}                                                   \tag{3}
+\]
+All other digit patterns with $s_7(j)\le6$ give zero.
+Also $D_6=0$ and $D_5=-[X^4]\bar Q$.
+\end{lemma}
+\begin{proof}
+For an index $\ell$ with $s_7(\ell)\le6$, write $\ell_0$ for
+its units digit. The top binomial argument in $G_Q(c-\ell)$ is
+\[
+ \alpha=1-\ell/6+7^{r+1}/6 .
+\]
+Since $-1/6=1+7+7^2+\cdots$ in $\mathbb Z_7$, the digits of
+$-\ell/6$ through position $r$ are the successive partial sums
+of the digits of $\ell$; they have no carry.
+Adding1 gives $\alpha_0=1+\ell_0$ and
+$\alpha_r=s_7(\ell)$. If $\ell_0=6$, the digit-sum bound forces
+$\ell=6$ and the unit digit of $\alpha$ is zero; the formula
+below remains zero as well.
+Lucas' criterion for $N=7^r+1$ therefore gives
+\[
+ \overline{G_Q(c-\ell)}
+   =(1+\ell_0)s_7(\ell)\bar Q(6-\ell_0)
+   =s_7(\ell)f(\ell_0).                                 \tag{4}
+\]
+
+In the backward difference defining $d_j$, Lucas' criterion
+kills all $\ell$ not digitwise bounded by $j$.
+For the others it gives the product of the digit binomials.
+The sign $(-1)^\ell$ is $(-1)^{s_7(\ell)}$.
+If $j$ has no higher digit, (4) yields
+\[
+ \sum_{\ell=0}^a(-1)^\ell\binom a\ell\,\ell f(\ell)
+                       =a(D_a-D_{a-1}).
+\]
+If exactly one higher digit is selected and that digit equals1,
+its alternating sum kills the $\ell_0$ part of $s_7(\ell)$
+and leaves $-D_{a-1}$.
+If the total higher digit sum is at least two, its alternating
+differences kill the affine function $s_7(\ell)$.
+These are all patterns, proving (3), including $j=0$.
+Finally $f$ has degree at most five, with leading coefficient
+$[X^4]\bar Q$, so $D_6=0$ and
+$D_5=(-1)^5 5![X^4]\bar Q=-[X^4]\bar Q$.
+\end{proof}
+
+\begin{lemma}[One exact row saturation]\label{lem:matrix}
+Put
+\[
+ E_i=(7^i-1)/6,\qquad
+ S(v)=1+\sum_{i=1}^r(-1)^i v^{E_i}.
+\]
+Every coefficient of $V_0$ is divisible by7.
+With columns $Q=1,X,\ldots,X^4$, the reduced rows
+$V_1,\ldots,V_5$ form
+\[
+ M(S)=\begin{pmatrix}
+ -1-S&3+S&-S&1+S&4-S\\
+ 2S&3+S&3&5+5S&3+6S\\
+ 0&6S&3+6S&5+3S&6+6S\\
+ 0&0&3S&2+5S&5+6S\\
+ 0&0&0&S&2+6S
+ \end{pmatrix}.                                        \tag{6}
+\]
+The reduced saturated row $V_0/7$, on arbitrary $Q$, is
+\[
+                    R(Q)=6Q(6)+vS(v)[X^4]Q.             \tag{7}
+\]
+\end{lemma}
+
+\begin{proof}
+The unit factorial formula is
+$7^{-v_7(j!)}j!\equiv(-1)^{v_7(j!)}\prod_i j_i!\pmod7$.
+For $1\le a\le5$, only digit sum $a$ contributes to $\bar V_a$.
+The low index $j=a$ has weight1. The high index
+$j=a-1+7^i$ has normalized unit weight $a(-1)^i v^{E_i}$.
+Lemma~\ref{lem:digit} gives exactly
+\[
+                   \bar V_a=a(D_a-SD_{a-1}).             \tag{5}
+\]
+Expanding the five basis polynomials $Q$ gives (6).
+
+For $a=0$, every $j>0$ coefficient is7-divisible. Also
+\[
+ \frac{G_1(c)}7=\frac{1+7L/6}{6(L+1)}
+       \prod_{k=1}^{L-1}\left(1-\frac{7L}{6k}\right)
+       \equiv1/6=6\pmod7.                               \tag{8}
+\]
+Every product correction has valuation at least two.
+Hence $\overline{d_0(Q)/7}=6\bar Q(6)$.
+
+After division by7, only digit sum six contributes to the
+nonconstant part of $V_0/7$.
+The low index $j=6$ has reduced difference $6[X^4]\bar Q$
+and normalized weight $6v$, giving $v[X^4]\bar Q$.
+Each high index $j=5+7^i$ has reduced difference $[X^4]\bar Q$
+and weight $(-1)^i v^{E_i+1}$.
+Their sum gives $vS(v)[X^4]\bar Q$, proving (7).
+\end{proof}
+
+
+\begin{lemma}[The residual rank locus]\label{lem:rank}
+For the six-by-five matrix consisting of (6) and (7), the gcd
+of its maximal minors over $\mathbb F_7[v]$ divides $v+1$.
+\end{lemma}
+\begin{proof}
+Here is a direct kernel computation valid for indeterminate $S$.
+For $Q$ define
+\[
+ f(j)=(j+1)Q(6-j),\qquad
+ D_a=\sum_{j=0}^a(-1)^j\binom aj f(j),\quad0\le a\le5.
+\]
+The polynomial $f$ has degree at most five and $f(6)=0$.
+The matrix (6), equivalently the operator calculation (3), gives
+the finite polynomial identities
+\[
+ V_a=a(D_a-SD_{a-1}),\quad1\le a\le5,\qquad
+                         \sum_{a=0}^5D_a=0.             \tag{9}
+\]
+The second equality is Newton expansion at $j=6$, using
+$\binom6a=(-1)^a$ in $\mathbb F_7$.
+The map $Q\mapsto(D_0,\ldots,D_5)$ is an isomorphism onto
+this five-dimensional hyperplane.
+
+If $M(S)Q=0$ and $Q\ne0$, then $D_a=S^aD_0$.
+Here $D_0\ne0$, so $1+S+\cdots+S^5=0$.
+Thus $S=a\in\{2,3,4,5,6\}$ and the kernel is one-dimensional.
+Moreover $[X^4]Q=-D_5\ne0$.
+Taking the monic kernel representative gives
+$D_5=-1$, $D_0=-S$, and hence $6Q(6)=S$.
+The additional saturated row (7) is therefore $S(1+v)$.
+A rank drop requires $v=-1$.
+At $v=0$ one has $S=1$ and $M(S)$ is invertible.
+
+Explicitly,
+\[
+ \det M(S)=-(1+S+\cdots+S^5).
+\]
+Its roots in $S$ are simple.
+Since $vS'(v)=S(v)-1$, its roots at unit $v$ are simple as well.
+The gcd of all maximal minors has no root except possibly $-1$,
+and its multiplicity there is at most one because it divides this
+determinant. This proves the assertion over $\mathbb F_7[v]$,
+not merely at the seven residue-field elements.
+\end{proof}
+
+\begin{lemma}[Affine scalar lift]\label{lem:lift}
+For fixed $N=7^r+1$, the original characteristic-zero cyclic
+matrix has at most one distinct rank-drop point on $u=7v$,
+$v\in\mathcal O^\times$.
+\end{lemma}
+
+\begin{proof}
+The rows (2) are the original cyclic matrix up to nonzero constant
+normalizations. Dividing the globally7-divisible row0 by7 preserves
+rank at every characteristic-zero point.
+
+Let $\mathcal D_N$ be the determinant of rows $V_1,\ldots,V_5$,
+and let $\mathcal E_N$ be the determinant of rows
+$V_1,\ldots,V_4,V_0/7$.
+Expansion of (6)--(7), with $g(S)=1+S+\cdots+S^5$, gives
+\[
+ \overline{\mathcal D_N}=-g(S),\qquad
+ \overline{\mathcal E_N}=4+3v(S+\cdots+S^5).
+\]
+Consequently the explicit polynomial
+\[
+ F_N(v)=2\bigl(\mathcal E_N(v)+3v\mathcal D_N(v)\bigr)
+       \in\mathbb Z_7[v],\qquad \bar F_N=v+1              \tag{10}
+\]
+vanishes at every rank-drop point.
+For distinct integral $x,y$, the quotient
+$(F_N(x)-F_N(y))/(x-y)$ is a unit: its reduction is1
+and all other divided-difference terms are integral multiples of7.
+Thus $F_N$ is injective on the entire integral disk, including
+ramified extensions, and has at most one zero there.
+\end{proof}
+
+
+\begin{theorem}[A uniform new terminal family]\label{thm:family}
+At every terminal order $N=7^r+1$, $r\ge0$, the ordinary factorial
+moments of every nonzero complex phase $X(A+BX^6)$ at orders
+$N-1,N$ cannot both vanish.
+\end{theorem}
+\begin{proof}
+For $r=0$, $N=2$ is in the already proved Eisenstein family
+of the \href{PHYSICAL_PRIME_TOTAL_DEGREE_REDUCTION.tex}{physical-prime reduction},
+\texttt{cor:pair}. Now let $r\ge1$ and set
+\[
+ T(t)=\sum_{k=0}^N\binom Nk(N)_{6k}t^k.
+\]
+By \texttt{thm:radius} of the same note, any multiple root
+satisfies $v_7(u)=1$, $u=-1/t$, in every algebraic embedding.
+The \href{gap_three_hurwitz_structure.tex}{all-gap critical-ideal identity},
+\texttt{lem:critical-ideal}, identifies such a root with rank
+less than five for the cyclic rows $B_N,\ldots,B_{N+4}$.
+Since $B_{N+a}=\Pi_N(A)\prod_{\ell=N}^{N+a-1}(A+6\ell)1$,
+a unit triangular column change gives precisely the matrix
+with columns $Q=1,X,\ldots,X^4$ above.
+The imported critical-ideal lemma is proved over $\mathbb C$,
+where its exponential gauges are analytic.
+For the present fixed integer $N$ and shape $N$, all original
+cyclic minors are rational polynomials in $u$.
+A multiple root of $T$ is algebraic: embed its number field
+into $\mathbb C$, apply that complex critical-ideal implication,
+and transport the resulting rational-polynomial minor vanishing
+back through any embedding into $\mathbb C_7$.
+This establishes the needed rank implication at every algebraic
+7-adic root without evaluating any exponential at the boundary.
+
+
+Lemma~\ref{lem:lift} gives at most one distinct multiple root
+of $T$ in $\mathbb C_7$.
+If $T$ had a nonconstant rational repeated factor, an irreducible
+factor of it would have all its distinct algebraic conjugates
+among these same multiple roots. Characteristic-zero separability
+would force that irreducible factor to have degree one and hence
+a rational real root. But $N$ is even and
+\[
+ T(t)=\frac1{\Gamma(N)}\int_0^\infty
+            x^{N-1}e^{-x}(1+tx^6)^N\,dx>0
+ \qquad(t\in\mathbb R).
+\]
+This is impossible. Thus $T$ is squarefree over $\mathbb Q$
+and over $\mathbb C$.
+
+For $AB\ne0$, the normalized consecutive moment polynomials are
+$T+(6/N)tT'$ and $T-(1/N)tT'$.
+Their coefficient determinant is $-7/N\ne0$ and $T(0)=1$;
+a common zero would be a multiple root of$T$.
+Nonzero degenerate monomials have no zero positive moment.
+\end{proof}
+
+\begin{corollary}[Algebraic Gamma shapes in a terminal-dependent disk]
+\label{cor:gamma-disk}
+Let $r\ge1$, $N=7^r+1$, and let $\beta>0$ be real algebraic.
+Suppose one embedding $\mathbb Q(\beta)\longrightarrow\mathbb C_7$
+satisfies $v_7(\beta-1)\ge r+2$.
+Then the Gamma-$\beta$ moments of every nonzero complex
+$X(A+BX^6)$ at orders $N-1,N$ cannot both vanish.
+\end{corollary}
+\begin{proof}
+The case $\beta=1$ is the ordinary theorem. Otherwise put
+$\delta=\beta-1\ne0$ and $\gamma=N+\delta>0$.
+The bridge polynomial is $T_{N,\gamma,6}$.
+We first establish the same necessary boundary radius in the
+possibly ramified coefficient field.
+For every integer factor $a$ in $N,\ldots,7N-1$,
+$v_7(a)\le r+1$, so $1+\delta/a\in1+7\mathcal O$.
+Consequently
+\[
+ H_\gamma(Y)=7T_{N,\gamma,6}(Y/7)
+                  \equiv H_N(Y)\pmod7
+\]
+coefficientwise, where $H_N=7T_{N,N,6}(Y/7)$.
+It is integral, its leading coefficient is a unit,
+and its linear coefficient is a unit, because $N=1$ modulo7.
+All its roots are integral. At a root of positive valuation
+its derivative is a unit, so every multiple root must be a unit.
+Thus every hypothetical multiple root of $T_{N,\gamma,6}$
+still satisfies $u=7v$, $v\in\mathcal O^\times$.
+
+The actual raising constant is now $c+\delta$.
+For $x\in\mathbb Z_7$ and $1\le k\le N$, one has
+\[
+ v_7\binom{\delta/6}{k}
+          =v_7(\delta)-v_7(k)\ge2.
+\]
+Indeed for $1\le j<k\le N$ one has
+$v_7(j)\le r<v_7(\delta/6)$, so
+$v_7(\delta/6-j)=v_7(j)$; cancellation in the binomial
+product gives the displayed valuation.
+Vandermonde's identity therefore gives
+$\binom{x+\delta/6}{N}-\binom xN\in49\mathcal O$.
+For every integral primitive coefficient polynomial $Q$,
+its evaluations at $c+\delta-\ell$ and $c-\ell$ differ by
+$\delta\mathcal O\subset49\mathcal O$ as well.
+Thus all actual $d_j(Q)$ differ from their ordinary counterparts
+by $49\mathcal O$.
+The weights in (2) are integral, so every $V_a$ changes by
+$49\mathcal O$, and $V_0/7$ changes by $7\mathcal O$.
+The same matrices and explicit minor combination (10) now give
+$F_{N,\gamma}\in\mathcal O[v]$ with reduction $v+1$.
+It is injective on the whole integral disk.
+
+The critical-ideal implication transfers algebraically from
+$\mathbb C$ just as in the ordinary proof, now over the real
+coefficient field $E=\mathbb Q(\beta)$.
+All $E$-conjugates of a repeated irreducible factor, with $\beta$
+fixed and at the one chosen7-adic embedding, enter the same
+matrix and unit domain. The affine minor permits at most one
+distinct root; separability forces a degree-one factor over
+$E\subset\mathbb R$. This contradicts strict even-moment
+Gamma positivity, since $N$ is even and $\gamma>0$.
+
+Finally, the actual normalized moments are
+\[
+ T_{N,\gamma,6}+\frac6\gamma\,tT'_{N,\gamma,6},
+ \qquad T_{N,\gamma,6}-\frac1N\,tT'_{N,\gamma,6}.
+\]
+Their determinant is $-(6/\gamma+1/N)\ne0$.
+A common root would be a multiple root of $T_{N,\gamma,6}$,
+already excluded. Degenerate monomials are immediate.
+\end{proof}
+
+\begin{corollary}[The refined degree-seven frontier]
+\label{cor:degree-seven-frontier}
+Let
+\[
+ {\cal U}=\{b7^s:1\le b\le6,\ s\ge0\}
+                \cup\{7^r+1:r\ge0\},\qquad
+ P_j(t)=\sum_{k=0}^j\binom jk(j+1)_{6k}t^k.
+\]
+Strong Factorial for every ordinary complex univariate binomial
+of degree at most seven is equivalent to
+\[
+ \gcd_{\mathbb Q[t]}(P_{N-1},P_N)=1
+              \quad\text{for every }N\ge6,\quad N\notin{\cal U}.
+\]
+Any hypothetical common root on these remaining tests still
+satisfies $v_7(-1/t)=1$ at every algebraic embedding.
+These remaining tests, all-index ordinary gap six, and degree-seven
+binomial SFC are not proved here.
+\end{corollary}
+\begin{proof}
+Theorem \texttt{thm:gap-six-frontier} of the
+\href{ORDINARY_DEGREE_SEVEN_GAP_SIX_FRONTIER.tex}{earlier gap-six frontier}
+gives the exact equivalence after omitting the first family in
+$\mathcal U$ and supplies the necessary root radius.
+Theorem~\ref{thm:family} supplies every terminal in the second
+family. Removing these already proved tests preserves sufficiency;
+necessity is immediate since the remaining tests are a subset
+of the degree-seven assertion.
+\end{proof}
+The ordinary result covers an unbounded terminal family beyond
+$b7^s$, $1\le b\le6$.
+The algebraic Gamma corollary uses an order-dependent disk at one
+specified place; it is not an all-positive-real-shape assertion.
+Neither statement proves all-index ordinary gap six,
+degree-seven binomial SFC, or unrestricted FC/SFC.
+\end{document}

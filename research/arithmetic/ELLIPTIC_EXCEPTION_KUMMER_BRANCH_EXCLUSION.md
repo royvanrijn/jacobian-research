@@ -380,3 +380,80 @@ restricts where a minimal obstruction can end. It does not eliminate
 minimal obstructions whose largest prime lies outside `P_Kum`, and
 does not turn successive one-prime extension statements into an
 all-primes soluble set of positive measure.
+
+## 5. Compatibility with any fixed division data unramified at three
+
+**Corollary EKX4 (exclusion after a prescribed finite splitting condition).**
+Let `C/Q` be any fixed finite Galois extension unramified at three,
+and put `K_C=BC`. There is a positive-density Chebotarev set of
+rational primes which split completely in `C`, are two modulo
+three, and satisfy every conclusion of EKX1--EKX3. In particular
+neither finite zero is supported by any rational reduction at these
+primes.
+
+**Proof.** The nondegeneracy of `(P,Q,R_+)` is geometric, so it
+continues to hold over `K_C`. Reapply the same Kummer interface
+over that field and choose
+
+\[
+ \ell>\max(c_C,3),\qquad\ell\nmid I,
+\]
+
+where `c_C` is its index bound and `I` is the fixed index (1.4).
+Use
+
+\[
+ M_C=K_C(E_0[\ell],[\ell]^{-1}P,[\ell]^{-1}Q,
+                                          [\ell]^{-1}R_+).
+\]
+
+Its kernel over `K_C(E_0[ell])` is `E_0[ell]^3`.
+The field `K_C/Q` is Galois, so the same argument proves
+`M_C/Q` Galois and proves conjugacy stability of the `ell^2-1`
+translations `(0,0,t!=0)`. Since `K_C` is still unramified at
+three, the good-reduction division argument gives
+`M_C cap Q(zeta_3)=Q`. Chebotarev applied to these translations
+and the nontrivial action on `zeta_3` yields the density
+
+\[
+ \delta_C=\frac{\ell^2-1}{2[M_C:\mathbb Q]}>0.                 \tag{5.1}
+\]
+
+All such Frobenius elements fix `K_C`, and therefore `C`. The
+remaining reduction and finite-index arguments of EKX1 are
+unchanged. EKX2--EKX3 then apply after their fixed initial cutoff.
+\(\square\)
+
+For this fixed `C`, the primes splitting `K_C` and two modulo
+three themselves have density `1/(2[K_C:Q])`. The constructed
+subset consequently has exact positive relative density
+
+\[
+ \frac{\delta_C}{1/(2[K_C:\mathbb Q])}
+    =\frac{\ell^2-1}{\ell^6[K_C(E_0[\ell]):K_C]}.              \tag{5.2}
+\]
+
+There is no uniformity in `C`, its Kummer bound, the chosen auxiliary
+prime or this relative density.
+
+For example, `C` may be a prescribed finite Galois compositum of
+torsion and division fields on this good-at-three curve whose
+multipliers are prime to three: Milne AVs Corollary 20.8 verifies
+the required unramifiedness. Including `Q(E_0[m])` for `3` prime
+to `m` also imposes `p=1 mod m`: this torsion field contains
+`mu_m` by the nondegenerate Galois-equivariant Weil pairing and
+canonical elliptic selfduality. The exact retained pairing interface
+is Milne AVs, section 16 opening, printed/PDF p.29. This example
+imposes full torsion splitting, which is stronger than only the
+congruence.
+
+The unramifiedness hypothesis cannot simply be dropped. If `C`
+contains `Q(zeta_3)`, complete splitting in `C` forces
+`p=1 mod3`, which is incompatible with the desired active primes.
+In particular the full third-division field contains `zeta_3` by
+the same Weil pairing and is not covered by this corollary. No claim is
+made that unramifiedness at three is necessary for every individual
+extension, or that arbitrary finite-place prefix conditions can
+be encoded by the permitted splitting fields. This fixed-division-field
+argument provides no distribution bound for the varying-residue-prime
+formal depths `e_p,k_p`.

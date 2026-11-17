@@ -1,0 +1,635 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\C}{\mathbb C}
+\newcommand{\F}{\mathbb F}
+\title{Prime four-bridge knots with augmentation rank three}
+\author{}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give an explicit twist family of prime knots with meridional rank and
+bridge number four, complex augmentation rank three, and crossing number
+$17+6n$ for every integer $n\ge0$. Their genera are $7+3n$.
+A full alternating-group quotient survives the twists, while a local
+rank-one obstruction survives because Hurwitz moves preserve the ordered
+product. An explicit three-dimensional finite reflection image attains
+the augmentation bound. A nondegenerate extension of a possibly singular
+Gram form also bounds every Coxeter reflection-class quotient by three
+generators. Thus neither one such Coxeter quotient nor one finite complex
+rank-one reflection image gives the sharp meridional lower bound for
+these prime knots. Connected sums with trefoils retain a gap of one.
+\end{abstract}
+
+Let $G_K=\pi_1(S^3\setminus K)$, let $\mr(K)$ denote the minimum number
+of meridians generating $G_K$, and let $b(K)$ be bridge number. Ordinary
+complex augmentation rank is denoted $\ar(K,\C)$; we use field-valued
+$U=1$ cord augmentations with meridian value different from one and
+arbitrary nonzero longitude value, as in Cornwell
+\cite[Definition~1.8]{cornwell}.
+For an integer $n\ge0$, define $K_n$ to be the closure of
+\begin{equation}\label{eq:braid}
+ \beta_n=\sigma_1\sigma_2\sigma_3^{-2}\sigma_2
+ \sigma_3^{-2}\sigma_2\sigma_1^2\sigma_2^3
+ \sigma_3^{-1}\sigma_2^{3+6n}\ \in B_4.
+\end{equation}
+
+\begin{theorem}\label{thm:main}
+For every integer $n\ge0$, $K_n$ is a prime knot and
+\[
+ \mr(K_n)=b(K_n)=4,\qquad g(K_n)=7+3n,\qquad c(K_n)=17+6n,
+ \qquad \ar(K_n,\C)=3.
+\]
+The largest meridian-class generating rank supplied by a finite complex
+image whose meridian displacement has rank one is exactly three.
+Every Coxeter quotient taking meridians to reflections has Coxeter rank
+and meridian-class generating rank at most three; the Coxeter group need
+not be finite.
+\end{theorem}
+
+The obstruction behind the theorem compares the root span and the
+covector span independently. Four independent roots and four independent
+covectors would force two local folds, leaving a fixed three-direction
+system known to be inconsistent. The apparent dependence on the last
+three crossings disappears: the remaining tail preserves an ordered
+product, so the same contradiction holds for every tail in
+\eqref{eq:braid}. The twist length is chosen to preserve a separate full
+$A_8$ quotient and a positive three-dimensional representation.
+Primeness follows from the homogeneous braid theorem of Feller,
+Lewark and Orbegozo Rodriguez \cite{flo}, using two run counts which
+do not change under these twists.
+
+Strict augmentation gaps themselves precede this construction:
+Cornwell's Corollary~1.12 gives augmentation rank two and meridional rank
+three for several knots \cite{cornwell}. The contribution here is this
+explicit prime family, its uniform paired-span obstruction, and the
+extension of that obstruction to singular canonical Coxeter forms.
+The finite complex comparison theorem \cite[Theorem
+\texttt{thm:domination}]{domination} supplies the finite-class consequence;
+it is not a new classification theorem about finite reflection groups.
+We do not assert hyperbolicity or a non-graph double branched cover for
+every member of the family.
+
+\section{The alternating-group quotient and four bridges}
+
+Use the literal strand convention
+\begin{equation}\label{eq:hurwitz}
+ T(a,b)=(b,b^{-1}ab)\quad\text{for }\sigma_i,
+ \qquad H(a,b)=(aba^{-1},a)\quad\text{for }\sigma_i^{-1}.
+\end{equation}
+These are inverse maps and preserve the ordered product $ab$.
+For involutions, putting $q=ab$ gives
+\[
+ H^k(a,b)=(q^ka,q^{k-1}a).
+\]
+This follows for $k=0$ and is preserved by one substitution. In
+particular $q^d=1$ implies $H^d=T^d=1$ on this pair.
+
+Place the following permutations on the four top strands, with
+permutations composed from right to left:
+\begin{equation}\label{eq:a8}
+ x_0=(01)(23),\quad x_1=(14)(23),\quad
+ x_2=(05)(16),\quad x_3=(12)(67).
+\end{equation}
+They generate $A_8$. One exact certificate is breadth-first enumeration
+of their products: it gives $20160=|A_8|$ distinct even permutations.
+This is a finite exhaustive computation on explicitly specified
+permutations, reproduced by the accompanying verifier.
+Let $U$ be the first fourteen letters of $\beta_n$. At the end of $U$
+the middle pair in this action is
+\[
+ a=(05)(14),\qquad b=(16)(23),\qquad
+ ab=(05)(164)(23),
+\]
+whose product has order six. The four labels return after $U\sigma_2^3$;
+this too is a direct substitution in \eqref{eq:hurwitz}.
+The period-six identity proves return for $U\sigma_2^{3+6n}$ for every
+$n\ge0$. Thus \eqref{eq:a8} defines a surjection
+$G_{K_n}\twoheadrightarrow A_8$ taking meridians into the class $C$
+of double transpositions.
+
+Three double transpositions cannot generate a transitive group on eight
+points. Indeed, their six transposition factors provide at most six
+edges in a graph on eight vertices, so the graph is disconnected and
+its components are preserved. The four displayed permutations do
+generate $A_8$; consequently $d_C(A_8)=4$, and $\mr(K_n)\ge4$.
+The permutation of $\beta_0$ is a four-cycle. Adding six adjacent
+transpositions leaves it unchanged, so every closure is connected.
+The elementary closed-braid bridge bound gives
+$\mr(K_n)\le b(K_n)\le4$, proving equality. In particular the braid
+index is also four.
+
+\section{Primeness and exact size}
+
+All appearances of $\sigma_1,\sigma_2$ in \eqref{eq:braid} are positive,
+and all appearances of $\sigma_3$ are negative, so the braid word is
+homogeneous. For $i=2,3$, delete all letters except those indexed $i-1$
+or $i$ and count the alternating nonempty runs of equal generator
+indices, linearly in the written word. The restricted words have run
+patterns
+\[
+ 1\mid2^3\mid1^2\mid2^{6+6n},\qquad
+ 2\mid3^2\mid2\mid3^2\mid2^4\mid3\mid2^{3+6n},
+\]
+respectively, with signs suppressed. Hence $g_2=4$ and $g_3=7$ for
+all $n$. Lemma~5.1(i) of \cite[printed p.~20]{flo} says that the braid
+diagram admits a decomposition circle precisely when some such count
+is two or three. There is no decomposition circle here. Theorem~1.1 of
+\cite[printed p.~1]{flo} states that a nonprime homogeneous braid closure
+has such a circle in this diagram. Thus $K_n$ is prime. It is nontrivial
+because its bridge number is four. These are linear run counts; joining
+the beginning and end of a restricted word would give the wrong test.
+
+We record a uniform Alexander identity, both to distinguish the knots
+and to determine their genus without a genus-minimality import for
+homogeneous diagrams. Write
+\begin{align*}
+ P(t)&=1-3t+4t^2-8t^4+18t^5-21t^6+15t^7-6t^8+t^9,\\
+ P^*(t)&=t^9P(t^{-1}).
+\end{align*}
+\begin{lemma}\label{lem:alexander}
+The reciprocal normalization with constant coefficient one is
+\begin{equation}\label{eq:alexander}
+ \Delta_{K_n}(t)=\frac{P(t)+t^{6n+6}P^*(t)}{1+t}.
+\end{equation}
+Its degree is $14+6n$, its value at one is one, and its determinant is
+$117+366n$.
+\end{lemma}
+\begin{proof}
+We give the symbolic calculation underlying all parameter values.
+Let $G_i(t)$ be the identity matrix of order four with its $i,i+1$ block
+replaced by
+\[
+ \begin{pmatrix}1-t&t\\1&0\end{pmatrix},
+\]
+and form $B_U$ by multiplying the fourteen matrices for $U$ from left
+to right, using $G_i^{-1}$ for negative letters.
+Put $N=G_2-I$. Direct multiplication gives
+\[
+ N^2=-(1+t)N,\qquad
+ G_2^k=I+S_kN,\qquad S_k=\sum_{j=0}^{k-1}(-t)^j.
+\]
+The second identity follows by induction. Since $N$ has rank one, the
+cofactor obtained by deleting the last row and column of
+$I-B_U(I+sN)$ is affine in the indeterminate $s$, say $A+sB$.
+Exact Laurent multiplication gives
+\begin{align*}
+ A&=-\frac{(t-1)(t^2-t+1)
+ (t^8-2t^7+2t^6+t^4+2t^2-2t+1)}{t^2},\\
+ B&=tP^*(t),\qquad t^2\big((1+t)A+B\big)=P(t).
+\end{align*}
+These identities are also verified as polynomial identities in the
+supplement, before any parameter is substituted. For $k=3+6n$,
+$S_k=(1+t^k)/(1+t)$, and therefore
+\[
+ t^2(A+S_kB)=\frac{P(t)+t^{k+3}P^*(t)}{1+t}.
+\]
+
+For completeness, this cofactor computes the knot Alexander polynomial
+up to a Laurent unit. The Fox Jacobian of the Artin map $H$ in
+\eqref{eq:hurwitz}, after abelianizing every meridian to $t$, is the
+displayed $G_i$ block. Chronological application of the literal maps
+$T$ gives the Jacobian $B^{-1}$, where $B=B_UG_2^k$.
+The closed-braid presentation identifies the four final generators
+with the four initial ones. Its product-preserving Artin action makes
+one of these four relations redundant. Deleting that relation and one
+generator column gives an Alexander cofactor of $I-B^{-1}$.
+Since $\det B$ is a Laurent unit and
+\[
+ \operatorname{adj}(I-B^{-1})=-\det(B)^{-1}\operatorname{adj}(I-B)
+\]
+for these four by four matrices, the cofactor of $I-B$ computes the
+same polynomial up to a Laurent unit. The adjugate identity follows
+from $I-B^{-1}=-B^{-1}(I-B)$ and
+$\operatorname{adj}(I-B)B=\operatorname{adj}(I-B)$.
+The latter holds because $I-B$ is singular: each $G_i$ fixes the all-one
+column. This also explains the convention choice without changing the
+knot.
+
+The numerator of \eqref{eq:alexander} vanishes at $-1$, since
+$P(-1)=-61$ and $P^*(-1)=61$. It is reciprocal of degree $15+6n$,
+with constant and highest coefficient one, so division by $1+t$ gives
+a reciprocal polynomial of degree $14+6n$ with the stated ends.
+Its value at one is $P(1)=1$. Differentiating the numerator at $-1$
+gives $\Delta_{K_n}(-1)=-117-366n$, proving the determinant formula.
+\end{proof}
+
+The Alexander genus bound now gives $g(K_n)\ge7+3n$.
+The standard braid Seifert surface has four disks and $17+6n$ bands,
+so its genus is $(17+6n-4+1)/2=7+3n$, giving equality.
+For any oriented diagram with $c$ crossings and $s$ Seifert circles,
+its canonical surface gives $c\ge2g(K_n)+s-1$.
+Yamada's theorem \cite[Theorem~3, printed p.~347]{yamada} identifies the
+minimum possible $s$ with braid index, which is four here. Thus every
+diagram has at least $17+6n$ crossings, and \eqref{eq:braid} attains
+this bound. In particular the prime knots $K_n$ are pairwise distinct.
+
+\section{The uniform rank-one obstruction}
+
+Let $\rho:G_{K_n}\to GL(V)$ be any finite-dimensional representation
+over a field $k$ whose meridian displacement has rank one. All meridian
+matrices have a common nonzero determinant $\mu$. Write
+\[
+ M_i=I-u_if_i,\qquad f_i(u_i)=1-\mu,
+\]
+where $u_i$ and $f_i$ are nonzero. Pairs can be rescaled as
+$(u_i,f_i)\mapsto(\lambda u_i,\lambda^{-1}f_i)$.
+Let $r$ be the dimension of the span of all meridian roots, and $q$
+the dimension of the span of all meridian covectors. Equivalently
+$r=\dim\sum_g\operatorname{im}(\rho(g)-I)$ and
+$q=\operatorname{codim}V^{G_{K_n}}$.
+
+\begin{theorem}\label{thm:paired}
+For every field, every $n\ge0$, and every such representation,
+\[
+ r\le4,\qquad q\le4,\qquad \min(r,q)\le3,\qquad r+q\le7.
+\]
+No irreducibility, preserved form or nonsingular evaluation matrix is
+assumed, and $\mu=1$ is permitted.
+\end{theorem}
+\begin{proof}
+The four initial meridians generate the closed-braid group, so their
+root and covector spans are invariant under them and their inverses.
+They contain the root and covector of every conjugate meridian;
+therefore $r,q\le4$. Suppose both dimensions were four.
+We will force a fixed three-dimensional contradiction.
+
+Here is a label table for the fourteen-letter prefix. A row
+$(o,a,b,\varepsilon)$ means $M_b=M_o^\varepsilon M_aM_o^{-\varepsilon}$.
+The initial strand labels are $(1,0,8,13)$.
+\[
+\begin{array}{c|rrrr@{\qquad}c|rrrr}
+0&0&1&2&-&1&8&2&3&-\\
+2&3&13&14&+&3&14&3&4&+\\
+4&4&8&9&-&5&9&14&15&+\\
+6&15&9&10&+&7&10&4&5&-\\
+8&10&0&1&-&9&1&10&11&-\\
+10&5&11&12&-&11&12&5&6&-\\
+12&6&12&13&-&13&13&15&16&+
+\end{array}
+\]
+The final labels of this prefix are $(1,6,16,13)$; the outer labels are
+identified by closure because the tail touches only positions two and
+three. The two occurrences of label $13$, and likewise those of $1$,
+express precisely these outer closure relations, independently of the
+length of the tail.
+
+Put $A=M_2$, $B=M_8$, $C=M_{13}$, $D=M_0$.
+Replacing initial $M_1$ with $A=D^{-1}M_1D$ is a triangular change in
+both root and covector families, with diagonal entries one. Thus the
+four pairs for $A,B,C,D$ remain independent separately.
+Let $H$ be the root span of $A,B,C$ and $F$ their covector span.
+Write $D=(v,\delta)$, so $v\notin H$ and $\delta\notin F$.
+Rows $1$ through $7$ and row $13$ generate pairs in $H,F$; in particular
+this applies to $X=M_{10}$, $P=M_5$ and $Y=M_{16}$.
+
+The first two folds are written explicitly here to record their
+independence of the tail and of the parameter $1-\mu$.
+Rows $0,8$ give $DAD^{-1}=X^{-1}DX$. If the pairs of $A,X$ are
+$(a,f),(x,\xi)$, equality of the nonzero rank-one operators gives some
+$\lambda\ne0$ with
+\begin{align*}
+ a-\delta(a)v&=\lambda(v+\mu^{-1}\xi(v)x),\\
+ f+\mu^{-1}f(v)\delta&=\lambda^{-1}(\delta-\delta(x)\xi).
+\end{align*}
+Comparing components outside $H,F$ gives
+$\lambda=-\delta(a)$ and $f(v)=\mu\lambda^{-1}$.
+The remaining components yield
+\[
+ a=\lambda\mu^{-1}\xi(v)x,\quad
+ f=-\lambda^{-1}\delta(x)\xi,\quad
+ \delta(x)\xi(v)=-\mu.
+\]
+Multiplying proves $af=x\xi$, so $X=A$. The group relation becomes
+$DAD=ADA$, which also gives $M_{11}=D$ from row $9$.
+
+Rows $10,11,12$ are three maps $T$:
+\[
+ (D,P)\longmapsto(P,N)\longmapsto(N,Q)\longmapsto(Q,C),
+ \quad N=M_{12},\quad Q=M_6.
+\]
+Choose the pair of $P$ as $(p,\pi)$ in $H,F$, and put
+$x=\pi(v)$, $y=\delta(p)$, $h=1+xy/\mu$.
+Direct rank-one conjugation gives
+\[
+\begin{array}{c|c|c}
+ &\text{root}&\text{covector}\\\hline
+N&v+(x/\mu)p&\delta-y\pi\\
+Q&yv+hp&-(x/\mu)\delta+h\pi\\
+C&hv+(x/\mu)(1+h)p&h\delta-y(1+h)\pi.
+\end{array}
+\]
+The pair on $C$ differs from its seed pair by at most reciprocal
+nonzero scaling. Its root lies in $H$ and its covector lies in $F$.
+Either fourth component gives $h=0$. Hence $xy=-\mu$, with $x,y$
+nonzero. The last two rows then give $Q=D$ and $P=C$ as matrices.
+These comparisons never divide by $1-\mu$.
+
+The prefix middle pair is now $(D,Y)$, and closure requires its tail
+image to be $(D,B)$. Each of the $3+6n$ maps $T$ preserves the ordered
+product. Consequently
+\[
+                    DY=DB,\qquad\text{so }Y=B.
+\]
+This cancellation replaces any argument restricted to three tail
+crossings. It is valid for the entire family.
+
+The remaining relations are exactly
+\begin{equation}\label{eq:core}
+\begin{array}{rrrr}
+(8,2,3,-),&(3,13,14,+),&(14,3,4,+),&(4,8,9,-),\\
+(9,14,15,+),&(15,9,2,+),&(2,4,13,-),&(13,15,8,+).
+\end{array}
+\end{equation}
+Under the bijection
+\[
+\begin{array}{c|rrrrrrrr}
+\text{here}&2&3&4&8&9&13&14&15\\\hline
+\text{reduced system}&11&10&9&0&12&8&6&5
+\end{array}
+\]
+these are the reduced $13a_{392}$ equations of
+\cite[Lemma \texttt{lem:cores}, $392$ case]{extensions}, with
+$0=4$ and $6=7$ there. Solving a row for the other under-arc reverses
+its sign; no field parameter is inverted.
+All eight core pairs lie in $H,F$, and the core contains the original
+independent triples $A,B,C$. Both full core spans thus have dimension
+three. The reduced system's standard triple on arcs $0,6,12$
+propagates all eight pairs, so its root and covector spans are
+independent separately as well. The cited paired-span lemma forbids
+precisely this simultaneous dimension-three situation, over every
+field and every $\mu\ne0$. This uses its $392$ case alone, including
+$\mu=1$; it is stronger than just a three-dimensional irreducibility
+obstruction. We obtain a contradiction and hence $\min(r,q)\le3$.
+Together with $r,q\le4$ this gives $r+q\le7$.
+\end{proof}
+
+For an irreducible representation the nonzero displacement span is
+all of $V$ and the common fixed subspace is zero. Thus $r=q=\dim V$,
+and Theorem~\ref{thm:paired} gives dimension at most three.
+Cornwell's arbitrary-field augmentation-to-irreducible-KCH
+correspondence \cite[Theorem~1.2 and Definition~1.8]{cornwell} therefore
+bounds every admitted augmentation rank by three over every field.
+For a completely reducible representation exactly one irreducible
+summand can have nonzero meridian displacement. All other summands
+are trivial by meridional normal generation. In particular this
+applies to finite complex images and gives $r=q\le3$ there.
+
+\section{An attaining representation}
+
+Set $\phi^2=\phi+1$ with $\phi=(1+\sqrt5)/2$ and put
+\[
+ u=(-2,0,0),\quad v=(-1,\phi-1,-\phi),\quad
+ w=(\phi-1,\phi,-1).
+\]
+Each vector has squared Euclidean norm four. For such a vector define
+$R_z=I-zz^{\mathsf T}/2$. Place
+\[
+                 (R_u,R_v,R_w,R_w)
+\]
+on the four top strands. Substitution in \eqref{eq:hurwitz} gives
+exactly the same tuple after the prefix $U$.
+Also $(R_vR_w)^3=I$, with $R_vR_w\ne I$; this follows either by
+multiplying the three by three matrices or by $v\cdot w=2$ and the
+norms four. Thus $T^3$ fixes the middle pair, and every tail
+$T^{3+6n}$ fixes it. This constructs a representation of every $G_{K_n}$
+with meridian parameter $-1$.
+
+The three vectors form a basis with determinant $-4$, and their
+nonorthogonality graph is connected. An invariant subspace has an
+invariant orthogonal complement, because these matrices are unitary.
+Each reflection root lies wholly in one of the two summands; connected
+nonorthogonality forces all three basis roots into the same summand.
+This proves complex irreducibility and dimension three.
+Cornwell's correspondence gives $\ar(K_n,\C)\ge3$, completing the
+augmentation equality.
+
+Finiteness and the class bound can be checked without a group name.
+The matrices preserve the following set of thirty vectors:
+\[
+ \mathcal R=\{(\pm2,0,0)\text{ and its cyclic shifts}\}
+ \ \cup\ \{\text{cyclic shifts of }(\pm1,\pm(\phi-1),\pm\phi)\}.
+\]
+All eight choices of signs occur in the second set. The action is
+faithful because $\mathcal R$ spans. Exact enumeration gives image
+order $120$ and a single class of fifteen reflections, one per root
+line. Its three displayed generators generate the image, whereas
+every pair of the fifteen reflections generates a subgroup of order
+at most ten. Thus this meridian class has generating rank three.
+The finite complex domination theorem
+\cite[Theorem \texttt{thm:domination}]{domination} bounds the class rank
+of every finite complex rank-one-meridian image by augmentation rank.
+The largest such bound for each $K_n$ is consequently exactly three.
+
+\section{Singular Gram forms and infinite Coxeter quotients}
+
+A restriction to nonsingular evaluation matrices would leave a gap for
+canonical forms of infinite Coxeter groups. The next elementary
+extension removes that restriction.
+
+\begin{lemma}[Extending a normalized reflection system]\label{lem:lift}
+Let $k$ have characteristic different from two. Suppose knot meridian
+matrices are normalized symmetric-form reflections
+\[
+ R_a(z)=z-B(a,z)a,\qquad B(a,a)=2,
+\]
+for one symmetric form $B$, possibly singular. Let $S$ be their
+finite-dimensional total root span, of dimension $r$. There is a
+representation of the same knot group on a space of dimension $2r$
+preserving a nondegenerate symmetric form, whose meridian roots have
+span dimension $r$ and whose meridian covectors also have span
+dimension $r$. This representation need not factor through the
+original image group.
+\end{lemma}
+\begin{proof}
+Each $R_a$ preserves $B$ and is its own inverse. Conjugation gives
+$R_aR_bR_a=R_{R_ab}$. In a Wirtinger relation this equals the
+reflection $R_c$. Equality of the nonzero rank-one displacements
+implies $c=\lambda R_ab$. Both roots have norm two, so $\lambda^2=1$,
+even when $B$ is singular. Thus every crossing relation is the root
+identity $c=\pm R_ab$.
+
+Choose a basis of $S$ and let its Gram matrix be $G$. On $S\oplus S^*$
+use
+\[
+ \widetilde B=\begin{pmatrix}G&I\\I&0\end{pmatrix},\qquad
+ \widetilde B^{-1}=\begin{pmatrix}0&I\\I&-G\end{pmatrix}.
+\]
+Keep all roots in the first summand. Their norms and their mutual
+pairings are unchanged. Every crossing root identity therefore
+remains true, and the extended reflections satisfy the full
+Wirtinger presentation. Nondegeneracy makes the map from a root to
+its covector injective; hence both spans have dimension $r$.
+\end{proof}
+
+\begin{corollary}\label{cor:coxeter}
+For every $n\ge0$, any representation of $G_{K_n}$ by normalized
+reflections in one symmetric form over a field of characteristic
+different from two has total root span at most three. In particular
+every surjective Coxeter reflection-class quotient of $G_{K_n}$ has
+Coxeter rank and meridian-class generating rank at most three.
+\end{corollary}
+\begin{proof}
+The four generating meridians make the root span at most four, even
+if the ambient space has infinite dimension. If it were four,
+Lemma~\ref{lem:lift} would give an eight-dimensional representation
+with $r=q=4$, contrary to Theorem~\ref{thm:paired}.
+
+For a Coxeter quotient use its canonical real geometric
+representation, with simple roots normalized to norm two; this form
+may be singular \cite{davis}. Let $S$ be the span of the roots of four
+generating meridian reflections. It is stable under their reflections,
+and the whole image acts trivially on the quotient by $S$. Thus every
+simple reflection acts trivially on that quotient. Its displacement
+image is its simple root line, so every simple root belongs to $S$.
+The simple roots are a basis, proving the Coxeter rank is at most
+three by the first assertion. This also covers a Coxeter system
+initially allowed to have infinitely many simple generators.
+
+The abelianization of a Coxeter group is one copy of $C_2$ per
+connected component of its odd-labelled diagram. A knot group is
+normally generated by one meridian, so its quotient's abelianization
+is cyclic; the odd diagram is connected. For an odd edge of label $m=2k+1$, the relation $(st)^m=1$ gives
+$(st)^k s(st)^{-k}=t$. Thus adjacent simple reflections along an
+odd edge are conjugate, and all simple reflections are conjugate.
+A reflection means a conjugate of a simple reflection. Therefore the
+meridian class contains the entire simple generating set and has
+generating rank at most three.
+\end{proof}
+
+The normalization in Lemma~\ref{lem:lift} is essential to its scope.
+It treats canonical Coxeter reflections and normalized symmetric
+reflection systems; it is not a statement about all rank-one
+isometries of arbitrary degenerate forms.
+
+\section{Adding trefoils}
+
+\begin{corollary}\label{cor:sums}
+For all integers $n,s\ge0$, let $J_{n,s}=K_n\#(\#^s3_1)$. Then
+\[
+ \mr(J_{n,s})=b(J_{n,s})=4+s,\qquad
+ \ar(J_{n,s},\C)=3+s.
+\]
+Every finite complex rank-one-meridian image has meridian-class
+rank at most $3+s$. Every Coxeter reflection-class quotient also has
+meridian-class rank at most $3+s$.
+\end{corollary}
+\begin{proof}
+Keep the transitive eight-sheet action \eqref{eq:a8}. Its meridian
+has six cycles and defect $\delta=8-6=2$. On each trefoil factor send
+all meridians to that same involution. The corresponding disconnected
+branched cover has two double-cover components and four one-sheet
+components. Each double cover of a trefoil has $\F_3$ first homology
+of dimension one: the trefoil orbifold group
+$\langle a,b\mid a^2=b^2=(ab)^3=1\rangle$ is $S_3$, with even
+kernel $C_3$.
+The sum sphere lifts to six spheres joining the connected seed cover
+to these six components in a star tree. Mayer--Vietoris therefore
+adds two to first homology per trefoil. If the seed dimension is
+$h_n\ge0$, the sum cover has dimension $h_n+2s$.
+The arbitrary-cycle branched-cover rank inequality
+\cite[Theorem \texttt{thm:general}]{cover} gives
+\[
+ \mr(J_{n,s})\ge\left\lceil\frac{8-1+h_n+2s}{2}\right\rceil
+ \ge4+s.
+\]
+Joining bridge presentations gives $b(J_{n,s})\le4+s$.
+
+Cornwell's connected-sum theorem
+\cite[Theorem~1.9]{cornwell} bounds augmentation rank above by the sum
+of the two ranks minus one, and constructs an attaining representation
+when the factors have attaining KCH representations with the same
+meridian parameter. The preceding rank-three representation has
+parameter $-1$. A rank-two trefoil representation with this parameter
+is given by
+\[
+ A=\begin{pmatrix}-1&1\\0&1\end{pmatrix},\qquad
+ B=\begin{pmatrix}1&0\\1&-1\end{pmatrix}.
+\]
+They satisfy $ABA=BAB$ and generate the full two by two matrix algebra,
+so they are irreducible. Iteration proves augmentation rank $3+s$.
+Finite complex domination then gives the stated finite-class upper
+bound.
+
+For a Coxeter quotient, the root span contributed by the $K_n$ factor
+is at most three by Corollary~\ref{cor:coxeter}, applied to its
+restricted normalized reflection system. A trefoil group is generated
+by two meridians, one identified with a meridian of the existing sum.
+It adds at most one new root direction. Thus the entire root span is
+at most $3+s$. The invariant-span argument in the preceding corollary
+bounds Coxeter rank by $3+s$, and the same connected odd-diagram
+argument bounds the generating rank of the meridian class.
+\end{proof}
+
+\section{Exact verification and dependencies}
+
+The finite data supplement contains the literal fourteen-letter prefix,
+step-six tail rule, four permutations \eqref{eq:a8}, the three-dimensional
+roots, and the coefficients of $P$. Its standard-library verifier
+checks the full $A_8$ enumeration, the two exact pair periods, formal
+Laurent polynomial identities before parameter substitution, prefix
+signed labels, the first two fold identities and the exact reduced
+core bijection. It checks the inverse of the extended Gram matrix
+symbolically. Rejected corrupt controls alter a tail period, a
+permutation, an Alexander coefficient, a run count, a prefix label,
+and a positive root. Optional topology replay reconstructs selected
+literal braid closures independently. Representative values test
+implementation; the universal statements use the period induction,
+affine cofactor identity, ordered-product cancellation, and written
+Gram extension.
+
+The essential imported mathematical conclusions are the $392$ paired
+contradiction, the published homogeneous-braid primeness theorem,
+Yamada's theorem, Cornwell's correspondence and sum theorem, the
+branched-cover rank inequality, and the finite complex domination
+theorem. The accompanying receipt identifies exact source editions and
+separates exact replay from these written premises. The assertion about
+all Coxeter targets uses the new Gram extension rather than any unit
+ideal computation at the initial parameter. No formal verification,
+external specialist review or worldwide-priority assertion is implied.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+
+\begin{thebibliography}{9}\small
+\bibitem{flo} P.~Feller, L.~Lewark and M.~Orbegozo Rodriguez,
+\emph{Homogeneous braids are visually prime}, J.~Topology 18 (2025),
+e70040, \href{https://doi.org/10.1112/topo.70040}{doi:10.1112/topo.70040}.
+Retained arXiv:2408.15730v2 (30 September 2025), Theorem~1.1,
+\S5.1--5.2 and Lemma~5.1(i).
+\bibitem{yamada} S.~Yamada, \emph{The minimal number of Seifert circles
+equals the braid index of a link}, Invent.~Math.~89 (1987), 347--356,
+Theorem~3, printed p.~347.
+\bibitem{cornwell} C.~R.~Cornwell, \emph{KCH representations,
+augmentations, and $A$-polynomials}, J.~Symplectic Geom.~15 (2017),
+983--1017. Retained arXiv:1310.7526v3, Theorems~1.2 and~1.9,
+Definition~1.8 and Corollary~1.12.
+\bibitem{extensions} \emph{Signed generic rank-one obstructions for
+sixteen knots}, companion \path{GENERIC_KCH_EXTENSIONS.tex},
+Lemma \texttt{lem:cores}, $392$ subcase only.
+\bibitem{domination} \emph{Finite complex reflection-class bounds are
+dominated by augmentation rank}, companion
+\path{FINITE_COMPLEX_AUGMENTATION_DOMINATION.tex},
+Theorem \texttt{thm:domination}.
+\bibitem{cover} \emph{Meridional rank bounds from arbitrary-cycle
+branched covers}, companion
+\path{GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex},
+Theorem \texttt{thm:general}.
+\bibitem{davis} M.~W.~Davis, \emph{The Geometry and Topology of
+Coxeter Groups}, second edition, 2025. Canonical geometric
+representation: \S6.12, equations (6.32)--(6.33), Lemma~6.12.3
+and Corollary~6.12.4, printed pp.~108--109 (PDF pp.~127--128).
+Only existence and the simple-root basis are used, not faithfulness.
+\end{thebibliography}
+\end{document}

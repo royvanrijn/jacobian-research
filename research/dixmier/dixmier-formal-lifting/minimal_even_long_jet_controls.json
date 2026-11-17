@@ -1,0 +1,62 @@
+{
+  "claim": "Sharp even graded h5 spatial minimum27; actual positive jet; fixed-g0 entire F4 family fails h7 at cap27",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Python integers and Fraction; no algebraic/nullspace solver"
+  },
+  "prime": 1000003,
+  "fixed_F2_coefficients": 59,
+  "fixed_cap26_augmented_minor_size": 206,
+  "fixed_cap26_augmented_minor_det": 964926,
+  "positive_cap": 27,
+  "positive_F4_unknowns": 236,
+  "positive_F4_rank_Q": 235,
+  "positive_minor_size": 235,
+  "positive_minor_det": 326829,
+  "positive_F4_component_degrees": [
+    -1,
+    19,
+    27,
+    15
+  ],
+  "positive_F4_component_terms": [
+    0,
+    12,
+    59,
+    3
+  ],
+  "full_fixed_F4_family": "K+w*(0,0,-9R^8,0)",
+  "universal_h5_minimum": 27,
+  "universal_lower_bound_source": "GRADED_LONG_CAP26_EVEN_JET_OBSTRUCTION.md; imported theorem, not replayed by this checker",
+  "h7_fixed_lower_scope": {
+    "F6_unknowns": 91,
+    "F6_rank_Q": 91,
+    "minor_size": 91,
+    "minor_det": 395212,
+    "rhs_nonzeros": [
+      114,
+      0
+    ],
+    "free_F4_parameter_retained": true,
+    "functional_support": 72,
+    "functional_all91columns": 0,
+    "functional_constant_rhs": 1
+  },
+  "hashes": {
+    "MINIMAL_EVEN_LONG_JET_AND_FIXED_LOWER_OBSTRUCTION.md": "05e1b41ed4688ac639346a6ca811dadab973e594caee04f26d3ebf24716a3d3c",
+    "check_minimal_even_long_jet.py": "a7a4f839c499f9e0e89aa3c220379df0cb1e0a986f84bededc150e4f3c9f7a38",
+    "minimal_even_long_jet_witness.json": "ff229648462c2d5b6a4b3927d7392b98fbb2cdf485462cfe68fc091fd17e977c",
+    "graded_long_cap23_witness.json": "9f4523d1b776289095f908b19f82ed6297fa243c672904831f072ad7e727be34",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "GRADED_LONG_CAP26_EVEN_JET_OBSTRUCTION.md": "84219ac29c8cb358f7572a8c13dae5940525578d45b09621cbad4853bbd07942",
+    "check_graded_long_cap26_even.py": "3c27175e8b97dc6f9ad73e440ddfda4d15914bea49d98426947faf5d6569f9b7",
+    "graded_long_cap26_even_witness.json": "c72b14e49e6e512eefa22c3abf075ee636f3dc892d7df25ef4c41f9d004b5ba2",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "coverage_boundary": "Positive cap27 h5 point, complete F4 family for fixed retained g0, fixed-g0 cap26 inconsistency and cap27 h7 obstruction. Universal h5 minimum imports the separately pinned full cap26 theorem. No universal cap27 h7 or full-lift claim.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

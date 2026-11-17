@@ -1,0 +1,82 @@
+{
+  "claim": "Complete cap24 odd first kernel and h3 field classification, retaining both complex conjugates",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "arithmetic": "Python integers/Fraction; rational coefficient pairs for q^2=-2"
+  },
+  "cap": 24,
+  "h1_basis_counts": [
+    91,
+    127,
+    155,
+    114
+  ],
+  "h1_rank_Q": 479,
+  "h1_unknowns": 487,
+  "h1_rows": 2666,
+  "kernel_dimension": 8,
+  "h1_minor_size": 479,
+  "h1_minor_det_modp": 763154,
+  "h1_independence_size": 8,
+  "h1_independence_det_Q": "3440640",
+  "h2_basis_counts": [
+    62,
+    91,
+    114,
+    80
+  ],
+  "h2_rank_Q": 344,
+  "h2_unknowns": 347,
+  "h3_rows": 2137,
+  "h2_minor_size": 344,
+  "h2_minor_det_modp": 381548,
+  "prime": 1000003,
+  "functional_supports": [
+    327,
+    63,
+    62
+  ],
+  "necessary_polynomials": [
+    "d^2-250*d*f+35625*f^2",
+    "e^2",
+    "e*f"
+  ],
+  "particular_blocks_E": 11,
+  "particular_block_monomials": [
+    "1",
+    "a^2",
+    "a*b",
+    "a*c",
+    "b^2",
+    "b*c",
+    "c^2",
+    "a*z",
+    "b*z",
+    "c*z",
+    "z^2"
+  ],
+  "coefficient_pair_entries": 797,
+  "homogeneous_kernels": [
+    "R^3",
+    "R^4*S",
+    "X^3"
+  ],
+  "field": "E=Q(q),q^2=-2; both signs via q conjugation; z=0 included",
+  "branch_hamiltonian": "aY+bR^2*T+cH4+z*(H5new+(125+100q)*H6)",
+  "first_R": "(125+100q)*z*R0^4",
+  "second_R": "-(4800/7)*(1+2q)*z^2*R0^7",
+  "field_scope": "Characteristic-zero fields only. If -2 is not a square, d=f=e=0; otherwise both conjugate four-parameter branches are retained. No nonreduced-base classification.",
+  "coverage_boundary": "Complete first kernel and commutator-h3 compatibility, with full F2 families. No h4 compatibility, full bounded lift, evenization or DC1/DC2 claim.",
+  "hashes": {
+    "GRADED_LONG_CAP24_COMPLEX_FIRST_JET_FAMILY.md": "9fafbbc6ba32c5c2709c938847ba6be96a63fdaa13272e93d4eec7bb008b1ad8",
+    "check_graded_long_cap24_complex_family.py": "b9e9c398ff38512c280bdc9b2218cb5467cd723be252bf56b901a2c3ec974428",
+    "graded_long_cap24_complex_witness.json": "bd52afed86db0af1f0af1605cb1ad56fcf1ee1ff93e5800c3cb9d055c6f4e535",
+    "check_graded_long_cap23.py": "78bc02799a65b5587a6dad0672d72e74776f1a719430546f7e95dfe1ed8c3e62",
+    "check_long_graph_curvature.py": "3574e9a9fbfd9e19251709a6af9759909ed09a4f960a44df60e35a4480e04a0f",
+    "../dixmier-audit/verify_long_pbw.py": "0fd237f4954b4a45260b65ffef2e973e1f253e3b359e440da7d0cc6dbdd06eed"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

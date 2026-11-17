@@ -240,22 +240,29 @@ RDF1. \(\square\)
 The focused unresolved question is whether infinitely many points of
 this **existing** elliptic slice pass (3.1), equivalently whether its
 everywhere locally soluble, globally insoluble target count `A_E(B)`
-tends to infinity. The certified point (1.1), EEC1 and the joint local sieve give
+tends to infinity. The certified point (1.1), EEC1 and the
+[complete five-prime joint sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_5_11_17_SIEVE.md)
+give
 
 \[
- 1\le A_E(B)\le\frac{1687}{6936}C_E\log B+O_E(\sqrt{\log B})
+ 1\le A_E(B)\le\frac{116302241}{531619620}C_E\log B+O_E(\sqrt{\log B})
                 \qquad\text{for sufficiently large }B.         \tag{4.1}
 \]
 
-The [joint local sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md)
+For comparison, the earlier
+[joint local sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md)
 gives the exact local-only coefficient `5321/23946` at `2,3,17`.
 The [sharp error theorem](ELLIPTIC_EXCEPTION_SHARP_FINITE_LOCAL_ERROR.md),
 ESQ3--ESQ4, upgrades this to the Hasse upper bound
 `A_E(B)<=(5321/23946) C_E log B+O_E(sqrt(log B))`.
-The [five-adic refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md)
-improves the coefficient to `2300089/10392564` at the same error
-order. It multiplies the class-one coefficient by `16/31` and
-leaves the other three coefficients unchanged.
+The [four-prime five-adic refinement](ELLIPTIC_EXCEPTION_JOINT_2_3_5_17_SIEVE.md)
+has exact coefficient `2300089/10392564` for `2,3,5,17`, at the
+same error order. It multiplies the class-one coefficient by
+`16/31` and leaves the other three coefficients unchanged.
+The complete test at eleven then multiplies the class-one and
+class-`5p_0` coefficients by `533/665`, leaving the other two
+unchanged. J23511173 gives the resulting five-prime coefficient
+`116302241/531619620` used in (4.1).
 The certified quadratic field has upper coefficient `1/8` at the
 same error order. The [explicit local criterion](ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md)
 replaces the varying tame tests by `v_p(128x-25865)=0 mod3` at every

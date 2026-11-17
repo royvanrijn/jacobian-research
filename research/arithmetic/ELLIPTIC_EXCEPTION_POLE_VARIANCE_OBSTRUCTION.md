@@ -251,7 +251,93 @@ probability. An all-class or fixed-class conclusion requires the
 appropriate coverage by cosets where a recurrence criterion has
 actually been proved.
 
-## 4. Scope of the obstruction
+## 4. The obstruction can persist inside every origin subgroup
+
+**Theorem EVO4 (even reduction images after finite-index restriction).**
+For every finite-index subgroup `U subset Gamma`, there is a
+positive-natural-density set of good primes `p=2 mod3` for which
+the reduction image `U_p` has even order. For finite nonnegative
+pole-weight sums on these primes, normalized Haar measure on
+`widehat(U)` satisfies
+
+\[
+ \operatorname{Var}_U(S)\ge
+       \frac{(\mathbb E_U S)^2}{|U/2U|-1}.           \tag{4.1}
+\]
+
+In particular this constant is `1/3` when `U` is torsionfree, as
+for `U=[M]Gamma` with `M` even. The unweighted pole-return means
+on this prime set diverge. No almost-sure recurrence or failure
+of recurrence is asserted.
+
+**Proof.** Fix a nontorsion point `W in U`. Its multiples are
+Zariski dense in the elliptic curve. The Kummer interface of
+Corvaja--Demeio--Javanpeykar--Lombardo--Zannier, *On the distribution
+of rational points on ramified covers of abelian varieties*,
+Compositio Mathematica **158** (2022), 2109--2155, Theorem 6.9,
+printed p.2144 (PDF p.37), gives a constant `c` bounding the index
+of the translation kernel in `E[2^n]`, independently of `n`.
+Remark 6.10 permits a divisible point `W`. The definitions of the
+kernel and its action are equation (13), printed pp.2142--2143:
+[published primary](https://doi.org/10.1112/S0010437X22007746),
+[retained PDF](sources/cdjlz-2022-ramified-covers.pdf),
+[version metadata](sources/cdjlz-2022-ramified-covers.json).
+
+Choose `n` with `4^n>c` and put
+
+\[
+ M_n=\mathbb Q(E[2^n],[2^n]^{-1}W),\qquad
+ N_n=\operatorname{Gal}(M_n/\mathbb Q(E[2^n])).
+\]
+
+The kernel `N_n` is nontrivial and acts on the division fibre as
+pure translations. The set `N_n minus {1}` is nonempty and stable
+under conjugation in `Gal(M_n/Q)`.
+
+The field `M_n` is unramified at three. The curve has good
+reduction there, and multiplication by `2^n` is finite etale on
+its abelian scheme over the local integer ring. Properness extends
+`W` to a section, so the division fibre and its field are unramified.
+The exact primary statement is Milne, *Abelian Varieties*,
+January 2, 2022, Proposition 20.7 and Corollary 20.8, printed/PDF
+p.44, in the [retained source](sources/milne-abelian-varieties-2022.pdf).
+It applies without any assumption of integral affine coordinates.
+Therefore `M_n cap Q(zeta_3)=Q`, since the nontrivial quadratic
+field `Q(zeta_3)` ramifies at three.
+
+Chebotarev applied to
+
+\[
+ (N_n\setminus\{1\})\times\{\sigma\}
+ \subseteq\operatorname{Gal}(M_n/\mathbb Q)
+             \times\operatorname{Gal}(\mathbb Q(\zeta_3)/\mathbb Q),
+\]
+
+with `sigma` nontrivial, gives a positive-density prime set.
+The retained density input is Milne ANT300 Theorem 8.31, printed
+p.140, in [the primary text](sources/milne-ant300.pdf).
+Remove the finitely many bad primes and the primes `2,3`.
+At every remaining prime, Frobenius fixes all `2^n`-torsion and
+acts on the division fibre by a nonzero translation. Thus the
+reduced fibre has no fixed point and
+`bar W notin [2^n]E(F_p)`. If `bar W` had odd order, multiplication
+by `2^n` would be invertible on its cyclic subgroup, a contradiction.
+Hence `U_p` has even order at each of these active primes.
+
+Apply the quadratic-character proof of EVO1 to `U`, which has
+rank two and rational torsion of order either one or two. This
+gives (4.1). A torsionfree `U` has `|U/2U|=4`. Finally
+`|U_p|<=#E(F_p)<2p` at all large good primes, so the unweighted
+mean dominates a constant times the reciprocal-prime sum of this
+positive-density set, and diverges. \(\square\)
+
+The prime set depends on `U` and the chosen point `W`; no numerical
+Kummer bound or effective list of these primes is supplied. The
+theorem concerns the **origin subgroup** with its normalized Haar
+measure. A nonzero affine coset has the compatibility signs of
+EVO2 and is not covered by this variance conclusion.
+
+## 5. Scope of the obstruction
 
 The compulsory lower bound concerns **unconditioned pole returns
 with nonnegative weights**. Full branch-return hazards contain
@@ -263,7 +349,9 @@ second-moment hypothesis, not failure of recurrence or positivity
 of the all-primes measure.
 
 The rank, torsion and good-reduction inputs are already retained
-in the elliptic arithmetic and local-image notes. The proof here
-is finite-character orthogonality, a mean-square inequality and
-exact affine subgroup intersections; it needs no new finite checker.
-No formal verification or external review is claimed.
+in the elliptic arithmetic and local-image notes. The variance and
+affine-intersection proofs use finite-character orthogonality and
+elementary mean-square inequalities. EVO4 additionally imports the
+stated Kummer index, unramified division and Chebotarev theorems;
+their deep proofs are not replayed here. No new finite checker is
+needed, and no formal verification or external review is claimed.

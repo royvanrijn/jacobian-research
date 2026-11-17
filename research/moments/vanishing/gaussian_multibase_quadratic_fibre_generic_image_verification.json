@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "scope": "Bounded exact controls only; unrestricted selected-field theorem is established by the companion proof.",
+  "two_base_phase": "w1*(z1**2 + 1) + w2*(z1 + 1) + y**2*(z2 + 1) + y*(z1 + 1) + z2**2",
+  "ordinary_covariance": 2,
+  "selected_root_through_t3": [
+    "t**3 + t",
+    "t**2 + t"
+  ],
+  "selected_generic_rank": 2,
+  "original_frame": [
+    "Phi[1]",
+    "Phi[Z1]"
+  ],
+  "original_Wick_markers": [
+    "1",
+    "z1",
+    "z2",
+    "w1",
+    "w2",
+    "y",
+    "y**2",
+    "w1*y",
+    "w2*z1"
+  ],
+  "original_Wick_orders": [
+    0,
+    3
+  ],
+  "exact_Stein_coordinates": [
+    "z1",
+    "z2",
+    "w1",
+    "w2",
+    "y"
+  ],
+  "exact_connection_identity": true,
+  "variable_A_B_marking_commutator": true,
+  "extraneous_positive_dimensional_component": "h=(z1*z2,z2^2): selected0; other line z2=1/t",
+  "nonscalar_covariance_order_control": "S=(I-2tCA)^-1 C is symmetric; C(I-2tCA)^-1 differs",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "sha256": {
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_GENERIC_IMAGE.md": "3d10c2c80147b8c9e91eef6a77202f5fb27c0134fc9af583d5d37fdfa5dd1736",
+    "verify_gaussian_multibase_quadratic_fibre_generic_image.py": "4ff6653c5b7697cccb2979956d0fffc31e4c220d57fdda4315663076e0f32f28",
+    "GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md": "1449db0b915fd8abe58c627441e399a57446a7f0d8c98e2b715b780c50ca4492",
+    "GAUSSIAN_W_AFFINE_C_ZERO_GENERIC_IMAGE.md": "5378c337c29c2e56e391b0ed33481bdaa8c0836a65ae4774972aa7f273902fa1"
+  }
+}
