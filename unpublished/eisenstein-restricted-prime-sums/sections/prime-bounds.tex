@@ -1,0 +1,204 @@
+\section{Keeping the unwanted primes out}\label{sec:spectral}
+A norm representation is only a candidate. A prime $p\equiv2\pmod3$
+can occur to even exponent in an Eisenstein norm, and that already keeps
+the value out of $\AA$. The useful feature is that divisibility of the
+norm forces divisibility of both coordinates.
+
+For $p\in\PP$, the quotient $R/pR$ is a field, including when $p=2$.
+Therefore
+\begin{equation}\label{eq:anisotropic}
+p\mid Q(x,y)\quad\Longleftrightarrow\quad p\mid x\text{ and }p\mid y.
+\end{equation}
+We first establish the unfiltered Hecke estimate. Section~\ref{sec:odd-ramified}
+will impose oddness and derive the local bounds used in the sieve.
+
+\subsection{The finite quotient and its Hecke operator}
+Fix an odd $p\in\PP$, so $p\ge5$, and first suppose $p\nmid n$.
+Reduction gives $\OO/p\OO\simeq M_2(\F_p)$, with norm equal to determinant.
+Write
+\[
+G_p=\PGL_2(\F_p),\quad \Gamma_p=\rho_p(\OO^\times),\quad
+Y_p=\Gamma_p\backslash G_p.
+\]
+Only $\pm1$ among the units reduce to scalars, so
+$|\Gamma_p|=6$ and $|Y_p|=p(p^2-1)/6$. Equip $\C[Y_p]$ with counting
+measure and define
+\begin{equation}\label{eq:hecke}
+(T_nf)(\Gamma_p g)=\frac1{12}\sum_{\alpha\in\mathcal Q_n}
+f(\Gamma_p\rho_p(\alpha)g).
+\end{equation}
+Right multiplication by a unit permutes $\mathcal Q_n$, proving that this
+is well-defined. It commutes with the right $G_p$ action. Conjugation
+preserves $\mathcal Q_n$ and is projective inversion, so $T_n$ is
+self-adjoint. Also $T_n1=\sigma(n)1$.
+
+The determinant character
+$\chi_p(\Gamma_p g)=(\det(g)/p)$ is well-defined, because the units have
+norm one and scalar matrices have square determinant. Directly,
+$T_n\chi_p=(n/p)\sigma(n)\chi_p$.
+
+\subsection{The spectral bound}
+This is the main imported ingredient. It turns the large supply of norm
+representations into control of their distribution modulo a prime. The
+normalization matters, so we identify the concrete operator before using
+Jacquet--Langlands and the weight-two Ramanujan bound.
+
+There are three things to check: the finite operator must be the stated
+Hecke correspondence, the two large character components must be removed,
+and the remaining spectrum must transfer to weight two. The proof below
+checks these points in that order. Readers following the arithmetic first
+can use the bound and continue with the normalizer average in the next
+subsection.
+
+\begin{lemma}\label{lem:spectral}
+On $\{1,\chi_p\}^\perp\subset\C[Y_p]$, the operator $T_n$ has norm at most
+$\tau(n)\sqrt n$, provided $(n,3p)=1$.
+\end{lemma}
+\begin{proof}
+\emph{The adelic quotient and its measure.}
+Let $H=PB^\times$ and, for each finite prime $\ell$, let $V_\ell$ be the
+image of $\OO_\ell^\times$ in $H(\Q_\ell)$. Put
+$V=\prod_\ell V_\ell$. Define $U(p)\subset V$ by replacing
+$V_p=\PGL_2(\Z_p)$ with the kernel of reduction to $G_p$.
+At the ramified prime $3$ the level is $V_3$, the image of order units.
+In particular, it does not contain a quaternionic uniformizer, whose
+norm has odd $3$-adic valuation.
+
+Class number one gives $H(\mathbb A_f)=H(\Q)V$: an adelic ideal may be
+principalized, leaving order units at every finite prime. Moreover,
+\[
+H(\Q)\cap V=\operatorname{image}(\OO^\times).
+\]
+To check the stabilizer, choose a rational quaternion $\beta$ representing
+an element of the left side. For every $\ell$ one has
+$\beta=c_\ell u_\ell$ with $c_\ell\in\Q_\ell^\times$ and
+$u_\ell\in\OO_\ell^\times$, so
+$v_\ell(\nrd\beta)=2v_\ell(c_\ell)$ is even. Choose $c\in\Q^\times$
+with $v_\ell(c)=-v_\ell(c_\ell)$ at each prime. Then
+$c\beta\in\OO_\ell^\times$ everywhere, hence $c\beta\in\OO^\times$.
+The reverse inclusion is immediate. It follows that
+\[
+X_p=H(\Q)\backslash H(\mathbb A_f)/U(p)
+\simeq\Gamma_p\backslash G_p=Y_p.
+\]
+The right action of $V$ is transitive on this finite quotient. Its
+invariant measure is therefore proportional to counting measure, so the
+operator norm is the one stated in the lemma.
+
+\emph{The all-ideal Hecke operator.}
+Away from $3p$, use the Hecke correspondence that sums all integral
+right ideals of reduced norm $n$. Since every such ideal is principal,
+its generator belongs to $\mathcal Q_n$ and is unique modulo right order
+units. The adelic representative of an ideal is the identity at $p$;
+principalization therefore acts on the residual coordinate by
+$\rho_p(\alpha^{-1})$. On $X_p$ this correspondence is
+\[
+(\mathcal H_nf)(\Gamma_p g)
+=\sum_{[\alpha]\in\mathcal Q_n/\OO^\times}
+ f(\Gamma_p\rho_p(\alpha^{-1})g)
+=\frac1{12}\sum_{\alpha\in\mathcal Q_n}
+ f(\Gamma_p\rho_p(\alpha^{-1})g).
+\]
+Here right multiplication of $\alpha$ by a unit gives left
+multiplication of $\alpha^{-1}$ by a unit, so each summand is well-defined.
+Projectively $\alpha^{-1}=\bar\alpha$, and conjugation permutes
+$\mathcal Q_n$. Thus $\mathcal H_n=T_n$ as defined in \eqref{eq:hecke}.
+In particular the division by twelve and the action direction agree.
+For a prime power, the correspondence includes imprimitive ideals; it is
+the all-ideal operator of \cite[Propositions~41.3.1 and~41.3.6]{Voight}.
+
+\emph{Characters and cuspidal transfer.}
+Decompose the automorphic space on this definite quotient into irreducible
+constituents, with trivial infinite component. Every finite-dimensional
+irreducible smooth representation of $\mathrm{GL}_2(\Q_\ell)$ is a
+determinant character. To see this, intersect the open stabilizers of a
+basis: the kernel is open. Normality and conjugation by diagonal matrices
+then force it to contain all elementary unipotents, which generate
+$\mathrm{SL}_2(\Q_\ell)$.
+A constituent that is one-dimensional at a split finite place is a global
+norm character.
+Indeed, its local action is trivial on the norm-one subgroup at that
+place, say $\ell$. For a smooth automorphic function $f$ in the
+constituent, let $x\in B^\times(\mathbb A_f)$ and
+$h\in B^1(\mathbb A_f)$. Strong approximation for $B^1$, away from
+$\{\infty,\ell\}$, approximates $xhx^{-1}$ outside $\ell$ by a rational
+norm-one element $\gamma$. Take the approximation sufficiently close
+for the right stabilizers of $f$. Outside $\ell$, this makes $xh$ and
+$\gamma x$ indistinguishable to $f$; at $\ell$ their discrepancy is
+absorbed by the right action of $B^1(\Q_\ell)$. Left invariance under
+$\gamma$ gives $f(xh)=f(x)$. Thus the realization is invariant under
+$B^1(\mathbb A)$ and factors through the reduced norm.
+The strong approximation hypothesis holds because $B^1$ is split and
+noncompact at $\ell$ \cite[Main Theorem~28.5.3]{Voight}.
+
+On $X_p$, every global character restricts to a character of $G_p$.
+Every character of $\mathrm{GL}_2(\F_p)$ kills the elementary unipotents:
+for $t\ne1$, the commutator of $\operatorname{diag}(t,1)$ and the upper
+unipotent with entry $s$ has entry $(t-1)s$. The lower unipotents behave
+likewise, and these generate $\mathrm{SL}_2(\F_p)$. A character therefore
+factors through the determinant. Descent to $\PGL_2$ makes it trivial on
+squares, leaving just the trivial and quadratic determinant characters.
+Consequently the character constituents lie in
+$\operatorname{span}\{1,\chi_p\}$. Both of these functions have already
+been identified directly. Removing their span leaves constituents whose
+local factors at split places are infinite-dimensional, as required by
+Jacquet--Langlands \cite[Theorem~14.4]{JL}.
+That theorem transfers them to cuspidal representations of $\mathrm{GL}_2$.
+The trivial infinite type on the definite quaternion algebra corresponds
+to weight two \cite[Section~5, Proposition~5.20]{JL};
+\cite[Section~8.4]{EMV} describes this weight-two spectral application.
+For every $\ell\mid n$, the level is maximal and $B$ is split, so the
+transferred representation is unramified at $\ell$, with the same Hecke
+eigenvalues. The congruence-level construction is also described in
+\cite[Section~2]{Li}.
+
+\emph{The eigenvalue bound.}
+For these weight-two cuspidal representations, the two unramified Hecke
+roots have absolute value $\sqrt\ell$. One obtains this form of the
+Ramanujan bound from the Frobenius--Hecke relation and purity:
+\cite[Theorems~4.9 and~5.1]{DeligneModular}, together with
+\cite[Theorem~1.6]{DeligneWeil}. The transferred central character is trivial, so the normalized roots satisfy
+$u_\ell v_\ell=1$. Writing them as $u_\ell,v_\ell$, the all-ideal eigenvalue at $\ell^e$ is
+\[
+\ell^{e/2}\sum_{s=0}^e u_\ell^s v_\ell^{e-s},
+\qquad |u_\ell|=|v_\ell|=1.
+\]
+Its absolute value is at most $(e+1)\ell^{e/2}$.
+The local recurrence
+\[
+T_{\ell^{e+2}}=T_\ell T_{\ell^{e+1}}-\ell T_{\ell^e}
+\]
+fixes the prime-power normalization. Multiplicativity over primes gives
+$\tau(n)\sqrt n$ for every simultaneous eigenvector. Since the commuting
+Hecke operators are self-adjoint, this is also their operator bound.
+\end{proof}
+
+\subsection{Torus-normalizer averaging}
+The image $C_p=(R/pR)^\times/\F_p^\times$ is a nonsplit torus. Its
+normalizer is $K_p=C_p\cup C_p\rho_p(j)$, of order $2(p+1)$.
+All twelve order units lie in $R^\times\cup R^\times j$, so
+$\Gamma_p\subset K_p$. Put
+\[
+O_p=\Gamma_p\backslash K_p\subset Y_p,\qquad f_p=1_{O_p},\qquad
+\mu_p=\frac{|O_p|}{|Y_p|}=\frac2{p(p-1)}.
+\]
+An invertible quaternion has one of its two Eisenstein components zero
+modulo $p$ exactly when its projective reduction lies in $K_p$.
+Let $b_p(n)$ count the unfiltered representations spoiled by $p$. Consequently
+\[
+b_p(n)=12(T_nf_p)(\Gamma_p).
+\]
+Both $f_p$ and $T_nf_p$ are right-$K_p$ invariant. Therefore
+\[
+(T_nf_p)(\Gamma_p)=\frac{\langle f_p,T_nf_p\rangle}{|O_p|}.
+\]
+The norm map $\F_{p^2}^\times\to\F_p^\times$ is onto, so $O_p$ has
+equally many determinant-square and determinant-nonsquare points.
+Thus $f_p-\mu_p1$ is orthogonal to both $1$ and $\chi_p$, and has
+squared norm $|O_p|(1-\mu_p)$. The spectral lemma gives
+\begin{equation}\label{eq:local}
+\frac{b_p(n)}{r(n)}
+\le\frac2{p(p-1)}+
+\frac{\tau(n)\sqrt n}{\sigma(n)}
+\left(1-\frac2{p(p-1)}\right).
+\end{equation}

@@ -1,0 +1,1051 @@
+{
+  "claim": "PF2RULED184",
+  "outcome": "PASS",
+  "check_count": 306,
+  "checks": [
+    "triple-simple quartic is depressed",
+    "exact affine transformation for every exponent",
+    "direct triple coefficient matches all-index binomial n1",
+    "positive odd triple binomial nonzero n1",
+    "direct triple coefficient matches all-index binomial n3",
+    "positive odd triple binomial nonzero n3",
+    "direct triple coefficient matches all-index binomial n5",
+    "positive odd triple binomial nonzero n5",
+    "direct triple coefficient matches all-index binomial n7",
+    "positive odd triple binomial nonzero n7",
+    "direct triple coefficient matches all-index binomial n9",
+    "positive odd triple binomial nonzero n9",
+    "direct triple coefficient matches all-index binomial n11",
+    "positive odd triple binomial nonzero n11",
+    "direct triple coefficient matches all-index binomial n13",
+    "positive odd triple binomial nonzero n13",
+    "direct triple coefficient matches all-index binomial n15",
+    "positive odd triple binomial nonzero n15",
+    "even index is deliberately excluded from nonvanishing n2",
+    "even index is deliberately excluded from nonvanishing n4",
+    "even index is deliberately excluded from nonvanishing n6",
+    "double first residue formula r1",
+    "double centered second formula r1",
+    "double vector recovers U power r1",
+    "double vector recovers V power r1",
+    "double first residue formula r2",
+    "double centered second formula r2",
+    "double vector recovers U power r2",
+    "double vector recovers V power r2",
+    "double first residue formula r3",
+    "double centered second formula r3",
+    "double vector recovers U power r3",
+    "double vector recovers V power r3",
+    "double first residue formula r4",
+    "double centered second formula r4",
+    "double vector recovers U power r4",
+    "double vector recovers V power r4",
+    "double first residue formula r5",
+    "double centered second formula r5",
+    "double vector recovers U power r5",
+    "double vector recovers V power r5",
+    "double first residue formula r6",
+    "double centered second formula r6",
+    "double vector recovers U power r6",
+    "double vector recovers V power r6",
+    "double first residue formula r7",
+    "double centered second formula r7",
+    "double vector recovers U power r7",
+    "double vector recovers V power r7",
+    "double first residue formula r8",
+    "double centered second formula r8",
+    "double vector recovers U power r8",
+    "double vector recovers V power r8",
+    "double first residue formula r9",
+    "double centered second formula r9",
+    "double vector recovers U power r9",
+    "double vector recovers V power r9",
+    "double first residue formula r10",
+    "double centered second formula r10",
+    "double vector recovers U power r10",
+    "double vector recovers V power r10",
+    "double vector remains nonzero A1 B2 r1",
+    "double vector remains nonzero A1 B2 r2",
+    "double vector remains nonzero A1 B2 r3",
+    "double vector remains nonzero A1 B2 r4",
+    "double vector remains nonzero A1 B2 r5",
+    "double vector remains nonzero A1 B2 r6",
+    "double vector remains nonzero A1 B2 r7",
+    "double vector remains nonzero A1 B2 r8",
+    "double vector remains nonzero A1 B0 r1",
+    "double vector remains nonzero A1 B0 r2",
+    "double vector remains nonzero A1 B0 r3",
+    "double vector remains nonzero A1 B0 r4",
+    "double vector remains nonzero A1 B0 r5",
+    "double vector remains nonzero A1 B0 r6",
+    "double vector remains nonzero A1 B0 r7",
+    "double vector remains nonzero A1 B0 r8",
+    "double vector remains nonzero A0 B2 r1",
+    "double vector remains nonzero A0 B2 r2",
+    "double vector remains nonzero A0 B2 r3",
+    "double vector remains nonzero A0 B2 r4",
+    "double vector remains nonzero A0 B2 r5",
+    "double vector remains nonzero A0 B2 r6",
+    "double vector remains nonzero A0 B2 r7",
+    "double vector remains nonzero A0 B2 r8",
+    "double vector remains nonzero A1 B1 r1",
+    "double vector remains nonzero A1 B1 r2",
+    "double vector remains nonzero A1 B1 r3",
+    "double vector remains nonzero A1 B1 r4",
+    "double vector remains nonzero A1 B1 r5",
+    "double vector remains nonzero A1 B1 r6",
+    "double vector remains nonzero A1 B1 r7",
+    "double vector remains nonzero A1 B1 r8",
+    "double vector remains nonzero A1 B-1 r1",
+    "double vector remains nonzero A1 B-1 r2",
+    "double vector remains nonzero A1 B-1 r3",
+    "double vector remains nonzero A1 B-1 r4",
+    "double vector remains nonzero A1 B-1 r5",
+    "double vector remains nonzero A1 B-1 r6",
+    "double vector remains nonzero A1 B-1 r7",
+    "double vector remains nonzero A1 B-1 r8",
+    "one scalar residue can vanish while the vector remains nonzero",
+    "zero perturbation is explicitly inadmissible",
+    "even quartic centered coefficient n1",
+    "even quartic centered coefficient n3",
+    "even quartic centered coefficient n5",
+    "even quartic centered coefficient n7",
+    "even quartic centered coefficient n9",
+    "even quartic centered coefficient n11",
+    "even quartic centered coefficient n13",
+    "even quartic centered coefficient n15",
+    "whole triple control finite specialization",
+    "whole triple exact moment order n1",
+    "whole triple exact moment coefficient n1",
+    "whole triple exact moment order n3",
+    "whole triple exact moment coefficient n3",
+    "whole triple exact moment order n5",
+    "whole triple exact moment coefficient n5",
+    "whole triple exact moment order n7",
+    "whole triple exact moment coefficient n7",
+    "whole triple exact moment order n9",
+    "whole triple exact moment coefficient n9",
+    "whole double finite simple cluster A1 B2",
+    "whole double first coefficient and bound A1 B2 n1",
+    "whole double second coefficient and bound A1 B2 n1",
+    "whole double exact vector order A1 B2 n1",
+    "whole double finite contribution strictly later A1 B2 n1",
+    "whole double first coefficient and bound A1 B2 n3",
+    "whole double second coefficient and bound A1 B2 n3",
+    "whole double exact vector order A1 B2 n3",
+    "whole double finite contribution strictly later A1 B2 n3",
+    "whole double first coefficient and bound A1 B2 n5",
+    "whole double second coefficient and bound A1 B2 n5",
+    "whole double exact vector order A1 B2 n5",
+    "whole double finite contribution strictly later A1 B2 n5",
+    "whole double first coefficient and bound A1 B2 n7",
+    "whole double second coefficient and bound A1 B2 n7",
+    "whole double exact vector order A1 B2 n7",
+    "whole double finite contribution strictly later A1 B2 n7",
+    "whole double first coefficient and bound A1 B2 n9",
+    "whole double second coefficient and bound A1 B2 n9",
+    "whole double exact vector order A1 B2 n9",
+    "whole double finite contribution strictly later A1 B2 n9",
+    "whole double finite simple cluster A1 B0",
+    "whole double first coefficient and bound A1 B0 n1",
+    "whole double second coefficient and bound A1 B0 n1",
+    "whole double exact vector order A1 B0 n1",
+    "whole double finite contribution strictly later A1 B0 n1",
+    "whole double first coefficient and bound A1 B0 n3",
+    "whole double second coefficient and bound A1 B0 n3",
+    "whole double exact vector order A1 B0 n3",
+    "whole double finite contribution strictly later A1 B0 n3",
+    "whole double first coefficient and bound A1 B0 n5",
+    "whole double second coefficient and bound A1 B0 n5",
+    "whole double exact vector order A1 B0 n5",
+    "whole double finite contribution strictly later A1 B0 n5",
+    "whole double first coefficient and bound A1 B0 n7",
+    "whole double second coefficient and bound A1 B0 n7",
+    "whole double exact vector order A1 B0 n7",
+    "whole double finite contribution strictly later A1 B0 n7",
+    "whole double first coefficient and bound A1 B0 n9",
+    "whole double second coefficient and bound A1 B0 n9",
+    "whole double exact vector order A1 B0 n9",
+    "whole double finite contribution strictly later A1 B0 n9",
+    "whole double finite simple cluster A0 B2",
+    "whole double first coefficient and bound A0 B2 n1",
+    "whole double second coefficient and bound A0 B2 n1",
+    "whole double exact vector order A0 B2 n1",
+    "whole double finite contribution strictly later A0 B2 n1",
+    "whole double first coefficient and bound A0 B2 n3",
+    "whole double second coefficient and bound A0 B2 n3",
+    "whole double exact vector order A0 B2 n3",
+    "whole double finite contribution strictly later A0 B2 n3",
+    "whole double first coefficient and bound A0 B2 n5",
+    "whole double second coefficient and bound A0 B2 n5",
+    "whole double exact vector order A0 B2 n5",
+    "whole double finite contribution strictly later A0 B2 n5",
+    "whole double first coefficient and bound A0 B2 n7",
+    "whole double second coefficient and bound A0 B2 n7",
+    "whole double exact vector order A0 B2 n7",
+    "whole double finite contribution strictly later A0 B2 n7",
+    "whole double first coefficient and bound A0 B2 n9",
+    "whole double second coefficient and bound A0 B2 n9",
+    "whole double exact vector order A0 B2 n9",
+    "whole double finite contribution strictly later A0 B2 n9",
+    "whole double finite simple cluster A1 B1",
+    "whole double first coefficient and bound A1 B1 n1",
+    "whole double second coefficient and bound A1 B1 n1",
+    "whole double exact vector order A1 B1 n1",
+    "whole double finite contribution strictly later A1 B1 n1",
+    "whole double first coefficient and bound A1 B1 n3",
+    "whole double second coefficient and bound A1 B1 n3",
+    "whole double exact vector order A1 B1 n3",
+    "whole double finite contribution strictly later A1 B1 n3",
+    "whole double first coefficient and bound A1 B1 n5",
+    "whole double second coefficient and bound A1 B1 n5",
+    "whole double exact vector order A1 B1 n5",
+    "whole double finite contribution strictly later A1 B1 n5",
+    "whole double first coefficient and bound A1 B1 n7",
+    "whole double second coefficient and bound A1 B1 n7",
+    "whole double exact vector order A1 B1 n7",
+    "whole double finite contribution strictly later A1 B1 n7",
+    "whole double first coefficient and bound A1 B1 n9",
+    "whole double second coefficient and bound A1 B1 n9",
+    "whole double exact vector order A1 B1 n9",
+    "whole double finite contribution strictly later A1 B1 n9",
+    "whole double finite simple cluster A1 B-1",
+    "whole double first coefficient and bound A1 B-1 n1",
+    "whole double second coefficient and bound A1 B-1 n1",
+    "whole double exact vector order A1 B-1 n1",
+    "whole double finite contribution strictly later A1 B-1 n1",
+    "whole double first coefficient and bound A1 B-1 n3",
+    "whole double second coefficient and bound A1 B-1 n3",
+    "whole double exact vector order A1 B-1 n3",
+    "whole double finite contribution strictly later A1 B-1 n3",
+    "whole double first coefficient and bound A1 B-1 n5",
+    "whole double second coefficient and bound A1 B-1 n5",
+    "whole double exact vector order A1 B-1 n5",
+    "whole double finite contribution strictly later A1 B-1 n5",
+    "whole double first coefficient and bound A1 B-1 n7",
+    "whole double second coefficient and bound A1 B-1 n7",
+    "whole double exact vector order A1 B-1 n7",
+    "whole double finite contribution strictly later A1 B-1 n7",
+    "whole double first coefficient and bound A1 B-1 n9",
+    "whole double second coefficient and bound A1 B-1 n9",
+    "whole double exact vector order A1 B-1 n9",
+    "whole double finite contribution strictly later A1 B-1 n9",
+    "whole even quartic finite simple cluster",
+    "whole even centered exact order n1",
+    "whole even centered exact coefficient n1",
+    "whole even finite contribution strictly later n1",
+    "whole even centered exact order n3",
+    "whole even centered exact coefficient n3",
+    "whole even finite contribution strictly later n3",
+    "whole even centered exact order n5",
+    "whole even centered exact coefficient n5",
+    "whole even finite contribution strictly later n5",
+    "whole even centered exact order n7",
+    "whole even centered exact coefficient n7",
+    "whole even finite contribution strictly later n7",
+    "whole even centered exact order n9",
+    "whole even centered exact coefficient n9",
+    "whole even finite contribution strictly later n9",
+    "triple contour scaling",
+    "double first scaling",
+    "double second scaling",
+    "even quartic centered scaling",
+    "finite centered alignment is minus three",
+    "double-and-two-simple leading example",
+    "exact double leading curvature",
+    "double-and-two-simple upper budget is strictly below six",
+    "refined double cubic terms later R15/4",
+    "refined double higher terms later R15/4",
+    "refined double cubic terms later R4",
+    "refined double higher terms later R4",
+    "refined double cubic terms later R17/4",
+    "refined double higher terms later R17/4",
+    "parameter curvature exact order t12 J5",
+    "parameter curvature linear later t12 J5",
+    "parameter curvature cubic later t12 J5",
+    "parameter curvature higher later t12 J5",
+    "whole parameter quadratic initial t12 J5-1",
+    "whole parameter quadratic initial t12 J51",
+    "parameter curvature exact order t12 J6",
+    "parameter curvature linear later t12 J6",
+    "parameter curvature cubic later t12 J6",
+    "parameter curvature higher later t12 J6",
+    "whole parameter quadratic initial t12 J6-1",
+    "whole parameter quadratic initial t12 J61",
+    "parameter curvature exact order t11 J6",
+    "parameter curvature linear later t11 J6",
+    "parameter curvature cubic later t11 J6",
+    "parameter curvature higher later t11 J6",
+    "whole parameter quadratic initial t11 J6-1",
+    "whole parameter quadratic initial t11 J61",
+    "parameter curvature exact order t12 J4",
+    "parameter curvature linear later t12 J4",
+    "parameter curvature cubic later t12 J4",
+    "parameter curvature higher later t12 J4",
+    "whole parameter quadratic initial t12 J4-1",
+    "whole parameter quadratic initial t12 J41",
+    "all remaining boundaries in t9 quartic group",
+    "all remaining boundaries in t9 quartic group",
+    "all remaining boundaries in t9 quartic group",
+    "all remaining boundaries in t9 quartic group",
+    "all remaining boundaries in t9 quartic group",
+    "square boundary surviving interval only ell6 delta12",
+    "dominant Delta can survive only at thirteen",
+    "dominant Delta can survive only at thirteen",
+    "cubic balance only surviving degree8",
+    "cubic balance only surviving degree8",
+    "square boundary surviving interval only ell6 delta12",
+    "dominant Delta can survive only at thirteen",
+    "dominant Delta can survive only at thirteen",
+    "dominant Delta can survive only at thirteen",
+    "dominant Delta can survive only at thirteen",
+    "exact square-center candidate table",
+    "vector cases exactly the four listed cells {'t': 10, 'J_order': 6, 'Delta_order': 13, 'result': 'double-vector'}",
+    "vector cases exactly the four listed cells {'t': 10, 'J_order': 6, 'Delta_order': 14, 'result': 'double-vector'}",
+    "vector cases exactly the four listed cells {'t': 11, 'J_order': 6, 'Delta_order': 13, 'result': 'double-vector'}",
+    "vector cases exactly the four listed cells {'t': 12, 'J_order': 6, 'Delta_order': 13, 'result': 'double-vector'}",
+    "remaining cubic range nonempty",
+    "remaining generic degree conditional eight",
+    "remaining e-order is three",
+    "remaining d-order is ten",
+    "remaining original generic degree is sixteen"
+  ],
+  "elapsed_seconds": 0.79310351802269,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "7ebdf938485a65bbc54fdf068a9f4f253ad48a81a1bf0619167ba1eab08b73c0",
+  "checker_sha256": "ec3597d6f7368a1639049bca97007b364ed2b11e58903b45b0ac4b00f5a1e0fc",
+  "retained_proof_sources": {
+    "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee",
+    "RULING_SIX_AFFINE_POLE_BUDGET_AND_SOURCE_INFINITY.md": "b26c9004eaa6eeb6bc59db3a6b8b45318f598a31d89fd4f0a0068d423dcb6771",
+    "RULING_SIX_COMPANION_RESONANCE_AND_LINEAR_REMAINDER_CLOSURE.md": "f8e2297c9e18d70004b2542767e39eba0f47e9d3ec01790e82d00a29d7ee76e9",
+    "RULING_SIX_BALANCED_QUADRATIC_REMAINDER_AND_LEADING_RESONANCE.md": "6cbae6c4465faf3c99bb0ee9897a2431dc2b57c372abf23a15f3c0c5b27ff161",
+    "RULING_SIX_DEGREE24_CRITICAL_QUARTIC_POLE_BUDGET_EXCLUSION.md": "c5838bfd604288d5ffe25a9ba9a843a3eaa14ed60528b7fb16384f7d01782402",
+    "RULING_SIX_NONCRITICAL_POLE_BUDGET_AND_DEGREE30_LEDGER.md": "6db5cb77d9dbdf5986b49fab5770c456974cec4d56935f066cd86851369e78b7",
+    "RULING_SIX_PARAMETER_PRECISION_AND_SLOPE6_DEGREE30_EXCLUSION.md": "c219833c083b9f63cfd72753001af768b2dd40d6ebc3025fea1a823677a2b444",
+    "RULING_SIX_NONPOLE_PACKETS_AND_SLOPE7_TOP_DEGREE_EXCLUSION.md": "0c57efbdb39ed02d36c80ea648ae4503b18e72cc0663aa33408857749765157c"
+  },
+  "uniform_proved_scope": {
+    "coefficient_and_companion_degrees": "unrestricted",
+    "two_constant_relations": "same c_n for [w^-1] and [w^-2] positive odd half powers",
+    "triple_simple_scalar_growth": "ord m_n=-n-4, every positive odd n",
+    "two_double_vector_growth": "ord vector(m_n,v4*lhat_n)=-(r+3), n=2r-1, every r>=1",
+    "even_quartic_centered_growth": "ord lhat_n=-(n+15)/2, every positive odd n",
+    "finite_cluster_contributions_explicitly_retained": true,
+    "D30_generic_degree_six_and_seven_excluded": true,
+    "remaining_D30_intermediate_degree": 8,
+    "remaining_D30_original_degree": 16,
+    "remaining_local_orders": "ord e3, ord d10, ord q10, ord J>=7, ord Delta14",
+    "remaining_cubic_balance_or_full_D30_closed": false,
+    "full_ruling_six_or_JC2_closed": false
+  },
+  "whole_moment_controls": [
+    {
+      "type": "triple",
+      "n": 1,
+      "m_order": -5,
+      "m_leading": "4"
+    },
+    {
+      "type": "triple",
+      "n": 3,
+      "m_order": -7,
+      "m_leading": "-72"
+    },
+    {
+      "type": "triple",
+      "n": 5,
+      "m_order": -9,
+      "m_leading": "1560"
+    },
+    {
+      "type": "triple",
+      "n": 7,
+      "m_order": -11,
+      "m_leading": "-36176"
+    },
+    {
+      "type": "triple",
+      "n": 9,
+      "m_order": -13,
+      "m_leading": "869400"
+    }
+  ],
+  "complete_integer_region_controls": [
+    {
+      "t": 9,
+      "J_order": 1,
+      "Delta_order": 10,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 2,
+      "Delta_order": 10,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 3,
+      "Delta_order": 10,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 4,
+      "Delta_order": 10,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 5,
+      "Delta_order": 10,
+      "result": "interval"
+    },
+    {
+      "t": 9,
+      "J_order": 6,
+      "Delta_order": 10,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": 7,
+      "Delta_order": 10,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": null,
+      "Delta_order": 10,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": 1,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 2,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 3,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 4,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 5,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 6,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": 7,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": null,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": 1,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 2,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 3,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 4,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 5,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 6,
+      "Delta_order": 12,
+      "result": "triple-or-double"
+    },
+    {
+      "t": 9,
+      "J_order": 7,
+      "Delta_order": 12,
+      "result": "triple-or-double"
+    },
+    {
+      "t": 9,
+      "J_order": null,
+      "Delta_order": 12,
+      "result": "triple-or-double"
+    },
+    {
+      "t": 9,
+      "J_order": 1,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 2,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 3,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 4,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 5,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 6,
+      "Delta_order": 13,
+      "result": "triple-or-double"
+    },
+    {
+      "t": 9,
+      "J_order": 7,
+      "Delta_order": 13,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": null,
+      "Delta_order": 13,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": 1,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 2,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 3,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 4,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 5,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 9,
+      "J_order": 6,
+      "Delta_order": 14,
+      "result": "triple-or-double"
+    },
+    {
+      "t": 9,
+      "J_order": 7,
+      "Delta_order": 14,
+      "result": "degree"
+    },
+    {
+      "t": 9,
+      "J_order": null,
+      "Delta_order": 14,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": 1,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 2,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 3,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 4,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 5,
+      "Delta_order": 11,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 6,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": 7,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": null,
+      "Delta_order": 11,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": 1,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 2,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 3,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 4,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 5,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 6,
+      "Delta_order": 12,
+      "result": "double-curvature"
+    },
+    {
+      "t": 10,
+      "J_order": 7,
+      "Delta_order": 12,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": null,
+      "Delta_order": 12,
+      "result": "degree"
+    },
+    {
+      "t": 10,
+      "J_order": 1,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 2,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 3,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 4,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 5,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 6,
+      "Delta_order": 13,
+      "result": "double-vector"
+    },
+    {
+      "t": 10,
+      "J_order": 7,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 10,
+      "J_order": null,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 10,
+      "J_order": 1,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 2,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 3,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 4,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 5,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 10,
+      "J_order": 6,
+      "Delta_order": 14,
+      "result": "double-vector"
+    },
+    {
+      "t": 10,
+      "J_order": 7,
+      "Delta_order": 14,
+      "result": "remaining"
+    },
+    {
+      "t": 10,
+      "J_order": null,
+      "Delta_order": 14,
+      "result": "remaining"
+    },
+    {
+      "t": 11,
+      "J_order": 1,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 2,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 3,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 4,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 5,
+      "Delta_order": 12,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 6,
+      "Delta_order": 12,
+      "result": "double-curvature"
+    },
+    {
+      "t": 11,
+      "J_order": 7,
+      "Delta_order": 12,
+      "result": "degree"
+    },
+    {
+      "t": 11,
+      "J_order": null,
+      "Delta_order": 12,
+      "result": "degree"
+    },
+    {
+      "t": 11,
+      "J_order": 1,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 2,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 3,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 4,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 5,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 6,
+      "Delta_order": 13,
+      "result": "double-vector"
+    },
+    {
+      "t": 11,
+      "J_order": 7,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 11,
+      "J_order": null,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 11,
+      "J_order": 1,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 2,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 3,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 4,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 5,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 11,
+      "J_order": 6,
+      "Delta_order": 14,
+      "result": "parameter-curvature"
+    },
+    {
+      "t": 11,
+      "J_order": 7,
+      "Delta_order": 14,
+      "result": "interval"
+    },
+    {
+      "t": 11,
+      "J_order": null,
+      "Delta_order": 14,
+      "result": "degree"
+    },
+    {
+      "t": 12,
+      "J_order": 1,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 2,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 3,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 4,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 5,
+      "Delta_order": 13,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 6,
+      "Delta_order": 13,
+      "result": "double-vector"
+    },
+    {
+      "t": 12,
+      "J_order": 7,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 12,
+      "J_order": null,
+      "Delta_order": 13,
+      "result": "even-moment"
+    },
+    {
+      "t": 12,
+      "J_order": 1,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 2,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 3,
+      "Delta_order": 14,
+      "result": "degree-or-interval"
+    },
+    {
+      "t": 12,
+      "J_order": 4,
+      "Delta_order": 14,
+      "result": "parameter-curvature"
+    },
+    {
+      "t": 12,
+      "J_order": 5,
+      "Delta_order": 14,
+      "result": "parameter-curvature"
+    },
+    {
+      "t": 12,
+      "J_order": 6,
+      "Delta_order": 14,
+      "result": "parameter-curvature"
+    },
+    {
+      "t": 12,
+      "J_order": 7,
+      "Delta_order": 14,
+      "result": "interval"
+    },
+    {
+      "t": 12,
+      "J_order": null,
+      "Delta_order": 14,
+      "result": "degree"
+    }
+  ],
+  "assurance": "Exact internal symbolic controls and unrestricted written contour proof; no formal or external human review."
+}

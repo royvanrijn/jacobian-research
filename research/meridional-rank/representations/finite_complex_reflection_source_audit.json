@@ -1,0 +1,74 @@
+{
+  "status": "Exact primary source read; written reduction independently challenged internally",
+  "source": {
+    "title": "Finite unitary reflection groups",
+    "authors": [
+      "G. C. Shephard",
+      "J. A. Todd"
+    ],
+    "year": 1954,
+    "journal": "Canadian Journal of Mathematics6,274-304",
+    "url": "https://math.ucsd.edu/~nwallach/shephard-todd.pdf",
+    "doi": "10.4153/CJM-1954-028-3",
+    "snapshot": "sources/shephard-todd-finite-unitary-1954.pdf",
+    "bytes": 2957750,
+    "sha256": "883ae3bd07e7c10d85755b49891fe39fef7bb2668b1e5f95a439b1cd5b422c21"
+  },
+  "locators": {
+    "imprimitive_classification_and_reflection_types": "Section2, printedpp276-277, formulas2.2-2.6",
+    "primitive_rank_three_types": "Section3 printedp278 and TableVII printedp301, rows23-27",
+    "primitive_rank_two_generation_bound": "Section4 printedp280; TablesI-III",
+    "well_generated_exceptions": "TableVII footnote printedp301"
+  },
+  "import_scope": "Complete low-rank classification, primitive rank2 generation by at most3 reflections, primitive rank3 generation by3. Mixed imprimitive1<p<m rank3 cases are not claimed3-generated.",
+  "written_new_reductions": [
+    "orbit-character obstruction to multiple hyperplane orbits",
+    "full-order condition from determinant image",
+    "same-hyperplane power replacement gives class rank equal to reflection-generation rank",
+    "explicit3-reflection generators ofG(m,m,3)"
+  ],
+  "knot_dependency": {
+    "source": "GENERIC_KCH_EXTENSIONS.tex",
+    "declaration": "cor:semisimple",
+    "scope": "Only the listed16 knots, completely reducible complex rank-one meridian representations have common-fixed codimension<=3."
+  },
+  "declarations": [
+    "lem:class",
+    "thm:lowrank",
+    "cor:knots"
+  ],
+  "source_assurance": "Original facsimile directly read and key table visually inspected. Classification enumeration not replayed; no formal verification or external specialist review.",
+  "note_sha256": "2005ed54521104381794db5d06d1abce9f67cf7658495121a8fffc639250da16",
+  "root_primary_application_check": "Printed p280 and TableVII/footnote p301 were additionally read as extracted text and rendered facsimile. Rank-two generation by two or three and rank-three rows23-27 plus the imprimitive exceptions match the stated import. Original classification remains imported.",
+  "internal_pdf_reviews": [
+    {
+      "classification": "internal isolated AI PDF-only review",
+      "reviewer": "/root/finite_complex_pdf_review",
+      "date": "2026-11-17",
+      "supplied_context": "Only the three-page PDF and revised edition, without repository source, supplements, history, related notes or cited papers.",
+      "source_sha256": "2005ed54521104381794db5d06d1abce9f67cf7658495121a8fffc639250da16",
+      "pdf_sha256": "b5c6d2e62593fa26010cc645eff304808f2a8c02f0e5b112f0831d3f2f69e090",
+      "previous_reviewed_pdf_sha256": [
+        "a455178d247041ffc836fb84e3261dd869410e1d1c751995ee5cd6d752375035"
+      ],
+      "pages": 3,
+      "mathematical_checks": [
+        "Orbit-polynomial characters and their values on reflections.",
+        "One generating class implies one hyperplane orbit and full hyperplane-stabilizer order.",
+        "Same-hyperplane power replacement proves equality of class and reflection generation numbers.",
+        "Explicit imprimitive G(m,m,3) generation and the low-rank case split, conditional on the declared classification import.",
+        "Faithful active-summand reduction in the knot corollary."
+      ],
+      "revisions_resolving_findings": [
+        "Printed the fully quantified imported semisimple dimension bound.",
+        "Explicitly covered symmetric A2 and A3 cases."
+      ],
+      "visual_checks": "All three original pages and affected revised pages inspected; no clipping, overlap or illegibility.",
+      "remaining_dependencies": [
+        "Original low-rank classification and reflection-generator bounds.",
+        "Truth of the explicitly quantified imported semisimple knot bound."
+      ],
+      "scope_limit": "The isolated review did not inspect these primary/dependent proofs. It found no substantive error in the written elementary argument conditional on them. This is not external specialist review or formal verification."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "TERNARY_AFFINE_QUOTIENTS.tex": "23ead9b14da7b8c5fb507345bfe15905b9e24b637f4b866e2fb182414188b465",
+    "verify_uniform_affine_groups.py": "56e564fe4b0f3b6456cdc42bde2520c15809ba9c5eccf54e5393375f7238a574",
+    "uniform_affine_group_inputs.json": "2a711a10d9ea0026383bf8fbdb3fa4b1f0df73849cf956c9a08b8ee9bbea5de1"
+  },
+  "status": "PASS",
+  "arithmetic": "integers",
+  "projected_order": 168,
+  "translation": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    -3,
+    0
+  ],
+  "basis_determinant": 1,
+  "ordinary_generating_rank": 2,
+  "distinguished_involution_class_rank": 4,
+  "scope": "All primes p and all integer moduli m>=2; class-rank lower bound additionally uses the written fixed-space argument."
+}

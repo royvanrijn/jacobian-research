@@ -1,0 +1,1563 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "scope": "Both binary identities A+A and A+(3\u00b7A), exact primitive Eisenstein norm sumsets, sharp four- and seven-summand bounds, and the subgroup-orbit arithmetic criterion. Balanced summands remain conjectural beyond the finite range.",
+  "import": {
+    "archive": "eisenstein_research_sources.zip",
+    "archive_sha256": "ee4f4ed3ba5983c91a0d0a2c83a0acf464934b662288b7a5f04acf9aa3314103",
+    "original_manifest": {
+      "README.txt": {
+        "bytes": 3090,
+        "sha256": "7e6f592c0ed5a2f8573ed898a17ea94feafec7e9da9d856c7783c9ba6899ff36"
+      },
+      "eisenstein_proof_note.tex": {
+        "bytes": 20812,
+        "sha256": "2acadb90785d80b8a7759bd3b22c8e6e1176fc64d3da84f6ee55858dc83004bd"
+      },
+      "VerifyEisenstein.java": {
+        "bytes": 8655,
+        "sha256": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467"
+      },
+      "compute_finite_certificate.py": {
+        "bytes": 6346,
+        "sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da"
+      },
+      "compute_elementary_constants.py": {
+        "bytes": 3358,
+        "sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039"
+      },
+      "compute_theta_checks.py": {
+        "bytes": 4634,
+        "sha256": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487"
+      },
+      "spectral_check.py": {
+        "bytes": 2703,
+        "sha256": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a"
+      },
+      "receipts/python_finite_receipt.json": {
+        "bytes": 2812,
+        "sha256": "49315747aa0f2b536ce5fc6d67314465a882f948764e12d5c4a4006a27937a2e"
+      },
+      "receipts/java_finite_receipt.json": {
+        "bytes": 2230,
+        "sha256": "8c3503d7d347557cb9c4e711271d7a9911a8407e1f1a92682737091c0c5866db"
+      },
+      "receipts/cross_language_verification_receipt.json": {
+        "bytes": 836,
+        "sha256": "92acec38f1abc0b2b1b5ab900ee83f88411063d67c3e138aad25b72fe064f411"
+      },
+      "receipts/elementary_constants_receipt.json": {
+        "bytes": 2989,
+        "sha256": "db4331593f09f3a42dd761d97e7145827a7a51cc9956b94cfb8d3d94e4bdc1f9"
+      },
+      "receipts/theta_checks_3000.json": {
+        "bytes": 841,
+        "sha256": "fd7efc4419b0a281c47c0265236126fb8d77b28ac30b395493dab0466603cb8f"
+      },
+      "research_notes/spectral_core.md": {
+        "bytes": 11982,
+        "sha256": "8841956635db5f7e1767af7030438d550cf203b17eb84f55fab568be9fc2c599"
+      },
+      "research_notes/literature_and_independent_audit.md": {
+        "bytes": 9313,
+        "sha256": "6679715a0798bd701bb9178496135e5b06cfe3cdc5c5ba8cc78583f265a13686"
+      },
+      "research_notes/unfinished_balanced_notes.md": {
+        "bytes": 5391,
+        "sha256": "d86452e288c521e573897db8e7477fbf3c6db09f96c6af975e4579c699e545fc"
+      },
+      "research_notes/literature_balanced_polynomial.py": {
+        "bytes": 3726,
+        "sha256": "abb068f8318011f14af094e561117327b8054efcf5c0726de36514354997aae5"
+      },
+      "research_notes/literature_balanced_polynomial_receipt.json": {
+        "bytes": 20019,
+        "sha256": "c97f24de35754528a527881372bea75262311d53be1c8e1232764d654efd710c"
+      }
+    },
+    "manifest_check": "All 17 supplied manifest entries matched before adoption.",
+    "adaptation": "Renamed the manuscript to main.tex, set the author to Roy van Rijn, added the repository AI-assistance paragraph, and moved temporary review-status and command-line prose to the bundle documentation. Checker sources, imported receipts and research notes were copied byte for byte. The manifest identifies the supplied edition, not the adapted current source. Used the installed Computer Modern fonts instead of the unavailable lmodern package, and added PDF title/author metadata. The authorized rewrite splits the current source into topical sections, explains the proof before machinery, expands its primary-source spectral bridge and includes a printed standalone finite verifier. The supplied mathematical theorem and balanced-conjecture scope are unchanged.",
+    "notes_scope": "research_notes contains supplied supporting and exploratory notes. Its unfinished balanced work is not a proof; its development-stage to-do lists do not replace the current review tasks in metadata.json.",
+    "extension_source": {
+      "input": "User-provided mixed-case and sumset proof outline in this conversation",
+      "repeated_upload_sha256": "ee4f4ed3ba5983c91a0d0a2c83a0acf464934b662288b7a5f04acf9aa3314103",
+      "second_zip_identical_to_first": true,
+      "scope": "The repeated ZIP contains the old unrestricted note and certificates, not the claimed mixed edition. Current mixed lemmas were reconstructed in full and new reproducible Python checks were run. No unseen mixed Java receipt is treated as verified."
+    },
+    "actual_extended_package": {
+      "archive": "supplied_extension.zip",
+      "sha256": "9f9963b2a09c67ff7a66b253bb56dcc760899353882cb0398b3f7bda23aed8ac",
+      "members": {
+        "eisenstein_proof_note.tex": {
+          "bytes": 34250,
+          "sha256": "db3c306b52915442737ccfdf3f91669168434ad880cc2e5b988aa0552d6bb22a"
+        },
+        "README.txt": {
+          "bytes": 4934,
+          "sha256": "5717f3a19750298cb95ad4e7824fdc5baa6ebc30f42d7065545253c3f9339502"
+        },
+        "README_verification_addendum.md": {
+          "bytes": 6820,
+          "sha256": "42934742b1a9b9541a9b863a8233a86d6f6ed5549183ce572768f99c25ea8fe5"
+        },
+        "VerifyEisenstein.java": {
+          "bytes": 8655,
+          "sha256": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467"
+        },
+        "VerifyMixedEisenstein.java": {
+          "bytes": 5108,
+          "sha256": "2192160a950ef9d44f23877b4a403c50314d90db5c4ecbedbb7d7c91e4adf47b"
+        },
+        "compute_elementary_constants.py": {
+          "bytes": 3358,
+          "sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039"
+        },
+        "compute_finite_certificate.py": {
+          "bytes": 6346,
+          "sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da"
+        },
+        "compute_mixed_certificate.py": {
+          "bytes": 3411,
+          "sha256": "770c25d86be59ab90fcb4df34072bdd2ef2798b234439483c9beef51251e60f3"
+        },
+        "compute_mixed_odd_checks.py": {
+          "bytes": 6165,
+          "sha256": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f"
+        },
+        "compute_mixed_ramified_checks.py": {
+          "bytes": 4009,
+          "sha256": "3c98238204d3da35cc1a7ce515cf07a82fb7487e9eaca2559de29f37e4bf1fc8"
+        },
+        "compute_mixed_wheel_checks.py": {
+          "bytes": 3095,
+          "sha256": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746"
+        },
+        "compute_theta_checks.py": {
+          "bytes": 4634,
+          "sha256": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487"
+        },
+        "cross_language_verification_receipt.json": {
+          "bytes": 836,
+          "sha256": "92acec38f1abc0b2b1b5ab900ee83f88411063d67c3e138aad25b72fe064f411"
+        },
+        "elementary_constants_receipt.json": {
+          "bytes": 2989,
+          "sha256": "db4331593f09f3a42dd761d97e7145827a7a51cc9956b94cfb8d3d94e4bdc1f9"
+        },
+        "finite_below_100000000/receipt.json": {
+          "bytes": 2812,
+          "sha256": "49315747aa0f2b536ce5fc6d67314465a882f948764e12d5c4a4006a27937a2e"
+        },
+        "java_finite_receipt.json": {
+          "bytes": 2230,
+          "sha256": "8c3503d7d347557cb9c4e711271d7a9911a8407e1f1a92682737091c0c5866db"
+        },
+        "literature_and_independent_audit.md": {
+          "bytes": 9313,
+          "sha256": "6679715a0798bd701bb9178496135e5b06cfe3cdc5c5ba8cc78583f265a13686"
+        },
+        "literature_balanced_notes.md": {
+          "bytes": 5391,
+          "sha256": "d86452e288c521e573897db8e7477fbf3c6db09f96c6af975e4579c699e545fc"
+        },
+        "literature_balanced_polynomial.py": {
+          "bytes": 3726,
+          "sha256": "abb068f8318011f14af094e561117327b8054efcf5c0726de36514354997aae5"
+        },
+        "literature_balanced_polynomial_receipt.json": {
+          "bytes": 20019,
+          "sha256": "c97f24de35754528a527881372bea75262311d53be1c8e1232764d654efd710c"
+        },
+        "mixed_algebra_classification.md": {
+          "bytes": 5572,
+          "sha256": "619763aaf7e476c982f2fa0f88fc471fb11e24f94c0221e4b473dc7cb1f94122"
+        },
+        "mixed_algebra_orbit_sieve.md": {
+          "bytes": 6290,
+          "sha256": "1aa77066719d315b8c450ac041b4d78edf25d92d65482c6517f5f9d2910bbcac"
+        },
+        "mixed_cross_language_2000000_receipt.json": {
+          "bytes": 476,
+          "sha256": "211c0b339aaf7f5febe9f6d16d3a82a8350179f1a1d78987c5350f6137f97952"
+        },
+        "mixed_cross_language_below_100000000_receipt.json": {
+          "bytes": 784,
+          "sha256": "4a015c810f88b925dda4046a1eb274a085b799e7656a1b468607c63521b6916d"
+        },
+        "mixed_finite_below_100000000/receipt.json": {
+          "bytes": 3159,
+          "sha256": "de8186ae54f6781dff2e5da8cffee7db45a95d92caaac337043d11a3a525b16b"
+        },
+        "mixed_java_2000000_receipt.json": {
+          "bytes": 1746,
+          "sha256": "16fc92a16bad77880313d9a58e56582b321042da9d56a86ea4e3c76e1c8d39d0"
+        },
+        "mixed_java_below_100000000_receipt.json": {
+          "bytes": 2423,
+          "sha256": "b976c2df35718d657813a72055b5480d78665f34ddccdd3fa6297b700bb127f4"
+        },
+        "mixed_odd_checks_receipt.json": {
+          "bytes": 3692,
+          "sha256": "da7c688f49fc397045f73cbefa920e9a741c8395eecd7f073d364699c2c230c8"
+        },
+        "mixed_ramified_checks_3000.json": {
+          "bytes": 4850,
+          "sha256": "c25db196628eda2c753a9e06dd9cf88467b656830293610a872d41f515b7d718"
+        },
+        "mixed_spectral_check.py": {
+          "bytes": 2363,
+          "sha256": "cb9ad9a725bb8dd9457ce2add8433e34885bdfdb329402adb72a6663bb94c0d0"
+        },
+        "mixed_spectral_core.md": {
+          "bytes": 7990,
+          "sha256": "260d1ea95acc220dccbb6876c0f6f7def1d654aa46e4a46ac5b18f8e451a909f"
+        },
+        "mixed_spectral_receipt.json": {
+          "bytes": 1146,
+          "sha256": "e5f7629d4cf430f3b69a22c21a2b8d280a1c4425f292404fd49c3a4dc9426372"
+        },
+        "mixed_wheel_checks_receipt.json": {
+          "bytes": 1985,
+          "sha256": "947de58b6623b23a44a2c5b62f12b2fc98ad01f872f26b372209045a4fb9237c"
+        },
+        "spectral_check.py": {
+          "bytes": 2703,
+          "sha256": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a"
+        },
+        "spectral_core.md": {
+          "bytes": 11982,
+          "sha256": "8841956635db5f7e1767af7030438d550cf203b17eb84f55fab568be9fc2c599"
+        },
+        "theta_checks_3000.json": {
+          "bytes": 841,
+          "sha256": "fd7efc4419b0a281c47c0265236126fb8d77b28ac30b395493dab0466603cb8f"
+        },
+        "finite_2000000/receipt.json": {
+          "bytes": 2180,
+          "sha256": "ba61d4af85b1a6f8de1725b03d016892d36348eac1a6930f51bb6f704152fb53"
+        },
+        "mixed_finite_2000000/receipt.json": {
+          "bytes": 2239,
+          "sha256": "def559cc9649f85e44c30a1315771246cc03502b158b938beefa5a369a692d8c"
+        }
+      },
+      "scope": "Actual extended package received after the repeated original ZIP. Its complete bytes are preserved, new verification sources/receipts are integrated, and mathematical additions were audited against the current manuscript.",
+      "canonical_source_policy": "Current expanded topical LaTeX remains the single manuscript source. Original supplied TeX is preserved only inside the provenance archive; its Section16 JL reference is replaced in the current proof by the inspected outgoing Theorem14.4."
+    }
+  },
+  "checks": {
+    "local_replay": {
+      "checked_on": "2026-11-17",
+      "scope": "Internal replay of supplied finite verifiers and exact constants; no unrestricted mathematical proof or external review certified.",
+      "environment": {
+        "manifest_entries": 17,
+        "all_manifest_entries_verified": true,
+        "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+        "numpy_version": "1.26.4",
+        "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+        "manifest_comparison": {
+          "README.txt": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "eisenstein_proof_note.tex": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "VerifyEisenstein.java": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "compute_finite_certificate.py": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "compute_elementary_constants.py": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "compute_theta_checks.py": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "spectral_check.py": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "receipts/python_finite_receipt.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "receipts/java_finite_receipt.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "receipts/cross_language_verification_receipt.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "receipts/elementary_constants_receipt.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "receipts/theta_checks_3000.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "research_notes/spectral_core.md": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "research_notes/literature_and_independent_audit.md": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "research_notes/unfinished_balanced_notes.md": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "research_notes/literature_balanced_polynomial.py": {
+            "bytes_match": true,
+            "sha256_match": true
+          },
+          "research_notes/literature_balanced_polynomial_receipt.json": {
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "finite_command": "python3 compute_finite_certificate.py --limit 99999999 --output <ignored-replay-directory>/finite",
+      "finite_receipt": "finite/receipt.json",
+      "finite_elapsed_seconds": 4.297,
+      "all_deterministic_python_receipt_fields_match": true,
+      "all_common_imported_java_receipt_fields_match": true,
+      "uncovered_table_entries_checked": 26,
+      "uncovered_table_entries_all_match": true,
+      "elementary_constants_command": "python3 compute_elementary_constants.py (unchanged copy in ignored replay directory)",
+      "elementary_constants_receipt_matches_original_exactly": true,
+      "theta_command": "python3 compute_theta_checks.py --limit 3000 --max-prime 53 --output <ignored-replay-directory>/theta_checks_3000.json",
+      "theta_checks": 3000,
+      "binary_theta_direct_checks": 201,
+      "local_bound_checks": 9000,
+      "theta_elapsed_seconds": 0.14,
+      "all_deterministic_theta_receipt_fields_match": true,
+      "spectral_command": "python3 spectral_check.py",
+      "spectral_checks": {
+        "5": {
+          "size": 20,
+          "orbit": 2,
+          "largest_nontrivial_abs": 2.000000000000001,
+          "status": "passed"
+        },
+        "11": {
+          "size": 220,
+          "orbit": 4,
+          "largest_nontrivial_abs": 2.6180339887499025,
+          "status": "passed"
+        }
+      },
+      "spectral_scope": "Supplementary floating-point finite-group normalization checks only.",
+      "java_replayed": false,
+      "java_reason": "No Java command or /usr/lib/jvm is available in this environment; original supplied Java receipt preserved as historical evidence.",
+      "source_sha256": {
+        "compute_finite_certificate.py": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da",
+        "compute_elementary_constants.py": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039",
+        "compute_theta_checks.py": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487",
+        "spectral_check.py": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a",
+        "VerifyEisenstein.java": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467"
+      },
+      "finite_summary": {
+        "largest_target": 99999998,
+        "number_of_targets": 16666667,
+        "allowed_summands_count": 6992353,
+        "unrestricted_exceptions": [],
+        "largest_least_summand": 211,
+        "balanced_exceptions": [
+          8,
+          44
+        ],
+        "sha256_allowed_boolean_array": "010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575",
+        "sha256_unrestricted_int32_witness_indices": "fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0",
+        "sha256_balanced_int32_witness_indices": "2fea65e449c5f1bdf452afd38c101e2906010e18add1e2cc6c91ba964efdf4ec"
+      }
+    },
+    "source_review": {
+      "type": "context-bearing internal source review",
+      "scope": "Main result, limits, editorial conventions and sampled primary-source support. No fatal defect identified in this limited pass; this is not a full proof audit.",
+      "sources_inspected": [
+        {
+          "citation": "EMV",
+          "url": "https://www.math.ias.edu/~akshay/research/gg.pdf",
+          "locator": "Section 8.4, PDF pp. 39-40",
+          "support": "Quaternionic transfer to weight-two cusp forms, spectral bounds and norm-character decomposition; the precise algebra and level differ from this manuscript."
+        },
+        {
+          "citation": "Li",
+          "url": "https://www.numdam.org/article/AST_1995__228__101_0.pdf",
+          "locator": "Section 2, printed pp. 103-105",
+          "support": "General definite-quaternion and congruence-level construction."
+        },
+        {
+          "citation": "Voight",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-030-56694-4_41",
+          "locator": "Propositions 41.3.1 and 41.3.6",
+          "support": "Divisor-sum normalization and prime-power recurrence."
+        },
+        {
+          "citation": "Euler",
+          "url": "https://hexagonmath.org/2611.00370v1",
+          "support": "Citation identity and version checked."
+        },
+        {
+          "citation": "RV",
+          "url": "https://arxiv.org/abs/2509.23260",
+          "support": "Citation identity and ternary additive application checked."
+        }
+      ],
+      "revised_spectral_bridge": {
+        "scope": "Explicit maximal-order-unit level at3; class-number-one quotient and exact stabilizer; principalization formula including inverse and1/12; global character classification via strong approximation; outgoing Jacquet-Langlands theorem and weight-two Ramanujan specialization.",
+        "finding": "No concrete unresolved mathematical gap identified in this expanded internal source review. Specialist assurance remains outstanding.",
+        "primary_sources": [
+          {
+            "citation": "JL",
+            "url": "https://publications.ias.edu/sites/default/files/automorphic-forms-on-gl2_rpl_9.pdf",
+            "inspected": "Theorem14.4; Section5 final quaternion discussion and Proposition5.20",
+            "role": "Outgoing quaternionic-to-GL2 transfer and trivial-infinite-type to weight2; Theorem16.1 is not used."
+          },
+          {
+            "citation": "Voight",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-030-56694-4_28",
+            "inspected": "MainTheorem28.5.3 and proofs Sections28.7-28.8",
+            "role": "Strong approximation for norm-one B, with S={infinity,split finite prime}."
+          },
+          {
+            "citation": "DeligneModular",
+            "url": "https://www.numdam.org/item/SB_1968-1969__11__139_0.pdf",
+            "inspected": "Theorems2.10,4.1,4.9,5.1",
+            "role": "Cohomological realization, good reduction and Frobenius-Hecke relation. Weight2 is k=0 in this source."
+          },
+          {
+            "citation": "DeligneWeil",
+            "url": "https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf",
+            "inspected": "Theorem1.6",
+            "role": "Purity input supplying the Weil hypothesis and square-root magnitude in weight2."
+          }
+        ],
+        "final_source_pass": "Focused re-read of sections/prime-bounds.tex and references.tex found no concrete defect; the finite-dimensional local representation step was then made explicit as recommended."
+      }
+    },
+    "navigation_baseline": {
+      "passed": false,
+      "command": "make check-navigation",
+      "before_import": true,
+      "error": "changed supporting checker: HESSIAN-COORDINATE-CONDUCTOR",
+      "scope": "Pre-existing unrelated worktree mismatch; no catalogue or checker changes made by this import."
+    },
+    "latex": {
+      "passed": true,
+      "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "toolchain": "latexmk 4.83; pdfTeX 1.40.25; TeX Live 2023/Debian",
+      "pages": 17,
+      "warnings": [],
+      "environment_adaptation": "The supplied lmodern package was unavailable. The manuscript uses the already installed Computer Modern fonts and cm-super T1 encoding, consistent with existing repository papers."
+    },
+    "layout": {
+      "passed": true,
+      "renderer": "Poppler pdftoppm at90dpi",
+      "scope": "All17 final pages inspected in five contact sheets; narrative-first opening and sequential consequences clear, with complete technical proofs and readable appendix transitions.",
+      "all_fonts_embedded": true,
+      "font_count": 24,
+      "pdf_sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89"
+    },
+    "source_archive_build": {
+      "passed": true,
+      "command": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+      "scope": "Clean extraction of the current59-member exploratory-edition source bundle; rebuilt17-page PDF matches all retained page text and dimensions, and PDF title agrees with metadata.",
+      "calculation_replay_policy": "No new numerical run: all17 checker sources and22 receipt/provenance JSON inputs are byte-identical to the previously verified bundle. Prior complete finite replays remain evidence for those unchanged sources/inputs.",
+      "statement_preservation": "All12 remaining formal statement bodies unchanged after removing only redundant displayed k-range tags; aggregate duplicate replaced by the same complete set of proved propositions."
+    },
+    "portfolio": {
+      "passed": true,
+      "released_papers": 5,
+      "unpublished_manuscripts": 10
+    },
+    "markdown_links": {
+      "passed": true,
+      "scope": "New paper bundle and unpublished catalogue",
+      "local_links": 21,
+      "markdown_documents": 5
+    },
+    "standalone_finite_verifier": {
+      "checked_on": "2026-11-17",
+      "source_sha256": "350c03db211742733652b3c72fe13ac90530cb52b37f0b93583cd1abf9c09667",
+      "source_lines": 56,
+      "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "finite_command": "python3 verify_certificate.py > certificate_receipt.json",
+      "finite_elapsed_seconds": 4.515,
+      "scope": "Exact unrestricted finite certificate only: all n=2 mod6, 2<=n<100000000; no balanced claim or spectral theorem verification.",
+      "result": {
+        "largest_target": 99999998,
+        "number_of_targets": 16666667,
+        "allowed_summands_count": 6992353,
+        "unrestricted_exceptions": [],
+        "largest_least_summand": 211,
+        "least_summand_histogram": [
+          {
+            "summand": 1,
+            "new_targets": 6992353
+          },
+          {
+            "summand": 7,
+            "new_targets": 4296673
+          },
+          {
+            "summand": 13,
+            "new_targets": 2503660
+          },
+          {
+            "summand": 19,
+            "new_targets": 1392391
+          },
+          {
+            "summand": 31,
+            "new_targets": 640650
+          },
+          {
+            "summand": 37,
+            "new_targets": 389497
+          },
+          {
+            "summand": 43,
+            "new_targets": 220471
+          },
+          {
+            "summand": 49,
+            "new_targets": 117529
+          },
+          {
+            "summand": 61,
+            "new_targets": 50287
+          },
+          {
+            "summand": 67,
+            "new_targets": 29358
+          },
+          {
+            "summand": 73,
+            "new_targets": 16394
+          },
+          {
+            "summand": 79,
+            "new_targets": 8664
+          },
+          {
+            "summand": 91,
+            "new_targets": 3873
+          },
+          {
+            "summand": 97,
+            "new_targets": 2430
+          },
+          {
+            "summand": 103,
+            "new_targets": 1210
+          },
+          {
+            "summand": 109,
+            "new_targets": 615
+          },
+          {
+            "summand": 127,
+            "new_targets": 284
+          },
+          {
+            "summand": 133,
+            "new_targets": 155
+          },
+          {
+            "summand": 139,
+            "new_targets": 84
+          },
+          {
+            "summand": 151,
+            "new_targets": 46
+          },
+          {
+            "summand": 157,
+            "new_targets": 19
+          },
+          {
+            "summand": 163,
+            "new_targets": 13
+          },
+          {
+            "summand": 169,
+            "new_targets": 5
+          },
+          {
+            "summand": 181,
+            "new_targets": 4
+          },
+          {
+            "summand": 193,
+            "new_targets": 1
+          },
+          {
+            "summand": 211,
+            "new_targets": 1
+          }
+        ],
+        "sha256_allowed_boolean_array": "010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575",
+        "sha256_unrestricted_int32_witness_indices": "fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0"
+      },
+      "all_imported_receipt_fields_match": true,
+      "receipt_field_comparison": {
+        "largest_target": true,
+        "number_of_targets": true,
+        "allowed_summands_count": true,
+        "unrestricted_exceptions": true,
+        "largest_least_summand": true,
+        "least_summand_histogram": true,
+        "sha256_allowed_boolean_array": true,
+        "sha256_unrestricted_int32_witness_indices": true
+      },
+      "independent_membership_control": {
+        "method": "Repeated direct integer trial division, independently of the sieve",
+        "number_of_indices": 1667,
+        "largest_summand": 9997,
+        "status": "passed"
+      },
+      "negative_controls": {
+        "missing_first_target": "Uncovered target 2",
+        "missing_later_target": "Uncovered target 26",
+        "corrupted_membership_small_summand": "Small summand has a forbidden prime factor"
+      },
+      "optimized_negative_controls": "Both negative controls rejected under -O",
+      "byte_normalization": "Membership entries are bytes 0 or 1 in increasing index order; witnesses are signed little-endian int32 indices t, encoded explicitly with struct.pack(\"<i\",t), for targets k in increasing order.",
+      "small_summand_validation": "All integer divisors d of each candidate a<=211 are tested. A forbidden prime is itself such a divisor. If every prime factor is1 mod3, every positive divisor is1 mod3, so the test is equivalent to the required prime-factor condition.",
+      "reproducible_negative_inputs": {
+        "membership_input_last_index": 4,
+        "missing_first_target": {
+          "candidates": [],
+          "observed": "RuntimeError: Uncovered target 2"
+        },
+        "missing_later_target": {
+          "candidates": [
+            0
+          ],
+          "observed": "RuntimeError: Uncovered target 26"
+        },
+        "corrupt_small_summand": {
+          "candidates": [
+            0,
+            4
+          ],
+          "membership_bit_4_changed_to": 1,
+          "observed": "ValueError: Small summand has a forbidden prime factor"
+        }
+      }
+    },
+    "repository_markdown_links_after_rewrite": {
+      "passed": false,
+      "scope": "Whole shared worktree",
+      "error": "missing Markdown references:\nresearch/arithmetic/ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md -> elliptic_exception_two_five_adic_classification_checks.json",
+      "scope_note": "The new bundle and its catalogue entry pass their focused local-link check."
+    },
+    "source_and_pdf_consistency": {
+      "passed": true,
+      "pages": 17,
+      "all_source_json_valid": true,
+      "tex_lf_and_whitespace": true,
+      "all_eight_citations_used_and_resolved": true,
+      "metadata_title_matches_pdf": true
+    },
+    "prior_edition_blind_reader": {
+      "reviewer": "Fresh internal AI sub-agent, no inherited conversation or workspace context",
+      "method": "PDF-only blind reading of all seven pages, including rendered formulas",
+      "edition_sha256": "c0d6f70f886b63e51c7ae47aabababcd06a54c0cbf363530e6b56e6374b34dc2",
+      "supplied_context": "Only the PDF path, the five reader questions and tool instructions; no source, repository instructions, notes or external references consulted.",
+      "answers": {
+        "contribution": "Binary Eisenstein restricted-prime sum theorem with explicit estimates and finite completion; method attributed to Euler preprint; no priority established.",
+        "conceptual_reason": "Count all pairs of Eisenstein norms and show the fractions spoiled by forbidden primes have total below one; combine spectral small-prime and elementary tail bounds with exact finite coverage.",
+        "hardest_step": "Lemma 3.1, Section 3.2: concrete-to-adelic Hecke identification, character removal and Jacquet-Langlands/Ramanujan bound. Section 3.3 converts it to the local sieve bound.",
+        "limitations": "Balanced summands remain conjectural; the bound211 is finite-range only; automorphic input and an essential finite computation remain substantive dependencies.",
+        "verification_obstacles": "The companion archive was not identified in the PDF, no executable verifier/checksums were printed, and the spectral correspondence needed an expanded bridge and theorem-level references."
+      },
+      "additional_checks": "Exact recalculation of Lemma4.1 local maxima and rational products; an independently coded sieve had no uncovered target through9998. These bounded checks do not certify the spectral input or full range.",
+      "revision_response": "Reworked introduction and exact prior-work comparison; printed the standard-library verifier and normalized array digests; identified source.zip; expanded the primary-source spectral bridge; clarified finite-dimensional local representations; rechecked the final PDF.",
+      "independence": "Internal AI blind reading only; no external specialist review.",
+      "revised_edition": {
+        "pdf_sha256": "e8e776531ea5a11ab588491ff58b2cd2135abd544b732fd60381484fdb99dbdd",
+        "pages": 10,
+        "context": "Same isolated PDF-only reviewer; current PDF only, no repository/source/metadata or external references.",
+        "findings": "Original missing-main-verifier obstacle resolved. No concrete mathematical contradiction, executable-appendix defect or inaccurate claim found in the recheck. Spectral application remains a substantial external-specialist burden.",
+        "answers": {
+          "contribution": "Necessary n2mod6 congruence sufficient for the binary restricted-prime decomposition; adapted method and classical inputs now clearly distinguished.",
+          "conceptual_reason": "Exact norm count, normalizer/spectral small-prime control, elementary large-prime control and separate2bound, with spoiled proportion below249/250 and finite completion.",
+          "hardest_step": "Lemma3.1, Section3.3, pages4-5: exact quaternionic-to-cuspidal spectral bridge. The revised text now identifies all normalizations and primary theorem hypotheses.",
+          "limitations": "Balanced extension conjectural beyond computation,211 bound finite only, deep external automorphic theory and exact computation remain dependencies.",
+          "verification_obstacles": "Unrestricted finite verifier and complete input now present in PDF; full execution and external specialist review remain. Balanced search and historical cross-language agreement are reproduced by companion programs."
+        },
+        "executable_appendix_check": "Program extracted from the PDF compiles across pages9-10. A bounded run covered1667 targets through9998; membership matched independent trial factorization. No full-range run by the PDF-only reviewer.",
+        "layout": "Indentation retained across pages9-10 with no clipping or footer collision.",
+        "assurance": "Internal AI blind-reader test only; no specialist certification."
+      }
+    },
+    "mixed_finite_replay": {
+      "scope": "New internal finite replay, not comparison with user-supplied unseen mixed Java/Python certificates",
+      "standard_library_full_elapsed_seconds": 4.831,
+      "all_numpy_fields_match": true,
+      "field_comparison": {
+        "largest_target": true,
+        "number_of_targets": true,
+        "allowed_summands_count": true,
+        "unrestricted_exceptions": true,
+        "largest_least_b": true,
+        "least_b_histogram": true,
+        "sha256_membership_uint8": true,
+        "sha256_mixed_least_b_index_int32_le": true
+      },
+      "standard_library_source_sha256": "056467b69fa4b65076d3317adb29cf20e700e0aa228c8378c9bea5b6be765bee",
+      "numpy_source_sha256": "462f12d15b226e621a4a2e8dee50c045e1aeefab590d2477ee82c3b86176786d",
+      "optimized_negative_controls_stdout": "{'membership_indices_checked': 1667, 'largest_membership_value': 9997, 'independent_trial_factorization_matches': True, 'negative_controls': {'missing_target': 'Uncovered mixed target', 'negative_complement': 'Nonpositive summand or out-of-range witness', 'forbidden_b': 'Forbidden summand', 'corrupt_membership_and_witness': 'Small b summand has a forbidden prime factor'}}",
+      "byte_conventions": "Membership bytes0/1 in increasing index order; least mixed b-index j as signed little-endian32-bit integer, n=6k+4=(6(k-3j)+1)+3(6j+1).",
+      "results": {
+        "largest_target": 99999994,
+        "number_of_targets": 16666666,
+        "allowed_summands_count": 6992352,
+        "unrestricted_exceptions": [],
+        "largest_least_b": 199,
+        "least_b_histogram": [
+          {
+            "b": 1,
+            "new_targets": 6992352
+          },
+          {
+            "b": 7,
+            "new_targets": 4296527
+          },
+          {
+            "b": 13,
+            "new_targets": 2502584
+          },
+          {
+            "b": 19,
+            "new_targets": 1391730
+          },
+          {
+            "b": 31,
+            "new_targets": 641175
+          },
+          {
+            "b": 37,
+            "new_targets": 390079
+          },
+          {
+            "b": 43,
+            "new_targets": 220890
+          },
+          {
+            "b": 49,
+            "new_targets": 117359
+          },
+          {
+            "b": 61,
+            "new_targets": 50595
+          },
+          {
+            "b": 67,
+            "new_targets": 29338
+          },
+          {
+            "b": 73,
+            "new_targets": 16382
+          },
+          {
+            "b": 79,
+            "new_targets": 8837
+          },
+          {
+            "b": 91,
+            "new_targets": 4007
+          },
+          {
+            "b": 97,
+            "new_targets": 2387
+          },
+          {
+            "b": 103,
+            "new_targets": 1257
+          },
+          {
+            "b": 109,
+            "new_targets": 584
+          },
+          {
+            "b": 127,
+            "new_targets": 282
+          },
+          {
+            "b": 133,
+            "new_targets": 152
+          },
+          {
+            "b": 139,
+            "new_targets": 74
+          },
+          {
+            "b": 151,
+            "new_targets": 34
+          },
+          {
+            "b": 157,
+            "new_targets": 15
+          },
+          {
+            "b": 163,
+            "new_targets": 12
+          },
+          {
+            "b": 169,
+            "new_targets": 7
+          },
+          {
+            "b": 181,
+            "new_targets": 4
+          },
+          {
+            "b": 193,
+            "new_targets": 1
+          },
+          {
+            "b": 199,
+            "new_targets": 2
+          }
+        ],
+        "sha256_membership_uint8": "aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0",
+        "sha256_mixed_least_b_index_int32_le": "91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d"
+      },
+      "standard_library_optimized_negative_controls": {
+        "missing_first_target": "RuntimeError: Uncovered mixed target 4",
+        "missing_later_target": "RuntimeError: Uncovered mixed target 28",
+        "forbidden_b_corruption": "ValueError: b summand has a forbidden prime factor"
+      },
+      "standard_library_negative_control_inputs": {
+        "membership_last_index": 20,
+        "missing_first_target_candidates": [],
+        "missing_later_target_candidates": [
+          0
+        ],
+        "forbidden_b_corruption": {
+          "candidates": [
+            0,
+            4
+          ],
+          "good_bit4_changed_to": 1
+        },
+        "known_positive_case": "membership(0),candidates[0],largest_target4"
+      }
+    },
+    "binary_finite_replay": {
+      "scope": "Fresh internal standard-library full replay of both binary families; no mixed Java comparison",
+      "full_elapsed_seconds": 9.302,
+      "source_sha256": "afceb0850582fc0f84c7643df4aded801c7e3516289e15f74d1e645d862ba2d2",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "all_comparisons_passed": true,
+      "comparison": {
+        "unrestricted": {
+          "largest_target": true,
+          "number_of_targets": true,
+          "allowed_count": true,
+          "exceptions": true,
+          "largest_least_small_summand": true,
+          "sha256_membership_uint8": true,
+          "sha256_small_index_int32_le": true,
+          "histogram": true
+        },
+        "mixed": {
+          "largest_target": true,
+          "number_of_targets": true,
+          "allowed_count": true,
+          "exceptions": true,
+          "largest_least_small_summand": true,
+          "sha256_membership_uint8": true,
+          "sha256_small_index_int32_le": true,
+          "histogram": true
+        }
+      },
+      "byte_conventions": "For family weight w, target n=6k+w+1. Little-endian signedint32 t means n=(6(k-wt)+1)+w(6t+1). Membership bytes0/1 increasing in index. Unrestricted imposes2t<=k, mixed3t<=k.",
+      "optimized_negative_controls": {
+        "unrestricted": {
+          "missing_first_target": "RuntimeError: Uncovered target 2",
+          "missing_later_target": "RuntimeError: Uncovered target 26",
+          "forbidden_small_summand": "ValueError: Small summand has a forbidden prime factor",
+          "known_positive_case": 2
+        },
+        "mixed": {
+          "missing_first_target": "RuntimeError: Uncovered target 4",
+          "missing_later_target": "RuntimeError: Uncovered target 28",
+          "forbidden_small_summand": "ValueError: Small summand has a forbidden prime factor",
+          "known_positive_case": 4
+        }
+      },
+      "negative_control_inputs": {
+        "membership_last_index": 20,
+        "missing_first_target_candidates": [],
+        "missing_later_target_candidates": [
+          0
+        ],
+        "forbidden_small_summand": {
+          "candidates": [
+            0,
+            4
+          ],
+          "good_bit4_changed_to": 1
+        },
+        "known_positive_case": "membership(0) with automatic candidates"
+      }
+    },
+    "mixed_constants": {
+      "scope": "Exact local maxima and coefficient arithmetic; not a spectral or 3-adic proof",
+      "two_adic_factor": "(e+3)/(3*2^(e/5)), e>=1",
+      "two_adic_monotone_tail_start": 4,
+      "two_adic_maximizing_exponent": 4,
+      "two_adic_maximum_fifth_power": "16807/3888",
+      "odd_inert_local_maxima": [
+        {
+          "prime": 5,
+          "last_exponent_required": 2,
+          "maximizing_exponent": 2,
+          "maximum_fifth_power": "94921875/28629151"
+        },
+        {
+          "prime": 11,
+          "last_exponent_required": 1,
+          "maximizing_exponent": 1,
+          "maximum_fifth_power": "14641/7776"
+        },
+        {
+          "prime": 17,
+          "last_exponent_required": 1,
+          "maximizing_exponent": 1,
+          "maximum_fifth_power": "83521/59049"
+        },
+        {
+          "prime": 23,
+          "last_exponent_required": 1,
+          "maximizing_exponent": 1,
+          "maximum_fifth_power": "279841/248832"
+        },
+        {
+          "prime": 29,
+          "last_exponent_required": 1,
+          "maximizing_exponent": 0,
+          "maximum_fifth_power": "1"
+        }
+      ],
+      "odd_product_fifth_power": "133671187092656640625/13460996921358974976",
+      "combined_fifth_power": "2246611641466280158984375/52336356030243694706688",
+      "spectral_bound_constant": "9/4",
+      "spectral_bound_fifth_power": "59049/1024",
+      "spectral_strict_comparison_verified": true,
+      "lattice_constant": "15/2",
+      "union_main_constant": "29/60",
+      "union_X_minus_one_fifth_constant": "11/10",
+      "union_X_minus_six_fifths_constant": "111/20",
+      "union_X_minus_two_constant": "2/3",
+      "cutoff": 100000000,
+      "strict_union_bound_at_cutoff": "591/625",
+      "large_prime_tail_reason": "For p>=32, (e+1)^5<=32^e<=p^e. Smaller odd inert local ratios decrease after the recorded cutoff.",
+      "two_adic_tail_reason": "Successive ratios (e+4)/(e+3)/2^(1/5) decrease, so the recorded first ratio<=1 proves the global maximum.",
+      "source_sha256": "bed5032ca23f842389391e6893a64695570ee8b3a4fae79f7b2ea0f62ef07ef2"
+    },
+    "ramified_count_controls": {
+      "scope": "Exact finite controls only; no unrestricted identity proved by enumeration",
+      "limit": 6000,
+      "coordinate_bound": 89,
+      "coordinate_box_complete_reason": "Q(x,y)>=3*x*x/4 and>=3*y*y/4",
+      "reduced_even_n1mod3_cases": 444,
+      "square_cases": 16,
+      "all_four_counts_match": true,
+      "small_examples": [
+        {
+          "n": 4,
+          "lambda": -2,
+          "S": 6,
+          "counts": [
+            84,
+            72,
+            12,
+            0
+          ]
+        },
+        {
+          "n": 10,
+          "lambda": 0,
+          "S": 18,
+          "counts": [
+            216,
+            216,
+            72,
+            72
+          ]
+        },
+        {
+          "n": 16,
+          "lambda": 4,
+          "S": 24,
+          "counts": [
+            372,
+            288,
+            156,
+            144
+          ]
+        },
+        {
+          "n": 22,
+          "lambda": 0,
+          "S": 36,
+          "counts": [
+            432,
+            432,
+            144,
+            144
+          ]
+        },
+        {
+          "n": 34,
+          "lambda": 0,
+          "S": 54,
+          "counts": [
+            648,
+            648,
+            216,
+            216
+          ]
+        },
+        {
+          "n": 40,
+          "lambda": 0,
+          "S": 72,
+          "counts": [
+            1080,
+            864,
+            360,
+            288
+          ]
+        },
+        {
+          "n": 46,
+          "lambda": 0,
+          "S": 72,
+          "counts": [
+            864,
+            864,
+            288,
+            288
+          ]
+        },
+        {
+          "n": 58,
+          "lambda": 0,
+          "S": 90,
+          "counts": [
+            1080,
+            1080,
+            360,
+            360
+          ]
+        },
+        {
+          "n": 64,
+          "lambda": -8,
+          "S": 96,
+          "counts": [
+            1524,
+            1152,
+            444,
+            288
+          ]
+        },
+        {
+          "n": 82,
+          "lambda": 0,
+          "S": 126,
+          "counts": [
+            1512,
+            1512,
+            504,
+            504
+          ]
+        },
+        {
+          "n": 88,
+          "lambda": 0,
+          "S": 144,
+          "counts": [
+            2160,
+            1728,
+            720,
+            576
+          ]
+        },
+        {
+          "n": 94,
+          "lambda": 0,
+          "S": 144,
+          "counts": [
+            1728,
+            1728,
+            576,
+            576
+          ]
+        },
+        {
+          "n": 100,
+          "lambda": 10,
+          "S": 186,
+          "counts": [
+            2604,
+            2232,
+            948,
+            864
+          ]
+        }
+      ],
+      "wrong_lambda_sign_rejected_n4": true,
+      "group_control": {
+        "units": 72,
+        "projective_group": 36,
+        "unit_image": 6,
+        "cosets": 6,
+        "norm_classes": [
+          3,
+          3
+        ],
+        "right_omega_cycles_opposite_class": true,
+        "multiplicativity_checks": 1296
+      },
+      "source_sha256": "8841d1b8c071b453bc288a72fc377a9456ca1eff9f450f03441c02e1ad28ac83",
+      "replay_command": "python3 check_ramified_counts.py --limit 6000 --output <ignored-directory>/ramified_counts_receipt.json",
+      "clean_bundle_replay": "Passed using explicit6000 limit and comparison of the full written receipt. The program stdout omits small_examples; receipt is authoritative."
+    },
+    "extension_source_review": {
+      "type": "Context-bearing internal mathematical source review",
+      "scope": "Odd-component projection and cancellation, exact9/4 constant, six-point group/orbits, all-index B3 recurrence, oddB3 count, both closure arguments, primitive value classification, sumsets and corrected general criterion.",
+      "findings": "No concrete unresolved mathematical gap found after explicit hypotheses and corrections.",
+      "corrections": [
+        "The B3 identity is restricted to targets supported on inert primes. It is false for arbitrary targets prime to3.",
+        "Its unfiltered form is stated also for odd targets, so it may be applied to n/4 when v2(n)=2.",
+        "Primitive norm values are distinguished from the actual coordinate pairs of the surviving quaternion representation.",
+        "The subgroup K is specified in the orbit lemma; d>0, uniform local constants and a strict exceptional-prime margin are explicit.",
+        "Dilation3\u00b7A is distinguished from the threefold sumset3A; primitive values use N rather than the inert-prime set P.",
+        "Undefined and conflicting optional Chebyshev notation was removed; the explicit Satake coefficient proof remains."
+      ],
+      "assurance": "Internal source and exact computations only; no external specialist review or formal verification.",
+      "actual_package_comparison": {
+        "core": "Same2-adic cancellation,9/4 constant,B3 formulas and591/625 closure; the existing3-representative quotient proof retained.",
+        "additions": "All-real wheel discrepancy and integral proof, direct local primitive-sum obstruction, no-finite-menu CRT proposition, and explicit parameterized effective cutoff with known constants/modulus.",
+        "citation_correction": "Kept outgoing JLTheorem14.4; incomingSection16 is the reverse transfer."
+      }
+    },
+    "blind_reader": {
+      "reviewer": "Fresh isolated internal AI reader with PDF-only context",
+      "supplied_context": "Only the PDF and an editorial brief requesting the Gaussian-to-Eisenstein exploration, plus the five reader questions. No source, repository history, supporting files or external references consulted.",
+      "first_edition_sha256": "2d9f4ce3ddb586dfc9ec7ece067c31b683a604d3b5080c3f62d4971178ba17b3",
+      "final_edition_sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89",
+      "pages": 17,
+      "answers": {
+        "contribution": "Both binary restricted-prime identities, exact primitive and higher sumsets, sharp four/seven bounds, and the explicit conditional effective criterion; method attributed to the Gaussian paper.",
+        "conceptual_reason": "Exactly countable quaternion norm candidates, local spoiled fractions, an exact odd filter and six-point ramified count, then finite completion; consequences unfold from the binary identities.",
+        "hardest_step": "Lemma3.1, the adelic/Hecke/cuspidal spectral bridge; the added three-obligation map explains its role and gives an arithmetic reading path. The six-point calculation is the main mixed-case arithmetic step.",
+        "limitations": "Balanced summands remain conjectural; finite small menus cannot be global; the generic criterion needs all its hypotheses; imported spectral theory and complete finite scans retain their separate verification burdens.",
+        "verification_obstacles": "The complete binary verifier is printed, but the reader did not execute full scans or inspect external theorems. Supplemental NumPy agreement and balanced data require the accompanying sources."
+      },
+      "findings": "The narrative is now connected and exploratory. Final recheck confirms the sequential consequences, removal of the theorem repetition, precise conditional effectiveness and sound transitions into technical proofs. No remaining concrete mathematical/expository or layout defect found in this bounded reading.",
+      "layout": "Every final rendered page inspected; no clipping, overlap, missing glyphs or broken displays. Criterion and appendix continuations are readable.",
+      "assurance": "Internal PDF-only AI reading; no external specialist certification or fresh exhaustive computation."
+    },
+    "navigation": {
+      "commands": [
+        "make render-navigation",
+        "make check-navigation"
+      ],
+      "render_navigation_passed": true,
+      "focused_editorial_registry_passed": true,
+      "check_navigation_passed": false,
+      "last_standard_blocker": "Unmapped retained documents in unrelated factorial/image-rigidity, hessian and moments work. No Eisenstein omissions or freshness errors were reported.",
+      "preservation": "All17 checker sources and22 receipt/provenance inputs independently compared with the sealed baseline; unchanged. All12 nonredundant statement bodies preserved after removing only duplicate k-range annotations.",
+      "source_mapping": "The aggregate sumsets claim is retained as a derived claim sourced to its three actual propositions; the obsolete duplicated theorem declaration mapping is removed. Title and exact proof/citation locations refreshed.",
+      "assurance": "Source/registry validation only; no mathematical assurance upgrade and no unrelated evidence or validator changes."
+    },
+    "supplied_extended_package_replay": {
+      "scope": "Fresh internal replay of received extended package Python checks; Java source and archived receipt inspected, not executed",
+      "archive_sha256": "9f9963b2a09c67ff7a66b253bb56dcc760899353882cb0398b3f7bda23aed8ac",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "numpy": "1.26.4",
+      "executions": [
+        {
+          "command": "python3 compute_mixed_certificate.py --limit 99999999 --output mixed-finite",
+          "exit_code": 0,
+          "elapsed_seconds": 2.348
+        },
+        {
+          "command": "python3 compute_mixed_ramified_checks.py --limit 3000 --output mixed_ramified_checks_3000.json",
+          "exit_code": 0,
+          "elapsed_seconds": 0.186
+        },
+        {
+          "command": "python3 compute_mixed_odd_checks.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.212
+        },
+        {
+          "command": "python3 compute_mixed_wheel_checks.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.02
+        },
+        {
+          "command": "python3 mixed_spectral_check.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.018
+        }
+      ],
+      "source_sha256": {
+        "compute_mixed_certificate.py": "770c25d86be59ab90fcb4df34072bdd2ef2798b234439483c9beef51251e60f3",
+        "compute_mixed_odd_checks.py": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f",
+        "compute_mixed_ramified_checks.py": "3c98238204d3da35cc1a7ce515cf07a82fb7487e9eaca2559de29f37e4bf1fc8",
+        "compute_mixed_wheel_checks.py": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746",
+        "mixed_spectral_check.py": "cb9ad9a725bb8dd9457ce2add8433e34885bdfdb329402adb72a6663bb94c0d0",
+        "VerifyMixedEisenstein.java": "2192160a950ef9d44f23877b4a403c50314d90db5c4ecbedbb7d7c91e4adf47b"
+      },
+      "fresh_vs_archived_python": {
+        "scope": true,
+        "requested_inclusive_limit": true,
+        "largest_target": true,
+        "number_of_targets": true,
+        "exceptions": true,
+        "uncovered_count": true,
+        "largest_least_b": true,
+        "largest_least_weighted_summand_3b": true,
+        "largest_least_b_targets": true,
+        "least_b_histogram": true,
+        "witness_encoding": true,
+        "sha256_admissibility_bits": true,
+        "sha256_int32_witness_indices": true,
+        "all_witnesses_and_exceptions_rechecked": true,
+        "script_sha256": true
+      },
+      "fresh_vs_archived_java": {
+        "largest_target": true,
+        "number_of_targets": true,
+        "exceptions": true,
+        "uncovered_count": true,
+        "largest_least_b": true,
+        "largest_least_weighted_summand_3b": true,
+        "largest_least_b_targets": true,
+        "least_b_histogram": true,
+        "sha256_admissibility_bits": true,
+        "sha256_int32_witness_indices": true
+      },
+      "fresh_vs_independent_mixed": {
+        "largest_target": true,
+        "number_of_targets": true,
+        "exceptions": true,
+        "largest_least_b": true,
+        "membership_hash": true,
+        "witness_hash": true,
+        "histogram": true
+      },
+      "all16666666_witness_indices_exactly_equal": true,
+      "support_receipt_comparisons": {
+        "mixed_ramified_checks_3000.json": {
+          "all_deterministic_fields_match": true,
+          "fields_checked": 13
+        },
+        "mixed_odd_checks_receipt.json": {
+          "all_deterministic_fields_match": true,
+          "fields_checked": 21
+        },
+        "mixed_wheel_checks_receipt.json": {
+          "all_deterministic_fields_match": true,
+          "fields_checked": 18
+        },
+        "mixed_spectral_receipt.json": {
+          "all_deterministic_fields_match": true,
+          "fields_checked": 11
+        }
+      },
+      "java_replayed": false,
+      "java_reason": "No Java executable found on Windows PATH or WSL, and /usr/lib/jvm does not exist. No toolchain installed.",
+      "limitations": [
+        "The received Python checkers use assert for some verification steps; executed normally, without -O. The canonical new standalone verifier uses explicit raises and has meaningful -O corruption controls.",
+        "Supplied mixed Java receipt is archival evidence; its source digest and every common result field match but its Java run was not independently replayed here.",
+        "Finite theta/CM checks and the36-element quotient enumeration do not prove an unrestricted spectral/theta theorem by themselves."
+      ],
+      "current_bundle_path_map": {
+        "compute_mixed_certificate.py": "supplied/compute_mixed_certificate.py",
+        "other_supplied_checker_basenames": "paper directory",
+        "full_input_archive": "supplied_extension.zip",
+        "imported_receipts": "receipts/supplied-extension/"
+      }
+    },
+    "blind_reader_final_extension_refresh": {
+      "passed": true,
+      "scope": "Current exploratory edition re-read in PDF-only isolation; no assurance upgrade."
+    },
+    "editorial_revision": {
+      "purpose": "Present the paper as a connected mathematical exploration: released Gaussian theorem, Eisenstein lattice, mixed case, primitive/higher sumsets, reusable criterion and balanced question.",
+      "source_review": "Focused internal editorial reading found the new progression coherent and no invented discovery chronology or inaccurate scope claim.",
+      "changes": "New title/abstract/introduction and explanatory section openings; short route map through the spectral bridge; removed only the duplicated aggregate theorem presentation and repeated k-range tags.",
+      "statement_preservation": "The twelve remaining formal statement bodies match the previous source bundle after ignoring only the redundant displayed k-range tags. The removed aggregate theorem conclusions remain in the three proved primitive-sumset propositions.",
+      "calculation_preservation": "All39 checker and receipt/provenance JSON files compared byte-for-byte with the previous bundle; unchanged. No new full finite run was necessary.",
+      "source_registry_note": "The derived aggregate SUMSETS claim is retained, with sources in the three actual propositions rather than the retired redundant theorem label.",
+      "registry_preservation": "The independent registry comparison confirmed the unchanged calculation/input bytes and preserved mathematical statement scopes; current exact sources and title were refreshed."
+    },
+    "prior_mathematical_edition_blind_reader": {
+      "reviewer": "Fresh internal AI sub-agent without inherited conversation or repository context",
+      "method": "All16 PDF pages read, including rendered formulas and executable appendix; final targeted recheck of corrected passages and appendix transitions.",
+      "supplied_context": "Only the PDF path, tool instructions and the five blind-reader questions; no source, metadata, supporting files or external references consulted.",
+      "first_edition_sha256": "b3f740edcc14662ee46d666edd45c3e84569a9edee4d4287d03280d4ed27ee91",
+      "final_edition_sha256": "3aad3c3c3707a9feb50f5e96fe2e3138be02517fae460a3a8e3070d106ac6e45",
+      "pages": 17,
+      "answers": {
+        "contribution": "Both exact binary restricted-prime identities, exact primitive-norm sumsets and sharp four/seven additive-basis bounds; the generic criterion states uniform sufficient hypotheses.",
+        "conceptual_reason": "Odd quaternion norm candidates, spectral small-prime control, elementary tail and exact ramified-prime count leave a positive margin, followed by two full finite completions.",
+        "hardest_step": "Imported spectral bridge Lemma3.1 pp4-5; delicate new mixed argument is the six-point quotient and square correction in Sections4.3-4.4 pp7-8.",
+        "limitations": "Balanced summands remain conjectural; primitive values do not imply the surviving coordinates are primitive; additional norm-form applications need all stated criterion hypotheses.",
+        "verification_obstacles": "Full binary program and complete fixed inputs printed in appendix. Reviewer did not rerun full scans or check external automorphic sources. NumPy comparison and balanced search require the declared supplement."
+      },
+      "findings": "No definite mathematical error found. Final recheck confirms H(e) maximization, unfiltered odd n/4 scope, omitted nonintegral term and supplementary balanced-verifier identification. No remaining defect found in that targeted recheck.",
+      "layout": "Executable appendix complete across pp15-16 with indentation and transitions intact.",
+      "assurance": "Internal AI blind reading only; no specialist certification or external numerical replay.",
+      "prior_core_edition_sha256": "1ac67cec5c8cda293399578fad3a261836ef8c97753fea22259153f56780d06b",
+      "merged_additions_recheck": {
+        "mathematical_edition_sha256": "0ab6d887760cebcc20d9c27f5d2b5edca96e598e5dc629a26aa42af958511eca",
+        "findings": "No mathematical defect found in the effective criterion, explicitN_eta cutoff, t-leading-coefficient optimization, CRT finite-menu proposition or all-real wheel proof. No additional arithmetic family is asserted.",
+        "final_layout_only_recheck": "Finalhash3aad...; pp14-17 checked after removing a forced page break. No clipping, orphan headings or indentation problems; appendix and references continue cleanly."
+      }
+    }
+  },
+  "assurance": {
+    "external_specialist_review": false,
+    "independent_replay": false,
+    "formal_verification": false,
+    "public_deposit": false,
+    "novelty_established": false,
+    "pdf_only_blind_reader_review": "Fresh isolated PDF-only reading and final recheck of the17-page exploratory edition; internal AI review only.",
+    "java_mixed_fresh_replay": false
+  },
+  "open_obligations": [
+    "Obtain specialist review of the odd-component Hecke estimate, six-point quotient at3 and the existing Jacquet-Langlands/weight-two specialization.",
+    "Complete the literature audit for primitive Eisenstein norm sumsets and sharp additive-basis bounds; the orbit criterion abstracts an attributed method.",
+    "Obtain external replay and a persistent source-archive identifier before submission.",
+    "Keep the balanced assertion conjectural beyond the finite range until a proof controls the ratio of the norms."
+  ],
+  "artifacts": {
+    "VerifyEisenstein.java": {
+      "bytes": 8655,
+      "sha256": "15ae478d4692ab4c8954163c15546b012354bae4d05927fb35ecd0fe3a446467"
+    },
+    "VerifyMixedEisenstein.java": {
+      "bytes": 5108,
+      "sha256": "2192160a950ef9d44f23877b4a403c50314d90db5c4ecbedbb7d7c91e4adf47b"
+    },
+    "check_ramified_counts.py": {
+      "bytes": 5142,
+      "sha256": "8841d1b8c071b453bc288a72fc377a9456ca1eff9f450f03441c02e1ad28ac83"
+    },
+    "compute_elementary_constants.py": {
+      "bytes": 3358,
+      "sha256": "c2ebce0656202e1cc7bc4787d91b8476265c4389f8f3b12959e6e8e5f2c05039"
+    },
+    "compute_finite_certificate.py": {
+      "bytes": 6346,
+      "sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da"
+    },
+    "compute_mixed_certificate.py": {
+      "bytes": 5357,
+      "sha256": "462f12d15b226e621a4a2e8dee50c045e1aeefab590d2477ee82c3b86176786d"
+    },
+    "compute_mixed_odd_checks.py": {
+      "bytes": 6165,
+      "sha256": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f"
+    },
+    "compute_mixed_ramified_checks.py": {
+      "bytes": 4009,
+      "sha256": "3c98238204d3da35cc1a7ce515cf07a82fb7487e9eaca2559de29f37e4bf1fc8"
+    },
+    "compute_mixed_wheel_checks.py": {
+      "bytes": 3095,
+      "sha256": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746"
+    },
+    "compute_theta_checks.py": {
+      "bytes": 4634,
+      "sha256": "685666823dcc9271dfa7c41b22b3bc9a7eae89f7a45bddd485f40f85891cc487"
+    },
+    "main.tex": {
+      "bytes": 2706,
+      "sha256": "f737b475ce526eef84fe1f16a6b88c5b481595c1498bac4bd9e88541465c4c8d"
+    },
+    "mixed_spectral_check.py": {
+      "bytes": 2363,
+      "sha256": "cb9ad9a725bb8dd9457ce2add8433e34885bdfdb329402adb72a6663bb94c0d0"
+    },
+    "paper.pdf": {
+      "bytes": 543087,
+      "sha256": "113afc901d365160123f8d1e85badd7c594f9bf66297ba931290c9b25c524a89"
+    },
+    "references.tex": {
+      "bytes": 1867,
+      "sha256": "ca2867ff8185b40ee66954a6fa177573c1cfca84042d6c10cdcda61576f8402a"
+    },
+    "sections/balanced-summands.tex": {
+      "bytes": 906,
+      "sha256": "20846cda406d0b355c581b43230f28200868fb7fe737126d4699d630a984b2fa"
+    },
+    "sections/elementary-estimates.tex": {
+      "bytes": 3632,
+      "sha256": "ebfaf83394592ee9b2e929dd5f82bd19118a535807fb69bccd3e0d23b2ba890c"
+    },
+    "sections/finite-certificate.tex": {
+      "bytes": 3734,
+      "sha256": "de2c9b3b78c66f48e31b5c248cb6182e9cd9f7e5648333d352e2f83b6248af35"
+    },
+    "sections/infinite-range.tex": {
+      "bytes": 2183,
+      "sha256": "1081989221e75160ccb107738c2fe26c5c64851c5425dcfc86376a24b9b6f58f"
+    },
+    "sections/introduction.tex": {
+      "bytes": 4630,
+      "sha256": "8b2aae937f4b5c8587dc2870fdea3dea7a8032d84e9ce3b573d4a61c319c227a"
+    },
+    "sections/mixed-local.tex": {
+      "bytes": 9902,
+      "sha256": "6b29022871991b8e061fd3f0c16c9b515da30820f1e0222e1ad58eb9dbf06e3b"
+    },
+    "sections/norm-count.tex": {
+      "bytes": 2787,
+      "sha256": "e628ef84783184fa11631a74b9da189b21a8329422c70aacb5df767fc8a81ff0"
+    },
+    "sections/orbit-criterion.tex": {
+      "bytes": 4656,
+      "sha256": "0cfa5f5357aa970c0d78d6ae902e95a97d31b63c2af5ec0deea8425efd820b7e"
+    },
+    "sections/prime-bounds.tex": {
+      "bytes": 9850,
+      "sha256": "fa9336ddc784e6e22aca7b7447e5248925008678b8723aa9e97762d7e8e1cc66"
+    },
+    "sections/primitive-sumsets.tex": {
+      "bytes": 5358,
+      "sha256": "d5c958bb8cf291aa20c92c7d3c9825d73d2b6549670b23055b5ef1261ee835e7"
+    },
+    "sections/standalone-verifier.tex": {
+      "bytes": 1982,
+      "sha256": "28c98f17294c58272519d266185876530313dc515437d7d1b030902f889bc5e7"
+    },
+    "spectral_check.py": {
+      "bytes": 2703,
+      "sha256": "6deeda1bb4a9f3dec26206bdf8fe295743a349c325d80de36f2b5fc14ab7478a"
+    },
+    "supplied/compute_mixed_certificate.py": {
+      "bytes": 3411,
+      "sha256": "770c25d86be59ab90fcb4df34072bdd2ef2798b234439483c9beef51251e60f3"
+    },
+    "supplied_extension.zip": {
+      "bytes": 82582,
+      "sha256": "9f9963b2a09c67ff7a66b253bb56dcc760899353882cb0398b3f7bda23aed8ac"
+    },
+    "verify_binary_certificates.py": {
+      "bytes": 2610,
+      "sha256": "afceb0850582fc0f84c7643df4aded801c7e3516289e15f74d1e645d862ba2d2"
+    },
+    "verify_certificate.py": {
+      "bytes": 2221,
+      "sha256": "350c03db211742733652b3c72fe13ac90530cb52b37f0b93583cd1abf9c09667"
+    },
+    "verify_mixed_constants.py": {
+      "bytes": 3395,
+      "sha256": "bed5032ca23f842389391e6893a64695570ee8b3a4fae79f7b2ea0f62ef07ef2"
+    }
+  },
+  "novelty_comparison": {
+    "closest_binary_result": "Howe-Huffman-Kohlmeyer-Kruer, Hexagon2611.00370v1 Theorem1.1: every positive n2mod4 is a sum of two positive integers supported on primes1mod4, with1 allowed; no exceptions.",
+    "this_result": "Both restricted-prime binary identities, exact primitive Eisenstein norm binary/higher sumsets and sharp additive-basis bounds.",
+    "method_attribution": "Norm-counting and torus-normalizer averaging adapted from that work; classical automorphic inputs are attributed separately.",
+    "new_specialization_requiring_argument": "Odd-component restriction with Satake cancellation and the six-point ramified-prime quotient; the primitive norm consequences follow algebraically once both binary identities hold.",
+    "other_relevant_literature": "Ramare-Viswanadham2509.23260v1 Introduction includes the primitive Loschian set; its Theorem1.6 is a ternary primitive-Gaussian application, not a proof of this binary theorem.",
+    "corollary_and_priority_review": "The Gaussian and Eisenstein allowed-prime sets are incomparable:7 is allowed only in the Eisenstein set,17 only in the Gaussian set. The closest binary statement therefore does not supply an immediate set-inclusion specialization. A complete priority audit remains open.",
+    "priority_scope": "Method attribution retained. No novelty claim is made for the elementary abstract orbit inequality, and a full priority audit of primitive-norm sumsets remains open."
+  },
+  "proof_dependencies": [
+    {
+      "claim": "Both binary identities, Theorem main",
+      "source": "sections/introduction.tex",
+      "inputs": [
+        "Reduced-target scaling",
+        "12sigma(n) all-ideal norm count",
+        "Odd candidate count12S(n)",
+        "Inert-prime bounds",
+        "Exact ramified-prime count for mixed case",
+        "Strict591/625 margin",
+        "Full finite certificates"
+      ]
+    },
+    {
+      "claim": "Odd-component Hecke bound9/4",
+      "source": "sections/mixed-local.tex",
+      "method": "D_n=T_n-T_(n/4), uv=1 Satake cancellation at2, monotone local maxima and exact fifth-power product."
+    },
+    {
+      "claim": "B3(n)=4sigma(n)+8lambda(n)",
+      "source": "sections/mixed-local.tex",
+      "scope": "Positive n1mod3 with all prime factors inert, including odd n for the unfiltered identity. Six-point group with two norm classes, uniform inert-prime Hecke operator and all-ideal recurrence."
+    },
+    {
+      "claim": "Mixed odd bound1/3+2/(3sqrt(n))",
+      "source": "sections/mixed-local.tex",
+      "method": "Subtract B3(n/4); square correction changes by factor-1/2; S(n)>=3n/2."
+    },
+    {
+      "claim": "Infinite coverage at n>=1e8",
+      "source": "sections/elementary-estimates.tex; sections/infinite-range.tex",
+      "method": "4M/p\u00b2 tail, exact prime bounds and591/625 union estimate."
+    },
+    {
+      "claim": "Finite coverage for both classes below1e8",
+      "source": "sections/finite-certificate.tex; sections/standalone-verifier.tex; verify_binary_certificates.py",
+      "scope": "All16666667 unrestricted and16666666 mixed targets; no exceptions; canonical witness hashes reproduced by separate NumPy implementations."
+    },
+    {
+      "claim": "Primitive norm classification and exact sumsets",
+      "source": "sections/primitive-sumsets.tex",
+      "method": "UFD oriented split-prime factors plus at most one ramified factor; both binary identities, adjoining ones and explicit sharpness examples."
+    },
+    {
+      "claim": "Reusable averaging/arithmetic criterion",
+      "source": "sections/orbit-criterion.tex",
+      "scope": "Subgroup orbit, positive degree, orthogonality, uniform local estimates, summable main terms/strict margin, parameterized real cutoff and explicit effective threshold when all constants and error modulus are effectively known. No automatic further arithmetic application."
+    },
+    {
+      "claim": "Balanced extension",
+      "source": "sections/balanced-summands.tex",
+      "status": "Conjecture beyond finite checked range; exceptions8,44 in that range."
+    },
+    {
+      "claim": "No finite small-summand menu for either family",
+      "source": "sections/finite-certificate.tex, prop:no-finite-menu",
+      "method": "Distinct odd inert primes and CRT; finite bounds211/199 are intrinsically finite-range."
+    }
+  ],
+  "rules_checklist": {
+    "statement_and_scope": "Both binary identities and exact primitive/higher sumsets aligned with title, abstract and metadata; positivity,1, dilation versus sumset and balanced limitations explicit.",
+    "dependencies": "Both binary proofs, ramified calculation, exact sumsets, no-finite-menu CRT proposition and effective cutoff have explicit hypotheses; internal source/PDF audits found no remaining concrete gap. Automorphic graph dependency coverage is partial and external review remains pending.",
+    "prior_work": "Euler method attribution retained; mixed ramified calculation and elementary consequences identified; full novelty audit pending.",
+    "readability": "Begins with the cited Gaussian theorem, motivates the Eisenstein and mixed variations, then unfolds primitive/higher consequences. Repeated aggregate theorem removed. Formal statements and hard proofs remain precise; no fictional research chronology introduced.",
+    "disclosures": "Standard AI paragraph verbatim; draft/review status kept outside manuscript.",
+    "computation": "Both finite ranges fully replayed; printed common verifier has explicit failure checks, normalized encodings and expected digests; exact constants and bounded ramified checks reproducible.",
+    "formalization": "None claimed.",
+    "source_bundle_and_layout": "Current17-page PDF,59 source/evidence members, supplied provenance archive, hashes, clean builds and complete finite replays match.",
+    "publication": "No public deposit or submission. External specialist review, external replay and priority audit remain open."
+  }
+}

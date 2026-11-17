@@ -192,6 +192,69 @@ class RetainedDependencyTests(unittest.TestCase):
         self.assertEqual(scenario["nodes"]["MRC-REFLECTIVE-AUGMENTATION-THM-DECK"]["state"], "proved")
         self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-QUOTIENTS"]["state"], "proved")
 
+    def test_a6_equalities_do_not_import_the_cover_family_exclusion(self):
+        scenario = self.graph.simulate({"SRC-MRC-A6-TOPOLOGY-CERTIFICATES": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-A6-COVER-TOPOLOGY"]["state"], "stale")
+        for conclusion in ("MRC-A6-AFFINE-EXAMPLES", "MRC-SIXTY-EIGHT-NAMED-EQUALITIES",
+                           "MRC-A6-AFFINE-THM-GROUPS", "MRC-UNIVERSAL-REFLECTION-THM-A6EIGHT"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_a6_class_rank_is_separate_from_geometric_bridge_import(self):
+        scenario = self.graph.simulate({"EXT-WIRTINGER-BRIDGE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-A6-AFFINE-THM-SHARP"]["state"], "stale")
+        for conclusion in ("MRC-A6-AFFINE-LEM-QUOTIENT", "MRC-A6-AFFINE-THM-GROUPS",
+                           "MRC-TERNARY-AFFINE-THM-ALLPRIMES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_uniform_integral_control_is_not_a_named_knot_premise(self):
+        scenario = self.graph.simulate({"SRC-MRC-UNIFORM-AFFINE-CERTIFICATES": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-TERNARY-AFFINE-THM-ALLPRIMES"]["state"], "stale")
+        for conclusion in ("MRC-TERNARY-AFFINE-THM-KNOTS", "MRC-A6-AFFINE-EXAMPLES",
+                           "MRC-SIXTY-EIGHT-NAMED-EQUALITIES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_kch_correspondence_only_underwrites_the_augmentation_consequence(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-INVOLUTORY-KCH-COR-AUGMENTATION"]["state"], "stale")
+        for conclusion in ("MRC-INVOLUTORY-KCH-THM-SIXTEEN", "MRC-NO-SHARP-COXETER",
+                           "MRC-A7-BINARY-EXAMPLES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_generic_kch_correspondence_only_supports_augmentation_outputs(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-KCH-AUGMENTATION-CORRESPONDENCE": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-GENERIC-KCH-THM-GENERIC"]["state"], "proved")
+        for conclusion in ("MRC-GENERIC-KCH-COR-AUGMENTATION", "MRC-GENERIC-KCH-COR-GAP",
+                           "MRC-GENERIC-KCH-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-INVOLUTION-SUMS-SHARP-FAMILIES"]["state"], "proved")
+
+    def test_generic_augmentation_upper_does_not_require_positive_attainment(self):
+        scenario = self.graph.simulate({"MRC-REFLECTIVE-AUGMENTATION-THM-POSITIVE": "stale"})
+        for conclusion in ("MRC-GENERIC-KCH-THM-GENERIC", "MRC-GENERIC-KCH-COR-AUGMENTATION"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+        for conclusion in ("MRC-GENERIC-KCH-COR-GAP", "MRC-GENERIC-KCH-COR-SUMS"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "stale")
+
+    def test_augmentation_sum_import_is_separate_from_seed_and_cover_sums(self):
+        scenario = self.graph.simulate({"EXT-CORNWELL-AUGMENTATION-SUM": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-GENERIC-KCH-COR-SUMS"]["state"], "stale")
+        for conclusion in ("MRC-GENERIC-KCH-COR-GAP", "MRC-GENERIC-KCH-COR-AUGMENTATION",
+                           "MRC-INVOLUTION-SUMS-SHARP-FAMILIES"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
+    def test_rank_one_quotient_reduction_is_independent_of_the_finite_panel(self):
+        scenario = self.graph.simulate({"SRC-MRC-RANKONE-BINARY-CERTIFICATES": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-RANKONE-BINARY-LEM-REDUCTION"]["state"], "proved")
+        self.assertEqual(scenario["nodes"]["MRC-RANKONE-BINARY-COR-BOUNDARY"]["state"], "stale")
+        self.assertEqual(scenario["nodes"]["MRC-A7-BINARY-EXAMPLES"]["state"], "proved")
+
+    def test_projective_numeric_bound_is_separate_from_known_family_membership(self):
+        scenario = self.graph.simulate({"MRC-GENERAL-COVER-THM-GENERAL": "stale"})
+        self.assertEqual(scenario["nodes"]["MRC-SL3-PROJECTIVE-THM-EQUALITIES"]["state"], "stale")
+        for conclusion in ("MRC-SL3-PROJECTIVE-THM-GRAPH", "MRC-SL3-PROJECTIVE-COR-KNOWN",
+                           "MRC-A7-BINARY-EXAMPLES", "MRC-INVOLUTORY-KCH-THM-SIXTEEN"):
+            self.assertEqual(scenario["nodes"][conclusion]["state"], "proved")
+
     def test_real_multistep_progress_stays_hypothetical_and_preserves_assurance(self):
         before = deepcopy(self.data)
         # Fine decomposition exposes a retained-input verification gap. A

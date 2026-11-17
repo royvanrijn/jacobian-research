@@ -1,0 +1,43 @@
+{
+  "claim": "DIX-SHIFTED-EULER-MATRIX-MODEL",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "normal_form": "A^m*f(J); f(J)*A^q=A^q*f(J-5*q*eta), eta=4h/r^2",
+  "companion_fifth_power_and_inverse": true,
+  "shifted_Euler_relation": true,
+  "matrix_Weyl_pair": true,
+  "matrix_fifth_power_linearization_has_nonzero_kernel": true,
+  "scalar_amplification_and_wrong_shift_rejected": true,
+  "changed_diagonal_cubic_pair_canonical": true,
+  "original_diagonal_transport_differs": true,
+  "shifted_auxiliary_derivation": true,
+  "all_full_rational_Long_commutators": true,
+  "beta1_diagonal_gauge": {
+    "B": "diag(1,J,J(J-eta),J(J-eta),J(J-eta))",
+    "forward_edges": "J,J-eta,1,1,U",
+    "reverse_edges": "1,1,J-2eta,J-3eta,(J-4eta)U^-1"
+  },
+  "finite_rational_kappa_chart_control": true,
+  "gauged_full_tuple_connection_without_J_denominators": true,
+  "classical_rank_one_branch_projector": true,
+  "classical_S_trace": "20/(3r)",
+  "original_r_divisor_smooth_components_control": true,
+  "singular_gauge_changes_Jordan_not_charpoly": true,
+  "quantum_matrix_trace_cyclicity_counterexample": "trace changes from0 to-h under integral unit gauge",
+  "hashes": {
+    "SHIFTED_EULER_MATRIX_MODEL.md": "5b7031ce4ac5387c76b6db9cfa8d7e73f6b04b42ddb01d459d0456c62e87a208",
+    "check_shifted_euler_matrix.py": "7b47dd825c1ae671814a648132a0fd46eeb4b753036aafdb40031e1cc69a0207",
+    "QUINTIC_ORDERING_LAURENT_OBSTRUCTION.md": "035a9d7ea9427ffdcbc174d99995a84cf213dc7c212388a1411b7df72c86ee3b",
+    "CLASSICAL_QUINTIC_COVER_SQUARE.md": "213dabacff305a9d1be5d8679bd1258b06c6340609749c486106773e587ab0b4",
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
+    "VALUED_MATRIX_LATTICE_AND_SHIFTED_ADMISSION.md": "5f90e5e3e5e916b06bcde90ee59ba291ddc7211e956370daff226a4eec2f9303",
+    "MATRIX_EULER_SECTORS_AND_SCALAR_RESIDUES.md": "4b5558797c0dc89e6c0471d6bea70b892f7369ba9a4e78f5a99ffb22a89c2340"
+  },
+  "coverage_boundary": "Exact noncommutative companion, changed transport, all rational matrix Long commutators, one finite kappa-chart gauge and classical branch/trace controls. Irreducibility, universal all-gauge/coherent-lattice admission, and scalar-residue/constant-sector theorems use written proofs; finite controls do not prove their universal scope. No no-go theorem for unrelated matrix representations, globally admitted carrier, scalar realization or bounded Long lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

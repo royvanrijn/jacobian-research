@@ -1,0 +1,165 @@
+{
+  "elementary_constant_scope": "Global exponent maxima, justified by monotone next-term ratios and p>=32 factors<=1",
+  "E_bound": "E(N)<=(9/4)N^(-3/10), N=2^e*m,e>=1,m odd with prime factors2mod3",
+  "local_maxima": [
+    {
+      "prime": 2,
+      "maximizing_exponent": 4,
+      "local_fifth_power": "16807/3888"
+    },
+    {
+      "prime": 5,
+      "maximizing_exponent": 2,
+      "local_fifth_power": "94921875/28629151",
+      "last_exponent_required": 2
+    },
+    {
+      "prime": 11,
+      "maximizing_exponent": 1,
+      "local_fifth_power": "14641/7776",
+      "last_exponent_required": 1
+    },
+    {
+      "prime": 17,
+      "maximizing_exponent": 1,
+      "local_fifth_power": "83521/59049",
+      "last_exponent_required": 1
+    },
+    {
+      "prime": 23,
+      "maximizing_exponent": 1,
+      "local_fifth_power": "279841/248832",
+      "last_exponent_required": 1
+    },
+    {
+      "prime": 29,
+      "maximizing_exponent": 0,
+      "local_fifth_power": "1",
+      "last_exponent_required": 1
+    }
+  ],
+  "product_fifth_power": "2246611641466280158984375/52336356030243694706688",
+  "claimed_bound_fifth_power": "59049/1024",
+  "strict_constant_inequality_verified": true,
+  "assumed_union_bound": "29/60+(11/10)X^(-1/5)+(111/20)X^(-6/5)+2/(3X^2)",
+  "X_range": "X>=100",
+  "rational_upper_bound": "591/625",
+  "threshold": 100000000,
+  "finite_identity_scope": "Identities in this section checked finitely only; independent theta/CM proof required for all N",
+  "odd_count_identity": "R_odd(N)=R(N)-R(N/4)=18*2^e*sigma(m)",
+  "ramified_odd_identity": "B3_odd(N)=B3(N)-B3(N/4)",
+  "reduced_lambda_formula": "B3_odd/R_odd=1/3+(2/3)lambda, lambda=0 for nonsquare reducedN; for square reducedN, lambda=(-1)^Omega(sqrtN)*sqrtN/(2^e*sigma(m))",
+  "limit": 3000,
+  "odd_count_checks": 500,
+  "reduced_lambda_checks": 238,
+  "coordinate_checks_through120": 20,
+  "errors": [],
+  "small_lambda_values": [
+    {
+      "n": 4,
+      "R_odd": 72,
+      "B3_odd": 0,
+      "ratio": "0",
+      "lambda": "-1/2"
+    },
+    {
+      "n": 10,
+      "R_odd": 216,
+      "B3_odd": 72,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 16,
+      "R_odd": 288,
+      "B3_odd": 144,
+      "ratio": "1/2",
+      "lambda": "1/4"
+    },
+    {
+      "n": 22,
+      "R_odd": 432,
+      "B3_odd": 144,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 34,
+      "R_odd": 648,
+      "B3_odd": 216,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 40,
+      "R_odd": 864,
+      "B3_odd": 288,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 46,
+      "R_odd": 864,
+      "B3_odd": 288,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 58,
+      "R_odd": 1080,
+      "B3_odd": 360,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 64,
+      "R_odd": 1152,
+      "B3_odd": 288,
+      "ratio": "1/4",
+      "lambda": "-1/8"
+    },
+    {
+      "n": 82,
+      "R_odd": 1512,
+      "B3_odd": 504,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 88,
+      "R_odd": 1728,
+      "B3_odd": 576,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 94,
+      "R_odd": 1728,
+      "B3_odd": 576,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 100,
+      "R_odd": 2232,
+      "B3_odd": 864,
+      "ratio": "12/31",
+      "lambda": "5/62"
+    },
+    {
+      "n": 106,
+      "R_odd": 1944,
+      "B3_odd": 648,
+      "ratio": "1/3",
+      "lambda": "0"
+    },
+    {
+      "n": 118,
+      "R_odd": 2160,
+      "B3_odd": 720,
+      "ratio": "1/3",
+      "lambda": "0"
+    }
+  ],
+  "script_sha256": "a930b881955ef9e1062b6bb7e4e80ae748ae9ef9bf62ab5d4bc6e558fbefde3f"
+}

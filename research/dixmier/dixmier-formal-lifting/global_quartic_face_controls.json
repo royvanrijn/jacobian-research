@@ -1,5 +1,5 @@
 {
-  "scope": "Exact global admission, general isolated-negative-pole divisor criterion, quartic application and square-ordered frontier",
+  "scope": "Exact global admission, negative-pole exclusions and closed square/mixed quartic families; mixed exclusion uses the separate written adjoint/residue proofs",
   "status": "PASS",
   "environment": {
     "python": "3.12.3",
@@ -514,7 +514,7 @@
     3,
     4
   ],
-  "square_ordered_frontier": {
+  "closed_square_ordering": {
     "candidate": "S_b+epsilon*h^2*(X^3*C^2)^2",
     "bottom_roots_in_h_units": [
       0,
@@ -524,16 +524,38 @@
     ],
     "character": "(t**2 + 1)*(t**7 + 1)",
     "primitive14_character_zero": true,
-    "mate_constructed": false
+    "mate_constructed": false,
+    "closure": "All-order square-face residue proof and QOI1 exclude every finite mate"
+  },
+  "admitted_mixed_family": {
+    "candidate": "S_b-3lambda*h*(R*E+C*W+W*C)-3R*lambda^2*h^2*W^2",
+    "W": "X^3*C^2",
+    "E": "2X^2*C^2+2R*h*X^4*C-R^2*h^2*X^6",
+    "Wv_identity": true,
+    "completed_square_identity": true,
+    "critical_coefficients": {
+      "2": "-3*r*(15*lambda**2*r**4 - 3*lambda*r**2*v**5 + v**10)/v**10",
+      "0": "2*v",
+      "3": "6*lambda*r**3*(3*lambda*r**2 - v**5)/v**8",
+      "4": "-3*lambda**2*r**5/v**6"
+    },
+    "top_weight": 6,
+    "top_symbol": "-3*r*xi**2*(lambda*r**2*xi + v**3)**2/v**6",
+    "top_cubic_coefficient": "-6*lambda*r**3/v**3",
+    "outside_QOI1_strict_quartic_cone": true,
+    "mate_constructed": false,
+    "mate_excluded_by_separate_written_proof": "QAS1 twisted adjoint; QAS2 universal residue for the specified nonsymmetric perturbation"
   },
   "negative_control": "Character criterion deliberately fails for actual pair b^j+v,-b; corrupted quartic divisor rejected",
   "hashes": {
-    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "404c8057db2d2361d45a8be336b3b9b4e0de9b029891c88d359e358c814e473a",
-    "check_global_quartic_face.py": "a41bacccbefefe3d1e9f1ed19ae920ca231da1ae8cc047bf313e8ab1ee35ed70",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "4bebb149d20a77c204cbfffddf1319f62a7f88bb309d06c0c57e30d67044716a",
+    "check_global_quartic_face.py": "885981035cbe9c9e1f3c4d06152b7688c4bc8a86164d14d2a9251affb83d0209",
     "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
-    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f"
+    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f",
+    "SQUARE_ORDERED_QUARTIC_FACE.md": "420c699b37fb8d001955ab1e43bc2241a2db0d96d0bda237f19034e1f6777699",
+    "ORDERED_QUARTIC_INFINITY_OBSTRUCTION.md": "c5cc4705cf1f61d5c9be172a4875b05362411599289f45c144e4f875a73946e3"
   },
-  "coverage_boundary": "Finite exact rational Ore identities and representative divisor/degree controls; unrestricted centralizer, no-mate, support realization and parameter-pole proofs are written. No actual Long mate or global completion.",
+  "coverage_boundary": "Finite exact Ore, mixed-admission and critical-symbol identities plus representative divisor controls; universal exclusions rely on written proofs. Mixed admission calculations do not establish mate exclusion; that separate written adjoint/residue proof is explicitly linked. No actual Long mate or global completion.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

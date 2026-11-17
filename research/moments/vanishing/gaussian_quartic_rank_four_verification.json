@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "5fe5061568c571b06c6d172dd0f9fda86b61f2422ed8bba7bc45d88e001c4d48",
+  "utility_sha256": "28bee204a9f4f9071023ad97292b0ffc0524b139a1950bb00cd3367699d4b5ba",
+  "proof_sha256": "d8a12f349dea07ac060cc0eb27744e5a37930b9eff663e4044186c7992709569",
+  "checks": {
+    "status": "passed",
+    "actual_marker_controls": {
+      "monomials": 12,
+      "spatial_degree_max": 3,
+      "moment_orders": [
+        0,
+        8
+      ]
+    },
+    "exact_kernel": {
+      "zero": "(1+Z)^2(ZW-Y^2)",
+      "rejected_corruption": "kernel+1"
+    },
+    "recurrence_indices": [
+      -5,
+      8
+    ],
+    "frame_determinant": "2t^3",
+    "cyclic_Z_squared_determinant": "3*(60*t**2 + 1)/(64*t**9)",
+    "full_image_membership": "Laurent coordinates plus finite certified principal part",
+    "literal_V_boundary": "1 is in M but its constant-line projection excludes it from V",
+    "scope": "Exact controls; the written rational-ODE and source arguments prove rank four, global completeness and the original projection image."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

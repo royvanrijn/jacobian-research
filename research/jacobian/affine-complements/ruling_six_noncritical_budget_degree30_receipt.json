@@ -1,0 +1,917 @@
+{
+  "claim": "PF2RULED181",
+  "outcome": "PASS",
+  "check_count": 319,
+  "checks": [
+    "leading ratio is allowed k3 L6",
+    "full exceptional initial cancels its constant v^t L6",
+    "noncritical constant perturbation is nonzero L6",
+    "entire second derivative exact ell L6 center11",
+    "entire third derivative later than tquarter L6 center11",
+    "entire higher derivative nonnegative L6 center11 j4",
+    "entire higher derivative nonnegative L6 center11 j5",
+    "entire higher derivative nonnegative L6 center11 j6",
+    "entire second derivative exact ell L6 center23",
+    "entire third derivative later than tquarter L6 center23",
+    "entire higher derivative nonnegative L6 center23 j4",
+    "entire higher derivative nonnegative L6 center23 j5",
+    "entire higher derivative nonnegative L6 center23 j6",
+    "Taylor first-response index obeys PF164 L6 offset-1/4",
+    "Taylor first-response index exceeds inner scale L6 offset-1/4",
+    "quadratic exact comparison to parameter order L6 offset-1/4",
+    "higher Taylor degree strictly later L6 offset-1/4 j4",
+    "higher Taylor degree strictly later L6 offset-1/4 j5",
+    "higher Taylor degree strictly later L6 offset-1/4 j6",
+    "cubic Taylor lower bound strictly later L6 offset-1/4",
+    "Taylor first-response index obeys PF164 L6 offset0",
+    "Taylor first-response index exceeds inner scale L6 offset0",
+    "quadratic exact comparison to parameter order L6 offset0",
+    "higher Taylor degree strictly later L6 offset0 j4",
+    "higher Taylor degree strictly later L6 offset0 j5",
+    "higher Taylor degree strictly later L6 offset0 j6",
+    "cubic Taylor lower bound strictly later L6 offset0",
+    "Taylor first-response index obeys PF164 L6 offset1/4",
+    "Taylor first-response index exceeds inner scale L6 offset1/4",
+    "quadratic exact comparison to parameter order L6 offset1/4",
+    "higher Taylor degree strictly later L6 offset1/4 j4",
+    "higher Taylor degree strictly later L6 offset1/4 j5",
+    "higher Taylor degree strictly later L6 offset1/4 j6",
+    "cubic Taylor lower bound strictly later L6 offset1/4",
+    "whole boundary first response is genuinely quadratic L6",
+    "whole boundary coefficient degree is two L6",
+    "leading ratio is allowed k3 L7",
+    "full exceptional initial cancels its constant v^t L7",
+    "noncritical constant perturbation is nonzero L7",
+    "entire second derivative exact ell L7 center13",
+    "entire third derivative later than tquarter L7 center13",
+    "entire higher derivative nonnegative L7 center13 j4",
+    "entire higher derivative nonnegative L7 center13 j5",
+    "entire higher derivative nonnegative L7 center13 j6",
+    "entire second derivative exact ell L7 center27",
+    "entire third derivative later than tquarter L7 center27",
+    "entire higher derivative nonnegative L7 center27 j4",
+    "entire higher derivative nonnegative L7 center27 j5",
+    "entire higher derivative nonnegative L7 center27 j6",
+    "Taylor first-response index obeys PF164 L7 offset-1/4",
+    "Taylor first-response index exceeds inner scale L7 offset-1/4",
+    "quadratic exact comparison to parameter order L7 offset-1/4",
+    "higher Taylor degree strictly later L7 offset-1/4 j4",
+    "higher Taylor degree strictly later L7 offset-1/4 j5",
+    "higher Taylor degree strictly later L7 offset-1/4 j6",
+    "cubic Taylor lower bound strictly later L7 offset-1/4",
+    "Taylor first-response index obeys PF164 L7 offset0",
+    "Taylor first-response index exceeds inner scale L7 offset0",
+    "quadratic exact comparison to parameter order L7 offset0",
+    "higher Taylor degree strictly later L7 offset0 j4",
+    "higher Taylor degree strictly later L7 offset0 j5",
+    "higher Taylor degree strictly later L7 offset0 j6",
+    "cubic Taylor lower bound strictly later L7 offset0",
+    "Taylor first-response index obeys PF164 L7 offset1/4",
+    "Taylor first-response index exceeds inner scale L7 offset1/4",
+    "quadratic exact comparison to parameter order L7 offset1/4",
+    "higher Taylor degree strictly later L7 offset1/4 j4",
+    "higher Taylor degree strictly later L7 offset1/4 j5",
+    "higher Taylor degree strictly later L7 offset1/4 j6",
+    "cubic Taylor lower bound strictly later L7 offset1/4",
+    "whole boundary first response is genuinely quadratic L7",
+    "whole boundary coefficient degree is two L7",
+    "leading ratio is allowed k3 L8",
+    "full exceptional initial cancels its constant v^t L8",
+    "noncritical constant perturbation is nonzero L8",
+    "entire second derivative exact ell L8 center15",
+    "entire third derivative later than tquarter L8 center15",
+    "entire higher derivative nonnegative L8 center15 j4",
+    "entire higher derivative nonnegative L8 center15 j5",
+    "entire higher derivative nonnegative L8 center15 j6",
+    "entire second derivative exact ell L8 center31",
+    "entire third derivative later than tquarter L8 center31",
+    "entire higher derivative nonnegative L8 center31 j4",
+    "entire higher derivative nonnegative L8 center31 j5",
+    "entire higher derivative nonnegative L8 center31 j6",
+    "Taylor first-response index obeys PF164 L8 offset-1/4",
+    "Taylor first-response index exceeds inner scale L8 offset-1/4",
+    "quadratic exact comparison to parameter order L8 offset-1/4",
+    "higher Taylor degree strictly later L8 offset-1/4 j4",
+    "higher Taylor degree strictly later L8 offset-1/4 j5",
+    "higher Taylor degree strictly later L8 offset-1/4 j6",
+    "cubic Taylor lower bound strictly later L8 offset-1/4",
+    "Taylor first-response index obeys PF164 L8 offset0",
+    "Taylor first-response index exceeds inner scale L8 offset0",
+    "quadratic exact comparison to parameter order L8 offset0",
+    "higher Taylor degree strictly later L8 offset0 j4",
+    "higher Taylor degree strictly later L8 offset0 j5",
+    "higher Taylor degree strictly later L8 offset0 j6",
+    "cubic Taylor lower bound strictly later L8 offset0",
+    "Taylor first-response index obeys PF164 L8 offset1/4",
+    "Taylor first-response index exceeds inner scale L8 offset1/4",
+    "quadratic exact comparison to parameter order L8 offset1/4",
+    "higher Taylor degree strictly later L8 offset1/4 j4",
+    "higher Taylor degree strictly later L8 offset1/4 j5",
+    "higher Taylor degree strictly later L8 offset1/4 j6",
+    "cubic Taylor lower bound strictly later L8 offset1/4",
+    "whole boundary first response is genuinely quadratic L8",
+    "whole boundary coefficient degree is two L8",
+    "leading ratio is allowed k3 L9",
+    "full exceptional initial cancels its constant v^t L9",
+    "noncritical constant perturbation is nonzero L9",
+    "entire second derivative exact ell L9 center17",
+    "entire third derivative later than tquarter L9 center17",
+    "entire higher derivative nonnegative L9 center17 j4",
+    "entire higher derivative nonnegative L9 center17 j5",
+    "entire higher derivative nonnegative L9 center17 j6",
+    "entire second derivative exact ell L9 center35",
+    "entire third derivative later than tquarter L9 center35",
+    "entire higher derivative nonnegative L9 center35 j4",
+    "entire higher derivative nonnegative L9 center35 j5",
+    "entire higher derivative nonnegative L9 center35 j6",
+    "Taylor first-response index obeys PF164 L9 offset-1/4",
+    "Taylor first-response index exceeds inner scale L9 offset-1/4",
+    "quadratic exact comparison to parameter order L9 offset-1/4",
+    "higher Taylor degree strictly later L9 offset-1/4 j4",
+    "higher Taylor degree strictly later L9 offset-1/4 j5",
+    "higher Taylor degree strictly later L9 offset-1/4 j6",
+    "cubic Taylor lower bound strictly later L9 offset-1/4",
+    "Taylor first-response index obeys PF164 L9 offset0",
+    "Taylor first-response index exceeds inner scale L9 offset0",
+    "quadratic exact comparison to parameter order L9 offset0",
+    "higher Taylor degree strictly later L9 offset0 j4",
+    "higher Taylor degree strictly later L9 offset0 j5",
+    "higher Taylor degree strictly later L9 offset0 j6",
+    "cubic Taylor lower bound strictly later L9 offset0",
+    "Taylor first-response index obeys PF164 L9 offset1/4",
+    "Taylor first-response index exceeds inner scale L9 offset1/4",
+    "quadratic exact comparison to parameter order L9 offset1/4",
+    "higher Taylor degree strictly later L9 offset1/4 j4",
+    "higher Taylor degree strictly later L9 offset1/4 j5",
+    "higher Taylor degree strictly later L9 offset1/4 j6",
+    "cubic Taylor lower bound strictly later L9 offset1/4",
+    "whole boundary first response is genuinely quadratic L9",
+    "whole boundary coefficient degree is two L9",
+    "leading ratio is allowed k3 L10",
+    "full exceptional initial cancels its constant v^t L10",
+    "noncritical constant perturbation is nonzero L10",
+    "entire second derivative exact ell L10 center19",
+    "entire third derivative later than tquarter L10 center19",
+    "entire higher derivative nonnegative L10 center19 j4",
+    "entire higher derivative nonnegative L10 center19 j5",
+    "entire higher derivative nonnegative L10 center19 j6",
+    "entire second derivative exact ell L10 center39",
+    "entire third derivative later than tquarter L10 center39",
+    "entire higher derivative nonnegative L10 center39 j4",
+    "entire higher derivative nonnegative L10 center39 j5",
+    "entire higher derivative nonnegative L10 center39 j6",
+    "Taylor first-response index obeys PF164 L10 offset-1/4",
+    "Taylor first-response index exceeds inner scale L10 offset-1/4",
+    "quadratic exact comparison to parameter order L10 offset-1/4",
+    "higher Taylor degree strictly later L10 offset-1/4 j4",
+    "higher Taylor degree strictly later L10 offset-1/4 j5",
+    "higher Taylor degree strictly later L10 offset-1/4 j6",
+    "cubic Taylor lower bound strictly later L10 offset-1/4",
+    "Taylor first-response index obeys PF164 L10 offset0",
+    "Taylor first-response index exceeds inner scale L10 offset0",
+    "quadratic exact comparison to parameter order L10 offset0",
+    "higher Taylor degree strictly later L10 offset0 j4",
+    "higher Taylor degree strictly later L10 offset0 j5",
+    "higher Taylor degree strictly later L10 offset0 j6",
+    "cubic Taylor lower bound strictly later L10 offset0",
+    "Taylor first-response index obeys PF164 L10 offset1/4",
+    "Taylor first-response index exceeds inner scale L10 offset1/4",
+    "quadratic exact comparison to parameter order L10 offset1/4",
+    "higher Taylor degree strictly later L10 offset1/4 j4",
+    "higher Taylor degree strictly later L10 offset1/4 j5",
+    "higher Taylor degree strictly later L10 offset1/4 j6",
+    "cubic Taylor lower bound strictly later L10 offset1/4",
+    "whole boundary first response is genuinely quadratic L10",
+    "whole boundary coefficient degree is two L10",
+    "nearby whole model first response is affine",
+    "nearby whole model response degree is one",
+    "nearby whole model exact inner derivative ninehalf",
+    "nearby control saturates the integer local pole budget",
+    "nearby control inner index is strictly below affine bound",
+    "two outer plus two inner charges give uniform strict bound",
+    "all-simple estimate has positive gap twoLminusT",
+    "integer budget equals twice eorder minus five",
+    "maximal local budget equals twoLminusNine",
+    "inner Taylor threshold is equivalent to strict derivative bound",
+    "noncritical inner charge bound positive L6 b4",
+    "all simple budget strictly below full bound L6 b4",
+    "uniform noncritical local bound L6 b4",
+    "noncritical inner charge bound positive L7 b4",
+    "all simple budget strictly below full bound L7 b4",
+    "uniform noncritical local bound L7 b4",
+    "noncritical inner charge bound positive L7 b5",
+    "all simple budget strictly below full bound L7 b5",
+    "uniform noncritical local bound L7 b5",
+    "noncritical inner charge bound positive L8 b5",
+    "all simple budget strictly below full bound L8 b5",
+    "uniform noncritical local bound L8 b5",
+    "noncritical inner charge bound positive L8 b6",
+    "all simple budget strictly below full bound L8 b6",
+    "uniform noncritical local bound L8 b6",
+    "noncritical inner charge bound positive L9 b5",
+    "all simple budget strictly below full bound L9 b5",
+    "uniform noncritical local bound L9 b5",
+    "noncritical inner charge bound positive L9 b6",
+    "all simple budget strictly below full bound L9 b6",
+    "uniform noncritical local bound L9 b6",
+    "noncritical inner charge bound positive L9 b7",
+    "all simple budget strictly below full bound L9 b7",
+    "uniform noncritical local bound L9 b7",
+    "noncritical inner charge bound positive L10 b5",
+    "all simple budget strictly below full bound L10 b5",
+    "uniform noncritical local bound L10 b5",
+    "noncritical inner charge bound positive L10 b6",
+    "all simple budget strictly below full bound L10 b6",
+    "uniform noncritical local bound L10 b6",
+    "noncritical inner charge bound positive L10 b7",
+    "all simple budget strictly below full bound L10 b7",
+    "uniform noncritical local bound L10 b7",
+    "noncritical inner charge bound positive L10 b8",
+    "all simple budget strictly below full bound L10 b8",
+    "uniform noncritical local bound L10 b8",
+    "noncritical inner charge bound positive L11 b6",
+    "all simple budget strictly below full bound L11 b6",
+    "uniform noncritical local bound L11 b6",
+    "noncritical inner charge bound positive L11 b7",
+    "all simple budget strictly below full bound L11 b7",
+    "uniform noncritical local bound L11 b7",
+    "noncritical inner charge bound positive L11 b8",
+    "all simple budget strictly below full bound L11 b8",
+    "uniform noncritical local bound L11 b8",
+    "noncritical inner charge bound positive L11 b9",
+    "all simple budget strictly below full bound L11 b9",
+    "uniform noncritical local bound L11 b9",
+    "noncritical inner charge bound positive L12 b6",
+    "all simple budget strictly below full bound L12 b6",
+    "uniform noncritical local bound L12 b6",
+    "noncritical inner charge bound positive L12 b7",
+    "all simple budget strictly below full bound L12 b7",
+    "uniform noncritical local bound L12 b7",
+    "noncritical inner charge bound positive L12 b8",
+    "all simple budget strictly below full bound L12 b8",
+    "uniform noncritical local bound L12 b8",
+    "noncritical inner charge bound positive L12 b9",
+    "all simple budget strictly below full bound L12 b9",
+    "uniform noncritical local bound L12 b9",
+    "noncritical inner charge bound positive L12 b10",
+    "all simple budget strictly below full bound L12 b10",
+    "uniform noncritical local bound L12 b10",
+    "noncritical inner charge bound positive L13 b6",
+    "all simple budget strictly below full bound L13 b6",
+    "uniform noncritical local bound L13 b6",
+    "noncritical inner charge bound positive L13 b7",
+    "all simple budget strictly below full bound L13 b7",
+    "uniform noncritical local bound L13 b7",
+    "noncritical inner charge bound positive L13 b8",
+    "all simple budget strictly below full bound L13 b8",
+    "uniform noncritical local bound L13 b8",
+    "noncritical inner charge bound positive L13 b9",
+    "all simple budget strictly below full bound L13 b9",
+    "uniform noncritical local bound L13 b9",
+    "noncritical inner charge bound positive L13 b10",
+    "all simple budget strictly below full bound L13 b10",
+    "uniform noncritical local bound L13 b10",
+    "noncritical inner charge bound positive L13 b11",
+    "all simple budget strictly below full bound L13 b11",
+    "uniform noncritical local bound L13 b11",
+    "noncritical inner charge bound positive L14 b7",
+    "all simple budget strictly below full bound L14 b7",
+    "uniform noncritical local bound L14 b7",
+    "noncritical inner charge bound positive L14 b8",
+    "all simple budget strictly below full bound L14 b8",
+    "uniform noncritical local bound L14 b8",
+    "noncritical inner charge bound positive L14 b9",
+    "all simple budget strictly below full bound L14 b9",
+    "uniform noncritical local bound L14 b9",
+    "noncritical inner charge bound positive L14 b10",
+    "all simple budget strictly below full bound L14 b10",
+    "uniform noncritical local bound L14 b10",
+    "noncritical inner charge bound positive L14 b11",
+    "all simple budget strictly below full bound L14 b11",
+    "uniform noncritical local bound L14 b11",
+    "noncritical inner charge bound positive L14 b12",
+    "all simple budget strictly below full bound L14 b12",
+    "uniform noncritical local bound L14 b12",
+    "global mixed ledger clearing gives exact inequality",
+    "all-noncritical coefficient is twenty-seven",
+    "all-noncritical minimal slope sum is eight",
+    "all-noncritical raw degree at least thirtyfour",
+    "degree congruence raises all-noncritical minimum to thirtysix",
+    "all-noncritical intermediate degree at least seven",
+    "all-noncritical original degree at least fourteen",
+    "D30 necessary support count one m2 n1",
+    "D30 necessary support count one m4 n1",
+    "D30 complete numerical family list",
+    "D30 noncritical local budget cannot reach generic degree m2 L6",
+    "D30 noncritical local budget cannot reach generic degree m2 L7",
+    "D30 noncritical local budget cannot reach generic degree m4 L6",
+    "D30 all supports must be critical",
+    "critical degree partition controls remain nonempty L6 degree6",
+    "critical complete pole mass range L6 degree6",
+    "critical degree partition controls remain nonempty L6 degree7",
+    "critical complete pole mass range L6 degree7",
+    "L6 degree7 unique indexfour pole",
+    "L6 degree7 derivative trace forces eorder at least three",
+    "critical degree partition controls remain nonempty L7 degree6",
+    "critical complete pole mass range L7 degree6",
+    "critical degree partition controls remain nonempty L7 degree7",
+    "critical complete pole mass range L7 degree7",
+    "critical degree partition controls remain nonempty L7 degree8",
+    "critical complete pole mass range L7 degree8",
+    "critical degree partition controls remain nonempty L7 degree9",
+    "critical complete pole mass range L7 degree9",
+    "L7 degree9 only two index/order options",
+    "L7 degree9 minimum derivative trace threshold is ten"
+  ],
+  "elapsed_seconds": 0.2937404889962636,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "6db5cb77d9dbdf5986b49fab5770c456974cec4d56935f066cd86851369e78b7",
+  "checker_sha256": "261f36f98a0c59bb8bbd078e3bbbadf7d78428ee8412ee78d11867e1386122ef",
+  "retained_proof_sources": {
+    "POLYNOMIAL_MATE_RESPONSES_AND_QUADRATIC_RULING_FIVE_ESCAPE_COVERAGE.md": "b2c6a08cd0f144788cf841d0f399896c4894db0ee1f43515704011e2a9c5f7ee",
+    "RULING_SIX_AFFINE_POLE_BUDGET_AND_SOURCE_INFINITY.md": "b26c9004eaa6eeb6bc59db3a6b8b45318f598a31d89fd4f0a0068d423dcb6771",
+    "RULING_SIX_RETAINED_SOURCE_PACKETS_AND_STRICT_INFINITY_BOUNDS.md": "7bfdfdbc81c103dd5ac09816bc4cd826aa92e15c264ca91f630019fa08062188",
+    "RULING_SIX_LEADING_PRIMITIVE_AND_POLYNOMIAL_ODE.md": "d2fb5009d18da59dce5d40ee02b8f1d323707ad9cd31b9e58b779744323a8ed1",
+    "RULING_SIX_BALANCED_QUADRATIC_REMAINDER_AND_LEADING_RESONANCE.md": "6cbae6c4465faf3c99bb0ee9897a2431dc2b57c372abf23a15f3c0c5b27ff161",
+    "RULING_SIX_NONCRITICAL_QUARTIC_SPLITTING_AND_SMALL_SLOPE_EXCLUSION.md": "34a8339e3668229ea1dc2ab02875d70a0614b169e001c61757d7b85544205000"
+  },
+  "uniform_proved_scope": {
+    "coefficient_and_companion_degrees": "unrestricted",
+    "noncritical_local_pole_degree_bound": "beta_c<=2*ord_c e-5<=2L-9",
+    "mixed_global_degree_bound": "b_field<=2S-5*n_A-4*n_nc",
+    "mixed_support_inequality": "4S>=15*n_A+12*n_nc+2m",
+    "all_noncritical_subclass_minimum_D": 36,
+    "all_noncritical_subclass_minimum_intermediate_degree": 7,
+    "all_noncritical_subclass_minimum_original_degree": 14,
+    "complete_D30_ledger": [
+      [
+        2,
+        14,
+        1,
+        6,
+        6,
+        7
+      ],
+      [
+        2,
+        14,
+        1,
+        7,
+        6,
+        9
+      ],
+      [
+        4,
+        13,
+        1,
+        6,
+        7,
+        7
+      ]
+    ],
+    "entire_D30_noncritical_case_excluded": true,
+    "D30_critical_case_closed": false,
+    "full_ruling_six_or_JC2_closed": false
+  },
+  "whole_inner_taylor_models": [
+    {
+      "L": 6,
+      "t": 10,
+      "ell": 5,
+      "forbidden_response_order": "7/2",
+      "quadratic_initial": "2*lam**2 - p + 3"
+    },
+    {
+      "L": 7,
+      "t": 12,
+      "ell": 6,
+      "forbidden_response_order": "4",
+      "quadratic_initial": "2*lam**2 - p + 3"
+    },
+    {
+      "L": 8,
+      "t": 14,
+      "ell": 7,
+      "forbidden_response_order": "9/2",
+      "quadratic_initial": "2*lam**2 - p + 3"
+    },
+    {
+      "L": 9,
+      "t": 16,
+      "ell": 8,
+      "forbidden_response_order": "5",
+      "quadratic_initial": "2*lam**2 - p + 3"
+    },
+    {
+      "L": 10,
+      "t": 18,
+      "ell": 9,
+      "forbidden_response_order": "11/2",
+      "quadratic_initial": "2*lam**2 - p + 3"
+    }
+  ],
+  "critical_index_partition_controls": {
+    "L6_degree6": [
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          6
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          5,
+          1
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          3,
+          3
+        ]
+      }
+    ],
+    "L6_degree7": [
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          7
+        ]
+      }
+    ],
+    "L7_degree6": [
+      {
+        "indices": [
+          3
+        ],
+        "pole_orders": [
+          6
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1
+        ],
+        "pole_orders": [
+          4,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          6
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          4,
+          2
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          5,
+          1
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          2,
+          4
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          3,
+          3
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          4,
+          2
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          4,
+          1,
+          1
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          1,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          1,
+          1
+        ]
+      }
+    ],
+    "L7_degree7": [
+      {
+        "indices": [
+          3
+        ],
+        "pole_orders": [
+          7
+        ]
+      },
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          7
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          5,
+          2
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          6,
+          1
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          3,
+          4
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          4,
+          3
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          2,
+          1
+        ]
+      }
+    ],
+    "L7_degree8": [
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          8
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          6,
+          2
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          7,
+          1
+        ]
+      },
+      {
+        "indices": [
+          2,
+          2
+        ],
+        "pole_orders": [
+          4,
+          4
+        ]
+      },
+      {
+        "indices": [
+          2,
+          1,
+          1
+        ],
+        "pole_orders": [
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "indices": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_orders": [
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "L7_degree9": [
+      {
+        "indices": [
+          4
+        ],
+        "pole_orders": [
+          9
+        ]
+      },
+      {
+        "indices": [
+          3,
+          1
+        ],
+        "pole_orders": [
+          7,
+          2
+        ]
+      }
+    ]
+  },
+  "assurance": "Exact internal symbolic controls and arbitrary-degree written proof; no formal or external human review."
+}

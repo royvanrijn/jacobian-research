@@ -1,7 +1,9 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
 \usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
@@ -9,6 +11,7 @@
 \newcommand{\rank}{\operatorname{rank}}
 \newcommand{\I}{\mathcal I}
 \newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
 \title{Additivity of normalized involutory cover bounds}
 \author{Internal research working proof}
 \date{17 November 2026}
@@ -19,10 +22,12 @@ The arbitrary-cycle cover bound can lose information when it is rounded
 before taking connected sums. Keeping its unrounded value gives an
 exactly additive quantity for involutory meridian actions. The gluing
 construction scales the number of moving pairs using a complete
-bipartite graph. In particular, one of the twenty-four retained
-seven-sheet sharp knots can be joined to any number of simple-cover
-sharp knots without losing sharpness. This proves infinite families of
-meridional-rank equalities from those certificates. These are written
+bipartite graph. In particular, each of 101 retained fractional-score
+seeds can be joined to any number of trefoils without losing
+sharpness. The seed covers use a fixed field for each family:
+$\F_3$ in 98 cases and $\F_2$ in three cases.
+This proves infinite families of meridional-rank equalities from those
+certificates. These are written
 working proofs, without a claim of worldwide priority, formal
 verification, or external mathematical review.
 
@@ -221,6 +226,91 @@ $7/2+\sum_i(b_i-1)$, whose ceiling is the asserted equality.
 For $s$ trefoils the degree stays seven and the cover group is the
 free product of $2s+1$ copies of $C_3$.
 
+
+\subsection{The 101 fractional-score seed families}
+
+The preceding seven-sheet application extends to the following
+exact finite seed domain. In the first row take exactly the
+twenty-four names with natural-action
+\texttt{expected\_H1\_F3\_dimension} equal to one in
+\path{seven_sheet_cover_inputs.json}. The remaining rows consist
+of every named case in the indicated input.
+\begin{center}\small
+\begin{tabular}{lrrrrr}
+\toprule
+seed source & count & field & $n$ & $\delta$ & $h=b_1(Y;k)$\\
+\midrule
+seven-sheet GL$_3(\F_2)$ & $24$ & $\F_3$ & $7$ & $2$ & $1$\\
+A6 affine input & $24$ & $\F_3$ & $6$ & $2$ & $2$\\
+A7 binary input & $3$ & $\F_2$ & $7$ & $2$ & $1$\\
+SL$_3(\F_3)$ projective input & $50$ & $\F_3$ & $13$ & $4$ & $2$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The corresponding retained files for the last three rows are
+\path{a6_affine_inputs.json}, \path{a7_binary_inputs.json} and
+\path{sl3_projective_family_inputs.json}.
+The name sets are pairwise disjoint. Their source receipts and the
+companion sum checker verify the same literal diagrams, four-seed
+bridge uppers and full branched-cover homology.
+In every case the displayed scalar score is
+\[
+                    \frac{n-1+h}{\delta}=\frac72.
+\]
+
+\begin{corollary}\label{cor:hundredone}
+For each of these 101 named seeds $K$ and every integer $s\ge0$,
+\[
+                  \mr(K\#^{s}T(2,3))
+                    =b(K\#^{s}T(2,3))=4+s.
+\]
+For each seed, choose the field from its row of the table. Then
+\[
+        \I_k(K)\ge\frac72,\qquad
+        \I_k(K\#^{s}T(2,3))\ge\frac72+s.
+\]
+Equality $\I_k(K)=7/2$ or $\I(K)=7/2$ is not asserted.
+\end{corollary}
+\begin{proof}
+The trefoil has a transitive three-sheet simple action with its two
+standard meridians sent to $(0\,1)$ and $(1\,2)$.
+After imposing meridian squares, the presentation is
+$\langle x,y\mid x^2=y^2=(xy)^3=1\rangle$.
+Its completed simple cover has zero first homology over every field:
+the full lifted-edge matrix has a maximal minor of determinant
+$\pm1$, as checked below. Thus its scalar score is
+$(3-1+0)/1=2$ over either seed field.
+
+Theorem~\ref{thm:additivity} therefore gives the stated score
+$7/2+s$. Its ceiling is $4+s$.
+The seed bridge upper four and the standard two-bridge presentation
+of the trefoil give the matching upper $4+s$ by joining bridge positions.
+Equivalently, apply the scalar version of
+Corollary~\ref{cor:onefraction}, using the same field throughout.
+
+There is a single explicit cover for every $s$.
+For each new trefoil take $\delta$ copies of its three-sheet simple
+cover, align their moving pairs with the seed's $\delta$ pairs,
+and add one new fixed sheet per copy. The resulting degree is
+$n+\delta s$ and the moving-pair count stays $\delta$.
+The sphere-gluing graph is a tree, so the scalar first Betti number
+stays $h$. Consequently the score is exactly
+\[
+                  \frac{n+\delta s-1+h}{\delta}
+                       =\frac72+s.
+\]
+This is a score of this particular constructed cover, not a value
+of either supremum.
+\end{proof}
+
+These are 101 explicitly indexed infinite families. Their members may
+have related knot types; no assertion of worldwide family priority is
+made. The fifty projective seeds are already in the BJW graph-cover
+MRC family. This propagation does not change that comparison.
+The twenty earlier simple-cover-sharp seeds are outside the present
+101-count convention and retain their separate simple-cover
+connected-sum consequences.
+
 From the retained scores of several seven-sheet sharp factors,
 the same inequality gives
 \[
@@ -233,6 +323,14 @@ scores. It does not bound the unknown suprema from above or prove
 MRC for arbitrary sums of those factors.
 
 \section{Finite controls and limits}
+
+The verifier is \path{verify_involution_cover_sums.py}; its receipt is
+\path{involution_cover_sum_verification.json}.
+The standard-library replay uses the retained exact census bindings.
+With \texttt{--census}, the pinned topology environment also rereads
+all 101 names directly from the current census package and checks
+its source-file hashes. The retained expanded receipt records that
+101-name reread.
 
 The accompanying checker verifies the bipartite pair assignment for
 all $1\le a,b\le8$, using component intersections to test
@@ -248,8 +346,19 @@ respectively, and resulting lower bounds $4,5,6,7$. These are finite
 controls of the construction; the uniform statements require the
 written gluing, supremum and classical rank arguments above.
 
+The checker additionally rebinds all 101 seed names to their literal
+retained inputs, checks their source-receipt hashes and four-seed
+traces, and independently recomputes each full lifted-edge scalar
+homology over its specified field. It verifies the three-sheet trefoil
+cover's unit maximal minor and the score arithmetic for zero through
+three trefoil factors on all 101 seeds. The unit minor makes the
+trefoil control valid over every field; the old double-cover $C_3$
+control alone would not give scalar score two over $\F_2$.
+The uniform parameter $s$ is justified by the written proof, rather
+than extrapolated from these finite controls.
+
 The source knot equalities and diagram identities remain those of the
-retained seven-sheet certificates. These arguments do not audit their
+four retained seed packages. These arguments do not audit their
 worldwide priority, identify all possible involutory covers, or settle
 the full Meridional Rank Conjecture. In particular no assumption that
 $\I(K)=7/2$ for a retained seed is made: its known cover only gives

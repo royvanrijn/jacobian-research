@@ -8,15 +8,15 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newcommand{\mr}{\operatorname{mr}}
 \newcommand{\rank}{\operatorname{rank}}
-\title{A universal reflection obstruction for eight knots}
+\title{A universal reflection obstruction for sixteen knots}
 \author{Internal research working proof}
 \date{17 November 2026}
 \begin{document}
 \maketitle
 
-The eight alternating knots listed in Theorem~\ref{thm:alternating8}
-have meridional rank and bridge number four by retained seven-sheeted
-cover certificates. Nevertheless, no Coxeter
+The sixteen alternating knots listed in Theorems~\ref{thm:alternating8}
+and~\ref{thm:a6eight} have meridional rank and bridge number four by
+retained finite-action certificates. Nevertheless, no Coxeter
 reflection quotient, finite or infinite, can certify that sharp lower
 bound. A short calculation with independent reflection directions
 proves the obstruction over every field of characteristic different
@@ -414,6 +414,119 @@ But they include the independent three vectors $U,V,W_0$, a
 contradiction. This proves the remaining cases.
 \end{proof}
 
+\section{Eight further alternating knots with six-sheeted actions}
+
+Put
+\[
+\mathcal A_8=\{13a_{304},13a_{362},13a_{623},13a_{629},
+13a_{3232},13a_{3259},13a_{3374},13a_{3375}\},\qquad
+\mathcal K_{16}=\mathcal K_8\cup\mathcal A_8.
+\]
+The literal diagrams, canonical arc convention, original seed traces
+and named-census transfers for $\mathcal A_8$ are retained in
+\texttt{a6\_affine\_inputs.json}. The next proof uses their crossing
+incidences, rather than their finite permutation or affine labels.
+
+\begin{theorem}\label{thm:a6eight}
+For every knot in $\mathcal A_8$, the four retained seed normal
+directions are dependent in every common-form nonisotropic orthogonal
+reflection representation over a field of characteristic different
+from two. In particular, all meridian normal directions span a space
+of dimension at most three. The ambient symmetric form may be singular.
+\end{theorem}
+\begin{proof}
+Suppose the four original seed normals are independent. Write
+$A=u_0$, $E=u_1$. The following table specifies a normal basis obtained
+by changing only the last two original seeds. In each row the first
+knot uses local type I below, and the second uses type II.
+\[
+\begin{array}{c|c|c|c|c}
+ K&\text{original seeds}&\text{changed seeds}&C&\text{paired arc}\\\hline
+13a_{304},13a_{3232}&(0,1,5,9)&(0,1,6,9)&u_6&7\\
+13a_{362},13a_{3259}&(0,1,5,11)&(0,1,6,11)&u_6&7\\
+13a_{623},13a_{3374}&(0,1,5,8)&(0,1,5,8)&u_8&9\\
+13a_{629},13a_{3375}&(0,1,5,7)&(0,1,5,8)&u_8&9
+\end{array}
+\]
+For the first two rows put $P=u_5$ and let $Q$ be the last
+original seed. The literal crossing gives $u_6=R_QP=P-B(P,Q)Q$,
+so replacing $P$ by $u_6$, while keeping $Q$, has determinant one.
+In the last row $u_8=R_{u_5}u_7$ gives the other triangular change
+of determinant one. The third row requires no change. These statements
+hold before imposing any Gram restriction. The reduced directions
+therefore include three independent normals: respectively
+$u_0,u_6,u_9$; $u_0,u_6,u_{11}$; and $u_0,u_5,u_8$ in each
+of the last two rows.
+
+Let $j$ be the arc of $C$, and let $j'$ be the paired arc in the
+last column. The five local crossing relations are
+\[
+\begin{array}{c|l}
+\mathrm{I}&(0,1,2),(j,2,3),(3,0,1),(1,3,4),(2,j,j')\\
+\mathrm{II}&(j,1,2),(0,2,3),(3,0,1),(1,3,4),(2,j,j').
+\end{array}
+\]
+They are precisely the crossings involving one of arcs $1,2,3$.
+Set $a=B(A,E)$, $b=B(A,C)$ and $c=B(E,C)$.
+In type I choose
+\[
+ u_2=E-aA,\qquad u_3=E-aA-tC,\qquad t=c-ab,
+ \qquad H=B(u_3,A)=-a-bt.
+\]
+The closing relation $R_{u_3}A=\varepsilon E$, $\varepsilon=\pm1$,
+has coefficients
+\[
+                   1+aH=0,\qquad -H=\varepsilon,
+                   \qquad tH=0.
+\]
+Thus $H\ne0$, $t=0$ and $a=\varepsilon$.
+No scalar is cancelled before it is known nonzero.
+Consequently $u_3=u_2$, $u_4=R_Eu_3=-aA$, and
+$u_{j'}=R_{u_2}C=C$.
+
+In type II choose instead
+\[
+ u_2=E-cC,\qquad u_3=E-cC-tA,\qquad t=a-bc,
+ \qquad H=B(u_3,A)=-t.
+\]
+The same closing relation gives
+\[
+                   1+tH=0,\qquad -H=\varepsilon,
+                   \qquad cH=0.
+\]
+It follows that $c=0$ and $t=a=\varepsilon$.
+Again $u_4=-aA$ and $u_{j'}=C$.
+Both types therefore identify reflection lines $0=4$ and $j=j'$.
+The calculations do not require a nonzero Gram determinant.
+
+Remove the five local crossings and fold these paired lines.
+There remain eight crossing relations on eight normal directions.
+Their exact relabelings to the already proved systems of
+Lemma~\ref{lem:reduced} are listed below. A row gives the new arc
+list in its displayed order, followed by the corresponding old labels;
+the same row applies to both knots named in the first column.
+\[
+\begin{array}{c|c|c|c}
+ K&\text{new labels}&\text{old labels}&\text{old system}\\\hline
+304,3232&(0,5,6,8,9,10,11,12)&(9,10,11,12,0,5,6,8)&13a_{375}\\
+362,3259&(0,5,6,8,9,10,11,12)&(10,11,12,0,5,6,8,9)&13a_{375}\\
+623,3374&(0,5,6,7,8,10,11,12)&(8,6,5,0,12,11,10,9)&13a_{373}\\
+629,3375&(0,5,6,7,8,10,11,12)&(5,0,12,11,10,9,8,6)&13a_{373}
+\end{array}
+\]
+In the first column all indices denote $13a$ knots. The checker
+reconstructs every crossing set from its literal PD and checks these
+bijections, allowing only reversal of the two under-arcs.
+By Lemma~\ref{lem:reduced}, all eight reduced normal directions span
+a space of dimension at most two. They include the three independent
+normals identified above, a contradiction.
+
+The four retained seeds generate the whole knot group by their
+complete propagation trace. Their normal span is invariant under the
+seed reflections, and hence contains all conjugate meridian normals.
+Its dimension at most three therefore gives the final assertion.
+\end{proof}
+
 \section{Coxeter consequences}
 
 \begin{lemma}\label{lem:span}
@@ -453,7 +566,7 @@ This proves the claim even if $S$ was initially infinite.
 \end{proof}
 
 \begin{corollary}\label{cor:coxeter}
-For each $K\in\mathcal K_8$, every
+For each $K\in\mathcal K_{16}$, every
 epimorphism from the group of $K$ to a Coxeter group
 which takes meridians to Coxeter reflections has target Coxeter rank
 at most three. In particular, no finite or infinite Coxeter reflection
@@ -464,26 +577,31 @@ For each knot the original four seeds generate its group by the
 retained complete propagation trace, so their images generate any
 epimorphic target. Lemma~\ref{lem:span} says
 that their normal vectors span the canonical representation space.
-Theorem~\ref{thm:alternating8} says that their span has dimension
-at most three. Neither result requires an invertible Gram matrix or a
+Theorems~\ref{thm:alternating8} and~\ref{thm:a6eight} say that their
+span has dimension at most three. Neither result requires an invertible Gram matrix or a
 faithful representation.
 \end{proof}
 
 \begin{corollary}\label{cor:separation}
-Each $K\in\mathcal K_8$ has $\mr(K)=b(K)=4$, certified by a seven-sheeted
-branched cover, while every Coxeter reflection quotient has rank at
+Each $K\in\mathcal K_{16}$ has $\mr(K)=b(K)=4$, while every Coxeter
+reflection quotient has rank at
 most three.
 \end{corollary}
 \begin{proof}
-The retained cover group is $C_3$, with moving index two on seven
-sheets. The arbitrary-cycle cover bound is
-$\lceil(6+1)/2\rceil=4$, and the same literal diagram has a
+For $K\in\mathcal K_8$, the retained cover group is $C_3$, with
+moving index two on seven sheets, so the arbitrary-cycle cover bound
+is $\lceil(6+1)/2\rceil=4$. For $K\in\mathcal A_8$, the retained
+ternary block matrices on eight dimensions have common fixed space
+of dimension one and meridian displacement rank two; their fixed-space
+bound is $\lceil7/2\rceil=4$, as established in the companion
+\texttt{A6\_AFFINE\_SHARP\_FOUR.tex}, Theorem~2. Every literal
+diagram also has a
 four-seed bridge upper certificate. Corollary~\ref{cor:coxeter}
 proves the asserted limitation of all Coxeter reflection quotients.
 \end{proof}
 
 \begin{corollary}\label{cor:bbk}
-Each $K\in\mathcal K_8$ lies outside every
+Each $K\in\mathcal K_{16}$ lies outside every
 sharp-four construction in
 the work of Baader, Blair and Kjuchukova \cite{bbk} whose proof supplies
 a rank-four
@@ -505,6 +623,13 @@ preserve rank or bridge number, nor classify all families called
 generalized Montesinos.
 
 \section{Exact algebra checks and assurance}
+
+The eight six-sheet-action controls verify both raw local Gram
+calculations, division-free reductions for both closing signs, all
+triangular basis changes and the eight explicit reduced-system
+relabelings. Their literal PDs and seed traces come from
+\texttt{a6\_affine\_inputs.json}; the optional integer-15 certificates
+are not needed for these transfers.
 
 The final four alternating controls separately verify their raw
 unit-determinant basis changes, alternate first-loop formulas,

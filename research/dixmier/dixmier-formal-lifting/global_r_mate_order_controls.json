@@ -1,0 +1,49 @@
+{
+  "scope": "No globally admitted first-order R-mate for mixed S_lambda and S_lambda+nu*h*X^2*C; new critical admission and symbol facts only",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "domain": "D in A2(K((h))) of original momentum order <=1; f,q in K((h))[r,v,v^-1], no r denominators",
+  "leading_coefficient": "-3*h**2*lambda**2*r**5/v**6",
+  "necessary_rational_f": "5*v**2/(14*r)",
+  "r_divisor_derivative_coefficient": "-15*h**2*lambda**2/v**6",
+  "new_global_perturbation": "nu*h*X^2*C; globally admitted first-order, classical reduction zero",
+  "critical_coupling": {
+    "g": "-3r",
+    "beta": "lambda*r^2",
+    "mu": "2",
+    "sigma": "nu*r",
+    "eta": "1"
+  },
+  "critical_operator": {
+    "4": "beta**2*g/v**6",
+    "3": "2*beta*g*(-3*beta*h + v**5)/v**8",
+    "2": "g*(15*beta**2*h**2 - 3*beta*h*v**5 + v**10)/v**10",
+    "0": "mu*v",
+    "1": "sigma/v**2"
+  },
+  "top_weight": 6,
+  "top_symbol": "g*xi**2*(beta*xi + v**3)**2/v**6",
+  "bottom_weight": -14,
+  "bottom_polynomial": "-H*beta**2*g*(-H + 2*h)*(-H + 7*h)*(-H + 9*h)",
+  "primitive14_character_zero": true,
+  "q_adjoint_shift": "-3*h/v**2 - v**3/beta",
+  "newterm_adjoint_difference": {
+    "0": "-sigma*(beta*h + v**5)/(beta*v**4)",
+    "1": "-2*sigma/v**2"
+  },
+  "negative_control": "Removing required r denominator from f makes top commutator nonzero",
+  "hashes": {
+    "GLOBAL_R_MATE_ORDER_OBSTRUCTION.md": "f2458b3fc98890c2f378255c975758f07d7a52e487d44e15a67410efab18f88b",
+    "check_global_r_mate_order.py": "8b84b3c817e066358f624c0c6d0de05ec52860593fdd6f317d9ac78eafd9a566",
+    "EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md": "e1c0e0ec66951325c1abbef5ed9b467a1229f1c3e1b74e2aea9a1cb2b41f9f33",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "4bebb149d20a77c204cbfffddf1319f62a7f88bb309d06c0c57e30d67044716a",
+    "ORDERED_QUARTIC_INFINITY_OBSTRUCTION.md": "c5cc4705cf1f61d5c9be172a4875b05362411599289f45c144e4f875a73946e3"
+  },
+  "coverage_boundary": "Exact finite identities; universal polynomial-r no-go is written divisor proof. No higher-order R-mate claim, finite scalar mate calculation, or bounded Long lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

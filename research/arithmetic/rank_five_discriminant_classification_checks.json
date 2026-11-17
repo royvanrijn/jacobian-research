@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "scope": "Exact algebraic identities and explicit finite local controls; maximality, local-field proofs and the unrestricted classification remain written mathematics.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "checker_sha256": "b9b51e40ca6cdf8edd85a9154aca8a94cf92a066f8971c02d3df1ea700411e0a",
+  "source_sha256": "bf383fe82f9456e730c4e92bb324868e50c3ca373f6739007e55e49e712e3a2d",
+  "check_count": 26,
+  "checks": [
+    {
+      "name": "embedding_determinant",
+      "passed": true
+    },
+    {
+      "name": "quadratic_order_discriminant",
+      "passed": true
+    },
+    {
+      "name": "odd_embedding_permutation_swaps_sums",
+      "passed": true
+    },
+    {
+      "name": "even_embedding_permutation_fixes_sum",
+      "passed": true
+    },
+    {
+      "name": "cubic_discriminant_identity",
+      "passed": true
+    },
+    {
+      "name": "odd_tame_discriminant_remainder_integral",
+      "passed": true
+    },
+    {
+      "name": "two_adic_discriminant_formula",
+      "passed": true
+    },
+    {
+      "name": "complete_two_adic_unit_reduction",
+      "passed": true,
+      "residue_cases": 16
+    },
+    {
+      "name": "wild_three_bounded_controls",
+      "passed": true,
+      "cases": 216,
+      "coefficient_valuation_range": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "wild_three_minimum_classes_distinct",
+      "passed": true
+    },
+    {
+      "name": "wild_three_exponents_are_attained",
+      "passed": true
+    },
+    {
+      "name": "Pauli_cyclic_three_examples_discriminants",
+      "passed": true
+    },
+    {
+      "name": "Pauli_examples_have_square_three_adic_discriminant",
+      "passed": true
+    },
+    {
+      "name": "even_three_exponent_forces_four",
+      "passed": true
+    },
+    {
+      "name": "fundamental_discriminant_example",
+      "passed": true
+    },
+    {
+      "name": "fundamental_minus_twenty_three",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_beta_integral",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_alpha_square",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_alpha_beta",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_beta_square",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_integral_basis_trace_gram",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_field_basis_discriminant",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_polynomial_discriminant",
+      "passed": true
+    },
+    {
+      "name": "pure_cubic_index_square",
+      "passed": true
+    },
+    {
+      "name": "polynomial_discriminant_gives_false_three_factor",
+      "passed": true
+    },
+    {
+      "name": "nineteen_uniformizer_and_remaining_discriminant_support",
+      "passed": true
+    }
+  ]
+}

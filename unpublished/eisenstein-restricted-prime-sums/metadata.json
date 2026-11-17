@@ -1,0 +1,32 @@
+{
+  "title": "From Euler's restricted-prime sums to Eisenstein norms",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "Extends the Gaussian restricted-prime sum theorem to Eisenstein norms, follows the ramified prime3 into the mixed identity, and derives exact primitive-norm sumsets, sharp four/seven bounds and an effective counting criterion.",
+  "published": false,
+  "status": "draft",
+  "source": "main.tex",
+  "pdf": "paper.pdf",
+  "source_bundle": "source.zip",
+  "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
+  "verification": "Written proof of both binary identities and exact sumset consequences; new local arguments and full NumPy/standard-library finite replays are recorded in verification.json. The subgroup-orbit and uniform arithmetic hypotheses are explicit. No external specialist review, formal verification or established novelty is claimed; the balanced assertion remains conjectural.",
+  "verification_record": "verification.json",
+  "next_steps": [
+    "Obtain specialist review of the odd-component Hecke estimate, six-point quotient at3 and the existing Jacquet-Langlands/weight-two specialization.",
+    "Complete the literature audit for primitive Eisenstein norm sumsets and sharp additive-basis bounds; the orbit criterion abstracts an attributed method.",
+    "Obtain external replay and a persistent source-archive identifier before submission.",
+    "Keep the balanced assertion conjectural beyond the finite range until a proof controls the ratio of the norms."
+  ],
+  "catalogued_on": "2026-11-17",
+  "abstract": "We start from the restricted-prime sum theorem of Howe, Huffman,\nKohlmeyer and Kruer and follow its square-lattice argument into the\nEisenstein lattice. Let $\\AA$ contain $1$ and the positive integers whose\nprime factors are all $1$ modulo $3$. The first answer is that\n$\\AA+\\AA$ contains exactly the positive integers $2$ modulo $6$.\nThe ramified prime $3$ then leads to a mixed problem: $\\AA+3\\!\\cdot\\!\\AA$\nis exactly the positive class $4$ modulo $6$. Quaternionic norm counts,\nan odd-component filter and a six-point calculation at $3$ prove the\nlarge-target statements; exact finite certificates complete them.\nTogether, the two identities give the binary and higher sumsets of\nprimitive Eisenstein norm values. Four such values suffice for every\npositive integer, while seven summands from $\\AA$ suffice; both bounds\nare sharp. We then extract a reusable counting criterion with explicit\nhypotheses for an effective cutoff, and end with the balanced-summand\nquestion that remains open.",
+  "abstract_source": "main.tex",
+  "abstract_format": "latex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "revised_on": "2026-11-17"
+}

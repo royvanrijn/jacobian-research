@@ -1,0 +1,119 @@
+{
+  "kind": "internal exact replay; universal proof is the retained TeX source",
+  "passed": true,
+  "scope": {
+    "ordinary_support_two_five_all_indices": true,
+    "ordinary_univariate_binomials_degree_at_most_five": true,
+    "all_common_root_conjugates_argument": "real-field descent in characteristic zero",
+    "all_index_basis": "integer cyclic columns and affine reduction of one fixed row-pair minor",
+    "degree_six_frontier": "equivalence to supports{2,6},{3,6},{4,6} at all terminalN>=6",
+    "three_degree_six_families_proved": false,
+    "all_ordinary_univariate_binomials": false,
+    "all_positive_real_Gamma_shapes": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "complete_reduced_gamma_and_positive_power_parity_cases": 6,
+    "complete_reduced_affine_minor_coefficients": 12,
+    "fixed_row_01_parity_sign_cases": 2,
+    "full_literal_minors": 8,
+    "literal_minor_coefficients_checked": 184,
+    "corrupted_linear_or_higher_coefficient_controls": 2
+  },
+  "full_minor_controls": [
+    {
+      "n": 1,
+      "gamma": 3,
+      "q": 15,
+      "minor_degree": 1,
+      "constant_linear_reduction": 1,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 10,
+      "gamma": 21,
+      "q": 90,
+      "minor_degree": 7,
+      "constant_linear_reduction": 2,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 19,
+      "gamma": 39,
+      "q": 165,
+      "minor_degree": 13,
+      "constant_linear_reduction": 1,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 28,
+      "gamma": 57,
+      "q": 240,
+      "minor_degree": 19,
+      "constant_linear_reduction": 2,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 37,
+      "gamma": 75,
+      "q": 315,
+      "minor_degree": 25,
+      "constant_linear_reduction": 1,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 46,
+      "gamma": 93,
+      "q": 390,
+      "minor_degree": 31,
+      "constant_linear_reduction": 2,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 55,
+      "gamma": 111,
+      "q": 465,
+      "minor_degree": 37,
+      "constant_linear_reduction": 1,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    },
+    {
+      "n": 64,
+      "gamma": 129,
+      "q": 540,
+      "minor_degree": 43,
+      "constant_linear_reduction": 2,
+      "every_higher_coefficient_divisible3": true,
+      "substitute_before_and_after_multiplication_agree": true
+    }
+  ],
+  "exact_imports": {
+    "mixed_rank": "QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex lem:mixed-input; original lower_exponent_initial_and_boundary.tex thm:gap-three-offset-two-rank",
+    "ordinary_degree_five_classification": "QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex cor:degree-five-ray",
+    "ordinary_terminal_at_most_five": "lower_exponent_initial_and_boundary.tex thm:ordinary-fifth",
+    "constant_plus_power": "ALL_UNIVARIATE_TWO_TERM_SFC.tex thm:all",
+    "lower_one_prime_gap_five": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex cor:prime-power-lower-one",
+    "adjacent_exponents": "UNIFORM_PADE_PARABOLA_SFC.tex thm:main"
+  },
+  "python": "3.12.3",
+  "source_sha256": {
+    "QUINTIC_SCALAR_MINOR_SFC.tex": "206853fd9aa54f4cfc04ef959135e879e40e914394f88d48e3e4af127b2d4150",
+    "quintic_scalar_minor_sfc.py": "8147ca5eaa2b1687e36fc3c628a672398ecbc01d6a2a768aa1ce81e50ca5d8de",
+    "QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+    "UNIFORM_PADE_PARABOLA_SFC.tex": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "command": "python research/factorial/image-rigidity/quintic_scalar_minor_sfc.py"
+}

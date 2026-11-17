@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "scope": "Three retained named knots have mr=b=4 by direct binary affine matrices. The common full finite image is W_F2 semidirect A7 of order161280, ordinary rank2 and split meridian class rank4, class size420. No branched-cover topology classification, search completeness, formal verification, external review or global priority is inferred.",
+  "field": 2,
+  "results": [
+    {
+      "name": "13n_4641",
+      "projection_order": 2520,
+      "kernel_dimension": 6,
+      "image_order": 161280,
+      "schreier_loops_checked": 10080,
+      "ordinary_pair_projection_order": 2520,
+      "ordinary_pair_kernel_dimension": 6,
+      "ordinary_pair_words_on_seed_indices": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "ordinary_generating_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridian_class_size": 420,
+      "representation_dimension": 7,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "optional_full_cover_F2": {
+        "edges": 91,
+        "vertices": 7,
+        "tree_edges": [
+          3,
+          5,
+          10,
+          16,
+          42,
+          43
+        ],
+        "columns_after_tree_collapse": 85,
+        "filling_and_crossing_cells": 156,
+        "boundary_rank_F2": 84,
+        "H1_F2_dimension": 1
+      }
+    },
+    {
+      "name": "13n_4642",
+      "projection_order": 2520,
+      "kernel_dimension": 6,
+      "image_order": 161280,
+      "schreier_loops_checked": 10080,
+      "ordinary_pair_projection_order": 2520,
+      "ordinary_pair_kernel_dimension": 6,
+      "ordinary_pair_words_on_seed_indices": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "ordinary_generating_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridian_class_size": 420,
+      "representation_dimension": 7,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "optional_full_cover_F2": {
+        "edges": 91,
+        "vertices": 7,
+        "tree_edges": [
+          3,
+          5,
+          10,
+          16,
+          42,
+          43
+        ],
+        "columns_after_tree_collapse": 85,
+        "filling_and_crossing_cells": 156,
+        "boundary_rank_F2": 84,
+        "H1_F2_dimension": 1
+      }
+    },
+    {
+      "name": "13n_4645",
+      "projection_order": 2520,
+      "kernel_dimension": 6,
+      "image_order": 161280,
+      "schreier_loops_checked": 10080,
+      "ordinary_pair_projection_order": 2520,
+      "ordinary_pair_kernel_dimension": 6,
+      "ordinary_pair_words_on_seed_indices": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "ordinary_generating_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridian_class_size": 420,
+      "representation_dimension": 7,
+      "meridian_displacement_rank": 2,
+      "common_fixed_dimension": 0,
+      "bridge_upper": 4,
+      "meridional_lower": 4,
+      "optional_full_cover_F2": {
+        "edges": 91,
+        "vertices": 7,
+        "tree_edges": [
+          3,
+          5,
+          9,
+          11,
+          14,
+          29
+        ],
+        "columns_after_tree_collapse": 85,
+        "filling_and_crossing_cells": 156,
+        "boundary_rank_F2": 84,
+        "H1_F2_dimension": 1
+      }
+    }
+  ],
+  "optional_named_census_reread_count": 3,
+  "optional_full_cover_homology_checked": true,
+  "corruptions_rejected": [
+    "identity_matrix",
+    "seed_trace",
+    "census_map",
+    "ordinary_pair"
+  ],
+  "input_sha256": {
+    "verify_a7_binary_certificates.py": "4681520f64e1f87aca99daa289b8e8dbbe7b94db40404ce485a56ace1e3ec322",
+    "a7_binary_inputs.json": "79763701a63ddeb976306beace1685406b43b88a8a558eabe3891cef56395436",
+    "A7_BINARY_SHARP_FOUR.tex": "43c0adfb44b90043ed70d57b6e8aa1f12f591d23d094e757127e8ab8ff838290",
+    "sources/wirtinger-systems-published-2020.pdf": "884b32bd4c6f9a8fe250e6b2d6342cbf0dadcb3d8e3a416c76cb7efe7e5e40b0"
+  }
+}

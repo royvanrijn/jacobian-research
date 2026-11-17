@@ -1,0 +1,3296 @@
+{
+  "status": "PASS",
+  "named_cases": 293,
+  "direct_models_per_case": 2401,
+  "direct_models_total": 703493,
+  "valid_four_dimensional_zero_fixed_transvection_models": 0,
+  "all_dimension_binary_rank_one_fixed_codimension_upper": 3,
+  "dual_displacement_span_upper": 3,
+  "irreducible_binary_rank_one_dimension_upper": 3,
+  "results": [
+    {
+      "name": "13a_129",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_135",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_136",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_137",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_194",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_196",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_197",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_198",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_233",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_234",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_239",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_242",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_243",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_244",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_253",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_265",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_268",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_269",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_270",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_271",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_272",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_304",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_309",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_338",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_362",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_365",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_366",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_369",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_373",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_375",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_387",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_391",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_392",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_471",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_483",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_487",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_516",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_518",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_530",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_623",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_629",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3145",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3147",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3148",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3149",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3167",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3168",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3169",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3170",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3188",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3189",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3190",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3191",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3204",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3205",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3207",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3208",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3209",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3210",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3213",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3216",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3219",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3220",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3221",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3222",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3223",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3232",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3234",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3248",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3259",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3261",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3262",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3263",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3264",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3266",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3274",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3275",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3276",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3291",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3292",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3293",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3294",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3295",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3298",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3301",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3302",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3303",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3317",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3320",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3323",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3330",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3331",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3335",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3345",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3346",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3347",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3348",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3351",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3354",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3355",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3356",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3363",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3365",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3368",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3374",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3375",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3388",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3390",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3393",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3394",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3395",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3396",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3399",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3400",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3401",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3402",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3403",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3404",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3405",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3407",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3409",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3410",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3411",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3412",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3413",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3415",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3417",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3418",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3811",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13a_3812",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_326",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_329",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_330",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_341",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_344",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_345",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_348",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_351",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_352",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_355",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_357",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_358",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_510",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_513",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_514",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_518",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_520",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_521",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_524",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_525",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_526",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_529",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_530",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_531",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_582",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_590",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_591",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_598",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_599",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_600",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_627",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_632",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_633",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_644",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_647",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_648",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_651",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_652",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_661",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_662",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_663",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_694",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_695",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_696",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_704",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_705",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_706",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_707",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_708",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_709",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_712",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_713",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_716",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_717",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_718",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_834",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_838",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_839",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_857",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_926",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_991",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_992",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_993",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1000",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1001",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1004",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1005",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1006",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1007",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1011",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1012",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1013",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1039",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1040",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1041",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1043",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1044",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1045",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1046",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1047",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1048",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1175",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1178",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1179",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1200",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1201",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1202",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1210",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1211",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1212",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1270",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1276",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1296",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1367",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1370",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1371",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1374",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1375",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_1376",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3739",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3742",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3745",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3748",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3770",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3773",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3776",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3779",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3814",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3840",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3842",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3844",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3854",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3855",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3856",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3870",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3871",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3872",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3873",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3874",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3897",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3898",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3899",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3900",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3901",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3903",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3904",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3905",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3911",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3914",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3916",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3918",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3919",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3920",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3921",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3922",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3924",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3925",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3928",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3929",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3931",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3932",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3933",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3934",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3935",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3936",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3937",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3938",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3939",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3940",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_3941",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4587",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4589",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4633",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4634",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4637",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4638",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4639",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4640",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4641",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4642",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4643",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4644",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    },
+    {
+      "name": "13n_4645",
+      "ordered_covector_basis_models_checked": 2401,
+      "valid_rank_four_covector_models": 0,
+      "four_meridian_upper": 4,
+      "all_dimension_binary_rank_one_fixed_codimension_upper": 3
+    }
+  ],
+  "reduction_controls": {
+    "codimension_one_exception_checked": true,
+    "codimension_two_reduction_control_checked": true
+  },
+  "positive_knot_control": {
+    "name": "T(4,5)",
+    "outside_negative_panel": true,
+    "crossings": 15,
+    "ordered_models_checked": 2401,
+    "accepted_models": 1,
+    "common_fixed_codimension": 4,
+    "image_order": 120,
+    "all_literal_crossing_matrices_verified": true,
+    "seed_class_ids": [
+      7,
+      84,
+      64,
+      38
+    ],
+    "arc_class_ids": [
+      7,
+      84,
+      74,
+      44,
+      30,
+      64,
+      80,
+      74,
+      60,
+      38,
+      64,
+      84,
+      98,
+      60,
+      30
+    ]
+  },
+  "positive_rank_four_seed_control_verified": true,
+  "corruptions_rejected": [
+    "seed_trace",
+    "census_map"
+  ],
+  "optional_full_class_control": {
+    "group_order": 20160,
+    "class_size": 105,
+    "centralizer_order": 192,
+    "raw_first_normalized_tails": 1157625,
+    "tail_orbits": 8176,
+    "valid_inner_colouring_orbits": 440,
+    "rank_four_covector_orbits": 0,
+    "cases": [
+      {
+        "name": "13a_129",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_135",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_136",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_137",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_194",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_196",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_197",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_198",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_233",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_234",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_239",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_242",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_243",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_244",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_253",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_265",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_268",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_269",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_270",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_271",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_272",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_304",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_309",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_338",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_362",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_365",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_366",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_369",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_373",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_375",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_387",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_391",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_392",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_471",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_483",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_487",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_516",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_518",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_530",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_623",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_629",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3145",
+        "valid_inner_colourings": 2
+      },
+      {
+        "name": "13a_3147",
+        "valid_inner_colourings": 2
+      },
+      {
+        "name": "13a_3148",
+        "valid_inner_colourings": 2
+      },
+      {
+        "name": "13a_3149",
+        "valid_inner_colourings": 2
+      },
+      {
+        "name": "13a_3167",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3168",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3169",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3170",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3188",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3189",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3190",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3191",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3204",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3205",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3207",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3208",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3209",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3210",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3213",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3216",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3219",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3220",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3221",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3222",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3223",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3232",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3234",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3248",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3259",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3261",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3262",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3263",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3264",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_3266",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_3274",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3275",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_3276",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13a_3291",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3292",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3293",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3294",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3295",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3298",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3301",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3302",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3303",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3317",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3320",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3323",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3330",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3331",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3335",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3345",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3346",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3347",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3348",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3351",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3354",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3355",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3356",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3363",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3365",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3368",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3374",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3375",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3388",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3390",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3393",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3394",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3395",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3396",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3399",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3400",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3401",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3402",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3403",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3404",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3405",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3407",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3409",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3410",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3411",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3412",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3413",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3415",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3417",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3418",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13a_3811",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13a_3812",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_326",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_329",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_330",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_341",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_344",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_345",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_348",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_351",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_352",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_355",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_357",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_358",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_510",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_513",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_514",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_518",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_520",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_521",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_524",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_525",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_526",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_529",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_530",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_531",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_582",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_590",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_591",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_598",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_599",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_600",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_627",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_632",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_633",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_644",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_647",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_648",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_651",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_652",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_661",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_662",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_663",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_694",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_695",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_696",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_704",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_705",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_706",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_707",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_708",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_709",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_712",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_713",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_716",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_717",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_718",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_834",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_838",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_839",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_857",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_926",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_991",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_992",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_993",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1000",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1001",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1004",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1005",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1006",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1007",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1011",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1012",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1013",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1039",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1040",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1041",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1043",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1044",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1045",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1046",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1047",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1048",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_1175",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1178",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1179",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1200",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1201",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1202",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1210",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1211",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1212",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1270",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1276",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1296",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1367",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1370",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1371",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1374",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1375",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_1376",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3739",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3742",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3745",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3748",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3770",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3773",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3776",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3779",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3814",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3840",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3842",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_3844",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_3854",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3855",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_3856",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_3870",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3871",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3872",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3873",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3874",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3897",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3898",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3899",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3900",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3901",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3903",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3904",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3905",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3911",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3914",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3916",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3918",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3919",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3920",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3921",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3922",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3924",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3925",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3928",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3929",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3931",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3932",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3933",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3934",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3935",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3936",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3937",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3938",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3939",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3940",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_3941",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_4587",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_4589",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13n_4633",
+        "valid_inner_colourings": 7
+      },
+      {
+        "name": "13n_4634",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_4637",
+        "valid_inner_colourings": 7
+      },
+      {
+        "name": "13n_4638",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_4639",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_4640",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_4641",
+        "valid_inner_colourings": 1
+      },
+      {
+        "name": "13n_4642",
+        "valid_inner_colourings": 5
+      },
+      {
+        "name": "13n_4643",
+        "valid_inner_colourings": 3
+      },
+      {
+        "name": "13n_4644",
+        "valid_inner_colourings": 2
+      },
+      {
+        "name": "13n_4645",
+        "valid_inner_colourings": 5
+      }
+    ]
+  },
+  "optional_named_census_reread_count": 293,
+  "input_sha256": {
+    "verify_rank_one_binary_boundary.py": "e92bfdb5748f443cbe6fa1476a046ceb8efc8f296f918634cb8c7f40ce9108f1",
+    "rank_one_binary_boundary_inputs.json": "c2f3fbf00bfd66c9931c430f7f6be24077c19cf22ff3a4d181b888b3bbf7bb06",
+    "RANK_ONE_BINARY_BOUNDARY.tex": "6de0a975dba3074d85fe59fe40acb09069afce54f83037397d00d6ec298eeb8b",
+    "sources/bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
+  },
+  "scope": "Exactly the frozen293 named four-seed diagrams. EveryF2 representation in any finite ambient dimension with meridian displacement rank1 has fixed-space codimension<=3. Main finite proof directly exhausts coordinate-covector models, including reducible images; independent full-class orbit control is optional. The written contragredient corollary additionally bounds displacement span and irreducible dimension by3. No conclusion for larger fields, displacement rank>=2, generic eigenvalues or unrestricted meridional rank."
+}

@@ -155,13 +155,9 @@ R2 not in F from PF171 remain intact. The trace argument does
 not promote either one to a target coordinate or an integral
 element of the original full finite normalization.
 
-No new primitive-element claim is needed: the previously proved
-source-field reconstruction E=F(u), where applicable in the
-retained actual setup, is distinct from (12).
-
 The checker replays the actual cubic multiplication traces,
 their complete degree-leading recurrence, the volume-trace
-identity and the odd-coefficient recursion. These exact controls
+identity and the odd-coefficient recursion. The checker passes 89 exact controls, which
 support the written inductions (6),(7),(11); bounded moment or
 coefficient sampling does not prove the theorem.
 

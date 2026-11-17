@@ -1,0 +1,212 @@
+{
+  "status": "passed",
+  "python": "3.12.3",
+  "command": "python3 research/arithmetic/verify_elliptic_exception_field_discriminant.py --write-receipt",
+  "scope": "Exact field-isomorphism, integral multiplication table, trace discriminant, prime factorization and local Eisenstein certificates. Maximality uses the written local-ring and discriminant theorems. No PARI computation, formal verification, external review or elliptic Hasse-infinitude claim is assumed.",
+  "checker_sha256": "70f75717623fdb8dcf5d714a95150143be36e38e5f8bff942f8ce245c7c64bea",
+  "source_sha256": "45b3b103649ca02064439301b1f2bfa48d41cdbf0204d0bfaa8334b5c7d97744",
+  "certificate_sha256": "f6bc3ee74612db05011895534afcf2bda1bc9526b67c967bdd9b9bb4b639d3ed",
+  "original_certificate_sha256": "2d7b357d58428c5be3b605f27ee949754e8b13061652bb6dc64f6085d46ff53a",
+  "primary_Milne_sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+  "check_count": 27,
+  "checks": [
+    {
+      "name": "same_original_integral_model",
+      "passed": true
+    },
+    {
+      "name": "monic_cubic_models",
+      "passed": true
+    },
+    {
+      "name": "irreducibility_control_prime",
+      "passed": true
+    },
+    {
+      "name": "reduced_cubic_irreducible_mod_prime",
+      "passed": true,
+      "prime": 17
+    },
+    {
+      "name": "original_cubic_irreducible_mod_prime",
+      "passed": true,
+      "prime": 17
+    },
+    {
+      "name": "exact_original_root_bridge_mod_R",
+      "passed": true
+    },
+    {
+      "name": "rank_three_basis",
+      "passed": true
+    },
+    {
+      "name": "complete_nontrivial_basis_products",
+      "passed": true
+    },
+    {
+      "name": "integral_order_product_(1, 1)",
+      "passed": true
+    },
+    {
+      "name": "integral_order_product_(1, 2)",
+      "passed": true
+    },
+    {
+      "name": "integral_order_product_(2, 2)",
+      "passed": true
+    },
+    {
+      "name": "trace_pairing_discriminant",
+      "passed": true,
+      "discriminant": "-470381786514785447886543801463724621078040"
+    },
+    {
+      "name": "power_basis_discriminant_comparison",
+      "passed": true
+    },
+    {
+      "name": "complete_order_discriminant_factorization",
+      "passed": true
+    },
+    {
+      "name": "all_discriminant_primes_are_prime",
+      "passed": true,
+      "primes": [
+        2,
+        3,
+        5,
+        13,
+        1321,
+        9601,
+        2709173,
+        230703199
+      ]
+    },
+    {
+      "name": "positive_factor_exponents",
+      "passed": true
+    },
+    {
+      "name": "quadratic_fundamental_discriminant",
+      "passed": true
+    },
+    {
+      "name": "field_discriminant_squarepart_identity",
+      "passed": true
+    },
+    {
+      "name": "squarepart_complete_factorization",
+      "passed": true
+    },
+    {
+      "name": "Eisenstein_shift_13",
+      "passed": true,
+      "prime": 13,
+      "shift": "9",
+      "constant_unit": "8"
+    },
+    {
+      "name": "Eisenstein_shift_1321",
+      "passed": true,
+      "prime": 1321,
+      "shift": "881",
+      "constant_unit": "1315"
+    },
+    {
+      "name": "Eisenstein_shift_9601",
+      "passed": true,
+      "prime": 9601,
+      "shift": "6401",
+      "constant_unit": "4547"
+    },
+    {
+      "name": "Eisenstein_shift_230703199",
+      "passed": true,
+      "prime": 230703199,
+      "shift": "153802133",
+      "constant_unit": "105958963"
+    },
+    {
+      "name": "maximality_prime_coverage",
+      "passed": true,
+      "eisenstein_primes": [
+        13,
+        1321,
+        9601,
+        230703199
+      ],
+      "valuation_one_odd_primes": [
+        3,
+        5,
+        2709173
+      ]
+    },
+    {
+      "name": "two_adic_Stickelberger_index_obstruction",
+      "passed": true
+    },
+    {
+      "name": "original_order_index",
+      "passed": true,
+      "index_factorization": [
+        [
+          2,
+          31
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          353,
+          1
+        ],
+        [
+          2591,
+          1
+        ],
+        [
+          9601,
+          7
+        ]
+      ]
+    },
+    {
+      "name": "Hasse_discriminant_predicate",
+      "passed": true
+    }
+  ],
+  "field_discriminant": "-470381786514785447886543801463724621078040",
+  "quadratic_discriminant": "-325100760",
+  "squarepart": "38037875815735627",
+  "squarepart_factors": [
+    [
+      13,
+      1
+    ],
+    [
+      1321,
+      1
+    ],
+    [
+      9601,
+      1
+    ],
+    [
+      230703199,
+      1
+    ]
+  ],
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "external_review": false
+}

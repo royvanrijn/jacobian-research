@@ -1,0 +1,66 @@
+{
+  "claim": "QAS1",
+  "status": "PASS",
+  "universal_quadratic_adjoint_coefficient_identity": true,
+  "rational_mixed_twist": "-V**3/beta - 3*eta/V**2",
+  "Ore_relation_and_involution_controls": true,
+  "mixed_square_selfadjoint": true,
+  "sigma_perturbation_breaks_symmetry": true,
+  "skew_part_odd_order_control": true,
+  "complete_M6_positive_part_matches": true,
+  "M2_sigma_A2_coefficient": "a0*beta*eta*sigma",
+  "M6_sigma_decisive_A2_coefficient": "-3828*a0**3*beta**3*eta**5*sigma",
+  "M6_sigma0_decisive_A1_coefficient": "-3*a0*beta*eta*mu**2",
+  "corrupted_M6_rejected": true,
+  "positive_square_leading_Airy_control": true,
+  "symbolic_index_polynomial_certificate": true,
+  "sigma_moments_D0_through_D3": [
+    "1/2",
+    "-66",
+    "2376000",
+    "-756138240000"
+  ],
+  "M10_decisive_A2_coefficient": "270864000*sigma",
+  "integer_monomial_pole_family": {
+    "symbolic_ell_twisted_adjoint_and_bottom_coefficient": true,
+    "symbolic_m_adjoint_reflection_degrees": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "primitive_n_nonzero_character_examples": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      15
+    ],
+    "primitive_2n_character_vanishes": true,
+    "symbolic_m_n_leading_difference_degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "m_equals_2n_boundary_degree_verified": true,
+    "mu_allowed_arbitrary": true,
+    "no_full_centralizer_claim": true
+  },
+  "hashes": {
+    "TWISTED_ADJOINT_SQUARE_OBSTRUCTION.md": "f647dfd57e2d922021dd076fbb9a1dcf6ef6d0eb4ad1f3988a6ce225675dd714",
+    "check_twisted_adjoint_square.py": "5d806a5e24c450549a7dc7086aae1d261106db34360a60689047894b1d38adfe",
+    "SQUARE_ORDERED_QUARTIC_FACE.md": "420c699b37fb8d001955ab1e43bc2241a2db0d96d0bda237f19034e1f6777699",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "4bebb149d20a77c204cbfffddf1319f62a7f88bb309d06c0c57e30d67044716a",
+    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f"
+  },
+  "coverage_boundary": "Exact universal quadratic-adjoint identities, finite Ore involution and symmetry controls, full-parameter M2/M6 positive parts and commutator witnesses, symbolic-index polynomial certificate, formal-series moments0..3, and a full order10 control; symbolic-ell adjoint/bottom identities, symbolic-m reflection and m=2n leading-degree controls for the integer monomial-pole family. Finite scalar all-order exclusion uses the written adjoint parity or recurrence/weight proof; no quotient-division-ring theorem is certified.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

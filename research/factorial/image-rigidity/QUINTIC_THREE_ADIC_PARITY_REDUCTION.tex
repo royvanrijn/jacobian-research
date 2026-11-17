@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\Q}{\mathbb Q}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Three-adic balance and parity for ordinary quintic moments}
+\author{}\date{}\maketitle
+For the ordinary quintic support $\{2,5\}$, an exact mixed-adjoint
+identity forces every root common to two consecutive moments to have
+one specified three-adic valuation. When that valuation is $-1$, its
+lower Newton cluster has width one. Real-root parity then excludes a
+rational common factor. The only terminal progression left by this
+argument is $N\equiv11\pmod{27}$; it remains an infinite open target.
+Internal replay is separate from independent replay, formal verification,
+external review and priority.
+
+For $n\ge1$ put
+\[
+ P_n(t)=\sum_{k=0}^n\binom nk(2n+1)_{3k}t^k,\qquad
+ D=5n+4,\qquad r=v_3(D).
+\]
+Every valuation is normalized by $v_3(3)=1$.
+We work in a complete algebraically closed extension $K$ of $\Q_3$,
+with valuation ring $\mathcal O$, maximal ideal $\mathfrak m$, and residue
+field $k$. An overbar always means reduction modulo $\mathfrak m$;
+it does not assert congruence modulo $3\mathcal O$.
+
+\section{The exact mixed-adjoint input}
+For every integer $m\ge0$ and parameter $\gamma$, define
+\[
+ T_{m,\gamma}(t)=\sum_{k=0}^m\binom mk(\gamma)_{3k}t^k,\qquad
+ B_{0,\gamma}=1,\quad
+ B_{j+1,\gamma}=(z+3j+\gamma+2)B_{j,\gamma}
+                       -zB_{j,\gamma}' .
+\]
+Thus $P_n=T_{n,2n+1}$. Set
+\[
+ M=\gamma+3m,\quad A=(M+3)(M+4),\quad
+ \kappa=\frac{3(m+1)}{A},
+\]
+\[
+ B=B_{m,\gamma},\qquad C=B_{m+1,\gamma},\qquad
+ D_*=B_{m+2,\gamma},\qquad H=D_*+\kappa z^3B.
+\]
+For $u\ne0$, write the cyclic column of a polynomial $J$ as
+\[
+ J(z)=J_0(z^3)+zJ_1(z^3)+z^2J_2(z^3),\qquad
+ {\bf j}(u)=(J_0(u),J_1(u),J_2(u))^{\mathsf T}.
+\]
+\begin{lemma}[Exact imported mixed-adjoint equivalence]\label{lem:mixed-input}
+For $m\ge1$, $\gamma>0$ and $u\ne0$, the two equalities
+\[
+ T_{m,\gamma}(u^{-1})=T_{m+1,\gamma+2}(u^{-1})=0
+\]
+are equivalent to $\operatorname{rank}[{\bf c}(u),{\bf h}(u)]<2$.
+The equivalence is algebraic in characteristic zero, so it also holds
+over $K$ for positive rational $\gamma$.
+\end{lemma}
+\begin{proof}[Precise imported identity and normalization]
+This is Theorem \texttt{thm:gap-three-offset-}\allowbreak\texttt{two-rank} in the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}.
+
+The proof of
+\texttt{cor:gap-three-lower-}\allowbreak\texttt{two-eight-ninths}
+there explicitly applies this algebraic identity over $K$.
+The following formulas specify the imported normalization completely.
+
+For $R=z^{3m}T_{m,\gamma}(z^{-3})$ and $E=M-zD_z$,
+coefficient comparison gives
+\[
+ (\gamma)_2z^{3(m+1)}T_{m+1,\gamma+2}(z^{-3})
+       =[z^3(E)_2+(E)_5]R.
+\]
+The fourth-order equation is
+\[
+ R^{(4)}-\frac{3(M-1)}zR'''
+ +\frac{3M(M-1)}{z^2}R''
+ -\left(\frac{M(M-1)(M+1)}{z^3}+1\right)R'
+ +\frac{3m}zR=0.
+\]
+Reduction of the preceding operator yields $qR+bR'+cR''+dR'''$, where
+\[
+\begin{aligned}
+ q&=(M)_5+[M(M+1)-6m(M+2)]z^3,\\
+ b&=3z[-M(M+1)A+(m+1)z^3],\\
+ c&=3Mz^2A,\qquad d=-z^3A.
+\end{aligned}
+\]
+For $\xi^3=1$, the zero adjoint concomitants for
+$f_\xi=e^{-\xi z}z^{1-M}B(\xi z)$, after imposing $R=0$
+and eliminating $R'''$ with $d\ne0$, have coefficients
+\[
+ U_\xi=d(a_3f_\xi-f_\xi')-cf_\xi,\qquad
+ V_\xi=d[f_\xi''-(a_3f_\xi)'+a_2f_\xi]-bf_\xi,
+\]
+where $a_3=-3(M-1)/z$, $a_2=3M(M-1)/z^2$.
+If $g_\xi=e^{-\xi z}z^{1-M}$, the exact simplifications are
+\[
+ U_\xi/g_\xi=-z^2A C(\xi z),\qquad
+ \bigl(V_\xi+(3M+5)U_\xi/z\bigr)/g_\xi=-zA H(\xi z).
+\]
+The full concomitant matrix has rank three. Its nullspace is spanned
+by the nonzero jet $(R,R',R'',R''')$. This is the imported rank fact:
+it makes elimination an equivalence, including multiple roots,
+rather than just a necessary relation.
+Fourier evaluation at $z,\omega z,\omega^2z$ is invertible when
+$z^3=u\ne0$, and identifies the evaluation and cyclic-column ranks.
+Every gauge has been removed from the resulting polynomial rank identity.
+The source proof justifies this same algebraic identity over $K$.
+No uniform rank assertion is imported.
+\end{proof}
+
+\section{Balance, the one-root cluster and parity}
+\begin{lemma}[Every common root is balanced]\label{lem:balance}
+If $P_n$ and $P_{n+1}$ have a common root $t\in K$, then
+\[
+ v_3(t)=1-r,\qquad
+ \overline{t/3^{\,1-r}}=-\bigl(5\overline{D/3^r}\bigr)^{-1}\in k^\times.
+\]
+In particular a common root is impossible when $r\le1$.
+\end{lemma}
+\begin{proof}
+Put $\gamma=2n+1$, $u=t^{-1}$ and choose $z^3=u$.
+The constant terms are one, so $t,z,u$ are nonzero.
+Every $(\gamma)_{3k}$ contains at least $k$ integer factors divisible
+by three. Thus every coefficient of
+\[
+ z^{3n}P_n(z^{-3})
+\]
+at $z^{3(n-k)}$ has valuation at least $k$.
+If $v_3(z)<1/3$, its leading term is uniquely of smallest valuation,
+which is impossible at a root. Consequently $v_3(u)\ge1$.
+
+Use Lemma~\ref{lem:mixed-input} with $m=n$:
+\[
+ B=B_{n,\gamma,3},\quad C=B_{n+1,\gamma,3},\quad
+ D_*=B_{n+2,\gamma,3},\quad
+ H=D_*+\kappa z^3B,\qquad
+ \kappa=\frac3{5(5n+4)}.
+\]
+A common root forces the two cyclic columns $C,H$, evaluated at $u$,
+to have rank less than two. Their coefficient vectors, as well as
+that of $B$, are integral because $\gamma$ is an integer and
+$v_3(u)>0$.
+On reduction modulo the maximal ideal, $u$ is zero and the auxiliary
+operator is
+\[
+ \mathsf A=z-zD_z+\bar\gamma-1
+ \quad\hbox{on }k[z]/(z^3),\qquad \mathsf A^3=\mathsf A.
+\]
+The vectors $1,\mathsf A1,\mathsf A^21$ form a basis since they are
+monic of degrees zero, one and two. Moreover $\bar\gamma\in\mathbb F_3$.
+For every $n\ge1$, $\mathsf A^n1$ and $\mathsf A^{n+1}1$
+are independent: $\mathsf A$ has the three distinct eigenvalues
+$0,1,-1$, the cyclic vector has a nonzero component in every
+eigenspace, and the two nonzero eigenspaces give a Vandermonde minor.
+The reduced columns $B,C,D_*$ are respectively
+$\mathsf A^n1,\mathsf A^{n+1}1,\mathsf A^{n+2}1$.
+
+Write $\eta=\kappa u$. If $v_3(\eta)>0$, the pair $C,H$ reduces
+to $\mathsf A^{n+1}1,\mathsf A^{n+2}1$, of rank two.
+If $v_3(\eta)<0$, first multiply the second column by $\eta^{-1}$;
+it then reduces to the independent pair
+$\mathsf A^{n+1}1,\mathsf A^n1$.
+Both contradict rank deficiency. Hence $v_3(\eta)=0$.
+
+Since $n\ge1$, $\mathsf A^{n+2}1=\mathsf A^n1$.
+The pair now reduces to
+$\mathsf A^{n+1}1,(1+\bar\eta)\mathsf A^n1$.
+It has rank less than two exactly when $\bar\eta=-1$.
+As $v_3(\kappa)=1-r$, balance gives $v_3(u)=r-1$
+and $v_3(t)=1-r$.
+Writing $t=3^{1-r}w$, one has
+$\eta=1/[5(D/3^r)w]$, proving the residue assertion.
+The inequality $v_3(u)\ge1$ excludes $r\le1$.
+\end{proof}
+
+\begin{lemma}[A unique valuation-minus-one root]\label{lem:one-root}
+If $n\equiv1\pmod9$, the lower Newton polygon of $P_n$ has first
+edge $(0,0)$ to $(1,1)$, of width one, and all other slopes
+strictly exceed one. Thus it has exactly one root of valuation $-1$.
+\end{lemma}
+\begin{proof}
+Write $2n+1=3g$. Then $g\equiv1\pmod3$ and, exactly,
+\[
+ v_3\!\left(\binom nk(2n+1)_{3k}\right)
+ =k+v_3\!\left(\binom nk(g)_k\right).
+\]
+Indeed the integer multiples of three in the rising factorial
+are precisely $3g,3(g+1),\ldots,3(g+k-1)$.
+For $k=1$, both $n$ and $g$ are units, giving valuation one.
+For $k=2$, $\binom n2=n(n-1)/2$ is divisible by nine.
+For $k\ge3$, $(g)_k$ contains a multiple of three.
+All coefficients at $k\ge2$ therefore have valuation strictly
+larger than $k$. Together with $c_0=1$, this proves the stated
+Newton polygon and its width-one root count.
+\end{proof}
+
+\begin{theorem}\label{thm:new-ray}
+For every integer $n\ge1$ with $n\not\equiv10\pmod{27}$,
+\[
+ \gcd(P_n,P_{n+1})=1
+\]
+over $\Q$ and over $\mathbb C$.
+Equivalently, the only remaining ordinary terminal orders for
+support $\{2,5\}$ lie on $N\equiv11\pmod{27}$.
+\end{theorem}
+\begin{proof}
+If $v_3(5n+4)\le1$, Lemma~\ref{lem:balance} excludes any common
+root over $K$, hence the rational resultant is nonzero.
+Suppose instead $r=2$; this implies $n\equiv1\pmod9$.
+Every common root must have valuation $-1$ by
+Lemma~\ref{lem:balance}, and the lower polynomial has exactly one
+such root, with multiplicity one, by Lemma~\ref{lem:one-root}.
+The degree of the rational gcd is therefore at most one.
+
+On the other hand it cannot have degree one. The even-index member
+is positive at every real argument, by its Gamma-moment integral.
+Every common real-coefficient factor has no real roots and therefore
+has even degree. Indeed for real $t$ the finite Gamma-moment expansion is
+\[
+ P_j(t)=\frac1{\Gamma(2j+1)}
+       \int_0^\infty x^{2j}(1+tx^3)^j e^{-x}\,dx.
+\]
+When $j$ is even its integrand is nonnegative and positive on an
+interval, so $P_j(t)>0$. This supplies the parity statement directly.
+A nonconstant rational gcd would have even degree at least two,
+a contradiction.
+
+The only possibility not excluded is $r\ge3$, namely
+$5n+4\equiv0\pmod{27}$ or $n\equiv10\pmod{27}$.
+A rational Bezout identity remains valid over $\mathbb C$.
+For $AB\ne0$ the exact normalization is
+\[
+ \mathcal L_1\bigl((X^2(A+BX^3))^j\bigr)
+       =A^j(2j)!P_j(B/A).
+\]
+If $A=0$ or $B=0$, every positive-order moment is nonzero because
+the phase is a nonzero monomial.
+\end{proof}
+
+\begin{corollary}[The remaining degree-five target]\label{cor:degree-five-ray}
+Strong Factorial for every ordinary univariate binomial of degree
+at most five is equivalent to
+\[
+ \gcd(P_{N-1},P_N)=1
+ \quad\hbox{for every }N\ge11,\qquad N\equiv11\pmod{27}.
+\]
+\end{corollary}
+\begin{proof}
+Corollary \texttt{cor:ordinary-quintic-}\allowbreak\texttt{ray-reduction} in the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}
+reduces the degree-five problem to the same support at
+$N\ge11$, $N\equiv2\pmod9$.
+Theorem~\ref{thm:new-ray} removes the two residue classes
+$N\equiv2,20\pmod{27}$.
+The remaining tests are part of the original degree-five assertion,
+which proves the converse. No claim discharges them.
+\end{proof}
+
+\begin{corollary}[Two thirds of the sparse no-carry-failure family]\label{cor:sparse-family}
+For $n=2^{12s+6}$, the new theorem excludes the pair whenever
+$s\not\equiv0\pmod3$.
+\end{corollary}
+\begin{proof}
+The powers of two modulo $27$ have period $18$.
+As $s$ runs modulo three, $n$ is respectively $10,1,19$ modulo $27$.
+Only the first is retained by Theorem~\ref{thm:new-ray}.
+\end{proof}
+\begin{corollary}[The interpolated common index is not an ordinary order]\label{cor:interpolated-index}
+Let $(\tau_*,w_*)$ be the unique integral common point in
+Theorem \texttt{thm:p3-index-}\allowbreak\texttt{interpolation-}\allowbreak\texttt{obstruction} of the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}.
+Then neither $\tau_*$ nor $m_*=1+27\tau_*$ is a nonnegative ordinary
+integer. This asserts no irrationality, transcendence or negative-integer
+exclusion.
+\end{corollary}
+\begin{proof}
+That theorem gives $\tau_*\in\mathbb Z_3$ and a unit $w_*\in\mathbb Z_3$,
+with the two interpolated series zero. If $\tau_*$ were a nonnegative
+integer, $m_*=1+27\tau_*$ would be a positive integer and the series
+would terminate, exactly as
+\[
+ P_{m_*}(w_*/3)=P_{m_*+1}(w_*/3)=0.
+\]
+But $m_*\equiv1\pmod{27}$ contradicts Theorem~\ref{thm:new-ray}.
+If instead $m_*$ were a nonnegative integer, it is at least one
+because $m_*\equiv1\pmod{27}$, and
+$\tau_*=(m_*-1)/27$ would be a nonnegative integer, giving the same
+contradiction. The finite-degree and parity arguments used here
+are not assertions about noninteger interpolation indices.
+\end{proof}
+
+\section{Scope of the replay}
+The exact checker verifies the displayed Ore reduction symbolically
+in $m,M$ and the two gauge-stripped coefficient identities with a
+formal polynomial jet. It checks all three reductions of $\gamma$
+and both positive-power parity classes in the cyclic operator,
+including every residue of $\eta$.
+Literal coefficient valuations, a few direct gcd controls and
+the full exponent-period calculation support the formulas.
+The all-index conclusion follows from the proofs, not a finite
+index search. The remaining $N\equiv11\pmod{27}$ progression,
+unrestricted ordinary binomial SFC, and unrestricted FC/SFC remain open.
+\end{document}

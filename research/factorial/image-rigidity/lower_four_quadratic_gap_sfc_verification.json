@@ -1,0 +1,198 @@
+{
+  "kind": "internal exact replay; all-index quantifiers are proved in the retained TeX",
+  "passed": true,
+  "scope": {
+    "ordinary_support_four_six_all_indices": true,
+    "all_positive_Gamma_shapes": false,
+    "all_degree_six_supports": false,
+    "all_ordinary_univariate_binomials": false,
+    "unrestricted_FC_or_SFC": false
+  },
+  "controls": {
+    "generic_full_Ore_remainder_coefficients": 3,
+    "generic_stripped_gauge_coefficients": 4,
+    "corrupted_generic_coefficient_rejections": 1,
+    "literal_shape_shift_coefficients": 60,
+    "literal_shape_shift_identities": 6,
+    "literal_cubic_ODE_identities": 6,
+    "complete_reduced_idempotent_entries": 4,
+    "complete_cyclic_basis_determinants": 1,
+    "complete_positive_power_seed_vectors": 2,
+    "symbolic_valuation_difference_identities": 6,
+    "literal_parameter_valuation_identities": 50,
+    "full_literal_odd_scalar_polynomials": 10,
+    "literal_scalar_coefficients_checked": 171,
+    "corrupted_scalar_coefficient_rejections": 2
+  },
+  "full_scalar_profiles": [
+    {
+      "n": 1,
+      "a": 0,
+      "b0": 1,
+      "e": 3,
+      "q0": 2,
+      "scalar_degree": 2,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "ff55e56fc9de9d026b9698ac0042826fb6a06e802149d128a5aa398edf1fdf84"
+    },
+    {
+      "n": 2,
+      "a": 3,
+      "b0": 0,
+      "e": 5,
+      "q0": 16,
+      "scalar_degree": 2,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "375554b5f033e41d088d88ac4cdb7612b2f310e016c2502512f779984035c451"
+    },
+    {
+      "n": 3,
+      "a": 0,
+      "b0": 2,
+      "e": 4,
+      "q0": 2,
+      "scalar_degree": 3,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "45b3c2089665d4a8f19cb58d3b9a94d8160a233ada83fe65361feb9afd4bac5f"
+    },
+    {
+      "n": 4,
+      "a": 1,
+      "b0": 0,
+      "e": 3,
+      "q0": 4,
+      "scalar_degree": 3,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "810432d4d75508caacbfb2f8af6917f09df71f38a212b7484289736fd239a37d"
+    },
+    {
+      "n": 6,
+      "a": 2,
+      "b0": 0,
+      "e": 4,
+      "q0": 8,
+      "scalar_degree": 4,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "03bde58fd774cbf413683d31576030660b91a556391033ae70fb1ea61a397fb9"
+    },
+    {
+      "n": 10,
+      "a": 5,
+      "b0": 0,
+      "e": 7,
+      "q0": 64,
+      "scalar_degree": 6,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "1d5094f86f6a8da902de404aa3036418c659bb503aa4d3143d26545209a3d795"
+    },
+    {
+      "n": 18,
+      "a": 3,
+      "b0": 0,
+      "e": 5,
+      "q0": 16,
+      "scalar_degree": 10,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "40d1bbaad8537578431163bd00de3ee2f09d97737fe492f2ec09ac49b9c6e886"
+    },
+    {
+      "n": 42,
+      "a": 7,
+      "b0": 0,
+      "e": 9,
+      "q0": 256,
+      "scalar_degree": 22,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "203b6ca64e620a6bb34a131cf539b5bf6e4b06ec30f4fa06889926505ee72293"
+    },
+    {
+      "n": 85,
+      "a": 0,
+      "b0": 1,
+      "e": 3,
+      "q0": 2,
+      "scalar_degree": 44,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "fbb49a4049924d087ebb090b8a4a39d0f6b588d6b02928bb78af48709be1dc2f"
+    },
+    {
+      "n": 127,
+      "a": 0,
+      "b0": 7,
+      "e": 9,
+      "q0": 2,
+      "scalar_degree": 65,
+      "whole_affine_reduction": [
+        1,
+        1
+      ],
+      "all_coefficients_integral": true,
+      "odd_section_before_and_after_substitution_agree": true,
+      "full_integer_scalar_coefficients_sha256": "6899a341d50669e9cf5dead4691c126d2fa5eafab4e8c36e96768b334005a28b"
+    }
+  ],
+  "exact_imports": {
+    "simplicity": "CUBIC_ADJOINT_STABILITY_SFC.tex thm:simple",
+    "zero_concomitant": "CUBIC_ADJOINT_STABILITY_SFC.tex equation(10)",
+    "operator_normalization": "lower_exponent_initial_and_boundary.tex equations(G1)-(G2)"
+  },
+  "source_sha256": {
+    "LOWER_FOUR_QUADRATIC_GAP_SFC.tex": "ea2c5885f6f03a06ca2aa12840eddb191c128c20848ca8cf83d472268b89aca4",
+    "lower_four_quadratic_gap_sfc.py": "93ef37f9964497f87ef46e842977a735837a4e57c9b3886d646741f098177b8d",
+    "CUBIC_ADJOINT_STABILITY_SFC.tex": "ea2510e511545b9dd7a49a0796d75c45575687e60770c3359d38c5bc99cb4125",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "novelty_claim": false,
+  "priority_claim": false,
+  "command": ".venv/bin/python research/factorial/image-rigidity/lower_four_quadratic_gap_sfc.py"
+}

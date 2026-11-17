@@ -120,6 +120,18 @@ At each remaining prime, the cubic supplies the point. The integers below have t
 
 Every row satisfies `v_p(H(x))>2v_p(H'(x))`. The strict Newton/Hensel criterion gives a `Q_p`-root of `H`, hence of `h` by `W=T/D_0`. The exact imported local lifting statement is Milne, *Algebraic Number Theory*, version 3.00, Theorem 7.32, printed p.114, in [the author-hosted primary text](https://www.jmilne.org/math/CourseNotes/ANT300.pdf), with [retained copy](sources/milne-ant300.pdf). The cubic has a real root because its degree is odd. These certificates prove local solubility at every place and complete the proof. ∎
 
+**Corollary EEH2 (pure cubic fields do not exhaust the Hasse fibres).**
+The cubic component in Theorem EEH1 is not a pure cubic field. Thus the
+fixed map has Hasse-failing fibre algebras outside the original
+pure-cubic/cyclotomic-quadratic architecture.
+
+**Proof.** A pure cubic field is presented by `Z^3-a` for a noncube
+`a in Q*`; its polynomial discriminant is `-27a^2`, so its quadratic
+resolvent is `Q(sqrt(-3))`. Changing the integral order or the primitive
+element changes the discriminant by a rational square. Theorem EEH1 has
+quadratic resolvent `Q(sqrt(-81275190))`, which differs from this field
+as shown below. Therefore its cubic field cannot be pure. ∎
+
 ## 2. Location on the elliptic exception and limits
 
 The base `(pi,ell)=(128/25,9/10)` is the noncentered elliptic degeneration of Proposition 3.7 in the resolvent-fibration note. Equations (4) give a nonzero rational square root of `Disc(q)Disc(h)` and therefore a rational point of its matching-resolvent cover. Dividing by the repeated linear factor gives its elliptic normalization; the checker verifies the corresponding exact point on

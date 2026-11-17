@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Exact internal symbolic/reduced-field replay and bounded literal controls; universal claims rely on the retained proof",
+  "universal_statement": "All ordinary a2d3 pairs at lower index n not10mod27 are coprime; all degree<=5 ordinary binomials reduce to terminal N11mod27",
+  "interpolation_consequence": "The retained tau_star and m_star are not nonnegative ordinary integers; no irrationality or transcendence assertion",
+  "open_terminal_ray": "N11mod27 remains open",
+  "controls": {
+    "complete_symbolic_Ore_remainder_coefficients": 4,
+    "complete_symbolic_gauge_stripped_column_identities": 2,
+    "complete_F3_gamma_and_positive_power_parity_cases": 6,
+    "complete_F3_eta_rank_cases": 18,
+    "literal_coefficient_valuation_and_block_identities": 107,
+    "literal_gcd_controls_in_proved_congruence_classes": 4,
+    "full_sparse_family_exponent_period_cases": 3,
+    "outside_width_one_balance_hypothesis_control": 1
+  },
+  "source_sha256": {
+    "QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+    "quintic_three_adic_parity_reduction.py": "49efd55890be657006f13458ff1af1ce6e2c6620331df2960fc19e2afb1dda7f",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "exact_imports": {
+    "mixed_adjoint": "lower_exponent_initial_and_boundary.tex thm:gap-three-offset-two-rank and algebraic transfer in cor:gap-three-lower-two-eight-ninths",
+    "degree_five_classification": "lower_exponent_initial_and_boundary.tex cor:ordinary-quintic-ray-reduction",
+    "interpolated_common_point": "lower_exponent_initial_and_boundary.tex thm:p3-index-interpolation-obstruction"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

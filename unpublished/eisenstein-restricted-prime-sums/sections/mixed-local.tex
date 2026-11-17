@@ -1,0 +1,230 @@
+\section{An odd-component filter and the mixed case}\label{sec:odd-ramified}
+The prime $2$ need not take a share of the error budget. We can remove
+its obstruction exactly by keeping only odd norm components. This helps
+both binary problems and leaves room for the extra condition at $3$ in
+the mixed case.
+
+Throughout this section, $n$ is even and $3\nmid n$. Write $n=2^e m$
+with $e\ge1$ and $m$ odd, and put
+\[
+S(n)=\sigma(n)-\sigma(n/4),
+\]
+where a term with nonintegral argument is zero. Let $\mathcal Q_n^o$
+consist of the representations in $\mathcal Q_n$ for which both
+Eisenstein component norms are odd.
+
+\subsection{Selecting odd components}
+Since $2$ is inert in $\Z[\omega]$, an even component norm has both
+coordinates even. The two component norms of an even target have the
+same parity. Thus the representations excluded from $\mathcal Q_n^o$
+are exactly the scalar multiples $2\alpha$, with
+$\alpha\in\mathcal Q_{n/4}$. Consequently
+\begin{equation}\label{eq:odd-count}
+R_o(n):=|\mathcal Q_n^o|=12S(n),\qquad
+S(n)=3\cdot2^{e-1}\sigma(m)\ge\frac32n.
+\end{equation}
+Both retained norms are positive, since zero is even.
+
+For an odd inert prime $p$, let $b_p^o(n)$ count the retained
+representations in which $p$ divides either component norm. When $p\mid n$,
+all four coordinates are divisible by $p$ whenever one component norm is.
+Scaling by $p$ preserves oddness. Therefore
+\[
+b_p^o(n)=0\quad(p^2\nmid n),\qquad
+b_p^o(n)=12S(n/p^2)\quad(p^2\mid n),
+\]
+and the usual local divisor-sum calculation gives
+\begin{equation}\label{eq:odd-dividing}
+\frac{b_p^o(n)}{R_o(n)}<\frac1{p^2}.
+\end{equation}
+
+\subsection{The odd-component spectral estimate}
+Fix an odd inert prime $p\nmid n$, and use the quotient $Y_p$ and
+operators $T_u$ of Section~\ref{sec:spectral}. At this odd prime, the
+scalar $2$ reduces projectively to the identity. Thus
+\[
+D_n:=T_n-T_{n/4}
+\]
+is exactly the operator obtained by retaining only $\mathcal Q_n^o$;
+again the second term is zero when $4\nmid n$. Its constant eigenvalue
+is $S(n)$, and its determinant-character eigenvalue is
+$(n/p)S(n)$, since $4$ is a square modulo $p$.
+
+On the orthogonal complement of these two characters, consider a
+simultaneous cuspidal eigenvector. At $2$, write the normalized Satake
+roots as $u,v$, with $|u|=|v|=1$ and $uv=1$. The last identity follows
+from the trivial central character of the projective quotient. The
+all-ideal eigenvalue at $2^e$, minus the eigenvalue at $2^{e-2}$, is
+\[
+2^{e/2}\left(u^e+v^e+
+\frac12\sum_{s=1}^{e-1}u^s v^{e-s}\right).
+\]
+For $e=1$ the sum is empty. To obtain this expression, use $uv=1$ to
+identify the terms from $2^{e-2}$ with the interior terms from $2^e$;
+the former have an additional factor $1/2$. Its absolute value is at most $((e+3)/2)2^{e/2}$. Multiplicativity and
+Lemma~\ref{lem:spectral} at the odd factors of $m$ now give
+\begin{equation}\label{eq:odd-operator}
+\|D_n\|_{\{1,\chi_p\}^\perp}
+\le\frac{e+3}{2}\tau(m)\sqrt n.
+\end{equation}
+This estimate uses cancellation before taking absolute values.
+
+Suppose further that $n$ is reduced, so every prime factor lies in
+$\PP$. The ratio of the right side of \eqref{eq:odd-operator} to $S(n)$ is
+\[
+n^{-3/10} H(e)\prod_{q^a\Vert m}F_q(a),\qquad
+H(e)=\frac{e+3}{3\,2^{e/5}},\qquad
+F_q(a)=\frac{(a+1)q^{4a/5}}{1+q+\cdots+q^a}.
+\]
+The ratio $H(e+1)/H(e)$ decreases with $e$, and exact fifth-power
+comparisons show that $H(e)$ attains its maximum for $e\ge1$ at $e=4$.
+For $q\ge32$, one has $F_q(a)\le(a+1)q^{-a/5}\le1$.
+For the remaining odd inert primes, successive ratios are bounded by
+$((a+2)/(a+1))q^{-1/5}$. Once this upper bound is at most one it remains
+so. Checking the preceding exponents gives
+\[
+\begin{array}{c|rrrrr}
+q&5&11&17&23&29\\
+\text{maximizing exponent}&2&1&1&1&0.
+\end{array}
+\]
+The product of the fifth powers of these maxima, including $H(4)^5$, is
+\[
+\frac{2246611641466280158984375}{52336356030243694706688}
+<\frac{59049}{1024}=\left(\frac94\right)^5.
+\]
+Thus the ratio in question is less than $(9/4)n^{-3/10}$.
+
+The normalizer-orbit averaging argument of Section~\ref{sec:spectral}
+applies to $D_n$ with degree $S(n)$. Its orbit indicator has the same
+orthogonality to both character constituents. Therefore
+\begin{equation}\label{eq:odd-local}
+\frac{b_p^o(n)}{R_o(n)}
+\le\frac{2}{p(p-1)}+\frac94n^{-3/10}.
+\end{equation}
+When $p\mid n$, \eqref{eq:odd-dividing} is already smaller than the first
+term, so \eqref{eq:odd-local} holds for every odd inert prime.
+
+\subsection{A six-point quotient at the ramified prime}
+For $\AA+\AA$, a target $2$ modulo $3$ forces both component norms
+to be $1$ modulo $3$. The mixed target is $1$ modulo $3$, so exactly one
+component norm is divisible by $3$. To make it $3b$ with $b\in\AA$,
+we must keep its exponent of $3$ equal to one. We are left with a concrete
+task: count the representations with a component norm divisible by $9$.
+A six-point quotient gives that count exactly, without another spectral
+estimate. Put
+\[
+\overline R=R/3R,\qquad
+G_3=(\OO/3\OO)^\times/\F_3^\times,\qquad
+\Gamma_3=\operatorname{image}(\OO^\times),\qquad
+Y_3=\Gamma_3\backslash G_3.
+\]
+For $z=x+y\omega$ one has $N(z)\equiv(x+y)^2\pmod3$. Among the $81$
+residue quaternions $z+w j$, exactly nine have norm zero: both of the
+corresponding coordinate sums vanish. The other $72$ are units, since
+quaternionic conjugation supplies their inverses after dividing by norm.
+Hence $|G_3|=36$. Only $\pm1$ of the twelve order units become scalars,
+so $|\Gamma_3|=6$ and $|Y_3|=6$.
+
+The norm modulo $3$ is well-defined projectively and is one on
+$\Gamma_3$. Each norm class $Y_3^+$ and $Y_3^-$ has three points.
+Indeed, norm one occurs when exactly one of the two coordinate sums is
+nonzero, and norm two when both are nonzero; each condition describes
+$36$ unit quaternions before projectivizing.
+
+The six units of $\overline R$ are exactly the reductions of
+$\pm1,\pm\omega,\pm\omega^2$. Every point of $Y_3^-$ may therefore be
+represented by $1+t j$, with $t\in\overline R^\times$: first normalize
+its first component by a left Eisenstein unit. Left multiplication by
+$j$, followed by the same normalization, sends $t$ to $-t$, because
+$t\bar t=1$. Left multiplication by an Eisenstein unit leaves the
+normalized ratio unchanged. These exhaust all order units, so the three
+left cosets are exactly
+\[
+\Gamma_3(1+j),\qquad
+\Gamma_3(1+\omega j),\qquad
+\Gamma_3(1+\omega^2j).
+\]
+Right multiplication by $\omega$, followed by left normalization, sends
+$t$ to $t\omega$ and cycles these three points. Thus the right
+$\Gamma_3$-action is transitive on $Y_3^-$.
+
+The same ideal-class argument as in Lemma~\ref{lem:spectral} realizes
+$Y_3$ as an adelic quotient, now taking the kernel of reduction
+$\OO_3^\times\to G_3$ at $3$ and maximal-order units elsewhere.
+For $3\nmid u$, its all-ideal Hecke operator is still
+\[
+(T_uf)(\Gamma_3 g)=\frac1{12}\sum_{\alpha\in\mathcal Q_u}
+ f(\Gamma_3\rho_3(\alpha)g),
+\]
+with degree $\sigma(u)$, counting measure, self-adjointness and the
+prime-power recurrence already established.
+
+For an inert prime $\ell$, $T_\ell$ interchanges the two norm classes.
+Its value on the base-point indicator is constant on the opposite
+three-point class, by the transitive right $\Gamma_3$-action just proved.
+Self-adjointness and degree $\ell+1$ make that value $(\ell+1)/3$.
+Equivariance under $G_3$ transports this conclusion to every point. Thus,
+with the two norm classes ordered first,
+\[
+T_\ell=\frac{\ell+1}{3}
+\begin{pmatrix}0&J_3\\J_3&0\end{pmatrix},
+\]
+where $J_3$ is the $3$ by $3$ all-ones matrix.
+It has eigenvalues $\ell+1$ and $-(\ell+1)$ on the constant and norm-sign
+characters, and acts as zero on the four-dimensional space $W$ of
+functions with sum zero on each norm class.
+
+The all-ideal recurrence shows that the scalar on $W$ at $\ell^a$ is
+zero for odd $a$ and $(-\ell)^{a/2}$ for even $a$. For a reduced target
+$n$, multiplicativity gives
+\[
+\lambda_n=
+\begin{cases}
+0,&n\text{ is not a square},\\
+(-1)^{\Omega(n)/2}\sqrt n,&n\text{ is a square},
+\end{cases}
+\]
+where $\Omega$ counts prime factors with multiplicity.
+
+\subsection{The exact count and its odd-component bound}
+For the unfiltered identity, allow any positive reduced target
+$n\equiv1\pmod3$, without an evenness requirement. If
+$9\mid Q(x,y)$, then $y=-x+3t$ for some integer $t$, and
+$Q(x,y)\equiv3x^2\pmod9$. Thus $3\mid x,y$; the converse is immediate.
+A component norm is divisible by $9$ exactly when that component is zero
+modulo $3R$. Since $3\nmid n$, the other component is a unit of
+$\overline R$. Its reduction is an Eisenstein unit, so the projective
+reduction of the quaternion lies in $\Gamma_3$. The converse also holds.
+
+Let $\delta$ be the indicator of the base point $\Gamma_3\in Y_3^+$,
+and let $B_3(n)$ count the unfiltered representations with a component
+norm divisible by $9$. Then
+\[
+B_3(n)=12(T_n\delta)(\Gamma_3).
+\]
+The projection of $\delta$ onto the constant and norm-sign characters
+has diagonal value $1/3$, and the projection onto $W$ has diagonal
+value $2/3$. Since $n\equiv1\pmod3$, both characters have eigenvalue
+$\sigma(n)$. It follows that
+\begin{equation}\label{eq:ramified-exact}
+B_3(n)=4\sigma(n)+8\lambda_n.
+\end{equation}
+
+Return now to even $n=2^e m$. Let $B_3^o(n)$ count the same obstruction
+among the retained odd-component representations. Scaling by $2$ preserves divisibility of either norm by
+$9$, so $B_3^o(n)=B_3(n)-B_3(n/4)$, with the second term omitted
+when $4\nmid n$. The unfiltered formula applies even when $n/4$ is odd.
+If $n$ is not a square, both
+$\lambda$ terms vanish. If $n$ is a square, then $e\ge2$ and
+$\lambda_{n/4}=-\lambda_n/2$. Therefore
+\[
+B_3^o(n)=4S(n)+12\lambda_n,
+\]
+with the last term interpreted as zero for nonsquares. Dividing by
+\eqref{eq:odd-count} gives
+\begin{equation}\label{eq:ramified-odd-bound}
+\frac{B_3^o(n)}{R_o(n)}
+=\frac13+\frac{\lambda_n}{S(n)}
+\le\frac13+\frac{2}{3\sqrt n}.
+\end{equation}

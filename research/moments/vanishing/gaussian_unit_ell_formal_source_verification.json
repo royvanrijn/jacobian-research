@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "written_theorem_scope": "ell(0) nonzero: full original q-localized source. With deg ell>=2 and gcd(ell,c^2) geometric root multiplicities<=2, no scalar polynomial-exponential vacuum and no finite actual image.",
+  "bounded_controls": {
+    "formal_power_series_germs": 2,
+    "Stein_monomial_exponents_W_Y": [
+      0,
+      4
+    ],
+    "q_inverse_geometric_terms": 4,
+    "q_inverse_source_Stein_t_coefficients": [
+      1,
+      2
+    ],
+    "perturbed_original_source_t_orders": [
+      0,
+      2
+    ],
+    "perturbed_original_markers": 6,
+    "rationalizable_model": "ell=(1+z)^2; all h,c,a,u,k=0",
+    "independent_original_scalar_t_orders": [
+      0,
+      6
+    ],
+    "full_chain_rule_forms": 8,
+    "inverse_U_exponents": [
+      -1,
+      -2,
+      -3,
+      -5
+    ],
+    "scalar_gauges": [
+      "0",
+      "t+2t^2"
+    ],
+    "parameter_normalizer_in_tested_forms": "p=1+3t"
+  },
+  "negative_control": {
+    "Laurent_z_residue_anomaly": "Ehat[(partial_W-z)z^-1]=-1",
+    "singular_germ_rejected": true
+  },
+  "scope": "Finite exact algebraic controls only. The completed-z source extension and full comparison scope are established by the written proof, not by finite moments or tested connection iterates.",
+  "family": "Unit-ell completed-z original source and finite-image exclusion",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "f4a56b9d604ded4a56ba8c00d8bf0bcd590730fd55d9fe752e9ee19f6de2d3db",
+  "checker_sha256": "bae722e1028e1c71c441358c90dd1d3be1fe5ec940b7593bcb8ed4503e591d10",
+  "cover_proof_sha256": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

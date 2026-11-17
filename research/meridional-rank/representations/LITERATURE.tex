@@ -15,7 +15,7 @@ The classical meridional rank conjecture remains open. It asks whether
 $\mr(K)=b(K)$ for every knot $K\subset S^3$; the usual link formulation asks
 the same equality for links. The 2026 problem list retains it as Problem
 1.18 \cite{k3}. No general proof or classical counterexample was found in
-this search. The catalogue \texttt{sources.json} records 56 sources,
+this search. The catalogue \texttt{sources.json} records 57 sources,
 their precise claimed scope and audit depth. This is a broad map of the
 main results and recent developments, with outstanding source audits
 retained rather than an assertion of exhaustive bibliographic coverage.
@@ -23,9 +23,14 @@ retained rather than an assertion of exhaustive bibliographic coverage.
 The graph manifold models now certify $\mr=b=4$ for all sixteen original
 targets, whose complete list is in the final-five proof.
 Together with the four earlier
-seed cases, twenty of the retained293 names had equalities proved by
+seed cases, twenty of the retained $293$ names had equalities proved by
 those methods. The arbitrary-cycle cover calculation below proves
-another twenty-four, for forty-four retained named equalities. All sixteen original targets now have established
+another twenty-four. The six-sheet affine certificates add twenty-four
+more. Three binary affine certificates and fifty projective-cover
+certificates now bring the retained named total to $121$. The fifty
+projective cases are all in the existing BJW graph-cover family.
+All sixteen original
+targets now have established
 membership in the existing Boileau--Jang--Weidmann graph-cover MRC family,
 using closed-manifold rigidity to identify their actual covers.
 They are not cases outside known MRC families. Priority of the explicit
@@ -38,7 +43,196 @@ listed finite inputs. Several earlier search panels and replay receipts
 summarized in this literature map are available only through Git history;
 those summaries do not provide a runnable replay of those older tests.
 
-\section{Current comparison for the eight alternating seeds}
+\section{Current bounds and the known-family boundary}
+
+The retained named certificate count is now $121=20+24+24+3+50$.
+The last fifty are not new MRC-family cases:
+\path{SL3_PROJECTIVE_FAMILY_AUDIT.tex} proves that all have prime
+graph-manifold double covers, placing them inside BJW18's existing
+hypothesis. Their explicit thirteen-sheet actions give ternary
+homology dimension two and the numerical bound
+$\lceil(12+2)/4\rceil=4$, with separate four-seed uppers.
+Their numerical values and exact named certificates are retained
+without a worldwide-priority claim. Including the original sixteen,
+$66$ of the $121$ lie in that known graph-cover family; $52$ have
+certified mixed non-graph double covers, and the three binary cases
+below have unresolved double-cover family comparison.
+
+The three new binary certificates in
+\path{A7_BINARY_SHARP_FOUR.tex} prove $\mr=b=4$ for
+$13n_{4641},13n_{4642},13n_{4645}$.
+They use the common group $\F_2^6\rtimes A_7$, of order $161280$,
+whose ordinary rank is two and whose split meridian class has size $420$
+and generating rank four. Its seven-dimensional homogeneous
+representation has no common fixed vector and meridian displacement
+rank two. No graph-cover exclusion or exact ordinary knot-group rank
+is inferred for these three knots.
+
+There is also a stronger augmentation obstruction for the sixteen
+alternating GL3/A6 knots. In
+\path{INVOLUTORY_KCH_OBSTRUCTION.tex}, the root and covector traces
+are propagated separately, without a symmetric or Hermitian pairing.
+Over every field, their knot groups have no irreducible representation
+of dimension four or more taking meridians to nonidentity rank-one
+involutions. In characteristic two this is a transvection statement.
+In characteristic different from two, Cornwell's exact correspondence
+\cite[Theorem1.2, Definition1.8 and Proposition2.12]{cornwell17}
+therefore gives rank at most three for every $U=1$ cord augmentation
+with $\epsilon(\mu)=-1$, with any nonzero longitude value and without
+symmetric cord values. These knots have meridional rank four. The existing rank-three
+reflective augmentations attain this restricted augmentation bound
+over $\mathbb C$ on the original eight alternating GL3 seeds.
+The signed extension in \path{GENERIC_KCH_OBSTRUCTION.tex} proves
+the first case at every nonzero meridian determinant.
+\path{GENERIC_KCH_EXTENSIONS.tex} now proves the same irreducible
+rank-one displacement bound for all sixteen knots over every field,
+including unipotent meridians. The proof uses independent root and
+covector bases, three signed local fold types and four directed reduced
+systems. It never assumes a preserved form or inverts a proper Gram
+determinant, $2$, $1-\mu$ or $\mu^2-\mu+1$.
+Thus every $U=1$ cord augmentation with $\epsilon(\mu)\ne1$ has rank
+at most three, with any nonzero longitude value. The original eight
+positive certificates and the eight new lower witnesses in
+\path{A6_RANK_THREE_AUGMENTATIONS.tex} give
+\[
+ \operatorname{ar}(K,\mathbb C)=3<4=\mr(K)=b(K)
+ \qquad(K\in\mathcal K_{16}).
+\]
+The augmentation rank here varies all parameters allowed by Cornwell's
+definition; it excludes $\epsilon(\mu)=1$. Earlier gaps
+$2=\operatorname{ar}<\mr=3$ for $8_{16},8_{17},10_{91},10_{94}$ are
+already in \cite[Corollary1.12 and Theorem5.3]{cornwell17}.
+No first-gap or worldwide-priority claim is made.
+
+For every one of these sixteen seeds and every $s\ge0$,
+\[
+ \operatorname{ar}(K\#^s3_1,\mathbb C)=s+3
+ <s+4=\mr(K\#^s3_1)=b(K\#^s3_1).
+\]
+Cornwell's connected-sum theorem
+\cite[Theorem1.9, Section4.2]{cornwell17} supplies the augmentation
+upper bound and constructs the lower augmentation at the common seed
+parameter $\mu=-1$. The independent normalized-cover certificates
+supply the meridional and bridge equalities.
+
+There is also a consequence for reducible representations: if a
+rank-one meridian representation is completely reducible, normal
+generation by the meridian leaves precisely one nontrivial irreducible
+summand. Its dimension is at most three, so the common-fixed-space
+codimension and displacement span are at most three. In particular,
+this applies to every finite-image complex representation, and to
+finite images of order invertible in the base field. The remaining
+rank-one fixed-space question over general fields concerns
+nonsemisimple representations. This does not exclude other finite-group
+conjugacy-class generation bounds.
+
+\path{FINITE_COMPLEX_REFLECTION_BOUNDARY.tex} strengthens the finite
+complex case. Orbit-polynomial characters force a reflection class
+that generates a finite complex reflection group to meet every
+hyperplane orbit and to have full stabilizer order. Replacing each
+reflection generator by a member of that class on the same hyperplane
+preserves generation. The original low-rank classification
+\cite[Sections2--4 and TableVII]{st54} then bounds its class-generation
+rank by three. Consequently no finite complex reflection quotient,
+in any ambient dimension and at any meridian parameter, gives a
+sharp-four meridional certificate on these sixteen knots. Modular
+and other finite-group class bounds remain available; the retained
+affine quotients use larger displacement rank.
+
+Finally, \path{RANK_ONE_BINARY_BOUNDARY.tex} proves that the standard
+fixed-space bound from rank-one meridian displacements over $\F_2$
+is at most three on every one of the $293$ retained diagrams, in every
+ambient dimension. A general dimension-reduction lemma reduces any
+putative bound four to four independent seed covectors in dimension
+four. Making them the coordinate rows leaves exactly $7^4=2401$
+ordered transvection tuples; none satisfies the diagram relations.
+This excludes that specific fixed-space bound, not all finite-group
+class-generation arguments, other fields, or rank-two displacements.
+Applying the same fixed-space result to the contragredient also
+bounds the displacement span by three and bounds irreducible binary
+rank-one representations by dimension three. The new binary $A_7$
+certificates use displacement rank two.
+
+\section{Six-sheet affine certificates: twenty-four additional equalities}
+
+The twenty-four knots in \path{A6_AFFINE_SHARP_FOUR.tex} are disjoint
+from the preceding forty-four. Every one has a six-sheet action with
+meridian type $2^2 1^2$ and $\dim_{\F_3}H_1(Y;\F_3)=2$, giving
+$\lceil(6-1+2)/2\rceil=4$. An independent direct matrix proof uses
+thirteen $8\times8$ block matrices over $\F_3$, each with displacement
+rank two, and a common fixed line. Its essential seven-dimensional
+quotient has zero common fixed space. Four literal diagram seeds
+supply the bridge upper bound, so all twenty-four have $\mr=b=4$.
+Their finite images have orders $262440$ and $29160$ before and after
+quotienting the fixed line. Both have ordinary rank two and meridian
+class generating rank four. No mutual-isomorphism or splitting claim
+is needed. These exact positive certificates require no complete
+negative quotient search.
+
+The ordinary knot-group certificates in
+\path{RANK_THREE_KNOT_GROUP_UPPERS.tex} cover these twenty-four as well
+as the original eight alternating seven-sheet seeds. Thus all
+thirty-two have ordinary group rank at most three, strictly below
+meridional rank four. No exact ordinary-rank-three assertion is made.
+For the eight new alternating knots the comparison is:
+\begin{center}
+\begin{tabular}{lrrrrr}
+\hline
+$K$ & $\det K$ & $\operatorname{rank}G_K$ & $c(K)$ & $a_{\rm ref}(K)$ & $\mr=b$\\
+\hline
+$13a_{304}$  &451&$\le3$&$\le3$&3&4\\
+$13a_{362}$  &451&$\le3$&$\le3$&3&4\\
+$13a_{623}$  &449&$\le3$&$\le3$&3&4\\
+$13a_{629}$  &449&$\le3$&$\le3$&3&4\\
+$13a_{3232}$ &377&$\le3$&$\le3$&3&4\\
+$13a_{3259}$ &377&$\le3$&$\le3$&3&4\\
+$13a_{3374}$ &379&$\le3$&$\le3$&3&4\\
+$13a_{3375}$ &379&$\le3$&$\le3$&3&4\\
+\hline
+\end{tabular}
+\end{center}
+Here $c(K)$ and $a_{\rm ref}(K)$ have the definitions in the next
+section. The universal reflection proof reduces each new diagram to
+one of the previously proved eight-crossing systems. The symmetric
+cord-matrix construction in
+\path{REFLECTIVE_AUGMENTATION_RANK_GAP.tex}, applied to that new
+reflection obstruction, gives the displayed reflective rank upper
+bound. The explicit positive matrices in
+\path{A6_RANK_THREE_AUGMENTATIONS.tex} now attain rank three on all
+eight; the generic signed theorem also makes their unrestricted
+complex augmentation rank exactly three.
+The same free-Gram braid transport excludes symmetric maximal-braid
+augmentations on every braid of at least four strands representing
+any of these eight knots.
+
+Every new actual double branched cover is irreducible and contains
+an incompressible separating torus cutting off certified m143 or m239;
+see \path{A6_COVER_TOPOLOGY.tex}. Consequently all twenty-four are
+outside the BJW graph-cover hypothesis and outside arbitrary rational
+replacements on every sharp-four BBK base. Their determinants all
+have at most two prime factors counted with multiplicity, excluding
+the exact fishnet gcd and nonunit plat gcd criteria. The finite Coxeter
+search now covers all forty-eight ternary affine examples. The eight new
+alternating diagrams are prime alternating with Jones $T=9$ or $10$,
+so the crosscap obstruction excludes all standard BBK twisted diagrams,
+and Purcell's hyperbolicity alternative gives hyperbolic exteriors.
+The universal Coxeter obstruction also excludes the specified JP
+integer-box and rank-preserving Coxeter constructions on these eight.
+These are exclusions of the exact sufficient hypotheses described
+below, not an exhaustive classification of every possible prior proof.
+
+All twenty-four new names remain in the author's pinned/current
+293-name list, and their exact rows in the original BKM workbook have
+Wirtinger number four and zero recorded maximal finite $S,D,H$ hits.
+\path{verify_a6_priority.py} re-extracts those source rows.
+Together with the prior forty-four certificates this gives the
+sixty-eight GL3/A6/original names relative to that specific release.
+The three binary and fifty known-family projective certificates bring
+the full retained total to $121$. Worldwide
+priority and unrestricted nonsymmetric augmentation certificates
+remain separate comparisons.
+
+\section{Comparison for the original eight alternating seeds}
 
 The following eight named knots have the same separation between
 meridional and ordinary generation. Write $G_K=\pi_1(S^3\setminus K)$,
@@ -63,8 +257,9 @@ $13a_{3276}$ &361&$\le3$&3&3&4\\
 \hline
 \end{tabular}
 \end{center}
-The seven-sheeted cover proofs give the sharp meridional lower bound;
-the ordinary-rank proof gives only the displayed upper bound, not
+The seven-sheeted cover proofs and the direct finite affine quotients
+below independently give the sharp meridional lower bound; the
+ordinary-rank proof gives only the displayed upper bound, not
 equality with three. The uniform reflection obstruction includes
 infinite Coxeter targets and singular forms. Explicit triangle
 quotients and cyclotomic cord matrices attain the two ranks three.
@@ -79,7 +274,7 @@ The following comparison concerns the exact sufficient hypotheses in
 the cited sources. It does not infer nonmembership from one drawing.
 \begin{longtable}{p{0.30\linewidth}p{0.63\linewidth}}
 \hline
-Published mechanism & Comparison for all eight knots\\
+Audited mechanism & Comparison for all eight knots\\
 \hline
 Low bridge and explicit three-braid families
 & Bridge four excludes the bridge-at-most-three cases, including
@@ -119,12 +314,12 @@ four strands representing these knots \cite{cornwell17}.\\
 \hline
 \end{longtable}
 
-Existence of an unrestricted rank-four augmentation would itself
-supply a sharp lower bound, but it is a hypothesis, not a construction
-theorem or a known-family membership certificate for these knots.
-Neither reflective rank three nor the symmetric maximal-braid
-obstruction excludes nonsymmetric rank-four augmentations, including
-augmentations presented on more strands. The audited full-twist
+The signed theorem now excludes ordinary unrestricted rank-four
+augmentations on all eight knots in this table and all eight additional
+alternating A6 knots, on any presentation. Their meridional-rank-four
+certificates therefore use information beyond irreducible rank-one
+meridian dimension. The earlier reflective and symmetric maximal-braid
+obstructions are narrower consequences. The audited full-twist
 discussion poses a question rather than proving such existence
 \cite{ch}. No cited theorem here establishes all positive-braid knots
 as another applicable family.
@@ -134,14 +329,18 @@ A fresh read on 17 November 2026 of the author's current
 including all eight table entries. Its retained bytes have Git blob
 \texttt{01c7c332a0bf1565d7558aec4c769ff36cbd31a9}.
 Thus these equalities extend that specific 243-certificate release
-\cite{deposit}; they are also outside the exact published sufficient
+\cite{deposit}; they are also outside the exact audited sufficient
 families excluded above. One targeted primary-source search for
 2024--2026 direct four-bridge ordinary-rank, augmentation or other
 non-Coxeter MRC results found no additional theorem or named
 certificate. Search non-hits are not a mathematical exclusion.
 Worldwide priority remains unestablished: a prior named equality,
-an unrestricted augmentation certificate, or another verified
-non-Coxeter family theorem would have to be compared directly.
+a general-parameter augmentation comparison on other retained knots, or
+another verified non-Coxeter family theorem would have to be compared
+directly. The new signed theorem rules out sharp augmentation
+certificates for all sixteen alternating GL3/A6 knots; it does not
+rule out a prior proof of their meridional-rank equalities by another
+method.
 
 \section{What must be proved and how existing methods do it}
 
@@ -1309,8 +1508,10 @@ The broad rank classification is classical. These eight equalities and
 the other eight original targets are established by the retained case
 proofs, and their graph-cover family membership follows from the final
 rigidity argument below. The original method supplies twenty named equalities. With the
-twenty-four arbitrary-cycle cover cases below, forty-four of the retained
-293 names now have certificates and 249 do not. Worldwide priority of
+twenty-four arbitrary-cycle cover cases and twenty-four six-sheet
+affine cases below, 121 of the retained $293$ names now have certificates; $172$ remain without
+a retained certificate. The additional fifty projective cases are
+known-family instances, distinguished below. Worldwide priority of
 the explicit calculations, full classical MRC and exhaustive literature
 remain open.
 
@@ -1403,7 +1604,7 @@ cyclic. Source catalogue45 is unchanged; no rank conclusion is inferred
 from piece count or a failed quotient test alone.
 
 This completes the original sixteen-case panel here, giving twenty
-named equalities in the retained293 panel and273 names without a
+named equalities in the retained $293$ panel and273 names without a
 certificate in this programme. This is not a worldwide open/closed
 census. All proofs remain unformalized and externally unreviewed. The
 known-family audit is supplied by the rigidity argument below; the
@@ -1633,8 +1834,27 @@ theorem. Numerical volume is not used. This settles the precise
 BJW18 comparison on these finite seeds. The exact fishnet, plat gcd,
 finite Coxeter and standard twisted comparisons below settle further
 scopes. The four-face rational-replacement comparison is also settled
-below. Global priority, higher-face replacements and every positive
-periodic parameter remain separate obligations.
+below. Global priority and the family comparison for every positive
+periodic parameter remain separate obligations. Arbitrary higher-face
+rational origins are universal by the theorem below; such origins alone
+do not retain a sharp meridional lower bound.
+
+There is now an independent finite-group proof for these same
+twenty-four equalities in \path{TERNARY_AFFINE_QUOTIENTS.tex}.
+Put $W=\{v\in\F_3^7:\sum_i v_i=0\}$, with
+$GL_3(\F_2)$ permuting its seven nonzero vectors. The group
+$Q=W\rtimes GL_3(\F_2)$ has order $122472$ and ordinary rank two,
+but its distinguished involution class has generating rank exactly four.
+In its faithful seven-dimensional homogeneous affine action, each such
+involution has displacement rank two and the common fixed space is zero.
+This forces at least four class generators; explicit generators attain
+four. For every one of the twenty-four knots, literal Wirtinger matrices
+and six independent kernel translations prove surjectivity onto $Q$.
+These certificates prove the same sharp equalities without any
+branched-cover group calculation, and do not increase the named count.
+A separate uniform cellular-cochain theorem realizes every finite-field
+arbitrary-cycle homology bound as a finite affine representation. It
+realizes the numerical homology inequality, rather than improving it.
 
 Finally, \path{CONJUGACY_RESTRICTED_QUOTIENT_CAPACITY.tex} gives a
 meridian-sensitive finite quotient gate: eight distinct
@@ -1697,7 +1917,19 @@ non-graph covers are therefore excluded. The precise classical source
 statements and actual covering-pair identification are retained in
 that proof, with internal finite graph/homology controls. Substitutions
 on higher-face bases and arbitrary algebraic replacements remain
-outside its scope.
+outside that four-face exclusion. In fact, the same note proves that
+every knot arises by arbitrary rational substitutions on BBK twisted
+bases of arbitrarily large bridge number, with an explicit bridge-eight
+base recovering $13a_{373}$. Excluding all such origins is therefore
+impossible and is not a priority obligation. These substitutions need
+not preserve the base knot's sharp lower-bound certificate.
+
+The expanded normalized-cover corollary now gives101 infinite families:
+for every one of the101 GL3/A6/A7/projective fractional-score seeds,
+$K\mathbin{\#}^{s}3_1$ has $\mr=b=4+s$ for all $s\ge0$.
+The binary seeds use a three-sheet simple trefoil cover with zero
+homology over every field. Only the lower score $I_k(K)\ge7/2$ is
+used; no seed supremum is asserted to equal $7/2$.
 
 The knot exteriors of all eight alternating seeds in the comparison
 table are hyperbolic. This is a separate assertion from the hyperbolic
@@ -1741,6 +1973,10 @@ These are stronger group-bound consequences, with their global
 priority and remaining family comparisons explicit.
 
 \begin{thebibliography}{99}
+\bibitem{st54} G. C. Shephard and J. A. Todd,
+Finite unitary reflection groups, Canadian Journal of Mathematics 6
+(1954), 274--304. Sections2--4 and TableVII, p.301.
+\url{https://doi.org/10.4153/CJM-1954-028-3}.
 \setlength{\itemsep}{2pt}
 \small
 \setlength{\baselineskip}{11pt}

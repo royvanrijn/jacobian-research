@@ -1,0 +1,20 @@
+{
+  "scope": "Independent Python and Java mixed A+3A computations for every N congruent to 4 modulo 6 below 100000000",
+  "all_comparisons_match": true,
+  "comparisons": {
+    "largest_target": true,
+    "number_of_targets": true,
+    "exceptions": true,
+    "uncovered_count": true,
+    "largest_least_b": true,
+    "largest_least_weighted_summand_3b": true,
+    "largest_least_b_targets": true,
+    "least_b_histogram": true,
+    "sha256_admissibility_bits": true,
+    "sha256_int32_witness_indices": true
+  },
+  "python_receipt": "mixed_finite_below_100000000/receipt.json",
+  "java_receipt": "mixed_java_below_100000000_receipt.json",
+  "java_command": "java -Xmx512m VerifyMixedEisenstein.java 100000000 mixed_java_below_100000000_receipt.json",
+  "witness_npz_bytes": 6908305
+}

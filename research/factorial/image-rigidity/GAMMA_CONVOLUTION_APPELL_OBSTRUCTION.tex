@@ -1,0 +1,252 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Res}{\operatorname{Res}}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Strict Hankel positivity does not separate Appell moments}
+\author{}\date{}\maketitle
+\begin{abstract}
+Consecutive Appell moment polynomials can share a nonreal quadratic
+even when both their ordinary moment Hankel matrix and their
+normalized-cumulant Hankel matrix are strictly totally positive.
+Starting from a retained exact two-Gamma example, we construct a
+countable positive Gamma convolution with this stronger property.
+The positive weights, almost-sure convergence and moment generating
+function are explicit. This refutes a strict-total-positivity
+shortcut; it gives no single-Gamma-power or factorial SFC
+counterexample.
+\end{abstract}
+
+For a positive random variable $Y$ with moments of every order, define
+\[
+ A_n(u)=\E(u+Y)^n,\qquad A_n'(u)=nA_{n-1}(u).
+\]
+When the moment generating function exists near zero, write
+\[
+ \log \E e^{zY}=\sum_{k\ge1}\kappa_k\frac{z^k}{k!},
+ \qquad q_j=\frac{\kappa_{j+1}}{j!}\quad(j\ge0).
+\]
+Total nonnegativity of a Hankel matrix means nonnegativity of every
+finite minor, with arbitrary strictly increasing row and column
+indices. Strict total positivity means that every such minor is
+positive.
+
+\begin{lemma}[Positive-support Hankel minors]\label{lem:hankel}
+Let $\rho$ be a finite positive measure on $(0,\infty)$ with every
+moment finite. Its moment Hankel matrix is totally nonnegative.
+Every minor of order $k$ is strictly positive if the support of
+$\rho$ contains at least $k$ distinct points. In particular infinite
+support implies strict total positivity at every order.
+\end{lemma}
+\begin{proof}
+For increasing nonnegative integer lists $I=(i_1,\ldots,i_k)$ and
+$J=(j_1,\ldots,j_k)$, determinant expansion and Fubini give
+\[
+ \det\left[\int x^{i_a+j_b}\,d\rho(x)\right]_{a,b=1}^k
+ =\frac1{k!}\int
+       \det[x_b^{i_a}]_{a,b=1}^k
+       \det[x_b^{j_a}]_{a,b=1}^k\prod_{b=1}^k d\rho(x_b).
+\]
+Each generalized Vandermonde determinant is positive on
+$0<x_1<\cdots<x_k$. Indeed a nonzero polynomial with at most $k$
+nonzero terms has at most $k-1$ distinct positive zeros: divide by its
+lowest monomial, differentiate, and apply Rolle's theorem inductively.
+The determinant therefore never vanishes on this connected ordered
+domain. Its sign is positive by coalescing the points and using
+\[
+ \det\left[
+  \left(\frac{d}{dx}\right)^{b-1}x^{i_a}
+ \right]_{a,b=1}^k
+ =x^{\sum_a i_a-k(k-1)/2}
+       \prod_{a<b}(i_b-i_a)>0.
+\]
+The product of the two determinants is nonnegative everywhere.
+If there are $k$ distinct support points, disjoint ordered
+neighborhoods of them have positive measure and give a strictly
+positive contribution to the integral.
+\end{proof}
+
+\begin{theorem}[Recalled two-Gamma example]\label{thm:finite-obstruction}
+Let $G_1,G_2$ be independent rate-one Gamma variables with shapes
+$\alpha_1=125/9$, $\alpha_2=1/3249$, and set
+\[
+ Y=\tfrac12G_1+\tfrac{19}2G_2,\qquad
+ \mu=\E Y=\frac{132}{19},\qquad x=u+\mu.
+\]
+The retained exact Gamma-convolution example gives
+\[
+ A_4(u)=(x^2-x+19)(x^2+x+3),\qquad
+ A_5(u)=(x+2)(x^2-x+19)^2.
+\]
+Their exact monic gcd is $x^2-x+19$, with discriminant $-75$.
+The ordinary moment Hankel matrix is strictly totally positive.
+The normalized-cumulant Hankel matrix is totally nonnegative
+and has rank two.
+\end{theorem}
+\begin{proof}
+The parameters and factorizations are
+Theorem \texttt{thm:gamma-convolution-obstruction} of the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}.
+We recall its exact cumulants:
+\[
+ \kappa_1=\frac{132}{19},\quad
+ \kappa_2=\frac72,\quad \kappa_3=4,\quad
+ \kappa_4=\frac{81}4,\quad \kappa_5=582.
+\]
+They follow from
+$\kappa_k=(k-1)!\sum_{i=1}^2\alpha_i\theta_i^k$ with
+$\theta_1=1/2$, $\theta_2=19/2$.
+The centered moments through degree five are
+$1,0,7/2,4,57,722$, yielding the displayed factors.
+The remaining factors are coprime to $x^2-x+19$.
+
+The Gamma convolution has positive density on $(0,\infty)$, so
+Lemma~\ref{lem:hankel} proves the ordinary moment assertion.
+Also $q_j$ is the $j$th moment of the positive measure
+$\sum_{i=1}^2\alpha_i\theta_i\delta_{\theta_i}$.
+Its two distinct positive support points prove the cumulant
+Hankel assertion by the same lemma.
+\end{proof}
+
+\begin{theorem}[Strict positivity of both Hankel matrices]
+\label{thm:strict-obstruction}
+There is a positive random variable $Y$, expressible as a countable
+sum of independent scaled Gamma variables, whose moment generating
+function exists near zero, such that both its ordinary moment Hankel
+matrix and its normalized-cumulant Hankel matrix are strictly totally
+positive, but $A_4,A_5$ have the common quadratic
+\[
+ (u+\E Y)^2-(u+\E Y)+19.
+\]
+\end{theorem}
+\begin{proof}
+We construct the required positive weights explicitly from four
+moments, without assuming a truncated moment representation theorem.
+Put
+\[
+ (m_0,m_1,m_2,m_3)
+   =\left(\frac72,2,
+                      \frac{27}{8},\frac{97}{4}\right).
+\]
+The three quantities
+\[
+ H_0=m_0m_2-m_1^2=\frac{125}{16},\qquad
+ I_0=m_1m_3-m_2^2=\frac{2375}{64},\qquad
+ J_0=m_0m_3-m_1m_2=\frac{625}{8}
+\]
+are positive. Define
+\[
+ \nu=\sum_{j\ge1}2^{-j}\delta_{1+1/j},\qquad
+ r_k=\int t^k\,d\nu(t)\quad(0\le k\le3),\qquad
+ \epsilon=\frac1{1000},\qquad M_k=m_k-\epsilon r_k.
+\]
+Here $0<r_k\le2^k$, so all $M_k$ are positive.
+The quantities $H=M_0M_2-M_1^2$, $I=M_1M_3-M_2^2$ and
+$J=M_0M_3-M_1M_2$ have the respective lower bounds
+\[
+ \begin{split}
+ H&\ge H_0-\epsilon(4m_0+m_2)-4\epsilon^2>0,\\
+ I&\ge I_0-\epsilon(8m_1+2m_3)-16\epsilon^2>0,\\
+ J&\ge J_0-\epsilon(8m_0+m_3)-8\epsilon^2>0.
+ \end{split}
+\]
+These follow by expanding the determinants and discarding favorable
+positive terms.
+
+Set $S=J/H>0$, $P=I/H>0$ and $p(t)=t^2-St+P$.
+The definitions give
+\[
+ p(M_1/M_0)=-H/M_0^2<0.
+\]
+Thus $p$ has two distinct positive roots $t_1<t_2$ with
+$t_1<M_1/M_0<t_2$. The weights
+\[
+ w_1=\frac{M_0t_2-M_1}{t_2-t_1},\qquad
+ w_2=\frac{M_1-M_0t_1}{t_2-t_1}
+\]
+are positive. The measure
+$\sigma_0=w_1\delta_{t_1}+w_2\delta_{t_2}$ has first two
+moments $M_0,M_1$ by construction. The relation $p(t_i)=0$
+and the definitions of $S,P$ show that its next two moments are
+$M_2,M_3$. Hence
+\[
+ \sigma=\sigma_0+\epsilon\nu
+\]
+has first four moments $m_0,\ldots,m_3$ and infinite support in a
+compact subset of $(0,\infty)$.
+
+Enumerate its positive atoms as
+$\sigma=\sum_\ell c_\ell\delta_{t_\ell}$, combining any duplicates.
+Take independent
+$H_\ell\sim\operatorname{Gamma}(c_\ell/t_\ell^2,1)$ and put
+$Y=\sum_\ell t_\ell H_\ell$.
+The sum is finite almost surely, since
+$\E Y=\sum_\ell c_\ell/t_\ell<\infty$.
+If $T=\sup_\ell t_\ell<\infty$, then for $|z|<1/(2T)$,
+\[
+ \sum_\ell \frac{c_\ell}{t_\ell^2}
+                \bigl|\log(1-t_\ell z)\bigr|
+ \le 2|z|\sum_\ell\frac{c_\ell}{t_\ell}<\infty .
+\]
+The logarithms therefore converge locally uniformly. For real
+$0\le z<1/(2T)$, monotone convergence applied to the partial sums
+identifies the resulting product with $\E e^{zY}$; it is finite.
+The locally convergent logarithmic series gives, term by term,
+\[
+ \kappa_k=(k-1)!\int t^{k-2}\,d\sigma(t)\quad(k\ge1).
+\]
+In particular $\kappa_2,\ldots,\kappa_5$ equal those in
+Theorem~\ref{thm:finite-obstruction}. Centering removes $\kappa_1$,
+so the same factorizations of $A_4,A_5$ hold with $\mu=\E Y$.
+
+The sequence $q_j$ is represented by $d\sigma(t)/t$, a finite
+positive measure of infinite positive support. Lemma~\ref{lem:hankel}
+proves strict total positivity of its Hankel matrix.
+The law of $Y$ also has infinite positive support: condition on all
+but one Gamma summand. Every open interval in $(0,\infty)$ has
+positive probability for the whole sum. To see the needed small
+values for the remaining sum, split it into finitely many summands
+and a tail whose mean is less than a quarter of the desired upper
+bound. Markov's inequality makes the tail smaller than half that
+bound with positive probability; the finitely many summands are
+simultaneously small with positive probability, independently.
+The remaining Gamma summand has positive density on every positive
+interval. A second application of Lemma~\ref{lem:hankel} proves the
+ordinary moment assertion. Existence of the moment generating
+function has already supplied every required finite moment.
+\end{proof}
+
+\begin{corollary}[The abstract shortcut is false]\label{cor:scope}
+Even strict total positivity of both the ordinary moment Hankel
+matrix and the normalized-cumulant Hankel matrix of a positive
+random variable does not imply coprimality of its consecutive
+Appell moment polynomials.
+Neither example above is a single positive integer power $X^d$ of
+one Gamma variable $X$. No counterexample to the binomial Gamma
+family with shape $an+\beta$, or to factorial SFC, is asserted.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:strict-obstruction} disproves the implication.
+For $d\ge2$, $X^d$ has no finite positive exponential moment,
+whereas both constructed variables do.
+For $d=1$, a single scaled Gamma variable has a rank-one
+normalized-cumulant Hankel matrix, whereas the first example has
+rank two and the second has infinite rank.
+The physical family with shape $an+\beta$ is therefore not
+refuted by these constructions. They show that a proof of strict
+positivity of its consecutive resultant must use additional
+identities of that family.
+\end{proof}
+
+The exact replay checks the recalled rational parameters, the first five
+cumulants, the two factorizations and gcd, the zero resultant, a
+corrupted control, and the rational inequalities used in the infinite
+construction. It does not replace the written convergence or
+all-order Hankel proofs.
+
+\end{document}

@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{An odd scalar adjoint for ordinary support $\{4,6\}$}
+\author{}\date{}\maketitle
+For $n\ge1$ put
+\[
+ P_n(t)=\sum_{j=0}^n\binom nj(4n+1)_{2j}t^j.
+\]
+We prove consecutive coprimality at every index. A two-adic balance
+confines any common root to one scale, where a single odd cyclic
+component of a transformed adjoint has affine unit reduction.
+Injectivity, conjugacy and even-moment positivity finish the proof.
+
+Write
+\[
+ T_{m,\gamma}(t)=\sum_{j=0}^m\binom mj(\gamma)_{2j}t^j,\quad
+ R_{m,\gamma}(z)=z^{2m}T_{m,\gamma}(-z^{-2}),
+\]
+\[
+ B_{0,\gamma}=1,\qquad
+ B_{j+1,\gamma}=(z+2j+\gamma+1)B_{j,\gamma}-zB_{j,\gamma}'.
+\]
+We import two exact inputs from the
+\href{CUBIC_ADJOINT_STABILITY_SFC.tex}{cubic adjoint note}:
+Theorem \texttt{thm:simple}, squarefreeness of $T_{m,\gamma}$ for
+$\gamma>0$, $\gamma\ge m-2$, and equation (10), the zero concomitants
+for $R_{m,\gamma}$ and
+$f_\pm=e^{\mp z}z^{1-\gamma-2m}B_{m,\gamma}(\pm z)$.
+Equations (G1)--(G2) of the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}
+also record the exact operator normalization.
+The additional shape-shift-four computation below is explicit.
+All ordinary indices are integers and $v_2(2)=1$.
+Let $K$ be a complete algebraically closed extension of $\Q_2$,
+with valuation ring $\mathcal O$, maximal ideal $\mathfrak m$ and
+residue field $k$. Reduction means modulo $\mathfrak m$.
+
+\begin{lemma}[Exact shift-four transformed adjoint]
+\label{lem:offset-four-transform}
+Let $n\ge1$, $\gamma>0$ and $\gamma\ge n-2$ be real. Put
+\[
+ M=\gamma+2n,\quad A=(M+2)(M+3)(M+4)(M+5),\quad s=2(n+1),
+\]
+\[
+ B=B_{n,\gamma},\qquad C=B_{n+1,\gamma},\qquad H=UC+WB,
+\]
+\[
+ U=A+s(2M+7)z^2,\qquad W=sz^2\bigl((M+4)(M+5)+z^2\bigr).
+\]
+If $t_0$ is a common root of $T_{n,\gamma}$ and
+$T_{n+1,\gamma+4}$ and $z_0^2=-1/t_0$, then
+$H(z_0)=H(-z_0)=0$.
+Thus both components of $H(z)=H_0(z^2)+zH_1(z^2)$ vanish at
+$u_0=z_0^2$. For positive rational $\gamma$ the implication
+also holds over $K$.
+\end{lemma}
+\begin{proof}
+For $R=R_{n,\gamma}$, $\theta=zD_z$ and $E=M-\theta$,
+coefficient comparison gives
+\[
+ (\gamma)_4R_{n+1,\gamma+4}=[z^2(E)_4-(E)_6]R.       \tag{1}
+\]
+Indeed $(E)_h$ acts on the index-$j$ term by
+$(\gamma+2j)_h$, and
+$R_{n+1,\eta}=z^2R_{n,\eta}-(\eta)_2R_{n,\eta+2}$.
+The exact cubic equation is
+\[
+ R'''+\frac{2-2M}{z}R''
+ +\left(\frac{M(M-1)}{z^2}-1\right)R'
+ +\frac{2n}{z}R=0.                                  \tag{2}
+\]
+Reduction of (1) by (2) gives
+$(\gamma)_4R_{n+1,\gamma+4}=qR+bR'+cR''$, where
+\[
+ \begin{split}
+ q={}&-M(M+1)A
+ +(M+2)(M+3)\bigl(M(M+1)-4n(2M+5)\bigr)z^2
+ -4n(n+1)z^4,\\
+ b={}&z(2MU+W),\qquad c=-z^2U.
+ \end{split}                                         \tag{3}
+\]
+One checks the full identity by starting with the coefficient vector
+$(1,0,0)$ for $R$, applying $E+j=M+j-zD_z$ successively, and
+replacing $R'''$ by (2); no root assumptions enter (3).
+
+Both $T$ have nonzero constant and top coefficients, so $z_0\ne0$.
+Simplicity of the lower $T$ and the unramified quadratic change give
+$R'(z_0)\ne0$. The zero concomitants at $R(z_0)=0$ say
+\[
+ f_\pm R''+
+ \left(\frac{2-2M}{z}f_\pm-f_\pm'\right)R'=0.
+\]
+Combining this with $bR'+cR''=0$ and dividing by $R'(z_0)$ gives
+\[
+ c f_\pm'+\left(b-\frac{2-2M}{z}c\right)f_\pm=0.
+\]
+After removing the nonzero plus gauge the expression is
+\[
+ cB'+\left(b-c+\frac{M-1}{z}c\right)B=zH(z);
+\]
+the minus gauge gives $zH(-z)$. These identities follow from (3)
+and $C=(z+M+1)B-zB'$. They do not divide by $B$, $c$ or $U$.
+Since $2z_0\ne0$, the two equations imply $H_0(u_0)=H_1(u_0)=0$.
+
+For rational parameters, the stripped relations are algebraic over
+$\Q$; the gauge factors have disappeared. The only nonvanishing
+division is by $R'(z_0)$, justified by squarefreeness, which transfers
+to $K$ by a characteristic-zero Bezout identity. Thus the necessary
+implication also holds over $K$.
+\end{proof}
+
+For the ordinary specialization set
+\[
+ \gamma=4n+1,\quad M=6n+1,\quad
+ a=v_2(3n+2),\quad b_0=v_2(n+1),\quad e=a+b_0+2.
+\]
+Direct factorization gives
+\[
+ \begin{gathered}
+ v_2(A)=e,\quad v_2(s)=b_0+1,\quad v_2(2M+7)=0,\\
+ v_2(M+4)=0,\qquad v_2(M+5)=b_0+1.
+ \end{gathered}                                    \tag{4}
+\]
+Write $J(z)=J_0(z^2)+zJ_1(z^2)$ and
+$\mathbf j(u)=(J_0(u),J_1(u))^{\mathsf T}$.
+
+\begin{lemma}[Forced two-adic balance]\label{lem:dyadic-balance}
+Every common root $t\in K$ of $P_n,P_{n+1}$ satisfies
+\[
+ v_2(u)=a+1,\qquad u=-t^{-1}.
+\]
+\end{lemma}
+\begin{proof}
+Every $(4n+1)_{2j}$ contains at least $j$ even integer factors.
+Thus the coefficient of $z^{2(n-j)}$ in
+$z^{2n}P_n(-z^{-2})$ has valuation at least $j$.
+If $v_2(z)<1/2$, the leading term is uniquely of least valuation.
+Consequently every root has $L=v_2(u)\ge1$.
+
+The cyclic columns of $B,C$ have integer coefficients.
+Since $u\in\mathfrak m$, they reduce to their values at zero.
+Their reduced raising operator is
+\[
+ A_0=z-zD_z\quad\hbox{on }k[z]/(z^2),\qquad A_0^2=A_0.
+\]
+It sends $1$ to $z$ and $z$ to $z$, so every positive power
+applied to $1$ is $z$. In particular
+$\bar{\mathbf b}(u)=\bar{\mathbf c}(u)=(0,1)^{\mathsf T}$.
+
+By Lemma~\ref{lem:offset-four-transform},
+$U\mathbf c(u)+W\mathbf b(u)=0$.
+If $L<a+1$, then $v_2(U)=b_0+1+L$ by (4).
+The two summands of $W$ have valuations greater than this by
+$b_0+1$ and $L$. Thus $W/U\in\mathfrak m$.
+Division by $U$ and reduction would give
+$\bar{\mathbf c}(u)=0$, a contradiction.
+
+If $L>a+1$, then $v_2(U)=e$. The valuations of the two summands
+of $W$ exceed $e$ by $b_0+L-a>0$ and $2L-a-1>0$.
+The same contradiction follows. In both cases the two terms of
+$U$ have distinct valuations, so $U\ne0$.
+Only $L=a+1$ remains.
+\end{proof}
+
+\begin{lemma}[One odd component has affine reduction]
+\label{lem:odd-scalar-minor}
+Let $q_0=2^{a+1}$. Regard $U(u)=A+s(2M+7)u$ and
+$W(u)=su((M+4)(M+5)+u)$ as polynomials in $u$. Then
+\[
+ F_n(X)=2^{-e}\bigl[
+ U(q_0X)C_1(q_0X)+W(q_0X)B_1(q_0X)\bigr]
+                                                        \tag{5}
+\]
+is a finite polynomial in $\mathbb Z_2[X]$ with
+$\bar F_n=1+X$.
+Every common root of $P_n,P_{n+1}$ gives an integral unit zero
+$X=u/q_0$ of $F_n$.
+\end{lemma}
+\begin{proof}
+Both coefficients of $2^{-e}U(q_0X)$ are odd integers.
+The two coefficients of $2^{-e}W(q_0X)$ have valuations
+$b_0+1$ and $a+1$, so they are even integers.
+Since $q_0$ is even, the preceding operator calculation gives
+$\bar B_1(q_0X)=\bar C_1(q_0X)=1$.
+This proves integrality and the full affine reduction, including
+every higher coefficient. Lemma~\ref{lem:dyadic-balance} makes
+$X$ a unit; the transformed-adjoint equation makes (5) vanish there.
+\end{proof}
+
+\begin{theorem}\label{thm:ordinary-lower-four-gap-two}
+For every $n\ge1$, the ordinary moment polynomials
+$P_n,P_{n+1}$ are coprime over $\Q$ and over $\mathbb C$.
+\end{theorem}
+\begin{proof}
+For any distinct integral $x,y\in\mathcal O$, the divided
+difference of $F_n$ is a unit. Its linear coefficient is odd;
+each subsequent term is an even coefficient times a sum of products
+of integral elements. Thus $F_n$ has at most one integral zero.
+By Lemma~\ref{lem:odd-scalar-minor}, every common root maps
+injectively to such a zero by $t\mapsto-1/(q_0t)$.
+
+An irreducible factor of a nonconstant rational gcd is separable.
+All of its distinct roots over $K$ would be common, so its degree
+would be at most one. That would give a real common root.
+One of $n,n+1$ is even, however, and for even $j$ and real $t$,
+\[
+ P_j(t)=\frac1{\Gamma(4j+1)}
+        \int_0^\infty x^{4j}(1+tx^2)^j e^{-x}\,dx>0.
+\]
+The integrand is nonnegative and positive on an interval.
+This contradiction proves coprimality over $\Q$; a Bezout identity
+extends it to $\mathbb C$.
+This argument uses all conjugates of an actual common factor.
+It does not infer rationality of an arbitrary integral scalar root.
+\end{proof}
+
+\begin{corollary}\label{cor:ordinary-support-four-six}
+Every nonzero complex phase $X^4(A+BX^2)$ satisfies ordinary
+Strong Factorial at every consecutive positive pair.
+\end{corollary}
+\begin{proof}
+If $AB\ne0$, its order-$j$ moment is $A^j(4j)!P_j(B/A)$.
+The theorem applies. If either coefficient vanishes, the phase is
+a nonzero monomial and every positive factorial moment is nonzero.
+\end{proof}
+
+\paragraph{Scope and evidence.}
+This proves the ordinary support $\{4,6\}$ at all indices.
+Arbitrary positive Gamma shapes and other degree-six supports
+are separate assertions. The checker verifies the full symbolic
+differential remainder and both stripped gauges, complete reduced
+two-dimensional operator data, and full normalized scalar polynomials
+with corrupted-input controls. The written proof supplies the
+unbounded quantifiers. Internal audit and replay are distinct from
+independent whole-proof replay, formal verification, external review
+and priority.
+\end{document}

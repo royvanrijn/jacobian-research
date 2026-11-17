@@ -69,6 +69,7 @@ matching squareclasses and height at most `B`. Then
 
 The same asymptotic holds if one requires irreducibility of both factors
 and hence a full rank-five quadratic-times-cubic field algebra.
+Write `C_E=pi_circ/(3 sqrt(R_x))` for its leading coefficient.
 
 **Proof.** The exact height comparison in Proposition 3.3 of the
 fibration note gives
@@ -149,13 +150,29 @@ class, so dividing by the two geometric preimages of a target preserves
 the quarter proportion. Finite exclusions and cubic-root exceptions do
 not change the main term. \(\square\)
 
+For every fixed finite set of places `S` and every quadratic
+squareclass `a`, [EFA1--EFA2](ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md)
+give the full finite-place asymptotic
+
+\[
+ N_{S,a}(B)=\mu_{S,a}C_E\log B+o_{E,S}(\log B).
+\]
+
+Here `mu_{S,a}` is normalized Haar measure on the actual joint closure
+of `E(Q)`, including its squareclass coordinate. It retains the
+correlations between places and lies between zero and `1/4`.
+For the certified class `a_0=10*2709173`, with
+`K_0=Q(sqrt(-81275190))`, it is positive for every fixed finite `S`.
+At `S={2,3,17}`, [J2174](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md)
+gives the exact value `mu_{S,a_0}=1/8`.
+
 ## Corollary EEC3: bounds and the remaining local condition
 
 On the matching-resolvent slice, globally soluble targets form a finite
 set. Its Hasse-target count `A_E(B)` satisfies, for all sufficiently large `B`,
 
 \[
- 1\le A_E(B)\le \frac{\pi_{\rm circ}}{3\sqrt{R_x}}\log B
+ 1\le A_E(B)\le \frac{1687}{6936}C_E\log B
                          +O_E(\sqrt{\log B}).       \tag{9}
 \]
 
@@ -163,14 +180,66 @@ More precisely the everywhere locally soluble count on this restricted
 family is `A_E(B)+O_E(1)`. No leading asymptotic or infinitude of
 `A_E(B)` follows from the matching-target asymptotic.
 
+The [joint local sieve](ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md), J2172--J2173,
+also gives
+
+\[
+ \limsup_{B\to\infty}\frac{A_E(B)}{C_E\log B}
+                         \le\frac{5321}{23946}.      \tag{10}
+\]
+
+The coefficient in (9) is strictly below one quarter and comes from
+one fixed joint quotient at `2,3,17`. Equation (10) uses the exact
+local-only asymptotic at those primes, followed by a tail limit.
+It is a limsup bound, rather than a square-root logarithmic remainder
+estimate with coefficient `5321/23946`.
+
+For comparison, the [complete three-adic classification](ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md)
+gives coefficient `55/156` for solubility at three alone. The
+[two-adic and joint classification](ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md)
+gives `4/7` at two alone and `289/1092` at two and three together.
+The joint `2,3,17` coefficient is `5321/23946`. Each of these is an
+exact leading coefficient relative to `C_E log B`, with `o(log B)`
+error, for its specified finite local set. These proportions cannot
+be multiplied as independent events and do not count all-places
+Hasse failures.
+
+[EFA3](ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md) identifies the
+all-primes limit of these finite-place measures and the exact additional
+tail condition needed to obtain its coefficient in the Hasse count.
+For the certified class the decreasing limit is between zero and
+`1/8`; if it is zero, the class's Hasse count is `o(log B)`.
+Its value and, in the positive case, the required tail control remain
+open. The total-class version has the same distinction. Thus the full
+finite-`S` asymptotics do not establish Hasse infinitude or an all-places
+leading asymptotic.
+
+[EQA2--EQA3](ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md)
+sharpen every fixed finite-place asymptotic above: its coefficient is
+rational, and the error is
+`O_(E,S)(sqrt(log B) (1+log log B)^(r_a))`. Here `r_a` counts only
+the primes in `S` not erased by the class-specific criterion of
+[EPE2](ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md). A finite-local field
+target set is either empty or has a positive rational coefficient,
+by EQA2a. These statements retain their fixed finite-prime scope.
+
+The [ambient Haar calculation](ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md)
+gives measure zero both to the all-soluble set and to the rational
+closure in the full ambient product. The intrinsic all-primes
+coefficient remains undetermined. EFA4 expresses its positivity
+exactly as summability of the actual conditional prime losses.
+
 **Proof.** The quadratic is never split on the admissible family. A
 rational source point therefore requires a rational root of the cubic,
 and the arithmetic note proves that there are only finitely many such
 targets. Partition the locally soluble targets into the globally soluble
 ones and the Hasse failures. The
 [explicit certified Hasse target](ELLIPTIC_EXCEPTION_HASSE_EXAMPLE.md)
-gives the lower bound once `B` exceeds its height. The upper bound follows
-from Theorem EEC1. \(\square\)
+gives the lower bound once `B` exceeds its height. The upper bounds are
+J2172 and J2173. The rational local images are proved from two-descent,
+finite reductions at `41,53`, and formal-depth witnesses. Their
+correlations are retained; no full Mordell--Weil basis is assumed.
+\(\square\)
 
 These are counts of target points, without quotienting targets by
 isomorphism of their cubic fields or fibre algebras. The genus-four

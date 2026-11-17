@@ -6,6 +6,7 @@ The Gaussian boundary paper has a standalone proof and internal checks, but stil
 
 | Paper | Status |
 |---|---|
+| [From Euler's restricted-prime sums to Eisenstein norms](eisenstein-restricted-prime-sums/) | draft |
 | [Cubic sphere moments and the two-pair Image problem](cubic-sphere-image/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |

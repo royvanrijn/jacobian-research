@@ -61,7 +61,7 @@
     "c": "odd -63 through63",
     "pi": "odd -63 through63"
   },
-  "proof_sha256": "46bc60eb87e9698b32c4e488bf76a2318c0bfae46724bfefdfec3897692f1cb9",
+  "proof_sha256": "07b8a9a2fa97885448bcb9e765fd5aa54762a83565aaa545d7d2b2df7eea5c16",
   "python": "3.12.3",
   "scope": "Exact coefficient and finite residue controls, plus bounded independent Newton certificates. They do not prove the unrestricted valuation cases, the local resolvent argument, any CaseII local criterion, or integral Hasse existence/nonexistence.",
   "status": "passed",

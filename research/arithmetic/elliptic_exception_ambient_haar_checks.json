@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "command": "python3 research/arithmetic/verify_elliptic_exception_ambient_haar.py --write-receipt",
+  "python": "3.12.3",
+  "checker_sha256": "63d4a492fae7aa5110c29e80293192d981e2e8ba0e33829891622fd273ecf152",
+  "sources_sha256": {
+    "ELLIPTIC_EXCEPTION_AMBIENT_HAAR_DIAGNOSTIC.md": "76f2a9bf24406cda993f6fd8bf7dddabc03c592e7a13d671a8559e9ca02dbf9c",
+    "ELLIPTIC_EXCEPTION_ARITHMETIC.md": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
+    "ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md": "cb309ee7f92fb3cb2de003ccedcf3fa461b54675bd6aac0ce91d39cfc6e809d7",
+    "ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md": "f4a82dc6764adab8195282be44c8c31a3db81cf4321f99b8ef535d02b0e2881f",
+    "ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md": "f95ce7190463693be30a1b41b763b030d2fc756c55340bcbb61af21b8c7d6c5d",
+    "ELLIPTIC_EXCEPTION_QUANTITATIVE_FINITE_LOCAL_ASYMPTOTICS.md": "4f58644de3060f7ac23f945a1f04149fc7ae10c5e9f114b0f09228136f551d39",
+    "sources/milne-elliptic-curves-2006.pdf": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486",
+    "sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  },
+  "check_count": 21,
+  "checks": [
+    {
+      "name": "exact_elliptic_discriminant_factorization",
+      "passed": true
+    },
+    {
+      "name": "branch_squarefree_constants",
+      "passed": true
+    },
+    {
+      "name": "closed_branch_point_identities",
+      "passed": true
+    },
+    {
+      "name": "bounded_good_reduction_and_no_anomaly_controls",
+      "passed": true,
+      "count": 50,
+      "scope": "Every good prime7<=p<=251; complete finite-field point enumeration."
+    },
+    {
+      "name": "bounded_ambient_branch_and_local_fraction_controls",
+      "passed": true,
+      "count": 26,
+      "scope": "Every good prime11<=p<=251,p=2mod3; complete F=0 branch scan and exact rational masses."
+    },
+    {
+      "name": "finite_two_quotient_p11",
+      "passed": true,
+      "group_order": 10,
+      "quotient_order": 2
+    },
+    {
+      "name": "finite_two_quotient_p13",
+      "passed": true,
+      "group_order": 16,
+      "quotient_order": 4
+    },
+    {
+      "name": "finite_two_quotient_p17",
+      "passed": true,
+      "group_order": 18,
+      "quotient_order": 2
+    },
+    {
+      "name": "finite_two_quotient_p19",
+      "passed": true,
+      "group_order": 16,
+      "quotient_order": 4
+    },
+    {
+      "name": "finite_two_quotient_p23",
+      "passed": true,
+      "group_order": 30,
+      "quotient_order": 2
+    },
+    {
+      "name": "finite_two_quotient_p29",
+      "passed": true,
+      "group_order": 26,
+      "quotient_order": 2
+    },
+    {
+      "name": "bounded_joint_image_support_index_s1",
+      "passed": true,
+      "primes": [
+        11
+      ],
+      "image_order": 4,
+      "ambient_quotient_order": 8,
+      "quotient_index": "2",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_joint_image_support_index_s2",
+      "passed": true,
+      "primes": [
+        11,
+        13
+      ],
+      "image_order": 4,
+      "ambient_quotient_order": 32,
+      "quotient_index": "8",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_joint_image_support_index_s3",
+      "passed": true,
+      "primes": [
+        11,
+        13,
+        17
+      ],
+      "image_order": 4,
+      "ambient_quotient_order": 64,
+      "quotient_index": "16",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_joint_image_support_index_s4",
+      "passed": true,
+      "primes": [
+        11,
+        13,
+        17,
+        19
+      ],
+      "image_order": 8,
+      "ambient_quotient_order": 256,
+      "quotient_index": "32",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_joint_image_support_index_s5",
+      "passed": true,
+      "primes": [
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "image_order": 8,
+      "ambient_quotient_order": 512,
+      "quotient_index": "64",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_joint_image_support_index_s6",
+      "passed": true,
+      "primes": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ],
+      "image_order": 8,
+      "ambient_quotient_order": 1024,
+      "quotient_index": "128",
+      "scope": "Complete image of Gamma/2Gamma using the three generators proved in ETF1."
+    },
+    {
+      "name": "bounded_actual_formal_depth_mass_controls",
+      "passed": true,
+      "count": 144,
+      "scope": "Every target prime<=101;1<=e<=12; exact geometric formula bracketed by12 tested depths and its tail."
+    },
+    {
+      "name": "global_mod_two_size",
+      "passed": true,
+      "scope": "Rank2 and rational torsionC2 are imported from the elliptic arithmetic theorem."
+    },
+    {
+      "name": "depth_one_rational_witness_p11",
+      "passed": true,
+      "multiple": 10,
+      "normalized_unit": 10,
+      "scope": "One actual rational witness forces the full Mordell-Weil minimum e_p=1, without a basis."
+    },
+    {
+      "name": "depth_one_rational_witness_p17",
+      "passed": true,
+      "multiple": 18,
+      "normalized_unit": 3,
+      "scope": "One actual rational witness forces the full Mordell-Weil minimum e_p=1, without a basis."
+    }
+  ],
+  "finite_support_index_controls": [
+    {
+      "s": 1,
+      "ambient_quotient_order": 8,
+      "image_order": 4,
+      "index_lower_bound": "2"
+    },
+    {
+      "s": 2,
+      "ambient_quotient_order": 32,
+      "image_order": 4,
+      "index_lower_bound": "8"
+    },
+    {
+      "s": 3,
+      "ambient_quotient_order": 64,
+      "image_order": 4,
+      "index_lower_bound": "16"
+    },
+    {
+      "s": 4,
+      "ambient_quotient_order": 256,
+      "image_order": 8,
+      "index_lower_bound": "32"
+    },
+    {
+      "s": 5,
+      "ambient_quotient_order": 512,
+      "image_order": 8,
+      "index_lower_bound": "64"
+    },
+    {
+      "s": 6,
+      "ambient_quotient_order": 1024,
+      "image_order": 8,
+      "index_lower_bound": "128"
+    }
+  ],
+  "scope": "Exact discriminant/branch identities, complete finite-field groups and two-quotient images on declared bounded prime domains, geometric-mass controls and rational depth-one witnesses. The written Hasse/Chebotarev, compact-group and divergent-product arguments establish the unrestricted ambient-null and support-singularity claims. No value of intrinsic all-primes Haar measure, independence of rational prime tests or elliptic Hasse infinitude is inferred.",
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "external_review": false
+}

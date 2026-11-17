@@ -1,0 +1,60 @@
+{
+  "claim": "QSO3A",
+  "purpose": "Primary forward-Stokes input for the all-order algebraic cubic string obstruction; no generic inverse reconstruction is asserted.",
+  "primary_source": {
+    "authors": [
+      "Richard Beals",
+      "David H. Sattinger"
+    ],
+    "title": "Integrable Systems and Isomonodromy Deformations",
+    "journal_identity": "Physica D 65 (1993), 17-47",
+    "inspected_version": "arXiv:solv-int/9801010v1, 8 January 1998",
+    "url": "https://arxiv.org/abs/solv-int/9801010",
+    "cached_file": "sources/beals-sattinger-solv-int-9801010v1.pdf",
+    "sha256": "05e7df65dac43b343791d5a6ee7a02f0cd5ed662738a2c1530a105f2a21ac738",
+    "exact_locations": [
+      "Section9 equation9.1 and arbitrary-lower-flow remark, printed page43 (PDF page43)",
+      "Theorem9.1, Lemma9.2 and Lemma9.3, printed pages44-46",
+      "Theorem9.4 and finite-origin observation, printed page47",
+      "Theorem9.5 and its generic local inverse-solvability hypothesis, printed pages47-48",
+      "Section8 equations8.3-8.5 and Theorem8.3 proof, printed pages36 and39"
+    ],
+    "inspected_by": "Internal AI-assisted primary-PDF inspection by dc1_route through web full-text and local pypdf layout extraction",
+    "actual_import": [
+      "Every scalar finite Gel'fand-Dikii string combination with arbitrary constant lower flows has sectorial spectral fundamental matrices with the displayed fixed formal phase and constant right Stokes matrices.",
+      "The original string companion spectral system has an ordinary origin after the cubic spectral pullback; no generic Fuchsian nonresonance hypothesis is needed there.",
+      "Scalar string solutions with matching phase and right Stokes matrices are locally identical."
+    ],
+    "hypotheses_checked": [
+      "Normalized scalar leading operator is monic of order3 with quadratic coefficient zero.",
+      "Highest effective flow m is not divisible by3, so the leading irregular matrix J^m has three distinct eigenvalues; its nonzero coefficient is constant.",
+      "Every lower flow is a constant coefficient in a finite linear combination, exactly as allowed by the page43 remark.",
+      "All compared coefficient branches are holomorphic on a common local time domain; their normalized formal phases match.",
+      "Algebraic continuation supplies another local branch, avoiding any need for global inverse-data existence or genericity."
+    ],
+    "excluded_use": "No application of Theorem9.5 to arbitrary or degenerate inverse data and no meromorphic scalar reconstruction from a general resonant connection family."
+  },
+  "proof": {
+    "file": "ALL_CUBIC_ALGEBRAIC_STRING_OBSTRUCTION.md",
+    "sha256": "9b1c38c2187d01a7a834d35f842f74f62468103e47633314d274ea336e4f7926"
+  },
+  "new_written_arguments": [
+    "Finite leading-order subtraction writes any cubic mate as a sum of positive fractional powers plus a commuting polynomial.",
+    "The negative fractional-power coefficients give x=-3*r2/kappa with x'=1 before analytic arguments.",
+    "Formal phase coefficients lie in the algebraic coefficient field and have zero time derivative except the fixed xzJ term, so they cannot change upon algebraic continuation.",
+    "The correctly oriented left ratio Psi_tilde*Psi^-1 cancels right Stokes jumps. Its entire spectral behavior and Lambda_z growth give a unipotent lower triangular polynomial; first-row equality and time derivatives identify the scalar operators.",
+    "Finite algebraic branch continuation preserves the phase and Stokes matrices, so scalar injectivity excludes every finite branch, including pole branching.",
+    "The dispersionless residue polynomial is a monomial of exponents at most1 times simple nonzero binary factors; a finite Pfaff transformation reduces this to Jacobi polynomials with alpha,beta greater than-1.",
+    "Jacobi root simplicity is justified directly by Rodrigues orthogonality and a sign-change argument.",
+    "Derivative weights and the two leading gradient invariants contradict rational infinity for every effective m>=2 coprime to3, retaining all lower flows.",
+    "Prescribed regular Long reductions of orders2 and3 are incompatible with the resulting arbitrary-order cubic mate normal form.",
+    "Arbitrary characteristic-zero constants descend through a finite d/dx-stable field F0/k0(x), with k0 finitely generated, followed by base change to C(x) and a field component; x stays transcendental and the restriction to F0 remains injective."
+  ],
+  "orientation_note": "The Section8 presentation has inconsistent ratio orientations. The current written proof uses the left ratio required for equal right jumps, and independently derives its first-row consequence.",
+  "mathematical_checker": "check_all_cubic_algebraic_string.py",
+  "checker_scope": "Finite exact controls support the algebraic formulas and terminating identities. They do not replay Stokes existence/injectivity, analytic continuation, or all-order Jacobi root simplicity.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining_scope": "Generic scalar order>=4, nonpositional first images and nonscalar carriers remain open. No DC1/DC2 solution or bounded Long construction is claimed."
+}

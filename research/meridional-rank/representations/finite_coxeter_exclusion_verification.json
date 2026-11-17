@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "scope": "All 24 retained sharp-four knots: no rank-four finite Coxeter reflection quotient. Complete first-seed-normalized transposition and H4 root-coloring searches; classification/projection reductions are written dependencies. Infinite Coxeter quotients remain open.",
+  "scope": "All 48 retained affine sharp-four knots: no rank-four finite Coxeter reflection quotient. Complete first-seed-normalized transposition and H4 root-coloring searches; classification/projection reductions are written dependencies. Infinite Coxeter quotients are separately excluded on sixteen alternating cases; other cases remain outside this finite search.",
   "results": [
     {
       "name": "13a_373",
@@ -601,6 +601,606 @@
         "accepted": 121,
         "rank4_seed_colorings": 0
       }
+    },
+    {
+      "name": "13a_304",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_362",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_623",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 241,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_629",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 241,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_3232",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_3259",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_3374",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13a_3375",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_834",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 25,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_838",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_839",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_991",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 25,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_992",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_993",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1367",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1370",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1371",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1374",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1375",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_1376",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_3814",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_3840",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 1,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_3911",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
+    },
+    {
+      "name": "13n_3914",
+      "symmetric": {
+        "3": {
+          "normalized_trials": 27,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "4": {
+          "normalized_trials": 216,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        },
+        "5": {
+          "normalized_trials": 1000,
+          "accepted": 1,
+          "rank4_seed_colorings": 0
+        }
+      },
+      "H4": {
+        "normalized_trials": 216000,
+        "accepted": 121,
+        "rank4_seed_colorings": 0
+      }
     }
   ],
   "controls": {
@@ -693,10 +1293,11 @@
     "dependent roots fail full-rank control"
   ],
   "input_sha256": {
-    "verify_finite_coxeter_exclusion.py": "7ecd72d88470d2df12b7c2c6afd7536caf18d0c619d1e3a2b885aafbc6ca3195",
+    "verify_finite_coxeter_exclusion.py": "b01be630ac82f09ecc01085868127c867921f8227708b9e74891c798949b82b2",
     "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
     "verify_seven_sheet_covers.py": "fbba9f40f4956c4130da6eca93fd4d874d3661e31da18141d30780408f83ea49",
-    "FINITE_COXETER_EXCLUSION.tex": "20897878c87a5a998a84f495a047c4ccc64a33b1a71d525b2f38a91a861c7886"
+    "FINITE_COXETER_EXCLUSION.tex": "8aac9bf8feea8ba2af16d404a297ef24e0d6de907ff295929e2aed21174410b7",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226"
   },
   "assurance": "Exact internal computation, without formal verification or external human review."
 }

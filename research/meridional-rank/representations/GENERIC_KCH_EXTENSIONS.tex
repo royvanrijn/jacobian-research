@@ -1,0 +1,454 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\mr}{\operatorname{mr}}
+\title{Signed generic rank-one obstructions for sixteen knots}
+\author{Written proof and exact Laurent controls}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+The generic rank-one obstruction for $13a_{373}$ extends to fifteen
+further alternating knots. The argument uses signed Wirtinger
+relations and independent root and covector families, without a
+preserved form. It works over every field and every nonzero meridian
+determinant, including unipotent meridians. Its augmentation consequence
+concerns all meridian parameters admitted by the augmentation--KCH
+correspondence, rather than only the involutory value $-1$.
+
+Let
+\[
+\begin{aligned}
+\mathcal K_{16}=\{&13a_{373},13a_{375},13a_{391},13a_{392},\\
+&13a_{3264},13a_{3266},13a_{3275},13a_{3276},\\
+&13a_{304},13a_{362},13a_{623},13a_{629},\\
+&13a_{3232},13a_{3259},13a_{3374},13a_{3375}\}.
+\end{aligned}
+\]
+The companion \path{GENERIC_KCH_OBSTRUCTION.tex} proves the first
+case and supplies the arbitrary-pairing three-direction contradiction
+used below. Its exact integer Laurent controls are an explicit
+mathematical dependency. The present upper theorem is independent of
+any positive augmentation witness.
+
+\begin{theorem}\label{thm:all16}
+For every $K\in\mathcal K_{16}$, every irreducible finite-dimensional
+representation of its knot group with meridian displacement rank one
+has dimension at most three, over every field.
+No symmetric or Hermitian form is assumed.
+\end{theorem}
+
+\section{Signed pairs and independence}
+
+Write a meridian image as
+\[
+ M_i=I-u_if_i,\qquad f_i(u_i)=d=1-\mu,
+ \qquad M_i^{-1}=I+\mu^{-1}u_if_i.
+\]
+Here $u_i,f_i$ are nonzero and $\mu=\det M_i$ is a nonzero scalar,
+the same for all conjugate meridians. The case $\mu=1$ is allowed.
+At a signed crossing $(o,a,b,\varepsilon)$ one has
+\[
+ M_b=M_o^\varepsilon M_aM_o^{-\varepsilon},\qquad
+ (u_b,f_b)=(M_o^\varepsilon u_a,f_aM_o^{-\varepsilon}).
+\]
+Equality of nonzero rank-one displacements changes a pair only by
+$(u,f)\mapsto(cu,c^{-1}f)$ for a nonzero scalar $c$.
+
+The four retained meridian seeds generate each knot group by a complete
+literal diagram trace. Their root span is nonzero and invariant, and
+their covectors' common kernel is fixed pointwise. Hence an irreducible
+representation has dimension at most four. In dimension four the four
+seed roots and the four seed covectors are both bases. We assume this
+case and derive a contradiction.
+
+All changes of seed systems used below are compositions of conjugating
+one seed pair by an element whose root and covector belong to the spans
+of the other three retained pairs. The replacement has coefficient one
+on its old root and coefficient one on its old covector. Thus both basis
+determinants are one. The exact checker independently computes these
+two determinants in twelve unrestricted directed pairings and $\mu$,
+using the actual signed crossing words for every diagram.
+Only powers of $\mu$ occur as algebraic denominators.
+
+\section{The four three-direction contradictions}
+
+Identify the paired meridian matrices on arcs $0,4$ and on arcs
+$6,7$. Choose their pairs to be $(U,F),(-U,-F)$ and $(V,G),(V,G)$.
+Let $(W,J)$ be a third pair, on arcs $8,9,9,12$ in the four cases
+$373,375,391,392$, respectively. Each corresponding evaluation is $d$.
+Allow all six directed pairings
+\[
+ x=F(V),\quad X=G(U),\quad y=F(W),\quad Y=J(U),\quad
+ z=G(W),\quad Z=J(V)
+\]
+to be unrestricted.
+
+\begin{lemma}\label{lem:cores}
+In each of these four signed reduced eight-crossing systems, the full
+root span and the full covector span cannot both have dimension three.
+\end{lemma}
+\begin{proof}
+The three selected pairs propagate every reduced pair, so each span
+has dimension at most three. If both have dimension three, both selected
+triples are independent. For $373$ the companion generic proof applies
+directly: its contradiction uses only the reduced signed crossings and
+the six free directed pairings, not the discarded four-seed clasp.
+We prove the other three cases here. In the notation $M(T,L)$ below,
+conjugation acts on a root and covector simultaneously and contragrediently.
+
+For $375$ put
+\[
+ (T,L)=(M_V^{-1}W,JM_V),\qquad
+ (A,H)=(M_UT,LM_U^{-1}),\qquad t=F(T),\quad\tau=L(U).
+\]
+Then $A=T-tU$, $H=L+(\tau/\mu)F$.
+The signed propagation steps are
+\[
+ (6,9,10,-),(10,7,8,-),(4,10,11,+),
+ (11,4,5,+),(8,11,12,-).
+\]
+They give the pairs $(T,L)$ on arc $10$, $(A,H)$ on arc $11$,
+$M_8=M_T^{-1}M_VM_T$, and
+\[
+\begin{split}
+ u_5&=(-1-t\tau/\mu)U+(\tau/\mu)T,\\
+ f_5&=(-1-t\tau/\mu)F-tL.
+\end{split}
+\]
+The coefficients of $u_{12},f_{12}$ on $U,F$ are $-t,\tau/\mu$,
+since the arc $8$ pair uses only the other two coordinates.
+The crossing $(9,12,0,+)$ says
+\[
+ u_{12}=\gamma M_W^{-1}U,\qquad
+ f_{12}=\gamma^{-1}FM_W
+\]
+for $\gamma\ne0$. Thus $t=-\gamma$ and
+$\tau=\mu\gamma^{-1}$, so $t\tau=-\mu$.
+Consequently $M_5=M_T$.
+The crossing $(5,8,9,+)$ would now force
+$\alpha W=M_5u_8=M_TM_T^{-1}V=V$, impossible.
+
+For $391$ put
+\[
+ (T,L)=(M_VW,JM_V^{-1}),\qquad
+ (A,H)=(M_U^{-1}T,LM_U),\qquad t=F(T),\quad\tau=L(U).
+\]
+Then $A=T+(t/\mu)U$, $H=L-\tau F$.
+The actual signed trace is
+\[
+ (9,6,5,-),(6,9,10,+),(4,10,11,-),
+ (5,11,12,+),(11,7,8,+).
+\]
+The arc $5$ pair $D=M_W^{-1}(V,G)$ lies in the $V,W$ and $G,J$
+planes. The arc $12$ pair is $M_D(A,H)$, so its $U,F$ coefficients
+are $t/\mu,-\tau$. The crossing $(10,12,0,-)$ gives
+\[
+ u_{12}=\gamma(U-\tau T),\qquad
+ f_{12}=\gamma^{-1}(F+(t/\mu)L).
+\]
+Hence $t=\mu\gamma$, $\tau=-\gamma^{-1}$ and $t\tau=-\mu$.
+The displayed pair therefore equals $(A,H)$, so $M_{12}=M_A$.
+The crossing $(12,8,9,-)$ and the arc $8$ pair $M_A(V,G)$ then
+force $V=\beta W$, again impossible.
+
+For $392$ define
+\[
+\begin{gathered}
+ h=1+zZ/\mu,\quad t=-zx/\mu+hy,\quad\tau=ZX+hY,\\
+ k=tX/\mu+z(h-d/\mu),\qquad K=-\tau x+(d+h)Z.
+\end{gathered}
+\]
+The signed trace is
+\[
+ (12,6,5,+),(5,12,11,+),(4,11,10,-),
+ (6,10,9,+),(10,7,8,-).
+\]
+Its paired coefficient vectors are
+\[
+\begin{array}{c|c|c}
+i&u_i&f_i\\\hline
+11&(0,-z/\mu,h)&(0,Z,h)\\
+10&(t/\mu,-z/\mu,h)&(-\tau,Z,h)\\
+9&(t/\mu,-z/\mu-k,h)&(-\tau,Z+K/\mu,h)\\
+8&(Kt/\mu^2,1-Kz/\mu^2,Kh/\mu)&(k\tau,1-kZ,-kh).
+\end{array}
+\]
+The crossing $(9,12,0,+)$, with
+$p=f_9(W)$ and $q=J(u_9)$, gives
+\[
+ -pt/\mu=\gamma,\quad ph=1,\qquad
+ -q\tau/\mu=\gamma^{-1},\quad qh/\mu=-1.
+\]
+Thus $p,q,t,\tau,h$ are nonzero. Its other two coefficients give
+$k=-z/\mu$ and $K=-\mu Z$.
+At $(11,8,9,+)$ the arc $11$ pair has zero $U,F$ coefficients.
+The two corresponding coefficients therefore imply
+\[
+ Kt/\mu^2=\beta t/\mu,\qquad k\tau=-\beta^{-1}\tau.
+\]
+Only already nonzero $t,\tau$ are cancelled. We obtain
+$K=\mu\beta$, $k=-\beta^{-1}$, hence
+$zZ=kK=-\mu$ and $h=0$, contradicting $ph=1$.
+The checker also verifies a constant-one integer Laurent identity
+for these final necessary scalar equations.
+\end{proof}
+
+\section{The signed local folds}
+
+For the four original diagrams $373,375,391,392$, the signed clasp
+and its closing crossing have the same signs as in the companion
+proof. It forces the two cross pairings with the third seed to vanish
+and the remaining directed pairing product to be $-\mu$.
+The resulting full matrices satisfy $M_4=M_0$ and $M_7=M_6$.
+The changed seed lists and their signed determinant-one derivations
+are retained explicitly in the input, including the changes needed
+for $391$ and $392$.
+
+For $3264,3266,3275,3276$, put
+$(A,F)=(u_1,f_1)$, $(E,G)=(u_3,f_3)$, $(C,J)=(u_6,f_6)$ and
+\[
+ a=F(E),\quad b=G(A),\quad x=F(C),\quad X=J(A),\quad
+ c=G(C),\quad C'=J(E),\qquad k=1+ab/\mu.
+\]
+The actual five local signs are
+\[
+ (3,1,0,+),(1,3,4,-),(0,3,2,+),(2,6,7,+),(7,1,2,+).
+\]
+They give
+\[
+ (u_2,f_2)=(-aA/\mu+kE,\ bF+kG).
+\]
+The root on arc $7$ has coefficient one on $C$.
+The closing root relation $M_7A=\kappa u_2$ therefore first forces
+$f_7(A)=0$, and then $A=\kappa u_2$.
+Thus $k=0$ and $ab=-\mu$; moreover $\kappa=b\ne0$.
+Under these relations the arc $7$ pair is
+\[
+                    (C-xA,\ J+(X/\mu)F).
+\]
+The vanishing evaluation is $X/\mu=0$, so $X=0$.
+The closing covector equation is then $F+xJ=F$, forcing $x=0$.
+Hence $M_7=M_6$. Directly,
+\[
+ (u_0,f_0)=(A-bE,F-b^{-1}G),\qquad
+ (u_4,f_4)=(-b^{-1}u_0,-bf_0),
+\]
+so also $M_4=M_0$.
+All inverses here are powers of $\mu$ or of a closing scalar already
+proved nonzero.
+
+For the eight A6 diagrams, put $(A,F)=(u_0,f_0)$,
+$(E,G)=(u_1,f_1)$ and $(C,J)=(u_j,f_j)$, where $j=6$ or $8$.
+Write $a=F(E)$, $b=G(A)$, $x=F(C)$, $X=J(A)$,
+$c=G(C)$, $C'=J(E)$.
+For the first knot in each pair below the local type is I; for the
+second it is II. Every one of the five displayed exponents is negative:
+\[
+\begin{array}{c|l}
+\mathrm I&(0,1,2,-),(j,2,3,-),(3,0,1,-),(1,3,4,-),(2,j,j',-)\\
+\mathrm {II}&(j,1,2,-),(0,2,3,-),(3,0,1,-),(1,3,4,-),(2,j,j',-).
+\end{array}
+\]
+In type I put $t=C'+aX/\mu$, $T=c-bx$.
+The arc $3$ pair is
+\[
+ (E+(a/\mu)A+(t/\mu)C,\ G-bF-TJ).
+\]
+Let $H=\mu b-TX$, $L=(a+tx)/\mu$.
+The closing relation $M_3^{-1}A=\kappa E$,
+$FM_3=\kappa^{-1}G$ has coefficients
+\[
+ (1+aH/\mu^2,H/\mu,tH/\mu^2)=(0,\kappa,0),\quad
+ (1+bL,-L,LT)=(0,\kappa^{-1},0).
+\]
+These force $t=T=0$, $a=-\mu\kappa^{-1}$, $b=\kappa$.
+In type II put $t=a+C'x/\mu$, $T=b-cX$.
+The same closing coefficient equations become
+\[
+ (1+tT/\mu,T,TC'/\mu)=(0,\kappa,0),\quad
+ (1+tT/\mu,-t/\mu,tc/\mu)=(0,\kappa^{-1},0).
+\]
+They force $c=C'=0$, $a=t=-\mu\kappa^{-1}$, $b=T=\kappa$.
+Both types give $ab=-\mu$, $M_4=M_0$ and $M_{j'}=M_j$.
+No division by $1-\mu$ or $\mu^2-\mu+1$ occurs.
+
+\section{Exact signed transfers and the upper theorem}
+
+After removing the five local crossings and folding $0=4$ and $j=j'$,
+the remaining eight signed relations match the earlier reduced systems
+as follows. A sign $-$ means that every crossing exponent is reversed.
+\[
+\begin{array}{c|c|r}
+\text{new knot}&\text{old reduced system}&\text{global sign}\\\hline
+3264&373&-\\3266&375&-\\3275&391&-\\3276&392&-\\
+304&375&-\\3232&375&+\\362&375&+\\3259&375&-\\
+623&373&-\\3374&373&+\\629&373&-\\3375&373&+
+\end{array}
+\]
+All indices denote $13a$ knots. The first four rows use the identity
+relabeling. The remaining relabelings are explicit bijections in the
+input; the checker reconstructs and compares the signed crossing sets.
+It permits reversal of an under-arc pair only with reversal of its
+exponent. It does not reuse an unsigned incidence match as a signed one.
+
+Global sign reversal causes no loss: replace every reduced matrix by
+its inverse and replace the parameter by $\mu^{-1}$.
+Relation by relation, $N_b=N_o^{-\varepsilon}N_aN_o^{\varepsilon}$.
+The root directions are unchanged, and all covectors are multiplied
+by the nonzero scalar $-\mu^{-1}$. Thus both spans and their
+independence are preserved. The pair evaluation becomes
+$1-\mu^{-1}$, precisely the same model at the reciprocal parameter.
+
+The required independence follows before the reduced equations are
+used. In the first four cases, the changed four-seed root basis gives
+$U=A-B,V=C,W=D$; the covector basis gives $F_A-F_B,F_C,F_D$.
+Both triples are independent. For the alternate four cases the triples
+are $A-bE,C,Q$ and $F-b^{-1}G,J,F_Q$, subsets of triangular changes
+of the two four-seed bases; here $Q$ is the last retained changed seed.
+For the eight A6 cases, the reduced triples are $u_0,u_6,u_9$;
+$u_0,u_6,u_{11}$; or $u_0,u_5,u_8$, with the corresponding covectors,
+as specified by their changed seed lists. Each is a subset of its
+changed basis. The local folds identify other meridian matrices and
+do not remove these independent triples.
+The local folds and signed transfers therefore contradict
+Lemma~\ref{lem:cores}. This proves Theorem~\ref{thm:all16}.
+The proof permits singular proper pairing submatrices, $\mu=1$ and
+primitive sixth roots of unity. Only matrix invertibility and closing
+scalars already proved nonzero are used for cancellation.
+
+For a representation $\rho:G_K\to GL(V)$, where
+$G_K=\pi_1(S^3\setminus K)$, its displacement span means the vector
+subspace
+\[
+              \sum_{g\in G_K}\operatorname{im}(\rho(g)-I)\subset V.
+\]
+It is a span of displacement images, rather than a space of matrices.
+
+\begin{corollary}\label{cor:semisimple}
+For every $K\in\mathcal K_{16}$, any finite-dimensional completely
+reducible representation over any field with meridian displacement
+rank one has common-fixed-space codimension and displacement-span
+dimension at most three. This applies in particular to every such
+finite-image representation whose image order is nonzero in the field,
+including every finite-image complex representation.
+\end{corollary}
+\begin{proof}
+Decompose into irreducible summands. The ranks of the meridian
+displacements add, so exactly one summand is active. On every other
+summand the meridian is the identity, and normal generation by a
+meridian makes the whole knot group act trivially there.
+The active irreducible summand has dimension at most three by
+Theorem~\ref{thm:all16}. All displacements lie in that summand,
+which bounds their span, and the inactive summands are pointwise fixed,
+which bounds common-fixed-space codimension.
+
+For the finite-image assertion, write the image as $H$ and assume
+$|H|$ is invertible in the field. If $W$ is invariant, choose any
+projection $P$ onto $W$. The average
+\[
+                 \overline P=|H|^{-1}\sum_{h\in H}hPh^{-1}
+\]
+is an equivariant projection onto $W$; its kernel is an invariant
+complement. Induction on dimension gives complete reducibility.
+\end{proof}
+
+\begin{corollary}\label{cor:augmentation}
+For every $K\in\mathcal K_{16}$, every field-valued $U=1$ cord
+augmentation with $\epsilon(\mu)\ne1$ has rank at most three, with
+arbitrary nonzero longitude value.
+\end{corollary}
+\begin{proof}
+Apply Cornwell's arbitrary-field augmentation--irreducible-KCH
+correspondence, meridian/longitude identification and rank convention
+\cite[Theorem 1.2, Definition 1.8, Proposition 2.12 and Lemma 3.14]{cor17}.
+The associated irreducible representation has dimension at most three
+by Theorem~\ref{thm:all16}.
+Positive augmentation witnesses and meridional-rank lower bounds are
+separate certificates and are not premises of this augmentation upper bound.
+\end{proof}
+
+\begin{corollary}\label{cor:gap}
+For every $K\in\mathcal K_{16}$,
+\[
+              \operatorname{ar}(K,\mathbb C)=3<4=\mr(K)=b(K).
+\]
+\end{corollary}
+\begin{proof}
+The old eight rank-three reflective witnesses are retained in
+\path{REFLECTIVE_AUGMENTATION_RANK_GAP.tex}, Theorem~3; the other
+eight lower witnesses are Theorem~1, \texttt{thm:attainment}, of
+\path{A6_RANK_THREE_AUGMENTATIONS.tex}. They give $U=1$ cord
+augmentations of rank three at the common parameter $\mu=-1$.
+Together with Corollary~\ref{cor:augmentation} they prove augmentation
+rank exactly three. The independent seven-sheet and A6 affine
+certificates supply the meridional-rank and bridge equalities.
+Only the positive attainment theorem from the A6 lower package is
+used here, not its corollary importing the present upper bound.
+\end{proof}
+
+\begin{corollary}\label{cor:sums}
+For every $K\in\mathcal K_{16}$ and every integer $s\ge0$, let
+$K_s=K\mathbin{\#}(\mathbin{\#}^{s}3_1)$. Then
+\[
+          \operatorname{ar}(K_s,\mathbb C)=s+3<s+4=\mr(K_s)=b(K_s).
+\]
+\end{corollary}
+\begin{proof}
+Each seed has a rank-three augmentation at $\mu=-1$, and the trefoil
+has a rank-two augmentation at that same parameter, as explicitly
+verified in the companion $373$ package. Cornwell's Theorem~1.9 gives
+the lower construction and the matching upper additivity of
+augmentation rank, hence $\operatorname{ar}(K_s,\mathbb C)=s+3$.
+The separate normalized-cover consequence
+\path{INVOLUTION_COVER_SUM_FORMULAS.tex},
+Corollary~\texttt{cor:hundredone}, gives $\mr(K_s)=b(K_s)=s+4$ for
+these sixteen seeds. No unrestricted meridional-rank additivity is
+assumed.
+\end{proof}
+
+Strict augmentation-rank gaps were already known: Cornwell's
+Corollary~1.12 gives $2=\operatorname{ar}(K,\mathbb C)<\mr(K)=3$
+for $8_{16},8_{17},10_{91},10_{94}$. No first-counterexample or
+worldwide-priority claim is made here.
+
+\section{Exact replay and limits}
+
+Run \path{verify_generic_kch_extensions.py}; its default mode uses
+only the standard library. The input
+\path{generic_kch_extensions_inputs.json} retains all sixteen literal
+PDs, original and changed seed systems, signed crossings, signed basis
+words, census bindings and every reduced-system relabeling.
+The checker imports only pinned exact arithmetic/diagram helpers and
+the first reduced contradiction from the frozen $373$ package.
+It verifies the three additional free-directed-pairing traces, the
+raw local folds, both basis determinants, the signed transfers and an
+additional integer Laurent identity with constant one.
+The optional \texttt{--census} mode rereads every named PD and DT from
+the pinned independently packaged census. Corrupted signs and named
+maps are rejected. No finite parameter sampling is used.
+
+The upper theorem uses irreducibility, and Corollary~\ref{cor:semisimple}
+extends its codimension consequence to completely reducible representations.
+The two independent families remain essential to the main proof; no
+fixed-space codimension bound is asserted for arbitrary nonsemisimple
+rank-one representations over general fields.
+The augmentation statement uses the exact published correspondence and
+does not address augmentations at $\epsilon(\mu)=1$ outside its rank
+construction. All algebra and diagram checks are internal; formal
+verification and external specialist review are not claimed.
+
+\begin{thebibliography}{9}
+\bibitem{cor17} C. R. Cornwell, KCH representations, augmentations,
+and $A$-polynomials, J. Symplectic Geom. 15 (2017), 983--1017.
+Retained author version arXiv:1310.7526v3, Theorem 1.2,
+Definition 1.8, Proposition 2.12, Lemma 3.14, Theorem 1.9, Corollary 1.12.
+\url{https://arxiv.org/abs/1310.7526v3}.
+\end{thebibliography}
+\end{document}

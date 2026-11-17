@@ -1,0 +1,296 @@
+{
+  "checker_sha256": "3061099af983f24f3f876c584afed187383ac4e683e120e9a4d6819bfb21f014",
+  "checks_passed": 17,
+  "command": ".venv/bin/python research/arithmetic/verify_elliptic_exception_prime_eligibility.py --write-receipt",
+  "eligibility_density_arithmetic": {
+    "1": [
+      "1/2",
+      "1/4"
+    ],
+    "13545865": [
+      "1/4",
+      "1/8"
+    ],
+    "2": [
+      "1/4",
+      "1/8"
+    ],
+    "27091730": [
+      "1/4",
+      "1/8"
+    ]
+  },
+  "exact_controls": [
+    "exact_branch_Q_square",
+    "branch_x_squareclass",
+    "branch_constant_factorization",
+    "squarefree_branch_class_factorization",
+    "constant_primality",
+    "branch_class_prime_congruences",
+    "ramified_class_prime_is_inert_and_five_mod_eight",
+    "four_squareclasses_are_independent",
+    "prime_eligibility_density_arithmetic",
+    "eleven_eligibility_and_absent_numerator_branch",
+    "seventeen_eligibility_and_present_numerator_branch",
+    "ramified_q0_and_class_two_cases",
+    "complete_finite_field_branch_eligibility_scans",
+    "exact_rational_generator_points",
+    "bounded_rational_subgroup_contains_all_four_classes",
+    "bounded_rational_integer_sieve_controls",
+    "retained_proof_inputs_exist"
+  ],
+  "external_imports": [
+    "Milne ANT300 Proposition7.31/Theorem7.32 Hensel",
+    "Milne ANT300 Theorem8.31/Corollary8.32 Chebotarev"
+  ],
+  "external_review": false,
+  "finite_field_controls": [
+    {
+      "branch_points": [],
+      "p": 11
+    },
+    {
+      "branch_points": [
+        [
+          16,
+          4
+        ],
+        [
+          16,
+          13
+        ]
+      ],
+      "p": 17
+    },
+    {
+      "branch_points": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          22
+        ]
+      ],
+      "p": 23
+    },
+    {
+      "branch_points": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          17
+        ]
+      ],
+      "p": 29
+    },
+    {
+      "branch_points": [],
+      "p": 41
+    },
+    {
+      "branch_points": [],
+      "p": 47
+    },
+    {
+      "branch_points": [],
+      "p": 53
+    },
+    {
+      "branch_points": [
+        [
+          20,
+          15
+        ],
+        [
+          20,
+          44
+        ]
+      ],
+      "p": 59
+    },
+    {
+      "branch_points": [],
+      "p": 71
+    },
+    {
+      "branch_points": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          82
+        ]
+      ],
+      "p": 83
+    },
+    {
+      "branch_points": [
+        [
+          79,
+          10
+        ],
+        [
+          79,
+          79
+        ]
+      ],
+      "p": 89
+    },
+    {
+      "branch_points": [],
+      "p": 101
+    },
+    {
+      "branch_points": [
+        [
+          19,
+          13
+        ],
+        [
+          19,
+          94
+        ]
+      ],
+      "p": 107
+    },
+    {
+      "branch_points": [],
+      "p": 113
+    },
+    {
+      "branch_points": [],
+      "p": 131
+    },
+    {
+      "branch_points": [
+        [
+          64,
+          12
+        ],
+        [
+          64,
+          125
+        ]
+      ],
+      "p": 137
+    },
+    {
+      "branch_points": [],
+      "p": 149
+    },
+    {
+      "branch_points": [
+        [
+          99,
+          4
+        ],
+        [
+          99,
+          163
+        ]
+      ],
+      "p": 167
+    },
+    {
+      "branch_points": [],
+      "p": 173
+    },
+    {
+      "branch_points": [],
+      "p": 179
+    },
+    {
+      "branch_points": [
+        [
+          120,
+          14
+        ],
+        [
+          120,
+          177
+        ]
+      ],
+      "p": 191
+    },
+    {
+      "branch_points": [
+        [
+          22,
+          47
+        ],
+        [
+          22,
+          150
+        ]
+      ],
+      "p": 197
+    },
+    {
+      "branch_points": [],
+      "p": 227
+    },
+    {
+      "branch_points": [
+        [
+          142,
+          108
+        ],
+        [
+          142,
+          125
+        ]
+      ],
+      "p": 233
+    },
+    {
+      "branch_points": [],
+      "p": 239
+    },
+    {
+      "branch_points": [],
+      "p": 251
+    }
+  ],
+  "formal_verification": false,
+  "proof_path": "ELLIPTIC_EXCEPTION_PRIME_ELIGIBILITY.md",
+  "proof_sha256": "f4a82dc6764adab8195282be44c8c31a3db81cf4321f99b8ef535d02b0e2881f",
+  "python_version": "3.12.3",
+  "rational_subgroup_domain": {
+    "additional_prime": 2709173,
+    "e": [
+      0,
+      1
+    ],
+    "generators": [
+      "P",
+      "S",
+      "T"
+    ],
+    "m": [
+      -2,
+      2
+    ],
+    "n": [
+      -2,
+      2
+    ],
+    "nonzero_distinct_points": 48,
+    "prime_point_cases": 1296
+  },
+  "source_hashes": {
+    "ELLIPTIC_EXCEPTION_ARITHMETIC.md": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
+    "ELLIPTIC_EXCEPTION_FINITE_LOCAL_ASYMPTOTICS.md": "cb309ee7f92fb3cb2de003ccedcf3fa461b54675bd6aac0ce91d39cfc6e809d7",
+    "ELLIPTIC_EXCEPTION_JOINT_2_3_17_SIEVE.md": "c1264686ba50b4237ddfe1bffd098fc78f5b8cf36bb46f39ceba3f8c47296601",
+    "sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  },
+  "status": "pass",
+  "unrestricted_proof_not_finite_experiment": true
+}

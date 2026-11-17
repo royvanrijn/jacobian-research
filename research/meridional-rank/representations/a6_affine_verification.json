@@ -1,0 +1,4514 @@
+{
+  "status": "PASS",
+  "python_version": "3.12.3",
+  "named_cases": 24,
+  "results": [
+    {
+      "name": "13a_304",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_362",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_623",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_629",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_3232",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_3259",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_3374",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13a_3375",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_834",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_838",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          30,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_839",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_991",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          18,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_992",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_993",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          18,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_1367",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          18,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_1370",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_1371",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          18,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_1374",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_1375",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_1376",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          20,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_3814",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    },
+    {
+      "name": "13n_3840",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          12,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_3911",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          12,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "13n_3914",
+      "projection_order": 360,
+      "ambient_dimension": 8,
+      "ambient_common_fixed_dimension": 1,
+      "essential_dimension": 7,
+      "essential_common_fixed_dimension": 0,
+      "meridian_displacement_rank": 2,
+      "meridian_class_generating_rank": 4,
+      "meridional_lower": 4,
+      "bridge_upper": 4,
+      "mr_equals_bridge": 4,
+      "finite_image_structure": {
+        "projection_order": 360,
+        "kernel_dimension_8D": 6,
+        "image_order_8D": 262440,
+        "kernel_dimension_7D": 4,
+        "image_order_7D": 29160,
+        "schreier_loops_checked": 1440,
+        "ordinary_pair_words_zero_based_seed_positions": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "ordinary_generating_rank_8D": 2,
+        "ordinary_generating_rank_7D": 2,
+        "meridian_class_generating_rank_8D": 4,
+        "meridian_class_generating_rank_7D": 4,
+        "kernel_basis_8D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "kernel_basis_7D": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ]
+        ],
+        "quotient_common_fixed_dimension": 0,
+        "quotient_meridian_displacement_rank": 2
+      },
+      "independent_cover_homology": {
+        "columns": 73,
+        "lifted_relator_rows": 78,
+        "meridian_cycle_fill_rows": 52,
+        "rank_F3": 71,
+        "H1_F3_dimension": 2,
+        "tree_edges": [
+          2,
+          4,
+          14,
+          31,
+          36
+        ]
+      }
+    }
+  ],
+  "negative_controls": {
+    "changed_matrix": true,
+    "invalid_seed_move": true,
+    "invalid_census_map": true,
+    "principal_zero_lift": true
+  },
+  "optional_cover_homology_replayed": true,
+  "optional_named_census_reread": true,
+  "input_sha256": {
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
+    "verify_a6_affine_certificates.py": "458cd9eaea046ef177b9c891425b55ef378b482096147e0b346e0b08c68fea55",
+    "sources/wirtinger-systems-published-2020.pdf": "884b32bd4c6f9a8fe250e6b2d6342cbf0dadcb3d8e3a416c76cb7efe7e5e40b0"
+  },
+  "scope": "Direct literal matrix, exact four-seed, planar named-map and meridian-class rank proofs. Optional controls are reported separately; no complete negative search or worldwide priority claim.",
+  "assurance": "Internal exact replay, with published bridge=Wirtinger theorem and named-census provenance imported. No formal verification or external specialist review."
+}

@@ -1,0 +1,57 @@
+{
+  "purpose": "Primary formal graph-module theorem, concrete nonconstant rank-two projective connection, and explicit finite-admission boundary; no bounded-lift claim.",
+  "primary_source": {
+    "authors": ["Vladimir Baranovsky", "Taiji Chen"],
+    "title": "Quantization of Vector Bundles on Lagrangian Subvarieties",
+    "doi": "10.1093/imrn/rnx230",
+    "inspected_version": "Author-hosted 2017 journal advance PDF, 22 pages; accepted 6 September 2017; download stamp 3 November 2017. Not identified with arXiv:1701.01542v1.",
+    "primary_url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/6/3204/files/2017/11/Paper.pdf",
+    "arxiv_identity_only": "https://arxiv.org/abs/1701.01542v1",
+    "retrieved_utc_date": "2026-11-17",
+    "cached_file": "sources/baranovsky-chen-authoraccepted2017.pdf",
+    "bytes": 178851,
+    "pages": 22,
+    "sha256": "5e1deef94fdda1c98ead8c27668fe65094be161f28669449ba6221d4a4e09efb",
+    "exact_locations": [
+      "Printed pages 1-2: formal quantization and flat h-complete module definition.",
+      "Theorem 1.1, printed page 4: higher period restrictions, flat projectivization, and refined first Chern equality.",
+      "Theorem 5.1, printed pages 15-16: chosen flat PGL_r(k[[h]]) datum and compatible Picard-algebroid module in the successive lifting construction.",
+      "Section 6 first remark, printed page 19: parameter-module sheaf identification E_h with E[[h]] when Y is affine."
+    ],
+    "inspection": "Internal AI-assisted reading of the primary web PDF and local pypdf extraction of the cached exact bytes. Root independently inspected the same author PDF theorem and completeness definition.",
+    "actual_import": [
+      "Formal quantization existence under Theorem 1.1's three conditions.",
+      "Theorem 5.1 permits retention of a chosen compatible flat formal projective bundle.",
+      "Affine Y allows a parameter-module sheaf identification, without an uncompleted source-module finiteness assertion."
+    ],
+    "application_hypotheses_checked": [
+      "The graph of a polynomial symplectic endomorphism is a smooth closed Lagrangian in target times opposite source; its source projection is an isomorphism without an inverse map premise.",
+      "The ambient product has the standard formal Weyl/Moyal quantization.",
+      "The graph is affine space, has trivial canonical bundle, and has zero degree-two algebraic de Rham and truncated de Rham cohomology.",
+      "The trivial rank-two bundle has zero first Chern class and the explicit polynomial flat connection in the note; its formal projective connection is extended constantly in h.",
+      "The Picard algebroid has zero refined class, so a splitting makes the selected flat connection a compatible module datum."
+    ],
+    "excluded_imports": [
+      "No finite PBW support, actual source finite-projective algebraization, or nonzero-parameter specialization theorem is imported.",
+      "No scalar Weyl realization, invariant scalar quantum carrier, arithmetic support compatibility, or DC1/DC2 implication is imported."
+    ]
+  },
+  "proof": {
+    "file": "NEW_FORMAL_GRAPH_CARRIERS_AND_FINITE_ADMISSION_GAP.md",
+    "sha256": "3eee0bc1ff7806f7c799445baf09f66b4fe1dae6cedf134b40b7b6484decffd9"
+  },
+  "written_arguments": [
+    "Polynomial symplectic graphs meet the primary theorem's geometric and cohomological hypotheses.",
+    "The rank-two polynomial connection d-[[0,1],[X,0]]dX is flat and trace zero.",
+    "A rational invariant line would give w'+w^2=X; integer degree at infinity excludes every rational w over the field of the other coordinates, also after constant extension.",
+    "The elementary Airy matrix Weyl embedding is strict for Bernstein PBW degree; first-h-order induction preserves and reflects a uniform PBW support bound on scalar formal series.",
+    "Consequently composing an existing scalar formal lift with this elementary embedding cannot repair unbounded support. Other graph-module realizations are not asserted to be compositional."
+  ],
+  "existing_result_boundary": "Rank-one formal graph existence is already recorded in PROOF.md via Baranovsky-Ginzburg-Kaledin-Pecharich Theorem 1.1.4; no new scalar formal-existence claim is made.",
+  "checker": null,
+  "checker_scope": "No new finite checker; primary-source inspection and written proofs are the retained evidence.",
+  "independent_whole_proof_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "remaining_gap": "Actual finite-PBW graph bimodule with admitted global target actions, finite projective/free source realization and a uniform PBW bound; any scalar realization and prescribed arithmetic support remain separate unproved steps."
+}

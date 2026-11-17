@@ -1,0 +1,234 @@
+{
+  "unrestricted": {
+    "weight": 1,
+    "largest_target": 99999998,
+    "number_of_targets": 16666667,
+    "allowed_count": 6992353,
+    "exceptions": [],
+    "largest_least_small_summand": 211,
+    "histogram": [
+      {
+        "summand": 1,
+        "new_targets": 6992353
+      },
+      {
+        "summand": 7,
+        "new_targets": 4296673
+      },
+      {
+        "summand": 13,
+        "new_targets": 2503660
+      },
+      {
+        "summand": 19,
+        "new_targets": 1392391
+      },
+      {
+        "summand": 31,
+        "new_targets": 640650
+      },
+      {
+        "summand": 37,
+        "new_targets": 389497
+      },
+      {
+        "summand": 43,
+        "new_targets": 220471
+      },
+      {
+        "summand": 49,
+        "new_targets": 117529
+      },
+      {
+        "summand": 61,
+        "new_targets": 50287
+      },
+      {
+        "summand": 67,
+        "new_targets": 29358
+      },
+      {
+        "summand": 73,
+        "new_targets": 16394
+      },
+      {
+        "summand": 79,
+        "new_targets": 8664
+      },
+      {
+        "summand": 91,
+        "new_targets": 3873
+      },
+      {
+        "summand": 97,
+        "new_targets": 2430
+      },
+      {
+        "summand": 103,
+        "new_targets": 1210
+      },
+      {
+        "summand": 109,
+        "new_targets": 615
+      },
+      {
+        "summand": 127,
+        "new_targets": 284
+      },
+      {
+        "summand": 133,
+        "new_targets": 155
+      },
+      {
+        "summand": 139,
+        "new_targets": 84
+      },
+      {
+        "summand": 151,
+        "new_targets": 46
+      },
+      {
+        "summand": 157,
+        "new_targets": 19
+      },
+      {
+        "summand": 163,
+        "new_targets": 13
+      },
+      {
+        "summand": 169,
+        "new_targets": 5
+      },
+      {
+        "summand": 181,
+        "new_targets": 4
+      },
+      {
+        "summand": 193,
+        "new_targets": 1
+      },
+      {
+        "summand": 211,
+        "new_targets": 1
+      }
+    ],
+    "sha256_membership_uint8": "010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575",
+    "sha256_small_index_int32_le": "fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0"
+  },
+  "mixed": {
+    "weight": 3,
+    "largest_target": 99999994,
+    "number_of_targets": 16666666,
+    "allowed_count": 6992352,
+    "exceptions": [],
+    "largest_least_small_summand": 199,
+    "histogram": [
+      {
+        "summand": 1,
+        "new_targets": 6992352
+      },
+      {
+        "summand": 7,
+        "new_targets": 4296527
+      },
+      {
+        "summand": 13,
+        "new_targets": 2502584
+      },
+      {
+        "summand": 19,
+        "new_targets": 1391730
+      },
+      {
+        "summand": 31,
+        "new_targets": 641175
+      },
+      {
+        "summand": 37,
+        "new_targets": 390079
+      },
+      {
+        "summand": 43,
+        "new_targets": 220890
+      },
+      {
+        "summand": 49,
+        "new_targets": 117359
+      },
+      {
+        "summand": 61,
+        "new_targets": 50595
+      },
+      {
+        "summand": 67,
+        "new_targets": 29338
+      },
+      {
+        "summand": 73,
+        "new_targets": 16382
+      },
+      {
+        "summand": 79,
+        "new_targets": 8837
+      },
+      {
+        "summand": 91,
+        "new_targets": 4007
+      },
+      {
+        "summand": 97,
+        "new_targets": 2387
+      },
+      {
+        "summand": 103,
+        "new_targets": 1257
+      },
+      {
+        "summand": 109,
+        "new_targets": 584
+      },
+      {
+        "summand": 127,
+        "new_targets": 282
+      },
+      {
+        "summand": 133,
+        "new_targets": 152
+      },
+      {
+        "summand": 139,
+        "new_targets": 74
+      },
+      {
+        "summand": 151,
+        "new_targets": 34
+      },
+      {
+        "summand": 157,
+        "new_targets": 15
+      },
+      {
+        "summand": 163,
+        "new_targets": 12
+      },
+      {
+        "summand": 169,
+        "new_targets": 7
+      },
+      {
+        "summand": 181,
+        "new_targets": 4
+      },
+      {
+        "summand": 193,
+        "new_targets": 1
+      },
+      {
+        "summand": 199,
+        "new_targets": 2
+      }
+    ],
+    "sha256_membership_uint8": "aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0",
+    "sha256_small_index_int32_le": "91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d"
+  }
+}

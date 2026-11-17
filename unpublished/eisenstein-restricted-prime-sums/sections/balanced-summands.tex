@@ -1,0 +1,15 @@
+\section{The next question: balanced summands}\label{sec:balanced}
+Existence still leaves the shape of a decomposition largely open. It is
+natural to ask for the two summands to have comparable size.
+The supplementary NumPy verifier for $\AA+\AA$ also tests $n/3\le a\le b\le2n/3$. In the entire range
+$2\le n<100{,}000{,}000$, $n\equiv2\pmod6$, precisely $8$ and $44$
+fail. This motivates, but does not prove, the sharper statement:
+\begin{conjecture}
+Every positive integer $n\equiv2\pmod6$ other than $8$ and $44$ admits $n=a+b$ with
+$a,b\in\AA$ and $n/3\le a,b\le2n/3$.
+\end{conjecture}
+The present counting argument leaves the two norm sizes free. To settle
+this last question, we would need control of the ratio
+$N(z)/(N(z)+N(w))$, or a different construction that keeps the two values
+in the desired interval. The finite search gives a clear target, but it
+does not yet provide that extra argument.

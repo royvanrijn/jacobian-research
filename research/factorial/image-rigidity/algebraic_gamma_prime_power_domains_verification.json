@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "arithmetic": "exact integer-polynomial and finite-field",
+  "exact_controls": 16,
+  "controls": [
+    "literal gap-four determinant factorization",
+    "normalized determinant has nonconstant residue",
+    "fourth rising factorial in the quadratic field",
+    "eighth rising factorial in the quadratic field",
+    "actual moment is a nonconstant perfect square",
+    "literal moment discriminant vanishes",
+    "obstruction shape has no real embedding",
+    "obstruction residue has degree two over F2: 0",
+    "obstruction residue has degree two over F2: 1",
+    "degree-two prime-gap coefficient congruence: p=2",
+    "degree-two prime-gap coefficient congruence: p=3",
+    "degree-two prime-gap coefficient congruence: p=5",
+    "degree-two prime-gap coefficient congruence: p=7",
+    "positive golden-ratio shape has non-prime-field residue: 0",
+    "positive golden-ratio shape has non-prime-field residue: 1",
+    "positive golden-ratio shape has non-prime-field residue: 2"
+  ],
+  "counterexample": {
+    "gap": 4,
+    "degree": 2,
+    "parameter_minimal_polynomial_ascending": [
+      15,
+      7,
+      1
+    ],
+    "parameter_is_two_adic_unit": true,
+    "parameter_residue_degree_over_F2": 2,
+    "moment_polynomial": "(1-45*t)^2",
+    "normalized_determinant_residue": "x^2+x+1",
+    "has_positive_real_shape": false
+  },
+  "prime_domain": "all integral Cp gamma, by the written coefficientwise congruence",
+  "proper_prime_power_domain": "Zp+p^s O_Cp, by the written closed-disk proof",
+  "all_integral_proper_prime_power_extension": false,
+  "all_positive_algebraic_shapes_claimed": false,
+  "finite_controls_prove_unbounded_scope": false,
+  "proof": "ALGEBRAIC_GAMMA_PRIME_POWER_DOMAINS.tex",
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "priority_claim": false,
+  "input_sha256": {
+    "ALGEBRAIC_GAMMA_PRIME_POWER_DOMAINS.tex": "147f6c556c290b4921278090ec04a3a4fe079debd46395afeebc594596640343",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "PRIME_POWER_MARKED_RADIAL_SFC.tex": "fd3c7c7f29ce45b106979c4cf0d8805c0e961d9c80b308eaf512b7c51b3265c7",
+    "algebraic_gamma_prime_power_domains.py": "3f49afab568900eea74176be854217e635517a1588f8d7aa168d6dda82cd5bd5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "On the Davenport--Heilbronn theorems and second order terms",
+  "authors": [
+    "Manjul Bhargava",
+    "Arul Shankar",
+    "Jacob Tsimerman"
+  ],
+  "journal": "Inventiones Mathematicae 193 (2013), 439--499",
+  "doi": "10.1007/s00222-012-0433-0",
+  "primary_url": "https://www.math.toronto.edu/~ila/BST.pdf",
+  "sha256": "a8d89860b698d2a533abf4dcd4c76354728ec5888f619890d53439d5102a2b03",
+  "locators": {
+    "strong_acceptability": "p. 443 (PDF p. 5)",
+    "two_term_count": "Theorem 7, equation (7), p. 443 (PDF p. 5)",
+    "leading_count": "Theorem 8, equation (8), p. 444 (PDF p. 6)",
+    "cyclic_negligibility": "Lemma 22, p. 456 (PDF p. 18)",
+    "non_total_local_mass": "Lemma 19, p. 453 (PDF p. 15)",
+    "total_local_mass": "Remark 4, equation (58), p. 480 (PDF p. 42)"
+  },
+  "scope": "Primary imported cubic-field counting theorem for strongly acceptable infinite local specifications; its deep analytic proof is not independently replayed."
+}

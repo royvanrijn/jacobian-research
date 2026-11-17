@@ -1,0 +1,85 @@
+{
+  "outcome": "PASS",
+  "check_count": 29,
+  "checks": [
+    "normalization immersion resultant",
+    "collision-gap immersion resultant",
+    "universal monic quartic-class conductor",
+    "ordinary triple-point conductor power",
+    "order-three contact conductor power",
+    "compact chord-action formula modulo collision cubic",
+    "repeated collision root has a nonzero action factor",
+    "full action derivative cancellation",
+    "explicit inverse of the gap square modulo cubic",
+    "exact quadratic coefficient equation",
+    "exact linear coefficient equation",
+    "exact constant coefficient equation",
+    "retained triple-point factor and first integral",
+    "cubic equality gives the stated pair product",
+    "quartic equality reduces to the collision cubic",
+    "exact tangent determinant factor",
+    "canonical derivatives at distinct endpoints cannot be equal for nonzero sum",
+    "representative quartic normalization remains immersed",
+    "representative quartic normalization remains immersed",
+    "representative quartic normalization remains immersed",
+    "ordinary triple-point cubic is separable",
+    "A5 case has exactly a triple zero collision sum",
+    "triple-point polynomial derivative degree inequalities are incompatible",
+    "the discriminant derivative has the stated factors",
+    "retained cable weighted action formula",
+    "nonzero cable C prevents a triple-zero collision cubic",
+    "pinned primary source neumann-1989-plane-curves-links-infinity.pdf",
+    "pinned primary source neumann-rudolph-1988-unfoldings-corrigendum.pdf",
+    "retained cable physical-action proof pin"
+  ],
+  "examples": [
+    {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "immersion_resultant": "43",
+      "collision_cubic": "s**3 + 2*s - 1",
+      "conductor": "t**6 + t**4 + 2*t**3 + t**2 + t + 2"
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "immersion_resultant": "31",
+      "collision_cubic": "s**3 + s - 1",
+      "conductor": "(t**3 + t + 1)**2"
+    },
+    {
+      "A": 1,
+      "B": 2,
+      "C": 0,
+      "immersion_resultant": "64",
+      "collision_cubic": "s**3",
+      "conductor": "(t**2 + 1)**3"
+    }
+  ],
+  "source_sha256": {
+    "neumann-1989-plane-curves-links-infinity.pdf": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
+    "neumann-rudolph-1988-unfoldings-corrigendum.pdf": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9"
+  },
+  "cable_action_proof_sha256": "9cadd3f5aed9c34845c0b143ebd74a50a8d99a658bdecf7e562b1f508eb96355",
+  "source_audit_sha256": "57345d9af9b46b3584cbe099adbc9c285e76c91a267ab5ad0100f8b7c86c2bcb",
+  "proof_sha256": "e6ea60d3a8869d6be9448aa2250e08bc2c30c5fcff507ae4f5617e80ad7805f0",
+  "checker_sha256": "e7471d399d1137d7430e103b850290c3227a560cdac1ca1debdf07d0f5de52e8",
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 0.295,
+  "scope": {
+    "quartic_chord_action_and_three_period_equations_checked": true,
+    "canonical_coefficients_proved_rational_not_everywhere_regular": true,
+    "persistent_nonnodal_quartic_branches_excluded_by_written_argument": true,
+    "ordinary_triple_point_and_A5_fixed_order_closures_use_cable_action_lemma": true,
+    "entire_generic_ordinary_three_node_quartic_branch_excluded_here": false,
+    "all_conductor_degree_six_cases_excluded": false,
+    "uniform_family_target_automorphism_assumed": false,
+    "automatic_trace_integrality_or_JC2_proved": false,
+    "independent_replay": false,
+    "independent_mathematical_review": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

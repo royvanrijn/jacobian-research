@@ -1,0 +1,85 @@
+{
+  "claim": "Neumann's genus-three table has three realizable polynomial ambient types, of intrinsic degrees four, six (cable), and seven (hyperelliptic); only the last is assumed in the scoped sextic-conductor theorem.",
+  "inspected_date": "2026-11-17",
+  "inspection": "Internal rendered-page inspection and algebraic source-form transcription.",
+  "sources": [
+    {
+      "title": "Complex algebraic plane curves via their links at infinity",
+      "author": "Walter D. Neumann",
+      "journal": "Inventiones Mathematicae 98(3) (1989), 445-489",
+      "doi": "10.1007/BF01393832",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0098/LOG_0028.pdf",
+      "local_pdf": "neumann-1989-plane-curves-links-infinity.pdf",
+      "sha256": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
+      "inspected": [
+        {
+          "printed_pages": "482",
+          "pdf_zero_based_indices": [
+            38
+          ],
+          "rendered_page_inspected": true,
+          "content": "Table lists the three realizable genus-three rows: torus (4,3), cable (3,2;2,3), and torus (7,2), of intrinsic degrees four, six, and seven. The (3,2;3,1) row is not realizable. The paragraph before the table states ambient polynomial-equivalence scope."
+        },
+        {
+          "printed_pages": "483",
+          "pdf_zero_based_indices": [
+            39
+          ],
+          "rendered_page_inspected": true,
+          "content": "The first displayed polynomial is the degree-six cable form f1, including d!=0; the coefficient-computation explanation follows."
+        }
+      ],
+      "exact_genus_three_forms": [
+        "X^4+Y^3+Y*(a*X^2+b*X+c)+d*X^2+e*X",
+        "X^7+Y^2+a*X^5+b*X^4+c*X^3+d*X^2+e*X",
+        "(X^3+Y^2)^2+a*X^4+b*X^3+(a^2/4)*X^2+c*X+a*X*Y^2+b*Y^2+d*Y, d!=0"
+      ]
+    },
+    {
+      "title": "Corrigendum: Unfoldings in Knot Theory",
+      "authors": [
+        "Walter Neumann",
+        "Lee Rudolph"
+      ],
+      "journal": "Mathematische Annalen 282(2) (1988), 349-351",
+      "doi": "10.1007/BF01456981",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0282/LOG_0040.pdf",
+      "local_pdf": "neumann-rudolph-1988-unfoldings-corrigendum.pdf",
+      "sha256": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9",
+      "inspected": [
+        {
+          "printed_pages": "349",
+          "pdf_zero_based_indices": [
+            1
+          ],
+          "rendered_page_inspected": true,
+          "content": "Corrected Lemma7.1: a reduced fibre with a knot at infinity has a good defining polynomial."
+        },
+        {
+          "printed_pages": "351",
+          "pdf_zero_based_indices": [
+            3
+          ],
+          "rendered_page_inspected": true,
+          "content": "Corrected proof of Lemma7.1."
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    "The generic exact conductor degree six gives normalization defect three on the source line.",
+    "Normalization is the affine line with one place at infinity; the actual Keller restriction is immersed.",
+    "The generic ambient hyperelliptic degree-seven type is an explicit additional hypothesis, not a conclusion for all defect-three orders.",
+    "Its affine-line normalization has canonical form X=u^2+gamma,Y=u*f(u^2),deg f=3,f(0)!=0.",
+    "Other genus-three ambient types are invoked only to prevent a special fixed central three-node order from switching to intrinsic degree below seven."
+  ],
+  "not_assumed": [
+    "All genus-three or all three-nodal embeddings are not declared ambient equivalent.",
+    "No uniform polynomial target automorphism over the source parameter is assumed.",
+    "The conditional parametric-lines classification is not used."
+  ],
+  "source_classification_proved_by_symbolic_checker": false,
+  "independent_mathematical_review": false,
+  "formal_verification": false,
+  "external_review": false
+}

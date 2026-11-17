@@ -1,0 +1,366 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\Q}{\mathbb Q}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{A scalar cyclic minor for ordinary quintic binomial moments}
+\author{}\date{}\maketitle
+We prove consecutive coprimality at every ordinary order for the
+quintic support $\{2,5\}$. A mixed-adjoint identity confines every
+common root to one three-adic scale. A scalar minor then becomes
+injective on the entire integral disk. Conjugacy and real positivity
+exclude a common factor. The existing support reduction consequently
+gives Strong Factorial for all ordinary univariate binomials of degree
+at most five. Internal replay is distinct from independent replay,
+formal verification, external review and priority.
+For $n\ge1$ put
+\[
+ P_n(t)=\sum_{k=0}^n\binom nk(2n+1)_{3k}t^k,\qquad
+ D=5n+4,\qquad r=v_3(D).
+\]
+Every valuation is normalized by $v_3(3)=1$.
+We work in a complete algebraically closed extension $K$ of $\Q_3$,
+with valuation ring $\mathcal O$, maximal ideal $\mathfrak m$, and residue
+field $k$. An overbar always means reduction modulo $\mathfrak m$;
+it does not assert congruence modulo $3\mathcal O$.
+
+\section{Two elementary lemmas}
+\begin{lemma}[An affine reduction is injective on the integral disk]
+\label{lem:affine-injectivity}
+Let $F(X)\in\mathbb Z_3[X]$ satisfy $\bar F=c(1+X)$ for some
+$c\in\mathbb F_3^\times$. For distinct $x,y\in\mathcal O$,
+\[
+ v_3(F(x)-F(y))=v_3(x-y).
+\]
+In particular $F$ has at most one zero in $\mathcal O$, and that
+zero is simple.
+\end{lemma}
+\begin{proof}
+Write $F=\sum a_jX^j$. Its linear coefficient is a unit and
+$a_j\in3\mathbb Z_3$ for $j\ge2$. The divided difference is
+\[
+ \frac{F(x)-F(y)}{x-y}
+ =a_1+\sum_{j\ge2}a_j\sum_{\ell=0}^{j-1}
+                          x^{j-1-\ell}y^\ell.
+\]
+This is a unit: all terms after the first lie in
+$3\mathcal O\subset\mathfrak m$.
+The same observation applies to $F'(x)$.
+All sums are finite.
+\end{proof}
+
+\begin{lemma}[Real-field descent from a unique local candidate]
+\label{lem:real-field-descent}
+Let $E\subset\mathbb R$ be a field of characteristic zero with an
+embedding $\iota:E\longrightarrow K$.
+Suppose $P,Q\in E[t]$ have no common real root and their images
+under $\iota$ have at most one distinct common root in $K$.
+Then $P,Q$ are coprime over $E$ and over $\mathbb C$.
+\end{lemma}
+\begin{proof}
+A nonconstant gcd has an irreducible factor $h$ over $E$.
+Characteristic zero makes $h$ separable, so all $\deg h$ distinct
+roots of $\iota(h)$ are common roots in $K$.
+Thus $\deg h\le1$, giving a root in $E\subset\mathbb R$,
+a contradiction. A Bezout identity over $E$ remains one over
+$\mathbb C$.
+This uses all conjugates of a common factor. It does not claim
+that an arbitrary unique integral root in
+Lemma~\ref{lem:affine-injectivity} is rational.
+\end{proof}
+
+\section{The exact mixed-adjoint input and forced scale}
+For every integer $m\ge0$ and parameter $\gamma$, define
+\[
+ T_{m,\gamma}(t)=\sum_{k=0}^m\binom mk(\gamma)_{3k}t^k,\qquad
+ B_{0,\gamma}=1,\quad
+ B_{j+1,\gamma}=(z+3j+\gamma+2)B_{j,\gamma}
+                       -zB_{j,\gamma}' .
+\]
+Thus $P_n=T_{n,2n+1}$. Set
+\[
+ M=\gamma+3m,\quad A=(M+3)(M+4),\quad
+ \kappa=\frac{3(m+1)}{A},
+\]
+\[
+ B=B_{m,\gamma},\qquad C=B_{m+1,\gamma},\qquad
+ D_*=B_{m+2,\gamma},\qquad H=D_*+\kappa z^3B.
+\]
+For $u\ne0$, write the cyclic column of a polynomial $J$ as
+\[
+ J(z)=J_0(z^3)+zJ_1(z^3)+z^2J_2(z^3),\qquad
+ {\bf j}(u)=(J_0(u),J_1(u),J_2(u))^{\mathsf T}.
+\]
+\begin{lemma}[Exact imported mixed-adjoint equivalence]\label{lem:mixed-input}
+For $m\ge1$, $\gamma>0$ and $u\ne0$, the two equalities
+\[
+ T_{m,\gamma}(u^{-1})=T_{m+1,\gamma+2}(u^{-1})=0
+\]
+are equivalent to $\operatorname{rank}[{\bf c}(u),{\bf h}(u)]<2$.
+The equivalence is algebraic in characteristic zero, so it also holds
+over $K$ for positive rational $\gamma$.
+\end{lemma}
+\begin{proof}[Precise source of the imported identity]
+This is Lemma \texttt{lem:mixed-input} of the
+\href{QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex}{three-adic parity note}.
+Its original source is Theorem
+\texttt{thm:gap-three-}\allowbreak\texttt{offset-two-rank} of the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}.
+Those proofs specify the full Ore and concomitant identities,
+include multiple lower roots, and justify their algebraic transfer
+to $K$. Here only the necessary rank direction is used.
+For the ordinary specialization $m=n$, $\gamma=2n+1$,
+\[
+ M=5n+1,\qquad
+ \frac{3(n+1)}{(M+3)(M+4)}
+ =\frac3{5(5n+4)}=\kappa .
+\]
+All auxiliary columns have the same fixed lower shape $\gamma$;
+the upper moment has shape $\gamma+2$.
+No uniform rank assertion or simplicity assumption is imported.
+\end{proof}
+
+
+\begin{lemma}[Every common root is balanced]\label{lem:balance}
+If $P_n$ and $P_{n+1}$ have a common root $t\in K$, then
+\[
+ v_3(t)=1-r,\qquad
+ \overline{t/3^{\,1-r}}=-\bigl(5\overline{D/3^r}\bigr)^{-1}\in k^\times.
+\]
+Equivalently $u=t^{-1}$ has valuation $r-1\ge1$ and
+$\eta=\kappa u\in\mathcal O^\times$.
+In particular a common root is impossible when $r\le1$.
+\end{lemma}
+\begin{proof}
+Put $\gamma=2n+1$, $u=t^{-1}$ and choose $z^3=u$.
+The constant terms are one, so $t,z,u$ are nonzero.
+Every $(\gamma)_{3k}$ contains at least $k$ integer factors divisible
+by three. Thus every coefficient of
+\[
+ z^{3n}P_n(z^{-3})
+\]
+at $z^{3(n-k)}$ has valuation at least $k$.
+If $v_3(z)<1/3$, its leading term is uniquely of smallest valuation,
+which is impossible at a root. Consequently $v_3(u)\ge1$.
+
+Use Lemma~\ref{lem:mixed-input} with $m=n$:
+\[
+ B=B_{n,\gamma},\quad C=B_{n+1,\gamma},\quad
+ D_*=B_{n+2,\gamma},\quad
+ H=D_*+\kappa z^3B,\qquad
+ \kappa=\frac3{5(5n+4)}.
+\]
+A common root forces the two cyclic columns $C,H$, evaluated at $u$,
+to have rank less than two. Their coefficient vectors, as well as
+that of $B$, are integral because $\gamma$ is an integer and
+$v_3(u)>0$.
+On reduction modulo the maximal ideal, $u$ is zero and the auxiliary
+operator is
+\[
+ \mathsf A=z-zD_z+\bar\gamma-1
+ \quad\hbox{on }k[z]/(z^3),\qquad \mathsf A^3=\mathsf A.
+\]
+Indeed its triangular diagonal is
+$\bar\gamma-1,\bar\gamma-2,\bar\gamma-3$, the three elements
+of $\mathbb F_3$, so its characteristic polynomial is $X^3-X$.
+The vectors $1,\mathsf A1,\mathsf A^21$ form a basis since they are
+monic of degrees zero, one and two. Moreover $\bar\gamma\in\mathbb F_3$.
+For every $n\ge1$, $\mathsf A^n1$ and $\mathsf A^{n+1}1$
+are independent: $\mathsf A$ has the three distinct eigenvalues
+$0,1,-1$, the cyclic vector has a nonzero component in every
+eigenspace, and the two nonzero eigenspaces give a Vandermonde minor.
+The reduced columns $B,C,D_*$ are respectively
+$\mathsf A^n1,\mathsf A^{n+1}1,\mathsf A^{n+2}1$.
+
+Write $\eta=\kappa u$. If $v_3(\eta)>0$, the pair $C,H$ reduces
+to $\mathsf A^{n+1}1,\mathsf A^{n+2}1$, of rank two.
+If $v_3(\eta)<0$, first multiply the second column by $\eta^{-1}$;
+it then reduces to the independent pair
+$\mathsf A^{n+1}1,\mathsf A^n1$.
+Both contradict rank deficiency. Hence $v_3(\eta)=0$.
+
+Since $n\ge1$, $\mathsf A^{n+2}1=\mathsf A^n1$.
+The pair now reduces to
+$\mathsf A^{n+1}1,(1+\bar\eta)\mathsf A^n1$.
+It has rank less than two exactly when $\bar\eta=-1$.
+As $v_3(\kappa)=1-r$, balance gives $v_3(u)=r-1$
+and $v_3(t)=1-r$.
+Writing $t=3^{1-r}w$, one has
+$\eta=1/[5(D/3^r)w]$, proving the residue assertion.
+The inequality $v_3(u)\ge1$ excludes $r\le1$.
+\end{proof}
+
+\section{A scalar minor}
+\begin{lemma}[One fixed row pair has affine reduction]
+\label{lem:fixed-row-minor}
+Suppose $r\ge2$ and put
+\[
+ q=\kappa^{-1}=\frac{5(5n+4)}3\in3\mathbb Z .
+\]
+With cyclic rows zero and one, the finite integer polynomial
+\[
+ F_n(X)=
+ \det[{\bf c}(qX),{\bf d}(qX)+X{\bf b}(qX)]_{\{0,1\}}
+                                                        \tag{2}\label{eq:scalar-minor}
+\]
+satisfies
+\[
+ \bar F_n(X)=\epsilon_n(1+X),\qquad
+ \epsilon_n=\begin{cases}1,&n\text{ odd},\\-1,&n\text{ even}.
+ \end{cases}
+\]
+Every common root of $P_n,P_{n+1}$ gives a zero
+$X=\eta=\kappa/t$ of $F_n$ in $\mathcal O^\times$.
+\end{lemma}
+\begin{proof}
+Here $r\ge2$ implies $n\equiv1\pmod9$ and $\gamma\equiv0\pmod3$.
+On the reduced cyclic algebra,
+\[
+ A=z-zD_z-1,\qquad A1=z-1,\qquad A^21=z^2+1.
+\]
+The positive powers alternate between the last two vectors.
+For odd $n$,
+\[
+ \bar{\bf b}(0)=(-1,1,0)^{\mathsf T},\qquad
+ \bar{\bf c}(0)=(1,0,1)^{\mathsf T};
+\]
+for even $n$ these columns are reversed.
+Always $\bar{\bf d}(0)=\bar{\bf b}(0)$.
+The determinant of rows zero and one of
+$[\bar{\bf c}(0),\bar{\bf b}(0)]$ is $\epsilon_n$.
+
+All three cyclic columns belong to $\mathbb Z[u]^3$.
+Since $q$ is divisible by three, substituting $u=qX$ reduces each
+whole column polynomial to its value at zero.
+This proves the asserted affine reduction, including every
+coefficient of degree at least two.
+The imported rank condition makes its fixed minor vanish at
+$X=\kappa u$. Lemma~\ref{lem:balance} puts this point in
+$\mathcal O^\times$.
+\end{proof}
+
+\begin{theorem}[All ordinary quintic consecutive moment pairs]
+\label{thm:ordinary-quintic-coprime}
+For every integer $n\ge1$,
+\[
+ \gcd(P_n,P_{n+1})=1
+\]
+over $\mathbb Q$ and over $\mathbb C$.
+\end{theorem}
+\begin{proof}
+If $r\le1$, Lemma~\ref{lem:balance} excludes common roots over $K$.
+If $r\ge2$, every common root gives a zero of $F_n$ in the integral
+disk. Lemmas \ref{lem:affine-injectivity} and
+\ref{lem:fixed-row-minor} show that at most one such zero exists.
+The map $t\mapsto\kappa/t$ is injective on nonzero roots, so
+$P_n,P_{n+1}$ have at most one distinct common root in $K$.
+
+They have no common real root. One index is even, and for even $j$
+and real $t$ finite Gamma-moment expansion gives
+\[
+ P_j(t)=\frac1{\Gamma(2j+1)}
+       \int_0^\infty x^{2j}(1+tx^3)^j e^{-x}\,dx>0.
+\]
+The integrand is nonnegative and positive on an interval.
+Apply Lemma~\ref{lem:real-field-descent} with $E=\mathbb Q$.
+This concerns all conjugates of a rational common factor;
+no simplicity assumption on the input polynomials is needed.
+\end{proof}
+
+
+\begin{corollary}[The ordinary support $\{2,5\}$]
+\label{cor:quintic-sfc}
+Every nonzero complex phase $X^2(A+BX^3)$ satisfies Strong Factorial:
+its ordinary factorial moments cannot both vanish at any consecutive
+positive orders.
+\end{corollary}
+\begin{proof}
+For $AB\ne0$,
+\[
+ \mathcal L_1((X^2(A+BX^3))^j)=A^j(2j)!P_j(B/A).
+\]
+Theorem~\ref{thm:ordinary-quintic-coprime} excludes two consecutive
+zeros. If $A=0$ or $B=0$, every positive-order factorial moment
+is nonzero because the phase is a nonzero monomial.
+\end{proof}
+
+\begin{corollary}[All ordinary binomials of degree at most five]
+\label{cor:degree-five-sfc}
+Every nonzero ordinary univariate binomial of degree at most five
+satisfies Strong Factorial at every consecutive positive pair.
+\end{corollary}
+\begin{proof}
+Corollary \texttt{cor:degree-five-ray} of the
+\href{QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex}{three-adic parity note}
+proves equivalence with the support $\{2,5\}$ tests at terminal
+$N\ge11$, $N\equiv11\pmod{27}$.
+Those tests are included in
+Theorem~\ref{thm:ordinary-quintic-coprime}.
+The support reduction and this theorem supply the entire argument;
+no index-prefix experiment is used.
+\end{proof}
+
+\begin{corollary}[The exact ordinary degree-six frontier]
+\label{cor:degree-six-frontier}
+For
+\[
+ P^{a,d}_j(t)=\sum_{k=0}^j\binom jk(aj+1)_{dk}t^k,
+\]
+Strong Factorial for every ordinary univariate binomial of degree
+at most six is equivalent to
+\[
+ \gcd_{\mathbb Q[t]}(P^{a,d}_{N-1},P^{a,d}_N)=1
+\]
+for every terminal $N\ge6$ and each of the three pairs
+\[
+ (a,d)=(2,4),\quad(3,3),\quad(4,2).
+\]
+These are the supports $\{2,6\}$, $\{3,6\}$ and $\{4,6\}$.
+\end{corollary}
+\begin{proof}
+Corollary~\ref{cor:degree-five-sfc} settles all smaller degrees.
+A nonmonomial binomial of degree six has the form
+$X^a(A+BX^{6-a})$, where $0\le a\le5$ and $AB\ne0$.
+For $a=0$, Theorem \texttt{thm:all} of the
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power note}
+applies. For $a=1$, gap five is covered by Corollary
+\texttt{cor:prime-power-}\allowbreak\texttt{lower-one} of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note},
+with prime five and ordinary shape one.
+For $a=5$, Theorem \texttt{thm:main} of the
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent note}
+applies. This leaves exactly the three displayed pairs.
+
+Theorem \texttt{thm:ordinary-fifth} of the
+\href{lower_exponent_initial_and_boundary.tex}{lower-exponent note}
+covers all ordinary binomials through terminal order five.
+For the three remaining supports, the exact identity
+\[
+ \mathcal L_1((X^a(A+BX^d))^j)
+       =A^j(aj)!P^{a,d}_j(B/A)
+\]
+identifies the remaining tests at every $N\ge6$ with the stated
+rational gcds. Degenerate monomials have nonzero factorial moments.
+Conversely, all the displayed tests are part of the degree-six
+binomial assertion. This proves equivalence, without proving
+any of the three unrestricted families.
+\end{proof}
+
+\paragraph{Replay and limits.}
+The checker constructs eight full literal minors, verifies all
+their coefficient reductions, and rejects a corrupted linear
+coefficient. Complete reduced-operator cases verify the finite
+linear algebra used above. The integrality and reduction proofs
+supply the all-index conclusion.
+This proves the stated ordinary quintic and degree-five binomial
+claims; the degree-six corollary is a reduction to three families.
+Unrestricted ordinary binomial SFC, general FC/SFC, and every real
+Gamma shape are separate claims not proved here.
+Internal replay does not establish formal verification, external
+review or priority.
+\end{document}

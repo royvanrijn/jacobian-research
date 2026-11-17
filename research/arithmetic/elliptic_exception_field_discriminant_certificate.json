@@ -1,0 +1,37 @@
+{
+  "original_hasse_certificate": "elliptic_exception_hasse_certificate.json",
+  "reduced_cubic_low_to_high": [
+    "228828238540688308908196032871",
+    "-3321974487907578091", "-1", "1"
+  ],
+  "original_integral_root_numerators_low_to_high": [
+    "59131265742732523839186831769600",
+    "-3111490635502052736000", "2359787545600"
+  ],
+  "original_integral_root_denominator": "288929893",
+  "basis_denominator": "1733579358",
+  "basis_linear_subtrahend": "451757256",
+  "basis_constant_subtrahend": "2214649658454466309",
+  "multiplication_table": [
+    {"pair": [1, 1], "coordinates": ["2214649658454466309", "451757256", "1733579358"]},
+    {"pair": [1, 2], "coordinates": ["-132574676509950914027", "521026169", "-451757255"]},
+    {"pair": [2, 2], "coordinates": ["69761464271595910271", "-76610311059", "-521026169"]}
+  ],
+  "field_discriminant": "-470381786514785447886543801463724621078040",
+  "field_discriminant_sign": -1,
+  "field_discriminant_factorization": [
+    [2, 3], [3, 1], [5, 1], [13, 2], [1321, 2],
+    [9601, 2], [2709173, 1], [230703199, 2]
+  ],
+  "quadratic_fundamental_discriminant": "-325100760",
+  "conductor_factor": "38037875815735627",
+  "conductor_factorization": [[13, 1], [1321, 1], [9601, 1], [230703199, 1]],
+  "eisenstein_shifts": [
+    {"prime": 13, "shift": "9", "constant_over_prime_mod_prime": "8"},
+    {"prime": 1321, "shift": "881", "constant_over_prime_mod_prime": "1315"},
+    {"prime": 9601, "shift": "6401", "constant_over_prime_mod_prime": "4547"},
+    {"prime": 230703199, "shift": "153802133", "constant_over_prime_mod_prime": "105958963"}
+  ],
+  "original_order_index_factorization": [[2, 31], [3, 3], [5, 7], [7, 1], [353, 1], [2591, 1], [9601, 7]],
+  "irreducibility_control_prime": 17
+}

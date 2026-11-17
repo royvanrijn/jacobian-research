@@ -17,8 +17,9 @@ assume that all embeddings of the nodal curve are ambient-equivalent.
 Combined with the actual Keller conductor theorem, (1) excludes the
 entire global conductor-degree-two case whenever either output has
 directional source degree at most three, even after a polynomial target
-automorphism. The case in which both generators resist every such
-reduction remains open.
+automorphism. The unrestricted case is closed separately by
+[the all-degree nodal-action theorem](UNRESTRICTED_NODAL_ACTION_AND_DEGREE_TWO_CONDUCTOR_EXCLUSION.md),
+which imports the audited classical plane-curve classification.
 
 ## 1. The one-dimensional index of the nodal algebra
 
@@ -221,5 +222,6 @@ and rejection of the false claim that every pair of nodal functions
 with zero action generates A_0. The controls support these written
 unbounded arguments; they do not replace them.
 No independent mathematical review, formal verification or external
-review is claimed. The general nodal-action question and full
-trace-integrality/HC4/JC2 goal remain open.
+review is claimed. The separate all-degree theorem closes the general
+nodal-action question and global conductor-degree-two case. Automatic
+trace integrality, HC4 and JC2 remain open.

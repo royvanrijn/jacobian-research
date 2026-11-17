@@ -1,0 +1,51 @@
+\section{Leaving a decomposition unspoiled}\label{sec:infinite}
+We can now put the two estimates together. Small primes use the spectral
+bound, large primes use the lattice bound, and the mixed case adds the
+condition at $3$. The aim is simply to make their combined fraction less
+than one.
+
+Assume \eqref{eq:reduced}, put $X=n^{1/4}$ and $P=2X$, and suppose
+$X\ge100$. For the odd inert primes up to $P$, equations
+\eqref{eq:odd-local}, \eqref{eq:pi} and \eqref{eq:prime-main} give
+\[
+\sum_{\substack{p\in\PP_o\\p\le P}}\frac{b_p^o(n)}{R_o(n)}
+<\frac3{20}+\frac94 X^{-6/5}
+\left(\frac{4X}{15}+\frac{17}{15}\right).
+\]
+For the larger primes, equations \eqref{eq:tail-reps} and
+\eqref{eq:prime-tail} give
+\[
+\sum_{\substack{p\in\PP_o\\p>P}}\frac{b_p^o(n)}{R_o(n)}
+\le\frac{15}{2}X^{4/5}
+\left(\frac1{15X}+\frac2{5X^2}\right).
+\]
+The mixed case also excludes the ramified obstruction
+\eqref{eq:ramified-odd-bound}. Its total spoiled fraction is therefore
+less than
+\begin{equation}\label{eq:final}
+\frac{29}{60}+\frac{11}{10}X^{-1/5}
++\frac{111}{20}X^{-6/5}+\frac{2}{3X^2}.
+\end{equation}
+Since $(5/2)^5<100$, one has $X^{-1/5}<2/5$ and
+$X^{-6/5}<1/250$, while $X^{-2}\le1/10000$. Thus \eqref{eq:final} is
+strictly smaller than
+\[
+\frac{29}{60}+\frac{11}{10}\frac25+
+\frac{111}{20}\frac1{250}+\frac2{30000}
+=\frac{591}{625}<1.
+\]
+At least one odd-component representation survives.
+
+If $n\equiv4\pmod6$, exactly one component norm is $0$ modulo $3$,
+since an Eisenstein norm is $0$ or $1$ modulo $3$. Neither norm contains
+an inert prime, and neither is divisible by $9$. The component divisible
+by $3$ is therefore $3b$ with $b\in\AA$, and the other is in $\AA$.
+This proves the mixed statement for reduced $n\ge10^8$.
+
+If $n\equiv2\pmod6$, both component norms are $1$ modulo $3$.
+The ramified obstruction is absent, so the same strict bound applies
+after omitting its contribution. A surviving representation gives two
+members of $\AA$. This proves the other binary statement in the same
+infinite range. Both values admit primitive coordinate representations
+by Proposition~\ref{prop:primitive-classification}; the surviving
+quaternion coordinates themselves need not be primitive.

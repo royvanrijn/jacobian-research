@@ -1,0 +1,153 @@
+{
+  "claim": "PF2RULED174",
+  "outcome": "PASS",
+  "check_count": 65,
+  "checks": [
+    "monic square plus constant has zero depressed linear",
+    "depressed constant defect exact normalized perturbation",
+    "whole Hensel exact division L3 n1",
+    "whole Hensel exact division L3 n2",
+    "whole Hensel exact division L3 n3",
+    "whole Hensel exact division L3 n4",
+    "whole factor product precision L3",
+    "finite factor cutoff L3",
+    "quartic square/constant cutoff L3",
+    "actual quartic defect exact order L3",
+    "actual quartic linear error stays high L3",
+    "whole parameter enters exactly at two-ell L3",
+    "cubic constant term retained in full equation L3",
+    "whole Hensel exact division L4 n1",
+    "whole Hensel exact division L4 n2",
+    "whole Hensel exact division L4 n3",
+    "whole Hensel exact division L4 n4",
+    "whole Hensel exact division L4 n5",
+    "whole factor product precision L4",
+    "finite factor cutoff L4",
+    "quartic square/constant cutoff L4",
+    "actual quartic defect exact order L4",
+    "actual quartic linear error stays high L4",
+    "whole parameter enters exactly at two-ell L4",
+    "cubic constant term retained in full equation L4",
+    "quadratic-centre entire initial",
+    "quadratic-centre simple roots",
+    "quadratic-centre exact derivative order",
+    "quadratic-centre derivative below cutoff",
+    "strict constant entire quartic initial",
+    "strict constant all simple roots",
+    "strict constant exact derivative order",
+    "strict constant derivative below cutoff",
+    "Bzero entire quartic initial",
+    "Bzero all simple roots",
+    "Bzero exact derivative order",
+    "Bzero derivative below cutoff",
+    "equal-order full initial sign1",
+    "equal-order nonzero simple roots sign1",
+    "equal-order exact derivative order sign1",
+    "equal-order full initial sign-1",
+    "equal-order nonzero simple roots sign-1",
+    "equal-order double-zero control retained",
+    "equal-order exact derivative order sign-1",
+    "first Newton derivative formula",
+    "first Newton derivative margin from 2b<a",
+    "whole affine response index identity",
+    "all nonlinear Taylor terms above parameter",
+    "normalized coframe positivity alpha1 L3",
+    "normalized coframe positivity alpha1 L4",
+    "normalized coframe positivity alpha1 L5",
+    "normalized coframe positivity alpha2 L3",
+    "normalized coframe positivity alpha2 L4",
+    "normalized coframe positivity alpha2 L5",
+    "normalized coframe positivity alpha3 L3",
+    "normalized coframe positivity alpha3 L4",
+    "normalized coframe positivity alpha3 L5",
+    "normalized coframe positivity alpha4 L3",
+    "normalized coframe positivity alpha4 L4",
+    "normalized coframe positivity alpha4 L5",
+    "half-integral outer slope retained",
+    "all pole-divisor product divides nonzero d",
+    "global nonzero d degree at least slope sum",
+    "a missing local order is rejected",
+    "linear remainder d=0 remains a separate class"
+  ],
+  "elapsed_seconds": 0.18285111599834636,
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_sha256": "3a276228b0cb3e17ba151bf8803e3b9a9e1b9c04c9fe964627350b5d0e12ab1b",
+  "checker_sha256": "c44ac6f2e4cbedd3543f08098655c24701beda486b5cbfe411eb068534878fb9",
+  "retained_proof_sources": {
+    "RULING_SIX_REGULAR_CUBIC_APPROXIMATE_ROOT_AND_QUADRATIC_REMAINDER.md": "b1eb32d89bbfd4b2fdc40e522d6f6b71f615a371453754333751cb508423a5cc",
+    "RULING_SIX_OUTER_SQUARES_AND_EVEN_SPECIALIZATIONS.md": "4645fa6ab51dabdfbf46b16c030eec7b35be1e2ae96774dc5fc6dd34fb1a7e8a",
+    "RULING_SIX_QUARTIC_TRACE_AND_CONSTANT_SQUARE_ROOT_CORRECTION.md": "95e024bf09e7f80e6d1efd2bbac17dd782abd74a042281c84a84a85c01236949",
+    "RULING_SIX_SIMPLE_ESCAPE_GRAPHS_AND_QUARTIC_FACE_REDUCTION.md": "14ecc852d3cfc10302230e996534f90f539be53a568bc7fe0a010bd340f1b59b"
+  },
+  "whole_Hensel_models": [
+    {
+      "ell": 3,
+      "d_order": 1,
+      "precision": 4,
+      "defect_order": 1
+    },
+    {
+      "ell": 4,
+      "d_order": 3,
+      "precision": 5,
+      "defect_order": 3
+    }
+  ],
+  "complete_Newton_cases": [
+    {
+      "case": "2b<a",
+      "ell": 5,
+      "d_order": 3,
+      "B_order": 1,
+      "derivative_order": "2"
+    },
+    {
+      "case": "2b>a",
+      "ell": 4,
+      "d_order": 1,
+      "B_order": 1,
+      "derivative_order": "3/4"
+    },
+    {
+      "case": "2b>a",
+      "ell": 3,
+      "d_order": 2,
+      "B_order": null,
+      "derivative_order": "3/2"
+    },
+    {
+      "case": "2b=a",
+      "sign": 1,
+      "ell": 4,
+      "d_order": 2,
+      "B_order": 1,
+      "derivative_order": "3/2"
+    },
+    {
+      "case": "2b=a",
+      "sign": -1,
+      "ell": 4,
+      "d_order": 2,
+      "B_order": 1,
+      "derivative_order": "3/2"
+    }
+  ],
+  "uniform_proved_scope": {
+    "quadratic_remainder": "d*z+e*w+f",
+    "outer_four_sheet_local_bound": "ord_c d>=ord_c h/2",
+    "every_A_pole_local_bound": "ord_c d>=L",
+    "global_pole_divisor_product": "product (u-c_i)^L_i divides d",
+    "nonzero_quadratic_coefficient_degree_lower": "deg d>=sum L_i",
+    "d_zero_linear_remainder_excluded": false
+  },
+  "whole_ruling_six_class_closed": false,
+  "generic_first_derivative_integrality_proved": false,
+  "normal_tail_increasing_power_containment_proved": false,
+  "full_goal_complete": false,
+  "independent_whole_proof_review": false,
+  "formal_verification": false,
+  "external_review": false
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "python_version": "3.12.3",
+  "mode": "original pinned workbook re-extraction plus snapshot checks",
+  "workbook_reextracted": true,
+  "names_checked": [
+    "13a_304",
+    "13a_362",
+    "13a_623",
+    "13a_629",
+    "13a_3232",
+    "13a_3259",
+    "13a_3374",
+    "13a_3375",
+    "13n_834",
+    "13n_838",
+    "13n_839",
+    "13n_991",
+    "13n_992",
+    "13n_993",
+    "13n_1367",
+    "13n_1370",
+    "13n_1371",
+    "13n_1374",
+    "13n_1375",
+    "13n_1376",
+    "13n_3814",
+    "13n_3840",
+    "13n_3911",
+    "13n_3914"
+  ],
+  "positive_count": 24,
+  "still_open_source_count": 293,
+  "zero_recorded_maximal_finite_coxeter_hits": 24,
+  "negative_controls": {
+    "changed_recorded_hit": true,
+    "changed_name": true
+  },
+  "scope": "All24 A6 positive-certificate names occur in the retained293-name Bhattacharjee open list, which was reread from the current source on17November2026. The pinned BKM workbook records Wirtinger number4 and zero maximal-rank finite S/D/H Coxeter hits for these24 exact rows. This compares those specific source records only; it does not prove worldwide priority, absence of infinite Coxeter quotients, or nonmembership in every known geometric MRC family.",
+  "input_sha256": {
+    "verify_a6_priority.py": "b74abb125fe128e5c8809acaf454937c9c26d8c0f7b78d6f6dea555130338aa5",
+    "a6_priority_audit.json": "b3bc5be72855bc47203bd814b7863dbe9ca19cb7ae1bec58c0798bbfcd039892",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
+    "sources/bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc"
+  },
+  "workbook_sha256": "514b12e118fa681520da5702a5ed4307ce7cf93b6b9f7b5e53f265ca7b01647b",
+  "workbook_git_blob": "3882c6da34c9057f8f13da31afb9d8973b7158cb"
+}

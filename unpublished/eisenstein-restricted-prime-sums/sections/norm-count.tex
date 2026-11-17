@@ -1,0 +1,64 @@
+\section{Counting with Eisenstein norms}\label{sec:norm}
+We begin by finding plenty of candidate pairs. A quaternion packages two
+Eisenstein norms into one multiplicative norm, which lets us count the
+representations exactly. This count is the supply of pairs from which we
+will remove the bad ones.
+
+For positive integers, write $\sigma(n)=\sum_{d\mid n}d$ and
+$\tau(n)=\sum_{d\mid n}1$. A term $\sigma(n/4)$ is interpreted as zero
+when $4\nmid n$. Let $\omega^2+\omega+1=0$, $R=\Z[\omega]$, and
+\[
+Q(x,y)=x^2-xy+y^2=N_{\Q(\omega)/\Q}(x+y\omega).
+\]
+For instance, $Q(3,1)=7$ and $Q(4,1)=13$, so $20$ is represented by
+$Q(x,y)+Q(u,v)$ with both norms already in $\AA$.
+
+Consider the definite quaternion algebra and order
+\[
+B=\Q(\omega)\oplus\Q(\omega)j,\qquad
+j^2=-1,\quad jz=\bar z j,\qquad \OO=R\oplus Rj.
+\]
+Its reduced norm is
+\[
+\nrd(z+w j)=N(z)+N(w).
+\]
+In the basis $1,\omega,j,\omega j$, the trace pairing has determinant $-9$.
+Consequently $\OO$ has reduced discriminant $3$. Definiteness and the parity
+of the ramification set imply that the algebra discriminant is $3$, so
+$\OO$ is maximal.
+
+Every complex number is within squared distance $1/3$ of an Eisenstein
+integer: the equilateral triangles in the lattice have circumradius
+$1/\sqrt3$. Rounding the two complex coordinates independently gives
+\[
+\forall x\in B\otimes\mathbb R\quad\exists q\in\OO:
+\quad\nrd(x-q)\le2/3<1.
+\]
+The one-coordinate rounding bound also makes $R$ norm Euclidean, hence
+a unique factorization domain. The two-coordinate bound makes $\OO$
+norm Euclidean on either side. In a nonzero integral right
+ideal, choose $\alpha$ of least positive norm and divide each $\beta$ by
+$\alpha$ on the left. A nonzero remainder would have smaller norm, so the
+ideal is $\alpha\OO$. Fractional ideals reduce to this case by scaling;
+the right ideal class number is one.
+
+The units are precisely $R^\times\cup R^\times j$, and there are twelve.
+For $3\nmid n$ let
+\[
+\mathcal Q_n=\{\alpha\in\OO:\nrd(\alpha)=n\},\qquad r(n)=|\mathcal Q_n|.
+\]
+At a prime $\ell\mid n$ the order is locally $M_2(\Z_\ell)$. There are
+$1+\ell+\cdots+\ell^e$ integral right ideals of reduced norm $\ell^e$,
+by the index-$\ell^e$ sublattice count in $\Z_\ell^2$. Multiplication of
+the local counts and principality give $\sigma(n)$ right ideals of norm
+$n$, each with twelve generators of that norm. Hence
+\begin{equation}\label{eq:count}
+r(n)=12\sigma(n)\qquad(3\nmid n).
+\end{equation}
+This is the usual all-integral-ideal normalization of a Brandt operator;
+see \cite[Proposition 41.3.1]{Voight}.
+
+For $n\equiv2\pmod3$, both component norms in every representation
+$n=Q(x,y)+Q(u,v)$ are $1\pmod3$, because
+$Q(x,y)\equiv(x+y)^2\pmod3$ is either $0$ or $1$. In particular both
+summands are positive and neither is divisible by $3$.

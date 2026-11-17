@@ -1,0 +1,529 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Fp}{\mathbb F_p}
+\title{Residual lifting and parity for binomial factorial moments}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+For integers $a\ge0,d\ge1,n\ge1$ put
+\[
+ P_{n,a,d}(t)=\sum_{k=0}^n\binom nk(an+1)_{dk}t^k .
+\]
+These are the finite ordinary factorial-moment polynomials.
+We identify their no-carry Newton residual with a smaller-index member
+of the same family and obtain restrictions on rational factor degrees.
+Real-root parity strengthens those restrictions. The results give
+unbounded families of consecutive coprimality, including several quintic
+families, but do not establish irreducibility or coprimality at every
+order. No novelty or external-review claim is made.
+
+\section{Real roots and parity}
+
+\begin{lemma}\label{lem:real-root-parity}
+For integers $a\ge0,d\ge1,n\ge1$ and every real $\beta>0$, put
+\[
+ P_{n,a,d,\beta}(t)=
+ \sum_{k=0}^n\binom nk(an+\beta)_{dk}t^k.
+\]
+If $n$ is even, this polynomial is strictly positive on $\mathbb R$
+and has no real roots. If $n$ is odd, its derivative is strictly
+positive on $\mathbb R$, and it has exactly one real root, which is
+simple. Every real-coefficient common divisor of
+$P_{n,a,d,\beta}$ and $P_{n+1,a,d,\beta}$ therefore has even degree.
+In particular, every rational factor of an even-index ordinary
+polynomial $P_{n,a,d}$ has even degree.
+\end{lemma}
+\begin{proof}
+For real $t$ the Gamma integral gives
+\[
+ P_{n,a,d,\beta}(t)=\frac1{\Gamma(an+\beta)}
+ \int_0^\infty x^{an+\beta-1}(1+tx^d)^n e^{-x}\,dx .
+ \tag{P1}
+\]
+This follows by expanding the finite power and integrating each monomial.
+If $n$ is even, the integrand is nonnegative and positive on a nonempty
+interval, proving strict positivity. If $n$ is odd, differentiating the
+finite polynomial identity gives
+\[
+ P_{n,a,d,\beta}'(t)=\frac n{\Gamma(an+\beta)}
+ \int_0^\infty x^{an+\beta+d-1}(1+tx^d)^{n-1}e^{-x}\,dx>0.
+ \tag{P2}
+\]
+Its positive leading coefficient and odd degree then give exactly one
+real root, and the derivative inequality makes it simple.
+A common divisor cannot have any real root, because one member of a
+consecutive pair has even index. A real polynomial of odd degree has
+a real root, so such a divisor has even degree. The last assertion
+uses the same argument for a factor of the positive even-index member.
+\end{proof}
+
+\section{Residual-index lifting under the no-carry hypothesis}
+
+\begin{theorem}\label{thm:residual-index}
+Let $p$ be prime, $r\ge1$, $b\ge1$, and suppose
+\[
+ (ab\bmod p)+db<p.
+ \tag{1}
+\]
+Put
+\[
+ P=p^r,\quad n=bP,\quad
+ s=d(1+p+\cdots+p^{r-1}),\quad \epsilon=(-1)^s\in\Fp^\times .
+\]
+The Newton residual of $P_{n,a,d}$ in the variable $Y=p^s t^P$ is exactly
+\[
+ {\cal R}(Y)=P_{b,a,d}(\epsilon Y)\pmod p.
+ \tag{2}
+\]
+More precisely, every root has valuation $-s/P$, and every nonzero
+factor $g(t)\in\Q_p[t]$ normalized by $g(0)=1$ has degree $P\ell$.
+Writing $g=\sum a_kt^k$, its residual is
+\[
+ {\cal R}(g)(Y)=
+ \sum_{j=0}^{\ell}\overline{a_{jP}/p^{sj}}Y^j,
+ \tag{3}
+\]
+has exact degree $\ell$, and divides the residual in (2).
+Consequently $\deg(g)/P$ is a sum of a submultiset of the irreducible
+factor degrees of $P_{b,a,d}\bmod p$, with their multiplicities.
+If that residual is irreducible of degree $b$, then
+$P_{bp^r,a,d}$ is irreducible over $\Q_p$ and over $\Q$.
+\end{theorem}
+
+\begin{proof}
+Condition (1) implies $db<p$, hence $b<p,d<p$.
+The interval $(ab,ab+db]$ contains no multiple of $p$ even when $ab\ge p$.
+For $0\le k\le n$, writing $c_k=\binom nk(an+1)_{dk}$, Legendre's formula
+therefore gives
+\[
+ v_p((an+1)_{dk})=\sum_{i=1}^r\left\lfloor\frac{dk}{p^i}\right\rfloor.
+ \tag{4}
+\]
+There are no contributions from higher powers, since the corresponding
+full interval $(an,(a+d)n]$ contains no multiple of $p^{r+1}$.
+For $0<k<n$, write $u=v_p(k)\le r$. One has
+$v_p(n-j)=v_p(j)$ for $1\le j<n$:
+the case $v_p(j)<r$ is immediate, and otherwise $j=hP$ with
+$1\le h<b<p$. Thus $\binom{n-1}{k-1}$ is a unit, and
+\[
+ v_p\binom nk=r-u.
+\]
+If $P\nmid k$, the exact floors through $i=u$, and the strict estimates
+$\lfloor x\rfloor>x-1$ thereafter, give
+\[
+ v_p(c_k)>k d\sum_{i=1}^rp^{-i}=ks/P.
+\]
+At $k=jP$, every floor is exact and $v_p(c_{jP})=sj$.
+Thus all points lie on or above the endpoint chord, with equality only
+at multiples of $P$. Also $s\not\equiv0\pmod p$.
+At a hypothetical root of valuation greater than $-s/P$, the constant
+term would be uniquely least; at a smaller valuation the leading term
+would be uniquely least. This proves the root valuation assertion.
+
+Let $U_p(m!)=m!/p^{v_p(m!)}$. Splitting the units in factorials into
+blocks of length $p$, and pairing inverse elements of $\Fp^\times$, gives
+\[
+ U_p(N!)\equiv
+ (-1)^{\lfloor N/p\rfloor}(N\bmod p)!\,
+ U_p(\lfloor N/p\rfloor!)\pmod p.
+\]
+Iteration through the first $r$ zero digits gives, for every $m\ge0$,
+\[
+ U_p((mP)!)\equiv
+ (-1)^{m(1+p+\cdots+p^{r-1})}U_p(m!)\pmod p.
+ \tag{5}
+\]
+The right side contains the unit part of $m!$, not $m!$ itself.
+In the ratio with $m=ab+dj$ and $m=ab$, condition (1) ensures
+the intervening product has no factor divisible by $p$. Hence (5) gives
+\[
+ \frac{(an+1)_{djP}}{p^{sj}}
+ \equiv\epsilon^j(ab+1)_{dj}\pmod p.
+\]
+The Frobenius identity
+$(1+z)^{bP}\equiv(1+z^P)^b\pmod p$ gives
+$\binom{bP}{jP}\equiv\binom bj$.
+This proves (2), including the sign and the case $ab\ge p$.
+
+For the factor assertion, write
+$g(t)=\prod_{\nu=1}^h(1-t/\alpha_\nu)$ over a splitting field.
+Every reciprocal root has valuation $s/P$, so
+\[
+ v_p(a_k)\ge ks/P,\qquad v_p(a_h)=hs/P.
+ \tag{6}
+\]
+The last valuation is an integer because $a_h\in\Q_p^\times$.
+Since $\gcd(s,P)=1$, $h=P\ell$, and (3) is an integral residual
+of exact degree $\ell$ and constant term one.
+If $g_1,g_2$ satisfy (6), then
+\[
+ {\cal R}(g_1g_2)={\cal R}(g_1){\cal R}(g_2).
+ \tag{7}
+\]
+Indeed, at a coefficient of index $jP$, a cross term with first index
+$k$ not divisible by $P$ has valuation at least
+\[
+ \left\lceil ks/P\right\rceil+
+ \left\lceil(jP-k)s/P\right\rceil=sj+1.
+\]
+Only multiples of $P$ survive, and those give the usual product
+convolution. Apply (7) to a factor and its complementary factor,
+each normalized to have constant one. This proves the divisor and
+submultiset assertions. An irreducible residual has no proper
+nonconstant residual divisor, so it permits no proper factor.
+\end{proof}
+
+\begin{corollary}\label{cor:parity-residual}
+Assume the hypotheses of Theorem~\ref{thm:residual-index}, and in addition
+that $p$ is odd and $b$ is even. If the residual has no proper nonzero
+even submultiset-sum of irreducible factor degrees, then
+$P_{bp^r,a,d}$ is irreducible over $\Q$.
+
+Equivalently, this condition on the residual factorization holds when
+the residual is irreducible of degree $b$, or when it has exactly two
+irreducible factors of odd degree, counted with multiplicity.
+In particular it always holds for $b=2$.
+\end{corollary}
+\begin{proof}
+Here $n=bp^r$ is even. Lemma~\ref{lem:real-root-parity} shows that
+every nonconstant rational factor has even degree.
+Since $p^r$ is odd, its quotient degree $\ell$ in Theorem~\ref{thm:residual-index}
+must be even. The stated submultiset condition excludes every
+proper factor.
+
+For completeness, if a residual factorization of even total degree
+has a proper irreducible factor of even degree, it already gives a
+forbidden even submultiset. Otherwise all proper irreducible factors
+have odd degree, so their number is even. If there are at least four,
+two of them give a proper even sum. Exactly two odd factors do not
+give a proper nonzero even sum. This proves the equivalence, with
+multiplicities included.
+\end{proof}
+
+\begin{corollary}\label{cor:residual-adjacent-pairs}
+Whenever Theorem~\ref{thm:residual-index} or
+Corollary~\ref{cor:parity-residual} proves that $P_{n,a,d}$ is
+irreducible over $\mathbb Q$, it is coprime to both
+$P_{n-1,a,d}$ and $P_{n+1,a,d}$, with the first assertion
+interpreted as coprimality with $P_0=1$ when $n=1$.
+Thus the ordinary moments of every nonzero binomial
+$X^a(A+BX^d)$ cannot both vanish at either adjacent pair of orders.
+\end{corollary}
+\begin{proof}
+The preceding polynomial has smaller degree.
+For the following polynomial, the
+\href{BINOMIAL_IRREDUCIBILITY_REDUCTION.tex}{consecutive
+nondivisibility theorem} excludes $P_{n,a,d}\mid P_{n+1,a,d}$.
+An irreducible polynomial with neither divisibility possibility
+is coprime to both neighbors over $\mathbb Q$; its Bezout identities
+remain valid over $\mathbb C$.
+The normalization
+\[
+ \mathcal L_1\bigl((X^a(A+BX^d))^m\bigr)
+ = A^m(am)!P_{m,a,d}(B/A)
+\]
+gives the moment assertion when $AB\ne0$.
+The monomial cases have nonzero positive-order moments.
+\end{proof}
+
+\section{Explicit ordinary quintic families}
+
+\begin{corollary}\label{cor:quintic-residual-families}
+For $a=2,d=3$, each row $(b,p)$ of the following table makes
+$P_{bp^r,2,3}$ irreducible over $\mathbb Q$ for every $r\ge1$.
+Both adjoining ordinary moment pairs are consequently coprime.
+\[
+ \begin{array}{c|c|c}
+ b&p&\text{residual factor degrees}\\ \hline
+ 3&31&3\\
+ 3&37&3\\
+ 4&23&4\\
+ 4&29&1+3\\
+ 6&31&1+5
+ \end{array}.
+\]
+\end{corollary}
+\begin{proof}
+The no-carry condition is satisfied because $p>5b$.
+The literal monic residual factorizations are
+\[
+\begin{array}{c|c|l}
+ b&p&\text{monic }P_{b,2,3}\pmod p\\ \hline
+3&31&t^3+17t^2+13t+7\\
+3&37&t^3+32t^2+22t+3\\
+4&23&t^4+3t^3+12t^2+15t+21\\
+4&29&(t+15)(t^3+13t^2+13t+3)\\
+6&31&(t+6)(t^5+24t^4+22t^3+16t^2+27t+18)
+\end{array}
+\]
+The accompanying exact verifier checks each product and verifies
+irreducibility of each displayed factor $f$ of degree $h$ by
+\[
+ X^{p^h}\equiv X\pmod f,\qquad
+ \gcd(f,X^{p^{h/q}}-X)=1
+ \quad\text{for every prime }q\mid h.
+ \tag{9}
+\]
+These conditions are a complete finite-field irreducibility criterion:
+the first says that $f$ is squarefree and each irreducible factor
+has degree dividing $h$; every proper divisor of $h$ divides $h/q$
+for some prime $q\mid h$, so the gcd conditions exclude all proper
+irreducible factors.
+Theorem~\ref{thm:residual-index} proves the irreducible-residual rows,
+and Corollary~\ref{cor:parity-residual} proves the two odd-factor rows.
+Corollary~\ref{cor:residual-adjacent-pairs} gives the moment assertion.
+\end{proof}
+
+For example $n=4\cdot23^r$ yields still-unbounded subfamilies of the
+previously remaining quintic progression: terminal $N=n$ when
+$r\equiv1\pmod6$, and terminal $N=n+1$ when $r\equiv2\pmod6$.
+These do not exhaust that progression.
+
+\section{The quintic family: all-prime common-factor degrees}
+Throughout this section specialize to $a=2,d=3,\beta=1$ and write
+$P_n=P_{n,2,3}$. The no-carry hypothesis is imposed only where
+explicitly stated; the all-prime degree criterion below does not need it.
+
+Write
+\[
+ P_n(t)=\sum_{k=0}^n c_{n,k}t^k,\qquad
+ c_{n,k}=\binom nk\frac{(2n+3k)!}{(2n)!}.
+\]
+All coefficients are positive integers and $c_{n,0}=1$.
+A Newton slope below means a slope of the lower convex hull
+of $(k,v_p(c_{n,k}))$, with adjacent collinear edges combined.
+Its width is the horizontal length; a root associated with slope
+$\lambda$ has valuation $-\lambda$.
+
+\begin{lemma}[Elementary weighted product and root counts]\label{lem:quintic-weighted-newton-product}
+For nonzero polynomials $f,g$ over an algebraic extension of
+$\mathbb Q_p$, with $v_p(p)=1$, and rational $\nu$,
+\[
+ m_\nu(f):=\min_k\{v(a_k)+k\nu\},\qquad
+ m_\nu(fg)=m_\nu(f)+m_\nu(g).
+\]
+Consequently Newton polygons add as slope multisets: the width at a
+given slope is the number of roots, counted with multiplicity,
+of the corresponding negative valuation.
+For a polynomial with rational $p$-adic coefficients, the width
+of every edge of reduced slope $a/b$ is divisible by $b$.
+\end{lemma}
+\begin{proof}
+In a finite valued extension choose a common uniformizing power
+which realizes the rational weight $\nu$ and the minimum.
+Scale the variable and divide by a coefficient of minimum
+valuation. The resulting polynomials have integral coefficients
+and nonzero reductions; their product has nonzero reduction
+because the residue polynomial ring is an integral domain.
+This proves the weighted identity. Equivalently, one may use
+the associated graded ring of the valuation.
+
+Factor a polynomial into linear factors in a finite splitting
+extension. For a linear factor $t-\alpha$ its weighted minimum is
+$\min\{\nu,v(\alpha)\}$. Summing these piecewise-linear functions
+shows that the slope break at $\nu=v(\alpha)$ has multiplicity
+equal to the number of such roots. The same break computed
+from the coefficient minimum is the corresponding horizontal
+edge width. Finally, for rational $p$-adic coefficients every
+Newton vertex has integer coordinates. An edge of width $w$
+and reduced slope $a/b$ has integer height $aw/b$, so $b\mid w$.
+\end{proof}
+
+\begin{lemma}[Parity and full-degree exclusion]\label{lem:quintic-even-common-degree}
+Every common rational factor of $P_n,P_{n+1}$ has even degree.
+Also $P_n$ does not divide $P_{n+1}$; hence a nonconstant common
+factor has degree $h$ with $2\le h<n$.
+\end{lemma}
+\begin{proof}
+The even-degree assertion follows from
+Lemma~\ref{lem:real-root-parity} at $a=2,d=3,\beta=1$.
+
+Compare $c_n=[t]P_{n+1}-[t]P_n$ and
+$L_n=[t^{n+1}]P_{n+1}/[t^n]P_n$. Direct cancellation gives
+\[
+ c_n=4(n+1)(2n+3)(4n+5),\qquad
+ L_n=\frac{5\prod_{j=1}^4(5n+j)}{2(2n+1)}
+\]
+and the exact positive difference
+\[
+ L_n-c_n=
+ \frac{3n(3n+2)(9n+7)(37n+17)}{2(2n+1)}>0.
+\]
+If $P_n$ divided $P_{n+1}$, their degrees and constant terms would
+make the quotient $1+ct$. Its coefficient $c$ would equal
+both $c_n$ and $L_n$, a contradiction.
+\end{proof}
+
+For each prime $p$, let $w_{n,p}(\lambda)$ be the width at slope
+$\lambda$, or zero if that slope is absent.
+Let $\Lambda_p(n)$ be the slopes occurring in both polygons.
+Write each $\lambda\in\Lambda_p(n)$ in lowest terms as
+$a_\lambda/b_\lambda$, $b_\lambda>0$, including $b_\lambda=1$
+when $\lambda=0$. Define the finite set
+\[
+ {\mathcal D}_p(n)=
+ \left\{\sum_{\lambda\in\Lambda_p(n)}b_\lambda j_\lambda:
+ 0\le j_\lambda\le
+ \frac{\min\{w_{n,p}(\lambda),w_{n+1,p}(\lambda)\}}{b_\lambda},
+ \quad j_\lambda\in\mathbb Z\right\}.                         \tag{D1}
+\]
+The upper bounds are integers by the weighted-product lemma.
+
+\begin{theorem}[All-prime necessary common-factor degree criterion]\label{thm:quintic-all-prime-degree}
+For every integer $n\ge1$, the degree of every nonconstant common
+rational factor of $P_n,P_{n+1}$ belongs to
+\[
+ {\mathcal E}(n)=
+ \{h:2\le h<n,\ h\text{ even}\}
+ \cap\!\!\bigcap_{\substack{p\ {\rm prime}\\p\le5(n+1)}}
+             {\mathcal D}_p(n).                              \tag{D2}
+\]
+In particular, $\mathcal E(n)=\varnothing$ implies
+$\gcd(P_n,P_{n+1})=1$ over $\mathbb Q$ and over $\mathbb C$.
+All inputs to (D2) are exact finite integer quantities:
+\[
+ v_p(c_{n,k})=
+ v_p(n!)-v_p(k!)-v_p((n-k)!)
+       +v_p((2n+3k)!)-v_p((2n)!).                            \tag{D3}
+\]
+This criterion has no no-carry hypothesis.
+\end{theorem}
+\begin{proof}
+Let $G$ be a common rational factor of degree $h$.
+At a prime $p$, all slopes of $G$ occur in both polygons,
+by the weighted-product/root-count lemma.
+At a common slope $a_\lambda/b_\lambda$, the number of roots
+of $G$ is divisible by $b_\lambda$, and is at most each of the
+two available widths. Summing these numbers gives exactly
+the necessary condition $h\in\mathcal D_p(n)$.
+The parity and full-degree lemma gives the first set in (D2).
+
+For $p>5(n+1)$, every factorial and binomial coefficient defining
+either polynomial is a $p$-adic unit. Both Newton polygons
+are horizontal. Then $\mathcal D_p(n)=\{0,\ldots,n\}$,
+so larger primes add no constraint.
+Formula (D3) is immediate and its factorial valuations are
+finite sums $\sum_{r\ge1}\lfloor m/p^r\rfloor$.
+
+A nonconstant gcd over $\mathbb Q$ would have a degree in (D2).
+If that set is empty, a rational Bezout identity exists and
+remains a Bezout identity over $\mathbb C$.
+\end{proof}
+
+\paragraph{Missing all-index step.}
+No proof is given that $\mathcal E(n)$ is empty for every $n$,
+or for every $n\equiv1\pmod9$.
+The sets in (D1) keep only necessary local slope/width data;
+a surviving degree does not construct a rational common factor.
+A finite or sparse collection of empty sets is not an
+all-index result. The unresolved task is an unbounded
+prime/digit argument or a stronger arithmetic invariant.
+
+\begin{proposition}[An infinite family without any eligible no-carry part]\label{prop:quintic-no-carry-coverage-failure}
+For every integer $s\ge0$, put
+\[
+ A=2^{3s+1},\qquad n=4A^4=2^{12s+6},\qquad N=n+1.
+\]
+Then $N\equiv2\pmod9$, but neither $n$ nor $N$ admits a
+representation $m=bp^r$, $p$ prime and $r,b\ge1$, satisfying
+the no-carry condition for lower exponent two and gap three:
+\[
+                    (2b\bmod p)+3b<p.                       \tag{D4}
+\]
+This also prevents applying any refinement which still requires
+that same no-carry premise to either member of this family.
+\end{proposition}
+\begin{proof}
+Condition (D4) implies $3b<p$, hence for $P=p^r$,
+\[
+                    P^2\ge pP>3bP=3m.                     \tag{D5}
+\]
+The order $n$ is a power of two and $p=2$ cannot satisfy (D4).
+
+Sophie Germain's identity gives
+\[
+ N=(2A^2-2A+1)(2A^2+2A+1).
+\]
+The two factors are coprime: a common divisor is odd and
+divides their difference $4A$, while each is congruent to one
+modulo $A$. Thus every prime-power divisor $P$ of $N$ lies
+entirely in one factor and is at most $2A^2+2A+1$.
+For $A\ge2$,
+\[
+ (2A^2+2A+1)^2
+ \le(13A^2/4)^2
+ <12A^4<3N.
+\]
+This contradicts (D5). Finally $12s+6$ is divisible by six,
+so $n\equiv1\pmod9$ and $N\equiv2\pmod9$.
+
+This is failure of a sufficient criterion, not a counterexample
+to consecutive coprimality. Other primes and Newton slopes
+may still exclude the pair.
+\end{proof}
+
+\begin{corollary}[A complete two-prime certificate at $n=64$]\label{cor:quintic-n64-two-prime}
+The pair $P_{64},P_{65}$ is coprime, although neither order has
+an eligible no-carry prime-power part.
+\end{corollary}
+\begin{proof}
+The preceding proposition with $s=0$ proves the no-carry
+coverage failure. The complete lower-Newton slope/width lists are
+\[
+\begin{array}{c|c|l}
+ p&\text{order}&(\text{slope},\text{width})\\\hline
+ 3&64&(1,1),(13/9,9),(40/27,27),(41/27,27)\\
+ 3&65&(1,1),(13/9,9),(40/27,27),(41/27,27),(4,1)\\
+ 5&64&(1/2,2),(3/5,5),(18/25,25),(19/25,25),(4/5,5),(1,2)\\
+ 5&65&(3/5,5),(18/25,25),(3/4,8),(19/25,25),(1,2).
+\end{array}
+\]
+Each table is certified by the literal edge endpoints and all
+coefficient supporting-line inequalities using (D3);
+the exact checker also computes each coefficient
+directly as an integer factorial quotient before valuation.
+No degree greater than sixty-five or index prefix is used.
+
+At $p=3$,
+\[
+ \mathcal D_3(64)=\{a+9b+27c:
+        a,b\in\{0,1\},\ c\in\{0,1,2\}\}.
+\]
+Its positive even degrees below sixty-four are
+$\{10,28,36,54\}$.
+At $p=5$,
+\[
+ \mathcal D_5(64)=\{a+5b+25c:
+       a\in\{0,1,2\},\ b\in\{0,1\},\ c\in\{0,1,2\}\}.
+\]
+None of the four remaining degrees belongs to this latter set.
+The all-prime criterion proves the assertion, already using
+only these two primes.
+\end{proof}
+
+\paragraph{Exact replay and scope.}
+The exact checker controls factorial units, edge normalization,
+factor-residual products, the complete small residual examples,
+positive-Gamma root counts in bounded rational cases, and rejection
+of violated carry or coefficient-valuation hypotheses.
+For the single pair of orders $64,65$, it checks the four literal
+Newton edge tables, every supporting-line inequality, and every
+coefficient valuation independently from integer factorials and
+Legendre's formula. It also checks the displayed exact algebra and
+corruption rejection. Its literal Newton certificate is retained
+separately from the replay receipt.
+The proofs supply the unbounded residual, parity, all-prime
+criterion and no-carry coverage-failure statements. No finite
+index-prefix search establishes those quantifiers.
+The remaining quintic ray stays open.
+Internal replay is distinct from independent replay, external
+review, and formal verification. No priority claim is made.
+\end{document}

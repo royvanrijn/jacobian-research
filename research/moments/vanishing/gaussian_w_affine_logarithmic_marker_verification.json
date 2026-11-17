@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "generic_identities": [
+    "eta pulls back to dY/J",
+    "rho*eta pulls back to rho(zeta)*dY/J",
+    "phase pulls back to Gaussian phase plus original fibre exponent",
+    "all-s leading coefficient rho_s*h0^s"
+  ],
+  "radical_and_logarithmic_cases": [
+    {
+      "case": "mixed_nonzero_root_multiplicities_4_2",
+      "c": "z**6 - 6*z**4 + 4*z**3 + 9*z**2 - 12*z + 4",
+      "rho": "(z - 1)**3*(z + 2)",
+      "c_red": "(z - 1)*(z + 2)",
+      "infinity_order_of_dz_over_c_red": 0
+    },
+    {
+      "case": "origin_order4_and_nonzero_order2",
+      "c": "z**6 - 2*z**5 + z**4",
+      "rho": "z**3*(z - 1)",
+      "c_red": "z*(z - 1)",
+      "infinity_order_of_dz_over_c_red": 0
+    },
+    {
+      "case": "squarefree",
+      "c": "z**2 + z - 2",
+      "rho": "1",
+      "c_red": "(z - 1)*(z + 2)",
+      "infinity_order_of_dz_over_c_red": 0
+    },
+    {
+      "case": "one_multiple_root",
+      "c": "z**4 - 4*z**3 + 6*z**2 - 4*z + 1",
+      "rho": "(z - 1)**3",
+      "c_red": "z - 1",
+      "infinity_order_of_dz_over_c_red": -1
+    }
+  ],
+  "mixed_4_2_initial_marker_period": "-2",
+  "origin_order4_h0_nonzero_original_coefficients_0_to_3": [
+    "0",
+    "0",
+    "0",
+    "-H0**3"
+  ],
+  "shared_origin_compatible_4_2_example": "positive angular support checked; original unit/marker Wick controls through order4",
+  "normalizations_including_zero_initial_mass": [
+    {
+      "p": "2",
+      "infinity_order_r_over_p": 1
+    },
+    {
+      "p": "t + 1",
+      "infinity_order_r_over_p": 2
+    },
+    {
+      "p": "t**3",
+      "infinity_order_r_over_p": 4
+    },
+    {
+      "p": "t**3*(2*t + 1)",
+      "infinity_order_r_over_p": 5
+    }
+  ],
+  "scope": "Finite exact algebraic and original Wick controls. The written fixed-log comparison proof establishes unrestricted root orders.",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "9d317392fd92f0df994402ab4e150a13abb6d0019236e2fc462e198be0d486ab",
+  "checker_sha256": "d4c9fe26beb2d255cefdb78792995611bb53aa1f3f639da7a89a914367368efb",
+  "fixed_log_import_sha256": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

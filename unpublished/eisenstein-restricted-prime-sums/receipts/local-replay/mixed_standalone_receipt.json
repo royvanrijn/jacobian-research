@@ -1,0 +1,115 @@
+{
+  "largest_target": 99999994,
+  "number_of_targets": 16666666,
+  "allowed_summands_count": 6992352,
+  "unrestricted_exceptions": [],
+  "largest_least_b": 199,
+  "least_b_histogram": [
+    {
+      "b": 1,
+      "new_targets": 6992352
+    },
+    {
+      "b": 7,
+      "new_targets": 4296527
+    },
+    {
+      "b": 13,
+      "new_targets": 2502584
+    },
+    {
+      "b": 19,
+      "new_targets": 1391730
+    },
+    {
+      "b": 31,
+      "new_targets": 641175
+    },
+    {
+      "b": 37,
+      "new_targets": 390079
+    },
+    {
+      "b": 43,
+      "new_targets": 220890
+    },
+    {
+      "b": 49,
+      "new_targets": 117359
+    },
+    {
+      "b": 61,
+      "new_targets": 50595
+    },
+    {
+      "b": 67,
+      "new_targets": 29338
+    },
+    {
+      "b": 73,
+      "new_targets": 16382
+    },
+    {
+      "b": 79,
+      "new_targets": 8837
+    },
+    {
+      "b": 91,
+      "new_targets": 4007
+    },
+    {
+      "b": 97,
+      "new_targets": 2387
+    },
+    {
+      "b": 103,
+      "new_targets": 1257
+    },
+    {
+      "b": 109,
+      "new_targets": 584
+    },
+    {
+      "b": 127,
+      "new_targets": 282
+    },
+    {
+      "b": 133,
+      "new_targets": 152
+    },
+    {
+      "b": 139,
+      "new_targets": 74
+    },
+    {
+      "b": 151,
+      "new_targets": 34
+    },
+    {
+      "b": 157,
+      "new_targets": 15
+    },
+    {
+      "b": 163,
+      "new_targets": 12
+    },
+    {
+      "b": 169,
+      "new_targets": 7
+    },
+    {
+      "b": 181,
+      "new_targets": 4
+    },
+    {
+      "b": 193,
+      "new_targets": 1
+    },
+    {
+      "b": 199,
+      "new_targets": 2
+    }
+  ],
+  "sha256_membership_uint8": "aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0",
+  "sha256_mixed_least_b_index_int32_le": "91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d"
+}

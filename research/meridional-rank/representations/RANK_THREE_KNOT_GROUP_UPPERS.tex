@@ -6,14 +6,14 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
-\title{Three-generator upper bounds for eight knot groups}
+\title{Three-generator upper bounds for thirty-two knot groups}
 \author{Exact presentation reductions with explicit combinatorial imports}
 \date{17 November 2026}
 \begin{document}
 \maketitle
 
-The eight alternating knots below have meridional rank four by
-their retained seven-sheeted branched covers. Their ordinary groups,
+The thirty-two knots below have meridional rank four by explicit
+finite affine certificates. Their ordinary groups,
 however, have generating sets of size three. Every algebraic
 reduction in the certificates is independently replayed as a valid
 Nielsen or Tietze move. The connection between the initial cell
@@ -26,15 +26,27 @@ Put
 \mathcal S_8=\{13a_{373},13a_{375},13a_{391},13a_{392},
        13a_{3264},13a_{3266},13a_{3275},13a_{3276}\},
 \]
-and separate the upper bound from the meridional comparison.
+and let $\mathcal T_{24}$ consist of
+\[
+\begin{split}
+\{&13a_{304},13a_{362},13a_{623},13a_{629},
+13a_{3232},13a_{3259},13a_{3374},13a_{3375},\\
+&13n_{834},13n_{838},13n_{839},13n_{991},13n_{992},13n_{993},
+13n_{1367},13n_{1370},\\
+&13n_{1371},13n_{1374},13n_{1375},13n_{1376},
+13n_{3814},13n_{3840},13n_{3911},13n_{3914}\}.
+\end{split}
+\]
+Put $\mathcal S_{32}=\mathcal S_8\cup\mathcal T_{24}$, and separate
+ordinary generation from the meridional comparison.
 
 \begin{lemma}\label{lem:upper}
-For every $K\in\mathcal S_8$,
+For every $K\in\mathcal S_{32}$,
 $\operatorname{rank}\pi_1(S^3\setminus K)\le3$.
 \end{lemma}
 
 \begin{theorem}\label{thm:rank}
-For every $K\in\mathcal S_8$, the ordinary group rank satisfies
+For every $K\in\mathcal S_{32}$, the ordinary group rank satisfies
 \[
  \operatorname{rank}\pi_1(S^3\setminus K)\le3
        <4=\operatorname{mr}(K)=b(K).
@@ -45,7 +57,8 @@ No assertion that the ordinary rank is exactly three is made.
 \section{Exact diagrams, triangulations and initial presentations}
 
 The finite inputs are the literal PDs already bound to the named
-knots in \path{seven_sheet_cover_inputs.json}. For each PD we set
+knots in \path{seven_sheet_cover_inputs.json} and
+\path{a6_affine_inputs.json}. For each PD we set
 both the Python and SnapPy random seeds to the retained constructor
 seed, then call \texttt{Spherogram.Link(PD).exterior()}.
 No later randomization is used. The full SnapPea triangulation string
@@ -66,7 +79,7 @@ Their full implementation has not been independently re-established.
 The retained version is SnapPy~3.3.2 with Spherogram~2.4.1.
 The exact original presentations, integer move streams, final
 presentations and both generator-word maps are retained in
-\path{rank_three_knot_group_inputs.json}. The input sizes are:
+\path{rank_three_knot_group_inputs.json}. The following table gives the original eight input sizes:
 \begin{center}
 \begin{tabular}{lrrrr}
 \toprule
@@ -84,7 +97,10 @@ $13a_{3276}$&24&14&63&11\\
 \end{tabular}
 \end{center}
 Generator inversions are also replayed. No generator introductions
-are needed in these eight certificates.
+are needed in these eight certificates. The additional twenty-four
+reductions are retained in the same exact input and replayed with the
+same deletion criterion; their initial presentations have between ten
+and sixteen generators.
 
 \section{Why every retained algebra move preserves the group}
 
@@ -124,7 +140,9 @@ The separate cover and four-seed proofs supply the meridional and
 bridge equalities, and therefore establish Theorem~\ref{thm:rank}. Independently,
 the explicit finite-group certificates in
 \path{TERNARY_AFFINE_QUOTIENTS.tex} supply the same equalities
-without a cover-group rank computation.
+without a cover-group rank computation. For $\mathcal T_{24}$,
+\path{A6_AFFINE_SHARP_FOUR.tex} gives the independent direct matrix
+proofs of $\operatorname{mr}=b=4$.
 
 \section{Replay, source pins and limitations}
 
@@ -172,7 +190,7 @@ software simplifier's correctness.
 \begin{corollary}\label{cor:ordinary}
 The ordinary-rank inequality
 $\operatorname{rank}\pi_1(S^3\setminus K)\le\operatorname{mr}(K)$
-cannot prove meridional rank four for these eight knots. In particular,
+cannot prove meridional rank four for these thirty-two knots. In particular,
 a known-family theorem whose sufficient hypotheses force ordinary
 group rank four cannot apply to them.
 \end{corollary}

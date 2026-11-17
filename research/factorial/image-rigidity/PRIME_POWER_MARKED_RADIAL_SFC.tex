@@ -1,0 +1,225 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\N}{\mathbb N}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Lbeta}{\mathcal L}
+\title{Monomially marked radial two-moment theorems\\from prime-power Gamma SFC}
+\author{}\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Exact Gamma tilting transfers the all-index prime-power lower-one
+binomial theorem to radial factorial polynomials in every dimension,
+with any fixed monomial marker. Every marked sequence has a nonzero
+moment in each pair of consecutive positive orders. The same statement
+holds for even-monomial markers of standard Gaussian radial polynomials
+at odd-prime-power gaps in every dimension, and at every prime-power gap
+in even dimension. These are exact finite-order identities.
+Arbitrary polynomial markers can instead annihilate both moments.
+\end{abstract}
+
+For $\beta>0$ let $\Lbeta_\beta(T^j)=(\beta)_j$, with
+$(\beta)_j=\beta(\beta+1)\cdots(\beta+j-1)$ and $(\beta)_0=1$.
+For independent $Y_i\sim\operatorname{Gamma}(\alpha_i,1)$,
+$\alpha_i>0$, write $\mathcal G_{\boldsymbol\alpha}(H)=\E H(Y)$.
+Thus $\mathcal G_{\boldsymbol\alpha}(Y^k)=\prod_i(\alpha_i)_{k_i}$.
+The ordinary factorial functional in $r$ variables is
+\[
+ \mathcal F_r(X^k)=\prod_{i=1}^r k_i!
+                  =\mathcal G_{(1,\ldots,1)}(X^k).
+\]
+All these functionals act on complex polynomials. Every integral used
+below is absolutely convergent because the integrand is a polynomial
+times the fixed Gamma or Gaussian density.
+
+\paragraph{Arithmetic input.}
+The retained
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{prime-power lower-one theorem}
+has the corollary labels
+\begin{quote}
+\texttt{cor:prime-gap-lower-one}\\
+alias \texttt{cor:prime-power-lower-one}.
+\end{quote}
+It states the following. For a prime $p$, integer $s\ge1$, positive rational
+$\beta\in\mathbb Z_p$, and $(A,B)\in\C^2\setminus\{(0,0)\}$, put
+\[
+ d=p^s,\qquad f(T)=T(A+BT^d).
+\]
+Then for every $m\ge1$,
+\[
+ \bigl(\Lbeta_\beta(f^m),\Lbeta_\beta(f^{m+1})\bigr)\ne(0,0).
+ \tag{1}
+\]
+Here $v_p(\beta)\ge0$ is sufficient; $\beta$ need not be a unit.
+The coefficient pair is arbitrary complex. If one coefficient vanishes,
+the nonzero monomial has every positive Gamma moment nonzero.
+
+\begin{lemma}[Exact radial monomial tilt]\label{lem:radial-tilt}
+Let $r\ge1$, $\alpha_i>0$, $\nu\in\N_0^r$, and
+$S=Y_1+\cdots+Y_r$. For every $h\in\C[T]$,
+\[
+ \mathcal G_{\boldsymbol\alpha}\bigl(Y^\nu h(S)\bigr)
+ =\left(\prod_{i=1}^r(\alpha_i)_{\nu_i}\right)
+    \Lbeta_{\alpha_1+\cdots+\alpha_r+|\nu|}(h).
+ \tag{2}
+\]
+\end{lemma}
+\begin{proof}
+It suffices by linearity to take $h(T)=T^j$.
+Expand $S^j$ by the multinomial theorem and use
+$(\alpha_i)_{\nu_i+k_i}=(\alpha_i)_{\nu_i}
+(\alpha_i+\nu_i)_{k_i}$.
+The remaining sum is
+\[
+ \sum_{k_1+\cdots+k_r=j}
+ \binom{j}{k_1,\ldots,k_r}\prod_i(\alpha_i+\nu_i)_{k_i}
+ =(\alpha_1+\cdots+\alpha_r+|\nu|)_j.
+\]
+For completeness, divide by $j!$ and compare the coefficient of $z^j$
+in the formal identity
+$\prod_i(1-z)^{-(\alpha_i+\nu_i)}
+=(1-z)^{-\sum_i(\alpha_i+\nu_i)}$.
+This proves (2) on every polynomial without any limiting argument.
+\end{proof}
+
+Equation (2) isolates the exact shape shift underlying the
+\href{STATUS_AND_LITERATURE.tex}{Gamma--Dirichlet separation, equation (5)}
+and the tilted densities in the
+\href{COUPLED_BLOCK_PERIODS.tex}{block-radial Gamma argument}.
+Here it passes each of the two finite-order moments directly to (1).
+
+\begin{theorem}[Marked product-Gamma radial pairs]\label{thm:marked-gamma}
+Let $p$ be prime, let $s\ge1$ and $r\ge1$ be integers, and let $\alpha_i>0$.
+Assume that $b=\sum_i\alpha_i$ is rational and $p$-integral.
+For $(A,B)\ne(0,0)$ set
+\[
+ F(Y)=S(A+BS^{p^s}),\qquad S=\sum_{i=1}^rY_i .
+\]
+For every fixed $\nu\in\N_0^r$ and every $m\ge1$,
+\[
+ \bigl(\mathcal G_{\boldsymbol\alpha}(Y^\nu F^m),
+       \mathcal G_{\boldsymbol\alpha}(Y^\nu F^{m+1})\bigr)
+ \ne(0,0).
+ \tag{3}
+\]
+Individual $\alpha_i$ need not be rational or $p$-integral.
+\end{theorem}
+\begin{proof}
+The same fixed marker in both entries of (3) gives the same shape
+$\beta=b+|\nu|$, which is positive, rational and $p$-integral.
+Apply Lemma~\ref{lem:radial-tilt} to $h=f^m$ and $h=f^{m+1}$,
+then (1). The common prefactor
+$\prod_i(\alpha_i)_{\nu_i}$ is strictly positive and hence nonzero.
+No $p$-adic unit condition on this prefactor is needed.
+\end{proof}
+
+\begin{corollary}[Ordinary marked factorial family in every dimension]
+\label{cor:factorial-radial}
+For every integer $r\ge1$, prime $p$, integer $s\ge1$, $(A,B)\ne(0,0)$,
+and fixed $\nu\in\N_0^r$, put
+\[
+ S=X_1+\cdots+X_r,\qquad F=S(A+BS^{p^s}).
+\]
+For every $m\ge0$ the exact identity is
+\[
+ \boxed{\quad
+ \mathcal F_r(X^\nu F^m)
+ =\left(\prod_i\nu_i!\right)
+   \Lbeta_{r+|\nu|}\bigl((T(A+BT^{p^s}))^m\bigr).
+ \quad}                                                   \tag{4}
+\]
+Consequently every pair of consecutive positive orders has a nonzero
+marked factorial moment.
+\end{corollary}
+\begin{proof}
+Take $\alpha_i=1$ in Lemma~\ref{lem:radial-tilt} and
+Theorem~\ref{thm:marked-gamma}. The total shape $r+|\nu|$
+is a positive integer and is $p$-integral at every prime.
+\end{proof}
+
+The number of monomials in $F$ has no fixed bound as the dimension or
+prime-power gap varies. The conclusion concerns the actual expanded
+multivariate polynomial, with a fixed external monomial marker.
+Multiplying a marker into the phase would instead introduce
+$X^{m\nu}$ and a shape depending on $m$; that different assertion is
+not supplied by the fixed-shape arithmetic input.
+
+\begin{corollary}[Even-monomial Gaussian family]\label{cor:gaussian-radial}
+Let $p$ be prime and $n,s$ be positive integers. Let $Z_1,\ldots,Z_n$ be independent standard normal variables, of
+variance one, and let $\mathcal N_n(H)=\E H(Z)$.
+Set $S=\tfrac12\sum_iZ_i^2$, $F=S(A+BS^{p^s})$ and
+$f(T)=T(A+BT^{p^s})$, where $(A,B)\ne(0,0)$.
+For every $\nu\in\N_0^n$ and $m\ge0$,
+\[
+ \boxed{\quad
+ \mathcal N_n(Z^{2\nu}F^m)
+ =\left(\prod_i(2\nu_i-1)!!\right)
+    \Lbeta_{n/2+|\nu|}(f^m),\qquad (-1)!!=1 .
+ \quad}                                                   \tag{5}
+\]
+If $p$ is odd, every such marked sequence has a nonzero entry in every
+pair of consecutive positive orders, in every dimension.
+For $p=2$ the same conclusion follows whenever $n$ is even.
+Every monomial marker with at least one odd coordinate exponent has
+an identically zero sequence.
+\end{corollary}
+\begin{proof}
+The independent variables $Y_i=Z_i^2/2$ have Gamma shape $1/2$
+and scale one, and $Z^{2\nu}=2^{|\nu|}Y^\nu$.
+Equation (2) gives (5), since
+$2^{\nu_i}(1/2)_{\nu_i}=(2\nu_i-1)!!$.
+For odd $p$ the positive rational shape $n/2+|\nu|$ is $p$-integral.
+It is a positive integer when $n$ is even, also covering $p=2$.
+When $n$ is odd it has $2$-adic valuation $-1$, so the present
+prime-power argument does not supply that case at $p=2$.
+Finally, $F$ is even in each coordinate. Reflection in a coordinate
+with odd marker exponent negates the integral while preserving its
+value, so that integral is zero at every order.
+\end{proof}
+
+\begin{proposition}[Polynomial marker cancellation]\label{prop:marker-boundary}
+For any fixed nonzero $f\in\C[T]$, $\beta>0$, and $m\ge1$,
+there is a nonzero $W\in\C[T]$ of degree at most two for which
+\[
+ \Lbeta_\beta(Wf^m)=\Lbeta_\beta(Wf^{m+1})=0.
+ \tag{6}
+\]
+In particular the ordinary radial two-moment theorem cannot be extended
+to all nonzero polynomial markers, even for $r=1$ and an admissible
+prime-power radial phase.
+\end{proposition}
+\begin{proof}
+The map from the three-dimensional space $\C[T]_{\le2}$ to $\C^2$
+given by the two entries of (6) is linear, hence has a nonzero kernel.
+For an explicit ordinary example take $r=1$, $\beta=1$, $A=1$,
+$B=0$ and any allowed prime-power gap. Then $f(T)=T$ and
+$W(T)=T^2-6T+6$ give
+\[
+ \Lbeta_1(WT)=3!-6\cdot2!+6\cdot1!=0,\qquad
+ \Lbeta_1(WT^2)=4!-6\cdot3!+6\cdot2!=0 .
+\]
+For any nonzero radial $F=f(S)$ with both $A,B$ nonzero, the same
+dimension argument applied at the ordinary shape $\beta=r$ supplies
+a polynomial marker $W(S)\ne0$ with these two zero moments.
+Indeed $T\mapsto S$ is injective on $\C[T]$ and the unmarked
+case of (2) identifies the two functionals.
+\end{proof}
+
+\paragraph{Scope.}
+These finite-order marked theorems are consequences of the exact
+arithmetic input and exact Gamma identities, independently of simplex
+asymptotics or a period comparison theorem. They do not assert
+unrestricted multivariate FC or SFC, uniform nonvanishing for sums
+of markers, or the case of an odd-coordinate Gaussian marker.
+The identities and reductions have written proofs; no finite
+parameter test establishes their universal quantifiers.
+No novelty, external review or formal verification is claimed.
+\end{document}

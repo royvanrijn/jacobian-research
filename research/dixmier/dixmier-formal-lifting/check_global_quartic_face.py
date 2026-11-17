@@ -152,6 +152,45 @@ def main():
     for root in (0,2,7,9):euler_poly=cm(euler_poly,add({1:v*v},{0:-root*h}))
     assert same(normalized_sq,scale(euler_poly,v**-14))
     assert s.factor(expected_bottom-H*(H-2*h)*(H-7*h)*(H-9*h))==0
+    # The mixed cubic-quartic candidate: exact admission and symbol facts only.
+    lam,xi=s.symbols('lambda xi',nonzero=True)
+    assert cc(centC,{0:v})=={0:r*h/v}
+    vW=cm({0:v},W);Wv=cm(W,{0:v})
+    expected_vW=scale(cp(centC,2),v**-2)
+    expected_Wv=add(expected_vW,scale(centC,2*r*h*v**-4),{0:-r*r*h*h*v**-6})
+    assert same(vW,expected_vW) and same(Wv,expected_Wv)
+    E=add(scale(cp(centC,2),2*v**-2),scale(centC,2*r*h*v**-4),{0:-r*r*h*h*v**-6})
+    assert same(E,add(vW,Wv))
+    seed_normalized={2:-3*r,0:2*v}
+    mixed=add(seed_normalized,scale(add(scale(E,r),cm(centC,W),cm(W,centC)),-3*lam*h),
+                        scale(cm(W,W),-3*r*lam**2*h*h))
+    shifted=add(z,scale(W,lam*h))
+    completed=add(scale(cm(shifted,shifted),-3*r),{0:2*v})
+    assert same(mixed,completed)
+    assert max(mixed)==4
+    assert s.factor(mixed[4]+3*lam**2*h*h*r**5*v**-6)==0
+    data=support(mixed)
+    assert min(item[4] for item in data)==0
+    critical={}
+    for n,m,j,coefficient,weight in data:
+        if weight==0:critical[j]=critical.get(j,0)+coefficient*v**m
+    critical=clean(critical)
+    K=scale(cp(z,2),r*r*v**-3)
+    critical_root=add(z,scale(K,lam))
+    critical_expected=add(scale(cm(critical_root,critical_root),-3*r),{0:2*v})
+    critical_expected=clean({i:a.subs(h,1) for i,a in critical_expected.items()})
+    assert same(critical,critical_expected)
+    weighted_terms=[]
+    for j,coefficient in critical.items():
+        for term in s.Add.make_args(s.expand(coefficient)):
+            exponent=int(term.as_powers_dict().get(v,0))
+            weighted_terms.append((exponent+3*j,term*xi**j))
+    assert max(weight for weight,term in weighted_terms)==6
+    top=s.factor(sum(term for weight,term in weighted_terms if weight==6))
+    expected_top=-3*r*(xi+lam*r*r*v**-3*xi**2)**2
+    assert s.factor(top-expected_top)==0
+    cubic_top=s.expand(top).coeff(xi,3)
+    assert s.factor(cubic_top+6*lam*r**3*v**-3)==0
     # Positive control in ordinary b coordinates: P=b^j+v has mate -b.
     def ordinary_mul(a,b):
         out={}
@@ -168,7 +207,7 @@ def main():
     output=args.output or Path(tempfile.mkdtemp(prefix='global-quartic-'))/'global_quartic_face_controls.json'
     output.parent.mkdir(parents=True,exist_ok=True)
     receipt={
-        'scope':'Exact global admission, general isolated-negative-pole divisor criterion, quartic application and square-ordered frontier',
+        'scope':'Exact global admission, negative-pole exclusions and closed square/mixed quartic families; mixed exclusion uses the separate written adjoint/residue proofs',
         'status':'PASS','environment':{'python':platform.python_version(),'sympy':s.__version__},
         'global_coordinates':{'A0':'Q+3XQ^2-XB/3=a-v','C':'R*A0-2/3=r*(centered_a-v)',
                               'seed':'-3R*A0^2+(18XQ-8)A0+9Q-3hRX=4a-3ra^2+2v'},
@@ -176,12 +215,20 @@ def main():
         'quartic_bottom':{'N':14,'C':str(C4),'character':str(good),'primitive14_character_nonzero':True},
         'general_monomial_controls':monomial_controls,'degree_controls':degree_controls,
         'power_difference_controls':power_controls,
-        'square_ordered_frontier':{'candidate':'S_b+epsilon*h^2*(X^3*C^2)^2','bottom_roots_in_h_units':[0,2,7,9],
-                                   'character':str(bad),'primitive14_character_zero':True,'mate_constructed':False},
+        'closed_square_ordering':{'candidate':'S_b+epsilon*h^2*(X^3*C^2)^2','bottom_roots_in_h_units':[0,2,7,9],
+                                   'character':str(bad),'primitive14_character_zero':True,'mate_constructed':False,
+                                   'closure':'All-order square-face residue proof and QOI1 exclude every finite mate'},
+        'admitted_mixed_family':{'candidate':'S_b-3lambda*h*(R*E+C*W+W*C)-3R*lambda^2*h^2*W^2',
+              'W':'X^3*C^2','E':'2X^2*C^2+2R*h*X^4*C-R^2*h^2*X^6',
+              'Wv_identity':True,'completed_square_identity':True,'critical_coefficients':{str(i):str(a) for i,a in critical.items()},
+              'top_weight':6,'top_symbol':str(top),'top_cubic_coefficient':str(cubic_top),
+              'outside_QOI1_strict_quartic_cone':True,'mate_constructed':False,
+              'mate_excluded_by_separate_written_proof':'QAS1 twisted adjoint; QAS2 universal residue for the specified nonsymmetric perturbation'},
         'negative_control':'Character criterion deliberately fails for actual pair b^j+v,-b; corrupted quartic divisor rejected',
         'hashes':{name:sha(HERE/name) for name in ['GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md','check_global_quartic_face.py',
-                    'EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md','CRITICAL_LAURENT_FACE_OBSTRUCTION.md']},
-        'coverage_boundary':'Finite exact rational Ore identities and representative divisor/degree controls; unrestricted centralizer, no-mate, support realization and parameter-pole proofs are written. No actual Long mate or global completion.',
+                    'EXACT_POSITION_CENTRALIZER_AND_COMPLETION.md','CRITICAL_LAURENT_FACE_OBSTRUCTION.md',
+                    'SQUARE_ORDERED_QUARTIC_FACE.md','ORDERED_QUARTIC_INFINITY_OBSTRUCTION.md']},
+        'coverage_boundary':'Finite exact Ore, mixed-admission and critical-symbol identities plus representative divisor controls; universal exclusions rely on written proofs. Mixed admission calculations do not establish mate exclusion; that separate written adjoint/residue proof is explicitly linked. No actual Long mate or global completion.',
         'independent_replay':False,'formal_verification':False,'external_review':False}
     output.write_text(json.dumps(receipt,indent=2)+'\n')
     print('Global admission/quartic face controls PASS')

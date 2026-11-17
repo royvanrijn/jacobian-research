@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Replay integer Nullstellensatz identities for13a_373 reflection roots.
+"""Replay exact algebra and diagram transfers for sixteen reflection obstructions.
 
 Standard library only: no Groebner software or symbolic algebra package.
 The first-loop reduction and Coxeter transport are written arguments.
 Here the normalized trace, reduced root formulas and all8 integer
-polynomial certificates are reconstructed and checked exactly.
+polynomial certificates are reconstructed and checked exactly. The eight new
+A6-diagram transfers also replay their raw local reductions and exact relabelings.
 """
 from copy import deepcopy
 from itertools import product
@@ -515,6 +516,133 @@ def verify_remaining_alternating(inputs):
     return reports
 
 
+
+def verify_a6_alternating_transfers(old_inputs,new_inputs):
+    """Raw local algebra and literal relabeling to the proved reduced systems."""
+    global N
+    N=6
+    a,b,c,d,e,f=[variable(i) for i in range(6)]
+    gram=[[constant(2),a,b,d],[a,constant(2),c,e],
+          [b,c,constant(2),f],[d,e,f,constant(2)]]
+    A,B,C,D=[unit(i,4) for i in range(4)]
+    # Both changes of the last two seed roots are triangular with diagonal 1.
+    newP=reflect(D,C,gram)
+    newQ=reflect(C,D,gram)
+    assert newP==[{}, {},constant(1),scale(f,-1)]
+    assert newQ==[{}, {},scale(f,-1),constant(1)]
+    local_reports=[]
+    for kind in ('I','II'):
+        u2=reflect(A,B,gram) if kind=='I' else reflect(C,B,gram)
+        u3=reflect(C,u2,gram) if kind=='I' else reflect(A,u2,gram)
+        t=add(c,scale(multiply(a,b),-1)) if kind=='I' else add(a,scale(multiply(b,c),-1))
+        H=dot(u3,A,gram)
+        if kind=='I':
+            assert u2==[scale(a,-1),constant(1),{},{}]
+            assert u3==[scale(a,-1),constant(1),scale(t,-1),{}]
+            assert H==add(scale(a,-1),scale(multiply(b,t),-1))
+            closing=[add(constant(1),multiply(a,H)),scale(H,-1),multiply(t,H),{}]
+        else:
+            assert u2==[{},constant(1),scale(c,-1),{}]
+            assert u3==[scale(t,-1),constant(1),scale(c,-1),{}]
+            assert H==scale(t,-1)
+            closing=[add(constant(1),multiply(t,H)),scale(H,-1),multiply(c,H),{}]
+        assert reflect(u3,A,gram)==closing
+        assert all(dot(u,u,gram)==constant(2) for u in (u2,u3))
+        for epsilon in (1,-1):
+            F0=closing[0];F1=add(closing[1],constant(-epsilon));F2=closing[2]
+            if kind=='I':
+                assert add(a,constant(-epsilon))==scale(add(F0,multiply(a,F1)),-epsilon)
+                assert t==scale(add(F2,multiply(t,F1)),-epsilon)
+            else:
+                assert add(t,constant(-epsilon))==scale(add(F0,multiply(t,F1)),-epsilon)
+                assert c==scale(add(F2,multiply(c,F1)),-epsilon)
+            # Independently substitute the forced Gram restrictions, for both signs.
+            aa=constant(epsilon)
+            cc=scale(b,epsilon) if kind=='I' else {}
+            reduced_gram=[[constant(2),aa,b,d],[aa,constant(2),cc,e],
+                          [b,cc,constant(2),f],[d,e,f,constant(2)]]
+            v2=reflect(A,B,reduced_gram) if kind=='I' else reflect(C,B,reduced_gram)
+            v3=reflect(C,v2,reduced_gram) if kind=='I' else reflect(A,v2,reduced_gram)
+            assert reflect(v3,A,reduced_gram)==[scale(x,epsilon) for x in B]
+            assert reflect(B,v3,reduced_gram)==[scale(x,-epsilon) for x in A]
+            assert reflect(v2,C,reduced_gram)==C
+        local_reports.append({'type':kind,'raw_six_variable_coefficients_verified':True,
+                              'division_free_branch_reductions':2,
+                              'both_normalized_sign_branches_verified':True})
+    N=3
+    records={
+      '13a_304':{'kind':'I','original':[0,1,5,9],'new':[0,1,6,9],
+        'C':6,'paired_arc':7,'independent_reduced':[0,6,9],
+        'basis_operations':[(9,5,6)],'target':'13a_375',
+        'relabel':{5:10,6:11,12:8,11:6,0:9,8:12,9:0,10:5}},
+      '13a_362':{'kind':'I','original':[0,1,5,11],'new':[0,1,6,11],
+        'C':6,'paired_arc':7,'independent_reduced':[0,6,11],
+        'basis_operations':[(11,5,6)],'target':'13a_375',
+        'relabel':{0:10,5:11,11:8,10:6,12:9,6:12,8:0,9:5}},
+      '13a_623':{'kind':'I','original':[0,1,5,8],'new':[0,1,5,8],
+        'C':8,'paired_arc':9,'independent_reduced':[0,5,8],
+        'basis_operations':[],'target':'13a_373',
+        'relabel':{11:10,10:11,7:0,8:12,0:8,5:6,12:9,6:5}},
+      '13a_629':{'kind':'I','original':[0,1,5,7],'new':[0,1,5,8],
+        'C':8,'paired_arc':9,'independent_reduced':[0,5,8],
+        'basis_operations':[(5,7,8)],'target':'13a_373',
+        'relabel':{8:10,7:11,5:0,6:12,11:8,12:6,10:9,0:5}}}
+    for name,base in [('13a_3232','13a_304'),('13a_3259','13a_362'),
+                      ('13a_3374','13a_623'),('13a_3375','13a_629')]:
+        record=deepcopy(records[base]);record['kind']='II';records[name]=record
+    def crossings(case):
+        components=[{i} for i in range(1,27)]
+        for row in case['pd']:
+            aa=next(c for c in components if row[1] in c)
+            bb=next(c for c in components if row[3] in c)
+            if aa is not bb:
+                components.remove(aa);components.remove(bb);components.append(aa|bb)
+        components=sorted(sorted(c) for c in components)
+        arc={v:i for i,c in enumerate(components) for v in c}
+        assert len(components)==13
+        return [(arc[r[1]],arc[r[0]],arc[r[2]]) for r in case['pd']]
+    def key(step):
+        o,aa,bb=step
+        return (o,)+tuple(sorted((aa,bb)))
+    def reduced(case,C,paired):
+        def fold(i):return 0 if i==4 else C if i==paired else i
+        return {key(tuple(map(fold,step))) for step in crossings(case)
+                if not set(step)&{1,2,3}}
+    old_by_name={c['name']:c for c in old_inputs['cases']}
+    new_by_name={c['name']:c for c in new_inputs['cases']}
+    reports=[]
+    for name,record in records.items():
+        case=new_by_name[name];C=record['C'];paired=record['paired_arc']
+        assert case['seed_arcs']==record['original']
+        crossing=set(map(key,crossings(case)))
+        if record['kind']=='I':local=[(0,1,2),(C,2,3),(3,0,1),(1,3,4),(2,C,paired)]
+        else:local=[(C,1,2),(0,2,3),(3,0,1),(1,3,4),(2,C,paired)]
+        assert {s for s in crossing if set(s)&{1,2,3}}==set(map(key,local))
+        assert all(key(s) in crossing for s in record['basis_operations'])
+        # Replay the original four-seed trace independently of the input's claims.
+        known=set(record['original'])
+        for o,aa,bb in case['seed_trace']:
+            assert o in known and aa in known and bb not in known
+            assert key((o,aa,bb)) in crossing
+            known.add(bb)
+        assert known==set(range(13))
+        core=reduced(case,C,paired)
+        assert len(core)==8
+        nodes={i for step in core for i in step}
+        relabel=record['relabel']
+        assert set(relabel)==nodes and len(set(relabel.values()))==8
+        assert set(record['independent_reduced'])<=nodes
+        image={key(tuple(relabel[i] for i in step)) for step in core}
+        assert image==reduced(old_by_name[record['target']],6,7)
+        reports.append({'name':name,'local_type':record['kind'],
+            'original_seeds':record['original'],'changed_seeds':record['new'],
+            'independent_reduced_roots':record['independent_reduced'],
+            'unit_determinant_basis_operations':record['basis_operations'],
+            'folded_pair':[C,paired],'paired_reduced_system':record['target'],
+            'relabel_new_to_old':relabel,'folded_crossings':[list(s) for s in sorted(core)]})
+    return {'raw_local_algebra':local_reports,'transfers':reports}
+
+
 def singular_form_control():
     # A singular form can still support4 independent reflection directions.
     # This ensures the proof is about direction span, not invertible Gram.
@@ -549,6 +677,8 @@ def main():
     singular=singular_form_control()
     siblings=verify_siblings(inputs)
     alternating=verify_remaining_alternating(inputs)
+    a6_inputs=json.loads((HERE/'a6_affine_inputs.json').read_text())
+    a6_alternating=verify_a6_alternating_transfers(inputs,a6_inputs)
     bad=deepcopy(branches[0])
     bad['multipliers'][0][0][3]+=1
     try:
@@ -559,18 +689,18 @@ def main():
         raise AssertionError('corrupt polynomial multiplier accepted')
     files=['verify_universal_reflection_obstruction.py',
            'universal_reflection_certificates.json','seven_sheet_cover_inputs.json',
-           'UNIVERSAL_REFLECTION_OBSTRUCTION.tex']
-    receipt={'status':'PASS','knot':'13a_373','sibling_obstructions':siblings,'remaining_alternating_transfers':alternating,'sign_branches':results,'division_free_short_proof_identities':short,'singular_Gram_positive_control':singular,
+           'UNIVERSAL_REFLECTION_OBSTRUCTION.tex','a6_affine_inputs.json']
+    receipt={'status':'PASS','knot':'13a_373','sibling_obstructions':siblings,'remaining_alternating_transfers':alternating,'a6_alternating_transfers':a6_alternating,'sign_branches':results,'division_free_short_proof_identities':short,'singular_Gram_positive_control':singular,
              'raw_six_variable_first_loop':raw,'normalized_four_coordinate_trace_replayed':True,
              'all_reduced_root_norms':2,
              'corrupted_multiplier_rejected':True,
-             'scope':'Exact integer polynomial identities constant15 for all8 reduced sign branches, independently reconstructed reduced reflection equations and normalized four-coordinate seed trace. The generated auxiliary-symbol integer identities1 verify the division-free short contradiction in every field. The initial first-loop reduction, root-sign normalization and transport to all Coxeter targets remain written arguments; reflection theorem characteristic not2 and Coxeter corollary characteristic zero. Optional reduced identities15 are supporting evidence only, with no role at characteristics3,5. No determinant localization or Groebner implementation trusted by replay.',
+             'scope':'Exact integer polynomial identities constant15 for all8 reduced sign branches, independently reconstructed reduced reflection equations and normalized four-coordinate seed trace. The generated auxiliary-symbol integer identities1 verify the division-free short contradiction in every field. The initial first-loop reduction, root-sign normalization and transport to all Coxeter targets remain written arguments; reflection theorem characteristic not2 and Coxeter corollary characteristic zero. Optional reduced identities15 are supporting evidence only, with no role at characteristics3,5. The eight A6-diagram transfers additionally check both raw local reductions, their division-free sign branches, determinant-one seed changes, original traces and exact reduced-system relabelings. No determinant localization or Groebner implementation trusted by replay.',
              'input_sha256':{p:hashlib.sha256((HERE/p).read_bytes()).hexdigest()
                               for p in files}}
     (HERE/'universal_reflection_verification.json').write_text(json.dumps(receipt,indent=2)+'\n')
     print(json.dumps({'status':'PASS','knot':'13a_373','branches':8,
                       'short_proof_constant':1,'short_proof_sign_branches':4,'optional_certificate_constant':15,
-                      'corrupt_multiplier_rejected':True,'sibling_obstructions':len(siblings),'remaining_alternating_transfers':len(alternating)},indent=2))
+                      'corrupt_multiplier_rejected':True,'sibling_obstructions':len(siblings),'remaining_alternating_transfers':len(alternating),'a6_alternating_transfers':len(a6_alternating['transfers'])},indent=2))
 
 
 if __name__=='__main__':

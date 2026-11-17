@@ -107,6 +107,7 @@ EXPECTED_H4 = {
 "13n_1045":25,"13n_1046":121,"13n_1047":121,"13n_1048":121,
 "13n_3842":121,"13n_3844":1,"13n_3855":1,"13n_3856":121}
 
+EXPECTED_H4.update({'13a_304': 121, '13a_362': 121, '13a_623': 241, '13a_629': 241, '13a_3232': 1, '13a_3259': 1, '13a_3374': 121, '13a_3375': 121, '13n_834': 25, '13n_838': 1, '13n_839': 1, '13n_991': 25, '13n_992': 1, '13n_993': 1, '13n_1367': 121, '13n_1370': 121, '13n_1371': 121, '13n_1374': 121, '13n_1375': 121, '13n_1376': 121, '13n_3814': 1, '13n_3840': 1, '13n_3911': 121, '13n_3914': 121})
 
 def verify_plan(case):
     cross,_=diagram(case["pd"])
@@ -150,6 +151,7 @@ def main():
     import copy
     path=D/"seven_sheet_cover_inputs.json";inputs=json.loads(path.read_text())
     cases=[c for c in inputs["cases"] if c["actions"][0]["expected_H1_F3_dimension"]]
+    cases += json.loads((D/"a6_affine_inputs.json").read_text())["cases"]
     assert [c["name"] for c in cases]==list(EXPECTED_H4)
     controls=simple_control()
     results=[]
@@ -172,13 +174,13 @@ def main():
     else:raise AssertionError("bad propagation plan accepted")
     # Repeating a simple root destroys the full-rank positive control.
     assert not rank4((0,0,0,0))
-    files=[Path(__file__),path,D/"verify_seven_sheet_covers.py",D/"FINITE_COXETER_EXCLUSION.tex"]
-    receipt={"status":"PASS","scope":"All 24 retained sharp-four knots: no rank-four finite Coxeter reflection quotient. Complete first-seed-normalized transposition and H4 root-coloring searches; classification/projection reductions are written dependencies. Infinite Coxeter quotients remain open.",
+    files=[Path(__file__),path,D/"verify_seven_sheet_covers.py",D/"FINITE_COXETER_EXCLUSION.tex",D/"a6_affine_inputs.json"]
+    receipt={"status":"PASS","scope":"All 48 retained affine sharp-four knots: no rank-four finite Coxeter reflection quotient. Complete first-seed-normalized transposition and H4 root-coloring searches; classification/projection reductions are written dependencies. Infinite Coxeter quotients are separately excluded on sixteen alternating cases; other cases remain outside this finite search.",
       "results":results,"controls":controls,"corruptions_rejected":["invalid seed propagation","dependent roots fail full-rank control"],
       "input_sha256":{p.relative_to(D).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
       "assurance":"Exact internal computation, without formal verification or external human review."}
     (D/"finite_coxeter_exclusion_verification.json").write_text(json.dumps(receipt,indent=2)+"\n")
-    print(json.dumps({"status":"PASS","knots":24,"H4_trials_per_knot":60**3,
+    print(json.dumps({"status":"PASS","knots":48,"H4_trials_per_knot":60**3,
                      "sharp_finite_Coxeter_hits":0,"symmetric_degrees":[3,4,5]},indent=2))
 
 

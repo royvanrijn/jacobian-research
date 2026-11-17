@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\begin{document}
+\setlength{\emergencystretch}{2em}
+\title{Ordinary binomial Strong Factorial through degree six}
+\author{}\date{}\maketitle
+Let $\mathcal L(X^j)=j!$. Here Strong Factorial for a nonzero
+univariate phase $f$ means that
+\[
+ \bigl(\mathcal L(f^m),\mathcal L(f^{m+1})\bigr)\ne(0,0)
+ \qquad\text{for every integer }m\ge1.
+\]
+This note assembles exact all-order family theorems and states the
+next finite-support frontier. The assertions concern ordinary
+univariate binomials; no reduction of arbitrary-support FC or SFC
+to binomials is asserted.
+
+\begin{theorem}[All ordinary binomials through degree six]
+\label{thm:degree-six}
+Every nonzero complex univariate binomial of degree at most six
+satisfies Strong Factorial.
+\end{theorem}
+\begin{proof}
+Corollary \texttt{cor:degree-six-frontier} of the
+\href{QUINTIC_SCALAR_MINOR_SFC.tex}{quintic scalar-minor note}
+reduces this assertion exactly to the supports
+$\{2,6\},\{3,6\},\{4,6\}$ at terminal orders $N\ge6$.
+Theorem \texttt{thm:fourth-gap} in
+\href{LOWER_TWO_FOURTH_POWER_GAP_SFC.tex}{the boundary Frobenius note}
+covers $X^2(A+BX^4)$ at every positive consecutive pair.
+Theorem \texttt{thm:diagonal-prime} in
+\href{DIAGONAL_PRIME_GAP_SFC.tex}{the diagonal-prime note}
+at $p=3$ covers $X^3(A+BX^3)$ at every such pair.
+Corollary \texttt{cor:ordinary-support-four-six} in
+\href{LOWER_FOUR_QUADRATIC_GAP_SFC.tex}{the quadratic scalar-minor note}
+covers $X^4(A+BX^2)$ at every such pair.
+Thus every test in the exact reduction holds.
+Each family includes the degenerate nonzero monomials.
+\end{proof}
+
+\begin{corollary}[The exact ordinary degree-seven frontier]
+\label{cor:degree-seven-frontier}
+Put
+\[
+ P_j^{a,d}(t)=\sum_{k=0}^j\binom jk(aj+1)_{dk}t^k.
+\]
+Strong Factorial for every ordinary univariate binomial of degree
+at most seven is equivalent to
+\[
+ \gcd_{\mathbb Q[t]}(P_{N-1}^{a,d},P_N^{a,d})=1
+\]
+for every terminal integer $N\ge6$ and each of
+\[
+ (a,d)=(1,6),(3,4),(4,3),(5,2).
+\]
+These are precisely the supports
+$\{1,7\},\{3,7\},\{4,7\},\{5,7\}$.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:degree-six} covers every smaller degree.
+For degree seven write the binomial as
+$X^a(A+BX^{7-a})$, $0\le a\le6$, $AB\ne0$.
+At $a=0$, Theorem \texttt{thm:all} of the
+\href{ALL_UNIVARIATE_TWO_TERM_SFC.tex}{constant-plus-power note}
+applies. At $a=2$, Theorem \texttt{thm:prime} of the
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}{lower-two prime-gap note}
+applies with prime five and ordinary shape one.
+At $a=6$, Theorem \texttt{thm:main} of the
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{adjacent-exponent note}
+applies. Exactly the four displayed pairs remain.
+
+Theorem \texttt{thm:ordinary-fifth} of the
+\href{lower_exponent_initial_and_boundary.tex}{initial-order note}
+covers all ordinary binomials through terminal order five.
+For every remaining pair,
+\[
+ \mathcal L\bigl((X^a(A+BX^d))^j\bigr)
+       =A^j(aj)!P_j^{a,d}(B/A).
+\]
+This identifies the remaining tests with the displayed rational
+gcds at $N\ge6$. Two rational polynomials have a common complex root
+exactly when their rational gcd is nonconstant. A nonzero monomial
+has every positive factorial moment nonzero.
+Conversely each displayed support and order is among the degree-seven
+tests. Thus the equivalence holds. It does not prove any of those
+four unrestricted families.
+\end{proof}
+
+The input family theorems have written proofs, with their exact
+algebraic reductions and internal replay records retained separately.
+The present argument is a proof by specialization and support
+classification. Independent mathematical review, formal verification
+and priority are separate questions.
+\end{document}

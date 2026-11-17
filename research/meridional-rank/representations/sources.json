@@ -113,9 +113,9 @@
       "snapshot": "sources/cornwell-kch-1310.7526v3.pdf",
       "snapshot_sha256": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
       "publication": "Journal of Symplectic Geometry 15(4) (2017), 983-1017",
-      "location": "Section2.2 braid action and Chain Rule; Theorem1.10 proof p18; symmetric quotient p19; rank-raising Theorem5.4 p20 and proof p23",
-      "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph gives rank-n augmentations for all but finitely many meridian eigenvalues. Section2.2 braid formulas and exact Theorem5.4 symmetry/size/parity hypotheses read. A separate written free-Gram transport proves that symmetric maximal-braid augmentations would give independent orthogonal reflection directions, even at singular Gram forms; all local formulas are checked by a stdlib replay. That transport is a comparison proved here, not attributed to the paper. The full representation/augmentation correspondence and rank-raising theorem proof remain imports, not independently re-established.",
-      "scope": "KCH/augmentation correspondence, maximal-braid peripheral curve lambda=(-mu)^(-w), and specified higher-braid rank-raising families with symmetric cord values. The eight knots13a_373/375/391/392/3264/3266/3275/3276 are excluded from every symmetric maximal-braid augmentation and the bridge-four rank-raising outputs by SYMMETRIC_AUGMENTATION_OBSTRUCTION. Arbitrary nonsymmetric rank-four augmentations remain open. With nonzero writhe, a maximal-braid augmentation also meets the GGLW iteration criterion, giving a source-derived satellite corollary dependent on that preprint."
+      "location": "Section2.2 braid action and Chain Rule; Theorem1.10 proof p18; symmetric quotient p19; rank-raising Theorem5.4 p20 and proof p23; arbitrary-field KCH/augmentation correspondence Theorem1.2 (p1,proofpp12-13), Definition1.8(p3), Proposition2.12(p9), Lemma3.14(p13); connected-sum Theorem1.9 p3/proof Section4.2 pp15-17; existing rank-gap Corollary1.12 p3 and Theorem5.3 p19",
+      "audit": "Primary statements read and original proof of Theorem1.10 read in full and visually checked. Its final determinant paragraph gives rank-n augmentations for all but finitely many meridian eigenvalues. Section2.2 braid formulas and exact Theorem5.4 symmetry/size/parity hypotheses read. A separate written free-Gram transport proves that symmetric maximal-braid augmentations would give independent orthogonal reflection directions, even at singular Gram forms; all local formulas are checked by a stdlib replay. That transport is a comparison proved here, not attributed to the paper. The full representation/augmentation correspondence and rank-raising theorem proof remain imports, not independently re-established. The exact arbitrary-field correspondence, meridian/longitude identification and rank convention were additionally read directly for the involutory nonsymmetric obstruction. The original correspondence proof remains an imported theorem, not formally or independently re-established. Theorem1.9 and its full Section4.2 proof were read for the signed 13a373 extension: the constructed lower augmentation requires a common meridian parameter different from one and preserves it, whereas the final argument bounds an arbitrary augmentation of the sum above by the sum of the two augmentation ranks minus one. The application uses mu=-1 for both the rank3 seed and rank2 trefoil. Corollary1.12 and Theorem5.3 were checked directly: augmentation gaps 2<3 for 8_16,8_17,10_91,10_94 already occur in this paper. No first-gap or worldwide-priority assertion is made.",
+      "scope": "KCH/augmentation correspondence, maximal-braid peripheral curve lambda=(-mu)^(-w), and specified higher-braid rank-raising families with symmetric cord values. The signed GENERIC_KCH_OBSTRUCTION and GENERIC_KCH_EXTENSIONS prove augmentation rank at most three over every field for all sixteen alternating GL3/A6 knots and every allowed meridian parameter mu!=1, with arbitrary nonzero longitude. Old and new rank-three positives give ar_C=3<mr=b=4 on all sixteen. Theorem1.9 and the common parameter -1 give ar_C(K#^s trefoil)=s+3 on these sixteen seeds, while independent retained cover sums give mr=b=s+4. The correspondence and connected-sum theorem are imported at their precise source scopes; the signed obstruction and lower matrices are separate current proofs. Existing symmetric maximal-braid and GGLW comparison scopes are retained."
     },
     {
       "id": "CH16",
@@ -608,7 +608,7 @@
       "url": "https://doi.org/10.1007/s00039-013-0247-2",
       "snapshot": "sources/kolpakov-martelli-one-cusp-1303.6122v7.pdf",
       "version_dates": "arXiv:1303.6122v7, 23 October 2013",
-      "location": "Figure 2 and Section 1.1, printed pages 5–6",
+      "location": "Figure 2 and Section 1.1, printed pages 5\u20136",
       "audit": "Exact quotient construction read and visually checked: minimally twisted six-chain exterior double-covers the punctured octahedral orbifold, all twelve edges have index two, and its six torus cusps correspond to six four-marked sphere ends. The full four-dimensional construction is not independently audited.",
       "scope": "Actual branched-cover model for arbitrary rational fillings of the punctured 6* medial core. Rational-tangle solid-torus filling and gluing identification are proved separately in the new topology note.",
       "sha256": "ca4c8aac66f01bfc56304e820a173bcb8bc933b32d0717839d4c8c132214ef12"
@@ -620,10 +620,10 @@
       "year": 2021,
       "url": "https://doi.org/10.4310/CAG.2021.v29.n7.a5",
       "snapshot": "sources/martelli-seven-chain-1808.08430v2.pdf",
-      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597–1641",
-      "location": "Theorem 2.7 and its proof, preprint printed pages 15–16; following discussion of the two mixed pieces",
+      "version_dates": "arXiv:1808.08430v2, 25 February 2019; CAG29 (2021),1597\u20131641",
+      "location": "Theorem 2.7 and its proof, preprint printed pages 15\u201316; following discussion of the two mixed pieces",
       "audit": "The exact complete closed nonhyperbolic M6 filling statement, graph cases and two sporadic mixed cases were read and visually checked. The theorem's exhaustive classification and computational tables are imported; no independent enumeration replay is claimed.",
-      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer–Vietoris argument. No full M7 classification is used.",
+      "scope": "Closed nonhyperbolic M6 fillings are graph cases or two mixed manifolds gluing the figure-eight exterior to the orientable Klein-bottle interval bundle. Both mixed cases are separately excluded as knot double covers by the written mod-two Mayer\u2013Vietoris argument. No full M7 classification is used.",
       "sha256": "b2c8436322c80419d023d58eb8978ce7de10c9f9ad78a6c96e53b0b99685ed1f"
     },
     {
@@ -634,7 +634,7 @@
       "url": "https://dornsife.usc.edu/francis-bonahon/wp-content/uploads/sites/205/2023/06/BonSieb-compressed.pdf",
       "snapshot": "sources/bonahon-siebenmann-2016.pdf",
       "version_dates": "Author monograph, version 26 January 2016",
-      "location": "Introduction printed pages vi–vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
+      "location": "Introduction printed pages vi\u2013vii; algebraic/arborescent terminology and branched graph-manifold cover consequence; Part V supplies the general theory",
       "audit": "The exact algebraic/arborescent correspondence and graph-manifold double-cover fact were read at their stated locations. Full proofs and the whole monograph are not independently audited. The new proper-four-vertex graph reduction is written separately and is not inferred from the canonical-projection uniqueness theorem.",
       "scope": "Classical arborescent-cover input for closures of algebraic tangles arising from explicit local graph reductions. Supplies no all-diagram preservation of a planar polyhedral core.",
       "sha256": "c887732f91421ce8bf424f32ab4c3b52b842a5c15f8bc95c62599b8d8baa88a6"
@@ -679,8 +679,22 @@
       "version_dates": "arXiv:1509.04962v1 (2015)",
       "location": "Section3, Theorem3.2 and Definitions3.3-3.4; Theorems1.1 and5.5 are separate context",
       "audit": "Exact positive-diagonal2 symmetric cord presentation and reflective augmentation/rank definitions read in the retained primary version. Theorem3.2 credits Ng; the original Ng proof is imported, not independently audited. The full Cornwell character-variety theorem is not an indispensable premise: deck invariance is derived directly in the new note.",
-      "scope": "Imported diagram-to-reflective-augmentation identification. The uniform rank bound, exact cyclotomic rank3 witnesses, abstract triangle quotients and direct deck-invariance proof are separate current arguments, without any unrestricted augmentation-rank bound.",
+      "scope": "Imported diagram-to-reflective-augmentation identification and rank convention. The uniform reflection upper, explicit positive matrices, abstract triangle quotients and deck-invariance argument are separate current proofs. The eight additional A6 rank-three positives now make reflective rank exactly three on all sixteen alternating GL3/A6 knots. Unrestricted augmentation rank exactly three follows separately from the signed generic theorem and the positive lower witnesses.",
       "sha256": "1845d56c7be1f824b22aceee6d26a816e84fab05d0baac80c15bb2bff16c067b"
+    },
+    {
+      "id": "ST54",
+      "title": "Finite unitary reflection groups",
+      "authors": "G. C. Shephard and J. A. Todd",
+      "year": 1954,
+      "url": "https://doi.org/10.4153/CJM-1954-028-3",
+      "snapshot_url": "https://math.ucsd.edu/~nwallach/shephard-todd.pdf",
+      "snapshot": "sources/shephard-todd-finite-unitary-1954.pdf",
+      "snapshot_sha256": "883ae3bd07e7c10d85755b49891fe39fef7bb2668b1e5f95a439b1cd5b422c21",
+      "publication": "Canadian Journal of Mathematics 6 (1954), 274-304",
+      "location": "Sections2-4 pp276-280; TableVII and reflection-generator exception footnote p301",
+      "audit": "Original primary facsimile directly read and visually checked. Section4 states primitive rank-two groups need two or three reflections. TableVII gives primitive rank-three groups23-27, all three-reflection generated by its exception footnote. Mixed imprimitive rank-three groups needing four are explicitly excluded only after the separate one-hyperplane-orbit argument. Classification itself is imported, not replayed.",
+      "scope": "Exact low-rank classification and reflection-generation bounds imported in FINITE_COMPLEX_REFLECTION_BOUNDARY. The orbit-character, full-order and power-replacement proofs are supplied separately there. For all sixteen listed knots, the generic semisimple dimension bound then excludes sharp-four finite complex reflection-class certificates in any ambient dimension. This excludes neither modular nor other finite-group conjugacy-class methods."
     }
   ],
   "unresolved_scope_extractions": [

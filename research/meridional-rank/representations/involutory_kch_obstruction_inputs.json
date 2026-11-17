@@ -1,0 +1,1574 @@
+{
+  "schema_version": 1,
+  "names": [
+    "13a_373",
+    "13a_375",
+    "13a_391",
+    "13a_392",
+    "13a_3264",
+    "13a_3266",
+    "13a_3275",
+    "13a_3276",
+    "13a_304",
+    "13a_362",
+    "13a_623",
+    "13a_629",
+    "13a_3232",
+    "13a_3259",
+    "13a_3374",
+    "13a_3375"
+  ],
+  "unit_identity": {
+    "variables": [
+      "h",
+      "y",
+      "Y",
+      "v",
+      "C",
+      "w",
+      "Q",
+      "p",
+      "q",
+      "r",
+      "s",
+      "alpha",
+      "beta"
+    ],
+    "inverted_variables": [
+      "alpha",
+      "beta"
+    ],
+    "equations": [
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          -1
+        ],
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          -1
+        ],
+        [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          -1
+        ]
+      ]
+    ],
+    "multipliers": [
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          -1
+        ],
+        [
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          -1
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          1
+        ]
+      ]
+    ],
+    "identity_constant": 1,
+    "coefficient_ring": "integer Laurent polynomials",
+    "scope": "Necessary rank-one involutory root and independent-covector closure coefficients for13a373 over every field; these are KCH eigenvalue minusone only in characteristic not2. No common symmetric or Hermitian form is assumed. Noninvolutory meridian images and dependent seed covectors are outside this unit-certificate scope."
+  },
+  "basis_changes": [
+    {
+      "name": "13a_373",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "literal_pair_derivations": [],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_375",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_391",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_392",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "literal_pair_derivations": [
+        [
+          5,
+          11,
+          12
+        ],
+        [
+          12,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3264",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        10
+      ],
+      "literal_pair_derivations": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          10,
+          0,
+          12
+        ],
+        [
+          12,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3266",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          9,
+          0,
+          12
+        ],
+        [
+          12,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3275",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3276",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          9,
+          0,
+          12
+        ],
+        [
+          12,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_304",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3232",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        9
+      ],
+      "literal_pair_derivations": [
+        [
+          9,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_362",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "literal_pair_derivations": [
+        [
+          11,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3259",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "literal_pair_derivations": [
+        [
+          11,
+          5,
+          6
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_623",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "literal_pair_derivations": [],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3374",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "literal_pair_derivations": [],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_629",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "literal_pair_derivations": [
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    },
+    {
+      "name": "13a_3375",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "literal_pair_derivations": [
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "root_change_determinant": 1,
+      "covector_change_determinant": 1
+    }
+  ],
+  "diagram_incidence_checks": {
+    "base_reduced_systems": 4,
+    "transfers": [
+      {
+        "name": "13a_3264",
+        "reduced_system": "13a_373",
+        "identity_relabeling": true
+      },
+      {
+        "name": "13a_3266",
+        "reduced_system": "13a_375",
+        "identity_relabeling": true
+      },
+      {
+        "name": "13a_3275",
+        "reduced_system": "13a_391",
+        "identity_relabeling": true
+      },
+      {
+        "name": "13a_3276",
+        "reduced_system": "13a_392",
+        "identity_relabeling": true
+      },
+      {
+        "name": "13a_304",
+        "local_type": "I",
+        "reduced_system": "13a_375",
+        "relabeling": {
+          "0": 9,
+          "5": 10,
+          "6": 11,
+          "8": 12,
+          "9": 0,
+          "10": 5,
+          "11": 6,
+          "12": 8
+        }
+      },
+      {
+        "name": "13a_3232",
+        "local_type": "II",
+        "reduced_system": "13a_375",
+        "relabeling": {
+          "0": 9,
+          "5": 10,
+          "6": 11,
+          "8": 12,
+          "9": 0,
+          "10": 5,
+          "11": 6,
+          "12": 8
+        }
+      },
+      {
+        "name": "13a_362",
+        "local_type": "I",
+        "reduced_system": "13a_375",
+        "relabeling": {
+          "0": 10,
+          "5": 11,
+          "6": 12,
+          "8": 0,
+          "9": 5,
+          "10": 6,
+          "11": 8,
+          "12": 9
+        }
+      },
+      {
+        "name": "13a_3259",
+        "local_type": "II",
+        "reduced_system": "13a_375",
+        "relabeling": {
+          "0": 10,
+          "5": 11,
+          "6": 12,
+          "8": 0,
+          "9": 5,
+          "10": 6,
+          "11": 8,
+          "12": 9
+        }
+      },
+      {
+        "name": "13a_623",
+        "local_type": "I",
+        "reduced_system": "13a_373",
+        "relabeling": {
+          "0": 8,
+          "5": 6,
+          "6": 5,
+          "7": 0,
+          "8": 12,
+          "10": 11,
+          "11": 10,
+          "12": 9
+        }
+      },
+      {
+        "name": "13a_3374",
+        "local_type": "II",
+        "reduced_system": "13a_373",
+        "relabeling": {
+          "0": 8,
+          "5": 6,
+          "6": 5,
+          "7": 0,
+          "8": 12,
+          "10": 11,
+          "11": 10,
+          "12": 9
+        }
+      },
+      {
+        "name": "13a_629",
+        "local_type": "I",
+        "reduced_system": "13a_373",
+        "relabeling": {
+          "0": 5,
+          "5": 0,
+          "6": 12,
+          "7": 11,
+          "8": 10,
+          "10": 9,
+          "11": 8,
+          "12": 6
+        }
+      },
+      {
+        "name": "13a_3375",
+        "local_type": "II",
+        "reduced_system": "13a_373",
+        "relabeling": {
+          "0": 5,
+          "5": 0,
+          "6": 12,
+          "7": 11,
+          "8": 10,
+          "10": 9,
+          "11": 8,
+          "12": 6
+        }
+      }
+    ],
+    "source_sha256": {
+      "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+      "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226"
+    }
+  },
+  "raw_local_folds": {
+    "A6_raw_local_types_checked": 2,
+    "paired_normalized_folds_checked": 3,
+    "independent_formal_pairings": 6,
+    "only_inverted_parameter": "a"
+  },
+  "primary_source_sha256": {
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd",
+    "sources/cornwell-character-cord-1509.04962v1.pdf": "1845d56c7be1f824b22aceee6d26a816e84fab05d0baac80c15bb2bff16c067b"
+  },
+  "representation_scope": "For these16 knots, every irreducible representation taking meridians to nonidentity involutions of displacement rank1 has dimension at most3 over every field. No preserved form assumed; characteristic2 gives a transvection obstruction. No reducible fixed-codimension or generic-meridian-eigenvalue bound is asserted.",
+  "augmentation_scope": "U=1 cord augmentations epsilon(mu)=-1 have rank at most3, with any nonzero longitude value, by the explicitly imported Cornwell2017 Theorem1.2 and rank convention Definition1.8."
+}

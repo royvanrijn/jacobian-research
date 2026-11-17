@@ -206,5 +206,5 @@ bounded exclusion check for the odd/odd valuation table. The
 [receipt](fixed_map_two_adic_refinement_checks.json) records its finite
 domains and hashes. These checks do not prove the unrestricted valuation
 arguments, the imported Newton theorem, or integral Hasse nonexistence.
-No formal verification, independent whole-proof replay, external review,
-or graph-status change is claimed by this source.
+No formal verification, independent whole-proof replay or external review
+is claimed by this source.

@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "command": "python3 research/arithmetic/verify_elliptic_exception_explicit_local_criterion.py --write-receipt",
+  "python": "3.12.3",
+  "checker_sha256": "3e9c42a7a78468ea2d52eef08443e1b7d1313493a1ca5d1007f2b982e61e587b",
+  "sources_sha256": {
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "365561753071dfa0fc692c42ebc0d5c6ae88bf48038387de431527b1485faff5",
+    "ELLIPTIC_EXCEPTION_ARITHMETIC.md": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
+    "ELLIPTIC_EXCEPTION_FIELD_DISCRIMINANT.md": "45b3b103649ca02064439301b1f2bfa48d41cdbf0204d0bfaa8334b5c7d97744",
+    "RANK_FIVE_DISCRIMINANT_CLASSIFICATION.md": "bf383fe82f9456e730c4e92bb324868e50c3ca373f6739007e55e49e712e3a2d",
+    "elliptic_exception_hasse_certificate.json": "2d7b357d58428c5be3b605f27ee949754e8b13061652bb6dc64f6085d46ff53a",
+    "elliptic_exception_field_discriminant_certificate.json": "f6bc3ee74612db05011895534afcf2bda1bc9526b67c967bdd9b9bb4b639d3ed",
+    "sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+    "sources/faltings-1983-endlichkeitssaetze.pdf": "0b7fb3e505d5d63e3e6c5913daf15bd843488e59f80f8d5176b154ac8faa3fc2"
+  },
+  "check_count": 22,
+  "checks": [
+    {
+      "name": "coordinate_and_rational_function_identity",
+      "passed": true
+    },
+    {
+      "name": "centered_constant_coefficient",
+      "passed": true
+    },
+    {
+      "name": "exact_cubic_translation",
+      "passed": true
+    },
+    {
+      "name": "centered_cubic_discriminant_identity",
+      "passed": true
+    },
+    {
+      "name": "quadratic_discriminant_coordinate_identity",
+      "passed": true
+    },
+    {
+      "name": "exceptional_prime_is_prime_and_split_mod_three",
+      "passed": true
+    },
+    {
+      "name": "unit_constants_outside_exceptional_set",
+      "passed": true
+    },
+    {
+      "name": "prime_1889_is_inert_and_not_exceptional",
+      "passed": true
+    },
+    {
+      "name": "bounded_Newton_polygons",
+      "passed": true,
+      "count": 2184,
+      "scope": "All primes 7<=p<=101; 1<=unit<=min(p-1,8); -6<=k<=6, k!=0."
+    },
+    {
+      "name": "bounded_normalized_unramified_reductions",
+      "passed": true,
+      "count": 728,
+      "scope": "Same domain with 3|k; separability for every p, unique simple root when p=2 mod3."
+    },
+    {
+      "name": "bounded_discriminant_minus_three_squareclasses",
+      "passed": true,
+      "count": 2184,
+      "scope": "Same nonzero-k domain; exact valuations and unit Legendre symbols."
+    },
+    {
+      "name": "bounded_integral_unit_case",
+      "passed": true,
+      "count": 3016,
+      "scope": "Every nonzero z residue for every prime 7<=p<=101, and for p=1889."
+    },
+    {
+      "name": "complete_unit_residue_control_at_1889",
+      "passed": true,
+      "count": 1888
+    },
+    {
+      "name": "exact_seed_x_coordinate",
+      "passed": true
+    },
+    {
+      "name": "exact_seed_rational_function_factorization",
+      "passed": true
+    },
+    {
+      "name": "seed_factors_are_prime",
+      "passed": true
+    },
+    {
+      "name": "seed_conductor_support_matches_maximal_order_certificate",
+      "passed": true,
+      "support": [
+        13,
+        1321,
+        9601,
+        230703199
+      ]
+    },
+    {
+      "name": "bounded_integer_numerator_denominator_equivalence",
+      "passed": true,
+      "count": 6328,
+      "scope": "-40<=a<=40, 1<=c<=16, gcd(a,c)=1; all primes 11<=p<=59, p=2 mod3."
+    },
+    {
+      "name": "elliptic_cubic_is_squarefree",
+      "passed": true
+    },
+    {
+      "name": "cubeclass_branch_value_nonzero",
+      "passed": true
+    },
+    {
+      "name": "bounded_hyperelliptic_polynomial_controls",
+      "passed": true,
+      "representatives": [
+        "1",
+        "-1",
+        "19",
+        "5/7"
+      ],
+      "scope": "Exact degree9 and squarefreeness for four representatives; written preimage argument proves all nonzero r."
+    },
+    {
+      "name": "genus_four_arithmetic",
+      "passed": true
+    }
+  ],
+  "scope": "Exact rational and polynomial identities, exceptional-prime arithmetic, certified-seed factorization, bounded Newton/residue/valuation controls, and genus-polynomial identities. The written proofs establish the all-prime reduction and fixed-cubeclass finiteness using local-field theorems, RDF3 and Faltings. No all-places elliptic infinitude follows from these controls.",
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "external_review": false
+}

@@ -1,0 +1,361 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newtheorem{proposition}[lemma]{Proposition}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{Boundary-degree Frobenius descent and the ordinary support $\{2,6\}$}
+\author{}\date{}\maketitle
+\begin{abstract}
+We extend the controlled-radius Frobenius noncollision invariant to
+the missing boundary degree, with a precise constant-coefficient
+valuation condition. The extension applies to a mixed-adjoint relation
+for lower exponent two and fourth-power gap. It proves consecutive
+coprimality at every ordinary order for the support $\{2,6\}$.
+The same proof gives an explicit sufficient index condition at
+prime-power gaps. It does not establish unrestricted binomial SFC.
+\end{abstract}
+
+\section{The exact stage class and descent input}
+Fix a prime $p$ and a complete algebraically closed extension $K$ of
+$\mathbb Q_p$, with valuation $v(p)=1$, ring $\mathcal O$, maximal
+ideal $\mathfrak m$, and residue field $k$. Put
+\[
+ q_s=p^s,\qquad b_s=\frac{p^s-1}{p-1},\qquad
+ B_s=b_s-s,\qquad
+ \Pi_{n,q}(t)=\prod_{\ell=0}^{n-1}(t+q\ell).
+\]
+Here $b_s\ge s$, so $B_s\ge0$.
+At stage $s\ge1$ use precisely the closed class
+\[
+ A=c-\theta+F(z),\quad\theta=zD_z,\qquad
+ c\in\mathbb Z_p+p^s\mathcal O,
+\]
+\[
+ F(z)=z+\sum_{r\ge1}a_rz^{p^r},\quad a_r\in p\mathbb Z_p,\qquad
+ h\in\mathcal O[[z]],\quad
+ \bar h=\overline{h(0)}\in k^\times.
+\]
+The series and their finite Euler derivatives converge at $v(z)>0$.
+For $f(z)=\sum f_jz^j$ its cyclic column is
+\[
+ \mathcal C_q(f;u)_j=\sum_{\ell\ge0}f_{q\ell+j}u^\ell,
+             \qquad0\le j<q.
+\]
+When $u\ne0$ and $v(u)>0$, its vanishing is equivalent to
+$f(z)=0$ at all $q$ roots of $z^q=u$.
+Multiplying by a convergent unit series preserves this vanishing.
+All operators below act on whole series before evaluation.
+No characteristic-zero operator action on a fixed quotient
+by $z^q-u$ is assumed.
+
+We import the exact Artin--Hasse stage change of Lemma
+\texttt{lem:artin-hasse-closure} in the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{arithmetic note}.
+Here is its complete interface. The integral unit gauge
+\[
+ E(z)=\exp\left(\sum_{r\ge0}\frac{z^{p^r}}{p^r}\right)
+\]
+has integral inverse and conjugates $A$ to
+$c-\theta+\sum_{r\ge1}(a_r-1)z^{p^r}$.
+For $s\ge2$, write $q=pq'$, $q'=q_{s-1}$,
+$c=c_0+p^s\eta$, $c_0\in\mathbb Z_p$, $\eta\in\mathcal O$.
+For residue $j$ modulo $p$, choose $e_j\in\{0,\ldots,p-1\}$
+congruent to $c_0-j$ modulo $p$. Put
+\[
+ b=a_1-1\in\mathbb Z_p^\times,\quad
+ c_j=(c-j-e_j)/p,\quad
+ w=bz^p/p,\quad u_*=(b/p)^{q'}u.
+\]
+The block operator is $e_j+pL_j$, where
+\[
+ L_j=c_j-\theta_w+w+
+ \sum_{r\ge1}\frac{(a_{r+1}-1)p^{p^r-1}}{b^{p^r}}w^{p^r}.
+\]
+It belongs to the same class at stage $s-1$.
+If $E^{-1}h=\sum_{j=0}^{p-1}z^j\widetilde h_j(z^p)$,
+its new seed is $h_j^*(w)=\widetilde h_j(pw/b)$ and
+\[
+ \overline{h_j^*}
+ =\overline{h(0)}\,(-1)^j/j!\in k^\times,\qquad
+ v(u_*)\ge b_s-q'=b_{s-1}>0.
+\]
+Consequently a zero cyclic column at stage $s$ gives, for each block,
+\[
+ \mathcal C_{q'}\!\left(
+ \Pi_{n,q}(e_j+pL_j)P(e_j+pL_j)h_j^*;u_*\right)=0.       \tag{1}\label{eq:block}
+\]
+These integrality, seed, radius and block identities are the only
+descent facts imported here; the boundary-degree induction follows.
+
+\section{The boundary-degree invariant}
+
+\begin{theorem}[Boundary-degree noncollision]\label{thm:boundary}
+Let $s,n\ge1$, $u\ne0$, and $v(u)\ge b_s$, in the stage class above.
+Suppose $P\in\mathcal O[t]$ is primitive and
+\[
+ \deg\bar P\le q_s-1,\qquad v(P(0))>B_s=b_s-s.
+\]
+Then
+\[
+ \mathcal C_{q_s}\bigl(\Pi_{n,q_s}(A)P(A)h;u\bigr)\ne0.
+\]
+The ordinary degree of $P$ is unrestricted.
+The convention $v(0)=+\infty$ is allowed at its constant coefficient.
+\end{theorem}
+\begin{proof}
+We induct on $s$. At $s=1$, reduction has $z^p=0$,
+$\bar A=z-\theta+\bar c$, $\bar c\in\mathbb F_p$,
+and $\Pi_{n,p}(\bar A)=\bar A^n$.
+The seed is a constant unit.
+The triangular diagonal of $\bar A$ is $\bar c-j$ for $0\le j<p$,
+so its characteristic polynomial is $X^p-X$.
+Moreover $1,\bar A1,\ldots,\bar A^{p-1}1$ form a basis,
+being monic in degrees zero through $p-1$.
+Thus $1$ has a nonzero component in every simple eigenspace,
+including each nonzero eigenvalue in $\mathbb F_p^\times$.
+A collision would force $\bar P$ to vanish at all these $p-1$ points.
+Primitivity and $\deg\bar P\le p-1$ then force
+$\bar P=a(t^{p-1}-1)$ with $a\in k^\times$.
+Its constant coefficient is nonzero, contradicting
+$v(P(0))>B_1=0$.
+
+Let $s\ge2$ and suppose a collision occurs.
+Use \eqref{eq:block}. In a nonresonant block $e_j\ne0$, absorb
+$\Pi_{n,q}(e_j+pL_j)$ into its seed $\widehat h_j$.
+This seed is integral and reduces to the constant unit
+$e_j^n\overline{h_j^*}$.
+The $q'$ vectors
+\[
+ v_r=\mathcal C_{q'}(L_j^r\widehat h_j;u_*),
+                  \qquad0\le r<q',
+\]
+form an integral unit basis. Indeed reduction sets $u_*=0$
+and the seed to a constant, and
+$(w-\theta+\overline{c_j})^r1$ is monic of degree $r<q'$.
+All subsequent vectors $v_r$ are integral as well.
+With $P^{[r]}(e)=[t^r]P(e+t)$, the finite divided-Taylor
+expansion gives
+\[
+ \sum_{r\ge0}p^rP^{[r]}(e_j)v_r=0.
+\]
+This is finite even when the ordinary degree of $P$ is large.
+Terms with $r\ge q'$ have valuation at least $q'$.
+Inverting the unit basis therefore gives
+\[
+ v(P^{[r]}(e_j))\ge q'-r>0,\qquad0\le r<q'.
+\]
+As $j$ runs through the nonresonant blocks, $e_j$ runs through
+$\mathbb F_p^\times$. Hence
+\[
+ \bar P(t)=(t^{p-1}-1)^{q'}R(t),\qquad
+                 0\ne R,\quad\deg R\le q'-1.            \tag{2}\label{eq:residualfactor}
+\]
+The prefactor has nonzero constant coefficient.
+Thus the index $r_0$ of the first unit coefficient of $P$
+is at most $q'-1$.
+
+Write $P=\sum c_rt^r$ and choose an actual nonzero coefficient
+\[
+ \lambda=p^{r_*}c_{r_*},\qquad
+ M=v(\lambda)=\min_r\{v(c_r)+r\}\le r_0\le q'-1.
+\]
+The minimum may be fractional. We divide by this actual field element,
+not by an unspecified symbol $p^M$.
+Then $Q(t)=P(pt)/\lambda$ is integral and primitive.
+For $r\ge q'$,
+\[
+ v([t^r]Q)=v(c_r)+r-M\ge r-M\ge1.
+\]
+Consequently $\deg\bar Q\le q'-1$. Also
+\[
+ v(Q(0))=v(P(0))-M
+ >B_s-(q'-1)=B_{s-1}.                                  \tag{3}\label{eq:constant-transfer}
+\]
+There is exactly one resonant block $e_j=0$.
+Here $\Pi_{n,q}(pL_j)=p^n\Pi_{n,q'}(L_j)$.
+After dividing \eqref{eq:block} by $p^n\lambda$, we obtain
+\[
+ \mathcal C_{q'}\bigl(
+       \Pi_{n,q'}(L_j)Q(L_j)h_j^*;u_*\bigr)=0.
+\]
+All stage, seed and radius conditions are unchanged, and
+\eqref{eq:constant-transfer} is the boundary condition at stage $s-1$.
+This contradicts induction.
+\end{proof}
+
+\begin{proposition}[The strict bound is sharp at every stage]
+\label{prop:sharpness}
+For every prime $p$ and $s\ge1$, there is a stage-$s$ example
+with $n=1$, primitive $P\in\mathbb Z[t]$ of degree $q_s-1$,
+and $v(P(0))=B_s$, for which the cyclic column in
+Theorem~\ref{thm:boundary} vanishes.
+Thus its strict constant-coefficient inequality cannot be replaced
+by $v(P(0))\ge B_s$ in the same class.
+\end{proposition}
+\begin{proof}
+Put $q=p^s$, $A=q-\theta+z$, $h=1$, and
+\[
+ u=(-1)^q q!,\qquad
+ \chi(t)=\prod_{j=1}^{q}(t-j)-(-1)^q q!=tP(t).
+\]
+Then $P$ is monic with integer coefficients and degree $q-1$.
+Since
+\[
+ (A-(q-m))z^m=z^{m+1}\qquad(0\le m<q),
+\]
+successive application, in the commuting product, gives
+$\prod_{j=1}^{q}(A-j)1=z^q$.
+Consequently
+\[
+ \Pi_{1,q}(A)P(A)1=\chi(A)1=z^q-u,
+\]
+whose cyclic column at $u$ is zero.
+Legendre's formula gives $v_p(q!)=b_s$, so the radius condition
+is exact. With $H_q=\sum_{j=1}^{q}1/j$,
+\[
+ P(0)=\chi'(0)=(-1)^{q-1}q!H_q.
+\]
+The term $1/q$ is the unique term of least valuation in $H_q$,
+so $v_p(H_q)=-s$ and $v_p(P(0))=b_s-s=B_s$.
+The operator and seed belong to the stated stage class.
+This is a sharpness example for the noncollision invariant,
+not an SFC counterexample.
+\end{proof}
+
+\section{Application to lower exponent two}
+
+The ordinary factorial functional is $\mathcal L_1(X^j)=j!$.
+For an integer gap $q\ge3$ put
+\[
+ P_{j,q}(t)=\sum_{k=0}^j\binom jk(2j+1)_{qk}t^k .
+\]
+For fixed lower order $n\ge1$ set
+\[
+ \gamma=2n+1,\qquad
+ \kappa_q=\frac{q}{(q+2)((q+2)n+q+1)},
+\]
+and use the auxiliary recurrence
+\[
+ B_{0,\gamma,q}=1,\qquad
+ B_{j+1,\gamma,q}
+  =(z+qj+\gamma+q-1)B_{j,\gamma,q}
+       -zB_{j,\gamma,q}' .
+\]
+The precise input is Theorem \texttt{thm:mixed} of the
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}{general mixed-rank note}.
+Its necessary direction states:
+if $P_{n,q}(t)=P_{n+1,q}(t)=0$, then for
+$u=(-1)^{q+1}/t$ the $q$-cyclic columns of
+\[
+ B_{n+1,\gamma,q},\ldots,B_{n+q-2,\gamma,q},\quad
+ B_{n+q-1,\gamma,q}+\kappa_q z^q B_{n,\gamma,q}            \tag{4}\label{eq:mixed-input}
+\]
+have rank less than $q-1$.
+Only this algebraic mixed-rank identity, valid in characteristic zero
+and at multiple lower roots, is used.
+
+\begin{corollary}[An explicit prime-power index condition]
+\label{cor:prime-power-index}
+Let $q=p^s\ge3$, $n\ge1$, and put $b_s=(q-1)/(p-1)$.
+If
+\[
+ v_p(n)>b_s-2s,\qquad v_p(\kappa_q)>-s,                   \tag{5}\label{eq:indexcondition}
+\]
+then $P_{n,q},P_{n+1,q}$ are coprime over $\mathbb Q$ and
+over $\mathbb C$.
+\end{corollary}
+\begin{proof}
+Suppose there is a common root over $K$. It is nonzero.
+Choose $z^q=u=(-1)^{q+1}/t$.
+Every interval of $qk$ consecutive integers contains exactly
+$qk/p^j$ multiples of $p^j$ for $1\le j\le s$, so
+\[
+ v_p((2n+1)_{qk})\ge b_sk.
+\]
+The monic reciprocal polynomial in $z$ therefore gives
+$v(u)\ge b_s$: below that radius its leading term is uniquely least.
+
+The rank relation \eqref{eq:mixed-input} supplies coefficients
+$a_1,\ldots,a_{q-1}\in\mathcal O$, at least one a unit, for a zero
+linear combination of the columns. Put
+\[
+ A=\gamma+q-1-zD_z+z,\qquad
+ R_i(t)=\prod_{\ell=n}^{n+i-1}(t+q\ell).
+\]
+The stage class holds with $c=\gamma+q-1\in\mathbb Z_p$,
+all higher coefficients zero, and seed $h=1$.
+The recurrence gives
+\[
+ B_{n+i,\gamma,q}=\Pi_{n,q}(A)R_i(A)1.
+\]
+Consequently the zero linear combination is the cyclic column of
+$\Pi_{n,q}(A)P(A)1$, where
+\[
+ P(t)=\sum_{i=1}^{q-1}a_iR_i(t)+a_{q-1}\kappa_q u.       \tag{6}\label{eq:relation-polynomial}
+\]
+Here $u$ in the constant coefficient is the fixed evaluated field
+element. It is not a variable on which the Euler operator acts.
+
+The hypotheses imply
+$v(\kappa_q u)>b_s-s=B_s\ge0$.
+Also $R_i\bmod\mathfrak m=t^i$, so
+$\bar P=\sum_{i=1}^{q-1}\bar a_it^i\ne0$:
+$P$ is primitive with $\deg\bar P\le q-1$.
+Its constant coefficient satisfies
+\[
+ v(P(0))\ge
+ \min\{s+v_p(n),\,v_p(\kappa_q)+b_s\}>B_s,
+\]
+because $R_i(0)=q^i(n)_i$ has valuation at least $s+v_p(n)$.
+Theorem~\ref{thm:boundary} contradicts the zero cyclic column.
+Thus the two rational polynomials have no common root over $K$;
+a rational Bezout identity gives coprimality over $\mathbb C$.
+\end{proof}
+
+\begin{theorem}[The ordinary support $\{2,6\}$]\label{thm:fourth-gap}
+Every nonzero complex phase $X^2(A+BX^4)$ satisfies Strong Factorial:
+its ordinary factorial moments cannot both vanish at any consecutive
+positive orders.
+\end{theorem}
+\begin{proof}
+Take $p=2,s=2,q=4$. Then $b_s=3$, $B_s=1$, and
+\[
+ \kappa_4=\frac2{3(6n+5)},\qquad v_2(\kappa_4)=1.
+\]
+For every integer $n\ge1$, one has $v_2(n)\ge0>3-4=-1$
+and $v_2(\kappa_4)=1>-2$.
+Corollary~\ref{cor:prime-power-index} applies at every order.
+
+For $AB\ne0$, the exact normalization is
+\[
+ \mathcal L_1((X^2(A+BX^4))^j)
+       =A^j(2j)!P_{j,4}(B/A).
+\]
+If $A=0$ or $B=0$, every positive moment is nonzero because
+the phase is a nonzero monomial.
+\end{proof}
+
+For instance, \eqref{eq:indexcondition} also gives a uniform
+sufficient index family at gap $q=2^s$, $s\ge3$:
+\[
+                    2^{\,2^s-2s}\mid n.
+\]
+Indeed $v_2(\kappa_q)=s-1$ there. These are sufficient subfamilies,
+not an all-order theorem at every prime-power gap.
+
+\paragraph{Replay and scope.}
+The checker replays the boundary algebra, exact constant transfer,
+literal relation-polynomial controls, and the fourth-gap valuation
+conditions. Universal noncollision follows from the induction,
+not a finite parameter search.
+This note proves support $\{2,6\}$ and the stated sufficient index
+criterion. It does not prove all ordinary binomials of degree six,
+unrestricted binomial SFC, general FC/SFC, or every Gamma shape.
+Internal replay is distinct from formal verification, external
+review and a priority claim.
+\end{document}

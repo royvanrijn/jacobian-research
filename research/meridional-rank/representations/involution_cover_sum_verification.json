@@ -628,12 +628,4540 @@
       "bridge_upper_bound": 7
     }
   ],
+  "all_field_three_sheet_trefoil": {
+    "degree": 3,
+    "delta": 1,
+    "matrix_columns": 4,
+    "H1_over_every_field_dimension": 0,
+    "unit_maximal_minor": {
+      "row_indices": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "determinant": -1
+    },
+    "scalar_score_over_every_field": 2
+  },
+  "fractional_seed_count": 101,
+  "fractional_seed_families": [
+    {
+      "name": "13a_373",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_375",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_391",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_392",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3264",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3266",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3275",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3276",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1005",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1006",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1007",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1011",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1012",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1013",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1043",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1044",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1045",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1046",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1047",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1048",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3842",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3844",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3855",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3856",
+      "source": "seven_sheet_cover_inputs.json",
+      "field_characteristic": 3,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_304",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_362",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_623",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_629",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3232",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3259",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3374",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3375",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_834",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_838",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_839",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_991",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_992",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_993",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1367",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1370",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1371",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1374",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1375",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_1376",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3814",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3840",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3911",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3914",
+      "source": "a6_affine_inputs.json",
+      "field_characteristic": 3,
+      "degree": 6,
+      "delta": 2,
+      "H1_dimension": 2,
+      "full_chain_columns": 73,
+      "full_chain_rank": 71,
+      "meridian_cycle_fill_rows": 52,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 6,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 8,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 10,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 12,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_4641",
+      "source": "a7_binary_inputs.json",
+      "field_characteristic": 2,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_4642",
+      "source": "a7_binary_inputs.json",
+      "field_characteristic": 2,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_4645",
+      "source": "a7_binary_inputs.json",
+      "field_characteristic": 2,
+      "degree": 7,
+      "delta": 2,
+      "H1_dimension": 1,
+      "full_chain_columns": 85,
+      "full_chain_rank": 84,
+      "meridian_cycle_fill_rows": 65,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 7,
+          "constructed_H1_dimension": 1,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 9,
+          "constructed_H1_dimension": 1,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 11,
+          "constructed_H1_dimension": 1,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 1,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3167",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3168",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3169",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3170",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3188",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3189",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3190",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3191",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3293",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3294",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3295",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3298",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3347",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3348",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3351",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3402",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3403",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13a_3411",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_326",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_329",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_330",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_341",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_344",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_345",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_348",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_351",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_352",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_355",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_357",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_358",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_510",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_513",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_514",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_518",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_520",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_521",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_524",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_525",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_526",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_529",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_530",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_531",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3739",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3742",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3745",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3748",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3770",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3773",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3776",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    },
+    {
+      "name": "13n_3779",
+      "source": "sl3_projective_family_inputs.json",
+      "field_characteristic": 3,
+      "degree": 13,
+      "delta": 4,
+      "H1_dimension": 2,
+      "full_chain_columns": 157,
+      "full_chain_rank": 155,
+      "meridian_cycle_fill_rows": 117,
+      "scalar_score": "7/2",
+      "bridge_upper": 4,
+      "trefoil_family": "mr(K#^s T(2,3))=b(K#^s T(2,3))=4+s for every integer s>=0",
+      "finite_score_controls": [
+        {
+          "trefoil_factors": 0,
+          "constructed_degree": 13,
+          "constructed_H1_dimension": 2,
+          "score": "7/2",
+          "sharp_lower_and_upper": 4
+        },
+        {
+          "trefoil_factors": 1,
+          "constructed_degree": 17,
+          "constructed_H1_dimension": 2,
+          "score": "9/2",
+          "sharp_lower_and_upper": 5
+        },
+        {
+          "trefoil_factors": 2,
+          "constructed_degree": 21,
+          "constructed_H1_dimension": 2,
+          "score": "11/2",
+          "sharp_lower_and_upper": 6
+        },
+        {
+          "trefoil_factors": 3,
+          "constructed_degree": 25,
+          "constructed_H1_dimension": 2,
+          "score": "13/2",
+          "sharp_lower_and_upper": 7
+        }
+      ]
+    }
+  ],
+  "current_named_census_reread_count": 101,
+  "one_trefoil_actual_chain_controls_by_source": [
+    {
+      "source": "seven_sheet_cover_inputs.json",
+      "seed": "13a_373",
+      "trefoil_factors": 1,
+      "field_characteristic": 3,
+      "degree": 9,
+      "delta": 2,
+      "H1_dimension": 1,
+      "score": "9/2",
+      "sharp_lower_and_upper": 5
+    },
+    {
+      "source": "a6_affine_inputs.json",
+      "seed": "13a_304",
+      "trefoil_factors": 1,
+      "field_characteristic": 3,
+      "degree": 8,
+      "delta": 2,
+      "H1_dimension": 2,
+      "score": "9/2",
+      "sharp_lower_and_upper": 5
+    },
+    {
+      "source": "a7_binary_inputs.json",
+      "seed": "13n_4641",
+      "trefoil_factors": 1,
+      "field_characteristic": 2,
+      "degree": 9,
+      "delta": 2,
+      "H1_dimension": 1,
+      "score": "9/2",
+      "sharp_lower_and_upper": 5
+    },
+    {
+      "source": "sl3_projective_family_inputs.json",
+      "seed": "13a_3167",
+      "trefoil_factors": 1,
+      "field_characteristic": 3,
+      "degree": 17,
+      "delta": 4,
+      "H1_dimension": 2,
+      "score": "9/2",
+      "sharp_lower_and_upper": 5
+    }
+  ],
   "negative_control": "Replacing trefoil by unknot gives no Betti gain",
-  "scope": "64 finite component-matching controls and four full lifted-edge mod3 homology controls on one literal retained knot joined to0..3 trefoils. Uniform sum formulas, exact free-product ranks, bridge construction and all24 seeds use written proofs and retained dependencies; not an exhaustive cover search.",
+  "scope": "101 named fractional-score seed families over their specified fixed fields; all101 full scalar homology chains and four-seed upper traces replayed, plus64 finite pair controls, four old literal0..3trefoil chains and four actual three-sheet-trefoil amalgams. The uniform integer parameter and exact normalized additivity use the written proof; no equality of seed suprema with7/2 is asserted.",
   "input_sha256": {
-    "verify_involution_cover_sums.py": "adeef95118e743ce727aad4324287f190932afad53bb25c6b2f7c221ce6142d5",
-    "INVOLUTION_COVER_SUM_FORMULAS.tex": "107ecb83fb307ed1fb8f968b61831e03982a122e326745ee3ac3db2cae791717",
+    "A7_BINARY_SHARP_FOUR.tex": "43c0adfb44b90043ed70d57b6e8aa1f12f591d23d094e757127e8ab8ff838290",
+    "GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex": "4674c03f6d490396fe50fd8563c7b1777e619096c0f4d8b44ea0b61535358269",
+    "INVOLUTION_COVER_SUM_FORMULAS.tex": "85e8aca11c79a02debf0996457d019d0e8991c60f75778838cbeaae1f71d3411",
+    "SL3_PROJECTIVE_FAMILY_AUDIT.tex": "a97717a3d53223a715249dc07677d49efb9f8d38a87637eb7744dced6db47266",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
+    "a6_affine_verification.json": "3edac8a36782276a6b08dbf1e9abe90acbcaefa68850c2598b49cd2eea3d3922",
+    "a7_binary_inputs.json": "79763701a63ddeb976306beace1685406b43b88a8a558eabe3891cef56395436",
+    "a7_binary_verification.json": "660aea255cd017ec2d3809a43acc32f11331cc90919c038318fef109bfae2245",
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "seven_sheet_cover_verification.json": "e5f267b850d46db89afb72f51d017f4968fbfb0648e64316439e91343dab15b8",
+    "sl3_projective_family_inputs.json": "386172d7a2d7296ac1074e9108ef287e3a3b1367dee99a58d3c3551b3ea560e0",
+    "sl3_projective_family_verification.json": "7a8a85e0ec27a043b7fc4d8d32a9f6ec60afe5ca55cda0330558e3521dc6ede5",
+    "sources/bhattacharjee-still-open.json": "3fae47725d8808d58a6b1a24e36ade4e19121092c92714020ae0e1d0070b1edc",
+    "sources/bjw-graph-cover-published-2018.pdf": "7db561c9b53a64beb222884719d8f2fab6280a8337879bd5c9fb848930868dc6",
+    "sources/wirtinger-systems-published-2020.pdf": "884b32bd4c6f9a8fe250e6b2d6342cbf0dadcb3d8e3a416c76cb7efe7e5e40b0",
+    "verify_a6_affine_certificates.py": "458cd9eaea046ef177b9c891425b55ef378b482096147e0b346e0b08c68fea55",
+    "verify_a7_binary_certificates.py": "4681520f64e1f87aca99daa289b8e8dbbe7b94db40404ce485a56ace1e3ec322",
     "verify_general_branched_covers.py": "55c1201156f78bccc7660a7e74b0b8e4fb441893a961156472570fade75315e6",
-    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6"
+    "verify_involution_cover_sums.py": "6cf5cc73663268e47be019987f33230bbcbd415997909ed42e903a2532155935",
+    "verify_seven_sheet_covers.py": "fbba9f40f4956c4130da6eca93fd4d874d3661e31da18141d30780408f83ea49",
+    "verify_sl3_projective_family.py": "b9f284276ec87f50b3eb7702b311fab9ec3188ff0be432646ba9d48228f1fbb1"
   }
 }

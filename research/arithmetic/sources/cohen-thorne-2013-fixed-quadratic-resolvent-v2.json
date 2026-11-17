@@ -1,0 +1,27 @@
+{
+  "title": "Dirichlet series associated to cubic fields with given quadratic resolvent",
+  "authors": [
+    "Henri Cohen",
+    "Frank Thorne"
+  ],
+  "arxiv": "1301.3563v2",
+  "version_date": "2013-08-14",
+  "primary_url": "https://arxiv.org/pdf/1301.3563v2",
+  "metadata_url": "https://arxiv.org/abs/1301.3563v2",
+  "retained_file": "cohen-thorne-2013-fixed-quadratic-resolvent-v2.pdf",
+  "locators": {
+    "anti_ray_group": "Equation (3.3), printed/PDF p.6",
+    "ray_exact_sequence": "Equation (3.7), printed/PDF p.7, including exactness on three-primary and negative parts",
+    "cubic_field_correspondence": "Proposition 3.6, equation (3.8), printed/PDF p.8"
+  },
+  "scope": "Global class-field correspondence and inverse-paired count of cubic FIELD isomorphism classes with fixed quadratic resolvent and conductor dividing a rational modulus. Imported theorem, not a replay of global class field theory.",
+  "notation_warning": "The brief proof of Proposition 3.6 writes D* where definition (3.3) for H-prime and statement (3.8) use D. The retained application follows the stated formula with K=Q(sqrt(D)).",
+  "inspected_printed_pages": [
+    6,
+    7,
+    8
+  ],
+  "retrieved_on": "2026-11-17",
+  "sha256": "cf7f5f5319bc0f00bbac1d88c6f011f879460f0db012f42e446a1887d47f3c9d",
+  "bytes": 269191
+}

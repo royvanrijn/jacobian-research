@@ -225,8 +225,9 @@ their support; the finite-mate obstruction is an additional argument.
 ## Parameter-pole removal excludes the admitted family
 
 The same conclusion holds for every finite integral rescaling
-whose critical reduction is exactly (7), even with higher generic
-momentum order. A hypothetical finite mate may first be traced
+whose critical reduction satisfies the local divisor criterion,
+even with higher generic momentum order. In particular it holds
+when the critical reduction is exactly (7). A hypothetical finite mate may first be traced
 to rational position coefficients. Its coefficients have finitely
 many s-Gauss poles. At a highest pole s^{-N}, the residue commutes
 with P, so (8) identifies it with a finite polynomial q(P).
@@ -254,7 +255,7 @@ S_epsilon has valuation at least two, so the subtraction cannot
 leave a classical cubic mate. The quartic-face theorem excludes
 all partner orders instead of only these first possibilities.
 
-## A square-ordered globally admitted frontier
+## The square ordering is also closed
 
 A small change in ordering genuinely leaves the local criterion.
 Set
@@ -285,29 +286,118 @@ This is the lowest coefficient of an actual operator square;
 replacing it by the noncommutative fourth power in (6) changes
 that divisor character. The distinction cannot be dropped.
 
-The generic-order argument above still excludes prescribed regular
-mates of order at most four for S_sq. This note supplies no mate
-of order five or higher and no polynomial-centralizer theorem for
-(15). Those are explicit remaining obligations for this admitted
-candidate. Other obstructions may impose further restrictions;
-failure of the present criterion does not assert existence.
+The vanishing character only limits the local divisor criterion.
+The [all-order square-face residue proof](SQUARE_ORDERED_QUARTIC_FACE.md)
+now proves that (15) has rational polynomial centralizer and no finite
+scalar mate over any finite algebraic coefficient cover.
+[QOI1](ORDERED_QUARTIC_INFINITY_OBSTRUCTION.md) proves the same
+conclusion independently and permits more scalar orderings.
+Finite parameter-pole removal therefore closes S_sq at every finite
+partner order. It is no longer a remaining candidate.
+
+## A globally admitted mixed cubic-quartic face
+
+Keep W=X^3C^2 and let lambda be a nonzero h-independent scalar.
+The exact identities
+
+\[
+ \begin{split}
+ [C,v]&=rh/v,\\
+ vW&=X^2C^2,\\
+ Wv&=X^2C^2+2rhX^4C-r^2h^2X^6
+ \end{split}                                             \tag{17}
+\]
+
+show that both products vW and Wv are globally admitted.
+Indeed [C^2,v]=rh(Cv^{-1}+v^{-1}C), while
+Cv^{-1}=v^{-1}C-rh v^{-3}; multiplying by v^{-3}
+gives the stated ordering correction. Define the fully polynomial
+operator E=2X^2C^2+2RhX^4C-R^2h^2X^6=vW+Wv and put
+
+\[
+ S_\lambda=S_b-3\lambda h\{RE+CW+WC\}
+                             -3R\lambda^2h^2W^2.         \tag{18}
+\]
+
+Every factor in (18) belongs to the actual global centralizer of R.
+Consequently S_lambda is a finite globally admitted operator commuting
+with R. It has Long's prescribed classical reduction and generic
+momentum order four. On the generic fiber its leading coefficient
+is -3lambda^2*h^2*r^5*v^{-6}, which is nonzero.
+
+Since z=v+C/r and g=-3r, equations (3) and (17) give exactly
+
+\[
+ S_\lambda-\frac4{3r}
+      =-3r\bigl(z+\lambda hW\bigr)^2+2v.                 \tag{19}
+\]
+
+This identity retains the ordered cross terms zW+Wz; replacing them
+by twice one product would change the operator. Under (5),
+W=s^{-4}r^2V^{-3}(A-sV)^2, so the integral critical reduction is
+
+\[
+ P_{\rm mix}=-3r\bigl(A+\lambda r^2V^{-3}A^2\bigr)^2+2V.
+                                                                  \tag{20}
+\]
+
+With weights wt(V)=1 and wt(A)=3, Ore contractions lower weight
+by five. The top commutative weighted symbol of (20) is
+
+\[
+             -3r\bigl(\xi+\lambda r^2V^{-3}\xi^2\bigr)^2.
+\]
+
+In particular its cubic coefficient has the nonzero top term
+-6lambda*r^3*V^{-3}, of total weight six. QOI1's strict quartic
+cone has top symbol s^2V^{-6}xi^4+g xi^2 and permits no cubic
+term of weight six; its scalar ordering terms have lower weight.
+Thus (20) lies outside that proved cone. Its lowest canonical
+quartic coefficient still has the roots in (16), so the earlier
+divisor character vanishes as well.
+
+The admission and symbol calculations do not themselves exclude a mate.
+A separate [twisted-adjoint theorem](TWISTED_ADJOINT_SQUARE_OBSTRUCTION.md)
+now excludes every finite scalar mate for both (18) and (20), in every
+partner order and on finite algebraic coefficient covers. The rational
+quadratic operator in (19) has leading coefficient lambda*h*r^2*v^-3.
+Its odd v-divisor forces every finite rational mate to have even order,
+whereas its coefficient-fixed adjoint would turn one into a nonzero
+skew-adjoint mate of odd order. This contradiction closes the mixed
+family without treating the quadratic operator as a canonical coordinate.
+No polynomial-centralizer conclusion for this mixed square is needed.
+
+The globally admitted nonsymmetric perturbation
+S_(lambda,nu)=S_lambda+nu*h*X^2*C, with nu an h-independent scalar,
+is also closed. For nu nonzero its
+critical face adds nu*r*V^-2*A to (20), breaking that adjoint.
+The separate universal residue argument in the same theorem proves
+polynomial centralizer and no finite mate for the critical face;
+QCL1's finite parameter-pole descent then excludes every finite
+generic mate of this exact global perturbation. These closures do
+not classify arbitrary mixed negative-Laurent corrections.
 
 ## Scope and evidence
 
 The global monomials (4) disprove a universal favorable Laurent
 support restriction from admission alone. The divisor criterion
-excludes every isolated negative pole monomial of momentum order
-at least two and its same-face parameter deformations, including
-the first pure quartic critical term. Multiple terms on the
-lowest canonical face, such as the square ordering (14), can
-make the divisor character vanish and remain outside the criterion.
+excludes isolated negative pole monomials of momentum order at
+least two and their same-face parameter deformations. The
+square-ordered quartic case is closed by its all-order residue
+proof and QOI1. The coupled mixed face (20), although outside those
+criteria, is closed by the independent adjoint theorem, and its specified
+nonsymmetric first-order perturbation by a universal residue certificate.
+Other mixed negative-Laurent faces, deformed first images and nonscalar
+carriers remain outside these results.
 
 [The exact controls](check_global_quartic_face.py) verify the global
-chart identities and commutators, centered support realization,
-quartic bottom coefficients, root characters, H-infinity degrees,
-polynomial-power leading coefficients, the positive Airy-type
-control and a corrupted-divisor rejection. The universal
-centralizer, all-order mate exclusion and finite parameter-pole
-argument are written proofs, not finite searches. No actual Long
-mate, bounded lift, DC1/DC2 resolution, formal verification,
-independent whole-proof replay or external review is claimed.
+chart identities and commutators, support realization, the isolated
+quartic divisor test, polynomial-power identities, the positive
+Airy-type control, the square ordering's vanishing character, and
+the exact mixed-product, completed-square and critical-symbol
+identities. Universal centralizer and mate exclusions use the
+written proofs. The mixed admission controls establish the identities;
+its mate exclusion uses the separately linked adjoint and residue proofs.
+No actual Long mate, bounded lift, DC1/DC2 resolution, formal
+verification, independent whole-proof replay or external review
+is claimed.

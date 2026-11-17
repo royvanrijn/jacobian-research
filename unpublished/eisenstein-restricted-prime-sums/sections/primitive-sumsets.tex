@@ -1,0 +1,128 @@
+\section{What the two binary answers give us}\label{sec:primitive-sumsets}
+With both binary identities proved, the two families now fit into a
+single familiar object. We look at norm values that admit coprime
+coordinates:
+\[
+\NN=\{Q(x,y)>0:x,y\in\Z,\ \gcd(x,y)=1\}.
+\]
+For a set $S\subset\Z_{>0}$, let $kS$ denote the sum of exactly $k$
+members of $S$, with repetitions allowed. We distinguish this from a
+dilation, writing $3\!\cdot\! S=\{3s:s\in S\}$.
+
+We begin by identifying these values, then use the two binary identities
+to work out their sums.
+
+\begin{proposition}\label{prop:primitive-classification}
+The primitive Eisenstein norms are exactly
+\[
+\NN=\AA\sqcup(3\!\cdot\!\AA).
+\]
+\end{proposition}
+\begin{proof}
+If an inert prime divides $Q(x,y)$, it divides both coordinates by
+\eqref{eq:anisotropic}. Also $9\mid Q(x,y)$ forces $3\mid x,y$.
+Indeed, $3\mid Q(x,y)$ gives $x+y\equiv0\pmod3$; writing
+$y=-x+3t$ gives
+\[
+Q(x,y)=3(x^2-3xt+3t^2).
+\]
+Divisibility by $9$ now forces $3\mid x$, and hence $3\mid y$.
+Thus a primitive norm has no inert prime factor and contains at most
+one factor $3$. It belongs to the stated union.
+
+Conversely, $R=\Z[\omega]$ is norm Euclidean by the lattice rounding
+argument, and hence is a unique factorization domain. For a rational
+prime $q\equiv1\pmod3$, choose a nontrivial cube root
+$t\in\F_q^\times$. The ideal $(q,\omega-t)$ has quotient $\F_q$;
+its principal generator $\pi_q$ therefore has norm $q$. The two distinct
+roots $t,t^{-1}$ yield conjugate, nonassociate factors. Thus
+$q=\pi_q\bar\pi_q$, up to a unit.
+For $a=\prod q^{e_q}\in\AA$, choose one factor $\pi_q$ at each $q$ and
+put $z=\prod\pi_q^{e_q}$. Then $N(z)=a$. The element
+$(1-\omega)z$ has norm $3a$. Neither element is divisible by a rational
+prime: a split rational prime would require both conjugate factors,
+an inert prime cannot divide its norm, and $3$ is associated to
+$(1-\omega)^2$, whereas at most one factor $1-\omega$ was used.
+Their coordinates in the integral basis $1,\omega$ are therefore
+coprime. Finally, the two sets are disjoint, since elements of $\AA$
+are prime to $3$.
+\end{proof}
+
+We can now use the two binary answers in their simplest form:
+\begin{equation}\label{eq:binary-input-sumsets}
+\AA+\AA=\{n>0:n\equiv2\pmod6\},\qquad
+\AA+(3\!\cdot\!\AA)=\{n>0:n\equiv4\pmod6\}.
+\end{equation}
+The mixed identity fills the second family of residue classes. Together
+with the first identity, it gives the complete two-summand answer below.
+
+\begin{proposition}\label{prop:primitive-binary}
+One has
+\[
+\NN+\NN
+=\{n\in\Z_{>0}:n\text{ is even},\ n\not\equiv0,12\pmod{18}\}.
+\]
+\end{proposition}
+\begin{proof}
+Expand the sum using Proposition~\ref{prop:primitive-classification}.
+The three possibilities and their exact positive residue classes are
+\[
+\begin{array}{c|c}
+\text{summands}&\text{residue classes modulo }18\\ \hline
+ a+b\quad(a,b\in\AA)&2,8,14\\
+ a+3b\quad(a,b\in\AA)&4,10,16\\
+ 3a+3b\quad(a,b\in\AA)&6.
+\end{array}
+\]
+The first two rows follow from \eqref{eq:binary-input-sumsets}; the last
+is three times its first identity. Their union is the stated set.
+\end{proof}
+The missing classes also have a direct local explanation. Every primitive
+norm is odd. If their sum is divisible by $3$, both summands belong to
+$3\!\cdot\!\AA$; each is $3$ modulo $18$, so their sum is $6$ modulo
+$18$. This excludes $0$ and $12$ modulo $18$.
+
+Two summands are the hard part. For more summands, the presence of $1$
+does most of the work: subtract some ones, use a binary decomposition,
+and put the ones back.
+
+\begin{proposition}\label{prop:higher-sumsets}
+For every $k\ge2$, one has
+\[
+k\AA=\{n\in\Z:n\ge k,\ n\equiv k\pmod6\}.
+\]
+Consequently every positive integer is a sum of at most seven elements
+of $\AA$, and seven is necessary. For every $k\ge3$, one has
+\[
+k\NN=\{n\in\Z:n\ge k,\ n\equiv k\pmod2\}.
+\]
+Every positive integer is then a sum of at most four primitive norms,
+and four is necessary.
+\end{proposition}
+\begin{proof}
+For $k\AA$, positivity and congruence are necessary. Conversely, subtract
+$k-2$ copies of $1$ from an integer on the right. The remainder is at
+least $2$ and congruent to $2$ modulo $6$, so it is a sum of two members
+of $\AA$. For $n\ge7$, choose the unique $k\in\{2,3,4,5,6,7\}$ congruent
+to $n$ modulo $6$; the formula applies. For $n<7$, use ones.
+A sum of $r$ elements of $\AA$ equal to $25$ has $r\equiv1\pmod6$.
+Since $25=5^2\notin\AA$, it cannot have fewer than seven terms, and
+\[
+25=13+7+1+1+1+1+1.
+\]
+
+Every primitive norm is odd. To prove the converse for three summands,
+let $n\ge3$ be odd. If $n\equiv3\pmod6$, use the formula for $3\AA$.
+If $n\equiv5\pmod6$, write $n=3+(a+b)$ using the first binary identity.
+If $n\equiv1\pmod6$, then $n\ge7$ and the mixed identity writes
+$n=3+(a+3b)$. All three summands in each case are primitive norms.
+For $k>3$, subtract $k-3$ ones and apply the three-summand result.
+Thus odd integers at least $3$ use three terms and even integers at least
+$4$ use four; $1$ and $2$ use one and two ones. The integer $12$ is not
+a sum of two primitive norms by Proposition~\ref{prop:primitive-binary},
+and parity excludes one or three terms. Since $12=3+3+3+3$, four is sharp.
+\end{proof}
+
+The two sharp examples mark the end of this chain: the binary identities
+give all the higher sumsets, and $12$ and $25$ show exactly where the
+universal bounds stop.

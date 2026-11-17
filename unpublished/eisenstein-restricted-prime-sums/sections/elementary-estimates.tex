@@ -1,0 +1,87 @@
+\section{Putting numbers on the estimates}\label{sec:elementary}
+The local estimate is in place. We now need bounds that can be added
+over all unwanted primes while keeping the total below one. A bound on
+norm multiplicities handles the large primes; elementary residue counts
+handle how many small primes there are.
+
+Define
+\[
+M(n)=\max_{1\le u\le n}\prod_{\substack{q^e\Vert u\\q\equiv1\ (3)}}(e+1).
+\]
+Unique factorization in $R$ shows that a positive integer $u$ has either
+no Eisenstein norm representations or exactly
+$6\prod_{q\equiv1\ (3)}(e_q+1)$ of them. Inert prime exponents must
+be even, and the ramified prime contributes no choice. In particular
+the count is at most $6M(n)$ for $u\le n$.
+
+\begin{lemma}\label{lem:divisor}
+For every positive integer $n$, one has $M(n)\le(15/8)n^{1/5}$.
+\end{lemma}
+\begin{proof}
+The relevant local factors are $G_q(a)=(a+1)q^{-a/5}$ for split primes
+$q\equiv1\pmod3$. For $q\ge32$, the inequality $a+1\le2^a$ gives
+$G_q(a)\le1$. The successive ratio
+$(a+2)/((a+1)q^{1/5})$ decreases with $a$, so each maximum is found by
+checking up to the first $E$ with $(E+2)^5\le q(E+1)^5$.
+For $q=7,13,19,31$, the maximizing exponents are $2,1,1,1$.
+The product of the fifth powers of these maxima is
+\[
+\frac{7962624}{375193}<\left(\frac{15}{8}\right)^5.
+\]
+Multiplication over prime factors of each $u\le n$ proves the bound.
+\end{proof}
+
+\begin{lemma}\label{lem:lattice}
+The number of nonzero Eisenstein integers of norm at most $t$ is at most
+$6\lfloor t\rfloor\le6t$ for $t\ge0$.
+\end{lemma}
+\begin{proof}
+Each orbit of the six units has a unique representative $x+y\omega$ with
+$x\ge1$ and $0\le y<x$. Give this representative the label
+$L=x(x-1)/2+y+1$. Labels are distinct positive integers. For $x\ge2$,
+\[
+L\le x(x+1)/2\le3x^2/4\le Q(x,y),
+\]
+and $x=1$ is immediate. Thus at most $\lfloor t\rfloor$ orbits occur.
+\end{proof}
+For an odd inert prime $p$, divisibility of a component norm by $p$
+allows that component to be divided by $p$. Among the retained odd
+components it is nonzero. Lemma~\ref{lem:lattice} gives at most $6n/p^2$
+choices, and the other component has at most $6M(n)$ choices for each
+norm value. Counting either spoiled component and dividing by
+$R_o(n)=12S(n)\ge18n$ gives
+\begin{equation}\label{eq:tail-reps}
+\frac{b_p^o(n)}{R_o(n)}\le\frac{4M(n)}{p^2}
+\le\frac{15}{2}\frac{n^{1/5}}{p^2}.
+\end{equation}
+
+Let $\PP_o=\PP\setminus\{2\}$. For $P\ge5$, we need
+\begin{align}
+\#\{p\in\PP_o:p\le P\}&\le\frac{2P}{15}+\frac{17}{15},\label{eq:pi}\\
+\sum_{\substack{p\in\PP_o\\p>P}}p^{-2}
+&\le\frac{2}{15P}+\frac{8}{5P^2},\label{eq:prime-tail}\\
+\sum_{p\in\PP_o}\frac2{p(p-1)}&<\frac3{20}.\label{eq:prime-main}
+\end{align}
+Here are elementary proofs. Apart from $5$, these primes occupy the
+residues $11,17,23,29\pmod{30}$. If $A(t)$ counts positive integers in
+these four residues, the discrepancy $A(t)-2t/15$ is $30$-periodic, decreases linearly
+between jumps at $11,17,23,29$, and has endpoint and left-limit bounds
+\[
+-\frac{22}{15}\le A(t)-\frac{2t}{15}\le\frac2{15}.
+\]
+This proves \eqref{eq:pi}, and also
+$A(t)-A(P)\le2(t-P)/15+8/5$ for $t\ge P$. Partial summation gives the all-real bound
+\[
+\sum_{\substack{p\in\PP_o\\p>P}}p^{-2}
+\le2\int_P^\infty\frac{A(t)-A(P)}{t^3}\,dt
+\le\frac2{15P}+\frac8{5P^2}.
+\]
+Prime $5$ contributes the extra $1$ in the counting estimate and is
+absent from this tail because $P\ge5$. Finally all odd inert primes are among $6k-1$,
+$k\ge1$. Bounding the tail after $k=3$ by an integral yields
+\[
+\sum_{p\in\PP_o}\frac2{p(p-1)}
+\le\frac1{10}+\frac1{55}+\frac1{136}
++\int_3^\infty\frac{2\,dx}{(6x-2)^2}
+=\frac{6569}{44880}<\frac3{20}.
+\]

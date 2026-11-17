@@ -1,0 +1,21 @@
+{
+  "scope": "Independent Python and Java computations below100000000; all16,666,667 targets N=2mod6",
+  "all_comparisons_match": true,
+  "comparisons": {
+    "largest_target": true,
+    "number_of_targets": true,
+    "allowed_summands_count": true,
+    "largest_least_summand": true,
+    "balanced_exceptions": true,
+    "balanced_max_search_offset_in_index_units": true,
+    "sha256_allowed_boolean_array": true,
+    "sha256_unrestricted_int32_witness_indices": true,
+    "sha256_balanced_int32_witness_indices": true,
+    "unrestricted_exceptions": true,
+    "least_summand_histogram": true
+  },
+  "python_receipt": "finite_below_100000000/receipt.json",
+  "java_receipt": "java_finite_receipt.json",
+  "java_command": "java -Xmx512m VerifyEisenstein.java 100000000 java_finite_receipt.json",
+  "java_elapsed_seconds": 1.334845152
+}

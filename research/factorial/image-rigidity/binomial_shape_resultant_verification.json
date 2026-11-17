@@ -1,0 +1,56 @@
+{
+  "kind": "internal exact replay; universal proofs are the TeX source",
+  "scope": {
+    "natural_divisor": "all integer a>=0,d>=1,n>=1",
+    "exact_shape_resultant_degree": "(2d-1)n(n+1)/2",
+    "exact_positive_leading_coefficient": "d^(n(n+1))*prod_(j1..n)j^j",
+    "additional_lower_one_divisor": "(beta+(d+1)n+d)^n, all n,d>=1",
+    "nonnegative_positive_shape_resultant": "all beta>0; every positive shape zero is repeated",
+    "residual_coefficient_positivity_universally_proved": false,
+    "residual_squarefreeness_universally_proved": false,
+    "beta_hurwitz_shortcut": "false at a0,d5,n7 by complete exact certificate",
+    "all_ordinary_binomial_sfc": false
+  },
+  "controls": {
+    "symbolic_resultant_normalization_cases": 36,
+    "lower_one_extra_factor_controls": 36,
+    "finite_formal_gaussian_moment_controls": 144,
+    "complete_beta_hurwitz_certificate": {
+      "parameters": {
+        "n": 7,
+        "a": 0,
+        "d": 5
+      },
+      "primitive_degree": 112,
+      "integer_resultant_identity_nodes": 253,
+      "identity_degree_bound": 252,
+      "all_coefficients_strictly_positive": true,
+      "negative_hurwitz_minor_order": 84,
+      "negative_hurwitz_minor_decimal_digits": 7555,
+      "negative_hurwitz_minor_sha256": "74a8cdc1563299954ecb73b99d2134ce8cae4a032f4cccbf92a76d84f5bf16a3",
+      "rational_routh_first_negative_row": 84,
+      "corrupted_coefficient_rejection": true,
+      "right_half_plane_shape_zero": true,
+      "positive_real_shape_zero_asserted": false,
+      "SFC_counterexample_asserted": false
+    },
+    "primary_hurwitz_source": {
+      "file": "sources/holtz-khrushchev-kushel-2015-v1.pdf",
+      "sha256": "05aaeaeddc525d095461d161bab6417415c36e22537f9322e5760a69c7289db5",
+      "scope": "Theorem1, p1, classical real-polynomial Routh-Hurwitz criterion"
+    }
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "BINOMIAL_SHAPE_RESULTANT.tex": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae",
+    "binomial_shape_resultant.py": "6fcbe02c57881d79c957c038f7482f26174e440612e764e30edea0e4d0ba1c10",
+    "binomial_shape_resultant_beta_hurwitz_certificate.json": "20783f0a140b79defe158e2147e575e2c4ab942676383e78df5600dd3499fe33",
+    "sources/holtz-khrushchev-kushel-2015-v1.pdf": "05aaeaeddc525d095461d161bab6417415c36e22537f9322e5760a69c7289db5"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "passed": true,
+  "command": "python research/factorial/image-rigidity/binomial_shape_resultant.py"
+}

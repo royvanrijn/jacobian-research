@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "exact_controls": 615,
+  "checks_by_kind": {
+    "saturation prime good reduction": 2,
+    "complete saturation finite-field point count": 2,
+    "exact saturation reduction coordinates": 2,
+    "exact saturation three-primary images": 2,
+    "saturation nonzero image has exact order three": 2,
+    "complete finite-field group exponent control": 106,
+    "second saturation images are negatives": 1,
+    "complete independent mod-three saturation forms": 9,
+    "saturation forms determinant is a unit": 1,
+    "exact Cardano norm identity": 1,
+    "exact Cardano sum identity": 1,
+    "Cardano product normalization": 1,
+    "quadratic-root residue for X1": 1,
+    "X1 unit congruences": 1,
+    "X2 unit congruence": 1,
+    "kappa and formal-leading unit": 1,
+    "complete Q3 cube-unit residues": 1,
+    "complete unramified quadratic cube units d2": 1,
+    "complete unramified quadratic cube units d5": 1,
+    "complete unramified quadratic cube units d8": 1,
+    "normalized cubic root modulus nine": 162,
+    "independent complete local cubic test rational-X": 134,
+    "independent complete local cubic test finite-root-disc": 30,
+    "independent complete local cubic test branch-disc": 42,
+    "independent complete local cubic test formal-disc": 27,
+    "exact rational witnesses": 1,
+    "P1 generator belongs to the proven local subgroup": 1,
+    "P2 generator local two-torsion displacement depth": 1,
+    "bounded rational group law": 24,
+    "independent complete local cubic test rational-MW": 24,
+    "complete refined finite quotient": 6,
+    "first refined upper coefficient": 1,
+    "smaller-image local measure": 1,
+    "full-image branch-disc local measure": 1,
+    "full-image total local measure": 1,
+    "geometric-sum refined finite bound": 19,
+    "three-adic class corruption rejected": 1,
+    "three-adic unit corruption rejected": 1
+  },
+  "complete_finite_quotients": [
+    {
+      "J": 1,
+      "smaller_image": true,
+      "total": 12,
+      "retained": 5,
+      "fraction": "5/12"
+    },
+    {
+      "J": 1,
+      "smaller_image": false,
+      "total": 36,
+      "retained": 13,
+      "fraction": "13/36"
+    },
+    {
+      "J": 2,
+      "smaller_image": true,
+      "total": 324,
+      "retained": 115,
+      "fraction": "115/324"
+    },
+    {
+      "J": 2,
+      "smaller_image": false,
+      "total": 972,
+      "retained": 331,
+      "fraction": "331/972"
+    },
+    {
+      "J": 3,
+      "smaller_image": true,
+      "total": 8748,
+      "retained": 3085,
+      "fraction": "3085/8748"
+    },
+    {
+      "J": 3,
+      "smaller_image": false,
+      "total": 26244,
+      "retained": 8917,
+      "fraction": "8917/26244"
+    }
+  ],
+  "local_control_profile": {
+    "O": {
+      "tested": 154,
+      "soluble": 17
+    },
+    "X0": {
+      "tested": 13,
+      "soluble": 0
+    },
+    "X1": {
+      "tested": 66,
+      "soluble": 13
+    },
+    "X2": {
+      "tested": 24,
+      "soluble": 17
+    }
+  },
+  "largest_independent_cubic_root_modulus_exponent": 4,
+  "bounded_domains": {
+    "rational_X": "X=a/3^(2n), 0<=n<=3, -60<=a<=60, a!=0; retained only locally square elliptic RHS",
+    "finite_root_discs": "residue1or2, 1<=m<=5, u=1..8 not divisible3",
+    "branch_discs": "4<=k<=10, u=1..8 not divisible3",
+    "formal_discs": "1<=n<=6, a in{1,4,7,10,13,16,19,22,25}",
+    "rational_MW": "|m|,|n|<=2, sign-canonical, rational T0 added or not; no basis assumption"
+  },
+  "finite_upper_fraction": "5/12",
+  "limsup_upper_fraction": "55/156",
+  "local_only_leading_fraction": "55/156",
+  "ambient_full_group_local_measure": "19/156",
+  "finite_three_saturation_certificate": {
+    "41": {
+      "cardinality": 48,
+      "P1": [
+        39,
+        37
+      ],
+      "P2": [
+        0,
+        0
+      ],
+      "scale": 16,
+      "image_P1": [
+        37,
+        37
+      ],
+      "image_P2": null
+    },
+    "53": {
+      "cardinality": 60,
+      "P1": [
+        21,
+        16
+      ],
+      "P2": [
+        33,
+        51
+      ],
+      "scale": 20,
+      "image_P1": [
+        13,
+        45
+      ],
+      "image_P2": [
+        13,
+        8
+      ]
+    }
+  },
+  "actual_MW_closure_case_determined": true,
+  "actual_MW_closure_index": 3,
+  "saturation_at_other_primes_claimed": false,
+  "all_valuation_quantifiers_supplied_by_written_proof": true,
+  "bounded_tests_prove_unbounded_scope": false,
+  "Hasse_infinitude_claimed": false,
+  "uniform_J_error_claimed": false,
+  "formal_verification": false,
+  "external_review": false,
+  "independent_replay": false,
+  "python": "3.12.3",
+  "arithmetic": "standard-library exact integers and fractions",
+  "input_sha256": {
+    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "7c9a1dd210a7b6a1f94986c62a819809bdce8c465a86b55d5364d32be386bddf",
+    "verify_elliptic_exception_complete_three_adic_classification.py": "91b0d93912f9d866a3ae3a88cc8744ccb0bbb6246b45946760d649a173217498"
+  }
+}

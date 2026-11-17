@@ -1,0 +1,41 @@
+\section{A standalone verifier for both finite ranges}\label{app:verifier}
+The program below uses only the Python standard library. Its complete
+inputs are the two residue classes, the cutoff $10^8$ and the small
+summand bounds in Proposition~\ref{prop:finite-certificates}. It constructs
+the membership sieve itself. For every target it finds an allowed
+complementary index, or raises an exception. The direct test of all
+divisors of a small candidate is equivalent to requiring all its prime
+factors to be $1$ modulo $3$: products of such primes have every divisor
+$1$ modulo $3$.
+
+Membership entries are ordered bytes $0$ or $1$. A witness index is
+encoded as a signed little-endian 32-bit integer in increasing target
+order. The witness is $i$ in the unrestricted identity and $j$, the index
+of $b$, in the mixed identity. The expected SHA256 digests are:
+
+\noindent\textit{Unrestricted membership:}
+\begin{quote}\footnotesize\ttfamily
+010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575
+\end{quote}
+\noindent\textit{Unrestricted least-witness indices:}
+\begin{quote}\footnotesize\ttfamily
+fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0
+\end{quote}
+\noindent\textit{Mixed membership:}
+\begin{quote}\footnotesize\ttfamily
+aadd1a6ebe6f6450f4b7e270d308af6971f1b38d3b388b768c3d28c752518fc0
+\end{quote}
+\noindent\textit{Mixed least-$b$ indices:}
+\begin{quote}\footnotesize\ttfamily
+91496589fd9b1be7e9aba7cd77d63cb2c0de4be710564172ded09198c638c49d
+\end{quote}
+The membership arrays have different lengths because the two target
+ranges have different final indices. The digests identify outputs;
+correctness rests on the exact sieve and exhaustive witness tests.
+The accompanying \href{source.zip}{\texttt{source.zip}} contains this
+program as \texttt{verify\_binary\_certificates.py}, the separate NumPy
+implementations, and the exact-constant and ramified-count checks.
+
+\begingroup\footnotesize
+\verbatiminput{verify_binary_certificates.py}
+\endgroup

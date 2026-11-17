@@ -1,0 +1,115 @@
+{
+  "largest_target": 99999998,
+  "number_of_targets": 16666667,
+  "allowed_summands_count": 6992353,
+  "unrestricted_exceptions": [],
+  "largest_least_summand": 211,
+  "least_summand_histogram": [
+    {
+      "summand": 1,
+      "new_targets": 6992353
+    },
+    {
+      "summand": 7,
+      "new_targets": 4296673
+    },
+    {
+      "summand": 13,
+      "new_targets": 2503660
+    },
+    {
+      "summand": 19,
+      "new_targets": 1392391
+    },
+    {
+      "summand": 31,
+      "new_targets": 640650
+    },
+    {
+      "summand": 37,
+      "new_targets": 389497
+    },
+    {
+      "summand": 43,
+      "new_targets": 220471
+    },
+    {
+      "summand": 49,
+      "new_targets": 117529
+    },
+    {
+      "summand": 61,
+      "new_targets": 50287
+    },
+    {
+      "summand": 67,
+      "new_targets": 29358
+    },
+    {
+      "summand": 73,
+      "new_targets": 16394
+    },
+    {
+      "summand": 79,
+      "new_targets": 8664
+    },
+    {
+      "summand": 91,
+      "new_targets": 3873
+    },
+    {
+      "summand": 97,
+      "new_targets": 2430
+    },
+    {
+      "summand": 103,
+      "new_targets": 1210
+    },
+    {
+      "summand": 109,
+      "new_targets": 615
+    },
+    {
+      "summand": 127,
+      "new_targets": 284
+    },
+    {
+      "summand": 133,
+      "new_targets": 155
+    },
+    {
+      "summand": 139,
+      "new_targets": 84
+    },
+    {
+      "summand": 151,
+      "new_targets": 46
+    },
+    {
+      "summand": 157,
+      "new_targets": 19
+    },
+    {
+      "summand": 163,
+      "new_targets": 13
+    },
+    {
+      "summand": 169,
+      "new_targets": 5
+    },
+    {
+      "summand": 181,
+      "new_targets": 4
+    },
+    {
+      "summand": 193,
+      "new_targets": 1
+    },
+    {
+      "summand": 211,
+      "new_targets": 1
+    }
+  ],
+  "sha256_allowed_boolean_array": "010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575",
+  "sha256_unrestricted_int32_witness_indices": "fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0"
+}

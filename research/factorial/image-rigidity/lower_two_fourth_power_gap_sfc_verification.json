@@ -1,0 +1,175 @@
+{
+  "kind": "internal exact replay; all-index claims rely on the written induction",
+  "passed": true,
+  "scope": {
+    "boundary_invariant": "all p prime,s,n>=1 in the exact closed AR class, degbarP<=p^s-1 and vP0>b_s-s",
+    "ordinary_degree_unrestricted": true,
+    "strict_bound_sharp_at_every_stage": true,
+    "ordinary_support_two_six_all_indices": true,
+    "prime_power_index_condition": "q=p^s>=3, v_p(n)>b_s-2s and v_p(kappa_q)>-s",
+    "all_ordinary_degree_six_binomials": false,
+    "unrestricted_binomial_SFC_or_general_FC_SFC": false,
+    "boundary_sharpness_is_SFC_counterexample": false
+  },
+  "controls": {
+    "boundary_saturated_Hasse_derivatives": 32,
+    "complete_small_scalar_unit_basis_cases": 12,
+    "exact_stage_constant_transfer_controls": 4,
+    "actual_fractional_coefficient_normalizations": 4,
+    "over_normalization_rejected": 4,
+    "whole_operator_sharpness_controls": 7,
+    "corrupted_sharpness_control_rejected": 1,
+    "literal_relation_polynomials_and_cyclic_transfer_controls": 5,
+    "literal_Gamma_root_bound_coefficients": 20,
+    "outside_prime_power_index_condition_control": 1
+  },
+  "fractional_normalization_controls": [
+    {
+      "p": 2,
+      "s": 3,
+      "ordinary_degree": 10,
+      "actual_minimum": "3/2",
+      "first_unit_index": 2,
+      "next_constant_valuation": "7/2"
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "ordinary_degree": 11,
+      "actual_minimum": "3/2",
+      "first_unit_index": 2,
+      "next_constant_valuation": "3/2"
+    },
+    {
+      "p": 5,
+      "s": 2,
+      "ordinary_degree": 27,
+      "actual_minimum": "3/2",
+      "first_unit_index": 2,
+      "next_constant_valuation": "7/2"
+    },
+    {
+      "p": 2,
+      "s": 4,
+      "ordinary_degree": 18,
+      "actual_minimum": "3/2",
+      "first_unit_index": 2,
+      "next_constant_valuation": "21/2"
+    }
+  ],
+  "sharpness_controls": [
+    {
+      "p": 2,
+      "s": 1,
+      "q": 2,
+      "constant_valuation": 0,
+      "radius_valuation": 1,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "q": 4,
+      "constant_valuation": 1,
+      "radius_valuation": 3,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "q": 8,
+      "constant_valuation": 4,
+      "radius_valuation": 7,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 3,
+      "s": 1,
+      "q": 3,
+      "constant_valuation": 0,
+      "radius_valuation": 1,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "q": 9,
+      "constant_valuation": 2,
+      "radius_valuation": 4,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 5,
+      "s": 1,
+      "q": 5,
+      "constant_valuation": 0,
+      "radius_valuation": 1,
+      "actual_cyclic_collision": true
+    },
+    {
+      "p": 5,
+      "s": 2,
+      "q": 25,
+      "constant_valuation": 4,
+      "radius_valuation": 6,
+      "actual_cyclic_collision": true
+    }
+  ],
+  "relation_controls": [
+    {
+      "p": 2,
+      "s": 2,
+      "n": 1,
+      "relation_constant_valuation": 2,
+      "boundary_threshold": 1,
+      "actual_whole_operator_identity": true
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "n": 2,
+      "relation_constant_valuation": 3,
+      "boundary_threshold": 1,
+      "actual_whole_operator_identity": true
+    },
+    {
+      "p": 2,
+      "s": 2,
+      "n": 5,
+      "relation_constant_valuation": 4,
+      "boundary_threshold": 1,
+      "actual_whole_operator_identity": true
+    },
+    {
+      "p": 2,
+      "s": 3,
+      "n": 4,
+      "relation_constant_valuation": 5,
+      "boundary_threshold": 4,
+      "actual_whole_operator_identity": true
+    },
+    {
+      "p": 3,
+      "s": 2,
+      "n": 3,
+      "relation_constant_valuation": 3,
+      "boundary_threshold": 2,
+      "actual_whole_operator_identity": true
+    }
+  ],
+  "exact_imports": {
+    "stage_change": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex lem:artin-hasse-closure, exact class and displayed block identities",
+    "mixed_rank": "LOWER_TWO_PRIME_GAP_SFC.tex thm:mixed, necessary direction at gap4 and general prime powers"
+  },
+  "python": "3.12.3",
+  "source_sha256": {
+    "LOWER_TWO_FOURTH_POWER_GAP_SFC.tex": "e238569c21a0ccc7fb507d910608a734461fefaab4d96d5df0124afe73407631",
+    "lower_two_fourth_power_gap_sfc.py": "46e0c91d92ccc172505f8e835a62f29f5f21a8c672c8bdbb2cc915b6341cd15a",
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+    "LOWER_TWO_PRIME_GAP_SFC.tex": "8453b5b0ccd220573ef106fa26790e1f691885970b8c2116f036ed893ab2c200"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "command": "python research/factorial/image-rigidity/lower_two_fourth_power_gap_sfc.py"
+}

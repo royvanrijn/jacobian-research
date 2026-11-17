@@ -25,6 +25,21 @@ and [separate mixed zero-root theorem, Section 9](GAUSSIAN_MULTIBASE_QUADRATIC_F
 For the comparison argument below set K=C, O=K[t], and
 M=O Phi_P[K[Z,W,Y]]. All images retain the original unit.
 
+**Complete finite-image conclusion.** For CONSTANT a and arbitrary
+NONCONSTANT c, with NO common-root or multiplicity restriction,
+
+    M finite over O iff a=0 and h,c belong to z^2 C[z].
+
+In every finite case f=exp(k(0)t+u(0)^2t^2/2) is primitive and V=M=fO.
+Safety additionally requires u(0)=k(0)=0, and every safe member is pure.
+Section 14 proves this universal statement using a fixed ORIGINAL marker
+that clears the volume poles. The earlier face proofs are retained for
+their stronger SCALAR-only conclusions on the stated subclasses. The
+scalar criterion of Section 12 is NOT automatically extended to arbitrary
+root orders by the new finite-image argument.
+
+First retain the H5 scalar-source obstruction used in Sections 1-5.
+
 Let
 
     P=W(h(Z)+c(Z)Y)+aY^2+u(Z)Y+k(Z)
@@ -434,6 +449,9 @@ The scalar polynomial psi adds a new constant face; already at
 No finite-image example or further multiplicity theorem is claimed by
 that observation. The finite-image assertion here has exactly (F10)'s
 scope and the complete comparison dependencies of Sections 1-5.
+Section 14 resolves the finite actual-image question for all root orders
+by changing to a fixed original marker. The quartic warning remains
+valid for this unit-volume/scalar-only face method.
 
 
 ## 11. Triple common roots
@@ -552,3 +570,314 @@ scalar identity alone is preserved, and the sufficient Gaussian formulas
 are algebraic. Finally, a polynomial exp(psi) forces psi=0, proving the
 stated polynomial-unit, purity and safety equivalence. No claim about
 arbitrary Gaussian phases follows from this scalar criterion.
+
+
+## 13. Common roots strictly below half the c-order
+
+Keep a constant and c NONCONSTANT. At every nonzero common root alpha
+of c,h, allow any of the following conditions:
+
+    ord_alpha h>=ord_alpha c;
+    ord_alpha c<=3;
+    1<=ord_alpha h<(ord_alpha c)/2.                  (F14)
+
+Unshared roots have arbitrary multiplicity, and the common origin still
+uses its separate exact source formula. Then the complete criterion is
+
+    M finite over K[t]
+      iff a=0 and h,c belong to z^2 K[z],            (F15)
+
+with arbitrary u,k. In every finite case the actual unit is primitive,
+
+    f=exp(k(0)t+u(0)^2t^2/2), V=M=fK[t].
+
+The scalar criterion of Section 12 extends to exactly this composite
+class: an exponential-polynomial actual unit exists if and only if M
+is finite, and polynomiality of f, purity and safety are equivalent.
+The new alternative is STRICT: equality ord h=(ord c)/2 is not covered
+by the LOCAL estimate below. The (m,ell)=(4,2) warning in Section 10
+remains for this scalar-only method; the independent full-image argument
+of Section 14 now covers finite images at that equality and all orders.
+
+Only the third alternative in (F14) needs proof. Outside the common-zero
+origin case, fix a shared alpha!=0 and write
+
+    m=ord_alpha c, ell=ord_alpha h, d=m-ell>ell>=1.
+
+Assume an actual scalar identity f=p exp(psi), p(0)=1, and use the
+unconditional source functional, shifted phase phi-psi and seed eta/p
+from Sections 1-5 and 12. Put r=1/t, x=(z-alpha)^(-1), v(x)=-N<0.
+In an exact final chart the extra relative scale epsilon>=0 gives
+
+    v(eta)=1-(m-1)N+epsilon,
+    epsilon>=-L/mu,                                 (F16)
+
+where L<0 is the leading phase weight and mu is the multiplicity of
+its selected nonzero root in tau=r^N x. For N<1/(m-1) the volume is
+positive already. A sole leading monomial has no nonzero root; k
+leading monomials give mu<=k-1 by the retained Vandermonde argument.
+Division by the polynomial p only increases the infinity order.
+Absorb the degree-at-most-one part of psi into k. Any remaining scalar
+leader has INTEGER degree D>=2 and contributes just one exponent-zero
+monomial of weight -D. The four original groups are precisely (F2).
+
+Suppose first a=0. Their exact pole orders at alpha are
+
+    j2=2m, j1=2m-ell, j0=2d, jm1=B<=d.
+
+Here j0 is exact: its square term has order 2d>m, so zu/c cannot
+cancel it. If Fm1 vanishes omit it; otherwise B is its ACTUAL highest
+Laurent exponent after absorbing the linear shift, and can be negative.
+For N<1/ell, F1 and F2 lie strictly above F0 by 1-ell N and 2-2ell N.
+Only F0,Fm1 and the scalar can lead. If F0 belongs to a binomial face,
+mu=1, L=-2dN, and (F16) gives
+
+    v(eta)>=1+(m-2ell+1)N>0.
+
+If Fm1 and the scalar tie with F0 higher, then mu=1 and
+(2d-B)N<=1. Since m-1-B>=ell-1>=0, the volume obeys
+
+    v(eta)>=2-(m-1-B)N
+            >=(3m-4ell-B+1)/(2d-B)>0.               (F17)
+
+The numerator is at least 2m-3ell+1>0. If all three tie, then
+N=1/(2d-B) and D=2d/(2d-B)<=2. The integer condition D>=2 forces
+D=2, B=d, N=1/d. Now mu<=2 and the volume is at least
+2-(m-1)/d=(m-2ell+1)/d>0. These are all possible nontrivial faces.
+
+For a=0 and N>1/ell, F2 uniquely dominates the other original groups.
+The differences above it are ell N-1, 2ell N-2, and
+
+    -3+(2m-B)N>=-3+(m+ell)N>m/ell-2>0.
+
+Only the scalar can join. Its possible binomial root is simple, giving
+v(eta)>=-1+(m+1)N>0.
+
+At N=1/ell, write c=C(z-alpha)^m+... and h=H(z-alpha)^ell+...,
+where C,H are nonzero. Define
+
+    B0(tau)=tau^d(alpha tau^ell-H).
+
+Because d>ell, all u,k terms are strictly higher than the square terms.
+For a=0 the exact leading face is -B0^2/(2C^2), of weight L=-2d/ell.
+The scalar may add a constant; if it has smaller weight it is the sole
+leader and admits no finite-phase component. Every nonzero root of
+B0^2 plus any constant has multiplicity at most two. Indeed B0 has
+simple nonzero roots, and
+
+    B0'=tau^(d-1)(m alpha tau^ell-dH).
+
+Every nonzero critical point is simple, and there
+B0=-(ell/m)H tau^d!=0. Thus no constant shift creates multiplicity
+above two. Equation (F16) gives epsilon>=d/ell and
+
+    v(eta)>=1-(m-1)/ell+d/ell=1/ell>0.              (F18)
+
+Finally let a!=0. The exact pole orders are
+
+    j2=2m, j1=2m, j0=2m-ell, jm1=2d.
+
+Their a-dependent leaders cannot cancel against lower-order u,k terms.
+For N<1/ell, Fm1 uniquely dominates the other original groups, with
+differences 1-ell N, 2-2ell N and 3-2ell N. A possible scalar binomial
+has mu=1 and volume at least 2+(m-2ell+1)N>0. For N>1/ell, F1
+uniquely dominates, with differences 1, ell N-1 and 2ell N-2; its
+possible scalar binomial gives volume at least (m+1)N>0. At resonance
+the leading face is a B0^2/C^2 of weight -1-2d/ell. The same shifted-
+square argument gives mu<=2 and
+
+    v(eta)>=1/2+1/ell>0.                            (F19)
+
+These alternatives cover all leading faces and every subsequent exact
+cancellation refinement. All orders are strict before division by p.
+The unchanged complete source, unshared-root, ordinary-centre, infinity,
+spatial-puncture, crossover-neck and descending-tail arguments of
+Sections 1-5 therefore exclude the assumed scalar identity outside the
+common-zero-origin case. The exact zero-root result then gives (F15)
+and its all-original-marker sufficient direction. No all-marker
+finiteness assumption was used after the initial scalar normalization,
+so Section 12's stronger scalar criterion extends as stated.
+
+The same finite-coefficient field embedding as in Section 10 gives the
+necessity over every characteristic-zero field K; the source leading
+coefficients and geometric root orders survive extension. Sufficiency
+is the algebraic zero-root formula. This proves the composite class
+(F14), without adding the equality ell=m/2 or any unrestricted
+finite-image consequence of the older multiplicity-eight pure theorem.
+
+## 14. A fixed original logarithmic marker removes every root-order restriction
+
+Let c be ANY nonconstant polynomial and keep a constant. Then, without
+any common-root, multiplicity or degree bound on h,c,u,k,
+
+    M finite over K[t]
+      iff a=0 and h,c belong to z^2 K[z].            (F20)
+
+This holds over every characteristic-zero field K. In every finite case,
+
+    psi=k(0)t+u(0)^2t^2/2,
+    f=exp(psi), V=M=exp(psi)K[t].                   (F21)
+
+The phase is nonconstant because c!=0, so V=M has no constant-phase
+exception here. The original vacuum is primitive. Safety is equivalent
+to (F20) together with u(0)=k(0)=0, and consequently every safe member
+is pure. This is a FULL-image theorem; it does not assert that an
+exponential-polynomial UNIT alone forces these conditions for arbitrary
+root orders.
+
+### The exact logarithmic marker and its nonzero original period
+
+First work over C and outside the common-zero-origin case:
+
+    (h(0),c(0))!=(0,0).
+
+Take rho=gcd(c,c') with monic gcd convention, and put c_red=c/rho.
+Thus c_red is squarefree, has exactly the roots of c, and has positive
+degree. Equivalently rho=c/c_red is a fixed nonzero ORIGINAL polynomial
+marker. The normalized differential becomes
+
+    rho*eta=r dz/c_red,   r=1/t.                    (F22)
+
+The differential omega=dz/c_red is fixed and logarithmic on P1: it has
+at most simple poles at the roots of c, and its infinity pole is simple
+when deg c_red=1 and absent when deg c_red>=2.
+
+Section 1's original c-localized source construction needs only the
+displayed origin condition, not H5. For clarity, its exact pullback is
+
+    zeta=t[h(zeta)+c(zeta)Y],
+    J=1-t[h'(zeta)+c'(zeta)Y],
+    zeta_Y=t c(zeta)/J,
+    eta -> dY/J,
+    phi(t,zeta)=-Y^2/2+t[aY^2+u(zeta)Y+k(zeta)].
+
+Hence the actual normalized period of rho*eta is precisely the ORIGINAL
+marked period
+
+    Phi_P[rho]=E_Y[rho(zeta)
+        exp(t[aY^2+u(zeta)Y+k(zeta)])/J].            (F23)
+
+This period is NONZERO. If c(0)!=0, then rho(0)!=0 and its value at
+t=0 is rho(0). If c(0)=0 and h(0)!=0, let m0=ord_0 c>=1 and
+s=ord_0 rho=m0-1. Write rho(z)=rho_s z^s+O(z^(s+1)), rho_s!=0.
+Since zeta=t h(0)+O(t^2), its leading coefficient is independent of Y,
+and (F23) gives the exact leading term
+
+    Phi_P[rho]=rho_s h(0)^s t^s+O(t^(s+1))!=0.      (F24)
+
+Both J^-1 and the fibre exponential have constant coefficient one.
+This proof covers s=0 as well. The nonzero period may start in positive
+t order; no nonzero initial mass is required.
+
+### Full-image finiteness supplies the needed marked polynomial
+
+Suppose M were finite. The general finite-image theorem gives its
+normalized generator exp(psi), psi in tC[t], without assuming primitive
+vacuum. Since rho is an ORIGINAL marker, there is a polynomial
+
+    p_rho=exp(-psi)Phi_P[rho] in C[t],   p_rho!=0.    (F25)
+
+This is the decisive use of the WHOLE finite-image hypothesis. A scalar
+identity for Phi_P[1] alone does not imply (F25).
+
+Shift the rational phase to phi-psi. Multiplying the original horizontal
+functional by exp(-psi) is the corresponding exact scalar connection
+gauge. Choose the distinguished seed to be
+
+    H(t)omega,   H(t)=r/p_rho(t).
+
+By (F22)-(F25) its actual seed value is one. Its scalar normalization
+has strictly positive infinity valuation
+
+    v_infinity(H)=1+deg p_rho>0.                    (F26)
+
+Even if p_rho vanishes at zero, 1/p_rho is a legitimate element of
+C(t), with a Laurent series having finite principal part at zero. The
+source identities
+allow these Laurent coefficients, and the seed value is still exactly
+one. No arbitrary rational spatial marker has been evaluated outside
+the original source domain.
+
+### Direct application of the retained complete logarithmic seed lemma
+
+Apply the [fixed-puncture logarithmic seed bound](GAUSSIAN_AFFINE_ISOTROPIC_CHART.md#fixed-puncture-logarithmic-seed-bound)
+with
+
+    S={roots of c} union {infinity},
+    U=P1 minus S, phase phi-psi, fixed form omega=dz/c_red.
+
+Its statement allows EVERY rational phase with fixed spatial pole set
+S, including an arbitrary spatially constant polynomial shift psi.
+Its proof retains the complete finite-phase components, actual annulus
+complexes and gluing, descending tails and regular punctures. Every
+zero-exponential omega seed period is O(1+log|t|); multiplication by
+H with (F26) makes it tend to zero. The same lemma explicitly excludes
+a unit horizontal formal seed functional supplied at another parameter
+point, using its ordinary-parameter seed-extension and full period
+pairing. Thus the original formal unit just constructed is impossible.
+
+This invocation has exactly that lemma's existing comparison dependencies
+and pending independent-review status. No local quartic estimate or
+additional stationary-phase assertion is needed. All roots of c are
+already fixed punctures, and the logarithmic differential remains
+logarithmic after any marked-model refinement. The scalar psi may change
+finite balls and their action values but cannot invalidate the lemma.
+
+We have proved NO finite actual image outside h(0)=c(0)=0 for ANY
+nonconstant c. More precisely, the same argument shows that the nonzero
+original period Phi_P[rho] cannot equal exp(psi)q for ANY polynomial
+psi and nonzero polynomial q. This identifies a fixed original marked
+obstruction, rather than replacing the Gaussian unit by an untracked
+localized period.
+
+### Complete criterion, the (4,2) case and field descent
+
+Inside h(0)=c(0)=0, the [exact mixed zero-root theorem](GAUSSIAN_MULTIBASE_QUADRATIC_FIBRE_PRIMITIVITY.md#9-a-separate-mixed-source-extension-with-zero-root)
+proves precisely a=h'(0)=c'(0)=0 for finite M. It supplies every original
+marker in the sufficient direction and gives (F21). Combined with the
+preceding obstruction this proves (F20), primitive vacuum, and the safety
+criterion. For example a nonzero shared root with
+ord_alpha c=4, ord_alpha h=2 requires no extra hypothesis: if the origin
+has (h(0),c(0))!=(0,0), there is no finite image; at a common origin,
+finiteness additionally requires a=h'(0)=c'(0)=0 as in (F20),
+independently of all other roots. At the quartically degenerate (4,2)
+component N=epsilon=1/2, rho has local order three and raises the
+original zero volume order by 3N=3/2, exactly the logarithmic order
+1+epsilon.
+The zero-volume quartic face discussed in Section 10 is therefore no
+obstruction to this FULL-image classification.
+
+For example h=z^2(z-1)^2, c=z^2(z-1)^4 and a=u=k=0 has a nonzero
+shared root with orders (4,2), while its common origin satisfies (F20).
+It is pure and safe by strict positive angular support. Here
+rho=z(z-1)^3 and Phi_P[rho]=0 identically by the same weight argument;
+the nonzero marked-period premise of the logarithmic obstruction is
+absent, exactly as required.
+
+The necessity descends to every characteristic-zero field. Under finite
+M its generator exp(psi) is defined over that field. Adjoin to Q the
+finitely many phase, rho, c_red, psi and p_rho coefficients and embed
+that finitely generated field in C. The exact original marked identity
+(F25) and the nonzero leading term (F24), or rho(0)!=0, are preserved.
+The squarefree/gcd identities and the origin condition survive the
+embedding, so the complex logarithmic contradiction applies. The
+zero-root sufficient direction is already algebraic over every field.
+
+For the broader constant-c branches, Sections 6 and 8 remain the complete
+finite criteria. Together with (F20), every finite actual image in this
+entire constant-a W-affine family has a primitive vacuum; hence safety
+implies purity throughout this architecture. General field safety implies
+purity is not proved outside it.
+
+Finally, Section 12's stronger SCALAR-only criterion remains restricted
+to its stated classes. For an unclassified scalar exponential-polynomial
+unit outside those classes, (F25) is unavailable; the logarithmic marker
+would instead demonstrate failure of the common finite lattice. No new
+purity classification or scalar-only exclusion is claimed here.
+
+The [focused checker](verify_gaussian_w_affine_logarithmic_marker.py) and
+[receipt](gaussian_w_affine_logarithmic_marker_verification.json) replay
+finite exact radical/volume identities and original leading-marker
+controls, including mixed root orders (4,2) and c(0)=0,h(0)!=0. They do
+NOT certify unrestricted multiplicity or the imported comparison theorem.
+The written proof above closes the root-order restriction.

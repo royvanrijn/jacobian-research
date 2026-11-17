@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "e3974d9a453033c34a85760c26d5e092e2dac5b7a5b3c65ecdbdf167057080e7",
+  "proof_sha256": "78116adf45fcf424ffc10bf968cf7b0bfe1d2c73fa5ae714df47b1d6310c4e8d",
+  "h21_source_sha256": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+  "checks": {
+    "status": "passed",
+    "model": "ell=z(1+z), h=c=a=u=k=0",
+    "fixed_Laurent_Stein_exponents": [
+      -10,
+      10
+    ],
+    "exact_covariant_chain_rule_forms": 7,
+    "scalar_gauges": [
+      "0",
+      "t+2t^2"
+    ],
+    "source_covariant_iterates": [
+      0,
+      3
+    ],
+    "scalar_Wick_orders": [
+      0,
+      4
+    ],
+    "Gysin_scope_control": {
+      "original_Jker": "1",
+      "alternate_localized_Jker": "0",
+      "original_W": "0",
+      "alternate_localized_W": "1/(2t)"
+    },
+    "scope": "Exact bounded controls for the written all-iterates scalar bridge. No original all-marker or source-localization agreement is asserted."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

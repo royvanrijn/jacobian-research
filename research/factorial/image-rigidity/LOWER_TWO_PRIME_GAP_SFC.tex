@@ -1,0 +1,268 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\begin{document}
+\setlength{\emergencystretch}{2em}
+\title{Lower-two binomial SFC at prime gaps}
+\author{}\date{}\maketitle
+The mixed-rank identity below holds at every gap. At prime gaps it
+proves all-index lower-two binomial SFC for every positive real
+algebraic Gamma shape integral at one place above that prime.
+The argument imports the monic factorized operator, adjoint
+solutions and full concomitant rank from the
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{higher-gap adjoint note}, equations (1)--(8) and the proof
+of \texttt{thm:rank}, especially its full-jet argument.
+No lower-root simplicity or uniform rank theorem is assumed.
+
+Write $\mathcal L_\beta(X^j)=(\beta)_j$ for the normalized
+Gamma moment functional. Fix $d\ge2$, $n\ge1$, $\gamma>0$, and set
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k,\quad
+ \epsilon=(-1)^{d+1},\quad
+ R=z^{dn}T_{n,\gamma,d}(\epsilon z^{-d}),\quad
+ M=\gamma+dn,\quad E=M-z\partial_z.
+\]
+Products $(E)_j$ are rising products with step one.
+Write $B_j=B_{j,\gamma,d}$, always at the SAME $\gamma$, with
+\[
+ B_0=1,\qquad B_{j+1}=(z+dj+\gamma+d-1)B_j-zB_j'.
+\]
+The cyclic column of $J$ at $u$ is its remainder coefficient
+column modulo $z^d-u$, in basis $1,z,\ldots,z^{d-1}$.
+
+\begin{theorem}[Offset-two mixed rank at every gap]\label{thm:mixed}
+Put
+\[
+ A=(M+d)(M+d+1),\qquad \kappa=\frac{d(n+1)}A,\qquad
+ H=B_{n+d-1}+\kappa z^dB_n.
+\]
+For $u\ne0$, the two equalities
+\[
+ T_{n,\gamma,d}(\epsilon/u)
+   =T_{n+1,\gamma+2,d}(\epsilon/u)=0
+\]
+hold if and only if the $d$ by $(d-1)$ cyclic matrix
+\[
+ [B_{n+1},B_{n+2},\ldots,B_{n+d-2},H](u)
+\]
+has rank less than $d-1$. When $d=2$ the consecutive list is empty.
+After removal of the nonzero gauges the identity is algebraic
+in characteristic zero.
+\end{theorem}
+\begin{proof}
+The lower Euler equation is
+\[
+ \theta(E)_dR=\epsilon z^d(dn-\theta)R
+             =\epsilon z^d(E-\gamma)R,\qquad \theta=z\partial_z.
+\]
+Pascal's identity and Gamma shifting give
+\[
+ (\gamma)_2z^{d(n+1)}
+       T_{n+1,\gamma+2,d}(\epsilon z^{-d})
+   =[z^d(E)_2+\epsilon(E)_{d+2}]R.
+\]
+The commutator $Ez^d=z^d(E-d)$ reduces its right hand side to
+\[
+ \epsilon A(E)_dR+
+ z^d[\gamma(M+d+1)-d(n+1)E]R.
+\]
+Indeed $E(E)_dR=M(E)_dR-\epsilon z^d(E-\gamma)R$;
+applying $E$ once more proves the reduction. At $R=0$, the upper
+moment vanishes exactly when
+\[
+ (E)_dR=\epsilon\kappa u\,ER.                         \tag{1}
+\]
+
+Here are the concomitant columns explicitly.
+The monic lower operator is
+\[
+ L=z^{-d}\partial_z z^{M+d}\partial_z^d z^{-M}
+       -\partial_z+dn/z.
+\]
+For $f_\xi=e^{-\xi z}z^{1-M}B_n(\xi z)$, $\xi^d=1$, put
+$S=z^{-M}R$ and $h_\xi=z^{M+d}(z^{-d}f_\xi)'$.
+Repeated integration by parts gives the Lagrange concomitant
+\[
+ {\cal C}_\xi=
+ f_\xi z^MS^{(d)}
+ -\sum_{j=0}^{d-1}(-1)^jh_\xi^{(j)}S^{(d-1-j)}
+ -f_\xi R.                                           \tag{2}
+\]
+Differentiating (2) gives $f_\xi LR-RL^*f_\xi$.
+The imported adjoint identity and exponential-times-rational
+argument make it identically zero for this $R$.
+The full concomitant matrix has rank $d$ on the $(d+1)$-jet,
+with kernel the line spanned by the nonzero jet of $R$,
+as in the imported full-jet proof.
+
+The $B$ recurrence gives the exact simplification
+\[
+ h_\xi=-e^{-\xi z}B_{n+1}(\xi z).
+\]
+Since
+$\partial_z^k(z^{-M}R)=(-1)^kz^{-M-k}(E)_kR$,
+on $R=0$, division of (2) by the nonzero gauge
+$(-1)^de^{-\xi z}z^{1-M-d}$ gives
+\[
+ B_n(w)(E)_dR-
+   \sum_{j=0}^{d-2}L_j(w)(E)_{d-1-j}R=0,\qquad w=\xi z,       \tag{3}
+\]
+where
+\[
+ L_j(w)=w^j(\partial_w-1)^jB_{n+1}(w).
+\]
+These are the full rising-$E$ jet columns.
+They triangularize by CONSTANT column operations, because
+\[
+ L_{j+1}=w(\partial_w-1)L_j-jL_j,
+\]
+\[
+ w(\partial_w-1)B_{n+1+r}
+    =(M+2d-1+dr)B_{n+1+r}-B_{n+2+r}.
+\]
+Inductively $L_j$ is a constant linear combination of
+$B_{n+1},\ldots,B_{n+j+1}$, with last coefficient $(-1)^j$.
+This induction holds for every $j$.
+
+Impose (1) in (3). The $ER$ column is
+$-L_{d-2}+\epsilon\kappa u B_n$; modulo the other columns it is
+\[
+ (-1)^{d-1}B_{n+d-1}+\epsilon\kappa u B_n=\epsilon H.
+\]
+The remaining columns triangularize to the stated consecutive list.
+The restrictions $R=0$ and (1) are independent and define a
+$(d-1)$-dimensional jet subspace. Full concomitant rank makes a
+nonzero restricted kernel equivalent to the ACTUAL $R$ jet satisfying
+both restrictions, proving both directions without simplicity.
+Finally Fourier evaluation at $\xi z$ is invertible in characteristic
+zero when $z\ne0$, and yields the cyclic matrix.
+No reduction of that Fourier matrix modulo a prime is used.
+\end{proof}
+
+\begin{lemma}[Affine residual polynomial]\label{lem:univalent}
+Let $K$ be a complete algebraically closed valued field. If
+$F\in\mathcal O_K[x]$ reduces modulo its maximal ideal to $c(1+x)$
+with $c\ne0$, then $F$ is injective on $\mathcal O_K$.
+\end{lemma}
+\begin{proof}
+For integral $x,y$, the polynomial difference quotient
+$(F(x)-F(y))/(x-y)$ reduces to $c$, hence is a unit.
+This uses a finite polynomial identity, not a convergent series.
+\end{proof}
+
+\begin{theorem}[Lower exponent two at every prime gap]\label{thm:prime}
+Let $p$ be prime and let $\beta>0$ be real algebraic.
+Suppose some embedding
+$\iota:\mathbb Q(\beta)\longrightarrow\mathbb C_p$ satisfies
+$v_p(\iota(\beta))\ge0$. At every $n\ge1$ the two polynomials
+\[
+ T_{n,2n+\beta,p},\qquad T_{n+1,2n+\beta+2,p}
+\]
+are coprime. In particular this holds for every positive rational
+$p$-integral $\beta$, including $\beta=1$.
+Thus $X^2(A+BX^p)$ has a nonzero Gamma-$\beta$ moment in every
+pair of consecutive positive orders whenever $(A,B)\ne(0,0)$.
+\end{theorem}
+\begin{proof}
+Use $\iota$ and suppress it from the notation.
+Put $\gamma=2n+\beta$ and $\epsilon=(-1)^{p+1}$.
+The reversed polynomial $u^nT_{n,\gamma,p}(\epsilon/u)$ is monic
+with integral coefficients. A root $t$ of $T$ therefore gives
+$u=\epsilon/t$ integral. Constant terms are one, so $t,u\ne0$.
+
+For any integral $u$, the reduced cyclic space is
+$k[z]/(z^p-\bar u)$. The auxiliary recurrence reduces to
+\[
+ {\mathsf A}=z-z\partial_z+\bar\gamma-1.
+\]
+It has cyclic vector $1$, since the first $p$ powers are monic of
+successive degrees. Its cyclic bidiagonal matrix has characteristic
+polynomial
+\[
+ \det(xI-{\mathsf A})=
+ \prod_{j=0}^{p-1}(x-\bar\gamma+1+j)-\bar u
+ =x^p-x-Q,\quad Q=\bar u+\bar\gamma^p-\bar\gamma.
+\]
+Hence $\mathsf A^p=\mathsf A+Q$.
+If $Q\ne0$, $\mathsf A$ is invertible, so every $p-1$
+consecutive powers of its cyclic vector are independent.
+If $Q=0$, its eigenvalues are the distinct elements of $\mathbb F_p$,
+and the cyclic vector has a nonzero component in every eigenspace.
+The $p-1$ nonzero eigenspaces and a Vandermonde determinant show
+that every $p-1$ consecutive POSITIVE powers are independent here too.
+
+First suppose $\bar\gamma\notin\mathbb F_p$.
+The denominator factors $(M+p),(M+p+1)$ reduce to
+$\bar\gamma,\bar\gamma+1$, both nonzero, so $\kappa$ has positive
+valuation. Since $u$ is integral, the final mixed column reduces
+to $\mathsf A^{n+p-1}1$ without perturbation.
+All $p-1$ columns are consecutive positive powers, so the mixed
+matrix has full column rank. No common root is possible.
+
+It remains that $\bar\gamma\in\mathbb F_p$.
+Choose an integer $c$ with $v_p(\gamma-c)>0$ and set
+$\delta=\min\{1,v_p(\gamma-c)\}>0$; use $\delta=1$ if $\gamma=c$.
+In each block of $p$ consecutive factors of $(\gamma)_{pk}$,
+one has valuation at least $\delta$ and the others are integral.
+The coefficient at degree $k$ in $T_{n,\gamma,p}$ has valuation
+at least $k\delta$. The unique least-term argument for the reversed
+monic polynomial gives $v_p(u)\ge\delta>0$.
+Now $Q=0$ and $\mathsf A^p=\mathsf A$.
+
+Put $\eta=\kappa u$. If $v_p(\eta)>0$, the mixed reduction consists
+of the independent powers
+$\mathsf A^{n+1}1,\ldots,\mathsf A^{n+p-1}1$.
+If $v_p(\eta)<0$, scale the last column by $\eta^{-1}$.
+The reduction is
+$\mathsf A^{n+1}1,\ldots,\mathsf A^{n+p-2}1,\mathsf A^{n}1$,
+again independent. Thus a common root forces $v_p(\eta)=0$
+and $q=\kappa^{-1}$ to have positive valuation.
+
+Choose a row set with nonzero maximal minor of this latter
+Krylov matrix. Let $F(\eta)$ be the corresponding EXACT minor
+of the cyclic coefficient columns
+\[
+ [B_{n+1}(q\eta),\ldots,B_{n+p-2}(q\eta),
+                   B_{n+p-1}(q\eta)+\eta B_n(q\eta)].
+\]
+Its coefficients are integral. Since $q$ reduces to zero and
+$\mathsf A^{n+p-1}1=\mathsf A^{n}1$ for $n\ge1$,
+\[
+ \bar F(\eta)=c_0(1+\eta),\qquad c_0\ne0.
+\]
+Lemma~\ref{lem:univalent} gives at most one integral zero of $F$.
+Every actual common root, and EVERY conjugate of it over
+$\mathbb Q(\beta)$, satisfies the same identities and integrality
+balance. Distinct roots give distinct $\eta=\epsilon\kappa/t$.
+In characteristic zero all conjugates must therefore coincide,
+forcing the common root into $\mathbb Q(\beta)$.
+
+Its original real embedding makes it real, contradicting positivity
+of the even-index member at every real $t$:
+\[
+ T_{j,2j+\beta,p}(t)=\frac1{\Gamma(2j+\beta)}
+       \int_0^\infty x^{2j+\beta-1}(1+tx^p)^j e^{-x}\,dx>0.
+\]
+The inequality is asserted for even $j$; one member has even index.
+The phase normalization is
+\[
+ {\cal L}_\beta((X^2(A+BX^p))^j)
+       =A^j(\beta)_{2j}T_{j,2j+\beta,p}(B/A).
+\]
+When a coefficient vanishes the nonzero phase is a monomial and all
+positive moments are nonzero.
+
+For $p=2$ the intermediate list is EMPTY: the matrix is the single
+two-component column $B_{n+1}+\kappa uB_n$.
+A nonzero component of $\mathsf A^n1$ supplies the scalar minor.
+The proof remains valid with $u=-1/t$ throughout.
+Fourier inversion is used only in characteristic zero before
+cyclic coefficient reduction.
+\end{proof}
+No unrestricted all-binomial or arbitrary-support SFC assertion is made.
+No algebraic shape of negative valuation at every $p$-adic embedding
+is covered. The retained gap-two theorem has a stronger
+all-positive-real-shape scope.
+\end{document}

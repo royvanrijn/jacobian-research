@@ -1,0 +1,1529 @@
+{
+  "status": "PASS",
+  "names": [
+    "13a_373",
+    "13a_375",
+    "13a_391",
+    "13a_392",
+    "13a_3264",
+    "13a_3266",
+    "13a_3275",
+    "13a_3276",
+    "13a_304",
+    "13a_362",
+    "13a_623",
+    "13a_629",
+    "13a_3232",
+    "13a_3259",
+    "13a_3374",
+    "13a_3375"
+  ],
+  "literal_signed_bindings": [
+    {
+      "name": "13a_373",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_375",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_391",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_392",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3264",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3266",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3275",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3276",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_304",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_362",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_623",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_629",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3232",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3259",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3374",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    },
+    {
+      "name": "13a_3375",
+      "signed_crossings": 13,
+      "signed_seed_steps": 9,
+      "named_planar_map_checked": true
+    }
+  ],
+  "frozen373_first_core_controls": {
+    "signed_first_clasp_steps": 3,
+    "signed_normalized_steps": 4,
+    "constraints": [
+      "A12=0",
+      "A21=0",
+      "A01*A10=-mu"
+    ],
+    "normalized_A10": 1,
+    "normalized_A01": "-mu",
+    "seed_root_and_covector_basis_changes_determinant": 1,
+    "generic_paired_core_steps": 5,
+    "independent_directed_pairings": 6,
+    "paired_formula_rows_checked": 10,
+    "all_propagated_norms": "1-mu",
+    "integer_Laurent_identity": 1,
+    "equations": 11,
+    "multiplier_monomials": 10,
+    "identity_mod2": 1,
+    "closing_coefficient_binding_checked": true,
+    "corrupted_multiplier_rejected": true
+  },
+  "additional_core_controls": {
+    "systems": [
+      {
+        "name": "13a_375",
+        "paired_trace": [
+          [
+            6,
+            9,
+            10,
+            -1
+          ],
+          [
+            10,
+            7,
+            8,
+            -1
+          ],
+          [
+            4,
+            10,
+            11,
+            1
+          ],
+          [
+            11,
+            4,
+            5,
+            1
+          ],
+          [
+            8,
+            11,
+            12,
+            -1
+          ]
+        ],
+        "all_raw_directed_pairings_free": true,
+        "generic_root_and_covector_formulas": true
+      },
+      {
+        "name": "13a_391",
+        "paired_trace": [
+          [
+            9,
+            6,
+            5,
+            -1
+          ],
+          [
+            6,
+            9,
+            10,
+            1
+          ],
+          [
+            4,
+            10,
+            11,
+            -1
+          ],
+          [
+            5,
+            11,
+            12,
+            1
+          ],
+          [
+            11,
+            7,
+            8,
+            1
+          ]
+        ],
+        "all_raw_directed_pairings_free": true,
+        "generic_root_and_covector_formulas": true
+      },
+      {
+        "name": "13a_392",
+        "paired_trace": [
+          [
+            12,
+            6,
+            5,
+            1
+          ],
+          [
+            5,
+            12,
+            11,
+            1
+          ],
+          [
+            4,
+            11,
+            10,
+            -1
+          ],
+          [
+            6,
+            10,
+            9,
+            1
+          ],
+          [
+            10,
+            7,
+            8,
+            -1
+          ]
+        ],
+        "all_raw_directed_pairings_free": true,
+        "generic_root_and_covector_formulas": true
+      }
+    ],
+    "corrupted_auxiliary_multiplier_rejected": true,
+    "392_auxiliary_unit_identity": 1,
+    "only_units": [
+      "mu",
+      "beta"
+    ]
+  },
+  "raw_local_folds": {
+    "alternate_old_four_fold": true,
+    "A6_negative_local_types": [
+      "I",
+      "II"
+    ],
+    "only_inverted_parameters": [
+      "mu",
+      "kap"
+    ],
+    "all_directed_pairings_independent": true
+  },
+  "generic_signed_basis_changes": [
+    {
+      "name": "13a_373",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        8
+      ],
+      "actual_signed_derivations": [],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_375",
+      "original_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_391",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          9,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_392",
+      "original_seeds": [
+        1,
+        2,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "actual_signed_derivations": [
+        [
+          5,
+          11,
+          12,
+          -1
+        ],
+        [
+          12,
+          5,
+          6,
+          -1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3264",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        10
+      ],
+      "actual_signed_derivations": [
+        [
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          10,
+          0,
+          12,
+          -1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3266",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          5,
+          8,
+          9,
+          -1
+        ],
+        [
+          9,
+          0,
+          12,
+          1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3275",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          9,
+          5,
+          6,
+          -1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3276",
+      "original_seeds": [
+        1,
+        3,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          3,
+          1,
+          0,
+          1
+        ],
+        [
+          9,
+          0,
+          12,
+          1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_304",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          9,
+          5,
+          6,
+          -1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_362",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "actual_signed_derivations": [
+        [
+          11,
+          5,
+          6,
+          -1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_623",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "actual_signed_derivations": [],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_629",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "actual_signed_derivations": [
+        [
+          5,
+          7,
+          8,
+          -1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3232",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        9
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        9
+      ],
+      "actual_signed_derivations": [
+        [
+          9,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3259",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        11
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "actual_signed_derivations": [
+        [
+          11,
+          5,
+          6,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3374",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "actual_signed_derivations": [],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    },
+    {
+      "name": "13a_3375",
+      "original_seeds": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "changed_seeds": [
+        0,
+        1,
+        5,
+        8
+      ],
+      "actual_signed_derivations": [
+        [
+          5,
+          7,
+          8,
+          1
+        ]
+      ],
+      "root_determinant": 1,
+      "covector_determinant": 1
+    }
+  ],
+  "signed_reduced_transfers": [
+    {
+      "new": "13a_3264",
+      "target": "13a_373",
+      "global_sign": -1,
+      "relabel": null,
+      "core": [
+        [
+          0,
+          10,
+          11,
+          1
+        ],
+        [
+          5,
+          8,
+          9,
+          1
+        ],
+        [
+          6,
+          9,
+          10,
+          -1
+        ],
+        [
+          8,
+          0,
+          5,
+          1
+        ],
+        [
+          9,
+          11,
+          12,
+          -1
+        ],
+        [
+          10,
+          0,
+          12,
+          -1
+        ],
+        [
+          11,
+          6,
+          8,
+          -1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3266",
+      "target": "13a_375",
+      "global_sign": -1,
+      "relabel": null,
+      "core": [
+        [
+          0,
+          10,
+          11,
+          -1
+        ],
+        [
+          5,
+          8,
+          9,
+          -1
+        ],
+        [
+          6,
+          9,
+          10,
+          1
+        ],
+        [
+          8,
+          11,
+          12,
+          1
+        ],
+        [
+          9,
+          0,
+          12,
+          1
+        ],
+        [
+          10,
+          6,
+          8,
+          1
+        ],
+        [
+          11,
+          0,
+          5,
+          -1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3275",
+      "target": "13a_391",
+      "global_sign": -1,
+      "relabel": null,
+      "core": [
+        [
+          0,
+          10,
+          11,
+          1
+        ],
+        [
+          5,
+          11,
+          12,
+          -1
+        ],
+        [
+          6,
+          9,
+          10,
+          -1
+        ],
+        [
+          8,
+          0,
+          5,
+          1
+        ],
+        [
+          9,
+          5,
+          6,
+          -1
+        ],
+        [
+          10,
+          0,
+          12,
+          -1
+        ],
+        [
+          11,
+          6,
+          8,
+          -1
+        ],
+        [
+          12,
+          8,
+          9,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3276",
+      "target": "13a_392",
+      "global_sign": -1,
+      "relabel": null,
+      "core": [
+        [
+          0,
+          10,
+          11,
+          -1
+        ],
+        [
+          5,
+          11,
+          12,
+          1
+        ],
+        [
+          6,
+          9,
+          10,
+          1
+        ],
+        [
+          8,
+          0,
+          5,
+          1
+        ],
+        [
+          9,
+          0,
+          12,
+          1
+        ],
+        [
+          10,
+          6,
+          8,
+          1
+        ],
+        [
+          11,
+          8,
+          9,
+          -1
+        ],
+        [
+          12,
+          5,
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_304",
+      "target": "13a_375",
+      "global_sign": -1,
+      "relabel": {
+        "0": 9,
+        "5": 10,
+        "6": 11,
+        "8": 12,
+        "9": 0,
+        "10": 5,
+        "11": 6,
+        "12": 8
+      },
+      "core": [
+        [
+          0,
+          8,
+          9,
+          -1
+        ],
+        [
+          5,
+          11,
+          12,
+          1
+        ],
+        [
+          6,
+          9,
+          10,
+          -1
+        ],
+        [
+          8,
+          10,
+          11,
+          1
+        ],
+        [
+          9,
+          5,
+          6,
+          -1
+        ],
+        [
+          10,
+          0,
+          12,
+          1
+        ],
+        [
+          11,
+          0,
+          5,
+          1
+        ],
+        [
+          12,
+          6,
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3232",
+      "target": "13a_375",
+      "global_sign": 1,
+      "relabel": {
+        "0": 9,
+        "5": 10,
+        "6": 11,
+        "8": 12,
+        "9": 0,
+        "10": 5,
+        "11": 6,
+        "12": 8
+      },
+      "core": [
+        [
+          0,
+          8,
+          9,
+          1
+        ],
+        [
+          5,
+          11,
+          12,
+          -1
+        ],
+        [
+          6,
+          9,
+          10,
+          1
+        ],
+        [
+          8,
+          10,
+          11,
+          -1
+        ],
+        [
+          9,
+          5,
+          6,
+          1
+        ],
+        [
+          10,
+          0,
+          12,
+          -1
+        ],
+        [
+          11,
+          0,
+          5,
+          -1
+        ],
+        [
+          12,
+          6,
+          8,
+          -1
+        ]
+      ]
+    },
+    {
+      "new": "13a_362",
+      "target": "13a_375",
+      "global_sign": 1,
+      "relabel": {
+        "0": 10,
+        "5": 11,
+        "6": 12,
+        "8": 0,
+        "9": 5,
+        "10": 6,
+        "11": 8,
+        "12": 9
+      },
+      "core": [
+        [
+          0,
+          10,
+          11,
+          -1
+        ],
+        [
+          5,
+          8,
+          9,
+          1
+        ],
+        [
+          6,
+          9,
+          10,
+          -1
+        ],
+        [
+          8,
+          0,
+          5,
+          1
+        ],
+        [
+          9,
+          11,
+          12,
+          1
+        ],
+        [
+          10,
+          0,
+          12,
+          1
+        ],
+        [
+          11,
+          5,
+          6,
+          -1
+        ],
+        [
+          12,
+          6,
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3259",
+      "target": "13a_375",
+      "global_sign": -1,
+      "relabel": {
+        "0": 10,
+        "5": 11,
+        "6": 12,
+        "8": 0,
+        "9": 5,
+        "10": 6,
+        "11": 8,
+        "12": 9
+      },
+      "core": [
+        [
+          0,
+          10,
+          11,
+          1
+        ],
+        [
+          5,
+          8,
+          9,
+          -1
+        ],
+        [
+          6,
+          9,
+          10,
+          1
+        ],
+        [
+          8,
+          0,
+          5,
+          -1
+        ],
+        [
+          9,
+          11,
+          12,
+          -1
+        ],
+        [
+          10,
+          0,
+          12,
+          -1
+        ],
+        [
+          11,
+          5,
+          6,
+          1
+        ],
+        [
+          12,
+          6,
+          8,
+          -1
+        ]
+      ]
+    },
+    {
+      "new": "13a_623",
+      "target": "13a_373",
+      "global_sign": -1,
+      "relabel": {
+        "0": 8,
+        "5": 6,
+        "6": 5,
+        "7": 0,
+        "8": 12,
+        "10": 11,
+        "11": 10,
+        "12": 9
+      },
+      "core": [
+        [
+          0,
+          6,
+          7,
+          -1
+        ],
+        [
+          5,
+          11,
+          12,
+          1
+        ],
+        [
+          6,
+          0,
+          12,
+          1
+        ],
+        [
+          7,
+          10,
+          11,
+          -1
+        ],
+        [
+          8,
+          5,
+          6,
+          -1
+        ],
+        [
+          10,
+          0,
+          5,
+          1
+        ],
+        [
+          11,
+          7,
+          8,
+          -1
+        ],
+        [
+          12,
+          8,
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3374",
+      "target": "13a_373",
+      "global_sign": 1,
+      "relabel": {
+        "0": 8,
+        "5": 6,
+        "6": 5,
+        "7": 0,
+        "8": 12,
+        "10": 11,
+        "11": 10,
+        "12": 9
+      },
+      "core": [
+        [
+          0,
+          6,
+          7,
+          1
+        ],
+        [
+          5,
+          11,
+          12,
+          -1
+        ],
+        [
+          6,
+          0,
+          12,
+          -1
+        ],
+        [
+          7,
+          10,
+          11,
+          1
+        ],
+        [
+          8,
+          5,
+          6,
+          1
+        ],
+        [
+          10,
+          0,
+          5,
+          -1
+        ],
+        [
+          11,
+          7,
+          8,
+          1
+        ],
+        [
+          12,
+          8,
+          10,
+          -1
+        ]
+      ]
+    },
+    {
+      "new": "13a_629",
+      "target": "13a_373",
+      "global_sign": -1,
+      "relabel": {
+        "0": 5,
+        "5": 0,
+        "6": 12,
+        "7": 11,
+        "8": 10,
+        "10": 9,
+        "11": 8,
+        "12": 6
+      },
+      "core": [
+        [
+          0,
+          10,
+          11,
+          -1
+        ],
+        [
+          5,
+          7,
+          8,
+          -1
+        ],
+        [
+          6,
+          0,
+          12,
+          1
+        ],
+        [
+          7,
+          11,
+          12,
+          1
+        ],
+        [
+          8,
+          5,
+          6,
+          -1
+        ],
+        [
+          10,
+          6,
+          7,
+          1
+        ],
+        [
+          11,
+          0,
+          5,
+          -1
+        ],
+        [
+          12,
+          8,
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "new": "13a_3375",
+      "target": "13a_373",
+      "global_sign": 1,
+      "relabel": {
+        "0": 5,
+        "5": 0,
+        "6": 12,
+        "7": 11,
+        "8": 10,
+        "10": 9,
+        "11": 8,
+        "12": 6
+      },
+      "core": [
+        [
+          0,
+          10,
+          11,
+          1
+        ],
+        [
+          5,
+          7,
+          8,
+          1
+        ],
+        [
+          6,
+          0,
+          12,
+          -1
+        ],
+        [
+          7,
+          11,
+          12,
+          -1
+        ],
+        [
+          8,
+          5,
+          6,
+          1
+        ],
+        [
+          10,
+          6,
+          7,
+          -1
+        ],
+        [
+          11,
+          0,
+          5,
+          1
+        ],
+        [
+          12,
+          8,
+          10,
+          -1
+        ]
+      ]
+    }
+  ],
+  "corruptions_rejected": [
+    "crossing_sign",
+    "named_map",
+    "global_transfer_sign"
+  ],
+  "optional_census_replay": {
+    "named_census_rereads": 16,
+    "actual_signed_knot_group_models": 16
+  },
+  "representation_scope": "Over every field, every irreducible finite-dimensional representation with meridian displacement rank one has dimension at most three, for every nonzero meridian determinant mu, including mu=1. No preserved form is assumed. The separate complete-reducibility corollary bounds both fixed codimension and displacement span; arbitrary nonsemisimple representations are not covered.",
+  "augmentation_scope": "Every field-valued U=1 cord augmentation with epsilon(mu)!=1 has rank at most three, for any nonzero longitude value. Additional exact gap and connected-sum corollaries import separate positive attainment, meridional-rank lower and published additivity certificates.",
+  "separate_corollary_dependencies": {
+    "cor:gap": [
+      "REFLECTIVE_AUGMENTATION_RANK_GAP.tex thm:positive",
+      "A6_RANK_THREE_AUGMENTATIONS.tex thm:attainment",
+      "seven-sheet andA6 sharp-four positive certificates"
+    ],
+    "cor:sums": [
+      "COR17 Theorem1.9",
+      "GENERIC_KCH_OBSTRUCTION.tex trefoil rank2 control",
+      "INVOLUTION_COVER_SUM_FORMULAS.tex cor:hundredone"
+    ]
+  },
+  "input_sha256": {
+    "verify_generic_kch_extensions.py": "87ddefb5af792120487bee9dbb41a251646b8aed19529810e029a10756a49a58",
+    "generic_kch_extensions_inputs.json": "2e9050a6a9aa2b2cd4d099dffc2491acf8fd1c9b2d4f52f6ddce1b9973415db8",
+    "GENERIC_KCH_EXTENSIONS.tex": "c3970c3a3b8ad83111154fef544510b8a8974d3f2ab0ec0d15025a509ab6c622",
+    "verify_generic_kch_obstruction.py": "65fd6b44173b1a2801f4d3703361bda87b624cdd20ad4c25c38bc0e8cb16e003",
+    "generic_kch_obstruction_inputs.json": "69c3310c213f97150268966abe063c62bd8a218017a2161e284c5dfbbe262da3",
+    "GENERIC_KCH_OBSTRUCTION.tex": "711c8cbe310a838b3e4936994b2fb79681d9765f8d25eef7c31c1bf41b472274",
+    "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
+    "sources/cornwell-kch-1310.7526v3.pdf": "991940273daed005b8af270233cceaa58c11d69168efb7006f3bfa9bd598bcbd"
+  },
+  "assurance": "Exact internal integer/Laurent and literal oriented-PD controls, including both basis determinants. Written independence and nonzero-cancellation arguments remain essential. Positive attainment and meridional-rank statements are separate mathematical imports for their own corollaries; no formal verification, independent specialist review or worldwide-priority claim.",
+  "internal_pdf_reviews": [
+    {
+      "classification": "internal isolated AI PDF-only review",
+      "reviewer": "/root/extensions_pdf_review",
+      "date": "2026-11-17",
+      "supplied_context": "Only the seven-page compiled PDF and its revised edition; no repository sources, supplements, other notes, retained checkers or cited papers.",
+      "source_sha256": "c3970c3a3b8ad83111154fef544510b8a8974d3f2ab0ec0d15025a509ab6c622",
+      "pdf_sha256": "f17a69b646d742f896d767406f299efb30fd24bef958963a0fcf400327c052d3",
+      "previous_reviewed_pdf_sha256": [
+        "621e5a79670b97409b94b60fc898f46671509f934d572f2309a6f64d6aa3add8"
+      ],
+      "pages": 7,
+      "mathematical_checks": [
+        "Independently reconstructed the375/391/392 paired traces and closing deductions from printed equations.",
+        "Verified the alternate old fold and both A6 local folds, including both root/covector closing coefficients and final folds.",
+        "Audited every nonzero cancellation; no division by2,1-mu,mu^2-mu+1 or a proper Gram determinant.",
+        "Independently derived an integer Laurent identity1 for the final392 necessary equations.",
+        "Checked relation-by-relation global inversion and covector scaling -mu^-1.",
+        "Checked the complete-reducibility/averaging proof and definition of displacement-image span."
+      ],
+      "independent392_certificate": {
+        "equations": [
+          "p*h-1",
+          "mu*h-mu-z*Z",
+          "mu*k+z",
+          "K+mu*Z",
+          "K-mu*beta",
+          "k*beta+1"
+        ],
+        "multipliers": [
+          "-1",
+          "p/mu",
+          "p*Z/mu",
+          "-p*k/mu",
+          "p*k/mu",
+          "p"
+        ],
+        "identity": 1
+      },
+      "revisions_resolving_findings": [
+        "Defined displacement span explicitly as sum_g im(rho(g)-I) in V."
+      ],
+      "visual_checks": "All seven original pages inspected, followed by revised pages5-7; no clipping or overlapping content.",
+      "remaining_dependencies": [
+        "Literal PD/census binding and complete original seed traces.",
+        "Companion373 reduced proof and original clasps.",
+        "Changed seed words, basis determinants and eight nonidentity signed relabelings.",
+        "Retained checker behavior and imported augmentation, positive lower, bridge and sum results."
+      ],
+      "scope_limit": "The isolated reviewer verified displayed local algebra, not independent named-knot/whole-proof replay. Unchanged algebra was not repeated during the final definition/layout follow-up. No formal verification or external human review."
+    }
+  ]
+}

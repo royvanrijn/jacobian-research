@@ -18,6 +18,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 | Real signed-height affine-profile classification | Internal result | proved | [Source](../foundations/extended-geometry/HOPF_LIFT_CLASSIFICATION.md) |
 | Affine-multiplier quintic Image obstruction | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Complete cubic two-pair Image positivity and sharp balanced degree four | Internal result | proved | [Source](../foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) |
+| Mixed-cutoff moment jets and certified infinite tails | Internal result | proved | [Source](vanishing/MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md) |
 
 **Computed obligations:** 38 unresolved; 1 resolved within their exact scope.
 

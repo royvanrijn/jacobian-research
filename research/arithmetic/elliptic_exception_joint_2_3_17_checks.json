@@ -1,0 +1,128 @@
+{
+  "checker_sha256": "e922202115a665f97fe1378e5078fba395b315b5d65a0b9ff7087800f013c2de",
+  "command": ".venv/bin/python research/arithmetic/verify_elliptic_exception_joint_2_3_17.py",
+  "exact_controls": [
+    "three_exact_rational_points_on_E0",
+    "exact_R_equals_P_plus_T",
+    "exact_R_on_curve",
+    "two_adic_formal_generators_have_depth_four",
+    "normalized_two_adic_generator_coefficients_are_odd",
+    "three_adic_unit_determinant_depth_witnesses",
+    "formal_and_C9_matrix_determinant_mod_three",
+    "global_descent_class_of_R",
+    "global_descent_class_of_S",
+    "global_descent_class_of_T",
+    "good_reduction_at_seventeen",
+    "complete_finite_field_count_eighteen",
+    "finite_field_reductions",
+    "P_and_S_order_nine",
+    "T_order_two",
+    "R_generates_cyclic_group_eighteen",
+    "finite_branch_values_are_exact_C9_subgroup",
+    "finite_branch_points_are_all_F_zero_points",
+    "finite_branch_points_have_unit_y",
+    "nine_P_formal_seventeen_depth_one",
+    "nine_P_formal_seventeen_unit_ten",
+    "eighteen_R_equals_twice_nine_P",
+    "eighteen_R_formal_seventeen_depth_one",
+    "eighteen_R_formal_seventeen_unit_three",
+    "finite_joint_quotient_has_four_hundred_thirty_two_base_classes",
+    "finite_two_three_retained_fraction",
+    "finite_joint_branch_mass",
+    "finite_three_prime_ratio",
+    "finite_ratio_strictly_below_quarter",
+    "independent_finite_weight_formula",
+    "finite_fixed_field_weight_partition",
+    "exact_joint_two_three_baseline",
+    "exact_branch_mass",
+    "formal_seventeen_annulus_geometric_sum",
+    "exact_local_only_three_prime_ratio",
+    "alternate_unreduced_ratio_agrees",
+    "fixed_field_two_three_baselines",
+    "fixed_field_seventeen_branch_factor",
+    "four_exact_fixed_field_coefficients",
+    "fixed_field_coefficients_sum_to_whole_slice",
+    "retained_primary_formal_group_source_exists"
+  ],
+  "external_primary_source": {
+    "path": "sources/milne-elliptic-curves-2006.pdf",
+    "proof_imported_not_replayed": true,
+    "sha256": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486",
+    "statement": "Chapter II Theorem 4.1 and Lemma 5.9: formal filtration and addition/depth control"
+  },
+  "external_review": false,
+  "finite_field_17": {
+    "P_order": 9,
+    "R_order": 18,
+    "branch_points": [
+      null,
+      [
+        16,
+        4
+      ],
+      [
+        16,
+        13
+      ]
+    ],
+    "group": "C18",
+    "point_count": 18
+  },
+  "finite_weight_count": {
+    "base_classes": 432,
+    "branch_classes": 21,
+    "fixed_field_counts": {
+      "1": 1737,
+      "10q": 15606,
+      "2": 10422,
+      "5q": 2601
+    },
+    "ratio": "1687/6936",
+    "retained_classes": 30366,
+    "row_counts": {
+      "00": [
+        9,
+        3,
+        1737
+      ],
+      "01": [
+        9,
+        0,
+        2601
+      ],
+      "10": [
+        0,
+        0,
+        0
+      ],
+      "11": [
+        108,
+        18,
+        26028
+      ]
+    },
+    "seventeen_classes_per_base": 289,
+    "two_three_accepted": 126
+  },
+  "fixed_field_coefficients": {
+    "1": "205/111748",
+    "10q": "1/8",
+    "2": "205/2456",
+    "5q": "1/84"
+  },
+  "formal_depths": {
+    "R_at_2": 4,
+    "R_at_3": 3,
+    "S_at_2": 4,
+    "eighteen_R_at_17": 1,
+    "nine_P_at_17": 1,
+    "two_S_at_3": 2
+  },
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "local_only_ratio": "5321/23946",
+  "proof_sha256": "50aee618ee23d87440d61f409c7700360dee16c6e7feaafc170a689db8009a7f",
+  "python": "3.12.3",
+  "scope": "Exact finite-field enumeration, rational elliptic arithmetic, formal-depth witnesses and an exhaustive finite parity/weight count. Global saturation, the 2/3 local classifications, ELV1, formal groups and the height lattice remain separate written/imported premises. No complete Mordell--Weil basis, uniform annulus error or all-primes Hasse density is asserted.",
+  "status": "pass"
+}

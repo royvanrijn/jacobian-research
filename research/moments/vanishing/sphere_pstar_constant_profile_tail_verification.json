@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "f28965baf5f1b1979a65b05fc1e610bf83ee44ca06fb18667154c64ed43d73dc",
+  "certificate_sha256": "2bf4894b9d96c2228536de64fdd9e7f136cd997d97ca50ee900bb668c278de1c",
+  "proof_sha256": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
+  "checks": {
+    "status": "passed",
+    "functional": "normalized S2 sphere",
+    "source": "literal original sparse multinomial moments1..8",
+    "polynomial_lift_identities": 14,
+    "corrupted_lift_rejected": true,
+    "global_ideal": "I8=(u+e-1184e5/155925,v+e2/2-6022904e6/638512875,e7)",
+    "quotient": "Q[e]/(e7)",
+    "exact_nilpotence_index": 7,
+    "intervening_moment_memberships": [
+      9,
+      60
+    ],
+    "all_remainders_zero": true,
+    "nilpotent_power_term_counts": [
+      1,
+      17,
+      36,
+      54,
+      56,
+      47,
+      28
+    ],
+    "largest_possible_quotient_moment": 18,
+    "scope": "Exact polynomial witnesses prove the global ideal equality and length/index seven on this specified graph slice. Original finite moments and nilpotent-binomial controls are checked; unrestricted tail conclusions use the written proof."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

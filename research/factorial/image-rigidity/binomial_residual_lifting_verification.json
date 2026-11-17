@@ -1,0 +1,204 @@
+{
+  "status": "pass",
+  "arithmetic": "exact integer, rational, and finite-field",
+  "scope": "Under (ab modp)+db<p, the actual orderbp^r residual is P_(b,a,d,1)((-1)^sY); normalized factor degrees/p^r are bounded subset-sums of residual factor degrees. For oddp/evenb, positivity parity gives Q-irreducibility for an irreducible residual or exactly two odd-degree irreducible residual factors.",
+  "positive_Gamma_parity_scope": "For every beta>0: even P_n has no real roots; odd P_n is strictly increasing with one simple real root; every real consecutive common divisor has even degree.",
+  "checks_by_kind": {
+    "edge exact valuations": 156,
+    "complete edge residual identities": 40,
+    "literal exact edge": 61,
+    "independent literal edge units": 61,
+    "literal strict nonedge": 1066,
+    "literal Wilson factorial recursion": 90,
+    "factor residual multiplicativity": 4,
+    "Rabin terminal Frobenius": 7,
+    "Rabin proper-divisor gcd": 5,
+    "literal residual factor products": 5,
+    "irreducible odd residual criterion": 2,
+    "complete parity subset-sum criterion": 3,
+    "carry countercontrol": 1,
+    "bad factor valuation rejected": 1,
+    "odd-pair parity pattern": 1,
+    "even-pattern rejection control": 1,
+    "remaining-ray first terminal congruence": 12,
+    "remaining-ray second terminal congruence": 12,
+    "positive-Gamma odd polynomial Sturm profile": 20,
+    "positive-Gamma odd derivative Sturm profile": 20,
+    "positive-Gamma even polynomial Sturm profile": 20,
+    "coefficient positivity alone rejected": 1,
+    "all-prime quintic degree certificate controls": 1782
+  },
+  "total_checks": 3371,
+  "rational_positive_Gamma_Sturm_profiles": 40,
+  "examples": [
+    {
+      "b": 3,
+      "p": 31,
+      "factors": [
+        [
+          7,
+          13,
+          17,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        3
+      ],
+      "irreducible_for_all_r_by_proof": true
+    },
+    {
+      "b": 3,
+      "p": 37,
+      "factors": [
+        [
+          3,
+          22,
+          32,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        3
+      ],
+      "irreducible_for_all_r_by_proof": true
+    },
+    {
+      "b": 4,
+      "p": 23,
+      "factors": [
+        [
+          21,
+          15,
+          12,
+          3,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        4
+      ],
+      "irreducible_for_all_r_by_proof": true
+    },
+    {
+      "b": 4,
+      "p": 29,
+      "factors": [
+        [
+          15,
+          1
+        ],
+        [
+          3,
+          13,
+          13,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        1,
+        3
+      ],
+      "irreducible_for_all_r_by_proof": true
+    },
+    {
+      "b": 6,
+      "p": 31,
+      "factors": [
+        [
+          6,
+          1
+        ],
+        [
+          18,
+          27,
+          16,
+          22,
+          24,
+          1
+        ]
+      ],
+      "factor_degrees": [
+        1,
+        5
+      ],
+      "irreducible_for_all_r_by_proof": true
+    }
+  ],
+  "quintic_all_prime_degree": {
+    "status": "pass",
+    "complete_certificate_orders": [
+      64,
+      65
+    ],
+    "complete_certificate_primes": [
+      3,
+      5
+    ],
+    "checks_by_kind": {
+      "actual quintic polynomial": 1,
+      "nonduplicate Newton profile": 4,
+      "direct factorial versus Legendre valuations": 262,
+      "literal coefficient-height certificate": 5,
+      "integral edge width": 22,
+      "strictly increasing edge slopes": 22,
+      "left edge endpoint": 22,
+      "edge stays within exact degree": 22,
+      "right edge endpoint": 21,
+      "complete supporting-line inequalities": 1375,
+      "complete polygon coverage": 4,
+      "complete declared two-prime inputs": 1,
+      "shared-slope integral degree step": 8,
+      "exact three-adic bounded subset sums": 1,
+      "exact five-adic bounded subset sums": 1,
+      "complete parity degrees after prime3": 1,
+      "literal intermediate degree certificate": 1,
+      "empty two-prime common-degree set": 1,
+      "literal final degree certificate": 1,
+      "complete no-carry-part check at64and65": 1,
+      "Sophie Germain polynomial identity": 1,
+      "exact positive full-degree exclusion identity": 1,
+      "literal first coverage-failure factorization": 1,
+      "literal first coverage-failure bound": 1,
+      "uniform coverage-failure constant inequality": 1,
+      "corrupted edge table rejected": 1
+    },
+    "exact_checks": 1782,
+    "literal_complete_Newton_edge_tables": 4,
+    "all_supporting_lines_checked": true,
+    "corrupted_edge_table_rejected": true,
+    "possible_positive_even_degrees_after_p3": [
+      10,
+      28,
+      36,
+      54
+    ],
+    "possible_degrees_after_p3_and_p5": [],
+    "eligible_no_carry_parts_at64and65": [],
+    "infinite_no_carry_failure_family": "n=2^(12s+6), N=n+1, s>=0",
+    "infinite_family_is_SFC_counterexample": false,
+    "prefix_enumeration": false,
+    "unbounded_all_prime_criterion_proved": true,
+    "all_index_emptiness_of_degree_sets_proved": false,
+    "all_terminal_quintic_SFC": false,
+    "independent_replay": false,
+    "external_review": false,
+    "formal_verification": false
+  },
+  "all_r_quantifiers_supplied_by_written_proof": true,
+  "finite_tests_prove_unbounded_scope": false,
+  "all_terminal_quintic_closed": false,
+  "proof": "BINOMIAL_RESIDUAL_LIFTING.tex",
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "priority_claim": false,
+  "input_sha256": {
+    "BINOMIAL_RESIDUAL_LIFTING.tex": "514a0c25706d3167a4c2fc2aefc61b14a173de5246b5d7a098fdfed49b319e4c",
+    "binomial_residual_lifting.py": "4a3fe2ee754744c981f0a969d82592ea037a5cc8af92a6e912fc1b58e8d36ac6",
+    "BINOMIAL_IRREDUCIBILITY_REDUCTION.tex": "afce9d0417d60bc9db6da2925cc1b791ad35a734639727acb9dad4c867a328ac",
+    "binomial_residual_lifting_n64_certificate.json": "39ac10bb7e71b8874dfcdd3db60fd84beafe9cbf96eccebad4a943fda8bf57b3"
+  }
+}

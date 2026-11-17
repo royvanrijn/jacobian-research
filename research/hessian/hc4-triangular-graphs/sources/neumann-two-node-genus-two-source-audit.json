@@ -1,0 +1,81 @@
+{
+  "claim": "The genus-two row of Neumann's polynomial low-genus classification applies to a plane curve with normalization A^1 and exactly two ordinary nodes, and yields a hyperelliptic quintic model.",
+  "inspected_date": "2026-11-17",
+  "inspection": "Internal primary-source reading plus rendered-page inspection.",
+  "sources": [
+    {
+      "title": "Complex algebraic plane curves via their links at infinity",
+      "author": "Walter D. Neumann",
+      "journal": "Inventiones Mathematicae 98(3) (1989), 445-489",
+      "doi": "10.1007/BF01393832",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0098/LOG_0028.pdf",
+      "local_pdf": "neumann-1989-plane-curves-links-infinity.pdf",
+      "sha256": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
+      "inspected": [
+        {
+          "printed_pages": "482",
+          "pdf_zero_based_indices": [
+            38
+          ],
+          "rendered_page_inspected": true,
+          "content": "Section8 explicitly classifies most general defining polynomials up to polynomial ambient automorphisms and affine target-value changes. The sole realizable genus-two row is hyperelliptic quintic; the degree-six cable row is not realizable."
+        },
+        {
+          "printed_pages": "483",
+          "pdf_zero_based_indices": [
+            39
+          ],
+          "rendered_page_inspected": true,
+          "content": "Coefficient-computation explanation and explicit application to a singular one-node curve. The two-node corollary is derived in the present proof, not claimed to be separately stated here."
+        }
+      ]
+    },
+    {
+      "title": "Corrigendum: Unfoldings in Knot Theory",
+      "authors": [
+        "Walter Neumann",
+        "Lee Rudolph"
+      ],
+      "journal": "Mathematische Annalen 282(2) (1988), 349-351",
+      "doi": "10.1007/BF01456981",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0282/LOG_0040.pdf",
+      "local_pdf": "neumann-rudolph-1988-unfoldings-corrigendum.pdf",
+      "sha256": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9",
+      "inspected": [
+        {
+          "printed_pages": "349",
+          "pdf_zero_based_indices": [
+            1
+          ],
+          "rendered_page_inspected": true,
+          "content": "Corrected Lemma7.1: a reduced fibre with a knot at infinity has a good defining polynomial."
+        },
+        {
+          "printed_pages": "351",
+          "pdf_zero_based_indices": [
+            3
+          ],
+          "rendered_page_inspected": true,
+          "content": "Corrected proof of Lemma7.1, via Suzuki, iterated-torus-knot fibreability, and corrected Theorem6.1."
+        }
+      ]
+    }
+  ],
+  "applicability": [
+    "The specialized exact order has squarefree conductor length four and codimension two; its quotient partition consists of two disjoint pairs.",
+    "Thus normalization A^1 has exactly two ordinary nodes and one place at infinity.",
+    "Corrected Lemma7.1 ensures regularity at infinity; smoothing two nodes changes Euler characteristic from -1 to -3 and gives a once-punctured smooth genus-two fibre.",
+    "The defining polynomial is therefore in Neumann's genus-two table; its singular two-node fibre has a degree-five polynomial with two double roots and one simple root.",
+    "Affine normalization then forces a common midpoint of the two node pairs."
+  ],
+  "not_assumed": [
+    "The singular two-node fibre itself is not a regular fibre.",
+    "The table is not used merely as topological knot classification; its stated polynomial ambient-equivalence conclusion is essential.",
+    "No target automorphism varying algebraically over the parameter line is assumed.",
+    "The later conditional parametric-lines classification is not used."
+  ],
+  "source_classification_proved_by_symbolic_checker": false,
+  "independent_mathematical_review": false,
+  "formal_verification": false,
+  "external_review": false
+}

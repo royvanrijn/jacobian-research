@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "versions": {
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1",
+    "snappy_15_knots": "1.2.1",
+    "snappy_manifolds": "1.4",
+    "regina": "7.4"
+  },
+  "scope": "Actual double branched covers of the24 A6 sharp-four knots are irreducible, with an incompressible separating torus cutting off certified m143 or m239. Outside BJW18 graph-cover hypothesis; four-face rational-replacement exclusion is a separate written consequence of the retained R4 theorem.",
+  "cases": [
+    {
+      "name": "13a_304",
+      "closed_cover_isosig": "rLLAPLvPzzQQcbcedegimkllqpqnqpptsqjwwhhtacxtxnhhd",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_362",
+      "closed_cover_isosig": "rLLAzLzvLQQQcbcedejhqqolpmqonpptsqjwhqemaakovbrkn",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_623",
+      "closed_cover_isosig": "rLLAzLzzAPAQcbcedejhlmnnmpoqppqtsqjwhqahaaqbgaorj",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_629",
+      "closed_cover_isosig": "rLLAPvvPMPMQcaceeegklnlpopqonqqjkuxnrnqxaphgdcrpa",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_3232",
+      "closed_cover_isosig": "rLLMzLzLMAMQccdedehjlmknlooppqqpkxrjepapwtpfgquwr",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdxbn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_3259",
+      "closed_cover_isosig": "rLLMzwvLMQMQcacdeegmkmnlppoqopqjkakkiumkvnhefxfuk",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcadedeejmllxs",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_3374",
+      "closed_cover_isosig": "rLLAPvvLMPQQcbcedegjmlmnmqooqpqtsqjswjheahsswjkwr",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13a_3375",
+      "closed_cover_isosig": "rLLMzwvMwMQQcacdeegjmklqonqppoqjkakkiaqmrihotqlwr",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdisr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_834",
+      "closed_cover_isosig": "qLLAwLwLQLQkbedeejhmjklnoopophhntexhuvvujogawn",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_838",
+      "closed_cover_isosig": "qLLALvMwMQPkaceefjlikknnmooppjkuxpphucraxblwck",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdxbn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_839",
+      "closed_cover_isosig": "qLLAvwvPQPQkaceeinjnmlomlpoopjkuxkhemaovkctror",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_991",
+      "closed_cover_isosig": "qLLAwLwLQLQkbedeejhmjklnoopophhntexhuvvujogawn",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdedejkaank",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_992",
+      "closed_cover_isosig": "qLLALvPAPPAkaceefjkillmnoonppjkuxpxxuhwhmafgdj",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_993",
+      "closed_cover_isosig": "qLLALvMPMwQkaceefjiljmnlnppopjkuxppxacrpsxerkn",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcadedeejmllxs",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1367",
+      "closed_cover_isosig": "qLLALvLMMMQkaceeflikmlmnoppponkuxpauoswsgaeuxj",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1370",
+      "closed_cover_isosig": "qLLALvMwwQQkaceefjlikpnnmooopjkuxpphuctaxbilwr",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1371",
+      "closed_cover_isosig": "qLLAvAvvQQQkbddchgonlpnlpomnpdwjnluepddkvbvrkk",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdisr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1374",
+      "closed_cover_isosig": "qLLALvvAQQPkaceefimlnlkooonppnkuxpuarvwramiwtj",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1375",
+      "closed_cover_isosig": "qLLAvPLvQMQkbddcgikmlmknopoopdwjnudahulmrrqwjs",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcaddeeenpupxr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_1376",
+      "closed_cover_isosig": "qLLAvwwPAMQkaceeihjnlmlmpooopjkuxkfquawfrmqiun",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdisr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_3814",
+      "closed_cover_isosig": "rLLALwwwAQPPcaceeggijmlomnpopqqjkuxakamejpemncbur",
+      "closed_tetrahedra": 17,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQccecddephrwwr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_3840",
+      "closed_cover_isosig": "qLLALzzALMQkaceefgkjjnmompoopnkuxpwieoqqeusrnr",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m143",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkexjn",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_3911",
+      "closed_cover_isosig": "qLLALvwzQQMkaceefjknmomollpppnkuxppmrcxcanrtxg",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQccecddelqccjj",
+      "outside_BJW18_graph_cover_hypothesis": true
+    },
+    {
+      "name": "13n_3914",
+      "closed_cover_isosig": "qLLAvAvPAQMkbddchglnmlnoomoppdwjjluahhmlfrwfqn",
+      "closed_tetrahedra": 16,
+      "irreducible": true,
+      "incompressible_separating_normal_torus": true,
+      "hyperbolic_piece_census_name": "m239",
+      "hyperbolic_piece_isosig": "fLLQcacdeeejkdisr",
+      "outside_BJW18_graph_cover_hypothesis": true
+    }
+  ],
+  "negative_controls": {
+    "wrong_named_knot": true,
+    "wrong_hyperbolic_census_name": true,
+    "changed_normal_quad_vector": true
+  },
+  "input_sha256": {
+    "a6_cover_topology_inputs.json": "7a790461855f3365208be00a67c913d6e0234467a1a501f104ede42415fda3b8",
+    "verify_a6_cover_topology.py": "6388b909fd417cac9943c01dbfbbc8ef10d6037b8d0c0082f54c47000c448a9b",
+    "sources/burton-cusped-census-1405.2695v1.pdf": "2692a3fa0624f58c6685dae748107fcea0aa207e72813911e931147a5f57fabf",
+    "sources/burton-hypcensus-5-or.dat": "6b4f75a8b794dfe687cf831db134554389fe5ac256d23c5f7483a50a06e8d370",
+    "joint_a5_panel.json": "2a0ea8edf355067f05d1de90103edfcb7bf0508612031009e0b3eebdac87c906"
+  },
+  "assurance": "Exact internal actual-cover construction, current named-census binding, irreducibility and incompressible-normal-torus replay. Burton certified census hyperbolicity and trusted SnapPy/Regina algorithms are imported; no numerical volume/isometry, formal verification or external specialist review."
+}

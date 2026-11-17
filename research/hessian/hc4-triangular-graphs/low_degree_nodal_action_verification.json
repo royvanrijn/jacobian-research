@@ -44,7 +44,7 @@
   ],
   "elapsed_seconds": 0.276,
   "sympy_version": "1.14.0",
-  "proof_sha256": "1868ad5555a7a3e890416e31242a99decae6fe107a5c0e5c80d8158076b33d88",
+  "proof_sha256": "cf1addd30b5f26bf1d299676c737e2df30c83342c676aaa21e0df8fa7cb9c6ea",
   "checker_sha256": "7b7ffdf0cb8f6a4b253dfd544ecd810112bdafdf14ce60f181dffe9a406dee6d",
   "scope": {
     "all_degree_quadratic_generator_action_proved": true,

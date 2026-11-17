@@ -1,0 +1,350 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newtheorem{proposition}[lemma]{Proposition}
+\newcommand{\Cp}{\mathbb C_p}
+\newcommand{\Zp}{\mathbb Z_p}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\OO}{\mathcal O}
+\title{Algebraic Gamma shapes in the prime-power arithmetic domains}
+\author{}\date{}
+\begin{document}
+\maketitle
+
+Fix a prime $p$ and a positive integer $s$, and put
+\[
+ q=p^s,\qquad b_s=\frac{p^s-1}{p-1}.
+\]
+Let $\Cp$ be a complete algebraically closed extension of $\mathbb Q_p$,
+with valuation $v(p)=1$ and valuation ring $\OO=\{x:v(x)\ge0\}$.
+The valuation need not be integer-valued.
+Define the translation-stable domains
+\[
+ \Omega_{p,1}=\OO,\qquad
+ \Omega_{p,s}=\Zp+p^s\OO\quad(s\ge2).
+ \tag{1}
+\]
+For $s\ge2$ the second set is the finite union of closed disks
+\[
+ \Omega_{p,s}=\bigcup_{m=0}^{q-1}(-m+p^s\OO).
+ \tag{2}
+\]
+We use
+\[
+ T_{n,\gamma,q}(t)=\sum_{k=0}^n\binom nk(\gamma)_{qk}t^k
+\]
+and the integer-coefficient cyclic determinant
+$\mathcal D_{n,q}(\gamma)$ of the
+\href{ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex}{retained arithmetic proof}.
+The point of this note is to record which algebraic parameters that proof
+covers. It does not extend its proper-prime-power assertion to all
+of $\OO$.
+
+\begin{lemma}[The local determinant domains]\label{lem:local-domains}
+For every integer $n\ge1$, put $N=\binom n2$.
+At prime gaps the coefficientwise congruence is
+\[
+ \mathcal D_{n,p}(X)\equiv(-1)^N\pmod p
+       \quad\text{in }\mathbb F_p[X].
+ \tag{3}
+\]
+Consequently, for every $\gamma\in\OO$, with any residue field,
+$v(\mathcal D_{n,p}(\gamma))=0$.
+For every $s\ge2$ and every $\gamma\in\Omega_{p,s}$,
+\[
+ v(\mathcal D_{n,q}(\gamma))=(b_s-s)N.
+ \tag{4}
+\]
+In particular the determinant is nonzero throughout the stated domains.
+\end{lemma}
+\begin{proof}
+The coefficientwise assertion (3) is exactly
+\texttt{thm:prime-gap-unit-terminal} of the arithmetic proof.
+It is stronger than a statement only about values at $\Zp$.
+Indeed it writes the integer polynomial as
+$(-1)^N+pH(X)$ with $H\in\mathbb Z[X]$.
+For $\gamma\in\OO$, $H(\gamma)\in\OO$, so evaluation is a unit.
+The proof of (3) retains the polynomial
+$u+\gamma^p-\gamma$; it does not substitute $\gamma^p=\gamma$.
+
+For $s\ge2$, the proof of
+\texttt{thm:prime-power-lower-one} first excludes determinant roots
+on every disk in (2), working in a complete algebraically closed valued
+extension. The restriction to $\gamma\in\Zp$ occurs only at its final
+covering step. We check this distinction explicitly.
+
+If $\gamma=-m+p^s\eta$, $\eta\in\OO$, then at each integer level
+$1\le r\le s$ exactly $qk/p^r$ of the factors
+$\gamma,\ldots,\gamma+qk-1$ have valuation at least $r$.
+The remaining valuations are nonnegative, so
+\[
+ v((\gamma)_{qk})\ge \sum_{r=1}^s qk/p^r=b_sk.
+ \tag{5}
+\]
+This lower bound remains valid for fractional valuations.
+The monic reciprocal
+\[
+ R(z)=z^{qn}T_{n,\gamma,q}((-1)^{q+1}z^{-q})
+\]
+therefore has every nonzero root in $v(z)\ge b_s/q$:
+at a point of smaller valuation its leading term is uniquely least.
+A zero of the determinant, by the division-free cyclic presentation,
+the no-origin lemma and the critical-ideal identity used in the arithmetic
+proof, would give a nonzero cyclic argument $u=z^q$ with $v(u)\ge b_s$.
+
+The actual operator has constant
+$c=\gamma+q-1\in\Zp+p^s\OO$ and seed $1$.
+It lies in the exact class of the arithmetic proof's
+\texttt{lem:artin-hasse-closure} and
+\texttt{lem:frobenius-noncollision}.
+Those lemmas allow coefficients in $\OO$ and use its maximal ideal;
+they do not require a discrete valuation.
+Their series and every finite Euler derivative converge at $v(z)>0$,
+since their coefficients are integral. The radius bound above is strictly
+positive. The primitive-polynomial normalization in the descent uses an
+actual coefficient of minimum valuation, so it does not assume that
+the minimum is an integer or a power of $p$ available in the base field.
+The resulting contradiction excludes determinant roots on each whole
+closed disk, including its algebraic extension points.
+
+For completeness, the center calculation in the same proof is
+\[
+ \mathcal D_{n,q}(-m)=
+ \frac{((qn-m-1)!)^{n-1}}
+ {q^N\prod_{k=1}^{n-1}k^k(qk-m-1)!},
+ \qquad
+ v(\mathcal D_{n,q}(-m))=(b_s-s)N.
+ \tag{6}
+\]
+The case $n=1$ uses empty products.
+Factor $\mathcal D$ over $\Cp$. Every root $\rho$ lies outside the
+closed disk, so $v(\rho+m)<s$.
+For every $\gamma$ in that disk,
+$v(\gamma-\rho)=v(-m-\rho)$ by the strict ultrametric inequality.
+Thus the polynomial has constant valuation on the entire disk,
+equal to (6). This proves (4), not just its restriction to $\Zp$.
+\end{proof}
+
+\begin{theorem}[Positive algebraic shapes]\label{thm:algebraic-lower-one}
+Let $\beta\in\overline{\Q}\cap\mathbb R_{>0}$ admit an embedding
+\[
+ \iota:\Q(\beta)\longrightarrow\Cp,\qquad
+                  \iota(\beta)\in\Omega_{p,s}.
+ \tag{7}
+\]
+For every $(A,B)\in\C^2\setminus\{(0,0)\}$ and
+$f(X)=X(A+BX^q)$, the Gamma functional
+$\mathcal L_\beta(X^j)=(\beta)_j$ satisfies
+\[
+ \bigl(\mathcal L_\beta(f^m),\mathcal L_\beta(f^{m+1})\bigr)
+                     \ne(0,0)\qquad(m\ge1).
+ \tag{8}
+\]
+For prime gaps, it suffices that $\beta$ be integral at one $p$-adic
+embedding; its residue need not lie in $\mathbb F_p$.
+For every prime-power gap, a $p$-integral embedding into $\mathbb Q_p$
+suffices. The disk condition (7) also permits embeddings into larger,
+including ramified, extensions.
+\end{theorem}
+\begin{proof}
+For terminal order $n=m+1\ge2$, set $\gamma=m+\beta>0$.
+Integer translation preserves (1), so $\iota(\gamma)$ belongs to the
+same domain. Lemma~\ref{lem:local-domains} gives
+$\mathcal D_{n,q}(\gamma)\ne0$ in $\Q(\beta)$:
+a field embedding cannot send a nonzero value to zero, or a zero value
+to a nonzero value.
+The all-gap discriminant identity used in the arithmetic proof is
+\[
+ \operatorname{Disc} T_{n,\gamma,q}
+ =(-1)^Nq^N\left(\prod_{k=1}^n k^k\right)
+       \left(\prod_{k=1}^{n-1}(\gamma)_{qk}\right)
+       \mathcal D_{n,q}(\gamma).
+ \tag{9}
+\]
+Every rising factorial on the right is nonzero because the chosen real
+shape $\gamma$ is positive. Hence this algebraic discriminant is nonzero,
+and $T_{n,\gamma,q}$ is squarefree after extension to $\C$.
+
+If $AB\ne0$, the normalized two moments are
+$T_{n,\gamma+1,q}(B/A)$ and $T_{n-1,\gamma,q}(B/A)$.
+Writing $T=T_{n,\gamma,q}$ and $\theta=tD_t$, coefficient comparison gives
+\[
+ T_{n,\gamma+1,q}=T+(q/\gamma)\theta T,\qquad
+ T_{n-1,\gamma,q}=T-(1/n)\theta T.
+\]
+The coefficient determinant is
+$-(\gamma+qn)/(\gamma n)\ne0$.
+A common zero would therefore be a multiple zero of $T$, impossible;
+$t=0$ is excluded by $T(0)=1$.
+The normalization factors $A^j(\beta)_j$ are nonzero.
+If $A=0$ or $B=0$, the phase is a nonzero monomial and every positive
+moment is directly nonzero.
+\end{proof}
+
+
+\begin{corollary}[Prime gaps at algebraic shapes]\label{cor:prime-gap-algebraic-shapes}
+Let $p$ be prime and let $\beta>0$ be algebraic over $\Q$.
+If $v_{\mathfrak p}(\beta)\ge0$ at at least one place
+$\mathfrak p$ of $\Q(\beta)$ above $p$, then every nonzero
+\[
+ f(X)=X(A+BX^p),\qquad A,B\in\C,
+\]
+has a nonzero Gamma moment in every pair of consecutive positive orders.
+In particular every positive algebraic-integer shape is covered at
+every prime gap, including $\beta=\sqrt2$.
+\end{corollary}
+\begin{proof}
+A place above $p$ is realized by an embedding of $\Q(\beta)$ into $\Cp$.
+For $s=1$, its integral parameter lies in $\Omega_{p,1}=\OO$.
+At terminal order $n$, the parameter $\gamma=n+\beta-1$
+remains integral there. Thus (3) evaluates to a unit, and
+Theorem~\ref{thm:algebraic-lower-one} applies.
+The argument needs only one such embedding and allows arbitrary
+complex $A,B$; a field embedding certifies nonvanishing of the algebraic
+discriminant independently of those coefficients.
+
+Every algebraic integer is integral at every such embedding.
+Indeed, at a root of a monic integer polynomial, a negative valuation
+would make its leading term uniquely least among all terms.
+This is impossible. No unit condition on $\beta$ is needed:
+at $p=2$ the valuation of $\sqrt2$ is $1/2$, which is allowed.
+\end{proof}
+
+\begin{corollary}[Necessary shape locus for a prime-gap exception]
+\label{cor:prime-gap-exception-locus}
+Fix a prime $p$ and a positive real shape $\beta$.
+If some nonzero $X(A+BX^p)$ has two consecutive positive
+Gamma moments zero, then $\beta$ is algebraic and
+\[
+ v_{\mathfrak p}(\beta)<0
+ \quad\text{at every place }\mathfrak p\mid p
+ \text{ of }\Q(\beta).
+ \tag{11}
+\]
+For the primitive integer minimal polynomial
+$g_\beta(X)=a_0+\cdots+a_dX^d$, condition (11) is equivalent to
+\[
+ \overline{g_\beta}\in\mathbb F_p^\times;
+ \quad\text{that is, }p\nmid a_0
+ \text{ and }p\mid a_j\text{ for every }j\ge1.
+ \tag{12}
+\]
+These are necessary conditions for an exception, not sufficient
+conditions for failure.
+\end{corollary}
+\begin{proof}
+The \href{BINOMIAL_IRREDUCIBILITY_REDUCTION.tex}{transcendental-shape theorem},
+Corollary \texttt{cor:transcendental-shape}, already gives all-index
+consecutive coprimality for every positive transcendental shape and
+every binomial support. A failure here therefore forces $\beta$ to
+be algebraic. Corollary~\ref{cor:prime-gap-algebraic-shapes} then
+forces every place above $p$ to be nonintegral. This proves (11).
+
+For completeness we prove the elementary equivalence with (12).
+If (12) holds, evaluation of $g_\beta$ at any integral point of $\Cp$
+is a unit, so it has no integral root.
+Conversely assume all its $p$-adic roots $\beta_i$ have negative
+valuation; this is exactly (11), since all embeddings above a given
+place give the same valuation sign.
+Because $\beta\ne0$, the constant coefficient $a_0$ is nonzero.
+The reciprocal roots all have positive valuation, and
+\[
+ g_\beta(X)=a_0\prod_{i=1}^d(1-X/\beta_i).
+\]
+Vieta's formulas give $v_p(a_j/a_0)>0$ for every nonzero
+coefficient with $j\ge1$. These are ratios of integers, so
+$v_p(a_j)\ge v_p(a_0)+1$.
+Primitiveness forces the minimum coefficient valuation to be zero;
+hence $v_p(a_0)=0$ and all other coefficients are divisible by $p$.
+This proves (12).
+
+The larger integral domain here is a consequence of the
+\emph{prime-gap} coefficient congruence.
+At proper prime powers, the sufficient domains in (1)--(2)
+remain unchanged; no assertion about all algebraic-integer shapes
+at every prime-power gap follows.
+\end{proof}
+
+\begin{corollary}[Fixed monomial radial markers]\label{cor:algebraic-marked-radial}
+Let independent $Y_i\sim\operatorname{Gamma}(\alpha_i,1)$ have
+arbitrary positive real shapes, $1\le i\le r$, $r\ge1$.
+Suppose their total shape $b=\sum_i\alpha_i$ is positive algebraic
+and has an embedding satisfying (7).
+Set
+\[
+ S=\sum_iY_i,\qquad F=S(A+BS^q),\qquad (A,B)\ne(0,0).
+\]
+For every fixed $\nu\in\mathbb N_0^r$ and every $m\ge1$,
+\[
+ \bigl(\mathbb E[Y^\nu F^m],\mathbb E[Y^\nu F^{m+1}]\bigr)\ne(0,0).
+\]
+Individual shapes need not be algebraic.
+\end{corollary}
+\begin{proof}
+The exact monomial tilt in
+\href{PRIME_POWER_MARKED_RADIAL_SFC.tex}{the marked radial identity}
+gives
+\[
+ \mathbb E[Y^\nu h(S)]
+  =\left(\prod_i(\alpha_i)_{\nu_i}\right)
+           \mathcal L_{b+|\nu|}(h).
+\]
+The shifted shape is positive algebraic, and its embedding is still
+in (1). The prefactor is strictly positive. Apply
+Theorem~\ref{thm:algebraic-lower-one} to the same fixed marker in
+both entries.
+\end{proof}
+
+The disk condition also allows higher-degree local embeddings:
+for example, the positive algebraic shape $1+p^s\sqrt2$ lies in
+$\Zp+p^s\OO$ at every embedding, whether or not that embedding
+takes values in $\mathbb Q_p$. These sufficient domains are not
+claimed to classify all positive algebraic shapes.
+
+\begin{proposition}[A residue-extension obstruction]\label{prop:residue-extension-obstruction}
+At $q=4,n=2$, extending the local determinant or squarefreeness
+conclusion to every integral algebraic parameter is false.
+There is an algebraic $2$-adic unit $\gamma$ whose residue has degree two
+over $\mathbb F_2$ and for which
+\[
+ \mathcal D_{2,4}(\gamma)=0,\qquad
+                 T_{2,\gamma,4}(t)=(1-45t)^2.
+\]
+This does not give a positive-real-Gamma counterexample.
+\end{proposition}
+\begin{proof}
+The degree-two discriminant identity gives, polynomially,
+\[
+ \mathcal D_{2,q}(X)=\frac{(X+q)_q-(X)_q}{q}.
+\]
+For $q=4$ this is
+\[
+ \mathcal D_{2,4}(X)=2(2X+7)(X^2+7X+15),\qquad
+ \frac{\mathcal D_{2,4}(X)}2\equiv X^2+X+1\pmod2.
+ \tag{10}
+\]
+Take either root $\gamma$ of $X^2+7X+15$ in $\Cp$.
+The monic polynomial and unit constant term force $v(\gamma)=0$.
+Its reduction satisfies the irreducible polynomial
+$X^2+X+1$ over $\mathbb F_2$, so it is outside the prime-field residue
+class and outside every disk in (2).
+Reduction modulo $X^2+7X+15$ gives
+$(\gamma)_4=-45$ and $(\gamma)_8=2025$, proving the displayed square.
+The complex roots of this quadratic are
+$(-7\pm\sqrt{-11})/2$, both nonreal. Thus this obstruction concerns
+the larger arithmetic parameter domain, not the positive-shape
+assertion (8).
+\end{proof}
+
+The prime-gap coefficient congruence is uniform on all integral
+algebraic parameters. At proper prime powers, the proved integer
+closed disks remain the sufficient domain; neither an assertion about
+all integral extension points nor an assertion about every positive
+algebraic shape is inferred. No novelty, external review or formal
+verification is claimed.
+\end{document}

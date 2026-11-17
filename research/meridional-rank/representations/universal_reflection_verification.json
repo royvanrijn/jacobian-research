@@ -488,6 +488,692 @@
       "all_reduced_roots_propagated_from_three": true
     }
   ],
+  "a6_alternating_transfers": {
+    "raw_local_algebra": [
+      {
+        "type": "I",
+        "raw_six_variable_coefficients_verified": true,
+        "division_free_branch_reductions": 2,
+        "both_normalized_sign_branches_verified": true
+      },
+      {
+        "type": "II",
+        "raw_six_variable_coefficients_verified": true,
+        "division_free_branch_reductions": 2,
+        "both_normalized_sign_branches_verified": true
+      }
+    ],
+    "transfers": [
+      {
+        "name": "13a_304",
+        "local_type": "I",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          9
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          6,
+          9
+        ],
+        "independent_reduced_roots": [
+          0,
+          6,
+          9
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            9,
+            5,
+            6
+          ]
+        ],
+        "folded_pair": [
+          6,
+          7
+        ],
+        "paired_reduced_system": "13a_375",
+        "relabel_new_to_old": {
+          "5": 10,
+          "6": 11,
+          "12": 8,
+          "11": 6,
+          "0": 9,
+          "8": 12,
+          "9": 0,
+          "10": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            8,
+            9
+          ],
+          [
+            5,
+            11,
+            12
+          ],
+          [
+            6,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            11
+          ],
+          [
+            9,
+            5,
+            6
+          ],
+          [
+            10,
+            0,
+            12
+          ],
+          [
+            11,
+            0,
+            5
+          ],
+          [
+            12,
+            6,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "13a_362",
+        "local_type": "I",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          11
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          6,
+          11
+        ],
+        "independent_reduced_roots": [
+          0,
+          6,
+          11
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            11,
+            5,
+            6
+          ]
+        ],
+        "folded_pair": [
+          6,
+          7
+        ],
+        "paired_reduced_system": "13a_375",
+        "relabel_new_to_old": {
+          "0": 10,
+          "5": 11,
+          "11": 8,
+          "10": 6,
+          "12": 9,
+          "6": 12,
+          "8": 0,
+          "9": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            10,
+            11
+          ],
+          [
+            5,
+            8,
+            9
+          ],
+          [
+            6,
+            9,
+            10
+          ],
+          [
+            8,
+            0,
+            5
+          ],
+          [
+            9,
+            11,
+            12
+          ],
+          [
+            10,
+            0,
+            12
+          ],
+          [
+            11,
+            5,
+            6
+          ],
+          [
+            12,
+            6,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "13a_623",
+        "local_type": "I",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "independent_reduced_roots": [
+          0,
+          5,
+          8
+        ],
+        "unit_determinant_basis_operations": [],
+        "folded_pair": [
+          8,
+          9
+        ],
+        "paired_reduced_system": "13a_373",
+        "relabel_new_to_old": {
+          "11": 10,
+          "10": 11,
+          "7": 0,
+          "8": 12,
+          "0": 8,
+          "5": 6,
+          "12": 9,
+          "6": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            6,
+            7
+          ],
+          [
+            5,
+            11,
+            12
+          ],
+          [
+            6,
+            0,
+            12
+          ],
+          [
+            7,
+            10,
+            11
+          ],
+          [
+            8,
+            5,
+            6
+          ],
+          [
+            10,
+            0,
+            5
+          ],
+          [
+            11,
+            7,
+            8
+          ],
+          [
+            12,
+            8,
+            10
+          ]
+        ]
+      },
+      {
+        "name": "13a_629",
+        "local_type": "I",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          7
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "independent_reduced_roots": [
+          0,
+          5,
+          8
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            5,
+            7,
+            8
+          ]
+        ],
+        "folded_pair": [
+          8,
+          9
+        ],
+        "paired_reduced_system": "13a_373",
+        "relabel_new_to_old": {
+          "8": 10,
+          "7": 11,
+          "5": 0,
+          "6": 12,
+          "11": 8,
+          "12": 6,
+          "10": 9,
+          "0": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            10,
+            11
+          ],
+          [
+            5,
+            7,
+            8
+          ],
+          [
+            6,
+            0,
+            12
+          ],
+          [
+            7,
+            11,
+            12
+          ],
+          [
+            8,
+            5,
+            6
+          ],
+          [
+            10,
+            6,
+            7
+          ],
+          [
+            11,
+            0,
+            5
+          ],
+          [
+            12,
+            8,
+            10
+          ]
+        ]
+      },
+      {
+        "name": "13a_3232",
+        "local_type": "II",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          9
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          6,
+          9
+        ],
+        "independent_reduced_roots": [
+          0,
+          6,
+          9
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            9,
+            5,
+            6
+          ]
+        ],
+        "folded_pair": [
+          6,
+          7
+        ],
+        "paired_reduced_system": "13a_375",
+        "relabel_new_to_old": {
+          "5": 10,
+          "6": 11,
+          "12": 8,
+          "11": 6,
+          "0": 9,
+          "8": 12,
+          "9": 0,
+          "10": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            8,
+            9
+          ],
+          [
+            5,
+            11,
+            12
+          ],
+          [
+            6,
+            9,
+            10
+          ],
+          [
+            8,
+            10,
+            11
+          ],
+          [
+            9,
+            5,
+            6
+          ],
+          [
+            10,
+            0,
+            12
+          ],
+          [
+            11,
+            0,
+            5
+          ],
+          [
+            12,
+            6,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "13a_3259",
+        "local_type": "II",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          11
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          6,
+          11
+        ],
+        "independent_reduced_roots": [
+          0,
+          6,
+          11
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            11,
+            5,
+            6
+          ]
+        ],
+        "folded_pair": [
+          6,
+          7
+        ],
+        "paired_reduced_system": "13a_375",
+        "relabel_new_to_old": {
+          "0": 10,
+          "5": 11,
+          "11": 8,
+          "10": 6,
+          "12": 9,
+          "6": 12,
+          "8": 0,
+          "9": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            10,
+            11
+          ],
+          [
+            5,
+            8,
+            9
+          ],
+          [
+            6,
+            9,
+            10
+          ],
+          [
+            8,
+            0,
+            5
+          ],
+          [
+            9,
+            11,
+            12
+          ],
+          [
+            10,
+            0,
+            12
+          ],
+          [
+            11,
+            5,
+            6
+          ],
+          [
+            12,
+            6,
+            8
+          ]
+        ]
+      },
+      {
+        "name": "13a_3374",
+        "local_type": "II",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "independent_reduced_roots": [
+          0,
+          5,
+          8
+        ],
+        "unit_determinant_basis_operations": [],
+        "folded_pair": [
+          8,
+          9
+        ],
+        "paired_reduced_system": "13a_373",
+        "relabel_new_to_old": {
+          "11": 10,
+          "10": 11,
+          "7": 0,
+          "8": 12,
+          "0": 8,
+          "5": 6,
+          "12": 9,
+          "6": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            6,
+            7
+          ],
+          [
+            5,
+            11,
+            12
+          ],
+          [
+            6,
+            0,
+            12
+          ],
+          [
+            7,
+            10,
+            11
+          ],
+          [
+            8,
+            5,
+            6
+          ],
+          [
+            10,
+            0,
+            5
+          ],
+          [
+            11,
+            7,
+            8
+          ],
+          [
+            12,
+            8,
+            10
+          ]
+        ]
+      },
+      {
+        "name": "13a_3375",
+        "local_type": "II",
+        "original_seeds": [
+          0,
+          1,
+          5,
+          7
+        ],
+        "changed_seeds": [
+          0,
+          1,
+          5,
+          8
+        ],
+        "independent_reduced_roots": [
+          0,
+          5,
+          8
+        ],
+        "unit_determinant_basis_operations": [
+          [
+            5,
+            7,
+            8
+          ]
+        ],
+        "folded_pair": [
+          8,
+          9
+        ],
+        "paired_reduced_system": "13a_373",
+        "relabel_new_to_old": {
+          "8": 10,
+          "7": 11,
+          "5": 0,
+          "6": 12,
+          "11": 8,
+          "12": 6,
+          "10": 9,
+          "0": 5
+        },
+        "folded_crossings": [
+          [
+            0,
+            10,
+            11
+          ],
+          [
+            5,
+            7,
+            8
+          ],
+          [
+            6,
+            0,
+            12
+          ],
+          [
+            7,
+            11,
+            12
+          ],
+          [
+            8,
+            5,
+            6
+          ],
+          [
+            10,
+            6,
+            7
+          ],
+          [
+            11,
+            0,
+            5
+          ],
+          [
+            12,
+            8,
+            10
+          ]
+        ]
+      }
+    ]
+  },
   "sign_branches": [
     {
       "signs": [
@@ -715,11 +1401,12 @@
   "normalized_four_coordinate_trace_replayed": true,
   "all_reduced_root_norms": 2,
   "corrupted_multiplier_rejected": true,
-  "scope": "Exact integer polynomial identities constant15 for all8 reduced sign branches, independently reconstructed reduced reflection equations and normalized four-coordinate seed trace. The generated auxiliary-symbol integer identities1 verify the division-free short contradiction in every field. The initial first-loop reduction, root-sign normalization and transport to all Coxeter targets remain written arguments; reflection theorem characteristic not2 and Coxeter corollary characteristic zero. Optional reduced identities15 are supporting evidence only, with no role at characteristics3,5. No determinant localization or Groebner implementation trusted by replay.",
+  "scope": "Exact integer polynomial identities constant15 for all8 reduced sign branches, independently reconstructed reduced reflection equations and normalized four-coordinate seed trace. The generated auxiliary-symbol integer identities1 verify the division-free short contradiction in every field. The initial first-loop reduction, root-sign normalization and transport to all Coxeter targets remain written arguments; reflection theorem characteristic not2 and Coxeter corollary characteristic zero. Optional reduced identities15 are supporting evidence only, with no role at characteristics3,5. The eight A6-diagram transfers additionally check both raw local reductions, their division-free sign branches, determinant-one seed changes, original traces and exact reduced-system relabelings. No determinant localization or Groebner implementation trusted by replay.",
   "input_sha256": {
-    "verify_universal_reflection_obstruction.py": "43ac6154703b6ee035b4be7c852c38d92e300fd9e56152bc8c7c1581eb600c5d",
+    "verify_universal_reflection_obstruction.py": "c5035732c80e23f749a4b6c0421b8a126f71b0b46174950a84186d403b74ae07",
     "universal_reflection_certificates.json": "9e94502c308f3b1b134edcc4f5db7f200ad18667beaf97932c69d2b60277bf6f",
     "seven_sheet_cover_inputs.json": "0cdaed4926bdf03eb399d572da98bf59b7bbbe0ea13ab66106ddc34724a85ef6",
-    "UNIVERSAL_REFLECTION_OBSTRUCTION.tex": "42c1dd581a8887a2f4b6c777a76ee96ea998fb427a5b03ef31510b9e3f67dcd2"
+    "UNIVERSAL_REFLECTION_OBSTRUCTION.tex": "30639887038579956ed9898769771fe7b53eec6c9a230fc578405137129144aa",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226"
   }
 }

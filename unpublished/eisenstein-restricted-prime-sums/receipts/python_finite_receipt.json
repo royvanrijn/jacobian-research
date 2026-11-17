@@ -1,0 +1,132 @@
+{
+  "scope": "Exact finite enumeration only; targets N=6k+2 <= requested_limit",
+  "requested_limit": 99999999,
+  "largest_target": 99999998,
+  "number_of_targets": 16666667,
+  "allowed_summands_count": 6992353,
+  "sieve_prime_limit": 9999,
+  "offending_primes_sieved_count_including_two": 617,
+  "unrestricted_exceptions": [],
+  "largest_least_summand": 211,
+  "least_summand_histogram": [
+    {
+      "summand": 1,
+      "new_targets": 6992353
+    },
+    {
+      "summand": 7,
+      "new_targets": 4296673
+    },
+    {
+      "summand": 13,
+      "new_targets": 2503660
+    },
+    {
+      "summand": 19,
+      "new_targets": 1392391
+    },
+    {
+      "summand": 31,
+      "new_targets": 640650
+    },
+    {
+      "summand": 37,
+      "new_targets": 389497
+    },
+    {
+      "summand": 43,
+      "new_targets": 220471
+    },
+    {
+      "summand": 49,
+      "new_targets": 117529
+    },
+    {
+      "summand": 61,
+      "new_targets": 50287
+    },
+    {
+      "summand": 67,
+      "new_targets": 29358
+    },
+    {
+      "summand": 73,
+      "new_targets": 16394
+    },
+    {
+      "summand": 79,
+      "new_targets": 8664
+    },
+    {
+      "summand": 91,
+      "new_targets": 3873
+    },
+    {
+      "summand": 97,
+      "new_targets": 2430
+    },
+    {
+      "summand": 103,
+      "new_targets": 1210
+    },
+    {
+      "summand": 109,
+      "new_targets": 615
+    },
+    {
+      "summand": 127,
+      "new_targets": 284
+    },
+    {
+      "summand": 133,
+      "new_targets": 155
+    },
+    {
+      "summand": 139,
+      "new_targets": 84
+    },
+    {
+      "summand": 151,
+      "new_targets": 46
+    },
+    {
+      "summand": 157,
+      "new_targets": 19
+    },
+    {
+      "summand": 163,
+      "new_targets": 13
+    },
+    {
+      "summand": 169,
+      "new_targets": 5
+    },
+    {
+      "summand": 181,
+      "new_targets": 4
+    },
+    {
+      "summand": 193,
+      "new_targets": 1
+    },
+    {
+      "summand": 211,
+      "new_targets": 1
+    }
+  ],
+  "balanced_condition": "N/3 <= a <= b <= 2N/3",
+  "balanced_exceptions": [
+    8,
+    44
+  ],
+  "balanced_max_search_offset_in_index_units": 70,
+  "balanced_max_search_offset_last_target": 74017358,
+  "all_witnesses_and_all_listed_exceptions_rechecked": true,
+  "sha256_allowed_boolean_array": "010a6f3752c25b6e58164d309c2173f4b308f5b81180ad96c3e96dfca0994575",
+  "sha256_unrestricted_int32_witness_indices": "fff9741cf68c12c795e28aebd94884b2717272dd337de5bd28f07234b658ddf0",
+  "sha256_balanced_int32_witness_indices": "2fea65e449c5f1bdf452afd38c101e2906010e18add1e2cc6c91ba964efdf4ec",
+  "witness_encoding": "N=6k+2; entry t>=0 means a=6t+1, b=6(k-t)+1; -1 means no representation in scope",
+  "witness_file": "witnesses.npz",
+  "script_sha256": "3a5912ef5d3bd023efc4498a05e0c627028f09b65251fb61bf3b9dc668acf4da",
+  "elapsed_seconds": 14.682
+}

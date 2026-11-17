@@ -1,0 +1,13 @@
+{
+  "title": "Constructing class fields over local fields",
+  "author": "Sebastian Pauli",
+  "journal": "Journal de Theorie des Nombres de Bordeaux 18 (2006), 627-652",
+  "doi": "10.5802/jtnb.563",
+  "primary_url": "https://numdam.org/item/10.5802/jtnb.563.pdf",
+  "locators": {
+    "ramified_galois_degree_p_count": "Corollary 4.7, printed pp. 638-639",
+    "table_notation": "Section 7, printed p. 647",
+    "three_cyclic_cubic_Q3_fields": "Section 7 table, printed p. 649"
+  },
+  "scope": "For Q3, exactly three ramified cyclic cubic fields, each with discriminant exponent four; the general class-field algorithm is not replayed."
+}

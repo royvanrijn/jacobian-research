@@ -168,6 +168,81 @@ checker. Since $Q$ has a nonabelian quotient $G$, it is not cyclic.
 Its ordinary generating rank is therefore two.
 \end{proof}
 
+\section{Uniform targets over every prime}
+
+The ordinary pair admits an integral proof, so no enumeration of a
+large affine group is necessary. Write $W_{\mathbb Z}=\ker(\sum:
+\mathbb Z^7\to\mathbb Z)$ and $Q_p=W_p\rtimes G$, where
+$W_p=\ker(\sum:\F_p^7\to\F_p)$. Let $C_p$ be the class of a split
+nonidentity involution $(\sigma,0)$.
+
+\begin{theorem}\label{thm:allprimes}
+For every prime $p$, the group $Q_p$ has order $168p^6$, ordinary
+generating rank two, and $C_p$-generating rank four. Moreover
+$|C_p|=21p^2$. The same ordinary pair and class quartet generate
+$W_{\mathbb Z}\rtimes G$, and their reductions work over every
+$\mathbb Z/m\mathbb Z$, $m\ge2$, with the same two ranks.
+\end{theorem}
+\begin{proof}
+Use the quartet $x_0,x_1,x_2,x_3$ above with its integral translation
+vectors. The six displayed pure translations form an integral basis
+of $W_{\mathbb Z}$. The nonzero translate of $x_0$ belongs to the
+split class since $e_1-e_5=(I-P_{p_0})(e_1-e_2)$ for
+$p_0=(0\,4)(1\,5)$, which fixes $e_2$. Thus this quartet generates the integral group and all its
+listed reductions.
+
+For any nonidentity involution $\sigma$, the image of $I-P_\sigma$
+on the full seven-coordinate module is spanned by its two swap
+differences. It has the same image on $W_p$: adjust the coordinate
+sum of a potential at a fixed sheet. Consequently translation
+conjugation gives precisely $p^2$ lifts in the class over each of
+the twenty-one base involutions. This proves the class size, also
+in characteristic two. At $p=2$ this class is a proper subset of
+all involutory lifts; no assertion about arbitrary involutions is used.
+
+Act on the full ambient space $\F_p^7\oplus\F_p$. Class elements
+have displacement rank two by conjugacy to $(\sigma,0)$.
+Translations force the last coordinate of a common fixed vector to
+vanish, and the transitive base group leaves just the constant line.
+The fixed-space codimension is seven. Lemma~\ref{lem:fixed} forces
+at least four class generators, including when $p=7$. Restricting
+to $W_7\oplus\F_7$ would lose this lower bound.
+
+For the ordinary pair put $a=x_0x_2$ and $b=x_1x_3$. Its projections
+generate the $168$-element group $G$. The word $t=(ab)^3$ is the
+translation $(1,1,1,0,0,-3,0)$. Conjugating $t$ by
+\[
+ baaba,\quad baaaba,\quad babbaa,\quad abbaba,\quad abb,\quad 1
+\]
+gives, in that order, the rows of the integral matrix
+\[
+\begin{pmatrix}
+0&0&1&0&1&1&-3\\
+0&1&0&-3&1&0&1\\
+0&0&1&1&-3&0&1\\
+1&0&0&-3&0&1&1\\
+-3&1&0&1&0&1&0\\
+1&1&1&0&0&-3&0
+\end{pmatrix}.
+\]
+Every row has sum zero and the first six columns have determinant
+one. These translations therefore form an integral basis of
+$W_{\mathbb Z}$. The pair generates the whole integral group and
+every listed reduction. The nonabelian quotient $G$ rules out
+ordinary rank one. Reduction modulo a prime dividing $m$ supplies
+the class-rank lower bound over $\mathbb Z/m\mathbb Z$; the same
+quartet supplies its upper bound. The rational ambient action
+supplies the class lower bound for the integral group itself.
+\end{proof}
+
+The exact integral word products, binary-linear projection closure
+and determinant are replayed by
+\path{verify_uniform_affine_groups.py}. This target theorem creates
+no additional named knot equality by itself. For the retained
+seven-sheet actions with cover group $C_3$, a parabolic lift over
+$p\ne3$ is an ambient coboundary, since $H_1(Y;\F_p)=0$; it cannot
+surject onto the full $Q_p$.
+
 \section{Twenty-four knot-group epimorphisms}
 
 Put

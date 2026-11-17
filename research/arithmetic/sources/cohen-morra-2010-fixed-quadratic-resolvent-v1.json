@@ -1,0 +1,27 @@
+{
+  "title": "Counting Cubic Extensions with given Quadratic Resolvent",
+  "authors": [
+    "Henri Cohen",
+    "Anna Morra"
+  ],
+  "arxiv": "1003.1869v1",
+  "version_date": "2010-03-09",
+  "primary_url": "https://arxiv.org/pdf/1003.1869v1",
+  "metadata_url": "https://arxiv.org/abs/1003.1869v1",
+  "journal": "Journal of Algebra 325 (2011), 461-478",
+  "doi": "10.1016/j.jalgebra.2010.08.027",
+  "retained_file": "cohen-morra-2010-fixed-quadratic-resolvent-v1.pdf",
+  "locators": {
+    "conductor_descent": "Introduction, printed/PDF p.1: conductor of normal closure N/K is f O_K",
+    "field_discriminant": "Introduction, printed/PDF p.2: D_L=d_K f^2"
+  },
+  "scope": "Conductor and maximal-order field-discriminant interface only. The unfiltered Theorem 1.1 asymptotic and constant are not imported for the Hasse-filtered or elliptic image counts.",
+  "date_warning": "The arXiv identifier/header dates this version 2010-03-09; its internal title page says November 12, 2018. Citation is pinned by version identifier and retained bytes.",
+  "inspected_printed_pages": [
+    1,
+    2
+  ],
+  "retrieved_on": "2026-11-17",
+  "sha256": "2477ad5f4ff61e55246c053b832bb7ec88a8b7b643ca4c7c471124a81e26b6a0",
+  "bytes": 237737
+}

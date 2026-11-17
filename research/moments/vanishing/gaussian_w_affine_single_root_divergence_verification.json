@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "generic_source": "Y square completion and exact linear-Gaussian kernel coefficient",
+  "critical_geometry_controls_m": [
+    2,
+    7
+  ],
+  "base_lagrange_controls_n": [
+    0,
+    6
+  ],
+  "prototype_independent_wick_lagrange_orders": [
+    0,
+    6
+  ],
+  "prototype_first_coefficients": [
+    "1",
+    "-2",
+    "35",
+    "-775/2"
+  ],
+  "prototype_critical_ratio": "rho=27/256; first correction -1/(2n)",
+  "prototype_critical_curve": "2t*w^2-3w-4=0; Xstar=(9w+16)/(16w^3)",
+  "scope": "Finite algebraic controls. Unrestricted divergence is the written selected-sheet contour/convolution proof.",
+  "family": "W-affine single-nonzero-root divergence and one-root finite classification",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "ecfa976c2c5fc41f564f12a06d04e09c4f7d215dcca04b41fabda065a076939d",
+  "checker_sha256": "60ca6f2cffd808f9a50c6b91218f196aea9a7ffe388b234e0b7a7f49baadbd67",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

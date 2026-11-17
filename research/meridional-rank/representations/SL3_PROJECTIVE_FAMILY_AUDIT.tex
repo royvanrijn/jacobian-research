@@ -1,0 +1,235 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\mr}{\operatorname{mr}}
+\newcommand{\F}{\mathbb F}
+\title{Fifty projective-cover certificates in a known MRC family}
+\author{Exact values and graph-cover family audit}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+Fifty additional named diagrams have exact meridional rank and bridge
+number four. Their actual double branched covers are prime graph
+manifolds. Consequently these equalities belong to the existing
+Boileau--Jang--Weidmann graph-cover family, and are not presented as
+cases outside known MRC families. The retained contribution is the
+explicit value, finite projective-cover certificate and exact
+family identification for each name. Worldwide priority of the
+individual named computations is not established.
+
+\begin{theorem}\label{thm:equalities}
+For each knot in the following table,
+\[
+                         \mr(K)=b(K)=4.
+\]
+There is a transitive thirteen-sheet action of the knot group through
+$\operatorname{SL}_3(\F_3)$ in which a meridian has cycle type
+$2^4 1^5$. Its branched completion $Y$ has
+$b_1(Y;\F_3)=2$.
+\begin{center}\small
+\begin{tabular}{lp{11.7cm}}
+\toprule
+table & indices\\
+\midrule
+$13a$ & $3167,3168,3169,3170,3188,3189,3190,3191,$\newline
+$3293,3294,3295,3298,3347,3348,3351,3402,3403,3411$\\[3pt]
+$13n$ & $326,329,330,341,344,345,348,351,352,355,357,358,$\newline
+$510,513,514,518,520,521,524,525,526,529,530,531,$\newline
+$3739,3742,3745,3748,3770,3773,3776,3779$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{theorem}
+
+\begin{theorem}\label{thm:graph}
+For each of these fifty knots, the actual double branched cover
+$\Sigma_2(K)$ is a closed orientable irreducible graph manifold.
+A retained collection of three or four disjoint incompressible
+normal tori cuts it into four or five explicitly recognized
+Seifert fibre spaces.
+\end{theorem}
+
+\begin{corollary}\label{cor:known}
+All fifty examples satisfy the prime graph-manifold double-cover
+hypothesis of the published BJW18 theorem. With their upper bridge
+bound four, the MRC equality is in that existing theorem's scope.
+\end{corollary}
+
+\section{Exact named diagrams and the bridge upper bound}
+
+The finite input is \path{sl3_projective_family_inputs.json}.
+Each row retains the literal thirteen-crossing PD, the independently
+packaged Hoste--Thistlethwaite census PD and DT code, and an exact dart
+bijection preserving edge pairing, cyclic crossing order and the
+over/under distinction. Every selected bijection preserves orientation
+and over/under. The verifier reads the current census package and checks
+its pinned version and source-file hashes before verifying these maps.
+A PD name is not inferred from a homology order or numerical invariant.
+
+At each crossing the PD convention puts the overstrand in positions
+one and three. Contracting the overstrand continuations gives thirteen
+Wirtinger arcs. The replay checks planarity, connected projection,
+one link component and every crossing incidence. Four seed arcs and
+nine successive legal Wirtinger propagation steps reach all thirteen
+arcs in each diagram. Thus each diagram has Wirtinger number at most
+four. The published equivalence of Wirtinger number and bridge number,
+BKVV20 Definition~1.2 and Theorem~1.3
+\cite[printed pp.~245--246]{bkvv}, gives $b(K)\le4$.
+
+\section{The thirteen-sheet homology certificate}
+
+The projective points are the thirteen nonzero vectors of $\F_3^3$
+modulo scalar, normalized by making the first nonzero coordinate one.
+For every arc the input retains a literal $3$ by $3$ determinant-one
+matrix and its permutation on these points. The replay checks the
+projective action, nonidentity involution condition and every
+Wirtinger conjugation relation directly. The four seed images generate
+a permutation group of order $5616=|\operatorname{SL}_3(\F_3)|$.
+Since the centre is trivial and the projective action is faithful,
+this is the asserted group. Connectivity of the lifted generator
+graph is checked separately by its spanning tree. Every meridian has
+five fixed points and four transpositions, so $n=13$, $c=9$ and
+$\delta=n-c=4$.
+
+Use all thirteen diagram generators, without first eliminating the nine
+nonseed generators. The full lifted graph has thirteen vertices and
+$13\cdot13=169$ directed labelled edges. A checked spanning tree has
+twelve edges, leaving $157$ columns. Each of the thirteen crossings
+has thirteen lifts, giving $169$ relation rows. In addition, every cycle
+of every generator is filled: there are $13\cdot9=117$ filling rows,
+including all $13\cdot5=65$ fixed-sheet meridian rows.
+
+The matrix is formed after these involutory meridian fillings.
+Thus a crossing relator may be written $oao b$ with every letter
+positive: the usual inverse letters differ by lifted meridian-square
+relations, which are already consequences of the cycle fillings.
+A negative directed-edge traversal and the corresponding positive
+reverse traversal likewise differ by the same cycle relation.
+This explains why the retained all-positive crossing walks and
+all cycle fillings compute the homology of the ordinary branched
+completion, rather than only a punctured cover or an orbifold cover.
+
+The resulting $286$ by $157$ matrix has rank $155$ over $\F_3$ for
+every row of the input. Hence $b_1(Y;\F_3)=157-155=2$.
+The written general branched-cover bound in
+\path{GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex},
+Theorem~1 (label \texttt{thm:general}), states
+\[
+ \mr(K)\ge
+ \left\lceil\frac{n-1+b_1(Y;k)}{n-c}\right\rceil.
+\]
+Here it gives
+\[
+             \mr(K)\ge\left\lceil\frac{12+2}{4}\right\rceil=4.
+\]
+Together with $\mr(K)\le b(K)\le4$, this proves
+Theorem~\ref{thm:equalities}.
+No claim that the bare projective quotient needs four involutions is
+used: this group does have generating triples of involutions.
+
+\section{The actual double covers and their Seifert decompositions}
+
+For each literal PD, Spherogram constructs the exterior with the diagram
+meridian peripheral basis. Meridian coefficient-two orbifold filling
+has a unique cyclic cover of degree two. Its branching slope has
+primitive lift $(1,0)$; filling this lift constructs the actual
+double branched cover. Regina converts and simplifies the resulting
+closed triangulation. The retained input pins the random seed, exterior
+isomorphism signature with peripheral data and closed-cover signature.
+The replay reconstructs those signatures, rather than identifying
+covers from matching homology. It checks that the result is valid,
+closed, connected, orientable and irreducible.
+
+Vertex normal surfaces are enumerated in quadrilateral coordinates.
+The input supplies the chosen torus indices and complete quadrilateral
+vectors. Each selected surface must be connected, orientable,
+two-sided, have Euler characteristic zero and pass the exact
+incompressibility predicate in its already checked closed irreducible
+ambient manifold. All pairs must pass the disjointness test.
+
+There is also a direct control on simultaneous representatives:
+the sum normal surface must have components whose full triangle and
+quadrilateral vectors are exactly those of the chosen surfaces,
+as an unordered collection. Thus the replay cuts an actual disjoint
+union of the specified tori. Pairwise coordinate compatibility alone
+is not substituted for this test.
+
+The sum is cut by \texttt{cutAlong()}, and every resulting connected
+component is simplified and recognized by Regina as a Seifert fibre
+space. Its exact finite triangulation signature, boundary count and
+Seifert name must agree with the retained data. Every boundary component
+is checked to be a torus. In particular no unrecognized component is
+discarded. Three tori give four pieces; four give five. A redundant
+$T^2\times I$ piece may occur, so minimality of this torus system or
+identification with the canonical JSJ tori is not asserted or needed.
+
+For example, $13a_{3167}$ has a sixteen-tetrahedron closed cover with
+signature
+\[
+\texttt{qLLLLvALPQQkbcgfjinnlkklponpptsmgqsepbrjrsscnw}.
+\]
+Its tori have vertex-normal indices $1,15,32$.
+The four recognized pieces are two copies of
+$\operatorname{SFS}[D:(2,1)(3,-2)]$ and the two annulus-base spaces
+$\operatorname{SFS}[A:(2,5)]$ and $\operatorname{SFS}[A:(2,1)]$.
+All fifty cases have the corresponding exact cut-and-recognition
+certificates.
+
+A closed manifold obtained by gluing these Seifert spaces along their
+torus boundaries is a graph manifold. The separately checked
+irreducibility supplies primeness at the convention used by BJW.
+This proves Theorem~\ref{thm:graph}.
+BJW18 Theorem~1.2 and Corollary~1.3
+\cite[printed p.~62]{bjw} apply to this graph-cover class.
+Together with the standard meridional-rank one and two cases, their
+rank-three statement gives MRC for a knot in this class with
+$b(K)\le4$. This proves Corollary~\ref{cor:known}.
+The homology calculation above determines the exact value four.
+
+\section{Replay and assurance}
+
+Run \path{verify_sl3_projective_family.py}; its output receipt is
+\path{sl3_projective_family_verification.json}.
+The pinned environment is SnapPy 3.3.2, Spherogram 2.4.1,
+\texttt{snappy\_15\_knots} 1.2.1,
+\texttt{snappy\_manifolds} 1.4 and Regina 7.4.
+All fifty literal named diagrams, four-seed uppers, projective
+representations, full branched-cover chains and actual graph-cover
+decompositions are replayed. Wrong names, changed projective
+permutations and corrupted normal vectors are rejected.
+
+Trusted computational imports are the named census data, SnapPy's
+combinatorial exterior/cover/filling construction and Regina's exact
+normal-surface, irreducibility, disjointness and recognition algorithms.
+The general-cover bound is a separate written proof; the BKVV
+bridge equivalence and BJW family theorem are classical imports at
+the scopes just stated. Numerical volume or numerical isometry is
+not an acceptance test.
+
+These are finite exact internal certificates with written proof
+dependencies. They do not constitute formal verification, external
+specialist review, worldwide named-priority verification, or a new
+MRC family. No periodic-parameter generalization or exclusion of
+other proof methods follows from these fifty cases.
+
+\begin{thebibliography}{9}
+\bibitem{bkvv}
+R. Blair, A. Kjuchukova, R. Velazquez and P. Villanueva,
+Wirtinger systems of generators of knot groups,
+\emph{Communications in Analysis and Geometry} 28 (2020), 243--262,
+Definition~1.2 and Theorem~1.3.
+\url{https://doi.org/10.4310/CAG.2020.v28.n2.a2}.
+\bibitem{bjw}
+M. Boileau, Y. Jang and R. Weidmann,
+Meridional rank and bridge number for a class of links,
+\emph{Pacific Journal of Mathematics} 292 (2018), 61--84,
+Theorem~1.2 and Corollary~1.3.
+\url{https://doi.org/10.2140/pjm.2018.292.61}.
+\end{thebibliography}
+\end{document}

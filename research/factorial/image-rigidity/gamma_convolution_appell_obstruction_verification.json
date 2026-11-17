@@ -1,0 +1,90 @@
+{
+  "scope": "Strict-Hankel-TP strengthening of the retained two-Gamma Appell-coprimality implications; not a binomial-family counterexample",
+  "passed": true,
+  "checks": 37,
+  "check_names": [
+    "positive_scale_0",
+    "positive_shape_0",
+    "positive_scale_1",
+    "positive_shape_1",
+    "cumulant_1",
+    "cumulant_2",
+    "cumulant_3",
+    "cumulant_4",
+    "cumulant_5",
+    "A4_factorization",
+    "A5_factorization",
+    "derivative_identity",
+    "exact_gcd",
+    "zero_resultant",
+    "nonreal_common_quadratic",
+    "corrupted_control_nonzero_resultant",
+    "moment_data_0",
+    "moment_data_1",
+    "moment_data_2",
+    "moment_data_3",
+    "H_exact",
+    "I_exact",
+    "J_exact",
+    "two_atom_sum",
+    "two_atom_product",
+    "mean_between_positive_roots",
+    "infinite_extension_positivity_bound_0",
+    "infinite_extension_positivity_bound_1",
+    "infinite_extension_positivity_bound_2",
+    "remaining_positive_moment_0",
+    "remaining_positive_moment_1",
+    "remaining_positive_moment_2",
+    "remaining_positive_moment_3",
+    "rank_two_cauchy_binet_identity",
+    "rank_two_strict_principal_minor",
+    "independent_raw_moment_factorization_4",
+    "independent_raw_moment_factorization_5"
+  ],
+  "kind": "internal exact replay; all-order proofs are in the TeX source",
+  "python": "3.12.3",
+  "command": "python research/factorial/image-rigidity/gamma_convolution_appell_obstruction.py",
+  "sympy_version": "1.14.0",
+  "exact_prior_input": "lower_exponent_initial_and_boundary.tex thm:gamma-convolution-obstruction",
+  "source_sha256": {
+    "GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex": "672dd8c896c0cda82227209cb11a05b313cbd710c41d3c4be4c98119c5929790",
+    "gamma_convolution_appell_obstruction.py": "b10adc5b10096b35db87823597e2b95cb57d91890a02d21fd9ec04cfe73d1708",
+    "lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+  },
+  "positive_rational_scales": [
+    "1/2",
+    "19/2"
+  ],
+  "positive_rational_shapes": [
+    "125/9",
+    "1/3249"
+  ],
+  "cumulants_1_to_5": [
+    "132/19",
+    "7/2",
+    "4",
+    "81/4",
+    "582"
+  ],
+  "centered_common_quadratic": "x**2 - x + 19",
+  "scope_limits": {
+    "single_gamma_power_counterexample": false,
+    "physical_shape_progression_counterexample": false,
+    "factorial_sfc_counterexample": false,
+    "strict_infinite_extension": "written proof; positive explicit two-atom compensation plus countable atoms"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "strict_extension_lower_bounds": [
+    "7795121/1000000",
+    "37044859/1000000",
+    "39036371/500000"
+  ],
+  "assurance": {
+    "internal_replay": true,
+    "formal_verification": false,
+    "external_review": false,
+    "independent_replay": false
+  }
+}

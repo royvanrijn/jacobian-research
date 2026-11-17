@@ -1,0 +1,62 @@
+{
+  "scope": "Exact finite endpoint and rational certificates for an elementary all-real-variable proof",
+  "wheel_modulus": 30,
+  "wheel_residues": [
+    11,
+    17,
+    23,
+    29
+  ],
+  "endpoints": [
+    {
+      "t": 0,
+      "left_limit": "0",
+      "value": "0"
+    },
+    {
+      "t": 11,
+      "left_limit": "-22/15",
+      "value": "-7/15"
+    },
+    {
+      "t": 17,
+      "left_limit": "-19/15",
+      "value": "-4/15"
+    },
+    {
+      "t": 23,
+      "left_limit": "-16/15",
+      "value": "-1/15"
+    },
+    {
+      "t": 29,
+      "left_limit": "-13/15",
+      "value": "2/15"
+    },
+    {
+      "t": 30,
+      "left_limit": "0",
+      "value": "0"
+    }
+  ],
+  "minimum_discrepancy_or_left_limit": "-22/15",
+  "maximum_discrepancy": "2/15",
+  "discrepancy_width": "8/5",
+  "global_argument": "A(t+30)=A(t)+4; A(t)-2t/15 is decreasing linear between its four jumps. Thus the endpoint extrema control all real t>=0.",
+  "prime_coverage": "Every odd prime p=2mod3 other than5 lies in11,17,23,29mod30. Prime2 is handled separately or filtered; prime3 is not inert and is handled separately in the mixed problem.",
+  "count_bound": "#{odd p=2mod3:p<=P}<=2P/15+17/15 forP>=5 (the extra1 counts prime5)",
+  "tail_argument": "ForP>=5 all primesp>P lie in the wheel; A(t)-A(P)<=2(t-P)/15+8/5. Integrating2(A(t)-A(P))/t^3 over[P,infinity) gives2/(15P)+8/(5P^2).",
+  "main_sum_argument": "All odd inert primes are6k-1,k>=1. Keepk=1,2,3; boundk>=4 by integral from3 toinfinity of2/(6x-2)^2, which equals1/48.",
+  "main_sum_rational_upper_bound": "6569/44880",
+  "main_sum_claimed_upper_bound": "3/20",
+  "application_cutoff": "P=2*N^(1/4)>=200 whenN>=100000000; all wheel estimates therefore apply without rounding or omitted primes",
+  "mixed_small_and_large_prime_coefficients": [
+    "11/10",
+    "111/20"
+  ],
+  "original_small_and_large_prime_coefficients": [
+    "17/12",
+    "22/3"
+  ],
+  "script_sha256": "20fbc9faa218db5aed38ae3aa2a99e4a307ff7ec81d10cba4c711c3d4d83b746"
+}

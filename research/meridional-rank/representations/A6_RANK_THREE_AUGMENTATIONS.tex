@@ -1,0 +1,284 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ar}{\operatorname{ar}}
+\newcommand{\rk}{\operatorname{rank}}
+\title{Rank-three augmentations for eight further alternating knots}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+Let
+\[
+\mathcal A_8=\{13a_{304},13a_{362},13a_{623},13a_{629},
+13a_{3232},13a_{3259},13a_{3374},13a_{3375}\}.
+\]
+Each of these knots has an explicit rank-three symmetric cord matrix
+and an irreducible three-dimensional KCH representation at meridian
+parameter $-1$. The lower certificates below are independent of the
+representation upper bounds and of the meridional-rank lower bounds.
+Every statement about unrestricted augmentation rank uses the ordinary
+$U=1$ cord algebra and the condition $\epsilon(\mu)\ne1$.
+
+\begin{theorem}\label{thm:attainment}
+For every $K\in\mathcal A_8$, there is an irreducible
+three-dimensional representation of its knot group over a prime
+cyclotomic field, taking meridians to reflections with eigenvalues
+$-1,1,1$. The retained symmetric cord matrix has rank three.
+Consequently $K$ admits a rank-three reflective augmentation and
+$\ar(K,\mathbb C)\ge3$.
+\end{theorem}
+
+\section{The positive construction}
+
+Write $B(u,v)$ for a symmetric form with $B(u,u)=2$ on every normal
+vector. The associated reflection is
+\[
+                       R_u(v)=v-B(u,v)u.
+\]
+A symmetric cord matrix on a diagram with arcs $0,\ldots,12$ satisfies
+\begin{equation}\label{eq:cord}
+ c_{ii}=2,\qquad c_{\ell a}+c_{\ell b}=c_{\ell o}c_{oa}
+ \quad\text{at every crossing }(o,a,b),\text{ for every }\ell.
+\end{equation}
+Here $o$ is the over-arc, and $a,b$ are the under-arcs.
+The triples below are unoriented: their first entry is the over-arc,
+and the last two entries may be interchanged.
+Cornwell's diagrammatic cord presentation identifies these solutions
+with evaluations of the reflective cord quotient
+\cite[Theorem3.2 and Section3]{cornwell15}. Its rank is the matrix rank.
+We also check the irreducible KCH representations directly, so the
+unrestricted rank-three lower bound can instead use
+\cite[Theorem1.2, Definition1.8 and Proposition2.12]{cornwell17}.
+
+For the initial normal choices before the final sign adjustment, write
+$A=u_0$, $C=u_j$ and $E=u_1$, where $j$ is given in the following
+table. Let $\zeta$ be a primitive $p$th root of unity.
+The numbers $b$ and the local type specify the symmetric form on the
+ordered basis $(A,C,E)$:
+\[
+\begin{array}{c|c|c|c|c}
+K&p&j&b=B(A,C)&\text{types in displayed order}\\\hline
+13a_{304},13a_{3232}&37&6&\zeta^2+\zeta^{-2}&\mathrm I,\mathrm{II}\\
+13a_{362},13a_{3259}&37&6&\zeta^{12}+\zeta^{-12}&\mathrm I,\mathrm{II}\\
+13a_{623},13a_{3374}&7&8&\zeta^3+\zeta^{-3}&\mathrm I,\mathrm{II}\\
+13a_{629},13a_{3375}&7&8&-(\zeta^3+\zeta^{-3})&\mathrm I,\mathrm{II}.
+\end{array}
+\]
+Use
+\begin{equation}\label{eq:gram}
+ G_{\mathrm I}=\begin{pmatrix}2&b&1\\b&2&b\\1&b&2\end{pmatrix},
+ \qquad
+ G_{\mathrm{II}}=\begin{pmatrix}2&b&1\\b&2&0\\1&0&2\end{pmatrix}.
+\end{equation}
+Both determinants equal $2(3-b^2)$. They are nonzero in the specified
+fields: this follows directly from the retained nonzero coefficient
+vectors modulo $\Phi_p$, or because $b^2=3$ would force a nontrivial
+$p$th root to have order dividing twelve.
+
+Let $j'=j+1$. Before choosing the final signs of the normal vectors,
+the five local crossings can be solved explicitly by
+\[
+\begin{array}{c|ccccc}
+\text{type}&u_1&u_2&u_3&u_4&u_{j'}\\\hline
+\mathrm I&E&E-A&E-A&-A&C\\
+\mathrm{II}&E&E&E-A&-A&C.
+\end{array}
+\]
+For type I, the local triples are
+\[
+ (0,1,2),(j,2,3),(3,0,1),(1,3,4),(2,j,j');
+\]
+for type II they are
+\[
+ (j,1,2),(0,2,3),(3,0,1),(1,3,4),(2,j,j').
+\]
+The other eight crossing triples are identical for the two knots
+in each displayed pair; entries in the $K$ column are $13a$ subscripts:
+\[
+\begin{array}{c|llll}
+K&\multicolumn{4}{c}{\text{remaining eight triples }(o,a,b)}\\\hline
+304,3232&(4,8,9)&(11,4,5)&(5,11,12)&(9,5,6)\\
+        &(7,9,10)&(12,7,8)&(8,10,11)&(10,12,0)\\[2pt]
+362,3259&(4,10,11)&(8,4,5)&(5,8,9)&(11,5,6)\\
+        &(7,9,10)&(12,7,8)&(9,11,12)&(10,12,0)\\[2pt]
+623,3374&(4,6,7)&(10,4,5)&(5,11,12)&(9,5,6)\\
+        &(6,12,0)&(7,10,11)&(11,7,8)&(12,9,10)\\[2pt]
+629,3375&(4,10,11)&(11,4,5)&(5,7,8)&(9,5,6)\\
+        &(6,12,0)&(10,6,7)&(7,11,12)&(12,9,10).
+\end{array}
+\]
+Together with the appropriate five local triples, these give all
+thirteen crossings used in \eqref{eq:cord}. The checker reconstructs
+them from the literal PD and checks that the local and remaining
+lists are disjoint and exhaustive.
+Substitution in \eqref{eq:gram} verifies the five local reflection-line relations.
+All these normals have norm two. In particular, the local lift adds
+the new direction $E$ to the two-dimensional reduced core.
+
+Here is a complete recipe for the other eight normals. Start with a
+plane having norm-two basis $r_0,r_1$ and
+$B(r_0,r_1)=q=\zeta+\zeta^{-1}$. Define
+$r_{k+1}=qr_k-r_{k-1}$. The following table gives the eight initial
+core roots for both knots in each pair. They span this plane; in
+particular the displayed $A$ and $C$ are independent.
+\[
+\begin{array}{c|rrrrrrrr}
+K&u_0&u_5&u_6&u_8&u_9&u_{10}&u_{11}&u_{12}\\\hline
+304,3232&r_{17}&r_{22}&r_{15}&r_{34}&r_0&-r_{30}&-r_1&r_6\\
+362,3259&r_{22}&r_{15}&r_{34}&r_0&-r_{30}&-r_1&r_6&r_{17}
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrrr}
+K&u_0&u_5&u_6&u_7&u_8&u_{10}&u_{11}&u_{12}\\\hline
+623,3374&r_1&-r_1&-r_2&r_0&r_5&r_1&r_6&r_3\\
+629,3375&-r_2&r_0&r_5&r_1&r_6&r_3&r_1&-r_1.
+\end{array}
+\]
+All abbreviated knot subscripts here carry the prefix $13a$.
+Extend the plane by $E$ using \eqref{eq:gram}, and insert the five
+local roots from the preceding table. Thus every normal is specified
+without solving an additional equation. These formulas were found
+by lifting old reduced cores; their verification below uses every
+crossing of the full new diagram.
+
+Sign compatibility also requires a separate check. For each crossing,
+the initially constructed roots satisfy $R_{u_o}u_a=\delta u_b$ with
+$\delta\in\{1,-1\}$. The retained signs $s_i\in\{1,-1\}$ solve
+$s_b=-\delta s_a$ on every under-arc pair. Replacing $u_i$ by
+$s_iu_i$ therefore gives
+\[
+          u_a+u_b=B(u_o,u_a)u_o.
+\]
+All $169$ scalar equations in \eqref{eq:cord} are then verified
+explicitly for each knot. This is stronger than a reflection-line
+incidence check.
+For reproducibility, the signs in arc order $0,1,\ldots,12$ are
+\[
+\begin{array}{c|rrrrrrrrrrrrr}
+K&0&1&2&3&4&5&6&7&8&9&10&11&12\\\hline
+304,3232&+&-&+&-&+&-&-&+&+&+&-&-&+\\
+362,3259&+&-&+&-&+&-&-&+&+&-&-&+&+\\
+623,3374&+&-&+&-&+&+&+&-&-&+&+&+&+\\
+629,3375&+&-&+&-&+&+&+&+&+&-&-&-&+
+\end{array}
+\]
+The input retains the resulting thirteen coordinate vectors, Gram
+matrix, and full $13\times13$ cord matrix for each knot. The checker
+does not import an old witness or a transfer theorem.
+
+\section{Rank and irreducibility}
+
+\begin{proof}[Proof of Theorem~\ref{thm:attainment}]
+Let $V=\mathbb Q(\zeta)^3$ with the nondegenerate form
+\eqref{eq:gram}, and take the signed retained roots $u_i$.
+Their reflections have rank-one displacement and satisfy
+all thirteen matrix Wirtinger relations. Both crossing signs have the
+same involutory relation, so this defines a knot-group representation.
+The principal cord minor on arcs $(0,j,1)$ has determinant
+$2(3-b^2)\ne0$, unchanged by the final signs. Hence these three
+roots and these three covectors $B(u_i,\cdot)$ are bases.
+The full cord matrix factors through $V$ and has this nonzero minor,
+so its rank is exactly three.
+
+The pairing graph contains the full star centred at zero directly
+from the printed formulas. Indeed, the recurrence gives
+\[
+                   B(r_a,r_k)=\zeta^{a-k}+\zeta^{-(a-k)}.
+\]
+This is nonzero: otherwise a power of the odd-order root $\zeta$
+would have square $-1$ and hence order four. Since $A=\pm r_a$,
+its pairing with every signed core root is nonzero. Its added local
+pairings, before final signs, are $B(A,E)=1$,
+$B(A,E-A)=-1$, and $B(A,-A)=-2$. Final signs preserve nonvanishing.
+Thus the graph with an edge $i\!\sim\!j$ whenever
+$B(u_i,u_j)\ne0$ contains all twelve edges $0\!\sim\!j$.
+The checker also verifies this star exactly.
+Let $W\subset V$ be a nonzero invariant subspace.
+The common kernel of the covectors is zero, so some $w\in W$ and
+some $i$ satisfy $B(u_i,w)\ne0$. Thus
+\[
+                    (I-R_{u_i})w=B(u_i,w)u_i
+\]
+puts $u_i$ in $W$. The same formula propagates roots along every
+edge of the connected pairing graph. All thirteen roots therefore
+belong to $W$, and they span $V$. This proves irreducibility.
+
+The reflections are KCH meridian matrices at $\mu=-1$.
+Cornwell's correspondence \cite{cornwell17} gives a rank-three ordinary
+$U=1$ augmentation. Independently, \eqref{eq:cord} and the rank-three
+minor give a reflective augmentation by the cord presentation
+\cite{cornwell15}. The chosen embedding of the cyclotomic field into
+$\mathbb C$ preserves every checked identity and nonzero minor.
+\end{proof}
+
+\begin{corollary}\label{cor:reflective}
+For every $K\in\mathcal A_8$, its maximum complex reflective
+augmentation rank is exactly three.
+\end{corollary}
+\begin{proof}
+Theorem~\ref{thm:attainment} gives the lower bound. The upper bound is
+the separate common-form reflection obstruction in
+\path{UNIVERSAL_REFLECTION_OBSTRUCTION.tex}, Theorem
+\texttt{thm:a6eight}, combined with the Gram-radical quotient construction
+in \path{REFLECTIVE_AUGMENTATION_RANK_GAP.tex}, Lemma \texttt{lem:gram}.
+Neither upper argument uses these positive matrices.
+\end{proof}
+
+\begin{corollary}\label{cor:augmentation}
+For every $K\in\mathcal A_8$,
+\[
+                         \ar(K,\mathbb C)=3.
+\]
+\end{corollary}
+\begin{proof}
+The lower bound is Theorem~\ref{thm:attainment}. The separate generic
+upper theorem in \path{GENERIC_KCH_EXTENSIONS.tex}, Theorem
+\texttt{thm:all16} and Corollary \texttt{cor:augmentation}, bounds every
+ordinary $U=1$ augmentation with $\epsilon(\mu)\ne1$ by rank three,
+with arbitrary nonzero longitude parameter. That proof is independent
+of this positive package.
+\end{proof}
+
+\section{Exact verification scope}
+
+The input and standalone standard-library checker are
+\path{a6_rank_three_augmentation_inputs.json} and
+\path{verify_a6_rank_three_augmentations.py}. Each field is represented
+as $\mathbb Q[X]/\Phi_p(X)$, where
+$\Phi_p=1+X+\cdots+X^{p-1}$ for the prime $p=7$ or $37$.
+The checker verifies primality and the Eisenstein coefficients of
+$\Phi_p(X+1)$, which prove irreducibility over $\mathbb Q$.
+It uses exact integer polynomial convolution followed by monic
+$\Phi_p$ reduction; no sampling or floating-point roots are used.
+
+For each knot the checker replays all thirteen $3\times3$ matrix
+crossings, all $169$ cord equations, a nonzero principal minor,
+root and covector spanning, and connectedness of the pairing graph.
+It verifies the exact planar-map binding to a retained named census
+diagram. The optional \texttt{--census} mode re-reads the pinned
+independently packaged named PD and DT records. Corrupt cord matrices
+and incorrect field polynomials are rejected. These checks are internal
+exact computations, not formal verification or external specialist review.
+The meridional-rank and bridge equalities, and every representation
+upper bound, are separate dependencies.
+
+\begin{thebibliography}{9}
+\bibitem{cornwell17}
+C. R. Cornwell, \emph{KCH representations, augmentations, and
+$A$-polynomials}, Journal of Symplectic Geometry \textbf{15} (2017), 983--1017.
+Theorem numbering is that of retained
+\href{https://arxiv.org/abs/1310.7526v3}{arXiv:1310.7526v3}.
+\bibitem{cornwell15}
+C. R. Cornwell, \emph{Character varieties of knot complements and
+branched double-covers via the cord ring}, retained
+\href{https://arxiv.org/abs/1509.04962v1}{arXiv:1509.04962v1}.
+\end{thebibliography}
+\end{document}

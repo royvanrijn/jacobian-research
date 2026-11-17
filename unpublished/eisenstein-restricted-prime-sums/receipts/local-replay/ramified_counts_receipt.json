@@ -1,0 +1,168 @@
+{
+  "scope": "Exact finite controls only; no unrestricted identity proved by enumeration",
+  "limit": 6000,
+  "coordinate_bound": 89,
+  "coordinate_box_complete_reason": "Q(x,y)>=3*x*x/4 and>=3*y*y/4",
+  "reduced_even_n1mod3_cases": 444,
+  "square_cases": 16,
+  "all_four_counts_match": true,
+  "small_examples": [
+    {
+      "n": 4,
+      "lambda": -2,
+      "S": 6,
+      "counts": [
+        84,
+        72,
+        12,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "lambda": 0,
+      "S": 18,
+      "counts": [
+        216,
+        216,
+        72,
+        72
+      ]
+    },
+    {
+      "n": 16,
+      "lambda": 4,
+      "S": 24,
+      "counts": [
+        372,
+        288,
+        156,
+        144
+      ]
+    },
+    {
+      "n": 22,
+      "lambda": 0,
+      "S": 36,
+      "counts": [
+        432,
+        432,
+        144,
+        144
+      ]
+    },
+    {
+      "n": 34,
+      "lambda": 0,
+      "S": 54,
+      "counts": [
+        648,
+        648,
+        216,
+        216
+      ]
+    },
+    {
+      "n": 40,
+      "lambda": 0,
+      "S": 72,
+      "counts": [
+        1080,
+        864,
+        360,
+        288
+      ]
+    },
+    {
+      "n": 46,
+      "lambda": 0,
+      "S": 72,
+      "counts": [
+        864,
+        864,
+        288,
+        288
+      ]
+    },
+    {
+      "n": 58,
+      "lambda": 0,
+      "S": 90,
+      "counts": [
+        1080,
+        1080,
+        360,
+        360
+      ]
+    },
+    {
+      "n": 64,
+      "lambda": -8,
+      "S": 96,
+      "counts": [
+        1524,
+        1152,
+        444,
+        288
+      ]
+    },
+    {
+      "n": 82,
+      "lambda": 0,
+      "S": 126,
+      "counts": [
+        1512,
+        1512,
+        504,
+        504
+      ]
+    },
+    {
+      "n": 88,
+      "lambda": 0,
+      "S": 144,
+      "counts": [
+        2160,
+        1728,
+        720,
+        576
+      ]
+    },
+    {
+      "n": 94,
+      "lambda": 0,
+      "S": 144,
+      "counts": [
+        1728,
+        1728,
+        576,
+        576
+      ]
+    },
+    {
+      "n": 100,
+      "lambda": 10,
+      "S": 186,
+      "counts": [
+        2604,
+        2232,
+        948,
+        864
+      ]
+    }
+  ],
+  "wrong_lambda_sign_rejected_n4": true,
+  "group_control": {
+    "units": 72,
+    "projective_group": 36,
+    "unit_image": 6,
+    "cosets": 6,
+    "norm_classes": [
+      3,
+      3
+    ],
+    "right_omega_cycles_opposite_class": true,
+    "multiplicativity_checks": 1296
+  },
+  "source_sha256": "8841d1b8c071b453bc288a72fc377a9456ca1eff9f450f03441c02e1ad28ac83"
+}

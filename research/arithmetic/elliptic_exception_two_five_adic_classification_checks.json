@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "command": "python3 research/arithmetic/verify_elliptic_exception_two_five_adic_classification.py --write-receipt",
+  "python": "3.12.3",
+  "checker_sha256": "6f4704262960b482564cdab0a17af75897e87f9aefc5e2d8d0ab6e7fb64641a5",
+  "sources_sha256": {
+    "ELLIPTIC_EXCEPTION_TWO_FIVE_ADIC_CLASSIFICATION.md": "f95ce7190463693be30a1b41b763b030d2fc756c55340bcbb61af21b8c7d6c5d",
+    "ELLIPTIC_EXCEPTION_ARITHMETIC.md": "ecd474b0ad2d0ae7b4eed7904bfffc058b5c1cbab2371e4112db6e1a794d0602",
+    "ELLIPTIC_EXCEPTION_COUNT.md": "c57dac877ae1c7bed7619afcca4abc447f2101f3bacefc324027ca45daf22437",
+    "ELLIPTIC_EXCEPTION_EXPLICIT_LOCAL_CRITERION.md": "c240ba5c3f904acb787ac5bc385d38537d09604e8ff9bbafbbb9ce880b81b484",
+    "ELLIPTIC_EXCEPTION_COMPLETE_THREE_ADIC_CLASSIFICATION.md": "7c9a1dd210a7b6a1f94986c62a819809bdce8c465a86b55d5364d32be386bddf",
+    "verify_elliptic_exception_explicit_local_criterion.py": "3e9c42a7a78468ea2d52eef08443e1b7d1313493a1ca5d1007f2b982e61e587b",
+    "sources/dujella-number-theory-2021-section15-5.pdf": "3f0d2fc757ad74c0a4758b463980e196cbed7ffebedcd5d522e321d87eab6260",
+    "sources/milne-elliptic-curves-2006.pdf": "14a89055a0a7f52b08fad1d53786c9165caba8be837491024b9b210afa384486",
+    "sources/milne-ant300.pdf": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819"
+  },
+  "check_count": 28,
+  "checks": [
+    {
+      "name": "rational_points_on_both_curves",
+      "passed": true
+    },
+    {
+      "name": "explicit_dual_isogeny_image_with_sign",
+      "passed": true
+    },
+    {
+      "name": "dual_composition_is_doubling",
+      "passed": true
+    },
+    {
+      "name": "torsion_translation_formula",
+      "passed": true
+    },
+    {
+      "name": "descent_witness_squareclasses",
+      "passed": true
+    },
+    {
+      "name": "both_known_descent_images_generated",
+      "passed": true
+    },
+    {
+      "name": "mod_two_quotient_size_from_descent_kernel",
+      "passed": true,
+      "scope": "Finite quotient arithmetic; the kernel and odd-index arguments are written in ETF1."
+    },
+    {
+      "name": "global_descent_classes_at_two",
+      "passed": true
+    },
+    {
+      "name": "complete_mod32_forbidden_integral_unit_classes",
+      "passed": true,
+      "scope": "All x,y mod32 with v2(x)=0 or1; local descent classes are3 or6, absent from the global image."
+    },
+    {
+      "name": "formal_depth_four_witnesses",
+      "passed": true
+    },
+    {
+      "name": "exact_formal_parameters",
+      "passed": true
+    },
+    {
+      "name": "bounded_two_adic_Newton_and_simple_root_controls",
+      "passed": true,
+      "count": 432,
+      "scope": "4<=formal depth<=30; odd units1..15; square formal x and its T0-translate."
+    },
+    {
+      "name": "rational_positive_and_negative_two_adic_controls",
+      "passed": true,
+      "scope": "2P has obstructed depth5;2P2 has soluble depth6. No universal obstruction for K=Q(sqrt(-3))."
+    },
+    {
+      "name": "bounded_five_adic_controls",
+      "passed": true,
+      "count": 293,
+      "scope": "Unit x1..49; positive valuations1,3,5,7 with units1..125 filtered only by exact local Q5-square condition for E; formal depths1..12 with units1..10."
+    },
+    {
+      "name": "five_adic_Taylor_obstruction_constants",
+      "passed": true
+    },
+    {
+      "name": "three_adic_reduction_coordinates",
+      "passed": true
+    },
+    {
+      "name": "joint_two_primary_model_N5",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N6",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N7",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N8",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N9",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N10",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N11",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "joint_two_primary_model_N12",
+      "passed": true,
+      "scope": "Exact finite cyclic model; formal addition is additive through these precisions by Lemma5.9 at depth4."
+    },
+    {
+      "name": "two_adic_local_proportion",
+      "passed": true
+    },
+    {
+      "name": "joint_two_three_local_proportion",
+      "passed": true
+    },
+    {
+      "name": "fixed_finite_joint_quotient_bound",
+      "passed": true,
+      "retained": 14,
+      "total": 48,
+      "scope": "E6(2),E3(3): untested two-adic tail1/4; three-adic O/B tails1/3, A forbidden,A+B retained."
+    },
+    {
+      "name": "finite_formal_mass_brackets",
+      "passed": true,
+      "scope": "E4/E_N,6<=N<=15; finite lower/upper annulus masses bracket1/7."
+    }
+  ],
+  "scope": "Exact point/isogeny/descent arithmetic, bounded two/five-adic Newton and Hensel controls, joint finite-group image models and exact local-count factors. Written descent kernels, local formal groups, the complete three-adic classification and height equidistribution establish the unrestricted statements. No basis assertion or elliptic Hasse infinitude.",
+  "formal_verification": false,
+  "independent_whole_proof_replay": false,
+  "external_review": false
+}

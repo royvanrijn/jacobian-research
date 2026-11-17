@@ -1,0 +1,83 @@
+\section{Finishing the finite ranges}\label{sec:finite}
+The estimates settle both reduced problems from $10^8$ onward. Below
+that threshold we can check every target directly. The sieve is small
+enough to reproduce, and its meaning is straightforward: each surviving
+index records a positive integer in $\AA$.
+
+For $c\in\{2,4\}$ put
+\[
+H_c=\left\lfloor\frac{10^8-c-1}{6}\right\rfloor.
+\]
+Index the possible summands by $6j+1$, $0\le j\le H_c$, and set
+$\varepsilon_j=1$ unless a prime $p\equiv5\pmod6$, $p\le9999$, divides
+$6j+1$. For such a divisor set $\varepsilon_j=0$; negative indices also
+have value zero.
+
+This is an exact membership test for $\AA$. Each indexed integer is odd
+and prime to $3$. If it contains an inert prime factor, the total number
+of inert factors counted with multiplicity is even, since the integer is
+$1$ modulo $3$. At least one of these factors is at most the square root,
+which is less than $10000$. For a prime $p\equiv5\pmod6$, precisely the
+indices $(5p-1)/6+rp$, $r\ge0$, are removed.
+
+\begin{proposition}\label{prop:finite-certificates}
+For every target $n=6k+2<10^8$, there is an $i\le35$ with
+$2i\le k$ and $\varepsilon_i\varepsilon_{k-i}=1$. For every target
+$n=6k+4<10^8$, there is a $j\le33$ with $3j\le k$ and
+$\varepsilon_j\varepsilon_{k-3j}=1$.
+\end{proposition}
+\begin{proof}[Computer-assisted proof]
+The standard-library program printed in Appendix~\ref{app:verifier}
+constructs the exact membership sieve, checks the small candidates by
+direct divisor tests, and requires a witness at every target index.
+Its two complete scans give the following results:
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+family & targets & largest target & small summand bound\\\midrule
+$\AA+\AA$ & $16{,}666{,}667$ & $99{,}999{,}998$ & $6i+1\le211$\\
+$\AA+3\!\cdot\!\AA$ & $16{,}666{,}666$ & $99{,}999{,}994$ & $6j+1\le199$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Neither scan has an uncovered target. The witnesses give, respectively,
+\[
+6k+2=(6i+1)+(6(k-i)+1),\qquad
+6k+4=(6(k-3j)+1)+3(6j+1).
+\]
+All terms are positive members of the required sets. Separate NumPy
+implementations regenerate the membership arrays and recheck every
+witness. Their normalized membership and witness digests agree with the
+printed verifier. The byte conventions and expected digests are given
+in the appendix. The finite scans use integer arithmetic throughout.
+\end{proof}
+Proposition~\ref{prop:finite-certificates}, the infinite-range argument in
+Section~\ref{sec:infinite}, and the initial multiplicative reduction prove
+Theorem~\ref{thm:main}.
+
+The scans find every witness using a small menu of summands. This raises
+a further possibility: perhaps the same menu could work for every target.
+The Chinese remainder theorem shows why these bounds have to remain
+finite-range statements.
+
+\begin{proposition}\label{prop:no-finite-menu}
+For either $c=1$ or $c=3$, and every finite $F\subset\AA$, there are
+infinitely many positive $n\equiv c+1\pmod6$ with
+$n\notin\AA+(c\!\cdot\! F)$.
+\end{proposition}
+\begin{proof}
+The case $F=\varnothing$ is immediate. Otherwise choose distinct odd
+inert primes $q_f$, one for each $f\in F$. There are arbitrarily many
+such primes: for any finite collection including $2$, the integer three
+times their product minus one has an inert prime factor outside the
+collection. The Chinese remainder theorem gives an arithmetic progression
+of solutions to
+\[
+n\equiv c+1\pmod6,\qquad n\equiv cf\pmod{q_f}\quad(f\in F).
+\]
+Choose its positive terms larger than $c\max F$. Then $n-cf>0$ is
+divisible by the forbidden prime $q_f$, so it is not in $\AA$, for every
+$f\in F$.
+\end{proof}
+Thus the finite witness bounds $211$ and $199$ cannot be replaced by
+fixed global bounds of the same kind.

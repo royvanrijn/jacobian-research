@@ -17,7 +17,9 @@ HERE = Path(__file__).resolve().parent
 INPUT = HERE / "twisted_link_crosscap_inputs.json"
 EXPECTED = ["13a_373", "13a_375", "13a_391", "13a_392",
             "13a_3264", "13a_3266", "13a_3275", "13a_3276",
-            "13a_3145", "13a_3147", "13a_3148", "13a_3149"]
+            "13a_3145", "13a_3147", "13a_3148", "13a_3149",
+            "13a_304", "13a_362", "13a_623", "13a_629",
+            "13a_3232", "13a_3259", "13a_3374", "13a_3375"]
 
 
 def digest(path):
@@ -191,7 +193,12 @@ def main():
     seven = json.loads((HERE / "seven_sheet_cover_verification.json").read_text())
     periodic = json.loads((HERE / "periodic_twist_family_verification.json").read_text())
     assert seven["status"] == "PASS" and periodic["status"].startswith("PASS")
-    bridge_rows = seven["results"] + periodic["families"]
+    a6 = json.loads((HERE / "a6_affine_inputs.json").read_text())
+    a6_proof = json.loads((HERE / "a6_affine_verification.json").read_text())
+    assert a6_proof["status"] == "PASS" and a6_proof["named_cases"] == 24
+    assert a6_proof["input_sha256"]["a6_affine_inputs.json"] == digest(HERE / "a6_affine_inputs.json")
+    named_pds.update({r["name"]: r["pd"] for r in a6["cases"]})
+    bridge_rows = seven["results"] + periodic["families"] + a6_proof["results"]
     bridge_four = {r["name"] for r in bridge_rows
                    if r["bridge_upper"] == r["meridional_lower"] == 4}
     assert set(EXPECTED) <= bridge_four

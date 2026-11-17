@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "written_theorem_scope": "c(0) nonzero, degree at least two; selected unique dominant simple inverse singularity. Sufficient: simple genuine finite criticals with distinct critical-value moduli, or phase-scaled nonnegative aperiodic coefficients. Arbitrary constant fibre a and polynomial h,u,k.",
+  "bounded_controls": {
+    "distinct_root_example": "c=(1+z)(1+2z); critical values 3+-2sqrt(2)",
+    "equality_example": "c=(1+z)^4(1+2z), h=(1+z)^2; orders (4,2) at -1",
+    "equality_positive_critical": "(sqrt(41)-3)/16",
+    "original_wick_vs_completion_orders": [
+      0,
+      4
+    ],
+    "arbitrary_perturbation_example": {
+      "a": "2/3",
+      "h": "z**3 - z + 1",
+      "u": "z + 2",
+      "k": "z**2 - z + 1/5",
+      "unit_coefficients": [
+        "1",
+        "-2/15",
+        "3293/150",
+        "156832/3375",
+        "660411047/405000"
+      ]
+    },
+    "generic_algebra": [
+      "Y completion and auxiliary Gaussian coefficient",
+      "central-binomial exact ratio and first asymptotic correction",
+      "Gaussian-majorant ratio limit",
+      "critical-value reparametrization argument identity"
+    ]
+  },
+  "negative_controls": [
+    "c0_zero",
+    "degree_below_two",
+    "positive_support_gcd_two"
+  ],
+  "verification_scope": "Finite exact algebraic controls only. The unrestricted selected-sheet continuation, uniform contour bounds, generic density, and divergence are the written proof; no moment-prefix inference.",
+  "family": "W-affine selected-dominant multiroot divergence",
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "10d01c00412ac297b14e57c1fcf147615509e40d04735515eaa7fe8acde44402",
+  "checker_sha256": "9995b4f04729b810047f48e9eccc1b5017485e0d8148e4db3b0029d8b57542e2",
+  "source_proof_sha256": "ecfa976c2c5fc41f564f12a06d04e09c4f7d215dcca04b41fabda065a076939d",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

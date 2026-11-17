@@ -1,0 +1,109 @@
+{
+  "checker_sha256": "4418a03dcb1968069cb02214fba9fe8573ba01e6ce80684c14ea92f3c1f3d020",
+  "command": ".venv/bin/python research/arithmetic/verify_rank_five_discriminant_count.py",
+  "exact_controls": [
+    "total_ramified_mass_complement",
+    "unrestricted_euler_factor",
+    "fundamental_discriminant_euler_factor",
+    "inert_prime_allowed_mass_ratio",
+    "inert_prime_zeta_factor_identity",
+    "real_signature_factor",
+    "complex_signature_factor",
+    "cyclic_local_polynomial_0_eisenstein",
+    "cyclic_local_polynomial_0_exact_discriminant_exponent",
+    "cyclic_local_polynomial_0_square_discriminant_class_over_Q3",
+    "cyclic_local_polynomial_1_eisenstein",
+    "cyclic_local_polynomial_1_exact_discriminant_exponent",
+    "cyclic_local_polynomial_1_square_discriminant_class_over_Q3",
+    "cyclic_local_polynomial_2_eisenstein",
+    "cyclic_local_polynomial_2_exact_discriminant_exponent",
+    "cyclic_local_polynomial_2_square_discriminant_class_over_Q3",
+    "three_ramified_cyclic_fields_total_mass",
+    "wild_prime_allowed_mass",
+    "wild_prime_total_mass",
+    "wild_prime_density_ratio",
+    "strict_increase_over_fundamental_subfamily_at_three",
+    "bounded_prime_sieve_crosscheck",
+    "infinite_specification_partial_product_includes_two_once_and_separates_three",
+    "exact_partial_product_and_certified_infinite_product_enclosure",
+    "tail_majorant_telescoping_identity",
+    "cyclic_field_order_bound_is_negligible_for_leading_term",
+    "all_large_prime_specifications_have_acceptable_shapes"
+  ],
+  "external_primary_sources": [
+    {
+      "path": "sources/bst-2013-davenport-heilbronn.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "a8d89860b698d2a533abf4dcd4c76354728ec5888f619890d53439d5102a2b03",
+      "statements": [
+        "Theorem 8, equation (8), p. 444 (PDF p. 6): leading count for acceptable infinite local specifications",
+        "Lemma 19, p. 453 (PDF p. 15): nontotally ramified local density",
+        "Lemma 22, p. 456 (PDF p. 18): O_epsilon(X^(3/4+epsilon)) cyclic-order bound",
+        "Remark 4, equation (58), p. 480 (PDF p. 42): total etale cubic local mass"
+      ]
+    },
+    {
+      "path": "sources/pauli-2006-local-class-fields.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "293f50944c89da1152cbb819725fd4ba048e8c39707f5ee6eba246c714765921",
+      "statements": [
+        "Corollary 4.7, pp. 638--639 (PDF pp. 13--14): exactly three ramified cyclic cubic Q3 extensions",
+        "Section 7, pp. 647 and 649 (PDF pp. 22 and 24): discriminant convention and complete Q3 table"
+      ]
+    },
+    {
+      "path": "sources/milne-ant300.pdf",
+      "proof_imported_not_replayed": true,
+      "sha256": "bf9d308f7ec2cb8d1c3cf6f8ed68fa418aaaea036eb895991fedcdd6544d7819",
+      "statements": [
+        "Proposition 7.55 and Remark 7.56, pp. 122--123: Eisenstein uniformizer and its integral power basis"
+      ]
+    }
+  ],
+  "external_review": false,
+  "formal_verification": false,
+  "fundamental_constants": {
+    "negative": "1/(4*zeta(2))",
+    "positive": "1/(12*zeta(2))"
+  },
+  "independent_whole_proof_replay": false,
+  "leading_constants": {
+    "negative": "rho/(4*zeta(3))",
+    "positive": "rho/(12*zeta(3))"
+  },
+  "local_three_allowed_mass": "109/81",
+  "local_three_density_ratio": "109/117",
+  "local_three_polynomials": [
+    {
+      "discriminant": -2835,
+      "k": 0,
+      "polynomial": "X**3 + 6*X**2 + 3",
+      "three_adic_exponent": 4
+    },
+    {
+      "discriminant": -14256,
+      "k": 1,
+      "polynomial": "X**3 + 6*X**2 + 12",
+      "three_adic_exponent": 4
+    },
+    {
+      "discriminant": -30051,
+      "k": 2,
+      "polynomial": "X**3 + 6*X**2 + 21",
+      "three_adic_exponent": 4
+    }
+  ],
+  "proof_sha256": "a6f6bd9b1a88a5b1ddb6a3b463b058ecb2f8997c09d0585f37eed0ec233a8448",
+  "python": "3.12.3",
+  "rho_enclosure": {
+    "exact_rational_comparison": "0.75979 < rho < 0.75988",
+    "inert_prime_factors": 617,
+    "lower_bound_decimal_rounded": "0.75979992325055973629697863013608209",
+    "prime_cutoff": 10000,
+    "tail_lower_factor": "10000/10001",
+    "upper_bound_decimal_rounded": "0.75987590324288479227060832799909570"
+  },
+  "scope": "Exact mass and polynomial controls, and a bounded Euler product with an explicit infinite-tail bound. Completeness of local cyclic field classification, maximal-order power bases, and the infinite-local-specification counting theorem are explicit primary-source imports. Counts concern cubic field discriminant height and varying-map fibre algebras, not fixed-Phi target height. No secondary coefficient or error stronger than o(X) is asserted.",
+  "status": "pass",
+  "sympy": "1.14.0"
+}

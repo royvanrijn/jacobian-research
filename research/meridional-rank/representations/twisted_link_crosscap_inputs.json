@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "Twelve fixed prime alternating knot diagrams with separately certified bridge number4. Global exclusion of BBK21 standard twisted links by crosscap number. No exclusion of rational-tangle extensions or other quotient families.",
+  "scope": "Twenty fixed prime alternating knot diagrams with separately certified bridge number4:12 earlier cases and8 A6 cases. Global exclusion of BBK21 standard twisted links by crosscap number. Rational replacement exclusions require the separate topology theorem.",
   "cases": [
     {
       "name": "13a_373",
@@ -1909,6 +1909,1278 @@
           "second_coefficient_abs": 6
         }
       ]
+    },
+    {
+      "name": "13a_304",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          13,
+          5,
+          14,
+          4
+        ],
+        [
+          5,
+          13,
+          6,
+          12
+        ],
+        [
+          17,
+          9,
+          18,
+          8
+        ],
+        [
+          9,
+          22,
+          10,
+          23
+        ],
+        [
+          23,
+          10,
+          24,
+          11
+        ],
+        [
+          11,
+          19,
+          12,
+          18
+        ],
+        [
+          19,
+          15,
+          20,
+          14
+        ],
+        [
+          15,
+          24,
+          16,
+          25
+        ],
+        [
+          21,
+          16,
+          22,
+          17
+        ],
+        [
+          25,
+          21,
+          26,
+          20
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -25,
+          1
+        ],
+        [
+          -21,
+          -5
+        ],
+        [
+          -17,
+          14
+        ],
+        [
+          -13,
+          -28
+        ],
+        [
+          -9,
+          45
+        ],
+        [
+          -5,
+          -60
+        ],
+        [
+          -1,
+          69
+        ],
+        [
+          3,
+          -70
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          11,
+          -47
+        ],
+        [
+          15,
+          30
+        ],
+        [
+          19,
+          -15
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          27,
+          -1
+        ]
+      ],
+      "beta_abs": 5,
+      "beta_prime_abs": 5,
+      "T": 10,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 7,
+          "reduced_edges": 11,
+          "second_coefficient_abs": 5
+        }
+      ],
+      "crosscap_lower_KL16": 5
+    },
+    {
+      "name": "13a_362",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          13,
+          5,
+          14,
+          4
+        ],
+        [
+          5,
+          13,
+          6,
+          12
+        ],
+        [
+          21,
+          9,
+          22,
+          8
+        ],
+        [
+          9,
+          16,
+          10,
+          17
+        ],
+        [
+          17,
+          10,
+          18,
+          11
+        ],
+        [
+          11,
+          23,
+          12,
+          22
+        ],
+        [
+          19,
+          15,
+          20,
+          14
+        ],
+        [
+          15,
+          24,
+          16,
+          25
+        ],
+        [
+          23,
+          18,
+          24,
+          19
+        ],
+        [
+          25,
+          21,
+          26,
+          20
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -25,
+          1
+        ],
+        [
+          -21,
+          -5
+        ],
+        [
+          -17,
+          14
+        ],
+        [
+          -13,
+          -28
+        ],
+        [
+          -9,
+          45
+        ],
+        [
+          -5,
+          -60
+        ],
+        [
+          -1,
+          69
+        ],
+        [
+          3,
+          -70
+        ],
+        [
+          7,
+          61
+        ],
+        [
+          11,
+          -47
+        ],
+        [
+          15,
+          30
+        ],
+        [
+          19,
+          -15
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          27,
+          -1
+        ]
+      ],
+      "beta_abs": 5,
+      "beta_prime_abs": 5,
+      "T": 10,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 7,
+          "reduced_edges": 11,
+          "second_coefficient_abs": 5
+        }
+      ],
+      "crosscap_lower_KL16": 5
+    },
+    {
+      "name": "13a_623",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          17,
+          5,
+          18,
+          4
+        ],
+        [
+          5,
+          17,
+          6,
+          16
+        ],
+        [
+          13,
+          9,
+          14,
+          8
+        ],
+        [
+          9,
+          20,
+          10,
+          21
+        ],
+        [
+          23,
+          10,
+          24,
+          11
+        ],
+        [
+          11,
+          19,
+          12,
+          18
+        ],
+        [
+          25,
+          13,
+          26,
+          12
+        ],
+        [
+          21,
+          15,
+          22,
+          14
+        ],
+        [
+          15,
+          23,
+          16,
+          22
+        ],
+        [
+          19,
+          24,
+          20,
+          25
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -27,
+          -1
+        ],
+        [
+          -23,
+          5
+        ],
+        [
+          -19,
+          -14
+        ],
+        [
+          -15,
+          29
+        ],
+        [
+          -11,
+          -46
+        ],
+        [
+          -7,
+          61
+        ],
+        [
+          -3,
+          -69
+        ],
+        [
+          1,
+          69
+        ],
+        [
+          5,
+          -61
+        ],
+        [
+          9,
+          45
+        ],
+        [
+          13,
+          -29
+        ],
+        [
+          17,
+          14
+        ],
+        [
+          21,
+          -5
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "beta_abs": 5,
+      "beta_prime_abs": 5,
+      "T": 10,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 7,
+          "reduced_edges": 11,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        }
+      ],
+      "crosscap_lower_KL16": 5
+    },
+    {
+      "name": "13a_629",
+      "pd": [
+        [
+          3,
+          1,
+          4,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          17,
+          5,
+          18,
+          4
+        ],
+        [
+          5,
+          17,
+          6,
+          16
+        ],
+        [
+          21,
+          9,
+          22,
+          8
+        ],
+        [
+          9,
+          23,
+          10,
+          22
+        ],
+        [
+          15,
+          11,
+          16,
+          10
+        ],
+        [
+          11,
+          19,
+          12,
+          18
+        ],
+        [
+          25,
+          13,
+          26,
+          12
+        ],
+        [
+          13,
+          20,
+          14,
+          21
+        ],
+        [
+          23,
+          14,
+          24,
+          15
+        ],
+        [
+          19,
+          24,
+          20,
+          25
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -27,
+          -1
+        ],
+        [
+          -23,
+          5
+        ],
+        [
+          -19,
+          -14
+        ],
+        [
+          -15,
+          29
+        ],
+        [
+          -11,
+          -46
+        ],
+        [
+          -7,
+          61
+        ],
+        [
+          -3,
+          -69
+        ],
+        [
+          1,
+          69
+        ],
+        [
+          5,
+          -61
+        ],
+        [
+          9,
+          45
+        ],
+        [
+          13,
+          -29
+        ],
+        [
+          17,
+          14
+        ],
+        [
+          21,
+          -5
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "beta_abs": 5,
+      "beta_prime_abs": 5,
+      "T": 10,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 7,
+          "reduced_edges": 11,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        }
+      ],
+      "crosscap_lower_KL16": 5
+    },
+    {
+      "name": "13a_3232",
+      "pd": [
+        [
+          5,
+          1,
+          6,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          3,
+          13,
+          4,
+          12
+        ],
+        [
+          13,
+          5,
+          14,
+          4
+        ],
+        [
+          17,
+          8,
+          18,
+          9
+        ],
+        [
+          9,
+          23,
+          10,
+          22
+        ],
+        [
+          23,
+          11,
+          24,
+          10
+        ],
+        [
+          11,
+          18,
+          12,
+          19
+        ],
+        [
+          19,
+          14,
+          20,
+          15
+        ],
+        [
+          15,
+          25,
+          16,
+          24
+        ],
+        [
+          21,
+          17,
+          22,
+          16
+        ],
+        [
+          25,
+          20,
+          26,
+          21
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -29,
+          1
+        ],
+        [
+          -25,
+          -5
+        ],
+        [
+          -21,
+          14
+        ],
+        [
+          -17,
+          -27
+        ],
+        [
+          -13,
+          41
+        ],
+        [
+          -9,
+          -52
+        ],
+        [
+          -5,
+          58
+        ],
+        [
+          -1,
+          -57
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          7,
+          -36
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          15,
+          -11
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          23,
+          -1
+        ]
+      ],
+      "beta_abs": 4,
+      "beta_prime_abs": 5,
+      "T": 9,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 9,
+          "reduced_edges": 13,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 6,
+          "reduced_edges": 9,
+          "second_coefficient_abs": 4
+        }
+      ],
+      "crosscap_lower_KL16": 4
+    },
+    {
+      "name": "13a_3259",
+      "pd": [
+        [
+          5,
+          1,
+          6,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          3,
+          13,
+          4,
+          12
+        ],
+        [
+          13,
+          5,
+          14,
+          4
+        ],
+        [
+          21,
+          8,
+          22,
+          9
+        ],
+        [
+          9,
+          17,
+          10,
+          16
+        ],
+        [
+          17,
+          11,
+          18,
+          10
+        ],
+        [
+          11,
+          22,
+          12,
+          23
+        ],
+        [
+          19,
+          14,
+          20,
+          15
+        ],
+        [
+          15,
+          25,
+          16,
+          24
+        ],
+        [
+          23,
+          19,
+          24,
+          18
+        ],
+        [
+          25,
+          20,
+          26,
+          21
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -29,
+          1
+        ],
+        [
+          -25,
+          -5
+        ],
+        [
+          -21,
+          14
+        ],
+        [
+          -17,
+          -27
+        ],
+        [
+          -13,
+          41
+        ],
+        [
+          -9,
+          -52
+        ],
+        [
+          -5,
+          58
+        ],
+        [
+          -1,
+          -57
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          7,
+          -36
+        ],
+        [
+          11,
+          22
+        ],
+        [
+          15,
+          -11
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          23,
+          -1
+        ]
+      ],
+      "beta_abs": 4,
+      "beta_prime_abs": 5,
+      "T": 9,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 9,
+          "reduced_edges": 13,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 6,
+          "reduced_edges": 9,
+          "second_coefficient_abs": 4
+        }
+      ],
+      "crosscap_lower_KL16": 4
+    },
+    {
+      "name": "13a_3374",
+      "pd": [
+        [
+          5,
+          1,
+          6,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          3,
+          17,
+          4,
+          16
+        ],
+        [
+          17,
+          5,
+          18,
+          4
+        ],
+        [
+          13,
+          8,
+          14,
+          9
+        ],
+        [
+          9,
+          21,
+          10,
+          20
+        ],
+        [
+          23,
+          11,
+          24,
+          10
+        ],
+        [
+          11,
+          18,
+          12,
+          19
+        ],
+        [
+          25,
+          12,
+          26,
+          13
+        ],
+        [
+          21,
+          14,
+          22,
+          15
+        ],
+        [
+          15,
+          22,
+          16,
+          23
+        ],
+        [
+          19,
+          25,
+          20,
+          24
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -27,
+          -1
+        ],
+        [
+          -23,
+          5
+        ],
+        [
+          -19,
+          -13
+        ],
+        [
+          -15,
+          26
+        ],
+        [
+          -11,
+          -40
+        ],
+        [
+          -7,
+          52
+        ],
+        [
+          -3,
+          -59
+        ],
+        [
+          1,
+          57
+        ],
+        [
+          5,
+          -50
+        ],
+        [
+          9,
+          37
+        ],
+        [
+          13,
+          -23
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          21,
+          -4
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "beta_abs": 4,
+      "beta_prime_abs": 5,
+      "T": 9,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 7,
+          "reduced_edges": 10,
+          "second_coefficient_abs": 4
+        }
+      ],
+      "crosscap_lower_KL16": 4
+    },
+    {
+      "name": "13a_3375",
+      "pd": [
+        [
+          5,
+          1,
+          6,
+          26
+        ],
+        [
+          1,
+          7,
+          2,
+          6
+        ],
+        [
+          7,
+          3,
+          8,
+          2
+        ],
+        [
+          3,
+          17,
+          4,
+          16
+        ],
+        [
+          17,
+          5,
+          18,
+          4
+        ],
+        [
+          21,
+          8,
+          22,
+          9
+        ],
+        [
+          9,
+          22,
+          10,
+          23
+        ],
+        [
+          15,
+          10,
+          16,
+          11
+        ],
+        [
+          11,
+          18,
+          12,
+          19
+        ],
+        [
+          25,
+          12,
+          26,
+          13
+        ],
+        [
+          13,
+          21,
+          14,
+          20
+        ],
+        [
+          23,
+          15,
+          24,
+          14
+        ],
+        [
+          19,
+          25,
+          20,
+          24
+        ]
+      ],
+      "projection_edge_connectivity": 4,
+      "bracket_coefficients_A": [
+        [
+          -27,
+          -1
+        ],
+        [
+          -23,
+          5
+        ],
+        [
+          -19,
+          -13
+        ],
+        [
+          -15,
+          26
+        ],
+        [
+          -11,
+          -40
+        ],
+        [
+          -7,
+          52
+        ],
+        [
+          -3,
+          -59
+        ],
+        [
+          1,
+          57
+        ],
+        [
+          5,
+          -50
+        ],
+        [
+          9,
+          37
+        ],
+        [
+          13,
+          -23
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          21,
+          -4
+        ],
+        [
+          25,
+          1
+        ]
+      ],
+      "beta_abs": 4,
+      "beta_prime_abs": 5,
+      "T": 9,
+      "Jones_span": 13,
+      "checkerboard_replay": [
+        {
+          "vertices": 8,
+          "reduced_edges": 12,
+          "second_coefficient_abs": 5
+        },
+        {
+          "vertices": 7,
+          "reduced_edges": 10,
+          "second_coefficient_abs": 4
+        }
+      ],
+      "crosscap_lower_KL16": 4
     }
   ],
   "source_sha256": {
@@ -1916,7 +3188,9 @@
     "seven_sheet_cover_verification.json": "e5f267b850d46db89afb72f51d017f4968fbfb0648e64316439e91343dab15b8",
     "periodic_twist_family_verification.json": "b2b0fc89c2f6fac65cb6d58c457dc58368256586ece5f1ada59a473bd146f361",
     "sources/kalfagianni-lee-crosscaps-1408.4493v3.pdf": "8c38df9ee041bd9ef17b93e631ed1d5897ac6b16e042c9de883652add3070697",
-    "sources/bbk-coxeter-published-2021.html": "57475efdf6c7e40f6a14ba2da6a0141cc0e5f0ae8a48cc0a3d457ca02c3c9da8"
+    "sources/bbk-coxeter-published-2021.html": "57475efdf6c7e40f6a14ba2da6a0141cc0e5f0ae8a48cc0a3d457ca02c3c9da8",
+    "a6_affine_inputs.json": "7933e9fabf45453faf4ce1bce623de00b69e6541b6e3e5fa94836d53be035226",
+    "a6_affine_verification.json": "3edac8a36782276a6b08dbf1e9abe90acbcaefa68850c2598b49cd2eea3d3922"
   },
   "primary_sources": {
     "KL16": {

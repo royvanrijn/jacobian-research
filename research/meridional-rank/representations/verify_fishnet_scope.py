@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact determinant obstruction for the 24 seven-sheet sharp-four knots.
+"""Exact determinant obstruction for48 retained sharp-four knots.
 
 This is a finite replay of Fox matrices and integer determinants, plus small
 weighted-incidence controls.  The knot/Coxeter/fishnet implications are the
@@ -117,6 +117,19 @@ def main():
     inputs = json.loads(source.read_text())
     positive = [case for case in inputs["cases"] if any(action["expected_H1_F3_dimension"] for action in case["actions"])]
     assert len(positive) == len({case["name"] for case in positive}) == 24
+    a6_source = HERE / "a6_affine_inputs.json"
+    a6_receipt = HERE / "a6_affine_verification.json"
+    a6_inputs = json.loads(a6_source.read_text())
+    a6_proof = json.loads(a6_receipt.read_text())
+    assert a6_proof["status"] == "PASS" and a6_proof["named_cases"] == 24
+    assert a6_proof["input_sha256"]["a6_affine_inputs.json"] == hashlib.sha256(a6_source.read_bytes()).hexdigest()
+    a6_bridge_four = {r["name"] for r in a6_proof["results"]
+                      if r["meridional_lower"] == r["bridge_upper"] == r["mr_equals_bridge"] == 4}
+    assert len(a6_inputs["cases"]) == len(a6_bridge_four) == 24
+    assert {r["name"] for r in a6_inputs["cases"]} == a6_bridge_four
+    assert not {r["name"] for r in positive} & a6_bridge_four
+    positive += a6_inputs["cases"]
+    assert len(positive) == len({case["name"] for case in positive}) == 48
     assert determinant([[0, 2], [3, 4]]) == -6
     assert determinant([[2, 4], [1, 2]]) == 0
     tree_order, _ = maximal_minor_gcd(weighted_incidence(4, [(0, 1, 3), (1, 2, 5), (2, 3, 7)]))
@@ -158,12 +171,12 @@ def main():
         assert "strand incidence" in str(error)
     else:
         raise AssertionError("corrupt diagram incidence accepted")
-    paths = [Path(__file__).resolve(), source, HERE / "FISHNET_SCOPE_AUDIT.tex"]
+    paths = [Path(__file__).resolve(), source, a6_source, a6_receipt, HERE / "FISHNET_SCOPE_AUDIT.tex"]
     report = {
         "status": "PASS",
-        "positive_knots": 24,
-        "BKP_proposition_1_4_exclusions": 24,
-        "Lustig_Moriah_nonunit_plat_gcd_exclusions": 24,
+        "positive_knots": 48,
+        "BKP_proposition_1_4_exclusions": 48,
+        "Lustig_Moriah_nonunit_plat_gcd_exclusions": 48,
         "maximum_prime_factor_multiplicity": max(result["prime_factors_with_multiplicity"] for result in results),
         "results": results,
         "controls": {
@@ -176,7 +189,7 @@ def main():
             "three_trefoils_not_excluded_by_multiplicity": True,
             "corrupt_diagram_incidence_rejected": True,
         },
-        "scope": "Exact Fox determinant and prime-factor counts on the retained 24 positive seven-sheet diagrams. The written arguments exclude every presentation satisfying BKP2026 Proposition 1.4 or the Lustig-Moriah nonunit plat gcd criterion as reported in Moriah2007 Theorem 4.20. Arbitrary fishnets, cyclic twisted graphs and global prior coverage remain outside this conclusion.",
+        "scope": "Exact Fox determinant and prime-factor counts on48 retained diagrams:24 seven-sheet cases and24 additional A6 affine cases. The written arguments exclude every presentation satisfying BKP2026 Proposition 1.4 or the Lustig-Moriah nonunit plat gcd criterion as reported in Moriah2007 Theorem 4.20. Arbitrary fishnets, cyclic twisted graphs and global prior coverage remain outside this conclusion.",
         "input_sha256": {path.relative_to(HERE).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest() for path in paths},
     }
     if args.output:

@@ -1,0 +1,436 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}[lemma]{Theorem}
+\newtheorem{corollary}[lemma]{Corollary}
+\newcommand{\rk}{\operatorname{rank}}
+\title{An involutory rank-one obstruction without a preserved form}
+\author{Written proof and exact algebra controls}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+\begin{theorem}\label{thm:373}
+Over any field, the knot group of
+$13a_{373}$ has no irreducible four-dimensional representation taking
+meridians to nonidentity involutions of displacement rank one.
+In characteristic different from two, it therefore has no irreducible
+four-dimensional KCH representation with meridian eigenvalue $-1$.
+No preserved symmetric or Hermitian form is assumed.
+\end{theorem}
+
+The literal PD, arc numbering and generating seed arcs $1,2,6,8$
+are those of the retained seven-sheeted and universal-reflection
+inputs. Their exact named-diagram identification is a dependency;
+it is not inferred from this algebra calculation.
+Write each meridian matrix as $R_i=I-u_if_i$, with $u_i,f_i$ nonzero.
+Such a factorization exists by displacement rank one, and
+\[
+ R_i^2-I=(f_i(u_i)-2)u_if_i=0
+\]
+forces $f_i(u_i)=2$ over every field. In characteristic two this
+value is zero and the matrix is a transvection; no nonzero norm or
+diagonalizability assumption is used in the representation proof.
+At a crossing $(o,a,b)$ the reflection pair propagates as
+\[
+ u_b=R_ou_a,\qquad f_b=f_aR_o.
+\]
+Pairs $(u,f)$ and $(tu,t^{-1}f)$ define the same matrix for every
+nonzero scalar $t$. Two nonzero displacement factorizations define
+the same matrix precisely when their pairs differ in this manner.
+
+\begin{lemma}\label{lem:independent}
+In an irreducible four-dimensional representation as in the theorem,
+the four seed normals and the four seed covectors are both bases.
+\end{lemma}
+\begin{proof}
+The span of the four seed normals is nonzero and invariant under
+their four generating matrices, hence is the whole space. The
+intersection of the four seed covector kernels is fixed pointwise
+by the generators. Irreducibility makes this subspace zero: if it
+were the whole space all generators would be identities. Thus the
+four covectors span the dual space as well.
+The normal-span argument bounds every irreducible representation
+with rank-one meridian displacements by the number of generating
+meridians, here four.
+\end{proof}
+
+\section{The first loop normalizes the directed pairings}
+
+Suppose both families are independent. Take the four seed normals
+as $e_0=u_1,e_1=u_2,e_2=u_6,e_3=u_8$, with corresponding covectors
+$f_0,f_1,f_2,f_3$. Put $A_{ij}=f_i(e_j)$, so $A_{ii}=2$.
+Let $a=A_{12}$ and $b=A_{21}$. The first three propagation steps
+\[
+                 (2,6,7),\ (7,2,3),\ (3,1,0)
+\]
+give
+\[
+\begin{aligned}
+ u_3&=(1-ab)e_1+be_2,& f_3^{\rm arc}&=(1-ab)f_1+af_2,\\
+ u_0&=e_0-su_3,& f_0^{\rm arc}&=f_0-tf_3^{\rm arc},
+\end{aligned}
+\]
+where $s=(1-ab)A_{10}+aA_{20}$ and
+$t=(1-ab)A_{01}+bA_{02}$.
+Set $H=2-st$. The unused crossing $(0,1,2)$ implies
+$R_0e_0=\kappa e_1$ and $f_0R_0=\kappa^{-1}f_1$
+for some $\kappa\ne0$. Their coefficient vectors are
+\[
+ R_0e_0=(1-H)e_0+Hs(1-ab)e_1+Hsbe_2,
+\quad
+ f_0R_0=(1-H)f_0+Ht(1-ab)f_1+Htaf_2.
+\]
+The first equation gives $H=1$, hence $st=1$, then $b=0$
+and $\kappa=s$. The second gives $a=0$; equivalently its
+remaining term is $ta f_2=0$, while $t\ne0$ and $f_2\ne0$.
+Thus $A_{12}=A_{21}=0$ and $A_{01}A_{10}=1$.
+Replace $e_1$ by $se_1$ and $f_1$ by $s^{-1}f_1$.
+Then both directed pairings $A_{01},A_{10}$ equal one.
+
+The next steps $(1,3,4)$ and the preceding normalizations identify
+the pairs on arcs $0,4,6,7$ with
+\[
+ (U,F)=(e_0-e_1,f_0-f_1),\quad(-U,-F),\quad
+ (V,G)=(e_2,f_2),\quad(V,G),
+\]
+respectively. Put $(W,J)=(e_3,f_3)$.
+Both triples $U,V,W$ and $F,G,J$ are independent; the latter
+uses Lemma~\ref{lem:independent}. Each paired evaluation is two.
+
+\section{A two-sided crossing contradiction}
+
+Allow six unrestricted directed pairings
+\[
+ x=F(V),\ X=G(U),\ y=F(W),\ Y=J(U),\ z=G(W),\ Z=J(V).
+\]
+No transposition or conjugation relation is imposed on these values.
+Set
+\[
+\begin{gathered}
+ h=1-yY,\quad v=yX+zh,\quad C=Yx+Zh,\\
+ w=(2+h)y-xv,\qquad Q=(2+h)Y-XC.
+\end{gathered}
+\]
+The remaining propagation steps
+$(8,4,5),(5,8,9),(6,9,10),(10,0,12),(4,10,11)$ give
+\[
+\begin{array}{c|c|c}
+ i&u_i\text{ in }(U,V,W)&f_i\text{ in }(F,G,J)\\\hline
+5&(-1,0,Y)&(-1,0,y)\\
+9&(y,0,h)&(Y,0,h)\\
+10&(y,-v,h)&(Y,-C,h)\\
+11&(y-w,-v,h)&(Y-Q,-C,h)\\
+12&(1-Qy,Qv,-Qh)&(1-wY,wC,-wh).
+\end{array}
+\]
+These formulas, including every evaluation $f_i(u_i)=2$, are
+checked as integer polynomial identities in the six directed variables.
+
+The crossing $(11,7,8)$ says
+$R_{11}V=\beta W$ and $GR_{11}=\beta^{-1}J$ for a nonzero
+scalar $\beta$. Put $p=f_{11}(V)$ and $q=G(u_{11})$.
+Independence of the root and covector triples gives
+\[
+\begin{array}{lll}
+p(y-w)=0,&1+pv=0,&-ph=\beta,\\
+q(Y-Q)=0,&1+qC=0,&-qh=\beta^{-1}.
+\end{array}
+\]
+Thus $p,q,h$ are nonzero and
+\[
+             w=y,\quad Q=Y,\quad v=\beta^{-1}h,\quad C=\beta h.
+\]
+In particular the pair on arc12 simplifies to
+\[
+                 u_{12}=-hu_5+YvV,\qquad
+                 f_{12}=-hf_5+yCG.
+\]
+The crossing $(12,5,6)$ says
+$R_{12}u_5=\alpha V$ and $f_5R_{12}=\alpha^{-1}G$
+for a nonzero scalar $\alpha$.
+Put $r=f_{12}(u_5)$ and $s=f_5(u_{12})$.
+The independent pairs $(u_5,V)$ and $(f_5,G)$ give
+\[
+           1+rh=0,\quad-rYv=\alpha,\qquad
+           1+sh=0,\quad-syC=\alpha^{-1}.
+\]
+It follows that $\alpha=Y\beta^{-1}$ and
+$\alpha^{-1}=y\beta$. Multiplication forces $yY=1$, so $h=0$,
+contrary to $-ph=\beta\ne0$.
+This proves Theorem~\ref{thm:373}.
+
+\section{The other three reduced systems}
+
+Consider the other three reduced eight-crossing systems for
+$13a_{375},13a_{391},13a_{392}$ in the retained universal-reflection
+input. The argument here uses their literal crossing relations, not
+the preserved-form theorem. Both triples of seed roots and covectors
+are again denoted $(U,V,W)$ and $(F,G,J)$, with six unrestricted
+directed pairings as above.
+
+For $13a_{375}$ and $13a_{391}$ let $(T,L)=R_V(W,J)$ and
+$(A,H)=R_U(T,L)$, where this notation means simultaneous root and
+covector conjugation. Put $t=F(T)$ and $\tau=L(U)$. Then
+$A=T-tU$, $H=L-\tau F$.
+For $13a_{375}$, the trace is
+\[
+ (6,9,10),(10,7,8),(4,10,11),(11,4,5),(8,11,12).
+\]
+It gives $(u_{10},f_{10})=(T,L)$, $(u_{11},f_{11})=(A,H)$,
+$R_8=R_TR_VR_T$, and
+\[
+ u_5=(t\tau-1)U-\tau T,\qquad
+ f_5=(t\tau-1)F-tL.
+\]
+The $U$-coefficient of $u_{12}$ is $-t$, and the $F$-coefficient
+of $f_{12}$ is $-\tau$, since the pair on arc8 uses only $V,W,G,J$.
+The unused crossing $(9,12,0)$ gives
+$R_Wu_{12}=\gamma U$ and $f_{12}R_W=\gamma^{-1}F$.
+Its two coefficients therefore force
+$t=-\gamma$, $\tau=-\gamma^{-1}$, hence $t\tau=1$.
+The pair on arc5 is now $(-\tau T,-tL)$, so $R_5=R_T$.
+The unused crossing $(5,8,9)$ would imply
+$\alpha W=R_5u_8=R_TR_TV=V$, a contradiction.
+
+For $13a_{391}$ the trace is
+\[
+ (9,6,5),(6,9,10),(4,10,11),(5,11,12),(11,7,8).
+\]
+Here $(u_5,f_5)=R_W(V,G)$, $(u_{11},f_{11})=(A,H)$,
+$(u_{12},f_{12})=R_5(A,H)$ and $(u_8,f_8)=R_A(V,G)$.
+Again the coefficients on $U,F$ of the arc12 pair are $-t,-\tau$.
+The unused crossing $(10,12,0)$ gives
+\[
+ u_{12}=\gamma(U-\tau T),\qquad
+ f_{12}=\gamma^{-1}(F-tL).
+\]
+Thus $t=-\gamma$ and $\tau=-\gamma^{-1}$, and the displayed
+pair equals $(A,H)$. Hence $R_{12}=R_A$.
+The unused crossing $(12,8,9)$ now gives $V=\beta W$, impossible.
+
+For $13a_{392}$ put $h=1-zZ$,
+$t=zx+hy$, $\tau=ZX+hY$,
+$k=(2+h)z-tX$ and $K=(2+h)Z-\tau x$.
+The trace
+\[
+ (12,6,5),(5,12,11),(4,11,10),(6,10,9),(10,7,8)
+\]
+gives the paired coefficient vectors
+\[
+\begin{array}{c|c|c}
+i&u_i\text{ in }(U,V,W)&f_i\text{ in }(F,G,J)\\\hline
+11&(0,z,h)&(0,Z,h)\\
+10&(-t,z,h)&(-\tau,Z,h)\\
+9&(-t,z-k,h)&(-\tau,Z-K,h)\\
+8&(Kt,1-Kz,-Kh)&(k\tau,1-kZ,-kh).
+\end{array}
+\]
+The crossing $(9,12,0)$, on putting $p=f_9(W)$ and $q=J(u_9)$,
+forces
+\[
+ pt=\gamma,\quad p(z-k)=0,\quad ph=1,\qquad
+ q\tau=\gamma^{-1},\quad q(Z-K)=0,\quad qh=1.
+\]
+Thus $p,q,t,\tau,h$ are nonzero, $k=z$ and $K=Z$.
+The crossing $(11,8,9)$ has root and covector phases $\beta,\beta^{-1}$.
+Since the arc11 pair has zero coefficients on $U,F$, comparison of
+those coefficients gives $Kt=-\beta t$ and
+$k\tau=-\beta^{-1}\tau$. Hence $Z=-\beta$, $z=-\beta^{-1}$,
+contradicting $h=1-zZ\ne0$.
+
+In each of these four reduced systems, a three-seed trace propagates
+all eight root directions and all eight covector directions. It follows
+that they cannot simultaneously have root span three and covector
+span three: the three chosen seed pairs would give the independent
+triples used in the contradictions above. This is a two-sided
+statement; it asserts no bound on just one span in a reducible case.
+
+\section{Paired folds and the sixteen diagrams}
+
+The local folds used to transfer these systems also work without a
+form. Here are the needed arguments, with arbitrary nonzero closing
+phase $\kappa$ in place of a sign. Take independent roots $A,E,C$
+and independent covectors $F,G,J$. Write
+\[
+ a=F(E),\quad a'=G(A),\quad b=F(C),\quad b'=J(A),\quad
+ c=G(C),\quad c'=J(E).
+\]
+In local typeI, the five crossings are
+$(0,1,2),(j,2,3),(3,0,1),(1,3,4),(2,j,j')$,
+where the pairs on arcs $0,1,j$ are $(A,F),(E,G),(C,J)$.
+Set $t=c'-ab'$ and $T=c-a'b$. The arc3 pair is
+\[
+       (E-aA-tC,\ G-a'F-TJ).
+\]
+Put $H=-a'-Tb'$ and $K=-a-tb$.
+The root and covector coefficients in the closing relation are
+\[
+ (1+aH,-H,tH)=(0,\kappa,0),\qquad
+ (1+a'K,-K,TK)=(0,\kappa^{-1},0).
+\]
+Thus $t=T=0$, $aa'=1$. The arc4 pair is
+$(-aA,-a'F)$ and the arc$j'$ pair equals $(C,J)$.
+Consequently the full matrices satisfy $R_4=R_0$, $R_{j'}=R_j$.
+
+In typeII replace the first two crossings by $(j,1,2),(0,2,3)$.
+Set $t=a-c'b$, $T=a'-cb'$. The arc3 pair is
+$(E-c'C-tA,G-cJ-TF)$.
+The closing coefficient vectors are
+\[
+ (1-tT,T,-c'T)=(0,\kappa,0),\qquad
+ (1-tT,t,-ct)=(0,\kappa^{-1},0).
+\]
+They force $c=c'=0$ and $aa'=tT=1$, giving the same full-matrix
+identifications. These raw formulas and normalized paired folds are
+checked with all six directed variables independent.
+
+For the alternate old-four local loop
+$(3,1,0),(1,3,4),(0,3,2),(2,6,7),(7,1,2)$,
+write $A=u_1,E=u_3,C=u_6$. The pair on arc2 is
+$(aA+(1-aa')E,a'F+(1-aa')G)$.
+The pair on arc7 has root coefficient one on $C$.
+The closing root equation therefore first forces its evaluation on
+$A$ to vanish, and then $A=\kappa u_2$. Hence $aa'=1$.
+Its evaluation condition gives $b'=0$. The closing covector equation
+then forces the other evaluation to vanish, giving $b=0$.
+Thus $R_7=R_6$ and $R_4=R_0$, with no symmetric-pairing hypothesis.
+
+All seed changes in the retained sixteen-diagram transfer are
+compositions of the following elementary operation. Conjugate one
+seed pair by a reflection whose root and covector lie in the spans
+of the other three retained pairs. The replaced root has coefficient
+one on its previous root; the replaced covector likewise has
+coefficient one on its previous covector. Both changes have
+determinant one. This applies as well when one first changes the
+other member of a pair and then performs a second such operation.
+The exact word identities and changed seed lists are retained in
+the input; they are diagrammatic conjugation identities and use no
+form. For $13a_{391}$ use $u_6=R_9u_5$. For $13a_{392}$ first use
+$u_{12}=R_5u_{11}$, then $u_6=R_{12}u_5$.
+For $13a_{3264}$ and $13a_{3276}$ put $u_0=R_3u_1$, then $u_{12}=R_Qu_0$ and
+$u_6=R_{12}u_5$, with $Q=10,9$ respectively.
+For $13a_{3266}$ first use $u_9=R_5u_8$, then $u_{12}=R_9u_0$ and
+$u_6=R_{12}u_5$. For $13a_{3275}$ use $u_6=R_9u_5$.
+For the first two A6 rows below use $u_6=R_Qu_5$ with $Q=9,11$;
+the third row requires no change, and the last uses $u_8=R_5u_7$.
+The corresponding covectors are always propagated contragrediently.
+The checker reconstructs these literal crossing words and computes
+both change-of-basis determinants as the constant integer polynomial
+one in twelve independent directed pairings. Thus independence of
+both four-seed families is preserved in every listed change.
+
+For the original remaining four knots, the folded eight-crossing
+systems are identical label for label to those for373,375,391,392,
+respectively, in the order3264,3266,3275,3276.
+For the eight six-sheeted alternating cases, the exact bijections are
+\[
+\begin{array}{c|c|c|c}
+\text{new indices}&\text{new labels}&\text{old labels}&\text{old index}\\\hline
+304,3232&(0,5,6,8,9,10,11,12)&(9,10,11,12,0,5,6,8)&375\\
+362,3259&(0,5,6,8,9,10,11,12)&(10,11,12,0,5,6,8,9)&375\\
+623,3374&(0,5,6,7,8,10,11,12)&(8,6,5,0,12,11,10,9)&373\\
+629,3375&(0,5,6,7,8,10,11,12)&(5,0,12,11,10,9,8,6)&373.
+\end{array}
+\]
+Every index here is a $13a$ knot. The first index in each pair uses
+typeI and the second typeII. The literal PD crossing sets verify
+all twelve transfers directly, allowing only exchange of under-arcs.
+The surviving reduced directions include three independent roots
+and three independent covectors, since they are subsets or elementary
+changes of the four-seed bases. This contradicts the two-sided
+reduced-system conclusion above.
+
+\begin{theorem}\label{thm:sixteen}
+For every knot in
+\[
+\begin{aligned}
+\mathcal K_{16}=\{&13a_{373},13a_{375},13a_{391},13a_{392},\\
+ &13a_{3264},13a_{3266},13a_{3275},13a_{3276},\\
+ &13a_{304},13a_{362},13a_{623},13a_{629},\\
+ &13a_{3232},13a_{3259},13a_{3374},13a_{3375}\},
+\end{aligned}
+\]
+every irreducible representation taking meridians to nonidentity
+involutions of displacement rank one has dimension at most three,
+over every field. No preserved form is assumed. In characteristic
+different from two this includes every irreducible KCH representation
+with meridian eigenvalue $-1$; in characteristic two it is a
+transvection obstruction, rather than a KCH eigenvalue assertion.
+\end{theorem}
+
+\section{The exact augmentation consequence and primary comparison}
+
+\begin{corollary}\label{cor:augmentation}
+Let $K\in\mathcal K_{16}$ and let $C_K$ be the $U=1$ cord algebra in
+the conventions of Cornwell's author version arXiv:1310.7526v3.
+Every augmentation $\epsilon:C_K\to k$ with $\epsilon(\mu)=-1$ has rank
+at most three, over every field $k$ of characteristic different
+from two. No condition on the nonzero longitude value
+$\epsilon(\lambda)$ is imposed.
+\end{corollary}
+\begin{proof}
+Cornwell's Theorem1.2 constructs an irreducible KCH representation
+from every augmentation with $\epsilon(\mu)\ne1$; Definition1.8
+defines its rank to be the representation dimension, and Lemma3.14
+identifies this with the cord-matrix rank \cite{cor17}.
+Proposition2.12 identifies $\epsilon(\mu)$ with the distinguished
+meridian eigenvalue and $\epsilon(\lambda)$ with its longitude
+eigenvalue. The hypothesis $\epsilon(\mu)=-1$ is therefore exactly
+the involutory case above. Lemma~\ref{lem:independent} excludes
+dimensions greater than four, and Theorem~\ref{thm:sixteen} excludes
+dimension four. These correspondence statements are explicit imports;
+their original proofs are not independently re-established here.
+\end{proof}
+
+The specialization $\mu=-1$ does not automatically make an augmentation
+reflective. Cornwell's arXiv:1509.04962v1, printed p.22 in the proof
+of Corollary6.11, requires both $\epsilon(\mu)=-1$ and
+$\epsilon(c_{ij})=\epsilon(c_{ji})$ \cite{cor15}.
+Its printed p.8, after Theorem3.6, notes that every nontrivial knot
+has a rank-two complex augmentation with meridian value $-1$, whereas
+Corollary5.3 on printed p.15 gives determinant-one knots without
+rank-two complex reflective augmentations. Thus dropping the symmetry
+hypothesis is a substantive change of scope. This comparison is not
+an assertion of worldwide priority for the particular obstruction.
+
+\section{Exact certificate and scope}
+
+The standard-library program \path{verify_involutory_kch_obstruction.py}
+checks the raw first-loop formulas, the five reduced paired traces
+and all ten root/covector expressions. It also verifies a constant-one
+identity in the integer Laurent ring with $\alpha,\beta$ inverted,
+using eleven necessary closure equations and26 multiplier monomials.
+The expanded certificate is retained as \texttt{unit\_identity} in
+\path{involutory_kch_obstruction_inputs.json};
+a changed multiplier is rejected. No finite-field sample, numerical
+solution or untrusted Gr\"obner output supplies the contradiction.
+The same standalone checker verifies the other
+three paired systems, both raw six-variable A6 local folds, the
+alternate old-four fold and all twelve literal PD incidence transfers.
+
+The independence of both families is essential to this proof.
+It does not assert that every reducible rank-one involutory
+representation has fixed-space codimension at most three.
+It gives no bound for noninvolutory meridian images and no upper
+bound on augmentation rank over all meridian parameters.
+The augmentation consequence uses the exact published correspondence;
+that correspondence is not a premise of the representation theorem.
+All checks and proofs here are internal and have not received
+formal verification or external specialist review.
+\begin{thebibliography}{9}
+\bibitem{cor17} C.R.Cornwell, KCH representations, augmentations,
+and $A$-polynomials, J.Symplectic Geom.15 (2017),983--1017.
+Retained author version arXiv:1310.7526v3, Theorem1.2 (p.1;
+proof pp.12--13), Definition1.8 (p.3), Proposition2.12 (p.9),
+Lemma3.14 (p.13).
+\url{https://arxiv.org/abs/1310.7526v3}.
+\bibitem{cor15} C.R.Cornwell, Character varieties of knot complements
+and branched double-covers via the cord ring, author preprint
+arXiv:1509.04962v1 (2015), Theorem3.6 and following paragraph (p.8),
+Corollary5.3 (p.15), and proof of Corollary6.11 (p.22).
+\url{https://arxiv.org/abs/1509.04962v1}.
+\end{thebibliography}
+\end{document}

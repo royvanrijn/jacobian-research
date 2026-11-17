@@ -1,0 +1,410 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\rk}{\operatorname{rank}}
+\title{A signed rank-one obstruction at every meridian parameter}
+\author{Internal research working proof}
+\date{17 November 2026}
+\begin{document}\maketitle
+
+For $13a_{373}$, the ordinary $U=1$ augmentation rank over $\mathbb C$
+is three, whereas its meridional rank and bridge number are four.
+The upper bound follows from a signed rank-one matrix obstruction valid
+over every field and at every nonzero meridian determinant. It does not
+assume a preserved form or specialize the meridian parameter.
+
+\begin{theorem}\label{thm:generic}
+Let $k$ be any field. Every irreducible representation of the knot group
+of $13a_{373}$ whose meridian matrices have displacement rank one has
+dimension at most three. In particular, the knot has no irreducible
+four-dimensional KCH representation at any meridian parameter
+$\mu\in k^*\setminus\{1\}$.
+No preserved bilinear or Hermitian form is assumed.
+\end{theorem}
+
+The argument below is accompanied by exact algebra controls. Its diagram input is
+the retained literal PD for $13a_{373}$, together with the named-diagram
+binding from the seven-sheet package. The signed crossing extraction in
+the checker follows the oriented literal planar diagram and uses the
+following Wirtinger convention:
+\[
+ M_b=M_o^\varepsilon M_aM_o^{-\varepsilon},
+ \qquad\varepsilon=-\text{crossing sign}
+\]
+when $a,b$ are the oriented incoming and outgoing under-arcs. This is
+also the convention in Spherogram's explicit knot-group construction.
+Reversing
+the two under-arcs reverses $\varepsilon$.
+
+Each signed tuple below is $(o,a,b,\varepsilon)$, with over-arc $o$
+and under-arc relation $M_b=M_o^\varepsilon M_aM_o^{-\varepsilon}$.
+The seed arcs are $1,2,6,8$. Their signed propagation trace is
+\[
+\begin{gathered}
+(2,6,7,+),\ (7,2,3,+),\ (3,1,0,+),\ (1,3,4,-),\\
+(8,4,5,-),\ (5,8,9,-),\ (6,9,10,+),\\
+(10,0,12,+),\ (4,10,11,-).
+\end{gathered}
+\]
+The unused signed crossings are
+\[
+ (0,1,2,-),\quad(12,5,6,-),\quad
+ (11,7,8,+),\quad(9,11,12,+).
+\]
+Only the first three of these are needed below.
+
+Write $d=1-\mu$ and
+\[
+ M_i=I-u_if_i,\qquad f_i(u_i)=d,\qquad
+ M_i^{-1}=I+\mu^{-1}u_if_i.
+\]
+This holds for every invertible rank-one displacement: the determinant
+is $1-f_i(u_i)=\mu\ne0$, the same for all conjugate meridians.
+For exponent $+$ the pair propagates as
+\[
+ u_b=M_ou_a,\qquad f_b=f_aM_o^{-1},
+\]
+and for exponent $-$ as
+\[
+ u_b=M_o^{-1}u_a,\qquad f_b=f_aM_o.
+\]
+Equality of two nonzero rank-one displacements identifies their pairs
+up to $(u,f)\mapsto(cu,c^{-1}f)$ with $c\ne0$.
+
+The span of the four seed roots is invariant under the four generating
+meridians. Their covectors' common kernel is fixed pointwise.
+Irreducibility therefore bounds the dimension by four; in dimension four
+the seed roots and seed covectors are both bases. It suffices to exclude
+that case. Take the root basis to be $A,B,C,D$ on arcs $1,2,6,8$, with
+covector basis $F_A,F_B,F_C,F_D$.
+
+\section*{The first signed clasp}
+Put
+\[
+a=F_B(C),\quad b=F_C(B),\quad r=F_A(B),\quad R=F_B(A),
+\quad x=F_A(C),\quad X=F_C(A).
+\]
+Define
+\[
+k=1+ab/\mu,\qquad S=kR+aX,\qquad T=kr-bx/\mu.
+\]
+The first three positive propagation steps give
+\[
+\begin{aligned}
+u_3&=kB-(b/\mu)C,& f_3&=kF_B+aF_C,\\
+u_0&=A-Su_3,&f_0&=F_A+(T/\mu)f_3.
+\end{aligned}
+\]
+Let $H=f_0(A)=d+ST/\mu$. The negative closing crossing
+$(0,1,2,-)$ says
+\[
+ M_0^{-1}A=\kappa B,\qquad F_AM_0=\kappa^{-1}F_B
+\]
+for some $\kappa\ne0$. The root equation has coefficient vector
+\[
+ (1+H/\mu)A-(HS/\mu)kB+(HSb/\mu^2)C.
+\]
+Thus $H=-\mu$, so $ST=-\mu$, and $Sk=\kappa$, $Sb=0$.
+In particular $S,T\ne0$, whence $b=0$ and $k=1$.
+Also $F_A(u_0)=d-ST=1$, so the covector equation becomes
+\[
+ -(T/\mu)(F_B+aF_C)=\kappa^{-1}F_B.
+\]
+Independence forces $a=0$. Consequently $rR=-\mu$.
+Rescale $B\mapsto RB$ and $F_B\mapsto R^{-1}F_B$; then
+$F_B(A)=1$ and $F_A(B)=-\mu$.
+
+The pairs on arcs $0,4,6,7,8$ now have the form
+\[
+ (U,F),\quad(-U,-F),\quad(V,G),\quad(V,G),\quad(W,J),
+\]
+where $U=A-B$, $F=F_A-F_B$, $V=C$, $G=F_C$, $W=D$, $J=F_D$.
+Both triples are linearly independent, and their corresponding
+evaluations are $F(U)=G(V)=J(W)=d$.
+
+\section*{The three-direction core}
+Allow six independent directed pairings
+\[
+x=F(V),\quad X=G(U),\quad y=F(W),\quad Y=J(U),\quad
+z=G(W),\quad Z=J(V).
+\]
+No symmetry is imposed. Set
+\[
+\begin{gathered}
+h=1+yY/\mu,\qquad v=yX+hz,\qquad C=hZ-Yx/\mu,\\
+w=y(d+h)-xv,\qquad Q=Y(h-d/\mu)+CX/\mu.
+\end{gathered}
+\]
+The remaining signed propagation steps give the following coefficient
+vectors in the independent triples $(U,V,W)$ and $(F,G,J)$:
+\[
+\begin{array}{c|c|c}
+i&u_i&f_i\\\hline
+5&(-1,0,-Y/\mu)&(-1,0,y)\\
+9&(y,0,h)&(-Y/\mu,0,h)\\
+10&(y,-v,h)&(-Y/\mu,C/\mu,h)\\
+11&(y+w/\mu,-v,h)&(-Y/\mu-Q,C/\mu,h)\\
+12&(1-Qy,Qv,-Qh)&(1-wY/\mu^2,wC/\mu^2,wh/\mu).
+\end{array}
+\]
+The exact checker verifies each row using the signed conjugation formula
+and verifies every corresponding evaluation $f_i(u_i)=d$.
+
+The positive crossing $(11,7,8,+)$ supplies a nonzero scalar $\beta$:
+\[
+ M_{11}V=\beta W,\qquad GM_{11}^{-1}=\beta^{-1}J.
+\]
+Put $p=f_{11}(V)$, $q=G(u_{11})$. Coefficient comparison gives
+\[
+\begin{array}{lll}
+p(y+w/\mu)=0,&1+pv=0,&-ph=\beta,\\
+(q/\mu)(-Y/\mu-Q)=0,&1+qC/\mu^2=0,&qh/\mu=\beta^{-1}.
+\end{array}
+\]
+These equations force $p,q,h\ne0$, and hence
+\[
+w=-\mu y,\quad Q=-Y/\mu,\quad v=\beta^{-1}h,
+\quad C=-\mu\beta h.
+\]
+Substitution simplifies the arc12 pair to
+\[
+u_{12}=-hu_5-(Yv/\mu)V,\qquad
+f_{12}=-hf_5-(yC/\mu)G.
+\]
+Finally the negative crossing $(12,5,6,-)$ supplies $\alpha\ne0$ with
+\[
+ M_{12}^{-1}u_5=\alpha V,\qquad
+ f_5M_{12}=\alpha^{-1}G.
+\]
+Write $r=f_{12}(u_5)$ and $s=f_5(u_{12})$.
+The independent pairs $(u_5,V)$ and $(f_5,G)$ yield
+\[
+1-rh/\mu=0,\quad-rYv/\mu^2=\alpha,\qquad
+1+sh=0,\quad syC/\mu=\alpha^{-1}.
+\]
+It follows that
+\[
+ \alpha=-Y\beta^{-1}/\mu,\qquad\alpha^{-1}=y\beta.
+\]
+Their product forces $yY=-\mu$, so $h=1+yY/\mu=0$,
+contradicting $-ph=\beta\ne0$. This proves the theorem.
+The proof uses no division by two or by $1-\mu$.
+
+\section*{Exact algebra and augmentation consequence}
+The standalone standard-library script
+\path{verify_generic_kch_obstruction.py} checks the raw signed
+first loop, the normalization, all five reduced paired propagation
+steps, and the closing coefficient rows as rational-function identities.
+It also constructs an integer Laurent identity
+\[
+                    \sum_{i=0}^{10}h_if_i=1
+\]
+for the eleven clean necessary closure equations above. Only
+$\mu,\alpha,\beta$ are inverted; there are ten nonzero multiplier
+monomials after cancellation. Thus the reduced contradiction works in
+every characteristic. This algebra control does not replace the written
+independence and signed-diagram argument.
+
+The checker also verifies a genuinely generic four-dimensional
+irreducible $T(4,5)$ control, rejects corrupted algebra and diagram
+inputs, and verifies the rank-three lower witness described below.
+An optional \texttt{--census} run re-reads the pinned named diagram.
+These are exact internal verification controls, not formal verification
+or external specialist review.
+
+\begin{corollary}\label{cor:augmentation}
+For every field $k$, the ordinary $U=1$ augmentation rank satisfies
+$\operatorname{ar}(13a_{373},k)\le3$.
+\end{corollary}
+\begin{proof}
+The augmentation consequence is separate from the representation proof.
+Cornwell's augmentation--KCH correspondence
+\cite[Theorem1.2 and Definition1.8]{cornwell17} applies
+to every field-valued $U=1$ cord augmentation with
+$\epsilon(\mu)\ne1$ and gives an irreducible KCH representation whose
+dimension is its augmentation rank, with arbitrary nonzero longitude
+value. Therefore every such augmentation for $13a_{373}$ has rank at
+most three. The definition of augmentation rank excludes $\epsilon(\mu)=1$.
+This does not assert absence of higher-rank augmentations at $\mu=1$,
+outside that correspondence.
+\end{proof}
+
+\begin{corollary}\label{cor:gap}
+\[
+ \operatorname{ar}(13a_{373},\mathbb C)=3
+ <4=\operatorname{mr}(13a_{373})=b(13a_{373}).
+\]
+\end{corollary}
+\begin{proof}
+Corollary~\ref{cor:augmentation} supplies the augmentation upper bound.
+The explicit reflective cord matrix given by the vectors below and in
+\path{reflective_augmentation_inputs.json} has rank three over
+$\mathbb Q(\phi)$, where $\phi^2-\phi-1=0$. Its thirteen normal vectors
+have squared length four, and their half-dot-product matrix satisfies
+$c_{ii}=2$ and $c_{\ell a}+c_{\ell b}=c_{\ell o}c_{oa}$ at every crossing.
+The checker replays these equations and the matrix rank exactly.
+Cornwell's cord presentation and reflective quotient
+\cite[Section3]{cornwell15} identify this with a rank-three $U=1$
+augmentation at $\mu=-1$, giving equality over $\mathbb C$.
+Independently, the seven-sheet cover certificate gives
+$\operatorname{mr}\ge4$. The four-seed Wirtinger colouring displayed
+above gives Wirtinger number at most four; the bridge--Wirtinger
+theorem \cite[Theorem1.3]{wirt} therefore gives $b\le4$.
+Thus $\operatorname{mr}=b=4$; the separate cover proof is in
+\path{GENERAL_BRANCHED_COVER_RANK_BOUNDS.tex},
+Theorem \texttt{thm:twentyfour}.
+The meridional lower bound is not used in Theorem~\ref{thm:generic}.
+\end{proof}
+
+\begin{corollary}\label{cor:sums}
+Let $K=13a_{373}$, and let $s\ge0$ be an integer. Then
+\[
+ \operatorname{ar}(K\mathbin{\#}(\mathbin{\#}^{s}3_1),\mathbb C)
+ =s+3<s+4
+ =\operatorname{mr}(K\mathbin{\#}(\mathbin{\#}^{s}3_1))
+ =b(K\mathbin{\#}(\mathbin{\#}^{s}3_1)).
+\]
+\end{corollary}
+\begin{proof}
+The rank-three seed augmentation is attained at $\mu=-1$.
+For the trefoil, the matrices
+\[
+ A=\begin{pmatrix}-1&1\\0&1\end{pmatrix},\qquad
+ B=\begin{pmatrix}1&0\\1&-1\end{pmatrix}
+\]
+satisfy $A^2=B^2=I$ and $ABA=BAB$. Their displacement roots span
+two dimensions, their covectors have zero common kernel, and the
+cross-pairings are nonzero, so this is an irreducible two-dimensional
+KCH representation at $\mu=-1$. It gives a rank-two augmentation
+there. The trefoil has augmentation rank exactly two because its
+bridge number is two.
+
+Cornwell's connected-sum theorem \cite[Theorem1.9, proof in Section4.2]{cornwell17}
+constructs an augmentation of rank $d_1+d_2-1$ at the common meridian
+parameter of the two inputs. Iteration therefore attains rank $s+3$
+at $\mu=-1$. Its upper-additivity conclusion starts from an arbitrary
+augmentation of the sum and gives the opposite inequality, with no
+restriction on that augmentation's parameter. Hence the augmentation
+rank is exactly $s+3$. The independent cover and bridge certificates in
+\path{INVOLUTION_COVER_SUM_FORMULAS.tex}, Corollary \texttt{cor:hundredone},
+give meridional rank and bridge number $s+4$. They do not use the
+augmentation argument.
+\end{proof}
+
+\section*{The exact diagram and lower witness}
+The following PD uses edge labels $1,\ldots,26$ and crossing rows
+numbered from zero. Join entries in zero-based positions $1$ and $3$
+of every row, then take connected components of edge labels; these are
+the overpass arcs, ordered by their least edge label and numbered from
+zero. This fixes the arc numbering used in the signed trace.
+The retained orientation starts at corner zero of crossing zero.
+The exact planar dart bijection to the independently packaged named
+census diagram remains in the input file, rather than being inferred
+from the knot label.
+
+The second table gives the thirteen witness vectors $v_i$ indexed by
+arc. These row indices are independent of the crossing-row indices in
+the first table. Here $\phi^2-\phi-1=0$ and
+$c_{ij}=\tfrac12v_i\cdot v_j$.
+\[
+\begin{array}{c|rrrr}
+ i&\multicolumn{4}{c}{\mathrm{PD}_i}\\\hline
+0 & 3 & 1 & 4 & 26\\
+1 & 1 & 7 & 2 & 6\\
+2 & 7 & 3 & 8 & 2\\
+3 & 13 & 4 & 14 & 5\\
+4 & 5 & 14 & 6 & 15\\
+5 & 21 & 9 & 22 & 8\\
+6 & 9 & 17 & 10 & 16\\
+7 & 17 & 11 & 18 & 10\\
+8 & 11 & 25 & 12 & 24\\
+9 & 19 & 12 & 20 & 13\\
+10 & 15 & 22 & 16 & 23\\
+11 & 23 & 18 & 24 & 19\\
+12 & 25 & 21 & 26 & 20\\
+\end{array}
+\qquad
+\begin{array}{c|rrrr}
+ i&\multicolumn{4}{c}{v_i}\\\hline
+0 & -1 & 1 & 1 & 1\\
+1 & 2 & 0 & 0 & 0\\
+2 & -1 & -1 & -1 & -1\\
+3 & 1 & 1 & 1 & 1\\
+4 & 1 & -1 & -1 & -1\\
+5 & \phi-1 & -\phi & 1 & 0\\
+6 & \phi-1 & -\phi & 1 & 0\\
+7 & 1-\phi & \phi & -1 & 0\\
+8 & 1 & -\phi & 0 & 1-\phi\\
+9 & 0 & -1 & \phi & \phi-1\\
+10 & 1 & -\phi & 0 & 1-\phi\\
+11 & \phi-1 & 0 & -\phi & -1\\
+12 & 1-\phi & \phi & -1 & 0\\
+\end{array}
+\]
+All $v_i$ have squared length four. Their dot products with
+$(0,\phi-2,1-\phi,1)$ vanish, so their span and cord matrix have
+rank at most three. The principal cord minor on arcs $0,1,5$ has
+\[
+                \det(c_{ij})_{i,j\in\{0,1,5\}}=2(1+\phi)\ne0.
+\]
+For every crossing $(o,a,b)$ and every $\ell$, substitution gives
+$c_{\ell a}+c_{\ell b}=c_{\ell o}c_{oa}$; the checker verifies all
+$13^2$ equations exactly in $\mathbb Q[\phi]/(\phi^2-\phi-1)$.
+Thus the lower cord-rank witness can be checked from the displayed
+vectors without the input file. The seven-sheet meridional lower
+certificate and connected-sum cover theorem remain the separate
+precisely cited results used in the two corollaries.
+
+\section*{The generic positive knot control}
+The positive control is the closure of $(\sigma_1\sigma_2\sigma_3)^5$.
+Let $D_4$ be the tridiagonal matrix with diagonal $1-\mu$,
+superdiagonal $-\mu$, and subdiagonal one. Put
+\[
+ T_i=I-e_i(\text{row}_iD_4),\qquad
+ \det D_4=1-\mu+\mu^2-\mu^3+\mu^4.
+\]
+The determinant is nonzero over $\mathbb Q(\mu)$, and both adjacent
+directed pairings are nonzero. Every nonzero invariant subspace
+therefore contains some $e_i$, then every $e_i$, proving irreducibility.
+The retained literal fifteen-crossing PD has roots and covectors whose
+signed matrix crossing relations all hold over $\mathbb Z[\mu^{\pm1}]$;
+all four $T_i$ occur among its arc images. Its four retained seed roots
+have determinant one, and its seed covectors have determinant $\det D_4$.
+An exact oriented dart map binds that PD to the displayed closed braid.
+Thus the same signed diagram logic accepts an actual generic rank-four
+knot representation. The checker rejects a deliberately reversed
+individual crossing sign in this noninvolutory control.
+
+Strict inequality between augmentation rank and meridional rank was
+already established by Cornwell: the retained arXiv:1310.7526v3,
+Corollary1.12 and Theorem5.3, gives
+$2=\operatorname{ar}(K,\mathbb C)<\operatorname{mr}(K)=3$ for
+$K\in\{8_{16},8_{17},10_{91},10_{94}\}$ \cite{cornwell17}.
+The result here supplies the named $3<4$ equality and a signed
+rank-one obstruction without a preserved form. No claim that this is
+the first augmentation-rank gap is made.
+
+\begin{thebibliography}{9}
+\bibitem{wirt}
+R. Blair, A. Kjuchukova, R. Velazquez and P. Villanueva,
+\emph{Wirtinger systems of generators of knot groups},
+Communications in Analysis and Geometry 28(2) (2020), 243--262,
+\url{https://doi.org/10.4310/CAG.2020.v28.n2.a2}.
+\bibitem{cornwell17}
+C. R. Cornwell, \emph{KCH representations, augmentations, and
+$A$-polynomials}, Journal of Symplectic Geometry \textbf{15} (2017), 983--1017.
+Theorem numbering is that of retained
+\href{https://arxiv.org/abs/1310.7526v3}{arXiv:1310.7526v3}.
+\bibitem{cornwell15}
+C. R. Cornwell, \emph{Character varieties of knot complements and
+branched double-covers via the cord ring}, retained
+\href{https://arxiv.org/abs/1509.04962v1}{arXiv:1509.04962v1}.
+\end{thebibliography}
+
+\end{document}

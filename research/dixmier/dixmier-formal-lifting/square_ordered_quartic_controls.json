@@ -1,0 +1,141 @@
+{
+  "scope": "All-order square-ordered quartic polynomial centralizer and no finite mate, with universal residue certificate and independent finite controls",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "parameters": "eta,g,s nonzero; mu arbitrary; characteristic zero; all symbolic",
+  "P": {
+    "4": "s**2/V**6",
+    "3": "-6*eta*s**2/V**8",
+    "2": "(V**10*g + 15*eta**2*s**2)/V**10",
+    "0": "V*mu"
+  },
+  "square_root_negative_coefficients": [
+    {
+      "root_order": -1,
+      "checked_square_order": 1,
+      "coefficient": "-3*V*eta*g/(2*s)"
+    },
+    {
+      "root_order": -2,
+      "checked_square_order": 0,
+      "coefficient": "(-V**10*g**2 + 4*V**5*mu*s**2 + 24*eta**2*g*s**2)/(8*V*s**3)"
+    },
+    {
+      "root_order": -3,
+      "checked_square_order": -1,
+      "coefficient": "eta*(9*V**10*g**2 - 14*V**5*mu*s**2 + 18*eta**2*g*s**2)/(4*V**3*s**3)"
+    },
+    {
+      "root_order": -4,
+      "checked_square_order": -2,
+      "coefficient": "(V**15*g**3 - 4*V**10*g*mu*s**2 - 366*V**5*eta**2*g**2*s**2 + 152*eta**2*mu*s**4)/(16*s**5)"
+    }
+  ],
+  "B2": {
+    "2": "s/V**3",
+    "0": "V**3*g/(2*s)"
+  },
+  "B6": {
+    "6": "s**3/V**9",
+    "5": "-18*eta*s**3/V**11",
+    "4": "3*s*(V**10*g + 106*eta**2*s**2)/(2*V**13)",
+    "3": "-3*eta*s*(3*V**10*g + 520*eta**2*s**2)/(2*V**15)",
+    "2": "3*(V**20*g**2 + 4*V**15*mu*s**2 + 28*V**10*eta**2*g*s**2 + 4800*eta**4*s**4)/(8*V**17*s)",
+    "1": "3*eta*mu*s/(2*V**4)",
+    "0": "(-V**20*g**3 + 12*V**15*g*mu*s**2 - 12*V**10*eta**2*g**2*s**2 - 32*V**5*eta**2*mu*s**4 + 288*eta**4*g*s**4)/(16*V**11*s**3)"
+  },
+  "commutator_P_B2": {
+    "2": "-3*eta**2*g*s/V**7",
+    "1": "eta*(3*V**10*g**2 - 2*V**5*mu*s**2 + 12*eta**2*g*s**2)/(V**9*s)",
+    "0": "eta**2*(3*V**10*g**2 + 2*V**5*mu*s**2 + 72*eta**2*g*s**2)/(2*V**11*s)"
+  },
+  "commutator_P_B6": {
+    "2": "9*eta**2*g*(-11*V**20*g**2 + 4*V**15*mu*s**2 - 12*V**10*eta**2*g*s**2 + 10208*eta**4*s**4)/(8*V**21*s)",
+    "1": "-3*eta*(3*V**30*g**4 - 14*V**25*g**2*mu*s**2 + 62*V**20*eta**2*g**3*s**2 + 8*V**20*mu**2*s**4 + 28*V**15*eta**2*g*mu*s**4 + 768*V**10*eta**4*g**2*s**4 - 3328*V**5*eta**4*mu*s**6 + 551232*eta**6*g*s**6)/(8*V**23*s**3)",
+    "0": "3*eta**2*(-21*V**30*g**4 + 34*V**25*g**2*mu*s**2 - 12*V**20*eta**2*g**3*s**2 + 216*V**15*eta**2*g*mu*s**4 + 12768*V**10*eta**4*g**2*s**4 - 49920*V**5*eta**4*mu*s**6 + 4942080*eta**6*g*s**6)/(16*V**25*s**3)"
+  },
+  "decisive_most_polar_A2_coefficient": "11484*eta**6*g*s**3",
+  "A2_coefficient_independence_determinant": "-34452*eta**8*g**2*s**4",
+  "rational_order_parity": {
+    "1": false,
+    "2": true,
+    "3": false,
+    "4": true,
+    "5": false,
+    "6": true,
+    "7": false,
+    "8": true,
+    "9": false,
+    "10": true
+  },
+  "centralizer": "k[P] in every finite differential order; normal-form and residue proof in canonical note",
+  "universal_certificate": {
+    "Q_n": "245*n**2/4 + 511*n/4 + x**2/2 + x*(21*n + 23)/2 + 123/2",
+    "r_n": "(-7*n - 2)*(7*n + 4)*(7*n + 6)*(7*n + 11)/4",
+    "symbolic_remainder": "0",
+    "corrupted_identity_rejected": true,
+    "D_recurrence_multiplier": "(12 - 14*k)*(7*k - 5)*(7*k - 4)*(14*k - 3)"
+  },
+  "formal_F_coefficients": [
+    "1/2",
+    "-3/2",
+    "6",
+    "-39/2",
+    "42",
+    "-183/2",
+    "1446",
+    "-15879/2",
+    "-163038",
+    "2506857/2",
+    "50537886",
+    "-857724519/2",
+    "-23787628518",
+    "449741205897/2",
+    "16198184031126",
+    "-338083258453959/2",
+    "-15080814570268398",
+    "344728533821504937/2",
+    "18415237406759201166",
+    "-457781288877047324199/2",
+    "-28563645289804829874678",
+    "767427012531811759051977/2"
+  ],
+  "D_controls": {
+    "k_range": [
+      0,
+      5
+    ],
+    "functional_values": [
+      "-3/2",
+      "198",
+      "-7128000",
+      "2268414720000",
+      "-2920048606126080000",
+      "10552997261567530598400000"
+    ],
+    "direct_shifted_values": [
+      "-3/2",
+      "198",
+      "-7128000",
+      "2268414720000",
+      "-2920048606126080000",
+      "10552997261567530598400000"
+    ]
+  },
+  "global_bridge": "Every finite pole residue is polynomial in critical P; finite parameter-pole removal excludes every finite mate of the actual global square candidate",
+  "positive_control": "g=mu=0 gives commuting B2=L and B6=L^3",
+  "negative_control": "Corrupted B6 coefficient yields commutator order above two and is rejected",
+  "hashes": {
+    "SQUARE_ORDERED_QUARTIC_FACE.md": "420c699b37fb8d001955ab1e43bc2241a2db0d96d0bda237f19034e1f6777699",
+    "check_square_ordered_quartic_face.py": "643db67d82db22ee2ae17ab27d56aafb6fe98dabf2c5ba8dba98821fe457da83",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "766c76aabb973d6091813eb2414e5ea1fad28db349b4b27c98a83f72ed7878d0",
+    "CRITICAL_LAURENT_FACE_OBSTRUCTION.md": "b82ff8eb542f9543aad66184cc3b3dd6760cf1bf8e0556595b99fc8e334c385f"
+  },
+  "coverage_boundary": "Universal polynomial identity checked with symbolic index; finite F/residue and full Ore controls independently support written all-order recurrence, normal-form, trace and parameter-pole arguments. No actual mate or bounded Long lift.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

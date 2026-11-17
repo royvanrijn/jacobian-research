@@ -1,0 +1,111 @@
+{
+  "group_size": 36,
+  "unit_image_size": 6,
+  "quotient_size": 6,
+  "quotient_representatives": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2,
+      1
+    ]
+  ],
+  "norm_characters": [
+    1,
+    -1,
+    -1,
+    -1,
+    1,
+    1
+  ],
+  "T2_matrix": [
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ]
+  ],
+  "T2_is_complete_bipartite_exactly": true,
+  "gamma_transitive_on_opposite_norm_class": true,
+  "bad_ramified_residue_classes_equal_gamma": true,
+  "alpha_omega_alpha_inverse_mod3": [
+    1,
+    0,
+    1,
+    2
+  ],
+  "all_arithmetic": "exact integers modulo 3"
+}

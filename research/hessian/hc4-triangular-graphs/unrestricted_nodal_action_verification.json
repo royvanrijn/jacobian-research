@@ -1,0 +1,147 @@
+{
+  "outcome": "PASS",
+  "check_count": 72,
+  "checks": [
+    "standard nodal normalization relation",
+    "standard nodal action",
+    "standard normalization is immersed",
+    "normalization orientation changes action by sign -1",
+    "node preimages remain exactly plus and minus one -1",
+    "normalization orientation changes action by sign 1",
+    "node preimages remain exactly plus and minus one 1",
+    "target control has constant nonzero Jacobian 0",
+    "target action correction is closed 0",
+    "target action primitive X coefficient 0",
+    "target action primitive Y coefficient 0",
+    "exact target action scaling 0",
+    "target control has constant nonzero Jacobian 1",
+    "target action correction is closed 1",
+    "target action primitive X coefficient 1",
+    "target action primitive Y coefficient 1",
+    "exact target action scaling 1",
+    "target control has constant nonzero Jacobian 2",
+    "target action correction is closed 2",
+    "target action primitive X coefficient 2",
+    "target action primitive Y coefficient 2",
+    "exact target action scaling 2",
+    "target control has constant nonzero Jacobian 3",
+    "target action correction is closed 3",
+    "target action primitive X coefficient 3",
+    "target action primitive Y coefficient 3",
+    "exact target action scaling 3",
+    "target control has constant nonzero Jacobian 4",
+    "target action correction is closed 4",
+    "target action primitive X coefficient 4",
+    "target action primitive Y coefficient 4",
+    "exact target action scaling 4",
+    "degree-six pair recovers cubic generator N=1",
+    "degree-six pair recovers quadratic generator N=1",
+    "degree-six unbounded-partner action N=1",
+    "degree-six partner exact degree N=1",
+    "degree-six pair recovers cubic generator N=2",
+    "degree-six pair recovers quadratic generator N=2",
+    "degree-six unbounded-partner action N=2",
+    "degree-six partner exact degree N=2",
+    "degree-six pair recovers cubic generator N=5",
+    "degree-six pair recovers quadratic generator N=5",
+    "degree-six unbounded-partner action N=5",
+    "degree-six partner exact degree N=5",
+    "degree-six pair recovers cubic generator N=9",
+    "degree-six pair recovers quadratic generator N=9",
+    "degree-six unbounded-partner action N=9",
+    "degree-six partner exact degree N=9",
+    "generic endpoint P values match",
+    "generic endpoint Q values match",
+    "endpoint variation boundary vanishes",
+    "universal integration-by-parts variation identity",
+    "constant nonzero Jacobian gives affine action slope",
+    "affine Keller control has nonzero endpoint boundary",
+    "affine Keller control obeys full variation identity",
+    "affine Keller control fails exact nodal endpoint hypothesis",
+    "universal double-root cubic normalizes by affine scaling",
+    "source normalized cubic critical X derivative at 0",
+    "source normalized cubic critical Y derivative at 0",
+    "source normalized cubic distinct critical value at 0",
+    "source normalized cubic critical point is a node at 0",
+    "source normalized cubic critical X derivative at -2/3",
+    "source normalized cubic critical Y derivative at -2/3",
+    "source normalized cubic distinct critical value at -2/3",
+    "source normalized cubic critical point is a node at -2/3",
+    "two-node polynomial immersion has zero action",
+    "two-node negative control is immersed",
+    "zero-action control has index degree two instead of one",
+    "zero-action control has an extra node",
+    "pinned primary PDF hash neumann-1989-plane-curves-links-infinity.pdf",
+    "pinned primary PDF hash neumann-rudolph-1988-unfoldings-corrigendum.pdf",
+    "source audit does not claim symbolic proof of classification"
+  ],
+  "target_automorphism_controls": [
+    {
+      "jacobian": "1",
+      "p_degree": 6,
+      "q_degree": 3
+    },
+    {
+      "jacobian": "1",
+      "p_degree": 2,
+      "q_degree": 8
+    },
+    {
+      "jacobian": "-1",
+      "p_degree": 3,
+      "q_degree": 3
+    },
+    {
+      "jacobian": "-1",
+      "p_degree": 3,
+      "q_degree": 2
+    },
+    {
+      "jacobian": "1",
+      "p_degree": 6,
+      "q_degree": 18
+    }
+  ],
+  "degree_six_unbounded_partner_controls": [
+    {
+      "p_degree": 6,
+      "q_degree": 6,
+      "action": "8/15"
+    },
+    {
+      "p_degree": 6,
+      "q_degree": 12,
+      "action": "8/15"
+    },
+    {
+      "p_degree": 6,
+      "q_degree": 30,
+      "action": "8/15"
+    },
+    {
+      "p_degree": 6,
+      "q_degree": 54,
+      "action": "8/15"
+    }
+  ],
+  "source_sha256": {
+    "neumann-1989-plane-curves-links-infinity.pdf": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
+    "neumann-rudolph-1988-unfoldings-corrigendum.pdf": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9"
+  },
+  "source_audit_sha256": "20c7e2f9601e5c64bd67bd948e367946a0a1235e07259f36d8f135318f524fb4",
+  "proof_sha256": "49eefd35076edd3b53c1029b46e6d2714adc895aa8617bf0ddd49aa76877e307",
+  "checker_sha256": "97cf63e7343c0ac0fc24e3d695ef7849f5c214faba5fa2b5c9b649927baca7b6",
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 0.403,
+  "scope": {
+    "unrestricted_nodal_action_uses_audited_primary_classification": true,
+    "degree_two_keller_conductor_excluded_by_written_argument": true,
+    "unrestricted_classification_proved_by_finite_controls": false,
+    "primary_source_critical_value_slip_repaired": true,
+    "automatic_trace_integrality_or_JC2_proved": false,
+    "independent_replay": false,
+    "independent_mathematical_review": false,
+    "formal_verification": false,
+    "external_review": false
+  }
+}

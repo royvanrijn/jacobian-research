@@ -143,7 +143,7 @@
       "file": "sources/long-eit-iv-92db79e.tex",
       "url": "https://raw.githubusercontent.com/long-mathematics/exponential-integral-theorem/92db79eedeb064694ff20e9201d73fc2bc0857f4/papers/04-relative-exponential-nori-ayoub/relative-exponential-nori-ayoub.tex",
       "sha256": "82bca80220ecf54a5f10f90951430cf6d14ae4df386a39a946985f719797ea55",
-      "review": "Actual constant-period field, generic relative functional main theorem and explicit numerical-specialization limitation read. Long realization/rank-one saturation chain not fully validated."
+      "review": "Actual constant base, exact general theorem scopes, categorical/elementary and numerical boundaries read. Conditional downstream Galois/PV/torsor chain traced; general arithmetic enhancement and Fourier/rank-one interfaces not validated. Complete fixed-denominator Gamma functional kernel directly re-proved over the actual Gamma constant field."
     },
     {
       "file": "sources/long-eit-simplex-candidate-92db79e.tex",
@@ -494,18 +494,25 @@
         "factorial/image-rigidity/arithmetic_frontier_quintic_boundary_profiles.json": "6b30c55de2c9df70885e77a8137e33b35b173c30b226f7b6f3233c8d8f93b838"
       },
       "all_terminal_quintic_SFC": false,
-      "open_region": "v5(u)>3/5, u=1/t; support{2,5}, N>=11,N2mod9 remains open",
+      "open_region": "v5(u)>3/5, u=1/t; support{2,5}, N>=11,N11mod27 remains open",
       "finite_prefix_extrapolation": false,
       "boundary_profiles_exhaust_all_integer_indices": true,
       "verification": "The quintic five-adic radius proof was audited internally: all fifteen generating-function flags, the two further flags, the all-index Bessel-period/unit-argument argument, strict annular wedge dominance, and the complete boundary reduction were checked. Boundary coverage is a proved reduction to the 25 states (m mod5, floor(m/5) mod5), using the factorial-block congruence, vanishing for k>=5, and only four series coefficients. The current matching receipt checks all 25 literal Bezout identities, 25 separately reconstructed actual auxiliary profiles, 1165 factorial-block controls and corruption rejection. These finite identities exhaust the boundary cases by the written reduction; no finite-prefix extrapolation is used. The default replay, all input pins and two-pass 21-page LaTeX build passed internally. No independent replay, external review, formal verification, novelty or all-terminal quintic SFC is claimed.",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "novelty_claim": false
+      "novelty_claim": false,
+      "current_quintic_terminal_domain": "N>=11,N11mod27",
+      "current_refinement_source": {
+        "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
+        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "locator": "cor:degree-five-ray",
+        "role": "context"
+      }
     },
     "eit_compact_linear_and_polynomial_kz_reproduction": {
       "canonical_source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
-      "source_sha256": "f296a4c3057eb9cb5b8d0c6541466b34e259270229e677876358f21089856c19",
+      "source_sha256": "93496b46a7bec01f688b76c1c0bcd1cf1372caebd03dde524d432aae56e7a353",
       "main_claims": [
         "EXT-EIT-II-LINEAR-KZ",
         "EXT-EIT-III-POLYNOMIAL-KZ"
@@ -534,7 +541,7 @@
         "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-THM-QUINTIC-FIVE-ADIC-INNER-ENDPOINT"
       ],
       "scope": "For every integer n>=8, put T_n(t)=sum_(k=0)^n binom(n,k)(2n+1)_(3k)t^k. If T_n and T_(n+1) have a common root t over Q5bar and u=1/t satisfies v5(u)=1, then either u/5=2 mod25 and n=3 mod5, or u/5=9 mod25 and n=1 mod5. Congruence in an algebraic extension means a difference of valuation at least the indicated power. Thus the whole annulus v5(u)=1 is excluded uniformly for n>=8,n=0,2,4 mod5. The other inner valuations and the two surviving index classes remain open.",
-      "remaining_ray_necessary_constraint": "At the specific inner annulus v5(1/t)=1, set n=N-1. The proved endpoint condition requires either (1/t)/5=2 mod25,N=4 mod5, or (1/t)/5=9 mod25,N=2 mod5. Thus this annulus is excluded for N=0,1,3 mod5. The progression N>=11,N=2 mod9 and the remaining inner regions are still open.",
+      "remaining_ray_necessary_constraint": "At the specific inner annulus v5(1/t)=1, set n=N-1. The proved endpoint condition requires either (1/t)/5=2 mod25,N=4 mod5, or (1/t)/5=9 mod25,N=2 mod5. Thus this annulus is excluded for N=0,1,3 mod5. The progression N>=11,N=11mod27 and the remaining inner regions are still open.",
       "mechanism": "Exact finite reversed factorial coefficients; cancellation of all denominator multiples of5; a uniform linear tail bound; the13-term table modulo125; two simple residual root disks; a divided consecutive difference.",
       "retained_evidence": [
         "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
@@ -553,7 +560,14 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "novelty_claim": false
+      "novelty_claim": false,
+      "current_quintic_terminal_domain": "N>=11,N11mod27",
+      "current_refinement_source": {
+        "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
+        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "locator": "cor:degree-five-ray",
+        "role": "context"
+      }
     },
     "quintic_five_adic_descent": {
       "canonical_source": "factorial/image-rigidity/QUINTIC_FIVE_ADIC_DESCENT.tex",
@@ -582,7 +596,382 @@
       "independent_replay": false,
       "external_review": false,
       "formal_verification": false,
-      "all_terminal_quintic_SFC": false
+      "all_terminal_quintic_SFC": false,
+      "current_quintic_terminal_domain": "N>=11,N11mod27",
+      "current_refinement_source": {
+        "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
+        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "locator": "cor:degree-five-ray",
+        "role": "context"
+      }
+    },
+    "binomial_irreducibility_reductions": {
+      "canonical_source": "factorial/image-rigidity/BINOMIAL_IRREDUCIBILITY_REDUCTION.tex",
+      "source_sha256": {
+        "factorial/image-rigidity/BINOMIAL_IRREDUCIBILITY_REDUCTION.tex": "afce9d0417d60bc9db6da2925cc1b791ad35a734639727acb9dad4c867a328ac",
+        "factorial/image-rigidity/binomial_irreducibility_reduction.py": "512e8eccdb786bf415929f6d67588a8167182a139f88850066970c5198cf7f07",
+        "factorial/image-rigidity/binomial_irreducibility_reduction_verification.json": "40e619e1b5f0638273a8d0219fe86d26926692f490744e98383886f84fb7560e"
+      },
+      "exact_claims": [
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-THM-NONDIVISIBILITY",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-IRREDUCIBLE-PAIR",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-THM-FACTOR-DEGREES",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-PRIME-POWER-ORDER",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-ORDINARY-ORDERS",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-ADJACENT-PARTS",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-THM-GENERIC-SHAPE",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-TRANSCENDENTAL-SHAPE",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-QUINTIC"
+      ],
+      "scope": "All-positive-real-Gamma nondivisibility; ordinary no-carry factor-degree/prime-power-index/adjacent-parts criteria; generic and transcendental Gamma-shape irreducibility/coprimality. Ordinary all-index remains open.",
+      "open_sufficient_route": "GAP-BINOMIAL-IRREDUCIBLE-MEMBER-EACH-PAIR",
+      "falsified_specialization_shortcut": "FACT-BINOMIAL-GENERIC-IRREDUCIBILITY-ALL-POSITIVE-SPECIALIZATIONS",
+      "replay": "Current exact default replay passed with literal coefficients and meaningful failed-hypothesis controls. Contextual internal proof audits checked convexity, no-carry floors, factor-degree and generic-field arguments.",
+      "all_ordinary_binomial_SFC": false,
+      "all_positive_algebraic_Gamma_shapes": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false
+    },
+    "eit_iv_gamma_kernel_and_scoped_interfaces": {
+      "canonical_source": "factorial/image-rigidity/EIT_KONTSEVICH_ZAGIER_AUDIT.md",
+      "source_sha256": "93496b46a7bec01f688b76c1c0bcd1cf1372caebd03dde524d432aae56e7a353",
+      "primary_source": "factorial/image-rigidity/sources/long-eit-iv-92db79e.tex",
+      "primary_sha256": "82bca80220ecf54a5f10f90951430cf6d14ae4df386a39a946985f719797ea55",
+      "directly_proved_components": [
+        "FACT-EIT-IV-COMPLETE-GAMMA-FUNCTIONAL-KERNEL"
+      ],
+      "unvalidated_general_IV_inputs": [
+        "EXT-EIT-IV-ALGEBRAIC-REALIZATION",
+        "EXT-EIT-IV-ALGEBRAIC-FIXED-PART",
+        "EXT-EIT-IV-GLOBAL-RANK-ONE-SATURATION",
+        "EXT-EIT-IV-FUNCTIONAL-COMPARISON"
+      ],
+      "application_obligations": [
+        "GAP-EIT-IV-ELEMENTARY-PRESENTATION-COMPARISON",
+        "GAP-EIT-IV-APPLICATION-NUMERICAL-SPECIALIZATION"
+      ],
+      "review": "Direct all-N Gamma kernel proof by cyclic basis and polynomial elimination; generic IV chain only conditionally traced. II–III scoped reproduction independently challenged by a contextual internal agent audit; no new issue found. Actual directional comparison, Picard-1-motive rank-one lifting and multiderivation integrable-PV hypotheses remain review obligations.",
+      "ordinary_KZ_solved": false,
+      "IV_complete_proof_audit": false,
+      "Gamma_constant_independence": false,
+      "unrestricted_FC": false,
+      "unrestricted_SFC": false,
+      "external_review": false,
+      "formal_verification": false
+    },
+    "binomial_residual_arithmetic": {
+      "canonical_source": "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex",
+      "source_sha256": {
+        "factorial/image-rigidity/BINOMIAL_RESIDUAL_LIFTING.tex": "514a0c25706d3167a4c2fc2aefc61b14a173de5246b5d7a098fdfed49b319e4c",
+        "factorial/image-rigidity/binomial_residual_lifting.py": "4a3fe2ee754744c981f0a969d82592ea037a5cc8af92a6e912fc1b58e8d36ac6",
+        "factorial/image-rigidity/binomial_residual_lifting_n64_certificate.json": "39ac10bb7e71b8874dfcdd3db60fd84beafe9cbf96eccebad4a943fda8bf57b3",
+        "factorial/image-rigidity/binomial_residual_lifting_verification.json": "93a4a30196bdc9551c001a034ff126de25a93526c8102214cbbb96d42769f5b6"
+      },
+      "exact_claims": [
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-LEM-REAL-ROOT-PARITY",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-THM-RESIDUAL-INDEX",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-COR-PARITY-RESIDUAL",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-COR-RESIDUAL-ADJACENT-PAIRS",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-COR-QUINTIC-RESIDUAL-FAMILIES",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-LEM-QUINTIC-WEIGHTED-NEWTON-PRODUCT",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-LEM-QUINTIC-EVEN-COMMON-DEGREE",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-THM-QUINTIC-ALL-PRIME-DEGREE",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-PROP-QUINTIC-NO-CARRY-COVERAGE-FAILURE",
+        "FACT-BINOMIAL-RESIDUAL-ARITHMETIC-COR-QUINTIC-N64-TWO-PRIME"
+      ],
+      "literal_Newton_input": "INPUT-BINOMIAL-RESIDUAL-N64-NEWTON-CERTIFICATE",
+      "scope": "For every positive real Gamma shape, even normalized binomial moments are positive on the real axis, odd moments have positive derivative and one simple real root, and real consecutive common factors have even degree. For ordinary moments at n=b*p^r, the exact condition (ab modp)+db<p gives the residual P_(b,a,d,1)((-1)^sY), s=d(p^r-1)/(p-1); factor degrees/p^r are bounded subset-sums of residual irreducible-factor degrees. For odd p and even b, parity proves rational irreducibility when the residual is irreducible or has exactly two odd-degree irreducible factors, counting multiplicity; b=2 always qualifies. Five explicit quintic families (b,p)=(3,31),(3,37),(4,23),(4,29),(6,31) hold for every r>=1. Independently, for a=2,d=3,beta=1, the exact all-prime Newton-width criterion constrains every common-factor degree without a no-carry hypothesis. The infinite family n=2^(12s+6), n+1, s>=0, has no eligible no-carry part; its first pair 64/65 is nevertheless excluded by a complete two-prime certificate. No all-index emptiness or quintic closure is proved.",
+      "falsified_coverage_shortcut": "FACT-QUINTIC-UNIVERSAL-NO-CARRY-PAIR-COVERAGE",
+      "open_all_prime_emptiness_route": "GAP-QUINTIC-ALL-PRIME-DEGREE-EMPTINESS",
+      "indispensable_prior_proof": {
+        "node": "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-THM-NONDIVISIBILITY",
+        "path": "factorial/image-rigidity/BINOMIAL_IRREDUCIBILITY_REDUCTION.tex",
+        "sha256": "afce9d0417d60bc9db6da2925cc1b791ad35a734639727acb9dad4c867a328ac",
+        "locator": "thm:nondivisibility, used only for the general adjacent-pair corollary"
+      },
+      "verification": "The written residual, parity, weighted-Gauss, prime-cutoff and infinite coverage-failure arguments were audited internally. The current full checker passed 3371 exact controls: 1589 residual/parity/example controls and 1782 complete Newton-certificate controls, including 262 direct factorial/Legendre valuations, four complete edge tables, all supporting lines and corrupted-input rejection. Forty positive rational-Gamma Sturm profiles control the parity implementation. All four current receipt input hashes match, and the two-pass LaTeX build is clean. Unbounded quantifiers come from the written proofs; the finite certificates are complete only for their stated inputs. No independent whole-proof replay, formal verification, external review, priority or all-terminal quintic closure is claimed.",
+      "all_terminal_quintic_SFC": false,
+      "finite_prefix_extrapolation": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "current_quintic_terminal_domain": "N>=11,N11mod27",
+      "current_refinement_source": {
+        "path": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
+        "sha256": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "locator": "cor:degree-five-ray",
+        "role": "context"
+      }
+    },
+    "prime_power_marked_radial_sfc": {
+      "canonical_source": "factorial/image-rigidity/PRIME_POWER_MARKED_RADIAL_SFC.tex",
+      "source_sha256": {
+        "factorial/image-rigidity/PRIME_POWER_MARKED_RADIAL_SFC.tex": "fd3c7c7f29ce45b106979c4cf0d8805c0e961d9c80b308eaf512b7c51b3265c7"
+      },
+      "checker": null,
+      "proof_type": "written_exact_finite_order_identity",
+      "positive_claims": [
+        "FACT-PRIME-POWER-MARKED-RADIAL-SFC-LEM-RADIAL-TILT",
+        "FACT-PRIME-POWER-MARKED-RADIAL-SFC-THM-MARKED-GAMMA",
+        "FACT-PRIME-POWER-MARKED-RADIAL-SFC-COR-FACTORIAL-RADIAL",
+        "FACT-PRIME-POWER-MARKED-RADIAL-SFC-COR-GAUSSIAN-RADIAL"
+      ],
+      "marker_boundary_claim": "FACT-PRIME-POWER-MARKED-RADIAL-SFC-PROP-MARKER-BOUNDARY",
+      "falsified_universal_marker_extension": "FACT-MARKED-RADIAL-UNIVERSAL-POLYNOMIAL-MARKER-EXTENSION",
+      "scope": "For every prime p, positive integer s, positive-dimensional product of independent Gamma(alpha_i,1) variables with all alpha_i>0 and rational p-integral total b=sum alpha_i, every nonzero phase F=S(A+B*S^(p^s)), S=sum Y_i, and every fixed monomial marker Y^nu has a nonzero moment in every pair of consecutive positive orders. The exact prefactor is product (alpha_i)_(nu_i), and the effective shape is b+|nu|; individual alpha_i need not be rational or p-integral. For ordinary factorial variables, the shape is r+|nu| and the prefactor product nu_i!, in every dimension r>=1. For independent standard variance-one Gaussians, S=sum Z_i^2/2, even marker Z^(2nu) has shape n/2+|nu| and prefactor product (2nu_i-1)!!, with(-1)!!=1. The positive two-moment conclusion holds in every dimension for odd p, and in even dimension for p=2. Odd-coordinate monomial Gaussian markers instead have identically zero sequences. A,B are arbitrary complex and not both zero; a one-coefficient degenerate phase has all positive moments nonzero for the stated admissible monomial markers. Markers are fixed external multipliers, not factors raised with the phase. No arbitrary polynomial-marker extension or unrestricted multivariate FC/SFC is asserted.",
+      "indispensable_arithmetic_input": {
+        "node": "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-COR-PRIME-GAP-LOWER-ONE",
+        "path": "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+        "sha256": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "locator": "cor:prime-gap-lower-one; cor:prime-power-lower-one"
+      },
+      "context_only_not_proof_premises": [
+        {
+          "path": "factorial/image-rigidity/STATUS_AND_LITERATURE.tex",
+          "sha256": "51a930bb76881a9896023b8e406fdc087e79cde7b0cf89ef96d845705907503b",
+          "locator": "Equation(5), Gamma/Dirichlet radial separation; context only",
+          "role": "context"
+        },
+        {
+          "path": "factorial/image-rigidity/COUPLED_BLOCK_PERIODS.tex",
+          "sha256": "2afe7e7e57b1cb9fab7e0a84ff84105a770694e8298f6e29877214eeeb77c7b4",
+          "locator": "thm:block and Gaussian averaging discussion; context only",
+          "role": "context",
+          "node": "FACT-COUPLED-BLOCK-PERIODS-THM-BLOCK"
+        }
+      ],
+      "verification": "Complete finite-order identity and reduction proofs inspected internally. The product-Gamma tilt follows from the exact multinomial rising-factorial identity; Gaussian normalization uses Zi^2/2 of shape1/2. The all-index assertion is imported only at the exact retained prime-power lower-one Gamma corollary, including positive orders1/2 and all nonzero monomial degenerates. No checker is required or claimed for these written identities. The arbitrary polynomial-marker counterexample is recorded separately and is not a premise of the positive bridge. No independent replay, external review, formal verification, priority or novelty claim; all general FC/SFC goals remain open.",
+      "no_fixed_shape_claim_after_marker_is_multiplied_into_phase": true,
+      "unrestricted_multivariate_FC": false,
+      "unrestricted_multivariate_SFC": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "algebraic_gamma_prime_power_domains": {
+      "canonical_source": "factorial/image-rigidity/ALGEBRAIC_GAMMA_PRIME_POWER_DOMAINS.tex",
+      "source_sha256": {
+        "factorial/image-rigidity/ALGEBRAIC_GAMMA_PRIME_POWER_DOMAINS.tex": "147f6c556c290b4921278090ec04a3a4fe079debd46395afeebc594596640343",
+        "factorial/image-rigidity/algebraic_gamma_prime_power_domains.py": "3f49afab568900eea74176be854217e635517a1588f8d7aa168d6dda82cd5bd5",
+        "factorial/image-rigidity/algebraic_gamma_prime_power_domains_verification.json": "0bed7535da36fdf899677c81daa1f15c2b3757d0bc639d61c381bb670bc1428f",
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/PRIME_POWER_MARKED_RADIAL_SFC.tex": "fd3c7c7f29ce45b106979c4cf0d8805c0e961d9c80b308eaf512b7c51b3265c7",
+        "factorial/image-rigidity/BINOMIAL_IRREDUCIBILITY_REDUCTION.tex": "afce9d0417d60bc9db6da2925cc1b791ad35a734639727acb9dad4c867a328ac"
+      },
+      "exact_claims": [
+        "FACT-ALGEBRAIC-GAMMA-PRIME-POWER-DOMAINS-LEM-LOCAL-DOMAINS",
+        "FACT-ALGEBRAIC-GAMMA-PRIME-POWER-DOMAINS-THM-ALGEBRAIC-LOWER-ONE",
+        "FACT-ALGEBRAIC-GAMMA-PRIME-POWER-DOMAINS-COR-ALGEBRAIC-MARKED-RADIAL",
+        "FACT-ALGEBRAIC-GAMMA-PRIME-POWER-DOMAINS-PROP-RESIDUE-EXTENSION-OBSTRUCTION",
+        "FACTORIAL-PRIME-GAP-ALGEBRAIC-SHAPES",
+        "FACTORIAL-PRIME-GAP-EXCEPTION-LOCUS"
+      ],
+      "indispensable_inputs": [
+        "INPUT-ALGEBRAIC-GAMMA-PRIME-GAP-COEFFICIENT-CONGRUENCE",
+        "INPUT-ALGEBRAIC-GAMMA-PRIME-POWER-CLOSED-DISK-PROOF",
+        "INPUT-ALGEBRAIC-GAMMA-EXACT-MONOMIAL-RADIAL-TILT",
+        "FACT-BINOMIAL-IRREDUCIBILITY-REDUCTION-COR-TRANSCENDENTAL-SHAPE"
+      ],
+      "scope": "For every prime p and all n>=1, the coefficientwise congruence D_(n,p)(X)=(-1)^binom(n,2) modp makes D a unit at EVERY integral Cp parameter, with arbitrary residue field. For proper prime powers q=p^s,s>=2, the retained proof gives exact valuation v_p D_(n,q)(gamma)=((p^s-1)/(p-1)-s)binom(n,2) on the whole closed disk union gamma inZp+p^s O_Cp, including algebraic and nondiscretely valued extension points. Every positive algebraic Gamma shape beta having one embedding in the appropriate domain gives all-index two-moment noncollision for X(A+B X^q), with arbitrary complex A,B not both zero. The exact fixed-monomial radial bridge extends to arbitrary positive individual shapes whose TOTAL is positive algebraic with such an embedding; individual shapes need not be algebraic. An explicit q4,n2 integral quadratic parameter with F4 residue makes T=(1-45t)^2, disproving the extension to all integral proper-prime-power parameters. That shape is nonreal and does not refute positive-Gamma SFC. All positive algebraic shapes are not classified.",
+      "falsified_larger_domain": "FACT-ALGEBRAIC-GAMMA-ALL-INTEGRAL-PRIME-POWER-EXTENSION",
+      "marked_radial_strengthening": "Positive algebraic TOTAL shape in the exact local domain, same fixed external monomial in both entries; arbitrary positive individual shapes.",
+      "verification": "The coefficientwise rather than pointwise congruence, full closed-disk proof over Cp, convergence radius, fractional valuations, actual-coefficient primitive normalizer, field embeddings and integer-shift stability were audited internally against the retained arithmetic proof. The Gamma marked bridge uses the same fixed external marker in both entries. The canonical checker passed 16 exact controls, including the literal quadratic residue-extension perfect square and discriminant, finite-field residue checks and bounded degree-two prime congruence controls. Its four current input pins match; it also ran from a different working directory. The written proof supplies the unbounded quantifiers. No independent whole-proof replay, formal verification, external review, novelty, priority or unrestricted FC/SFC claim is made.",
+      "all_integral_proper_prime_power_extension": false,
+      "all_positive_algebraic_Gamma_shapes": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "explicit_prime_gap_claim": "FACTORIAL-PRIME-GAP-ALGEBRAIC-SHAPES",
+      "necessary_exception_locus": "FACTORIAL-PRIME-GAP-EXCEPTION-LOCUS",
+      "necessary_locus_is_sufficient_for_failure": false,
+      "prime_gap_minimal_polynomial_test": "primitive irreducible g_beta modp is a nonzero constant iff all p-adic conjugates have negative valuation",
+      "prime_gap_verification": "Exact prime-gap specialization and exception implication checked internally. At one integral p-adic embedding the polynomial determinant congruence evaluates to a unit; the algebraic discriminant then cannot vanish. Integer terminal shifts preserve that place's integrality. Combining this with the retained transcendental shape theorem gives the necessary exception locus. The primitive-minimal-polynomial test follows by reciprocal-root Vieta formulas, with no converse claim of failure. No formal verification, independent replay, external review or novelty is asserted."
+    },
+    "quintic_three_adic_parity_reduction": {
+      "canonical_source": "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex",
+      "checker": "factorial/image-rigidity/quintic_three_adic_parity_reduction.py",
+      "receipt": "factorial/image-rigidity/quintic_three_adic_parity_reduction_verification.json",
+      "source_sha256": {
+        "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "factorial/image-rigidity/quintic_three_adic_parity_reduction.py": "49efd55890be657006f13458ff1af1ce6e2c6620331df2960fc19e2afb1dda7f",
+        "factorial/image-rigidity/quintic_three_adic_parity_reduction_verification.json": "7be10448f1e0d96bfca6629679f1cf1ee647bff8dab041b993b9c5e457c1f9a0",
+        "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45"
+      },
+      "scope": "For ordinary support{2,5}, P_n(t)=sum binom(n,k)(2n+1)_(3k)t^k, the consecutive pair is coprime for every integer n>=1,n not10mod27, equivalently terminal N>=2,N not11mod27. Exact mixed-adjoint balance forces common roots to have v3(t)=1-v3(5n+4), with a specified maximal-ideal residue. When v3(5n+4)=2 the lower Newton cluster has one root and real parity forbids a rational common factor. All ordinary degree<=5 binomial SFC reduces exactly to N>=11,N11mod27, still open. For n=2^(12s+6) the pair is excluded for s1,2mod3. The retained physical three-adic common indices tau_star,m_star=1+27tau_star are not nonnegative ordinary integers. No irrationality, transcendence or negative-integer exclusion is asserted. Five-adic index questions and unrestricted FC/SFC remain open.",
+      "exact_claims": {
+        "lem:mixed-input": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-MIXED-INPUT",
+        "lem:balance": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-BALANCE",
+        "lem:one-root": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-ONE-ROOT",
+        "thm:new-ray": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-THM-NEW-RAY",
+        "cor:degree-five-ray": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-COR-DEGREE-FIVE-RAY",
+        "cor:sparse-family": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-COR-SPARSE-FAMILY",
+        "cor:interpolated-index": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-COR-INTERPOLATED-INDEX"
+      },
+      "replay_controls": {
+        "complete_symbolic_Ore_remainder_coefficients": 4,
+        "complete_symbolic_gauge_stripped_column_identities": 2,
+        "complete_F3_gamma_and_positive_power_parity_cases": 6,
+        "complete_F3_eta_rank_cases": 18,
+        "literal_coefficient_valuation_and_block_identities": 107,
+        "literal_gcd_controls_in_proved_congruence_classes": 4,
+        "full_sparse_family_exponent_period_cases": 3,
+        "outside_width_one_balance_hypothesis_control": 1
+      },
+      "indispensable_prior_proof_nodes": [
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAP-THREE-OFFSET-TWO-RANK",
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-GAP-THREE-LOWER-TWO-EIGHT-NINTHS",
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-ORDINARY-QUINTIC-RAY-REDUCTION",
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-P3-INDEX-INTERPOLATION-OBSTRUCTION"
+      ],
+      "current_terminal_ray": "FACTORIAL-QUINTIC-SUPPORT-TWO-FIVE-RESIDUE-RAY",
+      "current_terminal_domain": "N>=11,N11mod27",
+      "all_prime_emptiness_domain": "n>=10,n10mod27",
+      "guarded_outgoing_ray_routes": [
+        "FACTORIAL-DEGREE-FIVE-FROM-REMAINING-QUINTIC-RAY"
+      ],
+      "mandatory_new_complement_premise": "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-COR-DEGREE-FIVE-RAY",
+      "interpolation_consequence": "The new cor:interpolated-index proves neither tau_star nor m_star=1+27tau_star of the physical three-adic interpolation is a NONNEGATIVE ordinary integer, using exact finite-series termination and the ordinary parity theorem. No irrationality, transcendence or negative-integer exclusion is claimed. The separate five-adic analytic-index questions remain open.",
+      "old_eight_ninths_claims_preserved": true,
+      "broad_no_carry_counterfamily_preserved": true,
+      "verification": "Complete written balance, width-one Newton and real-parity proof audited internally; exact mixed-adjoint equivalence and three-adic transfer use the pinned lower-exponent source. Replay checks4 symbolic Ore coefficients,2 gauge-stripped identities,6 reduced gamma/parity states,18 eta-rank states,107 literal coefficient/block identities,4 bounded gcd controls,3 exponent-period states and1 outside-hypothesis control. These145 controls support formulas; all-index quantifiers have written proofs. Seven exact declarations mapped. No independent whole-proof replay, formal verification, external review, novelty or priority. Full quintic and unrestricted FC/SFC remain open.",
+      "all_terminal_quintic_SFC": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "gamma_convolution_appell_obstruction": {
+      "canonical_source": "factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex",
+      "checker": "factorial/image-rigidity/gamma_convolution_appell_obstruction.py",
+      "receipt": "factorial/image-rigidity/gamma_convolution_appell_obstruction_verification.json",
+      "source_sha256": {
+        "factorial/image-rigidity/GAMMA_CONVOLUTION_APPELL_OBSTRUCTION.tex": "672dd8c896c0cda82227209cb11a05b313cbd710c41d3c4be4c98119c5929790",
+        "factorial/image-rigidity/gamma_convolution_appell_obstruction.py": "b10adc5b10096b35db87823597e2b95cb57d91890a02d21fd9ec04cfe73d1708",
+        "factorial/image-rigidity/gamma_convolution_appell_obstruction_verification.json": "51f0d277ac63852f36efad1aecac38939afb82a7a5bcc03d39cec69942821d08"
+      },
+      "scope": "Starting from the retained exact two-Gamma example in lower_exponent_initial_and_boundary.tex thm:gamma-convolution-obstruction, construct a countable positive Gamma convolution Y whose ordinary moment Hankel matrix and normalized-cumulant Hankel matrix (kappa_(i+j+1)/(i+j)!) are BOTH strictly totally positive at every order, but A4,A5 for A_n(u)=E[(u+Y)^n] share the nonreal quadratic (u+E[Y])^2-(u+E[Y])+19. The retained finite parameters are shapes (125/9,1/3249), scales(1/2,19/2), mean132/19 and cumulants2..5=(7/2,4,81/4,582). An explicit positive two-atom compensation preserves these four cumulants after adding infinitely many positive atoms. The resulting Gamma sum is almost surely finite and has a moment generating function near zero. The new conclusion is the strict-TP strengthening, not a new finite convolution counterexample. Neither construction is a single Gamma power. No physical-shape binomial, factorial SFC or general FC/SFC counterexample or closure follows.",
+      "exact_statement_nodes": {
+        "lem:hankel": "FACT-GAMMA-CONVOLUTION-APPELL-OBSTRUCTION-LEM-HANKEL",
+        "thm:finite-obstruction": "FACT-GAMMA-CONVOLUTION-APPELL-OBSTRUCTION-THM-FINITE-OBSTRUCTION",
+        "thm:strict-obstruction": "FACT-GAMMA-CONVOLUTION-APPELL-OBSTRUCTION-THM-STRICT-OBSTRUCTION",
+        "cor:scope": "FACT-GAMMA-CONVOLUTION-APPELL-OBSTRUCTION-COR-SCOPE"
+      },
+      "falsified_generic_shortcuts": [
+        "FACT-APPELL-NORMALIZED-CUMULANT-HANKEL-TN-COPRIMALITY-SHORTCUT"
+      ],
+      "context_only_not_proof_premises": [
+        {
+          "path": "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+          "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+          "locator": "thm:formal-cumulant-fraction; cor:cumulant-hankel; context only",
+          "role": "context",
+          "nodes": [
+            "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-FORMAL-CUMULANT-FRACTION",
+            "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-COR-CUMULANT-HANKEL"
+          ]
+        },
+        {
+          "path": "factorial/image-rigidity/BINOMIAL_SHAPE_RESULTANT.tex",
+          "sha256": "fad4ee9889d809ea672d18e29e1253d73ce9e50bbed5eaa6c397b91272c9b4ae",
+          "locator": "cor:positive-target; thm:nonnegative; cor:repeated-part; context only",
+          "role": "context",
+          "node": "BINOMIAL-SHAPE-RESULTANT"
+        }
+      ],
+      "controls": 37,
+      "verification": "The retained two-Gamma example is an exact indispensable prior input; its parameters and factorization are recalled rather than claimed new. The strict-TP extension has an internally audited written proof using explicit positive two-atom compensation, rational lower bounds, finite expectation for almost-sure convergence, a locally uniform logarithmic MGF for termwise cumulants, and generalized-Vandermonde integral minors. The matching37 exact controls verify recalled parameters/cumulants, factorizations/gcd/resultant, two independent raw-moment factorizations, a corrupted control and all displayed positivity bounds. These finite controls do not prove the all-order statements. Existing Gamma-specific formal cumulant results are context only, not premises or refuted theorems. No independent replay, formal verification, external review, novelty or priority is claimed. All general FC/SFC goals stay open.",
+      "indispensable_prior_input": {
+        "node": "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAMMA-CONVOLUTION-OBSTRUCTION",
+        "path": "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex",
+        "sha256": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+        "locator": "thm:gamma-convolution-obstruction"
+      },
+      "single_gamma_power_counterexample": false,
+      "physical_shape_progression_counterexample": false,
+      "factorial_sfc_counterexample": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
+    },
+    "quintic_scalar_minor_sfc": {
+      "canonical_source": "factorial/image-rigidity/QUINTIC_SCALAR_MINOR_SFC.tex",
+      "checker": "factorial/image-rigidity/quintic_scalar_minor_sfc.py",
+      "receipt": "factorial/image-rigidity/quintic_scalar_minor_sfc_verification.json",
+      "source_sha256": {
+        "factorial/image-rigidity/QUINTIC_SCALAR_MINOR_SFC.tex": "206853fd9aa54f4cfc04ef959135e879e40e914394f88d48e3e4af127b2d4150",
+        "factorial/image-rigidity/quintic_scalar_minor_sfc.py": "8147ca5eaa2b1687e36fc3c628a672398ecbc01d6a2a768aa1ce81e50ca5d8de",
+        "factorial/image-rigidity/quintic_scalar_minor_sfc_verification.json": "2543855244d175f8d985e1f5a98b82b2244c2f390eaa0e7936795e7a68e3f806"
+      },
+      "indispensable_import_sha256": {
+        "factorial/image-rigidity/QUINTIC_THREE_ADIC_PARITY_REDUCTION.tex": "97e54c56e407a6ab7866497bbe673eed73c017bbdd0971229f4f8f6912dfd1b5",
+        "factorial/image-rigidity/lower_exponent_initial_and_boundary.tex": "e66e02d0354de5cd92d33eef54efea15c387b9f6a0c1b62ed379295e13f07d45",
+        "factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "9721978bcb795af9169c695c5fb8348974069c5148e5e0caa8bd3c4d65650e07",
+        "factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+        "factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex": "ddb8155dcce6308db9d7fdcbc971898b9725e9ac23c83362d6c45a63f4177cc5"
+      },
+      "scope": "For every integer n>=1, P_n(t)=sum binom(n,k)(2n+1)_(3k)t^k and P_(n+1)(t) are coprime over Q and over C. Every nonzero complex X^2(A+B X^3), including degenerate monomials, therefore satisfies ordinary SFC at every consecutive positive pair. The exact retained classification gives all ordinary binomials of degree <=5. The degree <=6 assertion is equivalent to the three supports {2,6},{3,6},{4,6}, or (a,d)=(2,4),(3,3),(4,2), at every terminalN>=6. This is an equivalence, not closure of those unrestricted families. All ordinary higher-degree binomials, all positive real Gamma shapes, uniform H3 total nonnegativity and unrestricted FC/SFC are not proved here.",
+      "exact_claims": {
+        "lem:affine-injectivity": "FACT-QUINTIC-SCALAR-MINOR-SFC-LEM-AFFINE-INJECTIVITY",
+        "lem:real-field-descent": "FACT-QUINTIC-SCALAR-MINOR-SFC-LEM-REAL-FIELD-DESCENT",
+        "lem:mixed-input": "FACT-QUINTIC-SCALAR-MINOR-SFC-LEM-MIXED-INPUT",
+        "lem:balance": "FACT-QUINTIC-SCALAR-MINOR-SFC-LEM-BALANCE",
+        "lem:fixed-row-minor": "FACT-QUINTIC-SCALAR-MINOR-SFC-LEM-FIXED-ROW-MINOR",
+        "thm:ordinary-quintic-coprime": "FACT-QUINTIC-SCALAR-MINOR-SFC-THM-ORDINARY-QUINTIC-COPRIME",
+        "cor:quintic-sfc": "FACT-QUINTIC-SCALAR-MINOR-SFC-COR-QUINTIC-SFC",
+        "cor:degree-five-sfc": "FACT-QUINTIC-SCALAR-MINOR-SFC-COR-DEGREE-FIVE-SFC",
+        "cor:degree-six-frontier": "FACT-QUINTIC-SCALAR-MINOR-SFC-COR-DEGREE-SIX-FRONTIER"
+      },
+      "indispensable_import_nodes": [
+        "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-LEM-MIXED-INPUT",
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-GAP-THREE-OFFSET-TWO-RANK",
+        "FACT-QUINTIC-THREE-ADIC-PARITY-REDUCTION-COR-DEGREE-FIVE-RAY",
+        "FACT-ALL-UNIVARIATE-TWO-TERM-SFC-THM-ALL",
+        "FACT-ARITHMETIC-FRONTIER-TERMINAL-ORDERS-COR-PRIME-GAP-LOWER-ONE",
+        "FACT-UNIFORM-PADE-PARABOLA-SFC-THM-MAIN",
+        "FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH"
+      ],
+      "completed_objectives": [
+        "FACTORIAL-QUINTIC-SUPPORT-TWO-FIVE-RESIDUE-RAY",
+        "FACTORIAL-ORDINARY-DEGREE-FIVE-SFC"
+      ],
+      "open_degree_six_goal": "FACTORIAL-ORDINARY-DEGREE-SIX-SFC",
+      "open_degree_six_collective_family_gap": "GAP-ORDINARY-DEGREE-SIX-THREE-SUPPORT-FAMILIES",
+      "optional_stronger_questions": [
+        "GAP-QUINTIC-FROBENIUS-JOINT-RANK-DESCENT",
+        "GAP-QUINTIC-FIVE-ADIC-INDEX-DIOPHANTINE-SEPARATION",
+        "GAP-QUINTIC-ALL-PRIME-DEGREE-EMPTINESS"
+      ],
+      "old_residue_source_scopes_and_pins_preserved": true,
+      "replay_controls": {
+        "complete_reduced_gamma_and_positive_power_parity_cases": 6,
+        "complete_reduced_affine_minor_coefficients": 12,
+        "fixed_row_01_parity_sign_cases": 2,
+        "full_literal_minors": 8,
+        "literal_minor_coefficients_checked": 184,
+        "corrupted_linear_or_higher_coefficient_controls": 2
+      },
+      "verification": "The universal written proof uses the actual mixed-adjoint rank identity, reciprocal-root integrality, projective balance, an integer scalar minor with whole reduction c(1+X), integral-disk injectivity, all conjugates of an actual rational common factor, and even Gamma-moment positivity on R. The argument and degree-six classification imports were audited internally. Current internal replay checks six complete reduced gamma/power-parity states, twelve affine coefficients, two fixed-row signs, eight full literal minors with 184 coefficient checks, and two corrupted-coefficient rejection controls. Current receipt pins and a clean two-pass LaTeX build were checked internally. All-index quantifiers follow from the written proof, not these examples. No independent whole-proof replay, formal verification, external review, priority or novelty claim is made.",
+      "all_terminal_ordinary_quintic_SFC": true,
+      "ordinary_degree_at_most_five_SFC": true,
+      "degree_six_equivalence_only": true,
+      "degree_six_three_families_proved": false,
+      "all_ordinary_univariate_binomial_SFC": false,
+      "all_positive_Gamma_H3_TN": false,
+      "uniform_all_prime_degree_emptiness": false,
+      "finite_prefix_extrapolation": false,
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "novelty_claim": false,
+      "priority_claim": false
     }
   },
   "open_bridge_assessments": {

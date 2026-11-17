@@ -1,0 +1,85 @@
+{
+  "claim": "Every plane embedding of the exact one-node order A_0 is polynomially equivalent to Y^2=X^3+X^2.",
+  "inspected_date": "2026-11-17",
+  "inspection": "Internal primary-source reading and rendered-page inspection.",
+  "sources": [
+    {
+      "title": "Complex algebraic plane curves via their links at infinity",
+      "author": "Walter D. Neumann",
+      "journal": "Inventiones Mathematicae 98(3) (1989), 445-489",
+      "doi": "10.1007/BF01393832",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN356556735_0098/LOG_0028.pdf",
+      "local_pdf": "neumann-1989-plane-curves-links-infinity.pdf",
+      "sha256": "0c8a6c9090af7a24c4a030cc14285e2e6283a6db78c09ee5a9490d19fab68c66",
+      "inspected": [
+        {
+          "printed_pages": "445-446",
+          "pdf_zero_based_indices": [
+            1,
+            2
+          ],
+          "content": "Definitions of regularity at infinity and good polynomials; reduced knot fibre implies good."
+        },
+        {
+          "printed_pages": "482",
+          "pdf_zero_based_indices": [
+            38
+          ],
+          "rendered_page_inspected": true,
+          "content": "Section 8 low-genus classification uses algebraic automorphisms of the ambient plane; genus-one table is cubic Weierstrass."
+        },
+        {
+          "printed_pages": "483",
+          "pdf_zero_based_indices": [
+            39
+          ],
+          "rendered_page_inspected": true,
+          "content": "Last paragraph applies the table to a C-normalized curve with one node, yielding the standard nodal cubic."
+        }
+      ],
+      "applicability": [
+        "Spec(A_0) is reduced and irreducible.",
+        "Its finite normalization is A^1, with one point at infinity.",
+        "Its sole singularity is an ordinary node.",
+        "The singular fibre is not assumed regular; the good-polynomial lemma supplies regularity at infinity."
+      ],
+      "source_correction": "The last paragraph's assertion that c1*(X^3-Y^2+X^2)+c2 has only one singular fibre is false: the two values are c2 and c2+4*c1/27. The normal form of the given nodal fibre follows instead from its double-root cubic factorization."
+    },
+    {
+      "title": "Corrigendum: Unfoldings in Knot Theory",
+      "authors": [
+        "Walter Neumann",
+        "Lee Rudolph"
+      ],
+      "journal": "Mathematische Annalen 282(2) (1988), 349-351",
+      "doi": "10.1007/BF01456981",
+      "url": "https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0282/LOG_0040.pdf",
+      "local_pdf": "neumann-rudolph-1988-unfoldings-corrigendum.pdf",
+      "sha256": "7836b6f99387ddc74e785466ffd6630bfdae79ba931c5e33d5d7d8b74964bac9",
+      "inspected": [
+        {
+          "printed_pages": "349",
+          "pdf_zero_based_indices": [
+            1
+          ],
+          "rendered_page_inspected": true,
+          "content": "Corrected definition of good polynomial; corrected Lemma 7.1 applies to a reduced fibre with a knot at infinity."
+        },
+        {
+          "printed_pages": "351",
+          "pdf_zero_based_indices": [
+            3
+          ],
+          "rendered_page_inspected": true,
+          "content": "Proof of Lemma 7.1 uses Suzuki's connectedness at infinity, fibreability of the iterated torus knot, and corrected Theorem 6.1."
+        }
+      ]
+    }
+  ],
+  "excluded_import": "The conditional classification in Borodzik-Zoladek's later parametric-lines paper is not used.",
+  "source_pdf_hashes_checked_by_symbolic_checker": true,
+  "source_classification_proved_by_symbolic_checker": false,
+  "independent_mathematical_review": false,
+  "formal_verification": false,
+  "external_review": false
+}

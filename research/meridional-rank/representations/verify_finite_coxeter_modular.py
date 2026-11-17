@@ -151,9 +151,10 @@ def constant_only(seeds,crossings,plan,q):
 
 symmetric={n:symmetric_quandle(n) for n in (3,4,5)}
 inputs=json.loads((D/'seven_sheet_cover_inputs.json').read_text())
+cases=[c for c in inputs['cases'] if c['actions'][0]['expected_H1_F3_dimension']]
+cases+=json.loads((D/'a6_affine_inputs.json').read_text())['cases']
 rows=[];start=time.monotonic()
-for case in inputs['cases']:
- if not case['actions'][0]['expected_H1_F3_dimension']:continue
+for case in cases:
  seeds=case['seed_arcs'];crossings,plan=diagram(case['pd'],seeds)
  accepted=mod11_full=mod31_full=0
  symmetric_counts={n:constant_only(seeds,crossings,plan,q) for n,q in symmetric.items()}
@@ -172,7 +173,7 @@ for case in inputs['cases']:
  rows.append(row)
  print(row['name'],accepted,'no rank4 at11/31','seconds',round(time.monotonic()-start,2),flush=True)
 report={'status':'PASS','arithmetic':'Independent prime-field reflections/determinants at11(phi4),31(phi13). Root descriptor generation shared mathematical formula only. No producer arithmetic, parser or propagation trace imported.','normalization_first_root':first,'results':rows,'exact_zero_argument':'Both real embeddings of every scaled root have Euclidean norm2. Hadamard gives determinant embeddings abs≤16 and integer norm abs≤256. A determinant zero modulo primes above11 and31 has integer norm divisible341>256, forcing determinant0.','simple_root_positive_control':{'labels':simple_labels,'Coxeter_orders':orders,'root_line_orbit':60},'root_line_injectivity':True,'quandles_agree_at_both_primes':True,'invalid_phi_rejected':invalid_phi_rejected}
-assert len(rows)==24
-paths=['verify_finite_coxeter_modular.py','seven_sheet_cover_inputs.json']
+assert len(rows)==48
+paths=['verify_finite_coxeter_modular.py','seven_sheet_cover_inputs.json','a6_affine_inputs.json']
 report['input_sha256']={p:hashlib.sha256((D/p).read_bytes()).hexdigest() for p in paths}
 (D/'finite_coxeter_modular_verification.json').write_text(json.dumps(report,indent=2)+'\n')

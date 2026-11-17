@@ -14,13 +14,13 @@
 \begin{document}
 \maketitle
 
-The twenty-four sharp-four knots certified by seven-sheeted covers
-are outside the sufficient fishnet family in Blair--Kjuchukova--Pfaff,
+The forty-eight retained sharp-four knots in the seven-sheeted and
+A6 affine panels are outside the sufficient fishnet family in Blair--Kjuchukova--Pfaff,
 Proposition~1.4 \cite{bkp}.  The obstruction is an invariant of the
 knot, so it excludes every possible fishnet presentation satisfying
 that proposition.  Each such presentation would force the determinant
 to have at least three prime factors counted with multiplicity.
-The twenty-four determinants have at most two.
+The forty-eight determinants have at most two.
 
 The argument applies more generally to reflection quotients whose
 finite relation graph is a tree.  It does not exclude every fishnet
@@ -164,7 +164,7 @@ numbers, their sum is its number of crossings, and BBK identify
 $r$ with its knot's bridge number.
 \end{proof}
 
-All twenty-four determinants below are coprime to three, so any
+All forty-eight determinants below are coprime to three, so any
 twisted diagram for one of these bridge-four knots would have at
 least fifteen crossings.  This statement does not assume that a
 twisted diagram minimizes crossing number and does not exclude
@@ -194,18 +194,20 @@ If a knot belongs to the sufficient family of Proposition~1.4 of
 \[
                      \Omega(\det K)\ge b(K)-1.
 \]
-None of the twenty-four seven-sheet sharp-four knots belongs to
+None of the forty-eight retained sharp-four knots belongs to
 that family, irrespective of the diagram or parameter choices.
 \end{corollary}
 \begin{proof}
 The quotient just displayed and Theorem~\ref{thm:det} prove the
-inequality.  For any of the twenty-four knots the independently
+inequality.  For any of the forty-eight knots the independently
 certified bridge number is four.  Therefore any presentation
 satisfying Proposition~1.4 would have width eight and would force
 $\Omega(\det K)\ge3$.  The exact calculations below give at most two.
 \end{proof}
 
-The determinant values are grouped only to shorten the table; each
+The first table gives the earlier twenty-four seven-sheet cases;
+the second gives the additional twenty-four A6 affine cases.
+Determinant values are grouped only to shorten the tables; each
 literal PD is computed separately.
 \begin{center}
 \begin{tabular}{rlr}
@@ -227,6 +229,29 @@ $5\cdot17$ & $13n_{1013},13n_{1045}$ & 2\\
 \end{tabular}
 \end{center}
 
+
+The additional A6 cases have the following determinants.
+\begin{center}
+\begin{tabular}{rlr}
+\toprule
+$\det K$ & Knot names & $\Omega$\\
+\midrule
+$11\cdot41$ & $13a_{304},13a_{362}$ & 2\\
+449 & $13a_{623},13a_{629}$ & 1\\
+$13\cdot29$ & $13a_{3232},13a_{3259}$ & 2\\
+379 & $13a_{3374},13a_{3375}$ & 1\\
+$5\cdot31$ & $13n_{834},13n_{991}$ & 2\\
+229 & $13n_{838},13n_{992}$ & 1\\
+67 & $13n_{839},13n_{993}$ & 1\\
+$13^2$ & $13n_{1367},13n_{1374}$ & 2\\
+239 & $13n_{1370},13n_{1375}$ & 1\\
+41 & $13n_{1371},13n_{1376}$ & 1\\
+7 & $13n_{3814},13n_{3840}$ & 1\\
+29 & $13n_{3911},13n_{3914}$ & 1\\
+\bottomrule
+\end{tabular}
+\end{center}
+
 \section{The nonunit plat gcd criterion is excluded as well}
 
 For a $2n$-plat with braid $B$, let $R=\widehat\rho(B)$ be the
@@ -242,7 +267,7 @@ concern other conclusions and are not assumed here.
 
 \begin{corollary}\label{cor:plat}
 If a knot has a $2n$-plat for which $\alpha\ne1$, then
-$\Omega(\det K)\ge n-1$.  Consequently none of the twenty-four
+$\Omega(\det K)\ge n-1$.  Consequently none of the forty-eight
 knots satisfies the nonunit plat gcd criterion of
 \cite[Theorem~4.20]{moriah}, in any plat presentation.
 \end{corollary}
@@ -264,7 +289,7 @@ Thus $H_1(\Sigma_2K;\Z)$ has at least $n-1$ invariant factors
 divisible by $p$, so $p^{n-1}$ divides $\det K$ and
 $\Omega(\det K)\ge n-1$.
 
-For the twenty-four knots, the cited criterion would give
+For the forty-eight knots, the cited criterion would give
 $n=b(K)=4$, whereas the displayed determinants have
 $\Omega\le2$.  This is impossible.
 \end{proof}
@@ -278,7 +303,9 @@ generalized Montesinos, or of results not requiring that gcd.
 
 The standard-library checker \texttt{verify\_fishnet\_scope.py}
 reads the positive literal diagrams from the retained seven-sheet
-inputs.  It constructs the integral Fox relation matrix
+and A6 affine inputs. The new A6 named cases and bridge-four bounds
+are bound to \texttt{a6\_affine\_inputs.json} and its frozen
+\texttt{a6\_affine\_verification.json} receipt.  It constructs the integral Fox relation matrix
 $2x_{\rm over}-x_{\rm in}-x_{\rm out}=0$, fixes one arc colour,
 and computes all thirteen maximal minors by exact Bareiss
 elimination.  The greatest common divisor is the order of the
@@ -291,7 +318,7 @@ division and checks the tree and cyclic-graph controls above.
 These checks rely on the retained diagram identity and bridge-upper
 certificates for the named knots; they do not establish those
 bindings anew.  They establish the determinant obstruction for
-the supplied twenty-four knots, not an exhaustive Coxeter search.
+the supplied forty-eight knots, not an exhaustive Coxeter search.
 
 Remark~1.3 of \cite{bkp} says every link can be drawn as a loose
 fishnet.  Accordingly the conclusion is an exclusion from the

@@ -1,0 +1,54 @@
+{
+  "scope": "Exact local maxima and coefficient arithmetic; not a spectral or 3-adic proof",
+  "two_adic_factor": "(e+3)/(3*2^(e/5)), e>=1",
+  "two_adic_monotone_tail_start": 4,
+  "two_adic_maximizing_exponent": 4,
+  "two_adic_maximum_fifth_power": "16807/3888",
+  "odd_inert_local_maxima": [
+    {
+      "prime": 5,
+      "last_exponent_required": 2,
+      "maximizing_exponent": 2,
+      "maximum_fifth_power": "94921875/28629151"
+    },
+    {
+      "prime": 11,
+      "last_exponent_required": 1,
+      "maximizing_exponent": 1,
+      "maximum_fifth_power": "14641/7776"
+    },
+    {
+      "prime": 17,
+      "last_exponent_required": 1,
+      "maximizing_exponent": 1,
+      "maximum_fifth_power": "83521/59049"
+    },
+    {
+      "prime": 23,
+      "last_exponent_required": 1,
+      "maximizing_exponent": 1,
+      "maximum_fifth_power": "279841/248832"
+    },
+    {
+      "prime": 29,
+      "last_exponent_required": 1,
+      "maximizing_exponent": 0,
+      "maximum_fifth_power": "1"
+    }
+  ],
+  "odd_product_fifth_power": "133671187092656640625/13460996921358974976",
+  "combined_fifth_power": "2246611641466280158984375/52336356030243694706688",
+  "spectral_bound_constant": "9/4",
+  "spectral_bound_fifth_power": "59049/1024",
+  "spectral_strict_comparison_verified": true,
+  "lattice_constant": "15/2",
+  "union_main_constant": "29/60",
+  "union_X_minus_one_fifth_constant": "11/10",
+  "union_X_minus_six_fifths_constant": "111/20",
+  "union_X_minus_two_constant": "2/3",
+  "cutoff": 100000000,
+  "strict_union_bound_at_cutoff": "591/625",
+  "large_prime_tail_reason": "For p>=32, (e+1)^5<=32^e<=p^e. Smaller odd inert local ratios decrease after the recorded cutoff.",
+  "two_adic_tail_reason": "Successive ratios (e+4)/(e+3)/2^(1/5) decrease, so the recorded first ratio<=1 proves the global maximum.",
+  "source_sha256": "bed5032ca23f842389391e6893a64695570ee8b3a4fae79f7b2ea0f62ef07ef2"
+}

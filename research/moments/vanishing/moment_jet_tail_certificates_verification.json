@@ -1,0 +1,211 @@
+{
+  "status": "passed",
+  "coefficient_field": "QQ",
+  "default_mode": "Replay retained identities and dual annihilators; no certificate producer is used",
+  "positive_certificates": [
+    {
+      "case": "gaussian_immersed_nu2",
+      "status": "passed",
+      "functional": "gaussian",
+      "base_phase": "W+Z*Y-Z^3/2",
+      "known_pure_base": true,
+      "prefix_N": 2,
+      "nilpotence_nu": 2,
+      "nilpotence_exponent_is_exact": true,
+      "perturbation_spatial_degree": 2,
+      "mixed_cutoff_C": 3,
+      "last_required_moment": 7,
+      "intervening_moments_checked": 5,
+      "conclusion": "I_infinity=I_N in the local ring at the parameter origin and its completion",
+      "global_ideal_equality_claimed": false,
+      "cutoff_source": "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md, Sections 1-3"
+    },
+    {
+      "case": "sphere_immersed_nu2",
+      "status": "passed",
+      "functional": "sphere_3",
+      "base_phase": "W+Z*Y-Z^3/2",
+      "known_pure_base": true,
+      "prefix_N": 2,
+      "nilpotence_nu": 2,
+      "nilpotence_exponent_is_exact": true,
+      "perturbation_spatial_degree": 2,
+      "mixed_cutoff_C": 3,
+      "last_required_moment": 7,
+      "intervening_moments_checked": 5,
+      "conclusion": "I_infinity=I_N in the local ring at the parameter origin and its completion",
+      "global_ideal_equality_claimed": false,
+      "cutoff_source": "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md, Sections 1-3"
+    },
+    {
+      "case": "sphere_three_parameter_profile_nu7",
+      "status": "passed",
+      "functional": "sphere_3",
+      "base_phase": "W+Z*Y-Z^3/2",
+      "known_pure_base": true,
+      "prefix_N": 7,
+      "nilpotence_nu": 7,
+      "nilpotence_exponent_is_exact": true,
+      "perturbation_spatial_degree": 3,
+      "mixed_cutoff_C": 3,
+      "last_required_moment": 60,
+      "intervening_moments_checked": 53,
+      "conclusion": "I_infinity=I_N in the local ring at the parameter origin and its completion",
+      "global_ideal_equality_claimed": false,
+      "cutoff_source": "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md, Sections 1-3"
+    },
+    {
+      "case": "gaussian_two_parameter_nu2",
+      "status": "passed",
+      "functional": "gaussian",
+      "base_phase": "W+Z*Y-Z^3/2",
+      "known_pure_base": true,
+      "prefix_N": 2,
+      "nilpotence_nu": 2,
+      "nilpotence_exponent_is_exact": true,
+      "perturbation_spatial_degree": 2,
+      "mixed_cutoff_C": 3,
+      "last_required_moment": 7,
+      "intervening_moments_checked": 5,
+      "conclusion": "I_infinity=I_N in the local ring at the parameter origin and its completion",
+      "global_ideal_equality_claimed": false,
+      "cutoff_source": "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md, Sections 1-3"
+    },
+    {
+      "case": "gaussian_local_not_global",
+      "status": "passed",
+      "functional": "gaussian",
+      "base_phase": "W+Z*Y-Z^3/2",
+      "known_pure_base": true,
+      "prefix_N": 2,
+      "nilpotence_nu": 2,
+      "nilpotence_exponent_is_exact": true,
+      "perturbation_spatial_degree": 2,
+      "mixed_cutoff_C": 3,
+      "last_required_moment": 7,
+      "intervening_moments_checked": 5,
+      "conclusion": "I_infinity=I_N in the local ring at the parameter origin and its completion",
+      "global_ideal_equality_claimed": false,
+      "cutoff_source": "MIXED_CUTOFF_JETS_AND_INFINITE_TAILS.md, Sections 1-3"
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "gaussian_intervening_failure",
+      "nilpotence_witnesses_replayed": 1,
+      "first_nonmember_moment": 5,
+      "nonzero_linear_coefficient": "120",
+      "rejected": true,
+      "reason": "False truncated polynomial membership identity"
+    },
+    {
+      "case": "sphere_intervening_failure",
+      "nilpotence_witnesses_replayed": 1,
+      "first_nonmember_moment": 5,
+      "nonzero_linear_coefficient": "8/63",
+      "rejected": true,
+      "reason": "False truncated polynomial membership identity"
+    }
+  ],
+  "corrupted_packets_rejected": [
+    {
+      "case": "missing_nilpotence_monomial",
+      "rejected": true,
+      "reason": "Missing degree-nu monomial witness"
+    },
+    {
+      "case": "missing_intervening_moment",
+      "rejected": true,
+      "reason": "Missing intervening moment witness"
+    },
+    {
+      "case": "corrupted_identity_coefficient",
+      "rejected": true,
+      "reason": "False truncated polynomial membership identity"
+    },
+    {
+      "case": "missing_requested_dual",
+      "rejected": true,
+      "reason": "Requested exact nilpotence lacks its nonmembership certificate"
+    },
+    {
+      "case": "corrupted_dual",
+      "rejected": true,
+      "reason": "Dual certificate does not detect its target"
+    },
+    {
+      "case": "wrong_prefix_generator_labels",
+      "rejected": true,
+      "reason": "Prefix generator labels differ from actual moment jets"
+    },
+    {
+      "case": "base_origin_violation",
+      "rejected": true,
+      "reason": "Perturbations must vanish at the parameter origin"
+    },
+    {
+      "case": "missing_mixed_degree_nu_monomial",
+      "rejected": true,
+      "reason": "Missing degree-nu monomial witness"
+    },
+    {
+      "case": "corrupted_least_prefix_dual",
+      "rejected": true,
+      "reason": "Target pairing changed from one"
+    }
+  ],
+  "least_local_prefix_certificate": {
+    "case": "sphere_three_parameter_profile_least_local_prefix",
+    "jet_order": 7,
+    "separated_moment": 7,
+    "smaller_prefix": 6,
+    "target_pairing": "1",
+    "ideal_generator_count": 6,
+    "monomial_multipliers_per_generator": 120,
+    "all_ideal_pairings": "0",
+    "least_local_prefix": 7,
+    "global_least_prefix_claimed": false
+  },
+  "independent_direct_controls": [
+    {
+      "functional": "gaussian",
+      "moments": [
+        1,
+        6
+      ],
+      "parameters": 2,
+      "jet_order": 2,
+      "method": "Independent original-coordinate Wick or sphere contraction"
+    },
+    {
+      "functional": "sphere_3",
+      "moments": [
+        1,
+        6
+      ],
+      "parameters": 2,
+      "jet_order": 2,
+      "method": "Independent original-coordinate Wick or sphere contraction"
+    }
+  ],
+  "local_versus_global_control": {
+    "case": "gaussian_local_not_global",
+    "M2": "eps**2*(2*eps**4 + eps**2 - 2*eps + 1)",
+    "M3": "2*eps**5*(4*eps**4 + 3*eps**2 - 6*eps + 3)",
+    "M3_remainder_mod_global_M2": "eps**5 + 4*eps**4 - 5*eps**3 + 2*eps**2",
+    "global_prefix_equality": false,
+    "local_prefix_equality": true
+  },
+  "scope": "Finite exact certificates plus the written mixed-cutoff/Nakayama proof; the generic conclusion is local/completed ideal equality.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "proof_sha256": "b29d91339b7799f95575a191d8bfc7294b23d84ba2ba74769620f69ac2df2afc",
+  "module_sha256": "12551a38e7132f806f1c4596361c486e853214bde719292ed603beb37ecc7071",
+  "checker_sha256": "3a4435b606979bbbadac7b993b4112f12723c404ad5005ab6cbbd56c45a385d6",
+  "fixture_sha256": "ec9c94c1113f13cef00c78af5c6a51e76d869543b47d31c41807bf843c7af63b",
+  "historical_input_context_sha256": "6c035f1b95a07b3b59768b824b44eff7546df25f58ff5fb7fc035c31961b2aab",
+  "historical_input_context_role": "Context only; no historical ideal-membership or nilpotence assertion is trusted"
+}

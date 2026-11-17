@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "verify_gaussian_binomial_mixed_full_image.py": "c918b39f0b52c2ee043e05579ffc0d5e58624561e9050f97448f2692ad53f2a8",
+    "gaussian_binomial_mixed_full_image.py": "bdc258ee0fe23d4a0528c570b26b87f3c3f5826f8356bc8662b233267773616f",
+    "GAUSSIAN_BINOMIAL_MIXED_FULL_IMAGE.md": "1740a4dd67d00a196c7fd270610a9542696d2ef4bd8e2b4e9af594d17b1e5945"
+  },
+  "controls": {
+    "status": "passed",
+    "direct_original_controls": {
+      "m_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "monomials": 10,
+      "moment_orders": [
+        0,
+        6
+      ]
+    },
+    "frame_determinants": {
+      "1": "-1",
+      "2": "1/(4*t**2)",
+      "3": "35/(2834352*t**4)"
+    },
+    "unit_ratio_and_primitive_m_values": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "checks": [
+      "all-integer recurrence instances",
+      "exact connection and Jacobian unit",
+      "finite principal-part membership",
+      "unit factorial quotient and disjoint half-integer orbit",
+      "closed polynomial primitive identity",
+      "exceptional m1 inhomogeneous and homogeneous equations"
+    ],
+    "scope": "Bounded exact controls. The written extreme-pole and differential-lattice proofs establish all-m actual ranks, global lattices and analytic boundaries."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

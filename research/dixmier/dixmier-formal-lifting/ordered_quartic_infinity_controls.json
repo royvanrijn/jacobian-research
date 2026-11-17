@@ -1,0 +1,84 @@
+{
+  "claim": "QOI1",
+  "status": "PASS",
+  "fractional_power_controls": [
+    {
+      "case": "all_ordering_M2",
+      "partner_order": 2,
+      "ordering_u": "u",
+      "ordering_w": "w",
+      "binomial": "1/2",
+      "target": "V^1*A",
+      "target_coefficient": "3*eta*g**2/s",
+      "positive_part_terms": 4,
+      "commutator_terms": 7,
+      "degree_bounds_pass": true
+    },
+    {
+      "case": "all_ordering_M6",
+      "partner_order": 6,
+      "ordering_u": "u",
+      "ordering_w": "w",
+      "binomial": "-1/16",
+      "target": "V^7*A",
+      "target_coefficient": "-9*eta*g**4/(8*s**3)",
+      "positive_part_terms": 20,
+      "commutator_terms": 18,
+      "degree_bounds_pass": true
+    },
+    {
+      "case": "u5_w3_M10",
+      "partner_order": 10,
+      "ordering_u": "5",
+      "ordering_w": "3",
+      "binomial": "3/256",
+      "target": "V^13*A",
+      "target_coefficient": "45*g**6/128",
+      "positive_part_terms": 52,
+      "commutator_terms": 20,
+      "degree_bounds_pass": true
+    }
+  ],
+  "exceptional_orderings_u5_and_discriminant16": true,
+  "corrupted_M6_scalar_term_rejected": true,
+  "g_mu_zero_centralizer_boundary": true,
+  "strict_rational_infinity_cone_M2_coefficient": 3,
+  "nonsquare_leading_divisor_boundary": true,
+  "global_ordered_square_leading_coefficients": {
+    "0": {
+      "V_degree": 1,
+      "coefficient": "2"
+    },
+    "1": {
+      "V_degree": 0,
+      "coefficient": "4"
+    },
+    "2": {
+      "V_degree": 0,
+      "coefficient": "-3*r"
+    },
+    "3": {
+      "V_degree": -5,
+      "coefficient": "-4*epsilon*h**2*r**4"
+    },
+    "4": {
+      "V_degree": -6,
+      "coefficient": "epsilon*h**2*r**4"
+    }
+  },
+  "global_ordered_square_remainder_degrees": {
+    "p2": -4,
+    "p1": -3,
+    "p0": -2
+  },
+  "global_critical_rescaling_matches_L_F": true,
+  "hashes": {
+    "ORDERED_QUARTIC_INFINITY_OBSTRUCTION.md": "c5cc4705cf1f61d5c9be172a4875b05362411599289f45c144e4f875a73946e3",
+    "check_ordered_quartic_infinity.py": "e2914c55342620f618cb94ce6aa6df0526d13fce11f16b7da13c984c0d45b012",
+    "GLOBAL_ADMISSION_AND_QUARTIC_CRITICAL_FACE.md": "4bebb149d20a77c204cbfffddf1319f62a7f88bb309d06c0c57e30d67044716a"
+  },
+  "coverage_boundary": "Exact positive parts and commutators for orders2,6 with all ordering parameters and order10 at u5,w3; weighted degree bounds; a strict rational infinity example; a nonsquare divisor control; and full global ordered-square coefficients. All orders, polynomial centralizer exhaustion, trace descent and the full infinity cone use the written weighted-symbol proof, not extrapolation from these finite inputs.",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

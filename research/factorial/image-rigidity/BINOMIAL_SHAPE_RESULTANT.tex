@@ -1,0 +1,351 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Res}{\operatorname{Res}}
+\begin{document}
+\setlength{\emergencystretch}{1em}
+\title{The Gamma-shape resultant of consecutive binomial moments}
+\author{}\date{}\maketitle
+\begin{abstract}
+We determine a universal divisor, exact degree, and positive leading
+coefficient of the Gamma-shape resultant for consecutive univariate
+binomial moments. The leading term follows from a finite-moment
+Gaussian limit. A further exact divisor is available when the lower
+exponent is one. On the positive real shape axis the resultant is
+nonnegative, and any zero is repeated, so the remaining problem reduces
+to the positive zeros of its repeated part. The resulting positivity
+and squarefreeness routes remain open. An exact fixed-polynomial
+certificate shows that Hurwitz stability of the normalized shape
+resultant is already false for gap five.
+\end{abstract}
+Fix integers $a\ge0$, $d\ge1$, $n\ge1$. Put
+\[
+ P_j(t;\beta)=\sum_{k=0}^j\binom jk(aj+\beta)_{dk}t^k,
+ \qquad R_j(u;\beta)=u^jP_j(u^{-1};\beta),
+\]
+and define
+\[
+ {\cal R}_{n,a,d}(\beta)=\Res_t(P_n,P_{n+1})
+                       =\Res_u(R_n,R_{n+1}).
+\]
+The equality is the reciprocal-resultant identity with sign
+$(-1)^{n(n+1)}=1$. It holds generically in $\beta$ and thus as a
+polynomial identity, including specializations where $P_j$ loses degree.
+The reciprocals $R_j$ are monic of exact degree $j$ at every shape.
+
+\begin{theorem}[Exact resultant normalization]\label{thm:normalization}
+The resultant is a nonzero polynomial in $\Z[\beta]$, with
+\[
+ \deg_\beta{\cal R}_{n,a,d}=(2d-1)\frac{n(n+1)}2,\qquad
+ [\beta^{(2d-1)n(n+1)/2}]{\cal R}_{n,a,d}
+ =d^{n(n+1)}\prod_{j=1}^n j^j .
+\]
+The monic polynomial
+\[
+ D_{n,a,d}(\beta)
+ =\prod_{j=1}^n
+    \bigl(\beta+a(n+1)\bigr)_{\max(dj-a,0)}
+\]
+divides $ {\cal R}_{n,a,d}$ in $\Z[\beta]$. Therefore
+\[
+ Q_{n,a,d}(\beta)=\frac{{\cal R}_{n,a,d}(\beta)}
+                       {D_{n,a,d}(\beta)}
+ \in\Z[\beta]
+\]
+has positive leading coefficient and degree
+\[
+ (2d-1)\frac{n(n+1)}2-\sum_{j=1}^n\max(dj-a,0).
+\]
+\end{theorem}
+\begin{proof}[Proof of the forced divisor]
+Fix $h\ge0$ with $a+h<dn$ and specialize
+$\beta_0=-a(n+1)-h$. The two Gamma parameters are
+\[
+ an+\beta_0=-a-h,\qquad a(n+1)+\beta_0=-h.
+\]
+For an integer $m\ge0$, $(-m)_k=0$ exactly when $k>m$.
+Thus $R_n(u;\beta_0)$ is divisible by
+$u^{g_h}$, where $g_h=n-\lfloor(a+h)/d\rfloor>0$.
+The other reciprocal is divisible by
+$u^{n+1-\lfloor h/d\rfloor}$, whose exponent is at least $g_h+1$.
+The specialized gcd therefore has degree at least $g_h$.
+
+The Sylvester matrix at $\beta_0$ has corank at least $g_h$.
+Constant invertible row operations over $\Q$ make at least $g_h$
+rows vanish at $\beta_0$. Each such row is divisible by
+$\beta-\beta_0$ before taking the determinant. Hence
+$(\beta-\beta_0)^{g_h}$ divides the resultant.
+The product of these distinct factors is
+\[
+ \prod_{h=0}^{dn-a-1}
+ (\beta+a(n+1)+h)^{n-\lfloor(a+h)/d\rfloor}
+ =
+ \prod_{j=1}^n(\beta+a(n+1))_{\max(dj-a,0)} .
+\]
+If $dn\le a$, both products are empty. Since this divisor is monic,
+integer coefficients of the quotient follow by monic division.
+\end{proof}
+
+\begin{lemma}[Finite-moment Gaussian limit]\label{lem:Gaussian}
+For $\gamma>0$, let $\mathcal M_\gamma$ be the polynomial functional
+$\mathcal M_\gamma(X^k)=(\gamma)_k$.
+For fixed $m\ge1$, set $\gamma=\beta+am$ and
+\[
+ Y_{m,\beta}=\frac{X^d-\beta^d}{d\beta^{d-1/2}}.
+\]
+As $\beta\to+\infty$, every fixed moment
+$\mathcal M_\gamma(Y_{m,\beta}^k)$ tends to the standard Gaussian
+moment: zero for odd $k$, and $(k-1)!!$ for even $k$.
+Only finitely many polynomial moments are used; no convergence of an
+exponential generating function for $X^d$ is asserted.
+\end{lemma}
+\begin{proof}
+For $Z_\gamma=(X-\gamma)/\sqrt\gamma$, the formal identity
+\[
+ \sum_{k\ge0}\mathcal M_\gamma(Z_\gamma^k)\frac{s^k}{k!}
+ =e^{-s\sqrt\gamma}(1-s/\sqrt\gamma)^{-\gamma}
+\]
+has logarithm
+\[
+ \sum_{j\ge2}\frac{s^j}{j\,\gamma^{j/2-1}}.
+\]
+Each fixed coefficient therefore tends to that of $e^{s^2/2}$.
+All fixed moments of $Z_\gamma$ converge and are bounded.
+Since $\gamma/\beta\to1$ and
+$(\gamma-\beta)/\sqrt\beta\to0$, this also holds for
+$W=(X-\beta)/\sqrt\beta$.
+Finally,
+\[
+ Y_{m,\beta}
+ =W+\sum_{j=2}^d\frac1d\binom dj\beta^{(1-j)/2}W^j.
+\]
+A fixed power is a finite polynomial in $W$; every term beyond
+$W^k$ has a coefficient tending to zero and a bounded moment.
+\end{proof}
+
+\begin{proof}[Proof of the degree and leading coefficient]
+Let $\sigma=d\beta^{d-1/2}$ and define the monic polynomial
+\[
+ F_{m,\beta}(z)=\sigma^{-m}R_m(-\beta^d+\sigma z;\beta).
+\]
+Lemma~\ref{lem:Gaussian} gives coefficientwise convergence to
+\[
+ G_m(z)=\sum_{j=0}^{\lfloor m/2\rfloor}
+        \frac{m!}{2^j j!(m-2j)!}\,z^{m-2j}.
+\]
+These obey $G_0=1$, $G_1=z$,
+$G_{m+1}=zG_m+mG_{m-1}$. Consequently
+\[
+ J_m:=\Res(G_m,G_{m+1})
+ =m^m\Res(G_m,G_{m-1})
+ =m^mJ_{m-1},\qquad J_0=1.
+\]
+Exchanging arguments has sign $(-1)^{m(m-1)}=1$.
+Hence $J_m=\prod_{j=1}^m j^j>0$.
+
+The affine variable change and monic normalization give
+\[
+ {\cal R}_{n,a,d}(\beta)
+ =\sigma^{n(n+1)}
+       \Res_z(F_{n,\beta},F_{n+1,\beta}).
+\]
+Continuity of the resultant in its coefficients implies
+\[
+ \lim_{\beta\to+\infty}
+ \frac{{\cal R}_{n,a,d}(\beta)}
+      {\beta^{(2d-1)n(n+1)/2}}
+ =d^{n(n+1)}J_n>0.
+\]
+The resultant is an integer polynomial in $\beta$. This finite
+nonzero limit determines both its degree and leading coefficient.
+\end{proof}
+
+\begin{corollary}[The positive-shape target]\label{cor:positive-target}
+For every $\beta>0$, $D_{n,a,d}(\beta)>0$, and consecutive
+coprimality is equivalent to $Q_{n,a,d}(\beta)\ne0$.
+For fixed $a,d,n$, nonvanishing of $Q$ on all positive $\beta$ is
+equivalent to positivity there, since its leading coefficient is positive.
+Coefficientwise nonnegativity of $Q$, or of its positive-content
+primitive part, would suffice.
+\end{corollary}
+\begin{proof}
+All factors of $D$ are positive on this interval. A real continuous
+polynomial with positive leading coefficient and no positive zero
+is positive on the whole positive half-line.
+\end{proof}
+
+
+\section{An additional divisor for lower exponent one}
+
+\begin{theorem}[A forced complete collision at a negative shape]
+\label{thm:lower-one-extra-factor}
+For $a=1$ and all integers $d,n\ge1$, the polynomial
+\[
+ E_{n,d}(\beta)=\bigl(\beta+(d+1)n+d\bigr)^n
+\]
+divides $ {\cal R}_{n,1,d}(\beta)$.
+It is relatively prime to $D_{n,1,d}$, so their product divides
+the resultant in $\Z[\beta]$.
+\end{theorem}
+\begin{proof}
+Put $\beta_* =-(d+1)n-d$ and $\gamma=-d(n+1)$.
+The consecutive shapes are $\gamma$ and $\gamma+1$.
+The identity
+\[
+ (\gamma+1)_{dk}=\frac{\gamma+dk}{\gamma}(\gamma)_{dk}
+              =\frac{n+1-k}{n+1}(\gamma)_{dk}
+\]
+and
+$\binom{n+1}{k}(n+1-k)/(n+1)=\binom nk$ show that
+\[
+ P_{n+1}(t;\beta_*)=P_n(t;\beta_*).
+\]
+The identity includes the vanishing top coefficient when $k=n+1$.
+Thus $R_{n+1}(u;\beta_*)=uR_n(u;\beta_*)$, and the specialized
+Sylvester corank is $n$. The argument used for the natural divisor
+gives the asserted multiplicity.
+
+Every zero of the natural divisor has the form
+$-(n+1)-h$ with $0\le h\le dn-2$; if $dn=1$ that divisor is one.
+Its largest offset is therefore $(d+1)n-1$, smaller than the offset
+$(d+1)n+d$ of $\beta_*$. The two divisors are relatively prime.
+\end{proof}
+
+\section{Positivity on the real axis and repeated factors}
+
+\begin{theorem}[Nonnegative resultant and repeated positive zeros]
+\label{thm:nonnegative}
+For all the stated integers $a,d,n$ and every real $\beta>0$,
+\[
+ {\cal R}_{n,a,d}(\beta)\ge0.
+\]
+If it vanishes at $\beta_0>0$, the two reciprocal polynomials have
+a common factor of degree at least two, and
+\[
+ {\cal R}_{n,a,d}(\beta_0)
+ ={\cal R}_{n,a,d}'(\beta_0)=0.
+\]
+The same repeated-zero conclusion holds after division by any polynomial
+divisor having no positive real zero.
+\end{theorem}
+\begin{proof}
+For $\gamma>0$, the polynomial functional has the integral representation
+\[
+ \mathcal M_\gamma(h)
+ =\frac{1}{\Gamma(\gamma)}
+   \int_0^\infty h(x)x^{\gamma-1}e^{-x}\,dx .
+\]
+The monomial moments are $(\gamma)_k$, by integration by parts.
+For every real $u$, a reciprocal of even degree is strictly positive,
+since it is $\mathcal M_\gamma((u+X^d)^{2j})$.
+For one of odd degree, its derivative is
+$(2j+1)\mathcal M_\gamma((u+X^d)^{2j})>0$.
+It therefore has exactly one real root, which is simple.
+
+Write the pair as a monic odd polynomial $O$ and a monic even
+polynomial $F$. Exchanging their resultant has sign one.
+At the single real root of $O$, $F$ is positive.
+Every conjugate nonreal pair of roots of $O$ contributes
+$|F(\xi)|^2\ge0$ to the product formula for $\Res(O,F)$, counting
+multiplicities. This proves nonnegativity.
+
+A common root cannot be real, and its conjugate is a second common
+root. Thus the specialized Sylvester corank is at least two.
+The same constant-row-operation argument as before shows that the
+shape resultant has a zero of multiplicity at least two at $\beta_0$.
+Dividing by a polynomial nonzero at $\beta_0$ preserves that multiplicity.
+\end{proof}
+
+\begin{corollary}[A repeated-part reduction]\label{cor:repeated-part}
+Let $D_-$ be any real polynomial divisor of $ {\cal R}_{n,a,d}$ with
+no positive real zero, and put $C={\cal R}_{n,a,d}/D_-$.
+Consecutive coprimality at every positive real shape is equivalent
+to $\gcd(C,C')$ having no positive real zero.
+In particular, squarefreeness of $C$ suffices.
+One may take $D_-=D_{n,a,d}$, or $D_-=D_{n,1,d}E_{n,d}$ when $a=1$.
+\end{corollary}
+\begin{proof}
+A positive zero of $C$ is repeated by Theorem~\ref{thm:nonnegative},
+so is a zero of $\gcd(C,C')$. The reverse implication is immediate.
+\end{proof}
+
+This reduction does not prove squarefreeness of the remaining cofactor.
+Removing its squarefull part by definition would discard exactly the
+possible positive-shape obstruction, so that operation alone is not a
+proof of coprimality.
+
+\section{A failure of shape-parameter Hurwitz stability}
+
+\begin{theorem}[An exact beta-variable obstruction]\label{thm:beta-hurwitz}
+Let $C(\beta)$ be the positive-leading primitive part of
+\[
+ \frac{{\cal R}_{7,0,5}(\beta)}
+      {\prod_{j=1}^7(\beta)_{5j}} .
+\]
+This polynomial has degree $112$ and strictly positive integer
+coefficients, but its leading Hurwitz minor of order $84$ is negative.
+Consequently it has a zero in the open right half-plane.
+This is a statement about the shape variable $\beta$.
+It gives neither a positive real zero nor a counterexample to
+consecutive coprimality.
+\end{theorem}
+\begin{proof}
+The exact certificate records the complete $113$ descending coefficients
+and the positive integer content removed from the quotient.
+Its equality to the displayed quotient is verified as a degree-$252$
+polynomial identity: the full resultants agree at the $253$ distinct
+integer shapes $1,\ldots,253$, using literal monic reciprocal
+polynomials and exact integer resultants.
+The degree bound and divisor degree are given by
+Theorem~\ref{thm:normalization}. Positivity and the degree are checked
+coefficient by coefficient.
+
+For descending coefficients $c_0,\ldots,c_{112}$, with coefficients
+outside this range set to zero, form
+\[
+ H_{84}=(c_{2j-i})_{i,j=1}^{84}.
+\]
+An exact integer determinant calculation gives $\det H_{84}<0$.
+The decimal determinant has $7555$ digits; its full signed-value hash
+is recorded and checked with the coefficient certificate.
+A separate rational Routh elimination gives its first negative pivot
+at row $84$ and agrees with the determinant sign.
+
+The Routh--Hurwitz criterion in
+Holtz--Khrushchev--Kushel~\cite[Theorem~1, p.~1]{HKK} requires all
+these leading minors to be positive for strict stability.
+In fact the negative minor excludes even the closed left half-plane:
+if every zero of $C$ had nonpositive real part, then
+$C(z+\epsilon)$ would be strictly stable for every $\epsilon>0$.
+Its order-$84$ minor would be positive, and continuity as
+$\epsilon\downarrow0$ would imply $\det H_{84}\ge0$, a contradiction.
+\end{proof}
+
+The coefficientwise positive result here is a complete assertion about
+one explicit polynomial. It is not evidence promoted to an unrestricted
+coefficientwise positivity theorem. The obstruction also differs from
+a resultant viewed as a polynomial in the lower exponent at fixed shape.
+
+\paragraph{Exact replay and scope.}
+The checker verifies the retained identities on declared bounded inputs,
+the formal Gaussian coefficient limits on finite moment controls, and
+the complete fixed-polynomial Hurwitz certificate. Universal claims
+above are justified by their written proofs, rather than by a finite
+parameter search. Coefficientwise positivity and suitable squarefreeness
+of the residual resultants remain open, as does unrestricted ordinary
+binomial SFC.
+
+\begin{thebibliography}{9}
+\bibitem{HKK}
+O.~Holtz, S.~Khrushchev and O.~Kushel,
+\emph{Generalized Hurwitz matrices, generalized Euclidean algorithm,
+and forbidden sectors of the complex plane},
+\href{https://arxiv.org/abs/1506.07379v1}{arXiv:1506.07379v1},
+June 2015. Theorem~1 is the classical Routh--Hurwitz criterion used here.
+\end{thebibliography}
+\end{document}

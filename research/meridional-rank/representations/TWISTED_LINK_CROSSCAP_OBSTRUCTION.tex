@@ -14,7 +14,7 @@
 \maketitle
 
 The standard twisted-link theorem of Baader--Blair--Kjuchukova imposes
-a crosscap restriction that excludes twelve retained sharp-four examples.
+a crosscap restriction that excludes twenty retained sharp-four examples.
 The restriction concerns every possible twisted diagram of a knot,
 including diagrams with more crossings and arbitrary band signs.
 It does not exclude rational-tangle extensions of the theorem or
@@ -65,7 +65,7 @@ graphs nor a bound on the crossing number of a twisted diagram.
 It uses the topology of the spanning surface whose existence is part
 of the standard twisted-link hypothesis.
 
-\section{Twelve alternating examples}
+\section{Twenty alternating examples}
 
 Write a knot's Jones polynomial as
 \[
@@ -97,17 +97,22 @@ knots & $T_K$ & lower bound on $\C(K)$\\
 $13a_{373},13a_{375},13a_{391},13a_{392}$ &10&5\\
 $13a_{3264},13a_{3266},13a_{3275},13a_{3276}$ &9&4\\
 $13a_{3145},13a_{3147},13a_{3148},13a_{3149}$ &12&5\\
+$13a_{304},13a_{362},13a_{623},13a_{629}$ &10&5\\
+$13a_{3232},13a_{3259},13a_{3374},13a_{3375}$ &9&4\\
 \bottomrule
 \end{tabular}
 \end{center}
 \end{theorem}
 \begin{proof}
-The finite input consists of the twelve literal thirteen-crossing
-PDs in \path{twisted_link_crosscap_inputs.json}. Their named identities
-are bound literally to the previously checked census/topology inputs.
-The first eight bridge equalities use the seven-sheeted cover
-certificates; the last four use the retained periodic-family seed
-certificates at parameter zero. Those are separate dependencies.
+The finite input consists of twenty literal thirteen-crossing
+PDs in \path{twisted_link_crosscap_inputs.json}.
+The first twelve named identities are bound literally to the
+previously checked census/topology inputs. Their bridge equalities
+use the first eight seven-sheet certificates and the four retained
+periodic-family seed certificates at parameter zero.
+The final eight cases are bound to the new A6 affine input and its
+frozen named-census and sharp-four verification receipt.
+These identity and bridge proofs are separate dependencies.
 
 Tracing the opposite half-edge through every crossing proves that
 each PD has one component and alternating over/under encounters.
@@ -141,9 +146,9 @@ and substituting $t=A^{-4}$ therefore identifies the absolute
 second and penultimate Jones coefficients with bracket coefficients
 four exponent units from the two extremes.
 
-For the first row both absolute coefficients are five.
-For the second row they are four and five, in either order.
-For the third row both are six.
+For every row with $T_K=10$, both absolute coefficients are five.
+For $T_K=9$ they are four and five, in either order.
+For $T_K=12$ both are six.
 The integer sums give the displayed $T_K$ values.
 An independent reconstruction of both checkerboard graphs agrees:
 if $v$ is the vertex count and $e'$ the edge count after parallel
@@ -186,9 +191,9 @@ as prime, and a changed source digest are rejected.
 This is an internal exact finite replay with explicit classical
 imports, not formal verification or independent specialist review.
 Theorem~\ref{thm:cases} excludes all standard twisted diagrams for
-these twelve knots; it is stronger than failure of a search among
+these twenty knots; it is stronger than failure of a search among
 minimal diagrams. The crosscap argument does not address the sixteen
-nonalternating new seven-sheeted examples, all positive-parameter
+nonalternating examples in each of the two twenty-four-case panels, all positive-parameter
 members of the periodic families, or rational-tangle replacements.
 
 For all eight alternating seven-sheet cases, the separate proof in
@@ -199,10 +204,13 @@ reflection-label lower certificate. The corresponding reflection
 comparison for the four earlier seeds remains separate.
 
 The independent proof in \path{RATIONAL_REPLACEMENT_TOPOLOGY.tex}
-now excludes all twenty-eight retained mixed-cover cases from arbitrary
+excludes the earlier twenty-eight mixed-cover cases from arbitrary
 rational replacements of twist boxes on any sharp-four BBK base.
-That argument uses the complete exceptional-filling classification for
-the octahedral double cover, rather than crosscap number.
+The new proof \path{A6_COVER_TOPOLOGY.tex} applies the same uniform
+theorem to all twenty-four additional A6 cases, giving fifty-two
+mixed-cover exclusions. That argument uses the complete
+exceptional-filling classification for the octahedral double cover,
+rather than crosscap number.
 The same note now gives a bridge-eight twisted base for $13a_{373}$
 and proves that arbitrary rational replacements on unrestricted
 higher-face bases are universal. Those geometric origins therefore

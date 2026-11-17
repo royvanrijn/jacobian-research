@@ -9,7 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 EXPECTED = ['13a_373','13a_375','13a_391','13a_392',
-            '13a_3264','13a_3266','13a_3275','13a_3276']
+            '13a_3264','13a_3266','13a_3275','13a_3276'] + ['13a_304', '13a_362', '13a_623', '13a_629', '13a_3232', '13a_3259', '13a_3374', '13a_3375', '13n_834', '13n_838', '13n_839', '13n_991', '13n_992', '13n_993', '13n_1367', '13n_1370', '13n_1371', '13n_1374', '13n_1375', '13n_1376', '13n_3814', '13n_3840', '13n_3911', '13n_3914']
 
 
 def reduce_word(word):
@@ -182,6 +182,8 @@ def main():
     assert [r['name'] for r in data['cases']]==EXPECTED
     frozen=json.loads((HERE/'seven_sheet_cover_inputs.json').read_text())
     by_name={r['name']:r for r in frozen['cases']}
+    added=json.loads((HERE/'a6_affine_inputs.json').read_text())
+    by_name.update({r['name']:r for r in added['cases']})
     for row in data['cases']:
         assert row['pd']==by_name[row['name']]['pd']
         assert len(combinatorial_data(row['snappea_triangulation']))==row['tetrahedra']
@@ -201,6 +203,7 @@ def main():
         assert hashlib.sha256((HERE/name).read_bytes()).hexdigest()==digest
     files=['RANK_THREE_KNOT_GROUP_UPPERS.tex','verify_rank_three_knot_groups.py',
            'rank_three_knot_group_inputs.json','seven_sheet_cover_inputs.json',
+           'a6_affine_inputs.json',
            'audit_diagram_identity.py']
     receipt={'status':'PASS','cases':results,'corrupted_cell_relators_rejected':True,
              'free_group_Nielsen_controls':controls,

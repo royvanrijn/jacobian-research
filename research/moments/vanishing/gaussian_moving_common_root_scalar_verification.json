@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "verify_gaussian_moving_common_root_scalar.py": "4ce5342f1348a6dd3a066a42f574c32e53023dd8b54648151dbe92c83269deef",
+    "GAUSSIAN_MOVING_COMMON_ROOT_SCALAR_EXCLUSION.md": "a941f6ae33a378c6527ea091d2d79d1069e51a91bd5ade4383db1236f01da03e",
+    "GAUSSIAN_AFFINE_ISOTROPIC_CHART.md": "7305f5915b0861a6f55a4c76c46ff1c5360d6b8f41ea9c0f301f81a8bf4d6900",
+    "GAUSSIAN_SIMPLE_ORIGIN_ALTERNATE_SCALAR_EXCLUSION.md": "78116adf45fcf424ffc10bf968cf7b0bfe1d2c73fa5ae714df47b1d6310c4e8d"
+  },
+  "checks": {
+    "status": "passed",
+    "original_Wick_orders": [
+      0,
+      5
+    ],
+    "nonrational_beta": {
+      "phase": "z(1+z^2)W^2-(1+z^2)W/2+(1+z^2)WY",
+      "beta": "(sqrt(1-t^2)-1)/t",
+      "actual_unit_jet": "69939*t**4/8 + 41*t**2/2 + 1"
+    },
+    "translation_residue_monomial_powers": [
+      -6,
+      6
+    ],
+    "higher_valuation_case": {
+      "ell": "z^3",
+      "c": "z",
+      "beta": "-t/2",
+      "A1_origin": "t^3/4",
+      "U_leading": "t^2*S/2",
+      "actual_unit_jet": "18*t**4 - 2*t**2 + 1"
+    },
+    "exact_moving_covariant_forms": 6,
+    "omitted_beta_derivative_rejected": true,
+    "degree_one_scope_control": "bridge matches pure unit1; degree>=2 volume premise is absent",
+    "scope": "Bounded exact controls only; actual residue invariance, all-iterates horizontality and finite-image exclusion are written arguments."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

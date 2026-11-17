@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\begin{document}
+\setlength{\emergencystretch}{2em}
+\title{Ordinary binomial SFC at equal prime exponent and gap}
+\author{}\date{}\maketitle
+An exact mixed-rank identity is available for every shape offset
+$1\le h\le d$. When the lower exponent and gap are the same odd prime,
+the correction term disappears in that characteristic. A cyclic
+Krylov matrix then excludes every consecutive common root.
+The prime two case follows from the retained lower-two theorem.
+All claims about SFC below use the ordinary factorial functional
+$\mathcal L_1(X^j)=j!$; no unrestricted Gamma-shape conclusion is made.
+
+For $n\ge1$, $d\ge2$, and $\gamma>0$, write
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k,\quad
+ \epsilon=(-1)^{d+1},\quad
+ R=z^{dn}T_{n,\gamma,d}(\epsilon z^{-d}),\quad
+ M=\gamma+dn,\quad E=M-z\partial_z.
+\]
+Let $B_j=B_{j,\gamma,d}$, always at the SAME $\gamma$, where
+\[
+ B_0=1,\qquad B_{j+1}=(z+dj+\gamma+d-1)B_j-zB_j',
+\]
+and put
+\[
+ L_j(z)=z^j(\partial_z-1)^jB_{n+1}(z).
+\]
+The cyclic column of a polynomial means its remainder coefficient
+column modulo $z^d-u$, in basis $1,z,\ldots,z^{d-1}$.
+
+\begin{theorem}[A mixed-rank criterion for offsets up to the gap]
+\label{thm:offset-rank}
+Fix an integer $1\le h\le d$. Put $C=M+d$, $A_h=(C)_h$ and
+\[
+ V_h(E)=\frac{(E)_h-(C)_h}{E-C}
+       =\sum_{k=0}^{h-1}v_k(E)_k,\qquad
+ \kappa_h=\frac{d(n+1)}{A_h}.
+\]
+The quotient is a polynomial in $\mathbb Z[C,E]$, with exact coefficients
+\[
+ v_k=(C+k+1)_{h-1-k}\in\mathbb Z_{\ge0}[C]\quad(0\le k<h).
+\]
+Set $v_k=0$ for $k\ge h$.
+For $u\ne0$, the two equalities
+\[
+ T_{n,\gamma,d}(\epsilon/u)
+  =T_{n+1,\gamma+h,d}(\epsilon/u)=0
+\]
+hold if and only if the $d$ by $(d-1)$ cyclic matrix whose columns are
+\[
+ J_j=L_j-\epsilon\kappa_h u\,v_{d-1-j}B_n,
+                \qquad 0\le j\le d-2,                         \tag{1}
+\]
+has rank less than $d-1$. In (1), $u$ is a scalar in the cyclic fiber.
+\end{theorem}
+\begin{proof}
+The coefficients follow from a finite telescoping identity.
+Set $Q_k=(E)_k(C+k)_{h-k}$ for $0\le k\le h$.
+Then
+\[
+ Q_{k+1}-Q_k=(E-C)(E)_k(C+k+1)_{h-1-k}.
+\]
+Summing from $k=0$ to $h-1$ proves the displayed expansion of $V_h$
+and its coefficient assertions.
+Set $K=(E)_dR$. The lower Euler equation and commutator give
+\[
+ (E-M)K=-\epsilon z^d(E-\gamma)R,\qquad
+ Ez^d=z^d(E-d).
+\]
+Let $F(E)=(E+d)_h$. Polynomial division gives
+$F(E)-F(M)=(E-M)G(E)$, where $G(E-d)=V_h(E)$.
+Thus the exact reduction is
+\[
+ F(E)K=A_hK-\epsilon z^dV_h(E)(E-\gamma)R.
+\]
+Pascal's identity and Gamma shifting give the upper moment operator
+\[
+ (\gamma)_h z^{d(n+1)}T_{n+1,\gamma+h,d}(\epsilon z^{-d})
+       =[z^d(E)_h+\epsilon(E)_{d+h}]R.
+\]
+Using $(E)_{d+h}=F(E)(E)_d$ and
+$(E)_h=A_h+(E-C)V_h(E)$ reduces this to
+\[
+ \epsilon A_hK+
+ z^d[A_h-d(n+1)V_h(E)]R.                                  \tag{2}
+\]
+At $R=0$, the upper moment therefore vanishes exactly when
+\[
+ K=\epsilon\kappa_h u V_h(E)R.                             \tag{3}
+\]
+
+We use the full rising-jet concomitant identity from the proof of
+\texttt{thm:mixed}, equation (3), in the
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}{lower-two prime-gap note}.
+For each $\xi^d=1$, after removal of a nonzero row gauge and
+restriction to $R=0$, that identity is
+\[
+ B_n(\xi z)(E)_dR-
+ \sum_{j=0}^{d-2}L_j(\xi z)(E)_{d-1-j}R=0.                 \tag{4}
+\]
+The same proof gives full rank $d$ of the concomitant on the full
+$(d+1)$-jet, with kernel the actual nonzero jet of $R$.
+The restrictions $R=0$ and (3) are independent because
+$\deg V_h\le d-1$. Substitution in (4) gives exactly the columns
+(1), up to a common column sign and ordering. Hence restricted
+rank deficiency is equivalent to the actual jet satisfying both
+restrictions. Fourier evaluation at $\xi z$ converts this to the
+cyclic-column statement in characteristic zero.
+This uses no lower-root simplicity assumption.
+
+We also retain the constant triangularization
+\[
+ L_{j+1}=z(\partial_z-1)L_j-jL_j,\qquad
+ z(\partial_z-1)B_{n+1+r}
+  =(M+2d-1+dr)B_{n+1+r}-B_{n+2+r}.                         \tag{5}
+\]
+It shows that $L_0,\ldots,L_{d-2}$ are a constant triangular
+combination of $B_{n+1},\ldots,B_{n+d-1}$ with diagonal
+$1,-1,\ldots,(-1)^{d-2}$.
+\end{proof}
+
+\begin{theorem}[Equal prime lower exponent and gap]\label{thm:diagonal-prime}
+For every prime $p$ and every nonzero complex binomial
+\[
+ f(X)=X^p(A+BX^p),
+\]
+no two consecutive positive ordinary factorial moments vanish.
+Equivalently, for every $n\ge1$,
+\[
+ \gcd\bigl(T_{n,pn+1,p},T_{n+1,p(n+1)+1,p}\bigr)=1
+\]
+over $\mathbb Q[t]$ and over $\mathbb C[t]$.
+\end{theorem}
+\begin{proof}
+For $p=2$ this is the case $\beta=1$ of
+\texttt{thm:prime} in the
+\href{LOWER_TWO_PRIME_GAP_SFC.tex}{lower-two prime-gap note}.
+Suppose $p$ is odd, and apply Theorem~\ref{thm:offset-rank}
+with $d=h=p$, $\gamma=pn+1$, and $M=2pn+1$.
+In a complete algebraically closed extension of $\mathbb Q_p$,
+every coefficient at degree $k$ in the lower $T$ has valuation
+at least $k$: each block of $p$ consecutive integer factors
+of $(pn+1)_{pk}$ contains a multiple of $p$.
+A common root $t$ therefore gives $u=1/t$ with $v_p(u)\ge1$,
+by the unique least-term argument for
+$u^nT_{n,pn+1,p}(u^{-1})$.
+
+Here $C=2pn+p+1$. The last factor of $(C)_p$ is
+$C+p-1=2p(n+1)$, and the other $p-1$ factors are units.
+Consequently
+\[
+ \kappa_p=\frac{p(n+1)}{(C)_p}
+     =\frac1{2\prod_{j=0}^{p-2}(C+j)}
+\]
+is a $p$-adic unit. Each $v_k$ in Theorem~\ref{thm:offset-rank}
+is integral, so the perturbations in (1) vanish modulo the
+maximal ideal. The reduced cyclic space is $k[z]/(z^p)$.
+Its auxiliary operator is
+\[
+ {\mathsf A}=z-z\partial_z,
+ \qquad {\mathsf A}^p={\mathsf A}.
+\]
+The identity follows, for example, from its cyclic bidiagonal
+characteristic polynomial
+$\prod_{j=0}^{p-1}(x+j)=x^p-x$.
+The seed $1$ is cyclic because its first $p$ powers are monic
+of successive degrees. Thus the $p$ distinct eigenvalues are
+the elements of $\mathbb F_p$, and $1$ has a nonzero component
+in every eigenspace. The nonzero eigenspaces and a Vandermonde
+minor show that
+\[
+ {\mathsf A}^{n+1}1,\ldots,{\mathsf A}^{n+p-1}1
+\]
+are independent for $n\ge1$.
+
+The triangularization (5) is integral with unit diagonal.
+The reduced $J_j$ therefore have rank $p-1$, contradicting
+the necessary rank deficiency. Fourier inversion is used only
+in characteristic zero; the reduction is directly in cyclic
+coefficient columns. The polynomials have rational coefficients;
+absence of a common root over this algebraically closed
+$p$-adic field implies a nonzero rational resultant, hence
+coprimality over $\mathbb C$.
+
+For $AB\ne0$ the exact normalization is
+\[
+ \mathcal L_1(f^j)=A^j(pj)!\,T_{j,pj+1,p}(B/A).
+\]
+If one coefficient vanishes, $f$ is a nonzero monomial and all
+its positive moments are nonzero. This proves the phase assertion.
+\end{proof}
+
+\begin{corollary}[The cubic-gap support three/six]\label{cor:cubic-support}
+For every nonzero complex $X^3(A+BX^3)$, no two consecutive
+positive ordinary factorial moments vanish.
+More explicitly, for arbitrary $\gamma>0$, $n\ge1$, and $u\ne0$,
+a common root at $t=1/u$ of $T_{n,\gamma,3}$ and
+$T_{n+1,\gamma+3,3}$ is equivalent to rank less than two of
+the cyclic columns
+\[
+ \left[B_{n+1}-\frac{3(n+1)u}{(M+3)(M+4)(M+5)}B_n,\ B_{n+2}\right],
+ \qquad M=\gamma+3n .
+\]
+\end{corollary}
+\begin{proof}
+The ordinary assertion is Theorem~\ref{thm:diagonal-prime} at $p=3$.
+For the explicit criterion, polynomial division in the rising basis gives
+\[
+ V_3(E)=(E)_2+(M+5)E+(M+4)(M+5).
+\]
+Also $L_0=B_{n+1}$ and
+$L_1=(M+5)B_{n+1}-B_{n+2}$.
+Subtracting $(M+5)$ times the first column of (1) from its
+second and changing a column sign yields the stated pair.
+In the ordinary case $\gamma=3n+1$, its scalar coefficient simplifies to
+\[
+ \kappa_3=\frac1{4(3n+2)(6n+5)},
+\]
+a three-adic unit, consistently with the general proof.
+\end{proof}
+
+The replay checks exact quotient/remainder identities, their
+rising-basis coefficients, both low-offset normalizations, reduced
+Krylov ranks, scalar unit cancellations, and bounded literal moment
+gcds. The all-offset and all-index statements follow from the
+written polynomial and rank proofs. No all-index theorem is inferred
+from the finite controls. Unrestricted binomial and arbitrary-support
+SFC remain outside this result.
+\end{document}

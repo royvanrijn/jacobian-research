@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "checked_on": "2026-11-17",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "verify_gaussian_binomial_mixed_kernel.py": "861a971e54f92b9dd2f91130e08639c9824f5bb3e69723613f65241a260ea2bc",
+    "gaussian_binomial_mixed_kernel.py": "f994f962dc6e5612093ab65fbbb67dba148476b6d8d5c14170016c242c1414d3",
+    "GAUSSIAN_BINOMIAL_MIXED_LITERAL_KERNEL.md": "834274d50de150df530aadc05f69e773b47310d78e3ba196ea584eaf8cccd38e",
+    "gaussian_quartic_rank_four.py": "28bee204a9f4f9071023ad97292b0ffc0524b139a1950bb00cd3367699d4b5ba"
+  },
+  "controls": {
+    "status": "passed",
+    "m_values": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "original_monomials": 100,
+    "spatial_degree_max": 3,
+    "moment_orders": [
+      0,
+      8
+    ],
+    "filtered_dimension_controls": {
+      "degree_range": [
+        0,
+        4
+      ],
+      "m_ge_2": "4d for d>=1; 1 for d=0",
+      "m_1": "2d+1"
+    },
+    "checks": [
+      "exact operator reconstruction",
+      "direct Wick versus rational coefficient classes",
+      "bounded canonical-basis independence",
+      "two operator images in exact kernel",
+      "time-dependent Jacobian unit identity",
+      "faithful quartic specialization"
+    ],
+    "scope": "Bounded exact controls only. The written degree descent and rational-pole proof establish all m, all markers and the complete literal kernel/image."
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}
