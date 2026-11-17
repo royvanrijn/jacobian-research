@@ -10,7 +10,7 @@ repository hygiene, mathematical validity, paper writing and review requirements
 - results/: deposited papers, exact published files and submission metadata.
 - unpublished/: complete manuscript bundles still needing revision, review or publication.
 - research/: current principal results, exact proof support and open questions by topic.
-- research/MATH_STATUS.json: compact current mathematical status; publication is separate.
+- research/MATH_STATUS.json: current mathematical status and proof dependency DAG; publication is separate.
 
 Preserve the exact deposited files and their checksums. Keep later revisions in
 unpublished/. Do not infer publication, independent replay, formal verification
@@ -25,5 +25,6 @@ or duplicated status narratives. Git already preserves the development history.
 Do not introduce new research calculations during organization work.
 
 Run make render-navigation after status changes, then make check-navigation.
-These commands check current source references, checker hashes, exact publication
+These commands check current source references, checker hashes, acyclic implications,
+graph evidence freshness, exact publication
 files, metadata and local links. They do not replay mathematical computations.

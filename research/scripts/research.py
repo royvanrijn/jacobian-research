@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Current research status and publication integrity. Standard library; no proof replay."""
+"""Current research scopes, proof dependencies and publication integrity; no proof replay."""
 
 from __future__ import annotations
 
@@ -11,7 +11,11 @@ import os
 from pathlib import Path
 import re
 import subprocess
+
 from zipfile import ZipFile
+
+from dependency_graph import DependencyGraph, GraphValidationError
+from dependency_sources import missing_source_closure
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = ROOT.parent
@@ -24,18 +28,18 @@ def load() -> dict:
     return json.loads(STATUS.read_text())
 
 
-def reference(value: str, base: Path = ROOT, *, directory: bool = False) -> Path:
+def reference(value: str, base: Path | None = None, *, directory: bool = False) -> Path:
     assert isinstance(value, str) and value, "empty source reference"
     path = Path(value)
     assert not path.is_absolute(), f"absolute source reference: {value}"
-    resolved = (base / path).resolve()
+    resolved = ((ROOT if base is None else base) / path).resolve()
     assert resolved.is_relative_to(REPOSITORY.resolve()), f"reference escapes repository: {value}"
     assert resolved.is_dir() if directory else resolved.is_file(), f"missing reference: {value}"
     return resolved
 
 
 def validate(data: dict) -> tuple[int, int]:
-    assert data["schema_version"] == 1
+    assert data["schema_version"] == 2
     assert data["authority"] == "MATH_STATUS.json"
     topics = data["topics"]
     assert isinstance(topics, list) and topics, "no current research topics"
@@ -48,6 +52,10 @@ def validate(data: dict) -> tuple[int, int]:
         assert re.fullmatch(r"[a-z0-9-]+", topic["id"]), "invalid topic identifier"
         assert topic["readme"] == topic["id"] + "/README.md", "topic guide must be its own README"
         reference(topic["readme"])
+        if "verification_note" in topic:
+            assert isinstance(topic["verification_note"], str) and topic["verification_note"].strip()
+        if "replay_record" in topic:
+            reference(topic["replay_record"])
         assert isinstance(topic["results"], list) and isinstance(topic["open_questions"], list)
         for result in topic["results"]:
             assert result["id"] not in result_ids, f"duplicate result: {result['id']}"
@@ -78,32 +86,104 @@ def validate(data: dict) -> tuple[int, int]:
         for question in topic["open_questions"]:
             assert isinstance(question["question"], str) and question["question"].strip()
             reference(question["source"])
+    graph = dependency_graph(data)
+    assert graph is not None, "schema 2 requires an explicit dependency graph"
+    generated = {(ROOT / name).resolve() for name in
+                 ["STATUS.md", "SCOPES.md", "DEPENDENCIES.md", "README.md",
+                  *(topic["readme"] for topic in topics)]}
+    for node in graph.nodes.values():
+        if node["supplemental"]:
+            assert node["kind"] in {"source", "claim", "gap", "goal"}, (
+                f"unknown graph node kind: {node['id']}")
+        for source in node.get("sources", []):
+            assert (ROOT / source["path"]).resolve() not in generated, (
+                f"generated navigation cannot establish graph evidence: {node['id']}")
+    for rule in graph.rules.values():
+        if rule.get("proof"):
+            assert (ROOT / rule["proof"]["path"]).resolve() not in generated, (
+                f"generated navigation cannot prove an implication: {rule['id']}")
+    for topic in topics:
+        assert isinstance(topic.get("scope_notes"), list) and topic["scope_notes"], (
+            f"missing scope audit: {topic['id']}")
+        assert isinstance(topic.get("gap_ids"), list), f"missing gap mapping: {topic['id']}"
+        for node_id in topic["gap_ids"]:
+            assert node_id in graph.nodes, f"unknown topic gap: {topic['id']}/{node_id}"
+        for question in topic["open_questions"]:
+            assert question.get("kind") in {"mathematical", "formalization", "verification", "workflow"}, (
+                f"unclassified open question: {topic['id']}")
+            assert question.get("node") in topic["gap_ids"], f"unmapped open question: {topic['id']}"
+        for result in topic["results"]:
+            assert result["id"] in graph.incoming, f"unmapped principal result: {result['id']}"
+            assert result.get("dependency_coverage") in {"complete", "partial"}, (
+                f"unspecified dependency coverage: {result['id']}")
     return len(topics), len(result_ids)
 
 
+def dependency_graph(data: dict) -> DependencyGraph | None:
+    """Fixtures without a graph can still render; schema 2 validation requires it."""
+    return DependencyGraph(data, ROOT, REPOSITORY) if data.get("graph") else None
+
+
+def topic_progress(topic: dict, evaluation: dict) -> list[str]:
+    if not evaluation or not topic.get("gap_ids"):
+        return []
+    resolved = [node_id for node_id in topic["gap_ids"]
+                if evaluation[node_id]["state"] in {"proved", "falsified"}]
+    unresolved = len(topic["gap_ids"]) - len(resolved)
+    lines = ["**Computed obligations:** " + str(unresolved) + " unresolved; "
+             + str(len(resolved)) + " resolved within their exact scope.", ""]
+    closed_questions = [question["node"] for question in topic["open_questions"]
+                        if question.get("node") in resolved]
+    if closed_questions:
+        lines += ["**Assessment update needed:** " + ", ".join(closed_questions)
+                  + " now has a resolved graph state. Read the computed states below "
+                    "when the authored assessment still uses open-problem wording.", ""]
+    return lines
+
+
+def tracked_question(question: dict, evaluation: dict) -> str:
+    node_id = question.get("node")
+    state = evaluation.get(node_id, {}).get("state", "unmapped")
+    resolved = state in {"proved", "falsified"}
+    label = state + (" (discharged)" if state == "proved" else "")
+    return ("**" + question.get("kind", "mathematical") + " / " + label + ":** "
+            + ("Authored question: " if resolved else "") + "["
+            + question["question"] + "](" + question["source"] + ")"
+            + (" — " + node_id if node_id else ""))
+
+
 def render(data: dict) -> str:
+    graph = dependency_graph(data)
+    evaluation = graph.evaluate() if graph else {}
     lines = ["# Current mathematical status", "",
              "<!-- Generated by scripts/research.py render from MATH_STATUS.json. -->", "",
              "This is a map of the principal results and current open questions. "
              "A result's state applies to its stated scope. Publication, internal checking, "
              "independent replay, formal verification and external review remain separate.", "",
              "[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · "
-             "[Research topics](README.md)", ""]
+             "[Research topics](README.md) · [Scope and gaps](SCOPES.md) · "
+             "[Implications](DEPENDENCIES.md)", "",
+             "The authored state describes the exact statement below. Graph status is computed "
+             "from declared proof routes and current source pins; it is an internal evidence "
+             "classification, not an independent proof audit. A proved scoped result can coexist "
+             "with an open broader conjecture. Dependency coverage can remain partial.", ""]
     for topic in data["topics"]:
         lines += ["## " + topic["title"], "", topic["summary"], "",
-                  "**Status:** " + topic["status"], "",
+                  "**Authored assessment:** " + topic["status"], "",
                   "[Topic guide](" + topic["readme"] + ")", ""]
+        lines += topic_progress(topic, evaluation)
         if topic["results"]:
-            lines += ["| Principal result | State | Scope |", "|---|---|---|"]
+            lines += ["| Principal result | Authored state | Graph status | Scope |", "|---|---|---|---|"]
             for result in topic["results"]:
                 cell = lambda text: text.replace("|", "\\|").replace("\n", " ")
                 lines.append("| [" + cell(result["title"]) + "](" + result["canonical_source"] + ") | "
-                             + result["state"] + " | " + cell(result["scope"]) + " |")
+                             + result["state"] + " | " + evaluation.get(result["id"], {}).get("state", "unmapped")
+                             + " | " + cell(result["scope"]) + " |")
             lines.append("")
         if topic["open_questions"]:
-            lines += ["Open questions:", ""]
+            lines += ["Tracked obligations (computed states):", ""]
             for question in topic["open_questions"]:
-                lines.append("- [" + question["question"] + "](" + question["source"] + ")")
+                lines.append("- " + tracked_question(question, evaluation))
             lines.append("")
     lines += ["The [structured record](MATH_STATUS.json) names each retained source, checker, "
               "evidence file and assurance flag. This navigation check does not rerun mathematics.", ""]
@@ -118,11 +198,12 @@ def topic_link(topic: dict, source: str) -> str:
     return Path(os.path.relpath(ROOT / source, (ROOT / topic["readme"]).parent)).as_posix()
 
 
-def render_topic(topic: dict) -> str:
+def render_topic(topic: dict, evaluation: dict | None = None) -> str:
+    evaluation = evaluation or {}
     lines = ["# " + topic["title"], "",
              "<!-- Generated from research/MATH_STATUS.json; run make render-navigation. -->", "",
-             topic["summary"], "", "**Status:** " + topic["status"], "",
-             "| Current result | Status | Main source |", "|---|---|---|"]
+             topic["summary"], "", "**Authored assessment:** " + topic["status"], "",
+             "| Current result | Evidence / publication | Graph status | Main source |", "|---|---|---|---|"]
     for result in topic["results"]:
         source = result["canonical_source"]
         if source.startswith("../results/"):
@@ -137,38 +218,70 @@ def render_topic(topic: dict) -> str:
             state = {"proved": "Internal result", "partial": "Partial result",
                      "falsified": "Counterexample"}[result["state"]]
         lines.append("| " + markdown_cell(result["title"]) + " | " + state
+                     + " | " + evaluation.get(result["id"], {}).get("state", "unmapped")
                      + " | [Source](" + topic_link(topic, source) + ") |")
+    lines.append("")
+    lines += topic_progress(topic, evaluation)
+    if topic.get("scope_notes"):
+        lines += ["", "Scope limits:", ""]
+        lines += ["- " + note for note in topic["scope_notes"]]
+    if topic.get("verification_note"):
+        note = topic["verification_note"]
+        if topic.get("replay_record"):
+            note += " [Replay record](" + topic_link(topic, topic["replay_record"]) + ")."
+        lines += ["", "**Verification:** " + note]
     if topic["open_questions"]:
-        lines += ["", "Open questions:", ""]
-        lines += ["- " + question["question"] for question in topic["open_questions"]]
+        lines += ["", "Tracked obligations (computed states):", ""]
+        for question in topic["open_questions"]:
+            relative_question = {**question, "source": topic_link(topic, question["source"])}
+            lines.append("- " + tracked_question(relative_question, evaluation))
     lines += ["", "[Exact scopes and verification limits](" + topic_link(topic, "STATUS.md") + "). "
-              "Publication, formal verification and independent review are separate statuses.", ""]
+              "Publication, formal verification and independent review are separate statuses. "
+              "[Dependency routes](" + topic_link(topic, "DEPENDENCIES.md") + ") and "
+              "[scope audit](" + topic_link(topic, "SCOPES.md") + ") expose remaining gaps.", ""]
     return "\n".join(lines)
 
 
 def render_research_index(data: dict) -> str:
+    graph = dependency_graph(data)
+    evaluation = graph.evaluate() if graph else {}
     lines = ["# Research", "",
              "<!-- Generated from MATH_STATUS.json; run make render-navigation. -->", "",
              "Current AI-assisted mathematics, organized by topic. "
              "[Published papers](../results/README.md) and "
              "[unpublished manuscripts](../unpublished/README.md) have separate catalogues.", "",
-             "| Topic | Scope | Current status |", "|---|---|---|"]
+             "| Topic | Scope | Authored assessment | Computed obligations |", "|---|---|---|---|"]
     for topic in data["topics"]:
+        gaps = [evaluation[node_id] for node_id in topic.get("gap_ids", []) if node_id in evaluation]
+        resolved = sum(record["state"] in {"proved", "falsified"} for record in gaps)
+        progress = f"{len(gaps) - resolved} unresolved; {resolved} resolved"
+        if any(evaluation.get(question.get("node"), {}).get("state") in {"proved", "falsified"}
+               for question in topic["open_questions"]):
+            progress += "; assessment update needed"
         lines.append("| [" + markdown_cell(topic["title"]) + "](" + topic["readme"] + ") | "
-                     + markdown_cell(topic["summary"]) + " | " + markdown_cell(topic["status"]) + " |")
+                     + markdown_cell(topic["summary"]) + " | " + markdown_cell(topic["status"])
+                     + " | " + progress + " |")
     lines += ["", "The [current result catalogue](STATUS.md) is generated from "
               "[MATH_STATUS.json](MATH_STATUS.json). It records main statements, proof sources "
               "and verification limits. Internal proof status does not imply publication.",
+              "", "[Scope and missing gaps](SCOPES.md) · [Dependency DAG](DEPENDENCIES.md) · "
+              "[How to maintain implications](DEPENDENCY_GUIDE.md)",
               "", "[Verification commands](REPRODUCE.md)", ""]
     return "\n".join(lines)
 
 
 def navigation_outputs(data: dict) -> dict[Path, str]:
     outputs = {ROOT / "STATUS.md": render(data), ROOT / "README.md": render_research_index(data)}
+    graph = dependency_graph(data)
+    evaluation = graph.evaluate() if graph else {}
     for topic in data["topics"]:
         assert re.fullmatch(r"[a-z0-9-]+", topic["id"]), "invalid topic identifier"
         assert topic["readme"] == topic["id"] + "/README.md", "topic guide must be its own README"
-        outputs[ROOT / topic["readme"]] = render_topic(topic)
+        outputs[ROOT / topic["readme"]] = render_topic(topic, evaluation)
+    if graph:
+        from dependency_views import render_dependency_report, render_scope_report
+        outputs[ROOT / "DEPENDENCIES.md"] = render_dependency_report(data, graph)
+        outputs[ROOT / "SCOPES.md"] = render_scope_report(data, graph)
     return outputs
 
 
@@ -252,20 +365,56 @@ def markdown_documents() -> list[Path]:
     return sorted({REPOSITORY / name for name in names if name and (REPOSITORY / name).is_file()})
 
 
-def source_markdown_mirrors() -> set[Path]:
+def retained_json_records() -> list[Path]:
+    """Ask Git for retained records without walking ignored computation caches."""
+    names = subprocess.check_output(
+        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard",
+         "--", "research/**/*.json"], cwd=REPOSITORY).decode().split("\0")
+    return sorted({REPOSITORY / name for name in names
+                   if name and (REPOSITORY / name).is_file()})
+
+
+def check_current_inputs(documents: list[Path] | None = None) -> int:
+    """Validate explicit current manifests; old receipt digests remain snapshots."""
+    checked = 0
+    for document in retained_json_records() if documents is None else documents:
+        name = document.name
+        if not (name == "sources.json" or name.endswith(
+                ("context.json", "verification.json", "receipt.json"))):
+            continue
+        data = json.loads(document.read_text())
+        declarations = []
+        for key in ("retained_sha256", "retained_proof_and_source_sha256"):
+            for value, digest in data.get(key, {}).items():
+                declarations.append((value, digest, ROOT))
+        for item in data.get("local_sources", []):
+            declarations.append((item["path"], item["sha256"], ROOT))
+        replay = data.get("current_replay", {})
+        if isinstance(replay, dict):
+            for value, digest in replay.get("files", {}).items():
+                declarations.append((value, digest, document.parent))
+        for value, digest, base in declarations:
+            path = reference(value, base)
+            assert re.fullmatch(r"[0-9a-f]{64}", digest), f"invalid input digest: {document}"
+            actual = hashlib.sha256(path.read_bytes()).hexdigest()
+            assert actual == digest, f"changed current input: {document.relative_to(ROOT)} -> {value}"
+            checked += 1
+    return checked
+
+
+def source_markdown_mirrors(ledgers: list[Path] | None = None) -> set[Path]:
     """Pinned upstream documents retain upstream-relative links and exact bytes."""
     mirrors = set()
-    for ledger in ROOT.rglob("source_ledger.json"):
+    for ledger in ([p for p in retained_json_records() if p.name == "source_ledger.json"]
+                   if ledgers is None else ledgers):
         data = json.loads(ledger.read_text())
         for item in data.get("cached_primary_sources", []):
-            path = (ledger.parent / item["file"]).resolve()
-            if path.suffix != ".md" or not path.is_file():
-                continue
-            assert path.is_relative_to(REPOSITORY.resolve()), f"external source cache path: {path}"
+            path = reference(item["file"], ledger.parent)
             assert item["url"].startswith("https://"), f"source mirror lacks upstream URL: {path}"
             actual = hashlib.sha256(path.read_bytes()).hexdigest()
             assert actual == item["sha256"], f"changed pinned upstream Markdown source: {path}"
-            mirrors.add(path)
+            if path.suffix == ".md":
+                mirrors.add(path)
     return mirrors
 
 
@@ -296,45 +445,183 @@ def check_links() -> tuple[int, int]:
     return checked, len(documents)
 
 
+def print_explanation(record: dict) -> None:
+    print(f"{record['id']}: {record['state']} — {record['title']}")
+    print(record["scope"])
+    print("Authored state: " + str(record["recorded_state"])
+          + "; dependency coverage: " + record["dependency_coverage"])
+    if record["assumptions"]:
+        print("Assumptions: " + ", ".join(record["assumptions"]))
+    seen = set()
+
+    def provenance(current: dict, indent: str = "") -> None:
+        if current["id"] in seen:
+            print(indent + current["id"] + " (provenance shown above)")
+            return
+        seen.add(current["id"])
+        if indent:
+            print(indent + current["id"] + ": " + current["state"])
+        for source in current.get("sources", []):
+            print(indent + "  Source: " + source["path"] + " :: " + source["locator"])
+            print(indent + "    sha256:" + source["sha256"])
+        for route in current["routes"]:
+            print(indent + "  " + route["id"] + ": " + route["state"]
+                  + " <= " + " AND ".join(route["premises"]))
+            if route.get("proof"):
+                proof = route["proof"]
+                print(indent + "    " + proof["path"] + " :: " + proof["locator"])
+                print(indent + "    sha256:" + proof["sha256"])
+        for premise in current.get("premise_provenance", []):
+            provenance(premise, indent + "    ")
+
+    provenance(record)
+    for blocker in record["blockers"]:
+        print("  Blocker: " + blocker["id"] + " (" + blocker["state"] + ") via "
+              + " -> ".join(blocker["path"]))
+    if record.get("stale_sources"):
+        print("Stale evidence: " + ", ".join(item["path"] for item in record["stale_sources"]))
+    print("Internal graph status; assurance and publication flags are unchanged.")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
-    commands.add_parser("render", help="render current status, research index and topic guides")
-    commands.add_parser("check", help="validate current sources, hashes, portfolio and local Markdown links")
+    commands.add_parser("render", help="render status, scope audit, DAG and topic guides")
+    commands.add_parser("check", help="validate sources, graph, freshness, portfolio and local links")
     commands.add_parser("list", help="list the current research topics")
-    show = commands.add_parser("show", help="read one topic or principal result")
+    show = commands.add_parser("show", help="read one topic, principal result or graph node")
     show.add_argument("id")
-    search = commands.add_parser("search", help="search current topic and result metadata")
+    search = commands.add_parser("search", help="search current topic, result and graph metadata")
     search.add_argument("query")
+    explain = commands.add_parser("explain", help="show proof routes, assumptions and missing premises")
+    explain.add_argument("id")
+    explain.add_argument("--json", action="store_true")
+    impact = commands.add_parser("impact", help="list descendants affected by a node or source")
+    impact.add_argument("id", nargs="?")
+    impact.add_argument("--source", help="research-relative evidence path")
+    impact.add_argument("--json", action="store_true")
+    simulate = commands.add_parser("simulate", help="read-only hypothetical propagation")
+    for option in ("prove", "reopen", "falsify", "stale"):
+        simulate.add_argument("--" + option, action="append", default=[], metavar="ID")
+    simulate.add_argument("--json", action="store_true")
+    graph_command = commands.add_parser("graph", help="export the complete implication DAG")
+    graph_command.add_argument("--format", choices=("dot", "json"), default="dot")
+    gaps = commands.add_parser("gaps", help="list scoped mathematical, formal and workflow gaps")
+    gaps.add_argument("--topic")
+    gaps.add_argument("--kind", choices=("mathematical", "formalization", "verification", "workflow"))
+    gaps.add_argument("--json", action="store_true")
     args = parser.parse_args()
     data = load()
-    if args.command in {"render", "check"}:
-        topics, results = validate(data)
-        if args.command == "render":
-            for path, text in navigation_outputs(data).items():
-                path.write_text(text)
-            print(f"Rendered current status, research index and {topics} topic guides ({results} principal results)")
-        else:
-            check_navigation(data)
-            published, drafts = check_portfolio()
-            links, documents = check_links()
-            print(f"PASS current research: {topics} topics, {results} principal results; sources, evidence and checker hashes exist")
-            print(f"PASS portfolio: {published} sealed published papers, {drafts} unpublished manuscripts")
-            print(f"PASS local links: {links} references in {documents} maintained Markdown files; no proof replay")
-    elif args.command == "list":
-        for topic in data["topics"]:
-            print(topic["id"] + ": " + topic["title"] + " — " + topic["status"])
-    elif args.command == "show":
-        records = [*data["topics"], *(result for topic in data["topics"] for result in topic["results"])]
-        selected = next((record for record in records if record["id"] == args.id), None)
-        if selected is None:
-            parser.error("unknown current topic or result: " + args.id)
-        print(json.dumps(selected, indent=2, ensure_ascii=False))
-    else:
-        words = args.query.lower().split()
-        for topic in data["topics"]:
-            if all(word in json.dumps(topic, ensure_ascii=False).lower() for word in words):
-                print(topic["id"] + ": " + topic["title"])
+    try:
+        graph = dependency_graph(data)
+        if args.command in {"render", "check"}:
+            topics, results = validate(data)
+            if args.command == "render":
+                for path, content in navigation_outputs(data).items():
+                    path.write_text(content)
+                print(f"Rendered status, scope audit, DAG and {topics} topic guides ({results} results)")
+            else:
+                missing = missing_source_closure(graph)
+                assert not missing, "unpinned local proof includes/imports: " + json.dumps(missing)
+                stale = graph.stale_evidence()
+                if stale:
+                    paths = sorted({item["path"] for item in stale})
+                    parser.error("changed graph evidence in " + str(len(paths)) + " files / "
+                                 + str(len(stale)) + " declarations: " + ", ".join(paths)
+                                 + ". Use impact --source PATH and inspect the proof before accepting new pins.")
+                check_navigation(data)
+                pinned_inputs = check_current_inputs()
+                published, drafts = check_portfolio()
+                links, documents = check_links()
+                print(f"PASS current research: {topics} topics, {results} principal results; sources, evidence and checker hashes")
+                print(f"PASS dependency DAG: {len(graph.nodes)} nodes, {len(graph.rules)} implications; acyclic, pinned and current")
+                print(f"PASS portfolio: {published} sealed published papers, {drafts} unpublished manuscripts")
+                print(f"PASS current input manifests: {pinned_inputs} pinned references; cached primary sources checked")
+                print(f"PASS local links: {links} references in {documents} maintained Markdown files; no proof replay")
+        elif args.command == "list":
+            for topic in data["topics"]:
+                print(topic["id"] + ": " + topic["title"] + " — " + topic["status"])
+        elif args.command == "show":
+            records = [*data["topics"], *(result for topic in data["topics"] for result in topic["results"]),
+                       *data.get("graph", {}).get("nodes", [])]
+            selected = next((record for record in records if record["id"] == args.id), None)
+            if selected is None:
+                parser.error("unknown current topic or result: " + args.id)
+            print(json.dumps(selected, indent=2, ensure_ascii=False))
+        elif args.command == "search":
+            words = args.query.lower().split()
+            for record in [*data["topics"], *data.get("graph", {}).get("nodes", [])]:
+                if all(word in json.dumps(record, ensure_ascii=False).lower() for word in words):
+                    print(record["id"] + ": " + record.get("title", record.get("label", "")))
+        elif args.command == "graph":
+            assert graph is not None, "no dependency graph"
+            if args.format == "dot":
+                print(graph.to_dot(), end="")
+            else:
+                print(json.dumps({"nodes": graph.evaluate(), "implications": list(graph.rules.values())},
+                                 indent=2, ensure_ascii=False))
+        elif args.command == "explain":
+            assert graph is not None, "no dependency graph"
+            record = graph.explain(args.id)
+            if args.json:
+                print(json.dumps(record, indent=2, ensure_ascii=False))
+            else:
+                print_explanation(record)
+        elif args.command == "impact":
+            assert graph is not None, "no dependency graph"
+            if bool(args.id) == bool(args.source):
+                parser.error("impact requires either ID or --source PATH")
+            affected = graph.source_impact(args.source) if args.source else graph.impact(args.id)
+            evaluation = graph.evaluate()
+            records = [evaluation[node_id] for node_id in affected]
+            if args.json:
+                print(json.dumps(records, indent=2, ensure_ascii=False))
+            else:
+                print("Structural descendants (including blocked alternative routes):")
+                for record in records:
+                    print(record["id"] + ": " + record["state"] + " — " + record["title"])
+        elif args.command == "simulate":
+            assert graph is not None, "no dependency graph"
+            overrides = {}
+            for option, state in (("prove", "proved"), ("reopen", "open"),
+                                  ("falsify", "falsified"), ("stale", "stale")):
+                for node_id in getattr(args, option):
+                    if node_id in overrides:
+                        parser.error("multiple overrides for " + node_id)
+                    overrides[node_id] = state
+            if not overrides:
+                parser.error("simulate requires at least one --prove/--reopen/--falsify/--stale ID")
+            result = graph.simulate(overrides)
+            if args.json:
+                print(json.dumps(result, indent=2, ensure_ascii=False))
+            else:
+                print("HYPOTHETICAL — assumes overrides; catalogue and assurance flags unchanged.")
+                for change in result["changes"]:
+                    print(json.dumps(change, ensure_ascii=False))
+                if not result["changes"]:
+                    print("No effective state changes.")
+        elif args.command == "gaps":
+            assert graph is not None, "no dependency graph"
+            if args.topic and args.topic not in {topic["id"] for topic in data["topics"]}:
+                parser.error("unknown topic: " + args.topic)
+            evaluation = graph.evaluate()
+            rows = []
+            for topic in data["topics"]:
+                if args.topic and topic["id"] != args.topic:
+                    continue
+                for node_id in topic.get("gap_ids", []):
+                    node = graph.nodes[node_id]
+                    kind = node.get("gap_kind", "mathematical")
+                    if args.kind and kind != args.kind:
+                        continue
+                    rows.append({**evaluation[node_id], "topic": topic["id"], "node_kind": node["kind"], "kind": kind})
+            if args.json:
+                print(json.dumps(rows, indent=2, ensure_ascii=False))
+            else:
+                for row in rows:
+                    print(f"{row['topic']}/{row['id']} [{row['kind']}, {row['state']}]: {row['scope']}")
+    except (GraphValidationError, AssertionError) as error:
+        parser.error(str(error))
 
 
 if __name__ == "__main__":

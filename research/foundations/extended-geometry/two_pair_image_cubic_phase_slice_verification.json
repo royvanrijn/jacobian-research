@@ -1,0 +1,78 @@
+{
+  "format": "two-pair-image-cubic-phase-slice-v1",
+  "arithmetic": "exact symbolic rational polynomial identities",
+  "software": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "proof_source": "foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+  "checker": "foundations/scripts/verify_two_pair_image_cubic_phase_slice.py",
+  "checker_sha256": "0cca987a6616a4f12234cdf12f10708cada09e2f0d0d9b748f1be55a3904cbc7",
+  "command": ".venv/bin/python research/foundations/scripts/verify_two_pair_image_cubic_phase_slice.py",
+  "family": "p=y*(c0+c1*x+c2*x^2)+d0+d1*x+d2*x^2+d3*x^3",
+  "sphere_relation": "t^2+2*x*y=1",
+  "parameter_dimension": 7,
+  "moment_functional": "L(x^i*y^j)=delta(i,j)*i!/(2*i+1)!!",
+  "conclusion": "L(p^m)=0 for m=1..6 iff p has strictly one-sided phase support in these coordinates (including zero)",
+  "branches": {
+    "c0_nonzero": {
+      "normalization": "scale c0=1; a=c1/c0, b=c2/c0, and similarly scale d0..d3",
+      "triangular_equations": [
+        {
+          "moment": 1,
+          "identity": "M1=(a+3*d0)/3",
+          "solution": "d0=-a/3"
+        },
+        {
+          "moment": 2,
+          "identity": "M2=2/3*(d1-(-a**2/30 - 2*b/5))",
+          "solution": "d1=-a**2/30 - 2*b/5"
+        },
+        {
+          "moment": 3,
+          "identity": "M3=2/5*(d2-(a*(31*a**2 - 108*b)/1890))",
+          "solution": "d2=a*(31*a**2 - 108*b)/1890"
+        },
+        {
+          "moment": 4,
+          "identity": "M4=8/35*(d3-(-289*a**4/28350 + 47*a**2*b/1050 - 2*b**2/75))",
+          "solution": "d3=-289*a**4/28350 + 47*a**2*b/1050 - 2*b**2/75"
+        }
+      ],
+      "moment5_after_triangular_substitution": "-4*a*(2219*a**4 - 11874*a**2*b + 13176*b**2)/9823275",
+      "moment6_after_triangular_substitution": "-351224*a**6/1218979125 + 1759544*a**4*b/1489863375 - 21608*a**2*b**2/165540375 - 32*b**3/34125",
+      "a_nonzero_substitution": "z=b/a^2",
+      "P": "13176*z**2 - 11874*z + 2219",
+      "Q": "1571724*z**3 + 218781*z**2 - 1979487*z + 482933",
+      "bezout_A": "6676468225812*z**2 + 2727590293062*z - 7662133538547",
+      "bezout_B": "35364219296 - 55969842888*z",
+      "bezout_identity": "A*P+B*Q=76274195239375",
+      "a_zero_moment6": "-32*b^3/34125",
+      "result": "a=b=d0=d1=d2=d3=0; p=y before undoing scaling"
+    },
+    "c0_zero": {
+      "moment1": "d0+c1/3",
+      "moment2_after_moment1": "c1^2/45",
+      "result": "c1=d0=0; all remaining monomials have positive phase weight"
+    }
+  },
+  "sharpness": {
+    "p": "y+x^2*y-2*x/5-2*x^3/75",
+    "moments_1_through_6": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-32/34125"
+    ]
+  },
+  "negative_control": "perturbing Bezout_A by +1 does not satisfy the recorded identity",
+  "assurance": {
+    "internal_exact_replay": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "limits": "Does not cover the full 16-parameter cubic family or certify a general degree-three classification."
+}

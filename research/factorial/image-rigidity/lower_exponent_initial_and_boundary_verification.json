@@ -1,0 +1,25 @@
+{
+  "kind": "internal bounded exact replay; universal proof is the TeX source",
+  "claims": {
+    "two_three_separation": "all integer d>=1 and real y>=x>0; elementary proof",
+    "lower_exponent_initial_block": "all a>=0,d>=1 integers and beta>0, terminal<=3",
+    "parameter_polynomial_selection": "all N>=2,d>=1,z complex; elementary degree proof",
+    "all_index_binomial_sfc": false
+  },
+  "coverage": {
+    "symbolic_recurrence_cases": 20,
+    "polynomial_kernel_rank_specializations_per_case": 4,
+    "rational_inequality_cases": 200,
+    "exact_moment_gcd_cases": 144
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "lower_exponent_initial_and_boundary.tex": "86a1f888ad99e76ae486e97ebe7c5bd576dec42c95f10bb2944abcf542bf0c53",
+    "lower_exponent_initial_and_boundary.py": "a603898e24b0a34cc898b6147d3dd283b77ac2bcc395f0bcc86427c49a645025"
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "passed": true
+}

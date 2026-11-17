@@ -335,8 +335,8 @@
   "current_internal_replay": {
     "date": "2026-11-17",
     "executor": "Internal Codex replay in an isolated copy of current retained files",
-    "scope": "Eight declared finite certificate entry points and the restored compact sharp-five named-diagram audit. No search generator, 243/293-knot campaign, source workbook audit, formal build or external review was run.",
-    "outcome": "PASS: all nine entry points; existing non-provenance receipt values unchanged.",
+    "scope": "Nine current finite certificate entry points, following standalone-boundary changes in four imported helper modules. All function ASTs and AST outside module docstrings/main guards are unchanged. No search generator, 243/293-knot campaign, workbook audit, formal build or external review was run.",
+    "outcome": "PASS: all nine entry points; existing non-provenance receipt values unchanged. All four unsupported standalone entries exit with a helpful availability message.",
     "commands": [
       {
         "checker": "check_finite_cover_certificates.py",
@@ -382,6 +382,36 @@
         "checker": "verify_diagram_audit.py",
         "sha256": "41f7bb9e96b6863e845feaac2870fc7a734946715c82cda33055e7e7a276aec3",
         "exit_code": 0
+      }
+    ],
+    "helper_entry_boundaries": [
+      {
+        "path": "research/meridional-rank/representations/verify_integer_lifts.py",
+        "before_sha256": "4ef7d33a3ec593f8d43d0c897e14d22e70323657d380ee9c44b657cc636ab309",
+        "after_sha256": "5c76a33170d39cbfd6bf47acbd5d5b791c009a58d85fbf7c6d5e872e31175091",
+        "function_AST_identical": true,
+        "only_module_docstring_and_main_guard_changed": true
+      },
+      {
+        "path": "research/meridional-rank/representations/verify_double_transpositions.py",
+        "before_sha256": "43eaa8c10f8cb8e96d63f8ab01028aee853d592809c7e8eaa92f3ad283545702",
+        "after_sha256": "eb6ff0490c74553678ce9ef6790d081ebd2a3d53e2ab347de72854b4cce8e512",
+        "function_AST_identical": true,
+        "only_module_docstring_and_main_guard_changed": true
+      },
+      {
+        "path": "research/meridional-rank/representations/verify_compact_covers.py",
+        "before_sha256": "a3791df7d81a6ce3f072cc19bf52efab78395376fae4d91ce0f12dce03770a2f",
+        "after_sha256": "209d12d67cabae8d852db39c9b8ee313496bec9097f4e6f4e75c332b08c8f4cb",
+        "function_AST_identical": true,
+        "only_module_docstring_and_main_guard_changed": true
+      },
+      {
+        "path": "research/meridional-rank/representations/verify_port_assemblies.py",
+        "before_sha256": "d05cb9773dc4145bec2e88d3a2aadb2d86ec5c59d55d5030ba29fa0e036b07e2",
+        "after_sha256": "7b1732da1612c2531546577596ea8762d38151c4a4f655051adcfbf79e51fc73",
+        "function_AST_identical": true,
+        "only_module_docstring_and_main_guard_changed": true
       }
     ],
     "independent_replay": false,

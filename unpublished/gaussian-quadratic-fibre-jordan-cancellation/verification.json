@@ -5,9 +5,9 @@
   "pdf": "gaussian_moments_one_base_constant_quadratic_fibres.pdf",
   "pages": 11,
   "source_hashes": {
-    "main.tex": "e5082ba126d57900831fa998940064d59d813dfa13ad1c635a5b0388f29ff95d"
+    "main.tex": "9f931c3d2dce2a063b90b951775786785662ad02d0ba214295d042718c094185"
   },
-  "pdf_sha256": "5bbc42baeedf960a698c67d2fcd17936c54f863fbdec7f64b8ddd56556756499",
+  "pdf_sha256": "ce6577fecd535202baf0b3c2a3c16375b4adc90631cabe315fb0665c98dff350",
   "build": "latexmk -pdf -jobname=gaussian_moments_one_base_constant_quadratic_fibres -interaction=nonstopmode -halt-on-error main.tex",
   "checks": {
     "latexmk_cross_references_stable": true,
@@ -15,7 +15,7 @@
     "overfull_boxes": 0,
     "underfull_boxes": 0,
     "all_pages_rendered": true,
-    "visual_review": "All 11 pages rendered and visually inspected; no clipping, overlap, unresolved references or awkward theorem-list split observed.",
+    "visual_review": "All 11 pages rendered and compared with the preceding reviewed PDF. Only page 11 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references.",
     "standalone_source_bundle_build": true,
     "rebuilt_pdf_text_and_pixels_match": true,
     "rebuild_scope": "Internal clean build from the isolated source archive; all pages match retained PDF text and rendering. This is artifact reproduction, not independent mathematical review."
@@ -48,5 +48,35 @@
       "location": "Section 1, Theorem 1.9 and Corollary 1.10, printed pp. 6-7",
       "used_for": "Formal Puiseux splitting after finite ramification; characteristic zero ensures separability of the minimal polynomials. The full published-book chapter previously cited was not claimed inspected."
     }
-  ]
+  ],
+  "publication_label_cleanup": {
+    "checked_on": "2026-11-17",
+    "scope": "Editorial removal of the temporary manuscript-status label from the date line; theorem statements and mathematical arguments unchanged. PDF subject metadata now describes the mathematical topic.",
+    "previous_source_sha256": "e5082ba126d57900831fa998940064d59d813dfa13ad1c635a5b0388f29ff95d",
+    "previous_pdf_sha256": "5bbc42baeedf960a698c67d2fcd17936c54f863fbdec7f64b8ddd56556756499",
+    "previous_review_scope": "The mathematical review and retained audit claims above concern the preceding source edition; this cleanup rebuilds and checks presentation and artifact reproduction only.",
+    "rendered_pages_changed": [
+      1
+    ],
+    "pdf_text_unchanged_except_removed_label": true,
+    "later_pages_pixel_identical": true,
+    "diagnostics": {
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 0,
+      "rerun_required": false
+    }
+  },
+  "ai_attribution_update": {
+    "scope": "Editorial standardization of the AI attribution to the PAPERS.md wording; mathematical statements, arguments and assurance flags unchanged. Earlier mathematical-review records retain their recorded scope; no new mathematical or Lean verification is claimed. The bibliography uses small type to keep all five entries on the final page.",
+    "previous_source_hashes": {
+      "main.tex": "b1eb1ed87d8e04d4c26257b73f3df7c8559d8a3f92503d18b7de3952cf49ce67"
+    },
+    "previous_pdf_sha256": "a3860ae09533c4476fdf785d340bc9612cffbfea8ae98ffbf2cea02201e50445",
+    "changed_pages": [
+      11
+    ],
+    "latex_issues": [],
+    "canonical_paragraph_occurrences": 1
+  }
 }

@@ -8,21 +8,19 @@ precisely so that these two coefficients are target coordinates, while the
 derivative of the inverse equation cancels out of the Jacobian.
 
 The centered identity from the introduction determines the seed.  Put
-\[
- G(S)=S^5-\frac32S^4+\frac32S^3-\frac54S^2+\frac9{16}S.
- \tag{2.1}\label{eq:seed}
-\]
+\begin{equation}
+ G(S)=S^5-\frac32S^4+\frac32S^3-\frac54S^2+\frac9{16}S.\label{eq:seed}
+\end{equation}
 The coefficients may look tailored, because they are: \(G\) is the fixed
 part left after translating \(X^3(X^2+X+1)\) by \(X=S-\tfrac12\).
 
 We first write the natural determinant-minus-two gauge map, and then make a
 small linear normalization to obtain Jacobian one.  For source coordinates
 \((x,y,z)\), set
-\[
+\begin{equation}
  t=1+xy,\qquad
- q=t^2z+\frac38y^2(1+3t),
- \tag{2.2}\label{eq:tq}
-\]
+ q=t^2z+\frac38y^2(1+3t),\label{eq:tq}
+\end{equation}
 and define \(F_0=(\Pi,B,C)\) by
 \begin{align}
  \Pi={}&tq,\notag\\
@@ -30,8 +28,7 @@ and define \(F_0=(\Pi,B,C)\) by
        -\frac{32}{3}t^2x^2q^4
        +\frac{80}{9}t^2x^3q^5,\notag\\
  C={}&x(5-3t)-\frac83x^3z
-       +\frac{16}{3}(xq)^4-\frac{16}{3}(xq)^5.
- \tag{2.3}\label{eq:base-map}
+       +\frac{16}{3}(xq)^4-\frac{16}{3}(xq)^5.\label{eq:base-map}
 \end{align}
 These are polynomial coordinates over \(\Q\).
 The formula is long, but there is no search hidden inside it: it is the
@@ -40,17 +37,15 @@ below.
 
 The determinant \(-2\) is the natural normalization of the inverse
 equation.  It is not an arithmetic restriction.  Let
-\[
+\begin{equation}
  A(x,y,z)=\left(\frac{x}{2},y,z\right),
  \qquad
- L(\Pi,B,C)=(-\Pi,B,C),
- \tag{2.4}\label{eq:linear-normalization}
-\]
+ L(\Pi,B,C)=(-\Pi,B,C),\label{eq:linear-normalization}
+\end{equation}
 and take as our fixed map
-\[
- \boxed{\Phi=L\circ F_0\circ A.}
- \tag{2.5}\label{eq:normalized-map}
-\]
+\begin{equation}
+ \boxed{\Phi=L\circ F_0\circ A.}\label{eq:normalized-map}
+\end{equation}
 Equations \eqref{eq:tq}--\eqref{eq:normalized-map} are an explicit polynomial formula for
 \(\Phi\).  The normalization has been chosen so that it does not increase
 the height of the target family.
@@ -59,61 +54,53 @@ the height of the target family.
 
 The inverse problem for \eqref{eq:base-map} is one-dimensional.  For an independent
 target coordinate \(\Pi\), define
-\[
+\begin{equation}
  G_\Pi(S)=\frac9{16}S
  +\Pi\left(-\frac54S^2+\frac32S^3\right)
- -\frac32\Pi^4S^4+\Pi^5S^5
- \tag{2.6}\label{eq:g-pi}
-\]
+ -\frac32\Pi^4S^4+\Pi^5S^5\label{eq:g-pi}
+\end{equation}
 and
-\[
+\begin{equation}
  E_{\Pi,B,C}(S)
- =G_\Pi(S)-\frac9{32}(BS^2+C).
- \tag{2.7}\label{eq:inverse-equation}
-\]
+ =G_\Pi(S)-\frac9{32}(BS^2+C).\label{eq:inverse-equation}
+\end{equation}
 
 \begin{proposition}[Quadratic-gauge specialization]\label{prop:gauge}
 The map \(F_0\) satisfies
-\[
- \det DF_0=-2,\qquad \gdeg(F_0)=5.
- \tag{2.8}\label{eq:base-invariants}
-\]
+\begin{equation}
+ \det DF_0=-2,\qquad \gdeg(F_0)=5.\label{eq:base-invariants}
+\end{equation}
 If \(\pi\ne0\) and \(E_{\pi,b,c}\) is squarefree, then there is a natural
 fiber isomorphism
-\[
+\begin{equation}
  F_0^{-1}(\pi,b,c)
- \simeq\Spec\Q[S]/(E_{\pi,b,c}).
- \tag{2.9}\label{eq:base-fiber}
-\]
+ \simeq\Spec\Q[S]/(E_{\pi,b,c}).\label{eq:base-fiber}
+\end{equation}
 \end{proposition}
 
 \begin{proof}
 We recall the short inverse-coordinate calculation, both to make the fiber
 claim self-contained and to account for every source point.  On \(t\ne0\)
 put
-\[
+\begin{equation}
  S=\frac{x}{t},\qquad Q=y+xq,\qquad
- D=1-SQ+\Pi S^2.
- \tag{2.10}\label{eq:chart}
-\]
+ D=1-SQ+\Pi S^2.\label{eq:chart}
+\end{equation}
 Since \(\Pi=tq\), one has \(D=t^{-1}\).  With
-\[
+\begin{equation}
  \beta(\Pi,S)
- =\frac{G_\Pi'(S)/(9/16)-1-\Pi S^2}{S},
- \tag{2.11}\label{eq:beta}
-\]
+ =\frac{G_\Pi'(S)/(9/16)-1-\Pi S^2}{S},\label{eq:beta}
+\end{equation}
 direct expansion of \eqref{eq:base-map} gives
-\[
+\begin{equation}
  B=Q+\beta(\Pi,S),\qquad
- C=\frac{32}{9}G_\Pi(S)-BS^2.
- \tag{2.12}\label{eq:compact-target}
-\]
+ C=\frac{32}{9}G_\Pi(S)-BS^2.\label{eq:compact-target}
+\end{equation}
 The second identity is precisely \(E_{\Pi,B,C}(S)=0\), and differentiation
 gives
-\[
- D=\frac{16}{9}E_{\Pi,B,C}'(S).
- \tag{2.13}\label{eq:derivative}
-\]
+\begin{equation}
+ D=\frac{16}{9}E_{\Pi,B,C}'(S).\label{eq:derivative}
+\end{equation}
 At fixed \(\Pi\), the Jacobian of \((S,Q)\mapsto(B,C)\) is \(-2D\);
 the Jacobian of the source chart
 \((x,y,z)\mapsto(\Pi,S,Q)\) is \(D^{-1}\).  Their product is \(-2\), proving
@@ -123,15 +110,14 @@ If a source point lies over \((\pi,b,c)\) with \(\pi\ne0\), then
 \(tq=\pi\), so \(t\) and \(q\) are units and the chart above contains the
 entire fiber.  Conversely, let \(s\) be a root of \(E_{\pi,b,c}\) over a
 commutative \(\Q\)-algebra and suppose \(E_{\pi,b,c}'(s)\) is a unit.  Put
-\[
+\begin{equation}
  \begin{gathered}
  d=\frac{16}{9}E_{\pi,b,c}'(s),\qquad
  Q=b-\beta(\pi,s),\qquad t=d^{-1},\\
  x=sd^{-1},\qquad y=Q-\pi s,\qquad q=\pi d,\\
  z=d^2\left(q-\frac38y^2(1+3t)\right).
- \end{gathered}
- \tag{2.14}\label{eq:reconstruction}
-\]
+ \end{gathered}\label{eq:reconstruction}
+\end{equation}
 Equations \eqref{eq:chart}--\eqref{eq:derivative} show directly that this reconstructs a
 unique source point.  If \(E_{\pi,b,c}\) is squarefree, B\'ezout's identity
 for \(E\) and \(E'\) makes \(E'(s)\) a unit over every test algebra.  Hence
@@ -149,41 +135,36 @@ identity in \eqref{eq:base-invariants}.
 
 Since the determinants of \(A\) and \(L\) are \(1/2\) and \(-1\),
 respectively, \eqref{eq:base-invariants} gives
-\[
+\begin{equation}
  \det D\Phi=(-1)(-2)\left(\frac12\right)=1,
  \qquad
- \gdeg(\Phi)=5.
- \tag{2.15}\label{eq:normalized-invariants}
-\]
+ \gdeg(\Phi)=5.\label{eq:normalized-invariants}
+\end{equation}
 
 \subsection{Why the target line appears}
 
 At this point the map is fixed.  What remains is to see the whole
 intersective family inside its target.  Set \(\Pi=1\).  For \(a\in\Q\), put
-\[
+\begin{equation}
  \widetilde y_a=
- \left(1,\frac{32a}{9},\frac{8a+1}{3}\right).
- \tag{2.16}\label{eq:unnormalized-target}
-\]
+ \left(1,\frac{32a}{9},\frac{8a+1}{3}\right).\label{eq:unnormalized-target}
+\end{equation}
 The elementary identity
-\[
+\begin{equation}
  \left(S-\frac12\right)^3\left(S^2+\frac34\right)
- =G(S)-\frac3{32}
- \tag{2.17}\label{eq:centered-identity}
-\]
+ =G(S)-\frac3{32}\label{eq:centered-identity}
+\end{equation}
 gives
 \begin{align}
  E_{\widetilde y_a}(S)
  &=
  \left(\left(S-\frac12\right)^3-a\right)
- \left(S^2+\frac34\right).
- \tag{2.18}\label{eq:target-factorization}
+ \left(S^2+\frac34\right).\label{eq:target-factorization}
 \end{align}
 After \(X=S-\tfrac12\), this becomes
-\[
- (X^3-a)(X^2+X+1).
- \tag{2.19}\label{eq:translated-factorization}
-\]
+\begin{equation}
+ (X^3-a)(X^2+X+1).\label{eq:translated-factorization}
+\end{equation}
 The target line is now visible.  Changing \(a\) changes the target, not the
 map.  The centered quadratic has no linear term, so the parameter is
 absorbed exactly by \(B\) and \(C\).
@@ -193,11 +174,10 @@ automorphism \(A\) and Proposition~\ref{prop:gauge} therefore give
 \eqref{eq:main-fiber} whenever \eqref{eq:translated-factorization} is squarefree.
 
 Its two factor discriminants and their resultant are
-\[
+\begin{equation}
  \operatorname{disc}(X^3-a)=-27a^2,\qquad
  \operatorname{disc}(X^2+X+1)=-3,\qquad
- \operatorname{Res}=(a-1)^2.
- \tag{2.20}\label{eq:disc-resultant}
-\]
-Thus every \(a>1\) in \(\mathcal A\) gives a reduced fiber of rank five.
+ \operatorname{Res}=(a-1)^2.\label{eq:disc-resultant}
+\end{equation}
+Thus every \(a\in\Q\setminus\{0,1\}\) gives a reduced fiber of rank five.
 By \eqref{eq:normalized-invariants}, the fiber is full.

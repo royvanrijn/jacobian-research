@@ -8,7 +8,7 @@ The Gaussian boundary and reductive homogeneous-space Mathieu paper have standal
 |---|---|
 | [Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification](mathieu-reductive-homogeneous-spaces/) | ready for review |
 | [The Dimension-Degree Boundary for Gaussian Moment Vanishing](gaussian-boundary/) | ready for review |
-| [Generalized Vanishing in Two Variables: Working Revision](generalized-vanishing-two-variables-revision/) | revision |
+| [The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension](generalized-vanishing-two-variables-revision/) | revision |
 | [The Gaussian Moments Conjecture in Two Variables](gaussian-moments-two-variables-revision/) | revision |
 | [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](common-arithmetic-fibers/) | draft |
 | [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](fixed-map-hasse-failures/) | draft |

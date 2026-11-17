@@ -13,30 +13,33 @@ map over \(\Q\) having a finite regular fiber that satisfies
 
 \begin{theorem}\label{thm:minimality}
 The minimal Hasse-failing geometric degree is
-\[
+\begin{equation}
  \boxed{d_{\HP}=5.}
- \tag{5.1}
-\]
+\end{equation}
 \end{theorem}
 
 \begin{proof}
 Let \(F:\A^n_{\Q}\to\A^n_{\Q}\) be a Keller map of geometric degree \(d\),
-and let \(X=F^{-1}(y)\) be a finite regular fiber.  Because \(F\) is
-\'etale, each geometric point of \(X\) extends, after shrinking around
-\(y\), to a distinct finite \'etale branch.  The geometric generic fiber
-has \(d\) points, so
-\[
+and let \(X=F^{-1}(y)\) be a finite regular fiber. After embedding
+\(\Q\) in \(\mathbb C\), the fiber has
+\(r=\operatorname{rank}_{\Q}X\) distinct points because \(F\) is \'etale.
+Choose pairwise disjoint small analytic neighborhoods of these points.
+The complex inverse function theorem, applied to the nonzero Jacobian,
+gives a common Euclidean neighborhood of \(y\) over which these
+neighborhoods supply \(r\) distinct inverse branches. On a nonempty
+Zariski open subset of the target the fiber has exactly \(d\) points.
+This open subset meets the Euclidean neighborhood, so \(r\le d\).
+Consequently
+\begin{equation}
  \operatorname{rank}_{\Q}X\le d.
- \tag{5.2}
-\]
+\end{equation}
 
 Suppose \(X\) is regular, everywhere locally soluble, and has no rational
 point.  Choose an integral primitive element for its finite \'etale
 coordinate algebra.  Thus
-\[
+\begin{equation}
  X\simeq\Spec\Q[T]/(P)
- \tag{5.3}
-\]
+\end{equation}
 for a monic squarefree polynomial \(P\in\Z[T]\) of degree
 \(\operatorname{rank}_{\Q}X\).  A \(\Q_p\)-root of the monic polynomial is
 integral.  Roots over every \(\Q_p\) therefore give roots modulo every prime
@@ -58,10 +61,9 @@ Chebotarev applied to these classes) then supplies a prime modulo which
 there is no root.  Hence no polynomial of degree at most four can have a
 root modulo every positive integer without already having a rational root.
 Thus
-\[
+\begin{equation}
  5\le\operatorname{rank}_{\Q}X\le d.
- \tag{5.4}
-\]
+\end{equation}
 On the other hand, Theorem~\ref{thm:main} gives a full Hasse-failing fiber
 of a degree-five Keller map.  Hence \(d_{\HP}=5\).
 \end{proof}

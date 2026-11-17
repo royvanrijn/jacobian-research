@@ -1,75 +1,133 @@
-\section{The local-global calculation}\label{sec:local-global}
+\section{All rational parameters on the target line}\label{sec:local-global}
 
-The geometric work is now finished: the entire fiber is the root scheme of
-one displayed polynomial.  The remaining argument is arithmetic, and it is
-here that the factorization reveals why the family is so flexible.  The
-cubic and quadratic do not both need a root at every place.  They only need
-to cover all places between them.
-
-Fix \(a\in\mathcal A\) and write
-\[
+The full fiber is controlled by the roots of
+\begin{equation}
  f_a(X)=(X^3-a)(X^2+X+1).
- \tag{3.1}
-\]
-The cubic has no rational root because \(a\) is not a cube, while the
-quadratic is irreducible because its discriminant is \(-3\).  Hence
-\(f_a\) has no rational root.  The fiber description
-\eqref{eq:main-fiber} then gives
+ \label{eq:rational-polynomial}
+\end{equation}
+For \(a\ne0,1\), its two factors are separable and coprime, so the
+fiber is the root scheme described in \eqref{eq:main-fiber}.
+The two factors cover different completions: the quadratic supplies a
+root at primes \(1\pmod3\), and the cubic must supply one at every
+remaining prime.  This gives a converse to the sufficient conditions
+defining \(\mathcal A\).
+
+\begin{theorem}[Rational classification]\label{thm:rational-classification}
+For \(a\in\Q\), the fiber \(\Phi^{-1}(y_a)\) has points over every
+completion of \(\Q\) and has no rational point if and only if
+\(a\in\Q^\times\setminus\Q^{\times3}\) and
+\begin{equation}\label{eq:rational-local}
+ \begin{gathered}
+ v_p(a)\equiv0\pmod3
+       \quad\hbox{for every prime }p\equiv2\pmod3,\\
+ a\in\Q_3^{\times3}.
+ \end{gathered}
+\end{equation}
+Writing \(a=3^e u\) with \(u\in\Z_3^\times\), the second condition is
+equivalent to
+\begin{equation}
+ e\equiv0\pmod3,\qquad u\equiv1\ \hbox{or }-1\pmod9.
+ \label{eq:three-adic-cube}
+\end{equation}
+Equivalently, the Hasse-failing parameters are exactly those admitting a
+representation
+\begin{equation}
+ a=\varepsilon b^3\frac{r}{s},
+ \qquad \varepsilon\in\{1,-1\},\quad b\in\Q_{>0},
+ \label{eq:rational-normal-form}
+\end{equation}
+where \(r,s\) are coprime positive cube-free integers, every prime
+dividing \(rs\) is \(1\pmod3\), \(r\equiv s\pmod9\), and \(rs>1\).
+\end{theorem}
+
+\begin{proof}
+First suppose \(a\ne0,1\).  The quadratic has no rational root because
+its discriminant is \(-3\).  The cubic has a rational root exactly when
+\(a\) is a rational cube.  Thus the full fiber has no rational point
+exactly when \(a\) is not a cube.
+
+At a prime \(p\ne3\), the quadratic has a root in \(\Q_p\) exactly when
+\(\Q_p\) contains a primitive cube root of unity, equivalently when
+\(p\equiv1\pmod3\).  To see the converse as well as the forward
+implication, its roots are integral units; their reductions are
+nontrivial cube roots of unity, since \(X^2+X+1\) takes the value \(3\)
+at \(1\).  Conversely, a nontrivial cube root of unity in
+\(\F_p^\times\) is a simple quadratic root and lifts by Hensel's lemma.
+This includes \(p=2\) in the no-root case.
+
+If \(p\equiv2\pmod3\), cubing is an automorphism of
+\(\F_p^\times\).  Every \(p\)-adic unit therefore has a cube root, by
+Hensel's lemma applied to \(X^3-u\); its derivative at a nonzero
+residue root is a unit.  It follows that \(a\) is a cube in \(\Q_p\)
+if and only if \(3\mid v_p(a)\).  This proves the necessity and
+sufficiency of all the inert-prime conditions.
+
+At \(3\), the quadratic has no root because its discriminant \(-3\)
+has odd valuation.  Hence the cubic must have a root, which is precisely
+\(a\in\Q_3^{\times3}\).  A cube has valuation divisible by three, and
+the cube of any \(3\)-adic unit is \(1\) or \(-1\pmod9\).
+These necessary conditions are sufficient.  For a unit \(u=1+9k\),
+the substitution \(X=1+3T\) gives
 \[
- \Phi^{-1}(y_a)(\Q)=\varnothing.
- \tag{3.2}
+ X^3-u=9\bigl(T+3T^2+3T^3-k\bigr).
 \]
+The expression in parentheses has derivative \(1\pmod3\) and has
+the root \(T\equiv k\pmod3\), so Hensel's lemma gives a cube root
+of \(u\).  If \(u\equiv-1\pmod9\), apply this argument to \(-u\)
+and change the sign of the root.  The real completion always has the
+cubic root \(\sqrt[3]{a}\).  This proves \eqref{eq:rational-local}.
 
-We now let the two factors divide the completions according to the residue
-class of the prime.
-
-\paragraph{The real place.}
-The polynomial \(X^3-a\) has the real root \(\sqrt[3]{a}\).
-
-\paragraph{The prime \(2\).}
-Every prime divisor of \(a\) is \(1\pmod3\), so \(a\) is odd.  Thus \(X=1\)
-is a root of \(X^3-a\) modulo \(2\), and its derivative \(3X^2\) is a
-\(2\)-adic unit.  Hensel's lemma supplies a root in \(\Z_2\).
-
-\paragraph{The prime \(3\).}
-Write \(a=1+9k\) and substitute \(X=1+3T\).  Then
+For the normal form, write the reduced absolute fraction for \(a\) and
+remove the largest cube from its numerator and denominator.  The
+valuation conditions leave cube-free parts \(r,s\) supported only on
+primes \(1\pmod3\); all remaining factors, including the sign, are
+rational cubes.  Every such prime lies in
 \[
- X^3-a=9h(T),\qquad
- h(T)=T+3T^2+3T^3-k.
- \tag{3.3}
+ H=\{1,4,7\}\subset(\Z/9\Z)^\times.
 \]
-Modulo \(3\),
+The cube of a \(3\)-adic unit is \(1\) or \(-1\pmod9\), whereas
+\(H\cap\{1,-1\}=\{1\}\).  The unit condition at \(3\) is therefore
+equivalent to \(r/s\equiv1\pmod9\), or \(r\equiv s\pmod9\).
+Finally, coprime cube-free \(r,s\) give a rational cube exactly when
+\(r=s=1\).  Conversely, a representation with the stated conditions
+satisfies \eqref{eq:rational-local} and is not a rational cube.
+
+It remains to check the excluded values, since they also lie on the
+target line.  The inverse-coordinate calculation in
+Proposition~\ref{prop:gauge} applies to every root for which \(E'\) is
+a unit, and every source point satisfies
+\(D=(16/9)E'=t^{-1}\).  Thus, without a squarefreeness assumption, the
+fiber over a target with \(\pi\ne0\) is
 \[
- h(T)\equiv T-k,\qquad h'(T)\equiv1.
- \tag{3.4}
+ \Spec\Q[S,E'(S)^{-1}]/(E(S)).
 \]
-The solution \(T\equiv k\pmod3\) lifts to a root in \(\Z_3\).
+At \(a=0\), the factor \(X^3\) is removed by this localization and
+the remaining fiber is \(\Spec\Q[X]/(X^2+X+1)\), which has no real
+point.  At \(a=1\),
+\[
+ f_1(X)=(X-1)(X^2+X+1)^2,
+\]
+and only the simple root \(X=1\) remains, giving a rational point.
+Neither value is a Hasse failure.
+\end{proof}
 
-\paragraph{All other primes.}
-Let \(p\ne2,3\).  If \(p\equiv1\pmod3\), then
-\(\F_p^\times\) contains a nontrivial cube root of unity.  It is a simple
-root of \(X^2+X+1\), so the quadratic has a root in \(\Q_p\).  This case
-includes every prime dividing \(a\).
+\begin{corollary}\label{cor:sufficient-family}
+Every \(a\in\mathcal A\) gives an everywhere locally soluble fiber
+without a rational point.
+\end{corollary}
 
-If \(p\equiv2\pmod3\), then \(p\nmid a\) and cubing is an automorphism of
-\(\F_p^\times\).  The polynomial \(X^3-a\) therefore has a nonzero root
-modulo \(p\).  Its derivative is nonzero, so the root lifts to \(\Q_p\).
+\begin{proof}
+The prime-support condition gives \(v_p(a)=0\) at every prime
+\(p\equiv2\pmod3\), and \(a\equiv1\pmod9\) makes \(a\) a
+\(3\)-adic cube.  The noncube condition in the definition of
+\(\mathcal A\) completes the application of
+Theorem~\ref{thm:rational-classification}.
+\end{proof}
 
-This exhausts all places and proves the local assertions of
-Theorem~\ref{thm:main}.  Notice that the same two factors alternate their
-role with the residue class of \(p\).  The condition \(a\equiv1\pmod9\) is
-needed only at \(3\); the prime-support condition controls the primes
-dividing \(a\).  This is why primality disappears from the theorem: the
-local proof remembers only a congruence and the support of \(a\).  That is
-the arithmetic surprise behind the larger family.
-
-\begin{remark}
-The first prime parameter is \(a=19\), giving the classical
-Berend--Bilu algebra \eqref{eq:berend-bilu}.  The first broader composite
-example is
-\(a=91=7\cdot13\).  The construction is therefore not merely a repackaging
-of primes in one arithmetic progression.
-\end{remark}
+For example, \(a=152=2^3\cdot19\) satisfies the criterion even though
+its prime support includes \(2\), and \(a=19/37\) satisfies it since
+\(19\equiv37\equiv1\pmod9\).  The earlier integer examples
+\(a=19\) and \(a=91=7\cdot13\) also satisfy the full criterion.
 
 \begin{remark}
 The reducibility of \(f_a\) is forced by the local condition.  A connected
@@ -78,4 +136,11 @@ Galois action containing a derangement.  Chebotarev then gives an unramified
 prime at which the scheme has no point.  Hasse-failing zero-dimensional
 schemes must consequently have at least two arithmetic components; see
 Sonn \cite{Sonn} for the corresponding subgroup-covering formulation.
+\end{remark}
+
+\begin{remark}
+The rational classification above is a written argument.  The
+machine-checked arithmetic certificate described in
+Section~\ref{sec:verification} retains its stated scope, namely the
+sufficient integer family \(\mathcal A\).
 \end{remark}

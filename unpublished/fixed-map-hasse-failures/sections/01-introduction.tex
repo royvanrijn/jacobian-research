@@ -1,193 +1,162 @@
 \section{Introduction}
 
-There is a particularly sharp way for a local-global principle to fail.
-Take a finite \'etale scheme \(X\) over \(\Q\).  It has no singularities,
-no positive-dimensional families of points, and no geometry in which a
-rational point can hide.  Nevertheless it may satisfy
-\[
- X(\R)\ne\varnothing,\qquad
- X(\Q_p)\ne\varnothing\quad\text{for every prime }p,
- \qquad
- X(\Q)=\varnothing.
- \tag{1.1}\label{eq:hasse-condition}
-\]
-For a monic polynomial this says something completely concrete: at each
-completion at least one factor has a root, although none has a rational
-root.  Such polynomials are called intersective.
-
-The classical example of Berend and Bilu is
-\[
+A finite \'etale scheme \(X\) over \(\Q\) can satisfy
+\begin{equation}
+ X(\R)\ne\varnothing,\qquad X(\Q_p)\ne\varnothing\quad\text{for every prime }p,
+ \qquad X(\Q)=\varnothing.
+ \label{eq:hasse-condition}
+\end{equation}
+The classical example of Berend and Bilu
+\cite{BerendBilu} is the root scheme of
+\begin{equation}
  f_{19}(X)=(X^3-19)(X^2+X+1).
- \tag{1.2}\label{eq:berend-bilu}
-\]
-The two factors divide the local work between them.  At primes
-\(p\equiv2\pmod3\), cubing is invertible and the cubic supplies a root.  At
-primes \(p\equiv1\pmod3\), the quadratic supplies a cube root of unity.
-Only \(2,3,\) and \(19\) require separate attention.  Globally, neither
-factor has a rational root.
+ \label{eq:berend-bilu}
+\end{equation}
+Its factors cover different completions: the quadratic supplies a root at
+primes \(1\pmod3\), while the cubic supplies one at primes \(2\pmod3\)
+and at \(3\). Neither factor has a rational root.
 
-The companion prescribed-fiber theorem turns every finite \'etale algebra
-of rank at least three into a full fiber of a Jacobian-one map of affine
-three-space \cite{vanRijnFibers}.  In particular, it turns
-\eqref{eq:berend-bilu} into a degree-five Hasse failure.  At first sight
-this seems to settle the Keller-map version of the problem.
-
-It settles only the first quantifier order.  The prescribed-fiber
-construction begins with a polynomial and builds a map around it.  If the
-polynomial changes, the map generally changes as well.  The question that
-remained was therefore:
-
-\begin{quote}
-\emph{Can one polynomial Keller map contain infinitely many Hasse-failing
-complete fibers?}
-\end{quote}
-
-This is a different problem.  We no longer want to compile one arithmetic
-algebra into one map.  We need an entire arithmetic family to fit inside the
-target pencil of a single map.  That small change in quantifiers is where the
-problem becomes interesting.
-
-\subsection*{Finding the line}
-
-The Berend--Bilu example already suggests the family
-\[
- f_a(X)=(X^3-a)(X^2+X+1).
- \tag{1.3}\label{eq:intersective-family}
-\]
-For primes \(a=\ell\equiv1\pmod9\), the same local proof works uniformly.
-But the expanded polynomial
-\[
- f_a(X)=X^5+X^4+X^3-aX^2-aX-a
- \]
-does not look like a one-coordinate motion in the usual linear inverse
-pencil: three coefficients move at once.
-
-The useful step is almost embarrassingly small.  Center the quadratic:
-\[
- X=S-\frac12,\qquad
+The prescribed-fiber construction of \cite{vanRijnFibers} realizes each
+finite \'etale algebra of rank at least three as a full fiber of a
+Jacobian-one map of affine three-space. Here the map is fixed while the
+arithmetic algebra varies. The family
+\begin{equation}
+ f_a(X)=(X^3-a)(X^2+X+1)
+ \label{eq:intersective-family}
+\end{equation}
+fits one target line because the translation \(X=S-\tfrac12\) centers the
+quadratic:
+\begin{equation}
  X^2+X+1=S^2+\frac34.
- \tag{1.4}\label{eq:centered-quadratic-intro}
-\]
-Now the parameter enters through
-\[
- -a\left(S^2+\frac34\right),
- \]
-so only the quadratic and constant coefficients move.  Those are exactly
-the two target coefficients in the quadratic-gauge inverse equation
-\[
+ \label{eq:centered-quadratic-intro}
+\end{equation}
+Consequently varying \(a\) moves only the quadratic and constant
+coefficients. These are the two free coefficients of the quadratic-gauge
+inverse equation
+\begin{equation}
  E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
- \tag{1.5}\label{eq:inverse-intro}
-\]
-Once \eqref{eq:centered-quadratic-intro} is made, the family
-\eqref{eq:intersective-family} is no longer a search problem.  It is a
-straight line in the target of one fixed map.  This was the point at which
-the isolated example began to look like a family.
+ \label{eq:inverse-intro}
+\end{equation}
 
-This gives the geometric part of the discovery.  The arithmetic part then
-becomes unexpectedly generous.  Primality of \(a\) is not used in the local
-argument.  What is really needed is
-\[
- a\equiv1\pmod9,\qquad a\notin\Q^3,\qquad
- p\mid a\Longrightarrow p\equiv1\pmod3.
- \tag{1.6}\label{eq:parameter-conditions}
-\]
-Thus the prime progression sits inside a much larger multiplicatively
-generated family.  Its congruence-and-support core is a semigroup; the
-noncube condition removes the perfect cubes, so \(\mathcal A\) itself is
-not literally closed under multiplication.  The prime family has order
-\(B/\log B\) by height; the full sufficient family has order
-\(B/\sqrt{\log B}\).
+For every \(a\in\Q\), put
+\begin{equation}
+ y_a=\left(-1,\frac{32a}{9},\frac{8a+1}{3}\right),
+ \qquad \ell=\{y_a:a\in\Q\}.
+ \label{eq:target-family}
+\end{equation}
+Define the rational parameter set
+\begin{equation}
+ \mathcal H=\left\{a\in\Q^\times\setminus\Q^{\times3}:
+ \begin{array}{l}
+ v_p(a)\equiv0\pmod3\quad(p\equiv2\pmod3),\\
+ a\in\Q_3^{\times3}
+ \end{array}\right\}.
+ \label{eq:rational-family}
+\end{equation}
+The \(3\)-adic condition means that \(v_3(a)\) is divisible by three and
+the remaining unit is \(1\) or \(-1\pmod9\).
 
-\subsection*{The result}
-
-For \(a>1\), define
-\[
- y_a=\left(-1,\frac{32a}{9},\frac{8a+1}{3}\right)
- \in\A^3(\Q)
- \tag{1.7}\label{eq:target-family}
-\]
-and let
-\[
- \mathcal A=
- \left\{
- \begin{array}{@{}l@{}}
- a>1:\ a\equiv1\pmod9,\ a\notin\Q^3,\\
- \hfill p\mid a\Longrightarrow p\equiv1\pmod3
- \end{array}
- \right\}.
- \tag{1.8}\label{eq:parameter-family}
-\]
-Since \(a\) is an integer, the condition \(a\notin\Q^3\) simply excludes
-perfect cubes.
-
-\begin{theorem}[Fixed-map theorem]\label{thm:main}
+\begin{theorem}[Fixed map and complete rational classification]
+\label{thm:main}
 There is an explicit polynomial map
 \[
- \Phi:\A^3_{\Q}\longrightarrow\A^3_{\Q},
+ \Phi:\A^3_\Q\longrightarrow\A^3_\Q,
  \qquad \det D\Phi=1,\qquad \gdeg(\Phi)=5,
- \]
-such that, for every \(a\in\mathcal A\),
-\[
- \boxed{
- \Phi^{-1}(y_a)
- \simeq
- \Spec\Q[X]/\bigl((X^3-a)(X^2+X+1)\bigr).}
- \tag{1.9}\label{eq:main-fiber}
 \]
-This is a full reduced fiber.  It has a point over \(\R\) and over every
-\(\Q_p\), but it has no \(\Q\)-point.
+such that, for every \(a\in\Q\setminus\{0,1\}\),
+\begin{equation}
+ \Phi^{-1}(y_a)\simeq
+ \Spec\Q[X]/\bigl((X^3-a)(X^2+X+1)\bigr).
+ \label{eq:main-fiber}
+\end{equation}
+This is a full reduced fiber of rank five. It is everywhere locally
+soluble and has no rational point if and only if \(a\in\mathcal H\).
+The exceptional parameters \(0,1\) give no further Hasse failures.
 \end{theorem}
 
-The targets have primitive projective coordinates
-\[
- [1:y_a]=[9:-9:32a:24a+3],
- \qquad H(y_a)=32a.
- \tag{1.10}\label{eq:height-intro}
-\]
-They are therefore pairwise distinct.  The first parameter is \(a=19\), so
-the classical example is the first point on the line rather than an
-isolated construction.  The old example has not disappeared; it has found
-its natural place.
+The geometric assertion concerns an ordinary polynomial endomorphism of
+affine three-space. Since its geometric degree is five, it asserts a
+noninvertible Keller map and thus has a negative consequence for the
+Jacobian conjecture in dimension three. This is a consequence of the
+fixed-map construction, logically separate from the rational local and
+counting arguments for the displayed root schemes.
 
-\begin{theorem}[Quantitative theorem]\label{thm:count-intro}
-Let
-\[
- M_\Phi(B)=\#\{a\in\mathcal A:H(y_a)\le B\}.
- \]
-Then
-\[
- \boxed{
- M_\Phi(B)\sim
- \frac{G_3(1)}{96\sqrt{\pi}}\,
- \frac{B}{\sqrt{\log B}},}
- \tag{1.11}\label{eq:count-intro}
-\]
+For example, \(19\), \(91\), \(152=2^3\cdot19\), and \(19/37\) belong
+to \(\mathcal H\). The latter two illustrate why a sufficient family of
+integers supported on primes \(1\pmod3\) does not exhaust the line.
+
+We use the height induced by \((u,v,w)\mapsto[1:u:v:w]\) in
+\(\mathbb P^3(\Q)\). For a reduced fraction \(a=m/n\), with \(n>0\),
+the exact normalization is
+\begin{equation}
+ H(y_{m/n})=
+ \frac{\max\{9n,32|m|,|24m+3n|\}}
+ {\gcd(n,8)\gcd(|m|,3)}.
+ \label{eq:height-intro}
+\end{equation}
+Both the projective content and the last linear form affect the leading
+constant. In particular, the height region for positive parameters has a
+corner cut from its enclosing rectangle.
+
+\begin{theorem}[All rational parameters on the line]
+\label{thm:rational-count-intro}
+Let \(N_{\Phi,\ell}(B)\) count the Hasse-failing targets on \(\ell\) of
+height at most \(B\). Then
+\begin{equation}
+ N_{\Phi,\ell}(B)\sim C_\Phi\frac{B^2}{\log B},\qquad
+ C_\Phi=\frac{11}{288\sqrt3\,\pi^2}
+ \prod_{p\equiv2\ (3)}\frac{1+p^{-3}}{1-p^{-3}}>0.
+ \label{eq:rational-count-intro}
+\end{equation}
+The Euler product converges absolutely.
+\end{theorem}
+
+The proof combines character-twisted Selberg--Delange estimates with
+coprimality by convolution. The congruence at \(3\) couples the numerator
+and denominator and contributes an order-three character projector.
+Summing the \(2\)-adic and \(3\)-adic valuation strata with their exact
+projective contents then gives the displayed constant. This counts
+distinct targets, since \(a\mapsto y_a\) is injective; it does not count
+isomorphism classes of fiber algebras.
+
+For comparison, retain the sufficient integer family
+\begin{equation}
+ \mathcal A=\{a\in\Z:a>1,\ a\equiv1\pmod9,\ a\notin\Q^{\times3},
+ \ p\mid a\Rightarrow p\equiv1\pmod3\}.
+ \label{eq:parameter-family}
+\end{equation}
+Its congruence-and-support condition is
+\begin{equation}
+ a\equiv1\pmod9,\qquad a\notin\Q^{\times3},\qquad
+ p\mid a\Longrightarrow p\equiv1\pmod3.
+ \label{eq:parameter-conditions}
+\end{equation}
+For \(a\in\mathcal A\) the projective coordinates
+\([9:-9:32a:24a+3]\) are primitive and \(H(y_a)=32a\).
+
+\begin{theorem}[Sufficient integer family]\label{thm:count-intro}
+Writing \(M_\Phi(B)=\#\{a\in\mathcal A:H(y_a)\le B\}\), we have
+\begin{equation}
+ M_\Phi(B)\sim\frac{G_3(1)}{96\sqrt\pi}
+ \frac{B}{\sqrt{\log B}},
+ \label{eq:count-intro}
+\end{equation}
 where
-\[
- G_3(1)=
- \left[
- \frac23 L(1,\chi_{-3})
- \prod_{p\equiv2\ (3)}(1-p^{-2})
- \right]^{1/2}>0.
- \tag{1.12}\label{eq:g3-intro}
-\]
-Consequently the total number of Hasse-failing rational targets of
-\(\Phi\) of height at most \(B\) is at least of order
-\(B/\sqrt{\log B}\).
+\begin{equation}
+ G_3(1)=\left[\frac23L(1,\chi_{-3})
+ \prod_{p\equiv2\ (3)}(1-p^{-2})\right]^{1/2}.
+ \label{eq:g3-intro}
+\end{equation}
 \end{theorem}
 
-The theorem counts the displayed sufficient family exactly; it does not
-claim an asymptotic for all Hasse-failing targets of \(\Phi\).  This
-distinction matters.  The bounded experiment later in the paper checks the
-family and the numerical convergence, but the asymptotic comes from the
-Euler product and Selberg--Delange.
+Allowing rational numerator and denominator pairs accounts for the larger
+power of \(B\) in the complete line count. The geometric locus remains
+one-dimensional. No classification or asymptotic is asserted for the
+ambient three-dimensional target of \(\Phi\).
 
-The rest of the paper follows the route by which the construction becomes
-visible.  Section~\ref{sec:fixed-map} starts from the scalar inverse
-equation, writes down the fixed map, and proves that no boundary point is
-missing from the fiber.  Section~\ref{sec:local-global} lets the two factors
-in \eqref{eq:intersective-family} divide the completions between them.
-Section~\ref{sec:counting} first counts the prime progression and then the
-larger multiplicative family.  Section~\ref{sec:minimality} returns to the
-classical degree obstruction and shows that five is not only attained, but
-forced.
+Section~\ref{sec:fixed-map} constructs the map and accounts for the complete
+fibers. Section~\ref{sec:local-global} proves the local converse, including
+the exceptional parameters. Section~\ref{sec:counting} counts the
+sufficient integer families, and Section~\ref{sec:rational-counting} proves
+the complete rational count in the exact target height.
+Section~\ref{sec:minimality} recalls why geometric degree five is minimal.

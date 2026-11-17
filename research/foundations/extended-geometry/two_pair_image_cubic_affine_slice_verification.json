@@ -1,0 +1,35 @@
+{
+  "format": "two-pair-image-cubic-affine-slice-v1",
+  "scope": "Constant W coefficient (including zero); no W*t or W*z term. Ten parameters; a!=0 branch normalizes a=1,c=0.",
+  "claim": "Sphere moments 1..8 vanish iff either a=0,v0=c=r0=0 (strict positive phase), or a!=0 and p=a*w+(c+d*z)*t-z*(c+d*z)^2/(2*a).",
+  "coefficient_domain": "Characteristic zero; algebraic closure for coordinate normalization if needed.",
+  "sphere_relation": "2*z*w+t^2=1",
+  "proof_source": "TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+  "moment_cutoff": 8,
+  "sympy_version": "1.14.0",
+  "checker_sha256": "bf838694d11a2d663bfdd66d1e211da8475d0746b83e6180002867f456e19b7f",
+  "r_eliminations": [
+    "-v0/3",
+    "-2*v0**2/15 - v1/5",
+    "-4*v0*(31*v0**2 + 54*v1)/945",
+    "-d**2/2 - 2312*v0**4/14175 - 188*v0**2*v1/525 - 8*v1**2/75"
+  ],
+  "zero_a_branch": "First three moments force v0=c=r0=0.",
+  "zero_a_reduced_second_moment": "c**2/3 + 4*v0**2/45",
+  "zero_a_reduced_third_moment": "4*c**2*v0/15 + 16*v0**3/945",
+  "reduced_moment_factors": [
+    "8*(155925*d**2*v0 + 155925*d*e + 35504*v0**5 + 94992*v0**3*v1 + 52704*v0*v1**2)/9823275",
+    "-8*(77395500*d**2*v0**2 - 116093250*d**2*v1 + 77395500*d*e*v0 - 58046625*e**2 + 30907712*v0**6 + 63343584*v0**4*v1 + 3500496*v0**2*v1**2 - 12573792*v1**3)/13408770375",
+    "32*(226800*d**2*v0**3 - 297675*d**2*v0*v1 + 226800*d*e*v0**2 + 127575*d*e*v1 - 212625*e**2*v0 + 53504*v0**7 + 17328*v0**5*v1 - 211968*v0**3*v1**2 - 108864*v0*v1**3)/273648375",
+    "-256*(4819500*d**2*v0**4 - 216877500*d**2*v0**2*v1 + 4819500*d*e*v0**3 - 65063250*d*e*v0*v1 - 75907125*e**2*v0**2 + 7986496*v0**8 - 27544704*v0**6*v1 - 90351504*v0**4*v1**2 - 16632864*v0**2*v1**3 + 9144576*v1**4)/1465387048125"
+  ],
+  "resultant": "-3179537325694882741702679455938048000000000",
+  "bezout_coefficients": [
+    "-456404886387*b**3/520651518016000 - 9004960922102667*b**2/5211721695340160000 + 52889446626640713*b/18241025933690560000 + 16044041400668759/6840384725133960000",
+    "222269179670469*b**2/1042344339068032000 + 8797884782621967*b/18241025933690560000 + 3007078692210221/13680769450267920000"
+  ],
+  "full_sixteen_parameter_coverage": false,
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

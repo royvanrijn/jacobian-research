@@ -261,9 +261,9 @@ the actual first-derivative jet. A zero-order-only check would miss this.
 This is a finite preservation of the actual map, rather than computing
 its full image kernel. The ingredients are classical scalar ODE theory,
 Gaussian IBP and the retained integration recurrence. No novelty or
-priority is claimed. The coordinating side audit is retained separately
-under `cross-programme-connections/`; it prompted the selected-jet
-validation layer and is not silently promoted to external assurance.
+priority is claimed. The selected-jet validation layer is proved above.
+The earlier coordinating side-audit artifact is not distributed and does
+not supply external assurance.
 
 ## 6. Interface and exact limits
 

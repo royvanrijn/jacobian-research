@@ -16,7 +16,7 @@
     "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
     "hyperbolic_suspension.tex": "12a67fd35be011ea1b515993ce1c91638dfc9be90cefc3fb5c98d17192b500dc",
     "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
-    "manuscript.tex": "51870e75d2e99af3c6eae6414c42c20467f017cc7e2a52e36077f7a253789e75",
+    "manuscript.tex": "aeec48704dfd58e51e3640d0e4da5aeeeca83087fa4440f18356a717940876e4",
     "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
     "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
     "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
@@ -27,7 +27,7 @@
     "seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
     "uniform_cut_decay.tex": "dcd7c6d70c35feafb5ab1e4e8977f1b1b2fce78c5142d16ed7b00872fbbf0088"
   },
-  "pdf_sha256": "553a38fbc78b7b67eb04fd80813a775d53ad404ec208537c7d145d6e3e0e5293",
+  "pdf_sha256": "9c9527e1b2af8b35beadd81c64e15cd040952b539a9955484a53e93615ecf7ac",
   "mathematical_review": "Internal written-proof walkthrough of the affine case split, stationary frames, all nine leading-cubic types and their critical-set subcases, and the global gradient/logarithmic/cut estimates. Clarified scaled-root multiplicities and the relative-homology/rapid-decay step. Selected exact algebra replayed by verify.py; no exhaustive or formal proof verification claimed.",
   "remaining_review": "Independent specialist review of the full formal and analytic proof and its external inputs before submission; no known omitted coefficient case was identified in this internal review.",
   "external_inputs": [
@@ -98,7 +98,7 @@
     "unresolved_references": false,
     "overfull_boxes": false,
     "clean_rebuild_rendering_matches_retained_pdf": true,
-    "notes": "All 56 pages rendered and visually inspected after focusing the abstract and removing the optional constant-fibre appendix; no clipping, overlap or unresolved references observed."
+    "notes": "All 56 pages rendered and compared with the preceding reviewed PDF. Only page 56 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references."
   },
   "independent_replay": false,
   "formal_verification": false,
@@ -146,5 +146,38 @@
     "The abstract leads the new ternary-cubic classification and sharp cutoff; the boundary consequence follows with credited prior results.",
     "Removed the optional constant-fibre appendix from the main paper. Its equivalence and cutoff are subsumed by the stronger one-base theorem; its scalar pole certificates are retained explicitly in the fibre paper.",
     "All essential formal and analytic inputs and the nine leading-cubic cases remain in the 22-input source closure."
-  ]
+  ],
+  "ai_attribution_update": {
+    "scope": "Editorial standardization of the AI attribution to the PAPERS.md wording; mathematical statements, arguments and assurance flags unchanged. Earlier mathematical-review records retain their recorded scope; no new mathematical or Lean verification is claimed.",
+    "previous_source_hashes": {
+      "affine_classification_proof.tex": "9e5c41ad1239bdfa488969c9b861f3af866ad39c9ee051532690d2f4a842132b",
+      "affine_coordinate_split.tex": "7cd07d2007478d52cde2655e83628f7afb527ed905ae06168840a3fc0400fd25",
+      "affine_height_cases.tex": "d4b02f0060e78f66ad94237f718bb947358270adda241908c8a9b74c5c7db78f",
+      "analytic_core.tex": "630aa431b35e930680437ef4d666f71129f25187120bfb67302925f6c882b53b",
+      "bounded_regular_reduction.tex": "c32a5f93ce171b012efad070443f56698c6e3ae522de475fe567d3c8ef9747d2",
+      "concurrent_regular_exclusion.tex": "ae0579bbe1252d072e9a21c3e9e5ff0dce7b4e144938f11ceacb9bd39f48f866",
+      "cusp_tangent_exclusion.tex": "3c009a2b6ee209fae6e7b93a4e48d81d20d00ca8f84226c5f12d959f2e951bb2",
+      "formal_lemmas.tex": "756b6f2d0d7d3ec6661cc77af72836f79b2441d90194332ce0d089b3cd597e7d",
+      "frame_extraction_cases.tex": "45b1e73111ee6c7f1c1aedd5de0958600f4cadef89a2dd06d7746a3a8f4427a4",
+      "gradient_exclusion.tex": "476109105e47841add12c6b9157853566bfe4801a4e7cb0d6b5a394365aff4ca",
+      "hyperbolic_suspension.tex": "12a67fd35be011ea1b515993ce1c91638dfc9be90cefc3fb5c98d17192b500dc",
+      "laurent_logarithmic_bound.tex": "fdedd048f21c947935f40785fbbc24536173e39309b820f968deb35ecba5e6a6",
+      "manuscript.tex": "8a32245dde83c2df17eaedb8a2f234b1541cf339737b6403028c284a344b7353",
+      "mixed_formal_exclusion.tex": "db2690329669c03a8ac3549da70ba4d4766db96ae7bffc618cf6d9ca00e99d13",
+      "ordinary_axis_exclusion.tex": "1a6386300ace0a134963fab8a0b138068849b6d3fd4bd2d35619330d4a0f86c3",
+      "ordinary_finite_exclusion.tex": "9da1cd85ef769a7218e728b8a01907f1b8eea60c7487ed716d02f8bd40c6077d",
+      "polynomial_stationary_balls.tex": "75a0afece58c9f0f91be3b320a32916a79ee9f28d03d72430b3a6ca4f1dd307f",
+      "punctured_polynomial_frames.tex": "2d325f97719e47fb7865d200b773511808ce08ad836b8a6b4fb5259d524f1d55",
+      "rank_one_affine_case.tex": "6c20bf9cdb5e39b379d262627df9bbd0988eb147506bff518c8de159827400e0",
+      "repeated_line_exclusion.tex": "933184e1a5b438699d3c1ffa13d871257200184fd0c0dc7b6f5c0f9baa8d0ff7",
+      "seed_period_comparison.tex": "ded60022b51ecd34b1104e2c828947b8177e7e4a97f98c66324d3ca016e1450a",
+      "uniform_cut_decay.tex": "dcd7c6d70c35feafb5ab1e4e8977f1b1b2fce78c5142d16ed7b00872fbbf0088"
+    },
+    "previous_pdf_sha256": "4b688002e4a015cad6b00785b6fe2b8dc8c03dd31f0d7ad3d44d5dd9254e5a2e",
+    "changed_pages": [
+      56
+    ],
+    "latex_issues": [],
+    "canonical_paragraph_occurrences": 1
+  }
 }

@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Prime-power terminal orders for nonconstant binomial supports}
+\author{Internal arithmetic proof; no priority or external-review claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+We give an arithmetic mechanism for infinitely many terminal orders in
+the ordinary nonconstant binomial problem, including $X(A+BX^3)$.
+It proves neither the all-terminal-order assertion for that support nor
+Strong Factorial for every univariate binomial.
+
+For integers $N\ge1$, $C\ge0$ and $d\ge1$, put
+\[
+ P_{N,C,d}(x)=\sum_{k=0}^N\binom Nk\frac{(C+dk)!}{C!}x^k.
+                                                               \tag{1}
+\]
+Write $s_p(v)$ for the base-$p$ digit sum of $v$.
+The digit of $C$ at place $L$ means
+$\lfloor C/p^L\rfloor\bmod p$, with the units place numbered zero.
+
+\begin{theorem}\label{thm:main}
+Let $p$ be prime, $s\ge1$, $r\ge0$, $1\le m<p$, and set
+\[
+ d=p^s,\qquad q=p^r,\qquad N=mq,\qquad
+ h=\frac{p^{r+s}-1}{p-1}.
+\]
+If the digit $t$ of $C$ at place $r+s$ satisfies $t+m<p$, then
+$P_{N,C,d}$ is squarefree over $\mathbb Q_p$, hence over $\mathbb C$.
+Its lower $p$-Newton polygon is the single edge
+\[
+ (0,0)\longrightarrow(mq,mh).
+\]
+The normalized residual polynomial on this edge, in its lattice
+variable $Y$, is
+\[
+ {\cal R}(Y)=\sum_{j=0}^m\binom mj(t+1)_j(\epsilon Y)^j,
+ \qquad \epsilon=(-1)^h\in\mathbb F_p^\times.                 \tag{2}
+\]
+In particular, when $m=1$, $P_{p^r,C,p^s}$ is irreducible over
+$\mathbb Q_p$ and over $\mathbb Q$.
+\end{theorem}
+
+\begin{proof}
+Let $c_k$ be the coefficient of $x^k$ in (1).
+For $k=jq$, $0\le j\le m$, adding $dk=jp^{r+s}$ to $C$
+changes precisely its digit $t$ to $t+j$. The hypothesis rules out
+a carry. Legendre's formula and the binomial congruence
+$\binom{mq}{jq}\equiv\binom mj\pmod p$ therefore give
+\[
+ v_p(c_{jq})=
+ \frac{djq-s_p(C+djq)+s_p(C)}{p-1}=jh.                       \tag{3}
+\]
+For $k=jq+\ell$, $0<\ell<q$, let $u=v_p(\ell)<r$.
+The binomial coefficient $\binom{mq-1}{k-1}$ is a $p$-adic unit:
+its upper base-$p$ digits are $m-1$ followed by $r$ digits $p-1$,
+and each digit of $k-1$ is at most the corresponding digit.
+This digit test follows by taking coefficients in
+$(1+z)^a=\prod_i(1+z^{p^i})^{a_i}$ over $\mathbb F_p$.
+Consequently
+\[
+ v_p\binom{mq}{k}=v_p(mq/k)=r-u.
+\]
+Digit subadditivity, $s_p(dk)=s_p(k)$, and
+$s_p(k)=j+s_p(\ell)\le j+(p-1)(r-u)$ give
+\begin{align*}
+ v_p(c_k)
+ &=v_p\binom Nk+
+       \frac{dk-s_p(C+dk)+s_p(C)}{p-1}\\
+ &\ge \frac{dk}{p-1}+r-u-\frac{s_p(k)}{p-1}\\
+ &\ge \frac{dk-j}{p-1}
+ >\frac{dk-k/q}{p-1}=\frac{h}{q}k.
+\end{align*}
+Thus (3) lists exactly the lattice points on the one lower edge.
+Since $h\equiv1\pmod p$, $\gcd(h,q)=1$ and its lattice step is $q$.
+
+For an integer $v\ge0$, put
+$U_p(v!)=p^{-v_p(v!)}v!$. Splitting the factorial product into
+multiples and nonmultiples of $p$, and iterating, yields
+\[
+ U_p(v!)\equiv(-1)^{v_p(v!)}\prod_i v_i!\pmod p,               \tag{4}
+\]
+where $v_i$ are its base-$p$ digits. At each iteration the complete
+blocks of nonzero residues have product $-1$.
+The digit change $t\mapsto t+j$ in (3) and (4) now give
+\[
+ \overline{c_{jq}/p^{jh}}
+   =\binom mj(-1)^{jh}\frac{(t+j)!}{t!},
+\]
+which is (2). In particular the residual has full degree $m<p$
+and constant coefficient one.
+
+The polynomial $\mathcal R$ satisfies the following identity in
+$\mathbb F_p[Y]$, obtained by comparing consecutive coefficients:
+\[
+ \epsilon Y^2{\cal R}''
+ +[1-\epsilon(m-t-2)Y]{\cal R}'
+ -\epsilon m(t+1){\cal R}=0.                                \tag{5}
+\]
+If a nonzero root had multiplicity $e\ge2$, then $e\le m<p$.
+The lowest Taylor term in (5) would come only from
+$\epsilon Y^2{\cal R}''$, with nonzero factor
+$\epsilon Y_0^2e(e-1)$, a contradiction. Zero is not a root.
+Thus $\mathcal R$ is squarefree.
+
+For completeness, the Newton residual implication used here is the
+weighted-initial-product lemma proved in the
+\href{PRIME_POWER_TWO_TERM_SFC.tex}{prime-power two-term note}.
+At a slope $h/q$, substitute $x=\pi^{-h}Z$, $\pi^q=p$,
+normalize by the smallest valuation, and reduce. Initial polynomials
+multiply because the residue ring is a field. For factors over
+$\mathbb Q_p$, indices attaining the same weighted minimum differ by
+multiples of $q$; after removing the lowest monomial their initial
+polynomials are polynomials in $Z^q$. A nonconstant squared factor
+would therefore contribute a nonconstant squared residual factor on
+some edge. Squarefreeness of (2) excludes it.
+This argument concerns the lattice variable $Y$, and does not assert
+separability after substituting $Y=Z^q$.
+
+When $m=1$, all roots have valuation $-h/q$. Indeed, at any other
+valuation either the constant or the top term in (1) is uniquely
+least and cannot cancel. A factor of degree $e$ over $\mathbb Q_p$
+therefore has a leading-to-constant valuation difference $eh/q$,
+an integer. Since $\gcd(h,q)=1$, $q$ divides $e$.
+There is no proper nonconstant factor.
+\end{proof}
+
+\section{Consecutive moments for lower exponent one}
+For integer Gamma shape $\beta\ge1$ and terminal $N\ge2$, put
+$\gamma=N+\beta-1$ and
+\[
+ T_{N,\gamma,d}(x)=\sum_{k=0}^N\binom Nk(\gamma)_{dk}x^k
+                =P_{N,N+\beta-2,d}(x).
+\]
+The lower-one bridge from the
+\href{HIGHER_GAP_ADJOINT_RANK.tex}{higher-gap adjoint note}
+identifies a common zero of the moments of $X(A+BX^d)$ at orders
+$N-1,N$ with a multiple root of this $T$. To check the parameter,
+the normalized upper moment uses shape $\gamma+1$ and is
+$T+(d/\gamma)xT'$, while the normalized lower moment uses shape
+$\gamma$ and is $T-xT'/N$. The determinant is
+$-(\gamma+dN)/(\gamma N)\ne0$; also $T(0)=1$.
+
+\begin{corollary}\label{cor:lowerone}
+Let $d=p^s$, $s\ge1$, and $N=mp^r\ge2$, $1\le m<p$.
+If the digit of $N+\beta-2$ at place $r+s$ is at most $p-m-1$,
+the two Gamma moments of $X(A+BX^d)$ at orders $N-1,N$
+cannot both vanish, for arbitrary complex $A,B$ defining a nonzero
+phase. In particular, for ordinary factorials ($\beta=1$), this
+holds for every such $N$.
+\end{corollary}
+\begin{proof}
+Apply Theorem \ref{thm:main} and the bridge.
+For $\beta=1$, $C=N-1=mp^r-1<p^{r+s}$, so its digit $t$ is zero.
+If $A$ or $B$ vanishes the phase is a nonzero monomial, whose
+positive Gamma moments are all nonzero.
+\end{proof}
+For gap three this includes every terminal order $N=3^r$ or $2\cdot3^r$
+with $N\ge2$. The ordinary assertion is an infinite family of
+starting indices, not an all-starting-index theorem for
+$X(A+BX^3)$.
+
+\section{A separate consequence for arbitrary lower exponent}
+\begin{corollary}\label{cor:generala}
+Let $a\ge0$, $d=p^s$ with $s\ge1$, and $N=p^r\ge2$.
+If the digit of $a$ at place $s$ is at most $p-2$, then
+\[
+ M_{N,a,d}(x)=\sum_{k=0}^N\binom Nk(aN+dk)!x^k
+\]
+is irreducible over $\mathbb Q_p$ and over $\mathbb Q$.
+Consequently $M_{N-1,a,d}$ and $M_{N,a,d}$ are coprime, proving
+the requested consecutive ordinary factorial assertion at orders
+$N-1,N$ for every nonzero $X^a(A+BX^d)$.
+\end{corollary}
+\begin{proof}
+Take $m=1$, $C=aN$ in Theorem \ref{thm:main}. Its digit at place
+$r+s$ is the digit of $a$ at place $s$.
+Multiplication by the nonzero constant $(aN)!$ preserves
+irreducibility. A rational polynomial of degree $N-1$ cannot share
+a root with an irreducible rational polynomial of degree $N$.
+For $AB\ne0$ the moments are $A^j M_{j,a,d}(B/A)$.
+The cases $AB=0$ are nonzero monomials.
+\end{proof}
+
+Squarefreeness in Theorem \ref{thm:main} for $m>1$ does not by itself
+give this arbitrary-lower-exponent consecutive assertion: the factorial
+offset changes with the moment order. The degree argument above uses
+irreducibility at $m=1$.
+
+\section{Overlap, exact replay and remaining obligation}
+The existing prime-power two-term theorem concerns fixed shapes
+$\gamma\le d$ for constant-plus-power phases at \emph{every} index.
+It does not cover the growing shape $\gamma=N$ here once $N>d$.
+The present proof uses the same factorial-unit and Newton-residual
+method, specialized to terminal indices with a single nonzero
+base-$p$ digit; it does not improve the existing completed
+constant-plus-power conclusion. It also overlaps the completed
+gap-one, lower-one gap-two, and specified dyadic equal-support
+families in their stated specializations. No novelty claim is made.
+
+The companion exact checker compares the actual coefficient Newton
+hull and literal normalized residual with (2), checks (5), tests
+the lower-one moment identities, and checks irreducibility-degree
+coprimality in bounded instances. Its finite run checks the
+implementation; all unbounded quantifiers use the proof above.
+Carry inputs are rejected as unsupported rather than classified as
+counterexamples to Strong Factorial.
+The all-terminal-order gap-three theorem, the other gaps and
+unrestricted lower exponents remain open.
+Independent replay, formal verification, external review and
+priority claims remain false.
+\end{document}

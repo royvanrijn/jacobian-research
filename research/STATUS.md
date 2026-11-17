@@ -4,182 +4,205 @@
 
 This is a map of the principal results and current open questions. A result's state applies to its stated scope. Publication, internal checking, independent replay, formal verification and external review remain separate.
 
-[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · [Research topics](README.md)
+[Published papers](../README.md) · [Unpublished manuscripts](../unpublished/README.md) · [Research topics](README.md) · [Scope and gaps](SCOPES.md) · [Implications](DEPENDENCIES.md)
+
+The authored state describes the exact statement below. Graph status is computed from declared proof routes and current source pins; it is an internal evidence classification, not an independent proof audit. A proved scoped result can coexist with an open broader conjecture. Dependency coverage can remain partial.
 
 ## Moments and vanishing
 
 Generalized vanishing, Gaussian moments and Image/Mathieu spaces.
 
-**Status:** Four published preprints; the Gaussian-boundary and Mathieu counterexample manuscripts await independent review and publication. General Gaussian and Image extensions remain open.
+**Authored assessment:** Scoped GVC/GMC dimension results and the Gaussian dimension-degree boundary are established internally; safety-to-purity, two-base transfers and stated Image coverage questions remain open. Publication and review vary by manuscript.
 
 [Topic guide](moments/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Published GVC, GMC and Image results](../results/generalized-vanishing-two-variables/main.tex) | proved | Four deposited preprints: binary GVC, binary Gaussian moments, sparse ternary minimality, and a three-pair Image counterexample. Each paper has its own precise verification scope. |
-| [Gaussian dimension-degree boundary](../unpublished/gaussian-boundary/manuscript.tex) | proved | The complete Gaussian dimension-degree boundary and sharp ternary-cubic mixed-moment cutoff, as stated in the current integrated manuscript. |
-| [Complete reductive Mathieu classification](../unpublished/mathieu-reductive-homogeneous-spaces/main.tex) | proved | The full reductive Mathieu classification, including disconnected groups and the stated fixed-marker counterexamples. |
-| [All-degree Gaussian structure and safety gap](moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) | proved | Nonzero polynomial weights preserve Gaussian safety and optimal affine slopes while positive tilts expose the remaining unweighted-vacuum purity gap; General field safety-to-purity is equivalent to primitive original vacua in actual rank-one Gaussian images finite over the polynomial time ring; Rational primitives and nontrivial embedded unipotent modules cannot occur in actual Gaussian generic images over any characteristic-zero field; Nonzero Gaussian critical action excludes every globally regular actual submodule in all ranks and every characteristic-zero field; All-degree constant quadratic Gaussian fibres:arbitrary Jordan cancellation and polynomial-unit rigidity; Constant-quadratic-fibre marker reduction over characteristic-zero fields, ambient coefficient-content torsion, actual generation for nilpotent source polynomials, and the exact scalar specialization defect; One-base constant-fibre purity/safety equivalence also holds for correlated real Gaussian laws with positive-definite covariance |
-| [Bidegree-(4,4) two-pair Image/Mathieu counterexample](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) | proved | A bidegree-(4,4) two-pair Image/Mathieu counterexample is established. Complete bidegree-(3,3) coverage remains open. |
+**Computed obligations:** 6 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Published GVC, GMC and Image results](../results/generalized-vanishing-two-variables/main.tex) | proved | proved | Four deposited preprints: binary GVC, binary Gaussian moments, sparse ternary minimality, and a three-pair Image counterexample. Each paper has its own precise verification scope. |
+| [Gaussian dimension-degree boundary](../unpublished/gaussian-boundary/manuscript.tex) | proved | proved | The complete Gaussian dimension-degree boundary and sharp ternary-cubic mixed-moment cutoff, as stated in the current integrated manuscript. |
+| [Complete reductive Mathieu classification](../unpublished/mathieu-reductive-homogeneous-spaces/main.tex) | proved | proved | The full reductive Mathieu classification, including disconnected groups and the stated fixed-marker counterexamples. |
+| [All-degree Gaussian structure and safety gap](moments/vanishing/GAUSSIAN_AMPLITUDE_IDEALS_AND_WEIGHT_INVARIANCE.md) | proved | proved | Nonzero polynomial weights preserve Gaussian safety and optimal affine slopes while positive tilts expose the remaining unweighted-vacuum purity gap; General field safety-to-purity is equivalent to primitive original vacua in actual rank-one Gaussian images finite over the polynomial time ring; Rational primitives and nontrivial embedded unipotent modules cannot occur in actual Gaussian generic images over any characteristic-zero field; Nonzero Gaussian critical action excludes every globally regular actual submodule in all ranks and every characteristic-zero field; All-degree constant quadratic Gaussian fibres:arbitrary Jordan cancellation and polynomial-unit rigidity; Constant-quadratic-fibre marker reduction over characteristic-zero fields, ambient coefficient-content torsion, actual generation for nilpotent source polynomials, and the exact scalar specialization defect; One-base constant-fibre purity/safety equivalence also holds for correlated real Gaussian laws with positive-definite covariance |
+| [All-degree Gaussian classifications in affine isotropic charts](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) | proved | stale | For circular base Z,W and ordinary Gaussian Y, arbitrary-degree P=Wh(Z)+v(Z)Y^2+b(Z)Y+k(Z) has a complete three-branch purity classification; both safe branches have explicit marker cutoffs, and every unsafe branch lacks a nonisotropic constant-quadratic direction. For H(2,1) with B=c(Z)W+u(Z), g=Wh(Z)+k(Z), constant nonzero c forces pure members quadratic; nonconstant affine c admits no pure members; the root-zero case h(0)=c(0)=0 is exactly a positive-weight safe family. The constant-c and affine-c exclusions import respectively the existing leading-coefficient and logarithmic seed obstructions. General H(2,1) remains open. |
+| [Bidegree-(4,4) two-pair Image/Mathieu counterexample](foundations/extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) | proved | proved | A bidegree-(4,4) two-pair Image/Mathieu counterexample is established. Complete bidegree-(3,3) coverage remains open. |
 
-- [Universal all-degree Gaussian structure/transfers.](moments/README.md)
-- [General safety-to-purity/original-vacuum primitivity.](moments/README.md)
-- [Constant quadratic fibre over two ordinary bases.](moments/README.md)
-- [Complete two-pair bidegree-(3,3).](moments/README.md)
-- [Determine the exact least pure-moment prefix for ternary cubics.](../unpublished/gaussian-boundary/manuscript.tex)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [General safety-to-purity/original-vacuum primitivity.](moments/README.md) — MOMENTS-SAFETY-PURITY
+- **mathematical / open:** [Constant quadratic fibre over two ordinary bases.](moments/vanishing/GAUSSIAN_AFFINE_ISOTROPIC_CHART.md) — MOMENTS-TWO-BASE-SAFETY
+- **mathematical / open:** [Complete two-pair bidegree-(3,3).](foundations/extended-geometry/TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md) — GAP-TWO-PAIR-33
+- **mathematical / open:** [Determine the exact least pure-moment prefix for ternary cubics.](../unpublished/gaussian-boundary/manuscript.tex) — GAP-TERNARY-PURE-PREFIX
 
 ## Jacobian and Keller maps
 
 Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 
-**Status:** Restricted constructions and obstructions are established; the full Jacobian conjecture and universal classifications remain open.
+**Authored assessment:** Explicit ordinary characteristic-zero Keller collisions give an internal failure of the unrestricted Jacobian conjecture under the retained proofs. JC2, universal classifications and minimum bounds remain open; external review remains separate.
 
 [Topic guide](jacobian/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Generic monodromy and affine inertia](jacobian/monodromy-theory/THEORY.md) | proved | Geometric and arithmetic monodromy, affine inertia constraints, and realization distinctions are proved in the synthesis. Generic-cover groups are separated from the symmetry of a special fibre and from deck groups. |
-| [Canonical Keller receivers and descent boundaries](jacobian/universal-keller-canonical-filter/PROOF.md) | proved | The trace-filter construction gives canonical complete marked fibres for every finite etale algebra on a specified polynomial bundle, without choosing a generator. Polynomial-profile sections have full symmetric monodromy and stable atomicity in the stated odd characteristics. Signal-retaining target factors are invertible; arbitrary stabilized factors require constrained non-plane generic surfaces. Every geometric affine-type ruling of a proper native intermediate is unique and descends. |
-| [Explicit cubic Keller collisions](jacobian/cubic-reduction/PROOF12.md) | proved | An integral twelve-variable cubic conjugate has 36 nonlinear monomial occurrences. An explicit integer 89 by 89 matrix gives a cubic-linear map with determinant one and a rational collision. These are construction and sparsity bounds, not unrestricted dimension or support minima. |
-| [Quadratic ruling closure and the remaining degree-six boundary](jacobian/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) | proved | For actual complex plane Keller targets in the stated complete quadratic source-image family, ruling-four and ruling-five coordinates are excluded. The next ruling-six class has complete necessary finite-end and residue-algebra coverage, leaving three explicit off-boundary weighted-face types. This is ruling degree, not the generic degree of the map. |
+**Computed obligations:** 8 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Generic monodromy and affine inertia](jacobian/monodromy-theory/THEORY.md) | proved | open | Whole-affine Keller self-map over alg.closed char0: affine-divisor inertia fixed sheet and normal generation; necessary regular/nilpotent/even-dihedral exclusions and genus-zero PSL2(11) passport sieve. |
+| [Canonical Keller receivers and descent boundaries](jacobian/universal-keller-canonical-filter/PROOF.md) | proved | proved | RankN>=2 finite etale algebra over Z[1/(2N)!]-scheme: canonical determinant-one map of V_A=A^3⊕O^3, dimension3N+3, full marked fibre SpecA, degree3^(N+1), non-atomic. Separate profile maps have symmetric monodromy and stable atomicity; affine-type ruling descent holds on proper-native intermediates. |
+| [Explicit cubic Keller collisions](jacobian/cubic-reduction/PROOF12.md) | proved | proved | 12-variable integral cubic collision with36 nonlinear occurrences;89-variable integer cubic-linear rational collision; upper bounds only. |
+| [Quadratic ruling closure and the remaining degree-six boundary](jacobian/affine-complements/POLYNOMIAL_RESIDUE_RAMIFIED_LINE_AND_QUADRATIC_RULING_FIVE_CLOSURE.md) | proved | proved | Actual complex whole-plane Keller targets in PF157 complete marked quadratic source-image class: ruling4/5 excluded; ruling6 has necessary finite-end/residue coverage and three surviving off-M weighted faces. Ruling degree differs from generic map degree. |
 
-- [A complete classification of Keller-map monodromy remains open.](jacobian/README.md)
-- [Canonical absolute stable atomicity and a presentation-free fixed-space receiver remain open.](jacobian/README.md)
-- [Complete-type ruling descent and existence of a genuine proper intermediate remain open.](jacobian/README.md)
-- [Unrestricted minimum dimension and sparsity questions remain open.](jacobian/README.md)
-- [The entire ruling-six class, other cyclic or trivial-deck images, global normal-form coverage, full-normalization derivative integrality and all-order termination remain open.](jacobian/README.md)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [A complete classification of Keller-map monodromy remains open.](jacobian/README.md) — GAP-JACOBIAN-1
+- **mathematical / open:** [Canonical atomic or degree-controlled coupling and the specified existential bundle-freeness questions remain open; a natural automorphism-invariant fixed frame is obstructed.](jacobian/README.md) — GAP-CANONICAL-ATOMIC-COUPLING
+- **mathematical / open:** [Complete-type ruling descent and existence of a genuine proper intermediate remain open.](jacobian/README.md) — GAP-JACOBIAN-3
+- **mathematical / open:** [Determine whether characteristic-zero Keller failures exist in dimension two (dimension-three examples are retained), and sharpen the separate cubic dimension and support upper bounds.](jacobian/README.md) — GAP-JACOBIAN-4
+- **mathematical / open:** [The entire ruling-six class, other cyclic or trivial-deck images, global normal-form coverage, full-normalization derivative integrality and all-order termination remain open.](jacobian/README.md) — GAP-RULING-SIX
 
 ## Hessian and Schur reductions
 
 Restricted Hessian classes, polynomial graphs and formal termination.
 
-**Status:** The selected quintic, Ricci-flat and trace classes are closed; global coverage and polynomial termination remain open.
+**Authored assessment:** The selected quintic, Ricci-flat and trace classes are closed; global coverage and polynomial termination remain open.
 
 [Topic guide](hessian/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Complete quintic graph exclusion with an explicit nilpotent algebra](jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md) | proved | For the fixed v2 Meng-Yang parent, every polynomial graph of graph degree at most five with nonzero constant pulled-back Hessian determinant is excluded over characteristic-zero fields. The two remaining conjugate traces are closed by an actual rank-three residual algebra, cubic nilpotence and a polynomial unit-ideal certificate. |
-| [Ricci-flat HC4 inversion and the plane shear lemma](hessian/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md) | proved | A plane Keller map whose Jacobian matrix has one-dimensional image is an explicit affine shear. Together with the explicitly imported Tang structural theorem, vanishing Levi-Civita Ricci tensor forces polynomial gradient invertibility for complex HC4 potentials. Scalar curvature alone does not suffice. |
-| [Even-moment lattices and the sixth-moment trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) | proved | In the actual complex plane Keller setting, every even integer moment space is a finite projective ramification lattice with exact divisors and trace discriminant lengths. The sixth-moment trace form detects every positive ramification index; perfection is equivalent to inversion under the stated canonical integrability and purity inputs. |
+**Computed obligations:** 4 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Complete quintic graph exclusion with an explicit nilpotent algebra](jacobian/affine-complements/FULL_COMPLEX_QUINTIC_GRAPH_EXCLUSION_AND_CUBIC_NILPOTENCE.md) | proved | proved | Fixed v2 Meng-Yang parent only: no polynomial graph of graph total degree<=5 has nonzero constant pulled-back Hessian determinant over any char0 field. |
+| [Ricci-flat HC4 inversion and the plane shear lemma](hessian/hc4-triangular-graphs/RICCI_FLAT_HC4_AND_ONE_DIMENSIONAL_JACOBIAN_IMAGES.md) | proved | proved | Complex four-variable unit-Hessian potential plus zero Levi-Civita Ricci tensor => polynomial gradient inverse, using Tang. Independent plane lemma: Keller Jacobian-entry image differential rank<=1 => affine shear. |
+| [Even-moment lattices and the sixth-moment trace criterion](hessian/hc4-triangular-graphs/EVEN_MOMENT_LATTICES_AND_SIXTH_MOMENT_TRACE_TEST.md) | proved | proved | Actual complex plane Keller setting, all integer m>=1: T_m=O_Z(floor(Ram/m)) finite projective; trace defect lengths sum f_E(a_E-2floor(a_E/m)). For m>=3 perfection iff Ram=0, and via KN0 purity iff polynomial inverse. |
 
-- [Higher graph degrees, other embeddings, global coverage and unrestricted HC4 remain open.](hessian/README.md)
-- [Automatic Ricci flatness and full HC4 remain open; the Tang structural theorem is an external input, not newly proved here.](hessian/README.md)
-- [Automatic perfection or full codifferent multiplication is not proved; HC4 and the plane Jacobian conjecture remain open.](hessian/README.md)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [Higher graph degrees, other embeddings, global coverage and unrestricted HC4 remain open.](hessian/README.md) — GAP-HESSIAN-TERMINATION
+- **mathematical / open:** [Full HC4 and global coverage beyond the Ricci-flat subclass remain open; Ricci flatness is not necessary for invertibility, and the attributed Tang structural theorem is a separate input.](hessian/README.md) — GOAL-HC4
+- **mathematical / open:** [Automatic perfection or full codifferent multiplication is not proved; HC4 and the plane Jacobian conjecture remain open.](hessian/README.md) — GAP-AUTOMATIC-T3-PERFECTION
 
 ## Factorial moments and rigidity
 
 Factorial moment functionals, composition rigidity and Strong Factorial families.
 
-**Status:** Credited binary audits and the stated universal families are complete internally; unrestricted Factorial and Strong Factorial remain open.
+**Authored assessment:** Credited binary audits and the stated universal families are complete internally; unrestricted Factorial and Strong Factorial remain open.
 
 [Topic guide](factorial/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Binary Factorial and composition rigidity reproductions](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) | proved | Credited internal reproductions of Long/Le Blanc EIT, Long FC(2), and liqsweep critical-value composition rigidity; not originality claims. |
-| [Restricted all-dimensional families](factorial/image-rigidity/SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex) | proved | Homogeneous factorial and integer-Gamma pencils H(sum Y,sum c_i Y_i) satisfy FC in every dimension and retain ordinary all-ring normalization; Degree-four families in two angular coordinates have eventually nonzero Gamma/factorial moments for every integer shape vector; Coupled nonflat block families retain FC and algebraic-scale eventual nonzero under arbitrary lower inactive-variable couplings |
-| [All ordinary constant-plus-power SFC](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) | proved | Every A+B Y^m satisfies SFC at every start and every positive integer exponent in ordinary Gamma shape one; exact finite certificates are essential. |
-| [Other universal two-term SFC families](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) | proved | Every adjacent-monomial X^a(A+B X) satisfies Strong Factorial at every index and every positive Gamma shape; Strong Factorial holds for every cubic pair X(A+B X^2) at every starting index and every positive Gamma shape; Strong Factorial holds at every index for X^(2^r)(A+B X^(2^r)) and integer Gamma shapes through twice the gap |
-| [Current general-gap algebraic criterion](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex) | partial | Exact adjoint-rank/backward-pivot criteria; uniform nonzero pivots and arbitrary gaps remain open. |
+**Computed obligations:** 9 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Binary Factorial and composition rigidity reproductions](factorial/image-rigidity/LONG_EIT_AND_FC2_AUDIT.tex) | proved | proved | Credited internal reproductions of Long/Le Blanc EIT, Long FC(2), and liqsweep critical-value composition rigidity; not originality claims. |
+| [Restricted all-dimensional families](factorial/image-rigidity/SIMPLEX_PENCILS_AND_AFFINE_LIMITS.tex) | proved | proved | Homogeneous pencils H(S,L), S=sum Yi and L=sum ci Yi, satisfy FC in every dimension for positive integer Gamma shapes, with ordinary coefficient-content/nilpotence normalization over Q-algebras. The specified two-angular degree>=4 families have eventual nonzero moments at algebraic scales with a negative valuation above five (also zero, and algebraic scales outside the stated finite exceptional set), with positive integer block shape sums. The specified coupled nonflat block families have eventual nonzero moments at algebraic scales; their arbitrary-complex-scale FC statement retains fixed algebraic inactive shapes. These are the displayed normalized families, not arbitrary supports. |
+| [All ordinary constant-plus-power SFC](factorial/image-rigidity/ALL_UNIVARIATE_TWO_TERM_SFC.tex) | proved | proved | Every A+B Y^m satisfies SFC at every start and every positive integer exponent in ordinary Gamma shape one; exact finite certificates are essential. |
+| [Other universal two-term SFC families](factorial/image-rigidity/UNIFORM_PADE_PARABOLA_SFC.tex) | proved | proved | Every adjacent-monomial X^a(A+B X) satisfies Strong Factorial at every index and every positive Gamma shape; Strong Factorial holds for every cubic pair X(A+B X^2) at every starting index and every positive Gamma shape; Strong Factorial holds at every index for X^(2^r)(A+B X^(2^r)) and integer Gamma shapes through twice the gap |
+| [Current general-gap algebraic criterion](factorial/image-rigidity/HIGHER_GAP_ADJOINT_RANK.tex) | partial | proved | Exact adjoint-rank/backward-pivot criteria; uniform nonzero pivots and arbitrary gaps remain open. |
+| [All-support initial pairs and the polynomial boundary](factorial/image-rigidity/lower_exponent_initial_and_boundary.tex) | proved | proved | For every a>=0,d>=1 integer and beta>0, all binomial consecutive Gamma pairs through terminal order three are separated; the order-(d+1) parameter recurrence has a unique polynomial solution up to scale of degree d(N-1), but incompatibility with the two finite obstruction conditions remains open. |
+| [Prime-power terminal orders for nonconstant binomials](factorial/image-rigidity/ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex) | proved | proved | For d=p^s and N=m*p^r, 1<=m<p, no-carry factorial offsets give one-edge squarefree residual certificates. Ordinary lower-one pairs are separated at all such N; arbitrary lower exponent a is covered at N=p^r>=2 when digit_s(a)<=p-2. These infinite terminal families do not give all-index binomial SFC. |
+| [Gap-three whole-matrix certificates and uniform initial minors](factorial/image-rigidity/gap_three_hurwitz.tex) | proved | proved | For 2<=n<=16 and every beta>=0 the entire infinite H3(W_(n,n+beta-1)) is totally nonnegative; direct Euclidean descent gives gap-three lower-one SFC through terminal order 16 for beta>0. The first nine Euclidean pivots are positive for every n>=4,beta>=0, and the first eight shifted special minors are coefficient-positive. All-index total nonnegativity remains open. |
 
-- [Higher-dimensional FC and unrestricted SFC.](factorial/README.md)
-- [General both-nonconstant monomial pairs and arbitrary gaps/Gamma shapes.](factorial/README.md)
-- [Independent mathematical and priority review.](factorial/README.md)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [Higher-dimensional FC and unrestricted SFC.](factorial/README.md) — FACTORIAL-GENERAL-FC
+- **mathematical / open:** [General both-nonconstant monomial pairs and arbitrary gaps/Gamma shapes.](factorial/README.md) — FACTORIAL-LOWER-ONE-HIGHER-GAP
+- **verification / open:** [Independent mathematical and priority review.](factorial/README.md) — GAP-FACTORIAL-3
+- **mathematical / open:** [Uniform total nonnegativity of the actual gap-three H3 family, for example via all-size staircase-minor positivity or a parameter-compatible positive factorization.](factorial/image-rigidity/gap_three_hurwitz.tex) — FACTORIAL-GAP3-HURWITZ-TN
 
 ## Dixmier and Weyl algebras
 
 Formal Weyl-algebra lifts, finite scalar mates and centralizers.
 
-**Status:** Formal lifting and restricted classifications are established; finite realization and the full Dixmier conjecture remain open.
+**Authored assessment:** Formal lifting and restricted classifications are established; finite realization and the full Dixmier conjecture remain open.
 
 [Topic guide](dixmier/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Formal quantum lifting and the finite-degree realization criterion](dixmier/dixmier-formal-lifting/PROOF.md) | proved | Every polynomial symplectic endomorphism admits a full all-order formal Weyl lift. A common finite spatial degree bound would turn a noninvertible classical map into a nonsurjective Weyl endomorphism. Formal existence alone does not provide that bound or permit specialization at the formal parameter one. |
-| [Completed scalar finite-mate classification](dixmier/dixmier-formal-lifting/ALGEBRAIC_INFINITY_LIMITS.md) | proved | The complete pure polynomial operator form v H(a)+G(a) has the stated finite-Weyl-mate classification, valid through finite algebraic coefficient covers. Infinity limits, the transported zero-mode cokernel and one universal p-power coefficient provide the complementary all-degree cases. |
-| [Finite centralizers, Taylor rigidity and quantum completion](dixmier/dixmier-formal-lifting/FINITE_CENTRALIZERS_AND_COMPLETION.md) | proved | Actual centralizer module finiteness supplies a finite full-completion criterion. Taylor branches remove finite generation from the birational and Galois-factor rigidity tests. With actual commutants and the stated unit and classical-centralizer hypotheses, nontrivial radical field relations obstruct simultaneous individual mates in every order. |
+**Computed obligations:** 7 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Formal quantum lifting and the finite-degree realization criterion](dixmier/dixmier-formal-lifting/PROOF.md) | proved | proved | Every char0 polynomial symplectic full frame has all-order formal Weyl/Moyal lift with polynomial coefficients. One common finite spatial degree bound for a lift of a noninvertible classical map implies nonsurjective finite A_n(C) endomorphism. |
+| [Completed scalar finite-mate classification](dixmier/dixmier-formal-lifting/ALGEBRAIC_INFINITY_LIMITS.md) | proved | proved | Complete fixed pure separable scalar Ore classification S=vH(a)+G(a),[a,v]=h/v,H,G polynomial,char0,all finite algebraic coefficient covers. Positive exactly H constant/G affine nonconstant S; or H nonconstant linear/G constant. |
+| [Finite centralizers, Taylor rigidity and quantum completion](dixmier/dixmier-formal-lifting/FINITE_CENTRALIZERS_AND_COMPLETION.md) | proved | open | Actual mates plus polynomial full classical centralizer/separation hypotheses: actual or generic module finiteness => polynomial centralizer and finite full completion. Taylor branches remove algebra-finite-generation for birational/Galois-factor/radical tests under scalar unit/no-new-constant hypotheses. |
 
-- [A bounded full lift of the rank-two Long map, and DC1/DC2, remain open.](dixmier/README.md)
-- [Genuinely mixed coefficients, other infinity faces, nonpositional first images and nonscalar carriers remain open; this does not settle DC2.](dixmier/README.md)
-- [No actual Long finite carrier or new Long radical certificate is supplied; bounded rank-two realization remains open.](dixmier/README.md)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [A bounded full lift of the rank-two Long map, and DC1/DC2, remain open.](dixmier/README.md) — GAP-BOUNDED-FULL-LIFT
+- **mathematical / open:** [Genuinely mixed coefficients, other infinity faces, nonpositional first images and nonscalar carriers remain open; this does not settle DC2.](dixmier/README.md) — GAP-DIXMIER-2
+- **mathematical / open:** [No actual Long finite carrier or new Long radical certificate is supplied; bounded rank-two realization remains open.](dixmier/README.md) — GAP-ACTUAL-LONG-CENTRALIZER
 
 ## Meridional rank
 
 Knot-group representations, branched-cover bounds and explicit sharp families.
 
-**Status:** Explicit sharp examples, infinite families and lower bounds are established. The full conjecture and global novelty claims remain open.
+**Authored assessment:** Explicit sharp examples, infinite families and lower bounds are established. The full conjecture and global novelty claims remain open.
 
 [Topic guide](meridional-rank/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Twenty named equalities and established-family scope](meridional-rank/representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) | proved | Twenty retained mr=bridge=4 examples; original sixteen lie in existing BJW18 graph-cover family. Global novelty unestablished. |
-| [Infinite periodic families and connected sums](meridional-rank/representations/PERIODIC_TWIST_FAMILIES.tex) | proved | Four explicit infinite periodic-twist families with meridional rank and bridge number four; Maximal simple-cover rank and fixed-field homology bounds are additive under connected sum, with strict nonuniversality |
-| [Representation and branched-cover lower bounds](meridional-rank/representations/PROOF.tex) | proved | All-field lift bounds and sixteen sharp five-bridge table certificates; Branched-cover interpretation, nonabelian lift bounds and complete panel exclusions; Rank-two affine certificates exactly equal three-sheeted homology and relative S4 kernel counts |
+**Computed obligations:** 4 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Twenty named equalities and established-family scope](meridional-rank/representations/ORIGINAL_SIXTEEN_KNOWN_GRAPH_COVER_FAMILY.tex) | proved | proved | Twenty retained mr=b=4 classical knots; original16 in existing BJW18 prime graph-manifold double-cover family,other4 not assigned global family/priority. |
+| [Infinite periodic families and connected sums](meridional-rank/representations/PERIODIC_TWIST_FAMILIES.tex) | proved | open | Four explicit periodic twist families K_j(N),N>=0,j3145/3147/3148/3149,mr=b=4 and increasing determinant. Maximal simple-cover rank C and fixed-field A_k additive under connected sum minus(t-1),nonuniversal. |
+| [Representation and branched-cover lower bounds](meridional-rank/representations/PROOF.tex) | proved | proved | All-field restricted lift dim lower bound;simple branched-cover group/homology/nonabelian-count bounds;sixteen known Montesinos sharp-five certificates;rank-two affine certificates exactly fixed-S3 three-sheeted F2 homology/relativeS4 kernels. |
 
-- [Full Meridional Rank Conjecture.](meridional-rank/README.md)
-- [Sharper lower bounds beyond known deficient representation/cover methods.](meridional-rank/README.md)
-- [Precise novelty and existing-family comparison for the four other sharp seeds and infinite periodic families.](meridional-rank/README.md)
+Tracked obligations (computed states):
+
+- **mathematical / open:** [Full Meridional Rank Conjecture.](meridional-rank/README.md) — GOAL-MRC
+- **mathematical / open:** [Sharper lower bounds beyond known deficient representation/cover methods.](meridional-rank/README.md) — GAP-MRC-STRONGER-LOWER-BOUNDS
+- **verification / open:** [Precise novelty and existing-family comparison for the four other sharp seeds and infinite periodic families.](meridional-rank/README.md) — GAP-MERIDIONAL-RANK-3
 
 ## Arithmetic fibres and discriminant geometry
 
 Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 
-**Status:** Constructive theorem manuscripts remain unpublished and need the reviews stated in their metadata.
+**Authored assessment:** Constructive theorem manuscripts remain unpublished and need the reviews stated in their metadata.
 
 [Topic guide](arithmetic/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](../unpublished/common-arithmetic-fibers/main.tex) | proved | Constructs explicit Jacobian-one maps of affine three-space with prescribed full finite etale fibres in characteristic zero. |
-| [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](../unpublished/fixed-map-hasse-failures/main.tex) | proved | Fixes one degree-five Jacobian-one map and constructs and counts everywhere locally soluble fibres without rational points. |
-| [The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps](../unpublished/quadratic-gauge-nonproperness/main.tex) | partial | Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps. |
-| [Generic Discriminants of Polynomial Tangent Pencils](../unpublished/discriminant-pencils/main.tex) | partial | Studies the generic cusp-node theorem for the reduced discriminant curve of H(W)-sW+t. |
-| [Exact Real Chamber Spectra of Explicit Keller Maps](../unpublished/exact-real-chamber-spectra/main.tex) | partial | Studies real fibre counts and chamber spectra of explicit Keller maps. |
+**Computed obligations:** 10 unresolved; 1 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [Over Characteristic Zero, Every Finite Etale Algebra of Rank at Least Three Is a Full Keller Fiber](../unpublished/common-arithmetic-fibers/main.tex) | proved | proved | For every characteristic-zero field K and separable P in K[T] of degree N>=3, an ordinary polynomial A3_K self-map has determinant one, geometric degree N, full fibre naturally represented by K[T]/P and coordinate-degree bound 6N+2; every finite etale algebra of rank>=3 follows by noncanonical monogenic presentation. The char!=2 supplied-presentation extension requires nonzero first and third Hasse coefficients and is not formalized end to end. |
+| [Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map](../unpublished/fixed-map-hasse-failures/main.tex) | proved | proved | Classifies every Hasse-failing rational parameter on one line of a fixed degree-five Jacobian-one map and proves N(B) ~ C B^2/log B in the exact target height. |
+| [The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps](../unpublished/quadratic-gauge-nonproperness/main.tex) | partial | proved | Computes the exact reduced nonproperness locus, boundary fibre table and discriminant order for the quadratic-gauge maps. |
+| [Generic Discriminants of Polynomial Tangent Pencils](../unpublished/discriminant-pencils/main.tex) | partial | proved | For each n>=3 the written manuscript claims a nonempty Zariski-open degree-n polynomial family whose reduced projective tangent-pencil discriminant has degree n, normalization P1, one smooth infinity point, n-2 ordinary cusps, (n-2)(n-3)/2 ordinary nodes and no other singularities. The manuscript is parked and the full geometric theorem is outside its partial formalization. |
+| [Exact Real Chamber Spectra of Explicit Keller Maps](../unpublished/exact-real-chamber-spectra/main.tex) | partial | proved | For the displayed Q-polynomial Keller maps FN of generic degree N>=3, the written manuscript claims exact regular real-fibre counts N,N-2,...,N mod 2 on nonempty chambers, a rational target in every chamber and the stated fold adjacency chain. This parked manuscript remains outside submission readiness. |
 
-- [Review the manuscript against its formal theorem and external inputs.](../unpublished/common-arithmetic-fibers/README.md)
-- [Complete editorial and priority review before submission.](../unpublished/common-arithmetic-fibers/README.md)
-- [Complete the priority and source review recorded in LITERATURE_AUDIT.md.](../unpublished/fixed-map-hasse-failures/README.md)
-- [Review the counting argument and prepare a frozen submission bundle.](../unpublished/fixed-map-hasse-failures/README.md)
-- [Review the geometric proof and exact symbolic audit.](../unpublished/quadratic-gauge-nonproperness/README.md)
-- [Decide whether to develop this companion into a submission.](../unpublished/quadratic-gauge-nonproperness/README.md)
-- [Reassess the scope and complete the proof review before restarting publication work.](../unpublished/discriminant-pencils/README.md)
-- [Reassess the manuscript against the canonical fibre-spectrum proof and current literature.](../unpublished/exact-real-chamber-spectra/README.md)
+Tracked obligations (computed states):
+
+- **verification / open:** [Review the manuscript against its formal theorem and external inputs.](../unpublished/common-arithmetic-fibers/README.md) — GAP-ARITHMETIC-1
+- **workflow / open:** [Complete editorial and priority review before submission.](../unpublished/common-arithmetic-fibers/README.md) — GAP-ARITHMETIC-2
+- **verification / open:** [Complete the priority and source review recorded in LITERATURE_AUDIT.md.](../unpublished/fixed-map-hasse-failures/README.md) — GAP-ARITHMETIC-3
+- **verification / open:** [Obtain specialist review of the complete rational count before preparing a submission bundle.](../unpublished/fixed-map-hasse-failures/README.md) — GAP-ARITHMETIC-4
+- **verification / open:** [Review the geometric proof and exact symbolic audit.](../unpublished/quadratic-gauge-nonproperness/README.md) — GAP-ARITHMETIC-5
+- **workflow / open:** [Decide whether to develop this companion into a submission.](../unpublished/quadratic-gauge-nonproperness/README.md) — GAP-ARITHMETIC-6
+- **verification / open:** [Reassess the scope and complete the proof review before restarting publication work.](../unpublished/discriminant-pencils/README.md) — GAP-ARITHMETIC-7
+- **verification / open:** [Reassess the manuscript against the canonical fibre-spectrum proof and current literature.](../unpublished/exact-real-chamber-spectra/README.md) — GAP-ARITHMETIC-8
+- **verification / open:** [Obtain specialist review of the exact rational target-line classification/count and its Selberg-Delange interface.](../unpublished/fixed-map-hasse-failures/metadata.json) — VERIFY-RATIONAL-LINE-COUNT
 
 ## Formal verification
 
 Precisely scoped Lean developments supporting published papers and current manuscripts.
 
-**Status:** Formal scope varies by project; full-paper claims must respect the explicit imported hypotheses and unformalized portions.
+**Authored assessment:** Formal scope varies by project. GMC2 is conditional on two named axiom interfaces; binary GVC and full generic discriminant geometry remain partial.
 
 [Topic guide](foundations/README.md)
 
-| Principal result | State | Scope |
-|---|---|---|
-| [GVC counterexamples and binary supporting algebra](foundations/formal/gvc/README.md) | partial | The ternary counterexample and profile family have Lean proofs. Binary GVC has supporting formal algebra but is not an end-to-end Lean theorem. |
-| [Binary Gaussian moments in Lean](foundations/formal/gmc2/README.md) | proved | The complete bivariate theorem is formalized conditional on the explicit Duistermaat–van der Kallen and finite-type specialization axiom interfaces. |
-| [Characteristic-zero finite etale Keller construction](foundations/formal/finite-etale-keller/README.md) | proved | The focused paper certificate proves the construction, Jacobian normalization, full fibre and naturality; the supplied-presentation extension and analytic counting remain outside this certificate. |
-| [Tangent-pencil algebra in Lean](foundations/formal/discriminant-pencils/README.md) | partial | Axiom-free modules verify the stated tangent, contact and collision algebra. The full generic geometric manuscript theorem remains a written argument. |
+**Computed obligations:** 6 unresolved; 0 resolved within their exact scope.
 
-Open questions:
+| Principal result | Authored state | Graph status | Scope |
+|---|---|---|---|
+| [GVC counterexamples and binary supporting algebra](foundations/formal/gvc/README.md) | partial | proved | The ternary counterexample and profile family have Lean proofs. Binary GVC has supporting formal algebra but is not an end-to-end Lean theorem. |
+| [Binary Gaussian moments in Lean](foundations/formal/gmc2/README.md) | proved | conditional | The complete bivariate theorem is formalized conditional on the explicit Duistermaat–van der Kallen and finite-type specialization axiom interfaces. |
+| [Characteristic-zero finite etale Keller construction](foundations/formal/finite-etale-keller/README.md) | proved | proved | The focused paper certificate proves the construction, Jacobian normalization, full fibre and naturality; the supplied-presentation extension and analytic counting remain outside this certificate. |
+| [Tangent-pencil algebra in Lean](foundations/formal/discriminant-pencils/README.md) | partial | proved | Axiom-free modules verify the stated tangent, contact and collision algebra. The full generic geometric manuscript theorem remains a written argument. |
 
-- [Complete the binary GVC formal theorem and the full generic tangent-pencil geometric theorem.](foundations/README.md)
-- [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](foundations/README.md)
+Tracked obligations (computed states):
+
+- **formalization / open:** [Complete the binary GVC formal theorem and the full generic tangent-pencil geometric theorem.](foundations/README.md) — FORMAL-BINARY-GVC-COMPLETE
+- **verification / open:** [Respect the named imported theorem inputs and the analytic statements outside the focused finite-etale certificate.](foundations/README.md) — GAP-FOUNDATIONS-2
 
 The [structured record](MATH_STATUS.json) names each retained source, checker, evidence file and assurance flag. This navigation check does not rerun mathematics.

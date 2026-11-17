@@ -10,8 +10,8 @@ Read [the root instructions](../AGENTS.md) before starting; use
 | Location | Purpose | What belongs here |
 |---|---|---|
 | `research/` | Current mathematics by topic | Canonical statements and proofs, open obligations, necessary checkers and exact inputs |
-| `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, canonical sources, retained evidence and separate assurance flags |
-| `research/STATUS.md` | Generated navigation | Output of `make render-navigation`; edit its structured source |
+| `research/MATH_STATUS.json` | Structured current mathematical status | Stated scope, proof dependencies, source pins, open gaps and separate assurance flags |
+| `research/STATUS.md`, `research/SCOPES.md`, `research/DEPENDENCIES.md` | Generated navigation | Status, scope audit and implication diagrams from `make render-navigation`; edit the structured source |
 | `unpublished/` | Manuscript bundles awaiting revision, review or deposit | Paper source, current PDF, build instructions, metadata, verification scope and next review tasks |
 | `results/` | Deposited editions | Exact deposited files, checksums, identifiers, submission metadata and verification scope |
 | `working-guide/` | Reusable working standards | Policies and reusable procedures, without per-result progress records |
@@ -51,6 +51,9 @@ python3 research/scripts/research.py search QUERY
 
 Replace `RESULT-ID` and `QUERY` with the relevant identifier or search words.
 The commands read the compact catalogue; follow its source references for the proof.
+Use `explain ID`, `impact ID` and `gaps` to inspect dependencies and blockers.
+The [dependency guide](../research/DEPENDENCY_GUIDE.md) explains proof updates and
+read-only simulations; effective statuses propagate without changing assurance flags.
 
 ## Keep sources and evidence together
 
@@ -117,13 +120,17 @@ make check
 
 Run `make render-navigation` after changing mathematical status, then
 `make check-navigation`. The renderer updates `research/STATUS.md`, `research/README.md`, and the topic
-README pages from `research/MATH_STATUS.json`. Edit that structured source for
+README pages, scope audit and dependency diagrams from `research/MATH_STATUS.json`. Edit that structured source for
 result labels and statuses so the summaries stay aligned.
 For documentation edits that leave status unchanged, run `make check-navigation`
 without regenerating unrelated files.
 
-`make check-navigation` validates catalogue references and checker hashes, manuscript
-metadata, exact deposited-file checksums, local Markdown links and tooling controls.
+`make check-navigation` validates catalogue references, generated topic summaries, checker hashes,
+acyclic proof implications, graph source freshness and local TeX/Lean source closure,
+explicit current input/source pins,
+cached primary-source digests, manuscript metadata,
+exact deposited-file checksums, local Markdown links and tooling controls. Historical
+receipt hashes keep their original scope; a current replay is recorded separately.
 `make check` runs that target and compiles the Python tooling sources. These commands
 do **not** replay mathematical computations, build manuscripts, validate every LaTeX
 cross-reference, check external links or establish theorem correctness. Their

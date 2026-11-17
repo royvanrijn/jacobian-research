@@ -1,0 +1,75 @@
+{
+  "format": "two-pair-image-cubic-structure-v1",
+  "proof": "TWO_PAIR_IMAGE_CUBIC_STRATIFICATION.md",
+  "coefficient_domain": "Q, symbolic extension by I and sqrt(2) for Cartesian conversion",
+  "python": "3.x",
+  "sympy": "1.14.0",
+  "checker_sha256": "43c2649b780250a6ef34143a2e15512870fcefa25c5cd4a2abb0c12e29e9a98f",
+  "full_family": {
+    "dimension": 16,
+    "basis": [
+      "1",
+      "t",
+      "t**2",
+      "t**3",
+      "x",
+      "t*x",
+      "t**2*x",
+      "x**2",
+      "t*x**2",
+      "x**3",
+      "y",
+      "t*y",
+      "t**2*y",
+      "y**2",
+      "t*y**2",
+      "y**3"
+    ],
+    "image_coordinate_determinant": "1/16777216",
+    "parity_coordinate_determinant": "1/16",
+    "parity_dimensions": [
+      10,
+      6
+    ]
+  },
+  "exact_symbolic_certificates": [
+    "invertible 16-dimensional coordinate maps",
+    "three complete quadratic trace identities",
+    "polynomial sphere shear and inverse",
+    "null-conic frame incidence and affine representative identities"
+  ],
+  "frame_controls": {
+    "repeated_sextic_root_with_quartic_root": true,
+    "quartic_rejects_only_repeated_root": false,
+    "projective_endpoint_at_infinity": true,
+    "squarefree_sextic_rejects_every_frame": false,
+    "identically_zero_sextic_and_quartic": true
+  },
+  "bounded_regressions": {
+    "monomial_exponent_ranges": [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "infinitesimal_monomial_degree_max": 7,
+    "shear_pure_moment_max": 16,
+    "sharp_shear_multiplier_degree_max": 4,
+    "sharp_values": {
+      "1": "-1/35",
+      "2": "4/3003",
+      "3": "-16/230945",
+      "4": "64/16900975"
+    }
+  },
+  "scope": "Coordinate model for all 16 parameters; exact even-parity classification and shear identities as explained in proof. No full mixed-parity classification or universal finite moment cutoff is certified.",
+  "outcome": "pass"
+}

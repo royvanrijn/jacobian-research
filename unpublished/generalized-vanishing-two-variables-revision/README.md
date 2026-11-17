@@ -1,4 +1,4 @@
-# Generalized Vanishing in Two Variables: Working Revision
+# The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension
 
 **Unpublished · revision.**
 

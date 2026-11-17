@@ -3,13 +3,13 @@
   "date": "2026-11-17",
   "source": "main.tex",
   "pdf": "paper.pdf",
-  "source_sha256": "024b0dfab1b599a2be1bd405612f8d0ef82f8069c99f7ab87037adbf5278fb99",
-  "pdf_sha256": "affde9436f671936bcafef332915c5e2fe741a93a40eebb2cfec25fa2e754271",
+  "source_sha256": "721194083ee204cc295b5bb81248f0888775948607a53f8c92fdfb6493d86ec4",
+  "pdf_sha256": "f8e737eeea83bad95bb4c60c9d23adc74add740aaba411c6036df32bdcdce9f8",
   "checker": "verify.py",
   "checker_sha256": "0461daf0cb0ab3ff158d8eb44c4427b23a201f2418c3274fddd3d76fede1c16e",
   "source_audit": "source_audit.json",
-  "source_audit_sha256": "29f186dee0cd75976930bd5b6960c5e76febd4a2349c13d5891582387e99a390",
-  "pages": 17,
+  "source_audit_sha256": "92790b10cd7a6b182b3d8a0b5fdc477bc49a56e4533c12dd8e1bcc7ab11e2de8",
+  "pages": 18,
   "internal_proof_review": {
     "result": "No unresolved proof gap identified; this is internal AI-assisted review.",
     "scope": {
@@ -18,13 +18,14 @@
       "connected_classification": "Section 6: compact forms including disconnected stabilizers, line/doublet construction, regular dual matrix coefficients, branching rules, proper SL2 stabilizer images and subdirect products.",
       "disconnected_classification_and_nullcone": "Section 7: number-field specialization, completely splitting primes, exponent separation, Newton identities, component averaging and the character-lattice criterion. Finite spaces, inversion and factor-permutation examples were also checked.",
       "recompositions": "Section 8: CRT choice of a fixed marker, valuation extension with unit coefficients, unique negative valuation, descent of algebraicity, finite-generation Eisenstein argument and prime-quotient reduction for coefficient algebras.",
-      "primary_source_dependencies": "All 13 current bibliography entries checked against original passages; locators and applicability are recorded below."
+      "primary_source_dependencies": "All 15 current bibliography entries have inspected supporting passages and recorded scope, including the two missing Long references.",
+      "proof_clarifications": "The exact fixed subspace, representation-coordinate invariant, Cartier scalar cancellation and separable field inclusion were reread after revision; theorem scope is unchanged."
     },
-    "executor": "Internal Codex/ChatGPT proof and source audits, including a fresh-reader reconstruction; no human or external review claimed."
+    "executor": "Internal Codex/ChatGPT source audits and mathematical clarification checks; PDF-only reading is recorded separately. No external acceptance claimed."
   },
   "replay": {
     "command_from_repository_root": ".venv/bin/python unpublished/mathieu-reductive-homogeneous-spaces/verify.py",
-    "executor": "Internal replay by Codex; row and phase methods are separately implemented but share the environment and beta integral.",
+    "executor": "Internal Codex replay after the clarification edits; finite scope only.",
     "python": "3.12.3",
     "sympy": "1.14.0",
     "dependency_pin": "../../research/requirements.txt",
@@ -123,43 +124,112 @@
     },
     "scope": "Exact polynomial and rational identities; direct exceptional Haar moments at m=1,2; binary coefficient checks at the listed primes; radial row/phase moments and beta/double-integral evaluations at m=1,...,8; rejection of the two listed corrupted inputs. The all-order proofs and reductive classification are in main.tex and are not certified by these finite controls.",
     "formal_verification": false,
-    "external_review": false,
-    "reuse_basis": "Checker bytes and mathematical text unchanged by this title-only edit; previously recorded exact results retained."
+    "external_review": false
   },
   "pdf_review": {
     "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-    "standalone_build": "PASS: main.tex alone was copied into an ignored staging directory and built with the declared command; its bytes match the retained source.",
+    "standalone_build": "PASS: main.tex alone copied to ignored staging and compiled with the declared command; staged bytes match current source.",
     "result": "PASS",
     "latex_warnings_or_box_diagnostics": [],
-    "rendering": "All 17 pages rendered with Poppler pdftoppm at 75 dpi and visually inspected; title page additionally inspected at 110 dpi.",
+    "rendering": "All 18 pages rendered with PyMuPDF and visually inspected in contact sheets; title and AI-assistance pages inspected individually after removing publication-status wording.",
     "out_of_page_text_blocks": [],
     "unresolved_reference_markers": false,
-    "pdf_links_checked": 111,
+    "pdf_links_checked": 115,
     "invalid_internal_links": 0,
-    "pdf_title_matches_metadata": true
+    "pdf_title_matches_metadata": true,
+    "versioned_long_source_hyperlink_present": true
   },
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
   "remaining_review": "Obtain external mathematical review and an independent replay before submission; finite controls are not all-order theorem certificates.",
   "repository_checks": {
-    "render_navigation": "PASS: 8 topics, 32 principal results",
-    "check_navigation": "PASS: source references, checker hashes, portfolio and local links",
-    "portfolio": "PASS: 4 sealed published papers and 12 unpublished manuscripts",
-    "local_links": "PASS: 484 links in 126 maintained Markdown files",
-    "navigation_unit_tests": "PASS: 14 tests",
-    "bundle_identities": "PASS: all source/PDF/checker/audit hashes; metadata abstract matches manuscript",
-    "local_readme_links": "PASS: all 7 targets exist"
+    "check_navigation": "PASS: make check-navigation",
+    "catalogue": "8 topics, 32 principal results; source references, evidence and checker hashes checked",
+    "portfolio": "4 sealed published papers and 11 unpublished manuscripts checked",
+    "input_manifests": "112 pinned references and cached primary sources checked",
+    "local_links": "484 references in 125 maintained Markdown files checked",
+    "navigation_unit_tests": "PASS: 20 tests",
+    "bundle_identities": "PASS: source, PDF, checker and audit hashes; matching metadata abstract; no assurance upgrade"
   },
   "review_checklist": {
     "mathematics": "Internal dependency review and fresh reconstruction complete; theorem scope unchanged; no unresolved proof gap identified.",
-    "references": "All 13 cited primary passages and versions checked; every bibliography entry is cited.",
-    "readability": "Definitions, two introductory examples, contribution comparison and complete strategy supplied; 17 rendered pages inspected.",
+    "references": "All 15 current bibliography entries checked; prior SU(2), compact connected, spherical and radial results distinguished from the additional quotient/disconnected scope.",
+    "readability": "The supplied review findings are addressed; 18 rendered pages inspected. PDF-only reading and recheck are recorded separately.",
     "computation": "Exact finite coverage and two rejection controls recorded; no unrestricted certification claimed.",
     "bundle": "Standalone source build, PDF inspection, matching abstract and byte identities checked.",
     "external_review": "Not performed; remains required before submission.",
-    "submission": "Not requested; no deposit or published-edition change."
+    "submission": "Not requested; no deposit or published-edition change.",
+    "pdf_only_blind_reading": "Performed on the initial PDF and rechecked after the recorded revisions; actual editions, supplied context, answers and limits are recorded."
   },
   "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification",
-  "editorial_scope": "Title, subtitle, PDF metadata and navigation labels updated. The manuscript body and abstract are byte-identical to the previous reviewed edition."
+  "editorial_scope": "Prior-work attribution, quotient-descent obstacle, proof clarifications and overview improved; the abstract now spells out the degree-only multiplier already proved in Theorem 8.1. No theorem scope was changed.",
+  "review_response": [
+    {
+      "finding": "Missing Long SU(2) and compact connected group attribution",
+      "resolution": "Introduction and two bibliography entries give exact theorem citations before presenting the extension; Section 5 separately credits prior radial transfer."
+    },
+    {
+      "finding": "Finite-quotient descent obstacle unclear",
+      "resolution": "Introduction explains required right invariance and uncontrolled mixed moments under averaging."
+    },
+    {
+      "finding": "Lemma 6.3 needs the entire fixed subspace",
+      "resolution": "The alternating tensor explicitly spans V^{H0}; normality preserves this full one-dimensional space."
+    },
+    {
+      "finding": "Corollary 7.2 invariant product ambiguous",
+      "resolution": "The proof defines the K-module W, its coordinate functions z_i and their product in C[W]^K, with values one at the tuple and zero at the origin."
+    },
+    {
+      "finding": "Cartier scalar and field inclusion compressed",
+      "resolution": "Section 4 states -v is in Fp*, names the intermediate cubic field E and its separable inclusion, and uses Fp-linearity to cancel the scalar."
+    },
+    {
+      "finding": "Central coefficient mechanism compressed in overview",
+      "resolution": "The introduction explains Haar coefficient reduction, the Klein map to a cubic, Cartier pullback and the nonzero binomial coefficient; Section 4 identifies the affine coefficient by homogeneity."
+    },
+    {
+      "finding": "Abstract understates recomposition uniformity",
+      "resolution": "The abstract states that each exceptional pair has one fixed multiplier for all recompositions of each prescribed positive degree, independently of coefficients, as already proved in Theorem 8.1."
+    }
+  ],
+  "blind_reader_test": {
+    "reviewer": "Internal AI subagent /root/pdf_blind_reader, started with fork_turns=none",
+    "supplied_context": "Only the compiled PDF and the five reader questions. No research history, repository files, manuscript source, audit records, external literature or conversation was supplied. The reader reports respecting that restriction.",
+    "initial_pdf_sha256": "a6b32e58102c4c610a595ff86c3634b176d7f6418dee4681d1c0e032b3e1edc5",
+    "rechecked_pdf_sha256": "f53ccff97cbb597f5c546dad92115017c25485d1c61995dabe8ff37fbf36b3ba",
+    "coverage": "Complete 18-page initial reading, including appendices and references; complete revised-PDF recheck, with visual inspection of the affected Cartier passage.",
+    "answers": {
+      "what_is_new": "The explicit invariant exceptional quotient pairs supply nonspherical finite-stabilizer cases for the general/disconnected classification. The text credits Long's earlier group and spherical results. Further recomposition and coefficient-algebra claims are identifiable; the reader cannot establish priority from the PDF alone.",
+      "conceptual_reason": "Weights and integration by parts force purity; a selected prime denominator and nonzero binary coefficient force marked nonvanishing. Klein identities and Cartier pullback compute that coefficient on a cubic. Structural reductions and finite-trace separation propagate the examples.",
+      "hardest_step_and_location": "Section 4's cubic/Cartier coefficient comparison, equations (4.5)-(4.6), with Appendices B-C; structural reductions in Section 6 and finite-trace separation in Lemma 7.1.",
+      "limitations": "Complex groups with reductive identity components and regular functions; exceptional marked nonvanishing at selected orders; representation-theoretic existence rather than coordinate bounds for general quotients; recomposition/ring statements concern the constructed polynomial subalgebra.",
+      "verification_obstacles": "The binary-to-affine coefficient bridge is now explicit. Remaining work is checking cited structural results, polynomial identities and the Section 8 valuation/descent argument; these are supplied proof obligations, with no definite missing central proof data identified by the reader."
+    },
+    "obstacles_and_revisions": [
+      {
+        "obstacle": "Connecting the homogeneous binary coefficient to the affine coefficient took reconstruction.",
+        "revision": "Added the affine coefficient formula and its total-degree explanation in Section 4.",
+        "recheck": "Reader verified n(p-1)/b=2(p-1) and confirmed that the bridge fits the Cartier comparison."
+      },
+      {
+        "obstacle": "The reader initially described the spherical-draft citation as lacking an accessible locator.",
+        "revision": "Made the existing versioned GitHub link label explicit and added exact theorem/lemma locators.",
+        "recheck": "Reader inspected embedded links and corrected the initial criticism: the original PDF already contained the revision-specific permalink."
+      },
+      {
+        "obstacle": "The abstract's coefficient uniformity could be read too broadly.",
+        "revision": "Tied coefficient independence explicitly to the fixed multiplier for each prescribed degree.",
+        "recheck": "Reader confirmed agreement with Theorem 8.1; no common nonvanishing-order set is asserted."
+      }
+    ],
+    "result": "The reader identifies the contribution, mechanism, hardest step and limits; the concrete communication obstacles were resolved on recheck. No new mathematical inconsistency identified. This is internal AI assessment, not external acceptance, formal verification or independent literature confirmation."
+  },
+  "editorial_refresh": {
+    "scope": "Removed the title-date draft label and transient review-status sentence from the AI disclosure; retained the material assistance, including proof review. Removed the draft label from the versioned spherical-pair bibliography entry. No mathematical statements, arguments, checker or assurance flags changed.",
+    "previous_source_sha256": "4ff953480e7899e0e77ec474b26ab92a778e3ffdc433c225f47abbca96ef25c0",
+    "previous_pdf_sha256": "f53ccff97cbb597f5c546dad92115017c25485d1c61995dabe8ff37fbf36b3ba",
+    "validation": "Declared LaTeX build passed with no warnings, unresolved references or box diagnostics; all pages rendered and visually inspected. Prior mathematical-review, blind-reader and finite-control records retain their recorded editions and scopes."
+  }
 }

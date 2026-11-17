@@ -14,6 +14,7 @@
     "prime gaps",
     "finite-prefix searches"
   ],
+  "current_scope_note": "These cubic confinement controls are not the full cubic theorem; the completed X(A+B*X^2) family is proved in CUBIC_ADJOINT_STABILITY_SFC.tex.",
   "finite_parameter_extrapolation": false,
   "other_lower_exponents_or_gaps_proved": false,
   "all_positive_Gamma_shapes": false,

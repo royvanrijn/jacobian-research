@@ -17,7 +17,7 @@ Start with the published papers below. Each paper has its PDF, source, submissio
 
 [Unpublished papers](unpublished/) include the Gaussian dimension-degree boundary, **Counterexamples to the Mathieu Property**, revisions and smaller drafts. Each directory records what it proves, its review status and the remaining work.
 
-[Research topics](research/) contain the current results, open questions, proofs, code and supporting evidence.
+[Research topics](research/) contain the current results, open questions, proofs, code and supporting evidence. The [scope audit](research/SCOPES.md) and [dependency graph](research/DEPENDENCIES.md) show exact claim limits, proof routes and unresolved obligations.
 
 ## Working on research and papers
 

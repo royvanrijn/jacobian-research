@@ -7,11 +7,11 @@
   "sources": [
     {
       "source": "main.tex",
-      "sha256": "024b0dfab1b599a2be1bd405612f8d0ef82f8069c99f7ab87037adbf5278fb99"
+      "sha256": "4ff953480e7899e0e77ec474b26ab92a778e3ffdc433c225f47abbca96ef25c0"
     },
     {
       "source": "paper.pdf",
-      "sha256": "affde9436f671936bcafef332915c5e2fe741a93a40eebb2cfec25fa2e754271"
+      "sha256": "f53ccff97cbb597f5c546dad92115017c25485d1c61995dabe8ff37fbf36b3ba"
     },
     {
       "source": "verify.py",
@@ -19,11 +19,11 @@
     },
     {
       "source": "README.md",
-      "sha256": "19fa81239f0201c64ada45967e7ef01edc7bbfeb41579b2592841649a93ba608"
+      "sha256": "0d4864d3aacc93885a9ef9df8d5a5f8d28e2217669918f39541df1a8f0d16f7a"
     },
     {
       "source": "metadata.json",
-      "sha256": "6975a4fd710bf87c74f34d80f5947b066ca0a07119e8b54d1e3fa73f8579d2a3"
+      "sha256": "aea7ffece5d249ce6626f0a4bff3f5d42752d663df44ad0b30a35b42bf8cd2e5"
     }
   ],
   "internal_review": {
@@ -34,9 +34,10 @@
       "connected_classification": "Section 6: compact forms including disconnected stabilizers, line/doublet construction, regular dual matrix coefficients, branching rules, proper SL2 stabilizer images and subdirect products.",
       "disconnected_classification_and_nullcone": "Section 7: number-field specialization, completely splitting primes, exponent separation, Newton identities, component averaging and the character-lattice criterion. Finite spaces, inversion and factor-permutation examples were also checked.",
       "recompositions": "Section 8: CRT choice of a fixed marker, valuation extension with unit coefficients, unique negative valuation, descent of algebraicity, finite-generation Eisenstein argument and prime-quotient reduction for coefficient algebras.",
-      "primary_source_dependencies": "All 13 current bibliography entries checked against original passages; locators and applicability are recorded below."
+      "primary_source_dependencies": "All 15 current bibliography entries have inspected supporting passages and recorded scope, including the two missing Long references.",
+      "proof_clarifications": "The exact fixed subspace, representation-coordinate invariant, Cartier scalar cancellation and separable field inclusion were reread after revision; theorem scope is unchanged."
     },
-    "executor": "Internal Codex/ChatGPT proof and source audits, including a fresh-reader reconstruction; no human or external review claimed."
+    "executor": "Internal Codex/ChatGPT source audits and mathematical clarification checks; PDF-only reading is recorded separately. No external acceptance claimed."
   },
   "resolved_exposition_findings": [
     "Give the full classification strategy, a Laurent-monomial example and a worked first radial moment.",
@@ -99,11 +100,27 @@
       "support_and_applicability": "Hilbert-Mumford contraction and positive active weights. Applied only to connected G^0 after proving equality of the two nullcones."
     },
     {
+      "bibliography_key": "LongSU2",
+      "identity": "Christopher D. Long, Counterexamples to the xz-Conjecture and the Mathieu Conjecture for SU(2), arXiv:2607.19012v1 (2026)",
+      "url": "https://arxiv.org/abs/2607.19012v1",
+      "inspected_source": "https://github.com/long-mathematics/xz-mathieu-su2-counterexamples/blob/a2afbce9b5e0d27d7a2fbc84ab08afcd9b6be49d/xz_mathieu_su2_counterexamples.tex",
+      "inspected_location": "Theorem 4.2, equations (13)-(15); Theorem 2.1 for the underlying Laurent example",
+      "support_and_applicability": "An explicit regular SU(2) pair already disproves the original moment implication with a fixed marker at every positive order. This is credited as prior work."
+    },
+    {
+      "bibliography_key": "LongCompact",
+      "identity": "Christopher D. Long, The Mathieu Property for Compact Connected Lie Groups, arXiv:2609.16178v1 (2026); manuscript dated 30 July 2026",
+      "url": "https://arxiv.org/abs/2609.16178v1",
+      "inspected_source": "https://github.com/long-mathematics/mathieu-property-compact-connected-lie-groups/blob/51593f1331528072b4d4eb88ad809be0d7429e24/mathieu_property_compact_connected_lie_groups.tex",
+      "inspected_location": "Theorems 1.1, 1.2, 3.1 and 4.1; Section 9 scope remark",
+      "support_and_applicability": "The compact connected group classification and existence of universal radial witnesses precede this paper. Our radial pair and formula are a different realization; the case H={1} is not a new classification."
+    },
+    {
       "bibliography_key": "LongSpherical",
       "identity": "Long, manuscript dated 22 September 2026, revision e9edac262b4b64eb68feb0e6e80496cefe4a1dee",
       "url": "https://github.com/long-mathematics/mathieu-second-conjecture-spherical-pairs/blob/e9edac262b4b64eb68feb0e6e80496cefe4a1dee/mathieu_second_conjecture_spherical_pairs.tex",
-      "inspected_location": "Main theorem; line/doublet, root-doublet, active-factor and subdirect-product arguments",
-      "support_and_applicability": "Connected spherical classification allowing disconnected H, and the attributed structural reductions. This paper derives its own radial moments and adds nonspherical exceptional quotients."
+      "inspected_location": "Theorem 1.1; Proposition 3.1; Lemmas 4.1, 4.2, 6.1 and 6.2; final scope remark",
+      "support_and_applicability": "The connected spherical theorem permits disconnected H. Its line/doublet and subdirect reductions already work beyond spherical spaces; sphericity excludes residual finite SL2 projections. The cited draft does not classify nonspherical spaces or disconnected acting groups."
     },
     {
       "bibliography_key": "Mathieu",
@@ -149,5 +166,41 @@
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification"
+  "title": "Counterexamples to the Mathieu Property: From Explicit Quotient Constructions to a General Classification",
+  "novelty_comparison": {
+    "already_established": "Long's SU(2) counterexample, compact connected group classification, universal radial transfer and connected spherical classification.",
+    "additional_scope_here": "Explicit right-invariant witnesses on the exceptional nonspherical quotients SL2/2O and SL2/2I, the resulting classification without sphericity, and disconnected acting groups.",
+    "essential_obstacle": "A group counterexample need not descend to a finite right quotient. Averaging the pure function introduces mixed products with uncontrolled moments.",
+    "alternative_proof": "Section 5 supplies a different radial pair and closed marked-moment formula, not new existence of radial transfer."
+  },
+  "review_response": [
+    {
+      "finding": "Missing Long SU(2) and compact connected group attribution",
+      "resolution": "Introduction and two bibliography entries give exact theorem citations before presenting the extension; Section 5 separately credits prior radial transfer."
+    },
+    {
+      "finding": "Finite-quotient descent obstacle unclear",
+      "resolution": "Introduction explains required right invariance and uncontrolled mixed moments under averaging."
+    },
+    {
+      "finding": "Lemma 6.3 needs the entire fixed subspace",
+      "resolution": "The alternating tensor explicitly spans V^{H0}; normality preserves this full one-dimensional space."
+    },
+    {
+      "finding": "Corollary 7.2 invariant product ambiguous",
+      "resolution": "The proof defines the K-module W, its coordinate functions z_i and their product in C[W]^K, with values one at the tuple and zero at the origin."
+    },
+    {
+      "finding": "Cartier scalar and field inclusion compressed",
+      "resolution": "Section 4 states -v is in Fp*, names the intermediate cubic field E and its separable inclusion, and uses Fp-linearity to cancel the scalar."
+    },
+    {
+      "finding": "Central coefficient mechanism compressed in overview",
+      "resolution": "The introduction explains Haar coefficient reduction, the Klein map to a cubic, Cartier pullback and the nonzero binomial coefficient; Section 4 identifies the affine coefficient by homogeneity."
+    },
+    {
+      "finding": "Abstract understates recomposition uniformity",
+      "resolution": "The abstract states that each exceptional pair has one fixed multiplier for all recompositions of each prescribed positive degree, independently of coefficients, as already proved in Theorem 8.1."
+    }
+  ]
 }

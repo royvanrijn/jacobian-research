@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "scope": "Exact symbolic identities and bounded Wick controls; completeness and arbitrary-degree classification are proved in the written note, not by these controls.",
+  "checked_on": "2026-11-17",
+  "command": ".venv/bin/python research/moments/vanishing/verify_gaussian_affine_isotropic_chart.py --output research/moments/vanishing/gaussian_affine_isotropic_chart_verification.json",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "a797d1888e5ae3f93c1adaf87d9cdfd307d60c06aeaba3fb37e51e96548f7f69",
+  "proof_sha256": "50bf4987b9cdd152b349593bd53909a2e8b30808933c380d4a619d380df6f4cf",
+  "checks": {
+    "symbolic": [
+      "arbitrary-ell unsafe-branch rational identities",
+      "root equation and determinant cancellation",
+      "directional second derivative and isotropic-axis obstruction",
+      "shear inverse and Gaussian quadratic-form preservation",
+      "mixed constant-source phase expansion and moving-coordinate identities",
+      "general mixed-source spatial and time-volume identities",
+      "root-zero Gaussian tilt denominator identity",
+      "four exact all-order marker polynomials from the shear"
+    ],
+    "bounded_controls": {
+      "shear_B_z_squared": {
+        "moment_orders": [
+          0,
+          32
+        ],
+        "W_marker_powers": [
+          1,
+          4
+        ]
+      },
+      "long_phase": {
+        "moment_orders": [
+          0,
+          8
+        ],
+        "markers": [
+          "1",
+          "Z"
+        ]
+      },
+      "positive_weight_example": {
+        "moment_orders": [
+          0,
+          7
+        ],
+        "markers": [
+          "1",
+          "W^2"
+        ]
+      },
+      "rejection_controls": 2
+    },
+    "marker_periods_B_z_squared": {
+      "1": "-t**5/2",
+      "2": "t**10/4 - 4*t**4",
+      "3": "-t**15/8 + 6*t**9 - 18*t**3",
+      "4": "t**20/16 - 6*t**14 + 84*t**8 - 48*t**2"
+    }
+  },
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "internal_source_review": {
+    "reviewer": "quartic_scope internal research agent",
+    "scope": "All four chart extensions, root-zero divergence argument, Laurent localization cases, marker cutoffs, and spatial/time bridges",
+    "outcome": "No mathematical gap identified; independent and external review remain pending."
+  },
+  "repository_checks": {
+    "new_result_graph_explanation": "Current source pins; no stale source in GAUSSIAN-H21-AFFINE-CHART route.",
+    "python_compile": "passed",
+    "focused_diff_whitespace": "passed",
+    "new_proof_local_links": "passed",
+    "make_render_navigation": "failed: unrelated changed checker source ARITHMETIC-FIXED-MAP-HASSE-FAILURES; generated navigation not refreshed by this task",
+    "make_check_navigation": "failed at the same unrelated checker-hash gate"
+  }
+}

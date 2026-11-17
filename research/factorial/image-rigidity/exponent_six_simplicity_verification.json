@@ -23,5 +23,26 @@
   "general_FC_closed": false,
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "status": "pass",
+    "checked": "2026-11-17",
+    "command": ".venv/bin/python research/factorial/image-rigidity/verify_exponent_six_simplicity.py",
+    "checker_sha256": "c648c7209b6414afd220bb224b6d4ed37bd5dfb2e2126335e86b1876c071e5b2",
+    "checks": {
+      "exact_analytic_inequalities": 35,
+      "symbolic_identities": 6,
+      "finite_prefix_Bezout_certificates": 9998
+    },
+    "total": 10039,
+    "files": {
+      "EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995",
+      "verify_exponent_six_simplicity.py": "c648c7209b6414afd220bb224b6d4ed37bd5dfb2e2126335e86b1876c071e5b2",
+      "exponent_six_prefix_certificates.json": "867c2b9024bd4d3fe21720b80c3da2c9ecac078bc1f312dfaf2f62731f9cdaa5",
+      "exponent_six_simplicity_audit.json": "c7d4e2fabccdab5ea8f6d9ac3ac232a66f3e55933b0a672a5db7b5c425798f76",
+      "EFFECTIVE_SADDLE_ANNULUS.tex": "ab91570d589fc95790090cfdd5770ae8c17c9ab14277a05c80d0a84f0e04ca26",
+      "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "af0cda81c31a095f6dae9dcde1dc7998684968207aaa644713fc9a28dfce4025"
+    },
+    "scope": "Current internal finite controls and declared input identities. Written universal proofs and imported analytic statements remain separate; this is not independent mathematical review."
+  }
 }

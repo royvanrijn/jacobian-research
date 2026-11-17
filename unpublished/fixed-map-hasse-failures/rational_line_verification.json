@@ -1,0 +1,174 @@
+{
+  "algebra": {
+    "constant": "11/(1728*sqrt(3)*zeta(2)) * product_{p=2 mod3}(1+p^-3)/(1-p^-3)",
+    "content_weight_at_2": "72/7",
+    "content_weight_at_3": "18/13",
+    "negative_area": "1/288",
+    "positive_area": "71/20736",
+    "signed_area": "143/20736"
+  },
+  "checker_sha256": "88a1a5122b9ceff5c320c55c277e9c9aabdf8df21b483ee5dd8a398cdda264c8",
+  "enumeration": {
+    "denominator_bound": 26666,
+    "maximum_height": 10000,
+    "naive_and_optimized_agree_through_height": 80,
+    "numerator_absolute_bound": 7500
+  },
+  "examples": [
+    {
+      "a": "152",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 4864
+    },
+    {
+      "a": "19/37",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 608
+    },
+    {
+      "a": "19/8",
+      "content": 8,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 76
+    },
+    {
+      "a": "513",
+      "content": 3,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 5472
+    },
+    {
+      "a": "1/513",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 4617
+    },
+    {
+      "a": "513/8",
+      "content": 24,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 684
+    },
+    {
+      "a": "-19/37",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": true,
+      "height": 608
+    },
+    {
+      "a": "1",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": false,
+      "height": 32
+    },
+    {
+      "a": "8",
+      "content": 1,
+      "everywhere_local": true,
+      "hasse_failure": false,
+      "height": 256
+    },
+    {
+      "a": "27",
+      "content": 3,
+      "everywhere_local": true,
+      "hasse_failure": false,
+      "height": 288
+    },
+    {
+      "a": "2",
+      "content": 1,
+      "everywhere_local": false,
+      "hasse_failure": false,
+      "height": 64
+    },
+    {
+      "a": "7",
+      "content": 1,
+      "everywhere_local": false,
+      "hasse_failure": false,
+      "height": 224
+    },
+    {
+      "a": "19/2",
+      "content": 2,
+      "everywhere_local": false,
+      "hasse_failure": false,
+      "height": 304
+    },
+    {
+      "a": "19/3",
+      "content": 1,
+      "everywhere_local": false,
+      "hasse_failure": false,
+      "height": 608
+    },
+    {
+      "a": "57",
+      "content": 3,
+      "everywhere_local": false,
+      "hasse_failure": false,
+      "height": 608
+    }
+  ],
+  "height_counts": {
+    "100": 6,
+    "1000": 617,
+    "10000": 41415,
+    "300": 67,
+    "3000": 4377,
+    "80": 5
+  },
+  "outcome": "pass",
+  "pair_checks": {
+    "coprime_pairs": 20086,
+    "denominator_bound": 128,
+    "locally_admissible_including_cubes": 330,
+    "numerator_absolute_bound": 128,
+    "tested_primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127
+    ]
+  },
+  "python": "3.12.3",
+  "scope": "Internal exact finite checks, not a proof of the unrestricted classification or asymptotic"
+}

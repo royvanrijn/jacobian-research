@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational and finite-field",
+  "literal_hull_residual_cases": 169,
+  "lower_one_bridge_and_pair_cases": 27,
+  "additional_integer_Gamma_bridge_and_pair_cases": 5,
+  "general_lower_exponent_certificates": 48,
+  "unsupported_inputs_rejected": 17,
+  "repeated_factor_countercontrol_detected": true,
+  "carry_endpoint_countercontrol_detected": true,
+  "lower_one_gap_three_terminal_family": "N=3^r or 2*3^r, N>=2",
+  "ordinary_arbitrary_lower_family": "gap=p^s, terminal N=p^r>=2, digit_s(a)<=p-2",
+  "unrestricted_binomial_SFC": false,
+  "all_terminal_orders": false,
+  "finite_run_proves_unbounded_quantifiers": false,
+  "proof": "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex",
+  "python_version": "3.12.3",
+  "sympy_version": "1.14.0",
+  "independent_replay": false,
+  "external_review": false,
+  "formal_verification": false,
+  "priority_claim": false,
+  "input_sha256": {
+    "ARITHMETIC_FRONTIER_TERMINAL_ORDERS.tex": "ce7c675877e9b7f377188bc411a92c3c6f25562e8d619cc7b5fe2dbac2dbd053",
+    "arithmetic_frontier_terminal_orders.py": "a4798cbe23da801889bc6f51c750a0387d972570fb8633354a6d6e3da2124cfc",
+    "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
+    "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
+    "HIGHER_GAP_ADJOINT_RANK.tex": "ec19415938c9b0b92e7d365fb4a4c66b701fdf36d73883b68f7cfb2971d7ec28"
+  }
+}

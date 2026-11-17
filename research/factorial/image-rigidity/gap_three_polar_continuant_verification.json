@@ -53,5 +53,26 @@
     "higher_gap_adjoint_rank.py": "e4afd1bc97e6324cf77a84d470a60379d35dbb95c05e4f449dc1261198d2dbaf",
     "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
     "sources/iskander-jain-2020-delta-laguerre-polya.pdf": "4d9a13762ee08160e0441c44bdbaec6eacbc6f8f714af60eb812017f4643d709"
+  },
+  "current_replay": {
+    "status": "pass",
+    "checked": "2026-11-17",
+    "command": ".venv/bin/python research/factorial/image-rigidity/verify_gap_three_polar_continuant.py",
+    "checker_sha256": "1c395bddd9c7e7c00923a63b9ca5cf371a343104cabbf42dc31ff11633f4cb3a",
+    "checks": null,
+    "total": 84,
+    "files": {
+      "GAP_THREE_POLAR_AND_CONTINUANT.tex": "757a2d85611ebd6198ed5fe3c4a8c3eb2ea76dc2585a787de9e5e7abfdecf861",
+      "gap_three_polar_continuant.py": "48a061fe1d174f7cc38c9b7e4e3b1fd738ecc0ec6779ca089b46b00f70d1f312",
+      "verify_gap_three_polar_continuant.py": "1c395bddd9c7e7c00923a63b9ca5cf371a343104cabbf42dc31ff11633f4cb3a",
+      "gap_three_polar_continuant_audit.json": "f941b46d672403d68083c5dd4403c9722702b8a11c6190bc237698b7f6e2d8e1",
+      "gap_three_polar_continuant_certificates.json": "c6294ddde81eb01a87d58b5029d5a0a0c5620b8e7e243bc56b9229346fa71fd7",
+      "gap_three_polar_continuant_diagnostics.json": "4232e6aa0d1344dd5077210268a1d690ca05185f8ae6c14fae2c787791a3e792",
+      "gap_three_wronskian.py": "ea982eedba71d8ff9bc770d2a8c60f71f12e0091c7fab46387789e5bb4db7317",
+      "higher_gap_adjoint_rank.py": "e4afd1bc97e6324cf77a84d470a60379d35dbb95c05e4f449dc1261198d2dbaf",
+      "prime_power_windows.py": "8f7ae47d1bf7d3d2c955c2d2868bfbf515b316f462a2a6ba7bef6b2faa24d752",
+      "sources/iskander-jain-2020-delta-laguerre-polya.pdf": "4d9a13762ee08160e0441c44bdbaec6eacbc6f8f714af60eb812017f4643d709"
+    },
+    "scope": "Current internal finite controls and declared input identities. Written universal proofs and imported analytic statements remain separate; this is not independent mathematical review."
   }
 }

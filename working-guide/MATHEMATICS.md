@@ -26,6 +26,13 @@ A result can fit more than one row. For example, an exact computational theorem 
 
 For each principal claim, keep a compact internal record of the exact statement, proof location, dependencies, evidence type, reviewer and unresolved obligations. Reuse the repository's current result records instead of creating a parallel status system. This record belongs in supporting documentation; the paper itself must present the mathematical argument.
 
+The executable graph is part of [MATH_STATUS.json](../research/MATH_STATUS.json).
+Use the [dependency guide](../research/DEPENDENCY_GUIDE.md) to record exact nodes,
+proof-backed implications and source pins. Its [generated diagrams](../research/DEPENDENCIES.md)
+and [scope audit](../research/SCOPES.md) show current routes and gaps. A graph pass
+checks the declared structure and evidence freshness; it does not validate the
+mathematics or establish complete dependency coverage.
+
 Start at the main theorem and work backwards. For every lemma or external theorem used, check its precise hypotheses, conclusion and application. Cite the exact theorem, proposition or page and version when numbering can change. A matching title, abstract or search snippet cannot establish that a source proves the needed fact. If the source is unavailable, the dependency remains unverified until the proof is supplied or checked.
 
 Look for circularity: a lemma must not use the main theorem, an equivalent unresolved conjecture or a later result that depends on it. Separate a new reduction from a solution of the reduced problem. An equivalence theorem does not resolve either side without an independent argument for one side.

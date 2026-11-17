@@ -5,22 +5,36 @@
   "pdf": "paper.pdf",
   "pages": 18,
   "source_hashes": {
-    "main.tex": "ffe3001b67f920b391763c9adeea68a62fa028565b06af014b13d76f1e25b2cf",
+    "main.tex": "fb606ff9563c63737ec1747bef58ed81ecd3bfb4d36ba77b11ed90a4288ea960",
     "references.bib": "6450e9b4bf4053cd3fe8b2572f9abd7e38b80ebe00d4e0dfddac24b72179becc"
   },
-  "pdf_sha256": "1e075f1b556e23e5a19100508e6d04b32d6d24f23b9957efdedf8be23fe388fe",
+  "pdf_sha256": "70e8ad48efc0f4ffbde447ec06074c64afbf12e0c6c86a37ca7d1eeae1a5271e",
   "build_command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=paper main.tex",
   "build_succeeded": true,
   "latex_log_issues": [],
   "independent_replay": false,
   "external_review": false,
   "lean_build_replayed": false,
-  "verification_scope": "Current written-source review and PDF rebuild. Existing formalization scope is described in the manuscript; no new Lean replay or independent mathematical review.",
+  "verification_scope": "Editorial standardization of the AI attribution to the PAPERS.md wording; mathematical statements, arguments and assurance flags unchanged. Earlier mathematical-review records retain their recorded scope; no new mathematical or Lean verification is claimed.",
   "review_changes": [
     "Filled the empty-equality-face case of the common-threshold argument.",
     "Reviewed the support certificate and sharp uniform-cutoff argument.",
     "Replaced obsolete build/replay paths with current source and Lean project locations.",
-    "Handled zero inputs explicitly in the threshold and optimal-cutoff arguments."
+    "Handled zero inputs explicitly in the threshold and optimal-cutoff arguments.",
+    "Replaced temporary formalization-status wording with timeless scope descriptions and prevented a one-word line at the page 17/18 boundary."
   ],
-  "layout_review": "All pages rendered and inspected in contact sheets; no clipping, overlap, or broken references observed."
+  "layout_review": "All 18 pages rendered and compared with the preceding reviewed PDF. Only page 18 changed; it was visually inspected after standardizing the AI attribution, with no clipping, overlap or unresolved references.",
+  "ai_attribution_update": {
+    "scope": "Editorial standardization of the AI attribution to the PAPERS.md wording; mathematical statements, arguments and assurance flags unchanged. Earlier mathematical-review records retain their recorded scope; no new mathematical or Lean verification is claimed.",
+    "previous_source_hashes": {
+      "main.tex": "4e0346e9fa5a0cf2af0b338a6540aaa3c05d9845959856ac5e817508a0ce11e7",
+      "references.bib": "6450e9b4bf4053cd3fe8b2572f9abd7e38b80ebe00d4e0dfddac24b72179becc"
+    },
+    "previous_pdf_sha256": "f06429cf33e5ab8584df2c4e3e422ad62efa043c82da9003063c114a92ca7598",
+    "changed_pages": [
+      18
+    ],
+    "latex_issues": [],
+    "canonical_paragraph_occurrences": 1
+  }
 }

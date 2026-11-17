@@ -29,5 +29,31 @@
   "general_FC_closed": false,
   "independent_replay": false,
   "formal_verification": false,
-  "external_review": false
+  "external_review": false,
+  "current_replay": {
+    "status": "pass",
+    "checked": "2026-11-17",
+    "command": ".venv/bin/python research/factorial/image-rigidity/verify_uniform_two_term_sfc.py",
+    "checker_sha256": "38daf8780fc6985dd749e5319c32aa8e14bb09572766e867ea15737dc82dceb7",
+    "checks": {
+      "uniform_exact_inequalities": 47,
+      "symbolic_identities": 8,
+      "finite_prefix_Bezout_certificates": 92935
+    },
+    "total": 92990,
+    "files": {
+      "ALL_UNIVARIATE_TWO_TERM_SFC.tex": "112d995972906353784af4f9ceb2b03eb7e71ce3e7bd52adc5a44c6869aeadc0",
+      "uniform_two_term_sfc.py": "ff24ce25e08b659958d2e757c1d7a93e9308546bc84b7809637a8ea14b91f8a0",
+      "verify_uniform_two_term_sfc.py": "38daf8780fc6985dd749e5319c32aa8e14bb09572766e867ea15737dc82dceb7",
+      "all_exponent_prefix_certificates.json": "79b06fc07ec60d593fde7af48da96e873583f6d0d406896d3dda21ad5c74b16f",
+      "uniform_two_term_sfc_audit.json": "79b50f2e57e95cd12ea7416d73c715efbde565bce264b62fdd817bd4f5ff0768",
+      "EFFECTIVE_EXPONENT_SIX_SIMPLICITY.tex": "673958f0dd9f69ba5d1e560eca531e3738b17622ab3fe3f0fcb0a44557274995",
+      "exponent_six_simplicity_verification.json": "2dbb42292d3b72785866259c551282cbaccf60ee0edbb5fb597d67bb9a641484",
+      "ALL_EXPONENTS_AND_LARGE_EXPONENT_CUTOFF.tex": "604e1687ea759785fe5d97a2cf214c84732be10ac0df0cae208d7bd01435dcd7",
+      "PRIME_POWER_TWO_TERM_SFC.tex": "0e94e91d7b60905e9ef4d1c42234b6ef5f5307cac7899d77b7c5ce6714243228",
+      "QUANTITATIVE_SQUAREFREENESS_ALL_EXPONENTS.tex": "af0cda81c31a095f6dae9dcde1dc7998684968207aaa644713fc9a28dfce4025",
+      "all_exponent_squarefree_verification.json": "f6772435458a75069a2346d66dbd754d6f8f9c1ff5f557b8420f5f6eb7d0dece"
+    },
+    "scope": "Current internal finite controls and declared input identities. Written universal proofs and imported analytic statements remain separate; this is not independent mathematical review."
+  }
 }

@@ -1,0 +1,267 @@
+\section{All rational parameters in target height}\label{sec:rational-counting}
+
+The local criterion also permits inert prime cubes in either numerator or
+denominator.  Counting the resulting rational parameters requires two
+additional ingredients: coprimality of numerator and denominator, and the
+content of the projective target coordinates.  The latter changes the
+leading constant at both \(2\) and \(3\).
+
+\begin{theorem}\label{thm:rational-count}
+Let \(\ell=\{y_a:a\in\Q\}\) be the target line in
+\eqref{eq:target-family}, and let
+\[
+ N_{\Phi,\ell}(B)=
+ \#\{a\in\Q:\ H(y_a)\le B,
+       \ \Phi^{-1}(y_a)\text{ fails the Hasse principle}\}.
+\]
+Then
+\begin{equation}
+ N_{\Phi,\ell}(B)\sim C_\Phi\frac{B^2}{\log B},
+ \qquad
+ C_\Phi=
+ \frac{11}{1728\sqrt3\,\zeta(2)}
+ \prod_{p\equiv2\ (3)}\frac{1+p^{-3}}{1-p^{-3}}.
+ \label{eq:rational-constant}
+\end{equation}
+The product is absolutely convergent and positive.
+\end{theorem}
+
+\subsection{Primitive coordinates and the height region}
+
+Write \(a=m/n\), where \(m\ne0\), \(n>0\), and
+\(\gcd(m,n)=1\).  The projective coordinates are
+\[
+ [1:y_{m/n}]=[9n:-9n:32m:24m+3n].
+\]
+Their positive common divisor is exactly
+\[
+ d(m,n)=\gcd(n,8)\gcd(m,3).
+\]
+Indeed, a common prime divisor other than \(2,3\) would divide both
+\(m\) and \(n\).  At \(3\), the common valuation is one if
+\(3\mid m\), and zero otherwise: when \(3\mid m\), the last
+coordinate has valuation one because \(3\nmid n\).  At \(2\), there
+is no common factor if \(n\) is odd.  If \(n\) is even, then \(m\)
+is odd and the common valuation is \(\min\{v_2(n),3\}\), as is seen
+from \(9n,32m,24m+3n\).  Consequently
+\begin{equation}\label{eq:rational-height}
+ H(y_{m/n})=
+ \frac{\max\{9n,32|m|,|24m+3n|\}}
+      {\gcd(n,8)\gcd(m,3)}.
+\end{equation}
+
+Introduce the bounded polygon
+\[
+ \Omega=\{(x,y)\in\R^2:y>0,
+       \ \max(9y,32|x|,|24x+3y|)\le1\}.
+\]
+Its part with \(x<0\) is a rectangle of area \(1/288\).  Its part
+with \(x>0\) is the rectangle
+\((0,1/32]\times(0,1/9]\), with the upper right triangle removed by
+\(24x+3y\le1\).  The triangle has horizontal and vertical legs
+\(1/288\) and \(1/36\), respectively.  Thus
+\begin{equation}\label{eq:rational-area}
+ \operatorname{area}(\Omega)=
+ \frac1{288}+\frac1{288}-\frac1{20736}
+ =\frac{143}{20736}.
+\end{equation}
+
+\subsection{Coprime pairs and the cubic residue condition}
+
+Define a multiplicative indicator \(g\) on positive integers by
+\[
+ g(t)=1\quad\Longleftrightarrow\quad
+ (t,6)=1\ \text{ and }\quad
+ v_p(t)\equiv0\pmod3\ \text{for every }p\equiv2\pmod3.
+\]
+Its Dirichlet series and leading constant are
+\begin{align*}
+ F(s)&=
+ \prod_{p\equiv1\ (3)}(1-p^{-s})^{-1}
+ \prod_{\substack{p\equiv2\ (3)\\p>2}}(1-p^{-3s})^{-1},\\
+ K&=\lim_{s\to1^+}\frac{(s-1)^{1/2}F(s)}{\sqrt\pi}
+   =\frac{G_3(1)}{\sqrt\pi}
+     \prod_{\substack{p\equiv2\ (3)\\p>2}}(1-p^{-3})^{-1}.
+\end{align*}
+Let \(\chi\) be either character of order three modulo \(9\).
+On units, its kernel is \(\{1,-1\}\), and therefore
+\[
+ \mathbf1_{u/v\equiv\pm1\ (9)}
+ =\frac13\sum_{j=0}^2\chi^j(u)\overline{\chi^j(v)}
+ \qquad ((uv,3)=1).
+\]
+For completeness, the required univariate estimates are
+\begin{equation}\label{eq:rational-sd}
+ \sum_{t\le X}g(t)\sim K\frac{X}{\sqrt{\log X}},
+ \qquad
+ \sum_{t\le X}g(t)\chi^j(t)
+ =o\left(\frac{X}{\sqrt{\log X}}\right)\quad(j=1,2).
+\end{equation}
+They follow from \cite[Theorem~1.2]{BretecheTenenbaum}, with prime-mean
+parameter \(\rho=1/2\) in the first case and \(\rho=0\) in the other
+two.  Here all prime-power values have absolute value at most one; the
+class \(\mathcal F(r,\sigma)\) in that theorem applies with
+\(r=1/2\), \(\sigma=3/4\).  The prime number theorem in the fixed
+classes modulo \(9\) gives its prime-sum hypothesis for every fixed
+\(A>0\): the values of either nontrivial cubic character sum to zero
+on \(\{1,4,7\}\).  The theorem's coefficients vanish for \(\rho=0\).
+Its principal leading coefficient is the displayed limit defining
+\(K\).  In particular, for all \(X\ge1\),
+\begin{equation}\label{eq:rational-sd-upper}
+ \sum_{t\le X}g(t)\ll\frac{X}{\sqrt{\log(2X)}}.
+\end{equation}
+
+To impose coprimality, put
+\[
+ \mathcal E(z)=
+ \prod_{p\equiv1\ (3)}(1-p^{-z})
+ \prod_{\substack{p\equiv2\ (3)\\p>2}}(1-p^{-3z})
+ =\sum_{d\ge1}\frac{h(d)}{d^z}.
+\]
+This series converges absolutely for \(\Re z>1\).  For
+\(\eta\in\{1,\chi,\chi^2\}\), Euler-factor comparison gives
+\begin{align*}
+ &\sum_{\substack{u,v\ge1\\(u,v)=1}}
+ \frac{g(u)g(v)\eta(u)\overline{\eta(v)}}{u^s v^t}\\
+ &\hspace{15mm}=
+ \left(\sum_{u\ge1}\frac{g(u)\eta(u)}{u^s}\right)
+ \left(\sum_{v\ge1}\frac{g(v)\overline{\eta(v)}}{v^t}\right)
+ \mathcal E(s+t),\qquad \Re s,\Re t>1.
+\end{align*}
+At a split prime the correction is \(1-p^{-s-t}\); at an odd inert
+prime it is \(1-p^{-3s-3t}\).  The character factors cancel on the
+diagonal in both cases.
+
+It follows by coefficient comparison that the corresponding pair sum in
+\(u\le X,v\le Y\) equals
+\[
+ \sum_{d\le\min(X,Y)}h(d)
+ \left(\sum_{u\le X/d}g(u)\eta(u)\right)
+ \left(\sum_{v\le Y/d}g(v)\overline{\eta(v)}\right).
+\]
+Take \(X=\alpha B,Y=\beta B\), with fixed positive
+\(\alpha,\beta\).  For \(d\le\sqrt B\),
+\eqref{eq:rational-sd-upper} bounds the summand by
+\(O_{\alpha,\beta}(B^2|h(d)|/(d^2\log B))\).
+For \(d>\sqrt B\), the trivial bounds give a total
+\[
+ \ll B^2\sum_{d>\sqrt B}\frac{|h(d)|}{d^2}
+ \ll B^{7/4},
+\]
+using \(\sum |h(d)|d^{-3/2}<\infty\).  Dominated convergence and
+\eqref{eq:rational-sd} therefore give the principal main term
+\(K^2\mathcal E(2)\alpha\beta B^2/\log B\), while the other two
+twists are \(o(B^2/\log B)\).
+
+After applying the character projector, we obtain, for any fixed bounded
+Jordan measurable region \(D\subset(0,\infty)^2\),
+\begin{equation}\label{eq:rational-polygon-count}
+ \#\left\{\begin{array}{@{}l@{}}
+ (u,v)\in BD\cap\Z^2:g(u)g(v)=1,\\
+ (u,v)=1,\quad u/v\equiv\pm1\pmod9
+ \end{array}\right\}
+ \sim\frac{K^2\mathcal E(2)}3\operatorname{area}(D)
+       \frac{B^2}{\log B},
+\end{equation}
+provided the area is positive.  Indeed, inclusion--exclusion first gives
+this assertion for rectangles with arbitrary fixed positive endpoints.
+Upper and lower finite grid approximations then give it for \(D\).
+The rectangles adjoining the axes have arbitrarily small total area, and
+are controlled by the same rectangle estimate.  This also proves the
+corresponding \(o(B^2/\log B)\) assertion when the area is zero.
+
+\subsection{The valuations at two and three}
+
+Every reduced parameter satisfying the local criterion has a unique
+expression
+\[
+ m=\varepsilon\,8^i27^j u,\qquad
+ n=8^k27^l v,
+ \qquad \varepsilon\in\{1,-1\},\quad i,j,k,l\ge0,
+\]
+where \(ik=jl=0\), \(g(u)g(v)=1\), and \((u,v)=1\).
+The unit condition at \(3\) is exactly
+\(u/v\equiv\pm1\pmod9\): powers of \(8\) and the sign are cubes
+modulo \(9\), and the powers of \(3\) have been removed.
+For this stratum write
+\[
+ r=8^i27^j,\qquad s=8^k27^l,\qquad
+ d=8^{\mathbf1_{k>0}}3^{\mathbf1_{j>0}}.
+\]
+The height condition is \((\varepsilon r u,s v)\in dB\Omega\).
+For fixed indices the two sign regions in \((u,v)\) thus have combined
+area \(d^2\operatorname{area}(\Omega)/(rs)\).
+Equation~\eqref{eq:rational-polygon-count} applies to each of them.
+
+The passage from finitely many strata to all strata is justified as
+follows.  The height bounds imply \(u\le CB/r,v\le CB/s\), with an
+absolute constant \(C\), because \(d\le24\).  If
+\(r,s\le B^{1/4}\), equation~\eqref{eq:rational-sd-upper}, after
+discarding coprimality and the residue condition, bounds the count by
+\[
+ \ll\frac{B^2}{rs\log B}.
+\]
+The sum of \(1/(rs)\) over all allowed indices converges.  On the
+remaining strata, the trivial bound is \(O(B^2/(rs))\); moreover
+\[
+ \sum_{\max(r,s)>B^{1/4}}\frac1{rs}
+ \le B^{-1/8}\sum_{i,j,k,l\ge0}(8^{i+k}27^{j+l})^{-1/2}
+ \ll B^{-1/8}.
+\]
+These strata contribute \(o(B^2/\log B)\).  Dominated convergence
+therefore permits summation of the fixed-stratum main terms.
+
+The resulting valuation weight factors as
+\begin{align*}
+ \sum_{\substack{i,j,k,l\ge0\\ik=jl=0}}\frac{d^2}{rs}
+ &=\left(1+\sum_{i\ge1}8^{-i}
+             +64\sum_{k\ge1}8^{-k}\right)
+   \left(1+9\sum_{j\ge1}27^{-j}
+             +\sum_{l\ge1}27^{-l}\right)\\
+ &=\frac{72}{7}\cdot\frac{18}{13}
+   =\frac{1296}{91}.
+\end{align*}
+The factor \(64\) comes from denominator powers of \(2\), and the
+factor \(9\) from numerator powers of \(3\); both are squares of
+the content corrections in \eqref{eq:rational-height}.
+
+\subsection{Evaluation of the constant and exclusion of cubes}
+
+Using the expression for \(G_3(1)\) in Section~\ref{sec:counting},
+\(L(1,\chi_{-3})=\pi/(3\sqrt3)\), and
+\(\prod_{p\ne3}(1-p^{-2})=9/(8\zeta(2))\), we find
+\begin{align*}
+ K^2\mathcal E(2)
+ &=\frac1{4\sqrt3\,\zeta(2)}
+   \prod_{\substack{p\equiv2\ (3)\\p>2}}
+          \frac{1+p^{-3}}{1-p^{-3}}\\
+ &=\frac7{36\sqrt3\,\zeta(2)}
+   \prod_{p\equiv2\ (3)}\frac{1+p^{-3}}{1-p^{-3}}.
+\end{align*}
+The \(L\)-value can be evaluated without further analytic input:
+\[
+ L(1,\chi_{-3})=
+ \sum_{k\ge0}\left(\frac1{3k+1}-\frac1{3k+2}\right)
+ =\int_0^1\frac{dx}{1+x+x^2}
+ =\frac{\pi}{3\sqrt3}.
+\]
+Combining the factor \(1/3\) for the unit condition, the polygon area,
+and the valuation weight, the constant is
+\[
+ \frac13\cdot\frac{143}{20736}\cdot\frac{1296}{91}
+ \cdot\frac7{36\sqrt3\,\zeta(2)}
+ \prod_{p\equiv2\ (3)}\frac{1+p^{-3}}{1-p^{-3}}
+ =C_\Phi.
+\]
+
+This calculation has counted nonzero parameters with a point over every
+completion, including global cubes.  By \eqref{eq:rational-height},
+\(H(y_{m/n})\le B\) implies \(|m|\le3B/4\) and \(n\le8B/3\).
+If \(m/n\) is a rational cube in lowest terms, then
+\(m=b^3,n=c^3\) with \((b,c)=1\); there are only \(O(B^{2/3})\)
+such pairs.  Removing them leaves exactly the Hasse-failing parameters by
+the local classification.  The parameter \(a=0\) does not fail the
+Hasse principle because its actual fiber has no real point, as shown in
+Theorem~\ref{thm:rational-classification}.  Finally, \(a\mapsto y_a\) is
+injective by its second coordinate.  The parameter count is therefore
+the target count asserted in Theorem~\ref{thm:rational-count}.

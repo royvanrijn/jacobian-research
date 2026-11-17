@@ -35,9 +35,25 @@ Describe established results accurately, including partial results, conditional 
 
 Exclude research updates, agent plans, task identifiers, internal nicknames, branch names, local paths, command transcripts, audit receipts, and changing repository status. Replace internal labels with ordinary mathematical definitions or descriptive lemma names. A mathematical explanation of why a natural approach fails can clarify an obstruction; present that explanation without recounting the discovery chronology or agent activity.
 
+Write every manuscript as a durable, standalone publication. Keep temporary publication and review status out of the title, date line, abstract, body, acknowledgments, and PDF metadata. Keep submission titles and abstracts in the bundle metadata equally free of workflow labels. Remove labels such as “Research draft,” “Working draft,” “unpublished manuscript,” and “working revision,” along with statements that review is pending or that the paper has not been peer reviewed. Record changing workflow status and review outcomes in the bundle's README, metadata, or verification record, where they can be maintained without revising the published PDF.
+
+Apply the same rule to AI-assistance and review disclosures. Describe the material assistance and the actual scope of computations or verification in precise, durable terms, without “draft” or “internal” status notes. Keep substantive limitations and required AI-use disclosures explicit. Removing a status note must never imply that peer review, independent replay, or formal verification occurred.
+
 Include every new essential argument in the article or an identified submitted appendix. Cite public literature precisely. A stable, versioned code or data citation may belong in an availability statement. Explain the algorithm, input class, and proof role in the article; keep operational paths and commands in the supplement's README. An artifact link cannot replace the explanation of why a method proves the theorem.
 
 Keep mathematical qualifications explicit. Put unproved assumptions in the theorem and name any restricted family. State unresolved boundaries that explain scope. An open question can be appropriate; a promise of a forthcoming proof is not evidence. Required acknowledgments, AI-use disclosures, and verification statements must accurately describe dependencies and material assistance.
+
+## AI assistance and review
+
+Use this attribution verbatim in every manuscript:
+
+```latex
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
+```
+
+Keep this guide as the source of the wording. Copy the paragraph into each paper's source bundle so the paper compiles independently. Keep acknowledgments, mathematical provenance, and theorem-specific verification scope separate from this standard paragraph. Do not append draft, internal-review, or pending-peer-review notes. Preserve exact deposited editions when applying this rule.
 
 ## Title and abstract
 

@@ -79,11 +79,11 @@ Adapt this order when the mathematics calls for another structure. A short note 
 7. **Appendices or supplement if needed.** Supply lengthy supporting arguments, certificates, or implementation detail. Keep the main mechanism visible in the article.
 8. **References, acknowledgments, and required disclosures.** Use verified entries and truthful statements of assistance, support, and review. Follow the target's required placement.
 
-## Disclosure drafting prompts
+## Standard AI attribution
 
-Describe the actual tools and their roles: language editing, literature discovery, conjecture generation, proof development, code, data analysis, figures, or formalization. State the checking actually performed by the authors. Do not describe mathematical assistance as mere proofreading when it affected the argument. Do not claim a human audited every step unless that happened.
+Use the [standard AI attribution](PAPERS.md#ai-assistance-and-review) verbatim in each manuscript. Keep mathematical provenance, acknowledgments, and the actual scope of verification separate from that paragraph. Do not add draft or review-status notes.
 
-Consult the target's current policy for wording and placement. Keep this disclosure factual and separate from the mathematical narrative. Never invent a reviewer, an affiliation, an author contribution, or an endorsement.
+Follow the target's required disclosure placement. Keep all statements factual; never invent a reviewer, an affiliation, an author contribution, or an endorsement, or claim that a human audited every step unless that happened.
 
 ## Completion note for the user
 

@@ -4,19 +4,19 @@
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "Fixes one degree-five Jacobian-one map and constructs and counts everywhere locally soluble fibres without rational points.",
+  "summary": "Classifies every Hasse-failing rational parameter on one target line of a fixed degree-five Jacobian-one map and proves an exact target-height asymptotic C B^2/log B.",
   "published": false,
   "status": "draft",
   "source": "main.tex",
   "pdf": "paper.pdf",
   "build": "latexmk -pdf -jobname=paper -interaction=nonstopmode -halt-on-error main.tex",
-  "verification": "Written proof, exact supporting checks and a claim-by-claim verification matrix; external arithmetic and analytic inputs require their stated hypotheses.",
+  "verification": "Written rational local converse and exact-height asymptotic; internal finite arithmetic audit; retained Lean coverage is restricted to its existing algebraic and sufficient integer-family statements. External mathematical review remains pending.",
   "next_steps": [
-    "Complete the priority and source review recorded in LITERATURE_AUDIT.md.",
-    "Review the counting argument and prepare a frozen submission bundle."
+    "Obtain specialist review of the complete rational count and its Selberg--Delange interface.",
+    "Complete the priority review recorded in LITERATURE_AUDIT.md before preparing a submission bundle."
   ],
   "catalogued_on": "2026-11-17",
-  "abstract": "The classical polynomial\n\\((X^3-19)(X^2+X+1)\\) has a root over every completion of \\(\\Q\\), but no\nrational root, and at first looks like an isolated arithmetic curiosity.\nStarting from this Hasse failure, we ask whether\nthe map, rather than only the fiber, can be kept fixed.  The decisive\nobservation is that after centering the quadratic factor, the whole family\n\\((X^3-a)(X^2+X+1)\\) moves in exactly the two coefficients controlled by\none quadratic-gauge target line.\n\nThis produces one explicit polynomial map\n\\(\\Phi:\\A^3_{\\Q}\\to\\A^3_{\\Q}\\) with Jacobian determinant one and geometric\ndegree five.  For every noncube integer \\(a>1\\) such that\n\\[\n a\\equiv1\\pmod 9,\n \\qquad p\\mid a\\Longrightarrow p\\equiv1\\pmod3,\n\\]\nthe map has a full fiber\n\\[\n \\Spec\\Q[X]/\\bigl((X^3-a)(X^2+X+1)\\bigr).\n\\]\nEvery such fiber is reduced, has points over \\(\\R\\) and every \\(\\Q_p\\), and\nhas no \\(\\Q\\)-point.  The targets lie on a fixed rational line and have\nheight \\(32a\\).  The local argument does not require \\(a\\) to be prime:\nits congruence-and-support core is multiplicatively closed, after which\nthe perfect cubes are removed.  A character-twisted\nSelberg--Delange argument then shows that the number of constructed targets\nof height at most \\(B\\) is asymptotic to\n\\[\n \\frac{G_3(1)}{96\\sqrt{\\pi}}\\,\n \\frac{B}{\\sqrt{\\log B}},\n\\]\nwhere \\(G_3(1)>0\\) is an explicit Euler product.  Finally, the classical\ndegree bound for intersective polynomials shows that geometric degree five\nis best possible.  Thus one exceptional quintic becomes a quantitatively\nlarge family of failures on a single map of the smallest possible geometric\ndegree.",
+  "abstract": "We fix an explicit polynomial map \\(\\Phi:\\A^3_\\Q\\to\\A^3_\\Q\\) with\nJacobian determinant one and geometric degree five whose fibers on a\nrational target line are the root schemes of\n\\((X^3-a)(X^2+X+1)\\), for \\(a\\ne0,1\\). We classify every Hasse-failing\nrational parameter on this line. A nonzero noncube \\(a\\) is admissible\nexactly when \\(v_p(a)\\) is divisible by three for every prime\n\\(p\\equiv2\\pmod3\\), and \\(a\\) is a cube in \\(\\Q_3\\).\nIn the projective height induced by the actual target embedding, the number\nof these targets of height at most \\(B\\) is asymptotic to\n\\[\n \\frac{11}{288\\sqrt3\\,\\pi^2}\n \\prod_{p\\equiv2\\ (3)}\\frac{1+p^{-3}}{1-p^{-3}}\n \\frac{B^2}{\\log B}.\n\\]\nThe proof treats coprimality, the coupled congruence at \\(3\\), and the\nprojective content at \\(2\\) and \\(3\\), using one-variable\nSelberg--Delange estimates. The sufficient integer subfamily has order\n\\(B/\\sqrt{\\log B}\\). The count is of targets on one line, rather than\ndistinct fiber algebras or all targets of the map. Finally, the classical\ndegree obstruction for intersective polynomials shows that geometric\ndegree five is minimal.",
   "abstract_format": "latex",
   "abstract_source": "sections/00-abstract.tex",
   "resource_type": {

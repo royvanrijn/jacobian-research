@@ -1334,13 +1334,13 @@ literal symbol and polynomial products, and Lean proves the coordinate-free
 normal forms: the full direction power divides the symbol and the matching
 perpendicular power divides the polynomial.  The translated
 Duistermaat--van der Kallen/polarization argument that rules out a matching
-is not yet formalized.  It further proves the
+lies outside this formalization.  The Lean development further proves the
 complete finite-support deduction in Proposition~\ref{prop:threshold}:
 finite maximization turns an ordering of the equal faces into an integral
 coordinate cut, which refines the common threshold to a strict positive
 weight; the growing power gap then dominates every fixed multiplier.  Empty
 equality faces are handled separately.
-The present audit does not yet formalize construction of the split-factor
+The~formalization excludes construction of the split-factor
 system after field extension or the literal coordinate-change/exact-quotient
 packaging of Lemma~\ref{lem:hall}, the number-field
 good-prime transfer and shifted-ray theorem, including its equal-face
@@ -1348,7 +1348,11 @@ ordering, or the binary no-reversal/global-envelope bridge.  The spherical reali
 Reynolds functional is likewise not checked, but Lean proves the algebraic
 coefficientwise contraction and Laurent realization used in its place.
 Thus Theorem~\ref{thm:main} and the complete biconditional in
-Theorem~\ref{thm:classification} are not yet fully formally verified.
+Theorem~\ref{thm:classification} extend beyond the accompanying formalization.
+
+\paragraph{AI assistance and review.}
+ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
+exposition, proof review and verification code.
 
 \bibliographystyle{plain}
 \bibliography{references}

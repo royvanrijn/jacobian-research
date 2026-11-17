@@ -1,0 +1,176 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\title{Two initial moments at arbitrary lower exponent and the polynomial boundary condition}
+\author{Internal elementary proof and exact replay; no priority claim}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+For $d\ge1$ an integer and $\gamma>0$, put
+\[
+ T_{n,\gamma,d}(t)=\sum_{k=0}^n\binom nk(\gamma)_{dk}t^k.
+\]
+The shape varies with the moment order when both exponents are nonzero.
+This note proves a uniform two--three moment separation at every lower
+exponent, and identifies the polynomial condition selecting the solution
+of the higher-gap parameter recurrence. It does not prove all-index
+binomial Strong Factorial.
+
+\section{A parameter-monotone initial separation}
+\begin{lemma}\label{lem:inequality}
+For every integer $d\ge1$ and real $y\ge x>0$,
+\[
+ \frac{(y)_{3d}}{(x)_{2d}}>3(y)_d-2(x)_d.                 \tag{1}
+\]
+\end{lemma}
+\begin{proof}
+Write $r(s)=(s)_d$. Its polynomial coefficients are nonnegative,
+$r'(s)>0$ and $r''(s)\ge0$ for $s>0$. In particular $r$ is strictly
+increasing and $r'$ is nondecreasing there. Put
+\[
+ H(y)=r(y)r(y+d)r(y+2d)
+       -3r(x)r(x+d)r(y)+2r(x)^2r(x+d).
+\]
+At $y=x$,
+\[
+ H(x)=r(x)r(x+d)\bigl(r(x+2d)-r(x)\bigr)>0.
+\]
+For $y\ge x$, the product rule and the monotonicity of $r'$ give
+\[
+ \begin{split}
+ \frac{d}{dy}\bigl(r(y)r(y+d)r(y+2d)\bigr)
+ \ge r'(y)\bigl(&r(y+d)r(y+2d)+r(y)r(y+2d)\\
+               &+r(y)r(y+d)\bigr).
+ \end{split}
+\]
+Each of the three products in parentheses is at least
+$r(x)r(x+d)$, and the first two are strictly greater.
+Thus $H'(y)>0$. Consequently $H(y)>0$, which is (1).
+\end{proof}
+
+\begin{theorem}\label{thm:two-three}
+For every integer $d\ge1$ and all real $y\ge x>0$, the polynomials
+$T_{2,x,d}$ and $T_{3,y,d}$ have no common complex zero.
+\end{theorem}
+\begin{proof}
+The quadratic
+\[
+ T_{2,x,d}=1+2(x)_d t+(x)_{2d}t^2
+\]
+has negative discriminant, since
+$(x)_{2d}=(x)_d(x+d)_d>(x)_d^2$. A common zero therefore
+brings its distinct conjugate, and would imply
+\[
+ T_{3,y,d}=(1+ct)T_{2,x,d}
+\]
+for a real $c$. Comparing the leading coefficient gives
+$c=(y)_{3d}/(x)_{2d}$, while comparing the linear coefficient gives
+$c=3(y)_d-2(x)_d$. Lemma~\ref{lem:inequality} contradicts these
+equalities.
+\end{proof}
+
+For the normalized positive Gamma functional
+$\mathcal L_\beta(X^j)=(\beta)_j$, $\beta>0$, the moments of
+$f=X^a(A+BX^d)$ satisfy, when $A\ne0$,
+\[
+ \mathcal L_\beta(f^n)
+   =A^n(\beta)_{an}T_{n,\beta+an,d}(B/A).                   \tag{2}
+\]
+\begin{corollary}\label{cor:initial}
+Let $a\ge0$ and $d\ge1$ be integers, and let $\beta>0$.
+Every nonzero $X^a(A+BX^d)$ has no simultaneous zero Gamma moments
+at orders two and three. It also has no simultaneous zero Gamma moments
+at orders one and two. Thus every consecutive pair with terminal order
+at most three contains a nonzero moment, for all lower exponents and gaps.
+\end{corollary}
+\begin{proof}
+For orders two and three, apply Theorem~\ref{thm:two-three} with
+$x=\beta+2a$ and $y=\beta+3a$. For orders one and two, the sole
+root of $T_{1,\beta+a,d}$ is real, whereas
+$T_{2,\beta+2a,d}$ has no real root by the discriminant calculation above.
+The order-zero moment is one. If either $A$ or $B$ is zero, every
+moment is a nonzero monomial moment.
+\end{proof}
+For ordinary factorials set $\beta=1$. No restriction on the complex
+coefficients $A,B$ beyond nonzeroness of $f$ is imposed.
+
+\section{The boundary condition at infinity for the parameter recurrence}
+For terminal order $N\ge2$ define
+\[
+ U_N^{(d)}(s,z)=\sum_{k=0}^N(-1)^k\binom Nk(s+1)_{dk}z^{N-k},
+ \qquad V(s)=U_{N-1}^{(d)}(s,z).
+\]
+The exact identities in the
+\href{UNIFORM_PADE_PARABOLA_SFC.tex}{parameter-recurrence note}
+give
+\[
+ z\bigl(V(s)-V(s+1)\bigr)
+ =(s+2)_{d-1}\bigl((s+dN+1)V(s+d)
+                    -(s+d+1)V(s+d+1)\bigr).              \tag{3}
+\]
+At a hypothetical common moment zero, setting
+$l=\beta+a(N-1)-1$, $M=l+a$ gives the two finite conditions
+\[
+ V(l)=0,\qquad zV(M)=(M+1)_dV(M+d).                        \tag{4}
+\]
+These two conditions alone do not determine the order-$d+1$ difference
+solution when $d\ge2$.
+
+\begin{theorem}\label{thm:polynomial}
+Fix $N\ge2$, $d\ge1$ and any complex $z$. The space of polynomial
+solutions $V\in\mathbb C[s]$ of (3) is one-dimensional, spanned by
+$U_{N-1}^{(d)}(s,z)$. Every nonzero such solution has degree
+$m=d(N-1)$. The normalization
+\[
+ [s^m]V=(-1)^{N-1}                                       \tag{5}
+\]
+therefore selects $U_{N-1}^{(d)}$ uniquely.
+Moreover this selected solution has the exact degree-gap condition
+\[
+ V(s)=(-1)^{N-1}(s+1)_m+Q(s),
+ \qquad \deg Q\le m-d.                                   \tag{6}
+\]
+\end{theorem}
+\begin{proof}
+Let $V$ be nonzero of degree $j$ with leading coefficient $c$.
+In the expression in parentheses on the right of (3), the coefficient
+of $s^j$ is
+\[
+ c\bigl(d(N-1)-j\bigr).
+\]
+Indeed the degree-$j+1$ terms cancel, while the shifts in the
+degree-$j$ terms contribute $-cj$.
+If $j\ne d(N-1)$, the right side has degree $j+d-1$ and nonzero
+leading coefficient. The left side has degree at most $j-1$.
+This is impossible. Hence every nonzero polynomial solution has
+degree $m=d(N-1)$.
+
+The displayed coefficient formula for $U_{N-1}^{(d)}$ verifies that
+it solves (3) and has degree $m$ and leading coefficient
+$(-1)^{N-1}$. If two polynomial solutions were independent,
+a linear combination would cancel their degree-$m$ terms and give
+a nonzero polynomial solution of smaller degree, a contradiction.
+This proves uniqueness and (5). Finally, the top summand $k=N-1$
+in that coefficient formula is $(-1)^{N-1}(s+1)_m$, while all other
+summands have degree at most $d(N-2)=m-d$, proving (6).
+\end{proof}
+
+Polynomiality supplies the missing selection condition for this
+particular recurrence solution. It does not prove that (4) is
+incompatible with it, and does not supply a positive finite-matrix or
+zero-free-region argument. The all-index lower-exponent problem
+remains open. The distinction is essential: recurrence order alone
+does not license arbitrary initial data, while a uniquely selected
+polynomial solution may still satisfy two specified finite conditions.
+
+The accompanying exact replay checks the coefficient identities and
+the polynomial-space rank at bounded indices, plus the strict
+inequality at rational parameters. The universal evidence is the
+elementary proof above; the bounded replay does not establish the
+quantifiers. Independent mathematical review, independent replay,
+formal verification and external review are not claimed.
+\end{document}
